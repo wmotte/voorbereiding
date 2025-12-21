@@ -394,61 +394,76 @@ def run_analysis(client: genai.Client, prompt: str, title: str) -> dict:
     print(f"\n{'─' * 50}")
     print(f"Analyseren: {title}")
     print(f"{'─' * 50}")
-    print("Bezig met redeneren en zoeken...")
-
-    try:
-        # Configuratie voor de generatie
-        # We zetten safety filters UIT (BLOCK_NONE) omdat preekvoorbereiding
-        # moet kunnen gaan over zonde, lijden, dood en religieus extremisme.
-        response = client.models.generate_content(
-            model=MODEL_NAME,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                temperature=0.2,  # Lager dan normaal om minder hallucinaties te krijgen
-                top_p=0.95,
-                top_k=40,
-                max_output_tokens=8192,
-                # Nieuwe syntax voor Google Search Tool
-                tools=[types.Tool(
-                    google_search=types.GoogleSearch()
-                )],
-                # Nieuwe syntax voor Safety Settings
-                safety_settings=[
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                ]
-            )
-        )
-
-        if response.text:
-            result = extract_json(response.text)
-            if "error" in result:
-                print(f"⚠ Analyse '{title}' voltooid maar JSON parsing mislukt")
-            else:
-                print(f"✓ Analyse '{title}' voltooid (valide JSON)")
-            return result
+    
+    max_retries = 1
+    for attempt in range(max_retries + 1):
+        if attempt > 0:
+            print(f"Poging {attempt + 1}/{max_retries + 1}...")
         else:
-            print(f"✗ Geen tekst ontvangen voor '{title}'")
-            return {"error": "Geen response ontvangen", "title": title}
+            print("Bezig met redeneren en zoeken...")
 
-    except Exception as e:
-        error_msg = f"Fout bij analyse '{title}': {str(e)}"
-        print(f"✗ {error_msg}")
-        return {"error": error_msg, "title": title}
+        try:
+            # Configuratie voor de generatie
+            # We zetten safety filters UIT (BLOCK_NONE) omdat preekvoorbereiding
+            # moet kunnen gaan over zonde, lijden, dood en religieus extremisme.
+            response = client.models.generate_content(
+                model=MODEL_NAME,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.2,  # Lager dan normaal om minder hallucinaties te krijgen
+                    top_p=0.95,
+                    top_k=40,
+                    max_output_tokens=8192,
+                    # Nieuwe syntax voor Google Search Tool
+                    tools=[types.Tool(
+                        google_search=types.GoogleSearch()
+                    )],
+                    # Nieuwe syntax voor Safety Settings
+                    safety_settings=[
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                    ]
+                )
+            )
+
+            if response.text:
+                result = extract_json(response.text)
+                if "error" in result:
+                    print(f"⚠ Analyse '{title}' voltooid maar JSON parsing mislukt (poging {attempt + 1})")
+                    if attempt < max_retries:
+                        continue
+                else:
+                    print(f"✓ Analyse '{title}' voltooid (valide JSON)")
+                    return result
+            else:
+                print(f"✗ Geen tekst ontvangen voor '{title}' (poging {attempt + 1})")
+                if attempt < max_retries:
+                    continue
+                return {"error": "Geen response ontvangen", "title": title}
+
+        except Exception as e:
+            error_msg = f"Fout bij analyse '{title}': {str(e)}"
+            print(f"✗ {error_msg}")
+            if attempt < max_retries:
+                continue
+            return {"error": error_msg, "title": title}
+    
+    # Als we hier komen zijn alle retries mislukt
+    return {"error": "Analyse mislukt na herpogingen", "title": title}
 
 
 def verify_liedboek(client: genai.Client, content: dict) -> dict:
