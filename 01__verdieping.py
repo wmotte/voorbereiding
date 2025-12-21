@@ -184,22 +184,27 @@ def read_previous_analyses(folder: Path) -> dict:
 
 def extract_user_input_from_folder(folder: Path) -> dict:
     """Probeer plaatsnaam, gemeente en datum te extraheren uit bestanden of foldernaam."""
-    user_input = {"plaatsnaam": "", "gemeente": "", "datum": ""}
+    user_input = {"plaatsnaam": "", "gemeente": "", "datum": "", "adres": ""}
 
-    # 1. Probeer uit 00_zondag_kerkelijk_jaar.json (Metadata check)
-    json_path = folder / "00_zondag_kerkelijk_jaar.json"
-    if json_path.exists():
+    # 1. Zoek in alle JSON bestanden naar _meta.user_input (meest betrouwbaar)
+    for json_path in sorted(folder.glob("*.json")):
         try:
             with open(json_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
-            # Check for _meta user_input (nieuw formaat)
             meta_input = data.get("_meta", {}).get("user_input")
             if meta_input:
-                return meta_input
+                # Update onze dict met gevonden waarden, maar behoud wat we al hebben als het leger is
+                for key in user_input:
+                    if meta_input.get(key):
+                        user_input[key] = meta_input[key]
+                
+                # Als we de belangrijkste velden hebben, kunnen we stoppen
+                if user_input["plaatsnaam"] and user_input["adres"]:
+                    return user_input
         except (json.JSONDecodeError, KeyError):
-            pass
+            continue
 
-    # 2. Probeer uit 00_overzicht.json (Oud formaat)
+    # 2. Fallback: probeer uit 00_overzicht.json (Oud formaat)
     overzicht_json = folder / "00_overzicht.json"
     if overzicht_json.exists():
         try:
@@ -230,29 +235,18 @@ def extract_user_input_from_folder(folder: Path) -> dict:
                 if len(parts) > 1:
                     user_input["datum"] = parts[-1].strip()
 
-    # Fallback: gebruik foldernaam
+    # 4. Fallback: gebruik foldernaam
     if not user_input["plaatsnaam"]:
         # Split op underscores en filter lege strings
         parts = [p for p in folder.name.split("_") if p]
         
-        # Heuristiek: Laatste 2 zijn timestamp (datum, tijd)
-        # De 3 daarvoor zijn waarschijnlijk de datum (dag, maand, jaar)
-        # Alles daarvoor is plaatsnaam
-        
         if len(parts) >= 6:
-            # Timestamp verwijderen
             content_parts = parts[:-2] 
-            
-            # Datum gokken (laatste 3)
             datum_parts = content_parts[-3:]
             user_input["datum"] = " ".join(datum_parts)
-            
-            # Plaatsnaam (alles ervoor)
             plaats_parts = content_parts[:-3]
             user_input["plaatsnaam"] = " ".join(plaats_parts)
-            
         elif len(parts) > 0:
-            # Fallback als structuur anders is
             user_input["plaatsnaam"] = parts[0]
 
     return user_input
@@ -788,6 +782,12 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
             analysis_context = context_string
 
         full_prompt = f"""{base_prompt}
+
+# Preekgegevens
+- **Plaatsnaam:** {user_input.get('plaatsnaam')}
+- **Gemeente:** {user_input.get('gemeente')}
+- **Adres:** {user_input.get('adres') or 'Onbekend'}
+- **Datum:** {user_input.get('datum')}
 
 # Eerdere Analyses (Context)
 

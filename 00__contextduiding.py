@@ -202,6 +202,7 @@ def build_first_analysis(user_input: dict) -> dict:
 ## Preekgegevens
 - **Plaatsnaam:** {user_input['plaatsnaam']}
 - **Gemeente:** {user_input['gemeente']}
+- **Adres:** {user_input.get('adres', 'Onbekend')}
 - **Datum:** {user_input['datum']}
 """
     if user_input.get('extra_context'):
@@ -234,12 +235,74 @@ De volgende lezingen staan vast voor deze datum en MOETEN worden gebruikt:
     }
 
 
-def build_remaining_analyses(user_input: dict, kerkelijk_jaar_context: str) -> list[dict]:
+def verify_church_location(client: genai.Client, user_input: dict) -> str:
+    """Zoek en verifieer het adres van de kerk."""
+    print("\n" + "─" * 50)
+    print("VERIFICATIE: Kerklocatie controleren...")
+    print(f"{'─' * 50}")
+    print(f"Bezig met zoeken naar het adres van {user_input['gemeente']} in {user_input['plaatsnaam']}...")
+
+    prompt = f"""
+Zoek het exacte adres van de volgende kerk:
+Kerk: {user_input['gemeente']}
+Plaats: {user_input['plaatsnaam']}
+
+Geef het antwoord als JSON:
+{{
+  "adres": "straat huisnummer, postcode plaats",
+  "gebouw_naam": "naam van het kerkgebouw (indien van toepassing)",
+  "website": "url van de kerk (indien gevonden)"
+}}
+"""
+
+    try:
+        response = client.models.generate_content(
+            model=MODEL_NAME,
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                temperature=0.1,
+                tools=[types.Tool(google_search=types.GoogleSearch())],
+                response_mime_type="application/json"
+            )
+        )
+
+        found_address = "Onbekend"
+        if response.text:
+            data = extract_json(response.text)
+            found_address = data.get("adres", "Onbekend")
+            gebouw = data.get("gebouw_naam", "")
+            website = data.get("website", "")
+            
+            print(f"\nGevonden locatie:")
+            if gebouw:
+                print(f"  Gebouw:  {gebouw}")
+            print(f"  Adres:   \033[1m{found_address}\033[0m")
+            if website:
+                print(f"  Website: {website}")
+            
+            choice = input("\nIs dit het correcte adres? (j/n): ").strip().lower()
+            if choice in ('j', 'ja', 'y', 'yes'):
+                return found_address
+            
+        else:
+            print("\nGeen adres gevonden via Google Search.")
+
+        # Als niet gevonden of niet correct
+        correct_address = input("\nVoer het correcte adres in (Straat Huisnummer, Postcode Plaats): ").strip()
+        return correct_address
+
+    except Exception as e:
+        print(f"Fout bij zoeken adres: {e}")
+        return input("\nVoer het correcte adres in: ").strip()
+
+
+def build_remaining_analyses(user_input: dict, kerkelijk_jaar_context: str, church_address: str = "") -> list[dict]:
     """Bouw de overige analyses, inclusief de liturgische context.
 
     Args:
         user_input: De gebruikersinvoer (plaatsnaam, gemeente, datum)
         kerkelijk_jaar_context: De output van de eerste analyse (lezingen, etc.)
+        church_address: Het geverifieerde adres van de kerk
     """
     base_prompt = load_prompt("base_prompt.md", user_input)
 
@@ -248,6 +311,7 @@ def build_remaining_analyses(user_input: dict, kerkelijk_jaar_context: str) -> l
 ## Preekgegevens
 - **Plaatsnaam:** {user_input['plaatsnaam']}
 - **Gemeente:** {user_input['gemeente']}
+- **Adres:** {church_address}
 - **Datum:** {user_input['datum']}
 """
     if user_input.get('extra_context'):
@@ -668,6 +732,13 @@ def main():
     client = get_gemini_client()
 
     print(f"Output directory: {output_dir}")
+    
+    # VERIFICATIE KERKLOCATIE (DIRECT BIJ START)
+    # We doen dit altijd als we in 'new' mode zijn, of als het adres nog niet bekend is.
+    if mode == 'new' or not user_input.get("adres"):
+        user_input["adres"] = verify_church_location(client, user_input)
+    else:
+        print(f"  Adres:      {user_input.get('adres')}")
 
     print("\n" + "=" * 60)
     print(f"STARTEN MET MODEL: {MODEL_NAME}")
@@ -730,7 +801,7 @@ def main():
     # Converteer JSON resultaat naar string voor context
     kerkelijk_jaar_context = json.dumps(kerkelijk_jaar_result, ensure_ascii=False, indent=2)
 
-    remaining_analyses = build_remaining_analyses(user_input, kerkelijk_jaar_context)
+    remaining_analyses = build_remaining_analyses(user_input, kerkelijk_jaar_context, user_input.get("adres", ""))
     all_analyses = [first_analysis] + remaining_analyses
 
     for analysis in remaining_analyses:
