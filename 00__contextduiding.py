@@ -84,14 +84,14 @@ def get_user_input() -> dict:
     print("Dit programma voert een uitgebreide hoordersanalyse uit voor uw preek.")
     print("Vul de volgende gegevens in:\n")
 
-    plaatsnaam = input("1. Plaatsnaam waar de preek gehouden wordt: ").strip()
+    plaatsnaam = input("1. Plaatsnaam: ").strip()
     if not plaatsnaam:
         print("FOUT: Plaatsnaam is verplicht.")
         sys.exit(1)
 
-    gemeente = input("2. Naam van de kerkelijke gemeente: ").strip()
+    gemeente = input("2. Naam van de kerk of het gebouw: ").strip()
     if not gemeente:
-        print("FOUT: Gemeente is verplicht.")
+        print("FOUT: Naam is verplicht.")
         sys.exit(1)
 
     datum_str = input("3. Datum van de preek (bijv. 25 december 2025): ").strip()
@@ -99,8 +99,10 @@ def get_user_input() -> dict:
         print("FOUT: Datum is verplicht.")
         sys.exit(1)
 
+    website = input("4. Website URL van de kerk (optioneel): ").strip()
+
     # Optionele extra context
-    print("\n4. Eventuele extra context (optioneel, druk Enter om over te slaan):")
+    print("\n5. Eventuele extra context (optioneel, druk Enter om over te slaan):")
     print("   (bijv. bijzondere dienst, thema, doelgroep)")
     extra_context = input("   Extra context: ").strip()
 
@@ -108,6 +110,7 @@ def get_user_input() -> dict:
         "plaatsnaam": plaatsnaam,
         "gemeente": gemeente,
         "datum": datum_str,
+        "website": website,
         "extra_context": extra_context
     }
 
@@ -241,12 +244,18 @@ def verify_church_location(client: genai.Client, user_input: dict) -> dict:
     print("\n" + "─" * 50)
     print("VERIFICATIE: Kerklocatie controleren...")
     print(f"{'─' * 50}")
-    print(f"Bezig met zoeken naar het adres van {user_input['gemeente']} in {user_input['plaatsnaam']}...")
+    
+    extra_info = ""
+    if user_input.get('website'):
+        extra_info = f"\nWebsite van de kerk: {user_input['website']}"
+        print(f"Bezig met zoeken naar het adres van {user_input['gemeente']} in {user_input['plaatsnaam']} (gebruikmakend van {user_input['website']})...")
+    else:
+        print(f"Bezig met zoeken naar het adres van {user_input['gemeente']} in {user_input['plaatsnaam']}...")
 
     prompt = f"""
 Zoek het exacte adres van de volgende kerk:
 Kerk: {user_input['gemeente']}
-Plaats: {user_input['plaatsnaam']}
+Plaats: {user_input['plaatsnaam']}{extra_info}
 
 Geef het antwoord als JSON:
 {{
