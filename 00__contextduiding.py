@@ -403,7 +403,7 @@ def save_analysis(output_dir: Path, filename: str, content: dict, title: str):
 
 
 def create_summary(output_dir: Path, user_input: dict, analyses: list[dict]):
-    """Maak een samenvattend overzichtsbestand (JSON en markdown index)."""
+    """Maak een samenvattend overzichtsbestand (JSON)."""
     # JSON summary
     summary_data = {
         "gegevens": {
@@ -426,23 +426,6 @@ def create_summary(output_dir: Path, user_input: dict, analyses: list[dict]):
     filepath_json = output_dir / "00_overzicht.json"
     with open(filepath_json, "w", encoding="utf-8") as f:
         json.dump(summary_data, f, ensure_ascii=False, indent=2)
-
-    # Ook een markdown index voor leesbaarheid
-    summary_md = f"""# Contextduiding Preekvoorbereiding
-
-## Gegevens
-- **Plaatsnaam:** {user_input['plaatsnaam']}
-- **Gemeente:** {user_input['gemeente']}
-- **Datum preek:** {user_input['datum']}
-
-## Analyses (JSON bestanden)
-"""
-    for analysis in analyses:
-        summary_md += f"- [{analysis['title']}]({analysis['name']}.json)\n"
-
-    filepath_md = output_dir / "00_overzicht.md"
-    with open(filepath_md, "w", encoding="utf-8") as f:
-        f.write(summary_md)
 
 
 def list_output_folders() -> list[Path]:
