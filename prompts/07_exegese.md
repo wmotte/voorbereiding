@@ -1,23 +1,25 @@
 # Exegese van de Schriftlezingen
 
-Voer een grondige exegese uit van de Schriftlezingen die horen bij deze zondag/feestdag.
+Voer een grondige exegese uit van de **Eerste Lezing** en het **Evangelie** die horen bij deze zondag/feestdag. Andere lezingen (zoals de Psalm of Tweede Lezing) dienen als context, maar worden niet diepgaand geëxegetiseerd.
 
 ## Context
-De liturgische gegevens en Schriftlezingen zijn hierboven vermeld. Neem deze als uitgangspunt voor de exegese. Behandel elke lezing afzonderlijk én in samenhang.
+De liturgische gegevens en Schriftlezingen zijn hierboven vermeld. Neem deze als uitgangspunt. Behandel de Eerste Lezing en het Evangelie afzonderlijk én in hun onderlinge samenhang.
 
 ## Bijbeltekst opnemen
 
-**BELANGRIJK:** Begin de exegese met het integraal citeren van de bijbeltekst(en) uit de Naardense Bijbel (Pieter Oussoren). Deze teksten zijn hierboven in de context aangeleverd. Neem ze volledig over onder een kopje per lezing, bijvoorbeeld:
+**BELANGRIJK:** Begin de exegese met het integraal citeren van de bijbeltekst(en) uit de **NBV21** vertaling. Deze teksten zijn hierboven in de context aangeleverd. Neem **alleen** de tekst van de **Eerste Lezing** en het **Evangelie** volledig over onder een kopje per lezing.
 
 ```
-## Bijbelteksten (Naardense Bijbel)
+## Bijbelteksten (NBV21)
 
-### Jesaja 9:1-6
-[volledige tekst hier]
+### [Eerste Lezing Referentie]
+[volledige tekst hier uit NBV21]
 
-### Lucas 2:1-14
-[volledige tekst hier]
+### [Evangelie Referentie]
+[volledige tekst hier uit NBV21]
 ```
+
+Dit zorgt ervoor dat de predikant de tekst van de meest gebruikte kanselbijbel direct bij de hand heeft bij het lezen van de exegese. Gebruik de NBV21 ook als primaire tekst voor de verdere analyse.
 
 Dit zorgt ervoor dat de predikant de grondtekst direct bij de hand heeft bij het lezen van de exegese.
 
@@ -113,7 +115,7 @@ Pas de zoekmodellenmethode toe om de belangrijkste actanten in de tekst systemat
 
 *Bron: Snoek, H. (2010). Een huis om in te wonen: Uitleg en interpretatie van de Bijbel. Kampen: Kok, 2e druk, pp. 180-199.*
 
-Voer deze analyse uit voor **elke lezing afzonderlijk**. Gebruik de theoretische kaders hieronder om tot een diepgaande beschrijving te komen.
+Voer deze analyse uit voor **alleen de Eerste Lezing en het Evangelie**. Gebruik de theoretische kaders hieronder om tot een diepgaande beschrijving te komen.
 
 **BELANGRIJK:** Vermijd korte bulletpoints. Schrijf een doorlopend betoog per lezing waarin je de assen van het model verkent en de onderzoeksvragen beantwoordt.
 
