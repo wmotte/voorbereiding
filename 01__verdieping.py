@@ -40,10 +40,11 @@ except ImportError:
     sys.exit(1)
 
 try:
-    from nbv21_bijbel import get_nbv21_lezingen_text
+    from nbv21_bijbel import get_nbv21_lezingen_text, save_nbv21_lezingen
 except ImportError:
     print("WAARSCHUWING: nbv21_bijbel module niet gevonden. NBV21 teksten worden niet meegenomen.")
     def get_nbv21_lezingen_text(text): return ""
+    def save_nbv21_lezingen(d, t): return {}
 
 # Configuratie
 SCRIPT_DIR = Path(__file__).parent.resolve()
@@ -181,10 +182,23 @@ def read_previous_analyses(folder: Path) -> dict:
 
 
 def extract_user_input_from_folder(folder: Path) -> dict:
-    """Probeer plaatsnaam, gemeente en datum te extraheren uit de foldernaam of overzicht."""
+    """Probeer plaatsnaam, gemeente en datum te extraheren uit bestanden of foldernaam."""
     user_input = {"plaatsnaam": "", "gemeente": "", "datum": ""}
 
-    # Probeer eerst uit JSON overzicht
+    # 1. Probeer uit 00_zondag_kerkelijk_jaar.json (Metadata check)
+    json_path = folder / "00_zondag_kerkelijk_jaar.json"
+    if json_path.exists():
+        try:
+            with open(json_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            # Check for _meta user_input (nieuw formaat)
+            meta_input = data.get("_meta", {}).get("user_input")
+            if meta_input:
+                return meta_input
+        except (json.JSONDecodeError, KeyError):
+            pass
+
+    # 2. Probeer uit 00_overzicht.json (Oud formaat)
     overzicht_json = folder / "00_overzicht.json"
     if overzicht_json.exists():
         try:
@@ -199,7 +213,7 @@ def extract_user_input_from_folder(folder: Path) -> dict:
         except (json.JSONDecodeError, KeyError):
             pass
 
-    # Fallback: probeer uit MD overzicht
+    # 3. Fallback: probeer uit MD overzicht
     overzicht_md = folder / "00_overzicht.md"
     if overzicht_md.exists():
         with open(overzicht_md, "r", encoding="utf-8") as f:
@@ -215,10 +229,29 @@ def extract_user_input_from_folder(folder: Path) -> dict:
                 if len(parts) > 1:
                     user_input["datum"] = parts[-1].strip()
 
-    # Fallback: gebruik foldernaam
+    # 4. Fallback: gebruik foldernaam
     if not user_input["plaatsnaam"]:
-        parts = folder.name.split("_")
-        if parts:
+        # Split op underscores en filter lege strings
+        parts = [p for p in folder.name.split("_") if p]
+        
+        # Heuristiek: Laatste 2 zijn timestamp (datum, tijd)
+        # De 3 daarvoor zijn waarschijnlijk de datum (dag, maand, jaar)
+        # Alles daarvoor is plaatsnaam
+        
+        if len(parts) >= 6:
+            # Timestamp verwijderen
+            content_parts = parts[:-2] 
+            
+            # Datum gokken (laatste 3)
+            datum_parts = content_parts[-3:]
+            user_input["datum"] = " ".join(datum_parts)
+            
+            # Plaatsnaam (alles ervoor)
+            plaats_parts = content_parts[:-3]
+            user_input["plaatsnaam"] = " ".join(plaats_parts)
+            
+        elif len(parts) > 0:
+            # Fallback als structuur anders is
             user_input["plaatsnaam"] = parts[0]
 
     return user_input
@@ -613,8 +646,10 @@ def main():
 
     # Haal NBV21 teksten op
     nbv21_teksten = get_nbv21_lezingen_text(previous_analyses["liturgische_context"])
+    nbv21_files = save_nbv21_lezingen(folder, previous_analyses["liturgische_context"])
+    
     if nbv21_teksten:
-        print(f"✓ NBV21 teksten opgehaald")
+        print(f"✓ NBV21 teksten opgehaald en opgeslagen ({len(nbv21_files)} bestanden)")
 
     # Initialiseer client
     print("\nGoogle GenAI Client initialiseren...")

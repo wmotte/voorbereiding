@@ -137,6 +137,58 @@ def get_gemini_client() -> genai.Client:
     return genai.Client(api_key=api_key)
 
 
+def get_liturgical_calendar_data(datum_str: str) -> Optional[dict]:
+    """Zoek de lezingen op in de lokale liturgische kalender JSON."""
+    calendar_path = SCRIPT_DIR / "misc" / "liturgische_kalender_2025_2026.json"
+    if not calendar_path.exists():
+        print(f"WAARSCHUWING: Kalender niet gevonden op {calendar_path}")
+        return None
+
+    try:
+        with open(calendar_path, "r", encoding="utf-8") as f:
+            calendar_data = json.load(f)
+        
+        rooster = calendar_data.get("rooster", [])
+        
+        # Maanden mapping voor matching
+        maanden = {
+            'januari': 'jan', 'februari': 'feb', 'maart': 'mrt', 'april': 'apr',
+            'mei': 'mei', 'juni': 'jun', 'juli': 'jul', 'augustus': 'aug',
+            'september': 'sep', 'oktober': 'okt', 'november': 'nov', 'december': 'dec'
+        }
+        
+        # Normalizeer gebruikersdatum (bijv. "4 januari 2026" -> "4 jan")
+        datum_lower = datum_str.lower()
+        search_day = ""
+        search_month = ""
+        
+        parts = datum_lower.split()
+        if len(parts) >= 2:
+            search_day = parts[0]
+            month_full = parts[1]
+            search_month = maanden.get(month_full, month_full[:3])
+        
+        for entry in rooster:
+            entry_date = entry.get("datum", "").lower()
+            # Match dag en maand (simpele check)
+            if search_day in entry_date and search_month in entry_date:
+                # Extra check voor jaartal als dat in de kalender staat (bijv. '25 of '26)
+                if "'26" in entry_date or "26" in entry_date:
+                    if "2026" in datum_str or "26" in datum_str:
+                        return entry
+                elif "25" in entry_date:
+                    if "2025" in datum_str or "25" in datum_str:
+                        return entry
+                else:
+                    # Geen jaar in entry, match op dag/maand is genoeg
+                    return entry
+                    
+    except Exception as e:
+        print(f"Fout bij lezen kalender: {e}")
+    
+    return None
+
+
 def build_first_analysis(user_input: dict) -> dict:
     """Bouw de eerste analyse: Zondag van het Kerkelijk Jaar.
 
@@ -153,6 +205,23 @@ def build_first_analysis(user_input: dict) -> dict:
 """
     if user_input.get('extra_context'):
         context_info += f"- **Extra context:** {user_input['extra_context']}\n"
+
+    # Haal data uit de kalender
+    kalender_data = get_liturgical_calendar_data(user_input['datum'])
+    if kalender_data:
+        context_info += f"""
+## Vastgestelde Lezingen (uit liturgische kalender)
+De volgende lezingen staan vast voor deze datum en MOETEN worden gebruikt:
+- **Gelegenheid:** {kalender_data.get('gelegenheid')}
+- **Eerste lezing:** {kalender_data.get('eerste_lezing')}
+- **Tweede lezing (Epistel):** {kalender_data.get('tweede_lezing') or 'geen'}
+- **Evangelie:** {kalender_data.get('evangelie')}
+- **Psalm:** {kalender_data.get('psalm')}
+- **Periode:** {kalender_data.get('periode')}
+"""
+        print(f"✓ Liturgische gegevens gevonden voor {user_input['datum']}: {kalender_data.get('gelegenheid')}")
+    else:
+        print(f"! Geen exacte match gevonden in liturgische kalender voor {user_input['datum']}. Model zal zelf zoeken.")
 
     task_prompt = load_prompt("00_zondag_kerkelijk_jaar.md", user_input)
     full_prompt = f"{base_prompt}\n\n{context_info}\n\n{task_prompt}"
@@ -382,17 +451,53 @@ def verify_liedboek(client: genai.Client, content: dict) -> dict:
         return content
 
 
-def save_analysis(output_dir: Path, filename: str, content: dict, title: str):
+def choice_is_yes(choice: str) -> bool:
+    """Helper om ja/nee input te parsen."""
+    return choice.lower() in ('j', 'ja', 'y', 'yes')
+
+
+def print_liturgy_summary(data: dict):
+    """Print een samenvatting van de gevonden liturgie voor verificatie."""
+    print("\n" + "═" * 60)
+    print("VERIFICATIE LITURGISCH ROOSTER")
+    print("═" * 60)
+    
+    # Zondag naam
+    zondag = data.get("traditionele_naam", {}).get("nederlandse_vertaling", "Onbekend")
+    if data.get("bijzondere_zondag_pkn", {}).get("is_bijzonder"):
+        zondag += f" ({data['bijzondere_zondag_pkn']['naam']})"
+    print(f"Zondag:   \033[1m{zondag}\033[0m")
+    
+    # Lezingen
+    lezingen = data.get("lezingen", {})
+    evangelie = lezingen.get("evangelie", {}).get("referentie", "-")
+    oud_test = lezingen.get("eerste_lezing", {}).get("referentie", "-")
+    epistel = lezingen.get("epistel", {}).get("referentie", "-")
+    psalm = lezingen.get("psalm", {}).get("referentie", "-")
+    
+    print(f"Evangelie:\033[1m {evangelie} \033[0m")
+    print(f"1e Lezing: {oud_test}")
+    print(f"Epistel:   {epistel}")
+    print(f"Psalm:     {psalm}")
+    print("─" * 60)
+
+
+def save_analysis(output_dir: Path, filename: str, content: dict, title: str, user_input: dict = None):
     """Sla een analyse op naar een JSON bestand."""
     filepath = output_dir / f"{filename}.json"
 
     # Voeg metadata toe
+    meta = {
+        "title": title,
+        "filename": filename,
+        "generated_at": datetime.now().isoformat()
+    }
+
+    if user_input:
+        meta["user_input"] = user_input
+
     content_with_meta = {
-        "_meta": {
-            "title": title,
-            "filename": filename,
-            "generated_at": datetime.now().isoformat()
-        },
+        "_meta": meta,
         **content
     }
 
@@ -555,7 +660,7 @@ def main():
     print(f"STARTEN MET MODEL: {MODEL_NAME}")
     print("=" * 60)
 
-    # FASE 1: Eerst de liturgische context ophalen
+    # FASE 1: Liturgische context verzamelen
     print("\n" + "─" * 60)
     print("FASE 1: Liturgische context verzamelen")
     print("─" * 60)
@@ -564,7 +669,6 @@ def main():
 
     # Check of bestand bestaat (JSON of MD)
     file_path_json = output_dir / f"{first_analysis['name']}.json"
-    file_path_md = output_dir / f"{first_analysis['name']}.md"
     run_this = True
     kerkelijk_jaar_result = None
 
@@ -575,13 +679,6 @@ def main():
             print(f"  Gebruik bestaande: {first_analysis['name']}.json")
             with open(file_path_json, "r", encoding="utf-8") as f:
                 kerkelijk_jaar_result = json.load(f)
-    elif file_path_md.exists():
-        overwrite = input(f"  {first_analysis['name']}.md bestaat al (oud formaat). Opnieuw genereren als JSON? (j/n): ").strip().lower()
-        if overwrite != 'j':
-            run_this = False
-            print(f"  Gebruik bestaande: {first_analysis['name']}.md (let op: oud formaat)")
-            with open(file_path_md, "r", encoding="utf-8") as f:
-                kerkelijk_jaar_result = {"_legacy_markdown": f.read()}
 
     if run_this:
         kerkelijk_jaar_result = run_analysis(
@@ -597,11 +694,11 @@ def main():
             output_dir,
             first_analysis['name'],
             kerkelijk_jaar_result,
-            first_analysis['title']
+            first_analysis['title'],
+            user_input
         )
 
     # Converteer JSON naar leesbare context string voor volgende analyses
-    kerkelijk_jaar_context = json.dumps(kerkelijk_jaar_result, ensure_ascii=False, indent=2)
 
     # FASE 2: De overige analyses met de liturgische context
     print("\n" + "─" * 60)
@@ -627,7 +724,7 @@ def main():
                 continue
 
         result = run_analysis(client, analysis['prompt'], analysis['title'])
-        save_analysis(output_dir, analysis['name'], result, analysis['title'])
+        save_analysis(output_dir, analysis['name'], result, analysis['title'], user_input)
 
     print("\n" + "=" * 60)
     print("KLAAR")

@@ -1,0 +1,656 @@
+{
+  "titel": "LITURGISCHE KALENDER 2025-2026 JAAR A",
+  "rooster": [
+    {
+      "week_nr": "1",
+      "datum": "30 nov 25",
+      "gelegenheid": "1e zondag van de advent",
+      "eerste_lezing": "Jesaja 2,1-5",
+      "psalm": "Psalm 122",
+      "tweede_lezing": "Romeinen 13,11-14",
+      "evangelie": "Matteüs 24,37-44",
+      "periode": "Advent"
+    },
+    {
+      "week_nr": "2",
+      "datum": "7 dec",
+      "gelegenheid": "2e zondag van de advent",
+      "eerste_lezing": "Jesaja 11,1-10",
+      "psalm": "Psalm 72",
+      "tweede_lezing": "Romeinen 15,4-9",
+      "evangelie": "Matteüs 3,1-12",
+      "periode": "Advent"
+    },
+    {
+      "week_nr": "3",
+      "datum": "14 dec",
+      "gelegenheid": "3e zondag van de advent",
+      "eerste_lezing": "Jesaja 35,1-6a.10",
+      "psalm": "Psalm 146",
+      "tweede_lezing": "Jakobus 5,7-10",
+      "evangelie": "Matteüs 11,2-11",
+      "periode": "Advent"
+    },
+    {
+      "week_nr": "4",
+      "datum": "21 dec",
+      "gelegenheid": "14e zondag van de advent",
+      "eerste_lezing": "Jesaja 7,10-14",
+      "psalm": "Psalm 24",
+      "tweede_lezing": "Romeinen 1,1-7",
+      "evangelie": "Matteüs 1,18-24",
+      "periode": "Advent"
+    },
+    {
+      "week_nr": "5",
+      "datum": "24 dec",
+      "gelegenheid": "Kerstmis, nachtmis",
+      "eerste_lezing": "Jesaja 9,1-3.5-6",
+      "psalm": "Psalm 96",
+      "tweede_lezing": "Titus 2,11-14",
+      "evangelie": "Lucas 2,1-14",
+      "periode": "Kersttijd"
+    },
+    {
+      "week_nr": "5",
+      "datum": "25 dec",
+      "gelegenheid": "Kerstmis, dagmis",
+      "eerste_lezing": "Jesaja 52,7-10",
+      "psalm": "Psalm 98",
+      "tweede_lezing": "Hebreeën 1,1-6",
+      "evangelie": "Johannes 1,1-18 of 1,1-5.9-14",
+      "periode": "Kersttijd"
+    },
+    {
+      "week_nr": "6",
+      "datum": "26 dec",
+      "gelegenheid": "H. Stefanus",
+      "eerste_lezing": "Handelingen 6,8-10; 7,54-60",
+      "psalm": "Psalm 31",
+      "tweede_lezing": null,
+      "evangelie": "Matteüs 10,17-22",
+      "periode": "Kersttijd"
+    },
+    {
+      "week_nr": "7",
+      "datum": "28 dec",
+      "gelegenheid": "H. Familie",
+      "eerste_lezing": "Sirach 3,2-6.12-14",
+      "psalm": "Psalm 128",
+      "tweede_lezing": "Kolossenzen 3,12-21",
+      "evangelie": "Matteüs 2,13-15.19-23",
+      "periode": "Kersttijd"
+    },
+    {
+      "week_nr": "7",
+      "datum": "1 jan '26",
+      "gelegenheid": "H. Maria, Moeder van God",
+      "eerste_lezing": "Numeri 6,22-27",
+      "psalm": "Psalm 67",
+      "tweede_lezing": "Galaten 4,4-7",
+      "evangelie": "Lucas 2,16-21",
+      "periode": "Kersttijd"
+    },
+    {
+      "week_nr": "8",
+      "datum": "4 jan",
+      "gelegenheid": "Openbaring van de Heer",
+      "eerste_lezing": "Jesaja 60,1-6",
+      "psalm": "Psalm 72",
+      "tweede_lezing": "Efeziërs 3,2-3a.5-6",
+      "evangelie": "Matteüs 2,1-12",
+      "periode": "Kersttijd"
+    },
+    {
+      "week_nr": "9",
+      "datum": "11 jan",
+      "gelegenheid": "Doop van de Heer",
+      "eerste_lezing": "Jesaja 42,1-4-6-7",
+      "psalm": "Psalm 29",
+      "tweede_lezing": "Handelingen 10,34-38",
+      "evangelie": "Matteüs 3,13-17",
+      "periode": "Kersttijd"
+    },
+    {
+      "week_nr": "10",
+      "datum": "18 jan",
+      "gelegenheid": "2e zondag door het jaar",
+      "eerste_lezing": "Jesaja 49,3.5-6",
+      "psalm": "Psalm 40",
+      "tweede_lezing": "1 Korintiërs 1,1-3",
+      "evangelie": "Johannes 1,29-34",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "11",
+      "datum": "25 jan",
+      "gelegenheid": "3e zondag door het jaar",
+      "eerste_lezing": "Jesaja 8,23b-9,3",
+      "psalm": "Psalm 27",
+      "tweede_lezing": "1 Korintiërs 1,10-13.17",
+      "evangelie": "Matteüs 4,12-23 of 4,12-17",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "12",
+      "datum": "1 feb",
+      "gelegenheid": "4e zondag door het jaar",
+      "eerste_lezing": "Sefanja 2,3; 3,12-13",
+      "psalm": "Psalm 146",
+      "tweede_lezing": "1 Korintiërs 1,26-31",
+      "evangelie": "Matteüs 5,1-12a",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "13",
+      "datum": "8 feb",
+      "gelegenheid": "5e zondag door het jaar",
+      "eerste_lezing": "Jesaja 58,7-10",
+      "psalm": "Psalm 112",
+      "tweede_lezing": "1 Korintiërs 2,1-5",
+      "evangelie": "Matteüs 5,13-16",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "14",
+      "datum": "15 feb",
+      "gelegenheid": "6e zondag door het jaar",
+      "eerste_lezing": "Sirach 15,15-20",
+      "psalm": "Psalm 119",
+      "tweede_lezing": "1 Korintiërs 2,6-10",
+      "evangelie": "Matteüs 5,17-37 of 5,20-22a.27-28.33-34a.37",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "15",
+      "datum": "18 feb",
+      "gelegenheid": "Aswoensdag",
+      "eerste_lezing": "Joël 2,12-18",
+      "psalm": "Psalm 51",
+      "tweede_lezing": "2 Korintiërs 5,20-6,2",
+      "evangelie": "Matteüs 6,1-6.16-18",
+      "periode": "Veertigdagentijd"
+    },
+    {
+      "week_nr": "16",
+      "datum": "22 feb",
+      "gelegenheid": "1e zondag veertigdagentijd",
+      "eerste_lezing": "Genesis 2,7-9; 3,1-7",
+      "psalm": "Psalm 51",
+      "tweede_lezing": "Romeinen 5,12-19 of 5,12.17-19",
+      "evangelie": "Matteüs 4,1-11",
+      "periode": "Veertigdagentijd"
+    },
+    {
+      "week_nr": "17",
+      "datum": "1 mrt",
+      "gelegenheid": "2e zondag veertigdagentijd",
+      "eerste_lezing": "Genesis 12,1-4a",
+      "psalm": "Psalm 33",
+      "tweede_lezing": "2 Timoteüs 1,8b-10",
+      "evangelie": "Matteüs 17,1-9",
+      "periode": "Veertigdagentijd"
+    },
+    {
+      "week_nr": "18",
+      "datum": "8 mrt",
+      "gelegenheid": "3e zondag veertigdagentijd",
+      "eerste_lezing": "Exodus 17,3-7",
+      "psalm": "Psalm 95",
+      "tweede_lezing": "Romeinen 5,1-2.5-8",
+      "evangelie": "Johannes 4,5-42 of 4,5-15.19b-26.39a.40-42",
+      "periode": "Veertigdagentijd"
+    },
+    {
+      "week_nr": "19",
+      "datum": "15 mrt",
+      "gelegenheid": "4e zondag veertigdagentijd",
+      "eerste_lezing": "1 Samuel 16,1b.6-7.10-13a",
+      "psalm": "Psalm 23",
+      "tweede_lezing": "Efeziërs 5,8-14",
+      "evangelie": "Johannes 9,1-41 of 9,1.6-9.13-17.34-38",
+      "periode": "Veertigdagentijd"
+    },
+    {
+      "week_nr": "20",
+      "datum": "22 mrt",
+      "gelegenheid": "5e zondag veertigdagentijd",
+      "eerste_lezing": "Ezechiël 37,12-14",
+      "psalm": "Psalm 130",
+      "tweede_lezing": "Romeinen 8,8-11",
+      "evangelie": "Johannes 11,1-45 of 11,3-7.17.20-27.33b-45",
+      "periode": "Veertigdagentijd"
+    },
+    {
+      "week_nr": "21",
+      "datum": "29 mrt",
+      "gelegenheid": "Palmzondag",
+      "eerste_lezing": "Jesaja 50,4-7",
+      "psalm": "Psalm 22",
+      "tweede_lezing": "Filippenzen 2,6-11",
+      "evangelie": "Matteüs 26,14-27,66 of 27,11-54",
+      "periode": "Goede Week"
+    },
+    {
+      "week_nr": "22",
+      "datum": "2 apr",
+      "gelegenheid": "Witte Donderdag",
+      "eerste_lezing": "Exodus 12,1-8.11-14",
+      "psalm": "Psalm 116",
+      "tweede_lezing": "1 Korintiërs 11,23-26",
+      "evangelie": "Johannes 13,1-15",
+      "periode": "Goede Week"
+    },
+    {
+      "week_nr": "23",
+      "datum": "3 apr",
+      "gelegenheid": "Goede Vrijdag",
+      "eerste_lezing": "Jesaja 52,13-53,12",
+      "psalm": "Psalm 31",
+      "tweede_lezing": "Hebreeën 4,14-16; 5,7-9",
+      "evangelie": "Johannes 18,119,42 of 18,1-19.37 en 19,38-42",
+      "periode": "Goede Week"
+    },
+    {
+      "week_nr": "24",
+      "datum": "4 apr",
+      "gelegenheid": "Paaswake",
+      "eerste_lezing": "Genesis 1, Exodus 15, Jesaja 55",
+      "psalm": "Psalm 104",
+      "tweede_lezing": "Romeinen 6,3-11",
+      "evangelie": "Matteüs 28,1-10",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "25",
+      "datum": "5 apr",
+      "gelegenheid": "Paaszondag",
+      "eerste_lezing": "Handelingen 10,34a.37-43",
+      "psalm": "Psalm 118",
+      "tweede_lezing": "Kolossenzen 3,1-4",
+      "evangelie": "Johannes 20,1-9",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "25",
+      "datum": "6 apr",
+      "gelegenheid": "Tweede Paasdag",
+      "eerste_lezing": "Handelingen 2,14.22-32",
+      "psalm": "Psalm 16",
+      "tweede_lezing": null,
+      "evangelie": "Matteüs 28,8-15",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "26",
+      "datum": "12 apr",
+      "gelegenheid": "2e zondag van Pasen",
+      "eerste_lezing": "Handelingen 2,42-47",
+      "psalm": "Psalm 118",
+      "tweede_lezing": "1 Petrus 1,3-9",
+      "evangelie": "Johannes 20,19-31",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "27",
+      "datum": "19 apr",
+      "gelegenheid": "3e zondag van Pasen",
+      "eerste_lezing": "Handelingen 2,14.22-32",
+      "psalm": "Psalm 16",
+      "tweede_lezing": "1 Petrus 1,17-21",
+      "evangelie": "Lucas 24,13-35",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "28",
+      "datum": "26 apr",
+      "gelegenheid": "4e zondag van Pasen",
+      "eerste_lezing": "Handelingen 2,14a.36-41",
+      "psalm": "Psalm 23",
+      "tweede_lezing": "1 Petrus 2,20b-25",
+      "evangelie": "Johannes 10,1-10",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "29",
+      "datum": "3 mei",
+      "gelegenheid": "5e zondag van Pasen",
+      "eerste_lezing": "Handelingen 6,1-7",
+      "psalm": "Psalm 33",
+      "tweede_lezing": "1 Petrus 2,4-9",
+      "evangelie": "Johannes 14,1-12",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "30",
+      "datum": "10 mei",
+      "gelegenheid": "6e zondag van Pasen",
+      "eerste_lezing": "Handelingen 8,5-8.14-17",
+      "psalm": "Psalm 66",
+      "tweede_lezing": "1 Petrus 3,15-18",
+      "evangelie": "Johannes 14,15-21",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "31",
+      "datum": "14 mei",
+      "gelegenheid": "Hemelvaart van de Heer",
+      "eerste_lezing": "Handelingen 1,1-11",
+      "psalm": "Psalm 47",
+      "tweede_lezing": "Efeziërs 1,17-23",
+      "evangelie": "Matteüs 28,16-20",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "32",
+      "datum": "17 mei",
+      "gelegenheid": "7e zondag van Pasen",
+      "eerste_lezing": "Handelingen 1,12-14",
+      "psalm": "Psalm 27",
+      "tweede_lezing": "1 Petrus 4,12-16",
+      "evangelie": "Johannes 17,1-11a",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "33",
+      "datum": "24 mei",
+      "gelegenheid": "Pinksteren",
+      "eerste_lezing": "Handelingen 2,1-11",
+      "psalm": "Psalm 104",
+      "tweede_lezing": "1 Korintiërs 12,3b-7.12-13",
+      "evangelie": "Johannes 20,19-23",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "33",
+      "datum": "25 mei",
+      "gelegenheid": "H. Maria, Moeder van de Kerk",
+      "eerste_lezing": "Genesis 3,9-15.20",
+      "psalm": "Psalm 87",
+      "tweede_lezing": null,
+      "evangelie": "Johannes 19,25-34",
+      "periode": "Paastijd"
+    },
+    {
+      "week_nr": "34",
+      "datum": "31 mei",
+      "gelegenheid": "H. Drie-eenheid",
+      "eerste_lezing": "Exodus 34,4b-6.8-9",
+      "psalm": "Daniël 3",
+      "tweede_lezing": "2 Korintiërs 13,11-13",
+      "evangelie": "Johannes 3,16-18",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "35",
+      "datum": "7 jun",
+      "gelegenheid": "Sacramentsdag",
+      "eerste_lezing": "Deuteronomium 8,2-3.14b-16a",
+      "psalm": "Psalm 147B",
+      "tweede_lezing": "1 Korintiërs 10,16-17",
+      "evangelie": "Johannes 6,51-58",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "36",
+      "datum": "14 jun",
+      "gelegenheid": "11e zondag door het jaar",
+      "eerste_lezing": "Exodus 19,2-6a",
+      "psalm": "Psalm 100",
+      "tweede_lezing": "Romeinen 5,6-11",
+      "evangelie": "Matteüs 9,36-10,8",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "37",
+      "datum": "21 jun",
+      "gelegenheid": "12e zondag door het jaar",
+      "eerste_lezing": "Jeremia 20,10-13",
+      "psalm": "Psalm 69",
+      "tweede_lezing": "Romeinen 5,12-15",
+      "evangelie": "Matteüs 10,26-33",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "38",
+      "datum": "28 jun",
+      "gelegenheid": "13e zondag door het jaar",
+      "eerste_lezing": "2 Koningen 4,8-11.14-16a",
+      "psalm": "Psalm 89",
+      "tweede_lezing": "Romeinen 6,3-4.8-11",
+      "evangelie": "Matteüs 10,37-42",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "39",
+      "datum": "5 jul",
+      "gelegenheid": "14e zondag door het jaar",
+      "eerste_lezing": "Zacharias 9,9-10",
+      "psalm": "Psalm 145",
+      "tweede_lezing": "Romeinen 8,9.11-13",
+      "evangelie": "Matteüs 11,25-30",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "40",
+      "datum": "12 jul",
+      "gelegenheid": "15e zondag door het jaar",
+      "eerste_lezing": "Jesaja 55,10-11",
+      "psalm": "Psalm 65",
+      "tweede_lezing": "Romeinen 8,18-23",
+      "evangelie": "Matteüs 13,1-23 of 13,1-9",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "41",
+      "datum": "19 jul",
+      "gelegenheid": "16e zondag door het jaar",
+      "eerste_lezing": "Wijsheid 12,13.16-19",
+      "psalm": "Psalm 86",
+      "tweede_lezing": "Romeinen 8,26-27",
+      "evangelie": "Matteüs 13,24-43 of 13,24-30",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "42",
+      "datum": "26 jul",
+      "gelegenheid": "17e zondag door het jaar",
+      "eerste_lezing": "1 Koningen 3,5.7-12",
+      "psalm": "Psalm 119",
+      "tweede_lezing": "Romeinen 8,28-30",
+      "evangelie": "Matteüs 13,44-52 of 13,44-46",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "43",
+      "datum": "2 aug",
+      "gelegenheid": "18e zondag door het jaar",
+      "eerste_lezing": "Jesaja 55,1-3",
+      "psalm": "Psalm 145",
+      "tweede_lezing": "Romeinen 8,35.37-39",
+      "evangelie": "Matteüs 14,13-21",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "44",
+      "datum": "9 aug",
+      "gelegenheid": "19e zondag door het jaar",
+      "eerste_lezing": "1 Koningen 19,9a.11-13a",
+      "psalm": "Psalm 85",
+      "tweede_lezing": "Romeinen 9,1-5",
+      "evangelie": "Matteüs 14,22-33",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "45",
+      "datum": "15 aug",
+      "gelegenheid": "Maria Tenhemelopneming",
+      "eerste_lezing": "Openbaring 11,19a; 12,1-6a.10ab",
+      "psalm": "Psalm 45",
+      "tweede_lezing": "1 Korintiërs 15,20-26",
+      "evangelie": "Lucas 1,39-56",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "46",
+      "datum": "16 aug",
+      "gelegenheid": "20e zondag door het jaar",
+      "eerste_lezing": "Jesaja 56,1.6-7",
+      "psalm": "Psalm 67",
+      "tweede_lezing": "Romeinen 11,13-15.29-32",
+      "evangelie": "Matteüs 15,21-28",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "47",
+      "datum": "23 aug",
+      "gelegenheid": "21e zondag door het jaar",
+      "eerste_lezing": "Jesaja 22,19-23",
+      "psalm": "Psalm 138",
+      "tweede_lezing": "Romeinen 11,33-36",
+      "evangelie": "Matteüs 16,13-20",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "48",
+      "datum": "30 aug",
+      "gelegenheid": "22e zondag door het jaar",
+      "eerste_lezing": "Jeremia 20,7-9",
+      "psalm": "Psalm 63",
+      "tweede_lezing": "Romeinen 12,1-2",
+      "evangelie": "Matteüs 16,21-27",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "49",
+      "datum": "6 sep",
+      "gelegenheid": "23e zondag door het jaar",
+      "eerste_lezing": "Ezechiël 33,7-9",
+      "psalm": "Psalm 95",
+      "tweede_lezing": "Romeinen 13,8-10",
+      "evangelie": "Matteüs 18,15-20",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "50",
+      "datum": "13 sep",
+      "gelegenheid": "24e zondag door het jaar",
+      "eerste_lezing": "Sirach 27,30-28,7",
+      "psalm": "Psalm 103",
+      "tweede_lezing": "Romeinen 14,7-9",
+      "evangelie": "Matteüs 18,21-35",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "51",
+      "datum": "20 sep",
+      "gelegenheid": "25e zondag door het jaar",
+      "eerste_lezing": "Jesaja 55,6-9",
+      "psalm": "Psalm 145",
+      "tweede_lezing": "Filippenzen 1,20c-24.27a",
+      "evangelie": "Matteüs 20,1-16a",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "52",
+      "datum": "27 sep",
+      "gelegenheid": "26e zondag door het jaar",
+      "eerste_lezing": "Ezechiël 18,25-28",
+      "psalm": "Psalm 25",
+      "tweede_lezing": "Filippenzen 2,1-11 of 2,1-5",
+      "evangelie": "Matteüs 21,28-32",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "53",
+      "datum": "4 okt",
+      "gelegenheid": "27e zondag door het jaar",
+      "eerste_lezing": "Jesaja 5,1-7",
+      "psalm": "Psalm 80",
+      "tweede_lezing": "Filippenzen 4,6-9",
+      "evangelie": "Matteüs 21,33-43",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "54",
+      "datum": "11 okt",
+      "gelegenheid": "28e zondag door het jaar",
+      "eerste_lezing": "Jesaja 25,6-10a",
+      "psalm": "Psalm 23",
+      "tweede_lezing": "Filippenzen 4,12-14.19-20",
+      "evangelie": "Matteüs 22,1-14 of 22,1-10",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "55",
+      "datum": "18 okt",
+      "gelegenheid": "29e zondag door het jaar",
+      "eerste_lezing": "Jesaja 45,1.4-6",
+      "psalm": "Psalm 96",
+      "tweede_lezing": "1 Tessalonicenzen 1,1-5b",
+      "evangelie": "Matteüs 22,15-21",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "56",
+      "datum": "25 okt",
+      "gelegenheid": "30e zondag door het jaar",
+      "eerste_lezing": "Exodus 22,20-26",
+      "psalm": "Psalm 18",
+      "tweede_lezing": "1 Tessalonicenzen 1,5c-10",
+      "evangelie": "Matteüs 22,34-40",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "57",
+      "datum": "1 nov",
+      "gelegenheid": "Allerheiligen",
+      "eerste_lezing": "Openbaring 7,2-4.9-14",
+      "psalm": "Psalm 24",
+      "tweede_lezing": "1 Johannes 3,1-3",
+      "evangelie": "Matteüs 5,1-12a",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "57",
+      "datum": "2 nov",
+      "gelegenheid": "Allerzielen",
+      "eerste_lezing": "Job 19,1.23-27a",
+      "psalm": "Psalm 27",
+      "tweede_lezing": "Romeinen 14,7-9.10b-12",
+      "evangelie": "Johannes 17,24-26",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "58",
+      "datum": "8 nov",
+      "gelegenheid": "32e zondag door het jaar",
+      "eerste_lezing": "Wijsheid 6,12-16",
+      "psalm": "Psalm 63",
+      "tweede_lezing": "1 Tessalonicenzen 4,13-18 of 4,13-14",
+      "evangelie": "Matteüs 25,1-13",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "59",
+      "datum": "15 nov",
+      "gelegenheid": "33e zondag door het jaar",
+      "eerste_lezing": "Spreuken 31,10-13.19-20.30-31",
+      "psalm": "Psalm 128",
+      "tweede_lezing": "1 Tessalonicenzen 5,1-6",
+      "evangelie": "Matteüs 25,14-30 of 25,14-15.19-21",
+      "periode": "Tijd door het jaar"
+    },
+    {
+      "week_nr": "60",
+      "datum": "22 nov",
+      "gelegenheid": "Christus, Koning van het heelal",
+      "eerste_lezing": "Ezechiël 34,11-12.15-17",
+      "psalm": "Psalm 23",
+      "tweede_lezing": "1 Korintiërs 15,20-26.28",
+      "evangelie": "Matteüs 25,31-46",
+      "periode": "Tijd door het jaar"
+    }
+  ]
+}
+

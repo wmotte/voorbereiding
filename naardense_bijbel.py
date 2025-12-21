@@ -67,7 +67,7 @@ BOEK_NAAR_SLUG = {
     "1 korintiërs": "1-korintiers", "1 korintiers": "1-korintiers",
     "1 korinthiërs": "1-korintiers", "2 korintiërs": "2-korintiers",
     "2 korintiers": "2-korintiers", "2 korinthiërs": "2-korintiers",
-    "galaten": "galaten", "efeze": "efeze", "efeziërs": "efeze",
+    "galaten": "galaten", "efeze": "efeze", "efeziërs": "efeze", "efeziers": "efeze", "efesiërs": "efeze", "efesiers": "efeze",
     "filippenzen": "filippenzen", "kolossenzen": "kolossenzen",
     "1 tessalonicenzen": "1-tessalonicenzen", "2 tessalonicenzen": "2-tessalonicenzen",
     "1 timoteüs": "1-timoteus", "1 timoteus": "1-timoteus",
@@ -76,6 +76,11 @@ BOEK_NAAR_SLUG = {
     "jakobus": "jakobus", "1 petrus": "1-petrus", "2 petrus": "2-petrus",
     "1 johannes": "1-johannes", "2 johannes": "2-johannes",
     "3 johannes": "3-johannes", "judas": "judas", "openbaring": "openbaring",
+    # Deuterocanoniek
+    "sirach": "sirach", "jezus sirach": "sirach", "ecclesiasticus": "sirach",
+    "wijsheid": "wijsheid", "wijsheid van salomo": "wijsheid",
+    "tobit": "tobit", "judit": "judith", "judith": "judith",
+    "baruch": "baruch", "1 makkabeeën": "1-makkabeeen", "2 makkabeeën": "2-makkabeeen",
 }
 
 # Mapping voor NBV21 codes
@@ -166,7 +171,9 @@ def parse_bijbelreferentie(tekst: str) -> Optional[BijbelReferentie]:
             extra_eind = int(haakjes_match.group(1))
         tekst = re.sub(r'\s*\([^)]+\)', '', tekst)
 
-    pattern = r'^(\d?\s*[A-Za-zëïüéèöä]+)\s+(\d+)(?::(\d+)(?:[-–](\d+))?)?'
+    # Regex aangepast om boeknamen met meerdere woorden (en spaties) toe te staan
+    # bijv. "Jezus Sirach 24" of "1 Koningen 12"
+    pattern = r'^(\d?\s*[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)\s+(\d+)(?::(\d+)(?:[-–](\d+))?)?'
     match = re.match(pattern, tekst, re.IGNORECASE)
 
     if not match:
@@ -257,7 +264,7 @@ BOEK_NAAR_NUMMER = {
     "marcus": 41, "lucas": 42, "johannes": 43, "handelingen": 44,
     "romeinen": 45, "1 korintiërs": 46, "1 korintiers": 46, "1 korinthiërs": 46,
     "2 korintiërs": 47, "2 korintiers": 47, "2 korinthiërs": 47,
-    "galaten": 48, "efeze": 49, "efeziërs": 49, "efeziers": 49,
+    "galaten": 48, "efeze": 49, "efeziërs": 49, "efeziers": 49, "efesiërs": 49, "efesiers": 49,
     "filippenzen": 50, "kolossenzen": 51,
     "1 tessalonicenzen": 52, "2 tessalonicenzen": 53,
     "1 timoteüs": 54, "1 timoteus": 54, "2 timoteüs": 55, "2 timoteus": 55,
@@ -375,16 +382,25 @@ def extract_lezingen_uit_liturgie(liturgie_tekst: str) -> list[str]:
     """Extraheer bijbelreferenties uit de liturgische context tekst."""
     referenties = []
     patronen = [
+        # Markdown patronen
         r'(?:Eerste|Tweede|Derde)?\s*(?:lezing|Lezing)[:\s]+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–]\d+)?(?:\s*\([^)]+\))?)',
         r'(?:Evangelie|Epistel)(?:lezing)?[:\s]+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–]\d+)?(?:\s*\([^)]+\))?)',
         r'Psalm(?:\s+van\s+de\s+\w+)?[:\s]+(?:Psalm\s+)?(\d+)',
         r'\*\*(?:Eerste|Evangelie|Epistel)lezing:\*\*\s+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–]\d+)?)',
+        # JSON patroon ("referentie": "...")
+        r'"referentie":\s*"([^"]+)"'
     ]
     for patroon in patronen:
         for match in re.findall(patroon, liturgie_tekst, re.IGNORECASE):
-            ref = match.strip()
+            # Als match een tuple is (bij groepen), pak de eerste niet-lege
+            if isinstance(match, tuple):
+                ref = next((m for m in match if m), "").strip()
+            else:
+                ref = match.strip()
+            
             if re.match(r'^\d+$', ref): ref = f"Psalm {ref}"
-            if ref and ref not in referenties: referenties.append(ref)
+            if ref and ref not in referenties and len(ref) > 3: # min length check
+                referenties.append(ref)
 
     bullet_pattern = r'[-*]\s*\*?\*?([A-Za-zëïüéèöä]+(?:\s+\d)?)\s+(\d+):(\d+)(?:[-–](\d+))?(?:\s*\([^)]+\))?'
     for match in re.finditer(bullet_pattern, liturgie_tekst):
@@ -417,109 +433,70 @@ def download_lezingen(output_dir: Path, liturgie_tekst: str) -> dict[str, str]:
 
     for ref_str in referenties_raw:
         referentie = parse_bijbelreferentie(ref_str)
-        if not referentie: continue
+        if not referentie:
+            continue
 
-                safe_name = re.sub(r'[^
-
-        \w\s-]', '', str(referentie)).replace(' ', '_')
-
-                json_path = bijbel_dir / f"{safe_name}.json"
-
+        # Vervang : en spaties door underscores voor een veilige bestandsnaam
+        safe_name = str(referentie).replace(':', '_').replace(' ', '_')
+        # Verwijder overige vreemde tekens
+        safe_name = re.sub(r'[^\w-]', '', safe_name)
         
+        json_path = bijbel_dir / f"{safe_name}_NB.json"
 
-                if json_path.exists() and json_path.stat().st_size > 0:
+        if json_path.exists() and json_path.stat().st_size > 0:
+            print(f"  ✓ Reeds gedownload: {json_path.name}")
+            resultaten[str(referentie)] = str(json_path)
+            continue
 
-                    print(f"  ✓ Reeds gedownload: {json_path.name}")
+        md_text, verses_data = haal_bijbeltekst_op(referentie)
 
-                    resultaten[str(referentie)] = str(json_path)
+        if md_text and verses_data:
+            # Save JSON (NBV21 Structure)
+            json_data = {
+                "book": get_boek_code(referentie.boek),
+                "chapter": referentie.hoofdstuk,
+                "verses": verses_data
+            }
 
-                    continue
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump(json_data, f, indent=2, ensure_ascii=False)
 
-        
+            print(f"  ✓ Opgeslagen: {json_path.name}")
+            resultaten[str(referentie)] = str(json_path)
+        else:
+            print(f"  ✗ Kon niet ophalen: {referentie}")
 
-                md_text, verses_data = haal_bijbeltekst_op(referentie)
-
-        
-
-                if md_text and verses_data:
-
-                    # Save JSON (NBV21 Structure)
-
-                    json_data = {
-
-                        "book": get_boek_code(referentie.boek),
-
-                        "chapter": referentie.hoofdstuk,
-
-                        "verses": verses_data
-
-                    }
-
-                    with open(json_path, 'w', encoding='utf-8') as f:
-
-                        json.dump(json_data, f, indent=2, ensure_ascii=False)
-
-        
-
-                    print(f"  ✓ Opgeslagen: {json_path.name}")
-
-                    resultaten[str(referentie)] = str(json_path)
-
-                else:
-
-                    print(f"  ✗ Kon niet ophalen: {referentie}")
-
-        
-
-                time.sleep(0.5)
+        time.sleep(0.5)
 
     return resultaten
 
+
 def laad_bijbelteksten(output_dir: Path) -> str:
-
     """Laad alle bijbelteksten (JSON) en formatteer als Markdown."""
-
     bijbel_dir = output_dir / "bijbelteksten"
-
-    if not bijbel_dir.exists(): return ""
+    if not bijbel_dir.exists():
+        return ""
 
     teksten = []
-
     for json_file in sorted(bijbel_dir.glob("*.json")):
-
         try:
-
             with open(json_file, 'r', encoding='utf-8') as f:
-
                 data = json.load(f)
 
-            
-
             book = data.get("book", "Onbekend")
-
             chapter = data.get("chapter", "")
-
             verses = data.get("verses", [])
 
-            
-
             md_lines = [f"# {book} {chapter}", "# Bron: Naardense Bijbel (Pieter Oussoren)\n"]
-
             for v in verses:
-
                 md_lines.append(f"**{chapter}:{v['verse']}** {v['text']}")
 
-            
-
             teksten.append("\n\n".join(md_lines))
-
         except Exception as e:
-
             print(f"Fout bij laden {json_file}: {e}")
 
-            
-
     return "\n\n---\n\n".join(teksten)
+            
 
 if __name__ == "__main__":
     print("Test run...")

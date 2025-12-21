@@ -61,72 +61,88 @@ NBV21_DIR = SCRIPT_DIR / "nbv21"
 
 # Mapping configuratie (Bron: get_chapter.R)
 MAPPINGS_SOURCE = {
-  "GEN": ["GEN", "Genesis", "1 Mozes", "1Mozes"],
-  "EXO": ["EXO", "Exodus", "2 Mozes", "2Mozes"],
-  "LEV": ["LEV", "Leviticus", "3 Mozes", "3Mozes"],
-  "NUM": ["NUM", "Numeri", "4 Mozes", "4Mozes"],
-  "DEU": ["DEU", "Deuteronomium", "5 Mozes", "5Mozes"],
-  "JOS": ["JOS", "Jozua", "Joshua"],
-  "JDG": ["JDG", "Rechters", "Judges"],
-  "RUT": ["RUT", "Ruth"],
-  "1SA": ["1SA", "1 Samuel", "1Samuel", "1 Sam", "1Sam"],
-  "2SA": ["2SA", "2 Samuel", "2Samuel", "2 Sam", "2Sam"],
-  "1KI": ["1KI", "1 Koningen", "1Koningen", "1 Kings", "1Kings"],
-  "2KI": ["2KI", "2 Koningen", "2Koningen", "2 Kings", "2Kings"],
-  "1CH": ["1CH", "1 Kronieken", "1Kronieken", "1 Chronicles", "1Chronicles"],
-  "2CH": ["2CH", "2 Kronieken", "2Kronieken", "2 Chronicles", "2Chronicles"],
-  "EZR": ["EZR", "Ezra"],
-  "NEH": ["NEH", "Nehemia", "Nehemiah"],
-  "EST": ["EST", "Esther"],
-  "JOB": ["JOB", "Job"],
-  "PSA": ["PSA", "Psalmen", "Psalms", "Psalm"],
-  "PRO": ["PRO", "Spreuken", "Proverbs"],
-  "ECC": ["ECC", "Prediker", "Ecclesiastes"],
-  "SNG": ["SNG", "Hooglied", "Song of Songs", "Song of Solomon"],
-  "ISA": ["ISA", "Jesaja", "Isaiah"],
-  "JER": ["JER", "Jeremia", "Jeremiah"],
-  "LAM": ["LAM", "Klaagliederen", "Lamentations"],
-  "EZK": ["EZK", "Ezechiël", "Ezekiel", "Ezechiel"],
-  "DAN": ["DAN", "Daniël", "Daniel", "Daniel"],
-  "HOS": ["HOS", "Hosea"],
-  "JOL": ["JOL", "Joël", "Joel", "Joel"],
-  "AMO": ["AMO", "Amos"],
-  "OBA": ["OBA", "Obadja", "Obadiah"],
-  "JON": ["JON", "Jona", "Jonah"],
-  "MIC": ["MIC", "Micha", "Micah"],
-  "NAM": ["NAM", "Nahum"],
-  "HAB": ["HAB", "Habakuk", "Habakkuk"],
-  "ZEP": ["ZEP", "Sefanja", "Zephaniah"],
-  "HAG": ["HAG", "Haggai"],
-  "ZEC": ["ZEC", "Zacharia", "Zechariah"],
-  "MAL": ["MAL", "Maleachi", "Malachi"],
-  "MAT": ["MAT", "Matteüs", "Matthew", "Matt", "Matteus"],
-  "MRK": ["MRK", "Marcus", "Mark", "Markus"],
-  "LUK": ["LUK", "Lucas", "Luke"],
-  "JHN": ["JHN", "Johannes", "John"],
-  "ACT": ["ACT", "Handelingen", "Acts"],
-  "ROM": ["ROM", "Romeinen", "Romans"],
-  "1CO": ["1CO", "1 Korinthiërs", "1Korinthiërs", "1 Corinthians", "1Corinthians", "1 Kor", "1Kor", "1 Korintiers"],
-  "2CO": ["2CO", "2 Korinthiërs", "2Korinthiërs", "2 Corinthians", "2Corinthians", "2 Kor", "2Kor", "2 Korintiers"],
-  "GAL": ["GAL", "Galaten", "Galatians"],
-  "EPH": ["EPH", "Efeziërs", "Ephesians", "Efeze"],
-  "PHP": ["PHP", "Filippenzen", "Philippians"],
-  "COL": ["COL", "Kolossenzen", "Colossians"],
-  "1TH": ["1TH", "1 Tessalonicenzen", "1Tessalonicenzen", "1 Thessalonians", "1Thessalonians", "1 Thess", "1Thess"],
-  "2TH": ["2TH", "2 Tessalonicenzen", "2Tessalonicenzen", "2 Thessalonians", "2Thessalonians", "2 Thess", "2Thess"],
-  "1TI": ["1TI", "1 Timoteüs", "1Timoteüs", "1 Timothy", "1Timothy", "1 Tim", "1Tim", "1 Timoteus"],
-  "2TI": ["2TI", "2 Timoteüs", "2Timoteüs", "2 Timothy", "2Timothy", "2 Tim", "2Tim", "2 Timoteus"],
-  "TIT": ["TIT", "Titus"],
-  "PHM": ["PHM", "Filemon", "Philemon"],
-  "HEB": ["HEB", "Hebreeën", "Hebrews", "Hebreeen"],
-  "JAS": ["JAS", "Jakobus", "James"],
-  "1PE": ["1PE", "1 Petrus", "1Petrus", "1 Peter", "1Peter", "1 Pet", "1Pet"],
-  "2PE": ["2PE", "2 Petrus", "2Petrus", "2 Peter", "2Peter", "2 Pet", "2Pet"],
-  "1JN": ["1JN", "1 Johannes", "1Johannes", "1 John", "1John"],
-  "2JN": ["2JN", "2 Johannes", "2Johannes", "2 John", "2John"],
-  "3JN": ["3JN", "3 Johannes", "3Johannes", "3 John", "3John"],
-  "JUD": ["JUD", "Judas", "Jude"],
-  "REV": ["REV", "Openbaring", "Revelation"]
+    # Old Testament
+    "GEN": ["GEN", "Genesis", "1 Mozes", "1Mozes"],
+    "EXO": ["EXO", "Exodus", "2 Mozes", "2Mozes"],
+    "LEV": ["LEV", "Leviticus", "3 Mozes", "3Mozes"],
+    "NUM": ["NUM", "Numeri", "4 Mozes", "4Mozes"],
+    "DEU": ["DEU", "Deuteronomium", "5 Mozes", "5Mozes"],
+    "JOS": ["JOS", "Jozua", "Joshua"],
+    "JDG": ["JDG", "Rechters", "Judges", "Richteren"],
+    "RUT": ["RUT", "Ruth"],
+    "1SA": ["1SA", "1 Samuel", "1Samuel", "1 Sam", "1Sam", "1 Samuël"],
+    "2SA": ["2SA", "2 Samuel", "2Samuel", "2 Sam", "2Sam", "2 Samuël"],
+    "1KI": ["1KI", "1 Koningen", "1Koningen", "1 Kings", "1Kings"],
+    "2KI": ["2KI", "2 Koningen", "2Koningen", "2 Kings", "2Kings"],
+    "1CH": ["1CH", "1 Kronieken", "1Kronieken", "1 Chronicles", "1Chronicles"],
+    "2CH": ["2CH", "2 Kronieken", "2Kronieken", "2 Chronicles", "2Chronicles"],
+    "EZR": ["EZR", "Ezra"],
+    "NEH": ["NEH", "Nehemia", "Nehemiah"],
+    "EST": ["EST", "Esther", "Ester"],
+    "JOB": ["JOB", "Job"],
+    "PSA": ["PSA", "Psalmen", "Psalms", "Psalm"],
+    "PRO": ["PRO", "Spreuken", "Proverbs"],
+    "ECC": ["ECC", "Prediker", "Ecclesiastes"],
+    "SNG": ["SNG", "Hooglied", "Song of Songs", "Song of Solomon"],
+    "ISA": ["ISA", "Jesaja", "Isaiah"],
+    "JER": ["JER", "Jeremia", "Jeremiah"],
+    "LAM": ["LAM", "Klaagliederen", "Lamentations"],
+    "EZK": ["EZK", "Ezechiël", "Ezekiel", "Ezechiel"],
+    "DAN": ["DAN", "Daniël", "Daniel", "Daniel"],
+    "HOS": ["HOS", "Hosea"],
+    "JOL": ["JOL", "Joël", "Joel", "Joel"],
+    "AMO": ["AMO", "Amos"],
+    "OBA": ["OBA", "Obadja", "Obadiah"],
+    "JON": ["JON", "Jona", "Jonah"],
+    "MIC": ["MIC", "Micha", "Micah"],
+    "NAM": ["NAM", "Nahum"],
+    "HAB": ["HAB", "Habakuk", "Habakkuk"],
+    "ZEP": ["ZEP", "Sefanja", "Zephaniah"],
+    "HAG": ["HAG", "Haggai", "Haggaï"],
+    "ZEC": ["ZEC", "Zacharia", "Zechariah"],
+    "MAL": ["MAL", "Maleachi", "Malachi"],
+    # New Testament
+    "MAT": ["MAT", "Matteüs", "Matthew", "Matt", "Matteus", "Mattheus", "Mattheüs"],
+    "MRK": ["MRK", "Marcus", "Mark", "Markus"],
+    "LUK": ["LUK", "Lucas", "Luke", "Lukas"],
+    "JHN": ["JHN", "Johannes", "John"],
+    "ACT": ["ACT", "Handelingen", "Acts"],
+    "ROM": ["ROM", "Romeinen", "Romans"],
+    "1CO": ["1CO", "1 Korinthiërs", "1Korinthiërs", "1 Corinthians", "1Corinthians", "1 Kor", "1Kor"],
+    "2CO": ["2CO", "2 Korinthiërs", "2Korinthiërs", "2 Corinthians", "2Corinthians", "2 Kor", "2Kor"],
+    "GAL": ["GAL", "Galaten", "Galatians"],
+    "EPH": ["EPH", "Efeziërs", "Ephesians", "Efeze", "Efesiërs", "Efesiers"],
+    "PHP": ["PHP", "Filippenzen", "Philippians"],
+    "COL": ["COL", "Kolossenzen", "Colossians"],
+    "1TH": ["1TH", "1 Tessalonicenzen", "1Tessalonicenzen", "1 Thessalonians", "1Thessalonians", "1 Thess", "1Thess"],
+    "2TH": ["2TH", "2 Tessalonicenzen", "2Tessalonicenzen", "2 Thessalonians", "2Thessalonians", "2 Thess", "2Thess"],
+    "1TI": ["1TI", "1 Timoteüs", "1Timoteüs", "1 Timothy", "1Timothy", "1 Tim", "1Tim"],
+    "2TI": ["2TI", "2 Timoteüs", "2Timoteüs", "2 Timothy", "2Timothy", "2 Tim", "2Tim"],
+    "TIT": ["TIT", "Titus"],
+    "PHM": ["PHM", "Filemon", "Philemon"],
+    "HEB": ["HEB", "Hebreeën", "Hebrews"],
+    "JAS": ["JAS", "Jakobus", "James"],
+    "1PE": ["1PE", "1 Petrus", "1Petrus", "1 Peter", "1Peter", "1 Pet", "1Pet"],
+    "2PE": ["2PE", "2 Petrus", "2Petrus", "2 Peter", "2Peter", "2 Pet", "2Pet"],
+    "1JN": ["1JN", "1 Johannes", "1Johannes", "1 John", "1John"],
+    "2JN": ["2JN", "2 Johannes", "2Johannes", "2 John", "2John"],
+    "3JN": ["3JN", "3 Johannes", "3Johannes", "3 John", "3John"],
+    "JUD": ["JUD", "Judas", "Jude"],
+    "REV": ["REV", "Openbaring", "Revelation", "Openbaring van Johannes", "Openbaringen"],
+    # Deuterocanonical
+    "TOB": ["TOB", "Tobit"],
+    "JDT": ["JDT", "Judith", "Judit"],
+    "ESG": ["ESG", "Ester (Gr)", "Esther (Gr)", "Esther (Greek)"],
+    "WIS": ["WIS", "Wijsheid", "Wijsheid van Salomo", "Wisdom", "Wisdom of Solomon"],
+    "SIR": ["SIR", "Sirach", "Jezus Sirach", "Ecclesiasticus"],
+    "BAR": ["BAR", "Baruch"],
+    "LJE": ["LJE", "Brief van Jeremia", "Letter of Jeremiah"],
+    "DAG": ["DAG", "Daniël (Gr)", "Daniel (Gr)", "Daniel (Greek)"], # Azarja, Susanna, Bel en de Draak vaak hieronder of apart
+    "1MA": ["1MA", "1 Makkabeeën", "1Makkabeeën", "1 Maccabees"],
+    "2MA": ["2MA", "2 Makkabeeën", "2Makkabeeën", "2 Maccabees"],
+    "3MA": ["3MA", "3 Makkabeeën", "3Makkabeeën", "3 Maccabees"],
+    "4MA": ["4MA", "4 Makkabeeën", "4Makkabeeën", "4 Maccabees"],
+    "MAN": ["MAN", "Gebed van Manasse", "Prayer of Manasseh"]
 }
 
 NAME_TO_CODE = {}
@@ -137,18 +153,15 @@ for code, names in MAPPINGS_SOURCE.items():
 def get_book_code(book_name: str) -> Optional[str]:
     return NAME_TO_CODE.get(book_name.upper().strip())
 
-def get_nbv21_text(ref: BijbelReferentie) -> Optional[str]:
-    """Haalt tekst op voor een gegeven referentie uit de lokale JSON bestanden."""
+def get_nbv21_data(ref: BijbelReferentie) -> Optional[List[Dict]]:
+    """Haalt data (verzen) op voor een gegeven referentie."""
     code = get_book_code(ref.boek)
     if not code:
-        # Probeer het boeknaam nog iets losser te matchen als het niet direct gevonden wordt
-        # Bijv. "1 samuel" -> "1 SAMUEL"
         return None
 
     json_path = NBV21_DIR / code / f"{code}.{ref.hoofdstuk}.json"
     
     if not json_path.exists():
-        # Misschien is het hoofdstuk nog niet gedownload
         return None
 
     try:
@@ -159,22 +172,12 @@ def get_nbv21_text(ref: BijbelReferentie) -> Optional[str]:
         return None
 
     verses = data.get('verses', [])
-    selected_text = []
+    selected_verses = []
 
-    # Bepaal start en eind vers
     start = ref.vers_start if ref.vers_start else 1
-    
-    # Als er geen eindvers is opgegeven, zijn er twee mogelijkheden:
-    # 1. Het was "Jesaja 9" -> heel hoofdstuk
-    # 2. Het was "Jesaja 9:6" -> alleen vers 6
-    # BijbelReferentie maakt hier geen onderscheid in structuur (behalve dat start=None betekent heel hoofdstuk)
-    # Maar als start=6 en eind=None, dan bedoelen we meestal vers 6.
-    
     if ref.vers_start is None:
-        # Heel hoofdstuk
         end = 9999
     elif ref.vers_eind is None:
-        # Alleen startvers
         end = start
     else:
         end = ref.vers_eind
@@ -182,12 +185,21 @@ def get_nbv21_text(ref: BijbelReferentie) -> Optional[str]:
     for v in verses:
         v_num = v.get('verse')
         if v_num >= start and v_num <= end:
-            text = v.get('text')
-            # Maak de tekst schoon (verwijder onnodige spaties)
-            text = re.sub(r'\s+', ' ', text).strip()
-            selected_text.append(f"{v_num}. {text}")
+            text = re.sub(r'\s+', ' ', v.get('text')).strip()
+            selected_verses.append({
+                "verse": v_num,
+                "text": text
+            })
 
-    if not selected_text:
+    if not selected_verses:
+        return None
+        
+    return selected_verses
+
+def get_nbv21_text(ref: BijbelReferentie) -> Optional[str]:
+    """Haalt tekst op voor een gegeven referentie uit de lokale JSON bestanden."""
+    selected_verses = get_nbv21_data(ref)
+    if not selected_verses:
         return None
 
     header = f"### {ref.boek.title()} {ref.hoofdstuk}"
@@ -196,7 +208,76 @@ def get_nbv21_text(ref: BijbelReferentie) -> Optional[str]:
         if ref.vers_eind and ref.vers_eind != ref.vers_start:
             header += f"-{ref.vers_eind}"
     
-    return f"{header} (NBV21)\n" + "\n".join(selected_text)
+    lines = [f"{v['verse']}. {v['text']}" for v in selected_verses]
+    return f"{header} (NBV21)\n" + "\n".join(lines)
+
+def save_nbv21_lezingen(output_dir: Path, context_text: str) -> dict[str, str]:
+    """Sla NBV21 lezingen op als JSON bestanden."""
+    print("\nNBV21 teksten verwerken...")
+
+    # Check of NBV21 data aanwezig is
+    if not NBV21_DIR.exists() or not any(NBV21_DIR.iterdir()):
+        print(f"  ⚠ WAARSCHUWING: NBV21 data map is leeg of bestaat niet: {NBV21_DIR}")
+        print("  Plaats de NBV21 JSON bestanden in deze map (structuur: nbv21/BOEK/BOEK.HOOFDSTUK.json)")
+        print("  NBV21 teksten worden niet online opgehaald.")
+        return {}
+
+    bijbel_dir = output_dir / "bijbelteksten"
+    bijbel_dir.mkdir(exist_ok=True)
+    
+    resultaten = {}
+    seen_refs = set()
+    found_refs_raw = []
+
+    # 1. Probeer JSON style referenties
+    json_matches = re.findall(r'"referentie":\s*"([^"]+)"', context_text)
+    found_refs_raw.extend(json_matches)
+
+    # 2. Probeer Markdown style referenties
+    regex = r'(?:lezing|evangelie|schriftlezing).*?[:]\s*([A-Za-z0-9\s:,-–\(\)]+)'
+    matches = re.finditer(regex, context_text, re.IGNORECASE)
+    for match in matches:
+        found_refs_raw.append(match.group(1).strip())
+
+    for raw_ref in found_refs_raw:
+        sub_refs = [r.strip() for r in raw_ref.split(',')]
+        
+        for sub_ref in sub_refs:
+            if not sub_ref: continue
+            
+            ref = parse_bijbelreferentie(sub_ref)
+            if ref and get_book_code(ref.boek):
+                ref_str = str(ref)
+                if ref_str in seen_refs: continue
+                
+                seen_refs.add(ref_str)
+                verses_data = get_nbv21_data(ref)
+                
+                if verses_data:
+                    # Vervang : en spaties door underscores voor een veilige bestandsnaam
+                    safe_name = str(ref).replace(':', '_').replace(' ', '_')
+                    # Verwijder overige vreemde tekens
+                    safe_name = re.sub(r'[^\w-]', '', safe_name)
+                    
+                    # Suffix _NBV21 om conflict met Naardense te voorkomen
+                    json_path = bijbel_dir / f"{safe_name}_NBV21.json"
+                    
+                    json_data = {
+                        "book": get_book_code(ref.boek),
+                        "chapter": ref.hoofdstuk,
+                        "verses": verses_data,
+                        "translation": "NBV21"
+                    }
+                    
+                    with open(json_path, 'w', encoding='utf-8') as f:
+                        json.dump(json_data, f, indent=2, ensure_ascii=False)
+                        
+                    print(f"  ✓ NBV21 Opgeslagen: {json_path.name}")
+                    resultaten[ref_str] = str(json_path)
+                else:
+                    print(f"  ✗ NBV21 Niet gevonden: {ref}")
+
+    return resultaten
 
 def get_nbv21_lezingen_text(context_text: str) -> str:
     """
