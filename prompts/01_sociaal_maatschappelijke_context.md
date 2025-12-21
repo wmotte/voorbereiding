@@ -64,8 +64,12 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "vergelijking_landelijk": "string"
     },
     "herkomst_diversiteit": {
-      "westers": "string",
-      "niet_westers": "string",
+      "nederlandse_achtergrond": "string - percentage zonder migratieachtergrond",
+      "migratieachtergrond": {
+        "totaal": "string - percentage met migratieachtergrond",
+        "westers": "string - percentage met westerse migratieachtergrond (excl. Nederland)",
+        "niet_westers": "string - percentage met niet-westerse migratieachtergrond"
+      },
       "grootste_groepen": ["string"],
       "toelichting": "string"
     }
