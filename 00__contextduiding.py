@@ -304,6 +304,84 @@ def run_analysis(client: genai.Client, prompt: str, title: str) -> dict:
         return {"error": error_msg, "title": title}
 
 
+def verify_liedboek(client: genai.Client, content: dict) -> dict:
+    """Verifieer alle liedsuggesties met Google Search."""
+    print(f"\n{'─' * 50}")
+    print("VERIFICATIE: Liedboek 2013 suggesties controleren...")
+    print(f"{'─' * 50}")
+    print("Bezig met verifiëren van liednummers en titels...")
+
+    content_str = json.dumps(content, ensure_ascii=False, indent=2)
+
+    verification_prompt = """Je bent een strenge factchecker voor het 'Liedboek - Zingen en bidden in huis en kerk' (2013).
+
+## Instructies
+
+1. Controleer ELKE liedsuggestie in de onderstaande JSON.
+2. Gebruik Google Search om te verifiëren of het lied met dat nummer en die titel BESTAAT in Liedboek 2013.
+   - Zoektermen: "Liedboek 2013 [nummer]", "Liedboek 2013 [titel]", "Kerkliedwiki [nummer]"
+3. Verwijder liederen die:
+   - NIET in Liedboek 2013 staan.
+   - Uit andere bundels komen (zoals Weerklank, Opwekking, Evangelische Liedbundel), tenzij ze OOK in Liedboek 2013 staan.
+   - Niet bestaan.
+4. Als het nummer niet klopt bij de titel, corrigeer het dan op basis van Kerkliedwiki.
+5. Behoud de originele JSON structuur.
+6. Retourneer ALLEEN valide JSON.
+
+## Te controleren JSON:
+
+"""
+
+    try:
+        response = client.models.generate_content(
+            model=MODEL_NAME,
+            contents=verification_prompt + content_str,
+            config=types.GenerateContentConfig(
+                temperature=0.1,  # Zeer laag voor maximale precisie
+                top_p=0.85,
+                top_k=20,
+                max_output_tokens=8192,
+                tools=[types.Tool(
+                    google_search=types.GoogleSearch()
+                )],
+                safety_settings=[
+                    types.SafetySetting(
+                        category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+                        threshold=types.HarmBlockThreshold.BLOCK_NONE
+                    ),
+                    types.SafetySetting(
+                        category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+                        threshold=types.HarmBlockThreshold.BLOCK_NONE
+                    ),
+                    types.SafetySetting(
+                        category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
+                        threshold=types.HarmBlockThreshold.BLOCK_NONE
+                    ),
+                    types.SafetySetting(
+                        category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+                        threshold=types.HarmBlockThreshold.BLOCK_NONE
+                    ),
+                ]
+            )
+        )
+
+        if response.text:
+            verified = extract_json(response.text)
+            if "error" not in verified:
+                print("✓ Verificatie voltooid - foute liedsuggesties verwijderd")
+                return verified
+            else:
+                print("⚠ Verificatie parsing mislukt - originele data behouden")
+                return content
+        else:
+            print("✗ Verificatie mislukt (geen text) - originele data behouden")
+            return content
+
+    except Exception as e:
+        print(f"✗ Verificatie fout: {str(e)} - originele data behouden")
+        return content
+
+
 def save_analysis(output_dir: Path, filename: str, content: dict, title: str):
     """Sla een analyse op naar een JSON bestand."""
     filepath = output_dir / f"{filename}.json"
@@ -554,6 +632,10 @@ def main():
             first_analysis['prompt'],
             first_analysis['title']
         )
+        
+        # VERIFICATIE SLAG
+        kerkelijk_jaar_result = verify_liedboek(client, kerkelijk_jaar_result)
+
         save_analysis(
             output_dir,
             first_analysis['name'],

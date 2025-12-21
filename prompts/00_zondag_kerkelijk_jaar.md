@@ -123,10 +123,8 @@ Alle liedsuggesties MOETEN geverifieerd worden via deze bronnen:
 - **Bij de collecte/gaven:** Lied 357-375 (dienstbaarheid, gaven)
 - **Zending en zegen:** Lied 415-438 (zending), Lied 425 (zegenformules)
 
-**Aanvullende bundels (indien relevant):**
-- Hemelhoog (met nummer, bijv. "Hemelhoog 123")
-- Evangelische Liedbundel (met nummer)
-- Taizé-liederen (met titel)
+**ALLEEN LIEDBOEK 2013:**
+Gebruik GEEN suggesties uit andere bundels zoals Weerklank, Opwekking of Evangelische Liedbundel. Beperk je strikt tot het Liedboek 2013 omdat dit de enige verifieerbare bron is voor deze taak.
 
 ### 9. Praktische Liturgische Handvatten
 - Suggesties voor de **liturgische orde** (conform Dienstboek PKN)
@@ -234,7 +232,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema. Geen markdown
     "oecumenische_dimensie": "string"
   },
   "liedsuggesties": {
-    "_verificatie_opmerking": "Alle liederen MOETEN geverifieerd zijn via kerkliedwiki.nl/Liedboek_2013/Inhoud",
+    "_verificatie_opmerking": "Alle liederen MOETEN geverifieerd zijn via kerkliedwiki.nl/Liedboek_2013/Inhoud. GEEN andere bundels.",
     "opening_intocht": [
       {
         "nummer": "string - exact nummer uit Liedboek 2013 (bijv. 'Lied 275')",
@@ -247,14 +245,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema. Geen markdown
     "bij_lezingen": [{"nummer": "string", "titel": "string", "eerste_regel": "string", "toelichting": "string|null"}],
     "credo": [{"nummer": "string", "titel": "string", "eerste_regel": "string", "toelichting": "string|null"}],
     "collecte_gaven": [{"nummer": "string", "titel": "string", "eerste_regel": "string", "toelichting": "string|null"}],
-    "zending_zegen": [{"nummer": "string", "titel": "string", "eerste_regel": "string", "toelichting": "string|null"}],
-    "aanvullende_bronnen": [
-      {
-        "bundel": "string - Hemelhoog|Evangelische Liedbundel|Taizé|Anders",
-        "nummer": "string",
-        "titel": "string"
-      }
-    ]
+    "zending_zegen": [{"nummer": "string", "titel": "string", "eerste_regel": "string", "toelichting": "string|null"}]
   },
   "praktische_handvatten": {
     "liturgische_orde_suggestie": "string - beschrijving van mogelijke orde",
