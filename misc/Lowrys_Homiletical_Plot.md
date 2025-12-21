@@ -27,7 +27,7 @@ De typische preekvoorbereiding werkt als volgt:
 
 Het resultaat is wat H. Grady Davis de "doghouse sermon" noemt — een wankel bouwsel dat steeds meer stutten nodig heeft.
 
-### Van constructie naar ontwikkeling
+### Van constructie naar creatie (ontwikkeling)
 
 Lowry stelt een fundamenteel andere benadering voor. Vergelijk de associaties bij twee woorden:
 
@@ -36,14 +36,14 @@ Lowry stelt een fundamenteel andere benadering voor. Vergelijk de associaties bi
 - Een ingenieur met een blauwdruk
 - Onderdelen die worden samengevoegd
 
-**"Ontwikkelen"** roept beelden op van:
+**"Creëren" (ontwikkelen)** roept beelden op van:
 - Een bloeiende roos
 - Organische groei
 - Rijping en vorming
 
-> "Ik kan het verschil voelen tussen een preek die ik 'construeerde' en een die ik 'ontwikkelde'!"
+> "Ik kan het verschil voelen tussen een preek die ik 'construeerde' en een die ik 'creëerde' (ontwikkelde)!"
 
-Een preek die zich "ontwikkelt" voelt levend, heeft een eigen dynamiek, en vraagt meer om snoeien dan om toevoegen. Zulke preken kosten vaak minder voorbereidingstijd én "preachen" beter.
+Een preek die "ontstaat" voelt levend, heeft een eigen dynamiek, en vraagt meer om snoeien dan om toevoegen. Zulke preken kosten vaak minder voorbereidingstijd én "preachen" beter.
 
 ### Plot als sleutelbegrip
 
@@ -61,7 +61,8 @@ Lowry onderscheidt vijf opeenvolgende stadia in het narratieve proces van een pr
 
 ```
     1           2                    3              4           5
-  OOPS!       UGH!                 AHA!          WHEE!       YEAH!
+   HÈ?        OEI...               AHA!            JA!         ZÓ!
+ (OOPS!)     (UGH!)               (AHA!)         (WHEE!)      (YEAH!)
     |           |                    |              |           |
     ▼           ▼                    ▼              ▼           ▼
 ────────────────────────────\      /────────────────────────────►
@@ -73,15 +74,15 @@ Lowry onderscheidt vijf opeenvolgende stadia in het narratieve proces van een pr
 ```
 
 De studenten van Lowry onthielden deze stadia met de afkortingen:
-1. **Oops!** — Verstoren van het evenwicht
-2. **Ugh!** — Analyseren van de discrepantie
-3. **Aha!** — Onthullen van de sleutel tot oplossing
-4. **Whee!** — Ervaren van het evangelie
-5. **Yeah!** — Anticiperen op de gevolgen
+1. **Hè? (Oops!)** — Verstoren van het evenwicht
+2. **Oei... (Ugh!)** — Analyseren van de discrepantie
+3. **Aha! (Aha!)** — Onthullen van de sleutel tot oplossing
+4. **Ja! (Whee!)** — Ervaren van het evangelie
+5. **Zó! (Yeah!)** — Anticiperen op de gevolgen
 
 ---
 
-### Stadium 1: OOPS! — Verstoren van het Evenwicht
+### Stadium 1: HÈ? — Verstoren van het Evenwicht
 
 **Doel:** Het evenwicht van de hoorders verstoren zodat ze betrokken raken bij het thema.
 
@@ -123,7 +124,7 @@ Pas op: zorg dat kleine ambiguïteiten worden afgesloten voordat je verder gaat.
 
 ---
 
-### Stadium 2: UGH! — Analyseren van de Discrepantie
+### Stadium 2: OEI... (UGH!) — Analyseren van de Discrepantie
 
 **Doel:** Diep graven in het fundamentele probleem door te vragen: *Waarom?*
 
@@ -164,7 +165,7 @@ Oppervlakkig antwoord: "Omdat ze niet willen werken."
 - Waarom hebben ze geen motivatie? "Omdat ze niet geven om..."
 - Waarom geven ze niet om...? "Omdat ze geen zelfrespect hebben."
 - Waarom hebben ze geen zelfrespect? "Omdat ze faalden."
-- Waarom faalden ze? "Omdat ze faalden in hun werk."
+- Waarom hebben ze geen zelfrespect? "Omdat ze faalden in hun werk."
 
 Zo blijkt dat gebrek aan motivatie niet de *oorzaak* maar het *gevolg* van armoede is. Wanneer voortdurend falen zo pijnlijk wordt dat het te beschadigend is voor het zelfrespect om te blijven proberen, is gebrek aan motivatie het resultaat.
 
@@ -187,7 +188,7 @@ Net als in een detectiveverhaal: de auteur weet allang wie de dader is, maar het
 
 ---
 
-### Stadium 3: AHA! — Onthullen van de Sleutel tot Oplossing
+### Stadium 3: AHA! (AHA!) — Onthullen van de Sleutel tot Oplossing
 
 **Doel:** De ontbrekende schakel onthullen die de brug vormt van probleem naar oplossing.
 
@@ -227,7 +228,7 @@ Dit is een omkering van figuur en grond. De humor ontstaat als een vorm van scho
 
 #### Omkering in de Bijbel en prediking
 
-De gelijkenissen van Jezus zijn bijzonder door hun verrassingen. Dingen lopen nooit uit zoals de hoorders verwachten. De Barmhartige Samaritaan, de Farizeeër en de tollenaar, de Verloren Zoon — allemaal bevatten ze omkeringen.
+De gelijkenissen van Jezus zijn bijzonder door hun verrassingen. Dingen lopen nooit uit zoals de hoorders verwachten. De Barmhartige Samaritaan, de Farizeeër en de tollenaar, de Verloren Zoon — allemaal bevatzen ze omkeringen.
 
 Paulus lijkt in Romeinen 1-2 een ethiek van gehoorzaamheid te verkondigen, maar "trekt dan het kleed weg" in Romeinen 3: "Allen hebben gezondigd... en worden om niet gerechtvaardigd door zijn genade."
 
@@ -235,7 +236,7 @@ Paulus lijkt in Romeinen 1-2 een ethiek van gehoorzaamheid te verkondigen, maar 
 
 ---
 
-### Stadium 4: WHEE! — Ervaren van het Evangelie
+### Stadium 4: JA! (WHEE!) — Ervaren van het Evangelie
 
 **Doel:** De goede boodschap presenteren zodat deze wordt ervaren, niet alleen intellectueel begrepen.
 
@@ -269,7 +270,7 @@ De goede boodschap is niet dat we moeten stoppen met onszelf af te wijzen, maar 
 
 ---
 
-### Stadium 5: YEAH! — Anticiperen op de Gevolgen
+### Stadium 5: ZÓ! (YEAH!) — Anticiperen op de Gevolgen
 
 **Doel:** De implicaties verkennen van de nieuwe realiteit die door het evangelie mogelijk is gemaakt.
 
@@ -377,7 +378,7 @@ De reden: conventionele wijsheid houdt ons gevangen. Hoe harder we ons concentre
 
 ### Stadia 3 en 4: Soms simultaan of omgekeerd
 
-In sommige verhalen vallen de "aha" (sleutel tot oplossing) en de "whee" (ervaren van het evangelie) samen. In het verhaal van de overspelige vrouw (Johannes 8) is het moment dat de oudste man zijn steen laat vallen zowel de sleutel als de goede boodschap. De beslissende omkering en de schok van genade zijn simultaan.
+In sommige verhalen vallen de "aha" (sleutel tot oplossing) en de "ja" (ervaren van het evangelie) samen. In het verhaal van de overspelige vrouw (Johannes 8) is het moment dat de oudste man zijn steen laat vallen zowel de sleutel als de goede boodschap. De beslissende omkering en de schok van genade zijn simultaan.
 
 Soms komt stadium 4 (goede boodschap) vóór stadium 3 (sleutel). In de Barmhartige Samaritaan is de gewonde man al naar de herberg gebracht voordat Jezus de betekenis van "naaste" omkeert.
 
@@ -394,7 +395,7 @@ Niet elke plotwending is precies een 180-graden draai. Het verschil tussen contr
 
 ### Alternatieve namen voor de stadia
 
-In plaats van: Oops, Ugh, Aha, Whee, Yeah
+In plaats van: Hè?, Oei..., Aha!, Ja!, Zó!
 
 Kan men ook spreken van: **Conflict, Complication, Sudden Shift, Good News, Unfolding**
 

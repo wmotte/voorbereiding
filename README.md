@@ -98,7 +98,7 @@ Open `00_overzicht.md` in de gegenereerde output-map voor een centraal overzicht
 | 09 | **Focus & Functie** | De kernboodschap en het beoogde effect van de preek. |
 | 10 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
 | 11 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
-| 12 | **Homiletische Analyse** | Preekschets volgens Lowry's narratieve methode. |
+| 12 | **Homiletische Analyse** | Preekschets volgens Lowry's narratieve methode (Hè?/Oops!, Oei.../Ugh!, etc.). |
 | 13 | **Gebeden** | Drempelgebed, Kyrie, Epiclese, Dankgebed en Voorbeden. |
 
 ---
@@ -112,12 +112,12 @@ Het script analyseert de Schrifttekst aan de hand van de modellen uit *Een huis 
 *   **Jezusbeelden:** Van achteren (Joods), van boven (Zoon van God), van beneden (mens) en van voren (Koninkrijk).
 
 ### Preekstructuur: Lowry's Homiletical Plot
-De preek wordt vormgegeven als een narratieve reis:
-1.  **OOPS!**: Verstoren van het evenwicht (de vraag/jeuk).
-2.  **UGH!**: Analyseren van de discrepantie (waarom is het probleem zo hardnekkig?).
-3.  **AHA!**: Onthullen van de sleutel (de verrassing uit de tekst).
-4.  **WHEE!**: Ervaren van het evangelie (de opluchting).
-5.  **YEAH!**: Anticiperen op de gevolgen (het gewone leven).
+De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaats van constructie) in vijf stadia:
+1.  **HÈ? (OOPS!)**: Verstoren van het evenwicht (de vraag/jeuk).
+2.  **OEI... (UGH!)**: Analyseren van de discrepantie (waarom is het probleem zo hardnekkig?).
+3.  **AHA! (AHA!)**: Onthullen van de sleutel (de verrassing uit de tekst).
+4.  **JA! (WHEE!)**: Ervaren van het evangelie (de opluchting).
+5.  **ZÓ! (YEAH!)**: Anticiperen op de gevolgen (het gewone leven).
 
 ### Liturgische Gebeden
 De gebeden volgen de PKN-traditie:
