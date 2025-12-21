@@ -92,9 +92,10 @@ def list_output_folders() -> list[Path]:
     folders = []
     for item in OUTPUT_DIR.iterdir():
         if item.is_dir() and not item.name.startswith("."):
-            # Controleer of er een 00_zondag_kerkelijk_jaar bestand bestaat (JSON of MD)
-            if ((item / "00_zondag_kerkelijk_jaar.json").exists() or
-                (item / "00_zondag_kerkelijk_jaar.md").exists()):
+            # Controleer of er een geldige analyse folder is
+            if ((item / "01_zondag_kerkelijk_jaar.json").exists() or
+                (item / "00_meta.json").exists() or
+                (item / "00_zondag_kerkelijk_jaar.json").exists()): # Backwards compat
                 folders.append(item)
 
     return sorted(folders, key=lambda x: x.stat().st_mtime, reverse=True)
@@ -117,7 +118,7 @@ def select_folder() -> Path:
     for i, folder in enumerate(folders, 1):
         # Tel bestaande analyses (check both JSON and MD)
         existing = []
-        for num in range(14):
+        for num in range(15):
             json_pattern = f"{num:02d}_*.json"
             md_pattern = f"{num:02d}_*.md"
             if list(folder.glob(json_pattern)):
@@ -147,7 +148,26 @@ def read_previous_analyses(folder: Path) -> dict:
     analyses = {}
 
     # Bestanden die we willen lezen (basis naam zonder extensie)
+    # Mapping van nieuwe structuur (01-07) en oude structuur (00-06)
     files_to_read = [
+        ("01_zondag_kerkelijk_jaar", "liturgische_context"),
+        ("02_sociaal_maatschappelijke_context", "sociaal_maatschappelijk"),
+        ("03_waardenorientatie", "waardenorientatie"),
+        ("04_geloofsorientatie", "geloofsorientatie"),
+        ("05_interpretatieve_synthese", "synthese"),
+        ("06_actueel_wereldnieuws", "wereldnieuws"),
+        ("07_politieke_orientatie", "politieke_orientatie"),
+        ("08_exegese", "exegese"),
+        ("09_kunst_cultuur", "kunst_cultuur"),
+        ("10_focus_en_functie", "focus_en_functie"),
+        ("11_kalender", "kalender"),
+        ("12_representatieve_hoorders", "representatieve_hoorders"),
+        ("13_homiletische_analyse", "homiletische_analyse"),
+        ("14_gebeden", "gebeden"),
+    ]
+
+    # Backwards compatibility check
+    old_files_to_read = [
         ("00_zondag_kerkelijk_jaar", "liturgische_context"),
         ("01_sociaal_maatschappelijke_context", "sociaal_maatschappelijk"),
         ("02_waardenorientatie", "waardenorientatie"),
@@ -166,16 +186,28 @@ def read_previous_analyses(folder: Path) -> dict:
 
     for basename, key in files_to_read:
         filepath_json = folder / f"{basename}.json"
-        filepath_md = folder / f"{basename}.md"
-
+        
+        # Probeer nieuwe naam
         if filepath_json.exists():
             with open(filepath_json, "r", encoding="utf-8") as f:
                 data = json.load(f)
-            # Converteer JSON naar leesbare string voor context
             analyses[key] = json.dumps(data, ensure_ascii=False, indent=2)
-        elif filepath_md.exists():
-            with open(filepath_md, "r", encoding="utf-8") as f:
-                analyses[key] = f.read()
+            continue
+            
+        # Probeer oude naam (backwards compat)
+        old_basename = next((old for old, k in old_files_to_read if k == key), None)
+        if old_basename:
+             old_json = folder / f"{old_basename}.json"
+             old_md = folder / f"{old_basename}.md"
+             if old_json.exists():
+                with open(old_json, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                analyses[key] = json.dumps(data, ensure_ascii=False, indent=2)
+             elif old_md.exists():
+                with open(old_md, "r", encoding="utf-8") as f:
+                    analyses[key] = f.read()
+             else:
+                analyses[key] = ""
         else:
             analyses[key] = ""
 
@@ -186,7 +218,20 @@ def extract_user_input_from_folder(folder: Path) -> dict:
     """Probeer plaatsnaam, gemeente en datum te extraheren uit bestanden of foldernaam."""
     user_input = {"plaatsnaam": "", "gemeente": "", "datum": "", "adres": "", "website": ""}
 
-    # 1. Zoek in alle JSON bestanden naar _meta.user_input (meest betrouwbaar)
+    # 1. Check specifieke meta file (Nieuwste standaard)
+    meta_file = folder / "00_meta.json"
+    if meta_file.exists():
+        try:
+            with open(meta_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                for key in user_input:
+                    if data.get(key):
+                        user_input[key] = data[key]
+                return user_input
+        except (json.JSONDecodeError, KeyError):
+            pass
+
+    # 2. Zoek in alle JSON bestanden naar _meta.user_input (meest betrouwbaar)
     for json_path in sorted(folder.glob("*.json")):
         try:
             with open(json_path, "r", encoding="utf-8") as f:
@@ -592,13 +637,13 @@ def update_summary(output_dir: Path):
                 data = json.load(f)
 
             new_analyses = [
-                ("07_exegese", "Exegese van de Schriftlezingen"),
-                ("08_kunst_cultuur", "Kunst, Cultuur en Film"),
-                ("09_focus_en_functie", "Focus en Functie"),
-                ("10_kalender", "Kalender"),
-                ("11_representatieve_hoorders", "Representatieve Hoorders"),
-                ("12_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
-                ("13_gebeden", "Gebeden voor de Eredienst"),
+                ("08_exegese", "Exegese van de Schriftlezingen"),
+                ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
+                ("10_focus_en_functie", "Focus en Functie"),
+                ("11_kalender", "Kalender"),
+                ("12_representatieve_hoorders", "Representatieve Hoorders"),
+                ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
+                ("14_gebeden", "Gebeden voor de Eredienst"),
             ]
 
             existing_names = [a.get("name") for a in data.get("analyses", [])]
@@ -622,13 +667,13 @@ def update_summary(output_dir: Path):
             content = f.read()
 
         new_analyses = [
-            ("07_exegese", "Exegese van de Schriftlezingen"),
-            ("08_kunst_cultuur", "Kunst, Cultuur en Film"),
-            ("09_focus_en_functie", "Focus en Functie"),
-            ("10_kalender", "Kalender"),
-            ("11_representatieve_hoorders", "Representatieve Hoorders"),
-            ("12_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
-            ("13_gebeden", "Gebeden voor de Eredienst"),
+            ("08_exegese", "Exegese van de Schriftlezingen"),
+            ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
+            ("10_focus_en_functie", "Focus en Functie"),
+            ("11_kalender", "Kalender"),
+            ("12_representatieve_hoorders", "Representatieve Hoorders"),
+            ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
+            ("14_gebeden", "Gebeden voor de Eredienst"),
         ]
 
         for name, title in new_analyses:
@@ -736,24 +781,28 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
     print("=" * 60)
 
     analysis_definitions = [
-        ("07_exegese", "Exegese van de Schriftlezingen"),
-        ("08_kunst_cultuur", "Kunst, Cultuur en Film"),
-        ("09_focus_en_functie", "Focus en Functie"),
-        ("10_kalender", "Kalender: Gedenkdagen en Bijzondere Momenten"),
-        ("11_representatieve_hoorders", "Representatieve Hoorders"),
-        ("12_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
-        ("13_gebeden", "Gebeden voor de Eredienst"),
+        ("08_exegese", "Exegese van de Schriftlezingen"),
+        ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
+        ("10_focus_en_functie", "Focus en Functie"),
+        ("11_kalender", "Kalender: Gedenkdagen en Bijzondere Momenten"),
+        ("12_representatieve_hoorders", "Representatieve Hoorders"),
+        ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
+        ("14_gebeden", "Gebeden voor de Eredienst"),
     ]
 
     if args.exegese:
         print("\nINFO: Alleen exegese wordt uitgevoerd (--exegese)")
-        analysis_definitions = [x for x in analysis_definitions if x[0] == "07_exegese"]
+        analysis_definitions = [x for x in analysis_definitions if x[0] == "08_exegese"]
 
     # Mapping van oude naar nieuwe bestandsnamen (voor backwards compatibility)
     old_to_new = {
-        "07_exegese": "06_exegese",
-        "08_kunst_cultuur": "07_kunst_cultuur",
-        "09_focus_en_functie": "08_focus_en_functie",
+        "08_exegese": "07_exegese",
+        "09_kunst_cultuur": "08_kunst_cultuur",
+        "10_focus_en_functie": "09_focus_en_functie",
+        "11_kalender": "10_kalender",
+        "12_representatieve_hoorders": "11_representatieve_hoorders",
+        "13_homiletische_analyse": "12_homiletische_analyse",
+        "14_gebeden": "13_gebeden",
     }
 
     for name, title in analysis_definitions:
@@ -763,11 +812,16 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
             existing_file = f"{name}.json"
         elif (folder / f"{name}.md").exists():
             existing_file = f"{name}.md (oud formaat)"
-        elif name in old_to_new and (folder / f"{old_to_new[name]}.md").exists():
-            existing_file = f"{old_to_new[name]}.md (oud formaat)"
+        # Check ook oude naam (bijv. 07_exegese.json)
+        elif name in old_to_new:
+             old_name = old_to_new[name]
+             if (folder / f"{old_name}.json").exists():
+                 existing_file = f"{old_name}.json (oud nummer)"
+             elif (folder / f"{old_name}.md").exists():
+                 existing_file = f"{old_name}.md (oud formaat)"
 
         if existing_file:
-            overwrite = input(f"\n{existing_file} bestaat al. Overschrijven als JSON? (j/n): ").strip().lower()
+            overwrite = input(f"\n{existing_file} bestaat al. Overschrijven als JSON met nieuwe naam? (j/n): ").strip().lower()
             if overwrite != 'j':
                 print(f"  Overgeslagen: {name}")
                 continue
@@ -776,7 +830,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         task_prompt = load_prompt(f"{name}.md", user_input)
 
         # Voor representatieve hoorders: beperkte context (geen exegese, kunst, kalender)
-        if name == "11_representatieve_hoorders":
+        if name == "12_representatieve_hoorders":
             analysis_context = build_context_string(previous_analyses, limited=True)
         else:
             analysis_context = context_string
@@ -805,11 +859,11 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         save_log(LOGS_DIR, name, full_prompt)
 
         # Voer analyse uit (lage temperature voor kalender om hallucinaties te voorkomen)
-        temp = 0.1 if name == "10_kalender" else 0.2
+        temp = 0.1 if name == "11_kalender" else 0.2
         result = run_analysis(client, full_prompt, title, temperature=temp)
 
         # Extra verificatiestap voor kunst_cultuur om hallucinaties te verwijderen
-        if name == "08_kunst_cultuur":
+        if name == "09_kunst_cultuur":
             result = verify_kunst_cultuur(client, result)
 
         save_analysis(folder, name, result, title, user_input)

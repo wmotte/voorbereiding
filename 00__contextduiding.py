@@ -203,6 +203,7 @@ def build_first_analysis(user_input: dict) -> dict:
 - **Plaatsnaam:** {user_input['plaatsnaam']}
 - **Gemeente:** {user_input['gemeente']}
 - **Adres:** {user_input.get('adres', 'Onbekend')}
+- **Website:** {user_input.get('website', 'Geen')}
 - **Datum:** {user_input['datum']}
 """
     if user_input.get('extra_context'):
@@ -225,11 +226,11 @@ De volgende lezingen staan vast voor deze datum en MOETEN worden gebruikt:
     else:
         print(f"! Geen exacte match gevonden in liturgische kalender voor {user_input['datum']}. Model zal zelf zoeken.")
 
-    task_prompt = load_prompt("00_zondag_kerkelijk_jaar.md", user_input)
+    task_prompt = load_prompt("01_zondag_kerkelijk_jaar.md", user_input)
     full_prompt = f"{base_prompt}\n\n{context_info}\n\n{task_prompt}"
 
     return {
-        "name": "00_zondag_kerkelijk_jaar",
+        "name": "01_zondag_kerkelijk_jaar",
         "title": "Zondag van het Kerkelijk Jaar",
         "prompt": full_prompt
     }
@@ -327,14 +328,14 @@ def build_remaining_analyses(user_input: dict, kerkelijk_jaar_context: str, chur
 {kerkelijk_jaar_context}
 """
 
-    # De overige analyses (01-06)
+    # De overige analyses (02-07)
     analysis_definitions = [
-        ("01_sociaal_maatschappelijke_context", "Sociaal-Maatschappelijke Context"),
-        ("02_waardenorientatie", "Waardenoriëntatie"),
-        ("03_geloofsorientatie", "Geloofsoriëntatie"),
-        ("04_interpretatieve_synthese", "Interpretatieve Synthese"),
-        ("05_actueel_wereldnieuws", "Actueel Wereldnieuws"),
-        ("06_politieke_orientatie", "Politieke Oriëntatie"),
+        ("02_sociaal_maatschappelijke_context", "Sociaal-Maatschappelijke Context"),
+        ("03_waardenorientatie", "Waardenoriëntatie"),
+        ("04_geloofsorientatie", "Geloofsoriëntatie"),
+        ("05_interpretatieve_synthese", "Interpretatieve Synthese"),
+        ("06_actueel_wereldnieuws", "Actueel Wereldnieuws"),
+        ("07_politieke_orientatie", "Politieke Oriëntatie"),
     ]
 
     analyses = []
@@ -603,26 +604,56 @@ def list_output_folders() -> list[Path]:
 
 
 def extract_user_input_from_folder(folder: Path) -> dict:
-    """Probeer plaatsnaam, gemeente en datum te extraheren uit de foldernaam of overzicht."""
-    user_input = {"plaatsnaam": "", "gemeente": "", "datum": "", "extra_context": ""}
+    """Probeer alle gebruikersinvoer te extraheren uit bestaande analyses in de folder."""
+    user_input = {"plaatsnaam": "", "gemeente": "", "datum": "", "extra_context": "", "adres": "", "website": ""}
 
-    # Probeer eerst uit JSON overzicht
+    # 1. Check specifieke meta file (Nieuwste standaard)
+    meta_file = folder / "00_meta.json"
+    if meta_file.exists():
+        try:
+            with open(meta_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                # 00_meta.json bevat direct de user_input velden
+                for key in user_input:
+                    if data.get(key):
+                        user_input[key] = data[key]
+                return user_input
+        except (json.JSONDecodeError, KeyError):
+            pass
+
+    # 2. Zoek in alle JSON bestanden naar _meta.user_input (meest betrouwbare bron voor legacy)
+    for json_path in sorted(folder.glob("*.json")):
+        try:
+            with open(json_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            meta_input = data.get("_meta", {}).get("user_input")
+            if meta_input:
+                # Update onze dict met gevonden waarden
+                for key in user_input:
+                    if meta_input.get(key):
+                        user_input[key] = meta_input[key]
+                
+                # Als we de belangrijkste velden hebben, kunnen we stoppen
+                if user_input["plaatsnaam"] and user_input["adres"]:
+                    return user_input
+        except (json.JSONDecodeError, KeyError):
+            continue
+
+    # 2. Fallback: Probeer uit JSON overzicht (oud formaat)
     overzicht_json = folder / "00_overzicht.json"
     if overzicht_json.exists():
         try:
             with open(overzicht_json, "r", encoding="utf-8") as f:
                 data = json.load(f)
             gegevens = data.get("gegevens", {})
-            user_input["plaatsnaam"] = gegevens.get("plaatsnaam", "")
-            user_input["gemeente"] = gegevens.get("gemeente", "")
-            user_input["datum"] = gegevens.get("datum_preek", "")
-            user_input["extra_context"] = gegevens.get("extra_context", "")
-            if user_input["plaatsnaam"]:
-                return user_input
+            user_input["plaatsnaam"] = gegevens.get("plaatsnaam", user_input["plaatsnaam"])
+            user_input["gemeente"] = gegevens.get("gemeente", user_input["gemeente"])
+            user_input["datum"] = gegevens.get("datum_preek", user_input["datum"])
+            user_input["extra_context"] = gegevens.get("extra_context", user_input["extra_context"])
         except (json.JSONDecodeError, KeyError):
             pass
 
-    # Fallback: probeer uit MD overzicht
+    # 3. Fallback: probeer uit MD overzicht
     overzicht_md = folder / "00_overzicht.md"
     if overzicht_md.exists():
         with open(overzicht_md, "r", encoding="utf-8") as f:
@@ -640,7 +671,7 @@ def extract_user_input_from_folder(folder: Path) -> dict:
             elif "**Extra context:**" in line:
                 user_input["extra_context"] = line.split("**Extra context:**")[-1].strip()
 
-    # Fallback: gebruik foldernaam
+    # 4. Fallback: gebruik foldernaam voor plaatsnaam
     if not user_input["plaatsnaam"]:
         parts = folder.name.split("_")
         if parts:
@@ -667,7 +698,10 @@ def select_startup_mode() -> tuple[str, Path | None]:
         for i, folder in enumerate(folders, 1):
             # Tel bestaande analyses (check both JSON and MD)
             existing = []
-            for num in range(7):  # 00-06
+            if (folder / "00_meta.json").exists():
+                existing.append("00(meta)")
+
+            for num in range(1, 8):  # 01-07
                 json_pattern = f"{num:02d}_*.json"
                 md_pattern = f"{num:02d}_*.md"
                 if list(folder.glob(json_pattern)):
@@ -745,6 +779,12 @@ def main():
         print(f"  Adres:      {user_input.get('adres')}")
         if user_input.get('website'):
             print(f"  Website:    {user_input.get('website')}")
+
+    # SLA META DATA OP (00_meta.json)
+    meta_path = output_dir / "00_meta.json"
+    with open(meta_path, "w", encoding="utf-8") as f:
+        json.dump(user_input, f, ensure_ascii=False, indent=2)
+    print(f"  Metadata opgeslagen: 00_meta.json")
 
     print("\n" + "=" * 60)
     print(f"STARTEN MET MODEL: {MODEL_NAME}")
