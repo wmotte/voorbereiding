@@ -86,3 +86,103 @@ Reflecteer kort op wat dit betekent voor de gemeente {{gemeente}}:
 ## Bronnen
 
 Gebruik verkiezingsuitslagen van kiesraad.nl, gemeente.nl en lokale nieuwsmedia. Wees concreet en feitelijk over {{plaatsnaam}}.
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "verkiezingsdata": {
+    "tweede_kamer": {
+      "meest_recente_datum": "string - bijv. 'november 2023'",
+      "is_actueel": "boolean - zijn er recentere verkiezingen?",
+      "opmerking": "string|null"
+    },
+    "europees_parlement": {
+      "datum": "string",
+      "opmerking": "string|null"
+    },
+    "provinciale_staten": {
+      "datum": "string"
+    },
+    "gemeenteraad": {
+      "datum": "string"
+    },
+    "waterschap": {
+      "datum": "string|null"
+    }
+  },
+  "landelijk_stemgedrag": {
+    "verkiezingsdatum": "string",
+    "top_partijen": [
+      {
+        "partij": "string",
+        "percentage_lokaal": "number",
+        "percentage_landelijk": "number",
+        "verschil": "string"
+      }
+    ],
+    "verschuivingen": ["string - t.o.v. vorige verkiezingen"],
+    "opkomst": "string",
+    "analyse": "string"
+  },
+  "europees_stemgedrag": {
+    "verkiezingsdatum": "string",
+    "top_partijen": [
+      {
+        "partij": "string",
+        "percentage_lokaal": "number"
+      }
+    ],
+    "trend_tov_tk": "string - wijkt dit af van TK-stemgedrag?"
+  },
+  "provinciaal_stemgedrag": {
+    "verkiezingsdatum": "string",
+    "dominante_partijen": ["string"],
+    "regionale_partijen": ["string"],
+    "stad_platteland_verschil": "string|null"
+  },
+  "gemeentelijk_stemgedrag": {
+    "verkiezingsdatum": "string",
+    "lokale_partijen": [
+      {
+        "naam": "string",
+        "positie": "string - coalitie|oppositie",
+        "zetels": "number|null"
+      }
+    ],
+    "coalitie": ["string - partijen in coalitie"],
+    "belangrijke_themas": ["string"],
+    "politieke_stabiliteit": "string"
+  },
+  "waterschap": {
+    "verkiezingsdatum": "string|null",
+    "betrokkenheid": "string",
+    "dominante_stromingen": ["string"]
+  },
+  "politieke_cultuur": {
+    "progressief_conservatief": "string - schaal of beschrijving",
+    "individualistisch_gemeenschaps": "string",
+    "veranderingsgezind_behoudend": "string",
+    "vertrouwen_overheid": "string - hoog|gemiddeld|laag",
+    "anti_establishment": "string - mate van proteststemmen"
+  },
+  "spanningsvelden": [
+    {
+      "onderwerp": "string - bijv. 'asielopvang', 'windmolens'",
+      "type": "string - lokaal|nationaal",
+      "standpunten": "string - beschrijving van de verdeeldheid",
+      "uiting_dagelijks_leven": "string"
+    }
+  ],
+  "relevantie_prediking": {
+    "verhouding_kerk_politiek": "string - hoe verhouden kerkelijke standpunten zich tot lokale voorkeuren?",
+    "gevoeligheden": ["string - waar op letten?"],
+    "aansluiting_mogelijkheden": ["string - waar kan de preek aansluiten?"],
+    "spanning_mogelijkheden": ["string - waar kan de preek spanning oproepen?"]
+  }
+}
+```
+
+**BELANGRIJK:** Retourneer ALLEEN valide JSON, geen markdown of toelichting.

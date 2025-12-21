@@ -842,7 +842,118 @@ Samen bidden wij het gebed dat Jezus ons leerde:
 ### Belangrijke aandachtspunten
 
 - **Wees concreet, niet algemeen**
-- **Start direct met het eerste gebed, geen inleiding nodig**
 - **Vermijd de "tweede preek"** — spreek tot God, niet over God
 - **Respecteer de liturgische economie** — geen overlappingen tussen gebeden
 - **Schrijf vanuit het "wij"** — de prediker is deel van de biddende gemeente
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "gekozen_scenario": "string - A (zwaartepunt schuld) of B (zwaartepunt nood)",
+  "gebeden": {
+    "drempelgebed": {
+      "type": "drempelgebed",
+      "aanspraak": "string - bijv. 'Almachtige God' of 'Eeuwige'",
+      "elementen": {
+        "verootmoediging": "string - erkenning van Gods grootheid en menselijke kleinheid",
+        "schuldbelijdenis": "string - concreet benoemen van falen",
+        "verlangen": "string - dorst naar Gods nabijheid"
+      },
+      "tekst": "string - de volledige gebetstekst (150-250 woorden), met \\n voor regeleinden",
+      "echo_schriftlezing": "string - welk beeld uit de lezing klinkt door?",
+      "amen": true
+    },
+    "kyrie": {
+      "type": "kyrie",
+      "aanspraak": "string - bijv. 'Heer' of 'Christus'",
+      "focus": "string - nood_wereld|schuld_en_nood (afhankelijk van scenario)",
+      "structuur": {
+        "intenties": [
+          {
+            "voor_wie": "string - bijv. 'de vrouw die vannacht alleen waakt'",
+            "nood": "string - concrete beschrijving",
+            "kyrie_refrain": "boolean - eindigt met 'Kyrie eleison'?"
+          }
+        ]
+      },
+      "tekst": "string - de volledige gebetstekst (150-250 woorden)",
+      "echo_schriftlezing": "string",
+      "amen": true
+    },
+    "epiclese": {
+      "type": "epiclese",
+      "aanspraak": "string - bijv. 'Geest van God' of 'Heilige Geest'",
+      "focus": "string - ALLEEN opening voor de Schrift, geen andere thema's",
+      "tekst": "string - de volledige gebetstekst (100-150 woorden, kort en gefocust)",
+      "echo_schriftlezing": "string",
+      "amen": true
+    },
+    "dankgebed": {
+      "type": "dankgebed",
+      "aanspraak": "string - bijv. 'Goede God' of 'Barmhartige'",
+      "verbinding_verkondiging": "string - hoe linkt dit aan de preekboodschap?",
+      "elementen": {
+        "dank_gehoorde_woord": "string",
+        "vraag_kracht_bewaren": "string",
+        "verbinding_dagelijks_leven": "string"
+      },
+      "tekst": "string - de volledige gebetstekst (150-250 woorden)",
+      "echo_schriftlezing": "string",
+      "amen": true
+    },
+    "voorbeden": {
+      "type": "voorbeden",
+      "aanspraak": "string - bijv. 'Vader in de hemel'",
+      "cirkels": {
+        "wereld": {
+          "themas": ["string - vrede, gerechtigheid, schepping, crises"],
+          "tekst": "string - gebedstekst voor de wereld"
+        },
+        "kerk": {
+          "themas": ["string - wereldwijde kerk, vervolging, oecumene, PKN"],
+          "tekst": "string - gebedstekst voor de kerk"
+        },
+        "naasten": {
+          "themas": ["string - zieken, eenzamen, armen, vluchtelingen"],
+          "tekst": "string - gebedstekst voor de naasten"
+        },
+        "eigen_gemeente": {
+          "themas": ["string - {{gemeente}}, specifieke noden, komende week"],
+          "tekst": "string - gebedstekst voor de eigen gemeente"
+        }
+      },
+      "stilte_instructie": "string - bijv. '*Stilte voor persoonlijke gebedsintenties*'",
+      "overgang_onze_vader": "string - bijv. 'Samen bidden wij het gebed dat Jezus ons leerde:'",
+      "onze_vader": "string - de volledige tekst van het Onze Vader"
+    }
+  },
+  "poetische_technieken_gebruikt": {
+    "parallellisme": ["string - voorbeelden uit de gebeden"],
+    "drieslag": ["string - voorbeelden"],
+    "anafoor": ["string - voorbeelden van herhaalde beginnen"],
+    "inclusio": ["string - waar begin en einde verbonden zijn"],
+    "zintuiglijke_taal": ["string - voorbeelden van alle vijf zintuigen"],
+    "lokale_beelden": ["string - beelden specifiek voor {{plaatsnaam}}"]
+  },
+  "echo_techniek": {
+    "schriftlezing_thema": "string - het centrale beeld uit de lezingen",
+    "echo_per_gebed": {
+      "drempelgebed": "string",
+      "kyrie": "string",
+      "epiclese": "string",
+      "dankgebed": "string",
+      "voorbeden": "string"
+    }
+  }
+}
+```
+
+**BELANGRIJK:**
+- Retourneer ALLEEN valide JSON, geen markdown of toelichting.
+- Alle gebetsteksten moeten poëtisch, concreet en zintuiglijk zijn.
+- Gebruik `\\n` voor regeleinden en `\\n\\n` voor strofescheiding in de tekstvelden.
+- Respecteer de liturgische economie: geen thematische overlap tussen gebeden.
+- Echo's van de Schriftlezing in alle gebeden.

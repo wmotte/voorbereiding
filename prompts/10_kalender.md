@@ -197,3 +197,78 @@ Gebruik betrouwbare bronnen zoals:
 Toon alleen dagen waarop iets te melden valt.
 
 **BELANGRIJK:** Vermijd clichématige afsluitingen. Stop bij de inhoud.
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "week_van": "string - bijv. '15-21 december 2024'",
+  "dagen": [
+    {
+      "datum": "string - bijv. 'Zondag 15 december 2024'",
+      "dag": "string - zondag|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag",
+      "is_preekzondag": "boolean",
+      "kerkelijk": [
+        {
+          "naam": "string - bijv. '3e Advent (Gaudete)'",
+          "type": "string - zondag|heilige|martelaar|herdenking",
+          "toelichting": "string|null"
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "string|null - bijv. '16 Kislev 5785'",
+        "feestdag": "string|null",
+        "parasja": "string|null - welke Tora-portie?",
+        "toelichting": "string|null"
+      },
+      "internationaal": [
+        {
+          "naam": "string - bijv. 'Internationale Theedag'",
+          "organisatie": "string - VN|UNESCO|Anders",
+          "relevantie": "string|null"
+        }
+      ],
+      "nationaal": [
+        {
+          "naam": "string",
+          "land": "string - NL|BE",
+          "type": "string - feestdag|herdenking|traditie"
+        }
+      ],
+      "vakantie": {
+        "schoolvakantie": "string|null - bijv. 'Kerstvakantie Noord'",
+        "regio": "string|null"
+      },
+      "weer": {
+        "verwachting": "string|null - alleen op zondag invullen",
+        "temperatuur": "string|null",
+        "neerslag": "string|null",
+        "bijzonderheden": "string|null"
+      },
+      "astronomie": {
+        "zonsopgang": "string|null - alleen op zondag",
+        "zonsondergang": "string|null",
+        "maanfase": "string|null",
+        "bijzonderheden": "string|null"
+      },
+      "overig": [
+        {
+          "categorie": "string - sport|cultuur|historisch|maatschappelijk|lokaal",
+          "naam": "string",
+          "toelichting": "string|null"
+        }
+      ]
+    }
+  ],
+  "aandachtspunten_predikant": [
+    "string - relevante momenten om te noemen of rekening mee te houden"
+  ]
+}
+```
+
+**BELANGRIJK:**
+- Retourneer ALLEEN valide JSON, geen markdown of toelichting.
+- Laat lege arrays `[]` of `null` voor dagen/categorieën zonder inhoud.
+- Weer en astronomie ALLEEN op de zondag.

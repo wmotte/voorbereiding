@@ -40,3 +40,56 @@ De hoorders zullen zich hiertoe verhouden als:
 ---
 
 Zorg dat de drie opties écht verschillend zijn en recht doen aan de rijkdom van de tekst en de complexiteit van de context (zoals beschreven in de voorgaande analyses).
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "opties": [
+    {
+      "nummer": 1,
+      "korte_titel": "string - bijv. 'Pastorale insteek'",
+      "type_insteek": "string - pastoraal|profetisch|leerstellig|toerustend|vermanend|troostend|etc.",
+      "focus": {
+        "inleiding": "Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in {{plaatsnaam}}, {{gemeente}}), in hun context, in deze dienst zeggen dat:",
+        "inhoud": "string - de kern van wat gezegd wordt"
+      },
+      "anticipatie": {
+        "inleiding": "De hoorders zullen zich hiertoe verhouden als:",
+        "weerstand": "string|null - verwachte weerstand",
+        "herkenning": "string|null - waar zullen hoorders zich herkennen?",
+        "vragen": ["string - welke vragen roept dit op?"]
+      },
+      "functie": {
+        "inleiding": "...waarmee ik rekening houd om te komen tot het doel dat de hoorders:",
+        "beoogd_effect": "string - wat is het verhoopte resultaat?"
+      },
+      "toelichting": "string - korte uitleg waarom deze keuze past bij exegese en context"
+    },
+    {
+      "nummer": 2,
+      "korte_titel": "string",
+      "type_insteek": "string",
+      "focus": {"inleiding": "...", "inhoud": "string"},
+      "anticipatie": {"inleiding": "...", "weerstand": "string|null", "herkenning": "string|null", "vragen": ["string"]},
+      "functie": {"inleiding": "...", "beoogd_effect": "string"},
+      "toelichting": "string"
+    },
+    {
+      "nummer": 3,
+      "korte_titel": "string",
+      "type_insteek": "string",
+      "focus": {"inleiding": "...", "inhoud": "string"},
+      "anticipatie": {"inleiding": "...", "weerstand": "string|null", "herkenning": "string|null", "vragen": ["string"]},
+      "functie": {"inleiding": "...", "beoogd_effect": "string"},
+      "toelichting": "string"
+    }
+  ]
+}
+```
+
+**BELANGRIJK:**
+- Retourneer ALLEEN valide JSON, geen markdown of toelichting.
+- Precies 3 opties, elk met een wezenlijk verschillende invalshoek.

@@ -183,6 +183,171 @@ van achteren: jood — Jezus — van voren: aankondiger Koninkrijk
 
 Een rijke, diepgaande exegese (minimaal 4500-6000 woorden) die de predikant echt exegetisch 'voedt'. Gebruik hierbij een **neutrale, zakelijke toon**. Beschrijf de theologische lijnen helder en diepgaand zonder te vervallen in prekerig of overdreven taalgebruik.
 
-**BELANGRIJK:** 
+**BELANGRIJK:**
 - Voeg **GEEN** lijst met bronnen, literatuurlijst of 'Bronnen' sectie toe aan het einde van de output. Verwerk verwijzingen naar exegeten of commentaren direct in de lopende tekst.
-- **Vermijd clichématige afsluitingen:** Gebruik geen zinnen die de waarde van de exegese voor de predikant benadrukken (bijv. "Deze exegese biedt de predikant de nodige diepgang om de brug te slaan tussen de eeuwenoude teksten en de complexe realiteit van [Plaats]..."). Stop direct bij de inhoudelijke analyse. Geen meta-tekst over het nut van dit document.
+- **Vermijd clichématige afsluitingen:** Stop direct bij de inhoudelijke analyse. Geen meta-tekst over het nut van dit document.
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "bijbelteksten": [
+    {
+      "referentie": "string - bijv. 'Jesaja 9:1-6'",
+      "vertaling": "string - 'Naardense Bijbel'",
+      "volledige_tekst": "string - de complete tekst met \\n voor regeleinden"
+    }
+  ],
+  "per_lezing": [
+    {
+      "referentie": "string",
+      "afbakening_vertaling": {
+        "perikoop_grenzen": "string - waar begint/eindigt de tekst logisch?",
+        "leesrooster_logisch": "boolean",
+        "vertaalvergelijking": [
+          {
+            "vertaling": "string - NBV21|HSV|Naardense|Willibrord",
+            "significante_verschillen": "string"
+          }
+        ],
+        "werkvertaling_cruciaal": "string|null - eigen vertaling van cruciale verzen"
+      },
+      "tekstkritiek": {
+        "relevante_varianten": [
+          {
+            "vers": "string",
+            "variant": "string",
+            "handschriften": "string",
+            "betekenis_impact": "string"
+          }
+        ],
+        "conclusie": "string"
+      },
+      "woordstudie": [
+        {
+          "woord_origineel": "string - Hebreeuws/Grieks",
+          "transliteratie": "string",
+          "vertaling": "string",
+          "semantische_range": "string",
+          "gebruik_elders": "string",
+          "meerduidigheid": "string|null"
+        }
+      ],
+      "literaire_analyse": {
+        "genre": "string - narratief|poëzie|profetie|wijsheid|brief|apocalyptiek|hymne|gelijkenis|etc.",
+        "genre_conventies": "string",
+        "structuur": {
+          "opbouw": "string - beschrijving van de structuuranalyse",
+          "cesuren": ["string"],
+          "centrum": "string",
+          "chiasme_inclusio": "string|null"
+        },
+        "stijl_retoriek": {
+          "literaire_middelen": ["string - parallellisme|ironie|hyperbool|metafoor|woordspel|etc."],
+          "retorische_strategie": "string",
+          "effect_lezer": "string"
+        },
+        "karakters_plot": {
+          "personages": ["string"],
+          "karakterisering": "string",
+          "verhaallijn": "string|null",
+          "verzwegen_gesuggereerd": "string|null"
+        }
+      },
+      "directe_context": {
+        "voorafgaand": "string - wat gaat eraan vooraf?",
+        "volgend": "string - wat volgt erop?",
+        "functie_in_boek": "string",
+        "themas_opgepakt": ["string"]
+      },
+      "historische_context": {
+        "ontstaanscontext": {
+          "wanneer_waar": "string",
+          "situatie_auteur": "string",
+          "oorspronkelijke_hoorders": "string"
+        },
+        "historische_achtergrond": {
+          "gebeurtenissen": "string",
+          "politiek_sociaal_economisch": "string",
+          "archeologisch_epigrafisch": "string|null"
+        },
+        "culturele_context": {
+          "praktijken_gebruiken": "string",
+          "verhouding_omringende_culturen": "string"
+        }
+      },
+      "ot_achtergrond": {
+        "citaten": [
+          {
+            "ot_tekst": "string",
+            "hoe_gebruikt": "string - typologisch|profetisch|illustratief",
+            "verschil_oorspronkelijk": "string|null"
+          }
+        ],
+        "allusies": ["string"],
+        "themas_motieven": ["string"]
+      },
+      "joodse_context": {
+        "intertestamentair": "string|null",
+        "rabbijnse_bronnen": "string|null",
+        "jezus_paulus_vs_tijdgenoten": "string|null"
+      },
+      "theologische_analyse": {
+        "centrale_boodschap": "string",
+        "godsbeeld": "string",
+        "mensbeeld_wereld_heil": "string",
+        "bijbels_theologische_lijnen": ["string - verbond|koninkrijk|verlossing|schepping|exodus|ballingschap|etc."],
+        "plaats_heilsgeschiedenis": "string",
+        "spanning_andere_teksten": "string|null",
+        "dogmatische_raakvlakken": ["string"],
+        "theologische_controverses": "string|null"
+      },
+      "zoekmodellen_snoek": {
+        "godsbeelden_ot": {
+          "werkwoordelijke_uitspraken": "string - Gods handelen beschreven",
+          "metaforische_uitspraken": "string - wie God is",
+          "overstijgende_eigenschappen": "string - almachtig, eeuwig, heilig",
+          "toebuigende_eigenschappen": "string - liefdevol, barmhartig, trouw",
+          "dominante_categorie": "string",
+          "spanning": "string",
+          "relevantie_gemeente": "string"
+        },
+        "mensbeelden_ot": {
+          "horizontale_as": "string - kwaad doen vs. goed doen",
+          "verticale_as": "string - gericht op God vs. gericht op wereld",
+          "personages_positie": "string",
+          "karakterontwikkeling": "string|null"
+        },
+        "jezusbeelden_nt": {
+          "van_achteren": "string - jood, geworteld in traditie Israël",
+          "van_boven": "string - goddelijke identiteit",
+          "van_beneden": "string - mens van vlees en bloed",
+          "van_voren": "string - eschatologie, Koninkrijk",
+          "dominant_perspectief": "string",
+          "spanning_godheid_mensheid": "string",
+          "betekenis_hoorders_nu": "string"
+        }
+      }
+    }
+  ],
+  "samenhang_lezingen": {
+    "rode_draad": "string",
+    "versterkingen": ["string - waar versterken teksten elkaar?"],
+    "correcties": ["string - waar corrigeren teksten elkaar?"]
+  },
+  "receptiegeschiedenis": [
+    {
+      "periode": "string - vroege kerk|middeleeuwen|reformatie|modern",
+      "interpretatie": "string",
+      "relevantie": "string"
+    }
+  ]
+}
+```
+
+**BELANGRIJK:**
+- Retourneer ALLEEN valide JSON, geen markdown of toelichting.
+- Alle tekstvelden moeten inhoudelijk rijk zijn (geen bulletpoints, doorlopend betoog).
+- Gebruik `\\n\\n` voor paragraafscheiding binnen strings.

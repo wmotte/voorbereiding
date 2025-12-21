@@ -46,3 +46,81 @@ Analyseer welke sociale milieus waarschijnlijk vertegenwoordigd zijn in {{gemeen
 | Opwaarts mobielen | Carrièregericht, competitief |
 
 Welke taal en beelden resoneren bij welke groepen? Waar liggen spanningen?
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "vijf_vs": {
+    "visioenen": {
+      "beschrijving": "string - welke toekomstbeelden leven in deze gemeenschap?",
+      "concrete_voorbeelden": ["string"],
+      "collectieve_dromen": ["string"]
+    },
+    "verlangens": {
+      "beschrijving": "string - waar hunkert deze gemeenschap naar?",
+      "onvervulde_behoeften": ["string"],
+      "concrete_voorbeelden": ["string"]
+    },
+    "vreugden": {
+      "beschrijving": "string - waar is men trots op?",
+      "tradities": ["string"],
+      "vieringen": ["string"]
+    },
+    "verdriet": {
+      "beschrijving": "string - welke collectieve pijn is er?",
+      "verloren_gegaan": ["string"],
+      "zorgen": ["string"]
+    },
+    "vragen": {
+      "beschrijving": "string - welke existentiële vragen spelen?",
+      "onzekerheden": ["string"],
+      "zoektochten": ["string"]
+    }
+  },
+  "trendanalyse": {
+    "mesotrends_5_15_jaar": [
+      {
+        "trend": "string - bijv. 'digitalisering'",
+        "impact_lokaal": "string - hoe speelt dit in {{plaatsnaam}}",
+        "relevantie_preek": "string"
+      }
+    ],
+    "microtrends_1_5_jaar": [
+      {
+        "trend": "string",
+        "actueel_voor_datum": "string - specifiek voor {{datum}}",
+        "lokale_uitwerking": "string"
+      }
+    ]
+  },
+  "motivaction_milieus": {
+    "waarschijnlijk_aanwezig": [
+      {
+        "milieu": "string - Traditionele burgerij|Gemaksgeoriënteerden|Moderne burgerij|Nieuwe conservatieven|Kosmopolieten|Postmaterialisten|Postmoderne hedonisten|Opwaarts mobielen",
+        "geschat_percentage": "string|null",
+        "kenmerken_lokaal": "string",
+        "taal_die_resoneert": ["string"],
+        "beelden_die_werken": ["string"]
+      }
+    ],
+    "spanningen_tussen_groepen": [
+      {
+        "groep_a": "string",
+        "groep_b": "string",
+        "spanningsveld": "string",
+        "implicatie_preek": "string"
+      }
+    ]
+  },
+  "homiletische_implicaties": {
+    "aanbevolen_taalveld": "string - welk taalregister werkt hier?",
+    "te_vermijden": ["string - woorden/beelden die niet landen"],
+    "kansrijke_beelden": ["string - metaforen die zullen resoneren"]
+  }
+}
+```
+
+**BELANGRIJK:** Retourneer ALLEEN valide JSON, geen markdown of toelichting.

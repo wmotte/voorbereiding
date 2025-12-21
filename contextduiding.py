@@ -14,6 +14,7 @@ W.M. Otte (w.m.otte@umcutrecht.nl)
 import os
 import sys
 import re
+import json
 from pathlib import Path
 from datetime import datetime
 
@@ -213,8 +214,36 @@ def build_remaining_analyses(user_input: dict, kerkelijk_jaar_context: str) -> l
     return analyses
 
 
-def run_analysis(client: genai.Client, prompt: str, title: str) -> str:
-    """Voer een analyse uit met Taalmodel en Search."""
+def extract_json(text: str) -> dict:
+    """Extraheer JSON uit de response, ook als deze in markdown is gewrapt."""
+    # Probeer eerst direct te parsen
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+
+    # Probeer JSON uit markdown code block te halen
+    json_match = re.search(r'```(?:json)?\s*\n?(.*?)\n?```', text, re.DOTALL)
+    if json_match:
+        try:
+            return json.loads(json_match.group(1))
+        except json.JSONDecodeError:
+            pass
+
+    # Probeer JSON te vinden tussen { en }
+    json_match = re.search(r'\{.*\}', text, re.DOTALL)
+    if json_match:
+        try:
+            return json.loads(json_match.group(0))
+        except json.JSONDecodeError:
+            pass
+
+    # Als niets werkt, return error object
+    return {"error": "Kon geen valide JSON extraheren", "raw_response": text[:1000]}
+
+
+def run_analysis(client: genai.Client, prompt: str, title: str) -> dict:
+    """Voer een analyse uit met Taalmodel en Search. Retourneert JSON dict."""
     print(f"\n{'─' * 50}")
     print(f"Analyseren: {title}")
     print(f"{'─' * 50}")
@@ -228,7 +257,7 @@ def run_analysis(client: genai.Client, prompt: str, title: str) -> str:
             model=MODEL_NAME,
             contents=prompt,
             config=types.GenerateContentConfig(
-                temperature=0.2, # Lager dan normaal om minder hallucinatiess te krijgen
+                temperature=0.2,  # Lager dan normaal om minder hallucinaties te krijgen
                 top_p=0.95,
                 top_k=40,
                 max_output_tokens=8192,
@@ -259,68 +288,83 @@ def run_analysis(client: genai.Client, prompt: str, title: str) -> str:
         )
 
         if response.text:
-            print(f"✓ Analyse '{title}' voltooid")
-            
-            # Controleer of er grounding metadata is (bronvermeldingen vanuit Google Search)
-            # In de nieuwe SDK zit dit vaak in response.candidates[0].grounding_metadata
-            # Voor nu retourneren we de tekst, Gemini 3.0 verwerkt bronnen vaak al in de tekst.
-            return response.text
+            result = extract_json(response.text)
+            if "error" in result:
+                print(f"⚠ Analyse '{title}' voltooid maar JSON parsing mislukt")
+            else:
+                print(f"✓ Analyse '{title}' voltooid (valide JSON)")
+            return result
         else:
             print(f"✗ Geen tekst ontvangen voor '{title}'")
-            return f"# {title}\n\nGeen analyse beschikbaar."
+            return {"error": "Geen response ontvangen", "title": title}
 
     except Exception as e:
         error_msg = f"Fout bij analyse '{title}': {str(e)}"
         print(f"✗ {error_msg}")
-        return f"# {title}\n\n**Fout:** {error_msg}"
+        return {"error": error_msg, "title": title}
 
 
-def save_analysis(output_dir: Path, filename: str, content: str, title: str):
-    """Sla een analyse op naar een markdown bestand."""
-    filepath = output_dir / f"{filename}.md"
+def save_analysis(output_dir: Path, filename: str, content: dict, title: str):
+    """Sla een analyse op naar een JSON bestand."""
+    filepath = output_dir / f"{filename}.json"
 
-    if not content.strip().startswith("#"):
-        content = f"# {title}\n\n{content}"
-
-    # 1. Zorg voor een lege regel VÓÓR elke kop (behalve de allereerste regel)
-    content = re.sub(r'([^\n])\n(#+ .*)', r'\1\n\n\2', content)
-    
-    # 2. Zorg voor een lege regel NA elke kop
-    content = re.sub(r'^(#+ .*)\n+(?=[^\n])', r'\1\n\n', content, flags=re.MULTILINE)
-    
-    # 3. Zorg voor een lege regel rondom scheidingslijnen (---)
-    content = re.sub(r'([^\n])\n(---)', r'\1\n\n\2', content)
-    content = re.sub(r'(---)\n+(?=[^\n])', r'\1\n\n', content)
-
-    # 4. Zorg dat bullet points op een nieuwe regel staan als ze direct na een dubbele punt of zin komen
-    # Zoekt naar: dubbele punt/punt, optionele spaties, dan een asterisk of streepje met spatie
-    content = re.sub(r'([:.:])\s*(\n*)\s*([\*\-] )', r'\1\n\n\3', content)
-
-    # 5. Zorg voor een lege regel NA bold koppen (bijv. **Titel**) als er bullet points volgen
-    content = re.sub(r'(\*\*[^*]+\*\*)\n([\*\-] )', r'\1\n\n\2', content)
+    # Voeg metadata toe
+    content_with_meta = {
+        "_meta": {
+            "title": title,
+            "filename": filename,
+            "generated_at": datetime.now().isoformat()
+        },
+        **content
+    }
 
     with open(filepath, "w", encoding="utf-8") as f:
-        f.write(content)
+        json.dump(content_with_meta, f, ensure_ascii=False, indent=2)
 
     print(f"  Opgeslagen: {filepath.name}")
 
 
 def create_summary(output_dir: Path, user_input: dict, analyses: list[dict]):
-    """Maak een samenvattend overzichtsbestand."""
-    summary = f"""# Contextduiding Preekvoorbereiding
+    """Maak een samenvattend overzichtsbestand (JSON en markdown index)."""
+    # JSON summary
+    summary_data = {
+        "gegevens": {
+            "plaatsnaam": user_input['plaatsnaam'],
+            "gemeente": user_input['gemeente'],
+            "datum_preek": user_input['datum'],
+            "extra_context": user_input.get('extra_context', ''),
+            "generated_at": datetime.now().isoformat()
+        },
+        "analyses": [
+            {
+                "name": analysis['name'],
+                "title": analysis['title'],
+                "file": f"{analysis['name']}.json"
+            }
+            for analysis in analyses
+        ]
+    }
+
+    filepath_json = output_dir / "00_overzicht.json"
+    with open(filepath_json, "w", encoding="utf-8") as f:
+        json.dump(summary_data, f, ensure_ascii=False, indent=2)
+
+    # Ook een markdown index voor leesbaarheid
+    summary_md = f"""# Contextduiding Preekvoorbereiding
 
 ## Gegevens
 - **Plaatsnaam:** {user_input['plaatsnaam']}
 - **Gemeente:** {user_input['gemeente']}
 - **Datum preek:** {user_input['datum']}
-"""
-    summary += "\n## Analyses\n"
-    for analysis in analyses:
-        summary += f"- [{analysis['title']}]({analysis['name']}.md)\n"
 
-    filepath = output_dir / "00_overzicht.md"
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(summary)
+## Analyses (JSON bestanden)
+"""
+    for analysis in analyses:
+        summary_md += f"- [{analysis['title']}]({analysis['name']}.json)\n"
+
+    filepath_md = output_dir / "00_overzicht.md"
+    with open(filepath_md, "w", encoding="utf-8") as f:
+        f.write(summary_md)
 
 
 def list_output_folders() -> list[Path]:
@@ -331,9 +375,12 @@ def list_output_folders() -> list[Path]:
     folders = []
     for item in OUTPUT_DIR.iterdir():
         if item.is_dir() and not item.name.startswith("."):
-            # Controleer of er een 00_zondag_kerkelijk_jaar.md bestaat
-            # OF dat het een geldige output folder lijkt (bevat datum/plaats)
-            if (item / "00_zondag_kerkelijk_jaar.md").exists() or (item / "00_overzicht.md").exists():
+            # Controleer of er een 00_zondag_kerkelijk_jaar bestand bestaat (JSON of MD)
+            # OF dat het een geldige output folder lijkt
+            if ((item / "00_zondag_kerkelijk_jaar.json").exists() or
+                (item / "00_zondag_kerkelijk_jaar.md").exists() or
+                (item / "00_overzicht.json").exists() or
+                (item / "00_overzicht.md").exists()):
                 folders.append(item)
 
     return sorted(folders, key=lambda x: x.stat().st_mtime, reverse=True)
@@ -341,12 +388,28 @@ def list_output_folders() -> list[Path]:
 
 def extract_user_input_from_folder(folder: Path) -> dict:
     """Probeer plaatsnaam, gemeente en datum te extraheren uit de foldernaam of overzicht."""
-    # Probeer uit overzicht.md
-    overzicht = folder / "00_overzicht.md"
     user_input = {"plaatsnaam": "", "gemeente": "", "datum": "", "extra_context": ""}
 
-    if overzicht.exists():
-        with open(overzicht, "r", encoding="utf-8") as f:
+    # Probeer eerst uit JSON overzicht
+    overzicht_json = folder / "00_overzicht.json"
+    if overzicht_json.exists():
+        try:
+            with open(overzicht_json, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            gegevens = data.get("gegevens", {})
+            user_input["plaatsnaam"] = gegevens.get("plaatsnaam", "")
+            user_input["gemeente"] = gegevens.get("gemeente", "")
+            user_input["datum"] = gegevens.get("datum_preek", "")
+            user_input["extra_context"] = gegevens.get("extra_context", "")
+            if user_input["plaatsnaam"]:
+                return user_input
+        except (json.JSONDecodeError, KeyError):
+            pass
+
+    # Fallback: probeer uit MD overzicht
+    overzicht_md = folder / "00_overzicht.md"
+    if overzicht_md.exists():
+        with open(overzicht_md, "r", encoding="utf-8") as f:
             content = f.read()
 
         for line in content.split("\n"):
@@ -359,14 +422,14 @@ def extract_user_input_from_folder(folder: Path) -> dict:
                 if len(parts) > 1:
                     user_input["datum"] = parts[-1].strip()
             elif "**Extra context:**" in line:
-                 user_input["extra_context"] = line.split("**Extra context:**")[-1].strip()
+                user_input["extra_context"] = line.split("**Extra context:**")[-1].strip()
 
     # Fallback: gebruik foldernaam
     if not user_input["plaatsnaam"]:
         parts = folder.name.split("_")
         if parts:
             user_input["plaatsnaam"] = parts[0]
-    
+
     return user_input
 
 
@@ -376,23 +439,26 @@ def select_startup_mode() -> tuple[str, Path | None]:
     Returns: ('new', None) or ('existing', folder_path)
     """
     folders = list_output_folders()
-    
+
     print("\n" + "=" * 60)
-    print("CONTEXTDUIDING: START")
+    print("CONTEXTDUIDING: START (JSON OUTPUT)")
     print("=" * 60)
     print("\nWat wilt u doen?\n")
     print("  1. Nieuwe analyse starten")
-    
+
     if folders:
         print("\n  Bestaande analyses:")
         for i, folder in enumerate(folders, 1):
-            # Tel bestaande analyses
+            # Tel bestaande analyses (check both JSON and MD)
             existing = []
-            for num in range(7): # 00-06
-                pattern = f"{num:02d}_*.md"
-                if list(folder.glob(pattern)):
+            for num in range(7):  # 00-06
+                json_pattern = f"{num:02d}_*.json"
+                md_pattern = f"{num:02d}_*.md"
+                if list(folder.glob(json_pattern)):
                     existing.append(f"{num:02d}")
-            
+                elif list(folder.glob(md_pattern)):
+                    existing.append(f"{num:02d}(md)")
+
             print(f"  {i+1}. {folder.name}")
             print(f"     Beschikbaar: {', '.join(existing)}")
     else:
@@ -404,15 +470,15 @@ def select_startup_mode() -> tuple[str, Path | None]:
             choice = input("Kies een nummer (of 'q' om te stoppen): ").strip()
             if choice.lower() == 'q':
                 sys.exit(0)
-            
+
             idx = int(choice)
-            
+
             if idx == 1:
                 return 'new', None
-            
+
             if folders and 1 < idx <= len(folders) + 1:
                 return 'existing', folders[idx - 2]
-                
+
             print("Ongeldig nummer, probeer opnieuw.")
         except ValueError:
             print("Voer een geldig nummer in.")
@@ -460,19 +526,28 @@ def main():
     print("─" * 60)
 
     first_analysis = build_first_analysis(user_input)
-    
-    # Check of bestand bestaat
-    file_path = output_dir / f"{first_analysis['name']}.md"
+
+    # Check of bestand bestaat (JSON of MD)
+    file_path_json = output_dir / f"{first_analysis['name']}.json"
+    file_path_md = output_dir / f"{first_analysis['name']}.md"
     run_this = True
-    
-    if file_path.exists():
-        overwrite = input(f"  {first_analysis['name']}.md bestaat al. Overschrijven? (j/n): ").strip().lower()
+    kerkelijk_jaar_result = None
+
+    if file_path_json.exists():
+        overwrite = input(f"  {first_analysis['name']}.json bestaat al. Overschrijven? (j/n): ").strip().lower()
         if overwrite != 'j':
             run_this = False
-            print(f"  Gebruik bestaande: {first_analysis['name']}.md")
-            with open(file_path, "r", encoding="utf-8") as f:
-                kerkelijk_jaar_result = f.read()
-    
+            print(f"  Gebruik bestaande: {first_analysis['name']}.json")
+            with open(file_path_json, "r", encoding="utf-8") as f:
+                kerkelijk_jaar_result = json.load(f)
+    elif file_path_md.exists():
+        overwrite = input(f"  {first_analysis['name']}.md bestaat al (oud formaat). Opnieuw genereren als JSON? (j/n): ").strip().lower()
+        if overwrite != 'j':
+            run_this = False
+            print(f"  Gebruik bestaande: {first_analysis['name']}.md (let op: oud formaat)")
+            with open(file_path_md, "r", encoding="utf-8") as f:
+                kerkelijk_jaar_result = {"_legacy_markdown": f.read()}
+
     if run_this:
         kerkelijk_jaar_result = run_analysis(
             client,
@@ -486,23 +561,32 @@ def main():
             first_analysis['title']
         )
 
+    # Converteer JSON naar leesbare context string voor volgende analyses
+    kerkelijk_jaar_context = json.dumps(kerkelijk_jaar_result, ensure_ascii=False, indent=2)
+
     # FASE 2: De overige analyses met de liturgische context
     print("\n" + "─" * 60)
     print("FASE 2: Contextanalyses met liturgische informatie")
     print("─" * 60)
 
-    remaining_analyses = build_remaining_analyses(user_input, kerkelijk_jaar_result)
+    remaining_analyses = build_remaining_analyses(user_input, kerkelijk_jaar_context)
     all_analyses = [first_analysis] + remaining_analyses
 
     for analysis in remaining_analyses:
-        file_path = output_dir / f"{analysis['name']}.md"
-        
-        if file_path.exists():
-            overwrite = input(f"  {analysis['name']}.md bestaat al. Overschrijven? (j/n): ").strip().lower()
+        file_path_json = output_dir / f"{analysis['name']}.json"
+        file_path_md = output_dir / f"{analysis['name']}.md"
+
+        if file_path_json.exists():
+            overwrite = input(f"  {analysis['name']}.json bestaat al. Overschrijven? (j/n): ").strip().lower()
             if overwrite != 'j':
                 print(f"  Overgeslagen: {analysis['name']}")
                 continue
-        
+        elif file_path_md.exists():
+            overwrite = input(f"  {analysis['name']}.md bestaat al (oud formaat). Opnieuw als JSON? (j/n): ").strip().lower()
+            if overwrite != 'j':
+                print(f"  Overgeslagen: {analysis['name']}")
+                continue
+
         result = run_analysis(client, analysis['prompt'], analysis['title'])
         save_analysis(output_dir, analysis['name'], result, analysis['title'])
 

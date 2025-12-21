@@ -145,11 +145,73 @@ Lever een gedetailleerde preekschets op met de volgende **strikte opmaakregels**
 
 
 **BELANGRIJK:**
-
 - Dit is een structuurontwerp voor de prediker.
-
-- Start direct met de inhoud.
-
 - Wees streng op de logica: klopt de diagnose met de remedie?
 
-- Zorg voor een 'luchtige' bladspiegel door royaal gebruik van witregels.
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "tekstkeuze": {
+    "gekozen_lezing": "string - referentie van de centrale tekst",
+    "onderbouwing": "string - 100-150 woorden waarom deze tekst centraal staat",
+    "omkerings_potentie": "string - waar zit de potentie voor een reversal?"
+  },
+  "homiletical_plot": {
+    "oops_kwestie": {
+      "titel": "OOPS! - De Kwestie",
+      "doel": "De 'homiletische jeuk' moet binnen 2-3 minuten de jeuk van de hoorder worden",
+      "inhoud": "string - ~300 woorden, het herkenbare probleem/de discrepantie",
+      "ambiguiteit": "string - wat is niet direct op te lossen?",
+      "existentiele_onrust": "string - waar voelen we ons 'dakloos'?",
+      "specifiek_voor_context": "string - wat is de specifieke ambiguïteit in {{plaatsnaam}}?"
+    },
+    "ugh_verdieping": {
+      "titel": "UGH! - De Verdieping",
+      "doel": "De diagnose stellen - analyseren, niet slechts beschrijven",
+      "waarom_keten": [
+        {
+          "vraag": "string - bijv. 'Waarom werken ze niet?'",
+          "antwoord": "string - bijv. 'Gebrek aan motivatie'"
+        }
+      ],
+      "conclusie_keten": "string - de uiteindelijke wortel (angst, zelfafwijzing, hoogmoed, onmacht)",
+      "inhoud": "string - ~300 woorden, de verdiepte diagnose",
+      "dit_gaat_over_mij": "string - hoe wordt het persoonlijk voor de hoorder?"
+    },
+    "aha_wending": {
+      "titel": "AHA! - De Wending",
+      "doel": "De ontbrekende schakel onthullen die alles in een ander licht zet",
+      "type_omkering": "string - oorzaak_gevolg|omgekeerde_oorzaak|aanname_omkering|logica_omkering",
+      "toelichting_type": "string - uitleg waarom dit type omkering",
+      "inhoud": "string - ~300 woorden, de onverwachte shift"
+    },
+    "whee_verkondiging": {
+      "titel": "WHEE! - De Verkondiging",
+      "doel": "De goede boodschap laten landen als ervaring (opluchting), niet slechts als informatie",
+      "inhoud": "string - ~300 woorden, het evangelie als ervaring",
+      "remedie_past_op_diagnose": "string - hoe past de genade precies op de wond uit UGH?",
+      "niet_algemeen_maar_specifiek": "string - specifieke genade, niet 'Jezus houdt van u'"
+    },
+    "yeah_doorwerking": {
+      "titel": "YEAH! - De Doorwerking",
+      "doel": "Anticiperen op de nieuwe realiteit - niet 'wat moeten we doen' maar 'hoe ziet het leven er nu uit'",
+      "inhoud": "string - ~300 woorden, het uitvouwen van de nieuwe realiteit",
+      "klein_en_dichtbij": "string - concrete, intieme details (ontbijttafel, wijkcentrum, ziekenhuisbed)",
+      "geen_eisenlijst": "boolean - true als het geen werkheiligheid is geworden"
+    }
+  },
+  "logica_check": {
+    "diagnose_remedie_klopt": "boolean",
+    "toelichting": "string - uitleg waarom de logica klopt (of niet)"
+  }
+}
+```
+
+**BELANGRIJK:**
+- Retourneer ALLEEN valide JSON, geen markdown of toelichting.
+- Totale omvang ~1500-2000 woorden, verdeeld over de stadia.
+- Toon de waarom-keten EXPLICIET in ugh_verdieping.
+- Benoem het type omkering EXPLICIET in aha_wending.

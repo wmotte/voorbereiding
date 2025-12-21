@@ -2,7 +2,7 @@
 """
 Naardense Bijbel Tekstophaler
 
-Dit module haalt bijbelteksten op van naardensebijbel.nl en slaat ze op als txt-bestanden.
+Dit module haalt bijbelteksten op van naardensebijbel.nl en slaat ze op als txt- en json-bestanden.
 De teksten worden gebruikt voor exegese in de preekvoorbereiding.
 
 URL-structuur: https://www.naardensebijbel.nl/[boek]/[hoofdstuk]/?hfst=[hoofdstuk]
@@ -12,8 +12,9 @@ W.M. Otte (w.m.otte@umcutrecht.nl)
 
 import re
 import time
+import json
 from pathlib import Path
-from typing import Optional
+from typing import Optional, List, Dict, Tuple
 from dataclasses import dataclass
 
 try:
@@ -45,106 +46,117 @@ class BijbelReferentie:
 # Mapping van Nederlandse boeknamen naar URL-slugs
 BOEK_NAAR_SLUG = {
     # Oude Testament
-    "genesis": "genesis",
-    "exodus": "exodus",
-    "leviticus": "leviticus",
-    "numeri": "numeri",
-    "deuteronomium": "deuteronomium",
-    "jozua": "jozua",
-    "rechters": "rechters",
-    "ruth": "ruth",
-    "1 samuel": "1-samuel",
-    "2 samuel": "2-samuel",
-    "1 koningen": "1-koningen",
-    "2 koningen": "2-koningen",
-    "1 kronieken": "1-kronieken",
-    "2 kronieken": "2-kronieken",
-    "ezra": "ezra",
-    "nehemia": "nehemia",
-    "ester": "ester",
-    "job": "job",
-    "psalm": "psalm",
-    "psalmen": "psalm",
-    "spreuken": "spreuken",
-    "prediker": "prediker",
-    "hooglied": "hooglied",
-    "jesaja": "jesaja",
-    "jeremia": "jeremia",
-    "klaagliederen": "klaagliederen",
-    "ezechiel": "ezechiel",
-    "ezechiël": "ezechiel",
-    "daniel": "daniel",
-    "daniël": "daniel",
-    "hosea": "hosea",
-    "joel": "joel",
-    "joël": "joel",
-    "amos": "amos",
-    "obadja": "obadja",
-    "jona": "jona",
-    "micha": "micha",
-    "nahum": "nahum",
-    "habakuk": "habakuk",
-    "sefanja": "sefanja",
-    "haggai": "haggai",
-    "haggaï": "haggai",
-    "zacharia": "zacharia",
+    "genesis": "genesis", "exodus": "exodus", "leviticus": "leviticus",
+    "numeri": "numeri", "deuteronomium": "deuteronomium", "jozua": "jozua",
+    "rechters": "rechters", "ruth": "ruth", "1 samuel": "1-samuel",
+    "2 samuel": "2-samuel", "1 koningen": "1-koningen", "2 koningen": "2-koningen",
+    "1 kronieken": "1-kronieken", "2 kronieken": "2-kronieken", "ezra": "ezra",
+    "nehemia": "nehemia", "ester": "ester", "job": "job", "psalm": "psalm",
+    "psalmen": "psalm", "spreuken": "spreuken", "prediker": "prediker",
+    "hooglied": "hooglied", "jesaja": "jesaja", "jeremia": "jeremia",
+    "klaagliederen": "klaagliederen", "ezechiel": "ezechiel", "ezechiël": "ezechiel",
+    "daniel": "daniel", "daniël": "daniel", "hosea": "hosea", "joel": "joel",
+    "joël": "joel", "amos": "amos", "obadja": "obadja", "jona": "jona",
+    "micha": "micha", "nahum": "nahum", "habakuk": "habakuk", "sefanja": "sefanja",
+    "haggai": "haggai", "haggaï": "haggai", "zacharia": "zacharia",
     "maleachi": "maleachi",
     # Nieuwe Testament
-    "matteus": "matteus",
-    "matteüs": "matteus",
-    "mattheüs": "matteus",
-    "mattheus": "matteus",
-    "marcus": "marcus",
-    "lucas": "lucas",
-    "johannes": "johannes",
-    "handelingen": "handelingen",
-    "romeinen": "romeinen",
-    "1 korintiërs": "1-korintiers",
-    "1 korintiers": "1-korintiers",
-    "1 korinthiërs": "1-korintiers",
-    "2 korintiërs": "2-korintiers",
-    "2 korintiers": "2-korintiers",
-    "2 korinthiërs": "2-korintiers",
-    "galaten": "galaten",
-    "efeze": "efeze",
-    "efeziërs": "efeze",
-    "filippenzen": "filippenzen",
-    "kolossenzen": "kolossenzen",
-    "1 tessalonicenzen": "1-tessalonicenzen",
-    "2 tessalonicenzen": "2-tessalonicenzen",
-    "1 timoteüs": "1-timoteus",
-    "1 timoteus": "1-timoteus",
-    "2 timoteüs": "2-timoteus",
-    "2 timoteus": "2-timoteus",
-    "titus": "titus",
-    "filemon": "filemon",
-    "hebreeën": "hebreeen",
-    "hebreeen": "hebreeen",
-    "jakobus": "jakobus",
-    "1 petrus": "1-petrus",
-    "2 petrus": "2-petrus",
-    "1 johannes": "1-johannes",
-    "2 johannes": "2-johannes",
-    "3 johannes": "3-johannes",
-    "judas": "judas",
-    "openbaring": "openbaring",
+    "matteus": "matteus", "matteüs": "matteus", "mattheüs": "matteus",
+    "mattheus": "matteus", "marcus": "marcus", "lucas": "lucas",
+    "johannes": "johannes", "handelingen": "handelingen", "romeinen": "romeinen",
+    "1 korintiërs": "1-korintiers", "1 korintiers": "1-korintiers",
+    "1 korinthiërs": "1-korintiers", "2 korintiërs": "2-korintiers",
+    "2 korintiers": "2-korintiers", "2 korinthiërs": "2-korintiers",
+    "galaten": "galaten", "efeze": "efeze", "efeziërs": "efeze",
+    "filippenzen": "filippenzen", "kolossenzen": "kolossenzen",
+    "1 tessalonicenzen": "1-tessalonicenzen", "2 tessalonicenzen": "2-tessalonicenzen",
+    "1 timoteüs": "1-timoteus", "1 timoteus": "1-timoteus",
+    "2 timoteüs": "2-timoteus", "2 timoteus": "2-timoteus", "titus": "titus",
+    "filemon": "filemon", "hebreeën": "hebreeen", "hebreeen": "hebreeen",
+    "jakobus": "jakobus", "1 petrus": "1-petrus", "2 petrus": "2-petrus",
+    "1 johannes": "1-johannes", "2 johannes": "2-johannes",
+    "3 johannes": "3-johannes", "judas": "judas", "openbaring": "openbaring",
 }
+
+# Mapping voor NBV21 codes
+MAPPINGS_SOURCE = {
+  "GEN": ["GEN", "Genesis", "1 Mozes", "1Mozes"],
+  "EXO": ["EXO", "Exodus", "2 Mozes", "2Mozes"],
+  "LEV": ["LEV", "Leviticus", "3 Mozes", "3Mozes"],
+  "NUM": ["NUM", "Numeri", "4 Mozes", "4Mozes"],
+  "DEU": ["DEU", "Deuteronomium", "5 Mozes", "5Mozes"],
+  "JOS": ["JOS", "Jozua", "Joshua"],
+  "JDG": ["JDG", "Rechters", "Judges"],
+  "RUT": ["RUT", "Ruth"],
+  "1SA": ["1SA", "1 Samuel", "1Samuel", "1 Sam", "1Sam"],
+  "2SA": ["2SA", "2 Samuel", "2Samuel", "2 Sam", "2Sam"],
+  "1KI": ["1KI", "1 Koningen", "1Koningen", "1 Kings", "1Kings"],
+  "2KI": ["2KI", "2 Koningen", "2Koningen", "2 Kings", "2Kings"],
+  "1CH": ["1CH", "1 Kronieken", "1Kronieken", "1 Chronicles", "1Chronicles"],
+  "2CH": ["2CH", "2 Kronieken", "2Kronieken", "2 Chronicles", "2Chronicles"],
+  "EZR": ["EZR", "Ezra"],
+  "NEH": ["NEH", "Nehemia", "Nehemiah"],
+  "EST": ["EST", "Esther"],
+  "JOB": ["JOB", "Job"],
+  "PSA": ["PSA", "Psalmen", "Psalms", "Psalm"],
+  "PRO": ["PRO", "Spreuken", "Proverbs"],
+  "ECC": ["ECC", "Prediker", "Ecclesiastes"],
+  "SNG": ["SNG", "Hooglied", "Song of Songs", "Song of Solomon"],
+  "ISA": ["ISA", "Jesaja", "Isaiah"],
+  "JER": ["JER", "Jeremia", "Jeremiah"],
+  "LAM": ["LAM", "Klaagliederen", "Lamentations"],
+  "EZK": ["EZK", "Ezechiël", "Ezekiel", "Ezechiel"],
+  "DAN": ["DAN", "Daniël", "Daniel", "Daniel"],
+  "HOS": ["HOS", "Hosea"],
+  "JOL": ["JOL", "Joël", "Joel", "Joel"],
+  "AMO": ["AMO", "Amos"],
+  "OBA": ["OBA", "Obadja", "Obadiah"],
+  "JON": ["JON", "Jona", "Jonah"],
+  "MIC": ["MIC", "Micha", "Micah"],
+  "NAM": ["NAM", "Nahum"],
+  "HAB": ["HAB", "Habakuk", "Habakkuk"],
+  "ZEP": ["ZEP", "Sefanja", "Zephaniah"],
+  "HAG": ["HAG", "Haggai"],
+  "ZEC": ["ZEC", "Zacharia", "Zechariah"],
+  "MAL": ["MAL", "Maleachi", "Malachi"],
+  "MAT": ["MAT", "Matteüs", "Matthew", "Matt", "Matteus"],
+  "MRK": ["MRK", "Marcus", "Mark", "Markus"],
+  "LUK": ["LUK", "Lucas", "Luke"],
+  "JHN": ["JHN", "Johannes", "John"],
+  "ACT": ["ACT", "Handelingen", "Acts"],
+  "ROM": ["ROM", "Romeinen", "Romans"],
+  "1CO": ["1CO", "1 Korinthiërs", "1Korinthiërs", "1 Corinthians", "1Corinthians", "1 Kor", "1Kor", "1 Korintiers"],
+  "2CO": ["2CO", "2 Korinthiërs", "2Korinthiërs", "2 Corinthians", "2Corinthians", "2 Kor", "2Kor", "2 Korintiers"],
+  "GAL": ["GAL", "Galaten", "Galatians"],
+  "EPH": ["EPH", "Efeziërs", "Ephesians", "Efeze"],
+  "PHP": ["PHP", "Filippenzen", "Philippians"],
+  "COL": ["COL", "Kolossenzen", "Colossians"],
+  "1TH": ["1TH", "1 Tessalonicenzen", "1Tessalonicenzen", "1 Thessalonians", "1Thessalonians", "1 Thess", "1Thess"],
+  "2TH": ["2TH", "2 Tessalonicenzen", "2Tessalonicenzen", "2 Thessalonians", "2Thessalonians", "2 Thess", "2Thess"],
+  "1TI": ["1TI", "1 Timoteüs", "1Timoteüs", "1 Timothy", "1Timothy", "1 Tim", "1Tim", "1 Timoteus"],
+  "2TI": ["2TI", "2 Timoteüs", "2Timoteüs", "2 Timothy", "2Timothy", "2 Tim", "2Tim", "2 Timoteus"],
+  "TIT": ["TIT", "Titus"],
+  "PHM": ["PHM", "Filemon", "Philemon"],
+  "HEB": ["HEB", "Hebreeën", "Hebrews", "Hebreeen"],
+  "JAS": ["JAS", "Jakobus", "James"],
+  "1PE": ["1PE", "1 Petrus", "1Petrus", "1 Peter", "1Peter", "1 Pet", "1Pet"],
+  "2PE": ["2PE", "2 Petrus", "2Petrus", "2 Peter", "2Peter", "2 Pet", "2Pet"],
+  "1JN": ["1JN", "1 Johannes", "1Johannes", "1 John", "1John"],
+  "2JN": ["2JN", "2 Johannes", "2Johannes", "2 John", "2John"],
+  "3JN": ["3JN", "3 Johannes", "3Johannes", "3 John", "3John"],
+  "JUD": ["JUD", "Judas", "Jude"],
+  "REV": ["REV", "Openbaring", "Revelation"]
+}
+
+NAME_TO_CODE = {}
+for code, names in MAPPINGS_SOURCE.items():
+    for name in names:
+        NAME_TO_CODE[name.upper()] = code
 
 
 def parse_bijbelreferentie(tekst: str) -> Optional[BijbelReferentie]:
-    """
-    Parse een bijbelreferentie string naar een BijbelReferentie object.
-
-    Voorbeelden:
-        "Jesaja 9:1-6" -> BijbelReferentie(boek="jesaja", hoofdstuk=9, vers_start=1, vers_eind=6)
-        "Lucas 2:1-14 (15-20)" -> BijbelReferentie(boek="lucas", hoofdstuk=2, vers_start=1, vers_eind=20)
-        "Psalm 96" -> BijbelReferentie(boek="psalmen", hoofdstuk=96)
-        "Titus 2:11-14" -> BijbelReferentie(boek="titus", hoofdstuk=2, vers_start=11, vers_eind=14)
-    """
+    """Parse een bijbelreferentie string naar een BijbelReferentie object."""
     tekst = tekst.strip()
-
-    # Verwijder optionele verzen tussen haakjes en neem het hoogste versnummer
-    # bijv. "Lucas 2:1-14 (15-20)" -> we willen 1-20
     haakjes_match = re.search(r'\((\d+)[-–]?(\d+)?\)', tekst)
     extra_eind = None
     if haakjes_match:
@@ -154,8 +166,6 @@ def parse_bijbelreferentie(tekst: str) -> Optional[BijbelReferentie]:
             extra_eind = int(haakjes_match.group(1))
         tekst = re.sub(r'\s*\([^)]+\)', '', tekst)
 
-    # Pattern: Boek Hoofdstuk:Vers-Vers of Boek Hoofdstuk:Vers of Boek Hoofdstuk
-    # Ondersteunt ook "1 Samuel", "2 Koningen", etc.
     pattern = r'^(\d?\s*[A-Za-zëïüéèöä]+)\s+(\d+)(?::(\d+)(?:[-–](\d+))?)?'
     match = re.match(pattern, tekst, re.IGNORECASE)
 
@@ -167,16 +177,10 @@ def parse_bijbelreferentie(tekst: str) -> Optional[BijbelReferentie]:
     vers_start = int(match.group(3)) if match.group(3) else None
     vers_eind = int(match.group(4)) if match.group(4) else vers_start
 
-    # Als er extra verzen in haakjes waren, neem het maximum
     if extra_eind and (vers_eind is None or extra_eind > vers_eind):
         vers_eind = extra_eind
 
-    return BijbelReferentie(
-        boek=boek,
-        hoofdstuk=hoofdstuk,
-        vers_start=vers_start,
-        vers_eind=vers_eind
-    )
+    return BijbelReferentie(boek=boek, hoofdstuk=hoofdstuk, vers_start=vers_start, vers_eind=vers_eind)
 
 
 def get_boek_slug(boek: str) -> Optional[str]:
@@ -184,24 +188,17 @@ def get_boek_slug(boek: str) -> Optional[str]:
     boek_lower = boek.lower().strip()
     return BOEK_NAAR_SLUG.get(boek_lower)
 
+def get_boek_code(boek: str) -> str:
+    """Converteer boeknaam naar NBV21 code (of fallback naar slug/naam)."""
+    code = NAME_TO_CODE.get(boek.upper().strip())
+    return code if code else boek.upper()
 
 def haal_vers_op(boek_slug: str, hoofdstuk: int, vers: int) -> Optional[str]:
-    """
-    Haal een enkel vers op van de Naardense Bijbel website.
-
-    URL: https://www.naardensebijbel.nl/vers/[boek]-[hoofdstuk]-[vers]/
-
-    Returns:
-        De bijbeltekst als string, of None bij een fout.
-    """
+    """Haal een enkel vers op als string."""
     url = f"https://www.naardensebijbel.nl/vers/{boek_slug}-{hoofdstuk}-{vers}/"
 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Language': 'nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7',
-        'Connection': 'keep-alive',
-        'Upgrade-Insecure-Requests': '1',
     }
 
     max_retries = 3
@@ -209,67 +206,39 @@ def haal_vers_op(boek_slug: str, hoofdstuk: int, vers: int) -> Optional[str]:
         try:
             response = requests.get(url, headers=headers, timeout=30)
             if response.status_code == 404:
-                return None  # Vers bestaat niet
+                return None
             response.raise_for_status()
 
             soup = BeautifulSoup(response.text, 'html.parser')
-
-            # Verwijder navigatie, scripts, etc.
             for tag in soup.find_all(['nav', 'script', 'style', 'header', 'footer', 'aside']):
                 tag.decompose()
 
             body = soup.find('body')
-            if not body:
-                return None
+            if not body: return None
 
-            # Haal de tekst op
             tekst = body.get_text(separator='\n', strip=True)
-
-            # Extraheer alleen de bijbeltekst (na de titel, voor de navigatie)
             lines = tekst.split('\n')
             bijbel_lines = []
             in_tekst = False
-            titel_gevonden = False
 
             for line in lines:
                 line = line.strip()
-                if not line:
+                if not line or 'Naardense Bijbel' in line or 'literaire vertaling' in line.lower() or line == '>':
                     continue
-
-                # Skip header/titel regels
-                if 'Naardense Bijbel' in line:
-                    continue
-                if 'literaire vertaling' in line.lower():
-                    continue
-                if line == '>':
-                    continue
-
-                # Herken de titel (bijv. "Johannes – 1 : 1")
                 if re.match(r'^[A-Za-zëïüéèöä\s\d]+ – \d+ : \d+$', line):
-                    titel_gevonden = True
                     in_tekst = True
                     continue
-
-                # Stop bij navigatie links
                 if line.startswith('Lees ') or line.startswith('Bekijk '):
                     break
-
                 if in_tekst:
                     bijbel_lines.append(line)
 
             return ' '.join(bijbel_lines) if bijbel_lines else None
-
-        except (requests.ConnectionError, requests.Timeout, requests.exceptions.ChunkedEncodingError) as e:
+        except Exception as e:
             if poging < max_retries - 1:
-                wait_time = (poging + 1) * 2
-                print(f"  Fout bij ophalen {url}: {e}. Opnieuw proberen in {wait_time}s...")
-                time.sleep(wait_time)
+                time.sleep((poging + 1) * 2)
             else:
-                print(f"  Fout bij ophalen {url} na {max_retries} pogingen: {e}")
                 return None
-        except requests.RequestException as e:
-            print(f"  Fout bij ophalen {url}: {e}")
-            return None
 
 
 # Mapping van boeknamen naar booknummers voor de zoek-URL
@@ -299,20 +268,12 @@ BOEK_NAAR_NUMMER = {
 }
 
 
-def haal_verzen_via_zoek(boek: str, hoofdstuk: int, vers_start: int, vers_eind: int) -> Optional[str]:
-    """
-    Haal verzen op via de zoek-URL (fallback voor boeken zonder directe vers-URLs).
-
-    Returns:
-        De bijbeltekst als string, of None bij een fout.
-    """
+def haal_verzen_via_zoek(boek: str, hoofdstuk: int, vers_start: int, vers_eind: int) -> List[Dict]:
+    """Haal verzen op via zoek-URL en retourneer structured data."""
     boek_lower = boek.lower().strip()
     boek_nr = BOEK_NAAR_NUMMER.get(boek_lower)
+    if not boek_nr: return []
 
-    if not boek_nr:
-        return None
-
-    # Bouw de zoek-URL
     vers_range = f"{vers_start}-{vers_eind}" if vers_start != vers_eind else str(vers_start)
     url = (
         f"https://www.naardensebijbel.nl/"
@@ -325,193 +286,114 @@ def haal_verzen_via_zoek(boek: str, hoofdstuk: int, vers_start: int, vers_eind: 
         f"&search=Zoeken"
     )
 
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Connection': 'keep-alive',
-    }
-
-    max_retries = 3
-    for poging in range(max_retries):
-        try:
-            response = requests.get(url, headers=headers, timeout=30)
-            response.raise_for_status()
-
-            soup = BeautifulSoup(response.text, 'html.parser')
-
-            # De resultaten staan in een table
-            table = soup.find('table')
-            if not table:
-                return None
-
-            # Parse de tabel rij voor rij
-            verzen = []
-            rows = table.find_all('tr')
-
-            for row in rows:
-                cells = row.find_all('td')
-                if len(cells) >= 2:
-                    # Eerste cel is het versnummer, tweede cel is de tekst
-                    vers_nr = cells[0].get_text(strip=True)
-                    vers_tekst = cells[1].get_text(strip=True)
-
-                    if vers_nr.isdigit() and vers_tekst:
-                        verzen.append(f"**{hoofdstuk}:{vers_nr}** {vers_tekst}")
-
-            return '\n\n'.join(verzen) if verzen else None
-
-        except (requests.ConnectionError, requests.Timeout, requests.exceptions.ChunkedEncodingError) as e:
-            if poging < max_retries - 1:
-                wait_time = (poging + 1) * 2
-                print(f"  Fout bij zoeken: {e}. Opnieuw proberen in {wait_time}s...")
-                time.sleep(wait_time)
-            else:
-                print(f"  Fout bij zoeken na {max_retries} pogingen: {e}")
-                return None
-        except requests.RequestException as e:
-            print(f"  Fout bij zoeken: {e}")
-            return None
-
-
-def haal_verzen_op(boek_slug: str, hoofdstuk: int, vers_start: int, vers_eind: int) -> Optional[str]:
-    """
-    Haal meerdere verzen op en combineer ze.
-
-    Returns:
-        De gecombineerde bijbeltekst als string, of None bij een fout.
-    """
+    headers = {'User-Agent': 'Mozilla/5.0'}
     verzen = []
 
+    try:
+        response = requests.get(url, headers=headers, timeout=30)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+        table = soup.find('table')
+        if table:
+            for row in table.find_all('tr'):
+                cells = row.find_all('td')
+                if len(cells) >= 2:
+                    vers_nr = cells[0].get_text(strip=True)
+                    vers_tekst = cells[1].get_text(strip=True)
+                    if vers_nr.isdigit() and vers_tekst:
+                        verzen.append({"verse": int(vers_nr), "text": vers_tekst})
+    except Exception as e:
+        print(f"  Fout bij zoeken: {e}")
+
+    return verzen
+
+def haal_verzen_data(boek_slug: str, hoofdstuk: int, vers_start: int, vers_eind: int) -> List[Dict]:
+    """Haal verzen op en retourneer structured data."""
+    data = []
     for vers in range(vers_start, vers_eind + 1):
         tekst = haal_vers_op(boek_slug, hoofdstuk, vers)
         if tekst:
-            verzen.append(f"**{hoofdstuk}:{vers}** {tekst}")
+            data.append({"verse": vers, "text": tekst})
         else:
-            # Stop als we een vers niet kunnen vinden (einde hoofdstuk?)
-            if vers == vers_start:
-                return None  # Eerste vers niet gevonden
+            if vers == vers_start: return []
             break
-
-        # Kleine pauze tussen requests
         time.sleep(0.2)
+    return data
 
-    return '\n\n'.join(verzen) if verzen else None
-
-
-def haal_heel_hoofdstuk_op(boek_slug: str, hoofdstuk: int, max_verzen: int = 100) -> Optional[str]:
-    """
-    Haal een heel hoofdstuk op door alle verzen te downloaden.
-
-    Returns:
-        De bijbeltekst als string, of None bij een fout.
-    """
-    verzen = []
+def haal_heel_hoofdstuk_data(boek_slug: str, hoofdstuk: int, max_verzen: int = 200) -> List[Dict]:
+    """Haal heel hoofdstuk op als structured data."""
+    data = []
     vers = 1
-
     while vers <= max_verzen:
         tekst = haal_vers_op(boek_slug, hoofdstuk, vers)
         if tekst:
-            verzen.append(f"**{hoofdstuk}:{vers}** {tekst}")
+            data.append({"verse": vers, "text": tekst})
             vers += 1
             time.sleep(0.2)
         else:
-            break  # Einde van het hoofdstuk
+            break
+    return data
 
-    return '\n\n'.join(verzen) if verzen else None
-
-
-def haal_bijbeltekst_op(referentie: BijbelReferentie) -> Optional[str]:
+def haal_bijbeltekst_op(referentie: BijbelReferentie) -> Tuple[Optional[str], Optional[List[Dict]]]:
     """
-    Haal de bijbeltekst op voor een gegeven referentie.
-
-    Probeert eerst de directe vers-URL, en valt terug op de zoek-URL indien nodig.
-
-    Args:
-        referentie: Een BijbelReferentie object
-
-    Returns:
-        De bijbeltekst als string, of None bij een fout.
+    Haal de bijbeltekst op. Retourneert (Markdown string, Verses List).
     """
     slug = get_boek_slug(referentie.boek)
-
     print(f"  Ophalen: {referentie} ...")
 
-    # Bepaal vers range
     vers_start = referentie.vers_start or 1
     vers_eind = referentie.vers_eind or referentie.vers_start
-
-    # Voor hele hoofdstukken (geen versnummers), bepaal de range
     if not referentie.vers_start:
         if referentie.boek.lower() in ('psalm', 'psalmen') and referentie.hoofdstuk in PSALM_LENGTES:
             vers_eind = PSALM_LENGTES[referentie.hoofdstuk]
         else:
-            vers_eind = 200  # Max voor hele hoofdstukken (bv Psalm 119)
+            vers_eind = 200
 
-    # Probeer eerst de directe vers-URL (sneller, minder server load)
+    data = []
+
     if slug:
-        tekst = haal_verzen_op(slug, referentie.hoofdstuk, vers_start, vers_eind)
-        if tekst:
-            return tekst
+        data = haal_verzen_data(slug, referentie.hoofdstuk, vers_start, vers_eind)
+        if not data and not referentie.vers_start:
+             data = haal_heel_hoofdstuk_data(slug, referentie.hoofdstuk)
+    
+    if not data:
+        print(f"    -> Fallback naar zoek-URL...")
+        data = haal_verzen_via_zoek(referentie.boek, referentie.hoofdstuk, vers_start, vers_eind)
 
-    # Fallback: gebruik de zoek-URL
-    print(f"    -> Fallback naar zoek-URL...")
-    tekst = haal_verzen_via_zoek(referentie.boek, referentie.hoofdstuk, vers_start, vers_eind)
-    if tekst:
-        return tekst
+    if not data:
+        print(f"  Onbekend bijbelboek of kon niet ophalen: {referentie.boek}")
+        return None, None
 
-    # Laatste poging: haal heel hoofdstuk op via directe URLs
-    if slug and not referentie.vers_start:
-        return haal_heel_hoofdstuk_op(slug, referentie.hoofdstuk)
-
-    print(f"  Onbekend bijbelboek of kon niet ophalen: {referentie.boek}")
-    return None
-
+    # Format to markdown
+    md_lines = []
+    for item in data:
+        md_lines.append(f"**{referentie.hoofdstuk}:{item['verse']}** {item['text']}")
+    
+    return '\n\n'.join(md_lines), data
 
 def extract_lezingen_uit_liturgie(liturgie_tekst: str) -> list[str]:
-    """
-    Extraheer bijbelreferenties uit de liturgische context tekst.
-
-    Zoekt naar patronen als:
-    - "Eerste lezing: Jesaja 9:1-6"
-    - "Evangelielezing: Lucas 2:1-14 (15-20)"
-    - "Psalm 96"
-    - "Titus 2:11-14"
-    """
+    """Extraheer bijbelreferenties uit de liturgische context tekst."""
     referenties = []
-
-    # Patronen voor verschillende typen lezingen
     patronen = [
         r'(?:Eerste|Tweede|Derde)?\s*(?:lezing|Lezing)[:\s]+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–]\d+)?(?:\s*\([^)]+\))?)',
         r'(?:Evangelie|Epistel)(?:lezing)?[:\s]+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–]\d+)?(?:\s*\([^)]+\))?)',
         r'Psalm(?:\s+van\s+de\s+\w+)?[:\s]+(?:Psalm\s+)?(\d+)',
         r'\*\*(?:Eerste|Evangelie|Epistel)lezing:\*\*\s+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–]\d+)?)',
     ]
-
     for patroon in patronen:
-        matches = re.findall(patroon, liturgie_tekst, re.IGNORECASE)
-        for match in matches:
+        for match in re.findall(patroon, liturgie_tekst, re.IGNORECASE):
             ref = match.strip()
-            # Voeg "Psalm" toe als het alleen een nummer is
-            if re.match(r'^\d+$', ref):
-                ref = f"Psalm {ref}"
-            if ref and ref not in referenties:
-                referenties.append(ref)
+            if re.match(r'^\d+$', ref): ref = f"Psalm {ref}"
+            if ref and ref not in referenties: referenties.append(ref)
 
-    # Zoek ook naar losse bijbelreferenties in bullet points
     bullet_pattern = r'[-*]\s*\*?\*?([A-Za-zëïüéèöä]+(?:\s+\d)?)\s+(\d+):(\d+)(?:[-–](\d+))?(?:\s*\([^)]+\))?'
     for match in re.finditer(bullet_pattern, liturgie_tekst):
-        boek = match.group(1).strip()
-        hoofdstuk = match.group(2)
-        vers_start = match.group(3)
-        vers_eind = match.group(4) or vers_start
-        ref = f"{boek} {hoofdstuk}:{vers_start}-{vers_eind}"
-        if ref not in referenties:
-            referenties.append(ref)
+        ref = f"{match.group(1).strip()} {match.group(2)}:{match.group(3)}-{match.group(4) or match.group(3)}"
+        if ref not in referenties: referenties.append(ref)
 
     return referenties
 
 
-# Bekende psalm lengtes (versnummers) - voor volledige psalmen
 PSALM_LENGTES = {
     1: 6, 2: 12, 3: 9, 4: 9, 5: 13, 6: 11, 7: 18, 8: 10, 9: 21, 10: 18,
     23: 6, 24: 10, 25: 22, 27: 14, 42: 12, 51: 21, 91: 16, 96: 13, 100: 5,
@@ -520,121 +402,130 @@ PSALM_LENGTES = {
 
 
 def download_lezingen(output_dir: Path, liturgie_tekst: str) -> dict[str, str]:
-    """
-    Download alle lezingen uit de liturgische context en sla ze op.
-
-    Args:
-        output_dir: De directory waar de teksten opgeslagen worden
-        liturgie_tekst: De tekst van 00_zondag_kerkelijk_jaar.md
-
-    Returns:
-        Een dict met referentie -> bestandspad
-    """
+    """Download lezingen en sla ze op als TXT en JSON."""
     print("\nBijbelteksten ophalen van naardensebijbel.nl...")
-
-    # Maak een subdirectory voor de bijbelteksten
     bijbel_dir = output_dir / "bijbelteksten"
     bijbel_dir.mkdir(exist_ok=True)
 
-    # Extraheer de referenties
     referenties_raw = extract_lezingen_uit_liturgie(liturgie_tekst)
-
     if not referenties_raw:
-        print("  Geen bijbelreferenties gevonden in de liturgische context.")
+        print("  Geen bijbelreferenties gevonden.")
         return {}
 
     print(f"  Gevonden referenties: {', '.join(referenties_raw)}")
-
     resultaten = {}
 
     for ref_str in referenties_raw:
         referentie = parse_bijbelreferentie(ref_str)
-        if not referentie:
-            print(f"  Kon niet parsen: {ref_str}")
-            continue
+        if not referentie: continue
 
-        # Maak een veilige bestandsnaam
-        safe_name = re.sub(r'[^\w\s-]', '', str(referentie)).replace(' ', '_')
-        bestandspad = bijbel_dir / f"{safe_name}.txt"
+                safe_name = re.sub(r'[^
 
-        # Check of bestand al bestaat en niet leeg is
-        if bestandspad.exists() and bestandspad.stat().st_size > 0:
-            print(f"  ✓ Reeds gedownload: {bestandspad.name}")
-            resultaten[str(referentie)] = str(bestandspad)
-            continue
+        \w\s-]', '', str(referentie)).replace(' ', '_')
 
-        tekst = haal_bijbeltekst_op(referentie)
+                json_path = bijbel_dir / f"{safe_name}.json"
 
-        if tekst:
-            # Voeg header toe en zorg voor goede Markdown spacing
-            volledige_tekst = f"# {referentie}\n\n# Bron: Naardense Bijbel (Pieter Oussoren)\n\n{tekst}"
+        
 
-            # Zorg voor lege regel na de kopjes
-            volledige_tekst = re.sub(r'^(#+ .*)\n+(?=[^\n])', r'\1\n\n', volledige_tekst, flags=re.MULTILINE)
+                if json_path.exists() and json_path.stat().st_size > 0:
 
-            with open(bestandspad, 'w', encoding='utf-8') as f:
-                f.write(volledige_tekst)
+                    print(f"  ✓ Reeds gedownload: {json_path.name}")
 
-            print(f"  ✓ Opgeslagen: {bestandspad.name}")
-            resultaten[str(referentie)] = str(bestandspad)
-        else:
-            print(f"  ✗ Kon niet ophalen: {referentie}")
+                    resultaten[str(referentie)] = str(json_path)
 
-        # Wacht even tussen requests om de server niet te overbelasten
-        time.sleep(0.5)
+                    continue
+
+        
+
+                md_text, verses_data = haal_bijbeltekst_op(referentie)
+
+        
+
+                if md_text and verses_data:
+
+                    # Save JSON (NBV21 Structure)
+
+                    json_data = {
+
+                        "book": get_boek_code(referentie.boek),
+
+                        "chapter": referentie.hoofdstuk,
+
+                        "verses": verses_data
+
+                    }
+
+                    with open(json_path, 'w', encoding='utf-8') as f:
+
+                        json.dump(json_data, f, indent=2, ensure_ascii=False)
+
+        
+
+                    print(f"  ✓ Opgeslagen: {json_path.name}")
+
+                    resultaten[str(referentie)] = str(json_path)
+
+                else:
+
+                    print(f"  ✗ Kon niet ophalen: {referentie}")
+
+        
+
+                time.sleep(0.5)
 
     return resultaten
 
-
 def laad_bijbelteksten(output_dir: Path) -> str:
-    """
-    Laad alle bijbelteksten uit de bijbelteksten directory.
 
-    Returns:
-        Een gecombineerde string met alle bijbelteksten.
-    """
+    """Laad alle bijbelteksten (JSON) en formatteer als Markdown."""
+
     bijbel_dir = output_dir / "bijbelteksten"
 
-    if not bijbel_dir.exists():
-        return ""
+    if not bijbel_dir.exists(): return ""
 
     teksten = []
-    for txt_file in sorted(bijbel_dir.glob("*.txt")):
-        with open(txt_file, 'r', encoding='utf-8') as f:
-            teksten.append(f.read())
+
+    for json_file in sorted(bijbel_dir.glob("*.json")):
+
+        try:
+
+            with open(json_file, 'r', encoding='utf-8') as f:
+
+                data = json.load(f)
+
+            
+
+            book = data.get("book", "Onbekend")
+
+            chapter = data.get("chapter", "")
+
+            verses = data.get("verses", [])
+
+            
+
+            md_lines = [f"# {book} {chapter}", "# Bron: Naardense Bijbel (Pieter Oussoren)\n"]
+
+            for v in verses:
+
+                md_lines.append(f"**{chapter}:{v['verse']}** {v['text']}")
+
+            
+
+            teksten.append("\n\n".join(md_lines))
+
+        except Exception as e:
+
+            print(f"Fout bij laden {json_file}: {e}")
+
+            
 
     return "\n\n---\n\n".join(teksten)
 
-
 if __name__ == "__main__":
-    # Test de module
-    print("Test: Parse bijbelreferenties")
-    test_refs = [
-        "Jesaja 9:1-6",
-        "Lucas 2:1-14 (15-20)",
-        "Psalm 96",
-        "Titus 2:11-14",
-        "1 Koningen 19:9-13",
-        "Johannes 1:1-18",
-    ]
-
-    for ref in test_refs:
-        parsed = parse_bijbelreferentie(ref)
-        print(f"  '{ref}' -> {parsed}")
-
-    print("\nTest: Ophalen enkel vers (Johannes 1:1)")
-    tekst = haal_vers_op("johannes", 1, 1)
-    if tekst:
-        print(f"  ✓ Opgehaald: {tekst[:100]}...")
-    else:
-        print("  ✗ Kon niet ophalen")
-
-    print("\nTest: Ophalen verzen (Johannes 1:1-3)")
-    ref = parse_bijbelreferentie("Johannes 1:1-3")
+    print("Test run...")
+    ref = parse_bijbelreferentie("Johannes 1:1-5")
     if ref:
-        tekst = haal_bijbeltekst_op(ref)
-        if tekst:
-            print(f"  ✓ Opgehaald ({len(tekst)} karakters):")
-            print(tekst)
-        else:
-            print("  ✗ Kon niet ophalen")
+        md, data = haal_bijbeltekst_op(ref)
+        if md:
+            print(f"Markdown:\n{md[:100]}...")
+            print(f"JSON Structure: {json.dumps({'book': 'JHN', 'chapter': 1, 'verses': data}, indent=2)}")

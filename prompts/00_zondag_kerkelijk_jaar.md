@@ -95,17 +95,38 @@ Bronnen: leesrooster.protestantsekerk.nl, bijbelgenootschap.nl/leesrooster
 - Relevante theologen of geschriften over deze zondag
 
 ### 8. Liedsuggesties uit het Liedboek 2013
-Geef concrete suggesties uit het **Liedboek - Zingen en bidden in huis en kerk (2013)**:
-- **Liederen van de zondag** (als vermeld bij het leesrooster)
-- Passende **psalmen** (Geneefse psalmen, nieuwe psalmberijmingen)
-- Geschikte **gezangen** per liturgisch moment:
-  * Opening/intocht
-  * Kyrie/Gloria
-  * Bij de lezingen
-  * Credo
-  * Bij de collecte/gaven
-  * Zending en zegen
-- Eventueel aanvullend uit Hemelhoog, Evangelische Liedbundel, Taizé
+
+**KRITISCH: VERIFICATIE VEREIST**
+
+Alle liedsuggesties MOETEN geverifieerd worden via deze bronnen:
+- **Primair:** https://kerkliedwiki.nl/Liedboek_2013/Inhoud (volledige inhoudsopgave met nummers)
+- **Secundair:** https://www.liedboekcompendium.nl/lied (zoeken op nummer of titel)
+
+**Liedboek 2013 structuur:**
+- Lied 1-150: Psalmen
+- Lied 151-438: Getijden en hoofdmomenten van het jaar
+- Lied 439-657: Liturgie en sacramenten
+- Lied 658-1016: Leven, bidden, zingen
+
+**REGELS:**
+1. Zoek ALTIJD het liednummer op via kerkliedwiki.nl voordat je het noemt
+2. Gebruik EXACT het nummer zoals vermeld (bijv. "Lied 433" niet "Gezang 433")
+3. Controleer of de titel OVEREENKOMT met het nummer
+4. Bij twijfel: WEGLATEN is beter dan hallucineren
+5. Noem ALLEEN liederen die je hebt geverifieerd
+
+**Suggesties per liturgisch moment:**
+- **Opening/intocht:** Psalmen of openingsliederen (bijv. Lied 275, Lied 280)
+- **Kyrie/Gloria:** Lied 299-301a (Kyrie), Lied 304-339 (Gloria/lofprijzing)
+- **Bij de lezingen:** Liederen die aansluiten bij de specifieke Schriftlezingen
+- **Credo:** Lied 340-344 (geloofsbelijdenissen)
+- **Bij de collecte/gaven:** Lied 357-375 (dienstbaarheid, gaven)
+- **Zending en zegen:** Lied 415-438 (zending), Lied 425 (zegenformules)
+
+**Aanvullende bundels (indien relevant):**
+- Hemelhoog (met nummer, bijv. "Hemelhoog 123")
+- Evangelische Liedbundel (met nummer)
+- Taizé-liederen (met titel)
 
 ### 9. Praktische Liturgische Handvatten
 - Suggesties voor de **liturgische orde** (conform Dienstboek PKN)
@@ -128,13 +149,173 @@ Geef concrete suggesties uit het **Liedboek - Zingen en bidden in huis en kerk (
 - dienstboek.nl
 - theologie.nl/prediking
 
+**Voor Liedboek 2013 (VERPLICHT te gebruiken voor liedsuggesties):**
+- https://kerkliedwiki.nl/Liedboek_2013/Inhoud — volledige inhoudsopgave met alle nummers en titels
+- https://www.liedboekcompendium.nl/lied — zoeken op nummer of titel, met achtergrondinformatie
 
-## Gewenste output
 
-Lever een compleet en praktisch overzicht dat de PKN-predikant helpt om:
-1. De dienst theologisch te plaatsen binnen het kerkelijk jaar
-2. De juiste sfeer en kleur te kiezen
-3. De lezingen in hun samenhang te begrijpen
-4. Passende liederen te selecteren uit het Liedboek 2013
-5. De liturgie vorm te geven volgens de PKN-traditie
-6. Verbanden te leggen met de bredere kerkelijke traditie
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema. Geen markdown, geen inleiding, geen afsluiting.
+
+```json
+{
+  "positie_kerkelijk_jaar": {
+    "zondag_naam": "string - exacte naam van de zondag (bijv. '3e Advent', 'Zondag Judica')",
+    "liturgische_periode": "string - Advent|Kersttijd|Epifaniëntijd|Veertigdagentijd|Paastijd|Pinkstertijd|Zomertijd|Herfsttijd",
+    "weken_tot_hoofdfeest": "string - bijv. '2 weken tot Kerst' of '3 weken na Pasen'",
+    "leesrooster_jaar": "string - A|B|C",
+    "dominant_evangelie": "string - Matteüs|Marcus|Lucas|Johannes"
+  },
+  "traditionele_naam": {
+    "latijnse_naam": "string|null - bijv. 'Gaudete' of null als niet van toepassing",
+    "oorsprong": "string - uitleg van de naam (introïtus, etc.)",
+    "nederlandse_vertaling": "string - vertaling van de Latijnse naam",
+    "volksnamen": ["string"]
+  },
+  "bijzondere_zondag_pkn": {
+    "is_bijzonder": "boolean",
+    "naam": "string|null - bijv. 'Israëlzondag', 'Vredeszondag'",
+    "toelichting": "string|null"
+  },
+  "liturgische_kleur": {
+    "kleur": "string - wit|paars|rood|groen|roze|zwart",
+    "symboliek": "string - betekenis van de kleur",
+    "praktische_suggesties": ["string - antependium, stola, bloemen, etc."]
+  },
+  "lezingen": {
+    "eerste_lezing": {
+      "referentie": "string - bijv. 'Jesaja 9:1-6'",
+      "boek": "string",
+      "hoofdstuk": "number",
+      "verzen": "string",
+      "thema": "string - kort thema van de lezing"
+    },
+    "epistel": {
+      "referentie": "string",
+      "boek": "string",
+      "hoofdstuk": "number",
+      "verzen": "string",
+      "thema": "string"
+    },
+    "evangelie": {
+      "referentie": "string",
+      "boek": "string",
+      "hoofdstuk": "number",
+      "verzen": "string",
+      "thema": "string"
+    },
+    "psalm": {
+      "referentie": "string - bijv. 'Psalm 80'",
+      "nummer": "number",
+      "verzen": "string|null",
+      "antifoon": "string|null"
+    },
+    "alternatieve_lezingen": [
+      {
+        "referentie": "string",
+        "reden": "string"
+      }
+    ],
+    "thematische_samenhang": "string - rode draad tussen de lezingen"
+  },
+  "thematiek": {
+    "centraal_thema": "string",
+    "stemming": "string - verwachting|inkeer|vreugde|rouw|hoop|dankbaarheid|etc.",
+    "karakter_zondag": "string - beschrijving van de sfeer",
+    "rode_draad_liturgisch_jaar": "string - verbinding met vorige en volgende zondag",
+    "centrale_geloofsvragen": ["string"]
+  },
+  "historische_achtergrond": {
+    "oorsprong_vroege_kerk": "string",
+    "hervormde_traditie": "string",
+    "gereformeerde_traditie": "string",
+    "lutherse_traditie": "string",
+    "oecumenische_dimensie": "string"
+  },
+  "liedsuggesties": {
+    "_verificatie_opmerking": "Alle liederen MOETEN geverifieerd zijn via kerkliedwiki.nl/Liedboek_2013/Inhoud",
+    "opening_intocht": [
+      {
+        "nummer": "string - exact nummer uit Liedboek 2013 (bijv. 'Lied 275')",
+        "titel": "string - exacte titel zoals op kerkliedwiki.nl",
+        "eerste_regel": "string - eerste regel van het lied ter verificatie",
+        "toelichting": "string|null - waarom past dit lied bij deze zondag?"
+      }
+    ],
+    "kyrie_gloria": [{"nummer": "string", "titel": "string", "eerste_regel": "string", "toelichting": "string|null"}],
+    "bij_lezingen": [{"nummer": "string", "titel": "string", "eerste_regel": "string", "toelichting": "string|null"}],
+    "credo": [{"nummer": "string", "titel": "string", "eerste_regel": "string", "toelichting": "string|null"}],
+    "collecte_gaven": [{"nummer": "string", "titel": "string", "eerste_regel": "string", "toelichting": "string|null"}],
+    "zending_zegen": [{"nummer": "string", "titel": "string", "eerste_regel": "string", "toelichting": "string|null"}],
+    "aanvullende_bronnen": [
+      {
+        "bundel": "string - Hemelhoog|Evangelische Liedbundel|Taizé|Anders",
+        "nummer": "string",
+        "titel": "string"
+      }
+    ]
+  },
+  "praktische_handvatten": {
+    "liturgische_orde_suggestie": "string - beschrijving van mogelijke orde",
+    "aanpassingen_periode": [
+      {
+        "element": "string - bijv. 'Gloria'",
+        "aanpassing": "string - bijv. 'niet in Lijdenstijd'",
+        "reden": "string"
+      }
+    ],
+    "gebedsmotieven": ["string"],
+    "kindernevendienst": {
+      "thema": "string|null",
+      "suggesties": ["string"]
+    },
+    "visuele_elementen": ["string - projectie, symbolen, schikking"]
+  },
+  "dagelijks_leesrooster": {
+    "week_voorafgaand": ["string - lezingen van de week"],
+    "verbinding_zondag": "string - hoe de zondag voortbouwt op de week"
+  }
+}
+```
+
+## Voorbeeld (verkort)
+
+```json
+{
+  "positie_kerkelijk_jaar": {
+    "zondag_naam": "3e Advent (Gaudete)",
+    "liturgische_periode": "Advent",
+    "weken_tot_hoofdfeest": "2 weken tot Kerst",
+    "leesrooster_jaar": "C",
+    "dominant_evangelie": "Lucas"
+  },
+  "traditionele_naam": {
+    "latijnse_naam": "Gaudete",
+    "oorsprong": "Naar de introïtus van deze zondag: 'Gaudete in Domino semper' (Filippenzen 4:4)",
+    "nederlandse_vertaling": "Verheugt u",
+    "volksnamen": ["Roze zondag", "Blijde zondag"]
+  },
+  "bijzondere_zondag_pkn": {
+    "is_bijzonder": false,
+    "naam": null,
+    "toelichting": null
+  },
+  "liturgische_kleur": {
+    "kleur": "roze",
+    "symboliek": "Vreugde-accent temidden van de paarse boetetijd, anticipatie op het komende licht",
+    "praktische_suggesties": ["Roze stola indien beschikbaar", "Roze accenten in bloemschikking", "Derde adventskaars mag roze zijn"]
+  },
+  "lezingen": {
+    "eerste_lezing": {
+      "referentie": "Sefanja 3:14-20",
+      "boek": "Sefanja",
+      "hoofdstuk": 3,
+      "verzen": "14-20",
+      "thema": "Vreugderoep over Gods nabijheid en herstel"
+    }
+  }
+}
+```
+
+**BELANGRIJK:** Retourneer het VOLLEDIGE JSON object met alle velden ingevuld. Het bovenstaande is slechts een verkort voorbeeld.

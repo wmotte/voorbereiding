@@ -72,3 +72,63 @@ Lever een overzicht met:
    - In de voorbeden
    - In mededelingen of collectebestemming
 4. Waarschuwing voor valkuilen (te politiek worden, onnodige polarisatie, ongeïnformeerd oordelen)
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "nieuwsoverzicht_datum": "string - datum van het nieuwsoverzicht ({{huidige_datum}})",
+  "wereldgebeurtenissen": [
+    {
+      "titel": "string - korte kop",
+      "categorie": "string - oorlog|natuurramp|terrorisme|politieke_crisis|vluchtelingen|humanitair|klimaat|anders",
+      "samenvatting": "string - 2-3 zinnen",
+      "locatie": "string",
+      "datum_gebeurtenis": "string",
+      "emotionele_impact": "string - hoe raakt dit mensen existentieel?",
+      "theologische_vragen": ["string - theodicee, rechtvaardigheid, hoop, etc."],
+      "relevantie_pkn": {
+        "pastoraal": "string - welke troost of nabijheid wordt gezocht?",
+        "profetisch": "string - waar moet de kerk haar stem verheffen?",
+        "diaconaal": "string - waar kan de gemeente in actie komen?",
+        "liturgisch": "string - plek in voorbeden of schuldbelijdenis?",
+        "homiletisch": "string - verhouding tot de Schriftlezingen"
+      },
+      "bronnen": ["string - NOS, NRC, etc."]
+    }
+  ],
+  "nederlands_nieuws": [
+    {
+      "titel": "string",
+      "samenvatting": "string",
+      "lokale_relevantie": "string - relevant voor {{plaatsnaam}}?",
+      "maatschappelijke_discussie": "string|null",
+      "relevantie_preek": "string"
+    }
+  ],
+  "kerkelijk_nieuws": [
+    {
+      "titel": "string",
+      "bron": "string",
+      "samenvatting": "string",
+      "relevantie": "string"
+    }
+  ],
+  "suggesties_predikant": {
+    "in_de_preek": ["string - concrete suggesties hoe te verwerken"],
+    "in_voorbeden": ["string - specifieke gebedspunten"],
+    "mededelingen_collecte": ["string|null"]
+  },
+  "valkuilen": [
+    {
+      "valkuil": "string - bijv. 'te politiek worden'",
+      "risico": "string",
+      "advies": "string"
+    }
+  ]
+}
+```
+
+**BELANGRIJK:** Retourneer ALLEEN valide JSON, geen markdown of toelichting.

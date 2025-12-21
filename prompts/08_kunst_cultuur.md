@@ -130,4 +130,137 @@ Lever een overzicht dat:
 
 Streef naar originaliteit: liever één verrassende vondst dan vijf voorspelbare suggesties. Kwaliteit en verifieerbaarheid boven kwantiteit.
 
-**BELANGRIJK:** Vermijd clichématige afsluitingen of samenvattende zinnen die de waarde van dit overzicht voor de predikant benadrukken (bijv. "Deze kunstsuggesties bieden de predikant de nodige inspiratie om de preek visueel te verrijken..."). Stop gewoon bij de inhoudelijke suggesties. Geen meta-tekst over het nut van dit document.
+**BELANGRIJK:** Vermijd clichématige afsluitingen. Stop gewoon bij de inhoudelijke suggesties. Geen meta-tekst over het nut van dit document.
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "moderne_hedendaagse_kunst": [
+    {
+      "titel": "string",
+      "kunstenaar": "string",
+      "jaar": "number|string",
+      "type": "string - schilderij|sculptuur|fotografie|videokunst|installatie|street_art|digitaal",
+      "beschrijving": "string - wat laat het werk zien?",
+      "verbinding_tekst": "string - specifiek wat dit werk toevoegt aan verstaan van de tekst",
+      "verrassend_element": "string - waarom is dit een niet-voor-de-hand-liggende keuze?",
+      "zoekterm": "string - bijv. 'Timothy Schmalz Homeless Jesus sculpture'"
+    }
+  ],
+  "klassieke_christelijke_kunst": [
+    {
+      "titel": "string",
+      "kunstenaar": "string",
+      "jaar": "string - bijv. '1642' of '15e eeuw'",
+      "type": "string - schilderij|icoon|sculptuur|miniatuur|fresco|reliëf",
+      "locatie": "string|null - museum of kerk waar het zich bevindt",
+      "beschrijving": "string",
+      "verbinding_tekst": "string",
+      "zoekterm": "string"
+    }
+  ],
+  "film_documentaire": [
+    {
+      "titel": "string",
+      "regisseur": "string",
+      "jaar": "number",
+      "type": "string - speelfilm|documentaire|animatie|arthouse",
+      "relevante_scene": {
+        "beschrijving": "string",
+        "tijdcode": "string|null - bijv. '01:23:45'",
+        "wat_opent_het": "string - wat kan dit fragment openen voor de hoorders?"
+      },
+      "zoekterm": "string"
+    }
+  ],
+  "muziek": {
+    "hedendaags": [
+      {
+        "titel": "string",
+        "artiest": "string",
+        "jaar": "number|null",
+        "genre": "string",
+        "verbinding": "string",
+        "zoekterm": "string"
+      }
+    ],
+    "klassiek": [
+      {
+        "titel": "string",
+        "componist": "string",
+        "type": "string - oratorium|cantate|requiem|lied|instrumentaal",
+        "specifiek_deel": "string|null",
+        "verbinding": "string",
+        "zoekterm": "string"
+      }
+    ],
+    "liturgisch": [
+      {
+        "titel": "string",
+        "bron": "string - Taizé|Iona|Anders",
+        "gebruik": "string"
+      }
+    ]
+  },
+  "literatuur": {
+    "modern": [
+      {
+        "titel": "string",
+        "auteur": "string",
+        "jaar": "number",
+        "type": "string - roman|novelle|essay|thriller|poëzie",
+        "thematische_resonantie": "string",
+        "zoekterm": "string"
+      }
+    ],
+    "klassiek": [
+      {
+        "titel": "string",
+        "auteur": "string",
+        "thematische_resonantie": "string"
+      }
+    ],
+    "nederlands": [
+      {
+        "titel": "string",
+        "auteur": "string",
+        "jaar": "number|null",
+        "thematische_resonantie": "string"
+      }
+    ]
+  },
+  "aansluiting_gemeente": {
+    "geschiktheid_traditie": "string - past bij {{gemeente}}?",
+    "sociaal_culturele_fit": "string - sluit aan bij de hoorders?",
+    "praktische_overwegingen": ["string"]
+  },
+  "praktische_handvatten": {
+    "voor_projectie": [
+      {
+        "kunstwerk": "string",
+        "liturgisch_moment": "string - opening|meditatie|preek|etc.",
+        "duur": "string|null",
+        "zoekterm_hoge_resolutie": "string"
+      }
+    ],
+    "voor_meditatie": {
+      "aanbevolen_werk": "string",
+      "duur_tonen": "string",
+      "muziek_erbij": "string|null"
+    },
+    "rechten": {
+      "publiek_domein": ["string - werken die vrij zijn"],
+      "creative_commons": ["string"],
+      "let_op": ["string - werken waarvoor toestemming nodig is"]
+    }
+  }
+}
+```
+
+**BELANGRIJK:**
+- Retourneer ALLEEN valide JSON, geen markdown of toelichting.
+- Gebruik NOOIT URLs, alleen zoektermen.
+- Minimaal 5-7 kunstwerken, 2-3 films.

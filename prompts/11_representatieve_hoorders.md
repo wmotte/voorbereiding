@@ -108,3 +108,75 @@ Baseer de personages op de informatie uit:
 - Interpretatieve synthese
 
 Verwijs expliciet naar lokale omstandigheden die je in deze analyses hebt gevonden.
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "personas": [
+    {
+      "nummer": 1,
+      "naam": {
+        "voornaam": "string",
+        "achternaam": "string"
+      },
+      "leeftijd": "number",
+      "kernschets": "string - 2-3 zinnen die de essentie van dit personage vangen",
+      "basisgegevens": {
+        "fysieke_verschijning": "string - lengte, lichaamsbouw, haarkleur, opvallende kenmerken",
+        "woonwijk": "string - specifieke wijk of straat in {{plaatsnaam}}"
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "string - thuiswonend|zelfstandig|samenwonend|verzorgingshuis|etc.",
+        "relatiestatus": "string - single|relatie|getrouwd|gescheiden|weduwe|etc.",
+        "kinderen": "string|null - geen|wens|thuiswonend|uitgevlogen|kleinkinderen",
+        "familie_relatie": "string - relatie met ouders/broers/zussen",
+        "sociaal_netwerk": "string - vrienden, buren, mate van eenzaamheid"
+      },
+      "opleiding_werk": {
+        "opleiding": "string - hoogst genoten opleiding",
+        "intelligentie_leerstijl": "string - praktisch vs. theoretisch",
+        "huidige_werk": "string - beroep, sector, werkdruk",
+        "voormalig_werk": "string|null",
+        "financiele_situatie": "string - inkomensniveau, zorgen, schulden"
+      },
+      "gezondheid": {
+        "lichamelijk": "string - chronische aandoeningen, beperkingen, medicijnen",
+        "mentaal": "string - stressniveau, psychische klachten",
+        "leefstijl": "string - beweging, voeding, roken/alcohol"
+      },
+      "traumas_zorgen": {
+        "verleden": ["string - ingrijpende gebeurtenissen"],
+        "heden": ["string - huidige zorgen"],
+        "onverwerkt": "string - wat draagt deze persoon nog mee?"
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "string - opvoeding, doopsel, belijdenis",
+        "huidige_betrokkenheid": "string - frequentie kerkbezoek, taken",
+        "geloofsbeleving": "string - hoe ervaart deze persoon God?",
+        "geloofstaal": "string - welke taal spreekt aan?",
+        "twijfels_vragen": ["string - geloofsworstellingen"],
+        "spirituele_behoeften": "string - wat zoekt deze persoon?"
+      },
+      "hobbys_interesses": {
+        "vrijetijd": ["string - sport, cultuur, natuur"],
+        "media": ["string - kranten, programma's, podcasts, sociale media"],
+        "verenigingen": ["string - lidmaatschappen buiten kerk"]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "string - welk aspect van de lezingen raakt dit personage?",
+        "wat_afstoot": "string - welk aspect zou kunnen afstoten of niet begrepen worden?",
+        "existentiele_vraag": "string - welke vraag uit dit leven adresseert de tekst?"
+      }
+    }
+  ]
+}
+```
+
+**BELANGRIJK:**
+- Retourneer ALLEEN valide JSON, geen markdown of toelichting.
+- Precies 5 personas met spreiding over leeftijd (16-80), geslacht, en levensfase.
+- Per persona 400-600 woorden inhoud, verdeeld over de velden.
+- Gebruik realistische Nederlandse namen.
