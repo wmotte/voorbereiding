@@ -1,7 +1,6 @@
 nbv21
 _tmp
 bijbelteksten
-*.html
 .Rhistory
 # Environment
 .env

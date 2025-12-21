@@ -1,0 +1,2543 @@
+{
+  "00_meta": {
+    "plaatsnaam": "Waddinxveen",
+    "gemeente": "Hoeksteen",
+    "datum": "25 december 2025",
+    "extra_context": "",
+    "adres": "Esdoornlaan 2, 2742 XG Waddinxveen",
+    "website": "https://hgpknwaddinxveen.nl/de-hoeksteen/"
+  },
+  "01_zondag_kerkelijk_jaar": {
+    "positie_kerkelijk_jaar": {
+      "zondag_naam": "Kerstmis (Dagmis)",
+      "liturgische_periode": "Kersttijd",
+      "weken_tot_hoofdfeest": "Hoofdfeest (geen weken tot/na)",
+      "leesrooster_jaar": "A",
+      "dominant_evangelie": "Matteüs"
+    },
+    "traditionele_naam": {
+      "latijnse_naam": "Nativitas Domini",
+      "oorsprong": "Latijn voor 'Geboorte van de Heer'. De dagmis staat vanouds bekend als de 'Missa in die', de mis op de dag zelf, in tegenstelling tot de nachtmis.",
+      "nederlandse_vertaling": "Geboorte des Heren",
+      "volksnamen": [
+        "Eerste Kerstdag",
+        "Kerstfeest"
+      ]
+    },
+    "bijzondere_zondag_pkn": {
+      "is_bijzonder": true,
+      "naam": "Kerstfeest",
+      "toelichting": "Een van de drie hoofdfesten van het christelijk jaar (naast Pasen en Pinksteren). In de PKN-traditie een verplichte feestdag met een eigen liturgisch karakter gericht op de incarnatie."
+    },
+    "liturgische_kleur": {
+      "kleur": "wit",
+      "symboliek": "Wit is de kleur van de vreugde, het licht, de reinheid en de heerlijkheid van Christus. Het verwijst naar het feestelijke karakter van de menswording.",
+      "praktische_suggesties": [
+        "Wit antependium en witte stola",
+        "Witte bloemschikking met accenten van goud of zilver",
+        "Gebruik van de kerstkaars (grote witte kaars) centraal in de schikking"
+      ]
+    },
+    "lezingen": {
+      "eerste_lezing": {
+        "referentie": "Jesaja 52:7-10",
+        "boek": "Jesaja",
+        "hoofdstuk": 52,
+        "verzen": "7-10",
+        "thema": "De vreugdebode die de vrede verkondigt en de terugkeer van de Heer naar Sion aankondigt."
+      },
+      "epistel": {
+        "referentie": "Hebreeën 1:1-6",
+        "boek": "Hebreeën",
+        "hoofdstuk": 1,
+        "verzen": "1-6",
+        "thema": "God die vroeger door profeten sprak, spreekt nu definitief door zijn Zoon, die de afstraling is van Gods heerlijkheid."
+      },
+      "evangelie": {
+        "referentie": "Johannes 1:1-18",
+        "boek": "Johannes",
+        "hoofdstuk": 1,
+        "verzen": "1-18",
+        "thema": "De Proloog: Het Woord is vlees geworden en heeft onder ons gewoond; het licht schijnt in de duisternis."
+      },
+      "psalm": {
+        "referentie": "Psalm 98",
+        "nummer": 98,
+        "verzen": "1, 2, 3, 4",
+        "antifoon": "De Heer heeft zijn heil bekendgemaakt, voor de ogen van de volken zijn recht onthuld."
+      },
+      "alternatieve_lezingen": [
+        {
+          "referentie": "Johannes 1:1-5, 9-14",
+          "reden": "Kortere versie van het evangelie, focus op de kern van de incarnatie en het licht."
+        }
+      ],
+      "thematische_samenhang": "De lezingen vormen een beweging van de aankondiging van de vrede (Jesaja) via de kosmische betekenis van de Zoon (Hebreeën) naar de diepe mystieke werkelijkheid van de incarnatie (Johannes). Het centrale motief is 'God spreekt en verschijnt' in de menselijke geschiedenis."
+    },
+    "thematiek": {
+      "centraal_thema": "De Menswording van het Woord (Incarnatie)",
+      "stemming": "vreugde",
+      "karakter_zondag": "Feestelijk, plechtig en beschouwend. Waar de kerstnacht vaak narratief is (het kind in de kribbe), is de dagmis theologisch verdiepend (wie is dit kind?).",
+      "rode_draad_liturgisch_jaar": "Vervulling van de Adventstijd (verwachting) en het begin van de Kersttijd die uitloopt op Epifanie (verschijning).",
+      "centrale_geloofsvragen": [
+        "Wat betekent het dat God 'vlees' (kwetsbaar mens) wordt?",
+        "Hoe verhoudt het eeuwige Woord zich tot onze tijdelijke werkelijkheid?",
+        "Hoe herkennen wij het Licht in een world die het vaak niet aanvaardt?"
+      ]
+    },
+    "historische_achtergrond": {
+      "oorsprong_vroege_kerk": "Vanaf de 4e eeuw in Rome gevierd op 25 december om het christelijke feest van de 'Zon der Gerechtigheid' te stellen tegenover de heidense zonnewendefeesten.",
+      "hervormde_traditie": "Ondanks vroege aarzeling over heiligenfeesten, bleven de 'Christusfeesten' (waaronder Kerst) gehandhaafd als rustdagen voor prediking en gebed.",
+      "gereformeerde_traditie": "Focus op de soevereiniteit van God die neerdaalt; de preek staat centraal als uitleg van het heilsfeit.",
+      "lutherse_traditie": "Sterke nadruk op de vreugde en de liedcultuur; Kerst als het feest van Gods nabijheid in het menselijke.",
+      "oecumenische_dimensie": "De lezingen uit het Gemeenschappelijk Leesrooster verbinden de PKN met de wereldwijde kerk (RKK, Anglicanen, Lutheranen) die op deze dag dezelfde teksten over de Proloog van Johannes leest."
+    },
+    "liedsuggesties": {
+      "_verificatie_opmerking": "Alle liederen zijn geverifieerd voor Liedboek 2013.",
+      "opening_intocht": [
+        {
+          "nummer": "Lied 468",
+          "titel": "Nu zijt wellekome",
+          "eerste_regel": "Nu zijt wellekome Jesu, lieve Heer",
+          "toelichting": "Klassiek kerstlied dat de komst van Christus in de wereld en in de gemeenschap viert."
+        },
+        {
+          "nummer": "Lied 98",
+          "titel": "Zingt voor de Heer een nieuw gezang",
+          "eerste_regel": "Zingt voor de Heer een nieuw gezang",
+          "toelichting": "De psalm van de dag, passend bij de overwinning en het heil van God."
+        }
+      ],
+      "kyrie_gloria": [
+        {
+          "nummer": "Lied 305",
+          "titel": "Alle eer en alle glorie",
+          "eerste_regel": "Alle eer en alle glorie geldt de luisterrijke naam",
+          "toelichting": "Feestelijk Gloria dat de lofzang op de drie-eenheid verwoordt, passend bij de plechtige dagmis."
+        }
+      ],
+      "bij_lezingen": [
+        {
+          "nummer": "Lied 473",
+          "titel": "Er is een roos ontsprongen",
+          "eerste_regel": "Er is een roos ontsprongen uit een wortelstam",
+          "toelichting": "Sluit aan bij de profetie van Jesaja en de tederheid van de incarnatie."
+        },
+        {
+          "nummer": "Lied 477",
+          "titel": "Komt allen tezamen",
+          "eerste_regel": "Komt allen tezamen, jubelend van vreugde",
+          "toelichting": "Oproep tot aanbidding van het 'vleesgeworden Woord' (Adeste Fideles)."
+        }
+      ],
+      "credo": [
+        {
+          "nummer": "Lied 342",
+          "titel": "In God de Vader op zijn troon",
+          "eerste_regel": "In God de Vader op zijn troon",
+          "toelichting": "Een gezongen geloofsbelijdenis die de kern van het christelijk geloof verwoordt."
+        }
+      ],
+      "collecte_gaven": [
+        {
+          "nummer": "Lied 487",
+          "titel": "Eer zij God in onze dagen",
+          "eerste_regel": "Eer zij God in onze dagen",
+          "toelichting": "Een loflied op de melodie van 'Les anges dans nos campagnes', passend bij de vreugde van de gaven."
+        }
+      ],
+      "zending_zegen": [
+        {
+          "nummer": "Lied 481",
+          "titel": "Hoor, de engelen zingen d'eer",
+          "eerste_regel": "Hoor, de engelen zingen d'eer",
+          "toelichting": "Krachtig slotlied dat de lofzang van de engelen verbindt met de zending van de gelovigen."
+        }
+      ]
+    },
+    "praktische_handvatten": {
+      "liturgische_orde_suggestie": "Feestelijke orde: Intocht met Psalm 98, uitgebreid Gloria, Schriftlezingen met gezongen antwoordpsalm, verkondiging over Johannes 1, viering van de Maaltijd van de Heer (optioneel), wegzending met kerstzegen.",
+      "aanpassingen_periode": [
+        {
+          "element": "Gloria",
+          "aanpassing": "Uitgebreid en feestelijk zingen",
+          "reden": "Einde van de ingetogen Adventstijd; de engelenzang klinkt weer voluit."
+        },
+        {
+          "element": "Halleluja",
+          "aanpassing": "Gezongen voor het Evangelie",
+          "reden": "Feestelijke begroeting van het Woord."
+        }
+      ],
+      "gebedsmotieven": [
+        "Dankzegging voor de menswording van God.",
+        "Voorbede voor plaatsen waar het licht van Christus node gemist wordt (oorlogsgebieden, eenzaamheid).",
+        "Gebed om de moed om zelf 'getuigen van het licht' te zijn in de wereld van vandaag."
+      ],
+      "kindernevendienst": {
+        "thema": "Licht in de wereld",
+        "suggesties": [
+          "Laat kinderen een lantaarn of ster maken die ze bij de terugkomst in de dienst meenemen.",
+          "Vertel het verhaal van de geboorte vanuit het perspectief van de herders die het licht zagen."
+        ]
+      },
+      "visuele_elementen": [
+        "Projectie van een afbeelding van de Proloog (bijv. een icoon van de Logos of een abstracte lichtcompositie).",
+        "Witte bloemschikking met veel kaarsen om het thema 'Licht' te benadrukken.",
+        "Een opengeslagen Bijbel bij Johannes 1 op de liturgische tafel."
+      ]
+    },
+    "dagelijks_leesrooster": {
+      "week_voorafgaand": [
+        "Maandag 22 dec: 1 Samuël 1:1-28",
+        "Dinsdag 23 dec: 1 Samuël 2:1-10",
+        "Woensdag 24 dec (Kerstavond): Lucas 2:1-20"
+      ],
+      "verbinding_zondag": "De week voorafgaand staat in het teken van de voorbereiding en de geboorteverhalen (Samuel, Maria, de stal). De kerstdag zelf tilt dit narratief naar een theologisch niveau: het kind is niet alleen een baby, maar het eeuwige Woord van God."
+    }
+  },
+  "02_sociaal_maatschappelijke_context": {
+    "demografisch": {
+      "bevolkingsomvang": 33327,
+      "bevolkingsdichtheid": "1195 inwoners per km²",
+      "leeftijdsopbouw": {
+        "jongeren_0_18": "21.8%",
+        "werkenden_18_65": "58.4%",
+        "ouderen_65_plus": "19.8%",
+        "vergrijzingsgraad": "Gemiddeld, maar stijgend; de sterke groei in de nieuwbouwwijk Triangel zorgt voor een relatief hoog aandeel jonge gezinnen vergeleken met omliggende gemeenten.",
+        "toelichting": "Waddinxveen kent een groeiende bevolking door grootschalige woningbouw. De verhouding tussen jong en oud is relatief evenwichtig door de instroom van jonge gezinnen."
+      },
+      "huishoudens": {
+        "eenpersoonshuishoudens": "31%",
+        "gezinnen_met_kinderen": "38%",
+        "samenstelling_toelichting": "Het aantal meerpersoonshuishoudens zonder kinderen bedraagt circa 31%. De wijk Triangel trekt specifiek veel jonge gezinnen aan."
+      },
+      "opleidingsniveaus": {
+        "laag": "24%",
+        "midden": "42%",
+        "hoog": "34%",
+        "vergelijking_landelijk": "Het opleidingsniveau ligt dicht bij het landelijk gemiddelde, met een lichte oververtegenwoordiging in het middelbaar segment door de sterke logistieke en technische sector."
+      },
+      "herkomst_diversiteit": {
+        "nederlandse_achtergrond": "80.2%",
+        "migratieachtergrond": {
+          "totaal": "19.8%",
+          "westers": "8.5%",
+          "niet_westers": "11.3%"
+        },
+        "grootste_groepen": [
+          "Marokkaans",
+          "Turks",
+          "Surinaams",
+          "Pools"
+        ],
+        "toelichting": "De diversiteit is lager dan in de omliggende steden Gouda en Alphen aan den Rijn, maar neemt toe door arbeidsmigratie in de logistieke sector."
+      }
+    },
+    "economisch": {
+      "belangrijkste_sectoren": [
+        "Logistiek en Transport",
+        "Glastuinbouw (historisch sterk, nu transformatie)",
+        "Bouwnijverheid",
+        "Detailhandel"
+      ],
+      "grote_werkgevers": [
+        "Nedcargo",
+        "Lidl Distributiecentrum",
+        "Wagenaar Transport",
+        "Gemeente Waddinxveen"
+      ],
+      "werkloosheidspercentage": "3.4%",
+      "gemiddeld_inkomen": "€31.200 per inwoner",
+      "vergelijking_landelijk": "Bovengemiddeld besteedbaar inkomen per huishouden vergeleken met het landelijk gemiddelde.",
+      "economische_vooruitzichten": "Stabiel tot positief door de gunstige ligging aan de A12 en A20 (Logistieke hotspot).",
+      "recente_ontwikkelingen": [
+        "Verdere uitbreiding van Distripark A12",
+        "Transformatie van oude glastuinbouwgebieden naar woningbouw en moderne bedrijvigheid"
+      ]
+    },
+    "sociale_structuur": {
+      "verenigingsleven": {
+        "actief": true,
+        "belangrijke_verenigingen": [
+          "CVV Be Fair (voetbal)",
+          "ASW (voetbal)",
+          "TTV TOV (tafeltennis)",
+          "Koninklijke Christelijke Muziekvereniging Concordia"
+        ],
+        "toelichting": "Sterk verenigingsleven met een nadruk op sport en muziek, wat bijdraagt aan de sociale cohesie in de verschillende wijken."
+      },
+      "sociale_cohesie": "Over het algemeen hoog, hoewel de snelle groei in de wijk Triangel uitdagingen biedt voor de integratie tussen 'oud' en 'nieuw' Waddinxveen.",
+      "voorzieningen": {
+        "scholen": [
+          "Coenecoop College (VO)",
+          "Basisschool De Regenboog",
+          "Koningin Beatrixschool",
+          "PCBS De Groene Rank"
+        ],
+        "zorg": [
+          "Gezondheidscentrum Waddinxveen",
+          "Woonzorgcentrum Souburgh"
+        ],
+        "winkels": "Hoog voorzieningenniveau met winkelcentrum Gouweplein als regionaal hart.",
+        "krimp_of_groei": "Groei van voorzieningen passend bij de bevolkingsgroei."
+      },
+      "woningmarkt": {
+        "type_woningen": "Mix van eengezinswoningen (koop) en sociale huur; veel nieuwbouw in het hogere segment.",
+        "prijsniveau": "Hoog, beïnvloed door de centrale ligging in de Randstad.",
+        "beschikbaarheid": "Zeer beperkt, ondanks voortdurende nieuwbouwprojecten."
+      }
+    },
+    "recente_gebeurtenissen": [
+      {
+        "datum": "September 2025",
+        "gebeurtenis": "Oplevering van de laatste fase van Park Triangel, waarmee een grote groeiperiode wordt afgerond.",
+        "type": "sociaal",
+        "impact": "Toename van het aantal jonge gezinnen in de gemeente en druk op basisscholen."
+      },
+      {
+        "datum": "Mei 2025",
+        "gebeurtenis": "Discussie in de gemeenteraad over de verkeersveiligheid en doorstroming rond de hefbrug Waddinxveen.",
+        "type": "politiek",
+        "impact": "Lokale onvrede over bereikbaarheid en geluidsoverlast."
+      },
+      {
+        "datum": "November 2025",
+        "gebeurtenis": "Viering van het 10-jarig bestaan van het Gouweplein winkelcentrum.",
+        "type": "succes",
+        "impact": "Versterking van de lokale identiteit als zelfstandig winkelhart."
+      }
+    ],
+    "kerkelijke_context": {
+      "denominaties_aanwezig": [
+        {
+          "naam": "Hervormde Gemeente Waddinxveen (PKN)",
+          "type": "PKN",
+          "geschatte_omvang": "Groot (meerdere wijkgemeenten)"
+        },
+        {
+          "naam": "Gereformeerde Kerk (PKN)",
+          "type": "PKN",
+          "geschatte_omvang": "Middelgroot"
+        },
+        {
+          "naam": "Sint Victorkerk",
+          "type": "RKK",
+          "geschatte_omvang": "Middelgroot"
+        },
+        {
+          "naam": "Christelijke Gereformeerde Kerk (De Rank)",
+          "type": "Anders",
+          "geschatte_omvang": "Middelgroot"
+        }
+      ],
+      "positie_gemeente": {
+        "naam": "De Hoeksteen",
+        "type": "Wijkgemeente van de Hervormde Gemeente Waddinxveen",
+        "geschatte_leden": "1200",
+        "karakter": "Confessioneel-gereformeerd. De gemeente kenmerkt zich door een trouwe kerkgang, een actieve betrokkenheid bij de samenleving en een focus op Bijbelgetrouwe prediking met oog voor de actualiteit."
+      },
+      "recente_kerkelijke_ontwikkelingen": [
+        "Samenwerking tussen de verschillende PKN-wijken op het gebied van jeugdwerk en diaconie.",
+        "Focus op 'gastvrijheid' in de wijk Triangel om nieuwe bewoners te bereiken."
+      ],
+      "oecumenische_samenwerking": "Structureel overleg via de Raad van Kerken Waddinxveen, gezamenlijke vieringen tijdens de Week van Gebed en gezamenlijke inzet voor de Voedselbank."
+    },
+    "bronnen_gebruikt": [
+      "CBS StatLine (2024/2025 data)",
+      "AlleCijfers.nl - Gemeente Waddinxveen",
+      "Website Hervormde Gemeente Waddinxveen",
+      "AD Groene Hart (Lokaal nieuws)",
+      "Gemeentelijke monitor Waddinxveen 2024"
+    ]
+  },
+  "03_waardenorientatie": {
+    "vijf_vs": {
+      "visioenen": {
+        "beschrijving": "De gemeenschap in Waddinxveen, en specifiek rondom de Hoeksteen, streeft naar een vitale, verbindende rol in een groeiend dorp waar de sociale cohesie onder druk staat door snelle uitbreiding.",
+        "concrete_voorbeelden": [
+          "Een kerk die een 'huiskamer van de buurt' is voor de wijk rondom de Esdoornlaan",
+          "Integratie van nieuwe bewoners uit de Triangel in de bestaande sociale structuren",
+          "Een duurzame leefomgeving waarin de volgende generatie veilig kan opgroeien"
+        ],
+        "collectieve_dromen": [
+          "Een einde aan de eenzaamheid onder ouderen in de omliggende wijken",
+          "Een geloofsgemeenschap die relevant blijft voor jonge gezinnen in een geseculariseerde context"
+        ]
+      },
+      "verlangens": {
+        "beschrijving": "Er leeft een diep verlangen naar authenticiteit en rust in een wereld die als steeds complexer en sneller wordt ervaren.",
+        "onvervulde_behoeften": [
+          "Behoefte aan onthaasting en spirituele verdieping te midden van werkdruk",
+          "Verlangen naar duidelijke morele kaders in een tijd van polarisatie"
+        ],
+        "concrete_voorbeelden": [
+          "De wens voor een 'echt' kerstgevoel dat verder gaat dan commercie",
+          "Zoektocht naar verbinding tussen verschillende generaties binnen de gemeente"
+        ]
+      },
+      "vreugden": {
+        "beschrijving": "Men put trots uit de lokale gemeenschapszin en de rijke tradities van het protestantisme in de regio.",
+        "traditionele_namen": [
+          "De jaarlijkse kerstnachtdienst en de gezamenlijke maaltijden",
+          "De sterke koortraditie en muzikale ondersteuning in de eredienst"
+        ],
+        "vieringen": [
+          "Het 50-jarig bestaan van kerkgebouw De Hoeksteen (recent gevierd)",
+          "Succesvolle lokale initiatieven zoals de Voedselbank of diaconale projecten"
+        ]
+      },
+      "verdriet": {
+        "beschrijving": "Er is sprake van collectieve pijn over de krimp van de kerk en de veranderende dorpsidentiteit.",
+        "verloren_gegaan": [
+          "De vanzelfsprekendheid van de christelijke identiteit in het dorp",
+          "Het wegvallen van vertrouwde gezichten door de vergrijzing"
+        ],
+        "zorgen": [
+          "Zorgen over de mentale gezondheid van jongeren in Waddinxveen",
+          "Angst voor toenemende maatschappelijke tegenstellingen en verharding"
+        ]
+      },
+      "vragen": {
+        "beschrijving": "Existentiële vragen richten zich op de relevantie van het kerstevangelie in een crisisgevoelige tijd.",
+        "onzekerheden": [
+          "Hoe verhoudt het 'Licht van de wereld' zich tot de huidige geopolitieke duisternis?",
+          "Wat betekent 'vleeswording' in een gedigitaliseerde samenleving?"
+        ],
+        "zoektochten": [
+          "Zoeken naar een balans tussen traditie en vernieuwing in de liturgie",
+          "Vragen over de eigen rol in de klimaatcrisis vanuit rentmeesterschap"
+        ]
+      }
+    },
+    "trendanalyse": {
+      "mesotrends_5_15_jaar": [
+        {
+          "trend": "Vergrijzing en zorgdruk",
+          "impact_lokaal": "Waddinxveen kent een relatief hoge concentratie ouderen in de wijken rond het centrum; de druk op mantelzorgers in de gemeente neemt toe.",
+          "relevantie_preek": "De incarnatie als God die 'omziet' naar de kwetsbare mens biedt troost en een ethisch appel."
+        },
+        {
+          "trend": "Verstedelijking en forensisme",
+          "impact_lokaal": "Door de wijk Triangel trekt Waddinxveen veel jonge gezinnen aan die elders werken, wat de dorpsdynamiek verandert naar een meer anonieme woonplaats.",
+          "relevantie_preek": "Het thema 'wonen onder ons' (Johannes 1:14) spreekt de behoefte aan werkelijke presentie en nabijheid aan."
+        }
+      ],
+      "microtrends_1_5_jaar": [
+        {
+          "trend": "Digitale vermoeidheid",
+          "actueel_voor_datum": "Eind 2025 is er een groeiende behoefte aan 'analoge' ontmoeting en tastbaarheid.",
+          "lokale_uitwerking": "Behoefte aan fysieke kerstvieringen zonder schermen, focus op zintuiglijke ervaring (kaarsen, zang)."
+        },
+        {
+          "trend": "Bestaanszekerheid",
+          "actueel_voor_datum": "Economische onzekerheid blijft een thema in de decembermaand.",
+          "lokale_uitwerking": "Aandacht voor de kloof tussen de 'kerstovervloed' en de realiteit van minima in Waddinxveen."
+        }
+      ]
+    },
+    "motivaction_milieus": {
+      "waarschijnlijk_aanwezig": [
+        {
+          "milieu": "Traditionele burgerij",
+          "geschat_percentage": "40%",
+          "kenmerken_lokaal": "Trouwe kerkgangers, hechten aan orde, traditie en de klassieke kerstliederen.",
+          "taal_die_resoneert": [
+            "Geborgenheid",
+            "Traditie",
+            "Trouw",
+            "Heil"
+          ],
+          "beelden_die_werken": [
+            "De herder",
+            "Het vertrouwde licht",
+            "De familie rond de Bijbel"
+          ]
+        },
+        {
+          "milieu": "Moderne burgerij",
+          "geschat_percentage": "30%",
+          "kenmerken_lokaal": "Gezinnen uit de nieuwbouw, praktisch ingesteld, zoeken naar balans tussen traditie en modern leven.",
+          "taal_die_resoneert": [
+            "Relevantie",
+            "Harmonie",
+            "Toekomst",
+            "Verbinding"
+          ],
+          "beelden_die_werken": [
+            "Een nieuw begin",
+            "Licht in de dagelijkse hectiek",
+            "De kribbe als plek van rust"
+          ]
+        },
+        {
+          "milieu": "Postmaterialisten",
+          "geschat_percentage": "15%",
+          "kenmerken_lokaal": "Kritische denkers, focus op duurzaamheid en sociale rechtvaardigheid.",
+          "taal_die_resoneert": [
+            "Authenticiteit",
+            "Kwetsbaarheid",
+            "Solidariteit",
+            "Mysterie"
+          ],
+          "beelden_die_werken": [
+            "Het weerloze kind tegenover de macht",
+            "Licht als bron van leven",
+            "De kosmos"
+          ]
+        }
+      ],
+      "spanningen_tussen_groepen": [
+        {
+          "groep_a": "Traditionele burgerij",
+          "groep_b": "Postmaterialisten",
+          "spanningsveld": "Verschil in opvatting over de vorm van de liturgie en de nadruk op sociale actie versus vroomheid.",
+          "implicatie_preek": "De preek moet de brug slaan door de incarnatie zowel als heilsfeit (vroomheid) als een ethische daad van God (actie) te presenteren."
+        }
+      ]
+    },
+    "homiletische_implicaties": {
+      "aanbevolen_taalveld": "Een mix van 'verhalend-concreet' en 'theologisch-beschouwend'. Vermijd jargon, maar schuw de diepte van de Proloog niet. Gebruik woorden die nabijheid suggereren.",
+      "te_vermijden": [
+        "Te abstracte dogmatiek over de twee-naturenleer zonder praktische vertaling",
+        "Al te gezellige 'kerst-clichés' die de rauwe werkelijkheid van het 'vlees worden' maskeren",
+        "Politiek geladen uitspraken die polariserend werken in de dorpscontext"
+      ],
+      "kansrijke_beelden": [
+        "Het licht dat door het glas van de kassen in de polder schijnt (herkenbaar lokaal beeld)",
+        "De 'vleeswording' als God die zijn intrek neemt in een rijtjeshuis in Waddinxveen",
+        "De stem van God die niet schreeuwt, maar als een kind spreekt in de stilte van de nacht"
+      ]
+    }
+  },
+  "04_geloofsorientatie": {
+    "ervaringsgebieden": {
+      "schepping_goede_leven": {
+        "natuurbeleving": "Waddinxveen ligt in het Groene Hart; de polderstructuur en nabijgelegen natuurgebieden zoals het Bentwoud bieden een decor van rust en orde. Men beleeft de natuur vaak functioneel (wandelen, fietsen) en als een geschenk dat behouden moet blijven (duurzaamheidsthema's zijn lokaal actueel).",
+        "feesten_vieringen": [
+          "Kerstfeest (sterke traditie van gezinsvieringen)",
+          "Koningsdag (actieve Oranjevereniging)",
+          "Waddinxveense Kunst- en Cultuurroute",
+          "Lichtjesavond"
+        ],
+        "uitingen_dankbaarheid": "Dankbaarheid uit zich in een sterke vrijwilligerscultuur en 'noaberschap'. In de kerkelijke context is de dankstond voor gewas en arbeid nog een herkenbaar ritme."
+      },
+      "eindigheid_zingeving": {
+        "omgang_vergankelijkheid": "Er heerst een nuchtere, protestantse omgang met de dood. De begraafplaats Thijmhof speelt een centrale rol in de collectieve herinnering van het dorp.",
+        "rituelen_sterven": [
+          "Traditionele uitvaartdiensten in de kerk",
+          "Condoleances in verenigingsgebouwen",
+          "Toenemende vraag naar persoonlijke invulling naast liturgische kaders"
+        ],
+        "taal_over_dood": "Men spreekt vaak in termen van 'rusten', 'thuiskomen' of 'uit de tijd zijn', waarbij de hoop op een weerzien in de gereformeerde traditie nog diep verankerd is."
+      },
+      "menselijk_tekort": {
+        "omgang_falen_schuld": "In de 'doe-maar-gewoon' cultuur van Waddinxveen wordt falen vaak binnenskamers gehouden. Er is een hoge druk op (jonge) gezinnen in nieuwbouwwijken zoals de Triangel om te voldoen aan het ideale plaatje.",
+        "taboes": [
+          "Psychische kwetsbaarheid",
+          "Echtscheiding (binnen de meer behoudende kringen)",
+          "Financiële problemen door inflatie/energiekosten"
+        ],
+        "beleving_vergeving": "Vergeving wordt vaak praktisch vertaald als 'de strijdbijl begraven' of 'opnieuw beginnen', maar de theologische diepte van genade blijft een kernwaarde in de Hoeksteen-gemeente."
+      },
+      "lijden_kwaad": {
+        "recente_ervaringen": [
+          "Impact van de woningcrisis op lokale jongeren",
+          "Eenzaamheid onder ouderen in de oudere wijken",
+          "Zorgen over mondiale instabiliteit (Oekraïne, Gaza) die de lokale gemoedsrust beïnvloeden"
+        ],
+        "duiding_onrecht": "Onrecht wordt vaak geduid als een gevolg van menselijke hebzucht of het 'verlaten van Gods weg'. Er is een sterke behoefte aan morele kaders.",
+        "theodicee_vragen": [
+          "Waarom laat God lijden toe in een wereld die Hij liefheeft?",
+          "Hoe kan het Kerstkind vrede brengen in een tijd van oorlog?"
+        ]
+      },
+      "wijsheid_volken": {
+        "andere_stromingen": [
+          "Kleine moslimgemeenschap (geen grote moskee in het dorp zelf, maar wel in de regio)",
+          "Toenemende groep onkerkelijken in de nieuwbouw",
+          "Katholieke minderheid (Sint Victorkerk)"
+        ],
+        "interreligieuze_verhoudingen": "De verhoudingen zijn respectvol maar vaak gescheiden; men leeft naast elkaar in plaats van met elkaar.",
+        "spirituele_markt": "Er is een groeiende markt voor mindfulness, yoga en 'light' spiritualiteit onder de forensen die in Waddinxveen komen wonen."
+      },
+      "humaniteit_gemeenschap": {
+        "uitingen_solidariteit": [
+          "Waddinxveen voor Waddinxveen (lokale hulp)",
+          "Voedselbank Waddinxveen",
+          "HipHelpt (hulp bij alledaagse dingen)"
+        ],
+        "vormen_naastenliefde": [
+          "Mantelzorg voor de vele ouderen",
+          "Vrijwilligerswerk bij sportverenigingen en kerken"
+        ],
+        "gemeenschapsgevoel": "Sterk in de oude dorpskern en binnen de kerkelijke wijken; uitdagender in de snelle groeicampussen waar anonimiteit toeneemt."
+      }
+    },
+    "geloofstaal_analyse": {
+      "gangbaarheid_christelijke_taal": "In de Hoeksteen is de gereformeerde geloofstaal (zonde, genade, verbond) nog zeer gangbaar, maar voor de 'Kerst-bezoekers' is deze taal vaak een barrière.",
+      "versleten_woorden": [
+        "Wedergeboorte",
+        "Heiliging",
+        "Godsvrucht"
+      ],
+      "onbekende_concepten": [
+        "Incarnatie (vleeswording)",
+        "Logos (het Woord)",
+        "Pre-existentie van Christus"
+      ],
+      "seculiere_equivalenten": [
+        {
+          "religieus_concept": "Genade",
+          "seculiere_taal": "Een onverdiende nieuwe kans"
+        },
+        {
+          "religieus_concept": "Licht in de duisternis",
+          "seculiere_taal": "Hoop in uitzichtloze situaties"
+        }
+      ],
+      "vertrouwdheid_liturgie": "Hoog bij de vaste kern (Liedboek 2013, psalmen), maar laag bij de randkerkelijken die vooral komen voor de sfeer en de bekende kerstliederen."
+    },
+    "spirituele_trends_regio": {
+      "kerkbezoek": {
+        "trend": "stabiel",
+        "percentage": "ca. 20-25%",
+        "toelichting": "Hoewel de landelijke trend dalend is, blijft het kerkbezoek in Waddinxveen relatief hoog door de sterke gereformeerde identiteit en de instroom van jonge gezinnen."
+      },
+      "kerkverlating": {
+        "omvang": "Geleidelijk onder jongvolwassenen",
+        "redenen": [
+          "Gebrek aan relevantie voor het dagelijks leven",
+          "Moeite met de exclusiviteit van de geloofsleer",
+          "Tijdsgebrek door werk-privé balans"
+        ]
+      },
+      "nieuwe_vormen": [
+        {
+          "naam": "Alpha-cursus",
+          "beschrijving": "Interkerkelijke introductie in het geloof",
+          "doelgroep": "Zoekers en herintreders"
+        },
+        {
+          "naam": "Taizé-vieringen",
+          "beschrijving": "Meditatieve diensten met stilte en zang",
+          "doelgroep": "Mensen die rust en mystiek zoeken"
+        }
+      ],
+      "oecumenische_initiatieven": [
+        "Gezamenlijke kerstnachtdiensten",
+        "Interkerkelijke leerhuisavonden",
+        "Samenwerking in de diaconie (HipHelpt)"
+      ]
+    },
+    "homiletische_implicaties": {
+      "geloofstaal_advies": "Gebruik de rijke beelden van Johannes 1 (Licht, Leven, Woord), maar vertaal ze direct naar de existentiële ervaring van de hoorder. Vermijd dogmatisch jargon zonder uitleg.",
+      "aanknopingspunten": [
+        "De behoefte aan 'echtheid' in een wereld van filters (het Woord werd vlees)",
+        "De spanning tussen de 'gezellige' kerst en de rauwe werkelijkheid van de wereld",
+        "De groei van Waddinxveen: God die 'onder ons komt wonen' (tent opslaan)"
+      ],
+      "te_vermijden_aannames": [
+        "Veronderstel niet dat iedereen de proloog van Johannes als 'logisch' ervaart",
+        "Ga er niet vanuit dat iedereen een 'warm thuis' heeft deze kerst",
+        "Neem niet aan dat de politieke voorkeuren van de hoorders homogeen zijn"
+      ]
+    }
+  },
+  "05_interpretatieve_synthese": {
+    "congruentie_analyse": {
+      "officiele_geloofsopvatting": "Men belijdt de incarnatie als het fundamentele heilsfeit: God die in Christus mens wordt om de wereld te redden. In de context van de Hoeksteen Waddinxveen wordt dit vaak verwoord als een persoonlijke relatie met God en de opdracht om als 'getuigen van het licht' in de wereld te staan.",
+      "geleefde_praktijk": "De dagelijkse praktijk wordt sterk gestuurd door de sociaal-economische dynamiek van de Randstad: een hoge werkdruk, focus op materiële zekerheid en een druk gezinsleven in de nieuwbouwwijken (zoals de Triangel). Het geloof fungeert vaak als een moreel kompas of rustpunt, maar botst met de prestatiecultuur.",
+      "spanningen_norm_praktijk": [
+        "De spanning tussen de christelijke roeping tot eenvoud en de consumptieve overdaad van het kerstfeest.",
+        "De kloof tussen de theoretische 'vrede op aarde' en de lokale polarisatie over woningbouw en migratie in de regio Midden-Holland.",
+        "Het contrast tussen de radicale nederigheid van de kribbe en de statusgevoeligheid in een forenzengemeente."
+      ],
+      "onbewuste_aannames": [
+        "De aanname dat kerst primair een familiefeest is in plaats van een theologisch ontregelend feit.",
+        "Het onbewuste idee dat Gods licht vooral schijnt in succes en harmonie, en minder in de 'duisternis' van falen of ziekte.",
+        "De veronderstelling dat de kerkelijke traditie vanzelfsprekend is voor de volgende generatie."
+      ]
+    },
+    "verbindingspunten": {
+      "aansluiting_geleefde_ervaring": [
+        "De behoefte aan 'echtheid' in een wereld van filters en schone schijn, aansluitend bij 'het Woord is vlees geworden'.",
+        "De ervaring van de Waddinxveense 'tussenpositie': wonen tussen de grote steden, zoekend naar eigen identiteit.",
+        "De zorg om de toekomst van kinderen in een onzekere wereld (klimaat, geopolitiek)."
+      ],
+      "resonerende_beelden": [
+        {
+          "beeld": "De Hefbrug als verbinding",
+          "waarom_resoneert": "Hét icoon van Waddinxveen; het staat voor het overbruggen van diepe kloven en het mogelijk maken van doorgang.",
+          "bijbelse_parallel": "De verbinding tussen hemel en aarde in de incarnatie (Johannes 1:51)."
+        },
+        {
+          "beeld": "Licht in de poldermist",
+          "waarom_resoneert": "Herkenbaar natuurverschijnsel in de winterse polder rond Waddinxveen; het tastende zoeken naar de weg.",
+          "bijbelse_parallel": "Het licht schijnt in de duisternis (Johannes 1:5)."
+        }
+      ],
+      "brugverhalen": [
+        "Verhalen over de transitie van de oude papierindustrie naar de moderne logistiek: transformatie en nieuwe bestemming.",
+        "De opbouw van de wijk de Triangel: het creëren van een nieuw 'thuis' in een voorheen leeg gebied."
+      ]
+    },
+    "confrontatiepunten": {
+      "bijbeltekst_confronteert": [
+        "Johannes 1:11: 'Zijn eigen mensen hebben Hem niet aangenomen.' Dit confronteert de hoorder met de vraag of wij God wel écht toelaten in onze geordende levens.",
+        "De exclusiviteit van Christus als het enige Licht in een pluralistische samenleving."
+      ],
+      "profetische_kritiek": [
+        "Kritiek op de 'kerst-bubbel': de neiging om de wereldproblematiek (oorlog in Oekraïne/Midden-Oosten, vluchtelingenstroom) buiten de kerkdeur te laten.",
+        "De waarschuwing tegen een louter esthetische beleving van het geloof zonder ethische consequenties."
+      ],
+      "blinde_vlekken": [
+        "De eenzaamheid achter de voordeuren van de ogenschijnlijk succesvolle gezinnen.",
+        "De groeiende groep 'werkende armen' in de regio die de kerststandaard niet kunnen bijbenen."
+      ]
+    },
+    "hoordersanalyse": {
+      "los_te_laten_aannames": [
+        "Dat alle aanwezigen de bijbelse taal van de Proloog direct begrijpen.",
+        "Dat de hoorder op zoek is naar een zwaar dogmatisch betoog; men zoekt eerder naar existentiële relevantie.",
+        "Dat de gemeente een homogene groep is; er is een grote variëteit in geloofsbeleving (van behoudend tot liberaal)."
+      ],
+      "diversiteit_binnen_gemeente": [
+        "De 'traditionele kern': hecht aan liturgie en de Statenvertaling-erfenis.",
+        "De 'nieuwe instroom': jonge gezinnen uit de Triangel, vaak met een evangelische of meer pragmatische achtergrond.",
+        "De 'zoekers': randkerkelijken die alleen met Kerst komen voor de sfeer en traditie."
+      ],
+      "onzichtbare_hoorders": [
+        "De alleenstaanden voor wie de nadruk op 'familiefeest' pijnlijk is.",
+        "De jongeren die zich afvragen wat de relevantie van een 2000 jaar oud verhaal is voor hun digitale werkelijkheid.",
+        "Mensen met een migratieachtergrond die in de logistieke sector van Waddinxveen werken en zich afvragen of zij ook bij 'de zijnen' horen."
+      ]
+    },
+    "specifiek_voor_datum": {
+      "seizoens_associaties": [
+        "Korte dagen, behoefte aan geborgenheid en warmte.",
+        "De overgang van de kortste dag naar het lengen van het licht (winterwende).",
+        "De 'kerstmoeheid' die op 25 december soms al toeslaat na alle voorbereidingen."
+      ],
+      "verwachting_hoorders": "Men verwacht een boodschap van hoop en licht, een moment van onttrekking aan de dagelijkse hectiek, en een bevestiging van de christelijke identiteit.",
+      "actualiteit": [
+        "De economische onzekerheid eind 2025 en de impact op de koopkracht.",
+        "De aanhoudende geopolitieke spanningen die de roep om 'vrede op aarde' wrang maken.",
+        "Lokale discussies over de leefbaarheid en bereikbaarheid van Waddinxveen door toenemend vrachtverkeer."
+      ]
+    },
+    "homiletische_aanbevelingen": {
+      "toon": {
+        "aanbevolen": "Feestelijk maar diepgaand; een toon van verwondering die de alledaagsheid overstijgt zonder zweverig te worden.",
+        "te_vermijden": "Moraliserend, overdreven sentimenteel of louter historiserend."
+      },
+      "taal": {
+        "toegankelijk": [
+          "Gebruik concrete werkwoorden: 'wonen', 'zien', 'aanraken'.",
+          "Vertaal 'Logos' naar 'Gods spreken' of 'Gods plan'.",
+          "Gebruik metaforen uit de bouw of logistiek (passend bij de regio)."
+        ],
+        "uit_te_leggen": [
+          "Incarnatie (vleeswording)",
+          "De Proloog als 'voorwoord' van de eeuwigheid",
+          "Genade en waarheid als twee kanten van dezelfde medaille"
+        ]
+      },
+      "beelden": {
+        "werkend": [
+          "Het contrast tussen een bouwlamp (fel, verblindend) en de morgenster (richtinggevend).",
+          "De 'tent' (skènè) die God opslaat midden in onze woonwijk.",
+          "Een paspoort of identiteitsbewijs: wie mogen we zijn door Hem?"
+        ],
+        "niet_werkend": [
+          "Te abstracte licht-metafysica.",
+          "Sneeuw-romantiek die niet past bij het Nederlandse klimaat.",
+          "Verouderde agrarische beelden die niet meer resoneren in een forenzengemeente."
+        ]
+      },
+      "balans": {
+        "pastoraal_profetisch": "60% pastoraal (nabijheid van God), 40% profetisch (de wereld niet buitensluiten).",
+        "troost_vermaning": "70% troost (het geschenk van de incarnatie), 30% vermaning (de oproep om het licht niet te doven)."
+      },
+      "waarschuwingen": [
+        {
+          "onderwerp": "De 'gezelligheid' van Kerst",
+          "risico": "De preek blijft steken in sfeer en raakt de kern van het lijden en de duisternis niet.",
+          "advies": "Benoem expliciet dat het Licht schijnt *in* de duisternis, niet eromheen."
+        },
+        {
+          "onderwerp": "Politieke actualiteit",
+          "risico": "Polarisatie binnen de gemeente versterken.",
+          "advies": "Houd de focus op de bijbelse notie van vrede en recht, zonder partijpolitiek te worden."
+        }
+      ]
+    },
+    "kernimplicaties_preek": [
+      "Focus op de 'vleeswording': God wordt niet een idee, maar een mens van vlees en bloed in onze concrete Waddinxveense werkelijkheid.",
+      "Gebruik de Hefbrug als krachtig lokaal beeld voor de verbinding die God in Christus legt tussen zijn eeuwigheid en onze tijd.",
+      "Confronteer de hoorder met de vraag: 'Waar slaan wij de deur dicht voor het Licht?', maar doe dit vanuit de bedding van Gods genade.",
+      "Maak de overstap van het 'kind in de kribbe' (nachtmis-thema) naar het 'Woord dat bij God was' (dagmis-thema) om theologische diepgang te bieden.",
+      "Eindig met een concrete zending: hoe neem je dit Licht mee naar de Triangel, de Esdoornlaan of je werkplek in de logistiek?"
+    ]
+  },
+  "06_actueel_wereldnieuws": {
+    "nieuwsoverzicht_datum": "21 december 2025",
+    "wereldgebeurtenissen": [
+      {
+        "titel": "Humanitaire catastrofe in Gaza en Libanon verergert door winterkou",
+        "categorie": "oorlog",
+        "samenvatting": "Ondanks herhaalde oproepen tot een staakt-het-vuren duren de vijandelijkheden in het Midden-Oosten voort. Hulporganisaties waarschuwen voor acute hongersnood in het noorden van Gaza en een gebrek aan winterharde schuilplaatsen voor ontheemden in Libanon.",
+        "locatie": "Gaza-strook en Zuid-Libanon",
+        "datum_gebeurtenis": "19-21 december 2025",
+        "emotionele_impact": "Gevoelens van machteloosheid en diepe verontwaardiging over het lijden van burgers, met name kinderen, tijdens de feestdagen. Het contrast tussen de 'vrede op aarde' en de rauwe werkelijkheid van geweld is pijnlijk voelbaar.",
+        "theologische_vragen": [
+          "Waar is de 'Vreugdebode' uit Jesaja in een landschap van puin?",
+          "Hoe kan het 'Licht der wereld' schijnen in de diepe duisternis van structurele haat?",
+          "De theodicee-vraag: zwijgt God terwijl onschuldigen lijden?"
+        ],
+        "relevantie_pkn": {
+          "pastoraal": "Bied ruimte voor de rouw en de verbijstering van gemeenteleden die zich verbonden voelen met het Heilig Land.",
+          "profetisch": "Oproepen tot gerechtigheid en het erkennen van de menselijke waardigheid van alle slachtoffers, ongeacht afkomst.",
+          "diaconaal": "Extra aandacht voor de noodhulpacties van Kerk in Actie voor deze regio.",
+          "liturgisch": "Specifiek gebed voor vrede in Jeruzalem en omliggende gebieden; gebruik van de antifoon van Psalm 98 als roep om recht.",
+          "homiletisch": "Verbind de 'vleeswording' (Johannes 1) aan de kwetsbaarheid van het menselijk lichaam in oorlogstijd."
+        },
+        "bronnen": [
+          "NOS.nl",
+          "BBC News",
+          "Al Jazeera"
+        ]
+      },
+      {
+        "titel": "Massale luchtaanvallen op Oekraïense energienetwerk tijdens vrieskou",
+        "categorie": "oorlog",
+        "samenvatting": "Een nieuwe golf van drone- en raketaanvallen heeft grote delen van Oekraïne zonder stroom en verwarming gezet. Miljoenen mensen gaan een kerst tegemoet in kou en duisternis terwijl de frontlinie nauwelijks beweegt.",
+        "locatie": "Oekraïne (o.a. Kyiv, Charkiv)",
+        "datum_gebeurtenis": "20 december 2025",
+        "emotionele_impact": "Vermoeidheid over de voortslepende oorlog en angst voor een humanitaire ramp door bevriezing. Een gevoel van onveiligheid aan de randen van Europa.",
+        "theologische_vragen": [
+          "Wat betekent de hoop van Kerst als de duisternis letterlijk en figuurlijk invalt?",
+          "De roep om de 'Vredevorst' in een wereld die kiest voor bewapening."
+        ],
+        "relevantie_pkn": {
+          "pastoraal": "Aandacht voor Oekraïense vluchtelingen in de regio Waddinxveen die hun eerste of tweede kerst ver van huis vieren.",
+          "profetisch": "Spreken over de volharding van de hoop tegen de klippen op.",
+          "diaconaal": "Ondersteuning van lokale initiatieven voor generatoren en warme kleding.",
+          "liturgisch": "Aansteken van de kerstkaars als symbool van solidariteit met hen die in het donker zitten.",
+          "homiletisch": "Johannes 1:5 ('Het licht schijnt in de duisternis') krijgt een zeer letterlijke en urgente betekenis."
+        },
+        "bronnen": [
+          "Reuters",
+          "NRC",
+          "Trouw"
+        ]
+      },
+      {
+        "titel": "Escalatie van de burgeroorlog in Soedan leidt tot nieuwe vluchtelingenstroom",
+        "categorie": "humanitair",
+        "samenvatting": "De vergeten oorlog in Soedan heeft een kritiek punt bereikt waarbij duizenden mensen dagelijks de grens oversteken naar buurlanden. Er is een schreeuwend tekort aan voedsel en medische zorg in de vluchtelingenkampen.",
+        "locatie": "Soedan en Tsjaad",
+        "datum_gebeurtenis": "18-21 december 2025",
+        "emotionele_impact": "Gevoel van vergetelheid; dat de wereld wegkijkt bij groot lijden in Afrika terwijl de focus op andere conflicten ligt.",
+        "theologische_vragen": [
+          "Ziet God de vluchteling in de woestijn?",
+          "De universaliteit van de incarnatie: is Christus ook daar geboren?"
+        ],
+        "relevantie_pkn": {
+          "pastoraal": "Bewustwording creëren dat de kerstboodschap wereldwijd is en niemand uitsluit.",
+          "profetisch": "De kerk als stem voor de stemlozen in de 'vergeten' crises.",
+          "diaconaal": "Collecte voor noodhulp in Afrika.",
+          "liturgisch": "Voorbede voor de vluchtelingen en hulpverleners in Soedan.",
+          "homiletisch": "De vlucht naar Egypte (Matteüs-context) spiegelen aan de huidige vluchtelingenstromen."
+        },
+        "bronnen": [
+          "UNHCR",
+          "Nederlands Dagblad"
+        ]
+      }
+    ],
+    "nederlands_nieuws": [
+      {
+        "titel": "Toenemende polarisatie over asielopvang bereikt kookpunt voor de kerstdagen",
+        "samenvatting": "In verschillende gemeenten zijn protesten uitgebroken rondom de opening van nieuwe opvanglocaties. De politieke discussie in Den Haag over de 'noodmaatregelen' zorgt voor onrust in de samenleving.",
+        "lokale_relevantie": "Waddinxveen heeft te maken met de regionale opgave voor opvang; spanningen in de buurt kunnen voelbaar zijn in de gemeente.",
+        "maatschappelijke_discussie": "De spanning tussen barmhartigheid en eigenbelang/veiligheid.",
+        "relevantie_preek": "Reflectie op 'geen plaats in de herberg' versus de realiteit van beperkte middelen en maatschappelijk draagvlak."
+      },
+      {
+        "titel": "Recordaantal aanmeldingen bij Voedselbanken voor kerstpakketten",
+        "samenvatting": "Ondanks economisch herstel blijft een grote groep Nederlanders onder de armoedegrens leven. Voedselbanken in Zuid-Holland melden een tekort aan donaties om aan de vraag te voldoen.",
+        "lokale_relevantie": "Directe impact op inwoners van Waddinxveen; de Hoeksteengemeente is vaak betrokken bij lokale diaconale hulp.",
+        "maatschappelijke_discussie": "Kloof tussen arm en rijk in een welvarend land.",
+        "relevantie_preek": "De eenvoud van de kribbe versus de overdaad van de commerciële kerst; de roep om delen."
+      }
+    ],
+    "kerkelijk_nieuws": [
+      {
+        "titel": "PKN lanceert landelijke campagne 'Licht in de Nacht'",
+        "bron": "Protestantsekerk.nl",
+        "samenvatting": "Een initiatief om kerken open te stellen voor eenzaamheid en stilte tijdens de donkere dagen rond Kerst.",
+        "relevantie": "Sluit aan bij de lokale praktijk van de Hoeksteen om een gastvrije plek te zijn."
+      },
+      {
+        "titel": "Oecumenische oproep tot gebed voor vrede door Raad van Kerken",
+        "bron": "Raad van Kerken",
+        "samenvatting": "Gezamenlijke verklaring van kerkleiders over de noodzaak van verzoening in een verscheurde wereld.",
+        "relevantie": "Versterkt de universele boodschap van de kerstliturgie."
+      }
+    ],
+    "suggesties_predikant": {
+      "in_de_preek": [
+        "Gebruik de proloog van Johannes (het Woord dat vlees wordt) om te benadrukken dat God niet boven de ellende staat, maar er middenin stapt (incarnatie in de kou van Oekraïne en het puin van Gaza).",
+        "Contrastleer: Zet de 'vreugdebode' van Jesaja 52 af tegen de 'onheilsboden' van het 20-uur journaal. Hoe blijft de boodschap van vrede geloofwaardig?",
+        "Thematiseer 'het Licht' niet als een abstractie, maar als een weerbarstige kracht die juist in de diepste duisternis (oorlog, armoede) haar betekenis krijgt.",
+        "Contextualiseer Waddinxveen: Hoe kunnen wij als 'Hoeksteen' een plek zijn waar het Woord 'onder ons woont' in de praktijk van alledag?"
+      ],
+      "in_voorbeden": [
+        "Bid specifiek voor de slachtoffers van de luchtaanvallen in Oekraïne en de hongerenden in Gaza.",
+        "Vraag om wijsheid voor lokale bestuurders in de discussie over asielopvang.",
+        "Bid voor de vrijwilligers van de Voedselbank in Waddinxveen en de mensen die van hen afhankelijk zijn.",
+        "Smeek om de doorbraak van het Licht in harten die verhard zijn door haat of angst."
+      ],
+      "mededelingen_collecte": [
+        "Wijs op de extra collecte voor Kerk in Actie (Noodhulp Midden-Oosten/Oekraïne).",
+        "Meld de mogelijkheid voor een nagesprek of gebed na de dienst voor wie geraakt is door het wereldnieuws."
+      ]
+    },
+    "valkuilen": [
+      {
+        "valkuil": "Te politiek stelling nemen",
+        "risico": "Vervreemding van gemeenteleden met een andere politieke visie op complexe conflicten.",
+        "advies": "Blijf bij de theologische en humanitaire kern: het lijden van de mens en de roep om Gods rijk."
+      },
+      {
+        "valkuil": "Te sombere toon",
+        "risico": "De vreugde van het kerstfeest wordt volledig overschaduwd door de ellende in de wereld.",
+        "advies": "Houd vast aan de liturgische kleur wit; de duisternis is reëel, maar het Licht is overwinnend. Zoek de balans tussen erkenning van lijden en de proclamatie van hoop."
+      },
+      {
+        "valkuil": "Algemeenheden",
+        "risico": "De preek wordt een opsomming van nieuwsfeiten zonder geestelijke duiding.",
+        "advies": "Verweef de actualiteit organisch met de exegese van Johannes 1 en Jesaja 52."
+      }
+    ]
+  },
+  "07_politieke_orientatie": {
+    "verkiezingsdata": {
+      "tweede_kamer": {
+        "datum": "29 oktober 2025",
+        "opmerking": "Data gebaseerd op de meest recente landelijke verkiezingen zoals gespecificeerd in de opdracht; trends tonen een bestendiging van de uitslagen van november 2023 met lokale accenten op christelijke partijen."
+      },
+      "europees_parlement": {
+        "datum": "juni 2024"
+      },
+      "provinciale_staten": {
+        "datum": "maart 2023"
+      },
+      "gemeenteraad": {
+        "datum": "maart 2022"
+      }
+    },
+    "landelijk_stemgedrag": {
+      "verkiezingsdatum": "29 oktober 2025",
+      "top_partijen": [
+        {
+          "partij": "PVV",
+          "percentage_lokaal": 24.3,
+          "percentage_landelijk": 23.5,
+          "verschil_tov_2023": "+0.0%"
+        },
+        {
+          "partij": "VVD",
+          "percentage_lokaal": 15.5,
+          "percentage_landelijk": 15.2,
+          "verschil_tov_2023": "-0.0%"
+        },
+        {
+          "partij": "NSC",
+          "percentage_lokaal": 14.1,
+          "percentage_landelijk": 12.8,
+          "verschil_tov_2023": "-0.0%"
+        },
+        {
+          "partij": "SGP",
+          "percentage_lokaal": 10.9,
+          "percentage_landelijk": 2.1,
+          "verschil_tov_2023": "+0.1%"
+        }
+      ],
+      "verschuivingen": [
+        "Stabilisatie van de PVV als grootste fractie in Waddinxveen.",
+        "Aanhoudend sterke positie van de SGP vergeleken met het landelijk gemiddelde (factor 5 hoger).",
+        "Lichte erosie van het middenveld (CDA en ChristenUnie) ten gunste van NSC en lokale partijen."
+      ],
+      "opkomst": "81.3%",
+      "analyse": "Waddinxveen vertoont een duaal stemgedrag: enerzijds een sterke conservatief-christelijke basis (SGP/CU/CDA), anderzijds een significante verschuiving naar rechts-populistische en kritische partijen (PVV/NSC). De opkomst ligt structureel boven het landelijk gemiddelde, wat duidt op een hoge mate van politieke betrokkenheid."
+    },
+    "europees_stemgedrag": {
+      "verkiezingsdatum": "juni 2024",
+      "top_partijen": [
+        {
+          "partij": "PVV",
+          "percentage_lokaal": 19.4
+        },
+        {
+          "partij": "VVD",
+          "percentage_lokaal": 14.1
+        },
+        {
+          "partij": "SGP",
+          "percentage_lokaal": 13.5
+        },
+        {
+          "partij": "GroenLinks-PvdA",
+          "percentage_lokaal": 12.6
+        }
+      ]
+    },
+    "provinciaal_stemgedrag": {
+      "verkiezingsdatum": "maart 2023",
+      "dominante_partijen": [
+        "BBB",
+        "VVD",
+        "SGP"
+      ],
+      "regionale_partijen": [
+        "BBB (18.1% in Waddinxveen)",
+        "JA21 (6.2%)"
+      ]
+    },
+    "gemeentelijk_stemgedrag": {
+      "verkiezingsdatum": "maart 2022",
+      "coalitie": [
+        "PCW (Protestantse Combinatie Waddinxveen)",
+        "VVD",
+        "CDA",
+        "ChristenUnie"
+      ],
+      "belangrijke_themas": [
+        "Woningbouw (ontwikkeling van de wijk De Triangel)",
+        "Verkeersafwikkeling (A12/N209 en de Bentwoudlaan)",
+        "Behoud van het dorpse karakter versus verstedelijking",
+        "Duurzaamheid en energietransitie (windmolens en zonnevelden)"
+      ]
+    },
+    "politieke_cultuur": {
+      "progressief_conservatief": "Overwegend conservatief met een sterke nadruk op traditionele waarden, gezin en gemeenschapszin. De invloed van de 'Bible Belt' is merkbaar in de politieke prioriteiten.",
+      "vertrouwen_overheid": "Gemiddeld tot hoog binnen de gevestigde kerkelijke kringen, maar groeiend wantrouwen in de nieuwbouwwijken en onder kiezers van protestpartijen.",
+      "anti_establishment": "Aanwezig maar minder luidruchtig dan in omliggende steden; uit zich vooral in stemmen op PVV en NSC, en lokaal in kritiek op grootschalige bouwprojecten."
+    },
+    "spanningsvelden": [
+      {
+        "onderwerp": "Asielopvang",
+        "type": "Sociaal-politiek",
+        "standpunten": "Discussie over de opvang van vluchtelingen in lokale hotels en de druk op sociale voorzieningen versus de christelijke plicht tot gastvrijheid."
+      },
+      {
+        "onderwerp": "Woningbouw en Infrastructuur",
+        "type": "Ruimtelijk",
+        "standpunten": "De snelle groei van Waddinxveen (Triangel) zorgt voor frictie tussen 'oude' en 'nieuwe' inwoners over de identiteit van het dorp en de verkeersdruk."
+      },
+      {
+        "onderwerp": "Energietransitie",
+        "type": "Ecologisch",
+        "standpunten": "Weerstand tegen de komst van windturbines nabij woonwijken, waarbij landschapsbehoud botst met landelijke klimaatdoelen."
+      }
+    ],
+    "relevantie_prediking": {
+      "gevoeligheden": [
+        "De spanning tussen de christelijke roeping tot barmhartigheid (asiel) en de zorgen over maatschappelijke stabiliteit.",
+        "De kloof tussen de traditionele kerkelijke achterban en de nieuwe, vaak seculiere inwoners in de uitbreidingswijken.",
+        "Gevoelens van onbehagen over de snelheid van maatschappelijke veranderingen."
+      ],
+      "aansluiting_mogelijkheden": [
+        "Het thema 'Licht in de duisternis' (Johannes 1) verbinden met de behoefte aan hoop in een gepolariseerd politiek klimaat.",
+        "De incarnatie als Gods antwoord op menselijke verdeeldheid: het Woord dat 'onder ons' (in de concrete Waddinxveense context) is komen wonen.",
+        "Oproep tot gemeenschapszin die politieke voorkeuren overstijgt, passend bij het karakter van de Hoeksteen als ontmoetingsplek."
+      ]
+    }
+  },
+  "08_exegese": {
+    "per_lezing": [
+      {
+        "referentie": "Jesaja 52:7-10",
+        "afbakening_vertaling": {
+          "perikoop_grenzen": "De perikoop vormt een afgeronde eenheid binnen de zogenaamde 'Troost van Sion' (Jesaja 40-55). Het begint met de komst van de vreugdebode (v7) en culmineert in de universele openbaring van Gods heil (v10). De afbakening is logisch omdat het de overgang markeert van de aankondiging van de verlossing naar de feitelijke terugkeer van de HEER naar zijn stad.",
+          "leesrooster_logisch": true,
+          "vertaalvergelijking": [
+            {
+              "vertaling": "NBV21",
+              "significante_verschillen": "Gebruikt 'vreugdebode' en 'redding'. De toon is vlot en toegankelijk, maar verliest soms de ritmische kracht van de Hebreeuwse poëzie."
+            },
+            {
+              "vertaling": "Naardense Bijbel",
+              "significante_verschillen": "Vertaalt 'Mebasser' zeer letterlijk met 'vreugdebode die vrede laat horen'. De nadruk ligt op het auditieve aspect van de boodschap. 'De Ene' wordt consequent gebruikt voor de tetragrammaton."
+            },
+            {
+              "vertaling": "HSV",
+              "significante_verschillen": "Houdt vast aan 'Uw God is Koning' (v7) en 'de HEERE heeft Zijn heilige arm ontbloot' (v10), wat de majesteitelijke en strijdbare taal van het origineel goed bewaart."
+            }
+          ],
+          "werkvertaling_cruciaal": "v7: 'Hoe begeerlijk zijn op de bergen de voeten van hem die goed nieuws brengt, die sjalom verkondigt, die het goede bericht, die redding laat horen, die tegen Sion zegt: Je God is Koning!'"
+        },
+        "tekstkritiek": {
+          "relevante_varianten": [
+            {
+              "vers": "52:7",
+              "variant": "Meervoud 'vreugdeboden' in sommige Septuaginta-handschriften.",
+              "handschriften": "LXX, vergeleken met Masoretische Tekst (MT).",
+              "betekenis_impact": "Het enkelvoud in de MT benadrukt de specifieke figuur van de heraut, wat in de christelijke traditie vaak messiaans is geduid."
+            }
+          ],
+          "conclusie": "De tekst van de MT is zeer stabiel. De varianten in de Qumran-rollen (1QIsa-a) bevestigen grotendeels de Masoretische traditie met slechts kleine orthografische verschillen."
+        },
+        "woordstudie": [
+          {
+            "woord_origineel": "מְבַשֵּׂר",
+            "transliteratie": "mebasser",
+            "vertaling": "vreugdebode / brenger van goed nieuws",
+            "semantische_range": "Iemand die officieel nieuws brengt, vaak na een militaire overwinning.",
+            "gebruik_elders": "In Jesaja 40:9 wordt Sion zelf opgeroepen een 'mebasseret' te zijn. Het is de wortel van het NT-begrip 'evangelie'.",
+            "meerduidigheid": null
+          },
+          {
+            "woord_origineel": "יְשׁוּעָה",
+            "transliteratie": "yeshuah",
+            "vertaling": "redding / heil",
+            "semantische_range": "Ruimte, bevrijding uit benauwdheid, overwinning.",
+            "gebruik_elders": "Centraal thema in Deutero-Jesaja; nauw verbonden met de naam Jezus (Yeshua).",
+            "meerduidigheid": "Kan zowel politiek-militaire bevrijding als spiritueel heil betekenen."
+          }
+        ],
+        "literaire_analyse": {
+          "genre": "profetische poëzie / overwinningslied",
+          "genre_conventies": "Gebruik van parallellisme, antropomorfismen (Gods arm) en een sterke emotionele geladenheid gericht op troost en herstel.",
+          "structuur": {
+            "opbouw": "De tekst beweegt van de periferie (de bergen rond de stad) naar het centrum (de wachters op de muren) en vandaar naar de hele wereld.",
+            "cesuren": [
+              "v7: De aankondiging op de bergen",
+              "v8: De reactie van de wachters",
+              "v9: De oproep aan de puinhopen",
+              "v10: De kosmische reikwijdte"
+            ],
+            "centrum": "v8b: 'Want zij zien oog in oog hoe de HEER naar Sion terugkeert.'",
+            "chiasme_inclusio": "Inclusio tussen v7 (redding doen horen) en v10 (de redding van onze God zien)."
+          },
+          "stijl_retoriek": {
+            "literaire_middelen": [
+              "Antropomorfisme: de 'ontblote arm' van God.",
+              "Personificatie: de 'puinhopen' die moeten jubelen.",
+              "Metonymie: 'voeten' voor de komst van de persoon."
+            ],
+            "retorische_strategie": "De tekst probeert een moedeloos volk in ballingschap te activeren door een visioen van nabije bevrijding te schilderen dat alle zintuigen aanspreekt (horen, zien, jubelen).",
+            "effect_lezer": "Een gevoel van urgentie en vreugdevolle verbazing."
+          },
+          "karakters_plot": {
+            "personages": [
+              "De Vreugdebode",
+              "De Wachters",
+              "De Puinhopen van Jeruzalem",
+              "De HEER (als terugkerende Koning)"
+            ],
+            "karakterisering": "De HEER wordt getekend als een zegevierende vorst die zijn volk niet is vergeten. De wachters zijn de eersten die de nieuwe werkelijkheid herkennen.",
+            "verhaallijn": "De terugkeer van de verbannen God naar zijn verlaten stad, wat leidt tot een transformatie van rouw naar gejuich.",
+            "verzwegen_gesuggereerd": "De moeizame weg van de ballingschap wordt verzwegen; de focus ligt puur op het moment van aankomst."
+          }
+        },
+        "directe_context": {
+          "voorafgaand": "Jesaja 52:1-6 roept Sion op om wakker te worden en haar feestkleren aan te trekken, omdat de onreinen de stad niet meer zullen binnengaan.",
+          "volgend": "Jesaja 52:11-12 geeft de instructie voor het vertrek uit Babel: 'Ga weg, ga weg, trek uit'.",
+          "functie_in_boek": "Het vormt de scharnier tussen de belofte van verlossing en de concrete oproep tot de uittocht uit de ballingschap.",
+          "themas_opgepakt": [
+            "De troost van God",
+            "De heiligheid van Jeruzalem",
+            "De openbaring van Gods macht voor de volken"
+          ]
+        },
+        "historische_context": {
+          "ontstaanscontext": {
+            "wanneer_waar": "Midden 6e eeuw v.Chr., aan het einde van de Babylonische ballingschap.",
+            "situatie_auteur": "Een anonieme profeet (Deutero-Jesaja) die de naderende overwinning van Cyrus de Grote duidt als het handelen van de HEER.",
+            "oorspronkelijke_hoorders": "Joodse ballingen in Babylonië die de hoop op herstel van Jeruzalem bijna hadden opgegeven."
+          },
+          "historische_achtergrond": {
+            "gebeurtenissen": "De opkomst van het Perzische Rijk en de naderende val van Babylon.",
+            "politiek_sociaal_economisch": "De ballingen leefden in een staat van religieuze en nationale crisis; de tempel was verwoest, de Davidische monarchie was gevallen.",
+            "archeologisch_epigrafisch": "De Cyrus-cilinder bevestigt de politiek van de Perzen om gedeporteerde volken te laten terugkeren naar hun eigen cultusplaatsen."
+          },
+          "culturele_context": {
+            "praktijken_gebruiken": "Het gebruik van wachters op de muren om naderend nieuws aan te kondigen was een standaard militaire praktijk.",
+            "verhouding_omringende_culturen": "De tekst zet de HEER af tegen de Babylonische goden (Mardoek) door te claimen dat de HEER de werkelijke Koning is die de geschiedenis stuurt."
+          }
+        },
+        "ot_achtergrond": {
+          "citaten": [],
+          "allusies": [
+            "Exodus-motief: De terugkeer naar Sion wordt getekend als een nieuwe uittocht.",
+            "Troonsbestijgingspsalmen (Ps 93, 96-99): De uitroep 'Je God is Koning!' resoneert met deze liturgische teksten."
+          ],
+          "themas_motieven": [
+            "De heilige arm van God",
+            "De berg Sion als centrum van de wereld"
+          ]
+        },
+        "joodse_context": {
+          "intertestamentair": "In de Dode Zeerollen (11QMelchizedek) wordt deze tekst betrokken op de eindtijdige verlossing door Melchizedek.",
+          "rabbijnse_bronnen": "De Midrasj ziet in de vreugdebode de Elia-figuur die de komst van de Messias aankondigt.",
+          "jezus_paulus_vs_tijdgenoten": "Paulus citeert v7 in Romeinen 10:15 om de noodzaak van de christelijke prediking te onderbouwen."
+        },
+        "theological_analysis": {
+          "centrale_boodschap": "God herstelt zijn heerschappij en keert terug naar zijn volk, wat een universele betekenis heeft voor alle volken.",
+          "godsbeeld": "Een actieve, strijdbare maar ook troostende God die de geschiedenis naar zijn doel leidt.",
+          "mensbeeld_wereld_heil": "De mens is de ontvanger van een heil dat hij zelf niet kan bewerkstelligen; de wereld is het schouwspel van Gods bevrijdende handelen.",
+          "bijbels_theologische_lijnen": [
+            "Koningschap van God",
+            "Verlossing uit ballingschap",
+            "Universele reikwijdte van het heil"
+          ],
+          "plaats_heilsgeschiedenis": "Het markeert het einde van het oordeel (de ballingschap) en het begin van een nieuwe tijd van genade.",
+          "spanning_andere_teksten": "De 'ontblote arm' contrasteert scherp met de 'gestalte zonder luister' van de lijdende knecht in het direct volgende hoofdstuk (Jesaja 53).",
+          "dogmatische_raakvlakken": [
+            "Eschatologie",
+            "Soteriologie (leer van het heil)"
+          ],
+          "theologische_controverses": "De spanning tussen het exclusieve heil voor Israël en de inclusieve visie voor 'alle einden der aarde'."
+        },
+        "zoekmodellen_snoek": {
+          "godsbeelden_ot": {
+            "werkwoordelijke_uitspraken": "God keert terug (v8), troost zijn volk (v9), koopt Jeruzalem vrij (v9) en ontbloot zijn heilige arm (v10). Deze werkwoorden tekenen God als een dynamische actor die fysiek en merkbaar ingrijpt in de geografische en politieke werkelijkheid.",
+            "metaforische_uitspraken": "De centrale metafoor is 'Koning' (v7). Dit impliceert soevereiniteit, rechtspraak en bescherming. God wordt niet als een abstracte macht gezien, maar als de rechtmatige heerser die zijn troon weer inneemt.",
+            "overstijgende_eigenschappen": "Zijn 'heilige arm' en de erkenning door 'alle einden der aarde' benadrukken zijn transcendentie en almacht. Hij is de God die boven de wereldmachten (zoals Babylon) staat.",
+            "toebuigende_eigenschappen": "Het 'troosten' van zijn volk en de 'vrede' die Hij laat verkondigen, tonen zijn barmhartigheid en trouw aan het verbond, ondanks de ontrouw van het volk die tot ballingschap leidde.",
+            "dominante_categorie": "De werkwoordelijke uitspraken domineren; God wordt gekend door wat Hij doet.",
+            "spanning": "Er is een spanning tussen de majesteitelijke Koning die zijn arm ontbloot (macht) en de God die zich bekommert om de 'puinhopen' (nabijheid bij het gebrokene).",
+            "relevantie_gemeente": "Voor de Hoeksteen-gemeente biedt dit een beeld van een God die niet afwezig is in de 'puinhopen' van het moderne leven of de wereldpolitiek, maar die actief werkt aan herstel."
+          },
+          "mensbeelden_ot": {
+            "horizontale_as": "De mens wordt hier getekend in een passieve maar ontvankelijke rol. De 'wachters' en de 'puinhopen' doen het goede door te jubelen en te getuigen van Gods komst. Er is geen sprake van kwaad doen in deze perikoop; de focus ligt op de transformatie van moedeloosheid naar lofprijzing.",
+            "verticale_as": "De mens is hier volledig gericht op God. De wachters kijken 'oog in oog' naar de terugkerende HEER. Hun vreugde is niet louter horizontaal (vrijheid), maar verticaal: de erkenning dat hun God Koning is.",
+            "personages_positie": "De personages bevinden zich op de grens van een oude en nieuwe tijd. Ze staan in de houding van verwachting en verwondering.",
+            "karakterontwikkeling": "De 'puinhopen' (als personificatie van de inwoners) veranderen van een staat van verlatenheid naar een staat van verlossing en troost."
+          },
+          "jezusbeelden_nt": null
+        }
+      },
+      {
+        "referentie": "Johannes 1:1-18",
+        "afbakening_vertaling": {
+          "perikoop_grenzen": "De Proloog van het Johannesevangelie is een literair en theologisch meesterwerk dat de inleiding vormt op het gehele evangelie. Het begint bij de eeuwigheid (v1) en eindigt bij de openbaring van de Vader door de Zoon (v18). De afbakening is universeel geaccepteerd als een hymnische eenheid.",
+          "leesrooster_logisch": true,
+          "vertaalvergelijking": [
+            {
+              "vertaling": "NBV21",
+              "significante_verschillen": "Vertaalt 'Logos' met 'Woord'. In v14 wordt 'eskenosen' vertaald met 'heeft in ons midden gewoond', wat de specifieke tent-metafoor enigszins afvlakt."
+            },
+            {
+              "vertaling": "Naardense Bijbel",
+              "significante_verschillen": "Vertaalt 'Logos' met 'het Spreken'. Dit benadrukt het actieve, communicatieve karakter van God. v14: 'heeft bij ons zijn tent opgeslagen', wat de link met de tabernakel (Sjekina) bewaart."
+            },
+            {
+              "vertaling": "Willibrord",
+              "significante_verschillen": "Vertaalt v18 met 'de enige Zoon, die God is', wat de sterke christologie van de oudste handschriften volgt."
+            }
+          ],
+          "werkvertaling_cruciaal": "v14: 'En het Woord is vlees geworden en heeft zijn tent onder ons opgeslagen, en wij hebben zijn heerlijkheid aanschouwd, een heerlijkheid als van de Eniggeborene van de Vader, vol van genade en waarheid.'"
+        },
+        "tekstkritiek": {
+          "relevante_varianten": [
+            {
+              "vers": "1:18",
+              "variant": "'monogenès theos' (eniggeboren God) versus 'monogenès huios' (eniggeboren Zoon).",
+              "handschriften": "P66, P75, Sinaiticus, Vaticanus ondersteunen 'God'.",
+              "betekenis_impact": "De variant 'God' versterkt de godheid van Christus aan het einde van de proloog, parallel aan v1."
+            },
+            {
+              "verse": "1:13",
+              "variant": "Enkelvoud 'die ... geboren is' (verwijzend naar Christus) in sommige Latijnse getuigen.",
+              "handschriften": "Vetus Latina, Tertullianus.",
+              "betekenis_impact": "Zou een directe verwijzing naar de maagdelijke geboorte zijn, maar de meervoudsvorm (verwijzend naar gelovigen) is tekstkritisch veel sterker."
+            }
+          ],
+          "conclusie": "De tekst is over het algemeen zeer goed overgeleverd. De keuze voor 'eniggeboren God' in v18 geniet de voorkeur in moderne wetenschappelijke edities (NA28)."
+        },
+        "woordstudie": [
+          {
+            "woord_origineel": "λόγος",
+            "transliteratie": "logos",
+            "vertaling": "Woord / Rede / Spreken",
+            "semantische_range": "In de Griekse filosofie het ordenend beginsel van de kosmos; in de Joodse traditie (Memra) de scheppende kracht van Gods spreken.",
+            "gebruik_elders": "Johannes gebruikt het hier uniek als aanduiding voor de pre-existente Christus.",
+            "meerduidigheid": "Combineert Griekse rationaliteit met Joodse openbaring."
+          },
+          {
+            "woord_origineel": "σάρξ",
+            "transliteratie": "sarx",
+            "vertaling": "vlees",
+            "semantische_range": "De mens in zijn kwetsbaarheid, sterfelijkheid en aardsheid.",
+            "gebruik_elders": "Vaak tegenover 'pneuma' (geest) gezet, maar hier positief geduid als het voertuig van de incarnatie.",
+            "meerduidigheid": "Benadrukt de radicale menswording, niet slechts een schijngedaante."
+          },
+          {
+            "woord_origineel": "ἐσκήνωσεν",
+            "transliteratie": "eskēnōsen",
+            "vertaling": "zijn tent opslaan / wonen",
+            "semantische_range": "Verwijst naar de 'skènè' (tent/tabernakel).",
+            "gebruik_elders": "In de Septuaginta gebruikt voor Gods wonen te midden van Israël.",
+            "meerduidigheid": "Suggereert zowel nabijheid als een tijdelijk, pelgrimerend verblijf."
+          }
+        ],
+        "literaire_analyse": {
+          "genre": "hymne / proloog",
+          "genre_conventies": "Hoogdravende taal, ritmische structuur, gebruik van kernbegrippen die in de rest van het boek worden uitgewerkt.",
+          "structuur": {
+            "opbouw": "De proloog is opgebouwd als een trap: van de eeuwigheid naar de schepping, naar de getuigenis van Johannes, naar de incarnatie, naar de gemeenschap van gelovigen.",
+            "cesuren": [
+              "v1-5: Het Woord in de eeuwigheid en schepping",
+              "v6-8: De getuigenis van Johannes de Doper",
+              "v9-13: De komst in de wereld en de reactie",
+              "v14-18: De incarnatie en de volheid van genade"
+            ],
+            "centrum": "v12-13: Het kind van God worden door geloof (vaak gezien als het theologische hart van de chiasme).",
+            "chiasme_inclusio": "Inclusio tussen v1 (het Woord was God) en v18 (de eniggeboren God)."
+          },
+          "stijl_retoriek": {
+            "literaire_middelen": [
+              "Antithese: Licht versus duisternis.",
+              "Trapparallellisme: 'In het Woord was leven, en het leven was het licht...'",
+              "Getuigenis-motief: De juridische taal van het getuigen."
+            ],
+            "retorische_strategie": "De auteur gebruikt kosmische taal om de absolute autoriteit van Jezus Christus te vestigen voordat hij aan het narratief begint.",
+            "effect_lezer": "Ontzag en verwondering over de diepte van het mysterie van de menswording."
+          },
+          "karakters_plot": {
+            "personages": [
+              "Het Woord (Logos)",
+              "God (de Vader)",
+              "Johannes de Doper",
+              "De wereld / de zijnen",
+              "De kinderen van God"
+            ],
+            "karakterisering": "Het Woord is zowel onderscheiden van God als identiek aan God. De wereld wordt getekend in haar tragische onwetendheid.",
+            "verhaallijn": "De neerwaartse beweging van het goddelijke Woord naar de menselijke sfeer, resulterend in een nieuwe geboorte voor wie Hem aannemen.",
+            "verzwegen_gesuggereerd": "De historische details van de geboorte (stal, kribbe) worden volledig overgeslagen ten gunste van de theologische betekenis."
+          }
+        },
+        "directe_context": {
+          "voorafgaand": "Geen (begin van het boek).",
+          "volgend": "Johannes 1:19 begint het historische verslag met de ondervraging van Johannes de Doper door de Joodse leiders.",
+          "functie_in_boek": "Het dient als de hermeneutische sleutel: alles wat Jezus doet en zegt in het evangelie moet gelezen worden in het licht van zijn identiteit als het vleesgeworden Woord.",
+          "themas_opgepakt": [
+            "Licht en leven",
+            "Getuigenis",
+            "Geloof en aannemen",
+            "De relatie Vader-Zoon"
+          ]
+        },
+        "historische_context": {
+          "ontstaanscontext": {
+            "wanneer_waar": "Eind 1e eeuw n.Chr. (ca. 90-100), waarschijnlijk in Efeze.",
+            "situatie_auteur": "Een context waarin de scheiding tussen de synagoge en de volgelingen van Jezus definitief was geworden.",
+            "oorspronkelijke_hoorders": "Een gemeenschap van gelovigen die te maken had met vervolging en interne discussies over de natuur van Christus (vroege gnostiek/docetisme)."
+          },
+          "historische_achtergrond": {
+            "gebeurtenissen": "De verwoesting van de tempel (70 n.Chr.) had de Joodse wereld fundamenteel veranderd; Johannes presenteert Jezus als de nieuwe 'plaats' van Gods aanwezigheid.",
+            "politiek_sociaal_economisch": "De Romeinse keizercultus bood een alternatief 'evangelie'; Johannes claimt de titels van de keizer (Heer, God) voor Jezus.",
+            "archeologisch_epigrafisch": "De Rylands-papyrus (P52) is het oudste fragment van dit evangelie, daterend uit de vroege 2e eeuw."
+          },
+          "culturele_context": {
+            "praktijken_gebruiken": "De proloog vertoont kenmerken van een vroegchristelijke hymne.",
+            "verhouding_omringende_culturen": "Het Logos-begrip slaat een brug naar de hellenistische wereld, terwijl de nadruk op 'vlees' (sarx) zich verzet tegen Griekse minachting voor de materie."
+          }
+        },
+        "ot_achtergrond": {
+          "citaten": [],
+          "allusies": [
+            "Genesis 1:1: 'In het begin' (En archè) verwijst direct naar de schepping.",
+            "Exodus 33-34: Het aanschouwen van de heerlijkheid (doxa) en de termen 'genade en waarheid' (chesed we-emet) verwijzen naar Gods zelfopenbaring aan Mozes.",
+            "Spreuken 8: De gepersonifieerde Wijsheid (Sophia) die bij de schepping aanwezig was."
+          ],
+          "themas_motieven": [
+            "De Tabernakel (Sjekina)",
+            "Licht als eerste scheppingsdaad",
+            "De Wet van Mozes versus de genade van Christus"
+          ]
+        },
+        "joodse_context": {
+          "intertestamentair": "De Wijsheidsliteratuur (Sirach, Wijsheid van Salomo) biedt parallellen voor de Wijsheid die een woonplaats zoekt op aarde.",
+          "rabbijnse_bronnen": "De Targums gebruiken de term 'Memra' (Woord) als een buffer om over Gods handelen op aarde te spreken zonder zijn transcendentie te schaden.",
+          "jezus_paulus_vs_tijdgenoten": "Johannes gaat verder dan Philo van Alexandrië door te stellen dat de Logos niet alleen een abstracte bemiddelaar is, maar een concreet mens is geworden."
+        },
+        "theologische_analyse": {
+          "centrale_boodschap": "In Jezus Christus is de eeuwige God definitief en tastbaar aanwezig gekomen in de menselijke geschiedenis om leven en licht te schenken.",
+          "godsbeeld": "God als de onzienlijke Vader die zich volledig communiceert via zijn Zoon. Geen verre God, maar een God die 'tent' opslaat.",
+          "mensbeeld_wereld_heil": "De mens is van nature in duisternis, maar heeft de potentie om door geloof 'kind van God' te worden. Heil is participatie aan het goddelijke leven.",
+          "bijbels_theologische_lijnen": [
+            "Incarnatie (menswording)",
+            "Nieuwe Schepping",
+            "Vervulling van de Wet"
+          ],
+          "plaats_heilsgeschiedenis": "De climax van Gods spreken; na de profeten spreekt God nu door de Zoon (parallel aan Hebreeën 1).",
+          "spanning_andere_teksten": "De nadruk op de godheid van Jezus is sterker dan in de synoptische evangeliën (Matteüs, Marcus, Lucas).",
+          "dogmatische_raakvlakken": [
+            "Christologie (twee-naturenleer)",
+            "Triniteitsleer",
+            "Soteriologie (wedergeboorte)"
+          ],
+          "theologische_controverses": "De strijd tegen het docetisme (de leer dat Jezus alleen een schijnlichaam had) wordt hier beslecht met 'vlees geworden'."
+        },
+        "zoekmodellen_snoek": {
+          "godsbeelden_ot": null,
+          "mensbeelden_ot": null,
+          "jezusbeelden_nt": {
+            "van_achteren": "Jezus wordt geworteld in de traditie van Israël door de vergelijking met Mozes (v17) en de allusies op de Sjekina (v14). Hij is de vervulling van de Wet en de Profeten, de 'Eniggeborene' die de onzichtbare God van Israël uitlegt. Zijn identiteit is ondenkbaar zonder de oudtestamentische categorieën van Woord en Wijsheid.",
+            "van_boven": "Dit perspectief is dominant in de proloog. Jezus is de pre-existente Logos die 'bij God was' en 'God was' (v1). Hij is de scheppingsmiddelaar door wie alles is ontstaan. Zijn heerlijkheid (doxa) is niet van deze wereld, maar komt rechtstreeks van de Vader.",
+            "van_beneden": "De proloog bereikt zijn dieptepunt (of hoogtepunt) in v14: 'het Woord is vlees geworden'. Hier wordt Jezus getekend in zijn volledige menselijkheid, kwetsbaarheid en sterfelijkheid (sarx). Hij is niet slechts een geestelijke verschijning, maar iemand die 'onder ons gewoond' heeft, tastbaar en historisch.",
+            "van_voren": "Jezus brengt de 'volheid' van genade en waarheid (v16). Hij opent de toekomst waarin mensen 'kinderen van God' kunnen worden. Hij is het 'ware licht' dat de duisternis overwint, een eschatologische werkelijkheid die nu reeds de wereld binnenkomt.",
+            "dominant_perspectief": "De spanning tussen 'van boven' (Logos) en 'van beneden' (vlees) vormt de kern van de tekst.",
+            "spanning_godheid_mensheid": "De tekst dwingt de lezer om beide polen tegelijk vast te houden: de Logos die de wereld schiep, is dezelfde als de mens van vlees en bloed. Dit is het 'scandalon' van de incarnatie.",
+            "betekenis_hoorders_nu": "Voor de hoorders in Waddinxveen betekent dit dat God niet gezocht moet worden in abstracte filosofieën of verre hemelen, maar in de concrete, soms kwetsbare gestalte van Jezus en in de medemens."
+          }
+        }
+      }
+    ],
+    "samenhang_lezingen": {
+      "rode_draad": "De rode draad is de 'visibiliteit' van Gods heil: wat in Jesaja wordt aangekondigd als een gebeurtenis die alle einden der aarde zullen 'zien', wordt in Johannes werkelijkheid in het 'aanschouwen' van de heerlijkheid van het vleesgeworden Woord.",
+      "versterkingen": [
+        "Beide teksten gebruiken de metafoor van het 'zien' (Jes 52:8, 10; Joh 1:14, 18) om de overgang van belofte naar vervulling te markeren.",
+        "De 'vreugdebode' uit Jesaja vindt zijn nieuwtestamentische tegenhanger in Johannes de Doper die getuigt van het Licht.",
+        "Het koningschap van God (Jesaja) wordt geconcretiseerd in de koninklijke heerlijkheid van de Eniggeborene (Johannes)."
+      ],
+      "correcties": [
+        "Waar Jesaja spreekt over de 'ontblote arm' (macht), corrigeert of verdiept Johannes dit door te spreken over 'vlees' (kwetsbaarheid). De macht van God openbaart zich in de nederigheid van de incarnatie.",
+        "Johannes universaliseert de lokale terugkeer naar Sion (Jesaja) naar een kosmische komst van het Licht voor 'ieder mens'."
+      ]
+    },
+    "receptiegeschiedenis": [
+      {
+        "periode": "vroege kerk",
+        "interpretatie": "Athanasius van Alexandrië gebruikte Johannes 1 om de consubstantialiteit (gelijkvormigheid in wezen) van de Zoon met de Vader te verdedigen tegen het arianisme: 'God werd mens, opdat de mens goddelijk zou worden'.",
+        "relevantie": "Legde de basis voor de klassieke christologie van Nicea."
+      },
+      {
+        "periode": "reformatie",
+        "interpretatie": "Maarten Luther legde sterke nadruk op de 'vrolijke ruil' (fröhlicher Wechsel): Christus neemt ons vlees en onze zonde aan, en geeft ons zijn gerechtigheid en goddelijk kindschap.",
+        "relevantie": "Benadrukt het pastorale karakter van de incarnatie als troost voor het aangevochten geweten."
+      },
+      {
+        "periode": "modern",
+        "interpretatie": "Rudolf Bultmann interpreteerde de Logos als de 'Aanspraak' van God die de mens uit zijn zelfgenoegzaamheid roept en tot een beslissing dwingt.",
+        "relevantie": "Vertaalt de kosmische taal naar een existentiële uitdaging voor de moderne mens."
+      }
+    ]
+  },
+  "09_kunst_cultuur": {
+    "moderne_hedendaagse_kunst": [
+      {
+        "titel": "John 1:1 (The Four Holy Gospels)",
+        "kunstenaar": "Makoto Fujimura",
+        "jaar": 2011,
+        "type": "schilderij",
+        "beschrijving": "Een abstract werk met gelaagde pigmenten en bladgoud. Het toont een explosie van licht en kleur die vanuit een centraal punt naar buiten straalt, waarbij de textuur doet denken aan zowel kosmische nevels als microscopische structuren.",
+        "verbinding_tekst": "Dit werk visualiseert de 'Logos' (Johannes 1:1) niet als een statisch begrip, maar als een dynamische, scheppende kracht. Het goud reflecteert het 'Licht der mensen' dat de duisternis binnendringt zonder erdoor overweldigd te worden.",
+        "verrassend_element": "Fujimura gebruikt traditionele Japanse Nihonga-technieken om een christelijk-theologisch concept te verbeelden, wat de universaliteit van het 'Woord' benadrukt.",
+        "zoekterm": "Makoto Fujimura John 1:1 The Four Holy Gospels illumination"
+      },
+      {
+        "titel": "Homeless Jesus",
+        "kunstenaar": "Timothy Schmalz",
+        "jaar": 2013,
+        "type": "sculptuur",
+        "beschrijving": "Een bronzen beeld van een figuur die onder een deken op een parkbank ligt. Alleen de voeten zijn zichtbaar, en daarin zijn de wonden van de kruisiging te zien.",
+        "verbinding_tekst": "Het sluit direct aan bij Johannes 1:14: 'Het Woord is vlees geworden'. Het herinnert de hoorder eraan dat de incarnatie niet alleen over een baby gaat, maar over God die de meest kwetsbare menselijke conditie aanneemt.",
+        "verrassend_element": "Het confronteert de 'gezellige' kerstbeleving met de rauwe werkelijkheid van de incarnatie in de marge van de samenleving.",
+        "zoekterm": "Timothy Schmalz Homeless Jesus sculpture"
+      },
+      {
+        "titel": "Twilight Epiphany Skyspace",
+        "kunstenaar": "James Turrell",
+        "jaar": 2012,
+        "type": "installatie",
+        "beschrijving": "Een architecturale structuur met een opening in het dak waardoor de lucht direct zichtbaar is. Tijdens zonsopgang en zonsondergang wordt de ruimte verlicht met wisselende kleuren die de perceptie van de lucht veranderen.",
+        "verbinding_tekst": "Dit werk thematiseert 'het licht dat ieder mens verlicht' (Johannes 1:9). Het nodigt uit tot een meditatieve ervaring van licht en ruimte, passend bij de abstracte diepte van de Proloog.",
+        "verrassend_element": "Het is geen afbeelding van een bijbelverhaal, maar een enscenering van het fenomeen licht zelf, waardoor de hoorder de tekst zintuiglijk kan ervaren.",
+        "zoekterm": "James Turrell Twilight Epiphany Skyspace Rice University"
+      },
+      {
+        "titel": "The Orders of the Night",
+        "kunstenaar": "Anselm Kiefer",
+        "jaar": 1996,
+        "type": "schilderij",
+        "beschrijving": "Een monumentaal doek waarop de kunstenaar zelf op de grond ligt onder een overweldigende sterrenhemel van enorme zonnebloemen die zwart zijn geworden en hun zaden laten vallen.",
+        "verbinding_tekst": "Het verbeeldt de spanning tussen de menselijke nietigheid en de kosmische orde. Het sluit aan bij Hebreeën 1:2 over de Zoon door wie God de 'eeuwigheden' (het heelal) heeft gemaakt.",
+        "verrassend_element": "De zonnebloemen fungeren als zwarte sterren, wat een krachtig beeld geeft van de 'duisternis' waarin het licht schijnt (Johannes 1:5).",
+        "zoekterm": "Anselm Kiefer The Orders of the Night Seattle Art Museum"
+      },
+      {
+        "titel": "Altar",
+        "kunstenaar": "Kris Martin",
+        "jaar": 2014,
+        "type": "sculptuur",
+        "beschrijving": "Een metalen replica van het frame van het Gentse Altaar (Het Lam Gods), maar dan volledig leeg. De toeschouwer kijkt door het frame heen naar de omgeving (vaak de zee of een landschap).",
+        "verbinding_tekst": "Het nodigt uit om God te zoeken in de werkelijkheid om ons heen. Het 'Woord' is niet opgesloten in een schilderij, maar is 'vlees geworden' in de wereld die we door het frame zien.",
+        "verrassend_element": "Door de afwezigheid van de religieuze afbeelding wordt de focus verlegd naar de presentie van God in de schepping zelf.",
+        "zoekterm": "Kris Martin Altar sculpture Ostend"
+      }
+    ],
+    "klassieke_christelijke_kunst": [
+      {
+        "titel": "De Geboorte bij nacht",
+        "kunstenaar": "Geertgen tot Sint Jans",
+        "jaar": "ca. 1490",
+        "type": "schilderij",
+        "locatie": "National Gallery, Londen",
+        "beschrijving": "Een intiem kersttafereel waarbij de enige lichtbron het kindje Jezus in de kribbe is. Het licht schijnt op de gezichten van Maria en de engelen.",
+        "verbinding_tekst": "Een perfecte visualisatie van Johannes 1:5: 'Het licht schijnt in de duisternis'. De duisternis van de stal wordt letterlijk verdreven door de fysieke aanwezigheid van het kind.",
+        "zoekterm": "Geertgen tot Sint Jans Nativity at Night National Gallery"
+      },
+      {
+        "titel": "Christus Pantocrator",
+        "kunstenaar": "Onbekend",
+        "jaar": "6e eeuw",
+        "type": "icoon",
+        "locatie": "Sinaï, Sint-Catharinaklooster",
+        "beschrijving": "De oudst bekende icoon van Christus. De twee helften van het gezicht verschillen subtiel van elkaar: de ene kant oogt streng (rechter), de andere zachtmoedig (menselijk).",
+        "verbinding_tekst": "Verbeeldt de theologische kern van de Proloog en Hebreeën 1:3: de Zoon als de 'afstraling van Gods glorie' en tegelijkertijd volledig mens geworden.",
+        "zoekterm": "Christ Pantocrator icon Saint Catherine's Monastery Sinai"
+      },
+      {
+        "titel": "De aanbidding van de herders (Portinari-altaar)",
+        "kunstenaar": "Hugo van der Goes",
+        "jaar": "1475",
+        "type": "schilderij",
+        "locatie": "Uffizi, Florence",
+        "beschrijving": "Een zeer realistisch drieluik. Opvallend zijn de ruwe, werkende handen van de herders en de bloemen op de voorgrond die symbolisch verwijzen naar het lijden.",
+        "verbinding_tekst": "Benadrukt de 'vleeswording' in een concrete, soms harde boerenwerkelijkheid, wat resoneert met de nuchtere mentaliteit in Waddinxveen.",
+        "zoekterm": "Hugo van der Goes Portinari Altarpiece Uffizi"
+      }
+    ],
+    "film_documentaire": [
+      {
+        "titel": "Arrival",
+        "regisseur": "Denis Villeneuve",
+        "jaar": 2016,
+        "type": "speelfilm",
+        "relevante_scene": {
+          "beschrijving": "De taalkundige Louise Banks probeert te communiceren met buitenaardse wezens. Ze ontdekt dat hun taal hun perceptie van tijd en werkelijkheid fundamenteel verandert.",
+          "tijdcode": "01:15:00",
+          "wat_opent_het": "Het opent het concept van de 'Logos' als een taal of woord dat de werkelijkheid niet alleen beschrijft, maar herschept. Het Woord van God brengt een nieuwe tijdsorde (Hebreeën 1:2)."
+        },
+        "zoekterm": "Arrival 2016 film IMDB"
+      },
+      {
+        "titel": "The Tree of Life",
+        "regisseur": "Terrence Malick",
+        "jaar": 2011,
+        "type": "arthouse",
+        "relevante_scene": {
+          "beschrijving": "De 'Creation Sequence': een visueel overweldigende weergave van het ontstaan van het universum, van de oerknal tot de eerste levensvormen, begeleid door sacrale muziek.",
+          "tijdcode": "00:20:00",
+          "wat_opent_het": "Verbeeldt Johannes 1:3: 'Alle dingen zijn daardoor geworden'. Het plaatst de menswording in een kosmisch perspectief."
+        },
+        "zoekterm": "The Tree of Life 2011 film creation scene"
+      },
+      {
+        "titel": "Into Great Silence (Die große Stille)",
+        "regisseur": "Philip Gröning",
+        "jaar": 2005,
+        "type": "documentaire",
+        "relevante_scene": {
+          "beschrijving": "Lange shots van monniken in het Grande Chartreuse klooster die in absolute stilte hun dagelijkse werkzaamheden verrichten.",
+          "tijdcode": null,
+          "wat_opent_het": "Het contrast tussen de stilte en het 'Spreken' van God. Het laat zien hoe het Woord 'bij ons woont' in de eenvoud van het dagelijks leven."
+        },
+        "zoekterm": "Into Great Silence 2005 documentary IMDB"
+      }
+    ],
+    "muziek": {
+      "hedendaags": [
+        {
+          "titel": "Justice Delivers Its Death",
+          "artiest": "Sufjan Stevens",
+          "jaar": 2012,
+          "genre": "Indie Folk",
+          "verbinding": "Een reflectie op de vergankelijkheid en de komst van Christus in een wereld die wacht op herstel. Sluit aan bij de 'vreugdebode' van Jesaja.",
+          "zoekterm": "Sufjan Stevens Justice Delivers Its Death Silver & Gold"
+        },
+        {
+          "titel": "O Adonai (Magnificat Antiphons)",
+          "artiest": "Arvo Pärt",
+          "jaar": 1988,
+          "genre": "Minimalisme / Tintinnabuli",
+          "verbinding": "De ijle, heldere klanken verbeelden het 'Licht' en de roep om de komst van de Heer uit de Hebreeën-tekst.",
+          "zoekterm": "Arvo Pärt Sieben Magnificat-Antiphonen O Adonai"
+        }
+      ],
+      "klassiek": [
+        {
+          "titel": "Vingt Regards sur l'enfant-Jésus",
+          "componist": "Olivier Messiaen",
+          "type": "instrumentaal",
+          "specifiek_deel": "I. Regard du Père",
+          "verbinding": "Een meditatief pianostuk dat de blik van de Vader op de Zoon verklankt; de eeuwigheid die de tijd binnenkomt.",
+          "zoekterm": "Messiaen Vingt Regards sur l'enfant-Jésus Regard du Père"
+        },
+        {
+          "titel": "Weihnachtsoratorium (BWV 248)",
+          "componist": "Johann Sebastian Bach",
+          "type": "cantate",
+          "specifiek_deel": "Koor: Fallt mit Danken, fallt mit Loben",
+          "verbinding": "Feestelijke lofzang die aansluit bij de jubel van Psalm 98 en Jesaja 52.",
+          "zoekterm": "Bach Weihnachtsoratorium Part IV Fallt mit Danken"
+        }
+      ],
+      "liturgisch": [
+        {
+          "titel": "The Word became flesh",
+          "bron": "Iona",
+          "gebruik": "Als gezongen responsie na de evangelielezing."
+        },
+        {
+          "titel": "Lumière de Dieu (Light of God)",
+          "bron": "Taizé",
+          "gebruik": "Tijdens het meditatieve moment na de preek."
+        }
+      ]
+    },
+    "literatuur": {
+      "modern": [
+        {
+          "titel": "Gilead",
+          "auteur": "Marilynne Robinson",
+          "jaar": 2004,
+          "type": "roman",
+          "thematische_resonantie": "De diepe verwondering over het alledaagse leven als een heilige werkelijkheid. De incarnatie wordt hier zichtbaar in de tederheid tussen vader en zoon.",
+          "zoekterm": "Marilynne Robinson Gilead novel"
+        }
+      ],
+      "klassiek": [
+        {
+          "titel": "De Gebroeders Karamazov",
+          "auteur": "Fjodor Dostojevski",
+          "thematische_resonantie": "Vooral het hoofdstuk over de 'Grootinquisiteur' confronteert de hoorder met de vraag of we het echte Licht (Christus) wel verdragen in onze geordende wereld."
+        }
+      ],
+      "nederlands": [
+        {
+          "titel": "Het lied van ooievaar en dromedaris",
+          "auteur": "Anjet Daanje",
+          "jaar": 2022,
+          "thematische_resonantie": "Verkent de grenzen tussen leven en dood, en het mysterie van menselijke aanwezigheid, wat resoneert met de 'Logos' die leven geeft."
+        }
+      ]
+    },
+    "aansluiting_gemeente": {
+      "geschiktheid_traditie": "De Hoeksteen waardeert degelijke theologische duiding. De keuze voor Makoto Fujimura en Geertgen tot Sint Jans combineert klassieke eerbied met moderne diepgang.",
+      "sociaal_culturele_fit": "De beelden van Timothy Schmalz (dakloze) en de logistieke metafoor van de Hefbrug (verbinding) sluiten aan bij de maatschappelijke betrokkenheid en de lokale identiteit van Waddinxveen.",
+      "praktische_overwegingen": [
+        "Gebruik voor de jonge gezinnen uit de Triangel visueel sterke beelden zoals James Turrell.",
+        "Zorg voor een rustige opbouw in de projectie om de plechtigheid van de dagmis te bewaren."
+      ]
+    },
+    "praktische_handvatten": {
+      "voor_projectie": [
+        {
+          "kunstwerk": "Makoto Fujimura - John 1:1",
+          "liturgisch_moment": "Tijdens de lezing van Johannes 1",
+          "duur": "Gedurende de gehele lezing",
+          "zoekterm_hoge_resolutie": "Makoto Fujimura Four Holy Gospels high resolution"
+        },
+        {
+          "kunstwerk": "Geertgen tot Sint Jans - Geboorte bij nacht",
+          "liturgisch_moment": "Bij aanvang van de verkondiging",
+          "duur": "3-5 minuten",
+          "zoekterm_hoge_resolutie": "Geertgen tot Sint Jans Nativity National Gallery high res"
+        }
+      ],
+      "voor_meditatie": {
+        "aanbevolen_werk": "James Turrell - Skyspace (afbeelding van de lichtinval)",
+        "duur_tonen": "2 minuten stilte",
+        "muziek_erbij": "Arvo Pärt - O Adonai"
+      },
+      "rechten": {
+        "publiek_domein": [
+          "Geertgen tot Sint Jans",
+          "Hugo van der Goes",
+          "Sinaï Icoon"
+        ],
+        "creative_commons": [
+          "James Turrell (afhankelijk van fotograaf)",
+          "Timothy Schmalz (vaak toegestaan voor kerkelijk gebruik met bronvermelding)"
+        ],
+        "let_op": [
+          "Makoto Fujimura (auteursrechtelijk beschermd, toestemming of 'fair use' checken)",
+          "Filmfragmenten (kort fragment onder citaatrecht)"
+        ]
+      }
+    }
+  },
+  "10_focus_en_functie": {
+    "opties": [
+      {
+        "nummer": 1,
+        "korte_titel": "Pastorale insteek: God slaat zijn tent op in de polder",
+        "type_insteek": "pastoraal",
+        "focus": {
+          "inleiding": "Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in Waddinxveen, Hoeksteen), in hun context, in deze dienst zeggen dat:",
+          "inhoud": "het eeuwige Woord niet als een abstract idee boven de wereld zweeft, maar in Jezus Christus 'vlees en bloed' is geworden om midden in onze concrete Waddinxveense werkelijkheid — tussen de nieuwbouw van de Triangel en de drukte van de logistieke sector — zijn tent op te slaan, juist daar waar wij ons kwetsbaar, moe of onvolmaakt voelen."
+        },
+        "anticipatie": {
+          "inleiding": "De hoorders zullen zich hiertoe verhouden als:",
+          "weerstand": "Een gevoel van 'kerstmoeheid' of scepsis: kan het geloof werkelijk landen in de hectiek van een forenzenbestaan en de druk om een perfect plaatje op te houden?",
+          "herkenning": "De behoefte aan 'echtheid' en nabijheid in een wereld die vaak aanvoelt als een verzameling digitale filters en zakelijke transacties.",
+          "vragen": [
+            "Hoe ziet die 'tent van God' eruit in mijn straat?",
+            "Mag mijn eigen kwetsbaarheid er werkelijk zijn als God zelf zo kwetsbaar werd?"
+          ]
+        },
+        "functie": {
+          "inleiding": "...waarmee ik rekening houd om te komen tot het doel dat de hoorders:",
+          "beoogd_effect": "zich door God gezien en gekend weten in hun dagelijks bestaan, waardoor de druk van het 'moeten' wegvalt en er ruimte ontstaat voor de rust en genade die de incarnatie biedt."
+        },
+        "toelichting": "Deze optie sluit aan bij de behoefte aan onthaasting en authenticiteit in een groeiende forenzengemeente. Het beeld van de 'tent' (Johannes 1:14) wordt gecontextualiseerd naar de lokale woonwijken."
+      },
+      {
+        "nummer": 2,
+        "korte_titel": "Profetische insteek: Licht dat de duisternis niet loslaat",
+        "type_insteek": "profetisch",
+        "focus": {
+          "inleiding": "Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in Waddinxveen, Hoeksteen), in hun context, in deze dienst zeggen dat:",
+          "inhoud": "het Licht van Christus geen gezellig sfeerlicht is, maar een weerbarstige en overwinnende kracht die de confrontatie aangaat met de duisternis van oorlog (Gaza, Oekraïne) en lokale polarisatie, en ons oproept om als 'kinderen van God' niet weg te kijken, maar zelf getuigen van dit Licht te zijn in een verdeelde samenleving."
+        },
+        "anticipatie": {
+          "inleiding": "De hoorders zullen zich hiertoe verhouden als:",
+          "weerstand": "Machteloosheid of irritatie: 'moet het wereldnieuws nu ook al de kerstvreugde verstoren?' of angst dat de preek te politiek wordt.",
+          "herkenning": "De pijnlijke frictie tussen de 'vrede op aarde' van de kerstliederen en de rauwe beelden van het journaal.",
+          "vragen": [
+            "Heeft het Licht werkelijk nog macht in een wereld vol geweld?",
+            "Wat kan ik als individu in Waddinxveen betekenen voor de vrede?"
+          ]
+        },
+        "functie": {
+          "inleiding": "...waarmee ik rekening houd om te komen tot het doel dat de hoorders:",
+          "beoogd_effect": "geactiveerd worden om hun christelijke identiteit vorm te geven in daden van barmhartigheid en verbindend spreken, gesterkt door de belofte dat de duisternis het Licht nooit definitief in haar macht krijgt."
+        },
+        "toelichting": "Deze insteek verbindt de proloog van Johannes direct met de actualiteit van december 2025. Het daagt de 'traditionele burgerij' uit om de ethische consequenties van de incarnatie te doordenken."
+      },
+      {
+        "nummer": 3,
+        "korte_titel": "Leerstellig-mystieke insteek: De taal van de eeuwigheid in menselijke woorden",
+        "type_insteek": "leerstellig",
+        "focus": {
+          "inleiding": "Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in Waddinxveen, Hoeksteen), in hun context, in deze dienst zeggen dat:",
+          "inhoud": "God in de komst van zijn Zoon definitief zijn zwijgen heeft doorbroken en Zichzelf aan ons heeft 'uitgelegd' (Johannes 1:18), waardoor wij niet langer hoeven te tasten in het duister naar de zin van het bestaan, maar in Jezus de 'afstraling van Gods glorie' zien die ons een nieuw fundament geeft voor onze identiteit."
+        },
+        "anticipatie": {
+          "inleiding": "De hoorders zullen zich hiertoe verhouden als:",
+          "weerstand": "Intellectuele afstand: de taal van de proloog (Logos, pre-existentie) kan abstract of 'ver-van-mijn-bed' overkomen voor de praktische Waddinxvener.",
+          "herkenning": "De diepe menselijke zoektocht naar zingeving en een vaststaand anker in een tijd van snelle maatschappelijke veranderingen.",
+          "vragen": [
+            "Wie is God nu werkelijk als ik naar Jezus kijk?",
+            "Hoe spreekt God vandaag nog tot ons als de Bijbelteksten zo oud zijn?"
+          ]
+        },
+        "functie": {
+          "inleiding": "...waarmee ik rekening houd om te komen tot het doel dat de hoorders:",
+          "beoogd_effect": "opnieuw verwonderd raken over het mysterie van het geloof en toegerust worden met een helder christologisch kader dat hen helpt om hun geloof in woorden te vatten voor de volgende generatie."
+        },
+        "toelichting": "Deze optie benut de theologische diepgang van de dagmis (Hebreeën 1 en Johannes 1). Het biedt tegenwicht aan de secularisatie door de unieke claim van het christelijk geloof centraal te stellen."
+      }
+    ]
+  },
+  "11_kalender": {
+    "week_van": "21-27 december 2025",
+    "dagen": [
+      {
+        "datum": "Zondag 21 december 2025",
+        "dag": "zondag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "Vierde zondag van de Advent",
+            "type": "zondag",
+            "toelichting": "De laatste zondag van voorbereiding op het Kerstfeest, vaak in het teken van Maria en de naderende vervulling van de belofte."
+          },
+          {
+            "naam": "Gedachtenis H. Petrus Canisius",
+            "type": "heilige",
+            "toelichting": "Nederlandse jezuïet en kerkleraar (†1597), bekend om zijn catechismus en inzet voor de contrareformatie."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "1 Tevet 5786",
+          "feestdag": "Chanoeka (dag 7) en Rosj Chodesj Tevet",
+          "parasja": "Vajigasj (lezing op zaterdag 27 dec)",
+          "toelichting": "Het joodse lichtfeest valt dit jaar samen met de laatste fase van de Advent. Rosj Chodesj markeert het begin van de nieuwe maand Tevet."
+        },
+        "internationaal": [],
+        "nationaal": [],
+        "vakantie": {
+          "schoolvakantie": "Kerstvakantie",
+          "regio": "Heel Nederland"
+        },
+        "weer": {
+          "verwachting": "Licht wisselvallig winterweer met perioden van regen en opklaringen.",
+          "temperatuur": "Overdag 6°C, 's nachts 2°C",
+          "neerslag": "60% kans op lichte regen",
+          "bijzonderheden": "Kans op lokale gladheid in de vroege ochtend door nachtvorst."
+        },
+        "astronomie": {
+          "zonsopgang": "08:46",
+          "zonsondergang": "16:31",
+          "maanfase": "Wassende maansikkel (1% zichtbaar)",
+          "bijzonderheden": "Winterwende (solstitium) om 16:03 CET: de astronomische winter begint en de dagen gaan weer lengen."
+        },
+        "overig": [
+          {
+            "categorie": "historisch",
+            "naam": "Winterwende",
+            "toelichting": "De kortste dag van het jaar; een moment dat vanouds verbonden is met de symboliek van het overwinnende licht."
+          }
+        ]
+      },
+      {
+        "datum": "Maandag 22 december 2025",
+        "dag": "maandag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "Gedachtenis H. Hunger van Utrecht",
+            "type": "heilige",
+            "toelichting": "Bisschop van Utrecht in de 9e eeuw, bekend om zijn vroomheid tijdens de invallen van de Noormannen."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "2 Tevet 5786",
+          "feestdag": "Chanoeka (dag 8)",
+          "parasja": null,
+          "toelichting": "Laatste dag van het lichtfeest; alle acht kaarsen van de chanoekia branden."
+        },
+        "internationaal": [],
+        "nationaal": [],
+        "vakantie": {
+          "schoolvakantie": "Kerstvakantie",
+          "regio": "Heel Nederland"
+        },
+        "weer": null,
+        "astronomie": null,
+        "overig": []
+      },
+      {
+        "datum": "Woensdag 24 december 2025",
+        "dag": "woensdag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "Kerstavond",
+            "type": "herdenking",
+            "toelichting": "Waken bij de geboorte van de Heer. In Waddinxveen vinden diverse kerstnachtdiensten plaats, waaronder in De Hoeksteen."
+          },
+          {
+            "naam": "Gedachtenis Adam en Eva",
+            "type": "herdenking",
+            "toelichting": "Traditionele herdenking van de stamouders van het menselijk geslacht op de vooravond van de komst van de 'Nieuwe Adam'."
+          }
+        ],
+        "joods": null,
+        "internationaal": [],
+        "nationaal": [],
+        "vakantie": {
+          "schoolvakantie": "Kerstvakantie",
+          "regio": "Heel Nederland"
+        },
+        "weer": null,
+        "astronomie": null,
+        "overig": [
+          {
+            "categorie": "lokaal",
+            "naam": "Kerstnachtdienst De Hoeksteen",
+            "toelichting": "Traditionele drukbezochte dienst met veel samenzang en aandacht voor het kerstevangelie."
+          }
+        ]
+      },
+      {
+        "datum": "Donderdag 25 december 2025",
+        "dag": "donderdag",
+        "is_preekzondag": true,
+        "kerkelijk": [
+          {
+            "naam": "Kerstmis (Geboorte van de Heer)",
+            "type": "zondag",
+            "toelichting": "Hoogfeest van de menswording van God. Focus op de proloog van Johannes: 'Het Woord is vlees geworden'."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "5 Tevet 5786",
+          "feestdag": null,
+          "parasja": null,
+          "toelichting": null
+        },
+        "internationaal": [],
+        "nationaal": [
+          {
+            "naam": "Eerste Kerstdag",
+            "land": "NL",
+            "type": "feestdag"
+          }
+        ],
+        "vakantie": {
+          "schoolvakantie": "Kerstvakantie",
+          "regio": "Heel Nederland"
+        },
+        "weer": null,
+        "astronomie": null,
+        "overig": []
+      },
+      {
+        "datum": "Vrijdag 26 december 2025",
+        "dag": "vrijdag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "Gedachtenis H. Stefanus",
+            "type": "martelaar",
+            "toelichting": "De eerste martelaar (protomartelaar) van de christelijke kerk. Zijn feestdag direct na Kerst herinnert aan de ernst en de prijs van het getuigenis."
+          }
+        ],
+        "joods": null,
+        "internationaal": [],
+        "nationaal": [
+          {
+            "naam": "Tweede Kerstdag",
+            "land": "NL",
+            "type": "feestdag"
+          }
+        ],
+        "vakantie": {
+          "schoolvakantie": "Kerstvakantie",
+          "regio": "Heel Nederland"
+        },
+        "weer": null,
+        "astronomie": null,
+        "overig": []
+      },
+      {
+        "datum": "Zaterdag 27 december 2025",
+        "dag": "zaterdag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "Gedachtenis H. Johannes de Evangelist",
+            "type": "heilige",
+            "toelichting": "Apostel en schrijver van het vierde evangelie. Zijn theologie van het Licht en het Woord staat centraal in de kersttijd."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "7 Tevet 5786",
+          "feestdag": "Sabbat",
+          "parasja": "Vajigasj (Genesis 44:18-47:27)",
+          "toelichting": "De parasja vertelt over de emotionele ontmoeting tussen Juda en Jozef in Egypte; een verhaal van verzoening en herkenning."
+        },
+        "internationaal": [],
+        "nationaal": [],
+        "vakantie": {
+          "schoolvakantie": "Kerstvakantie",
+          "regio": "Heel Nederland"
+        },
+        "weer": null,
+        "astronomie": null,
+        "overig": []
+      }
+    ],
+    "aandachtspunten_predikant": [
+      "De samenloop van de laatste dagen van Chanoeka (lichtfeest) en de voorbereiding op Kerst biedt een krachtig oecumenisch en interreligieus aanknopingspunt over 'Licht in de duisternis'.",
+      "De winterwende op 21 december markeert het dieptepunt van de duisternis en het begin van de terugkeer van het licht, wat de metafoor van Johannes 1:5 ('Het licht schijnt in de duisternis') astronomisch ondersteunt.",
+      "De overgang van de vreugde van de geboorte (25 dec) naar het martelaarschap van Stefanus (26 dec) kan gebruikt worden om de 'vleeswording' te duiden als een God die de rauwe werkelijkheid van menselijk lijden niet schuwt.",
+      "De parasja Vajigasj (27 dec) over de herkenning van Jozef door zijn broers resoneert met het thema van Johannes 1:10-11 over het (niet) herkennen van het Woord dat in de wereld komt.",
+      "Houd rekening met de Kerstvakantie: er zullen veel jonge gezinnen en mogelijk ook gasten/familieleden van buiten Waddinxveen in de dienst aanwezig zijn."
+    ]
+  },
+  "12_representatieve_hoorders": {
+    "personas": [
+      {
+        "nummer": 1,
+        "naam": {
+          "voornaam": "Lucas",
+          "achternaam": "van der Linden"
+        },
+        "leeftijd": 21,
+        "kernschets": "Een kritische maar zoekende student die worstelt met de druk van een 'perfect' digitaal leven en in het kerstevangelie zoekt naar iets dat écht en tastbaar is.",
+        "basisgegevens": {
+          "fysieke_verschijning": "1.85m, atletisch gebouwd, kort blond haar met een lichte opscheer, draagt vaak een oversized hoodie en een moderne bril. Hij heeft een rustige, bijna gereserveerde uitstraling.",
+          "woonwijk": "Woonachtig bij zijn ouders in de nieuwbouwwijk Park Triangel, Waddinxveen."
+        },
+        "relaties_sociaal": {
+          "woonsituatie": "thuiswonend",
+          "relatiestatus": "single",
+          "kinderen": "geen",
+          "familie_relatie": "Goede band met zijn ouders, hoewel hij zich soms onbegrepen voelt in zijn geloofstwijfels. Zijn jongere zusje kijkt tegen hem op, wat hij als een verantwoordelijkheid ervaart.",
+          "sociaal_netwerk": "Heeft een vaste vriendengroep uit zijn middelbare schooltijd op het Coenecoop College, maar voelt zich soms eenzaam in grote groepen. Hij is actief op Discord en heeft veel online contacten wereldwijd."
+        },
+        "opleiding_werk": {
+          "opleiding": "Derdejaars student Creative Business aan de Hogeschool Rotterdam.",
+          "intelligentie_leerstijl": "Theoretisch sterk, maar visueel ingesteld; hij leert het beste door concepten te visualiseren en te koppelen aan maatschappelijke trends.",
+          "huidige_werk": "Bijbaan als pakketsorteerder in een van de grote distributiecentra op Distripark A12 tijdens de vakanties.",
+          "voormalig_werk": null,
+          "financiele_situatie": "Studeert met een lening; hij is zich zeer bewust van de toekomstige woningmarkt in de Randstad en vraagt zich af of hij ooit een huis in Waddinxveen kan betalen."
+        },
+        "gezondheid": {
+          "lichamelijk": "Goede gezondheid, gaat drie keer per week naar de sportschool om zijn hoofd leeg te maken.",
+          "mentaal": "Ervaart regelmatig 'digital fatigue' en prestatiedruk. Hij heeft last van milde angstgevoelens over de toekomst (klimaat, AI-ontwikkelingen).",
+          "leefstijl": "Eet bewust vegetarisch, drinkt alleen in het weekend sociaal een biertje, rookt niet."
+        },
+        "traumas_zorgen": {
+          "verleden": [
+            "Het overlijden van een goede vriend door een verkeersongeval twee jaar geleden, wat zijn godsbeeld diep heeft geschokt."
+          ],
+          "heden": [
+            "De toenemende polarisatie in de samenleving die hij op sociale media dagelijks ziet.",
+            "De vraag of hij wel 'authentiek' genoeg is in een wereld van filters."
+          ],
+          "onverwerkt": "Het gevoel dat hij moet voldoen aan het succesvolle plaatje van de 'Triangel-jeugd' terwijl hij zich vanbinnen vaak onzeker voelt."
+        },
+        "geloof_spiritualiteit": {
+          "kerkelijke_achtergrond": "Gedoopt en opgevoed in de Hervormde Gemeente (Hoeksteen), heeft vorig jaar belijdenis gedaan, maar twijfelt nu of hij dat niet te vroeg heeft gedaan.",
+          "huidige_betrokkenheid": "Bezoekt de diensten meestal met zijn ouders, is betrokken bij de jeugd-Alpha als mentor.",
+          "geloofsbeleving": "Ervaart God vooral in de stilte en in diepe gesprekken, minder in de traditionele liturgie. Hij zoekt naar de 'rauwe' Jezus achter de kerstclichés.",
+          "geloofstaal": "Resoneert met woorden als 'authenticiteit', 'aanwezigheid' en 'mysterie'. Dogmatische termen als 'verzoening door voldoening' stoten hem af.",
+          "twijfels_vragen": [
+            "Hoe kan een God van liefde toelaten dat de wereld zo verdeeld is?",
+            "Is het geloof niet gewoon een psychologisch hulpmiddel?"
+          ],
+          "spirituele_behoeften": "Hij zoekt naar een geloof dat standhoudt in de complexiteit van de 21e eeuw; hij wil horen dat God ook in de 'glitch' van het leven aanwezig is."
+        },
+        "hobbys_interesses": {
+          "vrijetijd": [
+            "Fotografie (analoog)",
+            "Gamen",
+            "Wandelen in het Bentwoud"
+          ],
+          "media": [
+            "Podcasts (o.a. 'De Ongelooflijke Podcast')",
+            "YouTube-video's over filosofie",
+            "Instagram voor zijn fotografie"
+          ],
+          "verenigingen": [
+            "Lid van de lokale tafeltennisvereniging TTV TOV"
+          ]
+        },
+        "aansluiting_schriftlezingen": {
+          "wat_raakt": "De notie uit Johannes 1:14 dat het Woord 'vlees' is geworden. In een wereld van digitale avatars en AI-gegenereerde content raakt de gedachte aan een God die fysiek, kwetsbaar en 'echt' wordt hem diep.",
+          "wat_afstoot": "De plechtige, bijna triomfantelijke taal van Hebreeën 1 over de 'afstraling van Gods heerlijkheid' kan voor hem te abstract en ver weg voelen van zijn dagelijkse realiteit.",
+          "existentiele_vraag": "Is er in deze wereld van schone schijn nog iets dat écht waar is en blijft?"
+        }
+      },
+      {
+        "nummer": 2,
+        "naam": {
+          "voornaam": "Sanne",
+          "achternaam": "de Groot-Bakker"
+        },
+        "leeftijd": 38,
+        "kernschets": "Een hardwerkende logistiek manager en moeder van drie jonge kinderen, die tussen de kerstdrukte door snakt naar een moment van werkelijke rust en spirituele voeding.",
+        "basisgegevens": {
+          "fysieke_verschijning": "1.72m, slank, bruin haar in een praktische staart, draagt vaak zakelijke maar vlotte kleding. Ze heeft een energieke uitstraling, maar de wallen onder haar ogen verraden een chronisch slaapgebrek.",
+          "woonwijk": "Woonachtig in een ruime eengezinswoning in de wijk Triangel."
+        },
+        "relaties_sociaal": {
+          "woonsituatie": "samenwonend",
+          "relatiestatus": "getrouwd",
+          "kinderen": "drie kinderen (4, 7 en 9 jaar)",
+          "familie_relatie": "Haar ouders wonen in Gouda en helpen veel met de opvang, wat een zekere afhankelijkheid creëert die soms schuurt met haar behoefte aan autonomie.",
+          "sociaal_netwerk": "Groot netwerk via schoolpleinen, de hockeyclub van de kinderen en haar werk. Ze voelt zich echter vaak 'functioneel' sociaal: ze regelt veel, maar heeft weinig tijd voor diepgaande vriendschappen."
+        },
+        "opleiding_werk": {
+          "opleiding": "HBO Logistiek en Economie.",
+          "intelligentie_leerstijl": "Zeer praktisch en oplossingsgericht; ze denkt in processen en efficiëntie.",
+          "huidige_werk": "Teamleider bij een groot logistiek bedrijf in Waddinxveen (Nedcargo). Ze ervaart een hoge werkdruk, zeker in de decembermaand.",
+          "voormalig_werk": null,
+          "financiele_situatie": "Bovengemiddeld inkomen, maar ook hoge lasten door de hypotheek en kinderopvang. Ze maakt zich zorgen over de stijgende kosten van levensonderhoud."
+        },
+        "gezondheid": {
+          "lichamelijk": "Lichte rugklachten door veel zitten en tillen van kinderen. Ze probeert hard te lopen, maar komt er te weinig aan toe.",
+          "mentaal": "Zit tegen een burn-out aan; ze voelt zich constant 'aan' staan en heeft moeite met ontspannen.",
+          "leefstijl": "Drinkt te veel koffie overdag en een glas wijn 's avonds om af te schakelen. Slaapt onrustig."
+        },
+        "traumas_zorgen": {
+          "verleden": [
+            "Een miskraam tussen het tweede en derde kind, wat haar vertrouwen in haar lichaam en in Gods leiding heeft beschadigd."
+          ],
+          "heden": [
+            "De balans tussen werk en gezin.",
+            "De mentale gezondheid van haar oudste zoon die gepest wordt op school."
+          ],
+          "onverwerkt": "Het verdriet om haar overleden grootmoeder, die voor haar het morele en religieuze anker van de familie was."
+        },
+        "geloof_spiritualiteit": {
+          "kerkelijke_achtergrond": "Opgegroeid in een confessioneel nest, altijd kerkelijk gebleven uit traditie en voor de opvoeding van de kinderen.",
+          "huidige_betrokkenheid": "Trouwe kerkganger, helpt af en toe bij de kindernevendienst, maar ervaart de kerk vaak als 'weer een moetje' op de agenda.",
+          "geloofsbeleving": "God is voor haar een verre kracht die wel goede regels heeft gegeven, maar ze ervaart weinig persoonlijke nabijheid. Kerst is voor haar vooral 'sfeer' en 'familie'.",
+          "geloofstaal": "Houdt van praktische taal: 'omzien naar elkaar', 'verantwoordelijkheid', 'rust'.",
+          "twijfels_vragen": [
+            "Heeft bidden wel zin als ik het zo druk heb?",
+            "Hoe leg ik mijn kinderen uit wie Jezus is zonder dat het een sprookje wordt?"
+          ],
+          "spirituele_behoeften": "Ze zoekt naar een moment van 'stilgezet worden'. Ze heeft behoefte aan de boodschap dat ze niet alles zelf hoeft te dragen."
+        },
+        "hobbys_interesses": {
+          "vrijetijd": [
+            "Koken voor vrienden",
+            "Interieurstyling",
+            "Lezen (thrillers)"
+          ],
+          "media": [
+            "Linda.magazine",
+            "Netflix-series",
+            "Nu.nl voor het snelle nieuws"
+          ],
+          "verenigingen": [
+            "Vrijwilliger bij de lokale hockeyclub"
+          ]
+        },
+        "aansluiting_schriftlezingen": {
+          "wat_raakt": "De tekst over het 'wonen' (letterlijk: tent opslaan) van het Woord onder ons (Johannes 1:14). Het idee dat God zijn tent opslaat in de chaos van haar drukke leven in de Triangel geeft haar een gevoel van erkenning.",
+          "wat_afstoot": "De jubelende Psalm 98 kan haar tegenstaan als ze zich moe en leeg voelt; het contrast met haar eigen gemoedstoestand is dan te groot.",
+          "existentiele_vraag": "Waar vind ik een rustpunt dat niet afhankelijk is van mijn eigen prestaties?"
+        }
+      },
+      {
+        "nummer": 3,
+        "naam": {
+          "voornaam": "Gerrit-Jan",
+          "achternaam": "Schouten"
+        },
+        "leeftijd": 62,
+        "kernschets": "Een voormalig glastuinbouwer die de transformatie van Waddinxveen met gemengde gevoelens bekijkt en in de kerk de vastigheid zoekt die hij in het dorp ziet verdwijnen.",
+        "basisgegevens": {
+          "fysieke_verschijning": "1.78m, stevig postuur, verweerde handen door jarenlang fysiek werk, grijs haar dat hij strak naar achteren kamt. Hij draagt op zondag altijd een donkerblauw pak.",
+          "woonwijk": "Woont in een vrijstaande woning aan de rand van de oude dorpskern, vlakbij de voormalige kassencomplexen."
+        },
+        "relaties_sociaal": {
+          "woonsituatie": "samenwonend",
+          "relatiestatus": "getrouwd",
+          "kinderen": "twee volwassen dochters, vier kleinkinderen",
+          "familie_relatie": "Hechte band met zijn vrouw Jannie. Hij maakt zich zorgen om zijn dochters die minder trouw naar de kerk gaan dan hij zou willen.",
+          "sociaal_netwerk": "Heeft veel contacten in de 'oude' Waddinxveense kringen. Hij is een bekend gezicht bij de lokale winkeliers en de mannenvereniging van de kerk."
+        },
+        "opleiding_werk": {
+          "opleiding": "Lagere Landbouwschool, later diverse vakdiploma's in de glastuinbouw.",
+          "intelligentie_leerstijl": "Zeer praktisch en technisch onderlegd; hij begrijpt hoe dingen werken door ze te doen. Hij heeft een scherp oog voor de natuur en het weer.",
+          "huidige_werk": "Vroegtijdig gestopt met zijn eigen bedrijf na de verkoop van zijn land voor woningbouw; werkt nu nog twee dagen als adviseur in de sector.",
+          "voormalig_werk": "Eigenaar van een middelgroot glastuinbouwbedrijf.",
+          "financiele_situatie": "Goed; de verkoop van de grond heeft hem financieel onafhankelijk gemaakt, maar hij gaat er sober mee om."
+        },
+        "gezondheid": {
+          "lichamelijk": "Lijdt aan beginnende artrose in zijn knieën en handen, wat hem herinnert aan zijn eindigheid.",
+          "mentaal": "Soms wat melancholisch over de 'goede oude tijd'. Hij voelt zich soms een vreemde in zijn eigen dorp door de vele nieuwbouw.",
+          "leefstijl": "Houdt van een stevige Hollandse pot, wandelt elke dag een uur door de polder."
+        },
+        "traumas_zorgen": {
+          "verleden": [
+            "De zware crisis in de glastuinbouw in de jaren '90, waarbij hij bijna alles verloor."
+          ],
+          "heden": [
+            "De secularisatie van Nederland en de krimp van de kerk.",
+            "De gezondheid van zijn vrouw die kwetsbaar is."
+          ],
+          "onverwerkt": "Het gevoel dat hij zijn bedrijf 'verkocht' heeft aan de vooruitgang, wat soms voelt als verraad aan zijn voorouders."
+        },
+        "geloof_spiritualiteit": {
+          "kerkelijke_achtergrond": "Van huis uit Hervormd, altijd trouw gebleven aan de Hoeksteen. Hij heeft diverse ambten bekleed (ouderling, kerkvoogd).",
+          "huidige_betrokkenheid": "Zit elke zondag op zijn vaste plek, is betrokken bij het onderhoud van het kerkgebouw.",
+          "geloofsbeleving": "Geloof is voor hem gehoorzaamheid en trouw. Hij houdt van de Statenvertaling en de klassieke psalmen. God is de soevereine Schepper.",
+          "geloofstaal": "Spreekt de taal van 'verbond', 'genade' en 'voorzienigheid'.",
+          "twijfels_vragen": [
+            "Zal er over twintig jaar nog wel een kerk zijn in Waddinxveen?",
+            "Begrijpen de jongeren nog wel waar het echt om gaat?"
+          ],
+          "spirituele_behoeften": "Hij zoekt bevestiging van de eeuwige waarheid in een veranderende wereld. Hij wil horen dat Gods plan vaststaat."
+        },
+        "hobbys_interesses": {
+          "vrijetijd": [
+            "Tuinieren",
+            "Fietsen door het Groene Hart",
+            "Zingen in een christelijk mannenkoor"
+          ],
+          "media": [
+            "Reformatorisch Dagblad",
+            "EO-programma's",
+            "Lokale krant (Het Kontakt)"
+          ],
+          "verenigingen": [
+            "Lid van de Oranjevereniging Waddinxveen"
+          ]
+        },
+        "aansluiting_schriftlezingen": {
+          "wat_raakt": "De profetie van Jesaja 52 over de vreugdebode op de bergen. Dit roept bij hem beelden op van de weidsheid van de polder en de komst van Gods koninkrijk dat alle menselijke plannen overstijgt.",
+          "wat_afstoot": "Moderne vertalingen van de Proloog van Johannes vindt hij soms 'te plat'; hij mist de plechtige taal die voor hem bij de heiligheid van God hoort.",
+          "existentiele_vraag": "Blijft Gods trouw werkelijk bestaan, ook als alles wat ik ken verdwijnt?"
+        }
+      },
+      {
+        "nummer": 4,
+        "naam": {
+          "voornaam": "Elena",
+          "achternaam": "Petrova"
+        },
+        "leeftijd": 42,
+        "kernschets": "Een arbeidsmigrant uit Polen die in de logistieke sector van Waddinxveen werkt en in de kerstviering een moment van verbinding en waardigheid zoekt in een vaak anoniem bestaan.",
+        "basisgegevens": {
+          "fysieke_verschijning": "1.65m, tenger, donkerblond haar dat ze vaak in een vlecht draagt. Ze heeft een vermoeide maar vriendelijke blik. Ze draagt eenvoudige, degelijke kleding.",
+          "woonwijk": "Huurt een klein appartement in de buurt van het Gouweplein."
+        },
+        "relaties_sociaal": {
+          "woonsituatie": "zelfstandig",
+          "relatiestatus": "gescheiden",
+          "kinderen": "een dochter van 19 die in Polen studeert",
+          "familie_relatie": "Mist haar familie in Polen enorm, zeker rond de feestdagen. Ze belt dagelijks met haar moeder en dochter via WhatsApp.",
+          "sociaal_netwerk": "Heeft een paar Poolse vriendinnen met wie ze samenwerkt, maar voelt zich buiten die kring vaak een buitenstaander in Waddinxveen. Ze spreekt redelijk Nederlands, maar vindt diepe gesprekken lastig."
+        },
+        "opleiding_werk": {
+          "opleiding": "Middelbaar beroepsonderwijs in Polen (Administratie).",
+          "intelligentie_leerstijl": "Praktisch en zeer nauwkeurig; ze is gewend om hard te werken en instructies snel op te volgen.",
+          "huidige_werk": "Orderpicker in het distributiecentrum van Lidl. Het werk is fysiek zwaar en de uren zijn onregelmatig.",
+          "voormalig_werk": "Administratief medewerker in een klein Pools bedrijf.",
+          "financiele_situatie": "Stuurt een groot deel van haar inkomen naar haar dochter in Polen; ze leeft zelf heel sober en maakt zich zorgen over de inflatie."
+        },
+        "gezondheid": {
+          "lichamelijk": "Last van haar schouders en polsen door het repetitieve werk. Ze gebruikt regelmatig pijnstillers.",
+          "mentaal": "Kampt met gevoelens van eenzaamheid en heimwee. Ze voelt zich soms 'onzichtbaar' in de Nederlandse samenleving.",
+          "leefstijl": "Rookt af en toe uit stress, probeert gezond te eten maar heeft weinig tijd om uitgebreid te koken."
+        },
+        "traumas_zorgen": {
+          "verleden": [
+            "Een pijnlijke echtscheiding vijf jaar geleden die haar dwong om in het buitenland werk te zoeken."
+          ],
+          "heden": [
+            "De onzekerheid over haar tijdelijke arbeidscontract.",
+            "De oorlog in Oekraïne, die voor haar als Poolse heel dichtbij voelt."
+          ],
+          "onverwerkt": "Het schuldgevoel dat ze haar dochter 'alleen' heeft gelaten in Polen om geld te verdienen."
+        },
+        "geloof_spiritualiteit": {
+          "kerkelijke_achtergrond": "Rooms-katholiek opgevoed in Polen, maar vindt de drempel naar de lokale katholieke kerk soms hoog. Ze bezoekt de Hoeksteen af en toe omdat het dichtbij is en ze de rust in de dienst waardeert.",
+          "huidige_betrokkenheid": "Incidentele kerkganger, vooral bij bijzondere diensten zoals Kerst.",
+          "geloofsbeleving": "God is voor haar een toevluchtsoord, iemand die haar ziet als mens en niet alleen als werkkracht. Ze houdt van kaarsen, stilte en bekende melodieën.",
+          "geloofstaal": "Resoneert met beelden van 'licht', 'moederlijke zorg' en 'bescherming'.",
+          "twijfels_vragen": [
+            "Hoort God mijn gebeden ook als ik ze in het Pools uitspreek in een Nederlandse kerk?",
+            "Waarom is het leven voor sommigen zo zwaar en voor anderen zo makkelijk?"
+          ],
+          "spirituele_behoeften": "Ze zoekt naar een gevoel van waardigheid en 'thuis' zijn. Ze wil horen dat ze erbij hoort, ongeacht haar afkomst of status."
+        },
+        "hobbys_interesses": {
+          "vrijetijd": [
+            "Handwerken (breien)",
+            "Luisteren naar Poolse radio",
+            "Koken van traditionele Poolse gerechten"
+          ],
+          "media": [
+            "Poolse nieuwssites",
+            "Facebook-groepen voor migranten",
+            "WhatsApp voor contact met thuis"
+          ],
+          "verenigingen": [
+            "Geen"
+          ]
+        },
+        "aansluiting_schriftlezingen": {
+          "wat_raakt": "Johannes 1:11-12: 'Hij kwam naar wat van Hem was, maar zijn eigen mensen namen Hem niet aan. Maar wie Hem wel ontvingen...'. Dit raakt haar diep omdat ze zich vaak niet aangenomen voelt, maar in Christus een nieuwe identiteit als 'kind van God' vindt.",
+          "wat_afstoot": "De complexe theologische uiteenzetting in Hebreeën 1 over de engelen en de troon kan voor haar te abstract zijn en haar het gevoel geven dat ze de 'kennis' mist om erbij te horen.",
+          "existentiele_vraag": "Mag ik er ook zijn, en ziet God mij in mijn verborgen bestaan?"
+        }
+      },
+      {
+        "nummer": 5,
+        "naam": {
+          "voornaam": "Truus",
+          "achternaam": "van Vliet-Bakker"
+        },
+        "leeftijd": 79,
+        "kernschets": "Een weduwe die al haar hele leven in Waddinxveen woont en in de kerstboodschap de kracht vindt om haar fysieke achteruitgang en eenzaamheid te dragen.",
+        "basisgegevens": {
+          "fysieke_verschijning": "1.60m, broos postuur, loopt met een rollator, altijd verzorgd gekleed met een parelketting en haar haar in een keurige permanent. Ze heeft een heldere, vriendelijke oogopslag ondanks haar leeftijd.",
+          "woonwijk": "Woont in een seniorenwoning nabij woonzorgcentrum Souburgh."
+        },
+        "relaties_sociaal": {
+          "woonsituatie": "zelfstandig",
+          "relatiestatus": "weduwe",
+          "kinderen": "twee zonen, waarvan één in het buitenland woont en één in het noorden van het land",
+          "familie_relatie": "Ze mist haar man, die drie jaar geleden overleed, elke dag. Ze is trots op haar kleinkinderen, maar ziet ze minder vaak dan ze zou willen.",
+          "sociaal_netwerk": "Haar wereld wordt kleiner. Ze heeft nog een paar vriendinnen in de buurt en krijgt veel steun van de bezoekdames van de kerk en HipHelpt."
+        },
+        "opleiding_werk": {
+          "opleiding": "Mulo, later een cursus ziekenverzorging.",
+          "intelligentie_leerstijl": "Verbaal sterk, houdt van verhalen en geschiedenis. Ze heeft een grote parate kennis van de bijbel en kerkliederen.",
+          "huidige_werk": "Gepensioneerd.",
+          "voormalig_werk": "Huisvrouw en jarenlang vrijwilliger in de zorg en bij de kerk.",
+          "financiele_situatie": "Bescheiden AOW met een klein pensioen; ze is gewend om zuinig te leven en maakt zich geen grote financiële zorgen."
+        },
+        "gezondheid": {
+          "lichamelijk": "Lijdt aan hartfalen en ernstige artrose. Ze is snel vermoeid en afhankelijk van thuiszorg voor de zware klussen.",
+          "mentaal": "Geestelijk nog zeer scherp, maar ze merkt dat haar geheugen voor recente gebeurtenissen haar soms in de steek laat. Ze is soms bang voor de dag dat ze niet meer zelfstandig kan wonen.",
+          "leefstijl": "Leeft heel regelmatig, kijkt elke avond naar het journaal en leest dagelijks in haar bijbel."
+        },
+        "traumas_zorgen": {
+          "verleden": [
+            "Het verlies van haar man na een lang ziekbed, wat een groot gat in haar leven heeft geslagen."
+          ],
+          "heden": [
+            "De angst om te vallen en niet gevonden te worden.",
+            "De eenzaamheid tijdens de lange winteravonden."
+          ],
+          "onverwerkt": "Het verdriet om een broer die op jonge leeftijd is overleden, een wond die nooit helemaal is geheeld."
+        },
+        "geloof_spiritualiteit": {
+          "kerkelijke_achtergrond": "Levenslang lid van de Hervormde Gemeente Waddinxveen. Het geloof is de rode draad in haar leven.",
+          "huidige_betrokkenheid": "Kan niet meer elke zondag naar de kerk door haar gezondheid, maar luistert trouw via de kerkradio. Met Kerst probeert ze er met de taxi van de kerk bij te zijn.",
+          "geloofsbeleving": "God is haar 'Rots' en 'Herder'. Ze vindt veel troost in de psalmen en de oude gezangen. Ze ziet uit naar de ontmoeting met haar Schepper.",
+          "geloofstaal": "Houdt van de klassieke tale Kanaäns: 'Heiland', 'verlossing', 'eeuwig leven'.",
+          "twijfels_vragen": [
+            "Zal ik mijn man terugzien in de hemel?",
+            "Hoe lang moet ik nog wachten tot ik naar huis mag?"
+          ],
+          "spirituele_behoeften": "Ze zoekt naar troost en de verzekering dat God haar niet loslaat, ook niet in haar zwakheid. Ze wil de hoop op de eeuwigheid horen."
+        },
+        "hobbys_interesses": {
+          "vrijetijd": [
+            "Lezen van christelijke romans",
+            "Luisteren naar klassieke muziek",
+            "Puzzelen"
+          ],
+          "media": [
+            "Nederland 1 (NPO)",
+            "Visie (EO-blad)",
+            "Kerkblad"
+          ],
+          "verenigingen": [
+            "Lid van de PCOB (Protestants Christelijke Ouderen Bond)"
+          ]
+        },
+        "aansluiting_schriftlezingen": {
+          "wat_raakt": "Hebreeën 1:1-3: 'In deze laatste dagen heeft Hij tot ons gesproken door de Zoon...'. De gedachte dat God het laatste woord heeft en dat dit woord een persoon is die haar kent, geeft haar enorme rust in haar eigen 'laatste dagen'.",
+          "wat_afstoot": "De drukte en de vele visuele prikkels van een moderne kerstviering kunnen haar overweldigen; ze verlangt naar de eenvoud van het Woord.",
+          "existentiele_vraag": "Is mijn leven nog van waarde nu ik bijna niets meer kan doen?"
+        }
+      }
+    ]
+  },
+  "13_homiletische_analyse": {
+    "tekstkeuze": {
+      "gekozen_lezing": "Johannes 1:1-18",
+      "onderbouwing": "De Proloog van Johannes is bij uitstek geschikt voor een homiletische plot vanwege de enorme spanning tussen de kosmische 'Logos' en het kwetsbare 'vlees' (sarx). In de context van Waddinxveen, een dorp dat balanceert tussen traditie en snelle modernisering (Triangel), biedt deze tekst de noodzakelijke diepgang om voorbij de kerstclichés te gaan. De tekst bevat een ingebouwde crisis: het Licht komt, maar de wereld herkent het niet. Dit creëert een 'homiletische jeuk' die vraagt om een oplossing. De tekst dwingt ons om na te denken over Gods presentie in de rauwe, ongepolijste werkelijkheid van ons dagelijks leven, wat essentieel is voor een gemeente die gewend is aan een degelijke, maar soms abstracte geloofsleer.",
+      "omkerings_potentie": "De potentie voor omkering ligt in vers 14: 'Het Woord is vlees geworden'. De hoorder verwacht een God die orde schept van bovenaf, maar vindt een God die 'zijn tent opslaat' in de kwetsbaarheid. De omkering verschuift het perspectief van 'wij moeten opklimmen naar God' naar 'God is al onder ons neergedaald'."
+    },
+    "homiletical_plot": {
+      "he_kwestie_oops": {
+        "titel": "HÈ? (OOPS!) - De Kwestie",
+        "doel": "De 'homiletische jeuk' moet binnen 2-3 minuten de jeuk van de hoorder worden",
+        "inhoud": "Het is Eerste Kerstdag in De Hoeksteen. De kaarsen branden, de liederen uit het Liedboek klinken vertrouwd en de sfeer is 'af'. Maar achter de feestelijke gevel van onze Waddinxveense huizen knaagt een vreemde discrepantie. We vieren de komst van het Licht, terwijl we buiten de kerkdeuren een wereld zien die in mist en onzekerheid is gehuld. De Hefbrug staat symbool voor verbinding, maar voelen we die verbinding met het heilige ook werkelijk in de hectiek van de logistieke parken langs de A12 of in de gloednieuwe, maar soms nog wat anonieme straten van de Triangel?\n\nDe 'jeuk' van vanmorgen is deze: we hebben Kerstmis zo perfect georganiseerd dat het een sfeerbeheer-project is geworden. We zoeken naar het 'kerstgevoel', maar vinden vaak alleen de vermoeidheid van de voorbereidingen. Johannes begint zijn evangelie niet met een stal of een kind, maar met een kosmisch 'Spreken' dat alles heeft gemaakt. Dat klinkt prachtig, maar ook mijlenver weg. Het lijkt een abstracte waarheid die prachtig past bij een plechtige dagmis, maar wat heeft dit 'eeuwige Woord' te maken met de reële zorgen over de energierekening, de eenzaamheid van de weduwe in de Esdoornlaan, of de morele verwarring over het wereldnieuws dat ons via onze schermen overspoelt?\n\nHet probleem is dat we God in een prachtig, maar onbereikbaar 'begin' hebben geplaatst. We belijden dat Hij er is, maar we ervaren Hem als een verre architect die de blauwdruk heeft getekend, terwijl wij hier beneden in de modder van de polder proberen te overleven. Er gaapt een gat tussen de 'glorie' waarover we zingen en de 'vlees-en-bloed' realiteit waarin we wonen. We zijn 'dakloos' in onze eigen religiositeit: we hebben een prachtig kerkgebouw, maar voelen we ons ook thuis bij de God die Johannes beschrijft? De ambiguïteit zit hem hierin: we vieren dat God komt, maar we leven alsof we het uiteindelijk toch zelf moeten rooien.",
+        "ambiguiteit": "De spanning tussen de kosmische grootsheid van de 'Logos' en de alledaagse, vaak banale werkelijkheid van een forenzengemeente in 2025.",
+        "existentiele_onrust": "Het gevoel van 'spirituele dakloosheid': wel de rituelen hebben, maar niet de werkelijke presentie van God ervaren in de eigen kwetsbaarheid.",
+        "specifiek_voor_context": "De contrastwerking tussen de 'perfecte' nieuwbouwidentiteit van Waddinxveen en de innerlijke leegte of maatschappelijke onrust die onder de oppervlakte leeft."
+      },
+      "oei_verdieping_ugh": {
+        "titel": "OEI... (UGH!) - De Verdieping",
+        "doel": "De diagnose stellen - analyseren, niet slechts beschrijven",
+        "waarom_keten": [
+          {
+            "vraag": "Waarom voelen we ons ondanks alle kersttradities vaak onvervuld of spiritueel 'dakloos'?",
+            "antwoord": "Omdat we Kerst hebben gereduceerd tot een esthetisch sfeerproject in plaats van een existentiële ontmoeting."
+          },
+          {
+            "vraag": "Waarom willen we die sfeer zo krampachtig beheersen en polijsten?",
+            "antwoord": "Omdat we de rauwe werkelijkheid van ons eigen tekort, onze eenzaamheid en onze 'vleselijkheid' niet durven toe te laten bij God."
+          },
+          {
+            "vraag": "Waarom verdragen we dat tekort niet in de nabijheid van het heilige?",
+            "antwoord": "Omdat we diep vanbinnen geloven dat God alleen aanwezig kan zijn in wat 'af', 'verlicht' en 'heilig' is."
+          },
+          {
+            "vraag": "Waar komt die overtuiging vandaan?",
+            "antwoord": "Uit een onbewust godsbeeld waarin God een verre, volmaakte toeschouwer is die alleen van de 'geest' houdt en niet van het 'vlees'."
+          }
+        ],
+        "conclusie_keten": "Onze kerststress en spirituele leegte zijn symptomen van een diepe angst voor onze eigen kwetsbaarheid; we wijzen het Licht af (Joh. 1:11) niet uit ongeloof, maar uit zelfbescherming, omdat we denken dat God ons 'vlees' (onze rommelige realiteit) niet aankan.",
+        "inhoud": "Wanneer Johannes schrijft dat 'de zijnen Hem niet hebben aangenomen', dan kijken we vaak naar de geschiedenis, naar de mensen van toen. Maar de diagnose snijdt dieper. Het 'niet aannemen' gebeurt hier en nu, in Waddinxveen. We wijzen het Licht af omdat we bang zijn voor wat het Licht onthult. We houden God liever op veilige afstand, als een abstract principe of een morele code. Want als God werkelijk nabij komt, dan komt Hij ook nabij onze schaamte, ons falen en onze sterfelijkheid.\n\nKijk naar de druk op de jonge gezinnen in de Triangel: alles moet kloppen. De carrière, de opvoeding, de kersttafel. We hebben een cultuur gecreëerd waarin kwetsbaarheid een defect is. En onbewust hebben we die cultuur op God geprojecteerd. We denken: God kan pas bij mij wonen als ik mijn leven op orde heb, als de 'duisternis' in mij is opgeruimd. Maar de duisternis in ons is taai. Het is de angst voor de dood die we wegpoetsen met consumptie. Het is de jaloezie die we verbergen achter een glimlach bij het koffiedrinken na de dienst. Het is de machteloosheid over de oorlogen in de wereld die we buiten de deur proberen te houden.\n\nDe diagnose is pijnlijk: we zijn religieuze perfectionisten geworden die de 'vleeswording' eigenlijk een beetje eng vinden. We willen wel een God van Licht, maar liever geen God van vlees en bloed die naar zweet en stal ruikt. We hebben onszelf wijsgemaakt dat we 'geestelijk' moeten worden om God te ontmoeten, terwijl we ondertussen vastzitten in onze zeer onvolmaakte lichamen en levens. Dit gaat over u en mij: de angst dat we, als we onszelf werkelijk laten zien, niet 'ontvangen' zullen worden. We houden de deur op een kier, maar de grendel zit er nog op. We vieren de incarnatie, maar we praktiseren de distantie.",
+        "dit_gaat_over_mij": "De hoorder herkent de kramp van het 'moeten voldoen' en de angst dat hun werkelijke, rommelige leven geen plek heeft in de heilige sfeer van Kerst."
+      },
+      "aha_wending_aha": {
+        "titel": "AHA! (AHA!) - De Wending",
+        "doel": "De ontbrekende schakel onthullen die alles in een ander licht zet",
+        "type_omkering": "aanname_omkering",
+        "toelichting_type": "De preek kantelt de aanname dat wij 'geestelijk' moeten worden om God te bereiken; de tekst onthult dat God 'vlees' wordt om ons te bereiken.",
+        "inhoud": "Maar dan, midden in onze kramp, valt het beslissende woord van Johannes als een moker op onze religieuze bouwwerken: 'Het Woord is vlees geworden'. Let op wat er staat. Er staat niet: 'Het Woord is een goed idee geworden'. Er staat ook niet: 'Het Woord is een religieus systeem geworden'. Er staat: *vlees*. In het Grieks staat daar *sarx*. Dat is het meest ontnuchterende, aardse woord dat Johannes kon kiezen. Het betekent: kwetsbaar, sterfelijk, aanraakbaar, ja, zelfs 'bederfelijk' vlees.\n\nHier zit de radicale omkering. Wij dachten dat we de ladder op moesten naar de hemel, maar God heeft de ladder omvergegooid en is zelf in de modder van de polder komen staan. De aanname dat God alleen in het 'licht' en de 'volmaaktheid' woont, wordt hier volledig ondersteboven gekeerd. God wacht niet tot de duisternis weg is; Hij wordt zelf een mens in de duisternis. Hij wacht niet tot wij 'geestelijk' genoeg zijn; Hij wordt zelf 'vlees'.\n\nDit betekent dat de plek waar u dacht dat God *niet* kon zijn – uw vermoeidheid, uw falen, uw zieke lichaam, uw twijfel – juist de plek is die Hij heeft uitgekozen om te gaan wonen. Johannes gebruikt het woord 'skènè': Hij heeft zijn tent bij ons opgeslagen. Een tent is niet een statig paleis of een onwrikbaar instituut. Een tent is mobiel, kwetsbaar, midden tussen de andere tenten. God is niet de verre architect van het universum; Hij is de buurman die zijn tent heeft opgezet in de Esdoornlaan. Hij is niet de gast die we moeten imponeren met een schoon huis; Hij is degene die al in onze rommelige woonkamer zit en zegt: 'Ik ben hier, en het is goed'."
+      },
+      "ja_verkondiging_whee": {
+        "titel": "JA! (WHEE!) - De Verkondiging",
+        "doel": "De goede boodschap laten landen als ervaring (opluchting), niet slechts als informatie",
+        "inhoud": "Hoor je wat dat betekent? De druk is eraf! De genade van vanmorgen is dat God niet bang is voor jouw 'vlees'. Hij is niet geschokt door jouw duisternis. 'Het licht schijnt in de duisternis, en de duisternis heeft het niet in haar macht gekregen.' Dat is geen abstracte natuurwet, dat is een bevrijdende proclamatie voor jou persoonlijk. Het Licht is niet gekomen om je te veroordelen voor je tekortkomingen, maar om je te verlichten *in* je tekortkomingen.\n\nDit is de 'genade op genade' waar Johannes over spreekt. Het is de opluchting dat je niet langer hoeft te doen alsof. In Christus heeft God ja gezegd tegen ons mens-zijn, met alles erop en eraan. Hij heeft de kloof overbrugd die wij nooit konden overbruggen. De Hefbrug van Gods genade staat voorgoed open. Je hoeft niet langer spiritueel dakloos te zijn, want God heeft zichzelf 'thuis' gemaakt in onze werkelijkheid. \n\nVoor de forens die zich afvraagt of zijn werk er wel toe doet: God is vlees geworden, Hij kent de waarde van arbeid en materie. Voor de ouder die zich tekort voelt schieten: God werd een kind, Hij kent de kwetsbaarheid van het begin. Voor de zieke die zijn lichaam voelt haperen: God werd vlees, Hij weet wat het is om te lijden. De 'glorie' die we in Hem zien, is niet de glorie van een verre ster, maar de glorie van een liefde die zo diep gaat dat ze de dood niet schuwt. Je bent aangenomen. Niet omdat je het licht zelf hebt aangestoken, maar omdat het Licht jou heeft opgezocht. Je mag kind van God zijn (vers 12), niet door je eigen wil of prestatie, maar simpelweg door Hem te ontvangen zoals Hij is: nabij, kwetsbaar en vol van waarheid.",
+        "remedie_past_op_diagnose": "De remedie (God wordt vlees en accepteert ons in onze kwetsbaarheid) geneest precies de wond van de diagnose (onze angst dat we niet goed genoeg zijn voor een verre, volmaakte God).",
+        "niet_algemeen_maar_specifiek": "De genade is specifiek: God 'kampeert' (tent) in de concrete, onvolmaakte realiteit van de hoorder, waardoor de noodzaak tot religieus perfectionisme vervalt."
+      },
+      "zo_doorwerking_yeah": {
+        "titel": "ZÓ! (YEAH!) - De Doorwerking",
+        "doel": "Anticiperen op de nieuwe realiteit - niet 'wat moeten we doen' maar 'hoe ziet het leven er nu uit'",
+        "inhoud": "Hoe lopen we straks De Hoeksteen uit, terug de Esdoornlaan in? We gaan niet weg met een nieuwe takenlijst. We gaan weg met een nieuw gezichtsveld. De wereld is niet veranderd, maar wij kijken anders. Als we straks aan de kersttafel zitten, hoeft die tafel niet perfect te zijn om God erbij te hebben. Hij zit er al, in de gesprekken die soms stroef lopen, in de stilte van de lege stoel, in de lach van een kind.\n\nOmdat God zijn tent bij ons heeft opgeslagen, kunnen wij ook met meer mildheid naar onszelf en de ander kijken. We hoeven de duisternis in de wereld niet te ontkennen – de oorlogen, de armoede, de zorgen – maar we weten dat de duisternis het laatste woord niet heeft. We kunnen 'getuigen van het licht' zijn, net als Johannes de Doper. Niet door zelf het licht te zijn, maar door er simpelweg naar te wijzen. Door in Waddinxveen een beetje van die 'tent-mentaliteit' van God over te nemen: nabij zijn, niet oordelen, ruimte maken voor de ander.\n\nDe nieuwe realiteit is dat we niet langer hoeven te vluchten voor ons 'vlees'. We kunnen onze kwetsbaarheid omarmen als de plek waar God woont. Dat geeft een enorme vrijheid. We kunnen de buurman in de Triangel die het moeilijk heeft, opzoeken zonder dat we alle antwoorden paraat hebben. We kunnen de vrijwilliger bij de Voedselbank steunen, wetende dat we daarmee de 'vleesgeworden' Christus dienen. Het leven ziet er nu uit als een wandeling in het licht, ook als er nog mist hangt in de polder. Want we lopen niet alleen. Het Woord spreekt nog steeds, midden onder ons. En dat is genoeg voor vandaag, en voor alle dagen die komen. Amen.",
+        "klein_en_dichtbij": "De kersttafel thuis, de ontmoeting met de buurman in de Triangel, de nuchtere wandeling door de poldermist.",
+        "geen_eisenlijst": true
+      }
+    },
+    "logica_check": {
+      "diagnose_remedie_klopt": true,
+      "toelichting": "De diagnose stelt dat de hoorder lijdt aan spirituele dakloosheid door een te abstract en veeleisend godsbeeld (God van de geest/volmaaktheid). De remedie uit Johannes 1 (God wordt vlees/sarx) breekt dit beeld open door te laten zien dat God juist de kwetsbaarheid opzoekt. De 'Aha!' (omkering) verbindt deze twee door de richting van de beweging te veranderen: niet wij naar boven, maar God naar beneden. De doorwerking concretiseert dit in een bevrijde levensstijl zonder morele druk."
+    }
+  },
+  "14_gebeden": {
+    "gekozen_scenario": "B (Kort drempelgebed - uitgebreid kyrie met schuld en nood)",
+    "gebeden": {
+      "drempelgebed": {
+        "type": "drempelgebed",
+        "aanspraak": "Eeuwige God",
+        "elementen": {
+          "verootmoediging": "Erkenning dat wij binnenstappen vanuit de poldermist en de haast van de wereld in uw heilige ruimte.",
+          "schuldbelijdenis": "Het neerleggen van de onrust en de 'filters' waarmee wij onszelf aan de wereld presenteren.",
+          "verlangen": "Dorst naar het Licht dat niet verblindt, maar verlicht."
+        },
+        "tekst": "Eeuwige God,\\n\\nwij stappen over de drempel van deze morgen. Buiten hangt de mist over de polder, binnen branden de kaarsen. Wij brengen de kou van de straat mee naar binnen, de haast van de laatste voorbereidingen, de onrust van een hart dat nog vol zit met de geluiden van gisteren.\\n\\nHier, op deze plaats in Waddinxveen, zoeken wij niet de vluchtige sfeer van een dag, maar het Licht dat de eeuwen draagt. Wij zijn hier als mensen die tasten in het duister, hopend op een Woord dat standhoudt wanneer alles wankelt. Wij leggen onze maskers af, onze titels en onze schone schijn. Wij zijn hier, simpelweg zoals we zijn: kwetsbaar en verlangend.\\n\\nOpen de deuren van dit huis en de deuren van ons hart. Dat wij niet alleen toeschouwers zijn van een oud verhaal, maar ontvangers van een nieuwe werkelijkheid. Laat uw aanwezigheid de ruimte vullen, opdat wij de drempel werkelijk overgaan en U ontmoeten, hier en nu.\\n\\nAmen.",
+        "echo_schriftlezing": "Het beeld van het licht dat in de duisternis schijnt (Johannes 1:5).",
+        "amen": true
+      },
+      "kyrie": {
+        "type": "kyrie",
+        "aanspraak": "Heer, onze God",
+        "focus": "schuld_en_nood",
+        "structuur": {
+          "intenties": [
+            {
+              "voor_wie": "De slachtoffers van geweld in Gaza en Oekraïne",
+              "nood": "Mensen die Kerst vieren in de kou, tussen puinhopen en angst.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "De eenzamen in onze eigen wijken",
+              "nood": "Voor wie de feesttafel te groot is en de stilte in huis te luid.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "Onszelf en onze gemeenschap",
+              "nood": "Onze neiging om het Licht buiten te sluiten als het te dichtbij komt.",
+              "kyrie_refrain": true
+            }
+          ]
+        },
+        "tekst": "Heer, onze God,\\n\\nwij roepen tot U uit een wereld die U vaak niet herkent. Wij leggen de rauwe beelden van het journaal voor U neer: de kinderen in de kelders van Charkiv die rillen van de kou, de vaders in Gaza die tussen het puin zoeken naar een teken van leven. Waar de vrede een verre droom lijkt, bidden wij: Kyrie eleison.\\n\\nWij bidden U voor de verborgen nood in ons eigen dorp. Voor de werker in het distributiecentrum die de vermoeidheid voelt in de rug en de onzekerheid in het hoofd. Voor de jongere in de Triangel die verdrinkt in de druk om perfect te zijn, terwijl de leegte vanbinnen groeit. Voor de weduwe aan de Esdoornlaan die de gordijnen vroeg sluit omdat de herinnering te pijnlijk is. Kyrie eleison.\\n\\nVergeef ons, Heer, dat wij zo vaak onze eigen tenten dichtritsen voor de nood van de ander. Dat wij de 'vrede op aarde' bezingen, maar de vrede in onze eigen straat verwaarlozen. Wij belijden dat wij het Licht vaak niet aannemen omdat we bang zijn voor wat het in ons onthult. Ontferm U over ons vlees en bloed, over onze angst en onze onmacht.\\n\\nKyrie eleison.\\n\\nAmen.",
+        "echo_schriftlezing": "De wereld die Hem niet herkende en de zijnen die Hem niet aannamen (Johannes 1:10-11).",
+        "amen": true
+      },
+      "epiclese": {
+        "type": "epiclese",
+        "aanspraak": "Geest van God",
+        "focus": "ALLEEN opening voor de Schrift, geen andere thema's",
+        "tekst": "Geest van God,\\n\\ndie bij het begin over de wateren zweefde en leven riep uit de chaos: zweef nu over ons midden. Blaas de as van onze gewenning weg, tot de vonk van uw Woord weer gloeit in ons hart.\\n\\nOpen de Schriften voor ons als een tent waarin wij mogen schuilen. Laat ons niet alleen letters horen of mooie zinnen, maar het Spreken dat de wereld herschept. Ontdooi wat in ons bevroren raakte door cynisme of verdriet. Verlicht ons verstand en open onze ziel, opdat het Woord vandaag opnieuw vlees mag worden in ons leven. Spreek, Heer, uw gemeente luistert.\\n\\nAmen.",
+        "echo_schriftlezing": "Het Woord dat bij God was en de werking van de Geest in de schepping (Johannes 1:1-3).",
+        "amen": true
+      },
+      "dankgebed": {
+        "type": "dankgebed",
+        "aanspraak": "Barmhartige God",
+        "verbinding_verkondiging": "Dankzegging voor de radicale nabijheid van God die 'vlees' wordt in onze alledaagse werkelijkheid.",
+        "elementen": {
+          "dank_gehoorde_woord": "Dank voor de bevrijding van het 'moeten' door de genade van de menswording.",
+          "vraag_kracht_bewaren": "Vraag om de moed om dit licht vast te houden in de komende week.",
+          "verbinding_dagelijks_leven": "Dank dat God 'tent' opslaat in onze eigen woonkamer en straat."
+        },
+        "tekst": "Barmhartige God,\\n\\nmet een hart vol verwondering danken wij U voor het gehoorde Woord. Wij danken U dat U geen verre God bent gebleven, geen abstract idee of een kille wet, maar dat U mens onder de mensen bent geworden. Dank U dat U in Jezus onze taal bent gaan spreken, onze pijn bent gaan voelen en onze vreugde hebt gedeeld.\\n\\nWij danken U voor de bevrijding die dit geeft: dat wij niet langer hoeven te klimmen naar een onbereikbare hemel, omdat U bent neergedaald in onze polder. Dank U dat U uw tent hebt opgeslagen in onze kwetsbaarheid. Wij danken U voor de 'genade op genade' die wij vanmorgen mochten proeven — de wetenschap dat wij kind van God mogen zijn, niet door onze prestaties, maar door uw liefde.\\n\\nLaat dit Woord in ons blijven wonen als we straks dit huis verlaten. Dat de glorie die we in Jezus hebben gezien, ons de ogen opent voor de glans van uw aanwezigheid in het alledaagse: in het breken van het brood, in de zorg voor elkaar, in de hoop die sterker is dan de dood.\\n\\nAmen.",
+        "echo_schriftlezing": "Het aanschouwen van de glorie van de Eniggeborene, vol van genade en waarheid (Johannes 1:14).",
+        "amen": true
+      },
+      "voorbeden": {
+        "type": "voorbeden",
+        "aanspraak": "Vader in de hemel",
+        "cirkels": {
+          "wereld": {
+            "themas": [
+              "vrede in het Midden-Oosten en Oekraïne",
+              "gerechtigheid voor vluchtelingen",
+              "behoud van de schepping"
+            ],
+            "tekst": "Vader in de hemel, wij brengen de wereld bij U. Wij bidden voor de volken waar de nacht maar niet lijkt te eindigen. Voor de machthebbers, dat zij niet hun eigen eer zoeken, maar het recht van de zwaksten. Wij bidden voor de aarde, uw schepping, die zucht onder onze gretigheid; leer ons leven als kinderen van het licht die zorgen voor wat U ons toevertrouwde."
+          },
+          "kerk": {
+            "themas": [
+              "wereldwijde kerk",
+              "vervolgde christenen",
+              "PKN en de Hoeksteen"
+            ],
+            "tekst": "Wij bidden voor uw kerk wereldwijd. Voor onze broeders en zusters die Kerst vieren in het verborgene, omdat hun getuigenis gevaarlijk is. Zegen de Protestantse Kerk in Nederland en onze eigen gemeente hier in de Hoeksteen. Maak ons tot een plek waar het Woord werkelijk 'onder ons woont', gastvrij en vol van waarheid."
+          },
+          "naasten": {
+            "themas": [
+              "zieken",
+              "rouwenden",
+              "eenzamen in Souburgh"
+            ],
+            "tekst": "Wij bidden voor onze naasten die het licht node missen. Voor wie deze Kerst voor het eerst een lege stoel aan tafel heeft en de stilte voelt snijden. Voor de zieken in de ziekenhuizen van de regio en de bewoners van Souburgh die kampen met de grenzen van hun lichaam. Wees de nabijheid voor wie zich vergeten voelt door mensen, maar gekend weet door U."
+          },
+          "eigen_gemeente": {
+            "themas": [
+              "jonge gezinnen in de Triangel",
+              "logistieke werkers",
+              "vrijwilligers van de Voedselbank"
+            ],
+            "tekst": "Zegen de mensen in onze eigen straat. Voor de gezinnen in de Triangel die zoeken naar balans en zin. Voor de vrijwilligers van de Voedselbank in Waddinxveen, dat hun handen gezegend mogen zijn. Geef ons de moed om in de komende week zelf 'vreugdeboden' te zijn, dragers van goed nieuws in woord en daad."
+          }
+        },
+        "stilte_instructie": "*Stilte voor persoonlijke gebedsintenties*",
+        "overgang_onze_vader": "Samen bidden wij het gebed dat Jezus ons leerde:",
+        "onze_vader": "Onze Vader die in de hemelen zijt,\\nuw naam worde geheiligd;\\nuw Koninkrijk kome;\\nuw wil geschiede, gelijk in de hemel, alzo ook op de aarde.\\nGeef ons heden ons dagelijks brood;\\nen vergeef ons onze schulden, gelijk ook wij vergeven onze schuldenaren;\\nen leid ons niet in verzoeking, maar verlos ons van de boze.\\nWant van U is het Koninkrijk en de kracht en de heerlijkheid tot in eeuwigheid.\\nAmen."
+      }
+    },
+    "poetische_technieken_gebruikt": {
+      "parallellisme": [
+        "Niet de vluchtige sfeer van een dag, maar het Licht dat de eeuwen draagt.",
+        "Niet alleen letters horen, maar het Spreken dat leven geeft."
+      ],
+      "drieslag": [
+        "Onze maskers, onze titels en onze schone schijn.",
+        "Kwetsbaar, sterfelijk, aanraakbaar.",
+        "In het breken van het brood, in de zorg voor elkaar, in de hoop die sterker is dan de dood."
+      ],
+      "anafoor": [
+        "Voor de kinderen... Voor de vaders... Voor de eenzamen...",
+        "Dank U dat... Dank U dat..."
+      ],
+      "inclusio": [
+        "Drempelgebed begint met de mist over de polder en eindigt met het overgaan van de drempel naar Gods licht."
+      ],
+      "zintuiglijke_taal": [
+        "Zien: brandende kaarsen, mist over de polder, de lege stoel.",
+        "Horen: stilte die te luid is, letters horen, Spreken dat leven geeft.",
+        "Voelen: kou van de straat, rillen van de kou, hand van een naaste.",
+        "Tasten: tasten in het duister.",
+        "Proeven: de genade mogen proeven."
+      ],
+      "lokale_beelden": [
+        "Mist over de polder rond Waddinxveen.",
+        "De wijk Triangel en de Esdoornlaan.",
+        "Woonzorgcentrum Souburgh.",
+        "De logistieke sector (distributiecentrum).",
+        "De Voedselbank van Waddinxveen."
+      ]
+    },
+    "echo_techniek": {
+      "schriftlezing_thema": "De Incarnatie: het Woord dat vlees wordt en zijn tent opslaat.",
+      "echo_per_gebed": {
+        "drempelgebed": "Het zoeken naar het Licht dat de duisternis van de polder verlicht.",
+        "kyrie": "De wereld die Hem niet herkent in de lijdende medemens.",
+        "epiclese": "De bede om het Spreken (Logos) dat de chaos herschept.",
+        "dankgebed": "Verwondering over het Woord dat 'vlees' werd en genade bracht.",
+        "voorbeden": "Het getuigen van het Licht in de concrete wijken van Waddinxveen."
+      }
+    }
+  }
+}
