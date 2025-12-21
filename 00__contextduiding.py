@@ -235,8 +235,8 @@ De volgende lezingen staan vast voor deze datum en MOETEN worden gebruikt:
     }
 
 
-def verify_church_location(client: genai.Client, user_input: dict) -> str:
-    """Zoek en verifieer het adres van de kerk."""
+def verify_church_location(client: genai.Client, user_input: dict) -> dict:
+    """Zoek en verifieer het adres en website van de kerk."""
     print("\n" + "─" * 50)
     print("VERIFICATIE: Kerklocatie controleren...")
     print(f"{'─' * 50}")
@@ -266,34 +266,37 @@ Geef het antwoord als JSON:
             )
         )
 
-        found_address = "Onbekend"
+        found_data = {"adres": "Onbekend", "website": "", "gebouw": ""}
+        
         if response.text:
             data = extract_json(response.text)
-            found_address = data.get("adres", "Onbekend")
-            gebouw = data.get("gebouw_naam", "")
-            website = data.get("website", "")
+            found_data["adres"] = data.get("adres", "Onbekend")
+            found_data["gebouw"] = data.get("gebouw_naam", "")
+            found_data["website"] = data.get("website", "")
             
             print(f"\nGevonden locatie:")
-            if gebouw:
-                print(f"  Gebouw:  {gebouw}")
-            print(f"  Adres:   \033[1m{found_address}\033[0m")
-            if website:
-                print(f"  Website: {website}")
+            if found_data["gebouw"]:
+                print(f"  Gebouw:  {found_data['gebouw']}")
+            print(f"  Adres:   \033[1m{found_data['adres']}\033[0m")
+            if found_data["website"]:
+                print(f"  Website: {found_data['website']}")
             
             choice = input("\nIs dit het correcte adres? (j/n): ").strip().lower()
             if choice in ('j', 'ja', 'y', 'yes'):
-                return found_address
+                return found_data
             
         else:
             print("\nGeen adres gevonden via Google Search.")
 
         # Als niet gevonden of niet correct
         correct_address = input("\nVoer het correcte adres in (Straat Huisnummer, Postcode Plaats): ").strip()
-        return correct_address
+        correct_website = input("Voer de website in (optioneel): ").strip()
+        return {"adres": correct_address, "website": correct_website, "gebouw": ""}
 
     except Exception as e:
         print(f"Fout bij zoeken adres: {e}")
-        return input("\nVoer het correcte adres in: ").strip()
+        correct_address = input("\nVoer het correcte adres in: ").strip()
+        return {"adres": correct_address, "website": "", "gebouw": ""}
 
 
 def build_remaining_analyses(user_input: dict, kerkelijk_jaar_context: str, church_address: str = "") -> list[dict]:
@@ -736,9 +739,12 @@ def main():
     # VERIFICATIE KERKLOCATIE (DIRECT BIJ START)
     # We doen dit altijd als we in 'new' mode zijn, of als het adres nog niet bekend is.
     if mode == 'new' or not user_input.get("adres"):
-        user_input["adres"] = verify_church_location(client, user_input)
+        location_data = verify_church_location(client, user_input)
+        user_input.update(location_data)
     else:
         print(f"  Adres:      {user_input.get('adres')}")
+        if user_input.get('website'):
+            print(f"  Website:    {user_input.get('website')}")
 
     print("\n" + "=" * 60)
     print(f"STARTEN MET MODEL: {MODEL_NAME}")

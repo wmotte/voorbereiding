@@ -184,7 +184,7 @@ def read_previous_analyses(folder: Path) -> dict:
 
 def extract_user_input_from_folder(folder: Path) -> dict:
     """Probeer plaatsnaam, gemeente en datum te extraheren uit bestanden of foldernaam."""
-    user_input = {"plaatsnaam": "", "gemeente": "", "datum": "", "adres": ""}
+    user_input = {"plaatsnaam": "", "gemeente": "", "datum": "", "adres": "", "website": ""}
 
     # 1. Zoek in alle JSON bestanden naar _meta.user_input (meest betrouwbaar)
     for json_path in sorted(folder.glob("*.json")):
@@ -787,6 +787,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 - **Plaatsnaam:** {user_input.get('plaatsnaam')}
 - **Gemeente:** {user_input.get('gemeente')}
 - **Adres:** {user_input.get('adres') or 'Onbekend'}
+- **Website:** {user_input.get('website') or 'Geen'}
 - **Datum:** {user_input.get('datum')}
 
 # Eerdere Analyses (Context)
