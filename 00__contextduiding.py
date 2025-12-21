@@ -402,32 +402,6 @@ def save_analysis(output_dir: Path, filename: str, content: dict, title: str):
     print(f"  Opgeslagen: {filepath.name}")
 
 
-def create_summary(output_dir: Path, user_input: dict, analyses: list[dict]):
-    """Maak een samenvattend overzichtsbestand (JSON)."""
-    # JSON summary
-    summary_data = {
-        "gegevens": {
-            "plaatsnaam": user_input['plaatsnaam'],
-            "gemeente": user_input['gemeente'],
-            "datum_preek": user_input['datum'],
-            "extra_context": user_input.get('extra_context', ''),
-            "generated_at": datetime.now().isoformat()
-        },
-        "analyses": [
-            {
-                "name": analysis['name'],
-                "title": analysis['title'],
-                "file": f"{analysis['name']}.json"
-            }
-            for analysis in analyses
-        ]
-    }
-
-    filepath_json = output_dir / "00_overzicht.json"
-    with open(filepath_json, "w", encoding="utf-8") as f:
-        json.dump(summary_data, f, ensure_ascii=False, indent=2)
-
-
 def list_output_folders() -> list[Path]:
     """Lijst alle beschikbare output folders."""
     if not OUTPUT_DIR.exists():
@@ -654,8 +628,6 @@ def main():
 
         result = run_analysis(client, analysis['prompt'], analysis['title'])
         save_analysis(output_dir, analysis['name'], result, analysis['title'])
-
-    create_summary(output_dir, user_input, all_analyses)
 
     print("\n" + "=" * 60)
     print("KLAAR")
