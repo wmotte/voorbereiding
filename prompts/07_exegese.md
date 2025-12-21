@@ -109,7 +109,11 @@ Dit zorgt ervoor dat de predikant de grondtekst direct bij de hand heeft bij het
 
 ### 10. Zoekmodellen voor Gods-, mens- en Jezusbeelden (Snoek)
 
-Pas de zoekmodellenmethode van Hans Snoek toe om de belangrijkste actanten in de tekst systematisch te analyseren. Voer deze analyse uit voor **elke lezing afzonderlijk**. Gebruik de theoretische kaders hieronder om tot een diepgaande beschrijving te komen.
+Pas de zoekmodellenmethode toe om de belangrijkste actanten in de tekst systematisch te analyseren. 
+
+*Bron: Snoek, H. (2010). Een huis om in te wonen: Uitleg en interpretatie van de Bijbel. Kampen: Kok, 2e druk, pp. 180-199.*
+
+Voer deze analyse uit voor **elke lezing afzonderlijk**. Gebruik de theoretische kaders hieronder om tot een diepgaande beschrijving te komen.
 
 **BELANGRIJK:** Vermijd korte bulletpoints. Schrijf een doorlopend betoog per lezing waarin je de assen van het model verkent en de onderzoeksvragen beantwoordt.
 
