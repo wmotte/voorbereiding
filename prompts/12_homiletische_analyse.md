@@ -17,11 +17,11 @@ Eugene Lowry veroorzaakte een "Copernicaanse revolutie" in de homiletiek door te
 ### Cruciale Inzichten voor de Expert
 
 1.  **De "Doghouse Sermon":** Vermijd de valkuil van de "hondenhok-preek": een wankel bouwsel van stellingen dat overeind wordt gehouden door illustraties. Illustraties zijn geen stutten, maar onderdeel van de bewijsvoering of ervaring.
-2.  **Diagnose bepaalt Prognose:** Je theologie van de menselijke conditie (Ugh) bepaalt direct je theologie van de verlossing (Whee).
+2.  **Diagnose bepaalt Prognose:** Je theologie van de menselijke conditie (Oei...) bepaalt direct je theologie van de verlossing (Ja!).
     *   *Diagnose:* Zonde is onwetendheid -> *Remedie:* Jezus als Leraar.
     *   *Diagnose:* Zonde is verslaving/onmacht -> *Remedie:* Jezus als Bevrijder.
     *   *Instructie:* Zorg dat je remedie exact past op de diagnose die je stelt.
-3.  **Geen "Homiletische Kortsluiting":** De grootste fout is te snel van het probleem (Ugh) naar de toepassing (Yeah) springen, zonder de radicale omkering van het evangelie (Aha/Whee). Dit leidt tot moralisme ("Doe harder je best").
+3.  **Geen "Homiletische Kortsluiting":** De grootste fout is te snel van het probleem (Oei...) naar de toepassing (Zó!) springen, zonder de radicale omkering van het evangelie (Aha!/Ja!). Dit leidt tot moralisme ("Doe harder je best").
 4.  **Druk vs. Spanning (Kurt Lewin):**
     *   Verandering door *druk* (duwen) roept weerstand op.
     *   Verandering door *wegnemen van spanning* (bevrijding) creëert ruimte.
@@ -49,7 +49,7 @@ Kies één lezing die centraal staat. Zoek naar de tekst die de beste mogelijkhe
 
 Werk de preekschets uit in vijf stappen.
 
-#### 1. OOPS! - De Kwestie (Conflict / Verstoren van het evenwicht)
+#### 1. HÈ? - De Kwestie (Conflict / Verstoren van het evenwicht)
 *Doel: De 'homiletische jeuk' moet binnen 2-3 minuten de jeuk van de hoorder worden.*
 
 **Diepte-instructies:**
@@ -58,7 +58,7 @@ Werk de preekschets uit in vijf stappen.
 - **Geen Spoilers:** Een detective begint ook niet met het aanwijzen van de dader. Houd de spanning vast.
 - **Context:** Wat is de specifieke ambiguïteit in {{plaatsnaam}}?
 
-#### 2. UGH! - De Verdieping (Complication / Analyseren van de discrepantie)
+#### 2. OEI... - De Verdieping (Complication / Analyseren van de discrepantie)
 *Doel: De diagnose stellen. Dit is het moeilijkste deel. Beschrijven is onvoldoende, je moet analyseren.*
 
 **De "Waarom?"-Keten (Cruciaal!):**
@@ -87,62 +87,43 @@ Kies en benoem expliciet een type omkering:
 3.  **Aanname-omkering:** (We denken dat we 'binnen de lijntjes' moeten kleuren, maar God kleurt erbuiten - zie de 9-punten puzzel).
 4.  **Logica-omkering:** (Winst is verlies, kracht is zwakte).
 
-#### 4. WHEE! - De Verkondiging (Good News / Ervaren van het evangelie)
+#### 4. JA! - De Verkondiging (Good News / Ervaren van het evangelie)
 *Doel: De goede boodschap laten landen als ervaring (opluchting), niet slechts als informatie.*
 
 **Diepte-instructies:**
-- **Context bepaalt betekenis:** Dezelfde woorden ("Ik hou van je") betekenen iets totaal anders na een ruzie dan op een saai moment. Zorg dat de evangeliewoorden landen in de context van de net gemaakte analyse (Ugh).
-- **Simultaneïteit:** Soms vallen Aha en Whee samen (zoals de steen die valt in het verhaal van de overspelige vrouw).
+- **Context bepaalt betekenis:** Dezelfde woorden ("Ik hou van je") betekenen iets totaal anders na een ruzie dan op een saai moment. Zorg dat de evangeliewoorden landen in de context van de net gemaakte analyse (Oei...).
+- **Simultaneïteit:** Soms vallen Aha! en Ja! samen (zoals de steen die valt in het verhaal van de overspelige vrouw).
 - **Remedie:** Formuleer de genade haarscherp. Geen algemeenheden ("Jezus houdt van u"), maar specifiek gericht op de zere plek uit stap 2.
 
-#### 5. YEAH! - De Doorwerking (Unfolding / Future made new)
+#### 5. ZÓ! - De Doorwerking (Unfolding / Future made new)
 *Doel: Anticiperen op de nieuwe realiteit. Niet "wat moeten we doen", maar "hoe ziet het leven er nu uit?".*
 
 **Diepte-instructies:**
 - **Geen Hoogtepunt:** Het hoogtepunt was stap 4. Dit is de 'afterglow', het uitvouwen.
 - **Geen Werkheiligheid:** Vermijd de valkuil om alsnog met een eisenlijstje te komen.
-- **Bevrijding:** "Omdat God X gedaan heeft (Whee), zijn wij vrij van Y (Ugh), en kunnen we nu Z (Yeah)."
+- **Bevrijding:** "Omdat God X gedaan heeft (Ja!), zijn wij vrij van Y (Oei...), en kunnen we nu Z (Zó!)."
 - **Concretisering:** Maak het klein en dichtbij. De ontbijttafel, het wijkcentrum, het ziekenhuisbed.
 
 ---
 
 ## Gewenste output
 
-
-
 Lever een gedetailleerde preekschets op met de volgende **strikte opmaakregels**:
-
-- Gebruik **altijd twee witregels** tussen de hoofdfasen (Oops, Ugh, etc.).
-
+- Gebruik **altijd twee witregels** tussen de hoofdfasen (Hè?, Oei..., etc.).
 - Gebruik **altijd één witregel** na elke kop (# of ##) en na elke paragraaf.
-
 - Zorg dat bullet points of genummerde lijsten **altijd** voorafgegaan en gevolgd worden door een witregel.
-
 - Gebruik vette koppen (`**Titel**`) gevolgd door een witregel voor subsecties binnen de stadia.
-
-
 
 ### Structuur van de schets:
 
-
-
 1.  **Onderbouwing tekstkeuze** (ca. 100-150 woorden) met focus op potentie voor omkering.
-
 2.  **De 5 stadia uitgewerkt**:
-
     -   Per stadium ca. 300 woorden.
-
     -   **Toon in Stap 2 expliciet de gevolgde "Waarom-keten".**
-
     -   **Benoem in Stap 3 expliciet welk type omkering wordt gebruikt.**
-
     -   Zorg voor naadloze transities die visueel duidelijk gemarkeerd zijn.
 
-
-
 **Totale omvang:** ca. 1500 - 2000 woorden.
-
-
 
 **BELANGRIJK:**
 - Dit is een structuurontwerp voor de prediker.
@@ -160,16 +141,16 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
     "omkerings_potentie": "string - waar zit de potentie voor een reversal?"
   },
   "homiletical_plot": {
-    "oops_kwestie": {
-      "titel": "OOPS! - De Kwestie",
+    "he_kwestie": {
+      "titel": "HÈ? - De Kwestie",
       "doel": "De 'homiletische jeuk' moet binnen 2-3 minuten de jeuk van de hoorder worden",
       "inhoud": "string - ~300 woorden, het herkenbare probleem/de discrepantie",
       "ambiguiteit": "string - wat is niet direct op te lossen?",
       "existentiele_onrust": "string - waar voelen we ons 'dakloos'?",
       "specifiek_voor_context": "string - wat is de specifieke ambiguïteit in {{plaatsnaam}}?"
     },
-    "ugh_verdieping": {
-      "titel": "UGH! - De Verdieping",
+    "oei_verdieping": {
+      "titel": "OEI... - De Verdieping",
       "doel": "De diagnose stellen - analyseren, niet slechts beschrijven",
       "waarom_keten": [
         {
@@ -188,15 +169,15 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "toelichting_type": "string - uitleg waarom dit type omkering",
       "inhoud": "string - ~300 woorden, de onverwachte shift"
     },
-    "whee_verkondiging": {
-      "titel": "WHEE! - De Verkondiging",
+    "ja_verkondiging": {
+      "titel": "JA! - De Verkondiging",
       "doel": "De goede boodschap laten landen als ervaring (opluchting), niet slechts als informatie",
       "inhoud": "string - ~300 woorden, het evangelie als ervaring",
-      "remedie_past_op_diagnose": "string - hoe past de genade precies op de wond uit UGH?",
+      "remedie_past_op_diagnose": "string - hoe past de genade precies op de wond uit OEI...?",
       "niet_algemeen_maar_specifiek": "string - specifieke genade, niet 'Jezus houdt van u'"
     },
-    "yeah_doorwerking": {
-      "titel": "YEAH! - De Doorwerking",
+    "zo_doorwerking": {
+      "titel": "ZÓ! - De Doorwerking",
       "doel": "Anticiperen op de nieuwe realiteit - niet 'wat moeten we doen' maar 'hoe ziet het leven er nu uit'",
       "inhoud": "string - ~300 woorden, het uitvouwen van de nieuwe realiteit",
       "klein_en_dichtbij": "string - concrete, intieme details (ontbijttafel, wijkcentrum, ziekenhuisbed)",
@@ -213,5 +194,5 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
 **BELANGRIJK:**
 - Retourneer ALLEEN valide JSON, geen markdown of toelichting.
 - Totale omvang ~1500-2000 woorden, verdeeld over de stadia.
-- Toon de waarom-keten EXPLICIET in ugh_verdieping.
+- Toon de waarom-keten EXPLICIET in oei_verdieping.
 - Benoem het type omkering EXPLICIET in aha_wending.
