@@ -36,6 +36,12 @@ Breng in kaart wie de hoorders zijn en in welke werkelijkheid zij leven.
 ## Bronnen
 Gebruik CBS, AlleCijfers.nl en lokale nieuwsbronnen. Wees specifiek voor {{plaatsnaam}}.
 
+**BELANGRIJK: Voorkom Hallucinaties**
+Bij het noemen van specifieke namen van scholen, verenigingen, bedrijven of instellingen:
+1. **Verifieer** of deze daadwerkelijk bestaan in {{plaatsnaam}} via Google Search.
+2. Als je geen specifieke naam kunt vinden, gebruik dan een algemene omschrijving (bijv. "diverse basisscholen", "lokale voetbalvereniging") in plaats van een naam te verzinnen.
+3. Het is beter om "niet specifiek gevonden" te rapporteren dan een foutieve naam.
+
 ## JSON Output Schema
 
 Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
@@ -76,7 +82,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
   },
   "economisch": {
     "belangrijkste_sectoren": ["string"],
-    "grote_werkgevers": ["string"],
+    "grote_werkgevers": ["string - ALLEEN geverifieerde, bestaande bedrijven"],
     "werkloosheidspercentage": "string",
     "gemiddeld_inkomen": "string",
     "vergelijking_landelijk": "string",
@@ -86,12 +92,12 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
   "sociale_structuur": {
     "verenigingsleven": {
       "actief": "boolean",
-      "belangrijke_verenigingen": ["string"],
+      "belangrijke_verenigingen": ["string - ALLEEN geverifieerde namen van sport/cultuur verenigingen"],
       "toelichting": "string"
     },
     "sociale_cohesie": "string - beschrijving van gemeenschapsgevoel",
     "voorzieningen": {
-      "scholen": ["string"],
+      "scholen": ["string - ALLEEN geverifieerde namen"],
       "zorg": ["string"],
       "winkels": "string - niveau voorzieningenniveau",
       "krimp_of_groei": "string"

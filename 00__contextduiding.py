@@ -601,9 +601,12 @@ def list_output_folders() -> list[Path]:
     folders = []
     for item in OUTPUT_DIR.iterdir():
         if item.is_dir() and not item.name.startswith("."):
-            # Controleer of er een 00_zondag_kerkelijk_jaar bestand bestaat (JSON of MD)
-            # OF dat het een geldige output folder lijkt
-            if ((item / "00_zondag_kerkelijk_jaar.json").exists() or
+            # Controleer of er een geldig bestand bestaat
+            # Nieuwe structuur: 00_meta.json of 01_zondag...
+            # Oude structuur: 00_zondag...
+            if ((item / "00_meta.json").exists() or
+                (item / "01_zondag_kerkelijk_jaar.json").exists() or
+                (item / "00_zondag_kerkelijk_jaar.json").exists() or
                 (item / "00_zondag_kerkelijk_jaar.md").exists() or
                 (item / "00_overzicht.json").exists() or
                 (item / "00_overzicht.md").exists()):
