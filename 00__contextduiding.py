@@ -507,6 +507,14 @@ def save_analysis(output_dir: Path, filename: str, content: dict, title: str, us
     print(f"  Opgeslagen: {filepath.name}")
 
 
+def save_log(logs_dir: Path, filename: str, content: str):
+    """Sla de volledige prompt op in een logbestand."""
+    filepath = logs_dir / f"{filename}.txt"
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"  Log opgeslagen: logs/{filepath.name}")
+
+
 def list_output_folders() -> list[Path]:
     """Lijst alle beschikbare output folders."""
     if not OUTPUT_DIR.exists():
@@ -651,6 +659,10 @@ def main():
         if user_input.get('extra_context'):
              print(f"  Context:    {user_input['extra_context']}")
 
+    # LOGS DIRECTORY AANMAKEN
+    LOGS_DIR = output_dir / "logs"
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+
     print("\nGoogle GenAI Client (v1.0+) initialiseren...")
     client = get_gemini_client()
 
@@ -681,6 +693,9 @@ def main():
                 kerkelijk_jaar_result = json.load(f)
 
     if run_this:
+        # LOG DE PROMPT
+        save_log(LOGS_DIR, first_analysis['name'], first_analysis['prompt'])
+
         kerkelijk_jaar_result = run_analysis(
             client,
             first_analysis['prompt'],
@@ -704,6 +719,15 @@ def main():
     print("\n" + "─" * 60)
     print("FASE 2: Contextanalyses met liturgische informatie")
     print("─" * 60)
+    
+    # We moeten de context opnieuw opbouwen als we een bestaand resultaat hebben ingeladen
+    if not kerkelijk_jaar_result:
+         # Fallback, zou niet moeten gebeuren als run_this=False correct werkt met laden
+         print("FOUT: Geen liturgische context beschikbaar.")
+         sys.exit(1)
+         
+    # Converteer JSON resultaat naar string voor context
+    kerkelijk_jaar_context = json.dumps(kerkelijk_jaar_result, ensure_ascii=False, indent=2)
 
     remaining_analyses = build_remaining_analyses(user_input, kerkelijk_jaar_context)
     all_analyses = [first_analysis] + remaining_analyses
@@ -722,6 +746,9 @@ def main():
             if overwrite != 'j':
                 print(f"  Overgeslagen: {analysis['name']}")
                 continue
+
+        # LOG DE PROMPT
+        save_log(LOGS_DIR, analysis['name'], analysis['prompt'])
 
         result = run_analysis(client, analysis['prompt'], analysis['title'])
         save_analysis(output_dir, analysis['name'], result, analysis['title'], user_input)

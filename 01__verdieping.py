@@ -535,6 +535,14 @@ def save_analysis(output_dir: Path, filename: str, content: dict, title: str):
     print(f"  Opgeslagen: {filepath.name}")
 
 
+def save_log(logs_dir: Path, filename: str, content: str):
+    """Sla de volledige prompt op in een logbestand."""
+    filepath = logs_dir / f"{filename}.txt"
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"  Log opgeslagen: logs/{filepath.name}")
+
+
 def update_summary(output_dir: Path):
     """Update het overzichtsbestand met de nieuwe analyses."""
     # Update JSON overzicht
@@ -655,6 +663,10 @@ def main():
     print("\nGoogle GenAI Client initialiseren...")
     client = get_gemini_client()
 
+    # LOGS DIRECTORY AANMAKEN
+    LOGS_DIR = folder / "logs"
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+
     # Bouw context (inclusief bijbelteksten)
     context_string = build_context_string(previous_analyses)
 
@@ -741,6 +753,9 @@ def main():
 
 {task_prompt}
 """
+
+        # LOG DE PROMPT
+        save_log(LOGS_DIR, name, full_prompt)
 
         # Voer analyse uit (lage temperature voor kalender om hallucinaties te voorkomen)
         temp = 0.1 if name == "10_kalender" else 0.2
