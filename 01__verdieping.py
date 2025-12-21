@@ -515,17 +515,22 @@ def verify_kunst_cultuur(client: genai.Client, content: dict) -> dict:
         return content
 
 
-def save_analysis(output_dir: Path, filename: str, content: dict, title: str):
+def save_analysis(output_dir: Path, filename: str, content: dict, title: str, user_input: dict = None):
     """Sla een analyse op naar een JSON bestand."""
     filepath = output_dir / f"{filename}.json"
 
     # Voeg metadata toe
+    meta = {
+        "title": title,
+        "filename": filename,
+        "generated_at": datetime.now().isoformat()
+    }
+
+    if user_input:
+        meta["user_input"] = user_input
+
     content_with_meta = {
-        "_meta": {
-            "title": title,
-            "filename": filename,
-            "generated_at": datetime.now().isoformat()
-        },
+        "_meta": meta,
         **content
     }
 
@@ -765,7 +770,7 @@ def main():
         if name == "08_kunst_cultuur":
             result = verify_kunst_cultuur(client, result)
 
-        save_analysis(folder, name, result, title)
+        save_analysis(folder, name, result, title, user_input)
 
     # Update overzicht
     update_summary(folder)
