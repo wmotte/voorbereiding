@@ -153,6 +153,12 @@ Telt het aantal tokens in de gegenereerde bestanden om inzicht te krijgen in de 
 python count_tokens.py -v
 ```
 
+## 📚 Literatuur & Bronnen
+
+*   **De Leede, H. & Stark, C. (2017).** *Ontvouwen: Protestantse prediking in de praktijk.* Zoetermeer: Boekencentrum, pp. 73-81.
+*   **Lowry, E.L. (2001).** *The Homiletical Plot: The Sermon as Narrative Art Form.* Expanded Edition. Louisville: Westminster John Knox Press.
+*   **Snoek, H. (2023).** *Een huis om in te wonen: Zoekmodellen voor exegese.* (Theologische basis voor de exegese-analyses).
+
 ---
 
 ## ⚠️ Beperkingen & Disclaimer
