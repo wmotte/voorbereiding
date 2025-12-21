@@ -22,6 +22,7 @@ import sys
 import re
 import json
 import argparse
+import subprocess
 from pathlib import Path
 from datetime import datetime
 
@@ -905,11 +906,47 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 
     # Update overzicht
     update_summary(folder)
+    
+    # Combineer alle JSONs
+    combine_all_json(folder)
 
     print("\n" + "=" * 60)
     print("KLAAR")
     print(f"Locatie: {folder}")
     print("=" * 60)
+
+
+def combine_all_json(folder: Path):
+    """Combineer alle genummerde JSON-bestanden (00-14) tot één bestand."""
+    print("\nAlle JSON-outputs combineren...")
+    combined_data = {}
+    
+    # Zoek alle json bestanden die beginnen met 2 cijfers
+    # We sorteren ze zodat de volgorde logisch is
+    json_files = sorted([f for f in folder.glob("*.json") if re.match(r"^\d{2}_.*\.json$", f.name)])
+    
+    for json_file in json_files:
+        key = json_file.stem # bestandsnaam zonder extensie
+        try:
+            with open(json_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                combined_data[key] = data
+        except Exception as e:
+            print(f"  Fout bij lezen {json_file.name}: {e}")
+            
+    output_path = folder / "combined_output.json"
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(combined_data, f, ensure_ascii=False, indent=2)
+        
+    print(f"  Gecombineerde output opgeslagen: {output_path.name}")
+    
+    # Draai count_tokens.py op het gecombineerde bestand
+    try:
+        script_path = SCRIPT_DIR / "count_tokens.py"
+        print(f"\nTokens tellen voor {output_path.name}...")
+        subprocess.run([sys.executable, str(script_path), "--file", str(output_path)], check=False)
+    except Exception as e:
+        print(f"  Kon count_tokens.py niet uitvoeren: {e}")
 
 
 if __name__ == "__main__":

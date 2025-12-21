@@ -69,16 +69,16 @@ Vanwege auteursrechten werkt de NBV21 alleen met **lokale JSON-bestanden**.
 ```bash
 python contextduiding.py
 ```
-*   Invoer van Plaatsnaam, Gemeente en Datum. Genereert de basiscontext (00-06).
+*   Invoer van Plaatsnaam, Gemeente en Datum. Genereert de basiscontext (01-07) en `00_meta.json`.
 
 ### Stap 2: Verdieping
 ```bash
 python verdieping.py
 ```
-*   Kies een eerdere analyse. Haalt bijbelteksten op en genereert de theologische verdieping (07-13).
+*   Kies een eerdere analyse. Haalt bijbelteksten op en genereert de theologische verdieping (08-14). Alle JSON-bestanden worden aan het einde gecombineerd in `combined_output.json`.
 
 ### Stap 3: Resultaat
-Open `00_overzicht.md` in de gegenereerde output-map voor een centraal overzicht.
+Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
 
 ---
 
@@ -86,20 +86,21 @@ Open `00_overzicht.md` in de gegenereerde output-map voor een centraal overzicht
 
 | Nr | Naam | Omschrijving |
 |:---|:---|:---|
-| 00 | **Liturgische Context** | Zondag van het jaar, lezingen, kleur, liedsuggesties (Liedboek 2013). |
-| 01 | **Sociaal-maatschappelijk** | Demografie, economie en sociale structuur van de burgerlijke gemeente. |
-| 02 | **Waardenoriëntatie** | De "Vijf V's" en Motivaction Mentality-groepen. |
-| 03 | **Geloofsoriëntatie** | Verhouding tussen officieel geloof en het geleefde geloof van hoorders. |
-| 04 | **Synthese** | Homiletische aanbevelingen (toon, taal, beelden). |
-| 05 | **Wereldnieuws** | Schokkend nieuws van de afgelopen dagen gerelateerd aan de zondag. |
-| 06 | **Politieke Oriëntatie** | Stemgedrag en politieke cultuur in de regio. |
-| 07 | **Exegese** | Tekstkritiek, historische context en theologische lijnen. |
-| 08 | **Kunst & Cultuur** | Beelden, film en muziek bij de lezingen (incl. bronverificatie). |
-| 09 | **Focus & Functie** | De kernboodschap en het beoogde effect van de preek. |
-| 10 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
-| 11 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
-| 12 | **Homiletische Analyse** | Preekschets volgens Lowry's narratieve methode (Hè?/Oops!, Oei.../Ugh!, etc.). |
-| 13 | **Gebeden** | Drempelgebed, Kyrie, Epiclese, Dankgebed en Voorbeden. |
+| 00 | **Meta-data** | `00_meta.json`: Centrale opslag van user input en geverifieerd adres. |
+| 01 | **Liturgische Context** | Zondag van het jaar, lezingen, kleur, liedsuggesties (Liedboek 2013). |
+| 02 | **Sociaal-maatschappelijk** | Demografie, economie en sociale structuur van de burgerlijke gemeente. |
+| 03 | **Waardenoriëntatie** | De "Vijf V's" en Motivaction Mentality-groepen. |
+| 04 | **Geloofsoriëntatie** | Verhouding tussen officieel geloof en het geleefde geloof van hoorders. |
+| 05 | **Synthese** | Homiletische aanbevelingen (toon, taal, beelden). |
+| 06 | **Wereldnieuws** | Schokkend nieuws van de afgelopen dagen gerelateerd aan de zondag. |
+| 07 | **Politieke Oriëntatie** | Stemgedrag en politieke cultuur in de regio. |
+| 08 | **Exegese** | Tekstkritiek, historische context en theologische lijnen. |
+| 09 | **Kunst & Cultuur** | Beelden, film en muziek bij de lezingen (incl. bronverificatie). |
+| 10 | **Focus & Functie** | De kernboodschap en het beoogde effect van de preek. |
+| 11 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
+| 12 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
+| 13 | **Homiletische Analyse** | Preekschets volgens Lowry's narratieve methode (Hè?/Oops!, Oei.../Ugh!, etc.). |
+| 14 | **Gebeden** | Drempelgebed, Kyrie, Epiclese, Dankgebed en Voorbeden. |
 
 ---
 
@@ -128,7 +129,7 @@ Om structuur aan te brengen, wordt onderscheid gemaakt tussen de inhoudelijke ke
 📄 **[Lees meer over Focus & Functie](misc/Focus_en_Functie.md)**
 
 ### 4. Preekstructuur: Lowry's Homiletical Plot
-De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaats van constructie) in vijf stadia:
+De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaats van constructie) in five stadia:
 1.  **HÈ? (OOPS!)**: Verstoren van het evenwicht (de vraag/jeuk).
 2.  **OEI... (UGH!)**: Analyseren van de discrepantie (waarom is het probleem zo hardnekkig?).
 3.  **AHA! (AHA!)**: Onthullen van de sleutel (de verrassing uit de tekst).
@@ -148,9 +149,9 @@ De gebeden volgen de klassieke en protestantse (PKN) traditie, met oog voor de s
 ## 🛠 Aanvullende Tools
 
 ### Token-teller (`count_tokens.py`)
-Telt het aantal tokens in de gegenereerde bestanden om inzicht te krijgen in de omvang van de analyse (gemiddeld ~30.000 tokens voor een volledig dossier).
+Telt het aantal tokens in de gegenereerde bestanden om inzicht te krijgen in de omvang van de analyse (gemiddeld ~50.000 tokens voor een volledig dossier, opgeslagen in `combined_output.json`).
 ```bash
-python count_tokens.py -v
+python count_tokens.py --file output/Sessie_Naam/combined_output.json
 ```
 
 ## 📚 Literatuur & Bronnen

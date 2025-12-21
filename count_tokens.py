@@ -57,11 +57,32 @@ def main():
         help="Path to output directory containing church folders (default: ./output)"
     )
     parser.add_argument(
+        "--file", "-f",
+        type=Path,
+        help="Path to a single file to count tokens for"
+    )
+    parser.add_argument(
         "--verbose", "-v",
         action="store_true",
         help="Show per-file token counts"
     )
     args = parser.parse_args()
+
+    # Handle single file mode
+    if args.file:
+        if not args.file.exists():
+            print(f"Error: File not found: {args.file}")
+            return 1
+        
+        try:
+            content = args.file.read_text(encoding="utf-8")
+            tokens = count_tokens(content)
+            print(f"File: {args.file.name}")
+            print(f"Tokens: {tokens:,}")
+            return 0
+        except Exception as e:
+            print(f"Error reading file: {e}")
+            return 1
 
     output_dir = args.output_dir
 
