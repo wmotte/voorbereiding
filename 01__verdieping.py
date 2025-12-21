@@ -559,54 +559,63 @@ def verify_kunst_cultuur(client: genai.Client, content: dict) -> dict:
 
 """
 
-    try:
-        response = client.models.generate_content(
-            model=MODEL_NAME,
-            contents=verification_prompt + content_str,
-            config=types.GenerateContentConfig(
-                temperature=0.1,  # Zeer laag voor maximale precisie
-                top_p=0.85,
-                top_k=20,
-                max_output_tokens=32768,
-                tools=[types.Tool(
-                    google_search=types.GoogleSearch()
-                )],
-                safety_settings=[
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                ]
+    max_retries = 1
+    for attempt in range(max_retries + 1):
+        try:
+            response = client.models.generate_content(
+                model=MODEL_NAME,
+                contents=verification_prompt + content_str,
+                config=types.GenerateContentConfig(
+                    temperature=0.1,  # Zeer laag voor maximale precisie
+                    top_p=0.85,
+                    top_k=20,
+                    max_output_tokens=32768,
+                    tools=[types.Tool(
+                        google_search=types.GoogleSearch()
+                    )],
+                    safety_settings=[
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                    ]
+                )
             )
-        )
 
-        if response.text:
-            verified = extract_json(response.text)
-            if "error" not in verified:
-                print("✓ Verificatie voltooid - niet-verifieerbare items verwijderd")
-                return verified
+            if response.text:
+                verified = extract_json(response.text)
+                if "error" not in verified:
+                    print("✓ Verificatie voltooid - niet-verifieerbare items verwijderd")
+                    return verified
+                else:
+                    print(f"⚠ Verificatie parsing mislukt (poging {attempt + 1})")
+                    if attempt < max_retries:
+                        continue
             else:
-                print("⚠ Verificatie parsing mislukt - originele data behouden")
-                return content
-        else:
-            print("✗ Verificatie mislukt - originele data behouden")
-            return content
+                print(f"✗ Verificatie mislukt (geen text) (poging {attempt + 1})")
+                if attempt < max_retries:
+                    continue
 
-    except Exception as e:
-        print(f"✗ Verificatie fout: {str(e)} - originele data behouden")
-        return content
+        except Exception as e:
+            print(f"✗ Verificatie fout: {str(e)} (poging {attempt + 1})")
+            if attempt < max_retries:
+                continue
+
+    # Als alles mislukt, retourneer originele content
+    print("⚠ Verificatie volledig mislukt - originele data behouden")
+    return content
 
 
 def save_analysis(output_dir: Path, filename: str, content: dict, title: str, user_input: dict = None):
@@ -850,12 +859,17 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         else:
             analysis_context = context_string
 
+        # Voor gebeden: maskeer adres om letterlijk gebruik te voorkomen
+        display_adres = user_input.get('adres') or 'Onbekend'
+        if name == "14_gebeden":
+            display_adres = "N.v.t. voor deze taak (niet letterlijk noemen)"
+
         full_prompt = f"""{base_prompt}
 
 # Preekgegevens
 - **Plaatsnaam:** {user_input.get('plaatsnaam')}
 - **Gemeente:** {user_input.get('gemeente')}
-- **Adres:** {user_input.get('adres') or 'Onbekend'}
+- **Adres:** {display_adres}
 - **Website:** {user_input.get('website') or 'Geen'}
 - **Datum:** {user_input.get('datum')}
 
@@ -873,8 +887,14 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         # LOG DE PROMPT
         save_log(LOGS_DIR, name, full_prompt)
 
-        # Voer analyse uit (lage temperature voor kalender om hallucinaties te voorkomen)
-        temp = 0.1 if name == "11_kalender" else 0.2
+        # Voer analyse uit
+        if name == "11_kalender":
+            temp = 0.1 # Laag voor feitelijke precisie
+        elif name == "14_gebeden":
+            temp = 0.7 # Hoger voor poëtische creativiteit
+        else:
+            temp = 0.2 # Standaard
+
         result = run_analysis(client, full_prompt, title, temperature=temp)
 
         # Extra verificatiestap voor kunst_cultuur om hallucinaties te verwijderen

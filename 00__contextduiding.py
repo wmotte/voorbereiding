@@ -265,48 +265,61 @@ Geef het antwoord als JSON:
 }}
 """
 
-    try:
-        response = client.models.generate_content(
-            model=MODEL_NAME,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                temperature=0.1,
-                tools=[types.Tool(google_search=types.GoogleSearch())],
-                response_mime_type="application/json"
+    max_retries = 1
+    for attempt in range(max_retries + 1):
+        try:
+            response = client.models.generate_content(
+                model=MODEL_NAME,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.1,
+                    tools=[types.Tool(google_search=types.GoogleSearch())],
+                    response_mime_type="application/json"
+                )
             )
-        )
 
-        found_data = {"adres": "Onbekend", "website": "", "gebouw": ""}
-        
-        if response.text:
-            data = extract_json(response.text)
-            found_data["adres"] = data.get("adres", "Onbekend")
-            found_data["gebouw"] = data.get("gebouw_naam", "")
-            found_data["website"] = data.get("website", "")
+            found_data = {"adres": "Onbekend", "website": "", "gebouw": ""}
             
-            print(f"\nGevonden locatie:")
-            if found_data["gebouw"]:
-                print(f"  Gebouw:  {found_data['gebouw']}")
-            print(f"  Adres:   \033[1m{found_data['adres']}\033[0m")
-            if found_data["website"]:
-                print(f"  Website: {found_data['website']}")
-            
-            choice = input("\nIs dit het correcte adres? (j/n): ").strip().lower()
-            if choice in ('j', 'ja', 'y', 'yes'):
-                return found_data
-            
-        else:
-            print("\nGeen adres gevonden via Google Search.")
+            if response.text:
+                data = extract_json(response.text)
+                # Als extract_json een fout geeft, is het geen geldige JSON
+                if "error" in data:
+                    print(f"⚠ Locatie zoeken mislukt: ongeldige JSON (poging {attempt + 1})")
+                    if attempt < max_retries:
+                        continue
+                else:
+                    found_data["adres"] = data.get("adres", "Onbekend")
+                    found_data["gebouw"] = data.get("gebouw_naam", "")
+                    found_data["website"] = data.get("website", "")
+                    
+                    print(f"\nGevonden locatie:")
+                    if found_data["gebouw"]:
+                        print(f"  Gebouw:  {found_data['gebouw']}")
+                    print(f"  Adres:   \033[1m{found_data['adres']}\033[0m")
+                    if found_data["website"]:
+                        print(f"  Website: {found_data['website']}")
+                    
+                    choice = input("\nIs dit het correcte adres? (j/n): ").strip().lower()
+                    if choice in ('j', 'ja', 'y', 'yes'):
+                        return found_data
+                    
+                    # Als gebruiker 'nee' zegt, heeft retrying geen zin, we vallen door naar handmatige input
+                    break 
+                
+            else:
+                print(f"⚠ Geen adres gevonden via Google Search (poging {attempt + 1})")
+                if attempt < max_retries:
+                    continue
 
-        # Als niet gevonden of niet correct
-        correct_address = input("\nVoer het correcte adres in (Straat Huisnummer, Postcode Plaats): ").strip()
-        correct_website = input("Voer de website in (optioneel): ").strip()
-        return {"adres": correct_address, "website": correct_website, "gebouw": ""}
+        except Exception as e:
+            print(f"⚠ Fout bij zoeken adres: {e} (poging {attempt + 1})")
+            if attempt < max_retries:
+                continue
 
-    except Exception as e:
-        print(f"Fout bij zoeken adres: {e}")
-        correct_address = input("\nVoer het correcte adres in: ").strip()
-        return {"adres": correct_address, "website": "", "gebouw": ""}
+    # Als niet gevonden, retries op, of niet correct bevonden door gebruiker
+    correct_address = input("\nVoer het correcte adres in (Straat Huisnummer, Postcode Plaats): ").strip()
+    correct_website = input("Voer de website in (optioneel): ").strip()
+    return {"adres": correct_address, "website": correct_website, "gebouw": ""}
 
 
 def build_remaining_analyses(user_input: dict, kerkelijk_jaar_context: str, church_address: str = "") -> list[dict]:
@@ -494,54 +507,63 @@ def verify_liedboek(client: genai.Client, content: dict) -> dict:
 
 """
 
-    try:
-        response = client.models.generate_content(
-            model=MODEL_NAME,
-            contents=verification_prompt + content_str,
-            config=types.GenerateContentConfig(
-                temperature=0.1,  # Zeer laag voor maximale precisie
-                top_p=0.85,
-                top_k=20,
-                max_output_tokens=8192,
-                tools=[types.Tool(
-                    google_search=types.GoogleSearch()
-                )],
-                safety_settings=[
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE
-                    ),
-                ]
+    max_retries = 1
+    for attempt in range(max_retries + 1):
+        try:
+            response = client.models.generate_content(
+                model=MODEL_NAME,
+                contents=verification_prompt + content_str,
+                config=types.GenerateContentConfig(
+                    temperature=0.1,  # Zeer laag voor maximale precisie
+                    top_p=0.85,
+                    top_k=20,
+                    max_output_tokens=8192,
+                    tools=[types.Tool(
+                        google_search=types.GoogleSearch()
+                    )],
+                    safety_settings=[
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                        types.SafetySetting(
+                            category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+                            threshold=types.HarmBlockThreshold.BLOCK_NONE
+                        ),
+                    ]
+                )
             )
-        )
 
-        if response.text:
-            verified = extract_json(response.text)
-            if "error" not in verified:
-                print("✓ Verificatie voltooid - foute liedsuggesties verwijderd")
-                return verified
+            if response.text:
+                verified = extract_json(response.text)
+                if "error" not in verified:
+                    print("✓ Verificatie voltooid - foute liedsuggesties verwijderd")
+                    return verified
+                else:
+                    print(f"⚠ Verificatie parsing mislukt (poging {attempt + 1})")
+                    if attempt < max_retries:
+                        continue
             else:
-                print("⚠ Verificatie parsing mislukt - originele data behouden")
-                return content
-        else:
-            print("✗ Verificatie mislukt (geen text) - originele data behouden")
-            return content
+                print(f"✗ Verificatie mislukt (geen text) (poging {attempt + 1})")
+                if attempt < max_retries:
+                    continue
 
-    except Exception as e:
-        print(f"✗ Verificatie fout: {str(e)} - originele data behouden")
-        return content
+        except Exception as e:
+            print(f"✗ Verificatie fout: {str(e)} (poging {attempt + 1})")
+            if attempt < max_retries:
+                continue
+    
+    # Als alles mislukt, retourneer originele content
+    print("⚠ Verificatie volledig mislukt - originele data behouden")
+    return content
 
 
 def choice_is_yes(choice: str) -> bool:
