@@ -105,25 +105,43 @@ Open `00_overzicht.md` in de gegenereerde output-map voor een centraal overzicht
 
 ## 🧠 Methodiek & Achtergrond
 
-### Exegese: Zoekmodellen (Hans Snoek)
+De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde homiletische en liturgische methodieken. Voor diepgaande studie zijn de achtergrondartikelen beschikbaar in de `misc/` map.
+
+### 1. Contextanalyse: De Leede & Stark
+De analyse van de hoorders en hun context volgt de methode uit *Tekst in Context*. We kijken naar vier lagen:
+*   **Sociaal-maatschappelijk:** De feitelijke leefwereld.
+*   **Waardenoriëntatie:** Wat drijft hen? (De vijf V's).
+*   **Geloofsoriëntatie:** Hoe verhoudt men zich tot God en zingeving?
+*   **Interpretatie:** De synthese van deze waarnemingen.
+📄 **[Lees de volledige methodiekbeschrijving](misc/De_Leede_Stark__Tekst_in_Context.md)**
+
+### 2. Exegese: Zoekmodellen (Hans Snoek)
 Het script analyseert de Schrifttekst aan de hand van de modellen uit *Een huis om in te wonen*:
 *   **Godsbeelden:** Werkwoordelijk (bevrijden), metaforisch (herder) en eigenschappen (heilig vs. barmhartig).
 *   **Mensbeelden:** De mens in verhouding tot God (aanbidding) en de wereld (zorg voor de naaste).
 *   **Jezusbeelden:** Van achteren (Joods), van boven (Zoon van God), van beneden (mens) en van voren (Koninkrijk).
 
-### Preekstructuur: Lowry's Homiletical Plot
+### 3. Focus & Functie
+Om structuur aan te brengen, wordt onderscheid gemaakt tussen de inhoudelijke kern en het beoogde doel:
+*   **Focus:** Wat wil je zeggen? (De ene zin).
+*   **Functie:** Wat moet de preek doen? (Het effect op de hoorder).
+📄 **[Lees meer over Focus & Functie](misc/Focus_en_Functie.md)**
+
+### 4. Preekstructuur: Lowry's Homiletical Plot
 De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaats van constructie) in vijf stadia:
 1.  **HÈ? (OOPS!)**: Verstoren van het evenwicht (de vraag/jeuk).
 2.  **OEI... (UGH!)**: Analyseren van de discrepantie (waarom is het probleem zo hardnekkig?).
 3.  **AHA! (AHA!)**: Onthullen van de sleutel (de verrassing uit de tekst).
 4.  **JA! (WHEE!)**: Ervaren van het evangelie (de opluchting).
 5.  **ZÓ! (YEAH!)**: Anticiperen op de gevolgen (het gewone leven).
+📄 **[Lees de diepte-analyse van Lowry's methode](misc/Lowrys_Homiletical_Plot.md)**
 
-### Liturgische Gebeden
-De gebeden volgen de PKN-traditie:
-*   **Kyrie**: Nood van de wereld, concreet en actueel.
-*   **Epiclese**: Gebed om de Geest bij de opening van de Schriften.
-*   **Voorbeden**: Concentrische cirkels (wereld, kerk, naaste, eigen gemeente).
+### 5. Liturgische Gebeden
+De gebeden volgen de klassieke en protestantse (PKN) traditie, met oog voor de specifieke functie van elk gebedsmoment:
+*   **Kyrie:** Nood van de wereld, concreet en actueel.
+*   **Epiclese:** Gebed om de Geest bij de opening van de Schriften.
+*   **Voorbeden:** Concentrische cirkels (wereld, kerk, naaste, eigen gemeente).
+📄 **[Lees de achtergrond van de liturgische gebeden](misc/Liturgische_Gebeden.md)**
 
 ---
 
