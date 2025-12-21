@@ -229,7 +229,7 @@ def extract_user_input_from_folder(folder: Path) -> dict:
                 if len(parts) > 1:
                     user_input["datum"] = parts[-1].strip()
 
-    # 4. Fallback: gebruik foldernaam
+    # Fallback: gebruik foldernaam
     if not user_input["plaatsnaam"]:
         # Split op underscores en filter lege strings
         parts = [p for p in folder.name.split("_") if p]
@@ -255,6 +255,45 @@ def extract_user_input_from_folder(folder: Path) -> dict:
             user_input["plaatsnaam"] = parts[0]
 
     return user_input
+
+
+def load_bible_context_as_json(folder: Path) -> str:
+    """
+    Lees alle gedownloade bijbelteksten (NB en NBV21) uit de bijbelteksten map
+    en retourneer deze als een geformatteerde JSON string.
+    """
+    bijbel_dir = folder / "bijbelteksten"
+    if not bijbel_dir.exists():
+        return ""
+
+    context_data = {
+        "naardense_bijbel": [],
+        "nbv21": []
+    }
+
+    # Lees Naardense Bijbel bestanden
+    for json_file in sorted(bijbel_dir.glob("*_NB.json")):
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                context_data["naardense_bijbel"].append(data)
+        except Exception as e:
+            print(f"Fout bij lezen {json_file}: {e}")
+
+    # Lees NBV21 bestanden
+    for json_file in sorted(bijbel_dir.glob("*_NBV21.json")):
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                context_data["nbv21"].append(data)
+        except Exception as e:
+            print(f"Fout bij lezen {json_file}: {e}")
+
+    # Als beide leeg zijn, retourneer lege string
+    if not context_data["naardense_bijbel"] and not context_data["nbv21"]:
+        return ""
+
+    return json.dumps(context_data, ensure_ascii=False, indent=2)
 
 
 def get_gemini_client() -> genai.Client:
@@ -654,14 +693,11 @@ def main():
     else:
         print("\n! Geen bijbelteksten kunnen ophalen (exegese gaat door zonder grondtekst)")
 
-    # Laad de bijbelteksten voor de context
-    bijbelteksten = laad_bijbelteksten(folder)
-
-    # Haal NBV21 teksten op
-    nbv21_teksten = get_nbv21_lezingen_text(previous_analyses["liturgische_context"])
+    # Haal NBV21 teksten op en sla ze op
+    # We hoeven de return value (tekst) niet te gebruiken, want we lezen straks de JSONs
     nbv21_files = save_nbv21_lezingen(folder, previous_analyses["liturgische_context"])
     
-    if nbv21_teksten:
+    if nbv21_files:
         print(f"✓ NBV21 teksten opgehaald en opgeslagen ({len(nbv21_files)} bestanden)")
 
     # Initialiseer client
@@ -675,25 +711,21 @@ def main():
     # Bouw context (inclusief bijbelteksten)
     context_string = build_context_string(previous_analyses)
 
-    # Voeg bijbelteksten toe aan de context
-    if bijbelteksten:
+    # Laad bijbelteksten als JSON en voeg toe aan context
+    bible_json_context = load_bible_context_as_json(folder)
+    
+    if bible_json_context:
         context_string += f"""
 
 ---
 
-## Bijbelteksten (Naardense Bijbel - Pieter Oussoren)
+## Bijbelteksten (Bronmateriaal)
 
-{bijbelteksten}
-"""
+De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 
-    if nbv21_teksten:
-        context_string += f"""
-
----
-
-## Bijbelteksten (NBV21)
-
-{nbv21_teksten}
+```json
+{bible_json_context}
+```
 """
 
     # Laad prompts
