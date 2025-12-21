@@ -917,19 +917,39 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 
 
 def combine_all_json(folder: Path):
-    """Combineer alle genummerde JSON-bestanden (00-14) tot één bestand."""
+    """Combineer alle genummerde JSON-bestanden (00-14) tot één bestand, met ontdubbeling van metadata."""
     print("\nAlle JSON-outputs combineren...")
     combined_data = {}
     
-    # Zoek alle json bestanden die beginnen met 2 cijfers
+    # 1. Laad 00_meta.json (Basis metadata)
+    meta_file = folder / "00_meta.json"
+    if meta_file.exists():
+        try:
+            with open(meta_file, "r", encoding="utf-8") as f:
+                combined_data["00_meta"] = json.load(f)
+        except Exception as e:
+            print(f"  Fout bij lezen 00_meta.json: {e}")
+
+    # 2. Laad alle andere genummerde bestanden
     # We sorteren ze zodat de volgorde logisch is
     json_files = sorted([f for f in folder.glob("*.json") if re.match(r"^\d{2}_.*\.json$", f.name)])
     
     for json_file in json_files:
         key = json_file.stem # bestandsnaam zonder extensie
+        
+        # Sla 00_meta over (al gedaan) en combined_output zelf
+        if key == "00_meta" or key == "combined_output":
+            continue
+            
         try:
             with open(json_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
+                
+                # Ontdubbeling: Verwijder _meta object als het bestaat
+                # (Dit bevat vaak redundante info zoals adres, datum, etc.)
+                if "_meta" in data:
+                    del data["_meta"]
+                
                 combined_data[key] = data
         except Exception as e:
             print(f"  Fout bij lezen {json_file.name}: {e}")
