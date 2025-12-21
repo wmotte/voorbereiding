@@ -21,6 +21,7 @@ import os
 import sys
 import re
 import json
+import argparse
 from pathlib import Path
 from datetime import datetime
 
@@ -653,6 +654,10 @@ def update_summary(output_dir: Path):
 
 def main():
     """Hoofdfunctie."""
+    parser = argparse.ArgumentParser(description="Verdieping: Exegese, Kunst/Cultuur en Homiletiek")
+    parser.add_argument("--exegese", action="store_true", help="Voer alleen de exegese analyse uit")
+    args = parser.parse_args()
+
     # Laad environment variables uit .env
     env_file = SCRIPT_DIR / ".env"
     if env_file.exists():
@@ -745,6 +750,10 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("12_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
         ("13_gebeden", "Gebeden voor de Eredienst"),
     ]
+
+    if args.exegese:
+        print("\nINFO: Alleen exegese wordt uitgevoerd (--exegese)")
+        analysis_definitions = [x for x in analysis_definitions if x[0] == "07_exegese"]
 
     # Mapping van oude naar nieuwe bestandsnamen (voor backwards compatibility)
     old_to_new = {

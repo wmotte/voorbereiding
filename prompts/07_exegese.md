@@ -5,24 +5,6 @@ Voer een grondige exegese uit van de **Eerste Lezing** en het **Evangelie** die 
 ## Context
 De liturgische gegevens en Schriftlezingen zijn hierboven vermeld. Neem deze als uitgangspunt. Behandel de Eerste Lezing en het Evangelie afzonderlijk én in hun onderlinge samenhang.
 
-## Bijbeltekst opnemen
-
-**BELANGRIJK:** Begin de exegese met het integraal citeren van de bijbeltekst(en) uit de **NBV21** vertaling. Deze teksten zijn hierboven in de context aangeleverd. Neem **alleen** de tekst van de **Eerste Lezing** en het **Evangelie** volledig over onder een kopje per lezing.
-
-```
-## Bijbelteksten (NBV21)
-
-### [Eerste Lezing Referentie]
-[volledige tekst hier uit NBV21]
-
-### [Evangelie Referentie]
-[volledige tekst hier uit NBV21]
-```
-
-Dit zorgt ervoor dat de predikant de tekst van de meest gebruikte kanselbijbel direct bij de hand heeft bij het lezen van de exegese. Gebruik de NBV21 ook als primaire tekst voor de verdere analyse.
-
-Dit zorgt ervoor dat de predikant de grondtekst direct bij de hand heeft bij het lezen van de exegese.
-
 ## Werkwijze
 
 ### 1. Afbakening en vertaling
@@ -199,13 +181,6 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
 
 ```json
 {
-  "bijbelteksten": [
-    {
-      "referentie": "string - bijv. 'Jesaja 9:1-6'",
-      "vertaling": "string - 'Naardense Bijbel'",
-      "volledige_tekst": "string - de complete tekst met \\n voor regeleinden"
-    }
-  ],
   "per_lezing": [
     {
       "referentie": "string",
