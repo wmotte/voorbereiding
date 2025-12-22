@@ -1,0 +1,1060 @@
+# Basis System Prompt
+
+Je bent een expert-assistent voor predikanten in de Protestantse Kerk in Nederland (PKN) die een preek voorbereiden. Je voert een grondige analyse uit volgens de homiletische methodiek van De Leede & Stark (2017).
+
+## Werkwijze
+- Zoek actief naar informatie via Google Search
+- Wees concreet en specifiek - vermijd algemeenheden
+- Vermeld bronnen waar relevant
+- Dateer je informatie - geef aan hoe recent bronnen zijn
+- Wees eerlijk over onzekerheden en lacunes
+
+## Bronnen
+- CBS (cbs.nl) en AlleCijfers.nl voor statistieken
+- NOS.nl en dagbladen voor nieuws
+- Protestantsekerk.nl voor kerkelijke informatie
+
+## Output Format: JSON
+
+**KRITISCH:** Je output MOET valide JSON zijn. Volg deze regels strikt:
+
+1. **Alleen JSON:** Geef UITSLUITEND een JSON object terug. Geen markdown, geen inleidende tekst, geen afsluitende opmerkingen.
+
+2. **Valide JSON syntax:**
+   - Gebruik dubbele aanhalingstekens voor strings: `"tekst"`
+   - Escape speciale karakters in strings: newlines als `\n`, quotes als `\"`
+   - Geen trailing comma's na laatste element in arrays/objects
+   - Null voor ontbrekende waarden: `null` (niet `"null"` of leeg)
+
+3. **String formatting:**
+   - Lange teksten: gebruik `\n\n` voor paragraafscheiding
+   - Bullets in tekst: gebruik `\n- ` of `\n• `
+   - Bewaar de inhoudelijke rijkdom, alleen het format verandert
+
+4. **Schema compliance:**
+   - Volg EXACT het JSON schema dat in de opdracht is gespecificeerd
+   - Alle verplichte velden moeten aanwezig zijn
+   - Gebruik de correcte datatypes (string, number, boolean, array, object, null)
+
+5. **Geen meta-taal:**
+   - Begin NIET met ```json of andere markdown
+   - Eindig NIET met ``` of andere markup
+   - Geen "Hier is de JSON output:" of vergelijkbare zinnen
+
+## Toon (binnen JSON strings)
+- Academisch, nuchter en zakelijk
+- Vermijd overdreven of dramatisch taalgebruik
+- Respectvol naar kerk en geloof, maar analytisch van aard
+- Concreet en praktisch gericht op de homiletische praktijk
+
+## Geen meta-taal (binnen JSON strings)
+- Begin string values NOOIT met "Hier volgt een grondige analyse..."
+- Vermijd zelfverheerlijkende kwalificaties
+- Sluit NOOIT af met samenvattende zinnen over het nut
+- Wees bescheiden: dit is een hulpmiddel, geen definitieve waarheid
+
+
+# Preekgegevens
+- **Plaatsnaam:** Waddinxveen
+- **Gemeente:** Brugkerk
+- **Adres:** Kerkweg-Oost 232, 2741 HA Waddinxveen
+- **Website:** https://www.hgpknwaddinxveen.nl/brugkerk
+- **Datum:** 4 januari 2026
+
+# Eerdere Analyses (Context)
+
+## Liturgische Context en Schriftlezingen
+
+{
+  "positie_kerkelijk_jaar": {
+    "zondag_naam": "Openbaring van de Heer (Epifanie)",
+    "liturgische_periode": "Kersttijd",
+    "weken_tot_hoofdfeest": "Climax van de Kersttijd; 2 dagen voor de eigenlijke datum van Epifanie (6 januari)",
+    "leesrooster_jaar": "A",
+    "dominant_evangelie": "Matteüs"
+  },
+  "traditionele_naam": {
+    "latijnse_naam": "Epiphania Domini",
+    "oorsprong": "Afgeleid van het Griekse 'epiphaneia', wat 'verschijning' of 'openbaring' betekent. Oorspronkelijk verwees dit naar de verschijning van een godheid of de troonsbestijging van een keizer.",
+    "nederlandse_vertaling": "Verschijning van de Heer",
+    "volksnamen": [
+      "Driekoningen",
+      "Sterrendag"
+    ]
+  },
+  "bijzondere_zondag_pkn": {
+    "is_bijzonder": true,
+    "naam": "Openbaring van de Heer",
+    "toelichting": "Hoewel Epifanie op 6 januari valt, wordt het in de PKN-praktijk vaak gevierd op de zondag die daar het dichtst bij ligt (in 2026 is dat zondag 4 januari). Het markeert de overgang van de beslotenheid van de kribbe naar de openbaarheid van Christus voor de wereld."
+  },
+  "liturgische_kleur": {
+    "kleur": "wit",
+    "symboliek": "Wit is de kleur van de Christusfeesten, licht, reinheid en goddelijkheid. Het symboliseert de glans van de heerlijkheid van God die in Christus zichtbaar wordt.",
+    "praktische_suggesties": [
+      "Wit antependium en witte stola",
+      "Gebruik van de paaskaars (als symbool van het Licht der wereld)",
+      "Bloemschikking met witte bloemen en goudkleurige accenten (verwijzend naar de geschenken van de wijzen)"
+    ]
+  },
+  "lezingen": {
+    "eerste_lezing": {
+      "referentie": "Jesaja 60,1-6",
+      "boek": "Jesaja",
+      "hoofdstuk": 60,
+      "verzen": "1-6",
+      "thema": "De belofte van het licht dat over Jeruzalem opgaat en de volken die daarheen trekken."
+    },
+    "epistel": {
+      "referentie": "Efeziërs 3,2-3a.5-6",
+      "boek": "Efeziërs",
+      "hoofdstuk": 3,
+      "verzen": "2-3a.5-6",
+      "thema": "Het mysterie dat de heidenen in Christus Jezus mede-erfgenamen zijn geworden."
+    },
+    "evangelie": {
+      "referentie": "Matteüs 2,1-12",
+      "boek": "Matteüs",
+      "hoofdstuk": 2,
+      "verzen": "1-12",
+      "thema": "Het bezoek van de wijzen uit het oosten aan het kind in Betlehem."
+    },
+    "psalm": {
+      "referentie": "Psalm 72",
+      "nummer": 72,
+      "verzen": "1-2, 10-11, 12-13",
+      "antifoon": "Alle volken zullen U aanbidden, Heer."
+    },
+    "alternatieve_lezingen": [
+      {
+        "referentie": "Titus 2,11-14",
+        "reden": "Focus op de genade van God die voor alle mensen is verschenen."
+      }
+    ],
+    "thematische_samenhang": "De rode draad is de universaliteit van het heil. Het licht van God is niet beperkt tot Israël, maar straalt uit naar alle volken (Jesaja). De wijzen (Matteüs) zijn de eerstelingen uit de volken die dit licht herkennen en aanbidden. Paulus (Efeziërs) duidt dit theologisch als het 'geheimenis' dat nu onthuld is."
+  },
+  "thematiek": {
+    "centraal_thema": "Licht voor de wereld: De universele openbaring van Christus.",
+    "stemming": "vreugde",
+    "karakter_zondag": "Feestelijk, grensoverschrijvend en hoopvol. De sfeer is die van een 'koninklijke' huldiging.",
+    "rode_draad_liturgisch_jaar": "Het is de afsluiting van de Kersttijd. Waar Kerst zich richt op de geboorte (incarnatie), richt Epifanie zich op de betekenis van die geboorte voor de gehele wereld. Het vormt de brug naar de Epifaniëntijd, waarin de wonderen en het onderwijs van Jezus centraal staan.",
+    "centrale_geloofsvragen": [
+      "Wie mag er delen in de belofte van God?",
+      "Hoe herkennen wij de tekenen van Gods aanwezigheid in de wereld?",
+      "Wat betekent het om 'het licht' te volgen in een donkere tijd?"
+    ]
+  },
+  "historische_achtergrond": {
+    "oorsprong_vroege_kerk": "In het Oosten (Egypte) was dit feest oorspronkelijk belangrijker dan Kerst. Het herdacht de doop van Jezus, de bruiloft te Kana en de geboorte als één groot feest van de verschijning van God (Theofanie).",
+    "hervormde_traditie": "Binnen de Hervormde traditie werd Epifanie historisch sober gevierd, vaak met de nadruk op de zending (het evangelie voor de heidenen).",
+    "gereformeerde_traditie": "Gereformeerden legden vaak de nadruk op de vervulling van de oudtestamentische profetieën (zoals Psalm 72) in de komst van de wijzen.",
+    "lutherse_traditie": "De Lutherse traditie bewaarde meer van de liturgische rijkdom en ziet Epifanie als een essentieel onderdeel van de kerstcyclus, met veel aandacht voor de hymnen over de Morgenster.",
+    "oecumenische_dimensie": "Epifanie is een van de oudste en meest universele feesten van de christenheid, wat de verbondenheid met de wereldwijde kerk (Oost en West) onderstreept."
+  },
+  "liedsuggesties": {
+    "_verificatie_opmerking": "Alle liederen zijn geverifieerd in het Liedboek (2013).",
+    "opening_intocht": [
+      {
+        "nummer": "Psalm 72",
+        "titel": "Geef, Heer, de koning uwe rechten",
+        "eerste_regel": "Geef, Heer, de koning uwe rechten",
+        "toelichting": "De psalm van de zondag die profetisch spreekt over koningen die geschenken brengen."
+      },
+      {
+        "nummer": "Lied 518",
+        "titel": "Hoe helder staat de morgenster",
+        "eerste_regel": "Hoe helder staat de morgenster",
+        "toelichting": "Klassiek Epifanie-lied dat Christus bezingt als de stralende ster."
+      }
+    ],
+    "kyrie_gloria": [
+      {
+        "nummer": "Lied 299e",
+        "titel": "Kyrie (Heer, ontferm U)",
+        "eerste_regel": "Heer, ontferm U",
+        "toelichting": "Ingetogen Kyrie uit de reeks 'Kyrie en Gloria' (Vogel/Mudde)."
+      },
+      {
+        "nummer": "Lied 305",
+        "titel": "Alle eer en alle glorie",
+        "eerste_regel": "Alle eer en alle glorie",
+        "toelichting": "Feestelijk Gloria dat de universele heerschappij van God bezingt."
+      }
+    ],
+    "bij_lezingen": [
+      {
+        "nummer": "Lied 496",
+        "titel": "Een ster ging op uit Israël",
+        "eerste_regel": "Een ster ging op uit Israël",
+        "toelichting": "Sluit direct aan bij de thematiek van de ster en de profetie."
+      },
+      {
+        "nummer": "Lied 520",
+        "titel": "De wijzen, de wijzen",
+        "eerste_regel": "De wijzen, de wijzen",
+        "toelichting": "Specifiek lied bij de evangelielezing van Matteüs 2."
+      }
+    ],
+    "credo": [
+      {
+        "nummer": "Lied 340b",
+        "titel": "Ik geloof in God de Vader",
+        "eerste_regel": "Ik geloof in God de Vader",
+        "toelichting": "De Apostolische Geloofsbelijdenis op de melodie van Willem Vogel."
+      }
+    ],
+    "collecte_gaven": [
+      {
+        "nummer": "Lied 365",
+        "titel": "Wij dragen onze gaven",
+        "eerste_regel": "Wij dragen onze gaven",
+        "toelichting": "Verwijst naar de gaven van de wijzen en onze eigen respons."
+      }
+    ],
+    "zending_zegen": [
+      {
+        "nummer": "Lied 425",
+        "titel": "Vervuld van uw zegen",
+        "eerste_regel": "Vervuld van uw zegen gaan wij onze wegen",
+        "toelichting": "Passend bij het vertrek van de wijzen 'langs een andere weg' naar hun land."
+      }
+    ]
+  },
+  "praktische_handvatten": {
+    "liturgische_orde_suggestie": "Een feestelijke orde met ruimte voor lichtsymboliek. Begin de dienst eventueel in relatief donker en ontsteek de kaarsen bij het intochtslied om de komst van het Licht te markeren.",
+    "aanpassingen_periode": [
+      {
+        "element": "Gloria",
+        "aanpassing": "Uitbundig zingen",
+        "reden": "Het is nog Kersttijd, een periode van grote vreugde."
+      },
+      {
+        "element": "Halleluja",
+        "aanpassing": "Zingen voor het Evangelie",
+        "reden": "De vreugde om de openbaring van het Woord."
+      }
+    ],
+    "gebedsmotieven": [
+      "Dankzegging voor het licht dat in de wereld is gekomen.",
+      "Voorbede voor de oecumene en de eenheid van de wereldwijde kerk.",
+      "Gebed voor mensen die 'onderweg' zijn of zoeken naar waarheid.",
+      "Gebed voor vrede tussen volken en culturen (in lijn met de wijzen uit verschillende windstreken)."
+    ],
+    "kindernevendienst": {
+      "thema": "De ster achterna",
+      "suggesties": [
+        "Maak een grote ster die de kinderen door de kerk naar hun eigen ruimte volgen.",
+        "Vertel het verhaal van de wijzen met aandacht voor de vreemde geschenken (goud, wierook, mirre)."
+      ]
+    },
+    "visuele_elementen": [
+      "Projectie van een ster of een afbeelding van de aanbidding der wijzen.",
+      "Drie grote kaarsen bij de lezingentafel.",
+      "Een schikking met exotische elementen (specerijen, goudkleurig draad) om de verre reis van de wijzen te symboliseren."
+    ]
+  },
+  "dagelijks_leesrooster": {
+    "week_voorafgaand": [
+      "1 jan: Lucas 2,15-21 (Naamgeving)",
+      "2 jan: 1 Johannes 2,22-28",
+      "3 jan: 1 Johannes 2,29-3,6"
+    ],
+    "verbinding_zondag": "De week na Kerst staat in het teken van de identiteit van het Kind (Naamgeving) en het wandelen in het licht (1 Johannes). De zondag van Epifanie trekt deze lijn door naar de publieke verschijning aan de wereld."
+  }
+}
+
+---
+
+## Sociaal-Maatschappelijke Context
+
+{
+  "demografisch": {
+    "bevolkingsomvang": 33327,
+    "bevolkingsdichtheid": "1.195 inwoners per km²",
+    "leeftijdsopbouw": {
+      "jongeren_0_18": "22%",
+      "werkenden_18_65": "58%",
+      "ouderen_65_plus": "20%",
+      "vergrijzingsgraad": "Gemiddeld, maar stijgend conform landelijke trend",
+      "toelichting": "Waddinxveen kent een relatief jonge bevolking vergeleken met omliggende gemeenten, mede door de aanzienlijke nieuwbouw (o.a. Triangel) die veel jonge gezinnen aantrekt. De groep 65-plussers groeit echter gestaag."
+    },
+    "huishoudens": {
+      "eenpersoonshuishoudens": "28%",
+      "gezinnen_met_kinderen": "41%",
+      "samenstelling_toelichting": "Het percentage gezinnen met kinderen ligt boven het landelijk gemiddelde (34%), wat het karakter van Waddinxveen als 'gezinsgemeente' onderstreept."
+    },
+    "opleidingsniveaus": {
+      "laag": "24%",
+      "midden": "42%",
+      "hoog": "34%",
+      "vergelijking_landelijk": "Het aandeel hoogopgeleiden ligt iets onder het landelijk gemiddelde, terwijl het middelbaar opgeleide segment sterk vertegenwoordigd is."
+    },
+    "herkomst_diversiteit": {
+      "nederlandse_achtergrond": "81%",
+      "migratieachtergrond": {
+        "totaal": "19%",
+        "westers": "8%",
+        "niet_westers": "11%"
+      },
+      "grootste_groepen": [
+        "Marokkaans",
+        "Turks",
+        "Surinaams",
+        "Pools"
+      ],
+      "toelichting": "De diversiteit is geconcentreerd in specifieke wijken. Er is een groeiende groep arbeidsmigranten werkzaam in de logistieke sector rond de A12."
+    }
+  },
+  "economisch": {
+    "belangrijkste_sectoren": [
+      "Logistiek en Transport",
+      "Groothandel",
+      "Bouwnijverheid",
+      "Detailhandel"
+    ],
+    "grote_werkgevers": [
+      "Nedcargo",
+      "Bakker Logistiek",
+      "Lidl Distributiecentrum",
+      "Gemeente Waddinxveen"
+    ],
+    "werkloosheidspercentage": "3.4%",
+    "gemiddeld_inkomen": "€31.200 per jaar per inwoner",
+    "vergelijking_landelijk": "Het besteedbaar inkomen per huishouden ligt circa 5% boven het landelijk gemiddelde.",
+    "economische_vooruitzichten": "Stabiel tot positief door de gunstige ligging in de 'Logistieke Corridor' van de Randstad. Er is echter spanning op de arbeidsmarkt door tekorten in de techniek en logistiek.",
+    "recente_ontwikkelingen": [
+      "Verdere uitbreiding van bedrijventerrein Logistiekpark A12",
+      "Herontwikkeling van het centrumgebied rondom het Gouweplein"
+    ]
+  },
+  "sociale_structuur": {
+    "verenigingsleven": {
+      "actief": true,
+      "belangrijke_verenigingen": [
+        "CVV Be Fair (voetbal)",
+        "ASW (atletiek en wandelen)",
+        "T.V. Waddinxveen (tennis)",
+        "Concordia (muziekvereniging)"
+      ],
+      "toelichting": "Waddinxveen heeft een zeer hecht verenigingsleven met een hoge participatiegraad, wat bijdraagt aan de sociale cohesie."
+    },
+    "sociale_cohesie": "Sterk in de oude kernen en gevestigde wijken; in de nieuwbouwwijk Triangel is de gemeenschapsvorming nog volop in ontwikkeling.",
+    "voorzieningen": {
+      "scholen": [
+        "Coenecoop College (VO)",
+        "CBS De Regenboog",
+        "KBS De Kardinaal Alfrink",
+        "PCBS De Groene Hart"
+      ],
+      "zorg": [
+        "Gezondheidscentrum Waddinxveen",
+        "Woonzorgcentrum Souburgh"
+      ],
+      "winkels": "Hoog voorzieningenniveau door winkelcentrum Gouweplein.",
+      "krimp_of_groei": "Groei van voorzieningen in de nieuwe wijken, lichte druk op de capaciteit van basisscholen."
+    },
+    "woningmarkt": {
+      "type_woningen": "Mix van eengezinswoningen (65%) en meergezinswoningen (35%)",
+      "prijsniveau": "Bovengemiddeld, sterke stijging door overloop uit Gouda en Rotterdam",
+      "beschikbaarheid": "Zeer beperkt, lange wachttijden voor sociale huur"
+    }
+  },
+  "recente_gebeurtenissen": [
+    {
+      "datum": "September 2025",
+      "gebeurtenis": "Oplevering van de laatste fase van de wijk Triangel",
+      "type": "sociaal",
+      "impact": "Toename van het aantal jonge gezinnen en druk op lokale infrastructuur."
+    },
+    {
+      "datum": "Mei 2025",
+      "gebeurtenis": "Discussie over verkeersveiligheid en fijnstof rondom de N207",
+      "type": "politiek",
+      "impact": "Maatschappelijke onrust over leefbaarheid in de wijken nabij de provinciale weg."
+    },
+    {
+      "datum": "November 2025",
+      "gebeurtenis": "Viering van het 10-jarig bestaan van het nieuwe centrum Gouweplein",
+      "type": "succes",
+      "impact": "Versterking van de lokale identiteit en trots op het vernieuwde hart van het dorp."
+    }
+  ],
+  "kerkelijke_context": {
+    "denominaties_aanwezig": [
+      {
+        "naam": "Protestantse Gemeente Waddinxveen (PKN)",
+        "type": "PKN",
+        "geschatte_omvang": "Groot (meerdere wijkgemeenten)"
+      },
+      {
+        "naam": "Gereformeerde Gemeente (Salemkerk)",
+        "type": "Gereformeerd",
+        "geschatte_omvang": "Zeer groot"
+      },
+      {
+        "naam": "Rooms-Katholieke Parochie Sint Victor",
+        "type": "RKK",
+        "geschatte_omvang": "Middelgroot"
+      },
+      {
+        "naam": "Christelijke Gereformeerde Kerk",
+        "type": "Gereformeerd",
+        "geschatte_omvang": "Middelgroot"
+      }
+    ],
+    "positie_gemeente": {
+      "naam": "Brugkerk",
+      "type": "Wijkgemeente binnen de Protestantse Gemeente Waddinxveen (PGW)",
+      "geschatte_leden": "800-1000",
+      "karakter": "Open-confessioneel tot midden-orthodox. De gemeente kenmerkt zich door een actieve betrokkenheid bij de samenleving en een liturgisch verzorgde eredienst."
+    },
+    "recente_kerkelijke_ontwikkelingen": [
+      "Samenwerking tussen de verschillende PKN-wijken (Brugkerk, Ontmoetingskerk, Immanuelkerk) intensiveert door krimp en vergrijzing.",
+      "Focus op jeugdwerk in de nieuwbouwwijken."
+    ],
+    "oecumenische_samenwerking": "Goede contacten met de Sint Victorkerk en deelname aan de Raad van Kerken Waddinxveen voor gezamenlijke diaconale projecten."
+  },
+  "bronnen_gebruikt": [
+    "CBS StatLine (data 2023-2024)",
+    "AlleCijfers.nl (gemeenteprofiel Waddinxveen 2024)",
+    "Website Protestantse Gemeente Waddinxveen",
+    "AD Groene Hart (lokaal nieuws 2024-2025)",
+    "Gemeentelijke monitor Waddinxveen 2024"
+  ]
+}
+
+---
+
+## Waardenoriëntatie
+
+{
+  "vijf_vs": {
+    "visioenen": {
+      "beschrijving": "In Waddinxveen, een groeiende gemeente in het Groene Hart, leeft het visioen van een hechte, zorgzame gemeenschap die de balans bewaart tussen dorpse geborgenheid en moderne dynamiek.",
+      "concrete_voorbeelden": [
+        "Een kerk die een 'brug' slaat (verwijzend naar de naam Brugkerk) tussen verschillende generaties en sociale lagen.",
+        "De succesvolle integratie van bewoners uit de nieuwbouwwijk Triangel in het sociale weefsel van het dorp."
+      ],
+      "collectieve_dreams": [
+        "Een duurzame leefomgeving waar kinderen veilig kunnen opgroeien en ouderen waardig kunnen blijven wonen.",
+        "Een vitale geloofsgemeenschap die ook in 2030 nog een herkenbare plek van betekenis is in de lokale samenleving."
+      ]
+    },
+    "verlangens": {
+      "beschrijving": "Er is een diep verlangen naar onthaasting en morele helderheid in een tijd die als complex en overprikkeld wordt ervaren.",
+      "onvervulde_behoeften": [
+        "Behoefte aan diepgaand contact in een wereld die steeds meer gedigitaliseerd en vluchtig is.",
+        "Verlangen naar een kompas voor ethische keuzes rondom consumptie en levensstijl."
+      ],
+      "concrete_voorbeelden": [
+        "De zoektocht naar rustpunten in het drukke gezinsleven van jonge professionals die in de Randstad werken.",
+        "Het verlangen naar erkenning van de traditie in een snel veranderende kerkelijke context."
+      ]
+    },
+    "vreugden": {
+      "beschrijving": "Men put trots uit de lokale identiteit en de veerkracht van de gemeenschap.",
+      "tradities": [
+        "De sterke verbondenheid met de iconische Hefbrug als symbool van Waddinxveense standvastigheid.",
+        "De rijke koortraditie en de actieve vrijwilligerscultuur binnen de Brugkerk."
+      ],
+      "vieringen": [
+        "De jaarlijkse kerstvieringen die ondanks secularisatie nog steeds veel mensen trekken.",
+        "Het vieren van mijlpalen in de wijkontwikkeling en lokale sportprestaties."
+      ]
+    },
+    "verdriet": {
+      "beschrijving": "Het verdriet is vaak verbonden met verlies van het bekende en de druk op de zorg.",
+      "verloren_gegaan": [
+        "De afname van het aantal actieve kerkgangers, wat leidt tot een gevoel van verlies van gezamenlijkheid.",
+        "Het verdwijnen van kleinschalige lokale winkels ten gunste van grote ketens en online retail."
+      ],
+      "zorgen": [
+        "Zorgen over de eenzaamheid onder de groeiende groep ouderen in Waddinxveen.",
+        "De druk op de woningmarkt waardoor jongeren uit het dorp moeilijk een eigen plek vinden."
+      ]
+    },
+    "vragen": {
+      "beschrijving": "Existentiële vragen over de relevantie van het christelijk geloof in een post-christelijke samenleving.",
+      "onzekerheden": [
+        "Hoe geven we onze waarden door aan een generatie die nauwelijks meer met de kerk in aanraking komt?",
+        "Wat is de rol van de kerk bij maatschappelijke polarisatie?"
+      ],
+      "zoektochten": [
+        "De zoektocht naar een authentieke spiritualiteit die verder gaat dan alleen de zondagse dienst.",
+        "Vragen over de balans tussen individuele vrijheid en collectieve verantwoordelijkheid."
+      ]
+    }
+  },
+  "trendanalyse": {
+    "mesotrends_5_15_jaar": [
+      {
+        "trend": "Vergrijzing en 'dubbele vergrijzing'",
+        "impact_lokaal": "Waddinxveen ziet een sterke toename van 75-plussers, wat de druk op lokale zorgvoorzieningen en mantelzorgers vergroot.",
+        "relevantie_preek": "Thema's als omzien naar elkaar en de waarde van de 'oude dag' resoneren sterk."
+      },
+      {
+        "trend": "Duurzaamheid en energietransitie",
+        "impact_lokaal": "Discussies over zonneparken in de polder en het verduurzamen van de vele jaren '70 woningen in het dorp.",
+        "relevantie_preek": "Rentmeesterschap en de zorg voor de schepping als morele opdracht."
+      },
+      {
+        "trend": "Hybridisering van gemeenschapsleven",
+        "impact_lokaal": "Verenigingen en kerken moeten balanceren tussen fysieke ontmoeting en digitale aanwezigheid.",
+        "relevantie_preek": "Wat betekent 'aanwezigheid' en 'verschijning' (Epifanie) in een digitale wereld?"
+      }
+    ],
+    "microtrends_1_5_jaar": [
+      {
+        "trend": "Post-inflatie bewustzijn",
+        "actueel_voor_datum": "Begin 2026: Mensen zijn kritischer op hun uitgaven na jaren van economische onzekerheid.",
+        "lokale_uitwerking": "Focus op soberheid en de waarde van niet-materiële geschenken (passend bij de wijzen)."
+      },
+      {
+        "trend": "Mentale gezondheid bij jongeren",
+        "actueel_voor_datum": "4 januari 2026: De druk van goede voornemens en de 'Blue Monday' die nadert.",
+        "lokale_uitwerking": "Hoge prestatiedruk onder jongeren in de nieuwbouwwijken."
+      }
+    ]
+  },
+  "motivaction_milieus": {
+    "waarschijnlijk_aanwezig": [
+      {
+        "milieu": "Traditionele burgerij",
+        "geschat_percentage": "35%",
+        "kenmerken_lokaal": "Hechten aan de liturgie, de Statenvertaling of NBV21, en de zondagsrust. Vaak al generaties lang verbonden aan de Brugkerk.",
+        "taal_die_resoneert": [
+          "Geborgenheid",
+          "Trouw",
+          "Traditie",
+          "Eerbied"
+        ],
+        "beelden_die_werken": [
+          "De herder",
+          "Het veilige huis",
+          "De weg van de vaderen"
+        ]
+      },
+      {
+        "milieu": "Moderne burgerij",
+        "geschat_percentage": "30%",
+        "kenmerken_lokaal": "Praktisch ingesteld, focus op harmonie in het gezin en een goede balans tussen werk en privé. Willen een preek die 'ergens over gaat' in het dagelijks leven.",
+        "taal_die_resoneert": [
+          "Balans",
+          "Inspiratie",
+          "Samenwerking",
+          "Toepasbaarheid"
+        ],
+        "beelden_die_werken": [
+          "De wegwijzer",
+          "De brug",
+          "Licht in de dagelijkse routine"
+        ]
+      },
+      {
+        "milieu": "Postmaterialisten",
+        "geschat_percentage": "15%",
+        "kenmerken_lokaal": "Vaak hoger opgeleid, kritisch, maatschappelijk betrokken. Wonen vaak in de nieuwere delen van Waddinxveen.",
+        "taal_die_resoneert": [
+          "Authenticiteit",
+          "Rechtvaardigheid",
+          "Kwetsbaarheid",
+          "Verdieping"
+        ],
+        "beelden_die_werken": [
+          "De zoektocht",
+          "De ster als symbool van hoop",
+          "Grensoverschrijdende ontmoetingen"
+        ]
+      }
+    ],
+    "spanningen_tussen_groepen": [
+      {
+        "groep_a": "Traditionele burgerij",
+        "groep_b": "Postmaterialisten",
+        "spanningsveld": "Verschil in visie op liturgie en de rol van de kerk in het politieke debat (bijv. klimaat of vluchtelingen).",
+        "implicatie_preek": "Zoek de verbinding in de universele boodschap van Epifanie: het licht is er voor álle volken, ongeacht politieke kleur."
+      }
+    ]
+  },
+  "homiletische_implicaties": {
+    "aanbevolen_taalveld": "Een nuchter, verbindend register. Vermijd te abstracte theologische termen zonder ze te aarden in de Waddinxveense klei. Gebruik 'wij' om de gemeenschap te versterken.",
+    "te_vermijden": [
+      "Te activistische taal die polariserend werkt.",
+      "Ouderwets jargon dat de jongere generatie in de Triangel uitsluit.",
+      "Te optimistische 'succes-theologie' die geen ruimte laat voor het verdriet in de gemeente."
+    ],
+    "kansrijke_beelden": [
+      "De ster als GPS voor de ziel: navigatie in een verwarrende tijd.",
+      "De wijzen als 'buitenstaanders' die ons leren met nieuwe ogen naar het bekende te kijken.",
+      "De Brugkerk als pleisterplaats op de reis door het nieuwe jaar 2026."
+    ]
+  }
+}
+
+---
+
+## Geloofsoriëntatie
+
+{
+  "ervaringsgebieden": {
+    "schepping_goede_leven": {
+      "natuurbeleving": "Waddinxveen ligt in het Groene Hart, waar de polderlandschappen en de rivier de Gouwe de natuurbeleving bepalen. In januari is de weidsheid van de polder vaak grijs en kaal, wat een contrast vormt met het liturgische thema van het opgaande licht (Jesaja 60).",
+      "feesten_vieringen": [
+        "Landelijke intocht van Sinterklaas (historisch sterk in de regio)",
+        "Lokale kerstmarkten en 'Waddinxveen straalt' evenementen",
+        "Nieuwjaarsrecepties van lokale verenigingen"
+      ],
+      "uitingen_dankbaarheid": "Dankbaarheid wordt vaak geuit in een nuchtere, werkzame houding ('handen uit de mouwen'). Er is een sterke traditie van dankstagen voor gewas en arbeid, passend bij de agrarische en industriële wortels van het dorp."
+    },
+    "eindigheid_zingeving": {
+      "omgang_vergankelijkheid": "De vergankelijkheid wordt tastbaar in de vergrijzing van de oudere wijken rondom de Brugkerk. Men hecht aan traditie en continuïteit als antwoord op de snelle veranderingen in de maatschappij.",
+      "rituelen_sterven": [
+        "Traditionele uitvaarten vanuit de Brugkerk",
+        "Bezoekwerk door de ouderlingen en de bezoekdames",
+        "Herdenkingsdiensten op de laatste zondag van het kerkelijk jaar"
+      ],
+      "taal_over_dood": "De dood wordt vaak besproken in termen van 'thuiskomen bij de Heere' of 'het einde van de aardse reis', passend bij de hervormd-gereformeerde signatuur van de gemeente."
+    },
+    "menselijk_tekort": {
+      "omgang_falen_schuld": "In een forensengemeente als Waddinxveen heerst een sterke prestatiecultuur. Falen wordt vaak gezien als persoonlijk tekortschieten. De notie van 'zonde' is theologisch bekend, maar wordt in het dagelijks leven vertaald naar de druk om te voldoen aan maatschappelijke normen.",
+      "taboes": [
+        "Psychische kwetsbaarheid",
+        "Echtscheiding (hoewel afnemend)",
+        "Financiële problemen in de 'middenklasse' wijken"
+      ],
+      "beleving_vergeving": "Vergeving wordt beleefd als een bevrijding van de last van het 'moeten'. De prediking van de genade is een essentieel tegenwicht voor de lokale 'doe-maar-normaal' mentaliteit."
+    },
+    "lijden_kwaad": {
+      "recente_ervaringen": [
+        "Impact van het 'ravijnjaar 2026' op lokale voorzieningen en jeugdzorg (bron: Consultancy.nl/VNG)",
+        "Eenzaamheid onder ouderen in de lintbebouwing",
+        "Zorgen over de polarisatie in de landelijke politiek die ook lokaal voelbaar is"
+      ],
+      "duiding_onrecht": "Onrecht wordt vaak geduid als een gevolg van de gebrokenheid van de wereld. Er is een sterke neiging tot diaconale actie ('Waddinxveen helpt').",
+      "theodicee_vragen": [
+        "Waarom treft ziekte ook jonge gezinnen in de nieuwe wijk Triangel?",
+        "Waarom lijkt het kwaad in de wereld (oorlogen) onuitroeibaar?"
+      ]
+    },
+    "wijsheid_volken": {
+      "andere_stromingen": [
+        "Islam (Moskee Noer-el-Islam)",
+        "Evangelische invloeden (Impact Church)",
+        "Seculier humanisme in de nieuwe woonwijken"
+      ],
+      "interreligieuze_verhoudingen": "De verhoudingen zijn over het algemeen respectvol maar op afstand. Er is weinig structurele oecumenische of interreligieuze dialoog op basisniveau, behalve bij incidentele maatschappelijke projecten.",
+      "spirituele_markt": "In de wijk Triangel is er belangstelling voor mindfulness en yoga, vaak als middel tegen stress en burn-out."
+    },
+    "humaniteit_gemeenschap": {
+      "uitingen_solidariteit": [
+        "Voedselbank Waddinxveen",
+        "Vrijwilligerswerk in zorgcentrum 'De Wijngaard'",
+        "Buurtpreventie-apps en lokale Facebookgroepen"
+      ],
+      "vormen_naastenliefde": [
+        "Hulp aan vluchtelingen in de regio",
+        "Omzien naar zieke gemeenteleden via het wijkwerk"
+      ],
+      "gemeenschapsgevoel": "Het gemeenschapsgevoel is sterk binnen de eigen kerkelijke zuil, maar de verbinding met de bredere Waddinxveense samenleving vraagt voortdurend aandacht door de snelle groei van het dorp (bron: Gemeente Waddinxveen, 2024)."
+    }
+  },
+  "geloofstaal_analyse": {
+    "gangbaarheid_christelijke_taal": "Binnen de Brugkerk is de klassieke tale Kanaäns nog deels gangbaar, maar er is een groeiende kloof met de jongere generatie en de bewoners van de nieuwe wijken.",
+    "versleten_woorden": [
+      "Wedergeboorte",
+      "Heiliging",
+      "Godsvrucht"
+    ],
+    "onbekende_concepten": [
+      "Epifanie (vaak alleen bekend als Driekoningen)",
+      "Liturgisch jaar",
+      "Rechtvaardiging"
+    ],
+    "seculiere_equivalenten": [
+      {
+        "religieus_concept": "Genade",
+        "seculiere_taal": "Een onverdiende tweede kans"
+      },
+      {
+        "religieus_concept": "Gemeenschap der heiligen",
+        "seculiere_taal": "Sociale verbondenheid en omzien naar elkaar"
+      },
+      {
+        "religieus_concept": "Navolging",
+        "seculiere_taal": "Inspiratie omzetten in daden"
+      }
+    ],
+    "vertrouwdheid_liturgie": "Hoog bij de vaste kern (gebruik van Psalmberijming 1773 en Weerklank), maar een drempel voor zoekers die de ster van Betlehem willen volgen."
+  },
+  "spirituele_trends_regio": {
+    "kerkbezoek": {
+      "trend": "stabiel",
+      "percentage": "14%",
+      "toelichting": "Hoewel het landelijk gemiddelde daalt, vertoont de regio Midden-Holland (waaronder Waddinxveen) een tragere daling en volgens CBS 2025 zelfs een lichte stagnatie in de ontkerkelijking (bron: CBS Religie 2024/2025)."
+    },
+    "kerkverlating": {
+      "omvang": "Gematigd onder ouderen, sterker onder jongvolwassenen (20-35 jaar).",
+      "redenen": [
+        "Gebrek aan aansluiting bij de traditionele liturgie",
+        "Individualisering",
+        "Verhuizing naar steden voor studie en werk"
+      ]
+    },
+    "nieuwe_vormen": [
+      {
+        "naam": "Kliederkerk Waddinxveen",
+        "beschrijving": "Intergeneratieve vorm van kerk-zijn in de wijk Triangel, gericht op jonge gezinnen.",
+        "doelgroep": "Gezinnen met kinderen die niet (meer) naar de reguliere diensten gaan."
+      }
+    ],
+    "oecumenische_initiatieven": [
+      "Gezamenlijke diensten tijdens de Week van Gebed",
+      "Samenwerking in de lokale diaconie"
+    ]
+  },
+  "homiletische_implicaties": {
+    "geloofstaal_advies": "Gebruik de vertrouwde beelden uit de Schrift (Licht, Ster, Koning), maar vertaal ze naar de concrete context van 2026. Vermijd jargon zonder uitleg, zeker met het oog op de 'zoekers' die met Epifanie de kerk kunnen bezoeken.",
+    "aanknopingspunten": [
+      "De zoektocht van de wijzen als metafoor voor de moderne zoeker naar zingeving.",
+      "De spanning tussen de macht van Herodes en de kwetsbaarheid van het Kind, vertaald naar de politieke en financiële onzekerheid van 2026.",
+      "De 'Hefbrug' als lokaal symbool voor de verbinding tussen God en mens, en tussen verschillende groepen in het dorp."
+    ],
+    "te_vermijden_aannames": [
+      "Veronderstel niet dat iedereen de betekenis van goud, wierook en mirre paraat heeft.",
+      "Ga er niet vanuit dat de vreugde van Epifanie vanzelfsprekend is in een tijd van economische druk.",
+      "Denk niet dat de 'wijsheid van de volken' (andere religies) door de gemeente direct als verrijkend wordt ervaren; dit vraagt om een zorgvuldige bijbelse inkadering."
+    ]
+  }
+}
+
+---
+
+## Interpretatieve Synthese
+
+{
+  "congruentie_analyse": {
+    "officiele_geloofsopvatting": "De Brugkerk staat in de Hervormd-Gereformeerde traditie binnen de PKN, waarbij de centrale autoriteit van de Schrift en de noodzaak van persoonlijke bekering en geloofsverdieping worden beleden. Men ziet de kerk als een 'vindplaats van geloof, hoop en liefde' waar de uitleg van de Bijbel centraal staat.",
+    "geleefde_praktijk": "In de praktijk is er een sterke nadruk op behoudende vormen, zoals het gebruik van de Psalmberijming van 1773 en de bundel Weerklank. Er is een hechte gemeenschapszin met veel aandacht voor onderlinge zorg en traditionele kerkelijke activiteiten (catechese, verenigingsleven).",
+    "spanningen_norm_praktijk": [
+      "De wens om een 'toegankelijke gemeente' te zijn botst met de hoge drempel van de liturgische vormgeving (taalgebruik, psalmen 1773) voor buitenstaanders.",
+      "De nadruk op de 'vreemdeling' in de Schrift (zoals de wijzen) contrasteert met de homogene sociaal-culturele samenstelling van de eigen wijkgemeente.",
+      "De roeping tot zending versus de sterke interne focus op het behoud van de eigen gereformeerde identiteit."
+    ],
+    "onbewuste_aannames": [
+      "Men gaat ervan uit dat 'echte' geloofsverdieping onlosmakelijk verbonden is met een specifieke, traditionele taal en vorm.",
+      "De aanname dat zoekers van buitenaf zich moeten aanpassen aan de bestaande kerkgewoonten in plaats van andersom.",
+      "Het stilzwijgende vertrouwen dat de continuïteit van de gemeente gewaarborgd blijft door de eigen gezinnen, ondanks de secularisatie in de omliggende wijken."
+    ]
+  },
+  "verbindingspunten": {
+    "aansluiting_geleefde_ervaring": [
+      "De start van het nieuwe jaar (4 januari) brengt bij veel hoorders een mengeling van hoop en onzekerheid over de toekomst met zich mee.",
+      "De identiteit van Waddinxveen als 'brugstad' (de Hefbrug) kan dienen als metafoor voor God die de kloof naar de mens overbrugt.",
+      "De ervaring van het 'onderweg zijn' in een veranderende samenleving, analoog aan de reis van de wijzen."
+    ],
+    "resonerende_beelden": [
+      {
+        "beeld": "De Hefbrug",
+        "waarom_resoneert": "Het is het iconische symbool van Waddinxveen dat verbinding maakt tussen twee oevers; passend bij Epifanie als verbinding tussen God en de volken.",
+        "bijbelse_parallel": "Christus als de weg/brug naar de Vader."
+      },
+      {
+        "beeld": "De Ster als navigatie",
+        "waarom_resoneert": "In een tijd van overvloed aan informatie en 'fake news' is er behoefte aan een betrouwbaar kompas of gids.",
+        "bijbelse_parallel": "De ster van Betlehem (Matteüs 2:2)."
+      },
+      {
+        "beeld": "De Polder in de winter",
+        "waarom_resoneert": "De kale, donkere polders rond Waddinxveen in januari versterken het verlangen naar het 'licht' uit Jesaja 60.",
+        "bijbelse_parallel": "Het volk dat in duisternis wandelt (Jesaja 9:1 / 60:2)."
+      }
+    ],
+    "brugverhalen": [
+      "De komst van nieuwe bewoners in de wijk Park Triangel: hoe kijken zij naar de monumentale Brugkerk aan de overkant van de Gouwe?",
+      "Verhalen over lokale ondernemers die, net als de wijzen, hun eigen weg moeten zoeken in een complexe economische realiteit."
+    ]
+  },
+  "confrontatiepunten": {
+    "bijbeltekst_confronteert": [
+      "De wijzen waren 'magiërs' uit het oosten, religieuze outsiders die niet tot het verbondsvolk behoorden, maar wel als eersten knielden.",
+      "Herodes' angst voor de nieuwe Koning legt de vinger bij onze eigen weerstand tegen verandering en verlies van controle.",
+      "De wijzen keerden 'langs een andere weg' terug; bekering vraagt om het verlaten van gebaande paden."
+    ],
+    "profetische_kritiek": [
+      "Is de Brugkerk een plek waar 'vreemdelingen' (zoals de wijzen) zich werkelijk welkom voelen, of is het een besloten bolwerk?",
+      "Wordt de Bijbel gebruikt als een licht voor de wereld, of als een lantaarn die alleen de eigen kring verlicht?"
+    ],
+    "blinde_vlekken": [
+      "De neiging om Epifanie te romantiseren tot een 'driekoningenverhaal', terwijl het een politiek geladen tekst is over macht en erkenning.",
+      "Het over het hoofd zien van de 'wijzen van nu': mensen buiten de kerk die op hun eigen manier op zoek zijn naar waarheid en licht."
+    ]
+  },
+  "hoordersanalyse": {
+    "los_te_laten_aannames": [
+      "Dat alle hoorders de tale Kanaäns vloeiend spreken; ook in de Brugkerk zitten mensen met twijfels en vragen.",
+      "Dat de hoorders alleen uit de directe omgeving van de Kerkweg komen; de gemeente is regionaal verspreid.",
+      "Dat men op 4 januari alleen behoefte heeft aan een 'gezellige' afsluiting van de kersttijd."
+    ],
+    "diversiteit_binnen_gemeente": [
+      "De 'oude garde' die hecht aan de 1773-berijming en de klassieke gereformeerde leer.",
+      "Jonge gezinnen uit de nieuwbouw die zoeken naar praktische relevantie voor hun drukke leven.",
+      "Mensen die sociaal-economisch kwetsbaar zijn en voor wie de 'geschenken van goud' ver weg staan."
+    ],
+    "onzichtbare_hoorders": [
+      "De seculiere Waddinxvener die via de kerkomroep of YouTube meeluistert uit nieuwsgierigheid.",
+      "De randkerkelijke die alleen bij grote feesten of aan het begin van het jaar de drempel overstapt.",
+      "De migrant of vluchteling in Waddinxveen voor wie de 'wijzen uit het oosten' een heel andere betekenis hebben."
+    ]
+  },
+  "specifiek_voor_datum": {
+    "seizoens_associaties": [
+      "De 'donkere dagen' na de kerstvakantie.",
+      "De overgang van de feestdagen naar het gewone werkritme op maandag 5 januari.",
+      "Winterse kou en de behoefte aan geborgenheid."
+    ],
+    "verwachting_hoorders": "Men verwacht een bemoedigend woord voor het nieuwe jaar, een duiding van de tijd en een herkenbaar bijbelverhaal als ankerpunt.",
+    "actualiteit": [
+      "De gemeentelijke nieuwjaarsreceptie op 5 januari 2026: wat is de boodschap van de kerk aan de burgerlijke gemeente?",
+      "Discussies over de energietransitie en 'aardgasvrije wijken' in Waddinxveen (relevant bij het thema 'licht' en 'warmte').",
+      "Verkeersproblematiek rond de Brugweg: de moeite van het 'onderweg zijn' en het vinden van de juiste route."
+    ]
+  },
+  "homiletische_aanbevelingen": {
+    "toon": {
+      "aanbevolen": "Nuchter, pastoraal-bewogen en analytisch. Een toon die de traditie serieus neemt maar de actualiteit niet schuwt.",
+      "te_vermijden": "Te populair taalgebruik dat niet past bij de liturgische setting, of een te moralistische 'moeten'-toon."
+    },
+    "taal": {
+      "toegankelijk": [
+        "Gebruik termen als 'zoektocht', 'richtinggevoel', 'herkenning' en 'verrassing'.",
+        "Vertaal 'openbaring' naar 'het moment dat het kwartje valt' of 'het zien van wat er werkelijk toe doet'."
+      ],
+      "uit_te_leggen": [
+        "Epifanie (verschijning)",
+        "Magiërs (niet zomaar koningen, maar zoekers)",
+        "Gereformeerde identiteit in relatie tot de universele boodschap"
+      ]
+    },
+    "beelden": {
+      "werkend": [
+        "De ster als een 'innerlijk kompas' in plaats van alleen een astronomisch verschijnsel.",
+        "De geschenken (goud, wierook, mirre) als symbolen voor wat wij God te bieden hebben in 2026.",
+        "De 'andere weg' terug als metafoor voor een veranderde levenshouding."
+      ],
+      "niet_werkend": [
+        "Te abstracte theologische verhandelingen over de twee naturen van Christus zonder praktische landing.",
+        "Sprookjesachtige voorstellingen van de wijzen die de ernst van de tekst (Herodes) maskeren."
+      ]
+    },
+    "balans": {
+      "pastoraal_profetisch": "60% pastoraal (bemoediging voor het nieuwe jaar) en 40% profetisch (de uitdaging om als gemeente 'licht' te zijn voor de omgeving).",
+      "troost_vermaning": "Focus op troost: God laat zich vinden, ook door wie Hem niet zochten. De vermaning ligt in de vraag of wij Hem ook herkennen in de vreemdeling."
+    },
+    "waarschuwingen": [
+      {
+        "onderwerp": "Liturgische vernieuwing",
+        "risico": "Weerstand bij de kernleden als de preek te veel aandringt op het loslaten van vormen.",
+        "advies": "Bevestig de waarde van de traditie, maar laat zien hoe de tekst juist oproept tot grensoverschrijding."
+      },
+      {
+        "onderwerp": "Politieke actualiteit",
+        "risico": "Polarisatie binnen de gemeente bij te specifieke politieke uitspraken.",
+        "advies": "Blijf bij de bijbelse lijn van gerechtigheid en vrede zonder partijpolitiek te worden."
+      }
+    ]
+  },
+  "kernimplicaties_preek": [
+    "Thematiseer de 'andere weg': hoe het evangelie ons in 2026 uitdaagt om buiten onze comfortzone (de eigen kerkmuur) te treden.",
+    "Verbind de ster van Betlehem met de behoefte aan een betrouwbaar kompas in een tijd van maatschappelijke onrust en desinformatie.",
+    "Positioneer de Brugkerk als een plek die, net als de kribbe, openstaat voor 'wijzen' van buitenaf (de zoekers uit de nieuwe wijken).",
+    "Gebruik de metafoor van de brug (Hefbrug) om de beweging van God naar de wereld en de opdracht van de gemeente te verbeelden.",
+    "Maak de geschenken van de wijzen concreet: wat betekent het om in Waddinxveen 'goud, wierook en mirre' (toewijding, gebed en offervaardigheid) te brengen?"
+  ]
+}
+
+---
+
+# Huidige Opdracht
+
+# Representatieve Hoorders: Personaprofielen voor Brugkerk
+
+Creëer vijf gedetailleerde fictieve personages die representatief zijn voor de hoorders in Brugkerk te Waddinxveen. Deze persona's dienen als concrete 'gezichten' bij de abstracte hoordersanalyse en helpen de predikant om de preek te richten op werkelijke mensen.
+
+## Instructies
+
+### Basisprincipe
+De personages moeten **realistisch en herkenbaar** zijn voor de specifieke gemeente. Gebruik de informatie uit de voorgaande analyses (sociaal-maatschappelijke context, waardenoriëntatie, geloofsoriëntatie, etc.) om personages te creëren die de diversiteit van de gemeente weerspiegelen.
+
+### Diversiteit
+Zorg voor spreiding over:
+- **Leeftijd:** Brede range van 16 tot 80 jaar (minimaal één jongere 16-25, één 30-50, één 50-65, één 70+)
+- **Geslacht:** Mix van mannen en vrouwen
+- **Levensfase:** Jongeren (scholier/student), young professionals, gezinnen, alleenstaanden, gescheidenen, weduwen/weduwnaars, stellen zonder kinderen, gepensioneerden
+- **Woonsituatie:** Thuiswonend bij ouders, zelfstandig, samenwonend, getrouwd - niet iedereen heeft een gezin!
+- **Sociaal-economisch:** Reflecteer de lokale economische realiteit
+- **Kerkelijke betrokkenheid:** Van kernlid tot randkerkelijke, van meegebracht door ouders tot eigen keuze
+
+### Per personage beschrijven (400-600 woorden)
+
+#### 1. Basisgegevens
+- **Naam:** Kies een passende, realistische Nederlandse naam (voornaam en achternaam)
+- **Leeftijd:** Specifiek jaar
+- **Fysieke verschijning:** Lengte, lichaamsbouw, huidskleur, haarkleur en -stijl, opvallende kenmerken
+- **Woonplaats:** Specifieke wijk of straat in Waddinxveen indien relevant
+
+#### 2. Relaties en sociaal netwerk
+- **Woonsituatie:** Thuiswonend bij ouders, zelfstandig (huur/koop), studentenkamer, samenwonend, verzorgingshuis
+- **Relatiestatus:** Single, daten, relatie, samenwonend, getrouwd, gescheiden, weduwe/weduwnaar
+- **Kinderen:** Geen, wens, thuiswonend, uitgevlogen, kleinkinderen (indien van toepassing)
+- **Familie:** Relatie met ouders, broers/zussen, verdere familie
+- **Sociaal netwerk:** Vrienden, buren, verenigingen, collega's, mate van sociale inbedding of eenzaamheid
+
+#### 3. Opleiding en werk
+- **Scholing:** Hoogst genoten opleiding, eventuele cursussen of bijscholing
+- **Intelligentie en leerstijl:** Praktisch vs. theoretisch, verbaal vs. visueel
+- **Werkachtergrond:** Huidige of voormalige beroep(en), sector, werkdruk
+- **Financiële situatie:** Inkomensniveau, eventuele zorgen of schulden
+
+#### 4. Gezondheid
+- **Lichamelijke gezondheid:** Chronische aandoeningen, beperkingen, medicijngebruik
+- **Mentale gezondheid:** Stressniveau, eventuele psychische klachten (angst, depressie, burn-out)
+- **Leefstijl:** Beweging, voeding, slaap, eventueel roken/alcohol
+
+#### 5. Trauma's en zorgen
+- **Verleden:** Ingrijpende gebeurtenissen (verlies, ziekte, scheiding, faillissement, ongeluk)
+- **Heden:** Huidige zorgen en stress (werk, gezondheid, relaties, financiën, kinderen)
+- **Onverwerkte pijn:** Wat draagt deze persoon nog met zich mee?
+
+#### 6. Geloof en spiritualiteit
+- **Kerkelijke achtergrond:** Opvoeding, doopsel, belijdenis, eventuele kerkwisselingen
+- **Huidige betrokkenheid:** Frequentie kerkbezoek, taken in de gemeente, deelname aan activiteiten
+- **Geloofsbeleving:** Hoe ervaart deze persoon God? Welke geloofstaal spreekt aan?
+- **Twijfels en vragen:** Waar worstelt deze persoon mee op geloofsvlak?
+- **Spirituele behoeften:** Wat zoekt deze persoon in de kerk en in de preek?
+
+#### 7. Hobby's en interesses
+- **Vrijetijdsbesteding:** Sport, cultuur, natuur, muziek, lezen, handwerk
+- **Media:** Welke kranten, programma's, podcasts, sociale media?
+- **Verenigingen:** Lidmaatschappen buiten de kerk
+
+### Aansluiting bij de Schriftlezingen
+
+Geef per personage kort aan:
+- Welk aspect van de Schriftlezing(en) van deze zondag zou deze persoon **raken**?
+- Welk aspect zou deze persoon mogelijk **afstoten** of **niet begrijpen**?
+- Welke **existentiële vraag** uit het leven van dit personage zou de tekst kunnen adresseren?
+
+## Outputformaat
+
+Gebruik de volgende structuur voor elk personage:
+
+---
+
+## [Nummer]. [Voornaam Achternaam] ([leeftijd])
+
+### Wie is [voornaam]?
+[Inleidende paragraaf met kernschets van het personage]
+
+### Relaties en sociaal netwerk
+[Beschrijving van woonsituatie, relaties en sociale context]
+
+### Opleiding, werk en financiën
+[Beschrijving van achtergrond en huidige situatie]
+
+### Gezondheid
+[Lichamelijke en mentale gezondheid]
+
+### Zorgen en trauma's
+[Wat draagt deze persoon met zich mee?]
+
+### Geloof en spiritualiteit
+[Kerkelijke betrokkenheid en geloofsbeleving]
+
+### Hobby's en interesses
+[Vrijetijdsbesteding en media]
+
+### Aansluiting bij de Schriftlezingen
+[Hoe raakt de tekst dit personage?]
+
+---
+
+## Bronnen
+Baseer de personages op de informatie uit:
+- Sociaal-maatschappelijke context (demografie, economie, woningmarkt)
+- Waardenoriëntatie (milieus, trends, zorgen)
+- Geloofsoriëntatie (kerkelijke achtergrond, geloofstaal)
+- Interpretatieve synthese
+
+Verwijs expliciet naar lokale omstandigheden die je in deze analyses hebt gevonden.
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "personas": [
+    {
+      "nummer": 1,
+      "naam": {
+        "voornaam": "string",
+        "achternaam": "string"
+      },
+      "leeftijd": "number",
+      "kernschets": "string - 2-3 zinnen die de essentie van dit personage vangen",
+      "basisgegevens": {
+        "fysieke_verschijning": "string - lengte, lichaamsbouw, haarkleur, opvallende kenmerken",
+        "woonwijk": "string - specifieke wijk of straat in Waddinxveen"
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "string - thuiswonend|zelfstandig|samenwonend|verzorgingshuis|etc.",
+        "relatiestatus": "string - single|relatie|getrouwd|gescheiden|weduwe|etc.",
+        "kinderen": "string|null - geen|wens|thuiswonend|uitgevlogen|kleinkinderen",
+        "familie_relatie": "string - relatie met ouders/broers/zussen",
+        "sociaal_netwerk": "string - vrienden, buren, mate van eenzaamheid"
+      },
+      "opleiding_werk": {
+        "opleiding": "string - hoogst genoten opleiding",
+        "intelligentie_leerstijl": "string - praktisch vs. theoretisch",
+        "huidige_werk": "string - beroep, sector, werkdruk",
+        "voormalig_werk": "string|null",
+        "financiele_situatie": "string - inkomensniveau, zorgen, schulden"
+      },
+      "gezondheid": {
+        "lichamelijk": "string - chronische aandoeningen, beperkingen, medicijnen",
+        "mentaal": "string - stressniveau, psychische klachten",
+        "leefstijl": "string - beweging, voeding, roken/alcohol"
+      },
+      "traumas_zorgen": {
+        "verleden": ["string - ingrijpende gebeurtenissen"],
+        "heden": ["string - huidige zorgen"],
+        "onverwerkt": "string - wat draagt deze persoon nog mee?"
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "string - opvoeding, doopsel, belijdenis",
+        "huidige_betrokkenheid": "string - frequentie kerkbezoek, taken",
+        "geloofsbeleving": "string - hoe ervaart deze persoon God?",
+        "geloofstaal": "string - welke taal spreekt aan?",
+        "twijfels_vragen": ["string - geloofsworstellingen"],
+        "spirituele_behoeften": "string - wat zoekt deze persoon?"
+      },
+      "hobbys_interesses": {
+        "vrijetijd": ["string - sport, cultuur, natuur"],
+        "media": ["string - kranten, programma's, podcasts, sociale media"],
+        "verenigingen": ["string - lidmaatschappen buiten kerk"]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "string - welk aspect van de lezingen raakt dit personage?",
+        "wat_afstoot": "string - welk aspect zou kunnen afstoten of niet begrepen worden?",
+        "existentiele_vraag": "string - welke vraag uit dit leven adresseert de tekst?"
+      }
+    }
+  ]
+}
+```
+
+**BELANGRIJK:**
+- Retourneer ALLEEN valide JSON, geen markdown of toelichting.
+- Precies 5 personas met spreiding over leeftijd (16-80), geslacht, en levensfase.
+- Per persona 400-600 woorden inhoud, verdeeld over de velden.
+- Gebruik realistische Nederlandse namen.
+

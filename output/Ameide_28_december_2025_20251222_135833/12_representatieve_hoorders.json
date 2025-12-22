@@ -1,0 +1,386 @@
+{
+  "_meta": {
+    "title": "Representatieve Hoorders",
+    "filename": "12_representatieve_hoorders",
+    "generated_at": "2025-12-22T14:13:05.896194",
+    "user_input": {
+      "plaatsnaam": "Ameide",
+      "gemeente": "Sionkerk",
+      "datum": "28 december 2025",
+      "adres": "Prinsengracht 28, 4233 EW Ameide",
+      "website": "https://www.sionkerkameide.nl/"
+    }
+  },
+  "personas": [
+    {
+      "nummer": 1,
+      "naam": {
+        "voornaam": "Thijs",
+        "achternaam": "van Houwelingen"
+      },
+      "leeftijd": 19,
+      "kernschets": "Thijs is een zoekende student die pendelt tussen de progressieve universiteitsstad Utrecht en zijn behoudende wortels in Ameide. Hij voelt een diepe loyaliteit naar de Sionkerk, maar worstelt met de relevantie van de traditie voor zijn dagelijks leven in de stad.",
+      "basisgegevens": {
+        "fysieke_verschijning": "1.85m, atletisch gebouwd door jarenlang voetbal bij VV Ameide. Kort blond haar, vaak een lichte stoppelbaard. Draagt meestal een nette jeans met een hoodie of een casual overhemd.",
+        "woonwijk": "Woont doordeweeks op een studentenkamer in Utrecht, maar is elk weekend te vinden in het ouderlijk huis aan de J.W. van Puttestraat."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "thuiswonend",
+        "relatiestatus": "single",
+        "kinderen": "geen",
+        "familie_relatie": "Hechte band met zijn ouders en twee jongere zusjes. Zijn vader is diaken in de Sionkerk, wat een zekere druk legt op zijn eigen kerkelijke aanwezigheid.",
+        "sociaal_netwerk": "Groot netwerk in Ameide via de voetbalclub en de jeugdvereniging van de kerk. In Utrecht heeft hij een nieuwe vriendengroep die grotendeels buitenkerkelijk is, wat zorgt voor een spagaat in zijn sociale identiteit."
+      },
+      "opleiding_werk": {
+        "opleiding": "Tweedejaars student Bestuurs- en Organisatiewetenschap aan de Universiteit Utrecht.",
+        "intelligentie_leerstijl": "Theoretisch ingesteld, analytisch en verbaal sterk. Hij leert door discussie en reflectie.",
+        "huidige_werk": "Bijbaan als vakkenvuller bij de lokale supermarkt in Ameide op zaterdag en een studentenbaan als onderzoeksassistent.",
+        "voormalig_werk": null,
+        "financiele_situatie": "Afhankelijk van studiefinanciering en bijdrage van ouders; hij maakt zich zorgen over de toekomstige studieschuld en de onbereikbaarheid van de woningmarkt in de regio."
+      },
+      "gezondheid": {
+        "lichamelijk": "Goede gezondheid, traint drie keer per week. Geen medicijngebruik.",
+        "mentaal": "Ervaart prestatiedruk vanuit de studie en een lichte vorm van 'fomo' (fear of missing out) in beide werelden waarin hij leeft. Soms somber over de klimaatcrisis.",
+        "leefstijl": "Drinkt in het weekend graag een biertje met vrienden, rookt niet, let op gezonde voeding maar bezwijkt vaak voor de studentenhap."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "Het overlijden van een teamgenoot bij een verkeersongeval twee jaar geleden heeft diepe indruk gemaakt en zijn godsbeeld aan het wankelen gebracht."
+        ],
+        "heden": [
+          "De polarisatie in de samenleving die hij op de universiteit scherp waarneemt.",
+          "De vraag of hij na zijn studie nog wel in een dorp als Ameide wil of kan wonen."
+        ],
+        "onverwerkt": "Het gevoel dat hij in de kerk niet altijd eerlijk kan zijn over zijn twijfels zonder zijn ouders teleur te stellen."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Gedoopt en opgevoed in de Hervormde Gemeente Ameide. Heeft vorig jaar belijdenis gedaan, deels uit overtuiging, deels uit traditie.",
+        "huidige_betrokkenheid": "Bezoekt trouw de zondagochtenddienst als hij in Ameide is. Actief lid van de 16+ jeugdvereniging.",
+        "geloofsbeleving": "Ervaart God vooral in de natuur en in diepgaande gesprekken. De klassieke liturgie biedt hem rust, maar de preken vindt hij vaak te weinig aansluiten bij de ethische vragen van nu.",
+        "geloofstaal": "Heeft moeite met zware termen als 'erfzonde', maar resoneert met 'navolging' en 'gerechtigheid'.",
+        "twijfels_vragen": [
+          "Hoe verhoudt de exclusiviteit van het christelijk geloof zich tot zijn islamitische en atheïstische vrienden in Utrecht?",
+          "Is de Bijbel een historisch document of een levend Woord?"
+        ],
+        "spirituele_behoeften": "Zoekt naar authenticiteit en een geloof dat aanzet tot handelen in de wereld."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Voetbal",
+          "Gitaar spelen",
+          "Lezen over politieke filosofie"
+        ],
+        "media": [
+          "NOS app",
+          "De Correspondent",
+          "Podcasts zoals 'De Dag'",
+          "Instagram"
+        ],
+        "verenigingen": [
+          "VV Ameide",
+          "Studentenvereniging in Utrecht (niet-confessioneel)"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De vlucht naar Egypte (Matteüs 2) raakt hem vanwege de politieke dimensie: Jezus als vluchteling voor een tiran. Dit verbindt hij met de huidige wereldproblematiek.",
+        "wat_afstoot": "De 'huisorde' uit Kolossenzen 3 over de onderdanigheid van vrouwen en de strikte hiërarchie binnen het gezin stoot hem af; hij vindt dit patriarchaal en achterhaald.",
+        "existentiele_vraag": "Hoe kan ik een 'veilig huis' bieden aan anderen in een wereld die gedomineerd wordt door machtswellustelingen zoals Herodes?"
+      }
+    },
+    {
+      "nummer": 2,
+      "naam": {
+        "voornaam": "Marieke",
+        "achternaam": "de Groot-Versluis"
+      },
+      "leeftijd": 38,
+      "kernschets": "Marieke is een hardwerkende moeder en verpleegkundige die de spil is van haar gezin en de zorg voor haar ouders. Ze worstelt met de balans tussen haar vele rollen en zoekt in de kerk naar een moment van stilte en geestelijke voeding.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Gemiddelde lengte, praktisch kort bruin haar, vriendelijke uitstraling. Draagt vaak comfortabele kleding die geschikt is voor een druk gezinsleven.",
+        "woonwijk": "Woont in een eengezinswoning in de nieuwbouwwijk aan de rand van Ameide."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "samenwonend",
+        "relatiestatus": "getrouwd",
+        "kinderen": "thuiswonend",
+        "familie_relatie": "Getrouwd met Jan-Willem (timmerman). Ze hebben drie kinderen in de basisschoolleeftijd. Ze is mantelzorger voor haar hulpbehoevende vader die nog zelfstandig woont.",
+        "sociaal_netwerk": "Sterk ingebed in het dorp via de school van de kinderen (De Regenboog) en haar werk. Veel contact met andere moeders in de gemeente."
+      },
+      "opleiding_werk": {
+        "opleiding": "MBO-Verpleegkunde.",
+        "intelligentie_leerstijl": "Praktisch en empathisch. Leert het beste door te doen en door menselijk contact.",
+        "huidige_werk": "Verpleegkundige in woonzorgcomplex 'Open Vensters' voor 24 uur per week. Hoge werkdruk door personeelstekort.",
+        "voormalig_werk": null,
+        "financiele_situatie": "Stabiel middeninkomen, maar ze merken de stijgende kosten van levensonderhoud en de sportclubjes van de kinderen."
+      },
+      "gezondheid": {
+        "lichamelijk": "Vaak rugklachten door het tillen in de zorg. Slaapt onregelmatig door wisselende diensten.",
+        "mentaal": "Hoog stressniveau; ze voelt zich vaak een 'alleman-dienaar' en komt weinig aan zichzelf toe. Risico op burn-out.",
+        "leefstijl": "Probeert gezond te koken voor het gezin, maar schiet er zelf vaak bij in. Wandelt graag over de Lekdijk om haar hoofd leeg te maken."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "Een miskraam tussen het tweede en derde kind heeft een litteken achtergelaten in haar vertrouwen in het leven."
+        ],
+        "heden": [
+          "De toenemende dementie van haar vader en de vraag hoe lang hij nog thuis kan blijven wonen.",
+          "Zorgen over de invloed van sociale media op haar oudste dochter."
+        ],
+        "onverwerkt": "Het verdriet om haar moeder die vijf jaar geleden plotseling overleed; ze mist haar raad bij de opvoeding."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Traditioneel hervormd opgevoed. Geloof is voor haar een vanzelfsprekend fundament.",
+        "huidige_betrokkenheid": "Bezoekt de diensten wanneer haar werkrooster het toelaat. Helpt af en toe bij de kindernevendienst.",
+        "geloofsbeleving": "God is voor haar een bron van kracht en nabijheid. Ze bidt veel tijdens haar werk of in de auto.",
+        "geloofstaal": "Houdt van eenvoudige, warme taal. 'Geborgenheid' en 'zorg' zijn kernwoorden.",
+        "twijfels_vragen": [
+          "Waarom is er zoveel lijden in de wereld, ook bij de mensen die zij verzorgt?",
+          "Schiet ik niet tekort als christelijke moeder door de drukte?"
+        ],
+        "spirituele_behoeften": "Zoekt bemoediging en praktische handvatten voor de christelijke opvoeding en de omgang met haar zieke vader."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Lezen (streekromans en christelijke fictie)",
+          "Tuinieren",
+          "Bakken met de kinderen"
+        ],
+        "media": [
+          "Het Kontakt",
+          "Libelle",
+          "EO-programma's",
+          "Facebook voor lokaal nieuws"
+        ],
+        "verenigingen": [
+          "Lid van de ouderraad op school"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De tekst uit Sirach 3 over de zorg voor ouders, ook als hun verstand hen begeeft, raakt haar direct in haar rol als mantelzorger en verpleegkundige. Het biedt een heilige dimensie aan haar zware werk.",
+        "wat_afstoot": "De oproep in Kolossenzen om 'alles te verdragen' voelt soms als een te zware last als ze al aan haar taks zit.",
+        "existentiele_vraag": "Hoe blijf ik 'bekleed met liefde' als ik me van binnen leeg en opgebrand voel?"
+      }
+    },
+    {
+      "nummer": 3,
+      "naam": {
+        "voornaam": "Gerrit-Jan",
+        "achternaam": "Vink"
+      },
+      "leeftijd": 56,
+      "kernschets": "Gerrit-Jan is een nuchtere ondernemer in de bouwsector met een diep plichtsbesef naar zijn familie, zijn bedrijf en de kerk. Hij is een man van weinig woorden maar grote daden, die de traditie ziet als het anker van de dorpsgemeenschap.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Brede schouders, verweerde handen door jarenlang buitenwerk. Grijs wordend haar, kort geknipt. Draagt vaak een stevige werkbroek en een fleecevest van zijn bedrijf.",
+        "woonwijk": "Woont in een historisch pand aan de Prinsengracht, dat hij zelf heeft gerestaureerd."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "samenwonend",
+        "relatiestatus": "getrouwd",
+        "kinderen": "uitgevlogen",
+        "familie_relatie": "Getrouwd met Gerda. Twee zoons die in het bedrijf werken en een dochter die in Gorinchem woont. Hij is trots op de continuïteit van het familiebedrijf.",
+        "sociaal_netwerk": "Centrale figuur in het zakelijke en maatschappelijke leven van Ameide. Lid van de ondernemersvereniging en de Oranjevereniging."
+      },
+      "opleiding_werk": {
+        "opleiding": "LTS en diverse vakopleidingen in de bouw.",
+        "intelligentie_leerstijl": "Zeer praktisch en ruimtelijk ingesteld. Denkt in oplossingen, niet in problemen.",
+        "huidige_werk": "Eigenaar van een middelgroot aannemingsbedrijf. Ervaart druk door stikstofregels en personeelstekort.",
+        "voormalig_werk": "Begon als timmerman bij zijn vader.",
+        "financiele_situatie": "Welgesteld, maar zijn vermogen zit grotendeels in het bedrijf en vastgoed. Maakt zich zorgen over de economische toekomst van de polder."
+      },
+      "gezondheid": {
+        "lichamelijk": "Slijtage aan knieën en schouders. Neemt dagelijks pijnstillers om door te kunnen gaan.",
+        "mentaal": "Nuchter, laat zich niet snel gek maken. Heeft echter moeite met de snelheid van maatschappelijke veranderingen.",
+        "leefstijl": "Houdt van een stevige maaltijd (aardappels-vlees-groente). Rookt af en toe een sigaar. Weinig beweging buiten het werk om."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "Het bijna-faillissement van het bedrijf tijdens de bouwcrisis van 2008 staat in zijn geheugen gegrift als een tijd van grote geloofsbeproeving."
+        ],
+        "heden": [
+          "De opvolging in het bedrijf; zijn zoons hebben andere ideeën over bedrijfsvoering.",
+          "De leegloop van de kerk in omliggende dorpen."
+        ],
+        "onverwerkt": "Het verlies van zijn broer op jonge leeftijd; hij voelt nog steeds de verantwoordelijkheid om voor de hele familie te zorgen."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Gereformeerde Bond signatuur. Geloof is voor hem een zaak van trouw en gehoorzaamheid.",
+        "huidige_betrokkenheid": "Ouderling-kerkvoogd in de Sionkerk. Altijd aanwezig, betrokken bij het onderhoud van het kerkgebouw.",
+        "geloofsbeleving": "God is de Almachtige die alles bestuurt. Hij vindt steun in de psalmen en de Statenvertaling (hoewel hij de NBV21 in de dienst accepteert).",
+        "geloofstaal": "Klassiek gereformeerd: 'voorzienigheid', 'verbond', 'roeping'.",
+        "twijfels_vragen": [
+          "Hoe houden we de jeugd bij de kerk zonder de kern van de waarheid op te offeren?",
+          "Is mijn harde werken wel tot eer van God of is het eigen eer?"
+        ],
+        "spirituele_behoeften": "Zoekt naar erkenning van de waarde van traditie en praktische wijsheid voor het leiden van zijn gezin en bedrijf."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Vissen in de Lek",
+          "Historische boeken over de regio",
+          "Klusprojecten voor de kerk"
+        ],
+        "media": [
+          "Reformatorisch Dagblad",
+          "Bouwwereld",
+          "Lokaal nieuws via Het Kontakt"
+        ],
+        "verenigingen": [
+          "Oranjevereniging Ameide en Tienhoven",
+          "Bouwend Nederland"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De zegen over het huisgezin in Psalm 128 en de vermaning tot eerbied voor ouders in Sirach 3 spreken zijn diepe waarden van orde en respect aan.",
+        "wat_afstoot": "De vlucht naar Egypte herinnert hem aan de onveiligheid van de wereld, wat botst met zijn verlangen om alles onder controle te houden en te beschermen.",
+        "existentiele_vraag": "Hoe bouw ik aan een fundament dat ook voor de volgende generatie standhoudt?"
+      }
+    },
+    {
+      "nummer": 4,
+      "naam": {
+        "voornaam": "Jannie",
+        "achternaam": "Oskam-den Hartog"
+      },
+      "leeftijd": 78,
+      "kernschets": "Jannie is een vrome weduwe die de overgang naar het verzorgingshuis nog aan het verwerken is. Ze leeft bij de dag, gesteund door haar geloof en de herinneringen aan een rijk gezinsleven, maar de eenzaamheid na de kerstdagen valt haar zwaar.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Kleine, tenger gebouwde vrouw. Altijd keurig verzorgd, haar witte haar in een permanent. Gebruikt een rollator voor langere afstanden.",
+        "woonwijk": "Woont in een tweekamerappartement in woonzorgcomplex 'Open Vensters'."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "verzorgingshuis",
+        "relatiestatus": "weduwe",
+        "kinderen": "uitgevlogen",
+        "familie_relatie": "Haar man is drie jaar geleden overleden. Ze heeft vier kinderen en tien kleinkinderen die verspreid over het land wonen. Ze geniet van hun bezoeken, maar wil hen niet tot last zijn.",
+        "sociaal_netwerk": "Haar sociale wereld is kleiner geworden. Ze heeft veel steun aan de medebewoners en de bezoekgroep van de kerk."
+      },
+      "opleiding_werk": {
+        "opleiding": "Huishoudschool.",
+        "intelligentie_leerstijl": "Praktisch en sociaal intelligent. Heeft een groot geheugen voor familiegeschiedenissen en dorpsverhalen.",
+        "huidige_werk": null,
+        "voormalig_werk": "Was altijd huisvrouw en hielp vroeger mee op de boerderij van haar ouders.",
+        "financiele_situatie": "Bescheiden pensioen en AOW. Ze is zuinig en maakt zich geen financiële zorgen, maar vindt de eigen bijdrage voor de zorg hoog."
+      },
+      "gezondheid": {
+        "lichamelijk": "Beginnende artrose en hartklachten waarvoor ze veel medicatie slikt. Haar gehoor gaat achteruit.",
+        "mentaal": "Soms wat vergeetachtig, wat haar angstig maakt (angst voor dementie). Ze voelt zich vaak eenzaam, vooral in de avonduren.",
+        "leefstijl": "Eet gezamenlijk in de recreatiezaal van Open Vensters. Probeert elke dag een klein ommetje te maken."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "Het verlies van haar man na een huwelijk van 52 jaar is het grootste trauma; ze voelt zich sindsdien 'geamputeerd'."
+        ],
+        "heden": [
+          "De angst om haar zelfstandigheid volledig te verliezen.",
+          "Zorgen om een kleinkind dat de kerk heeft verlaten."
+        ],
+        "onverwerkt": "Een oude ruzie met een schoonzus die nooit is bijgelegd; nu de schoonzus is overleden, knaagt dit aan haar."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Haar hele leven lid van de Sionkerk. Het geloof is verweven met haar identiteit.",
+        "huidige_betrokkenheid": "Kan de kerkdiensten fysiek niet meer altijd bijwonen; kijkt trouw via de livestream op haar tablet. Luistert veel naar christelijke radio (Groot Nieuws Radio).",
+        "geloofsbeleving": "God is haar Herder die haar door het dal van de schaduw des doods leidt. Ze vindt troost in de oude gezangen.",
+        "geloofstaal": "Bevindelijk en traditioneel: 'de Heere', 'genade', 'thuisgehaald worden'.",
+        "twijfels_vragen": [
+          "Waarom moet ik hier nog blijven terwijl mijn man al bij de Heere is?",
+          "Is mijn geloof wel oprecht genoeg?"
+        ],
+        "spirituele_behoeften": "Zoekt naar troost, nabijheid en de verzekering dat ze niet vergeten is door God en de mensen."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Handwerken (breien voor de zending)",
+          "Puzzelen",
+          "Luisteren naar koorzang"
+        ],
+        "media": [
+          "Reformatorisch Dagblad",
+          "Terdege",
+          "Livestream Sionkerk",
+          "Groot Nieuws Radio"
+        ],
+        "verenigingen": [
+          "Vrouwenvereniging van de kerk (kan er nu zelden meer heen)"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De tekst uit Sirach 3 over de eerbied voor ouders raakt haar diep; het is een erkenning van haar eigen kwetsbaarheid en de hoop dat haar kinderen haar niet zullen vergeten nu ze ouder wordt.",
+        "wat_afstoot": "De focus op het 'jonge gezin' in de lezingen kan haar pijnlijk herinneren aan wat ze verloren heeft en haar huidige eenzaamheid accentueren.",
+        "existentiele_vraag": "Hoe kan ik in deze laatste levensfase nog vrucht dragen voor Gods koninkrijk?"
+      }
+    },
+    {
+      "nummer": 5,
+      "naam": {
+        "voornaam": "Robert-Jan",
+        "achternaam": "van der Sijde"
+      },
+      "leeftijd": 45,
+      "kernschets": "Robert-Jan is een gescheiden vader die zich na zijn relatiebreuk een buitenstaander voelt in de gezinsgeoriënteerde Sionkerk. Hij is een praktische doener die worstelt met schuldgevoel en de vraag waar hij nog echt bij hoort.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Groot, robuust postuur. Donker haar met eerste grijze slapen. Vaak een vermoeide blik in zijn ogen. Draagt meestal vrijetijdskleding.",
+        "woonwijk": "Woont in een klein huurappartement boven een winkel in de dorpskern van Ameide."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "zelfstandig",
+        "relatiestatus": "gescheiden",
+        "kinderen": "thuiswonend",
+        "familie_relatie": "Zijn twee tienerkinderen wonen om de week bij hem. De relatie met zijn ex-vrouw is moeizaam en vol spanning. Zijn ouders wonen in Meerkerk en keuren de scheiding stilzwijgend af.",
+        "sociaal_netwerk": "Voelt zich sociaal geïsoleerd. Veel 'vrienden' uit zijn getrouwde tijd ziet hij niet meer. Hij vindt aansluiting bij een paar collega's en bij de tennisvereniging."
+      },
+      "opleiding_werk": {
+        "opleiding": "MTS Autotechniek.",
+        "intelligentie_leerstijl": "Technisch begaafd, visueel ingesteld. Heeft een hekel aan abstract gepraat.",
+        "huidige_werk": "Chef-werkplaats bij een groot transportbedrijf in de regio. Werkt veel overuren om de alimentatie en zijn eigen lasten te kunnen betalen.",
+        "voormalig_werk": null,
+        "financiele_situatie": "Krap door de scheiding en de hoge huur. Hij maakt zich zorgen over zijn pensioen en de kosten voor de studie van zijn kinderen later."
+      },
+      "gezondheid": {
+        "lichamelijk": "Lijdt aan hoge bloeddruk door stress. Rookt weer sinds de scheiding.",
+        "mentaal": "Kampt met gevoelens van falen en incidentele depressieve buien. Voelt zich vaak schuldig tegenover zijn kinderen.",
+        "leefstijl": "Onregelmatig eten, te weinig beweging buiten het werk. Drinkt 's avonds vaak een paar glazen wijn om te ontspannen."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "De vechtscheiding van drie jaar geleden heeft hem emotioneel en financieel uitgeput."
+        ],
+        "heden": [
+          "De angst om het contact met zijn kinderen te verliezen als zij ouder worden.",
+          "De sociale controle in Ameide; hij voelt de ogen van de mensen op zich gericht."
+        ],
+        "onverwerkt": "Het gevoel dat hij God en de gemeente heeft teleurgesteld door zijn huwelijk niet te kunnen redden."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Opgegroeid in een behoudend nest. Geloof was altijd een set regels waar hij aan moest voldoen.",
+        "huidige_betrokkenheid": "Komt nog maar onregelmatig in de kerk, meestal alleen als de kinderen bij hem zijn. Voelt zich ongemakkelijk in de banken.",
+        "geloofsbeleving": "God voelt voor hem op dit moment als een verre Rechter. Hij verlangt naar genade, maar weet niet hoe hij die moet toe-eigenen.",
+        "geloofstaal": "Heeft een afkeer van 'vrome praatjes'. Hij zoekt naar eerlijkheid over de gebrokenheid van het leven.",
+        "twijfels_vragen": [
+          "Is er voor een gescheiden man als ik nog wel een volwaardige plek in de gemeente?",
+          "Heeft bidden nog wel zin als mijn leven zo'n puinhoop is?"
+        ],
+        "spirituele_behoeften": "Zoekt naar acceptatie, vergeving en een nieuw begin zonder oordeel."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Sleutelen aan oude motoren",
+          "Tennis",
+          "Koken voor zijn kinderen"
+        ],
+        "media": [
+          "AD Rivierenland",
+          "YouTube (technische kanalen)",
+          "Netflix"
+        ],
+        "verenigingen": [
+          "Tennisvereniging Ameide"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De vlucht naar Egypte (Matteüs 2) spreekt hem aan: het gevoel halsoverkop je vertrouwde leven te moeten verlaten en ergens anders opnieuw te moeten beginnen. Hij herkent de dreiging van 'Herodes-krachten' in zijn eigen leven.",
+        "wat_afstoot": "Het ideaalbeeld van de 'Heilige Familie' en de huisorde in Kolossenzen 3 kunnen pijnlijk zijn; het confronteert hem met wat in zijn leven is mislukt.",
+        "existentiele_vraag": "Hoe kan ik een 'nieuw kleed' aantrekken (Kolossenzen 3) als de oude kleren van mijn verleden nog zo zwaar aan me trekken?"
+      }
+    }
+  ]
+}

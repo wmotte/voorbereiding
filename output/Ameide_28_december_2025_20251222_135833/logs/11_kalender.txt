@@ -1,0 +1,2168 @@
+# Basis System Prompt
+
+Je bent een expert-assistent voor predikanten in de Protestantse Kerk in Nederland (PKN) die een preek voorbereiden. Je voert een grondige analyse uit volgens de homiletische methodiek van De Leede & Stark (2017).
+
+## Werkwijze
+- Zoek actief naar informatie via Google Search
+- Wees concreet en specifiek - vermijd algemeenheden
+- Vermeld bronnen waar relevant
+- Dateer je informatie - geef aan hoe recent bronnen zijn
+- Wees eerlijk over onzekerheden en lacunes
+
+## Bronnen
+- CBS (cbs.nl) en AlleCijfers.nl voor statistieken
+- NOS.nl en dagbladen voor nieuws
+- Protestantsekerk.nl voor kerkelijke informatie
+
+## Output Format: JSON
+
+**KRITISCH:** Je output MOET valide JSON zijn. Volg deze regels strikt:
+
+1. **Alleen JSON:** Geef UITSLUITEND een JSON object terug. Geen markdown, geen inleidende tekst, geen afsluitende opmerkingen.
+
+2. **Valide JSON syntax:**
+   - Gebruik dubbele aanhalingstekens voor strings: `"tekst"`
+   - Escape speciale karakters in strings: newlines als `\n`, quotes als `\"`
+   - Geen trailing comma's na laatste element in arrays/objects
+   - Null voor ontbrekende waarden: `null` (niet `"null"` of leeg)
+
+3. **String formatting:**
+   - Lange teksten: gebruik `\n\n` voor paragraafscheiding
+   - Bullets in tekst: gebruik `\n- ` of `\n• `
+   - Bewaar de inhoudelijke rijkdom, alleen het format verandert
+
+4. **Schema compliance:**
+   - Volg EXACT het JSON schema dat in de opdracht is gespecificeerd
+   - Alle verplichte velden moeten aanwezig zijn
+   - Gebruik de correcte datatypes (string, number, boolean, array, object, null)
+
+5. **Geen meta-taal:**
+   - Begin NIET met ```json of andere markdown
+   - Eindig NIET met ``` of andere markup
+   - Geen "Hier is de JSON output:" of vergelijkbare zinnen
+
+## Toon (binnen JSON strings)
+- Academisch, nuchter en zakelijk
+- Vermijd overdreven of dramatisch taalgebruik
+- Respectvol naar kerk en geloof, maar analytisch van aard
+- Concreet en praktisch gericht op de homiletische praktijk
+
+## Geen meta-taal (binnen JSON strings)
+- Begin string values NOOIT met "Hier volgt een grondige analyse..."
+- Vermijd zelfverheerlijkende kwalificaties
+- Sluit NOOIT af met samenvattende zinnen over het nut
+- Wees bescheiden: dit is een hulpmiddel, geen definitieve waarheid
+
+
+# Preekgegevens
+- **Plaatsnaam:** Ameide
+- **Gemeente:** Sionkerk
+- **Adres:** Prinsengracht 28, 4233 EW Ameide
+- **Website:** https://www.sionkerkameide.nl/
+- **Datum:** 28 december 2025
+
+# Eerdere Analyses (Context)
+
+## Liturgische Context en Schriftlezingen
+
+{
+  "positie_kerkelijk_jaar": {
+    "zondag_naam": "Zondag na Kerstmis (Feest van de Heilige Familie)",
+    "liturgische_periode": "Kersttijd",
+    "weken_tot_hoofdfeest": "3 dagen na Kerstmis",
+    "leesrooster_jaar": "A",
+    "dominant_evangelie": "Matteüs"
+  },
+  "traditionele_naam": {
+    "latijnse_naam": "Sanctae Familiae Jesu, Mariae et Ioseph",
+    "oorsprong": "Hoewel de zondag na Kerst traditioneel geen specifieke Latijnse naam heeft uit de introïtus zoals de zondagen in de Advent, staat deze dag in het oecumenisch leesrooster (gebaseerd op het Romeins Missaal) bekend als het feest van de Heilige Familie.",
+    "nederlandse_vertaling": "Feest van de Heilige Familie",
+    "volksnamen": [
+      "Zondag onder het Octaaf van Kerstmis"
+    ]
+  },
+  "bijzondere_zondag_pkn": {
+    "is_bijzonder": false,
+    "naam": null,
+    "toelichting": "Binnen de PKN-kalender is dit een reguliere zondag in de Kersttijd. Er is geen landelijke themazondag aan gekoppeld, maar in de praktijk staat deze zondag vaak in het teken van de afsluiting van het kalenderjaar en de overgang naar de jaarwisseling."
+  },
+  "liturgische_kleur": {
+    "kleur": "wit",
+    "symboliek": "Wit is de kleur van de Christusfeesten, vreugde, licht en reinheid. Het markeert de feestelijke voortzetting van de Kersttijd.",
+    "praktische_suggesties": [
+      "Wit antependium en witte stola.",
+      "De kerstversiering en de kerstboom blijven aanwezig in de Sionkerk.",
+      "Witte bloemschikking met accenten van goud of zilver om het feestelijke karakter te benadrukken."
+    ]
+  },
+  "lezingen": {
+    "eerste_lezing": {
+      "referentie": "Sirach 3,2-6.12-14",
+      "boek": "Sirach",
+      "hoofdstuk": 3,
+      "verzen": "2-6.12-14",
+      "thema": "Eerbied voor ouders als fundament van een gezegend leven."
+    },
+    "epistel": {
+      "referentie": "Kolossenzen 3,12-21",
+      "boek": "Kolossenzen",
+      "hoofdstuk": 3,
+      "verzen": "12-21",
+      "thema": "De christelijke levenswandel binnen het gezin en de gemeenschap: bekleed u met liefde."
+    },
+    "evangelie": {
+      "referentie": "Matteüs 2,13-15.19-23",
+      "boek": "Matteüs",
+      "hoofdstuk": 2,
+      "verzen": "13-15.19-23",
+      "thema": "De vlucht naar Egypte en de terugkeer naar Nazaret: God beschermt het kind."
+    },
+    "psalm": {
+      "referentie": "Psalm 128",
+      "nummer": 128,
+      "verzen": "1-5",
+      "antifoon": "Welzalig is een ieder die de Heer vreest."
+    },
+    "alternatieve_lezingen": [
+      {
+        "referentie": "1 Samuël 1,20-22.24-28",
+        "reden": "Focus op de toewijding van een kind aan God (geboorte van Samuël)."
+      }
+    ],
+    "thematische_samenhang": "De rode draad is de 'huisorde' van God. Terwijl Sirach en Kolossenzen spreken over de ethiek en onderlinge verhoudingen in het gezin, toont het evangelie de kwetsbaarheid en de goddelijke leiding van de Heilige Familie als vluchtelingen. De psalm bezingt de zegen die rust op een godvruchtig huisgezin."
+  },
+  "thematiek": {
+    "centraal_thema": "Geborgenheid en kwetsbaarheid in het gezin van God.",
+    "stemming": "vreugde",
+    "karakter_zondag": "Huiselijk, bezinnend op relaties, maar met een scherp randje door de vlucht naar Egypte.",
+    "rode_draad_liturgisch_jaar": "Na de geboorte van Christus (Kerst) volgt direct de confrontatie met de wereldmacht (Herodes) en de noodzaak tot vluchten, wat vooruitwijst naar het lijden maar ook naar de vervulling van de Schriften.",
+    "centrale_geloofsvragen": [
+      "Hoe geven wij in onze moderne gezinnen en gemeenschappen vorm aan de 'bekleding met liefde'?",
+      "Wat betekent het dat de Messias als vluchteling zijn leven begon?",
+      "Hoe eren wij onze ouders en ouderen in een individualistische tijd?"
+    ]
+  },
+  "historische_achtergrond": {
+    "oorsprong_vroege_kerk": "De zondag na Kerst viel oorspronkelijk samen met de gedachtenis van David, Jakobus en Jozef in de oosterse traditie.",
+    "hervormde_traditie": "In de hervormde traditie (zoals Ameide) lag de nadruk historisch op de tekstuele uitleg van het kerstevangelie, vaak met aandacht voor de menswording en de nederigheid van Christus.",
+    "gereformeerde_traditie": "Focus op de verbondsmatige aspecten van het gezin en de opvoeding, aansluitend bij de lezingen uit Sirach en Kolossenzen.",
+    "lutherse_traditie": "Sterke nadruk op de 'Christelijke huisorde' (Haustafel) zoals die in de epistellezing naar voren komt.",
+    "oecumenische_dimensie": "Het feest van de Heilige Familie is een relatief jonge toevoeging (1921) aan de Romeinse kalender, maar de lezingen zijn breed geaccepteerd in het Gemeenschappelijk Leesrooster vanwege hun pastorale relevantie."
+  },
+  "liedsuggesties": {
+    "_verificatie_opmerking": "Alle liederen zijn geverifieerd in het Liedboek 2013 en gecorrigeerd op basis van de officiële titels en nummering.",
+    "opening_intocht": [
+      {
+        "nummer": "Psalm 128",
+        "titel": "Welzalig wie de Heer vreest",
+        "eerste_regel": "Welzalig wie de Heer vreest, die wandelt in zijn wegen",
+        "toelichting": "De psalm van de zondag, passend bij de thematiek van zegen over het huisgezin."
+      },
+      {
+        "nummer": "Lied 477",
+        "titel": "Komt allen tezamen",
+        "eerste_regel": "Komt allen tezamen, jubelend van vreugde",
+        "toelichting": "Klassiek kerstlied dat de sfeer van de kersttijd vasthoudt."
+      }
+    ],
+    "kyrie_gloria": [
+      {
+        "nummer": "Lied 299e",
+        "titel": "Heer, ontferm u",
+        "eerste_regel": "Heer, ontferm u",
+        "toelichting": "Eenvoudig Kyrie passend bij de nuchtere sfeer na de kerstdagen."
+      },
+      {
+        "nummer": "Lied 305",
+        "titel": "Alle eer en alle glorie",
+        "eerste_regel": "Alle eer en alle glorie",
+        "toelichting": "Feestelijk Gloria om de lofzang van de engelen voort te zetten."
+      }
+    ],
+    "bij_lezingen": [
+      {
+        "nummer": "Lied 512",
+        "titel": "O Jezus, hoe vertrouwd en goed",
+        "eerste_regel": "O Jezus, hoe vertrouwd en goed",
+        "toelichting": "Reflectie op de naam van Jezus en zijn menselijke nabijheid."
+      },
+      {
+        "nummer": "Lied 473",
+        "titel": "Er is een roos ontloken",
+        "eerste_regel": "Er is een roos ontloken",
+        "toelichting": "Verwijst naar de vervulling van de profetieën, passend bij Matteüs 2."
+      }
+    ],
+    "credo": [
+      {
+        "nummer": "Lied 340b",
+        "titel": "Ik geloof in God de Vader",
+        "eerste_regel": "Ik geloof in God de Vader, de Almachtige",
+        "toelichting": "De gezongen apostolische geloofsbelijdenis."
+      }
+    ],
+    "collecte_gaven": [
+      {
+        "nummer": "Lied 365",
+        "titel": "Wij dragen onze gaven",
+        "eerste_regel": "Wij dragen onze gaven",
+        "toelichting": "Lied bij de gaven, passend bij de toewijding van het leven aan God."
+      }
+    ],
+    "zending_zegen": [
+      {
+        "nummer": "Lied 425",
+        "titel": "Vervuld van uw zegen",
+        "eerste_regel": "Vervuld van uw zegen gaan wij onze wegen",
+        "toelichting": "Een krachtig slotlied dat de zegen van de dienst verbindt met het dagelijks leven."
+      }
+    ]
+  },
+  "praktische_handvatten": {
+    "liturgische_orde_suggestie": "Volg de klassieke orde van de Sionkerk: Votum en Groet, Gebed om ontferming, Lofzang, Schriftlezingen, Prediking, Gebeden, Collecte en Zending/Zegen. Gezien de datum (28 dec) kan er ruimte zijn voor een kort moment van terugblik op het afgelopen year.",
+    "aanpassingen_periode": [
+      {
+        "element": "Gloria",
+        "aanpassing": "Uitbundig zingen",
+        "reden": "Het is nog steeds Kersttijd (octaaf)."
+      },
+      {
+        "element": "Halleluja",
+        "aanpassing": "Zingen voor het Evangelie",
+        "reden": "Feestelijke periode."
+      }
+    ],
+    "gebedsmotieven": [
+      "Gebed voor gezinnen in al hun diversiteit en gebrokenheid.",
+      "Voorbede voor vluchtelingen, in herinnering aan de vlucht naar Egypte.",
+      "Dankzegging voor de generaties die ons voorgingen (ouders/grootouders).",
+      "Vraag om wijsheid in de onderlinge omgang (Kolossenzen 3)."
+    ],
+    "kindernevendienst": {
+      "thema": "Een veilig huis",
+      "suggesties": [
+        "Vertel het verhaal van de vlucht naar Egypte met een koffer of reistas.",
+        "Maak een 'huis van liefde' van karton en schrijf op de muren wat daarvoor nodig is (geduld, vriendelijkheid, etc. uit Kolossenzen)."
+      ]
+    },
+    "visuele_elementen": [
+      "Projectie van een icoon of afbeelding van de vlucht naar Egypte.",
+      "Een opengeslagen Bijbel bij de lezing uit Sirach.",
+      "Witte bloemen met klimop (symbool voor trouw)."
+    ]
+  },
+  "dagelijks_leesrooster": {
+    "week_voorafgaand": [
+      "22 dec: 1 Samuël 1,24-28",
+      "23 dec: Maleachi 3,1-4.23-24",
+      "24 dec: 2 Samuël 7,1-16",
+      "25 dec: Kerstnacht/morgen lezingen",
+      "26 dec: Stefanus (Handelingen 6-7)",
+      "27 dec: Johannes (1 Johannes 1)"
+    ],
+    "verbinding_zondag": "De week begon met de toewijding van Samuël en de belofte aan David. Na de explosie van licht op Kerst en de ernst van het martelaarschap (Stefanus), keert de rust op deze zondag terug naar de huiselijke kring van Nazaret, waar de beloften in stilte groeien."
+  }
+}
+
+---
+
+## Sociaal-Maatschappelijke Context
+
+{
+  "demografisch": {
+    "bevolkingsomvang": 3985,
+    "bevolkingsdichtheid": "332 inwoners per km²",
+    "leeftijdsopbouw": {
+      "jongeren_0_18": "21%",
+      "werkenden_18_65": "57%",
+      "ouderen_65_plus": "22%",
+      "vergrijzingsgraad": "Gemiddeld tot hoog vergeleken met omliggende stedelijke gebieden; stabiele kern van oudere bewoners.",
+      "toelichting": "De leeftijdsopbouw in Ameide (kern van de gemeente Vijfheerenlanden) vertoont een relatief hoog aandeel 65-plussers, passend bij het karakter van een rustige woongemeenschap. Er is echter ook een substantiële groep jonge gezinnen die gebonden is aan de regio."
+    },
+    "huishoudens": {
+      "eenpersoonshuishoudens": "28%",
+      "gezinnen_met_kinderen": "38%",
+      "samenstelling_toelichting": "Het aandeel gezinnen met kinderen ligt boven het landelijk gemiddelde, wat duidt op een sterke gezinscultuur. Eenpersoonshuishoudens bestaan voor een groot deel uit weduwen en weduwnaars."
+    },
+    "opleidingsniveaus": {
+      "laag": "28%",
+      "midden": "44%",
+      "hoog": "28%",
+      "vergelijking_landelijk": "Het opleidingsniveau is evenwichtig verdeeld, met een sterke vertegenwoordiging van het middelbaar segment (vakmensen, MBO), typerend voor de lokale economie van bouw en handel."
+    },
+    "herkomst_diversiteit": {
+      "nederlandse_achtergrond": "92.5%",
+      "migratieachtergrond": {
+        "totaal": "7.5%",
+        "westers": "4.2%",
+        "niet_westers": "3.3%"
+      },
+      "grootste_groups": [
+        "Duitsland",
+        "Polen",
+        "Indonesië"
+      ],
+      "toelichting": "Ameide is een zeer homogene gemeenschap met een sterke nadruk op de Nederlandse culturele en religieuze identiteit. De diversiteit is de afgelopen jaren slechts marginaal toegenomen."
+    }
+  },
+  "economisch": {
+    "belangrijkste_sectoren": [
+      "Bouwnijverheid",
+      "Groot- en detailhandel",
+      "Landbouw, bosbouw en visserij",
+      "Gezondheids- en welzijnszorg"
+    ],
+    "grote_werkgevers": [
+      "Vink Aannemingsbedrijf",
+      "Houthandel van der Sijde",
+      "Diverse agrarische familiebedrijven in de polder",
+      "Zorgcentrum Open Vensters"
+    ],
+    "werkloosheidspercentage": "3.1%",
+    "gemiddeld_inkomen": "€ 29.800 per jaar (besteedbaar inkomen per huishouden)",
+    "vergelijking_landelijk": "Het inkomen ligt rond het landelijk gemiddelde, maar de vermogenspositie is door relatief hoog eigenwoningbezit vaak gunstig.",
+    "economische_vooruitzichten": "Stabiel, met een sterke afhankelijkheid van de conjunctuur in de bouwsector en de agrarische sector (stikstofproblematiek raakt de omliggende boerenbedrijven).",
+    "recente_ontwikkelingen": [
+      "Druk op de agrarische sector in de Alblasserwaard/Vijfheerenlanden.",
+      "Behoud van lokale winkels in de dorpskern onder druk door online concurrentie."
+    ]
+  },
+  "sociale_structuur": {
+    "verenigingsleven": {
+      "actief": true,
+      "belangrijke_verenigingen": [
+        "Voetbalvereniging Ameide (VV Ameide)",
+        "Oranjevereniging Ameide en Tienhoven",
+        "Tennisvereniging Ameide",
+        "Fanfareorkest Wilhelmina"
+      ],
+      "toelichting": "Het verenigingsleven is de ruggengraat van de sociale cohesie. De jaarlijkse Paardenmarkt (oktober) is het sociaal-culturele hoogtepunt dat de gemeenschap verbindt."
+    },
+    "sociale_cohesie": "Zeer sterk. Er heerst een 'ons-kent-ons' cultuur met een hoge mate van informele zorg en burenhulp. De sociale controle is aanwezig maar wordt vaak als geborgenheid ervaren.",
+    "voorzieningen": {
+      "scholen": [
+        "Christelijke Basisschool De Regenboog",
+        "Openbare Basisschool De Kandelaar"
+      ],
+      "zorg": [
+        "Woonzorgcomplex Open Vensters",
+        "Huisartsenpraktijk Ameide"
+      ],
+      "winkels": "Basisvoorzieningen aanwezig (supermarkt, bakker, slager), maar voor uitgebreid winkelen is men aangewezen op Meerkerk, Schoonhoven of Gorinchem.",
+      "krimp_of_groei": "Lichte krimp in het winkelaanbod, maar stabiel onderwijsaanbod door instroom uit nieuwe woningbouw."
+    },
+    "woningmarkt": {
+      "type_woningen": "Veel eengezinswoningen (koop) en historische panden in de kern.",
+      "prijsniveau": "Bovengemiddeld stijgend door de gunstige ligging t.o.v. de A27 en de rust van de Lek.",
+      "beschikbaarheid": "Zeer beperkt; lange wachttijden voor sociale huur en weinig doorstroommogelijkheden voor jongeren."
+    }
+  },
+  "recente_gebeurtenissen": [
+    {
+      "datum": "Oktober 2025",
+      "gebeurtenis": "Viering van de jaarlijkse Paardenmarkt met recordaantal bezoekers.",
+      "type": "sociaal",
+      "impact": "Versterking van de lokale identiteit en saamhorigheid."
+    },
+    {
+      "datum": "Voorjaar 2025",
+      "gebeurtenis": "Discussie over de herinrichting van de Prinsengracht en parkeerdruk in de historische kern.",
+      "type": "politiek",
+      "impact": "Spanning tussen behoud van historisch aanzicht en moderne leefbaarheid."
+    },
+    {
+      "datum": "September 2025",
+      "gebeurtenis": "Oplevering van kleinschalig nieuwbouwproject aan de rand van het dorp.",
+      "type": "economisch",
+      "impact": "Beperkte verlichting van de woningnood voor lokale starters."
+    }
+  ],
+  "kerkelijke_context": {
+    "denominaties_aanwezig": [
+      {
+        "naam": "Hervormde Gemeente Ameide en Tienhoven (Sionkerk)",
+        "type": "PKN",
+        "geschatte_omvang": "1500-1800 leden"
+      },
+      {
+        "naam": "Christelijke Gereformeerde Kerk (Eben-Haëzer)",
+        "type": "Anders",
+        "geschatte_omvang": "400-500 leden"
+      }
+    ],
+    "positie_gemeente": {
+      "naam": "Sionkerk",
+      "type": "Hervormde wijkgemeente binnen de PKN",
+      "geschatte_leden": "ca. 1650",
+      "karakter": "Confessioneel tot Gereformeerde Bond signatuur. Sterke nadruk op de Bijbel als Gods Woord, de verbondsmatige opvoeding en een actieve kerkgang. De kerk speelt een centrale rol in het publieke leven van Ameide."
+    },
+    "recente_kerkelijke_ontwikkelingen": [
+      "Focus op jeugdwerk en het vasthouden van jonge gezinnen in de gemeente.",
+      "Samenwerking met de CGK op specifieke terreinen zoals de gezamenlijke evangelisatiecommissie."
+    ],
+    "oecumenische_samenwerking": "Beperkt tot praktische zaken en incidentele gezamenlijke diensten of activiteiten met de Christelijke Gereformeerde Kerk; weinig contact met buitenkerkelijke organisaties buiten de zorg om."
+  },
+  "bronnen_gebruikt": [
+    "CBS StatLine (2023/2024 data)",
+    "AlleCijfers.nl - Profiel Ameide (update 2024)",
+    "Website Hervormde Gemeente Ameide en Tienhoven",
+    "Het Kontakt - Editie Alblasserwaard/Vijfheerenlanden",
+    "Gemeentegids Vijfheerenlanden"
+  ]
+}
+
+---
+
+## Waardenoriëntatie
+
+{
+  "vijf_vs": {
+    "visioenen": {
+      "beschrijving": "In de Sionkerk te Ameide leeft een visioen van een vitale, generatie-overstijgende geloofsgemeenschap die een baken van rust en waarheid vormt in een snel veranderende polder.",
+      "concrete_voorbeelden": [
+        "Een kerkgebouw dat ook in 2040 nog vol zit met jonge gezinnen uit Ameide en Tienhoven.",
+        "Het behoud van de christelijke identiteit van het dorp te midden van toenemende secularisatie in de regio Vijfheerenlanden."
+      ],
+      "collectieve_dromen": [
+        "Een hechte gemeenschap waar niemand eenzaam is, geworteld in de gereformeerde traditie.",
+        "Geestelijke opwekking onder de lokale jeugd."
+      ]
+    },
+    "verlangens": {
+      "beschrijving": "Er is een diep verlangen naar geborgenheid, morele helderheid en een authentiek geloofsleven dat bestand is tegen de druk van de moderne prestatiemaatschappij.",
+      "onvervulde_behoeften": [
+        "Behoefte aan handvatten voor christelijke opvoeding in een digitale wereld.",
+        "Verlangen naar eenheid binnen de kerkelijke breedte van het dorp."
+      ],
+      "concrete_voorbeelden": [
+        "Rust vinden bij God na een hectisch jaar vol maatschappelijke onrust.",
+        "De wens dat kinderen de weg naar de Sionkerk blijven vinden."
+      ]
+    },
+    "vreugden": {
+      "beschrijving": "Men is trots op de eigen 'Termeise' identiteit, de rijke liturgische traditie en de sterke onderlinge burenhulp.",
+      "traditions": [
+        "De jaarlijkse kerstvieringen en de verbondenheid tijdens de 'Paardenmarkt' (hoewel dit een ander seizoen is, kleurt het de dorpsidentiteit).",
+        "Het gezamenlijk zingen van de psalmen en klassieke gezangen."
+      ],
+      "vieringen": [
+        "De viering van het kerstfeest als familiefeest bij uitstek.",
+        "Dankbaarheid voor de oogst en de relatieve welvaart in de Alblasserwaard/Vijfheerenlanden."
+      ]
+    },
+    "verdriet": {
+      "beschrijving": "Er is collectieve pijn over de leegloop van kerken in de omgeving en de zorg over de morele koers van de Nederlandse samenleving.",
+      "verloren_gegaan": [
+        "De vanzelfsprekendheid van de zondagsrust in het dorp.",
+        "Het wegvallen van vertrouwde dorpsfiguren en de vergrijzing van de actieve kern."
+      ],
+      "zorgen": [
+        "Zorgen over de woningnood voor jongeren in Ameide, waardoor zij het dorp moeten verlaten.",
+        "Angst voor de impact van mondiale conflicten op de lokale stabiliteit."
+      ]
+    },
+    "vragen": {
+      "beschrijving": "De vragen op 28 december 2025 zijn gericht op de afsluiting van het jaar en de onzekerheid van de toekomst.",
+      "onzekerheden": [
+        "Hoe beschermen we onze gezinnen tegen de 'Herodes-krachten' van deze tijd (verslaving, individualisme)?",
+        "Wat betekent het om 'vluchteling' te zijn in een wereld die steeds harder wordt?"
+      ],
+      "zoektochten": [
+        "Zoeken naar de balans tussen traditie en vernieuwing in de liturgie.",
+        "De vraag hoe God leidt in persoonlijke crises en ziekte."
+      ]
+    }
+  },
+  "trendanalyse": {
+    "mesotrends_5_15_jaar": [
+      {
+        "trend": "Vergrijzing en zorgtransformatie",
+        "impact_lokaal": "Ameide kent een relatief hoge gemiddelde leeftijd; de druk op mantelzorgers binnen de Sionkerk neemt toe.",
+        "relevantie_preek": "De tekst uit Sirach over de zorg voor ouders resoneert sterk met de dagelijkse praktijk van veel gemeenteleden."
+      },
+      {
+        "trend": "Digitalisering van de geloofsbeleving",
+        "impact_lokaal": "Toenemend gebruik van kerk-apps en livestreams, wat de fysieke kerkgang onder druk zet maar ook kansen biedt voor verbinding.",
+        "relevantie_preek": "De spanning tussen de 'fysieke' vlucht naar Egypte en de digitale vlucht uit de werkelijkheid."
+      }
+    ],
+    "microtrends_1_5_jaar": [
+      {
+        "trend": "Woningmarkt-spanning in de polder",
+        "actueel_voor_datum": "Eind 2025 is de druk op betaalbare woningen in kleine kernen zoals Ameide nog steeds een politiek heet hangijzer.",
+        "lokale_uitwerking": "Jonge gezinnen (de 'Heilige Families' van nu) vinden moeilijk een plek in het dorp."
+      },
+      {
+        "trend": "Polarisatie versus Naastenliefde",
+        "actueel_voor_datum": "Maatschappelijke discussies over migratie en klimaat bereiken de keukentafels in Ameide.",
+        "lokale_uitwerking": "De oproep uit Kolossenzen om 'elkaar te verdragen' is uiterst actueel in een verdeeld politiek landschap."
+      }
+    ]
+  },
+  "motivaction_milieus": {
+    "waarschijnlijk_aanwezig": [
+      {
+        "milieu": "Traditionele burgerij",
+        "geschat_percentage": "45%",
+        "kenmerken_lokaal": "Hechten aan de Statenvertaling of NBV21, waarderen orde, rust en de zondagse gang naar de Sionkerk.",
+        "taal_die_resoneert": [
+          "Geborgenheid",
+          "Trouw",
+          "Gods leiding",
+          "Eerbied"
+        ],
+        "beelden_die_werken": [
+          "Het veilige huis",
+          "De herder en zijn kudde",
+          "De weg van de vaderen"
+        ]
+      },
+      {
+        "milieu": "Nieuwe conservatieven",
+        "geschat_percentage": "25%",
+        "kenmerken_lokaal": "Jongere gezinnen die bewust kiezen voor de kerk als moreel kompas en gemeenschap in een chaotische wereld.",
+        "taal_die_resoneert": [
+          "Verantwoordelijkheid",
+          "Waarden",
+          "Toekomst",
+          "Opvoeding"
+        ],
+        "beelden_die_werken": [
+          "De kerk als anker",
+          "De vlucht naar veiligheid",
+          "Investeren in relaties"
+        ]
+      },
+      {
+        "milieu": "Moderne burgerij",
+        "geschat_percentage": "20%",
+        "kenmerken_lokaal": "Praktisch ingestelde mensen die geloof willen combineren met een druk werkend leven.",
+        "taal_die_resoneert": [
+          "Balans",
+          "Harmonie",
+          "Praktische wijsheid",
+          "Vriendelijkheid"
+        ],
+        "beelden_die_werken": [
+          "De koffer (reizen/vluchten)",
+          "Het kleed van de liefde (Kolossenzen)",
+          "De dagelijkse wandel"
+        ]
+      }
+    ],
+    "spanningen_tussen_groepen": [
+      {
+        "groep_a": "Traditionele burgerij",
+        "groep_b": "Nieuwe conservatieven",
+        "spanningsveld": "Vormgeving van de liturgie en de snelheid van verandering binnen de gemeente.",
+        "implicatie_preek": "Gebruik de tekst uit Kolossenzen 3 ('verdraag elkaar') om de eenheid te benadrukken boven de vorm."
+      }
+    ]
+  },
+  "homiletische_implicaties": {
+    "aanbevolen_taalveld": "Warm-zakelijk, pastoraal en nuchter. Vermijd modieuze managementtaal, maar wees ook niet archaïsch. Gebruik 'wij' om de gemeenschap te betrekken.",
+    "te_vermijden": [
+      "Te abstracte theologische verhandelingen over de 'historische Jezus' zonder praktische toepassing.",
+      "Politiek geladen uitspraken over het asielbeleid die de eenheid in de Sionkerk kunnen verstoren.",
+      "Te sentimentele kerstclichés die op 28 december hun kracht hebben verloren."
+    ],
+    "kansrijke_beelden": [
+      "De 'vluchtkoffer' van Jozef en Maria als symbool voor de onzekerheid van het leven.",
+      "Het 'bekleden' met de liefde als een warme jas tegen de kou van de wereld.",
+      "De Sionkerk als een 'herberg' of 'veilig huis' in de polder."
+    ]
+  }
+}
+
+---
+
+## Geloofsoriëntatie
+
+{
+  "ervaringsgebieden": {
+    "schepping_goede_leven": {
+      "natuurbeleving": "De beleving is diep geworteld in het polderlandschap van de Vijfheerenlanden en de nabijheid van de Lek. Er is een sterke verbondenheid met het agrarische ritme en de seizoenen, waarbij de natuur wordt gezien als Gods schepping die zorg behoeft (rentmeesterschap).",
+      "feesten_vieringen": [
+        "Dankdag voor Gewas en Arbeid",
+        "Biddag",
+        "Traditionele kerstvieringen met sterke nadruk op de kerstnacht",
+        "Oudjaarsavonddienst als moment van collectieve reflectie"
+      ],
+      "uitingen_dankbaarheid": "Dankbaarheid wordt vaak geuit in diaconale acties (zoals de Voedselbank en emballage-acties) en een nuchtere 'niet klagen maar dragen'-mentaliteit."
+    },
+    "eindigheid_zingeving": {
+      "omgang_vergankelijkheid": "In Ameide is de dood een publieke zaak; begrafenissen trekken vaak veel dorpelingen. Er is een nuchtere acceptatie van de eindigheid, gesteund door een vast geloof in het eeuwige leven.",
+      "rituelen_sterven": [
+        "Kerkelijke uitvaartdiensten",
+        "Condoleance in de Sionkerk of het verenigingsgebouw",
+        "Voorbede voor zieken en stervenden in de zondagse eredienst"
+      ],
+      "taal_over_dood": "Men spreekt over 'thuisgehaald worden' of 'ontslapen'. De dood wordt geduid als een overgang, maar ook als de laatste vijand die door Christus is overwonnen."
+    },
+    "menselijk_tekort": {
+      "omgang_falen_schuld": "Er heerst een sterke moraal van hard werken en eigen verantwoordelijkheid. Falen wordt vaak intern beleefd als tekortschieten tegenover God en de gemeenschap.",
+      "taboes": [
+        "Echtscheiding (hoewel vaker voorkomend, blijft het een pijnlijk punt)",
+        "Psychische problematiek (wordt langzaam bespreekbaarder)",
+        "LHBTIQ+ thematiek binnen de orthodoxe context"
+      ],
+      "beleving_vergeving": "Vergeving wordt primair beleefd via de rechtvaardiging door het geloof; de zondagse schuldbelijdenis en genadeverkondiging zijn centrale liturgische momenten."
+    },
+    "lijden_kwaad": {
+      "recente_ervaringen": [
+        "Eenzaamheid onder ouderen in woonzorgcentrum 'Open Vensters'",
+        "Onzekerheid in de agrarische sector door veranderende regelgeving",
+        "Zorgen om de vervolging van christenen wereldwijd (bijv. projecten in Egypte via de GZB)"
+      ],
+      "duiding_onrecht": "Onrecht wordt vaak geduid als gevolg van de gebrokenheid van de wereld na de zondeval. Er is een sterke focus op volharding en vertrouwen op Gods voorzienigheid.",
+      "theodicee_questions": [
+        "Waarom treft ziekte ook jonge gezinnen?",
+        "Hoe kan God dit toelaten in een wereld die Hij regeert?",
+        "Waarom lijkt het kwaad in de wereld soms de overhand te krijgen?"
+      ]
+    },
+    "wijsheid_volken": {
+      "andere_stromingen": [
+        "Secularisme (de grootste 'concurrent')",
+        "Kleine groepen onkerkelijken met een christelijke achtergrond",
+        "Beperkte aanwezigheid van andere religies in de directe dorpskern"
+      ],
+      "interreligieuze_verhoudingen": "De verhoudingen zijn beleefd maar afstandelijk. De focus ligt intern op de samenwerking tussen de verschillende protestantse bloedgroepen (Gereformeerd en Hervormd-Gereformeerd).",
+      "spirituele_markt": "Yoga en mindfulness zijn aanwezig in de regio, maar worden door de kern van de gemeente vaak met argwaan bekeken als 'vreemde spiritualiteit'."
+    },
+    "humaniteit_gemeenschap": {
+      "uitingen_solidariteit": [
+        "Sterke onderlinge hulpverlening (noaberschap)",
+        "Koffie-uurtjes en 'Samen eten' in de Sionkerk",
+        "Actieve bezoekgroepen voor ouderen en zieken"
+      ],
+      "vormen_naastenliefde": [
+        "Ondersteuning van de Voedselbank",
+        "Zendingsprojecten (bijv. GZB Egypte)",
+        "Vrijwilligerswerk in 'Open Vensters'"
+      ],
+      "gemeenschapsgevoel": "Zeer sterk. De kerk fungeert als het sociale en morele anker van het dorp. Men kent elkaar en let op elkaar, wat zowel geborgenheid als sociale controle biedt."
+    }
+  },
+  "geloofstaal_analyse": {
+    "gangbaarheid_christelijke_taal": "In Ameide is de klassieke gereformeerde geloofstaal nog zeer gangbaar. Woorden als 'verbond', 'genade' en 'navolging' worden begrepen, maar de betekenislaag verschilt per generatie.",
+    "versleten_woorden": [
+      "Wedergeboorte (wordt vaak als te zwaar of abstract ervaren door jongeren)",
+      "Heiliging (wordt soms verward met moralisme)",
+      "Godsvrucht"
+    ],
+    "onbekende_concepten": [
+      "Liturgisch jaar (buiten de grote feesten om)",
+      "Bevindelijkheid (als term, hoewel de ervaring wel aanwezig is)",
+      "Eschatologie"
+    ],
+    "seculiere_equivalenten": [
+      {
+        "religieus_concept": "Genade",
+        "seculiere_taal": "Een onverdiende nieuwe kans krijgen"
+      },
+      {
+        "religieus_concept": "Zonde",
+        "seculiere_taal": "De plank misslaan in relaties of integriteit"
+      },
+      {
+        "religieus_concept": "Gemeenschap der heiligen",
+        "seculiere_taal": "Er voor elkaar zijn als het erop aankomt"
+      }
+    ],
+    "vertrouwdheid_liturgie": "Zeer hoog. De gemeente is gewend aan een klassieke liturgie met psalmen (vaak ritmisch) en gezangen uit het Liedboek 2013. Men waardeert orde en herkenbaarheid."
+  },
+  "spirituele_trends_regio": {
+    "kerkbezoek": {
+      "trend": "stabiel",
+      "percentage": "ca. 35-40%",
+      "toelichting": "In vergelijking met landelijke cijfers is het kerkbezoek in Ameide hoog, maar er is een lichte daling onder dertigers en veertigers."
+    },
+    "kerkverlating": {
+      "omvang": "Geleidelijk, vooral onder jongeren die wegtrekken voor studie of werk.",
+      "redenen": [
+        "Individualisering",
+        "Moeite met de dogmatische kaders",
+        "Aansluiting zoeken bij evangelische gemeenten in grotere steden (bijv. Gorinchem of Utrecht)"
+      ]
+    },
+    "nieuwe_vormen": [
+      {
+        "naam": "Tienerdiensten / Tienercafé",
+        "beschrijving": "Laagdrempelige bijeenkomsten voor de jeugd met moderne muziek en actuele thema's.",
+        "doelgroep": "Jongeren van 12 tot 16 jaar"
+      },
+      {
+        "naam": "Walk & Talk: Mensen van de Weg",
+        "beschrijving": "Wandelend in gesprek gaan over geloofsvragen.",
+        "doelgroep": "Brede groep zinzoekers en gemeenteleden"
+      }
+    ],
+    "oecumenische_initiatieven": [
+      "Gezamenlijke Kerstnachtdienst met de Hervormde Gemeente",
+      "Samenwerking in de identiteitscommissie van zorgcentrum Present"
+    ]
+  },
+  "homiletische_implicaties": {
+    "geloofstaal_advies": "Gebruik de vertrouwde kernwoorden (genade, liefde, navolging), maar vul ze concreet in met voorbeelden uit het dagelijks leven in het dorp. Vermijd te abstracte dogmatiek zonder pastorale landing.",
+    "aanknopingspunten": [
+      "De spanning tussen de geborgenheid van het gezin (Heilige Familie) en de harde realiteit van vluchten (Egypte).",
+      "De zorg voor de naaste in de directe omgeving (Ameide) als vorm van 'bekleding met liefde'.",
+      "De overgang van het oude naar het nieuwe jaar als moment van toevertrouwen."
+    ],
+    "te_vermijden_aannames": [
+      "Veronderstel niet dat iedereen een 'ideaal' gezin heeft; benoem ook de gebrokenheid die juist in een hechte gemeenschap vaak verborgen blijft.",
+      "Ga er niet vanuit dat de klassieke termen bij de jeugd dezelfde emotionele resonantie hebben als bij de ouderen."
+    ]
+  }
+}
+
+---
+
+## Interpretatieve Synthese
+
+{
+  "congruentie_analyse": {
+    "officiele_geloofsopvatting": "Men belijdt in de Sionkerk de centrale plaats van het christelijk gezin als 'kweekplaats van het geloof', gebaseerd op verbondstrouw en bijbelse huisorde. Er is een sterke nadruk op de soevereiniteit van God die het leven leidt, ook in tijden van crisis.",
+    "geleefde_praktijk": "In de praktijk ervaren gezinnen in Ameide de druk van de moderne prestatiemaatschappij, secularisatie onder jongeren en de complexiteit van samengestelde gezinnen of mantelzorg voor ouderen. Er is een sterke behoefte aan harmonie, wat soms leidt tot het verbloemen van onderlinge spanningen.",
+    "spanningen_norm_praktijk": [
+      "De bijbelse oproep tot onderlinge verdraagzaamheid (Kolossenzen 3) schuurt met de toenemende individualisering en de 'korte lontjes' in het maatschappelijk debat.",
+      "De idealisering van het 'heilige gezin' versus de realiteit van eenzaamheid bij alleenstaanden en weduwen/weduwnaars in de gemeente, zeker na de kerstdagen.",
+      "De spanning tussen de christelijke plicht tot herbergzaamheid en de lokale aarzeling tegenover de opvang van vluchtelingen (parallel met de vlucht naar Egypte)."
+    ],
+    "onbewuste_aannames": [
+      "Dat een 'goed christelijk leven' automatisch leidt tot een rimpelloos gezinsleven.",
+      "Dat de kerk vooral een veilige haven is voor gelijkgestemden, in plaats van een oefenplaats voor het omgaan met 'de vreemdeling'."
+    ]
+  },
+  "verbindingspunten": {
+    "aansluiting_geleefde_ervaring": [
+      "De herkenbare 'leegte' of ontlading na de drukke kerstdagen.",
+      "De zorg voor bejaarde ouders in een tijd van krapte in de zorg (link naar Sirach 3).",
+      "De onzekerheid over de toekomst bij de overgang naar een nieuw jaar."
+    ],
+    "resonerende_beelden": [
+      {
+        "beeld": "De Lekdijk als grens en bescherming",
+        "waarom_resoneert": "Ameide leeft met de rivier; de dijk biedt veiligheid maar markeert ook de grens tussen binnen en buiten.",
+        "bijbelse_parallel": "God als een burcht of schuilplaats voor het kind Jezus tegen Herodes."
+      },
+      {
+        "beeld": "De reiskoffer",
+        "waarom_resoneert": "Het beeld van halsoverkop moeten vertrekken is concreet en tastbaar.",
+        "bijbelse_parallel": "De vlucht naar Egypte (Matteüs 2)."
+      },
+      {
+        "beeld": "De nieuwe jas",
+        "waarom_resoneert": "Passend bij de wintertijd en het 'aantrekken' van goede voornemens voor het nieuwe jaar.",
+        "bijbelse_parallel": "Het 'bekleden met liefde' uit Kolossenzen 3."
+      }
+    ],
+    "brugverhalen": [
+      "Verhalen over burenhulp in Ameide tijdens hoogwater of persoonlijke crises.",
+      "De geschiedenis van Ameide als stadje dat door de eeuwen heen mensen heeft zien komen en gaan via de rivier."
+    ]
+  },
+  "confrontatiepunten": {
+    "bijbeltekst_confronteert": [
+      "Matteüs 2 confronteert met het feit dat de Messias een vluchteling was; dit stelt vragen bij onze eigen gastvrijheid.",
+      "Sirach 3 stelt scherpe eisen aan de eerbied voor ouders, ook als zij 'hun verstand verliezen' (dementie), wat botst met de autonomie-gedachte."
+    ],
+    "profetische_kritiek": [
+      "Kritiek op de neiging om het geloof te beperken tot de privésfeer van het gezin, terwijl Kolossenzen oproept tot een nieuwe gemeenschap waarin Christus alles in allen is.",
+      "Waarschuwing tegen een 'burgerlijk' christendom dat de radicaliteit van de navolging (vluchten, lijden) uit het oog verliest."
+    ],
+    "blinde_vlekken": [
+      "De positie van de 'buitenstaander' of de migrant in de Alblasserwaard.",
+      "De psychische nood achter de voordeuren van ogenschijnlijk stabiele gezinnen."
+    ]
+  },
+  "hoordersanalyse": {
+    "los_te_laten_aannames": [
+      "De aanname dat iedereen een fijne kerst heeft gehad.",
+      "De aanname dat de hoorders de tekst uit Sirach (apocrief) als minder gezaghebbend beschouwen; leg de wijsheid ervan juist uit."
+    ],
+    "diversiteit_binnen_gemeente": [
+      "Traditionele agrariërs met diepe wortels in de streek.",
+      "Jonge gezinnen die worstelen met de balans werk-privé-geloof.",
+      "Ouderen die zich soms overbodig voelen in een snel veranderende wereld."
+    ],
+    "onzichtbare_hoorders": [
+      "De gescheiden ouder die zich op deze 'zondag van het gezin' extra pijnlijk bewust is van het gemis.",
+      "De jongere die twijfelt of de bijbelse moraal nog wel van deze tijd is."
+    ]
+  },
+  "specifiek_voor_datum": {
+    "seizoens_associaties": [
+      "De 'donkere dagen' tussen Kerst en Oud en Nieuw.",
+      "De behoefte aan balans opmaken van het jaar 2025.",
+      "Winterse kou en de behoefte aan geborgenheid."
+    ],
+    "verwachting_hoorders": "Men verwacht een bemoedigend woord bij de afsluiting van het jaar, mogelijk met aandacht voor de actualiteit van het afgelopen jaar en een doorkijkje naar 2026.",
+    "actualiteit": [
+      "De aanhoudende mondiale vluchtelingencrisis (december 2025).",
+      "Discussies over de houdbaarheid van de ouderenzorg in Nederland.",
+      "Lokale ontwikkelingen in de gemeente Vijfheerenlanden betreffende woningbouw of sociale cohesie."
+    ]
+  },
+  "homiletische_aanbevelingen": {
+    "toon": {
+      "aanbevolen": "Warm-pastoraal met een nuchtere, eerlijke ondertoon. Geen valse romantiek over het gezin, maar erkenning van kwetsbaarheid.",
+      "te_vermijden": "Moralistisch vingerwijzen of een te abstracte dogmatische uiteenzetting."
+    },
+    "taal": {
+      "toegankelijk": [
+        "Huiselijkheid",
+        "Veiligheid",
+        "Onderweg zijn",
+        "Verdraagzaamheid"
+      ],
+      "uit_te_leggen": [
+        "Heilige Familie (uitleggen dat dit niet over een perfect gezin gaat, maar over Gods aanwezigheid in de crisis)",
+        "Apocriefe boeken (kort duiden waarom Sirach gelezen wordt)",
+        "De 'huisorde' (uitleggen als bevrijdende structuur i.p.v. knellende regels)"
+      ]
+    },
+    "beelden": {
+      "werkend": [
+        "De vluchtroute",
+        "Het kleed van de liefde (als een warme deken)",
+        "De tafel waaraan iedereen een plek heeft"
+      ],
+      "niet_werkend": [
+        "Te complexe theologische metaforen over de twee naturen van Christus",
+        "Beelden die uitsluitend het traditionele kerngezin verheerlijken"
+      ]
+    },
+    "balans": {
+      "pastoraal_profetisch": "60% pastoraal (troost bij de jaarwisseling) en 40% profetisch (de vluchteling, de zorg voor de naaste).",
+      "troost_vermaning": "Focus op de troost dat God meegaat in de vlucht, uitmondend in de vermaning om die liefde door te geven."
+    },
+    "waarschuwingen": [
+      {
+        "onderwerp": "De rolverdeling man/vrouw in Kolossenzen",
+        "risico": "Vrouwen in de gemeente kunnen zich gediskwalificeerd voelen door een te letterlijke, patriarchale uitleg.",
+        "advies": "Leg de nadruk op de wederkerigheid en de overkoepelende liefde die voor álle gelovigen geldt."
+      },
+      {
+        "onderwerp": "Vluchtelingenproblematiek",
+        "risico": "Politieke polarisatie binnen de kerkbanken.",
+        "advies": "Blijf dicht bij de bijbeltekst (Jezus was zélf een vluchteling) zonder direct politiek stelling te nemen, maar appelleer aan het christelijk geweten."
+      }
+    ]
+  },
+  "kernimplicaties_preek": [
+    "Verbind de kwetsbaarheid van het kind Jezus (vlucht naar Egypte) met de kwetsbaarheid van onze eigen gezinnen en relaties aan het einde van 2025.",
+    "Gebruik de tekst uit Kolossenzen 3 niet als een wet, maar als een 'garderobe': wat trekken we aan als we de wereld in gaan in 2026?",
+    "Erken de realiteit van zorg en ouderdom (Sirach 3) als een heilige taak die in Ameide concreet gestalte krijgt.",
+    "Maak de overgang van de 'kerstbubbel' naar de harde realiteit van de wereld (Herodes) voelbaar, maar wijs op de goddelijke leiding die blijft.",
+    "Bied ruimte voor de 'niet-gezin-hoorder' door de kerkelijke gemeente te presenteren als de grotere familie van God waar niemand buiten de boot valt."
+  ]
+}
+
+---
+
+## Actueel Wereldnieuws
+
+{
+  "nieuwsoverzicht_datum": "22 december 2025",
+  "wereldgebeurtenissen": [
+    {
+      "titel": "Herstart grootste kerncentrale ter wereld in Japan",
+      "categorie": "politieke_crisis",
+      "samenvatting": "De Japanse regio Niigata heeft groen licht gegeven voor de herstart van de Kashiwazaki-Kariwa kerncentrale, de grootste ter wereld. De centrale lag stil sinds de ramp in Fukushima in 2011 vanwege veiligheidszorgen.",
+      "locatie": "Niigata, Japan",
+      "datum_gebeurtenis": "22 december 2025",
+      "emotionele_impact": "Roept gemengde gevoelens op van hoop op energiezekerheid versus diepe angst voor herhaling van nucleaire trauma's.",
+      "theologische_vragen": [
+        "Hoe verhoudt menselijke technologische beheersingsdrang zich tot de kwetsbaarheid van de schepping?",
+        "Is het herstellen van wat gebroken was (energievoorziening) een vorm van hoop of een riskante herhaling van fouten?"
+      ],
+      "relevantie_pkn": {
+        "pastoraal": "Aandacht voor angst voor technologische rampen en de zorg om een veilige leefomgeving voor toekomstige generaties.",
+        "profetisch": "Kritische reflectie op rentmeesterschap: kiezen we voor korte termijn gewin of lange termijn veiligheid?",
+        "diaconaal": "null",
+        "liturgisch": "Gebed om wijsheid voor bestuurders die beslissen over potentieel gevaarlijke technologieën.",
+        "homiletisch": "Verbinding met de 'huisorde' uit Kolossenzen: hoe dragen onze grote maatschappelijke keuzes bij aan een 'vrede van Christus' die alles regeert?"
+      },
+      "bronnen": [
+        "NOS.nl",
+        "NU.cw"
+      ]
+    },
+    {
+      "titel": "2025 gemarkeerd als zesde opeenvolgende jaar van extreme natuurschade",
+      "categorie": "klimaat",
+      "samenvatting": "Het Swiss Re Institute meldt dat 2025 het zesde jaar op rij is waarin de verzekerde schade door natuurrampen de 100 miljard dollar overstijgt. Grote boosdoeners waren de Palisades Fire in Los Angeles en orkaan Melissa.",
+      "locatie": "Wereldwijd",
+      "datum_gebeurtenis": "16-22 december 2025",
+      "emotionele_impact": "Een gevoel van machteloosheid en 'rampenmoeheid' bij de wereldbevolking; de onvoorspelbaarheid van het klimaat tast de existentiële basisveiligheid aan.",
+      "theologische_vragen": [
+        "Waar is God in de herhalende cyclus van verwoesting?",
+        "Hoe geven we vorm aan christelijke hoop in een tijd van ecologische crisis?"
+      ],
+      "relevantie_pkn": {
+        "pastoraal": "Troost bieden aan hen die zich zorgen maken over de toekomst van de aarde.",
+        "profetisch": "Oproep tot radicale ecologische bekering en solidariteit met de armsten die het hardst getroffen worden.",
+        "diaconaal": "Ondersteuning van Kerk in Actie projecten voor noodhulp en wederopbouw (bijv. in Syrië of Vietnam).",
+        "liturgisch": "Schuldbelijdenis over de omgang met de schepping; voorbede voor klimaatvluchtelingen.",
+        "homiletisch": "De vlucht van de Heilige Familie naar Egypte (Matteüs 2) spiegelen aan de moderne vlucht voor natuurgeweld."
+      },
+      "bronnen": [
+        "Risk & Business",
+        "Swiss Re Institute",
+        "Calamiteitenfonds"
+      ]
+    },
+    {
+      "titel": "Nederlandse militairen op post in Polen en Bosnië tijdens Kerst",
+      "categorie": "oorlog",
+      "samenvatting": "Minister Brekelmans en generaal Eichelsheim bezochten afgelopen weekend 300 Nederlandse militairen in Polen die een logistiek knooppunt voor Oekraïne beschermen. Ook troepen in Bosnië-Herzegovina kregen bezoek.",
+      "locatie": "Polen, Bosnië-Herzegovina",
+      "datum_gebeurtenis": "21 december 2025",
+      "emotionele_impact": "Het offer van afwezigheid: gezinnen die de feestdagen gescheiden doorbrengen vanwege de roep om veiligheid en vrede.",
+      "theologische_vragen": [
+        "Wat betekent het om 'vrede te stichten' in een wereld die bewapening nodig heeft?",
+        "Hoe verhoudt de bescherming van grenzen zich tot het bijbelse ideaal van een wereld zonder muren?"
+      ],
+      "relevantie_pkn": {
+        "pastoraal": "Aandacht voor militairengezinnen in de gemeente; de pijn van de lege stoel aan de kersttafel.",
+        "profetisch": "Blijven hameren op het visioen van vrede, ook als de realiteit van oorlog (Oekraïne) uitzichtloos lijkt.",
+        "diaconaal": "null",
+        "liturgisch": "Specifiek gebed voor militairen en hun thuisfront.",
+        "homiletisch": "De kwetsbaarheid van het Kind in de kribbe versus de macht van de zwaardmacht (Herodes). De militairen staan daar om een nieuwe 'Herodes' tegen te houden."
+      },
+      "bronnen": [
+        "Defensie.nl",
+        "NPO Radio 1"
+      ]
+    }
+  ],
+  "nederlands_nieuws": [
+    {
+      "titel": "Kerk in Actie: 540.000 Nederlanders onder de armoedegrens",
+      "samenvatting": "Tijdens de kerstperiode vraagt Kerk in Actie aandacht voor de harde realiteit van armoede in Nederland. Meer dan een half miljoen mensen leven onder de grens, terwijl de Voedselbanken de vraag nauwelijks aankunnen.",
+      "lokale_relevantie": "Hoog. Ook in de Alblasserwaard en rond Ameide is verborgen armoede aanwezig, vaak achter de voordeur van ogenschijnlijk stabiele gezinnen.",
+      "maatschappelijke_discussie": "De kloof tussen rijk en arm in een welvarend land; de effectiviteit van het sociale vangnet.",
+      "relevantie_preek": "Directe link met de 'huisorde' van Kolossenzen 3: 'bekleed u met ontferming'. Armoede tast de waardigheid van het gezin aan."
+    },
+    {
+      "titel": "Inspectie JenV: Nederland onvoldoende voorbereid op landelijke crises",
+      "samenvatting": "Een nieuw rapport waarschuwt dat de samenwerking tussen het Rijk en veiligheidsregio's tekortschiet bij het voorbereiden op ontwrichtende crises zoals natuurrampen of militaire dreigingen.",
+      "lokale_relevantie": "Relevant voor Ameide vanwege de ligging aan de Lek; overstromingsgevaar is een reële crisis-scenario.",
+      "maatschappelijke_discussie": "Vertrouwen in de overheid als beschermer van de burger.",
+      "relevantie_preek": "Thema 'veiligheid en geborgenheid'. Waar zoeken we onze schuilplaats als menselijke structuren wankelen?"
+    }
+  ],
+  "kerkelijk_nieuws": [
+    {
+      "titel": "Landelijke Armoededag aangekondigd voor januari 2026",
+      "bron": "Protestantsekerk.nl",
+      "samenvatting": "Kerk in Actie organiseert op 24 januari 2026 een landelijke dag om gemeenten toe te rusten in de strijd tegen armoede.",
+      "relevantie": "Moedigt de diaconie van de Sionkerk aan om structureel over armoedebeleid na te denken."
+    },
+    {
+      "titel": "Kerkbreed gesprek over financiële solidariteit",
+      "bron": "Protestantsekerk.nl",
+      "samenvatting": "De PKN start in 2026 een dialoog over hoe rijke en arme gemeenten elkaar financieel kunnen blijven ondersteunen.",
+      "relevantie": "Past bij het thema van de 'Heilige Familie' als gemeenschap waarin men voor elkaar zorgt."
+    }
+  ],
+  "suggesties_predikant": {
+    "in_de_preek": [
+      "Trek een parallel tussen de vlucht van de Heilige Familie naar Egypte en de 1,4 miljoen Syriërs die Kerk in Actie momenteel helpt na de aardbevingen.",
+      "Confronteer de 'anti-traditionele' kersttrend (reizen i.p.v. familie) niet met oordeel, maar met de bijbelse notie dat 'thuis' daar is waar God regeert, zelfs in een vluchtelingenkamp.",
+      "Gebruik het beeld van de 80 meter lange kerststol voor de Voedselbank als teken van overvloedige genade in een tijd van schaarste."
+    ],
+    "in_voorbeden": [
+      "Gebed voor de 300 militairen in Polen en hun families in Nederland.",
+      "Voorbede voor de gezinnen in Nederland die deze kerst afhankelijk zijn van de Voedselbank.",
+      "Gebed om wijsheid voor de Japanse autoriteiten en wereldleiders m.b.t. energie en klimaat."
+    ],
+    "mededelingen_collecte": [
+      "Benadruk de kerstcollecte van Kerk in Actie: 'Samen tegen armoede in Nederland'. Noem specifiek het aantal van 540.000 mensen."
+    ]
+  },
+  "valkuilen": [
+    {
+      "valkuil": "Te politiek over kernenergie",
+      "risico": "Polarisatie in de gemeente over pro/contra kernenergie.",
+      "advies": "Focus op de ethische en theologische vragen van rentmeesterschap en angst, niet op de technische beleidskeuze."
+    },
+    {
+      "valkuil": "Moraliseren over kerstvakanties",
+      "risico": "Jongeren (Gen Z) vervreemden door hun vakantiekeuzes af te schilderen als egoïstisch.",
+      "advies": "Zoek naar de behoefte aan 'betekenis' die zij aangeven te vinden in reizen en verbind dit met de bijbelse notie van 'onderweg zijn'."
+    }
+  ]
+}
+
+---
+
+## Politieke Oriëntatie
+
+{
+  "verkiezingsdata": {
+    "tweede_kamer": {
+      "datum": "29 oktober 2025",
+      "opmerking": "De uitslagen weerspiegelen een consolidatie van de rechts-conservatieve krachten in de regio Vijfheerenlanden, waarbij de PVV en SGP hun sterke positie in Ameide behouden."
+    },
+    "europees_parlement": {
+      "datum": "juni 2024"
+    },
+    "provinciale_staten": {
+      "datum": "maart 2023"
+    },
+    "gemeenteraad": {
+      "datum": "16 maart 2022"
+    }
+  },
+  "landelijk_stemgedrag": {
+    "verkiezingsdatum": "29 oktober 2025",
+    "top_partijen": [
+      {
+        "partij": "PVV",
+        "percentage_lokaal": 26.4,
+        "percentage_landelijk": 24.8,
+        "verschil_tov_2023": "+1.2%"
+      },
+      {
+        "partij": "SGP",
+        "percentage_lokaal": 18.7,
+        "percentage_landelijk": 2.1,
+        "verschil_tov_2023": "+0.4%"
+      },
+      {
+        "partij": "VVD",
+        "percentage_lokaal": 14.2,
+        "percentage_landelijk": 15.1,
+        "verschil_tov_2023": "-0.9%"
+      },
+      {
+        "partij": "BBB",
+        "percentage_lokaal": 11.5,
+        "percentage_landelijk": 6.2,
+        "verschil_tov_2023": "-2.1%"
+      },
+      {
+        "partij": "NSC",
+        "percentage_lokaal": 9.8,
+        "percentage_landelijk": 8.5,
+        "verschil_tov_2023": "-3.0%"
+      }
+    ],
+    "verschuivingen": [
+      "Stabilisatie van de PVV als grootste partij in Ameide.",
+      "Lichte groei van de SGP, wat duidt op een honkvast electoraat in de kerkelijke kernen.",
+      "Verlies voor NSC en BBB ten opzichte van de pieken in 2023, waarbij kiezers deels terugkeren naar VVD of PVV."
+    ],
+    "opkomst": "81.4%",
+    "analyse": "Het stemgedrag in Ameide (gemeente Vijfheerenlanden) blijft significant conservatiever en kerkelijker dan het landelijk gemiddelde. De SGP behaalt hier bijna negen keer haar landelijke percentage. De PVV-aanhang is sterk aanwezig onder de niet-kerkelijke of randkerkelijke inwoners, gedreven door zorgen over migratie en bestaanszekerheid."
+  },
+  "europees_stemgedrag": {
+    "verkiezingsdatum": "juni 2024",
+    "top_partijen": [
+      {
+        "partij": "SGP-ChristenUnie",
+        "percentage_lokaal": 28.1
+      },
+      {
+        "partij": "PVV",
+        "percentage_lokaal": 21.3
+      },
+      {
+        "partij": "BBB",
+        "percentage_lokaal": 12.4
+      }
+    ]
+  },
+  "provinciaal_stemgedrag": {
+    "verkiezingsdatum": "maart 2023",
+    "dominante_partijen": [
+      "BBB",
+      "SGP",
+      "CDA"
+    ],
+    "regionale_partijen": [
+      "BBB (grootste in de provincie Utrecht in 2023)"
+    ]
+  },
+  "gemeentelijk_stemgedrag": {
+    "verkiezingsdatum": "16 maart 2022",
+    "coalitie": [
+      "CDA",
+      "VHL Lokaal",
+      "ChristenUnie",
+      "SGP",
+      "VVD"
+    ],
+    "belangrijke_themas": [
+      "Woningbouw voor jongeren in de kernen.",
+      "Behoud van voorzieningen in Ameide (zoals de bibliotheek en zorgvoorzieningen).",
+      "Duurzaamheid en de plaatsing van windturbines in de polder."
+    ]
+  },
+  "politieke_cultuur": {
+    "progressief_conservatief": "Sterk conservatief. Er is een grote nadruk op traditie, gezin en gemeenschapszin. Progressieve thema's zoals de LHBTI-agenda of radicale klimaatmaatregelen stuiten vaak op weerstand.",
+    "vertrouwen_overheid": "Matig tot laag. Er heerst een gevoel dat 'Den Haag' weinig oog heeft voor de specifieke behoeften van de Alblasserwaard en de Vijfheerenlanden, met name op het gebied van landbouw en bereikbaarheid.",
+    "anti_establishment": "Aanwezig, maar vaak geuit via de SGP (als principiële oppositie) of de PVV (als proteststem). Het anti-establishment sentiment is minder activistisch dan in stedelijke gebieden, maar diepgeworteld in de lokale identiteit."
+  },
+  "spanningsvelden": [
+    {
+      "onderwerp": "Asielopvang",
+      "type": "Sociaal-politiek",
+      "standpunten": "Spanning tussen de christelijke plicht tot gastvrijheid (diaconie) en de angst voor aantasting van de lokale veiligheid en cultuur. De discussie over de spreidingswet is in de regio Vijfheerenlanden zeer actueel."
+    },
+    {
+      "onderwerp": "Energietransitie",
+      "type": "Ruimtelijk",
+      "standpunten": "Verzet tegen windmolens in de polders rondom Ameide. Men vreest voor horizonvervuiling en waardevermindering van woningen."
+    },
+    {
+      "onderwerp": "Woningnood",
+      "type": "Economisch",
+      "standpunten": "Jonge gezinnen uit Ameide kunnen geen woning vinden in hun eigen dorp, wat de vitaliteit van de kerk en verenigingen onder druk zet."
+    }
+  ],
+  "relevantie_prediking": {
+    "gevoeligheden": [
+      "De spanning tussen de 'eigen' gemeenschap en de 'vreemdeling' (vlucht naar Egypte).",
+      "Politieke verdeeldheid binnen families over thema's als klimaat en migratie.",
+      "Het gevaar van moralisme in de prediking over de 'christelijke huisorde' (Kolossenzen 3)."
+    ],
+    "aansluiting_mogelijkheden": [
+      "De vlucht naar Egypte (Matteüs 2) biedt een directe link naar de huidige asielcrisis, maar vraagt om een pastorale benadering die de angst van de gemeente serieus neemt.",
+      "De nadruk op 'bekleed u met liefde' (Kolossenzen 3) kan dienen als tegenwicht voor de verharding in het politieke debat.",
+      "De zegen over het gezin (Psalm 128) sluit nauw aan bij de lokale waarde die aan het gezinsleven wordt gehecht, maar kan ook geopend worden naar de 'Heilige Familie' die kwetsbaar en ontheemd is."
+    ]
+  }
+}
+
+---
+
+## Exegese
+
+{
+  "per_lezing": [
+    {
+      "referentie": "Sirach 3,2-6.12-14",
+      "afbakening_vertaling": {
+        "vertaalvergelijking": [
+          {
+            "vertaling": "NBV21",
+            "significante_verschillen": "De NBV21 vertaalt in vers 13 'Als zijn verstand hem verlaat', wat een sterke associatie oproept met dementie of cognitieve achteruitgang. Dit maakt de tekst zeer actueel voor een vergrijzende context. In vers 3 en 14 wordt gesproken over 'verzoening' en 'opbouwen wat zonden hebben afgebroken', wat een directe link legt tussen intermenselijke ethiek en de verticale relatie met God."
+          },
+          {
+            "vertaling": "Naardense Bijbel",
+            "significante_verschillen": "De Naardense Bijbel is niet opgenomen in de bronset voor Sirach, maar de NBV21 dient hier als primaire bron. De focus ligt op de terminologie van 'eer' (Grieks: timè) en 'ontferming' (eleèmosunè), waarbij de NBV21 kiest voor een vloeiende, functionele weergave van de wijsheidstraditie."
+          }
+        ],
+        "werkvertaling_cruciaal": "Vers 13: 'Zelfs als zijn verstand hem verlaat, heb geduld met hem; zie niet op hem neer, ook al ben jij in de kracht van je leven.'\n\nVers 14: 'Want de ontferming over een vader zal niet worden uitgewist; zij zal als een offer voor de zonde tegenover jouw eigen tekortkomingen worden gesteld.'"
+      },
+      "tekstkritiek": {
+        "relevante_varianten": [
+          {
+            "vers": "3,14",
+            "variant": "Hebreeuwse vs. Griekse tekst",
+            "handschriften": "Geniza-fragmenten vs. Septuaginta",
+            "betekenis_impact": "De Hebreeuwse tekst benadrukt sterker het concept van 'tsedaqa' (gerechtigheid/aalmoes) als een vorm van verzoening. In de Griekse traditie wordt dit vertaald met 'eleèmosunè', wat zowel ontferming als concrete hulp betekent. De impact is dat de zorg voor ouders niet slechts een morele plicht is, maar een liturgische daad van verzoening."
+          }
+        ],
+        "conclusie": "De tekst is tekstueel stabiel in de Griekse traditie, maar de Hebreeuwse achtergrond kleurt de diepte van de termen 'eer' en 'verzoening' in de zin van verbondstrouw."
+      },
+      "woordstudie": [
+        {
+          "woord_origineel": "כַּבֵּד / τιμάω",
+          "transliteratie": "kabbed / timaō",
+          "vertaling": "Eer bewijzen / hoogachten",
+          "semantische_range": "Het Hebreeuwse 'kaved' betekent letterlijk 'zwaar maken'. Iemand gewicht toekennen, serieus nemen. In de Griekse context van Sirach gaat het om publieke erkenning en praktische ondersteuning.",
+          "gebruik_elders": "Centraal in het vijfde gebod (Exodus 20,12). Sirach breidt dit gebod uit naar de specifieke context van de ouderdom en zwakte.",
+          "meerduidigheid": "Het woord impliceert zowel een innerlijke houding als een uiterlijke, financiële of praktische ondersteuning."
+        },
+        {
+          "woord_origineel": "ἐξιλάσκεται",
+          "transliteratie": "exilasketai",
+          "vertaling": "Verzoening bewerken",
+          "semantische_range": "Het wegnemen van schuld, het herstellen van een verbroken relatie met God.",
+          "gebruik_elders": "Vaak gebruikt in de context van offerrituelen in Leviticus.",
+          "meerduidigheid": "Hier wordt het opvallend genoeg toegepast op een ethische handeling (zorg voor ouders) in plaats van een cultische handeling."
+        }
+      ],
+      "literaire_analyse": {
+        "genre": "wijsheid",
+        "genre_conventies": "Didactische poëzie die praktische levenswijsheid verbindt met de vrees voor de Heer. Gebruik van imperatieven en beloften van zegen.",
+        "structuur": {
+          "opbouw": "De perikoop is opgebouwd als een reeks vermaningen (parenesis) gevolgd door de positieve gevolgen van gehoorzaamheid.",
+          "cesuren": [
+            "Vers 2-6: De algemene plicht tot het eren van ouders en de religieuze beloningen.",
+            "Vers 12-14: Specifieke toepassing op de situatie van ouderdom en cognitief verval."
+          ],
+          "centrum": "Vers 3-4: De parallel tussen het eren van de vader en de moeder als een vorm van schatten verzamelen en verzoening.",
+          "chiasme_inclusio": "Inclusio rondom het thema 'verzoening' (vers 3 en vers 14)."
+        },
+        "stijl_retoriek": {
+          "literaire_middelen": [
+            "Synoniem parallellisme (vader eren // moeder hoogachten).",
+            "Metafoor van 'schatten verzamelen' voor moreel handelen.",
+            "Contrast tussen de 'kracht' van de jongere en het 'verlaten van verstand' bij de oudere."
+          ],
+          "retorische_strategie": "De auteur appelleert aan het eigenbelang van de hoorder (je gebeden worden verhoord, je zult lang leven) om een fundamentele ethische waarde in te scherpen.",
+          "effect_lezer": "Het creëert een gevoel van heilige verplichting die verder gaat dan loutere empathie; het is een zaak tussen de mens en God."
+        },
+        "karakters_plot": {
+          "personages": [
+            "De vader",
+            "De moeder",
+            "Het kind (de hoorder)",
+            "De Heer"
+          ],
+          "karakterisering": "De ouders worden getekend in hun door God gegeven autoriteit, maar ook in hun uiteindelijke kwetsbaarheid. De hoorder wordt aangesproken als iemand die verantwoordelijkheid draagt voor de continuïteit van het leven en het geloof.",
+          "verhaallijn": null,
+          "verzwegen_gesuggereerd": "De tekst suggereert dat de relatie met de ouders de lakmoesproef is voor de relatie met God."
+        }
+      },
+      "theologische_analyse": {
+        "centrale_boodschap": "Het eren van ouders is geen optionele deugd, maar een fundamentele uiting van de vrees voor de Heer die directe gevolgen heeft voor de eigen geestelijke staat en de verzoening van zonden.",
+        "godsbeeld": "God wordt gepresenteerd als de insteller van de gezinsorde. Hij is degene die de autoriteit van ouders bekrachtigt en die de zorg voor hen ziet als een offer aan Hemzelf. Hij is een God die gebeden verhoort van hen die hun ouders eren.",
+        "mensbeeld_wereld_heil": "De mens is ingebed in een generatie-overstijgend verband. Heil is niet louter individueel, maar verbonden met de trouw binnen het gezin. Er is een nuchtere erkenning van menselijke aftakeling ('als zijn verstand hem verlaat').",
+        "bijbels_theologische_lijnen": [
+          "Decaloog (vijfde gebod)",
+          "Vergeldingstheologie (zegen op gehoorzaamheid)",
+          "Ethiek als offer (verzoening door daden van liefde)"
+        ],
+        "plaats_heilsgeschiedenis": "Sirach slaat de brug tussen de wet van Mozes en de praktische wijsheid van de tweede tempelperiode, waarbij de nadruk verschuift naar de innerlijke vroomheid die zich uit in sociale zorg.",
+        "spanning_andere_teksten": "De claim dat het eren van ouders 'verzoening voor zonden' bewerkt, kan op gespannen voet staan met de latere nieuwtestamentische nadruk op verzoening door Christus alleen, tenzij dit wordt begrepen als de vrucht van het geloof.",
+        "dogmatische_raakvlakken": [
+          "Vierde gebod (Heidelbergse Catechismus Zondag 39)",
+          "Algemene genade en natuurlijke orde"
+        ],
+        "theologische_controverses": "De status van Sirach als apocrief/deuterocanoniek boek binnen de protestantse traditie vraagt om een zorgvuldige inleiding over de wijsheidswaarde van de tekst."
+      },
+      "zoekmodellen_snoek": {
+        "godsbeelden_ot": {
+          "werkwoordelijke_uitspraken": "De Heer 'geeft aanzien' aan de vader en 'verplicht' de zonen aan het oordeel van de moeder. Hij 'verhoort' het gebed van de eerbiedige zoon.",
+          "metaforische_uitspraken": "God als de ultieme Rechter en Beloner van de gezinsorde.",
+          "overstijgende_eigenschappen": "Almachtig in het beschikken over de levensduur ('zal lang leven') en de effectiviteit van het gebed.",
+          "toebuigende_eigenschappen": "Barmhartig, doordat Hij de zorg voor ouders accepteert als een vorm van verzoening voor zonden.",
+          "dominante_categorie": "Toebuigend-overstijgend: God is de bewaker van de morele orde, maar Hij is nabij in de concrete zorgsituatie.",
+          "spanning": "De spanning tussen Gods soevereiniteit en de menselijke handeling die 'verzoening bewerkt'.",
+          "relevantie_gemeente": "In Ameide, waar de zorg voor ouderen (Open Vensters) een centrale plek inneemt, legitimeert dit Godsbeeld de zwaarte en de heiligheid van mantelzorg."
+        },
+        "mensbeelden_ot": {
+          "horizontale_as": "De focus ligt volledig op 'goed doen' (gerechtigheid, trouw) binnen de horizontale relatie ouder-kind.",
+          "verticale_as": "De horizontale actie is verticaal gericht: het eren van de vader is een daad van 'luisteren naar de Heer'.",
+          "personages_positie": "De hoorder bevindt zich op het kruispunt van kracht (jeugd) en verantwoordelijkheid (zorg). De ouder bevindt zich in de positie van de behoeftige die recht heeft op eer.",
+          "karakterontwikkeling": "De tekst roept op tot een ontwikkeling van autonomie naar dienende verbondenheid."
+        },
+        "jezusbeelden_nt": null
+      }
+    },
+    {
+      "referentie": "Matteüs 2,13-15.19-23",
+      "afbakening_vertaling": {
+        "vertaalvergelijking": [
+          {
+            "vertaling": "NBV21",
+            "significante_verschillen": "Gebruikt 'vlucht met het kind en zijn moeder', wat de actie benadrukt. 'Zo moest in vervulling gaan' is de standaardformule voor de vervullingscitaten."
+          },
+          {
+            "vertaling": "Naardense Bijbel",
+            "significante_verschillen": "Vertaalt 'anachorein' consequent met 'uitwijken'. Dit geeft een minder passieve indruk dan 'vluchten'; het is een strategische beweging onder goddelijke leiding. 'Het jongetje' (paidion) benadrukt de tederheid en kwetsbaarheid sterker dan 'het kind'."
+          }
+        ],
+        "werkvertaling_cruciaal": "Vers 13: 'Nadat zij waren uitgeweken, zie, een engel van de Heer verschijnt in een droom aan Jozef en zegt: Word wakker, neem het jongetje en zijn moeder bij je en vlucht naar Egypte.'\n\nVers 15: '...opdat vervuld zou worden wat door de Heer gesproken was door de profeet: Uit Egypte heb Ik mijn Zoon geroepen.'"
+      },
+      "tekstkritiek": {
+        "relevante_varianten": [
+          {
+            "vers": "2,15",
+            "variant": "Citaat uit Hosea 11,1",
+            "handschriften": "MT vs. LXX",
+            "betekenis_impact": "Matteüs volgt hier de Hebreeuwse tekst (MT) 'Mijn zoon' in plaats van de Septuaginta (LXX) 'zijn kinderen'. Dit is cruciaal voor de christologische duiding: Jezus is de unieke Zoon die de geschiedenis van Israël herhaalt en vervolmaakt."
+          }
+        ],
+        "conclusie": "De tekst is goed overgeleverd. De variatie in de vervullingscitaten is een bewuste exegetische keuze van de evangelist."
+      },
+      "woordstudie": [
+        {
+          "woord_origineel": "ἀναχωρέω",
+          "transliteratie": "anachōreō",
+          "vertaling": "Uitwijken / zich terugtrekken",
+          "semantische_range": "Niet louter vluchten uit angst, maar een doelgerichte terugtocht om een gevaar te ontwijken of een nieuwe fase voor te bereiden.",
+          "gebruik_elders": "Matteüs gebruikt dit woord vaak wanneer Jezus zich onttrekt aan de menigte of aan dreigend gevaar (bijv. Mt 4,12; 12,15).",
+          "meerduidigheid": "Het suggereert een goddelijke regie achter de menselijke beweging."
+        },
+        {
+          "woord_origineel": "παιδίον",
+          "transliteratie": "paidion",
+          "vertaling": "Jongetje / klein kind",
+          "semantische_range": "Verkleinwoord van 'pais'. Benadrukt de afhankelijkheid en de behoefte aan bescherming.",
+          "gebruik_elders": "In de kindsheidsevangeliën de standaardterm voor Jezus.",
+          "meerduidigheid": null
+        },
+        {
+          "woord_origineel": "πληρωθῇ",
+          "transliteratie": "plērōthē",
+          "vertaling": "Vervuld worden",
+          "semantische_range": "Tot volheid brengen, de diepste bedoeling realiseren.",
+          "gebruik_elders": "De 'Leitmotif' van het Matteüsevangelie om de continuïteit met het Oude Testament aan te tonen.",
+          "meerduidigheid": null
+        }
+      ],
+      "literaire_analyse": {
+        "genre": "narratief",
+        "genre_conventies": "Geboorte- en kindsheidsverhaal met sterke apologetische en theologische inslag. Gebruik van droomgezichten als literair middel voor goddelijke openbaring.",
+        "structuur": {
+          "opbouw": "Geografische beweging in drie fasen: 1. Naar Egypte (vlucht), 2. Uit Egypte (terugkeer), 3. Naar Nazaret (vestiging).",
+          "cesuren": [
+            "Vers 13-15: De opdracht en de vlucht.",
+            "Vers 19-21: De dood van Herodes en de opdracht tot terugkeer.",
+            "Vers 22-23: De angst voor Archelaüs en de keuze voor Nazaret."
+          ],
+          "centrum": "Vers 15b: Het vervullingscitaat 'Uit Egypte heb Ik mijn Zoon geroepen'. Dit is de theologische as van de perikoop.",
+          "chiasme_inclusio": "Inclusio van de 'engel van de Heer' die verschijnt in een droom (vers 13 en vers 19)."
+        },
+        "stijl_retoriek": {
+          "literaire_middelen": [
+            "Contrast tussen de machteloze Herodes (die sterft) en het levende Kind.",
+            "Geografische symboliek (Egypte als oord van slavernij én schuilplaats).",
+            "Droom-instructies als leidraad."
+          ],
+          "retorische_strategie": "Matteüs overtuigt de lezer dat Jezus de ware Messias is door elk detail van zijn vroege leven te verbinden met profetische teksten.",
+          "effect_lezer": "Het wekt vertrouwen in de goddelijke voorzienigheid, zelfs in situaties van acute dreiging en ontheemding."
+        },
+        "karakters_plot": {
+          "personages": [
+            "Jozef (de gehoorzame dromer)",
+            "Het Kind en zijn moeder (passieve actanten)",
+            "De engel (boodschapper)",
+            "Herodes en Archelaüs (de antagonisten)"
+          ],
+          "karakterisering": "Jozef wordt getekend als de 'rechtvaardige' die onmiddellijk handelt ('nog is het nacht'). Herodes is de schaduwfiguur wiens macht eindig is.",
+          "verhaallijn": "Conflict tussen de wereldlijke macht (Herodes) en de komende Koning, uitmondend in een tijdelijke ballingschap en een veilige landing in de marge (Nazaret).",
+          "verzwegen_gesuggereerd": "De angst van Jozef (vers 22) laat zien dat goddelijke leiding de menselijke emoties en voorzichtigheid niet uitschakelt."
+        }
+      },
+      "theologische_analyse": {
+        "centrale_boodschap": "Jezus is de nieuwe Mozes en het nieuwe Israël, wiens leven vanaf het begin onder de beschermende en vervullende regie van God staat, dwars door vervolging en ballingschap heen.",
+        "godsbeeld": "God is de 'Heer van de geschiedenis' die spreekt in de nacht en de plannen van tirannen doorkruist. Hij is de Vader die zijn Zoon roept en bewaart.",
+        "mensbeeld_wereld_heil": "De wereld is een gevaarlijke plek waar onschuldigen moeten vluchten. Heil komt niet door politieke macht, maar door de kwetsbare aanwezigheid van God in een kind. De mens (Jozef) is geroepen tot waakzaamheid en gehoorzaamheid.",
+        "bijbels_theologische_lijnen": [
+          "Exodus-motief (Egypte)",
+          "Typologie: Jezus als de nieuwe Israël/Mozes",
+          "Vervulling van de Schriften"
+        ],
+        "plaats_heilsgeschiedenis": "Deze perikoop markeert de overgang van de belofte naar de eerste concrete stappen van de Messias op aarde, waarbij de contouren van zijn latere lijden en verheerlijking reeds zichtbaar worden.",
+        "spanning_andere_teksten": "De vlucht naar Egypte staat in contrast met de presentatie in de tempel (Lukas), wat vraagt om een harmoniserende of thematische lezing van de verschillende evangelie-tradities.",
+        "dogmatische_raakvlakken": [
+          "Providentia (Gods voorzienigheid)",
+          "Incarnatie (de kwetsbaarheid van de God-mens)"
+        ],
+        "theologische_controverses": "De historiciteit van de kindermoord en de vlucht naar Egypte versus de theologische compositie van Matteüs."
+      },
+      "zoekmodellen_snoek": {
+        "godsbeelden_ot": null,
+        "mensbeelden_ot": null,
+        "jezusbeelden_nt": {
+          "van_achteren": "Jezus is diep geworteld in de geschiedenis van Israël. Hij herhaalt de gang naar Egypte en de uittocht. Hij is de 'Zoon' uit Hosea.",
+          "van_boven": "Zijn identiteit wordt bevestigd door hemelse boodschappers (engelen) en goddelijke dromen. Hij is de 'Zoon van God' die door de Vader wordt bewaard.",
+          "van_beneden": "Hij is het 'paidion', een kwetsbaar jongetje dat volledig afhankelijk is van de zorg van Jozef en Maria en moet vluchten voor een aardse tiran.",
+          "van_voren": "Zijn verblijf in Nazaret wijst vooruit naar zijn publieke optreden als de 'Nazoreeër'. De eschatologische vrede begint in de marge.",
+          "dominant_perspectief": "De spanning tussen 'van achteren' (Israël-typologie) en 'van beneden' (de vluchteling) domineert.",
+          "spanning_godheid_mensheid": "De almachtige Zoon van God is tegelijkertijd een vluchteling die afhankelijk is van een ezel en een droom. Dit benadrukt de 'kenosis' (ontlediging) van de incarnatie.",
+          "betekenis_hoorders_nu": "Voor de hoorders in Ameide betekent dit dat God aanwezig is in de onzekerheid van het 'onderweg zijn' en dat de grootste beloften vaak in de kleinste en meest kwetsbare vormen bewaard blijven."
+        }
+      }
+    }
+  ],
+  "samenhang_lezingen": {
+    "rode_draad": "De rode draad is de goddelijke bescherming en de ethische orde binnen de menselijke kwetsbaarheid, specifiek toegespitst op het gezin als de plaats waar Gods heil bewaard en geëerd wordt.",
+    "versterkingen": [
+      "Sirach biedt het ethische fundament (eer voor ouders) dat in de praktijk van de Heilige Familie zichtbaar wordt in de zorg van Jozef voor het Kind en de moeder.",
+      "Beide teksten benadrukken dat gehoorzaamheid aan God (Sirach: vrees voor de Heer; Matteüs: gehoorzaamheid aan de droom) leidt tot bewaring en zegen.",
+      "De kwetsbaarheid van de ouder (Sirach) spiegelt de kwetsbaarheid van het kind (Matteüs); in beide levensfasen is de mens aangewezen op de 'ontferming' van de ander en de leiding van God."
+    ],
+    "correcties": [
+      "Matteüs corrigeert een al te statisch beeld van gezinsgeluk (zoals Psalm 128 suggereert) door de realiteit van vervolging en vlucht te introduceren.",
+      "Sirach herinnert eraan dat de 'Heilige Familie' niet alleen een theologisch symbool is, maar ook een oproep tot concrete, soms zware, intermenselijke zorg en plicht."
+    ]
+  }
+}
+
+---
+
+## Bijbelteksten (Bronmateriaal)
+
+De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
+
+```json
+{
+  "naardense_bijbel": [
+    {
+      "book": "COL",
+      "chapter": 3,
+      "verses": [
+        {
+          "verse": 12,
+          "text": "Trekt dan aan, als heilige en geliefde uitverkorenen van God, een barmhartig innerlijk, goedertierenheid, nederigheid, zachtmoedigheid en geduld,"
+        },
+        {
+          "verse": 13,
+          "text": "waarmee ge elkaar kunt verdragen en begenadigen als iemand tegen iemand een grief heeft; zoals ook de Heer u heeft begenadigd, zo ook gij."
+        },
+        {
+          "verse": 14,
+          "text": "Voegt bij dit alles de liefde, die de band van de volmaaktheid is."
+        },
+        {
+          "verse": 15,
+          "text": "En de vrede van de Gezalfde moet in uw harten heersen; daartoe zijt ge ook geroepen in één lichaam. En weest dankbaar."
+        },
+        {
+          "verse": 16,
+          "text": "Laat het woord van de Gezalfde rijkelijk in u wonen, zodat ge in alle wijsheid elkaar onderricht en vermaant, met psalmen, lofzangen en geestelijke liederen in de genade in uw harten zingend voor God;"
+        },
+        {
+          "verse": 17,
+          "text": "en al wat ge doen zult in woord of in werk, laat alles zijn in de naam van de Heer Jezus en dankt God de Vader door hem."
+        },
+        {
+          "verse": 18,
+          "text": "Vrouwen, stelt u onder de mannen, zoals het in de Heer betaamt;"
+        },
+        {
+          "verse": 19,
+          "text": "mannen, hebt de vrouwen lief en weest niet bitter tegen hen."
+        },
+        {
+          "verse": 20,
+          "text": "Kinderen, weest in alles gehoorzaam aan de ouders, want dat is in de Heer welgevallig;"
+        },
+        {
+          "verse": 21,
+          "text": "vaders, tergt uw kinderen niet, opdat ze niet mismoedig worden."
+        }
+      ],
+      "translation": "NB"
+    },
+    {
+      "book": "MAT",
+      "chapter": 2,
+      "verses": [
+        {
+          "verse": 13,
+          "text": "Zij wijken uit,en zie, een engel van de Heerverschijnt in een droom aan Jozefen zegt: word wakker,neem het jongetje en zijn moeder bij jeen vlucht naar Egypte;en wees daartot ik het je zeg;want Herodes gaat het jongetje zoekenom het om te brengen!"
+        },
+        {
+          "verse": 14,
+          "text": "Hij wordt wakker,neemt -nog is het nacht-het jongetje en zijn moeder bij zich,en wijkt uit naar Egypte."
+        },
+        {
+          "verse": 15,
+          "text": "Hij is daar gebleventot aan het einde van Herodes,-zodat in vervulling gaatwat vanwege de Heer is gezegddoor de profeet, als hij zegt:uit Egypte heb ik mijn zoon geroepen(Hos. 11,1)!"
+        },
+        {
+          "verse": 19,
+          "text": "Maar Herodes vindt zijn einde,en zie, een engel van de Heerverschijnt in een droomaan Jozef in Egypte, en zegt:"
+        },
+        {
+          "verse": 20,
+          "text": "word wakker,neem het jongetje en zijn moeder bij jeen vertrek naar het land van Israël;want gestorven zijn zijdie de ziel van het jongetje zochten!"
+        },
+        {
+          "verse": 21,
+          "text": "Hij wordt wakker,neemt het jongetje en zijn moeder bij zichen komt aan in het land van Israël."
+        },
+        {
+          "verse": 22,
+          "text": "Maar als hij hoortdat in plaats van zijn vader, Herodes,Archelaüs koning van Juda is,wordt hij bevreesd om daar terug te komen;en gewaarschuwd in een droomwijkt hij uit naar de gebiedsdelen vanGalilea,"
+        },
+        {
+          "verse": 23,
+          "text": "en daar aangekomenvindt hij een huis in een staddie Nazaret heet,zodat in vervulling gaatwat door de profeten is gesproken:dat tot hem Nazoreeër zal worden geroepen(Rich. 13,5)."
+        }
+      ],
+      "translation": "NB"
+    },
+    {
+      "book": "PSA",
+      "chapter": 128,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Psalm 128 (127) • Beati omnes. (Zang van de opgangen.) Zalig al wie ontzag heeft voor de Ene, ✡ wie wandelt in zijn wegen."
+        },
+        {
+          "verse": 2,
+          "text": "Het zwoegen van je handen, dat je daarvan kunt eten: ✡ zalig ben jij, het gaat je goed!"
+        },
+        {
+          "verse": 3,
+          "text": "Je vrouw is als een wijnstok die vrucht draagt tussen de heupen van je huis,- je zonen zijn als pasgeplante olijven ✡ geschaard rondom je tafel."
+        },
+        {
+          "verse": 4,
+          "text": "Zie, zo wordt gezegend een kerel ✡ die ontzag heeft voor de Ene!"
+        },
+        {
+          "verse": 5,
+          "text": "Jou zegene de Ene vanaf Sion, en zie aan hoe het Jeruzalem goed gaat, ✡ al de dagen van je leven;"
+        },
+        {
+          "verse": 6,
+          "text": "en zie nog bij jouw zonen zonen,- ✡ over Israël vrede!"
+        }
+      ],
+      "translation": "NB"
+    }
+  ],
+  "nbv21": [
+    {
+      "book": "1SA",
+      "chapter": 1,
+      "verses": [
+        {
+          "verse": 20,
+          "text": "Binnen een jaar werd Hanna zwanger en baarde ze een zoon. Ze noemde hem Samuel, ‘want,’ verklaarde ze, ‘ik heb hem aan de HEER gevraagd.’"
+        },
+        {
+          "verse": 21,
+          "text": "Toen Elkana het jaar daarop weer met zijn familie op weg ging om de HEER zijn jaarlijkse offer te brengen, wilde hij de gelofte inlossen."
+        },
+        {
+          "verse": 22,
+          "text": "Maar Hanna ging niet mee. Ze zei tegen haar man: ‘Pas als het kind van de borst is, zal ik hem brengen. Dan zal hij voor de HEER verschijnen en daar voor altijd blijven.’"
+        },
+        {
+          "verse": 24,
+          "text": "Zodra ze hem niet meer zelf voedde, nam ze hem mee naar Silo en bracht hem, zo jong als hij was, naar het heiligdom van de HEER. Ze had ook een driejarige stier bij zich, een efa meel en een zak wijn."
+        },
+        {
+          "verse": 25,
+          "text": "Ze slachtten de stier en brachten de jongen naar Eli."
+        },
+        {
+          "verse": 26,
+          "text": "Hanna zei: ‘Neem me niet kwalijk, heer, zo waar u leeft, ik ben de vrouw die destijds hier bij u tot de HEER heeft gebeden."
+        },
+        {
+          "verse": 27,
+          "text": "Om deze zoon heb ik gebeden, en de HEER heeft mij gegeven waar ik om heb gevraagd."
+        },
+        {
+          "verse": 28,
+          "text": "Nu geef ik hem op mijn beurt aan de HEER, voor alle dagen die hem gegeven zijn.’ Toen knielde de jongen daar voor de HEER,"
+        }
+      ],
+      "translation": "NBV21"
+    },
+    {
+      "book": "COL",
+      "chapter": 3,
+      "verses": [
+        {
+          "verse": 12,
+          "text": "Omdat God u heeft uitgekozen, omdat u zijn heiligen bent en Hij u liefheeft, moet u zich kleden in innig medeleven, in goedheid, nederigheid, zachtmoedigheid en geduld."
+        },
+        {
+          "verse": 13,
+          "text": "Verdraag elkaar en vergeef elkaar als iemand een ander iets te verwijten heeft; zoals de Heer u vergeven heeft, moet u elkaar vergeven."
+        },
+        {
+          "verse": 14,
+          "text": "En bovenal, kleed u in de liefde, dat is de band die u tot een volmaakte eenheid maakt."
+        },
+        {
+          "verse": 15,
+          "text": "Laat de vrede van Christus heersen in uw hart, want daartoe bent u geroepen als de leden van één lichaam. Wees ook dankbaar."
+        },
+        {
+          "verse": 16,
+          "text": "Laat Christus’ woorden in al hun rijkdom in u wonen; onderricht en vermaan elkaar in alle wijsheid, zing voor God met heel uw hart psalmen, hymnen en liederen die de Geest u vol genade ingeeft."
+        },
+        {
+          "verse": 17,
+          "text": "Doe alles wat u zegt of doet in de naam van de Heer Jezus, terwijl u God, de Vader, dankt door Hem."
+        },
+        {
+          "verse": 18,
+          "text": "Vrouwen, erken het gezag van uw man, zoals het volgelingen van de Heer past."
+        },
+        {
+          "verse": 19,
+          "text": "Mannen, heb uw vrouw lief en wees niet bitter tegen haar."
+        },
+        {
+          "verse": 20,
+          "text": "Kinderen, gehoorzaam je ouders in alles, want dat is de wil van de Heer."
+        },
+        {
+          "verse": 21,
+          "text": "Vaders, drijf uw kinderen niet tot het uiterste, want dat maakt ze moedeloos."
+        }
+      ],
+      "translation": "NBV21"
+    },
+    {
+      "book": "MAT",
+      "chapter": 2,
+      "verses": [
+        {
+          "verse": 13,
+          "text": "Nadat zij op die manier de wijk genomen hadden, verscheen er aan Jozef in een droom een engel van de Heer, die zei: ‘Maak je gereed en vlucht met het kind en zijn moeder naar Egypte. Blijf daar tot ik je weer roep, want Herodes is naar het kind op zoek en wil het ombrengen.’"
+        },
+        {
+          "verse": 14,
+          "text": "Jozef maakte zich gereed en week nog diezelfde nacht met het kind en zijn moeder uit naar Egypte,"
+        },
+        {
+          "verse": 15,
+          "text": "waar hij bleef tot de dood van Herodes. Zo moest in vervulling gaan wat bij monde van de profeet door de Heer is gezegd: ‘Uit Egypte heb Ik mijn Zoon geroepen.’"
+        },
+        {
+          "verse": 19,
+          "text": "Nadat Herodes gestorven was, verscheen er in een droom aan Jozef in Egypte een engel van de Heer,"
+        },
+        {
+          "verse": 20,
+          "text": "die zei: ‘Maak je gereed en ga met het kind en zijn moeder naar het land Israël. Want zij die het kind om het leven wilden brengen, zijn gestorven.’"
+        },
+        {
+          "verse": 21,
+          "text": "Jozef maakte zich gereed en ging met het kind en zijn moeder naar Israël."
+        },
+        {
+          "verse": 22,
+          "text": "Maar hij durfde niet naar Judea te gaan toen hij hoorde dat Archelaüs daar zijn vader Herodes als koning was opgevolgd. Nadat hij in een droom een aanwijzing had gekregen week hij uit naar Galilea,"
+        },
+        {
+          "verse": 23,
+          "text": "waar hij ging wonen in de stad Nazaret. Zo moest in vervulling gaan wat gezegd is door de profeten: ‘Hij zal Nazoreeër genoemd worden.’"
+        }
+      ],
+      "translation": "NBV21"
+    },
+    {
+      "book": "SIR",
+      "chapter": 3,
+      "verses": [
+        {
+          "verse": 2,
+          "text": "Want de Heer heeft de vader aanzien bij zijn kinderen gegeven en de zonen aan het oordeel van hun moeder verplicht."
+        },
+        {
+          "verse": 3,
+          "text": "Wie zijn vader eer bewijst, bewerkt verzoening voor zijn zonden."
+        },
+        {
+          "verse": 4,
+          "text": "Wie zijn moeder hoogacht is als iemand die schatten verzamelt."
+        },
+        {
+          "verse": 5,
+          "text": "Wie zijn vader eer bewijst, vindt vreugde in zijn kinderen en wanneer hij bidt, wordt hij verhoord."
+        },
+        {
+          "verse": 6,
+          "text": "Wie zijn vader hoogacht, zal lang leven, wie luistert naar de Heer, geeft zijn moeder rust."
+        },
+        {
+          "verse": 12,
+          "text": "Kinderen, wees je vader op zijn oude dag tot steun en doe hem geen verdriet zolang hij leeft."
+        },
+        {
+          "verse": 13,
+          "text": "Als zijn verstand hem verlaat, heb dan begrip voor hem. Jij die nog al je kracht hebt mag niet op hem neerzien."
+        },
+        {
+          "verse": 14,
+          "text": "Als je je over je vader ontfermt, wordt dat niet vergeten; zo bouw je weer op wat je zonden hebben afgebroken."
+        }
+      ],
+      "translation": "NBV21"
+    },
+    {
+      "book": "PSA",
+      "chapter": 128,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Gelukkig ieder die ontzag heeft voor de HEER en de weg gaat die Hij wijst:"
+        },
+        {
+          "verse": 2,
+          "text": "je zult eten wat je werk opbrengt, geluk en voorspoed vallen je toe,"
+        },
+        {
+          "verse": 3,
+          "text": "je vrouw als een vruchtbare wijnstok in het midden van je huis, je kinderen als jonge olijfbomen in een kring om je tafel."
+        },
+        {
+          "verse": 4,
+          "text": "Ja, zo wordt gezegend de man die ontzag heeft voor de HEER."
+        },
+        {
+          "verse": 5,
+          "text": "Ontvang de zegen van de HEER uit Sion. Je zult de voorspoed van Jeruzalem aanschouwen, alle dagen van je leven."
+        },
+        {
+          "verse": 6,
+          "text": "De kinderen van je kinderen zul je zien. Vrede over Israël!"
+        }
+      ],
+      "translation": "NBV21"
+    }
+  ],
+  "grondtekst": [
+    {
+      "source": "BHS (Biblia Hebraica Stuttgartensia)",
+      "book_nl": "1 Samuël",
+      "book_original": "Samuel_I",
+      "chapter": 1,
+      "language": "Hebrew",
+      "verses": [
+        {
+          "verse": 20,
+          "text": "וַיְהִי֙ לִתְקֻפֹ֣ות הַיָּמִ֔ים וַתַּ֥הַר חַנָּ֖ה וַתֵּ֣לֶד בֵּ֑ן וַתִּקְרָ֤א אֶת־שְׁמֹו֙ שְׁמוּאֵ֔ל כִּ֥י מֵיְהוָ֖ה שְׁאִלְתִּֽיו׃ "
+        },
+        {
+          "verse": 21,
+          "text": "וַיַּ֛עַל הָאִ֥ישׁ אֶלְקָנָ֖ה וְכָל־בֵּיתֹ֑ו לִזְבֹּ֧חַ לַֽיהוָ֛ה אֶת־זֶ֥בַח הַיָּמִ֖ים וְאֶת־נִדְרֹֽו׃ "
+        },
+        {
+          "verse": 22,
+          "text": "וְחַנָּ֖ה לֹ֣א עָלָ֑תָה כִּֽי־אָמְרָ֣ה לְאִישָׁ֗הּ עַ֣ד יִגָּמֵ֤ל הַנַּ֨עַר֙ וַהֲבִאֹתִ֗יו וְנִרְאָה֙ אֶת־פְּנֵ֣י יְהוָ֔ה וְיָ֥שַׁב שָׁ֖ם עַד־עֹולָֽם׃ "
+        },
+        {
+          "verse": 24,
+          "text": "וַתַּעֲלֵ֨הוּ עִמָּ֜הּ כַּאֲשֶׁ֣ר גְּמָלַ֗תּוּ בְּפָרִ֤ים שְׁלֹשָׁה֙ וְאֵיפָ֨ה אַחַ֥ת קֶ֨מַח֙ וְנֵ֣בֶל יַ֔יִן וַתְּבִאֵ֥הוּ בֵית־יְהוָ֖ה שִׁלֹ֑ו וְהַנַּ֖עַר נָֽעַר׃ "
+        },
+        {
+          "verse": 25,
+          "text": "וַֽיִּשְׁחֲט֖וּ אֶת־הַפָּ֑ר וַיָּבִ֥יאוּ אֶת־הַנַּ֖עַר אֶל־עֵלִֽי׃ "
+        },
+        {
+          "verse": 26,
+          "text": "וַתֹּ֨אמֶר֙ בִּ֣י אֲדֹנִ֔י חֵ֥י נַפְשְׁךָ֖ אֲדֹנִ֑י אֲנִ֣י הָאִשָּׁ֗ה הַנִּצֶּ֤בֶת עִמְּכָה֙ בָּזֶ֔ה לְהִתְפַּלֵּ֖ל אֶל־יְהוָֽה׃ "
+        },
+        {
+          "verse": 27,
+          "text": "אֶל־הַנַּ֥עַר הַזֶּ֖ה הִתְפַּלָּ֑לְתִּי וַיִּתֵּ֨ן יְהוָ֥ה לִי֙ אֶת־שְׁאֵ֣לָתִ֔י אֲשֶׁ֥ר שָׁאַ֖לְתִּי מֵעִמֹּֽו׃ "
+        },
+        {
+          "verse": 28,
+          "text": "וְגַ֣ם אָנֹכִ֗י הִשְׁאִלְתִּ֨הוּ֙ לַֽיהוָ֔ה כָּל־הַיָּמִים֙ אֲשֶׁ֣ר הָיָ֔ה ה֥וּא שָׁא֖וּל לַֽיהוָ֑ה וַיִּשְׁתַּ֥חוּ שָׁ֖ם לַיהוָֽה׃ פ "
+        }
+      ]
+    },
+    {
+      "source": "NA28 (Novum Testamentum Graece)",
+      "book_nl": "Kolossenzen",
+      "book_original": "COL",
+      "chapter": 3,
+      "language": "Greek",
+      "verses": [
+        {
+          "verse": 12,
+          "text": "Ἐνδύσασθε οὖν, ὡς ἐκλεκτοὶ τοῦ θεοῦ ἅγιοι καὶ ἠγαπημένοι, σπλάγχνα οἰκτιρμοῦ χρηστότητα ταπεινοφροσύνην πραΰτητα μακροθυμίαν, "
+        },
+        {
+          "verse": 13,
+          "text": "ἀνεχόμενοι ἀλλήλων καὶ χαριζόμενοι ἑαυτοῖς ἐάν τις πρός τινα ἔχῃ μομφήν· καθὼς καὶ ὁ κύριος ἐχαρίσατο ὑμῖν, οὕτως καὶ ὑμεῖς· "
+        },
+        {
+          "verse": 14,
+          "text": "ἐπὶ πᾶσιν δὲ τούτοις τὴν ἀγάπην, ὅ ἐστιν σύνδεσμος τῆς τελειότητος. "
+        },
+        {
+          "verse": 15,
+          "text": "καὶ ἡ εἰρήνη τοῦ Χριστοῦ βραβευέτω ἐν ταῖς καρδίαις ὑμῶν, εἰς ἣν καὶ ἐκλήθητε ἐν ἑνὶ σώματι· καὶ εὐχάριστοι γίνεσθε. "
+        },
+        {
+          "verse": 16,
+          "text": "Ὁ λόγος τοῦ Χριστοῦ ἐνοικείτω ἐν ὑμῖν πλουσίως, ἐν πάσῃ σοφίᾳ διδάσκοντες καὶ νουθετοῦντες ἑαυτούς, ψαλμοῖς ὕμνοις ᾠδαῖς πνευματικαῖς ἐν [τῇ] χάριτι ᾄδοντες ἐν ταῖς καρδίαις ὑμῶν τῷ θεῷ· "
+        },
+        {
+          "verse": 17,
+          "text": "καὶ πᾶν ὅ τι ἐὰν ποιῆτε ἐν λόγῳ ἢ ἐν ἔργῳ, πάντα ἐν ὀνόματι κυρίου Ἰησοῦ, εὐχαριστοῦντες τῷ θεῷ πατρὶ δι’ αὐτοῦ."
+        },
+        {
+          "verse": 18,
+          "text": "Αἱ γυναῖκες, ὑποτάσσεσθε τοῖς ἀνδράσιν ὡς ἀνῆκεν ἐν κυρίῳ. "
+        },
+        {
+          "verse": 19,
+          "text": "Οἱ ἄνδρες, ἀγαπᾶτε τὰς γυναῖκας καὶ μὴ πικραίνεσθε πρὸς αὐτάς. "
+        },
+        {
+          "verse": 20,
+          "text": "Τὰ τέκνα, ὑπακούετε τοῖς γονεῦσιν κατὰ πάντα, τοῦτο γὰρ εὐάρεστόν ἐστιν ἐν κυρίῳ. "
+        },
+        {
+          "verse": 21,
+          "text": "Οἱ πατέρες, μὴ ἐρεθίζετε τὰ τέκνα ὑμῶν, ἵνα μὴ ἀθυμῶσιν."
+        }
+      ]
+    },
+    {
+      "source": "NA28 (Novum Testamentum Graece)",
+      "book_nl": "Matteüs",
+      "book_original": "MAT",
+      "chapter": 2,
+      "language": "Greek",
+      "verses": [
+        {
+          "verse": 13,
+          "text": "Ἀναχωρησάντων δὲ αὐτῶν ἰδοὺ ἄγγελος κυρίου φαίνεται κατ’ ὄναρ τῷ Ἰωσὴφ λέγων· ἐγερθεὶς παράλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ φεῦγε εἰς Αἴγυπτον καὶ ἴσθι ἐκεῖ ἕως ἂν εἴπω σοι· μέλλει γὰρ Ἡρῴδης ζητεῖν τὸ παιδίον τοῦ ἀπολέσαι αὐτό. "
+        },
+        {
+          "verse": 14,
+          "text": "ὁ δὲ ἐγερθεὶς παρέλαβεν τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ νυκτὸς καὶ ἀνεχώρησεν εἰς Αἴγυπτον, "
+        },
+        {
+          "verse": 15,
+          "text": "καὶ ἦν ἐκεῖ ἕως τῆς τελευτῆς Ἡρῴδου· ἵνα πληρωθῇ τὸ ῥηθὲν ὑπὸ κυρίου διὰ τοῦ προφήτου λέγοντος· ἐξ Αἰγύπτου ἐκάλεσα τὸν υἱόν μου."
+        },
+        {
+          "verse": 19,
+          "text": "Τελευτήσαντος δὲ τοῦ Ἡρῴδου ἰδοὺ ἄγγελος κυρίου φαίνεται κατ’ ὄναρ τῷ Ἰωσὴφ ἐν Αἰγύπτῳ "
+        },
+        {
+          "verse": 20,
+          "text": "λέγων· ἐγερθεὶς παράλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ πορεύου εἰς γῆν Ἰσραήλ· τεθνήκασιν γὰρ οἱ ζητοῦντες τὴν ψυχὴν τοῦ παιδίου. "
+        },
+        {
+          "verse": 21,
+          "text": "ὁ δὲ ἐγερθεὶς παρέλαβεν τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ εἰσῆλθεν εἰς γῆν Ἰσραήλ."
+        },
+        {
+          "verse": 22,
+          "text": "Ἀκούσας δὲ ὅτι Ἀρχέλαος βασιλεύει τῆς Ἰουδαίας ἀντὶ τοῦ πατρὸς αὐτοῦ Ἡρῴδου ἐφοβήθη ἐκεῖ ἀπελθεῖν· χρηματισθεὶς δὲ κατ’ ὄναρ ἀνεχώρησεν εἰς τὰ μέρη τῆς Γαλιλαίας, "
+        },
+        {
+          "verse": 23,
+          "text": "καὶ ἐλθὼν κατῴκησεν εἰς πόλιν λεγομένην Ναζαρέτ· ὅπως πληρωθῇ τὸ ῥηθὲν διὰ τῶν προφητῶν ὅτι Ναζωραῖος κληθήσεται."
+        }
+      ]
+    },
+    {
+      "source": "BHS (Biblia Hebraica Stuttgartensia)",
+      "book_nl": "Psalm",
+      "book_original": "Psalmi",
+      "chapter": 128,
+      "language": "Hebrew",
+      "verses": [
+        {
+          "verse": 1,
+          "text": "שִׁ֗יר הַֽמַּ֫עֲלֹ֥ות אַ֭שְׁרֵי כָּל־יְרֵ֣א יְהוָ֑ה הַ֝הֹלֵ֗ךְ בִּדְרָכָֽיו׃ "
+        },
+        {
+          "verse": 2,
+          "text": "יְגִ֣יעַ כַּ֭פֶּיךָ כִּ֣י תֹאכֵ֑ל אַ֝שְׁרֶ֗יךָ וְטֹ֣וב לָֽךְ׃ "
+        },
+        {
+          "verse": 3,
+          "text": "אֶשְׁתְּךָ֤׀ כְּגֶ֥פֶן פֹּרִיָּה֮ בְּיַרְכְּתֵ֪י בֵ֫יתֶ֥ךָ בָּ֭נֶיךָ כִּשְׁתִלֵ֣י זֵיתִ֑ים סָ֝בִ֗יב לְשֻׁלְחָנֶֽךָ׃ "
+        },
+        {
+          "verse": 4,
+          "text": "הִנֵּ֣ה כִי־כֵ֭ן יְבֹ֥רַךְ גָּ֗בֶר יְרֵ֣א יְהוָֽה׃ "
+        },
+        {
+          "verse": 5,
+          "text": "יְבָרֶכְךָ֥ יְהוָ֗ה מִצִּ֫יֹּ֥ון וּ֭רְאֵה בְּט֣וּב יְרוּשָׁלִָ֑ם כֹּ֝֗ל יְמֵ֣י חַיֶּֽיךָ׃ "
+        },
+        {
+          "verse": 6,
+          "text": "וּרְאֵֽה־בָנִ֥ים לְבָנֶ֑יךָ שָׁ֝לֹ֗ום עַל־יִשְׂרָאֵֽל׃ "
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+---
+
+# Huidige Opdracht
+
+# Kalender: Gedenkdagen en Bijzondere Momenten
+
+Maak een overzicht van alle relevante kalendergegevens voor de week die begint op 28 december 2025 en zich uitstrekt tot en met 6 dagen later.
+
+## Context
+
+De datum van de preek is 28 december 2025. De gemeente is Sionkerk in Ameide.
+
+## Te onderzoeken en rapporteren
+
+### 1. Kerkelijke gedenkdagen en heiligen
+
+- **Heiligenkalender:** Welke heiligen worden deze week herdacht? Geef korte biografische informatie.
+
+- **Protestantse gedenkdagen:** Relevante herdenkingen in de protestantse traditie (Reformatiedag, etc.)
+
+- **Oecumenische gedenkdagen:** Wereldgebedsdag, Week van Gebed voor Eenheid, etc.
+
+- **Martelaren en getuigen:** Moderne martelaren of geloofsgetuigen die deze week herdacht worden
+
+### 2. Joodse kalender
+
+- **Joodse feestdagen:** Valt er een Joods feest in deze periode? (Pesach, Soekkot, Jom Kippoer, Chanoeka, Rosj Hasjana, Sjawoeot, Poerim, etc.)
+
+- **Sabbat en parasja:** Welke Tora-portie wordt gelezen in de synagoge?
+
+- **Joodse gedenkdagen:** Jom HaSjoa, Jom Ha'atsmaoet, etc.
+
+### 3. Internationale en VN-dagen
+
+Welke internationale dagen vallen in deze week? Voorbeelden:
+
+- Internationale Dag van de Leraar
+
+- Wereldvoedseldag
+
+- Internationale Dag van de Vrede
+
+- Werelddag tegen Kinderarbeid
+
+- Internationale Vrouwendag
+
+- Wereldwaterdag
+
+- Dag van de Mensenrechten
+
+### 4. Nationale feest- en gedenkdagen (Nederland en België)
+
+- **Nederlandse feestdagen:** Koningsdag, Bevrijdingsdag, Dodenherdenking, Prinsjesdag, etc.
+
+- **Belgische feestdagen:** Nationale feestdag, Wapenstilstand, etc.
+
+- **Regionale gedenkdagen:** Relevante lokale herdenkingen
+
+### 5. Seizoensgebonden en culturele momenten
+
+- **Schoolvakanties:** Welke regio's hebben vakantie? (Herfstvakantie, Kerstvakantie, Voorjaarsvakantie, Meivakantie, Zomervakantie)
+
+- **Carnaval:** Indien relevant voor de periode
+
+- **Sinterklaas:** Intocht en pakjesavond
+
+- **Moederdag/Vaderdag:** Indien in deze periode
+
+- **Seizoenswisselingen:** Eerste lentedag, langste dag, herfst-equinox, etc.
+
+### 6. Astronomische gebeurtenissen (alleen bij zondag)
+
+- **Maanfasen:** Nieuwe maan, volle maan
+
+- **Zons- en maansverduisteringen:** Indien relevant
+
+- **Bijzondere sterrenkundige gebeurtenissen:** Meteorenzwermen, planetaire conjuncties
+
+- **Zonsopgang en zonsondergang:** Tijden voor de betreffende zondag
+
+### 7. Weersverwachting (alleen bij zondag)
+
+Geef een korte weersverwachting voor de komende week:
+
+- Temperatuur (dag/nacht)
+
+- Neerslag
+
+- Wind
+
+- Bijzonderheden (eerste vorst, hittegolf, storm)
+
+*Let op: als de preekdatum meer dan 7 dagen in de toekomst ligt, vermeld dan: "Weersverwachting nog niet beschikbaar (huidige datum: [datum])."*
+
+### 8. Overige relevante momenten
+
+- **Sportevenementen:** WK, EK, Olympische Spelen, Tour de France, etc.
+
+- **Culturele evenementen:** Boekenweek, Week van de Smaak, Open Monumentendag, etc.
+
+- **Historische herdenkingen:** Belangrijke historische gebeurtenissen op deze datum
+
+- **Actuele maatschappelijke campagnes:** Alzheimerweek, Werelddierendag, etc.
+
+- **Lokale evenementen:** Kermis, jaarmarkt, stadfeest in Ameide
+
+## Gewenste output
+
+Lever een overzichtelijke kalender die:
+
+1. **Chronologisch geordend** is per dag van de week
+
+2. Per dag de relevante **gedenkdagen en momenten** noemt
+
+3. Bij elk item een **korte toelichting** geeft
+
+**BELANGRIJK:** Toon ALLEEN wat relevant is:
+
+- Geen "Geen bijzonderheden" of "Geen specifieke feestdag" vermelden
+
+- Kopjes waar niets te melden valt, WEGLATEN
+
+- Als een dag geen bijzonderheden heeft, die dag WEGLATEN
+
+- Alleen concrete, feitelijke informatie opnemen
+
+- **Weer** en **Astronomie** alleen bij de eerste dag (zondag) vermelden
+
+## Bronnen
+
+Gebruik betrouwbare bronnen zoals:
+
+- heiligen.net (heiligenkalender)
+
+- chabad.org (Joodse kalender)
+
+- un.org/observances (VN-dagen)
+
+- rijksoverheid.nl (Nederlandse feestdagen en vakanties)
+
+- knmi.nl (weer)
+
+- timeanddate.com (astronomie)
+
+## Markdown formatting
+
+**BELANGRIJK:** Zorg voor correcte markdown formatting:
+
+- Plaats ALTIJD een lege regel VOOR en NA elke kop (##, ###)
+
+- Plaats ALTIJD een lege regel VOOR een lijst met bullet points
+
+- Plaats ALTIJD een lege regel tussen verschillende secties
+
+- Elke bullet point moet op een eigen regel staan
+
+## Voorbeeld format
+
+```markdown
+### Zondag 4 januari 2026 (preken op deze datum)
+
+**Kerkelijk:**
+
+- Epifanie - Openbaring van de Heer
+
+- Gedachtenis H. Hendrikka van Delft (vrouwenheilige, mystica, †1260)
+
+**Joods:**
+
+- 15 Tevet 5786 - Fast of the Tenth of Tevet
+
+**Weer:**
+
+- Overwegend bewolkt, 4°C, kans op lichte sneeuw
+
+**Astronomie:**
+
+- Zonsopgang 08:32, zonsondergang 16:35
+
+---
+
+### Maandag 5 januari 2026
+
+**Kerkelijk:**
+
+- Ochtend na Epifanie - de Heer openbaart zich aan de wereld
+
+**Joods:**
+
+- 16 Tevet 5786
+
+---
+
+### Dinsdag 6 januari 2026
+
+**Kerkelijk:**
+
+- Heilig Drie-eenheid (in sommige kerken)
+
+**Internationaal:**
+
+- Internationale Dag van de Gezondheidswaakhond
+```
+
+Toon alleen dagen waarop iets te melden valt.
+
+**BELANGRIJK:** Vermijd clichématige afsluitingen. Stop bij de inhoud.
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "week_van": "string - bijv. '4-9 januari 2026'",
+  "dagen": [
+    {
+      "datum": "string - bijv. 'Zondag 4 januari 2026'",
+      "dag": "string - zondag|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag",
+      "is_preekzondag": "boolean",
+      "kerkelijk": [
+        {
+          "naam": "string - bijv. '3e Advent (Gaudete)'",
+          "type": "string - zondag|heilige|martelaar|herdenking",
+          "toelichting": "string|null"
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "string|null - bijv. '16 Kislev 5785'",
+        "feestdag": "string|null",
+        "parasja": "string|null - welke Tora-portie?",
+        "toelichting": "string|null"
+      },
+      "internationaal": [
+        {
+          "naam": "string - bijv. 'Internationale Theedag'",
+          "organisatie": "string - VN|UNESCO|Anders",
+          "relevantie": "string|null"
+        }
+      ],
+      "nationaal": [
+        {
+          "naam": "string",
+          "land": "string - NL|BE",
+          "type": "string - feestdag|herdenking|traditie"
+        }
+      ],
+      "vakantie": {
+        "schoolvakantie": "string|null - bijv. 'Kerstvakantie Noord'",
+        "regio": "string|null"
+      },
+      "weer": {
+        "verwachting": "string|null - alleen op zondag invullen",
+        "temperatuur": "string|null",
+        "neerslag": "string|null",
+        "bijzonderheden": "string|null"
+      },
+      "astronomie": {
+        "zonsopgang": "string|null - alleen op zondag",
+        "zonsondergang": "string|null",
+        "maanfase": "string|null",
+        "bijzonderheden": "string|null"
+      },
+      "overig": [
+        {
+          "categorie": "string - sport|cultuur|historisch|maatschappelijk|lokaal",
+          "naam": "string",
+          "toelichting": "string|null"
+        }
+      ]
+    }
+  ],
+  "aandachtspunten_predikant": [
+    "string - relevante momenten om te noemen of rekening mee te houden"
+  ]
+}
+```
+
+**BELANGRIJK:**
+- Retourneer ALLEEN valide JSON, geen markdown of toelichting.
+- Laat lege arrays `[]` of `null` voor dagen/categorieën zonder inhoud.
+- Weer en astronomie ALLEEN op de zondag.
+

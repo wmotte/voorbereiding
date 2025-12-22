@@ -1,0 +1,385 @@
+{
+  "_meta": {
+    "title": "Representatieve Hoorders",
+    "filename": "12_representatieve_hoorders",
+    "generated_at": "2025-12-22T13:20:16.891699",
+    "user_input": {
+      "plaatsnaam": "Waddinxveen",
+      "gemeente": "Brugkerk",
+      "datum": "4 januari 2026",
+      "adres": "Kerkweg-Oost 232, 2741 HA Waddinxveen",
+      "website": "https://www.hgpknwaddinxveen.nl/brugkerk"
+    }
+  },
+  "personas": [
+    {
+      "nummer": 1,
+      "naam": {
+        "voornaam": "Lucas",
+        "achternaam": "van der Linden"
+      },
+      "leeftijd": 21,
+      "kernschets": "Een ambitieuze student Bestuurskunde die worstelt met de relevantie van traditionele geloofsvormen in een gedigitaliseerde wereld. Hij zoekt naar een intellectueel eerlijk kompas te midden van maatschappelijke onrust.",
+      "basisgegevens": {
+        "fysieke_verschijning": "1.88m, atletisch gebouwd door frequent hardlopen, kort blond haar, draagt vaak een moderne bril en casual-smart kleding (chino en trui).",
+        "woonwijk": "Woonachtig bij zijn ouders in de nieuwbouwwijk Park Triangel, Waddinxveen."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "Thuiswonend",
+        "relatiestatus": "Single, aan het daten via apps maar vindt diepgang lastig",
+        "kinderen": "Geen",
+        "familie_relatie": "Goede band met zijn ouders, hoewel hij hun traditionele kerkkeuze (Brugkerk) soms bevragingt. Zijn jongere zusje is gestopt met kerkgang.",
+        "sociaal_netwerk": "Actief lid van CVV Be Fair, een hechte vriendengroep uit zijn middelbare schooltijd op het Coenecoop College, en studievrienden in Rotterdam."
+      },
+      "opleiding_werk": {
+        "opleiding": "Derdejaars student Bestuurskunde aan de Erasmus Universiteit Rotterdam",
+        "intelligentie_leerstijl": "Theoretisch en analytisch ingesteld, leert visueel en via podcasts",
+        "huidige_werk": "Bijbaan als logistiek medewerker bij een distributiecentrum op Logistiekpark A12 tijdens de zaterdagen",
+        "voormalig_werk": null,
+        "financiele_situatie": "Studeert met een lening; maakt zich zorgen over de woningmarkt en zijn kansen op een betaalbare woning in Waddinxveen na zijn studie."
+      },
+      "gezondheid": {
+        "lichamelijk": "Uitstekend, traint voor de kwart marathon van Rotterdam",
+        "mentaal": "Ervaart hoge prestatiedruk en 'fear of missing out' (FOMO). Soms sombere gevoelens over de klimaatcrisis.",
+        "leefstijl": "Gezond, rookt niet, drinkt sociaal in het weekend, let op zijn voeding."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "Het overlijden van een studievriend door een ongeluk vorig jaar, wat zijn eerste echte confrontatie met de dood was."
+        ],
+        "heden": [
+          "Zorgen over het 'ravijnjaar 2026' en de impact op de publieke sector waar hij wil gaan werken.",
+          "De polarisatie in zijn tijdlijn op sociale media."
+        ],
+        "onverwerkt": "De vraag waarom God niet ingreep bij het ongeluk van zijn vriend."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Hervormd opgevoed, gedoopt en vorig jaar belijdenis gedaan, deels om zijn grootouders te plezieren.",
+        "huidige_betrokkenheid": "Bezoekt de Brugkerk meestal twee keer per maand, vaak met zijn ouders. Helpt soms bij de techniek/beamer.",
+        "geloofsbeleving": "Ziet God als een verre 'Grond van het bestaan', maar ervaart weinig emotionele nabijheid. Zoekt naar ethische kaders.",
+        "geloofstaal": "Heeft moeite met de 1773-berijming; spreekt liever over 'zingeving' en 'authenticiteit'.",
+        "twijfels_vragen": [
+          "Is de Bijbel niet gewoon een historisch document?",
+          "Hoe rijm ik wetenschap met het geloof?"
+        ],
+        "spirituele_behoeften": "Behoefte aan een 'navigatiesysteem' voor het leven; een preek die niet alleen antwoorden geeft, maar de juiste vragen stelt."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Hardlopen in de polders rondom Waddinxveen",
+          "Gamen",
+          "Lezen over politieke filosofie"
+        ],
+        "media": [
+          "De Volkskrant",
+          "Podcasts zoals 'De Dag'",
+          "Instagram en LinkedIn"
+        ],
+        "verenigingen": [
+          "CVV Be Fair",
+          "Studievereniging Bestuurskunde"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De ster als navigatie-instrument (Matteüs 2). Het idee van 'wijzen' die op basis van observatie en studie op zoek gaan naar de waarheid spreekt zijn intellectuele kant aan.",
+        "wat_afstoot": "De koninklijke titels en de goud/wierook/mirre symboliek voelen voor hem als een ver-van-mijn-bed-show en nogal archaïsch.",
+        "existentiele_vraag": "Welke 'ster' is in 2026 betrouwbaar genoeg om mijn leven op te koersen?"
+      }
+    },
+    {
+      "nummer": 2,
+      "naam": {
+        "voornaam": "Sanne",
+        "achternaam": "de Wit-Hoogendoorn"
+      },
+      "leeftijd": 42,
+      "kernschets": "Een drukbezette HR-manager en moeder die in de kerk rust en morele herijking zoekt voor haar gezin. Ze balanceert tussen de nuchtere Waddinxveense werkethiek en het verlangen naar spirituele verdieping.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Gemiddelde lengte, vlot kort kapsel (donkerbruin), draagt vaak praktische maar stijlvolle kleding, altijd een horloge om.",
+        "woonwijk": "Eengezinswoning in de wijk Zuid, nabij de Gouwe."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "Samenwonend met echtgenoot en twee kinderen",
+        "relatiestatus": "15 jaar getrouwd met Mark, die werkzaam is in de bouwsector",
+        "kinderen": "Twee kinderen op de basisschool (8 en 11 jaar)",
+        "familie_relatie": "Mantelzorger voor haar schoonmoeder die in woonzorgcentrum Souburgh woont.",
+        "sociaal_netwerk": "Actief in de app-groep van de klas, lid van een lokale leesclub, veel contact met buren."
+      },
+      "opleiding_werk": {
+        "opleiding": "HBO Personeel & Arbeid",
+        "intelligentie_leerstijl": "Praktisch en mensgericht, leert door te doen en te praten",
+        "huidige_werk": "HR-manager bij een middelgroot logistiek bedrijf in Waddinxveen; ervaart druk door personeelstekorten.",
+        "voormalig_werk": "Intercedente bij een uitzendbureau",
+        "financiele_situatie": "Stabiel middeninkomen, maar kritisch op uitgaven door gestegen kosten voor kinderopvang en energie."
+      },
+      "gezondheid": {
+        "lichamelijk": "Rugklachten door veel zitten, probeert twee keer per week te zwemmen in De Sniep.",
+        "mentaal": "Symptomen van milde burn-out door de 'sandwich-positie' (zorg voor kinderen en ouders, drukke baan).",
+        "leefstijl": "Drinkt te veel koffie, probeert meer biologisch te eten."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "Een miskraam tussen de eerste en tweede zoon, wat haar godsbeeld van 'alles komt goed' heeft doen wankelen."
+        ],
+        "heden": [
+          "De mentale gezondheid van haar oudste zoon die gepest wordt op school.",
+          "De naderende 'Blue Monday' en de somberheid van januari."
+        ],
+        "onverwerkt": "Het schuldgevoel dat ze er niet genoeg is voor haar zieke schoonmoeder."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Opgegroeid in een confessioneel nest, altijd bij de Brugkerk gebleven.",
+        "huidige_betrokkenheid": "Trouwe kerkganger, helpt bij de kindernevendienst en de organisatie van de kerstmarkt.",
+        "geloofsbeleving": "God is voor haar een bron van kracht en rust. Ze bidt dagelijks kort voor het slapengaan.",
+        "geloofstaal": "Houdt van liederen uit het Liedboek 2013; vindt de preek geslaagd als er een praktische 'takeaway' is.",
+        "twijfels_vragen": [
+          "Hoe houd ik mijn kinderen bij de kerk?",
+          "Is mijn drukke leven wel wat God van mij vraagt?"
+        ],
+        "spirituele_behoeften": "Behoefte aan onthaasting en de bevestiging dat ze 'genoeg' is, ook als ze niet aan alle ballen in de lucht kan houden."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Lezen (literaire thrillers)",
+          "Wandelen langs de Gouwe",
+          "Koken voor vrienden"
+        ],
+        "media": [
+          "AD Groene Hart",
+          "Libelle",
+          "NPO Radio 1"
+        ],
+        "verenigingen": [
+          "Oudervereniging van de basisschool",
+          "Zwemvereniging"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De geschenken van de wijzen (Matteüs 2). Ze herkent de symboliek van het 'brengen van wat je hebt', ook al voelt haar eigen bijdrage soms klein.",
+        "wat_afstoot": "De politieke intriges van Herodes voelen ver weg van haar dagelijkse realiteit, tenzij vertaald naar machtsmisbruik op de werkvloer.",
+        "existentiele_vraag": "Wat kan ik in dit nieuwe jaar aan God en mijn naaste aanbieden vanuit mijn eigen beperkte tijd en energie?"
+      }
+    },
+    {
+      "nummer": 3,
+      "naam": {
+        "voornaam": "Gerrit-Jan",
+        "achternaam": "van Vliet"
+      },
+      "leeftijd": 78,
+      "kernschets": "Een gepensioneerde aannemer en 'pilaar' van de gemeente die vasthoudt aan de traditie als anker in een snel veranderende wereld. Hij combineert een nuchtere bouwersmentaliteit met een diepe, ingetogen vroomheid.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Gezet postuur, verweerde handen, grijs haar met een duidelijke scheiding, draagt op zondag altijd een donkerblauw pak.",
+        "woonwijk": "Lintbebouwing aan de Kerkweg-Oost, vlakbij de Brugkerk."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "Zelfstandig in de woning die hij zelf gebouwd heeft",
+        "relatiestatus": "Weduwnaar sinds drie jaar",
+        "kinderen": "Drie volwassen kinderen, zes kleinkinderen; één zoon woont in Waddinxveen, de rest verder weg.",
+        "familie_relatie": "Hechte band met zijn broer, die ook in Waddinxveen woont.",
+        "sociaal_netwerk": "Zijn sociale leven draait bijna volledig om de kerk en de 'mannenvereniging'. Voelt zich soms eenzaam in de avonden."
+      },
+      "opleiding_werk": {
+        "opleiding": "Ambachtsschool, later aannemersdiploma",
+        "intelligentie_leerstijl": "Zeer praktisch en ruimtelijk inzicht, leert door observatie",
+        "huidige_werk": "Gepensioneerd, maar doet nog kleine klusjes voor de kerk en buren.",
+        "voormalig_werk": "Eigenaar van een lokaal bouwbedrijf",
+        "financiele_situatie": "Goed pensioen en eigen woning, is gul voor de collecte en diaconie."
+      },
+      "gezondheid": {
+        "lichamelijk": "Slijtage in de knieën, gehoorapparaat aan beide oren, gebruikt een wandelstok voor langere afstanden.",
+        "mentaal": "Verwerkt nog steeds het verlies van zijn vrouw; vindt troost in routine.",
+        "leefstijl": "Eet traditioneel (aardappels-vlees-groente), drinkt één glas jenever voor het eten."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "Het overlijden van zijn vrouw aan kanker, na een huwelijk van 50 jaar."
+        ],
+        "heden": [
+          "De leegloop van de kerk en het verdwijnen van de vertrouwde liturgie.",
+          "Zorgen of hij wel in zijn eigen huis kan blijven wonen."
+        ],
+        "onverwerkt": "Het gemis van de dagelijkse gesprekken met zijn vrouw."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Gereformeerde Bond, zijn hele leven lid van de Brugkerk.",
+        "huidige_betrokkenheid": "Bezoekt trouw elke zondag de dienst, lid van de kerkenraad (ouderling-kerkvoogd in ruste).",
+        "geloofsbeleving": "God is de soevereine Schepper en Rechter. Hij hecht aan eerbied en orde in de dienst.",
+        "geloofstaal": "Spreekt de tale Kanaäns; houdt van de Psalmberijming 1773 en de Statenvertaling (hoewel hij de NBV21 accepteert).",
+        "twijfels_vragen": [
+          "Zal er nog een kerk zijn voor mijn kleinkinderen?",
+          "Ben ik wel oprecht bekeerd?"
+        ],
+        "spirituele_behoeften": "Behoefte aan de verkondiging van de genade en de zekerheid van het geloof. Wil horen dat God trouw blijft, ook als alles verandert."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Houtbewerking in zijn schuur",
+          "Puzzelen",
+          "Klassieke muziek (orgel)"
+        ],
+        "media": [
+          "Reformatorisch Dagblad",
+          "Hour of Power (stiekem)",
+          "Lokale omroep Waddinxveen"
+        ],
+        "verenigingen": [
+          "Mannenvereniging 'Onderzoekt de Schriften'",
+          "PCOB"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "Jesaja 60: 'Sta op en word verlicht'. De majesteit van God en de belofte dat het licht de duisternis overwint, geeft hem hoop voor de toekomst van de kerk.",
+        "wat_afstoot": "De 'wijzen uit het oosten' als heidenen die voorgaan op de Joden kan schuren met zijn sterke nadruk op het verbondsvolk, tenzij goed uitgelegd.",
+        "existentiele_vraag": "Hoe kan ik in de winter van mijn leven nog een getuige zijn van Gods licht?"
+      }
+    },
+    {
+      "nummer": 4,
+      "naam": {
+        "voornaam": "Marleen",
+        "achternaam": "van den Berg"
+      },
+      "leeftijd": 56,
+      "kernschets": "Een sociaal bewogen lerares die het geloof vooral vertaalt in daden van gerechtigheid. Ze is kritisch op kerkelijke naar-binnen-gerichtheid en zoekt naar de verbinding met de 'vreemdeling' in Waddinxveen.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Slank, halflang grijs-blond haar, draagt vaak kleurrijke sjaals en comfortabele schoenen, fietst altijd op een e-bike.",
+        "woonwijk": "Woonachtig in een jaren '70 woning in Waddinxveen-Noord."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "Alleenwonend",
+        "relatiestatus": "Gescheiden (10 jaar geleden), heeft een lat-relatie met een partner in Gouda",
+        "kinderen": "Twee uitgevlogen dochters die in Amsterdam wonen en weinig met de kerk hebben.",
+        "familie_relatie": "Spanning met haar conservatieve broer over politieke thema's.",
+        "sociaal_netwerk": "Groot netwerk via haar werk en vrijwilligerswerk bij de Voedselbank en VluchtelingenWerk."
+      },
+      "opleiding_werk": {
+        "opleiding": "PABO, later specialisatie remedial teaching",
+        "intelligentie_leerstijl": "Verbaal sterk, empathisch, leert door dialoog en reflectie",
+        "huidige_werk": "Lerares op een basisschool in een achterstandswijk in een naburige stad; ziet veel verborgen armoede.",
+        "voormalig_werk": null,
+        "financiele_situatie": "Modaal inkomen, leeft sober uit overtuiging, steunt veel goede doelen."
+      },
+      "gezondheid": {
+        "lichamelijk": "Goede conditie, doet aan yoga en wandelt veel.",
+        "mentaal": "Gevoelig voor 'compassion fatigue' door haar werk en vrijwilligerswerk.",
+        "leefstijl": "Vegetariër, koopt zoveel mogelijk lokaal en tweedehands."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "De moeizame scheiding die haar veel vrienden in de kerk kostte omdat men partij koos."
+        ],
+        "heden": [
+          "De opkomst van extreemrechts en de verharding in het debat over vluchtelingen.",
+          "De eenzaamheid van sommige van haar leerlingen."
+        ],
+        "onverwerkt": "Het verdriet dat haar dochters de kerk als 'hypocriet' zien."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Vrijzinnig-hervormd opgevoed, later meer orthodox-confessioneel geworden, maar met een sterke nadruk op de sociale kant.",
+        "huidige_betrokkenheid": "Lid van de diaconie, betrokken bij oecumenische gebedsbijeenkomsten.",
+        "geloofsbeleving": "God is aanwezig in de kwetsbare naaste. Jezus is voor haar het grote voorbeeld van grensoverschrijdende liefde.",
+        "geloofstaal": "Houdt van inclusieve taal; spreekt over 'gerechtigheid', 'heelheid' en 'solidariteit'.",
+        "twijfels_vragen": [
+          "Waarom is de kerk zo vaak met zichzelf bezig in plaats van met de wereld?",
+          "Hoe rijm ik Gods liefde met het lijden van onschuldige kinderen?"
+        ],
+        "spirituele_behoeften": "Behoefte aan inspiratie om het vol te houden in haar inzet voor anderen. Zoekt naar een profetisch geluid in de preek."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Tuinieren",
+          "Bezoeken van musea",
+          "Vrijwilligerswerk"
+        ],
+        "media": [
+          "Trouw",
+          "VPRO Gids",
+          "De Correspondent"
+        ],
+        "verenigingen": [
+          "VluchtelingenWerk Nederland",
+          "Milieudefensie"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De wijzen als buitenstaanders (Matteüs 2) en het 'geheimenis' dat de heidenen mede-erfgenamen zijn (Efeziërs 3). Dit bevestigt haar visie op een inclusieve kerk.",
+        "wat_afstoot": "De nadruk op 'goud' en koninklijke pracht kan haar tegenstaan als het niet kritisch wordt geduid in relatie tot armoede.",
+        "existentiele_vraag": "Hoe kunnen wij als Brugkerk werkelijk een 'brug' zijn naar de gemarginaliseerden in onze eigen straat?"
+      }
+    },
+    {
+      "nummer": 5,
+      "naam": {
+        "voornaam": "Marek",
+        "achternaam": "Kowalski"
+      },
+      "leeftijd": 34,
+      "kernschets": "Een arbeidsmigrant uit Polen die in Waddinxveen een nieuw bestaan heeft opgebouwd. Hij zoekt in de Brugkerk naar gemeenschap en spirituele bedding, terwijl hij balanceert tussen twee culturen.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Stevig gebouwd, kort donker haar, vaak een vermoeide blik maar een vriendelijke glimlach, draagt functionele kleding.",
+        "woonwijk": "Huurappartement in de buurt van het Gouweplein."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "Samenwonend met zijn Nederlandse partner",
+        "relatiestatus": "Woont samen met Linda, die hij in Waddinxveen heeft leren kennen",
+        "kinderen": "Geen, maar ze hopen in de toekomst op een gezin.",
+        "familie_relatie": "Zijn ouders en broers wonen in de buurt van Krakau; hij ziet hen twee keer per jaar en spreekt hen wekelijks via Skype.",
+        "sociaal_netwerk": "Beperkt; voornamelijk collega's en de familie van Linda. Voelt zich soms een buitenstaander in het dorp."
+      },
+      "opleiding_werk": {
+        "opleiding": "MBO Techniek (in Polen)",
+        "intelligentie_leerstijl": "Zeer praktisch en technisch onderlegd, leert de Nederlandse taal door veel te luisteren.",
+        "huidige_werk": "Heftruckchauffeur bij Nedcargo; werkt vaak in ploegendiensten, wat zijn sociale leven bemoeilijkt.",
+        "voormalig_werk": "Bouwvakker in Polen",
+        "financiele_situatie": "Spaarzaam, stuurt maandelijks een bedrag naar zijn ouders in Polen."
+      },
+      "gezondheid": {
+        "lichamelijk": "Lichte rugklachten door het werk, verder gezond.",
+        "mentaal": "Ervaart soms gevoelens van ontworteling en heimwee naar Polen.",
+        "leefstijl": "Rookt af en toe, houdt van stevige maaltijden."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "De economische noodzaak om zijn vaderland te verlaten, wat hij als een vorm van verlies ervaart."
+        ],
+        "heden": [
+          "De onzekerheid over zijn verblijfsstatus op lange termijn en de publieke opinie over arbeidsmigranten.",
+          "De gezondheid van zijn vader in Polen."
+        ],
+        "onverwerkt": "Het gevoel dat hij in Polen 'gefaald' heeft omdat hij daar geen werk kon vinden."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Rooms-katholiek opgevoed in Polen, maar voelt zich nu meer thuis in de Brugkerk vanwege zijn partner.",
+        "huidige_betrokkenheid": "Bezoekt de diensten wanneer zijn werkrooster het toelaat (ongeveer om de week).",
+        "geloofsbeleving": "Geloof is voor hem verbonden met traditie, kaarsen en gebed. Hij ervaart God als een beschermer op zijn levensreis.",
+        "geloofstaal": "Heeft moeite met de lange preken; houdt meer van de visuele en rituele aspecten van de dienst.",
+        "twijfels_vragen": [
+          "Hoort een katholiek wel in een protestantse kerk?",
+          "Ziet God mij ook als ik ver van huis ben?"
+        ],
+        "spirituele_behoeften": "Behoefte aan een gevoel van 'thuiskomen' en acceptatie. Zoekt naar universele beelden die taalbarrières overstijgen."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Vissen in de Gouwe",
+          "Sleutelen aan zijn auto",
+          "Koken van Poolse gerechten"
+        ],
+        "media": [
+          "Poolse nieuwssites",
+          "YouTube-kanalen over techniek",
+          "Facebook-groepen voor Polen in Nederland"
+        ],
+        "verenigingen": [
+          "Geen lokale lidmaatschappen"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De reis van de wijzen (Matteüs 2). Hij herkent zichzelf in de figuren die van ver komen, een lange weg afleggen en zich moeten aanpassen aan een nieuwe omgeving om het Licht te vinden.",
+        "wat_afstoot": "De abstracte theologische uiteenzettingen in de Efeziërs-brief zijn voor hem taalkundig te complex.",
+        "existentiele_vraag": "Mag ik, als vreemdeling, ook delen in de belofte van dit Kind?"
+      }
+    }
+  ]
+}

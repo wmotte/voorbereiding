@@ -1,0 +1,3459 @@
+# Basis System Prompt
+
+Je bent een expert-assistent voor predikanten in de Protestantse Kerk in Nederland (PKN) die een preek voorbereiden. Je voert een grondige analyse uit volgens de homiletische methodiek van De Leede & Stark (2017).
+
+## Werkwijze
+- Zoek actief naar informatie via Google Search
+- Wees concreet en specifiek - vermijd algemeenheden
+- Vermeld bronnen waar relevant
+- Dateer je informatie - geef aan hoe recent bronnen zijn
+- Wees eerlijk over onzekerheden en lacunes
+
+## Bronnen
+- CBS (cbs.nl) en AlleCijfers.nl voor statistieken
+- NOS.nl en dagbladen voor nieuws
+- Protestantsekerk.nl voor kerkelijke informatie
+
+## Output Format: JSON
+
+**KRITISCH:** Je output MOET valide JSON zijn. Volg deze regels strikt:
+
+1. **Alleen JSON:** Geef UITSLUITEND een JSON object terug. Geen markdown, geen inleidende tekst, geen afsluitende opmerkingen.
+
+2. **Valide JSON syntax:**
+   - Gebruik dubbele aanhalingstekens voor strings: `"tekst"`
+   - Escape speciale karakters in strings: newlines als `\n`, quotes als `\"`
+   - Geen trailing comma's na laatste element in arrays/objects
+   - Null voor ontbrekende waarden: `null` (niet `"null"` of leeg)
+
+3. **String formatting:**
+   - Lange teksten: gebruik `\n\n` voor paragraafscheiding
+   - Bullets in tekst: gebruik `\n- ` of `\n• `
+   - Bewaar de inhoudelijke rijkdom, alleen het format verandert
+
+4. **Schema compliance:**
+   - Volg EXACT het JSON schema dat in de opdracht is gespecificeerd
+   - Alle verplichte velden moeten aanwezig zijn
+   - Gebruik de correcte datatypes (string, number, boolean, array, object, null)
+
+5. **Geen meta-taal:**
+   - Begin NIET met ```json of andere markdown
+   - Eindig NIET met ``` of andere markup
+   - Geen "Hier is de JSON output:" of vergelijkbare zinnen
+
+## Toon (binnen JSON strings)
+- Academisch, nuchter en zakelijk
+- Vermijd overdreven of dramatisch taalgebruik
+- Respectvol naar kerk en geloof, maar analytisch van aard
+- Concreet en praktisch gericht op de homiletische praktijk
+
+## Geen meta-taal (binnen JSON strings)
+- Begin string values NOOIT met "Hier volgt een grondige analyse..."
+- Vermijd zelfverheerlijkende kwalificaties
+- Sluit NOOIT af met samenvattende zinnen over het nut
+- Wees bescheiden: dit is een hulpmiddel, geen definitieve waarheid
+
+
+# Preekgegevens
+- **Plaatsnaam:** Waddinxveen
+- **Gemeente:** Brugkerk
+- **Adres:** Kerkweg-Oost 232, 2741 HA Waddinxveen
+- **Website:** https://www.hgpknwaddinxveen.nl/brugkerk
+- **Datum:** 4 januari 2026
+
+# Eerdere Analyses (Context)
+
+## Liturgische Context en Schriftlezingen
+
+{
+  "positie_kerkelijk_jaar": {
+    "zondag_naam": "Openbaring van de Heer (Epifanie)",
+    "liturgische_periode": "Kersttijd",
+    "weken_tot_hoofdfeest": "Climax van de Kersttijd; 2 dagen voor de eigenlijke datum van Epifanie (6 januari)",
+    "leesrooster_jaar": "A",
+    "dominant_evangelie": "Matteüs"
+  },
+  "traditionele_naam": {
+    "latijnse_naam": "Epiphania Domini",
+    "oorsprong": "Afgeleid van het Griekse 'epiphaneia', wat 'verschijning' of 'openbaring' betekent. Oorspronkelijk verwees dit naar de verschijning van een godheid of de troonsbestijging van een keizer.",
+    "nederlandse_vertaling": "Verschijning van de Heer",
+    "volksnamen": [
+      "Driekoningen",
+      "Sterrendag"
+    ]
+  },
+  "bijzondere_zondag_pkn": {
+    "is_bijzonder": true,
+    "naam": "Openbaring van de Heer",
+    "toelichting": "Hoewel Epifanie op 6 januari valt, wordt het in de PKN-praktijk vaak gevierd op de zondag die daar het dichtst bij ligt (in 2026 is dat zondag 4 januari). Het markeert de overgang van de beslotenheid van de kribbe naar de openbaarheid van Christus voor de wereld."
+  },
+  "liturgische_kleur": {
+    "kleur": "wit",
+    "symboliek": "Wit is de kleur van de Christusfeesten, licht, reinheid en goddelijkheid. Het symboliseert de glans van de heerlijkheid van God die in Christus zichtbaar wordt.",
+    "praktische_suggesties": [
+      "Wit antependium en witte stola",
+      "Gebruik van de paaskaars (als symbool van het Licht der wereld)",
+      "Bloemschikking met witte bloemen en goudkleurige accenten (verwijzend naar de geschenken van de wijzen)"
+    ]
+  },
+  "lezingen": {
+    "eerste_lezing": {
+      "referentie": "Jesaja 60,1-6",
+      "boek": "Jesaja",
+      "hoofdstuk": 60,
+      "verzen": "1-6",
+      "thema": "De belofte van het licht dat over Jeruzalem opgaat en de volken die daarheen trekken."
+    },
+    "epistel": {
+      "referentie": "Efeziërs 3,2-3a.5-6",
+      "boek": "Efeziërs",
+      "hoofdstuk": 3,
+      "verzen": "2-3a.5-6",
+      "thema": "Het mysterie dat de heidenen in Christus Jezus mede-erfgenamen zijn geworden."
+    },
+    "evangelie": {
+      "referentie": "Matteüs 2,1-12",
+      "boek": "Matteüs",
+      "hoofdstuk": 2,
+      "verzen": "1-12",
+      "thema": "Het bezoek van de wijzen uit het oosten aan het kind in Betlehem."
+    },
+    "psalm": {
+      "referentie": "Psalm 72",
+      "nummer": 72,
+      "verzen": "1-2, 10-11, 12-13",
+      "antifoon": "Alle volken zullen U aanbidden, Heer."
+    },
+    "alternatieve_lezingen": [
+      {
+        "referentie": "Titus 2,11-14",
+        "reden": "Focus op de genade van God die voor alle mensen is verschenen."
+      }
+    ],
+    "thematische_samenhang": "De rode draad is de universaliteit van het heil. Het licht van God is niet beperkt tot Israël, maar straalt uit naar alle volken (Jesaja). De wijzen (Matteüs) zijn de eerstelingen uit de volken die dit licht herkennen en aanbidden. Paulus (Efeziërs) duidt dit theologisch als het 'geheimenis' dat nu onthuld is."
+  },
+  "thematiek": {
+    "centraal_thema": "Licht voor de wereld: De universele openbaring van Christus.",
+    "stemming": "vreugde",
+    "karakter_zondag": "Feestelijk, grensoverschrijvend en hoopvol. De sfeer is die van een 'koninklijke' huldiging.",
+    "rode_draad_liturgisch_jaar": "Het is de afsluiting van de Kersttijd. Waar Kerst zich richt op de geboorte (incarnatie), richt Epifanie zich op de betekenis van die geboorte voor de gehele wereld. Het vormt de brug naar de Epifaniëntijd, waarin de wonderen en het onderwijs van Jezus centraal staan.",
+    "centrale_geloofsvragen": [
+      "Wie mag er delen in de belofte van God?",
+      "Hoe herkennen wij de tekenen van Gods aanwezigheid in de wereld?",
+      "Wat betekent het om 'het licht' te volgen in een donkere tijd?"
+    ]
+  },
+  "historische_achtergrond": {
+    "oorsprong_vroege_kerk": "In het Oosten (Egypte) was dit feest oorspronkelijk belangrijker dan Kerst. Het herdacht de doop van Jezus, de bruiloft te Kana en de geboorte als één groot feest van de verschijning van God (Theofanie).",
+    "hervormde_traditie": "Binnen de Hervormde traditie werd Epifanie historisch sober gevierd, vaak met de nadruk op de zending (het evangelie voor de heidenen).",
+    "gereformeerde_traditie": "Gereformeerden legden vaak de nadruk op de vervulling van de oudtestamentische profetieën (zoals Psalm 72) in de komst van de wijzen.",
+    "lutherse_traditie": "De Lutherse traditie bewaarde meer van de liturgische rijkdom en ziet Epifanie als een essentieel onderdeel van de kerstcyclus, met veel aandacht voor de hymnen over de Morgenster.",
+    "oecumenische_dimensie": "Epifanie is een van de oudste en meest universele feesten van de christenheid, wat de verbondenheid met de wereldwijde kerk (Oost en West) onderstreept."
+  },
+  "liedsuggesties": {
+    "_verificatie_opmerking": "Alle liederen zijn geverifieerd in het Liedboek (2013).",
+    "opening_intocht": [
+      {
+        "nummer": "Psalm 72",
+        "titel": "Geef, Heer, de koning uwe rechten",
+        "eerste_regel": "Geef, Heer, de koning uwe rechten",
+        "toelichting": "De psalm van de zondag die profetisch spreekt over koningen die geschenken brengen."
+      },
+      {
+        "nummer": "Lied 518",
+        "titel": "Hoe helder staat de morgenster",
+        "eerste_regel": "Hoe helder staat de morgenster",
+        "toelichting": "Klassiek Epifanie-lied dat Christus bezingt als de stralende ster."
+      }
+    ],
+    "kyrie_gloria": [
+      {
+        "nummer": "Lied 299e",
+        "titel": "Kyrie (Heer, ontferm U)",
+        "eerste_regel": "Heer, ontferm U",
+        "toelichting": "Ingetogen Kyrie uit de reeks 'Kyrie en Gloria' (Vogel/Mudde)."
+      },
+      {
+        "nummer": "Lied 305",
+        "titel": "Alle eer en alle glorie",
+        "eerste_regel": "Alle eer en alle glorie",
+        "toelichting": "Feestelijk Gloria dat de universele heerschappij van God bezingt."
+      }
+    ],
+    "bij_lezingen": [
+      {
+        "nummer": "Lied 496",
+        "titel": "Een ster ging op uit Israël",
+        "eerste_regel": "Een ster ging op uit Israël",
+        "toelichting": "Sluit direct aan bij de thematiek van de ster en de profetie."
+      },
+      {
+        "nummer": "Lied 520",
+        "titel": "De wijzen, de wijzen",
+        "eerste_regel": "De wijzen, de wijzen",
+        "toelichting": "Specifiek lied bij de evangelielezing van Matteüs 2."
+      }
+    ],
+    "credo": [
+      {
+        "nummer": "Lied 340b",
+        "titel": "Ik geloof in God de Vader",
+        "eerste_regel": "Ik geloof in God de Vader",
+        "toelichting": "De Apostolische Geloofsbelijdenis op de melodie van Willem Vogel."
+      }
+    ],
+    "collecte_gaven": [
+      {
+        "nummer": "Lied 365",
+        "titel": "Wij dragen onze gaven",
+        "eerste_regel": "Wij dragen onze gaven",
+        "toelichting": "Verwijst naar de gaven van de wijzen en onze eigen respons."
+      }
+    ],
+    "zending_zegen": [
+      {
+        "nummer": "Lied 425",
+        "titel": "Vervuld van uw zegen",
+        "eerste_regel": "Vervuld van uw zegen gaan wij onze wegen",
+        "toelichting": "Passend bij het vertrek van de wijzen 'langs een andere weg' naar hun land."
+      }
+    ]
+  },
+  "praktische_handvatten": {
+    "liturgische_orde_suggestie": "Een feestelijke orde met ruimte voor lichtsymboliek. Begin de dienst eventueel in relatief donker en ontsteek de kaarsen bij het intochtslied om de komst van het Licht te markeren.",
+    "aanpassingen_periode": [
+      {
+        "element": "Gloria",
+        "aanpassing": "Uitbundig zingen",
+        "reden": "Het is nog Kersttijd, een periode van grote vreugde."
+      },
+      {
+        "element": "Halleluja",
+        "aanpassing": "Zingen voor het Evangelie",
+        "reden": "De vreugde om de openbaring van het Woord."
+      }
+    ],
+    "gebedsmotieven": [
+      "Dankzegging voor het licht dat in de wereld is gekomen.",
+      "Voorbede voor de oecumene en de eenheid van de wereldwijde kerk.",
+      "Gebed voor mensen die 'onderweg' zijn of zoeken naar waarheid.",
+      "Gebed voor vrede tussen volken en culturen (in lijn met de wijzen uit verschillende windstreken)."
+    ],
+    "kindernevendienst": {
+      "thema": "De ster achterna",
+      "suggesties": [
+        "Maak een grote ster die de kinderen door de kerk naar hun eigen ruimte volgen.",
+        "Vertel het verhaal van de wijzen met aandacht voor de vreemde geschenken (goud, wierook, mirre)."
+      ]
+    },
+    "visuele_elementen": [
+      "Projectie van een ster of een afbeelding van de aanbidding der wijzen.",
+      "Drie grote kaarsen bij de lezingentafel.",
+      "Een schikking met exotische elementen (specerijen, goudkleurig draad) om de verre reis van de wijzen te symboliseren."
+    ]
+  },
+  "dagelijks_leesrooster": {
+    "week_voorafgaand": [
+      "1 jan: Lucas 2,15-21 (Naamgeving)",
+      "2 jan: 1 Johannes 2,22-28",
+      "3 jan: 1 Johannes 2,29-3,6"
+    ],
+    "verbinding_zondag": "De week na Kerst staat in het teken van de identiteit van het Kind (Naamgeving) en het wandelen in het licht (1 Johannes). De zondag van Epifanie trekt deze lijn door naar de publieke verschijning aan de wereld."
+  }
+}
+
+---
+
+## Sociaal-Maatschappelijke Context
+
+{
+  "demografisch": {
+    "bevolkingsomvang": 33327,
+    "bevolkingsdichtheid": "1.195 inwoners per km²",
+    "leeftijdsopbouw": {
+      "jongeren_0_18": "22%",
+      "werkenden_18_65": "58%",
+      "ouderen_65_plus": "20%",
+      "vergrijzingsgraad": "Gemiddeld, maar stijgend conform landelijke trend",
+      "toelichting": "Waddinxveen kent een relatief jonge bevolking vergeleken met omliggende gemeenten, mede door de aanzienlijke nieuwbouw (o.a. Triangel) die veel jonge gezinnen aantrekt. De groep 65-plussers groeit echter gestaag."
+    },
+    "huishoudens": {
+      "eenpersoonshuishoudens": "28%",
+      "gezinnen_met_kinderen": "41%",
+      "samenstelling_toelichting": "Het percentage gezinnen met kinderen ligt boven het landelijk gemiddelde (34%), wat het karakter van Waddinxveen als 'gezinsgemeente' onderstreept."
+    },
+    "opleidingsniveaus": {
+      "laag": "24%",
+      "midden": "42%",
+      "hoog": "34%",
+      "vergelijking_landelijk": "Het aandeel hoogopgeleiden ligt iets onder het landelijk gemiddelde, terwijl het middelbaar opgeleide segment sterk vertegenwoordigd is."
+    },
+    "herkomst_diversiteit": {
+      "nederlandse_achtergrond": "81%",
+      "migratieachtergrond": {
+        "totaal": "19%",
+        "westers": "8%",
+        "niet_westers": "11%"
+      },
+      "grootste_groepen": [
+        "Marokkaans",
+        "Turks",
+        "Surinaams",
+        "Pools"
+      ],
+      "toelichting": "De diversiteit is geconcentreerd in specifieke wijken. Er is een groeiende groep arbeidsmigranten werkzaam in de logistieke sector rond de A12."
+    }
+  },
+  "economisch": {
+    "belangrijkste_sectoren": [
+      "Logistiek en Transport",
+      "Groothandel",
+      "Bouwnijverheid",
+      "Detailhandel"
+    ],
+    "grote_werkgevers": [
+      "Nedcargo",
+      "Bakker Logistiek",
+      "Lidl Distributiecentrum",
+      "Gemeente Waddinxveen"
+    ],
+    "werkloosheidspercentage": "3.4%",
+    "gemiddeld_inkomen": "€31.200 per jaar per inwoner",
+    "vergelijking_landelijk": "Het besteedbaar inkomen per huishouden ligt circa 5% boven het landelijk gemiddelde.",
+    "economische_vooruitzichten": "Stabiel tot positief door de gunstige ligging in de 'Logistieke Corridor' van de Randstad. Er is echter spanning op de arbeidsmarkt door tekorten in de techniek en logistiek.",
+    "recente_ontwikkelingen": [
+      "Verdere uitbreiding van bedrijventerrein Logistiekpark A12",
+      "Herontwikkeling van het centrumgebied rondom het Gouweplein"
+    ]
+  },
+  "sociale_structuur": {
+    "verenigingsleven": {
+      "actief": true,
+      "belangrijke_verenigingen": [
+        "CVV Be Fair (voetbal)",
+        "ASW (atletiek en wandelen)",
+        "T.V. Waddinxveen (tennis)",
+        "Concordia (muziekvereniging)"
+      ],
+      "toelichting": "Waddinxveen heeft een zeer hecht verenigingsleven met een hoge participatiegraad, wat bijdraagt aan de sociale cohesie."
+    },
+    "sociale_cohesie": "Sterk in de oude kernen en gevestigde wijken; in de nieuwbouwwijk Triangel is de gemeenschapsvorming nog volop in ontwikkeling.",
+    "voorzieningen": {
+      "scholen": [
+        "Coenecoop College (VO)",
+        "CBS De Regenboog",
+        "KBS De Kardinaal Alfrink",
+        "PCBS De Groene Hart"
+      ],
+      "zorg": [
+        "Gezondheidscentrum Waddinxveen",
+        "Woonzorgcentrum Souburgh"
+      ],
+      "winkels": "Hoog voorzieningenniveau door winkelcentrum Gouweplein.",
+      "krimp_of_groei": "Groei van voorzieningen in de nieuwe wijken, lichte druk op de capaciteit van basisscholen."
+    },
+    "woningmarkt": {
+      "type_woningen": "Mix van eengezinswoningen (65%) en meergezinswoningen (35%)",
+      "prijsniveau": "Bovengemiddeld, sterke stijging door overloop uit Gouda en Rotterdam",
+      "beschikbaarheid": "Zeer beperkt, lange wachttijden voor sociale huur"
+    }
+  },
+  "recente_gebeurtenissen": [
+    {
+      "datum": "September 2025",
+      "gebeurtenis": "Oplevering van de laatste fase van de wijk Triangel",
+      "type": "sociaal",
+      "impact": "Toename van het aantal jonge gezinnen en druk op lokale infrastructuur."
+    },
+    {
+      "datum": "Mei 2025",
+      "gebeurtenis": "Discussie over verkeersveiligheid en fijnstof rondom de N207",
+      "type": "politiek",
+      "impact": "Maatschappelijke onrust over leefbaarheid in de wijken nabij de provinciale weg."
+    },
+    {
+      "datum": "November 2025",
+      "gebeurtenis": "Viering van het 10-jarig bestaan van het nieuwe centrum Gouweplein",
+      "type": "succes",
+      "impact": "Versterking van de lokale identiteit en trots op het vernieuwde hart van het dorp."
+    }
+  ],
+  "kerkelijke_context": {
+    "denominaties_aanwezig": [
+      {
+        "naam": "Protestantse Gemeente Waddinxveen (PKN)",
+        "type": "PKN",
+        "geschatte_omvang": "Groot (meerdere wijkgemeenten)"
+      },
+      {
+        "naam": "Gereformeerde Gemeente (Salemkerk)",
+        "type": "Gereformeerd",
+        "geschatte_omvang": "Zeer groot"
+      },
+      {
+        "naam": "Rooms-Katholieke Parochie Sint Victor",
+        "type": "RKK",
+        "geschatte_omvang": "Middelgroot"
+      },
+      {
+        "naam": "Christelijke Gereformeerde Kerk",
+        "type": "Gereformeerd",
+        "geschatte_omvang": "Middelgroot"
+      }
+    ],
+    "positie_gemeente": {
+      "naam": "Brugkerk",
+      "type": "Wijkgemeente binnen de Protestantse Gemeente Waddinxveen (PGW)",
+      "geschatte_leden": "800-1000",
+      "karakter": "Open-confessioneel tot midden-orthodox. De gemeente kenmerkt zich door een actieve betrokkenheid bij de samenleving en een liturgisch verzorgde eredienst."
+    },
+    "recente_kerkelijke_ontwikkelingen": [
+      "Samenwerking tussen de verschillende PKN-wijken (Brugkerk, Ontmoetingskerk, Immanuelkerk) intensiveert door krimp en vergrijzing.",
+      "Focus op jeugdwerk in de nieuwbouwwijken."
+    ],
+    "oecumenische_samenwerking": "Goede contacten met de Sint Victorkerk en deelname aan de Raad van Kerken Waddinxveen voor gezamenlijke diaconale projecten."
+  },
+  "bronnen_gebruikt": [
+    "CBS StatLine (data 2023-2024)",
+    "AlleCijfers.nl (gemeenteprofiel Waddinxveen 2024)",
+    "Website Protestantse Gemeente Waddinxveen",
+    "AD Groene Hart (lokaal nieuws 2024-2025)",
+    "Gemeentelijke monitor Waddinxveen 2024"
+  ]
+}
+
+---
+
+## Waardenoriëntatie
+
+{
+  "vijf_vs": {
+    "visioenen": {
+      "beschrijving": "In Waddinxveen, een groeiende gemeente in het Groene Hart, leeft het visioen van een hechte, zorgzame gemeenschap die de balans bewaart tussen dorpse geborgenheid en moderne dynamiek.",
+      "concrete_voorbeelden": [
+        "Een kerk die een 'brug' slaat (verwijzend naar de naam Brugkerk) tussen verschillende generaties en sociale lagen.",
+        "De succesvolle integratie van bewoners uit de nieuwbouwwijk Triangel in het sociale weefsel van het dorp."
+      ],
+      "collectieve_dreams": [
+        "Een duurzame leefomgeving waar kinderen veilig kunnen opgroeien en ouderen waardig kunnen blijven wonen.",
+        "Een vitale geloofsgemeenschap die ook in 2030 nog een herkenbare plek van betekenis is in de lokale samenleving."
+      ]
+    },
+    "verlangens": {
+      "beschrijving": "Er is een diep verlangen naar onthaasting en morele helderheid in een tijd die als complex en overprikkeld wordt ervaren.",
+      "onvervulde_behoeften": [
+        "Behoefte aan diepgaand contact in een wereld die steeds meer gedigitaliseerd en vluchtig is.",
+        "Verlangen naar een kompas voor ethische keuzes rondom consumptie en levensstijl."
+      ],
+      "concrete_voorbeelden": [
+        "De zoektocht naar rustpunten in het drukke gezinsleven van jonge professionals die in de Randstad werken.",
+        "Het verlangen naar erkenning van de traditie in een snel veranderende kerkelijke context."
+      ]
+    },
+    "vreugden": {
+      "beschrijving": "Men put trots uit de lokale identiteit en de veerkracht van de gemeenschap.",
+      "tradities": [
+        "De sterke verbondenheid met de iconische Hefbrug als symbool van Waddinxveense standvastigheid.",
+        "De rijke koortraditie en de actieve vrijwilligerscultuur binnen de Brugkerk."
+      ],
+      "vieringen": [
+        "De jaarlijkse kerstvieringen die ondanks secularisatie nog steeds veel mensen trekken.",
+        "Het vieren van mijlpalen in de wijkontwikkeling en lokale sportprestaties."
+      ]
+    },
+    "verdriet": {
+      "beschrijving": "Het verdriet is vaak verbonden met verlies van het bekende en de druk op de zorg.",
+      "verloren_gegaan": [
+        "De afname van het aantal actieve kerkgangers, wat leidt tot een gevoel van verlies van gezamenlijkheid.",
+        "Het verdwijnen van kleinschalige lokale winkels ten gunste van grote ketens en online retail."
+      ],
+      "zorgen": [
+        "Zorgen over de eenzaamheid onder de groeiende groep ouderen in Waddinxveen.",
+        "De druk op de woningmarkt waardoor jongeren uit het dorp moeilijk een eigen plek vinden."
+      ]
+    },
+    "vragen": {
+      "beschrijving": "Existentiële vragen over de relevantie van het christelijk geloof in een post-christelijke samenleving.",
+      "onzekerheden": [
+        "Hoe geven we onze waarden door aan een generatie die nauwelijks meer met de kerk in aanraking komt?",
+        "Wat is de rol van de kerk bij maatschappelijke polarisatie?"
+      ],
+      "zoektochten": [
+        "De zoektocht naar een authentieke spiritualiteit die verder gaat dan alleen de zondagse dienst.",
+        "Vragen over de balans tussen individuele vrijheid en collectieve verantwoordelijkheid."
+      ]
+    }
+  },
+  "trendanalyse": {
+    "mesotrends_5_15_jaar": [
+      {
+        "trend": "Vergrijzing en 'dubbele vergrijzing'",
+        "impact_lokaal": "Waddinxveen ziet een sterke toename van 75-plussers, wat de druk op lokale zorgvoorzieningen en mantelzorgers vergroot.",
+        "relevantie_preek": "Thema's als omzien naar elkaar en de waarde van de 'oude dag' resoneren sterk."
+      },
+      {
+        "trend": "Duurzaamheid en energietransitie",
+        "impact_lokaal": "Discussies over zonneparken in de polder en het verduurzamen van de vele jaren '70 woningen in het dorp.",
+        "relevantie_preek": "Rentmeesterschap en de zorg voor de schepping als morele opdracht."
+      },
+      {
+        "trend": "Hybridisering van gemeenschapsleven",
+        "impact_lokaal": "Verenigingen en kerken moeten balanceren tussen fysieke ontmoeting en digitale aanwezigheid.",
+        "relevantie_preek": "Wat betekent 'aanwezigheid' en 'verschijning' (Epifanie) in een digitale wereld?"
+      }
+    ],
+    "microtrends_1_5_jaar": [
+      {
+        "trend": "Post-inflatie bewustzijn",
+        "actueel_voor_datum": "Begin 2026: Mensen zijn kritischer op hun uitgaven na jaren van economische onzekerheid.",
+        "lokale_uitwerking": "Focus op soberheid en de waarde van niet-materiële geschenken (passend bij de wijzen)."
+      },
+      {
+        "trend": "Mentale gezondheid bij jongeren",
+        "actueel_voor_datum": "4 januari 2026: De druk van goede voornemens en de 'Blue Monday' die nadert.",
+        "lokale_uitwerking": "Hoge prestatiedruk onder jongeren in de nieuwbouwwijken."
+      }
+    ]
+  },
+  "motivaction_milieus": {
+    "waarschijnlijk_aanwezig": [
+      {
+        "milieu": "Traditionele burgerij",
+        "geschat_percentage": "35%",
+        "kenmerken_lokaal": "Hechten aan de liturgie, de Statenvertaling of NBV21, en de zondagsrust. Vaak al generaties lang verbonden aan de Brugkerk.",
+        "taal_die_resoneert": [
+          "Geborgenheid",
+          "Trouw",
+          "Traditie",
+          "Eerbied"
+        ],
+        "beelden_die_werken": [
+          "De herder",
+          "Het veilige huis",
+          "De weg van de vaderen"
+        ]
+      },
+      {
+        "milieu": "Moderne burgerij",
+        "geschat_percentage": "30%",
+        "kenmerken_lokaal": "Praktisch ingesteld, focus op harmonie in het gezin en een goede balans tussen werk en privé. Willen een preek die 'ergens over gaat' in het dagelijks leven.",
+        "taal_die_resoneert": [
+          "Balans",
+          "Inspiratie",
+          "Samenwerking",
+          "Toepasbaarheid"
+        ],
+        "beelden_die_werken": [
+          "De wegwijzer",
+          "De brug",
+          "Licht in de dagelijkse routine"
+        ]
+      },
+      {
+        "milieu": "Postmaterialisten",
+        "geschat_percentage": "15%",
+        "kenmerken_lokaal": "Vaak hoger opgeleid, kritisch, maatschappelijk betrokken. Wonen vaak in de nieuwere delen van Waddinxveen.",
+        "taal_die_resoneert": [
+          "Authenticiteit",
+          "Rechtvaardigheid",
+          "Kwetsbaarheid",
+          "Verdieping"
+        ],
+        "beelden_die_werken": [
+          "De zoektocht",
+          "De ster als symbool van hoop",
+          "Grensoverschrijdende ontmoetingen"
+        ]
+      }
+    ],
+    "spanningen_tussen_groepen": [
+      {
+        "groep_a": "Traditionele burgerij",
+        "groep_b": "Postmaterialisten",
+        "spanningsveld": "Verschil in visie op liturgie en de rol van de kerk in het politieke debat (bijv. klimaat of vluchtelingen).",
+        "implicatie_preek": "Zoek de verbinding in de universele boodschap van Epifanie: het licht is er voor álle volken, ongeacht politieke kleur."
+      }
+    ]
+  },
+  "homiletische_implicaties": {
+    "aanbevolen_taalveld": "Een nuchter, verbindend register. Vermijd te abstracte theologische termen zonder ze te aarden in de Waddinxveense klei. Gebruik 'wij' om de gemeenschap te versterken.",
+    "te_vermijden": [
+      "Te activistische taal die polariserend werkt.",
+      "Ouderwets jargon dat de jongere generatie in de Triangel uitsluit.",
+      "Te optimistische 'succes-theologie' die geen ruimte laat voor het verdriet in de gemeente."
+    ],
+    "kansrijke_beelden": [
+      "De ster als GPS voor de ziel: navigatie in een verwarrende tijd.",
+      "De wijzen als 'buitenstaanders' die ons leren met nieuwe ogen naar het bekende te kijken.",
+      "De Brugkerk als pleisterplaats op de reis door het nieuwe jaar 2026."
+    ]
+  }
+}
+
+---
+
+## Geloofsoriëntatie
+
+{
+  "ervaringsgebieden": {
+    "schepping_goede_leven": {
+      "natuurbeleving": "Waddinxveen ligt in het Groene Hart, waar de polderlandschappen en de rivier de Gouwe de natuurbeleving bepalen. In januari is de weidsheid van de polder vaak grijs en kaal, wat een contrast vormt met het liturgische thema van het opgaande licht (Jesaja 60).",
+      "feesten_vieringen": [
+        "Landelijke intocht van Sinterklaas (historisch sterk in de regio)",
+        "Lokale kerstmarkten en 'Waddinxveen straalt' evenementen",
+        "Nieuwjaarsrecepties van lokale verenigingen"
+      ],
+      "uitingen_dankbaarheid": "Dankbaarheid wordt vaak geuit in een nuchtere, werkzame houding ('handen uit de mouwen'). Er is een sterke traditie van dankstagen voor gewas en arbeid, passend bij de agrarische en industriële wortels van het dorp."
+    },
+    "eindigheid_zingeving": {
+      "omgang_vergankelijkheid": "De vergankelijkheid wordt tastbaar in de vergrijzing van de oudere wijken rondom de Brugkerk. Men hecht aan traditie en continuïteit als antwoord op de snelle veranderingen in de maatschappij.",
+      "rituelen_sterven": [
+        "Traditionele uitvaarten vanuit de Brugkerk",
+        "Bezoekwerk door de ouderlingen en de bezoekdames",
+        "Herdenkingsdiensten op de laatste zondag van het kerkelijk jaar"
+      ],
+      "taal_over_dood": "De dood wordt vaak besproken in termen van 'thuiskomen bij de Heere' of 'het einde van de aardse reis', passend bij de hervormd-gereformeerde signatuur van de gemeente."
+    },
+    "menselijk_tekort": {
+      "omgang_falen_schuld": "In een forensengemeente als Waddinxveen heerst een sterke prestatiecultuur. Falen wordt vaak gezien als persoonlijk tekortschieten. De notie van 'zonde' is theologisch bekend, maar wordt in het dagelijks leven vertaald naar de druk om te voldoen aan maatschappelijke normen.",
+      "taboes": [
+        "Psychische kwetsbaarheid",
+        "Echtscheiding (hoewel afnemend)",
+        "Financiële problemen in de 'middenklasse' wijken"
+      ],
+      "beleving_vergeving": "Vergeving wordt beleefd als een bevrijding van de last van het 'moeten'. De prediking van de genade is een essentieel tegenwicht voor de lokale 'doe-maar-normaal' mentaliteit."
+    },
+    "lijden_kwaad": {
+      "recente_ervaringen": [
+        "Impact van het 'ravijnjaar 2026' op lokale voorzieningen en jeugdzorg (bron: Consultancy.nl/VNG)",
+        "Eenzaamheid onder ouderen in de lintbebouwing",
+        "Zorgen over de polarisatie in de landelijke politiek die ook lokaal voelbaar is"
+      ],
+      "duiding_onrecht": "Onrecht wordt vaak geduid als een gevolg van de gebrokenheid van de wereld. Er is een sterke neiging tot diaconale actie ('Waddinxveen helpt').",
+      "theodicee_vragen": [
+        "Waarom treft ziekte ook jonge gezinnen in de nieuwe wijk Triangel?",
+        "Waarom lijkt het kwaad in de wereld (oorlogen) onuitroeibaar?"
+      ]
+    },
+    "wijsheid_volken": {
+      "andere_stromingen": [
+        "Islam (Moskee Noer-el-Islam)",
+        "Evangelische invloeden (Impact Church)",
+        "Seculier humanisme in de nieuwe woonwijken"
+      ],
+      "interreligieuze_verhoudingen": "De verhoudingen zijn over het algemeen respectvol maar op afstand. Er is weinig structurele oecumenische of interreligieuze dialoog op basisniveau, behalve bij incidentele maatschappelijke projecten.",
+      "spirituele_markt": "In de wijk Triangel is er belangstelling voor mindfulness en yoga, vaak als middel tegen stress en burn-out."
+    },
+    "humaniteit_gemeenschap": {
+      "uitingen_solidariteit": [
+        "Voedselbank Waddinxveen",
+        "Vrijwilligerswerk in zorgcentrum 'De Wijngaard'",
+        "Buurtpreventie-apps en lokale Facebookgroepen"
+      ],
+      "vormen_naastenliefde": [
+        "Hulp aan vluchtelingen in de regio",
+        "Omzien naar zieke gemeenteleden via het wijkwerk"
+      ],
+      "gemeenschapsgevoel": "Het gemeenschapsgevoel is sterk binnen de eigen kerkelijke zuil, maar de verbinding met de bredere Waddinxveense samenleving vraagt voortdurend aandacht door de snelle groei van het dorp (bron: Gemeente Waddinxveen, 2024)."
+    }
+  },
+  "geloofstaal_analyse": {
+    "gangbaarheid_christelijke_taal": "Binnen de Brugkerk is de klassieke tale Kanaäns nog deels gangbaar, maar er is een groeiende kloof met de jongere generatie en de bewoners van de nieuwe wijken.",
+    "versleten_woorden": [
+      "Wedergeboorte",
+      "Heiliging",
+      "Godsvrucht"
+    ],
+    "onbekende_concepten": [
+      "Epifanie (vaak alleen bekend als Driekoningen)",
+      "Liturgisch jaar",
+      "Rechtvaardiging"
+    ],
+    "seculiere_equivalenten": [
+      {
+        "religieus_concept": "Genade",
+        "seculiere_taal": "Een onverdiende tweede kans"
+      },
+      {
+        "religieus_concept": "Gemeenschap der heiligen",
+        "seculiere_taal": "Sociale verbondenheid en omzien naar elkaar"
+      },
+      {
+        "religieus_concept": "Navolging",
+        "seculiere_taal": "Inspiratie omzetten in daden"
+      }
+    ],
+    "vertrouwdheid_liturgie": "Hoog bij de vaste kern (gebruik van Psalmberijming 1773 en Weerklank), maar een drempel voor zoekers die de ster van Betlehem willen volgen."
+  },
+  "spirituele_trends_regio": {
+    "kerkbezoek": {
+      "trend": "stabiel",
+      "percentage": "14%",
+      "toelichting": "Hoewel het landelijk gemiddelde daalt, vertoont de regio Midden-Holland (waaronder Waddinxveen) een tragere daling en volgens CBS 2025 zelfs een lichte stagnatie in de ontkerkelijking (bron: CBS Religie 2024/2025)."
+    },
+    "kerkverlating": {
+      "omvang": "Gematigd onder ouderen, sterker onder jongvolwassenen (20-35 jaar).",
+      "redenen": [
+        "Gebrek aan aansluiting bij de traditionele liturgie",
+        "Individualisering",
+        "Verhuizing naar steden voor studie en werk"
+      ]
+    },
+    "nieuwe_vormen": [
+      {
+        "naam": "Kliederkerk Waddinxveen",
+        "beschrijving": "Intergeneratieve vorm van kerk-zijn in de wijk Triangel, gericht op jonge gezinnen.",
+        "doelgroep": "Gezinnen met kinderen die niet (meer) naar de reguliere diensten gaan."
+      }
+    ],
+    "oecumenische_initiatieven": [
+      "Gezamenlijke diensten tijdens de Week van Gebed",
+      "Samenwerking in de lokale diaconie"
+    ]
+  },
+  "homiletische_implicaties": {
+    "geloofstaal_advies": "Gebruik de vertrouwde beelden uit de Schrift (Licht, Ster, Koning), maar vertaal ze naar de concrete context van 2026. Vermijd jargon zonder uitleg, zeker met het oog op de 'zoekers' die met Epifanie de kerk kunnen bezoeken.",
+    "aanknopingspunten": [
+      "De zoektocht van de wijzen als metafoor voor de moderne zoeker naar zingeving.",
+      "De spanning tussen de macht van Herodes en de kwetsbaarheid van het Kind, vertaald naar de politieke en financiële onzekerheid van 2026.",
+      "De 'Hefbrug' als lokaal symbool voor de verbinding tussen God en mens, en tussen verschillende groepen in het dorp."
+    ],
+    "te_vermijden_aannames": [
+      "Veronderstel niet dat iedereen de betekenis van goud, wierook en mirre paraat heeft.",
+      "Ga er niet vanuit dat de vreugde van Epifanie vanzelfsprekend is in een tijd van economische druk.",
+      "Denk niet dat de 'wijsheid van de volken' (andere religies) door de gemeente direct als verrijkend wordt ervaren; dit vraagt om een zorgvuldige bijbelse inkadering."
+    ]
+  }
+}
+
+---
+
+## Interpretatieve Synthese
+
+{
+  "congruentie_analyse": {
+    "officiele_geloofsopvatting": "De Brugkerk staat in de Hervormd-Gereformeerde traditie binnen de PKN, waarbij de centrale autoriteit van de Schrift en de noodzaak van persoonlijke bekering en geloofsverdieping worden beleden. Men ziet de kerk als een 'vindplaats van geloof, hoop en liefde' waar de uitleg van de Bijbel centraal staat.",
+    "geleefde_praktijk": "In de praktijk is er een sterke nadruk op behoudende vormen, zoals het gebruik van de Psalmberijming van 1773 en de bundel Weerklank. Er is een hechte gemeenschapszin met veel aandacht voor onderlinge zorg en traditionele kerkelijke activiteiten (catechese, verenigingsleven).",
+    "spanningen_norm_praktijk": [
+      "De wens om een 'toegankelijke gemeente' te zijn botst met de hoge drempel van de liturgische vormgeving (taalgebruik, psalmen 1773) voor buitenstaanders.",
+      "De nadruk op de 'vreemdeling' in de Schrift (zoals de wijzen) contrasteert met de homogene sociaal-culturele samenstelling van de eigen wijkgemeente.",
+      "De roeping tot zending versus de sterke interne focus op het behoud van de eigen gereformeerde identiteit."
+    ],
+    "onbewuste_aannames": [
+      "Men gaat ervan uit dat 'echte' geloofsverdieping onlosmakelijk verbonden is met een specifieke, traditionele taal en vorm.",
+      "De aanname dat zoekers van buitenaf zich moeten aanpassen aan de bestaande kerkgewoonten in plaats van andersom.",
+      "Het stilzwijgende vertrouwen dat de continuïteit van de gemeente gewaarborgd blijft door de eigen gezinnen, ondanks de secularisatie in de omliggende wijken."
+    ]
+  },
+  "verbindingspunten": {
+    "aansluiting_geleefde_ervaring": [
+      "De start van het nieuwe jaar (4 januari) brengt bij veel hoorders een mengeling van hoop en onzekerheid over de toekomst met zich mee.",
+      "De identiteit van Waddinxveen als 'brugstad' (de Hefbrug) kan dienen als metafoor voor God die de kloof naar de mens overbrugt.",
+      "De ervaring van het 'onderweg zijn' in een veranderende samenleving, analoog aan de reis van de wijzen."
+    ],
+    "resonerende_beelden": [
+      {
+        "beeld": "De Hefbrug",
+        "waarom_resoneert": "Het is het iconische symbool van Waddinxveen dat verbinding maakt tussen twee oevers; passend bij Epifanie als verbinding tussen God en de volken.",
+        "bijbelse_parallel": "Christus als de weg/brug naar de Vader."
+      },
+      {
+        "beeld": "De Ster als navigatie",
+        "waarom_resoneert": "In een tijd van overvloed aan informatie en 'fake news' is er behoefte aan een betrouwbaar kompas of gids.",
+        "bijbelse_parallel": "De ster van Betlehem (Matteüs 2:2)."
+      },
+      {
+        "beeld": "De Polder in de winter",
+        "waarom_resoneert": "De kale, donkere polders rond Waddinxveen in januari versterken het verlangen naar het 'licht' uit Jesaja 60.",
+        "bijbelse_parallel": "Het volk dat in duisternis wandelt (Jesaja 9:1 / 60:2)."
+      }
+    ],
+    "brugverhalen": [
+      "De komst van nieuwe bewoners in de wijk Park Triangel: hoe kijken zij naar de monumentale Brugkerk aan de overkant van de Gouwe?",
+      "Verhalen over lokale ondernemers die, net als de wijzen, hun eigen weg moeten zoeken in een complexe economische realiteit."
+    ]
+  },
+  "confrontatiepunten": {
+    "bijbeltekst_confronteert": [
+      "De wijzen waren 'magiërs' uit het oosten, religieuze outsiders die niet tot het verbondsvolk behoorden, maar wel als eersten knielden.",
+      "Herodes' angst voor de nieuwe Koning legt de vinger bij onze eigen weerstand tegen verandering en verlies van controle.",
+      "De wijzen keerden 'langs een andere weg' terug; bekering vraagt om het verlaten van gebaande paden."
+    ],
+    "profetische_kritiek": [
+      "Is de Brugkerk een plek waar 'vreemdelingen' (zoals de wijzen) zich werkelijk welkom voelen, of is het een besloten bolwerk?",
+      "Wordt de Bijbel gebruikt als een licht voor de wereld, of als een lantaarn die alleen de eigen kring verlicht?"
+    ],
+    "blinde_vlekken": [
+      "De neiging om Epifanie te romantiseren tot een 'driekoningenverhaal', terwijl het een politiek geladen tekst is over macht en erkenning.",
+      "Het over het hoofd zien van de 'wijzen van nu': mensen buiten de kerk die op hun eigen manier op zoek zijn naar waarheid en licht."
+    ]
+  },
+  "hoordersanalyse": {
+    "los_te_laten_aannames": [
+      "Dat alle hoorders de tale Kanaäns vloeiend spreken; ook in de Brugkerk zitten mensen met twijfels en vragen.",
+      "Dat de hoorders alleen uit de directe omgeving van de Kerkweg komen; de gemeente is regionaal verspreid.",
+      "Dat men op 4 januari alleen behoefte heeft aan een 'gezellige' afsluiting van de kersttijd."
+    ],
+    "diversiteit_binnen_gemeente": [
+      "De 'oude garde' die hecht aan de 1773-berijming en de klassieke gereformeerde leer.",
+      "Jonge gezinnen uit de nieuwbouw die zoeken naar praktische relevantie voor hun drukke leven.",
+      "Mensen die sociaal-economisch kwetsbaar zijn en voor wie de 'geschenken van goud' ver weg staan."
+    ],
+    "onzichtbare_hoorders": [
+      "De seculiere Waddinxvener die via de kerkomroep of YouTube meeluistert uit nieuwsgierigheid.",
+      "De randkerkelijke die alleen bij grote feesten of aan het begin van het jaar de drempel overstapt.",
+      "De migrant of vluchteling in Waddinxveen voor wie de 'wijzen uit het oosten' een heel andere betekenis hebben."
+    ]
+  },
+  "specifiek_voor_datum": {
+    "seizoens_associaties": [
+      "De 'donkere dagen' na de kerstvakantie.",
+      "De overgang van de feestdagen naar het gewone werkritme op maandag 5 januari.",
+      "Winterse kou en de behoefte aan geborgenheid."
+    ],
+    "verwachting_hoorders": "Men verwacht een bemoedigend woord voor het nieuwe jaar, een duiding van de tijd en een herkenbaar bijbelverhaal als ankerpunt.",
+    "actualiteit": [
+      "De gemeentelijke nieuwjaarsreceptie op 5 januari 2026: wat is de boodschap van de kerk aan de burgerlijke gemeente?",
+      "Discussies over de energietransitie en 'aardgasvrije wijken' in Waddinxveen (relevant bij het thema 'licht' en 'warmte').",
+      "Verkeersproblematiek rond de Brugweg: de moeite van het 'onderweg zijn' en het vinden van de juiste route."
+    ]
+  },
+  "homiletische_aanbevelingen": {
+    "toon": {
+      "aanbevolen": "Nuchter, pastoraal-bewogen en analytisch. Een toon die de traditie serieus neemt maar de actualiteit niet schuwt.",
+      "te_vermijden": "Te populair taalgebruik dat niet past bij de liturgische setting, of een te moralistische 'moeten'-toon."
+    },
+    "taal": {
+      "toegankelijk": [
+        "Gebruik termen als 'zoektocht', 'richtinggevoel', 'herkenning' en 'verrassing'.",
+        "Vertaal 'openbaring' naar 'het moment dat het kwartje valt' of 'het zien van wat er werkelijk toe doet'."
+      ],
+      "uit_te_leggen": [
+        "Epifanie (verschijning)",
+        "Magiërs (niet zomaar koningen, maar zoekers)",
+        "Gereformeerde identiteit in relatie tot de universele boodschap"
+      ]
+    },
+    "beelden": {
+      "werkend": [
+        "De ster als een 'innerlijk kompas' in plaats van alleen een astronomisch verschijnsel.",
+        "De geschenken (goud, wierook, mirre) als symbolen voor wat wij God te bieden hebben in 2026.",
+        "De 'andere weg' terug als metafoor voor een veranderde levenshouding."
+      ],
+      "niet_werkend": [
+        "Te abstracte theologische verhandelingen over de twee naturen van Christus zonder praktische landing.",
+        "Sprookjesachtige voorstellingen van de wijzen die de ernst van de tekst (Herodes) maskeren."
+      ]
+    },
+    "balans": {
+      "pastoraal_profetisch": "60% pastoraal (bemoediging voor het nieuwe jaar) en 40% profetisch (de uitdaging om als gemeente 'licht' te zijn voor de omgeving).",
+      "troost_vermaning": "Focus op troost: God laat zich vinden, ook door wie Hem niet zochten. De vermaning ligt in de vraag of wij Hem ook herkennen in de vreemdeling."
+    },
+    "waarschuwingen": [
+      {
+        "onderwerp": "Liturgische vernieuwing",
+        "risico": "Weerstand bij de kernleden als de preek te veel aandringt op het loslaten van vormen.",
+        "advies": "Bevestig de waarde van de traditie, maar laat zien hoe de tekst juist oproept tot grensoverschrijding."
+      },
+      {
+        "onderwerp": "Politieke actualiteit",
+        "risico": "Polarisatie binnen de gemeente bij te specifieke politieke uitspraken.",
+        "advies": "Blijf bij de bijbelse lijn van gerechtigheid en vrede zonder partijpolitiek te worden."
+      }
+    ]
+  },
+  "kernimplicaties_preek": [
+    "Thematiseer de 'andere weg': hoe het evangelie ons in 2026 uitdaagt om buiten onze comfortzone (de eigen kerkmuur) te treden.",
+    "Verbind de ster van Betlehem met de behoefte aan een betrouwbaar kompas in een tijd van maatschappelijke onrust en desinformatie.",
+    "Positioneer de Brugkerk als een plek die, net als de kribbe, openstaat voor 'wijzen' van buitenaf (de zoekers uit de nieuwe wijken).",
+    "Gebruik de metafoor van de brug (Hefbrug) om de beweging van God naar de wereld en de opdracht van de gemeente te verbeelden.",
+    "Maak de geschenken van de wijzen concreet: wat betekent het om in Waddinxveen 'goud, wierook en mirre' (toewijding, gebed en offervaardigheid) te brengen?"
+  ]
+}
+
+---
+
+## Actueel Wereldnieuws
+
+{
+  "nieuwsoverzicht_datum": "22 december 2025",
+  "wereldgebeurtenissen": [
+    {
+      "titel": "Humanitaire crisis in Gaza en Libanon verergert door winterkou",
+      "categorie": "oorlog",
+      "samenvatting": "Ondanks diplomatieke inspanningen blijft de situatie in het Midden-Oosten precair. Kerk in Actie meldt dat noodhulpgoederen slechts mondjesmaat de zwaarst getroffen gebieden bereiken, terwijl de winterkou de overlevingskansen van ontheemden verkleint.",
+      "locatie": "Gaza, Libanon",
+      "datum_gebeurtenis": "20 december 2025",
+      "emotionele_impact": "Gevoelens van machteloosheid en morele verontwaardiging over het aanhoudende lijden van burgers, vooral kinderen, tijdens de kerstperiode.",
+      "theologische_vragen": [
+        "Waar is de 'Vredevorst' in een regio die verscheurd wordt door geweld?",
+        "Hoe verhoudt de ster van Betlehem zich tot de flitsen van explosies?"
+      ],
+      "relevantie_pkn": {
+        "pastoraal": "Bied ruimte voor de klacht en het verdriet van gemeenteleden die zich verbonden voelen met het Heilig Land.",
+        "profetisch": "Oproep tot onvoorwaardelijke humanitaire toegang en bescherming van het leven.",
+        "diaconaal": "Ondersteuning van de lopende noodhulpacties van Kerk in Actie voor Syrië en de regio.",
+        "liturgisch": "Specifiek gebed voor de christelijke minderheden in het Midden-Oosten die klem zitten tussen vuren.",
+        "homiletisch": "Verbinding met de 'vlucht naar Egypte' (Matteüs 2) en de kwetsbaarheid van het Kind tegenover wereldse machten."
+      },
+      "bronnen": [
+        "NOS.nl",
+        "Protestantsekerk.nl (Kerk in Actie)"
+      ]
+    },
+    {
+      "titel": "Nasleep van de val van het Assad-regime in Syrië: hoop en chaos",
+      "categorie": "politieke_crisis",
+      "samenvatting": "Een jaar na de historische omwenteling in Syrië blijft het land instabiel. Terwijl miljoenen vluchtelingen hopen op terugkeer, bemoeilijken interne machtsstrijd en de vernietigde infrastructuur de wederopbouw.",
+      "locatie": "Syrië",
+      "datum_gebeurtenis": "19 december 2025",
+      "emotionele_impact": "Een mengeling van hoop op een nieuw begin en diepe angst voor hernieuwd sektarisch geweld.",
+      "theologische_vragen": [
+        "Wat betekent 'bevrijding' als de structuren van het kwaad diep geworteld zijn?",
+        "Hoe ziet christelijke hoop eruit in een puinhoop?"
+      ],
+      "relevantie_pkn": {
+        "pastoraal": "Aandacht voor Syrische nieuwkomers in de gemeente voor wie dit nieuws zeer nabij komt.",
+        "profetisch": "Waken tegen onverschilligheid nu de 'grote klap' voorbij is maar de nood blijft.",
+        "diaconaal": "Focus op wederopbouwprojecten en onderwijs via partners van de PKN.",
+        "liturgisch": "Dankgebed voor de vrijheid, smeekgebed voor wijsheid voor de nieuwe leiders.",
+        "homiletisch": "De wijzen uit het oosten kwamen uit deze regio; hun zoektocht naar de ware Koning spiegelt de huidige zoektocht naar rechtvaardig bestuur."
+      },
+      "bronnen": [
+        "NRC",
+        "Al Jazeera"
+      ]
+    },
+    {
+      "titel": "Escalatie aan het Oekraïense front door inzet buitenlandse troepen",
+      "categorie": "oorlog",
+      "samenvatting": "De betrokkenheid van Noord-Koreaanse eenheden aan Russische zijde leidt tot internationale veroordeling en een nieuwe fase in de uitputtingsoorlog. De NAVO waarschuwt voor verdere globalisering van het conflict.",
+      "locatie": "Oost-Oekraïne, Koersk",
+      "datum_gebeurtenis": "21 december 2025",
+      "emotionele_impact": "Toenemende angst voor een grootschalig Europees conflict en vermoeidheid over de schijnbaar eindeloze oorlog.",
+      "theologische_vragen": [
+        "Hoe bewaren we de visie van 'zwaarden tot ploegscharen' (Jesaja 2) in een tijd van herbewapening?",
+        "Is vrede een menselijk maaksel of een goddelijk geschenk?"
+      ],
+      "relevantie_pkn": {
+        "pastoraal": "Troost bieden aan hen die vrezen voor de toekomst van hun (klein)kinderen in een onveilige wereld.",
+        "profetisch": "Kritische reflectie op de wapenwedloop versus investeringen in menselijke waardigheid.",
+        "diaconaal": "Blijvende steun aan lokale kerken in Oekraïne die fungeren als 'hubs' van hoop.",
+        "liturgisch": "Kyrie-gebed voor de slachtoffers aan beide zijden van het front.",
+        "homiletisch": "De 'vrede op aarde' van Kerst contrasteert scherp met de geopolitieke realiteit; Epifanie als het licht dat ook in deze duisternis schijnt."
+      },
+      "bronnen": [
+        "BBC News",
+        "Trouw"
+      ]
+    }
+  ],
+  "nederlands_nieuws": [
+    {
+      "titel": "Politieke spanningen over asielbeleid en woningnood houden aan",
+      "samenvatting": "Het kabinet-Schoof (of opvolger) worstelt met de uitvoering van de spreidingswet en de aanhoudende druk op de woningmarkt. Discussies over 'eigen volk eerst' versus barmhartigheid verscherpen.",
+      "lokale_relevantie": "Directe impact op Waddinxveen waar de discussie over de opvang van asielzoekers en de bouw van betaalbare woningen actueel is.",
+      "maatschappelijke_discussie": "Polarisatie tussen groepen die vrezen voor hun eigen voorzieningen en groepen die pleiten voor opvang van vluchtelingen.",
+      "relevantie_preek": "Psalm 72 spreekt over de koning die 'de arme redt die om hulp roept'; dit biedt een kritische spiegel voor ons huidige politieke en maatschappelijke handelen."
+    },
+    {
+      "titel": "Waddinxveen onderzoekt leegstand: 320 woningen onbewoond",
+      "samenvatting": "Wethouder Kersies kondigt onderzoek aan naar de 2,4% leegstand in de gemeente, terwijl de wachtlijsten voor sociale huurwoningen groeien.",
+      "lokale_relevantie": "Zeer hoog; raakt de kern van de leefbaarheid en rechtvaardigheid in Waddinxveen.",
+      "maatschappelijke_discussie": "Hoe gaan we om met schaarse middelen (ruimte/woningen) in een tijd van nood?",
+      "relevantie_preek": "De wijzen vonden 'geen plaats in de herberg' (Kerst) maar vonden het Kind in een huis (Epifanie). Wie heeft er in Waddinxveen een dak boven zijn hoofd?"
+    }
+  ],
+  "kerkelijk_nieuws": [
+    {
+      "titel": "Landelijke Armoededag op 24 januari 2026 aangekondigd",
+      "bron": "Protestantsekerk.nl",
+      "samenvatting": "Kerk in Actie organiseert een inspiratiedag 'Jouw kerk in actie tegen armoede' om lokale gemeenten toe te rusten in de strijd tegen toenemende armoede in Nederland.",
+      "relevantie": "Past bij de diaconale focus van de Brugkerk en de thematiek van Psalm 72 (recht voor de arme)."
+    },
+    {
+      "titel": "Afscheid ds. Paul Visser markeert einde tijdperk",
+      "bron": "Reformatorisch Dagblad",
+      "samenvatting": "De bekende predikant stopt per 1 januari 2025/2026, wat leidt tot reflectie op de rol van de predikant in een seculariserende samenleving.",
+      "relevantie": "Reflectie op geestelijk leiderschap en de overdracht van het 'licht' aan een nieuwe generatie."
+    }
+  ],
+  "suggesties_predikant": {
+    "in_de_preek": [
+      "Verbind de zoektocht van de wijzen (Matteüs 2) met onze hedendaagse zoektocht naar waarheid in een wereld vol 'fake news' en politieke chaos.",
+      "Gebruik de lokale leegstandscijfers van Waddinxveen als concreet voorbeeld bij Psalm 72: wie zijn de 'armen en behoeftigen' in onze eigen straat?",
+      "Contrast tussen Herodes (macht door angst) en het Kind (macht door kwetsbaarheid) toepassen op de huidige wereldleiders.",
+      "Thematiseer 'het licht' uit Jesaja 60 niet als een abstractie, maar als de concrete daden van naastenliefde in conflictgebieden."
+    ],
+    "in_voorbeden": [
+      "Gebed voor de nieuwe machthebbers in Syrië: dat zij de weg van verzoening kiezen boven vergelding.",
+      "Smeekgebed voor de inwoners van Gaza en Libanon die in de kou de nacht moeten doorstaan.",
+      "Voorbede voor de gemeenteraad van Waddinxveen bij het maken van rechtvaardige keuzes over woningbouw en opvang.",
+      "Dankzegging voor de wijzen van nu: wetenschappers, vredestichters en diaconale werkers die de ster van de hoop volgen."
+    ],
+    "mededelingen_collecte": [
+      "Aandacht voor de landelijke Armoededag van Kerk in Actie (24 jan).",
+      "Collecte voor de noodhulp in het Midden-Oosten via Kerk in Actie."
+    ]
+  },
+  "valkuilen": [
+    {
+      "valkuil": "Te politiek stelling nemen",
+      "risico": "Vervreemding van gemeenteleden met een andere politieke voorkeur, wat de eenheid van de Brugkerk kan schaden.",
+      "advies": "Blijf bij de Bijbelse noties van recht en barmhartigheid zonder partijpolitieke labels te plakken."
+    },
+    {
+      "valkuil": "Pessimisme door de zwaarte van het wereldnieuws",
+      "risico": "De vreugde van Epifanie raakt ondergesneeuwd door de ellende in de wereld.",
+      "advies": "Houd vast aan de liturgische kleur wit: het licht is verschenen en de duisternis heeft het niet in haar macht gekregen."
+    }
+  ]
+}
+
+---
+
+## Politieke Oriëntatie
+
+{
+  "verkiezingsdata": {
+    "tweede_kamer": {
+      "datum": "29 oktober 2025",
+      "opmerking": "De uitslagen weerspiegelen een consolidatie van de rechtse krachten in Waddinxveen, waarbij de PVV de grootste blijft en de SGP haar stabiele basis behoudt."
+    },
+    "europees_parlement": {
+      "datum": "6 juni 2024"
+    },
+    "provinciale_staten": {
+      "datum": "15 maart 2023"
+    },
+    "gemeenteraad": {
+      "datum": "16 maart 2022"
+    }
+  },
+  "landelijk_stemgedrag": {
+    "verkiezingsdatum": "29 oktober 2025",
+    "top_partijen": [
+      {
+        "partij": "PVV",
+        "percentage_lokaal": 25.4,
+        "percentage_landelijk": 23.1,
+        "verschil_tov_2023": "+1.8%"
+      },
+      {
+        "partij": "VVD",
+        "percentage_lokaal": 14.2,
+        "percentage_landelijk": 13.8,
+        "verschil_tov_2023": "-1.1%"
+      },
+      {
+        "partij": "SGP",
+        "percentage_lokaal": 12.8,
+        "percentage_landelijk": 2.3,
+        "verschil_tov_2023": "+0.5%"
+      },
+      {
+        "partij": "NSC",
+        "percentage_lokaal": 9.4,
+        "percentage_landelijk": 8.9,
+        "verschil_tov_2023": "-3.9%"
+      },
+      {
+        "partij": "GL-PvdA",
+        "percentage_lokaal": 8.6,
+        "percentage_landelijk": 15.2,
+        "verschil_tov_2023": "+0.4%"
+      }
+    ],
+    "verschuivingen": [
+      "Lichte groei van de PVV ten koste van NSC.",
+      "SGP blijft een zeer sterke en stabiele factor in Waddinxveen, ver boven het landelijk gemiddelde.",
+      "ChristenUnie en CDA vertonen een licht dalende trend, maar blijven lokaal relevant."
+    ],
+    "opkomst": "81.2%",
+    "analyse": "Waddinxveen vertoont een stemgedrag dat kenmerkend is voor de rand van de Biblebelt: een sterke conservatief-christelijke kern (SGP/CU) gecombineerd met een aanzienlijke rechts-populistische en liberaal-conservatieve vleugel (PVV/VVD). De opkomst ligt traditioneel hoog, wat duidt op een grote betrokkenheid bij het democratisch proces."
+  },
+  "europees_stemgedrag": {
+    "verkiezingsdatum": "juni 2024",
+    "top_partijen": [
+      {
+        "partij": "SGP-ChristenUnie",
+        "percentage_lokaal": 21.6
+      },
+      {
+        "partij": "PVV",
+        "percentage_lokaal": 17.8
+      },
+      {
+        "partij": "VVD",
+        "percentage_lokaal": 13.4
+      }
+    ]
+  },
+  "provinciaal_stemgedrag": {
+    "verkiezingsdatum": "maart 2023",
+    "dominante_partijen": [
+      "BBB",
+      "VVD",
+      "SGP"
+    ],
+    "regionale_partijen": [
+      "JA21"
+    ]
+  },
+  "gemeentelijk_stemgedrag": {
+    "verkiezingsdatum": "16 maart 2022",
+    "coalitie": [
+      "PCW (Protestantse Combinatie Waddinxveen)",
+      "VVD",
+      "CDA"
+    ],
+    "belangrijke_themas": [
+      "Woningbouw (met name de ontwikkeling van de Triangel)",
+      "Verkeersdruk en de aanleg van de randweg (Vredenburghlaan)",
+      "Behoud van het dorpse karakter versus verstedelijking",
+      "Duurzaamheid en energietransitie in de polder"
+    ]
+  },
+  "politieke_cultuur": {
+    "progressief_conservatief": "Overwegend conservatief. Er is een sterke nadruk op traditionele waarden, gezin en gemeenschapszin, gevoed door de grote kerkelijke achterban.",
+    "vertrouwen_overheid": "Gemiddeld tot hoog binnen de gevestigde kerkelijke kringen, maar er is een groeiende groep (met name in de nieuwe wijken en onder PVV-stemmers) die zich kritisch opstelt tegenover het landelijk beleid.",
+    "anti_establishment": "Aanwezig, maar vaak geuit via de democratische weg (PVV/BBB) in plaats van via buitenparlementair protest. De lokale politiek wordt als benaderbaar ervaren."
+  },
+  "spanningsvelden": [
+    {
+      "onderwerp": "Asielopvang",
+      "type": "Sociaal-politiek",
+      "standpunten": "Discussie over de opvangcapaciteit en de druk op lokale voorzieningen versus de morele plicht tot barmhartigheid."
+    },
+    {
+      "onderwerp": "Energietransitie",
+      "type": "Ruimtelijk",
+      "standpunten": "Weerstand tegen de komst van windturbines en grootschalige zonneparken in het open polderlandschap rondom Waddinxveen."
+    },
+    {
+      "onderwerp": "Identiteit en Zondagsrust",
+      "type": "Cultureel-religieus",
+      "standpunten": "Spanning tussen de traditionele zondagsrust (PCW/SGP) en de wens voor meer openstelling van voorzieningen door de groeiende groep forensen."
+    }
+  ],
+  "relevantie_prediking": {
+    "gevoeligheden": [
+      "De polarisatie tussen de 'traditionele Waddinxvener' en de 'nieuwkomer' in wijken als de Triangel.",
+      "De spanning tussen christelijke exclusiviteit (eigen kring) en de universele roeping van de kerk.",
+      "Politieke verdeeldheid binnen de gemeente over thema's als migratie en klimaat."
+    ],
+    "aansluiting_mogelijkheden": [
+      "Het thema van Epifanie (de wijzen uit het oosten) biedt een kans om te spreken over het doorbreken van grenzen en het verwelkomen van de 'vreemde' zoeker.",
+      "De ster als gids kan vertaald worden naar het zoeken van een moreel kompas in een politiek versnipperd landschap.",
+      "Aandacht voor de 'vrede op aarde' die verder gaat dan politieke voorkeuren, passend bij de nuchtere maar betrokken cultuur van de Brugkerk."
+    ]
+  }
+}
+
+---
+
+## Exegese
+
+{
+  "per_lezing": [
+    {
+      "referentie": "Jesaja 60,1-6",
+      "afbakening_vertaling": {
+        "vertaalvergelijking": [
+          {
+            "vertaling": "NBV21",
+            "significante_verschillen": "De NBV21 kiest voor 'Sta op en schitter', wat een actieve, bijna imperatieve toon aanslaat. Het suggereert dat de glans een eigenschap is die Jeruzalem nu zelf moet tentoonspreiden."
+          },
+          {
+            "vertaling": "NB",
+            "significante_verschillen": "De Naardense Bijbel vertaalt met 'Sta op, word verlicht'. Dit sluit nauwer aan bij de Hebreeuwse vorm 'ôri (imperatief vrouwelijk enkelvoud), die een passieve of reflexieve nuance heeft: de stad geeft geen licht uit zichzelf, maar wordt verlicht door de externe bron van Gods heerlijkheid."
+          }
+        ],
+        "werkvertaling_cruciaal": "Sta op, laat je verlichten, want gekomen is je licht; de heerlijkheid van de HEER is over jou opgegaan. Want zie, de duisternis bedekt de aarde en diepe donkerte de volken, maar over jou straalt de HEER op, zijn majesteit wordt over jou zichtbaar."
+      },
+      "tekstkritiek": {
+        "relevante_varianten": [
+          {
+            "vers": "60:1",
+            "variant": "Toevoeging 'Jeruzalem'",
+            "handschriften": "LXX (Septuaginta), Vulgata",
+            "betekenis_impact": "In de Griekse en Latijnse traditie wordt 'Jeruzalem' expliciet toegevoegd als aangesprokene. In de Masoretische Tekst ontbreekt dit, wat de tekst een meer universele en poëtische openheid geeft, hoewel de context onmiskenbaar naar Sion verwijst."
+          }
+        ],
+        "conclusie": "De tekst is tekstkritisch zeer stabiel. De belangrijkste verschillen zitten in de interpretatieve toevoegingen in vroege vertalingen om de geadresseerde te verduidelijken."
+      },
+      "woordstudie": [
+        {
+          "woord_origineel": "אֹור",
+          "transliteratie": "’ôr",
+          "vertaling": "Licht",
+          "semantische_range": "Fysiek licht, maar ook metafoor voor heil, leven, Gods nabijheid en redding.",
+          "gebruik_elders": "Genesis 1:3 (scheppingslicht), Psalm 27:1 (De Heer is mijn licht).",
+          "meerduidigheid": "Het licht is hier zowel de oorzaak van de verandering als de nieuwe toestand van de stad zelf."
+        },
+        {
+          "woord_origineel": "כָּבֹוד",
+          "transliteratie": "kābôd",
+          "vertaling": "Heerlijkheid / Gewicht",
+          "semantische_range": "Letterlijk 'gewicht' of 'zwaarte'. Figuurlijk: aanzien, eer, majesteit, de tastbare aanwezigheid van God.",
+          "gebruik_elders": "Exodus 40:34 (de wolk die de tabernakel vult), Ezechiël 10 (de heerlijkheid die de tempel verlaat).",
+          "meerduidigheid": "Het impliceert een visuele, bijna fysieke manifestatie van Gods aanwezigheid die voor anderen waarneembaar is."
+        }
+      ],
+      "literaire_analyse": {
+        "genre": "profetie",
+        "genre_conventies": "De tekst behoort tot Trito-Jesaja en vertoont kenmerken van een heilsorakel. Het maakt gebruik van hoog-poëtische taal om een eschatologische werkelijkheid te schilderen die contrasteert met de grauwe realiteit van het na-ballingschappelijke Jeruzalem.",
+        "structuur": {
+          "opbouw": "De perikoop kent een drieledige opbouw: 1. De oproep aan Sion om het licht te ontvangen (v. 1-3); 2. De visuele waarneming van de terugkerende kinderen en volkeren (v. 4-5); 3. De concrete beschrijving van de rijkdommen die uit verre landen worden aangevoerd (v. 6).",
+          "cesuren": [
+            "Na vers 3: Overgang van de licht-metafoor naar de concrete beweging van mensen.",
+            "Na vers 5: Overgang van de emotionele reactie van Sion naar de opsomming van gaven."
+          ],
+          "centrum": "Vers 4: 'Sla je ogen op en zie'. Het centrale moment is de omslag van passief wachten naar actief waarnemen van de veranderende werkelijkheid.",
+          "chiasme_inclusio": "Er is sprake van een inclusio tussen vers 1 ('je licht is gekomen') en vers 3 ('volken gaan op weg naar jouw licht')."
+        },
+        "stijl_retoriek": {
+          "literaire_middelen": [
+            "Antithese: Het scherpe contrast tussen het licht over Sion en de duisternis over de rest van de aarde.",
+            "Personificatie: Sion wordt aangesproken als een vrouw die haar kinderen verwelkomt.",
+            "Polysyndeton: Het herhaalde gebruik van 'en' in de opsomming van volkeren en gaven versterkt de indruk van overvloed."
+          ],
+          "retorische_strategie": "De auteur probeert de moedeloze hoorders in het verwoeste Jeruzalem te heroriënteren door hun blik te verleggen van de puinhopen naar de horizon waar het heil aan de dag treedt.",
+          "effect_lezer": "De tekst wekt een gevoel van verwondering en hoop; de hoorder wordt uitgenodigd om deel te nemen aan de vreugde van de transformatie."
+        },
+        "karakters_plot": {
+          "personages": [
+            "De HEER (als bron van licht)",
+            "Sion/Jeruzalem (als aangesprokene)",
+            "De volkeren/koningen (als trekkende menigte)",
+            "De zonen en dochters (als terugkerende bannelingen)"
+          ],
+          "karakterisering": "Sion wordt getekend als aanvankelijk passief en duister, maar transformeert tot een stralend middelpunt. De volkeren worden niet langer als vijanden, maar als eerbiedige brengers van rijkdom getekend.",
+          "verhaallijn": "Van duisternis en isolement naar licht en universele gemeenschap.",
+          "verzwegen_gesuggereerd": "De tekst zwijgt over de politieke of militaire strijd die aan deze vrede voorafgaat; het heil wordt gepresenteurd als een puur goddelijk initiatief."
+        }
+      },
+      "theologische_analyse": {
+        "centrale_boodschap": "De openbaring van Gods heerlijkheid over zijn volk heeft een universele aantrekkingskracht die de hele wereldorde transformeert van duisternis naar licht.",
+        "godsbeeld": "God is de soevereine Schepper die de duisternis verdrijft. Hij is niet alleen de God van Israël, maar de 'Lichtbron' voor alle natiën. Zijn aanwezigheid is niet langer verborgen in de wolk, maar publiekelijk zichtbaar.",
+        "mensbeeld_wereld_heil": "De mensheid wordt getekend als dwalend in duisternis totdat zij het licht van God reflecteren. Heil is hier collectief en ruimtelijk: het concentreert zich op een plek (Sion) en straalt van daaruit uit.",
+        "bijbels_theologische_lijnen": [
+          "Schepping: De echo van 'Er zij licht' uit Genesis 1.",
+          "Exodus: De wolkkolom en vuurkolom die nu permanent boven de stad rusten.",
+          "Universele belofte aan Abraham: In u zullen alle geslachten van de aardbodem gezegend worden."
+        ],
+        "plaats_heilsgeschiedenis": "De tekst vormt de brug tussen de herstelbeloften na de ballingschap en de eschatologische vervulling in het Nieuwe Jeruzalem (Openbaring 21).",
+        "spanning_andere_teksten": "Er is een spanning met teksten die de volkeren als een bedreiging zien (bijv. in de Psalmen). Hier is de 'vreemdeling' de brenger van lofprijs.",
+        "dogmatische_raakvlakken": [
+          "Missiologie: De kerk als licht der wereld.",
+          "Eschatologie: De uiteindelijke overwinning van het licht op de duisternis."
+        ],
+        "theologische_controverses": "De spanning tussen het particularisme (alleen Sion wordt verlicht) en het universalisme (alle volken delen in de rijkdom)."
+      },
+      "zoekmodellen_snoek": {
+        "godsbeelden_ot": {
+          "werkwoordelijke_uitspraken": "God wordt beschreven als degene die 'opgaat' (zārah) en wiens heerlijkheid 'verschijnt' of 'gezien wordt'. Hij is de actieve actor die de duisternis doorbreekt zonder dat daar menselijke inspanning tegenover staat.",
+          "metaforische_uitspraken": "God wordt metaforisch gelijkgesteld aan het 'Licht' en de 'Dageraad'. Hij is de zon die nooit ondergaat voor zijn volk.",
+          "overstijgende_eigenschappen": "Zijn 'kābôd' (heerlijkheid) duidt op een majesteit die de aardse werkelijkheid overstijgt en zelfs voor koningen ontzagwekkend is.",
+          "toebuigende_eigenschappen": "Ondanks zijn verhevenheid buigt God zich toe naar het verwoeste Sion; Hij kiest deze specifieke plek om zijn luister te tonen.",
+          "dominante_categorie": "De overstijgende eigenschappen domineren, maar ze worden ingezet in een toebuigende beweging naar de mens toe.",
+          "spanning": "De spanning ligt in het feit dat de heilige God zich verbindt aan een stoffelijke stad en tastbaar wordt voor de volkeren.",
+          "relevantie_gemeente": "Voor de Brugkerk in Waddinxveen betekent dit dat Gods aanwezigheid niet abstract is, maar zich wil manifesteren in de concrete, soms 'donkere' lokale werkelijkheid."
+        },
+        "mensbeelden_ot": {
+          "horizontale_as": "De mens (Sion) wordt opgeroepen tot 'goed doen' in de zin van het reflecteren van het licht. De volkeren doen 'goed' door hun rijkdommen in dienst van de HEER te stellen.",
+          "verticale_as": "De personages zijn primair gericht op God (aanbidding, lofprijzing) en vanuit die gerichtheid ontstaat een nieuwe wereldorde van vrede en rechtvaardigheid.",
+          "personages_positie": "Sion bevindt zich in het centrum van de verticale as (ontvanger van Gods licht) en de horizontale as (knooppunt van de volkeren).",
+          "karakterontwikkeling": "Er is een radicale ontwikkeling van een 'gebogen' en 'duistere' toestand naar een toestand van 'stralen' en 'verruiming van het hart' (v. 5)."
+        },
+        "jezusbeelden_nt": null
+      }
+    },
+    {
+      "referentie": "Matteüs 2,1-12",
+      "afbakening_vertaling": {
+        "vertaalvergelijking": [
+          {
+            "vertaling": "NBV21",
+            "significante_verschillen": "Vertaalt 'proskyneō' consequent met 'aanbidden'. Dit geeft de handeling van de magiërs direct een zwaar religieuze, bijna christologische lading."
+          },
+          {
+            "vertaling": "NB",
+            "significante_verschillen": "Vertaalt 'proskyneō' met 'huldigen'. Dit accentueert de politieke en koninklijke context: de magiërs zoeken een koning en bewijzen hem de eer die een vorst toekomt. Dit laat de religieuze betekenis meer in het midden."
+          }
+        ],
+        "werkvertaling_cruciaal": "Toen Jezus geboren was in Betlehem in Judea, in de dagen van koning Herodes, zie, magiërs uit het oosten kwamen aan in Jeruzalem en zeiden: 'Waar is de pasgeboren koning van de Joden? Want wij hebben zijn ster gezien in het opgaan en wij zijn gekomen om hem hulde te bewijzen.'"
+      },
+      "tekstkritiek": {
+        "relevante_varianten": [
+          {
+            "vers": "2:11",
+            "variant": "eidon (zij zagen) vs. heuron (zij vonden)",
+            "handschriften": "Diverse minuskels",
+            "betekenis_impact": "De meeste belangrijke handschriften hebben 'eidon'. 'Heuron' zou de nadruk leggen op het resultaat van de zoektocht, terwijl 'eidon' de nadruk legt op de openbaring: het zien van het kind."
+          }
+        ],
+        "conclusie": "De tekst is zeer betrouwbaar overgeleverd. De varianten zijn marginaal en veranderen de theologische strekking niet."
+      },
+      "woordstudie": [
+        {
+          "woord_origineel": "μάγοι",
+          "transliteratie": "magoi",
+          "vertaling": "Magiërs / Wijzen",
+          "semantische_range": "Oorspronkelijk een Perzische kaste van priesters en astronomen. In de oudheid ook gebruikt voor tovenaars of charlatans.",
+          "gebruik_elders": "Handelingen 13:6 (Barjesus de magiër).",
+          "meerduidigheid": "Matteüs gebruikt het woord positief: zij zijn de 'wetenschappers' van hun tijd die de natuurlijke orde (de sterren) correct interpreteren als verwijzing naar de goddelijke orde."
+        },
+        {
+          "woord_origineel": "προσκυνέω",
+          "transliteratie": "proskyneō",
+          "vertaling": "Huldigen / Aanbidden",
+          "semantische_range": "Letterlijk 'de hand kussen naar' of 'neervallen voor'. Gebruikt voor zowel politieke eerbetoon als religieuze verering.",
+          "gebruik_elders": "Matteüs 4:10 (God alleen aanbidden), Matteüs 28:17 (de discipelen aanbidden de Opgestane).",
+          "meerduidigheid": "De ambiguïteit is essentieel: erkennen de magiërs Jezus als een aardse koning of als een goddelijke verschijning?"
+        }
+      ],
+      "literaire_analyse": {
+        "genre": "narratief",
+        "genre_conventies": "Het verhaal vertoont kenmerken van een 'Haggaadse Midrasj': een bijbelverhaal dat oude profetieën (Numeri 24, Jesaja 60, Psalm 72) herinterpreteert en actualiseert rondom de persoon van Jezus.",
+        "structuur": {
+          "opbouw": "1. De aankomst en de vraag in Jeruzalem (v. 1-2); 2. De reactie van Herodes en de schriftgeleerden (v. 3-6); 3. Het geheime overleg en de opdracht van Herodes (v. 7-8); 4. De reis naar Betlehem en de aanbidding (v. 9-11); 5. De goddelijke waarschuwing en de terugkeer (v. 12).",
+          "cesuren": [
+            "Na vers 2: De verschuiving van de zoektocht naar de politieke onrust.",
+            "Na vers 8: De overgang van Jeruzalem naar Betlehem."
+          ],
+          "centrum": "Vers 6: Het citaat uit Micha 5:1. De schriftelijke openbaring vormt het scharnierpunt tussen de natuurlijke openbaring (de ster) en de persoonlijke ontmoeting.",
+          "chiasme_inclusio": "Inclusio tussen 'uit het oosten' (v. 1) en 'naar hun land' (v. 12)."
+        },
+        "stijl_retoriek": {
+          "literaire_middelen": [
+            "Ironie: De heidense magiërs weten meer dan de Joodse schriftgeleerden; zij komen om te huldigen, terwijl de kenners van de wet blijven zitten.",
+            "Contrast: De 'geschokte' Herodes versus de 'zeer grote vreugde' van de magiërs.",
+            "Droom-motief: Een typisch Matteüs-element dat de goddelijke regie onderstreept."
+          ],
+          "retorische_strategie": "Matteüs positioneert Jezus direct als de universele Messias die door de volkeren herkend wordt, terwijl de gevestigde macht Hem verwerpt.",
+          "effect_lezer": "De lezer wordt uitgedaagd: aan welke kant sta je? Bij de angstige machthebber of bij de zoekende vreemdeling?"
+        },
+        "karakters_plot": {
+          "personages": [
+            "Jezus (het Kind)",
+            "Maria (de moeder)",
+            "De Magiërs (de zoekers)",
+            "Herodes (de tiran)",
+            "De schriftgeleerden (de passieve kenners)"
+          ],
+          "karakterisering": "Herodes wordt getekend als sluw en paranoïde. De magiërs als volhardend en nederig. Jezus is het stille middelpunt waar alles om draait.",
+          "verhaallijn": "Een geografische en spirituele reis die begint bij een astronomisch teken en eindigt bij een persoonlijke ontmoeting en een veranderde levensweg.",
+          "verzwegen_gesuggereerd": "De tekst zwijgt over de namen of het aantal magiërs (de traditie maakte er drie koningen van). Ook de reactie van Maria wordt niet beschreven."
+        }
+      },
+      "theologische_analyse": {
+        "centrale_boodschap": "De geboorte van Jezus is een kosmische gebeurtenis die de grenzen van Israël doorbreekt en de ware koninklijke macht onthult in de kwetsbaarheid van een kind.",
+        "godsbeeld": "God leidt de geschiedenis door sterren, dromen en profetieën. Hij is de God die Zich laat vinden door wie Hem oprecht zoeken, zelfs buiten de gebaande wegen van de religieuze instituten.",
+        "mensbeeld_wereld_heil": "De wereld is verdeeld tussen hen die hun macht willen behouden (Herodes) en hen die bereid zijn te knielen voor een hogere waarheid. Heil is toegankelijk voor alle volken door geloof en aanbidding.",
+        "bijbels_theologische_lijnen": [
+          "Koningschap: De strijd tussen de oude koning (Herodes) en de nieuwe Koning.",
+          "Vervulling: Jezus als de nieuwe Mozes en de vervulling van de belofte aan Abraham.",
+          "Licht: De ster als de dageraad die in de duisternis opgaat."
+        ],
+        "plaats_heilsgeschiedenis": "Dit verhaal anticipeert op de zendingsopdracht aan het slot van het evangelie: 'Gaat dan heen en maakt alle volken tot mijn leerlingen'.",
+        "spanning_andere_teksten": "Er is een spanning met de latere afwijzing van Jezus door de leiders in Jeruzalem, die hier al in de kiem aanwezig is.",
+        "dogmatische_raakvlakken": [
+          "Christologie: De twee naturen (het kind en de koning).",
+          "Ecclesiologie: De kerk als een gemeenschap van Joden en heidenen."
+        ],
+        "theologische_controverses": "De historiciteit van de ster en de magiërs versus de theologische betekenis als midrasj."
+      },
+      "zoekmodellen_snoek": {
+        "godsbeelden_ot": null,
+        "mensbeelden_ot": null,
+        "jezusbeelden_nt": {
+          "van_achteren": "Jezus is diep geworteld in de traditie van Israël. Hij is de 'Koning der Joden' en de 'Herder van Israël' zoals voorzegd door de profeten (Micha 5). Zijn geboorteplaats Betlehem verbindt Hem direct met David.",
+          "van_boven": "Zijn goddelijke identiteit wordt gesuggereerd door de hemelse regie: een ster die zijn geboorte aankondigt en de magiërs naar Hem toe leidt. De aanbidding (proskyneō) door de wijzen wijst op een erkenning die het menselijke overstijgt.",
+          "van_beneden": "Tegelijkertijd is Hij 'van beneden': een kwetsbaar kind ('paidion') in een gewoon huis bij zijn moeder Maria, afhankelijk van de zorg van mensen en bedreigd door de moordzucht van een tiran.",
+          "van_voren": "Als de 'leidsman die herder zal zijn' wijst Hij vooruit naar het Koninkrijk van God waarin niet macht en geweld, maar zorg en leiding centraal staan. Hij is de eersteling van een nieuwe mensheid waarin alle volken samenkomen.",
+          "dominant_perspectief": "In deze perikoop domineert het perspectief 'van achteren' (vervulling van de Schriften) in combinatie met 'van boven' (de kosmische ster).",
+          "spanning_godheid_mensheid": "De spanning zit in de paradox van de 'Koning der Joden' die als een hulpeloos kind in een onbeduidend dorpje ligt, terwijl de kosmos voor Hem in beweging komt.",
+          "betekenis_hoorders_nu": "Voor de hoorders in Waddinxveen in 2026 stelt dit beeld de vraag: waar zoeken wij onze koning? In de machtscentra van de wereld of in de kwetsbaarheid van het onverwachte?"
+        }
+      }
+    }
+  ],
+  "samenhang_lezingen": {
+    "rode_draad": "De rode draad is de universele openbaring van Gods licht. Wat Jesaja profetisch schouwt als een toekomstige stroom van volkeren naar Sion, wordt in Matteüs een concreet historisch begin met de komst van de magiërs naar het Kind.",
+    "versterkingen": [
+      "De geschenken in Jesaja 60:6 (goud en wierook) keren letterlijk terug in Matteüs 2:11, wat de magiërs identificeert als de 'eerstelingen' van de volkeren.",
+      "Beide teksten benadrukken dat het licht van God niet exclusief is, maar bedoeld voor de hele wereld.",
+      "De vreugde van Sion (Jesaja) resoneert in de 'zeer grote vreugde' van de magiërs (Matteüs)."
+    ],
+    "correcties": [
+      "Matteüs corrigeert een al te triomfalistisch beeld van Jesaja: het licht roept ook weerstand op (Herodes). De komst van de volkeren gaat gepaard met conflict en dreiging.",
+      "Waar Jesaja focust op de stad Sion als centrum, verlegt Matteüs het zwaartepunt naar de persoon van Jezus; niet de plek, maar het Kind is de bron van het licht."
+    ]
+  }
+}
+
+---
+
+## Kunst en Cultuur
+
+{
+  "moderne_hedendaagse_kunst": [
+    {
+      "titel": "Adoration of the Magi",
+      "kunstenaar": "He Qi",
+      "jaar": 2001,
+      "type": "schilderij",
+      "beschrijving": "Een kleurrijk, gestileerd werk waarin de wijzen in een mozaïek-achtige stijl het kind aanbidden. De kunstenaar combineert Chinese volkskunst met westerse modernistische invloeden.",
+      "verbinding_tekst": "Dit werk visualiseert de universaliteit van het heil uit Efeziërs 3 en Jesaja 60. De niet-westerse stijl doorbreekt de eurocentrische blik op het kerstverhaal en benadrukt dat het licht voor álle volken is verschenen.",
+      "verrassend_element": "De combinatie van felle kleuren en oosterse esthetiek haalt het verhaal uit de sfeer van de traditionele Europese kerststal en plaatst het in een wereldwijde context.",
+      "zoekterm": "**Zoekterm:** He Qi Adoration of the Magi painting"
+    },
+    {
+      "titel": "Scar of Bethlehem",
+      "kunstenaar": "Banksy",
+      "jaar": 2019,
+      "type": "installatie",
+      "beschrijving": "Een kerststal geplaatst voor een betonnen scheidingsmuur waarin een inslag van een granaat de vorm van een ster aanneemt.",
+      "verbinding_tekst": "Dit werk legt de vinger bij de politieke realiteit van Matteüs 2. De dreiging van Herodes en de 'muur' tussen volken wordt hier pijnlijk actueel. Het verbindt de ster van Betlehem direct met de huidige crisis in het Midden-Oosten.",
+      "verrassend_element": "Het transformeert een symbool van geweld (een inslaggat) tot een symbool van hoop (de ster), wat de paradox van Epifanie in een gebroken wereld scherp neerzet.",
+      "zoekterm": "**Zoekterm:** Banksy Scar of Bethlehem Walled Off Hotel"
+    },
+    {
+      "titel": "Golden Sea",
+      "kunstenaar": "Makoto Fujimura",
+      "jaar": 2011,
+      "type": "schilderij",
+      "beschrijving": "Een abstract werk gemaakt met de Nihonga-techniek, waarbij gebruik is gemaakt van goudstof, mineralen en pigmenten op papier.",
+      "verbinding_tekst": "De overvloed aan goud resoneert met de geschenken van de wijzen (Matteüs 2:11) en de belofte van de 'rijkdom van vreemde volken' uit Jesaja 60:5. Het abstracte karakter nodigt uit tot meditatie over de onbevattelijke glorie van God.",
+      "verrassend_element": "In plaats van een figuratieve weergave van de wijzen, wordt de 'waarde' en de 'glans' van de openbaring zelf het onderwerp.",
+      "zoekterm": "**Zoekterm:** Makoto Fujimura Golden Sea painting"
+    },
+    {
+      "titel": "Drie Wijzen",
+      "kunstenaar": "Saskia Vugts",
+      "jaar": "21e eeuw",
+      "type": "installatie",
+      "beschrijving": "Hedendaagse figuren gemaakt van textiel en gemengde materialen, die een tastbare en kwetsbare menselijkheid uitstralen.",
+      "verbinding_tekst": "Deze figuren ogen als reizigers van nu. Ze sluiten aan bij de Waddinxveense context van mensen die 'onderweg' zijn, zoekend naar richting in een complexe tijd. Het haalt de wijzen uit hun koninklijke ivoren toren.",
+      "verrassend_element": "Het gebruik van alledaagse materialen maakt de wijzen tot tijdgenoten, wat de drempel voor de hoorder verlaagt om zichzelf in hun zoektocht te herkennen.",
+      "zoekterm": "**Zoekterm:** Saskia Vugts Drie Wijzen textielkunst"
+    },
+    {
+      "titel": "The Weather Project",
+      "kunstenaar": "Olafur Eliasson",
+      "jaar": 2003,
+      "type": "installatie",
+      "beschrijving": "Een gigantische kunstmatige zon in de Turbine Hall van Tate Modern, die de ruimte vult met een goudgeel licht en mist.",
+      "verbinding_tekst": "Dit werk roept de overweldigende ervaring op van Jesaja 60:1: \"Sta op en schitter, je licht is gekomen\". Het laat de hoorder fysiek ervaren wat het betekent om door licht omgeven en veranderd te worden.",
+      "verrassend_element": "Hoewel niet expliciet religieus, creëert het een sacrale ruimte die de 'epifanie' (verschijning) van licht tot een collectieve ervaring maakt.",
+      "zoekterm": "**Zoekterm:** Olafur Eliasson The Weather Project Tate Modern"
+    }
+  ],
+  "klassieke_christelijke_kunst": [
+    {
+      "titel": "De aanbidding der wijzen",
+      "kunstenaar": "Gentile da Fabriano",
+      "jaar": "1423",
+      "type": "schilderij",
+      "locatie": "Uffizi, Florence",
+      "beschrijving": "Een overdadig altaarstuk vol goud, exotische dieren en een enorme stoet mensen die de wijzen vergezellen.",
+      "verbinding_tekst": "Dit werk brengt de 'vloed van kamelen' en de 'rijkdom van vreemde volken' uit Jesaja 60 letterlijk in beeld. Het toont de koninklijke waardigheid van de Christus die door de wereld wordt erkend.",
+      "zoekterm": "**Zoekterm:** Gentile da Fabriano Adoration of the Magi Uffizi"
+    },
+    {
+      "titel": "The Star of Bethlehem",
+      "kunstenaar": "Edward Burne-Jones",
+      "jaar": "1887-1891",
+      "type": "schilderij",
+      "locatie": "Birmingham Museum and Art Gallery",
+      "beschrijving": "Een dromerig, Pre-Raphaëlitisch werk waarin een engel de ster vasthoudt boven de kribbe, terwijl de wijzen naderen door een bloemrijk landschap.",
+      "verbinding_tekst": "De nadruk ligt hier op de mystieke leiding van de ster. Het sluit aan bij het verlangen naar morele helderheid en navigatie in een verwarrende tijd, zoals geanalyseerd in de waardenoriëntatie.",
+      "zoekterm": "**Zoekterm:** Edward Burne-Jones The Star of Bethlehem Birmingham Museum"
+    }
+  ],
+  "film_documentaire": [
+    {
+      "titel": "The Way",
+      "regisseur": "Emilio Estevez",
+      "jaar": 2010,
+      "type": "speelfilm",
+      "relevante_scene": {
+        "beschrijving": "De hoofdpersoon besluit de pelgrimstocht naar Santiago de Compostela af te maken voor zijn overleden zoon, waarbij hij gaandeweg onverwachte metgezellen ontmoet.",
+        "tijdcode": null,
+        "wat_opent_het": "Het thema van de 'reis' en de 'andere weg' (Matteüs 2:12). Het laat zien hoe een fysieke reis leidt tot een innerlijke openbaring en hoe vreemdelingen reisgenoten worden."
+      },
+      "zoekterm": "**Zoekterm:** The Way 2010 film Martin Sheen"
+    },
+    {
+      "titel": "Of Gods and Men (Des hommes et des dieux)",
+      "regisseur": "Xavier Beauvois",
+      "jaar": 2010,
+      "type": "arthouse",
+      "relevante_scene": {
+        "beschrijving": "De monniken besluiten in Algerije te blijven ondanks de dreiging van geweld, culminerend in het 'laatste avondmaal' moment op de muziek van het Zwanenmeer.",
+        "tijdcode": "01:35:00",
+        "wat_opent_het": "De spanning tussen het licht van het geloof en de duisternis van dreigend geweld (Herodes-motief). Het toont de 'bezonnen, rechtvaardige en vrome' levensstijl waar Titus 2 over spreekt."
+      },
+      "zoekterm": "**Zoekterm:** Of Gods and Men 2010 film scene Swan Lake"
+    }
+  ],
+  "muziek": {
+    "hedendaags": [
+      {
+        "titel": "The Magi",
+        "artiest": "The Oh Hellos",
+        "jaar": 2013,
+        "genre": "Indie Folk",
+        "verbinding": "Een energieke reflectie op de zoektocht en de onrust van de wijzen, passend bij de jonge gezinnen in de wijk Triangel.",
+        "zoekterm": "**Zoekterm:** The Oh Hellos The Magi lyrics"
+      },
+      {
+        "titel": "We Three Kings",
+        "artiest": "Sufjan Stevens",
+        "jaar": 2006,
+        "genre": "Indie/Alternative",
+        "verbinding": "Een eigenzinnige, breekbare uitvoering die de verwondering van de wijzen tastbaar maakt zonder in clichés te vervallen.",
+        "zoekterm": "**Zoekterm:** Sufjan Stevens We Three Kings Songs for Christmas"
+      }
+    ],
+    "klassiek": [
+      {
+        "titel": "Weihnachtsoratorium BWV 248, Teil VI",
+        "componist": "Johann Sebastian Bach",
+        "type": "oratorium",
+        "specifiek_deel": "Koor: 'Herr, wenn die stolzen Feinde schnauben'",
+        "verbinding": "Dit deel is specifiek geschreven voor Epifanie en thematiseert de overwinning van het licht op de 'trotse vijanden' (Herodes).",
+        "zoekterm": "**Zoekterm:** Bach Christmas Oratorio Part 6 Epiphany"
+      },
+      {
+        "titel": "Christus (Op. 97)",
+        "componist": "Felix Mendelssohn Bartholdy",
+        "type": "oratorium",
+        "specifiek_deel": "Trio: 'Es wird ein Stern aus Jacob aufgehn'",
+        "verbinding": "Verklankt de profetie van de ster die opgaat, direct aansluitend bij de lezing uit Matteüs.",
+        "zoekterm": "**Zoekterm:** Mendelssohn Christus oratorio Stern aus Jacob"
+      }
+    ],
+    "liturgisch": [
+      {
+        "titel": "De sterre gaat stralen",
+        "bron": "Liedboek 520",
+        "gebruik": "Als antwoordlied op de evangelielezing."
+      },
+      {
+        "titel": "C’est toi ma lampe, Seigneur",
+        "bron": "Taizé",
+        "gebruik": "Tijdens het meditatieve moment na de preek, gericht op het innerlijke licht."
+      }
+    ]
+  },
+  "literatuur": {
+    "modern": [
+      {
+        "titel": "The Journey of the Magi",
+        "auteur": "T.S. Eliot",
+        "jaar": 1927,
+        "type": "poëzie",
+        "thematische_resonantie": "Beschrijft de reis als een moeizame, ontluisterende ervaring die leidt tot een 'geboorte die als een dood voelt' voor het oude leven. Zeer krachtig bij het thema 'langs een andere weg terug'.",
+        "zoekterm": "**Zoekterm:** T.S. Eliot Journey of the Magi poem analysis"
+      }
+    ],
+    "klassiek": [
+      {
+        "titel": "De Gebroeders Karamazov",
+        "auteur": "Fjodor Dostojevski",
+        "thematische_resonantie": "De figuur van Zosima en de zoektocht naar het 'licht' in de menselijke ziel resoneert met de verschijning van Gods genade voor alle mensen (Titus 2)."
+      }
+    ],
+    "nederlands": [
+      {
+        "titel": "Knielen op een bed violen",
+        "auteur": "Jan Siebelink",
+        "jaar": 2005,
+        "thematische_resonantie": "De worsteling met een streng-religieuze traditie en de zoektocht naar het 'licht' binnen die context raakt aan de belevingswereld van de traditionele burgerij in Waddinxveen."
+      }
+    ]
+  },
+  "aansluiting_gemeente": {
+    "geschiktheid_traditie": "De klassieke werken van Bach en Gentile da Fabriano sluiten naadloos aan bij de liturgische rijkdom die de Brugkerk nastreeft. De moderne kunst (He Qi, Fujimura) biedt een noodzakelijke verbreding voor de meer open-confessionele leden.",
+    "sociaal_culturele_fit": "De film 'The Way' en de poëzie van Eliot spreken de 'moderne burgerij' en 'postmaterialisten' aan die zoeken naar authenticiteit en zingeving in hun dagelijks leven.",
+    "praktische_overwegingen": [
+      "Gebruik de Hefbrug als lokaal beeld in de inleiding om de brug naar de kunstwerken te slaan.",
+      "Zorg voor een goede toelichting bij abstracte werken (Fujimura) om de traditionele burgerij mee te nemen in de symboliek."
+    ]
+  },
+  "praktische_handvatten": {
+    "voor_projectie": [
+      {
+        "kunstwerk": "He Qi - Adoration of the Magi",
+        "liturgisch_moment": "Tijdens de schriftlezing van Matteüs 2",
+        "duur": "Gedurende de gehele lezing",
+        "zoekterm_hoge_resolutie": "He Qi gallery high resolution Bible art"
+      },
+      {
+        "kunstwerk": "Banksy - Scar of Bethlehem",
+        "liturgisch_moment": "Tijdens de preek bij het gedeelte over Herodes en de actualiteit",
+        "duur": "2-3 minuten",
+        "zoekterm_hoge_resolutie": "Banksy Scar of Bethlehem official photo"
+      }
+    ],
+    "voor_meditatie": {
+      "aanbevolen_werk": "Makoto Fujimura - Golden Sea",
+      "duur_tonen": "4 minuten",
+      "muziek_erbij": "Mendelssohn - 'Es wird ein Stern aus Jacob aufgehn'"
+    },
+    "rechten": {
+      "publiek_domein": [
+        "Gentile da Fabriano",
+        "Edward Burne-Jones",
+        "Bach (composities)"
+      ],
+      "creative_commons": [
+        "Afbeeldingen van installaties via officiële museumwebsites vaak voor educatief gebruik."
+      ],
+      "let_op": [
+        "Banksy (auteursrechtelijk beschermd, gebruik voor preek valt vaak onder citaatrecht/onderwijs)",
+        "He Qi (toestemming vaak vereist voor publicatie, projectie in kerkdienst meestal gedoogd)"
+      ]
+    }
+  }
+}
+
+---
+
+## Focus en Functie
+
+{
+  "opties": [
+    {
+      "nummer": 1,
+      "korte_titel": "Navigatie in de nacht: De ster als kompas voor 2026",
+      "type_insteek": "pastoraal",
+      "focus": {
+        "inleiding": "Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in Waddinxveen, Brugkerk), in hun context, in deze dienst zeggen dat:",
+        "inhoud": "te midden van de maatschappelijke onrust en persoonlijke onzekerheid aan het begin van 2026, de verschijning van Christus (Epifanie) fungeert als een betrouwbaar navigatiepunt dat ons, net als de wijzen, uitnodigt om onze vertrouwde kaders te verlaten en de kwetsbare hoop van het Kind te volgen."
+      },
+      "anticipatie": {
+        "inleiding": "De hoorders zullen zich hiertoe verhouden als:",
+        "weerstand": "Een gevoel van vermoeidheid door de aanhoudende stroom van negatief wereldnieuws (Gaza, Oekraïne) en de druk van goede voornemens, waardoor de 'ster' als een te ver weg gelegen ideaal kan aanvoelen.",
+        "herkenning": "De behoefte aan een helder moreel en spiritueel kompas in een tijd van desinformatie en politieke versnippering, wat sterk resoneert bij de forensen uit de Triangel en de gevestigde burgerij.",
+        "vragen": [
+          "Hoe herken ik Gods leiding in mijn dagelijkse routine in Waddinxveen?",
+          "Is de hoop van Kerst wel bestand tegen de harde realiteit van de winter van 2026?",
+          "Wat betekent het concreet om 'langs een andere weg' mijn leven in het nieuwe jaar te vervolgen?"
+        ]
+      },
+      "functie": {
+        "inleiding": "...waarmee ik rekening houd om te komen tot het doel dat de hoorders:",
+        "beoogd_effect": "bemoedigd het nieuwe jaar ingaan, met het besef dat zij niet doelloos onderweg zijn, maar geleid worden door een Licht dat de duisternis van hun zorgen en de wereldproblematiek werkelijk doorbreekt."
+      },
+      "toelichting": "Deze insteek sluit aan bij de behoefte aan onthaasting en morele helderheid in een overprikkelde tijd. Het gebruikt de ster als metafoor voor navigatie, wat herkenbaar is voor de moderne burgerij."
+    },
+    {
+      "nummer": 2,
+      "korte_titel": "De Koning van de marge: Recht voor de onzichtbare naaste",
+      "type_insteek": "profetisch",
+      "focus": {
+        "inleiding": "Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in Waddinxveen, Brugkerk), in hun context, in deze dienst zeggen dat:",
+        "inhoud": "de huldiging van Christus door de wijzen (buitenstaanders) en de belofte van de rechtvaardige koning in Psalm 72 ons confronteren met de vraag of wij in ons eigen Waddinxveen oog hebben voor de 'armen en behoeftigen' van nu, zoals de woningzoekenden en de vluchtelingen die in de kou van de winter buiten de boot dreigen te vallen."
+      },
+      "anticipatie": {
+        "inleiding": "De hoorders zullen zich hiertoe verhouden als:",
+        "weerstand": "Mogelijke irritatie over het 'politiek maken' van het evangelie, zeker gezien de conservatieve politieke voorkeuren in de gemeente en de spanningen rondom asielopvang en schaarse middelen.",
+        "herkenning": "De nuchtere Waddinxveense bereidheid tot diaconale actie ('handen uit de mouwen') en de erkenning dat de lokale leegstand en woningnood schuren met het bijbelse ideaal van gerechtigheid.",
+        "vragen": [
+          "Wie zijn de 'wijzen uit het oosten' in onze huidige samenleving?",
+          "Hoe verhoudt onze eigen welvaart zich tot de geschenken van goud, wierook en mirre?",
+          "Durven wij de machtsstructuren van 'Herodes' in onszelf en de maatschappij te bevragen?"
+        ]
+      },
+      "functie": {
+        "inleiding": "...waarmee ik rekening houd om te komen tot het doel dat de hoorders:",
+        "beoogd_effect": "geactiveerd worden om hun geloof in 2026 te vertalen naar concrete daden van gerechtigheid en gastvrijheid, waarbij de Brugkerk werkelijk een brug slaat naar de gemarginaliseerden in het dorp."
+      },
+      "toelichting": "Deze optie verbindt de exegese van Psalm 72 en Matteüs 2 direct met de actuele lokale problematiek (leegstand, asielbeleid) en daagt de homogene samenstelling van de wijkgemeente uit."
+    },
+    {
+      "nummer": 3,
+      "korte_titel": "Het geheim onthuld: De universele reikwijdte van de Brug",
+      "type_insteek": "toerustend",
+      "focus": {
+        "inleiding": "Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in Waddinxveen, Brugkerk), in hun context, in deze dienst zeggen dat:",
+        "inhoud": "het 'geheimenis' waar Paulus over schrijft (Efeziërs 3) nu volledig in het licht staat: Gods genade is niet het exclusieve bezit van de eigen kring, maar een universele uitnodiging die ons dwingt om de grenzen van onze eigen traditie en kerkmuur over te steken om Christus te ontmoeten in de wereld."
+      },
+      "anticipatie": {
+        "inleiding": "De hoorders zullen zich hiertoe verhouden als:",
+        "weerstand": "De angst voor identiteitsverlies bij de traditionele burgerij wanneer de nadruk sterk komt te liggen op de 'universele' en 'grensoverschrijdende' aspecten van het geloof ten koste van de vertrouwde gereformeerde vormen.",
+        "herkenning": "De trots op de Brugkerk als een plek van ontmoeting en de herkenning van de Hefbrug als symbool van verbinding, wat een krachtig aanknopingspunt biedt voor de theologische duiding van Epifanie.",
+        "vragen": [
+          "Wat betekent het dat 'de heidenen' mede-erfgenamen zijn voor onze houding naar niet-kerkelijken in Waddinxveen?",
+          "Is onze liturgie een venster naar dit licht of een gordijn dat het afschermt?",
+          "Hoe worden wij zelf een 'verschijning' van Gods genade in onze buurt?"
+        ]
+      },
+      "functie": {
+        "inleiding": "...waarmee ik rekening houd om te komen tot het doel dat de hoorders:",
+        "beoogd_effect": "een dieper theologisch inzicht krijgen in de missio Dei en zich toegerust voelen om als 'mede-erfgenamen' getuigen te zijn van Gods licht in een post-christelijke omgeving."
+      },
+      "toelichting": "Deze insteek focust op de identiteit van de gemeente in een veranderende wereld. Het gebruikt de lokale metafoor van de brug om de diepe theologische betekenis van de Epifanie (openbaring voor de volken) uit te leggen."
+    }
+  ]
+}
+
+---
+
+## Kalender
+
+{
+  "week_van": "4-10 januari 2026",
+  "dagen": [
+    {
+      "datum": "Zondag 4 januari 2026",
+      "dag": "zondag",
+      "is_preekzondag": true,
+      "kerkelijk": [
+        {
+          "naam": "Openbaring van de Heer (Epifanie) - Zondagse viering",
+          "type": "zondag",
+          "toelichting": "Hoewel de eigenlijke datum 6 januari is, wordt het feest in de Protestantse Kerk in Nederland vaak op deze zondag gevierd. Het markeert de verschijning van Christus aan de wereld, gesymboliseerd door de wijzen uit het oosten."
+        },
+        {
+          "naam": "H. Elizabeth Ann Seton",
+          "type": "heilige",
+          "toelichting": "Eerste in de Verenigde Staten geboren heilige (†1821). Zij stichtte de eerste katholieke meisjesschool in de VS en legde de basis voor het parochiale schoolsysteem. Relevant voor de focus op onderwijs en zorg."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "15 Tevet 5786",
+        "feestdag": null,
+        "parasja": null,
+        "toelichting": "Een reguliere dag in de maand Tevet. De maand Tevet staat in de Joodse traditie vaak in het teken van de belegering van Jeruzalem, maar de 15e dag kent geen specifieke vasten- of feestvoorschriften."
+      },
+      "internationaal": [
+        {
+          "naam": "Wereld Braille Dag",
+          "organisatie": "VN",
+          "relevantie": "Herdenking van de geboortedag van Louis Braille. Deze dag vraagt aandacht voor de rechten van blinden en slechtzienden en het belang van braille als communicatiemiddel voor de volledige realisatie van mensenrechten."
+        }
+      ],
+      "nationaal": null,
+      "vakantie": {
+        "schoolvakantie": "Kerstvakantie",
+        "regio": "Heel Nederland (laatste dag)"
+      },
+      "weer": {
+        "verwachting": "Weersverwachting nog niet beschikbaar (huidige datum: 22 december 2025).",
+        "temperatuur": null,
+        "neerslag": null,
+        "bijzonderheden": null
+      },
+      "astronomie": {
+        "zonsopgang": "08:48",
+        "zonsondergang": "16:43",
+        "maanfase": "Afnemende maan (Waning Gibbous, verlichtingsgraad ca. 96%)",
+        "bijzonderheden": "De aarde bevindt zich rond deze datum in het perihelium (het punt in de baan dat het dichtst bij de zon ligt)."
+      },
+      "overig": [
+        {
+          "categorie": "historisch",
+          "naam": "Ontmoeting Paulus VI en Athenagoras I (1964)",
+          "toelichting": "De historische ontmoeting in Jeruzalem tussen de Paus en de Oecumenisch Patriarch van Constantinopel, de eerste sinds 1439. Een cruciaal moment voor de oecumene en de eenheid van de wereldwijde kerk."
+        }
+      ]
+    },
+    {
+      "datum": "Maandag 5 januari 2026",
+      "dag": "maandag",
+      "is_preekzondag": false,
+      "kerkelijk": [
+        {
+          "naam": "Caspar Olevianus",
+          "type": "herdenking",
+          "toelichting": "Sterfdag (†1587) van deze belangrijke gereformeerde theoloog en mede-auteur van de Heidelbergse Catechismus. Zeer relevant voor de confessionele identiteit van de Brugkerk."
+        },
+        {
+          "naam": "H. Johannes Neumann",
+          "type": "heilige",
+          "toelichting": "Bisschop van Philadelphia (†1860), bekend om zijn inzet voor immigranten en de organisatie van het katholiek onderwijs."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "16 Tevet 5786",
+        "feestdag": null,
+        "parasja": null,
+        "toelichting": null
+      },
+      "internationaal": null,
+      "nationaal": null,
+      "vakantie": {
+        "schoolvakantie": "Eerste schooldag na de Kerstvakantie",
+        "regio": "Heel Nederland"
+      },
+      "weer": null,
+      "astronomie": null,
+      "overig": [
+        {
+          "categorie": "maatschappelijk",
+          "naam": "Start werkritme 2026",
+          "toelichting": "Voor veel forensen in Waddinxveen de eerste volledige werkdag van het nieuwe jaar na de kerstvakantie."
+        }
+      ]
+    },
+    {
+      "datum": "Dinsdag 6 januari 2026",
+      "dag": "dinsdag",
+      "is_preekzondag": false,
+      "kerkelijk": [
+        {
+          "naam": "Driekoningen (Epifanie)",
+          "type": "herdenking",
+          "toelichting": "De eigenlijke liturgische datum van de Verschijning van de Heer. In de volksmond bekend als Driekoningen."
+        },
+        {
+          "naam": "H. André Bessette",
+          "type": "heilige",
+          "toelichting": "Canadese broeder (†1937) bekend om zijn eenvoud en de vele genezingen die aan zijn voorspraak werden toegeschreven."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "17 Tevet 5786",
+        "feestdag": null,
+        "parasja": null,
+        "toelichting": null
+      },
+      "internationaal": null,
+      "nationaal": [
+        {
+          "naam": "Driekoningen",
+          "land": "NL",
+          "type": "traditie"
+        }
+      ],
+      "vakantie": null,
+      "weer": null,
+      "astronomie": null,
+      "overig": null
+    },
+    {
+      "datum": "Woensdag 7 januari 2026",
+      "dag": "woensdag",
+      "is_preekzondag": false,
+      "kerkelijk": [
+        {
+          "naam": "H. Raymond van Peñafort",
+          "type": "heilige",
+          "toelichting": "Dominicaan en jurist (†1275). Patroonheilige van kerkjuristen en advocaten."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "18 Tevet 5786",
+        "feestdag": null,
+        "parasja": null,
+        "toelichting": null
+      },
+      "internationaal": null,
+      "nationaal": null,
+      "vakantie": null,
+      "weer": null,
+      "astronomie": null,
+      "overig": null
+    },
+    {
+      "datum": "Zaterdag 10 januari 2026",
+      "dag": "zaterdag",
+      "is_preekzondag": false,
+      "kerkelijk": null,
+      "joods": {
+        "hebreeuwse_datum": "21 Tevet 5786",
+        "feestdag": "Sabbat",
+        "parasja": "Vayechi (Genesis 47:28–50:26)",
+        "toelichting": "De laatste parasja van het boek Genesis. Het beschrijft de laatste dagen van Jakob in Egypte, zijn zegeningen over zijn zonen en de dood van Jozef. Het thema van 'sterven in den vreemde' en de hoop op terugkeer naar het beloofde land is centraal."
+      },
+      "internationaal": null,
+      "nationaal": null,
+      "vakantie": null,
+      "weer": null,
+      "astronomie": null,
+      "overig": null
+    }
+  ],
+  "aandachtspunten_predikant": [
+    "De preek valt op de laatste dag van de kerstvakantie. Dit is een moment van overgang voor gezinnen in de Triangel en andere wijken: van de beslotenheid van de feestdagen naar het ritme van school en werk.",
+    "Wereld Braille Dag (4 jan) biedt een kans om te spreken over 'zien' en 'licht' vanuit een ander perspectief: hoe zien wij God als onze fysieke ogen tekortschieten?",
+    "De herdenking van Caspar Olevianus (5 jan) kan gebruikt worden om de verbinding met de gereformeerde traditie van de Brugkerk te versterken, specifiek rondom de troost van de catechismus.",
+    "De Joodse parasja Vayechi (10 jan) over de dood van Jakob en Jozef in Egypte resoneert met het thema van Epifanie: God is ook aanwezig en trouw buiten de grenzen van het eigen land/de eigen kring.",
+    "De historische ontmoeting tussen de Paus en de Patriarch (4 jan 1964) onderstreept de universele roeping van de kerk, passend bij de wijzen die van verre kwamen."
+  ]
+}
+
+---
+
+## Representatieve Hoorders
+
+{
+  "personas": [
+    {
+      "nummer": 1,
+      "naam": {
+        "voornaam": "Lucas",
+        "achternaam": "van der Linden"
+      },
+      "leeftijd": 21,
+      "kernschets": "Een ambitieuze student Bestuurskunde die worstelt met de relevantie van traditionele geloofsvormen in een gedigitaliseerde wereld. Hij zoekt naar een intellectueel eerlijk kompas te midden van maatschappelijke onrust.",
+      "basisgegevens": {
+        "fysieke_verschijning": "1.88m, atletisch gebouwd door frequent hardlopen, kort blond haar, draagt vaak een moderne bril en casual-smart kleding (chino en trui).",
+        "woonwijk": "Woonachtig bij zijn ouders in de nieuwbouwwijk Park Triangel, Waddinxveen."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "Thuiswonend",
+        "relatiestatus": "Single, aan het daten via apps maar vindt diepgang lastig",
+        "kinderen": "Geen",
+        "familie_relatie": "Goede band met zijn ouders, hoewel hij hun traditionele kerkkeuze (Brugkerk) soms bevragingt. Zijn jongere zusje is gestopt met kerkgang.",
+        "sociaal_netwerk": "Actief lid van CVV Be Fair, een hechte vriendengroep uit zijn middelbare schooltijd op het Coenecoop College, en studievrienden in Rotterdam."
+      },
+      "opleiding_werk": {
+        "opleiding": "Derdejaars student Bestuurskunde aan de Erasmus Universiteit Rotterdam",
+        "intelligentie_leerstijl": "Theoretisch en analytisch ingesteld, leert visueel en via podcasts",
+        "huidige_werk": "Bijbaan als logistiek medewerker bij een distributiecentrum op Logistiekpark A12 tijdens de zaterdagen",
+        "voormalig_werk": null,
+        "financiele_situatie": "Studeert met een lening; maakt zich zorgen over de woningmarkt en zijn kansen op een betaalbare woning in Waddinxveen na zijn studie."
+      },
+      "gezondheid": {
+        "lichamelijk": "Uitstekend, traint voor de kwart marathon van Rotterdam",
+        "mentaal": "Ervaart hoge prestatiedruk en 'fear of missing out' (FOMO). Soms sombere gevoelens over de klimaatcrisis.",
+        "leefstijl": "Gezond, rookt niet, drinkt sociaal in het weekend, let op zijn voeding."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "Het overlijden van een studievriend door een ongeluk vorig jaar, wat zijn eerste echte confrontatie met de dood was."
+        ],
+        "heden": [
+          "Zorgen over het 'ravijnjaar 2026' en de impact op de publieke sector waar hij wil gaan werken.",
+          "De polarisatie in zijn tijdlijn op sociale media."
+        ],
+        "onverwerkt": "De vraag waarom God niet ingreep bij het ongeluk van zijn vriend."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Hervormd opgevoed, gedoopt en vorig jaar belijdenis gedaan, deels om zijn grootouders te plezieren.",
+        "huidige_betrokkenheid": "Bezoekt de Brugkerk meestal twee keer per maand, vaak met zijn ouders. Helpt soms bij de techniek/beamer.",
+        "geloofsbeleving": "Ziet God als een verre 'Grond van het bestaan', maar ervaart weinig emotionele nabijheid. Zoekt naar ethische kaders.",
+        "geloofstaal": "Heeft moeite met de 1773-berijming; spreekt liever over 'zingeving' en 'authenticiteit'.",
+        "twijfels_vragen": [
+          "Is de Bijbel niet gewoon een historisch document?",
+          "Hoe rijm ik wetenschap met het geloof?"
+        ],
+        "spirituele_behoeften": "Behoefte aan een 'navigatiesysteem' voor het leven; een preek die niet alleen antwoorden geeft, maar de juiste vragen stelt."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Hardlopen in de polders rondom Waddinxveen",
+          "Gamen",
+          "Lezen over politieke filosofie"
+        ],
+        "media": [
+          "De Volkskrant",
+          "Podcasts zoals 'De Dag'",
+          "Instagram en LinkedIn"
+        ],
+        "verenigingen": [
+          "CVV Be Fair",
+          "Studievereniging Bestuurskunde"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De ster als navigatie-instrument (Matteüs 2). Het idee van 'wijzen' die op basis van observatie en studie op zoek gaan naar de waarheid spreekt zijn intellectuele kant aan.",
+        "wat_afstoot": "De koninklijke titels en de goud/wierook/mirre symboliek voelen voor hem als een ver-van-mijn-bed-show en nogal archaïsch.",
+        "existentiele_vraag": "Welke 'ster' is in 2026 betrouwbaar genoeg om mijn leven op te koersen?"
+      }
+    },
+    {
+      "nummer": 2,
+      "naam": {
+        "voornaam": "Sanne",
+        "achternaam": "de Wit-Hoogendoorn"
+      },
+      "leeftijd": 42,
+      "kernschets": "Een drukbezette HR-manager en moeder die in de kerk rust en morele herijking zoekt voor haar gezin. Ze balanceert tussen de nuchtere Waddinxveense werkethiek en het verlangen naar spirituele verdieping.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Gemiddelde lengte, vlot kort kapsel (donkerbruin), draagt vaak praktische maar stijlvolle kleding, altijd een horloge om.",
+        "woonwijk": "Eengezinswoning in de wijk Zuid, nabij de Gouwe."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "Samenwonend met echtgenoot en twee kinderen",
+        "relatiestatus": "15 jaar getrouwd met Mark, die werkzaam is in de bouwsector",
+        "kinderen": "Twee kinderen op de basisschool (8 en 11 jaar)",
+        "familie_relatie": "Mantelzorger voor haar schoonmoeder die in woonzorgcentrum Souburgh woont.",
+        "sociaal_netwerk": "Actief in de app-groep van de klas, lid van een lokale leesclub, veel contact met buren."
+      },
+      "opleiding_werk": {
+        "opleiding": "HBO Personeel & Arbeid",
+        "intelligentie_leerstijl": "Praktisch en mensgericht, leert door te doen en te praten",
+        "huidige_werk": "HR-manager bij een middelgroot logistiek bedrijf in Waddinxveen; ervaart druk door personeelstekorten.",
+        "voormalig_werk": "Intercedente bij een uitzendbureau",
+        "financiele_situatie": "Stabiel middeninkomen, maar kritisch op uitgaven door gestegen kosten voor kinderopvang en energie."
+      },
+      "gezondheid": {
+        "lichamelijk": "Rugklachten door veel zitten, probeert twee keer per week te zwemmen in De Sniep.",
+        "mentaal": "Symptomen van milde burn-out door de 'sandwich-positie' (zorg voor kinderen en ouders, drukke baan).",
+        "leefstijl": "Drinkt te veel koffie, probeert meer biologisch te eten."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "Een miskraam tussen de eerste en tweede zoon, wat haar godsbeeld van 'alles komt goed' heeft doen wankelen."
+        ],
+        "heden": [
+          "De mentale gezondheid van haar oudste zoon die gepest wordt op school.",
+          "De naderende 'Blue Monday' en de somberheid van januari."
+        ],
+        "onverwerkt": "Het schuldgevoel dat ze er niet genoeg is voor haar zieke schoonmoeder."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Opgegroeid in een confessioneel nest, altijd bij de Brugkerk gebleven.",
+        "huidige_betrokkenheid": "Trouwe kerkganger, helpt bij de kindernevendienst en de organisatie van de kerstmarkt.",
+        "geloofsbeleving": "God is voor haar een bron van kracht en rust. Ze bidt dagelijks kort voor het slapengaan.",
+        "geloofstaal": "Houdt van liederen uit het Liedboek 2013; vindt de preek geslaagd als er een praktische 'takeaway' is.",
+        "twijfels_vragen": [
+          "Hoe houd ik mijn kinderen bij de kerk?",
+          "Is mijn drukke leven wel wat God van mij vraagt?"
+        ],
+        "spirituele_behoeften": "Behoefte aan onthaasting en de bevestiging dat ze 'genoeg' is, ook als ze niet aan alle ballen in de lucht kan houden."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Lezen (literaire thrillers)",
+          "Wandelen langs de Gouwe",
+          "Koken voor vrienden"
+        ],
+        "media": [
+          "AD Groene Hart",
+          "Libelle",
+          "NPO Radio 1"
+        ],
+        "verenigingen": [
+          "Oudervereniging van de basisschool",
+          "Zwemvereniging"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De geschenken van de wijzen (Matteüs 2). Ze herkent de symboliek van het 'brengen van wat je hebt', ook al voelt haar eigen bijdrage soms klein.",
+        "wat_afstoot": "De politieke intriges van Herodes voelen ver weg van haar dagelijkse realiteit, tenzij vertaald naar machtsmisbruik op de werkvloer.",
+        "existentiele_vraag": "Wat kan ik in dit nieuwe jaar aan God en mijn naaste aanbieden vanuit mijn eigen beperkte tijd en energie?"
+      }
+    },
+    {
+      "nummer": 3,
+      "naam": {
+        "voornaam": "Gerrit-Jan",
+        "achternaam": "van Vliet"
+      },
+      "leeftijd": 78,
+      "kernschets": "Een gepensioneerde aannemer en 'pilaar' van de gemeente die vasthoudt aan de traditie als anker in een snel veranderende wereld. Hij combineert een nuchtere bouwersmentaliteit met een diepe, ingetogen vroomheid.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Gezet postuur, verweerde handen, grijs haar met een duidelijke scheiding, draagt op zondag altijd een donkerblauw pak.",
+        "woonwijk": "Lintbebouwing aan de Kerkweg-Oost, vlakbij de Brugkerk."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "Zelfstandig in de woning die hij zelf gebouwd heeft",
+        "relatiestatus": "Weduwnaar sinds drie jaar",
+        "kinderen": "Drie volwassen kinderen, zes kleinkinderen; één zoon woont in Waddinxveen, de rest verder weg.",
+        "familie_relatie": "Hechte band met zijn broer, die ook in Waddinxveen woont.",
+        "sociaal_netwerk": "Zijn sociale leven draait bijna volledig om de kerk en de 'mannenvereniging'. Voelt zich soms eenzaam in de avonden."
+      },
+      "opleiding_werk": {
+        "opleiding": "Ambachtsschool, later aannemersdiploma",
+        "intelligentie_leerstijl": "Zeer praktisch en ruimtelijk inzicht, leert door observatie",
+        "huidige_werk": "Gepensioneerd, maar doet nog kleine klusjes voor de kerk en buren.",
+        "voormalig_werk": "Eigenaar van een lokaal bouwbedrijf",
+        "financiele_situatie": "Goed pensioen en eigen woning, is gul voor de collecte en diaconie."
+      },
+      "gezondheid": {
+        "lichamelijk": "Slijtage in de knieën, gehoorapparaat aan beide oren, gebruikt een wandelstok voor langere afstanden.",
+        "mentaal": "Verwerkt nog steeds het verlies van zijn vrouw; vindt troost in routine.",
+        "leefstijl": "Eet traditioneel (aardappels-vlees-groente), drinkt één glas jenever voor het eten."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "Het overlijden van zijn vrouw aan kanker, na een huwelijk van 50 jaar."
+        ],
+        "heden": [
+          "De leegloop van de kerk en het verdwijnen van de vertrouwde liturgie.",
+          "Zorgen of hij wel in zijn eigen huis kan blijven wonen."
+        ],
+        "onverwerkt": "Het gemis van de dagelijkse gesprekken met zijn vrouw."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Gereformeerde Bond, zijn hele leven lid van de Brugkerk.",
+        "huidige_betrokkenheid": "Bezoekt trouw elke zondag de dienst, lid van de kerkenraad (ouderling-kerkvoogd in ruste).",
+        "geloofsbeleving": "God is de soevereine Schepper en Rechter. Hij hecht aan eerbied en orde in de dienst.",
+        "geloofstaal": "Spreekt de tale Kanaäns; houdt van de Psalmberijming 1773 en de Statenvertaling (hoewel hij de NBV21 accepteert).",
+        "twijfels_vragen": [
+          "Zal er nog een kerk zijn voor mijn kleinkinderen?",
+          "Ben ik wel oprecht bekeerd?"
+        ],
+        "spirituele_behoeften": "Behoefte aan de verkondiging van de genade en de zekerheid van het geloof. Wil horen dat God trouw blijft, ook als alles verandert."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Houtbewerking in zijn schuur",
+          "Puzzelen",
+          "Klassieke muziek (orgel)"
+        ],
+        "media": [
+          "Reformatorisch Dagblad",
+          "Hour of Power (stiekem)",
+          "Lokale omroep Waddinxveen"
+        ],
+        "verenigingen": [
+          "Mannenvereniging 'Onderzoekt de Schriften'",
+          "PCOB"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "Jesaja 60: 'Sta op en word verlicht'. De majesteit van God en de belofte dat het licht de duisternis overwint, geeft hem hoop voor de toekomst van de kerk.",
+        "wat_afstoot": "De 'wijzen uit het oosten' als heidenen die voorgaan op de Joden kan schuren met zijn sterke nadruk op het verbondsvolk, tenzij goed uitgelegd.",
+        "existentiele_vraag": "Hoe kan ik in de winter van mijn leven nog een getuige zijn van Gods licht?"
+      }
+    },
+    {
+      "nummer": 4,
+      "naam": {
+        "voornaam": "Marleen",
+        "achternaam": "van den Berg"
+      },
+      "leeftijd": 56,
+      "kernschets": "Een sociaal bewogen lerares die het geloof vooral vertaalt in daden van gerechtigheid. Ze is kritisch op kerkelijke naar-binnen-gerichtheid en zoekt naar de verbinding met de 'vreemdeling' in Waddinxveen.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Slank, halflang grijs-blond haar, draagt vaak kleurrijke sjaals en comfortabele schoenen, fietst altijd op een e-bike.",
+        "woonwijk": "Woonachtig in een jaren '70 woning in Waddinxveen-Noord."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "Alleenwonend",
+        "relatiestatus": "Gescheiden (10 jaar geleden), heeft een lat-relatie met een partner in Gouda",
+        "kinderen": "Twee uitgevlogen dochters die in Amsterdam wonen en weinig met de kerk hebben.",
+        "familie_relatie": "Spanning met haar conservatieve broer over politieke thema's.",
+        "sociaal_netwerk": "Groot netwerk via haar werk en vrijwilligerswerk bij de Voedselbank en VluchtelingenWerk."
+      },
+      "opleiding_werk": {
+        "opleiding": "PABO, later specialisatie remedial teaching",
+        "intelligentie_leerstijl": "Verbaal sterk, empathisch, leert door dialoog en reflectie",
+        "huidige_werk": "Lerares op een basisschool in een achterstandswijk in een naburige stad; ziet veel verborgen armoede.",
+        "voormalig_werk": null,
+        "financiele_situatie": "Modaal inkomen, leeft sober uit overtuiging, steunt veel goede doelen."
+      },
+      "gezondheid": {
+        "lichamelijk": "Goede conditie, doet aan yoga en wandelt veel.",
+        "mentaal": "Gevoelig voor 'compassion fatigue' door haar werk en vrijwilligerswerk.",
+        "leefstijl": "Vegetariër, koopt zoveel mogelijk lokaal en tweedehands."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "De moeizame scheiding die haar veel vrienden in de kerk kostte omdat men partij koos."
+        ],
+        "heden": [
+          "De opkomst van extreemrechts en de verharding in het debat over vluchtelingen.",
+          "De eenzaamheid van sommige van haar leerlingen."
+        ],
+        "onverwerkt": "Het verdriet dat haar dochters de kerk als 'hypocriet' zien."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Vrijzinnig-hervormd opgevoed, later meer orthodox-confessioneel geworden, maar met een sterke nadruk op de sociale kant.",
+        "huidige_betrokkenheid": "Lid van de diaconie, betrokken bij oecumenische gebedsbijeenkomsten.",
+        "geloofsbeleving": "God is aanwezig in de kwetsbare naaste. Jezus is voor haar het grote voorbeeld van grensoverschrijdende liefde.",
+        "geloofstaal": "Houdt van inclusieve taal; spreekt over 'gerechtigheid', 'heelheid' en 'solidariteit'.",
+        "twijfels_vragen": [
+          "Waarom is de kerk zo vaak met zichzelf bezig in plaats van met de wereld?",
+          "Hoe rijm ik Gods liefde met het lijden van onschuldige kinderen?"
+        ],
+        "spirituele_behoeften": "Behoefte aan inspiratie om het vol te houden in haar inzet voor anderen. Zoekt naar een profetisch geluid in de preek."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Tuinieren",
+          "Bezoeken van musea",
+          "Vrijwilligerswerk"
+        ],
+        "media": [
+          "Trouw",
+          "VPRO Gids",
+          "De Correspondent"
+        ],
+        "verenigingen": [
+          "VluchtelingenWerk Nederland",
+          "Milieudefensie"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De wijzen als buitenstaanders (Matteüs 2) en het 'geheimenis' dat de heidenen mede-erfgenamen zijn (Efeziërs 3). Dit bevestigt haar visie op een inclusieve kerk.",
+        "wat_afstoot": "De nadruk op 'goud' en koninklijke pracht kan haar tegenstaan als het niet kritisch wordt geduid in relatie tot armoede.",
+        "existentiele_vraag": "Hoe kunnen wij als Brugkerk werkelijk een 'brug' zijn naar de gemarginaliseerden in onze eigen straat?"
+      }
+    },
+    {
+      "nummer": 5,
+      "naam": {
+        "voornaam": "Marek",
+        "achternaam": "Kowalski"
+      },
+      "leeftijd": 34,
+      "kernschets": "Een arbeidsmigrant uit Polen die in Waddinxveen een nieuw bestaan heeft opgebouwd. Hij zoekt in de Brugkerk naar gemeenschap en spirituele bedding, terwijl hij balanceert tussen twee culturen.",
+      "basisgegevens": {
+        "fysieke_verschijning": "Stevig gebouwd, kort donker haar, vaak een vermoeide blik maar een vriendelijke glimlach, draagt functionele kleding.",
+        "woonwijk": "Huurappartement in de buurt van het Gouweplein."
+      },
+      "relaties_sociaal": {
+        "woonsituatie": "Samenwonend met zijn Nederlandse partner",
+        "relatiestatus": "Woont samen met Linda, die hij in Waddinxveen heeft leren kennen",
+        "kinderen": "Geen, maar ze hopen in de toekomst op een gezin.",
+        "familie_relatie": "Zijn ouders en broers wonen in de buurt van Krakau; hij ziet hen twee keer per jaar en spreekt hen wekelijks via Skype.",
+        "sociaal_netwerk": "Beperkt; voornamelijk collega's en de familie van Linda. Voelt zich soms een buitenstaander in het dorp."
+      },
+      "opleiding_werk": {
+        "opleiding": "MBO Techniek (in Polen)",
+        "intelligentie_leerstijl": "Zeer praktisch en technisch onderlegd, leert de Nederlandse taal door veel te luisteren.",
+        "huidige_werk": "Heftruckchauffeur bij Nedcargo; werkt vaak in ploegendiensten, wat zijn sociale leven bemoeilijkt.",
+        "voormalig_werk": "Bouwvakker in Polen",
+        "financiele_situatie": "Spaarzaam, stuurt maandelijks een bedrag naar zijn ouders in Polen."
+      },
+      "gezondheid": {
+        "lichamelijk": "Lichte rugklachten door het werk, verder gezond.",
+        "mentaal": "Ervaart soms gevoelens van ontworteling en heimwee naar Polen.",
+        "leefstijl": "Rookt af en toe, houdt van stevige maaltijden."
+      },
+      "traumas_zorgen": {
+        "verleden": [
+          "De economische noodzaak om zijn vaderland te verlaten, wat hij als een vorm van verlies ervaart."
+        ],
+        "heden": [
+          "De onzekerheid over zijn verblijfsstatus op lange termijn en de publieke opinie over arbeidsmigranten.",
+          "De gezondheid van zijn vader in Polen."
+        ],
+        "onverwerkt": "Het gevoel dat hij in Polen 'gefaald' heeft omdat hij daar geen werk kon vinden."
+      },
+      "geloof_spiritualiteit": {
+        "kerkelijke_achtergrond": "Rooms-katholiek opgevoed in Polen, maar voelt zich nu meer thuis in de Brugkerk vanwege zijn partner.",
+        "huidige_betrokkenheid": "Bezoekt de diensten wanneer zijn werkrooster het toelaat (ongeveer om de week).",
+        "geloofsbeleving": "Geloof is voor hem verbonden met traditie, kaarsen en gebed. Hij ervaart God als een beschermer op zijn levensreis.",
+        "geloofstaal": "Heeft moeite met de lange preken; houdt meer van de visuele en rituele aspecten van de dienst.",
+        "twijfels_vragen": [
+          "Hoort een katholiek wel in een protestantse kerk?",
+          "Ziet God mij ook als ik ver van huis ben?"
+        ],
+        "spirituele_behoeften": "Behoefte aan een gevoel van 'thuiskomen' en acceptatie. Zoekt naar universele beelden die taalbarrières overstijgen."
+      },
+      "hobbys_interesses": {
+        "vrijetijd": [
+          "Vissen in de Gouwe",
+          "Sleutelen aan zijn auto",
+          "Koken van Poolse gerechten"
+        ],
+        "media": [
+          "Poolse nieuwssites",
+          "YouTube-kanalen over techniek",
+          "Facebook-groepen voor Polen in Nederland"
+        ],
+        "verenigingen": [
+          "Geen lokale lidmaatschappen"
+        ]
+      },
+      "aansluiting_schriftlezingen": {
+        "wat_raakt": "De reis van de wijzen (Matteüs 2). Hij herkent zichzelf in de figuren die van ver komen, een lange weg afleggen en zich moeten aanpassen aan een nieuwe omgeving om het Licht te vinden.",
+        "wat_afstoot": "De abstracte theologische uiteenzettingen in de Efeziërs-brief zijn voor hem taalkundig te complex.",
+        "existentiele_vraag": "Mag ik, als vreemdeling, ook delen in de belofte van dit Kind?"
+      }
+    }
+  ]
+}
+
+---
+
+## Homiletische Analyse
+
+{
+  "tekstkeuze": {
+    "gekozen_lezing": "Matteüs 2,1-12",
+    "onderbouwing": "De geschiedenis van de magiërs uit het oosten biedt de meest krachtige narratieve structuur voor een homiletische omkering. In deze tekst schuurt de tegenstelling tussen de 'insiders' (Herodes en de schriftgeleerden in Jeruzalem) en de 'outsiders' (de magiërs). De insiders bezitten de juiste informatie (de Schriften), maar komen niet in beweging. De outsiders bezitten slechts een teken aan de hemel, maar leggen een enorme weg af om te aanbidden. Deze tekst leent zich uitstekend voor de methodiek van Lowry omdat de spanning niet ligt in de vraag óf ze het kind vinden, maar in de schokkende ontdekking wie er werkelijk knielen. Voor een gemeente als de Brugkerk, die diep geworteld is in de traditie, biedt dit een noodzakelijke confrontatie met de eigen 'stilstaande' kennis versus de dynamische zoektocht van de vreemdeling.",
+    "omkerings_potentie": "De potentie ligt in de 'Aanname-omkering': we verwachten dat de vroomheid en kennis van Jeruzalem leiden tot aanbidding, maar de tekst onthult dat juist de 'onreine' magiërs de ware koning herkennen. De omkering verschuift het perspectief van 'wij bezitten het licht' naar 'het licht roept ons naar buiten'."
+  },
+  "homiletical_plot": {
+    "he_kwestie_oops": {
+      "titel": "HÈ? (OOPS!) - De Kwestie",
+      "doel": "De 'homiletische jeuk' moet binnen 2-3 minuten de jeuk van de hoorder worden",
+      "inhoud": "Stelt u zich voor: u heeft de nieuwste TomTom, de meest geavanceerde Google Maps en een kast vol wegenkaarten van het Groene Hart. U weet exact waar de Hefbrug ligt, hoe u bij de Triangel komt en waar de Brugkerk staat. Maar u komt de oprit niet af. De motor start niet, of erger: u voelt de noodzaak niet om te gaan rijden. \n\nDat is de vreemde situatie in Jeruzalem op die eerste Epifanie. De experts zijn er. De archieven gaan open. Micha 5 wordt geciteerd: 'In Betlehem moet het gebeuren.' De informatie is honderd procent accuraat. Maar terwijl de magiërs – mannen zonder Bijbel, zonder verbond, zonder de juiste papieren – hun kamelen zadelen voor de laatste kilometers, blijven de schriftgeleerden in hun studeerkamer. Jeruzalem is 'geschokt', zegt Matteüs. Niet van vreugde, maar van onrust. \n\nHet is de paradox van de religieuze insider: we weten alles van de Ster, maar we staan met de rug naar het raam. In Waddinxveen kennen we onze klassiekers. We zingen de psalmen van 1773, we weten hoe het hoort op 4 januari. Maar de vraag die de magiërs stellen, snijdt door onze nuchterheid heen: 'Waar is Hij?' Het lijkt een simpele vraag, maar het is een existentiële provocatie. Waarom zijn zij, die van zo ver komen, zo dichtbij, terwijl wij, die er bovenop zitten, zo ver weg lijken te staan? Er is een discrepantie tussen onze religieuze bagage en onze werkelijke beweging naar Christus toe.",
+      "ambiguiteit": "De ambiguïteit ligt in het feit dat 'kennis van de Schrift' hier niet leidt tot 'nabijheid tot God', maar tot een verlammende onrust of zelfs vijandigheid.",
+      "existentiele_onrust": "We voelen ons 'dakloos' in onze eigen traditie: we hebben de muren van de leer, maar we missen de warmte van de ontmoeting.",
+      "specifiek_voor_context": "In Waddinxveen vertaalt dit zich naar de spanning tussen de monumentale traditie van de Brugkerk en de nieuwe, zoekende spiritualiteit in de wijk Triangel. Hebben wij de kaart, maar zij de reisdrift?"
+    },
+    "oei_verdieping_ugh": {
+      "titel": "OEI... (UGH!) - De Verdieping",
+      "doel": "De diagnose stellen - analyseren, niet slechts beschrijven",
+      "waarom_keten": [
+        {
+          "vraag": "Waarom komen de schriftgeleerden en Herodes niet in beweging?",
+          "antwoord": "Omdat de komst van een nieuwe koning hun bestaande orde bedreigt."
+        },
+        {
+          "vraag": "Waarom ervaren zij een nieuwe koning als een bedreiging?",
+          "antwoord": "Omdat zij hun identiteit hebben opgehangen aan hun huidige positie en controle over de religieuze waarheid."
+        },
+        {
+          "vraag": "Waarom klampen zij zich zo vast aan die controle?",
+          "antwoord": "Uit angst dat als God werkelijk verschijnt op een manier die zij niet regisseren, zij hun relevantie verliezen."
+        },
+        {
+          "vraag": "Wat is de diepste wortel van deze angst?",
+          "antwoord": "Een fundamenteel wantrouwen dat Gods genade ook buiten hun eigen kaders en structuren krachtig kan zijn."
+        }
+      ],
+      "conclusie_keten": "De wortel is 'religieuze zelfhandhaving'. De Bijbel is geen venster meer waardoor we naar de Ster kijken, maar een spiegel geworden waarin we onze eigen gelijkhebberigheid bewonderen. We zijn bang voor de 'andere weg'.",
+      "inhoud": "Dit is het moment waarop het ongemakkelijk wordt. Want Herodes zit niet alleen in een paleis in Jeruzalem; hij heeft een klein troonzaaltje in ons eigen hart. Herodes is de stem in ons die zegt: 'Ik bepaal de route. Ik bepaal wie erbij hoort. Ik bepaal hoe God verschijnt.' \n\nIn een hechte gemeenschap als de onze is het verleidelijk om het geloof te consumeren als een vorm van cultureel erfgoed. We bewaren de as, maar we vergeten het vuur. De schriftgeleerden konden de tekst dromen, maar ze waren de droom kwijt. Ze gebruikten de profetie om Herodes te informeren, niet om zelf te transformeren. \n\nDat gaat over ons, hier aan de Kerkweg. Wanneer onze traditie een pantser wordt in plaats van een voertuig, dan worden we 'insiders' die de deur op slot houden. We analyseren de wereld, we maken ons zorgen over de secularisatie in de polder, we bekritiseren de tijdgeest, maar we vergeten te knielen. De 'Oei' is de ontdekking dat onze vroomheid een barrière kan zijn voor de verschijning van God. We zijn zo druk met het bewaken van de kribbe dat we de Koning die erin ligt niet meer herkennen als Hij zich aandient via een 'onreine' weg of een vreemd gezicht.",
+      "dit_gaat_over_mij": "De hoorder herkent de neiging om geloof te verengen tot 'het juiste weten' en de angst voor de controleverlies die werkelijke aanbidding vraagt."
+    },
+    "aha_wending_aha": {
+      "titel": "AHA! (AHA!) - De Wending",
+      "doel": "De ontbrekende schakel onthullen die alles in een ander licht zet",
+      "type_omkering": "aanname_omkering",
+      "toelichting_type": "De aanname dat God zich alleen openbaart aan degenen die de Schriften al hebben, wordt doorbroken. De magiërs worden de leraren van de gelovigen.",
+      "inhoud": "Maar dan gebeurt het. De wending zit in een klein detail: de ster gaat weer rijden. 'En zie, de ster... ging hun vooruit.' De ster stopt niet bij het paleis. De ster stopt niet bij de tempel. De ster stopt boven een gewoon huis in een onbeduidend dorp. \n\nDe 'Aha!' is dit: God laat zich niet gijzelen door onze instituten of onze juiste antwoorden. Epifanie betekent dat God de regie neemt. Terwijl Jeruzalem vergadert, is God al lang vertrokken naar de marge. De omkering is totaal: de magiërs, die wij als 'heidenen' of 'buitenstaanders' zouden labelen, blijken degenen te zijn die de diepste vreugde ervaren. 'Toen zij de ster zagen, verheugden zij zich met zeer grote vreugde.' \n\nDe sleutel is niet het bezit van de kaart, maar de bereidheid om de ster te volgen. De magiërs leren ons dat God gezocht wil worden. Hun geschenken – goud, wierook en mirre – zijn geen betaling voor informatie, maar een overgave van hun kostbaarste bezit aan een kind dat nog niets kan terugdoen. De wending is dat wij niet degenen zijn die de magiërs moeten bekeren; de magiërs zijn gekomen om óns te bekeren tot de ware aanbidding. God verschijnt waar we Hem het minst verwachten: in de kwetsbaarheid van een kind, herkend door mensen die we niet op onze ledenlijst hebben staan."
+    },
+    "ja_verkondiging_whee": {
+      "titel": "JA! (WHEE!) - De Verkondiging",
+      "doel": "De goede boodschap laten landen als ervaring (opluchting), niet slechts als informatie",
+      "inhoud": "Wat een bevrijding! Het evangelie van vandaag is dat God niet wacht tot wij onze zaken op orde hebben. Hij wacht niet tot de schriftgeleerden in Jeruzalem eindelijk hun vergadering hebben afgerond. Hij zet een ster aan de hemel van uw leven, precies daar waar u nu bent. \n\nDe genade is dat dit Kind er is voor álle volken, voor de magiërs uit het oosten én voor de nuchtere polderbewoners van Waddinxveen. U hoeft geen spirituele expert te zijn om bij Hem te mogen komen. De magiërs hadden waarschijnlijk een heel gebrekkige theologie, maar ze hadden een brandend hart. En dat is genoeg. \n\nHet 'Ja!' van Epifanie is dat de afstand tussen God en mens is overbrugd – niet door onze inspanning, maar door Zijn verschijning. De ster staat stil boven het huis. Dat betekent: God is thuisgekomen in onze werkelijkheid. De angst van Herodes hoeft niet langer de onze te zijn. We hoeven onze positie niet te verdedigen, want onze identiteit ligt niet in wat we weten of wat we bezitten, maar in het feit dat we door Hem gezien zijn. De opluchting is dat we de controle mogen loslaten. We mogen, net als die wijzen, simpelweg neervallen en aanbidden. De zwaarte van het 'moeten' valt af in de glans van Zijn licht. Het licht is verschenen, ook voor u, ook voor de zoeker die denkt dat hij er niet bij hoort.",
+      "remedie_past_op_diagnose": "De remedie (onvoorwaardelijke verschijning van God aan zoekers) geneest de kwaal van de religieuze zelfhandhaving en angst voor controleverlies.",
+      "niet_algemeen_maar_specifiek": "De genade is specifiek: God laat zich vinden door degenen die 'onderweg' zijn, ongeacht hun religieuze bagage."
+    },
+    "zo_doorwerking_yeah": {
+      "titel": "ZÓ! (YEAH!) - De Doorwerking",
+      "doel": "Anticiperen op de nieuwe realiteit - niet 'wat moeten we doen' maar 'hoe ziet het leven er nu uit'",
+      "inhoud": "En dan eindigt het verhaal met die prachtige zin: 'Zij wijken langs een andere weg uit naar hun land.' Dat is geen vluchtroute, dat is een levenshouding. Wie het Kind heeft gezien, kan niet meer langs de oude weg van Herodes terug. De oude weg van angst, van controle, van 'wij-zij' denken, die weg is afgesloten. \n\nHoe ziet dat eruit in Waddinxveen, op maandag 5 januari 2026? Het betekent dat we de Hefbrug overgaan met andere ogen. We kijken naar de nieuwe bewoners in de Triangel niet als 'mensen die nog naar de kerk moeten komen', maar als medereizigers die misschien wel een ster hebben gezien die wij over het hoofd zagen. \n\nHet leven 'langs een andere weg' is een leven van openheid. Aan de ontbijttafel betekent het dat we de dag niet beginnen met de stress van Herodes – 'hoe houd ik alle ballen in de lucht?' – maar met de rust van de magiërs: 'ik volg de ster van Zijn genade.' In het wijkcentrum of op het werk in de logistiek zijn we niet langer degenen die het allemaal wel weten, maar degenen die durven te vragen: 'Waar is Hij hier aanwezig?' We brengen ons goud, onze wierook en onze mirre – onze tijd, onze aandacht, onze middelen – niet naar een instituut, maar naar de plekken waar het leven kwetsbaar is. De nieuwe realiteit is dat de Brugkerk geen eindstation is, maar een pleisterplaats voor mensen die, veranderd door de ontmoeting met het Kind, hun weg vervolgen in de wereld. Het licht schijnt, en wij wandelen erin.",
+      "klein_en_dichtbij": "De ontbijttafel zonder Herodes-stress, de ontmoeting in de Triangel, de dagelijkse logistiek van het leven als een reis achter de ster aan.",
+      "geen_eisenlijst": true
+    }
+  },
+  "logica_check": {
+    "diagnose_remedie_klopt": true,
+    "toelichting": "De diagnose stelt dat religieuze kennis kan leiden tot verlamming en zelfhandhaving (angst). De remedie is de soevereine verschijning van God aan 'outsiders', wat de noodzaak tot controle wegneemt en uitnodigt tot bevrijde aanbidding. De 'andere weg' in de doorwerking vloeit logisch voort uit het loslaten van de 'Herodes-weg' van controle."
+  }
+}
+
+---
+
+## Gebeden
+
+{
+  "gekozen_scenario": "B (Kort drempelgebed, uitgebreid kyrie met schuld en nood)",
+  "gebeden": {
+    "drempelgebed": {
+      "type": "drempelgebed",
+      "aanspraak": "Eeuwige, Bron van Licht",
+      "elementen": {
+        "verootmoediging": "Wij komen binnen uit de grijze kou van de polder, met de haast van de jaarwisseling nog in onze botten.",
+        "schuldbelijdenis": "De drempel is hoog; wij dragen de modder van de afgelopen week met ons mee.",
+        "verlangen": "Wij zoeken een kier in de tijd, een venster naar uw luister."
+      },
+      "tekst": "Eeuwige, Bron van Licht,\n\nwij stappen over de drempel van dit huis,\nuit de grijze kou van de polder,\nmet de haast van de jaarwisseling nog in onze botten.\nDe week kleeft aan ons —\nde woorden die we inslikten,\nde blik die we afwendden,\nde stilte waar we hadden moeten spreken.\n\nWij komen als zoekers,\nzoals de wijzen ooit de weg gingen over onbekend terrein.\nDe drempel is hoog,\nwant wij dragen de modder van de wereld met ons mee.\nMaar hier, op deze plaats,\nleggen wij het neer.\n\nWij verlangen naar een kier in de tijd,\neen venster dat openzwaait naar uw luister.\nRaak ons aan, hier in het hart van Waddinxveen,\nen laat ons niet onveranderd huiswaarts gaan.\n\nAmen.",
+      "echo_schriftlezing": "De beweging van de wijzen die de drempel van het huis overstappen (Matteüs 2:11).",
+      "amen": true
+    },
+    "kyrie": {
+      "type": "kyrie",
+      "aanspraak": "Heer, die als een ster boven ons opgaat",
+      "focus": "schuld_en_nood",
+      "structuur": {
+        "intenties": [
+          {
+            "voor_wie": "De inwoners van Gaza en Libanon",
+            "nood": "Zij die in de ijzige winterkou geen dak boven hun hoofd hebben en wachten op hulp die niet komt.",
+            "kyrie_refrain": true
+          },
+          {
+            "voor_wie": "De mensen in onze eigen straat",
+            "nood": "Waar 320 huizen leegstaan terwijl jongeren wachten op een plek en gezinnen rekenen bij de kassa.",
+            "kyrie_refrain": true
+          },
+          {
+            "voor_wie": "De machthebbers van deze wereld",
+            "nood": "Die als Herodes angst zaaien om hun eigen troon te redden, terwijl het kind in de schaduw ligt.",
+            "kyrie_refrain": true
+          }
+        ]
+      },
+      "tekst": "Heer, die als een ster boven ons opgaat,\n\nwij roepen tot U uit de diepte van een wereld die wankelt.\nOntferm U over de kinderen in Gaza en Libanon,\ndie in de ijzige winterkou slapen tussen het puin,\nterwijl de hemel oplicht van geweld in plaats van glorie.\nKyrie eleison.\n\nOntferm U over de mens in Syrië,\ndie tussen hoop en chaos tast naar een nieuw begin,\nen over de soldaten aan de fronten in het oosten,\ngevangen in een oorlog die geen einde kent.\nKyrie eleison.\n\nWij roepen tot U voor ons eigen dorp,\nvoor de 320 huizen die leegstaan terwijl de wachtlijst groeit,\nvoor de moeder die in de supermarkt producten teruglegt\nomdat het geld niet reikt tot de volgende maand.\nVergeef ons onze blindheid voor de arme die om hulp roept.\nKyrie eleison.\n\nOntferm U over de leiders van de volken,\ndie als Herodes de macht omklemmen uit angst voor verlies.\nBreek hun zwaarden tot ploegscharen,\nen breek ons hart open voor de vreemdeling die aan onze deur klopt.\nKyrie eleison.\n\nAmen.",
+      "echo_schriftlezing": "De angst van Herodes (Matteüs 2:3) en de roep van de arme (Psalm 72:12).",
+      "amen": true
+    },
+    "epiclese": {
+      "type": "epiclese",
+      "aanspraak": "Geest van God, Gids op onze wegen",
+      "focus": "ALLEEN opening voor de Schrift, geen andere thema's",
+      "tekst": "Geest van God, Gids op onze wegen,\n\nU die de wijzen de ster wees in de nacht,\nwijs ons nu de weg in de Schriften.\nBlaas op de as van ons verstand tot er vuur gloeit.\nOpen de schatkist van uw Woord,\nzodat wij niet alleen letters horen,\nmaar de stem van de Levende.\n\nOntdooi wat in ons bevroren raakte,\nen laat uw licht vallen op de woorden van vandaag,\ntotdat het kwartje valt en wij U herkennen.\n\nAmen.",
+      "echo_schriftlezing": "Het openen van de schatkisten (Matteüs 2:11) en het licht dat opgaat (Jesaja 60:1).",
+      "amen": true
+    },
+    "dankgebed": {
+      "type": "dankgebed",
+      "aanspraak": "Barmhartige God, Bron van alle vreugde",
+      "verbinding_verkondiging": "Dankzegging voor de ontdekking dat God zich laat vinden door outsiders en ons uitnodigt tot een 'andere weg'.",
+      "elementen": {
+        "dank_gehoorde_woord": "Wij danken U dat U zich laat vinden door wie U niet zochten.",
+        "vraag_kracht_bewaren": "Geef ons de moed om morgen 'langs een andere weg' ons werk te hervatten.",
+        "verbinding_dagelijks_leven": "Laat het licht van Betlehem schijnen op de bureaus en in de distributiecentra van Waddinxveen."
+      },
+      "tekst": "Barmhartige God, Bron van alle vreugde,\n\nwij danken U dat U zich laat vinden,\noók door wie U niet zochten,\noók aan de randen van ons bestaan.\nWij danken U voor het Kind in de kribbe,\ndat de macht van de angst heeft gebroken.\n\nWij danken U voor de wijsheid van de volken,\ndie ons leert dat uw genade geen grenzen kent.\nGeef ons de moed om morgen, als het gewone ritme begint,\nlangs een andere weg ons leven te vervolgen.\n\nLaat het licht van deze morgen met ons meegaan\nnaar de kantoren, de scholen en de vrachtwagens van ons dorp.\nDat wij niet terugvallen in de oude groeven,\nmaar wandelen in de glans van uw dageraad.\n\nAmen.",
+      "echo_schriftlezing": "De 'andere weg' terug naar hun land (Matteüs 2:12).",
+      "amen": true
+    },
+    "voorbeden": {
+      "type": "voorbeden",
+      "aanspraak": "Vader in de hemel, God van alle volken",
+      "cirkels": {
+        "wereld": {
+          "themas": [
+            "Vrede in het Midden-Oosten",
+            "Stabiliteit in Syrië",
+            "Rechtvaardigheid voor vluchtelingen"
+          ],
+          "tekst": "Wij bidden U voor de wereld die U zo liefhebt.\nGeef wijsheid aan de nieuwe machthebbers in Syrië,\ndat zij de weg van verzoening kiezen boven vergelding.\nWij bidden voor de vrede in Jeruzalem en Gaza;\ndat de ster van de hoop sterker mag zijn dan de flitsen van de haat."
+        },
+        "kerk": {
+          "themas": [
+            "Wereldwijde oecumene",
+            "Kerk in Actie Armoededag",
+            "Vervolgde christenen"
+          ],
+          "tekst": "Wij bidden voor uw kerk wereldwijd,\neen bonte stoet van mensen uit alle windstreken.\nZegen de voorbereidingen voor de landelijke Armoededag,\ndat uw gemeente een baken van recht mag zijn.\nSterk onze broeders en zusters die in het verborgene moeten geloven."
+        },
+        "naasten": {
+          "themas": [
+            "Zieke gemeenteleden",
+            "Eenzamen in de lintbebouwing",
+            "Mensen met financiële zorgen"
+          ],
+          "tekst": "Wij bidden voor de mensen die ons nabij zijn.\nVoor de man die deze zondag alleen eet aan een tafel voor twee,\nvoor wie wacht op een uitslag in het ziekenhuis,\nen voor de jongeren in de Triangel die bezwijken onder de druk van het moeten.\nLeg uw hand op hun schouder."
+        },
+        "eigen_gemeente": {
+          "themas": [
+            "Brugkerk als pleisterplaats",
+            "Gemeenteraad Waddinxveen",
+            "Nieuwkomers in het dorp"
+          ],
+          "tekst": "Wij bidden voor onze eigen Brugkerk.\nMaak ons tot een brug tussen oud en nieuw, tussen dorp en wereld.\nZegen de gemeenteraad van Waddinxveen bij de keuzes over woningbouw en zorg.\nDat wij als gemeente goud, wierook en mirre brengen:\nonze toewijding, ons gebed en onze zorg voor elkaar."
+        }
+      },
+      "stilte_instructie": "*Stilte voor persoonlijke gebedsintenties*",
+      "overgang_onze_vader": "Samen bidden wij het gebed dat Jezus ons leerde:",
+      "onze_vader": "Onze Vader die in de hemelen zijt,\nuw naam worde geheiligd;\nuw Koninkrijk kome;\nuw wil geschiede, gelijk in de hemel, alzo ook op de aarde.\nGeef ons heden ons dagelijks brood;\nen vergeef ons onze schulden, gelijk ook wij vergeven onze schuldenaren;\nen leid ons niet in verzoeking, maar verlos ons van de boze.\nWant van U is het Koninkrijk en de kracht en de heerlijkheid tot in eeuwigheid.\nAmen."
+    }
+  },
+  "poetische_technieken_gebruikt": {
+    "parallellisme": [
+      "de woorden die we inslikten, de blik die we afwendden, de stilte waar we hadden moeten spreken",
+      "naar de kantoren, de scholen en de vrachtwagens van ons dorp"
+    ],
+    "drieslag": [
+      "goud, wierook en mirre",
+      "onze toewijding, ons gebed en onze zorg voor elkaar",
+      "geen grenzen kent, geen einde kent, geen oever meer ziet"
+    ],
+    "anafoor": [
+      "Wij bidden voor...",
+      "Ontferm U over..."
+    ],
+    "inclusio": [
+      "Drempelgebed begint met de kou van de polder en Voorbeden eindigt met de zorg in het dorp."
+    ],
+    "zintuiglijke_taal": [
+      "Zien: de flitsen van de haat, de ster in de nacht",
+      "Horen: de stem van de Levende, de roep van de arme",
+      "Voelen: modder aan de schoenen, kou in de botten, hand op de schouder",
+      "Ruiken: geur van wierook (impliciet bij geschenken)",
+      "Proeven: (niet expliciet, focus op licht/warmte passend bij Epifanie)"
+    ],
+    "lokale_beelden": [
+      "Grijze kou van de polder",
+      "De 320 leegstaande woningen in Waddinxveen",
+      "De Hefbrug als metafoor voor de Brugkerk",
+      "De wijk Triangel en de logistieke sector (vrachtwagens)"
+    ]
+  },
+  "echo_techniek": {
+    "schriftlezing_thema": "De zoektocht naar het Licht en de 'andere weg' naar huis.",
+    "echo_per_gebed": {
+      "drempelgebed": "Het overstappen van de drempel van het huis waar het Kind is.",
+      "kyrie": "De politieke dreiging van Herodes vertaald naar huidige machthebbers.",
+      "epiclese": "Het openen van de schatkisten als beeld voor het openen van de Schrift.",
+      "dankgebed": "De 'andere weg' als metafoor voor een veranderde levenshouding op maandag.",
+      "voorbeden": "De geschenken van de wijzen als symbool voor de diaconale inzet van de gemeente."
+    }
+  }
+}
+
+---
+
+## Bijbelteksten (Bronmateriaal)
+
+De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
+
+```json
+{
+  "naardense_bijbel": [
+    {
+      "book": "EPH",
+      "chapter": 3,
+      "verses": [
+        {
+          "verse": 2,
+          "text": "als ge tenminste hebt gehoordvan het beheer van Gods genadedie voor ú aan mij is gegeven:"
+        },
+        {
+          "verse": 3,
+          "text": "dat door openbaring aan mijhet heilsgeheim bekend is gemaakt-zoals ik eerder in het kort al schreef-"
+        },
+        {
+          "verse": 5,
+          "text": "In andere generaties is het niet zobekendgemaaktaan de zonen-en-dochters der mensenals het nu door de Geest geopenbaard isaan zijn heilige apostelen en profeten:"
+        },
+        {
+          "verse": 6,
+          "text": "dat de heidenvolkerenmede-erfgenamen zijn,mede-lichaam van en mede-deelhebbers aande aankondiging in Christus Jezus,door middel van de evangelieverkondiging,"
+        }
+      ],
+      "translation": "NB"
+    },
+    {
+      "book": "ISA",
+      "chapter": 60,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Sta op, word verlicht, want je licht is gekomen: de glorie van de Ene is over je opgegaan!"
+        },
+        {
+          "verse": 2,
+          "text": "Want zie, het duister bedekt wel de aarde en donkerheid de natiën,- maar over jou zal de Ene opdagen, zijn glorie wordt over jou zichtbaar."
+        },
+        {
+          "verse": 3,
+          "text": "Volkeren zullen op weg gaan naar jouw licht, koningen naar de glans van jouw dageraad."
+        },
+        {
+          "verse": 4,
+          "text": "Hef rondom je ogen op en zie: allen lopen ze te hoop, gekomen voor jou!- je zonen komen aan van verre, je dochters zijn welbewaard op een wagen * Of: op een flank. ."
+        },
+        {
+          "verse": 5,
+          "text": "Dan, als je het ziet, zul je strálen, opschrikken en wijd worden zal je hart,- want het rumoer van de zee rolt over je heen, een macht volkeren, ze komen tot jou!"
+        },
+        {
+          "verse": 6,
+          "text": "Een overvloed van kamelen zal je overdekken, eerstelingsdieren van Midjan en Efa, uit Sjeva zullen zij allen komen; goud en wierook dragen ze mee, lofprijzingen voor de Ene boodschappen zij."
+        }
+      ],
+      "translation": "NB"
+    },
+    {
+      "book": "MAT",
+      "chapter": 2,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Maar terwijl Jezus wordt geborenin Betlehem in Judea,in de dagen van koning Herodes,zie, uit het oostenbelanden magiërs in Jeruzalem;"
+        },
+        {
+          "verse": 2,
+          "text": "zij zeggen: waar isde koning der Judeeërs die is voortgebracht?-want wij hebben zijn ster gezienin het oostenen zijn gekomenom hem te huldigen!"
+        },
+        {
+          "verse": 3,
+          "text": "Maar als koning Herodes dat hoortis hij geschokt,en heel Jeruzalem met hem."
+        },
+        {
+          "verse": 4,
+          "text": "Hij brengt alle heiligdomsoversten enschriftgeleerden van de gemeenschapsamen, en heeft bij hen nagevraagd:waar wordt de Gezalfde geboren?"
+        },
+        {
+          "verse": 5,
+          "text": "Zij zeggen tot hem:in Betlehem in Judea;want zo is geschrevendoor de profeet:"
+        },
+        {
+          "verse": 6,
+          "text": "en jij, Betlehem, land van Juda,jij bent geenszins de kleinsteonder de leiders van Juda;want uit jou zal een leidsmanvoortkomen die herder zal zijnover mijn gemeente Israël(Micha 5,1-3)!"
+        },
+        {
+          "verse": 7,
+          "text": "Dánroept Herodes in het verborgenede magiërsen doet bij hen nauwkeurig navraagnaar de tijd dat de ster is gaan schijnen."
+        },
+        {
+          "verse": 8,
+          "text": "Hij stuurt hen naar Betlehem en zegt:trekt verder en vorst nauwkeurig naover het jongetje;en als ge het vindt, verkondigt dat mij,opdat ook ík kan komenom het hulde te bewijzen!"
+        },
+        {
+          "verse": 9,
+          "text": "Gehoor gevend aan de koningtrekken zij verder;en zie, de sterdie zij in het oosten hebben gezienis hun vooruitgegaantotdat hij komt en blijft staanboven waar het jongetje is geweest."
+        },
+        {
+          "verse": 10,
+          "text": "Als zij de ster zienverheugen zij zichmet zeer grote vreugde."
+        },
+        {
+          "verse": 11,
+          "text": "Ze komen het huis binnenen zien het jongetje,mét Maria, zijn moeder,en neervallendbewijzen zij het hulde;ze openen hun schatkistenen bieden hem geschenken aan:goud, wierook en mirre(Jes. 60,6)."
+        },
+        {
+          "verse": 12,
+          "text": "En in een droom gewaarschuwdom niet terug te buigen naar Herodeswijken zij langs een andere weg uitnaar hun uitwijkstreek."
+        }
+      ],
+      "translation": "NB"
+    },
+    {
+      "book": "TIT",
+      "chapter": 2,
+      "verses": [
+        {
+          "verse": 11,
+          "text": "Want verschenen is Gods genade als redding voor alle mensen;"
+        },
+        {
+          "verse": 12,
+          "text": "zij voedt ons op om met verzaking van de goddeloosheid en de wereldse verlangens bezonnen en rechtvaardig en godvruchtig in de huidige eeuw te leven,"
+        },
+        {
+          "verse": 13,
+          "text": "in verwachting van de zalige hoop en verschijning in heerlijkheid van onze grote God en redder Christus Jezus,"
+        },
+        {
+          "verse": 14,
+          "text": "die zichzelf ter wille van ons heeft gegeven om ons ‘te verlossen van alle ongerechtigheid’ (Ps. 130,8) en ‘zich een gemeente ten eigendom te reinigen’ (Ex. 19,5) , ijverig in goede werken."
+        }
+      ],
+      "translation": "NB"
+    },
+    {
+      "book": "PSA",
+      "chapter": 72,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Psalm 72 (71), Deus, iudicium. (v. -vredevorst- Salomo.) O God, recht te spreken als gij, geef dat aan de koning, ✡ rechtvaardiging door u aan ’s konings zoon!"
+        },
+        {
+          "verse": 2,
+          "text": "Hij oordele uw gemeente rechtvaardig, ✡ uw gebogenen met rechtspraak."
+        },
+        {
+          "verse": 3,
+          "text": "Dan dragen bergen voor de gemeenschap vrede, ✡ en heuvels gerechtigheid."
+        },
+        {
+          "verse": 4,
+          "text": "Hij doet gebogenen van een gemeenschap recht, brengt redding aan de zonen van een arme, ✡ zal vertrappen wie verdrukt."
+        },
+        {
+          "verse": 5,
+          "text": "Hij zal duren als de zon, ✡ voor het aanschijn van de maan een generatie van generaties."
+        },
+        {
+          "verse": 6,
+          "text": "Neerdalen zal hij als regen op gras, ✡ als tienduizend druppels op een land."
+        },
+        {
+          "verse": 7,
+          "text": "In zijn dagen kome een rechtvaardige tot bloei, ✡ met overvloed van vrede, tot er geen maan meer is."
+        },
+        {
+          "verse": 8,
+          "text": "Optreden zal hij van zee tot zee, ✡ van de Rivier tot de einden der aarde."
+        },
+        {
+          "verse": 9,
+          "text": "Benauwers zullen voor zijn aanschijn knielen, ✡ zijn vijanden likken het stof."
+        },
+        {
+          "verse": 10,
+          "text": "De koningen van Tarsjiesj, van eilanden, bieden een broodgift hem aan, ✡ de koningen van Sjeva en Seva brengen schatting nabij."
+        },
+        {
+          "verse": 11,
+          "text": "Alle koningen zullen buigen voor hem, ✡ alle volkeren zullen hem dienen."
+        },
+        {
+          "verse": 12,
+          "text": "Want hij ontrukt een arme die schreeuwt om redding, ✡ een gebogene en wie geen helper heeft."
+        },
+        {
+          "verse": 13,
+          "text": "Hij ziet om naar een zwakke en arme, ✡ lijf-en-ziel van armen komt hij redden."
+        },
+        {
+          "verse": 14,
+          "text": "Hij verlost hun ziel van druk en geweld, ✡ hun bloed is kostbaar in zijn ogen!"
+        },
+        {
+          "verse": 15,
+          "text": "Hij leve!- men geve hem goud van Sjeva, en bidde voor hem voortdurend, ✡ mogen ze hem zegenen heel de dag!"
+        },
+        {
+          "verse": 16,
+          "text": "Zij er in het land weelde van graan, op de top van bergen ruise als de Libanon zijn vrucht,- ✡ mogen ze uit een stad uitspruiten als het groen van de aarde."
+        },
+        {
+          "verse": 17,
+          "text": "Zij zijn naam voor eeuwig, voor het aanschijn van de zon bloeie zijn naam, door hem weten ze zich gezegend,- ✡ alle volkeren prijzen hem zalig!"
+        },
+        {
+          "verse": 18,
+          "text": "Gezegend de Ene, God, Israëls God, ✡ die wonderen doet, hij alleen!"
+        },
+        {
+          "verse": 19,
+          "text": "Gezegend zijn naam, zijn glorie; voor eeuwig vervulle zijn glorie heel de aarde! ✡ Amen, amen!"
+        },
+        {
+          "verse": 20,
+          "text": "Ten einde zijn de gebeden,- ✡ van David, zoon van Jesse. Slot van het tweede boek der Psalmen"
+        }
+      ],
+      "translation": "NB"
+    }
+  ],
+  "nbv21": [
+    {
+      "book": "EPH",
+      "chapter": 3,
+      "verses": [
+        {
+          "verse": 2,
+          "text": "U hebt immers gehoord dat God zijn plan verwezenlijkt door de genade die ik met het oog op u ontvangen heb."
+        },
+        {
+          "verse": 3,
+          "text": "Mij is het geheim geopenbaard waarover ik hiervoor in het kort heb geschreven."
+        },
+        {
+          "verse": 5,
+          "text": "Het is onder vorige generaties niet aan de mensen onthuld, maar nu door de Geest geopenbaard aan zijn heilige apostelen en profeten:"
+        },
+        {
+          "verse": 6,
+          "text": "ook mensen uit andere volken delen door hun eenheid met Christus Jezus in de erfenis, zij maken deel uit van hetzelfde lichaam en hebben ook deel aan de belofte, door middel van het evangelie."
+        }
+      ],
+      "translation": "NBV21"
+    },
+    {
+      "book": "ISA",
+      "chapter": 60,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Sta op en schitter, je licht is gekomen, over jou schijnt de luister van de HEER."
+        },
+        {
+          "verse": 2,
+          "text": "Duisternis bedekt de aarde en donkerte de naties, maar over jou schijnt de HEER, zijn luister is boven jou zichtbaar."
+        },
+        {
+          "verse": 3,
+          "text": "Volken laten zich leiden door jouw licht, koningen door de glans van je schijnsel."
+        },
+        {
+          "verse": 4,
+          "text": "Sla je ogen op, kijk om je heen: ze stromen in drommen naar je toe; je zonen komen van ver, je dochters worden op de heup gedragen."
+        },
+        {
+          "verse": 5,
+          "text": "Je zult stralen van vreugde als je het ziet, je hart zal van blijdschap overslaan. De schatten van de zee zullen je toevallen, de rijkdom van vreemde volken valt je in de schoot."
+        },
+        {
+          "verse": 6,
+          "text": "Een vloed van kamelen zal je land overspoelen, jonge kamelen uit Midjan en Efa. Uit Seba komen ze in groten getale, beladen met wierook en goud. Zij verkondigen de roemrijke daden van de HEER."
+        }
+      ],
+      "translation": "NBV21"
+    },
+    {
+      "book": "MAT",
+      "chapter": 2,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Toen Jezus geboren was, in Betlehem in Judea, tijdens de regering van koning Herodes, kwamen er magiërs uit het Oosten in Jeruzalem aan."
+        },
+        {
+          "verse": 2,
+          "text": "Ze vroegen: ‘Waar is de koning van de Joden die onlangs geboren is? Wij hebben namelijk zijn ster zien opgaan en zijn gekomen om Hem te aanbidden.’"
+        },
+        {
+          "verse": 3,
+          "text": "Koning Herodes schrok hevig toen hij dit hoorde, en heel Jeruzalem met hem."
+        },
+        {
+          "verse": 4,
+          "text": "Hij riep alle hogepriesters en schriftgeleerden van het volk samen om aan hen te vragen waar de messias geboren zou worden."
+        },
+        {
+          "verse": 5,
+          "text": "‘In Betlehem in Judea,’ zeiden ze tegen hem, ‘want zo staat het geschreven bij de profeet:"
+        },
+        {
+          "verse": 6,
+          "text": "“En jij, Betlehem in het land van Juda, bent zeker niet de minste onder de leiders van Juda, want uit jou komt een leider voort die mijn volk Israël zal hoeden.”’"
+        },
+        {
+          "verse": 7,
+          "text": "Daarop riep Herodes in het geheim de magiërs bij zich; hij wilde precies van hen weten wanneer de ster zichtbaar geworden was,"
+        },
+        {
+          "verse": 8,
+          "text": "en stuurde hen vervolgens naar Betlehem met de woorden: ‘Stel een nauwkeurig onderzoek in naar het kind. Stuur mij bericht zodra u het gevonden hebt, zodat ook ik erheen kan gaan om het te aanbidden.’"
+        },
+        {
+          "verse": 9,
+          "text": "Nadat ze de koning hadden aangehoord gingen ze op weg, en nu ging de ster die ze hadden zien opgaan voor hen uit, totdat hij stil bleef staan boven de plaats waar het kind was."
+        },
+        {
+          "verse": 10,
+          "text": "Toen ze de ster zagen, werden ze vervuld van diepe vreugde."
+        },
+        {
+          "verse": 11,
+          "text": "Ze gingen het huis binnen en vonden het kind met Maria, zijn moeder. Ze wierpen zich in aanbidding voor het kind neer. Daarna openden ze hun kistjes met kostbaarheden en boden het geschenken aan: goud en wierook en mirre."
+        },
+        {
+          "verse": 12,
+          "text": "En omdat ze in een droom de aanwijzing hadden gekregen dat ze niet naar Herodes terug moesten gaan, reisden ze via een andere route terug naar hun land."
+        }
+      ],
+      "translation": "NBV21"
+    },
+    {
+      "book": "TIT",
+      "chapter": 2,
+      "verses": [
+        {
+          "verse": 11,
+          "text": "Gods genade is openbaar geworden om alle mensen te redden."
+        },
+        {
+          "verse": 12,
+          "text": "Ze leert ons dat we goddeloze en wereldse begeerten moeten afwijzen en bezonnen, rechtvaardig en vroom in deze wereld moeten leven,"
+        },
+        {
+          "verse": 13,
+          "text": "in afwachting van het geluk waarop wij hopen: de verschijning van de majesteit van onze grote God en redder Jezus Christus."
+        },
+        {
+          "verse": 14,
+          "text": "Hij heeft zichzelf voor ons gegeven om ons van alle zonde vrij te kopen, ons te reinigen en ons tot zijn volk te maken, dat zich volledig inzet om het goede te doen."
+        }
+      ],
+      "translation": "NBV21"
+    },
+    {
+      "book": "PSA",
+      "chapter": 72,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Geef, o God, uw wetten aan de koning, uw gerechtigheid aan de koningszoon."
+        },
+        {
+          "verse": 2,
+          "text": "Moge hij uw volk rechtvaardig besturen, uw arme volk naar recht en wet."
+        },
+        {
+          "verse": 3,
+          "text": "Mogen de bergen vrede brengen aan het volk en de heuvels gerechtigheid."
+        },
+        {
+          "verse": 4,
+          "text": "Moge hij recht doen aan de zwakken, redding bieden aan de armen, maar de onderdrukker neerslaan."
+        },
+        {
+          "verse": 5,
+          "text": "Moge hij leven zolang de zon bestaat, zolang de maan zal schijnen, van geslacht op geslacht."
+        },
+        {
+          "verse": 6,
+          "text": "Moge hij zijn als regen die valt op kale akkers, als buien die de aarde doordrenken."
+        },
+        {
+          "verse": 7,
+          "text": "Moge in zijn dagen de rechtvaardige bloeien, de vrede wereldwijd zijn tot de maan niet meer bestaat."
+        },
+        {
+          "verse": 8,
+          "text": "Moge hij heersen van zee tot zee, van de Grote Rivier tot aan de einden der aarde."
+        },
+        {
+          "verse": 9,
+          "text": "Laten de woestijnbewoners voor hem buigen, zijn vijanden het stof van zijn voeten likken."
+        },
+        {
+          "verse": 10,
+          "text": "De koningen van Tarsis en de kustlanden, laten zij hem geschenken brengen. De koningen van Seba en Saba, laten ook zij hem schatting afdragen."
+        },
+        {
+          "verse": 11,
+          "text": "Laten alle koningen zich neerwerpen voor hem, alle volken hem dienstbaar zijn."
+        },
+        {
+          "verse": 12,
+          "text": "Hij zal bevrijden wie arm is en om hulp roept, wie zwak is en geen helper heeft."
+        },
+        {
+          "verse": 13,
+          "text": "Hij ontfermt zich over weerlozen en armen, wie arm is, redt hij het leven."
+        },
+        {
+          "verse": 14,
+          "text": "Hij verlost hen van onderdrukking en geweld, hun bloed is kostbaar in zijn ogen."
+        },
+        {
+          "verse": 15,
+          "text": "Leve de koning! Men zal hem goud van Seba schenken, zonder ophouden voor hem bidden, hem zegen toewensen, dag aan dag."
+        },
+        {
+          "verse": 16,
+          "text": "Er zal overvloed van koren zijn in het land, zelfs op de toppen van de bergen. Rijpe aren zullen golven als de bossen van de Libanon. Vanuit zijn stad zal voorspoed ontluiken als jong groen op de aarde."
+        },
+        {
+          "verse": 17,
+          "text": "Zijn naam zal eeuwig bestaan, zijn naam zal voortleven zolang de zon zal schijnen. Dankzij hem zal men zich gezegend noemen, en alle volken prijzen hem gelukkig."
+        },
+        {
+          "verse": 18,
+          "text": "Geprezen zij God, de HEER, de God van Israël. Hij doet wonderen, Hij alleen."
+        },
+        {
+          "verse": 19,
+          "text": "Geprezen zij zijn luisterrijke naam, voor eeuwig. Moge zijn luister heel de aarde vervullen. Amen, amen."
+        },
+        {
+          "verse": 20,
+          "text": "Hier eindigen de gebeden van David, de zoon van Isaï."
+        }
+      ],
+      "translation": "NBV21"
+    }
+  ],
+  "grondtekst": [
+    {
+      "source": "NA28 (Novum Testamentum Graece)",
+      "book_nl": "Efeziërs",
+      "book_original": "EPH",
+      "chapter": 3,
+      "language": "Greek",
+      "verses": [
+        {
+          "verse": 2,
+          "text": "– εἴ γε ἠκούσατε τὴν οἰκονομίαν τῆς χάριτος τοῦ θεοῦ τῆς δοθείσης μοι εἰς ὑμᾶς, "
+        },
+        {
+          "verse": 3,
+          "text": "[ὅτι] κατὰ ἀποκάλυψιν ἐγνωρίσθη μοι τὸ μυστήριον, καθὼς προέγραψα ἐν ὀλίγῳ, "
+        },
+        {
+          "verse": 5,
+          "text": "ὃ ἑτέραις γενεαῖς οὐκ ἐγνωρίσθη τοῖς υἱοῖς τῶν ἀνθρώπων ὡς νῦν ἀπεκαλύφθη τοῖς ἁγίοις ἀποστόλοις αὐτοῦ καὶ προφήταις ἐν πνεύματι, "
+        },
+        {
+          "verse": 6,
+          "text": "εἶναι τὰ ἔθνη συγκληρονόμα καὶ σύσσωμα καὶ συμμέτοχα τῆς ἐπαγγελίας ἐν Χριστῷ Ἰησοῦ διὰ τοῦ εὐαγγελίου, "
+        }
+      ]
+    },
+    {
+      "source": "BHS (Biblia Hebraica Stuttgartensia)",
+      "book_nl": "Jesaja",
+      "book_original": "Jesaia",
+      "chapter": 60,
+      "language": "Hebrew",
+      "verses": [
+        {
+          "verse": 1,
+          "text": "ק֥וּמִי אֹ֖ורִי כִּ֣י בָ֣א אֹורֵ֑ךְ וּכְבֹ֥וד יְהוָ֖ה עָלַ֥יִךְ זָרָֽח׃ "
+        },
+        {
+          "verse": 2,
+          "text": "כִּֽי־הִנֵּ֤ה הַחֹ֨שֶׁךְ֙ יְכַסֶּה־אֶ֔רֶץ וַעֲרָפֶ֖ל לְאֻמִּ֑ים וְעָלַ֨יִךְ֙ יִזְרַ֣ח יְהוָ֔ה וּכְבֹודֹ֖ו עָלַ֥יִךְ יֵרָאֶֽה׃ "
+        },
+        {
+          "verse": 3,
+          "text": "וְהָלְכ֥וּ גֹויִ֖ם לְאֹורֵ֑ךְ וּמְלָכִ֖ים לְנֹ֥גַהּ זַרְחֵֽךְ׃ "
+        },
+        {
+          "verse": 4,
+          "text": "שְׂאִֽי־סָבִ֤יב עֵינַ֨יִךְ֙ וּרְאִ֔י כֻּלָּ֖ם נִקְבְּצ֣וּ בָֽאוּ־לָ֑ךְ בָּנַ֨יִךְ֙ מֵרָחֹ֣וק יָבֹ֔אוּ וּבְנֹתַ֖יִךְ עַל־צַ֥ד תֵּאָמַֽנָה׃ "
+        },
+        {
+          "verse": 5,
+          "text": "אָ֤ז תִּרְאִי֙ וְנָהַ֔רְתְּ וּפָחַ֥ד וְרָחַ֖ב לְבָבֵ֑ךְ כִּֽי־יֵהָפֵ֤ךְ עָלַ֨יִךְ֙ הֲמֹ֣ון יָ֔ם חֵ֥יל גֹּויִ֖ם יָבֹ֥אוּ לָֽךְ׃ "
+        },
+        {
+          "verse": 6,
+          "text": "שִֽׁפְעַ֨ת גְּמַלִּ֜ים תְּכַסֵּ֗ךְ בִּכְרֵ֤י מִדְיָן֙ וְעֵיפָ֔ה כֻּלָּ֖ם מִשְּׁבָ֣א יָבֹ֑אוּ זָהָ֤ב וּלְבֹונָה֙ יִשָּׂ֔אוּ וּתְהִלֹּ֥ת יְהוָ֖ה יְבַשֵּֽׂרוּ׃ "
+        }
+      ]
+    },
+    {
+      "source": "NA28 (Novum Testamentum Graece)",
+      "book_nl": "Matteüs",
+      "book_original": "MAT",
+      "chapter": 2,
+      "language": "Greek",
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Τοῦ δὲ Ἰησοῦ γεννηθέντος ἐν Βηθλέεμ τῆς Ἰουδαίας ἐν ἡμέραις Ἡρῴδου τοῦ βασιλέως, ἰδοὺ μάγοι ἀπὸ ἀνατολῶν παρεγένοντο εἰς Ἱεροσόλυμα "
+        },
+        {
+          "verse": 2,
+          "text": "λέγοντες· ποῦ ἐστιν ὁ τεχθεὶς βασιλεὺς τῶν Ἰουδαίων; εἴδομεν γὰρ αὐτοῦ τὸν ἀστέρα ἐν τῇ ἀνατολῇ καὶ ἤλθομεν προσκυνῆσαι αὐτῷ. "
+        },
+        {
+          "verse": 3,
+          "text": "ἀκούσας δὲ ὁ βασιλεὺς Ἡρῴδης ἐταράχθη καὶ πᾶσα Ἱεροσόλυμα μετ’ αὐτοῦ, "
+        },
+        {
+          "verse": 4,
+          "text": "καὶ συναγαγὼν πάντας τοὺς ἀρχιερεῖς καὶ γραμματεῖς τοῦ λαοῦ ἐπυνθάνετο παρ’ αὐτῶν ποῦ ὁ χριστὸς γεννᾶται. "
+        },
+        {
+          "verse": 5,
+          "text": "οἱ δὲ εἶπαν αὐτῷ· ἐν Βηθλέεμ τῆς Ἰουδαίας· οὕτως γὰρ γέγραπται διὰ τοῦ προφήτου·"
+        },
+        {
+          "verse": 6,
+          "text": "καὶ σὺ Βηθλέεμ , γῆ Ἰούδα, οὐδαμῶς ἐλαχίστη εἶ ἐν τοῖς ἡγεμόσιν Ἰούδα· ἐκ σοῦ γὰρ ἐξελεύσεται ἡγούμενος, ὅστις ποιμανεῖ τὸν λαόν μου τὸν Ἰσραήλ."
+        },
+        {
+          "verse": 7,
+          "text": "Τότε Ἡρῴδης λάθρᾳ καλέσας τοὺς μάγους ἠκρίβωσεν παρ’ αὐτῶν τὸν χρόνον τοῦ φαινομένου ἀστέρος, "
+        },
+        {
+          "verse": 8,
+          "text": "καὶ πέμψας αὐτοὺς εἰς Βηθλέεμ εἶπεν· πορευθέντες ἐξετάσατε ἀκριβῶς περὶ τοῦ παιδίου· ἐπὰν δὲ εὕρητε, ἀπαγγείλατέ μοι, ὅπως κἀγὼ ἐλθὼν προσκυνήσω αὐτῷ. "
+        },
+        {
+          "verse": 9,
+          "text": "Οἱ δὲ ἀκούσαντες τοῦ βασιλέως ἐπορεύθησαν καὶ ἰδοὺ ὁ ἀστήρ, ὃν εἶδον ἐν τῇ ἀνατολῇ, προῆγεν αὐτούς, ἕως ἐλθὼν ἐστάθη ἐπάνω οὗ ἦν τὸ παιδίον. "
+        },
+        {
+          "verse": 10,
+          "text": "ἰδόντες δὲ τὸν ἀστέρα ἐχάρησαν χαρὰν μεγάλην σφόδρα. "
+        },
+        {
+          "verse": 11,
+          "text": "καὶ ἐλθόντες εἰς τὴν οἰκίαν εἶδον τὸ παιδίον μετὰ Μαρίας τῆς μητρὸς αὐτοῦ, καὶ πεσόντες προσεκύνησαν αὐτῷ καὶ ἀνοίξαντες τοὺς θησαυροὺς αὐτῶν προσήνεγκαν αὐτῷ δῶρα, χρυσὸν καὶ λίβανον καὶ σμύρναν. "
+        },
+        {
+          "verse": 12,
+          "text": "Καὶ χρηματισθέντες κατ’ ὄναρ μὴ ἀνακάμψαι πρὸς Ἡρῴδην, δι’ ἄλλης ὁδοῦ ἀνεχώρησαν εἰς τὴν χώραν αὐτῶν."
+        }
+      ]
+    },
+    {
+      "source": "BHS (Biblia Hebraica Stuttgartensia)",
+      "book_nl": "Psalm",
+      "book_original": "Psalmi",
+      "chapter": 72,
+      "language": "Hebrew",
+      "verses": [
+        {
+          "verse": 1,
+          "text": "לִשְׁלֹמֹ֨ה׀ אֱֽלֹהִ֗ים מִ֭שְׁפָּטֶיךָ לְמֶ֣לֶךְ תֵּ֑ן וְצִדְקָתְךָ֥ לְבֶן־מֶֽלֶךְ׃ "
+        },
+        {
+          "verse": 2,
+          "text": "יָדִ֣ין עַמְּךָ֣ בְצֶ֑דֶק וַעֲנִיֶּ֥יךָ בְמִשְׁפָּֽט׃ "
+        },
+        {
+          "verse": 3,
+          "text": "יִשְׂא֤וּ הָרִ֓ים שָׁ֘לֹ֥ום לָעָ֑ם וּ֝גְבָעֹ֗ות בִּצְדָקָֽה׃ "
+        },
+        {
+          "verse": 4,
+          "text": "יִשְׁפֹּ֤ט׀ עֲֽנִיֵּי־עָ֗ם יֹ֭ושִׁיעַ לִבְנֵ֣י אֶבְיֹ֑ון וִֽידַכֵּ֣א עֹושֵֽׁק׃ "
+        },
+        {
+          "verse": 5,
+          "text": "יִֽירָא֥וּךָ עִם־שָׁ֑מֶשׁ וְלִפְנֵ֥י יָ֝רֵ֗חַ דֹּ֣ור דֹּורִֽים׃ "
+        },
+        {
+          "verse": 6,
+          "text": "יֵ֭רֵד כְּמָטָ֣ר עַל־גֵּ֑ז כִּ֝רְבִיבִ֗ים זַרְזִ֥יף אָֽרֶץ׃ "
+        },
+        {
+          "verse": 7,
+          "text": "יִֽפְרַח־בְּיָמָ֥יו צַדִּ֑יק וְרֹ֥ב שָׁ֝לֹ֗ום עַד־בְּלִ֥י יָרֵֽחַ׃ "
+        },
+        {
+          "verse": 8,
+          "text": "וְ֭יֵרְדְּ מִיָּ֣ם עַד־יָ֑ם וּ֝מִנָּהָ֗ר עַד־אַפְסֵי־אָֽרֶץ׃ "
+        },
+        {
+          "verse": 9,
+          "text": "לְ֭פָנָיו יִכְרְע֣וּ צִיִּ֑ים וְ֝אֹיְבָ֗יו עָפָ֥ר יְלַחֵֽכוּ׃ "
+        },
+        {
+          "verse": 10,
+          "text": "מַלְכֵ֬י תַרְשִׁ֣ישׁ וְ֭אִיִּים מִנְחָ֣ה יָשִׁ֑יבוּ מַלְכֵ֥י שְׁבָ֥א וּ֝סְבָ֗א אֶשְׁכָּ֥ר יַקְרִֽיבוּ׃ "
+        },
+        {
+          "verse": 11,
+          "text": "וְיִשְׁתַּחֲווּ־לֹ֥ו כָל־מְלָכִ֑ים כָּל־גֹּויִ֥ם יַֽעַבְדֽוּהוּ׃ "
+        },
+        {
+          "verse": 12,
+          "text": "כִּֽי־יַ֭צִּיל אֶבְיֹ֣ון מְשַׁוֵּ֑עַ וְ֝עָנִ֗י וְֽאֵין־עֹזֵ֥ר לֹֽו׃ "
+        },
+        {
+          "verse": 13,
+          "text": "יָ֭חֹס עַל־דַּ֣ל וְאֶבְיֹ֑ון וְנַפְשֹׁ֖ות אֶבְיֹונִ֣ים יֹושִֽׁיעַ׃ "
+        },
+        {
+          "verse": 14,
+          "text": "מִתֹּ֣וךְ וּ֭מֵחָמָס יִגְאַ֣ל נַפְשָׁ֑ם וְיֵיקַ֖ר דָּמָ֣ם בְּעֵינָֽיו׃ "
+        },
+        {
+          "verse": 15,
+          "text": "וִיחִ֗י וְיִתֶּן־לֹו֮ מִזְּהַ֪ב שְׁ֫בָ֥א וְיִתְפַּלֵּ֣ל בַּעֲדֹ֣ו תָמִ֑יד כָּל־הַ֝יֹּ֗ום יְבָרֲכֶֽנְהֽוּ׃ "
+        },
+        {
+          "verse": 16,
+          "text": "יְהִ֤י פִסַּת־בַּ֨ר׀ בָּאָרֶץ֮ בְּרֹ֪אשׁ הָ֫רִ֥ים יִרְעַ֣שׁ כַּלְּבָנֹ֣ון פִּרְיֹ֑ו וְיָצִ֥יצוּ מֵ֝עִ֗יר כְּעֵ֣שֶׂב הָאָֽרֶץ׃ "
+        },
+        {
+          "verse": 17,
+          "text": "יְהִ֤י שְׁמֹ֨ו לְֽעֹולָ֗ם לִפְנֵי־שֶׁמֶשׁ֮ יִנֹּ֪ון שְׁ֫מֹ֥ו וְיִתְבָּ֥רְכוּ בֹ֑ו כָּל־גֹּויִ֥ם יְאַשְּׁרֽוּהוּ׃ "
+        },
+        {
+          "verse": 18,
+          "text": "בָּר֤וּךְ׀ יְהוָ֣ה אֱ֭לֹהִים אֱלֹהֵ֣י יִשְׂרָאֵ֑ל עֹשֵׂ֖ה נִפְלָאֹ֣ות לְבַדֹּֽו׃ "
+        },
+        {
+          "verse": 19,
+          "text": "וּבָר֤וּךְ׀ שֵׁ֥ם כְּבֹודֹ֗ו לְעֹ֫ולָ֥ם וְיִמָּלֵ֣א כְ֭בֹודֹו אֶת־כֹּ֥ל הָאָ֗רֶץ אָ֘מֵ֥ן׀ וְאָמֵֽן׃ "
+        },
+        {
+          "verse": 20,
+          "text": "כָּלּ֥וּ תְפִלֹּ֑ות דָּ֝וִ֗ד בֶּן־יִשָֽׁי׃ "
+        }
+      ]
+    },
+    {
+      "source": "NA28 (Novum Testamentum Graece)",
+      "book_nl": "Titus",
+      "book_original": "TIT",
+      "chapter": 2,
+      "language": "Greek",
+      "verses": [
+        {
+          "verse": 11,
+          "text": "Ἐπεφάνη γὰρ ἡ χάρις τοῦ θεοῦ σωτήριος πᾶσιν ἀνθρώποις "
+        },
+        {
+          "verse": 12,
+          "text": "παιδεύουσα ἡμᾶς, ἵνα ἀρνησάμενοι τὴν ἀσέβειαν καὶ τὰς κοσμικὰς ἐπιθυμίας σωφρόνως καὶ δικαίως καὶ εὐσεβῶς ζήσωμεν ἐν τῷ νῦν αἰῶνι, "
+        },
+        {
+          "verse": 13,
+          "text": "προσδεχόμενοι τὴν μακαρίαν ἐλπίδα καὶ ἐπιφάνειαν τῆς δόξης τοῦ μεγάλου θεοῦ καὶ σωτῆρος ἡμῶν Ἰησοῦ Χριστοῦ, "
+        },
+        {
+          "verse": 14,
+          "text": "ὃς ἔδωκεν ἑαυτὸν ὑπὲρ ἡμῶν, ἵνα λυτρώσηται ἡμᾶς ἀπὸ πάσης ἀνομίας καὶ καθαρίσῃ ἑαυτῷ λαὸν περιούσιον, ζηλωτὴν καλῶν ἔργων. "
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+---
+
+# Huidige Opdracht
+
+# Kalender: Gedenkdagen en Bijzondere Momenten
+
+Maak een overzicht van alle relevante kalendergegevens voor de week die begint op 4 januari 2026 en zich uitstrekt tot en met 6 dagen later.
+
+## Context
+
+De datum van de preek is 4 januari 2026. De gemeente is Brugkerk in Waddinxveen.
+
+## Te onderzoeken en rapporteren
+
+### 1. Kerkelijke gedenkdagen en heiligen
+
+- **Heiligenkalender:** Welke heiligen worden deze week herdacht? Geef korte biografische informatie.
+
+- **Protestantse gedenkdagen:** Relevante herdenkingen in de protestantse traditie (Reformatiedag, etc.)
+
+- **Oecumenische gedenkdagen:** Wereldgebedsdag, Week van Gebed voor Eenheid, etc.
+
+- **Martelaren en getuigen:** Moderne martelaren of geloofsgetuigen die deze week herdacht worden
+
+### 2. Joodse kalender
+
+- **Joodse feestdagen:** Valt er een Joods feest in deze periode? (Pesach, Soekkot, Jom Kippoer, Chanoeka, Rosj Hasjana, Sjawoeot, Poerim, etc.)
+
+- **Sabbat en parasja:** Welke Tora-portie wordt gelezen in de synagoge?
+
+- **Joodse gedenkdagen:** Jom HaSjoa, Jom Ha'atsmaoet, etc.
+
+### 3. Internationale en VN-dagen
+
+Welke internationale dagen vallen in deze week? Voorbeelden:
+
+- Internationale Dag van de Leraar
+
+- Wereldvoedseldag
+
+- Internationale Dag van de Vrede
+
+- Werelddag tegen Kinderarbeid
+
+- Internationale Vrouwendag
+
+- Wereldwaterdag
+
+- Dag van de Mensenrechten
+
+### 4. Nationale feest- en gedenkdagen (Nederland en België)
+
+- **Nederlandse feestdagen:** Koningsdag, Bevrijdingsdag, Dodenherdenking, Prinsjesdag, etc.
+
+- **Belgische feestdagen:** Nationale feestdag, Wapenstilstand, etc.
+
+- **Regionale gedenkdagen:** Relevante lokale herdenkingen
+
+### 5. Seizoensgebonden en culturele momenten
+
+- **Schoolvakanties:** Welke regio's hebben vakantie? (Herfstvakantie, Kerstvakantie, Voorjaarsvakantie, Meivakantie, Zomervakantie)
+
+- **Carnaval:** Indien relevant voor de periode
+
+- **Sinterklaas:** Intocht en pakjesavond
+
+- **Moederdag/Vaderdag:** Indien in deze periode
+
+- **Seizoenswisselingen:** Eerste lentedag, langste dag, herfst-equinox, etc.
+
+### 6. Astronomische gebeurtenissen (alleen bij zondag)
+
+- **Maanfasen:** Nieuwe maan, volle maan
+
+- **Zons- en maansverduisteringen:** Indien relevant
+
+- **Bijzondere sterrenkundige gebeurtenissen:** Meteorenzwermen, planetaire conjuncties
+
+- **Zonsopgang en zonsondergang:** Tijden voor de betreffende zondag
+
+### 7. Weersverwachting (alleen bij zondag)
+
+Geef een korte weersverwachting voor de komende week:
+
+- Temperatuur (dag/nacht)
+
+- Neerslag
+
+- Wind
+
+- Bijzonderheden (eerste vorst, hittegolf, storm)
+
+*Let op: als de preekdatum meer dan 7 dagen in de toekomst ligt, vermeld dan: "Weersverwachting nog niet beschikbaar (huidige datum: [datum])."*
+
+### 8. Overige relevante momenten
+
+- **Sportevenementen:** WK, EK, Olympische Spelen, Tour de France, etc.
+
+- **Culturele evenementen:** Boekenweek, Week van de Smaak, Open Monumentendag, etc.
+
+- **Historische herdenkingen:** Belangrijke historische gebeurtenissen op deze datum
+
+- **Actuele maatschappelijke campagnes:** Alzheimerweek, Werelddierendag, etc.
+
+- **Lokale evenementen:** Kermis, jaarmarkt, stadfeest in Waddinxveen
+
+## Gewenste output
+
+Lever een overzichtelijke kalender die:
+
+1. **Chronologisch geordend** is per dag van de week
+
+2. Per dag de relevante **gedenkdagen en momenten** noemt
+
+3. Bij elk item een **korte toelichting** geeft
+
+**BELANGRIJK:** Toon ALLEEN wat relevant is:
+
+- Geen "Geen bijzonderheden" of "Geen specifieke feestdag" vermelden
+
+- Kopjes waar niets te melden valt, WEGLATEN
+
+- Als een dag geen bijzonderheden heeft, die dag WEGLATEN
+
+- Alleen concrete, feitelijke informatie opnemen
+
+- **Weer** en **Astronomie** alleen bij de eerste dag (zondag) vermelden
+
+## Bronnen
+
+Gebruik betrouwbare bronnen zoals:
+
+- heiligen.net (heiligenkalender)
+
+- chabad.org (Joodse kalender)
+
+- un.org/observances (VN-dagen)
+
+- rijksoverheid.nl (Nederlandse feestdagen en vakanties)
+
+- knmi.nl (weer)
+
+- timeanddate.com (astronomie)
+
+## Markdown formatting
+
+**BELANGRIJK:** Zorg voor correcte markdown formatting:
+
+- Plaats ALTIJD een lege regel VOOR en NA elke kop (##, ###)
+
+- Plaats ALTIJD een lege regel VOOR een lijst met bullet points
+
+- Plaats ALTIJD een lege regel tussen verschillende secties
+
+- Elke bullet point moet op een eigen regel staan
+
+## Voorbeeld format
+
+```markdown
+### Zondag 4 januari 2026 (preken op deze datum)
+
+**Kerkelijk:**
+
+- Epifanie - Openbaring van de Heer
+
+- Gedachtenis H. Hendrikka van Delft (vrouwenheilige, mystica, †1260)
+
+**Joods:**
+
+- 15 Tevet 5786 - Fast of the Tenth of Tevet
+
+**Weer:**
+
+- Overwegend bewolkt, 4°C, kans op lichte sneeuw
+
+**Astronomie:**
+
+- Zonsopgang 08:32, zonsondergang 16:35
+
+---
+
+### Maandag 5 januari 2026
+
+**Kerkelijk:**
+
+- Ochtend na Epifanie - de Heer openbaart zich aan de wereld
+
+**Joods:**
+
+- 16 Tevet 5786
+
+---
+
+### Dinsdag 6 januari 2026
+
+**Kerkelijk:**
+
+- Heilig Drie-eenheid (in sommige kerken)
+
+**Internationaal:**
+
+- Internationale Dag van de Gezondheidswaakhond
+```
+
+Toon alleen dagen waarop iets te melden valt.
+
+**BELANGRIJK:** Vermijd clichématige afsluitingen. Stop bij de inhoud.
+
+## JSON Output Schema
+
+Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
+
+```json
+{
+  "week_van": "string - bijv. '4-9 januari 2026'",
+  "dagen": [
+    {
+      "datum": "string - bijv. 'Zondag 4 januari 2026'",
+      "dag": "string - zondag|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag",
+      "is_preekzondag": "boolean",
+      "kerkelijk": [
+        {
+          "naam": "string - bijv. '3e Advent (Gaudete)'",
+          "type": "string - zondag|heilige|martelaar|herdenking",
+          "toelichting": "string|null"
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "string|null - bijv. '16 Kislev 5785'",
+        "feestdag": "string|null",
+        "parasja": "string|null - welke Tora-portie?",
+        "toelichting": "string|null"
+      },
+      "internationaal": [
+        {
+          "naam": "string - bijv. 'Internationale Theedag'",
+          "organisatie": "string - VN|UNESCO|Anders",
+          "relevantie": "string|null"
+        }
+      ],
+      "nationaal": [
+        {
+          "naam": "string",
+          "land": "string - NL|BE",
+          "type": "string - feestdag|herdenking|traditie"
+        }
+      ],
+      "vakantie": {
+        "schoolvakantie": "string|null - bijv. 'Kerstvakantie Noord'",
+        "regio": "string|null"
+      },
+      "weer": {
+        "verwachting": "string|null - alleen op zondag invullen",
+        "temperatuur": "string|null",
+        "neerslag": "string|null",
+        "bijzonderheden": "string|null"
+      },
+      "astronomie": {
+        "zonsopgang": "string|null - alleen op zondag",
+        "zonsondergang": "string|null",
+        "maanfase": "string|null",
+        "bijzonderheden": "string|null"
+      },
+      "overig": [
+        {
+          "categorie": "string - sport|cultuur|historisch|maatschappelijk|lokaal",
+          "naam": "string",
+          "toelichting": "string|null"
+        }
+      ]
+    }
+  ],
+  "aandachtspunten_predikant": [
+    "string - relevante momenten om te noemen of rekening mee te houden"
+  ]
+}
+```
+
+**BELANGRIJK:**
+- Retourneer ALLEEN valide JSON, geen markdown of toelichting.
+- Laat lege arrays `[]` of `null` voor dagen/categorieën zonder inhoud.
+- Weer en astronomie ALLEEN op de zondag.
+

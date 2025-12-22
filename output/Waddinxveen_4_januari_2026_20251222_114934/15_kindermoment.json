@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "title": "Kindermoment",
+    "filename": "15_kindermoment",
+    "generated_at": "2025-12-22T15:20:24.994242",
+    "user_input": {
+      "plaatsnaam": "Waddinxveen",
+      "gemeente": "Brugkerk",
+      "datum": "4 januari 2026",
+      "adres": "Kerkweg-Oost 232, 2741 HA Waddinxveen",
+      "website": "https://www.hgpknwaddinxveen.nl/brugkerk"
+    }
+  },
+  "kindermoment_opties": [
+    {
+      "type": "Klassiek",
+      "titel": "De Grote Verandering",
+      "object": {
+        "naam": "Een maïskorrel (en een bakje popcorn)",
+        "uitleg": "Een maïskorrel is hard, klein en ziet er altijd hetzelfde uit. Maar als er hitte bij komt, verandert hij totaal. Dit staat symbool voor de wijzen die 'langs een andere weg' teruggingen: ze waren veranderd door de ontmoeting met Jezus."
+      },
+      "focus_schriftlezing": "Matteüs 2:12 - \"...wijken zij langs een andere weg uit naar hun land.\"",
+      "verhaal_script": "(Regie: Laat de kinderen naar voren komen en laat ze een paar harde maïskorrels zien op je hand.) \n\n\"Kijk eens wat ik hier heb. Gewone maïs. Hard hè? Je kunt er bijna je tanden op stukbijten. Deze korrels zijn een beetje zoals de wijzen uit het verhaal. Ze wisten heel veel, ze hadden hun koffers gepakt en ze gingen op reis. Maar ze bleven eigenlijk een beetje hetzelfde: slimme mannen op kamelen.\"\n\n(Regie: Pak nu de popcorn erbij.) \n\n\"Maar toen vonden ze het Kindje Jezus. En Matteüs schrijft dat ze daarna 'langs een andere weg' teruggingen. Dat betekent niet alleen dat ze een ander paadje op de kaart kozen omdat Herodes boos was. Het betekent dat ze zelf anders waren geworden. Net als deze maïs! Die is in de pan geweest, het vuur van Gods liefde kwam erbij, en 'POP!', nu is hij zacht, wit en totaal anders. Als je Jezus ontmoet, kun je niet meer op de oude, harde manier verder leven. Dan word je een 'popcorn-christen': verrassend en nieuw!\"\n\n(Regie: De kinderen krijgen na de dienst een klein zakje popcorn mee.)",
+      "afbeelding_idee": "Een macro-foto van een maïskorrel die precies op het punt staat om te ontploffen tot popcorn."
+    },
+    {
+      "type": "Actief",
+      "titel": "De Onzichtbare Kracht",
+      "object": {
+        "naam": "Sterke magneten en metalen paperclips",
+        "uitleg": "Een magneet zie je niet trekken, maar de kracht is onmiskenbaar. De ster werkte voor de wijzen als een magneet die hen naar het juiste huis trok."
+      },
+      "focus_schriftlezing": "Matteüs 2:9 - \"...en zie, de ster... is hun vooruitgegaan totdat hij komt en blijft staan boven waar het jongetje is geweest.\"",
+      "verhaal_script": "(Regie: Geef een paar kinderen een sterke magneet en de anderen een handje paperclips.) \n\n\"De wijzen liepen niet zomaar een beetje rond in de woestijn. Ze werden getrokken! Matteüs vertelt dat de ster 'voor hen uitging'. Het was alsof er een onzichtbaar touwtje aan hun hart zat. \n\nHoud die magneet maar eens boven de paperclips op de grond. Wat gebeurt er? (Wacht op reactie). Ze vliegen omhoog! Ze kunnen niet anders. Zo werkte die ster ook. Het was Gods magneet. \n\nLaten we eens kijken of wij ook 'getrokken' kunnen worden. Ik leg hier een magneet neer die 'Jezus' heet. Probeer met je paperclip-auto's eens de weg te vinden naar de magneet. Voel je hoe hij trekt? Soms voel je in je hart ook dat je iets goeds moet doen, of dat je even aan Jezus wilt denken. Dat is Gods magneetkracht. In dit nieuwe jaar mogen we proberen om die kracht te volgen, net als de wijzen.\"",
+      "afbeelding_idee": "Een artistieke weergave van magnetische veldlijnen die de vorm van een ster aannemen."
+    },
+    {
+      "type": "Gek/Onconventioneel",
+      "titel": "De Koning met de Prikkels",
+      "object": {
+        "naam": "Een Ananas",
+        "uitleg": "Een ananas heeft een natuurlijke 'kroon', maar hij is prikkelig en ziet er niet uit als een koning die je in een paleis verwacht. Dit doorbreekt het beeld van de koninklijke macht van Herodes."
+      },
+      "focus_schriftlezing": "Matteüs 2:2 - \"Waar is de koning van de Joden die onlangs geboren is?\"",
+      "verhaal_script": "(Regie: Kom op met een ananas in je armen alsof het een baby is.) \n\n\"Jongens en meiden, ik heb de Koning gevonden! Kijk maar, Hij heeft zelfs een kroon op zijn hoofd! (Wijs naar de bovenkant van de ananas). Wat vinden jullie ervan? Is dit een mooie koning? \n\n(Wacht op gelach of reacties). Hij is wel een beetje prikkelig hè? Als je hem een knuffel geeft, doet het pijn. Koning Herodes in het verhaal was ook zo'n 'prikkel-koning'. Hij wilde de baas zijn, hij was gemeen en iedereen was bang voor hem. Hij had een kroon van goud, maar een hart van stekels.\n\nMaar de wijzen zochten een andere Koning. Ze dachten dat ze die in het paleis zouden vinden, maar daar zat alleen de prikkel-koning. Ze moesten naar een gewoon huis. En daar vonden ze Jezus. Die had geen kroon van stekels, maar Hij was van binnen zo zoet als... nou ja, als een ananas! Je moet hem alleen durven openmaken. Jezus is een Koning die niet prikt, maar die je hart blij maakt. Zullen we dit jaar niet achter de prikkel-koningen aanlopen, maar achter de Koning die van binnen goed is?\"",
+      "afbeelding_idee": "Een grappige tekening van een ananas met een zonnebril op een troon, naast een kribbe."
+    }
+  ]
+}

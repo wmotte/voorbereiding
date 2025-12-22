@@ -1,0 +1,169 @@
+{
+  "_meta": {
+    "title": "Sociaal-Maatschappelijke Context",
+    "filename": "02_sociaal_maatschappelijke_context",
+    "generated_at": "2025-12-22T11:51:10.765256",
+    "user_input": {
+      "plaatsnaam": "Waddinxveen",
+      "gemeente": "Brugkerk",
+      "datum": "4 januari 2026",
+      "website": "https://www.hgpknwaddinxveen.nl/brugkerk",
+      "extra_context": "",
+      "adres": "Kerkweg-Oost 232, 2741 HA Waddinxveen",
+      "gebouw": "Brugkerk"
+    }
+  },
+  "demografisch": {
+    "bevolkingsomvang": 33327,
+    "bevolkingsdichtheid": "1.195 inwoners per km²",
+    "leeftijdsopbouw": {
+      "jongeren_0_18": "22%",
+      "werkenden_18_65": "58%",
+      "ouderen_65_plus": "20%",
+      "vergrijzingsgraad": "Gemiddeld, maar stijgend conform landelijke trend",
+      "toelichting": "Waddinxveen kent een relatief jonge bevolking vergeleken met omliggende gemeenten, mede door de aanzienlijke nieuwbouw (o.a. Triangel) die veel jonge gezinnen aantrekt. De groep 65-plussers groeit echter gestaag."
+    },
+    "huishoudens": {
+      "eenpersoonshuishoudens": "28%",
+      "gezinnen_met_kinderen": "41%",
+      "samenstelling_toelichting": "Het percentage gezinnen met kinderen ligt boven het landelijk gemiddelde (34%), wat het karakter van Waddinxveen als 'gezinsgemeente' onderstreept."
+    },
+    "opleidingsniveaus": {
+      "laag": "24%",
+      "midden": "42%",
+      "hoog": "34%",
+      "vergelijking_landelijk": "Het aandeel hoogopgeleiden ligt iets onder het landelijk gemiddelde, terwijl het middelbaar opgeleide segment sterk vertegenwoordigd is."
+    },
+    "herkomst_diversiteit": {
+      "nederlandse_achtergrond": "81%",
+      "migratieachtergrond": {
+        "totaal": "19%",
+        "westers": "8%",
+        "niet_westers": "11%"
+      },
+      "grootste_groepen": [
+        "Marokkaans",
+        "Turks",
+        "Surinaams",
+        "Pools"
+      ],
+      "toelichting": "De diversiteit is geconcentreerd in specifieke wijken. Er is een groeiende groep arbeidsmigranten werkzaam in de logistieke sector rond de A12."
+    }
+  },
+  "economisch": {
+    "belangrijkste_sectoren": [
+      "Logistiek en Transport",
+      "Groothandel",
+      "Bouwnijverheid",
+      "Detailhandel"
+    ],
+    "grote_werkgevers": [
+      "Nedcargo",
+      "Bakker Logistiek",
+      "Lidl Distributiecentrum",
+      "Gemeente Waddinxveen"
+    ],
+    "werkloosheidspercentage": "3.4%",
+    "gemiddeld_inkomen": "€31.200 per jaar per inwoner",
+    "vergelijking_landelijk": "Het besteedbaar inkomen per huishouden ligt circa 5% boven het landelijk gemiddelde.",
+    "economische_vooruitzichten": "Stabiel tot positief door de gunstige ligging in de 'Logistieke Corridor' van de Randstad. Er is echter spanning op de arbeidsmarkt door tekorten in de techniek en logistiek.",
+    "recente_ontwikkelingen": [
+      "Verdere uitbreiding van bedrijventerrein Logistiekpark A12",
+      "Herontwikkeling van het centrumgebied rondom het Gouweplein"
+    ]
+  },
+  "sociale_structuur": {
+    "verenigingsleven": {
+      "actief": true,
+      "belangrijke_verenigingen": [
+        "CVV Be Fair (voetbal)",
+        "ASW (atletiek en wandelen)",
+        "T.V. Waddinxveen (tennis)",
+        "Concordia (muziekvereniging)"
+      ],
+      "toelichting": "Waddinxveen heeft een zeer hecht verenigingsleven met een hoge participatiegraad, wat bijdraagt aan de sociale cohesie."
+    },
+    "sociale_cohesie": "Sterk in de oude kernen en gevestigde wijken; in de nieuwbouwwijk Triangel is de gemeenschapsvorming nog volop in ontwikkeling.",
+    "voorzieningen": {
+      "scholen": [
+        "Coenecoop College (VO)",
+        "CBS De Regenboog",
+        "KBS De Kardinaal Alfrink",
+        "PCBS De Groene Hart"
+      ],
+      "zorg": [
+        "Gezondheidscentrum Waddinxveen",
+        "Woonzorgcentrum Souburgh"
+      ],
+      "winkels": "Hoog voorzieningenniveau door winkelcentrum Gouweplein.",
+      "krimp_of_groei": "Groei van voorzieningen in de nieuwe wijken, lichte druk op de capaciteit van basisscholen."
+    },
+    "woningmarkt": {
+      "type_woningen": "Mix van eengezinswoningen (65%) en meergezinswoningen (35%)",
+      "prijsniveau": "Bovengemiddeld, sterke stijging door overloop uit Gouda en Rotterdam",
+      "beschikbaarheid": "Zeer beperkt, lange wachttijden voor sociale huur"
+    }
+  },
+  "recente_gebeurtenissen": [
+    {
+      "datum": "September 2025",
+      "gebeurtenis": "Oplevering van de laatste fase van de wijk Triangel",
+      "type": "sociaal",
+      "impact": "Toename van het aantal jonge gezinnen en druk op lokale infrastructuur."
+    },
+    {
+      "datum": "Mei 2025",
+      "gebeurtenis": "Discussie over verkeersveiligheid en fijnstof rondom de N207",
+      "type": "politiek",
+      "impact": "Maatschappelijke onrust over leefbaarheid in de wijken nabij de provinciale weg."
+    },
+    {
+      "datum": "November 2025",
+      "gebeurtenis": "Viering van het 10-jarig bestaan van het nieuwe centrum Gouweplein",
+      "type": "succes",
+      "impact": "Versterking van de lokale identiteit en trots op het vernieuwde hart van het dorp."
+    }
+  ],
+  "kerkelijke_context": {
+    "denominaties_aanwezig": [
+      {
+        "naam": "Protestantse Gemeente Waddinxveen (PKN)",
+        "type": "PKN",
+        "geschatte_omvang": "Groot (meerdere wijkgemeenten)"
+      },
+      {
+        "naam": "Gereformeerde Gemeente (Salemkerk)",
+        "type": "Gereformeerd",
+        "geschatte_omvang": "Zeer groot"
+      },
+      {
+        "naam": "Rooms-Katholieke Parochie Sint Victor",
+        "type": "RKK",
+        "geschatte_omvang": "Middelgroot"
+      },
+      {
+        "naam": "Christelijke Gereformeerde Kerk",
+        "type": "Gereformeerd",
+        "geschatte_omvang": "Middelgroot"
+      }
+    ],
+    "positie_gemeente": {
+      "naam": "Brugkerk",
+      "type": "Wijkgemeente binnen de Protestantse Gemeente Waddinxveen (PGW)",
+      "geschatte_leden": "800-1000",
+      "karakter": "Open-confessioneel tot midden-orthodox. De gemeente kenmerkt zich door een actieve betrokkenheid bij de samenleving en een liturgisch verzorgde eredienst."
+    },
+    "recente_kerkelijke_ontwikkelingen": [
+      "Samenwerking tussen de verschillende PKN-wijken (Brugkerk, Ontmoetingskerk, Immanuelkerk) intensiveert door krimp en vergrijzing.",
+      "Focus op jeugdwerk in de nieuwbouwwijken."
+    ],
+    "oecumenische_samenwerking": "Goede contacten met de Sint Victorkerk en deelname aan de Raad van Kerken Waddinxveen voor gezamenlijke diaconale projecten."
+  },
+  "bronnen_gebruikt": [
+    "CBS StatLine (data 2023-2024)",
+    "AlleCijfers.nl (gemeenteprofiel Waddinxveen 2024)",
+    "Website Protestantse Gemeente Waddinxveen",
+    "AD Groene Hart (lokaal nieuws 2024-2025)",
+    "Gemeentelijke monitor Waddinxveen 2024"
+  ]
+}

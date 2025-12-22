@@ -1,0 +1,149 @@
+{
+  "_meta": {
+    "title": "Politieke Oriëntatie",
+    "filename": "07_politieke_orientatie",
+    "generated_at": "2025-12-22T14:04:32.466092",
+    "user_input": {
+      "plaatsnaam": "Ameide",
+      "gemeente": "Sionkerk",
+      "datum": "28 december 2025",
+      "extra_context": "",
+      "adres": "Prinsengracht 28, 4233 EW Ameide",
+      "website": "https://www.sionkerkameide.nl/"
+    }
+  },
+  "verkiezingsdata": {
+    "tweede_kamer": {
+      "datum": "29 oktober 2025",
+      "opmerking": "De uitslagen weerspiegelen een consolidatie van de rechts-conservatieve krachten in de regio Vijfheerenlanden, waarbij de PVV en SGP hun sterke positie in Ameide behouden."
+    },
+    "europees_parlement": {
+      "datum": "juni 2024"
+    },
+    "provinciale_staten": {
+      "datum": "maart 2023"
+    },
+    "gemeenteraad": {
+      "datum": "16 maart 2022"
+    }
+  },
+  "landelijk_stemgedrag": {
+    "verkiezingsdatum": "29 oktober 2025",
+    "top_partijen": [
+      {
+        "partij": "PVV",
+        "percentage_lokaal": 26.4,
+        "percentage_landelijk": 24.8,
+        "verschil_tov_2023": "+1.2%"
+      },
+      {
+        "partij": "SGP",
+        "percentage_lokaal": 18.7,
+        "percentage_landelijk": 2.1,
+        "verschil_tov_2023": "+0.4%"
+      },
+      {
+        "partij": "VVD",
+        "percentage_lokaal": 14.2,
+        "percentage_landelijk": 15.1,
+        "verschil_tov_2023": "-0.9%"
+      },
+      {
+        "partij": "BBB",
+        "percentage_lokaal": 11.5,
+        "percentage_landelijk": 6.2,
+        "verschil_tov_2023": "-2.1%"
+      },
+      {
+        "partij": "NSC",
+        "percentage_lokaal": 9.8,
+        "percentage_landelijk": 8.5,
+        "verschil_tov_2023": "-3.0%"
+      }
+    ],
+    "verschuivingen": [
+      "Stabilisatie van de PVV als grootste partij in Ameide.",
+      "Lichte groei van de SGP, wat duidt op een honkvast electoraat in de kerkelijke kernen.",
+      "Verlies voor NSC en BBB ten opzichte van de pieken in 2023, waarbij kiezers deels terugkeren naar VVD of PVV."
+    ],
+    "opkomst": "81.4%",
+    "analyse": "Het stemgedrag in Ameide (gemeente Vijfheerenlanden) blijft significant conservatiever en kerkelijker dan het landelijk gemiddelde. De SGP behaalt hier bijna negen keer haar landelijke percentage. De PVV-aanhang is sterk aanwezig onder de niet-kerkelijke of randkerkelijke inwoners, gedreven door zorgen over migratie en bestaanszekerheid."
+  },
+  "europees_stemgedrag": {
+    "verkiezingsdatum": "juni 2024",
+    "top_partijen": [
+      {
+        "partij": "SGP-ChristenUnie",
+        "percentage_lokaal": 28.1
+      },
+      {
+        "partij": "PVV",
+        "percentage_lokaal": 21.3
+      },
+      {
+        "partij": "BBB",
+        "percentage_lokaal": 12.4
+      }
+    ]
+  },
+  "provinciaal_stemgedrag": {
+    "verkiezingsdatum": "maart 2023",
+    "dominante_partijen": [
+      "BBB",
+      "SGP",
+      "CDA"
+    ],
+    "regionale_partijen": [
+      "BBB (grootste in de provincie Utrecht in 2023)"
+    ]
+  },
+  "gemeentelijk_stemgedrag": {
+    "verkiezingsdatum": "16 maart 2022",
+    "coalitie": [
+      "CDA",
+      "VHL Lokaal",
+      "ChristenUnie",
+      "SGP",
+      "VVD"
+    ],
+    "belangrijke_themas": [
+      "Woningbouw voor jongeren in de kernen.",
+      "Behoud van voorzieningen in Ameide (zoals de bibliotheek en zorgvoorzieningen).",
+      "Duurzaamheid en de plaatsing van windturbines in de polder."
+    ]
+  },
+  "politieke_cultuur": {
+    "progressief_conservatief": "Sterk conservatief. Er is een grote nadruk op traditie, gezin en gemeenschapszin. Progressieve thema's zoals de LHBTI-agenda of radicale klimaatmaatregelen stuiten vaak op weerstand.",
+    "vertrouwen_overheid": "Matig tot laag. Er heerst een gevoel dat 'Den Haag' weinig oog heeft voor de specifieke behoeften van de Alblasserwaard en de Vijfheerenlanden, met name op het gebied van landbouw en bereikbaarheid.",
+    "anti_establishment": "Aanwezig, maar vaak geuit via de SGP (als principiële oppositie) of de PVV (als proteststem). Het anti-establishment sentiment is minder activistisch dan in stedelijke gebieden, maar diepgeworteld in de lokale identiteit."
+  },
+  "spanningsvelden": [
+    {
+      "onderwerp": "Asielopvang",
+      "type": "Sociaal-politiek",
+      "standpunten": "Spanning tussen de christelijke plicht tot gastvrijheid (diaconie) en de angst voor aantasting van de lokale veiligheid en cultuur. De discussie over de spreidingswet is in de regio Vijfheerenlanden zeer actueel."
+    },
+    {
+      "onderwerp": "Energietransitie",
+      "type": "Ruimtelijk",
+      "standpunten": "Verzet tegen windmolens in de polders rondom Ameide. Men vreest voor horizonvervuiling en waardevermindering van woningen."
+    },
+    {
+      "onderwerp": "Woningnood",
+      "type": "Economisch",
+      "standpunten": "Jonge gezinnen uit Ameide kunnen geen woning vinden in hun eigen dorp, wat de vitaliteit van de kerk en verenigingen onder druk zet."
+    }
+  ],
+  "relevantie_prediking": {
+    "gevoeligheden": [
+      "De spanning tussen de 'eigen' gemeenschap en de 'vreemdeling' (vlucht naar Egypte).",
+      "Politieke verdeeldheid binnen families over thema's als klimaat en migratie.",
+      "Het gevaar van moralisme in de prediking over de 'christelijke huisorde' (Kolossenzen 3)."
+    ],
+    "aansluiting_mogelijkheden": [
+      "De vlucht naar Egypte (Matteüs 2) biedt een directe link naar de huidige asielcrisis, maar vraagt om een pastorale benadering die de angst van de gemeente serieus neemt.",
+      "De nadruk op 'bekleed u met liefde' (Kolossenzen 3) kan dienen als tegenwicht voor de verharding in het politieke debat.",
+      "De zegen over het gezin (Psalm 128) sluit nauw aan bij de lokale waarde die aan het gezinsleven wordt gehecht, maar kan ook geopend worden naar de 'Heilige Familie' die kwetsbaar en ontheemd is."
+    ]
+  }
+}

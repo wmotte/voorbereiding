@@ -1,0 +1,211 @@
+{
+  "_meta": {
+    "title": "Zondag van het Kerkelijk Jaar",
+    "filename": "01_zondag_kerkelijk_jaar",
+    "generated_at": "2025-12-22T14:02:06.137083",
+    "user_input": {
+      "plaatsnaam": "Ameide",
+      "gemeente": "Sionkerk",
+      "datum": "28 december 2025",
+      "extra_context": "",
+      "adres": "Prinsengracht 28, 4233 EW Ameide",
+      "website": "https://www.sionkerkameide.nl/"
+    }
+  },
+  "positie_kerkelijk_jaar": {
+    "zondag_naam": "Zondag na Kerstmis (Feest van de Heilige Familie)",
+    "liturgische_periode": "Kersttijd",
+    "weken_tot_hoofdfeest": "3 dagen na Kerstmis",
+    "leesrooster_jaar": "A",
+    "dominant_evangelie": "Matteüs"
+  },
+  "traditionele_naam": {
+    "latijnse_naam": "Sanctae Familiae Jesu, Mariae et Ioseph",
+    "oorsprong": "Hoewel de zondag na Kerst traditioneel geen specifieke Latijnse naam heeft uit de introïtus zoals de zondagen in de Advent, staat deze dag in het oecumenisch leesrooster (gebaseerd op het Romeins Missaal) bekend als het feest van de Heilige Familie.",
+    "nederlandse_vertaling": "Feest van de Heilige Familie",
+    "volksnamen": [
+      "Zondag onder het Octaaf van Kerstmis"
+    ]
+  },
+  "bijzondere_zondag_pkn": {
+    "is_bijzonder": false,
+    "naam": null,
+    "toelichting": "Binnen de PKN-kalender is dit een reguliere zondag in de Kersttijd. Er is geen landelijke themazondag aan gekoppeld, maar in de praktijk staat deze zondag vaak in het teken van de afsluiting van het kalenderjaar en de overgang naar de jaarwisseling."
+  },
+  "liturgische_kleur": {
+    "kleur": "wit",
+    "symboliek": "Wit is de kleur van de Christusfeesten, vreugde, licht en reinheid. Het markeert de feestelijke voortzetting van de Kersttijd.",
+    "praktische_suggesties": [
+      "Wit antependium en witte stola.",
+      "De kerstversiering en de kerstboom blijven aanwezig in de Sionkerk.",
+      "Witte bloemschikking met accenten van goud of zilver om het feestelijke karakter te benadrukken."
+    ]
+  },
+  "lezingen": {
+    "eerste_lezing": {
+      "referentie": "Sirach 3,2-6.12-14",
+      "boek": "Sirach",
+      "hoofdstuk": 3,
+      "verzen": "2-6.12-14",
+      "thema": "Eerbied voor ouders als fundament van een gezegend leven."
+    },
+    "epistel": {
+      "referentie": "Kolossenzen 3,12-21",
+      "boek": "Kolossenzen",
+      "hoofdstuk": 3,
+      "verzen": "12-21",
+      "thema": "De christelijke levenswandel binnen het gezin en de gemeenschap: bekleed u met liefde."
+    },
+    "evangelie": {
+      "referentie": "Matteüs 2,13-15.19-23",
+      "boek": "Matteüs",
+      "hoofdstuk": 2,
+      "verzen": "13-15.19-23",
+      "thema": "De vlucht naar Egypte en de terugkeer naar Nazaret: God beschermt het kind."
+    },
+    "psalm": {
+      "referentie": "Psalm 128",
+      "nummer": 128,
+      "verzen": "1-5",
+      "antifoon": "Welzalig is een ieder die de Heer vreest."
+    },
+    "alternatieve_lezingen": [
+      {
+        "referentie": "1 Samuël 1,20-22.24-28",
+        "reden": "Focus op de toewijding van een kind aan God (geboorte van Samuël)."
+      }
+    ],
+    "thematische_samenhang": "De rode draad is de 'huisorde' van God. Terwijl Sirach en Kolossenzen spreken over de ethiek en onderlinge verhoudingen in het gezin, toont het evangelie de kwetsbaarheid en de goddelijke leiding van de Heilige Familie als vluchtelingen. De psalm bezingt de zegen die rust op een godvruchtig huisgezin."
+  },
+  "thematiek": {
+    "centraal_thema": "Geborgenheid en kwetsbaarheid in het gezin van God.",
+    "stemming": "vreugde",
+    "karakter_zondag": "Huiselijk, bezinnend op relaties, maar met een scherp randje door de vlucht naar Egypte.",
+    "rode_draad_liturgisch_jaar": "Na de geboorte van Christus (Kerst) volgt direct de confrontatie met de wereldmacht (Herodes) en de noodzaak tot vluchten, wat vooruitwijst naar het lijden maar ook naar de vervulling van de Schriften.",
+    "centrale_geloofsvragen": [
+      "Hoe geven wij in onze moderne gezinnen en gemeenschappen vorm aan de 'bekleding met liefde'?",
+      "Wat betekent het dat de Messias als vluchteling zijn leven begon?",
+      "Hoe eren wij onze ouders en ouderen in een individualistische tijd?"
+    ]
+  },
+  "historische_achtergrond": {
+    "oorsprong_vroege_kerk": "De zondag na Kerst viel oorspronkelijk samen met de gedachtenis van David, Jakobus en Jozef in de oosterse traditie.",
+    "hervormde_traditie": "In de hervormde traditie (zoals Ameide) lag de nadruk historisch op de tekstuele uitleg van het kerstevangelie, vaak met aandacht voor de menswording en de nederigheid van Christus.",
+    "gereformeerde_traditie": "Focus op de verbondsmatige aspecten van het gezin en de opvoeding, aansluitend bij de lezingen uit Sirach en Kolossenzen.",
+    "lutherse_traditie": "Sterke nadruk op de 'Christelijke huisorde' (Haustafel) zoals die in de epistellezing naar voren komt.",
+    "oecumenische_dimensie": "Het feest van de Heilige Familie is een relatief jonge toevoeging (1921) aan de Romeinse kalender, maar de lezingen zijn breed geaccepteerd in het Gemeenschappelijk Leesrooster vanwege hun pastorale relevantie."
+  },
+  "liedsuggesties": {
+    "_verificatie_opmerking": "Alle liederen zijn geverifieerd in het Liedboek 2013 en gecorrigeerd op basis van de officiële titels en nummering.",
+    "opening_intocht": [
+      {
+        "nummer": "Psalm 128",
+        "titel": "Welzalig wie de Heer vreest",
+        "eerste_regel": "Welzalig wie de Heer vreest, die wandelt in zijn wegen",
+        "toelichting": "De psalm van de zondag, passend bij de thematiek van zegen over het huisgezin."
+      },
+      {
+        "nummer": "Lied 477",
+        "titel": "Komt allen tezamen",
+        "eerste_regel": "Komt allen tezamen, jubelend van vreugde",
+        "toelichting": "Klassiek kerstlied dat de sfeer van de kersttijd vasthoudt."
+      }
+    ],
+    "kyrie_gloria": [
+      {
+        "nummer": "Lied 299e",
+        "titel": "Heer, ontferm u",
+        "eerste_regel": "Heer, ontferm u",
+        "toelichting": "Eenvoudig Kyrie passend bij de nuchtere sfeer na de kerstdagen."
+      },
+      {
+        "nummer": "Lied 305",
+        "titel": "Alle eer en alle glorie",
+        "eerste_regel": "Alle eer en alle glorie",
+        "toelichting": "Feestelijk Gloria om de lofzang van de engelen voort te zetten."
+      }
+    ],
+    "bij_lezingen": [
+      {
+        "nummer": "Lied 512",
+        "titel": "O Jezus, hoe vertrouwd en goed",
+        "eerste_regel": "O Jezus, hoe vertrouwd en goed",
+        "toelichting": "Reflectie op de naam van Jezus en zijn menselijke nabijheid."
+      },
+      {
+        "nummer": "Lied 473",
+        "titel": "Er is een roos ontloken",
+        "eerste_regel": "Er is een roos ontloken",
+        "toelichting": "Verwijst naar de vervulling van de profetieën, passend bij Matteüs 2."
+      }
+    ],
+    "credo": [
+      {
+        "nummer": "Lied 340b",
+        "titel": "Ik geloof in God de Vader",
+        "eerste_regel": "Ik geloof in God de Vader, de Almachtige",
+        "toelichting": "De gezongen apostolische geloofsbelijdenis."
+      }
+    ],
+    "collecte_gaven": [
+      {
+        "nummer": "Lied 365",
+        "titel": "Wij dragen onze gaven",
+        "eerste_regel": "Wij dragen onze gaven",
+        "toelichting": "Lied bij de gaven, passend bij de toewijding van het leven aan God."
+      }
+    ],
+    "zending_zegen": [
+      {
+        "nummer": "Lied 425",
+        "titel": "Vervuld van uw zegen",
+        "eerste_regel": "Vervuld van uw zegen gaan wij onze wegen",
+        "toelichting": "Een krachtig slotlied dat de zegen van de dienst verbindt met het dagelijks leven."
+      }
+    ]
+  },
+  "praktische_handvatten": {
+    "liturgische_orde_suggestie": "Volg de klassieke orde van de Sionkerk: Votum en Groet, Gebed om ontferming, Lofzang, Schriftlezingen, Prediking, Gebeden, Collecte en Zending/Zegen. Gezien de datum (28 dec) kan er ruimte zijn voor een kort moment van terugblik op het afgelopen year.",
+    "aanpassingen_periode": [
+      {
+        "element": "Gloria",
+        "aanpassing": "Uitbundig zingen",
+        "reden": "Het is nog steeds Kersttijd (octaaf)."
+      },
+      {
+        "element": "Halleluja",
+        "aanpassing": "Zingen voor het Evangelie",
+        "reden": "Feestelijke periode."
+      }
+    ],
+    "gebedsmotieven": [
+      "Gebed voor gezinnen in al hun diversiteit en gebrokenheid.",
+      "Voorbede voor vluchtelingen, in herinnering aan de vlucht naar Egypte.",
+      "Dankzegging voor de generaties die ons voorgingen (ouders/grootouders).",
+      "Vraag om wijsheid in de onderlinge omgang (Kolossenzen 3)."
+    ],
+    "kindernevendienst": {
+      "thema": "Een veilig huis",
+      "suggesties": [
+        "Vertel het verhaal van de vlucht naar Egypte met een koffer of reistas.",
+        "Maak een 'huis van liefde' van karton en schrijf op de muren wat daarvoor nodig is (geduld, vriendelijkheid, etc. uit Kolossenzen)."
+      ]
+    },
+    "visuele_elementen": [
+      "Projectie van een icoon of afbeelding van de vlucht naar Egypte.",
+      "Een opengeslagen Bijbel bij de lezing uit Sirach.",
+      "Witte bloemen met klimop (symbool voor trouw)."
+    ]
+  },
+  "dagelijks_leesrooster": {
+    "week_voorafgaand": [
+      "22 dec: 1 Samuël 1,24-28",
+      "23 dec: Maleachi 3,1-4.23-24",
+      "24 dec: 2 Samuël 7,1-16",
+      "25 dec: Kerstnacht/morgen lezingen",
+      "26 dec: Stefanus (Handelingen 6-7)",
+      "27 dec: Johannes (1 Johannes 1)"
+    ],
+    "verbinding_zondag": "De week begon met de toewijding van Samuël en de belofte aan David. Na de explosie van licht op Kerst en de ernst van het martelaarschap (Stefanus), keert de rust op deze zondag terug naar de huiselijke kring van Nazaret, waar de beloften in stilte groeien."
+  }
+}

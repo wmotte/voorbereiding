@@ -1,0 +1,257 @@
+{
+  "_meta": {
+    "title": "Kalender: Gedenkdagen en Bijzondere Momenten",
+    "filename": "11_kalender",
+    "generated_at": "2025-12-22T14:12:09.556578",
+    "user_input": {
+      "plaatsnaam": "Ameide",
+      "gemeente": "Sionkerk",
+      "datum": "28 december 2025",
+      "adres": "Prinsengracht 28, 4233 EW Ameide",
+      "website": "https://www.sionkerkameide.nl/"
+    }
+  },
+  "week_van": "28 december 2025 - 3 januari 2026",
+  "dagen": [
+    {
+      "datum": "Zondag 28 december 2025",
+      "dag": "zondag",
+      "is_preekzondag": true,
+      "kerkelijk": [
+        {
+          "naam": "Zondag na Kerstmis (Feest van de Heilige Familie)",
+          "type": "zondag",
+          "toelichting": "Focus op de menswording van Christus binnen de context van het gezin en de vlucht naar Egypte."
+        },
+        {
+          "naam": "Heilige Onschuldige Kinderen",
+          "type": "martelaar",
+          "toelichting": "Herdenking van de kinderen van Bethlehem die op last van Herodes werden gedood (Matteüs 2:16-18). Directe link met de evangelielezing van vandaag."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "8 Tevet 5786",
+        "feestdag": null,
+        "parasja": null,
+        "toelichting": null
+      },
+      "internationaal": [],
+      "nationaal": [],
+      "vakantie": {
+        "schoolvakantie": "Kerstvakantie",
+        "regio": "Heel Nederland"
+      },
+      "weer": {
+        "verwachting": "Licht wisselvallig winterweer met perioden van zon en enkele buien.",
+        "temperatuur": "Overdag 5°C, 's nachts 1°C",
+        "neerslag": "30% kans op lichte regen",
+        "bijzonderheden": "Matige wind uit het zuidwesten; kans op nachtvorst aan de grond."
+      },
+      "astronomie": {
+        "zonsopgang": "08:48",
+        "zonsondergang": "16:36",
+        "maanfase": "Wassende maan (90% verlicht)",
+        "bijzonderheden": "Korte daglichtperiode van 7 uur en 48 minuten."
+      },
+      "overig": [
+        {
+          "categorie": "maatschappelijk",
+          "naam": "Eindejaarsreflectie",
+          "toelichting": "Traditioneel moment in Ameide voor balansopmaak van het afgelopen jaar."
+        }
+      ]
+    },
+    {
+      "datum": "Maandag 29 december 2025",
+      "dag": "maandag",
+      "is_preekzondag": false,
+      "kerkelijk": [
+        {
+          "naam": "H. Thomas Becket",
+          "type": "heilige",
+          "toelichting": "Aartsbisschop van Canterbury en martelaar (†1170), vermoord vanwege zijn verdediging van de rechten van de kerk tegenover de staat."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "9 Tevet 5786",
+        "feestdag": null,
+        "parasja": null,
+        "toelichting": null
+      },
+      "internationaal": [],
+      "nationaal": [],
+      "vakantie": {
+        "schoolvakantie": "Kerstvakantie",
+        "regio": "Heel Nederland"
+      },
+      "weer": null,
+      "astronomie": null,
+      "overig": []
+    },
+    {
+      "datum": "Dinsdag 30 december 2025",
+      "dag": "dinsdag",
+      "is_preekzondag": false,
+      "kerkelijk": [
+        {
+          "naam": "H. Egwin van Worcester",
+          "type": "heilige",
+          "toelichting": "Bisschop (†717) bekend om zijn inzet voor weduwen en wezen, passend bij de thematiek van zorg voor de naaste."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "10 Tevet 5786",
+        "feestdag": "Asara B'Tevet (Vasten van 10 Tevet)",
+        "parasja": null,
+        "toelichting": "Een vastendag ter herdenking van het begin van de belegering van Jeruzalem door Nebukadnezar II."
+      },
+      "internationaal": [],
+      "nationaal": [],
+      "vakantie": {
+        "schoolvakantie": "Kerstvakantie",
+        "regio": "Heel Nederland"
+      },
+      "weer": null,
+      "astronomie": null,
+      "overig": []
+    },
+    {
+      "datum": "Woensdag 31 december 2025",
+      "dag": "woensdag",
+      "is_preekzondag": false,
+      "kerkelijk": [
+        {
+          "naam": "Oudejaarsavond / H. Silvester I",
+          "type": "herdenking",
+          "toelichting": "In de Sionkerk wordt traditioneel een oudejaarsdienst gehouden om 19:30 uur ter afsluiting van het jaar."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "11 Tevet 5786",
+        "feestdag": null,
+        "parasja": null,
+        "toelichting": null
+      },
+      "internationaal": [],
+      "nationaal": [
+        {
+          "naam": "Oudejaarsdag",
+          "land": "NL",
+          "type": "traditie"
+        }
+      ],
+      "vakantie": {
+        "schoolvakantie": "Kerstvakantie",
+        "regio": "Heel Nederland"
+      },
+      "weer": null,
+      "astronomie": null,
+      "overig": [
+        {
+          "categorie": "lokaal",
+          "naam": "Carbidshieten",
+          "toelichting": "In de polders rond Ameide en Tienhoven een veelvoorkomende traditie op oudejaarsdag."
+        }
+      ]
+    },
+    {
+      "datum": "Donderdag 1 januari 2026",
+      "dag": "donderdag",
+      "is_preekzondag": false,
+      "kerkelijk": [
+        {
+          "naam": "Naamgeving en Besnijdenis van de Heer",
+          "type": "herdenking",
+          "toelichting": "Acht dagen na de geboorte ontving Jezus zijn naam (Lukas 2:21). In de PKN vaak gemarkeerd met een nieuwjaarsdienst."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "12 Tevet 5786",
+        "feestdag": null,
+        "parasja": null,
+        "toelichting": null
+      },
+      "internationaal": [
+        {
+          "naam": "Werelddag van de Vrede",
+          "organisatie": "Anders",
+          "relevantie": "Geïnitieerd door de RKK, maar oecumenisch breed gedragen als gebedsmoment voor wereldvrede."
+        }
+      ],
+      "nationaal": [
+        {
+          "naam": "Nieuwjaarsdag",
+          "land": "NL",
+          "type": "feestdag"
+        }
+      ],
+      "vakantie": {
+        "schoolvakantie": "Kerstvakantie",
+        "regio": "Heel Nederland"
+      },
+      "weer": null,
+      "astronomie": null,
+      "overig": []
+    },
+    {
+      "datum": "Vrijdag 2 januari 2026",
+      "dag": "vrijdag",
+      "is_preekzondag": false,
+      "kerkelijk": [
+        {
+          "naam": "H. Basilius de Grote en H. Gregorius van Nazianze",
+          "type": "heilige",
+          "toelichting": "Kerkvaders uit de 4e eeuw die de basis legden voor de leer van de Drie-eenheid."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "13 Tevet 5786",
+        "feestdag": null,
+        "parasja": null,
+        "toelichting": null
+      },
+      "internationaal": [],
+      "nationaal": [],
+      "vakantie": {
+        "schoolvakantie": "Kerstvakantie",
+        "regio": "Heel Nederland"
+      },
+      "weer": null,
+      "astronomie": null,
+      "overig": []
+    },
+    {
+      "datum": "Zaterdag 3 januari 2026",
+      "dag": "zaterdag",
+      "is_preekzondag": false,
+      "kerkelijk": [
+        {
+          "naam": "Heilige Naam van Jezus",
+          "type": "herdenking",
+          "toelichting": "Focus op de kracht en betekenis van de naam Jezus ('God redt')."
+        }
+      ],
+      "joods": {
+        "hebreeuwse_datum": "14 Tevet 5786",
+        "feestdag": "Sabbat",
+        "parasja": "Vayechi (Genesis 47:28–50:26)",
+        "toelichting": "De parasja behandelt de laatste dagen van Jakob en zijn zegen over zijn zonen. Dit resoneert sterk met de lezing uit Sirach 3 over de eerbied voor ouders."
+      },
+      "internationaal": [],
+      "nationaal": [],
+      "vakantie": {
+        "schoolvakantie": "Kerstvakantie",
+        "regio": "Heel Nederland"
+      },
+      "weer": null,
+      "astronomie": null,
+      "overig": []
+    }
+  ],
+  "aandachtspunten_predikant": [
+    "De herdenking van de 'Onschuldige Kinderen' op 28 december versterkt de ernst van de evangelielezing over Herodes' dreiging.",
+    "De Joodse vastendag op 30 december (10 Tevet) herinnert aan de kwetsbaarheid van Jeruzalem, wat een link legt naar de ballingschap/vlucht van Jezus.",
+    "De parasja Vayechi (3 januari) over Jakob die zijn zonen zegent, biedt een prachtige parallel met de wijsheid uit Sirach 3 over de relatie tussen generaties.",
+    "Houd rekening met de overgang van de kersttijd naar de jaarwisseling; de gemeente bevindt zich in een 'tussenfase' van terugblik en vooruitzien."
+  ]
+}
