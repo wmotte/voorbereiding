@@ -2315,7 +2315,7 @@
                             if (value === null || value === undefined) continue;
 
                             if (key === 'zoekterm') {
-                                html += `<div style="margin-top: 6px;"><span class="search-term">${escapeHtml(value)}</span></div>`;
+                                html += `<div style="margin-top: 6px;"><span class="search-term">${processText(value)}</span></div>`;
                             } else if (Array.isArray(value)) {
                                 if (value.every(v => typeof v === 'string') && value.length <= 5) {
                                     html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${value.map(v => processText(v)).join(', ')}</div>`;
