@@ -64,7 +64,7 @@ python contextduiding.py
 ```bash
 python verdieping.py
 ```
-*   Kies een eerdere analyse. Haalt bijbelteksten op en genereert de theologische verdieping (08-14). Alle JSON-bestanden worden aan het einde gecombineerd in `combined_output.json`.
+*   Kies een eerdere analyse. Haalt bijbelteksten op en genereert de theologische verdieping (08-15). Alle JSON-bestanden worden aan het einde gecombineerd in `combined_output.json`.
 
 ### Stap 3: Resultaat
 Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
@@ -90,6 +90,7 @@ Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
 | 12 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
 | 13 | **Homiletische Analyse** | Preekschets volgens Lowry's narratieve methode (Hè?/Oops!, Oei.../Ugh!, etc.). |
 | 14 | **Gebeden** | Drempelgebed, Kyrie, Epiclese, Dankgebed en Voorbeden. |
+| 15 | **Kindermoment** | Drie creatieve opties (Klassiek, Actief, Gek) voor interactie met kinderen. |
 
 ---
 
