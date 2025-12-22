@@ -193,6 +193,5 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
 
 **BELANGRIJK:**
 - Retourneer ALLEEN valide JSON, geen markdown of toelichting.
-- Totale omvang ~1500-2000 woorden, verdeeld over de stadia.
 - Toon de waarom-keten EXPLICIET in oei_verdieping_ugh.
 - Benoem het type omkering EXPLICIET in aha_wending_aha.
