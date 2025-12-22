@@ -311,11 +311,16 @@ class LiturgischeAnalyseValidator:
                     self.errors.append(ValidationError(f"{section}.gebeden.{gebed}", f"Missing {gebed}", "warning"))
                 elif gebeden[gebed] is not None and isinstance(gebeden[gebed], dict):
                     gebed_data = gebeden[gebed]
-                    # Check gebed has tekst or gebedstekst
-                    if 'tekst' not in gebed_data and 'gebedstekst' not in gebed_data:
+                    # Check gebed has tekst, gebedstekst, or cirkels (for voorbeden)
+                    has_content = (
+                        'tekst' in gebed_data or
+                        'gebedstekst' in gebed_data or
+                        'cirkels' in gebed_data  # voorbeden uses cirkels structure
+                    )
+                    if not has_content:
                         self.errors.append(ValidationError(
                             f"{section}.gebeden.{gebed}",
-                            "Gebed should have 'tekst' or 'gebedstekst'",
+                            "Gebed should have 'tekst', 'gebedstekst', or 'cirkels'",
                             "warning"
                         ))
 
