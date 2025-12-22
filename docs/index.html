@@ -1856,6 +1856,18 @@
                             subSectionLabels[`personas-${persona.nummer || (index + 1)}`] = label;
                         });
                     }
+                } else if (key === '10_focus_en_functie') {
+                    // Special handling for Focus & Functie - show option names
+                    if (sectionData.opties && Array.isArray(sectionData.opties)) {
+                        sectionData.opties.forEach((optie, index) => {
+                            const titel = optie.korte_titel || `Optie ${index + 1}`;
+                            const nummer = optie.nummer ? `${optie.nummer}. ` : '';
+                            const label = `${nummer}${titel}`;
+
+                            subSections.push(`optie-${optie.nummer || (index + 1)}`);
+                            subSectionLabels[`optie-${optie.nummer || (index + 1)}`] = label;
+                        });
+                    }
                 } else {
                     // Default: get subsections from top-level keys
                     subSections = Object.keys(sectionData)
@@ -2425,7 +2437,8 @@
             let html = `<div class="data-group">`;
             html += `<div class="data-group-title">Opties</div>`;
 
-            opties.forEach(optie => {
+            opties.forEach((optie, index) => {
+                html += `<div id="section-10_focus_en_functie-optie-${optie.nummer || (index + 1)}" class="subsection-anchor"></div>`;
                 html += `<div class="focus-card">`;
 
                 // Header with number and title
