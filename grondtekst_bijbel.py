@@ -10,81 +10,80 @@ MISC_DIR = SCRIPT_DIR / "misc"
 BHS_PATH = MISC_DIR / "BHS.tsv"
 NA28_PATH = MISC_DIR / "NA28.tsv"
 
-# Mappings
-# Dutch Name -> BHS Name (or None if NT/Deutero)
+# Mappings - Keys are all lowercase for case-insensitive matching
 BHS_MAPPING = {
-    "Genesis": "Genesis",
-    "Exodus": "Exodus",
-    "Leviticus": "Leviticus",
-    "Numeri": "Numeri",
-    "Deuteronomium": "Deuteronomium",
-    "Jozua": "Josua",
-    "Rechters": "Judices",
-    "Rech": "Judices",
-    "Ruth": "Ruth",
-    "1 Samuël": "Samuel_I",
-    "2 Samuël": "Samuel_II",
-    "1 Koningen": "Reges_I",
-    "2 Koningen": "Reges_II",
-    "1 Kronieken": "Chronica_I",
-    "2 Kronieken": "Chronica_II",
-    "Ezra": "Esra",
-    "Nehemia": "Nehemia",
-    "Esther": "Esther",
-    "Job": "Iob",
-    "Psalmen": "Psalmi",
-    "Psalm": "Psalmi",
-    "Spreuken": "Proverbia",
-    "Prediker": "Ecclesiastes",
-    "Hooglied": "Canticum",
-    "Jesaja": "Jesaia",
-    "Jeremia": "Jeremia",
-    "Klaagliederen": "Threni",
-    "Ezechiël": "Ezechiel",
-    "Daniël": "Daniel",
-    "Hosea": "Hosea",
-    "Joël": "Joel",
-    "Amos": "Amos",
-    "Obadja": "Obadia",
-    "Jona": "Jona",
-    "Micha": "Micha",
-    "Nahum": "Nahum",
-    "Habakuk": "Habakuk",
-    "Sefanja": "Zephania",
-    "Haggai": "Haggai",
-    "Zacharia": "Sacharia",
-    "Maleachi": "Maleachi"
+    "genesis": "Genesis",
+    "exodus": "Exodus",
+    "leviticus": "Leviticus",
+    "numeri": "Numeri",
+    "deuteronomium": "Deuteronomium",
+    "jozua": "Josua",
+    "rechters": "Judices",
+    "rech": "Judices",
+    "ruth": "Ruth",
+    "1 samuël": "Samuel_I", "1 samuel": "Samuel_I",
+    "2 samuël": "Samuel_II", "2 samuel": "Samuel_II",
+    "1 koningen": "Reges_I",
+    "2 koningen": "Reges_II",
+    "1 kronieken": "Chronica_I",
+    "2 kronieken": "Chronica_II",
+    "ezra": "Esra",
+    "nehemia": "Nehemia",
+    "esther": "Esther",
+    "job": "Iob",
+    "psalmen": "Psalmi",
+    "psalm": "Psalmi",
+    "spreuken": "Proverbia",
+    "prediker": "Ecclesiastes",
+    "hooglied": "Canticum",
+    "jesaja": "Jesaia",
+    "jeremia": "Jeremia",
+    "klaagliederen": "Threni",
+    "ezechiël": "Ezechiel", "ezechiel": "Ezechiel",
+    "daniël": "Daniel", "daniel": "Daniel",
+    "hosea": "Hosea",
+    "joël": "Joel", "joel": "Joel",
+    "amos": "Amos",
+    "obadja": "Obadia",
+    "jona": "Jona",
+    "micha": "Micha",
+    "nahum": "Nahum",
+    "habakuk": "Habakuk",
+    "sefanja": "Zephania",
+    "haggai": "Haggai",
+    "zacharia": "Sacharia",
+    "maleachi": "Maleachi"
 }
 
-# Dutch Name -> NA28 Code
+# Dutch Name -> NA28 Code (lowercase keys)
 NA28_MAPPING = {
-    "Matteüs": "MAT",
-    "Marcus": "MRK",
-    "Lucas": "LUK",
-    "Johannes": "JHN",
-    "Handelingen": "ACT",
-    "Romeinen": "ROM",
-    "1 Korintiërs": "1CO",
-    "2 Korintiërs": "2CO",
-    "Galaten": "GAL",
-    "Efeziërs": "EPH",
-    "Filippenzen": "PHP",
-    "Kolossenzen": "COL",
-    "1 Tessalonicenzen": "1TH",
-    "2 Tessalonicenzen": "2TH",
-    "1 Timoteüs": "1TI",
-    "2 Timoteüs": "2TI",
-    "Titus": "TIT",
-    "Filemon": "PHM",
-    "Hebreeën": "HEB",
-    "Jakobus": "JAS",
-    "1 Petrus": "1PE",
-    "2 Petrus": "2PE",
-    "1 Johannes": "1JN",
-    "2 Johannes": "2JN",
-    "3 Johannes": "3JN",
-    "Judas": "JUD",
-    "Openbaring": "REV"
+    "matteüs": "MAT", "matteus": "MAT", "mattheüs": "MAT",
+    "marcus": "MRK",
+    "lucas": "LUK",
+    "johannes": "JHN",
+    "handelingen": "ACT",
+    "romeinen": "ROM",
+    "1 korintiërs": "1CO", "1 korintiers": "1CO",
+    "2 korintiërs": "2CO", "2 korintiers": "2CO",
+    "galaten": "GAL",
+    "efeziërs": "EPH", "efeze": "EPH",
+    "filippenzen": "PHP",
+    "kolossenzen": "COL",
+    "1 tessalonicenzen": "1TH",
+    "2 tessalonicenzen": "2TH",
+    "1 timoteüs": "1TI", "1 timoteus": "1TI",
+    "2 timoteüs": "2TI", "2 timoteus": "2TI",
+    "titus": "TIT",
+    "filemon": "PHM",
+    "hebreeën": "HEB",
+    "jakobus": "JAS",
+    "1 petrus": "1PE",
+    "2 petrus": "2PE",
+    "1 johannes": "1JN",
+    "2 johannes": "2JN",
+    "3 johannes": "3JN",
+    "judas": "JUD",
+    "openbaring": "REV"
 }
 
 # Cache for loaded texts
@@ -169,10 +168,10 @@ def load_na28():
 
 def parse_reference(reference):
     """
-    Parses a reference string like "Genesis 1:1-5" or "Matteüs 5,1-12".
+    Parses a reference string like "Genesis 1:1-5" or "Psalm 122".
     Returns (book_nl, chapter, verse_start, verse_end).
+    If no verses are given, verse_start and verse_end are None.
     """
-    # Regex to handle variations like "1 Koningen 12,3", "Jesaja 2:1-5", "Psalm 122"
     match = re.match(r"^\s*((?:\d\s)?[a-zA-Zëïüöä\s]+?)\s+(\d+)(?:[,.:\s]+(\d+)(?:[-–](\d+))?)?\s*$", reference)
     if not match:
         return None
@@ -180,9 +179,13 @@ def parse_reference(reference):
     book_nl = match.group(1).strip()
     try:
         chapter = int(match.group(2))
-        # Handle references with only book and chapter (e.g. "Psalm 122")
-        verse_start = int(match.group(3)) if match.group(3) else 1
-        verse_end = int(match.group(4)) if match.group(4) else verse_start
+        if match.group(3):
+            verse_start = int(match.group(3))
+            verse_end = int(match.group(4)) if match.group(4) else verse_start
+        else:
+            # No verse specified, indicates whole chapter
+            verse_start = None
+            verse_end = None
     except (ValueError, IndexError):
         return None
     
@@ -198,19 +201,23 @@ def get_grondtekst(reference):
         return None
         
     book_nl, chapter, v_start, v_end = parsed
+    book_key = book_nl.lower()
     
     # Try BHS (OT)
-    if book_nl in BHS_MAPPING:
-        bhs_name = BHS_MAPPING[book_nl]
+    if book_key in BHS_MAPPING:
+        bhs_name = BHS_MAPPING[book_key]
         bhs_data = load_bhs()
         
         if bhs_name in bhs_data and chapter in bhs_data[bhs_name]:
             verses = []
-            # Handle potential verse ranges that go beyond what we naively parsed? 
-            # No, assume the parser captured the requested range.
-            # But ensure we don't crash if a verse is missing.
             
-            for v in range(v_start, v_end + 1):
+            verse_iterator = []
+            if v_start is None: # Whole chapter
+                verse_iterator = sorted(bhs_data[bhs_name][chapter].keys())
+            else: # Specific range
+                verse_iterator = range(v_start, v_end + 1)
+
+            for v in verse_iterator:
                 if v in bhs_data[bhs_name][chapter]:
                     verses.append({
                         "verse": v,
@@ -228,13 +235,20 @@ def get_grondtekst(reference):
                 }
 
     # Try NA28 (NT)
-    if book_nl in NA28_MAPPING:
-        na28_code = NA28_MAPPING[book_nl]
+    if book_key in NA28_MAPPING:
+        na28_code = NA28_MAPPING[book_key]
         na28_data = load_na28()
         
         if na28_code in na28_data and chapter in na28_data[na28_code]:
             verses = []
-            for v in range(v_start, v_end + 1):
+
+            verse_iterator = []
+            if v_start is None: # Whole chapter
+                verse_iterator = sorted(na28_data[na28_code][chapter].keys())
+            else: # Specific range
+                verse_iterator = range(v_start, v_end + 1)
+            
+            for v in verse_iterator:
                 if v in na28_data[na28_code][chapter]:
                     verses.append({
                         "verse": v,
@@ -256,12 +270,10 @@ def get_grondtekst(reference):
 def save_grondtekst_lezingen(folder, liturgische_context_json):
     """
     Extracts references from the liturgical context and saves source texts to JSON.
+    Handles complex references with multiple verse ranges.
     """
     try:
-        if isinstance(liturgische_context_json, str):
-            context = json.loads(liturgische_context_json)
-        else:
-            context = liturgische_context_json
+        context = json.loads(liturgische_context_json) if isinstance(liturgische_context_json, str) else liturgische_context_json
     except:
         print("Fout bij parsen liturgische context voor grondtekst.")
         return []
@@ -269,18 +281,12 @@ def save_grondtekst_lezingen(folder, liturgische_context_json):
     lezingen = context.get("lezingen", {})
     files_saved = []
     
-    # References to fetch
     references_to_process = []
-
-    # Standard keys
     keys = ["eerste_lezing", "tweede_lezing", "epistel", "evangelie", "psalm"]
     for key in keys:
-        if key in lezingen and isinstance(lezingen[key], dict):
-            ref = lezingen[key].get("referentie")
-            if ref:
-                references_to_process.append(ref)
+        if key in lezingen and isinstance(lezingen[key], dict) and lezingen[key].get("referentie"):
+            references_to_process.append(lezingen[key]["referentie"])
 
-    # Alternatives
     alternatives = lezingen.get("alternatieve_lezingen", [])
     if isinstance(alternatives, list):
         for alt in alternatives:
@@ -290,43 +296,63 @@ def save_grondtekst_lezingen(folder, liturgische_context_json):
     bijbel_dir = folder / "bijbelteksten"
     bijbel_dir.mkdir(parents=True, exist_ok=True)
     
-    for ref in references_to_process:
-        # Avoid duplicates or reprocessing
-        # (Could add check if file exists, but overwriting is safer for updates)
+    for ref_str in references_to_process:
+        print(f"  Processing reference: '{ref_str}'")
         
-        # Handle complex references like "Handelingen 6,8-10; 7,54-60"
-        # My simple parser only handles the first part. 
-        # For now, let's just split by ';' and try to fetch each part
+        all_verses_for_ref = []
+        collected_data_header = {}
         
-        sub_refs = ref.split(';')
+        # 1. Separate book/chapter from verse string
+        match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+(.*)", ref_str)
+        
+        sub_refs = []
+        if match:
+            book_chapter_base = f"{match.group(1).strip()} {match.group(2)}"
+            verse_part = match.group(3)
+            # Split verse part by '.', ';', or ',' (but not if it's the main chapter separator)
+            verse_ranges = re.split(r'[.;]', verse_part)
+            for verse_range in verse_ranges:
+                if verse_range.strip():
+                    sub_refs.append(f"{book_chapter_base}:{verse_range.strip()}")
+        else:
+            # Cannot parse complex, treat as single reference (e.g., "Psalm 128")
+            sub_refs.append(ref_str)
+
+        # 2. Fetch data for each sub-reference
         for sub_ref in sub_refs:
-            sub_ref = sub_ref.strip()
-            # If sub_ref starts with a digit but no book name (e.g. "7,54-60"), 
-            # we need to infer the book from the previous part.
-            # This is complex. For MVP, we stick to the main simple parser or try to handle simple "Book Ch:V"
-            # If parse fails, we skip.
-            
-            # Simple heuristic for book carry-over:
-            if re.match(r"^\d+[,:]", sub_ref):
-                # This is a continuation like "7,54-60". 
-                # We need the book from the previous valid ref.
-                # IMPLEMENTATION DETAIL: This requires tracking state.
-                # For safety, I'll only process fully qualified references for now to avoid errors.
-                # However, the simple parser requires a book name.
-                pass
-            
             data = get_grondtekst(sub_ref)
-            if data:
-                # Create a safe filename
-                safe_ref = sub_ref.replace(" ", "_").replace(":", "_").replace(",", "_")
-                
-                filename = f"{safe_ref}_Grondtekst.json"
-                filepath = bijbel_dir / filename
-                
-                with open(filepath, "w", encoding="utf-8") as f:
-                    json.dump(data, f, ensure_ascii=False, indent=2)
-                
-                files_saved.append(filepath)
+            if data and "verses" in data:
+                if not collected_data_header:
+                    # Store header info from the first successful fetch
+                    collected_data_header = data.copy()
+                    del collected_data_header["verses"]
+                all_verses_for_ref.extend(data["verses"])
+        
+        # 3. If any verses were found, combine and save
+        if collected_data_header and all_verses_for_ref:
+            # Sort verses by verse number and remove duplicates
+            unique_verses = {v['verse']: v for v in all_verses_for_ref}.values()
+            sorted_verses = sorted(list(unique_verses), key=lambda x: x['verse'])
+            
+            collected_data_header["verses"] = sorted_verses
+            
+            # Construct filename with only book and chapter
+            book_name_for_file = collected_data_header["book_nl"].title()
+            chapter_for_file = collected_data_header["chapter"]
+            
+            safe_name = f"{book_name_for_file}_{chapter_for_file}"
+            safe_name = re.sub(r'[^\w_]', '', safe_name.replace(" ", "_"))
+            
+            filename = f"{safe_name}_Grondtekst.json"
+            filepath = bijbel_dir / filename
+            
+            with open(filepath, "w", encoding="utf-8") as f:
+                json.dump(collected_data_header, f, ensure_ascii=False, indent=2)
+            
+            print(f"    -> Success: Saved combined text to {filename}")
+            files_saved.append(filepath)
+        else:
+            print(f"    -> No text found for '{ref_str}'")
             
     return files_saved
 
