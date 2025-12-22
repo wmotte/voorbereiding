@@ -1880,6 +1880,16 @@
                             subSectionLabels[`dag-${index + 1}`] = cleanDatum;
                         });
                     }
+                } else if (key === '08_exegese') {
+                    // Special handling for Exegese - show scripture references
+                    if (sectionData.per_lezing && Array.isArray(sectionData.per_lezing)) {
+                        sectionData.per_lezing.forEach((lezing, index) => {
+                            const referentie = lezing.referentie || `Lezing ${index + 1}`;
+
+                            subSections.push(`lezing-${index + 1}`);
+                            subSectionLabels[`lezing-${index + 1}`] = referentie;
+                        });
+                    }
                 } else {
                     // Default: get subsections from top-level keys
                     subSections = Object.keys(sectionData)
@@ -2763,6 +2773,7 @@
             // Render per lezing
             if (data.per_lezing && Array.isArray(data.per_lezing)) {
                 data.per_lezing.forEach((lezing, index) => {
+                    html += `<div id="section-08_exegese-lezing-${index + 1}" class="subsection-anchor"></div>`;
                     html += `<div class="data-group">`;
                     html += `<div class="data-group-title">${escapeHtml(lezing.referentie || `Lezing ${index + 1}`)}</div>`;
 
