@@ -1738,40 +1738,51 @@
             let navHtml = '';
             const allSections = Object.keys(jsonData).filter(k => k !== '00_meta');
 
+            // Check if Bijbelteksten exists
+            const hasBijbelteksten = allSections.includes('Bijbelteksten');
+
+            // Separate Bijbelteksten from other sections if it exists
+            let otherSections = allSections;
+            if (hasBijbelteksten) {
+                otherSections = allSections.filter(k => k !== 'Bijbelteksten');
+            }
+
             // Determine the highest number from sections that have numeric prefixes
-            const numberedSections = allSections.filter(k => /^(\d+)_/.test(k));
+            const numberedSections = otherSections.filter(k => /^(\d+)_/.test(k));
             const highestNum = numberedSections.length > 0
                 ? Math.max(...numberedSections.map(k => parseInt(k.match(/^(\d+)_/)[1])))
                 : 0;
 
-            // Check if there's already a '01_*' section
-            const hasSection01 = numberedSections.some(k => /^01_/.test(k));
-
             // Initialize counter for unnumbered sections
             let unnumberedCounter = highestNum + 1;
 
-            // Special handling: put Bijbelteksten as second item (number 01 if no 01 section exists, otherwise 00)
-            const sections = allSections.sort((a, b) => {
-                // Bijbelteksten should come first among unnumbered sections (effectively second overall after 01_*)
-                if (a === 'Bijbelteksten') return -1;
-                if (b === 'Bijbelteksten') return 1;
-                return a.localeCompare(b);
-            });
+            // Sort other sections alphabetically
+            const sortedOtherSections = otherSections.sort();
+
+            // Build the final sections array: [Bijbelteksten as second item]
+            let sections = [];
+            if (sortedOtherSections.length > 0) {
+                // Add first section
+                sections.push(sortedOtherSections[0]);
+                // Add Bijbelteksten as second if it exists
+                if (hasBijbelteksten) {
+                    sections.splice(1, 0, 'Bijbelteksten'); // Insert at position 1 (second position)
+                }
+                // Add remaining sections
+                if (sortedOtherSections.length > 1) {
+                    sections = sections.concat(sortedOtherSections.slice(1));
+                }
+            } else if (hasBijbelteksten) {
+                // If there are no other sections, just add Bijbelteksten
+                sections.push('Bijbelteksten');
+            }
 
             sections.forEach((key, index) => {
                 const title = sectionTitles[key] || formatKey(key);
-                // Extract number from key like "01_zondag" or assign special number for Bijbelteksten or next available number for other unnumbered sections
+                // Assign number 02 to Bijbelteksten to make it the second item, otherwise use normal numbering
                 let num;
-                if (key === 'Bijbelteksten' && hasSection01) {
-                    // If there's already a 01 section, find the lowest available number for Bijbelteksten to be second
-                    let candidate = 1;
-                    while (numberedSections.some(k => k.startsWith(candidate.toString().padStart(2, '0') + '_'))) {
-                        candidate++;
-                    }
-                    num = candidate.toString().padStart(2, '0');
-                } else if (key === 'Bijbelteksten') {
-                    // If there's no 01 section, make Bijbelteksten '01' to be second
-                    num = '01';
+                if (key === 'Bijbelteksten') {
+                    num = '02'; // Always assign 02 to make it second in the menu
                 } else {
                     const numMatch = key.match(/^(\d+)_/);
                     num = numMatch ? numMatch[1] : String(unnumberedCounter++).padStart(2, '0');
