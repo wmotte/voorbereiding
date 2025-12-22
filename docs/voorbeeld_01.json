@@ -2413,6 +2413,43 @@
       }
     }
   },
+  "15_kindermoment": {
+    "kindermoment_opties": [
+      {
+        "type": "Klassiek",
+        "titel": "De verre-dichtbij-kijker",
+        "object": {
+          "naam": "Een oude, koperen uitschuifbare verrekijker (telescoop)",
+          "uitleg": "De verrekijker symboliseert de actieve zoektocht van de wijzen en het verlangen om iets te zien wat ver weg is, maar door de geboorte van Jezus heel dichtbij komt."
+        },
+        "focus_schriftlezing": "Matteüs 2:2 - \"Wij hebben zijn ster gezien... en zijn gekomen.\"",
+        "verhaal_script": "(Regie: De predikant komt naar voren met een grote koffer. Haal er langzaam de telescoop uit en schuif hem uit.) \n\n\"Moet je kijken wat ik hier heb. Een verrekijker! Weten jullie waar die voor is? Precies, om dingen die heel ver weg zijn, toch heel goed te kunnen zien. \n\nDe wijzen uit het verhaal van vandaag waren eigenlijk een soort sterrenkijkers. Elke nacht tuurden ze naar de hemel. Ze zochten niet naar planeten of satellieten, maar naar een teken van God. En toen zagen ze die ene ster. Die ster vertelde hen: 'Er is iets bijzonders gebeurd, ver weg in een land dat jullie niet kennen.' \n\nSoms voelt God ook een beetje als 'ver weg'. Alsof Hij in de hemel woont en wij hier in Waddinxveen. Maar de grap van de verrekijker is: als je erdoorheen kijkt, komt dat wat ver weg is, opeens heel dichtbij. Dat deed Jezus ook. Hij kwam van God naar ons toe. Hij is de 'verre-dichtbij-kijker'. Vandaag vieren we dat de wijzen Hem vonden. En het mooie is: je hebt geen koperen telescoop nodig om Hem te zien, alleen maar een hart dat naar de ster durft te kijken.\"",
+        "afbeelding_idee": "Een sfeervolle foto van een antieke telescoop die gericht is op een heldere ster boven een winters polderlandschap."
+      },
+      {
+        "type": "Actief",
+        "titel": "Licht-spoor in de Brugkerk",
+        "object": {
+          "naam": "Reflecterende veiligheidshesjes en een felle zaklamp",
+          "uitleg": "Dit sluit aan bij de donkere januaridagen in de polder en de noodzaak om 'licht te geven' of licht te reflecteren, zoals Jesaja beschrijft."
+        },
+        "focus_schriftlezing": "Jesaja 60:1 - \"Sta op en schitter, je licht is gekomen.\"",
+        "verhaal_script": "(Regie: De predikant trekt zelf een reflecterend hesje aan over de toga.) \n\n\"Het is januari, en als jullie 's ochtends naar school fietsen of lopen, is het nog hartstikke donker langs de Gouwe. Wie van jullie heeft er dan ook zo'n flitsend hesje aan? (Wacht op reactie). \n\nIn de Bijbel zegt de profeet Jesaja iets geks. Hij zegt niet: 'Zet je lampje aan', maar hij zegt: 'Sta op en schíttér!' Hij bedoelt dat wij zelf een soort reflectoren mogen zijn. Een reflector geeft van zichzelf geen licht, maar als er een lamp op schijnt... (Regie: Doe de lichten in de kerk een klein beetje dimmen en schijn met de felle zaklamp op de hesjes van de kinderen of op je eigen hesje). \n\nKijk! Het licht van de zaklamp wordt teruggestuurd. Zo werkt het ook met de ster van Betlehem. Jezus is het grote Licht, en de wijzen vingen dat licht op en namen het mee naar hun eigen land. Vandaag mogen wij dat ook doen. Wij gaan dadelijk naar de kindernevendienst en we mogen proberen om als kleine reflectoren het licht van Jezus te laten zien in Waddinxveen. Zullen we eens kijken of we in een mooie rij achter het licht aan kunnen lopen?\"",
+        "afbeelding_idee": "Een vrolijke tekening van kinderen met reflecterende hesjes die achter een grote, lachende ster aanlopen."
+      },
+      {
+        "type": "Gek/Onconventioneel",
+        "titel": "De harige koningsvrucht",
+        "object": {
+          "naam": "Een hele, onbewerkte kokosnoot",
+          "uitleg": "De kokosnoot staat symbool voor de 'vreemde' en 'exotische' aard van de wijzen en hun geschenken. Het is iets wat niet uit de buurt komt en wat je moet 'openen' om de schat te ontdekken."
+        },
+        "focus_schriftlezing": "Matteüs 2:11 - \"Zij boden hem geschenken aan: goud, wierook en mirre.\"",
+        "verhaal_script": "(Regie: Leg de kokosnoot pontificaal op de avondmaalstafel. Tik er even op met je knokkels.) \n\n\"Ik heb een cadeau meegenomen voor een pasgeboren baby. Wat denken jullie? Een kokosnoot! Een beetje een raar cadeau, toch? Het is harig, het is hard als een steen en het komt van heel ver weg. In Waddinxveen groeien ze in ieder geval niet aan de bomen. \n\nDe mensen in Jeruzalem dachten waarschijnlijk precies hetzelfde toen die wijzen uit het oosten aankwamen. Ze zagen er vreemd uit, ze spraken een andere taal en ze namen cadeaus mee die niemand begreep: goud, wierook en mirre. Wie geeft er nou hars van een boom (wierook) aan een baby? \n\nMaar die wijzen waren eigenlijk heel slim. Ze wisten dat deze baby niet zomaar een kindje was, maar de Koning van de héle wereld. Ook van de verre landen waar de kokosnoten groeien. Soms ziet God er voor ons ook een beetje 'vreemd' uit, of begrijpen we niet wat Hij doet. Maar net als bij deze kokosnoot: als je hem openmaakt, zit er iets heel goeds en zoets vanbinnen. Vandaag vieren we dat God zijn 'geheime cadeau' heeft opengemaakt voor iedereen. Ook voor de vreemde vogels en de verre reizigers.\"",
+        "afbeelding_idee": "Een grappige illustratie van een van de wijzen die een kokosnoot aanbiedt aan het kindje Jezus, terwijl de herders verbaasd toekijken."
+      }
+    ]
+  },
   "Bijbelteksten": {
     "naardense_bijbel": [
       {
