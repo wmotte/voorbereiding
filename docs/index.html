@@ -3799,10 +3799,16 @@
         }
 
         function formatKey(key) {
-            let result = key
-                .replace(/_/g, ' ')
-                .replace(/([a-z])([A-Z])/g, '$1 $2')
-                .replace(/^./, str => str.toUpperCase());
+            // Handle the special case for "vijf_vs" -> "Vijf V's"
+            let result;
+            if (key === 'vijf_vs') {
+                result = "Vijf V's";
+            } else {
+                result = key
+                    .replace(/_/g, ' ')
+                    .replace(/([a-z])([A-Z])/g, '$1 $2')
+                    .replace(/^./, str => str.toUpperCase());
+            }
 
             // Preserve abbreviations with multiple capitals
             const abbreviations = {
