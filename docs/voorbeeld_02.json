@@ -1306,14 +1306,14 @@
         "zoekterm": "Timothy Schmalz Angels Unawares sculpture St. Peter's Square"
       },
       {
-        "titel": "The Holy Family",
-        "kunstenaar": "Janet McKenzie",
-        "jaar": 2002,
-        "type": "schilderij",
-        "beschrijving": "Een ingetogen, bijna verstild portret van Jozef, Maria en het kind. De nadruk ligt op de onderlinge verbondenheid en de beschermende houding van de ouders. De gezichten hebben een universele, multiculturele uitstraling.",
-        "verbinding_tekst": "Dit werk resoneert met de 'huisorde' uit Kolossenzen 3. Het toont de 'bekleding met liefde' als een fysieke nabijheid en een veilige kring die gevormd wordt tegen de buitenwereld.",
-        "verrassend_element": "De stilte die van het doek uitgaat, biedt een tegenwicht aan de hectiek van de vlucht in Matteüs en de maatschappelijke onrust van eind 2025.",
-        "zoekterm": "Janet McKenzie The Holy Family painting"
+        "titel": "Laundromat",
+        "kunstenaar": "Ai Weiwei",
+        "jaar": 2016,
+        "type": "installatie",
+        "beschrijving": "Een installatie bestaande uit duizenden zorgvuldig gewassen, gestreken en geordende kledingstukken die zijn achtergelaten in een vluchtelingenkamp (Idomeni).",
+        "verbinding_tekst": "Dit werk biedt een indringende visuele parallel bij Kolossenzen 3 ('kleed u in...'). Het herinnert eraan dat kleding (en de deugden die we 'aantrekken') te maken heeft met menselijke waardigheid, juist wanneer alles is afgepakt.",
+        "verrassend_element": "Het verbindt de abstracte deugden van Paulus aan de tastbare, achtergelaten kleding van vluchtelingen, waardoor 'bekleden met liefde' een daad van herstel van waardigheid wordt.",
+        "zoekterm": "Ai Weiwei Laundromat installation refugee clothes"
       },
       {
         "titel": "Kintsugi Series",
@@ -1322,7 +1322,7 @@
         "type": "abstract",
         "beschrijving": "Abstracte werken die gebruik maken van de Japanse Kintsugi-techniek: het repareren van gebroken keramiek met goud. De breuklijnen worden niet verborgen, maar juist geaccentueerd.",
         "verbinding_tekst": "Dit sluit direct aan bij Sirach 3:14: 'zo bouw je weer op wat je zonden hebben afgebroken'. Het visualiseert hoe genade en zorg (voor bijvoorbeeld demente ouders) de breuklijnen van het leven tot iets kostbaars maken.",
-        "verrassend_element": "Het is een niet-figuratieve manier om over herstel en eerbied te spreken, wat in de Sionkerk een nieuwe laag van meditatie kan openen naast de letterlijke tekst.",
+        "verrassend_element": "Het is een niet-figuratieve manier om over herstel and eerbied te spreken, wat in de Sionkerk een nieuwe laag van meditatie kan openen naast de letterlijke tekst.",
         "zoekterm": "Makoto Fujimura Kintsugi Gold paintings"
       }
     ],
@@ -1409,7 +1409,8 @@
         {
           "titel": "Nada te turbe",
           "bron": "Taizé",
-          "gebruik": "Als meditatief gezang na de preek, om de onrust van de vlucht (Matteüs) en de zorg (Sirach) tot rust te brengen in God."
+          "gebruik": "Als meditatief gezang na de preek, om de onrust van de vlucht (Matteüs) en de zorg (Sirach) tot rust te brengen in God.",
+          "zoekterm": "Taize Nada te turbe"
         }
       ]
     },
@@ -1428,7 +1429,9 @@
         {
           "titel": "The Grapes of Wrath",
           "auteur": "John Steinbeck",
-          "thematische_resonantie": "De ultieme roman over een familie op de vlucht, zoekend naar een veilig thuis, parallel aan de tocht naar Egypte."
+          "jaar": 1939,
+          "thematische_resonantie": "De ultieme roman over een familie op de vlucht, zoekend naar een veilig thuis, parallel aan de tocht naar Egypte.",
+          "zoekterm": "John Steinbeck Grapes of Wrath family flight"
         }
       ],
       "nederlands": [
@@ -1436,7 +1439,8 @@
           "titel": "Knielen op een bed violen",
           "auteur": "Jan Siebelink",
           "jaar": 2005,
-          "thematische_resonantie": "De complexe dynamiek binnen een strenggelovig gezin en de spanning tussen individuele roeping en gezinsverantwoordelijkheid."
+          "thematische_resonantie": "De complexe dynamiek binnen een strenggelovig gezin en de spanning tussen individuele roeping en gezinsverantwoordelijkheid.",
+          "zoekterm": "Jan Siebelink Knielen op een bed violen"
         }
       ]
     },
@@ -1464,7 +1468,7 @@
         }
       ],
       "voor_meditatie": {
-        "aanbevolen_werk": "Janet McKenzie - The Holy Family",
+        "aanbevolen_werk": "Henry Ossawa Tanner - The Flight into Egypt",
         "duur_tonen": "5 minuten na de preek",
         "muziek_erbij": "Berlioz - Le Repos de la Sainte Famille"
       },
@@ -1474,10 +1478,10 @@
           "Henry Ossawa Tanner"
         ],
         "creative_commons": [
-          "Veel werk van Timothy Schmalz wordt gedeeld voor kerkelijk gebruik"
+          "Timothy Schmalz (vaak toegestaan voor kerkelijk gebruik)"
         ],
         "let_op": [
-          "Kelly Latimore en Makoto Fujimura (vaak toestemming of kleine vergoeding nodig voor projectie)"
+          "Kelly Latimore en Makoto Fujimura (toestemming of kleine vergoeding vaak vereist)"
         ]
       }
     }
