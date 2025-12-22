@@ -2865,8 +2865,8 @@
                                 html += `<div class="nested-card">`;
                                 html += `<div class="nested-card-title">Vers ${variant.vers}</div>`;
                                 html += `<div class="nested-card-content">`;
-                                html += `<div><strong>Variant:</strong> ${escapeHtml(variant.variant || '')}</div>`;
-                                html += `<div><strong>Handschriften:</strong> ${escapeHtml(variant.handschriften || '')}</div>`;
+                                html += `<div><strong>Variant:</strong> ${processText(variant.variant || '')}</div>`;
+                                html += `<div><strong>Handschriften:</strong> ${processText(variant.handschriften || '')}</div>`;
                                 html += `<div><strong>Betekenis Impact:</strong> ${processText(variant.betekenis_impact || '')}</div>`;
                                 html += `</div>`;
                                 html += `</div>`;
@@ -2894,7 +2894,7 @@
                             html += `<div class="nested-card">`;
                             html += `<div class="nested-card-title">${escapeHtml(woord.woord_origineel || '')} (${escapeHtml(woord.transliteratie || '')})</div>`;
                             html += `<div class="nested-card-content">`;
-                            html += `<div><strong>Vertaling:</strong> ${escapeHtml(woord.vertaling || '')}</div>`;
+                            html += `<div><strong>Vertaling:</strong> ${processText(woord.vertaling || '')}</div>`;
                             html += `<div><strong>Semantische Range:</strong> ${processText(woord.semantische_range || '')}</div>`;
                             html += `<div><strong>Gebruik Elders:</strong> ${processText(woord.gebruik_elders || '')}</div>`;
                             if (woord.meerduidigheid) {
@@ -2915,7 +2915,7 @@
                         if (lezing.literaire_analyse.genre) {
                             html += `<div class="data-item">`;
                             html += `<div class="data-label">Genre</div>`;
-                            html += `<div class="data-value">${escapeHtml(lezing.literaire_analyse.genre)}</div>`;
+                            html += `<div class="data-value">${processText(lezing.literaire_analyse.genre)}</div>`;
                             html += `</div>`;
                         }
 
