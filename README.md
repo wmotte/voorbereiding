@@ -90,7 +90,7 @@ Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
 | 12 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
 | 13 | **Homiletische Analyse** | Preekschets volgens Lowry's narratieve methode (Hè?/Oops!, Oei.../Ugh!, etc.). |
 | 14 | **Gebeden** | Drempelgebed, Kyrie, Epiclese, Dankgebed en Voorbeden. |
-| 15 | **Kindermoment** | Drie creatieve opties (Klassiek, Actief, Gek) voor interactie met kinderen. |
+| 15 | **Kindermoment** | Drie creatieve opties (Klassiek, Actief, Vreemd) voor interactie met kinderen. |
 
 ---
 
@@ -137,6 +137,12 @@ De gebeden volgen de klassieke en protestantse (PKN) traditie, met oog voor de s
 ---
 
 ## 🛠 Aanvullende Tools
+
+### JSON-validator (`validate_json.py`)
+Valideert de structuur van gegenereerde JSON-bestanden tegen het verwachte schema. Controleert op ontbrekende secties, vereiste velden en correcte datatypen.
+```bash
+python validate_json.py output/Sessie_Naam/combined_output.json
+```
 
 ### Token-teller (`count_tokens.py`)
 Telt het aantal tokens in de gegenereerde bestanden om inzicht te krijgen in de omvang van de analyse (gemiddeld ~50.000 tokens voor een volledig dossier, opgeslagen in `combined_output.json`).

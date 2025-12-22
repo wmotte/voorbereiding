@@ -59,7 +59,9 @@ SCRIPT_DIR = Path(__file__).parent.resolve()
 OUTPUT_DIR = SCRIPT_DIR / "output"
 PROMPTS_DIR = SCRIPT_DIR / "prompts"
 
+# Model keuze: Gemini 3 flash als primair, pro als fallback
 MODEL_NAME = "gemini-3-flash-preview"
+MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
 def load_prompt(filename: str, user_input: dict) -> str:
@@ -472,22 +474,32 @@ def extract_json(text: str) -> dict:
     return {"error": "Kon geen valide JSON extraheren", "raw_response": text[:1000]}
 
 
-def run_analysis(client: genai.Client, prompt: str, title: str, temperature: float = 0.2) -> dict:
-    """Voer een analyse uit met Gemini en Google Search. Retourneert JSON dict."""
+def run_analysis(client: genai.Client, prompt: str, title: str, temperature: float = 0.2, model: str = None) -> dict:
+    """Voer een analyse uit met Gemini en Google Search. Retourneert JSON dict.
+
+    Args:
+        client: De Gemini client
+        prompt: De prompt voor het model
+        title: Titel van de analyse (voor logging)
+        temperature: Temperatuur voor het model
+        model: Model om te gebruiken (default: MODEL_NAME, fallback naar MODEL_NAME_FALLBACK)
+    """
+    current_model = model or MODEL_NAME
+
     print(f"\n{'─' * 50}")
     print(f"Analyseren: {title}")
     print(f"{'─' * 50}")
-    
-    max_retries = 1
+
+    max_retries = 2  # 3 pogingen totaal met flash
     for attempt in range(max_retries + 1):
         if attempt > 0:
-            print(f"Poging {attempt + 1}/{max_retries + 1}...")
+            print(f"Poging {attempt + 1}/{max_retries + 1} ({current_model})...")
         else:
-            print("Bezig met redeneren en zoeken...")
+            print(f"Bezig met redeneren en zoeken ({current_model})...")
 
         try:
             response = client.models.generate_content(
-                model=MODEL_NAME,
+                model=current_model,
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     temperature=temperature,
@@ -531,17 +543,20 @@ def run_analysis(client: genai.Client, prompt: str, title: str, temperature: flo
                 print(f"✗ Geen tekst ontvangen voor '{title}' (poging {attempt + 1})")
                 if attempt < max_retries:
                     continue
-                return {"error": "Geen response ontvangen", "title": title}
 
         except Exception as e:
             error_msg = f"Fout bij analyse '{title}': {str(e)}"
             print(f"✗ {error_msg}")
             if attempt < max_retries:
                 continue
-            return {"error": error_msg, "title": title}
-    
-    # Als we hier komen zijn alle retries mislukt
-    return {"error": "Analyse mislukt na herpogingen", "title": title}
+
+    # Als alle retries met huidige model mislukt zijn, probeer fallback model
+    if current_model == MODEL_NAME and MODEL_NAME_FALLBACK:
+        print(f"\n⚠ Alle pogingen met {MODEL_NAME} mislukt. Fallback naar {MODEL_NAME_FALLBACK}...")
+        return run_analysis(client, prompt, title, temperature=temperature, model=MODEL_NAME_FALLBACK)
+
+    # Als ook fallback mislukt, return error
+    return {"error": f"Analyse mislukt na herpogingen (inclusief fallback)", "title": title}
 
 
 def verify_kunst_cultuur(client: genai.Client, content: dict) -> dict:
