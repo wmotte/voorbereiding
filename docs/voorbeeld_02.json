@@ -1322,7 +1322,7 @@
         "type": "abstract",
         "beschrijving": "Abstracte werken die gebruik maken van de Japanse Kintsugi-techniek: het repareren van gebroken keramiek met goud. De breuklijnen worden niet verborgen, maar juist geaccentueerd.",
         "verbinding_tekst": "Dit sluit direct aan bij Sirach 3:14: 'zo bouw je weer op wat je zonden hebben afgebroken'. Het visualiseert hoe genade en zorg (voor bijvoorbeeld demente ouders) de breuklijnen van het leven tot iets kostbaars maken.",
-        "verrassend_element": "Het is een niet-figuratieve manier om over herstel and eerbied te spreken, wat in de Sionkerk een nieuwe laag van meditatie kan openen naast de letterlijke tekst.",
+        "verrassend_element": "Het is een niet-figuratieve manier om over herstel en eerbied te spreken, wat in de Sionkerk een nieuwe laag van meditatie kan openen naast de letterlijke tekst.",
         "zoekterm": "Makoto Fujimura Kintsugi Gold paintings"
       }
     ],
@@ -1379,9 +1379,33 @@
         "relevante_scene": {
           "beschrijving": "De scène waarin een baby wordt geboren in een belegerd gebouw en de soldaten tijdelijk stoppen met vechten uit ontzag voor het nieuwe leven.",
           "tijdcode": "01:35:00",
-          "wat_opent_het": "Het verbeeldt de kracht van de kwetsbaarheid van een kind te midden van de 'Herodes-machten' van de wereld. Het raakt aan de kern van Matteüs 2: de machteloze die de machtigen doet stilvallen."
+          "wat_opent_het": "Het verbeeldt de kracht van de kwetsbaarheid van een kind te midden van de 'Herodes-krachten' van de wereld. Het raakt aan de kern van Matteüs 2: de machteloze die de machtigen doet stilvallen."
         },
         "zoekterm": "Children of Men 2006 baby scene ceasefire"
+      },
+      {
+        "titel": "Babette's Feast",
+        "regisseur": "Gabriel Axel",
+        "jaar": 1987,
+        "type": "speelfilm",
+        "relevante_scene": {
+          "beschrijving": "De voorbereiding en het serveren van het overvloedige diner aan de sobere geloofsgemeenschap, waarbij genade en liefde tastbaar worden.",
+          "tijdcode": "01:10:00",
+          "wat_opent_het": "Het visualiseert de 'bekleding met liefde' uit Kolossenzen 3. Het laat zien hoe een vreemdeling (Babette) door haar dienstbaarheid de gemeenschap transformeert."
+        },
+        "zoekterm": "Babette's Feast 1987 film dinner scene"
+      },
+      {
+        "titel": "Human Flow",
+        "regisseur": "Ai Weiwei",
+        "jaar": 2017,
+        "type": "documentaire",
+        "relevante_scene": {
+          "beschrijving": "Beelden van de wereldwijde vluchtelingenstromen en de individuele verhalen van gezinnen die alles achterlaten.",
+          "tijdcode": null,
+          "wat_opent_het": "Het geeft een actueel gezicht aan de vlucht naar Egypte (Matteüs 2). Het haalt de hoorder uit de comfortzone van de polder en verbindt hen met de wereldwijde familie van God."
+        },
+        "zoekterm": "Ai Weiwei Human Flow documentary trailer"
       }
     ],
     "muziek": {
@@ -1393,6 +1417,14 @@
           "genre": "Indie folk",
           "verbinding": "Een reflectie op vergankelijkheid en de noodzaak om te midden van de winterse kou vast te houden aan wat echt is. Passend bij de sfeer van 28 december.",
           "zoekterm": "Sufjan Stevens Justice Delivers Its Death Silver & Gold"
+        },
+        {
+          "titel": "The Parting Glass",
+          "artiest": "The High Kings",
+          "jaar": 2008,
+          "genre": "Folk",
+          "verbinding": "Een lied over afscheid en de overgang, passend bij de jaarwisseling en de vlucht van de Heilige Familie.",
+          "zoekterm": "The High Kings The Parting Glass"
         }
       ],
       "klassiek": [
@@ -1403,6 +1435,14 @@
           "specifiek_deel": "Le Repos de la Sainte Famille",
           "verbinding": "Verklankt de rust en de goddelijke bescherming tijdens de vlucht. De pastorale sfeer sluit aan bij de behoefte aan geborgenheid.",
           "zoekterm": "Berlioz L'enfance du Christ Repos de la Sainte Famille"
+        },
+        {
+          "titel": "Spiegel im Spiegel",
+          "componist": "Arvo Pärt",
+          "type": "instrumentaal",
+          "specifiek_deel": null,
+          "verbinding": "De minimalistische structuur biedt een meditatieve ruimte voor de reflectie op de 'huisorde' en de rust van God te midden van chaos.",
+          "zoekterm": "Arvo Part Spiegel im Spiegel"
         }
       ],
       "liturgisch": [
@@ -1416,6 +1456,14 @@
     },
     "literatuur": {
       "modern": [
+        {
+          "titel": "Gilead",
+          "auteur": "Marilynne Robinson",
+          "jaar": 2004,
+          "type": "roman",
+          "thematische_resonantie": "Een diepgaande reflectie op vaderschap, erfgoed en de zegen die van generatie op generatie overgaat, passend bij Sirach 3 en Psalm 128.",
+          "zoekterm": "Marilynne Robinson Gilead novel"
+        },
         {
           "titel": "Het lied van ooievaar en dromedaris",
           "auteur": "Anjet Daanje",
@@ -1478,10 +1526,11 @@
           "Henry Ossawa Tanner"
         ],
         "creative_commons": [
-          "Timothy Schmalz (vaak toegestaan voor kerkelijk gebruik)"
+          "Timothy Schmalz"
         ],
         "let_op": [
-          "Kelly Latimore en Makoto Fujimura (toestemming of kleine vergoeding vaak vereist)"
+          "Kelly Latimore",
+          "Makoto Fujimura"
         ]
       }
     }
@@ -2398,36 +2447,58 @@
     "kindermoment_opties": [
       {
         "type": "Klassiek",
-        "titel": "De Koffer voor het Donker",
+        "titel": "Luisteren met je ogen dicht",
         "object": {
-          "naam": "Een oude, zware reiskoffer met een felle zaklamp erin",
-          "uitleg": "De koffer symboliseert de plotselinge reis van de Heilige Familie, terwijl de zaklamp staat voor Gods leiding (de engel) in de nacht."
+          "naam": "Een luxe slaapmasker",
+          "uitleg": "In Matteüs 2 speelt de droom van Jozef een cruciale rol. Het slaapmasker symboliseert niet alleen de slaap, maar ook het 'innerlijk horen' van Gods stem wanneer de buitenwereld (en de dreiging van Herodes) even wordt buitengesloten."
         },
-        "focus_schriftlezing": "Matteüs 2,14: 'Jozef maakte zich gereed en week nog diezelfde nacht met het kind en zijn moeder uit naar Egypte.'",
-        "verhaal_script": "(Regie: Zet de koffer midden in de kring. Laat de kinderen raden wat erin zit voor een vakantie.)\n\n\"Kijk eens, ik heb een koffer meegenomen. Als jullie op vakantie gaan, wat gaat er dan mee? (Laat kinderen reageren: knuffel, tandenborstel, zwembroek). Maar Jozef, Maria en het kindje Jezus gingen niet op vakantie. Ze moesten vluchten. En weet je wanneer? Midden in de nacht! Het was pikdonker op de weg naar Egypte. \n\n(Doe de koffer open en haal de zaklamp eruit, zet hem aan). Jozef nam geen speelgoed mee, maar hij had wel iets heel belangrijks: een bericht van God. Een engel had gezegd: 'Ga nu, Ik wijs je de weg.' Dat was als een zaklamp in het donker. Soms vinden wij dingen ook spannend of eng, zeker als het jaar bijna voorbij is en we niet weten wat er gaat gebeuren. Maar de tekst van vandaag vertelt ons: God laat je niet in het donker wandelen. Hij gaat mee, ook als je halsoverkop op pad moet. Zullen we onthouden dat God onze zaklamp is?\"",
-        "afbeelding_idee": "Een sfeervolle foto van een ouderwetse koffer die op een kier staat, waar een warm, helder licht uit schijnt in een donkere kamer."
+        "focus_schriftlezing": "Matteüs 2:13 - De engel die in een droom aan Jozef verschijnt.",
+        "verhaal_script": "[Predikant komt naar voren en zet demonstratief een slaapmasker op. Hij loopt voorzichtig en doet alsof hij bijna tegen de tafel aanloopt.] \n\n\"Zo, kunnen jullie mij nog zien? Ik jullie niet! Weten jullie wat dit is? Een slaapmasker. Sommige mensen gebruiken dit om heel diep te slapen. Maar weet je wat er gebeurt als je je ogen dichtdoet? Dan ga je andere dingen beter horen. De klok die tikt... of je eigen ademhaling.\n\nIn het kerstverhaal van vandaag gebeurt er iets bijzonders terwijl Jozef slaapt. Hij heeft zijn ogen dicht, net als ik nu. Maar in zijn droom hoort hij de belangrijkste waarschuwing van zijn leven. Een engel zegt: 'Word wakker! Pak het kindje Jezus en Maria en vlucht!' \n\nJozef had geen zaklamp of een kaart, hij had alleen die stem in zijn droom. Soms denkt God: 'Ik praat pas tegen Jozef als hij even stil is en zijn ogen dicht heeft.' Dan luistert hij het best. \n\nIn de vakantie na kerst zijn we vaak heel druk met spelen en nieuwe cadeautjes. Zullen we deze week eens proberen om elke dag één minuut onze ogen dicht te doen? Gewoon om te horen wat God tegen ons wil zeggen in de stilte? Misschien zegt Hij wel: 'Ik ben bij je, ook als het spannend is.'\"",
+        "afbeelding_idee": "Een close-up foto van een slapend gezicht met een zacht licht op de achtergrond, suggererend dat er een droom gaande is."
       },
       {
         "type": "Actief",
-        "titel": "De Mode-show van de Liefde",
+        "titel": "De garderobe van de Sionkerk",
         "object": {
-          "naam": "Een mand vol met 'gekke' winterkleding (enorme sjaal, wanten, een veel te grote jas, een muts)",
-          "uitleg": "Dit visualiseert het 'aantrekken' van deugden zoals beschreven in de brief aan de Kolossenzen."
+          "naam": "Vijf houten kledinghangers met labels",
+          "uitleg": "In Kolossenzen 3 gebruikt Paulus de metafoor van het 'aantrekken' van deugden. Door kledinghangers te gebruiken, maken we de 'garderobe van het geloof' tastbaar voor de overgang naar het nieuwe jaar."
         },
-        "focus_schriftlezing": "Kolossenzen 3,12: 'Omdat God u heeft uitgekozen... moet u zich kleden in innig medeleven, in goedheid, nederigheid, zachtmoedigheid en geduld.'",
-        "verhaal_script": "(Regie: Vraag twee vrijwilligers naar voren. Laat de andere kinderen kledingstukken uit de mand kiezen en deze bij de vrijwilligers aantrekken terwijl je de tekst uitlegt.)\n\n\"Het is buiten koud in Ameide, dus we hebben warme kleren nodig. Maar de Bijbel zegt vandaag dat we voor het nieuwe jaar nog een andere set kleren moeten aantrekken. Geen kleren van wol, maar kleren van... liefde! \n\n(Laat een kind de grote sjaal omdoen). Deze sjaal noemen we 'Geduld'. Die heb je nodig als je moet wachten op je broertje. (Laat een kind de wanten aangeven). Deze wanten zijn 'Vriendelijkheid', zodat je zachte handen hebt voor de ander. \n\nKijk ze eens staan, ze zien er prachtig uit! Paulus zegt: trek deze kleren elke dag aan. Niet omdat het moet van je moeder, maar omdat God ze aan jou cadeau geeft. Als we deze 'jas van de liefde' aanhebben, wordt het in de Sionkerk en in jullie klas een stuk warmer, zelfs als het vriest. Wie helpt er morgen mee om de jas van 'Geduld' aan te trekken?\"",
-        "afbeelding_idee": "Een kleurrijke illustratie van kinderen die elkaar helpen bij het aantrekken van een veel te grote, stralende jas waar woorden als 'Vrede' en 'Geduld' op staan."
+        "focus_schriftlezing": "Kolossenzen 3:12 - 'Kleed u in innig medeleven, goedheid, nederigheid...'",
+        "verhaal_script": "[Predikant heeft een klein kledingrekje of vijf losse kledinghangers bij zich. Aan elke hanger hangt een groot kartonnen label met een woord: GEDULD, LIEFS, HELPEN, ZACHT, VERGEVEN.] \n\n\"Kijk eens, ik heb hier kledinghangers. Maar er hangen geen jassen aan, zien jullie dat? Er hangen woorden aan. Paulus schrijft in de Bijbel dat geloven een beetje lijkt op je aankleden. Voordat je de kerk uitgaat en de dijk op loopt in Ameide, moet je iets aantrekken.\n\nNiet alleen je winterjas tegen de kou, maar ook je 'geloofsjas'. [Vraagt vijf kinderen naar voren]. Willen jullie allemaal een hanger vasthouden? \n\nStel je voor: morgen heb je ruzie met je broertje. Welke hanger heb je dan nodig? [Kind kiest 'GEDULD' of 'VERGEVEN']. En als je oma in 'Open Vensters' een beetje eenzaam is? [Kind kiest 'LIEFS' of 'HELPEN']. \n\nPaulus zegt: 'Trek de liefde aan als een warme jas.' Want als we die jas aanhebben, herkennen mensen dat we bij Jezus horen. Zullen we afspreken dat we deze week, als we onze echte jas aantrekken, ook even denken aan deze hangers? Welke jas trek jij morgen aan?\"",
+        "afbeelding_idee": "Een kleurrijke tekening van een kledingkast waar in plaats van kleren, stralende woorden aan de hangers hangen."
       },
       {
         "type": "Gek/Onconventioneel",
-        "titel": "Koning Ananas en het Kind",
+        "titel": "De koning in de stekelige jas",
         "object": {
-          "naam": "Een echte ananas met een papieren gouden kroon erop",
-          "uitleg": "De ananas is prikkelbaar en hard van buiten (Herodes), maar heeft een kroon. Dit contrasteert met de kwetsbaarheid van het kind Jezus."
+          "naam": "Een hele ananas",
+          "uitleg": "De ananas dient als metafoor voor Jezus als 'Nazoreeër'. Nazaret was een onbeduidende, 'stekelige' plek waar men niets van verwachtte, maar waar wel de Koning vandaan kwam. Het object doorbreekt de kerst-esthetiek."
         },
-        "focus_schriftlezing": "Matteüs 2,13: '...want Herodes is naar het kind op zoek en wil het ombrengen.'",
-        "verhaal_script": "(Regie: Houd de ananas met de kroon triomfantelijk omhoog. Laat de kinderen de buitenkant voelen—voorzichtig!)\n\n\"Moet je kijken! Ik heb een koning meegenomen naar de kerk. Kijk maar, hij heeft een kroon. Maar voel eens... au! Hij is hartstikke prikkelbaar en scherp. Dit is Koning Ananas. Hij lijkt een beetje op Koning Herodes uit het verhaal van vandaag. Herodes was een koning die heel gemeen deed. Hij was prikkelbaar en wilde niet dat er een andere koning kwam. Hij wilde Jezus pijn doen.\n\nMaar weet je wat het gekke is? Jezus was helemaal niet prikkelbaar. Hij was een kleine, zachte baby. Hij had geen scherpe stekels om zich te verdedigen. Hij moest vluchten voor deze 'prikkel-koning'. \n\nSoms komen wij ook 'prikkelbare' mensen tegen, of zijn we zelf een beetje stekelig. Maar God zegt: Ik bescherm het zachte kindje tegen de scherpe koning. De echte Koning hoeft niet te prikken om de baas te zijn; Hij overwint met liefde. (Snijd de ananas eventueel na de dienst open om te laten zien hoe zoet hij van binnen is als symbool voor Gods goede bedoeling).\"",
-        "afbeelding_idee": "Een grappige foto van een ananas met een koningskroon die naast een heel klein, zacht wit lammetje of een wiegje staat."
+        "focus_schriftlezing": "Matteüs 2:23 - 'Hij zal Nazoreeër genoemd worden.'",
+        "verhaal_script": "[Predikant haalt met een serieus gezicht een grote ananas uit een tas.] \n\n\"Vinden jullie dit een mooie vrucht? Hij is een beetje raar, toch? Hij heeft een soort kroon bovenop, maar hij zit vol met stekels. Als je hem aanraakt, prikt het. Je zou niet meteen denken: 'Lekker, die ga ik eens fijn knuffelen.'\n\nIn de Bijbel staat dat Jezus in een stadje ging wonen dat Nazaret heette. En weet je wat de mensen van dat stadje vonden? Ze vonden het een beetje een 'ananas-stad'. Een rare plek, met stekelige mensen, ergens ver weg in de polder van Israël. Ze zeiden: 'Kan daar nou iets goeds vandaan komen?'\n\nMaar moet je kijken... [Predikant wijst naar de kroon]. Deze vrucht heeft een kroon! En als je hem openmaakt, is hij superzoet. Jezus was de Koning, maar Hij woonde op een plek die niemand belangrijk vond. \n\nSoms voelen wij ons ook een beetje als een ananas: een beetje stekelig of niet zo populair op school. Maar God zegt: 'Ik kijk niet naar de stekels, Ik kijk naar de kroon die ik je gegeven heb.' Ook uit een klein dorpje als Ameide, of uit een 'stekelig' kind, kan iets prachtigs komen. Want Jezus was ook een kind uit een klein, raar stadje.\"",
+        "afbeelding_idee": "Een afbeelding van een ananas met een gouden koningskroon erop gephotoshopt."
+      },
+      {
+        "type": "Bizar",
+        "titel": "De koning zonder batterijen",
+        "object": {
+          "naam": "Een afstandsbediening waar de batterijen uit zijn gehaald",
+          "uitleg": "Dit object illustreert de machteloosheid van Herodes tegenover de ware macht van het kind Jezus. Het zet de hoorder op het verkeerde been: een modern technisch object in een oude vertelling."
+        },
+        "focus_schriftlezing": "Matteüs 2:20 - 'Want gestorven zijn zij die het kind om het leven wilden brengen.'",
+        "verhaal_script": "[Predikant houdt een afstandsbediening omhoog en drukt driftig op de knopjes richting de beamer of de kerstboom.] \n\n\"Hij doet het niet! Ik wil dat de lichten uitgaan, of dat het orgel harder gaat, maar er gebeurt niets. Weten jullie waarom? [Laat het lege batterijvakje zien]. De batterijen zijn eruit. Er zit geen kracht in. Hij lijkt heel belangrijk, maar hij is eigenlijk waardeloos.\n\nKoning Herodes uit het verhaal van vandaag leek ook heel machtig. Hij had een echt paleis, een gouden kroon en heel veel soldaten. Hij dacht dat hij op alle knopjes van de wereld kon drukken. Hij wilde zelfs Jezus wegtoveren, omdat hij bang was voor dat kleine kindje. \n\nMaar aan het eind van het verhaal lezen we iets heel geks: Herodes gaat dood. Ineens zijn zijn batterijen op. Al zijn macht is weg. En Jezus? Die is er nog steeds. \n\nSoms lijken de 'pestkoppen' in de wereld, of de mensen die gemeen doen, heel machtig. Net als een afstandsbediening met een grote mond. Maar vergeet niet: zonder God hebben ze geen batterijen. Jezus is de echte Koning, ook al ziet Hij er klein uit. Hij heeft de kracht die nooit opgaat.\"",
+        "afbeelding_idee": "Een plaatje van een grote, lege batterij naast een klein, stralend kaarsje."
+      },
+      {
+        "type": "Ernstig",
+        "titel": "De plant die een beetje hulp nodig heeft",
+        "object": {
+          "naam": "Een kamerplant met hangende bladeren (bijv. een Spathiphyllum die water nodig heeft)",
+          "uitleg": "Dit verbeeldt de kwetsbaarheid van de oudere generatie uit Sirach 3. Het is een visuele les in ontferming en geduld, passend bij de zorgzame cultuur in Ameide."
+        },
+        "focus_schriftlezing": "Sirach 3:13 - 'Als zijn verstand hem verlaat, heb dan begrip voor hem.'",
+        "verhaal_script": "[Predikant zet een zielig uitziende, slap hangende plant op de rand van de preekstoel.] \n\n\"Kijk eens naar deze plant. Hij ziet er niet zo best uit, hè? De blaadjes hangen slap. Hij is een beetje moe en oud geworden. Misschien vergeet hij wel hoe hij rechtop moet staan. \n\nIn de Bijbel staat vandaag een tekst over opa's en oma's, of vaders en moeders die oud worden. Er staat: 'Als hun verstand hen verlaat, wees dan lief voor hen.' Dat betekent: als ze dingen vergeten, of als ze niet meer zo sterk zijn als vroeger, lach ze dan niet uit. \n\nSoms worden mensen een beetje als deze plant. Ze hebben extra water nodig, of een steuntje. In Ameide hebben we het grote gebouw 'Open Vensters', daar wonen veel mensen die een beetje als deze plant zijn. Ze kunnen niet alles meer zelf.\n\nPaulus zegt: 'Bekleed je met medeleven.' Dat is een moeilijk woord voor: voelen wat de ander voelt. Als jij deze plant bent, wil je ook niet dat iemand tegen je schreeuwt: 'Sta eens recht!' Je wilt dat iemand je voorzichtig water geeft. \n\nZullen we deze week, als we een oud iemand zien die het even niet weet, extra voorzichtig zijn? Want God houdt heel veel van 'slappe plantjes'. Hij vergeet ze nooit.\"",
+        "afbeelding_idee": "Een foto van een hand die heel voorzichtig een klein beetje water bij een slap plantje giet."
       }
     ]
   },
