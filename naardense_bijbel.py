@@ -48,8 +48,8 @@ BOEK_NAAR_SLUG = {
     # Oude Testament
     "genesis": "genesis", "exodus": "exodus", "leviticus": "leviticus",
     "numeri": "numeri", "deuteronomium": "deuteronomium", "jozua": "jozua",
-    "rechters": "rechters", "ruth": "ruth", "1 samuel": "1-samuel",
-    "2 samuel": "2-samuel", "1 koningen": "1-koningen", "2 koningen": "2-koningen",
+    "rechters": "rechters", "ruth": "ruth", "1 samuel": "1-samuel", "1 samuël": "1-samuel",
+    "2 samuel": "2-samuel", "2 samuël": "2-samuel", "1 koningen": "1-koningen", "2 koningen": "2-koningen",
     "1 kronieken": "1-kronieken", "2 kronieken": "2-kronieken", "ezra": "ezra",
     "nehemia": "nehemia", "ester": "ester", "job": "job", "psalm": "psalm",
     "psalmen": "psalm", "spreuken": "spreuken", "prediker": "prediker",
