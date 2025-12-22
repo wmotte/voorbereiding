@@ -1868,6 +1868,18 @@
                             subSectionLabels[`optie-${optie.nummer || (index + 1)}`] = label;
                         });
                     }
+                } else if (key === '11_kalender') {
+                    // Special handling for Kalender - show day names/dates
+                    if (sectionData.dagen && Array.isArray(sectionData.dagen)) {
+                        sectionData.dagen.forEach((dag, index) => {
+                            const datum = dag.datum || `Dag ${index + 1}`;
+                            // Extract just the day and month part if it's in full format like "Zondag 4 januari 2026"
+                            const cleanDatum = datum.replace(/^\w+\s/, ''); // Remove day name (Zondag, Maandag, etc.)
+
+                            subSections.push(`dag-${index + 1}`);
+                            subSectionLabels[`dag-${index + 1}`] = cleanDatum;
+                        });
+                    }
                 } else {
                     // Default: get subsections from top-level keys
                     subSections = Object.keys(sectionData)
@@ -2547,7 +2559,8 @@
             let html = `<div class="data-group">`;
             html += `<div class="data-group-title">Dagen</div>`;
 
-            dagen.forEach(dag => {
+            dagen.forEach((dag, index) => {
+                html += `<div id="section-11_kalender-dag-${index + 1}" class="subsection-anchor"></div>`;
                 const isPreekzondag = dag.is_preekzondag === true;
                 html += `<div class="kalender-dag ${isPreekzondag ? 'preekzondag' : ''}">`;
                 html += `<div class="kalender-datum">${processText(dag.datum || '')}${isPreekzondag ? ' (Preekzondag)' : ''}</div>`;
