@@ -171,11 +171,13 @@ def parse_reference(reference):
     Parses a reference string like "Genesis 1:1-5" or "Psalm 122".
     Returns (book_nl, chapter, verse_start, verse_end).
     If no verses are given, verse_start and verse_end are None.
+    Handles verse suffixes like 'a' or 'b' (e.g., "3a") by ignoring them.
     """
-    match = re.match(r"^\s*((?:\d\s)?[a-zA-Zëïüöä\s]+?)\s+(\d+)(?:[,.:\s]+(\d+)(?:[-–](\d+))?)?\s*$", reference)
+    # Allow optional letter suffix (a, b, etc.) after verse numbers
+    match = re.match(r"^\s*((?:\d\s)?[a-zA-Zëïüöä\s]+?)\s+(\d+)(?:[,.:\s]+(\d+)[a-z]?(?:[-–](\d+)[a-z]?)?)?\s*$", reference)
     if not match:
         return None
-    
+
     book_nl = match.group(1).strip()
     try:
         chapter = int(match.group(2))
@@ -188,7 +190,7 @@ def parse_reference(reference):
             verse_end = None
     except (ValueError, IndexError):
         return None
-    
+
     return book_nl, chapter, verse_start, verse_end
 
 def get_grondtekst(reference):
@@ -341,7 +343,7 @@ def save_grondtekst_lezingen(folder, liturgische_context_json):
             chapter_for_file = collected_data_header["chapter"]
 
             # Extract verse part from original reference for filename
-            verse_match = re.match(r"^\s*(?:\d\s)?[A-Za-zëïüöä\s]+?\s+\d+[\s,:]+([\d\-–.;]+)", ref_str)
+            verse_match = re.match(r"^\s*(?:\d\s)?[A-Za-zëïüöä\s]+?\s+\d+[\s,:]+([\d\-–.;a-z]+)", ref_str)
             if verse_match:
                 verse_spec = verse_match.group(1)
                 safe_name = f"{book_name_for_file}_{chapter_for_file}_{verse_spec}"

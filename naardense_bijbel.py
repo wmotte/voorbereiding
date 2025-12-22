@@ -160,7 +160,9 @@ for code, names in MAPPINGS_SOURCE.items():
 
 
 def parse_bijbelreferentie(tekst: str) -> Optional[BijbelReferentie]:
-    """Parse een bijbelreferentie string naar een BijbelReferentie object."""
+    """Parse een bijbelreferentie string naar een BijbelReferentie object.
+    Handles verse suffixes like 'a' or 'b' (e.g., "3a") by ignoring them.
+    """
     tekst = tekst.strip()
     haakjes_match = re.search(r'\((\d+)[-–]?(\d+)?\)', tekst)
     extra_eind = None
@@ -173,7 +175,8 @@ def parse_bijbelreferentie(tekst: str) -> Optional[BijbelReferentie]:
 
     # Regex aangepast om boeknamen met meerdere woorden (en spaties) toe te staan
     # bijv. "Jezus Sirach 24" of "1 Koningen 12"
-    pattern = r'^(\d?\s*[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)\s+(\d+)(?::(\d+)(?:[-–](\d+))?)?'
+    # Allow optional letter suffix (a, b, etc.) after verse numbers
+    pattern = r'^(\d?\s*[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)\s+(\d+)(?::(\d+)[a-z]?(?:[-–](\d+)[a-z]?)?)?'
     match = re.match(pattern, tekst, re.IGNORECASE)
 
     if not match:
@@ -434,7 +437,7 @@ def download_lezingen(output_dir: Path, liturgie_tekst: str) -> dict[str, str]:
 
     for ref_str in referenties_raw:
         # Check of dit een complexe referentie is met meerdere verse ranges (bijv. "1 Samuel 1,20-22.24-28")
-        complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;]+)", ref_str)
+        complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;a-z]+)", ref_str)
 
         if complex_match:
             book_chapter_base = f"{complex_match.group(1).strip()} {complex_match.group(2)}"

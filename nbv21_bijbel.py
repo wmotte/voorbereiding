@@ -34,6 +34,7 @@ except ImportError:
                 return f"{self.boek} {self.hoofdstuk}"
 
     def parse_bijbelreferentie(tekst: str) -> Optional[BijbelReferentie]:
+        """Handles verse suffixes like 'a' or 'b' (e.g., "3a") by ignoring them."""
         tekst = tekst.strip()
         haakjes_match = re.search(r'\((?:vers\s*)?(\d+)[-–]?(\d+)?\)', tekst)
         extra_eind = None
@@ -41,18 +42,19 @@ except ImportError:
             extra_eind = int(haakjes_match.group(2)) if haakjes_match.group(2) else int(haakjes_match.group(1))
             tekst = re.sub(r'\s*\([^)]+\)', '', tekst)
 
-        pattern = r'^(\d?\s*[A-Za-zëïüéèöä]+)\s+(\d+)(?::(\d+)(?:[-–](\d+))?)?'
+        # Allow optional letter suffix (a, b, etc.) after verse numbers
+        pattern = r'^(\d?\s*[A-Za-zëïüéèöä]+)\s+(\d+)(?::(\d+)[a-z]?(?:[-–](\d+)[a-z]?)?)?'
         match = re.match(pattern, tekst, re.IGNORECASE)
         if not match: return None
-        
+
         boek = match.group(1).strip().lower()
         hoofdstuk = int(match.group(2))
         vers_start = int(match.group(3)) if match.group(3) else None
         vers_eind = int(match.group(4)) if match.group(4) else vers_start
-        
+
         if extra_eind and (vers_eind is None or extra_eind > vers_eind):
             vers_eind = extra_eind
-            
+
         return BijbelReferentie(boek, hoofdstuk, vers_start, vers_eind)
 
 # Pad configuratie
@@ -242,7 +244,7 @@ def save_nbv21_lezingen(output_dir: Path, context_text: str) -> dict[str, str]:
     for raw_ref in found_refs_raw:
         # Check of dit een complexe referentie is met meerdere verse ranges (bijv. "1 Samuel 1,20-22.24-28")
         # Probeer eerst boek en hoofdstuk te extraheren
-        complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;]+)", raw_ref)
+        complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;a-z]+)", raw_ref)
 
         if complex_match:
             book_chapter_base = f"{complex_match.group(1).strip()} {complex_match.group(2)}"
