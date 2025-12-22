@@ -2318,12 +2318,17 @@
             }
 
             // Array of objects - check if suitable for grid
-            if (arr.every(item => typeof item === 'object') && arr.length >= 2) {
+            if (arr.every(item => typeof item === 'object') && arr.length >= 1) {
                 // Check if objects are simple enough for grid cards
                 const isSimpleObjects = arr.every(item => {
                     const entries = Object.entries(item).filter(([k]) => !k.startsWith('_'));
-                    const hasDeepNesting = entries.some(([k, v]) => typeof v === 'object' && !Array.isArray(v));
-                    return entries.length <= 8 && !hasDeepNesting;
+                    // Relaxed check: Allow nested objects if they are not excessive
+                    const hasHugeNesting = entries.some(([k, v]) => 
+                        typeof v === 'object' && 
+                        !Array.isArray(v) && 
+                        Object.keys(v).length > 6
+                    );
+                    return entries.length <= 12 && !hasHugeNesting;
                 });
 
                 if (isSimpleObjects) {
@@ -2351,8 +2356,15 @@
                             } else if (Array.isArray(value)) {
                                 if (value.every(v => typeof v === 'string') && value.length <= 5) {
                                     html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${value.map(v => processText(v)).join(', ')}</div>`;
+                                } else {
+                                     html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong></div>`;
+                                     html += renderArray(value, key);
                                 }
-                            } else if (typeof value !== 'object') {
+                            } else if (typeof value === 'object') {
+                                // Handle nested objects (like relevante_scene)
+                                html += `<div style="margin-top: 8px; padding-top: 4px; border-top: 1px dashed var(--border-light);"><strong>${escapeHtml(formatKey(key))}:</strong></div>`;
+                                html += `<div style="margin-left: 0; padding-left: 0;">${renderObjectCompact(value)}</div>`;
+                            } else {
                                 html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${formatValue(value)}</div>`;
                             }
                         }

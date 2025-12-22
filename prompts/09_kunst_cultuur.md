@@ -57,25 +57,25 @@ Gebruik bronnen zoals:
 
 ### 3. Film en documentaire
 Zoek naar:
-- **Art house en dramafilms:** Films die het thema raken zonder expliciet Bijbels te zijn
-- **Documentaires:** Over de historische of archeologische context
-- **Klassieke Bijbelfilms:** Alleen als er een specifiek relevante scène is
-- **Animaties:** Geschikt voor kindernevendienst of intergenerationeel
+- Art house en dramafilms die het thema raken zonder expliciet Bijbels te zijn
+- Documentaires over de historische of archeologische context
+- Klassieke Bijbelfilms, maar alleen als er een specifiek relevante scène is
+- Animaties die geschikt zijn voor de kindernevendienst of intergenerationeel gebruik
 
 Let op: geef concrete titels, regisseurs en waar mogelijk tijdscodes of scènes. Vermijd de standaard Bijbelverfilmingen tenzij ze iets specifieks toevoegen.
 
 ### 4. Muziek (buiten het Liedboek)
-- **Hedendaagse muziek:** Singer-songwriters, indie, of andere genres die het thema raken
-- **Klassieke muziek:** Relevante werken, niet alleen de bekendste componisten
-- **Oratoria en cantates:** Die de lezingen verklanken
-- **Liederen:** Van Taizé, Iona, of andere bronnen
+- Welke hedendaagse singer-songwriters, indie, of andere genres raken dit thema?
+- Relevante klassieke werken, kijk verder dan alleen de bekendste componisten
+- Oratoria en cantates die de lezingen verklanken
+- Liederen van Taizé, Iona, of andere wereldwijde bronnen
 
 ### 5. Literatuur
-- **Moderne romans en novelles:** Hedendaagse literatuur die thematisch resoneert
-- **Literaire thrillers:** Spannende verhalen met existentiële of ethische diepgang
-- **Klassieke romans:** Die het thema verkennen (Dostojevski, Camus, Coetzee, etc.)
-- **Nederlandse literatuur:** Hermans, Mulisch, Enquist, Abdolah, en recenter werk
-- **Essays:** Die het thema vanuit onverwachte hoek belichten
+- Hedendaagse romans en novelles die thematisch resoneren
+- Literaire thrillers met existentiële of ethische diepgang
+- Klassieke romans die het thema verkennen (denk aan Dostojevski, Camus, Coetzee)
+- Nederlandse literatuur van auteurs als Hermans, Mulisch, Enquist, Abdolah en recent talent
+- Essays die het thema vanuit een onverwachte hoek belichten
 
 ### 6. Aansluiting bij de gemeentecontext
 Houd rekening met:
@@ -114,18 +114,23 @@ Houd rekening met:
 ## Gewenste output
 
 Lever een overzicht dat:
-1. **Minimaal 5-7 concrete kunstwerken** beschrijft met:
+1. **Minimaal 5-7 concrete kunstwerken** (waarvan minstens de helft modern/hedendaags) beschrijft met:
    - Titel, kunstenaar, jaartal
    - Korte beschrijving wat het werk laat zien
-   - Concreet wat dit werk toevoegt aan het verstaan van de tekst (geen vage formuleringen)
-   - Een zoekterm regel in dit formaat: `**Zoekterm:** [zoekopdracht]` (gebruik geen backticks rondom de hele regel, alleen rond de zoekopdracht als dat helpt, of gewoon platte tekst)
+   - Concreet wat dit werk toevoegt aan het verstaan van de tekst
+   - Een zoekterm regel in dit formaat: `**Zoekterm:** [zoekopdracht]`
 2. **Minimaal 2-3 film/video suggesties** met:
    - Titel, regisseur, jaar
-   - Relevante scène of fragment
-   - Specifiek wat dit fragment kan openen
+   - Relevante scène of fragment en wat dit fragment opent
    - Een zoekterm regel in dit formaat: `**Zoekterm:** [zoekopdracht]`
-3. **Literatuursuggesties** met auteur, titel, jaar - zodat het te verifiëren is
-4. **Suggesties voor muziek** die de dienst kunnen verrijken
+3. **Minimaal 2-3 literatuursuggesties** met:
+   - Auteur, titel, jaar
+   - Thematische resonantie
+   - Een zoekterm regel in dit formaat: `**Zoekterm:** [zoekopdracht]`
+4. **Minimaal 2-3 muzieksuggesties** (hedendaags en/of klassiek, buiten het Liedboek) met:
+   - Titel, artiest/componist
+   - Verbinding met het thema
+   - Een zoekterm regel in dit formaat: `**Zoekterm:** [zoekopdracht]`
 5. **Praktische tips** voor gebruik in {{gemeente}}
 
 Streef naar originaliteit: liever één verrassende vondst dan vijf voorspelbare suggesties. Kwaliteit en verifieerbaarheid boven kwantiteit.
@@ -201,7 +206,8 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       {
         "titel": "string",
         "bron": "string - Taizé|Iona|Anders",
-        "gebruik": "string"
+        "gebruik": "string",
+        "zoekterm": "string"
       }
     ]
   },
@@ -220,7 +226,9 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       {
         "titel": "string",
         "auteur": "string",
-        "thematische_resonantie": "string"
+        "jaar": "string|number|null",
+        "thematische_resonantie": "string",
+        "zoekterm": "string"
       }
     ],
     "nederlands": [
@@ -228,7 +236,8 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
         "titel": "string",
         "auteur": "string",
         "jaar": "number|null",
-        "thematische_resonantie": "string"
+        "thematische_resonantie": "string",
+        "zoekterm": "string"
       }
     ]
   },
@@ -263,4 +272,4 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
 **BELANGRIJK:**
 - Retourneer ALLEEN valide JSON, geen markdown of toelichting.
 - Gebruik NOOIT URLs, alleen zoektermen.
-- Minimaal 5-7 kunstwerken, 2-3 films.
+- Minimaal 5-7 kunstwerken, 2-3 films, 2-3 boeken, 2-3 muziekstukken.
