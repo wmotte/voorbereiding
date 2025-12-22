@@ -50,19 +50,6 @@ GEMINI_API_KEY=jouw-api-key-hier
 
 ---
 
-## 📚 Bijbelvertalingen
-
-### Naardense Bijbel (Automatisch)
-De literaire vertaling van Pieter Oussoren wordt **automatisch opgehaald** van [naardensebijbel.nl](https://www.naardensebijbel.nl/).
-*   **Werking:** Het script `naardense_bijbel.py` zoekt de lezingen, downloadt de tekst en slaat deze op in `output/.../bijbelteksten/`.
-
-### NBV21 (Lokaal)
-Vanwege auteursrechten werkt de NBV21 alleen met **lokale JSON-bestanden**.
-*   **Locatie:** Plaats bestanden in `nbv21/[BOEKCODE]/[BOEKCODE].[HOOFDSTUK].json`.
-*   **Ondersteuning:** Robuuste naamherkenning voor alle boeken (incl. Richteren, Mattheüs, Sirach, etc.).
-
----
-
 ## 🚀 Stappenplan Gebruik
 
 ### Stap 1: Basisanalyse

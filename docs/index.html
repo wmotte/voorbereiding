@@ -1941,6 +1941,8 @@
                 contentHtml = renderGebedenSection(dataToRender);
             } else if (key === '12_representatieve_hoorders') {
                 contentHtml = renderHoordersSection(dataToRender);
+            } else if (key === '08_exegese') {
+                contentHtml = renderExegeseSection(dataToRender);
             } else {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             }
@@ -2697,6 +2699,502 @@
             });
 
             html += `</div></div>`; // end plot-container, data-group
+            return html;
+        }
+
+        // Render Exegese section
+        function renderExegeseSection(data) {
+            let html = '';
+
+            // Render per lezing
+            if (data.per_lezing && Array.isArray(data.per_lezing)) {
+                data.per_lezing.forEach((lezing, index) => {
+                    html += `<div class="data-group">`;
+                    html += `<div class="data-group-title">${escapeHtml(lezing.referentie || `Lezing ${index + 1}`)}</div>`;
+
+                    // Afbakening vertaling
+                    if (lezing.afbakening_vertaling) {
+                        html += `<div class="nested-object">`;
+                        html += `<div class="nested-title">Afbakening Vertaling</div>`;
+
+                        if (lezing.afbakening_vertaling.vertaalvergelijking && Array.isArray(lezing.afbakening_vertaling.vertaalvergelijking)) {
+                            html += `<div class="data-group"><div class="data-group-title">Vertaalvergelijking</div>`;
+                            lezing.afbakening_vertaling.vertaalvergelijking.forEach(vergelijking => {
+                                html += `<div class="nested-card">`;
+                                html += `<div class="nested-card-title">${escapeHtml(vergelijking.vertaling)}</div>`;
+                                html += `<div class="nested-card-content">${processText(vergelijking.significante_verschillen || '')}</div>`;
+                                html += `</div>`;
+                            });
+                            html += `</div>`;
+                        }
+
+                        if (lezing.afbakening_vertaling.werkvertaling_cruciaal) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Werkvertaling Cruciaal</div>`;
+                            html += `<div class="data-value">${processText(lezing.afbakening_vertaling.werkvertaling_cruciaal)}</div>`;
+                            html += `</div>`;
+                        }
+
+                        html += `</div>`;
+                    }
+
+                    // Tekstkritiek
+                    if (lezing.tekskritiek) {
+                        html += `<div class="nested-object">`;
+                        html += `<div class="nested-title">Tekstkritiek</div>`;
+
+                        if (lezing.tekskritiek.relevante_varianten && Array.isArray(lezing.tekskritiek.relevante_varianten)) {
+                            html += `<div class="data-group"><div class="data-group-title">Relevante Varianten</div>`;
+                            lezing.tekskritiek.relevante_varianten.forEach(variant => {
+                                html += `<div class="nested-card">`;
+                                html += `<div class="nested-card-title">Vers ${variant.vers}</div>`;
+                                html += `<div class="nested-card-content">`;
+                                html += `<div><strong>Variant:</strong> ${escapeHtml(variant.variant || '')}</div>`;
+                                html += `<div><strong>Handschriften:</strong> ${escapeHtml(variant.handschriften || '')}</div>`;
+                                html += `<div><strong>Betekenis Impact:</strong> ${processText(variant.betekenis_impact || '')}</div>`;
+                                html += `</div>`;
+                                html += `</div>`;
+                            });
+                            html += `</div>`;
+                        }
+
+                        if (lezing.tekskritiek.conclusie) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Conclusie</div>`;
+                            html += `<div class="data-value">${processText(lezing.tekskritiek.conclusie)}</div>`;
+                            html += `</div>`;
+                        }
+
+                        html += `</div>`;
+                    }
+
+                    // Woordstudie
+                    if (lezing.woordstudie && Array.isArray(lezing.woordstudie)) {
+                        html += `<div class="nested-object">`;
+                        html += `<div class="nested-title">Woordstudie</div>`;
+                        html += `<div class="data-group"><div class="data-group-title">Woorden</div>`;
+
+                        lezing.woordstudie.forEach(woord => {
+                            html += `<div class="nested-card">`;
+                            html += `<div class="nested-card-title">${escapeHtml(woord.woord_origineel || '')} (${escapeHtml(woord.transliteratie || '')})</div>`;
+                            html += `<div class="nested-card-content">`;
+                            html += `<div><strong>Vertaling:</strong> ${escapeHtml(woord.vertaling || '')}</div>`;
+                            html += `<div><strong>Semantische Range:</strong> ${processText(woord.semantische_range || '')}</div>`;
+                            html += `<div><strong>Gebruik Elders:</strong> ${processText(woord.gebruik_elders || '')}</div>`;
+                            if (woord.meerduidigheid) {
+                                html += `<div><strong>Meerduidigheid:</strong> ${processText(woord.meerduidigheid)}</div>`;
+                            }
+                            html += `</div>`;
+                            html += `</div>`;
+                        });
+
+                        html += `</div></div>`;
+                    }
+
+                    // Literaire Analyse
+                    if (lezing.literaire_analyse) {
+                        html += `<div class="nested-object">`;
+                        html += `<div class="nested-title">Literaire Analyse</div>`;
+
+                        if (lezing.literaire_analyse.genre) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Genre</div>`;
+                            html += `<div class="data-value">${escapeHtml(lezing.literaire_analyse.genre)}</div>`;
+                            html += `</div>`;
+                        }
+
+                        if (lezing.literaire_analyse.genre_conventies) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Genre Conventies</div>`;
+                            html += `<div class="data-value">${processText(lezing.literaire_analyse.genre_conventies)}</div>`;
+                            html += `</div>`;
+                        }
+
+                        // Structuur
+                        if (lezing.literaire_analyse.structuur) {
+                            html += `<div class="data-group"><div class="data-group-title">Structuur</div>`;
+
+                            if (lezing.literaire_analyse.structuur.opbouw) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Opbouw</div>`;
+                                html += `<div class="data-value">${processText(lezing.literaire_analyse.structuur.opbouw)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.literaire_analyse.structuur.cesuren && Array.isArray(lezing.literaire_analyse.structuur.cesuren)) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Cesuren</div>`;
+                                html += `<div class="data-value"><ul>`;
+                                lezing.literaire_analyse.structuur.cesuren.forEach(cesuur => {
+                                    html += `<li>${processText(cesuur)}</li>`;
+                                });
+                                html += `</ul></div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.literaire_analyse.structuur.centrum) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Centrum</div>`;
+                                html += `<div class="data-value">${processText(lezing.literaire_analyse.structuur.centrum)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.literaire_analyse.structuur.chiasme_inclusio) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Chiasme/Inclusio</div>`;
+                                html += `<div class="data-value">${processText(lezing.literaire_analyse.structuur.chiasme_inclusio)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            html += `</div>`;
+                        }
+
+                        // Stijl en Rhetoriek
+                        if (lezing.literaire_analyse.stijl_retoriek) {
+                            html += `<div class="data-group"><div class="data-group-title">Stijl en Retoriek</div>`;
+
+                            if (lezing.literaire_analyse.stijl_retoriek.literaire_middelen && Array.isArray(lezing.literaire_analyse.stijl_retoriek.literaire_middelen)) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Literaire Middelen</div>`;
+                                html += `<div class="data-value"><ul>`;
+                                lezing.literaire_analyse.stijl_retoriek.literaire_middelen.forEach(middel => {
+                                    html += `<li>${processText(middel)}</li>`;
+                                });
+                                html += `</ul></div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.literaire_analyse.stijl_retoriek.retorische_strategie) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Retorische Strategie</div>`;
+                                html += `<div class="data-value">${processText(lezing.literaire_analyse.stijl_retoriek.retorische_strategie)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.literaire_analyse.stijl_retoriek.effect_lezer) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Effect Lezer</div>`;
+                                html += `<div class="data-value">${processText(lezing.literaire_analyse.stijl_retoriek.effect_lezer)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            html += `</div>`;
+                        }
+
+                        // Karakters en Plot
+                        if (lezing.literaire_analyse.karakters_plot) {
+                            html += `<div class="data-group"><div class="data-group-title">Karakters en Plot</div>`;
+
+                            if (lezing.literaire_analyse.karakters_plot.personages && Array.isArray(lezing.literaire_analyse.karakters_plot.personages)) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Personages</div>`;
+                                html += `<div class="data-value"><ul>`;
+                                lezing.literaire_analyse.karakters_plot.personages.forEach(personage => {
+                                    html += `<li>${processText(personage)}</li>`;
+                                });
+                                html += `</ul></div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.literaire_analyse.karakters_plot.karakterisering) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Karakterisering</div>`;
+                                html += `<div class="data-value">${processText(lezing.literaire_analyse.karakters_plot.karakterisering)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.literaire_analyse.karakters_plot.verhaallijn) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Verhaallijn</div>`;
+                                html += `<div class="data-value">${processText(lezing.literaire_analyse.karakters_plot.verhaallijn)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.literaire_analyse.karakters_plot.verzwegen_gesuggereerd) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Verzwegen/Gesuggereerd</div>`;
+                                html += `<div class="data-value">${processText(lezing.literaire_analyse.karakters_plot.verzwegen_gesuggereerd)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            html += `</div>`;
+                        }
+
+                        html += `</div>`;
+                    }
+
+                    // Theologische Analyse
+                    if (lezing.theologische_analyse) {
+                        html += `<div class="nested-object">`;
+                        html += `<div class="nested-title">Theologische Analyse</div>`;
+
+                        if (lezing.theologische_analyse.centrale_boodschap) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Centrale Boodschap</div>`;
+                            html += `<div class="data-value">${processText(lezing.theologische_analyse.centrale_boodschap)}</div>`;
+                            html += `</div>`;
+                        }
+
+                        if (lezing.theologische_analyse.godsbeeld) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Godsbeeld</div>`;
+                            html += `<div class="data-value">${processText(lezing.theologische_analyse.godsbeeld)}</div>`;
+                            html += `</div>`;
+                        }
+
+                        if (lezing.theologische_analyse.mensbeeld_wereld_heil) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Mensbeeld/Wereld/Heil</div>`;
+                            html += `<div class="data-value">${processText(lezing.theologische_analyse.mensbeeld_wereld_heil)}</div>`;
+                            html += `</div>`;
+                        }
+
+                        if (lezing.theologische_analyse.bijbels_theologische_lijnen && Array.isArray(lezing.theologische_analyse.bijbels_theologische_lijnen)) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Bijbels Theologische Lijnen</div>`;
+                            html += `<div class="data-value"><ul>`;
+                            lezing.theologische_analyse.bijbels_theologische_lijnen.forEach(lijn => {
+                                html += `<li>${processText(lijn)}</li>`;
+                            });
+                            html += `</ul></div>`;
+                            html += `</div>`;
+                        }
+
+                        if (lezing.theologische_analyse.plaats_heilsgeschiedenis) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Plaats in Heilsgeschiedenis</div>`;
+                            html += `<div class="data-value">${processText(lezing.theologische_analyse.plaats_heilsgeschiedenis)}</div>`;
+                            html += `</div>`;
+                        }
+
+                        if (lezing.theologische_analyse.spanning_andere_teksten) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Spanning met Andere Teksten</div>`;
+                            html += `<div class="data-value">${processText(lezing.theologische_analyse.spanning_andere_teksten)}</div>`;
+                            html += `</div>`;
+                        }
+
+                        if (lezing.theologische_analyse.dogmatische_raakvlakken && Array.isArray(lezing.theologische_analyse.dogmatische_raakvlakken)) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Dogmatische Raakvlakken</div>`;
+                            html += `<div class="data-value"><ul>`;
+                            lezing.theologische_analyse.dogmatische_raakvlakken.forEach(raakvlak => {
+                                html += `<li>${processText(raakvlak)}</li>`;
+                            });
+                            html += `</ul></div>`;
+                            html += `</div>`;
+                        }
+
+                        if (lezing.theologische_analyse.theologische_controverses && Array.isArray(lezing.theologische_analyse.theologische_controverses)) {
+                            html += `<div class="data-item">`;
+                            html += `<div class="data-label">Theologische Controverses</div>`;
+                            html += `<div class="data-value"><ul>`;
+                            lezing.theologische_analyse.theologische_controverses.forEach(controverse => {
+                                html += `<li>${processText(controverse)}</li>`;
+                            });
+                            html += `</ul></div>`;
+                            html += `</div>`;
+                        }
+
+                        html += `</div>`;
+                    }
+
+                    // Zoekmodellen Snoek
+                    if (lezing.zoekmodellen_snoek) {
+                        html += `<div class="nested-object">`;
+                        html += `<div class="nested-title">Zoekmodellen Snoek</div>`;
+
+                        // Godsbeelden OT
+                        if (lezing.zoekmodellen_snoek.godsbeelden_ot) {
+                            html += `<div class="data-group"><div class="data-group-title">Godsbeelden OT</div>`;
+
+                            if (lezing.zoekmodellen_snoek.godsbeelden_ot.werkwoordelijke_uitspraken) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Werkwoordelijke Uitspraken</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.godsbeelden_ot.werkwoordelijke_uitspraken)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.godsbeelden_ot.metaforische_uitspraken) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Metaforische Uitspraken</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.godsbeelden_ot.metaforische_uitspraken)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.godsbeelden_ot.overstijgende_eigenschappen) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Overstijgende Eigenschappen</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.godsbeelden_ot.overstijgende_eigenschappen)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.godsbeelden_ot.toebuigende_eigenschappen) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Toebuigende Eigenschappen</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.godsbeelden_ot.toebuigende_eigenschappen)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.godsbeelden_ot.dominante_categorie) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Dominante Categorie</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.godsbeelden_ot.dominante_categorie)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.godsbeelden_ot.spanning) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Spanning</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.godsbeelden_ot.spanning)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.godsbeelden_ot.relevantie_gemeente) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Relevantie Gemeente</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.godsbeelden_ot.relevantie_gemeente)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            html += `</div>`;
+                        }
+
+                        // Mensbeelden OT
+                        if (lezing.zoekmodellen_snoek.mensbeelden_ot) {
+                            html += `<div class="data-group"><div class="data-group-title">Mensbeelden OT</div>`;
+
+                            if (lezing.zoekmodellen_snoek.mensbeelden_ot.horizontale_as) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Horizontale As</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.mensbeelden_ot.horizontale_as)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.mensbeelden_ot.verticale_as) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Verticale As</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.mensbeelden_ot.verticale_as)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.mensbeelden_ot.personages_positie) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Personages Positie</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.mensbeelden_ot.personages_positie)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.mensbeelden_ot.karakterontwikkeling) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Karakterontwikkeling</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.mensbeelden_ot.karakterontwikkeling)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            html += `</div>`;
+                        }
+
+                        // Jezusbeelden NT
+                        if (lezing.zoekmodellen_snoek.jezusbeelden_nt) {
+                            html += `<div class="data-group"><div class="data-group-title">Jezusbeelden NT</div>`;
+
+                            if (lezing.zoekmodellen_snoek.jezusbeelden_nt.van_achteren) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Van Achteren</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.jezusbeelden_nt.van_achteren)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.jezusbeelden_nt.van_boven) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Van Boven</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.jezusbeelden_nt.van_boven)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.jezusbeelden_nt.van_beneden) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Van Beneden</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.jezusbeelden_nt.van_beneden)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.jezusbeelden_nt.van_voren) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Van Voren</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.jezusbeelden_nt.van_voren)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.jezusbeelden_nt.dominant_perspectief) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Dominant Perspectief</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.jezusbeelden_nt.dominant_perspectief)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.jezusbeelden_nt.spanning_godheid_mensheid) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Spanning Godheid-Mensheid</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.jezusbeelden_nt.spanning_godheid_mensheid)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            if (lezing.zoekmodellen_snoek.jezusbeelden_nt.betekenis_hoorders_nu) {
+                                html += `<div class="data-item">`;
+                                html += `<div class="data-label">Betekenis Hoorders Nu</div>`;
+                                html += `<div class="data-value">${processText(lezing.zoekmodellen_snoek.jezusbeelden_nt.betekenis_hoorders_nu)}</div>`;
+                                html += `</div>`;
+                            }
+
+                            html += `</div>`;
+                        }
+
+                        html += `</div>`;
+                    }
+
+                    html += `</div>`;
+                });
+            }
+
+            // Samenhang lezingen
+            if (data.samenhang_lezingen) {
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Samenhang Lezingen</div>`;
+
+                if (data.samenhang_lezingen.rode_draad) {
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">Rode Draad</div>`;
+                    html += `<div class="data-value">${processText(data.samenhang_lezingen.rode_draad)}</div>`;
+                    html += `</div>`;
+                }
+
+                if (data.samenhang_lezingen.versterkingen && Array.isArray(data.samenhang_lezingen.versterkingen)) {
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">Versterkingen</div>`;
+                    html += `<div class="data-value"><ul>`;
+                    data.samenhang_lezingen.versterkingen.forEach(versterking => {
+                        html += `<li>${processText(versterking)}</li>`;
+                    });
+                    html += `</ul></div>`;
+                    html += `</div>`;
+                }
+
+                if (data.samenhang_lezingen.correcties && Array.isArray(data.samenhang_lezingen.correcties)) {
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">Correcties</div>`;
+                    html += `<div class="data-value"><ul>`;
+                    data.samenhang_lezingen.correcties.forEach(correctie => {
+                        html += `<li>${processText(correctie)}</li>`;
+                    });
+                    html += `</ul></div>`;
+                    html += `</div>`;
+                }
+
+                html += `</div>`;
+            }
+
             return html;
         }
 
@@ -3467,11 +3965,12 @@
                  option.textContent = file;
                  fileSelector.appendChild(option);
              });
-             
+
              if (jsonFiles.length > 0) {
-                 // Set the selector to the first file and load it
-                 fileSelector.value = jsonFiles[0];
-                 loadFile(jsonFiles[0]);
+                 // Set the selector to the exegese file and load it, or fall back to first file
+                 const defaultFile = jsonFiles.includes('voorbeeld_01.json') ? 'voorbeeld_02.json' : jsonFiles[0];
+                 fileSelector.value = defaultFile;
+                 loadFile(defaultFile);
              }
         }
         
