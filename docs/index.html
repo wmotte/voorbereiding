@@ -1890,6 +1890,24 @@
                             subSectionLabels[`lezing-${index + 1}`] = referentie;
                         });
                     }
+                } else if (key === '14_gebeden') {
+                    // Special handling for Gebeden - show specific prayer types
+                    const gebeden = sectionData.gebeden || {};
+                    const gebedOrder = ['drempelgebed', 'kyrie', 'epiclese', 'dankgebed', 'voorbeden'];
+                    const gebedTitles = {
+                        'drempelgebed': 'Drempelgebed',
+                        'kyrie': 'Kyrie',
+                        'epiclese': 'Epiclese',
+                        'dankgebed': 'Dankgebed',
+                        'voorbeden': 'Voorbeden'
+                    };
+
+                    gebedOrder.forEach(prayerType => {
+                        if (gebeden[prayerType]) {
+                            subSections.push(`gebeden-${prayerType}`);
+                            subSectionLabels[`gebeden-${prayerType}`] = gebedTitles[prayerType] || prayerType;
+                        }
+                    });
                 } else {
                     // Default: get subsections from top-level keys
                     subSections = Object.keys(sectionData)
@@ -2795,7 +2813,7 @@
 
                         if (lezing.afbakening_vertaling.werkvertaling_cruciaal) {
                             html += `<div class="data-item">`;
-                            html += `<div class="data-label">Werkvertaling Cruciaal</div>`;
+                            html += `<div class="data-label">Werkvertaling</div>`;
                             html += `<div class="data-value">${processText(lezing.afbakening_vertaling.werkvertaling_cruciaal)}</div>`;
                             html += `</div>`;
                         }
