@@ -4,6 +4,8 @@
 
 **Een door een LLM (taalmodel) ondersteund hulpmiddel voor protestantse preekvoorbereiding (PKN).**
 
+Bekijk de online webviewer met voorbeelddata: [https://wmotte.github.io/voorbereiding/](https://wmotte.github.io/voorbereiding/)
+
 Dit project combineert diepgaande **contextanalyse** (hoorders, samenleving) met concrete **liturgische bouwstenen** (exegese, preekschets, gebeden). Het doel is niet om de preek te *schrijven*, maar om de predikant te voorzien van een rijke, contextuele basis.
 
 ---

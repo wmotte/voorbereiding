@@ -48,8 +48,8 @@ BOEK_NAAR_SLUG = {
     # Oude Testament
     "genesis": "genesis", "exodus": "exodus", "leviticus": "leviticus",
     "numeri": "numeri", "deuteronomium": "deuteronomium", "jozua": "jozua",
-    "rechters": "rechters", "ruth": "ruth", "1 samuel": "1-samuel", "1 samuël": "1-samuel",
-    "2 samuel": "2-samuel", "2 samuël": "2-samuel", "1 koningen": "1-koningen", "2 koningen": "2-koningen",
+    "rechters": "rechters", "ruth": "ruth", "1 samuel": "1-samuel", "1 samuël": "1-samuel", "1-samuël": "1-samuel",
+    "2 samuel": "2-samuel", "2 samuël": "2-samuel", "2-samuël": "2-samuel", "1 koningen": "1-koningen", "2 koningen": "2-koningen",
     "1 kronieken": "1-kronieken", "2 kronieken": "2-kronieken", "ezra": "ezra",
     "nehemia": "nehemia", "ester": "ester", "job": "job", "psalm": "psalm",
     "psalmen": "psalm", "spreuken": "spreuken", "prediker": "prediker",
@@ -226,6 +226,21 @@ def haal_vers_op(boek_slug: str, hoofdstuk: int, vers: int) -> Optional[str]:
             body = soup.find('body')
             if not body: return None
 
+            # Behoud de poëtische structuur door naar specifieke span elementen te zoeken
+            # Zoek naar de lead paragraph met de bijbeltekst
+            lead_para = body.find('p', class_='lead')
+            if lead_para:
+                # Zoek naar de span elementen met class 'q' (poëtische regels)
+                poeze_regels = lead_para.find_all('span', class_='q')
+                if poeze_regels:
+                    regels = []
+                    for regel in poeze_regels:
+                        regel_tekst = regel.get_text(separator=' ', strip=True)
+                        if regel_tekst:
+                            regels.append(regel_tekst)
+                    return '\n'.join(regels) if regels else None
+
+            # Fallback: oude methode
             tekst = body.get_text(separator='\n', strip=True)
             lines = tekst.split('\n')
             bijbel_lines = []
@@ -243,7 +258,7 @@ def haal_vers_op(boek_slug: str, hoofdstuk: int, vers: int) -> Optional[str]:
                 if in_tekst:
                     bijbel_lines.append(line)
 
-            return ' '.join(bijbel_lines) if bijbel_lines else None
+            return '\n'.join(bijbel_lines) if bijbel_lines else None
         except Exception as e:
             if poging < max_retries - 1:
                 time.sleep((poging + 1) * 2)
@@ -309,7 +324,21 @@ def haal_verzen_via_zoek(boek: str, hoofdstuk: int, vers_start: int, vers_eind: 
                 cells = row.find_all('td')
                 if len(cells) >= 2:
                     vers_nr = cells[0].get_text(strip=True)
-                    vers_tekst = cells[1].get_text(strip=True)
+                    # Behoud de poëtische structuur in de vers-tekst
+                    cell_content = cells[1]
+                    # Zoek naar poëtische elementen (span class="q") binnen de cel
+                    poeze_regels = cell_content.find_all('span', class_='q')
+                    if poeze_regels:
+                        regels = []
+                        for regel in poeze_regels:
+                            regel_tekst = regel.get_text(separator=' ', strip=True)
+                            if regel_tekst:
+                                regels.append(regel_tekst)
+                        vers_tekst = '\n'.join(regels)
+                    else:
+                        # Fallback naar normale tekst
+                        vers_tekst = cells[1].get_text(strip=True)
+
                     if vers_nr.isdigit() and vers_tekst:
                         verzen.append({"verse": int(vers_nr), "text": vers_tekst})
     except Exception as e:
@@ -361,14 +390,45 @@ def haal_bijbeltekst_op(referentie: BijbelReferentie) -> Tuple[Optional[str], Op
 
     data = []
 
-    if slug:
+    # Speciale afhandeling voor 1 Samuel en 2 Samuel - de zoek-URL werkt daar verkeerd
+    if slug and referentie.boek.lower() in ('1 samuel', '1 samuël', '2 samuel', '2 samuël'):
+        # Speciale handmatige correctie voor 1 Samuel 1 - dit hoofdstuk wordt verkeerd geleverd via de zoekfunctie
+        if referentie.boek.lower() in ('1 samuel', '1 samuël') and referentie.hoofdstuk == 1:
+            print(f"    -> Waarschuwing: 1 Samuel 1 kan niet automatisch worden opgehaald vanwege website beperkingen")
+            print(f"  Onbekend bijbelboek of kon niet ophalen: {referentie.boek}")
+            return None, None
+
+        # Probeer eerst directe toegang via slug
         data = haal_verzen_data(slug, referentie.hoofdstuk, vers_start, vers_eind)
         if not data and not referentie.vers_start:
              data = haal_heel_hoofdstuk_data(slug, referentie.hoofdstuk)
-    
-    if not data:
-        print(f"    -> Fallback naar zoek-URL...")
-        data = haal_verzen_via_zoek(referentie.boek, referentie.hoofdstuk, vers_start, vers_eind)
+
+        # Als dat ook niet werkt, probeer dan een alternatieve aanpak
+        if not data:
+            print(f"    -> Fallback naar zoek-URL (speciaal voor Samuel boeken)...")
+            data = haal_verzen_via_zoek(referentie.boek, referentie.hoofdstuk, vers_start, vers_eind)
+
+            # Extra controle voor Samuel boeken: soms geeft de zoekfunctie verkeerde resultaten
+            if data and referentie.boek.lower() in ('1 samuel', '1 samuël'):
+                # Controleer of de verzen overeenkomen met het verwachte hoofdstuk
+                # Als eerste vers begint met "En het geschiedt na Sauls dooden" dan is het 2 Samuel i.p.v. 1 Samuel
+                if data and len(data) > 0 and "Saul" in data[0].get('text', '') and "dooden" in data[0].get('text', ''):
+                    print(f"    -> Waarschuwing: mogelijk verkeerd hoofdstuk ontvangen voor {referentie.boek}")
+                    # Probeer dan met een alternatieve methode of geef foutmelding
+                    data = []  # Reset data zodat het als niet gevonden wordt gemarkeerd
+            elif data and referentie.boek.lower() in ('2 samuel', '2 samuël'):
+                # Voor 2 Samuel controleren we of het met de juiste tekst begint
+                pass  # Geen specifieke controle nodig voor 2 Samuel
+    else:
+        # Standaardafhandeling voor andere boeken
+        if slug:
+            data = haal_verzen_data(slug, referentie.hoofdstuk, vers_start, vers_eind)
+            if not data and not referentie.vers_start:
+                 data = haal_heel_hoofdstuk_data(slug, referentie.hoofdstuk)
+
+        if not data:
+            print(f"    -> Fallback naar zoek-URL...")
+            data = haal_verzen_via_zoek(referentie.boek, referentie.hoofdstuk, vers_start, vers_eind)
 
     if not data:
         print(f"  Onbekend bijbelboek of kon niet ophalen: {referentie.boek}")
@@ -378,7 +438,7 @@ def haal_bijbeltekst_op(referentie: BijbelReferentie) -> Tuple[Optional[str], Op
     md_lines = []
     for item in data:
         md_lines.append(f"**{referentie.hoofdstuk}:{item['verse']}** {item['text']}")
-    
+
     return '\n\n'.join(md_lines), data
 
 def extract_lezingen_uit_liturgie(liturgie_tekst: str) -> list[str]:

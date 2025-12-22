@@ -2549,18 +2549,21 @@
                 }
                 html += `</div></div>`;
 
-                // Three sections: Focus, Anticipatie, Functie
-                html += `<div class="focus-sections">`;
+                // Two-column layout: left for short content, right for longer content
+                html += `<div style="display: grid; grid-template-columns: 1fr 2fr; gap: 15px; margin-top: 10px;">`;
 
-                // Focus section
+                // Left column: Focus section (usually shorter)
+                html += `<div style="display: flex; flex-direction: column; gap: 10px;">`;
                 if (optie.focus) {
                     html += `<div class="focus-section">`;
                     html += `<div class="focus-section-title">Focus</div>`;
                     html += `<div class="focus-section-content">${processText(optie.focus.inhoud || '')}</div>`;
                     html += `</div>`;
                 }
+                html += `</div>`; // end left column
 
-                // Anticipatie section
+                // Right column: Anticipatie and Functie sections (usually longer content)
+                html += `<div style="display: flex; flex-direction: column; gap: 10px;">`;
                 if (optie.anticipatie) {
                     html += `<div class="focus-section">`;
                     html += `<div class="focus-section-title">Anticipatie</div>`;
@@ -2575,15 +2578,15 @@
                     html += `</div></div>`;
                 }
 
-                // Functie section
                 if (optie.functie) {
                     html += `<div class="focus-section">`;
                     html += `<div class="focus-section-title">Functie</div>`;
                     html += `<div class="focus-section-content">${processText(optie.functie.beoogd_effect || '')}</div>`;
                     html += `</div>`;
                 }
+                html += `</div>`; // end right column
 
-                html += `</div>`; // end focus-sections
+                html += `</div>`; // end two-column layout
 
                 // Toelichting
                 if (optie.toelichting) {
