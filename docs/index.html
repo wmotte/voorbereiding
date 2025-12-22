@@ -2557,7 +2557,12 @@
                 if (optie.focus) {
                     html += `<div class="focus-section">`;
                     html += `<div class="focus-section-title">Focus</div>`;
-                    html += `<div class="focus-section-content">${processText(optie.focus.inhoud || '')}</div>`;
+                    // Show the complete focus sentence with the beginning part if not already included
+                    let focusContent = optie.focus.inhoud || '';
+                    if (focusContent && !focusContent.startsWith('Ik wil op grond van mijn exegese')) {
+                        focusContent = `Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in ${jsonData['00_meta']?.plaatsnaam || ''}, ${jsonData['00_meta']?.gemeente || ''}), in hun context, in deze dienst zeggen dat: ${focusContent}`;
+                    }
+                    html += `<div class="focus-section-content">${processText(focusContent)}</div>`;
                     html += `</div>`;
                 }
                 html += `</div>`; // end left column
@@ -2581,7 +2586,12 @@
                 if (optie.functie) {
                     html += `<div class="focus-section">`;
                     html += `<div class="focus-section-title">Functie</div>`;
-                    html += `<div class="focus-section-content">${processText(optie.functie.beoogd_effect || '')}</div>`;
+                    // Show the complete functie sentence with the beginning part if not already included
+                    let functieContent = optie.functie.beoogd_effect || '';
+                    if (functieContent && !functieContent.startsWith('...waarmee ik rekening houd')) {
+                        functieContent = `...waarmee ik rekening houd om te komen tot het doel dat de hoorders: ${functieContent}`;
+                    }
+                    html += `<div class="focus-section-content">${processText(functieContent)}</div>`;
                     html += `</div>`;
                 }
                 html += `</div>`; // end right column
