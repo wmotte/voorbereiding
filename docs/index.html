@@ -1584,6 +1584,10 @@
         </div>
         <div class="header-center">
              <select id="file-selector" class="bevel-raised"></select>
+             <button class="load-btn bevel-raised" id="load-btn">
+                <span>📂</span> <span>JSON Laden</span>
+            </button>
+            <input type="file" id="file-input" accept=".json">
         </div>
         <div class="header-right">
             <div class="theme-toggle" id="theme-toggle" title="Dark mode"></div>
@@ -1620,6 +1624,8 @@
         const mainContent = document.getElementById('main-content');
         const navItems = document.getElementById('nav-items');
         const fileSelector = document.getElementById('file-selector');
+        const loadBtn = document.getElementById('load-btn'); // Nieuw
+        const fileInput = document.getElementById('file-input'); // Nieuw
         const themeToggle = document.getElementById('theme-toggle');
         const menuToggle = document.getElementById('menu-toggle');
         const scrollTopBtn = document.getElementById('scroll-top');
@@ -1667,7 +1673,11 @@
         });
         
         // File loading from selector
-        fileSelector.addEventListener('change', () => loadFile(fileSelector.value));
+        fileSelector.addEventListener('change', (event) => loadFile(event.target.value));
+
+        // Manual file loading
+        loadBtn.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', handleManualFileLoad);
 
         async function loadFile(fileName) {
              if (!fileName) return;
@@ -1684,6 +1694,21 @@
              } catch (err) {
                  mainContent.innerHTML = `<div class="welcome"><h1>Fout</h1><p>Kon bestand niet laden: ${err.message}</p></div>`;
              }
+        }
+
+        async function handleManualFileLoad(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            mainContent.innerHTML = '<div class="loading">Bestand laden...</div>';
+
+            try {
+                const text = await file.text();
+                jsonData = JSON.parse(text);
+                renderContent();
+            } catch (err) {
+                mainContent.innerHTML = `<div class="welcome"><h1>Fout</h1><p>Kon bestand niet laden: ${err.message}</p></div>`;
+            }
         }
 
         // Helper function to convert BHS/NA28 book codes to NBV21 codes
@@ -3113,173 +3138,6 @@
                 }
                 if (perikoop.lezingType) {
                     html += `<span class="bijbel-lezing-type">${escapeHtml(perikoop.lezingType)}</span>`;
-                }
-                html += `</div>`;
-
-                html += `<div class="bijbel-verzen">`;
-                perikoop.verses.forEach(vers => {
-                    html += `<div class="bijbel-vers">`;
-                    html += `<span class="bijbel-vers-nummer">${vers.verse}</span>`;
-                    html += `<span class="bijbel-vers-tekst">${language === 'Hebrew' ? escapeHtml(vers.text) : processText(vers.text)}</span>`;
-                    html += `</div>`;
-                });
-                html += `</div>`;
-
-                html += `</div>`; // end bijbel-perikoop
-            });
-
-            return html;
-        }
-
-        // Helper function to get book code from Dutch name or reference
-        function getBoekCode(boekNaam) {
-            if (!boekNaam) return null;
-            const naam = boekNaam.toLowerCase();
-
-            const mapping = {
-                'genesis': 'GEN', 'exodus': 'EXO', 'leviticus': 'LEV', 'numeri': 'NUM', 'deuteronomium': 'DEU',
-                'jozua': 'JOS', 'richteren': 'JDG', 'ruth': 'RUT', 'samuel': '1SA', '1 samuel': '1SA', '2 samuel': '2SA',
-                'koningen': '1KI', '1 koningen': '1KI', '2 koningen': '2KI',
-                'kronieken': '1CH', '1 kronieken': '1CH', '2 kronieken': '2CH',
-                'ezra': 'EZR', 'nehemia': 'NEH', 'ester': 'EST', 'job': 'JOB',
-                'psalm': 'PSA', 'psalmen': 'PSA', 'spreuken': 'PRO', 'prediker': 'ECC', 'hooglied': 'SNG',
-                'jesaja': 'ISA', 'jeremia': 'JER', 'klaagliederen': 'LAM',
-                'ezechiel': 'EZK', 'ezekiel': 'EZK', 'daniel': 'DAN', 'daniël': 'DAN',
-                'hosea': 'HOS', 'joel': 'JOL', 'joël': 'JOL', 'amos': 'AMO', 'obadja': 'OBA',
-                'jona': 'JON', 'micha': 'MIC', 'nahum': 'NAM', 'habakuk': 'HAB',
-                'sefanja': 'ZEP', 'haggai': 'HAG', 'haggaï': 'HAG', 'zacharia': 'ZEC', 'maleachi': 'MAL',
-                'matteus': 'MAT', 'matteüs': 'MAT', 'mattheüs': 'MAT', 'marcus': 'MRK', 'lucas': 'LUK', 'lukas': 'LUK',
-                'johannes': 'JHN', 'handelingen': 'ACT',
-                'romeinen': 'ROM', 'korintiërs': '1CO', 'korintiers': '1CO',
-                '1 korintiërs': '1CO', '2 korintiërs': '2CO', '1 korintiers': '1CO', '2 korintiers': '2CO',
-                'galaten': 'GAL', 'efeziërs': 'EPH', 'efeziers': 'EPH', 'filippenzen': 'PHP',
-                'kolossenzen': 'COL', 'tessalonicenzen': '1TH',
-                '1 tessalonicenzen': '1TH', '2 tessalonicenzen': '2TH',
-                'timoteüs': '1TI', 'timoteus': '1TI', '1 timoteüs': '1TI', '2 timoteüs': '2TI',
-                '1 timoteus': '1TI', '2 timoteus': '2TI',
-                'titus': 'TIT', 'filemon': 'PHM', 'hebreeën': 'HEB', 'hebreeen': 'HEB',
-                'jakobus': 'JAS', 'petrus': '1PE', '1 petrus': '1PE', '2 petrus': '2PE',
-                '1 johannes': '1JN', '2 johannes': '2JN', '3 johannes': '3JN',
-                'judas': 'JUD', 'openbaring': 'REV',
-                'sirach': 'SIR', 'ecclesiasticus': 'SIR', 'wijsheid': 'WIS', 'tobit': 'TOB',
-                'judit': 'JDT', 'baruch': 'BAR', 'makkabeeen': '1MA', 'makkabeeën': '1MA',
-                '1 makkabeeen': '1MA', '2 makkabeeen': '2MA', '1 makkabeeën': '1MA', '2 makkabeeën': '2MA'
-            };
-
-            // Try direct match
-            for (const [key, code] of Object.entries(mapping)) {
-                if (naam.includes(key)) {
-                    return code;
-                }
-            }
-            return null;
-        }
-
-        // Helper function for bible book names (used in nav and rendering)
-        function getBijbelboekNaam(code) {
-            const boekNamen = {
-                // NBV21/NB codes
-                'GEN': 'Genesis', 'EXO': 'Exodus', 'LEV': 'Leviticus', 'NUM': 'Numeri', 'DEU': 'Deuteronomium',
-                'JOS': 'Jozua', 'JDG': 'Richteren', 'RUT': 'Ruth', '1SA': '1 Samuel', '2SA': '2 Samuel',
-                '1KI': '1 Koningen', '2KI': '2 Koningen', '1CH': '1 Kronieken', '2CH': '2 Kronieken',
-                'EZR': 'Ezra', 'NEH': 'Nehemia', 'EST': 'Ester', 'JOB': 'Job', 'PSA': 'Psalmen',
-                'PRO': 'Spreuken', 'ECC': 'Prediker', 'SNG': 'Hooglied', 'ISA': 'Jesaja', 'JER': 'Jeremia',
-                'LAM': 'Klaagliederen', 'EZK': 'Ezechiel', 'DAN': 'Daniel', 'HOS': 'Hosea', 'JOL': 'Joel',
-                'AMO': 'Amos', 'OBA': 'Obadja', 'JON': 'Jona', 'MIC': 'Micha', 'NAM': 'Nahum',
-                'HAB': 'Habakuk', 'ZEP': 'Sefanja', 'HAG': 'Haggai', 'ZEC': 'Zacharia', 'MAL': 'Maleachi',
-                'MAT': 'Matteus', 'MRK': 'Marcus', 'LUK': 'Lucas', 'JHN': 'Johannes', 'ACT': 'Handelingen',
-                'ROM': 'Romeinen', '1CO': '1 Korintiers', '2CO': '2 Korintiers', 'GAL': 'Galaten',
-                'EPH': 'Efeziers', 'PHP': 'Filippenzen', 'COL': 'Kolossenzen', '1TH': '1 Tessalonicenzen',
-                '2TH': '2 Tessalonicenzen', '1TI': '1 Timoteus', '2TI': '2 Timoteus', 'TIT': 'Titus',
-                'PHM': 'Filemon', 'HEB': 'Hebreeen', 'JAS': 'Jakobus', '1PE': '1 Petrus', '2PE': '2 Petrus',
-                '1JN': '1 Johannes', '2JN': '2 Johannes', '3JN': '3 Johannes', 'JUD': 'Judas', 'REV': 'Openbaring',
-                'SIR': 'Sirach', 'WIS': 'Wijsheid', 'TOB': 'Tobit', 'JDT': 'Judit', 'BAR': 'Baruch',
-                '1MA': '1 Makkabeeen', '2MA': '2 Makkabeeen',
-                // Grondtekst BHS codes (Hebrew)
-                'Genesis': 'Genesis', 'Exodus': 'Exodus', 'Leviticus': 'Leviticus', 'Numeri': 'Numeri',
-                'Deuteronomium': 'Deuteronomium', 'Josua': 'Jozua', 'Judices': 'Richteren', 'Ruth': 'Ruth',
-                'Samuel_I': '1 Samuel', 'Samuel_II': '2 Samuel', 'Reges_I': '1 Koningen', 'Reges_II': '2 Koningen',
-                'Chronica_I': '1 Kronieken', 'Chronica_II': '2 Kronieken', 'Esra': 'Ezra', 'Nehemia': 'Nehemia',
-                'Esther': 'Ester', 'Iob': 'Job', 'Psalmi': 'Psalmen', 'Proverbia': 'Spreuken',
-                'Ecclesiastes': 'Prediker', 'Canticum': 'Hooglied', 'Jesaia': 'Jesaja', 'Jeremia': 'Jeremia',
-                'Threni': 'Klaagliederen', 'Ezechiel': 'Ezechiel', 'Daniel': 'Daniel', 'Hosea': 'Hosea',
-                'Joel': 'Joel', 'Amos': 'Amos', 'Obadia': 'Obadja', 'Jona': 'Jona', 'Micha': 'Micha',
-                'Nahum': 'Nahum', 'Habakuk': 'Habakuk', 'Zephania': 'Sefanja', 'Haggai': 'Haggai',
-                'Sacharia': 'Zacharia', 'Maleachi': 'Maleachi'
-            };
-            return boekNamen[code] || code;
-        }
-
-        function renderBijbelteksten(vertalingKey, perikopen) {
-            const vertalingNamen = {
-                'naardense_bijbel': 'NB',
-                'nbv21': 'NBV21',
-                'grondtekst': 'Grondtekst'
-            };
-            const vertalingTitel = vertalingNamen[vertalingKey] || vertalingKey;
-
-            // Get lezingen info to determine reading type
-            const lezingen = jsonData['01_zondag_kerkelijk_jaar']?.lezingen || {};
-            const lezingTypes = {
-                'eerste_lezing': 'Eerste lezing',
-                'psalm': 'Psalm',
-                'epistel': 'Epistel',
-                'evangelie': 'Evangelie'
-            };
-
-            // Build lookup: book+chapter -> reading type
-            const lezingLookup = {};
-            for (const [key, label] of Object.entries(lezingTypes)) {
-                if (lezingen[key]) {
-                    const lez = lezingen[key];
-                    const boekCode = getBoekCode(lez.boek || lez.referentie);
-                    const hoofdstuk = lez.hoofdstuk || lez.nummer;
-                    if (boekCode && hoofdstuk) {
-                        lezingLookup[`${boekCode}-${hoofdstuk}`] = label;
-                    }
-                }
-            }
-            // Check alternative readings
-            if (lezingen.alternatieve_lezingen && Array.isArray(lezingen.alternatieve_lezingen)) {
-                lezingen.alternatieve_lezingen.forEach(alt => {
-                    const boekCode = getBoekCode(alt.referentie);
-                    // Extract chapter from referentie like "1 Samuel 1,20-22.24-28"
-                    const match = alt.referentie?.match(/(\d+)[,:.]/);
-                    const hoofdstuk = match ? parseInt(match[1]) : null;
-                    if (boekCode && hoofdstuk) {
-                        lezingLookup[`${boekCode}-${hoofdstuk}`] = 'Alternatieve lezing';
-                    }
-                });
-            }
-
-            let html = '';
-
-            perikopen.forEach(perikoop => {
-                const boekNaam = perikoop.book_nl || getBijbelboekNaam(perikoop.book);
-                const eersteVers = perikoop.verses[0]?.verse || 1;
-                const laatsteVers = perikoop.verses[perikoop.verses.length - 1]?.verse || eersteVers;
-                const verzenRef = eersteVers === laatsteVers ? eersteVers : `${eersteVers}-${laatsteVers}`;
-
-                // Determine reading type
-                const lezingType = lezingLookup[`${perikoop.book}-${perikoop.chapter}`] || '';
-
-                // Anchor ID matches the submenu navigation: BOOK-CHAPTER-vertaling
-                const anchorId = `section-Bijbelteksten-${perikoop.book}-${perikoop.chapter}-${vertalingKey}`;
-
-                // For grondtekst, include language attribute
-                const language = perikoop.language || '';
-                const languageAttr = language ? ` data-language="${escapeHtml(language)}"` : '';
-
-                html += `<div id="${anchorId}" class="subsection-anchor"></div>`;
-                html += `<div class="bijbel-perikoop"${languageAttr}>`;
-                html += `<div class="bijbel-header">`;
-                html += `<span class="bijbel-boek-badge${vertalingKey === 'grondtekst' ? ' bijbel-grondtekst-badge' : ''}">${escapeHtml(vertalingTitel)}</span>`;
-                html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${perikoop.chapter}:${verzenRef}</span>`;
-                if (language) {
-                    html += `<span class="bijbel-language-tag">${escapeHtml(language)}</span>`;
-                }
-                if (lezingType) {
-                    html += `<span class="bijbel-lezing-type">${escapeHtml(lezingType)}</span>`;
                 }
                 html += `</div>`;
 
