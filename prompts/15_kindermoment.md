@@ -5,12 +5,12 @@ Genereer **drie totaal verschillende** opties voor een interactief en creatief k
 
 ## Instructies per optie
 Elke optie moet een unieke invalshoek hebben:
-1.  **Optie 1: De Klassieke Verrassing:** Een duidelijk, warm verhaal met een herkenbaar voorwerp.
+1.  **Optie 1: De Klassieke Verrassing:** Een duidelijk, warm verhaal met een herkenbaar maar origineel voorwerp.
 2.  **Optie 2: De Doe-het-zelf:** Een optie die sterk focust op directe actie of beweging van de kinderen.
 3.  **Optie 3: De 'Gekke' Twist:** Een onconventionele, humoristische of licht absurde benadering die de aandacht grijpt (bijv. een vreemd voorwerp of onverwachte wending), maar wel landt bij de kern van de boodschap.
 
 ## Algemene eisen
-- **Object:** Kies voor elk moment een *ander* concreet, tastbaar voorwerp.
+- **Object:** Kies voor elk moment een *ander* concreet, tastbaar voorwerp. **BELANGRIJK:** Wees origineel. Vermijd de standaard 'kerk-metaforen' zoals een zaklamp, een verrekijker, een spiegel, een paraplu of een koffer. Kies iets uit het dagelijks leven dat minder voor de hand ligt.
 - **Focus:** Leg uit welk specifiek element uit de lezingen centraal staat.
 - **Vermijd clichés:** Geen standaard 'hartjes' of moralistische praatjes.
 - **Doelgroep:** Kinderen in de basisschoolleeftijd.

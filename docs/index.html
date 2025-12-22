@@ -862,8 +862,8 @@
         /* Focus en functie cards */
         .focus-card {
             background: var(--bg-secondary);
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 15px;
+            margin-bottom: 15px;
             border-left: 5px solid var(--accent);
         }
 
@@ -910,6 +910,11 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
             margin-top: 15px;
+        }
+
+        /* More compact layout for kindermoment */
+        .focus-card .focus-sections {
+            grid-template-columns: repeat(2, 1fr);
         }
 
         @media (max-width: 900px) {
@@ -1647,6 +1652,7 @@
             '12_representatieve_hoorders': 'Representatieve Hoorders',
             '13_homiletische_analyse': 'Homiletische Analyse',
             '14_gebeden': 'Gebeden',
+            '15_kindermoment': 'Kindermoment',
             'Bijbelteksten': 'Bijbelteksten'
         };
 
@@ -1923,6 +1929,18 @@
                             subSectionLabels[`lezing-${index + 1}`] = referentie;
                         });
                     }
+                } else if (key === '15_kindermoment') {
+                    // Special handling for Kindermoment - show the three kindermoment option titles
+                    if (sectionData.kindermoment_opties && Array.isArray(sectionData.kindermoment_opties)) {
+                        sectionData.kindermoment_opties.forEach((optie, index) => {
+                            const titel = optie.titel || `Kindermoment Optie ${index + 1}`;
+                            const type = optie.type || '';
+                            const label = type ? `${type}: ${titel}` : titel;
+
+                            subSections.push(`kindermoment-${index + 1}`);
+                            subSectionLabels[`kindermoment-${index + 1}`] = label;
+                        });
+                    }
                 } else if (key === '14_gebeden') {
                     // Special handling for Gebeden - show specific prayer types
                     const gebeden = sectionData.gebeden || {};
@@ -2056,6 +2074,8 @@
                 contentHtml = renderHoordersSection(dataToRender);
             } else if (key === '08_exegese') {
                 contentHtml = renderExegeseSection(dataToRender);
+            } else if (key === '15_kindermoment') {
+                contentHtml = renderObjectWithIds(dataToRender, key);
             } else {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             }
@@ -2190,6 +2210,11 @@
 
             if (key === 'gebeden' && Array.isArray(value)) {
                 return renderGebeden(value);
+            }
+
+            // Kindermoment opties
+            if (key === 'kindermoment_opties' && parentKey === '15_kindermoment') {
+                return renderKindermoment(value);
             }
 
             // Focus en functie opties
@@ -2565,6 +2590,67 @@
                     html += `<div class="focus-toelichting">${processText(optie.toelichting)}</div>`;
                 }
 
+                html += `</div>`; // end focus-card
+            });
+
+            html += `</div>`;
+            return html;
+        }
+
+        function renderKindermoment(opties) {
+            let html = `<div class="data-group">`;
+            html += `<div class="data-group-title">Opties</div>`;
+
+            opties.forEach((optie, index) => {
+                html += `<div id="section-15_kindermoment-kindermoment-${index + 1}" class="subsection-anchor"></div>`;
+                html += `<div class="focus-card">`;
+
+                // Header with type and title
+                html += `<div class="focus-card-header">`;
+                html += `<div class="focus-card-number">${index + 1}</div>`;
+                html += `<div>`;
+                html += `<div class="focus-card-title">${processText(optie.titel || '')}</div>`;
+                if (optie.type) {
+                    html += `<span class="focus-card-type">${processText(optie.type)}</span>`;
+                }
+                html += `</div></div>`;
+
+                // Compact layout for kindermoment content
+                html += `<div class="focus-sections">`;
+
+                // Object section
+                if (optie.object) {
+                    html += `<div class="focus-section">`;
+                    html += `<div class="focus-section-title">Object</div>`;
+                    html += `<div class="focus-section-content"><strong>${processText(optie.object.naam || '')}</strong><br>${processText(optie.object.uitleg || '')}</div>`;
+                    html += `</div>`;
+                }
+
+                // Focus Schriftlezing section
+                if (optie.focus_schriftlezing) {
+                    html += `<div class="focus-section">`;
+                    html += `<div class="focus-section-title">Focus Schriftlezing</div>`;
+                    html += `<div class="focus-section-content">${processText(optie.focus_schriftlezing)}</div>`;
+                    html += `</div>`;
+                }
+
+                // Verhaal Script section
+                if (optie.verhaal_script) {
+                    html += `<div class="focus-section">`;
+                    html += `<div class="focus-section-title">Verhaal Script</div>`;
+                    html += `<div class="focus-section-content">${processText(optie.verhaal_script)}</div>`;
+                    html += `</div>`;
+                }
+
+                // Afbeelding Idee section
+                if (optie.afbeelding_idee) {
+                    html += `<div class="focus-section">`;
+                    html += `<div class="focus-section-title">Afbeelding Idee</div>`;
+                    html += `<div class="focus-section-content">${processText(optie.afbeelding_idee)}</div>`;
+                    html += `</div>`;
+                }
+
+                html += `</div>`; // end focus-sections
                 html += `</div>`; // end focus-card
             });
 
