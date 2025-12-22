@@ -2112,7 +2112,7 @@
                     html += `<div class="data-pairs">`;
                     shortValues.forEach(([key, value]) => {
                         if (key === 'zoekterm') {
-                            html += `<div class="data-pair"><div class="data-pair-label">${escapeHtml(formatKey(key))}</div><div class="data-pair-value"><span class="search-term">${escapeHtml(value)}</span></div></div>`;
+                            html += `<div class="data-pair"><div class="data-pair-label">${escapeHtml(formatKey(key))}</div><div class="data-pair-value"><span class="search-term">${processText(value)}</span></div></div>`;
                         } else {
                             html += `<div class="data-pair"><div class="data-pair-label">${escapeHtml(formatKey(key))}</div><div class="data-pair-value">${formatValue(value)}</div></div>`;
                         }
@@ -2233,7 +2233,7 @@
             } else if (key === 'zoekterm') {
                 html += `<div class="data-item">`;
                 html += `<div class="data-label">${escapeHtml(formattedKey)}</div>`;
-                html += `<div class="data-value"><span class="search-term">${escapeHtml(value)}</span></div>`;
+                html += `<div class="data-value"><span class="search-term">${processText(value)}</span></div>`;
                 html += `</div>`;
             } else {
                 html += `<div class="data-item">`;
@@ -2265,7 +2265,7 @@
                     html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong></div>`;
                     html += `<div style="margin-left: 10px;">${renderObjectCompact(value)}</div>`;
                 } else if (key === 'zoekterm') {
-                    html += `<div style="margin-bottom: 4px;"><span class="search-term">${escapeHtml(value)}</span></div>`;
+                    html += `<div style="margin-bottom: 4px;"><span class="search-term">${processText(value)}</span></div>`;
                 } else {
                     html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${formatValue(value)}</div>`;
                 }
