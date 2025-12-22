@@ -780,25 +780,42 @@ def main():
     print("BIJBELTEKSTEN OPHALEN")
     print("─" * 50)
 
-    bijbelteksten_map = download_lezingen(folder, previous_analyses["liturgische_context"])
+    # Controleer eerst of er al bijbelteksten bestaan
+    bijbel_dir = folder / "bijbelteksten"
+    nb_files = list(bijbel_dir.glob("*_NB.json")) if bijbel_dir.exists() else []
+    nbv21_files = list(bijbel_dir.glob("*_NBV21.json")) if bijbel_dir.exists() else []
+    grondtekst_files = list(bijbel_dir.glob("*_Grondtekst.json")) if bijbel_dir.exists() else []
 
-    if bijbelteksten_map:
-        print(f"\n✓ {len(bijbelteksten_map)} bijbeltekst(en) opgehaald en opgeslagen")
+    if nb_files:
+        print(f"\n! {len(nb_files)} Naardense Bijbel bestanden gevonden, overslaan download")
+        bijbelteksten_map = {str(f): str(f) for f in nb_files}  # Simulate result
     else:
-        print("\n! Geen bijbelteksten kunnen ophalen (exegese gaat door zonder grondtekst)")
+        bijbelteksten_map = download_lezingen(folder, previous_analyses["liturgische_context"])
+        if bijbelteksten_map:
+            print(f"✓ {len(bijbelteksten_map)} bijbeltekst(en) opgehaald en opgeslagen")
+        else:
+            print("\n! Geen bijbelteksten kunnen ophalen (exegese gaat door zonder grondtekst)")
 
-    # Haal NBV21 teksten op en sla ze op
-    # We hoeven de return value (tekst) niet te gebruiken, want we lezen straks de JSONs
-    nbv21_files = save_nbv21_lezingen(folder, previous_analyses["liturgische_context"])
-    
+    # Controleer of NBV21 bestanden al bestaan
     if nbv21_files:
-        print(f"✓ NBV21 teksten opgehaald en opgeslagen ({len(nbv21_files)} bestanden)")
+        print(f"! {len(nbv21_files)} NBV21 bestanden gevonden, overslaan download")
+    else:
+        # Haal NBV21 teksten op en sla ze op
+        # We hoeven de return value (tekst) niet te gebruiken, want we lezen straks de JSONs
+        nbv21_files = save_nbv21_lezingen(folder, previous_analyses["liturgische_context"])
 
-    # Haal Grondtekst (BHS/NA28) op en sla ze op
-    grondtekst_files = save_grondtekst_lezingen(folder, previous_analyses["liturgische_context"])
-    
+        if nbv21_files:
+            print(f"✓ NBV21 teksten opgehaald en opgeslagen ({len(nbv21_files)} bestanden)")
+
+    # Controleer of Grondtekst bestanden al bestaan
     if grondtekst_files:
-        print(f"✓ Grondteksten (BHS/NA28) opgehaald en opgeslagen ({len(grondtekst_files)} bestanden)")
+        print(f"! {len(grondtekst_files)} Grondtekst bestanden gevonden, overslaan download")
+    else:
+        # Haal Grondtekst (BHS/NA28) op en sla ze op
+        grondtekst_files = save_grondtekst_lezingen(folder, previous_analyses["liturgische_context"])
+
+        if grondtekst_files:
+            print(f"✓ Grondteksten (BHS/NA28) opgehaald en opgeslagen ({len(grondtekst_files)} bestanden)")
 
     # Initialiseer client
     print("\nGoogle GenAI Client initialiseren...")
