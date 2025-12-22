@@ -1009,8 +1009,8 @@
             color: var(--text-primary);
         }
 
-        /* Grondtekst styling (Hebrew/Greek) */
-        .bijbel-perikoop[data-language="Hebrew"] .bijbel-verzen {
+        /* Grondtekst styling (Hebreeuws/Grieks) */
+        .bijbel-perikoop[data-language="Hebreeuws"] .bijbel-verzen {
             direction: rtl;
             text-align: right;
             font-family: 'SBL Hebrew', 'Ezra SIL', 'Times New Roman', serif;
@@ -1018,13 +1018,13 @@
             line-height: 2.2;
         }
 
-        .bijbel-perikoop[data-language="Hebrew"] .bijbel-vers-nummer {
+        .bijbel-perikoop[data-language="Hebreeuws"] .bijbel-vers-nummer {
             direction: ltr;
             margin-left: 8px;
             margin-right: 0;
         }
 
-        .bijbel-perikoop[data-language="Greek"] .bijbel-verzen {
+        .bijbel-perikoop[data-language="Grieks"] .bijbel-verzen {
             font-family: 'SBL Greek', 'Gentium Plus', 'Times New Roman', serif;
             font-size: 1.1em;
             line-height: 2.0;
@@ -1593,7 +1593,7 @@
              <button id="load-custom-btn" class="icon-btn bevel-raised" title="Laad aangepast bestand">📁</button>
         </div>
         <div class="header-right">
-            <div class="theme-toggle" id="theme-toggle" title="Dark mode"></div>
+            <div class="theme-toggle" id="theme-toggle" title="Donkere modus"></div>
             <a href="https://github.com/wmotte/verkondiging" target="_blank" class="icon-btn bevel-raised" title="GitHub">i</a>
         </div>
     </header>
@@ -1632,7 +1632,7 @@
         const scrollTopBtn = document.getElementById('scroll-top');
         
         // List of available JSON files
-        const jsonFiles = ["voorbeeld_01.json", "voorbeeld_02.json"];
+        const jsonFiles = ["voorbeeld_01.json", "voorbeeld_02.json", "voorbeeld_03.json"];
 
 
         // Section titles mapping
@@ -3902,7 +3902,7 @@
                 perikoop.verses.forEach(vers => {
                     html += `<div class="bijbel-vers">`;
                     html += `<span class="bijbel-vers-nummer">${vers.verse}</span>`;
-                    html += `<span class="bijbel-vers-tekst">${language === 'Hebrew' ? escapeHtml(vers.text) : processText(vers.text)}</span>`;
+                    html += `<span class="bijbel-vers-tekst">${language === 'Hebreeuws' ? escapeHtml(vers.text) : processText(vers.text)}</span>`;
                     html += `</div>`;
                 });
                 html += `</div>`;
@@ -4069,7 +4069,7 @@
                 perikoop.verses.forEach(vers => {
                     html += `<div class="bijbel-vers">`;
                     html += `<span class="bijbel-vers-nummer">${vers.verse}</span>`;
-                    html += `<span class="bijbel-vers-tekst">${language === 'Hebrew' ? escapeHtml(vers.text) : processText(vers.text)}</span>`;
+                    html += `<span class="bijbel-vers-tekst">${language === 'Hebreeuws' ? escapeHtml(vers.text) : processText(vers.text)}</span>`;
                     html += `</div>`;
                 });
                 html += `</div>`;

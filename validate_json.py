@@ -219,6 +219,60 @@ class LiturgischeAnalyseValidator:
                 if 'referentie' not in lezing:
                     self.errors.append(ValidationError(f"{path}.referentie", "Missing referentie"))
 
+                # Validate structuralistische_analyse if present
+                if 'structuralistische_analyse' in lezing:
+                    self._validate_structuralistische_analyse(f"{path}.structuralistische_analyse", lezing['structuralistische_analyse'])
+
+    def _validate_structuralistische_analyse(self, path: str, analysis: dict):
+        """Validate structuralistische_analyse section."""
+        if not isinstance(analysis, dict):
+            self.errors.append(ValidationError(path, f"Expected object, got {type(analysis).__name__}"))
+            return
+
+        # Validate schema_constructie
+        if 'schema_constructie' in analysis:
+            schema_path = f"{path}.schema_constructie"
+            if not isinstance(analysis['schema_constructie'], dict):
+                self.errors.append(ValidationError(schema_path, f"Expected object, got {type(analysis['schema_constructie']).__name__}"))
+            else:
+                schema_constructie = analysis['schema_constructie']
+                if 'scenarios' in schema_constructie:
+                    scenarios_path = f"{schema_path}.scenarios"
+                    if not self._check_type(scenarios_path, schema_constructie['scenarios'], list):
+                        pass  # Skip further validation if type check fails
+                    else:
+                        for j, scenario in enumerate(schema_constructie['scenarios']):
+                            scenario_path = f"{scenarios_path}[{j}]"
+                            if not isinstance(scenario, dict):
+                                self.errors.append(ValidationError(scenario_path, f"Expected object, got {type(scenario).__name__}"))
+                            else:
+                                required_scenario_fields = ['scène', 'tijd', 'plaats', 'actant', 'handeling']
+                                for field in required_scenario_fields:
+                                    if field not in scenario:
+                                        self.errors.append(ValidationError(f"{scenario_path}.{field}", f"Missing required field: {field}"))
+
+        # Validate verticale_analyse
+        if 'verticale_analyse' in analysis:
+            verticale_path = f"{path}.verticale_analyse"
+            if not isinstance(analysis['verticale_analyse'], dict):
+                self.errors.append(ValidationError(verticale_path, f"Expected object, got {type(analysis['verticale_analyse']).__name__}"))
+
+        # Validate horizontale_analyse
+        if 'horizontale_analyse' in analysis:
+            horizontale_path = f"{path}.horizontale_analyse"
+            if not isinstance(analysis['horizontale_analyse'], dict):
+                self.errors.append(ValidationError(horizontale_path, f"Expected object, got {type(analysis['horizontale_analyse']).__name__}"))
+
+        # Validate synthese_interpretatie
+        if 'synthese_interpretatie' in analysis:
+            synthese_path = f"{path}.synthese_interpretatie"
+            if not isinstance(analysis['synthese_interpretatie'], dict):
+                self.errors.append(ValidationError(synthese_path, f"Expected object, got {type(analysis['synthese_interpretatie']).__name__}"))
+            else:
+                synthese = analysis['synthese_interpretatie']
+                if 'centrale_thema_s' in synthese:
+                    self._check_type(f"{synthese_path}.centrale_thema_s", synthese['centrale_thema_s'], list)
+
     def _validate_focus_en_functie(self):
         """Validate 10_focus_en_functie section."""
         section = '10_focus_en_functie'

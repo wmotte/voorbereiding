@@ -2981,7 +2981,7 @@
         "book_nl": "Efeziërs",
         "book_original": "EPH",
         "chapter": 3,
-        "language": "Greek",
+        "language": "Grieks",
         "verses": [
           {
             "verse": 2,
@@ -3006,7 +3006,7 @@
         "book_nl": "Jesaja",
         "book_original": "Jesaia",
         "chapter": 60,
-        "language": "Hebrew",
+        "language": "Hebreeuws",
         "verses": [
           {
             "verse": 1,
@@ -3039,7 +3039,7 @@
         "book_nl": "Matteüs",
         "book_original": "MAT",
         "chapter": 2,
-        "language": "Greek",
+        "language": "Grieks",
         "verses": [
           {
             "verse": 1,
@@ -3096,7 +3096,7 @@
         "book_nl": "Psalm",
         "book_original": "Psalmi",
         "chapter": 72,
-        "language": "Hebrew",
+        "language": "Hebreeuws",
         "verses": [
           {
             "verse": 1,
@@ -3185,7 +3185,7 @@
         "book_nl": "Titus",
         "book_original": "TIT",
         "chapter": 2,
-        "language": "Greek",
+        "language": "Grieks",
         "verses": [
           {
             "verse": 11,

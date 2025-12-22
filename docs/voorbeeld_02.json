@@ -2816,7 +2816,7 @@
         "book_nl": "1 Samuël",
         "book_original": "Samuel_I",
         "chapter": 1,
-        "language": "Hebrew",
+        "language": "Hebreeuws",
         "verses": [
           {
             "verse": 20,
@@ -2857,7 +2857,7 @@
         "book_nl": "Kolossenzen",
         "book_original": "COL",
         "chapter": 3,
-        "language": "Greek",
+        "language": "Grieks",
         "verses": [
           {
             "verse": 12,
@@ -2906,7 +2906,7 @@
         "book_nl": "Matteüs",
         "book_original": "MAT",
         "chapter": 2,
-        "language": "Greek",
+        "language": "Grieks",
         "verses": [
           {
             "verse": 13,
@@ -2947,7 +2947,7 @@
         "book_nl": "Psalm",
         "book_original": "Psalmi",
         "chapter": 128,
-        "language": "Hebrew",
+        "language": "Hebreeuws",
         "verses": [
           {
             "verse": 1,

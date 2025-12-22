@@ -1,0 +1,3348 @@
+{
+  "00_meta": {
+    "plaatsnaam": "Boskoop",
+    "gemeente": "Dorpskerk",
+    "datum": "11 januari 2026",
+    "website": "https://www.pgboskoop.nl/gebouw-dorpskerk/",
+    "extra_context": "",
+    "adres": "Kerkplein 3, 2771 GR Boskoop",
+    "gebouw": "Dorpskerk"
+  },
+  "01_zondag_kerkelijk_jaar": {
+    "positie_kerkelijk_jaar": {
+      "zondag_naam": "Doop van de Heer (1e zondag na Epifanie)",
+      "liturgische_periode": "Kersttijd",
+      "weken_tot_hoofdfeest": "1 week na Epifanie (Verschijning van de Heer)",
+      "leesrooster_jaar": "A",
+      "dominant_evangelie": "Matteüs"
+    },
+    "traditionele_naam": {
+      "latijnse_naam": "Baptisma Domini",
+      "oorsprong": "De naam verwijst direct naar de gedachtenis van de doop van Jezus in de Jordaan door Johannes de Doper, wat traditioneel wordt gezien als de tweede grote 'epifanie' of openbaring van Christus aan de wereld.",
+      "nederlandse_vertaling": "Doop van de Heer",
+      "volksnamen": [
+        "Zondag van de Jordaan"
+      ]
+    },
+    "bijzondere_zondag_pkn": {
+      "is_bijzonder": false,
+      "naam": null,
+      "toelichting": "Hoewel het geen themazondag is zoals Israëlzondag, markeert deze zondag in de PKN-context het scharnierpunt tussen de Kersttijd en de Epifaniëntijd (de zondagen 'na Epifanie'). Het is de afsluiting van de kerstkring."
+    },
+    "liturgische_kleur": {
+      "kleur": "wit",
+      "symboliek": "Wit is de kleur van de Christusfeesten, symbool voor licht, reinheid, vreugde en de goddelijke heerlijkheid die in Jezus zichtbaar wordt bij zijn doop.",
+      "praktische_suggesties": [
+        "Wit antependium en witte stola.",
+        "Witte bloemschikking met accenten van water (bijv. door gebruik van glas of blauwe elementen).",
+        "De doopvont kan centraal gesteld worden, eventueel geopend en gevuld met vers water."
+      ]
+    },
+    "lezingen": {
+      "eerste_lezing": {
+        "referentie": "Jesaja 42,1-4.6-7",
+        "boek": "Jesaja",
+        "hoofdstuk": 42,
+        "verzen": "1-4.6-7",
+        "thema": "De presentatie van de Dienaar des Heren op wie Gods Geest rust."
+      },
+      "epistel": {
+        "referentie": "Handelingen 10,34-38",
+        "boek": "Handelingen",
+        "hoofdstuk": 10,
+        "verzen": "34-38",
+        "thema": "Petrus getuigt hoe God Jezus van Nazaret heeft gezalfd met de heilige Geest en met kracht."
+      },
+      "evangelie": {
+        "referentie": "Matteüs 3,13-17",
+        "boek": "Matteüs",
+        "hoofdstuk": 3,
+        "verzen": "13-17",
+        "thema": "De doop van Jezus in de Jordaan en de stem uit de hemel: 'Dit is mijn geliefde Zoon'."
+      },
+      "psalm": {
+        "referentie": "Psalm 29",
+        "nummer": 29,
+        "verzen": null,
+        "antifoon": "De stem van de Heer klinkt boven de wateren."
+      },
+      "alternatieve_lezingen": [
+        {
+          "referentie": "Titus 2,11-14; 3,4-7",
+          "reden": "Soms gebruikt als alternatieve epistellezing om de verbinding tussen de verschijning van Gods goedheid en de doop te benadrukken."
+        }
+      ],
+      "thematische_samenhang": "De rode draad is de 'aanwijzing' of legitimatie van Jezus. In Jesaja wordt de Dienaar gepresenteerd, in Handelingen wordt de zalving met de Geest bevestigd als startpunt van zijn werk, en in Matteüs vindt de feitelijke openbaring plaats door de stem uit de hemel. Psalm 29 onderstreept de majesteit van Gods stem boven het water."
+    },
+    "thematiek": {
+      "centraal_thema": "De openbaring van Jezus' identiteit en het begin van zijn publieke optreden.",
+      "stemming": "vreugde",
+      "karakter_zondag": "Feestelijk, plechtig en richtinggevend. Het is een moment van toerusting en zending.",
+      "rode_draad_liturgisch_jaar": "Deze zondag vormt de brug tussen de geboorte van Jezus (Kerst) en zijn optreden in de wereld (Epifaniëntijd). Waar Epifanie (6 januari) de openbaring aan de volken (wijzen) viert, viert deze zondag de openbaring door de Vader en de Geest.",
+      "centrale_geloofsvragen": [
+        "Wat betekent het dat Jezus de 'geliefde Zoon' is voor ons vandaag?",
+        "Hoe werkt de heilige Geest als krachtbron in het leven van een gelovige?",
+        "Wat is de betekenis van onze eigen doop in het licht van Jezus' doop?"
+      ]
+    },
+    "historische_achtergrond": {
+      "oorsprong_vroege_kerk": "In de vroege kerk was de doop van Jezus oorspronkelijk onderdeel van het ene grote Epifaniefeest op 6 januari, samen met de geboorte en de bruiloft te Kana.",
+      "hervormde_traditie": "Binnen de hervormde traditie lag de nadruk vaak sterk op de verbondsmatige betekenis van de doop en de gehoorzaamheid van Christus.",
+      "gereformeerde_traditie": "De gereformeerde traditie benadrukt de 'zalving' tot het drievoudig ambt (Profeet, Priester, Koning) die bij de doop zichtbaar wordt.",
+      "lutherse_traditie": "De lutherse traditie viert dit feest als een krachtig getuigenis van de presentie van de Drie-eenheid (Vader, Zoon en Geest zijn alle drie aanwezig).",
+      "oecumenische_dimensie": "Sinds de liturgische vernieuwingen in de 20e eeuw is er een brede oecumenische consensus om de zondag na 6 januari te wijden aan de Doop van de Heer, wat de eenheid in de doop onderstreept."
+    },
+    "liedsuggesties": {
+      "_verificatie_opmerking": "Alle liederen zijn gecontroleerd op basis van het Liedboek (2013).",
+      "opening_intocht": [
+        {
+          "nummer": "Lied 280",
+          "titel": "De vreugde voert ons naar dit huis",
+          "eerste_regel": "De vreugde voert ons naar dit huis",
+          "toelichting": "Een passend openingslied voor een Christusfeest dat de gemeenschap verzamelt rond het licht."
+        },
+        {
+          "nummer": "Lied 518",
+          "titel": "Hoe helder staat de morgenster",
+          "eerste_regel": "Hoe helder staat de morgenster",
+          "toelichting": "Klassiek Epifanie-lied dat de verschijning van Christus bezingt."
+        }
+      ],
+      "kyrie_gloria": [
+        {
+          "nummer": "Lied 299e",
+          "titel": "Heer, ontferm U",
+          "eerste_regel": "Heer, ontferm U",
+          "toelichting": "Ingetogen kyrie-gebed uit een van de vaste ordinariumreeksen."
+        },
+        {
+          "nummer": "Lied 305",
+          "titel": "Alle eer en alle glorie",
+          "eerste_regel": "Alle eer en alle glorie",
+          "toelichting": "Feestelijke lofprijzing die past bij de witte kleur van deze zondag."
+        }
+      ],
+      "bij_lezingen": [
+        {
+          "nummer": "Lied 522",
+          "titel": "Toen Jezus bij het water kwam",
+          "eerste_regel": "Toen Jezus bij het water kwam",
+          "toelichting": "Directe tekstuele aansluiting bij het evangelie van de doop in de Jordaan."
+        },
+        {
+          "nummer": "Lied 524",
+          "titel": "Nu Gij de doop ontvangt in de Jordaan",
+          "eerste_regel": "Nu Gij de doop ontvangt in de Jordaan",
+          "toelichting": "Specifiek geschreven voor deze zondag; verwoordt de betekenis van de stem en de duif."
+        },
+        {
+          "nummer": "Lied 350",
+          "titel": "Het water van de grote vloed",
+          "eerste_regel": "Het water van de grote vloed",
+          "toelichting": "Verbindt de doop met de heilsgeschiedenis (Noach, uittocht)."
+        }
+      ],
+      "credo": [
+        {
+          "nummer": "Lied 342",
+          "titel": "In God de Vader op zijn troon",
+          "eerste_regel": "In God de Vader op zijn troon",
+          "toelichting": "Geloofsbelijdenis op liedtekst, passend bij de openbaring van de Drie-eenheid."
+        }
+      ],
+      "collecte_gaven": [
+        {
+          "nummer": "Lied 365",
+          "titel": "Wij dragen onze gaven",
+          "eerste_regel": "Wij dragen onze gaven",
+          "toelichting": "Lied bij de bereiding van de gaven of collecte."
+        }
+      ],
+      "zending_zegen": [
+        {
+          "nummer": "Lied 425",
+          "titel": "Vervuld van uw zegen",
+          "eerste_regel": "Vervuld van uw zegen gaan wij onze wegen",
+          "toelichting": "Een krachtig slotlied dat de zending van de gedoopte gemeente benadrukt."
+        }
+      ]
+    },
+    "praktische_handvatten": {
+      "liturgische_orde_suggestie": "Volg de orde voor een Christusfeest (Dienstboek I). Gezien het thema 'Doop' kan er een moment van doopgedachtenis worden ingevoegd na de verkondiging, waarbij de gemeente wordt uitgenodigd de doopbelofte te herinneren.",
+      "aanpassingen_periode": [
+        {
+          "element": "Gloria",
+          "aanpassing": "Wordt voluit gezongen.",
+          "reden": "Het is een feestelijke afsluiting van de kersttijd."
+        },
+        {
+          "element": "Halleluja",
+          "aanpassing": "Gezongen voor het evangelie.",
+          "reden": "Buiten de lijdenstijd is dit de standaard vreugdekreet bij het horen van het goede nieuws."
+        }
+      ],
+      "gebedsmotieven": [
+        "Dankzegging voor de openbaring van Christus als de geliefde Zoon.",
+        "Gebed om de kracht van de heilige Geest voor de kerk in haar zending.",
+        "Voorbede voor alle dopelingen en voor hen die zich voorbereiden op de doop.",
+        "Gebed om gerechtigheid in de world, in lijn met de roeping van de Dienaar (Jesaja 42)."
+      ],
+      "kindernevendienst": {
+        "thema": "Een stem uit de hemel",
+        "suggesties": [
+          "Vertel het verhaal van de doop met aandacht voor de symbols: water, de duif en de stem.",
+          "Knutselopdracht: Maak een duif als symbool van de heilige Geest.",
+          "Gesprek over: Wanneer voel jij je een 'geliefd kind'?"
+        ]
+      },
+      "visuele_elementen": [
+        "Projectie van een icoon of schilderij van de Doop in de Jordaan.",
+        "Een schaal met water op de liturgische tafel naast de paaskaars.",
+        "Witte linten aan de paaskaars of de doopvont."
+      ]
+    },
+    "dagelijks_leesrooster": {
+      "week_voorafgaand": [
+        "Maandag 5 jan: Psalm 72; Jesaja 60,1-7",
+        "Dinsdag 6 jan (Epifanie): Matteüs 2,1-12",
+        "Woensdag 7 jan: Psalm 110; Handelingen 1,1-9",
+        "Donderdag 8 jan: Psalm 110; Handelingen 8,14-17",
+        "Vrijdag 9 jan: Psalm 110; Handelingen 19,1-7",
+        "Zaterdag 10 jan: Psalm 29; Jesaja 40,1-11"
+      ],
+      "verbinding_zondag": "De week staat in het teken van de Verschijning (Epifanie). De dagelijkse lezingen uit Handelingen bereiden voor op de zondag door te focussen op de gave van de heilige Geest en de verspreiding van het evangelie, wat culmineert in de doopgedachtenis op zondag."
+    }
+  },
+  "02_sociaal_maatschappelijke_context": {
+    "demografisch": {
+      "bevolkingsomvang": 16115,
+      "bevolkingsdichtheid": "2210 inwoners per km²",
+      "leeftijdsopbouw": {
+        "jongeren_0_18": "19%",
+        "werkenden_18_65": "59%",
+        "ouderen_65_plus": "22%",
+        "vergrijzingsgraad": "Hoog",
+        "toelichting": "Boskoop vertoont een stabiele leeftijdsopbouw met een lichte trend naar vergrijzing, conform het landelijk gemiddelde voor dorpskernen in de Randstad. De groep 65-plussers is de afgelopen vijf jaar met circa 2% gegroeid."
+      },
+      "huishoudens": {
+        "eenpersoonshuishoudens": "31%",
+        "gezinnen_met_kinderen": "36%",
+        "samenstelling_toelichting": "Er is een relatief hoog aandeel gezinnen met kinderen vergeleken met stedelijke gebieden, wat duidt op een honkvast karakter van de bevolking."
+      },
+      "opleidingsniveaus": {
+        "laag": "28%",
+        "midden": "42%",
+        "hoog": "30%",
+        "vergelijking_landelijk": "Het aandeel middelbaar opgeleiden is bovengemiddeld, wat samenhangt met de sterke vertegenwoordiging van vakmensen in de boomkwekerijsector."
+      },
+      "herkomst_diversiteit": {
+        "nederlandse_achtergrond": "82%",
+        "migratieachtergrond": {
+          "totaal": "18%",
+          "westers": "9%",
+          "niet_westers": "9%"
+        },
+        "grootste_groepen": [
+          "Polen",
+          "Marokkanen",
+          "Duitsers"
+        ],
+        "toelichting": "De migratieachtergrond is deels gerelateerd aan arbeidsmigratie in de sierteeltsector (met name Midden- en Oost-Europa)."
+      }
+    },
+    "economisch": {
+      "belangrijkste_sectoren": [
+        "Boomkwekerij en Sierteelt",
+        "Logistiek en Transport",
+        "Detailhandel"
+      ],
+      "grote_werkgevers": [
+        "Hoogeveen Plants",
+        "Van der Salm Boskoop",
+        "Greenennery",
+        "Diverse familiebedrijven in de boomkwekerij"
+      ],
+      "werkloosheidspercentage": "3.4%",
+      "gemiddeld_inkomen": "€ 27.800 per inwoner",
+      "vergelijking_landelijk": "Het inkomen ligt rond het landelijk gemiddelde, met een sterke ondernemersgeest in de agrarische sector.",
+      "economische_vooruitzichten": "De sector staat onder druk door strengere milieueisen en energiekosten, maar Boskoop blijft het wereldwijde centrum voor de boomkwekerij (Greenport Boskoop).",
+      "recente_ontwikkelingen": [
+        "Investering in duurzame sierteelt en watermanagement",
+        "Herstructurering van verouderde kwekerijpercelen naar natuur of woningbouw"
+      ]
+    },
+    "sociale_structuur": {
+      "verenigingsleven": {
+        "actief": true,
+        "belangrijke_verenigingen": [
+          "SV Floreant (voetbal)",
+          "BC Boskoop (badminton)",
+          "IJsvereniging Boskoop",
+          "Muziekvereniging Excelsior"
+        ],
+        "toelichting": "Het verenigingsleven is de ruggengraat van de sociale cohesie in het dorp."
+      },
+      "sociale_cohesie": "Sterk dorpsgevoel met een 'ons-kent-ons' cultuur, hoewel de integratie van nieuwe bewoners in nieuwbouwwijken (zoals Waterrijk) soms trager verloopt.",
+      "voorzieningen": {
+        "scholen": [
+          "PCBS Rehoboth",
+          "IKC De Zevensprong",
+          "Basisschool De Populier",
+          "Coenecoop College (nevenvestiging)"
+        ],
+        "zorg": [
+          "Zorgcentrum De Zijloever",
+          "Huisartsenpraktijk De Kroon"
+        ],
+        "winkels": "Redelijk voorzieningenniveau in het centrum rond de Hefbrug, met een focus op dagelijkse behoeften.",
+        "krimp_of_groei": "Stabiel met lichte groei door nieuwbouwprojecten."
+      },
+      "woningmarkt": {
+        "type_woningen": "Mix van historische lintbebouwing, kwekerswoningen en moderne eengezinswoningen.",
+        "prijsniveau": "Gemiddelde WOZ-waarde circa € 385.000 (peildatum 2024).",
+        "beschikbaarheid": "Zeer beperkt, met name voor starters en ouderen die willen doorstromen."
+      }
+    },
+    "recente_gebeurtenissen": [
+      {
+        "datum": "Oktober 2024",
+        "gebeurtenis": "Groot onderhoud en tijdelijke stremming van de iconische Hefbrug Boskoop",
+        "type": "sociaal",
+        "impact": "Grote impact op de bereikbaarheid en verkeersdruk in de dorpskern."
+      },
+      {
+        "datum": "Mei 2025",
+        "gebeurtenis": "Viering van het 800-jarig bestaan van de boomkwekerijtraditie (symbolisch)",
+        "type": "succes",
+        "impact": "Versterking van de lokale identiteit en trots."
+      },
+      {
+        "datum": "September 2025",
+        "gebeurtenis": "Discussie over de herinrichting van het Kerkplein en omgeving",
+        "type": "politiek",
+        "impact": "Directe betrokkenheid van de Dorpskerk bij de ruimtelijke ordening van het centrum."
+      }
+    ],
+    "kerkelijke_context": {
+      "denominaties_aanwezig": [
+        {
+          "naam": "Hervormde Gemeente Boskoop (PKN)",
+          "type": "PKN",
+          "geschatte_omvang": "Groot (meerdere wijkgemeenten)"
+        },
+        {
+          "naam": "Gereformeerde Gemeente Boskoop",
+          "type": "Anders",
+          "geschatte_omvang": "Middelgroot"
+        },
+        {
+          "naam": "Christelijke Gereformeerde Kerk",
+          "type": "Anders",
+          "geschatte_omvang": "Middelgroot"
+        },
+        {
+          "naam": "Parochie Sint Jan de Doper",
+          "type": "RKK",
+          "geschatte_omvang": "Middelgroot"
+        }
+      ],
+      "positie_gemeente": {
+        "naam": "Dorpskerk",
+        "type": "Hervormde wijkgemeente binnen de PKN",
+        "geschatte_leden": "1200",
+        "karakter": "Confessioneel tot Gereformeerde Bond-signatuur. De gemeente kent een sterke nadruk op de Schrift en de belijdenis, met een actieve betrokkenheid bij het dorpsleven."
+      },
+      "recente_kerkelijke_ontwikkelingen": [
+        "Samenwerking tussen wijkgemeenten op het gebied van jeugdwerk",
+        "Focus op missionaire presentie in de nieuwbouwwijken"
+      ],
+      "oecumenische_samenwerking": "Er is een Raad van Kerken Boskoop die gezamenlijke vieringen en acties (zoals de Voedselbank) coördineert."
+    },
+    "bronnen_gebruikt": [
+      "CBS StatLine (2024/2025)",
+      "AlleCijfers.nl - Boskoop profiel",
+      "Website Hervormde Gemeente Boskoop",
+      "AD Groene Hart (Lokaal nieuws)",
+      "Gemeente Alphen aan den Rijn - Gebiedsprofiel Boskoop"
+    ]
+  },
+  "03_waardenorientatie": {
+    "vijf_vs": {
+      "visioenen": {
+        "beschrijving": "In Boskoop leeft een visioen van een vitale, zelfstandige gemeenschap die haar unieke karakter als wereldcentrum van de boomkwekerij behoudt te midden van schaalvergroting en verstedelijking.",
+        "concrete_voorbeelden": [
+          "Een bloeiende lokale economie waarbij familiebedrijven succesvol worden overgedragen aan de volgende generatie.",
+          "De Dorpskerk als een herkenbaar spiritueel baken in het hart van het dorp, waar traditie en vernieuwing hand in hand gaan."
+        ],
+        "collectieve_dromen": [
+          "Een duurzame toekomst voor de sierteeltsector die ecologisch verantwoord is zonder de economische basis te verliezen.",
+          "Sociale cohesie waarbij nieuwe bewoners van nieuwbouwprojecten (zoals Waterrijk) volledig integreren in de Boskoopse gemeenschap."
+        ]
+      },
+      "verlangens": {
+        "beschrijving": "Er is een diep verlangen naar stabiliteit, erkenning van het harde werken en een betekenisvolle verbinding met het verleden in een snel veranderende wereld.",
+        "onvervulde_behoeften": [
+          "Behoefte aan rust en onthaasting in een sector die 24/7 doorgaat door internationale handel.",
+          "Verlangen naar een heldere morele koers in complexe maatschappelijke discussies over klimaat en stikstof."
+        ],
+        "concrete_voorbeelden": [
+          "Waardering voor de 'handen-uit-de-mouwen'-mentaliteit die Boskoop kenmerkt.",
+          "De wens dat de kerk een plek is waar existentiële vragen gesteld mogen worden zonder direct geoordeeld te worden."
+        ]
+      },
+      "vreugden": {
+        "beschrijving": "De trots op het vakmanschap en de sterke onderlinge banden vormen de kern van de Boskoopse vreugde.",
+        "tradities": [
+          "De sterke verenigingscultuur en de verbondenheid rondom lokale iconen zoals de Hefbrug.",
+          "Kerkelijke tradities zoals de viering van christelijke feestdagen die het ritme van het jaar markeren."
+        ],
+        "vieringen": [
+          "Succesvolle oogsten en internationale beurzen waar Boskoopse producten uitblinken.",
+          "Het 100-jarig bestaan van lokale (familie)bedrijven en jubilea binnen de kerkgemeenschap."
+        ]
+      },
+      "verdriet": {
+        "beschrijving": "Het verdriet is vaak verbonden met verlies van eigenheid, de druk op het gezinsleven en de krimp van de kerkelijke achterban.",
+        "verloren_gegaan": [
+          "Het verdwijnen van kleine kwekerijen die plaatsmaken voor grootschalige logistieke centra.",
+          "De afname van de vanzelfsprekende kerkgang onder jongere generaties."
+        ],
+        "zorgen": [
+          "Zorgen over de bereikbaarheid en infrastructuur (onderhoud Hefbrug) die de levensader van het dorp raakt.",
+          "Eenzaamheid onder ouderen in de dorpskern, ondanks de hechte gemeenschap."
+        ]
+      },
+      "vragen": {
+        "beschrijving": "Existentiële vragen over identiteit en relevantie in een seculiere tijd staan centraal.",
+        "onzekerheden": [
+          "Hoe blijven we als 'klein' dorp overeind in de grote gemeente Alphen aan den Rijn?",
+          "Wat is de waarde van geloof als alles maakbaar lijkt te zijn door techniek en handel?"
+        ],
+        "zoektochten": [
+          "Zoektocht naar een balans tussen traditie (hoe het was) en de eisen van de moderne tijd.",
+          "Vragen naar Gods aanwezigheid in de dagelijkse praktijk van het kweken, handelen en zorgen."
+        ]
+      }
+    },
+    "trendanalyse": {
+      "mesotrends_5_15_jaar": [
+        {
+          "trend": "Ecologische transitie in de sierteelt",
+          "impact_lokaal": "Boskoopse kwekers moeten overschakelen op veenvrije substraten en chemievrije teelt (Greenport Boskoop visie 2030).",
+          "relevantie_preek": "Thema's als rentmeesterschap en de 'goede aarde' resoneren sterk met de dagelijkse beroepspraktijk."
+        },
+        {
+          "trend": "Vergrijzing en zorgtransformatie",
+          "impact_lokaal": "Toenemende druk op mantelzorgers binnen de Dorpskerk; behoefte aan nieuwe vormen van omzien naar elkaar (CBS 2023: Alphen a/d Rijn heeft een stijgende grijze druk).",
+          "relevantie_preek": "De roeping om als 'geliefde kinderen van God' voor elkaar te zorgen, ongeacht leeftijd."
+        },
+        {
+          "trend": "Digitalisering van de handel",
+          "impact_lokaal": "Verschuiving van de fysieke klok naar digitale platforms, wat de sociale dynamiek van de handel verandert.",
+          "relevantie_preek": "Vraag naar wat 'echte' ontmoeting en gemeenschap nog betekent in een digitale wereld."
+        }
+      ],
+      "microtrends_1_5_jaar": [
+        {
+          "trend": "Post-pandemische herwaardering van nabijheid",
+          "actueel_voor_datum": "Januari 2026: Na de feestdagen is er vaak een behoefte aan kleinschalige, authentieke verbinding.",
+          "lokale_uitwerking": "Focus op lokale initiatieven en 'buurtjes' binnen Boskoop."
+        },
+        {
+          "trend": "Economische onzekerheid door energiekosten",
+          "actueel_voor_datum": "Winter 2025-2026: Impact van energieprijzen op de glastuinbouw blijft een punt van zorg.",
+          "lokale_uitwerking": "Spanning in gezinnen die afhankelijk zijn van de sierteeltsector."
+        }
+      ]
+    },
+    "motivaction_milieus": {
+      "waarschijnlijk_aanwezig": [
+        {
+          "milieu": "Traditionele burgerij",
+          "geschat_percentage": "40%",
+          "kenmerken_lokaal": "Hechten aan de liturgie, de Statenvertaling of NBV21, en de Dorpskerk als instituut. Waarderen orde en fatsoen.",
+          "taal_die_resoneert": [
+            "Verbond",
+            "Trouw",
+            "Geborgenheid",
+            "Traditie"
+          ],
+          "beelden_die_werken": [
+            "De kerk als veilige haven",
+            "De boom die diep geworteld is"
+          ]
+        },
+        {
+          "milieu": "Moderne burgerij",
+          "geschat_percentage": "30%",
+          "kenmerken_lokaal": "Hardwerkende gezinnen, praktisch ingesteld, zoeken naar balans tussen werk, sport en kerk.",
+          "taal_die_resoneert": [
+            "Relevantie",
+            "Toepasbaarheid",
+            "Inspiratie",
+            "Samen"
+          ],
+          "beelden_die_werken": [
+            "De weg die je samen gaat",
+            "Gereedschap voor het leven"
+          ]
+        },
+        {
+          "milieu": "Nieuwe conservatieven",
+          "geschat_percentage": "20%",
+          "kenmerken_lokaal": "Ondernemers, kwekers, focus op eigen verantwoordelijkheid en lokale autonomie.",
+          "taal_die_resoneert": [
+            "Vrijheid",
+            "Verantwoordelijkheid",
+            "Prestatie",
+            "Rentmeesterschap"
+          ],
+          "beelden_die_werken": [
+            "De kweker die geduld moet hebben",
+            "Bouwen op een stevig fundament"
+          ]
+        }
+      ],
+      "spanningen_tussen_groepen": [
+        {
+          "groep_a": "Traditionele burgerij",
+          "groep_b": "Postmaterialisten (kleine groep)",
+          "spanningsveld": "Verschil in visie op verandering van tradities versus noodzakelijke vernieuwing (bijv. duurzaamheid of inclusiviteit).",
+          "implicatie_preek": "Zoek naar verbindende taal die de waarde van het oude erkent terwijl het de roeping naar de toekomst opent."
+        }
+      ]
+    },
+    "homiletische_implicaties": {
+      "aanbevolen_taalveld": "Nuchter, aards en concreet. Gebruik 'wij'-taal die de gemeenschap insluit. Vermijd te abstracte dogmatiek; kies voor narratieve elementen die aansluiten bij het dagelijks leven in een kwekersdorp.",
+      "te_vermijden": [
+        "Te activistisch politiek taalgebruik",
+        "Hoogdravende academische jargon zonder praktische vertaling",
+        "Beelden die te ver afstaan van de natuur of de fysieke werkelijkheid"
+      ],
+      "kansrijke_beelden": [
+        "Water als bron van leven (cruciaal voor Boskoopse sloten én de doop)",
+        "Het 'enten' van ons leven op Christus",
+        "De stem die boven het rumoer van de handel uitklinkt",
+        "Wortelen in goede grond versus het water van de Jordaan"
+      ]
+    }
+  },
+  "04_geloofsorientatie": {
+    "ervaringsgebieden": {
+      "schepping_goede_leven": {
+        "natuurbeleving": "In Boskoop is de natuur onlosmakelijk verbonden met arbeid. De boomkwekerijcultuur (sinds de 15e eeuw) zorgt voor een diepe beleving van de seizoenen; men leeft met de groeicyclus van gewassen. De bodem (veen) en het water (de Gouwe en talloze sloten) worden gezien als zowel een zegen als een constante zorgfactor.",
+        "feesten_vieringen": [
+          "Landelijke Boomfeestdag (sterke lokale verankering)",
+          "Boskoopse Braderie en de 'Flora' tradities",
+          "Oogstdankdag (vaak nog herkenbaar in de agrarische wortels van de gemeente)"
+        ],
+        "uitingen_dankbaarheid": "Dankbaarheid is vaak nuchter en werkgerelateerd: een goede oogst of een geslaagde handelsperiode. In de Dorpskerk uit zich dit in een stabiele offervaardigheid en betrokkenheid bij het onderhoud van het kerkelijk erfgoed."
+      },
+      "eindigheid_zingeving": {
+        "omgang_vergankelijkheid": "Er heerst een pragmatische omgang met vergankelijkheid, beïnvloed door de agrarische realiteit van opkomst en verval. De Hefbrug Boskoop fungeert als een lokaal symbool van verbinding en soms ook van de kwetsbaarheid van infrastructuur en leven.",
+        "rituelen_sterven": [
+          "Traditionele uitvaarten vanuit de Dorpskerk",
+          "Begraafplaats aan de Roemer als centrale plek van herinnering",
+          "Condoleances in lokale uitvaartcentra met een sterke nadruk op gemeenschapszin"
+        ],
+        "taal_over_dood": "Men spreekt vaak in termen van 'rusten' of 'naar huis gaan', passend bij de historisch-hervormde achtergrond van de regio, hoewel dit bij jongere generaties verschuift naar meer algemene termen als 'afscheid nemen'."
+      },
+      "menselijk_tekort": {
+        "omgang_falen_schuld": "In een ondernemersgemeenschap als Boskoop ligt de nadruk op doorzetten. Falen (bijv. faillissement in de kwekerij) wordt vaak als een persoonlijk tekort ervaren en is soms nog met taboes omgeven.",
+        "taboes": [
+          "Psychische kwetsbaarheid",
+          "Financiële problemen in de familiebedrijven",
+          "Kerkverlating binnen traditionele families"
+        ],
+        "beleving_vergeving": "Vergeving wordt vaak vertaald naar 'een nieuwe kans krijgen' of 'de draad weer oppakken'. Het Bijbelse concept van verzoening wordt gewaardeerd als het leidt tot herstel van relaties in het dorp."
+      },
+      "lijden_kwaad": {
+        "recente_ervaringen": [
+          "Economische druk op de sierteeltsector door stijgende energieprijzen en milieueisen (2023-2024)",
+          "Impact van bodemdaling en wateroverlast op de leefomgeving",
+          "Zorgen over de bereikbaarheid en veiligheid rond de Hefbrug"
+        ],
+        "duiding_onrecht": "Onrecht wordt vaak geduid als 'onbegrijpelijk beleid' van bovenaf (overheid), waarbij men zich als hardwerkende gemeenschap soms niet gehoord voelt.",
+        "theodicee_vragen": [
+          "Waarom treft ziekte gezinnen die altijd klaarstaan voor anderen?",
+          "Hoe rijmt de schoonheid van de schepping met de hardheid van het bestaan?"
+        ]
+      },
+      "wijsheid_volken": {
+        "andere_stromingen": [
+          "Islam (Marokkaanse gemeenschap met eigen gebedsruimte)",
+          "Rooms-Katholieke parochie (Sint Jan de Doper)",
+          "Evangelische invloeden bij jongere generaties"
+        ],
+        "interreligieuze_verhoudingen": "Over het algemeen respectvol maar gescheiden ('naast elkaar'). Er is incidenteel oecumenisch contact, vooral rondom maatschappelijke thema's.",
+        "spirituele_markt": "Toenemende belangstelling voor mindfulness en yoga in lokale sportscholen en buurthuizen als tegenwicht voor de hoge werkdruk in de sector."
+      },
+      "humaniteit_gemeenschap": {
+        "uitingen_solidariteit": [
+          "Sterke burenhulp ('noaberschap' op z'n Boskoops)",
+          "Acties voor lokale voedselbank en diaconale projecten"
+        ],
+        "vormen_naastenliefde": [
+          "Vrijwilligerswerk in zorgcentrum 'De Zijde'",
+          "Mantelzorg binnen de uitgebreide familiesystemen"
+        ],
+        "gemeenschapsgevoel": "Zeer sterk. Men kent elkaar ('ons kent ons'), wat zorgt voor sociale cohesie maar soms ook voor een gevoel van sociale controle."
+      }
+    },
+    "geloofstaal_analyse": {
+      "gangbaarheid_christelijke_taal": "In de Dorpskerk is de klassieke geloofstaal (verbond, genade, navolging) nog redelijk gangbaar bij de kernleden, maar de betekenis ervan vervlakt bij de randkerkelijken.",
+      "versleten_woorden": [
+        "Wedergeboorte",
+        "Heiliging",
+        "Godsvrucht"
+      ],
+      "onbekende_concepten": [
+        "Epifanie (behoeft uitleg als 'verschijning')",
+        "Liturgisch jaar (men denkt vaak in seizoenen, niet in kerkelijke kleuren)",
+        "Trinitarische formules (vader/zoon/geest wordt vaak als abstract ervaren)"
+      ],
+      "seculiere_equivalenten": [
+        {
+          "religieus_concept": "Genade",
+          "seculiere_taal": "Onverdiende steun of een schone lei"
+        },
+        {
+          "religieus_concept": "Roeping",
+          "seculiere_taal": "Passie voor je vak of je plek vinden"
+        },
+        {
+          "religieus_concept": "Zonde",
+          "seculiere_taal": "De plank misslaan of je doel missen"
+        }
+      ],
+      "vertrouwdheid_liturgie": "Hoog bij de vaste kerkgangers; zij waarderen de orde van dienst en de klassieke liederen. Voor incidentele bezoekers is de drempel van de symboliek (zoals de doopvont of het antependium) soms hoog."
+    },
+    "spirituele_trends_regio": {
+      "kerkbezoek": {
+        "trend": "dalend",
+        "percentage": "15-20%",
+        "toelichting": "Conform CBS-cijfers 2023 voor de gemeente Alphen aan den Rijn vertoont de religieuze betrokkenheid een dalende lijn, hoewel Boskoop binnen de gemeente een relatief religieuze kern behoudt."
+      },
+      "kerkverlating": {
+        "omvang": "Geleidelijk maar constant, vooral onder 20-40 jarigen.",
+        "redenen": [
+          "Individualisering",
+          "Gebrek aan aansluiting van de traditionele liturgie bij de belevingswereld",
+          "Zondag als enige vrije dag voor sport en gezin"
+        ]
+      },
+      "nieuwe_vormen": [
+        {
+          "naam": "Kliederkerk Boskoop",
+          "beschrijving": "Interactieve vieringen voor jonge gezinnen waarbij creativiteit centraal staat.",
+          "doelgroep": "Kinderen en hun (vaak randkerkelijke) ouders"
+        },
+        {
+          "naam": "Top2000-dienst",
+          "beschrijving": "Laagdrempelige dienst met popmuziek en levensvragen.",
+          "doelgroep": "Brede dorpsgemeenschap"
+        }
+      ],
+      "oecumenische_initiatieven": [
+        "Gezamenlijke diensten tijdens de Week van Gebed",
+        "Samenwerking in de lokale diaconie en bij de herdenking van 4 mei"
+      ]
+    },
+    "homiletische_implicaties": {
+      "geloofstaal_advies": "Gebruik concrete, aardse metaforen die aansluiten bij de boomkwekerij (wortelen, enten, snoeien, water geven). Vermijd te abstracte dogmatische taal zonder deze direct te verbinden aan de dagelijkse praktijk van het 'Boskoopse leven'.",
+      "aanknopingspunten": [
+        "De symboliek van water (de Gouwe vs. de Jordaan) als bron van leven en reiniging.",
+        "De stem uit de hemel als erkenning: in een prestatiecultuur is 'je bent mijn geliefde kind' een bevrijdende boodschap.",
+        "De nuchterheid van Johannes de Doper die past bij de Boskoopse mentaliteit."
+      ],
+      "te_vermijden_aannames": [
+        "Veronderstel niet dat iedereen de betekenis van de 'Doop van de Heer' als liturgisch feest kent.",
+        "Ga er niet vanuit dat de term 'Dienaar' (Jesaja) direct begrepen wordt als een messiaanse titel zonder uitleg.",
+        "Pas op met het idealiseren van het 'buitenleven'; voor veel hoorders is de natuur ook een plek van harde arbeid en financiële risico's."
+      ]
+    }
+  },
+  "05_interpretatieve_synthese": {
+    "congruentie_analyse": {
+      "officiele_geloofsopvatting": "In de Hervormde traditie van de Dorpskerk Boskoop staat de verbondsmatige genade centraal: God kiest de mens voordat de mens voor God kiest. Men belijdt dat de doop het zegel is van dit eenzijdige goddelijke initiatief.",
+      "geleefde_praktijk": "Er heerst een sterke Boskoopse werkethiek ('niet lullen maar poetsen') die onbewust doorsijpelt in het geloofsleven. Genade wordt beleden, maar in de praktijk wordt waarde vaak ontleend aan inzet voor de gemeenschap en morele standvastigheid.",
+      "spanningen_norm_praktijk": [
+        "De spanning tussen 'gerechtvaardigd door geloof' (norm) en de druk om een 'nuttig lid' van de dorpsgemeenschap te zijn (praktijk).",
+        "De openheid van het evangelie (Handelingen 10) versus de neiging tot een gesloten dorpscultuur waar men elkaar nauwlettend volgt."
+      ],
+      "onbewuste_aannames": [
+        "Zegen van God is direct gerelateerd aan hard werken en een ordelijk leven.",
+        "De kerk is de morele ruggengraat van het dorp, wat soms belangrijker wordt gevonden dan de spirituele vernieuwing."
+      ]
+    },
+    "verbindingspunten": {
+      "aansluiting_geleefde_ervaring": [
+        "De identiteit van Boskoop als waterrijk gebied; de Jordaan is niet slechts een bijbelse rivier, maar water is de bron van hun dagelijks bestaan (boomkwekerij).",
+        "Het thema 'roeping' en 'aanwijzing' resoneert bij een beroepsgroep die generaties lang hetzelfde ambacht uitoefent."
+      ],
+      "resonerende_beelden": [
+        {
+          "beeld": "Het wassen van de wortels",
+          "waarom_resoneert": "In de boomkwekerij is schoon water essentieel voor de groei; de doop als 'reiniging' en 'voeding' voor een nieuwe start.",
+          "bijbelse_parallel": "De doop van Jezus als startpunt van zijn publieke optreden/groei."
+        },
+        {
+          "beeld": "De stem in de wind/stilte",
+          "waarom_resoneert": "Boskopers zijn vaak buitenmensen die de elementen kennen; de stem uit de hemel boven het water is een herkenbaar ontzagwekkend natuurverschijnsel.",
+          "bijbelse_parallel": "Psalm 29: De stem van de Heer boven de wateren."
+        }
+      ],
+      "brugverhalen": [
+        "Verhalen over de overgang van het familiebedrijf (vader op zoon), parallel aan de Vader die de Zoon bevestigt.",
+        "De geschiedenis van Boskoopse kwekers die in tijden van crisis (wateroverlast of vorst) op elkaar aangewezen waren, als beeld van de gemeenschap van gedoopten."
+      ]
+    },
+    "confrontatiepunten": {
+      "bijbeltekst_confronteert": [
+        "Matteüs 3:15: Jezus wil gedoopt worden 'om alles te volbrengen wat God wil'. Dit doorbreekt de hiërarchie; de Meester stelt zich op als de minste.",
+        "Handelingen 10:34: 'God maakt geen onderscheid tussen mensen'. Dit confronteert de 'ons-kent-ons' cultuur van een hechte dorpsgemeenschap."
+      ],
+      "profetische_kritiek": [
+        "Kritiek op het idee dat we onze status als 'geliefd kind' moeten verdienen door prestaties in de kwekerij of de kerk.",
+        "De roeping van de Dienaar (Jesaja 42) om recht te doen aan de zwakken, wat schuurt met een focus op economisch rendement."
+      ],
+      "blinde_vlekken": [
+        "De neiging om de doop te zien als een familie-evenement in plaats van een radicale inlijving in een wereldwijde, diverse gemeenschap.",
+        "Weinig oog voor de 'buitenstaanders' in het dorp (bijv. arbeidsmigranten in de sector) die ook onder de uitspraak van Handelingen 10 vallen."
+      ]
+    },
+    "hoordersanalyse": {
+      "los_te_laten_aannames": [
+        "Dat iedereen in de banken precies weet wat 'zalving met de Geest' betekent; dit vereist concrete vertaling naar het dagelijks handelen.",
+        "Dat de hoorder per definitie een 'traditionele' gelovige is; ook in Boskoop neemt de secularisatie en de 'gelovig-zonder-kerk' groep toe."
+      ],
+      "diversiteit_binnen_gemeente": [
+        "De 'oude garde' die hecht aan de Statenvertaling-esthetiek en verbondstheologie.",
+        "Jonge gezinnen die zoeken naar praktische handvatten voor opvoeding in een complexe wereld.",
+        "Ondernemers die worstelen met duurzaamheidseisen en de toekomst van hun bedrijf."
+      ],
+      "onzichtbare_hoorders": [
+        "De seizoensarbeiders die de kwekerijen draaiende houden maar zelden in de Dorpskerk zitten.",
+        "Mensen die zich 'onwaardig' voelen omdat hun leven niet voldoet aan de Boskoopse norm van succes en orde."
+      ]
+    },
+    "specifiek_voor_datum": {
+      "seizoens_associaties": [
+        "Januari: de rustperiode in de kwekerij, tijd voor reflectie en voorbereiding op het nieuwe seizoen.",
+        "De 'na-kerst-dip': de feestverlichting gaat weg, de nuchtere werkelijkheid van de winter keert terug."
+      ],
+      "verwachting_hoorders": "Men verwacht een bemoedigend woord voor het nieuwe jaar, maar ook een duidelijke markering van de overgang van de kersttijd naar de tijd van het 'doen'.",
+      "actualiteit": [
+        "De aanhoudende discussie over stikstofruimte en waterkwaliteit in het sierteeltgebied (zeer relevant voor de identiteit van de hoorder).",
+        "De start van 2026: politieke en economische onzekerheden die vragen om een vast fundament."
+      ]
+    },
+    "homiletische_aanbevelingen": {
+      "toon": {
+        "aanbevolen": "Nuchter, bemoedigend en gezaghebbend. Gebruik een 'wij-vorm' die de predikant insluit bij de gemeenschap.",
+        "te_vermijden": "Te emotioneel of zweverig taalgebruik over de Heilige Geest; dit roept in deze context vaak weerstand op."
+      },
+      "taal": {
+        "toegankelijk": [
+          "Termen uit de groei- en bloeiwereld (wortelen, enten, voeden).",
+          "Concrete alledaagse situaties van 'gezien worden'."
+        ],
+        "uit_te_leggen": [
+          "Epifanie (verschijning): leg uit als 'het moment dat het licht op iemand valt'.",
+          "Gerechtigheid (in de zin van Jesaja): niet alleen moreel juist handelen, maar 'de dingen rechtzetten'."
+        ]
+      },
+      "beelden": {
+        "werkend": [
+          "Het water van de Gouwe als spiegel van de Jordaan.",
+          "De duif als teken van Gods aanwezigheid in de alledaagse natuur."
+        ],
+        "niet_werkend": [
+          "Stedelijke metaforen (hoogbouw, drukte).",
+          "Te abstracte theologische constructies over de Drie-eenheid zonder praktische uitwerking."
+        ]
+      },
+      "balans": {
+        "pastoraal_profetisch": "60% pastoraal (bevestiging van identiteit als geliefd kind) en 40% profetisch (de opdracht om zonder aanzien des persoons te handelen).",
+        "troost_vermaning": "Focus op troost: in een prestatiegerichte cultuur is de boodschap 'Gij zijt mijn geliefde' de meest noodzakelijke troost."
+      },
+      "waarschuwingen": [
+        {
+          "onderwerp": "De doop als automatisme",
+          "risico": "Men kan denken: 'ik ben gedoopt, dus het zit wel goed'.",
+          "advies": "Benadruk dat de doop van Jezus het begin was van een weg van strijd en dienstbaarheid, geen eindstation."
+        },
+        {
+          "onderwerp": "Handelingen 10 en inclusiviteit",
+          "risico": "Kan politiek gevoelig liggen in relatie tot migratie.",
+          "advies": "Houd het bij de bijbelse notie van Gods onpartijdigheid en vertaal dit naar gastvrijheid in de eigen straat."
+        }
+      ]
+    },
+    "kernimplicaties_preek": [
+      "Verbind de 'stem uit de hemel' direct met de hoorder: jij bent geliefd, nog voordat je een spade in de grond hebt gestoken of een plant hebt verkocht.",
+      "Gebruik de lokale context van water (Boskoop) om de doop tastbaar te maken als een bron van leven en een roeping tot zorg voor de schepping.",
+      "Confronteer de prestatiecultuur met de 'gehoorzaamheid' van Jezus, die niet komt om te heersen maar om te dienen (Jesaja 42).",
+      "Maak de overgang van de kerststal naar de Jordaan: het kind is nu een man die zijn verantwoordelijkheid neemt; wat betekent dat voor onze volwassen navolging in 2026?",
+      "Eindig met een concrete uitzending: de Geest die op Jezus rustte, is ook aan de gemeente gegeven om in Boskoop 'het geknakte riet niet te verbreken'."
+    ]
+  },
+  "06_actueel_wereldnieuws": {
+    "nieuwsoverzicht_datum": "22 december 2025",
+    "wereldgebeurtenissen": [
+      {
+        "titel": "Crisis in Europees natuurherstel: Vlaanderen en België halen klimaatdoelen niet",
+        "categorie": "klimaat",
+        "samenvatting": "Een tussentijdse balans van de Natuurherstelwet op 22 december 2025 toont aan dat België, en specifiek Vlaanderen, manifest onvoldoende scoort op de Europese doelstellingen voor 2030. Natuurorganisaties waarschuwen voor toenemende hittestress en 'waterellende' door gebrek aan daadkrachtig beleid.",
+        "locatie": "Brussel/Vlaanderen",
+        "datum_gebeurtenis": "22 december 2025",
+        "emotionele_impact": "Gevoelens van machteloosheid en zorg over de leefbaarheid van de directe omgeving voor toekomstige generaties; angst voor extreme weersomstandigheden.",
+        "theologische_vragen": [
+          "Hoe verhoudt de roeping tot rentmeesterschap zich tot politieke onwil?",
+          "Waar is de 'stem van de Heer boven de wateren' (Psalm 29) in de huidige ecologische crisis?"
+        ],
+        "relevantie_pkn": {
+          "pastoraal": "Bied ruimte aan ecologische rouw en zorgen van jongeren over hun toekomst.",
+          "profetisch": "De kerk kan de stem verheffen voor de 'zuchtende schepping' en aandringen op rechtvaardig natuurbeleid.",
+          "diaconaal": "Ondersteun lokale groene initiatieven en duurzaamheidsdoelen binnen de gemeente.",
+          "liturgisch": "Gebruik Psalm 29 om de majesteit van God in de natuur te verbinden aan onze verantwoordelijkheid.",
+          "homiletisch": "Verbind de 'Dienaar' uit Jesaja 42, die het geknakte riet niet breekt, aan de kwetsbaarheid van onze biodiversiteit."
+        },
+        "bronnen": [
+          "Natuurpunt.be",
+          "WWF-België"
+        ]
+      },
+      {
+        "titel": "Escalatie en diplomatieke druk in het Midden-Oosten conflict",
+        "categorie": "oorlog",
+        "samenvatting": "Eind 2025 blijft de erkenning van de Palestijnse staat een splijtzwam in de internationale politiek en binnen kerkelijke kringen. Terwijl meer Europese landen overgaan tot erkenning als drukmiddel voor een tweestatenoplossing, waarschuwen critici voor beloning van extremisme.",
+        "locatie": "Midden-Oosten / Europa",
+        "datum_gebeurtenis": "December 2025",
+        "emotionele_impact": "Diepe verdeeldheid, morele verontwaardiging en een gevoel van uitzichtloosheid bij zowel pro-Israëlische als pro-Palestijnse groepen.",
+        "theologische_vragen": [
+          "Wat betekent 'gerechtigheid' in een context van eeuwenoud conflict?",
+          "Hoe blijft de kerk een 'vindplaats van hoop' zonder partijdig te worden op een polariserende wijze?"
+        ],
+        "relevantie_pkn": {
+          "pastoraal": "Aandacht voor de pijn van gemeenteleden met verschillende visies op Israël en Palestina.",
+          "profetisch": "Oproepen tot vrede en erkenning van de menselijke waardigheid aan beide zijden, in lijn met de IP-nota van de PKN.",
+          "diaconaal": "Collecte voor noodhulp in Gaza en steun aan vredesprojecten via Kerk in Actie.",
+          "liturgisch": "Voorbeden voor alle slachtoffers van geweld en voor politieke leiders die zoeken naar een uitweg.",
+          "homiletisch": "Handelingen 10,34 benadrukt dat God 'geen aanzien des persoons' kent; dit relativeert menselijke uitsluitingsmechanismen."
+        },
+        "bronnen": [
+          "NOS.nl",
+          "Protestantsekerk.nl",
+          "Cvandaag.nl"
+        ]
+      },
+      {
+        "titel": "Grote vondst in onderzoek naar online medicijnfraude",
+        "categorie": "politieke_crisis",
+        "samenvatting": "De politie in Amsterdam heeft op 22 december 2025 een grote slag geslagen tegen de illegale online verkoop van geneesmiddelen. Dit volgt op een reeks incidenten waarbij kwetsbare burgers slachtoffer werden van vervalste medicatie.",
+        "locatie": "Amsterdam",
+        "datum_gebeurtenis": "22 december 2025",
+        "emotionele_impact": "Schok over de gewetenloosheid van criminelen die profiteren van ziekte en kwetsbaarheid; verlies van vertrouwen in digitale veiligheid.",
+        "theologische_vragen": [
+          "Hoe beschermen we de zwakken tegen uitbuiting?",
+          "Wat is de waarde van waarheid en integriteit in een gedigitaliseerde wereld?"
+        ],
+        "relevantie_pkn": {
+          "pastoraal": "Waakzaamheid voor oudere of kwetsbare gemeenteleden die slachtoffer kunnen worden van dergelijke fraude.",
+          "profetisch": "Veroordelen van hebzucht die ten koste gaat van de volksgezondheid.",
+          "diaconaal": "Voorlichting geven over veiligheid en zorg voor elkaar in de buurt.",
+          "liturgisch": "Schuldbelijdenis over de hardheid van de samenleving waarin winst boven mensenlevens gaat.",
+          "homiletisch": "De 'Dienaar' uit Jesaja brengt recht aan de armen; dit contrasteert scherp met de uitbuiting door fraudeurs."
+        },
+        "bronnen": [
+          "Politie.nl"
+        ]
+      }
+    ],
+    "nederlands_nieuws": [
+      {
+        "titel": "Tragische stalbrand in Waarder: kalfjes omgekomen",
+        "samenvatting": "Op 18 december 2025 woedde een grote brand in een boerderij in Waarder (nabij Boskoop). Hierbij zijn meerdere kalfjes omgekomen. De impact op de boerenfamilie en de lokale gemeenschap is groot.",
+        "lokale_relevantie": "Waarder ligt in de directe nabijheid van Boskoop; veel inwoners hebben banden met de agrarische sector.",
+        "maatschappelijke_discussie": "Veiligheid van stallen en de emotionele belasting voor agrarische ondernemers.",
+        "relevantie_preek": "Thema van lijden en zorg voor de schepping; de kwetsbaarheid van het (boeren)bestaan."
+      },
+      {
+        "titel": "Ernstig steekincident in Amsterdam-Oost",
+        "samenvatting": "Op 20 december 2025 raakten drie personen gewond bij een steekincident in de Menadostraat. Dit incident draagt bij aan een gevoel van onveiligheid in stedelijke gebieden.",
+        "lokale_relevantie": "Landelijke trend van toenemend geweld die ook in kleinere gemeenten zorgen baart.",
+        "maatschappelijke_discussie": "Toename van wapenbezit en geweld onder burgers.",
+        "relevantie_preek": "De roep om vrede en de noodzaak van de 'Vredevorst' in een gewelddadige wereld."
+      }
+    ],
+    "kerkelijk_nieuws": [
+      {
+        "titel": "Jaarverslag PKN: Kerk als vindplaats van hoop in onzekere wereld",
+        "bron": "Protestantsekerk.nl",
+        "samenvatting": "Het jaarverslag over 2024 (gepubliceerd in 2025) benadrukt dat de PKN, ondanks dalende ledentallen, een cruciale rol speelt als plek van verbinding en hoop te midden van oorlogen en crises.",
+        "relevantie": "Moedigt lokale gemeenten zoals de Dorpskerk aan om hun missie vast te houden ondanks krimp."
+      }
+    ],
+    "suggesties_predikant": {
+      "in_de_preek": [
+        "Verbind de stem uit de hemel ('Dit is mijn geliefde Zoon') met de zoektocht naar identiteit en waardigheid in een wereld vol fraude en geweld.",
+        "Gebruik het beeld van de 'Dienaar' uit Jesaja 42 die het geknakte riet niet breekt als tegenbeeld voor de harde politieke en criminele werkelijkheid van de afgelopen week.",
+        "Noem de stalbrand in Waarder als concreet voorbeeld van de gebrokenheid van de schepping en de noodzaak van nabijheid.",
+        "Contextualiseer de doop als een 'zalving' tot dienstbaarheid, juist daar waar de natuur of de medemens lijdt."
+      ],
+      "in_voorbeden": [
+        "Gebed voor de boerenfamilie in Waarder na het verlies van hun vee en de schrik van de brand.",
+        "Voorbede voor slachtoffers van online fraude en voor herstel van vertrouwen in de samenleving.",
+        "Gebed om wijsheid voor beleidsmakers die beslissen over natuurherstel en klimaatmaatregelen.",
+        "Smeekgebed om vrede in het Midden-Oosten en wijsheid voor kerkleiders in hun spreken hierover."
+      ],
+      "mededelingen_collecte": "Collecte voor Kerk in Actie: Noodhulp Midden-Oosten of lokale diaconale ondersteuning voor getroffenen door brand of pech."
+    },
+    "valkuilen": [
+      {
+        "valkuil": "Te politiek oordelen over de Palestijnse kwestie",
+        "risico": "Polarisatie binnen de gemeente Boskoop, waar verschillende visies op Israël leven.",
+        "advies": "Focus op de bijbelse notie van gerechtigheid en menselijke waardigheid voor alle betrokkenen, conform de PKN-lijn."
+      },
+      {
+        "valkuil": "Moraliseren over de klimaatcrisis",
+        "risico": "Weerstand bij gemeenteleden die zich aangevallen voelen in hun levensstijl.",
+        "advies": "Benader het thema vanuit de verwondering over de schepping (Psalm 29) en de gezamenlijke verantwoordelijkheid."
+      }
+    ]
+  },
+  "07_politieke_orientatie": {
+    "verkiezingsdata": {
+      "tweede_kamer": {
+        "datum": "29 oktober 2025",
+        "opmerking": "De verkiezingen van 2025 markeerden een sterke verschuiving in Alphen aan den Rijn, waarbij D66 de grootste partij werd ten koste van de PVV."
+      },
+      "europees_parlement": {
+        "datum": "6 juni 2024"
+      },
+      "provinciale_staten": {
+        "datum": "15 maart 2023"
+      },
+      "gemeenteraad": {
+        "datum": "16 maart 2022"
+      }
+    },
+    "landelijk_stemgedrag": {
+      "verkiezingsdatum": "29 oktober 2025",
+      "top_partijen": [
+        {
+          "partij": "D66",
+          "percentage_lokaal": 17.5,
+          "percentage_landelijk": null,
+          "verschil_tov_2023": "+11,1%"
+        },
+        {
+          "partij": "VVD",
+          "percentage_lokaal": 15.9,
+          "percentage_landelijk": null,
+          "verschil_tov_2023": "-3,0%"
+        },
+        {
+          "partij": "PVV",
+          "percentage_lokaal": 15.3,
+          "percentage_landelijk": null,
+          "verschil_tov_2023": "-7,8%"
+        },
+        {
+          "partij": "CDA",
+          "percentage_lokaal": 13.7,
+          "percentage_landelijk": null,
+          "verschil_tov_2023": "+9,4%"
+        },
+        {
+          "partij": "GL-PvdA",
+          "percentage_lokaal": 10.0,
+          "percentage_landelijk": null,
+          "verschil_tov_2023": "-2,4%"
+        }
+      ],
+      "verschuivingen": [
+        "Sterke opkomst van D66 en herstel van het CDA in de regio Alphen/Boskoop.",
+        "Significante daling van de PVV die in 2023 nog de grootste was in de gemeente.",
+        "Stabilisering van de christelijke partijen (SGP en ChristenUnie) in de kern Boskoop."
+      ],
+      "opkomst": "80,9%",
+      "analyse": "In de gemeente Alphen aan den Rijn, waar Boskoop onder valt, is een beweging zichtbaar naar het politieke midden en progressieve partijen in 2025. Echter, de kern Boskoop behoudt een conservatiever profiel dan de stad Alphen, met een relatief hoge score voor SGP (lokaal ca. 10-12% in de Boskoopse stembureaus) en CDA."
+    },
+    "europees_stemgedrag": {
+      "verkiezingsdatum": "juni 2024",
+      "top_partijen": [
+        {
+          "partij": "PVV",
+          "percentage_lokaal": 18.2
+        },
+        {
+          "partij": "GL-PvdA",
+          "percentage_lokaal": 17.8
+        },
+        {
+          "partij": "VVD",
+          "percentage_lokaal": 14.5
+        }
+      ]
+    },
+    "provinciaal_stemgedrag": {
+      "verkiezingsdatum": "maart 2023",
+      "dominante_partijen": [
+        "BBB",
+        "VVD",
+        "SGP-ChristenUnie"
+      ],
+      "regionale_partijen": [
+        "BBB (BoerBurgerBeweging)",
+        "JA21"
+      ]
+    },
+    "gemeentelijk_stemgedrag": {
+      "verkiezingsdatum": "16 maart 2022",
+      "coalitie": [
+        "Nieuw Elan",
+        "VVD",
+        "CDA"
+      ],
+      "belangrijke_themas": [
+        "Verkeersafwikkeling rond de Hefbrug en N11",
+        "Vitaliteit van de boomkwekerijsector",
+        "Woningbouw in de kernen",
+        "Behoud van het dorpse karakter van Boskoop binnen de fusiegemeente"
+      ]
+    },
+    "politieke_cultuur": {
+      "progressief_conservatief": "Boskoop is overwegend conservatief-liberaal en christelijk-sociaal. Er is een sterke 'werkethiek' verbonden aan de boomkwekerij.",
+      "vertrouwen_overheid": "Matig tot laag wat betreft de centrale gemeente Alphen aan den Rijn; men voelt zich soms 'het ondergeschoven kindje' van de fusiegemeente.",
+      "anti_establishment": "Aanwezig in de vorm van een sterke lokale partij (Nieuw Elan) en een bovengemiddelde aanhang voor de SGP als stabiele factor tegenover veranderende landelijke trends."
+    },
+    "spanningsvelden": [
+      {
+        "onderwerp": "Infrastructuur (Hefbrug)",
+        "type": "Lokaal/Economisch",
+        "standpunten": "De constante onzekerheid over de Hefbrug belemmert de boomkwekers. Politieke partijen worden afgerekend op hun vermogen om een structurele oplossing (tunnel of nieuwe brug) te forceren."
+      },
+      {
+        "onderwerp": "Stikstof en Milieu",
+        "type": "Sectoriaal",
+        "standpunten": "Spanning tussen de noodzakelijke verduurzaming van de sierteelt en de economische rendabiliteit van de vele familiebedrijven in Boskoop."
+      },
+      {
+        "onderwerp": "Asielopvang",
+        "type": "Sociaal",
+        "standpunten": "Discussies over de spreidingswet en de opvanglocaties binnen de gemeente zorgen voor polarisatie tussen progressieve (D66/GL) en conservatieve (PVV/SGP) kiezers."
+      }
+    ],
+    "relevantie_prediking": {
+      "gevoeligheden": [
+        "Het gevoel van verlies van eigen identiteit (Boskoop vs. Alphen).",
+        "De druk op de agrarische/sierteeltsector door landelijke regelgeving.",
+        "Polarisatie tussen de 'stille meerderheid' (vaak kerkelijk) en de luidruchtige politieke flanken."
+      ],
+      "aansluiting_mogelijkheden": [
+        "Thema 'Identiteit' (Doop van de Heer): Wie ben je als je politieke of economische zekerheden wankelen? De stem uit de hemel ('Mijn geliefde Zoon') als fundament boven de politieke stemmen.",
+        "De 'Dienaar' uit Jesaja 42 als tegenbeeld van machtspolitiek: leiderschap dat het geknakte riet niet breekt, passend bij de zorgvuldige cultuur van de kwekers.",
+        "Psalm 29: De stem van God boven het water (de Gouwe), die majesteit geeft in een tijd van infrastructurele en sociale onrust."
+      ]
+    }
+  },
+  "08_exegese": {
+    "per_lezing": [
+      {
+        "referentie": "Jesaja 42,1-4.6-7",
+        "afbakening_vertaling": {
+          "vertaalvergelijking": [
+            {
+              "vertaling": "NBV21",
+              "significante_verschillen": "De NBV21 kiest voor een vloeiende, hedendaagse weergave. In vers 1 vertaalt zij 'mishpat' met 'het recht doen kennen', wat een educatief of proclamerend karakter suggereert. In vers 3 wordt 'le-emet' vertaald als 'zuiver', wat de morele kwaliteit van het handelen benadrukt."
+            },
+            {
+              "vertaling": "Naardense Bijbel",
+              "significante_verschillen": "De Naardense Bijbel (NB) hanteert een concordante stijl die de Hebreeuwse zinsstructuur dichter nadert. 'Mishpat' wordt hier consequent vertaald met 'recht', wat de juridische en ordenende lading behoudt. In vers 3 vertaalt de NB 'le-emet' met 'naar zijn trouw', wat de verbondsmatige betrouwbaarheid van de Dienaar onderstreept in plaats van enkel de zuiverheid van het recht."
+            }
+          ],
+          "werkvertaling_cruciaal": "Vers 1: 'Zie mijn dienaar, ik houd hem vast, mijn uitverkorene, in wie mijn ziel een welbehagen heeft; ik heb mijn Geest op hem gelegd, hij zal het recht (mishpat) naar de volkeren uitbrengen.'\n\nVers 3: 'Het geknakte riet zal hij niet breken en de kwijnende vlaspit zal hij niet doven; naar waarheid/trouw (le-emet) zal hij het recht doen uitgaan.'"
+        },
+        "tekstkritiek": {
+          "relevante_varianten": [
+            {
+              "vers": "42:1",
+              "variant": "Toevoeging 'Jacob' en 'Israel'",
+              "handschriften": "Septuaginta (LXX)",
+              "betekenis_impact": "De Septuaginta voegt de namen Jacob en Israël toe ('Jacob is mijn dienaar... Israël is mijn uitverkorene'), wat de Dienaar collectief identificeert met het volk. De Masoretische Tekst (BHS) laat dit open, wat ruimte biedt voor een individuele (messiaanse) duiding."
+            }
+          ],
+          "conclusie": "De tekst is tekstkritisch stabiel in de Hebreeuwse traditie. De belangrijkste discussie betreft de identificatie van de Dienaar, die door de Griekse vertaling explicieter collectief wordt gemaakt."
+        },
+        "woordstudie": [
+          {
+            "woord_origineel": "עֶבֶד",
+            "transliteratie": "ebed",
+            "vertaling": "dienaar / knecht",
+            "semantische_range": "Kan variëren van een slaaf zonder rechten tot een hooggeplaatste hoveling of gevolmachtigde van een koning.",
+            "gebruik_elders": "Wordt gebruikt voor Mozes, David en de profeten als eretitel voor hun specifieke relatie tot JHWH.",
+            "meerduidigheid": "In Deutero-Jesaja pendelt het woord tussen de collectieve identiteit van Israël en een individuele figuur die voor het volk lijdt of handelt."
+          },
+          {
+            "woord_origineel": "מִשְׁפָּט",
+            "transliteratie": "mishpat",
+            "vertaling": "recht / oordeel / verordening",
+            "semantische_range": "Niet slechts juridisch, maar de door God ingestelde orde die hersteld moet worden. Het omvat sociale gerechtigheid en de juiste verhouding tussen God en mens.",
+            "gebruik_elders": "Centraal thema in de profetische literatuur als aanklacht tegen sociaal onrecht.",
+            "meerduidigheid": "Kan zowel de daad van het rechtspreken als de inhoud van de goddelijke wet betekenen."
+          },
+          {
+            "woord_origineel": "רוּחַ",
+            "transliteratie": "ruach",
+            "vertaling": "geest / wind / adem",
+            "semantische_range": "De levenskracht of de bezielende kracht van God die mensen toerust voor een specifieke taak.",
+            "gebruik_elders": "In Jesaja 11 rust de ruach op de telg van Isaï; hier rust de ruach op de Dienaar om recht te brengen.",
+            "meerduidigheid": null
+          }
+        ],
+        "literaire_analyse": {
+          "genre": "profetie / poëzie",
+          "genre_conventies": "Gebruik van parallellisme en metaforiek. Dit is het eerste van de vier 'Liederen van de Dienaar' (Ebed-JHWH liederen).",
+          "structuur": {
+            "opbouw": "De perikoop bestaat uit twee delen: de presentatie van de Dienaar door JHWH (1-4) en de directe aanspraak van JHWH tot de Dienaar (6-7).",
+            "cesuren": [
+              "Na vers 4: Overgang van spreken OVER de dienaar naar spreken TOT de dienaar.",
+              "Na vers 1: De toerusting (Geest) versus de uitvoering (recht)."
+            ],
+            "centrum": "Vers 3: De paradoxale wijze waarop de Dienaar macht uitoefent (zachtmoedigheid).",
+            "chiasme_inclusio": "Inclusio rondom 'mishpat' (recht) in vers 1, 3 en 4."
+          },
+          "stijl_retoriek": {
+            "literaire_middelen": [
+              "Antithetisch parallellisme: De Dienaar brengt recht naar de volkeren (groot), maar doet dit zonder te schreeuwen (klein).",
+              "Metafoor: Het geknakte riet en de kwijnende vlaspit als beelden voor de kwetsbare mens of het uitgeputte volk."
+            ],
+            "retorische_strategie": "JHWH legitimeert de Dienaar tegenover een publiek (de volkeren/de ballingen) door zijn autoriteit te verbinden aan zachtmoedigheid in plaats van brute kracht.",
+            "effect_lezer": "Bemoediging voor de machtelozen (het geknakte riet) en een herdefinitie van wat ware macht is."
+          },
+          "karakters_plot": {
+            "personages": [
+              "JHWH (Spreker)",
+              "De Dienaar (Hoofdpersoon)",
+              "De volkeren/eilanden (Ontvangers)",
+              "De blinden/gevangenen (Doelgroep van bevrijding)"
+            ],
+            "karakterisering": "De Dienaar wordt getekend als iemand die volledig afhankelijk is van JHWH ('ik ondersteun hem') maar tegelijkertijd een universele missie heeft.",
+            "verhaallijn": null,
+            "verzwegen_gesuggereerd": "De identiteit van de Dienaar blijft mysterieus; is het de profeet zelf, de koning, of het lijdende volk?"
+          }
+        },
+        "structuralistische_analyse": {
+          "schema_constructie": {
+            "scenarios": [
+              {
+                "scène": "1. De Presentatie",
+                "tijd": "Onbepaald (profetisch heden)",
+                "plaats": "Hemels hof / Wereldtoneel",
+                "actant": "JHWH (Ik)",
+                "handeling": "ondersteunt (de dienaar), geeft (mijn geest), doet uitgaan (recht)",
+                "medewerker": [
+                  "De Dienaar (mijn uitverkorene)",
+                  "De Geest (ruach)"
+                ],
+                "opponent": []
+              },
+              {
+                "scène": "2. De Werkwijze",
+                "tijd": "Onbepaald",
+                "plaats": "Op straat / Publieke ruimte",
+                "actant": "De Dienaar (Hij)",
+                "handeling": "schreeuwt niet, maakt geen ophef, breekt niet (het riet), dooft niet (de vlaspit)",
+                "medewerker": [
+                  "Trouw (emet)"
+                ],
+                "opponent": [
+                  "Het geknakte riet (als object van zorg)",
+                  "De kwijnende vlaspit"
+                ]
+              },
+              {
+                "scène": "3. De Roeping",
+                "tijd": "Moment van roeping",
+                "plaats": "Kosmisch / Verbond",
+                "actant": "JHWH (Ik)",
+                "handeling": "roept, vat bij de hand, behoedt, bestemt (tot verbond/licht)",
+                "medewerker": [
+                  "Gerechtigheid (tsedeq)"
+                ],
+                "opponent": [
+                  "Duisternis (impliciet)",
+                  "Gevangenschap (impliciet)"
+                ]
+              }
+            ],
+            "schema_regels": "Het perspectief ligt bij JHWH die de Dienaar introduceert en instrueert."
+          },
+          "verticale_analyse": {
+            "tijd_plaats_patroon": "De tekst beweegt van de hemelse legitimatie naar de aardse straat en eindigt bij de 'verste kusten', wat een universele reikwijdte suggereert.",
+            "actanten_analyse": "JHWH is de primaire actant die de Dienaar 'zet' en 'geeft'. De Dienaar is de secundaire actant die de handelingen op aarde uitvoert.",
+            "handelingen_trajecten": "Twee trajecten: 1. Toerusting (ondersteunen, geven, roepen) en 2. Uitvoering (recht brengen, niet breken, ogen openen).",
+            "medewerkers_opponenten_analyse": "Opvallend is dat er geen actieve menselijke opponenten worden genoemd; de tegenstand zit in de toestand van de wereld (geknakt riet, blinden, kerker)."
+          },
+          "horizontale_analyse": {
+            "structurele_samenhang": "De scènes vormen een beweging van binnen (Gods behagen) naar buiten (licht voor de volkeren).",
+            "temporele_ontwikkeling": "Er is een logische volgorde: aanwijzing -> methode -> doel.",
+            "literaire_elementen": "Herhaling van 'recht' (mishpat) bindt de scènes samen.",
+            "karakteranalyse": "De autoriteit van de Dienaar is volledig afgeleid van JHWH's ondersteuning en de gave van de Geest.",
+            "evaluatieve_dimensie": "De tekst evalueert de methode van de Dienaar als superieur aan 'schreeuwen' of geweld."
+          },
+          "synthese_interpretatie": {
+            "centrale_thema_s": [
+              "Goddelijke legitimatie",
+              "Macht door zachtmoedigheid",
+              "Universele missie van rechtvaardigheid"
+            ],
+            "structurele_patroon": "Een 'investituur-structuur': God stelt een gevolmachtigde aan en definieert diens mandaat.",
+            "theologische_betekenis": "Ware gerechtigheid wordt niet opgelegd door dwang, maar groeit door de zorgvuldige omgang met het kwetsbare."
+          }
+        },
+        "theologische_analyse": {
+          "centrale_boodschap": "God presenteert een Dienaar die door de kracht van de Geest een nieuwe orde (recht) zal vestigen, niet door machtsvertoon maar door trouw aan de zwakken.",
+          "godsbeeld": "Een God die 'ondersteunt' en 'bij de hand vat'. Hij is de bron van de Geest en de initiator van het recht. Hij is betrokken bij de 'verste kusten'.",
+          "mensbeeld_wereld_heil": "De mens wordt gezien als kwetsbaar (geknakt riet) en gevangen (in het donker). Heil is de bevrijding uit deze situaties door het 'licht' van de Dienaar.",
+          "bijbels_theologische_lijnen": [
+            "Verbond: De Dienaar wordt zelf tot een verbond gesteld.",
+            "Pneumatologie: De Geest als toerusting voor gerechtigheid.",
+            "Missiologie: Het heil is bestemd voor alle volkeren."
+          ],
+          "plaats_heilsgeschiedenis": "Deze tekst markeert de hoop op herstel tijdens de ballingschap, waarbij de focus verschuift van de politieke koning naar de lijdende/dienende figuur.",
+          "spanning_andere_teksten": "Spanning met teksten waar JHWH als een strijder optreedt; hier is de strijd innerlijk en methodisch zachtmoedig.",
+          "dogmatische_raakvlakken": [
+            "Christologie (Jezus als de vervulling van de Dienaar)",
+            "Triniteitsleer (Vader die de Zoon zendt met de Geest)"
+          ],
+          "theologische_controverses": "De vraag of de Dienaar Israël is of een individu (Messias) blijft een klassiek exegetisch spanningsveld."
+        },
+        "zoekmodellen_snoek": {
+          "godsbeelden_ot": {
+            "werkwoordelijke_uitspraken": "JHWH ondersteunt, geeft zijn geest, roept, vat bij de hand, behoedt, bestemt.",
+            "metaforische_uitspraken": "God als de gever van licht en de bevrijder uit de kerker.",
+            "overstijgende_eigenschappen": "Almachtig in zijn vermogen om de geschiedenis te sturen en de Geest te geven; heilig in zijn roeping 'met recht-en-reden'.",
+            "toebuigende_eigenschappen": "Barmhartig en trouw, zichtbaar in de zorg voor het geknakte riet en de blinden.",
+            "dominante_categorie": "Toebuigende eigenschappen in combinatie met werkwoordelijke uitspraken.",
+            "spanning": "De spanning tussen de kosmische macht van God (die de Geest geeft) en de uiterst fijngevoelige zorg voor het kwetsbare.",
+            "relevantie_gemeente": "In een tijd van onzekerheid (zoals de Boskoopse kwekers die afhankelijk zijn van factoren buiten hun macht) biedt dit beeld van een ondersteunende God die 'bij de hand vat' diepe troost."
+          },
+          "mensbeelden_ot": {
+            "horizontale_as": "De mens wordt hier primair getekend als 'geknakt' of 'blind' (lijdend), maar de Dienaar is degene die 'goed doet' (gerechtigheid brengt).",
+            "verticale_as": "De Dienaar is volledig gericht op God (ontvangt de Geest) om dienstbaar te zijn aan de wereld (de volkeren).",
+            "personages_positie": "De mensheid bevindt zich in de positie van de 'ontvanger' van heil, terwijl de Dienaar de brug slaat tussen God en wereld.",
+            "karakterontwikkeling": "Geen karakterontwikkeling in de tekst zelf, maar een statische beschrijving van de roeping."
+          },
+          "jezusbeelden_nt": null
+        }
+      },
+      {
+        "referentie": "Matteüs 3,13-17",
+        "afbakening_vertaling": {
+          "vertaalvergelijking": [
+            {
+              "vertaling": "NBV21",
+              "significante_verschillen": "Vertaalt 'dikaiosynē' met 'gerechtigheid'. In vers 15 wordt 'apokritheis' vertaald met 'antwoordde', wat de dialoog vloeiend maakt. De stem uit de hemel zegt: 'in Hem vind Ik vreugde', wat een emotionele lading geeft."
+            },
+            {
+              "vertaling": "Naardense Bijbel",
+              "significante_verschillen": "Gebruikt 'Dán' (Tote) om de nadruk op het beslissende moment te leggen. Vertaalt vers 15 met 'zo past het ons alle gerechtigheid te vervullen', wat de nadruk legt op de gepastheid (prepon) van de handeling binnen Gods plan. De stem zegt: 'in wie ik welbehagen heb gekregen', wat directer linkt naar Jesaja 42:1."
+            }
+          ],
+          "werkvertaling_cruciaal": "Vers 15: 'Maar Jezus antwoordde hem: Laat het nu toe, want zo is het ons passend (prepon estin) om alle gerechtigheid (pasan dikaiosynēn) te vervullen.'\n\nVers 17: 'En zie, een stem uit de hemelen die zei: Deze is mijn Zoon, de geliefde (ho agapētos), in wie ik mijn welbehagen heb gesteld.'"
+        },
+        "tekstkritiek": {
+          "relevante_varianten": [
+            {
+              "vers": "3:16",
+              "variant": "Toevoeging 'voor hem' (autō)",
+              "handschriften": "Codex Sinaiticus, Vaticanus",
+              "betekenis_impact": "De toevoeging 'voor hem' suggereert dat de opening van de hemel en het neerdalen van de Geest primair een visioen voor Jezus zelf was, terwijl het weglaten ervan de gebeurtenis een meer publiek karakter geeft."
+            }
+          ],
+          "conclusie": "De tekst is zeer betrouwbaar overgeleverd. De varianten zijn minimaal en veranderen de kern van de boodschap niet."
+        },
+        "woordstudie": [
+          {
+            "woord_origineel": "δικαιοσύνη",
+            "transliteratie": "dikaiosynē",
+            "vertaling": "gerechtigheid",
+            "semantische_range": "In Matteüs betekent dit: het doen van de wil van God, het beantwoorden aan Gods eis, of het herstel van de juiste verhoudingen.",
+            "gebruik_elders": "Sleutelbegrip in de Bergrede (Matteüs 5:6, 20).",
+            "meerduidigheid": "Kan zowel Gods reddende handelen betekenen als de menselijke gehoorzaamheid daaraan."
+          },
+          {
+            "woord_origineel": "ἀγαπητός",
+            "transliteratie": "agapētos",
+            "vertaling": "geliefde / enige",
+            "semantische_range": "Duidt op een unieke, exclusieve liefdesrelatie. In de Septuaginta vaak gebruikt voor de 'enige' zoon (zoals Isaak).",
+            "gebruik_elders": "Bij de verheerlijking op de berg (Matteüs 17:5).",
+            "meerduidigheid": null
+          },
+          {
+            "woord_origineel": "εὐδόκησα",
+            "transliteratie": "eudokēsa",
+            "vertaling": "welbehagen hebben / verkiezen",
+            "semantische_range": "Een bewuste keuze maken voor iemand, vreugde vinden in iemand.",
+            "gebruik_elders": "Directe verwijzing naar de Ebed-JHWH teksten in Jesaja.",
+            "meerduidigheid": null
+          }
+        ],
+        "literaire_analyse": {
+          "genre": "narratief / epifanie-verhaal",
+          "genre_conventies": "Bevat typische elementen van een roeping of legitimatie: verschijning, hemels teken, stem.",
+          "structuur": {
+            "opbouw": "1. Komst van Jezus (13); 2. Dialoog met Johannes (14-15); 3. De doophandeling (16a); 4. De hemelse bevestiging (16b-17).",
+            "cesuren": [
+              "Tussen vers 15 en 16: Van dialoog naar handeling/gebeurtenis.",
+              "Tussen vers 16 en 17: Van visueel teken (duif) naar auditief teken (stem)."
+            ],
+            "centrum": "Vers 15: De verklaring van Jezus over het vervullen van de gerechtigheid.",
+            "chiasme_inclusio": null
+          },
+          "stijl_retoriek": {
+            "literaire_middelen": [
+              "Dialoog: Gebruikt om de paradox van de doop (de meerdere door de mindere) te verklaren.",
+              "Symboliek: Water (reiniging/nieuwe schepping), Duif (Geest/vrede), Stem (goddelijke autoriteit)."
+            ],
+            "retorische_strategie": "Matteüs overtuigt de lezer van Jezus' identiteit door zowel zijn gehoorzaamheid (aan de wet/Johannes) als zijn goddelijke status (stem uit de hemel) te tonen.",
+            "effect_lezer": "De lezer wordt getuige van de officiële 'inhuldiging' van Jezus' messiaanse werk."
+          },
+          "karakters_plot": {
+            "personages": [
+              "Jezus (Actant)",
+              "Johannes de Doper (Medewerker/Opponent)",
+              "De Geest van God (Teken)",
+              "De Vader (Stem)"
+            ],
+            "karakterisering": "Jezus is vastberaden en gehoorzaam. Johannes is bescheiden en erkent zijn mindere positie.",
+            "verhaallijn": "Conflict (Johannes weigert) -> Oplossing (Jezus legt uit) -> Climax (De doop en de stem).",
+            "verzwegen_gesuggereerd": "Wat Jezus voelde tijdens de doop wordt niet beschreven; de focus ligt volledig op de externe bevestiging."
+          }
+        },
+        "structuralistische_analyse": {
+          "schema_constructie": {
+            "scenarios": [
+              {
+                "scène": "1. De Ontmoeting",
+                "tijd": "Dán (Tote)",
+                "plaats": "Van Galilea naar de Jordaan",
+                "actant": "Jezus",
+                "handeling": "treedt aan, komt tot Johannes",
+                "medewerker": [],
+                "opponent": []
+              },
+              {
+                "scène": "2. Het Debat",
+                "tijd": "Onmiddellijk volgend",
+                "plaats": "Bij de Jordaan",
+                "actant": "Johannes (die Jezus tegenhoudt)",
+                "handeling": "houdt tegen, zegt (ik heb doop nodig)",
+                "medewerker": [],
+                "opponent": [
+                  "Jezus (als degene die gedoopt wil worden)"
+                ]
+              },
+              {
+                "scène": "3. De Beslissing",
+                "tijd": "Onmiddellijk volgend",
+                "plaats": "Bij de Jordaan",
+                "actant": "Jezus",
+                "handeling": "antwoordt, zegt (laat het toe), (wil) gerechtigheid vervullen",
+                "medewerker": [
+                  "Johannes (die uiteindelijk toelaat)"
+                ],
+                "opponent": []
+              },
+              {
+                "scène": "4. De Epifanie",
+                "tijd": "Zodra hij gedoopt was",
+                "plaats": "In/uit het water van de Jordaan",
+                "actant": "De Hemel / De Geest / De Stem",
+                "handeling": "worden geopend (hemelen), daalt neer (Geest), zegt (Stem)",
+                "medewerker": [
+                  "Jezus (als object van de handeling)"
+                ],
+                "opponent": []
+              }
+            ],
+            "schema_regels": "De actant verschuift van Jezus (die het initiatief neemt) naar de hemelse machten (die reageren op zijn gehoorzaamheid)."
+          },
+          "verticale_analyse": {
+            "tijd_plaats_patroon": "Een lineaire beweging naar het water toe, en een verticale beweging (hemel naar aarde) na de doop.",
+            "actanten_analyse": "Jezus is de actant van de gehoorzaamheid; God is de actant van de openbaring.",
+            "handelingen_trajecten": "Traject 1: Vernedering/Identificatie (komen, gedoopt worden). Traject 2: Verheerlijking (opstijgen, stem horen).",
+            "medewerkers_opponenten_analyse": "Johannes fungeert als een 'vriendelijke opponent' die door zijn protest de uniciteit van Jezus onderstreept."
+          },
+          "horizontale_analyse": {
+            "structurele_samenhang": "De dialoog in scène 2 is essentieel om de betekenis van de handeling in scène 3 en 4 te duiden.",
+            "temporele_ontwikkeling": "Zeer compacte, snelle opeenvolging van gebeurtenissen.",
+            "literaire_elementen": "De stem uit de hemel citeert Jesaja 42:1 en Psalm 2:7, wat de tekst verankert in de Schriften.",
+            "karakteranalyse": "Jezus ontleent zijn autoriteit aan zijn bereidheid om 'alle gerechtigheid' te vervullen, wat de weg opent voor de goddelijke bevestiging.",
+            "evaluatieve_dimensie": "De stem uit de hemel geeft de ultieme evaluatie van Jezus' persoon en daad."
+          },
+          "synthese_interpretatie": {
+            "centrale_thema_s": [
+              "Solidariteit met de mensheid",
+              "Vervulling van de Schriften",
+              "Trinitarische openbaring"
+            ],
+            "structurele_patroon": "Een overgangsritueel (rite de passage) waarbij Jezus zijn private leven verlaat en zijn publieke, door God bevestigde ambt aanvaardt.",
+            "theologische_betekenis": "De doop is geen reiniging van zonde voor Jezus, maar een daad van gerechtigheid: hij stelt zich op de plek waar God de mens wil ontmoeten."
+          }
+        },
+        "theologische_analyse": {
+          "centrale_boodschap": "In de doop identificeert Jezus zich met de weg van de mens en de wil van God, waarop God hem publiekelijk erkent als zijn geliefde Zoon en toerust met de Geest.",
+          "godsbeeld": "Een drie-enig Godbeeld: de Vader die spreekt, de Zoon die gehoorzaamt, de Geest die verbindt. God is een God die de hemel opent en communiceert.",
+          "mensbeeld_wereld_heil": "Heil begint bij solidariteit. Jezus staat in het water van de zondaars om hen daaruit op te trekken. De mens is iemand die door God 'geliefd' genoemd kan worden in Christus.",
+          "bijbels_theologische_lijnen": [
+            "Nieuwe Schepping: De Geest boven het water herinnert aan Genesis 1.",
+            "Exodus: De doop als een doortocht door het water naar een nieuw begin.",
+            "Koningschap: De zalving (met de Geest) tot koning/dienaar."
+          ],
+          "plaats_heilsgeschiedenis": "Het scharnierpunt tussen de voorbereiding (Johannes) en de vervulling (Jezus).",
+          "spanning_andere_teksten": "Spanning met de algemene doop van Johannes (tot bekering); Jezus' doop is 'tot gerechtigheid'.",
+          "dogmatische_raakvlakken": [
+            "Christologie (twee naturen: de mens die gedoopt wordt, de Zoon die beleden wordt)",
+            "Triniteit",
+            "Sacramentologie (de instelling/heiliging van de doop)"
+          ],
+          "theologische_controverses": "Waarom moest de zondeloze Jezus gedoopt worden? Matteüs lost dit op door de dialoog over de 'gerechtigheid'."
+        },
+        "zoekmodellen_snoek": {
+          "godsbeelden_ot": null,
+          "mensbeelden_ot": null,
+          "jezusbeelden_nt": {
+            "van_achteren": "Jezus is de Jood die de gerechtigheid van de Wet en de Profeten (Jesaja) vervult. Hij staat in de lijn van de lijdende Dienaar.",
+            "van_boven": "De stem uit de hemel en de neerdalende Geest bevestigen zijn goddelijke identiteit als 'Zoon van God'. De geopende hemel duidt op zijn herkomst en bestemming.",
+            "van_beneden": "Hij is de mens die van Galilea naar de Jordaan reist, die in de rij staat bij Johannes, en die fysiek het water in gaat. Hij deelt de menselijke conditie.",
+            "van_voren": "Zijn doop is de start van het Koninkrijk dat nabij is. Hij is de 'geliefde' in wie God zijn plan voor de toekomst van de wereld realiseert.",
+            "dominant_perspectief": "De spanning tussen 'van beneden' (de doop) en 'van boven' (de stem) is het hart van deze perikoop.",
+            "spanning_godheid_mensheid": "De tekst laat zien dat Jezus' goddelijke zoon-zijn niet losstaat van zijn menselijke gehoorzaamheid. Juist in de vernedering van de doop wordt zijn heerlijkheid zichtbaar.",
+            "betekenis_hoorders_nu": "Voor de hoorder in Boskoop betekent dit dat God niet op afstand blijft, maar in het 'water' van ons dagelijks bestaan (met al zijn zorgen en werk) aanwezig is. Onze identiteit ligt niet in wat wij presteren, maar in het 'geliefd zijn' dat Jezus voor ons heeft ontsloten."
+          }
+        }
+      }
+    ],
+    "samenhang_lezingen": {
+      "rode_draad": "De rode draad is de publieke aanwijzing en toerusting van de Gezondene van God. In beide teksten is er sprake van de Geest die op de Dienaar/Zoon rust en de goddelijke bevestiging van diens missie om recht te brengen.",
+      "versterkingen": [
+        "Matteüs citeert Jesaja 42 direct ('welbehagen'), waardoor Jezus expliciet wordt geïdentificeerd als de Dienaar die het geknakte riet niet zal breken.",
+        "Beide teksten benadrukken dat de missie niet door machtsvertoon (niet schreeuwen op straat) maar door gehoorzaamheid en zachtmoedigheid wordt volbracht."
+      ],
+      "correcties": [
+        "Waar Jesaja nog spreekt over een mysterieuze Dienaar, geeft Matteüs deze figuur een concreet gezicht en een naam: Jezus van Nazaret.",
+        "De 'gerechtigheid' uit Jesaja (mishpat) krijgt bij Matteüs een diepere invulling: het is niet alleen een sociale orde, maar een persoonlijke relatie van zoon-zijn en gehoorzaamheid."
+      ]
+    }
+  },
+  "09_kunst_cultuur": {
+    "moderne_hedendaagse_kunst": [
+      {
+        "titel": "Emergence",
+        "kunstenaar": "Bill Viola",
+        "jaar": 2002,
+        "type": "videokunst",
+        "beschrijving": "Een high-definition video-installatie waarin twee vrouwen bij een marmeren waterbak (een sarcofaag of bron) staan. Plotseling rijst er een jonge man op uit het water, overvloedig morsend, waarna de vrouwen hem teder opvangen en neerleggen. Het werk is gefilmd in extreme slow-motion.",
+        "verbining_tekst": "Dit werk verbeeldt de doop niet als een statisch ritueel, maar als een fysieke en overweldigende 'opstanding' uit het water. Het sluit aan bij Matteüs 3:16 ('klimt hij meteen uit het water op') en benadrukt de kwetsbaarheid van de menselijke natuur die door God wordt aangeraakt.",
+        "verrassend_element": "Hoewel geïnspireerd door een fresco van Masolino, haalt Viola het religieuze beeld uit de dogmatische sfeer en maakt het universeel menselijk. De traagheid dwingt de kijker tot een meditatieve blik op de kracht van water.",
+        "zoekterm": "Bill Viola Emergence 2002 video art"
+      },
+      {
+        "titel": "Walking on Water",
+        "kunstenaar": "Makoto Fujimura",
+        "jaar": 2011,
+        "type": "schilderij",
+        "beschrijving": "Een grootschalig abstract werk gemaakt met de traditionele Japanse Nihonga-techniek (verpulverde mineralen en goud op papier). Het toont gelaagde blauwe en zilveren texturen die de beweging en diepte van water suggereren, met een lichtval die van bovenaf lijkt te komen.",
+        "verbining_tekst": "Het werk opent de spirituele dimensie van Psalm 29 ('de stem van de Heer boven de wateren'). De abstractie voorkomt dat de doop een 'plaatje' wordt en nodigt uit om de aanwezigheid van de Geest (de lichtval) in de chaos van het water te ervaren.",
+        "verrassend_element": "Fujimura verbindt de Japanse esthetiek van 'leegte' met de christelijke vulling van genade. Voor een Boskoopse hoorder, gewend aan functioneel water, biedt dit een esthetische herwaardering van het element.",
+        "zoekterm": "Makoto Fujimura Walking on Water painting"
+      },
+      {
+        "titel": "The Baptism of Christ",
+        "kunstenaar": "Daniel Mitsui",
+        "jaar": 2013,
+        "type": "digitaal",
+        "beschrijving": "Een uiterst gedetailleerde pentekening in een stijl die middeleeuwse manuscripten combineert met Japanse houtsnedekunst (Ukiyo-e). Jezus staat in een gestileerde Jordaan vol vissen, terwijl de Geest als een geometrische duif neerdaalt.",
+        "verbining_tekst": "Mitsui brengt de 'gerechtigheid' uit Matteüs 3:15 in beeld door een kosmische orde te tekenen. Alles in de schepping (vissen, planten, water) lijkt geordend rondom dit ene moment van de doop.",
+        "verrassend_element": "De combinatie van stijlen doorbreekt de westerse dominantie in de christelijke kunst, wat een visuele echo is van Handelingen 10:34 ('God maakt geen onderscheid tussen mensen').",
+        "zoekterm": "Daniel Mitsui Baptism of Christ ink drawing"
+      },
+      {
+        "titel": "Baptism of Jesus",
+        "kunstenaar": "He Qi",
+        "jaar": 2001,
+        "type": "schilderij",
+        "beschrijving": "Een kleurrijk, modern werk in een stijl die doet denken aan glas-in-lood en Chinese volkskunst. De lijnen zijn vloeiend en de kleuren (blauw, geel, wit) zijn helder en vreugdevol.",
+        "verbining_tekst": "Dit werk benadrukt het feestelijke karakter van Epifanie. De duif en de stem lijken bijna tastbaar in de compositie aanwezig. Het sluit aan bij de 'vreugde' die in de liturgische context van deze zondag centraal staat.",
+        "verrassend_element": "De niet-westerse gelaatstrekken van Jezus dagen de traditionele Boskoopse beeldvorming uit en versterken de boodschap van Handelingen 10 dat het heil voor alle volkeren is.",
+        "zoekterm": "He Qi Baptism of Jesus contemporary art"
+      }
+    ],
+    "klassieke_christelijke_kunst": [
+      {
+        "titel": "De doop van Christus",
+        "kunstenaar": "Piero della Francesca",
+        "jaar": "1448-1450",
+        "type": "schilderij",
+        "locatie": "National Gallery, Londen",
+        "beschrijving": "Een sereen en geometrisch perfect opgebouwd schilderij. Jezus staat centraal, Johannes de Doper giet water over zijn hoofd. De duif hangt roerloos boven hem. Op de achtergrond zijn figuren te zien die zich uitkleden voor de doop.",
+        "verbining_tekst": "De onverstoorbare rust van dit werk weerspiegelt de 'Dienaar' uit Jesaja 42 die niet schreeuwt of ophef maakt. De heldere lichtinval symboliseert de 'verschijning' (Epifanie) van de goddelijke identiteit.",
+        "zoekterm": "Piero della Francesca Baptism of Christ National Gallery"
+      },
+      {
+        "titel": "Icoon van de Theofanie (Doop van de Heer)",
+        "kunstenaar": "Anoniem (Kretenzische School)",
+        "jaar": "16e eeuw",
+        "type": "icoon",
+        "locatie": "Diverse kloosters, o.a. Athos",
+        "beschrijving": "Jezus staat naakt in de Jordaan, die vaak wordt afgebeeld als een smalle kloof. Aan de ene kant staat Johannes, aan de andere kant engelen met doeken. Bovenin is een halve cirkel (de hemel) waaruit stralen neerkomen op de duif.",
+        "verbining_tekst": "De icoon toont de 'Trinitarische' openbaring: de stem van de Vader (de cirkel), de Geest (de duif) en de Zoon. Dit helpt om de abstracte formule van de Drie-eenheid visueel te maken voor de gemeente.",
+        "zoekterm": "Theophany Icon Orthodox Baptism of Christ"
+      },
+      {
+        "titel": "De doop van Christus",
+        "kunstenaar": "Paolo Veronese",
+        "jaar": "ca. 1580",
+        "type": "schilderij",
+        "locatie": "Palazzo Pitti, Florence",
+        "beschrijving": "Een dynamisch barokwerk met veel beweging in de wolken en de kleding. De hemel opent zich spectaculair met een schare engelen, terwijl het licht direct op Jezus valt.",
+        "verbining_tekst": "Dit werk verbeeldt de 'kracht' (dynamis) waarover Petrus spreekt in Handelingen 10:38. Het laat zien dat de doop geen louter symbolische handeling is, maar een gebeurtenis die de hemel openscheurt.",
+        "zoekterm": "Paolo Veronese Baptism of Christ Pitti"
+      }
+    ],
+    "film_documentaire": [
+      {
+        "titel": "Moonlight",
+        "regisseur": "Barry Jenkins",
+        "jaar": 2016,
+        "type": "speelfilm",
+        "relevante_scene": {
+          "beschrijving": "De scène waarin de jonge Chiron door zijn surrogaatvader Juan in de oceaan wordt geleerd hoe hij moet drijven. Juan houdt hem teder vast in het water en zegt: 'Op een gegeven moment moet je zelf beslissen wie je wilt zijn'.",
+          "tijdcode": "00:20:00",
+          "wat_opent_het": "Dit fragment raakt aan de kern van identiteit en 'geadopteerd' zijn. Het biedt een krachtig modern beeld bij de stem uit de hemel: 'Dit is mijn geliefde zoon'. Het laat zien hoe een vaderfiguur identiteit verleent in het water."
+        },
+        "zoekterm": "Moonlight 2016 Barry Jenkins ocean scene"
+      },
+      {
+        "titel": "The Tree of Life",
+        "regisseur": "Terrence Malick",
+        "jaar": 2011,
+        "type": "arthouse",
+        "relevante_scene": {
+          "beschrijving": "De 'Creation' sequentie waarin de oorsprong van het leven en de kracht van de elementen (water, licht, cellen) wordt getoond op de muziek van Zbigniew Preisner.",
+          "tijdcode": "00:25:00",
+          "wat_opent_het": "Het visualiseert de majesteit van God boven de wateren uit Psalm 29. Het verbindt de doop van Jezus aan de kosmische schepping: de Geest die boven de wateren zweefde bij het begin, daalt nu neer op de nieuwe mens."
+        },
+        "zoekterm": "The Tree of Life 2011 Terrence Malick grace vs nature"
+      },
+      {
+        "titel": "The Chosen",
+        "regisseur": "Dallas Jenkins",
+        "jaar": 2017,
+        "type": "televisieserie",
+        "relevante_scene": {
+          "beschrijving": "De scènes waarin Johannes de Doper Jezus ontmoet en de voorbereiding op de doop. De serie legt sterk de nadruk op de menselijke interactie en de aarzeling van Johannes.",
+          "tijdcode": "Seizoen 1",
+          "wat_opent_het": "Voor een confessionele gemeente als in Boskoop maakt dit de bijbeltekst zeer toegankelijk en invoelbaar. Het laat de 'gerechtigheid' van Jezus zien in zijn keuze om zich te voegen naar de menselijke orde."
+        },
+        "zoekterm": "The Chosen Dallas Jenkins baptism scene"
+      },
+      {
+        "titel": "Babette's Feast",
+        "regisseur": "Gabriel Axel",
+        "jaar": 1987,
+        "type": "speelfilm",
+        "relevante_scene": {
+          "beschrijving": "De scène waarin de generaal spreekt over genade: 'Genade vraagt niets van ons, behalve dat we haar met vertrouwen afwachten en met dankbaarheid aanvaarden'.",
+          "tijdcode": "01:30:00",
+          "wat_opent_het": "Het verbindt de 'verschijning of Gods genade' uit Titus 2 met de praktijk van het dagelijks leven. Het laat zien hoe genade (zoals bij de doop) een gemeenschap kan transformeren."
+        },
+        "zoekterm": "Babette's Feast 1987 Gabriel Axel IMDB"
+      }
+    ],
+    "muziek": {
+      "hedendaags": [
+        {
+          "titel": "The Transfiguration",
+          "artiest": "Sufjan Stevens",
+          "jaar": 2004,
+          "genre": "indie folk",
+          "verbinding": "Hoewel de titel verwijst naar de verheerlijking op de berg, bezingt het lied de stem uit de wolk en de openbaring van Jezus' identiteit op een breekbare, indringende wijze die past bij de 'Dienaar' uit Jesaja.",
+          "zoekterm": "Sufjan Stevens The Transfiguration Seven Swans"
+        },
+        {
+          "titel": "River",
+          "artiest": "Leon Bridges",
+          "jaar": 2015,
+          "genre": "soul/gospel",
+          "verbinding": "Een lied over overgave, reiniging en de rivier als plek van verlossing. De tekst 'Take me to your river, I want to go' resoneert met het verlangen naar de doop als een nieuw begin.",
+          "zoekterm": "Leon Bridges River official video"
+        }
+      ],
+      "klassiek": [
+        {
+          "titel": "Christ unser Herr zum Jordan kam",
+          "componist": "Johann Sebastian Bach",
+          "type": "cantate",
+          "specifiek_deel": "BWV 7",
+          "verbinding": "Specifiek geschreven voor het feest van Johannes de Doper, maar tekstueel volledig gericht op de doop van Jezus en de betekenis van het water. De golvende bewegingen in de strijkers verklanken de Jordaan.",
+          "zoekterm": "Bach Cantata BWV 7 Christ unser Herr zum Jordan kam"
+        },
+        {
+          "titel": "De Profundis",
+          "componist": "Arvo Pärt",
+          "type": "koorwerk",
+          "specifiek_deel": null,
+          "verbinding": "De diepe, sonore klanken roepen het beeld op van de 'watervloeden' uit Psalm 29 en de diepte waaruit de mens tot God roept, passend bij een meditatief moment over de doop.",
+          "zoekterm": "Arvo Pärt De Profundis choir"
+        }
+      ],
+      "liturgisch": [
+        {
+          "titel": "Listen to the Word which God has spoken",
+          "bron": "Iona Community",
+          "gebruik": "Lied bij de lezingen",
+          "verbinding": "Een kort, herhaalbaar lied dat de gemeente voorbereidt op het horen van de 'Stem' uit de hemel.",
+          "zoekterm": "Iona Community Listen to the Word which God has spoken"
+        }
+      ]
+    },
+    "literatuur": {
+      "modern": [
+        {
+          "titel": "Gilead",
+          "auteur": "Marilynne Robinson",
+          "jaar": 2004,
+          "type": "roman",
+          "thematische_resonantie": "De oude predikant John Ames reflecteert op de schoonheid van de doop en het 'zien' van de ander als een geliefd kind van God. Het boek ademt de sfeer van de 'Dienaar' die het geknakte riet niet breekt.",
+          "zoekterm": "Marilynne Robinson Gilead 2004 novel"
+        }
+      ],
+      "klassiek": [
+        {
+          "titel": "De idioot",
+          "auteur": "Fjodor Dostojevski",
+          "jaar": "1869",
+          "thematische_resonantie": "Prins Mysjkin belichaamt de 'onschuld' en de 'Dienaar' die door de world niet begrepen wordt. Zijn verschijning in de Russische samenleving werkt als een spiegel, vergelijkbaar met de verschijning van Christus.",
+          "zoekterm": "Dostojevski De idioot thema genade"
+        }
+      ],
+      "nederlands": [
+        {
+          "titel": "De Wandelaar",
+          "auteur": "Adriaan van Dis",
+          "jaar": 2007,
+          "thematische_resonantie": "Een man vindt een nieuwe identiteit en roeping door een toevallige ontmoeting met een hond en de wereld van vluchtelingen. Het raakt aan het thema van Handelingen 10: het doorbreken van eigen grenzen en het zien van de ander.",
+          "zoekterm": "Adriaan van Dis De Wandelaar 2007"
+        },
+        {
+          "titel": "Het water komt",
+          "auteur": "Rutger Bregman",
+          "jaar": 2020,
+          "thematische_resonantie": "Dit essay over de stijgende zeespiegel en de Nederlandse strijd tegen het water is zeer relevant voor Boskoop. Het verbindt de existentiële dreiging van water met de noodzaak van een nieuwe visie (roeping).",
+          "zoekterm": "Rutger Bregman Het water komt De Correspondent"
+        }
+      ]
+    },
+    "aansluiting_gemeente": {
+      "geschiktheid_traditie": "De keuze voor Bach en Piero della Francesca sluit naadloos aan bij de waardering voor traditie en orde in de Dorpskerk. De hedendaagse kunst van Fujimura en Mitsui biedt een veilige maar vernieuwende brug door hun focus op vakmanschap en schoonheid.",
+      "sociaal_culturele_fit": "De beelden van water (Viola, Bregman) resoneren sterk met de Boskoopse kwekersidentiteit. Het thema 'identiteit boven prestatie' (Moonlight, Robinson) biedt een noodzakelijk pastoraal tegenwicht voor de lokale werkethiek.",
+      "praktische_overwegingen": [
+        "Gebruik de abstracte werken (Fujimura) voor verstilling.",
+        "Gebruik de narratieve werken (The Chosen, Mitsui) voor de uitleg aan kinderen en jongeren.",
+        "Let op de nuchterheid: vermijd te sentimentele beelden; kies voor de 'aardse' kwaliteit van de voorgestelde kunst."
+      ]
+    },
+    "praktische_handvatten": {
+      "voor_projectie": [
+        {
+          "kunstwerk": "Piero della Francesca - De doop van Christus",
+          "liturgisch_moment": "Tijdens de schriftlezing van Matteüs 3",
+          "duur": "Gedurende de gehele lezing",
+          "zoekterm_hoge_resolutie": "Piero della Francesca Baptism of Christ high resolution"
+        },
+        {
+          "kunstwerk": "Makoto Fujimura - Walking on Water",
+          "liturgisch_moment": "Tijdens het zingen van Psalm 29",
+          "duur": "3-4 minuten",
+          "zoekterm_hoge_resolutie": "Makoto Fujimura Walking on Water high res"
+        }
+      ],
+      "voor_meditatie": {
+        "aanbevolen_werk": "Bill Viola - Emergence (still of kort fragment)",
+        "duur_tonen": "2 minuten in stilte na de preek",
+        "muziek_erbij": "Arvo Pärt - De Profundis"
+      },
+      "rechten": {
+        "publiek_domein": [
+          "Piero della Francesca",
+          "Paolo Veronese",
+          "Traditionele iconen"
+        ],
+        "creative_commons": [
+          "He Qi (vaak beschikbaar voor kerkelijk gebruik met bronvermelding)",
+          "The Chosen (vrij te delen fragmenten via hun app)"
+        ],
+        "let_op": [
+          "Bill Viola",
+          "Makoto Fujimura",
+          "Daniel Mitsui (vraagt meestal kleine vergoeding voor projectie)"
+        ]
+      }
+    }
+  },
+  "10_focus_en_functie": {
+    "opties": [
+      {
+        "nummer": 1,
+        "korte_titel": "Identiteit boven prestatie: Gedoopt tot geliefd kind",
+        "type_insteek": "pastoraal",
+        "focus": "Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in Boskoop, Dorpskerk), in hun context, in deze dienst zeggen dat de stem uit de hemel bij de doop van Jezus (\"Dit is mijn geliefde Zoon\") de fundamentele waarheid onthult dat onze identiteit als kind van God voorafgaat aan alles wat wij presteren, kweken of verhandelen, en dat dit een bevrijdend tegenwicht biedt aan de Boskoopse prestatiecultuur en de recente schok van de stalbrand in Waarder die de kwetsbaarheid van ons harde werken onderstreept.",
+        "anticipatie": "De hoorders zullen zich hiertoe verhouden als een boodschap die enerzijds diepe herkenning en verlichting oproept bij hen die gebukt gaan onder de druk van de sierteeltsector of persoonlijke tegenslag, maar anderzijds op nuchtere weerstand kan stuiten bij degenen die gewend zijn hun eigenwaarde te ontlenen aan hun inzet en morele standvastigheid, wat de vraag oproept of genade niet te 'gemakkelijk' wordt als er geen directe tegenprestatie tegenover staat.",
+        "anticipatie_analyse": {
+          "weerstand": "Mogelijke scepsis bij de 'harde werkers' die vrezen dat de nadruk op onverdiende identiteit de werkethiek of de noodzaak van een heilig leven ondermijnt.",
+          "herkenning": "Grote herkenning bij jonge gezinnen en ondernemers die de constante druk van 'moeten' ervaren en snakken naar een fundament dat niet wankelt bij economische tegenspoed.",
+          "vragen": [
+            "Mag ik er echt 'zijn' als mijn bedrijf of mijn leven niet aan de Boskoopse norm voldoet?",
+            "Hoe verhoudt Gods welbehagen zich tot het concrete lijden, zoals de brand in Waarder?"
+          ]
+        },
+        "functie": "...waarmee ik rekening houd om te komen tot het doel dat de hoorders de rust en de moed vinden om het nieuwe jaar 2026 in te gaan vanuit de wetenschap dat zij 'geliefd' zijn nog voordat zij een spade in de grond hebben gestoken, waardoor de kramp van het moeten presteren plaatsmaakt voor een dankbaar en ontspannen leven uit genade.",
+        "toelichting": "Deze insteek sluit aan bij de pastorale behoefte in een ondernemersgemeenschap waar succes en zegen vaak met elkaar verward worden. Het verbindt de doop direct met de existentiële behoefte aan erkenning."
+      },
+      {
+        "nummer": 2,
+        "korte_titel": "Geen aanzien des persoons: De radicale openheid van de Geest",
+        "type_insteek": "profetisch",
+        "focus": "Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in Boskoop, Dorpskerk), in hun context, in deze dienst zeggen dat de verklaring van Petrus in Handelingen 10 (\"God maakt geen onderscheid\") en de presentatie van de Dienaar in Jesaja 42 de gemeente uitdagen om de grenzen van de eigen 'ons-kent-ons' cultuur te doorbreken en Gods gerechtigheid zichtbaar te maken in de omgang met de 'onzichtbare' naasten in het dorp, zoals arbeidsmigranten en buitenstaanders, juist in een tijd van politieke polarisatie en discussies over asielopvang.",
+        "anticipatie": "De hoorders zullen zich hiertoe verhouden als een confronterende boodschap die schuurt met de natuurlijke neiging tot behoud van de eigen dorpsidentiteit en sociale controle, waarbij vragen zullen rijzen over de politieke kleur van de preek en de angst voor het verlies van het vertrouwde Boskoopse karakter, terwijl er tegelijkertijd een geweten wordt aangesproken dat weet dat het evangelie geen muren kent.",
+        "anticipatie_analyse": {
+          "weerstand": "Defensieve reacties vanuit een gevoel dat de eigen gemeenschap al genoeg onder druk staat (fusie met Alphen, stikstofregels) en geen behoefte heeft aan 'moralistische' vermaningen over inclusiviteit.",
+          "herkenning": "Herkenning van de bijbelse opdracht tot naastenliefde en de nuchtere constatering dat de sierteeltsector niet zonder de 'vreemdeling' kan bestaan.",
+          "vragen": [
+            "Hoe verhoudt de openheid van de kerk zich tot de veiligheid en identiteit van ons dorp?",
+            "Wat betekent 'geen onderscheid maken' concreet op de werkvloer van de kwekerij?"
+          ]
+        },
+        "functie": "...waarmee ik rekening houd om te komen tot het doel dat de hoorders geprikkeld worden om hun blikveld te verruimen en in de komende week een concrete stap zetten naar iemand buiten hun vertrouwde kring, waardoor de Dorpskerk een vindplaats van hoop wordt voor heel Boskoop, zonder aanzien des persoons.",
+        "toelichting": "Deze optie benut de scherpe kanten van Handelingen 10 en Jesaja 42 om de gemeente uit haar comfortzone te halen, passend bij de profetische roeping van de kerk in een veranderende samenleving."
+      },
+      {
+        "nummer": 3,
+        "korte_titel": "Gezalfd voor het gewone werk: De Geest in de modder van de Jordaan",
+        "type_insteek": "toerustend",
+        "focus": "Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in Boskoop, Dorpskerk), in hun context, in deze dienst zeggen dat Jezus door zijn doop in de Jordaan de weg van de 'gerechtigheid' kiest door zich volledig solidair te verklaren met de gebroken werkelijkheid, en dat wij door onze doop gezalfd zijn met diezelfde Geest om in ons dagelijks werk als kweker, handelaar of zorgverlener 'het geknakte riet niet te verbreken' maar Gods koninkrijk tastbaar te maken in de nuchtere praktijk van 2026.",
+        "anticipatie": "De hoorders zullen zich hiertoe verhouden als een praktische en nuchtere benadering van het geloof die goed aansluit bij de Boskoopse mentaliteit van 'aanpakken', maar die ook vragen oproept over hoe de Heilige Geest dan concreet werkt in een wereld die gedomineerd wordt door economische wetten, online fraude en harde concurrentie.",
+        "anticipatie_analyse": {
+          "weerstand": "Moeite met de 'geestelijke' terminologie (zalving, Geest) als deze te abstract blijft en niet direct vertaald wordt naar de modder van de dagelijkse praktijk.",
+          "herkenning": "Herkenning van de roeping (vocation) in het eigen vakmanschap; de waardering voor Jezus die 'niet schreeuwt op straat' maar trouw zijn werk doet.",
+          "vragen": [
+            "Hoe kan ik in een harde handelswereld de zachtmoedigheid van de Dienaar bewaren?",
+            "Wat heeft de doop van Jezus te maken met mijn dagelijkse beslissingen op de kwekerij?"
+          ]
+        },
+        "functie": "...waarmee ik rekening houd om te komen tot het doel dat de hoorders hun dagelijks werk en hun plek in de gemeenschap gaan zien als een door God gegeven ambt, waardoor zij zich toegerust voelen om met de kracht van de Geest op een integere en dienende wijze hun verantwoordelijkheid te dragen.",
+        "toelichting": "Deze insteek verbindt de trinitarische aspecten van de doop (Vader, Zoon, Geest) met de ethiek van het dagelijks leven, wat zeer passend is voor de overgang van de kersttijd naar de tijd van het jaar waarin weer 'gewerkt' moet worden."
+      }
+    ]
+  },
+  "11_kalender": {
+    "week_van": "11-17 januari 2026",
+    "dagen": [
+      {
+        "datum": "Zondag 11 januari 2026",
+        "dag": "zondag",
+        "is_preekzondag": true,
+        "kerkelijk": [
+          {
+            "naam": "Doop van de Heer (Baptisma Domini)",
+            "type": "zondag",
+            "toelichting": "Eerste zondag na Epifanie. Gedachtenis van de doop van Jezus in de Jordaan en het begin van zijn publieke optreden."
+          },
+          {
+            "naam": "H. Theodosius de Coenobiarch",
+            "type": "heilige",
+            "toelichting": "Abt en stichter van het gemeenschappelijke monnikenleven in Palestina († 529). Patroon tegen kanker."
+          },
+          {
+            "naam": "H. Paulinus van Aquileia",
+            "type": "heilige",
+            "toelichting": "Theoloog en patriarch van Aquileia, raadsman van Karel de Grote († 802)."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "22 Tevet 5786",
+          "feestdag": null,
+          "parasja": "Vayechi (reeds gelezen op 10 januari)",
+          "toelichting": "De week begint na de afsluiting van het boek Genesis in de synagoge."
+        },
+        "internationaal": [],
+        "nationaal": [],
+        "vakantie": {
+          "schoolvakantie": null,
+          "regio": null
+        },
+        "weer": {
+          "verwachting": "Weersverwachting nog niet beschikbaar (huidige datum: 22 december 2025).",
+          "temperatuur": null,
+          "neerslag": null,
+          "bijzonderheden": null
+        },
+        "astronomie": {
+          "zonsopgang": "08:44",
+          "zonsondergang": "16:51",
+          "maanfase": "Laatste kwartier (afnemend naar Nieuwe Maan op 19 januari)",
+          "bijzonderheden": "De zonkracht is minimaal; de dagen lengen inmiddels met ongeveer 2 minuten per dag."
+        },
+        "overig": [
+          {
+            "categorie": "historisch",
+            "naam": "Oorlogsverklaring Japan aan Nederland (1942)",
+            "toelichting": "Op 11 januari 1942 verklaarde Japan de oorlog aan Nederland en begon de invasie van Nederlands-Indië (Tarakan)."
+          }
+        ]
+      },
+      {
+        "datum": "Maandag 12 januari 2026",
+        "dag": "maandag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "H. Tatiana van Rome",
+            "type": "martelaar",
+            "toelichting": "Diacones in de vroege kerk, gemarteld onder keizer Alexander Severus († ca. 226)."
+          },
+          {
+            "naam": "H. Benedictus Biscop",
+            "type": "heilige",
+            "toelichting": "Angelsaksische abt en stichter van de abdijen van Wearmouth en Jarrow; beschermheilige van musici en schilders († 690)."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "23 Tevet 5786",
+          "feestdag": null,
+          "parasja": null,
+          "toelichting": null
+        },
+        "internationaal": [],
+        "nationaal": [],
+        "vakantie": {
+          "schoolvakantie": null,
+          "regio": null
+        },
+        "weer": {
+          "verwachting": null,
+          "temperatuur": null,
+          "neerslag": null,
+          "bijzonderheden": null
+        },
+        "astronomie": {
+          "zonsopgang": null,
+          "zonsondergang": null,
+          "maanfase": null,
+          "bijzonderheden": null
+        },
+        "overig": []
+      },
+      {
+        "datum": "Dinsdag 13 januari 2026",
+        "dag": "dinsdag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "H. Hilarius van Poitiers",
+            "type": "heilige",
+            "toelichting": "Bisschop en Kerkvader, bekend als de 'Hamer tegen de Arianen' vanwege zijn verdediging van de godheid van Christus († 367)."
+          },
+          {
+            "naam": "H. Remigius van Reims",
+            "type": "heilige",
+            "toelichting": "Bisschop die de Frankische koning Clovis doopte, wat leidde tot de kerstening van West-Europa († 533)."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "24 Tevet 5786",
+          "feestdag": null,
+          "parasja": null,
+          "toelichting": null
+        },
+        "internationaal": [],
+        "nationaal": [],
+        "vakantie": {
+          "schoolvakantie": null,
+          "regio": null
+        },
+        "weer": {
+          "verwachting": null,
+          "temperatuur": null,
+          "neerslag": null,
+          "bijzonderheden": null
+        },
+        "astronomie": {
+          "zonsopgang": null,
+          "zonsondergang": null,
+          "maanfase": null,
+          "bijzonderheden": null
+        },
+        "overig": []
+      },
+      {
+        "datum": "Woensdag 14 januari 2026",
+        "dag": "woensdag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "H. Nina (Christiana)",
+            "type": "heilige",
+            "toelichting": "Slavin die door haar gebed en genezingen Georgië tot het christendom bracht († ca. 335)."
+          },
+          {
+            "naam": "H. Felix van Nola",
+            "type": "martelaar",
+            "toelichting": "Priester die tijdens christenvervolgingen op wonderbaarlijke wijze ontsnapte († ca. 250)."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "25 Tevet 5786",
+          "feestdag": null,
+          "parasja": null,
+          "toelichting": null
+        },
+        "internationaal": [
+          {
+            "naam": "World Logic Day",
+            "organisatie": "UNESCO",
+            "relevantie": "Dag ter bevordering van de logica als discipline die essentieel is voor de ontwikkeling van kennis en wetenschap."
+          }
+        ],
+        "nationaal": [],
+        "vakantie": {
+          "schoolvakantie": null,
+          "regio": null
+        },
+        "weer": {
+          "verwachting": null,
+          "temperatuur": null,
+          "neerslag": null,
+          "bijzonderheden": null
+        },
+        "astronomie": {
+          "zonsopgang": null,
+          "zonsondergang": null,
+          "maanfase": null,
+          "bijzonderheden": null
+        },
+        "overig": []
+      },
+      {
+        "datum": "Donderdag 15 januari 2026",
+        "dag": "donderdag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "H. Paulus van Thebe",
+            "type": "heilige",
+            "toelichting": "Traditioneel beschouwd als de eerste heremiet die zich in de woestijn terugtrok († ca. 341)."
+          },
+          {
+            "naam": "H. Arnold Janssen",
+            "type": "heilige",
+            "toelichting": "Duits priester en stichter van de Missionarissen van Steyl (SVD) († 1909)."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "26 Tevet 5786",
+          "feestdag": null,
+          "parasja": null,
+          "toelichting": null
+        },
+        "internationaal": [],
+        "nationaal": [],
+        "vakantie": {
+          "schoolvakantie": null,
+          "regio": null
+        },
+        "weer": {
+          "verwachting": null,
+          "temperatuur": null,
+          "neerslag": null,
+          "bijzonderheden": null
+        },
+        "astronomie": {
+          "zonsopgang": null,
+          "zonsondergang": null,
+          "maanfase": null,
+          "bijzonderheden": null
+        },
+        "overig": []
+      },
+      {
+        "datum": "Vrijdag 16 januari 2026",
+        "dag": "vrijdag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "H. Marcellus I",
+            "type": "martelaar",
+            "toelichting": "Paus die de kerk reorganiseerde na de vervolgingen van Diocletianus en stierf in ballingschap († 309)."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "27 Tevet 5786",
+          "feestdag": null,
+          "parasja": null,
+          "toelichting": null
+        },
+        "internationaal": [
+          {
+            "naam": "Religious Freedom Day",
+            "organisatie": "Anders",
+            "relevantie": "Herdenking van de aanname van de Virginia Statute for Religious Freedom, vaak internationaal aangegrepen om aandacht te vragen voor godsdienstvrijheid."
+          }
+        ],
+        "nationaal": [],
+        "vakantie": {
+          "schoolvakantie": null,
+          "regio": null
+        },
+        "weer": {
+          "verwachting": null,
+          "temperatuur": null,
+          "neerslag": null,
+          "bijzonderheden": null
+        },
+        "astronomie": {
+          "zonsopgang": null,
+          "zonsondergang": null,
+          "maanfase": null,
+          "bijzonderheden": null
+        },
+        "overig": []
+      },
+      {
+        "datum": "Zaterdag 17 januari 2026",
+        "dag": "zaterdag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "H. Antonius Abt (Antonius van Egypte)",
+            "type": "heilige",
+            "toelichting": "Vader van het monnikendom en heremiet in de Egyptische woestijn. Patroon van de veehouders en tegen besmettelijke ziekten († 356)."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "28 Tevet 5786",
+          "feestdag": null,
+          "parasja": "Shemot (Exodus 1:1-6:1)",
+          "toelichting": "Begin van het boek Exodus. De geboorte van Mozes en de roeping bij de brandende braamstruik."
+        },
+        "internationaal": [],
+        "nationaal": [
+          {
+            "naam": "Nationale Tulpendag",
+            "land": "NL",
+            "type": "traditie"
+          }
+        ],
+        "vakantie": {
+          "schoolvakantie": null,
+          "regio": null
+        },
+        "weer": {
+          "verwachting": null,
+          "temperatuur": null,
+          "neerslag": null,
+          "bijzonderheden": null
+        },
+        "astronomie": {
+          "zonsopgang": null,
+          "zonsondergang": null,
+          "maanfase": null,
+          "bijzonderheden": null
+        },
+        "overig": [
+          {
+            "categorie": "lokaal",
+            "naam": "Start Tulpenseizoen in de Sierteelt",
+            "toelichting": "Als centrum van de boomkwekerij en sierteelt is de Nationale Tulpendag (3e zaterdag van januari) een relevant moment voor de Boskoopse ondernemers."
+          }
+        ]
+      }
+    ],
+    "aandachtspunten_predikant": [
+      "De zondag markeert de 'Doop van de Heer', wat een krachtige verbinding legt met de identiteit van de gelovige als 'geliefd kind'.",
+      "In de synagoge begint op zaterdag 17 januari het boek Exodus (Shemot). De thema's van onderdrukking, roeping en bevrijding kunnen een interessante parallel vormen met de doop als bevrijding.",
+      "De Nationale Tulpendag op zaterdag 17 januari is zeer relevant voor de Boskoopse context; het thema van 'nieuw leven' en 'bloei' in de winter kan homiletisch benut worden.",
+      "De herdenking van Hilarius van Poitiers (13 jan) en zijn verdediging van de Triniteit sluit aan bij de openbaring van Vader, Zoon en Geest bij de doop in de Jordaan.",
+      "Antonius Abt (17 jan) als patroon van veehouders kan een pastoraal aanknopingspunt zijn voor de agrarische sector in de regio, zeker na recente incidenten zoals stalbranden."
+    ]
+  },
+  "12_representatieve_hoorders": {
+    "personas": [
+      {
+        "nummer": 1,
+        "naam": {
+          "voornaam": "Thijs",
+          "achternaam": "van der Spek"
+        },
+        "leeftijd": 19,
+        "kernschets": "Een zoekende student die op zaterdagen in de boomkwekerij werkt en zijn traditionele opvoeding probeert te rijmen met een digitale, geglobaliseerde wereld.",
+        "basisgegevens": {
+          "fysieke_verschijning": "1.92m, atletisch gebouwd door het werk op de kwekerij, kort blond haar, draagt vaak een hoodie en stevige werkschoenen, heldere blauwe ogen.",
+          "woonwijk": "Waterrijk, Boskoop (nieuwbouwwijk)"
+        },
+        "relaties_sociaal": {
+          "woonsituatie": "thuiswonend",
+          "relatiestatus": "single",
+          "kinderen": "geen",
+          "familie_relatie": "Goede band met zijn ouders, hoewel hij zich soms verstikt voelt door hun verwachtingen. Heeft een jongere zus die minder met de kerk heeft.",
+          "sociaal_netwerk": "Actief bij SV Floreant, een hechte vriendengroep van de middelbare school, veel contact via Discord en Instagram. Voelt zich soms een buitenbeentje in de kerk."
+        },
+        "opleiding_werk": {
+          "opleiding": "HBO Tuinbouw & Agribusiness (2e jaars)",
+          "intelligentie_leerstijl": "Visueel en praktisch ingesteld; leert het beste door te doen en te zien.",
+          "huidige_werk": "Zaterdaghulp bij een grote exportkwekerij, verantwoordelijk voor het verzendklaar maken van bestellingen.",
+          "voormalig_werk": null,
+          "financiele_situatie": "Stabiel door bijbaan en studiefinanciering, maar maakt zich zorgen over de toekomstige huizenmarkt in Boskoop."
+        },
+        "gezondheid": {
+          "lichamelijk": "Kerngezond, sport drie keer per week, geen medicijngebruik.",
+          "mentaal": "Ervaart prestatiedruk vanuit de studie en sociale media; twijfelt vaak of hij wel 'goed genoeg' is.",
+          "leefstijl": "Drinkt in het weekend graag een biertje met vrienden, let op voeding maar houdt van een vette hap na het voetballen."
+        },
+        "traumas_zorgen": {
+          "verleden": [
+            "Het plotselinge overlijden van een teamgenoot bij SV Floreant twee jaar geleden."
+          ],
+          "heden": [
+            "Klimaatverandering en de impact daarvan op de sector waarin hij wil gaan werken.",
+            "De polarisatie in de samenleving die hij online ziet."
+          ],
+          "onverwerkt": "Het gevoel dat hij in de kerk een masker op moet zetten en niet zijn echte twijfels kan delen."
+        },
+        "geloof_spiritualiteit": {
+          "kerkelijke_achtergrond": "Hervormd opgevoed, gedoopt als baby, vorig jaar belijdenis gedaan (vooral om zijn opa te plezieren).",
+          "huidige_betrokkenheid": "Bezoekt de Dorpskerk bijna elke zondag, helpt soms bij de techniek/beamer.",
+          "geloofsbeleving": "Ervaart God vooral in de natuur en tijdens diepe gesprekken, minder in de traditionele liturgie.",
+          "geloofstaal": "Houdt van eerlijke, rauwe taal; heeft moeite met 'vrome' woorden die niet landen in de praktijk.",
+          "twijfels_vragen": [
+            "Is de Bijbel nog wel relevant in 2026?",
+            "Waarom zwijgt God als er zoveel onrecht is?"
+          ],
+          "spirituele_behoeften": "Authenticiteit en een boodschap die hem helpt om in het dagelijks leven een goed mens te zijn."
+        },
+        "hobbys_interesses": {
+          "vrijetijd": [
+            "Voetbal",
+            "Gaming",
+            "Mountainbiken in het Groene Hart"
+          ],
+          "media": [
+            "YouTube (tech en natuur)",
+            "NOS app",
+            "Spotify podcasts over psychologie"
+          ],
+          "verenigingen": [
+            "SV Floreant",
+            "Lid van de christelijke studentenvereniging in Delft"
+          ]
+        },
+        "aansluiting_schriftlezingen": {
+          "wat_raakt": "De stem uit de hemel: 'Dit is mijn geliefde Zoon'. In een wereld van 'likes' en prestaties is onvoorwaardelijke acceptatie een krachtig concept.",
+          "wat_afstoot": "De plechtige taal van Psalm 29 over de 'majesteit van de stem' voelt voor hem wat bombastisch en ver weg.",
+          "existentiele_vraag": "Wie ben ik als ik niet presteer, en ziet God mij ook als ik twijfel?"
+        }
+      },
+      {
+        "nummer": 2,
+        "naam": {
+          "voornaam": "Linda",
+          "achternaam": "Hoogeveen-de Bruin"
+        },
+        "leeftijd": 42,
+        "kernschets": "Een hardwerkende onderneemster en moeder die de druk van het familiebedrijf en de zorg voor haar gezin probeert te balanceren met haar geloof.",
+        "basisgegevens": {
+          "fysieke_verschijning": "1.70m, slank, praktisch kort kapsel (donkerblond), draagt vaak een spijkerbroek met een nette blazer, altijd een horloge om omdat ze op de tijd moet letten.",
+          "woonwijk": "Kwekerswoning aan de Zijde, Boskoop"
+        },
+        "relaties_sociaal": {
+          "woonsituatie": "zelfstandig (koopwoning bij de kwekerij)",
+          "relatiestatus": "getrouwd",
+          "kinderen": "drie kinderen (10, 13 en 15 jaar)",
+          "familie_relatie": "Werkt dagelijks samen met haar man en haar gepensioneerde vader in het bedrijf; dit geeft soms spanningen over de koers van de kwekerij.",
+          "sociaal_netwerk": "Veel contact met andere kwekersvrouwen, actief in de ouderraad van de basisschool, weinig tijd voor diepe vriendschappen buiten de sector."
+        },
+        "opleiding_werk": {
+          "opleiding": "HBO Bedrijfskunde",
+          "intelligentie_leerstijl": "Analytisch en resultaatgericht; houdt van heldere structuren en praktische oplossingen.",
+          "huidige_werk": "Mede-eigenaar van een boomkwekerij, verantwoordelijk voor de administratie, personeelszaken en verkoop.",
+          "voormalig_werk": "Intercedent bij een uitzendbureau.",
+          "financiele_situatie": "Redelijk inkomen, maar grote zorgen over de stijgende energiekosten en de investeringen die nodig zijn voor verduurzaming."
+        },
+        "gezondheid": {
+          "lichamelijk": "Vaak last van haar rug door het vele zitten en incidenteel meehelpen op het land, gebruikt af en toe pijnstillers.",
+          "mentaal": "Hoog stressniveau, ligt 's nachts vaak te piekeren over de zaak; randje van burn-out.",
+          "leefstijl": "Probeert gezond te koken voor het gezin, maar schiet er zelf vaak bij in; drinkt te veel koffie."
+        },
+        "traumas_zorgen": {
+          "verleden": [
+            "Een bijna-faillissement van het bedrijf tijdens de energiecrisis van enkele jaren geleden."
+          ],
+          "heden": [
+            "De regeldruk vanuit de overheid (stikstof, waterkwaliteit).",
+            "De puberteit van haar oudste zoon die zich afzet tegen de kerk."
+          ],
+          "onverwerkt": "Het gevoel dat ze nooit genoeg doet, zowel in het bedrijf als voor haar kinderen."
+        },
+        "geloof_spiritualiteit": {
+          "kerkelijke_achtergrond": "Confessioneel opgevoed, altijd trouw gebleven aan de Dorpskerk.",
+          "huidige_betrokkenheid": "Bezoekt de diensten wanneer het werk het toelaat (vaak 3x per maand), diaken geweest in het verleden.",
+          "geloofsbeleving": "Geloof is voor haar een moreel kompas en een bron van rust, hoewel die rust vaak ontbreekt.",
+          "geloofstaal": "Houdt van termen als 'rentmeesterschap' en 'trouw'; heeft minder met mystiek.",
+          "twijfels_vragen": [
+            "Hoe kan ik een christelijk bedrijf runnen in een harde markt?",
+            "Luistert God wel naar mijn gebeden voor rust?"
+          ],
+          "spirituele_behoeften": "Bemoediging en praktische handvatten om haar geloof te integreren in een druk leven."
+        },
+        "hobbys_interesses": {
+          "vrijetijd": [
+            "Tuinieren (voor de ontspanning)",
+            "Lezen van historische romans",
+            "Wandelen met de hond"
+          ],
+          "media": [
+            "AD Groene Hart",
+            "Vakblad Boomkwekerij",
+            "LinkedIn voor zakelijke contacten"
+          ],
+          "verenigingen": [
+            "Lid van de lokale ondernemersvereniging"
+          ]
+        },
+        "aansluiting_schriftlezingen": {
+          "wat_raakt": "Jesaja 42 over de Dienaar die het geknakte riet niet verbreekt. Dit spreekt haar aan in haar eigen kwetsbaarheid en vermoeidheid.",
+          "wat_afstoot": "De doop van Jezus voelt soms als een ver-van-mijn-bed-show; ze vindt het lastig om de symboliek van water te verbinden aan haar dagelijkse strijd met waterkwaliteit op de kwekerij.",
+          "existentiele_vraag": "Mag ik ook zwak zijn in een wereld die alleen maar om kracht en groei vraagt?"
+        }
+      },
+      {
+        "nummer": 3,
+        "naam": {
+          "voornaam": "Gerrit Jan",
+          "achternaam": "van Vliet"
+        },
+        "leeftijd": 78,
+        "kernschets": "Een gepensioneerde kweker en weduwnaar die zijn identiteit ontleent aan de geschiedenis van Boskoop en de vaste tradities van de Dorpskerk.",
+        "basisgegevens": {
+          "fysieke_verschijning": "1.75m, licht voorovergebogen loopje, verweerde handen met diepe groeven, grijs haar dat altijd netjes gekamd is, draagt op zondag steevast een donkerblauw pak.",
+          "woonwijk": "Omgeving Roemer, Boskoop (historisch lint)"
+        },
+        "relaties_sociaal": {
+          "woonsituatie": "zelfstandig (woont nog in het oude kwekershuis)",
+          "relatiestatus": "weduwnaar",
+          "kinderen": "twee dochters, beiden wonen buiten Boskoop; vier kleinkinderen.",
+          "familie_relatie": "Ziet zijn kinderen en kleinkinderen eens per twee weken; mist zijn vrouw dagelijks.",
+          "sociaal_netwerk": "Veel contact met andere gepensioneerde kwekers bij de 'koffieclub', trouwe bezoeker van de ouderenmiddagen in de kerk. Voelt zich soms eenzaam in het grote huis."
+        },
+        "opleiding_werk": {
+          "opleiding": "Lagere Tuinbouwschool",
+          "intelligentie_leerstijl": "Zeer praktisch en ervaringsdeskundig; kent elke plant en elke sloot in Boskoop.",
+          "huidige_werk": "Gepensioneerd, maar houdt nog een kleine moestuin bij en adviseert zijn neef die de kwekerij heeft overgenomen.",
+          "voormalig_werk": "Zelfstandig boomkweker (gespecialiseerd in coniferen).",
+          "financiele_situatie": "Goed pensioen en eigen huis, geen financiële zorgen."
+        },
+        "gezondheid": {
+          "lichamelijk": "Beginnende artrose in de knieën, gehoorapparaat, gebruikt medicijnen voor hoge bloeddruk.",
+          "mentaal": "Soms wat somber door het gemis van zijn vrouw, maar vindt troost in zijn geloof en de routine van de dag.",
+          "leefstijl": "Eet elke dag om 12:00 uur warm, wandelt elke middag een rondje langs de Gouwe."
+        },
+        "traumas_zorgen": {
+          "verleden": [
+            "Het overlijden van zijn vrouw aan kanker, vijf jaar geleden.",
+            "De grote watersnood in de polder in zijn jeugd."
+          ],
+          "heden": [
+            "De achteruitgang van de kerkelijke betrokkenheid onder de jeugd.",
+            "De angst om zijn zelfstandigheid te verliezen."
+          ],
+          "onverwerkt": "Het verdriet dat geen van zijn kinderen de kwekerij wilde overnemen."
+        },
+        "geloof_spiritualiteit": {
+          "kerkelijke_achtergrond": "Gereformeerde Bond signatuur, opgegroeid met de Statenvertaling, waardeert nu de NBV21 maar mist de oude taal soms.",
+          "huidige_betrokkenheid": "Elke zondag aanwezig, zit altijd op dezelfde plek, trouwe gever aan de diaconie.",
+          "geloofsbeleving": "God is voor hem de Almachtige Schepper en de getrouwe Verbondsgod. De doop is voor hem het fundament van zijn leven.",
+          "geloofstaal": "Klassiek: genade, verbond, rechtvaardiging, voorzienigheid.",
+          "twijfels_vragen": [
+            "Zal ik mijn vrouw terugzien in de hemel?",
+            "Heeft de kerk nog wel een toekomst in dit dorp?"
+          ],
+          "spirituele_behoeften": "Bevestiging van Gods trouw door de generaties heen en troost in zijn ouderdom."
+        },
+        "hobbys_interesses": {
+          "vrijetijd": [
+            "Heemkunde (geschiedenis van Boskoop)",
+            "Puzzelen",
+            "Klassieke muziek (orgel)"
+          ],
+          "media": [
+            "Reformatorisch Dagblad",
+            "Nederland Zingt (EO)",
+            "Lokale krant"
+          ],
+          "verenigingen": [
+            "Historische Vereniging Boskoop",
+            "PCOB"
+          ]
+        },
+        "aansluiting_schriftlezingen": {
+          "wat_raakt": "Psalm 29 over de stem van de Heer boven de wateren. Dit roept bij hem ontzag op en herinnert hem aan de kracht van de natuur en God.",
+          "wat_afstoot": "Handelingen 10 over het 'geen onderscheid maken' vindt hij soms lastig te rijmen met zijn behoefte aan de eigen identiteit van de hervormde gemeente.",
+          "existentiele_vraag": "Is Gods belofte bij mijn doop nog steeds geldig, nu ik aan het einde van mijn leven kom?"
+        }
+      },
+      {
+        "nummer": 4,
+        "naam": {
+          "voornaam": "Marek",
+          "achternaam": "Kowalski"
+        },
+        "leeftijd": 36,
+        "kernschets": "Een in Polen geboren logistiek medewerker die via de sierteelt in Boskoop is blijven hangen en nu probeert zijn plek te vinden in de lokale gemeenschap.",
+        "basisgegevens": {
+          "fysieke_verschijning": "1.82m, stevig postuur, donker haar dat kortgeschoren is, vaak een vriendelijke maar wat afwachtende blik, draagt praktische werkkleding van zijn werkgever.",
+          "woonwijk": "Centrum Boskoop (huurappartement nabij de Hefbrug)"
+        },
+        "relaties_sociaal": {
+          "woonsituatie": "samenwonend",
+          "relatiestatus": "relatie met een Nederlandse vrouw (Boskoopse)",
+          "kinderen": "geen, maar wel een kinderwens.",
+          "familie_relatie": "Zijn ouders en broer wonen nog in Polen; hij bezoekt hen twee keer per jaar. Voelt zich soms verscheurd tussen twee werelden.",
+          "sociaal_netwerk": "Veel contact met andere Poolse arbeidsmigranten op het werk, maar probeert via zijn vriendin meer te integreren in het Boskoopse verenigingsleven."
+        },
+        "opleiding_werk": {
+          "opleiding": "MBO Logistiek (in Polen afgerond)",
+          "intelligentie_leerstijl": "Praktisch en oplossingsgericht; spreekt inmiddels goed Nederlands, maar vindt abstracte taal lastig.",
+          "huidige_werk": "Teamleider logistiek bij een groot distributiecentrum voor planten.",
+          "voormalig_werk": "Seizoensarbeider in de kassen.",
+          "financiele_situatie": "Stabiel inkomen, spaart veel om ooit een eigen huis te kunnen kopen."
+        },
+        "gezondheid": {
+          "lichamelijk": "Sterk en fit, maar heeft soms last van zijn schouders door het zware tillen.",
+          "mentaal": "Voelt zich soms een buitenstaander ('de Pool'); ervaart soms subtiele discriminatie in het dorp.",
+          "leefstijl": "Rookt af en toe, houdt van stevig eten uit de Poolse keuken, wandelt graag door het veenlandschap."
+        },
+        "traumas_zorgen": {
+          "verleden": [
+            "De moeilijke beginjaren in Nederland met slechte huisvesting en uitbuiting door een malafide uitzendbureau."
+          ],
+          "heden": [
+            "De acceptatie door de familie van zijn vriendin.",
+            "De politieke situatie in zijn moederland."
+          ],
+          "onverwerkt": "Het schuldgevoel dat hij zijn ouders in Polen heeft achtergelaten."
+        },
+        "geloof_spiritualiteit": {
+          "kerkelijke_achtergrond": "Rooms-Katholiek opgevoed in Polen, maar gaat nu met zijn vriendin mee naar de Dorpskerk.",
+          "huidige_betrokkenheid": "Bezoekt de dienst ongeveer twee keer per maand, vindt de protestantse soberheid nog steeds wennen.",
+          "geloofsbeleving": "Geloof is voor hem verbonden met traditie, familie en Maria-verering, wat hij in de Dorpskerk mist.",
+          "geloofstaal": "Houdt van visuele symbolen en rituelen; vindt de lange preken soms moeilijk te volgen.",
+          "twijfels_vragen": [
+            "Hoor ik hier wel echt bij?",
+            "Is God overal hetzelfde, of ik nu in Polen of in Boskoop ben?"
+          ],
+          "spirituele_behoeften": "Een gevoel van welkom en de bevestiging dat hij als 'vreemdeling' ook een kind van God is."
+        },
+        "hobbys_interesses": {
+          "vrijetijd": [
+            "Vissen in de Boskoopse sloten",
+            "Koken",
+            "Auto's opknappen"
+          ],
+          "media": [
+            "Poolse nieuwswebsites",
+            "Facebookgroepen voor Polen in Nederland",
+            "YouTube (doe-het-zelf video's)"
+          ],
+          "verenigingen": [
+            "Lid van een lokale visclub"
+          ]
+        },
+        "aansluiting_schriftlezingen": {
+          "wat_raakt": "Handelingen 10:34: 'God maakt geen onderscheid tussen mensen'. Dit is voor hem de meest bevrijdende boodschap die hij kan horen.",
+          "wat_afstoot": "De oudtestamentische beelden in Jesaja 42 over de 'Dienaar' vindt hij abstract en lastig te plaatsen.",
+          "existentiele_vraag": "Word ik door God en deze gemeenschap echt gezien als een gelijke?"
+        }
+      },
+      {
+        "nummer": 5,
+        "naam": {
+          "voornaam": "Jannie",
+          "achternaam": "Verweij"
+        },
+        "leeftijd": 58,
+        "kernschets": "Een toegewijde zorgmedewerker en vrijwilliger die de 'geknakte rieten' in het dorp ziet en haar geloof vertaalt in praktische naastenliefde.",
+        "basisgegevens": {
+          "fysieke_verschijning": "1.65m, gezet postuur, vriendelijk rond gezicht, draagt een bril met een kleurrijk montuur, vaak vrolijke kleding die haar optimisme weerspiegelt.",
+          "woonwijk": "Snijdelwijk, Boskoop (jaren '70 wijk)"
+        },
+        "relaties_sociaal": {
+          "woonsituatie": "zelfstandig",
+          "relatiestatus": "gescheiden",
+          "kinderen": "twee volwassen zonen die elders wonen.",
+          "familie_relatie": "Zorgt als mantelzorger voor haar hoogbejaarde moeder in zorgcentrum De Zijloever; heeft een moeizame relatie met haar ex-man.",
+          "sociaal_netwerk": "Spil in de buurt, kent iedereen in de straat, veel vriendinnen binnen de kerkelijke gemeente."
+        },
+        "opleiding_werk": {
+          "opleiding": "MBO Verpleegkunde",
+          "intelligentie_leerstijl": "Empathisch en intuïtief; leert door te luisteren naar de verhalen van mensen.",
+          "huidige_werk": "Verzorgende IG in de ouderenzorg (De Zijloever), werkt veel onregelmatige diensten.",
+          "voormalig_werk": "Kraamverzorgster.",
+          "financiele_situatie": "Bescheiden inkomen, moet goed op de kleintjes letten na haar scheiding."
+        },
+        "gezondheid": {
+          "lichamelijk": "Last van vermoeidheid door de onregelmatige diensten, beginnende suikerziekte (type 2).",
+          "mentaal": "Groot inlevingsvermogen, maar loopt het risico zichzelf weg te cijferen voor anderen.",
+          "leefstijl": "Probeert meer te bewegen door te wandelen, maar vindt gezond eten lastig als ze moe is."
+        },
+        "traumas_zorgen": {
+          "verleden": [
+            "Een pijnlijke scheiding tien jaar geleden die haar wereldbeeld deed wankelen.",
+            "Het verlies van een kindje tijdens de zwangerschap, lang geleden."
+          ],
+          "heden": [
+            "De toenemende eenzaamheid onder de ouderen voor wie ze zorgt.",
+            "De gezondheid van haar moeder."
+          ],
+          "onverwerkt": "Het gevoel van falen rondom haar huwelijk, wat in de kerkelijke gemeenschap soms nog als een taboe voelt."
+        },
+        "geloof_spiritualiteit": {
+          "kerkelijke_achtergrond": "Hervormd opgevoed, altijd actief geweest in het jeugdwerk en nu bij de Kliederkerk.",
+          "huidige_betrokkenheid": "Bezoekt de diensten trouw (behalve bij werkdiensten), actief in de bezoekgroep van de kerk.",
+          "geloofsbeleving": "God is voor haar een nabije God, een trooster. Jezus is haar voorbeeld in het omzien naar de kwetsbaren.",
+          "geloofstaal": "Houdt van woorden als 'nabijheid', 'zorg', 'licht' en 'omzien'.",
+          "twijfels_vragen": [
+            "Waarom is er zoveel lijden bij mensen die zo hun best doen?",
+            "Heeft God ook een plan met mijn leven na de scheiding?"
+          ],
+          "spirituele_behoeften": "Nieuwe kracht om te kunnen blijven geven en de bevestiging dat zijzelf ook 'geliefd' is, niet alleen om wat ze doet."
+        },
+        "hobbys_interesses": {
+          "vrijetijd": [
+            "Handwerken (breien voor goede doelen)",
+            "Lezen van spirituele boeken",
+            "Koffie drinken met buurvrouwen"
+          ],
+          "media": [
+            "EO Visie",
+            "Omroep West",
+            "Facebook voor contact met familie"
+          ],
+          "verenigingen": [
+            "Vrijwilliger bij de Voedselbank"
+          ]
+        },
+        "aansluiting_schriftlezingen": {
+          "wat_raakt": "Jesaja 42:3: 'Het geknakte riet zal hij niet verbreken'. Dit is de kern van haar werk en haar eigen levenservaring.",
+          "wat_afstoot": "De 'stem uit de hemel' voelt voor haar soms wat te spectaculair; zij vindt God eerder in de stille, kleine gebaren.",
+          "existentiele_vraag": "Wie zorgt er voor mij als ik altijd voor anderen zorg, en ben ik ook zonder mijn 'nuttigheid' waardevol voor God?"
+        }
+      }
+    ]
+  },
+  "13_homiletische_analyse": {
+    "tekstkeuze": {
+      "gekozen_lezing": "Matteüs 3,13-17",
+      "onderbouwing": "Deze tekst vormt het hart van de zondag 'Doop van de Heer' en biedt de scherpste homiletische spanning voor een narratieve benadering. De ontmoeting tussen Jezus en Johannes de Doper bevat een intrinsiek conflict over orde, hiërarchie en 'gerechtigheid'. Voor een gemeente in Boskoop, waar hard werken en een nuchtere 'doe-maar-gewoon' mentaliteit de norm zijn, snijdt de vraag van Johannes ('Ik heb het nodig door U gedoopt te worden, en U komt naar mij?') diep in op het menselijk besef van verdienste en positie. De tekst biedt een krachtige 'reversal' in vers 15, waar Jezus de menselijke logica van wie boven wie staat omkeert om 'alle gerechtigheid te vervullen'. Dit opent de weg naar een radicale herdefinitie van identiteit die niet gebaseerd is op prestatie, maar op de stem van de Vader.",
+      "omkerings_potentie": "De potentie ligt in de omkering van de hiërarchie (de Meester die zich onderwerpt aan de dienaar) en de omkering van de definitie van 'gerechtigheid' (niet het handhaven van de wet of status, maar het afdalen in de menselijke realiteit)."
+    },
+    "homiletical_plot": {
+      "he_kwestie_oops": {
+        "titel": "HÈ? (OOPS!) - De Kwestie",
+        "doel": "De 'homiletische jeuk' moet binnen 2-3 minuten de jeuk van de hoorder worden",
+        "inhoud": "Het is 11 januari 2026. De kerstverlichting in Boskoop is opgeruimd, de nuchtere winterse werkelijkheid is teruggekeerd. We staan aan de oever van de Jordaan, maar we hadden evengoed aan de kade van de Gouwe kunnen staan. Er gebeurt iets wat simpelweg niet klopt. Jezus, van wie we net gehoord hebben dat Hij de Koning is, de Zoon van God, sluit achteraan in de rij bij Johannes. Hij staat daar tussen de mensen die weten dat ze het niet gered hebben, de mensen die 'reiniging' nodig hebben. \n\nJohannes de Doper verwoordt precies wat wij voelen: 'Dit kan niet. De rollen moeten omgedraaid zijn.' Het is de verstoring van onze natuurlijke orde. Wij houden van helderheid: de kweker staat boven de knecht, de leraar boven de leerling, en God zeker boven de zondaar. Als Jezus daar in het water stapt, vervaagt die grens. Het roept een diepe ambiguïteit op: als de Volmaakte zich laat dopen met een doop van bekering, wat zegt dat dan over onze eigen pogingen om 'het goed te doen'? Het voelt ongemakkelijk, alsof de fundering van ons morele bouwwerk begint te schuiven. We voelen ons 'dakloos' in onze overtuiging dat iedereen krijgt wat hij verdient.",
+        "ambiguiteit": "De morele en religieuze hiërarchie wordt doorbroken; de grens tussen de Heilige en de zondaar vervaagt in het water van de Jordaan.",
+        "existentiele_onrust": "De angst dat onze zorgvuldig opgebouwde orde en verdienste er bij God niet toe doen op de manier waarop wij dat dachten.",
+        "specifiek_voor_context": "In Boskoop, waar 'handen uit de mouwen' en 'je plek kennen' kernwaarden zijn, is een God die 'onderaan' begint een provocatie van de lokale werkethiek."
+      },
+      "oei_verdieping_ugh": {
+        "titel": "OEI... (UGH!) - De Verdieping",
+        "doel": "De diagnose stellen - analyseren, niet slechts beschrijven",
+        "waarom_keten": [
+          {
+            "vraag": "Waarom hebben we moeite met Jezus die achteraan aansluit?",
+            "antwoord": "Omdat het onze behoefte aan een duidelijke hiërarchie en verdienste doorkruist."
+          },
+          {
+            "vraag": "Waarom hechten we zo sterk aan die hiërarchie?",
+            "antwoord": "Omdat het ons een gevoel van controle geeft; we weten waar we aan toe zijn als we hard werken."
+          },
+          {
+            "vraag": "Waarom hebben we die controle zo hard nodig?",
+            "antwoord": "Omdat we diep van binnen bang zijn dat we zonder onze prestaties (de kwekerij, de kerkelijke inzet) niet 'gezien' worden."
+          },
+          {
+            "vraag": "Wat doet die angst met ons?",
+            "antwoord": "Het maakt ons hard voor onszelf en oordelend naar anderen die 'niet meekomen'."
+          }
+        ],
+        "conclusie_keten": "Onze weerstand tegen Jezus' doop is een masker voor onze existentiële onzekerheid: we durven niet te geloven dat we geliefd zijn zonder eerst iets gepresteerd te hebben.",
+        "inhoud": "We graven dieper. Waarom voelt die doop van Jezus zo 'verkeerd'? Omdat wij in Boskoop leven van de wet van oorzaak en gevolg. Als je goed voor je gewas zorgt, groeit het. Als je hard werkt, verdien je respect. We hebben die logica doorgetrokken naar ons geloof. We proberen 'gerechtigheid' te vervullen door onze uiterste best te doen. Maar dat creëert een enorme druk. \n\nOnder die 'nuchtere' Boskoopse buitenkant zit vaak een diepe vermoeidheid. De angst om door de mand te vallen, de angst dat als de oogst mislukt of de gezondheid hapert, we onze waarde verliezen. We zijn als het 'geknakte riet' uit Jesaja, maar we durven de knak niet te laten zien. We houden de schijn op van de sterke eik. De diagnose is pijnlijk: onze vroomheid en onze werkethiek zijn soms een vluchtroute geworden om de radicale genade van God niet onder ogen te hoeven komen. Want genade betekent dat we de controle moeten loslaten. En dat is het laatste wat een ondernemende Boskoper wil.",
+        "dit_gaat_over_mij": "De hoorder herkent de innerlijke stem die zegt: 'Ik moet het eerst bewijzen voordat ik erbij hoor', en voelt de uitputting van die constante bewijsdrang."
+      },
+      "aha_wending_aha": {
+        "titel": "AHA! (AHA!) - De Wending",
+        "doel": "De ontbrekende schakel onthullen die alles in een ander licht zet",
+        "type_omkering": "logica_omkering",
+        "toelichting_type": "De menselijke logica van 'eerst presteren, dan erkenning' wordt omgekeerd naar de goddelijke logica van 'eerst erkenning, dan pas het optreden'.",
+        "inhoud": "Dan klinkt het antwoord van Jezus: 'Laat het nu gebeuren, want zo past het ons alle gerechtigheid te vervullen.' Hier kantelt alles. Gerechtigheid is bij Jezus niet: 'krijgen wat je verdient'. Gerechtigheid is: 'God die zich voegt bij de mens'. Jezus vervult de gerechtigheid niet door boven de modder van de Jordaan te blijven zweven, maar door er middenin te gaan staan. \n\nDe 'Aha!' is dit: Jezus wordt niet gedoopt omdat Hij zonden heeft, maar omdat wij die hebben. Hij claimt geen uitzonderingspositie. De omkering is totaal: de weg omhoog (naar God) loopt via de weg omlaag (in het water). De hemel gaat niet open voor een triomferende held, maar voor een man die nat en druipend uit de rivier komt, schouder aan schouder met de tollenaar en de zondaar. De 9-punten puzzel van ons geloof wordt opgelost door buiten de lijntjes van onze verdienste te kleuren. God zoekt ons niet op de top van onze successen, maar in de diepte van onze gedeelde menselijkheid."
+      },
+      "ja_verkondiging_whee": {
+        "titel": "JA! (WHEE!) - De Verkondiging",
+        "doel": "De goede boodschap laten landen als ervaring (opluchting), niet slechts als informatie",
+        "inhoud": "En dan gebeurt het. De hemel scheurt open. Geen bliksem, geen oordeel, maar de Geest als een duif. En die stem: 'Dit is mijn geliefde Zoon, in Hem vind Ik vreugde.' \n\nHoort u het? Dit wordt gezegd *voordat* Jezus ook maar één zieke heeft genezen, *voordat* Hij een gelijkenis heeft verteld, *voordat* Hij de wereld heeft gered. Het 'welbehagen' van God is er al. Dit is de bevrijding voor Boskoop: Gods liefde is geen loonstrookje aan het eind van de maand, maar een startkapitaal aan het begin van de weg. \n\nDe remedie past precies op onze wond: tegenover onze angst om niet genoeg te zijn, stelt God de onvoorwaardelijke adoptie. U bent een geliefd kind, niet omdat u de grootste kwekerij heeft of de trouwste kerkganger bent, maar omdat u in dat water van de doop verbonden bent met deze Jezus. De spanning valt weg. We hoeven niet meer te duwen, we worden gedragen. De stem boven de wateren (Psalm 29) is geen stem van terreur, maar een stem van erkenning. U mag er zijn, met uw knakken en uw barsten. In Jezus heeft God ook in u een welbehagen gekregen.",
+        "remedie_past_op_diagnose": "De onvoorwaardelijke liefdesverklaring van de Vader (Ja!) geneest de uitputting van de prestatiecultuur en de angst om niet gezien te worden (Oei...).",
+        "niet_algemeen_maar_specifiek": "De genade is specifiek: Gods vreugde in de mens gaat vooraf aan de arbeid van de mens."
+      },
+      "zo_doorwerking_yeah": {
+        "titel": "ZÓ! (YEAH!) - De Doorwerking",
+        "doel": "Anticiperen op de nieuwe realiteit - niet 'wat moeten we doen' maar 'hoe ziet het leven er nu uit'",
+        "inhoud": "Hoe ziet de wereld eruit als we dit echt geloven? De preek eindigt niet met een opdracht, maar met een nieuw perspectief. Morgenochtend, als de wekker gaat en de koude Boskoopse grond weer wacht, hoeft u uw identiteit niet opnieuw te bevechten. U bent al 'geliefd'. Dat verandert hoe u naar uw werk kijkt: het is geen overlevingsstrijd meer, maar een manier om de schepping te dienen. \n\nHet verandert hoe we naar elkaar kijken in de Dorpskerk. We hoeven elkaar niet meer de maat te nemen. Als God geen onderscheid maakt (Handelingen 10), waarom zouden wij dat dan doen? We zien de ander niet meer als concurrent of als 'geval apart', maar als mede-gedoopte, even kwetsbaar en even geliefd. De nieuwe realiteit is een gemeenschap waar het geknakte riet niet wordt gebroken, maar wordt ondersteund. Waar we de 'vrede verkondigen' (Acts 10,36) simpelweg door er voor elkaar te zijn, nuchter en trouw. De Geest die op Jezus neerdaalde, waait nu door de straten van Boskoop, over de Hefbrug, tot in de kleinste schuur. We gaan de wereld in, niet om onze waarde te bewijzen, maar om de liefde die we ontvangen hebben uit te delen.",
+        "klein_en_dichtbij": "De ontbijttafel waar de druk van de dag wegvalt; de ontmoeting bij de supermarkt waar we de ander echt 'zien'; de rust in het hart tijdens een stressvolle handelsdag.",
+        "geen_eisenlijst": true
+      }
+    },
+    "logica_check": {
+      "diagnose_remedie_klopt": true,
+      "toelichting": "De diagnose (identiteit ontlenen aan prestatie en hiërarchie) wordt direct beantwoord door de remedie (identiteit als geschenk van de Vader vóór de prestatie). De homiletische cirkel is rond: de 'jeuk' van de prestatiedruk wordt gestild door de 'zalf' van de doop-erkenning."
+    }
+  },
+  "14_gebeden": {
+    "gekozen_scenario": "A (zwaartepunt schuld in drempelgebed, sober kyrie over wereldnood)",
+    "gebeden": {
+      "drempelgebed": {
+        "type": "drempelgebed",
+        "aanspraak": "Eeuwige God, Heilige van Israël,",
+        "elementen": {
+          "verootmoediging": "Wij treden over de drempel van dit huis, terwijl de kou van januari nog in onze kleren hangt en de onrust van de wereld in ons hoofd tolt.",
+          "schuldbelijdenis": "Wij belijden dat wij vaak meer vertrouwen op de kracht van onze eigen handen en de opbrengst van onze handel, dan op uw genade die ons geschonken is.",
+          "verlangen": "Wij dorsten naar uw stem die ons bij onze naam noemt, dwars door de ruis van onze tekortkomingen heen."
+        },
+        "tekst": "Eeuwige God, Heilige van Israël,\n\nwij treden over de drempel van dit huis, terwijl de kou van januari nog in onze kleren hangt en de onrust van de wereld in ons hoofd tolt. Wij komen uit een week van hard werken, van plannen maken en zorgen dragen voor wat groeien moet. Maar hier, voor uw aangezicht, vallen de maskers af.\n\nWij belijden U dat wij vaak meer vertrouwen op de kracht van onze eigen handen, op de zekerheid van onze contracten en de muren die wij om ons leven bouwen, dan op uw verbond dat vaststaat. Wij zijn voorbijgelopen aan het geknakte riet in onze straat; wij hebben de kwijnende vlam van hoop bij onze naaste niet gevoed, maar soms onbedoeld gedoofd door onze haast en onze nuchterheid.\n\nHeer, de modder van de weg kleeft aan onze schoenen, en de schuld van wat wij lieten liggen drukt op ons hart. Wij hebben geprobeerd onze eigen gerechtigheid te volbrengen, maar wij strandden in onmacht. \n\nZie ons hier staan, met lege handen en een hart dat hunkert naar een nieuw begin. Spreek tot ons zoals U sprak bij de Jordaan. Laat uw Geest op ons neerdalen, niet als een oordeel, maar als een duif die vrede brengt. Was ons schoon, herschep ons, en noem ons opnieuw uw geliefde kinderen.\n\nAmen.",
+        "echo_schriftlezing": "Het beeld van het geknakte riet en de vlaspit uit Jesaja 42,3 als metafoor voor menselijke kwetsbaarheid en falen.",
+        "amen": true
+      },
+      "kyrie": {
+        "type": "kyrie",
+        "aanspraak": "Heer, ontferm U,",
+        "focus": "nood_wereld",
+        "structuur": {
+          "intenties": [
+            {
+              "voor_wie": "de zuchtende schepping",
+              "nood": "voor de natuur die lijdt onder ons gebrek aan ontferming, voor de wateren die vervuild raken en het land dat zijn veerkracht verliest.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "de getroffenen door geweld en bedrog",
+              "nood": "voor de mensen in het Midden-Oosten die gevangen zitten in een cirkel van vergelding, en voor hen die in hun kwetsbaarheid werden uitgebuit door fraude en hebzucht.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "de boerenfamilie in Waarder",
+              "nood": "voor hen die in de vlammen hun vee verloren en nu verslagen naar de as van hun bestaan staren.",
+              "kyrie_refrain": true
+            }
+          ]
+        },
+        "tekst": "Heer, ontferm U over deze wereld die U zo liefhebt, maar die zozeer zucht onder de last van geweld en onrecht.\n\nWij roepen tot U voor de schepping; voor de natuur die de prijs betaalt voor onze overvloed. Wij horen van waterellende en hittestress, van wetten die tekortschieten en aarde die uitgeput raakt. Laat uw stem klinken boven de wateren, Psalm 29 indachtig, en breng ons tot inkeer.\nKyrie eleison.\n\nWij roepen tot U voor de volken in strijd; voor de straten van Gaza en de dorpen in de Oekraïne, waar de winter hard toeslaat en de vrede ver weg lijkt. Voor hen die geen onderscheid meer zien tussen vriend en vijand. \nKyrie eleison.\n\nWij roepen tot U voor de slachtoffers van de hardheid van onze tijd; voor wie bedrogen werd door online fraude en nu met schaamte en verlies achterblijft. En heel dichtbij, Heer, bidden wij om ontferming voor de boerenfamilie in Waarder, die in één nacht hun kalfjes en hun stal verloren aan het vuur. Troost hen in hun verbijstering.\nKyrie eleison.\n\nChristus, Gij die als de Dienaar kwam om recht te brengen zonder te schreeuwen op straat: hoor ons roepen en ontferm U over ons.\nKyrie eleison.\n\nAmen.",
+        "echo_schriftlezing": "De stem van de Heer boven de wateren (Psalm 29) en de Dienaar die niet schreeuwt op straat (Jesaja 42).",
+        "amen": true
+      },
+      "epiclese": {
+        "type": "epiclese",
+        "aanspraak": "Geest van God, die over de wateren zweefde,",
+        "focus": "ALLEEN opening voor de Schrift, geen andere thema's",
+        "tekst": "Geest van God, die ooit boven de oervloed zweefde en op Jezus neerdaalde als een duif:\nzweef nu over ons midden.\n\nOpen de hemel boven deze oude woorden, zodat zij voor ons worden tot een levende stem. Breek de korst van onze gewenning en ontdooi ons kille verstand. Laat uw licht vallen op de bladzijden van de Schrift, zoals het licht van de Epifanie op de volkeren viel.\n\nMaak ons hart tot goede grond, waarin uw Woord kan wortelen en vrucht dragen. Laat ons niet alleen horen met onze oren, maar verstaan met onze ziel, dat wij Jezus herkennen als uw geliefde Zoon en Hem durven volgen, waar de weg ook gaat.\n\nKom, Heilige Geest, en spreek.\n\nAmen.",
+        "echo_schriftlezing": "De nederdaling van de Geest als een duif (Matteüs 3,16) en de stem uit de geopende hemel.",
+        "amen": true
+      },
+      "dankgebed": {
+        "type": "dankgebed",
+        "aanspraak": "Barmhartige God, Vader van onze Heer Jezus Christus,",
+        "verbinding_verkondiging": "Dank voor de bevrijdende boodschap dat onze identiteit niet afhangt van onze prestaties op de kwekerij of in het dorp, maar van uw 'welbehagen'.",
+        "elementen": {
+          "dank_gehoorde_woord": "Wij danken U voor het Woord dat ons vandaag heeft opgezocht.",
+          "vraag_kracht_bewaren": "Geef ons de moed om dit 'geliefd zijn' mee te nemen naar de maandageraad.",
+          "verbinding_dagelijks_leven": "Dat wij in ons werk en in onze omgang met elkaar de gerechtigheid zoeken die Jezus ons voordeed."
+        },
+        "tekst": "Barmhartige God, Vader van onze Heer Jezus Christus,\n\nwij danken U met heel ons hart voor het goede nieuws dat tot ons kwam. In een wereld waarin wij voortdurend worden gewogen op onze nuttigheid, onze winst en onze prestaties, danken wij U voor die ene stem uit de hemel: 'Dit is mijn geliefde Zoon, in Hem vind Ik vreugde'.\n\nWij danken U dat dit woord ook over ons leven wordt uitgesproken. Dat wij geliefd zijn nog voordat wij een spade in de grond hebben gestoken of een plant hebben verkocht. Dank U dat U in Jezus tot ons bent gekomen om alle gerechtigheid te vervullen, ook daar waar wij tekortschieten.\n\nGeef ons nu de kracht om dit Woord te bewaren in de drukte van de komende week. Laat de herinnering aan onze doop ons rechtop doen staan als de wind van de onzekerheid waait over het dorp of over onze sector. Help ons om als gezalfde mensen te leven: weldoende, rechtvaardig en vol vrede, in de voetsporen van Hem die aller Heer is.\n\nAmen.",
+        "echo_schriftlezing": "De stem van welbehagen (Matteüs 3,17) en de zalving met de Geest om weldoende rond te gaan (Handelingen 10,38).",
+        "amen": true
+      },
+      "voorbeden": {
+        "type": "voorbeden",
+        "aanspraak": "God van alle volken en talen, Vader in de hemel,",
+        "cirkels": {
+          "wereld": {
+            "themas": [
+              "vrede in het Midden-Oosten",
+              "wijsheid voor klimaatbeleid",
+              "gerechtigheid voor de armen"
+            ],
+            "tekst": "Wij bidden U voor deze wereld die U zo dierbaar is. Geef wijsheid aan hen die beslissen over de toekomst van onze aarde, over natuurherstel en klimaat, dat zij niet slechts kijken naar rendement maar naar de zuchtende schepping. Wij leggen de volkeren van het Midden-Oosten voor U neer; breek de macht van de uiteenwerper en laat vrede als een bron ontspringen in de woestijn van haat."
+          },
+          "kerk": {
+            "themas": [
+              "de PKN als vindplaats van hoop",
+              "eenheid onder christenen in Boskoop",
+              "vervolgde broeders en zusters"
+            ],
+            "tekst": "Wij bidden voor uw wereldwijde kerk. Sterk de Protestantse Kerk in Nederland om een vindplaats van hoop te blijven, juist waar de aantallen dalen. Wij bidden voor de samenwerking tussen de kerken hier in Boskoop; dat wij elkaar herkennen als gedoopten in die ene Naam en gezamenlijk uw licht laten schijnen in het dorp."
+          },
+          "naasten": {
+            "themas": [
+              "slachtoffers van fraude",
+              "zieken die wachten op uitslag",
+              "wie eenzaam eet"
+            ],
+            "tekst": "Wij bidden voor onze naasten die door diepe dalen gaan. Voor hen die hun vertrouwen verloren door bedrog en fraude; herstel hun waardigheid. Wij noemen U de namen van de zieken uit ons midden, hen die wachten op een uitslag in het ziekenhuis of die de pijn van de eindigheid dagelijks voelen. Wees nabij aan wie vanmiddag alleen aan tafel zit en de stilte in huis vreest."
+          },
+          "eigen_gemeente": {
+            "themas": [
+              "de boomkwekersgezinnen",
+              "de jongeren in Boskoop",
+              "de komende week"
+            ],
+            "tekst": "Voor onze eigen gemeente te Boskoop bidden wij U. Zegen de gezinnen die verbonden zijn met de sierteelt; geef hen rust in deze winterperiode en moed voor de onzekerheden van de toekomst. Wij bidden voor onze jongeren, dat zij hun identiteit niet zoeken in wat de wereld van hen eist, maar in het feit dat zij uw geliefde kinderen zijn. Ga met ons mee als wij morgen de brug weer overgaan naar ons werk en onze dagelijkse plichten."
+          }
+        },
+        "stilte_instructie": "*Stilte voor persoonlijke gebedsintenties*",
+        "overgang_onze_vader": "Hoor ons, o God, als wij al onze gebeden samenvatten in de woorden die uw Zoon ons heeft gegeven:",
+        "onze_vader": "Onze Vader die in de hemelen zijt,\\nuw naam worde geheiligd;\\nuw Koninkrijk kome;\\nuw wil geschiede, gelijk in de hemel, alzo ook op de aarde.\\nGeef ons heden ons dagelijks brood;\\nen vergeef ons onze schulden, gelijk ook wij vergeven onze schuldenaren;\\nen leid ons niet in verzoeking, maar verlos ons van de boze.\\nWant van U is het Koninkrijk en de kracht en de heerlijkheid tot in eeuwigheid.\\nAmen."
+      }
+    },
+    "poetische_technieken_gebruikt": {
+      "parallellisme": [
+        "niet als een oordeel, maar als een duif die vrede brengt",
+        "niet alleen horen met onze oren, maar verstaan met onze ziel"
+      ],
+      "drieslag": [
+        "geen oordeel, maar als een duif die vrede brengt",
+        "weldoende, rechtvaardig en vol vrede",
+        "ons werk, onze handel en de muren die wij bouwen"
+      ],
+      "anafoor": [
+        "Wij roepen tot U voor...",
+        "Wij bidden voor..."
+      ],
+      "inclusio": [
+        "Het drempelgebed begint met de kou van januari en eindigt met de warmte van de doopbelofte.",
+        "Het kyrie begint bij de schepping en eindigt bij de Dienaar die de schepping recht doet."
+      ],
+      "zintuiglijke_taal": [
+        "Zien: de as van de verbrande stal in Waarder",
+        "Horen: de stem boven de wateren die dreunt als de donder",
+        "Voelen: de kou van januari in de kleren",
+        "Ruiken: de geur van modder aan de schoenen",
+        "Proeven: de dorst naar de stem die ons noemt"
+      ],
+      "lokale_beelden": [
+        "De modder van de kwekerspaden aan de schoenen",
+        "De stem boven de wateren (Gouwe/sloten)",
+        "De brug overgaan naar het werk",
+        "De winterrust in de sierteeltsector"
+      ]
+    },
+    "echo_techniek": {
+      "schriftlezing_thema": "De legitimatie van de Dienaar/Zoon door de Geest en de Stem boven het water.",
+      "echo_per_gebed": {
+        "drempelgebed": "Het geknakte riet en de vlaspit uit Jesaja 42.",
+        "kyrie": "De stem van de Heer boven de wateren uit Psalm 29.",
+        "epiclese": "De Geest die als een duif neerdaalt uit Matteüs 3.",
+        "dankgebed": "Het welbehagen van de Vader en de zalving uit Handelingen 10.",
+        "voorbeden": "God die geen onderscheid maakt tussen mensen uit Handelingen 10."
+      }
+    }
+  },
+  "15_kindermoment": {
+    "kindermoment_opties": [
+      {
+        "type": "Klassiek",
+        "titel": "Het Merk van de Maker",
+        "object": {
+          "naam": "Een ouderwetse lakstempel met zegellak",
+          "uitleg": "In de boomkwekerijen van Boskoop krijgt elke plant een label, maar een lakstempel is veel krachtiger: het is een onuitwisbaar teken van eigendom en echtheid."
+        },
+        "focus_schriftlezing": "Matteüs 3:17 - \"Dit is mijn geliefde Zoon, in Hem vind Ik vreugde.\"",
+        "verhaal_script": "(Regie: Laat de kinderen dichtbij komen en laat de lakstempel en een staafje rode lak zien.)\n\nMoeten jullie eens kijken wat ik hier heb. Het lijkt wel een toverstokje, maar het is een staafje lak. Vroeger, als de koning een heel belangrijke brief stuurde, dan plakte hij die niet dicht met een plakbandje. Nee, hij liet hete druppels van deze rode lak op het papier vallen. En dan, terwijl het nog zacht was, drukte hij deze zware stempel erin. (Regie: Doe alsof je stempelt).\n\nAls je dat stempel zag, wist je twee dingen: deze brief is echt van de koning, en de persoon die erin genoemd wordt is heel belangrijk voor hem. \n\nVandaag horen we dat Jezus bij de rivier de Jordaan staat. Hij gaat onder water en als Hij bovenkomt, gebeurt er iets bijzonders. Het is alsof God een onzichtbaar koninklijk stempel op Jezus zet. God zegt voor iedereen hoorbaar: 'Dit is mijn Zoon. Ik hou van Hem. Hij hoort bij Mij.' \n\nIn Boskoop hangen we kaartjes aan de bomen zodat we weten welke plant het is. Maar God doet iets anders. Hij zegt tegen Jezus, en eigenlijk ook tegen ons bij de doop: 'Ik zet mijn stempel op jou. Je bent van Mij en Ik ben trots op je.' Dat is een merk dat er nooit meer af gaat, wat er ook gebeurt.",
+        "afbeelding_idee": "Een close-up van een glanzend rood lakzegel met een koninklijk symbool op een perkamenten envelop."
+      },
+      {
+        "type": "Actief",
+        "titel": "De Grote Klik",
+        "object": {
+          "naam": "Verschillende Gardena-tuinslangkoppelingen",
+          "uitleg": "In een waterrijk dorp als Boskoop weet elk kind dat een slang zonder koppeling nutteloos is. Het verbeeldt de verbinding en de 'kracht' (Geest) die moet doorstromen."
+        },
+        "focus_schriftlezing": "Handelingen 10:38 - \"...hoe God Jezus van Nazaret met de heilige Geest heeft gezalfd en met kracht heeft bekleed.\"",
+        "verhaal_script": "(Regie: Deel aan een paar kinderen een los koppelstuk uit en houd zelf de 'kraankoppeling' vast.)\n\nJullie wonen in een dorp met heel veel water en heel veel slangen bij de kwekers. Maar stel je voor: de kraan staat open, maar de slang ligt los op de grond. Wat gebeurt er dan? (Wacht op antwoord: Niks, of de hele boel wordt nat behalve de planten).\n\nJe hebt een 'klik' nodig. (Regie: Laat een kind zijn koppelstuk in de jouwe klikken. Luister naar de 'klik'). Die klik zorgt ervoor dat de kracht van het water precies daar komt waar het nodig is. \n\nPetrus vertelt vandaag in de Bijbel dat Jezus ook zo'n 'klik' kreeg. Hij noemt dat: gezalfd met de heilige Geest en met kracht. God klikte Jezus als het ware vast aan Zijn eigen kracht. En omdat Jezus vastzat aan God, kon Hij mensen beter maken en goede dingen doen. \n\nZullen we eens kijken of we een hele lange slang kunnen maken? (Regie: Laat alle kinderen elkaars handen vastpakken in een rij, beginnend bij de predikant). Als wij bij Jezus horen, horen we ook bij die kracht van God. Dan stroomt die kracht van de één naar de ander. Klik! Nu kunnen wij ook een beetje van Gods liefde doorgeven in Boskoop.",
+        "afbeelding_idee": "Een foto van twee felgekleurde tuinslangkoppelingen die precies op het moment van samenkomen zijn gefotografeerd."
+      },
+      {
+        "type": "Gek/Onconventioneel",
+        "titel": "De Stem van de Badmeester",
+        "object": {
+          "naam": "Een feloranje badmeesterfluitje aan een koord",
+          "uitleg": "Een fluitje doorbreekt het lawaai van spelende kinderen of ronkende tractoren. Het linkt aan de 'stem' uit de hemel en de majesteit in Psalm 29."
+        },
+        "focus_schriftlezing": "Psalm 29:4 - \"De stem van de HEER vol kracht, de stem van de HEER vol glorie.\"",
+        "verhaal_script": "(Regie: Kom op met het fluitje om je nek. Blaas er heel kort en zachtjes op.)\n\nHebben jullie dat wel eens gehoord in het zwembad? Als de badmeester op zijn fluitje blaast, dan doet iedereen ineens dit: (Regie: Bevries in een gekke houding). Waarom doen we dat? Omdat die stem, dat fluitje, belangrijker is dan al het andere gespetter en geschreeuw.\n\nIn de psalm van vandaag staat dat de stem van God over de wateren klinkt. Niet als een klein piepje, maar als een geluid dat zelfs de sterkste bomen in Boskoop kan laten trillen. En bij de doop van Jezus was die stem er ook. \n\nSoms is het in ons hoofd of in de wereld een enorme herrie. Mensen roepen van alles: 'Je moet dit doen!', 'Je moet dat kopen!', 'Je bent niet goed genoeg!'. Maar de stem van God is als dit fluitje. Het zegt: 'Ho stop! Luister even. Ik heb iets belangrijks te zeggen tegen Jezus en tegen jou: Je bent mijn kind.'\n\nZullen we afspreken dat als je deze week ergens een hard geluid hoort – een fluitje, een toeter van een boot op de Gouwe of de bel van de Hefbrug – je heel even denkt: God heeft ook een stem, en Hij zegt iets liefs tegen mij?",
+        "afbeelding_idee": "Een illustratie van een duif die een fluitje in zijn snavel draagt, vliegend boven een woelige rivier."
+      },
+      {
+        "type": "Bizar",
+        "titel": "Het Vetfilter-Geheim",
+        "object": {
+          "naam": "Een metalen vetfilter uit een afzuigkap (liefst een beetje vettig/gebruikt)",
+          "uitleg": "Een bizar object voor de kerk, maar het illustreert perfect het 'vervullen van alle gerechtigheid': Jezus die de rommel van de wereld opvangt zodat de lucht weer zuiver wordt."
+        },
+        "focus_schriftlezing": "Matteüs 3:15 - \"Jezus antwoordde: 'Toch moet je het doen, want zo dienen wij de gerechtigheid geheel en al tot vervulling te brengen.'\"",
+        "verhaal_script": "(Regie: Houd het filter met twee vingers voorzichtig omhoog, alsof het een kostbaar maar vies object is.)\n\nWeten jullie wat dit is? Het komt uit de keuken, boven het fornuis. Het is een filter. Het ziet er een beetje vies uit, hè? Plakkerig van het bakvet en het stof. Eigenlijk is het een heel dapper ding. Want dit filter zegt: 'Laat al die vieze walm en dat vet maar tegen mij aan komen, dan blijft de rest van de keuken schoon.'\n\nToen Jezus bij Johannes kwam om gedoopt te worden, snapte Johannes het niet. Jezus was toch zonder zonde? Waarom moest Hij dan in dat water waar iedereen zijn 'viezigheid' en fouten in had achtergelaten? \n\nJezus zei: 'Ik moet het doen om de gerechtigheid te vervullen.' Dat is een moeilijk woord voor: Ik ga op de plek staan waar de rommel is. Jezus is als dit filter. Hij stapt midden in onze wereld, in onze fouten en ons verdriet. Hij vangt het op, zodat wij weer schone lucht krijgen. \n\nHij werd gedoopt in het water waar wij onze handen aan vuil hadden gemaakt, zodat Hij kon zeggen: 'Ik draag het voor je.' Dat is pas echte liefde: durven plakken zodat een ander weer vrij kan ademen.",
+        "afbeelding_idee": "Een artistieke foto van een zonnestraal die door een metalen rooster schijnt, waardoor het patroon op de grond zichtbaar wordt."
+      },
+      {
+        "type": "Ernstig",
+        "titel": "De Knak en de Kracht",
+        "object": {
+          "naam": "Een geknakte tak van een Hortensia (of een andere Boskoopse heester)",
+          "uitleg": "Dit object neemt de kwetsbaarheid van het leven serieus. In een kwekersdorp wordt een geknakte plant vaak weggegooid; de tekst uit Jesaja draait dit om."
+        },
+        "focus_schriftlezing": "Jesaja 42:3 - \"Het geknakte riet zal hij niet breken, een verflauwende vlaspit niet doven.\"",
+        "verhaal_script": "(Regie: Houd de tak voorzichtig vast, laat de breuk duidelijk zien maar zorg dat hij nog net vastzit.)\n\nAls een kweker hier in Boskoop door zijn kas loopt en hij ziet dit, dan baalt hij. Een geknakte tak kun je niet verkopen. Meestal gaat zo'n plant dan op de grote hoop, naar de compost of de afvalbak. Het is kapot, we kunnen er niks meer mee.\n\nSoms voelen mensen zich ook een beetje zo. Misschien ben je wel eens heel erg verdrietig, of voel je je alleen, of heb je het gevoel dat je iets helemaal fout hebt gedaan. Alsof je een beetje geknakt bent van binnen. \n\nDe profeet Jesaja vertelt vandaag over de Dienaar van God, over Jezus. En Hij zegt iets heel wonderlijks. Hij zegt: 'Als Jezus iemand ziet die geknakt is, dan breekt Hij diegene niet verder af.' Hij gooit je niet weg. Hij is juist heel voorzichtig. Hij houdt je vast, zoals ik deze tak nu heel voorzichtig ondersteun.\n\nJezus kwam naar de aarde en liet zich dopen om te laten zien: Ik ben er voor de mensen die zich een beetje kapot voelen. Bij Mij ben je veilig. Ik zie niet alleen wat er mis is, Ik zie hoe mooi je bent, zelfs met die knak. In Gods ogen ben je veel te kostbaar om weg te gooien.\n\n(Regie: Blijf even stil en kijk naar de tak.) Zullen we God danken dat Hij zo voorzichtig met ons is?",
+        "afbeelding_idee": "Een macrofoto van een jonge groene scheut die met een touwtje voorzichtig is vastgebonden aan een stokje voor steun."
+      }
+    ]
+  },
+  "Bijbelteksten": {
+    "naardense_bijbel": [
+      {
+        "book": "ACT",
+        "chapter": 10,
+        "verses": [
+          {
+            "verse": 34,
+            "text": "Maar Petrus opent zijn mond en zegt:\nin waarheid verneem ik\ndat God niet vooringenomen is;"
+          },
+          {
+            "verse": 35,
+            "text": "nee, in elk volk is wie hem vreest\nen werken van gerechtigheid doet\nbij hem welkom;"
+          },
+          {
+            "verse": 36,
+            "text": "het woord dat hij heeft gezonden\naan de zonen-en-dochters van Israël\ndoor vrede te verkondigen\ndoor Jezus Christus,\ndie aller Heer is,"
+          },
+          {
+            "verse": 37,
+            "text": "daarvan wéét gij:\nhet veelbesprokene dat is geschied\nover heel Judea;\nhet begon in Galilea, na de doop\ndie Johannes heeft gepredikt,"
+          },
+          {
+            "verse": 38,
+            "text": "met Jezus van Nazaret\ntoen God hem heeft gezalfd\nmet heilige geest en kracht;\nhij is weldoende rondgetrokken\nen hij heeft allen gezond gemaakt\ndie onder de macht van\nde uiteenwerper lagen,\nomdat God met hem is geweest;"
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "ISA",
+        "chapter": 42,
+        "verses": [
+          {
+            "verse": 1,
+            "text": "Zie mijn dienaar, ik ondersteun hem,\nmijn uitverkorene, in hem heeft mijn ziel behagen;\ngeven zal ik mijn geest over hem,\nrecht zal hij doen uitgaan naar de volkeren."
+          },
+          {
+            "verse": 2,
+            "text": "Hij zal niet schreeuwen, zal geen ophef maken,-\nzijn stem niet laten horen op straat."
+          },
+          {
+            "verse": 3,
+            "text": "Het gekrookte * Of: geknakte. riet zal hij niet breken,\neen verflauwende vlaspit niet doven,-\nnaar zijn trouw zal hij recht doen uitgaan."
+          },
+          {
+            "verse": 4,
+            "text": "Hij zal niet verflauwen, niet geknakt worden\nvoordat hij op aarde recht heeft gebracht,-\nen op zijn onderricht wachten de verste kusten."
+          },
+          {
+            "verse": 6,
+            "text": "ik, de Ene , heb je met recht-en-reden geroepen en je bij de hand gevat;\nik zal je behoeden,\nje bestemmen tot een verbond met de gemeenschap, een licht voor de volkeren."
+          },
+          {
+            "verse": 7,
+            "text": "Om ogen van blinden te openen,-\nom wie geboeid is uit de kerker te leiden,\nuit het gevanghuis wie neerzitten in het donker."
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "MAT",
+        "chapter": 3,
+        "verses": [
+          {
+            "verse": 13,
+            "text": "Dán\ntreedt Jezus aan,\nuit Galilea op de Jordaan af\ntot bij Johannes,\nom door hem gedoopt te worden."
+          },
+          {
+            "verse": 14,
+            "text": "Maar die heeft hem tegengehouden,\nzeggend: ik heb het nodig\ngedoopt te worden door jóu,\nen jíj komt tot míj?"
+          },
+          {
+            "verse": 15,
+            "text": "Maar ten antwoord zegt Jezus\ntot hem: laat het onmiddellijk toe;\nzó immers past het ons\nalle gerechtigheid te vervullen!\nDán\nlaat hij hem toe."
+          },
+          {
+            "verse": 16,
+            "text": "Als Jezus is gedoopt\nklimt hij meteen uit het water op;\nen zie, geopend worden de hemelen\nen hij ziet de Geest van God\nneerdalen als een duif\nen komen op hem,"
+          },
+          {
+            "verse": 17,
+            "text": "en zie, een stem uit de hemel\ndie zegt: dit is\nmijn zoon, de geliefde,\nin wie ik welbehagen heb gekregen (Jes. 42,1) !"
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "TIT",
+        "chapter": 2,
+        "verses": [
+          {
+            "verse": 11,
+            "text": "Want verschenen is Gods genade\nals redding voor alle mensen;"
+          },
+          {
+            "verse": 12,
+            "text": "zij voedt ons op\nom met verzaking van de goddeloosheid\nen de wereldse verlangens\nbezonnen en rechtvaardig en godvruchtig\nin de huidige eeuw te leven,"
+          },
+          {
+            "verse": 13,
+            "text": "in verwachting van de zalige hoop\nen verschijning in heerlijkheid\nvan onze grote God en redder Christus Jezus,"
+          },
+          {
+            "verse": 14,
+            "text": "die zichzelf ter wille van ons heeft gegeven\nom ons ‘te verlossen\nvan alle ongerechtigheid’ (Ps. 130,8)\nen ‘zich een gemeente ten eigendom\nte reinigen’ (Ex. 19,5) ,\nijverig in goede werken."
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "PSA",
+        "chapter": 110,
+        "verses": [
+          {
+            "verse": 1,
+            "text": "Psalm 110 (109) • Dixit Dominus. (v. David, een musiceerstuk.)\nTijding van de Ene aan mijn heer:\nzet je aan mijn rechterhand, ✡\ntot ik je vijanden heb gezet\nals bank onder je voeten!"
+          },
+          {
+            "verse": 2,
+            "text": "De scepter van je kracht\nzal de Ene zenden uit Sion,- ✡\ntreed op als heerser\nin de kring van je vijanden!-"
+          },
+          {
+            "verse": 3,
+            "text": "je manschap meldt zich vrijwillig op de dag van je macht in heilige luister;\nuit de schoot van het morgenrood ✡\nkomt tot jou\nde dauw van je nieuwgeborenen!"
+          },
+          {
+            "verse": 4,
+            "text": "Gezworen heeft de Ene en het zal hem niet berouwen:\n‘jij bent priester voor eeuwig, ✡\nkrachtens mijn uitspraak\neen Melchisedek!’"
+          },
+          {
+            "verse": 5,
+            "text": "Mijn heer is aan je rechterhand, ✡\nkoningen zal hij verpletteren\nop de dag van zijn toorn."
+          },
+          {
+            "verse": 6,
+            "text": "Hij vonnist de volkeren zo vol trots, ✡\nzal pletten hun hoofd\nover de aarde wijd."
+          },
+          {
+            "verse": 7,
+            "text": "Hij drinkt uit een beek langs de wég, ✡\ndaarom\nzal hij heffen het hóofd!"
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "PSA",
+        "chapter": 29,
+        "verses": [
+          {
+            "verse": 1,
+            "text": "Psalm 29 (28) • Afferte Domino. (Een musiceerstuk,\nv. David.)\nBrengt aan de Ene, o zonen van goden, ✡\nbrengt aan de Ene\nglorie en sterkte!"
+          },
+          {
+            "verse": 2,
+            "text": "Brengt aan de Ene de glorie van zijn naam, ✡\nbuigt u voor de Ene\nin heiligdomsluister!"
+          },
+          {
+            "verse": 3,
+            "text": "De stem van de Ene\nklonk over het water,\nde God der glorie liet het dreunen, ✡\nde Ene,\nover watervloeden vele!"
+          },
+          {
+            "verse": 4,
+            "text": "De stem van de Ene zo vol kracht, ✡\nde stem van de Ene\nzo vol luister!"
+          },
+          {
+            "verse": 5,
+            "text": "De stem van de Ene breekt ceders, ✡\nde Ene breekt\nde ceders van de Libanon."
+          },
+          {
+            "verse": 6,
+            "text": "Hij laat ze springen als een kalf, ✡\nLibanon en Sirjon\nals de zoon van een bizon!"
+          },
+          {
+            "verse": 7,
+            "text": "De stem van de Ene klieft\nvlammen vuur,"
+          },
+          {
+            "verse": 8,
+            "text": "de stem van de Ene schudt de woestijn, ✡\nde Ene schudt\nKadeesj’ woestijn."
+          },
+          {
+            "verse": 9,
+            "text": "De stem van de Ene schudt godseiken dooreen en ontbloot hele wouden; in zijn tempel ✡\nzegt alles: glorie!"
+          },
+          {
+            "verse": 10,
+            "text": "De Ene is gezeten boven de watervloed, ✡\nmoge de Ene zetelen\nals koning voor eeuwig."
+          },
+          {
+            "verse": 11,
+            "text": "De Ene:\nzijn gemeente geve hij sterkte,- ✡\nde Ene!-\nhij zal zijn manschap zegenen met vrede!"
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "PSA",
+        "chapter": 72,
+        "verses": [
+          {
+            "verse": 1,
+            "text": "Psalm 72 (71), Deus, iudicium. (v. -vredevorst- Salomo.)\nO God,\nrecht te spreken als gij, geef dat aan de koning, ✡\nrechtvaardiging door u aan ’s konings zoon!"
+          },
+          {
+            "verse": 2,
+            "text": "Hij oordele uw gemeente rechtvaardig, ✡\nuw gebogenen met rechtspraak."
+          },
+          {
+            "verse": 3,
+            "text": "Dan dragen bergen\nvoor de gemeenschap vrede, ✡\nen heuvels\ngerechtigheid."
+          },
+          {
+            "verse": 4,
+            "text": "Hij doet gebogenen van een gemeenschap recht,\nbrengt redding aan de zonen van een arme, ✡\nzal vertrappen wie verdrukt."
+          },
+          {
+            "verse": 5,
+            "text": "Hij zal duren als de zon, ✡\nvoor het aanschijn van de maan\neen generatie van generaties."
+          },
+          {
+            "verse": 6,
+            "text": "Neerdalen zal hij als regen op gras, ✡\nals tienduizend\ndruppels op een land."
+          },
+          {
+            "verse": 7,
+            "text": "In zijn dagen kome een rechtvaardige tot bloei, ✡\nmet overvloed van vrede,\ntot er geen maan meer is."
+          },
+          {
+            "verse": 8,
+            "text": "Optreden zal hij van zee tot zee, ✡\nvan de Rivier\ntot de einden der aarde."
+          },
+          {
+            "verse": 9,
+            "text": "Benauwers zullen voor zijn aanschijn knielen, ✡\nzijn vijanden\nlikken het stof."
+          },
+          {
+            "verse": 10,
+            "text": "De koningen van Tarsjiesj, van eilanden, bieden een broodgift hem aan, ✡\nde koningen van Sjeva en Seva\nbrengen schatting nabij."
+          },
+          {
+            "verse": 11,
+            "text": "Alle koningen zullen buigen voor hem, ✡\nalle volkeren zullen hem dienen."
+          },
+          {
+            "verse": 12,
+            "text": "Want hij ontrukt een arme die schreeuwt om redding, ✡\neen gebogene\nen wie geen helper heeft."
+          },
+          {
+            "verse": 13,
+            "text": "Hij ziet om naar een zwakke en arme, ✡\nlijf-en-ziel van armen komt hij redden."
+          },
+          {
+            "verse": 14,
+            "text": "Hij verlost hun ziel van druk en geweld, ✡\nhun bloed is kostbaar in zijn ogen!"
+          },
+          {
+            "verse": 15,
+            "text": "Hij leve!-\nmen geve hem goud van Sjeva, en bidde voor hem voortdurend, ✡\nmogen ze hem zegenen\nheel de dag!"
+          },
+          {
+            "verse": 16,
+            "text": "Zij er in het land weelde van graan, op de top van bergen ruise als de Libanon zijn vrucht,- ✡\nmogen ze uit een stad uitspruiten\nals het groen van de aarde."
+          },
+          {
+            "verse": 17,
+            "text": "Zij zijn naam voor eeuwig,\nvoor het aanschijn van de zon bloeie zijn naam, door hem weten ze zich gezegend,- ✡\nalle volkeren prijzen hem zalig!"
+          },
+          {
+            "verse": 18,
+            "text": "Gezegend de Ene, God, Israëls God, ✡\ndie wonderen doet, hij alleen!"
+          },
+          {
+            "verse": 19,
+            "text": "Gezegend zijn naam, zijn glorie;\nvoor eeuwig vervulle zijn glorie heel de aarde! ✡\nAmen, amen!"
+          },
+          {
+            "verse": 20,
+            "text": "Ten einde zijn de gebeden,- ✡\nvan David,\nzoon van Jesse.\nSlot van het tweede boek der Psalmen"
+          }
+        ],
+        "translation": "NB"
+      }
+    ],
+    "nbv21": [
+      {
+        "book": "ACT",
+        "chapter": 10,
+        "verses": [
+          {
+            "verse": 34,
+            "text": "Daarop nam Petrus het woord en zei: ‘Nu begrijp ik pas goed dat God geen onderscheid maakt tussen mensen,"
+          },
+          {
+            "verse": 35,
+            "text": "maar zich het lot aantrekt van iedereen, uit welk volk dan ook, die Hem vereert en rechtvaardig handelt."
+          },
+          {
+            "verse": 36,
+            "text": "God heeft aan de Israëlieten bekendgemaakt dat Hij door Jezus Christus het goede nieuws van de vrede is komen brengen. Deze Jezus is de Heer van alle mensen."
+          },
+          {
+            "verse": 37,
+            "text": "U weet wat er in heel het Joodse land is gebeurd, hoe het begon in Galilea, hoe God, na de doop waartoe Johannes opriep,"
+          },
+          {
+            "verse": 38,
+            "text": "Jezus van Nazaret met de heilige Geest heeft gezalfd en met kracht heeft bekleed. Hij trok als weldoener door het land en genas iedereen die in de macht van de duivel was, want God stond Hem bij."
+          }
+        ],
+        "translation": "NBV21"
+      },
+      {
+        "book": "ISA",
+        "chapter": 42,
+        "verses": [
+          {
+            "verse": 1,
+            "text": "Hier is mijn dienaar, hem zal Ik steunen, hij is mijn uitverkorene, in hem vind Ik vreugde, Ik heb hem met mijn geest vervuld. Hij zal alle volken het recht doen kennen."
+          },
+          {
+            "verse": 2,
+            "text": "Hij schreeuwt niet, hij verheft zijn stem niet, hij roept niet luidkeels in het openbaar;"
+          },
+          {
+            "verse": 3,
+            "text": "het geknakte riet breekt hij niet af, de kwijnende vlam zal hij niet doven. Het recht zal hij zuiver doen kennen."
+          },
+          {
+            "verse": 4,
+            "text": "Hij zal niet uitdoven en niet breken tot hij op aarde het recht heeft gevestigd; de eilanden zien naar zijn onderricht uit."
+          },
+          {
+            "verse": 6,
+            "text": "In gerechtigheid heb Ik, de HEER, jou geroepen. Ik zal je bij de hand nemen en je behoeden, Ik neem je in dienst voor mijn verbond met het volk en maak je tot een licht voor alle volken,"
+          },
+          {
+            "verse": 7,
+            "text": "om blinden de ogen te openen, om gevangenen te bevrijden uit de kerker, wie in het duister zitten uit de gevangenis."
+          }
+        ],
+        "translation": "NBV21"
+      },
+      {
+        "book": "MAT",
+        "chapter": 3,
+        "verses": [
+          {
+            "verse": 13,
+            "text": "Toen kwam Jezus vanuit Galilea naar de Jordaan om door Johannes gedoopt te worden."
+          },
+          {
+            "verse": 14,
+            "text": "Johannes probeerde Hem tegen te houden met de woorden: ‘Ik zou door U gedoopt moeten worden, en dan komt U naar mij?’"
+          },
+          {
+            "verse": 15,
+            "text": "Maar Jezus antwoordde: ‘Toch moet je het doen, want zo dienen wij de gerechtigheid geheel en al tot vervulling te brengen.’ Toen deed Johannes het."
+          },
+          {
+            "verse": 16,
+            "text": "Zodra Jezus gedoopt was en uit het water omhoogkwam, opende de hemel zich voor Hem en zag Hij hoe de Geest van God als een duif op Hem neerdaalde."
+          },
+          {
+            "verse": 17,
+            "text": "En uit de hemel klonk een stem: ‘Dit is mijn geliefde Zoon, in Hem vind Ik vreugde.’"
+          }
+        ],
+        "translation": "NBV21"
+      },
+      {
+        "book": "TIT",
+        "chapter": 2,
+        "verses": [
+          {
+            "verse": 11,
+            "text": "Gods genade is openbaar geworden om alle mensen te redden."
+          },
+          {
+            "verse": 12,
+            "text": "Ze leert ons dat we goddeloze en wereldse begeerten moeten afwijzen en bezonnen, rechtvaardig en vroom in deze wereld moeten leven,"
+          },
+          {
+            "verse": 13,
+            "text": "in afwachting van het geluk waarop wij hopen: de verschijning van de majesteit van onze grote God en redder Jezus Christus."
+          },
+          {
+            "verse": 14,
+            "text": "Hij heeft zichzelf voor ons gegeven om ons van alle zonde vrij te kopen, ons te reinigen en ons tot zijn volk te maken, dat zich volledig inzet om het goede te doen."
+          }
+        ],
+        "translation": "NBV21"
+      },
+      {
+        "book": "PSA",
+        "chapter": 29,
+        "verses": [
+          {
+            "verse": 1,
+            "text": "Erken de HEER, o goden, erken de HEER, zijn macht en majesteit,"
+          },
+          {
+            "verse": 2,
+            "text": "erken de HEER, de majesteit van zijn naam, buig u voor de HEER in zijn heilige glorie."
+          },
+          {
+            "verse": 3,
+            "text": "De stem van de HEER boven de wateren, de God vol majesteit doet de donder rollen, de HEER boven de wijde wateren,"
+          },
+          {
+            "verse": 4,
+            "text": "de stem van de HEER vol kracht, de stem van de HEER vol glorie."
+          },
+          {
+            "verse": 5,
+            "text": "De stem van de HEER splijt ceders, de HEER splijt de ceders van de Libanon."
+          },
+          {
+            "verse": 6,
+            "text": "Opspringen doet Hij de Libanon als een kalf en de Sirjon als het jong van een wilde stier."
+          },
+          {
+            "verse": 7,
+            "text": "De stem van de HEER ontbrandt in vurige vlammen,"
+          },
+          {
+            "verse": 8,
+            "text": "de stem van de HEER brengt de woestijn tot beven, beven doet de HEER de woestijn van Kades."
+          },
+          {
+            "verse": 9,
+            "text": "De stem van de HEER doet de hinden kalven en de geiten hun jongen werpen. ‘Majesteit!’ roept heel zijn paleis."
+          },
+          {
+            "verse": 10,
+            "text": "De HEER heeft zijn troon boven de vloed, ten troon zit de HEER als koning voor eeuwig."
+          },
+          {
+            "verse": 11,
+            "text": "De HEER zal macht aan zijn volk verlenen, de HEER zal zijn volk zegenen met vrede."
+          }
+        ],
+        "translation": "NBV21"
+      }
+    ],
+    "grondtekst": [
+      {
+        "source": "NA28 (Novum Testamentum Graece)",
+        "book_nl": "Handelingen",
+        "book_original": "ACT",
+        "chapter": 10,
+        "language": "Grieks",
+        "verses": [
+          {
+            "verse": 34,
+            "text": "Ἀνοίξας δὲ Πέτρος τὸ στόμα εἶπεν· ἐπ’ ἀληθείας καταλαμβάνομαι ὅτι οὐκ ἔστιν προσωπολήμπτης ὁ θεός, "
+          },
+          {
+            "verse": 35,
+            "text": "ἀλλ’ ἐν παντὶ ἔθνει ὁ φοβούμενος αὐτὸν καὶ ἐργαζόμενος δικαιοσύνην δεκτὸς αὐτῷ ἐστιν. "
+          },
+          {
+            "verse": 36,
+            "text": "τὸν λόγον [ὃν] ἀπέστειλεν τοῖς υἱοῖς Ἰσραὴλ εὐαγγελιζόμενος εἰρήνην διὰ Ἰησοῦ Χριστοῦ, οὗτός ἐστιν πάντων κύριος, "
+          },
+          {
+            "verse": 37,
+            "text": "ὑμεῖς οἴδατε τὸ γενόμενον ῥῆμα καθ’ ὅλης τῆς Ἰουδαίας, ἀρξάμενος ἀπὸ τῆς Γαλιλαίας μετὰ τὸ βάπτισμα ὃ ἐκήρυξεν Ἰωάννης, "
+          },
+          {
+            "verse": 38,
+            "text": "Ἰησοῦν τὸν ἀπὸ Ναζαρέθ, ὡς ἔχρισεν αὐτὸν ὁ θεὸς πνεύματι ἁγίῳ καὶ δυνάμει, ὃς διῆλθεν εὐεργετῶν καὶ ἰώμενος πάντας τοὺς καταδυναστευομένους ὑπὸ τοῦ διαβόλου, ὅτι ὁ θεὸς ἦν μετ’ αὐτοῦ. "
+          }
+        ]
+      },
+      {
+        "source": "BHS (Biblia Hebraica Stuttgartensia)",
+        "book_nl": "Jesaja",
+        "book_original": "Jesaia",
+        "chapter": 42,
+        "language": "Hebreeuws",
+        "verses": [
+          {
+            "verse": 1,
+            "text": "הֵ֤ן עַבְדִּי֙ אֶתְמָךְ־בֹּ֔ו בְּחִירִ֖י רָצְתָ֣ה נַפְשִׁ֑י נָתַ֤תִּי רוּחִי֙ עָלָ֔יו מִשְׁפָּ֖ט לַגֹּויִ֥ם יֹוצִֽיא׃ "
+          },
+          {
+            "verse": 2,
+            "text": "לֹ֥א יִצְעַ֖ק וְלֹ֣א יִשָּׂ֑א וְלֹֽא־יַשְׁמִ֥יעַ בַּח֖וּץ קֹולֹֽו׃ "
+          },
+          {
+            "verse": 3,
+            "text": "קָנֶ֤ה רָצוּץ֙ לֹ֣א יִשְׁבֹּ֔ור וּפִשְׁתָּ֥ה כֵהָ֖ה לֹ֣א יְכַבֶּ֑נָּה לֶאֱמֶ֖ת יֹוצִ֥יא מִשְׁפָּֽט׃ "
+          },
+          {
+            "verse": 4,
+            "text": "לֹ֤א יִכְהֶה֙ וְלֹ֣א יָר֔וּץ עַד־יָשִׂ֥ים בָּאָ֖רֶץ מִשְׁפָּ֑ט וּלְתֹורָתֹ֖ו אִיִּ֥ים יְיַחֵֽילוּ׃ פ "
+          },
+          {
+            "verse": 6,
+            "text": "אֲנִ֧י יְהוָ֛ה קְרָאתִ֥יךָֽ בְצֶ֖דֶק וְאַחְזֵ֣ק בְּיָדֶ֑ךָ וְאֶצָּרְךָ֗ וְאֶתֶּנְךָ֛ לִבְרִ֥ית עָ֖ם לְאֹ֥ור גֹּויִֽם׃ "
+          },
+          {
+            "verse": 7,
+            "text": "לִפְקֹ֖חַ עֵינַ֣יִם עִוְרֹ֑ות לְהֹוצִ֤יא מִמַּסְגֵּר֙ אַסִּ֔יר מִבֵּ֥ית כֶּ֖לֶא יֹ֥שְׁבֵי חֹֽשֶׁךְ׃ "
+          }
+        ]
+      },
+      {
+        "source": "NA28 (Novum Testamentum Graece)",
+        "book_nl": "Matteüs",
+        "book_original": "MAT",
+        "chapter": 3,
+        "language": "Grieks",
+        "verses": [
+          {
+            "verse": 13,
+            "text": "Τότε παραγίνεται ὁ Ἰησοῦς ἀπὸ τῆς Γαλιλαίας ἐπὶ τὸν Ἰορδάνην πρὸς τὸν Ἰωάννην τοῦ βαπτισθῆναι ὑπ’ αὐτοῦ. "
+          },
+          {
+            "verse": 14,
+            "text": "ὁ δὲ Ἰωάννης διεκώλυεν αὐτὸν λέγων· ἐγὼ χρείαν ἔχω ὑπὸ σοῦ βαπτισθῆναι, καὶ σὺ ἔρχῃ πρός με; "
+          },
+          {
+            "verse": 15,
+            "text": "ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν πρὸς αὐτόν· ἄφες ἄρτι, οὕτως γὰρ πρέπον ἐστὶν ἡμῖν πληρῶσαι πᾶσαν δικαιοσύνην. τότε ἀφίησιν αὐτόν. "
+          },
+          {
+            "verse": 16,
+            "text": "βαπτισθεὶς δὲ ὁ Ἰησοῦς εὐθὺς ἀνέβη ἀπὸ τοῦ ὕδατος· καὶ ἰδοὺ ἠνεῴχθησαν [αὐτῷ] οἱ οὐρανοί, καὶ εἶδεν [τὸ] πνεῦμα [τοῦ] θεοῦ καταβαῖνον ὡσεὶ περιστερὰν [καὶ] ἐρχόμενον ἐπ’ αὐτόν· "
+          },
+          {
+            "verse": 17,
+            "text": "καὶ ἰδοὺ φωνὴ ἐκ τῶν οὐρανῶν λέγουσα· οὗτός ἐστιν ὁ υἱός μου ὁ ἀγαπητός, ἐν ᾧ εὐδόκησα."
+          }
+        ]
+      },
+      {
+        "source": "BHS (Biblia Hebraica Stuttgartensia)",
+        "book_nl": "Psalm",
+        "book_original": "Psalmi",
+        "chapter": 29,
+        "language": "Hebreeuws",
+        "verses": [
+          {
+            "verse": 1,
+            "text": "מִזְמֹ֗ור לְדָ֫וִ֥ד הָב֣וּ לַֽ֭יהוָה בְּנֵ֣י אֵלִ֑ים הָב֥וּ לַ֝יהוָ֗ה כָּבֹ֥וד וָעֹֽז׃ "
+          },
+          {
+            "verse": 2,
+            "text": "הָב֣וּ לַֽ֭יהוָה כְּבֹ֣וד שְׁמֹ֑ו הִשְׁתַּחֲו֥וּ לַ֝יהוָ֗ה בְּהַדְרַת־קֹֽדֶשׁ׃ "
+          },
+          {
+            "verse": 3,
+            "text": "קֹ֥ול יְהוָ֗ה עַל־הַ֫מָּ֥יִם אֵֽל־הַכָּבֹ֥וד הִרְעִ֑ים יְ֝הוָ֗ה עַל־מַ֥יִם רַבִּֽים׃ "
+          },
+          {
+            "verse": 4,
+            "text": "קֹול־יְהוָ֥ה בַּכֹּ֑חַ קֹ֥ול יְ֝הוָ֗ה בֶּהָדָֽר׃ "
+          },
+          {
+            "verse": 5,
+            "text": "קֹ֣ול יְ֭הוָה שֹׁבֵ֣ר אֲרָזִ֑ים וַיְשַׁבֵּ֥ר יְ֝הוָ֗ה אֶת־אַרְזֵ֥י הַלְּבָנֹֽון׃ "
+          },
+          {
+            "verse": 6,
+            "text": "וַיַּרְקִידֵ֥ם כְּמֹו־עֵ֑גֶל לְבָנֹ֥ון וְ֝שִׂרְיֹ֗ן כְּמֹ֣ו בֶן־רְאֵמִֽים׃ "
+          },
+          {
+            "verse": 7,
+            "text": "קֹול־יְהוָ֥ה חֹצֵ֗ב לַהֲבֹ֥ות אֵֽשׁ׃ "
+          },
+          {
+            "verse": 8,
+            "text": "קֹ֣ול יְ֭הוָה יָחִ֣יל מִדְבָּ֑ר יָחִ֥יל יְ֝הוָ֗ה מִדְבַּ֥ר קָדֵֽשׁ׃ "
+          },
+          {
+            "verse": 9,
+            "text": "קֹ֤ול יְהוָ֨ה׀ יְחֹולֵ֣ל אַיָּלֹות֮ וַֽיֶּחֱשֹׂ֪ף יְעָ֫רֹ֥ות וּבְהֵיכָלֹ֑ו כֻּ֝לֹּ֗ו אֹמֵ֥ר כָּבֹֽוד׃ "
+          },
+          {
+            "verse": 10,
+            "text": "יְ֭הוָה לַמַּבּ֣וּל יָשָׁ֑ב וַיֵּ֥שֶׁב יְ֝הוָ֗ה מֶ֣לֶךְ לְעֹולָֽם׃ "
+          },
+          {
+            "verse": 11,
+            "text": "יְֽהוָ֗ה עֹ֖ז לְעַמֹּ֣ו יִתֵּ֑ן יְהוָ֓ה׀ יְבָרֵ֖ךְ אֶת־עַמֹּ֣ו בַשָּׁלֹֽום׃ "
+          }
+        ]
+      },
+      {
+        "source": "NA28 (Novum Testamentum Graece)",
+        "book_nl": "Titus",
+        "book_original": "TIT",
+        "chapter": 2,
+        "language": "Grieks",
+        "verses": [
+          {
+            "verse": 11,
+            "text": "Ἐπεφάνη γὰρ ἡ χάρις τοῦ θεοῦ σωτήριος πᾶσιν ἀνθρώποις "
+          },
+          {
+            "verse": 12,
+            "text": "παιδεύουσα ἡμᾶς, ἵνα ἀρνησάμενοι τὴν ἀσέβειαν καὶ τὰς κοσμικὰς ἐπιθυμίας σωφρόνως καὶ δικαίως καὶ εὐσεβῶς ζήσωμεν ἐν τῷ νῦν αἰῶνι, "
+          },
+          {
+            "verse": 13,
+            "text": "προσδεχόμενοι τὴν μακαρίαν ἐλπίδα καὶ ἐπιφάνειαν τῆς δόξης τοῦ μεγάλου θεοῦ καὶ σωτῆρος ἡμῶν Ἰησοῦ Χριστοῦ, "
+          },
+          {
+            "verse": 14,
+            "text": "ὃς ἔδωκεν ἑαυτὸν ὑπὲρ ἡμῶν, ἵνα λυτρώσηται ἡμᾶς ἀπὸ πάσης ἀνομίας καὶ καθαρίσῃ ἑαυτῷ λαὸν περιούσιον, ζηλωτὴν καλῶν ἔργων. "
+          }
+        ]
+      }
+    ]
+  }
+}

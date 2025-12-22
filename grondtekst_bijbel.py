@@ -233,7 +233,7 @@ def get_grondtekst(reference):
                     "book_original": bhs_name,
                     "chapter": chapter,
                     "verses": verses,
-                    "language": "Hebrew"
+                    "language": "Hebreeuws"
                 }
 
     # Try NA28 (NT)
@@ -264,7 +264,7 @@ def get_grondtekst(reference):
                     "book_original": na28_code,
                     "chapter": chapter,
                     "verses": verses,
-                    "language": "Greek"
+                    "language": "Grieks"
                 }
                 
     return None

@@ -44,7 +44,64 @@ De liturgische gegevens en Schriftlezingen zijn hierboven vermeld. Neem deze als
 - Wat is de verhaallijn? Conflict, climax, ontknoping?
 - Wat wordt verzwegen of alleen gesuggereerd?
 
-### 4. Theologische analyse
+### 4. Structuralistische analyse
+Voer een structuralistische analyse uit volgens de volgende stappen:
+
+**BELANGRIJK TEGEN HALLUCINATIES:**
+- Baseer je analyse UITSLUITEND op de concrete inhoud van de bijbeltekst. Vermeld alleen elementen die daadwerkelijk in de tekst aanwezig zijn.
+- Verzin geen scènes, actanten, handelingen of andere elementen die niet in de tekst staan.
+- Citeer specifieke verzen als bewijs voor je analyses.
+- Vermeld geen medewerkers of opponenten die niet in de tekst genoemd of impliciet aanwezig zijn.
+- Vermijd het interpreteren van elementen die niet expliciet in de tekst staan.
+
+**STAP 1: SCHEMA CONSTRUCTIE**
+A. Scène-indeling
+- Analyseer de tekst systematisch en deel deze in scènes in. Een nieuwe scène wordt gemarkeerd door veranderingen in:
+  - Tijdsbepaling (temporele aanwijzingen)
+  - Plaatsbepaling (geografische/ruimtelijke wijzigingen)
+  - Actanten (hoofdpersonen die handelen)
+  - Medewerkers (personen/zaken die de actant helpen)
+  - Opponenten (personen/zaken die de actant tegenwerken)
+  - Bij besprekende teksten ook: werkwoordstijden en zinstypen
+
+B. Schema-opbouw
+Maak een analyse van de volgende elementen:
+- Scène (nummer/naam)
+- Tijd (temporele indicaties)
+- Plaats (geografische/ruimtelijke informatie)
+- Actant (hoofdhandelende persoon/entiteit)
+- Handeling (volledige werkwoorden, geen samenvatting)
+- Medewerker(s) (ondersteunende krachten)
+- Opponent(en) (tegenwerkende krachten)
+
+C. Schema-regels
+- Perspectief: Het perspectief van de actant bepaalt of iemand/iets medewerker of opponent is
+- Voornaamwoorden: Specificeer tussen haakjes naar wie persoonlijke voornaamwoorden verwijzen
+- Werkwoorden: Vermeld het complete werkwoord bij handelingen van actanten
+- Uitzonderingen: Citaten, bijzinnen en bijstellingen worden NIET in het schema verwerkt, maar kunnen wel helpen bij het identificeren van impliciete medewerkers/opponenten (deze tussen haakjes opnemen)
+
+**STAP 2: VERTICALE ANALYSE**
+Analyseer elke kolom afzonderlijk:
+- Tijd en Plaats: Welk patroon is zichtbaar in tijd- en plaatsverwijzingen?
+- Actanten: Wie/wat komt het meest voor als actant?
+- Handelingen: Kunnen de werkwoorden worden ingedeeld in trajecten (thematische groepen)?
+- Medewerkers en Opponenten: Wie zijn kwantitatief en kwalitatief de belangrijkste medewerkers en opponenten?
+
+**STAP 3: HORIZONTALE ANALYSE**
+Analyseer de scènes als geheel:
+- Structurele Samenhang: Welke scènes horen bij elkaar?
+- Temporele Ontwikkeling: Vertoont het verhaal chronologisch een regelmatige ontwikkeling?
+- Literaire Elementen: Bevat het verhaal herhalingen, citaten of andere structurele elementen?
+- Karakteranalyse: Waaraan ontlenen de actanten kracht/autoriteit om zo te handelen?
+- Evaluatieve Dimensie: Bevat de tekst conclusies/evaluaties/commentaar van actanten of auteur?
+
+**STAP 4: SYNTHESE EN INTERPRETATIE**
+Integreer de bevindingen en formuleer:
+- Centrale thema's die uit de analyse naar voren komen
+- Structurele patronen en hun betekenis
+- Theologische/literaire betekenis van de geanalyseerde structuur
+
+### 5. Theologische analyse
 **Centrale boodschap:**
 - Wat is de kern van wat deze tekst zegt?
 - Welk Godsbeeld komt naar voren?
@@ -59,9 +116,9 @@ De liturgische gegevens en Schriftlezingen zijn hierboven vermeld. Neem deze als
 - Welke leerstukken raken aan deze tekst?
 - Zijn er klassieke theologische controverses rondom deze tekst?
 
-### 5. Zoekmodellen voor Gods-, mens- en Jezusbeelden (Snoek)
+### 6. Zoekmodellen voor Gods-, mens- en Jezusbeelden (Snoek)
 
-Pas de zoekmodellenmethode toe om de belangrijkste actanten in de tekst systematisch te analyseren. 
+Pas de zoekmodellenmethode toe om de belangrijkste actanten in de tekst systematisch te analyseren.
 
 *Bron: Snoek, H. (2010). Een huis om in te wonen: Uitleg en interpretatie van de Bijbel. Kampen: Kok, 2e druk, pp. 180-199.*
 
@@ -129,7 +186,7 @@ van achteren: jood — Jezus — van voren: aankondiger Koninkrijk
 
 ---
 
-### 6. Samenhang van de lezingen
+### 7. Samenhang van de lezingen
 - Wat is de rode draad? Waar versterken of corrigeren de teksten elkaar?
 
 
@@ -199,6 +256,40 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
           "karakterisering": "string",
           "verhaallijn": "string|null",
           "verzwegen_gesuggereerd": "string|null"
+        }
+      },
+      "structuralistische_analyse": {
+        "schema_constructie": {
+          "scenarios": [
+            {
+              "scène": "string",
+              "tijd": "string",
+              "plaats": "string",
+              "actant": "string",
+              "handeling": "string",
+              "medewerker": ["string"],
+              "opponent": ["string"]
+            }
+          ],
+          "schema_regels": "string"
+        },
+        "verticale_analyse": {
+          "tijd_plaats_patroon": "string",
+          "actanten_analyse": "string",
+          "handelingen_trajecten": "string",
+          "medewerkers_opponenten_analyse": "string"
+        },
+        "horizontale_analyse": {
+          "structurele_samenhang": "string",
+          "temporele_ontwikkeling": "string",
+          "literaire_elementen": "string",
+          "karakteranalyse": "string",
+          "evaluatieve_dimensie": "string"
+        },
+        "synthese_interpretatie": {
+          "centrale_thema_s": ["string"],
+          "structurele_patroon": "string",
+          "theologische_betekenis": "string"
         }
       },
       "theologische_analyse": {
