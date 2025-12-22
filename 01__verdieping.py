@@ -553,7 +553,12 @@ def verify_kunst_cultuur(client: genai.Client, content: dict) -> dict:
 
     content_str = json.dumps(content, ensure_ascii=False, indent=2)
 
-    verification_prompt = """Je bent een strenge factchecker. Je taak is om de onderstaande JSON te controleren op niet-bestaande bronnen.
+    # Voeg een limiet toe aan de grootte van de content om timeouts te voorkomen
+    if len(content_str) > 100000:  # ~100KB limiet
+        print("⚠ Content te groot voor verificatie - limiteren tot 100KB")
+        content_str = content_str[:100000] + "\n\n... [inhoud ingekort voor verificatie]"
+
+    verification_prompt = """Je bent een strenge factchecker. Je taak is om de onderstaande JSON te controleren op duidelijk niet-bestaande bronnen.
 
 ## Instructies
 
@@ -564,7 +569,7 @@ def verify_kunst_cultuur(client: genai.Client, content: dict) -> dict:
    - Bij kunstwerken: controleer of het kunstwerk bestaat van die kunstenaar
    - Bij muziek: controleer of het stuk bestaat van die componist/artiest
 
-3. Als je een item NIET kunt verifiëren of als de details niet kloppen:
+3. Als je een item duidelijk NIET kunt verifiëren (duidelijk verzonnen, niet gevonden):
    - Verwijder het HELE object uit de array
    - Laat geen lege arrays achter als alle items verwijderd zijn
 
@@ -574,8 +579,8 @@ def verify_kunst_cultuur(client: genai.Client, content: dict) -> dict:
 5. Behoud de originele JSON structuur
 
 ## BELANGRIJK
-- Wees STRENG: bij twijfel, verwijderen
-- Liever 3 geverifieerde items dan 6 waarvan 2 niet bestaan
+- Wees STRENG: bij twijfel, verwijderen (liever 3 geverifieerde items dan 6 waarvan er 2 niet bestaan)
+- Concentreer je op duidelijke hallucinaties (compleet verzonnen items)
 - Retourneer ALLEEN valide JSON, geen markdown of toelichting
 - Begin DIRECT met de JSON, geen inleiding
 
@@ -583,7 +588,7 @@ def verify_kunst_cultuur(client: genai.Client, content: dict) -> dict:
 
 """
 
-    max_retries = 1
+    max_retries = 3
     for attempt in range(max_retries + 1):
         try:
             response = client.models.generate_content(
@@ -594,6 +599,8 @@ def verify_kunst_cultuur(client: genai.Client, content: dict) -> dict:
                     top_p=0.85,
                     top_k=20,
                     max_output_tokens=32768,
+                    # Verlaag de timeout parameters om te voorkomen dat het proces te lang duurt
+                    response_mime_type="application/json",
                     tools=[types.Tool(
                         google_search=types.GoogleSearch()
                     )],
@@ -634,7 +641,12 @@ def verify_kunst_cultuur(client: genai.Client, content: dict) -> dict:
 
         except Exception as e:
             print(f"✗ Verificatie fout: {str(e)} (poging {attempt + 1})")
+            import traceback
+            print(f"  Volledige foutstack: {traceback.format_exc()}")
             if attempt < max_retries:
+                print(f"  Wachten 5 seconden voor volgende poging...")
+                import time
+                time.sleep(5)  # Wacht 5 seconden tussen pogingen
                 continue
 
     # Als alles mislukt, retourneer originele content
