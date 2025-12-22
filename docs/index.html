@@ -2124,7 +2124,7 @@
             const entries = Object.entries(obj).filter(([k, v]) => !k.startsWith('_') && v !== null && v !== undefined);
 
             // Check if this object has multiple child objects with simple string values (good for grid)
-            const childObjects = entries.filter(([k, v]) => typeof v === 'object' && !Array.isArray(v));
+            const childObjects = entries.filter(([k, v]) => typeof v === 'object' && v !== null && !Array.isArray(v));
             const simpleValues = entries.filter(([k, v]) => typeof v !== 'object');
 
             // If we have multiple simple string values, render as compact data pairs
@@ -2323,9 +2323,10 @@
                 const isSimpleObjects = arr.every(item => {
                     const entries = Object.entries(item).filter(([k]) => !k.startsWith('_'));
                     // Relaxed check: Allow nested objects if they are not excessive
-                    const hasHugeNesting = entries.some(([k, v]) => 
-                        typeof v === 'object' && 
-                        !Array.isArray(v) && 
+                    const hasHugeNesting = entries.some(([k, v]) =>
+                        typeof v === 'object' &&
+                        v !== null &&
+                        !Array.isArray(v) &&
                         Object.keys(v).length > 6
                     );
                     return entries.length <= 12 && !hasHugeNesting;
@@ -2389,7 +2390,7 @@
             let html = `<div class="data-group">`;
             html += `<div class="data-group-title">${escapeHtml(formatKey(key))}</div>`;
 
-            if (typeof value === 'object' && !Array.isArray(value)) {
+            if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
                 for (const [category, liederen] of Object.entries(value)) {
                     if (category.startsWith('_')) continue;
                     if (!Array.isArray(liederen)) continue;
