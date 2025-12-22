@@ -1584,6 +1584,8 @@
         </div>
         <div class="header-center">
              <select id="file-selector" class="bevel-raised"></select>
+             <input type="file" id="file-input" accept=".json" style="display: none;">
+             <button id="load-custom-btn" class="icon-btn bevel-raised" title="Laad aangepast bestand">📁</button>
         </div>
         <div class="header-right">
             <div class="theme-toggle" id="theme-toggle" title="Dark mode"></div>
@@ -3968,7 +3970,7 @@
 
              if (jsonFiles.length > 0) {
                  // Set the selector to the exegese file and load it, or fall back to first file
-                 const defaultFile = jsonFiles.includes('voorbeeld_01.json') ? 'voorbeeld_02.json' : jsonFiles[0];
+                 const defaultFile = jsonFiles.includes('voorbeeld_02.json') ? 'voorbeeld_01.json' : jsonFiles[0];
                  fileSelector.value = defaultFile;
                  loadFile(defaultFile);
              }
@@ -3976,6 +3978,32 @@
         
         // Run initialization when the DOM is loaded
         document.addEventListener('DOMContentLoaded', initialize);
+
+        // Add event listener for the custom file load button
+        document.getElementById('load-custom-btn').addEventListener('click', () => {
+            document.getElementById('file-input').click();
+        });
+
+        // Add event listener for the file input
+        document.getElementById('file-input').addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                if (file.type === 'application/json' || file.name.endsWith('.json')) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        try {
+                            jsonData = JSON.parse(e.target.result);
+                            renderContent();
+                        } catch (error) {
+                            alert('Fout bij het lezen van het JSON-bestand: ' + error.message);
+                        }
+                    };
+                    reader.readAsText(file);
+                } else {
+                    alert('Alleen JSON-bestanden zijn toegestaan.');
+                }
+            }
+        });
 
     </script>
 </body>
