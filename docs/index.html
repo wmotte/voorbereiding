@@ -2615,8 +2615,11 @@
                 }
                 html += `</div></div>`;
 
-                // Compact layout for kindermoment content
-                html += `<div class="focus-sections">`;
+                // Two-column layout: left for short content, right for long content (verhaal script)
+                html += `<div style="display: grid; grid-template-columns: 1fr 2fr; gap: 15px; margin-top: 10px;">`;
+
+                // Left column: Object, Focus Schriftlezing, Afbeelding Idee (stacked)
+                html += `<div style="display: flex; flex-direction: column; gap: 10px;">`;
 
                 // Object section
                 if (optie.object) {
@@ -2634,14 +2637,6 @@
                     html += `</div>`;
                 }
 
-                // Verhaal Script section
-                if (optie.verhaal_script) {
-                    html += `<div class="focus-section">`;
-                    html += `<div class="focus-section-title">Verhaal Script</div>`;
-                    html += `<div class="focus-section-content">${processText(optie.verhaal_script)}</div>`;
-                    html += `</div>`;
-                }
-
                 // Afbeelding Idee section
                 if (optie.afbeelding_idee) {
                     html += `<div class="focus-section">`;
@@ -2650,7 +2645,19 @@
                     html += `</div>`;
                 }
 
-                html += `</div>`; // end focus-sections
+                html += `</div>`; // end left column
+
+                // Right column: Verhaal Script (longer content)
+                html += `<div>`;
+                if (optie.verhaal_script) {
+                    html += `<div class="focus-section" style="height: 100%;">`;
+                    html += `<div class="focus-section-title">Verhaal Script</div>`;
+                    html += `<div class="focus-section-content" style="height: 100%;">${processText(optie.verhaal_script)}</div>`;
+                    html += `</div>`;
+                }
+                html += `</div>`; // end right column
+
+                html += `</div>`; // end two-column layout
                 html += `</div>`; // end focus-card
             });
 
