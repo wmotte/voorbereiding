@@ -1840,6 +1840,22 @@
                         subSections.push(item.subKey);
                         subSectionLabels[item.subKey] = label;
                     });
+                } else if (key === '12_representatieve_hoorders') {
+                    // Special handling for Representatieve Hoorders - show persona names and ages
+                    if (sectionData.personas && Array.isArray(sectionData.personas)) {
+                        sectionData.personas.forEach((persona, index) => {
+                            const naam = persona.naam ?
+                                (typeof persona.naam === 'object' ?
+                                    `${persona.naam.voornaam || ''} ${persona.naam.achternaam || ''}`.trim() :
+                                    persona.naam) :
+                                `Hoorder ${persona.nummer || index + 1}`;
+                            const leeftijd = persona.leeftijd ? `${persona.leeftijd} jaar` : '';
+                            const label = leeftijd ? `${naam} (${leeftijd})` : naam;
+
+                            subSections.push(`personas-${persona.nummer || (index + 1)}`);
+                            subSectionLabels[`personas-${persona.nummer || (index + 1)}`] = label;
+                        });
+                    }
                 } else {
                     // Default: get subsections from top-level keys
                     subSections = Object.keys(sectionData)

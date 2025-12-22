@@ -1,6 +1,6 @@
 # Kalender: Gedenkdagen en Bijzondere Momenten
 
-Maak een overzicht van alle relevante kalendergegevens voor de week rondom {{datum}}.
+Maak een overzicht van alle relevante kalendergegevens voor de week die begint op {{datum}} en zich uitstrekt tot en met 6 dagen later.
 
 ## Context
 
@@ -153,45 +153,49 @@ Gebruik betrouwbare bronnen zoals:
 ## Voorbeeld format
 
 ```markdown
-### Zondag 15 december 2024
+### Zondag 4 januari 2026 (preken op deze datum)
 
 **Kerkelijk:**
 
-- Derde Advent (Gaudete)
+- Epifanie - Openbaring van de Heer
 
-- Gedachtenis H. Johannes van het Kruis (kerkleraar, mysticus, †1591)
-
-**Internationaal:**
-
-- Internationale Theedag
-
-**Weer:**
-
-- Overwegend bewolkt, 6°C, kans op regen
-
-**Astronomie:**
-
-- Zonsopgang 08:41, zonsondergang 16:28
-
----
-
-### Dinsdag 17 december 2024
-
-**Kerkelijk:**
-
-- Begin van het Kerstoctaaf in de Oosterse kerken
+- Gedachtenis H. Hendrikka van Delft (vrouwenheilige, mystica, †1260)
 
 **Joods:**
 
-- 16 Kislev 5785 - Aanvang Chanoeka
+- 15 Tevet 5786 - Fast of the Tenth of Tevet
+
+**Weer:**
+
+- Overwegend bewolkt, 4°C, kans op lichte sneeuw
+
+**Astronomie:**
+
+- Zonsopgang 08:32, zonsondergang 16:35
 
 ---
 
-### Vrijdag 20 december 2024
+### Maandag 5 januari 2026
+
+**Kerkelijk:**
+
+- Ochtend na Epifanie - de Heer openbaart zich aan de wereld
+
+**Joods:**
+
+- 16 Tevet 5786
+
+---
+
+### Dinsdag 6 januari 2026
+
+**Kerkelijk:**
+
+- Heilig Drie-eenheid (in sommige kerken)
 
 **Internationaal:**
 
-- Internationale Dag van de Menselijke Solidariteit
+- Internationale Dag van de Gezondheidswaakhond
 ```
 
 Toon alleen dagen waarop iets te melden valt.
@@ -204,10 +208,10 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
 
 ```json
 {
-  "week_van": "string - bijv. '15-21 december 2024'",
+  "week_van": "string - bijv. '4-9 januari 2026'",
   "dagen": [
     {
-      "datum": "string - bijv. 'Zondag 15 december 2024'",
+      "datum": "string - bijv. 'Zondag 4 januari 2026'",
       "dag": "string - zondag|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag",
       "is_preekzondag": "boolean",
       "kerkelijk": [
