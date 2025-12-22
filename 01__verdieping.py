@@ -151,7 +151,7 @@ def select_folder() -> Path:
 
 
 def read_previous_analyses(folder: Path) -> dict:
-    """Lees alle vorige analyses uit de folder (JSON of MD)."""
+    """Lees alle vorige analyses uit de folder (JSON of MD) en stript de _meta data."""
     analyses = {}
 
     # Bestanden die we willen lezen (basis naam zonder extensie)
@@ -198,6 +198,9 @@ def read_previous_analyses(folder: Path) -> dict:
         if filepath_json.exists():
             with open(filepath_json, "r", encoding="utf-8") as f:
                 data = json.load(f)
+            # Verwijder de _meta key om tokens te besparen
+            if "_meta" in data:
+                del data["_meta"]
             analyses[key] = json.dumps(data, ensure_ascii=False, indent=2)
             continue
             
@@ -209,6 +212,9 @@ def read_previous_analyses(folder: Path) -> dict:
              if old_json.exists():
                 with open(old_json, "r", encoding="utf-8") as f:
                     data = json.load(f)
+                # Verwijder de _meta key om tokens te besparen
+                if "_meta" in data:
+                    del data["_meta"]
                 analyses[key] = json.dumps(data, ensure_ascii=False, indent=2)
              elif old_md.exists():
                 with open(old_md, "r", encoding="utf-8") as f:
