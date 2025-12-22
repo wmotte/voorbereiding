@@ -64,30 +64,49 @@ Voordat je de narratieve structuur (de plot) bouwt, moet de theologische kern he
         3.  **Reflective (Reflecterend):** Teksten die Gods verlossende aard (Zijn *hesed*, trouw, almacht, rechtvaardigheid) tonen. Omdat Christus de perfecte afbeelding van de Vader is, zien we in Gods handelen in het OT de contouren van Christus' bediening. *Focus: Gods karakter als Redder.*
         4.  **Resultant (Resulterend):** Teksten die ethisch gedrag, lofprijzing of gebed beschrijven als de *vrucht* en *dankbare reactie* op reeds ontvangen genade. *Focus: Gehoorzaamheid als dankbaarheid.*
 
-*   **Genade vs. Moralisme (Chemie van het hart):**
-    *   *Het Probleem:* Moralisme preekt de imperatief ("Doe dit") los van de indicatief ("Omdat God dit deed").
-    *   *De Oplossing:* Zoek de "chemie van het hart": de ervaring van Gods onvoorwaardelijke liefde en genade is de enige krachtbron die het hart fundamenteel verandert en motiveert tot ware heiliging.
+*   **Genade vs. Moralisme (Chemie van het hart):** De motivatie voor verandering mag niet angst of plicht zijn, maar de ervaring van Gods liefde (genade). De indicatief fundeert de imperatief.
+*   **F-O-R-M Structuur:** Een expositorische preek volgt de tekst.
+    *   **F**aithful: Trouw aan de tekst.
+    *   **O**bvious: Duidelijk afgeleid uit de tekst (geen inlegkunde).
+    *   **R**elated to FCF: Elk punt adresseert de nood.
+    *   **M**oving toward climax: Een beweging naar de verkondiging van Christus.
+*   **De Dubbele Helix (3 Componenten):** Tekstverklaring en toepassing staan niet los van elkaar. Elk hoofdpunt in het raamwerk moet bestaan uit:
+    1.  **Verklaring:** Wat zegt de tekst? (Exegese)
+    2.  **Illustratie:** Maak het zichtbaar/voelbaar ("lived-body detail").
+    3.  **Toepassing:** Wat betekent dit voor de FCF van de hoorder?
 
-**OPDRACHT:**
+**Opdracht:**
 
 1.  **Bepaal de FCF:**
     - Wat was de crisis, nood of zonde die de aanleiding vormde voor deze tekst?
-    - Benoem concreet wat wij vandaag gemeenschappelijk hebben met de oorspronkelijke hoorders in dit opzicht.
-    - Formuleer dit als een menselijke nood die schreeuwt om goddelijke tussenkomst.
+    - **EIS:** Beschrijf dit in minimaal 75 woorden. Verbind de algemene menselijke nood *expliciet* aan de specifieke context van {{plaatsnaam}} (bijv. prestatiedruk, eenzaamheid, controlebehoefte).
+    - Benoem concreet wat wij vandaag gemeenschappelijk hebben met de oorspronkelijke hoorders. Formuleer dit als een menselijke nood die schreeuwt om goddelijke tussenkomst.
 
 2.  **Christocentrische Duiding:**
     - Kies de meest passende categorie (Predictive, Preparatory, Reflective, Resultant) en onderbouw dit vanuit de tekst.
-    - Leg uit hoe deze tekst ons blikveld richt op het werk of de persoon van Christus.
+    - **EIS:** Beschrijf in minimaal 75 woorden hoe deze tekst ons blikveld richt op het werk of de persoon van Christus. Vermijd oppervlakkige clichés; toon de theologische diepte.
 
 3.  **Motivatie en Genade:**
     - Analyseer de verhouding tussen indicatief (genade) en imperatief (opdracht).
-    - Waar zit de "genade-krachtbron" in deze passage die de hoorder in staat stelt om te gehoorzamen?
+    - **EIS:** Leg in minimaal 75 woorden uit hoe de genade in deze tekst zorgt voor de "chemie van het hart". Hoe bevrijdt dit de hoorder van moralisme ("ik moet beter mijn best doen")?
+
+4.  **Expositorisch Raamwerk (F-O-R-M):**
+    - Ontwerp 2 of 3 hoofdpunten die direct uit de tekst komen.
+    - Zorg dat elk punt de FCF adresseert en toewerkt naar de climax (Christus).
+    - Geef per punt een suggestie voor een **illustratie** die het "lived-body detail" bevat.
 
 ---
 
 ### Stap 3: De vijf stadia van de Homiletical Plot
 
 Werk de preekschets uit in vijf stappen.
+
+**CRUCIALE INSTRUCTIE: SHOW, DON'T TELL**
+Vertaal de theologische inzichten uit Stap 2 (Chapell) naar een **narratieve ervaring**.
+*   **FCF:** Zeg niet "de FCF is eenzaamheid", maar *beschrijf* een situatie waarin de hoorder die eenzaamheid voelt.
+*   **Christocentrisch:** Preek geen abstracte christologie, maar *teken* Jezus die handelt in de tekst.
+*   **Genade:** Leg de leer van genade niet uit, maar *laat zien* wat het doet met een mens als de druk wegvalt.
+*   **Jargon:** Gebruik **geen** homiletische termen (zoals "FCF", "indicatief", "perikoop") in de inhoud van de schets zelf.
 
 #### 1. HÈ? (OOPS!) - De Kwestie (Conflict / Verstoren van het evenwicht)
 *Doel: De 'homiletische jeuk' moet binnen 2-3 minuten de jeuk van de hoorder worden.*
@@ -182,16 +201,36 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
   },
   "homiletische_brug_chapell": {
     "fcf": {
-      "beschrijving": "string - Fallen Condition Focus: De gedeelde menselijke nood/gebrokenheid",
-      "waarom_vraag": "string - Welk probleem lost deze tekst op?"
+      "beschrijving": "string - MINIMAAL 75 woorden. Beschrijf de FCF diepgaand en verbind deze expliciet aan de specifieke context van {{plaatsnaam}}.",
+      "waarom_vraag": "string - Welk existentieel probleem lost deze tekst op?"
     },
     "christocentrische_duiding": {
       "categorie": "string - Predictive|Preparatory|Reflective|Resultant",
-      "uitleg": "string - Hoe onthult deze tekst Gods verlossingsplan?"
+      "uitleg": "string - MINIMAAL 75 woorden. Hoe onthult deze tekst Gods verlossingsplan? Wees theologisch precies."
     },
     "motivatie_genade": {
-      "genade_indicatief": "string - Wat God gedaan heeft",
-      "motivatie_heiliging": "string - Hoe dit leidt tot 'chemie van het hart' (geen moralisme)"
+      "genade_indicatief": "string - Wat God gedaan heeft (de objectieve basis)",
+      "motivatie_heiliging": "string - MINIMAAL 75 woorden. Hoe leidt dit tot 'chemie van het hart' en bevrijding van moralisme?"
+    },
+    "expositorisch_raamwerk": {
+      "hoofdpunt_1": {
+        "tekst_basis": "string - Vers/gedeelte waar dit op rust (Faithful/Obvious)",
+        "illustratie_idee": "string - Beeld/voorbeeld ('lived-body detail')",
+        "relatie_fcf": "string - Hoe raakt dit punt de nood? (Related)",
+        "beweging": "string - Hoe leidt dit punt naar de oplossing? (Moving)"
+      },
+      "hoofdpunt_2": {
+        "tekst_basis": "string",
+        "illustratie_idee": "string",
+        "relatie_fcf": "string",
+        "beweging": "string"
+      },
+      "hoofdpunt_3": {
+        "tekst_basis": "string (optioneel)",
+        "illustratie_idee": "string (optioneel)",
+        "relatie_fcf": "string",
+        "beweging": "string"
+      }
     }
   },
   "homiletical_plot": {

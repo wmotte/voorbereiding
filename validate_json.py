@@ -114,6 +114,7 @@ class LiturgischeAnalyseValidator:
         self._validate_focus_en_functie()
         self._validate_kalender()
         self._validate_hoorders()
+        self._validate_homiletische_analyse()
         self._validate_gebeden()
         self._validate_kindermoment()
         self._validate_bijbelteksten()
@@ -343,6 +344,51 @@ class LiturgischeAnalyseValidator:
                 # Check persona has naam
                 if 'naam' not in persona:
                     self.errors.append(ValidationError(f"{path}.naam", "Missing naam", "warning"))
+
+    def _validate_homiletische_analyse(self):
+        """Validate 13_homiletische_analyse section."""
+        section = '13_homiletische_analyse'
+        if section not in self.data or not isinstance(self.data[section], dict):
+            return
+
+        data = self.data[section]
+        self._check_required_keys(section, data, ['tekstkeuze', 'homiletical_plot'])
+
+        # Check Chapell bridge if present (it should be based on prompt)
+        if 'homiletische_brug_chapell' in data:
+            chapell = data['homiletische_brug_chapell']
+            self._check_required_keys(f"{section}.homiletische_brug_chapell", chapell, 
+                                    ['fcf', 'christocentrische_duiding', 'motivatie_genade'])
+            
+            # Check expositorisch raamwerk
+            if 'expositorisch_raamwerk' in chapell:
+                raamwerk = chapell['expositorisch_raamwerk']
+                # Should have at least hoofdpunt_1 and hoofdpunt_2
+                if 'hoofdpunt_1' not in raamwerk or 'hoofdpunt_2' not in raamwerk:
+                    self.errors.append(ValidationError(f"{section}.homiletische_brug_chapell.expositorisch_raamwerk", 
+                                                     "Must have at least hoofdpunt_1 and hoofdpunt_2", "warning"))
+                
+                # Check structure of points
+                for key, punt in raamwerk.items():
+                    if key.startswith('hoofdpunt') and isinstance(punt, dict):
+                        self._check_required_keys(f"{section}.homiletische_brug_chapell.expositorisch_raamwerk.{key}", 
+                                                punt, ['tekst_basis', 'relatie_fcf', 'beweging', 'illustratie_idee'])
+
+        # Validate homiletical_plot structure
+        if 'homiletical_plot' in data and isinstance(data['homiletical_plot'], dict):
+            plot = data['homiletical_plot']
+            expected_stages = [
+                'he_kwestie_oops', 
+                'oei_verdieping_ugh', 
+                'aha_wending_aha', 
+                'ja_verkondiging_whee', 
+                'zo_doorwerking_yeah'
+            ]
+            for stage in expected_stages:
+                if stage not in plot:
+                    self.errors.append(ValidationError(f"{section}.homiletical_plot.{stage}", "Missing stage", "warning"))
+                elif isinstance(plot[stage], dict):
+                    self._check_required_keys(f"{section}.homiletical_plot.{stage}", plot[stage], ['titel', 'doel', 'inhoud'])
 
     def _validate_gebeden(self):
         """Validate 14_gebeden section."""
