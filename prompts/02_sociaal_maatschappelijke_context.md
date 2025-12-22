@@ -42,6 +42,20 @@ Bij het noemen van specifieke namen van scholen, verenigingen, bedrijven of inst
 2. Als je geen specifieke naam kunt vinden, gebruik dan een algemene omschrijving (bijv. "diverse basisscholen", "lokale voetbalvereniging") in plaats van een naam te verzinnen.
 3. Het is beter om "niet specifiek gevonden" te rapporteren dan een foutieve naam.
 
+**SPECIFIEK VOOR KERKELIJKE GEGEVENS:**
+1. **Verifieer** alle genoemde kerken, gemeenten en denominaties via officiële kerkelijke websites, kerkelijke kaders of lokale bronnen.
+2. Noem alleen kerken die daadwerkelijk in {{plaatsnaam}} aanwezig zijn.
+3. Gebruik correcte denominatienaamgeving (bijv. "PKN" i.p.v. "Gereformeerde Kerk", tenzij de gemeente daadwerkelijk tot die denominatie behoort).
+4. Als {{gemeente}} deel uitmaakt van een specifieke kerkelijke structuur, verifieer dan of dit daadwerkelijk zo is (bijv. Gereformeerde Gemeente, Christelijk Gereformeerde Kerk, etc.).
+5. Voor kerkelijke denominaties die je noemt, geef alleen informatie als je deze kunt bevestigen via betrouwbare bronnen.
+
+**SPECIFIEK VOOR ANDERE INSTELLINGEN EN ORGANISATIES:**
+1. **Verifieer** namen van scholen, bedrijven, verenigingen, zorginstellingen en winkelcentra via officiële websites of betrouwbare lokale bronnen.
+2. Gebruik alleen specifieke namen als je deze kunt bevestigen in {{plaatsnaam}}.
+3. Vermijd het noemen van bekende namen die waarschijnlijk elders gevestigd zijn (bijv. Albert Heijn, Jumbo, etc.) tenzij je zeker weet dat ze daadwerkelijk in {{plaatsnaam}} aanwezig zijn.
+4. Geef voorzichtigheid bij het noemen van recente gebeurtenissen - verifieer data en details via lokale nieuwsbronnen.
+5. Als je geen betrouwbare informatie kunt vinden, gebruik dan algemene termen i.p.v. specifieke namen.
+
 ## JSON Output Schema
 
 Retourneer UITSLUITEND een JSON object volgens onderstaand schema:

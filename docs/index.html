@@ -1744,16 +1744,38 @@
                 ? Math.max(...numberedSections.map(k => parseInt(k.match(/^(\d+)_/)[1])))
                 : 0;
 
+            // Check if there's already a '01_*' section
+            const hasSection01 = numberedSections.some(k => /^01_/.test(k));
+
             // Initialize counter for unnumbered sections
             let unnumberedCounter = highestNum + 1;
 
-            const sections = allSections.sort();
+            // Special handling: put Bijbelteksten as second item (number 01 if no 01 section exists, otherwise 00)
+            const sections = allSections.sort((a, b) => {
+                // Bijbelteksten should come first among unnumbered sections (effectively second overall after 01_*)
+                if (a === 'Bijbelteksten') return -1;
+                if (b === 'Bijbelteksten') return 1;
+                return a.localeCompare(b);
+            });
 
             sections.forEach((key, index) => {
                 const title = sectionTitles[key] || formatKey(key);
-                // Extract number from key like "01_zondag" or assign next available number for unnumbered sections
-                const numMatch = key.match(/^(\d+)_/);
-                const num = numMatch ? numMatch[1] : String(unnumberedCounter++).padStart(2, '0');
+                // Extract number from key like "01_zondag" or assign special number for Bijbelteksten or next available number for other unnumbered sections
+                let num;
+                if (key === 'Bijbelteksten' && hasSection01) {
+                    // If there's already a 01 section, find the lowest available number for Bijbelteksten to be second
+                    let candidate = 1;
+                    while (numberedSections.some(k => k.startsWith(candidate.toString().padStart(2, '0') + '_'))) {
+                        candidate++;
+                    }
+                    num = candidate.toString().padStart(2, '0');
+                } else if (key === 'Bijbelteksten') {
+                    // If there's no 01 section, make Bijbelteksten '01' to be second
+                    num = '01';
+                } else {
+                    const numMatch = key.match(/^(\d+)_/);
+                    num = numMatch ? numMatch[1] : String(unnumberedCounter++).padStart(2, '0');
+                }
                 const sectionData = jsonData[key];
 
                 // Special handling for Bijbelteksten - show bible references as submenu
