@@ -134,27 +134,14 @@
             gap: 10px;
         }
 
-        .load-btn {
-            background: var(--bg-secondary);
-            color: var(--text-primary);
-            border: none;
-            padding: 8px 16px;
-            cursor: pointer;
-            font-family: inherit;
-            font-size: 0.95em;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.2s;
-        }
-
-        .load-btn:hover {
-            background: var(--accent);
-            color: white;
-        }
-
-        .load-btn:active {
-            border-color: var(--bevel-dark) var(--bevel-light) var(--bevel-light) var(--bevel-dark);
+        #file-selector {
+             background: var(--bg-secondary);
+             color: var(--text-primary);
+             border: none;
+             padding: 8px 16px;
+             cursor: pointer;
+             font-family: inherit;
+             font-size: 0.95em;
         }
 
         .header-right {
@@ -1596,10 +1583,7 @@
             <div class="logo">Liturgische Analyse</div>
         </div>
         <div class="header-center">
-            <button class="load-btn bevel-raised" id="load-btn">
-                <span>📂</span> <span>JSON Laden</span>
-            </button>
-            <input type="file" id="file-input" accept=".json">
+             <select id="file-selector" class="bevel-raised"></select>
         </div>
         <div class="header-right">
             <div class="theme-toggle" id="theme-toggle" title="Dark mode"></div>
@@ -1618,8 +1602,7 @@
         <div class="welcome">
             <div class="welcome-icon">📖</div>
             <h1>Welkom</h1>
-            <p>Klik op de knop <strong>"JSON Laden"</strong> hierboven om een liturgische analyse te openen.</p>
-            <p style="color: var(--text-muted); font-size: 0.9em;">Selecteer een <code>combined_output.json</code> bestand uit de output map.</p>
+            <p>Kies een analyse uit het menu hierboven om te beginnen.</p>
         </div>
     </main>
 
@@ -1636,11 +1619,14 @@
         const sidebar = document.getElementById('sidebar');
         const mainContent = document.getElementById('main-content');
         const navItems = document.getElementById('nav-items');
-        const loadBtn = document.getElementById('load-btn');
-        const fileInput = document.getElementById('file-input');
+        const fileSelector = document.getElementById('file-selector');
         const themeToggle = document.getElementById('theme-toggle');
         const menuToggle = document.getElementById('menu-toggle');
         const scrollTopBtn = document.getElementById('scroll-top');
+        
+        // List of available JSON files
+        const jsonFiles = ["voorbeeld_01.json", "voorbeeld_02.json"];
+
 
         // Section titles mapping
         const sectionTitles = {
@@ -1679,24 +1665,25 @@
             sidebarVisible = !sidebarVisible;
             sidebar.classList.toggle('visible', sidebarVisible);
         });
+        
+        // File loading from selector
+        fileSelector.addEventListener('change', () => loadFile(fileSelector.value));
 
-        // File loading
-        loadBtn.addEventListener('click', () => fileInput.click());
-        fileInput.addEventListener('change', handleFileLoad);
+        async function loadFile(fileName) {
+             if (!fileName) return;
 
-        async function handleFileLoad(e) {
-            const file = e.target.files[0];
-            if (!file) return;
-
-            mainContent.innerHTML = '<div class="loading">Bestand laden...</div>';
-
-            try {
-                const text = await file.text();
-                jsonData = JSON.parse(text);
-                renderContent();
-            } catch (err) {
-                mainContent.innerHTML = `<div class="welcome"><h1>Fout</h1><p>Kon bestand niet laden: ${err.message}</p></div>`;
-            }
+             mainContent.innerHTML = '<div class="loading">Bestand laden...</div>';
+             
+             try {
+                 const response = await fetch(fileName);
+                 if (!response.ok) {
+                    throw new Error(`Bestand niet gevonden: ${response.statusText}`);
+                 }
+                 jsonData = await response.json();
+                 renderContent();
+             } catch (err) {
+                 mainContent.innerHTML = `<div class="welcome"><h1>Fout</h1><p>Kon bestand niet laden: ${err.message}</p></div>`;
+             }
         }
 
         // Helper function to convert BHS/NA28 book codes to NBV21 codes
@@ -3470,6 +3457,27 @@
                 sidebarVisible = true;
             }
         });
+
+        // --- NEW ---
+        // Populate the file selector and load the default file
+        function initialize() {
+             jsonFiles.forEach(file => {
+                 const option = document.createElement('option');
+                 option.value = file;
+                 option.textContent = file;
+                 fileSelector.appendChild(option);
+             });
+             
+             if (jsonFiles.length > 0) {
+                 // Set the selector to the first file and load it
+                 fileSelector.value = jsonFiles[0];
+                 loadFile(jsonFiles[0]);
+             }
+        }
+        
+        // Run initialization when the DOM is loaded
+        document.addEventListener('DOMContentLoaded', initialize);
+
     </script>
 </body>
 </html>
