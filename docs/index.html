@@ -2074,6 +2074,8 @@
                 contentHtml = renderHoordersSection(dataToRender);
             } else if (key === '08_exegese') {
                 contentHtml = renderExegeseSection(dataToRender);
+            } else if (key === '01_zondag_kerkelijk_jaar') {
+                contentHtml = renderObjectWithIds(dataToRender, key);
             } else if (key === '15_kindermoment') {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             } else {
@@ -2215,6 +2217,11 @@
             // Kindermoment opties
             if (key === 'kindermoment_opties' && parentKey === '15_kindermoment') {
                 return renderKindermoment(value);
+            }
+
+            // Positie kerkelijk jaar - combine leesrooster_jaar with dominant_evangelie
+            if (key === 'positie_kerkelijk_jaar' && parentKey === '01_zondag_kerkelijk_jaar') {
+                return renderPositieKerkelijkJaar(value);
             }
 
             // Focus en functie opties
@@ -2675,6 +2682,48 @@
             });
 
             html += `</div>`;
+            return html;
+        }
+
+        function renderPositieKerkelijkJaar(data) {
+            let html = `<div class="data-group">`;
+            html += `<div class="nested-object">`;
+
+            // Create a copy of the data to modify
+            const modifiedData = { ...data };
+
+            // Combine leesrooster_jaar and dominant_evangelie if both exist
+            if (modifiedData.leesrooster_jaar && modifiedData.dominant_evangelie) {
+                modifiedData['Leesrooster & Evangelie'] = `${modifiedData.leesrooster_jaar} (${modifiedData.dominant_evangelie})`;
+                // Remove the individual fields
+                delete modifiedData.leesrooster_jaar;
+                delete modifiedData.dominant_evangelie;
+            }
+
+            // Render the modified object
+            for (const [key, value] of Object.entries(modifiedData)) {
+                if (key.startsWith('_') || value === null || value === undefined) continue;
+
+                if (Array.isArray(value)) {
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">${escapeHtml(formatKey(key))}</div>`;
+                    html += `<div class="data-value">${renderArray(value, key)}</div>`;
+                    html += `</div>`;
+                } else if (typeof value === 'object') {
+                    html += `<div class="data-group">`;
+                    html += `<div class="data-group-title">${escapeHtml(formatKey(key))}</div>`;
+                    html += `<div class="nested-object">`;
+                    html += renderObject(value, key);
+                    html += `</div></div>`;
+                } else {
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">${escapeHtml(formatKey(key))}</div>`;
+                    html += `<div class="data-value">${formatValue(value)}</div>`;
+                    html += `</div>`;
+                }
+            }
+
+            html += `</div></div>`;
             return html;
         }
 
