@@ -333,16 +333,23 @@ def save_grondtekst_lezingen(folder, liturgische_context_json):
             # Sort verses by verse number and remove duplicates
             unique_verses = {v['verse']: v for v in all_verses_for_ref}.values()
             sorted_verses = sorted(list(unique_verses), key=lambda x: x['verse'])
-            
+
             collected_data_header["verses"] = sorted_verses
-            
-            # Construct filename with only book and chapter
+
+            # Construct filename with book, chapter and verse specification
             book_name_for_file = collected_data_header["book_nl"].title()
             chapter_for_file = collected_data_header["chapter"]
-            
-            safe_name = f"{book_name_for_file}_{chapter_for_file}"
-            safe_name = re.sub(r'[^\w_]', '', safe_name.replace(" ", "_"))
-            
+
+            # Extract verse part from original reference for filename
+            verse_match = re.match(r"^\s*(?:\d\s)?[A-Za-zëïüöä\s]+?\s+\d+[\s,:]+([\d\-–.;]+)", ref_str)
+            if verse_match:
+                verse_spec = verse_match.group(1)
+                safe_name = f"{book_name_for_file}_{chapter_for_file}_{verse_spec}"
+            else:
+                safe_name = f"{book_name_for_file}_{chapter_for_file}"
+
+            safe_name = re.sub(r'[^\w_.\-]', '', safe_name.replace(" ", "_"))
+
             filename = f"{safe_name}_Grondtekst.json"
             filepath = bijbel_dir / filename
             

@@ -1699,6 +1699,32 @@
             }
         }
 
+        // Helper function to convert BHS/NA28 book codes to NBV21 codes
+        function bhs2nbv21(bookOriginal) {
+            if (!bookOriginal) return null;
+            const mapping = {
+                // BHS (Hebrew) to NBV21
+                'Genesis': 'GEN', 'Exodus': 'EXO', 'Leviticus': 'LEV', 'Numeri': 'NUM', 'Deuteronomium': 'DEU',
+                'Josua': 'JOS', 'Judices': 'JDG', 'Ruth': 'RUT',
+                'Samuel_I': '1SA', 'Samuel_II': '2SA', 'Reges_I': '1KI', 'Reges_II': '2KI',
+                'Chronica_I': '1CH', 'Chronica_II': '2CH', 'Esra': 'EZR', 'Nehemia': 'NEH',
+                'Esther': 'EST', 'Iob': 'JOB', 'Psalmi': 'PSA', 'Proverbia': 'PRO',
+                'Ecclesiastes': 'ECC', 'Canticum': 'SNG', 'Jesaia': 'ISA', 'Jeremia': 'JER',
+                'Threni': 'LAM', 'Ezechiel': 'EZK', 'Daniel': 'DAN', 'Hosea': 'HOS',
+                'Joel': 'JOL', 'Amos': 'AMO', 'Obadia': 'OBA', 'Jona': 'JON', 'Micha': 'MIC',
+                'Nahum': 'NAM', 'Habakuk': 'HAB', 'Zephania': 'ZEP', 'Haggai': 'HAG',
+                'Sacharia': 'ZEC', 'Maleachi': 'MAL',
+                // NA28 (Greek) - already uses NBV21-like codes
+                'MAT': 'MAT', 'MRK': 'MRK', 'LUK': 'LUK', 'JHN': 'JHN', 'ACT': 'ACT',
+                'ROM': 'ROM', '1CO': '1CO', '2CO': '2CO', 'GAL': 'GAL', 'EPH': 'EPH',
+                'PHP': 'PHP', 'COL': 'COL', '1TH': '1TH', '2TH': '2TH', '1TI': '1TI',
+                '2TI': '2TI', 'TIT': 'TIT', 'PHM': 'PHM', 'HEB': 'HEB', 'JAS': 'JAS',
+                '1PE': '1PE', '2PE': '2PE', '1JN': '1JN', '2JN': '2JN', '3JN': '3JN',
+                'JUD': 'JUD', 'REV': 'REV'
+            };
+            return mapping[bookOriginal] || null;
+        }
+
         // Render all content
         function renderContent() {
             if (!jsonData) return;
@@ -1768,14 +1794,12 @@
                                 const verzen = eersteVers === laatsteVers ? String(eersteVers) : `${eersteVers}-${laatsteVers}`;
                                 const vertalingLabel = vertalingLabels[vertaling] || vertaling;
 
-                                // Find liturgical order index - try to match with lezingen
+                                // For grondtekst, convert book_original to NBV21 code
+                                const normalizedBookCode = bhs2nbv21(bookCode) || bookCode;
+
+                                // Find liturgical order index
                                 let orderIndex = lezingenOrder.findIndex(l => {
-                                    if (l.book === bookCode) return l.chapter === perikoop.chapter;
-                                    if (perikoop.book_nl) {
-                                        const grondtekstCode = getBoekCode(perikoop.book_nl);
-                                        return l.book === grondtekstCode && l.chapter === perikoop.chapter;
-                                    }
-                                    return false;
+                                    return l.book === normalizedBookCode && l.chapter === perikoop.chapter;
                                 });
                                 if (orderIndex === -1) orderIndex = 999; // Unknown goes to end
 
@@ -1783,6 +1807,7 @@
                                     vertaling: vertalingLabel,
                                     vertalingKey: vertaling,
                                     book: bookCode,
+                                    normalizedBook: normalizedBookCode,
                                     book_nl: perikoop.book_nl,
                                     chapter: perikoop.chapter,
                                     verzen: verzen,
@@ -1793,10 +1818,18 @@
                         }
                     });
 
-                    // Sort by liturgical order, then by translation (Grondtekst first, then NBV21, then NB)
+                    // Sort by: 1) normalizedBook+chapter (to group same pericopes), 2) liturgical order, 3) translation order
                     const vertalingOrder = { 'grondtekst': 0, 'nbv21': 1, 'naardense_bijbel': 2 };
                     allPerikopen.sort((a, b) => {
-                        if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
+                        // First sort by normalized book + chapter to group same pericopes
+                        const aKey = `${a.normalizedBook}-${a.chapter}`;
+                        const bKey = `${b.normalizedBook}-${b.chapter}`;
+                        if (aKey !== bKey) {
+                            // Use orderIndex for ordering between different pericopes
+                            if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
+                            return aKey.localeCompare(bKey);
+                        }
+                        // Within same pericope, sort by translation order
                         return (vertalingOrder[a.vertalingKey] || 99) - (vertalingOrder[b.vertalingKey] || 99);
                     });
 
@@ -3019,32 +3052,24 @@
                         // Grondtekst uses book_original, NBV21/NB use book
                         const bookCode = perikoop.book || perikoop.book_original;
 
-                        // Find liturgical order index - try to match with lezingen
+                        // For grondtekst, convert book_original to NBV21 code for matching
+                        const normalizedBookCode = bhs2nbv21(bookCode) || bookCode;
+
+                        // Find liturgical order index
                         let orderIndex = lezingenOrder.findIndex(l => {
-                            // Direct match
-                            if (l.book === bookCode) return l.chapter === perikoop.chapter;
-                            // For grondtekst, also try matching by Dutch name
-                            if (perikoop.book_nl) {
-                                const grondtekstCode = getBoekCode(perikoop.book_nl);
-                                return l.book === grondtekstCode && l.chapter === perikoop.chapter;
-                            }
-                            return false;
+                            return l.book === normalizedBookCode && l.chapter === perikoop.chapter;
                         });
                         if (orderIndex === -1) orderIndex = 999;
 
                         // Get reading type
                         const lezingInfo = lezingenOrder.find(l => {
-                            if (l.book === bookCode) return l.chapter === perikoop.chapter;
-                            if (perikoop.book_nl) {
-                                const grondtekstCode = getBoekCode(perikoop.book_nl);
-                                return l.book === grondtekstCode && l.chapter === perikoop.chapter;
-                            }
-                            return false;
+                            return l.book === normalizedBookCode && l.chapter === perikoop.chapter;
                         });
 
                         allPerikopen.push({
                             ...perikoop,
                             book: bookCode,
+                            normalizedBook: normalizedBookCode,
                             vertalingKey: vertalingKey,
                             orderIndex: orderIndex,
                             lezingType: lezingInfo?.type || ''
@@ -3053,10 +3078,18 @@
                 }
             });
 
-            // Sort by liturgical order, then by translation (Grondtekst first, then NBV21, then NB)
+            // Sort by: 1) normalizedBook+chapter (to group same pericopes), 2) liturgical order, 3) translation order
             const vertalingOrder = { 'grondtekst': 0, 'nbv21': 1, 'naardense_bijbel': 2 };
             allPerikopen.sort((a, b) => {
-                if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
+                // First sort by normalized book + chapter to group same pericopes
+                const aKey = `${a.normalizedBook}-${a.chapter}`;
+                const bKey = `${b.normalizedBook}-${b.chapter}`;
+                if (aKey !== bKey) {
+                    // Use orderIndex for ordering between different pericopes
+                    if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
+                    return aKey.localeCompare(bKey);
+                }
+                // Within same pericope, sort by translation order
                 return (vertalingOrder[a.vertalingKey] || 99) - (vertalingOrder[b.vertalingKey] || 99);
             });
 

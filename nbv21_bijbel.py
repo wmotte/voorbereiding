@@ -224,7 +224,7 @@ def save_nbv21_lezingen(output_dir: Path, context_text: str) -> dict[str, str]:
 
     bijbel_dir = output_dir / "bijbelteksten"
     bijbel_dir.mkdir(exist_ok=True)
-    
+
     resultaten = {}
     seen_refs = set()
     found_refs_raw = []
@@ -240,38 +240,103 @@ def save_nbv21_lezingen(output_dir: Path, context_text: str) -> dict[str, str]:
         found_refs_raw.append(match.group(1).strip())
 
     for raw_ref in found_refs_raw:
+        # Check of dit een complexe referentie is met meerdere verse ranges (bijv. "1 Samuel 1,20-22.24-28")
+        # Probeer eerst boek en hoofdstuk te extraheren
+        complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;]+)", raw_ref)
+
+        if complex_match:
+            book_chapter_base = f"{complex_match.group(1).strip()} {complex_match.group(2)}"
+            verse_part = complex_match.group(3)
+
+            # Split verse part op . of ; voor multiple ranges
+            verse_ranges = re.split(r'[.;]', verse_part)
+
+            all_verses = []
+            book_code = None
+            chapter = None
+            original_verse_spec = verse_part  # bewaar originele versnummers voor filename
+
+            for verse_range in verse_ranges:
+                verse_range = verse_range.strip()
+                if not verse_range:
+                    continue
+
+                sub_ref_str = f"{book_chapter_base}:{verse_range}"
+                ref = parse_bijbelreferentie(sub_ref_str)
+
+                if ref and get_book_code(ref.boek):
+                    if book_code is None:
+                        book_code = get_book_code(ref.boek)
+                        chapter = ref.hoofdstuk
+
+                    verses_data = get_nbv21_data(ref)
+                    if verses_data:
+                        all_verses.extend(verses_data)
+
+            if all_verses and book_code:
+                # Unieke verzen, gesorteerd
+                unique_verses = {v['verse']: v for v in all_verses}
+                sorted_verses = sorted(unique_verses.values(), key=lambda x: x['verse'])
+
+                # Referentie string voor seen_refs (met originele verse spec)
+                ref_key = f"{book_chapter_base}:{original_verse_spec}"
+                if ref_key in seen_refs:
+                    continue
+                seen_refs.add(ref_key)
+
+                # Filename met versnummers
+                safe_name = f"{book_chapter_base}_{original_verse_spec}".replace(':', '_').replace(' ', '_')
+                safe_name = re.sub(r'[^\w\-.]', '', safe_name)
+
+                json_path = bijbel_dir / f"{safe_name}_NBV21.json"
+
+                json_data = {
+                    "book": book_code,
+                    "chapter": chapter,
+                    "verses": sorted_verses,
+                    "translation": "NBV21"
+                }
+
+                with open(json_path, 'w', encoding='utf-8') as f:
+                    json.dump(json_data, f, indent=2, ensure_ascii=False)
+
+                print(f"  ✓ NBV21 Opgeslagen: {json_path.name}")
+                resultaten[ref_key] = str(json_path)
+                continue
+
+        # Fallback: enkelvoudige referentie
         sub_refs = [r.strip() for r in raw_ref.split(',')]
-        
+
         for sub_ref in sub_refs:
             if not sub_ref: continue
-            
+
             ref = parse_bijbelreferentie(sub_ref)
             if ref and get_book_code(ref.boek):
                 ref_str = str(ref)
                 if ref_str in seen_refs: continue
-                
+
                 seen_refs.add(ref_str)
                 verses_data = get_nbv21_data(ref)
-                
+
                 if verses_data:
                     # Vervang : en spaties door underscores voor een veilige bestandsnaam
                     safe_name = str(ref).replace(':', '_').replace(' ', '_')
                     # Verwijder overige vreemde tekens
                     safe_name = re.sub(r'[^\w-]', '', safe_name)
-                    
+
                     # Suffix _NBV21 om conflict met Naardense te voorkomen
                     json_path = bijbel_dir / f"{safe_name}_NBV21.json"
-                    
+
                     json_data = {
                         "book": get_book_code(ref.boek),
                         "chapter": ref.hoofdstuk,
                         "verses": verses_data,
                         "translation": "NBV21"
                     }
-                    
+
                     with open(json_path, 'w', encoding='utf-8') as f:
                         json.dump(json_data, f, indent=2, ensure_ascii=False)
-                        
+
                     print(f"  ✓ NBV21 Opgeslagen: {json_path.name}")
                     resultaten[ref_str] = str(json_path)
                 else:

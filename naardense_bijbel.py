@@ -430,22 +430,98 @@ def download_lezingen(output_dir: Path, liturgie_tekst: str) -> dict[str, str]:
 
     print(f"  Gevonden referenties: {', '.join(referenties_raw)}")
     resultaten = {}
+    seen_refs = set()
 
     for ref_str in referenties_raw:
+        # Check of dit een complexe referentie is met meerdere verse ranges (bijv. "1 Samuel 1,20-22.24-28")
+        complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;]+)", ref_str)
+
+        if complex_match:
+            book_chapter_base = f"{complex_match.group(1).strip()} {complex_match.group(2)}"
+            verse_part = complex_match.group(3)
+
+            # Split verse part op . of ; voor multiple ranges
+            verse_ranges = re.split(r'[.;]', verse_part)
+
+            all_verses = []
+            book_code = None
+            chapter = None
+            original_verse_spec = verse_part  # bewaar originele versnummers voor filename
+
+            for verse_range in verse_ranges:
+                verse_range = verse_range.strip()
+                if not verse_range:
+                    continue
+
+                sub_ref_str = f"{book_chapter_base}:{verse_range}"
+                referentie = parse_bijbelreferentie(sub_ref_str)
+
+                if referentie:
+                    if book_code is None:
+                        book_code = get_boek_code(referentie.boek)
+                        chapter = referentie.hoofdstuk
+
+                    md_text, verses_data = haal_bijbeltekst_op(referentie)
+                    if verses_data:
+                        all_verses.extend(verses_data)
+                    time.sleep(0.3)
+
+            if all_verses and book_code:
+                # Unieke verzen, gesorteerd
+                unique_verses = {v['verse']: v for v in all_verses}
+                sorted_verses = sorted(unique_verses.values(), key=lambda x: x['verse'])
+
+                # Referentie string voor seen_refs (met originele verse spec)
+                ref_key = f"{book_chapter_base}:{original_verse_spec}"
+                if ref_key in seen_refs:
+                    continue
+                seen_refs.add(ref_key)
+
+                # Filename met versnummers
+                safe_name = f"{book_chapter_base}_{original_verse_spec}".replace(':', '_').replace(' ', '_')
+                safe_name = re.sub(r'[^\w\-.]', '', safe_name)
+
+                json_path = bijbel_dir / f"{safe_name}_NB.json"
+
+                if json_path.exists() and json_path.stat().st_size > 0:
+                    print(f"  ✓ Reeds gedownload: {json_path.name}")
+                    resultaten[ref_key] = str(json_path)
+                    continue
+
+                json_data = {
+                    "book": book_code,
+                    "chapter": chapter,
+                    "verses": sorted_verses,
+                    "translation": "NB"
+                }
+
+                with open(json_path, 'w', encoding='utf-8') as f:
+                    json.dump(json_data, f, indent=2, ensure_ascii=False)
+
+                print(f"  ✓ Opgeslagen: {json_path.name}")
+                resultaten[ref_key] = str(json_path)
+                continue
+
+        # Fallback: enkelvoudige referentie
         referentie = parse_bijbelreferentie(ref_str)
         if not referentie:
             continue
+
+        ref_key = str(referentie)
+        if ref_key in seen_refs:
+            continue
+        seen_refs.add(ref_key)
 
         # Vervang : en spaties door underscores voor een veilige bestandsnaam
         safe_name = str(referentie).replace(':', '_').replace(' ', '_')
         # Verwijder overige vreemde tekens
         safe_name = re.sub(r'[^\w-]', '', safe_name)
-        
+
         json_path = bijbel_dir / f"{safe_name}_NB.json"
 
         if json_path.exists() and json_path.stat().st_size > 0:
             print(f"  ✓ Reeds gedownload: {json_path.name}")
-            resultaten[str(referentie)] = str(json_path)
+            resultaten[ref_key] = str(json_path)
             continue
 
         md_text, verses_data = haal_bijbeltekst_op(referentie)
@@ -455,14 +531,15 @@ def download_lezingen(output_dir: Path, liturgie_tekst: str) -> dict[str, str]:
             json_data = {
                 "book": get_boek_code(referentie.boek),
                 "chapter": referentie.hoofdstuk,
-                "verses": verses_data
+                "verses": verses_data,
+                "translation": "NB"
             }
 
             with open(json_path, 'w', encoding='utf-8') as f:
                 json.dump(json_data, f, indent=2, ensure_ascii=False)
 
             print(f"  ✓ Opgeslagen: {json_path.name}")
-            resultaten[str(referentie)] = str(json_path)
+            resultaten[ref_key] = str(json_path)
         else:
             print(f"  ✗ Kon niet ophalen: {referentie}")
 
