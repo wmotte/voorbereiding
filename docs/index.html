@@ -1736,13 +1736,24 @@
 
             // Build nav and content
             let navHtml = '';
-            const sections = Object.keys(jsonData).filter(k => k !== '00_meta').sort();
+            const allSections = Object.keys(jsonData).filter(k => k !== '00_meta');
+
+            // Determine the highest number from sections that have numeric prefixes
+            const numberedSections = allSections.filter(k => /^(\d+)_/.test(k));
+            const highestNum = numberedSections.length > 0
+                ? Math.max(...numberedSections.map(k => parseInt(k.match(/^(\d+)_/)[1])))
+                : 0;
+
+            // Initialize counter for unnumbered sections
+            let unnumberedCounter = highestNum + 1;
+
+            const sections = allSections.sort();
 
             sections.forEach((key, index) => {
                 const title = sectionTitles[key] || formatKey(key);
-                // Extract number from key like "01_zondag" or use index+15 for unnumbered sections
+                // Extract number from key like "01_zondag" or assign next available number for unnumbered sections
                 const numMatch = key.match(/^(\d+)_/);
-                const num = numMatch ? numMatch[1] : String(15 + index).padStart(2, '0');
+                const num = numMatch ? numMatch[1] : String(unnumberedCounter++).padStart(2, '0');
                 const sectionData = jsonData[key];
 
                 // Special handling for Bijbelteksten - show bible references as submenu
@@ -1859,7 +1870,7 @@
                     </div>
                 `;
 
-                html += renderSection(key, sectionData, index);
+                html += renderSection(key, sectionData, num);
             });
 
             navItems.innerHTML = navHtml;
@@ -1922,11 +1933,10 @@
             });
         }
 
-        function renderSection(key, data, index) {
+        function renderSection(key, data, num) {
             const title = sectionTitles[key] || formatKey(key);
-            // Extract number from key like "01_zondag" or use index+15 for unnumbered sections
-            const numMatch = key.match(/^(\d+)_/);
-            const num = numMatch ? numMatch[1] : String(15 + index).padStart(2, '0');
+            // Use the pre-calculated number from the main loop
+            const sectionNum = num;
             const meta = data._meta || {};
             const generatedAt = meta.generated_at ? new Date(meta.generated_at).toLocaleString('nl-NL') : '';
 
@@ -1952,7 +1962,7 @@
             return `
                 <section class="section bevel-raised" id="section-${key}">
                     <div class="section-header">
-                        <div class="section-number">${num}</div>
+                        <div class="section-number">${sectionNum}</div>
                         <h2 class="section-title">${escapeHtml(title)}</h2>
                         ${generatedAt ? `<div class="section-meta">Gegenereerd: ${escapeHtml(generatedAt)}</div>` : ''}
                     </div>
