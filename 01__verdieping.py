@@ -48,6 +48,12 @@ except ImportError:
     def get_nbv21_lezingen_text(text): return ""
     def save_nbv21_lezingen(d, t): return {}
 
+try:
+    from grondtekst_bijbel import save_grondtekst_lezingen
+except ImportError:
+    print("WAARSCHUWING: grondtekst_bijbel module niet gevonden.")
+    def save_grondtekst_lezingen(f, c): return []
+
 # Configuratie
 SCRIPT_DIR = Path(__file__).parent.resolve()
 OUTPUT_DIR = SCRIPT_DIR / "output"
@@ -330,8 +336,18 @@ def load_bible_context_as_json(folder: Path) -> str:
         except Exception as e:
             print(f"Fout bij lezen {json_file}: {e}")
 
-    # Als beide leeg zijn, retourneer lege string
-    if not context_data["naardense_bijbel"] and not context_data["nbv21"]:
+    # Lees Grondtekst bestanden
+    context_data["grondtekst"] = []
+    for json_file in sorted(bijbel_dir.glob("*_Grondtekst.json")):
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                context_data["grondtekst"].append(data)
+        except Exception as e:
+            print(f"Fout bij lezen {json_file}: {e}")
+
+    # Als alles leeg is, retourneer lege string
+    if not context_data["naardense_bijbel"] and not context_data["nbv21"] and not context_data["grondtekst"]:
         return ""
 
     return json.dumps(context_data, ensure_ascii=False, indent=2)
@@ -769,6 +785,12 @@ def main():
     if nbv21_files:
         print(f"✓ NBV21 teksten opgehaald en opgeslagen ({len(nbv21_files)} bestanden)")
 
+    # Haal Grondtekst (BHS/NA28) op en sla ze op
+    grondtekst_files = save_grondtekst_lezingen(folder, previous_analyses["liturgische_context"])
+    
+    if grondtekst_files:
+        print(f"✓ Grondteksten (BHS/NA28) opgehaald en opgeslagen ({len(grondtekst_files)} bestanden)")
+
     # Initialiseer client
     print("\nGoogle GenAI Client initialiseren...")
     client = get_gemini_client()
@@ -953,6 +975,43 @@ def combine_all_json(folder: Path):
                 combined_data[key] = data
         except Exception as e:
             print(f"  Fout bij lezen {json_file.name}: {e}")
+
+    # 3. Voeg bijbelteksten toe
+    bijbel_dir = folder / "bijbelteksten"
+    if bijbel_dir.exists():
+        bijbel_data = {
+            "naardense_bijbel": [],
+            "nbv21": [],
+            "grondtekst": []
+        }
+        
+        # Lees Naardense Bijbel
+        for json_file in sorted(bijbel_dir.glob("*_NB.json")):
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    bijbel_data["naardense_bijbel"].append(json.load(f))
+            except Exception as e:
+                print(f"  Fout bij lezen NB tekst {json_file.name}: {e}")
+
+        # Lees NBV21
+        for json_file in sorted(bijbel_dir.glob("*_NBV21.json")):
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    bijbel_data["nbv21"].append(json.load(f))
+            except Exception as e:
+                print(f"  Fout bij lezen NBV21 tekst {json_file.name}: {e}")
+
+        # Lees Grondtekst
+        for json_file in sorted(bijbel_dir.glob("*_Grondtekst.json")):
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    bijbel_data["grondtekst"].append(data)
+            except Exception as e:
+                print(f"  Fout bij lezen Grondtekst {json_file.name}: {e}")
+        
+        if any(bijbel_data.values()):
+            combined_data["Bijbelteksten"] = bijbel_data
             
     output_path = folder / "combined_output.json"
     with open(output_path, "w", encoding="utf-8") as f:

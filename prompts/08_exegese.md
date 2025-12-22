@@ -2,6 +2,12 @@
 
 Voer een grondige exegese uit van de **Eerste Lezing** en het **Evangelie** die horen bij deze zondag/feestdag. Andere lezingen (zoals de Psalm of Tweede Lezing) dienen als context, maar worden niet diepgaand geëxegetiseerd.
 
+**STRIKTE EIS TEGEN HALLUCINATIES:**
+1. **Bronmateriaal:** Baseer je analyse UITSLUITEND op de aangeleverde bijbelteksten (zie de JSON onderaan de context). Citeer geen verzen die er niet staan.
+2. **Talen:** Verzin GEEN Hebreeuwse of Griekse grondwoorden. Noem deze alleen als je zeker bent van de etymologie via je interne kennis of Google Search.
+3. **Tekstkritiek:** Als je geen specifieke wetenschappelijke bronnen vindt over tekstvarianten voor *deze specifieke perikoop*, laat dit veld dan leeg of noteer "Geen significante varianten bekend". Verzin geen varianten.
+4. **Feitelijkheid:** Wees voorzichtig met historische claims. Verifieer jaartallen en namen via Google Search indien nodig.
+
 ## Context
 De liturgische gegevens en Schriftlezingen zijn hierboven vermeld. Neem deze als uitgangspunt. Behandel de Eerste Lezing en het Evangelie afzonderlijk én in hun onderlinge samenhang.
 

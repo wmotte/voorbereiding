@@ -194,7 +194,7 @@
             height: calc(100vh - 65px);
             background: var(--menu-bg);
             overflow-y: auto;
-            padding: 15px 0;
+            padding: 15px 0 60px 0;
             transition: transform 0.3s ease;
             z-index: 900;
             border-right: 2px solid var(--border-dark);
@@ -959,6 +959,410 @@
             font-size: 0.9em;
         }
 
+        /* Bijbelteksten */
+        .bijbel-perikoop {
+            background: var(--bg-secondary);
+            padding: 20px 25px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--accent);
+        }
+
+        .bijbel-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-light);
+        }
+
+        .bijbel-boek-badge {
+            background: var(--accent);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9em;
+            letter-spacing: 0.5px;
+        }
+
+        .bijbel-referentie {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--text-primary);
+        }
+
+        .bijbel-verzen {
+            line-height: 1.9;
+            font-size: 1.05em;
+        }
+
+        .bijbel-vers {
+            margin-bottom: 8px;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        .bijbel-vers-nummer {
+            display: inline-block;
+            font-size: 0.7em;
+            font-weight: bold;
+            color: var(--accent);
+            vertical-align: super;
+            margin-right: 3px;
+            min-width: 1.5em;
+        }
+
+        .bijbel-vers-tekst {
+            color: var(--text-primary);
+        }
+
+        .bijbel-lezing-type {
+            margin-left: auto;
+            font-size: 0.85em;
+            font-style: italic;
+            color: var(--text-muted);
+            background: var(--bg-tertiary);
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+
+        /* Gebeden styling */
+        .gebed-card {
+            background: var(--bg-secondary);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--accent);
+        }
+
+        .gebed-card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-light);
+        }
+
+        .gebed-type-badge {
+            background: var(--accent);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-transform: capitalize;
+        }
+
+        .gebed-aanspraak {
+            font-size: 1.2em;
+            font-weight: bold;
+            font-style: italic;
+            color: var(--text-primary);
+        }
+
+        .gebed-tekst {
+            font-size: 1.05em;
+            line-height: 1.9;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+
+        .gebed-tekst p {
+            margin-bottom: 12px;
+        }
+
+        .gebed-echo {
+            margin-top: 15px;
+            padding: 12px 15px;
+            background: var(--bg-tertiary);
+            border-left: 3px solid var(--accent-light);
+            font-size: 0.9em;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .gebed-echo-label {
+            font-weight: bold;
+            font-style: normal;
+            color: var(--accent);
+            margin-right: 8px;
+        }
+
+        .gebed-intenties {
+            margin: 15px 0;
+        }
+
+        .gebed-intentie {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: var(--bg-tertiary);
+            border-left: 3px solid var(--accent-light);
+        }
+
+        .gebed-intentie-voor {
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 5px;
+        }
+
+        .gebed-intentie-tekst {
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .gebed-cirkels {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .gebed-cirkel {
+            padding: 15px;
+            background: var(--bg-tertiary);
+            border-left: 4px solid var(--accent);
+        }
+
+        .gebed-cirkel-header {
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 8px;
+            text-transform: capitalize;
+        }
+
+        .gebed-cirkel-themas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+
+        .gebed-cirkel-thema {
+            background: var(--bg-secondary);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            color: var(--text-secondary);
+        }
+
+        .gebed-cirkel-tekst {
+            font-style: italic;
+            line-height: 1.7;
+            color: var(--text-primary);
+        }
+
+        .gebed-instructie {
+            font-style: italic;
+            color: var(--text-muted);
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .gebed-onze-vader {
+            background: var(--bg-tertiary);
+            padding: 20px;
+            margin-top: 15px;
+            font-style: italic;
+            line-height: 1.8;
+            text-align: center;
+            border: 1px solid var(--border-light);
+        }
+
+        .gebeden-meta {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid var(--border-light);
+        }
+
+        .gebeden-meta-title {
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .gebeden-technieken {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .gebeden-techniek {
+            background: var(--bg-secondary);
+            padding: 15px;
+            border-left: 3px solid var(--accent-light);
+        }
+
+        .gebeden-techniek-naam {
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 8px;
+            text-transform: capitalize;
+        }
+
+        .gebeden-techniek-items {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        .gebeden-techniek-items li {
+            margin-bottom: 4px;
+        }
+
+        /* Representatieve Hoorders */
+        .hoorder-card {
+            background: var(--bg-secondary);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent);
+            overflow: hidden;
+        }
+
+        .hoorder-header {
+            background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 70%, black 30%));
+            color: white;
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .hoorder-nummer {
+            background: rgba(255,255,255,0.2);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .hoorder-intro {
+            flex: 1;
+        }
+
+        .hoorder-naam {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .hoorder-meta {
+            opacity: 0.9;
+            font-size: 0.95em;
+        }
+
+        .hoorder-kernschets {
+            padding: 20px 25px;
+            background: var(--bg-tertiary);
+            font-style: italic;
+            font-size: 1.05em;
+            line-height: 1.7;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .hoorder-content {
+            padding: 20px 25px;
+        }
+
+        .hoorder-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .hoorder-groep {
+            background: var(--bg-tertiary);
+            padding: 15px;
+            border-left: 3px solid var(--accent-light);
+        }
+
+        .hoorder-groep-titel {
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hoorder-item {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .hoorder-item-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .hoorder-item-value {
+            color: var(--text-primary);
+        }
+
+        .hoorder-lijst {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .hoorder-lijst li {
+            padding: 4px 0;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .hoorder-lijst li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+
+        .hoorder-schrift {
+            margin-top: 20px;
+            padding: 20px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-light);
+        }
+
+        .hoorder-schrift-titel {
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+
+        .hoorder-schrift-item {
+            margin-bottom: 12px;
+        }
+
+        .hoorder-schrift-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .hoorder-schrift-tekst {
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .hoorder-vraag {
+            margin-top: 15px;
+            padding: 15px;
+            background: var(--accent);
+            color: white;
+            font-style: italic;
+            text-align: center;
+            font-size: 1.05em;
+        }
+
         /* Motivaction cards */
         .motivaction-grid {
             display: grid;
@@ -1222,7 +1626,8 @@
             '11_kalender': 'Kalender',
             '12_representatieve_hoorders': 'Representatieve Hoorders',
             '13_homiletische_analyse': 'Homiletische Analyse',
-            '14_gebeden': 'Gebeden'
+            '14_gebeden': 'Gebeden',
+            'Bijbelteksten': 'Bijbelteksten'
         };
 
         // Initialize theme
@@ -1288,17 +1693,88 @@
 
             sections.forEach((key, index) => {
                 const title = sectionTitles[key] || formatKey(key);
-                const num = key.split('_')[0];
+                // Extract number from key like "01_zondag" or use index+15 for unnumbered sections
+                const numMatch = key.match(/^(\d+)_/);
+                const num = numMatch ? numMatch[1] : String(15 + index).padStart(2, '0');
                 const sectionData = jsonData[key];
 
-                // Get subsections (top-level keys that are objects or have meaningful content)
-                const subSections = Object.keys(sectionData)
-                    .filter(k => !k.startsWith('_'))
-                    .filter(k => {
-                        const val = sectionData[k];
-                        return val !== null && val !== undefined;
-                    })
-                    .slice(0, 12); // Limit to 12 subsections
+                // Special handling for Bijbelteksten - show bible references as submenu
+                let subSections = [];
+                let subSectionLabels = {};
+
+                if (key === 'Bijbelteksten') {
+                    // Get liturgical order from lezingen section
+                    const lezingenOrder = [];
+                    const lezingen = jsonData['01_zondag_kerkelijk_jaar']?.lezingen;
+                    if (lezingen) {
+                        // Define liturgical order
+                        const orderKeys = ['eerste_lezing', 'psalm', 'epistel', 'evangelie'];
+                        orderKeys.forEach(lezingKey => {
+                            if (lezingen[lezingKey]) {
+                                const lez = lezingen[lezingKey];
+                                // Map Dutch book names to codes
+                                const boekCode = getBoekCode(lez.boek || lez.referentie);
+                                const hoofdstuk = lez.hoofdstuk || lez.nummer;
+                                if (boekCode && hoofdstuk) {
+                                    lezingenOrder.push({ book: boekCode, chapter: hoofdstuk });
+                                }
+                            }
+                        });
+                    }
+
+                    // Collect all perikopen with their liturgical order
+                    const allPerikopen = [];
+
+                    ['nbv21', 'naardense_bijbel'].forEach(vertaling => {
+                        if (sectionData[vertaling] && Array.isArray(sectionData[vertaling])) {
+                            sectionData[vertaling].forEach(perikoop => {
+                                const eersteVers = perikoop.verses[0]?.verse || 1;
+                                const laatsteVers = perikoop.verses[perikoop.verses.length - 1]?.verse || eersteVers;
+                                const verzen = eersteVers === laatsteVers ? String(eersteVers) : `${eersteVers}-${laatsteVers}`;
+                                const vertalingLabel = vertaling === 'nbv21' ? 'NBV21' : 'NB';
+
+                                // Find liturgical order index
+                                let orderIndex = lezingenOrder.findIndex(l =>
+                                    l.book === perikoop.book && l.chapter === perikoop.chapter
+                                );
+                                if (orderIndex === -1) orderIndex = 999; // Unknown goes to end
+
+                                allPerikopen.push({
+                                    vertaling: vertalingLabel,
+                                    vertalingKey: vertaling,
+                                    book: perikoop.book,
+                                    chapter: perikoop.chapter,
+                                    verzen: verzen,
+                                    orderIndex: orderIndex,
+                                    subKey: `${perikoop.book}-${perikoop.chapter}-${vertaling}`
+                                });
+                            });
+                        }
+                    });
+
+                    // Sort by liturgical order, then by translation (NBV21 first)
+                    allPerikopen.sort((a, b) => {
+                        if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
+                        return a.vertalingKey === 'nbv21' ? -1 : 1;
+                    });
+
+                    // Build submenu items
+                    allPerikopen.forEach(item => {
+                        const boekNaam = getBijbelboekNaam(item.book);
+                        const label = `${boekNaam} ${item.chapter}:${item.verzen} (${item.vertaling})`;
+                        subSections.push(item.subKey);
+                        subSectionLabels[item.subKey] = label;
+                    });
+                } else {
+                    // Default: get subsections from top-level keys
+                    subSections = Object.keys(sectionData)
+                        .filter(k => !k.startsWith('_'))
+                        .filter(k => {
+                            const val = sectionData[k];
+                            return val !== null && val !== undefined;
+                        })
+                        .slice(0, 12); // Limit to 12 subsections
+                }
 
                 navHtml += `
                     <div class="nav-group">
@@ -1311,7 +1787,7 @@
                             <div class="nav-submenu" data-section="${key}">
                                 ${subSections.map(subKey => `
                                     <a href="#section-${key}-${subKey}" class="nav-subitem" data-section="${key}" data-subsection="${subKey}">
-                                        ${escapeHtml(formatKey(subKey))}
+                                        ${escapeHtml(subSectionLabels[subKey] || formatKey(subKey))}
                                     </a>
                                 `).join('')}
                             </div>
@@ -1384,7 +1860,9 @@
 
         function renderSection(key, data, index) {
             const title = sectionTitles[key] || formatKey(key);
-            const num = key.split('_')[0];
+            // Extract number from key like "01_zondag" or use index+15 for unnumbered sections
+            const numMatch = key.match(/^(\d+)_/);
+            const num = numMatch ? numMatch[1] : String(15 + index).padStart(2, '0');
             const meta = data._meta || {};
             const generatedAt = meta.generated_at ? new Date(meta.generated_at).toLocaleString('nl-NL') : '';
 
@@ -1394,7 +1872,16 @@
             const dataToRender = { ...data };
             delete dataToRender._meta;
 
-            contentHtml = renderObjectWithIds(dataToRender, key);
+            // Special handling for Bijbelteksten - render in liturgical order
+            if (key === 'Bijbelteksten') {
+                contentHtml = renderBijbeltekstenSection(dataToRender);
+            } else if (key === '14_gebeden') {
+                contentHtml = renderGebedenSection(dataToRender);
+            } else if (key === '12_representatieve_hoorders') {
+                contentHtml = renderHoordersSection(dataToRender);
+            } else {
+                contentHtml = renderObjectWithIds(dataToRender, key);
+            }
 
             return `
                 <section class="section bevel-raised" id="section-${key}">
@@ -1548,6 +2035,11 @@
             // Homiletische Plot
             if (key === 'homiletical_plot' || key === 'homiletische_plot') {
                 return renderHomiletischePlot(value);
+            }
+
+            // Bijbelteksten (Naardense Bijbel en NBV21)
+            if ((key === 'naardense_bijbel' || key === 'nbv21') && Array.isArray(value)) {
+                return renderBijbelteksten(key, value);
             }
 
             if (Array.isArray(value)) {
@@ -2146,11 +2638,582 @@
             return html;
         }
 
+        // Render Representatieve Hoorders section
+        function renderHoordersSection(data) {
+            let html = '';
+            const personas = data.personas || [];
+
+            personas.forEach(persona => {
+                const naam = persona.naam ? `${persona.naam.voornaam} ${persona.naam.achternaam}` : 'Onbekend';
+                const leeftijd = persona.leeftijd || '';
+                const woonwijk = persona.basisgegevens?.woonwijk || '';
+
+                html += `<div id="section-12_representatieve_hoorders-personas-${persona.nummer}" class="subsection-anchor"></div>`;
+                html += `<div class="hoorder-card">`;
+
+                // Header
+                html += `<div class="hoorder-header">`;
+                html += `<div class="hoorder-nummer">${persona.nummer || ''}</div>`;
+                html += `<div class="hoorder-intro">`;
+                html += `<div class="hoorder-naam">${escapeHtml(naam)}</div>`;
+                html += `<div class="hoorder-meta">${leeftijd} jaar${woonwijk ? ` · ${escapeHtml(woonwijk)}` : ''}</div>`;
+                html += `</div></div>`;
+
+                // Kernschets
+                if (persona.kernschets) {
+                    html += `<div class="hoorder-kernschets">${processText(persona.kernschets)}</div>`;
+                }
+
+                html += `<div class="hoorder-content">`;
+                html += `<div class="hoorder-grid">`;
+
+                // Persoonlijk (basis + gezondheid)
+                html += `<div class="hoorder-groep">`;
+                html += `<div class="hoorder-groep-titel">Persoonlijk</div>`;
+                if (persona.basisgegevens?.fysieke_verschijning) {
+                    html += `<div class="hoorder-item">${processText(persona.basisgegevens.fysieke_verschijning)}</div>`;
+                }
+                if (persona.gezondheid) {
+                    const gz = persona.gezondheid;
+                    if (gz.lichamelijk) html += `<div class="hoorder-item"><span class="hoorder-item-label">Lichamelijk:</span> ${processText(gz.lichamelijk)}</div>`;
+                    if (gz.mentaal) html += `<div class="hoorder-item"><span class="hoorder-item-label">Mentaal:</span> ${processText(gz.mentaal)}</div>`;
+                    if (gz.leefstijl) html += `<div class="hoorder-item"><span class="hoorder-item-label">Leefstijl:</span> ${processText(gz.leefstijl)}</div>`;
+                }
+                html += `</div>`;
+
+                // Relaties
+                if (persona.relaties_sociaal) {
+                    const rel = persona.relaties_sociaal;
+                    html += `<div class="hoorder-groep">`;
+                    html += `<div class="hoorder-groep-titel">Relaties & Sociaal</div>`;
+                    const relInfo = [];
+                    if (rel.relatiestatus) relInfo.push(rel.relatiestatus);
+                    if (rel.woonsituatie) relInfo.push(rel.woonsituatie);
+                    if (rel.kinderen) relInfo.push(rel.kinderen);
+                    if (relInfo.length > 0) {
+                        html += `<div class="hoorder-item">${processText(relInfo.join(' · '))}</div>`;
+                    }
+                    if (rel.familie_relatie) html += `<div class="hoorder-item">${processText(rel.familie_relatie)}</div>`;
+                    if (rel.sociaal_netwerk) html += `<div class="hoorder-item">${processText(rel.sociaal_netwerk)}</div>`;
+                    html += `</div>`;
+                }
+
+                // Werk & Opleiding
+                if (persona.opleiding_werk) {
+                    const ow = persona.opleiding_werk;
+                    html += `<div class="hoorder-groep">`;
+                    html += `<div class="hoorder-groep-titel">Werk & Opleiding</div>`;
+                    if (ow.opleiding) html += `<div class="hoorder-item"><span class="hoorder-item-label">Opleiding:</span> ${processText(ow.opleiding)}</div>`;
+                    if (ow.huidige_werk) html += `<div class="hoorder-item"><span class="hoorder-item-label">Werk:</span> ${processText(ow.huidige_werk)}</div>`;
+                    if (ow.intelligentie_leerstijl) html += `<div class="hoorder-item"><span class="hoorder-item-label">Leerstijl:</span> ${processText(ow.intelligentie_leerstijl)}</div>`;
+                    if (ow.financiele_situatie) html += `<div class="hoorder-item"><span class="hoorder-item-label">Financieel:</span> ${processText(ow.financiele_situatie)}</div>`;
+                    html += `</div>`;
+                }
+
+                // Zorgen & Trauma's
+                if (persona.traumas_zorgen) {
+                    const tz = persona.traumas_zorgen;
+                    html += `<div class="hoorder-groep">`;
+                    html += `<div class="hoorder-groep-titel">Zorgen & Worstelingen</div>`;
+                    if (tz.verleden && tz.verleden.length > 0) {
+                        html += `<div class="hoorder-item"><span class="hoorder-item-label">Verleden:</span> ${processText(tz.verleden.join('; '))}</div>`;
+                    }
+                    if (tz.heden && tz.heden.length > 0) {
+                        html += `<div class="hoorder-item"><span class="hoorder-item-label">Heden:</span> ${processText(tz.heden.join('; '))}</div>`;
+                    }
+                    if (tz.onverwerkt) {
+                        html += `<div class="hoorder-item"><span class="hoorder-item-label">Onverwerkt:</span> ${processText(tz.onverwerkt)}</div>`;
+                    }
+                    html += `</div>`;
+                }
+
+                // Geloof
+                if (persona.geloof_spiritualiteit) {
+                    const gs = persona.geloof_spiritualiteit;
+                    html += `<div class="hoorder-groep">`;
+                    html += `<div class="hoorder-groep-titel">Geloof & Spiritualiteit</div>`;
+                    if (gs.kerkelijke_achtergrond) html += `<div class="hoorder-item">${processText(gs.kerkelijke_achtergrond)}</div>`;
+                    if (gs.huidige_betrokkenheid) html += `<div class="hoorder-item">${processText(gs.huidige_betrokkenheid)}</div>`;
+                    if (gs.geloofsbeleving) html += `<div class="hoorder-item"><span class="hoorder-item-label">Beleving:</span> ${processText(gs.geloofsbeleving)}</div>`;
+                    if (gs.geloofstaal) html += `<div class="hoorder-item"><span class="hoorder-item-label">Taal:</span> ${processText(gs.geloofstaal)}</div>`;
+                    if (gs.twijfels_vragen && gs.twijfels_vragen.length > 0) {
+                        html += `<div class="hoorder-item"><span class="hoorder-item-label">Vragen:</span><ul class="hoorder-lijst">`;
+                        gs.twijfels_vragen.forEach(v => html += `<li>${processText(v)}</li>`);
+                        html += `</ul></div>`;
+                    }
+                    if (gs.spirituele_behoeften) html += `<div class="hoorder-item"><span class="hoorder-item-label">Behoeften:</span> ${processText(gs.spirituele_behoeften)}</div>`;
+                    html += `</div>`;
+                }
+
+                // Hobby's & Interesses
+                if (persona.hobbys_interesses) {
+                    const hi = persona.hobbys_interesses;
+                    html += `<div class="hoorder-groep">`;
+                    html += `<div class="hoorder-groep-titel">Interesses</div>`;
+                    const alles = [];
+                    if (hi.vrijetijd) alles.push(...hi.vrijetijd);
+                    if (hi.media) alles.push(...hi.media);
+                    if (hi.verenigingen) alles.push(...hi.verenigingen);
+                    if (alles.length > 0) {
+                        html += `<div class="hoorder-item">${processText(alles.join(' · '))}</div>`;
+                    }
+                    html += `</div>`;
+                }
+
+                html += `</div>`; // end hoorder-grid
+
+                // Aansluiting schriftlezingen
+                if (persona.aansluiting_schriftlezingen) {
+                    const as = persona.aansluiting_schriftlezingen;
+                    html += `<div class="hoorder-schrift">`;
+                    html += `<div class="hoorder-schrift-titel">Aansluiting bij de Schriftlezingen</div>`;
+                    if (as.wat_raakt) {
+                        html += `<div class="hoorder-schrift-item"><span class="hoorder-schrift-label">Wat raakt:</span><span class="hoorder-schrift-tekst">${processText(as.wat_raakt)}</span></div>`;
+                    }
+                    if (as.wat_afstoot) {
+                        html += `<div class="hoorder-schrift-item"><span class="hoorder-schrift-label">Wat afstoot:</span><span class="hoorder-schrift-tekst">${processText(as.wat_afstoot)}</span></div>`;
+                    }
+                    if (as.existentiele_vraag) {
+                        html += `<div class="hoorder-vraag">"${processText(as.existentiele_vraag)}"</div>`;
+                    }
+                    html += `</div>`;
+                }
+
+                html += `</div></div>`; // end hoorder-content, hoorder-card
+            });
+
+            return html;
+        }
+
+        // Render Gebeden section with cleaner layout
+        function renderGebedenSection(data) {
+            let html = '';
+
+            // Show chosen scenario
+            if (data.gekozen_scenario) {
+                html += `<div class="data-item"><div class="data-label">Gekozen scenario</div><div class="data-value">${processText(data.gekozen_scenario)}</div></div>`;
+            }
+
+            // Render each prayer
+            const gebeden = data.gebeden || {};
+            const gebedOrder = ['drempelgebed', 'kyrie', 'epiclese', 'dankgebed', 'voorbeden'];
+            const gebedTitles = {
+                'drempelgebed': 'Drempelgebed',
+                'kyrie': 'Kyrie',
+                'epiclese': 'Epiclese',
+                'dankgebed': 'Dankgebed',
+                'voorbeden': 'Voorbeden'
+            };
+
+            gebedOrder.forEach(key => {
+                const gebed = gebeden[key];
+                if (!gebed) return;
+
+                html += `<div id="section-14_gebeden-gebeden-${key}" class="subsection-anchor"></div>`;
+                html += `<div class="gebed-card">`;
+
+                // Header with type and aanspraak
+                html += `<div class="gebed-card-header">`;
+                html += `<span class="gebed-type-badge">${escapeHtml(gebedTitles[key] || key)}</span>`;
+                if (gebed.aanspraak) {
+                    html += `<span class="gebed-aanspraak">${processText(gebed.aanspraak)}</span>`;
+                }
+                html += `</div>`;
+
+                // Main prayer text
+                if (gebed.tekst) {
+                    html += `<div class="gebed-tekst">${processText(gebed.tekst)}</div>`;
+                }
+
+                // For voorbeden without main tekst - show cirkels
+                if (!gebed.tekst && gebed.cirkels) {
+                    html += `<div class="gebed-cirkels">`;
+                    const cirkelOrder = ['wereld', 'kerk', 'naasten', 'eigen_gemeente'];
+                    const cirkelTitles = {
+                        'wereld': 'De wereld',
+                        'kerk': 'De kerk',
+                        'naasten': 'Onze naasten',
+                        'eigen_gemeente': 'Onze gemeente'
+                    };
+
+                    cirkelOrder.forEach(cirkelKey => {
+                        const cirkel = gebed.cirkels[cirkelKey];
+                        if (!cirkel) return;
+
+                        html += `<div class="gebed-cirkel">`;
+                        html += `<div class="gebed-cirkel-header">${escapeHtml(cirkelTitles[cirkelKey] || cirkelKey)}</div>`;
+
+                        if (cirkel.themas && Array.isArray(cirkel.themas)) {
+                            html += `<div class="gebed-cirkel-themas">`;
+                            cirkel.themas.forEach(thema => {
+                                html += `<span class="gebed-cirkel-thema">${processText(thema)}</span>`;
+                            });
+                            html += `</div>`;
+                        }
+
+                        if (cirkel.tekst) {
+                            html += `<div class="gebed-cirkel-tekst">${processText(cirkel.tekst)}</div>`;
+                        }
+                        html += `</div>`;
+                    });
+
+                    html += `</div>`;
+                }
+
+                // Stilte instructie
+                if (gebed.stilte_instructie) {
+                    html += `<div class="gebed-instructie">${processText(gebed.stilte_instructie)}</div>`;
+                }
+
+                // Overgang naar Onze Vader
+                if (gebed.overgang_onze_vader) {
+                    html += `<div class="gebed-instructie">${processText(gebed.overgang_onze_vader)}</div>`;
+                }
+
+                // Onze Vader
+                if (gebed.onze_vader) {
+                    html += `<div class="gebed-onze-vader">${processText(gebed.onze_vader)}</div>`;
+                }
+
+                // Echo schriftlezing
+                if (gebed.echo_schriftlezing) {
+                    html += `<div class="gebed-echo"><span class="gebed-echo-label">Echo Schriftlezing:</span>${processText(gebed.echo_schriftlezing)}</div>`;
+                }
+
+                html += `</div>`; // end gebed-card
+            });
+
+            // Poetische technieken
+            if (data.poetische_technieken_gebruikt) {
+                html += `<div class="gebeden-meta">`;
+                html += `<div class="gebeden-meta-title">Poetische technieken</div>`;
+                html += `<div class="gebeden-technieken">`;
+
+                for (const [techniek, items] of Object.entries(data.poetische_technieken_gebruikt)) {
+                    if (!Array.isArray(items) || items.length === 0) continue;
+
+                    html += `<div class="gebeden-techniek">`;
+                    html += `<div class="gebeden-techniek-naam">${escapeHtml(formatKey(techniek))}</div>`;
+                    html += `<ul class="gebeden-techniek-items">`;
+                    items.forEach(item => {
+                        html += `<li>${processText(item)}</li>`;
+                    });
+                    html += `</ul></div>`;
+                }
+
+                html += `</div></div>`;
+            }
+
+            // Echo techniek samenvatting
+            if (data.echo_techniek) {
+                html += `<div class="gebeden-meta">`;
+                html += `<div class="gebeden-meta-title">Echo-techniek</div>`;
+
+                if (data.echo_techniek.schriftlezing_thema) {
+                    html += `<p style="margin-bottom: 15px;"><strong>Schriftlezing thema:</strong> ${processText(data.echo_techniek.schriftlezing_thema)}</p>`;
+                }
+
+                if (data.echo_techniek.echo_per_gebed) {
+                    html += `<div class="gebeden-technieken">`;
+                    for (const [gebedKey, echo] of Object.entries(data.echo_techniek.echo_per_gebed)) {
+                        html += `<div class="gebeden-techniek">`;
+                        html += `<div class="gebeden-techniek-naam">${escapeHtml(formatKey(gebedKey))}</div>`;
+                        html += `<div style="font-size: 0.9em; color: var(--text-secondary);">${processText(echo)}</div>`;
+                        html += `</div>`;
+                    }
+                    html += `</div>`;
+                }
+
+                html += `</div>`;
+            }
+
+            return html;
+        }
+
+        // Render all Bijbelteksten in liturgical order
+        function renderBijbeltekstenSection(data) {
+            // Get lezingen info to determine reading type and order
+            const lezingen = jsonData['01_zondag_kerkelijk_jaar']?.lezingen || {};
+            const orderKeys = ['eerste_lezing', 'psalm', 'epistel', 'evangelie'];
+            const lezingTypes = {
+                'eerste_lezing': 'Eerste lezing',
+                'psalm': 'Psalm',
+                'epistel': 'Epistel',
+                'evangelie': 'Evangelie'
+            };
+
+            // Build liturgical order array
+            const lezingenOrder = [];
+            orderKeys.forEach(lezingKey => {
+                if (lezingen[lezingKey]) {
+                    const lez = lezingen[lezingKey];
+                    const boekCode = getBoekCode(lez.boek || lez.referentie);
+                    const hoofdstuk = lez.hoofdstuk || lez.nummer;
+                    if (boekCode && hoofdstuk) {
+                        lezingenOrder.push({ book: boekCode, chapter: hoofdstuk, type: lezingTypes[lezingKey] });
+                    }
+                }
+            });
+
+            // Add alternative readings
+            if (lezingen.alternatieve_lezingen && Array.isArray(lezingen.alternatieve_lezingen)) {
+                lezingen.alternatieve_lezingen.forEach(alt => {
+                    const boekCode = getBoekCode(alt.referentie);
+                    const match = alt.referentie?.match(/(\d+)[,:.]/);
+                    const hoofdstuk = match ? parseInt(match[1]) : null;
+                    if (boekCode && hoofdstuk) {
+                        lezingenOrder.push({ book: boekCode, chapter: hoofdstuk, type: 'Alternatieve lezing' });
+                    }
+                });
+            }
+
+            // Collect all perikopen from both translations
+            const allPerikopen = [];
+            const vertalingen = ['nbv21', 'naardense_bijbel'];
+
+            vertalingen.forEach(vertalingKey => {
+                if (data[vertalingKey] && Array.isArray(data[vertalingKey])) {
+                    data[vertalingKey].forEach(perikoop => {
+                        // Find liturgical order index
+                        let orderIndex = lezingenOrder.findIndex(l =>
+                            l.book === perikoop.book && l.chapter === perikoop.chapter
+                        );
+                        if (orderIndex === -1) orderIndex = 999;
+
+                        // Get reading type
+                        const lezingInfo = lezingenOrder.find(l =>
+                            l.book === perikoop.book && l.chapter === perikoop.chapter
+                        );
+
+                        allPerikopen.push({
+                            ...perikoop,
+                            vertalingKey: vertalingKey,
+                            orderIndex: orderIndex,
+                            lezingType: lezingInfo?.type || ''
+                        });
+                    });
+                }
+            });
+
+            // Sort by liturgical order, then by translation (NBV21 first)
+            allPerikopen.sort((a, b) => {
+                if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
+                return a.vertalingKey === 'nbv21' ? -1 : 1;
+            });
+
+            // Render all perikopen
+            const vertalingNamen = {
+                'naardense_bijbel': 'NB',
+                'nbv21': 'NBV21'
+            };
+
+            let html = '';
+
+            allPerikopen.forEach(perikoop => {
+                const vertalingTitel = vertalingNamen[perikoop.vertalingKey] || perikoop.vertalingKey;
+                const boekNaam = getBijbelboekNaam(perikoop.book);
+                const eersteVers = perikoop.verses[0]?.verse || 1;
+                const laatsteVers = perikoop.verses[perikoop.verses.length - 1]?.verse || eersteVers;
+                const verzenRef = eersteVers === laatsteVers ? eersteVers : `${eersteVers}-${laatsteVers}`;
+
+                // Anchor ID matches the submenu navigation
+                const anchorId = `section-Bijbelteksten-${perikoop.book}-${perikoop.chapter}-${perikoop.vertalingKey}`;
+
+                html += `<div id="${anchorId}" class="subsection-anchor"></div>`;
+                html += `<div class="bijbel-perikoop">`;
+                html += `<div class="bijbel-header">`;
+                html += `<span class="bijbel-boek-badge">${escapeHtml(vertalingTitel)}</span>`;
+                html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${perikoop.chapter}:${verzenRef}</span>`;
+                if (perikoop.lezingType) {
+                    html += `<span class="bijbel-lezing-type">${escapeHtml(perikoop.lezingType)}</span>`;
+                }
+                html += `</div>`;
+
+                html += `<div class="bijbel-verzen">`;
+                perikoop.verses.forEach(vers => {
+                    html += `<div class="bijbel-vers">`;
+                    html += `<span class="bijbel-vers-nummer">${vers.verse}</span>`;
+                    html += `<span class="bijbel-vers-tekst">${processText(vers.text)}</span>`;
+                    html += `</div>`;
+                });
+                html += `</div>`;
+
+                html += `</div>`; // end bijbel-perikoop
+            });
+
+            return html;
+        }
+
+        // Helper function to get book code from Dutch name or reference
+        function getBoekCode(boekNaam) {
+            if (!boekNaam) return null;
+            const naam = boekNaam.toLowerCase();
+
+            const mapping = {
+                'genesis': 'GEN', 'exodus': 'EXO', 'leviticus': 'LEV', 'numeri': 'NUM', 'deuteronomium': 'DEU',
+                'jozua': 'JOS', 'richteren': 'JDG', 'ruth': 'RUT', 'samuel': '1SA', '1 samuel': '1SA', '2 samuel': '2SA',
+                'koningen': '1KI', '1 koningen': '1KI', '2 koningen': '2KI',
+                'kronieken': '1CH', '1 kronieken': '1CH', '2 kronieken': '2CH',
+                'ezra': 'EZR', 'nehemia': 'NEH', 'ester': 'EST', 'job': 'JOB',
+                'psalm': 'PSA', 'psalmen': 'PSA', 'spreuken': 'PRO', 'prediker': 'ECC', 'hooglied': 'SNG',
+                'jesaja': 'ISA', 'jeremia': 'JER', 'klaagliederen': 'LAM',
+                'ezechiel': 'EZK', 'ezekiel': 'EZK', 'daniel': 'DAN', 'daniël': 'DAN',
+                'hosea': 'HOS', 'joel': 'JOL', 'joël': 'JOL', 'amos': 'AMO', 'obadja': 'OBA',
+                'jona': 'JON', 'micha': 'MIC', 'nahum': 'NAM', 'habakuk': 'HAB',
+                'sefanja': 'ZEP', 'haggai': 'HAG', 'haggaï': 'HAG', 'zacharia': 'ZEC', 'maleachi': 'MAL',
+                'matteus': 'MAT', 'matteüs': 'MAT', 'mattheüs': 'MAT', 'marcus': 'MRK', 'lucas': 'LUK', 'lukas': 'LUK',
+                'johannes': 'JHN', 'handelingen': 'ACT',
+                'romeinen': 'ROM', 'korintiërs': '1CO', 'korintiers': '1CO',
+                '1 korintiërs': '1CO', '2 korintiërs': '2CO', '1 korintiers': '1CO', '2 korintiers': '2CO',
+                'galaten': 'GAL', 'efeziërs': 'EPH', 'efeziers': 'EPH', 'filippenzen': 'PHP',
+                'kolossenzen': 'COL', 'tessalonicenzen': '1TH',
+                '1 tessalonicenzen': '1TH', '2 tessalonicenzen': '2TH',
+                'timoteüs': '1TI', 'timoteus': '1TI', '1 timoteüs': '1TI', '2 timoteüs': '2TI',
+                '1 timoteus': '1TI', '2 timoteus': '2TI',
+                'titus': 'TIT', 'filemon': 'PHM', 'hebreeën': 'HEB', 'hebreeen': 'HEB',
+                'jakobus': 'JAS', 'petrus': '1PE', '1 petrus': '1PE', '2 petrus': '2PE',
+                '1 johannes': '1JN', '2 johannes': '2JN', '3 johannes': '3JN',
+                'judas': 'JUD', 'openbaring': 'REV',
+                'sirach': 'SIR', 'ecclesiasticus': 'SIR', 'wijsheid': 'WIS', 'tobit': 'TOB',
+                'judit': 'JDT', 'baruch': 'BAR', 'makkabeeen': '1MA', 'makkabeeën': '1MA',
+                '1 makkabeeen': '1MA', '2 makkabeeen': '2MA', '1 makkabeeën': '1MA', '2 makkabeeën': '2MA'
+            };
+
+            // Try direct match
+            for (const [key, code] of Object.entries(mapping)) {
+                if (naam.includes(key)) {
+                    return code;
+                }
+            }
+            return null;
+        }
+
+        // Helper function for bible book names (used in nav and rendering)
+        function getBijbelboekNaam(code) {
+            const boekNamen = {
+                'GEN': 'Genesis', 'EXO': 'Exodus', 'LEV': 'Leviticus', 'NUM': 'Numeri', 'DEU': 'Deuteronomium',
+                'JOS': 'Jozua', 'JDG': 'Richteren', 'RUT': 'Ruth', '1SA': '1 Samuel', '2SA': '2 Samuel',
+                '1KI': '1 Koningen', '2KI': '2 Koningen', '1CH': '1 Kronieken', '2CH': '2 Kronieken',
+                'EZR': 'Ezra', 'NEH': 'Nehemia', 'EST': 'Ester', 'JOB': 'Job', 'PSA': 'Psalmen',
+                'PRO': 'Spreuken', 'ECC': 'Prediker', 'SNG': 'Hooglied', 'ISA': 'Jesaja', 'JER': 'Jeremia',
+                'LAM': 'Klaagliederen', 'EZK': 'Ezechiel', 'DAN': 'Daniel', 'HOS': 'Hosea', 'JOL': 'Joel',
+                'AMO': 'Amos', 'OBA': 'Obadja', 'JON': 'Jona', 'MIC': 'Micha', 'NAM': 'Nahum',
+                'HAB': 'Habakuk', 'ZEP': 'Sefanja', 'HAG': 'Haggai', 'ZEC': 'Zacharia', 'MAL': 'Maleachi',
+                'MAT': 'Matteus', 'MRK': 'Marcus', 'LUK': 'Lucas', 'JHN': 'Johannes', 'ACT': 'Handelingen',
+                'ROM': 'Romeinen', '1CO': '1 Korintiers', '2CO': '2 Korintiers', 'GAL': 'Galaten',
+                'EPH': 'Efeziers', 'PHP': 'Filippenzen', 'COL': 'Kolossenzen', '1TH': '1 Tessalonicenzen',
+                '2TH': '2 Tessalonicenzen', '1TI': '1 Timoteus', '2TI': '2 Timoteus', 'TIT': 'Titus',
+                'PHM': 'Filemon', 'HEB': 'Hebreeen', 'JAS': 'Jakobus', '1PE': '1 Petrus', '2PE': '2 Petrus',
+                '1JN': '1 Johannes', '2JN': '2 Johannes', '3JN': '3 Johannes', 'JUD': 'Judas', 'REV': 'Openbaring',
+                'SIR': 'Sirach', 'WIS': 'Wijsheid', 'TOB': 'Tobit', 'JDT': 'Judit', 'BAR': 'Baruch',
+                '1MA': '1 Makkabeeen', '2MA': '2 Makkabeeen'
+            };
+            return boekNamen[code] || code;
+        }
+
+        function renderBijbelteksten(vertalingKey, perikopen) {
+            const vertalingNamen = {
+                'naardense_bijbel': 'NB',
+                'nbv21': 'NBV21'
+            };
+            const vertalingTitel = vertalingNamen[vertalingKey] || vertalingKey;
+
+            // Get lezingen info to determine reading type
+            const lezingen = jsonData['01_zondag_kerkelijk_jaar']?.lezingen || {};
+            const lezingTypes = {
+                'eerste_lezing': 'Eerste lezing',
+                'psalm': 'Psalm',
+                'epistel': 'Epistel',
+                'evangelie': 'Evangelie'
+            };
+
+            // Build lookup: book+chapter -> reading type
+            const lezingLookup = {};
+            for (const [key, label] of Object.entries(lezingTypes)) {
+                if (lezingen[key]) {
+                    const lez = lezingen[key];
+                    const boekCode = getBoekCode(lez.boek || lez.referentie);
+                    const hoofdstuk = lez.hoofdstuk || lez.nummer;
+                    if (boekCode && hoofdstuk) {
+                        lezingLookup[`${boekCode}-${hoofdstuk}`] = label;
+                    }
+                }
+            }
+            // Check alternative readings
+            if (lezingen.alternatieve_lezingen && Array.isArray(lezingen.alternatieve_lezingen)) {
+                lezingen.alternatieve_lezingen.forEach(alt => {
+                    const boekCode = getBoekCode(alt.referentie);
+                    // Extract chapter from referentie like "1 Samuel 1,20-22.24-28"
+                    const match = alt.referentie?.match(/(\d+)[,:.]/);
+                    const hoofdstuk = match ? parseInt(match[1]) : null;
+                    if (boekCode && hoofdstuk) {
+                        lezingLookup[`${boekCode}-${hoofdstuk}`] = 'Alternatieve lezing';
+                    }
+                });
+            }
+
+            let html = '';
+
+            perikopen.forEach(perikoop => {
+                const boekNaam = getBijbelboekNaam(perikoop.book);
+                const eersteVers = perikoop.verses[0]?.verse || 1;
+                const laatsteVers = perikoop.verses[perikoop.verses.length - 1]?.verse || eersteVers;
+                const verzenRef = eersteVers === laatsteVers ? eersteVers : `${eersteVers}-${laatsteVers}`;
+
+                // Determine reading type
+                const lezingType = lezingLookup[`${perikoop.book}-${perikoop.chapter}`] || '';
+
+                // Anchor ID matches the submenu navigation: BOOK-CHAPTER-vertaling
+                const anchorId = `section-Bijbelteksten-${perikoop.book}-${perikoop.chapter}-${vertalingKey}`;
+
+                html += `<div id="${anchorId}" class="subsection-anchor"></div>`;
+                html += `<div class="bijbel-perikoop">`;
+                html += `<div class="bijbel-header">`;
+                html += `<span class="bijbel-boek-badge">${escapeHtml(vertalingTitel)}</span>`;
+                html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${perikoop.chapter}:${verzenRef}</span>`;
+                if (lezingType) {
+                    html += `<span class="bijbel-lezing-type">${escapeHtml(lezingType)}</span>`;
+                }
+                html += `</div>`;
+
+                html += `<div class="bijbel-verzen">`;
+                perikoop.verses.forEach(vers => {
+                    html += `<div class="bijbel-vers">`;
+                    html += `<span class="bijbel-vers-nummer">${vers.verse}</span>`;
+                    html += `<span class="bijbel-vers-tekst">${processText(vers.text)}</span>`;
+                    html += `</div>`;
+                });
+                html += `</div>`;
+
+                html += `</div>`; // end bijbel-perikoop
+            });
+
+            return html;
+        }
+
         function formatKey(key) {
             let result = key
                 .replace(/_/g, ' ')
                 .replace(/([a-z])([A-Z])/g, '$1 $2')
                 .replace(/^./, str => str.toUpperCase());
+
+            // Preserve abbreviations with multiple capitals
+            const abbreviations = {
+                'Nbv21': 'NBV21',
+                'nbv21': 'NBV21',
+                'Nbv': 'NBV',
+                'nbv': 'NBV',
+                ' Ot ': ' OT ',
+                ' Nt ': ' NT ',
+                ' ot ': ' OT ',
+                ' nt ': ' NT ',
+                'Pkn': 'PKN',
+                'pkn': 'PKN'
+            };
+
+            for (const [wrong, correct] of Object.entries(abbreviations)) {
+                result = result.replace(new RegExp(wrong, 'gi'), correct);
+            }
 
             // Dutch plural corrections (words ending in vowel + s need apostrophe)
             const pluralCorrections = {
