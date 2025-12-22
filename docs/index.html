@@ -1632,7 +1632,8 @@
         const scrollTopBtn = document.getElementById('scroll-top');
         
         // List of available JSON files
-        const jsonFiles = ["voorbeeld_01.json", "voorbeeld_02.json", "voorbeeld_03.json"];
+        //const jsonFiles = ["voorbeeld_01.json", "voorbeeld_02.json", "voorbeeld_03.json"];
+        const jsonFiles = ["voorbeeld_03.json"];
 
 
         // Section titles mapping
@@ -2244,6 +2245,11 @@
             // Homiletische Plot
             if (key === 'homiletical_plot' || key === 'homiletische_plot') {
                 return renderHomiletischePlot(value);
+            }
+
+            // Homiletische Brug (Chapell)
+            if (key === 'homiletische_brug_chapell') {
+                return renderChapellBrug(value);
             }
 
             // Bijbelteksten (Naardense Bijbel, NBV21 en Grondtekst)
@@ -2902,6 +2908,45 @@
             });
 
             html += `</div>`;
+            return html;
+        }
+
+        function renderChapellBrug(brug) {
+            let html = `<div class="data-group">`;
+            html += `<div class="data-group-title">Homiletische Brug (Chapell)</div>`;
+            html += `<div class="card-grid">`;
+
+            // FCF
+            if (brug.fcf) {
+                html += `<div class="nested-card">`;
+                html += `<div class="nested-card-title">Fallen Condition Focus</div>`;
+                html += `<div class="nested-card-content">`;
+                if (brug.fcf.beschrijving) html += `<div><strong>Beschrijving:</strong> ${processText(brug.fcf.beschrijving)}</div>`;
+                if (brug.fcf.waarom_vraag) html += `<div style="margin-top:5px;"><strong>Waarom-vraag:</strong> ${processText(brug.fcf.waarom_vraag)}</div>`;
+                html += `</div></div>`;
+            }
+
+            // Christocentrisch
+            if (brug.christocentrische_duiding) {
+                html += `<div class="nested-card">`;
+                html += `<div class="nested-card-title">Christocentrische Duiding</div>`;
+                html += `<div class="nested-card-content">`;
+                if (brug.christocentrische_duiding.categorie) html += `<div><span class="tag">${processText(brug.christocentrische_duiding.categorie)}</span></div>`;
+                if (brug.christocentrische_duiding.uitleg) html += `<div style="margin-top:5px;">${processText(brug.christocentrische_duiding.uitleg)}</div>`;
+                html += `</div></div>`;
+            }
+
+            // Motivatie
+            if (brug.motivatie_genade) {
+                html += `<div class="nested-card">`;
+                html += `<div class="nested-card-title">Motivatie & Genade</div>`;
+                html += `<div class="nested-card-content">`;
+                if (brug.motivatie_genade.genade_indicatief) html += `<div><strong>Indicatief:</strong> ${processText(brug.motivatie_genade.genade_indicatief)}</div>`;
+                if (brug.motivatie_genade.motivatie_heiliging) html += `<div style="margin-top:5px;"><strong>Heiliging:</strong> ${processText(brug.motivatie_genade.motivatie_heiliging)}</div>`;
+                html += `</div></div>`;
+            }
+
+            html += `</div></div>`;
             return html;
         }
 
