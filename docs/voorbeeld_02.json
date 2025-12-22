@@ -1057,52 +1057,48 @@
           "vertaalvergelijking": [
             {
               "vertaling": "NBV21",
-              "significante_verschillen": "De NBV21 vertaalt in vers 13 'Als zijn verstand hem verlaat', wat een sterke associatie oproept met dementie of cognitieve achteruitgang. Dit maakt de tekst zeer actueel voor een vergrijzende context. In vers 3 en 14 wordt gesproken over 'verzoening' en 'opbouwen wat zonden hebben afgebroken', wat een directe link legt tussen intermenselijke ethiek en de verticale relatie met God."
-            },
-            {
-              "vertaling": "Naardense Bijbel",
-              "significante_verschillen": "De Naardense Bijbel is niet opgenomen in de bronset voor Sirach, maar de NBV21 dient hier als primaire bron. De focus ligt op de terminologie van 'eer' (Grieks: timè) en 'ontferming' (eleèmosunè), waarbij de NBV21 kiest voor een vloeiende, functionele weergave van de wijsheidstraditie."
+              "significante_verschillen": "De NBV21 vertaalt in vers 13 'Als zijn verstand hem verlaat', wat een directe associatie oproept met dementie of cognitieve achteruitgang. In vers 3 en 14 wordt de term 'verzoening' gebruikt voor de daden van het kind, wat een sterke theologische lading geeft aan de ethische handeling. De Naardense Bijbel is voor deze perikoop niet in de bronset opgenomen, waardoor de focus ligt op de NBV21-weergave van de wijsheidstraditie."
             }
           ],
-          "werkvertaling_cruciaal": "Vers 13: 'Zelfs als zijn verstand hem verlaat, heb geduld met hem; zie niet op hem neer, ook al ben jij in de kracht van je leven.'\n\nVers 14: 'Want de ontferming over een vader zal niet worden uitgewist; zij zal als een offer voor de zonde tegenover jouw eigen tekortkomingen worden gesteld.'"
+          "werkvertaling_cruciaal": "Vers 13: 'Zelfs als zijn verstand hem verlaat, heb geduld met hem; zie niet op hem neer, ook al ben jij in de kracht van je leven.'\\n\\nVers 14: 'Want de ontferming over een vader zal niet worden uitgewist; zij zal als een offer voor de zonde tegenover jouw eigen tekortkomingen worden gesteld.'"
         },
         "tekstkritiek": {
           "relevante_varianten": [
             {
               "vers": "3,14",
-              "variant": "Hebreeuwse vs. Griekse tekst",
+              "variant": "Hebreeuwse vs. Griekse traditie",
               "handschriften": "Geniza-fragmenten vs. Septuaginta",
-              "betekenis_impact": "De Hebreeuwse tekst benadrukt sterker het concept van 'tsedaqa' (gerechtigheid/aalmoes) als een vorm van verzoening. In de Griekse traditie wordt dit vertaald met 'eleèmosunè', wat zowel ontferming als concrete hulp betekent. De impact is dat de zorg voor ouders niet slechts een morele plicht is, maar een liturgische daad van verzoening."
+              "betekenis_impact": "In de Hebreeuwse tekst (Geniza) wordt sterker gezinspeeld op 'tsedaqa' (gerechtigheid/aalmoes) als middel tot verzoening. De Griekse tekst gebruikt 'eleèmosunè' (ontferming), wat de nadruk verschuift van een juridisch-cultische handeling naar een barmhartige houding die echter dezelfde verzoenende kracht behoudt."
             }
           ],
-          "conclusie": "De tekst is tekstueel stabiel in de Griekse traditie, maar de Hebreeuwse achtergrond kleurt de diepte van de termen 'eer' en 'verzoening' in de zin van verbondstrouw."
+          "conclusie": "De tekst is in de Griekse traditie stabiel. De spanning zit vooral in de vertaling van cultische termen naar een ethische context."
         },
         "woordstudie": [
           {
             "woord_origineel": "כַּבֵּד / τιμάω",
             "transliteratie": "kabbed / timaō",
             "vertaling": "Eer bewijzen / hoogachten",
-            "semantische_range": "Het Hebreeuwse 'kaved' betekent letterlijk 'zwaar maken'. Iemand gewicht toekennen, serieus nemen. In de Griekse context van Sirach gaat het om publieke erkenning en praktische ondersteuning.",
-            "gebruik_elders": "Centraal in het vijfde gebod (Exodus 20,12). Sirach breidt dit gebod uit naar de specifieke context van de ouderdom en zwakte.",
-            "meerduidigheid": "Het woord impliceert zowel een innerlijke houding als een uiterlijke, financiële of praktische ondersteuning."
+            "semantische_range": "Letterlijk 'zwaar maken' of 'gewicht toekennen'. Het gaat om het erkennen van de door God gegeven status van de ouder, wat zich uit in zowel een innerlijke houding als praktische, materiële ondersteuning.",
+            "gebruik_elders": "Fundamenteel in de Decaloog (Exodus 20,12). Sirach past dit gebod toe op de specifieke kwetsbaarheid van de ouderdom.",
+            "meerduidigheid": "Impliceert zowel respect als concrete zorg."
           },
           {
             "woord_origineel": "ἐξιλάσκεται",
             "transliteratie": "exilasketai",
             "vertaling": "Verzoening bewerken",
-            "semantische_range": "Het wegnemen van schuld, het herstellen van een verbroken relatie met God.",
-            "gebruik_elders": "Vaak gebruikt in de context van offerrituelen in Leviticus.",
-            "meerduidigheid": "Hier wordt het opvallend genoeg toegepast op een ethische handeling (zorg voor ouders) in plaats van een cultische handeling."
+            "semantische_range": "Het wegnemen van schuld of het herstellen van de relatie met de Godheid.",
+            "gebruik_elders": "Standaardterm in Leviticus voor offerrituelen.",
+            "meerduidigheid": "Hier opvallend toegepast op een intermenselijke handeling in plaats van een tempeloffer."
           }
         ],
         "literaire_analyse": {
           "genre": "wijsheid",
-          "genre_conventies": "Didactische poëzie die praktische levenswijsheid verbindt met de vrees voor de Heer. Gebruik van imperatieven en beloften van zegen.",
+          "genre_conventies": "Didactische poëzie die praktische levensregels verbindt met de 'vrees voor de Heer'. Gebruik van imperatieven en beloften van zegen.",
           "structuur": {
-            "opbouw": "De perikoop is opgebouwd als een reeks vermaningen (parenesis) gevolgd door de positieve gevolgen van gehoorzaamheid.",
+            "opbouw": "De tekst bestaat uit een reeks vermaningen (parenesis) die telkens worden gemotiveerd door een religieuze of existentiële beloning.",
             "cesuren": [
-              "Vers 2-6: De algemene plicht tot het eren van ouders en de religieuze beloningen.",
-              "Vers 12-14: Specifieke toepassing op de situatie van ouderdom en cognitief verval."
+              "Vers 2-6: Algemene principes van ouderverering en de spirituele vruchten daarvan.",
+              "Vers 12-14: Specifieke toepassing op de zorg voor de hulpbehoevende, demente ouder."
             ],
             "centrum": "Vers 3-4: De parallel tussen het eren van de vader en de moeder als een vorm van schatten verzamelen en verzoening.",
             "chiasme_inclusio": "Inclusio rondom het thema 'verzoening' (vers 3 en vers 14)."
@@ -1110,11 +1106,11 @@
           "stijl_retoriek": {
             "literaire_middelen": [
               "Synoniem parallellisme (vader eren // moeder hoogachten).",
-              "Metafoor van 'schatten verzamelen' voor moreel handelen.",
-              "Contrast tussen de 'kracht' van de jongere en het 'verlaten van verstand' bij de oudere."
+              "Metaforiek van 'schatten verzamelen'.",
+              "Contrast tussen de 'kracht' van de jongere en het 'verlaten verstand' van de oudere."
             ],
-            "retorische_strategie": "De auteur appelleert aan het eigenbelang van de hoorder (je gebeden worden verhoord, je zult lang leven) om een fundamentele ethische waarde in te scherpen.",
-            "effect_lezer": "Het creëert een gevoel van heilige verplichting die verder gaat dan loutere empathie; het is een zaak tussen de mens en God."
+            "retorische_strategie": "De auteur koppelt ethiek aan eigenbelang: wie zijn ouders eert, wordt zelf verhoord in het gebed. Dit versterkt de motivatie voor de hoorder.",
+            "effect_lezer": "Het creëert een besef dat de zorg voor ouders een heilige, bijna liturgische handeling is."
           },
           "karakters_plot": {
             "personages": [
@@ -1123,43 +1119,43 @@
               "Het kind (de hoorder)",
               "De Heer"
             ],
-            "karakterisering": "De ouders worden getekend in hun door God gegeven autoriteit, maar ook in hun uiteindelijke kwetsbaarheid. De hoorder wordt aangesproken als iemand die verantwoordelijkheid draagt voor de continuïteit van het leven en het geloof.",
+            "karakterisering": "De ouders worden getekend in hun door God gegeven autoriteit die overgaat in kwetsbaarheid. De hoorder is de verantwoordelijke actor.",
             "verhaallijn": null,
-            "verzwegen_gesuggereerd": "De tekst suggereert dat de relatie met de ouders de lakmoesproef is voor de relatie met God."
+            "verzwegen_gesuggereerd": "De tekst suggereert dat de kwaliteit van de relatie met de ouders de graadmeter is voor de vroomheid jegens God."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "Het eren van ouders is geen optionele deugd, maar een fundamentele uiting van de vrees voor de Heer die directe gevolgen heeft voor de eigen geestelijke staat en de verzoening van zonden.",
-          "godsbeeld": "God wordt gepresenteerd als de insteller van de gezinsorde. Hij is degene die de autoriteit van ouders bekrachtigt en die de zorg voor hen ziet als een offer aan Hemzelf. Hij is een God die gebeden verhoort van hen die hun ouders eren.",
-          "mensbeeld_wereld_heil": "De mens is ingebed in een generatie-overstijgend verband. Heil is niet louter individueel, maar verbonden met de trouw binnen het gezin. Er is een nuchtere erkenning van menselijke aftakeling ('als zijn verstand hem verlaat').",
+          "centrale_boodschap": "De zorg voor en het eren van ouders is een fundamentele uiting van de vrees voor de Heer, die door God wordt geaccepteerd als een offer dat verzoening bewerkt voor eigen tekortkomingen.",
+          "godsbeeld": "God verschijnt als de insteller en bewaker van de gezinsorde. Hij is degene die autoriteit delegeert aan ouders en die de zorg voor hen ziet als een daad van aanbidding aan Hemzelf. Hij is een God die gebeden verhoort op basis van ethische integriteit.",
+          "mensbeeld_wereld_heil": "De mens is een relationeel wezen, ingebed in een generatieverband. Heil is niet louter individueel, maar verbonden met de trouw aan de natuurlijke en goddelijke orde van het gezin. Er is een nuchtere erkenning van menselijke aftakeling.",
           "bijbels_theologische_lijnen": [
             "Decaloog (vijfde gebod)",
             "Vergeldingstheologie (zegen op gehoorzaamheid)",
-            "Ethiek als offer (verzoening door daden van liefde)"
+            "Ethiek als offer"
           ],
-          "plaats_heilsgeschiedenis": "Sirach slaat de brug tussen de wet van Mozes en de praktische wijsheid van de tweede tempelperiode, waarbij de nadruk verschuift naar de innerlijke vroomheid die zich uit in sociale zorg.",
-          "spanning_andere_teksten": "De claim dat het eren van ouders 'verzoening voor zonden' bewerkt, kan op gespannen voet staan met de latere nieuwtestamentische nadruk op verzoening door Christus alleen, tenzij dit wordt begrepen als de vrucht van het geloof.",
+          "plaats_heilsgeschiedenis": "Sirach slaat de brug tussen de Wet van Mozes en de praktische vroomheid van de Tweede Tempelperiode, waarbij de nadruk verschuift naar de innerlijke houding die zich uit in sociale zorg.",
+          "spanning_andere_teksten": "De claim dat ethisch handelen 'verzoening' bewerkt, vraagt om een zorgvuldige afstemming met de nieuwtestamentische genadeleer, waarbij deze daden als vrucht van het geloof worden gezien.",
           "dogmatische_raakvlakken": [
-            "Vierde gebod (Heidelbergse Catechismus Zondag 39)",
+            "Vierde gebod (Heidelbergse Catechismus)",
             "Algemene genade en natuurlijke orde"
           ],
-          "theologische_controverses": "De status van Sirach als apocrief/deuterocanoniek boek binnen de protestantse traditie vraagt om een zorgvuldige inleiding over de wijsheidswaarde van de tekst."
+          "theologische_controverses": "De status van Sirach als deuterocanoniek boek binnen de protestantse traditie vereist een duiding van de tekst als 'nuttig en vroom' maar niet als fundament voor de heilsleer."
         },
         "zoekmodellen_snoek": {
           "godsbeelden_ot": {
             "werkwoordelijke_uitspraken": "De Heer 'geeft aanzien' aan de vader en 'verplicht' de zonen aan het oordeel van de moeder. Hij 'verhoort' het gebed van de eerbiedige zoon.",
-            "metaforische_uitspraken": "God als de ultieme Rechter en Beloner van de gezinsorde.",
-            "overstijgende_eigenschappen": "Almachtig in het beschikken over de levensduur ('zal lang leven') en de effectiviteit van het gebed.",
+            "metaforische_uitspraken": "God als de ultieme Rechter en Beloner van de gezinsorde; Hij die de 'schatten' beheert.",
+            "overstijgende_eigenschappen": "Almachtig in het beschikken over de levensduur en de effectiviteit van het gebed.",
             "toebuigende_eigenschappen": "Barmhartig, doordat Hij de zorg voor ouders accepteert als een vorm van verzoening voor zonden.",
-            "dominante_categorie": "Toebuigend-overstijgend: God is de bewaker van de morele orde, maar Hij is nabij in de concrete zorgsituatie.",
+            "dominante_categorie": "Toebuigend-overstijgend: God bewaakt de morele orde, maar is nabij in de concrete zorgsituatie.",
             "spanning": "De spanning tussen Gods soevereiniteit en de menselijke handeling die 'verzoening bewerkt'.",
-            "relevantie_gemeente": "In Ameide, waar de zorg voor ouderen (Open Vensters) een centrale plek inneemt, legitimeert dit Godsbeeld de zwaarte en de heiligheid van mantelzorg."
+            "relevantie_gemeente": "In een context van vergrijzing (Ameide) legitimeert dit Godsbeeld de zwaarte en de heiligheid van mantelzorg als een weg van navolging."
           },
           "mensbeelden_ot": {
             "horizontale_as": "De focus ligt volledig op 'goed doen' (gerechtigheid, trouw) binnen de horizontale relatie ouder-kind.",
             "verticale_as": "De horizontale actie is verticaal gericht: het eren van de vader is een daad van 'luisteren naar de Heer'.",
             "personages_positie": "De hoorder bevindt zich op het kruispunt van kracht (jeugd) en verantwoordelijkheid (zorg). De ouder bevindt zich in de positie van de behoeftige die recht heeft op eer.",
-            "karakterontwikkeling": "De tekst roept op tot een ontwikkeling van autonomie naar dienende verbondenheid."
+            "karakterontwikkeling": "De tekst roept op tot een ontwikkeling van autonomie naar dienende verbondenheid, waarbij de eigen kracht wordt ingezet voor de zwakkere."
           },
           "jezusbeelden_nt": null
         }
@@ -1170,14 +1166,14 @@
           "vertaalvergelijking": [
             {
               "vertaling": "NBV21",
-              "significante_verschillen": "Gebruikt 'vlucht met het kind en zijn moeder', wat de actie benadrukt. 'Zo moest in vervulling gaan' is de standaardformule voor de vervullingscitaten."
+              "significante_verschillen": "Gebruikt 'vlucht met het kind en zijn moeder', wat de urgentie benadrukt. 'Zo moest in vervulling gaan' is de standaardformule voor de vervullingscitaten."
             },
             {
-              "vertaling": "Naardense Bijbel",
-              "significante_verschillen": "Vertaalt 'anachorein' consequent met 'uitwijken'. Dit geeft een minder passieve indruk dan 'vluchten'; het is een strategische beweging onder goddelijke leiding. 'Het jongetje' (paidion) benadrukt de tederheid en kwetsbaarheid sterker dan 'het kind'."
+              "vertaling": "NB",
+              "significante_verschillen": "Vertaalt 'anachorein' met 'uitwijken'. Dit geeft een minder passieve indruk dan 'vluchten'; het is een strategische beweging onder goddelijke leiding. 'Het jongetje' (paidion) benadrukt de tederheid en kwetsbaarheid sterker dan 'het kind'."
             }
           ],
-          "werkvertaling_cruciaal": "Vers 13: 'Nadat zij waren uitgeweken, zie, een engel van de Heer verschijnt in een droom aan Jozef en zegt: Word wakker, neem het jongetje en zijn moeder bij je en vlucht naar Egypte.'\n\nVers 15: '...opdat vervuld zou worden wat door de Heer gesproken was door de profeet: Uit Egypte heb Ik mijn Zoon geroepen.'"
+          "werkvertaling_cruciaal": "Vers 13: 'Nadat zij waren uitgeweken, zie, een engel van de Heer verschijnt in een droom aan Jozef en zegt: Word wakker, neem het jongetje en zijn moeder bij je en vlucht naar Egypte.'\\n\\nVers 15: '...opdat vervuld zou worden wat door de Heer gesproken was door de profeet: Uit Egypte heb Ik mijn Zoon geroepen.'"
         },
         "tekstkritiek": {
           "relevante_varianten": [
@@ -1185,34 +1181,26 @@
               "vers": "2,15",
               "variant": "Citaat uit Hosea 11,1",
               "handschriften": "MT vs. LXX",
-              "betekenis_impact": "Matteüs volgt hier de Hebreeuwse tekst (MT) 'Mijn zoon' in plaats van de Septuaginta (LXX) 'zijn kinderen'. Dit is cruciaal voor de christologische duiding: Jezus is de unieke Zoon die de geschiedenis van Israël herhaalt en vervolmaakt."
+              "betekenis_impact": "Matteüs volgt de Hebreeuwse tekst (MT) 'Mijn zoon' in plaats van de Septuaginta (LXX) 'zijn kinderen'. Dit is cruciaal voor de christologische duiding: Jezus is de unieke Zoon die de geschiedenis van Israël herhaalt en vervolmaakt."
             }
           ],
-          "conclusie": "De tekst is goed overgeleverd. De variatie in de vervullingscitaten is een bewuste exegetische keuze van de evangelist."
+          "conclusie": "De tekst is tekstueel stabiel; de variatie in de vervullingscitaten is een bewuste exegetische keuze van de evangelist."
         },
         "woordstudie": [
           {
             "woord_origineel": "ἀναχωρέω",
             "transliteratie": "anachōreō",
             "vertaling": "Uitwijken / zich terugtrekken",
-            "semantische_range": "Niet louter vluchten uit angst, maar een doelgerichte terugtocht om een gevaar te ontwijken of een nieuwe fase voor te bereiden.",
+            "semantische_range": "Niet louter vluchten uit angst, maar een doelgerichte terugtocht om gevaar te ontwijken of een nieuwe fase voor te bereiden.",
             "gebruik_elders": "Matteüs gebruikt dit woord vaak wanneer Jezus zich onttrekt aan de menigte of aan dreigend gevaar (bijv. Mt 4,12; 12,15).",
-            "meerduidigheid": "Het suggereert een goddelijke regie achter de menselijke beweging."
+            "meerduidigheid": "Suggereert een goddelijke regie achter de menselijke beweging."
           },
           {
             "woord_origineel": "παιδίον",
             "transliteratie": "paidion",
             "vertaling": "Jongetje / klein kind",
             "semantische_range": "Verkleinwoord van 'pais'. Benadrukt de afhankelijkheid en de behoefte aan bescherming.",
-            "gebruik_elders": "In de kindsheidsevangeliën de standaardterm voor Jezus.",
-            "meerduidigheid": null
-          },
-          {
-            "woord_origineel": "πληρωθῇ",
-            "transliteratie": "plērōthē",
-            "vertaling": "Vervuld worden",
-            "semantische_range": "Tot volheid brengen, de diepste bedoeling realiseren.",
-            "gebruik_elders": "De 'Leitmotif' van het Matteüsevangelie om de continuïteit met het Oude Testament aan te tonen.",
+            "gebruik_elders": "Standaardterm voor Jezus in de kindsheidsevangeliën.",
             "meerduidigheid": null
           }
         ],
@@ -1222,7 +1210,7 @@
           "structuur": {
             "opbouw": "Geografische beweging in drie fasen: 1. Naar Egypte (vlucht), 2. Uit Egypte (terugkeer), 3. Naar Nazaret (vestiging).",
             "cesuren": [
-              "Vers 13-15: De opdracht en de vlucht.",
+              "Vers 13-15: De opdracht en de vlucht naar Egypte.",
               "Vers 19-21: De dood van Herodes en de opdracht tot terugkeer.",
               "Vers 22-23: De angst voor Archelaüs en de keuze voor Nazaret."
             ],
@@ -1246,7 +1234,7 @@
               "Herodes en Archelaüs (de antagonisten)"
             ],
             "karakterisering": "Jozef wordt getekend als de 'rechtvaardige' die onmiddellijk handelt ('nog is het nacht'). Herodes is de schaduwfiguur wiens macht eindig is.",
-            "verhaallijn": "Conflict tussen de wereldlijke macht (Herodes) en de komende Koning, uitmondend in een tijdelijke ballingschap en een veilige landing in de marge (Nazaret).",
+            "verhaallijn": "Conflict tussen de wereldlijke macht en de komende Koning, uitmondend in een tijdelijke ballingschap en een veilige landing in de marge (Nazaret).",
             "verzwegen_gesuggereerd": "De angst van Jozef (vers 22) laat zien dat goddelijke leiding de menselijke emoties en voorzichtigheid niet uitschakelt."
           }
         },
@@ -1260,7 +1248,7 @@
             "Vervulling van de Schriften"
           ],
           "plaats_heilsgeschiedenis": "Deze perikoop markeert de overgang van de belofte naar de eerste concrete stappen van de Messias op aarde, waarbij de contouren van zijn latere lijden en verheerlijking reeds zichtbaar worden.",
-          "spanning_andere_teksten": "De vlucht naar Egypte staat in contrast met de presentatie in de tempel (Lukas), wat vraagt om een harmoniserende of thematische lezing van de verschillende evangelie-tradities.",
+          "spanning_andere_teksten": "De vlucht naar Egypte staat in contrast met de presentatie in de tempel (Lukas), wat vraagt om een thematische lezing van de verschillende evangelie-tradities.",
           "dogmatische_raakvlakken": [
             "Providentia (Gods voorzienigheid)",
             "Incarnatie (de kwetsbaarheid van de God-mens)"
@@ -1271,13 +1259,13 @@
           "godsbeelden_ot": null,
           "mensbeelden_ot": null,
           "jezusbeelden_nt": {
-            "van_achteren": "Jezus is diep geworteld in de geschiedenis van Israël. Hij herhaalt de gang naar Egypte en de uittocht. Hij is de 'Zoon' uit Hosea.",
+            "van_achteren": "Jezus is diep geworteld in de geschiedenis van Israël. Hij herhaalt de gang naar Egypte en de uittocht. Hij is de 'Zoon' uit Hosea 11,1.",
             "van_boven": "Zijn identiteit wordt bevestigd door hemelse boodschappers (engelen) en goddelijke dromen. Hij is de 'Zoon van God' die door de Vader wordt bewaard.",
             "van_beneden": "Hij is het 'paidion', een kwetsbaar jongetje dat volledig afhankelijk is van de zorg van Jozef en Maria en moet vluchten voor een aardse tiran.",
-            "van_voren": "Zijn verblijf in Nazaret wijst vooruit naar zijn publieke optreden als de 'Nazoreeër'. De eschatologische vrede begint in de marge.",
-            "dominant_perspectief": "De spanning tussen 'van achteren' (Israël-typologie) en 'van beneden' (de vluchteling) domineert.",
+            "van_voren": "Zijn verblijf in Nazaret wijst vooruit naar zijn publieke optreden als de 'Nazoreeër'. De eschatologische vrede begint in de marge van de wereldmacht.",
+            "dominant_perspectief": "De spanning tussen 'van achteren' (Israël-typologie) en 'van beneden' (de vluchteling) domineert de tekst.",
             "spanning_godheid_mensheid": "De almachtige Zoon van God is tegelijkertijd een vluchteling die afhankelijk is van een ezel en een droom. Dit benadrukt de 'kenosis' (ontlediging) van de incarnatie.",
-            "betekenis_hoorders_nu": "Voor de hoorders in Ameide betekent dit dat God aanwezig is in de onzekerheid van het 'onderweg zijn' en dat de grootste beloften vaak in de kleinste en meest kwetsbare vormen bewaard blijven."
+            "betekenis_hoorders_nu": "Voor de hoorders betekent dit dat God aanwezig is in de onzekerheid van het 'onderweg zijn' en dat de grootste beloften vaak in de kleinste en meest kwetsbare vormen bewaard blijven."
           }
         }
       }
@@ -2401,6 +2389,43 @@
         "voorbeden": "De zorg voor de ouders (Sirach 3) geconcretiseerd in de voorbede voor 'Open Vensters'."
       }
     }
+  },
+  "15_kindermoment": {
+    "kindermoment_opties": [
+      {
+        "type": "Klassiek",
+        "titel": "De Koffer voor het Donker",
+        "object": {
+          "naam": "Een oude, zware reiskoffer met een felle zaklamp erin",
+          "uitleg": "De koffer symboliseert de plotselinge reis van de Heilige Familie, terwijl de zaklamp staat voor Gods leiding (de engel) in de nacht."
+        },
+        "focus_schriftlezing": "Matteüs 2,14: 'Jozef maakte zich gereed en week nog diezelfde nacht met het kind en zijn moeder uit naar Egypte.'",
+        "verhaal_script": "(Regie: Zet de koffer midden in de kring. Laat de kinderen raden wat erin zit voor een vakantie.)\n\n\"Kijk eens, ik heb een koffer meegenomen. Als jullie op vakantie gaan, wat gaat er dan mee? (Laat kinderen reageren: knuffel, tandenborstel, zwembroek). Maar Jozef, Maria en het kindje Jezus gingen niet op vakantie. Ze moesten vluchten. En weet je wanneer? Midden in de nacht! Het was pikdonker op de weg naar Egypte. \n\n(Doe de koffer open en haal de zaklamp eruit, zet hem aan). Jozef nam geen speelgoed mee, maar hij had wel iets heel belangrijks: een bericht van God. Een engel had gezegd: 'Ga nu, Ik wijs je de weg.' Dat was als een zaklamp in het donker. Soms vinden wij dingen ook spannend of eng, zeker als het jaar bijna voorbij is en we niet weten wat er gaat gebeuren. Maar de tekst van vandaag vertelt ons: God laat je niet in het donker wandelen. Hij gaat mee, ook als je halsoverkop op pad moet. Zullen we onthouden dat God onze zaklamp is?\"",
+        "afbeelding_idee": "Een sfeervolle foto van een ouderwetse koffer die op een kier staat, waar een warm, helder licht uit schijnt in een donkere kamer."
+      },
+      {
+        "type": "Actief",
+        "titel": "De Mode-show van de Liefde",
+        "object": {
+          "naam": "Een mand vol met 'gekke' winterkleding (enorme sjaal, wanten, een veel te grote jas, een muts)",
+          "uitleg": "Dit visualiseert het 'aantrekken' van deugden zoals beschreven in de brief aan de Kolossenzen."
+        },
+        "focus_schriftlezing": "Kolossenzen 3,12: 'Omdat God u heeft uitgekozen... moet u zich kleden in innig medeleven, in goedheid, nederigheid, zachtmoedigheid en geduld.'",
+        "verhaal_script": "(Regie: Vraag twee vrijwilligers naar voren. Laat de andere kinderen kledingstukken uit de mand kiezen en deze bij de vrijwilligers aantrekken terwijl je de tekst uitlegt.)\n\n\"Het is buiten koud in Ameide, dus we hebben warme kleren nodig. Maar de Bijbel zegt vandaag dat we voor het nieuwe jaar nog een andere set kleren moeten aantrekken. Geen kleren van wol, maar kleren van... liefde! \n\n(Laat een kind de grote sjaal omdoen). Deze sjaal noemen we 'Geduld'. Die heb je nodig als je moet wachten op je broertje. (Laat een kind de wanten aangeven). Deze wanten zijn 'Vriendelijkheid', zodat je zachte handen hebt voor de ander. \n\nKijk ze eens staan, ze zien er prachtig uit! Paulus zegt: trek deze kleren elke dag aan. Niet omdat het moet van je moeder, maar omdat God ze aan jou cadeau geeft. Als we deze 'jas van de liefde' aanhebben, wordt het in de Sionkerk en in jullie klas een stuk warmer, zelfs als het vriest. Wie helpt er morgen mee om de jas van 'Geduld' aan te trekken?\"",
+        "afbeelding_idee": "Een kleurrijke illustratie van kinderen die elkaar helpen bij het aantrekken van een veel te grote, stralende jas waar woorden als 'Vrede' en 'Geduld' op staan."
+      },
+      {
+        "type": "Gek/Onconventioneel",
+        "titel": "Koning Ananas en het Kind",
+        "object": {
+          "naam": "Een echte ananas met een papieren gouden kroon erop",
+          "uitleg": "De ananas is prikkelbaar en hard van buiten (Herodes), maar heeft een kroon. Dit contrasteert met de kwetsbaarheid van het kind Jezus."
+        },
+        "focus_schriftlezing": "Matteüs 2,13: '...want Herodes is naar het kind op zoek en wil het ombrengen.'",
+        "verhaal_script": "(Regie: Houd de ananas met de kroon triomfantelijk omhoog. Laat de kinderen de buitenkant voelen—voorzichtig!)\n\n\"Moet je kijken! Ik heb een koning meegenomen naar de kerk. Kijk maar, hij heeft een kroon. Maar voel eens... au! Hij is hartstikke prikkelbaar en scherp. Dit is Koning Ananas. Hij lijkt een beetje op Koning Herodes uit het verhaal van vandaag. Herodes was een koning die heel gemeen deed. Hij was prikkelbaar en wilde niet dat er een andere koning kwam. Hij wilde Jezus pijn doen.\n\nMaar weet je wat het gekke is? Jezus was helemaal niet prikkelbaar. Hij was een kleine, zachte baby. Hij had geen scherpe stekels om zich te verdedigen. Hij moest vluchten voor deze 'prikkel-koning'. \n\nSoms komen wij ook 'prikkelbare' mensen tegen, of zijn we zelf een beetje stekelig. Maar God zegt: Ik bescherm het zachte kindje tegen de scherpe koning. De echte Koning hoeft niet te prikken om de baas te zijn; Hij overwint met liefde. (Snijd de ananas eventueel na de dienst open om te laten zien hoe zoet hij van binnen is als symbool voor Gods goede bedoeling).\"",
+        "afbeelding_idee": "Een grappige foto van een ananas met een koningskroon die naast een heel klein, zacht wit lammetje of een wiegje staat."
+      }
+    ]
   },
   "Bijbelteksten": {
     "naardense_bijbel": [

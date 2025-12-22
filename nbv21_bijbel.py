@@ -64,16 +64,16 @@ NBV21_DIR = SCRIPT_DIR / "nbv21"
 # Mapping configuratie (Bron: get_chapter.R)
 MAPPINGS_SOURCE = {
     # Old Testament
-    "GEN": ["GEN", "Genesis", "1 Mozes", "1Mozes"],
-    "EXO": ["EXO", "Exodus", "2 Mozes", "2Mozes"],
-    "LEV": ["LEV", "Leviticus", "3 Mozes", "3Mozes"],
-    "NUM": ["NUM", "Numeri", "4 Mozes", "4Mozes"],
-    "DEU": ["DEU", "Deuteronomium", "5 Mozes", "5Mozes"],
+    "GEN": ["GEN", "Gen", "Genesis", "1 Mozes", "1Mozes"],
+    "EXO": ["EXO", "Exo", "Exodus", "2 Mozes", "2Mozes"],
+    "LEV": ["LEV", "Lev", "Leviticus", "3 Mozes", "3Mozes"],
+    "NUM": ["NUM", "Num", "Numeri", "4 Mozes", "4Mozes"],
+    "DEU": ["DEU", "Deut", "Deuteronomium", "5 Mozes", "5Mozes"],
     "JOS": ["JOS", "Jozua", "Joshua"],
     "JDG": ["JDG", "Rechters", "Judges", "Richteren"],
     "RUT": ["RUT", "Ruth"],
-    "1SA": ["1SA", "1 Samuel", "1Samuel", "1 Sam", "1Sam", "1 Samuël"],
-    "2SA": ["2SA", "2 Samuel", "2Samuel", "2 Sam", "2Sam", "2 Samuël"],
+    "1SA": ["1SA", "1 Samuel", "1 Samuël", "1Samuel", "1Samuël", "1 Sam", "1Sam", "1 Samuël"],
+    "2SA": ["2SA", "2 Samuel", "2 Samuël", "2Samuel", "2Samuël", "2 Sam", "2Sam", "2 Samuël"],
     "1KI": ["1KI", "1 Koningen", "1Koningen", "1 Kings", "1Kings"],
     "2KI": ["2KI", "2 Koningen", "2Koningen", "2 Kings", "2Kings"],
     "1CH": ["1CH", "1 Kronieken", "1Kronieken", "1 Chronicles", "1Chronicles"],

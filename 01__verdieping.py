@@ -171,6 +171,7 @@ def read_previous_analyses(folder: Path) -> dict:
         ("12_representatieve_hoorders", "representatieve_hoorders"),
         ("13_homiletische_analyse", "homiletische_analyse"),
         ("14_gebeden", "gebeden"),
+        ("15_kindermoment", "kindermoment"),
     ]
 
     # Backwards compatibility check
@@ -691,6 +692,7 @@ def update_summary(output_dir: Path):
                 ("12_representatieve_hoorders", "Representatieve Hoorders"),
                 ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
                 ("14_gebeden", "Gebeden voor de Eredienst"),
+                ("15_kindermoment", "Kindermoment"),
             ]
 
             existing_names = [a.get("name") for a in data.get("analyses", [])]
@@ -721,6 +723,7 @@ def update_summary(output_dir: Path):
             ("12_representatieve_hoorders", "Representatieve Hoorders"),
             ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
             ("14_gebeden", "Gebeden voor de Eredienst"),
+            ("15_kindermoment", "Kindermoment"),
         ]
 
         for name, title in new_analyses:
@@ -841,6 +844,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("12_representatieve_hoorders", "Representatieve Hoorders"),
         ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
         ("14_gebeden", "Gebeden voor de Eredienst"),
+        ("15_kindermoment", "Kindermoment"),
     ]
 
     if args.exegese:
@@ -919,7 +923,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         # Voer analyse uit
         if name == "11_kalender":
             temp = 0.1 # Laag voor feitelijke precisie
-        elif name == "14_gebeden":
+        elif name == "14_gebeden" or name == "15_kindermoment":
             temp = 0.7 # Hoger voor poëtische creativiteit
         else:
             temp = 0.2 # Standaard
@@ -945,7 +949,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 
 
 def combine_all_json(folder: Path):
-    """Combineer alle genummerde JSON-bestanden (00-14) tot één bestand, met ontdubbeling van metadata."""
+    """Combineer alle genummerde JSON-bestanden (00-15) tot één bestand, met ontdubbeling van metadata."""
     print("\nAlle JSON-outputs combineren...")
     combined_data = {}
     
