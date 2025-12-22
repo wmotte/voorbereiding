@@ -2952,24 +2952,21 @@
             if (brug.expositorisch_raamwerk) {
                 html += `<div style="margin-top: 20px;">`;
                 html += `<div class="nested-title">Expositorisch Raamwerk (Double Helix)</div>`;
-                html += `<div class="plot-container">`; // Reuse plot-container style
+                html += `<div class="card-grid">`; // Changed to card-grid for grid layout
 
                 const points = Object.entries(brug.expositorisch_raamwerk)
                     .filter(([k]) => k.startsWith('hoofdpunt'))
                     .sort();
 
                 points.forEach(([key, point], index) => {
-                    html += `<div class="plot-card" style="border-left-color: var(--accent);">`;
-                    html += `<div class="plot-header">`;
-                    html += `<div class="plot-badge" style="background: var(--accent);">${index + 1}</div>`;
-                    html += `<div class="plot-title">Hoofdpunt ${index + 1}</div>`;
-                    html += `</div>`;
+                    html += `<div class="nested-card" style="border-left-color: var(--accent);">`;
+                    html += `<div class="nested-card-title">Hoofdpunt ${index + 1}</div>`;
                     
-                    html += `<div class="plot-content">`;
+                    html += `<div class="nested-card-content">`;
                     if (point.tekst_basis) html += `<div><strong>Tekstbasis:</strong> ${processText(point.tekst_basis)}</div>`;
-                    if (point.illustratie_idee) html += `<div><strong>Illustratie:</strong> ${processText(point.illustratie_idee)}</div>`;
-                    if (point.relatie_fcf) html += `<div><strong>FCF:</strong> ${processText(point.relatie_fcf)}</div>`;
-                    if (point.beweging) html += `<div><strong>Beweging:</strong> ${processText(point.beweging)}</div>`;
+                    if (point.illustratie_idee) html += `<div style="margin-top:5px;"><strong>Illustratie:</strong> ${processText(point.illustratie_idee)}</div>`;
+                    if (point.relatie_fcf) html += `<div style="margin-top:5px;"><strong>FCF:</strong> ${processText(point.relatie_fcf)}</div>`;
+                    if (point.beweging) html += `<div style="margin-top:5px;"><strong>Beweging:</strong> ${processText(point.beweging)}</div>`;
                     html += `</div></div>`;
                 });
 
