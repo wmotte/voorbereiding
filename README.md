@@ -88,7 +88,7 @@ Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
 | 10 | **Focus & Functie** | De kernboodschap en het beoogde effect van de preek. |
 | 11 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
 | 12 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
-| 13 | **Homiletische Analyse** | Preekschets volgens Lowry's narratieve methode (Hè?/Oops!, Oei.../Ugh!, etc.). |
+| 13 | **Homiletische Analyse** | Preekschets volgens Lowry (narratief) en Chapell (FCF & Christocentrisch). |
 | 14 | **Gebeden** | Drempelgebed, Kyrie, Epiclese, Dankgebed en Voorbeden. |
 | 15 | **Kindermoment** | Drie creatieve opties (Klassiek, Actief, Vreemd) voor interactie met kinderen. |
 
@@ -112,13 +112,20 @@ Het script analyseert de Schrifttekst aan de hand van de modellen uit *Een huis 
 *   **Mensbeelden:** De mens in verhouding tot God (aanbidding) en de wereld (zorg voor de naaste).
 *   **Jezusbeelden:** Van achteren (Joods), van boven (Zoon van God), van beneden (mens) en van voren (Koninkrijk).
 
-### 3. Focus & Functie
+### 3. Homiletische Brug: Bryan Chapell
+De vertaalslag van exegese naar preek wordt gemaakt met de inzichten uit *Christ-Centered Preaching*:
+*   **Fallen Condition Focus (FCF):** De gemeenschappelijke menselijke gebrokenheid die de tekst adresseert en de genade noodzakelijk maakt.
+*   **Christocentrische Duiding:** Hoe onthult de tekst Gods verlossingsplan? (Predictive, Preparatory, Reflective, Resultant).
+*   **Motivatie:** De "chemie van het hart": heiliging als dankbare reactie op genade, niet als voorwaarde.
+📄 **[Lees de volledige methodiek van Chapell](misc/Bryan_Chapells_Expositie_Homiletiek.md)**
+
+### 4. Focus & Functie
 Om structuur aan te brengen, wordt onderscheid gemaakt tussen de inhoudelijke kern en het beoogde doel:
 *   **Focus:** Wat wil je zeggen? (De ene zin).
 *   **Functie:** Wat moet de preek doen? (Het effect op de hoorder).
 📄 **[Lees meer over Focus & Functie](misc/Focus_en_Functie.md)**
 
-### 4. Preekstructuur: Lowry's Homiletical Plot
+### 5. Preekstructuur: Lowry's Homiletical Plot
 De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaats van constructie) in five stadia:
 1.  **HÈ? (OOPS!)**: Verstoren van het evenwicht (de vraag/jeuk).
 2.  **OEI... (UGH!)**: Analyseren van de discrepantie (waarom is het probleem zo hardnekkig?).
@@ -127,7 +134,7 @@ De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaa
 5.  **ZÓ! (YEAH!)**: Anticiperen op de gevolgen (het gewone leven).
 📄 **[Lees de diepte-analyse van Lowry's methode](misc/Lowrys_Homiletical_Plot.md)**
 
-### 5. Liturgische Gebeden
+### 6. Liturgische Gebeden
 De gebeden volgen de klassieke en protestantse (PKN) traditie, met oog voor de specifieke functie van elk gebedsmoment:
 *   **Kyrie:** Nood van de wereld, concreet en actueel.
 *   **Epiclese:** Gebed om de Geest bij de opening van de Schriften.
@@ -152,6 +159,7 @@ python count_tokens.py --file output/Sessie_Naam/combined_output.json
 
 ## 📚 Literatuur & Bronnen
 
+*   **Chapell, B. (2018).** *Christ-Centered Preaching: Redeeming the Expository Sermon.* 3rd Edition. Grand Rapids: Baker Academic.
 *   **De Leede, H. & Stark, C. (2017).** *Ontvouwen: Protestantse prediking in de praktijk.* Zoetermeer: Boekencentrum, pp. 73-81.
 *   **Lowry, E.L. (2001).** *The Homiletical Plot: The Sermon as Narrative Art Form.* Expanded Edition. Louisville: Westminster John Knox Press.
 *   **Snoek, H. (2010).** *Een huis om in te wonen: Uitleg en interpretatie van de Bijbel.* Kampen: Kok, 2e druk, pp. 180-199. (Zoekmodellen voor Gods-, mens- en Jezusbeelden).

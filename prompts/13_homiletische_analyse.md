@@ -45,7 +45,47 @@ Kies één lezing die centraal staat. Zoek naar de tekst die de beste mogelijkhe
 
 ---
 
-### Stap 2: De vijf stadia van de Homiletical Plot
+### Stap 2: Homiletische Fundering (Bryan Chapell)
+
+Voordat je de narratieve structuur (de plot) bouwt, moet de theologische kern helder zijn. Gebruik de inzichten van Bryan Chapell om de exegetische bevindingen te vertalen naar een homiletisch raamwerk.
+
+**DEFINITIES & METHODIEK:**
+
+*   **Fallen Condition Focus (FCF):**
+    *   *Definitie:* De FCF is het "aspect van de menselijke gebrokenheid of zondigheid dat de tekst adresseert" en de reden vormt *waarom* de tekst geschreven is. Het is de "gemeenschappelijke menselijke conditie die hedendaagse gelovigen delen met de oorspronkelijke hoorders, een conditie die de genade van de passage vereist."
+    *   *Reikwijdte:* De FCF is niet beperkt tot expliciete morele overtredingen (zonden). Het omvat de hele breedte van het leven in een gevallen schepping: lijden, verdriet, angst, sterfelijkheid, onvermogen, schaamte, en gebroken relaties.
+    *   *Functie:* Het identificeren van de FCF beantwoordt de vraag: "Welk probleem lost deze tekst op?" of "Welke nood lenigt God hier?" Het vormt de existentiële brug tussen de antieke tekst en de moderne hoorder.
+
+*   **Christocentrische Duiding (Redemptive Disclosure):**
+    *   *Doel:* Elke tekst onthult een aspect van Gods verlossende plan dat uiteindelijk in Christus wordt vervuld. Het gaat om de *verlossingshistorische functie* van de tekst.
+    *   *Categorieën:* Gebruik de volgende categorieën om de relatie tot Christus te duiden:
+        1.  **Predictive (Voorspellend):** Directe messiaanse profetieën of typologie die expliciet naar de toekomst wijst. *Focus: Gods trouw aan Zijn beloften.*
+        2.  **Preparatory (Voorbereidend):** Teksten die de menselijke nood zo scherp diagnosticeren (vaak via de Wet) dat de onmogelijkheid van zelfverlossing duidelijk wordt, of die concepten van offer en priesterschap introduceren. *Focus: De noodzaak van genade.*
+        3.  **Reflective (Reflecterend):** Teksten die Gods verlossende aard (Zijn *hesed*, trouw, almacht, rechtvaardigheid) tonen. Omdat Christus de perfecte afbeelding van de Vader is, zien we in Gods handelen in het OT de contouren van Christus' bediening. *Focus: Gods karakter als Redder.*
+        4.  **Resultant (Resulterend):** Teksten die ethisch gedrag, lofprijzing of gebed beschrijven als de *vrucht* en *dankbare reactie* op reeds ontvangen genade. *Focus: Gehoorzaamheid als dankbaarheid.*
+
+*   **Genade vs. Moralisme (Chemie van het hart):**
+    *   *Het Probleem:* Moralisme preekt de imperatief ("Doe dit") los van de indicatief ("Omdat God dit deed").
+    *   *De Oplossing:* Zoek de "chemie van het hart": de ervaring van Gods onvoorwaardelijke liefde en genade is de enige krachtbron die het hart fundamenteel verandert en motiveert tot ware heiliging.
+
+**OPDRACHT:**
+
+1.  **Bepaal de FCF:**
+    - Wat was de crisis, nood of zonde die de aanleiding vormde voor deze tekst?
+    - Benoem concreet wat wij vandaag gemeenschappelijk hebben met de oorspronkelijke hoorders in dit opzicht.
+    - Formuleer dit als een menselijke nood die schreeuwt om goddelijke tussenkomst.
+
+2.  **Christocentrische Duiding:**
+    - Kies de meest passende categorie (Predictive, Preparatory, Reflective, Resultant) en onderbouw dit vanuit de tekst.
+    - Leg uit hoe deze tekst ons blikveld richt op het werk of de persoon van Christus.
+
+3.  **Motivatie en Genade:**
+    - Analyseer de verhouding tussen indicatief (genade) en imperatief (opdracht).
+    - Waar zit de "genade-krachtbron" in deze passage die de hoorder in staat stelt om te gehoorzamen?
+
+---
+
+### Stap 3: De vijf stadia van de Homiletical Plot
 
 Werk de preekschets uit in vijf stappen.
 
@@ -139,6 +179,20 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
     "gekozen_lezing": "string - referentie van de centrale tekst",
     "onderbouwing": "string - 100-150 woorden waarom deze tekst centraal staat",
     "omkerings_potentie": "string - waar zit de potentie voor een reversal?"
+  },
+  "homiletische_brug_chapell": {
+    "fcf": {
+      "beschrijving": "string - Fallen Condition Focus: De gedeelde menselijke nood/gebrokenheid",
+      "waarom_vraag": "string - Welk probleem lost deze tekst op?"
+    },
+    "christocentrische_duiding": {
+      "categorie": "string - Predictive|Preparatory|Reflective|Resultant",
+      "uitleg": "string - Hoe onthult deze tekst Gods verlossingsplan?"
+    },
+    "motivatie_genade": {
+      "genade_indicatief": "string - Wat God gedaan heeft",
+      "motivatie_heiliging": "string - Hoe dit leidt tot 'chemie van het hart' (geen moralisme)"
+    }
   },
   "homiletical_plot": {
     "he_kwestie_oops": {
