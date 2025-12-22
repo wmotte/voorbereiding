@@ -1017,6 +1017,38 @@
             color: var(--text-primary);
         }
 
+        /* Grondtekst styling (Hebrew/Greek) */
+        .bijbel-perikoop[data-language="Hebrew"] .bijbel-verzen {
+            direction: rtl;
+            text-align: right;
+            font-family: 'SBL Hebrew', 'Ezra SIL', 'Times New Roman', serif;
+            font-size: 1.2em;
+            line-height: 2.2;
+        }
+
+        .bijbel-perikoop[data-language="Hebrew"] .bijbel-vers-nummer {
+            direction: ltr;
+            margin-left: 8px;
+            margin-right: 0;
+        }
+
+        .bijbel-perikoop[data-language="Greek"] .bijbel-verzen {
+            font-family: 'SBL Greek', 'Gentium Plus', 'Times New Roman', serif;
+            font-size: 1.1em;
+            line-height: 2.0;
+        }
+
+        .bijbel-grondtekst-badge {
+            background: #5d4037;
+        }
+
+        .bijbel-language-tag {
+            font-size: 0.75em;
+            color: var(--text-muted);
+            margin-left: 10px;
+            font-style: italic;
+        }
+
         .bijbel-lezing-type {
             margin-left: auto;
             font-size: 0.85em;
@@ -1725,42 +1757,52 @@
                     // Collect all perikopen with their liturgical order
                     const allPerikopen = [];
 
-                    ['nbv21', 'naardense_bijbel'].forEach(vertaling => {
+                    const vertalingLabels = { 'grondtekst': 'Grondtekst', 'nbv21': 'NBV21', 'naardense_bijbel': 'NB' };
+                    ['grondtekst', 'nbv21', 'naardense_bijbel'].forEach(vertaling => {
                         if (sectionData[vertaling] && Array.isArray(sectionData[vertaling])) {
                             sectionData[vertaling].forEach(perikoop => {
+                                // Grondtekst uses book_original, NBV21/NB use book
+                                const bookCode = perikoop.book || perikoop.book_original;
                                 const eersteVers = perikoop.verses[0]?.verse || 1;
                                 const laatsteVers = perikoop.verses[perikoop.verses.length - 1]?.verse || eersteVers;
                                 const verzen = eersteVers === laatsteVers ? String(eersteVers) : `${eersteVers}-${laatsteVers}`;
-                                const vertalingLabel = vertaling === 'nbv21' ? 'NBV21' : 'NB';
+                                const vertalingLabel = vertalingLabels[vertaling] || vertaling;
 
-                                // Find liturgical order index
-                                let orderIndex = lezingenOrder.findIndex(l =>
-                                    l.book === perikoop.book && l.chapter === perikoop.chapter
-                                );
+                                // Find liturgical order index - try to match with lezingen
+                                let orderIndex = lezingenOrder.findIndex(l => {
+                                    if (l.book === bookCode) return l.chapter === perikoop.chapter;
+                                    if (perikoop.book_nl) {
+                                        const grondtekstCode = getBoekCode(perikoop.book_nl);
+                                        return l.book === grondtekstCode && l.chapter === perikoop.chapter;
+                                    }
+                                    return false;
+                                });
                                 if (orderIndex === -1) orderIndex = 999; // Unknown goes to end
 
                                 allPerikopen.push({
                                     vertaling: vertalingLabel,
                                     vertalingKey: vertaling,
-                                    book: perikoop.book,
+                                    book: bookCode,
+                                    book_nl: perikoop.book_nl,
                                     chapter: perikoop.chapter,
                                     verzen: verzen,
                                     orderIndex: orderIndex,
-                                    subKey: `${perikoop.book}-${perikoop.chapter}-${vertaling}`
+                                    subKey: `${bookCode}-${perikoop.chapter}-${vertaling}`
                                 });
                             });
                         }
                     });
 
-                    // Sort by liturgical order, then by translation (NBV21 first)
+                    // Sort by liturgical order, then by translation (Grondtekst first, then NBV21, then NB)
+                    const vertalingOrder = { 'grondtekst': 0, 'nbv21': 1, 'naardense_bijbel': 2 };
                     allPerikopen.sort((a, b) => {
                         if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
-                        return a.vertalingKey === 'nbv21' ? -1 : 1;
+                        return (vertalingOrder[a.vertalingKey] || 99) - (vertalingOrder[b.vertalingKey] || 99);
                     });
 
                     // Build submenu items
                     allPerikopen.forEach(item => {
-                        const boekNaam = getBijbelboekNaam(item.book);
+                        const boekNaam = item.book_nl || getBijbelboekNaam(item.book);
                         const label = `${boekNaam} ${item.chapter}:${item.verzen} (${item.vertaling})`;
                         subSections.push(item.subKey);
                         subSectionLabels[item.subKey] = label;
@@ -2037,8 +2079,8 @@
                 return renderHomiletischePlot(value);
             }
 
-            // Bijbelteksten (Naardense Bijbel en NBV21)
-            if ((key === 'naardense_bijbel' || key === 'nbv21') && Array.isArray(value)) {
+            // Bijbelteksten (Naardense Bijbel, NBV21 en Grondtekst)
+            if ((key === 'naardense_bijbel' || key === 'nbv21' || key === 'grondtekst') && Array.isArray(value)) {
                 return renderBijbelteksten(key, value);
             }
 
@@ -2967,26 +3009,42 @@
                 });
             }
 
-            // Collect all perikopen from both translations
+            // Collect all perikopen from all translations
             const allPerikopen = [];
-            const vertalingen = ['nbv21', 'naardense_bijbel'];
+            const vertalingen = ['grondtekst', 'nbv21', 'naardense_bijbel'];
 
             vertalingen.forEach(vertalingKey => {
                 if (data[vertalingKey] && Array.isArray(data[vertalingKey])) {
                     data[vertalingKey].forEach(perikoop => {
-                        // Find liturgical order index
-                        let orderIndex = lezingenOrder.findIndex(l =>
-                            l.book === perikoop.book && l.chapter === perikoop.chapter
-                        );
+                        // Grondtekst uses book_original, NBV21/NB use book
+                        const bookCode = perikoop.book || perikoop.book_original;
+
+                        // Find liturgical order index - try to match with lezingen
+                        let orderIndex = lezingenOrder.findIndex(l => {
+                            // Direct match
+                            if (l.book === bookCode) return l.chapter === perikoop.chapter;
+                            // For grondtekst, also try matching by Dutch name
+                            if (perikoop.book_nl) {
+                                const grondtekstCode = getBoekCode(perikoop.book_nl);
+                                return l.book === grondtekstCode && l.chapter === perikoop.chapter;
+                            }
+                            return false;
+                        });
                         if (orderIndex === -1) orderIndex = 999;
 
                         // Get reading type
-                        const lezingInfo = lezingenOrder.find(l =>
-                            l.book === perikoop.book && l.chapter === perikoop.chapter
-                        );
+                        const lezingInfo = lezingenOrder.find(l => {
+                            if (l.book === bookCode) return l.chapter === perikoop.chapter;
+                            if (perikoop.book_nl) {
+                                const grondtekstCode = getBoekCode(perikoop.book_nl);
+                                return l.book === grondtekstCode && l.chapter === perikoop.chapter;
+                            }
+                            return false;
+                        });
 
                         allPerikopen.push({
                             ...perikoop,
+                            book: bookCode,
                             vertalingKey: vertalingKey,
                             orderIndex: orderIndex,
                             lezingType: lezingInfo?.type || ''
@@ -2995,23 +3053,25 @@
                 }
             });
 
-            // Sort by liturgical order, then by translation (NBV21 first)
+            // Sort by liturgical order, then by translation (Grondtekst first, then NBV21, then NB)
+            const vertalingOrder = { 'grondtekst': 0, 'nbv21': 1, 'naardense_bijbel': 2 };
             allPerikopen.sort((a, b) => {
                 if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
-                return a.vertalingKey === 'nbv21' ? -1 : 1;
+                return (vertalingOrder[a.vertalingKey] || 99) - (vertalingOrder[b.vertalingKey] || 99);
             });
 
             // Render all perikopen
             const vertalingNamen = {
                 'naardense_bijbel': 'NB',
-                'nbv21': 'NBV21'
+                'nbv21': 'NBV21',
+                'grondtekst': 'Grondtekst'
             };
 
             let html = '';
 
             allPerikopen.forEach(perikoop => {
                 const vertalingTitel = vertalingNamen[perikoop.vertalingKey] || perikoop.vertalingKey;
-                const boekNaam = getBijbelboekNaam(perikoop.book);
+                const boekNaam = perikoop.book_nl || getBijbelboekNaam(perikoop.book);
                 const eersteVers = perikoop.verses[0]?.verse || 1;
                 const laatsteVers = perikoop.verses[perikoop.verses.length - 1]?.verse || eersteVers;
                 const verzenRef = eersteVers === laatsteVers ? eersteVers : `${eersteVers}-${laatsteVers}`;
@@ -3019,11 +3079,18 @@
                 // Anchor ID matches the submenu navigation
                 const anchorId = `section-Bijbelteksten-${perikoop.book}-${perikoop.chapter}-${perikoop.vertalingKey}`;
 
+                // For grondtekst, include language attribute
+                const language = perikoop.language || '';
+                const languageAttr = language ? ` data-language="${escapeHtml(language)}"` : '';
+
                 html += `<div id="${anchorId}" class="subsection-anchor"></div>`;
-                html += `<div class="bijbel-perikoop">`;
+                html += `<div class="bijbel-perikoop"${languageAttr}>`;
                 html += `<div class="bijbel-header">`;
-                html += `<span class="bijbel-boek-badge">${escapeHtml(vertalingTitel)}</span>`;
+                html += `<span class="bijbel-boek-badge${perikoop.vertalingKey === 'grondtekst' ? ' bijbel-grondtekst-badge' : ''}">${escapeHtml(vertalingTitel)}</span>`;
                 html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${perikoop.chapter}:${verzenRef}</span>`;
+                if (language) {
+                    html += `<span class="bijbel-language-tag">${escapeHtml(language)}</span>`;
+                }
                 if (perikoop.lezingType) {
                     html += `<span class="bijbel-lezing-type">${escapeHtml(perikoop.lezingType)}</span>`;
                 }
@@ -3033,7 +3100,7 @@
                 perikoop.verses.forEach(vers => {
                     html += `<div class="bijbel-vers">`;
                     html += `<span class="bijbel-vers-nummer">${vers.verse}</span>`;
-                    html += `<span class="bijbel-vers-tekst">${processText(vers.text)}</span>`;
+                    html += `<span class="bijbel-vers-tekst">${language === 'Hebrew' ? escapeHtml(vers.text) : processText(vers.text)}</span>`;
                     html += `</div>`;
                 });
                 html += `</div>`;
@@ -3091,6 +3158,7 @@
         // Helper function for bible book names (used in nav and rendering)
         function getBijbelboekNaam(code) {
             const boekNamen = {
+                // NBV21/NB codes
                 'GEN': 'Genesis', 'EXO': 'Exodus', 'LEV': 'Leviticus', 'NUM': 'Numeri', 'DEU': 'Deuteronomium',
                 'JOS': 'Jozua', 'JDG': 'Richteren', 'RUT': 'Ruth', '1SA': '1 Samuel', '2SA': '2 Samuel',
                 '1KI': '1 Koningen', '2KI': '2 Koningen', '1CH': '1 Kronieken', '2CH': '2 Kronieken',
@@ -3106,7 +3174,18 @@
                 'PHM': 'Filemon', 'HEB': 'Hebreeen', 'JAS': 'Jakobus', '1PE': '1 Petrus', '2PE': '2 Petrus',
                 '1JN': '1 Johannes', '2JN': '2 Johannes', '3JN': '3 Johannes', 'JUD': 'Judas', 'REV': 'Openbaring',
                 'SIR': 'Sirach', 'WIS': 'Wijsheid', 'TOB': 'Tobit', 'JDT': 'Judit', 'BAR': 'Baruch',
-                '1MA': '1 Makkabeeen', '2MA': '2 Makkabeeen'
+                '1MA': '1 Makkabeeen', '2MA': '2 Makkabeeen',
+                // Grondtekst BHS codes (Hebrew)
+                'Genesis': 'Genesis', 'Exodus': 'Exodus', 'Leviticus': 'Leviticus', 'Numeri': 'Numeri',
+                'Deuteronomium': 'Deuteronomium', 'Josua': 'Jozua', 'Judices': 'Richteren', 'Ruth': 'Ruth',
+                'Samuel_I': '1 Samuel', 'Samuel_II': '2 Samuel', 'Reges_I': '1 Koningen', 'Reges_II': '2 Koningen',
+                'Chronica_I': '1 Kronieken', 'Chronica_II': '2 Kronieken', 'Esra': 'Ezra', 'Nehemia': 'Nehemia',
+                'Esther': 'Ester', 'Iob': 'Job', 'Psalmi': 'Psalmen', 'Proverbia': 'Spreuken',
+                'Ecclesiastes': 'Prediker', 'Canticum': 'Hooglied', 'Jesaia': 'Jesaja', 'Jeremia': 'Jeremia',
+                'Threni': 'Klaagliederen', 'Ezechiel': 'Ezechiel', 'Daniel': 'Daniel', 'Hosea': 'Hosea',
+                'Joel': 'Joel', 'Amos': 'Amos', 'Obadia': 'Obadja', 'Jona': 'Jona', 'Micha': 'Micha',
+                'Nahum': 'Nahum', 'Habakuk': 'Habakuk', 'Zephania': 'Sefanja', 'Haggai': 'Haggai',
+                'Sacharia': 'Zacharia', 'Maleachi': 'Maleachi'
             };
             return boekNamen[code] || code;
         }
@@ -3114,7 +3193,8 @@
         function renderBijbelteksten(vertalingKey, perikopen) {
             const vertalingNamen = {
                 'naardense_bijbel': 'NB',
-                'nbv21': 'NBV21'
+                'nbv21': 'NBV21',
+                'grondtekst': 'Grondtekst'
             };
             const vertalingTitel = vertalingNamen[vertalingKey] || vertalingKey;
 
@@ -3155,7 +3235,7 @@
             let html = '';
 
             perikopen.forEach(perikoop => {
-                const boekNaam = getBijbelboekNaam(perikoop.book);
+                const boekNaam = perikoop.book_nl || getBijbelboekNaam(perikoop.book);
                 const eersteVers = perikoop.verses[0]?.verse || 1;
                 const laatsteVers = perikoop.verses[perikoop.verses.length - 1]?.verse || eersteVers;
                 const verzenRef = eersteVers === laatsteVers ? eersteVers : `${eersteVers}-${laatsteVers}`;
@@ -3166,11 +3246,18 @@
                 // Anchor ID matches the submenu navigation: BOOK-CHAPTER-vertaling
                 const anchorId = `section-Bijbelteksten-${perikoop.book}-${perikoop.chapter}-${vertalingKey}`;
 
+                // For grondtekst, include language attribute
+                const language = perikoop.language || '';
+                const languageAttr = language ? ` data-language="${escapeHtml(language)}"` : '';
+
                 html += `<div id="${anchorId}" class="subsection-anchor"></div>`;
-                html += `<div class="bijbel-perikoop">`;
+                html += `<div class="bijbel-perikoop"${languageAttr}>`;
                 html += `<div class="bijbel-header">`;
-                html += `<span class="bijbel-boek-badge">${escapeHtml(vertalingTitel)}</span>`;
+                html += `<span class="bijbel-boek-badge${vertalingKey === 'grondtekst' ? ' bijbel-grondtekst-badge' : ''}">${escapeHtml(vertalingTitel)}</span>`;
                 html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${perikoop.chapter}:${verzenRef}</span>`;
+                if (language) {
+                    html += `<span class="bijbel-language-tag">${escapeHtml(language)}</span>`;
+                }
                 if (lezingType) {
                     html += `<span class="bijbel-lezing-type">${escapeHtml(lezingType)}</span>`;
                 }
@@ -3180,7 +3267,7 @@
                 perikoop.verses.forEach(vers => {
                     html += `<div class="bijbel-vers">`;
                     html += `<span class="bijbel-vers-nummer">${vers.verse}</span>`;
-                    html += `<span class="bijbel-vers-tekst">${processText(vers.text)}</span>`;
+                    html += `<span class="bijbel-vers-tekst">${language === 'Hebrew' ? escapeHtml(vers.text) : processText(vers.text)}</span>`;
                     html += `</div>`;
                 });
                 html += `</div>`;
