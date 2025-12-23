@@ -1524,6 +1524,211 @@
             color: var(--text-primary);
         }
 
+        /* Buttrick Moves & Structures */
+        .buttrick-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .buttrick-intro,
+        .buttrick-conclusie {
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-left: 5px solid var(--accent);
+        }
+
+        .buttrick-intro-header,
+        .buttrick-conclusie-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .buttrick-intro-badge,
+        .buttrick-conclusie-badge {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9em;
+            color: white;
+            flex-shrink: 0;
+            background: var(--accent);
+        }
+
+        .buttrick-intro-title,
+        .buttrick-conclusie-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--text-primary);
+        }
+
+        .buttrick-intro-subtitle,
+        .buttrick-conclusie-subtitle {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        .buttrick-text {
+            line-height: 1.8;
+            color: var(--text-primary);
+            font-size: 1.02em;
+        }
+
+        .buttrick-move {
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-left: 5px solid var(--accent);
+            position: relative;
+        }
+
+        /* Move kleuren - warm/koud spectrum */
+        .buttrick-move:nth-child(1) { border-left-color: #7986cb; }
+        .buttrick-move:nth-child(2) { border-left-color: #4db6ac; }
+        .buttrick-move:nth-child(3) { border-left-color: #aed581; }
+        .buttrick-move:nth-child(4) { border-left-color: #ffb74d; }
+        .buttrick-move:nth-child(5) { border-left-color: #ff8a65; }
+        .buttrick-move:nth-child(6) { border-left-color: #f06292; }
+
+        .buttrick-move-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .buttrick-move-badge {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.4em;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .buttrick-move:nth-child(1) .buttrick-move-badge { background: #7986cb; }
+        .buttrick-move:nth-child(2) .buttrick-move-badge { background: #4db6ac; }
+        .buttrick-move:nth-child(3) .buttrick-move-badge { background: #aed581; color: var(--text-primary); }
+        .buttrick-move:nth-child(4) .buttrick-move-badge { background: #ffb74d; color: var(--text-primary); }
+        .buttrick-move:nth-child(5) .buttrick-move-badge { background: #ff8a65; }
+        .buttrick-move:nth-child(6) .buttrick-move-badge { background: #f06292; }
+
+        .buttrick-move-info {
+            flex: 1;
+        }
+
+        .buttrick-move-kernidee {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .buttrick-move-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .buttrick-move-tag {
+            display: inline-block;
+            padding: 3px 10px;
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            font-size: 0.8em;
+            color: var(--text-muted);
+        }
+
+        .buttrick-move-tag.strategy {
+            background: var(--accent);
+            color: white;
+        }
+
+        .buttrick-move-content {
+            margin-top: 15px;
+        }
+
+        .buttrick-move-section {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+        }
+
+        .buttrick-move-section-title {
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 0.85em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .buttrick-move-section-text {
+            line-height: 1.7;
+            color: var(--text-primary);
+        }
+
+        .buttrick-perspectief {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .buttrick-perspectief-item {
+            background: var(--bg-tertiary);
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .buttrick-perspectief-label {
+            font-size: 0.7em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .buttrick-perspectief-value {
+            font-size: 0.85em;
+            color: var(--text-primary);
+        }
+
+        .buttrick-verbinding {
+            margin-top: 12px;
+            padding: 10px;
+            background: var(--bg-primary);
+            border-left: 3px solid var(--accent-light);
+            font-size: 0.9em;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .buttrick-beelden {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .buttrick-beeld-tag {
+            background: var(--accent);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+        }
+
         /* Kalender */
         .kalender-dag {
             background: var(--bg-secondary);
@@ -1652,7 +1857,8 @@
             '10_focus_en_functie': 'Focus & Functie',
             '11_kalender': 'Kalender',
             '12_representatieve_hoorders': 'Representatieve Hoorders',
-            '13_homiletische_analyse': 'Homiletische Analyse',
+            '13_homiletische_analyse': 'Homiletische Analyse (Lowry)',
+            '13_homiletische_analyse_buttrick': 'Homiletische Analyse (Buttrick)',
             '14_gebeden': 'Gebeden',
             '14_gebeden_profetisch': 'Gebeden (profetisch)',
             '14_gebeden_dialogisch': 'Gebeden (dialogisch)',
@@ -1804,6 +2010,10 @@
                 let num;
                 if (key === 'Bijbelteksten') {
                     num = '02'; // Always assign 02 to make it second in the menu
+                } else if (key === '13_homiletische_analyse') {
+                    num = '13a';
+                } else if (key === '13_homiletische_analyse_buttrick') {
+                    num = '13b';
                 } else if (key === '14_gebeden') {
                     num = '14a';
                 } else if (key === '14_gebeden_profetisch') {
@@ -1981,23 +2191,36 @@
                         }
                     });
                 } else if (key === '13_homiletische_analyse') {
-                    // Special handling for Homiletische Analyse - rename items and exclude logic check
+                    // Special handling for Homiletische Analyse (Lowry) - rename items
                     const subKeyOrder = ['tekstkeuze', 'homiletical_plot', 'homiletische_brug_chapell'];
                     const labelMap = {
                         'tekstkeuze': 'Tekstkeuze',
-                        'homiletical_plot': 'Analyse (Lowry)',
-                        'homiletische_brug_chapell': 'Analyse (Chapell)'
-                    };
-                    const subNums = {
-                        'tekstkeuze': '13a',
-                        'homiletical_plot': '13b',
-                        'homiletische_brug_chapell': '13c'
+                        'homiletical_plot': 'De 5 Stadia (Lowry)',
+                        'homiletische_brug_chapell': 'Fundering (Chapell)'
                     };
 
                     subKeyOrder.forEach(subKey => {
                         if (sectionData[subKey]) {
                             subSections.push(subKey);
-                            subSectionLabels[subKey] = `${subNums[subKey]} ${labelMap[subKey]}`;
+                            subSectionLabels[subKey] = labelMap[subKey];
+                        }
+                    });
+                } else if (key === '13_homiletische_analyse_buttrick') {
+                    // Special handling for Homiletische Analyse (Buttrick) - Moves & Structures
+                    const subKeyOrder = ['tekstkeuze', 'introductie', 'moves', 'conclusie', 'beweging_samenvatting', 'contextuele_integratie'];
+                    const labelMap = {
+                        'tekstkeuze': 'Tekstkeuze',
+                        'introductie': 'Introductie',
+                        'moves': 'Moves',
+                        'conclusie': 'Conclusie',
+                        'beweging_samenvatting': 'Beweging',
+                        'contextuele_integratie': 'Context'
+                    };
+
+                    subKeyOrder.forEach(subKey => {
+                        if (sectionData[subKey]) {
+                            subSections.push(subKey);
+                            subSectionLabels[subKey] = labelMap[subKey];
                         }
                     });
                 } else {
@@ -2295,6 +2518,11 @@
             // Homiletische Brug (Chapell)
             if (key === 'homiletische_brug_chapell') {
                 return renderChapellBrug(value);
+            }
+
+            // Buttrick Moves & Structures
+            if (key === 'moves' && Array.isArray(value) && value.length > 0 && value[0].kernidee) {
+                return renderButtrickMoves({ moves: value });
             }
 
             // Bijbelteksten (Naardense Bijbel, NBV21 en Grondtekst)
@@ -3102,6 +3330,145 @@
             });
 
             html += `</div></div>`; // end plot-container, data-group
+            return html;
+        }
+
+        // Render Buttrick Moves & Structures
+        function renderButtrickMoves(data) {
+            let html = `<div class="data-group">`;
+            html += `<div class="data-group-title">Moves & Structures</div>`;
+            html += `<div class="buttrick-container">`;
+
+            // Render introductie if present
+            if (data.introductie) {
+                html += `<div class="buttrick-intro">`;
+                html += `<div class="buttrick-intro-header">`;
+                html += `<div class="buttrick-intro-badge">Intro</div>`;
+                html += `<div>`;
+                html += `<div class="buttrick-intro-title">Introductie</div>`;
+                if (data.introductie.focus_beeld) {
+                    html += `<div class="buttrick-intro-subtitle">${processText(data.introductie.focus_beeld)}</div>`;
+                }
+                html += `</div></div>`;
+                if (data.introductie.uitgeschreven_tekst) {
+                    html += `<div class="buttrick-text">${processText(data.introductie.uitgeschreven_tekst)}</div>`;
+                }
+                if (data.introductie.hermeneutische_orientatie) {
+                    html += `<div class="buttrick-verbinding"><strong>Hermeneutische oriëntatie:</strong> ${processText(data.introductie.hermeneutische_orientatie)}</div>`;
+                }
+                html += `</div>`;
+            }
+
+            // Render moves
+            if (data.moves && Array.isArray(data.moves)) {
+                data.moves.forEach((move, index) => {
+                    const moveNum = move.move_nummer || (index + 1);
+                    html += `<div class="buttrick-move">`;
+                    html += `<div class="buttrick-move-header">`;
+                    html += `<div class="buttrick-move-badge">${moveNum}</div>`;
+                    html += `<div class="buttrick-move-info">`;
+                    if (move.kernidee) {
+                        html += `<div class="buttrick-move-kernidee">${processText(move.kernidee)}</div>`;
+                    }
+
+                    // Meta tags
+                    html += `<div class="buttrick-move-meta">`;
+                    if (move.retorische_strategie) {
+                        const strategyLabels = {
+                            'bringing_out': 'Bringing Out',
+                            'associating': 'Associating',
+                            'dissociating': 'Dissociating'
+                        };
+                        const label = strategyLabels[move.retorische_strategie] || move.retorische_strategie;
+                        html += `<span class="buttrick-move-tag strategy">${escapeHtml(label)}</span>`;
+                    }
+                    if (move.woorden_telling) {
+                        html += `<span class="buttrick-move-tag">${move.woorden_telling} woorden</span>`;
+                    }
+                    html += `</div>`;
+
+                    // Perspectief
+                    if (move.perspectief && typeof move.perspectief === 'object') {
+                        html += `<div class="buttrick-perspectief">`;
+                        const perspLabels = {
+                            'stance': 'Stance',
+                            'orientation': 'Oriëntatie',
+                            'distance': 'Afstand',
+                            'focal_field': 'Focusveld'
+                        };
+                        for (const [key, val] of Object.entries(move.perspectief)) {
+                            if (val) {
+                                html += `<div class="buttrick-perspectief-item">`;
+                                html += `<div class="buttrick-perspectief-label">${perspLabels[key] || formatKey(key)}</div>`;
+                                html += `<div class="buttrick-perspectief-value">${processText(String(val))}</div>`;
+                                html += `</div>`;
+                            }
+                        }
+                        html += `</div>`;
+                    }
+                    html += `</div></div>`; // end move-info, move-header
+
+                    // Uitgeschreven tekst
+                    html += `<div class="buttrick-move-content">`;
+                    if (move.uitgeschreven_tekst && typeof move.uitgeschreven_tekst === 'object') {
+                        const sections = ['opening', 'ontwikkeling', 'contrapuntaal', 'closure'];
+                        const sectionLabels = {
+                            'opening': 'Opening',
+                            'ontwikkeling': 'Ontwikkeling',
+                            'contrapuntaal': 'Contrapuntaal',
+                            'closure': 'Closure'
+                        };
+                        sections.forEach(sec => {
+                            if (move.uitgeschreven_tekst[sec]) {
+                                html += `<div class="buttrick-move-section">`;
+                                html += `<div class="buttrick-move-section-title">${sectionLabels[sec]}</div>`;
+                                html += `<div class="buttrick-move-section-text">${processText(move.uitgeschreven_tekst[sec])}</div>`;
+                                html += `</div>`;
+                            }
+                        });
+                    }
+
+                    // Verbindingen
+                    if (move.verbinding_vorige || move.verbinding_volgende) {
+                        html += `<div class="buttrick-verbinding">`;
+                        if (move.verbinding_vorige) {
+                            html += `<div><strong>← Verbinding vorige:</strong> ${processText(move.verbinding_vorige)}</div>`;
+                        }
+                        if (move.verbinding_volgende) {
+                            html += `<div><strong>→ Verbinding volgende:</strong> ${processText(move.verbinding_volgende)}</div>`;
+                        }
+                        html += `</div>`;
+                    }
+
+                    html += `</div></div>`; // end move-content, buttrick-move
+                });
+            }
+
+            // Render conclusie
+            if (data.conclusie) {
+                html += `<div class="buttrick-conclusie">`;
+                html += `<div class="buttrick-conclusie-header">`;
+                html += `<div class="buttrick-conclusie-badge">Slot</div>`;
+                html += `<div>`;
+                html += `<div class="buttrick-conclusie-title">Conclusie</div>`;
+                if (data.conclusie.intentie) {
+                    html += `<div class="buttrick-conclusie-subtitle">${processText(data.conclusie.intentie)}</div>`;
+                }
+                html += `</div></div>`;
+                if (data.conclusie.uitgeschreven_tekst) {
+                    html += `<div class="buttrick-text">${processText(data.conclusie.uitgeschreven_tekst)}</div>`;
+                }
+                if (data.conclusie.verzamelde_beelden && Array.isArray(data.conclusie.verzamelde_beelden)) {
+                    html += `<div class="buttrick-beelden">`;
+                    data.conclusie.verzamelde_beelden.forEach(beeld => {
+                        html += `<span class="buttrick-beeld-tag">${processText(beeld)}</span>`;
+                    });
+                    html += `</div>`;
+                }
+                html += `</div>`;
+            }
+
+            html += `</div></div>`; // end buttrick-container, data-group
             return html;
         }
 
