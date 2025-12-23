@@ -222,6 +222,7 @@ def get_grondtekst(reference):
             for v in verse_iterator:
                 if v in bhs_data[bhs_name][chapter]:
                     verses.append({
+                        "chapter": chapter,
                         "verse": v,
                         "text": bhs_data[bhs_name][chapter][v]
                     })
@@ -253,6 +254,7 @@ def get_grondtekst(reference):
             for v in verse_iterator:
                 if v in na28_data[na28_code][chapter]:
                     verses.append({
+                        "chapter": chapter,
                         "verse": v,
                         "text": na28_data[na28_code][chapter][v]
                     })
@@ -303,22 +305,52 @@ def save_grondtekst_lezingen(folder, liturgische_context_json):
         
         all_verses_for_ref = []
         collected_data_header = {}
+
+        # 1. Two-pass parsing
+        # Pass 1: Pericope Splitting (Separate distinct chapters/books using ';' or 'en')
+        normalized_ref = re.sub(r'\s+(?:en|&)\s+', ';', ref_str)
+        raw_parts = re.split(r'[;]', normalized_ref)
         
-        # 1. Separate book/chapter from verse string
-        match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+(.*)", ref_str)
+        full_refs = []
+        last_book = None
         
+        for part in raw_parts:
+            part = part.strip()
+            if not part: continue
+            
+            # Check for Book Name (Start of string)
+            # Regex: (Optional Digit + Space) + Letters
+            book_match = re.match(r'^((?:\d\s+)?[A-Za-zëïüöä]+(?:\s+[A-Za-zëïüöä]+)*)', part)
+            
+            if book_match:
+                last_book = book_match.group(1)
+                full_refs.append(part)
+            else:
+                if last_book:
+                    full_refs.append(f"{last_book} {part}")
+                else:
+                    full_refs.append(part)
+
+        # Pass 2: Discontinuous Verse Splitting (Handle '1.3' style) and generate final sub_refs
         sub_refs = []
-        if match:
-            book_chapter_base = f"{match.group(1).strip()} {match.group(2)}"
-            verse_part = match.group(3)
-            # Split verse part by '.', ';', or ',' (but not if it's the main chapter separator)
-            verse_ranges = re.split(r'[.;]', verse_part)
-            for verse_range in verse_ranges:
-                if verse_range.strip():
-                    sub_refs.append(f"{book_chapter_base}:{verse_range.strip()}")
-        else:
-            # Cannot parse complex, treat as single reference (e.g., "Psalm 128")
-            sub_refs.append(ref_str)
+        for fr in full_refs:
+            # Regex to separate Book+Chapter from "Rest" (Verses)
+            match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+(.*)", fr)
+            
+            if match:
+                book_chapter_base = f"{match.group(1).strip()} {match.group(2)}"
+                verse_part = match.group(3)
+                
+                # Split by . to handle discontinuous verses within same chapter
+                # (Assuming ; was handled in Pass 1)
+                sub_parts = re.split(r'[.]', verse_part)
+                
+                for sp in sub_parts:
+                    sp = sp.strip()
+                    if sp:
+                        sub_refs.append(f"{book_chapter_base}:{sp}")
+            else:
+                sub_refs.append(fr)
 
         # 2. Fetch data for each sub-reference
         for sub_ref in sub_refs:
@@ -332,9 +364,9 @@ def save_grondtekst_lezingen(folder, liturgische_context_json):
         
         # 3. If any verses were found, combine and save
         if collected_data_header and all_verses_for_ref:
-            # Sort verses by verse number and remove duplicates
-            unique_verses = {v['verse']: v for v in all_verses_for_ref}.values()
-            sorted_verses = sorted(list(unique_verses), key=lambda x: x['verse'])
+            # Sort verses by chapter and verse number and remove duplicates
+            unique_verses = {(v['chapter'], v['verse']): v for v in all_verses_for_ref}.values()
+            sorted_verses = sorted(list(unique_verses), key=lambda x: (x['chapter'], x['verse']))
 
             collected_data_header["verses"] = sorted_verses
 
