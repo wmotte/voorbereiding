@@ -2556,18 +2556,18 @@
     }
   },
   "14_gebeden": {
-    "gekozen_scenario": "A (zwaartepunt schuld in drempelgebed, sober kyrie over wereldnood)",
+    "gekozen_scenario": "A (zwaartepunt schuld)",
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
         "aanspraak": "Eeuwige God, Heilige van Israël,",
         "elementen": {
-          "verootmoediging": "Wij treden over de drempel van dit huis, terwijl de kou van januari nog in onze kleren hangt en de onrust van de wereld in ons hoofd tolt.",
-          "schuldbelijdenis": "Wij belijden dat wij vaak meer vertrouwen op de kracht van onze eigen handen en de opbrengst van onze handel, dan op uw genade die ons geschonken is.",
-          "verlangen": "Wij dorsten naar uw stem die ons bij onze naam noemt, dwars door de ruis van onze tekortkomingen heen."
+          "verootmoediging": "Erkenning van de afstand tussen Gods heiligheid en onze menselijke nuchterheid op deze winterse zondag.",
+          "schuldbelijdenis": "Belydenis van onze neiging om onze waarde te zoeken in de opbrengst van ons werk en de muren die wij om onszelf bouwen.",
+          "verlangen": "Dorst naar de stem die ons bij onze naam noemt, voorbij onze prestaties."
         },
-        "tekst": "Eeuwige God, Heilige van Israël,\n\nwij treden over de drempel van dit huis, terwijl de kou van januari nog in onze kleren hangt en de onrust van de wereld in ons hoofd tolt. Wij komen uit een week van hard werken, van plannen maken en zorgen dragen voor wat groeien moet. Maar hier, voor uw aangezicht, vallen de maskers af.\n\nWij belijden U dat wij vaak meer vertrouwen op de kracht van onze eigen handen, op de zekerheid van onze contracten en de muren die wij om ons leven bouwen, dan op uw verbond dat vaststaat. Wij zijn voorbijgelopen aan het geknakte riet in onze straat; wij hebben de kwijnende vlam van hoop bij onze naaste niet gevoed, maar soms onbedoeld gedoofd door onze haast en onze nuchterheid.\n\nHeer, de modder van de weg kleeft aan onze schoenen, en de schuld van wat wij lieten liggen drukt op ons hart. Wij hebben geprobeerd onze eigen gerechtigheid te volbrengen, maar wij strandden in onmacht. \n\nZie ons hier staan, met lege handen en een hart dat hunkert naar een nieuw begin. Spreek tot ons zoals U sprak bij de Jordaan. Laat uw Geest op ons neerdalen, niet als een oordeel, maar als een duif die vrede brengt. Was ons schoon, herschep ons, en noem ons opnieuw uw geliefde kinderen.\n\nAmen.",
-        "echo_schriftlezing": "Het beeld van het geknakte riet en de vlaspit uit Jesaja 42,3 als metafoor voor menselijke kwetsbaarheid en falen.",
+        "tekst": "Eeuwige God, Heilige van Israël,\\n\\nwij treden over de drempel van dit huis, terwijl de kou van januari nog in onze kleren hangt en de onrust van de wereld in ons hoofd tolt. Wij komen uit een week van hard werken, van plannen maken en zorgen dragen voor wat groeien moet. Maar hier, voor uw aangezicht, vallen de maskers af.\\n\\nWij belijden U dat wij vaak meer vertrouwen op de kracht van onze eigen handen, op de zekerheid van onze contracten en de muren die wij om ons leven bouwen, dan op uw verbond dat vaststaat. Wij zijn voorbijgelopen aan het geknakte riet in onze straat; wij hebben de kwijnende vlam van hoop bij onze naaste niet gevoed, maar soms onbedoeld gedoofd door onze haast en onze nuchterheid.\\n\\nHeer, de modder van de weg kleeft aan onze schoenen, en de schuld van wat wij lieten liggen drukt op ons hart. Wij hebben geprobeerd onze eigen gerechtigheid te volbrengen, maar wij strandden in onmacht. \\n\\nZie ons hier staan, met lege handen en een hart dat hunkert naar een nieuw begin. Spreek tot ons zoals U sprak bij de Jordaan. Laat uw Geest op ons neerdalen, niet als een oordeel, maar als een duif die vrede brengt. Was ons schoon, herschep ons, en noem ons opnieuw uw geliefde kinderen.\\n\\nAmen.",
+        "echo_schriftlezing": "Het beeld van het geknakte riet en de vlaspit uit Jesaja 42:3.",
         "amen": true
       },
       "kyrie": {
@@ -2577,23 +2577,23 @@
         "structuur": {
           "intenties": [
             {
-              "voor_wie": "de zuchtende schepping",
-              "nood": "voor de natuur die lijdt onder ons gebrek aan ontferming, voor de wateren die vervuild raken en het land dat zijn veerkracht verliest.",
+              "voor_wie": "de zuchtende schepping en het klimaat",
+              "nood": "de waterellende en hittestress door gebrek aan daadkrachtig natuurbeleid",
               "kyrie_refrain": true
             },
             {
               "voor_wie": "de getroffenen door geweld en bedrog",
-              "nood": "voor de mensen in het Midden-Oosten die gevangen zitten in een cirkel van vergelding, en voor hen die in hun kwetsbaarheid werden uitgebuit door fraude en hebzucht.",
+              "nood": "het onrecht in het Midden-Oosten en de slachtoffers van online medicijnfraude",
               "kyrie_refrain": true
             },
             {
               "voor_wie": "de boerenfamilie in Waarder",
-              "nood": "voor hen die in de vlammen hun vee verloren en nu verslagen naar de as van hun bestaan staren.",
+              "nood": "het verlies van de kalfjes en de stal door de recente brand",
               "kyrie_refrain": true
             }
           ]
         },
-        "tekst": "Heer, ontferm U over deze wereld die U zo liefhebt, maar die zozeer zucht onder de last van geweld en onrecht.\n\nWij roepen tot U voor de schepping; voor de natuur die de prijs betaalt voor onze overvloed. Wij horen van waterellende en hittestress, van wetten die tekortschieten en aarde die uitgeput raakt. Laat uw stem klinken boven de wateren, Psalm 29 indachtig, en breng ons tot inkeer.\nKyrie eleison.\n\nWij roepen tot U voor de volken in strijd; voor de straten van Gaza en de dorpen in de Oekraïne, waar de winter hard toeslaat en de vrede ver weg lijkt. Voor hen die geen onderscheid meer zien tussen vriend en vijand. \nKyrie eleison.\n\nWij roepen tot U voor de slachtoffers van de hardheid van onze tijd; voor wie bedrogen werd door online fraude en nu met schaamte en verlies achterblijft. En heel dichtbij, Heer, bidden wij om ontferming voor de boerenfamilie in Waarder, die in één nacht hun kalfjes en hun stal verloren aan het vuur. Troost hen in hun verbijstering.\nKyrie eleison.\n\nChristus, Gij die als de Dienaar kwam om recht te brengen zonder te schreeuwen op straat: hoor ons roepen en ontferm U over ons.\nKyrie eleison.\n\nAmen.",
+        "tekst": "Heer, ontferm U over deze wereld die U zo liefhebt, maar die zozeer zucht onder de last van geweld en onrecht.\\n\\nWij roepen tot U voor de schepping; voor de natuur die de prijs betaalt voor onze overvloed. Wij horen van waterellende en hittestress, van wetten die tekortschieten en aarde die uitgeput raakt. Laat uw stem klinken boven de wateren, Psalm 29 indachtig, en breng ons tot inkeer.\\nKyrie eleison.\\n\\nWij roepen tot U voor de volken in strijd; voor de straten van Gaza en de dorpen in de Oekraïne, waar de winter hard toeslaat en de vrede ver weg lijkt. Voor hen die geen onderscheid meer zien tussen vriend en vijand. \\nKyrie eleison.\\n\\nWij roepen tot U voor de slachtoffers van de hardheid van onze tijd; voor wie bedrogen werd door online fraude en nu met schaamte en verlies achterblijft. En heel dichtbij, Heer, bidden wij om ontferming voor de boerenfamilie in Waarder, die in één nacht hun kalfjes en hun stal verloren aan het vuur. Troost hen in hun verbijstering.\\nKyrie eleison.\\n\\nChristus, Gij die als de Dienaar kwam om recht te brengen zonder te schreeuwen op straat: hoor ons roepen en ontferm U over ons.\\nKyrie eleison.\\n\\nAmen.",
         "echo_schriftlezing": "De stem van de Heer boven de wateren (Psalm 29) en de Dienaar die niet schreeuwt op straat (Jesaja 42).",
         "amen": true
       },
@@ -2601,21 +2601,21 @@
         "type": "epiclese",
         "aanspraak": "Geest van God, die over de wateren zweefde,",
         "focus": "ALLEEN opening voor de Schrift, geen andere thema's",
-        "tekst": "Geest van God, die ooit boven de oervloed zweefde en op Jezus neerdaalde als een duif:\nzweef nu over ons midden.\n\nOpen de hemel boven deze oude woorden, zodat zij voor ons worden tot een levende stem. Breek de korst van onze gewenning en ontdooi ons kille verstand. Laat uw licht vallen op de bladzijden van de Schrift, zoals het licht van de Epifanie op de volkeren viel.\n\nMaak ons hart tot goede grond, waarin uw Woord kan wortelen en vrucht dragen. Laat ons niet alleen horen met onze oren, maar verstaan met onze ziel, dat wij Jezus herkennen als uw geliefde Zoon en Hem durven volgen, waar de weg ook gaat.\n\nKom, Heilige Geest, en spreek.\n\nAmen.",
-        "echo_schriftlezing": "De nederdaling van de Geest als een duif (Matteüs 3,16) en de stem uit de geopende hemel.",
+        "tekst": "Geest van God, die ooit boven de oervloed zweefde en op Jezus neerdaalde als een duif:\\nzweef nu over ons midden.\\n\\nOpen de hemel boven deze oude woorden, zodat zij voor ons worden tot een levende stem. Breek de korst van onze gewenning en ontdooi ons kille verstand. Laat uw licht vallen op de bladzijden van de Schrift, zoals het licht van de Epifanie op de volkeren viel.\\n\\nMaak ons hart tot goede grond, waarin uw Woord kan wortelen en vrucht dragen. Laat ons niet alleen horen met onze oren, maar verstaan met onze ziel, dat wij Jezus herkennen als uw geliefde Zoon en Hem durven volgen, waar de weg ook gaat.\\n\\nKom, Heilige Geest, en spreek.\\n\\nAmen.",
+        "echo_schriftlezing": "De nederdaling van de Geest als een duif (Matteüs 3:16) en de geopende hemel.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
         "aanspraak": "Barmhartige God, Vader van onze Heer Jezus Christus,",
-        "verbinding_verkondiging": "Dank voor de bevrijdende boodschap dat onze identiteit niet afhangt van onze prestaties op de kwekerij of in het dorp, maar van uw 'welbehagen'.",
+        "verbinding_verkondiging": "Dank voor de identiteit als 'geliefd kind' die voorafgaat aan elke prestatie op de kwekerij.",
         "elementen": {
-          "dank_gehoorde_woord": "Wij danken U voor het Woord dat ons vandaag heeft opgezocht.",
-          "vraag_kracht_bewaren": "Geef ons de moed om dit 'geliefd zijn' mee te nemen naar de maandageraad.",
-          "verbinding_dagelijks_leven": "Dat wij in ons werk en in onze omgang met elkaar de gerechtigheid zoeken die Jezus ons voordeed."
+          "dank_gehoorde_woord": "Dank voor de bevrijding uit de prestatieklem door Jezus' doop.",
+          "vraag_kracht_bewaren": "Vraag om dit 'welbehagen' vast te houden in de nuchtere werkweek.",
+          "verbinding_dagelijks_leven": "Verbinding met de nuchtere Boskoopse praktijk van maandagochtend."
         },
-        "tekst": "Barmhartige God, Vader van onze Heer Jezus Christus,\n\nwij danken U met heel ons hart voor het goede nieuws dat tot ons kwam. In een wereld waarin wij voortdurend worden gewogen op onze nuttigheid, onze winst en onze prestaties, danken wij U voor die ene stem uit de hemel: 'Dit is mijn geliefde Zoon, in Hem vind Ik vreugde'.\n\nWij danken U dat dit woord ook over ons leven wordt uitgesproken. Dat wij geliefd zijn nog voordat wij een spade in de grond hebben gestoken of een plant hebben verkocht. Dank U dat U in Jezus tot ons bent gekomen om alle gerechtigheid te vervullen, ook daar waar wij tekortschieten.\n\nGeef ons nu de kracht om dit Woord te bewaren in de drukte van de komende week. Laat de herinnering aan onze doop ons rechtop doen staan als de wind van de onzekerheid waait over het dorp of over onze sector. Help ons om als gezalfde mensen te leven: weldoende, rechtvaardig en vol vrede, in de voetsporen van Hem die aller Heer is.\n\nAmen.",
-        "echo_schriftlezing": "De stem van welbehagen (Matteüs 3,17) en de zalving met de Geest om weldoende rond te gaan (Handelingen 10,38).",
+        "tekst": "Barmhartige God, Vader van onze Heer Jezus Christus,\\n\\nwij danken U met heel ons hart voor het goede nieuws dat tot ons kwam. In een wereld waarin wij voortdurend worden gewogen op onze nuttigheid, onze winst en onze prestaties, danken wij U voor die ene stem uit de hemel: 'Dit is mijn geliefde Zoon, in Hem vind Ik vreugde'.\\n\\nWij danken U dat dit woord ook over ons leven wordt uitgesproken. Dat wij geliefd zijn nog voordat wij een spade in de grond hebben gestoken of een plant hebben verkocht. Dank U dat U in Jezus tot ons bent gekomen om alle gerechtigheid te vervullen, ook daar waar wij tekortschieten.\\n\\nGeef ons nu de kracht om dit Woord te bewaren in de drukte van de komende week. Laat de herinnering aan onze doop ons rechtop doen staan als de wind van de onzekerheid waait over het dorp of over onze sector. Help ons om als gezalfde mensen te leven: weldoende, rechtvaardig en vol vrede, in de voetsporen van Hem die aller Heer is.\\n\\nAmen.",
+        "echo_schriftlezing": "De stem van welbehagen (Matteüs 3:17) en de zalving met de Geest (Handelingen 10:38).",
         "amen": true
       },
       "voorbeden": {
@@ -2633,23 +2633,23 @@
           "kerk": {
             "themas": [
               "de PKN als vindplaats van hoop",
-              "eenheid onder christenen in Boskoop",
-              "vervolgde broeders en zusters"
+              "eenheid in Boskoop",
+              "vervolgde christenen"
             ],
             "tekst": "Wij bidden voor uw wereldwijde kerk. Sterk de Protestantse Kerk in Nederland om een vindplaats van hoop te blijven, juist waar de aantallen dalen. Wij bidden voor de samenwerking tussen de kerken hier in Boskoop; dat wij elkaar herkennen als gedoopten in die ene Naam en gezamenlijk uw licht laten schijnen in het dorp."
           },
           "naasten": {
             "themas": [
               "slachtoffers van fraude",
-              "zieken die wachten op uitslag",
-              "wie eenzaam eet"
+              "zieken",
+              "eenzaamheid"
             ],
             "tekst": "Wij bidden voor onze naasten die door diepe dalen gaan. Voor hen die hun vertrouwen verloren door bedrog en fraude; herstel hun waardigheid. Wij noemen U de namen van de zieken uit ons midden, hen die wachten op een uitslag in het ziekenhuis of die de pijn van de eindigheid dagelijks voelen. Wees nabij aan wie vanmiddag alleen aan tafel zit en de stilte in huis vreest."
           },
           "eigen_gemeente": {
             "themas": [
-              "de boomkwekersgezinnen",
-              "de jongeren in Boskoop",
+              "kwekersgezinnen",
+              "jongeren",
               "de komende week"
             ],
             "tekst": "Voor onze eigen gemeente te Boskoop bidden wij U. Zegen de gezinnen die verbonden zijn met de sierteelt; geef hen rust in deze winterperiode en moed voor de onzekerheden van de toekomst. Wij bidden voor onze jongeren, dat zij hun identiteit niet zoeken in wat de wereld van hen eist, maar in het feit dat zij uw geliefde kinderen zijn. Ga met ons mee als wij morgen de brug weer overgaan naar ons werk en onze dagelijkse plichten."
@@ -2666,40 +2666,39 @@
         "niet alleen horen met onze oren, maar verstaan met onze ziel"
       ],
       "drieslag": [
-        "geen oordeel, maar als een duif die vrede brengt",
+        "onze gedachten, onze woorden en onze werken",
         "weldoende, rechtvaardig en vol vrede",
-        "ons werk, onze handel en de muren die wij bouwen"
+        "het dorp, de sector en onze eigen gezinnen"
       ],
       "anafoor": [
-        "Wij roepen tot U voor...",
-        "Wij bidden voor..."
+        "Wij danken U dat...",
+        "Wij roepen tot U voor..."
       ],
       "inclusio": [
-        "Het drempelgebed begint met de kou van januari en eindigt met de warmte van de doopbelofte.",
-        "Het kyrie begint bij de schepping en eindigt bij de Dienaar die de schepping recht doet."
+        "Het drempelgebed begint bij de kou van januari en het dankgebed eindigt bij de kracht voor de nieuwe werkweek."
       ],
       "zintuiglijke_taal": [
-        "Zien: de as van de verbrande stal in Waarder",
-        "Horen: de stem boven de wateren die dreunt als de donder",
-        "Voelen: de kou van januari in de kleren",
-        "Ruiken: de geur van modder aan de schoenen",
-        "Proeven: de dorst naar de stem die ons noemt"
+        "Zien: de as van de stal in Waarder",
+        "Horen: de stem boven de wateren",
+        "Voelen: de kou in de kleren",
+        "Ruiken: de modder aan de schoenen",
+        "Proeven: de dorst naar de stem"
       ],
       "lokale_beelden": [
-        "De modder van de kwekerspaden aan de schoenen",
-        "De stem boven de wateren (Gouwe/sloten)",
-        "De brug overgaan naar het werk",
-        "De winterrust in de sierteeltsector"
+        "De modder van de kwekerspaden",
+        "De spade in de grond",
+        "De brug over de Gouwe",
+        "De winterrust in de sierteelt"
       ]
     },
     "echo_techniek": {
-      "schriftlezing_thema": "De legitimatie van de Dienaar/Zoon door de Geest en de Stem boven het water.",
+      "schriftlezing_thema": "De openbaring van de geliefde Zoon/Dienaar en de stem boven de wateren.",
       "echo_per_gebed": {
-        "drempelgebed": "Het geknakte riet en de vlaspit uit Jesaja 42.",
+        "drempelgebed": "Het geknakte riet en de vlaspit uit Jesaja.",
         "kyrie": "De stem van de Heer boven de wateren uit Psalm 29.",
-        "epiclese": "De Geest die als een duif neerdaalt uit Matteüs 3.",
-        "dankgebed": "Het welbehagen van de Vader en de zalving uit Handelingen 10.",
-        "voorbeden": "God die geen onderscheid maakt tussen mensen uit Handelingen 10."
+        "epiclese": "De duif en de geopende hemel uit Matteüs.",
+        "dankgebed": "De stem van welbehagen en de zalving met de Geest.",
+        "voorbeden": "God die geen onderscheid maakt uit Handelingen 10."
       }
     }
   },
@@ -2800,108 +2799,103 @@
     }
   },
   "14_gebeden_profetisch": {
-    "stijl_analyse": "De gebeden zijn vormgegeven als een profetische confrontatie tussen de 'koninklijke bewustheid' van de Boskoopse prestatiecultuur en de 'alternatieve werkelijkheid' van de Jordaan. Er is consequent gezocht naar een ritme van desoriëntatie (het benoemen van de breuk en de pijn) en nieuwe oriëntatie (de verrassing van de onverdiende identiteit), waarbij God wordt aangesproken als een soeverein en bevrijdend Subject.",
+    "stijl_analyse": "De gebeden hanteren Brueggemanns ritmiek van desoriëntatie en nieuwe oriëntatie, waarbij God wordt aangesproken als een vrij en soms verontrustend subject dat de 'koninklijke bewustheid' van onze prestatiecultuur doorbreekt. De taal is concreet, schuurt langs de economische realiteit van Boskoop en weigert de status quo van onrecht en uitputting als goddelijke wil te accepteren.",
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Gij die de geschiedenis openscheurt en de muren van ons imperium slecht,",
-        "tekst": "Heilige God, Gij die niet woont in onze berekeningen en niet gevangen zit in onze exportcijfers,\n\nwij treden dit huis binnen en wij schudden het stof van de straat van onze schoenen. Wij komen uit een wereld die ons programmeert op nuttigheid, een wereld die ons dwingt om onze waarde te bewijzen met elke spade die we in de grond steken en elke plant die we verhandelen. Wij bekennen U dat wij bezet gebied zijn; ons hoofd zit vol met de logica van de markt, onze harten zijn verhard door de waan dat wij onszelf moeten redden, dat wij de regisseurs zijn van ons eigen geluk en de architecten van onze eigen zegen.\n\nWij leggen hier onze maskers van succes af. Wij stappen uit de ratrace van het moeten en het presteren. Wij weigeren nog langer te geloven dat de status quo van dit dorp, van deze sector, van dit land, de enige werkelijkheid is. Wij erkennen dat wij vaak doof zijn voor uw stem omdat wij te druk zijn met het onderhouden van onze eigen systemen van controle. Wij hebben ons comfort gekocht met de stilte over het onrecht en onze veiligheid gebouwd op de uitsluiting van de ander.\n\nBreek vandaag in ons midden in, God van de Jordaan. Ontmantel onze defensieve linies. Ontregel onze zorgvuldig geplande scenario's waarin U slechts een figurant mag zijn. Wij staan hier als mensen die het niet meer weten, die moe zijn van het hooghouden van de schijn. Wij hunkeren naar een ruimte die niet wordt beheerst door de wet van vraag en aanbod, maar door de adem van uw vrijheid. Laat dit huis een vrijplaats zijn waar de koninklijke bewustheid van deze wereld wordt doorbroken door het gevaarlijke geheugen van uw genade. Wij melden ons aan, naakt en kwetsbaar, wachtend op een woord dat ons niet beoordeelt op onze opbrengst, maar ons herstelt in onze menselijkheid.\n\nAmen.",
-        "echo_schriftlezing": "De breuk met de menselijke hiërarchie van Johannes de Doper en de overgang naar de 'gerechtigheid' van Jezus.",
+        "aanspraak": "Gij die de grendels van de angst verbreekt en de dageraad dwingt te verschijnen,",
+        "tekst": "Gij die de grendels van de angst verbreekt en de dageraad dwingt te verschijnen, wij treden dit huis binnen als een volk dat bezet is. Bezet door de agenda’s van de markt, gegijzeld door de dwingende logica van meer, sneller en efficiënter. Wij komen uit de polder, uit de kassen en van de handelsvloer, waar wij onszelf hebben wijsgemaakt dat wij de schepping beheersen, dat wij de groei dicteren en dat onze waarde gelijkstaat aan onze exportwaarde. Wij dragen de maskers van het succes zo strak dat onze gezichten zijn verstard.\n\nMaar hier, in deze ruimte van alternatieve woorden, leggen wij de wapens van onze geldingsdrang neer. Wij breken met het imperium van de Farao die ons dwingt om bakstenen te bakken zonder stro, die ons opjaagt om onze identiteit te kopen in de etalages van de wereld. Wij belijden U dat wij verslaafd zijn aan de illusie van controle, dat wij de stilte vrezen omdat we daarin de echo van onze eigen leegte horen. \n\nGod, schud de verdoving van ons af. Doorbreek de koninklijke bewustheid die ons vertelt dat alles bij het oude moet blijven. Wij staan hier als pelgrims die vergeten zijn dat zij onderweg waren, als burgers van een koninkrijk dat wij te vaak hebben ingeruild voor een lidmaatschap van de status quo. Open de deuren van onze verbeelding. Laat ons de tocht door de Jordaan niet zien als een ritueel uit het verleden, maar als een breuk met het systeem van nu. Wij zijn hier om de waarheid te horen die de wereld ons onthoudt: dat wij niet zijn wat wij produceren, maar wat Gij over ons uitroept. Bevrijd ons uit de kerker van onze eigen nuttigheid. Amen.",
+        "echo_schriftlezing": "De roep om bevrijding uit de kerker en de duisternis uit Jesaja 42:7.",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "God van het geknakte riet en de kwijnende vlam, Gij die de kreten uit de diepte telt,",
+        "aanspraak": "Onafhankelijke God, wachter die niet slaapt terwijl de wereld brandt,",
         "focus": "lamentatie_en_protest",
-        "tekst": "Wij staan hier niet om vrome woorden te prevelen, maar om te protesteren tegen de dood die als een sluier over uw schepping ligt. Wij klagen aan, o God, dat de wereld die U als een tuin hebt bedoeld, door ons wordt veranderd in een winstobject. Wij bidden voor de zuchtende schepping, voor de natuur die onder onze handen bezwijkt. Wij klagen aan dat de wetten voor natuurherstel worden vertrapt door politieke onwil en dat wij de 'waterellende' die wij zelf hebben gezaaid, nu als een onvermijdelijk lot accepteren. Waar is uw stem boven de wateren, Psalm 29 indachtig, nu de aarde beeft onder onze hebzucht?\nKyrie eleison.\n\nWij klagen aan het onrecht dat wereldwijd wordt bedreven terwijl wij toekijken. Wij roepen voor de volken in het Midden-Oosten, waar geweld als een besmettelijke ziekte rondwaart en waar de onschuldigen worden geofferd op het altaar van geopolitieke macht. Wij protesteren tegen de hardheid van een samenleving waarin de zwakken worden uitgeperst door fraudeurs en online dieven, die profiteren van de eenzaamheid en de hoop van de kwetsbaren. Wij weigeren te accepteren dat dit 'normaal' is. Wij leggen U de as voor van de stal in Waarder; de vlammen die het leven van de kalfjes verteerden en de boerenfamilie in verbijstering achterlieten. Waarom zwijgt U wanneer de schepping brandt?\nKyrie eleison.\n\nWij klagen onze eigen apathie aan. Wij bekennen dat wij gewend zijn geraakt aan het lijden van de ander zolang het onze eigen cirkels niet raakt. Wij hebben ons geweten verdoofd met consumptie en onze verbeelding laten gijzelen door cynisme. Wij hebben niet geschreeuwd op straat tegen het onrecht, maar ons veilig teruggetrokken in onze nuchterheid. Wij zijn medeplichtig aan de doodsheid van een cultuur die geen onderscheid meer maakt tussen mens en handelswaar. Word wakker, o God! Sloop de muren van onze onverschilligheid en laat de kreten van de verdrukten onze rust verstoren totdat uw gerechtigheid als een rivier door de straten van Boskoop stroomt.\nKyrie eleison.\n\nAmen.",
-        "echo_schriftlezing": "Het beeld van de Dienaar die het geknakte riet niet breekt (Jesaja 42) als protest tegen de hardheid van de wereld.",
+        "tekst": "Onafhankelijke God, wachter die niet slaapt terwijl de wereld brandt, wij roepen tot U uit de diepte van een werkelijkheid die wij niet langer kunnen gladstrijken met vrome woorden. Wij protesteren tegen de dood die zich vermomt als vooruitgang. \n\nWij klagen voor de wijde wereld, waar de machtigen der aarde schaken met mensenlevens. Wij zien het Midden-Oosten, waar de bodem verzadigd is van bloed en tranen, waar de erkenning van de één de uitwissing van de ander lijkt te eisen. Wij roepen voor de zuchtende schepping; voor de natuurherstelwetten die sneuvelen op het altaar van politiek gewin, voor de biodiversiteit die wegglijdt tussen onze vingers terwijl wij discussiëren over stikstofruimte. Waar is uw stem boven de wateren, God? Waarom zwijgt U terwijl de ademhaling van de aarde stokt? Heer, ontwaak! Laat uw gerechtigheid niet slechts een vroom verlangen zijn, maar een storm die de tafels van de onverschilligheid omverwerpt.\n\nWij klagen voor de naaste, voor de slachtoffers van de gewetenloze fraude die in de schaduw van het internet hun spaargeld en hun vertrouwen verloren. Voor de kwetsbaren die door de mazen van het systeem vallen omdat zij niet passen in de algoritmes van onze zorg. En wij noemen U de as en de rouw in Waarder, waar de vlammen het leven van de kalfjes roofden en de dromen van een boerenfamilie in de rook opgingen. Waarom dit geknakte riet nog verder breken, God? Waarom deze kwijnende vlaspit doven? Wij begrijpen uw wegen niet en wij weigeren ze goed te praten.\n\nWij klagen over onszelf, over onze eigen medeplichtigheid aan de stilte. Wij zijn verzadigd en daardoor traag geworden. Onze verontwaardiging is vaak niet meer dan een rimpeling op het water van onze luxe. Wij hebben ons genesteld in de schaduw van het onrecht omdat het ons comfort biedt. Vergeef ons onze apathie, onze angst om werkelijk anders te zijn, onze weigering om de prijs van de vrede te betalen. Sloop de muren in ons hoofd die ons scheiden van de pijn van de wereld. God, ontferm U, niet omdat wij het verdienen, maar omdat uw naam op het spel staat in deze puinhoop. Amen.",
+        "echo_schriftlezing": "Het protest tegen het breken van het geknakte riet uit Jesaja 42:3 en de stem boven de wateren uit Psalm 29.",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Geest van God, Gij Heilige Sloophamer van onze vastgelopen scenario's,",
+        "aanspraak": "Heilige Geest, goddelijke Sloophamer van onze vastgelopen scenario's,",
         "focus": "doorbreken_verbeelding",
-        "tekst": "Wij smeken U: kom niet als een zacht briesje dat ons in slaap sust, maar als een storm die de luiken van ons verstand openbreekt. Onze verbeelding zit op slot; wij kunnen ons geen wereld meer voorstellen die anders is dan deze. Wij zitten vast in de scripts van tekort, van angst en van eigenrichting. Geest van God, breek in! Gebruik de woorden van de Schrift als een breekijzer om onze gesloten systemen open te wrikken. Laat het gevaarlijke geheugen van Jezus' doop onze nuchterheid opschudden. Geef ons ogen die door de modder van de Jordaan heen de geopende hemel zien. Laat ons niet alleen de tekst lezen, maar laat de tekst ons lezen, ons ontmaskeren en ons bevrijden van de waan dat alles bij het oude moet blijven. Herschep onze taal, ontbrand onze hoop en dwing ons om te luisteren naar de Stem die alles nieuw maakt. Kom, Heilige Geest, en breek onze wereld open.\n\nAmen.",
-        "echo_schriftlezing": "De neerdalende Geest als duif en het openscheuren van de hemelen (Matteüs 3,16).",
+        "tekst": "Heilige Geest, goddelijke Sloophamer van onze vastgelopen scenario's, wij smeken U: breek in! Onze verbeelding is dichtgemetseld met de bakstenen van de nuchterheid. Wij horen de Schrift en wij denken: 'dat weten we nu wel'. Wij lezen over de Jordaan en wij zien een plaatje uit een kinderbijbel, terwijl de wereld buiten snakt naar een radicale omkering. \n\nKom over ons als de wind die de kaf van de koren scheidt. Verbrand de clichés die onze ziel hebben verdoofd. Wij vragen niet om een stichtelijk woord, maar om een schok die onze krampachtige controle verbrijzelt. Open onze oren voor het gevaarlijke geheugen van Jezus, die niet kwam om de orde te bevestigen, maar om de wereld op zijn kop te zetten. Laat uw Woord door onze verdedigingslinies breken. Maak ons onrustig, maak ons ontvankelijk voor het onmogelijke. Laat de hemel boven deze oude woorden vandaag opnieuw scheuren, zodat wij niet langer gevangenen zijn van onze eigen beperkte verwachtingen, maar getuigen worden van uw nieuwe schepping. Kom, Geest, en herstart ons hart. Amen.",
+        "echo_schriftlezing": "De scheurende hemel en de neerdalende Geest uit Matteüs 3:16.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Gulle Gever van onverdiende namen, God van de grote verrassing,",
-        "verbining_verkondiging": "Wij danken U voor de schokkende ontdekking dat onze identiteit een geschenk is dat voorafgaat aan al ons gezwoeg op de Boskoopse velden.",
-        "tekst": "Wij danken U, o God, omdat U de cirkel van onze prestatiecultuur hebt doorbroken. Wij danken U voor de verrassing van de Jordaan, waar Jezus niet als een verre heerser boven de massa zweefde, maar schouder aan schouder in de modder van onze gebrokenheid ging staan. Dank U dat U in Hem de hiërarchie hebt omgekeerd en de weg van de solidariteit hebt geheiligd. Wij loven U omdat U ons niet tegemoet treedt met een loonstrookje of een beoordelingsgesprek, maar met een naam: 'Mijn geliefde kind'.\n\nWij danken U voor de 'onmogelijke mogelijkheid' dat er leven is waar wij alleen maar dood zagen. Dank U voor de momenten van nieuwe oriëntatie in ons dorp: voor de kweker die de moed vindt om te verduurzamen ondanks de onzekerheid; voor de jongere die weigert mee te gaan in de ratrace van de sociale media en kiest voor authenticiteit; voor de gemeenschap van de Dorpskerk die een vindplaats van hoop durft te zijn in een tijd van krimp. Wij danken U dat uw welbehagen op ons rust, niet omdat wij het verdiend hebben, maar omdat Gij een God van de gift zijt, een God die overvloed schept uit de leegte.\n\nWij danken U voor de kracht van de doop die ons bevrijdt van de kramp van het 'moeten'. Dank U dat wij morgenochtend de brug over kunnen gaan met een rechte rug, wetend dat onze waarde dieper ligt dan de veengrond en sterker is dan de marktschommelingen. Wij danken U voor de Geest die ons zalft tot dienstbaarheid, die ons de moed geeft om het geknakte riet te ondersteunen en de kwijnende vlaspit te voeden. Dank U dat Gij de Hoofdpersoon zijt in ons verhaal, de God die ons altijd weer verrast met een nieuw begin wanneer wij dachten dat het einde was bereikt. Wij vieren de vreugde van uw verschijning, de Epifanie van uw liefde die alle duisternis verdrijft.\n\nAmen.",
-        "echo_schriftlezing": "Het trinitarische visioen van de doop en de zalving tot weldoende rondgaan (Handelingen 10,38).",
+        "aanspraak": "Gulle Gever van de onmogelijke mogelijkheid,",
+        "verbinding_verkondiging": "Wij danken U dat Gij de hiërarchie van de waardigheid hebt omvergeworpen door in de modder van onze Jordaan te gaan staan.",
+        "tekst": "Gulle Gever van de onmogelijke mogelijkheid, wij danken U met een verwondering die onze logica te boven gaat. In een wereld van facturen en tegenprestaties, van loon naar werken en recht van de sterkste, danken wij U voor de pure gift van dit uur. Wij danken U dat Gij geen God op afstand bent gebleven, geen abstract principe in een ivoren toren, maar een God met natte voeten. \n\nDank U voor de verrassing van de Jordaan: dat de Meester zich laat wassen door de dienaar, dat de Heilige de rij van de zondaars niet schuwt. Gij hebt de ladder van onze morele prestaties omvergegooid en zijt zelf de diepte in gekomen. Wij danken U voor die ene stem die boven het rumoer van onze zelftwijfel uitklinkt: 'Dit is mijn geliefde'. Dank U dat deze woorden er al zijn nog voordat wij een vinger hebben uitgestoken, nog voordat wij onze nuttigheid hebben bewezen op de kwekerij of in de kerk. Het is een geschenk, een startkapitaal van genade waar wij geen rente over hoeven te betalen. \n\nWij danken U voor de nieuwe oriëntatie die dit ons geeft. Het leven is geen handelswaar meer, maar een gave. Onze identiteit is geen project dat wij moeten voltooien, maar een naam die ons is geschonken. Wij danken U voor de schoonheid van de schepping die ondanks alles standhoudt, voor het wonder van de groei in de Boskoopse bodem, voor de veerkracht van mensen die na de brand weer opstaan. Dank U dat Gij de hoeksteen zijt die alle dingen samenbindt, ook wanneer onze kleine wereld uiteenvalt. Wij loven U omdat Gij ons opnieuw aan onszelf hebt teruggegeven, niet op onze voorwaarden van succes, maar op uw voorwaarden van liefde. Wij stralen van welzijn omdat wij van U zijn. Amen.",
+        "echo_schriftlezing": "Het welbehagen van de Vader uit Matteüs 3:17 en de samenhang van de schepping uit Psalm 29.",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "Soevereine God, Wachter over de volkeren en Vader van de armen,",
+        "aanspraak": "Soevereine God, die de machtigen van hun troon stoot en de nederigen aanzien geeft,",
         "cirkels": {
           "wereld": {
             "themas": [
-              "Vrede in het Midden-Oosten",
-              "Natuurherstelwet",
-              "Geopolitieke gerechtigheid"
+              "Geopolitieke verschuivingen",
+              "Ecologische crisis",
+              "Midden-Oosten conflict"
             ],
-            "tekst": "Wij leggen de wereldkaart voor U neer, o God, als een aanklacht en een gebed. Wij bidden voor de machthebbers in Brussel en Den Haag, dat zij niet langer marchanderen met de toekomst van uw schepping. Ontmantel de arrogantie die denkt dat economische groei belangrijker is dan de ademhaling van de aarde. Wij bidden om wijsheid voor hen die beslissen over de natuurherstelwet, dat zij de stem van de zuchtende aarde horen boven het kabaal van de lobbygroepen. Wij roepen voor het Midden-Oosten: breek de cirkels van wraak en vergelding. Wij bidden voor de Palestijnse staat en voor de veiligheid van Israël; dat er een gerechtigheid mag opstaan die geen onderscheid maakt tussen mensen, zoals Petrus mocht leren. Sloop de muren van vijandschap en laat uw vrede de wapens het zwijgen opleggen."
+            "tekst": "Wij bidden U voor de wereldorde die wankelt. Wij leggen de leiders van de naties voor U neer; zij die menen dat zij de loop van de geschiedenis bepalen met hun wapens en hun economische sancties. Ontmasker hun pretenties. Wij bidden voor de regio’s waar de erkenning van de menselijke waardigheid is verworden tot een politiek drukmiddel. Laat uw gerechtigheid, die geen aanzien des persoons kent, doorbreken in de harten van hen die beslissen over leven en dood in het Midden-Oosten. Wij bidden voor de aarde, uw eigendom dat wij als ons bezit hebben geclaimd. Geef moed aan hen die strijden voor natuurherstel, die de stem verheffen voor de oceanen en de bossen, ook wanneer dat botst met onze korte-termijn belangen. Sloop de hoogmoed van hen die menen dat de schepping een onuitputtelijke voorraadkast is voor onze hebzucht."
           },
           "kerk": {
             "themas": [
+              "Profetische getuigenis",
               "Alternatieve gemeenschap",
-              "PKN jaarverslag",
-              "Profetische getuigenis"
+              "Eenheid in verscheidenheid"
             ],
-            "tekst": "Wij bidden voor uw kerk, dat zij een alternatieve gemeenschap mag zijn in een wereld van gelijkvormigheid. Geef de Protestantse Kerk in Nederland de moed om niet te focussen op haar eigen krimp, maar op haar profetische roeping. Laat ons een vindplaats van hoop zijn, waar de koninklijke bewustheid wordt ontmaskerd en waar wij leren om te leven uit de gift. Wij bidden voor de eenheid van de christenen in Boskoop; dat wij niet langer onze eigen identiteit bewaken ten koste van de ander, maar dat wij gezamenlijk in de rij bij de Jordaan gaan staan. Maak ons tot een volk dat ijverig is in goede werken, niet om de hemel te verdienen, maar omdat de hemel voor ons is opengegaan."
+            "tekst": "Wij bidden voor uw kerk, hier in Boskoop en wereldwijd. Laat ons geen gezelligheidsvereniging zijn die de status quo zegent, maar een alternatieve gemeenschap die de koninklijke bewustheid durft tegen te spreken. Geef de Protestantse Kerk in Nederland de kracht om een vindplaats van hoop te zijn, niet door zich aan te passen aan de tijdgeest, maar door vast te houden aan het gevaarlijke geheugen van Jezus. Wij bidden voor de eenheid onder de christenen in dit dorp; dat wij niet langer bouwen aan onze eigen kerkelijke koninkrijkjes, maar samen de gerechtigheid zoeken die U ons in de Jordaan hebt getoond. Maak ons tot een volk dat het geknakte riet ondersteunt en de vreemdeling een plek geeft aan tafel, zonder aanzien des persoons."
           },
           "naasten": {
             "themas": [
-              "Slachtoffers van fraude",
-              "Zorgmedewerkers",
-              "Arbeidsmigranten"
+              "Slachtoffers van uitbuiting",
+              "Rouw in Waarder",
+              "De onzichtbare werkers"
             ],
-            "tekst": "Wij bidden voor onze naasten die in de schaduw van ons succes leven. Wij noemen U de slachtoffers van de online fraude in Amsterdam en daarbuiten; herstel hun geschonden vertrouwen en bescherm de kwetsbaren tegen de wolven van de hebzucht. Wij bidden voor de zorgmedewerkers in De Zijloever en elders, die dagelijks het geknakte riet ondersteunen; geef hen de kracht van uw Geest wanneer de werkdruk hen dreigt te verstikken. Wij bidden voor de arbeidsmigranten in onze sector, de Polen en anderen die onze kwekerijen draaiende houden; dat zij niet langer onzichtbaar zijn, maar erkend worden als geliefde kinderen van God, zonder aanzien des persoons."
+            "tekst": "Wij bidden voor de mensen wiens namen niet in de krant staan, maar wiens pijn naar de hemel schreeuwt. Wij bidden voor hen die bedrogen zijn door online fraude, die zich beroofd voelen van hun veiligheid en hun eigenwaarde; herstel wat de dieven hebben gestolen. Wij bidden voor de boerenfamilie in Waarder, voor de leegte in de stal en de schrik in de ziel; wees hun een schuilplaats wanneer de nachtmerrie terugkeert. Wij bidden voor de onzichtbare naasten in ons dorp, de arbeidsmigranten die onze kwekerijen draaiende houden maar vaak buiten onze kring blijven. Laat ons in hen uw geliefde kinderen herkennen. Wees nabij aan de eenzamen die in de winterkou van januari wachten op een teken van leven, op een stem die hun naam noemt."
           },
           "eigen_gemeente": {
             "themas": [
-              "Boskoopse sierteelt",
-              "Stalbrand Waarder",
-              "Jongeren en ouderen"
+              "Boskoopse werkethiek",
+              "Identiteitscrisis jongeren",
+              "Toekomst van de sierteelt"
             ],
-            "tekst": "Voor Boskoop bidden wij U, God van de polder en de Gouwe. Wij bidden voor de gezinnen die worstelen met de onzekerheid over de Hefbrug en de stikstofregels; geef hen rust die de markt niet kan geven. Wij bidden specifiek voor de boerenfamilie in Waarder na de verwoestende brand; wees hun nabij in de leegte van de stal. Wij bidden voor onze jongeren in de Snijdelwijk en Waterrijk, dat zij hun naam niet ontlenen aan hun likes of hun prestaties, maar aan uw welbehagen. En voor onze ouderen die de geschiedenis van dit dorp in hun botten dragen: troost hen in hun eenzaamheid en geef hen de zekerheid dat uw verbond standhoudt tot in eeuwigheid."
+            "tekst": "Wij bidden voor onze eigen gemeenschap in de schaduw van de Hefbrug. Wij leggen de gezinnen voor U neer die worstelen met de druk van de sierteeltsector, die gebukt gaan onder de last van regelgeving en economische onzekerheid. Behoed hen voor de verbittering. Wij bidden voor onze jongeren, die opgroeien in een cultuur die hen voortdurend dwingt om zichzelf te profileren en te bewijzen. Laat hen de stem uit de hemel horen: dat zij geliefd zijn nog voordat zij succesvol zijn. Help ons als gemeente om een plek te zijn waar de maskers af mogen, waar we niet hoeven te doen alsof we alles voor elkaar hebben. Ga met ons mee als wij morgen de brug overgaan, terug naar de realiteit van het werk, en help ons om daar als gezalfde mensen de gerechtigheid te praktiseren."
           }
         },
-        "stilte_instructie": "Wij verstillen nu voor U, om in de diepte van ons eigen hart uw stem te horen...",
-        "overgang_onze_vader": "Hoor ons, o God, als wij al onze nood en al onze hoop samenvatten in de woorden van uw geliefde Zoon:",
+        "stilte_instructie": "In de stilte van dit huis brengen wij U onze eigen onuitgesproken nood en onze hoop...",
+        "overgang_onze_vader": "Hoor ons, God, als wij al onze woorden en al ons zwijgen samenbrengen in het gebed dat Jezus ons leerde:",
         "onze_vader": "Onze Vader die in de hemelen zijt,\nuw naam worde geheiligd;\nuw Koninkrijk kome;\nuw wil geschiede, gelijk in de hemel, alzo ook op de aarde.\nGeef ons heden ons dagelijks brood;\nen vergeef ons onze schulden, gelijk ook wij vergeven onze schuldenaren;\nen leid ons niet in verzoeking, maar verlos ons van de boze.\nWant van U is het Koninkrijk en de kracht en de heerlijkheid tot in eeuwigheid.\nAmen."
       }
     },
     "profetische_elementen": {
       "gevaarlijke_werkwoorden": [
-        "openscheuren",
-        "slechten",
-        "ontmantelen",
-        "ontregelen",
+        "verbrijzelen",
+        "ontmaskeren",
+        "sloop",
         "inbreken",
-        "verstoren",
-        "wrikken",
-        "gijzelen",
-        "ontmaskeren"
+        "tegenspreken",
+        "opschudden"
       ],
       "moderne_metaforen": [
-        "imperium van berekeningen",
-        "bezet gebied van de markt",
-        "ratrace van nuttigheid",
-        "geprogrammeerd op winst",
-        "scripts van tekort",
-        "heilig privilege van de nuchterheid",
-        "lobbygroepen van de angst",
-        "startkapitaal van de genade"
+        "imperium van de Farao",
+        "bakstenen van de nuchterheid",
+        "agenda's van de markt",
+        "algoritmes van de zorg",
+        "startkapitaal van genade",
+        "verdedigingslinies van de ziel"
       ],
       "anti_status_quo": [
-        "Wij weigeren nog langer te geloven dat de status quo van dit dorp de enige werkelijkheid is.",
-        "Ontregel onze zorgvuldig geplande scenario's waarin U slechts een figurant mag zijn.",
-        "Wij protesteren tegen de dood die als een sluier over uw schepping ligt.",
-        "Sloop de muren van onze onverschilligheid."
+        "Wij weigeren de status quo als goddelijk te accepteren.",
+        "De markt is niet onze herder.",
+        "Onze waarde is geen exportproduct.",
+        "God is geen abstract principe maar een God met natte voeten."
       ]
     }
   },

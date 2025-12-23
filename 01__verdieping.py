@@ -936,7 +936,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 """
 
     # Laad prompts
-    base_prompt = load_prompt("base_prompt.md", user_input)
+    base_prompt = load_prompt("base_prompt_verdieping.md", user_input)
 
     # Analyses uitvoeren
     print("\n" + "=" * 60)
@@ -1030,13 +1030,14 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 - **Website:** {user_input.get('website') or 'Geen'}
 - **Datum:** {user_input.get('datum')}
 
-# Eerdere Analyses (Context)
+# Dossier: Eerdere Analyses & Context
+Hieronder vind je de output van eerdere stappen in het proces. Gebruik deze informatie als fundament voor je huidige taak.
 
 {analysis_context}
 
 ---
 
-# Huidige Opdracht
+# Huidige Opdracht: {title}
 
 {task_prompt}
 """
