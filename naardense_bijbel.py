@@ -495,7 +495,37 @@ def download_lezingen(output_dir: Path, liturgie_tekst: str) -> dict[str, str]:
     resultaten = {}
     seen_refs = set()
 
-    for ref_str in referenties_raw:
+    # Pre-process references to handle semi-colon separators (e.g., "Sefanja 2:3; 3:12-13")
+    processed_refs = []
+    for raw_ref in referenties_raw:
+        parts = raw_ref.split(';')
+        last_book = None
+        
+        for part in parts:
+            part = part.strip()
+            if not part: continue
+            
+            # Check if part starts with a book name
+            book_match = re.match(r'^(\d?\s*[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)', part)
+            
+            # Simple check if the match corresponds to a known book code
+            is_book = False
+            if book_match:
+                potential_book = book_match.group(1)
+                # Use get_boek_slug or NAME_TO_CODE to verify
+                if get_boek_slug(potential_book) or NAME_TO_CODE.get(potential_book.upper()):
+                    is_book = True
+
+            if is_book:
+                last_book = book_match.group(1)
+                processed_refs.append(part)
+            elif last_book and re.match(r'^\d+[:]', part):
+                # Starts with chapter:verse, prepend last book
+                processed_refs.append(f"{last_book} {part}")
+            else:
+                processed_refs.append(part)
+
+    for ref_str in processed_refs:
         # Check of dit een complexe referentie is met meerdere verse ranges (bijv. "1 Samuel 1,20-22.24-28")
         complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;a-z]+)", ref_str)
 
