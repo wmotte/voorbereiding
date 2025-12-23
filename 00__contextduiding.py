@@ -34,7 +34,8 @@ OUTPUT_DIR = SCRIPT_DIR / "output"
 PROMPTS_DIR = SCRIPT_DIR / "prompts"
 
 # Model keuze: Gemini 3 flash als primair, pro als fallback
-MODEL_NAME = "gemini-3-flash-preview"
+#MODEL_NAME = "gemini-3-flash-preview"
+MODEL_NAME = "gemini-3-pro-preview"
 MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
