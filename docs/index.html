@@ -1961,6 +1961,7 @@
             '15_kindermoment': 'Kindermoment',
             '16_preek_solle': 'Preekschets (Sölle)',
             '17_preek_jungel': 'Preekschets (Jüngel)',
+            '18_preek_noordmans': 'Preekschets (Noordmans)',
             'Bijbelteksten': 'Bijbelteksten'
         };
 
@@ -2648,6 +2649,11 @@
             // Buttrick Moves & Structures
             if (key === 'moves' && Array.isArray(value) && value.length > 0 && value[0].kernidee) {
                 return renderButtrickMoves({ moves: value });
+            }
+
+            // Preekschets onderdelen (Sölle, Jüngel, Noordmans)
+            if (key === 'preek_onderdelen' && typeof value === 'object') {
+                return renderPreekOnderdelen(value);
             }
 
             // Bijbelteksten (Naardense Bijbel, NBV21 en Grondtekst)
@@ -3407,6 +3413,27 @@
             }
 
             html += `</div>`; // Close data-group
+            return html;
+        }
+
+        function renderPreekOnderdelen(onderdelen) {
+            let html = `<div class="data-group">`;
+            html += `<div class="data-group-title">Preekschets</div>`;
+
+            // Render each onderdeel in order, single column
+            for (const [key, value] of Object.entries(onderdelen)) {
+                if (!value || typeof value !== 'object') continue;
+
+                const titel = value.titel || formatKey(key);
+                const inhoud = value.inhoud || '';
+
+                html += `<div class="preek-onderdeel">`;
+                html += `<div class="preek-onderdeel-titel">${processText(titel)}</div>`;
+                html += `<div class="preek-tekst">${processText(inhoud)}</div>`;
+                html += `</div>`;
+            }
+
+            html += `</div>`;
             return html;
         }
 
