@@ -21,6 +21,7 @@ import os
 import sys
 import re
 import json
+import random
 import argparse
 import subprocess
 from pathlib import Path
@@ -64,7 +65,34 @@ MODEL_NAME = "gemini-3-flash-preview"
 MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
-def load_prompt(filename: str, user_input: dict) -> str:
+def sample_profetische_gebeden(n: int = 10) -> str:
+    """Selecteer willekeurige gebeden uit de voorbeeldmap."""
+    examples_dir = SCRIPT_DIR / "gebeden_voorbeeld_profetisch"
+    if not examples_dir.exists():
+        return "Geen voorbeeldgebeden gevonden."
+
+    files = list(examples_dir.glob("*.json"))
+    if not files:
+        return "Geen voorbeeldgebeden gevonden."
+
+    selected_files = random.sample(files, min(n, len(files)))
+    
+    output_parts = []
+    for i, file_path in enumerate(selected_files, 1):
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                title = data.get("title_nl", "Naamloos")
+                text = data.get("text_nl", "")
+                if text:
+                    output_parts.append(f"### Voorbeeld {i}: {title}\n\n{text}")
+        except Exception as e:
+            print(f"Fout bij lezen voorbeeld {file_path.name}: {e}")
+
+    return "\n\n".join(output_parts)
+
+
+def load_prompt(filename: str, user_input: dict, extra_replacements: dict = None) -> str:
     """Laad een prompt uit een markdown bestand en vervang placeholders."""
     filepath = PROMPTS_DIR / filename
     if not filepath.exists():
@@ -89,6 +117,10 @@ def load_prompt(filename: str, user_input: dict) -> str:
     content = content.replace("{{gemeente}}", user_input.get("gemeente", ""))
     content = content.replace("{{datum}}", user_input.get("datum", ""))
     content = content.replace("{{huidige_datum}}", huidige_datum)
+
+    if extra_replacements:
+        for key, value in extra_replacements.items():
+            content = content.replace(f"{{{{{key}}}}}", value)
 
     return content
 
@@ -888,6 +920,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("12_representatieve_hoorders", "Representatieve Hoorders"),
         ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
         ("14_gebeden", "Gebeden voor de Eredienst"),
+        ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
         ("15_kindermoment", "Kindermoment"),
     ]
 
@@ -927,8 +960,14 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
                 print(f"  Overgeslagen: {name}")
                 continue
 
+        # Bereid extra replacements voor
+        extra_replacements = {}
+        if name == "14_gebeden_profetisch":
+            print("  Willekeurige voorbeeldgebeden selecteren...")
+            extra_replacements["voorbeeld_gebeden"] = sample_profetische_gebeden()
+
         # Bouw prompt
-        task_prompt = load_prompt(f"{name}.md", user_input)
+        task_prompt = load_prompt(f"{name}.md", user_input, extra_replacements)
 
         # Voor representatieve hoorders: beperkte context (geen exegese, kunst, kalender)
         if name == "12_representatieve_hoorders":
@@ -938,7 +977,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 
         # Voor gebeden: maskeer adres om letterlijk gebruik te voorkomen
         display_adres = user_input.get('adres') or 'Onbekend'
-        if name == "14_gebeden":
+        if name in ["14_gebeden", "14_gebeden_profetisch"]:
             display_adres = "N.v.t. voor deze taak (niet letterlijk noemen)"
 
         full_prompt = f"""{base_prompt}
@@ -967,7 +1006,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         # Voer analyse uit
         if name == "11_kalender":
             temp = 0.1 # Laag voor feitelijke precisie
-        elif name == "14_gebeden" or name == "15_kindermoment":
+        elif name in ["14_gebeden", "14_gebeden_profetisch", "15_kindermoment"]:
             temp = 0.7 # Hoger voor poëtische creativiteit
         else:
             temp = 0.2 # Standaard
