@@ -1841,7 +1841,9 @@
         const jsonFiles = [
             { file: "Den_Haag_28_dec_2025.json", label: "Den Haag (28 december 2025, Kloosterkerk)" },
             { file: "Waddinxveen_4_jan_2026.json", label: "Waddinxveen (4 januari 2026, Brugkerk)" },
-            { file: "Boskoop_11_jan_2026.json", label: "Boskoop (11 januari 2026, Dorpskerk)" }
+            { file: "Boskoop_11_jan_2026.json", label: "Boskoop (11 januari 2026, Dorpskerk)" },
+            { file: "Ameide_1_feb_2026.json", label: "Ameide (1 februari 2026, Sionkerk)" }
+
         ];
         //const jsonFiles = ["voorbeeld_03.json"];
 
@@ -4083,12 +4085,21 @@
                     const tz = persona.traumas_zorgen;
                     html += `<div class="hoorder-groep">`;
                     html += `<div class="hoorder-groep-titel">Zorgen & Worstelingen</div>`;
-                    if (tz.verleden && tz.verleden.length > 0) {
-                        html += `<div class="hoorder-item"><span class="hoorder-item-label">Verleden:</span> ${processText(tz.verleden.join('; '))}</div>`;
+                    
+                    if (tz.verleden) {
+                        const verledenText = Array.isArray(tz.verleden) ? tz.verleden.join('; ') : tz.verleden;
+                        if (verledenText) {
+                            html += `<div class="hoorder-item"><span class="hoorder-item-label">Verleden:</span> ${processText(verledenText)}</div>`;
+                        }
                     }
-                    if (tz.heden && tz.heden.length > 0) {
-                        html += `<div class="hoorder-item"><span class="hoorder-item-label">Heden:</span> ${processText(tz.heden.join('; '))}</div>`;
+                    
+                    if (tz.heden) {
+                        const hedenText = Array.isArray(tz.heden) ? tz.heden.join('; ') : tz.heden;
+                        if (hedenText) {
+                            html += `<div class="hoorder-item"><span class="hoorder-item-label">Heden:</span> ${processText(hedenText)}</div>`;
+                        }
                     }
+                    
                     if (tz.onverwerkt) {
                         html += `<div class="hoorder-item"><span class="hoorder-item-label">Onverwerkt:</span> ${processText(tz.onverwerkt)}</div>`;
                     }
