@@ -2155,7 +2155,7 @@
 
             // If we have multiple simple string values, render as compact data pairs
             if (simpleValues.length >= 3 && simpleValues.length <= 8 && childObjects.length === 0) {
-                const shortValues = simpleValues.filter(([k, v]) => String(v).length < 100);
+                const shortValues = simpleValues.filter(([k, v]) => String(v).length < 100 && typeof v !== 'boolean');
                 if (shortValues.length >= 3) {
                     html += `<div class="data-pairs">`;
                     shortValues.forEach(([key, value]) => {
@@ -2388,6 +2388,7 @@
                             if (key.startsWith('_')) continue;
                             if (key === titleKey) continue; // Skip title, already shown
                             if (value === null || value === undefined) continue;
+                            if (typeof value === 'boolean') continue;
 
                             if (key === 'zoekterm') {
                                 html += `<div style="margin-top: 6px;"><span class="search-term">${processText(value)}</span></div>`;
@@ -3048,6 +3049,7 @@
                     if (['titel', 'doel'].includes(key)) continue;
                     if (key.startsWith('_')) continue;
                     if (value === null || value === undefined) continue;
+                    if (typeof value === 'boolean') continue;
 
                     if (Array.isArray(value)) {
                         // Handle arrays (like waarom_keten)
@@ -3071,7 +3073,7 @@
                         html += `<div><strong>${escapeHtml(formatKey(key))}:</strong></div>`;
                         html += `<div style="margin-left: 16px;">`;
                         for (const [subKey, subVal] of Object.entries(value)) {
-                            if (subVal !== null && subVal !== undefined && typeof subVal !== 'object') {
+                            if (subVal !== null && subVal !== undefined && typeof subVal !== 'object' && typeof subVal !== 'boolean') {
                                 html += `<div><strong>${escapeHtml(formatKey(subKey))}:</strong> ${processText(String(subVal))}</div>`;
                             }
                         }
