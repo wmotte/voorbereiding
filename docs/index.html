@@ -1653,6 +1653,7 @@
             '12_representatieve_hoorders': 'Representatieve Hoorders',
             '13_homiletische_analyse': 'Homiletische Analyse',
             '14_gebeden': 'Gebeden',
+            '14_gebeden_profetisch': 'gebeden (profetisch)',
             '15_kindermoment': 'Kindermoment',
             'Bijbelteksten': 'Bijbelteksten'
         };
@@ -1790,6 +1791,8 @@
                 let num;
                 if (key === 'Bijbelteksten') {
                     num = '02'; // Always assign 02 to make it second in the menu
+                } else if (key === '14_gebeden_profetisch') {
+                    num = '14b';
                 } else {
                     const numMatch = key.match(/^(\d+)_/);
                     num = numMatch ? numMatch[1] : String(unnumberedCounter++).padStart(2, '0');
@@ -1942,7 +1945,7 @@
                             subSectionLabels[`kindermoment-${index + 1}`] = label;
                         });
                     }
-                } else if (key === '14_gebeden') {
+                } else if (key === '14_gebeden' || key === '14_gebeden_profetisch') {
                     // Special handling for Gebeden - show specific prayer types
                     const gebeden = sectionData.gebeden || {};
                     const gebedOrder = ['drempelgebed', 'kyrie', 'epiclese', 'dankgebed', 'voorbeden'];
@@ -1967,7 +1970,7 @@
                         'homiletische_brug_chapell': 'Analyse (Chapell)',
                         'homiletical_plot': 'Analyse (Lowry)'
                     };
-                    ['tekstkeuze', 'homiletische_brug_chapell', 'homiletical_plot'].forEach(subKey => {
+                    ['tekstkeuze', 'homiletical_plot', 'homiletische_brug_chapell'].forEach(subKey => {
                         if (sectionData[subKey]) {
                             subSections.push(subKey);
                             subSectionLabels[subKey] = labelMap[subKey];
@@ -2082,7 +2085,7 @@
             // Special handling for Bijbelteksten - render in liturgical order
             if (key === 'Bijbelteksten') {
                 contentHtml = renderBijbeltekstenSection(dataToRender);
-            } else if (key === '14_gebeden') {
+            } else if (key === '14_gebeden' || key === '14_gebeden_profetisch') {
                 contentHtml = renderGebedenSection(dataToRender);
             } else if (key === '12_representatieve_hoorders') {
                 contentHtml = renderHoordersSection(dataToRender);
@@ -3830,11 +3833,33 @@
                     html += `</ul></div>`;
                 }
 
+                html += `</div>`;
+            }
+
+            // Profetische elementen
+            if (data.profetische_elementen) {
+                html += `<div class="gebeden-meta">`;
+                html += `<div class="gebeden-meta-title">Profetische elementen</div>`;
+                html += `<div class="gebeden-technieken">`;
+
+                for (const [element, items] of Object.entries(data.profetische_elementen)) {
+                    if (!Array.isArray(items) || items.length === 0) continue;
+
+                    html += `<div class="gebeden-techniek">`;
+                    html += `<div class="gebeden-techniek-naam">${escapeHtml(formatKey(element))}</div>`;
+                    html += `<ul class="gebeden-techniek-items">`;
+                    items.forEach(item => {
+                        html += `<li>${processText(item)}</li>`;
+                    });
+                    html += `</ul></div>`;
+                }
+
                 html += `</div></div>`;
             }
 
             // Echo techniek samenvatting
             if (data.echo_techniek) {
+
                 html += `<div class="gebeden-meta">`;
                 html += `<div class="gebeden-meta-title">Echo-techniek</div>`;
 
