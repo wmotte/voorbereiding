@@ -88,7 +88,7 @@ Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
 | 10 | **Focus & Functie** | De kernboodschap en het beoogde effect van de preek. |
 | 11 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
 | 12 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
-| 13 | **Homiletische Analyse** | Preekschets volgens Lowry (narratief) en Chapell (FCF & Christocentrisch). |
+| 13 | **Homiletische Analyse** | Preekschets (Lowry; narratief), elementen (Chapell; FCF & Christocentrisch) en inductie (Buttrick; Moves & Structures). |
 | 14 | **Gebeden** | Standaard (liturgisch), Profetisch (Brueggemann) en Dialogisch (Dumas). |
 | 15 | **Kindermoment** | Drie creatieve opties (Klassiek, Actief, Vreemd) voor interactie met kinderen. |
 
@@ -134,7 +134,7 @@ De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaa
 5.  **ZÓ! (YEAH!)**: Anticiperen op de gevolgen (het gewone leven).
 📄 **[Lees de diepte-analyse van Lowry's methode](misc/Lowrys_Homiletical_Plot.md)**
 
-### 6. Preekstructuur: David Buttrick's Moves
+### 6. Preekstructuur: David Buttricks Moves & Structures
 Naast Lowry's narratieve plot ondersteunt de tool ook de "Moves and Structures" methode van David Buttrick.
 *   **Moves:** Preken als een reeks taalbewegingen in plaats van statische punten.
 *   **Fenomenologie:** Focus op hoe taal werkt in het bewustzijn van de hoorder.
