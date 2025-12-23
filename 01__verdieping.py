@@ -1133,7 +1133,11 @@ def combine_all_json(folder: Path):
         for json_file in sorted(bijbel_dir.glob("*_NB.json")):
             try:
                 with open(json_file, 'r', encoding='utf-8') as f:
-                    bijbel_data["naardense_bijbel"].append(json.load(f))
+                    content = json.load(f)
+                    if isinstance(content, list):
+                        bijbel_data["naardense_bijbel"].extend(content)
+                    else:
+                        bijbel_data["naardense_bijbel"].append(content)
             except Exception as e:
                 print(f"  Fout bij lezen NB tekst {json_file.name}: {e}")
 
@@ -1141,7 +1145,11 @@ def combine_all_json(folder: Path):
         for json_file in sorted(bijbel_dir.glob("*_NBV21.json")):
             try:
                 with open(json_file, 'r', encoding='utf-8') as f:
-                    bijbel_data["nbv21"].append(json.load(f))
+                    content = json.load(f)
+                    if isinstance(content, list):
+                        bijbel_data["nbv21"].extend(content)
+                    else:
+                        bijbel_data["nbv21"].append(content)
             except Exception as e:
                 print(f"  Fout bij lezen NBV21 tekst {json_file.name}: {e}")
 
@@ -1149,8 +1157,11 @@ def combine_all_json(folder: Path):
         for json_file in sorted(bijbel_dir.glob("*_Grondtekst.json")):
             try:
                 with open(json_file, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    bijbel_data["grondtekst"].append(data)
+                    content = json.load(f)
+                    if isinstance(content, list):
+                        bijbel_data["grondtekst"].extend(content)
+                    else:
+                        bijbel_data["grondtekst"].append(content)
             except Exception as e:
                 print(f"  Fout bij lezen Grondtekst {json_file.name}: {e}")
         

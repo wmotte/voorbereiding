@@ -241,132 +241,111 @@ def save_nbv21_lezingen(output_dir: Path, context_text: str) -> dict[str, str]:
     for match in matches:
         found_refs_raw.append(match.group(1).strip())
 
-    # Pre-process references to handle semi-colon separators (e.g., "Sefanja 2:3; 3:12-13")
     processed_refs = []
+    # 1. Parse all references first
     for raw_ref in found_refs_raw:
-        # Split by semicolon
+        # Check for complex references with semicolons (e.g., "Sefanja 2:3; 3:12-13")
         parts = raw_ref.split(';')
+        sub_refs = []
         last_book = None
         
-        for i, part in enumerate(parts):
+        for part in parts:
             part = part.strip()
             if not part: continue
             
             # Check if part starts with a book name
             book_match = re.match(r'^(\d?\s*[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)', part)
-            
             if book_match and get_book_code(book_match.group(1)):
                 last_book = book_match.group(1)
-                processed_refs.append(part)
+                sub_refs.append(part)
             elif last_book and re.match(r'^\d+[:]', part):
                 # Starts with chapter:verse, prepend last book
-                processed_refs.append(f"{last_book} {part}")
+                sub_refs.append(f"{last_book} {part}")
             else:
-                # Fallback, just add as is (might be just verses, or unparseable)
-                processed_refs.append(part)
+                # Fallback
+                sub_refs.append(part)
+        
+        processed_refs.append({'original': raw_ref, 'subs': sub_refs})
 
-    for raw_ref in processed_refs:
-        # Check of dit een complexe referentie is met meerdere verse ranges (bijv. "1 Samuel 1,20-22.24-28")
-        # Probeer eerst boek en hoofdstuk te extraheren
-        complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;a-z]+)", raw_ref)
-
-        if complex_match:
-            book_chapter_base = f"{complex_match.group(1).strip()} {complex_match.group(2)}"
-            verse_part = complex_match.group(3)
-
-            # Split verse part op . of ; voor multiple ranges
-            verse_ranges = re.split(r'[.;]', verse_part)
-
-            all_verses = []
-            book_code = None
-            chapter = None
-            original_verse_spec = verse_part  # bewaar originele versnummers voor filename
-
-            for verse_range in verse_ranges:
-                verse_range = verse_range.strip()
-                if not verse_range:
-                    continue
-
-                sub_ref_str = f"{book_chapter_base}:{verse_range}"
-                ref = parse_bijbelreferentie(sub_ref_str)
-
-                if ref and get_book_code(ref.boek):
-                    if book_code is None:
-                        book_code = get_book_code(ref.boek)
-                        chapter = ref.hoofdstuk
-
-                    verses_data = get_nbv21_data(ref)
+    # 2. Fetch and save
+    for item in processed_refs:
+        raw_ref = item['original']
+        sub_refs = item['subs']
+        
+        all_pericopes = []
+        full_ref_key = raw_ref # Use full string as key
+        
+        if full_ref_key in seen_refs: continue
+        
+        for sub_ref_str in sub_refs:
+            # Check for multi-range syntax (e.g. "1, 3-5") in this sub part
+            # Use existing regex for book chapter verses
+            complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüéèöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;a-z]+)", sub_ref_str)
+            
+            if complex_match:
+                book_name = complex_match.group(1).strip()
+                chapter = int(complex_match.group(2))
+                verse_part = complex_match.group(3)
+                
+                # Split verse part on . or , if they imply ranges within same chapter
+                # But here we assume sub_ref_str is already split by semicolon (chapters)
+                # So just handle verses in one chapter
+                verse_ranges = re.split(r'[.,]', verse_part)
+                
+                for v_range in verse_ranges:
+                    v_range = v_range.strip()
+                    if not v_range: continue
+                    
+                    ref_obj = parse_bijbelreferentie(f"{book_name} {chapter}:{v_range}")
+                    if ref_obj and get_book_code(ref_obj.boek):
+                        verses_data = get_nbv21_data(ref_obj)
+                        if verses_data:
+                            all_pericopes.append({
+                                "book": get_book_code(ref_obj.boek),
+                                "chapter": ref_obj.hoofdstuk,
+                                "verses": verses_data,
+                                "translation": "NBV21"
+                            })
+            else:
+                # Fallback for simple parse
+                ref_obj = parse_bijbelreferentie(sub_ref_str)
+                if ref_obj and get_book_code(ref_obj.boek):
+                    verses_data = get_nbv21_data(ref_obj)
                     if verses_data:
-                        all_verses.extend(verses_data)
+                        all_pericopes.append({
+                            "book": get_book_code(ref_obj.boek),
+                            "chapter": ref_obj.hoofdstuk,
+                            "verses": verses_data,
+                            "translation": "NBV21"
+                        })
 
-            if all_verses and book_code:
-                # Unieke verzen, gesorteerd
-                unique_verses = {v['verse']: v for v in all_verses}
-                sorted_verses = sorted(unique_verses.values(), key=lambda x: x['verse'])
-
-                # Referentie string voor seen_refs (met originele verse spec)
-                ref_key = f"{book_chapter_base}:{original_verse_spec}"
-                if ref_key in seen_refs:
-                    continue
-                seen_refs.add(ref_key)
-
-                # Filename met versnummers
-                safe_name = f"{book_chapter_base}_{original_verse_spec}".replace(':', '_').replace(' ', '_')
-                safe_name = re.sub(r'[^\w\-.]', '', safe_name)
-
-                json_path = bijbel_dir / f"{safe_name}_NBV21.json"
-
-                json_data = {
-                    "book": book_code,
-                    "chapter": chapter,
-                    "verses": sorted_verses,
-                    "translation": "NBV21"
-                }
-
-                with open(json_path, 'w', encoding='utf-8') as f:
-                    json.dump(json_data, f, indent=2, ensure_ascii=False)
-
-                print(f"  ✓ NBV21 Opgeslagen: {json_path.name}")
-                resultaten[ref_key] = str(json_path)
-                continue
-
-        # Fallback: enkelvoudige referentie
-        sub_refs = [r.strip() for r in raw_ref.split(',')]
-
-        for sub_ref in sub_refs:
-            if not sub_ref: continue
-
-            ref = parse_bijbelreferentie(sub_ref)
-            if ref and get_book_code(ref.boek):
-                ref_str = str(ref)
-                if ref_str in seen_refs: continue
-
-                seen_refs.add(ref_str)
-                verses_data = get_nbv21_data(ref)
-
-                if verses_data:
-                    # Vervang : en spaties door underscores voor een veilige bestandsnaam
-                    safe_name = str(ref).replace(':', '_').replace(' ', '_')
-                    # Verwijder overige vreemde tekens
-                    safe_name = re.sub(r'[^\w-]', '', safe_name)
-
-                    # Suffix _NBV21 om conflict met Naardense te voorkomen
-                    json_path = bijbel_dir / f"{safe_name}_NBV21.json"
-
-                    json_data = {
-                        "book": get_book_code(ref.boek),
-                        "chapter": ref.hoofdstuk,
-                        "verses": verses_data,
-                        "translation": "NBV21"
-                    }
-
-                    with open(json_path, 'w', encoding='utf-8') as f:
-                        json.dump(json_data, f, indent=2, ensure_ascii=False)
-
-                    print(f"  ✓ NBV21 Opgeslagen: {json_path.name}")
-                    resultaten[ref_str] = str(json_path)
-                else:
-                    print(f"  ✗ NBV21 Niet gevonden: {ref}")
+        if all_pericopes:
+            seen_refs.add(full_ref_key)
+            
+            # Filename generation based on the full original string (sanitized)
+            safe_name = raw_ref.replace(':', '_').replace(' ', '_').replace(';', '_')
+            safe_name = re.sub(r'[^\w\-.]', '', safe_name)
+            # Limit length
+            if len(safe_name) > 50: safe_name = safe_name[:50]
+            
+            json_path = bijbel_dir / f"{safe_name}_NBV21.json"
+            
+            # If we have only one pericope, save as object (backward compat for clean single files)
+            # But wait, user wants consistency. The loader now supports list.
+            # Let's save as list if > 1, else object? 
+            # No, if I save as object, the loader appends it. If list, loader extends it. 
+            # Both result in flat list in combined_output.
+            # So it doesn't matter for the structure, but "one file" matters.
+            
+            final_data = all_pericopes if len(all_pericopes) > 1 else all_pericopes[0]
+            
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump(final_data, f, indent=2, ensure_ascii=False)
+                
+            print(f"  ✓ NBV21 Opgeslagen: {json_path.name}")
+            resultaten[full_ref_key] = str(json_path)
+        else:
+             print(f"  ✗ NBV21 Niet gevonden of incompleet: {raw_ref}")
 
     return resultaten
 
