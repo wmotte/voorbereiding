@@ -2859,7 +2859,13 @@
                     html += `<div class="focus-section">`;
                     html += `<div class="focus-section-title">Focus</div>`;
                     // Show the complete focus sentence with the beginning part if not already included
-                    let focusContent = optie.focus.inhoud || '';
+                    let focusContent = '';
+                    if (typeof optie.focus === 'string') {
+                        focusContent = optie.focus;
+                    } else if (typeof optie.focus === 'object' && optie.focus.inhoud) {
+                        focusContent = optie.focus.inhoud;
+                    }
+                    
                     if (focusContent && !focusContent.startsWith('Ik wil op grond van mijn exegese')) {
                         focusContent = `Ik wil op grond van mijn exegese van de tekst voor deze hoorders (in ${jsonData['00_meta']?.plaatsnaam || ''}, ${jsonData['00_meta']?.gemeente || ''}), in hun context, in deze dienst zeggen dat: ${focusContent}`;
                     }
@@ -2870,16 +2876,37 @@
 
                 // Right column: Anticipatie and Functie sections (usually longer content)
                 html += `<div style="display: flex; flex-direction: column; gap: 10px;">`;
-                if (optie.anticipatie) {
+                
+                // Anticipatie logic
+                if (optie.anticipatie || optie.anticipatie_analyse) {
                     html += `<div class="focus-section">`;
                     html += `<div class="focus-section-title">Anticipatie</div>`;
                     html += `<div class="focus-section-content">`;
-                    if (optie.anticipatie.weerstand) html += `<div style="margin-bottom: 6px;"><strong>Weerstand:</strong> ${processText(optie.anticipatie.weerstand)}</div>`;
-                    if (optie.anticipatie.herkenning) html += `<div style="margin-bottom: 6px;"><strong>Herkenning:</strong> ${processText(optie.anticipatie.herkenning)}</div>`;
-                    if (optie.anticipatie.vragen && optie.anticipatie.vragen.length) {
-                        html += `<div><strong>Vragen:</strong><ul style="margin: 4px 0 0 16px;">`;
-                        optie.anticipatie.vragen.forEach(v => html += `<li>${processText(v)}</li>`);
-                        html += `</ul></div>`;
+                    
+                    // 1. Render main string description if available
+                    let anticipatieText = '';
+                    if (typeof optie.anticipatie === 'string') {
+                        anticipatieText = optie.anticipatie;
+                    } else if (typeof optie.anticipatie === 'object' && optie.anticipatie.inhoud) {
+                         anticipatieText = optie.anticipatie.inhoud;
+                    }
+
+                    if (anticipatieText) {
+                         html += `<div style="margin-bottom: 10px; font-style: italic;">${processText(anticipatieText)}</div>`;
+                    }
+
+                    // 2. Render analysis breakdown (weerstand, herkenning, vragen)
+                    // Check both optie.anticipatie (legacy object) and optie.anticipatie_analyse (new separate object)
+                    const analyse = optie.anticipatie_analyse || (typeof optie.anticipatie === 'object' ? optie.anticipatie : null);
+                    
+                    if (analyse) {
+                        if (analyse.weerstand) html += `<div style="margin-bottom: 6px;"><strong>Weerstand:</strong> ${processText(analyse.weerstand)}</div>`;
+                        if (analyse.herkenning) html += `<div style="margin-bottom: 6px;"><strong>Herkenning:</strong> ${processText(analyse.herkenning)}</div>`;
+                        if (analyse.vragen && analyse.vragen.length) {
+                            html += `<div><strong>Vragen:</strong><ul style="margin: 4px 0 0 16px;">`;
+                            analyse.vragen.forEach(v => html += `<li>${processText(v)}</li>`);
+                            html += `</ul></div>`;
+                        }
                     }
                     html += `</div></div>`;
                 }
@@ -2888,7 +2915,13 @@
                     html += `<div class="focus-section">`;
                     html += `<div class="focus-section-title">Functie</div>`;
                     // Show the complete functie sentence with the beginning part if not already included
-                    let functieContent = optie.functie.beoogd_effect || '';
+                    let functieContent = '';
+                    if (typeof optie.functie === 'string') {
+                        functieContent = optie.functie;
+                    } else if (typeof optie.functie === 'object' && optie.functie.beoogd_effect) {
+                        functieContent = optie.functie.beoogd_effect;
+                    }
+
                     if (functieContent && !functieContent.startsWith('...waarmee ik rekening houd')) {
                         functieContent = `...waarmee ik rekening houd om te komen tot het doel dat de hoorders: ${functieContent}`;
                     }
