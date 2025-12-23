@@ -71,8 +71,6 @@ Hieronder vind je 10 willekeurige voorbeelden uit het werk van Brueggemann.
 
 ## DEEL IV: DE VIJF GEBEDEN IN PROFETISCH PERSPECTIEF
 
-## DEEL IV: DE VIJF GEBEDEN IN PROFETISCH PERSPECTIEF
-
 **ALGEMENE EIS:** Profetisch bidden vergt tijd. Raffel het niet af. Gebruik "liturgische traagheid" om de woorden te laten landen.
 
 ### 4.1 Drempelgebed: De Breuk met het Imperium
@@ -142,7 +140,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "type": "epiclese",
       "aanspraak": "string",
       "focus": "doorbreken_verbeelding",
-      "tekst": "string - de volledige gebedstekst (100-150 woorden). Focus: openbreken van gesloten scenario's.",
+      "tekst": "string - de volledige gebedstekst (150-200 woorden). Focus: openbreken van gesloten scenario's.",
       "echo_schriftlezing": "string",
       "amen": true
     },
@@ -150,7 +148,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "type": "dankgebed",
       "aanspraak": "string",
       "verbinding_verkondiging": "string",
-      "tekst": "string - de volledige gebedstekst (MINIMAAL 200-300 woorden). Focus: verrassing, gift, nieuwe oriëntatie.",
+      "tekst": "string - de volledige gebedstekst (MINIMAAL 300-400 woorden). Focus: verrassing, gift, nieuwe oriëntatie.",
       "echo_schriftlezing": "string",
       "amen": true
     },
@@ -160,19 +158,19 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "cirkels": {
         "wereld": {
           "themas": ["string"],
-          "tekst": "string - LANG en UITGEBREID (min. 100 woorden). Focus: geopolitiek, macht, slachtoffers."
+          "tekst": "string - LANG en UITGEBREID (min. 200 woorden). Focus: geopolitiek, macht, slachtoffers."
         },
         "kerk": {
           "themas": ["string"],
-          "tekst": "string - LANG en UITGEBREID (min. 100 woorden). Focus: alternatieve gemeenschap."
+          "tekst": "string - LANG en UITGEBREID (min. 200 woorden). Focus: alternatieve gemeenschap."
         },
         "naasten": {
           "themas": ["string"],
-          "tekst": "string - LANG en UITGEBREID (min. 100 woorden). Focus: concrete pijn en solidariteit."
+          "tekst": "string - LANG en UITGEBREID (min. 200 woorden). Focus: concrete pijn en solidariteit."
         },
         "eigen_gemeente": {
           "themas": ["string"],
-          "tekst": "string - LANG en UITGEBREID (min. 100 woorden). Focus: lokale context {{plaatsnaam}}."
+          "tekst": "string - LANG en UITGEBREID (min. 200 woorden). Focus: lokale context {{plaatsnaam}}."
         }
       },
       "stilte_instructie": "string",
