@@ -45,64 +45,12 @@ Kies één lezing die centraal staat. Zoek naar de tekst die de beste mogelijkhe
 
 ---
 
-### Stap 2: Homiletische Fundering (Bryan Chapell)
-
-Voordat je de narratieve structuur (de plot) bouwt, moet de theologische kern helder zijn. Gebruik de inzichten van Bryan Chapell om de exegetische bevindingen te vertalen naar een homiletisch raamwerk.
-
-**DEFINITIES & METHODIEK:**
-
-*   **Fallen Condition Focus (FCF):**
-    *   *Definitie:* De FCF is het "aspect van de menselijke gebrokenheid of zondigheid dat de tekst adresseert" en de reden vormt *waarom* de tekst geschreven is. Het is de "gemeenschappelijke menselijke conditie die hedendaagse gelovigen delen met de oorspronkelijke hoorders, een conditie die de genade van de passage vereist."
-    *   *Reikwijdte:* De FCF is niet beperkt tot expliciete morele overtredingen (zonden). Het omvat de hele breedte van het leven in een gevallen schepping: lijden, verdriet, angst, sterfelijkheid, onvermogen, schaamte, en gebroken relaties.
-    *   *Functie:* Het identificeren van de FCF beantwoordt de vraag: "Welk probleem lost deze tekst op?" of "Welke nood lenigt God hier?" Het vormt de existentiële brug tussen de antieke tekst en de moderne hoorder.
-
-*   **Christocentrische Duiding (Redemptive Disclosure):**
-    *   *Doel:* Elke tekst onthult een aspect van Gods verlossende plan dat uiteindelijk in Christus wordt vervuld. Het gaat om de *verlossingshistorische functie* van de tekst.
-    *   *Categorieën:* Gebruik de volgende categorieën om de relatie tot Christus te duiden:
-        1.  **Predictive (Voorspellend):** Directe messiaanse profetieën of typologie die expliciet naar de toekomst wijst. *Focus: Gods trouw aan Zijn beloften.*
-        2.  **Preparatory (Voorbereidend):** Teksten die de menselijke nood zo scherp diagnosticeren (vaak via de Wet) dat de onmogelijkheid van zelfverlossing duidelijk wordt, of die concepten van offer en priesterschap introduceren. *Focus: De noodzaak van genade.*
-        3.  **Reflective (Reflecterend):** Teksten die Gods verlossende aard (Zijn *hesed*, trouw, almacht, rechtvaardigheid) tonen. Omdat Christus de perfecte afbeelding van de Vader is, zien we in Gods handelen in het OT de contouren van Christus' bediening. *Focus: Gods karakter als Redder.*
-        4.  **Resultant (Resulterend):** Teksten die ethisch gedrag, lofprijzing of gebed beschrijven als de *vrucht* en *dankbare reactie* op reeds ontvangen genade. *Focus: Gehoorzaamheid als dankbaarheid.*
-
-*   **Genade vs. Moralisme (Chemie van het hart):** De motivatie voor verandering mag niet angst of plicht zijn, maar de ervaring van Gods liefde (genade). De indicatief fundeert de imperatief.
-*   **F-O-R-M Structuur:** Een expositorische preek volgt de tekst.
-    *   **F**aithful: Trouw aan de tekst.
-    *   **O**bvious: Duidelijk afgeleid uit de tekst (geen inlegkunde).
-    *   **R**elated to FCF: Elk punt adresseert de nood.
-    *   **M**oving toward climax: Een beweging naar de verkondiging van Christus.
-*   **De Dubbele Helix (3 Componenten):** Tekstverklaring en toepassing staan niet los van elkaar. Elk hoofdpunt in het raamwerk moet bestaan uit:
-    1.  **Verklaring:** Wat zegt de tekst? (Exegese)
-    2.  **Illustratie:** Maak het zichtbaar/voelbaar ("lived-body detail").
-    3.  **Toepassing:** Wat betekent dit voor de FCF van de hoorder?
-
-**Opdracht:**
-
-1.  **Bepaal de FCF:**
-    - Wat was de crisis, nood of zonde die de aanleiding vormde voor deze tekst?
-    - **EIS:** Beschrijf dit in minimaal 75 woorden. Verbind de algemene menselijke nood *expliciet* aan de specifieke context van {{plaatsnaam}} (bijv. prestatiedruk, eenzaamheid, controlebehoefte).
-    - Benoem concreet wat wij vandaag gemeenschappelijk hebben met de oorspronkelijke hoorders. Formuleer dit als een menselijke nood die schreeuwt om goddelijke tussenkomst.
-
-2.  **Christocentrische Duiding:**
-    - Kies de meest passende categorie (Predictive, Preparatory, Reflective, Resultant) en onderbouw dit vanuit de tekst.
-    - **EIS:** Beschrijf in minimaal 75 woorden hoe deze tekst ons blikveld richt op het werk of de persoon van Christus. Vermijd oppervlakkige clichés; toon de theologische diepte.
-
-3.  **Motivatie en Genade:**
-    - Analyseer de verhouding tussen indicatief (genade) en imperatief (opdracht).
-    - **EIS:** Leg in minimaal 75 woorden uit hoe de genade in deze tekst zorgt voor de "chemie van het hart". Hoe bevrijdt dit de hoorder van moralisme ("ik moet beter mijn best doen")?
-
-4.  **Expositorisch Raamwerk (F-O-R-M):**
-    - Ontwerp 2 of 3 hoofdpunten die direct uit de tekst komen.
-    - Zorg dat elk punt de FCF adresseert en toewerkt naar de climax (Christus).
-    - Geef per punt een suggestie voor een **illustratie** die het "lived-body detail" bevat.
-
----
-
-### Stap 3: De vijf stadia van de Homiletical Plot
+### Stap 2: De vijf stadia van de Homiletical Plot
 
 Werk de preekschets uit in vijf stappen.
 
 **CRUCIALE INSTRUCTIE: SHOW, DON'T TELL**
-Vertaal de theologische inzichten uit Stap 2 (Chapell) naar een **narratieve ervaring**.
+Vertaal de theologische inzichten uit Stap 3 (Chapell) naar een **narratieve ervaring**.
 *   **FCF:** Zeg niet "de FCF is eenzaamheid", maar *beschrijf* een situatie waarin de hoorder die eenzaamheid voelt.
 *   **Christocentrisch:** Preek geen abstracte christologie, maar *teken* Jezus die handelt in de tekst.
 *   **Genade:** Leg de leer van genade niet uit, maar *laat zien* wat het doet met een mens als de druk wegvalt.
@@ -165,6 +113,58 @@ Kies en benoem expliciet een type omkering:
 
 ---
 
+### Stap 3: Homiletische Fundering (Bryan Chapell)
+
+Gebruik de inzichten van Bryan Chapell om de exegetische bevindingen te vertalen naar een homiletisch raamwerk dat de theologische basis vormt voor de preek.
+
+**DEFINITIES & METHODIEK:**
+
+*   **Fallen Condition Focus (FCF):**
+    *   *Definitie:* De FCF is het "aspect van de menselijke gebrokenheid of zondigheid dat de tekst adresseert" en de reden vormt *waarom* de tekst geschreven is. Het is de "gemeenschappelijke menselijke conditie die hedendaagse gelovigen delen met de oorspronkelijke hoorders, een conditie die de genade van de passage vereist."
+    *   *Reikwijdte:* De FCF is niet beperkt tot expliciete morele overtredingen (zonden). Het omvat de hele breedte van het leven in een gevallen schepping: lijden, verdriet, angst, sterfelijkheid, onvermogen, schaamte, en gebroken relaties.
+    *   *Functie:* Het identificeren van de FCF beantwoordt de vraag: "Welk probleem lost deze tekst op?" of "Welke nood lenigt God hier?" Het vormt de existentiële brug tussen de antieke tekst en de moderne hoorder.
+
+*   **Christocentrische Duiding (Redemptive Disclosure):**
+    *   *Doel:* Elke tekst onthult een aspect van Gods verlossende plan dat uiteindelijk in Christus wordt vervuld. Het gaat om de *verlossingshistorische functie* van de tekst.
+    *   *Categorieën:* Gebruik de volgende categorieën om de relatie tot Christus te duiden:
+        1.  **Predictive (Voorspellend):** Directe messiaanse profetieën of typologie die expliciet naar de toekomst wijst. *Focus: Gods trouw aan Zijn beloften.*
+        2.  **Preparatory (Voorbereidend):** Teksten die de menselijke nood zo scherp diagnosticeren (vaak via de Wet) dat de onmogelijkheid van zelfverlossing duidelijk wordt, of die concepten van offer en priesterschap introduceren. *Focus: De noodzaak van genade.*
+        3.  **Reflective (Reflecterend):** Teksten die Gods verlossende aard (Zijn *hesed*, trouw, almacht, rechtvaardigheid) tonen. Omdat Christus de perfecte afbeelding van de Vader is, zien we in Gods handelen in het OT de contouren van Christus' bediening. *Focus: Gods karakter als Redder.*
+        4.  **Resultant (Resulterend):** Teksten die ethisch gedrag, lofprijzing of gebed beschrijven als de *vrucht* en *dankbare reactie* op reeds ontvangen genade. *Focus: Gehoorzaamheid als dankbaarheid.*
+
+*   **Genade vs. Moralisme (Chemie van het hart):** De motivatie voor verandering mag niet angst of plicht zijn, maar de ervaring van Gods liefde (genade). De indicatief fundeert de imperatief.
+*   **F-O-R-M Structuur:** Een expositorische preek volgt de tekst.
+    *   **F**aithful: Trouw aan de tekst.
+    *   **O**bvious: Duidelijk afgeleid uit de tekst (geen inlegkunde).
+    *   **R**elated to FCF: Elk punt adresseert de nood.
+    *   **M**oving toward climax: Een beweging naar de verkondiging van Christus.
+*   **De Dubbele Helix (3 Componenten):** Tekstverklaring en toepassing staan niet los van elkaar. Elk hoofdpunt in het raamwerk moet bestaan uit:
+    1.  **Verklaring:** Wat zegt de tekst? (Exegese)
+    2.  **Illustratie:** Maak het zichtbaar/voelbaar ("lived-body detail").
+    3.  **Toepassing:** Wat betekent dit voor de FCF van de hoorder?
+
+**Opdracht:**
+
+1.  **Bepaal de FCF:**
+    - Wat was de crisis, nood of zonde die de aanleiding vormde voor deze tekst?
+    - **EIS:** Beschrijf dit in minimaal 75 woorden. Verbind de algemene menselijke nood *expliciet* aan de specifieke context van {{plaatsnaam}} (bijv. prestatiedruk, eenzaamheid, controlebehoefte).
+    - Benoem concreet wat wij vandaag gemeenschappelijk hebben met de oorspronkelijke hoorders. Formuleer dit als een menselijke nood die schreeuwt om goddelijke tussenkomst.
+
+2.  **Christocentrische Duiding:**
+    - Kies de meest passende categorie (Predictive, Preparatory, Reflective, Resultant) en onderbouw dit vanuit de tekst.
+    - **EIS:** Beschrijf in minimaal 75 woorden hoe deze tekst ons blikveld richt op het werk of de persoon van Christus. Vermijd oppervlakkige clichés; toon de theologische diepte.
+
+3.  **Motivatie en Genade:**
+    - Analyseer de verhouding tussen indicatief (genade) en imperatief (opdracht).
+    - **EIS:** Leg in minimaal 75 woorden uit hoe de genade in deze tekst zorgt voor de "chemie van het hart". Hoe bevrijdt dit de hoorder van moralisme ("ik moet beter mijn best doen")?
+
+4.  **Expositorisch Raamwerk (F-O-R-M):**
+    - Ontwerp 2 of 3 hoofdpunten die direct uit de tekst komen.
+    - Zorg dat elk punt de FCF adresseert en toewerkt naar de climax (Christus).
+    - Geef per punt een suggestie voor een **illustratie** die het "lived-body detail" bevat.
+
+---
+
 ## Gewenste output
 
 Lever een gedetailleerde preekschets op met de volgende **strikte opmaakregels**:
@@ -176,11 +176,13 @@ Lever een gedetailleerde preekschets op met de volgende **strikte opmaakregels**
 ### Structuur van de schets:
 
 1.  **Onderbouwing tekstkeuze** (ca. 100-150 woorden) met focus op potentie voor omkering.
-2.  **De 5 stadia uitgewerkt**:
+2.  **De 5 stadia uitgewerkt (Lowry)**:
     -   Per stadium ca. 300 woorden.
     -   **Toon in Stap 2 expliciet de gevolgde "Waarom-keten".**
     -   **Benoem in Stap 3 expliciet welk type omkering wordt gebruikt.**
     -   Zorg voor naadloze transities die visueel duidelijk gemarkeerd zijn.
+3.  **Homiletische Fundering (Chapell)**:
+    -   Uitwerking van FCF, Christocentrische duiding en expositorisch raamwerk.
 
 **Totale omvang:** ca. 1500 - 2000 woorden.
 
@@ -198,40 +200,6 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
     "gekozen_lezing": "string - referentie van de centrale tekst",
     "onderbouwing": "string - 100-150 woorden waarom deze tekst centraal staat",
     "omkerings_potentie": "string - waar zit de potentie voor een reversal?"
-  },
-  "homiletische_brug_chapell": {
-    "fcf": {
-      "beschrijving": "string - MINIMAAL 75 woorden. Beschrijf de FCF diepgaand en verbind deze expliciet aan de specifieke context van {{plaatsnaam}}.",
-      "waarom_vraag": "string - Welk existentieel probleem lost deze tekst op?"
-    },
-    "christocentrische_duiding": {
-      "categorie": "string - Predictive|Preparatory|Reflective|Resultant",
-      "uitleg": "string - MINIMAAL 75 woorden. Hoe onthult deze tekst Gods verlossingsplan? Wees theologisch precies."
-    },
-    "motivatie_genade": {
-      "genade_indicatief": "string - Wat God gedaan heeft (de objectieve basis)",
-      "motivatie_heiliging": "string - MINIMAAL 75 woorden. Hoe leidt dit tot 'chemie van het hart' en bevrijding van moralisme?"
-    },
-    "expositorisch_raamwerk": {
-      "hoofdpunt_1": {
-        "tekst_basis": "string - Vers/gedeelte waar dit op rust (Faithful/Obvious)",
-        "illustratie_idee": "string - Beeld/voorbeeld ('lived-body detail')",
-        "relatie_fcf": "string - Hoe raakt dit punt de nood? (Related)",
-        "beweging": "string - Hoe leidt dit punt naar de oplossing? (Moving)"
-      },
-      "hoofdpunt_2": {
-        "tekst_basis": "string",
-        "illustratie_idee": "string",
-        "relatie_fcf": "string",
-        "beweging": "string"
-      },
-      "hoofdpunt_3": {
-        "tekst_basis": "string (optioneel)",
-        "illustratie_idee": "string (optioneel)",
-        "relatie_fcf": "string",
-        "beweging": "string"
-      }
-    }
   },
   "homiletical_plot": {
     "he_kwestie_oops": {
@@ -275,6 +243,40 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "inhoud": "string - ~300 woorden, het uitvouwen van de nieuwe realiteit",
       "klein_en_dichtbij": "string - concrete, intieme details (ontbijttafel, wijkcentrum, ziekenhuisbed)",
       "geen_eisenlijst": "boolean - true als het geen werkheiligheid is geworden"
+    }
+  },
+  "homiletische_brug_chapell": {
+    "fcf": {
+      "beschrijving": "string - MINIMAAL 75 words. Beschrijf de FCF diepgaand en verbind deze expliciet aan de specifieke context van {{plaatsnaam}}.",
+      "waarom_vraag": "string - Welk existentieel probleem lost deze tekst op?"
+    },
+    "christocentrische_duiding": {
+      "categorie": "string - Predictive|Preparatory|Reflective|Resultant",
+      "uitleg": "string - MINIMAAL 75 words. Hoe onthult deze tekst Gods verlossingsplan? Wees theologisch precies."
+    },
+    "motivatie_genade": {
+      "genade_indicatief": "string - Wat God gedaan heeft (de objectieve basis)",
+      "motivatie_heiliging": "string - MINIMAAL 75 words. Hoe leidt dit tot 'chemie van het hart' en bevrijding van moralisme?"
+    },
+    "expositorisch_raamwerk": {
+      "hoofdpunt_1": {
+        "tekst_basis": "string - Vers/gedeelte waar dit op rust (Faithful/Obvious)",
+        "illustratie_idee": "string - Beeld/voorbeeld ('lived-body detail')",
+        "relatie_fcf": "string - Hoe raakt dit punt de nood? (Related)",
+        "beweging": "string - Hoe leidt dit punt naar de oplossing? (Moving)"
+      },
+      "hoofdpunt_2": {
+        "tekst_basis": "string",
+        "illustratie_idee": "string",
+        "relatie_fcf": "string",
+        "beweging": "string"
+      },
+      "hoofdpunt_3": {
+        "tekst_basis": "string (optioneel)",
+        "illustratie_idee": "string (optioneel)",
+        "relatie_fcf": "string",
+        "beweging": "string"
+      }
     }
   },
   "logica_check": {
