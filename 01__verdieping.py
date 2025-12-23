@@ -433,13 +433,17 @@ def get_gemini_client() -> genai.Client:
     return genai.Client(api_key=api_key)
 
 
-def build_context_string(previous_analyses: dict, limited: bool = False) -> str:
+def build_context_string(previous_analyses: dict, limited: bool = False, excluded_sections: list = None) -> str:
     """Bouw een context string van vorige analyses.
 
     Args:
         previous_analyses: Dictionary met alle analyses
         limited: Als True, alleen sociaal-maatschappelijke context voor hoordersprofielen
+        excluded_sections: Lijst met sleutels die uitgesloten moeten worden (bv. 'kunst_cultuur')
     """
+    if excluded_sections is None:
+        excluded_sections = []
+
     sections = []
 
     if previous_analyses.get("liturgische_context"):
@@ -466,39 +470,39 @@ def build_context_string(previous_analyses: dict, limited: bool = False) -> str:
     if limited:
         return "\n\n---\n\n".join(sections)
 
-    if previous_analyses.get("wereldnieuws"):
+    if previous_analyses.get("wereldnieuws") and "wereldnieuws" not in excluded_sections:
         sections.append("## Actueel Wereldnieuws\n\n" +
                        previous_analyses["wereldnieuws"])
 
-    if previous_analyses.get("politieke_orientatie"):
+    if previous_analyses.get("politieke_orientatie") and "politieke_orientatie" not in excluded_sections:
         sections.append("## Politieke Oriëntatie\n\n" +
                        previous_analyses["politieke_orientatie"])
 
-    if previous_analyses.get("exegese"):
+    if previous_analyses.get("exegese") and "exegese" not in excluded_sections:
         sections.append("## Exegese\n\n" +
                        previous_analyses["exegese"])
 
-    if previous_analyses.get("kunst_cultuur"):
-        sections.append("## Kunst en Cultuur\n\n" +
+    if previous_analyses.get("kunst_cultuur") and "kunst_cultuur" not in excluded_sections:
+        sections.append("## Kunst & Cultuur\n\n" +
                        previous_analyses["kunst_cultuur"])
 
-    if previous_analyses.get("focus_en_functie"):
+    if previous_analyses.get("focus_en_functie") and "focus_en_functie" not in excluded_sections:
         sections.append("## Focus en Functie\n\n" +
                        previous_analyses["focus_en_functie"])
 
-    if previous_analyses.get("kalender"):
+    if previous_analyses.get("kalender") and "kalender" not in excluded_sections:
         sections.append("## Kalender\n\n" +
                        previous_analyses["kalender"])
 
-    if previous_analyses.get("representatieve_hoorders"):
+    if previous_analyses.get("representatieve_hoorders") and "representatieve_hoorders" not in excluded_sections:
         sections.append("## Representatieve Hoorders\n\n" +
                        previous_analyses["representatieve_hoorders"])
 
-    if previous_analyses.get("homiletische_analyse"):
+    if previous_analyses.get("homiletische_analyse") and "homiletische_analyse" not in excluded_sections:
         sections.append("## Homiletische Analyse\n\n" +
                        previous_analyses["homiletische_analyse"])
 
-    if previous_analyses.get("gebeden"):
+    if previous_analyses.get("gebeden") and "gebeden" not in excluded_sections:
         sections.append("## Gebeden\n\n" +
                        previous_analyses["gebeden"])
 
@@ -1000,9 +1004,15 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         # Bouw prompt
         task_prompt = load_prompt(f"{name}.md", user_input, extra_replacements)
 
-        # Voor representatieve hoorders: beperkte context (geen exegese, kunst, kalender)
+        # Context bepalen
         if name == "12_representatieve_hoorders":
             analysis_context = build_context_string(previous_analyses, limited=True)
+        elif name.startswith("14_gebeden"):
+            # Voor gebeden: geen kunst/cultuur, kalender, hoorders
+            analysis_context = build_context_string(
+                previous_analyses, 
+                excluded_sections=["kunst_cultuur", "kalender", "representatieve_hoorders"]
+            )
         else:
             analysis_context = context_string
 
