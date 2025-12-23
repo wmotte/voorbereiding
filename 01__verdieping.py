@@ -60,9 +60,15 @@ SCRIPT_DIR = Path(__file__).parent.resolve()
 OUTPUT_DIR = SCRIPT_DIR / "output"
 PROMPTS_DIR = SCRIPT_DIR / "prompts"
 
+# Solle constanten
+SERMON_MAGIC = b'SOLLE01'
+SERMON_VERSION = 1
+SERMON_XOR_KEY = b'DorotheeS\xc3\xb6lle1929-2003MystiekEnVerzet'
+SERMON_DATA_FILE = SCRIPT_DIR / "solle_sermons.dat"
+
 # Model keuze: Gemini 3 flash als primair, pro als fallback
-#MODEL_NAME = "gemini-3-flash-preview"
-MODEL_NAME = "gemini-3-pro-preview"
+MODEL_NAME = "gemini-3-flash-preview"
+#MODEL_NAME = "gemini-3-pro-preview"
 MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
@@ -116,6 +122,94 @@ def sample_dialogische_gebeden(n: int = 10) -> str:
                     output_parts.append(f"### Voorbeeld {i}: {title}\n\n{text}")
         except Exception as e:
             print(f"Fout bij lezen voorbeeld {file_path.name}: {e}")
+
+    return "\n\n".join(output_parts)
+
+
+def sample_jungel_preken(n: int = 5) -> str:
+    """Selecteer willekeurige preken uit de Jüngel preken map."""
+    jungel_dir = SCRIPT_DIR / "preken_jungel"
+    if not jungel_dir.exists():
+        return "Geen voorbeeldpreken van Jüngel gevonden."
+
+    files = list(jungel_dir.glob("*.json"))
+    if not files:
+        return "Geen voorbeeldpreken van Jüngel gevonden."
+
+    selected_files = random.sample(files, min(n, len(files)))
+    
+    output_parts = []
+    for i, file_path in enumerate(selected_files, 1):
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                title = data.get("schriftgedeelte", "Naamloos")
+                text = data.get("tekst", "")
+                if text:
+                    output_parts.append(f"### Voorbeeld {i}: {title}\n\n{text}")
+        except Exception as e:
+            print(f"Fout bij lezen Jüngel voorbeeld {file_path.name}: {e}")
+
+    return "\n\n".join(output_parts)
+
+
+def _xor_bytes(data: bytes, key: bytes) -> bytes:
+    """Apply XOR operation to data with key."""
+    key_len = len(key)
+    return bytes(b ^ key[i % key_len] for i, b in enumerate(data))
+
+
+def _load_sermons_from_binary(binary_file: Path) -> list[dict]:
+    """Load all sermons from the binary data file."""
+    import struct
+    import zlib
+    sermons = []
+
+    if not binary_file.exists():
+        return sermons
+
+    try:
+        with open(binary_file, 'rb') as f:
+            # Read and verify header
+            magic = f.read(len(SERMON_MAGIC))
+            if magic != SERMON_MAGIC:
+                return sermons
+
+            version = struct.unpack('<B', f.read(1))[0]
+            if version != SERMON_VERSION:
+                return sermons
+
+            count = struct.unpack('<H', f.read(2))[0]
+
+            # Read each sermon
+            for _ in range(count):
+                length = struct.unpack('<I', f.read(4))[0]
+                obfuscated = f.read(length)
+                compressed = _xor_bytes(obfuscated, SERMON_XOR_KEY)
+                json_bytes = zlib.decompress(compressed)
+                sermon = json.loads(json_bytes.decode('utf-8'))
+                sermons.append(sermon)
+    except Exception as e:
+        print(f"Fout bij inladen Sölle preken: {e}")
+
+    return sermons
+
+
+def sample_solle_preken(n: int = 5) -> str:
+    """Selecteer willekeurige preken uit het binaire bestand."""
+    all_sermons = _load_sermons_from_binary(SERMON_DATA_FILE)
+    if not all_sermons:
+        return "Geen voorbeeldpreken van Sölle gevonden."
+
+    selected = random.sample(all_sermons, min(n, len(all_sermons)))
+    
+    output_parts = []
+    for i, data in enumerate(selected, 1):
+        title = data.get("title", "Naamloos")
+        scripture = data.get("scripture", "")
+        text = data.get("text", "")
+        if text:
+            output_parts.append(f"### Voorbeeld {i}: {title} ({scripture})\n\n{text}")
 
     return "\n\n".join(output_parts)
 
@@ -790,6 +884,8 @@ def update_summary(output_dir: Path):
                 ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
                 ("14_gebeden", "Gebeden voor de Eredienst"),
                 ("15_kindermoment", "Kindermoment"),
+                ("16_preek_solle", "Preek in de stijl van Sölle"),
+                ("17_preek_jungel", "Preek in de stijl van Jüngel"),
             ]
 
             existing_names = [a.get("name") for a in data.get("analyses", [])]
@@ -822,6 +918,8 @@ def update_summary(output_dir: Path):
             ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
             ("14_gebeden", "Gebeden voor de Eredienst"),
             ("15_kindermoment", "Kindermoment"),
+            ("16_preek_solle", "Preek in de stijl van Sölle"),
+            ("17_preek_jungel", "Preek in de stijl van Jüngel"),
         ]
 
         for name, title in new_analyses:
@@ -963,6 +1061,8 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
         ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
         ("15_kindermoment", "Kindermoment"),
+        ("16_preek_solle", "Preek in de stijl van Sölle"),
+        ("17_preek_jungel", "Preek in de stijl van Jüngel"),
     ]
 
     if args.exegese:
@@ -1009,6 +1109,12 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         elif name == "14_gebeden_dialogisch":
             print("  Willekeurige dialogische voorbeeldgebeden selecteren...")
             extra_replacements["voorbeeld_gebeden"] = sample_dialogische_gebeden()
+        elif name == "16_preek_solle":
+            print("  Willekeurige voorbeeldpreken van Sölle selecteren...")
+            extra_replacements["voorbeeld_gebeden"] = sample_solle_preken()
+        elif name == "17_preek_jungel":
+            print("  Willekeurige voorbeeldpreken van Jüngel selecteren...")
+            extra_replacements["voorbeeld_gebeden"] = sample_jungel_preken()
 
         # Bouw prompt
         task_prompt = load_prompt(f"{name}.md", user_input, extra_replacements)
