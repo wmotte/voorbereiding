@@ -19,7 +19,7 @@ Een cruciaal aspect van Brueggemanns theologie is zijn weigering om God te reduc
 Deze Godsopvatting erkent een fundamentele spanning tussen de verbondstrouw van God en de goddelijke vrijheid. Gebed is in deze visie geen eenrichtingsverkeer van nederige verzoeken, maar een krachtige dialoog waarin de mens God herinnert aan zijn eigen beloften en eisen stelt die gebaseerd zijn op Gods karakter als rechtvaardige bevrijder. Brueggemann gelooft dat God niet op dezelfde manier handelt of we bidden of niet; gebed oefent invloed uit op Gods handelen en zelfs op Zijn existentie in de wereld.
 
 | Theologisch Concept | Betekenis in de context van gebed |
-| :---- | :---- | :---- |
+| :--- | :--- |
 | Profetische Verbeelding | Het vermogen om een wereld te verbeelden voorbij de gegeven feiten. |
 | Koninklijke Bewustheid | De dominante cultuur van ontkenning, hebzucht en macht. |
 | Verbondstrouw | De bindende toezegging van God aan Zijn schepping en volk. |
@@ -101,7 +101,7 @@ De gebeden hebben een scherpe sociale kant en bevatten vaak directe verwijzingen
 In gebeden zoals *The Noise of Politics* (2008) spreekt hij over de contradictie tussen onze technologische en militaire superioriteit en de kwetsbaarheid van het evangelie. Hij bidt temidden van "jouwende demonstranten" en "stijgende jets", en vraagt God om "langs te komen en nieuw te maken", zelfs als dat risico's met zich meebrengt voor onze eigen bevoorrechting.
 
 | Maatschappelijk Aspect | Profetische Kritiek in Gebed |
-| :---- | :---- | :---- |
+| :--- | :--- |
 | Militaire Macht | Blootleggen van de illusie dat wapens veiligheid bieden. |
 | Economische Ongelijkheid | Erkennen van de kloof tussen "haves" en "have-nots". |
 | Milieu-degradatie | Rouwen over de schepping die een "dump" is geworden. |

@@ -1653,7 +1653,7 @@
             '12_representatieve_hoorders': 'Representatieve Hoorders',
             '13_homiletische_analyse': 'Homiletische Analyse',
             '14_gebeden': 'Gebeden',
-            '14_gebeden_profetisch': 'gebeden (profetisch)',
+            '14_gebeden_profetisch': 'Gebeden (profetisch)',
             '15_kindermoment': 'Kindermoment',
             'Bijbelteksten': 'Bijbelteksten'
         };
@@ -1791,6 +1791,8 @@
                 let num;
                 if (key === 'Bijbelteksten') {
                     num = '02'; // Always assign 02 to make it second in the menu
+                } else if (key === '14_gebeden') {
+                    num = '14a';
                 } else if (key === '14_gebeden_profetisch') {
                     num = '14b';
                 } else {
@@ -1965,15 +1967,22 @@
                     });
                 } else if (key === '13_homiletische_analyse') {
                     // Special handling for Homiletische Analyse - rename items and exclude logic check
+                    const subKeyOrder = ['tekstkeuze', 'homiletical_plot', 'homiletische_brug_chapell'];
                     const labelMap = {
                         'tekstkeuze': 'Tekstkeuze',
-                        'homiletische_brug_chapell': 'Analyse (Chapell)',
-                        'homiletical_plot': 'Analyse (Lowry)'
+                        'homiletical_plot': 'Analyse (Lowry)',
+                        'homiletische_brug_chapell': 'Analyse (Chapell)'
                     };
-                    ['tekstkeuze', 'homiletical_plot', 'homiletische_brug_chapell'].forEach(subKey => {
+                    const subNums = {
+                        'tekstkeuze': '13a',
+                        'homiletical_plot': '13b',
+                        'homiletische_brug_chapell': '13c'
+                    };
+
+                    subKeyOrder.forEach(subKey => {
                         if (sectionData[subKey]) {
                             subSections.push(subKey);
-                            subSectionLabels[subKey] = labelMap[subKey];
+                            subSectionLabels[subKey] = `${subNums[subKey]} ${labelMap[subKey]}`;
                         }
                     });
                 } else {
@@ -2212,6 +2221,11 @@
             let html = '';
             const formattedKey = formatKey(key);
 
+            // Filter out boolean fields (like geen_eisenlijst, diagnose_remedie_klopt)
+            if (typeof value === 'boolean') {
+                return '';
+            }
+
             // Special rendering for specific keys
             if (key === 'liedsuggesties' || key.includes('lied')) {
                 return renderLiedsuggesties(key, value);
@@ -2307,6 +2321,7 @@
             for (const [key, value] of Object.entries(obj)) {
                 if (key.startsWith('_')) continue;
                 if (value === null || value === undefined) continue;
+                if (typeof value === 'boolean') continue;
 
                 if (Array.isArray(value)) {
                     if (value.every(v => typeof v === 'string')) {
