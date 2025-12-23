@@ -92,6 +92,33 @@ def sample_profetische_gebeden(n: int = 10) -> str:
     return "\n\n".join(output_parts)
 
 
+def sample_dialogische_gebeden(n: int = 10) -> str:
+    """Selecteer willekeurige gebeden uit de voorbeeldmap voor dialogische gebeden."""
+    examples_dir = SCRIPT_DIR / "gebeden_voorbeeld_dialogisch"
+    if not examples_dir.exists():
+        return "Geen voorbeeldgebeden gevonden."
+
+    files = list(examples_dir.glob("*.json"))
+    if not files:
+        return "Geen voorbeeldgebeden gevonden."
+
+    selected_files = random.sample(files, min(n, len(files)))
+    
+    output_parts = []
+    for i, file_path in enumerate(selected_files, 1):
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                title = data.get("title_nl", "Naamloos")
+                text = data.get("text_nl", "")
+                if text:
+                    output_parts.append(f"### Voorbeeld {i}: {title}\n\n{text}")
+        except Exception as e:
+            print(f"Fout bij lezen voorbeeld {file_path.name}: {e}")
+
+    return "\n\n".join(output_parts)
+
+
 def load_prompt(filename: str, user_input: dict, extra_replacements: dict = None) -> str:
     """Laad een prompt uit een markdown bestand en vervang placeholders."""
     filepath = PROMPTS_DIR / filename
@@ -921,6 +948,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
         ("14_gebeden", "Gebeden voor de Eredienst"),
         ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
+        ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
         ("15_kindermoment", "Kindermoment"),
     ]
 
@@ -965,6 +993,9 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         if name == "14_gebeden_profetisch":
             print("  Willekeurige voorbeeldgebeden selecteren...")
             extra_replacements["voorbeeld_gebeden"] = sample_profetische_gebeden()
+        elif name == "14_gebeden_dialogisch":
+            print("  Willekeurige dialogische voorbeeldgebeden selecteren...")
+            extra_replacements["voorbeeld_gebeden"] = sample_dialogische_gebeden()
 
         # Bouw prompt
         task_prompt = load_prompt(f"{name}.md", user_input, extra_replacements)
@@ -977,7 +1008,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 
         # Voor gebeden: maskeer adres om letterlijk gebruik te voorkomen
         display_adres = user_input.get('adres') or 'Onbekend'
-        if name in ["14_gebeden", "14_gebeden_profetisch"]:
+        if name in ["14_gebeden", "14_gebeden_profetisch", "14_gebeden_dialogisch"]:
             display_adres = "N.v.t. voor deze taak (niet letterlijk noemen)"
 
         full_prompt = f"""{base_prompt}
