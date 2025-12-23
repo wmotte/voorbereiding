@@ -91,6 +91,8 @@ Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
 | 13 | **Homiletische Analyse** | Preekschets (Lowry; narratief), elementen (Chapell; FCF & Christocentrisch) en inductie (Buttrick; Moves & Structures). |
 | 14 | **Gebeden** | Standaard (liturgisch), Profetisch (Brueggemann) en Dialogisch (Dumas). |
 | 15 | **Kindermoment** | Drie creatieve opties (Klassiek, Actief, Vreemd) voor interactie met kinderen. |
+| 16 | **Preekschets Sölle** | Preek in de stijl van Dorothee Sölle: mystiek en politiek verzet. |
+| 17 | **Preekschets Jüngel** | Preek in de stijl van Eberhard Jüngel: paradox en evangelische doorbraak. |
 
 ---
 
