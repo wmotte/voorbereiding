@@ -1960,6 +1960,19 @@
                             subSectionLabels[`gebeden-${prayerType}`] = gebedTitles[prayerType] || prayerType;
                         }
                     });
+                } else if (key === '13_homiletische_analyse') {
+                    // Special handling for Homiletische Analyse - rename items and exclude logic check
+                    const labelMap = {
+                        'tekstkeuze': 'Tekstkeuze',
+                        'homiletische_brug_chapell': 'Analyse (Chapell)',
+                        'homiletical_plot': 'Analyse (Lowry)'
+                    };
+                    ['tekstkeuze', 'homiletische_brug_chapell', 'homiletical_plot'].forEach(subKey => {
+                        if (sectionData[subKey]) {
+                            subSections.push(subKey);
+                            subSectionLabels[subKey] = labelMap[subKey];
+                        }
+                    });
                 } else {
                     // Default: get subsections from top-level keys
                     subSections = Object.keys(sectionData)
