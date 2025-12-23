@@ -844,6 +844,154 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
 }
 ```
 
+---
+
+## Voorbeeld JSON Output
+
+Hieronder een **verkort** (!) voorbeeld gebaseerd op Marcus 2:13-17 (Jezus eet met zondaars). In de praktijk moeten de uitgeschreven teksten veel langer zijn (totaal minimaal 1500 woorden).
+
+```json
+{
+  "tekstkeuze": {
+    "gekozen_lezing": "Marcus 2:13-17",
+    "alternatieve_lezingen": ["Psalm 103:1-13", "Romeinen 5:6-11"],
+    "onderbouwing": "Marcus 2:13-17 biedt een rijk narratief met sterke beeldtaal: Jezus aan tafel met tollenaars en zondaars. Deze tekst heeft een natuurlijke beweging van verwondering (wat doet Jezus daar?) naar confrontatie (de Farizeeën) naar verkondiging (Jezus' woord over zieken en gezonden). De maaltijdsymboliek resoneert met het Avondmaal en biedt mogelijkheden voor concrete, zintuiglijke taal. De tekst nodigt uit tot zelfonderzoek: waar plaatsen wij onszelf in dit verhaal?",
+    "aansluiting_context": "In een tijd waarin sociale media ons uitnodigen tot morele superioriteit en 'cancelen', raakt dit verhaal aan de neiging om anderen te veroordelen. De tekst spreekt direct tot de spanning tussen binnen- en buitenstaanders die ook in kerkelijke gemeenschappen speelt."
+  },
+  "introductie": {
+    "uitgeschreven_tekst": "In het koor van een kerk in Pittsburgh hangt een schilderij. Het schilderij toont Jezus aan tafel met zijn discipelen. Daar is Jezus in het midden, gekleed in wit, en om hem heen zijn discipelen in glas-in-lood poses alsof ze in de kerk zijn. Een man kwam binnen, keek naar het schilderij, en riep uit: 'Waar zijn de zondaars?' Hij zei: 'At Jezus niet met zondaars?' Wel, volgens het Nieuwe Testament is dat precies wat Jezus deed, niet één keer maar herhaaldelijk: hij at en dronk met zondaars.",
+    "focus_beeld": "Een kerkelijk schilderij dat de zondaars 'vergeet' - contrast tussen gekuiste kerkelijke voorstelling en de rauwe werkelijkheid van Jezus' tafelgenoten",
+    "hermeneutische_orientatie": "De gemeente wordt voorbereid om niet als toeschouwers naar een historisch verhaal te kijken, maar om zichzelf te positioneren: waar zit ik aan deze tafel?"
+  },
+  "moves": [
+    {
+      "move_nummer": 1,
+      "kernidee": "Als de Bijbel 'zondaars' zegt, bedoelt de Bijbel echte zondaars",
+      "perspectief": {
+        "stance": "Hedendaags, terugkijkend naar de eerste eeuw",
+        "orientation": "Gericht op de Bijbelse wereld en haar categorieën",
+        "distance": "Enige afstand - we observeren een andere tijd",
+        "focal_field": "Smal: specifiek de tafelgenoten van Jezus"
+      },
+      "retorische_strategie": "bringing_out",
+      "verbinding_vorige": null,
+      "verbinding_volgende": "Door de zondaars concreet te maken, wordt de vraag urgent: en wij dan?",
+      "uitgeschreven_tekst": {
+        "opening": "Als de Bijbel 'zondaars' zegt, bedoelt de Bijbel echte zondaars. Geen brave burgers met kleine gebreken. Echte zondaars - mensen waar je niet mee gezien wilt worden.",
+        "ontwikkeling": "Tollenaars waren de Joodse maffia van hun tijd. Ze werkten voor de Romeinse bezetter, persten hun eigen volk af, werden rijk van andermans ellende. En prostituees - geen tragische slachtoffers in de ogen van die tijd, maar keiharde beroepsmensen die hun lichaam verkochten. Dit waren de tafelgenoten van Jezus. Mensen die je niet uitnodigt op je verjaardag. Mensen waar je de straat voor oversteekt. De uitschot van de samenleving. En daar zit Jezus, midden tussen hen in, etend en drinkend alsof het de gewoonste zaak van de wereld is.",
+        "contrapuntaal": "Natuurlijk, we kunnen zeggen dat tijden veranderen. Dat wij genuanceerder denken over schuld en slachtofferschap. Maar dat is niet het punt.",
+        "closure": "Het punt is: de Bijbel bedoelt echte zondaars. Mensen buiten de grenzen van het fatsoen. Daar zat Jezus mee aan tafel."
+      },
+      "woorden_telling": 198
+    },
+    {
+      "move_nummer": 2,
+      "kernidee": "Wij zijn niet echt grote zondaars",
+      "perspectief": {
+        "stance": "Hedendaags, in onszelf kijkend",
+        "orientation": "Gericht op eigen zelfbeeld en zelfbeoordeling",
+        "distance": "Zeer dichtbij - persoonlijk zelfonderzoek",
+        "focal_field": "Smal: het eigen geweten"
+      },
+      "retorische_strategie": "dissociating",
+      "verbinding_vorige": "Verschuiving van Bijbelse wereld naar eigen zelfbeeld",
+      "verbinding_volgende": "Deze zelfgenoegzaamheid wordt straks geconfronteerd",
+      "uitgeschreven_tekst": {
+        "opening": "Maar wij - wij zijn niet echt grote zondaars. Laten we eerlijk zijn. We zijn geen tollenaars, geen prostituees, geen criminelen.",
+        "ontwikkeling": "Ja, we verliezen wel eens ons geduld. We roddelen misschien wat te veel. We geven niet zoveel aan goede doelen als we zouden willen. Soms zijn we wat te zuinig met complimenten, wat te royaal met kritiek. Maar grote zondaars? Wij? We betalen onze belasting. We zijn trouw aan onze partner. We doen vrijwilligerswerk. We recyclen. We zijn, al met al, behoorlijk fatsoenlijke mensen. Zeker vergeleken met wat je in het nieuws ziet. Zeker vergeleken met die tollenaars en prostituees.",
+        "contrapuntaal": null,
+        "closure": "Nee, wij zijn geen grote zondaars. Wij zijn fatsoenlijke mensen. En daar zit precies het probleem."
+      },
+      "woorden_telling": 156
+    },
+    {
+      "move_nummer": 3,
+      "kernidee": "Jezus kwam niet voor rechtvaardigen maar voor zondaars",
+      "perspectief": {
+        "stance": "Terugkijkend naar Jezus' bediening als geheel",
+        "orientation": "Gericht op het patroon in Jezus' leven",
+        "distance": "Medium - we overzien een heel leven",
+        "focal_field": "Wijd: het geheel van Jezus' keuzes"
+      },
+      "retorische_strategie": "bringing_out",
+      "verbinding_vorige": "Van onze zelfbeoordeling naar Jezus' eigen woorden",
+      "verbinding_volgende": "Dit patroon dwingt ons tot herpositionering",
+      "uitgeschreven_tekst": {
+        "opening": "Jezus zei: 'Ik ben niet gekomen om rechtvaardigen te roepen, maar zondaars.' Niet gekomen voor rechtvaardigen. Niet gekomen voor fatsoenlijke mensen. Gekomen voor zondaars.",
+        "ontwikkeling": "Kijk naar zijn leven. Hij liet zich dopen in de Jordaan - tussen de zondaars die kwamen voor een doopsel van bekering. Hij at met tollenaars en zondaars - keer op keer. Hij liet zich aanraken door een 'zondige vrouw' die zijn voeten waste met haar tranen. Hij sprak met een Samaritaanse vrouw met vijf ex-mannen. Hij vergaf een overspelige vrouw die gestenigd zou worden. En aan het eind: gekruisigd tussen twee misdadigers, 'onder de overtreders gerekend'. Zijn hele leven lang: aan de kant van de zondaars.",
+        "contrapuntaal": "Je zou kunnen zeggen: maar hij riep hen ook tot bekering! Zeker. Maar hij begon niet met de eis. Hij begon met de maaltijd.",
+        "closure": "Jezus kwam voor zondaars. Niet voor rechtvaardigen. Voor zondaars. Daar lag zijn hart, daar was zijn plek."
+      },
+      "woorden_telling": 201
+    },
+    {
+      "move_nummer": 4,
+      "kernidee": "Wij staan buiten terwijl Jezus binnen is met de zondaars",
+      "perspectief": {
+        "stance": "Hedendaags, kijkend naar de scène vanuit de positie van de Farizeeën",
+        "orientation": "Gericht op onze eigen positie ten opzichte van Jezus",
+        "distance": "Confronterend dichtbij",
+        "focal_field": "Scherp: de drempel tussen binnen en buiten"
+      },
+      "retorische_strategie": "associating",
+      "verbinding_vorige": "Als Jezus daar is, waar zijn wij dan?",
+      "verbinding_volgende": "Vanuit dit besef kan de uitnodiging komen",
+      "uitgeschreven_tekst": {
+        "opening": "En dan staan wij daar. Buiten. Kijkend naar binnen. Net als de Farizeeën kijken wij naar binnen en zien Jezus aan tafel met zondaars.",
+        "ontwikkeling": "Want wij zijn toch geen zondaars? Wij zijn de fatsoenlijke mensen, de rechtvaardigen, de mensen die hun leven op orde hebben. 'Tenminste ben ik niet zoals die tollenaar,' bad de Farizeeër in de tempel. En wij bidden met hem mee. Tenminste ben ik niet zoals die fraudeur in het nieuws. Tenminste ben ik niet zoals die ouders die hun kinderen verwaarlozen. Tenminste ben ik niet zoals die politicus die liegt. Met elke 'tenminste' zetten we een stap naar buiten. Weg van de tafel waar Jezus zit. Weg van de zondaars. Weg van Jezus zelf. Tot we buiten staan, in de kou, kijkend naar een feest waar we niet bij horen.",
+        "contrapuntaal": null,
+        "closure": "Daar staan we dan. Buiten. Terwijl Jezus binnen is. Met de zondaars. Zonder ons."
+      },
+      "woorden_telling": 189
+    },
+    {
+      "move_nummer": 5,
+      "kernidee": "We kunnen binnenkomen als vergeven zondaars",
+      "perspectief": {
+        "stance": "Hedendaags, directe aanspraak",
+        "orientation": "Gericht op de mogelijkheid van verandering",
+        "distance": "Intiem - predikant en gemeente samen",
+        "focal_field": "De open deur"
+      },
+      "retorische_strategie": "bringing_out",
+      "verbinding_vorige": "Van confrontatie naar uitnodiging",
+      "verbinding_volgende": null,
+      "uitgeschreven_tekst": {
+        "opening": "Maar de deur staat open. De deur staat open en Jezus kijkt naar buiten. Naar ons. En hij zegt: kom binnen.",
+        "ontwikkeling": "Niet omdat we het verdienen. Niet omdat we toch eigenlijk best goede mensen zijn. Niet omdat we onze zaakjes op orde hebben. Maar omdat hij gekomen is voor zondaars. En zondaars - dat zijn wij. Als we onze trots durven loslaten. Als we durven toegeven dat we niet beter zijn dan de ander. Als we de 'tenminste ben ik niet...' laten vallen. Dan mogen we binnenkomen. Dan is er plek aan tafel. Naast de tollenaar. Naast de prostituee. Naast al die anderen die wisten dat ze Jezus nodig hadden.",
+        "contrapuntaal": "Het is vernederend, misschien. Het kost ons onze zelfgenoegzaamheid.",
+        "closure": "Maar het is de enige weg naar binnen. Als vergeven zondaars. Niet meer, niet minder. Vergeven zondaars aan de tafel van Jezus."
+      },
+      "woorden_telling": 178
+    }
+  ],
+  "conclusie": {
+    "uitgeschreven_tekst": "Dus wat kunnen we doen? Simpel. We kunnen ons aansluiten bij het feest. Niet als rechtvaardigen die een plekje verdienen, maar als vergeven zondaars die binnenstappen. De oude 'tenminste ben ik niet...' trots weggegooid, we scharen ons graag onder de zondaars. Vergeven zondaars. Al de ruimte van de wereld in de wijdheid van Gods genade. We stappen binnen bij Jezus Christus - vergeven zondaars!",
+    "verzamelde_beelden": [
+      "De tafel waar Jezus zit met zondaars",
+      "Binnen en buiten - de drempel",
+      "De 'tenminste ben ik niet...' houding",
+      "Het feest waar we bij mogen horen"
+    ],
+    "intentie": "De gemeente brengen van zelfgenoegzame buitenstaanders naar dankbare insiders - niet door morele superioriteit maar door erkenning van eigen zondigheid en behoefte aan genade"
+  },
+  "beweging_samenvatting": {
+    "logische_lijn": "Jezus at met echte zondaars, maar wij rekenen onszelf niet tot de zondaars, terwijl Jezus juist voor zondaars kwam, dus staan wij eigenlijk buiten, maar we mogen binnenkomen als we onze zelfgenoegzaamheid loslaten.",
+    "perspectief_variatie": "Van Bijbelse wereld observeren (1) → naar eigen zelfbeeld kijken (2) → Jezus' leven overzien (3) → onszelf buiten zien staan (4) → directe uitnodiging ontvangen (5)"
+  },
+  "contextuele_integratie": {
+    "gebruik_gemeente_info": "De spanning tussen binnen- en buitenstaanders speelt in elke kerkelijke gemeente. Het beeld van 'fatsoenlijke mensen' resoneert met de middenklasse-achtergrond van veel PKN-gemeenten.",
+    "gebruik_actualiteit": "De 'cancel-cultuur' en sociale media maken het thema van morele superioriteit en veroordeling actueel. De neiging om 'tenminste ben ik niet zoals...' te denken wordt versterkt door online polarisatie.",
+    "gebruik_kerkelijk_jaar": "De maaltijdsymboliek sluit aan bij het Avondmaal. In de tijd na Epifanie past het thema van Jezus die zich openbaart als vriend van zondaars."
+  },
+  "woorden_telling_totaal": 1523
+}
+```
+
+**Let op:** Dit is een *verkort* voorbeeld ter illustratie. In de praktijk moeten vooral de `ontwikkeling`-secties van elke move uitgebreider zijn om de vereiste 400-500 woorden per move te halen.
+
+---
+
 **BELANGRIJK:**
 - Retourneer ALLEEN valide JSON, geen markdown of toelichting.
 - De uitgeschreven teksten moeten VOLLEDIG zijn, geen samenvattingen of steekwoorden.
