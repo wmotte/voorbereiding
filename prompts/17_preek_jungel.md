@@ -153,7 +153,6 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "inhoud": "string - 100-200 woorden. Krachtige conclusie en zegen."
     }
   },
-  "kernwoorden": ["string"],
-  "citaat_dichter": "string - welk gedicht/citaat is gebruikt en waarom?"
+  "kernwoorden": ["string"]
 }
 ```

@@ -137,7 +137,7 @@ def sample_jungel_preken(n: int = 5) -> str:
         return "Geen voorbeeldpreken van Jüngel gevonden."
 
     selected_files = random.sample(files, min(n, len(files)))
-    
+
     output_parts = []
     for i, file_path in enumerate(selected_files, 1):
         try:
@@ -149,6 +149,43 @@ def sample_jungel_preken(n: int = 5) -> str:
                     output_parts.append(f"### Voorbeeld {i}: {title}\n\n{text}")
         except Exception as e:
             print(f"Fout bij lezen Jüngel voorbeeld {file_path.name}: {e}")
+
+    return "\n\n".join(output_parts)
+
+
+def sample_noordmans_preken(n: int = 15) -> str:
+    """Selecteer willekeurige fragmenten uit de Noordmans preken map.
+
+    Let op: Dit zijn fragmenten uit Verzamelde Werken deel 8, geen complete preken.
+    Ze dienen als inspiratie voor toon, stijl en theologische denkwijze.
+    """
+    noordmans_dir = SCRIPT_DIR / "preken_noordmans"
+    if not noordmans_dir.exists():
+        return "Geen voorbeeldfragmenten van Noordmans gevonden."
+
+    files = list(noordmans_dir.glob("*.txt"))
+    if not files:
+        return "Geen voorbeeldfragmenten van Noordmans gevonden."
+
+    selected_files = random.sample(files, min(n, len(files)))
+
+    output_parts = [
+        "**Let op:** De onderstaande teksten zijn fragmenten uit Noordmans' Verzamelde Werken deel 8. "
+        "Ze zijn niet compleet maar tonen wel zijn karakteristieke stijl, toon en theologische denkwijze. "
+        "Gebruik ze als inspiratie voor de cadans en het taalveld.\n"
+    ]
+
+    for i, file_path in enumerate(selected_files, 1):
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                text = f.read()
+                # Haal titel uit eerste regels
+                lines = text.strip().split("\n")
+                title = lines[1] if len(lines) > 1 else file_path.stem
+                if text:
+                    output_parts.append(f"### Fragment {i}: {title}\n\n{text}")
+        except Exception as e:
+            print(f"Fout bij lezen Noordmans fragment {file_path.name}: {e}")
 
     return "\n\n".join(output_parts)
 
@@ -886,6 +923,7 @@ def update_summary(output_dir: Path):
                 ("15_kindermoment", "Kindermoment"),
                 ("16_preek_solle", "Preek in de stijl van Sölle"),
                 ("17_preek_jungel", "Preek in de stijl van Jüngel"),
+                ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
             ]
 
             existing_names = [a.get("name") for a in data.get("analyses", [])]
@@ -920,6 +958,7 @@ def update_summary(output_dir: Path):
             ("15_kindermoment", "Kindermoment"),
             ("16_preek_solle", "Preek in de stijl van Sölle"),
             ("17_preek_jungel", "Preek in de stijl van Jüngel"),
+            ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
         ]
 
         for name, title in new_analyses:
@@ -1063,6 +1102,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("15_kindermoment", "Kindermoment"),
         ("16_preek_solle", "Preek in de stijl van Sölle"),
         ("17_preek_jungel", "Preek in de stijl van Jüngel"),
+        ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
     ]
 
     if args.exegese:
@@ -1115,6 +1155,9 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         elif name == "17_preek_jungel":
             print("  Willekeurige voorbeeldpreken van Jüngel selecteren...")
             extra_replacements["voorbeeld_gebeden"] = sample_jungel_preken()
+        elif name == "18_preek_noordmans":
+            print("  Willekeurige voorbeeldpreken van Noordmans selecteren...")
+            extra_replacements["voorbeeld_gebeden"] = sample_noordmans_preken()
 
         # Bouw prompt
         task_prompt = load_prompt(f"{name}.md", user_input, extra_replacements)
