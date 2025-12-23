@@ -87,10 +87,10 @@ Het taalveld van de gebeden moet passen bij de gemeente en de gelegenheid:
 | Gebed | Lengte (woorden) | Spreektijd |
 |:------|:-----------------|:-----------|
 | Drempelgebed | 150-250 | 1-2 minuten |
-| Kyrie | 150-250 | 1-2 minuten |
+| Kyrie | 250-300 | 2-3 minuten |
 | Epiclese | 100-150 | < 1 minuut |
-| Dankgebed | 150-250 | 1-2 minuten |
-| Voorbeden | 300-500 | 3-5 minuten |
+| Dankgebed | 300-400 | 3-4 minuten |
+| Voorbeden | 300-600 | 3-6 minuten |
 
 ### 3.3 Valkuilen om te vermijden
 
@@ -381,7 +381,7 @@ Durf specifiek te zijn:
 
 Hieronder een voorbeeld van een kyrie dat alle principes integreert. De lezing is de storm op het meer (Marcus 4), de context is een kustplaats in de herfst.
 
-**Kyrie (voorbeeld):**
+**Kyrie (voorbeeld van een korte versie):**
 
 > Heer Jezus, die sliep in de boot terwijl de golven sloegen —
 >
@@ -792,7 +792,7 @@ Amen.
 
 ## 2. Kyrie
 
-[tekst van het gebed, ca. 150-250 woorden]
+[tekst van het gebed, ca. 250-300 woorden]
 
 Amen.
 
@@ -808,7 +808,7 @@ Amen.
 
 ## 4. Dankgebed
 
-[tekst van het gebed, ca. 150-250 woorden]
+[tekst van het gebed, ca. 300-400 woorden]
 
 Amen.
 
@@ -816,7 +816,7 @@ Amen.
 
 ## 5. Voorbeden
 
-[tekst van de voorbeden met de vier cirkels, ca. 300-500 woorden]
+[tekst van de voorbeden met de vier cirkels, ca. 300-600 woorden]
 
 *Stilte voor persoonlijke gebedsintenties*
 
@@ -888,7 +888,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
           }
         ]
       },
-      "tekst": "string - de volledige gebetstekst (150-250 woorden)",
+      "tekst": "string - de volledige gebetstekst (250-300 woorden)",
       "echo_schriftlezing": "string",
       "amen": true
     },

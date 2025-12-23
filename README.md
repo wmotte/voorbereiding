@@ -89,7 +89,7 @@ Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
 | 11 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
 | 12 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
 | 13 | **Homiletische Analyse** | Preekschets volgens Lowry (narratief) en Chapell (FCF & Christocentrisch). |
-| 14 | **Gebeden** | Drempelgebed, Kyrie, Epiclese, Dankgebed en Voorbeden. |
+| 14 | **Gebeden** | Standaard (liturgisch), Profetisch (Brueggemann) en Dialogisch (Dumas). |
 | 15 | **Kindermoment** | Drie creatieve opties (Klassiek, Actief, Vreemd) voor interactie met kinderen. |
 
 ---
@@ -134,12 +134,22 @@ De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaa
 5.  **ZÓ! (YEAH!)**: Anticiperen op de gevolgen (het gewone leven).
 📄 **[Lees de diepte-analyse van Lowry's methode](misc/Lowrys_Homiletical_Plot.md)**
 
-### 6. Liturgische Gebeden
-De gebeden volgen de klassieke en protestantse (PKN) traditie, met oog voor de specifieke functie van elk gebedsmoment:
-*   **Kyrie:** Nood van de wereld, concreet en actueel.
-*   **Epiclese:** Gebed om de Geest bij de opening van de Schriften.
-*   **Voorbeden:** Concentrische cirkels (wereld, kerk, naaste, eigen gemeente).
+### 6. Liturgische Gebeden (Drie Stijlen)
+De tool biedt drie verschillende benaderingen voor de gebeden, elk met een eigen theologische en stilistische kleur:
+
+#### A. Standaard Liturgisch
+Volgt de klassieke en protestantse (PKN) traditie, met oog voor de specifieke functie van elk gebedsmoment (Kyrie, Epiclese, Voorbeden).
 📄 **[Lees de achtergrond van de liturgische gebeden](misc/Liturgische_Gebeden.md)**
+
+#### B. Profetisch Bidden (Walter Brueggemann)
+Gebaseerd op de theologie van *The Prophetic Imagination*. Deze gebeden doorbreken de "koninklijke bewustheid" (status quo) en gebruiken "gevaarlijke taal" om pijn te benoemen en hoop te wekken.
+*   **Kenmerken:** Rauwe klacht (lamentatie), verzet tegen imperiale macht, en radicale hoop.
+📄 **[Lees meer over Brueggemanns gebedstaal](misc/Brueggemanns_Gebeden.md)**
+
+#### C. Dialogisch Bidden (André Dumas)
+Gebaseerd op de "theologie van de realiteit" van André Dumas. Deze gebeden zijn een directe, soms stroeve dialoog met God ("Brusquerie").
+*   **Kenmerken:** Geen vrome maskers, "stijve knieën" (moderne autonomie), en ethische verantwoordelijkheid ("Exaucer Dieu": God verhoren).
+📄 **[Lees de analyse van Dumas' dialogische stijl](misc/Andre_Dumas_Dialogisch_Bidden.md)**
 
 ---
 
@@ -159,8 +169,10 @@ python count_tokens.py --file output/Sessie_Naam/combined_output.json
 
 ## 📚 Literatuur & Bronnen
 
+*   **Brueggemann, W. (1978).** *The Prophetic Imagination.* Fortress Press.
 *   **Chapell, B. (2018).** *Christ-Centered Preaching: Redeeming the Expository Sermon.* 3rd Edition. Grand Rapids: Baker Academic.
 *   **De Leede, H. & Stark, C. (2017).** *Ontvouwen: Protestantse prediking in de praktijk.* Zoetermeer: Boekencentrum, pp. 73-81.
+*   **Dumas, A. (1991).** *Cent prières possibles.* Paris: Albin Michel.
 *   **Lowry, E.L. (2001).** *The Homiletical Plot: The Sermon as Narrative Art Form.* Expanded Edition. Louisville: Westminster John Knox Press.
 *   **Snoek, H. (2010).** *Een huis om in te wonen: Uitleg en interpretatie van de Bijbel.* Kampen: Kok, 2e druk, pp. 180-199. (Zoekmodellen voor Gods-, mens- en Jezusbeelden).
 
