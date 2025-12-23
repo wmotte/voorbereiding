@@ -1766,7 +1766,18 @@
             let unnumberedCounter = highestNum + 1;
 
             // Sort other sections alphabetically
-            const sortedOtherSections = otherSections.sort();
+            let sortedOtherSections = otherSections.sort();
+
+            // Custom sort for the 14_gebeden group to ensure 14a, 14b, 14c order
+            const prayerKeys = ['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch'];
+            if (prayerKeys.every(k => sortedOtherSections.includes(k))) {
+                // Remove them from their current positions
+                sortedOtherSections = sortedOtherSections.filter(k => !prayerKeys.includes(k));
+                // Find the index where 14_gebeden would have been or just before 15_kindermoment
+                let insertIndex = sortedOtherSections.findIndex(k => k > '14');
+                if (insertIndex === -1) insertIndex = sortedOtherSections.length;
+                sortedOtherSections.splice(insertIndex, 0, ...prayerKeys);
+            }
 
             // Build the final sections array: [Bijbelteksten as second item]
             let sections = [];
