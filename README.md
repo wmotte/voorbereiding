@@ -134,7 +134,14 @@ De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaa
 5.  **ZÓ! (YEAH!)**: Anticiperen op de gevolgen (het gewone leven).
 📄 **[Lees de diepte-analyse van Lowry's methode](misc/Lowrys_Homiletical_Plot.md)**
 
-### 6. Liturgische Gebeden (Drie Stijlen)
+### 6. Preekstructuur: David Buttrick's Moves
+Naast Lowry's narratieve plot ondersteunt de tool ook de "Moves and Structures" methode van David Buttrick.
+*   **Moves:** Preken als een reeks taalbewegingen in plaats van statische punten.
+*   **Fenomenologie:** Focus op hoe taal werkt in het bewustzijn van de hoorder.
+*   **Structuur:** Zorgvuldige opbouw van openingsstatement, ontwikkeling en afsluiting per move.
+📄 **[Lees de volledige methodiek van Buttrick](misc/Buttricks_Moves_and_Structures.md)**
+
+### 7. Liturgische Gebeden (Drie Stijlen)
 De tool biedt drie verschillende benaderingen voor de gebeden, elk met een eigen theologische en stilistische kleur:
 
 #### A. Standaard Liturgisch
@@ -170,6 +177,7 @@ python count_tokens.py --file output/Sessie_Naam/combined_output.json
 ## 📚 Literatuur & Bronnen
 
 *   **Brueggemann, W. (1978).** *The Prophetic Imagination.* Fortress Press.
+*   **Buttrick, D. (1987).** *Homiletic: Moves and Structures.* Philadelphia: Fortress Press.
 *   **Chapell, B. (2018).** *Christ-Centered Preaching: Redeeming the Expository Sermon.* 3rd Edition. Grand Rapids: Baker Academic.
 *   **De Leede, H. & Stark, C. (2017).** *Ontvouwen: Protestantse prediking in de praktijk.* Zoetermeer: Boekencentrum, pp. 73-81.
 *   **Dumas, A. (1991).** *Cent prières possibles.* Paris: Albin Michel.

@@ -231,6 +231,7 @@ def read_previous_analyses(folder: Path) -> dict:
         ("11_kalender", "kalender"),
         ("12_representatieve_hoorders", "representatieve_hoorders"),
         ("13_homiletische_analyse", "homiletische_analyse"),
+        ("13_homiletische_analyse_buttrick", "homiletische_analyse_buttrick"),
         ("14_gebeden", "gebeden"),
         ("15_kindermoment", "kindermoment"),
     ]
@@ -499,8 +500,12 @@ def build_context_string(previous_analyses: dict, limited: bool = False, exclude
                        previous_analyses["representatieve_hoorders"])
 
     if previous_analyses.get("homiletische_analyse") and "homiletische_analyse" not in excluded_sections:
-        sections.append("## Homiletische Analyse\n\n" +
+        sections.append("## Homiletische Analyse (Lowry)\n\n" +
                        previous_analyses["homiletische_analyse"])
+
+    if previous_analyses.get("homiletische_analyse_buttrick") and "homiletische_analyse_buttrick" not in excluded_sections:
+        sections.append("## Homiletische Analyse (Buttrick)\n\n" +
+                       previous_analyses["homiletische_analyse_buttrick"])
 
     if previous_analyses.get("gebeden") and "gebeden" not in excluded_sections:
         sections.append("## Gebeden\n\n" +
@@ -781,6 +786,7 @@ def update_summary(output_dir: Path):
                 ("11_kalender", "Kalender"),
                 ("12_representatieve_hoorders", "Representatieve Hoorders"),
                 ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
+                ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
                 ("14_gebeden", "Gebeden voor de Eredienst"),
                 ("15_kindermoment", "Kindermoment"),
             ]
@@ -812,6 +818,7 @@ def update_summary(output_dir: Path):
             ("11_kalender", "Kalender"),
             ("12_representatieve_hoorders", "Representatieve Hoorders"),
             ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
+            ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
             ("14_gebeden", "Gebeden voor de Eredienst"),
             ("15_kindermoment", "Kindermoment"),
         ]
@@ -950,6 +957,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("11_kalender", "Kalender: Gedenkdagen en Bijzondere Momenten"),
         ("12_representatieve_hoorders", "Representatieve Hoorders"),
         ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
+        ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
         ("14_gebeden", "Gebeden voor de Eredienst"),
         ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
         ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
