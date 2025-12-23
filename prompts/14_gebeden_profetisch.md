@@ -40,12 +40,13 @@ God is geen abstract principe en geen 'lieve opa'. In jouw gebeden is God:
 Gebed is, volgens Brueggemann, een "gevaarlijke daad". Dat vraagt om "gevaarlijke retoriek".
 *   **Vermijd:** Vrome clichés, 'kerkelijke taal' die niemand meer raakt, en beleefdheid.
 *   **Gebruik:** Schurende woorden, onverwachte wendingen, rauwe eerlijkheid.
+*   **Let op:** Profetisch is niet hetzelfde als hysterisch. Zoek de spanning, maar vermijd karikaturaal of overdreven taalgebruik.
 *   **Voorbeeld:** Niet "Heer, geef ons vrede", maar "God, ontwapen onze handen en sloop de muren in ons hoofd."
 
 ### 2.2 Concrete en Moderne Metaforen
 Brueggemann aardt de transcendentie in de seculiere realiteit. Gebruik metaforen uit:
-*   **Economie/Commercie:** "Wij zijn verslaafd aan groei", "Re-brand onze ziel", "Cancel onze schuld", "De markt is onze afgod".
-*   **Technologie:** "Wij zijn geprogrammeerd op winst", "Reset ons verstand", "Nullify onze angst".
+*   **Economie/Commercie:** "Wij zijn verslaafd aan groei", "Geef onze ziel een nieuwe naam", "Scheld onze schuld kwijt", "De markt is onze afgod".
+*   **Technologie:** "Wij zijn geprogrammeerd op winst", "Herstart ons verstand", "Verklaar onze angst nietig".
 *   **Fysieke Natuur:** "De ademhaling van de aarde stokt", "Lichamen die breken", "Vuilnisbelten van onze verlangens".
 
 ### 2.3 De Ik-U Relatie (Martin Buber)
@@ -89,13 +90,13 @@ Hieronder vind je 10 willekeurige voorbeelden uit het werk van Brueggemann.
 *   **Stijl:** Anafoor (zinnen die steeds hetzelfde beginnen: "Voor de...", "Voor de...").
 
 ### 4.3 Epiclese: Het Breken van de Verbeelding
-*   **Functie:** Wij kunnen Gods woord niet horen omdat onze 'scripts' vastzitten. De Geest moet onze verbeelding openbreken.
+*   **Functie:** Wij kunnen Gods woord niet horen omdat onze 'scenario's' vastzitten. De Geest moet onze verbeelding openbreken.
 *   **Inhoud:** Vraag om een schok, een inbraak. Dat we het "gevaarlijke geheugen" van Jezus durven toelaten.
 *   **Stijl:** Dringend. Vraag om vuur, wind, sloophamers.
 
 ### 4.4 Dankgebed: De Verrassing van de Nieuwe Oriëntatie
-*   **Functie:** Erkennen dat het leven een GAVE is, geen verdienste (commodity).
-*   **Inhoud:** Verwondering over het feit dat er *leven* is waar dood was. Dank voor de "impossible possibility".
+*   **Functie:** Erkennen dat het leven een GAVE is, geen verdienste (handelswaar).
+*   **Inhoud:** Verwondering over het feit dat er *leven* is waar dood was. Dank voor de "onmogelijke mogelijkheid".
 *   **Stijl:** Jubelend, maar geaard (geen goedkoop happy end).
 
 ### 4.5 Voorbeden: Waarheidspreken in Solidariteit
@@ -108,7 +109,7 @@ Hieronder vind je 10 willekeurige voorbeelden uit het werk van Brueggemann.
 
 ## DEEL V: TAAL EN CONTEXT
 
-*   **Taal:** Gebruik krachtig Nederlands. Vertaal Engelse concepten naar sterke Nederlandse beelden (dus niet "re-branding", maar "her-ijking" of "nieuwe naamgeving").
+*   **Taal:** Gebruik UITSLUITEND Nederlands. Engelse termen (zoals 'branding', 'reset', 'royal consciousness') zijn STRIKT VERBODEN in de output. Vertaal alles naar krachtige Nederlandse beelden.
 *   **Schriftlezing:** Laat de teksten van de zondag resoneren als "echo's".
 *   **Context:** Laat {{plaatsnaam}} (polder, stad, dorp) meedoen. Niet als decor, maar als de plek waar het Koninkrijk moet landen.
 
@@ -125,7 +126,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
     "drempelgebed": {
       "type": "drempelgebed",
       "aanspraak": "string - Profetische stijl (bijv. 'Gij die de nacht breekt')",
-      "tekst": "string - de volledige gebedstekst (MINIMAAL 200-300 woorden), met \\n voor regeleinden. Focus: breuk met 'empire'.",
+      "tekst": "string - de volledige gebedstekst (MINIMAAL 200-300 woorden), met \\n voor regeleinden. Focus: breuk met 'imperium'.",
       "echo_schriftlezing": "string",
       "amen": true
     },
@@ -141,7 +142,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "type": "epiclese",
       "aanspraak": "string",
       "focus": "doorbreken_verbeelding",
-      "tekst": "string - de volledige gebedstekst (100-150 woorden). Focus: openbreken van gesloten scripts.",
+      "tekst": "string - de volledige gebedstekst (100-150 woorden). Focus: openbreken van gesloten scenario's.",
       "echo_schriftlezing": "string",
       "amen": true
     },
