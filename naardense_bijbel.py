@@ -446,10 +446,11 @@ def extract_lezingen_uit_liturgie(liturgie_tekst: str) -> list[str]:
     referenties = []
     patronen = [
         # Markdown patronen
-        r'(?:Eerste|Tweede|Derde)?\s*(?:lezing|Lezing)[:\s]+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–]\d+)?(?:\s*\([^)]+\))?)',
-        r'(?:Evangelie|Epistel)(?:lezing)?[:\s]+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–]\d+)?(?:\s*\([^)]+\))?)',
+        # Updated regex to capture multi-part references like "Sefanja 2:3 en 3:12-13"
+        r'(?:Eerste|Tweede|Derde)?\s*(?:lezing|Lezing)[:\s]+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–][\d\.]+)?(?:(?:\s+(?:en|&)\s+|[;,]\s*)(?:(?:\d+[:])?\d+(?:[-–][\d\.]+)?))*(?:\s*\([^)]+\))?)',
+        r'(?:Evangelie|Epistel)(?:lezing)?[:\s]+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–][\d\.]+)?(?:(?:\s+(?:en|&)\s+|[;,]\s*)(?:(?:\d+[:])?\d+(?:[-–][\d\.]+)?))*(?:\s*\([^)]+\))?)',
         r'Psalm(?:\s+van\s+de\s+\w+)?[:\s]+(?:Psalm\s+)?(\d+)',
-        r'\*\*(?:Eerste|Evangelie|Epistel)lezing:\*\*\s+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–]\d+)?)',
+        r'\*\*(?:Eerste|Evangelie|Epistel)lezing:\*\*\s+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–][\d\.]+)?(?:(?:\s+(?:en|&)\s+|[;,]\s*)(?:(?:\d+[:])?\d+(?:[-–][\d\.]+)?))*)',
         # JSON patroon ("referentie": "...")
         r'"referentie":\s*"([^"]+)"'
     ]
@@ -495,148 +496,119 @@ def download_lezingen(output_dir: Path, liturgie_tekst: str) -> dict[str, str]:
     resultaten = {}
     seen_refs = set()
 
-    # Pre-process references to handle semi-colon separators (e.g., "Sefanja 2:3; 3:12-13")
-    processed_refs = []
     for raw_ref in referenties_raw:
-        parts = raw_ref.split(';')
+        # Skip duplicates based on the raw string
+        if raw_ref in seen_refs: continue
+        seen_refs.add(raw_ref)
+
+        print(f"  Verwerken: {raw_ref}")
+
+        # 1. Parse into sub-references (handling ; and "en")
+        # Normalize separators: Replace ' en ' and '&' with ';'
+        normalized_ref = re.sub(r'\s+(?:en|&)\s+', ';', raw_ref)
+        parts = re.split(r'[;]', normalized_ref)
+        
+        sub_refs = []
         last_book = None
         
         for part in parts:
             part = part.strip()
             if not part: continue
             
-            # Check if part starts with a book name
-            book_match = re.match(r'^(\d?\s*[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)', part)
+            # Check for Book Name (Start of string)
+            book_match = re.match(r'^((?:\d\s+)?[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)', part)
             
-            # Simple check if the match corresponds to a known book code
+            # Verify if it's a real book
             is_book = False
             if book_match:
                 potential_book = book_match.group(1)
-                # Use get_boek_slug or NAME_TO_CODE to verify
                 if get_boek_slug(potential_book) or NAME_TO_CODE.get(potential_book.upper()):
                     is_book = True
 
             if is_book:
                 last_book = book_match.group(1)
-                processed_refs.append(part)
-            elif last_book and re.match(r'^\d+[:]', part):
-                # Starts with chapter:verse, prepend last book
-                processed_refs.append(f"{last_book} {part}")
+                sub_refs.append(part)
+            elif last_book:
+                # Inherit book
+                sub_refs.append(f"{last_book} {part}")
             else:
-                processed_refs.append(part)
+                # Fallback
+                sub_refs.append(part)
 
-    for ref_str in processed_refs:
-        # Check of dit een complexe referentie is met meerdere verse ranges (bijv. "1 Samuel 1,20-22.24-28")
-        complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;a-z]+)", ref_str)
-
-        if complex_match:
-            book_chapter_base = f"{complex_match.group(1).strip()} {complex_match.group(2)}"
-            verse_part = complex_match.group(3)
-
-            # Split verse part op . of ; voor multiple ranges
-            verse_ranges = re.split(r'[.;]', verse_part)
-
-            all_verses = []
-            book_code = None
-            chapter = None
-            original_verse_spec = verse_part  # bewaar originele versnummers voor filename
-
-            for verse_range in verse_ranges:
-                verse_range = verse_range.strip()
-                if not verse_range:
-                    continue
-
-                sub_ref_str = f"{book_chapter_base}:{verse_range}"
-                referentie = parse_bijbelreferentie(sub_ref_str)
-
+        # 2. Fetch verses for all sub-refs
+        all_pericopes = []
+        
+        for ref_str in sub_refs:
+            # Check for multi-range syntax within one chapter (e.g. "1, 3-5")
+            # Or standard "Book Chapter:Verses"
+            
+            # Simple parsing first
+            # Logic: We treat each sub_ref as a potential BijbelReferentie
+            # But we must handle "Genesis 1:1.3" (discontinuous verses)
+            
+            # Check for complex verse part with dots
+            complex_match = re.match(r"^\s*((?:\d\s)?[A-Za-zëïüöä\s]+?)\s+(\d+)[\s,:]+([\d\-–.;a-z]+)", ref_str)
+            
+            if complex_match:
+                book_chapter_base = f"{complex_match.group(1).strip()} {complex_match.group(2)}"
+                verse_part = complex_match.group(3)
+                # Split verse part on . 
+                # Note: previously we split on ; too, but we handled ; above.
+                verse_ranges = re.split(r'[.]', verse_part)
+                
+                for v_range in verse_ranges:
+                    v_range = v_range.strip()
+                    if not v_range: continue
+                    
+                    sub_sub_ref_str = f"{book_chapter_base}:{v_range}"
+                    referentie = parse_bijbelreferentie(sub_sub_ref_str)
+                    
+                    if referentie:
+                        md_text, verses_data = haal_bijbeltekst_op(referentie)
+                        if verses_data:
+                            all_pericopes.append({
+                                "book": get_boek_code(referentie.boek),
+                                "chapter": referentie.hoofdstuk,
+                                "verses": verses_data,
+                                "translation": "NB"
+                            })
+                        time.sleep(0.3)
+            else:
+                # Standard single reference
+                referentie = parse_bijbelreferentie(ref_str)
                 if referentie:
-                    if book_code is None:
-                        book_code = get_boek_code(referentie.boek)
-                        chapter = referentie.hoofdstuk
-
                     md_text, verses_data = haal_bijbeltekst_op(referentie)
                     if verses_data:
-                        all_verses.extend(verses_data)
+                        all_pericopes.append({
+                            "book": get_boek_code(referentie.boek),
+                            "chapter": referentie.hoofdstuk,
+                            "verses": verses_data,
+                            "translation": "NB"
+                        })
                     time.sleep(0.3)
 
-            if all_verses and book_code:
-                # Unieke verzen, gesorteerd
-                unique_verses = {v['verse']: v for v in all_verses}
-                sorted_verses = sorted(unique_verses.values(), key=lambda x: x['verse'])
+        # 3. Save combined result
+        if all_pericopes:
+            # Filename generation based on the FULL raw reference
+            safe_name = raw_ref.replace(':', '_').replace(' ', '_').replace(';', '_')
+            safe_name = re.sub(r'[^\w\-.]', '', safe_name)
+            # Limit length
+            if len(safe_name) > 60: safe_name = safe_name[:60]
 
-                # Referentie string voor seen_refs (met originele verse spec)
-                ref_key = f"{book_chapter_base}:{original_verse_spec}"
-                if ref_key in seen_refs:
-                    continue
-                seen_refs.add(ref_key)
-
-                # Filename met versnummers
-                safe_name = f"{book_chapter_base}_{original_verse_spec}".replace(':', '_').replace(' ', '_')
-                safe_name = re.sub(r'[^\w\-.]', '', safe_name)
-
-                json_path = bijbel_dir / f"{safe_name}_NB.json"
-
-                if json_path.exists() and json_path.stat().st_size > 0:
-                    print(f"  ✓ Reeds gedownload: {json_path.name}")
-                    resultaten[ref_key] = str(json_path)
-                    continue
-
-                json_data = {
-                    "book": book_code,
-                    "chapter": chapter,
-                    "verses": sorted_verses,
-                    "translation": "NB"
-                }
-
-                with open(json_path, 'w', encoding='utf-8') as f:
-                    json.dump(json_data, f, indent=2, ensure_ascii=False)
-
-                print(f"  ✓ Opgeslagen: {json_path.name}")
-                resultaten[ref_key] = str(json_path)
-                continue
-
-        # Fallback: enkelvoudige referentie
-        referentie = parse_bijbelreferentie(ref_str)
-        if not referentie:
-            continue
-
-        ref_key = str(referentie)
-        if ref_key in seen_refs:
-            continue
-        seen_refs.add(ref_key)
-
-        # Vervang : en spaties door underscores voor een veilige bestandsnaam
-        safe_name = str(referentie).replace(':', '_').replace(' ', '_')
-        # Verwijder overige vreemde tekens
-        safe_name = re.sub(r'[^\w-]', '', safe_name)
-
-        json_path = bijbel_dir / f"{safe_name}_NB.json"
-
-        if json_path.exists() and json_path.stat().st_size > 0:
-            print(f"  ✓ Reeds gedownload: {json_path.name}")
-            resultaten[ref_key] = str(json_path)
-            continue
-
-        md_text, verses_data = haal_bijbeltekst_op(referentie)
-
-        if md_text and verses_data:
-            # Save JSON (NBV21 Structure)
-            json_data = {
-                "book": get_boek_code(referentie.boek),
-                "chapter": referentie.hoofdstuk,
-                "verses": verses_data,
-                "translation": "NB"
-            }
-
+            json_path = bijbel_dir / f"{safe_name}_NB.json"
+            
+            # If single pericope, save as object (for backward compatibility if preferred, but list is safer for generic)
+            # However, existing loaders might expect object for single files.
+            # nbv21 saves list if > 1. Let's do same.
+            final_data = all_pericopes if len(all_pericopes) > 1 else all_pericopes[0]
+            
             with open(json_path, 'w', encoding='utf-8') as f:
-                json.dump(json_data, f, indent=2, ensure_ascii=False)
-
+                json.dump(final_data, f, indent=2, ensure_ascii=False)
+                
             print(f"  ✓ Opgeslagen: {json_path.name}")
-            resultaten[ref_key] = str(json_path)
+            resultaten[raw_ref] = str(json_path)
         else:
-            print(f"  ✗ Kon niet ophalen: {referentie}")
-
-        time.sleep(0.5)
+            print(f"  ✗ Kon niet ophalen: {raw_ref}")
 
     return resultaten
 

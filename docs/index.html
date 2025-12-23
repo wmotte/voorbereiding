@@ -2077,6 +2077,10 @@
                                 let orderIndex = lezingenOrder.findIndex(l => {
                                     return l.book === normalizedBookCode && l.chapter === perikoop.chapter;
                                 });
+                                // Fallback: match by book only (fixes split chapters like Sefanja 2 & 3)
+                                if (orderIndex === -1) {
+                                     orderIndex = lezingenOrder.findIndex(l => l.book === normalizedBookCode);
+                                }
                                 if (orderIndex === -1) orderIndex = 999; // Unknown goes to end
 
                                 allPerikopen.push({
@@ -2094,25 +2098,48 @@
                         }
                     });
 
-                    // Sort by: 1) normalizedBook+chapter (to group same pericopes), 2) liturgical order, 3) translation order
+                    // Sort by: 1) liturgical order, 2) translation order, 3) chapter
                     const vertalingOrder = { 'grondtekst': 0, 'nbv21': 1, 'naardense_bijbel': 2 };
                     allPerikopen.sort((a, b) => {
-                        // First sort by normalized book + chapter to group same pericopes
-                        const aKey = `${a.normalizedBook}-${a.chapter}`;
-                        const bKey = `${b.normalizedBook}-${b.chapter}`;
-                        if (aKey !== bKey) {
-                            // Use orderIndex for ordering between different pericopes
-                            if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
-                            return aKey.localeCompare(bKey);
+                        if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
+                        if (a.vertalingKey !== b.vertalingKey) {
+                             return (vertalingOrder[a.vertalingKey] || 99) - (vertalingOrder[b.vertalingKey] || 99);
                         }
-                        // Within same pericope, sort by translation order
-                        return (vertalingOrder[a.vertalingKey] || 99) - (vertalingOrder[b.vertalingKey] || 99);
+                        return a.chapter - b.chapter;
                     });
 
-                    // Build submenu items
-                    allPerikopen.forEach(item => {
+                    // Group adjacent pericopes of same translation and book (Navigation Menu)
+                    const groupedPerikopen = [];
+                    let currentGroup = null;
+
+                    allPerikopen.forEach(perikoop => {
+                        if (currentGroup && 
+                            currentGroup.vertalingKey === perikoop.vertalingKey && 
+                            currentGroup.book === perikoop.book) {
+                            // Merge with current group
+                            currentGroup.parts.push({chapter: perikoop.chapter, verzen: perikoop.verzen});
+                        } else {
+                            // Start new group
+                            currentGroup = {
+                                ...perikoop,
+                                parts: [{chapter: perikoop.chapter, verzen: perikoop.verzen}]
+                            };
+                            groupedPerikopen.push(currentGroup);
+                        }
+                    });
+
+                    // Build submenu items from grouped list
+                    groupedPerikopen.forEach(item => {
                         const boekNaam = item.book_nl || getBijbelboekNaam(item.book);
-                        const label = `${boekNaam} ${item.chapter}:${item.verzen} (${item.vertaling})`;
+                        
+                        // Build combined reference string
+                        const refParts = item.parts.map(part => `${part.chapter}:${part.verzen}`);
+                        // Simple join: "2:3; 3:12-13"
+                        // Optimization: if chapters are same, combine? (Not strictly needed for Sefanja case)
+                        const refString = refParts.join('; ');
+
+                        const label = `${boekNaam} ${refString} (${item.vertaling})`;
+                        // Use the subKey of the FIRST item in the group as the anchor
                         subSections.push(item.subKey);
                         subSectionLabels[item.subKey] = label;
                     });
@@ -3659,9 +3686,9 @@
                             html += `</div>`;
                         }
 
-                        // Stijl en Rhetoriek
+                        // Stijl & Retoriek
                         if (lezing.literaire_analyse.stijl_retoriek) {
-                            html += `<div class="data-group"><div class="data-group-title">Stijl en Retoriek</div>`;
+                            html += `<div class="data-group"><div class="data-group-title">Stijl & Retoriek</div>`;
 
                             if (lezing.literaire_analyse.stijl_retoriek.literaire_middelen && Array.isArray(lezing.literaire_analyse.stijl_retoriek.literaire_middelen)) {
                                 html += `<div class="data-item">`;
@@ -3691,9 +3718,9 @@
                             html += `</div>`;
                         }
 
-                        // Karakters en Plot
+                        // Karakters & Plot
                         if (lezing.literaire_analyse.karakters_plot) {
-                            html += `<div class="data-group"><div class="data-group-title">Karakters en Plot</div>`;
+                            html += `<div class="data-group"><div class="data-group-title">Karakters & Plot</div>`;
 
                             if (lezing.literaire_analyse.karakters_plot.personages && Array.isArray(lezing.literaire_analyse.karakters_plot.personages)) {
                                 html += `<div class="data-item">`;
@@ -4406,6 +4433,10 @@
                         let orderIndex = lezingenOrder.findIndex(l => {
                             return l.book === normalizedBookCode && l.chapter === perikoop.chapter;
                         });
+                        // Fallback: match by book only (fixes split chapters like Sefanja 2 & 3)
+                        if (orderIndex === -1) {
+                             orderIndex = lezingenOrder.findIndex(l => l.book === normalizedBookCode);
+                        }
                         if (orderIndex === -1) orderIndex = 999;
 
                         // Get reading type
@@ -4425,22 +4456,44 @@
                 }
             });
 
-            // Sort by: 1) normalizedBook+chapter (to group same pericopes), 2) liturgical order, 3) translation order
+            // Sort by: 1) liturgical order, 2) translation order, 3) chapter
             const vertalingOrder = { 'grondtekst': 0, 'nbv21': 1, 'naardense_bijbel': 2 };
             allPerikopen.sort((a, b) => {
-                // First sort by normalized book + chapter to group same pericopes
-                const aKey = `${a.normalizedBook}-${a.chapter}`;
-                const bKey = `${b.normalizedBook}-${b.chapter}`;
-                if (aKey !== bKey) {
-                    // Use orderIndex for ordering between different pericopes
-                    if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
-                    return aKey.localeCompare(bKey);
+                if (a.orderIndex !== b.orderIndex) return a.orderIndex - b.orderIndex;
+                if (a.vertalingKey !== b.vertalingKey) {
+                     return (vertalingOrder[a.vertalingKey] || 99) - (vertalingOrder[b.vertalingKey] || 99);
                 }
-                // Within same pericope, sort by translation order
-                return (vertalingOrder[a.vertalingKey] || 99) - (vertalingOrder[b.vertalingKey] || 99);
+                return a.chapter - b.chapter;
             });
 
-            // Render all perikopen
+            // Group adjacent pericopes of same translation and book
+            const groupedPerikopen = [];
+            let currentGroup = null;
+
+            allPerikopen.forEach(perikoop => {
+                // Determine verse range for reference building
+                const eersteVers = perikoop.verses[0]?.verse || 1;
+                const laatsteVers = perikoop.verses[perikoop.verses.length - 1]?.verse || eersteVers;
+                const verzenRef = eersteVers === laatsteVers ? eersteVers : `${eersteVers}-${laatsteVers}`;
+
+                if (currentGroup && 
+                    currentGroup.vertalingKey === perikoop.vertalingKey && 
+                    currentGroup.book === perikoop.book) {
+                    // Merge with current group
+                    currentGroup.verses.push(...perikoop.verses);
+                    currentGroup.parts.push({chapter: perikoop.chapter, verzen: verzenRef});
+                } else {
+                    // Start new group
+                    currentGroup = {
+                        ...perikoop,
+                        parts: [{chapter: perikoop.chapter, verzen: verzenRef}],
+                        verses: [...perikoop.verses] // Copy verses
+                    };
+                    groupedPerikopen.push(currentGroup);
+                }
+            });
+
+            // Render grouped perikopen
             const vertalingNamen = {
                 'naardense_bijbel': 'NB',
                 'nbv21': 'NBV21',
@@ -4449,14 +4502,14 @@
 
             let html = '';
 
-            allPerikopen.forEach(perikoop => {
+            groupedPerikopen.forEach(perikoop => {
                 const vertalingTitel = vertalingNamen[perikoop.vertalingKey] || perikoop.vertalingKey;
                 const boekNaam = perikoop.book_nl || getBijbelboekNaam(perikoop.book);
-                const eersteVers = perikoop.verses[0]?.verse || 1;
-                const laatsteVers = perikoop.verses[perikoop.verses.length - 1]?.verse || eersteVers;
-                const verzenRef = eersteVers === laatsteVers ? eersteVers : `${eersteVers}-${laatsteVers}`;
+                
+                // Build combined reference string
+                const refString = perikoop.parts.map(part => `${part.chapter}:${part.verzen}`).join('; ');
 
-                // Anchor ID matches the submenu navigation
+                // Anchor ID matches the submenu navigation (using first chunk's key)
                 const anchorId = `section-Bijbelteksten-${perikoop.book}-${perikoop.chapter}-${perikoop.vertalingKey}`;
 
                 // For grondtekst, include language attribute
@@ -4467,7 +4520,7 @@
                 html += `<div class="bijbel-perikoop"${languageAttr}>`;
                 html += `<div class="bijbel-header">`;
                 html += `<span class="bijbel-boek-badge${perikoop.vertalingKey === 'grondtekst' ? ' bijbel-grondtekst-badge' : ''}">${escapeHtml(vertalingTitel)}</span>`;
-                html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${perikoop.chapter}:${verzenRef}</span>`;
+                html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${refString}</span>`;
                 if (language) {
                     html += `<span class="bijbel-language-tag">${escapeHtml(language)}</span>`;
                 }
