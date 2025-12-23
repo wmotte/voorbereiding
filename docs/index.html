@@ -1838,7 +1838,11 @@
         const scrollTopBtn = document.getElementById('scroll-top');
         
         // List of available JSON files
-        const jsonFiles = ["Den_Haag_28_dec_2025.json", "Waddinxveen_4_jan_2026.json", "Boskoop_11_jan_2026.json"];
+        const jsonFiles = [
+            { file: "Den_Haag_28_dec_2025.json", label: "Den Haag (28 december 2025, Kloosterkerk)" },
+            { file: "Waddinxveen_4_jan_2026.json", label: "Waddinxveen (4 januari 2026, Brugkerk)" },
+            { file: "Boskoop_11_jan_2026.json", label: "Boskoop (11 januari 2026, Dorpskerk)" }
+        ];
         //const jsonFiles = ["voorbeeld_03.json"];
 
 
@@ -4812,16 +4816,16 @@
         // --- NEW ---
         // Populate the file selector and load the default file
         function initialize() {
-             jsonFiles.forEach(file => {
+             jsonFiles.forEach(item => {
                  const option = document.createElement('option');
-                 option.value = file;
-                 option.textContent = file;
+                 option.value = item.file;
+                 option.textContent = item.label;
                  fileSelector.appendChild(option);
              });
 
              if (jsonFiles.length > 0) {
-                 // Set the selector to the exegese file and load it, or fall back to first file
-                 const defaultFile = jsonFiles.includes('voorbeeld_02.json') ? 'voorbeeld_01.json' : jsonFiles[0];
+                 // Set the selector to the first file by default
+                 const defaultFile = jsonFiles[0].file;
                  fileSelector.value = defaultFile;
                  loadFile(defaultFile);
              }
