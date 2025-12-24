@@ -1950,7 +1950,10 @@
             '05_interpretatieve_synthese': 'Interpretatieve Synthese',
             '06_actueel_wereldnieuws': 'Actueel Wereldnieuws',
             '07_politieke_orientatie': 'Politieke Oriëntatie',
+            '08a_exegese': 'Exegese',
             '08_exegese': 'Exegese',
+            '08b_liedsuggesties_database': 'Passende Liederen',
+            '08_liedsuggesties_database': 'Passende Liederen',
             '09_kunst_cultuur': 'Kunst & Cultuur',
             '10_focus_en_functie': 'Focus & Functie',
             '11_kalender': 'Kalender',
@@ -2111,8 +2114,13 @@
                 const title = sectionTitles[key] || formatKey(key);
                 // Assign number 02 to Bijbelteksten to make it the second item, otherwise use normal numbering
                 let num;
+                
                 if (key === 'Bijbelteksten') {
                     num = '02'; // Always assign 02 to make it second in the menu
+                } else if (key === '08_exegese' || key === '08a_exegese') {
+                    num = '08a';
+                } else if (key === '08_liedsuggesties_database' || key === '08b_liedsuggesties_database') {
+                    num = '08b';
                 } else if (key === '13_homiletische_analyse') {
                     num = '13a';
                 } else if (key === '13_homiletische_analyse_buttrick') {
@@ -2129,10 +2137,11 @@
                     num = '15a';
                 } else if (key === '15_kindermoment') {
                     num = '15b';
-                } else {
-                    const numMatch = key.match(/^(\d+)_/);
+                } else { 
+                    const numMatch = key.match(/^(\d+[a-z]?)_/);
                     num = numMatch ? numMatch[1] : String(unnumberedCounter++).padStart(2, '0');
                 }
+                
                 const sectionData = jsonData[key];
 
                 // Special handling for Bijbelteksten - show bible references as submenu
@@ -2286,7 +2295,7 @@
                             subSectionLabels[`dag-${index + 1}`] = cleanDatum;
                         });
                     }
-                } else if (key === '08_exegese') {
+                } else if (key === '08a_exegese') {
                     // Special handling for Exegese - show scripture references
                     if (sectionData.per_lezing && Array.isArray(sectionData.per_lezing)) {
                         sectionData.per_lezing.forEach((lezing, index) => {
@@ -2484,8 +2493,8 @@
                 contentHtml = renderGebedenSection(dataToRender);
             } else if (key === '12_representatieve_hoorders') {
                 contentHtml = renderHoordersSection(dataToRender);
-            } else if (key === '08_exegese') {
-                contentHtml = renderExegeseSection(dataToRender);
+            } else if (key === '08_exegese' || key === '08a_exegese') {
+                contentHtml = renderExegeseSection(dataToRender, key);
             } else if (key === '01_zondag_kerkelijk_jaar') {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             } else if (key === '15_kindermoment' || key === '15_bezinningsmoment') {
@@ -2613,7 +2622,8 @@
             }
 
             // Special rendering for specific keys
-            if (key === 'liedsuggesties' || key.includes('lied')) {
+            const songbookKeys = ['liedsuggesties', 'liedboek_2013', 'weerklank', 'weerklank_psalmen', 'hemelhoog', 'op_toonhoogte'];
+            if (songbookKeys.includes(key) || key.includes('lied')) {
                 return renderLiedsuggesties(key, value);
             }
 
@@ -2822,28 +2832,59 @@
 
         function renderLiedsuggesties(key, value) {
             let html = `<div class="data-group">`;
-            html += `<div class="data-group-title">${escapeHtml(formatKey(key))}</div>`;
+            
+            // Custom titles
+            const titles = {
+                'liedboek_2013': 'Liedboek (2013)',
+                'weerklank': 'Weerklank',
+                'weerklank_psalmen': 'Weerklank (Psalmen)',
+                'hemelhoog': 'Hemelhoog',
+                'op_toonhoogte': 'Op Toonhoogte (2015)'
+            };
+            const title = titles[key] || formatKey(key);
+            
+            html += `<div class="data-group-title">${escapeHtml(title)}</div>`;
 
-            if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+            // Helper to render grid of songs
+            const renderGrid = (list) => {
+                let gridHtml = `<div class="lied-grid">`;
+                list.forEach(lied => {
+                    if (typeof lied === 'object') {
+                        gridHtml += `<div class="lied-item">`;
+                        // Determine fields based on structure (new vs old)
+                        const nummer = lied.nummer;
+                        const titel = lied.titel;
+                        const regel = lied.eerste_regel; // Old
+                        const toelichting = lied.toelichting || lied.match_detail; // New fallback
+                        const typeMatch = lied.type_match; // New
+                        const suggestie = lied.suggestie_gebruik; // New
+
+                        if (typeMatch) gridHtml += `<div style="float:right; font-size:0.7em; background:var(--accent-light); color:white; padding:2px 6px; border-radius:4px;">${processText(typeMatch)}</div>`;
+                        if (nummer) gridHtml += `<div class="lied-nummer">${processText(nummer)}</div>`;
+                        if (titel) gridHtml += `<div class="lied-titel">${processText(titel)}</div>`;
+                        if (regel) gridHtml += `<div class="lied-regel">\u201c${processText(regel)}\u201d</div>`;
+                        
+                        if (suggestie) gridHtml += `<div style="font-size:0.85em; color:var(--accent); margin-top:4px;">Suggestie: ${processText(suggestie)}</div>`;
+                        
+                        if (toelichting) gridHtml += `<div class="lied-toelichting">${processText(toelichting)}</div>`;
+                        gridHtml += `</div>`;
+                    }
+                });
+                gridHtml += `</div>`;
+                return gridHtml;
+            };
+
+            if (Array.isArray(value)) {
+                // NEW STRUCTURE: Direct array of songs
+                html += renderGrid(value);
+            } else if (typeof value === 'object' && value !== null) {
+                // OLD STRUCTURE: nested categories
                 for (const [category, liederen] of Object.entries(value)) {
                     if (category.startsWith('_')) continue;
                     if (!Array.isArray(liederen)) continue;
 
                     html += `<div style="margin-top: 15px; margin-bottom: 8px;"><strong>${escapeHtml(formatKey(category))}</strong></div>`;
-                    html += `<div class="lied-grid">`;
-
-                    liederen.forEach(lied => {
-                        if (typeof lied === 'object') {
-                            html += `<div class="lied-item">`;
-                            if (lied.nummer) html += `<div class="lied-nummer">${processText(lied.nummer)}</div>`;
-                            if (lied.titel) html += `<div class="lied-titel">${processText(lied.titel)}</div>`;
-                            if (lied.eerste_regel) html += `<div class="lied-regel">\u201c${processText(lied.eerste_regel)}\u201d</div>`;
-                            if (lied.toelichting) html += `<div class="lied-toelichting">${processText(lied.toelichting)}</div>`;
-                            html += `</div>`;
-                        }
-                    });
-
-                    html += `</div>`;
+                    html += renderGrid(liederen);
                 }
             }
 
@@ -3680,13 +3721,13 @@
         }
 
         // Render Exegese section
-        function renderExegeseSection(data) {
+        function renderExegeseSection(data, sectionKey = '08a_exegese') {
             let html = '';
 
             // Render per lezing
             if (data.per_lezing && Array.isArray(data.per_lezing)) {
                 data.per_lezing.forEach((lezing, index) => {
-                    html += `<div id="section-08_exegese-lezing-${index + 1}" class="subsection-anchor"></div>`;
+                    html += `<div id="section-${sectionKey}-lezing-${index + 1}" class="subsection-anchor"></div>`;
                     html += `<div class="data-group">`;
                     html += `<div class="data-group-title">${escapeHtml(lezing.referentie || `Lezing ${index + 1}`)}</div>`;
 

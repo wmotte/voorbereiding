@@ -357,7 +357,7 @@ def read_previous_analyses(folder: Path) -> dict:
         ("05_interpretatieve_synthese", "synthese"),
         ("06_actueel_wereldnieuws", "wereldnieuws"),
         ("07_politieke_orientatie", "politieke_orientatie"),
-        ("08_exegese", "exegese"),
+        ("08a_exegese", "exegese"),
         ("09_kunst_cultuur", "kunst_cultuur"),
         ("10_focus_en_functie", "focus_en_functie"),
         ("11_kalender", "kalender"),
@@ -913,7 +913,7 @@ def update_summary(output_dir: Path):
                 data = json.load(f)
 
             new_analyses = [
-                ("08_exegese", "Exegese van de Schriftlezingen"),
+                ("08a_exegese", "Exegese van de Schriftlezingen"),
                 ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
                 ("10_focus_en_functie", "Focus en Functie"),
                 ("11_kalender", "Kalender"),
@@ -952,7 +952,7 @@ def update_summary(output_dir: Path):
             content = f.read()
 
         new_analyses = [
-            ("08_exegese", "Exegese van de Schriftlezingen"),
+            ("08a_exegese", "Exegese van de Schriftlezingen"),
             ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
             ("10_focus_en_functie", "Focus en Functie"),
             ("11_kalender", "Kalender"),
@@ -1102,7 +1102,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
     print("=" * 60)
 
     analysis_definitions = [
-        ("08_exegese", "Exegese van de Schriftlezingen"),
+        ("08a_exegese", "Exegese van de Schriftlezingen"),
         ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
         ("10_focus_en_functie", "Focus en Functie"),
         ("11_kalender", "Kalender: Gedenkdagen en Bijzondere Momenten"),
@@ -1129,11 +1129,11 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 
     if args.exegese:
         print("\nINFO: Alleen exegese wordt uitgevoerd (--exegese)")
-        analysis_definitions = [x for x in analysis_definitions if x[0] == "08_exegese"]
+        analysis_definitions = [x for x in analysis_definitions if x[0] == "08a_exegese"]
 
     # Mapping van oude naar nieuwe bestandsnamen (voor backwards compatibility)
     old_to_new = {
-        "08_exegese": "07_exegese",
+        "08a_exegese": "07_exegese",
         "09_kunst_cultuur": "08_kunst_cultuur",
         "10_focus_en_functie": "09_focus_en_functie",
         "11_kalender": "10_kalender",

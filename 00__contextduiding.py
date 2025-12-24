@@ -28,14 +28,23 @@ except ImportError:
     print("Installeer deze met: pip install google-genai")
     sys.exit(1)
 
+# Probeer Neo4j driver te importeren
+try:
+    from neo4j import GraphDatabase
+    NEO4J_AVAILABLE = True
+except ImportError:
+    NEO4J_AVAILABLE = False
+    print("WAARSCHUWING: 'neo4j' library niet gevonden. Liedsuggesties uit database worden overgeslagen.")
+    print("Installeer met: pip install neo4j")
+
 # Configuratie
 SCRIPT_DIR = Path(__file__).parent.resolve()
 OUTPUT_DIR = SCRIPT_DIR / "output"
 PROMPTS_DIR = SCRIPT_DIR / "prompts"
 
 # Model keuze: Gemini 3 flash als primair, pro als fallback
-#MODEL_NAME = "gemini-3-flash-preview"
-MODEL_NAME = "gemini-3-pro-preview"
+MODEL_NAME = "gemini-3-flash-preview"
+#MODEL_NAME = "gemini-3-pro-preview"
 MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
@@ -237,6 +246,85 @@ De volgende lezingen staan vast voor deze datum en MOETEN worden gebruikt:
     return {
         "name": "01_zondag_kerkelijk_jaar",
         "title": "Zondag van het Kerkelijk Jaar",
+        "prompt": full_prompt
+    }
+
+
+def format_neo4j_results_for_prompt(results: dict) -> str:
+    """Formatteer de Neo4j resultaten dictionary naar een leesbare string voor de prompt."""
+    output = []
+    
+    for bundel, data in results.items():
+        output.append(f"\n### Bundel: {bundel}")
+        
+        # Lezingen matches
+        if data.get("op_lezing"):
+            output.append(f"**Matches op Schriftlezing:**")
+            for song in data["op_lezing"]:
+                meta = f" [{song['metadata']}]" if song.get('metadata') else ""
+                output.append(f"- {song['nummer']} '{song['titel']}' (Ref: {song['verwijzing']} | Bron: {song['bron_lezing']}){meta}")
+        
+        # Thema matches
+        if data.get("op_thema"):
+            output.append(f"**Matches op Thematiek:**")
+            for song in data["op_thema"]:
+                meta = f" [{song['metadata']}]" if song.get('metadata') else ""
+                output.append(f"- {song['nummer']} '{song['titel']}' ({song['match']}){meta}")
+
+        # Seizoen matches
+        if data.get("op_seizoen"):
+            output.append(f"**Matches op Liturgisch Seizoen:**")
+            for song in data["op_seizoen"]:
+                meta = f" [{song['metadata']}]" if song.get('metadata') else ""
+                output.append(f"- {song['nummer']} '{song['titel']}' ({song['match']}){meta}")
+                
+        if not data.get("op_lezing") and not data.get("op_thema") and not data.get("op_seizoen"):
+            output.append("(Geen resultaten gevonden)")
+            
+    return "\n".join(output)
+
+
+def build_liedsuggesties_analysis(user_input: dict, kerkelijk_jaar_result: dict, context_samenvatting: str = "") -> dict:
+    """Bouw de analyse voor liedsuggesties op basis van Neo4j data."""
+    if not NEO4J_AVAILABLE:
+        return None
+
+    # 1. Haal lezingen en thema op
+    lezingen_dict = {}
+    if "lezingen" in kerkelijk_jaar_result:
+        for k, v in kerkelijk_jaar_result["lezingen"].items():
+            if isinstance(v, dict) and "referentie" in v:
+                lezingen_dict[k] = v["referentie"]
+            elif isinstance(v, str):
+                lezingen_dict[k] = v
+    
+    thematiek = kerkelijk_jaar_result.get("thematiek")
+    liturgische_periode = kerkelijk_jaar_result.get("positie_kerkelijk_jaar", {}).get("liturgische_periode")
+    
+    # 2. Voer Neo4j query uit
+    neo4j_results = find_hymns_neo4j(lezingen_dict, thematiek, liturgische_periode)
+    
+    # 3. Formatteer voor prompt
+    neo4j_text = format_neo4j_results_for_prompt(neo4j_results)
+    
+    # 4. Vul prompt in
+    base_prompt = load_prompt("01a_liedsuggesties.md", user_input)
+    
+    # Context variabelen uit kerkelijk jaar resultaat
+    zondag_naam = kerkelijk_jaar_result.get("positie_kerkelijk_jaar", {}).get("zondag_naam", "Onbekend")
+    
+    lezingen_samenvatting = ", ".join([f"{k}: {v}" for k, v in lezingen_dict.items()])
+    centraal_thema = thematiek.get("centraal_thema", "Onbekend") if thematiek else "Onbekend"
+
+    full_prompt = base_prompt.replace("{{neo4j_resultaten}}", neo4j_text)
+    full_prompt = full_prompt.replace("{{zondag_naam}}", zondag_naam)
+    full_prompt = full_prompt.replace("{{lezingen_samenvatting}}", lezingen_samenvatting)
+    full_prompt = full_prompt.replace("{{centraal_thema}}", centraal_thema)
+    full_prompt = full_prompt.replace("{{context_samenvatting}}", context_samenvatting)
+    
+    return {
+        "name": "08b_liedsuggesties_database",
+        "title": "Passende Liederen",
         "prompt": full_prompt
     }
 
@@ -493,91 +581,216 @@ def run_analysis(client: genai.Client, prompt: str, title: str, model: str = Non
     return {"error": f"Analyse mislukt na herpogingen (inclusief fallback)", "title": title}
 
 
-def verify_liedboek(client: genai.Client, content: dict) -> dict:
-    """Verifieer alle liedsuggesties met Google Search."""
+def parse_bible_reference(ref_str: str) -> tuple[Optional[str], Optional[int]]:
+    """Haal boek en hoofdstuk uit een referentie string (bijv. 'Lucas 2:1-20')."""
+    if not ref_str or ref_str.lower() == 'geen':
+        return None, None
+        
+    # Regex voor: [1-2] [Naam] [Hoofdstuk]:...
+    # Bijv: "1 Johannes 4", "Lucas 2", "Gen 1:1"
+    match = re.search(r'(\d?\s?[a-zA-Zëï]+)\.?\s+(\d+)', ref_str)
+    if match:
+        book = match.group(1).strip()
+        chapter = int(match.group(2))
+        return book, chapter
+    return None, None
+
+
+def find_hymns_neo4j(lezingen: dict, thematiek: dict = None, liturgische_periode: str = None) -> dict:
+    """
+    Zoek liederen in de lokale Neo4j database die passen bij de lezingen, thematiek én liturgische periode.
+    Retourneert resultaten voor alle bundels inclusief metadata.
+    """
+    if not NEO4J_AVAILABLE:
+        return {}
+
     print(f"\n{'─' * 50}")
-    print("VERIFICATIE: Liedboek 2013 suggesties controleren...")
+    print("NEO4J: Liedsuggesties zoeken (Scripture, Thema & Seizoen)...")
     print(f"{'─' * 50}")
-    print("Bezig met verifiëren van liednummers en titels...")
 
-    content_str = json.dumps(content, ensure_ascii=False, indent=2)
+    uri = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
+    user = os.environ.get("NEO4J_USER", "neo4j")
+    password = os.environ.get("NEO4J_PASSWORD", "password")
 
-    verification_prompt = """Je bent een strenge factchecker voor het 'Liedboek - Zingen en bidden in huis en kerk' (2013).
+    bundels = ["Liedboek", "Hemelhoog", "OpToonhoogte", "Weerklank", "WeerklankPsalm"]
+    results = {bundel: {"op_lezing": [], "op_thema": [], "op_seizoen": []} for bundel in bundels}
+    found_ids = {bundel: set() for bundel in bundels}
 
-## Instructies
+    try:
+        with GraphDatabase.driver(uri, auth=(user, password)) as driver:
+            try:
+                driver.verify_connectivity()
+            except Exception as e:
+                print(f"⚠ Kan geen verbinding maken met Neo4j: {e}")
+                return {}
 
-1. Controleer ELKE liedsuggestie in de onderstaande JSON.
-2. Gebruik Google Search om te verifiëren of het lied met dat nummer en die titel BESTAAT in Liedboek 2013.
-   - Zoektermen: "Liedboek 2013 [nummer]", "Liedboek 2013 [titel]", "Kerkliedwiki [nummer]"
-3. Verwijder liederen die:
-   - NIET in Liedboek 2013 staan.
-   - Uit andere bundels komen (zoals Weerklank, Opwekking, Evangelische Liedbundel), tenzij ze OOK in Liedboek 2013 staan.
-   - Niet bestaan.
-4. Als het nummer niet klopt bij de titel, corrigeer het dan op basis van Kerkliedwiki.
-5. Behoud de originele JSON structuur.
-6. Retourneer ALLEEN valide JSON.
+            # Helper voor metadata query deel
+            meta_return = ", s.sentiment as sentiment, s.emotionele_intensiteit as intensiteit, head([(s)-[:HAS_FORM]->(f) | f.name]) as vorm"
 
-## Te controleren JSON:
-
-"""
-
-    max_retries = 1
-    for attempt in range(max_retries + 1):
-        try:
-            response = client.models.generate_content(
-                model=MODEL_NAME,
-                contents=verification_prompt + content_str,
-                config=types.GenerateContentConfig(
-                    temperature=0.1,  # Zeer laag voor maximale precisie
-                    top_p=0.85,
-                    top_k=20,
-                    max_output_tokens=8192,
-                    tools=[types.Tool(
-                        google_search=types.GoogleSearch()
-                    )],
-                    safety_settings=[
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                    ]
-                )
-            )
-
-            if response.text:
-                verified = extract_json(response.text)
-                if "error" not in verified:
-                    print("✓ Verificatie voltooid - foute liedsuggesties verwijderd")
-                    return verified
-                else:
-                    print(f"⚠ Verificatie parsing mislukt (poging {attempt + 1})")
-                    if attempt < max_retries:
-                        continue
-            else:
-                print(f"✗ Verificatie mislukt (geen text) (poging {attempt + 1})")
-                if attempt < max_retries:
+            # 1. ZOEKEN OP LEZINGEN
+            for key, reading_ref in lezingen.items():
+                if not reading_ref or key == "psalm" or not isinstance(reading_ref, str): continue
+                
+                book, chapter = parse_bible_reference(reading_ref)
+                if not book or not chapter:
                     continue
 
-        except Exception as e:
-            print(f"✗ Verificatie fout: {str(e)} (poging {attempt + 1})")
-            if attempt < max_retries:
-                continue
+                print(f"  [Lezing] Zoeken bij {key}: {reading_ref}...")
+
+                query = f"""
+                USE hymns
+                MATCH (s:Song)-[:REFERENCES]->(br:BiblicalReference)
+                WHERE (
+                    br.reference CONTAINS $chapter_str OR 
+                    br.reference CONTAINS $reading_ref
+                )
+                MATCH (s)-[:BELONGS_TO]->(sb:Songbook)
+                WHERE sb.name IN $bundels
+                RETURN sb.name as bundel, s.id as id, s.nummer AS nummer, s.titel AS titel, br.reference AS reference {meta_return}
+                ORDER BY s.nummer
+                """
+                
+                try:
+                    records, _, _ = driver.execute_query(
+                        query, 
+                        chapter_str=f"{book} {chapter}",
+                        reading_ref=reading_ref,
+                        bundels=bundels,
+                        database_="hymns"
+                    )
+                    
+                    for record in records:
+                        bundel = record["bundel"]
+                        if record["id"] in found_ids[bundel]: continue
+                        found_ids[bundel].add(record["id"])
+                        
+                        meta = []
+                        if record["vorm"]: meta.append(record["vorm"])
+                        if record["sentiment"]: meta.append(f"Sfeer: {record['sentiment']}")
+                        if record["intensiteit"]: meta.append(f"Intensiteit: {record['intensiteit']}/10")
+                        
+                        results[bundel]["op_lezing"].append({
+                            "nummer": record["nummer"],
+                            "titel": record["titel"],
+                            "verwijzing": record["reference"],
+                            "bron_lezing": reading_ref,
+                            "metadata": ", ".join(meta)
+                        })
+                            
+                except Exception as q_err:
+                    print(f"  ⚠ Fout in query voor {reading_ref}: {q_err}")
+
+            # 2. ZOEKEN OP THEMATIEK
+            if thematiek:
+                keywords = set()
+                if thematiek.get("centraal_thema"):
+                    keywords.update(re.findall(r'\w{4,}', thematiek["centraal_thema"].lower()))
+                if thematiek.get("stemming"):
+                    keywords.update(re.findall(r'\w{4,}', thematiek["stemming"].lower()))
+                
+                stopwoorden = {'deze', 'voor', 'door', 'over', 'naar', 'niet', 'maar', 'want', 'zijn', 'haar', 'waarin', 'welke', 'zondag'}
+                keywords = [k for k in keywords if k not in stopwoorden]
+                
+                if keywords:
+                    print(f"  [Thema]  Zoeken op {len(keywords)} trefwoorden...")
+                    
+                    query_theme = f"""
+                    USE hymns
+                    MATCH (s:Song)-[:HAS_THEME|HAS_CONCEPT|HAS_EMOTION|HAS_MOOD]-(node)
+                    WHERE any(word IN $keywords WHERE toLower(node.name) CONTAINS word)
+                    MATCH (s)-[:BELONGS_TO]->(sb:Songbook)
+                    WHERE sb.name IN $bundels
+                    RETURN sb.name as bundel, s.id as id, s.nummer AS nummer, s.titel AS titel, node.name AS match_term, labels(node) as match_type {meta_return}
+                    ORDER BY s.nummer
+                    LIMIT 30
+                    """
+                    
+                    try:
+                        records, _, _ = driver.execute_query(
+                            query_theme, 
+                            keywords=list(keywords),
+                            bundels=bundels,
+                            database_="hymns"
+                        )
+                        
+                        for record in records:
+                            bundel = record["bundel"]
+                            if record["id"] in found_ids[bundel]: continue
+                            found_ids[bundel].add(record["id"])
+                            
+                            match_type = [l for l in record["match_type"] if l in ['Theme', 'Concept', 'Emotion', 'Mood']]
+                            match_label = match_type[0] if match_type else "Concept"
+                            
+                            meta = []
+                            if record["vorm"]: meta.append(record["vorm"])
+                            if record["sentiment"]: meta.append(f"Sfeer: {record['sentiment']}")
+                            
+                            results[bundel]["op_thema"].append({
+                                "nummer": record["nummer"],
+                                "titel": record["titel"],
+                                "match": f"{match_label}: {record['match_term']}",
+                                "metadata": ", ".join(meta)
+                            })
+                            
+                    except Exception as t_err:
+                        print(f"  ⚠ Fout in thema query: {t_err}")
+
+            # 3. ZOEKEN OP LITURGISCH SEIZOEN
+            if liturgische_periode and liturgische_periode.lower() not in ['tijd door het jaar', 'onbekend']:
+                print(f"  [Seizoen] Zoeken voor periode: {liturgische_periode}...")
+                
+                # We zoeken specifiek naar Theme nodes die de periode naam bevatten (bijv. 'Advent')
+                # en beperken tot max 20 resultaten om flooding te voorkomen
+                query_season = f"""
+                USE hymns
+                MATCH (s:Song)-[:HAS_THEME]->(t:Theme)
+                WHERE toLower(t.name) CONTAINS toLower($periode)
+                MATCH (s)-[:BELONGS_TO]->(sb:Songbook)
+                WHERE sb.name IN $bundels
+                RETURN sb.name as bundel, s.id as id, s.nummer AS nummer, s.titel AS titel, t.name AS match_term {meta_return}
+                ORDER BY s.nummer
+                LIMIT 20
+                """
+                
+                try:
+                    records, _, _ = driver.execute_query(
+                        query_season, 
+                        periode=liturgische_periode,
+                        bundels=bundels,
+                        database_="hymns"
+                    )
+                    
+                    for record in records:
+                        bundel = record["bundel"]
+                        if record["id"] in found_ids[bundel]: continue
+                        found_ids[bundel].add(record["id"])
+                        
+                        meta = []
+                        if record["vorm"]: meta.append(record["vorm"])
+                        if record["sentiment"]: meta.append(record["sentiment"])
+                        
+                        results[bundel]["op_seizoen"].append({
+                            "nummer": record["nummer"],
+                            "titel": record["titel"],
+                            "match": f"Seizoen: {record['match_term']}",
+                            "metadata": ", ".join(meta)
+                        })
+                        
+                except Exception as s_err:
+                    print(f"  ⚠ Fout in seizoen query: {s_err}")
+
+
+    except Exception as e:
+        print(f"⚠ Neo4j driver fout: {e}")
+
+    for bundel in bundels:
+        c_l = len(results[bundel]["op_lezing"])
+        c_t = len(results[bundel]["op_thema"])
+        c_s = len(results[bundel]["op_seizoen"])
+        if c_l + c_t + c_s > 0:
+            print(f"✓ {bundel}: {c_l} lezing, {c_t} thema, {c_s} seizoen.")
     
-    # Als alles mislukt, retourneer originele content
-    print("⚠ Verificatie volledig mislukt - originele data behouden")
-    return content
+    return results
 
 
 def choice_is_yes(choice: str) -> bool:
@@ -883,9 +1096,6 @@ def main():
             first_analysis['title']
         )
         
-        # VERIFICATIE SLAG
-        kerkelijk_jaar_result = verify_liedboek(client, kerkelijk_jaar_result)
-
         save_analysis(
             output_dir,
             first_analysis['name'],
@@ -933,6 +1143,53 @@ def main():
 
         result = run_analysis(client, analysis['prompt'], analysis['title'])
         save_analysis(output_dir, analysis['name'], result, analysis['title'], user_input)
+
+    # FASE 3: Liedsuggesties uit Database (met volledige context)
+    print("\n" + "─" * 60)
+    print("FASE 3: Liedsuggesties uit Database")
+    print("─" * 60)
+
+    if NEO4J_AVAILABLE:
+        # Verzamel context uit alle gegenereerde bestanden
+        context_parts = []
+        for analysis in remaining_analyses:
+            json_path = output_dir / f"{analysis['name']}.json"
+            if json_path.exists():
+                try:
+                    with open(json_path, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                        # We pakken de samenvatting of relevante secties als die bestaan
+                        # Dit is afhankelijk van de JSON structuur per analyse
+                        if "samenvatting" in data:
+                            context_parts.append(f"### {analysis['title']}\n{data['samenvatting']}")
+                        elif "kernpunten" in data:
+                            context_parts.append(f"### {analysis['title']}\n" + "\n".join(f"- {p}" for p in data['kernpunten']))
+                        # Fallback: dump de hele content (beperkt)
+                        else:
+                            # Filter meta keys
+                            clean_data = {k:v for k,v in data.items() if not k.startswith("_")}
+                            context_parts.append(f"### {analysis['title']}\n{str(clean_data)[:500]}...")
+                except Exception as e:
+                    print(f"⚠ Fout bij lezen context {analysis['name']}: {e}")
+
+        context_samenvatting = "\n\n".join(context_parts)
+        
+        lied_analysis = build_liedsuggesties_analysis(user_input, kerkelijk_jaar_result, context_samenvatting)
+        if lied_analysis:
+            # Check of bestand al bestaat
+            file_path_json = output_dir / f"{lied_analysis['name']}.json"
+            if file_path_json.exists():
+                 overwrite = input(f"  {lied_analysis['name']}.json bestaat al. Overschrijven? (j/n): ").strip().lower()
+                 if overwrite == 'j':
+                     save_log(LOGS_DIR, lied_analysis['name'], lied_analysis['prompt'])
+                     lied_result = run_analysis(client, lied_analysis['prompt'], lied_analysis['title'])
+                     save_analysis(output_dir, lied_analysis['name'], lied_result, lied_analysis['title'], user_input)
+                 else:
+                     print(f"  Overgeslagen: {lied_analysis['name']}")
+            else:
+                 save_log(LOGS_DIR, lied_analysis['name'], lied_analysis['prompt'])
+                 lied_result = run_analysis(client, lied_analysis['prompt'], lied_analysis['title'])
+                 save_analysis(output_dir, lied_analysis['name'], lied_result, lied_analysis['title'], user_input)
 
     print("\n" + "=" * 60)
     print("KLAAR")
