@@ -29,7 +29,9 @@ Dit project combineert diepgaande **contextanalyse** (hoorders, samenleving) met
 Inspiratie voor dit hulpmiddel is geput uit **"De Eerste Dag"**, de officiële, oecumenische handreiking van de Raad van Kerken in Nederland. "De Eerste Dag" ondersteunt bij de voorbereiding van de wekelijkse eredienst, aansluitend bij het kerkelijk jaar en de liturgie. Het biedt commentaren bij de lezingen, suggesties voor de liturgie, gebeden en toepassingen voor kinderwerk, en helpt bij het structureren van de dienst (de "orde").
 
 Met dit digitale hulpmiddel wordt die voorbereiding veel dynamischer én contextueler. De voorganger kan specifiek opgeven om welke hoorders het gaat in welke tijd en op welke plaats. Ook kan hij of zij nu zelf bepalen welke onderdelen van belang zijn in de voorbereiding. De output van de tool biedt de mogelijkheid om de eigen exegesetische inzichten en eigen homiletische structuur te toetsen. Sommigen willen meer informatie over interactieve momenten (zoals het kindermoment), terwijl weer anderen geholpen zijn bij de identificatie van relevante kunst- en cultuurartefacten. 
-Een enkeling zoekt inspiratie in preekschetsen van belangrijke historische voorgangers - daar biedt de tool (nog beperkt) voor. 
+Een enkeling zoekt inspiratie in *hypothetische* preekschetsen van belangrijke historische voorgangers; de tool demonstreert hoe dat eruit zou kunnen zien (op basis van een drietal theologen). 
+
+Het belangrijkste element is en blijft de contextuele verdiscontering in de verschillende voorbereidende stappen. 
 
 Friedrich Niebergall stelde ooit: *"Menige preek geeft antwoorden op vragen die niemand stelt, en gaat niet in op vragen die iedereen stelt."* 
 
