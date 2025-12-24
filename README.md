@@ -26,6 +26,10 @@ Dit project combineert diepgaande **contextanalyse** (hoorders, samenleving) met
 
 ## 📖 Over dit Project
 
+Inspiratie voor dit hulpmiddel is geput uit **"De Eerste Dag"**, de officiële, oecumenische handreiking van de Raad van Kerken in Nederland. "De Eerste Dag" ondersteunt bij de voorbereiding van de wekelijkse eredienst, aansluitend bij het kerkelijk jaar en de liturgie. Het biedt commentaren bij de lezingen, suggesties voor de liturgie, gebeden en toepassingen voor kinderwerk, en helpt bij het structureren van de dienst (de "orde").
+
+Met dit digitale hulpmiddel wordt die voorbereiding veel dynamischer. De voorganger kan nu zelf bepalen welke onderdelen op dat moment van belang zijn. Sommigen zoeken inspiratie in preekschetsen (postille-achtig), anderen willen meer informatie over interactieve momenten (zoals het kindermoment), terwijl weer anderen geholpen zijn bij de identificatie van relevante kunst- en cultuurartefacten. Ook biedt de tool de mogelijkheid om de eigen homiletische structuur te toetsen.
+
 Friedrich Niebergall stelde ooit: *"Menige preek geeft antwoorden op vragen die niemand stelt, en gaat niet in op vragen die iedereen stelt."* 
 
 Dit project helpt die valkuil te vermijden door twee werelden te verbinden met behulp van een modern taalmodel (Gemini):
@@ -169,7 +173,12 @@ Voor gemeenten of hoorders met beperkte kennis van de godsdienstige taal biedt h
 *   **Doel:** Toegankelijk maken van gebed voor nieuwkomers, taalstudenten of mensen met beperkte geletterdheid.
 
 ### 15 Kindermoment
-Drie creatieve opties (Klassiek, Actief, Vreemd) voor interactie met kinderen.
+Vijf totaal verschillende opties voor een interactief en creatief kindermoment:
+*   **Optie 1: De Klassieke Verrassing:** Warm verhaal met een herkenbaar voorwerp.
+*   **Optie 2: De Doe-het-zelf:** Focus op actie en beweging.
+*   **Optie 3: De 'Gekke' Twist:** Onconventionele of humoristische benadering.
+*   **Optie 4: De Bizarre Inval:** Een totaal onverwacht object of concept.
+*   **Optie 5: De Ernstige Toon:** Ingetogen benadering die kinderen serieus neemt.
 
 ### 16 Moment van Bezinning
 Een specifieke vorm van gebed of meditatie die inzinking biedt binnen de eredienst. Dit moment is bedoeld voor reflectie, stilte en persoonlijke benadering van God.
@@ -177,10 +186,12 @@ Een specifieke vorm van gebed of meditatie die inzinking biedt binnen de eredien
 *   **Functie:** Ruimte creëren voor innerlijke rust en bezinning in het drukke leven.
 
 ### 17 Preekschets in de geest van Sölle
-Preekschets in de stijl van Dorothee Sölle: mystiek en politiek verzet.
+Preekschets in de stijl van Dorothee Sölle: mystiek en politiek verzet. Deze benadering verbindt de bijbeltekst met maatschappelijk engagement en een diepe spiritualiteit van verzet tegen onrecht.
+📄 **[Lees meer over de homiletiek van Sölle](misc/Solle_Homiletiek.md)**
 
 ### 18 Preekschets in de geest van Jüngel
-Preekschets in de stijl van Eberhard Jüngel: paradox en evangelische doorbraak.
+Preekschets in de stijl van Eberhard Jüngel: paradox en evangelische doorbraak. Jüngels methode focust op de 'taal van de liefde' en de verrassing van het evangelie die de menselijke logica doorbreekt.
+📄 **[Lees meer over de homiletiek van Jüngel](misc/Jungel_Homiletiek.md)**
 
 ### 19 Preekschets in de geest van Noordmans
 Preekschets in de stijl van Oepke Noordmans. Zijn homiletiek biedt een unieke benadering gebaseerd op de leer van de Drie-eenheid en het begrip 'herschepping'.
