@@ -2600,239 +2600,238 @@
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Eeuwige, God van alle licht",
+        "aanspraak": "Eeuwige, God van de nacht en van het nieuwe licht",
         "elementen": {
-          "verootmoediging": "Wij treden binnen uit de kou van het Lange Voorhout, met de resten van het kerstfeest nog in onze kleren en de onrust van de wereld in ons hoofd.",
-          "schuldbelijdenis": "Wij erkennen dat wij vaak liever bij de kribbe blijven staan dan de vluchtweg te gaan die U ons wijst.",
-          "verlangen": "Wij dorsten naar uw aanwezigheid die niet slechts een sfeer is, maar een fundament onder ons bestaan."
+          "verootmoediging": "Wij komen binnen uit de nevels van het Lange Voorhout, nog vol van de glans van het kerstfeest, maar met de onrust van de wereld in onze kleren.",
+          "schuldbelijdenis": "Wij erkennen dat wij ons graag verschuilen in de stal, terwijl Gij ons roept om op te staan en de weg van de vlucht te gaan.",
+          "verlangen": "Wij verlangen naar een schuilplaats die niet van glas is, maar van uw genade."
         },
-        "tekst": "Eeuwige, God van alle licht,\n\nWij treden binnen uit de kou van de stad, vanonder de bomen waar de mist nog hangt over het Lange Voorhout.\nDe glans van de kerstdagen kleeft nog aan ons, maar ook de schaduw van de wereld die wij niet buiten kunnen laten.\nWij komen met modder aan onze schoenen en haast in onze adem,\nzoekend naar de stilte van dit huis.\n\nVergeef ons dat wij ons zo gemakkelijk hullen in de warmte van de stal,\nterwijl buiten de wind van onrecht waait.\nVergeef ons de woorden die wij inslikten uit angst,\nen de daden die wij nalieten uit gemakzucht.\n\nHier, op deze drempel, leggen wij onze koffers neer.\nWij verlangen ernaar om U te ontmoeten, niet als een herinnering,\nmaar als de Levende die ons de weg wijst,\nzelfs als die weg door de woestijn voert.\n\nAmen.",
-        "echo_schriftlezing": "Het beeld van het 'onderweg zijn' en het neerleggen van bagage (vlucht naar Egypte).",
+        "tekst": "Eeuwige, God van de nacht en van het nieuwe licht,\\n\\nwij komen binnen uit de nevels van de stad, uit de luwte van de kerstdagen naar dit huis van steen en stilte. De echo van de kerstliederen klinkt nog na onder deze gewelven, maar de wereld buiten wacht niet tot wij klaar zijn met vieren. \\n\\nWij brengen de haast van de afgelopen week met ons mee, de koffers die we pakten, de zorgen die we niet konden achterlaten op de drempel. Wij bekennen U dat wij ons liever wentelen in de idylle van de kribbe dan dat wij de kille nacht van de vlucht onder ogen zien. Vergeef ons dat wij de kerstboodschap soms inpakken als een exportproduct, glimmend en breekbaar, terwijl Gij als een weerloos kind de grens oversteekt.\\n\\nWas het stof van onze ogen, neem de moeheid uit onze ledematen. Laat ons hier, op deze plaats, de adem vinden om U werkelijk te ontmoeten. \\n\\nAmen.",
+        "echo_schriftlezing": "De overgang van de stal naar de vlucht in de nacht.",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "Heer, Gij die zelf een vluchteling waart",
+        "aanspraak": "Heer, die zelf asiel zocht in de vreemde",
         "focus": "schuld_en_nood",
         "structuur": {
           "intenties": [
             {
-              "voor_wie": "De kinderen van Bethlehem en de kinderen van nu",
-              "nood": "Voor hen die in de schaduw van de macht leven en wiens leven als inwisselbaar wordt gezien.",
+              "voor_wie": "De onschuldige kinderen van vandaag",
+              "nood": "In de straten van Gaza, in de kelders van Oekraïne, in de vergeten dorpen van Myanmar waar het geweld geen kerstvrede kent.",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "Gezinnen op drift",
-              "nood": "Voor de vaders en moeders die hun kinderen door de branding dragen of door kapotgeschoten straten leiden.",
+              "voor_wie": "De vluchteling op de drempel van Europa",
+              "nood": "Voor hen die gedemoniseerd worden in het debat, die tien jaar wachten op een menswaardig bestaan, zoals het gezin dat pas na een decennium rust vond in Egypte.",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "De stad van vrede en recht",
-              "nood": "Voor ons die in de luwte van de macht wonen, maar vaak blind zijn voor het onrecht aan de rafelranden.",
+              "voor_wie": "De schepping die zucht onder ons beheer",
+              "nood": "Voor het water in de polders rondom onze stad, verzadigd van wat wij spuiten om onze oogsten te dwingen; voor de aarde die wij uitputten voor onze overvloed.",
               "kyrie_refrain": true
             }
           ]
         },
-        "tekst": "Heer, Gij die zelf een vluchteling waart,\n\nWij roepen tot U uit de diepte van een wereld die kraakt.\nWij bidden om ontferming voor de onschuldigen die vermalen worden in de raderen van de macht.\nVoor de kinderen in Myanmar en Gaza, wier dromen onder het puin liggen,\nen voor de moeders die hen troosten met woorden die zij zelf niet meer geloven.\nKyrie eleison.\n\nWij bidden voor de gezinnen op drift,\nzoals dat Syrische gezin dat na tien jaar Egypte pas een thuis vond.\nVoor hen die wachten in de wachtkamers van onze bureaucratie,\nterwijl de taal van demonisering over onze straten waait.\nVergeef ons onze hardheid, onze angst voor de ander,\nonze drang om de grenzen van ons hart te sluiten.\nKyrie eleison.\n\nWij bidden voor Oekraïne, waar de winter invalt en de hoop op vrede bevriest.\nVoor de soldaten in de loopgraven en de burgers in de kelders.\nHeer, de machten van Herodes zijn nog altijd onder ons,\nmeedogenloos en blind voor het kwetsbare leven.\nKyrie eleison.\n\nOntferm U over ons, in deze stad waar recht gesproken wordt,\nmaar waar de kloof tussen zand en veen dagelijks dieper wordt.\nBreng ons tot inkeer, voor het te laat is.\n\nAmen.",
-        "echo_schriftlezing": "De dreiging van Herodes en de noodzaak van asiel (Egypte).",
+        "tekst": "Heer, die zelf asiel zocht in de vreemde,\\n\\nwij roepen tot U uit de diepte van een wereld die schuurt en scheurt. Wij bidden om ontferming voor de 'onschuldige kinderen' van deze tijd. Voor de kleintjes die slapen onder het gedreun van raketten in Oekraïne, voor de moeders die in Gaza zoeken naar brood in het stof, voor de vaders die hun kinderen door de branding tillen op zoek naar een veilige kust. Waar machthebbers hun troon beschermen over de ruggen van de weerlozen: \\nKyrie eleison.\\n\\nWij bidden om ontferming voor de vreemdeling aan onze grenzen. Wij belijden onze schuld waar wij mensen hebben weggezet als nummers of als dreiging. Wij bidden voor hen die jarenlang in de wachtkamer van de geschiedenis zitten, hopend op een status, op een gezicht, op een thuis. Voor hen die de weg van de vlucht gaan terwijl wij de deuren sluiten:\\nKyrie eleison.\\n\\nWij bidden voor deze aarde, uw tuin. Voor het water in het Westland en de vliet, dat vergiftigd raakt door onze drang naar meer. Wij belijden dat wij de bronnen hebben vertroebeld en de vruchtbaarheid hebben geofferd aan de winst. Ontferm U over de kinderen van de toekomst, die moeten oogsten wat wij nu zaaien:\\nKyrie eleison.\\n\\nHeer, ontferm U over ons, die zo vaak zwijgen waar wij moeten spreken, en die stilzitten waar Gij ons roept om op te staan.\\n\\nAmen.",
+        "echo_schriftlezing": "De kindermoord van Herodes en de vluchtelingstatus van Jezus.",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Geest van God, Bron van alle wijsheid",
+        "aanspraak": "Geest van God, die de slaap van Jozef doorbrak",
         "focus": "ALLEEN opening voor de Schrift, geen andere thema's",
-        "tekst": "Geest van God, Bron van alle wijsheid,\n\nZweef over deze oude woorden tot ze voor ons gaan leven.\nBlaas op de as van ons verstand tot er een vuur van inzicht gloeit.\nOpen onze oren voor de stem van Sirach en de roep van Matteüs.\n\nBekleed ons nu, terwijl wij luisteren,\nniet met onze eigen vooroordelen,\nmaar met de ontvankelijkheid van een kind.\nLaat uw Woord in ons landen als een zaadje in goede aarde,\nopdat het vrucht draagt in ons doen en laten.\n\nAmen.",
-        "echo_schriftlezing": "Het beeld van het 'bekleden' (Kolossenzen 3:12).",
+        "tekst": "Geest van God, die de slaap van Jozef doorbrak met een droom van redding,\\n\\nwek nu ook ons wakker. Wij zijn vaak traag van hart en vol van de ruis van de dag. Blaas de as van onze vooroordelen weg, totdat de vonk van uw Woord weer gloeit. \\n\\nOpen de Schriften voor ons, niet als een oud verhaal van verre landen, maar als een levende stem die ons vandaag de weg wijst naar Nazaret. Laat uw woorden niet van ons afglijden als water van een koude steen, maar laat ze indalen in de voren van ons bestaan. \\n\\nspreek, Eeuwige, uw gemeente luistert. \\n\\nAmen.",
+        "echo_schriftlezing": "De droom van Jozef en de roeping uit Egypte.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Barmhartige God",
-        "verbinding_verkondiging": "Dank voor de bewaring van het kwetsbare leven en de roeping om elkaar tot een 'huis' te zijn.",
+        "aanspraak": "Barmhartige God, Bewaarder van ons leven",
+        "verbinding_verkondiging": "Dank voor de aanwezigheid van God in de marge en de transitie (renovatie).",
         "elementen": {
-          "dank_gehoorde_woord": "Wij danken U voor de nuchtere hoop dat U met ons meereist naar Egypte en terug.",
-          "vraag_kracht_bewaren": "Geef ons de moed om de kleding van de liefde dagelijks aan te trekken.",
-          "verbinding_dagelijks_leven": "Laat ons in Den Haag tekens van uw vrede zijn."
+          "dank_gehoorde_woord": "Wij danken U dat Gij ons niet achterlaat in de paleizen van Herodes, maar ons opzoekt in de vlucht.",
+          "vraag_kracht_bewaren": "Geef ons de moed om het gehoorde Woord mee te dragen in onze koffers naar de nieuwe week.",
+          "verbinding_dagelijks_leven": "Laat ons de vrede van Christus proeven in de nuchtere dagen die komen."
         },
-        "tekst": "Barmhartige God,\n\nWij danken U voor uw Woord dat ons wakker schudt en troost.\nWij danken U dat U niet in een ver verleden bent gebleven,\nmaar dat U meereist in onze onzekerheid,\nin onze vlucht en in onze thuiskomst.\n\nWij danken U voor de momenten van bewaring,\nvoor de engelen op ons pad die ons waarschuwen en leiden.\nWij danken U voor de gemeenschap in dit huis,\nwaar wij mogen oefenen in de liefde die alles verdraagt en alles hoopt.\n\nDank dat U ons de kleding van de barmhartigheid aanreikt,\neen kleed dat past bij ieder mens,\nhoe geschonden of alleen wij ons ook voelen.\nHelp ons om dat kleed niet in de kast te laten hangen,\nmaar het vandaag nog aan te trekken voor de naaste die ons nodig heeft.\n\nAmen.",
-        "echo_schriftlezing": "Het kleed van de liefde en de terugkeer uit Egypte.",
+        "tekst": "Barmhartige God, Bewaarder van ons leven,\\n\\nwij danken U met heel ons hart voor uw Woord dat ons heeft wakker geschud. Wij danken U dat Gij geen God zijt van verre hoogten, maar een God die meereist in de nacht, die asiel zoekt in ons midden en die ons de weg wijst door de woestijn. \\n\\nWij danken U voor de ontdekking dat Egypte geen eindstation is, maar een schuilplaats onder uw vleugels. Wij danken U voor de hoop die oplicht in de marge, in Nazaret, op die plekken waar de wereld niets van verwacht. \\n\\nZegen ons nu wij ons opmaken om dit huis te verlaten. Terwijl het orgel wordt ingepakt en de muren zich voorbereiden op verandering, danken wij U dat uw aanwezigheid niet gebonden is aan goud of steen, maar aan de harten van mensen die onderweg zijn. Bewaar in ons wat wij hebben gehoord, dat het vrucht mag dragen in onze huizen, in onze gezinnen, en in de straten van deze stad.\\n\\nAmen.",
+        "echo_schriftlezing": "De beschermende nabijheid van God in Egypte en Nazaret.",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "Vader in de hemel, God van alle geslachten",
+        "aanspraak": "Vader in de hemel, God van recht en vrede",
         "cirkels": {
           "wereld": {
             "themas": [
-              "vrede in Oekraïne",
-              "vluchtelingen wereldwijd",
-              "rechtvaardigheid"
+              "Vrede in Oekraïne",
+              "Internationale rechtsorde",
+              "Mondiale vluchtelingencrisis"
             ],
-            "tekst": "Wij bidden U voor deze wereld die zo naar vrede snakt. Voor de landen waar het kerstfeest overstemd werd door het geweld van granaten. Geef wijsheid aan hen die besluiten over leven en dood, dat zij niet de taal van Herodes spreken, maar die van de gerechtigheid."
+            "tekst": "Wij bidden U voor de wereldleiders die hier in Den Haag en overal ter wereld beslissen over leven en dood. Geef hen de wijsheid om niet de macht, maar de menselijkheid te dienen. Wij bidden voor de uitgeputte bevolking van Oekraïne, voor wie de winter een vijand is; breek de macht van de tirannen en baan een weg naar gerechtigheid."
           },
           "kerk": {
             "themas": [
-              "wereldwijde verbondenheid",
-              "financiële solidariteit",
-              "de komende renovatie"
+              "Oecumenische solidariteit",
+              "Financiële transparantie",
+              "Vervolgde christenen"
             ],
-            "tekst": "Wij bidden voor uw kerk wereldwijd. Voor gemeenten die moeten schuilen en voor hen die in overvloed leven. Wij bidden voor onze eigen Kloosterkerk, nu wij ons voorbereiden op de verbouwing. Zoals het orgel wordt ingepakt ter bescherming, zo bidden wij dat U onze harten beschermt in tijden van verandering."
+            "tekst": "Wij bidden voor uw wereldwijde kerk, dat zij een 'asiel' mag zijn voor wie nergens anders terecht kan. Wij bidden voor de Protestantse Kerk in ons land, om een geest van solidariteit tussen rijke en arme gemeenten, dat wij ons niet blindstaren op onze eigen bezittingen, maar de gaven delen als broeders en zusters."
           },
           "naasten": {
             "themas": [
-              "eenzamen in de stad",
-              "zieken",
-              "vluchtelingen in Den Haag"
+              "Zorg voor bejaarde ouders",
+              "Expats en eenzaamheid",
+              "Syrische gezinnen"
             ],
-            "tekst": "Wij bidden voor de mensen in deze stad voor wie de feestdagen een confrontatie waren met hun gemis. Voor de man die alleen at aan een tafel voor twee, voor de zieke die wacht op een uitslag. Wij bidden voor de ontheemden in onze eigen wijken, dat zij in ons een Egypte vinden: een plek van veilig asiel."
+            "tekst": "Wij bidden voor onze naasten, dichtbij en ver weg. Voor de kinderen die zorgen voor hun demente ouders; geef hen het geduld en de tederheid waar Sirach over sprak. Voor de expats en diplomaten in onze wijken die zich ontheemd voelen; laat hen hier een thuis vinden. Wij danken U voor het Syrische gezin dat na tien jaar eindelijk rust vond, en bidden voor de duizenden die nog wachten."
           },
           "eigen_gemeente": {
             "themas": [
-              "zorg voor ouderen",
-              "de jeugd",
-              "de komende week"
+              "Renovatie Kloosterkerk",
+              "Bekleden met liefde",
+              "Zieken in de gemeente"
             ],
-            "tekst": "Wij bidden voor de gezinnen in onze gemeente, in al hun verscheidenheid. Voor de kinderen die opgroeien in een complexe wereld en voor de ouderen die wij de eer verschuldigd zijn waar Sirach over sprak. Zegen ons in de laatste dagen van dit jaar, dat wij tot zegen zijn voor de stad."
+            "tekst": "Wij bidden voor onze eigen gemeente in deze tijd van transitie. Geef ons de eenheid en de mildheid om ons te bekleden met liefde, ook als de vertrouwde vormen wegvallen door de renovatie. Wij noemen in de stilte van ons hart de namen van hen die ziek zijn, die rouwen, of die opzien tegen de jaarwisseling..."
           }
         },
         "stilte_instructie": "*Stilte voor persoonlijke gebedsintenties*",
-        "overgang_onze_vader": "Samen bidden wij het gebed dat Jezus ons leerde:",
+        "overgang_onze_vader": "Al onze onuitgesproken woorden leggen wij in uw handen, terwijl wij samen bidden het gebed dat uw Zoon ons heeft gegeven:",
         "onze_vader": "Onze Vader die in de hemelen zijt,\\nuw naam worde geheiligd;\\nuw Koninkrijk kome;\\nuw wil geschiede, gelijk in de hemel, alzo ook op de aarde.\\nGeef ons heden ons dagelijks brood;\\nen vergeef ons onze schulden, gelijk ook wij vergeven onze schuldenaren;\\nen leid ons niet in verzoeking, maar verlos ons van de boze.\\nWant van U is het Koninkrijk en de kracht en de heerlijkheid tot in eeuwigheid.\\nAmen."
       }
     },
     "poetische_technieken_gebruikt": {
       "parallellisme": [
-        "Vergeef ons de woorden die wij inslikten... en de daden die wij nalieten.",
-        "Niet als een herinnering, maar als de Levende."
+        "Voor de kleintjes die slapen onder het gedreun van raketten... voor de moeders die zoeken naar brood... voor de vaders die hun kinderen door de branding tillen."
       ],
       "drieslag": [
-        "In ons doen, in ons laten, in ons hopen.",
-        "Vrede, gerechtigheid en bewaring."
+        "in gedachten, woorden en werken",
+        "in onze huizen, in onze gezinnen, en in de straten van deze stad"
       ],
       "anafoor": [
-        "Wij bidden voor...",
-        "Dank voor..."
+        "Kyrie eleison — voor de onschuldige kinderen...",
+        "Kyrie eleison — voor de vreemdeling...",
+        "Kyrie eleison — voor deze aarde..."
       ],
       "inclusio": [
-        "Het drempelgebed begint bij de kou van de stad en de voorbeden eindigen bij de zegen voor diezelfde stad."
+        "Drempelgebed begint met 'nevels van de stad' en Dankgebed eindigt met 'straten van deze stad'."
       ],
       "zintuiglijke_taal": [
-        "Zien: de mist over het Lange Voorhout.",
-        "Horen: de stem van Sirach.",
-        "Voelen: de modder aan de schoenen.",
-        "Ruiken: de geur van de winterlucht.",
-        "Proeven: de nuchtere hoop van het Woord."
+        "Zien: de mist over het Lange Voorhout, het gedreun van raketten (horen), de geur van pas gemaaid gras (ruiken), het brood op de tong (proeven), de kille nacht (voelen)."
       ],
       "lokale_beelden": [
-        "De mist over het Lange Voorhout.",
-        "De kloof tussen zand en veen.",
-        "Het inpakken van het orgel ter bescherming."
+        "De nevels over het Lange Voorhout",
+        "Het water in de polders en het Westland",
+        "Het inpakken van het orgel van de Kloosterkerk"
       ]
     },
     "echo_techniek": {
-      "schriftlezing_thema": "De kwetsbare reis van het leven onder Gods bewaring.",
+      "schriftlezing_thema": "De kwetsbare weg van de vlucht en de goddelijke bewaring in de marge.",
       "echo_per_gebed": {
-        "drempelgebed": "Het neerleggen van de koffers (vlucht).",
-        "kyrie": "De macht van Herodes versus de onschuldigen.",
-        "epiclese": "Het bekleden met ontvankelijkheid (Kolossenzen).",
-        "dankgebed": "Het kleed van de barmhartigheid.",
-        "voorbeden": "De zorg voor de generaties (Sirach)."
+        "drempelgebed": "De overgang van de stal naar de urgentie van de nachtvlucht.",
+        "kyrie": "De kindermoord van Herodes als spiegel voor actueel onrecht.",
+        "epiclese": "De droom van Jozef als metafoor voor het ontwaken voor Gods Woord.",
+        "dankgebed": "De roeping uit Egypte als bewijs van Gods trouw in de vreemde.",
+        "voorbeden": "Het 'bekleden met liefde' (Kolossenzen) en de zorg voor ouders (Sirach) vertaald naar de Haagse praktijk."
       }
     }
   },
   "14_gebeden_dialogisch": {
-    "stijl_analyse": "De gebeden zijn geschreven vanuit een verticale houding, waarbij de menselijke realiteit van Den Haag direct en zonder vrome omhaal naast de bijbelse belofte wordt geplaatst. De focus ligt op de spanning tussen de 'stad van het recht' en de ontheemding van het kind in de tekst, waarbij de bidder God aanspreekt als een bondgenoot die ook verantwoording vraagt.",
+    "stijl_analyse": "De gebeden zijn vormgegeven als een eerlijke, rechtopstaande dialoog waarbij de menselijke realiteit van Den Haag en de bijbelse vluchtroute elkaar direct confronteren, zonder vrome omhaal of verhullend jargon.",
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Onze God, hier staan wij dan.",
-        "tekst": "Onze God, hier staan wij dan, in dit huis van steen, midden in een stad die nooit echt stilvalt. De kerstverlichting hangt nog boven de straten, maar de glans is er voor velen alweer vanaf. Wij zijn hierheen gekomen uit de drukte van de afgelopen dagen, uit de files, uit de gesprekken aan tafel die soms lukten en soms pijnlijk schuurden. Wij melden ons present, niet omdat wij zulke gelovige mensen zijn, maar omdat wij het alleen niet redden met onze eigen antwoorden.\n\nWij brengen onze aarzeling mee naar binnen. Onze knieën zijn stijf, niet van het knielen, maar van het rechtop willen blijven staan in een wereld die voortdurend van alles van ons eist. Wij zijn de mensen van de feiten, van de kranten, van de dossiers en de diplomatie. Wij weten hoe de wereld draait, maar we weten niet altijd meer waartoe. Wij zoeken in dit uur niet naar een vrome vluchtroute, maar naar een plek waar de waarheid gezegd mag worden zonder dat zij ons direct verplettert.\n\nU bent hier, zegt men. Maar wij ervaren vaak alleen de echo van onze eigen woorden. Toch zijn we er. Wij zoeken de Ander die ons niet bevestigt in wat we al weten, maar die ons bevrijdt van de dwang om alles zelf te moeten oplossen. Wij leggen onze titels, onze functies en onze Haagse gereserveerdheid bij de drempel neer. Wij zijn hier als mensen van vlees en bloed, kwetsbaar onder onze nette kleren, hopend op een woord dat niet van onszelf is. Laat dit uur een onderbreking zijn, een eerlijke causerie tussen onze nuchtere werkelijkheid en Uw onstuitbare droom van vrede. Amen.",
-        "echo_schriftlezing": "Resoneert met de nuchterheid van Sirach en de roep om 'bekleed te worden' uit Kolossenzen, maar dan vanuit de eerlijke erkenning van de eigen naaktheid.",
+        "aanspraak": "Onze God, wij melden ons bij U aan de grens van een nieuwe week.",
+        "tekst": "Onze God, wij staan hier in dit huis van steen, midden in een stad die niet stilstaat. Buiten hangt de mist tussen de bomen en zijn de kraampjes van de kerstmarkt afgebroken. De glans is er een beetje af. We lazen deze week dat we als land wereldkampioen zijn in het exporteren van kerstballen en glimmende versiering, maar hier binnen, in de stilte van dit gebouw, voelen we de nuchterheid van de dagen na het feest. \n\nWij zijn hier niet gekomen omdat we alles zo goed begrijpen, of omdat we zulke voorbeeldige gelovigen zijn. We zijn hier met onze aarzelingen, met onze vermoeidheid van het afgelopen jaar, en met de vragen die we niet hardop durven te stellen in de wandelgangen van de macht of aan de lunchtafels van ons werk. We melden ons present, precies zoals we zijn: mensen die hun best doen, die soms falen, en die hopen dat er meer is dan alleen de cijfers en de protocollen van deze stad. \n\nWij brengen de wereld met ons mee naar binnen. De dossiers die nog op ons bureau liggen, de zorgen over onze kinderen, de angst voor de ouderdom die ons verstand kan aantasten, zoals de wijsheid van Sirach ons herinnerde. Wij staan hier niet om te vluchten uit de werkelijkheid, maar om de werkelijkheid in Uw licht te houden. Wees aanwezig in onze onoplettendheid. Breek door onze woordenbrij heen. Wij wensen dat U tot ons komt, zoals U bent: een God die mens werd en die wist wat het betekende om geen vaste woon- of verblijfplaats te hebben. Hier zijn we, God. Hoor ons, zie ons, ontmoet ons.",
+        "echo_schriftlezing": "Verwijst naar de nuchterheid na Kerst en de kwetsbaarheid van generaties uit Sirach 3.",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "Onze God, wij leggen de krant van deze week voor U neer.",
+        "aanspraak": "Onze God, wij leggen de krant van deze ochtend naast Uw belofte van vrede.",
         "focus": "confrontatie_en_realiteit",
-        "tekst": "Onze God, wij leggen de krant van deze week voor U neer, want de idylle van de stal is ruw verstoord. Terwijl wij hier in Nederland de grootste exporteur van kerstballen blijken te zijn, vallen elders de bommen op ziekenhuizen en vluchtelingenkampen. Wij horen van de 'Onschuldige Kinderen' in de tekst, maar wij zien ze dagelijks op onze schermen: in Myanmar, in Gaza, in de loopgraven van Oekraïne waar de steun opdroogt en de hoop bevriest. Hoe houdt U het uit, God, om toe te kijken hoe de Herodessen van deze tijd hun macht veiligstellen over de ruggen van de kleinsten?\n\nWij belijden onze medeplichtigheid. Wij wonen in de stad van het recht, maar wij zien hoe het recht vaak een papieren werkelijkheid blijft voor wie geen paspoort heeft. Wij horen over het Syrische gezin dat na tien jaar in Egypte eindelijk een plek vindt, en wij schamen ons voor de traagheid van onze barmhartigheid. Wij hebben onze grenzen dichtgetimmerd met verdragen en procedures, terwijl het Kind uit Uw verhaal zelf een ongewenste migrant was, afhankelijk van de grillen van een vreemd land.\n\nZelfs onze aarde kreunt onder onze beheersdrang. Wij vergiftigen het water met pesticiden voor onze winst en onze bloemen, en wij noemen dat vooruitgang. Wij offeren de toekomst van onze kinderen op aan het altaar van de huidige economie. Onze God, wij vragen U niet om dit op magische wijze weg te nemen. Wij vragen U om ons te confronteren met de brutaliteit van Uw waarheid. Waarom zwijgt U in de chaos? Of is Uw zwijgen een vraag aan ons? Wij bekennen dat wij vaak liever wegkijken, liever praten over kerstvreugde dan over de vlucht naar Egypte. Ontregel onze rust. Breek onze onverschilligheid. Wij zijn tekortgeschoten in de zorg voor de schepping en voor elkaar. Heb medelijden met onze stijfheid en onze angst. Amen.",
-        "echo_schriftlezing": "Directe confrontatie tussen de vlucht naar Egypte (Matteüs 2) en de actuele vluchtelingencrisis en ecologische nood.",
+        "tekst": "Onze God, wij roepen tot U vanuit een stad die zichzelf de Stad van Vrede en Recht noemt, maar waar de muren tussen de wijken soms hoger lijken dan ooit. Wij horen de echo van de vlucht naar Egypte in het nieuws van deze week. We hoorden over het Syrische gezin dat na tien jaar eindelijk asiel kreeg, maar we horen ook de stemmen die migranten demoniseren en grenzen willen sluiten voor wie nergens meer heen kan. \n\nHeer, ontferm U over onze dubbelhartigheid. Wij vieren het kind in de kribbe met dure cadeaus en kerstballen, terwijl we de militaire steun aan de verdrukten laten opdrogen omdat het ons te veel kost. Waarom zwijgt U wanneer de Herodessen van deze tijd ziekenhuizen bombaderen in Myanmar en wanneer kinderen in Gaza en Oekraïne de prijs betalen voor de hoogmoed van machthebbers? Het staat ons tegen dat de machteloosheid zo vaak het laatste woord lijkt te hebben. \n\nWij bekennen dat wij medeplichtig zijn aan de stilte. Wij genieten van onze veiligheid in de 'zandwijken' van deze stad, terwijl we de ongelijkheid in de 'veenwijken' accepteren als een voldongen feit. Wij hebben van Uw evangelie een esthetisch genoegen gemaakt, een sfeervol moment op zondagmorgen, terwijl de vluchteling van Bethlehem ons oproept tot een gerechtigheid die schuurt en kost. \n\nChristus, ontferm U over ons onvermogen om werkelijk solidair te zijn. Verlos ons van onze angst voor controleverlies. Wij klampen ons vast aan onze diploma's, onze status en onze tradities, terwijl U ons uitnodigt om de nacht in te gaan, de onzekerheid tegemoet. Maak ons niet alleen bedroefd over het onrecht ver weg, maar maak ons onrustig over de onverschilligheid dichtbij. Laat ons niet rusten voordat Uw recht niet alleen op papier staat in onze internationale hoven, maar ook geleefd wordt in onze straten. Onze God, hoor ons roepen in de nacht.",
+        "echo_schriftlezing": "Directe confrontatie tussen de vlucht naar Egypte (Matteüs 2) en de actuele vluchtelingencrisis en politieke onverschilligheid.",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Onze God, breek nu in.",
+        "aanspraak": "Onze God, wij gaan nu de schriften openen.",
         "focus": "woord_als_inbraak",
-        "tekst": "Onze God, breek nu in in onze woordenbrij. Wij hebben deze week al zoveel gehoord: analyses, debatten, kersttoespraken en najaarsnota's. Onze hoofden zitten vol met stro, met holle frasen en aangeleerde meningen. Wij vragen U niet om een mooie preek die ons bevestigt in wat we al vonden. Wij vragen om een inbraak van Uw Woord. Laat Uw Geest als een louterend vuur door onze gedachten gaan. Verbrand het stro van onze zelfgenoegzaamheid en laat alleen het graan van de waarheid over. Maak het stil in ons, een echte stilte, waarin Uw stem niet langer overstemd wordt door de ruis van onze eigen belangen. Laat de oude woorden van Sirach, Paulus en Matteüs vandaag geen museumstukken zijn, maar levende stemmen die ons bij de les roepen. Spreek, God, want wij proberen U eindelijk eens echt te verhoren. Amen.",
-        "echo_schriftlezing": "Verwijst naar het 'inpakken' van het orgel als beeld voor bescherming en de noodzaak van concentratie op de kern.",
+        "tekst": "Onze God, wij vragen U niet om een troostrijk verhaal dat ons in slaap sust. Wij vragen om een inbraak in ons denken. Laat Uw Woord als een vuur zijn dat het stro van onze vrome woorden en onze intellectuele hoogmoed verbrandt, zodat alleen het graan van de waarheid overblijft. Geef ons de discipline om werkelijk te luisteren. Breek de tralies van onze vooroordelen open. Laat de stem van de vluchteling en de wijsheid van de generaties voor ons niet slechts als informatie tot ons komen, maar als een kracht die ons verandert. Onze God, spreek, want Uw medewerkers luisteren.",
+        "echo_schriftlezing": "Vraagt om de inbraak van het evangelie van de vluchtende koning.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Onze God, wij danken U voor het elementaire.",
-        "verbinding_verkondiging": "Dankzegging voor de bewaring in de vlucht en de kracht van de dagelijkse liefde.",
-        "tekst": "Onze God, wij danken U voor het elementaire, voor dat wat wij zo vaak als vanzelfsprekend beschouwen terwijl het een wonder is. Wij danken U voor de adem in onze longen, voor het licht dat elke ochtend weer de nacht verdrijft, ook boven de grijze daken van deze stad. Wij danken U voor het brood op onze tafel en voor het water dat uit de kraan stroomt – eenvoudige gaven die ons in leven houden en ons herinneren aan onze afhankelijkheid van Uw goede schepping.\n\nWij danken U voor de mensen die goed zijn zonder dat ze het zelf doorhebben. Voor degenen die in de zorg werken en de moed niet verliezen, voor de leraren die in de Haagse wijken blijven geloven in de kansen van elk kind, voor de vrijwilligers die de eenzaamheid van een ander doorbreken met een simpel kopje koffie. Wij danken U voor de 'wijsheid van de straat' die soms dieper gaat dan alle politieke analyses. \n\nWij danken U dat U ons niet loslaat in onze verantwoordelijkheid. Dank U dat U ons de vrijheid geeft om mens te zijn, om keuzes te maken die ertoe doen. Wij danken U voor de momenten van verwondering, waarin de schoonheid van een muziekstuk of de stilte van het Lange Voorhout ons even optilt uit onze zorgen. Wij danken U dat U in Jezus de weg van de kwetsbaarheid bent gegaan, waardoor wij weten dat geen enkele vluchtroute voor U onbekend is en geen enkele angst U vreemd. \n\nDank U voor de mogelijkheid om opnieuw te beginnen, elke dag weer. Dat wij niet vastzitten aan ons verleden of aan onze fouten, maar dat er zoiets bestaat als een nieuwe kans, een onverdiende mildheid die ons weer op de been helpt. Wij danken U voor dit huis, waar wij samen kunnen zoeken naar wat werkelijk van waarde is. Houd onze vreugde levend, niet als een goedkoop sentiment, maar als een krachtig verzet tegen de moedeloosheid. Amen.",
-        "echo_schriftlezing": "Verbindt de dankbaarheid voor de 'wijsheid' (Sirach) met de 'bemoediging' van Christus.",
+        "aanspraak": "Onze God, wij danken U voor de elementaire dingen die het leven mogelijk maken.",
+        "verbinding_verkondiging": "Dankzegging voor de God die asiel zoekt in onze menselijkheid.",
+        "tekst": "Onze God, wij danken U voor het licht dat ook in de mist van Den Haag niet dooft. Wij danken U voor de adem die we vanmorgen kregen, voor het brood op onze tafel en voor de mensen die ons bij onze naam noemen. Wij danken U voor de 'Heilige Familie', niet als een onbereikbaar ideaal op een schilderij, maar als een herinnering dat U aanwezig bent in de rauwe werkelijkheid van het onderweg-zijn. \n\nWij danken U voor de Egypte-ervaringen in ons leven: voor de plekken waar we onverwacht asiel vonden toen we onszelf niet meer konden redden. Wij danken U voor de vreemden die vrienden werden, voor de deuren die opengingen toen we dachten dat alles gesloten was. Wij danken U voor de wijsheid van hen die ons voorgingen, voor ouders die ons leerden wat trouw is, en voor kinderen die ons herinneren aan de kwetsbaarheid van elk begin. \n\nWij danken U voor de vrijheid die U ons geeft: de risicovolle vrijheid om mens te zijn naar Uw beeld. Dank U dat U ons niet loslaat in onze verantwoordelijkheid voor deze stad en deze wereld. Wij danken U voor de kunst en de muziek die ons in dit huis optillen boven onszelf, en voor de stilte die ons terugbrengt bij de kern. \n\nWij danken U dat U een God bent van omwegen, die ons via Nazaret leidt naar een toekomst die wij zelf niet hadden kunnen bedenken. Dank U dat Uw liefde geen grenzen kent en dat U ons bekleedt met een mildheid die sterker is dan de hardheid van de macht. Wij danken U dat we deel mogen uitmaken van Uw droom van vrede en recht, hier en nu. Onze God, voor dit alles en voor zoveel meer dat onuitgesproken blijft, danken wij U.",
+        "echo_schriftlezing": "Verbindt de dankzegging aan de 'omweg naar Nazaret' en de ethiek van de liefde uit Kolossenzen.",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "Onze God, wij houden de wereld voor Uw aangezicht.",
+        "aanspraak": "Onze God, wij heffen onze handen op voor de wereld die U zo liefheeft.",
         "cirkels": {
           "wereld": {
             "themas": [
-              "Politiek Den Haag",
-              "Oekraïne",
-              "Machtsmisbruik"
+              "Politiek",
+              "Macht",
+              "Ontmaskering",
+              "Oorlog"
             ],
-            "tekst": "Onze God, wij bidden voor de wereld van de macht, die hier in Den Haag zo tastbaar aanwezig is. Wij bidden voor de mannen en vrouwen op het Binnenhof en in de ministeries, die besluiten nemen over asielquota, over wapensteun en over de toekomst van onze economie. Behoed hen voor het cynisme van de macht. Geef hen de moed om niet alleen te kijken naar de peilingen van vandaag, maar naar de gerechtigheid van morgen. Wij bidden in het bijzonder voor de situatie in Oekraïne; nu de aandacht verslapt en de middelen opraken, vragen wij U om volharding voor hen die vechten voor hun vrijheid. Ontmasker de leugen waar die als waarheid wordt verkocht. Laat de stem van de onschuldigen luider klinken dan het kletteren van de wapens. Wij bidden voor de diplomaten en de rechters in deze stad, dat zij instrumenten mogen zijn van een vrede die meer is dan de afwezigheid van oorlog."
+            "tekst": "Onze God, wij bidden voor hen die de koers van de wereld bepalen, hier in de ministeries rondom dit plein en in de internationale hoven verderop. Wij bidden voor de regeringsleiders en de diplomaten. Ontmasker de leugens van de macht die onschuldigen opoffert voor eigen behoud. Wij bidden voor de journalisten die de waarheid zoeken in de chaos van propaganda. Laat hen niet zwijgen over de Herodessen van vandaag. Wij bidden om een de-escalatie van de angst, om een einde aan de wapenwedloop die meer middelen verslindt dan de honger van de wereld kan dragen. Maak onze leiders tot vredestichters die bereid zijn de prijs van de verzoening te betalen, in plaats van de prijs van de oorlog."
           },
           "kerk": {
             "themas": [
               "Ecologie",
               "Techniek",
-              "Pesticiden"
+              "Pesticiden",
+              "Schepping"
             ],
-            "tekst": "Onze God, wij bidden voor Uw schepping die wij in bruikleen hebben. Wij bidden voor de wetenschappers en technici die zoeken naar oplossingen voor de klimaatcrisis, dat zij gedreven mogen worden door wijsheid en niet alleen door winstbejag. Wij leggen de zorg voor ons water en onze bodem bij U neer; confronteer ons met de gevolgen van ons pesticidegebruik en onze onverzadigbare consumptie. Leer ons de grens te herkennen tussen wat technisch kan en wat moreel mag. Wij bidden voor de boeren in de regio, die klem zitten tussen regelgeving en overleven. Geef ons de kracht om de aarde te bewonen als gasten, niet als plunderaars. Laat ons de kinderen van de toekomst niet opzadelen met een onbewoonbare wereld, maar help ons nu de offers te brengen die nodig zijn voor hun leven."
+            "tekst": "Onze God, wij bidden voor de aarde, Uw bewoonde schepping die kreunt onder onze verspilling. Wij bidden voor de glastuinbouwgebieden hier in de regio, waar de waterkwaliteit lijdt onder onze drang naar overvloed. Geef ons de wijsheid om de grens te trekken tussen wat technisch kan en wat moreel mag. Wij bidden voor de wetenschappers en technocraten, dat zij hun gaven inzetten voor het herstel van de schepping en niet voor de exploitatie ervan. Leer ons dat wij geen eigenaars zijn, maar beheerders van een kwetsbaar erfgoed. Laat ons de 'kinderen van de toekomst' niet beroven van een leefbare wereld door onze huidige zucht naar gemak."
           },
           "naasten": {
             "themas": [
+              "Ziekte",
+              "Eenzaamheid",
               "Vluchtelingen",
-              "Zorg voor ouderen",
-              "Syrisch gezin"
+              "Systemen"
             ],
-            "tekst": "Onze God, wij bidden voor de mensen die vastlopen in onze systemen. Wij bidden voor de vluchtelingen die, net als het Syrische gezin in het nieuws, jarenlang in onzekerheid moeten wachten op een menswaardig bestaan. Wij bidden voor de ontheemden in onze eigen stad, de ongedocumenteerden die in de schaduw leven. Wij bidden ook voor de ouderen in onze wijken, voor wie de wereld te snel gaat en de eenzaamheid te groot wordt. Geef ons de ogen om hen te zien en de handen om hen vast te houden. Wij bidden voor de zieken in de Haagse ziekenhuizen en voor hen die hen verzorgen. Laat de ethiek van de liefde, waar Paulus over schreef, concreet worden in onze zorg voor de kwetsbare naaste. Help ons om de barrières van onze eigen comfortzone te doorbreken."
+            "tekst": "Onze God, wij bidden voor de mensen die vastlopen in de raderen van onze systemen. Wij bidden voor de vluchtelingen die al jaren wachten op een status, zoals dat Syrische gezin in Egypte. Wij bidden voor de zieken in de ziekenhuizen van deze stad, en voor hen die thuis vechten tegen de eenzaamheid van een succesvol maar leeg bestaan. Wij bidden voor de ouderen wiens verstand hen verlaat, en voor de kinderen die opgroeien in angst. Wees de naaste van hen die zich door iedereen verlaten voelen. Geef ons de ogen om de nood te zien achter de gesloten deuren van de statige herenhuizen en de portiekflats."
           },
           "eigen_gemeente": {
             "themas": [
-              "Kloosterkerk",
               "Renovatie",
-              "Solidariteit"
+              "Solidariteit",
+              "Kloosterkerk",
+              "Transitie"
             ],
-            "tekst": "Onze God, wij bidden voor deze gemeente van de Kloosterkerk. Wij staan aan de vooravond van een grote verbouwing; laat het niet alleen een vernieuwing van stenen zijn, maar ook van onze geest. Behoed ons ervoor dat wij een gesloten club worden van gelijkgestemden. Maak ons tot een open huis in het hart van Den Haag, een asiel voor de ziel voor wie het even niet meer weet. Wij bidden voor de onderlinge solidariteit, dat wij de kloof tussen de verschillende stadsdelen in ons eigen hart overbruggen. Leer ons om elkaar werkelijk te bemoedigen, over de grenzen van onze meningen en achtergronden heen. Laat ons een gemeenschap zijn die niet alleen voor zichzelf bidt, maar die de pijn van de stad op haar schouders durft te nemen. Maak ons bereid om zelf het antwoord te zijn op de gebeden die wij uitspreken."
+            "tekst": "Onze God, wij bidden voor deze gemeente van de Kloosterkerk. Wij staan aan de vooravond van een grote verandering, nu dit gebouw gerenoveerd gaat worden en ons vertrouwde orgel wordt ingepakt. Behoed ons voor de bittere ijver en de angst voor het nieuwe. Laat ons een open huis blijven in het hart van de stad, ook als onze vormen tijdelijk anders zijn. Wij bidden voor Sophie, Mark, Elena en Jan-Willem — voor al die verschillende mensen die hier een plek zoeken. Maak ons solidair met elkaar, over de grenzen van stand en inkomen heen. Laat Uw Geest ons leiden naar een Nazaret van eenvoud en nieuwe hoop."
           }
         },
-        "stilte_instructie": "In de stilte van dit moment brengen wij U de namen van hen die ons persoonlijk ter harte gaan...",
-        "overgang_onze_vader": "Al onze woorden en al ons zwijgen leggen wij in de woorden die Uw Zoon ons heeft geleerd:",
-        "onze_vader": "Onze Vader die in de hemelen zijt,\nuw naam worde geheiligd;\nuw koninkrijk kome;\nuw wil geschiede, op aarde zoals in de hemel.\nGef ons heden ons dagelijks brood;\nen vergeef ons onze schulden,\nzoals ook wij onze schuldenaars vergeven;\nen leid ons niet in verzoeking,\nmaar verlos ons van de boze.\nWant van U is het koninkrijk\nen de kracht en de heerlijkheid\nin eeuwigheid. Amen."
+        "stilte_instructie": "In de stilte van dit huis leggen wij onze eigen ongenoemde namen en noden voor Uw aangezicht.",
+        "overgang_onze_vader": "Al onze gebeden vatten wij samen in de woorden die Uw Zoon ons leerde:",
+        "onze_vader": "Onze Vader die in de hemelen zijt,\nuw naam worde geheiligd;\nuw koninkrijk kome;\nuw wil geschiede, op aarde zoals in de hemel.\nGef ons heden ons dagelijks brood;\nen vergeef ons onze schulden,\nzoals ook wij onze schuldenaren vergeven;\nen leid ons niet in verzoeking,\nmaar verlos ons van de boze.\nWant van U is het koninkrijk\nen de kracht en de heerlijkheid\nin eeuwigheid. Amen."
       }
     },
     "dialogische_elementen": {
       "directheid_voorbeelden": [
-        "Onze God, hier staan wij dan.",
-        "Wij zijn de mensen van de feiten, van de kranten, van de dossiers.",
-        "Hoe houdt U het uit, God, om toe te kijken?",
-        "Wij vragen U niet om dit op magische wijze weg te nemen."
+        "Het staat ons tegen dat de machteloosheid zo vaak het laatste woord lijkt te hebben.",
+        "Hier zijn we, God. Niet omdat we alles snappen, maar omdat we U zoeken.",
+        "Wij bekennen dat wij medeplichtig zijn aan de stilte."
       ],
       "elementaire_beelden": [
-        "Het stro van onze woordenbrij versus het graan van de waarheid.",
-        "De stijve knie van de intellectueel.",
-        "De aarde die kreunt onder pesticiden.",
-        "De koffer van de vluchteling."
+        "De koffer van de vluchteling",
+        "Het ingepakte orgel",
+        "Het graan van de waarheid",
+        "De mist van de stad"
       ],
       "verantwoordelijkheid_focus": [
-        "De bidder vraagt niet om een wonder, maar om de kracht om zelf Gods droom uit te voeren ('Exaucer Dieu').",
-        "Erkenning van medeplichtigheid aan systemen van onrecht en ecologische schade.",
-        "De focus op de 'stad van het recht' als een plek waar morele keuzes gemaakt moeten worden."
+        "Solidariteit met de vluchteling als actieve keuze.",
+        "Het gebed als presentmelding in de politieke realiteit van Den Haag.",
+        "De erkenning van medeplichtigheid aan sociaal-economische ongelijkheid."
       ]
     }
   },
@@ -2841,62 +2840,62 @@
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "God, onze Vader",
+        "aanspraak": "Lieve God",
         "elementen": {
-          "verootmoediging": "Wij komen uit de drukke stad naar dit huis. Buiten is het koud en mistig.",
-          "schuldbelijdenis": "Soms vergeten wij U. Soms zijn we niet lief voor anderen. Dat spijt ons.",
-          "verlangen": "Wij willen nu graag bij U zijn. Wij willen rust vinden in ons hart."
+          "verootmoediging": "Wij zijn hier samen in dit huis. Buiten is het koud en de kerstmarkt is weg. Wij voelen ons klein bij U.",
+          "schuldbelijdenis": "Soms deden wij verkeerde dingen. Wij dachten alleen aan onszelf. Dat spijt ons.",
+          "verlangen": "Wij willen graag dicht bij U zijn. Maak ons hart weer schoon en rustig."
         },
-        "tekst": "God, onze Vader,\n\nWij zijn hier in dit huis. Buiten is het koud en mistig in Den Haag. De kerstmarkt op het plein is weg. De drukke dagen zijn voorbij. Wij leggen onze tassen en onze zorgen neer.\n\nSoms doen wij dingen fout. Wij denken dan alleen aan onszelf. Wij vergeten om te delen. Dat spijt ons. Wilt U dat weghalen uit ons hart? Maak ons weer blij en schoon.\n\nWij willen graag dicht bij U zijn. Net zoals een kind bij zijn vader of moeder is. Wij zijn hier om naar U te luisteren met ons hart. Wees bij ons in dit uur.\n\nAmen.",
-        "echo_schriftlezing": "Het beeld van het neerleggen van tassen en zorgen, zoals Jozef die zijn koffers moest pakken.",
+        "tekst": "Lieve God,\\nWij zijn hier samen in dit huis. De drukke dagen van Kerstmis zijn voorbij. Buiten op straat is het stil en koud. Wij laten de drukte van de stad nu even achter ons.\\nSoms waren wij niet aardig voor andere mensen. Wij vergaten om te delen. Wij dachten alleen aan wat wij zelf wilden. Dat spijt ons heel erg. Wilt U onze fouten weghalen?\\nWij willen vandaag heel dicht bij U zijn. In dit huis voelen wij ons veilig. Net zoals het kindje Jezus veilig was bij Jozef en Maria. Maak ons hart weer schoon. Geef ons de rust die wij nodig hebben. Wij zijn klaar om bij U te zijn. Amen.",
+        "echo_schriftlezing": "De rust en veiligheid van het gezin (Sirach/Matteüs).",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "Goede God",
+        "aanspraak": "God in de hemel",
         "focus": "nood_wereld",
         "structuur": {
           "intenties": [
             {
-              "voor_wie": "Kinderen die bang zijn",
-              "nood": "In landen met oorlog moeten kinderen vluchten voor soldaten.",
+              "voor_wie": "mensen die moeten vluchten",
+              "nood": "Zij hebben geen veilig huis meer. Net als Jezus moeten zij midden in de nacht weg.",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "Mensen zonder huis",
-              "nood": "Mensen die nergens heen kunnen en zich alleen voelen.",
+              "voor_wie": "kinderen die bang zijn",
+              "nood": "Er is oorlog en ruzie in de wereld. Veel kinderen hebben pijn of zijn alleen.",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "Onze stad Den Haag",
-              "nood": "Er is veel ruzie en sommige mensen hebben geen geld voor eten.",
+              "voor_wie": "de aarde en de natuur",
+              "nood": "Het water en de grond zijn niet overal meer schoon. We moeten beter zorgen voor de wereld.",
               "kyrie_refrain": true
             }
           ]
         },
-        "tekst": "Goede God,\n\nWij denken aan de wereld. Er gebeuren veel nare dingen. In het verhaal van vandaag moet een klein kind vluchten voor een gemene koning. Dat gebeurt nu nog steeds. Wij denken aan kinderen in landen waar oorlog is. Zij moeten rennen voor hun leven. Zij hebben geen veilig bed. \nGod, wees erbij.\n\nWij denken aan mensen die hun eigen land moesten verlaten. Zij voelen zich vreemd en alleen. Soms zijn mensen niet aardig tegen hen. Dat maakt ons verdrietig. Wij bidden voor gezinnen die al heel lang wachten op een eigen huis en een veilig plekje.\nGod, wees erbij.\n\nWij bidden voor onze eigen stad. In Den Haag zijn veel mensen rijk, maar ook veel mensen arm. Dat is niet eerlijk. Er is vaak ruzie tussen groepen mensen. Wij bidden om vrede in de straten en vrede in ons hart. Help de mensen die belangrijke keuzes moeten maken voor ons land.\nGod, wees erbij.\n\nU weet wat er misgaat. U weet wie er pijn heeft. Wij leggen al die pijn in uw handen.\n\nAmen.",
-        "echo_schriftlezing": "De vlucht van het kind Jezus voor de macht van koning Herodes.",
+        "tekst": "God in de hemel,\\nDe wereld is vaak een harde plek. Wij denken aan alle mensen die nu niet in hun eigen bed kunnen slapen. Wij denken aan families die moeten vluchten voor geweld. Net als Jozef en Maria moeten zij alles achterlaten. Zij gaan een donkere nacht in. Geef hen een veilige plek.\\nGod, wees erbij.\\nWij bidden voor de kinderen. Voor de kinderen in landen waar oorlog is. Zij zijn bang voor het geluid van wapens. Wij denken aan de kinderen die geen papa of mama meer hebben. Bescherm hen tegen het kwaad.\\nGod, wees erbij.\\nWij bidden voor de natuur om ons heen. Wij horen dat het water en de planten ziek worden van gif. Wij hebben de aarde van U gekregen. Help ons om er goed voor te zorgen. Voor onszelf en voor de kinderen die na ons komen.\\nGod, wees erbij. Amen.",
+        "echo_schriftlezing": "De vlucht naar Egypte en de dreiging van Herodes.",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
         "aanspraak": "Goede Geest van God",
         "focus": "begrip_bijbelverhaal",
-        "tekst": "Goede Geest van God,\n\nKom in ons midden. Wij gaan nu lezen uit de Bijbel. Het zijn oude verhalen over een verre reis. Maar de verhalen gaan ook over ons leven nu.\n\nMaak ons hart warm en open. Zorg dat de woorden niet alleen in ons hoofd blijven, maar dat we ze echt gaan voelen. Help ons om te begrijpen wat U tegen ons wilt zeggen. Geef ons de kracht om te doen wat goed is.\n\nAmen.",
-        "echo_schriftlezing": "Het openstaan voor de leiding van God, zoals Jozef deed in zijn droom.",
+        "tekst": "Goede Geest van God,\\nWij gaan nu lezen uit de Bijbel. Het zijn oude woorden over een reis naar een ver land. Wij vragen U: kom in ons hart. Zorg dat het verhaal ons raakt. Help ons om te begrijpen wat U vandaag tegen ons zegt. Maak ons open voor Uw liefde. Amen.",
+        "echo_schriftlezing": "De reis naar een ver land (Egypte).",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
         "aanspraak": "Dank U wel, goede God",
-        "verbinding_verkondiging": "Dank voor uw bescherming en voor de liefde die we mogen doorgeven.",
+        "verbinding_verkondiging": "U bent bij ons, ook als het leven moeilijk is.",
         "elementen": {
-          "dank_gehoorde_woord": "Dank voor het verhaal over de reis naar Egypte.",
-          "vraag_kracht_bewaren": "Help ons om de liefde vast te houden.",
-          "verbinding_dagelijks_leven": "Zorg dat we in Den Haag goed zijn voor elkaar."
+          "dank_gehoorde_woord": "Dank U voor het verhaal van Jozef die voor Jezus zorgde.",
+          "vraag_kracht_bewaren": "Help ons om Uw vrede vast te houden in ons hart.",
+          "verbinding_dagelijks_leven": "Zegen ons werk en onze gezinnen in deze stad."
         },
-        "tekst": "Dank U wel, goede God,\n\nWij zijn blij dat we hier samen zijn. Dank U voor het verhaal van vandaag. Wij weten nu dat U bij ons bent als we bang zijn. U reist met ons mee, ook als we naar een vreemde plek gaan. Dank U dat U Jezus heeft beschermd toen Hij klein was.\n\nWij danken U voor de mooie dingen in ons leven. Voor een warm huis terwijl het buiten koud is. Voor lekker eten op tafel. Voor vrienden en familie die van ons houden. Dank U dat we in deze kerk mogen komen om tot rust te komen.\n\nWij hebben gehoord over de liefde. Liefde is als een warme jas die we mogen aantrekken. Dank U dat U ons die jas elke dag geeft. Help ons om die liefde ook aan anderen te geven. Aan mensen die het koud hebben of die verdrietig zijn.\n\nZorg voor ons in de nieuwe week. In ons werk, op school en thuis. Wij danken U dat we nooit alleen zijn. U houdt ons vast met uw sterke handen.\n\nAmen.",
-        "echo_schriftlezing": "Het beeld van de liefde als een kleed of jas (Kolossenzen 3).",
+        "tekst": "Dank U wel, goede God.\\nWij hebben geluisterd naar de verhalen uit de Bijbel. Dank U dat U ons vertelt dat U meegaat op reis. Ook als het donker is in ons leven, bent U erbij. U bent als een warme jas die ons beschermt tegen de kou.\\nWij danken U voor dit huis, de Kloosterkerk. Dank U voor de muziek en de stilte. Wij danken U voor de mensen om ons heen. Voor vrienden die ons helpen en voor familie die voor ons zorgt. Dank U voor het eten op onze tafel en voor een dak boven ons hoofd.\\nWij denken aan de stad Den Haag. Dank U voor de mooie plekken bij de zee en in het bos. Help ons om deze week de vrede van Kerstmis vast te houden. Ook als we weer gaan werken of naar school gaan. Geef ons de kracht om aardig te zijn voor anderen. Wij willen Uw liefde laten voelen aan de mensen die wij tegenkomen. Dank U dat U altijd bij ons bent. Amen.",
+        "echo_schriftlezing": "God als beschermer (de warme jas / kleding uit Kolossenzen).",
         "amen": true
       },
       "voorbeden": {
@@ -2905,326 +2904,329 @@
         "cirkels": {
           "wereld": {
             "themas": [
-              "vrede",
-              "vluchtelingen"
+              "vrede in Oekraïne",
+              "veiligheid voor vluchtelingen"
             ],
-            "tekst": "Wij bidden voor de hele wereld. Er is veel ruzie tussen landen. Wij bidden voor vrede. Zorg voor alle mensen die moeten vluchten voor geweld. Geef hen een veilige plek om te wonen."
+            "tekst": "Wij bidden voor de wereld. Geef vrede in landen waar gevochten wordt, zoals in Oekraïne. Wij denken aan de families die daar moeten schuilen. Geef hen hoop. Wij bidden voor alle mensen die een nieuw huis zoeken in Europa. Zorg dat zij zich welkom voelen."
           },
           "kerk": {
             "themas": [
-              "onze kerk",
+              "alle gelovigen",
               "de verbouwing"
             ],
-            "tekst": "Wij bidden voor de kerk over de hele wereld. En ook voor onze eigen Kloosterkerk. Er gaat veel veranderen in dit huis. Het orgel wordt ingepakt. Er komt stof en lawaai door de verbouwing. Help ons om toch een fijne groep te blijven. Bescherm dit huis en de mensen die er werken."
+            "tekst": "Wij bidden voor de kerk. Voor alle mensen die in U geloven, overal op de wereld. Wij bidden voor onze eigen Kloosterkerk. Binnenkort gaat dit huis dicht voor een verbouwing. Wij moeten ons orgel inpakken om het te beschermen. Help ons om ook in die tijd een goede groep te blijven."
           },
           "naasten": {
             "themas": [
-              "zieken",
-              "oudere mensen"
+              "zieke mensen",
+              "eenzame ouderen"
             ],
-            "tekst": "Wij bidden voor de mensen die we kennen. Voor wie ziek is en pijn heeft. Voor de mensen die oud worden en dingen vergeten. Wij bidden voor de mensen die zich alleen voelen in de grote stad. Laat hen voelen dat ze erbij horen."
+            "tekst": "Wij bidden voor de mensen die wij kennen. Voor de zieken in de ziekenhuizen hier in de stad. Geef hen kracht om beter te worden. Wij bidden voor oude mensen die zich vaak alleen voelen. Laat hen voelen dat zij niet vergeten zijn. Geef ons de moed om bij hen langs te gaan."
           },
           "eigen_gemeente": {
             "themas": [
-              "kinderen",
-              "de nieuwe week"
+              "onze gezinnen",
+              "onze zorgen"
             ],
-            "tekst": "Wij bidden voor onszelf. Voor de kinderen in de kerk en voor de grote mensen. Help ons om in de nieuwe week goede dingen te doen. Geef ons geduld met elkaar. Laat uw vrede in ons hart zijn."
+            "tekst": "Wij bidden voor onszelf. Voor onze eigen gezinnen en voor de mensen van wie wij houden. Help ons om eerbied te hebben voor elkaar, zoals Sirach ons leerde. Geef ons geduld als we moe zijn. En wees bij ons als we ons zorgen maken over morgen."
           }
         },
-        "stilte_instructie": "*Het is nu even stil. Iedereen kan in zijn eigen hart een gebed zeggen voor zichzelf of voor iemand anders.*",
-        "overgang_onze_vader": "Samen bidden we het gebed dat Jezus ons leerde:",
-        "onze_vader": "Onze Vader in de hemel,\nlaat iedereen u eren.\nLaat uw nieuwe wereld komen.\nLaat op aarde uw wil gedaan worden,\nnet zoals dat in de hemel gebeurt.\nGeef ons vandaag het eten dat we nodig hebben.\nEn vergeef ons wat we fout gedaan hebben,\nwant wij hebben ook andere mensen hun fouten vergeven.\nHelp ons om nooit tegen u te kiezen.\nEn bescherm ons tegen de macht van het kwaad.\nWant u bent koning,\nu regeert met grote macht,\nvoor altijd. Amen."
+        "stilte_instructie": "*Het is nu even stil. In ons hart bidden wij voor onszelf en voor de mensen aan wie wij denken.*",
+        "overgang_onze_vader": "Samen bidden wij de woorden die Jezus ons leerde:",
+        "onze_vader": "Onze Vader in de hemel,\\nlaat iedereen u eren.\\nLaat uw nieuwe wereld komen.\\nLaat op aarde uw wil gedaan worden,\\nnet zoals dat in de hemel gebeurt.\\nGeef ons vandaag het eten dat we nodig hebben.\\nEn vergeef ons wat we fout gedaan hebben,\\nwant wij hebben ook andere mensen hun fouten vergeven.\\nHelp ons om nooit tegen u te kiezen.\\nEn bescherm ons tegen de macht van het kwaad.\\nWant u bent koning,\\nu regeert met grote macht,\\nfor altijd. Amen."
       }
     },
     "poetische_technieken_gebruikt": {
       "parallellisme": [
-        "Soms doen wij dingen fout. Soms vergeten wij U.",
-        "Dank voor een warm huis. Dank voor lekker eten."
+        "Dank U voor...",
+        "Wij bidden voor..."
       ],
       "drieslag": [
-        "In ons werk, op school en thuis.",
-        "Voor de wereld, voor de stad en voor onszelf."
+        "koud, stil en donker",
+        "muziek, stilte en mensen"
       ],
       "anafoor": [
-        "Wij bidden voor...",
-        "Dank U voor..."
+        "Wij denken aan...",
+        "God, wees erbij."
       ],
       "inclusio": [
-        "De gebeden beginnen met de kou buiten in Den Haag en eindigen met de vrede in ons hart in de stad."
+        "Begin en eind van de dienst gaan over 'bij God zijn'."
       ],
       "zintuiglijke_taal": [
-        "Voelen: de kou buiten, de warmte van de liefde.",
-        "Handen: God die ons vasthoudt met zijn handen.",
-        "Hart: een hart dat schoon wordt gemaakt, een warm hart.",
-        "Aanraken: de woorden die ons aanraken."
+        "voelen (veiligheid, warmte, liefde)",
+        "hart (schoon maken, open maken)",
+        "handen (zorgen voor, delen)",
+        "warmte (als een jas)"
       ],
       "lokale_beelden": [
-        "De mist over de stad Den Haag.",
-        "De kerstmarkt die weg is.",
-        "De verbouwing van de kerk en het orgel dat wordt ingepakt."
+        "De mist en kou op het Lange Voorhout",
+        "Het inpakken van het orgel voor de verbouwing",
+        "De zee en het bos in Den Haag"
       ]
     },
     "echo_techniek": {
-      "schriftlezing_thema": "God reist met ons mee in de onzekerheid en beschermt het kwetsbare leven.",
+      "schriftlezing_thema": "De reis en de bescherming van het kwetsbare leven.",
       "echo_per_gebed": {
-        "drempelgebed": "Het neerleggen van tassen (zoals bij een vlucht).",
-        "kyrie": "De gemene koning Herodes en de bange kinderen nu.",
-        "epiclese": "Het hart openmaken voor het verhaal.",
-        "dankgebed": "De liefde als een warme jas (Kolossenzen).",
-        "voorbeden": "De eerbied voor oude mensen (Sirach) en de zorg voor de kerkruimte."
+        "drempelgebed": "Veiligheid zoeken bij God, net als het kindje Jezus.",
+        "kyrie": "De vlucht in de nacht en de dreiging van geweld.",
+        "epiclese": "Het verhaal als een reis die we samen maken.",
+        "dankgebed": "God als een beschermende jas (bekleden met liefde uit Kolossenzen).",
+        "voorbeden": "Zorgen voor de kwetsbaren (kinderen, ouderen) en het inpakken van het orgel als beeld van bewaring."
       }
     }
   },
   "14_gebeden_profetisch": {
-    "stijl_analyse": "De gebeden zijn vormgegeven met de ritmische herhaling en de schurende eerlijkheid die kenmerkend zijn voor Brueggemann. Er is een bewuste breuk gemaakt met de 'kerstidylle' door de nuchtere, gevaarlijke realiteit van de vlucht en de politieke macht van Herodes te contrasteren met de kwetsbaarheid van het Kind en de huidige wereldnood.",
+    "stijl_analyse": "De gebeden hanteren de 'profetische verbeeldingskracht' door de kerstidylle te confronteren met de rauwe machtspolitiek van Den Haag. Er wordt gebruikgemaakt van een triadisch ritme (oriëntatie-desoriëntatie-nieuwe oriëntatie) waarbij God direct wordt aangesproken als een soeverein, soms gevaarlijk Subject dat onze politieke en economische scenario's openbreekt.",
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Gij, Onbeheersbare, Gij die buiten onze protocollen valt,",
-        "tekst": "Wij treden dit huis binnen, uit een wereld die verslaafd is aan haar eigen schittering.\nWij komen uit de straten waar de kerstverlichting de duisternis van de wereld probeert weg te poetsen met een overdaad aan watt en luxe.\nWij dragen de bezetting van het imperium in ons hoofd:\nde dwingende logica van meer, de ijzeren wet van de markt, het protocol van de macht dat ons vertelt dat wij de regisseurs zijn van ons eigen geluk.\n\nHier, op deze plaats van samenkomst, in het hart van de stad waar wetten worden gewogen en vonnissen worden geveld,\nleggen wij onze maskers van zelfredzaamheid af.\nWij erkennen dat wij gevangen zitten in scenario's van controle,\ndat wij onze ziel hebben verpand aan de goden van de economie en de schijn van veiligheid.\n\nBreek in, God, in onze verstikte verbeelding.\nOntregel onze zelfgenoegzaamheid.\nBevrijd ons van de 'koninklijke bewustheid' die ons doet geloven dat de wereld is zoals zij is en nooit anders zal worden.\nWij zijn hier niet om een traditie te bestendigen, maar om een ontmoeting te riskeren.\nWij wachten op U, niet als een troostprijs voor onze vermoeidheid,\nmaar als de Levende die de muren van ons gelijk omverwerpt.\n\nLaat dit uur een breuk zijn met de waan van de dag.\nLaat de stilte van dit huis de ruis van het Binnenhof en de kooplust van de Passage overstemmen.\nWij zijn hier, kwetsbaar en bezet,\nen wij hunkeren naar Uw bevrijdende woord.\nHeerser over de marges, wees aanwezig in ons midden.",
-        "echo_schriftlezing": "De breuk met de macht van Herodes en de overgang naar de nuchtere realiteit van de vlucht (Matteüs 2).",
+        "aanspraak": "Gij, Onbehuiste God, wachter in de nacht van onze systemen,",
+        "tekst": "Wij treden dit huis van steen binnen, nog vol van de ruis van de stad,\nnog vol van de echo’s van het Lange Voorhout,\nwaar de kraampjes zijn afgebroken en de lichten gedoofd.\nWij komen uit het rijk van de cijfers, de exportstatistieken van kerstballen,\nhet rijk waar alles gemeten, gewogen en verhandeld wordt.\nWij belijden voor Uw aangezicht dat wij 'bezet gebied' zijn.\nOnze hoofden zitten vol met de protocollen van de macht,\nonze harten zijn geprogrammeerd op zelfbehoud en burgerlijke rust.\nWij hebben van Uw komst een sieraad gemaakt,\neen glanzend object voor onze eigen troost,\nterwijl Gij als een vluchteling de grens overstak.\n\nGij die de 'koninklijke bewustheid' van Herodes doorbreekt,\nwij vragen U: kraak onze zelfvoldane stilte.\nSloop de muren van onze diplomatieke onschendbaarheid.\nWij leggen onze maskers van succes af bij de drempel.\nWij leggen onze titels en onze pensioenplannen neer.\nWij zijn hier niet als de beheerders van het koninkrijk,\nmaar als de ontheemden die hongeren naar een woord dat niet van ons is.\n\nBreek in, Gij Gevaarlijke God,\nin de gesloten cirkels van ons denken.\nBevrijd ons van de dwang om altijd 'thuis' te moeten zijn.\nMaak ons tot reisgenoten van het Kind,\ndat geen plek heeft om het hoofd neer te leggen,\nbehalve in de schaduw van Uw genade.\nWij zijn hier. Wij wachten.\nNiet op een bevestiging van wat we al weten,\nmaar op de schok van Uw aanwezigheid.\nAmen.",
+        "echo_schriftlezing": "Echo van de vlucht in de nacht (Matteüs 2) en de breuk met de macht van Herodes.",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "God van de ontheemden, Gij die de schreeuw van de onschuldigen hoort,",
+        "aanspraak": "God van de Onschuldigen, Gij die de kreten in de nacht hoort,",
         "focus": "lamentatie_en_protest",
-        "tekst": "Wij staan voor U met de rauwe werkelijkheid van een wereld die weigert te genezen.\nWij klagen voor Uw aangezicht over de Herodessen van onze tijd,\nover systemen die kinderen opofferen op het altaar van geopolitieke belangen,\nover machthebbers die grenzen dicteren terwijl de menselijkheid verdringt in de modder.\n\nWij roepen tot U voor de kinderen van Bethlehem, en die van Gaza, en die van Myanmar,\nen voor de generaties die opgroeien in de schaduw van raketten en de kilte van onverschilligheid.\nWij noemen voor U de uitgeputte solidariteit,\nde westerse handen die langzaam opengaan en weer dichtgaan als de kosten te hoog worden,\nterwijl in Oekraïne de hoop bevriest onder een hemel zonder steun.\n\nWij protesteren tegen de traagheid van onze genade.\nWij gedenken het Syrische gezin dat tien jaar moest wachten in de wachtkamer van de wereld,\ntien jaar van onzekerheid in Egypte voordat een deur eindelijk openging.\nWij klagen over de bureaucratie die sneller is met het trekken van muren dan met het bouwen van een thuis.\n\nEn wij belijden onze eigen apathie, God.\nWij, die ons veilig weten in de 'zandwijken' van deze stad,\nterwijl de kloof met de 'veenwijken' dieper wordt en de haat tegen de vreemdeling als een gif door onze straten sijpelt.\nWij zijn medeplichtig aan de stilte.\nWij hebben ons bekleed met comfort in plaats van met barmhartigheid.\n\nWord wakker, Gij die slaapt in het ruim van ons schip!\nZie de storm van onrecht die de kleinen overspoelt.\nWij weigeren te accepteren dat dit de orde van de wereld is.\nWij eisen Uw gerechtigheid op, niet als een abstract ideaal, maar als een vlam die onze koude harten verschroeit.\nHeer, ontferm U over onze gebroken wereld en onze versteende zielen.",
-        "echo_schriftlezing": "De kindermoord te Bethlehem en de vluchtelingstatus van de Heilige Familie.",
+        "tekst": "Wij roepen tot U uit de put van onze wereld,\neen wereld die zo efficiënt is in het offeren van het weerloze leven.\nWij klagen aan, God, de Herodessen van deze tijd,\nde systemen die belangrijker zijn geworden dan het vlees en bloed van een kind.\n\nWij protesteren tegen de militaire logica die steden tot puinhopen maakt,\nterwijl wij in de 'Stad van Vrede en Recht' debatteren over asielquota.\nWij roepen voor de kinderen in Myanmar, in Gaza, in de schuilkelders van Oekraïne,\ndie de 'kindermoord van Bethlehem' elke dag opnieuw aan den lijve ondervinden.\nWaarom zwijgt Gij, terwijl de tirannen hun zwaarden slijpen?\nWaarom moet Uw Zoon nog steeds vluchten in de nacht?\n\nWij klagen aan de verharding van ons eigen hart,\nde 'demonisering' van de vreemdeling die asiel zoekt,\nterwijl Jezus zelf een ongewenste migrant was in Egypte.\nWij roepen voor de Syrische gezinnen die tien jaar wachten op een menswaardig bestaan,\nverstrikt in de bureaucratie van onze angst.\nWij roepen voor de ouderen in onze eigen wijken,\ndie hun verstand verliezen en vergeten worden,\nterwijl de wereld haastig aan hen voorbijgaat.\n\nHeer, wij zijn medeplichtig aan de stilte.\nWij hebben ons bekleed met onverschilligheid in plaats van met liefde.\nOnze vrede is een gewapende vrede, onze rust is een afgekochte rust.\nWij verdragen de pijn van de ander niet, dus kijken we weg.\nWij verdragen onze eigen kwetsbaarheid niet, dus bouwen we muren.\n\nWord wakker, Gij Bewaarder van Israël!\nLaat Uw toorn ontbranden tegen het onrecht,\nen Uw barmhartigheid overstromen voor de geslagenen.\nWij weigeren te accepteren dat dit 'normaal' is.\nWij weigeren te geloven dat de dood het laatste woord heeft.\nOntferm U over ons, over onze stad, over Uw wereld.\nAmen.",
+        "echo_schriftlezing": "Directe verbinding met de Onschuldige Kinderen en de vluchtelingstatus van Jezus (Matteüs 2).",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Geest van God, die de chaos ordent en de muren van de verbeelding sloopt,",
+        "aanspraak": "Gij die spreekt in dromen en de stilte doorklieft,",
         "focus": "doorbreken_verbeelding",
-        "tekst": "Kom over ons als een ongenode gast.\nWij hebben onze scenario's klaarliggen, onze preken voorgekookt en onze liederen ingestudeerd.\nWij hebben God opgesloten in onze boeken en onze esthetiek.\n\nSloop de muren van ons gelijk.\nBreek de firewalls van ons verstand open, opdat wij het gevaarlijke geheugen van Jezus durven toelaten.\nWij vragen niet om een bevestiging van wat wij al weten,\nmaar om een inbraak van wat wij niet durven hopen.\n\nLaat Uw woord niet landen als een zachte deken, maar als een sloophamer die onze vooroordelen verbrijzelt.\nGeef ons de moed om de vluchtroute van het Kind te zien als onze eigen weg.\nOpen onze ogen voor de alternatieve werkelijkheid van Uw koninkrijk,\nwaarin de minsten de eersten zijn en de machtelozen de dragers van de hoop.\n\nHerstart ons denken, Geest van waarheid.\nSpreek tot ons in de taal van de kwetsbaarheid,\nopdat wij niet slechts hoorders zijn, maar dragers van een nieuw begin.\nKom, schep in ons een nieuwe ruimte.",
-        "echo_schriftlezing": "De roep om wijsheid uit Sirach en de nieuwe kleding van Kolossenzen.",
+        "tekst": "Wij vragen U om Uw Heilige Geest,\nniet als een zachte bries om ons in slaap te sussen,\nmaar als een sloophamer voor onze vastgelopen verbeelding.\nOnze scenario's zitten dicht, God.\nWij zien alleen nog de weg van de macht en de weg van de markt.\nOpen onze ogen voor de 'omweg naar Nazaret'.\nBreek het glazuur van onze kerstverhalen open,\nzodat het radioactieve Woord ons kan raken.\nLaat de Geest onze innerlijke 'software' resetten,\nzodat we de stem van de Engel weer kunnen horen\nmidden in de ruis van de politiek en de diplomatie.\nMaak ons ontvankelijk voor de onmogelijke mogelijkheid van Uw Rijk.\nSpoor ons aan om op te staan en te vluchten uit de slavernij van de gewoonte.\nSpreek, God, Uw volk luistert – eindelijk.\nAmen.",
+        "echo_schriftlezing": "Verwijzing naar de droom van Jozef en de noodzaak tot 'uitwijken' (Matteüs 2).",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Gever van de onmogelijke mogelijkheid, God van de milde overvloed,",
-        "verbinding_verkondiging": "Dank voor de bewaring in de vlucht en de terugkeer naar het gewone leven in Nazaret.",
-        "tekst": "Wij danken U voor de verrassing van het leven dat standhoudt.\nIn een wereld die geregeerd wordt door de dood en de dreiging van Herodes,\ndanken wij U voor de vluchtweg naar Egypte,\nvoor de open deuren en de verborgen schuilplaatsen,\nvoor de bewaring van het kwetsbare leven dat de wereld zal redden.\n\nWij danken U dat Gij geen God van de paleizen bent,\nmaar een God van de stoffige wegen en de tijdelijke asielzoekerscentra.\nWij danken U voor de gift van de 'Heilige Familie' –\nniet als een glimmend plaatje, maar als een groep mensen die voor elkaar kiest in de storm,\ndie elkaar bekleedt met liefde wanneer de wereld hen naakt en weerloos laat.\n\nWij danken U voor de nuchtere genade van de terugkeer naar Nazaret,\nvoor de heiligheid van het gewone leven, het timmerwerk en de dagelijkse zorg.\nWij danken U dat Gij ons niet overlaat aan onze eigen bange bezorgdheid,\nmaar ons telkens weer verrast met overvloed waar wij schaarste vreesden.\n\nWij danken U voor dit huis van steen dat wij mogen bewonen,\nen zelfs voor de renovatie die aanstaande is –\neen teken dat niets hetzelfde blijft, dat ook wij moeten veranderen om Uw toekomst te ontvangen.\nDank voor het orgel dat wordt ingepakt als bescherming,\neen beeld van Uw zorg die ons omhult in tijden van transitie.\n\nWij danken U voor de wijsheid van de generaties voor ons,\nvoor de ouders die ons de weg wezen en de kinderen die ons dwingen tot hoop.\nWij vieren de onverdiende kans om opnieuw te beginnen,\nom ons te kleden met mildheid en geduld,\nomdat Gij ons eerst hebt liefgehad.\nOnze mond is vol van lofprijzing, want Gij bent de God van het onverwachte heil.",
-        "echo_schriftlezing": "De terugkeer uit Egypte en de deugden van Kolossenzen 3.",
+        "aanspraak": "God van de Omweg en de Onverwachte Haven,",
+        "verbinding_verkondiging": "Dankzegging voor de God die niet in paleizen woont, maar meereist in de vlucht.",
+        "tekst": "Wij danken U met een hart dat overslaat van verbazing,\nwant Gij zijt niet de God van de gevestigde orde,\nmaar de God die asiel zoekt in de marge.\nWij danken U dat Gij Egypte, het land van de oude slavernij,\nhebt omgevormd tot een schuilplaats voor het Leven.\nWat een verrassing, God, dat het heil niet uit het centrum komt,\nmaar uit de ballingschap, uit de nacht, uit de vreemde.\n\nWij danken U voor de 'onmogelijke haven' die Gij ons biedt.\nWij danken U voor de momenten waarop onze plannen doorkruist werden,\nen wij ontdekten dat Gij daar, op die ongewenste plek, op ons wachtte.\nDank voor de genade die niet vraagt naar onze status,\nmaar die ons 'bekleedt met liefde' terwijl we nog naakt en angstig zijn.\n\nWij danken U voor de mensen die voor ons een 'Egypte' waren:\ndie ons opvingen toen we vogelvrij waren,\ndie ons brood gaven toen we niets meer te bieden hadden.\nWij danken U voor de Kerk, die in haar kwetsbaarheid en transitie,\neen 'Nazaret' mag zijn – een plek waar het Kind mag groeien,\nver weg van de schijnwerpers van de macht.\n\nLof zij U voor de gift van dit leven,\ndat niet verdiend hoeft te worden,\ndat niet geproduceerd kan worden,\nmaar dat ons geschonken wordt als een brood voor onderweg.\nWij prijzen Uw naam omdat Gij de 'Archelaüssen' van deze wereld trotseert\nen ons een toekomst geeft die sterker is dan de dood.\nWij dansen van vreugde omdat de tiran is gevallen\nen de Vluchteling regeert met mildheid.\nAmen.",
+        "echo_schriftlezing": "Dank voor de vervulling van de profetie 'Uit Egypte heb Ik mijn Zoon geroepen' (Matteüs 2).",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "God van recht en vrede, Gij die de wereld in Uw handen houdt,",
+        "aanspraak": "Heer van de Geschiedenis en Bewaarder van de Armen,",
         "cirkels": {
           "wereld": {
             "themas": [
-              "Oekraïne",
-              "Gaza",
-              "Internationale Rechtsorde"
+              "Internationale rechtsorde",
+              "Geopolitiek geweld",
+              "Machtsmisbruik"
             ],
-            "tekst": "Wij bidden voor de wereldmachten en de diplomaten in de gebouwen om ons heen.\nOntregel de plannen van de tirannen die de aarde verdelen als een buit.\nWij bidden specifiek voor de bevolking van Oekraïne, nu de militaire steun wankelt en de angst voor een onrechtvaardige vrede groeit.\nLaat de solidariteit niet bezwijken onder de last van de energieprijzen of de gewenning aan geweld.\nWij bidden voor de kinderen in Gaza en Myanmar, die de prijs betalen voor de hoogmoed van de groten.\nSpoor de internationale gemeenschap aan om niet slechts te spreken over recht, maar het te doen."
+            "tekst": "Wij brengen voor U de wereldleiders en de strategen van de macht.\nWij bidden voor hen die in deze stad besluiten nemen over leven en dood,\nover grenzen en budgetten, over wapens en vrede.\nOntwapen hun handen en sloop de muren in hun hoofden.\nWij bidden specifiek voor de slachtoffers van de Herodessen van vandaag:\nvoor de onschuldigen in oorlogsgebieden wiens namen wij niet kennen,\nmaar die in Uw boek geschreven staan.\nLaat de internationale hoven in deze stad instrumenten van Uw gerechtigheid zijn,\nen niet slechts papieren tijgers van de gevestigde orde.\nBreek de macht van degenen die menen dat zij de geschiedenis beheersen,\nen toon Uw kracht in de machteloosheid van de vluchteling."
           },
           "kerk": {
             "themas": [
-              "Solidariteit",
-              "Renovatie",
-              "Getuigenis"
+              "Kerkelijke renovatie",
+              "Alternatieve gemeenschap",
+              "Solidariteit"
             ],
-            "tekst": "Wij bidden voor Uw kerk wereldwijd en hier in Nederland.\nBeziel de dialoog over financiële solidariteit tussen rijke en arme gemeenten.\nLaat ons niet een club van gelijkgestemden zijn die de eigen esthetiek koestert,\nmaar een alternatieve gemeenschap die de taal van de liefde spreekt in een verhard klimaat.\nGeef ons de moed om 'anders' te zijn, om de vluchteling te herbergen en de macht de waarheid te zeggen.\nZegen de voorbereidingen voor de verbouwing van dit huis, dat het een baken van gastvrijheid mag blijven."
+            "tekst": "Wij bidden voor Uw wereldwijde Kerk, dikwijls vervolgd, dikwijls verlamd.\nMaak ons tot een gemeenschap die durft 'uit te wijken' naar de marge.\nWij bidden voor deze gemeente, de Kloosterkerk,\nterwijl wij ons voorbereiden op de renovatie en het 'inpakken' van ons orgel.\nBehoed ons voor de angst dat wij onze identiteit verliezen als onze stenen trillen.\nLaat dit huis een asiel blijven voor de ziel,\neen plek waar de 'vrede van Christus' regeert boven de wetten van de markt.\nMaak ons tot een alternatieve samenleving die de vreemdeling niet vreest,\nmaar bekleedt met de waardigheid die Gij ons schenkt."
           },
           "naasten": {
             "themas": [
-              "Ouderen",
-              "Vluchtelingen",
-              "Eenzamen"
+              "Zorg voor ouders",
+              "Dementie",
+              "Eenzaamheid",
+              "Vluchtelingen"
             ],
-            "tekst": "Wij bidden voor de naasten die ons omringen.\nVoor de ouderen in de stad, voor wie de zorg soms een last is en de eenzaamheid een grijze deken.\nGeef ons de eerbied waarover Sirach sprak, om hen niet te vergeten in hun broosheid.\nWij bidden voor de 120.000 Oekraïners in ons land en voor alle ongedocumenteerden die op 23 december nog steeds geen plek hebben om te rusten.\nGeef hen de status van mens, boven de status van dossier.\nTroost hen die rouwen in deze dagen na Kerst, voor wie de lege stoel aan tafel een gapend gat is."
+            "tekst": "Wij brengen de namen voor U van hen die ons het meest nabij zijn.\nWij bidden voor de generatie van onze ouders,\ndie ons de weg wezen en nu zelf de weg kwijtraken in de mist van de ouderdom.\nGeef ons de 'eerbied' waar Sirach over sprak – niet als plicht,\nmaar als barmhartigheid die onze eigen zonden uitwist.\nWij bidden voor de naasten die zich ontheemd voelen in hun eigen leven:\ndoor ziekte, door verlies van werk, door de kou van de eenzaamheid.\nWij noemen de Syrische familie uit het nieuws,\nen met hen de duizenden die nog wachten op een 'Nazaret' om te mogen wortelen.\nLaat hen Uw bewaring ervaren door onze handen."
           },
           "eigen_gemeente": {
             "themas": [
-              "Kloosterkerk",
-              "Zand en Veen",
-              "Besluitvorming"
+              "Sociale tweedeling Den Haag",
+              "Professionele ethiek",
+              "Kwetsbaarheid"
             ],
-            "tekst": "Wij bidden voor deze gemeente van de Kloosterkerk.\nVoor de beleidsmakers en ambtenaren in onze banken die morgen weer beslissen over asielquota en pesticide-normen.\nGeef hen een onrustig geweten en de moed om te kiezen voor het leven boven het systeem.\nHelp ons om de kloof in onze eigen stad Den Haag te overbruggen,\nom de hand te reiken aan de wijken waar de hoop schaars is.\nLaat ons een 'stadsklooster' zijn waar de stilte niet dient om de wereld te vergeten, maar om haar dieper te beminnen."
+            "tekst": "Wij bidden voor onszelf, hier in de luwte van het centrum.\nWij bidden voor de juristen, de ambtenaren, de diplomaten in onze banken.\nGeef hen de moed om in hun werk de 'logica van Herodes' te weerstaan\nen te kiezen voor de menselijke maat, ook als dat hun carrière kost.\nOverbrug de kloof in onze stad tussen het zand en het veen,\ntussen de bevoorrechten en de vergetenen.\nLaat ons niet rusten zolang er nog 'Onschuldige Kinderen' lijden in onze eigen wijken.\nMaak ons tot een volk dat de vrede niet alleen bezingt,\nmaar haar ook 'aantrekt' als een dagelijks kleed van mildheid."
           }
         },
-        "stilte_instructie": "In de stilte van dit huis leggen wij onze eigen ongenoemde noden en de namen van hen die ons lief zijn voor Uw aangezicht...",
-        "overgang_onze_vader": "Al onze gebeden, de gesproken en de onuitgesproken woorden, vatten wij samen in de woorden die Uw Zoon ons gaf:",
-        "onze_vader": "Onze Vader die in de hemel zijt,\nuw naam worde geheiligd,\nuw koninkrijk kome,\nuw wil geschiede, op aarde zoals in de hemel.\nGeef ons heden ons dagelijks brood\nen vergeef ons onze schulden,\nzoals ook wij vergeven onze schuldenaren.\nEn leid ons niet in verzoeking,\nmaar verlos ons van de boze.\nWant van U is het koninkrijk\nen de kracht en de heerlijkheid\nin eeuwigheid. Amen."
+        "stilte_instructie": "In de stilte leggen wij onze eigen 'vluchtroutes' en onze verborgen angsten in Uw sterke handen...",
+        "overgang_onze_vader": "Al onze onmogelijke woorden vatten wij samen in het gebed dat de Vluchteling van Bethlehem ons leerde:",
+        "onze_vader": "Onze Vader die in de hemelen zijt,\nuw naam worde geheiligd;\nuw koninkrijk kome;\nuw wil geschiede, op aarde zoals in de hemel.\nGeef ons heden ons dagelijks brood;\nen vergeef ons onze schulden,\nzoals ook wij onze schuldenaars vergeven;\nen leid ons niet in verzoeking,\nmaar verlos ons van de boze.\nWant van U is het koninkrijk en de kracht en de heerlijkheid in eeuwigheid. Amen."
       }
     },
     "profetische_elementen": {
       "gevaarlijke_werkwoorden": [
-        "Ontregelen",
-        "Sloopen",
-        "Verbrijzelen",
-        "Verschroeien",
-        "Ontmaskeren",
-        "Sijpelen"
+        "openbreken",
+        "kraken",
+        "sloop",
+        "resetten",
+        "uitwijken",
+        "ontmaskeren",
+        "inbreken"
       ],
       "moderne_metaforen": [
-        "Protocol van de macht",
-        "Wachtkamer van de wereld",
-        "Firewalls van het verstand",
-        "Gevaarlijk geheugen",
-        "Scenario's van controle",
-        "Wachtlijst van genade"
+        "exportstatistieken van kerstballen",
+        "diplomatieke onschendbaarheid",
+        "geprogrammeerd op zelfbehoud",
+        "papieren tijgers",
+        "software van de macht",
+        "asielzoekerscentrum voor de Messias"
       ],
       "anti_status_quo": [
-        "Wij weigeren te accepteren dat dit de orde van de wereld is.",
-        "Bevrijd ons van de 'koninklijke bewustheid'.",
-        "Wij zijn hier niet om een traditie te bestendigen, maar om een ontmoeting te riskeren.",
-        "Ontregel de plannen van de tirannen die de aarde verdelen als een buit."
+        "Wij belijden dat wij 'bezet gebied' zijn.",
+        "Wij weigeren te accepteren dat dit 'normaal' is.",
+        "De macht van degenen die menen dat zij de geschiedenis beheersen.",
+        "Sloop de muren van onze diplomatieke onschendbaarheid."
       ]
     }
   },
-  "15_kindermoment": {
+  "15_bezinningsmoment": {
     "kindermoment_opties": [
       {
-        "type": "Klassiek",
-        "titel": "De 'Klik' van de Liefde",
+        "type": "Symbolisch",
+        "titel": "De Koffer van de Nacht",
         "object": {
-          "naam": "Een rol noppentjesfolie (bubbeltjesplastic)",
-          "uitleg": "Noppentjesfolie is bedoeld om kostbare dingen te beschermen. Het is zacht, maar ook heel sterk als je het ergens omheen wikkelt."
+          "naam": "Een kleine, oude reiskoffer",
+          "uitleg": "De koffer staat symbool voor de vlucht van de Heilige Familie, maar ook voor de 'bagage' die wij als volwassenen meedragen: herinneringen, zorgen en het geloof dat met ons meereist."
         },
-        "focus_schriftlezing": "Kolossenzen 3:12 - 'Kleed u in innig medeleven, in goedheid, nederigheid, zachtmoedigheid en geduld.'",
-        "verhaal_script": "(De predikant komt naar voren met een grote rol bubbeltjesplastic.) \n'Kijk eens wat ik bij me heb. Weten jullie waar dit voor is? Ja, om spullen in te pakken als je gaat verhuizen, of als er iets heel breekbaars in een doos moet. Als ik dit om mijn arm wikkel (doe dit voor), dan voelt dat eigenlijk best wel lekker, toch? Het is een soort zacht harnas.' \n'In de Bijbeltekst van vandaag zegt Paulus dat wij ons ook moeten \"aankleden\". Niet met een jas of een trui, maar met goede dingen: vriendelijkheid, geduld, liefde. Eigenlijk zijn die dingen net als dit plastic. Als wij ons \"bekleden\" met liefde, dan beschermen we elkaar. Dan kunnen we tegen een stootje en doen we elkaar niet zo snel pijn.' \n'Jezus en zijn vader en moeder moesten ook beschermd worden toen ze vluchtten. God pakte hen eigenlijk in met zijn zorg. Vandaag mogen jullie een stukje van dit plastic meenemen naar de kindernevendienst. Telkens als je een bubbeltje laat knappen (doe dit een keer: *knap!*), mag je denken aan iets liefs dat je voor een ander kunt doen. Want liefde is de beste bescherming die er is.'",
-        "afbeelding_idee": "Een foto van een kwetsbaar vaasje dat heel dik en veilig is ingepakt in glanzend bubbeltjesplastic."
+        "focus_schriftlezing": "Matteüs 2:14 - 'Hij stond op en week nog diezelfde nacht met het kind en zijn moeder uit...'",
+        "verhaal_script": "(Regie: Zet de koffer midden in de kring of op een centrale tafel. Open de koffer langzaam.)\n\nIn de dagen na Kerst ruimen we thuis vaak de spullen weer op. De kerstballen gaan terug in de doos, de rust keert weer. Maar in het verhaal van vandaag is er geen rust. Er is een koffer die halsoverkop gepakt moet worden. Niet voor een vakantie, maar voor de veiligheid. \n\nJozef pakt deze koffer in de nacht. Wat zou hij erin hebben gedaan? Een warme doek voor het kind? Wat brood voor onderweg? \n\nIn ons leven pakken we ook vaak koffers. Soms omdat we verhuizen naar een plek waar voor ons gezorgd wordt. Soms omdat we afscheid moeten nemen van wat vertrouwd was. Dat kan voelen als een donkere nacht. \n\nMaar kijk: de koffer is niet leeg. Er zit ook hoop in. God reist mee in de bagage. Hij is niet alleen in de mooie stal van Kerst, Hij is juist ook bij ons als we onderweg zijn, als we ons ontheemd voelen. Deze koffer herinnert ons eraan dat God een asielzoeker werd, om voor ons een eeuwig thuis te vinden. Waar u ook bent, uw koffer is nooit te zwaar voor Hem om mee te dragen.",
+        "afbeelding_idee": "Een sfeervolle foto van een oude koffer in het zachte licht van een lantaarn, tegen een donkere achtergrond."
       },
       {
-        "type": "Actief",
-        "titel": "De Geheime Route",
+        "type": "Interactief",
+        "titel": "De Mantel van Mildheid",
         "object": {
-          "naam": "Een rol felgekleurde schilderstape (of afzetlint)",
-          "uitleg": "Tape wordt gebruikt om grenzen aan te geven of om een pad te markeren waar het veilig is."
+          "naam": "Een grote, zachte witte sjaal of doek",
+          "uitleg": "Verwijst naar het 'bekleden met liefde' uit Kolossenzen. De zachtheid van de stof biedt een tactiele ervaring van troost."
         },
-        "focus_schriftlezing": "Matteüs 2:13-14 - De vlucht naar Egypte: 'Maak je gereed en vlucht met het kind en zijn moeder.'",
-        "verhaal_script": "(De predikant begint een streep tape op de vloer van de kerk te plakken, richting de uitgang.) \n'Hulp gevraagd! Ik moet een veilige route maken. Jozef kreeg midden in de nacht een droom. De engel zei: \"Snel! Je moet weg, want het is hier niet meer veilig voor het kindje Jezus.\" Jozef moest een weg vinden die niemand anders wist.' \n'Kennen jullie dat, dat je ergens niet mag komen of dat je heel goed moet opletten waar je loopt? In Den Haag hebben we veel belangrijke gebouwen waar bewakers voor staan. Maar Jozef had geen bewakers, hij had alleen een droom van God die hem de weg wees.' \n'Vandaag gaan we in de kerk een spoor trekken. Ik heb hier tape. We gaan een lijn maken van hier naar de deur van de kindernevendienst. Dat is onze \"veilige route\". Terwijl we lopen, proberen we heel stil te zijn, net als Jozef en Maria in de nacht. Wie helpt me met het eerste stukje plakken?' \n(Laat een paar kinderen helpen met het uitrollen van de tape over de tegels van de Kloosterkerk.)",
-        "afbeelding_idee": "Een plattegrond van een stad met een oplichtende, kronkelige gouden lijn die de weg wijst."
+        "focus_schriftlezing": "Kolossenzen 3:12 - 'Omdat God u heeft uitgekozen... moet u zich kleden in innig medeleven, in goedheid, nederigheid, zachtmoedigheid en geduld.'",
+        "verhaal_script": "(Regie: De voorganger houdt de sjaal vast en laat mensen die dat willen de stof even aanraken of de sjaal even over hun schouders voelen.)\n\nPaulus schrijft ons vandaag een bijzondere brief. Hij heeft het niet over de kleren die we in de winkel kopen, maar over kleren voor onze ziel. Hij zegt: 'Kleed je aan met mildheid en liefde.'\n\nSoms voelt de wereld koud en hard. Zeker als de gezondheid achteruitgaat of als we ons alleen voelen. Dan hebben we een mantel nodig die ons beschermt. Deze zachte doek herinnert ons aan Gods liefde die als een warme jas om ons heen zit. \n\nIk nodig u uit om, terwijl deze stof langsgaat of terwijl u ernaar kijkt, te denken aan die ene persoon die voor u als een warme mantel is geweest. Of vraag God om u vandaag die zachtheid te laten voelen. We hoeven onszelf niet te pantseren tegen het leven; we mogen ons laten omhullen door de vrede van Christus. Laten we die vrede even voelen in de zachtheid van deze stof.",
+        "afbeelding_idee": "Ingezoomde foto van een geweven witte stof waarin het licht van een kaars glinstert."
       },
       {
-        "type": "Gek/Onconventioneel",
-        "titel": "De Wekker die niet Snoozet",
+        "type": "Zintuiglijk",
+        "titel": "Geur van Geborgenheid",
         "object": {
-          "naam": "Een ouderwetse, rinkelende kookwekker (zo'n eitje of een luide mechanische wekker)",
-          "uitleg": "Een wekker is irritant als je wilt slapen, maar levensreddend als je op tijd moet komen."
+          "naam": "Mirre of een mengsel van milde wierook en lavendel",
+          "uitleg": "Geur is een krachtige drager van herinneringen en emoties, cruciaal voor mensen met dementie of visuele beperkingen. Mirre verbindt de wijzen uit het oosten met de vlucht en de balseming."
         },
-        "focus_schriftlezing": "Matteüs 2:14 - 'Jozef maakte zich gereed en week nog diezelfde nacht uit.'",
-        "verhaal_script": "(Zet de wekker stiekem op 1 minuut aan het begin van het moment. Midden in het verhaal gaat hij luid af.) \n'Oei! Horen jullie dat? Dat is een herrie, hè? Wat doe jij als je wekker gaat en je bent nog heel moe? (Wacht op reacties: \"Snoozen!\", \"Omdraaien!\").' \n'Nou, Jozef kon niet snoozen. De engel kwam in zijn droom en dat was eigenlijk een soort hemelse wekker. \"Word wakker, Jozef! Nu!\" Als Jozef was blijven liggen, was het heel slecht afgelopen met Jezus. Soms wil God ons ook wakker maken. Niet omdat Hij ons wil pesten, maar omdat er werk aan de winkel is. Omdat we voor iemand moeten zorgen, of omdat we moeten opstaan tegen iets wat niet eerlijk is.' \n'In de stad Den Haag worden veel plannen gemaakt, maar soms moeten we even wakker geschud worden om te zien wat er echt toe doet: dat we voor de allerkleinsten zorgen. Vandaag in de nevendienst mogen jullie je eigen \"wakkermaker\" knutselen. Waar zou God jou vandaag voor wakker willen maken?'",
-        "afbeelding_idee": "Een cartoon van een engel die heel hard op een trompet blaast vlak boven het oor van een slapende Jozef."
+        "focus_schriftlezing": "Sirach 3:12-14 en Matteüs 2:13 (De zorg voor de kwetsbare ander)",
+        "verhaal_script": "(Regie: Laat een geurschaaltje of een diffuser rondgaan, of gebruik geurdoekjes. Spreek langzaam.)\n\nRuikt u dit? Het is een geur die al duizenden jaren oud is. Het is de geur van mirre. Kostbaar en zeldzaam. \n\nDe wijzen gaven het aan het kind in de kribbe. Maar kort daarna moest datzelfde kind vluchten. De geur bleef bij Hem hangen. Het is de geur van geborgenheid in de dreiging. \n\nIn het boek Sirach lazen we over de zorg voor onze ouders. Over de barmhartigheid die niet vergeten wordt. Zorg voor een ander is als een goede geur die in een kamer blijft hangen, ook als de woorden soms wegvallen. \n\nZelfs als het verstand ons verlaat, zoals Sirach zegt, blijft de geur van de liefde aanwezig. God ruikt onze gebeden en onze zorg voor elkaar. Deze geur vertelt ons: u bent niet vergeten. Uw leven, met al zijn geuren van vreugde en verdriet, is kostbaar voor God. Laat deze geur u vandaag herinneren aan de zegen die op uw leven rust, ook in de stilte.",
+        "afbeelding_idee": "Een afbeelding van opstijgende rookpluimen in goudkleurig licht, abstract en rustgevend."
       },
       {
-        "type": "Bizar",
-        "titel": "Onderwater in Egypte",
+        "type": "Verstillend",
+        "titel": "De Adem van de Vrede",
         "object": {
-          "naam": "Een snorkelset (duikbril en snorkel)",
-          "uitleg": "Een snorkel gebruik je om te kunnen ademen in een wereld waar je eigenlijk niet thuishoort (onder water)."
+          "naam": "Stilte en een korte mantra",
+          "uitleg": "Focust op de innerlijke ervaring en auditieve rust. Geschikt voor een ziekenhuissetting of verpleeghuis waar prikkels gedoseerd moeten worden."
         },
-        "focus_schriftlezing": "Matteüs 2:13-15 - Het verblijf in Egypte als vreemdeling.",
-        "verhaal_script": "(De predikant zet de duikbril op en steekt de snorkel in zijn/haar mond. Praat een beetje onduidelijk en haal hem dan uit.) \n'Ziet er een beetje gek uit, hè? Stel je voor dat ik zo door het Lange Voorhout zou lopen. Mensen zouden denken: die is de weg kwijt! Maar een snorkel is fantastisch als je onder water bent. Je bent in een wereld die niet de jouwe is, maar je kunt toch ademen.' \n'Jezus, Maria en Jozef moesten naar Egypte. Dat was voor hen een beetje als onder water gaan. Ze kenden de taal niet, het eten was anders, en de mensen keken misschien wel raar naar hen. Ze waren vreemdelingen. Maar God was hun \"snorkel\". Hij zorgde dat ze konden ademen en veilig waren, ook al voelde alles vreemd.' \n'Soms voelen wij ons ook een beetje een vreemdeling. Of we zien mensen in Den Haag die hier net zijn komen wonen uit een heel ver land. Hoe kunnen wij een beetje \"lucht\" geven aan mensen die zich hier nog niet thuis voelen? Laten we vandaag eens kijken hoe het is om ergens nieuw te zijn.'",
-        "afbeelding_idee": "Een baby-wiegje dat veilig op de bodem van een prachtige, kleurrijke oceaan staat, omringd door vissen."
+        "focus_schriftlezing": "Kolossenzen 3:15 - 'Laat de vrede van Christus heersen in uw hart...'",
+        "verhaal_script": "(Regie: Vraag de mensen om, indien mogelijk, hun handen rustig op hun schoot te leggen. Leid een korte ademhalingsoefening.)\n\nIn de tekst van Kolossenzen staat een prachtig woord: 'Laat de vrede van Christus heersen in uw hart.' Dat klinkt groot, maar het begint heel klein. In uw eigen ademhaling. \n\nZelfs als er onrust is om ons heen, of pijn in ons lichaam, is er een plek diep van binnen waar Christus wil wonen. Laten we samen proberen die vrede even 'in te ademen'. \n\nAdem rustig in... en denk: 'Vrede van Christus'. \nAdem rustig uit... en denk: 'In mijn hart'. \n\n(Stilte van 30 seconden)\n\nJozef hoorde Gods stem in de stilte van een droom. Soms spreekt God tot ons in de ruimte tussen twee ademteugen. U hoeft niets te presteren, u hoeft alleen maar te ontvangen. De vrede van Christus is niet de afwezigheid van zorgen, maar de aanwezigheid van God in die zorgen. Wees stil, en weet: Hij is God.",
+        "afbeelding_idee": "Een rimpelloos wateroppervlak waarin de blauwe lucht wordt weerspiegeld."
       },
       {
-        "type": "Ernstig",
-        "titel": "Het Lichtje in de Nacht",
+        "type": "Verhalend",
+        "titel": "De Wortels van de Oude Boom",
         "object": {
-          "naam": "Een klein LED-nachtlampje (voor in het stopcontact)",
-          "uitleg": "Een nachtlampje verjaagt niet alle duisternis, maar het zorgt dat je de rand van het bed kunt zien. Het geeft net genoeg moed."
+          "naam": "Een grillige boomwortel of een stuk oud hout",
+          "uitleg": "Verbeeldt de verbinding tussen generaties en de kracht van het verleden, aansluitend bij Sirach."
         },
-        "focus_schriftlezing": "Matteüs 2:13 - De dreiging van Herodes en de vlucht in de nacht.",
-        "verhaal_script": "(Houd het lampje in je hand. De lichten in de kerk mogen eventueel iets gedimd worden.) \n'Weten jullie waarom veel kinderen (en ook wel eens grote mensen) een klein lampje aan hebben 's nachts? Omdat de nacht soms spannend is. Je hoort geluiden, of je denkt aan dingen die niet fijn zijn.' \n'In het verhaal van vandaag is het ook nacht. En het is een verdrietige nacht, want koning Herodes doet gemene dingen. Hij is jaloers en bang, en daarom moeten er mensen vluchten. Dat gebeurt vandaag de dag nog steeds. Ook in onze stad wonen kinderen die in de nacht moesten vluchten uit hun eigen huis.' \n'Jozef en Maria hadden geen zaklamp, maar ze hadden wel een belofte van God. Dat was hun lichtje. Het veranderde de wereld niet meteen in een groot feest, maar het hielp hen om de volgende stap te zetten. Vandaag steken we in de kindernevendienst een kaarsje aan voor alle kinderen die nu in het donker zitten. En we danken God dat Hij bij ons is, ook als het nacht is. Want zelfs een heel klein lichtje is sterker dan al het donker van koning Herodes.'",
-        "afbeelding_idee": "Een donkere kamer met één klein, warm lichtpuntje dat een zachte gloed werpt op een paar kinderschoentjes."
+        "focus_schriftlezing": "Sirach 3:12-14 - 'Kinderen, wees je vader op zijn oude dag tot steun... zo bouw je weer op wat je zonden hebben afgebroken.'",
+        "verhaal_script": "(Regie: Houd de wortel/het hout omhoog zodat de textuur goed zichtbaar is. Laat mensen de nerven zien.)\n\nKijk eens naar dit stuk hout. Het is oud, het is getekend door de jaren. Er zitten knoesten in en barsten. Het vertelt een verhaal van vele seizoenen, van stormen en van zonneschijn. \n\nSirach vertelt ons vandaag over de eerbied voor onze ouders. Over de wortels waaruit wij zijn voortgekomen. Soms worden die wortels kwetsbaar. De boom wordt oud, de takken buigen door. \n\nMaar Sirach zegt iets heel moois: juist als de kracht afneemt, is het de liefde van de kinderen die de boom overeind houdt. En die liefde herstelt wat kapot was gegaan. \n\nWij zijn allemaal deel van een lange rij mensen. We dragen de verhalen van onze vaders en moeders in ons mee, ook hun kwetsbaarheid. God is de grote Tuinman die zowel de oude boom als het jonge stekje liefheeft. In Zijn tuin is geen leven overbodig. Uw verhaal, hoe getekend ook door de tijd, is het fundament waarop de volgende generatie mag bouwen. U bent geworteld in Gods genade, en die wortels laten nooit los.",
+        "afbeelding_idee": "Een zwart-wit foto van een oude, karakteristieke eik met diepe wortels in de aarde."
       }
     ]
   },
   "16_preek_solle": {
-    "titel": "Asiel voor de Onschuld: De Vlucht uit de Apathie",
+    "titel": "God heeft geen asiel nodig, maar wij wel: De vlucht uit de apathie",
     "schriftlezing": "Matteüs 2,13-15.19-23",
-    "kerntekst": "Sta op, neem het kind en zijn moeder en vlucht naar Egypte.",
+    "kerntekst": "Sta op, neem het kind en zijn moeder bij je en vlucht naar Egypte.",
     "preek_onderdelen": {
       "deel_1_de_landing": {
         "titel": "De Landing: Midden in de Realiteit",
-        "inhoud": "Buiten, op het Lange Voorhout, hangt de geur van uitgedoofde kaarsen en verschaalde glühwein. De 'Royal Christmas Fair' is afgebroken. We hebben de kerstboodschap weer keurig geëxporteerd; Nederland is wereldkampioen in kerstballen en glitter, terwijl de echte wereld buiten de muren van de Kloosterkerk bevriest. \n\nIk kijk naar de krant van 23 december. Een Syrisch gezin krijgt asiel na tien jaar wachten in Egypte. Tien jaar! Een hele jeugd weggegooid in de wachtkamers van onze bureaucratie. Ondertussen escaleert in de rest van Europa het debat over de 'demonisering' van migranten. We praten over mensen als over pesticide-normen die overschreden worden in het Westland: als een technisch probleem dat we moeten 'beheersen' of 'elimineren'. \n\nIn deze stad van 'Vrede en Recht' heerst een dodelijke apathie. We kijken naar de cijfers van de militaire steun aan Oekraïne die opdroogt, we speculeren over grondgebied dat opgeofferd moet worden, alsof het niet gaat over warme lichamen, over kinderen die vannacht in kelders slapen. Onze zonde is niet dat we te weinig bidden, onze zonde is dat we niets meer voelen. We zijn consumenten van andermans leed geworden. We kijken naar de beelden van de kindermoord in Myanmar of Gaza met een kop koffie in de hand en zeggen: 'Het is complex'. Maar God is niet complex. God is de pijn die wij weigeren te voelen."
+        "inhoud": "Buiten, op het Lange Voorhout, hangt de geur van nat asfalt en uitgedoofde dennentakken. De kraampjes van de 'Royal Christmas Fair' zijn afgebroken. Wat overblijft is het kille cijfer van het CBS: Nederland exporteert veertig procent van alle Europese kerstballen. We hebben de vrede verpakt in glimmend glas, terwijl de grond onder onze voeten bevriest. \n\nIk kijk naar de krant van 23 december. In het Verenigd Koninkrijk en hier in Brussel schreeuwen politici om het sluiten van de grenzen, om het opzeggen van mensenrechtenverdragen. Ze noemen het 'beheersbaarheid'. Ik noem het de Drie-eenheid van de Dood: de technocratie die mensen reduceert tot quota, het consumentisme dat liever kerstballen telt dan kinderlevens, en het militarisme dat in Oekraïne de wapenkraan dichtdraait omdat de winstmarges van de solidariteit zijn uitgeput. \n\nIn de banken van de Kloosterkerk zitten we in de luwte. We zijn de 'stad van recht', maar voor een Syrisch gezin duurde het tien jaar in Egypte voordat dat recht hen zag. Tien jaar wachten op een stempel. Dat is onze zonde: niet dat we te weinig bidden, maar dat we aan apathie lijden. We zijn het vermogen kwijtgeraakt om de kou van de nacht te voelen waarin een ander moet vluchten. We kijken naar de schittering van onze eigen kerstboom en zien niet dat de ster van Bethlehem een litteken is geworden, een inslag van een granaat in een betonnen muur."
       },
       "deel_2_de_botsing": {
         "titel": "De Botsing: De tekst als steen door de ruit",
-        "inhoud": "En dan breekt de tekst in. 'Sta op en vlucht.' Matteüs gunt ons geen idylle. De 'Heilige Familie' is geen porseleinen groepje voor op de schouw van een herenhuis in het Benoordenhout. Het is een groep ongedocumenteerden in de nacht. Herodes is niet dood; hij leeft in elk systeem dat zijn eigen voortbestaan belangrijker vindt dan het weerloze leven. Herodes is de technocratie die budgetten belangrijker vindt dan bedden voor asielzoekers. Herodes is het militarisme dat wapens exporteert en zich dan verbaast over de vluchtelingenstroom die daarop volgt. \n\nJezus is de Plaatsbekleder. Hij houdt de plek van de ware menselijkheid vrij door zelf een vluchteling te worden. Hij vlucht naar Egypte – het land van de oude slavernij. God zoekt geen veiligheid in de paleizen van de macht, maar in de illegaliteit. Hij wijkt uit. Hij maakt ruimte. \n\nKijk naar de Onschuldige Kinderen die we vandaag gedenken. Zij zijn de 'collateral damage' van de macht. Jan-Willem, u die de diplomatieke paden kent: de tekst vraagt u niet om een nieuw verdrag, maar om te zien dat God aan de verkeerde kant van de grens staat. Mark, u die de dossiers van de tribunalen leest: God zit niet op de rechterstoel, Hij zit in de beklaagdenbank van de ontheemden. De tekst slaat de ruit van onze burgerlijke kerstvreugde in. We kunnen niet langer 'vroom' zijn zonder politiek te worden. Want een God die vlucht, dwingt ons om te vragen: wie bouwt de muren waar Hij tegenaan loopt?"
+        "inhoud": "En dan breekt de tekst in. 'Sta op en vlucht.' Matteüs gunt ons geen idylle. De kerstnacht is nog niet voorbij of de doodsklap valt al. Herodes – dat is niet alleen een tiran uit een stoffig verleden, Herodes is het systeem dat zijn eigen voortbestaan heiliger verklaart dan het leven van een kind. Het is de macht die zegt: 'Eerst mijn veiligheid, dan pas de ander.' \n\nJezus is hier de Plaatsbekleder. Hij houdt de plek van de ware menselijkheid vrij door zelf vogelvrij te worden. Hij wordt geen koning in een paleis in Den Haag; Hij wordt een ongedocumenteerde in Egypte. Hij dwingt ons om te kiezen: Staan we aan de kant van de 'orde' van Herodes, of aan de kant van de 'chaos' van de vlucht? \n\nKolossenzen zegt: 'Bekleed u met tederheid.' Maar wij hebben ons bekleed met protocollen en carrièreplanning. Mark, jij die dagelijks de dossiers van oorlogsmisdaden leest, jij weet dat de wet alleen niet redt. De wet zonder liefde is een koud zwaard. Sophie, jij die op straat schreeuwt om de aarde, jij voelt de apathie van de machtigen die liever pesticiden in ons water laten lopen dan hun winsten op te offeren. De Bijbeltekst is een steen door de ruit van ons comfort: God is niet de grote Regelaar die alles goed maakt, God is het kind dat in de nacht over de grens moet worden gedragen. God heeft geen andere handen dan de trillende handen van Jozef. God heeft geen ander asiel dan de bereidheid van de vreemde om de deur te openen."
       },
       "deel_3_theologische_diepte": {
         "titel": "De Theologische Diepte: Mystiek van Verzet",
-        "inhoud": "God is geen hemelse dictator die vanuit de verte aan de touwtjes trekt. Als God almachtig was op de manier van Herodes, dan waren er geen vluchtelingen. Nee, God is de weerloze kracht die gebeurt *tussen* Jozef en Maria terwijl ze het kind warm houden in de woestijnnacht. God is het gebeuren van de liefde die weigert te buigen voor de angst. \n\nMystiek is niet wegvluchten uit de wereld, maar dieper de wereld in gaan tot je de pijn van de ander in je eigen vlees voelt. Dat is wat Kolossenzen bedoelt met 'bekleed u met innig medeleven'. Het is geen spiritueel uniform, het is een tweede huid. \n\nIn de Kloosterkerk bereiden we ons voor op een renovatie. Het orgel wordt ingepakt ter bescherming. Dat is een prachtig, pijnlijk beeld. Wat pakken wij in? Beschermen we onze tradities, onze esthetiek, onze rust? Of durven we onszelf 'in te pakken' rondom de kwetsbaarheid van de ander? God heeft geen andere handen dan de onze om het kind te dragen. De mystiek van het verzet begint waar we de apathie doorbreken. Waar Sophie op de A12 staat omdat ze de schreeuw van de aarde hoort. Waar Hanneke de hand vasthoudt van iemand wiens verstand hem verlaat, zoals Sirach ons smeekt. Daar wordt God werkelijkheid. Niet in de dogma's, maar in de tederheid die standhoudt tegen de tanks."
+        "inhoud": "God is geen hemelse dictator die vanuit een commandocentrum de vluchtroutes regisseert. God gebeurt. God gebeurt daar waar Jozef zijn slaap onderbreekt en de angst van de nacht trotseert. God is de weerloze kracht die ontstaat wanneer mensen weigeren mee te werken aan de vernietiging. \n\nMystiek is niet wegvluchten uit de wereld, maar diep in de pijn van de wereld afdalen tot je de hartslag van God hoort. In de Kloosterkerk wordt straks het orgel ingepakt voor de renovatie. Een beeld van bescherming, ja, maar ook van stilte. Soms moet de muziek zwijgen zodat we het huilen van de 'Onschuldige Kinderen' weer kunnen horen. De slachtoffers in Myanmar, de kinderen in Gaza, de uitgeputte gezinnen aan onze eigen grenzen. \n\nHet tegendeel van geloof is niet ongeloof, maar apathie. Het cynisme dat zegt: 'We kunnen de wereld toch niet redden.' Maar de vlucht naar Egypte leert ons dat we niet de hele wereld hoeven te redden; we moeten het Kind redden. We moeten de menselijkheid redden in die ene ontmoeting, in dat ene politieke weerwoord. Jezus nodigt ons uit om naast Hem te gaan staan in de marge. Want alleen in de marge, in het 'Egypte' van ons bestaan, vinden we de God die niet heerst, maar die bemint."
       },
       "deel_4_visioen": {
         "titel": "Het Visioen: Tederheid en Koppigheid",
-        "inhoud": "Het visioen is niet de grote revolutie die alles in één klap oplost. Het visioen is de koppigheid van de terugkeer naar Nazaret. Het is de weigering om in Egypte te blijven zitten als de tiran dood is, maar ook de weigering om de troon in Jeruzalem op te eisen. Het is het kiezen voor de marge. \n\nWij worden geroepen tot een 'heilig uitwijken'. Om niet mee te doen met de taal van de haat die over het Binnenhof waait. Om de vrede van Christus te laten heersen, wat in Den Haag betekent: de vrede die de belangen van de aandeelhouder ondergeschikt maakt aan de honger van het kind. \n\nLaten we de kleding van de liefde aantrekken als een verzetsdaad. Elena, in uw wereld van cybersecurity: wees de beveiliging van de menselijke waardigheid. Wees teder in een harde stad. Wees lastig voor de machtigen en een schuilplaats voor de onschuldigen. \n\nGod is onderweg. Hij is al lang de grens over. Hij wacht op ons in de gezichten van degenen die we liever niet zien. Laten we opstaan, onze apathie achterlaten en Hem achternagaan. Want alleen in de beweging naar de ander worden we zelf werkelijk mens. De nacht is nog niet voorbij, maar we lopen niet alleen. Amen."
-      }
-    },
-    "kernwoorden": [
-      "Apathie",
-      "Plaatsbekleding",
-      "Verzet",
-      "Tederheid"
-    ],
-    "gebed_om_actie": "God, wij bidden niet om rust, maar om onrust. Geef ons ogen die niet kunnen wegkijken van het bloed op de straat en de angst in de ogen van de vreemdeling. Geef ons handen die niet alleen gevouwen zijn, maar die de koffers dragen van hen die moeten vluchten. Breek onze apathie, breek ons pantser van welvaart. Laat ons uw Plaatsbekleders zijn in deze stad, totdat uw recht stroomt als water en uw vrede geen verdrag meer nodig heeft. Amen."
-  },
-  "17_preek_jungel": {
-    "titel": "De Vlucht van de Almacht: God als Gast in de Nacht",
-    "schriftlezing": "Matteüs 2,13-15.19-23",
-    "kerntekst": "Hij stond op en week nog diezelfde nacht met het kind en zijn moeder uit naar Egypte.",
-    "preek_onderdelen": {
-      "deel_1_opening": {
-        "titel": "De Provocatie",
-        "inhoud": "Gemeente van onze Heer Jezus Christus,\n\nKijkt u eens naar buiten. Daar, op het Lange Voorhout, waar de mist van de vroege ochtend nog tussen de statige bomen hangt, daar is de stilte teruggekeerd. De kraampjes van de 'Royal Christmas Fair' zijn afgebroken. De glimmende ballen, de sfeerverlichting, de geur van glühwein en de commerciële belofte van een 'koninklijke kerst' zijn ingepakt en opgeborgen in dozen. We hebben de kerstboodschap geëxporteerd, we hebben haar geconsumeerd, en nu, op deze achtentwintigste december, maken we de balans op. Nederland is wereldkampioen in de export van kerstartikelen, zo lazen we deze week. We zijn meesters in het verpakken van de idylle. Maar terwijl wij de laatste resten van onze feestelijke zelfbevestiging opruimen, slaat de Schrift ons een woord in het gezicht dat alle idylle aan scherven slaat. \n\nWant wat horen we hier, in de luwte van de kerstdagen? Geen wiegelied, maar een bevel. Geen vrede op aarde, maar een vlucht in de nacht. 'Sta op en vlucht.' Begrijpt u de ongehoorde paradox die hier ter sprake komt? De Redder van de wereld moet zelf gered worden. De Almachtige heeft geen macht om te blijven. De Eeuwige heeft geen tijd. Hij moet weg. Halsoverkop. Nog is het nacht, zegt Matteüs met een nuchterheid die ons de adem beneemt. \n\nIs dit de God die wij zochten? Een God die 'uitwijkt'? Wij, burgers van de stad van Vrede en Recht, wij die gewend zijn aan protocollen, aan diplomatieke onschendbaarheid en aan de veiligheid van onze herenhuizen in het Benoordenhout of de Archipelbuurt – wat moeten wij met een God die vogelvrij is? Wij willen een God die onze orde bevestigt, maar we krijgen een God die onze orde verstoort door eruit te vluchten. We willen een God die 'heeft' – macht, aanzien, een vaste plek – maar we ontmoeten een God die alleen maar 'is' in de beweging van de ontheemding. Is het niet een verschrikkelijke provocatie dat de 'Heilige Familie' niet veilig is in de stal, maar alleen veilig is op de vluchtroute? Dat God zijn eigen Zoon niet bewaart in het beloofde land, maar in het land van de oude vijand, in Egypte? Kunt u dit horen, zonder dat uw eigen veiligheid begint te wankelen?"
-      },
-      "deel_2_verdieping": {
-        "titel": "De Spanning",
-        "inhoud": "Laten we de situatie nuchter bezien, zoals Matteüs dat doet. Er is een koning, Herodes. Hij is de belichaming van wat wij 'macht' noemen. Maar wat is dat voor een macht? Het is een macht die bezit. Herodes bezit de troon, hij bezit de soldaten, hij bezit de controle over de grenzen. En omdat hij bezit, moet hij beschermen. Hij is de gevangene van zijn eigen hebben. Wie alles heeft, heeft ook alles te verliezen. En daarom moet het kind dood. Want het kind is een vraagteken bij zijn bezit. Het kind is de pure aanwezigheid die geen aanspraak maakt op een troon, maar die door zijn loutere 'zijn' de troon van de tiran wankel maakt. \n\nZiet u de spanning? Aan de ene kant de zwaarte van de macht die moordt om te overleven, en aan de andere kant de lichtheid van de God die vlucht om te leven. Wij neigen er vaak toe om God aan de kant van de zwaarte te zoeken. We bouwen kathedralen, we formuleren dogma's, we richten instituten op – ook hier in Den Haag, waar het recht wordt vastgelegd in dikke boeken. We willen dat God een fundament is voor onze zekerheden. Maar in onze tekst is God niet het fundament, Hij is de weg. Hij is niet de burcht, Hij is de vluchteling. \n\nDit is de 'Oei' van het evangelie: God onttrekt zich aan onze greep. Hij laat zich niet huisvesten in onze religieuze of politieke systemen. Hij wijkt uit. Het Griekse woord *anachoreo* betekent letterlijk: ruimte maken. God maakt ruimte door weg te gaan. Hij maakt ruimte voor een andere werkelijkheid dan die van Herodes. Maar dat betekent ook dat wij God kwijtraken op de plekken waar we Hem menen te bezitten. Sophie, die buiten op de A12 strijdt voor een rechtvaardige wereld, vraagt zich af waar God is in de politieke onmacht. Mark, de jurist die de dossiers van de kindermoorden van vandaag op zijn bureau heeft liggen, zoekt naar een God die ingrijpt. Maar God grijpt niet in met legers. Hij grijpt in door een kind te zijn dat gedragen moet worden. \n\nIs het niet zo dat wij God vaak willen gebruiken als een verlengstuk van onze eigen wil tot macht? We bidden om vrede, maar we bedoelen de handhaving van onze eigen rust. We spreken over recht, maar we bedoelen de bescherming van ons eigen bezit. Maar de God van Matteüs is een God die ons de grond onder de voeten wegneemt. Hij dwingt ons om te kijken naar de nacht. 'Nog is het nacht.' In die nacht is er geen protocol. Er is alleen de droom, de engel, en de gehoorzaamheid van een man die niet vraagt naar het 'waarom', maar die opstaat en gaat. Jozef bezit niets in dit verhaal; hij is alleen maar de dienaar van de aanwezigheid van God. Hij is de schatkist van vlees en bloed die de schat van de wereld door de duisternis draagt. Begrijpt u hoe kwetsbaar dit is? De hele heilsgeschiedenis hangt af van de benen van een timmerman en de borst van een jonge moeder in de woestijn."
-      },
-      "deel_3_doorbraak": {
-        "titel": "Het Geheim",
-        "inhoud": "En dan, gemeente, gebeurt het onvoorstelbare. De wending die alles wat wij over God en de wereld dachten te weten, op zijn kop zet. Waarheen vluchten ze? Naar Egypte. \n\nStopt u hier even. Denkt u na. Wat is Egypte in de herinnering van het volk van God? Het is het huis van de slavernij. Het is de plek van de onderdrukking. Het is de duisternis waaruit men met een sterke hand bevrijd moest worden. Egypte is de plek waar je *vandaan* komt als God je redt. Maar hier, in de omkering van het evangelie, is Egypte de plek waar je *naartoe* gaat om gered te worden. De plek van de oude angst wordt de plek van de nieuwe geborgenheid. \n\nDit is het geheim van God: Hij heiligt de plek van de vijand. Hij maakt van de vreemde bodem een heilige grond. God is niet bang voor onze 'Egyptes'. Hij is niet bang voor de plekken waar wij ons ontheemd voelen, waar wij vreemdeling zijn, waar wij de taal niet spreken. Integendeel: Hij kiest precies die plek om zijn Zoon te bewaren. 'Uit Egypte heb Ik mijn Zoon geroepen.' Dat betekent: God is daar al. Hij is de vluchteling al voorgegaan. \n\nHier breekt het licht door de nacht van Herodes heen. De macht van de tiran is weliswaar luidruchtig en bloedig – we gedenken vandaag de Onschuldige Kinderen, de verschrikkelijke prijs van de menselijke wil tot macht – maar die macht is eindig. Herodes sterft. Archelaüs sterft. De systemen van angst hebben een houdbaarheidsdatum. Maar de beweging van God gaat door. God 'wordt' in deze vlucht. Hij is niet een statisch wezen dat ergens boven de wolken troont, Hij is de God die zich in de mens Jezus onvoorwaardelijk aan ons toewendt. En die toewending betekent: Hij deelt onze vlucht. Hij deelt onze onzekerheid. Hij deelt onze asielprocedure. \n\nHet kruis werpt hier zijn schaduw al vooruit. Want wat is het kruis anders dan de ultieme vlucht van God uit de macht van deze wereld? Aan het kruis wordt Jezus definitief de grond onder de voeten ontnomen. Hij wordt verhoogd, van de aarde weggehaald, om de ruimte van de verzoening te openen. De vlucht naar Egypte is de proloog van de Passie. God overwint de wereld niet door haar te overmeesteren, maar door haar te ontwijken en zo een nieuwe ruimte van liefde te scheppen. In de onmacht van het kind dat naar Egypte wordt gedragen, licht de overweldigende kracht van God op. Het is een kracht die niet dwingt, maar die uitnodigt. Het is de kracht van de aanwezigheid die sterker is dan de afwezigheid van het recht. God is het geheim van de wereld, juist daar waar de wereld Hem geen plek gunt. Hij is de gast die blijft, ook als de herberg vol is en de soldaten op de stoep staan."
-      },
-      "deel_4_toepassing": {
-        "titel": "Het Leven Nu",
-        "inhoud": "Wat betekent dit nu voor ons, hier in de Kloosterkerk, op de drempel van een nieuw jaar? \n\nHet betekent allereerst een bevrijding van de verschrikkelijke dwang om onszelf te moeten redden. Wij zijn zo druk bezig met het bouwen van onze eigen 'burchten'. We willen onze carrière veiligstellen, onze kinderen beschermen, onze reputatie hooghouden. We leven vanuit het 'hebben'. Maar de vlucht naar Egypte nodigt ons uit tot het 'zijn'. U mag zijn zoals dat kind: kwetsbaar, onderweg, afhankelijk van de zorg van de ander en de leiding van God. U hoeft niet de koning te zijn die alles regeert; u mag de vluchteling zijn die bewaard wordt. \n\nKijk naar Elena, de expat in de Binckhorst. Zij voelt zich vaak een vreemdeling. Maar het evangelie zegt haar: God is een expert in vreemdelingschap. Je bent niet ver van God als je ver van huis bent; je bent juist in het gezelschap van de Messias. Kijk naar Jan-Willem, de diplomaat. Hij ziet de instituties wankelen. Maar het evangelie zegt hem: Gods koninkrijk is niet afhankelijk van de stabiliteit van onze verdragen, maar van de trouw van de God die uit Egypte roept. \n\nEn kijk naar deze kerk. Binnenkort wordt het orgel ingepakt. De vertrouwde klanken zullen verstommen, de ruimte wordt een bouwplaats. We worden een beetje 'dakloos' in ons eigen huis. Maar is dat niet precies de plek waar God woont? In de transitie, in het stof, in de verandering? We worden geroepen om ons te 'bekleden met liefde', zoals Paulus schrijft. Niet met het harnas van onze overtuigingen, maar met het kleed van de mildheid. Dat kleed trek je aan als je opstaat in de nacht. Het is de kleding van de pelgrim. \n\nLaten we ophouden onszelf te beschermen tegen de ander. De ander is niet de bedreiging van onze vrede, de ander is de plek waar God ons asiel biedt. In de zorg voor de demente ouder, waar Sirach over sprak, in de opvang van de ontheemde, in het geduld met de lastige naaste – daar stichten we vrede. Niet de vrede van de begraafplaats, maar de vrede van de weg. De vrede van Christus die heerst in onze harten, juist omdat we weten dat we hier geen blijvende stad hebben, maar de toekomstige zoeken. Wees dankbaar, zegt de apostel. Dankbaar, niet omdat we alles hebben, maar omdat we door God gekend zijn in ons niets-hebben. Dat is de ware rijkdom."
-      },
-      "deel_5_afsluiting": {
-        "titel": "Zegen",
-        "inhoud": "Gemeente, de kerstmarkt is weg, maar de Heer is hier. Hij gaat u voor, niet als een triomfator, maar als de Nazoreeër, de man van de marge. Ga dan dit nieuwe jaar in, niet met gebalde vuisten om uw bezit vast te houden, maar met open handen om de genade te ontvangen. \n\nZoals de dichter Friedrich Hölderlin schreef:\n'Wo aber Gefahr ist, wächst / Das Rettende auch.'\n(Waar echter gevaar is, groeit / ook het reddende.)\n\nIn het gevaar van de vlucht groeit uw redding. In de nacht van de onzekerheid licht uw hoop op. Wees niet bang voor Egypte, want God is daar al. Wees niet bang voor Nazaret, want daar vindt u uw huis. \n\nDe genade van de Heer Jezus Christus, de liefde van God en de gemeenschap van de Heilige Geest zij met u allen. \n\nAmen."
-      },
-      "kernwoorden": [
-        "Uitwijken",
-        "Asiel",
-        "Kwetsbaarheid",
-        "Toewending",
-        "Nacht",
-        "Aanwezigheid"
-      ],
-      "citaat_dichter": "Friedrich Hölderlin uit het gedicht 'Patmos'. Jüngel citeert Hölderlin vaak om de paradox van Gods nabijheid in de crisis aan te duiden. De zin 'Wo aber Gefahr ist, wächst / Das Rettende auch' verwoordt precies de beweging van de vlucht naar Egypte: juist in de dreiging van Herodes openbaart God zijn bewarende macht."
-    }
-  },
-  "18_preek_noordmans": {
-    "titel": "Asiel in het slavenhuis",
-    "schriftlezing": "Matteüs 2,13-15.19-23",
-    "kerntekst": "Sta op, neem het kind en zijn moeder en vlucht naar Egypte.",
-    "kernparadox": "De Almachtige die moet uitwijken voor een sterfelijke tiran; de Redder die gered moet worden.",
-    "preek_onderdelen": {
-      "inzet": {
-        "inhoud": "De kerstmarkt op het Voorhout is afgebroken. De ballen zijn geëxporteerd; de glans is van het glas af. We dachten dat God was neergekomen om te blijven, maar Hij is alweer onderweg. De kribbe was geen troon, maar een koffer. Herodes slaapt niet, dus God moet dromen. De Redder van de wereld heeft zelf een vluchtweg nodig. Dat is de siddering: de Almachtige is vogelvrij. In de stad van het recht regeert de nacht. De stal was geen eindstation, maar een doorgangshuis. God is een passant.\n\nHet blinkt wat en het schijnt wat; maar als het over de zeef der eeuwigheid gegoten wordt, dan blijft er niets liggen dan deze haastige vlucht."
-      },
-      "wending": {
-        "inhoud": "Waarheen? Naar Egypte. Dat is de omkering die ons verstand tart. Egypte is de plek van de zweep en de tichelstenen, het land van de oude angst. Maar God maakt van het slavenhuis een asiel. Hij heiligt de vluchtroute. De vroomheid wil een God in een gouden lijstje, maar we krijgen een God in de illegaliteit. Jozef moet wakker worden; wij willen liever doorslapen in onze burgerlijke vrede. Maar de Geest drijft naar buiten, naar de grens. Het heil komt niet uit de tempel, maar uit de ballingschap. De 'Heilige Familie' is geen rozentuin, maar een groepje mensen in de schaduw van de macht. God is absent in het paleis en obscuur op de weg. Hij wijkt uit om ruimte te maken voor de eeuwigheid. De vreemde is de beschermer geworden. Het oordeel begint bij het huis Gods, maar de redding begint bij de vijand.\n\nGod heeft zijn redenen, die de mens niet kent. Daarvoor is Hij God en geen mens."
-      },
-      "opening": {
-        "inhoud": "Het orgel wordt ingepakt. De muren gaan trillen. We zijn weer onderweg naar Nazaret, de marge van de wereld. God herstelt de geschiedenis niet met legers, maar met een omweg. De tiran sterft, maar het kind blijft. Wij zijn kinderen van de opstanding, maar we beginnen als kinderen van de vlucht. Is uw hart een open huis of een dichte vesting? De weg ligt open. De nacht is bijna voorbij. God is de Vader die in de hemelen is, maar op aarde heeft Hij geen steen om zijn hoofd op neer te leggen. Dat is onze eer.\n\nEn een eeuwig leven."
+        "inhoud": "De terugkeer uit Egypte is geen triomftocht. Het is een uitwijken naar Nazaret. Een plek waar niemand iets van verwacht. Dat is ons visioen: het kleine verzet van de tederheid. Het is de koppigheid van Elena die in de Binckhorst weigert haar wortels te vergeten en haar eenzaamheid omzet in gastvrijheid voor anderen. Het is de tederheid van Hanneke die de hand van een demente naaste vasthoudt wanneer het verstand het laat afweten. \n\nWij zijn geroepen om Nazoreeërs te worden: mensen van de rand, mensen die niet passen in de mal van Herodes. De vrede van Christus is geen rustig bezit, het is een 'kleed' dat we elke ochtend opnieuw moeten aantrekken, ook als het schuurt. Het is de weigering om mee te doen aan de waan van de dag die mensen tot 'problemen' bestempelt. \n\nLaten we de kerk uitgaan, terug naar het Lange Voorhout, niet als consumenten van een vroom verhaal, maar als dragers van een gevaarlijke hoop. Wees teder voor wat kwetsbaar is en onverzettelijk tegen wat het leven kleineert. God is onderweg, incognito, in de gestalte van de vluchteling. Zorg dat je Hem niet mist omdat je te druk was met het tellen van je kerstballen. Het kind leeft. De hoop wijkt uit. En wij gaan mee."
       }
     },
     "kernwords": [
-      "Uitwijken",
-      "Asiel",
-      "Vogelvrij",
-      "Omweg"
+      "Apathie",
+      "Plaatsbekleding",
+      "Vluchtroute",
+      "Tederheid",
+      "Verzet"
     ],
-    "rozentuin_vermijden": "De harmonieuze lezing waarbij de 'Heilige Familie' wordt gepresenteerd als een moreel voorbeeld van burgerlijke gezelligheid en veiligheid, terwijl de tekst spreekt over de verbreking van alle aardse zekerheden."
+    "gebed_om_actie": "God van de slapeloze nachten, \nwek ons uit de slaap van de onverschilligheid. \nGeef ons ogen die niet wegkijken van het bloed op de straat, \nen handen die niet alleen bidden, maar ook de koffer van de ander helpen dragen. \nBreek onze harten open tot de pijn van de wereld naar binnen stroomt, \nen geef ons de koppigheid om te blijven geloven in het leven \nwaar de machten de dood prediken. \nMaak ons tot een asiel voor de waarheid. \nAmen."
+  },
+  "17_preek_jungel": {
+    "titel": "De Goddelijke Uitwijkplaats: Het Geheim van de Vlucht",
+    "schriftlezing": "Matteüs 2,13-15.19-23",
+    "kerntekst": "Sta op, neem het kind en zijn moeder en vlucht naar Egypte.",
+    "preek_onderdelen": {
+      "deel_1_opening": {
+        "titel": "De Provocatie",
+        "inhoud": "Gemeente van onze Heer Jezus Christus,\n\nBuiten, op het Lange Voorhout, hangt de mist van een late decemberochtend. De kraampjes van de kerstmarkt zijn afgebroken, de glans van de 'Royal Christmas Fair' is vervaagd tot de nuchtere grijsheid van de dagen tussen de jaren. We hebben het feest van de menswording gevierd, we hebben gezongen van vrede op aarde en van een kind dat alles anders zou maken. Maar nu, slechts drie dagen na de kerstnacht, schudt de Schrift ons ruw wakker uit onze vrome dromen. De kaarsen branden nog wel, de boom staat er nog, maar de tekst van Matteüs snijdt als een koud mes door de kerstidylle heen. \n\n'Sta op, neem het kind en zijn moeder en vlucht.' \n\nKunt u dit horen? Begrijpt u de verschrikking van deze woorden? We hebben van Kerstmis een vesting gemaakt, een burcht van gezelligheid en burgerlijke geborgenheid. We hebben geprobeerd God te 'huisvesten' in onze tradities, in onze prachtig versierde Kloosterkerk, in de esthetiek van Bach en de warmte van de familie. Maar de God die wij hier aanbidden, laat zich niet huisvesten. Hij is geen standbeeld dat wij op een voetstuk kunnen plaatsen. De God van het evangelie is een God die in beweging komt, een God die 'uitwijkt'. \n\nHet is een paradox die ons duizelig maakt: de Almachtige is een vluchteling geworden. De Eeuwige heeft geen vaste verblijfplaats meer. De Redder van de wereld moet zelf gered worden voor de moordzucht van een kleine, angstige tiran. Terwijl wij nog nagenieten van de vrede, is de vrede zelf al op de vlucht geslagen. In de nacht, als niemand kijkt, glipt God tussen onze vingers door. Hij zoekt geen troon in Den Haag, hij zoekt geen erkenning in de paleizen van de macht. Hij zoekt een vluchtweg. Het geheim van God is niet te vinden in de machtige presentie, maar in de breekbare absentie van de vlucht. De vraag die deze tekst ons stelt, is niet of wij God een plek willen geven in ons leven, maar of wij bereid zijn Hem te volgen op zijn vluchtroute naar de marge van ons bestaan."
+      },
+      "deel_2_verdieping": {
+        "titel": "De Spanning",
+        "inhoud": "Waarom is dit woord zo moeilijk te horen voor ons, hier in de stad van vrede en recht? Friedrich Hölderlin schreef ooit: 'Wo aber Gefahr ist, wächst das Rettende auch' – waar het gevaar is, groeit ook het reddende. Maar wij willen het reddende zonder het gevaar. Wij willen de vrede zonder de vlucht. \n\nKijk naar Jozef. Hij is de man van de droom, de man van de luisterende stilte. In de nacht verschijnt de engel. En wat doet Jozef? Hij debatteert niet. Hij weegt de risico's niet af tegen de economische stabiliteit van zijn gezin. Hij 'staat op'. In dat opstaan, midden in de nacht, voltrekt zich een beweging die ons menselijk streven naar zekerheid volledig doorkruist. Wij willen 'hebben' – we willen een geloof hebben, een fundament hebben, een status hebben. Maar God roept ons tot 'zijn' in de beweging. \n\nIn de Griekse tekst staat dat Jozef 'uitweek', *anachoreo*. Het is een strategisch woord. Het betekent letterlijk: ruimte maken. God maakt ruimte voor de mens door zichzelf klein en kwetsbaar te maken, door uit te wijken voor het geweld. Herodes, de tiran, vertegenwoordigt het systeem van de macht dat alles wil bezitten en controleren. Herodes is de personificatie van de angst die moordt om zichzelf te handhaven. Het is de angst die wij allemaal kennen: de angst om onze positie te verliezen, de angst dat de ander onze ruimte inneemt. \n\nIn Den Haag, waar besluiten over leven en dood worden genomen, waar we de internationale rechtsorde proberen te vangen in wetten en verdragen, confronteert Matteüs ons met de nuchtere realiteit dat het werkelijke recht vaak op de vlucht is. De 'Onschuldige Kinderen' waar we vandaag bij stilstaan, zijn de slachtoffers van een systeem dat zijn eigen behoud belangrijker vindt dan het weerloze leven. Wij proberen onze wereld te ordenen, we bouwen muren van recht en diplomatie, maar de tekst laat ons zien dat God zich niet laat vangen door onze ordeningen. Hij is te vinden in de schaduwen van de nacht, op de stoffige wegen naar Egypte. \n\nIs het niet vreemd? God vlucht naar Egypte. Het land van de oude slavernij, de plek van de onderdrukker, de duisternis waaruit Israël ooit met sterke hand werd bevrijd. Wat heeft God daar te zoeken? Waarom keert Hij terug naar de plek van het trauma? Hier stuiten we op de diepste spanning: God heiligt de plek van onze angst. Hij maakt van het land van de vijand een asiel voor de Messias. Hij doorkruist onze geografische en morele categorieën. Voor God is geen enkele plek 'goddeloos' genoeg om er niet aanwezig te zijn. De vlucht naar Egypte is geen nederlaag, het is de toewending van God naar de diepste diepten van onze menselijke ontheemding."
+      },
+      "deel_3_doorbraak": {
+        "titel": "Het Geheim",
+        "inhoud": "En nu, gemeente, moeten we het geheim durven zien dat in deze vlucht verborgen ligt. Het kruis werpt zijn schaduw al over de kribbe. De verhoging aan het kruis is de uiterste consequentie van deze eerste vlucht in de nacht. Aan het kruis zal Jezus de ultieme 'uitwijkplaats' vinden: de dood. \n\nMaar juist in die uiterste kwetsbaarheid, in die totale ontheemding, licht het 'Ja' van God op. God zegt 'Ja' tegen de mens door zelf een mens zonder rechten te worden. Hij zegt 'Ja' tegen de vluchteling door zelf te vluchten. De vlucht naar Egypte is de concrete gestalte van Gods liefde die niet van bovenaf regeert, maar van onderop meereist. \n\n'Uit Egypte heb ik mijn Zoon geroepen.' \n\nDeze woorden van de profeet Hosea krijgen een nieuwe, adembenemende betekenis. Jezus is de ware Israël, de ware mens die de hele geschiedenis van lijden en ballingschap in zich opneemt. Hij is de zoon die niet in de steek wordt gelaten, maar die door de nacht heen wordt gedragen. Het geheim is dit: God beschermt het kind niet door Herodes te vernietigen, maar door Jozef te laten dromen. God grijpt niet in met legers, maar met een fluistering in de slaap. \n\nBegrijpt u wat hier gebeurt? De macht van God is een macht die zich onttrekt aan de logica van het geweld. Het is een macht die ruimte maakt voor het leven door zelf de weg van de minste weerstand te kiezen – de weg van de vlucht. Dit is de genade die aan alles voorafgaat: dat God al op de plek is waar wij het meest bang voor zijn. Hij is al in 'Egypte' voordat wij er aankomen. Hij heeft de weg van de ontheemding al geheiligd door er zelf op te lopen. \n\nHet evangelie is geen beloning voor degenen die hun leven op orde hebben, voor degenen die veilig in de 'zandwijken' van hun bestaan wonen. Het evangelie is een geschenk aan degenen die weten dat ze onderweg zijn, die de onrust van de nacht kennen. De 'Heilige Familie' is niet heilig omdat ze zo perfect en stabiel waren, maar omdat ze zich lieten leiden door een stem die hen uit hun comfortzone riep. Hun heiligheid is hun gehoorzaamheid aan de onzekerheid. In de vlucht naar Egypte wordt zichtbaar wie God werkelijk is: de God die met ons meegaat in de nacht, de God die ons asiel biedt bij Hemzelf, juist wanneer de wereld ons de grond onder de voeten wegneemt."
+      },
+      "deel_4_toepassing": {
+        "titel": "Het Leven Nu",
+        "inhoud": "Wat betekent dit voor ons leven nu, hier in Den Haag, aan de vooravond van een nieuw jaar? \n\nHet betekent allereerst een bevrijding van de verschrikkelijke dwang om onszelf te moeten redden. Wij hoeven niet onze eigen Herodes te zijn, die krampachtig zijn eigen territorium verdedigt. We mogen de open handen van de vluchteling aannemen. \n\nSophie, jij die strijdt voor een rechtvaardige wereld en soms moedeloos wordt van de traagheid van de systemen: weet dat jouw Heer zelf een vluchteling was. Hij is niet te vinden in de statische instituties, maar in de beweging van de solidariteit. Jouw onrust is een spiegel van de goddelijke onrust die geen vrede neemt met onrecht. \n\nMark, jij die in de rechtszaal het kwaad in de ogen kijkt en worstelt met de zorg voor je demente vader: de tekst uit Sirach roept je niet op tot een zware morele prestatie, maar tot een eenvoudige eerbied voor de kwetsbaarheid. In de kwetsbaarheid van je vader, in het verlies van zijn verstand, ontmoet je de Christus die zelf de grond onder de voeten verloor. Je hoeft niet de perfecte zoon te zijn; je mag de barmhartigheid 'aantrekken' als een kleed voor onderweg. \n\nElena, jij die je soms zo alleen voelt in deze stad van expats: God is in jouw ontworteling. Je bent niet vergeten bij de grens. De 'Heilige Familie' is jouw familie, de familie van degenen die nergens echt thuis zijn, behalve in de genade van God. \n\nEn wij als gemeente van de Kloosterkerk, die ons opmaken voor een ingrijpende renovatie: laat het inpakken van het orgel een beeld zijn van deze tijd. Soms moet het vertrouwde worden ingepakt, moet de ruimte worden verlaten, opdat we opnieuw leren wat het betekent om onderweg te zijn. De kerk is geen statisch monument, maar een tent in de woestijn, een uitwijkplaats voor de ziel. \n\nLaten we de 'vrede van Christus' in onze harten laten heersen, zoals Kolossenzen zegt. Die vrede is geen afwezigheid van strijd, maar de aanwezigheid van een diepe, onverwoestbare geborgenheid midden in de vlucht. We hoeven niet langer te 'hebben', we mogen 'zijn' – in de toewending naar de ander, in de zorg voor het kind, in de eerbied voor de vreemdeling."
+      },
+      "deel_5_afsluiting": {
+        "titel": "Zegen",
+        "inhoud": "Gemeente, de nacht loopt ten einde, maar de reis gaat verder. Ga dan het nieuwe jaar in met de moed van Jozef, met de tederheid van Maria en met de heilige kwetsbaarheid van het Kind. \n\nWees niet bang voor de omwegen van het leven, wees niet bang voor de 'Egyptes' die op uw pad komen. Want de God die uit Egypte werd geroepen, is de God die u bij uw naam noemt en u naar huis leidt – niet naar een huis van steen, maar naar het huis van zijn eeuwige liefde. \n\nDe genade van de Heer Jezus Christus, de liefde van God de Vader en de gemeenschap van de Heilige Geest zij met u allen. \n\nAmen."
+      }
+    },
+    "kernwoorden": [
+      "Vlucht",
+      "Kwetsbaarheid",
+      "Asiel",
+      "Paradox",
+      "Beweging",
+      "Ontheemding",
+      "Den Haag",
+      "Genade"
+    ]
+  },
+  "18_preek_noordmans": {
+    "titel": "Asiel in de schaduw",
+    "schriftlezing": "Matteüs 2,13-15.19-23",
+    "kerntekst": "Uit Egypte heb ik mijn zoon geroepen.",
+    "kernparadox": "De Redder die gered moet worden; het land van de slavernij als de enige veilige haven.",
+    "preek_onderdelen": {
+      "inzet": {
+        "inhoud": "Het blinkt nog wat op het Lange Voorhout, maar de kramen van de kerstmarkt zijn weg. De fiscus telt de penningen en de stad van het recht maakt de balans op. Maar midden in deze orde valt de schaduw van het zwaard. Geen wiegelied bij de kribbe, maar een bevel in de nacht: 'Vlucht!' De Koning heeft geen troon, maar een ezel. De Redder moet gered worden. Het is nacht. In de nacht begint de heilsgeschiedenis altijd weer opnieuw. De kribbe was geen wieg, het was een hinderlaag. God claimt geen machtige positie in Jeruzalem; Hij claimt een plek in de illegaliteit. Het heil begint met een koffer die halsoverkop gepakt moet worden. De onschuld is vogelvrij."
+      },
+      "wending": {
+        "inhoud": "Egypte. Het land van de zweep en de tichelstenen. Daarheen voert de Geest het Kind. God scheidt hier de weg van de wereldlijke macht van de weg van het verborgen heil. Herodes heeft het zwaard, Jozef heeft de droom. De tiran bouwt muren van lijken om zijn troon te stutten; God opent een venster in de vreemde. Men wil het orgel van deze kerk straks inpakken ter bescherming tegen stof en lawaai, maar God pakt Zijn Zoon reeds in in de duisternis van de vlucht. Het heil is een omweg. De kortste weg naar God loopt via de ballingschap. De onschuldige kinderen vallen, opdat de Onschuldige zou leven. Dat is de breuk in ons kerstlied. God is niet in de rozentuin van ons burgerlijk geluk, Hij is in de asielzoeker van Bethlehem. De plek van de oude angst wordt de plek van de nieuwe bewaring. God heiligt de vluchtroute."
+      },
+      "opening": {
+        "inhoud": "De tiran sterft altijd. Maar de terugkeer is geen triomftocht. Het is een uitwijken naar Nazaret. Naar de kantlijn van de geschiedenis. Daar bouwt de Geest de kerk. Niet in de paleizen van de macht, maar in de werkplaats van de timmerman. Wij staan aan de grens van een nieuw jaar. Het orgel zwijgt straks, de ruimte wordt een bouwplaats. Maar het Woord wandelt voort op de wegen van de wereld. Heeft de Vader niet een wonderlijke manier van bewaren? Hij roept ons niet uit de strijd, maar in de vlucht. Totdat de dag aanbreekt en de schaduwen vlieden. Uit Egypte roept Hij ons. Vandaag nog."
+      }
+    },
+    "kernwords": [
+      "Nacht",
+      "Uitwijken",
+      "Bewaring",
+      "Marge"
+    ]
   },
   "Bijbelteksten": {
     "naardense_bijbel": [
