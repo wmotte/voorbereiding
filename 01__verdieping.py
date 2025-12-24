@@ -67,8 +67,8 @@ SERMON_XOR_KEY = b'DorotheeS\xc3\xb6lle1929-2003MystiekEnVerzet'
 SERMON_DATA_FILE = SCRIPT_DIR / "solle_sermons.dat"
 
 # Model keuze: Gemini 3 flash als primair, pro als fallback
-MODEL_NAME = "gemini-3-flash-preview"
-#MODEL_NAME = "gemini-3-pro-preview"
+#MODEL_NAME = "gemini-3-flash-preview"
+MODEL_NAME = "gemini-3-pro-preview"
 MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
