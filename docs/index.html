@@ -1958,6 +1958,7 @@
             '14_gebeden': 'Gebeden',
             '14_gebeden_profetisch': 'Gebeden (profetisch)',
             '14_gebeden_dialogisch': 'Gebeden (dialogisch)',
+            '14_gebeden_eenvoudig': 'Gebeden (B1-niveau)',
             '15_kindermoment': 'Kindermoment',
             '16_preek_solle': 'Preekschets (Sölle)',
             '17_preek_jungel': 'Preekschets (Jüngel)',
@@ -2075,7 +2076,7 @@
             let sortedOtherSections = otherSections.sort();
 
             // Custom sort for the 14_gebeden group to ensure 14a, 14b, 14c order
-            const prayerKeys = ['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch'];
+            const prayerKeys = ['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch', '14_gebeden_eenvoudig'];
             if (prayerKeys.every(k => sortedOtherSections.includes(k))) {
                 // Remove them from their current positions
                 sortedOtherSections = sortedOtherSections.filter(k => !prayerKeys.includes(k));
@@ -2119,6 +2120,8 @@
                     num = '14b';
                 } else if (key === '14_gebeden_dialogisch') {
                     num = '14c';
+                } else if (key === '14_gebeden_eenvoudig') {
+                    num = '14d';
                 } else {
                     const numMatch = key.match(/^(\d+)_/);
                     num = numMatch ? numMatch[1] : String(unnumberedCounter++).padStart(2, '0');
@@ -2298,7 +2301,7 @@
                             subSectionLabels[`kindermoment-${index + 1}`] = label;
                         });
                     }
-                } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch') {
+                } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch' || key === '14_gebeden_eenvoudig') {
                     // Special handling for Gebeden - show specific prayer types
                     const gebeden = sectionData.gebeden || {};
                     const gebedOrder = ['drempelgebed', 'kyrie', 'epiclese', 'dankgebed', 'voorbeden'];
@@ -2458,7 +2461,7 @@
             // Special handling for Bijbelteksten - render in liturgical order
             if (key === 'Bijbelteksten') {
                 contentHtml = renderBijbeltekstenSection(dataToRender);
-            } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch') {
+            } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch' || key === '14_gebeden_eenvoudig') {
                 contentHtml = renderGebedenSection(dataToRender);
             } else if (key === '12_representatieve_hoorders') {
                 contentHtml = renderHoordersSection(dataToRender);

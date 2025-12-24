@@ -2771,6 +2771,155 @@
       ]
     }
   },
+  "14_gebeden_eenvoudig": {
+    "gekozen_scenario": "Eenvoudig",
+    "gebeden": {
+      "drempelgebed": {
+        "type": "drempelgebed",
+        "aanspraak": "Goede God,",
+        "elementen": {
+          "verootmoediging": "Wij willen vaak sterk zijn en alles zelf doen.",
+          "schuldbelijdenis": "Het spijt ons dat we soms trots zijn en anderen vergeten.",
+          "verlangen": "Wij willen vandaag bij U zijn met een open hart."
+        },
+        "tekst": "Goede God,\n\nWij zijn hier bij elkaar in dit huis. Buiten is het koud en waait de wind over de dijk. Wij brengen onze drukke week mee naar deze plek. Vaak willen wij groot zijn. Wij willen laten zien dat we alles goed doen. Wij willen de beste zijn op ons werk of in het dorp.\n\nMaar nu zijn we stil. In ons hart weten we dat we U nodig hebben. Wij doen soms verkeerde dingen. Wij zijn soms hard voor anderen. Dat spijt ons. Wilt U dat van ons wegnemen?\n\nMaak ons hart vandaag leeg. Zo is er weer ruimte voor U. Wij willen niet meer vechten om de eerste te zijn. Wij willen rust vinden bij U. Neem ons gebed aan op deze morgen in de Sionkerk.\n\nAmen.",
+        "echo_schriftlezing": "Het beeld van de 'armen van geest' die leeg worden voor God.",
+        "amen": true
+      },
+      "kyrie": {
+        "type": "kyrie",
+        "aanspraak": "Heer Jezus,",
+        "focus": "nood_wereld",
+        "structuur": {
+          "intenties": [
+            {
+              "voor_wie": "Mensen in de oorlog",
+              "nood": "Zij hebben het koud en zijn heel erg bang.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "Mensen die honger hebben",
+              "nood": "Zij hebben geen eten en geen veilig huis.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "De natuur",
+              "nood": "De aarde wordt te warm en de dieren hebben het moeilijk.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "Mensen in Ameide",
+              "nood": "Sommige mensen voelen zich heel alleen achter hun voordeur.",
+              "kyrie_refrain": true
+            }
+          ]
+        },
+        "tekst": "Heer Jezus,\n\nDe wereld heeft pijn en wij voelen dat. Wij denken aan de mensen in Oekraïne. Het is winter en er is veel geweld. De kou snijdt in hun huid. Zij weten niet of ze morgen nog leven. \nGod, wees erbij.\n\nWij denken aan de mensen in Gaza. Er is bijna geen eten meer. Kinderen huilen van de honger. Er is geen vrede, alleen maar ruzie en haat.\nGod, wees erbij.\n\nWij denken aan de aarde. Het weer verandert en de natuur gaat kapot. Wij zijn niet altijd goede bewakers van de wereld. Wij gebruiken te veel en delen te weinig.\nGod, wees erbij.\n\nWij denken aan de mensen dichtbij. Ook in ons eigen dorp zijn mensen die het moeilijk hebben. Mensen die ziek zijn of die niemand hebben om mee te praten. Mensen die zich zorgen maken over hun geld.\nGod, wees erbij.\n\nAmen.",
+        "echo_schriftlezing": "De 'treurenden' en de mensen die 'honger hebben naar gerechtigheid'.",
+        "amen": true
+      },
+      "epiclese": {
+        "type": "epiclese",
+        "aanspraak": "Goede Geest van God,",
+        "focus": "begrip_bijbelverhaal",
+        "tekst": "Goede Geest van God,\n\nWij gaan nu een verhaal uit de Bijbel lezen. Het is een verhaal over Jezus op een berg. Wij willen graag begrijpen wat Jezus tegen ons zegt. \n\nRaak ons hart aan met uw woorden. Zorg dat we niet alleen de letters kennen, maar dat we uw liefde voelen. Maak ons hart open voor uw nieuwe wereld. \n\nAmen.",
+        "echo_schriftlezing": "De berg waar Jezus gaat zitten om les te geven.",
+        "amen": true
+      },
+      "dankgebed": {
+        "type": "dankgebed",
+        "aanspraak": "Dank U wel, God,",
+        "verbining_verkondiging": "Wij danken voor de omgekeerde wereld van Jezus.",
+        "elementen": {
+          "dank_gehoorde_woord": "Dank dat U van mensen houdt die klein en zwak zijn.",
+          "vraag_kracht_bewaren": "Help ons om dit geheim de hele week te onthouden.",
+          "verbinding_dagelijks_leven": "Laat ons zacht zijn voor de mensen om ons heen."
+        },
+        "tekst": "Dank U wel, God,\n\nWij danken U voor het verhaal van Jezus. Het is een bijzonder verhaal. In de wereld moet je altijd de sterkste zijn. Maar Jezus zegt dat het andersom is. Hij houdt juist van mensen die klein zijn. Hij houdt van mensen die verdriet hebben. Hij houdt van mensen die lief en zacht zijn. \n\nDat geeft ons veel rust. Wij hoeven niet meer de beste te zijn. Wij hoeven niet meer te doen alsof we alles weten. Dank U dat we bij U mogen schuilen. Dank U dat U ons gelukkig noemt, ook als we ons zwak voelen.\n\nWij danken U ook voor de goede dingen in Ameide. Voor het eten dat we elke dag hebben. Voor de mensen die voor ons zorgen. Voor de Sionkerk waar we samen kunnen zijn. \n\nHelp ons om deze week zacht te zijn voor anderen. Laat ons niet schreeuwen, maar luisteren met ons hart. Laat ons vrede maken op de plek waar we wonen en werken. \n\nAmen.",
+        "echo_schriftlezing": "De zachtmoedigen en de armen van geest.",
+        "amen": true
+      },
+      "voorbeden": {
+        "type": "voorbeden",
+        "aanspraak": "Vader in de hemel,",
+        "cirkels": {
+          "wereld": {
+            "themas": [
+              "vrede",
+              "leiders"
+            ],
+            "tekst": "Wij bidden voor alle landen op aarde. Wij bidden voor de bazen van de landen. Leer hen om niet te vechten. Leer hen om zacht te zijn voor hun volk. Wij bidden voor de natuur, dat we er goed voor zorgen."
+          },
+          "kerk": {
+            "themas": [
+              "alle gelovigen",
+              "schuilplaats"
+            ],
+            "tekst": "Wij bidden voor de kerk over de hele wereld. Laat de kerk een plek zijn waar iedereen mag komen. Vooral mensen die zich nergens anders thuis voelen. Laat ons in de Sionkerk een veilige plek zijn voor elkaar."
+          },
+          "naasten": {
+            "themas": [
+              "zieken",
+              "jongeren",
+              "woningnood"
+            ],
+            "tekst": "Wij bidden voor de mensen om ons heen. Wij denken aan de mensen die erg ziek zijn. Geef hen uw warmte en kracht. Wij bidden voor de jongeren in ons dorp. Het is voor hen moeilijk om een eigen huis te vinden. Geef hen hoop voor de toekomst. Wij bidden voor de mensen die iemand hebben verloren. Troost hen in hun verdriet."
+          },
+          "eigen_gemeente": {
+            "themas": [
+              "wij hier samen",
+              "zachtheid"
+            ],
+            "tekst": "Wij bidden voor onszelf. Maak ons tot een groep mensen die echt naar elkaar omkijkt. Help ons om niet te oordelen over anderen, maar om liefde te geven."
+          }
+        },
+        "stilte_instructie": "*Het is nu even stil. In ons hart vertellen wij onze eigen zorgen aan God.*",
+        "overgang_onze_vader": "Samen bidden we de woorden die Jezus ons leerde:",
+        "onze_vader": "Onze Vader in de hemel,\nlaat iedereen u eren.\nLaat uw nieuwe wereld komen.\nLaat op aarde uw wil gedaan worden,\nnet zoals dat in de hemel gebeurt.\nGeef ons vandaag het eten dat we nodig hebben.\nEn vergeef ons wat we fout gedaan hebben,\nwant wij hebben ook andere mensen hun fouten vergeven.\nHelp ons om nooit tegen u te kiezen.\nEn bescherm ons tegen de macht van het kwaad.\nWant u bent koning,\nu regeert met grote macht,\nvoor altijd. Amen."
+      }
+    },
+    "poetische_technieken_gebruikt": {
+      "parallellisme": [
+        "Hij houdt van mensen die klein zijn. Hij houdt van mensen die verdriet hebben.",
+        "Wij willen niet meer vechten... Wij willen rust vinden..."
+      ],
+      "drieslag": [
+        "klein zijn, verdriet hebben, lief en zacht zijn",
+        "zieken, jongeren, mensen met verdriet"
+      ],
+      "anafoor": [
+        "Wij denken aan...",
+        "Dank U voor..."
+      ],
+      "inclusio": [
+        "Het drempelgebed begint met de wind over de dijk en het voorbedengebed eindigt met de rust in Ameide."
+      ],
+      "zintuiglijke_taal": [
+        "warmte",
+        "kou snijdt in de huid",
+        "hart aanraken",
+        "leeg hart",
+        "stil zijn",
+        "schuilen"
+      ],
+      "lokale_beelden": [
+        "wind over de dijk",
+        "huis in Ameide",
+        "Sionkerk",
+        "dorp"
+      ]
+    },
+    "echo_techniek": {
+      "schriftlezing_thema": "De omgekeerde wereld van Jezus: geluk voor de zwakken.",
+      "echo_per_gebed": {
+        "drempelgebed": "Het verlangen om 'arm van geest' (leeg) te zijn voor God.",
+        "kyrie": "De nood van de 'treurenden' en de mensen die 'hongeren naar recht'.",
+        "epiclese": "Het beklimmen van de berg om naar Jezus te luisteren.",
+        "dankgebed": "Dank voor de 'zachtmoedigheid' die Jezus ons leert.",
+        "voorbeden": "Bidden dat de 'zachtmoedigen' de aarde mogen erven."
+      }
+    }
+  },
   "14_gebeden_profetisch": {
     "stijl_analyse": "De gebeden volgen het ritme van 'oriëntatie-desoriëntatie-nieuwe oriëntatie'. Er is gekozen voor weerbarstige taal die de 'koninklijke bewustheid' van succes en maakbaarheid (sterk aanwezig in de poldermentaliteit) openbreekt, om ruimte te maken voor de radicale omkering van de Zaligsprekingen.",
     "gebeden": {
@@ -2991,7 +3140,8 @@
       "Bevrijding",
       "Ameide",
       "Leegte"
-    ]
+    ],
+    "citaat_dichter": "Friedrich Hölderlin, uit 'Patmos': 'Wo aber Gefahr ist, wächst / Das Rettende auch.' (Waar echter gevaar is, groeit ook het reddende). Jüngel citeert Hölderlin vaak om aan te tonen dat God zich openbaart op de plek van de uiterste crisis en onmacht, wat naadloos aansluit bij de 'armen van geest' en de context van de watersnoodherdenking in Ameide."
   },
   "18_preek_noordmans": {
     "titel": "De rijke bedelaar",
@@ -3014,7 +3164,8 @@
       "Zwaartekracht",
       "Bedelaar",
       "Venster"
-    ]
+    ],
+    "rozentuin_vermijden": "De gedachte dat de Zaligsprekingen een haalbaar moreel ideaal zijn voor de 'goede mens' of een stappenplan naar aards geluk. De tekst is geen rozentuin, maar een oordeel over onze kracht."
   },
   "Bijbelteksten": {
     "naardense_bijbel": [

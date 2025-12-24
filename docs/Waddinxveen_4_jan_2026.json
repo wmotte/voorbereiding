@@ -2816,6 +2816,145 @@
       ]
     }
   },
+  "14_gebeden_eenvoudig": {
+    "gekozen_scenario": "Eenvoudig",
+    "gebeden": {
+      "drempelgebed": {
+        "type": "drempelgebed",
+        "aanspraak": "Goede God",
+        "elementen": {
+          "verootmoediging": "Wij zijn hier in dit huis bij elkaar. Buiten is het koud en de lucht is grijs. Wij komen uit onze huizen in Waddinxveen naar U toe. Wij voelen ons soms klein en moe.",
+          "schuldbelijdenis": "Soms doen we dingen die niet goed zijn. We denken alleen aan onszelf. We vergeten de mensen om ons heen. Dat spijt ons. Wilt U deze fouten van ons weghalen?",
+          "verlangen": "Wij willen graag dicht bij U zijn. Wij willen leren hoe we een goed mens kunnen zijn. Maak ons hart rustig en fijn op deze plek."
+        },
+        "tekst": "Goede God,\\n\\nWij zijn hier in dit huis bij elkaar op deze zondag. Buiten is het koud en de lucht boven de polder is grijs. Wij komen uit onze eigen huizen in Waddinxveen naar U toe. Wij voelen ons soms klein en een beetje moe na de drukke kerstdagen.\\n\\nSoms doen we dingen die niet goed zijn. Dat spijt ons. We denken vaak alleen aan onszelf. We vergeten dan de mensen die hulp nodig hebben. Soms zijn we ook bang voor wat er in de wereld gebeurt. Wilt U al deze fouten en zorgen van ons weghalen? Maak ons weer schoon van binnen.\\n\\nWij willen vandaag heel graag dicht bij U zijn. Wij willen leren hoe we een goed mens kunnen zijn voor anderen. Net als de wijze mannen uit het verre land willen wij op weg gaan. Zij zochten naar het Kind. Wij zoeken naar U. Maak ons hart nu rustig en open op deze plek. Wij zijn hier voor U.\\n\\nAmen.",
+        "echo_schriftlezing": "De reis van de wijze mannen die op weg gaan om Jezus te vinden.",
+        "amen": true
+      },
+      "kyrie": {
+        "type": "kyrie",
+        "aanspraak": "Lieve God",
+        "focus": "nood_wereld",
+        "structuur": {
+          "intenties": [
+            {
+              "voor_wie": "mensen in Oekraïne",
+              "nood": "Het is daar heel erg koud en er is geen stroom voor de kachel.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "kinderen in Gaza en Soedan",
+              "nood": "Zij hebben honger en er is veel ruzie en oorlog.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "mensen in Syrië",
+              "nood": "Zij weten niet wat er gaat gebeuren en zijn erg bang voor de toekomst.",
+              "kyrie_refrain": true
+            }
+          ]
+        },
+        "tekst": "Lieve God, de wereld is soms een donkere plek. Er gebeuren veel nare dingen. Wij bidden voor de mensen die het nu heel moeilijk hebben. \\n\\nWij denken aan de mensen in Oekraïne. Het is daar nu winter en heel erg koud. Veel huizen hebben geen stroom en de kachel doet het niet. Geef deze mensen warmte en kracht om vol te houden. \\nGod, wees erbij. \\n\\nWij bidden voor de kinderen en hun ouders in Gaza en Soedan. Er is daar veel ruzie en oorlog. Er is te weinig eten en er zijn geen veilige plekken meer. Wij voelen hun pijn in ons hart. Geef dat de ruzie stopt en dat er weer brood is voor iedereen. \\nGod, wees erbij. \\n\\nWij bidden voor de mensen in Syrië. Er is daar veel veranderd. De mensen weten niet wat er gaat gebeuren. Ze zijn erg bang dat er weer nieuwe ruzie komt. Zorg dat de mensen die de baas zijn, goede en wijze keuzes maken. \\nGod, wees erbij. \\n\\nOok in Waddinxveen zijn er mensen met verdriet. Wij bidden voor de bewoners van Souburgh die weer terug zijn op hun plek. Maar zij missen hun vrienden die er niet meer zijn. Troost hen in hun gemis. \\nGod, wees erbij. \\n\\nAmen.",
+        "echo_schriftlezing": "De duisternis in de wereld waar de ster boven moet gaan stralen.",
+        "amen": true
+      },
+      "epiclese": {
+        "type": "epiclese",
+        "aanspraak": "Goede Geest van God",
+        "focus": "begrip_bijbelverhaal",
+        "tekst": "Goede Geest van God,\\n\\nWij gaan nu lezen uit de Bijbel. Het zijn oude verhalen over een ster en over een Kind. Wij vragen U: kom in ons hart. Zorg dat we niet alleen de woorden horen, maar dat we ze ook echt gaan begrijpen. Maak ons van binnen stil en open voor Uw verhaal. Laat het verhaal ons raken, zodat we weten wat we moeten doen. Help ons om te voelen dat U vandaag bij ons bent.\\n\\nAmen.",
+        "echo_schriftlezing": "De ster die de wijzen hielp om de weg te vinden naar Jezus.",
+        "amen": true
+      },
+      "dankgebed": {
+        "type": "dankgebed",
+        "aanspraak": "Dank U wel, goede God",
+        "verbinding_verkondiging": "We hebben geleerd dat God er is voor iedereen, ook voor mensen die van ver komen.",
+        "elementen": {
+          "dank_gehoorde_woord": "Dank U voor het verhaal van de wijze mannen. Zij lieten ons zien dat U van alle mensen houdt.",
+          "vraag_kracht_bewaren": "Help ons om de mooie dingen uit de kerk te bewaren in ons hart.",
+          "verbinding_dagelijks_leven": "Geef ons moed voor de nieuwe week in Waddinxveen."
+        },
+        "tekst": "Dank U wel, goede God. Wij zijn blij dat we hier samen mochten zijn. Dank U wel voor het mooie verhaal uit de Bijbel over de wijze mannen. Zij kwamen van heel ver om bij Jezus te zijn. Dat leert ons dat U van alle mensen houdt. Het maakt niet uit waar iemand vandaan komt of wie iemand is. U bent er voor iedereen. Dat geeft ons een fijn en warm gevoel.\\n\\nDank U wel voor de rust in deze kerk. Dank U voor de muziek en voor de mensen om ons heen. Wij danken U ook voor de goede dingen in ons leven. Voor ons eten, voor een veilig huis en voor vrienden die ons even aanraken of een hand geven.\\n\\nWij gaan straks weer naar huis. De nieuwe week begint morgen weer. Sommigen gaan weer naar hun werk op het bedrijventerrein. Anderen gaan weer naar school of blijven thuis. Wij vragen U: help ons om de mooie dingen van vandaag te bewaren in ons hart. Geef ons de kracht om net als de wijze mannen een 'andere weg' te kiezen. Een weg van liefde en van vrede in ons eigen dorp. \\n\\nZorg dat wij deze week ook een beetje licht geven aan anderen. In de Triangel, in Wijk Oost en overal waar we komen. Dank U dat U met ons meegaat.\\n\\nAmen.",
+        "echo_schriftlezing": "De wijze mannen die hun schatten gaven en via een andere weg teruggingen.",
+        "amen": true
+      },
+      "voorbeden": {
+        "type": "voorbeden",
+        "aanspraak": "Vader in de hemel",
+        "cirkels": {
+          "wereld": {
+            "themas": [
+              "vrede",
+              "de natuur"
+            ],
+            "tekst": "Wij bidden voor de hele wereld. Er is op veel plekken ruzie en pijn. Wij vragen U om vrede. Zorg dat de mensen die de baas zijn in de landen, eerlijk en goed zijn voor de arme mensen. Wij bidden ook voor de natuur en de grond waarop we wonen. Help ons om goed voor de aarde te zorgen."
+          },
+          "kerk": {
+            "themas": [
+              "alle gelovigen",
+              "hulp in Kenia"
+            ],
+            "tekst": "Wij bidden voor de kerk over de hele wereld. Vandaag denken we extra aan de zending. Wij bidden voor de vrouwen in Kenia die over U vertellen aan anderen. Geef hen kracht en moed. Zorg dat onze eigen Brugkerk een plek is waar iedereen zich welkom voelt. Ook de mensen die U nog niet zo goed kennen."
+          },
+          "naasten": {
+            "themas": [
+              "zieken",
+              "eenzame mensen"
+            ],
+            "tekst": "Wij bidden voor de mensen in Waddinxveen die ziek zijn of veel pijn hebben. Wees dicht bij hen die in het ziekenhuis liggen of thuis wachten op een dokter. Wij bidden voor de mensen die zich alleen voelen na de kerstdagen. Geef hen het gevoel dat ze erbij horen en dat iemand aan hen denkt."
+          },
+          "eigen_gemeente": {
+            "themas": [
+              "nieuwe buren",
+              "onze eigen week"
+            ],
+            "tekst": "Wij bidden voor onszelf en voor onze buren. Er wonen veel nieuwe mensen in de Triangel. Help ons om hen vriendelijk gedag te zeggen. Geef ons een goede nieuwe week. Wees bij ons als we morgen weer aan de slag gaan."
+          }
+        },
+        "stilte_instructie": "*Het is nu even stil. Iedereen kan nu in zijn eigen hart met God praten.*",
+        "overgang_onze_vader": "Samen bidden we nu het gebed dat Jezus ons leerde:",
+        "onze_vader": "Onze Vader in de hemel,\\nlaat iedereen u eren.\\nLaat uw nieuwe wereld komen.\\nLaat op aarde uw wil gedaan worden,\\nnet zoals dat in de hemel gebeurt.\\nGeef ons vandaag het eten dat we nodig hebben.\\nEn vergeef ons wat we fout gedaan hebben,\\nwant wij hebben ook andere mensen hun fouten vergeven.\\nHelp ons om nooit tegen u te kiezen.\\nEn bescherm ons tegen de macht van het kwaad.\\nWant u bent koning,\\nu regeert met grote macht,\\nvoor altijd. Amen."
+      }
+    },
+    "poetische_technieken_gebruikt": {
+      "parallellisme": [
+        "Soms doen we dingen die niet goed zijn. Soms vergeten we anderen. Soms zijn we alleen met onszelf bezig.",
+        "Zonder sterren, zonder brood en zonder morgen."
+      ],
+      "drieslag": [
+        "Voor ons eten, voor een veilig huis en voor vrienden.",
+        "In de Triangel, in Wijk Oost en overal waar we komen."
+      ],
+      "anafoor": [
+        "Wij bidden voor...",
+        "Dank U wel voor..."
+      ],
+      "inclusio": [
+        "De gebeden beginnen met de kou en de grijze lucht buiten, en eindigen met het licht dat de mensen zelf gaan geven in de nieuwe week."
+      ],
+      "zintuiglijke_taal": [
+        "Voelen: De kou, de warmte in het hart, de hand van een vriend, het moe zijn.",
+        "Weten: Weten dat God van je houdt, weten wat je moet doen.",
+        "Handelen: Op weg gaan, schatten geven, de andere weg kiezen."
+      ],
+      "lokale_beelden": [
+        "De polder van Waddinxveen.",
+        "Bedrijventerrein Distripark en de wijk De Triangel.",
+        "Zorgcentrum Souburgh."
+      ]
+    },
+    "echo_techniek": {
+      "schriftlezing_thema": "De zoektocht van de wijze mannen als voorbeeld voor ons eigen leven.",
+      "echo_per_gebed": {
+        "drempelgebed": "De wijzen gingen op weg, wij willen nu ook op weg gaan naar God.",
+        "kyrie": "De duisternis in de wereld waar de ster van God nodig is.",
+        "epiclese": "De ster als gids om het verhaal te kunnen begrijpen.",
+        "dankgebed": "Dank voor de 'andere weg' die we mogen gaan na de ontmoeting.",
+        "voorbeden": "Bidden voor de zending (Kenia) omdat God er voor alle volken is."
+      }
+    }
+  },
   "14_gebeden_profetisch": {
     "stijl_analyse": "Dit gebed hanteert Brueggemanns 'profetische verbeeldingskracht' door de status quo van de Waddinxveense werkethiek en logistieke beheersing te contrasteren met de ontregelende verschijning van God. Het doorbreekt de 'koninklijke bewustheid' van veiligheid en succes door de rauwe werkelijkheid van mondiale duisternis en lokale eindigheid te benoemen.",
     "gebeden": {
@@ -3041,7 +3180,8 @@
       "Aanbidding",
       "Andere weg",
       "Verschijning"
-    ]
+    ],
+    "citaat_dichter": "Friedrich Hölderlin uit 'Patmos'. Jüngel citeerde Hölderlin vaak om de paradox van Gods nabijheid en verborgenheid uit te drukken. Het citaat benadrukt dat juist in de crisis ('gevaar') de redding van God ('het reddende') tastbaar wordt, wat naadloos aansluit bij de Epifanie-boodschap in een onrustige wereld."
   },
   "18_preek_noordmans": {
     "titel": "De schok van de vromen",
@@ -3064,7 +3204,8 @@
       "Ster",
       "Andere weg",
       "Kniebuiging"
-    ] 
+    ],
+    "rozentuin_vermijden": "De idylle van de stal als een harmonieus familiefeest zonder de politieke dreiging van het zwaard en de existentiële schok van de vreemdeling die de religieuze orde verstoort."
   },
   "Bijbelteksten": {
     "naardense_bijbel": [

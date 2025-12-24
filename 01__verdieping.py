@@ -920,6 +920,9 @@ def update_summary(output_dir: Path):
                 ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
                 ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
                 ("14_gebeden", "Gebeden voor de Eredienst"),
+                ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
+                ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
+                ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
                 ("15_kindermoment", "Kindermoment"),
                 ("16_preek_solle", "Preek in de stijl van Sölle"),
                 ("17_preek_jungel", "Preek in de stijl van Jüngel"),
@@ -954,9 +957,11 @@ def update_summary(output_dir: Path):
             ("12_representatieve_hoorders", "Representatieve Hoorders"),
             ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
             ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
-            ("14_gebeden", "Gebeden voor de Eredienst"),
-            ("15_kindermoment", "Kindermoment"),
-            ("16_preek_solle", "Preek in de stijl van Sölle"),
+                            ("14_gebeden", "Gebeden voor de Eredienst"),
+                            ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
+                            ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
+                            ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
+                            ("15_kindermoment", "Kindermoment"),            ("16_preek_solle", "Preek in de stijl van Sölle"),
             ("17_preek_jungel", "Preek in de stijl van Jüngel"),
             ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
         ]
@@ -1099,6 +1104,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("14_gebeden", "Gebeden voor de Eredienst"),
         ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
         ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
+        ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
         ("15_kindermoment", "Kindermoment"),
         ("16_preek_solle", "Preek in de stijl van Sölle"),
         ("17_preek_jungel", "Preek in de stijl van Jüngel"),
@@ -1176,7 +1182,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
 
         # Voor gebeden: maskeer adres om letterlijk gebruik te voorkomen
         display_adres = user_input.get('adres') or 'Onbekend'
-        if name in ["14_gebeden", "14_gebeden_profetisch", "14_gebeden_dialogisch"]:
+        if name in ["14_gebeden", "14_gebeden_profetisch", "14_gebeden_dialogisch", "14_gebeden_eenvoudig"]:
             display_adres = "N.v.t. voor deze taak (niet letterlijk noemen)"
 
         full_prompt = f"""{base_prompt}
@@ -1206,7 +1212,7 @@ Hieronder vind je de output van eerdere stappen in het proces. Gebruik deze info
         # Voer analyse uit
         if name == "11_kalender":
             temp = 0.1 # Laag voor feitelijke precisie
-        elif name in ["14_gebeden", "14_gebeden_profetisch", "15_kindermoment"]:
+        elif name in ["14_gebeden", "14_gebeden_profetisch", "14_gebeden_dialogisch", "14_gebeden_eenvoudig", "15_kindermoment"]:
             temp = 0.7 # Hoger voor poëtische creativiteit
         else:
             temp = 0.2 # Standaard

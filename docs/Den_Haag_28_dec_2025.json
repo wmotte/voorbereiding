@@ -2836,6 +2836,146 @@
       ]
     }
   },
+  "14_gebeden_eenvoudig": {
+    "gekozen_scenario": "Eenvoudig",
+    "gebeden": {
+      "drempelgebed": {
+        "type": "drempelgebed",
+        "aanspraak": "God, onze Vader",
+        "elementen": {
+          "verootmoediging": "Wij komen uit de drukke stad naar dit huis. Buiten is het koud en mistig.",
+          "schuldbelijdenis": "Soms vergeten wij U. Soms zijn we niet lief voor anderen. Dat spijt ons.",
+          "verlangen": "Wij willen nu graag bij U zijn. Wij willen rust vinden in ons hart."
+        },
+        "tekst": "God, onze Vader,\n\nWij zijn hier in dit huis. Buiten is het koud en mistig in Den Haag. De kerstmarkt op het plein is weg. De drukke dagen zijn voorbij. Wij leggen onze tassen en onze zorgen neer.\n\nSoms doen wij dingen fout. Wij denken dan alleen aan onszelf. Wij vergeten om te delen. Dat spijt ons. Wilt U dat weghalen uit ons hart? Maak ons weer blij en schoon.\n\nWij willen graag dicht bij U zijn. Net zoals een kind bij zijn vader of moeder is. Wij zijn hier om naar U te luisteren met ons hart. Wees bij ons in dit uur.\n\nAmen.",
+        "echo_schriftlezing": "Het beeld van het neerleggen van tassen en zorgen, zoals Jozef die zijn koffers moest pakken.",
+        "amen": true
+      },
+      "kyrie": {
+        "type": "kyrie",
+        "aanspraak": "Goede God",
+        "focus": "nood_wereld",
+        "structuur": {
+          "intenties": [
+            {
+              "voor_wie": "Kinderen die bang zijn",
+              "nood": "In landen met oorlog moeten kinderen vluchten voor soldaten.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "Mensen zonder huis",
+              "nood": "Mensen die nergens heen kunnen en zich alleen voelen.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "Onze stad Den Haag",
+              "nood": "Er is veel ruzie en sommige mensen hebben geen geld voor eten.",
+              "kyrie_refrain": true
+            }
+          ]
+        },
+        "tekst": "Goede God,\n\nWij denken aan de wereld. Er gebeuren veel nare dingen. In het verhaal van vandaag moet een klein kind vluchten voor een gemene koning. Dat gebeurt nu nog steeds. Wij denken aan kinderen in landen waar oorlog is. Zij moeten rennen voor hun leven. Zij hebben geen veilig bed. \nGod, wees erbij.\n\nWij denken aan mensen die hun eigen land moesten verlaten. Zij voelen zich vreemd en alleen. Soms zijn mensen niet aardig tegen hen. Dat maakt ons verdrietig. Wij bidden voor gezinnen die al heel lang wachten op een eigen huis en een veilig plekje.\nGod, wees erbij.\n\nWij bidden voor onze eigen stad. In Den Haag zijn veel mensen rijk, maar ook veel mensen arm. Dat is niet eerlijk. Er is vaak ruzie tussen groepen mensen. Wij bidden om vrede in de straten en vrede in ons hart. Help de mensen die belangrijke keuzes moeten maken voor ons land.\nGod, wees erbij.\n\nU weet wat er misgaat. U weet wie er pijn heeft. Wij leggen al die pijn in uw handen.\n\nAmen.",
+        "echo_schriftlezing": "De vlucht van het kind Jezus voor de macht van koning Herodes.",
+        "amen": true
+      },
+      "epiclese": {
+        "type": "epiclese",
+        "aanspraak": "Goede Geest van God",
+        "focus": "begrip_bijbelverhaal",
+        "tekst": "Goede Geest van God,\n\nKom in ons midden. Wij gaan nu lezen uit de Bijbel. Het zijn oude verhalen over een verre reis. Maar de verhalen gaan ook over ons leven nu.\n\nMaak ons hart warm en open. Zorg dat de woorden niet alleen in ons hoofd blijven, maar dat we ze echt gaan voelen. Help ons om te begrijpen wat U tegen ons wilt zeggen. Geef ons de kracht om te doen wat goed is.\n\nAmen.",
+        "echo_schriftlezing": "Het openstaan voor de leiding van God, zoals Jozef deed in zijn droom.",
+        "amen": true
+      },
+      "dankgebed": {
+        "type": "dankgebed",
+        "aanspraak": "Dank U wel, goede God",
+        "verbinding_verkondiging": "Dank voor uw bescherming en voor de liefde die we mogen doorgeven.",
+        "elementen": {
+          "dank_gehoorde_woord": "Dank voor het verhaal over de reis naar Egypte.",
+          "vraag_kracht_bewaren": "Help ons om de liefde vast te houden.",
+          "verbinding_dagelijks_leven": "Zorg dat we in Den Haag goed zijn voor elkaar."
+        },
+        "tekst": "Dank U wel, goede God,\n\nWij zijn blij dat we hier samen zijn. Dank U voor het verhaal van vandaag. Wij weten nu dat U bij ons bent als we bang zijn. U reist met ons mee, ook als we naar een vreemde plek gaan. Dank U dat U Jezus heeft beschermd toen Hij klein was.\n\nWij danken U voor de mooie dingen in ons leven. Voor een warm huis terwijl het buiten koud is. Voor lekker eten op tafel. Voor vrienden en familie die van ons houden. Dank U dat we in deze kerk mogen komen om tot rust te komen.\n\nWij hebben gehoord over de liefde. Liefde is als een warme jas die we mogen aantrekken. Dank U dat U ons die jas elke dag geeft. Help ons om die liefde ook aan anderen te geven. Aan mensen die het koud hebben of die verdrietig zijn.\n\nZorg voor ons in de nieuwe week. In ons werk, op school en thuis. Wij danken U dat we nooit alleen zijn. U houdt ons vast met uw sterke handen.\n\nAmen.",
+        "echo_schriftlezing": "Het beeld van de liefde als een kleed of jas (Kolossenzen 3).",
+        "amen": true
+      },
+      "voorbeden": {
+        "type": "voorbeden",
+        "aanspraak": "Vader in de hemel",
+        "cirkels": {
+          "wereld": {
+            "themas": [
+              "vrede",
+              "vluchtelingen"
+            ],
+            "tekst": "Wij bidden voor de hele wereld. Er is veel ruzie tussen landen. Wij bidden voor vrede. Zorg voor alle mensen die moeten vluchten voor geweld. Geef hen een veilige plek om te wonen."
+          },
+          "kerk": {
+            "themas": [
+              "onze kerk",
+              "de verbouwing"
+            ],
+            "tekst": "Wij bidden voor de kerk over de hele wereld. En ook voor onze eigen Kloosterkerk. Er gaat veel veranderen in dit huis. Het orgel wordt ingepakt. Er komt stof en lawaai door de verbouwing. Help ons om toch een fijne groep te blijven. Bescherm dit huis en de mensen die er werken."
+          },
+          "naasten": {
+            "themas": [
+              "zieken",
+              "oudere mensen"
+            ],
+            "tekst": "Wij bidden voor de mensen die we kennen. Voor wie ziek is en pijn heeft. Voor de mensen die oud worden en dingen vergeten. Wij bidden voor de mensen die zich alleen voelen in de grote stad. Laat hen voelen dat ze erbij horen."
+          },
+          "eigen_gemeente": {
+            "themas": [
+              "kinderen",
+              "de nieuwe week"
+            ],
+            "tekst": "Wij bidden voor onszelf. Voor de kinderen in de kerk en voor de grote mensen. Help ons om in de nieuwe week goede dingen te doen. Geef ons geduld met elkaar. Laat uw vrede in ons hart zijn."
+          }
+        },
+        "stilte_instructie": "*Het is nu even stil. Iedereen kan in zijn eigen hart een gebed zeggen voor zichzelf of voor iemand anders.*",
+        "overgang_onze_vader": "Samen bidden we het gebed dat Jezus ons leerde:",
+        "onze_vader": "Onze Vader in de hemel,\nlaat iedereen u eren.\nLaat uw nieuwe wereld komen.\nLaat op aarde uw wil gedaan worden,\nnet zoals dat in de hemel gebeurt.\nGeef ons vandaag het eten dat we nodig hebben.\nEn vergeef ons wat we fout gedaan hebben,\nwant wij hebben ook andere mensen hun fouten vergeven.\nHelp ons om nooit tegen u te kiezen.\nEn bescherm ons tegen de macht van het kwaad.\nWant u bent koning,\nu regeert met grote macht,\nvoor altijd. Amen."
+      }
+    },
+    "poetische_technieken_gebruikt": {
+      "parallellisme": [
+        "Soms doen wij dingen fout. Soms vergeten wij U.",
+        "Dank voor een warm huis. Dank voor lekker eten."
+      ],
+      "drieslag": [
+        "In ons werk, op school en thuis.",
+        "Voor de wereld, voor de stad en voor onszelf."
+      ],
+      "anafoor": [
+        "Wij bidden voor...",
+        "Dank U voor..."
+      ],
+      "inclusio": [
+        "De gebeden beginnen met de kou buiten in Den Haag en eindigen met de vrede in ons hart in de stad."
+      ],
+      "zintuiglijke_taal": [
+        "Voelen: de kou buiten, de warmte van de liefde.",
+        "Handen: God die ons vasthoudt met zijn handen.",
+        "Hart: een hart dat schoon wordt gemaakt, een warm hart.",
+        "Aanraken: de woorden die ons aanraken."
+      ],
+      "lokale_beelden": [
+        "De mist over de stad Den Haag.",
+        "De kerstmarkt die weg is.",
+        "De verbouwing van de kerk en het orgel dat wordt ingepakt."
+      ]
+    },
+    "echo_techniek": {
+      "schriftlezing_thema": "God reist met ons mee in de onzekerheid en beschermt het kwetsbare leven.",
+      "echo_per_gebed": {
+        "drempelgebed": "Het neerleggen van tassen (zoals bij een vlucht).",
+        "kyrie": "De gemene koning Herodes en de bange kinderen nu.",
+        "epiclese": "Het hart openmaken voor het verhaal.",
+        "dankgebed": "De liefde als een warme jas (Kolossenzen).",
+        "voorbeden": "De eerbied voor oude mensen (Sirach) en de zorg voor de kerkruimte."
+      }
+    }
+  },
   "14_gebeden_profetisch": {
     "stijl_analyse": "De gebeden zijn vormgegeven met de ritmische herhaling en de schurende eerlijkheid die kenmerkend zijn voor Brueggemann. Er is een bewuste breuk gemaakt met de 'kerstidylle' door de nuchtere, gevaarlijke realiteit van de vlucht en de politieke macht van Herodes te contrasteren met de kwetsbaarheid van het Kind en de huidige wereldnood.",
     "gebeden": {
@@ -3078,12 +3218,13 @@
         "inhoud": "Het orgel wordt ingepakt. De muren gaan trillen. We zijn weer onderweg naar Nazaret, de marge van de wereld. God herstelt de geschiedenis niet met legers, maar met een omweg. De tiran sterft, maar het kind blijft. Wij zijn kinderen van de opstanding, maar we beginnen als kinderen van de vlucht. Is uw hart een open huis of een dichte vesting? De weg ligt open. De nacht is bijna voorbij. God is de Vader die in de hemelen is, maar op aarde heeft Hij geen steen om zijn hoofd op neer te leggen. Dat is onze eer.\n\nEn een eeuwig leven."
       }
     },
-    "kernwoorden": [
+    "kernwords": [
       "Uitwijken",
       "Asiel",
       "Vogelvrij",
       "Omweg"
-    ]
+    ],
+    "rozentuin_vermijden": "De harmonieuze lezing waarbij de 'Heilige Familie' wordt gepresenteerd als een moreel voorbeeld van burgerlijke gezelligheid en veiligheid, terwijl de tekst spreekt over de verbreking van alle aardse zekerheden."
   },
   "Bijbelteksten": {
     "naardense_bijbel": [

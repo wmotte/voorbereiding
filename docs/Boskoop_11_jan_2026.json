@@ -2752,6 +2752,147 @@
       ]
     }
   },
+  "14_gebeden_eenvoudig": {
+    "gekozen_scenario": "Eenvoudig",
+    "gebeden": {
+      "drempelgebed": {
+        "type": "drempelgebed",
+        "aanspraak": "Goede God,",
+        "elementen": {
+          "verootmoediging": "Wij zijn hier in de kerk. Buiten is het koud. In ons hart is het soms ook koud en onrustig.",
+          "schuldbelijdenis": "Het spijt ons dat we soms alleen aan onszelf dachten deze week. We deden dingen die niet goed waren.",
+          "verlangen": "Wij willen graag dicht bij U zijn. Wij willen voelen dat U van ons houdt."
+        },
+        "tekst": "Goede God,\n\nWij zijn nu hier in dit huis. Het is januari en buiten is het koud.\nWij laten de drukte van de week achter ons.\nSoms was ons hart ook koud deze week.\nWij dachten alleen aan ons eigen werk.\nWij dachten niet aan de mensen om ons heen.\nDat spijt ons.\nWilt U alles wat fout ging weer goed maken?\n\nWij zijn hier omdat we bij U willen horen.\nNet als Jezus bij het water van de rivier stond,\nstaan wij hier nu bij U.\nWij willen voelen dat we niet alleen zijn.\nMaak ons hart warm met uw liefde.\nGeef ons de rust die we nodig hebben.\nWij willen deze ochtend helemaal van U zijn.\n\nAmen.",
+        "echo_schriftlezing": "Het beeld van Jezus die bij het water van de Jordaan staat om een nieuw begin te maken.",
+        "amen": true
+      },
+      "kyrie": {
+        "type": "kyrie",
+        "aanspraak": "Heer, onze God,",
+        "focus": "nood_wereld",
+        "structuur": {
+          "intenties": [
+            {
+              "voor_wie": "De kinderen in Gaza en andere oorlogsgebieden",
+              "nood": "Zij hebben het koud in hun tenten en zijn erg bang.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "De mensen in ons eigen dorp Boskoop",
+              "nood": "Er is onrust door ruzie en geweld bij het hotel. Ook zijn mensen bang omdat hun huis kapot gaat.",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "Mensen die zich voelen als een geknakt rietje",
+              "nood": "Zij zijn moe, ziek of hebben veel verdriet. Ze voelen zich bijna gebroken.",
+              "kyrie_refrain": true
+            }
+          ]
+        },
+        "tekst": "Heer, onze God,\n\nDe wereld is vaak hard en koud.\nWij denken aan de kinderen in verre landen zoals Gaza.\nZij slapen in tenten en hebben het heel koud.\nZij weten niet of ze morgen nog te eten hebben.\nGod, wees bij hen.\n\nWij denken ook aan ons eigen dorp Boskoop.\nEr is ruzie en geweld geweest bij het hotel aan het Westpark.\nVeel mensen zijn daardoor bang en onrustig.\nOok denken we aan de mensen in de Julianastraat.\nHun huizen gaan kapot en ze moeten weg.\nDat geeft veel verdriet en zorgen.\nGod, wees bij hen.\n\nWij bidden voor iedereen die zich zwak voelt.\nIn de Bijbel staat dat U een geknakt rietje niet zomaar breekt.\nU bent voorzichtig met mensen die pijn hebben.\nWees bij de zieken en bij de mensen die zich alleen voelen.\nGeef hen de kracht om vol te houden.\nGod, wees bij hen.\n\nAmen.",
+        "echo_schriftlezing": "De Knecht uit Jesaja die heel voorzichtig is met het geknakte riet en de vlam die bijna uitgaat.",
+        "amen": true
+      },
+      "epiclese": {
+        "type": "epiclese",
+        "aanspraak": "Goede God,",
+        "focus": "begrip_bijbelverhaal",
+        "tekst": "Goede God,\n\nWij gaan nu lezen uit de Bijbel.\nHet zijn oude woorden, maar ze zijn voor ons.\nWij vragen U: maak ons hart open voor uw verhaal.\nZorg dat de woorden ons raken.\nLaat ons voelen dat U vandaag tegen ons spreekt.\nGeef ons uw rust, zodat we goed kunnen begrijpen wat U ons wilt leren.\nWij willen weten wie Jezus is voor ons.\n\nAmen.",
+        "echo_schriftlezing": "De Geest die als een duif neerdaalt om vrede en begrip te brengen.",
+        "amen": true
+      },
+      "dankgebed": {
+        "type": "dankgebed",
+        "aanspraak": "Dank U wel, goede God,",
+        "verbinding_verkondiging": "Wij hebben gehoord dat we uw geliefde kinderen zijn.",
+        "elementen": {
+          "dank_gehoorde_woord": "Dank voor de stem uit de hemel die zegt dat U van ons houdt.",
+          "vraag_kracht_bewaren": "Help ons om dit deze week te onthouden als we aan het werk zijn.",
+          "verbinding_dagelijks_leven": "Dank voor ons werk op de kwekerij en de zorg voor elkaar."
+        },
+        "tekst": "Dank U wel, goede God,\n\nWij zijn blij met wat we hebben gehoord.\nU zegt tegen Jezus: 'Jij bent mijn geliefde Zoon'.\nEn U zegt het ook tegen ons.\nWij hoeven niet eerst heel hard te werken om goed genoeg te zijn.\nU houdt al van ons voordat we iets doen.\nDat voelt als een groot cadeau.\nDank U wel dat we bij U mogen horen.\n\nDank U voor ons dorp Boskoop.\nDank U voor de bomen en planten die groeien op de kwekerijen.\nOok al is het nu winter, wij weten dat het leven doorgaat.\nDank U voor het water in de sloten en voor de bruggen die ons bij elkaar brengen.\nDank U voor de mensen die voor ons zorgen als we ziek zijn.\n\nHelp ons om deze week te leven als uw kinderen.\nAls we morgen weer aan het werk gaan, laat ons dan rustig blijven.\nLaat ons vriendelijk zijn voor de mensen die we tegenkomen.\nOok voor de mensen die anders zijn dan wij.\nWij weten dat U bij ons bent, elke dag weer.\n\nAmen.",
+        "echo_schriftlezing": "De stem van de Vader die zegt: 'Dit is mijn geliefde Zoon'.",
+        "amen": true
+      },
+      "voorbeden": {
+        "type": "voorbeden",
+        "aanspraak": "Vader in de hemel,",
+        "cirkels": {
+          "wereld": {
+            "themas": [
+              "vrede in de wereld",
+              "eerlijk recht voor iedereen"
+            ],
+            "tekst": "Wij bidden voor de hele wereld. Er is veel ruzie tussen landen. Wij bidden voor de mensen die moeten beslissen over vrede. Zorg dat er overal eerlijk recht komt voor alle mensen."
+          },
+          "kerk": {
+            "themas": [
+              "alle mensen die geloven"
+            ],
+            "tekst": "Wij bidden voor alle mensen die bij U willen horen. Help ons om samen één groep te zijn. Geef ons de kracht om uw liefde te delen met anderen."
+          },
+          "naasten": {
+            "themas": [
+              "mensen met zorgen in Boskoop",
+              "arbeidsmigranten"
+            ],
+            "tekst": "Wij bidden voor de mensen in Boskoop die het moeilijk hebben. Denk aan de mensen die hun huis moeten verlaten in de Julianastraat. Geef hen een goede nieuwe plek. Wij bidden ook voor de mensen die uit andere landen hier komen werken. Zorg dat zij zich veilig voelen in ons dorp."
+          },
+          "eigen_gemeente": {
+            "themas": [
+              "de zieken in de Dorpskerk",
+              "de jongeren"
+            ],
+            "tekst": "Wij bidden voor onszelf hier in de Dorpskerk. Wees bij de mensen die ziek zijn of die iemand hebben verloren. Wij noemen hun namen in ons hart... Wees ook bij de jonge mensen in ons dorp. Help hen om hun weg te vinden in het leven."
+          }
+        },
+        "stilte_instructie": "*Het is nu even stil. Iedereen kan in zijn eigen hart een gebed aan God vertellen.*",
+        "overgang_onze_vader": "Samen bidden we nu het gebed dat Jezus ons leerde:",
+        "onze_vader": "Onze Vader in de hemel,\nlaat iedereen u eren.\nLaat uw nieuwe wereld komen.\nLaat op aarde uw wil gedaan worden,\nnet zoals dat in de hemel gebeurt.\nGeef ons vandaag het eten dat we nodig hebben.\nEn vergeef ons wat we fout gedaan hebben,\nwant wij hebben ook andere mensen hun fouten vergeven.\nHelp ons om nooit tegen u te kiezen.\nEn bescherm ons tegen de macht van het kwaad.\nWant u bent koning,\nu regeert met grote macht,\nvoor altijd. Amen."
+      }
+    },
+    "poetische_technieken_gebruikt": {
+      "parallellisme": [
+        "God, wees bij hen (herhaling in het Kyrie)",
+        "Dank U wel... (herhaling in het Dankgebed)"
+      ],
+      "drieslag": [
+        "moe, ziek of veel verdriet",
+        "bomen, planten en kwekerijen",
+        "op de kwekerij, in de kassen of op kantoor"
+      ],
+      "anafoor": [
+        "Dank U voor...",
+        "Wij bidden voor..."
+      ],
+      "inclusio": [
+        "Het gebed begint bij de kou buiten en eindigt bij de warmte van Gods liefde in de nieuwe week."
+      ],
+      "zintuiglijke_taal": [
+        "Voelen: de kou, de warmte in het hart, de liefde van God.",
+        "Weten: dat we geliefd zijn, dat God bij ons is.",
+        "Handen: de handen van een kweker, de handen van God die ons vasthouden.",
+        "Hart: een open hart, een warm hart."
+      ],
+      "lokale_beelden": [
+        "De kou in de polder in januari.",
+        "De sloten en bruggen van Boskoop.",
+        "De kwekerijen met hun bomen en planten.",
+        "De Julianastraat en het hotel aan het Westpark."
+      ]
+    },
+    "echo_techniek": {
+      "schriftlezing_thema": "De doop van Jezus als teken dat God van ons houdt en ons kracht geeft.",
+      "echo_per_gebed": {
+        "drempelgebed": "Wij staan bij U zoals Jezus bij de rivier stond.",
+        "kyrie": "God zorgt voor mensen die zwak zijn als een geknakt rietje.",
+        "epiclese": "De Geest komt als een duif om ons hart rustig te maken voor het verhaal.",
+        "dankgebed": "Wij zijn blij dat we Gods geliefde kinderen mogen zijn.",
+        "voorbeden": "God brengt recht en vrede voor alle volken op aarde."
+      }
+    }
+  },
   "14_gebeden_profetisch": {
     "stijl_analyse": "De gebeden breken radicaal met de Boskoopse 'prestatie-cultuur' door de doop-identiteit tegenover de 'koninklijke bewustheid' van economisch nut te plaatsen. De taal is rauw en direct, waarbij de rust van de Jordaan botst met de onrust van het Westpark en de vrieskou in Gaza.",
     "gebeden": {
@@ -2970,9 +3111,10 @@
       "Gerechtigheid",
       "Identiteit",
       "Genade",
-      "Open hemel"
-      
-    ]
+      "Open hemel",
+      "Boskoop"
+    ],
+    "citaat_dichter": "Friedrich Hölderlin: 'Wo aber Gefahr ist, wächst / Das Rettende auch' (Patmos). Jüngel citeerde Hölderlin vaak om aan te tonen dat God zich juist daar openbaart waar de menselijke mogelijkheden eindigen, in de paradox van de redding die in het gevaar verschijnt."
   },
   "18_preek_noordmans": {
     "titel": "De Rij in de Rivier",
@@ -2995,8 +3137,9 @@
       "Solidariteit",
       "Verzakking",
       "Welbehagen"
-    ]
-    },
+    ],
+    "rozentuin_vermijden": "De harmonieuze gedachte dat de doop van Jezus een loutere 'reiniging' of een 'mooi voorbeeld van nederigheid' is. Het is geen ethisch voorbeeld, maar een ontologische verbreking: God die de plaats van de verworpene inneemt om de wereld te redden."
+  },
   "Bijbelteksten": {
     "naardense_bijbel": [
       {
