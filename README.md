@@ -258,7 +258,7 @@ python count_tokens.py --file output/Sessie_Naam/combined_output.json
 ## ❓ Veelgestelde Vragen (FAQ)
 
 **Q: Hoelang duurt een volledige analyse?**
-A: Een basisanalyse (contextduiding.py) duurt 5-10 minuten. De verdieping (verdieping.py) neemt 15-25 minuten in beslag, afhankelijk van het aantal geselecteerde onderdelen.
+A: Een basisanalyse (00__contextduiding.py) duurt 5-10 minuten. De verdieping (01__verdieping.py) neemt 15-25 minuten in beslag, afhankelijk van het aantal geselecteerde onderdelen.
 
 **Q: Kan ik het systeem offline gebruiken?**
 A: Nee, het systeem vereist een actieve internetverbinding voor de Gemini API. Voor offline gebruik kun je overstappen naar lokale modellen zoals Ollama met DeepSeek.
