@@ -6,7 +6,7 @@
 
 **Let op: Dit materiaal is bedoeld ter inspiratie en als 'feedback' op eigen werk. De uiteindelijke verantwoordelijkheid voor de preek ligt bij de predikant zelf.**
 
-Bekijk de online webviewer met voorbeelddata: [https://wmotte.github.io/voorbereiding/](https://wmotte.github.io/voorbereiding/)
+Bekijk de online webviewer met *100% automatisch-gegenereerde* voorbeelddata: [https://wmotte.github.io/voorbereiding/](https://wmotte.github.io/voorbereiding/)
 
 Dit project combineert diepgaande **contextanalyse** (hoorders, samenleving) met concrete **liturgische bouwstenen** (exegese, preekschets, gebeden). Het doel is niet om de preek te *schrijven*, maar om de predikant te voorzien van een rijke, contextuele basis.
 
@@ -28,11 +28,12 @@ Dit project combineert diepgaande **contextanalyse** (hoorders, samenleving) met
 
 Inspiratie voor dit hulpmiddel is geput uit **"De Eerste Dag"**, de officiële, oecumenische handreiking van de Raad van Kerken in Nederland. "De Eerste Dag" ondersteunt bij de voorbereiding van de wekelijkse eredienst, aansluitend bij het kerkelijk jaar en de liturgie. Het biedt commentaren bij de lezingen, suggesties voor de liturgie, gebeden en toepassingen voor kinderwerk, en helpt bij het structureren van de dienst (de "orde").
 
-Met dit digitale hulpmiddel wordt die voorbereiding veel dynamischer. De voorganger kan nu zelf bepalen welke onderdelen op dat moment van belang zijn. Sommigen zoeken inspiratie in preekschetsen (postille-achtig), anderen willen meer informatie over interactieve momenten (zoals het kindermoment), terwijl weer anderen geholpen zijn bij de identificatie van relevante kunst- en cultuurartefacten. Ook biedt de tool de mogelijkheid om de eigen homiletische structuur te toetsen.
+Met dit digitale hulpmiddel wordt die voorbereiding veel dynamischer én contextueler. De voorganger kan specifiek opgeven om welke hoorders het gaat in welke tijd en op welke plaats. Ook kan hij of zij nu zelf bepalen welke onderdelen van belang zijn in de voorbereiding. De output van de tool biedt de mogelijkheid om de eigen exegesetische inzichten en eigen homiletische structuur te toetsen. Sommigen willen meer informatie over interactieve momenten (zoals het kindermoment), terwijl weer anderen geholpen zijn bij de identificatie van relevante kunst- en cultuurartefacten. 
+Een enkeling zoekt inspiratie in preekschetsen van belangrijke historische voorgangers - daar biedt de tool (nog beperkt) voor. 
 
 Friedrich Niebergall stelde ooit: *"Menige preek geeft antwoorden op vragen die niemand stelt, en gaat niet in op vragen die iedereen stelt."* 
 
-Dit project helpt die valkuil te vermijden door twee werelden te verbinden met behulp van een modern taalmodel (Gemini):
+Dit project helpt die valkuil te vermijden door twee werelden te verbinden met behulp van een modern taalmodel:
 1.  **De Wereld van de Hoorder:** Een systematische analyse van de lokale context (wie zijn de hoorders, wat houdt hen bezig?).
 2.  **De Wereld van de Tekst:** Exegese, kunst & cultuur, en liturgische vormgeving.
 
@@ -233,7 +234,7 @@ python count_tokens.py --file output/Sessie_Naam/combined_output.json
 
 *   **Verificatie:** Het taalmodel baseert zich op online informatie. Controleer cruciale feiten, zeker bij kerkelijke fusiegemeenten of specifieke statistieken.
 *   **Hallucinaties:** Hoewel het taalmodel wordt gedwongen tot bronverificatie (Google Search grounding), kunnen er onjuistheden voorkomen in kunstsuggesties of lokale nieuwsdetails.
-*   **Methodiek:** De analyses zijn aanzetten. Het eigenlijke werk — de ontmoeting tussen Woord en gemeente — blijft mensenwerk.
+*   **Methodiek:** De analyses zijn aanzetten. Het eigenlijke werk — de ontmoeting tussen Woord, voorganger en gemeente — blijft een fysiek gebeuren.
 
 ---
 *Gemaakt door W.M. Otte | [GitHub Repository](https://github.com/wmotte/voorbereiding)*
