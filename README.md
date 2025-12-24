@@ -91,10 +91,12 @@ Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
 | 11 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
 | 12 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
 | 13 | **Homiletische Analyse** | Preekschets (Lowry; narratief), elementen (Chapell; FCF & Christocentrisch) en inductie (Buttrick; Moves & Structures). |
-| 14 | **Gebeden** | Standaard (liturgisch), Profetisch (Brueggemann) en Dialogisch (Dumas). |
+| 14 | **Gebeden** | Standaard (liturgisch), Profetisch (Brueggemann), Dialogisch (Dumas), en Eenvoudige B1-niveau gebeden. |
 | 15 | **Kindermoment** | Drie creatieve opties (Klassiek, Actief, Vreemd) voor interactie met kinderen. |
-| 16 | **Preekschets Sölle** | Preek in de stijl van Dorothee Sölle: mystiek en politiek verzet. |
-| 17 | **Preekschets Jüngel** | Preek in de stijl van Eberhard Jüngel: paradox en evangelische doorbraak. |
+| 16 | **Moment van Bezinning** | Een specifieke vorm van gebed of meditatie die inzinking biedt binnen de eredienst. |
+| 17 | **Preekschets Sölle** | Preek in de stijl van Dorothee Sölle: mystiek en politiek verzet. |
+| 18 | **Preekschets Jüngel** | Preek in de stijl van Eberhard Jüngel: paradox en evangelische doorbraak. |
+| 19 | **Preekschets Noordmans** | Preek in de stijl van Oepke Noordmans: trinitarisch en gericht op 'herschepping' door de Heilige Geest. |
 
 ---
 
