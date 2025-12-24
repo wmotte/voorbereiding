@@ -1960,6 +1960,7 @@
             '14_gebeden_dialogisch': 'Gebeden (dialogisch)',
             '14_gebeden_eenvoudig': 'Gebeden (B1-niveau)',
             '15_kindermoment': 'Kindermoment',
+            '15_bezinningsmoment': 'Moment van Bezinning',
             '16_preek_solle': 'Preekschets (Sölle)',
             '17_preek_jungel': 'Preekschets (Jüngel)',
             '18_preek_noordmans': 'Preekschets (Noordmans)',
@@ -2122,6 +2123,10 @@
                     num = '14c';
                 } else if (key === '14_gebeden_eenvoudig') {
                     num = '14d';
+                } else if (key === '15_bezinningsmoment') {
+                    num = '15a';
+                } else if (key === '15_kindermoment') {
+                    num = '15b';
                 } else {
                     const numMatch = key.match(/^(\d+)_/);
                     num = numMatch ? numMatch[1] : String(unnumberedCounter++).padStart(2, '0');
@@ -2301,6 +2306,18 @@
                             subSectionLabels[`kindermoment-${index + 1}`] = label;
                         });
                     }
+                } else if (key === '15_bezinningsmoment') {
+                    // Special handling for Bezinningsmoment - show the options
+                    if (sectionData.kindermoment_opties && Array.isArray(sectionData.kindermoment_opties)) {
+                        sectionData.kindermoment_opties.forEach((optie, index) => {
+                            const titel = optie.titel || `Optie ${index + 1}`;
+                            const type = optie.type || '';
+                            const label = type ? `${type}: ${titel}` : titel;
+
+                            subSections.push(`kindermoment-${index + 1}`);
+                            subSectionLabels[`kindermoment-${index + 1}`] = label;
+                        });
+                    }
                 } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch' || key === '14_gebeden_eenvoudig') {
                     // Special handling for Gebeden - show specific prayer types
                     const gebeden = sectionData.gebeden || {};
@@ -2469,7 +2486,7 @@
                 contentHtml = renderExegeseSection(dataToRender);
             } else if (key === '01_zondag_kerkelijk_jaar') {
                 contentHtml = renderObjectWithIds(dataToRender, key);
-            } else if (key === '15_kindermoment') {
+            } else if (key === '15_kindermoment' || key === '15_bezinningsmoment') {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             } else {
                 contentHtml = renderObjectWithIds(dataToRender, key);
@@ -2613,8 +2630,8 @@
             }
 
             // Kindermoment opties
-            if (key === 'kindermoment_opties' && parentKey === '15_kindermoment') {
-                return renderKindermoment(value);
+            if (key === 'kindermoment_opties' && (parentKey === '15_kindermoment' || parentKey === '15_bezinningsmoment')) {
+                return renderKindermoment(value, parentKey);
             }
 
             // Positie kerkelijk jaar - combine leesrooster_jaar with dominant_evangelie
@@ -3078,12 +3095,12 @@
             return html;
         }
 
-        function renderKindermoment(opties) {
+        function renderKindermoment(opties, sectionKey = '15_kindermoment') {
             let html = `<div class="data-group">`;
             html += `<div class="data-group-title">Opties</div>`;
 
             opties.forEach((optie, index) => {
-                html += `<div id="section-15_kindermoment-kindermoment-${index + 1}" class="subsection-anchor"></div>`;
+                html += `<div id="section-${sectionKey}-kindermoment-${index + 1}" class="subsection-anchor"></div>`;
                 html += `<div class="focus-card">`;
 
                 // Header with type and title

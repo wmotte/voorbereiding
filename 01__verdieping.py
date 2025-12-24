@@ -365,6 +365,7 @@ def read_previous_analyses(folder: Path) -> dict:
         ("13_homiletische_analyse", "homiletische_analyse"),
         ("13_homiletische_analyse_buttrick", "homiletische_analyse_buttrick"),
         ("14_gebeden", "gebeden"),
+        ("15_bezinningsmoment", "bezinningsmoment"),
         ("15_kindermoment", "kindermoment"),
     ]
 
@@ -923,6 +924,7 @@ def update_summary(output_dir: Path):
                 ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
                 ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
                 ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
+                ("15_bezinningsmoment", "Moment van Bezinning"),
                 ("15_kindermoment", "Kindermoment"),
                 ("16_preek_solle", "Preek in de stijl van Sölle"),
                 ("17_preek_jungel", "Preek in de stijl van Jüngel"),
@@ -961,6 +963,7 @@ def update_summary(output_dir: Path):
                             ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
                             ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
                             ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
+                            ("15_bezinningsmoment", "Moment van Bezinning"),
                             ("15_kindermoment", "Kindermoment"),            ("16_preek_solle", "Preek in de stijl van Sölle"),
             ("17_preek_jungel", "Preek in de stijl van Jüngel"),
             ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
@@ -1105,7 +1108,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
         ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
         ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
-        ("15_kindermoment", "Kindermoment"),
+        ("15_bezinningsmoment", "Moment van Bezinning"),
         ("16_preek_solle", "Preek in de stijl van Sölle"),
         ("17_preek_jungel", "Preek in de stijl van Jüngel"),
         ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
@@ -1212,8 +1215,10 @@ Hieronder vind je de output van eerdere stappen in het proces. Gebruik deze info
         # Voer analyse uit
         if name == "11_kalender":
             temp = 0.1 # Laag voor feitelijke precisie
-        elif name in ["14_gebeden", "14_gebeden_profetisch", "14_gebeden_dialogisch", "14_gebeden_eenvoudig", "15_kindermoment"]:
-            temp = 0.7 # Hoger voor poëtische creativiteit
+        elif name in ["14_gebeden", "14_gebeden_profetisch", "14_gebeden_dialogisch", "14_gebeden_eenvoudig", 
+                      "15_kindermoment", "15_bezinningsmoment", 
+                      "16_preek_solle", "17_preek_jungel", "18_preek_noordmans"]:
+            temp = 0.8 # Hoger voor poëtische creativiteit
         else:
             temp = 0.2 # Standaard
 
