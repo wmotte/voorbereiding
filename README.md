@@ -2,7 +2,7 @@
 
 # Preekvoorbereiding
 
-**Een door een LLM (taalmodel) ondersteund hulpmiddel voor protestantse preekvoorbereiding (PKN).**
+**Een LLM-ondersteund hulpmiddel voor protestantse preekvoorbereiding (PKN).**
 
 **Let op: Dit materiaal is bedoeld ter inspiratie en als 'feedback' op eigen werk. De uiteindelijke verantwoordelijkheid voor de preek ligt bij de predikant zelf.**
 
@@ -28,10 +28,10 @@ Dit project combineert diepgaande **contextanalyse** (hoorders, samenleving) met
 
 Inspiratie voor dit hulpmiddel is geput uit **"De Eerste Dag"**, de officiële, oecumenische handreiking van de Raad van Kerken in Nederland. "De Eerste Dag" ondersteunt bij de voorbereiding van de wekelijkse eredienst, aansluitend bij het kerkelijk jaar en de liturgie. Het biedt commentaren bij de lezingen, suggesties voor de liturgie, gebeden en toepassingen voor kinderwerk, en helpt bij het structureren van de dienst (de "orde").
 
-Met dit digitale hulpmiddel wordt die voorbereiding veel dynamischer én contextueler. De voorganger kan specifiek opgeven om welke hoorders het gaat in welke tijd en op welke plaats. Ook kan hij of zij nu zelf bepalen welke onderdelen van belang zijn in de voorbereiding. De output van de tool biedt de mogelijkheid om de eigen exegesetische inzichten en eigen homiletische structuur te toetsen. Sommigen willen meer informatie over interactieve momenten (zoals het kindermoment), terwijl weer anderen geholpen zijn bij de identificatie van relevante kunst- en cultuurartefacten. 
+Met dit digitale hulpmiddel wordt die voorbereiding veel dynamischer én contextueler. De voorganger kan specifiek aangeven wie de hoorders zijn, in welke tijd en op welke plaats. Ook kan hij of zij nu zelf bepalen welke onderdelen van belang zijn in de voorbereiding. De output van de tool biedt de mogelijkheid om de eigen exegesetische inzichten en eigen homiletische structuur te toetsen. Sommigen willen meer informatie over interactieve momenten (zoals het kindermoment), terwijl weer anderen geholpen zijn bij de identificatie van relevante kunst- en cultuurartefacten. 
 Een enkeling zoekt inspiratie in *hypothetische* preekschetsen van belangrijke historische voorgangers; de tool demonstreert hoe dat eruit zou kunnen zien (op basis van een drietal theologen). 
 
-Het belangrijkste element is en blijft de contextuele verdiscontering in de verschillende voorbereidende stappen. 
+Het belangrijkste element is en blijft de contextuele verwerking in de verschillende voorbereidende stappen. 
 
 Friedrich Niebergall stelde ooit: *"Menige preek geeft antwoorden op vragen die niemand stelt, en gaat niet in op vragen die iedereen stelt."* 
 
@@ -43,12 +43,24 @@ Dit project helpt die valkuil te vermijden door twee werelden te verbinden met b
 
 ## 🛠 Installatie & Setup
 
+In theorie is deze tool te gebruiken met elk hedendaags taalmodel. Om betrouwbare output te genereren, is enige vorm van 'grounding' handig.
+Om die reden is gekozen voor Google Gemini. Dit valt eenvoudig aan te passen. Er zijn diverse open-weights taalmodellen als alternatief beschikbaar (Kimi, DeepSeek, etc.).
+Deze zijn echter niet getest.
+
 ### 1. Vereisten
 *   Python 3.8 of hoger
 *   Een **Google Gemini API Key** (via Google AI Studio)
 
-### 2. Installatie
+### 2. Installatie (Aanbevolen: met virtuele omgeving)
 ```bash
+# Maak een virtuele omgeving aan
+python3 -m venv venv
+
+# Activeer de omgeving
+source venv/bin/activate  # macOS/Linux
+# OF
+venv\Scripts\activate  # Windows
+
 # Installeer dependencies
 pip install google-genai requests beautifulsoup4 tiktoken
 ```
@@ -59,30 +71,53 @@ Stel je API key in als environment variable of via een `.env` bestand:
 GEMINI_API_KEY=jouw-api-key-hier
 ```
 
+### 4. Troubleshooting
+**Probleem:** `ModuleNotFoundError` bij `import google.genai`
+**Oplossing:** Controleer of je `google-genai` hebt geïnstalleerd (niet `google-generativeai`).
+
+**Probleem:** API Key niet gevonden
+**Oplossing:** Zorg dat je `.env` bestand in dezelfde map staat als je scripts, of export de variabele handmatig: `export GEMINI_API_KEY="jouw-key"`.
+
+**Probleem:** Rate limit errors
+**Oplossing:** Het script heeft ingebouwde retry-logica, maar bij frequente errors kun je de API quota verhogen in Google AI Studio.
+
+### 💰 Kosten & Privacy
+*   **API Kosten:** Het gebruik van Google Gemini API wordt per token in rekening gebracht. Een volledige analyse (~85.000 tokens) kost ongeveer €0,10-€0,50, afhankelijk van het gekozen model.
+*   **Privacy:** Bijbelteksten en gegenereerde analyses worden naar Google's API gestuurd. Voer geen privacygevoelige informatie in.
+*   **Alternatief:** Voor lokaal gebruik zonder externe API-aanroepen zijn open-weights modellen een goed alternatief.
+
 ---
 
 ## 🚀 Stappenplan Gebruik
 
 ### Stap 1: Basisanalyse
 ```bash
-python contextduiding.py
+python 00__contextduiding.py
 ```
-*   Invoer van Plaatsnaam, Gemeente en Datum. Genereert de basiscontext (01-07) en `00_meta.json`.
+*   Voer Plaatsnaam, Gemeente en Datum in. Genereert de basiscontext (01-07) en `00_meta.json`.
 
 ### Stap 2: Verdieping
 ```bash
-python verdieping.py
+python 01__verdieping.py
 ```
 *   Kies een eerdere analyse. Haalt bijbelteksten op en genereert de theologische verdieping (08-15). Alle JSON-bestanden worden aan het einde gecombineerd in `combined_output.json`.
 
 ### Stap 3: Resultaat
 Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
 
+### 📸 Voorbeeld Output
+Hieronder zie je een voorbeeld van de gegenereerde contextanalyse voor een gemeente op een specifieke zondag:
+
+**02 Sociaal-maatschappelijk:**
+> "Utrecht Noordwest is een divers stadsdeel met 23.000 inwoners, waarvan 42% een migratieachtergrond heeft..."
+
+**Bekijk de volledige voorbeeldoutput:** [https://wmotte.github.io/voorbereiding/](https://wmotte.github.io/voorbereiding/)
+
 ---
 
 ## 📊 Overzicht van de Analyses & Methodiek
 
-De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde homiletische en liturgische methodieken. Hieronder volgt een uitleg per onderdeel, in de volgorde waarin ze worden gegenereerd. Voor diepgaande studie zijn de achtergrondartikelen beschikbaar in de `misc/` map.
+De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde homiletische en liturgische methodieken. Hieronder volgt een uitleg per onderdeel, in de volgorde waarin ze worden gegenereerd. Voor meer informatie zijn er een aantal achtergrondartikelen beschikbaar in de `misc/` map.
 
 ### 00 Meta-data
 `00_meta.json`: Centrale opslag van user input en geverifieerd adres.
@@ -101,7 +136,7 @@ De analyse van de hoorders en hun context volgt de methode uit *Tekst in Context
 📄 **[Lees de volledige methodiekbeschrijving](misc/De_Leede_Stark__Tekst_in_Context.md)**
 
 ### 06 Wereldnieuws
-Schokkend nieuws van de afgelopen dagen gerelateerd aan de zondag, om de actualiteit te verbinden met de theologie.
+Relevant actueel nieuws van de afgelopen dagen gerelateerd aan de zondag, om de actualiteit te verbinden met de theologie.
 
 ### 07 Politieke Oriëntatie
 Stemgedrag en politieke cultuur in de regio.
@@ -184,7 +219,7 @@ Vijf totaal verschillende opties voor een interactief en creatief kindermoment:
 *   **Optie 5: De Ernstige Toon:** Ingetogen benadering die kinderen serieus neemt.
 
 ### 16 Moment van Bezinning
-Een specifieke vorm van gebed of meditatie die inzinking biedt binnen de eredienst. Dit moment is bedoeld voor reflectie, stilte en persoonlijke benadering van God.
+Een specifieke vorm van gebed of meditatie die inkeer biedt binnen de eredienst. Dit moment is bedoeld voor reflectie, stilte en persoonlijke benadering van God.
 *   **Kenmerken:** Korte, rustgevende teksten, ruimte voor stilte, nadruk op Gods nabijheid en troost.
 *   **Functie:** Ruimte creëren voor innerlijke rust en bezinning in het drukke leven.
 
@@ -213,10 +248,28 @@ python validate_json.py output/Sessie_Naam/combined_output.json
 ```
 
 ### Token-teller (`count_tokens.py`)
-Telt het aantal tokens in de gegenereerde bestanden om inzicht te krijgen in de omvang van de analyse (gemiddeld ~50.000 tokens voor een volledig dossier, opgeslagen in `combined_output.json`).
+Telt het aantal tokens in de gegenereerde bestanden om inzicht te krijgen in de omvang van de analyse (gemiddeld ~85.000 tokens voor een volledig dossier, opgeslagen in `combined_output.json`).
 ```bash
 python count_tokens.py --file output/Sessie_Naam/combined_output.json
 ```
+
+---
+
+## ❓ Veelgestelde Vragen (FAQ)
+
+**Q: Hoelang duurt een volledige analyse?**
+A: Een basisanalyse (contextduiding.py) duurt 5-10 minuten. De verdieping (verdieping.py) neemt 15-25 minuten in beslag, afhankelijk van het aantal geselecteerde onderdelen.
+
+**Q: Kan ik het systeem offline gebruiken?**
+A: Nee, het systeem vereist een actieve internetverbinding voor de Gemini API. Voor offline gebruik kun je overstappen naar lokale modellen zoals Ollama met DeepSeek.
+
+**Q: Welke bijbelvertalingen worden ondersteund?**
+A: De tool haalt automatisch de NBV21 en Naardense Bijbel op via online bronnen.
+
+**Q: Kan ik eigen methodieken toevoegen?**
+A: Ja, het systeem is modulair opgezet. Bekijk de code in `01__verdieping.py` voor voorbeelden van hoe analyses worden gestructureerd.
+
+---
 
 ## 📚 Literatuur & Bronnen
 
@@ -230,12 +283,23 @@ python count_tokens.py --file output/Sessie_Naam/combined_output.json
 
 ---
 
+## 🤝 Bijdragen
+
+Suggesties en verbeteringen zijn welkom!
+*   **Issues:** Meld bugs of feature requests via [GitHub Issues](https://github.com/wmotte/voorbereiding/issues)
+*   **Pull Requests:** Fork het project en dien een PR in
+*   **Theologische feedback:** Heb je expertise in homiletiek of liturgie en zie je verbeteringsmogelijkheden? Laat het weten!
+
+---
+
 ## ⚠️ Beperkingen & Disclaimer
 
 **Dit is een assistent, geen predikant.**
 
 *   **Verificatie:** Het taalmodel baseert zich op online informatie. Controleer cruciale feiten, zeker bij kerkelijke fusiegemeenten of specifieke statistieken.
-*   **Hallucinaties:** Hoewel het taalmodel wordt gedwongen tot bronverificatie (Google Search grounding), kunnen er onjuistheden voorkomen in kunstsuggesties of lokale nieuwsdetails.
+*   **Hallucinaties:** Hoewel het taalmodel wordt gedwongen tot bronverificatie (Google Search grounding), kunnen er onjuistheden voorkomen. Bijvoorbeeld: kunstsuggesties kunnen verwijzen naar niet-bestaande schilderijen. Controleer altijd de bronnen.
+*   **Lokale kennis:** Bij fusiegemeenten kan de tool de verkeerde kerk selecteren. Verifieer altijd het adres in `00_meta.json`.
+*   **Theologische nuance:** De tool geeft aanzetten, geen pasklare preken. De voorganger blijft verantwoordelijk voor de theologische lijn en pastorale afweging.
 *   **Methodiek:** De analyses zijn aanzetten. Het eigenlijke werk — de ontmoeting tussen Woord, voorganger en gemeente — blijft een fysiek gebeuren.
 
 ---
