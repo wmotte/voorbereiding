@@ -139,9 +139,9 @@ De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde h
 | 14 | **Gebeden** | Standaard (liturgisch), Profetisch (Brueggemann), Dialogisch (Dumas), en Eenvoudige B1-niveau gebeden. |
 | 15 | **Kindermoment** | Vijf totaal verschillende opties (Klassiek, Doe-het-zelf, Gekke Twist, Bizarre Inval, Ernstig). |
 | 16 | **Moment van Bezinning** | Een specifieke vorm van gebed of meditatie die inkeer biedt binnen de eredienst. |
-| 17 | **Preekschets Sölle** | Preek in de stijl van Dorothee Sölle: mystiek en politiek verzet. |
-| 18 | **Preekschets Jüngel** | Preek in de stijl van Eberhard Jüngel: paradox en evangelische doorbraak. |
-| 19 | **Preekschets Noordmans** | Preek in de stijl van Oepke Noordmans: trinitarisch en gericht op 'herschepping' door de Heilige Geest. |
+| 17 | **Preekschets Sölle** | Preekschets in de stijl van Dorothee Sölle: mystiek en politiek verzet. |
+| 18 | **Preekschets Jüngel** | Preekschets in de stijl van Eberhard Jüngel: paradox en evangelische doorbraak. |
+| 19 | **Preekschets Noordmans** | Preekschets in de stijl van Oepke Noordmans: trinitarisch en gericht op 'herschepping' door de Heilige Geest. |
 
 ---
 
