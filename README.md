@@ -119,6 +119,32 @@ Hieronder zie je een voorbeeld van de gegenereerde contextanalyse voor een gemee
 
 De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde homiletische en liturgische methodieken. Hieronder volgt een uitleg per onderdeel, in de volgorde waarin ze worden gegenereerd. Voor meer informatie zijn er een aantal achtergrondartikelen beschikbaar in de `misc/` map.
 
+| Nr | Naam | Omschrijving |
+|:---|:---|:---|
+| 00 | **Meta-data** | `00_meta.json`: Centrale opslag van user input en geverifieerd adres. |
+| 01 | **Liturgische Context** | Zondag van het jaar, lezingen, liturgische kleur en seizoen. |
+| 02 | **Sociaal-maatschappelijk** | Demografie, economie en sociale structuur van de burgerlijke gemeente. |
+| 03 | **Waardenoriëntatie** | De "Vijf V's" en Motivaction Mentality-groepen. |
+| 04 | **Geloofsoriëntatie** | Verhouding tussen officieel geloof en het geleefde geloof van hoorders. |
+| 05 | **Synthese** | Homiletische aanbevelingen (toon, taal, beelden). |
+| 06 | **Wereldnieuws** | Relevant actueel nieuws van de afgelopen dagen gerelateerd aan de zondag. |
+| 07 | **Politieke Oriëntatie** | Stemgedrag en politieke cultuur in de regio. |
+| 08a | **Exegese** | Tekstkritiek, historische context en theologische lijnen (zoekmodellen Snoek). |
+| 08b | **Liedsuggesties** | Database-analyse met liederen uit Liedboek, Weerklank, Op Toonhoogte, Hemelhoog. |
+| 09 | **Kunst & Cultuur** | Beelden, film en muziek bij de lezingen (incl. bronverificatie). |
+| 10 | **Focus & Functie** | De kernboodschap en het beoogde effect van de preek. |
+| 11 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
+| 12 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
+| 13 | **Homiletische Analyse** | Preekschets (Lowry; narratief), elementen (Chapell; FCF & Christocentrisch) en inductie (Buttrick; Moves & Structures). |
+| 14 | **Gebeden** | Standaard (liturgisch), Profetisch (Brueggemann), Dialogisch (Dumas), en Eenvoudige B1-niveau gebeden. |
+| 15 | **Kindermoment** | Vijf totaal verschillende opties (Klassiek, Doe-het-zelf, Gekke Twist, Bizarre Inval, Ernstig). |
+| 16 | **Moment van Bezinning** | Een specifieke vorm van gebed of meditatie die inkeer biedt binnen de eredienst. |
+| 17 | **Preekschets Sölle** | Preek in de stijl van Dorothee Sölle: mystiek en politiek verzet. |
+| 18 | **Preekschets Jüngel** | Preek in de stijl van Eberhard Jüngel: paradox en evangelische doorbraak. |
+| 19 | **Preekschets Noordmans** | Preek in de stijl van Oepke Noordmans: trinitarisch en gericht op 'herschepping' door de Heilige Geest. |
+
+---
+
 ### 00 Meta-data
 `00_meta.json`: Centrale opslag van user input en geverifieerd adres.
 
