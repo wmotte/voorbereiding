@@ -4,6 +4,8 @@
 
 **Een door een LLM (taalmodel) ondersteund hulpmiddel voor protestantse preekvoorbereiding (PKN).**
 
+**Let op: Dit materiaal is bedoeld ter inspiratie en als 'feedback' op eigen werk. De uiteindelijke verantwoordelijkheid voor de preek ligt bij de predikant zelf.**
+
 Bekijk de online webviewer met voorbeelddata: [https://wmotte.github.io/voorbereiding/](https://wmotte.github.io/voorbereiding/)
 
 Dit project combineert diepgaande **contextanalyse** (hoorders, samenleving) met concrete **liturgische bouwstenen** (exegese, preekschets, gebeden). Het doel is niet om de preek te *schrijven*, maar om de predikant te voorzien van een rijke, contextuele basis.
@@ -136,14 +138,20 @@ De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaa
 5.  **ZÓ! (YEAH!)**: Anticiperen op de gevolgen (het gewone leven).
 📄 **[Lees de diepte-analyse van Lowry's methode](misc/Lowrys_Homiletical_Plot.md)**
 
-### 6. Preekstructuur: David Buttricks Moves & Structures
+### 6. Preekstructuur: Oepke Noordmans
+De homiletiek van Oepke Noordmans biedt een unieke benadering gebaseerd op de leer van de Drie-eenheid en het begrip 'herschepping'. Zijn methode richt zich op het 'scheeftrekken' van het dogma om het tot leven te brengen in de concrete situatie van de gemeente.
+*   **Centraal thema:** De rol van de Heilige Geest in het creëren van een nieuwe werkelijkheid (herschepping) door de prediking.
+*   **Structuur:** "Scheppen is scheiden" - een preek die zich toespitst op één punt en de Geest laat werken door te onderscheiden.
+📄 **[Lees meer over de homiletiek van Noordmans](misc/Noordmans_Homiletiek.md)**
+
+### 7. Preekstructuur: David Buttricks Moves & Structures
 Naast Lowry's narratieve plot ondersteunt de tool ook de "Moves and Structures" methode van David Buttrick.
 *   **Moves:** Preken als een reeks taalbewegingen in plaats van statische punten.
 *   **Fenomenologie:** Focus op hoe taal werkt in het bewustzijn van de hoorder.
 *   **Structuur:** Zorgvuldige opbouw van openingsstatement, ontwikkeling en afsluiting per move.
 📄 **[Lees de volledige methodiek van Buttrick](misc/Buttricks_Moves_and_Structures.md)**
 
-### 7. Liturgische Gebeden (Drie Stijlen)
+### 8. Liturgische Gebeden (Drie Stijlen)
 De tool biedt drie verschillende benaderingen voor de gebeden, elk met een eigen theologische en stilistische kleur:
 
 #### A. Standaard Liturgisch
@@ -159,6 +167,16 @@ Gebaseerd op de theologie van *The Prophetic Imagination*. Deze gebeden doorbrek
 Gebaseerd op de "theologie van de realiteit" van André Dumas. Deze gebeden zijn een directe, soms stroeve dialoog met God ("Brusquerie").
 *   **Kenmerken:** Geen vrome maskers, "stijve knieën" (moderne autonomie), en ethische verantwoordelijkheid ("Exaucer Dieu": God verhoren).
 📄 **[Lees de analyse van Dumas' dialogische stijl](misc/Andre_Dumas_Dialogisch_Bidden.md)**
+
+#### D. Eenvoudige B1-niveau Gebeden
+Voor gemeenten of hoorders met beperkte kennis van de godsdienstige taal biedt het programma ook eenvoudige gebeden op B1-taalniveau (Europees Referentiekader voor Talen). Deze gebeden gebruiken duidelijke taal en eenvoudige structuren terwijl ze theologisch solide blijven.
+*   **Kenmerken:** Toegankelijke taal, korte zinnen, concrete beelden en duidelijke christelijke inhoud.
+*   **Doel:** Toegankelijk maken van gebed voor nieuwkomers, taalstudenten of mensen met beperkte geletterdheid.
+
+#### E. Moment van Bezinning
+Een specifieke vorm van gebed of meditatie die inzinking biedt binnen de eredienst. Dit moment is bedoeld voor reflectie, stilte en persoonlijke benadering van God.
+*   **Kenmerken:** Korte, rustgevende teksten, ruimte voor stilte, nadruk op Gods nabijheid en troost.
+*   **Functie:** Ruimte creëren voor innerlijke rust en bezinning in het drukke leven.
 
 ---
 
