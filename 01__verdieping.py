@@ -1091,6 +1091,11 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
     # Laad prompts
     base_prompt = load_prompt("base_prompt_verdieping.md", user_input)
 
+    # Vraag de gebruiker welke optionele onderdelen mee te nemen
+    print("\nOPTIONELE ONDERDELEN:")
+    wil_kindermoment = input("  Wil je een Kindermoment genereren? (j/n): ").strip().lower() == 'j'
+    wil_bezinningsmoment = input("  Wil je een Moment van Bezinning genereren? (j/n): ").strip().lower() == 'j'
+
     # Analyses uitvoeren
     print("\n" + "=" * 60)
     print(f"VERDIEPING STARTEN MET MODEL: {MODEL_NAME}")
@@ -1108,11 +1113,19 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
         ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
         ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
-        ("15_bezinningsmoment", "Moment van Bezinning"),
+    ]
+
+    if wil_kindermoment:
+        analysis_definitions.append(("15_kindermoment", "Kindermoment"))
+
+    if wil_bezinningsmoment:
+        analysis_definitions.append(("15_bezinningsmoment", "Moment van Bezinning"))
+
+    analysis_definitions.extend([
         ("16_preek_solle", "Preek in de stijl van Sölle"),
         ("17_preek_jungel", "Preek in de stijl van Jüngel"),
         ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
-    ]
+    ])
 
     if args.exegese:
         print("\nINFO: Alleen exegese wordt uitgevoerd (--exegese)")
