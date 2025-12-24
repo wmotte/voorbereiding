@@ -17,9 +17,9 @@ Dit project combineert diepgaande **contextanalyse** (hoorders, samenleving) met
 2. [Installatie & Setup](#-installatie--setup)
 3. [Bijbelvertalingen (Naardense & NBV21)](#-bijbelvertalingen)
 4. [Stappenplan Gebruik](#-stappenplan-gebruik)
-5. [Overzicht van de Analyses](#-overzicht-van-de-analyses)
-6. [Methodiek & Achtergrond](#-methodiek--achtergrond)
-7. [Aanvullende Tools](#-aanvullende-tools)
+5. [Overzicht van de Analyses & Methodiek](#-overzicht-van-de-analyses--methodiek)
+6. [Aanvullende Tools](#-aanvullende-tools)
+7. [Literatuur & Bronnen](#-literatuur--bronnen)
 8. [Beperkingen & Disclaimer](#-beperkingen--disclaimer)
 
 ---
@@ -73,66 +73,59 @@ Open `combined_output.json` of gebruik de webviewer in de `docs/` map.
 
 ---
 
-## 📊 Overzicht van de Analyses
+## 📊 Overzicht van de Analyses & Methodiek
 
-| Nr | Naam | Omschrijving |
-|:---|:---|:---|
-| 00 | **Meta-data** | `00_meta.json`: Centrale opslag van user input en geverifieerd adres. |
-| 01 | **Liturgische Context** | Zondag van het jaar, lezingen, kleur, liedsuggesties (Liedboek 2013). |
-| 02 | **Sociaal-maatschappelijk** | Demografie, economie en sociale structuur van de burgerlijke gemeente. |
-| 03 | **Waardenoriëntatie** | De "Vijf V's" en Motivaction Mentality-groepen. |
-| 04 | **Geloofsoriëntatie** | Verhouding tussen officieel geloof en het geleefde geloof van hoorders. |
-| 05 | **Synthese** | Homiletische aanbevelingen (toon, taal, beelden). |
-| 06 | **Wereldnieuws** | Schokkend nieuws van de afgelopen dagen gerelateerd aan de zondag. |
-| 07 | **Politieke Oriëntatie** | Stemgedrag en politieke cultuur in de regio. |
-| 08 | **Exegese** | Tekstkritiek, historische context en theologische lijnen. |
-| 09 | **Kunst & Cultuur** | Beelden, film en muziek bij de lezingen (incl. bronverificatie). |
-| 10 | **Focus & Functie** | De kernboodschap en het beoogde effect van de preek. |
-| 11 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
-| 12 | **Representatieve Hoorders** | Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking. |
-| 13 | **Homiletische Analyse** | Preekschets (Lowry; narratief), elementen (Chapell; FCF & Christocentrisch) en inductie (Buttrick; Moves & Structures). |
-| 14 | **Gebeden** | Standaard (liturgisch), Profetisch (Brueggemann), Dialogisch (Dumas), en Eenvoudige B1-niveau gebeden. |
-| 15 | **Kindermoment** | Drie creatieve opties (Klassiek, Actief, Vreemd) voor interactie met kinderen. |
-| 16 | **Moment van Bezinning** | Een specifieke vorm van gebed of meditatie die inzinking biedt binnen de eredienst. |
-| 17 | **Preekschets Sölle** | Preek in de stijl van Dorothee Sölle: mystiek en politiek verzet. |
-| 18 | **Preekschets Jüngel** | Preek in de stijl van Eberhard Jüngel: paradox en evangelische doorbraak. |
-| 19 | **Preekschets Noordmans** | Preek in de stijl van Oepke Noordmans: trinitarisch en gericht op 'herschepping' door de Heilige Geest. |
+De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde homiletische en liturgische methodieken. Hieronder volgt een uitleg per onderdeel, in de volgorde waarin ze worden gegenereerd. Voor diepgaande studie zijn de achtergrondartikelen beschikbaar in de `misc/` map.
 
----
+### 00 Meta-data
+`00_meta.json`: Centrale opslag van user input en geverifieerd adres.
 
-## 🧠 Methodiek & Achtergrond
+### 01 Liturgische Context
+Zondag van het jaar, lezingen, kleur, liedsuggesties (Liedboek 2013).
 
-De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde homiletische en liturgische methodieken. Voor diepgaande studie zijn de achtergrondartikelen beschikbaar in de `misc/` map.
-
-### 1. Contextanalyse: De Leede & Stark
+### 02 t/m 05 Contextanalyse: De Leede & Stark
 De analyse van de hoorders en hun context volgt de methode uit *Tekst in Context*. We kijken naar vier lagen:
-*   **Sociaal-maatschappelijk:** De feitelijke leefwereld.
-*   **Waardenoriëntatie:** Wat drijft hen? (De vijf V's).
-*   **Geloofsoriëntatie:** Hoe verhoudt men zich tot God en zingeving?
-*   **Interpretatie:** De synthese van deze waarnemingen.
+
+*   **02 Sociaal-maatschappelijk:** De feitelijke leefwereld. Demografie, economie en sociale structuur van de burgerlijke gemeente.
+*   **03 Waardenoriëntatie:** Wat drijft hen? De "Vijf V's" en Motivaction Mentality-groepen.
+*   **04 Geloofsoriëntatie:** Hoe verhoudt men zich tot God en zingeving? Verhouding tussen officieel geloof en het geleefde geloof van hoorders.
+*   **05 Synthese:** Homiletische aanbevelingen (toon, taal, beelden) op basis van de voorgaande lagen.
+
 📄 **[Lees de volledige methodiekbeschrijving](misc/De_Leede_Stark__Tekst_in_Context.md)**
 
-### 2. Exegese: Zoekmodellen (Hans Snoek)
-Het script analyseert de Schrifttekst aan de hand van de modellen uit *Een huis om in te wonen*:
+### 06 Wereldnieuws
+Schokkend nieuws van de afgelopen dagen gerelateerd aan de zondag, om de actualiteit te verbinden met de theologie.
+
+### 07 Politieke Oriëntatie
+Stemgedrag en politieke cultuur in de regio.
+
+### 08 Exegese: Zoekmodellen (Hans Snoek)
+Tekstkritiek, historische context en theologische lijnen. Het script analyseert de Schrifttekst aan de hand van de modellen uit *Een huis om in te wonen*:
 *   **Godsbeelden:** Werkwoordelijk (bevrijden), metaforisch (herder) en eigenschappen (heilig vs. barmhartig).
 *   **Mensbeelden:** De mens in verhouding tot God (aanbidding) en de wereld (zorg voor de naaste).
 *   **Jezusbeelden:** Van achteren (Joods), van boven (Zoon van God), van beneden (mens) en van voren (Koninkrijk).
 
-### 3. Homiletische Brug: Bryan Chapell
-De vertaalslag van exegese naar preek wordt gemaakt met de inzichten uit *Christ-Centered Preaching*:
-*   **Fallen Condition Focus (FCF):** De gemeenschappelijke menselijke gebrokenheid die de tekst adresseert en de genade noodzakelijk maakt.
-*   **Christocentrische Duiding:** Hoe onthult de tekst Gods verlossingsplan? (Predictive, Preparatory, Reflective, Resultant).
-*   **Motivatie:** De "chemie van het hart": heiliging als dankbare reactie op genade, niet als voorwaarde.
-📄 **[Lees de volledige methodiek van Chapell](misc/Bryan_Chapells_Expositie_Homiletiek.md)**
+### 09 Kunst & Cultuur
+Beelden, film en muziek bij de lezingen (incl. bronverificatie).
 
-### 4. Focus & Functie
+### 10 Focus & Functie
 Om structuur aan te brengen, wordt onderscheid gemaakt tussen de inhoudelijke kern en het beoogde doel:
 *   **Focus:** Wat wil je zeggen? (De ene zin).
 *   **Functie:** Wat moet de preek doen? (Het effect op de hoorder).
+
 📄 **[Lees meer over Focus & Functie](misc/Focus_en_Functie.md)**
 
-### 5. Preekstructuur: Lowry's Homiletical Plot
-De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaats van constructie) in five stadia:
+### 11 Kalender
+Gedenkdagen, heiligen, astronomie en weer.
+
+### 12 Representatieve Hoorders
+Vijf fictieve personages (16-80 jaar) als spiegel voor de prediking.
+
+### 13 Homiletische Analyse
+Een combinatie van drie invloedrijke homiletische methodieken:
+
+#### A. Homiletical Plot (Eugene Lowry)
+De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaats van constructie) in vijf stadia:
 1.  **HÈ? (OOPS!)**: Verstoren van het evenwicht (de vraag/jeuk).
 2.  **OEI... (UGH!)**: Analyseren van de discrepantie (waarom is het probleem zo hardnekkig?).
 3.  **AHA! (AHA!)**: Onthullen van de sleutel (de verrassing uit de tekst).
@@ -140,21 +133,21 @@ De preek wordt vormgegeven als een narratieve reis (creatie/ontwikkeling in plaa
 5.  **ZÓ! (YEAH!)**: Anticiperen op de gevolgen (het gewone leven).
 📄 **[Lees de diepte-analyse van Lowry's methode](misc/Lowrys_Homiletical_Plot.md)**
 
-### 6. Preekstructuur: Oepke Noordmans
-De homiletiek van Oepke Noordmans biedt een unieke benadering gebaseerd op de leer van de Drie-eenheid en het begrip 'herschepping'. Zijn methode richt zich op het 'scheeftrekken' van het dogma om het tot leven te brengen in de concrete situatie van de gemeente.
-*   **Centraal thema:** De rol van de Heilige Geest in het creëren van een nieuwe werkelijkheid (herschepping) door de prediking.
-*   **Structuur:** "Scheppen is scheiden" - een preek die zich toespitst op één punt en de Geest laat werken door te onderscheiden.
-📄 **[Lees meer over de homiletiek van Noordmans](misc/Noordmans_Homiletiek.md)**
+#### B. Homiletische Brug (Bryan Chapell)
+De vertaalslag van exegese naar preek wordt gemaakt met de inzichten uit *Christ-Centered Preaching*:
+*   **Fallen Condition Focus (FCF):** De gemeenschappelijke menselijke gebrokenheid die de tekst adresseert en de genade noodzakelijk maakt.
+*   **Christocentrische Duiding:** Hoe onthult de tekst Gods verlossingsplan? (Predictive, Preparatory, Reflective, Resultant).
+*   **Motivatie:** De "chemie van het hart": heiliging als dankbare reactie op genade, niet als voorwaarde.
+📄 **[Lees de volledige methodiek van Chapell](misc/Bryan_Chapells_Expositie_Homiletiek.md)**
 
-### 7. Preekstructuur: David Buttricks Moves & Structures
-Naast Lowry's narratieve plot ondersteunt de tool ook de "Moves and Structures" methode van David Buttrick.
+#### C. Moves & Structures (David Buttrick)
 *   **Moves:** Preken als een reeks taalbewegingen in plaats van statische punten.
 *   **Fenomenologie:** Focus op hoe taal werkt in het bewustzijn van de hoorder.
 *   **Structuur:** Zorgvuldige opbouw van openingsstatement, ontwikkeling en afsluiting per move.
 📄 **[Lees de volledige methodiek van Buttrick](misc/Buttricks_Moves_and_Structures.md)**
 
-### 8. Liturgische Gebeden (Drie Stijlen)
-De tool biedt drie verschillende benaderingen voor de gebeden, elk met een eigen theologische en stilistische kleur:
+### 14 Gebeden
+De tool biedt vier verschillende benaderingen voor de gebeden, elk met een eigen theologische en stilistische kleur:
 
 #### A. Standaard Liturgisch
 Volgt de klassieke en protestantse (PKN) traditie, met oog voor de specifieke functie van elk gebedsmoment (Kyrie, Epiclese, Voorbeden).
@@ -171,14 +164,29 @@ Gebaseerd op de "theologie van de realiteit" van André Dumas. Deze gebeden zijn
 📄 **[Lees de analyse van Dumas' dialogische stijl](misc/Andre_Dumas_Dialogisch_Bidden.md)**
 
 #### D. Eenvoudige B1-niveau Gebeden
-Voor gemeenten of hoorders met beperkte kennis van de godsdienstige taal biedt het programma ook eenvoudige gebeden op B1-taalniveau (Europees Referentiekader voor Talen). Deze gebeden gebruiken duidelijke taal en eenvoudige structuren terwijl ze theologisch solide blijven.
+Voor gemeenten of hoorders met beperkte kennis van de godsdienstige taal biedt het programma ook eenvoudige gebeden op B1-taalniveau (Europees Referentiekader voor Talen).
 *   **Kenmerken:** Toegankelijke taal, korte zinnen, concrete beelden en duidelijke christelijke inhoud.
 *   **Doel:** Toegankelijk maken van gebed voor nieuwkomers, taalstudenten of mensen met beperkte geletterdheid.
 
-#### E. Moment van Bezinning
+### 15 Kindermoment
+Drie creatieve opties (Klassiek, Actief, Vreemd) voor interactie met kinderen.
+
+### 16 Moment van Bezinning
 Een specifieke vorm van gebed of meditatie die inzinking biedt binnen de eredienst. Dit moment is bedoeld voor reflectie, stilte en persoonlijke benadering van God.
 *   **Kenmerken:** Korte, rustgevende teksten, ruimte voor stilte, nadruk op Gods nabijheid en troost.
 *   **Functie:** Ruimte creëren voor innerlijke rust en bezinning in het drukke leven.
+
+### 17 Preekschets in de geest van Sölle
+Preekschets in de stijl van Dorothee Sölle: mystiek en politiek verzet.
+
+### 18 Preekschets in de geest van Jüngel
+Preekschets in de stijl van Eberhard Jüngel: paradox en evangelische doorbraak.
+
+### 19 Preekschets in de geest van Noordmans
+Preekschets in de stijl van Oepke Noordmans. Zijn homiletiek biedt een unieke benadering gebaseerd op de leer van de Drie-eenheid en het begrip 'herschepping'.
+*   **Centraal thema:** De rol van de Heilige Geest in het creëren van een nieuwe werkelijkheid (herschepping) door de prediking.
+*   **Structuur:** "Scheppen is scheiden" - een preek die zich toespitst op één punt en de Geest laat werken door te onderscheiden.
+📄 **[Lees meer over de homiletiek van Noordmans](misc/Noordmans_Homiletiek.md)**
 
 ---
 
