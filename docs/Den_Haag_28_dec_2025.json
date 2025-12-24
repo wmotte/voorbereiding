@@ -3,203 +3,137 @@
     "plaatsnaam": "Den Haag",
     "gemeente": "Kloosterkerk",
     "datum": "28 december 2025",
-    "website": "https://www.kloosterkerk.nl",
     "extra_context": "",
     "adres": "Lange Voorhout 4, 2514 ED Den Haag",
-    "gebouw": "Kloosterkerk"
+    "website": "https://www.kloosterkerk.nl"
   },
   "01_zondag_kerkelijk_jaar": {
     "positie_kerkelijk_jaar": {
-      "zondag_naam": "Zondag na Kerstmis / Feest van de Heilige Familie",
+      "zondag_naam": "1e Zondag na Kerstmis / Feest van de Heilige Familie",
       "liturgische_periode": "Kersttijd",
       "weken_tot_hoofdfeest": "3 dagen na Kerstmis",
       "leesrooster_jaar": "A",
       "dominant_evangelie": "Matteüs"
     },
     "traditionele_naam": {
-      "latijnse_naam": "Sancta Familia",
-      "oorsprong": "Hoewel de zondag onder het octaaf van Kerstmis van oudsher geen specifieke naam had in de strikt protestantse traditie, volgt het oecumenisch leesrooster hier de traditie van de Heilige Familie, ingesteld om de christelijke gezinswaarden te benadrukken.",
+      "latijnse_naam": "Sanctae Familiae",
+      "oorsprong": "Hoewel de zondag onder het octaaf van Kerstmis van oudsher geen specifieke Latijnse naam uit de introïtus heeft zoals de zondagen in de Advent, staat deze dag in de moderne oecumenische traditie bekend als het feest van de Heilige Familie.",
       "nederlandse_vertaling": "Heilige Familie",
       "volksnamen": [
-        "Zondag onder het Octaaf van Kerst",
-        "Feest van de Heilige Familie"
+        "Zondag onder het Octaaf van Kerstmis",
+        "Eerste zondag na Kerst"
       ]
     },
     "bijzondere_zondag_pkn": {
-      "is_bijzonder": true,
-      "naam": "Onschuldige Kinderen",
-      "toelichting": "Op 28 december valt liturgisch de gedachtenis van de Onschuldige Kinderen (Kindermoord te Bethlehem). Omdat deze datum in 2025 op een zondag valt, wordt de thematiek van de vlucht naar Egypte (Matteüs 2) gecombineerd met de viering van de zondag na Kerst."
+      "is_bijzonder": false,
+      "naam": null,
+      "toelichting": "Binnen de PKN-kalender is dit geen specifieke themazondag (zoals Israëlzondag), maar het markeert de voortzetting van de Kersttijd waarin de menswording van Christus in de context van het menselijk leven centraal staat."
     },
     "liturgische_kleur": {
       "kleur": "wit",
-      "symboliek": "Wit is de kleur van de Christusfeesten, symbool voor licht, reinheid, vreugde en de nabijheid van God in de menswording.",
+      "symboliek": "Wit is de kleur van de Christusfeesten, symbool voor licht, reinheid, vreugde en de goddelijke heerlijkheid die in de wereld is gekomen.",
       "praktische_suggesties": [
-        "Wit antependium en witte stola.",
-        "De kerstversiering en de kerstboom zijn nog aanwezig in de kerkruimte.",
-        "Witte bloemschikking met accenten van goud of zilver om het feestelijke karakter van het octaaf te benadrukken."
+        "Wit antependium en witte stola",
+        "Gebruik van de kerstkaars(en) op de liturgische tafel",
+        "Bloemschikking met witte bloemen (bijv. lelies of witte rozen) en groen blijvende takken als symbool voor hoop en eeuwig leven"
       ]
     },
     "lezingen": {
       "eerste_lezing": {
         "referentie": "Sirach 3,2-6.12-14",
-        "boek": "Sirach",
+        "boek": "Sirach (Jezus Sirach)",
         "hoofdstuk": 3,
         "verzen": "2-6.12-14",
-        "thema": "Eerbied voor ouders en de zegen die daarop rust."
+        "thema": "Eerbied voor ouders en de zegen die rust op de zorg voor de naaste in familieverband."
       },
       "epistel": {
         "referentie": "Kolossenzen 3,12-21",
         "boek": "Kolossenzen",
         "hoofdstuk": 3,
         "verzen": "12-21",
-        "thema": "Het nieuwe leven in Christus: bekleed u met liefde en vrede in het huisgezin."
+        "thema": "De christelijke levenswandel binnen de gemeenschap en het gezin: bekleed u met tederheid en geduld."
       },
       "evangelie": {
         "referentie": "Matteüs 2,13-15.19-23",
         "boek": "Matteüs",
         "hoofdstuk": 2,
         "verzen": "13-15.19-23",
-        "thema": "De vlucht naar Egypte en de terugkeer naar Nazaret: Gods bewaring van het kind."
+        "thema": "De vlucht naar Egypte en de terugkeer naar Nazaret: de kwetsbaarheid en goddelijke bescherming van het kind."
       },
       "psalm": {
         "referentie": "Psalm 128",
         "nummer": 128,
-        "verzen": null,
-        "antifoon": "Welzalig is een ieder die de Heer vreest."
+        "verzen": "1-5",
+        "antifoon": "Welzalig ieder die de Heer vreest, die in zijn wegen gaat."
       },
       "alternatieve_lezingen": [
         {
-          "referentie": "1 Samuël 1,20-22.24-28",
-          "reden": "Alternatief voor de eerste lezing in jaar C, maar in jaar A ligt de nadruk op de wijsheidsliteratuur van Sirach."
+          "referentie": "1 Samuel 2:18-20.26",
+          "reden": "Vaak gebruikt in jaar B/C als alternatief voor de kinderjaren van Samuel in relatie tot Jezus."
         }
       ],
-      "thematische_samenhang": "De lezingen cirkelen rond het thema 'huisgezin' en 'geborgenheid'. Terwijl Sirach en Kolossenzen de ethische en spirituele verhoudingen binnen het gezin schetsen, toont het evangelie de kwetsbaarheid en de goddelijke bescherming van het gezin van Jezus in een vijandige world."
+      "thematische_samenhang": "De lezingen verbinden de ethiek van het dagelijks samenleven (Sirach en Kolossenzen) met de concrete, vaak dreigende realiteit waarin het heilige gezin moet overleven (Matteüs). De rode draad is de 'huiselijke kerk' en de bescherming van het kwetsbare leven."
     },
     "thematiek": {
-      "centraal_thema": "Gods leiding in de kwetsbaarheid van het menselijk bestaan.",
+      "centraal_thema": "Geborgenheid en dreiging: het leven van de Messias in de menselijke context.",
       "stemming": "vreugde",
-      "karakter_zondag": "Een mengeling van kerstvreugde en de nuchtere realiteit van het leven (vluchten, zorg voor elkaar, dagelijkse verhoudingen).",
-      "rode_draad_liturgisch_jaar": "De overgang van de geboorte van Christus (Kerst) naar de openbaring van zijn menselijkheid en de consequenties daarvan voor het dagelijks leven.",
+      "karakter_zondag": "Een mengeling van de vreugde over de geboorte van Christus en de nuchtere realiteit van menselijke relaties en politieke dreiging (vlucht naar Egypte).",
+      "rode_draad_liturgisch_jaar": "Deze zondag slaat de brug tussen de geboorte in de stal (Kerst) en de verschijning aan de wereld (Epifanie). Het laat zien dat de menswording niet abstract is, maar plaatsvindt in een concrete familie en geschiedenis.",
       "centrale_geloofsvragen": [
-        "Hoe is God aanwezig in de dreiging en onzekerheid van ons bestaan?",
-        "Wat betekent het om 'bekleed te zijn met liefde' in onze meest nabije relaties?",
-        "Hoe verhoudt de kerstvreugde zich tot het lijden van onschuldigen (vluchtelingen)?"
+        "Hoe krijgt het geloof vorm in de meest nabije relaties?",
+        "Wat betekent het dat de Verlosser als vluchteling zijn leven begon?",
+        "Hoe kunnen wij ons 'bekleden' met de deugden van Christus in het dagelijks leven?"
       ]
     },
     "historische_achtergrond": {
-      "oorsprong_vroege_kerk": "De zondag na Kerstmis staat historisch in het teken van het octaaf (de achtdaagse viering) van Kerst, waarin verschillende aspecten van de menswording worden uitgediept.",
-      "hervormde_traditie": "In de Hervormde traditie lag de nadruk vaak op de nuchtere voortgang van het heilsfeit: de besnijdenis of de vlucht naar Egypte.",
-      "gereformeerde_traditie": "Focus op de gehoorzaamheid van Christus aan de wet en de vervulling van de profetieën (zoals de terugkeer uit Egypte).",
-      "lutherse_traditie": "Sterke nadruk op de liedcultuur rond de kribbe en de troost van de menswording voor de gelovige.",
-      "oecumenische_dimensie": "De keuze voor de Heilige Familie is een relatief jonge oecumenische toevoeging (20e eeuw) die de verbinding legt tussen de incarnatie en de menselijke sociale basisstructuur."
-    },
-    "liedsuggesties": {
-      "_verificatie_opmerking": "Alle liederen zijn geverifieerd via Kerkliedwiki en het Liedboek 2013.",
-      "opening_intocht": [
-        {
-          "nummer": "Psalm 128",
-          "titel": "Welzalig is eenieder die de Heer vreest",
-          "eerste_regel": "Welzalig is eenieder die de Heer vreest",
-          "toelichting": "De psalm van de zondag, passend bij de thematiek van de zegen over het huisgezin."
-        },
-        {
-          "nummer": "Lied 476",
-          "titel": "Nu zijt wellekome",
-          "eerste_regel": "Nu zijt wellekome, Jesu, lieve Heer",
-          "toelichting": "Klassiek kerstlied dat de komst van Christus in onze wereld viert."
-        }
-      ],
-      "kyrie_gloria": [
-        {
-          "nummer": "Lied 299e",
-          "titel": "Kyrie- en Gloriahymne (Ordinarium 'U alle eer')",
-          "eerste_regel": "Heer, ontferm u, Christus, ontferm u, Heer, ontferm u",
-          "toelichting": "Ingetogen Kyrie passend bij de thematiek van de vlucht naar Egypte."
-        },
-        {
-          "nummer": "Lied 305",
-          "titel": "Alle eer en alle glorie",
-          "eerste_regel": "Alle eer en alle glorie",
-          "toelichting": "Feestelijk Gloria voor de kersttijd."
-        }
-      ],
-      "bij_lezingen": [
-        {
-          "nummer": "Lied 512",
-          "titel": "O Jezus, hoe vertrouwd en goed",
-          "eerste_regel": "O Jezus, hoe vertrouwd en goed",
-          "toelichting": "Sluit aan bij de naam van Jezus en de geborgenheid in Hem."
-        },
-        {
-          "nummer": "Lied 473",
-          "titel": "Er is een roos ontloken",
-          "eerste_regel": "Er is een roos ontloken",
-          "toelichting": "Reflectie op de kwetsbare maar krachtige komst van Christus."
-        }
-      ],
-      "credo": [
-        {
-          "nummer": "Lied 340b",
-          "titel": "Ik geloof in God de Vader, de Almachtige",
-          "eerste_regel": "Ik geloof in God de Vader, de Almachtige",
-          "toelichting": "De apostolische geloofsbelijdenis in de toonzetting van Paul Chr. van Westering."
-        }
-      ],
-      "collecte_gaven": [
-        {
-          "nummer": "Lied 365",
-          "titel": "Wij dragen onze gaven",
-          "eerste_regel": "Wij dragen onze gaven",
-          "toelichting": "Lied bij de gaven, passend bij de dienstbaarheid uit Kolossenzen 3."
-        }
-      ],
-      "zending_zegen": [
-        {
-          "nummer": "Lied 425",
-          "titel": "Vervuld van uw zegen",
-          "eerste_regel": "Vervuld van uw zegen gaan wij onze wegen",
-          "toelichting": "Een krachtig lied van uitzending, passend bij de 'wegen' die de Heilige Familie en wij moeten gaan."
-        }
-      ]
+      "oorsprong_vroege_kerk": "De viering van de zondag na Kerst is oud, maar de specifieke focus op de 'Heilige Familie' is een latere liturgische ontwikkeling (19e eeuw) die oecumenisch breed is overgenomen om de menselijke zijde van de incarnatie te benadrukken.",
+      "hervormde_traditie": "In de Hervormde traditie lag de nadruk sterk op de Schriftlezing van de dag, vaak met aandacht voor de opvoeding en de christelijke ethiek in het gezin.",
+      "gereformeerde_traditie": "Binnen de Gereformeerde traditie werd deze zondag vaak benut voor de 'nabetrachting' van Kerstmis, waarbij de betekenis van de komst van Christus voor het verbond en het nageslacht centraal stond.",
+      "lutherse_traditie": "De Lutherse traditie bewaart vaak de rijke liturgische gezangen die de continuïteit van de incarnatie bezingen.",
+      "oecumenische_dimensie": "Het Gemeenschappelijk Leesrooster verenigt hier de protestantse en katholieke tradities door dezelfde teksten te kiezen, wat de eenheid in de viering van de Kersttijd versterkt."
     },
     "praktische_handvatten": {
-      "liturgische_orde_suggestie": "Volg de orde van de hoofddienst (Dienstboek I). Gezien de locatie (Kloosterkerk) is een klassieke opbouw met veel ruimte voor koorzang en stilte passend. Begin met een feestelijke intocht en eindig met een krachtige zegen.",
+      "liturgische_orde_suggestie": "Volg de orde van Dienstboek I. Gezien de locatie (Kloosterkerk) is een klassieke opbouw met aandacht voor de hymnodie passend. Begin met een feestelijk drempelgebed en kyrië-gebed dat de nood van vluchtelingen wereldwijd verbindt met de vlucht naar Egypte.",
       "aanpassingen_periode": [
         {
           "element": "Gloria",
-          "aanpassing": "Wordt gezongen",
-          "reden": "Het is Kersttijd, een periode van grote vreugde."
+          "aanpassing": "Feestelijk gezongen",
+          "reden": "Het is nog steeds Kersttijd (Octaaf)."
         },
         {
           "element": "Halleluja",
-          "aanpassing": "Wordt gezongen voor het Evangelie",
-          "reden": "Feestelijke aankondiging van het goede nieuws."
+          "aanpassing": "Gezongen voor het Evangelie",
+          "reden": "Vreugdevolle periode."
         }
       ],
       "gebedsmotieven": [
-        "Gebed for gezinnen in al hun diversiteit en kwetsbaarheid.",
-        "Voorbede voor vluchtelingen en kinderen die in angst moeten opgroeien (verbinding met de Onschuldige Kinderen).",
-        "Dankzegging voor de menswording van God in een gewoon gezin."
+        "Voor gezinnen in al hun diversiteit en gebrokenheid.",
+        "Voor kinderen die opgroeien in onveilige situaties.",
+        "Voor vluchtelingen die, net als Jezus, moeten vluchten voor geweld.",
+        "Dankzegging voor de menselijke nabijheid van God."
       ],
       "kindernevendienst": {
-        "thema": "Veilig op reis",
+        "thema": "Een veilig huis",
         "suggesties": [
-          "Vertel het verhaal van de vlucht naar Egypte met behulp van een koffer of reistas.",
-          "Laat kinderen tekenen wat zij nodig hebben om zich ergens veilig te voelen."
+          "Gesprek over wat je nodig hebt om je ergens thuis te voelen.",
+          "Knutselopdracht: een 'huis' maken van karton waar de namen van geliefden in staan."
         ]
       },
       "visuele_elementen": [
-        "Projectie van een icoon van de Heilige Familie of een afbeelding van 'De vlucht naar Egypte'.",
-        "Een witte roos in de schikking als symbool voor de Onschuldige Kinderen."
+        "Projectie van een icoon of schilderij van de 'Vlucht naar Egypte' (bijv. Rembrandt of Caravaggio).",
+        "Een opstelling bij de liturgische tafel met een reistas of staf naast de kerstgroep om de reisbeweging te symboliseren."
       ]
     },
     "dagelijks_leesrooster": {
       "week_voorafgaand": [
-        "25 dec: Kerstmis (Lucas 2,1-20)",
-        "26 dec: Stefanus (Handelingen 6,8-10; 7,54-60)",
-        "27 dec: Johannes de Evangelist (1 Johannes 1,1-4)"
+        "22 dec: 1 Samuel 1:1-18 (Hanna's gebed)",
+        "23 dec: 1 Samuel 1:19-28 (Geboorte van Samuel)",
+        "24 dec: 2 Samuel 7:1-16 (Gods belofte aan David)",
+        "25 dec: Kerstmis (Lucas 2:1-20)",
+        "26 dec: Stefanus (Handelingen 6:8-7:2.51-60)",
+        "27 dec: Johannes de Evangelist (1 Johannes 1:1-4)"
       ],
-      "verbinding_zondag": "De week begon met de geboorte (Kerst), ging via het getuigenis van bloed (Stefanus) en woord (Johannes) naar de praktische en gevaarlijke realiteit van het gezin van Jezus op deze zondag."
+      "verbinding_zondag": "De week begon met de belofte van een kind (Samuel/David) en de vervulling in de geboorte van Jezus. Na de getuigenis van de martelaar Stefanus en de apostel Johannes keert de liturgie op zondag terug naar de menselijke, kwetsbare realiteit van het kind Jezus in zijn gezin."
     }
   },
   "02_sociaal_maatschappelijke_context": {
@@ -1056,192 +990,171 @@
       ]
     }
   },
-  "08_exegese": {
+  "08a_exegese": {
     "per_lezing": [
       {
         "referentie": "Sirach 3,2-6.12-14",
         "afbakening_vertaling": {
           "vertaalvergelijking": [
             {
-              "vertaling": "NBV21",
-              "significante_verschillen": "De NBV21 kiest voor een functionele weergave van de verhoudingen: 'eer bewijst' en 'hoogacht'. In vers 3 wordt 'verzoening voor zijn zonden' direct gekoppeld aan het eren van de vader, wat een sterke morele causaliteit suggereert. In vers 14 wordt de zorg voor de vader beschreven als het 'opbouwen wat zonden hebben afgebroken', wat een herstellend karakter geeft aan de ethiek."
-            },
-            {
-              "vertaling": "Naardense Bijbel",
-              "significante_verschillen": "De Naardense Bijbel (niet expliciet in dossier voor Sirach, maar afgeleid uit de stijl van de andere lezingen) zou waarschijnlijk dichter bij de concordante weergave blijven. De NBV21 tekst in het dossier benadrukt de 'rust' die een zoon zijn moeder geeft (vers 6), wat in de Griekse traditie (anapausei) duidt op verkwikking en verlichting van lasten."
+              "vertaling": "NBV21 vs. Naardense Bijbel (NB)",
+              "significante_verschillen": "In vers 3 vertaalt de NBV21 'bewerkt verzoening voor zijn zonden', terwijl de NB spreekt over 'wie zijn vader eer bewijst'. De NBV21 expliciteert hier de theologische consequentie (verzoening/atonement) die in de grondtekst (Grieks: exilasetai) aanwezig is, terwijl andere vertalingen soms vlakker blijven. In vers 13 kiest NBV21 voor 'Als zijn verstand hem verlaat', wat een moderne, bijna klinische duiding is van dementie, terwijl de NB en oudere vertalingen dichter bij het beeldende 'als hij kinds wordt' of 'verstand verliest' blijven."
             }
           ],
-          "werkvertaling_cruciaal": "Vers 3: 'Wie zijn vader gewicht geeft (timao/kibbed), wist zijn eigen misslagen uit.' Vers 14: 'Want de barmhartigheid jegens een vader zal niet worden vergeten, en in plaats van zonden zal het voor u worden opgebouwd (als een fundament).'"
+          "werkvertaling_cruciaal": "Vers 14 (eigen werkvertaling): 'Want barmhartigheid (eleemosyne) jegens een vader zal niet vergeten worden; in plaats van zonden zal het voor u worden opgebouwd (als een huis/fundament).'"
         },
         "tekstkritiek": {
-          "relevante_varianten": [
-            {
-              "vers": "3,14",
-              "variant": "Hebreeuwse vs Griekse tekst",
-              "handschriften": "Geniza-fragmenten vs Septuaginta",
-              "betekenis_impact": "De Hebreeuwse tekst van Sirach (gevonden in de Cairo Geniza) benadrukt vaak de concrete 'tsedaqah' (gerechtigheid/aalmoes), terwijl de Griekse tekst de nadruk legt op 'eleemosyne' (barmhartigheid). Dit kleurt de zorg voor ouders in als een daad van religieuze rechtvaardigheid die voor God telt als een offer."
-            }
-          ],
-          "conclusie": "De tekst is stabiel in de Griekse traditie die voor de liturgie bepalend is, waarbij de nadruk ligt op de religieuze waarde van de gezinsethiek."
+          "relevante_varianten": [],
+          "conclusie": "Geen significante tekstkritische varianten voor deze perikoop in de gangbare kritische edities die de theologische strekking wijzigen."
         },
         "woordstudie": [
           {
-            "woord_origineel": "τιμάω",
-            "transliteratie": "timao",
-            "vertaling": "eren / waarde toekennen",
-            "semantische_range": "Het Griekse woord timao gaat verder dan louter beleefdheid; het betekent het toekennen van de juiste prijs of waarde. In de Septuaginta is het de vertaling van het Hebreeuwse 'kibbed' (zwaar maken, gewicht geven).",
-            "gebruik_elders": "Het is het kernwoord van het vierde gebod (Exodus 20). Het impliceert dat de ouder 'gewicht' heeft in het leven van het kind.",
-            "meerduidigheid": "Het kan zowel een innerlijke houding als een uiterlijke, financiële ondersteuning betekenen."
+            "woord_origineel": "Grieks: doxazo / Hebreeuws: kabad",
+            "transliteratie": "doxazo",
+            "vertaling": "eren / verheerlijken",
+            "semantische_range": "Gewicht geven, erkennen van autoriteit, financieel ondersteunen.",
+            "gebruik_elders": "In de LXX en het NT wordt dit woord meestal gebruikt voor de eer die God toekomt. Hier wordt het toegepast op de ouders, wat de ouderlijke autoriteit een bijna goddelijke status geeft (vgl. het vijfde gebod).",
+            "meerduidigheid": "Het 'eren' impliceert hier niet alleen respect, maar ook concrete fysieke en financiële zorg (alimentatie)."
           },
           {
-            "woord_origineel": "ἐξιλάσκεται",
-            "transliteratie": "exilasketai",
-            "vertaling": "verzoenen / uitwissen",
-            "semantische_range": "Dit is cultische taal. Het gaat om het wegnemen van de barrière tussen mens en God die door zonde is ontstaan.",
-            "gebruik_elders": "Veelal gebruikt in Leviticus voor de offerdienst.",
-            "meerduidigheid": "Hier wordt een ethische handeling (zorg voor ouders) gelijkgesteld aan een rituele handeling (offer)."
+            "woord_origineel": "Grieks: eleemosyne",
+            "transliteratie": "eleemosyne",
+            "vertaling": "barmhartigheid / aalmoes",
+            "semantische_range": "Daad van compassie, vaak financieel, religieuze plicht.",
+            "gebruik_elders": "Vaak gebruikt voor zorg aan de armen. Hier wordt de zorg voor de eigen vader beschreven als een 'aalmoes' of daad van barmhartigheid, wat suggereert dat de vader in een positie van totale afhankelijkheid is gekomen.",
+            "meerduidigheid": null
           }
         ],
         "literaire_analyse": {
           "genre": "wijsheid",
-          "genre_conventies": "Didactische poëzie gericht op de vorming van het karakter. Gebruik van spreuken, vermaningen en beloften van zegen. De autoriteit van de leraar (vaderfiguur) staat centraal.",
+          "genre_conventies": "Didactische poëzie, gebruik van parallellismen, oproep tot ethisch gedrag gekoppeld aan beloning (retribution doctrine).",
           "structuur": {
-            "opbouw": "De perikoop bestaat uit twee delen: vers 2-6 behandelt de algemene plicht tot eerbied en de spirituele beloning daarvan; vers 12-14 concretiseert dit naar de situatie van de ouderdom en dementie.",
+            "opbouw": "De tekst valt uiteen in twee delen. Deel A (vs 2-6) is theologisch en principieel: het fundeert het gezag van ouders in God en koppelt er religieuze beloningen aan (verzoening, gebedsverhoring). Deel B (vs 12-14) is pastoraal en praktisch: het past dit toe op de specifieke situatie van de ouderdom en mentale achteruitgang.",
             "cesuren": [
-              "Na vers 6: overgang van algemene principes naar specifieke ouderdomszorg.",
-              "Vers 12: directe aanspreking van de 'kinderen'."
+              "Tussen vers 6 en vers 12 (sprong in de tekstselectie, maar ook inhoudelijke overgang van principe naar praktijk)."
             ],
-            "centrum": "Vers 3 en 4 vormen het hart: de parallel tussen de vader en de moeder, waarbij de daad van eerbied direct effect heeft op de relatie met God.",
-            "chiasme_inclusio": "Inclusio van 'zonden' (vers 3 en vers 14): de tekst wordt omlijst door de gedachte dat gezinsethiek een weg tot vergeving is."
+            "centrum": "Vers 3 en 14 vormen de theologische kern: zorg voor ouders werkt verzoenend.",
+            "chiasme_inclusio": "Er is een inclusio rondom het thema 'zonden': vers 3 (verzoening voor zonden) en vers 14 (opbouwen in plaats van zonden)."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
-              "Parallellismus membrorum (vers 3-4)",
-              "Metafoor van 'schatten verzamelen' (vers 4)",
-              "Contrast tussen kracht en verval (vers 13)"
+              "Synoniem parallellisme (vader/moeder, eren/hoogachten)",
+              "Motivatieclausules ('want...', 'opdat...')"
             ],
-            "retorische_strategie": "De auteur gebruikt een 'loontheologie' om de hoorder te motiveren: wie goed doet voor zijn ouders, doet feitelijk goed voor zichzelf voor het aangezicht van God.",
-            "effect_lezer": "Het creëert een gevoel van morele urgentie en verbindt het alledaagse gezinsleven met de hoogste religieuze sferen."
+            "retorische_strategie": "De auteur motiveert ethisch gedrag door in te spelen op het eigenbelang van de hoorder (lang leven, verhoring van gebeden, verzoening van eigen zonden).",
+            "effect_lezer": "De lezer wordt overtuigd dat zorg voor ouders geen last is, maar een religieuze investering."
           },
           "karakters_plot": {
             "personages": [
-              "De Vader",
-              "De Moeder",
-              "Het Kind (de hoorder)",
-              "De Heer (God)"
+              "De Heer (God)",
+              "Het kind (aangesprokene)",
+              "De vader/moeder (object van zorg)"
             ],
-            "karakterisering": "De ouders worden getekend als dragers van een door God gegeven autoriteit, maar in het tweede deel ook als kwetsbare wezens die hun verstand kunnen verliezen. Het kind is de morele actor.",
-            "verhaallijn": "Geen narratief, maar een ethisch traject van geboorte (gehoorzaamheid) naar de dood van de ouders (zorg en verzoening).",
-            "verzwegen_gesuggereerd": "De tekst zwijgt over 'slechte' ouders; de plicht tot eerbied lijkt onvoorwaardelijk, geworteld in de orde van de schepping."
+            "karakterisering": "De ouders worden getekend in hun kwetsbaarheid (verstand verliezen), het kind in zijn kracht en verantwoordelijkheid.",
+            "verhaallijn": null,
+            "verzwegen_gesuggereerd": "De tekst suggereert een situatie waarin de zorg voor ouders zwaar valt (anders was de vermaning tot geduld niet nodig)."
           }
         },
         "structuralistische_analyse": {
           "schema_constructie": {
             "scenarios": [
               {
-                "scène": "1. De Goddelijke Orde",
-                "tijd": "Algemeen/Tijdloos",
-                "plaats": "Het Huisgezin",
-                "actant": "De Heer (God)",
-                "handeling": "geeft aanzien (aan de vader), verplicht (de zonen aan het oordeel van de moeder)",
+                "scène": "1 (vs 2-6)",
+                "tijd": "Algemeen geldende tijd (gnomisch)",
+                "plaats": "Het huis / de gemeenschap",
+                "actant": "Het kind (de gelovige)",
+                "handeling": "Eren, hoogachten, luisteren",
                 "medewerker": [
-                  "Vader",
-                  "Moeder"
+                  "Gods gebod",
+                  "Belofte van lang leven"
                 ],
                 "opponent": [
-                  "Zonde"
+                  "Eigenbelang",
+                  "Ongeduld"
                 ]
               },
               {
-                "scène": "2. De Eerbiedige Zoon",
-                "tijd": "Levensloop",
-                "plaats": "De Gebedsruimte / Het Leven",
-                "actant": "De Zoon / Wie zijn vader eer bewijst",
-                "handeling": "bewerkt verzoening, verzamelt schatten, vindt vreugde, wordt verhoord, leeft lang",
+                "scène": "2 (vs 12-14)",
+                "tijd": "De 'oude dag' van de vader",
+                "plaats": "De huiselijke sfeer van zorg",
+                "actant": "Het kind",
+                "handeling": "Steunen, begrip hebben, niet neerzien",
                 "medewerker": [
-                  "Vader",
-                  "Moeder",
-                  "De Heer"
+                  "Barmhartigheid"
                 ],
                 "opponent": [
-                  "Zonden"
-                ]
-              },
-              {
-                "scène": "3. De Crisis van de Ouderdom",
-                "tijd": "De 'oude dag' / 'wanneer verstand verlaat'",
-                "plaats": "Het sterfhuis / De zorgsituatie",
-                "actant": "Het Kind",
-                "handeling": "is tot steun, doet geen verdriet, heeft begrip, ziet niet neer, ontfermt zich",
-                "medewerker": [
-                  "Kracht (van het kind)"
-                ],
-                "opponent": [
-                  "Verlies van verstand",
-                  "Mismoedigheid"
+                  "Verlies van verstand (dementie)",
+                  "Fysieke kracht van het kind (verleiding tot arrogantie)"
                 ]
               }
             ],
-            "schema_regels": "Het perspectief ligt bij de wijsheidsleraar die de hoorder (het kind) aanspreekt als de actant die verantwoordelijk is voor de stabiliteit van de familieorde."
+            "schema_regels": "De actant wordt opgeroepen tot handelen door een goddelijke Zender (impliciet de wijsheidsleraar namens God)."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "De tekst beweegt van een abstracte, goddelijke instelling naar de rauwe, temporele realiteit van dementie en fysiek verval.",
-            "actanten_analyse": "God is de initiërende actant (vers 2), maar de mens (het kind) is de uitvoerende actant die door zijn handelen zijn eigen lot (verzoening, lang leven) bepaalt.",
-            "handelingen_trajecten": "Twee trajecten: 1. Het religieuze traject (verzoenen, bidden, verhoord worden). 2. Het sociale traject (steunen, niet neerzien, begrip hebben).",
-            "medewerkers_opponenten_analyse": "De belangrijkste opponent is de 'zonde' en het 'verlies van verstand'. De medewerker is de 'Heer' die de handelingen van het kind valideert."
+            "tijd_plaats_patroon": "Van een algemeen principe naar een specifieke, pijnlijke situatie (de aftakeling).",
+            "actanten_analyse": "Het kind is de enige actieve handelende persoon; de vader is passief object van zorg; God is de garant van de beloning.",
+            "handelingen_trajecten": "Traject van 'eren' (abstract) naar 'verzorgen/verdragen' (concreet).",
+            "medewerkers_opponenten_analyse": "De grootste opponent is de aftakeling van de ouder, die de relatie onder druk zet. De medewerker is het religieuze besef van verzoening."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De scènes zijn verbonden door de notie van 'vergelding': wat men doet voor de ouders, doet God voor de mens.",
-            "temporele_ontwikkeling": "Er is een chronologische lijn van de actieve jaren van het kind naar de passieve jaren van de ouder.",
-            "literaire_elementen": "Herhaling van 'wie zijn vader eer bewijst/hoogacht' werkt als een bezwerende herhaling van de centrale plicht.",
-            "karakteranalyse": "De autoriteit van de actant (het kind) wordt ontleend aan de gehoorzaamheid aan de 'Heer' (vers 6).",
-            "evaluatieve_dimensie": "De auteur evalueert de zorg voor de vader als een 'bouwwerk' dat sterker is dan de afbraak door zonde (vers 14)."
+            "structurele_samenhang": "De theorie van deel 1 wordt de praktijk van deel 2.",
+            "temporele_ontwikkeling": "Er is een impliciete levenscyclus: van kind zijn naar verzorger worden.",
+            "literaire_elementen": "Herhaling van 'vader' en 'eer'.",
+            "karakteranalyse": "De actant ontleent zijn motivatie niet aan de kwaliteit van de ouder (die neemt af), maar aan de belofte van God.",
+            "evaluatieve_dimensie": "De tekst evalueert de zorg positief als 'niet vergeten' en 'opbouwend'."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
-              "Gezin als religieuze ruimte",
-              "Solidariteit tussen generaties",
-              "Ethiek als verzoening"
+              "Eerbied voor het leven in zijn kwetsbare fase",
+              "De religieuze waarde van mantelzorg",
+              "Verzoening door daden van liefde"
             ],
-            "structurele_patroon": "Een causale structuur: Handeling (eer) -> Gevolg (zegen/verzoening).",
-            "theologische_betekenis": "De tekst de-individualiseert de mens; men is wie men is in relatie tot degenen uit wie men voortkomt. God is de bewaker van deze relationele keten."
+            "structurele_patroon": "Gebod -> Belofte -> Situatieschets -> Vermaning -> Belofte.",
+            "theologische_betekenis": "De zorg voor de naaste (hier de ouder) is geen seculiere taak maar een cultische handeling die zonden uitwist. De 'liturgie' vindt plaats aan het ziekbed."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "Eerbied voor ouders is geen louter burgerlijke deugd, maar een fundamentele religieuze handeling die de mens in een rechte verhouding tot God plaatst en zonden uitwist.",
-          "godsbeeld": "God als de wetgever die de sociale orde (vader/moeder/kind) heiligt en als de genadige rechter die goede daden binnen het gezin accepteert als verzoening.",
-          "mensbeeld_wereld_heil": "De mens is een relationeel wezen, ingebed in een generatielijn. Heil wordt niet alleen individueel verkregen, maar door de trouw aan de naaste verwanten.",
+          "centrale_boodschap": "Het eren van ouders is een goddelijke opdracht die verder gaat dan respect; het is concrete, barmhartige zorg in tijden van aftakeling, die door God wordt gerekend als verzoening voor eigen zonden.",
+          "godsbeeld": "God als de garant van de sociale orde en de beloner van verborgen barmhartigheid. God identificeert zich met de eer van de ouders.",
+          "mensbeeld_wereld_heil": "De mens is ingebed in generaties. Heil is niet puur individueel of spiritueel, maar heeft een materiële en relationele component (lang leven, voorspoed, vergeving).",
           "bijbels_theologische_lijnen": [
-            "Verbond (het vierde gebod)",
-            "Wijsheid (de orde van de schepping)",
-            "Verzoening (ethiek als offer)"
+            "Verbond (Vijfde Gebod)",
+            "Wijsheidstraditie (Spreuken)",
+            "Vergelding en genade"
           ],
-          "plaats_heilsgeschiedenis": "Sirach vormt de brug tussen de Wet (Exodus) en de nieuwtestamentische gezinsethiek (Kolossenzen). Het internaliseert de wet tot een levenswijsheid.",
-          "spanning_andere_teksten": "Spanning met teksten waar Jezus oproept om vader en moeder te verlaten voor het Koninkrijk (Matteüs 10,37). Sirach vertegenwoordigt de continuïteit van de scheppingsorde.",
+          "plaats_heilsgeschiedenis": "Tussen-testamentaire periode waarin de Thora wordt toegepast op het dagelijks leven en de vroomheid verinnerlijkt wordt.",
+          "spanning_andere_teksten": "Spanning met teksten die oproepen tot breuk met familie omwille van het Koninkrijk (Matteüs 10:37), maar in harmonie met Jezus' kritiek op de Korban-regeling (Marcus 7).",
           "dogmatische_raakvlakken": [
-            "Vierde Gebod",
-            "Leer van de goede werken",
-            "Verzoeningsleer"
+            "Rechtvaardiging (rol van goede werken)",
+            "Heiliging van het dagelijks leven"
           ],
-          "theologische_controverses": "De gedachte dat menselijk handelen (zorg voor ouders) 'verzoening voor zonden' kan bewerken, schuurt met de reformatorische nadruk op 'sola gratia'. In de Kloosterkerk-context kan dit geduid worden als de vrucht van het geloof die de gebrokenheid herstelt."
+          "theologische_controverses": "De notie dat daden van barmhartigheid 'verzoening voor zonden' bewerken kan schuren met een strikt protestantse 'sola fide' opvatting, maar past binnen de joodse visie op aalmoezen en gerechtigheid."
         },
         "zoekmodellen_snoek": {
           "godsbeelden_ot": {
-            "werkwoordelijke_uitspraken": "De Heer 'geeft aanzien' en 'verplicht'. Hij 'verhoort' het gebed van de eerbiedige zoon.",
-            "metaforische_uitspraken": "God als de ultieme Vader die de aardse vaderlijke autoriteit delegeert.",
-            "overstijgende_eigenschappen": "God is de soevereine bron van de morele wet; Hij staat boven de menselijke generaties als de uiteindelijke beoordelaar.",
-            "toebuigende_eigenschappen": "God is barmhartig: Hij vergeet de ontferming over de vader niet en staat open voor verzoening.",
-            "dominante_categorie": "Toebuigend handelen binnen een overstijgend kader. God is de 'stille getuige' in de huiskamer.",
-            "spanning": "De spanning tussen Gods onpartijdige rechtvaardigheid en zijn bereidheid om zonden te vergeven op basis van menselijke barmhartigheid.",
-            "relevantie_gemeente": "In een stad van recht (Den Haag) herinnert dit Godsbeeld eraan dat gerechtigheid begint bij de meest nabije, kwetsbare ander."
+            "werkwoordelijke_uitspraken": "God 'heeft aanzien gegeven' (vs 2), God 'verhoort' (vs 5), God 'vergeet niet' (vs 14).",
+            "metaforische_uitspraken": "God als Rechter/Boekhouder die de daden weegt en beloont.",
+            "overstijgende_eigenschappen": "Gods autoriteit staat boven de generaties; Hij stelt de orde vast.",
+            "toebuigende_eigenschappen": "Gods barmhartigheid blijkt uit het feit dat Hij zorg voor kwetsbaren beloont.",
+            "dominante_categorie": "Werkwoordelijk/Relationeel: God reageert op het gedrag van de mens.",
+            "spanning": "Spanning tussen God als wetgever en God als genadige verhoorder.",
+            "relevantie_gemeente": "God is betrokken bij de intieme sfeer van de mantelzorg."
           },
           "mensbeelden_ot": {
-            "horizontale_as": "De mens wordt opgeroepen tot 'goed doen' (eer bewijzen, ontfermen) als remedie tegen 'kwaad doen' (zonde, neerzien op de zwakke).",
-            "verticale_as": "De mens is sterk gericht op God (gebed in vers 5) via de wereld (de zorg voor de ouder). De verticale relatie loopt via de horizontale lijn.",
-            "personages_positie": "De personages bevinden zich in een dynamiek van afhankelijkheid. De ouder beweegt van autoriteit naar kwetsbaarheid; het kind beweegt van gehoorzaamheid naar verantwoordelijkheid.",
-            "karakterontwikkeling": "De tekst vraagt om een karakterontwikkeling van het kind: van een kind dat 'krijgt' (aanzien van de vader) naar een volwassene die 'geeft' (begrip voor de demente vader)."
+            "horizontale_as": "Sterke nadruk op 'goed doen' (zorg, eerbied) als tegenwicht tegen 'kwaad doen' (neerzien, verdriet doen).",
+            "verticale_as": "Het horizontale handelen (zorg voor vader) is direct verticaal gericht (dienst aan God/verzoening).",
+            "personages_positie": "De mens staat in een spanningsveld tussen eigen kracht en de plicht tot zorg voor de zwakkere.",
+            "karakterontwikkeling": "De mens groeit van kind naar verantwoordelijke verzorger."
           },
-          "jezusbeelden_nt": null
+          "jezusbeelden_nt": {
+            "van_achteren": null,
+            "van_boven": null,
+            "van_beneden": null,
+            "van_voren": null,
+            "dominant_perspectief": null,
+            "spanning_godheid_mensheid": null,
+            "betekenis_hoorders_nu": null
+          }
         }
       },
       {
@@ -1249,207 +1162,424 @@
         "afbakening_vertaling": {
           "vertaalvergelijking": [
             {
-              "vertaling": "NBV21",
-              "significante_verschillen": "De NBV21 vertaalt 'anachoreo' met 'de wijk nemen' en 'uitwijken'. Dit geeft een actieve, strategische nuance aan de vlucht. In vers 15 wordt 'uit Egypte heb Ik mijn Zoon geroepen' gepresenteerd als een vervulling van een profetie, wat de nadruk legt op de goddelijke regie."
-            },
-            {
-              "vertaling": "Naardense Bijbel",
-              "significante_verschillen": "De Naardense Bijbel gebruikt 'wijken uit' en benadrukt de droomervaring met 'zie, een engel...'. De herhaling van 'word wakker' (egertheis) in de Naardense Bijbel versterkt het motief van de opstanding en de goddelijke urgentie die Jozefs slaap doorbreekt."
+              "vertaling": "NBV21 vs. Naardense Bijbel (NB)",
+              "significante_verschillen": "NBV21 vertaalt 'anachoreo' met 'de wijk nemen' of 'uitwijken', wat strategischer klinkt dan het gewone 'vluchten'. NB vertaalt consequent 'uitwijken'. In vers 13 vertaalt NBV21 'Maak je gereed', waar de grondtekst (en NB) letterlijk 'Sta op' (egertheis) heeft, wat resoneert met opstandings-taal. NBV21 'kind' vs NB 'jongetje' (paidion)."
             }
           ],
-          "werkvertaling_cruciaal": "Vers 13: 'Nadat zij zich hadden teruggetrokken (anachoresanton), zie, een engel van de Heer verschijnt in een droom aan Jozef en zegt: Sta op (egertheis), neem het kind en zijn moeder en vlucht (pheuge) naar Egypte...'"
+          "werkvertaling_cruciaal": "Vers 14: 'Hij stond op (egertheis), nam het kind en zijn moeder bij zich in de nacht (nuktos) en week uit (anechoresen) naar Egypte.'"
         },
         "tekstkritiek": {
-          "relevante_varianten": [
-            {
-              "vers": "2,15",
-              "variant": "Citaat Hosea 11,1",
-              "handschriften": "Masoretische Tekst vs Septuaginta",
-              "betekenis_impact": "Matteüs volgt hier de Hebreeuwse tekst ('mijn zoon') in plaats van de Septuaginta ('zijn kinderen'). Dit is cruciaal voor zijn christologische duiding: Jezus is de belichaming van het nieuwe Israël."
-            }
-          ],
-          "conclusie": "De tekst is tekstkritisch zeer stabiel; de varianten zitten vooral in de wijze waarop Matteüs de oudtestamentische citaten hanteert."
+          "relevante_varianten": [],
+          "conclusie": "Geen varianten die de exegese beïnvloeden."
         },
         "woordstudie": [
           {
-            "woord_origineel": "ἀναχωρέω",
+            "woord_origineel": "Grieks: anachoreo",
             "transliteratie": "anachoreo",
-            "vertaling": "zich terugtrekken / uitwijken",
-            "semantische_range": "Het betekent letterlijk 'ruimte maken' of 'plaats maken'. Het wordt vaak gebruikt voor een strategische terugtocht voor gevaar.",
-            "gebruik_elders": "Matteüs gebruikt dit woord vaak wanneer Jezus zich terugtrekt voor de menigte of voor vijandigheid (bijv. Mat 4,12; 12,15).",
-            "meerduidigheid": "Het suggereert geen lafheid, maar goddelijke voorzichtigheid."
+            "vertaling": "uitwijken / zich terugtrekken",
+            "semantische_range": "Weggaan om gevaar te vermijden, strategische terugtocht, ruimte maken.",
+            "gebruik_elders": "Matteüs gebruikt dit woord vaak voor Jezus die zich terugtrekt als er vijandschap dreigt (bijv. na de dood van Johannes de Doper). Het is geen paniekvlucht, maar een goddelijke strategie.",
+            "meerduidigheid": "Het impliceert zowel fysieke verplaatsing als het vermijden van voortijdige confrontatie."
           },
           {
-            "woord_origineel": "ἐγερθείς",
-            "transliteratie": "egertheis",
-            "vertaling": "opgestaan zijnde / word wakker",
-            "semantische_range": "Aoristus passief participium van egeiro. Het betekent zowel fysiek opstaan uit de slaap als 'opgewekt worden'.",
-            "gebruik_elders": "Dit is hetzelfde werkwoord dat gebruikt wordt voor de opstanding van Jezus.",
-            "meerduidigheid": "De vlucht naar Egypte wordt hiermee getekend als een vorm van 'opstanding' uit de doodsdreiging van Herodes."
+            "woord_origineel": "Grieks: Nazoraios",
+            "transliteratie": "Nazoraios",
+            "vertaling": "Nazoreeër",
+            "semantische_range": "Inwoner van Nazaret, maar mogelijk ook een woordspel op 'netzer' (twijg/spruit, Jesaja 11:1) of 'nazir' (gewijde).",
+            "gebruik_elders": "In Handelingen gebruikt voor de sekte van de christenen. Hier functioneert het als een vervulling van profetie, hoewel er geen letterlijk citaat in het OT bestaat.",
+            "meerduidigheid": "De term verbindt de geografische marginaliteit (Nazaret) met de messiaanse identiteit (Spruit)."
           }
         ],
         "literaire_analyse": {
-          "genre": "narratief",
-          "genre_conventies": "Geboorteverhaal (infancy narrative) met sterke apologetische en typologische trekken. Gebruik van droomgezichten als literair middel voor goddelijke openbaring.",
+          "genre": "narratief / theologische geschiedschrijving",
+          "genre_conventies": "Gebruik van dromen als goddelijke communicatie, gehoorzaamheidspatronen, vervullingscitaten (formulecitaten).",
           "structuur": {
-            "opbouw": "De tekst is symmetrisch opgebouwd rond twee droomopdrachten: 1. De vlucht naar Egypte (v13-15). 2. De terugkeer naar Israël (v19-23).",
+            "opbouw": "Drie scènes, elk ingeleid door een droom/engelverschijning en afgesloten met een geografische verplaatsing en een vervullingscitaat. 1. Vlucht naar Egypte (vs 13-15). 2. Terugkeer naar Israël (vs 19-21). 3. Uitwijken naar Galilea (vs 22-23).",
             "cesuren": [
-              "Vers 15b-18: De kindermoord (niet in de lezing, maar de donkere achtergrond).",
-              "Vers 19: De dood van Herodes als keerpunt."
+              "Na vers 15 (dood Herodes/vervulling).",
+              "Na vers 21 (aankomst Israël/nieuwe dreiging)."
             ],
-            "centrum": "De dood van Herodes (v19) markeert de overgang van dreiging naar nieuwe mogelijkheden.",
-            "chiasme_inclusio": "Inclusio van 'vervulling van de profeten' (v15 en v23). De geografische beweging is: Israël -> Egypte -> Israël (Nazaret)."
+            "centrum": "De dood van Herodes vormt het scharnierpunt; de machthebber sterft, het kind leeft.",
+            "chiasme_inclusio": "Geografische inclusio: Israël -> Egypte -> Israël."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
-              "Typologie (Jezus als de nieuwe Mozes/Israël)",
-              "Contrast (de machteloze baby vs de moordzuchtige koning)",
-              "Geografische symboliek (Egypte als asiel)"
+              "Contrast (Herodes de koning vs. het kwetsbare kind)",
+              "Ironie (de machtige sterft, de vluchteling overleeft)",
+              "Repetitie (droom, sta op, neem het kind)"
             ],
-            "retorische_strategie": "Matteüs wil bewijzen dat Jezus de Messias is door elk detail van zijn vroege leven te verbinden met de Schriften. De herhaling van de droominstructies benadrukt de absolute gehoorzaamheid van Jozef.",
-            "effect_lezer": "Het wekt vertrouwen in Gods leiding, zelfs in situaties van extreme onveiligheid."
+            "retorische_strategie": "Matteüs presenteert Jezus als de nieuwe Mozes/Israël door de Exodus-typologie (Egypte, kindermoord, terugkeer).",
+            "effect_lezer": "De lezer ziet dat Gods plan dwars door politieke dreiging en menselijke kwetsbaarheid heen gaat."
           },
           "karakters_plot": {
             "personages": [
-              "Jozef (de dromer/beschermer)",
-              "Het Kind en zijn Moeder (de kwetsbaren)",
-              "De Engel (de boodschapper)",
-              "Herodes en Archelaüs (de opponenten/tirannen)"
+              "Jozef (de zwijgende gehoorzame)",
+              "Het Kind (het passieve middelpunt)",
+              "Maria (de moeder)",
+              "Herodes/Archelaüs (de dodelijke dreiging)",
+              "Engel van de Heer (de boodschapper)"
             ],
-            "karakterisering": "Jozef is de 'stille' actant; hij spreekt niet, maar handelt onmiddellijk. Herodes is de schaduwfiguur wiens macht eindig is.",
-            "verhaallijn": "Conflict: Herodes wil het kind doden. Climax: De vlucht in de nacht. Ontknoping: De veilige vestiging in Nazaret.",
-            "verzwegen_gesuggereerd": "Maria blijft op de achtergrond; de focus ligt op de juridische/vaderlijke bescherming door Jozef."
+            "karakterisering": "Jozef wordt getekend als de rechtvaardige beschermer die direct gehoorzaamt. Herodes als de paranoïde tiran.",
+            "verhaallijn": "Conflict tussen het Koninkrijk van God (het kind) en het koninkrijk van de wereld (Herodes), opgelost door goddelijke interventie en menselijke gehoorzaamheid.",
+            "verzwegen_gesuggereerd": "De emoties van Jozef en Maria worden niet beschreven; de focus ligt puur op de actie en de gehoorzaamheid."
           }
         },
         "structuralistische_analyse": {
           "schema_constructie": {
             "scenarios": [
               {
-                "scène": "1. De Vlucht",
-                "tijd": "Nacht (v14)",
-                "plaats": "Van Bethlehem naar Egypte",
+                "scène": "1 (vs 13-15)",
+                "tijd": "Na vertrek wijzen, 's nachts",
+                "plaats": "Bethlehem -> Egypte",
                 "actant": "Jozef",
-                "handeling": "wordt wakker, neemt het kind en zijn moeder, wijkt uit",
+                "handeling": "Opstaan, meenemen, vluchten",
                 "medewerker": [
-                  "Engel van de Heer",
-                  "Droom"
+                  "Engel/Droom",
+                  "De nacht (dekking)"
                 ],
                 "opponent": [
                   "Herodes"
                 ]
               },
               {
-                "scène": "2. Het Verblijf",
-                "tijd": "Tot de dood van Herodes",
-                "plaats": "Egypte",
-                "actant": "Jozef (en het gezin)",
-                "handeling": "is daar gebleven",
+                "scène": "2 (vs 19-21)",
+                "tijd": "Na dood Herodes",
+                "plaats": "Egypte -> Land Israël",
+                "actant": "Jozef",
+                "handeling": "Opstaan, meenemen, gaan",
                 "medewerker": [
-                  "God (via de profeet)"
+                  "Engel/Droom"
                 ],
                 "opponent": [
-                  "Herodes"
+                  "(Herinnering aan Herodes)"
                 ]
               },
               {
-                "scène": "3. De Roeping Terug",
-                "tijd": "Na de dood van Herodes",
-                "plaats": "Egypte naar Israël",
+                "scène": "3 (vs 22-23)",
+                "tijd": "Bij aankomst",
+                "plaats": "Judea -> Galilea (Nazaret)",
                 "actant": "Jozef",
-                "handeling": "wordt wakker, neemt het kind en zijn moeder, vertrekt",
+                "handeling": "Vrezen, uitwijken, wonen",
                 "medewerker": [
-                  "Engel van de Heer",
-                  "Droom"
-                ],
-                "opponent": [
-                  "Archelaüs (impliciet)"
-                ]
-              },
-              {
-                "scène": "4. De Vestiging",
-                "tijd": "Onbepaald",
-                "plaats": "Nazaret (Galilea)",
-                "actant": "Jozef",
-                "handeling": "wijkt uit, gaat wonen",
-                "medewerker": [
-                  "Droom/Aanwijzing",
-                  "Profeten"
+                  "Droom (waarschuwing)"
                 ],
                 "opponent": [
                   "Archelaüs"
                 ]
               }
             ],
-            "schema_regels": "Jozef is de actant die de fysieke beweging uitvoert, maar de Engel/God is de 'Sender' die de actant instrueert en autoriseert."
+            "schema_regels": "Jozef is de uitvoerende actant, God (via engel) is de zender/opdrachtgever. Het Kind is het object dat verplaatst/gered moet worden."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "De beweging is circulair en heilshistorisch geladen: Israël -> Egypte (asiel) -> Israël (belofte). De nacht (v14) symboliseert de dreiging en de noodzaak tot haast.",
-            "actanten_analyse": "Jozef is de constante actant. Hij is de 'rechtvaardige' die de goddelijke wil uitvoert zonder tegenspraak.",
-            "handelingen_trajecten": "Traject van 'gehoorzaamheid aan de droom'. Elke handeling van Jozef is een directe reactie op een goddelijk imperatief.",
-            "medewerkers_opponenten_analyse": "De Engel is de cruciale medewerker. De opponenten zijn de politieke machten (Herodes, Archelaüs) die de 'ziel' van het kind zoeken."
+            "tijd_plaats_patroon": "De verplaatsingen worden gedicteerd door politieke dreiging en goddelijke sturing. Egypte (traditioneel vijand) wordt toevluchtsoord.",
+            "actanten_analyse": "Jozef spreekt niet, hij handelt alleen. Zijn gehoorzaamheid is absoluut.",
+            "handelingen_trajecten": "Traject van vlucht -> terugkeer -> vestiging.",
+            "medewerkers_opponenten_analyse": "De opponenten zijn politieke machthebbers (Herodes, Archelaüs). De medewerkers zijn bovennatuurlijk (dromen). Dit toont de strijd tussen aardse macht en hemelse leiding."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De tekst is opgebouwd uit parallelle blokken: droomverschijning -> handeling Jozef -> vervulling Schrift.",
-            "temporele_ontwikkeling": "De tijd wordt gemarkeerd door de levens en sterfgevallen van koningen (Herodes, Archelaüs), waar God tussendoor weeft met Zijn eigen tijdlijn.",
-            "literaire_elementen": "Het motief van de 'droom' (4 keer in hoofdstuk 1-2) bindt het hele geboorteverhaal samen.",
-            "karakteranalyse": "Jozef ontleent zijn kracht aan zijn ontvankelijkheid voor de droom; hij is de 'hoorder' van het woord.",
-            "evaluatieve_dimensie": "Matteüs evalueert de gebeurtenissen telkens met 'zo moest in vervulling gaan'. Niets is toeval.",
-            "synthese_interpretatie": {
-              "centrale_thema_s": [
-                "Goddelijke bewaring",
-                "Gehoorzaamheid in onzekerheid",
-                "Jezus als de nieuwe Mozes"
-              ],
-              "structurele_patroon": "Een patroon van 'Gevaar - Goddelijke interventie - Redding'.",
-              "theologische_betekenis": "De structuur laat zien dat de wereldmacht (Herodes) weliswaar de ruimte beheerst, maar dat God de geschiedenis beheerst."
-            }
+            "structurele_samenhang": "De drie scènes vormen een doorlopende reisbeweging (Exodus-motief).",
+            "temporele_ontwikkeling": "Chronologisch, bepaald door de levensduur van de tiran.",
+            "literaire_elementen": "Elke stap wordt theologisch gevalideerd door een Schriftcitaat.",
+            "karakteranalyse": "Jozefs autoriteit om te handelen komt voort uit zijn ontvankelijkheid voor dromen (zoals de aartsvader Jozef).",
+            "evaluatieve_dimensie": "De tekst evalueert de gebeurtenissen als 'vervulling' van Gods plan."
+          },
+          "synthese_interpretatie": {
+            "centrale_thema_s": [
+              "Gods voorzienigheid in politieke crisis",
+              "Jezus als de ware Israël (uit Egypte geroepen)",
+              "De marginaliteit van de Messias (Nazaret)"
+            ],
+            "structurele_patroon": "Bevel -> Gehoorzaamheid -> Vervulling.",
+            "theologische_betekenis": "God redt niet door de confrontatie aan te gaan met Herodes, maar door uit te wijken naar de marge. De heilsgeschiedenis gaat via de weg van de vluchteling."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "God beschermt Zijn Zoon te midden van politiek geweld en machtsmisbruik, waarbij Hij gebruikmaakt van de trouw van een gewone man (Jozef) om de heilsgeschiedenis voort te zetten.",
-          "godsbeeld": "God als de 'Wakkere' die in de nacht spreekt. Een God die niet ingrijpt met legers, maar met dromen en aanwijzingen. Hij is de God van de vluchtelingen.",
-          "mensbeeld_wereld_heil": "De mens (Jozef) is een medewerker van God door zijn gehoorzaamheid. De wereld is een gevaarlijke plek waar 'Herodessen' heersen, maar waar ook 'Egypte' een schuilplaats kan zijn.",
+          "centrale_boodschap": "Jezus is de Messias die de geschiedenis van Israël (Exodus) herhaalt en vervult; Hij wordt bewaard door God te midden van dodelijke politieke dreiging, waarbij God gebruik maakt van de gehoorzaamheid van Jozef en de luwte van de marge (Egypte/Nazaret).",
+          "godsbeeld": "God die spreekt in de stilte/nacht, die de geschiedenis stuurt boven de machthebbers uit, en die partij kiest voor het bedreigde leven.",
+          "mensbeeld_wereld_heil": "De wereld is een plek van machtsmisbruik (Herodes). De mens (Jozef) wordt geroepen tot actieve verantwoordelijkheid en bescherming. Heil is fysieke redding en het vinden van een veilige woonplaats.",
           "bijbels_theologische_lijnen": [
-            "Exodus (uit Egypte geroepen)",
-            "Nieuwe Mozes (ontsnapping aan de kindermoord)",
-            "Vervulling van de Schriften"
+            "Exodus (Mozes-typologie)",
+            "Ballingschap en terugkeer",
+            "Koningschap (Jezus vs Herodes)"
           ],
-          "plaats_heilsgeschiedenis": "Dit is de 'proloog' van het lijdensverhaal; al bij Zijn geboorte wordt Jezus met de dood bedreigd. Het zet de toon voor Zijn hele missie: Hij is de Nazoreeër, de afgezonderde.",
-          "spanning_andere_teksten": "Spanning tussen de 'vrede op aarde' van de engelen in Lucas en de 'vlucht voor het zwaard' in Matteüs. Matteüs is realistischer over de politieke prijs van de menswording.",
+          "plaats_heilsgeschiedenis": "De incarnatie landt in de harde politieke realiteit; het begin van Jezus' leven als vreemdeling en vluchteling.",
+          "spanning_andere_teksten": "Lucas 2 kent geen vlucht naar Egypte, maar een rustige terugkeer naar Nazaret via Jeruzalem. Matteüs benadrukt het conflict.",
           "dogmatische_raakvlakken": [
-            "Incarnatie (God wordt kwetsbaar mens)",
-            "Voorzienigheid (Providentia Dei)",
-            "Christologie (Jezus als de ware Israël)"
+            "Christologie (ware mens en ware God)",
+            "Providentia Dei (voorzienigheid)"
           ],
-          "theologische_controverses": "De historiciteit van de vlucht naar Egypte wordt vaak betwist, maar theologisch is de betekenis onomstreden: Jezus deelt het lot van Zijn volk in ballingschap en vlucht."
+          "theologische_controverses": "De historiciteit van de kindermoord en de vlucht wordt soms betwist, maar theologisch is de betekenis als 'nieuwe Exodus' onomstreden."
         },
         "zoekmodellen_snoek": {
-          "godsbeelden_ot": null,
-          "mensbeelden_ot": null,
+          "godsbeelden_ot": {
+            "werkwoordelijke_uitspraken": null,
+            "metaforische_uitspraken": null,
+            "overstijgende_eigenschappen": null,
+            "toebuigende_eigenschappen": null,
+            "dominante_categorie": null,
+            "spanning": null,
+            "relevantie_gemeente": null
+          },
+          "mensbeelden_ot": {
+            "horizontale_as": null,
+            "verticale_as": null,
+            "personages_positie": null,
+            "karakterontwikkeling": null
+          },
           "jezusbeelden_nt": {
-            "van_achteren": "Jezus is diep geworteld in de geschiedenis van Israël. Hij herhaalt de gang van het volk: van Israël naar Egypte en terug. Hij is de vervulling van Hosea en de profeten.",
-            "van_boven": "Hij is de 'Zoon' van God (v15). Zijn leven wordt direct door engelen bewaakt; Hij is het object van goddelijke zorg.",
-            "van_beneden": "Hij is het 'jongetje' (paidion), totaal afhankelijk van de zorg van Jozef en Maria. Hij is een vluchteling, een kind van een migrantengezin in een vreemd land.",
-            "van_voren": "Zijn vestiging in Nazaret wijst vooruit naar Zijn publieke optreden als de 'Nazoreeër'. Zijn ontsnapping aan de dood is een voorafschaduwing van de uiteindelijke overwinning op de dood.",
-            "dominant_perspectief": "De spanning tussen 'van achteren' (Israël-typologie) en 'van beneden' (de kwetsbare vluchteling).",
-            "spanning_godheid_mensheid": "De almachtige Zoon van God kan zichzelf niet redden; Hij heeft de benen van Jozef en de borst van Maria nodig. De godheid is verborgen in de uiterste menselijke kwetsbaarheid.",
-            "betekenis_hoorders_nu": "Voor de hoorders in Den Haag (stad van recht) is dit een Jezus die de 'illegaliteit' en de 'asielprocedure' van binnenuit kent. Hij legitimeert de zorg voor de kwetsbare vreemdeling."
+            "van_achteren": "Jezus wordt getekend in de lijnen van Israël: zoon van Abraham/David, nieuwe Mozes, uit Egypte geroepen. Hij vervult de profetieën.",
+            "van_boven": "Hij wordt 'Mijn Zoon' genoemd in het citaat uit Hosea. De hemel (engel) komt in beweging voor zijn bescherming.",
+            "van_beneden": "Hij is een volstrekt passief, kwetsbaar kind (paidion), afhankelijk van de zorg van zijn ouders en de grillen van de politiek. Hij moet vluchten.",
+            "van_voren": "Zijn overleven is noodzakelijk voor de komende verlossing; Hij wordt bewaard voor zijn taak.",
+            "dominant_perspectief": "Spanning tussen 'van beneden' (vluchteling) en 'van achteren' (vervulling Israël).",
+            "spanning_godheid_mensheid": "De paradox dat de Zoon van God moet vluchten voor een aardse koning. Goddelijke macht in menselijke onmacht.",
+            "betekenis_hoorders_nu": "Jezus identificeert zich met de vluchteling en de vervolgde; God is aanwezig in de onveiligheid."
           }
         }
       }
     ],
     "samenhang_lezingen": {
-      "rode_draad": "De rode draad is de 'geheiligde kwetsbaarheid' van het gezin onder de hoede van God.",
+      "rode_draad": "De bescherming en vorming van het leven binnen de context van familie en bedreiging. Waar Sirach de interne ethiek van het gezin (zorg voor elkaar) benadrukt, laat Matteüs de externe bedreiging van het gezin zien en de noodzaak van goddelijke bescherming.",
       "versterkingen": [
-        "Sirach biedt het ethische kader (eerbied en zorg) dat Jozef in het Evangelie in de praktijk brengt door zijn totale inzet voor het kind.",
-        "Beide teksten laten zien dat God handelt via de structuren van het gezin om Zijn zegen en heil te realiseren.",
-        "De Psalm 128 versterkt de gedachte dat de zegen van God rust op het huisgezin dat 'wandelt in Zijn wegen', wat Jozef letterlijk doet."
+        "Beide teksten benadrukken de rol van de vader (Jozef/de vader in Sirach) en de verantwoordelijkheid voor het kwetsbare (het kind/de dementerende ouder).",
+        "Beide teksten zien het leven als ingebed in een goddelijk plan (vergelding/vervulling)."
       ],
       "correcties": [
-        "Het Evangelie corrigeert een al te idyllisch beeld van het gezin uit Sirach: het gezin is niet alleen een plek van rust en zegen, maar ook een plek van strijd, vlucht en politieke dreiging.",
-        "Waar Sirach de nadruk legt op de autoriteit van de ouders, laat Matteüs zien dat deze autoriteit (Jozef) volledig in dienst staat van het kind, dat de eigenlijke Heer is."
+        "Sirach schetst een relatief stabiele sociale orde waarin eerbied leidt tot zegen; Matteüs breekt die stabiliteit open met de realiteit van vervolging en vlucht. Het 'goede leven' van Sirach is in Matteüs een 'overleven'."
       ]
     }
+  },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "contextuele_reflectie": "De spanning tussen de 'huiselijke geborgenheid' (Sirach/Kolossenzen) en de 'dreiging van buitenaf' (Matteüs) wordt in de liedkeuze versterkt door de actuele discussie over de demonisering van migranten. Liederen over de vlucht naar Egypte en Gods bescherming (zoals Bonhoeffers 'Door goede machten') slaan een brug tussen het Bijbelse verhaal en de huidige politieke onrust in Europa.",
+      "korte_observatie": "De database biedt een rijke variatie aan liederen die zowel de ethische kant van het gezinsleven (Kolossenzen) als de concrete vluchtthematiek (Matteüs) bestrijken. Er is een sterke vertegenwoordiging van het Nunc Dimittis en liederen over Gods nabijheid in gevaar."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "511",
+        "titel": "Door goede machten trouw en stil omgeven",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "Verwoordt de geborgenheid te midden van dreiging en de overgang naar het nieuwe jaar.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "611",
+        "titel": "Wij zullen leven, God zij dank",
+        "type_match": "Schriftlezing",
+        "match_detail": "Kolossenzen 3,12-21",
+        "toelichting": "Directe referentie aan de brief aan de Kolossenzen over het leven in Christus.",
+        "suggestie_gebruik": "Antwoordlied na de Epistel"
+      },
+      {
+        "nummer": "159c",
+        "titel": "Laat nu, Heer, uw dienstknecht vrijuit gaan",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "Het Nunc Dimittis (Simeon) hoort traditioneel bij deze zondag als afsluiting van de kersttijd.",
+        "suggestie_gebruik": "Lied na het Evangelie"
+      },
+      {
+        "nummer": "520",
+        "titel": "De wijzen, de wijzen",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "Sluit aan bij de context van Matteüs 2 en de naderende Epifanie.",
+        "suggestie_gebruik": "Lied bij de kindernevendienst"
+      },
+      {
+        "nummer": "841",
+        "titel": "Wat zijn de goede vruchten",
+        "type_match": "Schriftlezing",
+        "match_detail": "Kolossenzen 3,12-21",
+        "toelichting": "Vraagt naar de ethische praktijk van het geloof, passend bij de deugden uit Kolossenzen.",
+        "suggestie_gebruik": "Gebed om ontferming / Lied van de week"
+      },
+      {
+        "nummer": "798",
+        "titel": "Heer geef mij vleugels dat ik reis",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "Thematiseert het reizen en volgen van Christus, passend bij de vlucht en terugkeer.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "990",
+        "titel": "De laatsten worden de eersten",
+        "type_match": "Contextueel",
+        "match_detail": "Vluchtelingenthematiek / Migrantendebat",
+        "toelichting": "Reflecteert op de omkering van waarden, relevant voor de huidige maatschappelijke spanningen.",
+        "suggestie_gebruik": "Lied bij de voorbeden"
+      },
+      {
+        "nummer": "449",
+        "titel": "In de duisternis verwachten",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "Verbindt de geboorte in de stal met de noodzaak van bescherming in de nacht.",
+        "suggestie_gebruik": "Intochtslied"
+      },
+      {
+        "nummer": "167",
+        "titel": "Weet jij ook waar Mozes is?",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "Matteüs trekt een parallel tussen Jezus en Mozes ('Uit Egypte heb ik mijn zoon geroepen').",
+        "suggestie_gebruik": "Lied bij de kindernevendienst"
+      },
+      {
+        "nummer": "490",
+        "titel": "Heden zult gij zijn glorie aanschouwen",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "Feestelijk lied dat de vrede voor alle mensen bezingt, ondanks de dreiging.",
+        "suggestie_gebruik": "Gloria-lied"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "152",
+        "titel": "Vlucht, Jozef, vlucht",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-23",
+        "toelichting": "Een zeer directe match met de evangelielezing over de vlucht naar Egypte.",
+        "suggestie_gebruik": "Lied na de evangelielezing"
+      },
+      {
+        "nummer": "703",
+        "titel": "Ik was hongerig en jij gaf Mij te eten",
+        "type_match": "Contextueel",
+        "match_detail": "Migrantencrisis / Matteüs 25",
+        "toelichting": "Legt de link tussen de kwetsbare Christus en de zorg voor de naaste/vreemdeling.",
+        "suggestie_gebruik": "Antwoordlied of bij de inzameling van gaven"
+      },
+      {
+        "nummer": "10",
+        "titel": "De Heer is mijn herder en geen ding",
+        "type_match": "Thematisch",
+        "match_detail": "Levensleiding en bescherming",
+        "toelichting": "Biedt troost en vertrouwen in tijden van onzekerheid en dreiging.",
+        "suggestie_gebruik": "Psalm van de zondag"
+      },
+      {
+        "nummer": "694",
+        "titel": "Wij gaan op weg met brandend hart",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "Thematiseert het onderweg zijn als gelovige gemeenschap.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "138",
+        "titel": "Hoor de eng’len zingen d’eer",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "Houdt de kerstvreugde vast in de octaaf van Kerstmis.",
+        "suggestie_gebruik": "Intochtslied"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "406",
+        "titel": "Ga je mee op zoek",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,1-12",
+        "toelichting": "Sluit aan bij de zoektocht van de wijzen en de reis van het gezin.",
+        "suggestie_gebruik": "Lied bij de kindernevendienst"
+      },
+      {
+        "nummer": "106",
+        "titel": "Zo laat Gij, Heer, uw knecht",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "De lofzang van Simeon als klassiek element van deze zondag.",
+        "suggestie_gebruik": "Lied na de schriftlezingen"
+      },
+      {
+        "nummer": "522",
+        "titel": "Ik zag een kuikentje, dat bij zijn moeder zat",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 23:37 (Thematisch: bescherming)",
+        "toelichting": "Prachtige metafoor voor de bescherming van het kwetsbare leven onder Gods vleugels.",
+        "suggestie_gebruik": "Lied bij de kindernevendienst"
+      },
+      {
+        "nummer": "373",
+        "titel": "Ik was hongerig en jij gaf Mij te eten",
+        "type_match": "Contextueel",
+        "match_detail": "Matteüs 25 / Maatschappelijke context",
+        "toelichting": "Relevant voor de ethiek van de 'huiselijke kerk' en zorg voor de kwetsbare ander.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "1",
+        "titel": "Welzalig de man, die niet wandelt",
+        "type_match": "Thematisch",
+        "match_detail": "Levensleiding",
+        "toelichting": "Sluit aan bij de wijsheidsthematiek van Sirach en Psalm 128.",
+        "suggestie_gebruik": "Intochtslied"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "350",
+        "titel": "Door goede machten trouw en stil omgeven",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,13-15.19-23",
+        "toelichting": "Benadrukt Gods trouw in de beker van het lijden (vlucht).",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "339",
+        "titel": "Als man en vrouw",
+        "type_match": "Schriftlezing",
+        "match_detail": "Sirach 3,2-6.12-14",
+        "toelichting": "Past bij de thematiek van het gezin en de onderlinge verhoudingen.",
+        "suggestie_gebruik": "Huwelijks- of gezinslied"
+      },
+      {
+        "nummer": "571",
+        "titel": "De wijzen, de wijzen",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,1-12",
+        "toelichting": "Verhaalt over de context van de kindermoord en de vlucht.",
+        "suggestie_gebruik": "Lied na het Evangelie"
+      },
+      {
+        "nummer": "207",
+        "titel": "Wat zijn de goede vruchten",
+        "type_match": "Schriftlezing",
+        "match_detail": "Kolossenzen 3,12-21",
+        "toelichting": "Vraagt naar de vrucht van de Geest in het dagelijks leven.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "552",
+        "titel": "Toen ik naar mijn naaste zocht",
+        "type_match": "Contextueel",
+        "match_detail": "Matteüs 25 / Naastenliefde",
+        "toelichting": "Verbindt het geloof aan de concrete zorg voor de naaste in de stad.",
+        "suggestie_gebruik": "Lied bij de inzameling"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "1",
+        "titel": "Gelukkig wie niet deelneemt aan ’t beraad",
+        "type_match": "Thematisch",
+        "match_detail": "Levensweg / Sirach",
+        "toelichting": "Sluit aan bij de wijsheidsliteratuur van de eerste lezing.",
+        "suggestie_gebruik": "Aanvangslied"
+      },
+      {
+        "nummer": "100",
+        "titel": "Juich, alle volken, prijs de HEER!",
+        "type_match": "Thematisch",
+        "match_detail": "Vreugde",
+        "toelichting": "Een algemeen loflied dat past bij de kersttijd.",
+        "suggestie_gebruik": "Intochtslied"
+      }
+    ]
   },
   "09_kunst_cultuur": {
     "moderne_hedendaagse_kunst": [

@@ -9,197 +9,128 @@
   },
   "01_zondag_kerkelijk_jaar": {
     "positie_kerkelijk_jaar": {
-      "zondag_naam": "4e Zondag na Epifanie (of 4e Zondag door het jaar)",
-      "liturgische_periode": "Epifaniëntijd / Tijd door het jaar",
-      "weken_tot_hoofdfeest": "2,5 weken tot Aswoensdag (begin Veertigdagentijd)",
+      "zondag_naam": "4e zondag door het jaar",
+      "liturgische_periode": "Pinkstertijd/Zomertijd/Tijd door het jaar",
+      "weken_tot_hoofdfeest": "4 weken na Epifanie (6 januari); 2,5 week voor Aswoensdag (18 februari 2026)",
       "leesrooster_jaar": "A",
       "dominant_evangelie": "Matteüs"
     },
     "traditionele_naam": {
       "latijnse_naam": null,
-      "oorsprong": "Deze zondag heeft in de protestantse traditie geen specifieke Latijnse naam zoals de zondagen in de Veertigdagentijd. De naamgeving volgt de telling na Epifanie.",
-      "nederlandse_vertaling": "Vierde zondag na de Verschijning des Heren",
+      "oorsprong": "Deze zondag heeft in de PKN-traditie geen specifieke Latijnse naam uit de introïtus, aangezien het een reguliere zondag in de 'tijd door het jaar' betreft.",
+      "nederlandse_vertaling": "Vierde zondag van de herfst/wintercyclus in de tijd door het jaar",
       "volksnamen": [
-        "Lichtmiszondag (vanwege de nabijheid van 2 februari: Maria Lichtmis/Presentatie van de Heer)"
+        "Zondag van de Zaligsprekingen"
       ]
     },
     "bijzondere_zondag_pkn": {
       "is_bijzonder": false,
       "naam": null,
-      "toelichting": "Hoewel er geen landelijke themadag is vastgesteld voor deze datum, valt 1 februari 2026 op de dag vóór Maria Lichtmis (2 februari). In veel oecumenisch georiënteerde gemeenten wordt dit feest op de dichtstbijzijnde zondag gememoreerd als afsluiting van de lichtkring rond Kerst/Epifanie."
+      "toelichting": "Hoewel 1 februari geen vaste themadag is in de PKN-kalender, valt deze datum vaak samen met de start van de voorbereidingen voor de Veertigdagentijd-campagne van Kerk in Actie."
     },
     "liturgische_kleur": {
       "kleur": "groen",
-      "symboliek": "Groen is de kleur van de 'Tijd door het jaar', symbool voor groei, hoop en het alledaagse leven waarin het geloof gestalte krijgt. Indien de gemeente ervoor kiest om de Epifaniëntijd als feesttijd te benadrukken (of Lichtmis te vieren), kan wit gebruikt worden, maar groen is de standaard volgens het Dienstboek voor de zondagen na de 1e zondag na Epifanie.",
+      "symboliek": "Groen staat voor leven, groei, hoop en de navolging van Christus in het dagelijks leven.",
       "praktische_suggesties": [
-        "Eenvoudige groene schikking met elementen die 'groei' of 'het gewone leven' symboliseren.",
-        "Gezien de lezingen (Zaligsprekingen) kan een schikking met eenvoudige veldbloemen of grassen de 'nederigheid' verbeelden."
+        "Groen antependium en stola",
+        "Bloemschikking met veel bladgroen en eenvoudige witte of gele accenten om de eenvoud van de 'armen van geest' te symboliseren"
       ]
     },
     "lezingen": {
       "eerste_lezing": {
-        "referentie": "Sefanja 2:3; 3:12-13",
+        "referentie": "Sefanja 2,3; 3,12-13",
         "boek": "Sefanja",
         "hoofdstuk": 2,
-        "verzen": "3; 3:12-13",
-        "thema": "De oproep tot ootmoed en de belofte voor het 'ellendig en arm volk' dat bij de Heer schuilt."
+        "verzen": "3; 12-13",
+        "thema": "De oproep aan de nederigen om de Heer te zoeken en de belofte van een overblijfsel dat op Gods naam vertrouwt."
       },
       "epistel": {
-        "referentie": "1 Korintiërs 1:26-31",
+        "referentie": "1 Korintiërs 1,26-31",
         "boek": "1 Korintiërs",
         "hoofdstuk": 1,
         "verzen": "26-31",
-        "thema": "Gods verkiezing van het dwaze en zwakke om het sterke te beschamen; roemen in de Heer."
+        "thema": "God kiest wat in de ogen van de wereld dwaas, zwak en onbeduidend is om de wijzen en sterken te beschamen."
       },
       "evangelie": {
-        "referentie": "Matteüs 5:1-12a",
+        "referentie": "Matteüs 5,1-12a",
         "boek": "Matteüs",
         "hoofdstuk": 5,
         "verzen": "1-12a",
-        "thema": "De Zaligsprekingen: de grondwet van het Koninkrijk der Hemelen, waarin de waarden van de wereld worden omgekeerd."
+        "thema": "De Zaligsprekingen: de opening van de Bergrede waarin Jezus het geluk verkondigt voor wie marginaal of lijdend zijn."
       },
       "psalm": {
         "referentie": "Psalm 146",
         "nummer": 146,
-        "verzen": null,
-        "antifoon": "Zing, mijn ziel, voor God uw Here"
+        "verzen": "1-10",
+        "antifoon": "Gelukkig wie de God van Jakob tot hulp heeft, wie zijn hoop vestigt op de Heer, zijn God."
       },
-      "alternatieve_lezingen": [],
-      "thematische_samenhang": "De rode draad is de 'omkering van waarden' in het Koninkrijk van God. Sefanja spreekt over een 'ootmoedig en gering' overblijfsel dat behouden wordt. Paulus benadrukt dat God niet de 'wijzen en machtigen' uitkiest, maar het zwakke. In het Evangelie opent Jezus de Bergrede met de Zaligsprekingen, waarin de 'armen van geest' en de 'zachtmoedigen' gelukkig worden geprezen. Het gaat over Gods voorkeursoptie voor wie niets heeft om op te roemen behalve God zelf."
+      "alternatieve_lezingen": [
+        {
+          "referentie": "Micha 6,1-8",
+          "reden": "Vaak gebruikt als alternatieve profetenlezing in jaar A om de ethische eis van God (recht doen, trouw betrachten) te benadrukken."
+        }
+      ],
+      "thematische_samenhang": "De rode draad is de 'omgekeerde wereld' van het Koninkrijk van God. Sefanja spreekt over de 'nederigen van het land', Paulus benadrukt dat God het onbeduidende kiest, en Jezus verklaart juist de armen en treurenden gelukkig. Psalm 146 bezingt de God die recht doet aan de verdrukten."
     },
     "thematiek": {
-      "centraal_thema": "De kracht van de nederigheid / Gelukkig de armen van geest",
-      "stemming": "bemoediging, verwondering, ethisch appel",
-      "karakter_zondag": "Onderwijzend en pastoraal. Het is de start van de lezing van de Bergrede (Matteüs-jaar). De zondag heeft een sterk ethisch karakter, maar gefundeerd in genade (indicatief gaat aan imperatief vooraf).",
-      "rode_draad_liturgisch_jaar": "Na de openbaring van Jezus' identiteit in de voorgaande Epifanie-zondagen (Doop, Bruiloft te Kana, Roeping discipelen), begint Jezus nu zijn onderricht. We gaan van 'Wie is Hij?' naar 'Wat leert Hij ons over het leven in het Koninkrijk?'.",
+      "centraal_thema": "Groot geluk voor wie klein is bij God",
+      "stemming": "hoop",
+      "karakter_zondag": "Onderwijzend en bemoedigend; de focus ligt op de identiteit van de christelijke gemeente als een gemeenschap van 'geroepenen' die niet op eigen kracht vertrouwen.",
+      "rode_draad_liturgisch_jaar": "In de weken na Epifanie wordt de identiteit van Jezus en zijn onderricht stapsgewijs onthuld. Na de roeping van de discipelen (vorige zondag) volgt nu de kern van zijn onderwijs (de Bergrede).",
       "centrale_geloofsvragen": [
-        "Wat betekent het om 'gelukkig' of 'zalig' te zijn in Gods ogen?",
-        "Hoe verhoudt christelijke nederigheid zich tot onze prestatiecultuur?",
-        "Waarom kiest God het zwakke uit?"
+        "Wat betekent 'geluk' in het licht van het Evangelie versus de maatschappelijke standaard?",
+        "Hoe verhoudt de christelijke nederigheid zich tot zelfbewustzijn in de 21e eeuw?",
+        "Durven wij te vertrouwen op God wanneer we onze eigen zwakheid ervaren?"
       ]
     },
     "historische_achtergrond": {
-      "oorsprong_vroege_kerk": "De Bergrede (Matteüs 5-7) werd in de vroege kerk gezien als de nieuwe Thora, waarbij Jezus als de nieuwe Mozes op de berg verschijnt. De koppeling met Sefanja en 1 Korintiërs onderstreept de continuïteit van Gods zorg voor de 'anawim' (de armen van JHWH).",
-      "hervormde_traditie": "In de reformatorische traditie wordt bij de Zaligsprekingen vaak benadrukt dat dit geen voorwaarden zijn om de hemel te verdienen, maar kenmerken van hen die door genade in het Koninkrijk zijn opgenomen. Het is spiegel en belofte tegelijk.",
-      "gereformeerde_traditie": "Nadruk op de antithese: de wijsheid van de wereld versus de dwaasheid van het kruis (1 Korintiërs). De gemeente als 'uitverkoren vreemdelingen'.",
-      "lutherse_traditie": "Sterke nadruk op de 'theologia crucis' in 1 Korintiërs 1: God openbaart zich in het zwakke en het lijden, niet in menselijke glorie.",
-      "oecumenische_dimensie": "De Zaligsprekingen vormen wereldwijd een kerntekst voor christelijke ethiek en sociale gerechtigheid."
-    },
-    "liedsuggesties": {
-      "_verificatie_opmerking": "Alle liederen zijn geverifieerd via de inhoudsopgave van het Liedboek 2013.",
-      "opening_intocht": [
-        {
-          "nummer": "Lied 275",
-          "titel": "Heer onze Heer, hoe zijt Gij aanwezig",
-          "eerste_regel": "Heer onze Heer, hoe zijt Gij aanwezig",
-          "toelichting": "Een klassiek openingslied dat Gods aanwezigheid en de lofprijzing centraal stelt, passend bij de sfeer van Psalm 146."
-        },
-        {
-          "nummer": "Psalm 146",
-          "titel": "Zing, mijn ziel, voor God uw Here",
-          "eerste_regel": "Zing, mijn ziel, voor God uw Here",
-          "toelichting": "De berijming van de Psalm van de zondag. Directe aansluiting bij het leesrooster."
-        }
-      ],
-      "kyrie_gloria": [
-        {
-          "nummer": "Lied 302",
-          "titel": "God in den hoog’ alleen zij eer",
-          "eerste_regel": "God in den hoog’ alleen zij eer",
-          "toelichting": "Klassiek Gloria-lied, passend in de Epifaniëntijd."
-        },
-        {
-          "nummer": "Lied 299e",
-          "titel": "Kyrie- en Gloriahymne (U alle eer)",
-          "eerste_regel": "Heer, ontferm u",
-          "toelichting": "Eenvoudig Kyrie (en Gloria), passend bij de nederigheid van de lezingen."
-        }
-      ],
-      "bij_lezingen": [
-        {
-          "nummer": "Lied 989",
-          "titel": "Gelukkig de armen van geest",
-          "eerste_regel": "Gelukkig de armen van geest",
-          "toelichting": "Dit lied is een directe berijming/bewerking van de Zaligsprekingen (Matteüs 5), de evangelielezing van deze zondag."
-        },
-        {
-          "nummer": "Lied 996",
-          "titel": "Om eenvoudigen van geest",
-          "eerste_regel": "Om eenvoudigen van geest",
-          "toelichting": "Sluit naadloos aan bij 1 Korintiërs 1 en Sefanja: God kiest het eenvoudige en zwakke."
-        },
-        {
-          "nummer": "Lied 838",
-          "titel": "O grote God die liefde zijt",
-          "eerste_regel": "O grote God die liefde zijt",
-          "toelichting": "Een lied van overgave en nederigheid ('O Vader, maak mij klein'), wat resoneert met de oproep tot ootmoed in Sefanja."
-        }
-      ],
-      "credo": [
-        {
-          "nummer": "Lied 340b",
-          "titel": "Ik geloof in God de Vader, de Almachtige",
-          "eerste_regel": "Ik geloof in God de Vader, de Almachtige",
-          "toelichting": "Apostolische geloofsbelijdenis."
-        }
-      ],
-      "collecte_gaven": [
-        {
-          "nummer": "Lied 978",
-          "titel": "Aan U behoort, o Heer der heren",
-          "eerste_regel": "Aan U behoort, o Heer der heren",
-          "toelichting": "Erkent dat alles van God is ('aard' en hemel, en wat leeft'), wat past bij de houding van afhankelijkheid uit de lezingen."
-        }
-      ],
-      "zending_zegen": [
-        {
-          "nummer": "Lied 416",
-          "titel": "Ga met God en Hij zal met je zijn",
-          "eerste_regel": "Ga met God en Hij zal met je zijn",
-          "toelichting": "Een zegenbede die bemoedigt om de weg van het Koninkrijk in de wereld te gaan."
-        },
-        {
-          "nummer": "Lied 905",
-          "titel": "Wie zich door God alleen laat leiden",
-          "eerste_regel": "Wie zich door God alleen laat leiden",
-          "toelichting": "Vertrouwen op God in plaats van op eigen kracht, kern van 1 Korintiërs 1."
-        }
-      ]
+      "oorsprong_vroege_kerk": "De Bergrede is historisch gezien de 'Magna Carta' van het christendom, vroegtijdig gebruikt voor catechese aan dopelingen.",
+      "hervormde_traditie": "Sterke nadruk op de wet als regel van de dankbaarheid; de Zaligsprekingen worden hierbij vaak gezien als de typering van de vernieuwde mens door de Geest.",
+      "gereformeerde_traditie": "Focus op de soevereiniteit van God die verkiest (1 Kor 1) en de ethische implicaties van het Koninkrijk in de samenleving.",
+      "lutherse_traditie": "Nadruk op de paradox van 'simul iustus et peccator': de mens is tegelijk zondaar en rechtvaardige, wat weerspiegeld wordt in de Zaligsprekingen.",
+      "oecumenische_dimensie": "De lezingen volgen het Revised Common Lectionary (RCL), wat wereldwijd in protestantse en anglicaanse kerken eenheid schept in de verkondiging op deze zondag."
     },
     "praktische_handvatten": {
-      "liturgische_orde_suggestie": "Orde van dienst voor de Schriftlezing en Prediking (Dienstboek I). Omdat het nog geen Veertigdagentijd is, worden Gloria en Halleluja gewoon gezongen.",
+      "liturgische_orde_suggestie": "Klassieke PKN-orde: Votum en Groet, Gebed om ontferming, Loflied (Gloria), Schriftlezingen, Verkondiging, Gebeden, Inzameling van de gaven, Slotlied en Zegen.",
       "aanpassingen_periode": [
         {
-          "element": "Halleluja",
-          "aanpassing": "Wel zingen",
-          "reden": "De Veertigdagentijd begint pas op 18 februari; in de Epifaniëntijd/Tijd door het jaar is het Halleluja een vast onderdeel."
+          "element": "Gloria",
+          "aanpassing": "Voluit zingen",
+          "reden": "Het is de tijd door het jaar, een periode van viering van het licht van Christus."
+        },
+        {
+          "element": "Halleluja-vers",
+          "aanpassing": "Zingen voor het Evangelie",
+          "reden": "Bevestiging van de komst van het Woord."
         }
       ],
       "gebedsmotieven": [
-        "Bidden voor de 'armen van geest' en hen die maatschappelijk gezien niet meetellen.",
-        "Danken voor de omkering van waarden in Gods Koninkrijk.",
-        "Bidden om nederigheid voor de kerk en haar leiders.",
-        "Voorbede voor vervolgde christenen (die vaak in de positie van de Zaligsprekingen verkeren)."
+        "Voor mensen die zich onbeduidend of vergeten voelen in de samenleving.",
+        "Om wijsheid voor de kerk om de 'dwaze' weg van het kruis te durven gaan.",
+        "Voor vervolgde christenen (verwijzend naar de laatste zaligspreking)."
       ],
       "kindernevendienst": {
-        "thema": "Geluk zit in een klein hoekje / De omgekeerde wereld",
+        "thema": "Echt geluk",
         "suggesties": [
-          "Werk met 'gelukspoppetjes' maar geef er een andere betekenis aan.",
-          "Maak een 'berg' van kussens en vertel het verhaal van Jezus die de berg op gaat.",
-          "Spiegelverhaal: laat zien dat wat in de spiegel staat andersom is (links is rechts). Zo is Gods wereld ook 'andersom' vergeleken met onze wereld."
+          "Gesprek over wat kinderen gelukkig maakt versus wat Jezus zegt.",
+          "Knutselopdracht: een 'gelukskaart' maken voor iemand die het moeilijk heeft."
         ]
       },
       "visuele_elementen": [
-        "Projectie: Een afbeelding van de Bergrede (bijv. Fra Angelico of een moderne interpretatie).",
-        "Symboliek: Een eenvoudige, ruwe schaal of kruik op de liturgische tafel als symbool voor leegte die gevuld kan worden (armoede van geest).",
-        "Woordwolk projecteren met woorden uit 1 Korintiërs: 'dwaas', 'zwak', 'niets', 'onaanzienlijk' die groot worden gemaakt."
+        "Projectie van een berglandschap of een afbeelding van de Bergrede.",
+        "Een schaal met 'onopvallende' veldbloemen om de schoonheid van het eenvoudige te tonen."
       ]
     },
     "dagelijks_leesrooster": {
       "week_voorafgaand": [
-        "In de week voor deze zondag (na de 3e zondag na Epifanie) wordt vaak gelezen uit de profeten die het licht voor de heidenen aankondigen, of vervolgteksten uit Matteüs 4 (roeping discipelen)."
+        "Maandag: Psalm 37,1-17 (Vertrouw op de Heer)",
+        "Dinsdag: Ruth 2,1-16 (Boaz en de arme Ruth)",
+        "Woensdag: Lukas 18,15-30 (De rijke jongeling en de kinderen)",
+        "Donderdag: Psalm 15 (Wie mag vertoeven in Gods tent?)",
+        "Vrijdag: 1 Korintiërs 2,1-12 (De wijsheid van God)",
+        "Zaterdag: Micha 7,1-7 (Wachten op de God van mijn heil)"
       ],
-      "verbinding_zondag": "De dagelijkse lezingen werken toe naar het moment dat Jezus, na zijn doop en eerste optreden, nu gaat zitten om zijn leerlingen te onderwijzen. De zondag markeert de overgang van 'actie' (genezingen, roeping) naar 'lering' (Bergrede)."
+      "verbinding_zondag": "De weeklezingen bereiden de gemeente voor op de thematiek van afhankelijkheid en de keuze voor Gods wijsheid boven menselijke macht, uitmondend in de Zaligsprekingen."
     }
   },
   "02_sociaal_maatschappelijke_context": {
@@ -1018,77 +949,271 @@
       ]
     }
   },
-  "08_exegese": {
+  "08_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 102,
+      "contextuele_reflectie": "De gekozen liederen slaan een brug tussen de Bijbelse 'omgekeerde wereld' en de huidige winteroorlog in Oekraïne. Waar de wereld macht en geweld toont, zingen we over de kracht van vrede (Matteüs 5:9) en de 'dwaasheid' van het kruis (1 Korintiërs 1). Voor de hechte gemeenschap in Ameide, die streeft naar een 'open poort', bieden de liederen over gastvrijheid en het geluk van de nederigen een sterke bevestiging van hun lokale visie.",
+      "korte_observatie": "Er is een overvloed aan liederen die de Zaligsprekingen en de paradox van 1 Korintiërs 1 verwoorden, waardoor een thematisch zeer sterke liturgie rondom 'kleinheid en geluk' gevormd kan worden."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "146c",
+        "titel": "Alles wat adem heeft love de Here",
+        "type_match": "Schriftlezing",
+        "match_detail": "Psalm 146",
+        "toelichting": "Een directe lofzang op de God die recht doet aan verdrukten, passend bij de rode draad van de lezingen.",
+        "suggestie_gebruik": "Intochtlied of Loflied"
+      },
+      {
+        "nummer": "989",
+        "titel": "Gelukkig de armen van geest",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 5:3-10",
+        "toelichting": "De kerntekst van het evangelie (de Zaligsprekingen) op muziek gezet.",
+        "suggestie_gebruik": "Antwoordlied na het Evangelie"
+      },
+      {
+        "nummer": "882",
+        "titel": "Allerhoogste God, heilig en glorierijk",
+        "type_match": "Schriftlezing",
+        "match_detail": "1 Korintiërs 1:18, 23",
+        "toelichting": "Verwoordt de 'dwaasheid van het kruis' die Paulus centraal stelt in de epistellezing.",
+        "suggestie_gebruik": "Lied na de Epistellezing"
+      },
+      {
+        "nummer": "1010",
+        "titel": "Geef vrede, Heer, geef vrede",
+        "type_match": "Contextueel",
+        "match_detail": "Matteüs 5:9 / Actualiteit Oekraïne",
+        "toelichting": "Verbindt de zaligspreking voor vredestichters direct met de actuele nood van de winteroorlog.",
+        "suggestie_gebruik": "Gebedslied / Voorbeden"
+      },
+      {
+        "nummer": "597",
+        "titel": "Wees hier aanwezig, licht in ons midden",
+        "type_match": "Contextueel",
+        "match_detail": "Visie Ameide (Open Poort)",
+        "toelichting": "Sluit aan bij de wens van de Sionkerk om een gastvrije, open gemeenschap te zijn.",
+        "suggestie_gebruik": "Aanvangslied"
+      },
+      {
+        "nummer": "734",
+        "titel": "Beati voi poveri",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 5:3-10",
+        "toelichting": "Meditatieve Taizé-zang die de focus legt op het geluk van de armen.",
+        "suggestie_gebruik": "Meditatief moment na de preek"
+      },
+      {
+        "nummer": "321",
+        "titel": "Niet als een storm, als een vloed",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 5:3",
+        "toelichting": "Benadrukt de zachtmoedigheid en de stilte waarin God gekend wil worden.",
+        "suggestie_gebruik": "Lied voor de Schriftlezing"
+      },
+      {
+        "nummer": "1000",
+        "titel": "Wij zagen hoe het spoor van God",
+        "type_match": "Thematisch",
+        "match_detail": "Hoop in de geschiedenis",
+        "toelichting": "Een lied dat hoop geeft in een wereld die getekend is door strijd en onrecht.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "1",
+        "titel": "Gelukkig zal je zijn",
+        "type_match": "Thematisch",
+        "match_detail": "Zaligsprekingen",
+        "toelichting": "Een toegankelijke verwoording van het 'grote geluk' voor wie klein is.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "581",
+        "titel": "Want het geknakte riet",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 5:4",
+        "toelichting": "Biedt troost aan de treurenden, een centrale belofte uit de Bergrede.",
+        "suggestie_gebruik": "Lied na de verkondiging"
+      },
+      {
+        "nummer": "682",
+        "titel": "Laat heel de wereld het zien",
+        "type_match": "Schriftlezing",
+        "match_detail": "1 Korintiërs 1:18",
+        "toelichting": "Zingt over de kracht van het kruis, wat voor de wereld een dwaasheid is.",
+        "suggestie_gebruik": "Geloofsbelijdenis"
+      },
+      {
+        "nummer": "685",
+        "titel": "Laat zo je licht maar schijnen",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 5:16",
+        "toelichting": "Praktische opdracht die volgt op de zaligsprekingen: licht zijn in de wereld.",
+        "suggestie_gebruik": "Slotlied / Zending"
+      },
+      {
+        "nummer": "731",
+        "titel": "Soon and very soon",
+        "type_match": "Contextueel",
+        "match_detail": "Hoop in oorlogstijd",
+        "toelichting": "Een krachtig lied van verwachting dat de dood niet het laatste woord heeft.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "414",
+        "titel": "Jezus zegt, dat Hij hier van ons verwacht",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 5:13-16",
+        "toelichting": "Zeer geschikt voor de aanwezige jongeren in Ameide om de Bergrede concreet te maken.",
+        "suggestie_gebruik": "Kinderlied / Lied met de kinderen"
+      },
+      {
+        "nummer": "253",
+        "titel": "Geef vrede, Heer, geef vrede",
+        "type_match": "Contextueel",
+        "match_detail": "Vredestichters / Actualiteit",
+        "toelichting": "Gebed om vrede in een onrustige wereld, aansluitend bij Matteüs 5:9.",
+        "suggestie_gebruik": "Gebedslied"
+      },
+      {
+        "nummer": "10",
+        "titel": "HERE, maak mij uwe wegen",
+        "type_match": "Thematisch",
+        "match_detail": "Nederigheid en leiding",
+        "toelichting": "Vraagt om de weg van God te gaan, passend bij de oproep van Sefanja.",
+        "suggestie_gebruik": "Gebed om de opening van het Woord"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "14",
+        "titel": "Alles wat adem heeft love de Here",
+        "type_match": "Schriftlezing",
+        "match_detail": "Psalm 146",
+        "toelichting": "Klassieke lofzang op de God van Jakob die trouw blijft tot in eeuwigheid.",
+        "suggestie_gebruik": "Loflied"
+      },
+      {
+        "nummer": "82",
+        "titel": "Wie zal voor God verschijnen?",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 5:17",
+        "toelichting": "Reflecteert op de zuiverheid van hart die in de Bergrede wordt gevraagd.",
+        "suggestie_gebruik": "Leefregel / Lied na de wet"
+      },
+      {
+        "nummer": "591",
+        "titel": "Weet je wat de Heer nu van ons verwacht?",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 5:14-16",
+        "toelichting": "Vertaalt de zaligsprekingen naar een actieve houding in de samenleving.",
+        "suggestie_gebruik": "Zendingslied"
+      },
+      {
+        "nummer": "269",
+        "titel": "Roep uit aan alle stranden",
+        "type_match": "Schriftlezing",
+        "match_detail": "1 Korintiërs 1:18",
+        "toelichting": "Verkondiging van het kruis als de enige redding, tegenover menselijke wijsheid.",
+        "suggestie_gebruik": "Zendingslied"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "146",
+        "titel": "Ik wil zingen al mijn dagen",
+        "type_match": "Schriftlezing",
+        "match_detail": "Psalm 146",
+        "toelichting": "De berijmde psalm van de zondag: God die blinden de ogen opent en vreemdelingen behoedt.",
+        "suggestie_gebruik": "Psalm na de eerste lezing"
+      },
+      {
+        "nummer": "1",
+        "titel": "Gelukkig wie niet deelneemt aan ’t beraad",
+        "type_match": "Thematisch",
+        "match_detail": "Geluk / Welzalig",
+        "toelichting": "Sluit aan bij het thema 'Gelukkig de...' (Zaligsprekingen) vanuit het perspectief van de Psalmen.",
+        "suggestie_gebruik": "Intochtlied"
+      }
+    ]
+  },
+  "08a_exegese": {
     "per_lezing": [
       {
-        "referentie": "Sefanja 2:3; 3:12-13",
+        "referentie": "Sefanja 2,3; 3,12-13",
         "afbakening_vertaling": {
           "vertaalvergelijking": [
             {
               "vertaling": "NBV21 vs. Naardense Bijbel (NB)",
-              "significante_verschillen": "In 2:3 vertaalt de NBV21 'anwe' met 'nederig', terwijl de NB kiest voor 'ootmoedigen'. 'Ootmoed' heeft een sterkere religieuze lading (besef van kleinheid tegenover God) dan het meer sociale 'nederig'.\nIn 3:12 spreekt de NBV21 over een 'arm en zwak volk', waar de NB spreekt over een 'gemeenschap ootmoedig en arm'. De NBV21 legt de nadruk op de sociologische status (zwak), de NB op de geestelijke houding en het collectief ('gemeenschap').\nDe NBV21 vertaalt 'chasu' in 3:12 met 'een toevlucht vinden', wat een resultaat impliceert. De NB vertaalt 'schuilen', wat een voortdurende actie/houding weergeeft."
+              "significante_verschillen": "In 2:3 vertaalt NBV21 'anawim' met 'nederig', terwijl NB kiest voor 'ootmoedigen'. 'Ootmoed' (moed om laag te zijn) heeft een sterkere religieuze lading van afhankelijkheid dan het socialere 'nederig'.\nIn 3:12 spreekt NBV21 over een 'arm en zwak volk', waar NB spreekt over 'een gemeenschap ootmoedig en arm'. NBV21 legt de nadruk op de sociologische status (zwak), NB op de geestelijke houding (ootmoedig).\nNBV21 vertaalt 'chasah' in 3:12 met 'een toevlucht vinden', NB met 'schuilen'. 'Schuilen' is actiever en beeldender (denk aan schuilen voor de storm/oordeel)."
             }
           ],
-          "werkvertaling_cruciaal": "Sefanja 3:12: 'En Ik zal in uw midden doen overblijven een volk, ellendig en gering [‘ani wadal], en zij zullen schuilen [wechasu] in de Naam van de HEER.'"
+          "werkvertaling_cruciaal": "Sefanja 2:3: 'Zoekt de HEER, alle gebogenen van het land, die zijn recht volbrengen; zoekt gerechtigheid, zoekt ootmoed/nederigheid. Misschien worden jullie verborgen op de dag van de toorn van de HEER.'"
         },
         "tekstkritiek": {
           "relevante_varianten": [],
-          "conclusie": "Geen significante tekstkritische varianten in de aangeleverde perikoop die de exegese beïnvloeden."
+          "conclusie": "Geen significante tekstkritische varianten voor deze perikoop in de gangbare kritische edities die de theologische strekking wijzigen."
         },
         "woordstudie": [
           {
-            "woord_origineel": "עֲנָוָה ('anavah) / עָנִי ('ani)",
-            "transliteratie": "‘anavah / ‘ani",
-            "vertaling": "ootmoed / nederigheid / armoede",
-            "semantische_range": "Het woordcluster rond 'anah' (gebogen zijn) duidt op mensen die maatschappelijk onderdrukt zijn, geen land bezitten en economisch afhankelijk zijn. In profetische teksten verschuift de betekenis naar een religieuze houding: zij die weten dat ze volledig afhankelijk zijn van YHWH omdat ze geen aardse macht hebben. Het is de 'vroomheid van de armen'.",
-            "gebruik_elders": "Vaak in de Psalmen gebruikt voor degenen die God aanroepen vanuit nood (bijv. Ps 22:25).",
-            "meerduidigheid": "Het begrip is zowel sociologisch (arm) als theologisch (vroom/afhankelijk)."
+            "woord_origineel": "Hebreeuws: עֲנָוִים (anawim)",
+            "transliteratie": "anawim",
+            "vertaling": "nederigen / armen / verdrukten",
+            "semantische_range": "De term duidt niet louter op economische armoede, maar op een sociale en religieuze status van afhankelijkheid. Het zijn degenen die geen macht hebben om zichzelf te handhaven en daarom volledig op God zijn aangewezen. In de profetische traditie wordt dit vaak de eretitel voor het ware Israël.",
+            "gebruik_elders": "Psalm 37:11 ('de zachtmoedigen zullen de aarde erven' - direct citaat in Matteüs 5:5); Jesaja 61:1.",
+            "meerduidigheid": "Het woord balanceert tussen 'onderdrukt zijn' (passief) en 'nederig zijn' (actieve houding)."
           },
           {
-            "woord_origineel": "שְׁאֵרִית (she'erit)",
+            "woord_origineel": "Hebreeuws: שְׁאֵרִית (she'erit)",
             "transliteratie": "she'erit",
-            "vertaling": "overblijfsel / rest",
-            "semantische_range": "Duidt op het deel van het volk dat een catastrofe of oordeel overleeft. In de profetie is dit vaak de drager van de belofte voor de toekomst. Het is een term van hoop (er is toekomst) maar ook van oordeel (slechts een rest blijft over).",
-            "gebruik_elders": "Jesaja 10:20-22 (De rest zal terugkeren).",
+            "vertaling": "rest / overblijfsel",
+            "semantische_range": "Een technische term in de profetie voor het deel van het volk dat het oordeel overleeft en waarmee God verder gaat. Het impliceert loutering en reductie, maar ook hoop.",
+            "gebruik_elders": "Jesaja 10:20-22; Micha 4:7.",
             "meerduidigheid": null
           },
           {
-            "woord_origineel": "חָסָה (chasah)",
+            "woord_origineel": "Hebreeuws: חָסָה (chasah)",
             "transliteratie": "chasah",
             "vertaling": "schuilen / toevlucht zoeken",
-            "semantische_range": "Letterlijk: bescherming zoeken tegen gevaar (zoals in een rotskloof of onder vleugels). Figuurlijk: het fundamentele vertrouwen op YHWH als enige beschermer.",
-            "gebruik_elders": "Psalm 36:8 (schuilen onder de schaduw van uw vleugels).",
+            "semantische_range": "Letterlijk: bescherming zoeken tegen gevaar (zoals in een rotskloof of onder vleugels). Figuurlijk: vertrouwen stellen in God.",
+            "gebruik_elders": "Psalm 2:12; Psalm 46:1.",
             "meerduidigheid": null
           }
         ],
         "literaire_analyse": {
           "genre": "profetie",
-          "genre_conventies": "Oproep tot bekering (2:3) gevolgd door een heilsbelofte voor de toekomst (3:12-13). Kenmerkend is de conditionele sfeer ('misschien') en de focus op het 'overblijfsel'.",
+          "genre_conventies": "Oordeelsaankondiging gevolgd door heilsbelofte. De profeet spreekt namens YHWH, vaak met imperatieven ('Zoekt!') en toekomstvisioenen ('Ik zal overlaten').",
           "structuur": {
-            "opbouw": "Deel 1 (2:3): Drievoudige imperatief (Zoek de HEER, zoek gerechtigheid, zoek ootmoed) met een motivering (misschien verborgen worden).\nDeel 2 (3:12-13): Goddelijke toezegging (Ik zal overlaten) en beschrijving van de ethische kwaliteit van dit overblijfsel.",
+            "opbouw": "De tekst bestaat uit twee delen: een oproep in het heden (2:3) en een belofte voor de toekomst (3:12-13). De tussenliggende verzen (oordeel over de volken en Jeruzalem) zijn in het leesrooster weggelaten, waardoor de focus verschuift van oordeel naar loutering.",
             "cesuren": [
-              "Tussen 2:3 (oproep aan hoorders nu) en 3:12 (belofte over de toekomst)."
+              "Tussen 2:3 (oproep) en 3:12 (goddelijke belofte)."
             ],
-            "centrum": "De overgang van menselijk zoeken (2:3) naar Goddelijk bewaren (3:12).",
-            "chiasme_inclusio": null
+            "centrum": "De overgang van de menselijke opdracht ('zoek') naar de goddelijke actie ('Ik zal overlaten').",
+            "chiasme_inclusio": "Er is een thematische inclusio rondom 'ootmoed/nederigheid' (2:3 en 3:12) en 'recht/onrecht' (2:3 en 3:13)."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
-              "Herhaling (drievoudig 'baqshu' - zoek - in 2:3)",
-              "Woordspel ('nistar' - verborgen worden - allitereert met de naam Sefanja - 'YHWH heeft verborgen')"
+              "Herhaling (drievoudig 'Zoekt' in 2:3)",
+              "Woordspel ('Sefanja' betekent 'YHWH heeft verborgen', wat resoneert in 2:3 'misschien zult ge verborgen worden')",
+              "Contrast (de hoogmoedigen die worden weggedaan vs. de nederigen die overblijven)"
             ],
-            "retorische_strategie": "De profeet spreekt niet de hele natie aan, maar specifiek de 'ootmoedigen'. Hij motiveert hen door de dreiging van de 'dag van de toorn' te koppelen aan de hoop op bescherming, niet door kracht, maar door verootmoediging.",
-            "effect_lezer": "De lezer wordt gedwongen zijn eigen positie te bepalen: hoor ik bij de trotse meerderheid of bij de ootmoedige minderheid?"
+            "retorische_strategie": "De profeet probeert de hoorders te bewegen tot een houding van verootmoediging door de onzekerheid van het oordeel ('misschien') te koppelen aan de zekerheid van Gods karakter.",
+            "effect_lezer": "Het creëert een besef van urgentie en afhankelijkheid; zelfverzekerdheid is misplaatst."
           },
           "karakters_plot": {
             "personages": [
-              "YHWH (de handelende God die oordeelt en bewaart)",
-              "De ootmoedigen van het land (de aangesprokenen)",
-              "Het overblijfsel van Israël (de toekomstige groep)"
+              "YHWH (spreker/actor)",
+              "De ootmoedigen van het land (aangesprokenen)",
+              "De hoogmoedigen (impliciete tegenstanders, weggelaten in lezing maar contextueel aanwezig)"
             ],
-            "karakterisering": "YHWH is zowel dreigend (toorn) als zorgzaam (schuilplaats). De ootmoedigen worden gekenmerkt door rechtvaardigheid en waarheid (geen bedrog).",
-            "verhaallijn": "Van dreigend oordeel naar een gezuiverde, vredige toekomst voor een restgroep.",
-            "verzwegen_gesuggereerd": "De 'trotsen' of degenen die niet zoeken, worden impliciet veroordeeld en zullen niet overblijven."
+            "karakterisering": "YHWH is de rechter die ook beschermer is. De ootmoedigen worden getekend door hun ethisch handelen (recht doen) en hun vertrouwen (schuilen).",
+            "verhaallijn": "Van dreigend oordeel naar een gezuiverde toekomst voor een restgroep.",
+            "verzwegen_gesuggereerd": "Het lot van degenen die niet zoeken wordt verzwegen in de lezing, maar is in de context (oordeel) duidelijk."
           }
         },
         "structuralistische_analyse": {
@@ -1096,97 +1221,99 @@
             "scenarios": [
               {
                 "scène": "1 (Sef 2:3)",
-                "tijd": "Nu (tijd van de oproep) -> Toekomst ('dag van de toorn')",
-                "plaats": "Het land",
-                "actant": "De ootmoedigen / nederigen",
-                "handeling": "Zoeken (de HEER, recht, nederigheid)",
+                "tijd": "Heden (imperatief) -> Toekomst (dag van toorn)",
+                "plaats": "Het land (Juda)",
+                "actant": "De ootmoedigen van het land",
+                "handeling": "Zoeken (de HEER, gerechtigheid, ootmoed)",
                 "medewerker": [
-                  "De wetten van God (impliciet)"
+                  "(De wetten/recht van God - impliciet in 'die zijn recht volbrengen')"
                 ],
                 "opponent": [
-                  "De toorn van de HEER (als dreiging)"
+                  "De dag van de toorn (dreiging)"
                 ]
               },
               {
                 "scène": "2 (Sef 3:12-13)",
-                "tijd": "Toekomst (eschatologisch)",
-                "plaats": "Binnen uw muren / Jeruzalem (impliciet 'in uw midden')",
+                "tijd": "Toekomst ('Ik zal overlaten')",
+                "plaats": "In uw midden (Jeruzalem/Sion)",
                 "actant": "YHWH",
-                "handeling": "Doen overblijven / achterlaten",
+                "handeling": "Overlaten (een rest)",
                 "medewerker": [],
-                "opponent": []
+                "opponent": [
+                  "(De hoogmoedigen - impliciet verwijderd)"
+                ]
               },
               {
                 "scène": "3 (Sef 3:13)",
-                "tijd": "Toekomst",
-                "plaats": "Weidegronden (metaforisch)",
-                "actant": "Het overblijfsel van Israël",
-                "handeling": "Geen onrecht doen, niet liegen, weiden, rustig liggen",
+                "tijd": "Toekomst (eschaon)",
+                "plaats": "Weidegronden",
+                "actant": "De rest van Israël",
+                "handeling": "Niet onrecht doen, niet liegen, weiden, neervlijen",
                 "medewerker": [
-                  "Naam van de HEER (als toevlucht)"
+                  "De Naam van de HEER (waarbij zij schuilen)"
                 ],
                 "opponent": [
-                  "Niemand (die hen opschrikt)"
+                  "Niemand (geen die hen opschrikt)"
                 ]
               }
             ],
-            "schema_regels": "In scène 1 is de mens subject van de imperatief. In scène 2 is YHWH subject van de belofte. In scène 3 is het resultaat (vrede) zichtbaar."
+            "schema_regels": "De actanten wisselen: eerst de mens die moet zoeken, dan God die de rest formeert, dan de rest die ethisch leeft."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "Van het heden met dreiging (dag van toorn) naar een toekomst van rust (weiden zonder schrik).",
-            "actanten_analyse": "De 'ootmoedigen' transformeren van zoekers (2:3) naar vinders/rustenden (3:13). YHWH transformeert van object van zoeken naar subject van redding.",
-            "handelingen_trajecten": "Het traject van 'zoeken' leidt tot 'gevonden worden/overblijven'. Het ethische handelen (recht zoeken) wordt in de toekomst vervolmaakt (geen onrecht meer doen).",
-            "medewerkers_opponenten_analyse": "De grootste opponent is de 'dag van de toorn', die paradoxaal genoeg door YHWH zelf wordt gestuurd. De redding ligt in het schuilen *bij* de Aanstichter van die dag."
+            "tijd_plaats_patroon": "Van een onzeker heden ('misschien') in het land naar een veilige toekomst in het midden van Sion.",
+            "actanten_analyse": "De 'ootmoedigen' (scène 1) transformeren tot de 'rest' (scène 2/3). YHWH is de initiator van deze transformatie.",
+            "handelingen_trajecten": "Traject van zoeken -> gevonden worden/overblijven -> rusten. Van inspanning naar ontspanning.",
+            "medewerkers_opponenten_analyse": "De 'Naam van de HEER' is de cruciale medewerker (schuilplaats). De opponent (toorn/angst) verdwijnt in scène 3."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De imperatief in 2:3 ('misschien zult ge verborgen worden') wordt in 3:12 een indicatief ('Ik zal doen overblijven'). De onzekerheid van de menselijke poging wordt beantwoord door de zekerheid van Gods ingrijpen.",
-            "temporele_ontwikkeling": "Lineair: van oproep voor het oordeel, naar de situatie na het oordeel.",
-            "literaire_elementen": "De term 'ootmoedig' (ani/anav) verbindt begin en eind.",
-            "karakteranalyse": "De kracht van het overblijfsel ligt niet in hun eigen vermogen, maar in hun relatie tot de 'Naam van de HEER'.",
-            "evaluatieve_dimensie": "De tekst waardeert 'kleinheid' en 'waarheid' positief boven macht."
+            "structurele_samenhang": "De imperatief in 2:3 is de voorwaarde voor de belofte in 3:12. De ethiek in 3:13 is het resultaat van het schuilen in 3:12.",
+            "temporele_ontwikkeling": "Lineair: van crisismanagement (zoeken) naar eschatologische vrede.",
+            "literaire_elementen": "De term 'ootmoedig' verbindt begin en eind.",
+            "karakteranalyse": "De kracht van de actant (de rest) ligt niet in eigen macht, maar in de afwezigheid van bedrog en de aanwezigheid van God.",
+            "evaluatieve_dimensie": "De tekst evalueert 'kleinheid' en 'waarheid' positief tegenover macht en leugen."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
-              "Redding door verootmoediging",
-              "Het overblijfsel (The Remnant)",
-              "Ethische zuiverheid als kenmerk van Gods volk"
+              "De omkering van waarden: zwakte is kracht bij God.",
+              "Het overblijfsel (de kerk als minderheid).",
+              "Ethiek als vrucht van vertrouwen."
             ],
-            "structurele_patroon": "Oproep -> Goddelijke Actie -> Resultaat (Vrede).",
-            "theologische_betekenis": "In het gericht van God blijft niet de sterke of trotse staan, maar degene die zich afhankelijk opstelt. De toekomst van Gods volk ligt in een kwalitatieve minderheid, niet in een kwantitatieve massa."
+            "structurele_patroon": "Een beweging van menselijke onzekerheid naar goddelijke zekerheid.",
+            "theologische_betekenis": "Redding wordt niet bereikt door machtsvertoon, maar door verootmoediging en het zoeken van toevlucht bij YHWH. De identiteit van Gods volk is 'nederig en gering'."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "In het aangezicht van Gods oordeel is er slechts één veilige houding: ootmoed en het zoeken van gerechtigheid. God bewaart een rest die niet vertrouwt op eigen kracht, maar schuilt bij Zijn Naam.",
-          "godsbeeld": "God is Rechter (dag van toorn) maar ook Herder en Beschermer voor de nederigen. Hij heeft een voorkeursoptie voor de 'armen van geest'.",
-          "mensbeeld_wereld_heil": "De mens is geneigd tot hoogmoed en onrecht. Heil is niet het vermijden van oordeel door kracht, maar door 'verborgen worden' in God. De wereld wordt gezuiverd tot een plek van waarheid en rust.",
+          "centrale_boodschap": "In het aangezicht van het oordeel is er maar één veilige plek: de nederige afhankelijkheid van God. God bewaart een rest die niet vertrouwt op eigen kracht, maar op Zijn Naam, en die zich kenmerkt door integriteit.",
+          "godsbeeld": "God is soeverein Rechter (toorn), maar ook de Beschermer van de zwakken. Hij is selectief: Hij kiest voor de nederigen.",
+          "mensbeeld_wereld_heil": "De mens is geneigd tot hoogmoed, maar geroepen tot ootmoed. Heil is 'verborgen worden' in God en leven in vrede en waarheid.",
           "bijbels_theologische_lijnen": [
-            "Ballingschap en Terugkeer (het rest-motief)",
-            "De 'Anawim' (de armen van YHWH, zie Psalmen en Bergrede)",
-            "Eschatologische vrede (de kudde die rustig ligt)"
+            "Restgedachte (She'erit) - loopt van Elia tot Paulus (Romeinen 11).",
+            "De 'Anawim' (armen van YHWH) - loopt door naar de Bergrede.",
+            "Sionstheologie - God woont in het midden van zijn volk."
           ],
-          "plaats_heilsgeschiedenis": "Sefanja profeteert vlak voor de ballingschap. Hij bereidt het volk voor op de gedachte dat het instituut (tempel/koningshuis) kan vallen, maar dat God doorgaat met een gelovige rest.",
-          "spanning_andere_teksten": "Staat op gespannen voet met theologieën die stellen dat God altijd de meerderheid of het nationale instituut zegent. Hier is God de God van de minderheid.",
+          "plaats_heilsgeschiedenis": "Profetische kritiek op de monarchie/elite vlak voor de ballingschap, vooruitwijzend naar het geestelijke Israël.",
+          "spanning_andere_teksten": "Spanning met teksten die heil beloven aan *heel* Israël; hier is het slechts een *rest*.",
           "dogmatische_raakvlakken": [
-            "Ecclesiologie (kerk als 'rest')",
-            "Rechtvaardiging (niet door eigen kracht, maar door schuilen)"
+            "Uitverkiezing (God laat over)",
+            "Heiliging (geen onrecht meer doen)"
           ],
           "theologische_controverses": null
         },
         "zoekmodellen_snoek": {
           "godsbeelden_ot": {
-            "werkwoordelijke_uitspraken": "God 'doet overblijven' (3:12), God heeft een 'dag van toorn' (2:3). Hij is actief in de geschiedenis als scheider van trots en nederigheid.",
-            "metaforische_uitspraken": "Impliciet is God een 'schuilplaats' (2:3) en een 'herder' (3:13, waar het volk weidt).",
-            "overstijgende_eigenschappen": "Zijn toorn en oordeel wijzen op zijn heiligheid en verhevenheid boven het menselijk falen.",
-            "toebuigende_eigenschappen": "Zijn zorg voor het 'ellendig en gering volk' toont zijn barmhartigheid en trouw.",
-            "dominante_categorie": "Er is een spanning tussen de overstijgende Rechter en de toebuigende Beschermer. Voor de ootmoedigen domineert de toebuigende kant.",
-            "spanning": "De spanning tussen Gods universele oordeel en zijn particuliere zorg voor de rest.",
-            "relevantie_gemeente": "Voor de Sionkerk (Ameide) is dit relevant: God is niet onder de indruk van onze 'dijken' (menselijke zekerheden), maar buigt zich toe naar wie zich klein maakt."
+            "werkwoordelijke_uitspraken": "God 'laat over' (actief), God heeft een 'dag van toorn' (actief), God verbergt (impliciet).",
+            "metaforische_uitspraken": "God als 'Schuilplaats' (impliciet in 'schuilen bij de Naam').",
+            "overstijgende_eigenschappen": "Zijn toorn en oordeel wijzen op heiligheid en afstand.",
+            "toebuigende_eigenschappen": "Het sparen van de 'armen en geringen' toont barmhartigheid en partijdigheid voor de zwakke.",
+            "dominante_categorie": "Werkwoordelijk/Actief. God grijpt in de geschiedenis in door te schiften.",
+            "spanning": "Spanning tussen de universele rechter (toorn over de aarde) en de particuliere beschermer (van de nederigen).",
+            "relevantie_gemeente": "Voor Ameide: God is niet automatisch met ons omdat we 'kerk' zijn, maar is te vinden bij de nederige houding."
           },
           "mensbeelden_ot": {
-            "horizontale_as": "De 'ootmoedigen' bevinden zich aan de kant van het 'goed doen' (zoeken recht, spreken geen leugen). De impliciete tegenstanders doen onrecht.",
-            "verticale_as": "Sterk gericht op God ('zoeken de HEER', 'schuilen bij de Naam'). Hun ethisch handelen vloeit voort uit deze verticale gerichtheid.",
-            "personages_positie": "De ootmoedigen bewegen van een onzekere positie ('misschien verborgen') naar een positie van rust en veiligheid.",
-            "karakterontwikkeling": "Van zoekend naar gevonden/rustend."
+            "horizontale_as": "De 'rest' beweegt zich sterk naar 'goed doen' (geen onrecht, geen leugen). De contextuele tegenstanders zitten op 'kwaad doen'.",
+            "verticale_as": "Sterk gericht op God ('zoeken', 'schuilen bij de Naam'). De ethiek vloeit voort uit de spiritualiteit.",
+            "personages_positie": "De 'ootmoedigen' staan in het kwadrant rechtsboven: gericht op God én goed doend.",
+            "karakterontwikkeling": "Van zoekend (onzeker) naar rustend (zeker)."
           },
           "jezusbeelden_nt": {
             "van_achteren": null,
@@ -1200,76 +1327,82 @@
         }
       },
       {
-        "referentie": "Matteüs 5:1-12a",
+        "referentie": "Matteüs 5,1-12a",
         "afbakening_vertaling": {
           "vertaalvergelijking": [
             {
               "vertaling": "NBV21 vs. Naardense Bijbel (NB)",
-              "significante_verschillen": "NBV21 vertaalt 'Makarioi' met 'Gelukkig', NB met 'Zalig'. 'Gelukkig' heeft in het Nederlands een sterke emotionele/psychologische connotatie (blij voelen), terwijl 'Zalig' (en Makarios) een objectieve status van goddelijke goedkeuring aanduidt.\nNBV21 vertaalt 'ptochoi to pneumati' met 'nederig van hart', NB letterlijker met 'arm aan de geestesadem'. 'Nederig van hart' psychologiseert het begrip; 'arm van geest' (of bedelaar in de geest) behoudt de radicaliteit van leegte/afhankelijkheid."
+              "significante_verschillen": "NBV21 vertaalt 'Makarioi' met 'Gelukkig', NB kiest voor 'Zalig'. 'Gelukkig' heeft in modern Nederlands een sterke emotionele/psychologische connotatie (blij voelen), terwijl 'Zalig' (en Makarios) duidt op een objectieve staat van heil/gezegend zijn door God.\nNBV21 vertaalt 'ptochos' met 'nederig van hart' (interpretatief), NB letterlijker met 'arm aan de geestesadem'. De grondtekst 'armen van geest' (ptochoi to pneumati) is paradoxaler dan 'nederig'.\nNBV21 'aarde bezitten' vs NB 'aarde beërven' (v5). Erven impliceert een geschenk, bezitten een recht."
             }
           ],
-          "werkvertaling_cruciaal": "Matteüs 5:3: 'Zalig [makarioi] de bedelaars van geest [ptochoi to pneumati], want van hen is het Koninkrijk der Hemelen.'"
+          "werkvertaling_cruciaal": "Matteüs 5:3: 'Zalig/Gezegend zijn de bedelaars in de geest, want van hen is het Koninkrijk der Hemelen.'"
         },
         "tekstkritiek": {
-          "relevante_varianten": [],
-          "conclusie": "Geen varianten die de betekenis substantieel wijzigen."
+          "relevante_varianten": [
+            {
+              "vers": "5:4-5",
+              "variant": "Volgorde verzen 4 en 5",
+              "handschriften": "Sommige westerse handschriften draaien 'treurenden' en 'zachtmoedigen' om.",
+              "betekenis_impact": "Weinig impact op de theologie, maar de canonieke volgorde (eerst arm, dan treuren, dan zachtmoedig) suggereert een logische opbouw van leegte naar houding."
+            }
+          ],
+          "conclusie": "De tekst is stabiel. De toevoeging 'ten onrechte' (liegend) in vers 11 is in de meeste betrouwbare handschriften aanwezig."
         },
         "woordstudie": [
           {
-            "woord_origineel": "μακάριος (makarios)",
-            "transliteratie": "makarios",
-            "vertaling": "zalig / gelukkig / gezegend",
-            "semantische_range": "Oorspronkelijk in Griekse literatuur: de staat van de goden (vrij van aardse zorgen). In de LXX en NT: de status van iemand die door God gered/gezegend is. Het is een eschatologisch oordeel, geen gevoelsbeschrijving. Het betekent: 'Je bent op de goede weg', 'God staat aan jouw kant'.",
-            "gebruik_elders": "Psalm 1:1 (LXX) 'Zalig de man...', Openbaring 14:13 'Zalig de doden'.",
-            "meerduidigheid": "Het contrast tussen de aardse omstandigheid (treuren) en de goddelijke status (zalig) is de kern van de paradox."
+            "woord_origineel": "Grieks: μακάριοι (makarioi)",
+            "transliteratie": "makarioi",
+            "vertaling": "zalig / gelukkig / te feliciteren",
+            "semantische_range": "Oorspronkelijk gebruikt voor de goden (vrij van zorgen). In de LXX en NT duidt het op iemand die door God begunstigd is, ongeacht de uiterlijke omstandigheden. Het is een eschatologisch oordeel dat nu al wordt uitgesproken.",
+            "gebruik_elders": "Psalm 1:1; Openbaring 14:13.",
+            "meerduidigheid": "Het contrast tussen de huidige toestand (treuren) en de uitspraak (gelukkig) is de kern van de paradox."
           },
           {
-            "woord_origineel": "πτωχός (ptochos)",
-            "transliteratie": "ptochos",
-            "vertaling": "arm / bedelaar",
-            "semantische_range": "Sterker dan 'penes' (iemand die moet werken voor de kost). Ptochos is iemand die niets heeft, in elkaar gedoken zit (van ptosso), volledig afhankelijk van aalmoezen. In 'van geest' duidt het op iemand die beseft geestelijk failliet te zijn zonder God.",
-            "gebruik_elders": "Lukas 16 (Lazarus), Galaten 2:10.",
+            "woord_origineel": "Grieks: πτωχοὶ (ptochoi)",
+            "transliteratie": "ptochoi",
+            "vertaling": "armen / bedelaars",
+            "semantische_range": "Duidt op absolute armoede, afhankelijkheid van aalmoezen (in tegenstelling tot 'penes', de werkende arme). 'In de geest' specificeert dit tot een religieuze houding van totale afhankelijkheid van God.",
+            "gebruik_elders": "Lukas 6:20 (daar zonder 'in de geest').",
             "meerduidigheid": null
           },
           {
-            "woord_origineel": "πραΰς (praus)",
-            "transliteratie": "praus",
-            "vertaling": "zachtmoedig / vriendelijk",
-            "semantische_range": "Niet zwak, maar 'kracht onder controle'. Gebruikt voor een getemd paard. Het is de houding van iemand die zijn rechten niet opeist en geen geweld gebruikt.",
-            "gebruik_elders": "Matteüs 11:29 (Jezus is zachtmoedig), Psalm 37:11 (LXX).",
+            "woord_origineel": "Grieks: πραεῖς (praeis)",
+            "transliteratie": "praeis",
+            "vertaling": "zachtmoedigen / vriendelijken",
+            "semantische_range": "Niet zwakheid, maar kracht onder controle. Het wordt gebruikt voor een getemd paard. Het is de houding van iemand die zijn rechten niet opeist.",
+            "gebruik_elders": "Matteüs 11:29 (Jezus is zachtmoedig); Psalm 37:11.",
             "meerduidigheid": null
           }
         ],
         "literaire_analyse": {
           "genre": "wijsheid / profetische instructie",
-          "genre_conventies": "De 'macarismen' (zaligsprekingen) zijn een bekende vorm in de wijsheidsliteratuur, maar Jezus gebruikt ze hier profetisch om de waarden van het Koninkrijk te definiëren.",
+          "genre_conventies": "De 'macarismen' (zaligsprekingen) zijn een bekende vorm in de wijsheidsliteratuur (Psalm 1, Spreuken), maar hier profetisch geladen als grondwet van het nieuwe Koninkrijk.",
           "structuur": {
-            "opbouw": "Introductie (5:1-2): Setting op de berg.\nDeel 1 (5:3-10): 8 Zaligsprekingen in de 3e persoon ('zij').\nDeel 2 (5:11-12): Directe aanspraak in de 2e persoon ('jullie') over vervolging.",
+            "opbouw": "Introductie (5:1-2: setting). De Zaligsprekingen (5:3-12). De eerste 8 zijn in de 3e persoon ('zij'), de laatste (v11-12) verschuift naar de 2e persoon ('jullie'). Er zijn twee strofen van 4: de eerste 4 gaan over passieve nood/houding (arm, treuren, zachtmoedig, honger), de tweede 4 over actieve deugd (barmhartig, rein, vrede, vervolgd).",
             "cesuren": [
-              "Na vers 10 (overgang van 'zij' naar 'jullie')."
+              "Na vers 10 (overgang naar directe aanspraak)."
             ],
-            "centrum": "Er is geen strikt centrum, maar de eerste en achtste zaligspreking eindigen beide met 'want van hen is het Koninkrijk der hemelen', wat een inclusio vormt.",
-            "chiasme_inclusio": "Inclusio: Vers 3 en Vers 10 bevatten dezelfde belofte ('want van hen is het Koninkrijk'), waardoor alles ertussenin (troost, aarde erven, verzadiging, barmhartigheid, God zien, zoonschap) aspecten zijn van dat Koninkrijk."
+            "centrum": "De centrale as is de gerechtigheid (v6 en v10).",
+            "chiasme_inclusio": "Inclusio: Vers 3 en Vers 10 eindigen beide met 'want van hen is het Koninkrijk der Hemelen' (presens). De tussenliggende beloften staan in het futurum."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
+              "Anafoor (herhaling van 'Zalig')",
               "Paradox (treurenden zijn gelukkig)",
-              "Herhaling (anafoor van 'Makarioi')",
-              "Eschatologische belofte (futurum: zij zullen...)"
+              "Goddelijk passief ('zullen getroost worden' = God zal troosten)"
             ],
-            "retorische_strategie": "Jezus draait de gangbare waardenladder om. Hij begint niet met eisen (imperatieven), maar met toezeggingen (indicatieven) aan mensen die in de ogen van de wereld 'verliezers' zijn. Dit schept een nieuwe realiteit.",
-            "effect_lezer": "Schok, vervreemding, en vervolgens troost of verzet. De lezer moet zijn definitie van 'geluk' herzien."
+            "retorische_strategie": "Jezus herdefinieert de werkelijkheid. Hij draait de waardenladder om. De hoorder wordt geschokt in zijn verwachting van wat geluk is.",
+            "effect_lezer": "Desoriëntatie gevolgd door heroriëntatie op Gods perspectief."
           },
           "karakters_plot": {
             "personages": [
-              "Jezus (de Leraar/Nieuwe Mozes)",
-              "De leerlingen (directe kring)",
-              "De scharen (luisteren mee)",
-              "De profeten (historisch precedent)"
+              "Jezus (Leraar/Heer)",
+              "De leerlingen (primaire hoorders)",
+              "De scharen (secundaire hoorders)"
             ],
-            "karakterisering": "Jezus spreekt met goddelijke autoriteit ('Ik zeg u'). De leerlingen worden gekarakteriseerd als degenen die deze kenmerken (zouden moeten) hebben.",
-            "verhaallijn": "Jezus bestijgt de berg (zoals Mozes) en opent zijn mond om de grondwet van het nieuwe verbond te geven.",
-            "verzwegen_gesuggereerd": "De Farizeeën en Schriftgeleerden (de gevestigde religieuze orde) fungeren als impliciet contrast (zij die zichzelf rijk en rechtvaardig achten)."
+            "karakterisering": "Jezus neemt de positie in van de nieuwe Mozes (berg, zitten). De leerlingen worden getypeerd als degenen die deze kenmerken (zouden moeten) hebben.",
+            "verhaallijn": "Geen plot in de perikoop zelf, maar functioneert als opening van Jezus' publieke onderwijs.",
+            "verzwegen_gesuggereerd": "De tegenstanders (de 'sterken', de 'rijken') worden niet genoemd, maar vormen het contrast waartegen deze uitspraken afsteken."
           }
         },
         "structuralistische_analyse": {
@@ -1278,83 +1411,83 @@
               {
                 "scène": "1 (Mat 5:1-2)",
                 "tijd": "Toen Hij de scharen zag",
-                "plaats": "De berg (opgeklommen)",
+                "plaats": "De berg",
                 "actant": "Jezus",
-                "handeling": "Zien, opklimmen, gaan zitten, mond openen, onderrichten",
+                "handeling": "De berg opgaan, gaan zitten, mond openen, onderwijzen",
                 "medewerker": [
-                  "Leerlingen (kwamen tot hem)"
+                  "(De leerlingen - die tot hem komen)"
                 ],
                 "opponent": []
               },
               {
                 "scène": "2 (Mat 5:3-10)",
-                "tijd": "Tijdloos / Eschatologisch heden",
+                "tijd": "Eschatologisch heden/toekomst",
                 "plaats": "Koninkrijk der Hemelen / Aarde",
-                "actant": "De armen / treurenden / zachtmoedigen / etc.",
-                "handeling": "Zijn (arm, treurend, etc.)",
+                "actant": "De armen/treurenden/zachtmoedigen etc.",
+                "handeling": "Zijn (arm, treurend, etc.) -> Ontvangen (troost, aarde, koninkrijk)",
                 "medewerker": [
-                  "God (impliciet subject van de passieve werkwoorden: 'zullen getroost worden')"
+                  "God (impliciet in passivum divinum: 'zullen getroost worden')"
                 ],
                 "opponent": [
-                  "Onrecht (impliciet)"
+                  "(De wereld/onrecht - impliciet in 'vervolgd worden')"
                 ]
               },
               {
                 "scène": "3 (Mat 5:11-12)",
-                "tijd": "Toekomst ('wanneer ze...')",
-                "plaats": "De wereld (waar vervolging is)",
-                "actant": "Jullie (leerlingen)",
-                "handeling": "Beschimpt worden, vervolgd worden / Verheugen, jubelen",
+                "tijd": "Toekomst (wanneer men u smaadt)",
+                "plaats": "De wereld vs. De hemelen",
+                "actant": "Jullie (de leerlingen)",
+                "handeling": "Verheugen, jubelen",
                 "medewerker": [
-                  "Jezus ('vanwege Mij')"
+                  "Jezus ('omwille van Mij')"
                 ],
                 "opponent": [
-                  "Zij (de vervolgers)"
+                  "Men (de vervolgers)"
                 ]
               }
             ],
-            "schema_regels": "In scène 2 is God de verborgen Actant (passivum divinum): ZIJ zullen getroost worden (door God). De mens is ontvanger."
+            "schema_regels": "Jezus is de zender van de boodschap. De 'armen' etc. zijn de ontvangers van het heil."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "Van de berg (plaats van openbaring) naar de wereld (plaats van lijden/vervolging) naar de hemel (plaats van loon).",
-            "actanten_analyse": "Jezus is de Spreker, de 'armen/leerlingen' zijn de Ontvangers. De groep ontvangers wordt steeds specifieker gedefinieerd (van algemeen 'armen' naar specifiek 'jullie' die vervolgd worden).",
-            "handelingen_trajecten": "Het traject is passief naar actief: van 'zijn' (arm zijn) naar 'doen' (vrede stichten) naar 'ondergaan' (vervolgd worden) naar 'reageren' (verheugen).",
-            "medewerkers_opponenten_analyse": "God is de ultieme Medewerker die de beloften garandeert. De wereld/vervolgers zijn de Opponenten die de status van 'zalig' testen."
+            "tijd_plaats_patroon": "De berg is de plaats van openbaring. De beloften bewegen tussen 'nu' (is van hen) en 'straks' (zullen erven).",
+            "actanten_analyse": "De actanten in de zaligsprekingen zijn passief in hun omstandigheden (treuren, vervolgd worden) of houding (arm, zachtmoedig), maar actief in hun gerichtheid (hongeren, vrede stichten).",
+            "handelingen_trajecten": "Het traject is paradoxaal: door te verliezen (arm/treuren) wordt gewonnen (koninkrijk/troost).",
+            "medewerkers_opponenten_analyse": "God is de ultieme Medewerker die de beloften vervult. De Opponent is de wereld die vervolgt en smaadt."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De zaligsprekingen vormen een samenhangend portret van de discipel. Het is geen lijst van 8 verschillende groepen, maar 8 facetten van dezelfde identiteit.",
-            "temporele_ontwikkeling": "Van status (nu) naar belofte (straks), uitmondend in de oproep tot vreugde in het heden vanwege de toekomst.",
-            "literaire_elementen": "De herhaling van 'want' (hoti) fundeert elke zaligspreking in een goddelijke actie.",
-            "karakteranalyse": "De actanten ontlenen hun 'geluk' niet aan hun omstandigheden, maar aan de toezegging van de Koning.",
-            "evaluatieve_dimensie": "Jezus evalueert lijden en armoede als positief in het licht van het Koninkrijk."
+            "structurele_samenhang": "De lijst bouwt op van innerlijke leegte (v3) naar uiterlijke daadkracht (v9) en consequentie (v10).",
+            "temporele_ontwikkeling": "Van algemene waarheid naar specifieke toepassing op de discipelen (v11).",
+            "literaire_elementen": "De herhaling van 'Makarioi' smeedt de diverse groepen tot één identiteit.",
+            "karakteranalyse": "De autoriteit van Jezus om dit te zeggen wordt niet beargumenteerd maar aangenomen (Hij zit op de berg).",
+            "evaluatieve_dimensie": "Jezus evalueert de status van de 'verliezers' als 'winnaars' in Gods ogen."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
-              "De omkering van waarden (Reversal)",
-              "Het Koninkrijk als genadegave",
-              "Identiteit van de discipel"
+              "Het Koninkrijk van God als omgekeerde orde.",
+              "Genade voor wie niets heeft.",
+              "Identiteit van de discipel."
             ],
-            "structurele_patroon": "Conditie (nood) -> Goddelijke toezegging (heil).",
-            "theologische_betekenis": "Het Koninkrijk van God breekt door in de levens van hen die aan het einde van hun eigen mogelijkheden zijn gekomen. Genade is het fundament van de christelijke ethiek."
+            "structurele_patroon": "De structuur toont dat het Koninkrijk *gegeven* wordt (passief) aan hen die leeg zijn, en dat dit leidt tot een nieuwe ethiek.",
+            "theologische_betekenis": "Geluk (zaligheid) is niet maakbaar, maar een geschenk van God dat landt in menselijke onmacht. Het is christocentrisch: Jezus belichaamt deze zaligsprekingen zelf."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "Het Koninkrijk van de Hemel behoort toe aan hen die hun afhankelijkheid van God erkennen ('armen van geest'). Jezus proclameert dat Gods gunst rust op de nederigen, de treurenden en de zachtmoedigen, en belooft hen ultiem herstel en de erfenis van de aarde.",
-          "godsbeeld": "God is de Gever die de leegte vult. Hij is de Trooster, de Verzadiger, de Barmhartige. Hij is de God die de orde van de wereld omkeert.",
-          "mensbeeld_wereld_heil": "De mens is ten diepste behoeftig (bedelaar). De wereld is een plek van onrecht en vervolging, maar is niet verlaten. Heil is zowel toekomstig (loon in de hemel) als nu al realiteit (van hen IS het Koninkrijk).",
+          "centrale_boodschap": "Het Koninkrijk van de Hemel is aangebroken en behoort toe aan hen die in de ogen van de wereld onbelangrijk, zwak of lijdend zijn. Jezus nodigt zijn leerlingen uit om hun identiteit en geluk niet te zoeken in macht of bezit, maar in afhankelijkheid van God en barmhartigheid naar de naaste.",
+          "godsbeeld": "God is de God van de omkering, die troost, verzadigt en recht doet. Hij is een Vader (v9, v16) die beloont.",
+          "mensbeeld_wereld_heil": "De mens is ten diepste behoeftig ('arm van geest'). De wereld is een plek van onrecht en vervolging. Heil is het herstel van de relatie met God (God zien) en de schepping (aarde erven).",
           "bijbels_theologische_lijnen": [
-            "Koninkrijk van God (basileia)",
-            "De nieuwe Thora (Jezus als Mozes)",
-            "De lijdende rechtvaardige (Psalmen/Jesaja)"
+            "De nieuwe Mozes (Exodus/Sinai typologie).",
+            "De lijdende knecht (Jesaja 53).",
+            "De wijsheid van het kruis (1 Korintiërs 1)."
           ],
-          "plaats_heilsgeschiedenis": "De Bergrede markeert het begin van Jezus' openbare onderricht over het leven in het nieuwe verbond. Het vervult de profetieën (Sefanja/Jesaja 61) over de troost voor Sion.",
-          "spanning_andere_teksten": "Spanning met teksten die rijkdom en succes als zegen zien (Deuteronomium-theologie). Jezus radicaliseert de profetische kritiek.",
+          "plaats_heilsgeschiedenis": "De inauguratie van het Nieuwe Verbond. De wet wordt niet afgeschaft maar vervuld en verdiept.",
+          "spanning_andere_teksten": "Spanning met de 'welvaartstheologie' (Deuteronomium: gehoorzaamheid brengt rijkdom). Hier brengt gehoorzaamheid vervolging, maar geestelijke rijkdom.",
           "dogmatische_raakvlakken": [
-            "Genadeleer (Sola Gratia)",
-            "Eschatologie (Reeds en Nog Niet)",
-            "Christelijke ethiek (Deugdethiek)"
+            "Rechtvaardiging (sola gratia - armen van geest)",
+            "Eschatologie (nu reeds en nog niet)",
+            "Christologie (Jezus als wetgever)"
           ],
-          "theologische_controverses": "Is de Bergrede een onmogelijk ideaal om zondekennis te werken (Luther), een interim-ethiek (Schweitzer), of een leefregel voor de kerk (Anabaptisten/Bonhoeffer)? Exegetisch is het een proclamatie van genade die leidt tot een nieuwe levenshouding."
+          "theologische_controverses": "Is dit een 'nieuwe wet' (eis) of puur 'evangelie' (belofte)? Reformatie neigt naar belofte/spiegel, Dopers/Vrijzinnig naar ethische eis."
         },
         "zoekmodellen_snoek": {
           "godsbeelden_ot": {
@@ -1373,29 +1506,214 @@
             "karakterontwikkeling": null
           },
           "jezusbeelden_nt": {
-            "van_achteren": "Jezus wordt gepresenteerd als de nieuwe Mozes (berg, zitten, onderwijzen). Hij sluit aan bij de profeten die spraken voor de armen (Sefanja, Jesaja).",
-            "van_boven": "Hij spreekt met ongekende autoriteit ('Ik zeg u', impliciet in de zaligsprekingen). Hij bepaalt wie het Koninkrijk binnengaat. Hij plaatst zichzelf centraal in vers 11 ('omwille van Mij').",
-            "van_beneden": "In deze perikoop is het beeld 'van beneden' minder prominent, behalve dat Hij zich identificeert met de vervolgden. Hij zit bij zijn leerlingen.",
-            "van_voren": "Jezus is de Eschatologische Rechter en Koning die nu al de waarden van de toekomstige wereld vaststelt. Hij opent het Koninkrijk.",
-            "dominant_perspectief": "Dominant is 'Van Boven' (gezaghebbende Leraar/Heer) in combinatie met 'Van Achteren' (vervulling van de Wet/Profeten).",
-            "spanning_godheid_mensheid": "De spanning zit in de autoriteit waarmee een menselijke leraar goddelijke zegeningen uitdeelt.",
-            "betekenis_hoorders_nu": "Voor de hoorders in Ameide is Hij niet slechts een voorbeeld, maar de Heer die hun werkelijkheid definieert. Zijn oordeel over hun leven ('zalig') weegt zwaarder dan het oordeel van de maatschappij."
+            "van_achteren": "Jezus wordt sterk neergezet als de 'Joodse Leraar', de nieuwe Mozes die de berg opgaat. Hij staat in de lijn van de profeten die vervolgd werden (v12). Hij citeert de Psalmen (v5).",
+            "van_boven": "Er is een impliciete goddelijke autoriteit. Hij spreekt op eigen gezag ('Ik zeg u', later in H5, hier impliciet door te bepalen wie het Koninkrijk krijgt). Hij belooft loon 'omwille van Mij' (v11), waarmee Hij zichzelf centraal stelt in het heil.",
+            "van_beneden": "Hij gaat zitten (houding van leraar), is fysiek aanwezig bij zijn leerlingen. Hij is benaderbaar.",
+            "van_voren": "Hij is de Aankondiger van het Koninkrijk. Hij opent de toekomst ('zullen getroost worden'). Hij initieert de nieuwe wereldorde.",
+            "dominant_perspectief": "Combinatie van 'Van achteren' (Mozes-typologie) en 'Van voren' (Eschatologische Koning).",
+            "spanning_godheid_mensheid": "De spanning zit in de autoriteit: Hij spreekt als God (bepaalt wie zalig is) maar zit als een menselijke leraar.",
+            "betekenis_hoorders_nu": "Voor Ameide: Jezus is niet alleen de trooster, maar ook de Heer die onze waarden bepaalt. Zijn woord weegt zwaarder dan de cultuur."
           }
         }
       }
     ],
     "samenhang_lezingen": {
-      "rode_draad": "De radicale omkering van waarden: God verkiest het zwakke, nederige en 'dwaze' boven het sterke en trotse. De 'armen van geest' (Matteüs) zijn het 'overblijfsel' (Sefanja) dat schuilt bij God.",
+      "rode_draad": "De 'Grote Omkering': God verkiest wat zwak, nederig en onaanzienlijk is. Zowel Sefanja als Jezus (en Paulus in 1 Kor) benadrukken dat heil niet te vinden is in menselijke kracht of hoogmoed, maar in afhankelijkheid (ootmoed/armoede van geest).",
       "versterkingen": [
-        "Sefanja's oproep 'Zoek ootmoed' wordt in Matteüs beantwoord met de belofte 'Zalig de armen van geest'.",
-        "De 'schuilplaats' in Sefanja correspondeert met het 'Koninkrijk' in Matteüs: een veilige status bij God.",
-        "Beide teksten benadrukken dat ethisch handelen (recht doen/zachtmoedigheid) voortkomt uit een positie van afhankelijkheid."
+        "Sefanja's 'anawim' (ootmoedigen) zijn exact de 'ptochoi' (armen) en 'praeis' (zachtmoedigen) van Matteüs.",
+        "Het thema 'schuilen/toevlucht zoeken' (Sefanja) komt terug in de belofte van het Koninkrijk en de troost (Matteüs).",
+        "Beide teksten beloven een erfenis (overblijven in het land / aarde erven) aan de geweldlozen."
       ],
       "correcties": [
-        "Matteüs verdiept het beeld van Sefanja: het gaat niet alleen om overleven (rest), maar om een positieve status van geluk en zoonschap.",
-        "Waar Sefanja nog spreekt met 'misschien', spreekt Jezus met absolute zekerheid ('want van hen is...')."
+        "Sefanja spreekt nog in termen van 'misschien' (onzekerheid van het oordeel), Jezus spreekt met volmacht: 'Van hen IS het Koninkrijk' (zekerheid van genade).",
+        "Sefanja richt zich op een nationale rest, Jezus universaliseert dit naar iedereen die deze geestelijke houding heeft."
       ]
     }
+  },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 84,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen uitbundige lofzang (intensiteit 8-9) en meditatieve reflectie (intensiteit 6-7). Er is een goede verdeling tussen de 'omgekeerde wereld' thematiek (Sefanja/Matteüs) en de 'dwaasheid van het kruis' (Paulus). De sfeer varieert van positief-hoopvol tot gemengd-ingetogen, passend bij de ernst van de wereldactualiteit.",
+      "contextuele_reflectie": "De liederen over vrede (Liedboek 1010, Weerklank 429) sluiten direct aan bij de winteroorlog in Oekraïne. De nadruk op 'kleinheid' en 'nederigheid' resoneert met de stabiele, confessionele identiteit van Ameide, terwijl liederen over 'licht' (Matteüs 5) passen bij de Epifanie-tijd en de behoefte aan hoop in een onzekere politieke en maatschappelijke tijd."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "146c",
+        "titel": "Alles wat adem heeft love de Here,",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtige lofpsalm",
+        "toelichting": "Directe match met de antwoordpsalm. Bezingt God die recht doet aan verdrukten en hongerigen.",
+        "suggestie_gebruik": "Intocht of na de eerste lezing"
+      },
+      {
+        "nummer": "989",
+        "titel": "Gelukkig de armen van geest",
+        "type_match": "Schriftlezing",
+        "karakter": "Liturgisch kernlied",
+        "toelichting": "De tekst volgt de Zaligsprekingen uit Matteüs 5 op de voet. Essentieel voor deze zondag.",
+        "suggestie_gebruik": "Antwoordlied na het Evangelie"
+      },
+      {
+        "nummer": "882",
+        "titel": "Allerhoogste God, heilig en glorierijk,",
+        "type_match": "Schriftlezing",
+        "karakter": "Ingetogen loflied",
+        "toelichting": "Refereert aan de 'dwaasheid van het kruis' uit 1 Korintiërs 1. Verbindt Gods grootheid met de weg van de minste.",
+        "suggestie_gebruik": "Lied na de Epistel"
+      },
+      {
+        "nummer": "1010",
+        "titel": "Geef vrede, Heer, geef vrede,",
+        "type_match": "Contextueel",
+        "karakter": "Smeekgebed om vrede",
+        "toelichting": "Sluit aan bij de 'vredestichters' uit de Bergrede én de actuele oorlogsdreiging in Oekraïne.",
+        "suggestie_gebruik": "Gebedsbevestiging of slotlied"
+      },
+      {
+        "nummer": "811",
+        "titel": "Zoals een moeder zorgt",
+        "type_match": "Thematisch",
+        "karakter": "Vertrouwenslied",
+        "toelichting": "Past bij de 'kleinheid' bij God en de behoefte aan veiligheid (Sionkerk logo 'open poort').",
+        "suggestie_gebruik": "Lied na de preek of bij de collecten"
+      },
+      {
+        "nummer": "734",
+        "titel": "Beati voi poveri,",
+        "type_match": "Schriftlezing",
+        "karakter": "Meditatief Taizé-lied",
+        "toelichting": "Korte, krachtige herhaling van de zaligspreking voor de armen. Zeer geschikt voor verstilling.",
+        "suggestie_gebruik": "Meditatief moment na de preek"
+      },
+      {
+        "nummer": "597",
+        "titel": "Wees hier aanwezig, licht in ons midden,",
+        "type_match": "Schriftlezing",
+        "karakter": "Invocatie",
+        "toelichting": "Vraagt om Gods aanwezigheid, gelinkt aan de eenheid en roeping in 1 Korintiërs 1.",
+        "suggestie_gebruik": "Lied bij aanvang van de dienst"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "1",
+        "titel": "Gelukkig zal je zijn,",
+        "type_match": "Thematisch",
+        "karakter": "Bemoedigend lied",
+        "toelichting": "Thematische match met het 'geluk' van de Bergrede. Toegankelijk voor jong en oud.",
+        "suggestie_gebruik": "Antwoordlied of kinderlied"
+      },
+      {
+        "nummer": "581",
+        "titel": "Want het geknakte riet",
+        "type_match": "Schriftlezing",
+        "karakter": "Troostrijk lied",
+        "toelichting": "Sluit aan bij Matteüs 5:4 (de treurenden) en de zorgzame God voor wie kwetsbaar is.",
+        "suggestie_gebruik": "Lied na de preek"
+      },
+      {
+        "nummer": "682",
+        "titel": "Laat heel de wereld het zien,",
+        "type_match": "Schriftlezing",
+        "karakter": "Getuigend lied",
+        "toelichting": "Benadrukt de kracht van het kruis (1 Kor 1:18) als fundament voor de gemeente.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "495",
+        "titel": "Onze hulp en onze verwachting",
+        "type_match": "Schriftlezing",
+        "karakter": "Liturgische opening",
+        "toelichting": "Directe link met de groet in 1 Kor 1:3. Zet de toon voor afhankelijkheid van God.",
+        "suggestie_gebruik": "Votum en Groet"
+      },
+      {
+        "nummer": "731",
+        "titel": "Soon and very soon,",
+        "type_match": "Contextueel",
+        "karakter": "Hoopvolle hymne",
+        "toelichting": "Geeft een eschatologisch perspectief op de overwinning op de dood, passend bij crisistijden.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "414",
+        "titel": "Jezus zegt, dat Hij hier van ons verwacht,",
+        "type_match": "Schriftlezing",
+        "karakter": "Eenvoudig getuigenis",
+        "toelichting": "Linkt aan het 'licht der wereld' (Matteüs 5:14-16). Zeer geschikt voor de gezinnen in Ameide.",
+        "suggestie_gebruik": "Lied met de kinderen"
+      },
+      {
+        "nummer": "253",
+        "titel": "Geef vrede, Heer, geef vrede,",
+        "type_match": "Schriftlezing",
+        "karakter": "Gebedslied",
+        "toelichting": "Vredestichters (Matteüs 5:9) in relatie tot de actuele wereldvrede.",
+        "suggestie_gebruik": "Gebeden"
+      },
+      {
+        "nummer": "365",
+        "titel": "We are one in the Spirit,",
+        "type_match": "Schriftlezing",
+        "karakter": "Gemeenschapslied",
+        "toelichting": "Reflecteert de eenheid in de Geest en het lichaam van Christus (1 Kor 12/1).",
+        "suggestie_gebruik": "Lied bij de collecten of gemeenschap"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "14",
+        "titel": "Alles wat adem heeft love de Here,",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassieke lofzang",
+        "toelichting": "De berijmde versie van Psalm 146. Zeer herkenbaar voor de confessionele gemeente.",
+        "suggestie_gebruik": "Openingslied"
+      },
+      {
+        "nummer": "591",
+        "titel": "Weet je wat de Heer nu van ons verwacht?",
+        "type_match": "Schriftlezing",
+        "karakter": "Activerend lied",
+        "toelichting": "Directe link naar Matteüs 5:14-16 over het licht zijn in de wereld.",
+        "suggestie_gebruik": "Uitzendingslied"
+      },
+      {
+        "nummer": "10",
+        "titel": "Wie in de schaduw Gods mag wonen",
+        "type_match": "Thematisch",
+        "karakter": "Vertrouwenspsalm",
+        "toelichting": "Thema hoop en veiligheid. Sluit aan bij de 'open poort' symboliek van de Sionkerk.",
+        "suggestie_gebruik": "Lied na de preek"
+      },
+      {
+        "nummer": "269",
+        "titel": "Roep uit aan alle stranden,",
+        "type_match": "Schriftlezing",
+        "karakter": "Zendingslied",
+        "toelichting": "Verkondiging van het kruis (1 Kor 1:18) als de kracht van God.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "146",
+        "titel": "Ik wil zingen al mijn dagen:",
+        "type_match": "Schriftlezing",
+        "karakter": "Bijbelgetrouwe psalm",
+        "toelichting": "De klassieke berijming van de voorgeschreven psalm. Centraal staat Gods zorg voor de kleine mens.",
+        "suggestie_gebruik": "Psalm van de zondag"
+      },
+      {
+        "nummer": "1",
+        "titel": "Gelukkig wie niet deelneemt aan ’t beraad",
+        "type_match": "Thematisch",
+        "karakter": "Wijsheidspsalm",
+        "toelichting": "Thema 'geluk' (zalig) in contrast met de goddelozen. Past bij de Bergrede.",
+        "suggestie_gebruik": "Na de wet of als opening"
+      }
+    ]
   },
   "09_kunst_cultuur": {
     "moderne_hedendaagse_kunst": [

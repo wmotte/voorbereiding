@@ -1271,7 +1271,7 @@ def combine_all_json(folder: Path):
 
     # 2. Laad alle andere genummerde bestanden
     # We sorteren ze zodat de volgorde logisch is
-    json_files = sorted([f for f in folder.glob("*.json") if re.match(r"^\d{2}_.*\.json$", f.name)])
+    json_files = sorted([f for f in folder.glob("*.json") if re.match(r"^\d{2}[a-z]?_.*\.json$", f.name)])
     
     for json_file in json_files:
         key = json_file.stem # bestandsnaam zonder extensie

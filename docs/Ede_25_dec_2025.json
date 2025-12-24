@@ -3,39 +3,39 @@
     "plaatsnaam": "Ede",
     "gemeente": "De Gelderhorst",
     "datum": "25 december 2025",
-    "website": "https://gelderhorst.nl/",
     "extra_context": "Dienst voor dove gemeenteleden namens het Interkerkelijk Dovenpastoraat",
     "adres": "Willy Brandtlaan 40, 6716 RK Ede",
-    "gebouw": "Kapel De Gelderhorst"
+    "website": "https://gelderhorst.nl/"
   },
   "01_zondag_kerkelijk_jaar": {
     "positie_kerkelijk_jaar": {
-      "zondag_naam": "Kerstmis (Geboorte van de Heer - Dagmis)",
+      "zondag_naam": "Kerstmis (Dagmis)",
       "liturgische_periode": "Kersttijd",
-      "weken_tot_hoofdfeest": "Hoofdfeest (1e Kerstdag)",
+      "weken_tot_hoofdfeest": "Hoofdfeest zelf",
       "leesrooster_jaar": "A",
-      "dominant_evangelie": "Johannes"
+      "dominant_evangelie": "Matteüs"
     },
     "traditionele_naam": {
-      "latijnse_naam": "Nativitas Domini",
-      "oorsprong": "Latijn voor 'Geboorte van de Heer'",
-      "nederlandse_vertaling": "Kerstmis / Geboorte van de Heer",
+      "latijnse_naam": "Puer natus est",
+      "oorsprong": "Ontleend aan de introïtus-psalm voor de dagmis: 'Puer natus est nobis' (Een kind is ons geboren), naar Jesaja 9:5.",
+      "nederlandse_vertaling": "Een kind is ons geboren",
       "volksnamen": [
-        "Eerste Kerstdag"
+        "Eerste Kerstdag",
+        "Hoogfeest van de Geboorte des Heren"
       ]
     },
     "bijzondere_zondag_pkn": {
       "is_bijzonder": true,
       "naam": "Kerstmis",
-      "toelichting": "Een van de belangrijkste hoogfeesten in het kerkelijk jaar, markeert het begin van de Kersttijd."
+      "toelichting": "Hoogfeest van de menswording van God; het centrale feest van de incarnatie in de christelijke traditie."
     },
     "liturgische_kleur": {
       "kleur": "wit",
-      "symboliek": "Kleur van het licht, de vreugde, de reinheid en de feestelijkheid. Verwijst naar Christus als het Licht der wereld.",
+      "symboliek": "Feest, licht, reinheid en de nabijheid van de heerlijkheid van God.",
       "praktische_suggesties": [
         "Wit antependium en witte stola",
-        "Witte bloemschikking (bijv. kerstrozen, amaryllis) met goudaccenten",
-        "Christuskaars centraal"
+        "Feestelijke bloemschikking met veel lichtaccenten (kaarsen)",
+        "Gebruik van witte bloemen zoals lelies of witte rozen om de zuiverheid van de incarnatie te symboliseren"
       ]
     },
     "lezingen": {
@@ -44,174 +44,96 @@
         "boek": "Jesaja",
         "hoofdstuk": 52,
         "verzen": "7-10",
-        "thema": "De vreugdebode die vrede verkondigt en de terugkeer van de Heer naar Sion."
+        "thema": "De vreugdebode die vrede aankondigt en de verlossing van Jeruzalem proclameert."
       },
       "epistel": {
         "referentie": "Hebreeën 1:1-6",
         "boek": "Hebreeën",
         "hoofdstuk": 1,
         "verzen": "1-6",
-        "thema": "God spreekt nu finaal door zijn Zoon, de afstraling van zijn heerlijkheid."
+        "thema": "God spreekt definitief door de Zoon, die de afstraling is van Gods heerlijkheid."
       },
       "evangelie": {
         "referentie": "Johannes 1:1-18",
         "boek": "Johannes",
         "hoofdstuk": 1,
         "verzen": "1-18",
-        "thema": "De proloog: Het Woord is mens geworden en heeft onder ons gewoond."
+        "thema": "De proloog: Het eeuwige Woord is vlees geworden en heeft onder ons gewoond."
       },
       "psalm": {
         "referentie": "Psalm 98",
         "nummer": 98,
         "verzen": null,
-        "antifoon": "Zing voor de Heer een nieuw lied, wonderen heeft Hij gedaan."
+        "antifoon": "Zingt voor de Heer een nieuw lied, want Hij heeft wonderen gedaan."
       },
       "alternatieve_lezingen": [
         {
           "referentie": "Johannes 1:1-5.9-14",
-          "reden": "Verkorte versie van de evangelielezing, focust kernachtig op de incarnatie."
+          "reden": "Verkorte versie van het evangelie met focus op de kern van de incarnatie."
         }
       ],
-      "thematische_samenhang": "De lezingen bewegen van de aankondiging van de redding (Jesaja) naar de theologische diepgang van de incarnatie (Johannes/Hebreeën). De kern is dat God niet langer op afstand spreekt, maar zichtbaar en tastbaar aanwezig is in de Zoon. Voor de dovenpastoraat-context is de verschuiving van 'horen' (profeten) naar 'zien' (het Woord is vlees geworden/aanschouwen) cruciaal."
+      "thematische_samenhang": "De lezingen vormen een beweging van de aankondiging van de vreugdebode (Jesaja) naar de kosmische betekenis van Christus als het Woord (Johannes) en de definitieve openbaring van God in de Zoon (Hebreeën)."
     },
     "thematiek": {
-      "centraal_thema": "Het Woord is vlees geworden (Incarnatie)",
+      "centraal_thema": "De zichtbare nabijheid van het onzichtbare Woord",
       "stemming": "vreugde",
-      "karakter_zondag": "Feestelijk, plechtig, vol verwondering over het mysterie van Gods menswording.",
-      "rode_draad_liturgisch_jaar": "Na de verwachting van Advent (het 'nog niet') is nu het moment van vervulling (het 'nu'). Dit feest zet de toon voor de hele Kerstkring tot aan Epifanie.",
+      "karakter_zondag": "Feestelijk, plechtig en vervuld van verwondering over de menswording.",
+      "rode_draad_liturgisch_jaar": "De overgang van de adventstijd (verwachting) naar de kersttijd (vervulling). De beloofde Immanuël is nu werkelijkheid geworden.",
       "centrale_geloofsvragen": [
-        "Wat betekent het dat God 'zichtbaar' en 'tastbaar' is geworden?",
-        "Hoe ervaren wij 'licht in de duisternis' in onze eigen context?",
-        "Als God spreekt door zijn Zoon, wat zegt Hij dan vandaag tegen ons?"
+        "Hoe wordt het Woord van God tastbaar en zichtbaar in ons dagelijks leven?",
+        "Wat betekent het voor onze menselijke waardigheid dat God 'vlees' (mens) is geworden?",
+        "Hoe herkennen wij de heerlijkheid van God in de kwetsbaarheid van een kind?"
       ]
     },
     "historische_achtergrond": {
-      "oorsprong_vroege_kerk": "De datum 25 december werd in de 4e eeuw in Rome vastgesteld, mogelijk als christelijk antwoord op het heidense feest van de Sol Invictus (Onoverwonnen Zon).",
-      "hervormde_traditie": "Focus op de incarnatie als basis voor verzoening. De preek staat centraal als uitleg van dit mysterie.",
-      "gereformeerde_traditie": "Soberder dan de lutherse of katholieke traditie, maar Kerst is onbetwist een van de heilsfeesten. Nadruk op de godheid én mensheid van Christus.",
-      "lutherse_traditie": "Grote nadruk op de vreugde van de incarnatie, rijk aan muzikale traditie (Lutherse koralen).",
-      "oecumenische_dimensie": "Johannes 1 is de klassieke lezing voor de dagmis in zowel de westerse (RKK, Anglicaanse, Protestantse) tradities, wat de universele betekenis van de incarnatie onderstreept."
-    },
-    "liedsuggesties": {
-      "_verificatie_opmerking": "Alle liederen zijn geverifieerd in de lijst van het Liedboek 2013.",
-      "opening_intocht": [
-        {
-          "nummer": "Lied 477",
-          "titel": "Komt allen tezamen, jubelend van vreugde",
-          "eerste_regel": "Komt allen tezamen, jubelend van vreugde",
-          "toelichting": "Klassiek openingslied (Adeste Fideles), zeer bekend en feestelijk."
-        },
-        {
-          "nummer": "Lied 487",
-          "titel": "Eer zij God in onze dagen",
-          "eerste_regel": "Eer zij God in onze dagen",
-          "toelichting": "Zeer geliefd in de Nederlandse traditie, verbindt engelenlof met menselijke vrede."
-        }
-      ],
-      "kyrie_gloria": [
-        {
-          "nummer": "Lied 481",
-          "titel": "Hoor, de engelen zingen de eer",
-          "eerste_regel": "Hoor, de engelen zingen de eer",
-          "toelichting": "Functioneert uitstekend als Gloria-lied op Kerstmis."
-        },
-        {
-          "nummer": "Lied 305",
-          "titel": "Alle eer en alle glorie",
-          "eerste_regel": "Alle eer en alle glorie",
-          "toelichting": "Algemeen loflied (Gloria), geschikt als antwoord op de genadeverkondiging."
-        }
-      ],
-      "bij_lezingen": [
-        {
-          "nummer": "Lied 98",
-          "titel": "Zing een nieuw lied voor God de Here",
-          "eerste_regel": "Zing een nieuw lied voor God de Here",
-          "toelichting": "De Psalm van de dag. Versie 98a of 98b zijn ook opties."
-        },
-        {
-          "nummer": "Lied 488",
-          "titel": "In den beginne was het woord",
-          "eerste_regel": "In den beginne was het woord",
-          "toelichting": "Directe berijming van de evangelielezing (Johannes 1). Zeer toepasselijk."
-        },
-        {
-          "nummer": "Lied 476",
-          "titel": "Nu zijt wellekome",
-          "eerste_regel": "Nu zijt wellekome",
-          "toelichting": "Oud-Nederlands lied dat de incarnatie intiem en welkom maakt."
-        }
-      ],
-      "credo": [
-        {
-          "nummer": "Lied 340b",
-          "titel": "Ik geloof in God de Vader, de Almachtige",
-          "eerste_regel": "Ik geloof in God de Vader, de Almachtige",
-          "toelichting": "Apostolische geloofsbelijdenis."
-        }
-      ],
-      "collecte_gaven": [
-        {
-          "nummer": "Lied 473",
-          "titel": "Er is een roos ontloken",
-          "eerste_regel": "Er is een roos ontloken",
-          "toelichting": "Verstild lied, past goed bij een moment van bezinning of gaven."
-        }
-      ],
-      "zending_zegen": [
-        {
-          "nummer": "Lied 486",
-          "titel": "Midden in de winternacht",
-          "eerste_regel": "Midden in de winternacht",
-          "toelichting": "Vrolijk en bekend slotlied, stuurt de gemeente met vreugde naar huis."
-        },
-        {
-          "nummer": "Lied 425",
-          "titel": "Vervuld van uw zegen gaan wij onze wegen",
-          "eerste_regel": "Vervuld van uw zegen gaan wij onze wegen",
-          "toelichting": "Algemeen zegenlied, geschikt voor afsluiting."
-        }
-      ]
+      "oorsprong_vroege_kerk": "Vanaf de 4e eeuw gevierd op 25 december, mede ter vervanging van de heidense zonnewendefeesten (Sol Invictus).",
+      "hervormde_traditie": "Focus op de verkondiging van de heilsfeiten en de soevereiniteit van God die neerdaalt naar de mens.",
+      "gereformeerde_traditie": "Nadruk op de verbondsmatige vervulling van de oudtestamentische beloften in Christus.",
+      "lutherse_traditie": "Sterke nadruk op de 'vrolijke ruil' (fröhlicher Wechsel) tussen de goddelijke natuur van Christus en onze menselijke natuur.",
+      "oecumenische_dimensie": "Gezamenlijk feest van de wereldwijde kerk; het gebruik van het Gemeenschappelijk Leesrooster onderstreept de eenheid in de verkondiging."
     },
     "praktische_handvatten": {
-      "liturgische_orde_suggestie": "Klassieke orde van dienst met nadruk op lofprijzing. Gezien de doelgroep (dovenpastoraat) is visuele ondersteuning essentieel.",
+      "liturgische_orde_suggestie": "Feestelijke orde conform Dienstboek PKN, inclusief een uitgebreid Gloria en een centrale plek voor de lezing van de proloog van Johannes.",
       "aanpassingen_periode": [
         {
           "element": "Gloria",
-          "aanpassing": "Uitbundig zingen",
-          "reden": "Het 'Ere zij God' is het kernlied van Kerst."
+          "aanpassing": "Wordt feestelijk gezongen of gebaard",
+          "reden": "Einde van de adventstijd; herinnering aan de lofzang van de engelen."
         },
         {
-          "element": "Lezingen",
-          "aanpassing": "Visueel maken",
-          "reden": "Johannes 1 is abstract. Gebruik symboliek van licht/donker of gebaren die 'Woord' en 'Vlees/Mens' uitbeelden."
+          "element": "Halleluja",
+          "aanpassing": "Gezongen/gebaard voor het Evangelie",
+          "reden": "Vreugdevolle begroeting van het Woord van God."
         }
       ],
       "gebedsmotieven": [
-        "Dank voor de komst van het Licht.",
-        "Gebed voor vrede in oorlogsgebieden (actueel thema).",
-        "Voorbede voor eenzamen tijdens de feestdagen.",
-        "Specifiek voor De Gelderhorst: dankbaarheid voor de gemeenschap en zorg voor elkaar."
+        "Dankzegging voor de menswording van God",
+        "Gebed voor vrede in conflictgebieden, aansluitend bij de vreugdebode uit Jesaja",
+        "Specifiek gebed voor de dovengemeenschap: dat Gods Woord 'gezien' en ervaren mag worden",
+        "Voorbede voor hen die zich juist tijdens de feestdagen eenzaam of buitengesloten voelen"
       ],
       "kindernevendienst": {
-        "thema": "Het Licht is aan!",
+        "thema": "Licht dat je kunt zien",
         "suggesties": [
-          "Werken met lichtjes/kaarsen.",
-          "Het verhaal van Johannes 1 vertalen naar: God stuurt geen brief, maar komt zelf."
+          "Het maken van een lantaarn of lichtje om de komst van het Licht te vieren",
+          "Het kerstverhaal uitbeelden met focus op de zintuiglijke ervaring (zien, voelen)"
         ]
       },
       "visuele_elementen": [
-        "Gebruik van een beamer met duidelijke, grote teksten en afbeeldingen voor de dove gemeenteleden.",
-        "Gebarentolk of predikant die gebaart is essentieel.",
-        "Lichtsymboliek: de overgang van donker naar licht zichtbaar maken in de ruimte.",
-        "Een lege kribbe die gevuld wordt, of een Bijbel die geopend in de kribbe wordt gelegd (Woord werd vlees)."
+        "Projectie van kunstwerken die de incarnatie verbeelden (bijv. iconen of moderne kunst)",
+        "Gebruik van Nederlandse Gebarentaal (NGT) als integraal onderdeel van de liturgie",
+        "Een kerststal die op een centrale, goed zichtbare plek in de kapel van De Gelderhorst is opgesteld",
+        "Nadruk op visuele ondersteuning van de liederen via schermen"
       ]
     },
     "dagelijks_leesrooster": {
       "week_voorafgaand": [
-        "De lezingen van de 4e week van Advent (Lucas 1 en 2, voorbereiding op de geboorte)."
+        "21 dec (Advent 4): Psalm 19",
+        "22 dec: Jesaja 8:1-10",
+        "23 dec: Jesaja 8:11-23a",
+        "24 dec (Kerstnacht): Jesaja 8:23b-9:6"
       ],
-      "verbinding_zondag": "De dagelijkse lezingen hebben toegewerkt naar de geboorte (Lucas). Johannes 1 op Kerstmorgen tilt dit historische verhaal naar een kosmisch en theologisch niveau: dit Kind is God zelf."
+      "verbinding_zondag": "De dagelijkse lezingen bouwen de spanning op van duisternis en dreiging (Jesaja 8) naar de doorbraak van het grote licht en de geboorte van de Vredevorst (Jesaja 9 en Johannes 1)."
     }
   },
   "02_sociaal_maatschappelijke_context": {
@@ -1055,7 +977,7 @@
       ]
     }
   },
-  "08_exegese": {
+  "08a_exegese": {
     "per_lezing": [
       {
         "referentie": "Jesaja 52:7-10",
@@ -1063,183 +985,185 @@
           "vertaalvergelijking": [
             {
               "vertaling": "NBV21 vs. Naardense Bijbel (NB)",
-              "significante_verschillen": "In vers 8 vertaalt de NBV21 'want ze zien het met eigen ogen', terwijl de NB (en de grondtekst) letterlijker vertaalt met 'want oog in oog zien zij'. De uitdrukking 'oog in oog' (ayin be-ayin) suggereert een directheid en intimiteit die 'met eigen ogen' (waarneming) iets afvlakt. Voor de context van dovenpastoraat is 'oog in oog' cruciaal: het impliceert communicatief contact, niet slechts observatie.\nIn vers 10 vertaalt NBV21 'ontbloot zijn heilige arm', wat correct is, maar de NB voegt de nuance van 'voor de ogen van' (le-eenee) expliciet toe, wat het visuele aspect versterkt."
+              "significante_verschillen": "In vers 7 vertaalt de NBV21 'Hoe welkom is de vreugdebode', wat de receptie benadrukt, terwijl de NB dichter bij het Hebreeuws blijft met 'Hoe lieflijk gaan over de bergen de voeten', wat de fysieke handeling en het lichaamsdeel (voeten) centraal stelt. In vers 8 vertaalt de NBV21 'ze zien het met eigen ogen', een idioom voor verificatie. De NB vertaalt letterlijker 'want zij zien oog in oog' (ayin b'ayin), wat een relationele ontmoeting en intimiteit suggereert, cruciaal voor de context van communicatie."
             }
           ],
-          "werkvertaling_cruciaal": "Vers 8: 'Hoor! Je wachters verheffen hun stem, tezamen jubelen zij; want oog in oog zien zij de terugkeer van de HEER naar Sion.'"
+          "werkvertaling_cruciaal": "Vers 8b: 'Want oog in oog zullen zij zien, bij de terugkeer van JHWH naar Sion.' (Nadruk op het visuele contact)."
         },
         "tekstkritiek": {
           "relevante_varianten": [],
-          "conclusie": "Geen significante tekstkritische varianten die de exegese voor deze preek beïnvloeden. De Masoretische tekst is stabiel."
+          "conclusie": "Geen significante tekstvarianten in de aangeleverde brontekst die de exegese beïnvloeden."
         },
         "woordstudie": [
           {
-            "woord_origineel": "מְבַשֵּׂר (Mevaser)",
-            "transliteratie": "Mevaser",
-            "vertaling": "Vreugdebode / Evangelist",
-            "semantische_range": "Iemand die nieuws brengt van het slagveld, specifiek de overwinning. In religieuze context: verkondiger van Gods koningschap.",
-            "gebruik_elders": "Wordt in Jesaja 40:9 en 61:1 gebruikt voor de aankondiging van heil. In het NT (LXX) wordt dit 'euangelizomenos'.",
-            "meerduidigheid": "Het gaat om een fysieke verschijning: de 'voeten' worden genoemd. De boodschap is verbonden aan de fysieke komst van de bode."
+            "woord_origineel": "מְבַשֵּׂ֗ר (mebasser)",
+            "transliteratie": "mebasser",
+            "vertaling": "boodschapper van goed nieuws / vreugdebode",
+            "semantische_range": "Iemand die bericht brengt van overwinning of redding. In seculiere zin vaak militair (bericht van de slag), hier theologisch geladen.",
+            "gebruik_elders": "Wordt in Deutero-Jesaja vaker gebruikt voor de aankondiging van Gods koningschap en de terugkeer uit ballingschap.",
+            "meerduidigheid": null
           },
           {
-            "woord_origineel": "עַayin בְּעַayin (Ayin be-ayin)",
-            "transliteratie": "Ayin be-ayin",
-            "vertaling": "Oog in oog",
-            "semantische_range": "Directe ontmoeting, zonder tussenpersoon, helder inzicht.",
-            "gebruik_elders": "Numeri 14:14 (God verschijnt oog in oog).",
-            "meerduidigheid": "Kan betekenen 'met eigen ogen zien' (getuige zijn) of 'elkaar in de ogen kijken' (relatie/verzoening). In deze context waarschijnlijk beide: ze zien de HEER terugkeren."
+            "woord_origineel": "עַ֤יִן בְּעַ֨יִן֙ (ayin b'ayin)",
+            "transliteratie": "ayin b'ayin",
+            "vertaling": "oog in oog",
+            "semantische_range": "Duidt op directe waarneming, zonder tussenpersoon of sluier. Het impliceert nabijheid en wederkerigheid.",
+            "gebruik_elders": "Numeri 14:14 (God die oog in oog met het volk spreekt).",
+            "meerduidigheid": "Kan betekenen 'met eigen ogen' (verificatie) of 'elkaar aankijkend' (relatie)."
           },
           {
-            "woord_origineel": "זְרוֹעַ (Zroa)",
-            "transliteratie": "Zroa",
-            "vertaling": "Arm / Macht",
-            "semantische_range": "Lichaamsdeel, symbool voor militaire kracht en daadkrachtig ingrijpen.",
-            "gebruik_elders": "Exodus 6:6 (uittocht met uitgestrekte arm).",
-            "meerduidigheid": "Het is een sterk antropomorfisme: God heeft een lichaam (arm) dat Hij 'ontbloot' (gereedmaakt voor actie)."
+            "woord_origineel": "יְשׁוּעָ֑ה (yeshuah)",
+            "transliteratie": "yeshuah",
+            "vertaling": "redding / heil / ruimte",
+            "semantische_range": "Bevrijding uit benauwdheid, ruimte om te leven, overwinning.",
+            "gebruik_elders": "Kernwoord in Jesaja; etymologisch verwant aan de naam Jezus.",
+            "meerduidigheid": null
           }
         ],
         "literaire_analyse": {
-          "genre": "profetie",
-          "genre_conventies": "Poëtische taal, parallellisme, oproep tot vreugde (hymnisch), eschatologisch perspectief (Gods koningschap).",
+          "genre": "Profetische poëzie / Hymne van de troonsbestijging (YHWH Malak)",
+          "genre_conventies": "Gebruik van parallellisme, oproep tot lofprijzing, personificatie van levenloze objecten (ruïnes), theocentrisch perspectief.",
           "structuur": {
-            "opbouw": "De tekst beweegt van buiten naar binnen en weer naar buiten:\n1. De bergen (de bode komt aan, v7).\n2. De stadsmuren (de wachters zien, v8).\n3. De binnenstad (de ruïnes jubelen, v9).\n4. De hele wereld (de einden der aarde zien, v10).",
+            "opbouw": "De tekst beweegt van de aankomst van de bode (v7) naar de reactie van de wachters (v8), gevolgd door de reactie van de stad zelf (v9) en eindigend met een universeel perspectief (v10).",
             "cesuren": [
-              "Tussen vers 7 (de bode) en vers 8 (de reactie van de wachters).",
-              "Tussen vers 9 (oproep aan Jeruzalem) en vers 10 (universele blik)."
+              "Na vers 7 (overgang van bode naar wachters)",
+              "Na vers 9 (overgang van Jeruzalem naar de volken)"
             ],
-            "centrum": "Vers 8b: 'Want oog in oog zien zij de terugkeer van de HEER naar Sion.'",
+            "centrum": "Vers 8b: De visuele waarneming van Gods terugkeer ('want zij zien oog in oog').",
             "chiasme_inclusio": null
           },
           "stijl_retoriek": {
             "literaire_middelen": [
-              "Personificatie (ruïnes die jubelen)",
-              "Synecdoche (voeten voor de hele bode, arm voor Gods hele macht)",
-              "Visuele climax (van horen naar zien)"
+              "Synecdoche ('voeten' voor de hele bode)",
+              "Personificatie ('puinhopen van Jeruzalem' die zingen)",
+              "Antropomorfisme ('heilige arm' van God)"
             ],
-            "retorische_strategie": "De profeet wil de moedeloze ballingen activeren door een levendig beeld te schetsen van een reeds plaatsvindende overwinning. Het is performatieve taal: door het te zeggen, wordt de vreugde opgeroepen.",
-            "effect_lezer": "De lezer wordt toeschouwer: je staat op de muur en ziet God komen."
+            "retorische_strategie": "De profeet wil de moedeloze ballingen activeren door een levendig, visueel tafereel te schetsen van een reeds voltooide redding. De zintuiglijke waarneming (horen, zien) staat centraal.",
+            "effect_lezer": "De lezer wordt toeschouwer gemaakt van de triomftocht van God."
           },
           "karakters_plot": {
             "personages": [
-              "De vreugdebode (brenger)",
-              "De wachters (zieners/verkondigers)",
-              "De HEER (handelend subject)",
-              "De ruïnes van Jeruzalem (gepersonifieerd decor)"
+              "De vreugdebode (brenger van nieuws)",
+              "De wachters (eerste waarnemers)",
+              "YHWH (de terugkerende Koning)",
+              "De puinhopen (personificatie van het lijdende volk)"
             ],
-            "karakterisering": "God is de actieve koning die terugkeert. De mensen zijn eerst afwachtend (wachters) en dan extatisch.",
-            "verhaallijn": "De wachttijd is voorbij; de Koning komt thuis.",
-            "verzwegen_gesuggereerd": "De ellende van de ballingschap wordt verzwegen, maar klinkt door in het woord 'ruïnes' en 'troost'."
+            "karakterisering": "YHWH is de actieve held; de bode is de katalysator; de wachters en puinhopen zijn de reactieve getuigen die overgaan tot lofprijzing.",
+            "verhaallijn": "God keert terug naar zijn stad, de bode rent vooruit, de stad ziet Hem komen en barst in vreugde uit.",
+            "verzwegen_gesuggereerd": "De ellende van de ballingschap wordt verzwegen maar verondersteld in het woord 'puinhopen'."
           }
         },
         "structuralistische_analyse": {
           "schema_constructie": {
             "scenarios": [
               {
-                "scène": "1",
+                "scène": "1. De Bergen",
                 "tijd": "Nu (actueel)",
-                "plaats": "Op de bergen",
+                "plaats": "Op de bergen (buiten de stad)",
                 "actant": "Vreugdebode",
-                "handeling": "Komen aansnellen, vrede laten horen, zeggen tot Sion",
+                "handeling": "Vrede laten horen / Goed nieuws boodschappen / Zeggen tot Sion",
                 "medewerker": [
                   "Voeten (instrument)"
                 ],
                 "opponent": [
-                  "Afstand/Bergen (impliciet overwonnen)"
+                  "Afstand / Onwetendheid (impliciet)"
                 ]
               },
               {
-                "scène": "2",
+                "scène": "2. De Stadsmuren",
                 "tijd": "Gelijktijdig",
-                "plaats": "Op de muren/Sion",
+                "plaats": "Sion / Jeruzalem",
                 "actant": "Wachters",
-                "handeling": "Stem verheffen, jubelen, zien (oog in oog)",
+                "handeling": "Stem verheffen / Jubelen / Zien (oog in oog)",
                 "medewerker": [
-                  "Ogen"
+                  "Hun stem"
                 ],
                 "opponent": [
-                  "Duisternis/Afwezigheid (impliciet)"
+                  "Duisternis/Afwezigheid (die nu verdwijnt)"
                 ]
               },
               {
-                "scène": "3",
+                "scène": "3. De Ruïnes",
                 "tijd": "Gevolg",
-                "plaats": "Ruïnes van Jeruzalem",
-                "actant": "HEER",
-                "handeling": "Troosten, vrijkopen, terugkeren",
-                "medewerker": [],
+                "plaats": "Puinhopen van Jeruzalem",
+                "actant": "Puinhopen",
+                "handeling": "Losbarsten / Jubelen",
+                "medewerker": [
+                  "YHWH (als oorzaak: Hij heeft getroost)"
+                ],
                 "opponent": [
-                  "Verwoesting/Ballingschap"
+                  "Verwoesting (oude staat)"
                 ]
               },
               {
-                "scène": "4",
-                "tijd": "Toekomst/Gevolg",
-                "plaats": "Einden der aarde",
-                "actant": "HEER",
-                "handeling": "Arm ontbloten, redding tonen",
+                "scène": "4. De Wereld",
+                "tijd": "Toekomst/Eschaton",
+                "plaats": "Ogen van alle volken / Einden der aarde",
+                "actant": "YHWH",
+                "handeling": "Arm ontbloten",
                 "medewerker": [],
                 "opponent": [
-                  "Volken (als getuigen/toeschouwers)"
+                  "De volken (als getuigen/toeschouwers)"
                 ]
               }
             ],
-            "schema_regels": "De actie verschuift van menselijke boden naar God zelf als de ultieme Actant."
+            "schema_regels": "De actanten verschuiven van menselijk (bode) naar collectief (wachters/puinhopen) naar goddelijk (YHWH). De handeling intensiveert van spreken naar zien naar kosmisch handelen."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "Ruimtelijk: Bergen -> Muren -> Binnenstad -> Wereldwijd. Een inzoomende en dan weer uitzoomende beweging.",
-            "actanten_analyse": "De menselijke actanten (bode, wachters) zijn slechts voorlopers van de ware Actant: de HEER die handelt (koning zijn, terugkeren, troosten, ontbloten).",
-            "handelingen_trajecten": "Communicatieve handelingen domineren: horen laten, zeggen, stem verheffen, jubelen. Maar de kern is visueel: zien, ontbloten, oog in oog.",
-            "medewerkers_opponenten_analyse": "Er zijn geen expliciete opponenten in de tekst; de overwinning is al een feit. De 'ruïnes' zijn geen obstakel meer, maar een koor."
+            "tijd_plaats_patroon": "Ruimtelijk is er een inzoom-beweging (bergen -> muren -> binnenstad) gevolgd door een extreme uitzoom-beweging (einden der aarde).",
+            "actanten_analyse": "De bode initieert, de wachters verifiëren, de ruïnes reageren, maar YHWH is de eigenlijke actor achter de schermen die in scène 4 zichtbaar wordt.",
+            "handelingen_trajecten": "Communicatieve trajecten domineren: horen, roepen, zien, boodschappen. Het is een liturgie van waarneming.",
+            "medewerkers_opponenten_analyse": "Er zijn geen expliciete opponenten in de tekst; de weerstand (ballingschap/puin) wordt overwonnen door de loutere aanwezigheid van de actanten."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De tekst is één doorlopende beweging van aankondiging naar realisatie.",
-            "temporele_ontwikkeling": "Van het 'horen' van de boodschap (v7) naar het 'zien' van de realiteit (v8, v10).",
-            "literaire_elementen": "Herhaling van 'redding' en 'zien'.",
-            "karakteranalyse": "De wachters ontlenen hun autoriteit aan wat zij ZIEN, niet aan wat zij bedenken.",
-            "evaluatieve_dimensie": "De conclusie is dat God Koning is (v7) en dat dit zichtbaar is voor iedereen (v10)."
+            "structurele_samenhang": "De scènes zijn causaal verbonden: de bode zorgt dat wachters zien; het zien zorgt dat ruïnes zingen; Gods handelen fundeert dit alles.",
+            "temporele_ontwikkeling": "Van aankondiging naar realisatie.",
+            "literaire_elementen": "Herhaling van 'jubelen' en 'zien'.",
+            "karakteranalyse": "De autoriteit van de bode ligt in de boodschap; de autoriteit van YHWH ligt in zijn 'heilige arm'.",
+            "evaluatieve_dimensie": "De tekst evalueert de komst als 'lieflijk' (v7) en 'troostrijk' (v9)."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
               "De zichtbare terugkeer van God",
               "Vreugde als reactie op redding",
-              "Van horen naar zien"
+              "Universele reikwijdte van heil"
             ],
-            "structurele_patroon": "De menselijke verkondiging (bode) wordt bevestigd door goddelijke manifestatie (arm ontbloten).",
-            "theologische_betekenis": "Redding is geen abstract idee, maar een zichtbare gebeurtenis in de geschiedenis. God blijft niet op afstand, maar komt fysiek (antropomorf) in beeld."
+            "structurele_patroon": "Een crescendo van een eenzame loper op de bergen naar een wereldwijd publiek.",
+            "theologische_betekenis": "Redding is niet slechts een politiek feit, maar een theofanie: God laat zichzelf zien. De nadruk op zintuiglijkheid (voeten, ogen, arm, stem) maakt het heil concreet en fysiek."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "God keert zichtbaar terug naar zijn volk om te troosten en te regeren. Dit is geen gerucht meer, maar een waarneembaar feit.",
-          "godsbeeld": "Een God die actief ingrijpt, die zich laat zien ('oog in oog'), die machtig is (arm) maar ook troostend (als een herder/vader).",
-          "mensbeeld_wereld_heil": "De mens is in eerste instantie toeschouwer en ontvanger van dit nieuws. Heil is herstel van de gemeenschap (Jeruzalem) en vrede.",
+          "centrale_boodschap": "God keert als Koning terug naar zijn volk om de ballingschap te beëindigen; dit is nieuws dat fysiek waargenomen en doorgegeven moet worden.",
+          "godsbeeld": "God is een strijdbare Koning (ontblote arm) en een troostende Verlosser. Hij is niet statisch, maar in beweging (terugkerend).",
+          "mensbeeld_wereld_heil": "De mens is in eerste instantie wachter/toeschouwer die het heil moet 'zien' en beamen. De wereld (puinhopen) wordt getransformeerd door Gods komst.",
           "bijbels_theologische_lijnen": [
+            "Koninkrijk van God ('Uw God is Koning')",
             "Exodus (Gods arm, bevrijding)",
-            "Koningschap van JHWH (troonsbestijging)",
-            "Sion-theologie (Jeruzalem als centrum)"
+            "Sion-theologie"
           ],
-          "plaats_heilsgeschiedenis": "Einde van de Babylonische ballingschap, maar eschatologisch doorgetrokken naar de definitieve komst van Gods Rijk.",
-          "spanning_andere_teksten": "Staat in contrast met de klacht dat God zijn gelaat verborgen heeft (Jesaja 45:15). Hier laat Hij zich weer zien.",
+          "plaats_heilsgeschiedenis": "Einde van de Babylonische ballingschap, profetisch vooruitwijzend naar de eschatologische komst van God (in Christus).",
+          "spanning_andere_teksten": "Staat in contrast met klaagliederen over Gods afwezigheid. Hier is Hij onmiskenbaar aanwezig.",
           "dogmatische_raakvlakken": [
-            "Openbaring (God maakt zich kenbaar)",
-            "Eschatologie (Gods uiteindelijke overwinning)"
+            "Eschatologie",
+            "Soteriologie (redding als daad van God)"
           ],
           "theologische_controverses": null
         },
         "zoekmodellen_snoek": {
           "godsbeelden_ot": {
-            "werkwoordelijke_uitspraken": "God 'keert terug', 'troost', 'koopt vrij', 'ontbloot zijn arm'. Dit zijn zeer actieve, ingrijpende werkwoorden.",
-            "metaforische_uitspraken": "God als Koning (regeert), God als Krijgsheld (ontbloot arm).",
+            "werkwoordelijke_uitspraken": "God keert terug, troost, koopt vrij, ontbloot zijn arm. Dit zijn krachtige, actieve werkwoorden die ingrijpen in de geschiedenis.",
+            "metaforische_uitspraken": "God als Koning (v7), God als Krijgsheld (ontblote arm).",
             "overstijgende_eigenschappen": "Heiligheid (heilige arm).",
-            "toebuigende_eigenschappen": "Troost, nabijheid (terugkeer naar Sion).",
-            "dominante_categorie": "Werkwoordelijk en metaforisch. God is vooral Actor.",
-            "spanning": "De spanning tussen zijn verhevenheid (Koning) en zijn fysieke nabijheid (oog in oog).",
-            "relevantie_gemeente": "Voor De Gelderhorst: God is geen abstract idee, maar iemand die 'naar huis komt' en die je kunt zien. De 'ontblote arm' is een visueel teken van kracht, herkenbaar in gebarentaal."
+            "toebuigende_eigenschappen": "Troost (v9).",
+            "dominante_categorie": "Werkwoordelijk/Actief. God is hier primair de Actor die de status quo doorbreekt.",
+            "spanning": "De spanning tussen de verheven Koning en de God die zich 'in het stof' van de puinhopen begeeft om te troosten.",
+            "relevantie_gemeente": "Voor De Gelderhorst: God is niet passief of abstract, maar een God die 'in beweging komt' en zichtbaar wordt (arm ontbloten)."
           },
           "mensbeelden_ot": {
-            "horizontale_as": "De wachters en de ruïnes doen 'goed' door te getuigen en te jubelen. Er is geen sprake van kwaad in deze perikoop.",
-            "verticale_as": "Sterk gericht op God (het zien van Zijn terugkeer) en op de wereld (verkondigen aan de volken).",
-            "personages_positie": "De wachters staan op de grens tussen God en stad.",
-            "karakterontwikkeling": "Van waakzaamheid naar extase."
+            "horizontale_as": "De wachters en de bode doen 'goed' door het nieuws te verspreiden en God te verwelkomen.",
+            "verticale_as": "Sterk gericht op God (ze zien naar Zijn komst uit).",
+            "personages_positie": "De mens is hier ontvanger en getuige van heil, geen producent ervan.",
+            "karakterontwikkeling": "Van afwachtend (wachters) naar jubelend."
           },
           "jezusbeelden_nt": {
             "van_achteren": null,
@@ -1258,80 +1182,81 @@
           "vertaalvergelijking": [
             {
               "vertaling": "NBV21 vs. Naardense Bijbel (NB)",
-              "significante_verschillen": "NBV21 vertaalt 'Logos' traditioneel met 'Woord'. NB kiest voor 'Spreken'. Beide zijn auditief. In vers 14 vertaalt NBV21 'heeft in ons midden gewoond', terwijl NB 'heeft bij ons zijn tent opgeslagen' (skenoo) heeft. De tent-metafoor is rijker (verwijzing tabernakel). In vers 18 vertaalt NBV21 'heeft Hem doen kennen', NB 'heeft (hem) uitgelegd'. Het Griekse 'exegesato' betekent uitleggen, ontvouwen, maar ook 'leiden'. Jezus is de exegese van de Vader."
+              "significante_verschillen": "NBV21 vertaalt 'Logos' traditioneel met 'Woord', NB kiest voor het dynamische 'Spreken'. In vers 14 vertaalt NBV21 'heeft in ons midden gewoond', terwijl NB de tabernakel-symboliek behoudt met 'heeft bij ons zijn tent opgeslagen'. NBV21 vertaalt 'monogenes' in v18 met 'enige Zoon', NB met 'eniggeboren God' (volgend op een tekstvariant)."
             }
           ],
-          "werkvertaling_cruciaal": "Vers 1: 'In het begin was de Zelfexpressie (Logos), en de Zelfexpressie was bij God...'\nVers 14: 'En de Zelfexpressie is vlees geworden en heeft zijn tent bij ons opgezet...'\nVers 18: 'Niemand heeft ooit God gezien; de eniggeboren God... die heeft Hem zichtbaar gemaakt/uitgelegd.'"
+          "werkvertaling_cruciaal": "Vers 14: 'En het Woord is vlees geworden en heeft zijn tent opgeslagen onder ons, en wij hebben zijn heerlijkheid aanschouwd...'"
         },
         "tekstkritiek": {
           "relevante_varianten": [
             {
               "vers": "1:18",
               "variant": "monogenes theos (eniggeboren God) vs. monogenes huios (eniggeboren Zoon)",
-              "handschriften": "P66, P75, Sinaiticus, Vaticanus (theos) vs. latere Byzantijnse tekst (huios).",
-              "betekenis_impact": "'Eniggeboren God' is de lectio difficilior en waarschijnlijk oorspronkelijk. Het onderstreept de godheid van Christus sterker dan 'Zoon'. Jezus IS God die God uitlegt."
+              "handschriften": "P66, P75, Aleph, B (oudste getuigen) hebben 'theos'.",
+              "betekenis_impact": "'Eniggeboren God' is een sterkere bevestiging van de godheid van Christus, passend bij vers 1. NBV21 kiest voor 'Zoon' in de hoofdtekst maar erkent 'God' in voetnoot/uitleg; NB kiest 'God'."
             }
           ],
-          "conclusie": "De lezing 'eniggeboren God' in vers 18 verdient de voorkeur en versterkt de inclusio met vers 1 ('het Woord was God')."
+          "conclusie": "De lezing 'monogenes theos' is waarschijnlijk oorspronkelijk en versterkt de hoge christologie van de proloog."
         },
         "woordstudie": [
           {
-            "woord_origineel": "λόγος (Logos)",
-            "transliteratie": "Logos",
-            "vertaling": "Woord / Rede / Zin / Concept",
-            "semantische_range": "In de Griekse filosofie het ordenend principe van de kosmos; in de Joodse traditie de scheppende kracht (Memra) en Wijsheid van God.",
-            "gebruik_elders": "1 Johannes 1:1 ('het woord des levens').",
-            "meerduidigheid": "Het is niet slechts een gesproken woord, maar de inhoudelijke 'gedachte' of 'plan' van God die naar buiten treedt. Voor doven: Gods 'Gebaar' of 'Expressie'."
+            "woord_origineel": "λόγος (logos)",
+            "transliteratie": "logos",
+            "vertaling": "woord / rede / plan / spreken",
+            "semantische_range": "In de Griekse filosofie het ordenend principe van de kosmos; in de Joodse traditie Gods scheppende woord (Dabar) en wijsheid (Sophia).",
+            "gebruik_elders": "Septuaginta (Scheppingsverhaal), Spreuken 8 (Wijsheid).",
+            "meerduidigheid": "Verbindt Joodse en Hellenistische concepten."
           },
           {
-            "woord_origineel": "σκηνόω (Skenoo)",
-            "transliteratie": "Skenoo",
-            "vertaling": "Tent opslaan / Wonen",
-            "semantische_range": "Verwijst naar de Tabernakel (Mishkan) in de woestijn. God woont tijdelijk en mobiel te midden van zijn volk.",
-            "gebruik_elders": "Openbaring 21:3 (Gods tent bij de mensen).",
-            "meerduidigheid": "Duidt op nabijheid, maar ook op kwetsbaarheid (een tent is geen burcht)."
+            "woord_origineel": "σὰρξ (sarx)",
+            "transliteratie": "sarx",
+            "vertaling": "vlees",
+            "semantische_range": "Duidt op de menselijke natuur in zijn zwakheid, vergankelijkheid en sterfelijkheid. Het is ruwer dan 'soma' (lichaam).",
+            "gebruik_elders": "Paulus gebruikt het vaak negatief (zondige natuur), Johannes hier neutraal/realistisch als aanduiding van ware mensheid.",
+            "meerduidigheid": null
           },
           {
-            "woord_origineel": "σάρξ (Sarx)",
-            "transliteratie": "Sarx",
-            "vertaling": "Vlees",
-            "semantische_range": "Het menselijk lichaam in zijn zwakheid, sterfelijkheid en vergankelijkheid. Niet per se 'zondig', maar wel 'aards'.",
-            "gebruik_elders": "Vaak in contrast met 'Pneuma' (Geest).",
-            "meerduidigheid": "Johannes kiest bewust niet voor 'anthropos' (mens) maar het rauwere 'sarx' om het realisme van de incarnatie te benadrukken."
+            "woord_origineel": "ἐσκήνωσεν (eskēnōsen)",
+            "transliteratie": "eskēnōsen",
+            "vertaling": "hij tabernakelde / sloeg zijn tent op",
+            "semantische_range": "Verwijst naar de 'skene' (tent) en de 'Shekinah' (Gods inwoning) in de woestijn.",
+            "gebruik_elders": "Exodus 25:8, Openbaring 21:3.",
+            "meerduidigheid": null
           }
         ],
         "literaire_analyse": {
-          "genre": "Hymnische proloog / Theologische ouverture",
-          "genre_conventies": "Ritmisch proza, trapvormige parallellismen (woord -> leven -> licht), abstracte begrippen die gepersonifieerd worden.",
+          "genre": "Hymnische Proloog / Theologische Overture",
+          "genre_conventies": "Ritmische taal, trapvormige parallellismen, abstracte begrippen die gepersonifieerd worden.",
           "structuur": {
-            "opbouw": "A. De eeuwige Logos bij God (1-5)\nB. Het getuigenis van Johannes (6-8)\nC. De komst in de wereld en de afwijzing (9-11)\nD. De aanname en kindschap (12-13)\nE. De Incarnatie (Het Woord werd vlees) (14)\nB'. Het getuigenis van Johannes (15)\nA'. De Zoon in de schoot van de Vader (16-18)",
+            "opbouw": "Concentrische structuur of golvende beweging. A: Het Woord bij God (1-2); B: Schepping en Licht (3-5); C: Johannes de Doper (6-8); D: Komst in de wereld/afwijzing (9-11); E: Aanname/Kindschap (12-13); F: Incarnatie (14 - Climax); G: Getuigenis Johannes (15); H: Genade en Waarheid/Slot (16-18).",
             "cesuren": [
               "Vers 6 (introductie Johannes)",
-              "Vers 14 (de climax van de incarnatie)"
+              "Vers 14 (de incarnatie)"
             ],
-            "centrum": "Vers 14: De incarnatie is het scharnierpunt waar eeuwigheid en tijd elkaar raken.",
-            "chiasme_inclusio": "Inclusio tussen vers 1 (Woord was God) en vers 18 (Eniggeboren God)."
+            "centrum": "Vers 12-14: De overgang van afwijzing naar aanname en de vleeswording.",
+            "chiasme_inclusio": "Inclusio tussen vers 1 (Woord was God) en vers 18 (Eniggeboren God aan de boezem van de Vader)."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
               "Chiasme",
-              "Antithese (licht/duisternis, aannemen/niet aannemen)",
-              "Repetitio (God, Licht, Wereld)"
+              "Antithese (licht/duisternis)",
+              "Klimax (van Woord naar Vlees)",
+              "Parallellisme"
             ],
-            "retorische_strategie": "De auteur begint kosmisch en abstract om de lezer mee te nemen naar het specifieke, historische moment van de vleeswording. Het dwingt tot verwondering.",
-            "effect_lezer": "De lezer wordt overweldigd door de grootsheid van Christus' oorsprong."
+            "retorische_strategie": "De auteur begint kosmisch en abstract om de lezer te overweldigen met de goddelijke status van de Logos, om vervolgens te schokken met de bewering dat deze Logos 'vlees' (kwetsbaar) is geworden.",
+            "effect_lezer": "Verwondering over de paradox van de menswording."
           },
           "karakters_plot": {
             "personages": [
-              "Het Woord/Jezus",
-              "God (Vader)",
+              "Het Woord (Logos/Jezus)",
+              "God (De Vader)",
               "Johannes (de Doper)",
               "Mozes (als contrast)",
-              "De wereld/De zijnen (opponent)",
-              "Wij/Kinderen Gods (ontvangers)"
+              "De wereld/duisternis (antagonist)",
+              "De gelovigen/kinderen Gods"
             ],
-            "karakterisering": "Het Woord is de actieve schepper en verlosser. Johannes is slechts getuige (nederig).",
-            "verhaallijn": "De afdaling van de Logos vanuit de eeuwigheid naar de menselijke geschiedenis.",
+            "karakterisering": "Het Woord is de protagonist die een reis maakt van de hemel naar de aarde. Johannes is de getuige.",
+            "verhaallijn": "De neerdaling van de Logos in de vijandige wereld en de stichting van een nieuwe gemeenschap (kinderen Gods).",
             "verzwegen_gesuggereerd": "De naam 'Jezus Christus' valt pas in vers 17; daarvoor is het slechts 'Het Woord' of 'Het Licht'."
           }
         },
@@ -1339,96 +1264,103 @@
           "schema_constructie": {
             "scenarios": [
               {
-                "scène": "1",
-                "tijd": "In den beginne (Eeuwigheid)",
+                "scène": "1. De Eeuwigheid",
+                "tijd": "In het begin (Archè)",
                 "plaats": "Bij God",
-                "actant": "Het Woord (Logos)",
-                "handeling": "Zijn, scheppen, leven geven",
+                "actant": "Het Woord",
+                "handeling": "Zijn / Scheppen (impliciet via 'door hem geworden')",
                 "medewerker": [
-                  "God (als bron)"
-                ],
-                "opponent": [
-                  "Duisternis (probeert te overweldigen, faalt)"
-                ]
-              },
-              {
-                "scène": "2",
-                "tijd": "Historisch moment",
-                "plaats": "De wereld",
-                "actant": "Johannes",
-                "handeling": "Getuigen",
-                "medewerker": [
-                  "God (zender)"
+                  "God (als relatie)"
                 ],
                 "opponent": []
               },
               {
-                "scène": "3",
-                "tijd": "Incarnatie",
-                "plaats": "De wereld / Het eigene",
-                "actant": "Het Woord / Het Licht",
-                "handeling": "Komen, verlichten",
+                "scène": "2. De Kosmos/Wereld",
+                "tijd": "Historisch continuüm",
+                "plaats": "In de duisternis / Wereld",
+                "actant": "Het Licht",
+                "handeling": "Schijnen / Verlichten",
                 "medewerker": [],
                 "opponent": [
-                  "De wereld (kent niet)",
-                  "De zijnen (nemen niet aan)"
+                  "De Duisternis (die het niet greep)"
                 ]
               },
               {
-                "scène": "4",
-                "tijd": "Nu (Heilsmoment)",
-                "plaats": "Onder ons",
-                "actant": "Het Woord (Vlees geworden)",
-                "handeling": "Tent opslaan, glorie tonen, uitleggen (exegese)",
+                "scène": "3. De Getuigenis",
+                "tijd": "Historisch moment",
+                "plaats": "Aarde",
+                "actant": "Johannes",
+                "handeling": "Getuigen",
+                "medewerker": [],
+                "opponent": []
+              },
+              {
+                "scène": "4. De Confrontatie",
+                "tijd": "Incarnatie-moment",
+                "plaats": "Het Zijne (Eigen huis)",
+                "actant": "Het Woord/Hij",
+                "handeling": "Komen",
                 "medewerker": [
-                  "Wij (getuigen/zieners)"
+                  "Degenen die aannamen"
+                ],
+                "opponent": [
+                  "De Zijnen (die niet aannamen)"
+                ]
+              },
+              {
+                "scène": "5. De Inwoning",
+                "tijd": "Heils-Nu",
+                "plaats": "Onder ons",
+                "actant": "Het Woord",
+                "handeling": "Vlees worden / Tent opslaan",
+                "medewerker": [
+                  "Wij (die heerlijkheid zagen)"
                 ],
                 "opponent": []
               }
             ],
-            "schema_regels": "De Actant (Logos) ondergaat een transformatie van abstract/goddelijk naar concreet/menselijk (Vlees) om zijn doel (God doen kennen) te bereiken."
+            "schema_regels": "Het Woord is de constante actant, maar verandert van modus (Goddelijk -> Licht -> Vlees). De 'wereld' verschuift van object van schepping naar opponent."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "Van 'In den beginne' (buiten de tijd) naar 'in de wereld' (ruimtelijk/tijdelijk). Een verticale beweging omlaag.",
-            "actanten_analyse": "Het Woord is de onbetwiste hoofdrolspeler, maar verandert van modus: eerst Schepper, dan Licht, dan Vlees/Zoon.",
-            "handelingen_trajecten": "Zijn -> Scheppen -> Schijnen -> Komen -> Wonen -> Verklaren. Een traject van toenemende concretisering.",
-            "medewerkers_opponenten_analyse": "De 'wereld' en 'duisternis' zijn de opponenten, gekenmerkt door onbegrip en afwijzing. De 'kinderen Gods' zijn degenen die door aanname medewerkers worden."
+            "tijd_plaats_patroon": "Van pre-existentie (buiten tijd/ruimte) naar historische tijd en fysieke ruimte ('onder ons').",
+            "actanten_analyse": "Het Woord is de soevereine actant; Johannes is slechts een helper (getuige). De mensheid splitst zich in opponenten (niet aannemen) en helpers/begunstigden (aannemen).",
+            "handelingen_trajecten": "Zijn -> Schijnen -> Komen -> Wonen -> Verklaren.",
+            "medewerkers_opponenten_analyse": "De duisternis is een niet-actieve opponent (begrijpt niet), 'de zijnen' zijn actieve opponenten (nemen niet aan)."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De proloog verbindt schepping (Gen 1) met herschepping (Incarnatie).",
-            "temporele_ontwikkeling": "Van pre-existentie naar existentie.",
-            "literaire_elementen": "De climax ligt in het 'zien' van de glorie (v14) en het 'kennen' van de Vader (v18).",
-            "karakteranalyse": "Jezus ontleent zijn autoriteit aan zijn pre-existentie bij de Vader.",
-            "evaluatieve_dimensie": "Genade en waarheid zijn nu definitief beschikbaar, superieur aan de wet van Mozes."
+            "structurele_samenhang": "De proloog vertelt de hele heilsgeschiedenis in vogelvlucht.",
+            "temporele_ontwikkeling": "Lineair dalend (van hemel naar aarde).",
+            "literaire_elementen": "De herhaling van 'worden' (egeneto) structureert de tekst.",
+            "karakteranalyse": "Het Woord ontleent zijn macht aan zijn goddelijke oorsprong (v1).",
+            "evaluatieve_dimensie": "De auteur evalueert de incarnatie als 'vol van genade en waarheid'."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
               "Incarnatie (Vleeswording)",
-              "Licht vs. Duisternis",
-              "God kennen door de Zoon",
+              "Openbaring (Licht/Zien)",
               "Afwijzing vs. Aanname"
             ],
-            "structurele_patroon": "Een U-vormige beweging: Van God (hoog) -> naar Vlees (laag) -> om ons tot God te brengen (kindschap).",
-            "theologische_betekenis": "God is niet langer onzichtbaar of onkenbaar. In de kwetsbaarheid van het vlees is de glorie van God zichtbaar geworden. Voor doven: God heeft zich vertaald naar beeld."
+            "structurele_patroon": "De 'U'-vorm: Van God (v1) naar Vlees (v14) terug naar de boezem van de Vader (v18).",
+            "theologische_betekenis": "God maakt zich kenbaar door zich te vertalen in menselijke werkelijkheid. De onzichtbare God wordt zichtbaar ('gezien', v14, v18)."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "God heeft de stilte en onzichtbaarheid doorbroken door Zelf mens te worden. Jezus is de zichtbare 'vertaling' van Gods wezen.",
-          "godsbeeld": "Een God die communiceert (Logos), die licht is, en die zo verlangt naar relatie dat Hij zijn transcendentie opgeeft om 'in een tent' naast ons te wonen.",
-          "mensbeeld_wereld_heil": "De wereld is in duisternis en onwetendheid. De mens kan zichzelf niet verlossen (niet uit wil van man/vlees), maar moet 'geboren worden uit God'. Heil is: God zien en aannemen.",
+          "centrale_boodschap": "De eeuwige, goddelijke Logos is mens geworden in Jezus Christus om God zichtbaar en kenbaar te maken en mensen tot kinderen van God te maken.",
+          "godsbeeld": "God is communicatief (Woord), lichtend, en zoekt nabijheid (Tabernakel). Hij is Vader (relatie tot Zoon).",
+          "mensbeeld_wereld_heil": "De wereld is door zonde verduisterd en vijandig, maar vatbaar voor verlichting. Heil is 'kind van God worden' door geloof.",
           "bijbels_theologische_lijnen": [
-            "Scheppingstheologie (Genesis 1 parallel)",
-            "Tabernakeltheologie (Exodus)",
-            "Wijsheidsliteratuur (Spreuken 8, Wijsheid bij de schepping)"
+            "Schepping (Genesis 1 parallel)",
+            "Exodus (Tabernakel/Heerlijkheid)",
+            "Wijsheidsliteratuur (Wijsheid die woning zoekt)"
           ],
-          "plaats_heilsgeschiedenis": "Het definitieve begin van het Nieuwe Verbond. De vervulling van de Thora (Mozes) in genade en waarheid.",
-          "spanning_andere_teksten": "Spanning met Exodus 33 ('Niemand kan Mij zien en leven'). Johannes 1:18 zegt: 'Niemand heeft God gezien', MAAR de Zoon heeft Hem verklaard. In Christus zien we God dus wel.",
+          "plaats_heilsgeschiedenis": "Het definitieve begin van het Nieuwe Verbond; vervulling van Wet en Profeten.",
+          "spanning_andere_teksten": "Spanning met synoptici (geen geboorteverhaal, maar pre-existentie).",
           "dogmatische_raakvlakken": [
-            "Christologie (God en mens)",
-            "Triniteit (Vader en Zoon)",
+            "Triniteit",
+            "Christologie (Twee-naturenleer)",
             "Incarnatie"
           ],
-          "theologische_controverses": "De strijd tegen het Gnosticisme (dat stelde dat vlees/materie slecht is). Johannes benadrukt: het Woord werd VLEES (materie is goed/geheiligd)."
+          "theologische_controverses": "Arianisme (was het Woord geschapen?), Gnostiek (is vlees slecht?)."
         },
         "zoekmodellen_snoek": {
           "godsbeelden_ot": {
@@ -1447,29 +1379,246 @@
             "karakterontwikkeling": null
           },
           "jezusbeelden_nt": {
-            "van_achteren": "Jezus wordt geplaatst in de lijn van Mozes (v17) en de Tabernakel (v14), maar overstijgt hen.",
-            "van_boven": "Dit is het dominante perspectief in Johannes 1. Hij is God, was bij God, Schepper van alles. Hij komt 'van boven' naar beneden.",
-            "van_beneden": "In vers 14 ('werd vlees') wordt het perspectief radicaal 'van beneden'. Hij deelt in onze kwetsbaarheid, sterfelijkheid en (voor de context van De Gelderhorst) onze lichamelijke beperkingen.",
-            "van_voren": "Hij brengt het 'ware licht' dat de wereld verlicht (eschatologisch).",
-            "dominant_perspectief": "Van boven. De nadruk ligt op zijn goddelijke oorsprong die de menselijke verschijning gewicht geeft.",
-            "spanning_godheid_mensheid": "De spanning is maximaal: De eeuwige God wordt sterfelijk vlees. De Oneindige wordt begrensd. Voor de preek: De onzichtbare God wordt zichtbaar.",
-            "betekenis_hoorders_nu": "Omdat Hij 'van boven' is, heeft zijn komst kosmische betekenis. Omdat Hij 'vlees' werd, begrijpt Hij onze fysieke realiteit (ook doofheid, ouderdom) van binnenuit."
+            "van_achteren": "Jezus wordt geplaatst tegenover Mozes (v17). Hij is de vervulling van de Thora en de Tabernakel-aanwezigheid. Hij is de ware 'Shekinah'.",
+            "van_boven": "Dit is het dominante perspectief in Johannes 1. Jezus is de pre-existente Logos, God zelf (v1), Schepper van alles (v3). Hij komt 'van God' en keert terug naar de 'schoot van de Vader'.",
+            "van_beneden": "In vers 14 ('Het Woord is vlees geworden') wordt het perspectief 'van beneden' radicaal geïntroduceerd. 'Vlees' (sarx) duidt op de volledige, kwetsbare menselijkheid. Hij is geen schijn-mens, maar tastbare materie.",
+            "van_voren": "Hij brengt 'genade en waarheid' en maakt mensen tot 'kinderen van God' (v12), wat een eschatologische nieuwe status is.",
+            "dominant_perspectief": "Van boven (Hoge Christologie), maar met een scherpe landing in het 'van beneden' (Vlees).",
+            "spanning_godheid_mensheid": "De tekst handhaaft de maximale spanning: Hij is God (v1) én Vlees (v14). Hij is de Schepper én een schepsel geworden.",
+            "betekenis_hoorders_nu": "Voor de dove hoorders is de beweging van 'abstract/onzichtbaar' (Logos) naar 'zichtbaar/tastbaar' (Vlees) cruciaal. God is niet langer een stem die ze niet horen, maar een Persoon die ze kunnen zien (v14 'wij hebben zijn heerlijkheid gezien')."
           }
         }
       }
     ],
     "samenhang_lezingen": {
-      "rode_draad": "Van horen naar zien: De zichtbaarheid van Gods redding.",
+      "rode_draad": "De zichtbare komst van God in de werkelijkheid van zijn volk. Beide teksten beschrijven een beweging van aankondiging naar fysieke aanwezigheid.",
       "versterkingen": [
-        "Jesaja 52 spreekt over 'oog in oog' zien van Gods terugkeer; Johannes 1 bevestigt dit met 'wij hebben zijn glorie aanschouwd'.",
-        "Jesaja spreekt over de 'arm van de HEER' (antropomorf); Johannes spreekt over het 'Vlees geworden Woord' (incarnatie).",
-        "Beide teksten benadrukken de vreugde en het universele karakter (alle volken/iedere mens)."
+        "Jesaja's 'zien oog in oog' (v8) wordt vervuld in Johannes' 'wij hebben zijn heerlijkheid gezien' (v14).",
+        "De 'vreugdebode' van Jesaja vindt zijn ultieme vorm in de 'Logos' die naar de wereld komt.",
+        "De 'ontblote arm' van God (Jesaja) is parallel aan het 'vlees geworden Woord' (Johannes): God maakt zijn kracht zichtbaar in menselijke vorm."
       ],
       "correcties": [
-        "Jesaja focust op het herstel van Jeruzalem/Sion (nationaal/lokaal); Johannes trekt dit open naar de hele kosmos en elk individu ('ieder mens').",
-        "Waar Jesaja nog spreekt in termen van een militaire overwinning/koningschap, verdiept Johannes dit naar een existentiële overwinning van Licht op Duisternis."
+        "Johannes corrigeert het mogelijke nationalisme van Jesaja (Sion/Jeruzalem) naar een universeel heil ('ieder mens', 'wereld').",
+        "Waar Jesaja spreekt over terugkeer naar een fysieke stad, spreekt Johannes over inwoning in de menselijke natuur ('onder ons')."
       ]
     }
+  },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 184,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de hoog-liturgische 'Woord'-thematiek (Johannes 1) met een hoge intensiteit (8/10) en meer ingetogen, meditatieve liederen die de 'onzichtbare nabijheid' benadrukken. Er is voldoende variatie tussen lofprijzing en vertrouwensliederen om de spanning tussen het kerstfeest en de wereldwijde crisis (Gaza) te overbruggen.",
+      "contextuele_reflectie": "Voor de specifieke context van De Gelderhorst is sterk ingezet op liederen met visuele metaforen (Licht, sterren, 'zien'). Gezien de actualiteit van oorlog en politieke verschuivingen zijn liederen geselecteerd die spreken over 'vrede' en 'het woord dat standhoudt' tegenover de chaos, wat aansluit bij de behoefte aan een 'veilige haven'."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "488",
+        "titel": "In den beginne was het woord,",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtig loflied",
+        "toelichting": "Directe verklanking van de evangelielezing (Johannes 1:1). Zet de toon voor de kosmische betekenis van de menswording.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "98d",
+        "titel": "Alle einden der aarde aanschouwen het heil van ...",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijk liturgisch lied",
+        "toelichting": "Combineert de thematiek van Psalm 98 en Jesaja 52:10. Zeer geschikt voor een visueel ingestelde gemeente vanwege het 'aanschouwen'.",
+        "suggestie_gebruik": "Antwoordlied na de eerste lezing"
+      },
+      {
+        "nummer": "600",
+        "titel": "Licht, ontloken aan het donker,",
+        "type_match": "Seizoen",
+        "karakter": "Stralend loflied",
+        "toelichting": "Verwijst naar 'Licht uit Licht' en Johannes 1:9. De sterke visuele beeldspraak sluit perfect aan bij de Dovencultuur.",
+        "suggestie_gebruik": "Lied na de preek"
+      },
+      {
+        "nummer": "445",
+        "titel": "De nacht is haast ten einde,",
+        "type_match": "Contextueel",
+        "karakter": "Hoopvol getuigenis",
+        "toelichting": "Spreekt over licht in de duisternis; een noodzakelijk geluid tegen de achtergrond van de humanitaire crisis in Gaza.",
+        "suggestie_gebruik": "Gebedslied"
+      },
+      {
+        "nummer": "477",
+        "titel": "Komt allen tezamen, jubelend van vreugde:",
+        "type_match": "Seizoen",
+        "karakter": "Klassieke hymne",
+        "toelichting": "Onmisbaar kerstlied dat de incarnatie (Johannes 1:14) viert en de gemeenschap verbindt.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "275",
+        "titel": "Heer onze Heer, hoe zijt Gij aanwezig",
+        "type_match": "Thematisch",
+        "karakter": "Ingetogen verwondering",
+        "toelichting": "Sluit aan bij het thema 'zichtbare nabijheid van het onzichtbare'. Reflecteert op Johannes 1:18.",
+        "suggestie_gebruik": "Lied bij de tafel/Avondmaal"
+      },
+      {
+        "nummer": "513",
+        "titel": "God heeft het eerste woord.",
+        "type_match": "Thematisch",
+        "karakter": "Standvastig loflied",
+        "toelichting": "Benadrukt de autoriteit van Gods spreken boven het menselijk rumoer en politieke onrust.",
+        "suggestie_gebruik": "Openingslied"
+      },
+      {
+        "nummer": "598",
+        "titel": "Dans nos obscurités, allume le",
+        "type_match": "Contextueel",
+        "karakter": "Meditatief gebed",
+        "toelichting": "Kort, krachtig lichtlied uit Taizé. Zeer geschikt voor visuele herhaling en focus in een onrustige wereld.",
+        "suggestie_gebruik": "Moment van stilte/gebed"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "138",
+        "titel": "Hoor de eng’len zingen d’eer",
+        "type_match": "Schriftlezing",
+        "karakter": "Uitbundig feestlied",
+        "toelichting": "Verklankt de vleeswording van het Woord met grote vreugde. Past bij de hoge intensiteit van de Dagmis.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "416",
+        "titel": "Jésus le Christ, lumière intérieure,",
+        "type_match": "Thematisch",
+        "karakter": "Ingetogen lichtlied",
+        "toelichting": "Focus op het innerlijke licht (Johannes 1:9). Past bij de verstilling die nodig is in de ouderenzorg.",
+        "suggestie_gebruik": "Meditatief moment"
+      },
+      {
+        "nummer": "524",
+        "titel": "’Ik zal er zijn voor jou’",
+        "type_match": "Contextueel",
+        "karakter": "Troostrijk belofte-lied",
+        "toelichting": "Biedt een tegenwicht aan de eenzaamheid en angst die in de maatschappij en bij ouderen kan leven.",
+        "suggestie_gebruik": "Lied na de voorbeden"
+      },
+      {
+        "nummer": "576",
+        "titel": "De Koning in zijn pracht,",
+        "type_match": "Thematisch",
+        "karakter": "Majestueus loflied",
+        "toelichting": "Benadrukt de overwinning van het licht op de duisternis (Johannes 1:5).",
+        "suggestie_gebruik": "Lied na de evangelielezing"
+      },
+      {
+        "nummer": "243",
+        "titel": "Zij zit als een vogel, broedend op het water,",
+        "type_match": "Schriftlezing",
+        "karakter": "Poëtisch scheppingslied",
+        "toelichting": "Verwijst naar het Woord dat bij de schepping aanwezig was (Johannes 1:1). Zeer beeldend.",
+        "suggestie_gebruik": "Lied bij de Schriftlezingen"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "412",
+        "titel": "In het begin was het Woord,",
+        "type_match": "Schriftlezing",
+        "karakter": "Helder getuigenis",
+        "toelichting": "Eenvoudige en directe zetting van de Johannes-proloog.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "378",
+        "titel": "De Heer woont in een stralend licht,",
+        "type_match": "Schriftlezing",
+        "karakter": "Verheven loflied",
+        "toelichting": "Sluit aan bij Hebreeën 1:3 over de afstraling van Gods wezen.",
+        "suggestie_gebruik": "Lied na de epistellezing"
+      },
+      {
+        "nummer": "95",
+        "titel": "Nu daagt het in het oosten,",
+        "type_match": "Seizoen",
+        "karakter": "Verwachtingsvol lied",
+        "toelichting": "Klassiek kerstlied over het aanbreken van het eeuwige licht.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "474",
+        "titel": "Als je bang bent of onzeker,",
+        "type_match": "Contextueel",
+        "karakter": "Eenvoudig vertrouwenslied",
+        "toelichting": "Past bij de onzekerheid van de huidige tijd en de kwetsbaarheid van de doelgroep.",
+        "suggestie_gebruik": "Gebedslied"
+      },
+      {
+        "nummer": "89",
+        "titel": "Komt allen tezamen,",
+        "type_match": "Seizoen",
+        "karakter": "Feestelijke oproep",
+        "toelichting": "De bekende uitnodiging om het vleesgeworden Woord te aanbidden.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "263",
+        "titel": "Hoe lieflijk zijn de voeten van de bode",
+        "type_match": "Schriftlezing",
+        "karakter": "Vreugdevol verkondigingslied",
+        "toelichting": "Directe match met Jesaja 52:7. Viering van de goede boodschap.",
+        "suggestie_gebruik": "Lied na de eerste lezing"
+      },
+      {
+        "nummer": "128",
+        "titel": "In den beginne was het Woord,",
+        "type_match": "Schriftlezing",
+        "karakter": "Liturgisch fundament",
+        "toelichting": "Zet de kern van de kersttheologie neer vanuit Johannes 1.",
+        "suggestie_gebruik": "Lied voor de preek"
+      },
+      {
+        "nummer": "350",
+        "titel": "Door goede machten trouw en stil omgeven,",
+        "type_match": "Contextueel",
+        "karakter": "Troostrijk getuigenis",
+        "toelichting": "Biedt diepe troost in tijden van wereldwijde dreiging en persoonlijke kwetsbaarheid.",
+        "suggestie_gebruik": "Slotlied of zegenlied"
+      },
+      {
+        "nummer": "107",
+        "titel": "Het volk dat wandelt in het duister",
+        "type_match": "Thematisch",
+        "karakter": "Profetisch loflied",
+        "toelichting": "Verbindt de profetie met de vervulling in Christus als het Licht.",
+        "suggestie_gebruik": "Lied na de preek"
+      },
+      {
+        "nummer": "430",
+        "titel": "God heeft het eerste woord.",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig geloofsbelijdenis",
+        "toelichting": "Bevestigt de voorrang van Gods Woord in een wereld vol tegenstrijdige stemmen.",
+        "suggestie_gebruik": "Lied na de geloofsbelijdenis"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "100",
+        "titel": "Juich, alle volken, prijs de HEER!",
+        "type_match": "Thematisch",
+        "karakter": "Universeel loflied",
+        "toelichting": "Past bij de vreugde van de 'vreugdebode' uit Jesaja en de universele betekenis van Kerst.",
+        "suggestie_gebruik": "Openingslied"
+      },
+      {
+        "nummer": "1",
+        "titel": "Gelukkig wie niet deelneemt aan ’t beraad",
+        "type_match": "Thematisch",
+        "karakter": "Wijsheidslied",
+        "toelichting": "Focus op het 'woord van God' als bron van geluk, passend bij de focus op het Woord.",
+        "suggestie_gebruik": "Antwoordlied"
+      }
+    ]
   },
   "09_kunst_cultuur": {
     "moderne_hedendaagse_kunst": [

@@ -9,200 +9,130 @@
   },
   "01_zondag_kerkelijk_jaar": {
     "positie_kerkelijk_jaar": {
-      "zondag_naam": "Kerstnacht / Vigilie van Kerstmis",
+      "zondag_naam": "Kerstnacht",
       "liturgische_periode": "Kersttijd",
-      "weken_tot_hoofdfeest": "0 weken (Het is de vooravond van Kerstmis)",
+      "weken_tot_hoofdfeest": "Hoofdfeest (geboorte van de Heer)",
       "leesrooster_jaar": "A",
       "dominant_evangelie": "Matteüs"
     },
     "traditionele_naam": {
-      "latijnse_naam": "In Nativitate Domini (ad noctem)",
-      "oorsprong": "De liturgische viering van de geboorte van de Heer in de nacht.",
-      "nederlandse_vertaling": "Geboorte van de Heer (nachtmis)",
+      "latijnse_naam": "In Nativitate Domini (Missa in Nocte)",
+      "oorsprong": "De viering van de geboorte van Christus in de nacht, historisch verbonden met de vigilie en de overgang van duisternis naar licht.",
+      "nederlandse_vertaling": "In de geboorte van de Heer (Mis in de nacht)",
       "volksnamen": [
         "Kerstnacht",
-        "Kerstavond",
         "Nachtmis"
       ]
     },
     "bijzondere_zondag_pkn": {
       "is_bijzonder": true,
       "naam": "Kerstnacht",
-      "toelichting": "Hoewel technisch gezien geen zondag (in 2025 valt 24 december op een woensdag), is dit een van de drukst bezochte kerkdiensten van het jaar en markeert het de overgang van Advent naar Kerst."
+      "toelichting": "Een van de belangrijkste hoogfeesten in de PKN-kalender, markerend het begin van de Kersttijd. In de context van De Gelderhorst is dit een moment van gemeenschap voor de dovengemeenschap."
     },
     "liturgische_kleur": {
       "kleur": "wit",
-      "symboliek": "De kleur van het licht, de reinheid, de feestvreugde en de goddelijke heerlijkheid. Christus als het Licht der wereld is geboren.",
+      "symboliek": "Wit staat voor reinheid, goddelijk licht, vreugde en het feest van de incarnatie (vleeswording).",
       "praktische_suggesties": [
-        "Wit antependium en witte stola (goud mag ook als feestelijk accent).",
-        "Uitbundige bloemschikking met wit en groen, eventueel kerststerren (rood/wit).",
-        "De Christuskaars (witte kaars in het midden van de adventskrans) wordt aangestoken."
+        "Wit antependium en witte stola",
+        "Gebruik van veel kaarslicht om het contrast met de nacht te benadrukken",
+        "Witte bloemschikking met accenten van goud of licht"
       ]
     },
     "lezingen": {
       "eerste_lezing": {
-        "referentie": "Jesaja 9:1-3.5-6",
+        "referentie": "Jesaja 9:1-3, 5-6",
         "boek": "Jesaja",
         "hoofdstuk": 9,
         "verzen": "1-3, 5-6",
-        "thema": "Het volk dat in duisternis wandelt ziet een groot licht; de geboorte van de Vredevorst."
+        "thema": "Het volk dat in duisternis wandelt, ziet een groot licht; de geboorte van de Vredevorst."
       },
       "epistel": {
         "referentie": "Titus 2:11-14",
         "boek": "Titus",
         "hoofdstuk": 2,
         "verzen": "11-14",
-        "thema": "De genade van God is verschenen, redding brengend voor alle mensen."
+        "thema": "De verschijning van de genade van God die redding brengt voor alle mensen."
       },
       "evangelie": {
         "referentie": "Lucas 2:1-14",
         "boek": "Lucas",
         "hoofdstuk": 2,
         "verzen": "1-14",
-        "thema": "Het kerstverhaal: de geboorte in Betlehem, de engelen en de herders."
+        "thema": "De geboorte van Jezus in Bethlehem en de verkondiging door de engelen aan de herders."
       },
       "psalm": {
         "referentie": "Psalm 96",
         "nummer": 96,
-        "verzen": null,
-        "antifoon": "Heden is ons een Redder geboren: Christus de Heer."
+        "verzen": "1-4, 11-13",
+        "antifoon": "Vandaag is ons de Heiland geboren, Christus de Heer."
       },
-      "alternatieve_lezingen": [],
-      "thematische_samenhang": "De lezingen vormen een klassieke beweging van profetie naar vervulling. Jesaja belooft licht in de duisternis en een kind dat heerschappij draagt. Titus duidt dit theologisch als de verschijning van Gods genade. Lucas vertelt het historische en narratieve verhaal van de vervulling in de geboorte van Jezus. Psalm 96 roept de hele aarde op om te zingen voor deze nieuwe Koning."
+      "alternatieve_lezingen": [
+        {
+          "referentie": "Micha 5:1-4",
+          "reden": "Profetie over de geboorteplaats Bethlehem, vaak gebruikt als alternatief voor de oudtestamentische lezing."
+        }
+      ],
+      "thematische_samenhang": "De rode draad is de doorbraak van Gods licht in de menselijke geschiedenis. Jesaja profeteert het licht, Titus duidt de verschijning als genade, en Lucas beschrijft de historische en hemelse realiteit van deze gebeurtenis."
     },
     "thematiek": {
-      "centraal_thema": "Licht in de duisternis / De menswording van God (Incarnatie)",
+      "centraal_thema": "Licht in de nacht: de komst van de Messias.",
       "stemming": "vreugde",
-      "karakter_zondag": "Feestelijk, mystiek, warm, laagdrempelig (vanwege de vele gasten).",
-      "rode_draad_liturgisch_jaar": "De verwachting van de Advent (de vier kaarsen) culmineert in de komst van het Licht zelf. De lezingen schakelen van 'verwachten' naar 'aanschouwen'.",
+      "karakter_zondag": "Ingetogen maar feestelijk; een sfeer van verwondering en aanbidding.",
+      "rode_draad_liturgisch_jaar": "De overgang van de adventstijd (verwachting) naar de kersttijd (vervulling).",
       "centrale_geloofsvragen": [
-        "Wat betekent het dat God mens wordt in kwetsbaarheid?",
-        "Hoe kan er licht zijn in onze persoonlijke en wereldwijde duisternis?",
-        "Is er plaats voor de Redder in ons leven?"
+        "Hoe herkennen wij Gods licht in onze eigen duisternis?",
+        "Wat betekent de menswording van God voor onze menselijkheid?",
+        "Hoe geven wij gehoor aan de boodschap van vrede op aarde?"
       ]
     },
     "historische_achtergrond": {
-      "oorsprong_vroege_kerk": "In de vroege kerk in Jeruzalem werd al in de 4e eeuw een nachtelijke dienst gehouden in Betlehem, gevolgd door een processie naar Jeruzalem. Rome nam dit over met de nachtmis in de Santa Maria Maggiore.",
-      "hervormde_traditie": "Lange tijd was de viering van Kerstmis sober en lag de nadruk op de preek op Eerste Kerstdag. De Kerstnachtdienst is in de Protestantse traditie in de 20e eeuw sterk opgekomen als moment van evangelisatie en sfeer.",
-      "gereformeerde_traditie": "Historisch enige terughoudendheid bij 'Roomse' elementen van de nachtmis, maar tegenwoordig is de Kerstnachtdienst ook hier gemeengoed, vaak met veel zang.",
-      "lutherse_traditie": "Sterke traditie van de Christmette met veel muziek (Bach) en lichtsymboliek.",
-      "oecumenische_dimensie": "De lezingen (Lucas 2) zijn vrijwel universeel in alle westerse kerken, wat een sterke oecumenische verbondenheid geeft."
-    },
-    "liedsuggesties": {
-      "_verificatie_opmerking": "Alle liederen zijn geverifieerd in de lijst van het Liedboek 2013. Titels zijn gecorrigeerd naar de exacte schrijfwijze in de bundel.",
-      "opening_intocht": [
-        {
-          "nummer": "Lied 477",
-          "titel": "Komt allen tezamen",
-          "eerste_regel": "Komt allen tezamen, jubelend van vreugde:",
-          "toelichting": "Het klassieke 'Adeste Fideles', zeer herkenbaar en feestelijk als opening."
-        },
-        {
-          "nummer": "Lied 476",
-          "titel": "Nu zijt wellekome",
-          "eerste_regel": "Nu zijt wellekome,",
-          "toelichting": "Oud-Nederlands kerstlied, zeer geliefd bij ouderen en past goed bij de sfeer van De Gelderhorst."
-        }
-      ],
-      "kyrie_gloria": [
-        {
-          "nummer": "Lied 481",
-          "titel": "Hoor, de engelen zingen de eer",
-          "eerste_regel": "Hoor, de engelen zingen de eer",
-          "toelichting": "Functioneert uitstekend als Gloria-lied in de kerstnacht."
-        },
-        {
-          "nummer": "Lied 307",
-          "titel": "Glorie aan God in den hoge",
-          "eerste_regel": "Glorie aan God in den hoge,",
-          "toelichting": "Specifiek Gloria-lied."
-        }
-      ],
-      "bij_lezingen": [
-        {
-          "nummer": "Lied 448",
-          "titel": "Het volk dat wandelt in het duister",
-          "eerste_regel": "Het volk dat wandelt in het duister",
-          "toelichting": "Directe berijming van de eerste lezing (Jesaja 9)."
-        },
-        {
-          "nummer": "Lied 483",
-          "titel": "Stille nacht, heilige nacht",
-          "eerste_regel": "Stille nacht, heilige nacht!",
-          "toelichting": "Onmisbaar in de kerstnacht, zeker in een verzorgingstehuis. Sluit aan bij het Evangelie."
-        },
-        {
-          "nummer": "Lied 487",
-          "titel": "Eer zij God in onze dagen",
-          "eerste_regel": "Eer zij God in onze dagen,",
-          "toelichting": "Klassiek antwoordlied op het kerstverhaal."
-        }
-      ],
-      "credo": [
-        {
-          "nummer": "Lied 340b",
-          "titel": "Ik geloof in God de Vader, de Almachtige",
-          "eerste_regel": "Ik geloof in God de Vader, de Almachtige,",
-          "toelichting": "Standaard apostolische geloofsbelijdenis."
-        }
-      ],
-      "collecte_gaven": [
-        {
-          "nummer": "Lied 473",
-          "titel": "Er is een roos ontloken",
-          "eerste_regel": "Er is een roos ontloken",
-          "toelichting": "Verstild lied dat past bij het moment van gaven en bezinning."
-        }
-      ],
-      "zending_zegen": [
-        {
-          "nummer": "Lied 486",
-          "titel": "Midden in de winternacht",
-          "eerste_regel": "Midden in de winternacht",
-          "toelichting": "Vrolijk en krachtig slotlied."
-        },
-        {
-          "nummer": "Lied 416",
-          "titel": "Ga met God en Hij zal met je zijn",
-          "eerste_regel": "Ga met God en Hij zal met je zijn,",
-          "toelichting": "Passende zegenbede voor het uiteengaan in de nacht."
-        }
-      ]
+      "oorsprong_vroege_kerk": "De viering op 25 december ontstond in de 4e eeuw in Rome, mogelijk als christelijk antwoord op de zonnewendefeesten.",
+      "hervormde_traditie": "Lange tijd sober gevierd, maar sinds de 20e eeuw is de Kerstnachtdienst uitgegroeid tot een van de drukst bezochte diensten.",
+      "gereformeerde_traditie": "Focus op de verkondiging van het Woord en de vervulling van de beloften uit het Oude Testament.",
+      "lutherse_traditie": "Sterke nadruk op de liturgie en de muzikale lofprijzing (bijv. de kerstkoralen).",
+      "oecumenische_dimensie": "De lezingen volgen het Gemeenschappelijk Leesrooster, wat de verbondenheid met de wereldwijde kerk (RKK, Anglicanen) onderstreept."
     },
     "praktische_handvatten": {
-      "liturgische_orde_suggestie": "Houd de liturgie eenvoudig en herkenbaar. Voor de doelgroep (dove ouderen) is visuele ondersteuning en bekende structuur essentieel. 1. Intocht (Lichtprocessie) 2. Begroeting & Bemoediging 3. Kerstspel/Lezing Lucas 2 (visueel uitgebeeld) 4. Preek (kort en beeldend) 5. Gebeden 6. Slotlied.",
+      "liturgische_orde_suggestie": "Klassieke kerstnachtliturgie: Introitus, Kyrie/Gloria (feestelijk), Schriftlezingen, Preek, Gebeden, Viering van de Maaltijd (optioneel), Zegen.",
       "aanpassingen_periode": [
         {
           "element": "Gloria",
-          "aanpassing": "Wordt uitbundig gezongen",
-          "reden": "De engelen zongen het Gloria in de kerstnacht, dus dit keert terug na de adventstijd."
+          "aanpassing": "Feestelijk gezongen of getoond",
+          "reden": "Het Gloria keert na de Adventstijd in volle glorie terug vanwege de geboorte van Christus."
+        },
+        {
+          "element": "Halleluja",
+          "aanpassing": "Gezongen voor het Evangelie",
+          "reden": "Teken van vreugde om de komst van het Woord."
         }
       ],
       "gebedsmotieven": [
-        "Dank voor de komst van het Licht.",
-        "Gebed voor vrede in oorlogsgebieden (actueel).",
-        "Gebed voor eenzamen tijdens de kerstdagen.",
-        "Voorbede voor bewoners, personeel en familie van De Gelderhorst."
+        "Dankzegging voor de komst van het Licht in de wereld",
+        "Voorbede voor mensen die in letterlijke of figuurlijke duisternis leven",
+        "Gebed om vrede in oorlogsgebieden, aansluitend bij de engelenzang",
+        "Specifiek gebed voor de bewoners en medewerkers van De Gelderhorst"
       ],
       "kindernevendienst": {
-        "thema": "Het Licht is geboren",
+        "thema": "Een kind is ons geboren",
         "suggesties": [
-          "Aangezien dit een verzorgingstehuis is, zijn er mogelijk kleinkinderen op bezoek. Laat hen de kaarsen aansteken of figuren in de kerststal plaatsen tijdens de lezing."
+          "Het maken van een lantaarn die licht geeft in het donker",
+          "Het uitspelen van het kerstverhaal met aandacht voor de zintuigen (voelen van stro, zien van de ster)"
         ]
       },
       "visuele_elementen": [
-        "**Cruciaal voor doven:** Zorg voor duidelijke projectie van alle teksten en liederen.",
-        "Gebruik gebarentolken (NmG/NGT) op een goed verlichte plek.",
-        "Visuele uitbeelding van het evangelie (levende kerststal of duidelijke platen) werkt beter dan alleen voorlezen.",
-        "Lichtsymboliek: het doorgeven van het licht van de Christuskaars naar de gemeente."
+        "Voor De Gelderhorst: Gebruik van een gebarentolk op een goed verlichte plek",
+        "Projectie van beelden die de tekst van Lucas 2 ondersteunen (bijv. Rembrandt of moderne iconen)",
+        "De kerststal als centraal visueel punt in de ruimte",
+        "Lichtritueel: het doorgeven van het licht van de paaskaars naar kleine kaarsjes in de banken"
       ]
     },
     "dagelijks_leesrooster": {
       "week_voorafgaand": [
-        "De dagen voor Kerst (20-24 dec) staan in het teken van de O-antifonen en de directe voorbereiding op de geboorte.",
-        "Lezingen uit Lucas 1 (Lofzang van Maria, Zacharias) en profetieën uit Jesaja en Micha."
+        "Maandag 22 dec: 1 Samuel 1:1-28",
+        "Dinsdag 23 dec: 1 Samuel 2:1-10",
+        "Woensdag 24 dec (overdag): Lucas 1:67-80"
       ],
-      "verbinding_zondag": "De dagelijkse lezingen bouwen de spanning op ('De Heer is nabij'), die in de Kerstnacht wordt ingelost ('De Heer is geboren')."
+      "verbinding_zondag": "De week voorafgaand staat in het teken van de lofzangen (Hanna, Maria, Zacharias), die uitmonden in de lofzang van de engelen in de Kerstnacht."
     }
   },
   "02_sociaal_maatschappelijke_context": {
@@ -1060,7 +990,7 @@
       ]
     }
   },
-  "08_exegese": {
+  "08a_exegese": {
     "per_lezing": [
       {
         "referentie": "Jesaja 9:1-3.5-6",
@@ -1426,6 +1356,239 @@
         "Jesaja spreekt over heerschappij en macht (juk breken); Lucas laat zien dat die macht eruitziet als een weerloze baby in een voederbak. De 'heldhaftige God' van Jesaja is in Lucas een kwetsbaar kind."
       ]
     }
+  },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 72,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen uitbundige lofzangen (intensiteit 8-9) en meer ingetogen, reflectieve liederen (intensiteit 6-7). Er is een goede verdeling tussen profetische teksten (Jesaja) en verhalende teksten (Lucas), waarbij de sfeer varieert van hoopvol verlangen naar triomfantelijke vervulling.",
+      "contextuele_reflectie": "De liederen sluiten aan bij de spanning tussen het 'licht in de nacht' en de actuele somberheid in Betlehem (Gaza-conflict). Voor de specifieke doelgroep in De Gelderhorst is gekozen voor liederen met sterke visuele metaforen (licht, ster, glans) die de communicatieve barrières van geluid overstijgen en focussen op de verschijning van God."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "448",
+        "titel": "Het volk dat wandelt in het duister",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtig profetisch lied",
+        "toelichting": "Directe verklanking van Jesaja 9. De overgang van duister naar licht is zeer herkenbaar voor de thematiek van de nacht.",
+        "suggestie_gebruik": "Intochtlied of lied na de eerste lezing"
+      },
+      {
+        "nummer": "498",
+        "titel": "Betlehem, o uitverkoren",
+        "type_match": "Contextueel",
+        "karakter": "Ingetogen loflied",
+        "toelichting": "Legt de verbinding met de geboorteplaats van Jezus. Gezien de actuele situatie in Betlehem (geen feestverlichting) krijgt dit lied een extra laag van solidariteit en hoop.",
+        "suggestie_gebruik": "Lied na het Evangelie"
+      },
+      {
+        "nummer": "1005",
+        "titel": "Longing for light, we wait in darkness.",
+        "type_match": "Thematisch",
+        "karakter": "Mediatief gebed",
+        "toelichting": "Sluit perfect aan bij de visuele oriëntatie van de dovengemeenschap; het verlangen naar licht als metafoor voor Gods nabijheid.",
+        "suggestie_gebruik": "Gebedslied of na de preek"
+      },
+      {
+        "nummer": "307",
+        "titel": "Glorie aan God in den hoge,",
+        "type_match": "Schriftlezing",
+        "karakter": "Liturgische hymne",
+        "toelichting": "De klassieke Gloria-tekst uit Lucas 2:14. Onmisbaar in de Kerstnachtliturgie.",
+        "suggestie_gebruik": "Gloria"
+      },
+      {
+        "nummer": "444",
+        "titel": "Nu daagt het in het oosten,",
+        "type_match": "Seizoen",
+        "karakter": "Hoopvol ochtend/lichtlied",
+        "toelichting": "Symboliseert de doorbraak van het licht. De visuele beeldspraak van de dageraad past goed bij de doelgroep.",
+        "suggestie_gebruik": "Openingslied"
+      },
+      {
+        "nummer": "467c",
+        "titel": "Een kind is ons geboren,",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijke proclamatie",
+        "toelichting": "Korte, krachtige zetting van Jesaja 9:5. Zeer geschikt voor beurtzang of als antwoord op de profetie.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "159c",
+        "titel": "Laat nu, Heer, uw dienstknecht vrijuit gaan",
+        "type_match": "Schriftlezing",
+        "karakter": "Rustig vertrouwenslied",
+        "toelichting": "Het Nunc Dimittis (Simeon). Voor de ouderen in De Gelderhorst een lied van diepe vrede en voltooiing.",
+        "suggestie_gebruik": "Slotlied of na de communie/maaltijd"
+      },
+      {
+        "nummer": "477",
+        "titel": "Komt allen tezamen, jubelend van vreugde:",
+        "type_match": "Seizoen",
+        "karakter": "Uitbundig kerstlied",
+        "toelichting": "De ultieme kerstklassieker die de gemeenschap samenbrengt in aanbidding.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "508",
+        "titel": "Klaarlichte nacht,",
+        "type_match": "Thematisch",
+        "karakter": "Poëtisch loflied",
+        "toelichting": "Benadrukt de titels uit Jesaja 9 (Vredevorst, Raadsman) in een sfeer van verwondering.",
+        "suggestie_gebruik": "Lied na de preek"
+      },
+      {
+        "nummer": "445",
+        "titel": "De nacht is haast ten einde,",
+        "type_match": "Contextueel",
+        "karakter": "Ernstig maar hoopvol lied",
+        "toelichting": "De 'gemengde sfeer' past bij de wereldproblematiek; het licht schijnt, maar de nacht is nog voelbaar.",
+        "suggestie_gebruik": "Lied bij de voorbeden"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "156",
+        "titel": "Wonderbare Raadsman, Wonderbare Raadsman,",
+        "type_match": "Schriftlezing",
+        "karakter": "Aanbiddingslied",
+        "toelichting": "Focus op de namen van de Messias uit Jesaja 9. Eenvoudig en krachtig van tekst.",
+        "suggestie_gebruik": "Na de eerste lezing"
+      },
+      {
+        "nummer": "131",
+        "titel": "Eer aan God, de hoogste Heer!",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijke hymne",
+        "toelichting": "Combineert de engelenzang uit Lucas met de titels uit Jesaja.",
+        "suggestie_gebruik": "Gloria-lied"
+      },
+      {
+        "nummer": "151",
+        "titel": "There’s a star in the East on Christmas morn,",
+        "type_match": "Thematisch",
+        "karakter": "Ritmisch loflied",
+        "toelichting": "Sterke visuele focus op de ster, wat goed aansluit bij de belevingswereld van dove gelovigen.",
+        "suggestie_gebruik": "Lied tijdens de collecte of als tussenzang"
+      },
+      {
+        "nummer": "433",
+        "titel": "Stil, mijn ziel, wees stil",
+        "type_match": "Thematisch",
+        "karakter": "Ingetogen gebed",
+        "toelichting": "Vredevorst-thematiek. Biedt een moment van rust in de drukke kerstnacht.",
+        "suggestie_gebruik": "Stiltemoment of na de preek"
+      },
+      {
+        "nummer": "128",
+        "titel": "Eer zij God in onze dagen.",
+        "type_match": "Seizoen",
+        "karakter": "Traditioneel kerstlied",
+        "toelichting": "Bekende melodie en tekst die generaties verbindt, essentieel voor de oudere doelgroep.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "103",
+        "titel": "Want een kind is ons geboren,",
+        "type_match": "Schriftlezing",
+        "karakter": "Blijmoedig loflied",
+        "toelichting": "Letterlijke tekst van Jesaja 9:5. Zeer herkenbaar en bijbelvast.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "76",
+        "titel": "Daar is uit ’s werelds duist’re wolken",
+        "type_match": "Thematisch",
+        "karakter": "Klassieke hymne",
+        "toelichting": "Beschrijft de komst van de Vredevorst als een doorbraak door de wolken (visueel beeld).",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "79",
+        "titel": "Go, tell it on the mountain",
+        "type_match": "Seizoen",
+        "karakter": "Enthousiaste spiritual",
+        "toelichting": "De opdracht om het nieuws te delen. Past bij de vreugde van de herders in Lucas 2.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "157",
+        "titel": "Blijf bij ons Heer, wanneer de nacht zal komen -",
+        "type_match": "Thematisch",
+        "karakter": "Avondgebed",
+        "toelichting": "Hoewel Lucas 24-referentie, past de sfeer van 'bij ons blijven in de nacht' uitstekend bij de Kerstnacht.",
+        "suggestie_gebruik": "Avondgebed of afsluiting"
+      },
+      {
+        "nummer": "89",
+        "titel": "Komt allen tezamen,",
+        "type_match": "Seizoen",
+        "karakter": "Majestueus loflied",
+        "toelichting": "Nodigt uit tot aanbidding bij de kribbe.",
+        "suggestie_gebruik": "Lied bij de kerststal"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "107",
+        "titel": "Het volk dat wandelt in het duister",
+        "type_match": "Schriftlezing",
+        "karakter": "Profetisch lied",
+        "toelichting": "Een alternatieve zetting van de Jesaja-tekst, passend bij een meer traditionele liturgie.",
+        "suggestie_gebruik": "Lied na de eerste lezing"
+      },
+      {
+        "nummer": "113",
+        "titel": "O kom, o kom, Immanuël,",
+        "type_match": "Contextueel",
+        "karakter": "Verlangend klaag/loflied",
+        "toelichting": "De roep om bevrijding. Sluit aan bij de 'sombere kerst' in het Midden-Oosten.",
+        "suggestie_gebruik": "Kyrie-moment of aan het begin van de dienst"
+      },
+      {
+        "nummer": "118",
+        "titel": "Ere zij God, ere zij God",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijke lofzang",
+        "toelichting": "De klassieke zetting van de engelenzang. Voor velen het hoogtepunt van de nacht.",
+        "suggestie_gebruik": "Na het Evangelie of als afsluiting"
+      },
+      {
+        "nummer": "574",
+        "titel": "Herder in het wijde veld,",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend lied",
+        "toelichting": "Neemt de gemeente mee naar de velden van Efratha (Lucas 2).",
+        "suggestie_gebruik": "Lied tijdens de schriftlezing"
+      },
+      {
+        "nummer": "18",
+        "titel": "Er is uit ’s werelds duistere wolken",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtig loflied",
+        "toelichting": "Benadrukt de titels van het kind uit Jesaja 9 met grote intensiteit.",
+        "suggestie_gebruik": "Lied na de preek"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "100",
+        "titel": "Juich, alle volken, prijs de HEER!",
+        "type_match": "Thematisch",
+        "karakter": "Uitbundige lofpsalm",
+        "toelichting": "Past bij de universele vreugde over de geboorte van de Heiland.",
+        "suggestie_gebruik": "Openingspsalm"
+      },
+      {
+        "nummer": "1",
+        "titel": "Gelukkig wie niet deelneemt aan ’t beraad",
+        "type_match": "Thematisch",
+        "karakter": "Wijsheidslied",
+        "toelichting": "Reflecteert op het 'goede leven' en de keuze voor Gods weg, passend bij de Titus-lezing over een waardig leven.",
+        "suggestie_gebruik": "Lied na de epistellezing"
+      }
+    ]
   },
   "09_kunst_cultuur": {
     "moderne_hedendaagse_kunst": [

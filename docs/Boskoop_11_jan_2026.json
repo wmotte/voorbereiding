@@ -3,213 +3,131 @@
     "plaatsnaam": "Boskoop",
     "gemeente": "Dorpskerk",
     "datum": "11 januari 2026",
-    "website": "https://www.pgboskoop.nl/gebouw-dorpskerk/",
     "extra_context": "",
     "adres": "Kerkplein 3, 2771 GR Boskoop",
-    "gebouw": "Dorpskerk"
+    "website": "https://www.pgboskoop.nl/gebouw-dorpskerk/"
   },
   "01_zondag_kerkelijk_jaar": {
     "positie_kerkelijk_jaar": {
-      "zondag_naam": "Doop van de Heer (1e zondag na Epifanie)",
+      "zondag_naam": "1e zondag na Epifanie (Doop van de Heer)",
       "liturgische_periode": "Kersttijd",
-      "weken_tot_hoofdfeest": "1 week na Epifanie (Driekoningen)",
+      "weken_tot_hoofdfeest": "5 dagen na Epifanie (6 januari)",
       "leesrooster_jaar": "A",
       "dominant_evangelie": "Matteüs"
     },
     "traditionele_naam": {
       "latijnse_naam": "Baptisma Domini",
-      "oorsprong": "De zondag waarop de doop van Jezus in de Jordaan centraal staat, traditioneel de afsluiting van de kerstcyclus en het begin van het publieke optreden van Jezus.",
+      "oorsprong": "Vernoemd naar de herdenking van de doop van Jezus in de Jordaan door Johannes de Doper, wat traditioneel een van de drie 'verschijningen' (epifanieën) van Christus is.",
       "nederlandse_vertaling": "Doop van de Heer",
       "volksnamen": [
-        "Zondag van de Doop",
-        "Eerste zondag na Verschijning"
+        "Doopzondag",
+        "Eerste zondag na Driekoningen"
       ]
     },
     "bijzondere_zondag_pkn": {
       "is_bijzonder": false,
       "naam": null,
-      "toelichting": "Hoewel het een belangrijke liturgische feestdag is, valt deze datum in 2026 niet samen met specifieke PKN-themazondagen zoals Israëlzondag of Vredeszondag."
+      "toelichting": "Hoewel het geen themazondag is zoals Israëlzondag, markeert deze zondag in de PKN-liturgie het scharnierpunt tussen de Kersttijd en de Epifaniëntijd."
     },
     "liturgische_kleur": {
       "kleur": "wit",
-      "symboliek": "Wit is de kleur van de Christusfeesten, reinheid, licht en de nieuwe schepping. Het markeert de openbaring van Jezus als de Zoon van God.",
+      "symboliek": "Feest, licht en reinheid; passend bij de openbaring van Christus als de Zoon van God en de reiniging door het doopwater.",
       "praktische_suggesties": [
-        "Wit antependium en witte stola.",
-        "Gebruik van een grote schaal met water bij de paaskaars als symbool voor de doop.",
-        "Witte bloemschikking met veel groen (verwijzend naar de Jordaan en nieuw leven)."
+        "Wit antependium en witte stola",
+        "Schikking met witte bloemen en water-elementen (bijv. glazen vazen of blauwe accenten)",
+        "Centrale plaats voor de doopschaal of het doopvont"
       ]
     },
     "lezingen": {
       "eerste_lezing": {
-        "referentie": "Jesaja 42,1-4-6-7",
+        "referentie": "Jesaja 42:1-4, 6-7",
         "boek": "Jesaja",
         "hoofdstuk": 42,
         "verzen": "1-4, 6-7",
-        "thema": "De eerste knecht des Heren: de uitverkorene op wie Gods Geest rust."
+        "thema": "De aankondiging van de Dienaar van de Heer die het recht zal brengen."
       },
       "epistel": {
-        "referentie": "Handelingen 10,34-38",
+        "referentie": "Handelingen 10:34-38",
         "boek": "Handelingen",
         "hoofdstuk": 10,
         "verzen": "34-38",
-        "thema": "Petrus getuigt hoe God Jezus van Nazaret heeft gezalfd met de heilige Geest en met kracht."
+        "thema": "Petrus getuigt hoe God Jezus van Nazaret heeft gezalfd met de heilige Geest."
       },
       "evangelie": {
-        "referentie": "Matteüs 3,13-17",
+        "referentie": "Matteüs 3:13-17",
         "boek": "Matteüs",
         "hoofdstuk": 3,
         "verzen": "13-17",
-        "thema": "De doop van Jezus door Johannes de Doper en de stem uit de hemel."
+        "thema": "De doop van Jezus door Johannes en de stem uit de hemel."
       },
       "psalm": {
         "referentie": "Psalm 29",
         "nummer": 29,
-        "verzen": "1-11",
+        "verzen": null,
         "antifoon": "De stem van de Heer klinkt boven de wateren."
       },
       "alternatieve_lezingen": [
         {
-          "referentie": "Titus 2,11-14; 3,4-7",
-          "reden": "Vaak gebruikt als alternatieve epistellezing om de genade van God en de bad van de hergeboorte te benadrukken."
+          "referentie": "Psalm 89:20-28",
+          "reden": "Focus op de uitverkiezing en zalving van de koning/dienaar."
         }
       ],
-      "thematische_samenhang": "De rode draad is de 'identificatie' van Jezus. In Jesaja wordt de Knecht aangekondigd, in Matteüs wordt Hij door de Vader bevestigd bij de doop, en in Handelingen wordt dit door de apostelen verkondigd als het begin van de heilsgeschiedenis. Het water van de Jordaan en de stem van God (Psalm 29) verbinden de teksten."
+      "thematische_samenhang": "De rode draad is de 'identificatie' van Jezus: in Jesaja als de Dienaar, in Handelingen als de Gezalfde, en in Matteüs als de geliefde Zoon. De Geest die neerdaalt verbindt de profetie met de vervulling."
     },
     "thematiek": {
-      "centraal_thema": "De openbaring van de geliefde Zoon en de toerusting door de Geest.",
+      "centraal_thema": "Erkenning en Bevestiging: Wie is deze man uit Nazaret?",
       "stemming": "vreugde",
-      "karakter_zondag": "Feestelijk en plechtig. Het is een scharniermoment tussen de verborgenheid van de kribbe en de openbaarheid van het Koninkrijk.",
-      "rode_draad_liturgisch_jaar": "Vorige zondag (Epifanie) zagen we de wijzen die het licht zochten; deze zondag zien we het licht zelf in actie treden. Volgende week (2e na Epifanie) volgt vaak het eerste wonder (Kana), als teken van de nieuwe tijd.",
+      "karakter_zondag": "Feestelijk en plechtig; een moment van publieke openbaring en goddelijke legitimatie.",
+      "rode_draad_liturgisch_jaar": "Sluit de reeks verschijningsverhalen (Magiërs, Doop, Kana) af en vormt de opmaat naar het publieke optreden van Jezus.",
       "centrale_geloofsvragen": [
-        "Wat betekent het dat Jezus 'de geliefde Zoon' is voor onze eigen identiteit?",
-        "Hoe werkt de Heilige Geest in het begin van een roeping?",
+        "Wat betekent het dat God Jezus zijn 'geliefde Zoon' noemt?",
+        "Hoe werkt de heilige Geest in het begin van een nieuwe weg?",
         "Wat is de betekenis van onze eigen doop in het licht van Jezus' doop?"
       ]
     },
     "historische_achtergrond": {
-      "oorsprong_vroege_kerk": "In de vroege kerk was de doop van Jezus onderdeel van het grote Epifaniefeest op 6 januari, dat de geboorte, de aanbidding der wijzen en de doop omvatte.",
-      "hervormde_traditie": "Binnen de hervormde traditie lag de nadruk sterk op de verbondsmatige aspecten van de doop en de soevereiniteit van God die spreekt.",
-      "gereformeerde_traditie": "Focus op de gehoorzaamheid van Christus die 'alle gerechtigheid vervult' (Matteüs 3:15) als voorbeeld voor de gelovige.",
-      "lutherse_traditie": "Sterke nadruk op het Woord dat bij het water komt, waardoor het een sacrament van redding wordt.",
-      "oecumenische_dimensie": "De viering van de Doop van de Heer op de zondag na 6 januari is een breed gedragen oecumenisch gebruik (RKK, Anglicanen, PKN) dat de eenheid in de doop benadrukt."
-    },
-    "liedsuggesties": {
-      "_verificatie_opmerking": "Alle liederen zijn geverifieerd in het Liedboek (2013).",
-      "opening_intocht": [
-        {
-          "nummer": "Lied 518",
-          "titel": "Hoe helder staat de morgenster",
-          "eerste_regel": "Hoe helder staat de morgenster",
-          "toelichting": "Klassiek Epifanielied dat de komst van het licht bezingt."
-        },
-        {
-          "nummer": "Lied 280",
-          "titel": "De vreugde voert ons naar dit huis",
-          "eerste_regel": "De vreugde voert ons naar dit huis",
-          "toelichting": "Feestelijk openingslied passend bij de witte kleur van de zondag."
-        }
-      ],
-      "kyrie_gloria": [
-        {
-          "nummer": "Lied 299e",
-          "titel": "Heer, ontferm U",
-          "eerste_regel": "Heer, ontferm U",
-          "toelichting": "Kyrie-gebed uit de vaste gezangen van het Liedboek."
-        },
-        {
-          "nummer": "Lied 305",
-          "titel": "Alle eer en alle glorie",
-          "eerste_regel": "Alle eer en alle glorie",
-          "toelichting": "Krachtige lofprijzing passend bij de openbaring van Christus."
-        }
-      ],
-      "bij_lezingen": [
-        {
-          "nummer": "Lied 29",
-          "titel": "Brengt aan de Heer, gij hemelvorsten",
-          "eerste_regel": "Brengt aan de Heer, gij hemelvorsten",
-          "toelichting": "De berijming van Psalm 29 over de stem van de Heer boven de wateren."
-        },
-        {
-          "nummer": "Lied 522",
-          "titel": "Toen Jezus bij het water kwam",
-          "eerste_regel": "Toen Jezus bij het water kwam",
-          "toelichting": "Specifiek lied voor de Doop van de Heer, volgt de tekst van Matteüs nauwgezet."
-        },
-        {
-          "nummer": "Lied 524",
-          "titel": "Nu Gij de doop ontvangt in de Jordaan",
-          "eerste_regel": "Nu Gij de doop ontvangt in de Jordaan",
-          "toelichting": "Thematisch zeer sterk aansluitend bij de evangelielezing."
-        }
-      ],
-      "credo": [
-        {
-          "nummer": "Lied 340b",
-          "titel": "Ik geloof in God de Vader",
-          "eerste_regel": "Ik geloof in God de Vader",
-          "toelichting": "De apostolische geloofsbelijdenis als antwoord op de doopgedachtenis."
-        }
-      ],
-      "collecte_gaven": [
-        {
-          "nummer": "Lied 375",
-          "titel": "God zij gezegend! Laat ons dank bewijzen",
-          "eerste_regel": "God zij gezegend! Laat ons dank bewijzen",
-          "toelichting": "Danklied voor de gaven van God."
-        }
-      ],
-      "zending_zegen": [
-        {
-          "nummer": "Lied 416",
-          "titel": "Ga met God en Hij zal met je zijn",
-          "eerste_regel": "Ga met God en Hij zal met je zijn",
-          "toelichting": "Zendingslied dat de zegen van de doop meegeeft de wereld in."
-        }
-      ]
+      "oorsprong_vroege_kerk": "Oorspronkelijk onderdeel van het grote Epifaniefeest op 6 januari, waarbij de geboorte, de aanbidding der wijzen, de doop en het wonder te Kana tegelijk werden gevierd.",
+      "hervormde_traditie": "Vaak soberder gevierd met de nadruk op de Schriftlezing en de verbondsbetekenis van de doop.",
+      "gereformeerde_traditie": "Focus op de soevereiniteit van God en de roeping van de Dienaar.",
+      "lutherse_traditie": "Sterke nadruk op het Woord dat bij het water komt ('Dit is mijn geliefde Zoon').",
+      "oecumenische_dimensie": "Sinds de liturgische vernieuwingen van de 20e eeuw is deze zondag een vast ankerpunt in bijna alle westerse kerken (RKK, PKN, Anglicanen)."
     },
     "praktische_handvatten": {
-      "liturgische_orde_suggestie": "Na de verkondiging kan een moment van doopgedachtenis worden ingevoegd, waarbij de gemeenteleden uitgenodigd worden om naar het doopvont te kijken of het water aan te raken.",
+      "liturgische_orde_suggestie": "Gebruik een uitgebreide drempelgebed-orde met een expliciete herinnering aan de doop (gedachtenis van de doop).",
       "aanpassingen_periode": [
         {
           "element": "Gloria",
-          "aanpassing": "Uitgebreid zingen",
-          "reden": "Het is een feestdag binnen de Kersttijd/Epifanietijd."
-        },
-        {
-          "element": "Halleluja",
-          "aanpassing": "Zingen voor het Evangelie",
-          "reden": "Buiten de Lijdenstijd is het gebruikelijk het Evangelie met een Halleluja te begroeten."
+          "aanpassing": "Feestelijk zingen",
+          "reden": "Het is een wit feest binnen de kerstkring."
         }
       ],
       "gebedsmotieven": [
-        "Dankzegging voor de doop als teken van Gods liefde.",
-        "Gebed voor dopelingen en hun ouders in de gemeente Boskoop.",
-        "Gebed om de kracht van de Heilige Geest voor ons eigen dagelijks getuigenis.",
-        "Voorbede voor de worldwijde kerk die geroepen is tot dienstbaarheid."
+        "Dankzegging voor de gave van de doop",
+        "Gebed om de leiding van de heilige Geest voor de gemeente",
+        "Voorbede voor dopelingen en hun ouders"
       ],
       "kindernevendienst": {
-        "thema": "Een stem uit de wolken",
+        "thema": "Een stem uit de hemel",
         "suggesties": [
-          "Maak een knutselwerkje van een duif (symbool van de Geest).",
-          "Vertel het verhaal met behulp van een schaal water en een steen (het gewicht van de zonde) en een veer (de lichtheid van de Geest)."
+          "Knutselen van een duif als symbool van de Geest",
+          "Gesprek over namen: wie noemt jou bij je naam?"
         ]
       },
       "visuele_elementen": [
-        "Projectie van een afbeelding van de Jordaan of een icoon van de doop van Christus.",
-        "In Boskoop (boomkwekersdorp): Gebruik van wilgentakken of andere oeverbeplanting bij het doopvont om de sfeer van de rivier de Jordaan te versterken."
+        "Projectie van een afbeelding van de Jordaan of een icoon van de doop",
+        "Schikking met drie takken (verwijzend naar de Drie-eenheid bij de doop)"
       ]
     },
     "dagelijks_leesrooster": {
       "week_voorafgaand": [
-        "Maandag 5 jan: 1 Johannes 3,11-18",
-        "Dinsdag 6 jan (Epifanie): Matteüs 2,1-12",
-        "Woensdag 7 jan: 1 Johannes 4,7-10",
-        "Donderdag 8 jan: 1 Johannes 4,11-18",
-        "Vrijdag 9 jan: 1 Johannes 4,19-5,4",
-        "Zaterdag 10 jan: 1 Johannes 5,5-13"
+        "Ma: Romeinen 15:7-13",
+        "Di: Epifanie (Jesaja 60:1-6)",
+        "Wo: Psalm 72",
+        "Do: Efeziërs 3:1-12",
+        "Vr: Matteüs 2:1-12",
+        "Za: Jesaja 42:1-9"
       ],
-      "verbinding_zondag": "De weeklezingen uit 1 Johannes leggen de nadruk op de liefde van God en het geloof dat Jezus de Zoon van God is. Dit culmineert op zondag in de hoorbare bevestiging van de Vader: 'Dit is mijn geliefde Zoon'."
+      "verbinding_zondag": "De week staat in het teken van het 'Licht voor de volken' (Epifanie), wat op zondag culmineert in de persoonlijke roeping en zalving van Jezus."
     }
   },
   "02_sociaal_maatschappelijke_context": {
@@ -1090,374 +1008,903 @@
       ]
     }
   },
-  "08_exegese": {
+  "08_liedsuggesties_database": {
+    "analyse": {
+      "contextuele_reflectie": "De thematiek van de 'Dienaar' die het 'geknakte riet niet verbreekt' (Jesaja 42) resoneert krachtig met de humanitaire crisis in Gaza en de winterse kou. In de context van Boskoop, waar men leeft van wat groeit en bloeit, spreekt het beeld van de zorgvuldige hovenier/dienaar extra aan. De doop van Jezus als moment van publieke identificatie biedt een tegenwicht aan de nuchtere 'niet lullen maar poetsen'-mentaliteit door de nadruk te leggen op 'zijn' (geliefd kind zijn) vóór het 'doen'.",
+      "korte_observatie": "De database biedt een rijke variëteit aan liederen die zowel de doopthematiek (water, Geest, duif) als de profetische vervulling (Jesaja) dekken. Er is een goede balans tussen klassieke gezangen en liederen die de actualiteit van lijden en licht adresseren."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "356",
+        "titel": "O God die uit het water",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 3:13-17",
+        "toelichting": "Hét lied over de doop van Jezus in de Jordaan, direct aansluitend bij het evangelie.",
+        "suggestie_gebruik": "Antwoordlied na de lezing"
+      },
+      {
+        "nummer": "96",
+        "titel": "Zing voor de Heer op nieuwe wijze",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 42:4",
+        "toelichting": "Een krachtige lofzang die de tekst van de eerste lezing (Jesaja 42) op muziek zet.",
+        "suggestie_gebruik": "Intochtslied"
+      },
+      {
+        "nummer": "368g",
+        "titel": "Adem van God, vernieuw ons bestaan",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 3:16 (Geest)",
+        "toelichting": "Vraagt om de werking van de Geest die bij de doop op Jezus neerdaalde.",
+        "suggestie_gebruik": "Gebed om de Geest / Lied bij de opening van de Schriften"
+      },
+      {
+        "nummer": "699",
+        "titel": "O pinksterdag, paasfeest in ’t goud",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 3:16 (Duif)",
+        "toelichting": "Verwijst expliciet naar de duif als symbool van de Heilige Geest bij de doop.",
+        "suggestie_gebruik": "Lied na de verkondiging"
+      },
+      {
+        "nummer": "445",
+        "titel": "De nacht is haast ten einde",
+        "type_match": "Contextueel",
+        "match_detail": "Actualiteit (Gaza/Winter)",
+        "toelichting": "Biedt hoop in de context van de winterkou en de humanitaire nood in de wereld.",
+        "suggestie_gebruik": "Gebedslied of Slotlied"
+      },
+      {
+        "nummer": "353",
+        "titel": "Nu heeft het oude leven afgedaan!",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 3:13-17 (Wedergeboorte)",
+        "toelichting": "Thematiseert de overgang van het oude naar het nieuwe leven door water en Geest.",
+        "suggestie_gebruik": "Doopgedachtenis of Antwoordlied"
+      },
+      {
+        "nummer": "597",
+        "titel": "Wees hier aanwezig, licht in ons midden",
+        "type_match": "Contextueel",
+        "match_detail": "Thematiek Erkenning",
+        "toelichting": "Vraagt om de aanwezigheid van God (IK BEN) in een wereld die om licht verlegen zit.",
+        "suggestie_gebruik": "Lied bij de aanvang"
+      },
+      {
+        "nummer": "857",
+        "titel": "Jij zoekt mij: mens waar ben je?",
+        "type_match": "Thematisch",
+        "match_detail": "Identificatie",
+        "toelichting": "Sluit aan bij de zoektocht naar identiteit: wie is God voor ons en wie zijn wij voor Hem?",
+        "suggestie_gebruik": "Meditatief lied na de preek"
+      },
+      {
+        "nummer": "100a",
+        "titel": "Juich voor de Heer, aarde alom!",
+        "type_match": "Thematisch",
+        "match_detail": "Vreugde",
+        "toelichting": "Een feestelijke afsluiting die past bij de vreugde van de erkenning van de Zoon.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "581",
+        "titel": "Want het geknakte riet",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 42:3",
+        "toelichting": "Directe verwijzing naar de eerste lezing; zeer passend bij de kwetsbaarheid in de actualiteit.",
+        "suggestie_gebruik": "Lied na de eerste lezing"
+      },
+      {
+        "nummer": "502",
+        "titel": "In het water van de doop",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 3:13-17",
+        "toelichting": "Verwoordt de betekenis van de doop als wedergeboorte uit water en Geest.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "432",
+        "titel": "O laat Gods Zoon je thans omhullen",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 3:16 (Duif)",
+        "toelichting": "Focus op de Heilige Geest die als een duif neerdaalt en ons omhult.",
+        "suggestie_gebruik": "Lied na de verkondiging"
+      },
+      {
+        "nummer": "679",
+        "titel": "Heer, uw licht en uw liefde schijnen",
+        "type_match": "Contextueel",
+        "match_detail": "Actualiteit (Licht)",
+        "toelichting": "Vraagt om Gods licht in de duisternis van de wereld (Gaza/crisis).",
+        "suggestie_gebruik": "Gebedslied"
+      },
+      {
+        "nummer": "460",
+        "titel": "Hoe wonderlijk mooi is uw eeuwige naam",
+        "type_match": "Thematisch",
+        "match_detail": "Identificatie (IK BEN)",
+        "toelichting": "Eert de naam van God die zich in Jezus laat kennen.",
+        "suggestie_gebruik": "Loflied"
+      },
+      {
+        "nummer": "649",
+        "titel": "Licht van de wereld",
+        "type_match": "Thematisch",
+        "match_detail": "Identificatie van Jezus",
+        "toelichting": "Bevestigt Jezus als het licht dat in de wereld is gekomen.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "305",
+        "titel": "Geprezen zij de Here",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 42:3",
+        "toelichting": "Looft God om zijn zorg voor het geknakte riet en de kwijnende vlaspit.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "139",
+        "titel": "Kom, Heil’ge Geest, Gij vogel Gods",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 3:16",
+        "toelichting": "Gebruikt het beeld van de vogel/duif voor de Geest, passend bij de doop.",
+        "suggestie_gebruik": "Gebed om de Geest"
+      },
+      {
+        "nummer": "40",
+        "titel": "Zingt, zingt een nieuw gezang de HEERE",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 42:10-12",
+        "toelichting": "Een uitbundige lofzang gebaseerd op de profetie van Jesaja.",
+        "suggestie_gebruik": "Intochtslied"
+      },
+      {
+        "nummer": "358",
+        "titel": "In het water van de doop",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 3:13-17",
+        "toelichting": "Lied over de betekenis van de doop en de nieuwe identiteit in Christus.",
+        "suggestie_gebruik": "Doopgedachtenis"
+      },
+      {
+        "nummer": "189",
+        "titel": "Hoe wonderlijk mooi is uw eeuwige naam",
+        "type_match": "Thematisch",
+        "match_detail": "Identificatie",
+        "toelichting": "Sluit aan bij de openbaring van Gods naam en wezen.",
+        "suggestie_gebruik": "Loflied"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "312",
+        "titel": "O God, die naar uw strenge wet",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 3 (Jordaan)",
+        "toelichting": "Beschrijft expliciet de doop van Jezus in de Jordaan en de stem uit de hemel.",
+        "suggestie_gebruik": "Antwoordlied na het Evangelie"
+      },
+      {
+        "nummer": "25",
+        "titel": "O volk, verdwaald, verloren",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 42:1-4",
+        "toelichting": "Verwoordt de komst van de Dienaar naar een verloren wereld.",
+        "suggestie_gebruik": "Intochtslied"
+      },
+      {
+        "nummer": "69",
+        "titel": "De Geest des Heren die het leven",
+        "type_match": "Schriftlezing",
+        "match_detail": "Handelingen 10:38",
+        "toelichting": "Over de Geest die Jezus zalfde om goed te doen en te genezen.",
+        "suggestie_gebruik": "Lied na de epistellezing"
+      },
+      {
+        "nummer": "113",
+        "titel": "O kom, o kom, Immanuël",
+        "type_match": "Contextueel",
+        "match_detail": "Actualiteit (Verlangen)",
+        "toelichting": "Hoewel een adventslied, verwoordt het de roep om bevrijding die nu actueel is.",
+        "suggestie_gebruik": "Gebedslied"
+      },
+      {
+        "nummer": "103",
+        "titel": "De dag van vertroosting komt haastig nabij",
+        "type_match": "Thematisch",
+        "match_detail": "Vreugde/Hoop",
+        "toelichting": "Een hoopvol lied over de toekomst van God, passend bij de Epifanie-tijd.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "338",
+        "titel": "Zoals ik ben, kom ik nabij",
+        "type_match": "Thematisch",
+        "match_detail": "Identificatie",
+        "toelichting": "Sluit aan bij de persoonlijke erkenning van Gods liefde, passend bij de doop.",
+        "suggestie_gebruik": "Meditatief lied"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "100",
+        "titel": "Juich, alle volken, prijs de HEER!",
+        "type_match": "Thematisch",
+        "match_detail": "Vreugde",
+        "toelichting": "Een universele oproep tot lofprijzing, passend bij de openbaring aan de volken.",
+        "suggestie_gebruik": "Intochtslied"
+      },
+      {
+        "nummer": "101",
+        "titel": "Ik zing, HEER, om uw trouw en recht te eren",
+        "type_match": "Thematisch",
+        "match_detail": "Identificatie (Trouw/Recht)",
+        "toelichting": "Sluit aan bij de missie van de Dienaar uit Jesaja 42 om recht te brengen.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "1",
+        "titel": "Gelukkig wie niet deelneemt aan ’t beraad",
+        "type_match": "Thematisch",
+        "match_detail": "Identificatie (De Rechtvaardige)",
+        "toelichting": "Tekent de weg van de rechtvaardige, wat Jezus bij zijn doop vervult.",
+        "suggestie_gebruik": "Psalm van de zondag"
+      }
+    ]
+  },
+  "08a_exegese": {
     "per_lezing": [
       {
-        "referentie": "Jesaja 42,1-4.6-7",
+        "referentie": "Jesaja 42:1-4, 6-7",
         "afbakening_vertaling": {
           "vertaalvergelijking": [
             {
-              "vertaling": "NBV21",
-              "significante_verschillen": "De NBV21 kiest voor 'recht doen kennen' in vers 1, wat een cognitieve of juridische lading heeft. De Naardense Bijbel (NB) vertaalt 'recht zal hij doen uitgaan', wat de dynamiek van de beweging vanuit de Knecht naar de volkeren sterker benadrukt. In vers 3 vertaalt de NBV21 'kwijnende vlam', terwijl de NB 'verflauwende vlaspit' gebruikt, wat dichter bij het Hebreeuwse 'pisjtah' (vlas) blijft en de kwetsbaarheid van het materiaal accentueert."
+              "vertaling": "NBV21 vs. Naardense Bijbel (NB)",
+              "significante_verschillen": "In vers 1 vertaalt de NBV21 het Hebreeuwse 'hen' met 'Hier is', wat een presentatie suggereert, terwijl de NB kiest voor het meer visuele en imperatieve 'Zie', wat sterker aansluit bij de profetische aanwijzing (ecce homo). In vers 3 vertaalt NBV21 'het recht zal hij zuiver doen kennen', terwijl de NB kiest voor 'naar zijn trouw zal hij recht doen uitgaan'. De NB legt hier de nadruk op de 'emeth' (trouw/waarheid) als modus van het recht, terwijl de NBV21 focust op de zuiverheid/helderheid."
             },
             {
-              "vertaling": "Naardense Bijbel",
-              "significante_verschillen": "De NB handhaaft de poëtische cadans en de concordante weergave van 'mishpat' als 'recht'. In vers 4 vertaalt de NB 'verflauwen' en 'geknakt worden' als parallellisme met vers 3, waardoor de Knecht dezelfde kwetsbaarheid deelt als degenen die hij beschermt, maar er niet door overweldigd wordt. De NBV21 vertaalt hier 'niet uitdoven en niet breken', wat de actieve volharding benadrukt."
+              "vertaling": "NBV21 vs. Grondtekst (BHS)",
+              "significante_verschillen": "Vers 4 in de NBV21 ('Hij zal niet uitdoven en niet breken') speelt in het Nederlands met de herhaling van de werkwoorden uit vers 3 (doven/breken), wat in het Hebreeuws ook aanwezig is (yikheh/yaruts), maar de NBV21 maakt dit explicieter dan sommige andere vertalingen die kiezen voor 'niet verslappen'."
             }
           ],
-          "werkvertaling_cruciaal": "Zie mijn dienaar, ik grijp hem vast (ondersteun hem), mijn uitverkorene, in wie mijn ziel een welbehagen heeft; ik heb mijn Geest op hem gelegd, recht (mishpat) zal hij naar de volkeren doen uitgaan. (v1)\\n\\nHet geknakte riet zal hij niet breken en de kwijnende vlaspit zal hij niet doven; naar waarheid (trouw) zal hij het recht doen uitgaan. (v3)"
+          "werkvertaling_cruciaal": "Zie mijn dienaar, die ik vastgrijp / mijn uitverkorene in wie mijn ziel behagen schept. Ik heb mijn adem/geest op hem gelegd; hij zal een oordeel/rechtsorde naar de volken uitdragen."
         },
         "tekstkritiek": {
           "relevante_varianten": [
             {
-              "vers": "42:1",
-              "variant": "LXX (Septuaginta) voegt namen toe: 'Jakob mijn dienaar... Israël mijn uitverkorene'.",
-              "handschriften": "Septuaginta (Codex Vaticanus/Sinaiticus)",
-              "betekenis_impact": "In de Griekse vertaling wordt de Knecht expliciet geïdentificeerd met het volk Israël, terwijl de Hebreeuwse Masoretische Tekst (MT) de identiteit van de Knecht meer openlaat, wat ruimte biedt voor een individuele (messiaanse) duiding."
+              "vers": "42:4",
+              "variant": "LXX toevoeging",
+              "handschriften": "Septuaginta",
+              "betekenis_impact": "De LXX vertaalt 'op zijn onderricht wachten de verste kusten' met 'op zijn naam zullen de heidenen hopen'. Matteüs 12:21 citeert deze versie. Voor de exegese van Jesaja zelf houden we de Masoretische Tekst aan (onderricht/Thora), maar de receptie in het NT verschuift de focus van 'leer' naar de 'persoon/naam'."
             }
           ],
-          "conclusie": "De tekst is tekstkritisch stabiel in de Masoretische traditie. De spanning tussen collectieve (Israël) en individuele (Messias) duiding is inherent aan de receptiegeschiedenis."
+          "conclusie": "De Masoretische tekst is stabiel. De verschillen met de LXX zijn vooral relevant voor de receptiegeschiedenis in het Nieuwe Testament, maar veranderen de kernboodschap van de Hebreeuwse tekst over de Dienaar niet fundamenteel."
         },
         "woordstudie": [
           {
-            "woord_origineel": "עֶבֶד",
-            "transliteratie": "ebed",
-            "vertaling": "dienaar / knecht",
-            "semantische_range": "Slaaf, onderdaan, dienaar van een koning of van God.",
-            "gebruik_elders": "Wordt gebruikt voor Mozes, David en de profeten. In Deutero-Jesaja krijgt het een specifieke lading als de 'Lijdende Knecht'.",
-            "meerduidigheid": "Kan zowel een eretitel zijn (hofbeambte van de hemelse Koning) als een aanduiding van totale afhankelijkheid en nederigheid."
+            "woord_origineel": "עֶבֶד (Ebed)",
+            "transliteratie": "Ebed",
+            "vertaling": "Dienaar / Knecht",
+            "semantische_range": "Slaaf, ondergeschikte, maar ook: eretitel voor hoge functionarissen van de koning of vrome vereerders van YHWH (zoals Mozes, David).",
+            "gebruik_elders": "Wordt in Jesaja 40-55 specifiek gebruikt voor de mysterieuze figuur (of het volk Israël) die Gods wil uitvoert door lijden en gehoorzaamheid.",
+            "meerduidigheid": "De identiteit van de 'Ebed' is bewust ambigu: is het Israël, een profeet, of een toekomstige Messias? In de christelijke lezing wordt dit op Jezus betrokken."
           },
           {
-            "woord_origineel": "מִשְׁפָּט",
-            "transliteratie": "mishpat",
-            "vertaling": "recht / oordeel / verordening",
-            "semantische_range": "Juridisch recht, sociale gerechtigheid, de goddelijke orde van de schepping.",
-            "gebruik_elders": "Centraal begrip in de profetische literatuur (Amos, Micha) voor de zorg voor weduwe en wees.",
-            "meerduidigheid": "Het gaat hier niet om een abstracte wet, maar om het herstel van de juiste verhoudingen tussen God, mens en schepping."
+            "woord_origineel": "מִשְׁפָּט (Mishpat)",
+            "transliteratie": "Mishpat",
+            "vertaling": "Recht / Oordeel / Rechtsorde",
+            "semantische_range": "Juridisch vonnis, maar breder: de goddelijke orde, de juiste gang van zaken, sociale gerechtigheid, bescherming van de zwakken.",
+            "gebruik_elders": "Kernwoord in de profeten (Amos, Micha) als tegenhanger van cultische offers zonder ethiek.",
+            "meerduidigheid": "Het kan 'straf' betekenen, maar in deze context (vers 3-4) lijkt het te gaan om herstel en waarheid voor de volken."
+          },
+          {
+            "woord_origineel": "קָנֶה (Qaneh)",
+            "transliteratie": "Qaneh",
+            "vertaling": "Riet",
+            "semantische_range": "Rietstengel, meetlat (canon), weegschaal.",
+            "gebruik_elders": "Vaak symbool voor broosheid (1 Koningen 14:15) of onbetrouwbaarheid (Egypte als geknakte rietstaf, Jesaja 36:6).",
+            "meerduidigheid": "Hier symbool voor de kwetsbare mens die door de Dienaar met zorg wordt behandeld."
           }
         ],
         "literaire_analyse": {
-          "genre": "profetie / poëzie",
-          "genre_conventies": "Dit is het eerste van de vier 'Liederen van de Knecht' (Ebed-JHWH liederen). Het kenmerkt zich door een plechtige presentatie (introductieformule 'Zie...') en een hoge mate van parallellisme.",
+          "genre": "profetie",
+          "genre_conventies": "Het betreft het eerste van de vier 'Liederen van de Dienaar'. Het heeft kenmerken van een koninklijke aanstellingsoratie (God presenteert zijn gezant) en wijsheidsliteratuur (de wijze van optreden).",
           "structuur": {
-            "opbouw": "De perikoop valt uiteen in drie delen: 1. De presentatie van de Knecht door God (v1); 2. De werkwijze van de Knecht: zachtmoedigheid en volharding (v2-4); 3. De specifieke roeping en missie van de Knecht (v6-7).",
+            "opbouw": "Vers 1: Presentatie van de Dienaar en zijn toerusting (Geest). Vers 2-3: Beschrijving van zijn werkwijze (negatief: niet schreeuwen; positief: sparen van het zwakke). Vers 4: De volharding van de Dienaar tot het doel bereikt is. Vers 5-9 (waarvan 6-7 gelezen): Directe aanspraak van God tot de Dienaar over zijn roeping.",
             "cesuren": [
-              "Na vers 1: overgang van presentatie naar methode.",
-              "Na vers 4: overgang naar de directe aanspraak van God tot de Knecht (v6)."
+              "Na vers 4 (overgang van beschrijving in 3e persoon naar aanspraak in 2e persoon)."
             ],
-            "centrum": "Vers 3: De paradox van de macht van de Knecht die zich uit in het sparen van het kwetsbare (geknakte riet).",
-            "chiasme_inclusio": "Inclusio tussen v1 ('recht doen uitgaan') en v4 ('recht gevestigd'). Het recht is het begin- en eindpunt."
+            "centrum": "Vers 3: De unieke, geweldloze methode van de Dienaar.",
+            "chiasme_inclusio": "Inclusio rondom 'mishpat' (recht) in vers 1 en vers 4."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
-              "Antithese: De Knecht schreeuwt niet (v2) maar brengt wel recht naar de verste kusten (v4).",
-              "Metafoor: Het geknakte riet en de vlaspit als beelden voor de menselijke kwetsbaarheid.",
-              "Personificatie: De 'eilanden' die wachten op zijn onderricht."
+              "Litotes (niet breken, niet doven) om de zachtmoedigheid te benadrukken.",
+              "Parallellisme in vers 4 tussen de Dienaar (niet doven/breken) en zijn objecten (vlaspit/riet)."
             ],
-            "retorische_strategie": "De tekst wil de hoorder (de ballingen in Babylon) bemoedigen door een alternatief machtsmodel te presenteren: niet de brute kracht van de wereldrijken, maar de stille, onstuitbare kracht van Gods dienaar.",
-            "effect_lezer": "Het wekt verwondering over de wijze waarop God zijn koninkrijk vestigt: niet door geweld, maar door trouw en ontferming."
+            "retorische_strategie": "God spreekt hier als de garant voor de Dienaar. Door de Dienaar te introduceren met 'Zie' (Hen), wordt de aandacht van de hoorder dwingend opgeëist.",
+            "effect_lezer": "De lezer wordt verrast: een door God gemachtigde heerser die niet heerst met machtsvertoon, maar met behoedzaamheid."
           },
           "karakters_plot": {
             "personages": [
-              "JHWH (de Spreker)",
-              "De Knecht (de Uitverkorene)",
-              "De volkeren/eilanden (de ontvangers)",
-              "De kwetsbaren (riet/vlaspit)"
+              "YHWH (de spreker)",
+              "De Dienaar (het object van spreken)",
+              "De volken/eilanden (de ontvangers van het recht)"
             ],
-            "karakterisering": "De Knecht wordt getypeerd door passiviteit (ondersteund door God) en actieve zachtmoedigheid. Hij is de drager van de Geest.",
-            "verhaallijn": "Er is geen narratieve plot, maar een visionaire beweging van de hemelse presentatie naar de wereldwijde impact van het recht.",
-            "verzwegen_gesuggereerd": "De exacte identiteit van de Knecht blijft mysterieus, wat de tekst een tijdloze en messiaanse diepgang geeft."
+            "karakterisering": "YHWH is de initiatiefnemer en ondersteuner. De Dienaar is stil, volhardend en zachtmoedig.",
+            "verhaallijn": "Er is geen narratief plot, maar een beschrijving van een missie.",
+            "verzwegen_gesuggereerd": "Wie de Dienaar precies is, blijft in de tekst onbenoemd, wat ruimte laat voor latere identificatie (Cyrus, Israël, Jezus)."
           }
         },
         "structuralistische_analyse": {
           "schema_constructie": {
             "scenarios": [
               {
-                "scène": "1. De Presentatie",
-                "tijd": "Onbepaald (profetisch heden)",
-                "plaats": "Hemelse hofraad",
-                "actant": "JHWH",
-                "handeling": "ondersteunen, behagen hebben, Geest geven",
+                "scène": "1 (v1)",
+                "tijd": "Nu (presentatie)",
+                "plaats": "Goddelijk hof (impliciet)",
+                "actant": "YHWH",
+                "handeling": "Presenteren, ondersteunen, Geest geven",
                 "medewerker": [
-                  "De Geest"
-                ],
-                "opponent": []
-              },
-              {
-                "scène": "2. De Werkwijze",
-                "tijd": "Continu",
-                "plaats": "De straat / de publieke ruimte",
-                "actant": "De Knecht",
-                "handeling": "niet schreeuwen, niet breken, niet doven, recht doen uitgaan",
-                "medewerker": [
-                  "Trouw (v3)"
+                  "Geest"
                 ],
                 "opponent": [
-                  "Het geknakte riet (als object van zorg)",
-                  "De verflauwende vlaspit"
+                  "Geen"
                 ]
               },
               {
-                "scène": "3. De Missie",
-                "tijd": "Toekomstgericht",
-                "plaats": "Aarde / verste kusten / gevangenis",
-                "actant": "JHWH / De Knecht",
-                "handeling": "roepen, vatten, maken tot verbond, openen, uitleiden",
+                "scène": "2 (v2-3)",
+                "tijd": "Toekomst (optreden)",
+                "plaats": "Straat / Publieke ruimte",
+                "actant": "Dienaar",
+                "handeling": "Niet schreeuwen, niet breken, recht doen uitgaan",
                 "medewerker": [
-                  "De volkeren (als ontvangers)"
+                  "YHWH (impliciet door steun)"
                 ],
                 "opponent": [
-                  "De duisternis",
-                  "Het kerkerhuis"
+                  "Chaos / Onrecht (impliciet)"
+                ]
+              },
+              {
+                "scène": "3 (v4)",
+                "tijd": "Toekomst (volharding)",
+                "plaats": "Aarde / Eilanden",
+                "actant": "Dienaar",
+                "handeling": "Niet verflauwen, recht vestigen",
+                "medewerker": [
+                  "Geen"
+                ],
+                "opponent": [
+                  "Tegenstand / Uitputting (impliciet in 'niet verflauwen')"
+                ]
+              },
+              {
+                "scène": "4 (v6-7)",
+                "tijd": "Nu (aanspraak)",
+                "plaats": "Kosmos / Gevangenis",
+                "actant": "YHWH",
+                "handeling": "Roepen, vastgrijpen, maken tot verbond",
+                "medewerker": [
+                  "Dienaar (als instrument)"
+                ],
+                "opponent": [
+                  "Duisternis / Gevangenschap"
                 ]
               }
             ],
-            "schema_regels": "De analyse volgt de acties van JHWH als de zender en de Knecht als de gevolmachtigde uitvoerder."
+            "schema_regels": "YHWH is de zender en de Dienaar is het subject dat de opdracht uitvoert. De 'volken' en 'eilanden' zijn de ontvangers."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "De beweging gaat van de hemelse eeuwigheid (v1) naar de aardse straat (v2-3) naar de verste uithoeken van de wereld (v4, 6).",
-            "actanten_analyse": "JHWH is de initiërende actant (v1, v6). De Knecht is de uitvoerende actant wiens kracht ligt in wat hij *niet* doet (niet schreeuwen, niet breken).",
-            "handelingen_trajecten": "Traject van 'bekrachtiging' (ondersteunen, Geest geven) naar 'transformatie' (openen, uitleiden).",
-            "medewerkers_opponenten_analyse": "De belangrijkste 'medewerker' is de Geest van God. De 'opponenten' zijn niet zozeer personen, maar de machten van duisternis en gevangenschap."
+            "tijd_plaats_patroon": "Van de hemelse presentatie (v1) naar de aardse realiteit van de straat (v2) en de wereldwijde horizon van de eilanden (v4).",
+            "actanten_analyse": "YHWH is de primaire actor in v1 en v6-7 (zender), de Dienaar is de actor in v2-4 (uitvoerder).",
+            "handelingen_trajecten": "Traject van toerusting (Geest geven) -> Traject van uitvoering (Recht brengen) -> Traject van bevrijding (Ogen openen).",
+            "medewerkers_opponenten_analyse": "De Geest is de cruciale medewerker. Opponenten zijn abstract: onrecht, duisternis, blindheid."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De scènes zijn verbonden door het thema 'mishpat' (recht). God geeft het recht, de Knecht belichaamt het, en de wereld ontvangt het.",
-            "temporele_ontwikkeling": "Er is een progressie van de interne relatie (God-Knecht) naar de externe effectiviteit (Knecht-wereld).",
-            "literaire_elementen": "Herhaling van 'niet breken/niet geknakt worden' (v3-4) verbindt de methode met de persoon van de Knecht.",
-            "karakteranalyse": "De Knecht ontleent zijn autoriteit volledig aan de ondersteuning van JHWH en de gave van de Geest.",
-            "evaluatieve_dimensie": "De tekst evalueert de Knecht als 'uitverkorene' en degene in wie God 'behagen' heeft."
+            "structurele_samenhang": "De tekst beweegt van de identiteit van de Dienaar (wie is hij?) naar zijn methodiek (hoe werkt hij?) naar zijn effect (wat bereikt hij?).",
+            "temporele_ontwikkeling": "Logische volgorde: verkiezing -> toerusting -> optreden -> resultaat.",
+            "literaire_elementen": "Herhaling van 'niet' (lo) in v2, 3, 4 benadrukt het contrast met wereldse heersers.",
+            "karakteranalyse": "De Dienaar ontleent zijn autoriteit volledig aan YHWH ('Ik ondersteun hem').",
+            "evaluatieve_dimensie": "YHWH spreekt zijn 'welbehagen' uit, wat een positieve evaluatie vooraf is."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
-              "Macht in zwakheid",
-              "Universele gerechtigheid",
-              "Goddelijke bekrachtiging"
+              "Goddelijke verkiezing en toerusting",
+              "Rechtvaardigheid door zachtmoedigheid",
+              "Universele reikwijdte van het heil"
             ],
-            "structurele_patroon": "Een beweging van concentrische cirkels: van God naar de Knecht, naar de kwetsbare enkeling, naar de volkeren.",
-            "theologische_betekenis": "Het recht van God wordt niet opgelegd door dwang, maar ingedragen door een dienaar die de kwetsbaarheid van de schepping respecteert en deelt."
+            "structurele_patroon": "Zending (God) -> Uitvoering (Dienaar) -> Doel (Recht voor de volken).",
+            "theologische_betekenis": "Gods recht wordt niet gevestigd door geweld of lawaai, maar door een Geest-vervulde presentie die het kwetsbare spaart. Dit is een radicale herdefiniëring van macht."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "God presenteert zijn ideale heerser: een dienaar die door de Geest bekrachtigd is om wereldwijd recht te vestigen door middel van uiterste zachtmoedigheid en solidariteit met de zwakken.",
-          "godsbeeld": "God is de 'Ondersteuner' en 'Roeper'. Hij is niet afstandelijk, maar legt zijn eigen Geest op een mens. Hij is een God die vreugde vindt in zijn dienaar en die begaan is met de 'geknakte' kanten van de schepping.",
-          "mensbeeld_wereld_heil": "De mens wordt gezien als kwetsbaar (riet, vlaspit) maar ook als doelwit van Gods bevrijdende recht. Heil is hier concreet: bevrijding uit de kerker en het zien van licht. De wereld is een plek die wacht op onderricht (tora).",
+          "centrale_boodschap": "God introduceert zijn Dienaar, die met goddelijke autoriteit (Geest) maar zonder aards machtsvertoon (niet schreeuwen) de goddelijke rechtsorde (mishpat) zal herstellen voor alle volken, met specifieke zorg voor het kwetsbare.",
+          "godsbeeld": "Een God die betrokken is (ondersteunt, grijpt vast), die behagen schept in zijn instrument, en die universeel rechtvaardig is.",
+          "mensbeeld_wereld_heil": "De wereld is een plaats van 'geknakt riet' en 'kwijnende vlaspitten' (kwetsbaarheid) en 'gevangenis' (duisternis), die wacht op bevrijding. Heil is hier herstel van recht en vrijheid.",
           "bijbels_theologische_lijnen": [
-            "Pneumatologie: De Geest als toerusting voor een publieke taak.",
-            "Messianisme: De Knecht als voorafschaduwing van de Messias.",
-            "Missiologie: Het heil is bestemd voor alle volkeren (licht voor de volken)."
+            "Koninkrijk (Gods heerschappij via de Dienaar)",
+            "Schepping (God als schepper in v5, hier context)",
+            "Exodus (bevrijding uit gevangenschap v7)"
           ],
-          "plaats_heilsgeschiedenis": "De tekst functioneert als een keerpunt in de ballingschap: de hoop wordt niet gevestigd op een nieuwe militaire koning, maar op een lijdende en dienende gestalte.",
-          "spanning_andere_teksten": "Spanning met teksten waar God als een machtig krijgsman optreedt (bijv. Exodus 15). Hier is de strijd innerlijk en moreel.",
+          "plaats_heilsgeschiedenis": "Profetische anticipatie op een nieuwe heilsfiguur na het falen van de Davidische koningen. In het NT vervuld in Jezus' doop en optreden.",
+          "spanning_andere_teksten": "Staat op gespannen voet met messiaanse teksten die een strijdbare koning verwachten (Psalm 2).",
           "dogmatische_raakvlakken": [
-            "Christologie (de twee naturen: de Knecht is menselijk kwetsbaar maar goddelijk bekrachtigd).",
-            "Soteriologie (verlossing als herstel van recht)."
+            "Pneumatologie (rol van de Geest bij de Dienaar)",
+            "Christologie (Jezus als de lijdende Knecht)",
+            "Triniteit (Vader kiest, Zoon dient, Geest rust op hem)"
           ],
-          "theologische_controverses": "De vraag of de Knecht Israël is of een individu. In de christelijke traditie is de christologische duiding dominant, in de joodse traditie de collectieve duiding."
+          "theologische_controverses": "Joodse interpretatie (Dienaar = Israël) vs. Christelijke interpretatie (Dienaar = Jezus). Beide lijnen zijn exegetisch verdedigbaar vanuit de context van Jesaja."
         },
         "zoekmodellen_snoek": {
           "godsbeelden_ot": {
-            "werkwoordelijke_uitspraken": "God 'ondersteunt' (tamak), 'geeft' zijn Geest (natan), 'roept' (qara), 'vat' de hand (chazaq) en 'maakt' tot een verbond (natan). Dit typeert God als een actieve, betrokken actor die de geschiedenis stuurt via zijn dienaar.",
-            "metaforische_uitspraken": "God als de 'Kiezer' (uitverkorene) en degene die 'behagen' heeft. Hij fungeert als een soevereine vorst die zijn gezant presenteert aan de wereld.",
-            "overstijgende_eigenschappen": "Zijn almacht blijkt uit het feit dat Hij de Knecht 'roept in gerechtigheid' en de volkeren en eilanden onder zijn gezag brengt. Hij staat boven de machten van de duisternis.",
-            "toebuigende_eigenschappen": "Zijn barmhartigheid en trouw blijken uit de zorg voor het 'geknakte riet'. Hij is een God die niet wil dat het kwetsbare verloren gaat.",
-            "dominante_categorie": "Werkwoordelijke uitspraken domineren: God is de motor achter de missie van de Knecht.",
-            "spanning": "De spanning tussen de kosmische macht van God (die de Geest geeft) en de uiterste tederheid waarmee Hij via de Knecht het geknakte riet benadert.",
-            "relevantie_gemeente": "Voor de Boskoopse kweker, die weet hoe voorzichtig je met jonge stekken moet omgaan, spreekt dit beeld van een God die 'niet breekt' diep aan. Het biedt een tegenwicht aan de prestatiedruk: God ondersteunt voordat Hij vraagt."
+            "werkwoordelijke_uitspraken": "Ik ondersteun, Ik heb gelegd (Geest), Ik heb geroepen, Ik zal vastgrijpen. God is zeer actief en initiërend.",
+            "metaforische_uitspraken": "Impliciet: God als Koning (die een gezant stuurt) en als Schepper (in de weggelaten verzen 5, maar resonerend in de macht over de volken).",
+            "overstijgende_eigenschappen": "Soevereiniteit over de 'volken' en 'verste kusten'.",
+            "toebuigende_eigenschappen": "De zorg voor het geknakte riet (via de Dienaar) en het 'behagen scheppen' (emotionele betrokkenheid).",
+            "dominante_categorie": "Werkwoordelijk/Toebuigend. God is de handelende actor die zich via de Dienaar toebuigt naar de kwetsbare wereld.",
+            "spanning": "De spanning tussen de universele macht (recht voor de volken) en de intieme zorg (vlaspit).",
+            "relevantie_gemeente": "Voor Boskoop: God is niet alleen de God van de grote lijnen (wereldpolitiek), maar ook de God die de individuele 'geknakte' mens ziet en ondersteunt."
           },
           "mensbeelden_ot": {
-            "horizontale_as": "De Knecht bevindt zich aan de uiterste zijde van het 'goed doen' (gerechtigheid, trouw). De 'volkeren' en degenen in de 'kerker' representeren de mensheid die lijdt onder onrecht of duisternis (kwaad ondergaan).",
-            "verticale_as": "De Knecht is perfect verticaal gericht op God (ontvangt de Geest, wordt ondersteund) en tegelijkertijd horizontaal gericht op de wereld (brengt recht naar de volkeren).",
-            "personages_positie": "De Knecht is de 'ideale mens' die de breuk tussen God en wereld overbrugt.",
-            "karakterontwikkeling": "Er is geen karakterontwikkeling in de Knecht; hij is vanaf het begin 'gezet' in zijn rol. De ontwikkeling zit in de wereld die van duisternis naar licht gaat."
+            "horizontale_as": "De Dienaar bevindt zich extreem aan de kant van 'goed doen' (recht brengen, gevangenen bevrijden). De 'volken' bevinden zich in een positie van ontvankelijkheid of nood (gevangenschap, duisternis).",
+            "verticale_as": "De Dienaar is volledig gericht op God (ontvangt de Geest) én volledig gericht op de wereld (brengt recht). Hij is de perfecte middelaar.",
+            "personages_positie": "Dienaar: brugfiguur. Gevangenen: passieve ontvangers van heil.",
+            "karakterontwikkeling": "De Dienaar toont volharding ('niet verflauwen') ondanks impliciete weerstand."
           },
-          "jezusbeelden_nt": null
+          "jezusbeelden_nt": {
+            "van_achteren": "N.v.t. (OT tekst), maar functioneert als het 'van achteren' model voor de evangelielezing.",
+            "van_boven": "N.v.t.",
+            "van_beneden": "N.v.t.",
+            "van_voren": "N.v.t.",
+            "dominant_perspectief": "N.v.t.",
+            "spanning_godheid_mensheid": "N.v.t.",
+            "betekenis_hoorders_nu": "N.v.t."
+          }
         }
       },
       {
-        "referentie": "Matteüs 3,13-17",
+        "referentie": "Matteüs 3:13-17",
         "afbakening_vertaling": {
           "vertaalvergelijking": [
             {
-              "vertaling": "NBV21",
-              "significante_verschillen": "Vertaalt 'pasan dikaiosynen' met 'de gerechtigheid geheel en al'. Dit klinkt als een morele categorie. De NBV21 vertaalt 'eudokesa' met 'in Hem vind Ik vreugde', wat een emotionele band benadrukt."
+              "vertaling": "NBV21 vs. Naardense Bijbel (NB)",
+              "significante_verschillen": "Vers 15: NBV21 vertaalt 'zo dienen wij de gerechtigheid geheel en al tot vervulling te brengen', wat een plechtige, bijna liturgische klank heeft. NB vertaalt directer: 'laat het onmiddellijk toe; zó immers past het ons alle gerechtigheid te vervullen'. Het Griekse 'aphes arti' (laat het nu/toch toe) is in de NB dwingender. NBV21 'dienen wij' voegt een nuance van dienstbaarheid toe die in het Griekse 'prepon estin' (het is passend) minder expliciet is."
             },
             {
-              "vertaling": "Naardense Bijbel",
-              "significante_verschillen": "Vertaalt 'alle gerechtigheid vervullen'. Het woord 'vervullen' (plerosai) is een sleutelbegrip in Matteüs en de NB houdt dit vast. De NB vertaalt 'in wie ik welbehagen heb gekregen', wat de formele bevestiging van de Vader (met een echo naar Jesaja 42) sterker aanzet."
+              "vertaling": "NBV21 vs. Grondtekst (NA28)",
+              "significante_verschillen": "In vers 16 vertaalt NBV21 'opende de hemel zich voor Hem', terwijl de grondtekst 'ēneōchthēsan [autō] hoi ouranoi' (werden de hemelen geopend) heeft - een passivum divinum. De toevoeging 'voor Hem' (autō) is tekstkritisch onzeker (zie onder), maar NBV21 kiest voor de lezing mét 'voor Hem', wat de ervaring subjectief voor Jezus maakt."
             }
           ],
-          "werkvertaling_cruciaal": "Jezus antwoordde hem: 'Laat het nu toe, want zo past het ons om alle gerechtigheid te vervullen.' (v15)\\n\\nEn zie, een stem uit de hemelen zei: 'Dit is mijn Zoon, de Geliefde, in wie Ik mijn welbehagen heb gesteld.' (v17)"
+          "werkvertaling_cruciaal": "Maar Jezus antwoordde en zei tot hem: 'Laat het nu toe / sta het nu toe; want zo is het passend voor ons om alle gerechtigheid te vervullen.' Toen liet hij hem toe."
         },
         "tekstkritiek": {
           "relevante_varianten": [
             {
               "vers": "3:16",
-              "variant": "Sommige handschriften laten 'hem' (autoi) weg bij 'de hemelen openden zich'.",
-              "handschriften": "Codex Sinaiticus, Codex Vaticanus",
-              "betekenis_impact": "Als 'hem' er staat, is de opening van de hemel een persoonlijke ervaring van Jezus. Zonder 'hem' is het een objectief gebeuren voor alle omstanders."
+              "variant": "autō (voor hem) weglaten",
+              "handschriften": "Sinaiticus, Vaticanus (oorspronkelijk)",
+              "betekenis_impact": "Zonder 'autō' is de opening van de hemel een objectief, publiek feit. Mét 'autō' (in latere handschriften en correcties) wordt het een visioen dat specifiek aan Jezus wordt getoond (zoals in Marcus). Matteüs lijkt hier te schommelen tussen een publieke epifanie en een persoonlijke roeping."
             }
           ],
-          "conclusie": "De tekst is zeer betrouwbaar overgeleverd. De belangrijkste varianten betreffen kleine grammaticale details die de strekking niet wezenlijk veranderen."
+          "conclusie": "De keuze voor wel of geen 'autō' beïnvloedt of de doop een publieke demonstratie is of een persoonlijke ervaring. Gezien de publieke proclamatie in vers 17 ('Dit is...') lijkt Matteüs te neigen naar een publiek karakter, ondanks de mogelijke beperking in vers 16."
         },
         "woordstudie": [
           {
-            "woord_origineel": "δικαιοσύνη",
-            "transliteratie": "dikaiosyne",
-            "vertaling": "gerechtigheid",
-            "semantische_range": "Rechtvaardigheid, vroomheid, het doen van Gods wil, het herstel van de verbondsrelatie.",
-            "gebruik_elders": "In Matteüs vaak verbonden met het doen van de wil van de Vader (bijv. Bergrede).",
-            "meerduidigheid": "Het is hier niet alleen een menselijke deugd, maar Gods heilplan dat door Jezus wordt uitgevoerd."
+            "woord_origineel": "πληρῶσαι (Plerosai)",
+            "transliteratie": "Plerosai",
+            "vertaling": "Vervullen / Volmaken",
+            "semantische_range": "Vol maken (van een maat), realiseren (van een profetie), gehoorzamen (van een wet).",
+            "gebruik_elders": "Sleutelwoord in Matteüs (5:17: 'Ik ben niet gekomen om te ontbinden, maar om te vervullen'). Het duidt op de realisatie van Gods heilsplan zoals in de Schriften voorzegd.",
+            "meerduidigheid": "Betekent het hier 'de wet gehoorzamen' (Jezus als vrome Jood) of 'de profetie realiseren' (Jezus als Messias)? Waarschijnlijk beide."
           },
           {
-            "woord_origineel": "ἀγαπητός",
-            "transliteratie": "agapetos",
-            "vertaling": "geliefde / enige",
-            "semantische_range": "Geliefd, dierbaar, uniek.",
-            "gebruik_elders": "Gebruikt in de Septuaginta voor Isaak (Genesis 22), de enige zoon.",
-            "meerduidigheid": "Duidt zowel op de affectieve band als op de unieke status van Jezus als erfgenaam."
+            "woord_origineel": "δικαιοσύνην (Dikaiosunè)",
+            "transliteratie": "Dikaiosunè",
+            "vertaling": "Gerechtigheid",
+            "semantische_range": "Rechtschapenheid, het doen van Gods wil, verbondstrouw, maar ook: Gods reddend handelen.",
+            "gebruik_elders": "In Matteüs vaak ethisch (doen wat God vraagt, 5:20, 6:1), in tegenstelling tot Paulus (vrijspraak).",
+            "meerduidigheid": "Hier lijkt het te gaan om 'doen wat God in dit stadium van de heilsgeschiedenis vraagt', namelijk solidariteit met het boetvaardige volk."
+          },
+          {
+            "woord_origineel": "ἀγαπητός (Agapetos)",
+            "transliteratie": "Agapetos",
+            "vertaling": "Geliefde",
+            "semantische_range": "Geliefd, maar ook: enige (vergelijkbaar met Hebreeuws 'yachid').",
+            "gebruik_elders": "Verwijst naar Isaak (Genesis 22:2, LXX) en de Dienaar (Jesaja 42:1).",
+            "meerduidigheid": "Combineert de offerbereidheid (Isaak) met de verkiezing (Dienaar)."
           }
         ],
         "literaire_analyse": {
-          "genre": "narratief / epifanie",
-          "genre_conventies": "Het verhaal volgt de conventies van een roepingsverhaal of een koningsinstallatie, afgesloten met een goddelijke legitimatie (theofanie).",
+          "genre": "narratief / theofanie",
+          "genre_conventies": "Beschrijving van een goddelijke verschijning met visuele (open hemel, duif) en auditieve (stem) elementen, dienend als legitimatie van de hoofdpersoon.",
           "structuur": {
-            "opbouw": "1. De komst van Jezus naar de Jordaan (v13); 2. De dialoog tussen Jezus en Johannes over de doop (v14-15); 3. De doophandeling en de hemelse bevestiging (v16-17).",
+            "opbouw": "Vers 13: Aankomst (setting). Vers 14-15: Dialoog en conflict (Johannes weigert, Jezus corrigeert). Vers 16: De handeling (doop) en het visioen (Geest). Vers 17: De auditieve proclamatie (Stem).",
             "cesuren": [
-              "Tussen v15 en v16: van dialoog naar visioen.",
-              "Tussen v16 en v17: van visueel (duif) naar auditief (stem)."
+              "Tussen vers 15 (dialoog) en 16 (actie/visioen)."
             ],
-            "centrum": "Vers 15: De uitspraak over het vervullen van alle gerechtigheid. Dit is de theologische sleutel van de hele scène.",
-            "chiasme_inclusio": "Inclusio van 'Galilea' (v13) en de 'hemel' (v17): de aardse herkomst ontmoet de hemelse bevestiging."
+            "centrum": "Vers 15: De theologische motivering ('alle gerechtigheid vervullen').",
+            "chiasme_inclusio": "Geen strikt chiasme, wel een beweging van beneden (water) naar boven (hemel)."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
-              "Dialoog: De aarzeling van Johannes verhoogt de spanning en verduidelijkt de status van Jezus.",
-              "Symboliek: Water (reiniging/dood), Duif (Geest/nieuwe schepping), Stem (goddelijk gezag).",
-              "Intertekstualiteit: Citaten uit Psalm 2:7 en Jesaja 42:1."
+              "Dialoog (uniek voor Matteüs, ontbreekt in Marcus/Lucas) om het theologische probleem van Jezus' doop op te lossen.",
+              "Beeldspraak (duif)."
             ],
-            "retorische_strategie": "Matteüs wil aantonen dat Jezus niet ondergeschikt is aan Johannes, ondanks dat Hij door hem gedoopt wordt. De doop is een bewuste keuze van Jezus om solidair te zijn.",
-            "effect_lezer": "De lezer wordt getuige van het 'geheim' van Jezus' identiteit aan het begin van zijn publieke optreden."
+            "retorische_strategie": "Matteüs wil voorkomen dat de lezer denkt dat Jezus ondergeschikt is aan Johannes (vandaar het protest van Johannes) en benadrukt Jezus' vrijwillige vernedering.",
+            "effect_lezer": "De lezer begrijpt dat Jezus niet gedoopt wordt vanwege eigen zonde, maar vanwege een hoger heilsplan."
           },
           "karakters_plot": {
             "personages": [
-              "Jezus",
-              "Johannes de Doper",
-              "De Geest van God",
-              "De Vader (Stem)"
+              "Jezus (initiatiefnemer)",
+              "Johannes (tegenstribbelende profeet)",
+              "Geest (visueel teken)",
+              "Stem uit de hemel (God de Vader)"
             ],
-            "karakterisering": "Jezus is de gehoorzame Zoon die de regie voert. Johannes is de wegbereider die moet leren wat 'gerechtigheid' in de nieuwe tijd betekent.",
-            "verhaallijn": "Conflict (Johannes weigert) -> Oplossing (Jezus legt uit) -> Climax (De hemel opent).",
-            "verzwegen_gesuggereerd": "De innerlijke beleving van Jezus tijdens de doop wordt niet beschreven; de focus ligt volledig op de uiterlijke openbaring."
+            "karakterisering": "Johannes is nederig en herkent Jezus' meerderheid. Jezus is vastberaden en gehoorzaam. God bevestigt.",
+            "verhaallijn": "Conflict (Johannes wil niet dopen) -> Oplossing (Jezus overtuigt) -> Climax (Goddelijke bevestiging).",
+            "verzwegen_gesuggereerd": "De eigenlijke doophandeling wordt uiterst kort vermeld ('nadat hij gedoopt was'), de focus ligt op wat erna gebeurt."
           }
         },
         "structuralistische_analyse": {
           "schema_constructie": {
             "scenarios": [
               {
-                "scène": "1. De Ontmoeting",
-                "tijd": "Toen (Tote)",
+                "scène": "1 (v13)",
+                "tijd": "Toen (tote)",
                 "plaats": "Jordaan",
                 "actant": "Jezus",
-                "handeling": "treden, komen om gedoopt te worden",
-                "medewerker": [],
+                "handeling": "Aankomen, zich aanbieden",
+                "medewerker": [
+                  "Geen"
+                ],
                 "opponent": [
-                  "Johannes (die tegenhoudt)"
+                  "Afstand (Galilea-Jordaan)"
                 ]
               },
               {
-                "scène": "2. De Dialoog",
-                "tijd": "Onmiddellijk volgend",
-                "plaats": "Oever van de Jordaan",
-                "actant": "Jezus",
-                "handeling": "antwoorden, zeggen: 'laat het toe'",
+                "scène": "2 (v14-15)",
+                "tijd": "Direct daarna",
+                "plaats": "Oever Jordaan",
+                "actant": "Jezus (als spreker)",
+                "handeling": "Overtuigen, bevelen ('laat toe')",
                 "medewerker": [
-                  "Johannes (geeft uiteindelijk toe)"
+                  "Theologisch argument ('gerechtigheid')"
                 ],
-                "opponent": []
+                "opponent": [
+                  "Johannes (die weigert uit vroomheid)"
+                ]
               },
               {
-                "scène": "3. De Epifanie",
-                "tijd": "Zodra hij uit het water kwam",
-                "plaats": "In/bij het water, onder de geopende hemel",
-                "actant": "Jezus / God",
-                "handeling": "opklimmen, zien (Jezus), neerdalen (Geest), spreken (Stem)",
+                "scène": "3 (v16a)",
+                "tijd": "Na de doop",
+                "plaats": "Water / Oever",
+                "actant": "Jezus",
+                "handeling": "Opklimmen uit water",
                 "medewerker": [
-                  "De Geest",
-                  "De Stem"
+                  "Johannes (impliciet uitvoerder)"
                 ],
-                "opponent": []
+                "opponent": [
+                  "Water (als grens)"
+                ]
+              },
+              {
+                "scène": "4 (v16b-17)",
+                "tijd": "Direct (euthus)",
+                "plaats": "Hemel -> Aarde",
+                "actant": "God / Geest",
+                "handeling": "Openen, neerdalen, spreken",
+                "medewerker": [
+                  "Duif (vorm)"
+                ],
+                "opponent": [
+                  "Geslotenheid hemel"
+                ]
               }
             ],
-            "schema_regels": "Jezus is de actant die de beweging initieert; God is de actant die de handeling bevestigt."
+            "schema_regels": "Jezus is de actant die de doop wil (object). Johannes is eerst opponent (uit nederigheid), dan medewerker. God is de uiteindelijke sanctie-gever."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "Van Galilea (periferie) naar de Jordaan (grens/overgang) naar de geopende hemel (centrum van macht).",
-            "actanten_analyse": "Jezus is de centrale actant in scène 1 en 2. In scène 3 wordt Hij de ontvanger van de handelingen van de Geest en de Vader.",
-            "handelingen_trajecten": "Traject van 'vernedering' (zich laten dopen) naar 'verhoging' (bevestiging als Zoon).",
-            "medewerkers_opponenten_analyse": "Johannes transformeert van opponent (uit ontzag) naar medewerker. De Geest en de Vader zijn de ultieme medewerkers die Jezus' missie legitimeren."
+            "tijd_plaats_patroon": "Horizontale beweging (Galilea naar Jordaan) wordt verticale beweging (uit water, hemel open).",
+            "actanten_analyse": "Jezus domineert de eerste helft (initiatief), God/Geest de tweede helft (respons).",
+            "handelingen_trajecten": "Traject van vernedering (zich laten dopen) wordt beantwoord met traject van verhoging (erkenning als Zoon).",
+            "medewerkers_opponenten_analyse": "Johannes is een interessante 'opponent': hij werkt tegen uit goede bedoelingen, maar moet theologische instructie krijgen om medewerker te worden."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De dialoog in v14-15 bereidt de hoorder voor op de grootsheid van v16-17. Zonder de uitleg over 'gerechtigheid' zou de doop een teken van zonde kunnen lijken.",
-            "temporele_ontwikkeling": "Lineaire chronologie die versnelt na de doophandeling ('zodra').",
-            "literaire_elementen": "Gebruik van 'Zie' (Idou) markeert de bovennatuurlijke elementen.",
-            "karakteranalyse": "Jezus ontleent zijn autoriteit aan zijn bereidheid om de wil van God ('gerechtigheid') te doen, nog voordat de stem uit de hemel klinkt.",
-            "evaluatieve_dimensie": "De stem uit de hemel geeft de ultieme evaluatie van Jezus' persoon en werk."
+            "structurele_samenhang": "De dialoog (v14-15) is de sleutel om de handeling (v16) te begrijpen: het is geen boetedoop maar gerechtigheidsvervulling.",
+            "temporele_ontwikkeling": "Chronologisch en causaal: aankomst -> discussie -> daad -> bevestiging.",
+            "literaire_elementen": "Echo van Jesaja 42 in vers 17 ('mijn geliefde, in wie ik behagen heb').",
+            "karakteranalyse": "Jezus toont autoriteit door Johannes te instrueren, zelfs in zijn onderwerping.",
+            "evaluatieve_dimensie": "De stem uit de hemel is de ultieme evaluatie: 'Dit is mijn Zoon'."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
-              "Solidariteit",
-              "Vervulling van de Schrift",
+              "Identificatie van Jezus als Zoon en Dienaar",
+              "Solidariteit met zondaars als 'gerechtigheid'",
               "Trinitarische openbaring"
             ],
-            "structurele_patroon": "Een beweging van beneden (water) naar boven (geopende hemel).",
-            "theologische_betekenis": "De doop van Jezus is geen reiniging van zonde, maar een installatie in zijn ambt als de lijdende en geliefde Knecht-Zoon."
+            "structurele_patroon": "Weerstand (Johannes) -> Overwinning (Jezus' argument) -> Bevestiging (God).",
+            "theologische_betekenis": "Jezus begint zijn weg niet met machtsvertoon, maar met identificatie met de mensheid. God bevestigt deze weg van nederigheid als de weg van de 'geliefde Zoon'."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "Jezus begint zijn missie door zich volledig te vereenzelvigen met de mensheid en Gods heilplan ('gerechtigheid'). God bevestigt deze weg van nederigheid door Hem publiekelijk te erkennen als zijn geliefde Zoon en Hem toe te rusten met de Geest.",
-          "godsbeeld": "God is een Vader die vreugde vindt in zijn Zoon. Hij is de God die de hemel opent en spreekt. De Geest wordt voorgesteld als een duif: teder, aanwezig en vernieuwend.",
-          "mensbeeld_wereld_heil": "De mens (vertegenwoordigd door Johannes) staat vol ontzag voor het heilige. Heil is de 'vervulling van alle gerechtigheid', wat betekent: het herstel van de relatie tussen God en mens door de gehoorzaamheid van Eén.",
+          "centrale_boodschap": "Jezus, hoewel zonder zonde, identificeert zich volledig met de zondige mensheid door de doop, om zo Gods reddende gerechtigheid te vervullen. Deze daad van solidariteit wordt door de Vader bevestigd en door de Geest bekrachtigd.",
+          "godsbeeld": "Een God die spreekt, die zich openbaart als Vader, en die vreugde vindt in de gehoorzaamheid en solidariteit van de Zoon.",
+          "mensbeeld_wereld_heil": "De mens heeft bekering nodig (doop van Johannes). Heil komt niet door menselijke perfectie, maar door Jezus die in de plaats van de mens gaat staan ('ons' in v15).",
           "bijbels_theologische_lijnen": [
-            "Exodus: De doop als een nieuwe doortocht door het water.",
-            "Nieuwe Schepping: De Geest boven het water (echo naar Genesis 1).",
-            "Koningschap: De zalving van de Messias-Koning."
+            "Exodus (doortocht door water)",
+            "Koningschap (zalving/adoptie, Ps 2)",
+            "Dienaar van de Heer (Jes 42)"
           ],
-          "plaats_heilsgeschiedenis": "Dit is het scharniermoment tussen de voorbereiding (Johannes) en de vervulling (Jezus). Het markeert het begin van het Koninkrijk der hemelen op aarde.",
-          "spanning_andere_teksten": "Spanning met de doop van Johannes als 'doop van bekering'. Jezus heeft geen bekering nodig, maar ondergaat de doop als daad van gerechtigheid.",
+          "plaats_heilsgeschiedenis": "Het scharnierpunt tussen het verborgen leven en het publieke optreden. De inauguratie van de Messias.",
+          "spanning_andere_teksten": "Lost de spanning op die in de vroege kerk voelbaar was: 'Waarom liet Jezus zich dopen als hij zondeloos was?' (vgl. Evangelie van de Hebreeën). Matteüs geeft het theologische antwoord.",
           "dogmatische_raakvlakken": [
-            "Triniteitsleer (Vader, Zoon en Geest zijn gelijktijdig aanwezig).",
-            "Christologie (de doop als 'anointing' voor het ambt).",
-            "Sacramentologie (de instelling van de christelijke doop in de kiem)."
+            "Triniteit (Vader, Zoon, Geest samen)",
+            "Christologie (Vere Deus, Vere Homo)",
+            "Soteriologie (Solidariteit/Plaatsvervanging)"
           ],
-          "theologische_controverses": "De vraag waarom Jezus gedoopt moest worden als Hij zonder zonde was. Matteüs lost dit op door de dialoog in v14-15."
+          "theologische_controverses": "Adoptianisme (werd Jezus hier pas Zoon van God?) vs. Incarnatie (Hij was het al). Matteüs 1-2 (geboorteverhaal) sluit adoptianisme uit; de doop is een publieke *proclamatie*, geen wording."
         },
         "zoekmodellen_snoek": {
-          "godsbeelden_ot": null,
-          "mensbeelden_ot": null,
+          "godsbeelden_ot": {
+            "werkwoordelijke_uitspraken": "N.v.t. (NT tekst)",
+            "metaforische_uitspraken": "N.v.t.",
+            "overstijgende_eigenschappen": "N.v.t.",
+            "toebuigende_eigenschappen": "N.v.t.",
+            "dominante_categorie": "N.v.t.",
+            "spanning": "N.v.t.",
+            "relevantie_gemeente": "N.v.t."
+          },
+          "mensbeelden_ot": {
+            "horizontale_as": "N.v.t.",
+            "verticale_as": "N.v.t.",
+            "personages_positie": "N.v.t.",
+            "karakterontwikkeling": "N.v.t."
+          },
           "jezusbeelden_nt": {
-            "van_achteren": "Jezus is diep geworteld in de traditie van Israël. Hij komt naar de Jordaan (de historische grensrivier) en spreekt over het vervullen van de gerechtigheid (de Tora-gehoorzaamheid). Hij is de 'Knecht' uit Jesaja 42.",
-            "van_boven": "Zijn identiteit wordt door de hemel zelf onthuld. Hij is de 'Zoon van God', de 'Geliefde'. De geopende hemel duidt op zijn goddelijke herkomst en de directe communicatie met de Vader.",
-            "van_beneden": "Jezus staat in de rij met zondaars bij de Jordaan. Hij ondergaat een menselijk ritueel, laat zich dopen door een mens (Johannes) en komt fysiek uit het water omhoog. Hij deelt de menselijke conditie volledig.",
-            "van_voren": "De doop is de start van zijn eschatologische missie. De Geest daalt op Hem neer om Hem toe te rusten voor de verkondiging van het Koninkrijk. Hij is degene die de 'gerechtigheid' tot voltooiing zal brengen.",
-            "dominant_perspectief": "De spanning tussen 'van beneden' (de doop ondergaan) en 'van boven' (de stem van de Vader) is het hart van deze tekst.",
-            "spanning_godheid_mensheid": "De tekst laat zien dat Jezus' goddelijke status (Zoon) niet botst met zijn menselijke solidariteit (doop), maar dat de ene de andere juist bevestigt.",
-            "betekenis_hoorders_nu": "Voor de hoorder in Boskoop betekent dit dat identiteit ('geliefd zijn') voorafgaat aan actie. In een wereld van 'moeten' en 'presteren' klinkt hier de bevrijdende stem dat we eerst kind van God zijn, en van daaruit mogen handelen."
+            "van_achteren": "Jezus als de vervuller van de Joodse gerechtigheid en profetieën (Jesaja). Hij voegt zich in de traditie van Johannes.",
+            "van_boven": "De stem uit de hemel ('Mijn Zoon') en de Geest bevestigen zijn goddelijke herkomst en status.",
+            "van_beneden": "Jezus als mens die in de rij staat, het water ingaat, en 'ons' zegt (solidariteit met mensen).",
+            "van_voren": "De doop als startschot voor het Koninkrijk dat doorbreekt.",
+            "dominant_perspectief": "Sterke spanning tussen 'van beneden' (de daad van de doop) en 'van boven' (de stem). Matteüs benadrukt dat de weg 'van beneden' (nederigheid) de weg is die 'van boven' wordt goedgekeurd.",
+            "spanning_godheid_mensheid": "De paradox van de Zondeloze die een zondaarsdoop ondergaat. Dit is de kern van de perikoop.",
+            "betekenis_hoorders_nu": "Voor Boskoop: Jezus is niet te groot om klein te worden. Zijn goddelijkheid blijkt juist in zijn menselijkheid/solidariteit."
           }
         }
       }
     ],
     "samenhang_lezingen": {
-      "rode_draad": "De publieke identificatie en toerusting van de Gezalfde (Messias) die het recht van God op aarde zal vestigen door een weg van zachtmoedigheid en solidariteit.",
+      "rode_draad": "De identiteit en werkwijze van de Gezalfde. Jesaja profeteert een Dienaar die zachtmoedig recht brengt; Matteüs toont Jezus die deze rol op zich neemt door zich nederig te laten dopen.",
       "versterkingen": [
-        "Matteüs citeert Jesaja 42:1 bijna letterlijk in de stem uit de hemel, waardoor Jezus direct wordt geïdentificeerd als de beloofde Knecht.",
-        "Beide teksten benadrukken de rol van de Geest als de drijvende kracht achter het handelen van de Uitverkorene.",
-        "Het thema 'gerechtigheid/recht' (mishpat/dikaiosyne) verbindt de profetische belofte met de evangelische vervulling."
+        "De stem in Matteüs ('in wie ik welbehagen heb') citeert letterlijk Jesaja 42:1.",
+        "De neerdalende Geest in Matteüs is de vervulling van 'Ik heb mijn geest op hem gelegd' in Jesaja.",
+        "Beide teksten herdefiniëren 'macht' en 'gerechtigheid' als dienstbaarheid en solidariteit."
       ],
       "correcties": [
-        "Waar Jesaja spreekt over de Knecht die 'niet schreeuwt', laat Matteüs zien hoe dit er in de praktijk uitziet: Jezus die zich nederig opstelt tegenover Johannes.",
-        "De 'geknakte rietstengel' uit Jesaja krijgt in het Evangelie een gezicht in de mensen met wie Jezus zich in de rij bij de Jordaan opstelt."
+        "Matteüs concretiseert de abstracte 'Dienaar' uit Jesaja in de persoon van Jezus.",
+        "Waar Jesaja spreekt over 'niet schreeuwen', toont Matteüs dit in de praktijk door Jezus' stille onderwerping aan de doop."
       ]
     }
+  },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 78,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen uitbundige lofprijzing (intensiteit 8/10) voor de opening en zending, en meer reflectieve, 'gemengde' sferen (intensiteit 6-7/10) die passen bij de diepere laag van de doop en de lijdende knecht. Er is een goede verdeling tussen klassieke psalmen en liederen die de Geest-thematiek benadrukken.",
+      "contextuele_reflectie": "De thematiek van het 'geknakte riet' (Jesaja 42) slaat een brug naar de humanitaire crisis in Gaza (de kwetsbaarheid van het leven in de kou). De water-symboliek van de doop resoneert sterk met de Boskoopse identiteit, waar waterbeheersing en de cyclus van groei (kwekerij) centraal staan. De roep om rechtvaardigheid in de lezingen sluit aan bij de maatschappelijke behoefte aan morele ankers."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "96",
+        "titel": "Zing voor de Heer op nieuwe wijze",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtig loflied",
+        "toelichting": "Directe match met Jesaja 42:4. De hoge intensiteit (8/10) maakt dit een ideaal lied om de dienst mee te openen.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "356",
+        "titel": "O God die uit het water",
+        "type_match": "Schriftlezing",
+        "karakter": "Liturgisch dooplied",
+        "toelichting": "Hét lied voor deze zondag; het beschrijft de doop van Jezus in de Jordaan (Matteüs 3) en de stem uit de hemel.",
+        "suggestie_gebruik": "Lied na de evangelielezing"
+      },
+      {
+        "nummer": "686",
+        "titel": "De Geest des Heren heeft",
+        "type_match": "Schriftlezing",
+        "karakter": "Inspirerend getuigenis",
+        "toelichting": "Verwijst naar de zalving met de Geest, wat de verbinding legt tussen de Gezalfde in Handelingen en de doop in Matteüs.",
+        "suggestie_gebruik": "Antwoordlied na de epistellezing"
+      },
+      {
+        "nummer": "857",
+        "titel": "Jij zoekt mij: mens waar ben je?",
+        "type_match": "Contextueel",
+        "karakter": "Ingetogen klaaglied",
+        "toelichting": "Sluit aan bij de zoektocht naar identiteit en de kwetsbaarheid van de mens, passend bij de actualiteit van lijden en kou (Gaza).",
+        "suggestie_gebruik": "Gebedsbevestiging of lied bij de voorbeden"
+      },
+      {
+        "nummer": "597",
+        "titel": "Wees hier aanwezig, licht in ons midden",
+        "type_match": "Seizoen",
+        "karakter": "Sfeervol gebed",
+        "toelichting": "Een klassiek Epifanie-lied dat vraagt om de aanwezigheid van het Licht, passend bij de verschijning van de Zoon.",
+        "suggestie_gebruik": "Lied bij de opening of kyrie-gebed"
+      },
+      {
+        "nummer": "353",
+        "titel": "Nu heeft het oude leven afgedaan!",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijk belijdenislied",
+        "toelichting": "Thematiseert de wedergeboorte door water en Geest, wat de brug slaat van Jezus' doop naar onze eigen christelijke identiteit.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "676",
+        "titel": "De wind, wij zien hem niet",
+        "type_match": "Schriftlezing",
+        "karakter": "Lichtvoetig lied over de Geest",
+        "toelichting": "Minder intens (6/10), goed bruikbaar als er kinderen in de dienst zijn of voor een moment van verstilling rond de Geest.",
+        "suggestie_gebruik": "Lied bij het kindermoment"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "581",
+        "titel": "Want het geknakte riet",
+        "type_match": "Schriftlezing",
+        "karakter": "Troostrijk belofte-lied",
+        "toelichting": "Directe verwijzing naar Jesaja 42:3. Zeer relevant voor de Boskoopse context (kwekers weten wat geknakt riet is) en de wereldactualiteit.",
+        "suggestie_gebruik": "Antwoordlied na de eerste lezing"
+      },
+      {
+        "nummer": "502",
+        "titel": "In het water van de doop",
+        "type_match": "Schriftlezing",
+        "karakter": "Helder dooplied",
+        "toelichting": "Focus op de wedergeboorte uit water en Geest, sluit naadloos aan bij de evangelielezing.",
+        "suggestie_gebruik": "Lied na de preek"
+      },
+      {
+        "nummer": "679",
+        "titel": "Heer, uw licht en uw liefde schijnen",
+        "type_match": "Seizoen",
+        "karakter": "Krachtig loflied",
+        "toelichting": "Populair lied dat de Epifanie-thematiek (Licht) combineert met de roep om de Geest (stort uw vuur).",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "432",
+        "titel": "O laat Gods Zoon je thans omhullen",
+        "type_match": "Schriftlezing",
+        "karakter": "Uitnodigend lied",
+        "toelichting": "Gebruikt de beeldspraak van de duif (Matteüs 3:16) en de omhullende liefde van de Zoon.",
+        "suggestie_gebruik": "Lied voor de voorbeden"
+      },
+      {
+        "nummer": "460",
+        "titel": "Hoe wonderlijk mooi is uw eeuwige naam",
+        "type_match": "Thematisch",
+        "karakter": "Aanbiddingslied",
+        "toelichting": "Focus op de identiteit van God ('Ik ben'), wat aansluit bij de 'identificatie' van Jezus als Gods Zoon.",
+        "suggestie_gebruik": "Lied na de geloofsbelijdenis"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "40",
+        "titel": "Zingt, zingt een nieuw gezang de HEERE",
+        "type_match": "Schriftlezing",
+        "karakter": "Statig loflied",
+        "toelichting": "Berijming van Jesaja 42:10-12. Geeft een bijbelse onderbouwing aan de lofprijzing.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "139",
+        "titel": "Kom, Heil’ge Geest, Gij vogel Gods",
+        "type_match": "Schriftlezing",
+        "karakter": "Poëtisch gebed",
+        "toelichting": "Prachtige beeldspraak van de Geest als vogel (duif), direct verbonden met de doop van Jezus.",
+        "suggestie_gebruik": "Gebed om de verlichting met de Heilige Geest"
+      },
+      {
+        "nummer": "358",
+        "titel": "In het water van de doop",
+        "type_match": "Schriftlezing",
+        "karakter": "Toegankelijk dooplied",
+        "toelichting": "Eenvoudig en krachtig lied over de betekenis van de doop in relatie tot Johannes 3.",
+        "suggestie_gebruik": "Lied bij een eventuele doopbediening of herinnering"
+      },
+      {
+        "nummer": "305",
+        "titel": "Geprezen zij de Here",
+        "type_match": "Schriftlezing",
+        "karakter": "Danklied",
+        "toelichting": "Bevat de tekst over het geknakte riet (Jesaja 42), wat hoop biedt in tijden van kwetsbaarheid.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "187",
+        "titel": "Heer, machtig God, ik loof U",
+        "type_match": "Thematisch",
+        "karakter": "Loflied",
+        "toelichting": "Benadrukt de liefde van God voor de wereld (Johannes 3:16), de motivatie achter Jezus' komst naar de Jordaan.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "312",
+        "titel": "O God, die naar uw strenge wet",
+        "type_match": "Schriftlezing",
+        "karakter": "Historisch-liturgisch lied",
+        "toelichting": "Beschrijft expliciet de doop in de Jordaan en de gehoorzaamheid van Jezus aan de wet van God.",
+        "suggestie_gebruik": "Lied na de evangelielezing"
+      },
+      {
+        "nummer": "25",
+        "titel": "O volk, verdwaald, verloren",
+        "type_match": "Schriftlezing",
+        "karakter": "Heilsbelofte",
+        "toelichting": "Sluit aan bij de profetie van Jesaja 42 over de Knecht die komt om de blinden de ogen te openen.",
+        "suggestie_gebruik": "Lied na de eerste lezing"
+      },
+      {
+        "nummer": "476",
+        "titel": "Wij loven U, o God, belijden U als Heer",
+        "type_match": "Schriftlezing",
+        "karakter": "Hymne (Te Deum)",
+        "toelichting": "Match met Handelingen 10:42; belijdt Christus als de door God aangestelde Rechter en Heer.",
+        "suggestie_gebruik": "Lied na de epistellezing"
+      },
+      {
+        "nummer": "385",
+        "titel": "Heil’ge Geest, die kwam van boven",
+        "type_match": "Schriftlezing",
+        "karakter": "Gebed om de Geest",
+        "toelichting": "Vraagt om de inwoning van de Geest, die bij de doop op Jezus neerdaalde en nu in de gelovigen woont.",
+        "suggestie_gebruik": "Lied voor de preek"
+      },
+      {
+        "nummer": "113",
+        "titel": "O kom, o kom, Immanuël",
+        "type_match": "Seizoen",
+        "karakter": "Verwachtingsvol lied",
+        "toelichting": "Hoewel vaak in Advent gezongen, past de roep naar 'Adonai' (Exodus 3) bij de Epifanie-verschijning van de Heer.",
+        "suggestie_gebruik": "Lied bij de opening"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "100",
+        "titel": "Juich, alle volken, prijs de HEER!",
+        "type_match": "Thematisch",
+        "karakter": "Uitbundige lofpsalm",
+        "toelichting": "Past bij de vreugde van de erkenning van Jezus als de geliefde Zoon.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "103",
+        "titel": "Zegen, mijn ziel, de grote naam des HEREN",
+        "type_match": "Thematisch",
+        "karakter": "Lofpsalm over Gods barmhartigheid",
+        "toelichting": "De focus op Gods vaderlijke liefde sluit aan bij de stem uit de hemel: 'Dit is mijn geliefde Zoon'.",
+        "suggestie_gebruik": "Antwoordlied of Slotlied"
+      },
+      {
+        "nummer": "101",
+        "titel": "Ik zing, HEER, om uw trouw en recht te eren",
+        "type_match": "Thematisch",
+        "karakter": "Wijsheidspsalm",
+        "toelichting": "Reflecteert op 'recht en trouw', kernthema's in de beschrijving van de Dienaar in Jesaja 42.",
+        "suggestie_gebruik": "Lied na de wet of leefregel"
+      }
+    ]
   },
   "09_kunst_cultuur": {
     "moderne_hedendaagse_kunst": [

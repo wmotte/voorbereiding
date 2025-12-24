@@ -3,40 +3,39 @@
     "plaatsnaam": "Waddinxveen",
     "gemeente": "De Brugkerk (wijk Oost)",
     "datum": "4 januari 2026",
-    "website": "https://hgpknwaddinxveen.nl/brugkerk/",
     "extra_context": "",
     "adres": "Kerkweg-Oost 232, 2741 HA Waddinxveen",
-    "gebouw": "Brugkerk"
+    "website": "https://hgpknwaddinxveen.nl/brugkerk/"
   },
   "01_zondag_kerkelijk_jaar": {
     "positie_kerkelijk_jaar": {
       "zondag_naam": "Openbaring van de Heer (Epifanie)",
       "liturgische_periode": "Kersttijd",
-      "weken_tot_hoofdfeest": "12 dagen na Kerstmis; afsluiting van de twaalf heilige nachten",
+      "weken_tot_hoofdfeest": "Hoofdfeest van de verschijning",
       "leesrooster_jaar": "A",
       "dominant_evangelie": "Matteüs"
     },
     "traditionele_naam": {
       "latijnse_naam": "Epiphania Domini",
-      "oorsprong": "Afgeleid van het Griekse 'epiphaneia', wat verschijning of manifestatie betekent. De feestdag herdenkt de bekendmaking van Christus aan de wereld.",
-      "nederlandse_vertaling": "Verschijning des Heren",
+      "oorsprong": "Afgeleid van het Griekse 'epiphaneia', wat verschijning of manifestatie betekent. Het verwijst naar het bekend worden van Christus aan de wereld (vertegenwoordigd door de wijzen).",
+      "nederlandse_vertaling": "Verschijning van de Heer",
       "volksnamen": [
         "Driekoningen",
-        "Sterrenfeest"
+        "Sterrezondag"
       ]
     },
     "bijzondere_zondag_pkn": {
       "is_bijzonder": true,
-      "naam": "Zendingszondag",
-      "toelichting": "Binnen de Protestantse Kerk in Nederland wordt Epifanie traditioneel geassocieerd met de zending (Kerk in Actie), omdat het feest de openbaring van Christus aan de heidenvolken (gesymboliseerd door de wijzen uit het Oosten) centraal stelt."
+      "naam": "Openbaring van de Heer",
+      "toelichting": "Hoewel 6 januari de officiële datum is, viert de PKN dit feest op de zondag die valt tussen 2 en 8 januari. Het markeert de overgang van de beslotenheid van de kerststal naar de openbaarheid van Christus' missie voor alle volken."
     },
     "liturgische_kleur": {
       "kleur": "wit",
-      "symboliek": "Wit is de kleur van de Christusfeesten, staand voor licht, vreugde, reinheid en de goddelijke heerlijkheid.",
+      "symboliek": "Feest, licht, reinheid en de nabijheid van God. Wit wordt gebruikt voor alle Christusfeesten.",
       "praktische_suggesties": [
         "Wit antependium en witte stola.",
-        "Gebruik van veel kaarsen om het thema 'Licht der wereld' te benadrukken.",
-        "Bloemschikking met witte bloemen (bijv. lelies of witte rozen) en goudkleurige accenten verwijzend naar de geschenken van de wijzen."
+        "Bloemschikking met veel wit en goudaccenten (verwijzend naar de geschenken).",
+        "Gebruik van extra kaarsen of een centrale 'ster' in de schikking."
       ]
     },
     "lezingen": {
@@ -45,172 +44,93 @@
         "boek": "Jesaja",
         "hoofdstuk": 60,
         "verzen": "1-6",
-        "thema": "De komst van de heerlijkheid van de Heer en de volken die naar het licht trekken."
+        "thema": "De dageraad van Jeruzalem en de volken die naar het licht trekken."
       },
       "epistel": {
         "referentie": "Efeziërs 3,2-3a.5-6",
         "boek": "Efeziërs",
         "hoofdstuk": 3,
         "verzen": "2-3a.5-6",
-        "thema": "Het geheimenis dat ook de heidenen mede-erfgenamen zijn van de belofte in Christus."
+        "thema": "Het geheimenis dat ook de heidenen mede-erfgenamen zijn in Christus."
       },
       "evangelie": {
         "referentie": "Matteüs 2,1-12",
         "boek": "Matteüs",
         "hoofdstuk": 2,
         "verzen": "1-12",
-        "thema": "Het bezoek van de wijzen uit het Oosten aan het kind Jezus in Betlehem."
+        "thema": "Het bezoek van de wijzen uit het Oosten aan het kind in Bethlehem."
       },
       "psalm": {
         "referentie": "Psalm 72",
         "nummer": 72,
-        "verzen": "1-2, 10-11, 12-13",
-        "antifoon": "Alle volken zullen U dienen, Heer."
+        "verzen": "1-11",
+        "antifoon": "Alle volken zullen U dienen, Heer, en alle koningen zullen zich voor U buigen."
       },
       "alternatieve_lezingen": [
         {
           "referentie": "Titus 2,11-14",
-          "reden": "Focus op de verschijning van de genade van God voor alle mensen."
+          "reden": "Focus op de genade van God die voor alle mensen is verschenen."
         }
       ],
-      "thematische_samenhang": "De rode draad is de universaliteit van het heil. Het licht van God beperkt zich niet tot Israël, maar schijnt voor alle volken. De wijzen (evangelie) vervullen de profetie van Jesaja (eerste lezing) door goud en wierook te brengen, terwijl Paulus (epistel) de theologische betekenis hiervan duidt: de grenzen tussen volken zijn in Christus opgeheven."
+      "thematische_samenhang": "De rode draad is de universaliteit van Gods heil. Het licht dat in Bethlehem is opgegaan, is niet alleen voor Israël, maar voor alle volken (de wijzen, de koningen in de psalm, de heidenen in Efeziërs)."
     },
     "thematiek": {
-      "centraal_thema": "Licht voor de wereld: De universele koning.",
+      "centraal_thema": "Licht voor de wereld: De grenzeloze openbaring van God.",
       "stemming": "vreugde",
-      "karakter_zondag": "Feestelijk, grensoverschrijdend en hoopvol. Het is de voltooiing van de kersttijd waarin het kind van Betlehem herkend wordt als Heer van de gehele schepping.",
-      "rode_draad_liturgisch_jaar": "Vormt de brug tussen de geboorte van Christus (Kerst) en zijn publieke optreden (doop in de Jordaan, volgende zondag).",
+      "karakter_zondag": "Feestelijk, weids en missionair. Er is een gevoel van ontdekking en verwondering over de reikwijdte van Gods plan.",
+      "rode_draad_liturgisch_jaar": "Sluit de kersttijd af en bereidt voor op de Epifaniëntijd, waarin de daden en woorden van Jezus centraal staan (beginnend bij de Doop van de Heer op de volgende zondag).",
       "centrale_geloofsvragen": [
-        "Wie mag er delen in Gods licht?",
-        "Wat betekent het om 'wijze' te zijn in de navolging van Christus?",
-        "Hoe herkennen wij de tekenen van Gods aanwezigheid in de wereld van vandaag?"
+        "Wie mag er delen in het licht van Christus?",
+        "Wat betekent het dat God zich laat vinden door 'buitenstaanders'?",
+        "Welke 'geschenken' brengen wij de Koning vandaag?"
       ]
     },
     "historische_achtergrond": {
-      "oorsprong_vroege_kerk": "Epifanie is een van de oudste christelijke feesten, oorspronkelijk uit het Oosten (4e eeuw), waar het de geboorte, de doop en het eerste wonder (Kana) van Jezus tegelijk vierde.",
-      "hervormde_traditie": "In de hervormde traditie lag de nadruk sterk op de schriftlezing van de wijzen en de soevereiniteit van God over de volken.",
-      "gereformeerde_traditie": "Focus op de vervulling van de oudtestamentische beloften en de verbondsmatige uitbreiding naar de heidenen.",
-      "lutherse_traditie": "Sterke nadruk op Christus als 'Lumen Gentium' (Licht der volken), vaak gevierd met rijke koraalmuziek.",
-      "oecumenische_dimensie": "Epifanie is een verbindend feest tussen Oost en West, hoewel de nadruk in het Oosten meer ligt op de doop van de Heer (Theofanie)."
-    },
-    "liedsuggesties": {
-      "_verificatie_opmerking": "Alle liederen zijn geverifieerd in het Liedboek (2013).",
-      "opening_intocht": [
-        {
-          "nummer": "518",
-          "titel": "Hoe helder staat de morgenster",
-          "eerste_regel": "Hoe helder staat de morgenster",
-          "toelichting": "Klassiek Epifanie-lied dat Christus bezingt als de opgaande ster."
-        },
-        {
-          "nummer": "72",
-          "titel": "Geef, Heer, de koning uwe rechten",
-          "eerste_regel": "Geef, Heer, de koning uwe rechten",
-          "toelichting": "De psalm van de zondag, profetisch over de koningen die geschenken brengen."
-        }
-      ],
-      "kyrie_gloria": [
-        {
-          "nummer": "299e",
-          "titel": "Heer, ontferm U",
-          "eerste_regel": "Heer, ontferm U",
-          "toelichting": "Kyrie-litanie (Iona), passend bij de start van de dienst."
-        },
-        {
-          "nummer": "305",
-          "titel": "Alle eer en alle glorie",
-          "eerste_regel": "Alle eer en alle glorie",
-          "toelichting": "Feestelijk Gloria dat de universele heerschappij van God bezingt."
-        }
-      ],
-      "bij_lezingen": [
-        {
-          "nummer": "520",
-          "titel": "De wijzen, de wijzen, zij kwamen van ver",
-          "eerste_regel": "De wijzen, de wijzen, zij kwamen van ver",
-          "toelichting": "Directe vertolking van het evangelie over de tocht van de wijzen."
-        },
-        {
-          "nummer": "519",
-          "titel": "Gij die de ster van David zijt",
-          "eerste_regel": "Gij die de ster van David zijt",
-          "toelichting": "Verbindt de oudtestamentische belofte (David) met het licht van Epifanie."
-        }
-      ],
-      "credo": [
-        {
-          "nummer": "340b",
-          "titel": "Ik geloof in God de Vader",
-          "eerste_regel": "Ik geloof in God de Vader",
-          "toelichting": "De apostolische geloofsbelijdenis (gesproken/gebeden versie)."
-        }
-      ],
-      "collecte_gaven": [
-        {
-          "nummer": "365",
-          "titel": "Wij dragen onze gaven",
-          "eerste_regel": "Wij dragen onze gaven",
-          "toelichting": "Passend bij het thema van de wijzen die hun gaven aanbieden."
-        }
-      ],
-      "zending_zegen": [
-        {
-          "nummer": "425",
-          "titel": "Vervuld van uw zegen",
-          "eerste_regel": "Vervuld van uw zegen gaan wij onze wegen",
-          "toelichting": "Zendingslied dat oproept om het licht van de zegen verder te dragen."
-        },
-        {
-          "nummer": "416",
-          "titel": "Ga met God en Hij zal met je zijn",
-          "eerste_regel": "Ga met God en Hij zal met je zijn",
-          "toelichting": "Bemoediging voor de weg die de gemeente buiten de kerkgebouwen gaat."
-        }
-      ]
+      "oorsprong_vroege_kerk": "Epifanie is een van de oudste christelijke feesten (4e eeuw), oorspronkelijk in het Oosten belangrijker dan Kerst. Het vierde de geboorte, de doop en het eerste wonder (Kana) als één manifestatie van God.",
+      "hervormde_traditie": "Vaak soberder gevierd, met nadruk op de Schriftlezing over de wijzen en de afwijzing van 'bijgelovige' elementen rond Driekoningen.",
+      "gereformeerde_traditie": "Focus op de soevereiniteit van God die de wijzen leidt door de ster en de vervulling van de oudtestamentische profetieën.",
+      "lutherse_traditie": "Sterke nadruk op de 'Licht'-symboliek en de verbinding tussen Woord en Ster.",
+      "oecumenische_dimensie": "Gezamenlijke viering van de eenheid van de kerk uit alle volken en talen."
     },
     "praktische_handvatten": {
-      "liturgische_orde_suggestie": "Een feestelijke orde met ruimte voor een uitgebreide lofprijzing (Gloria) en een moment van aanbidding rond de kribbe/het licht.",
+      "liturgische_orde_suggestie": "Feestelijke orde met een uitgebreid Gloria. Mogelijkheid voor een drempelgebed dat focust op het 'komen uit de duisternis naar het licht'.",
       "aanpassingen_periode": [
         {
           "element": "Gloria",
           "aanpassing": "Uitbundig zingen",
-          "reden": "Het is een Christusfeest binnen de kersttijd."
+          "reden": "Het is een hoogfeest van de Heer."
         },
         {
-          "element": "Halleluja",
-          "aanpassing": "Vóór het evangelie",
-          "reden": "Vreugde om de openbaring van het Woord."
+          "element": "Geloofsbelijdenis",
+          "aanpassing": "Gezongen of gesproken na de verkondiging",
+          "reden": "Beantwoording van de openbaring."
         }
       ],
       "gebedsmotieven": [
-        "Gebed voor de wereldwijde kerk en de zending.",
-        "Dankzegging voor het licht dat in onze eigen duisternis schijnt.",
-        "Voorbede voor hen die op zoek zijn naar waarheid en richting (zoals de wijzen)."
+        "Gebed voor de wereldwijde kerk en oecumenische verbondenheid.",
+        "Voorbede voor mensen die nog in duisternis of onderdrukking leven.",
+        "Dankzegging voor het licht dat in ons eigen leven is opgegaan."
       ],
       "kindernevendienst": {
         "thema": "De ster achterna",
         "suggesties": [
-          "Het maken van een lampion of ster.",
-          "Een speurtocht door de kerk op zoek naar 'het licht'.",
-          "Gesprek over wat voor cadeau de kinderen aan Jezus zouden willen geven."
+          "Maak een grote ster die de kinderen door de kerk naar de stal leidt.",
+          "Gesprek over wat een 'koninklijk' geschenk is (niet alleen goud, maar ook aandacht of liefde)."
         ]
       },
       "visuele_elementen": [
-        "Projectie van een heldere ster of een afbeelding van de wijzen (bijv. van Rubens of een icoon).",
-        "Drie grote kaarsen bij de kribbe die de drie wijzen/geschenken symboliseren.",
-        "Goudkleurige doeken over de liturgische tafel."
+        "Projectie van een sterrenhemel of de 'Aanbidding der Wijzen' (bijv. Rubens of Rembrandt).",
+        "Drie vaten of kistjes bij de tafel als symbool voor de geschenken.",
+        "Een brandende paaskaars die centraal staat als symbool van het Licht."
       ]
     },
     "dagelijks_leesrooster": {
       "week_voorafgaand": [
-        "29 dec: 1 Johannes 2,3-11 (Wandelen in het licht)",
-        "30 dec: 1 Johannes 2,12-17 (De world gaat voorbij)",
-        "31 dec: Johannes 1,1-18 (Het Woord is vlees geworden)",
-        "1 jan: Numeri 6,22-27 (De priesterzegen bij de naamgeving)",
-        "2 jan: Johannes 1,19-28 (Getuigenis van Johannes de Doper)",
-        "3 jan: Johannes 1,29-34 (Zie het Lam Gods)"
+        "1 jan: Psalm 96 (Nieuwjaar)",
+        "2 jan: Numeri 22,41-23,12",
+        "3 jan: Numeri 23,13-26"
       ],
-      "verbinding_zondag": "De weeklezingen focussen op de identiteit van Jezus als het Licht en het Woord. De zondag van Epifanie vormt de climax waarbij dit Licht niet langer verborgen blijft in de intimiteit van de stal, maar publiekelijk wordt geopenbaard aan de wereld."
+      "verbinding_zondag": "De lezingen uit Numeri over Bileam (de ziener uit het Oosten die een ster ziet opkomen uit Jakob) vormen de profetische achtergrond voor de wijzen uit het Oosten in het evangelie."
     }
   },
   "02_sociaal_maatschappelijke_context": {
@@ -1088,202 +1008,423 @@
       ]
     }
   },
-  "08_exegese": {
+  "08_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 168,
+      "contextuele_reflectie": "De liederen over het 'Licht voor de wereld' vormen een scherp contrast met de 'humanitaire catastrofe' in Soedan en Gaza. In de liturgie kan dit licht gethematiseerd worden als een hoopvol protest tegen de duisternis van geweld en honger. Voor de Brugkerk in Waddinxveen, die een brug wil slaan naar de moderne tijd en de nieuwe wijk Triangel, bieden de zendingsliederen (zoals 'Jezus zal heersen') een krachtige verbinding tussen de confessionele traditie en de universele roeping van de kerk.",
+      "korte_observatie": "Er is een zeer rijke oogst aan liederen die direct aansluiten bij de Epifanie-teksten (Jesaja 60 en Matteüs 2), variërend van klassieke gezangen tot meer eigentijdse liederen over gerechtigheid en wereldwijde zending."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "175",
+        "titel": "Wij hebben een sterke stad",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60,1-6",
+        "toelichting": "Sluit direct aan bij de profetie van Jesaja over de heerlijkheid van de stad Gods waar de volken naar toe trekken.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "284",
+        "titel": "Christus, Gij zijt het licht in ons leven!",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60:19",
+        "toelichting": "Een meditatief lied dat Christus als het eeuwige licht bezingt, passend bij de thematiek van Epifanie.",
+        "suggestie_gebruik": "Gebed om verlichting / Lichtlied"
+      },
+      {
+        "nummer": "520",
+        "titel": "De wijzen, de wijzen",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,1-12",
+        "toelichting": "Vertelt het verhaal van de wijzen uit het oosten op een toegankelijke wijze.",
+        "suggestie_gebruik": "Lied na de evangelielezing"
+      },
+      {
+        "nummer": "871",
+        "titel": "Jezus zal heersen waar de zon",
+        "type_match": "Schriftlezing",
+        "match_detail": "Psalm 72 / Matteüs 2",
+        "toelichting": "Verwoordt de universaliteit van Christus' koningschap over alle volken en landen.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "1005",
+        "titel": "Longing for light, we wait in darkness",
+        "type_match": "Contextueel",
+        "match_detail": "Thematiek Licht vs. Wereldnieuws",
+        "toelichting": "Resoneert sterk met de huidige wereldwijde duisternis (Soedan/Gaza) en het verlangen naar Gods licht.",
+        "suggestie_gebruik": "Antwoordlied na de preek"
+      },
+      {
+        "nummer": "546",
+        "titel": "Wees blijde nu, in ’t midden van het lijden",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60",
+        "toelichting": "Legt de verbinding tussen de belofte van licht en de realiteit van lijden.",
+        "suggestie_gebruik": "Lied van de week"
+      },
+      {
+        "nummer": "596",
+        "titel": "Ontwaak, gij die slaapt",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60:1-3",
+        "toelichting": "Een krachtige oproep om op te staan in het licht van God dat over ons opgaat.",
+        "suggestie_gebruik": "Openingslied"
+      },
+      {
+        "nummer": "810",
+        "titel": "Ga: tot de einden der aarde",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 28:19 / Universele zending",
+        "toelichting": "Past bij de Epifanie-gedachte dat het heil voor alle volken bestemd is.",
+        "suggestie_gebruik": "Zendingslied / Slotlied"
+      },
+      {
+        "nummer": "496",
+        "titel": "Een ster ging op uit Israël",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2,1-12",
+        "toelichting": "Klassiek Epifanie-lied over de ster die de weg wijst naar de Heiland.",
+        "suggestie_gebruik": "Lied na de lezing"
+      },
+      {
+        "nummer": "159c",
+        "titel": "Laat nu, Heer, uw dienstknecht vrijuit gaan",
+        "type_match": "Schriftlezing",
+        "match_detail": "Lukas 2:29-32 (Nunc Dimittis)",
+        "toelichting": "Bezingt Christus als het licht dat straalt voor de heidenen (Efeziërs 3).",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "151",
+        "titel": "There’s a star in the East on Christmas morn",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2:2",
+        "toelichting": "Een levendige spiritual over de ster en de wijzen.",
+        "suggestie_gebruik": "Lied na de lezing"
+      },
+      {
+        "nummer": "267",
+        "titel": "’Jeruzalem,’ zo zegt de Heer",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60:1-22",
+        "toelichting": "Bezingt de heerlijkheid van het nieuwe Jeruzalem waar het licht nooit dooft.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "703",
+        "titel": "’Ik was hongerig en jij gaf Mij te eten.'",
+        "type_match": "Contextueel",
+        "match_detail": "Matteüs 25 / Humanitaire crisis",
+        "toelichting": "Geeft een diaconale invulling aan de universele openbaring van Christus in de lijdende mens.",
+        "suggestie_gebruik": "Lied bij de collecte / Diaconaal moment"
+      },
+      {
+        "nummer": "121",
+        "titel": "Nu gaan de bloemen nog dood",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60:19",
+        "toelichting": "Hoopvol lied over de nieuwe schepping waar God zelf het licht zal zijn.",
+        "suggestie_gebruik": "Na de preek"
+      },
+      {
+        "nummer": "728",
+        "titel": "Straks als er een nieuwe dag begint",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60:1-3",
+        "toelichting": "Verwoordt de overwinning van het licht op de duisternis.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "406",
+        "titel": "Ga je mee op zoek",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2:1-12",
+        "toelichting": "Een lied dat de zoektocht van de wijzen naar de koning verwoordt.",
+        "suggestie_gebruik": "Kinderlied / Moment met de kinderen"
+      },
+      {
+        "nummer": "378",
+        "titel": "De Heer woont in een stralend licht",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60:19",
+        "toelichting": "Bezingt de majesteit en het licht van God.",
+        "suggestie_gebruik": "Openingslied"
+      },
+      {
+        "nummer": "79",
+        "titel": "Go, tell it on the mountain",
+        "type_match": "Schriftlezing",
+        "match_detail": "Lukas 2 / Epifanie",
+        "toelichting": "Oproep om de geboorte van de Koning overal bekend te maken.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "106",
+        "titel": "Zo laat Gij, Heer, uw knecht",
+        "type_match": "Schriftlezing",
+        "match_detail": "Lukas 2:29-32",
+        "toelichting": "De lofzang van Simeon over het licht voor alle volken.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "537",
+        "titel": "Kijk daar een metselaar",
+        "type_match": "Schriftlezing",
+        "match_detail": "Efeziërs 2:20-22 / Efeziërs 3",
+        "toelichting": "Verwijst naar de opbouw van de gemeente uit alle volken op het fundament van Christus.",
+        "suggestie_gebruik": "Na de preek"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "571",
+        "titel": "De wijzen, de wijzen",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 2:1-12",
+        "toelichting": "Directe weergave van de evangelielezing over de wijzen uit het oosten.",
+        "suggestie_gebruik": "Lied na de lezing"
+      },
+      {
+        "nummer": "18",
+        "titel": "Er is uit ’s werelds duistere wolken",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60:1-3",
+        "toelichting": "Bezingt het licht dat door de duisternis van de wereld breekt.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "240",
+        "titel": "Jezus zal heersen waar de zon",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 21:16 / Psalm 72",
+        "toelichting": "Een krachtig lied over de wereldwijde heerschappij van Christus.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "71",
+        "titel": "In Christus brengt God ons terecht",
+        "type_match": "Schriftlezing",
+        "match_detail": "Efeziërs 2:14 / Efeziërs 3",
+        "toelichting": "Thematiseert de eenheid tussen Jood en heiden in Christus, de kern van de epistellezing.",
+        "suggestie_gebruik": "Na de preek"
+      },
+      {
+        "nummer": "143",
+        "titel": "Hef op uw hoofden, poorten wijd!",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60:1",
+        "toelichting": "Oproep om de Koning van de heerlijkheid te ontvangen.",
+        "suggestie_gebruik": "Openingslied"
+      },
+      {
+        "nummer": "350",
+        "titel": "Door goede machten trouw en stil omgeven",
+        "type_match": "Contextueel",
+        "match_detail": "Troost in crisistijd",
+        "toelichting": "Biedt pastorale troost in een onzekere wereld, passend bij de actuele wereldgebeurtenissen.",
+        "suggestie_gebruik": "Gebedslied"
+      },
+      {
+        "nummer": "269",
+        "titel": "Roep uit aan alle stranden",
+        "type_match": "Schriftlezing",
+        "match_detail": "Matteüs 28:19 / Universeel heil",
+        "toelichting": "Zendingslied dat de universaliteit van het evangelie benadrukt.",
+        "suggestie_gebruik": "Zendingslied"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "87",
+        "titel": "Jeruzalem, de Godsstad hier beneden",
+        "type_match": "Schriftlezing",
+        "match_detail": "Jesaja 60:1-7",
+        "toelichting": "Psalm over de volken die in Jeruzalem worden ingeschreven als burgers.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "100",
+        "titel": "Juich, alle volken, prijs de HEER!",
+        "type_match": "Thematisch",
+        "match_detail": "Universele lofprijs",
+        "toelichting": "Oproep aan alle volken om God te eren, passend bij de Epifanie-gedachte.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "47",
+        "titel": "Juich, o volken, juich, handklap en betuig",
+        "type_match": "Thematisch",
+        "match_detail": "Koningschap over de volken",
+        "toelichting": "Bezingt God als Koning over de hele aarde en alle natiën.",
+        "suggestie_gebruik": "Loflied"
+      }
+    ]
+  },
+  "08a_exegese": {
     "per_lezing": [
       {
         "referentie": "Jesaja 60,1-6",
         "afbakening_vertaling": {
           "vertaalvergelijking": [
             {
-              "vertaling": "NBV21",
-              "significante_verschillen": "De NBV21 kiest voor een actieve, bijna imperatieve toon: 'Sta op en schitter'. Dit suggereert een eigen activiteit van de aangesprokene. De focus ligt op de uiterlijke manifestatie van het licht."
-            },
-            {
-              "vertaling": "Naardense Bijbel",
-              "significante_verschillen": "De Naardense Bijbel vertaalt 'word verlicht' (nif'al van 'or), wat de passieve of reflexieve kant benadrukt: het licht wordt ontvangen voordat het kan worden uitgestraald. Ook vertaalt de NB 'glorie' waar de NBV21 'luister' gebruikt, wat dichter bij het Hebreeuwse 'kabod' (gewicht, eer) blijft."
+              "vertaling": "NBV21 vs. Naardense Bijbel (NB)",
+              "significante_verschillen": "In vers 1 vertaalt de NBV21 'Sta op en schitter', wat een actieve handeling suggereert. De NB is letterlijker met 'Sta op, word verlicht', wat de passieve ontvangst van het licht benadrukt (het Hebreeuwse 'ori' kan beide impliceren, maar de context wijst op reflectie). In vers 5 vertaalt NBV21 'De schatten van de zee', terwijl NB kiest voor 'het rumoer van de zee'. De grondtekst 'hamon' betekent menigte of gedruis, wat duidt op de chaos van de volken die nu geordend naar Zion komen."
             }
           ],
-          "werkvertaling_cruciaal": "Vers 1: 'Sta op, word verlicht, want gekomen is je licht; de heerlijkheid (kabod) van de Ene is over jou opgegaan.'\\n\\nVers 2: 'Want zie, de duisternis bedekt de aarde en diepe donkerte de natiën, maar over jou zal de Ene opstralen (zarach) en zijn heerlijkheid zal over jou gezien worden.'"
+          "werkvertaling_cruciaal": "Sta op! Laat licht worden! Want jouw licht is gekomen en de zwaarte (glorie) van de HEER is over jou opgegaan."
         },
         "tekstkritiek": {
-          "relevante_varianten": [
-            {
-              "vers": "1",
-              "variant": "Toevoeging 'Jeruzalem'",
-              "handschriften": "Septuaginta (LXX), Vulgata",
-              "betekenis_impact": "In de Hebreeuwse Masoretische Tekst (MT) ontbreekt de naam Jeruzalem, hoewel de vrouwelijke vormen van de werkwoorden duidelijk naar de stad verwijzen. De LXX expliciteert dit, wat de interpretatie directer richt op de stad als centrum van herstel."
-            }
-          ],
-          "conclusie": "De tekst is tekstkritisch zeer stabiel. De spanning zit vooral in de grammaticale vormen (vrouwelijk enkelvoud) die de stad Sion personifiëren."
+          "relevante_varianten": [],
+          "conclusie": "Geen significante tekstkritische varianten in de BHS die de exegese voor deze perikoop wezenlijk beïnvloeden."
         },
         "woordstudie": [
           {
-            "woord_origineel": "קוּמִי",
-            "transliteratie": "qumi",
-            "vertaling": "sta op",
-            "semantische_range": "Opstaan uit een zittende of liggende positie, maar ook: standhouden, tot stand komen, verrijzen.",
-            "gebruik_elders": "Vaak gebruikt in profetische oproepen tot herstel na een periode van vernedering of rouw (bijv. Jesaja 52,2).",
-            "meer_duidigheid": "Het is een bevel dat tegelijk een belofte inhoudt: de kracht om op te staan wordt door het woord zelf geschonken."
-          },
-          {
-            "woord_origineel": "כָּבוֹד",
+            "woord_origineel": "Hebreeuws: כָּבוֹד (kabod)",
             "transliteratie": "kabod",
-            "vertaling": "heerlijkheid / glorie",
-            "semantische_range": "Gewicht, rijkdom, eer, de tastbare aanwezigheid van God.",
-            "gebruik_elders": "In Exodus 40 de wolk die de tabernakel vult; hier de eschatologische verschijning van God in de stad.",
-            "meer_duidigheid": "Het duidt zowel op Gods wezen als op de uiterlijke pracht die voor de volken zichtbaar wordt."
+            "vertaling": "glorie / heerlijkheid / zwaarte",
+            "semantische_range": "Letterlijk 'gewicht' of 'zwaarte'. Het duidt op de fysieke manifestatie van Gods aanwezigheid (zoals in de tabernakel, Ex. 40). Hier staat het tegenover de 'duisternis' (choshech).",
+            "gebruik_elders": "Exodus 40:34 (vult de tabernakel), Ezechiël 10 (verlaat de tempel). In Jesaja 60 keert deze 'zwaarte' terug naar Zion.",
+            "meerduidigheid": "Het woord impliceert zowel eer/aanzien als een bijna fysieke druk van heiligheid."
           },
           {
-            "woord_origineel": "זָרַח",
-            "transliteratie": "zarach",
-            "vertaling": "opgaan / stralen",
-            "semantische_range": "Het opgaan van de zon, het doorbreken van licht na de nacht.",
-            "gebruik_elders": "Exclusief gebruikt voor hemellichamen en de verschijning van God (Deut. 33,2).",
-            "meer_duidigheid": null
+            "woord_origineel": "Hebreeuws: נָהַר (nahar)",
+            "transliteratie": "nahar",
+            "vertaling": "stralen / vloeien",
+            "semantische_range": "In vers 5 wordt dit werkwoord gebruikt. Het is verwant aan het woord voor 'rivier' (nahar). De betekenis is ambigu: 'je zult stralen' (van vreugde) of 'je zult vloeien' (als een rivier, of de volken vloeien naar je toe).",
+            "gebruik_elders": "Jeremia 51:44 (volken stromen).",
+            "meerduidigheid": "De associatie met water en licht loopt hier door elkaar: een vloed van licht en mensen."
           }
         ],
         "literaire_analyse": {
-          "genre": "profetie",
-          "genre_conventies": "Heilsbelofte (Heilsorakel) binnen Trito-Jesaja. Kenmerkend is de verheven, poëtische taal en het gebruik van licht-donker symboliek om de overgang van ballingschap naar herstel te duiden.",
+          "genre": "profetie / heilsorakel",
+          "genre_conventies": "Gebruik van imperatieven ('Sta op'), contrastrijke beelden (licht/duister), en personificatie van de stad Jeruzalem als vrouw/moeder.",
           "structuur": {
-            "opbouw": "De perikoop kent een beweging van binnen naar buiten. 1-2: De oproep aan Sion en de bron van het licht (God). 3: De reactie van de volken. 4: De terugkeer van de eigen kinderen. 5-6: De materiële en spirituele overvloed die naar de stad stroomt.",
+            "opbouw": "Vers 1-3: De theofanie (Gods licht verschijnt) en de reactie van de kosmos. Vers 4-5: De terugkeer van de ballingen (zonen/dochters). Vers 6: De pelgrimage van de volken met geschenken.",
             "cesuren": [
-              "Vers 1-2: De theofanie (God verschijnt)",
-              "Vers 3-4: De pelgrimage van de volken en kinderen",
-              "Vers 5-6: De rijkdom van de naties"
+              "Na vers 3 (overgang van lichtmetafoor naar concrete terugkeer)."
             ],
-            "centrum": "Vers 3: De universele aantrekkingskracht van het licht van de Ene.",
-            "chiasme_inclusio": "Inclusio van licht: vers 1 begint met 'licht' en vers 3 eindigt met de 'glans van de dageraad'."
+            "centrum": "Vers 3: De universele aantrekkingskracht van het licht ('Volken zullen op weg gaan').",
+            "chiasme_inclusio": "Inclusio van 'licht/glorie' in vers 1 en vers 3."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
-              "Antithese (licht vs. duisternis)",
-              "Personificatie (Sion als moeder die haar kinderen ontvangt)",
-              "Hyperbool (overvloed van kamelen, rijkdom van de zee)"
+              "Contrast (licht vs. duisternis)",
+              "Personificatie (Zion als moeder)",
+              "Hyperbool (overvloed van kamelen)",
+              "Parallellisme (zonen/dochters, goud/wierook)"
             ],
-            "retorische_strategie": "De profeet probeert een moedeloze gemeenschap (post-exilisch Jeruzalem) te heroriënteren door een visioen te schilderen dat de huidige grauwe realiteit overstijgt.",
-            "effect_lezer": "Vreugde, verwondering en een gevoel van kosmische betekenis."
+            "retorische_strategie": "De profeet spreekt een verwoeste, donkere stad toe alsof het herstel al een feit is (profetisch perfectum/futurum). Het doel is troost en mobilisatie.",
+            "effect_lezer": "De lezer wordt opgetild uit de huidige depressieve realiteit (duisternis) naar een visioen van goddelijke overvloed."
           },
           "karakters_plot": {
             "personages": [
-              "De Ene (YHWH)",
-              "Sion (de aangesprokene)",
-              "De volkeren/koningen",
-              "De zonen en dochters"
+              "Zion (aangesprokene, vrouwelijk)",
+              "YHWH (bron van licht)",
+              "De volken/koningen (pelgrims)",
+              "Zonen/dochters (terugkerende ballingen)"
             ],
-            "karakterisering": "Sion is aanvankelijk passief en neergebogen, maar wordt getransformeerd tot een stralend middelpunt. God is de actieve bron van licht.",
-            "verhaallijn": "Van duisternis en eenzaamheid naar licht en wereldwijde gemeenschap.",
-            "verzwegen_gesuggereerd": "De politieke machteloosheid van het historische Jeruzalem wordt verzwegen, maar vormt de noodzakelijke achtergrond voor de radicaliteit van de belofte."
+            "karakterisering": "Zion is passief maar wordt geactiveerd. YHWH is de handelende kracht achter het licht. De volken zijn niet langer vijanden, maar brengers van schatten.",
+            "verhaallijn": "Van duisternis en verlatenheid naar licht en universele erkenning.",
+            "verzwegen_gesuggereerd": "De historische realiteit van de verwoeste tempel wordt verzwegen; het visioen overschrijft de puinhopen."
           }
         },
         "structuralistische_analyse": {
           "schema_constructie": {
             "scenarios": [
               {
-                "scène": "1. De Oproep",
-                "tijd": "Nu (gebeurtenis van het licht)",
-                "plaats": "Sion/Jeruzalem",
-                "actant": "De Ene (YHWH)",
-                "handeling": "doet zijn glorie opgaan over Sion",
+                "scène": "1 (v1-3)",
+                "tijd": "Eschatologisch 'nu' (imperatief)",
+                "plaats": "Zion (centrum)",
+                "actant": "YHWH (impliciet in het licht)",
+                "handeling": "Opgaan / verschijnen",
                 "medewerker": [
-                  "Het licht"
-                ],
-                "opponent": []
-              },
-              {
-                "scène": "2. De Contrastwerking",
-                "tijd": "Gelijktijdig",
-                "plaats": "De aarde / de natiën",
-                "actant": "Duisternis",
-                "handeling": "bedekt de aarde",
-                "medewerker": [
-                  "Donkerheid"
+                  "Licht",
+                  "Glorie"
                 ],
                 "opponent": [
-                  "De Ene"
+                  "Duisternis",
+                  "Donkerte"
                 ]
               },
               {
-                "scène": "3. De Universele Beweging",
-                "tijd": "Toekomst (gevolg)",
-                "plaats": "Wegen naar Sion",
-                "actant": "Volkeren en koningen",
-                "handeling": "gaan op weg naar het licht",
+                "scène": "2 (v4-6)",
+                "tijd": "Toekomst",
+                "plaats": "Rondom Zion / Wegen naar Zion",
+                "actant": "Volken / Koningen / Zonen & Dochters",
+                "handeling": "Komen / Brengen / Verkondigen",
                 "medewerker": [
-                  "De glans van de dageraad"
+                  "Kamelen",
+                  "Schepen (impliciet in 'zee')",
+                  "Goud",
+                  "Wierook"
                 ],
-                "opponent": []
-              },
-              {
-                "scène": "4. De Grote Verzameling",
-                "tijd": "Moment van zien",
-                "plaats": "Rondom Sion",
-                "actant": "Zonen en dochters / rijkdommen",
-                "handeling": "komen aan / stromen toe",
-                "medewerker": [
-                  "De zee",
-                  "Kamelen uit Midjan"
-                ],
-                "opponent": []
+                "opponent": [
+                  "Afstand ('van verre')"
+                ]
               }
             ],
-            "schema_regels": "Het perspectief ligt bij Sion als de ontvanger van Gods handelen."
+            "schema_regels": "Het perspectief ligt bij Zion die wordt aangesproken. YHWH is de initiatiefnemer (Zender), Zion is de Ontvanger."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "Er is een beweging van een statisch 'nu' in Jeruzalem naar een dynamische beweging vanuit de hele wereld (zee, Midjan, Sjeva) naar het centrum toe.",
-            "actanten_analyse": "God is de primaire actant (oorzaak), de volkeren zijn de secundaire actanten (gevolg). Sion is de 'locus' van de handeling.",
-            "handelingen_trajecten": "Traject 1: Verschijnen/Opgaan. Traject 2: Komen/Verzamelen. Traject 3: Stralen/Verkondigen.",
-            "medewerkers_opponenten_analyse": "De duisternis fungeert als opponent die de wereld onzichtbaar maakt, terwijl de heerlijkheid van God de medewerker is die alles aan het licht brengt."
+            "tijd_plaats_patroon": "De tijd verschuift van een urgent imperatief 'nu' naar een voortdurende stroom in de toekomst. De plaats is centripetaal: alles beweegt van de periferie (aarde, zee, Midjan) naar het centrum (Zion).",
+            "actanten_analyse": "YHWH is de primaire oorzaak (het Licht), maar de volken worden actanten in de reactie (zij komen). Zion is subject van verandering (wordt verlicht).",
+            "handelingen_trajecten": "Traject van openbaring (licht opgaan) -> Traject van beweging (volken komen) -> Traject van aanbidding (geschenken/lof).",
+            "medewerkers_opponenten_analyse": "De duisternis is de grote opponent, maar wordt passief overwonnen door de verschijning van de glorie. De rijkdommen (kamelen, goud) fungeren als medewerkers die de status van Zion bevestigen."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De tekst is een kettingreactie: Gods licht veroorzaakt de beweging van de volken, wat weer de vreugde van Sion veroorzaakt.",
-            "temporele_ontwikkeling": "De tekst begint in het voltooide tegenwoordige ('je licht is gekomen') en vloeit over in de onvoltooide toekomst ('zullen op weg gaan').",
-            "literaire_elementen": "Herhaling van 'komen' (v4, v5, v6) benadrukt de onstuitbaarheid van de beweging.",
-            "karakteranalyse": "Sion ontleent haar autoriteit niet aan eigen kracht, maar aan de reflectie van Gods kabod.",
-            "evaluatieve_dimensie": "De tekst eindigt met een evaluatie van de handeling: het doel is de lofprijzing van de Ene (v6)."
+            "structurele_samenhang": "De tekst beweegt van theologie (Gods licht) naar sociologie/economie (volken en handel). De geestelijke realiteit manifesteert zich in materiële overvloed.",
+            "temporele_ontwikkeling": "Oorzaak (Licht komt) -> Gevolg (Volken komen).",
+            "literaire_elementen": "Herhaling van 'komen' (bo') en 'zien' (ra'ah).",
+            "karakteranalyse": "Zion ontleent haar aantrekkingskracht puur aan de glorie van YHWH die op haar rust, niet aan eigen kracht.",
+            "evaluatieve_dimensie": "De tekst evalueert de komst van de volken positief: het is een verrijking, geen bedreiging."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
-              "Transformatie door licht",
-              "Inclusiviteit van de volkeren",
-              "Herstel van eer"
+              "Universeel heil",
+              "Centripetale zending (de wereld komt naar de kerk/Zion)",
+              "Licht in duisternis"
             ],
-            "structurele_patroon": "Centripetale beweging: alles trekt naar het midden.",
-            "theologische_betekenis": "De openbaring van God is niet exclusief voor het eigen heil, maar heeft een missionaire en universele reikwijdte."
+            "structurele_patroon": "Omkering: de volken die vroeger onderdrukkers waren, zijn nu dienaren en aanbidders.",
+            "theologische_betekenis": "Gods aanwezigheid (glorie) is niet exclusief voor Israël om te houden, maar fungeert als een baken dat de hele wereld aantrekt. De scheiding tussen 'binnen' en 'buiten' vervalt in het licht."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "Wanneer God zijn heerlijkheid openbaart in zijn volk, wordt dit een onweerstaanbaar baken voor de hele wereld, wat leidt tot verzoening en overvloed.",
-          "godsbeeld": "God als de opgaande Zon, de bron van alle licht en de rechtmatige ontvanger van de schatten van de aarde.",
-          "mensbeeld_wereld_heil": "De mensheid is zonder God in duisternis gehuld. Heil is het 'gezien worden' in Gods licht en het delen in de gemeenschap rondom de heilige stad.",
+          "centrale_boodschap": "De heerlijkheid van God verschijnt over Zijn volk om de hele wereld aan te trekken tot aanbidding.",
+          "godsbeeld": "God als Lichtbron, soeverein Koning die de geschiedenis stuurt en de volken naar Zich toe trekt.",
+          "mensbeeld_wereld_heil": "De wereld ligt in duisternis, maar is ten diepste op zoek naar het licht. Heil is niet ontsnappen aan de aarde, maar de verheerlijking van het aardse bestaan (goud, kamelen, stad).",
           "bijbels_theologische_lijnen": [
-            "Sionstheologie",
-            "Universele pelgrimage van de volken",
-            "Nieuwe schepping"
+            "Schepping (licht/donker)",
+            "Exodus (glorie in de tabernakel)",
+            "Eschatologie (pelgrimage der volken)"
           ],
-          "plaats_heilsgeschiedenis": "Vormt de brug tussen de terugkeer uit de ballingschap en de eschatologische vervulling in het Nieuwe Jeruzalem (Openbaring 21).",
-          "spanning_andere_teksten": "Spanning met teksten die de afscheiding van de volken benadrukken (bijv. Ezra/Nehemia). Jesaja 60 kiest radicaal voor openheid.",
+          "plaats_heilsgeschiedenis": "Post-exilisch perspectief (Trito-Jesaja), uitziend naar de definitieve vervulling die in het NT op Christus wordt betrokken (Epifanie).",
+          "spanning_andere_teksten": "Spanning met teksten die oordeel over de heidenen aankondigen; hier is sprake van genadige inclusie.",
           "dogmatische_raakvlakken": [
-            "Missio Dei",
-            "Eschatologie"
+            "Ecclesiologie (kerk als licht der wereld)",
+            "Missiologie (centripetale vs. centrifugale zending)"
           ],
-          "theologische_controverses": "De vraag of de rijkdommen letterlijk of symbolisch moeten worden verstaan (welvaartsevangelie vs. spirituele rijkdom)."
+          "theologische_controverses": "De vraag of dit letterlijk over Jeruzalem gaat (zionisme) of geestelijk over de kerk/Christus."
         },
         "zoekmodellen_snoek": {
           "godsbeelden_ot": {
-            "werkwoordelijke_uitspraken": "God 'komt', 'doet opgaan', 'verschijnt'. Hij is de motor achter de geschiedenis.",
-            "metaforische_uitspraken": "God wordt niet direct benoemd met een metafoor als 'koning', maar zijn handelen is dat van een opgaande zon (Licht).",
-            "overstijgende_eigenschappen": "Zijn 'kabod' (heerlijkheid) is overweldigend en vult de aarde.",
-            "toebuigende_eigenschappen": "Hij verschijnt 'over jou' (Sion), wat een diepe betrokkenheid en trouw aan zijn verbondsplaats uitdrukt.",
-            "dominante_categorie": "Overstijgend-toebuigend: de kosmische glorie die zich concentreert op één specifieke, kwetsbare plek.",
-            "spanning": "De spanning tussen de duisternis die de natiën bedekt en de glorie die over Sion straalt.",
-            "relevantie_gemeente": "Voor de Brugkerk: God is niet alleen de verre Almachtige, maar de God die 'over ons' opgaat in de polder van Waddinxveen."
+            "werkwoordelijke_uitspraken": "God 'gaat op' (zarach), God 'verschijnt' (yera'eh). Hij is actief aanwezig.",
+            "metaforische_uitspraken": "God als Licht, God als Zon (impliciet in 'opgaan').",
+            "overstijgende_eigenschappen": "Zijn 'kabod' (glorie) wijst op transcendentie en heiligheid.",
+            "toebuigende_eigenschappen": "Hij verschijnt 'over jou' (Zion), wat duidt op verbondstrouw en nabijheid.",
+            "dominante_categorie": "Metaforisch-Overstijgend (Licht/Glorie), maar met een sterke toebuigende beweging naar Zijn volk.",
+            "spanning": "De spanning tussen de ontoegankelijke heiligheid (duisternis voor de volken) en de genadige openbaring (licht voor Zion).",
+            "relevantie_gemeente": "God is niet een statisch dogma, maar een actieve kracht die doorbreekt in de 'duisternis' van de actualiteit (Waddinxveen/Wereld)."
           },
           "mensbeelden_ot": {
-            "horizontale_as": "De volkeren gaan van 'duisternis' (kwaad/onwetendheid) naar 'lofprijzing' (goed doen).",
-            "verticale_as": "Sion is volledig gericht op God (ontvangen van licht) en wordt daardoor een zegen voor de wereld.",
-            "personages_positie": "Sion staat in het centrum, de volkeren aan de periferie die naar het centrum bewegen.",
-            "karakterontwikkeling": "Sion ontwikkelt zich van een passieve, duistere staat naar een toestand van 'stralen' en 'wijd worden van het hart'."
+            "horizontale_as": "De volken bewegen van 'duisternis' (impliciet kwaad/onwetendheid) naar het brengen van 'goud en wierook' (goed doen/eren).",
+            "verticale_as": "De beweging is sterk gericht op God (de glorie in Zion). De zonen en dochters worden 'gedragen', wat duidt op zorg.",
+            "personages_positie": "Zion staat centraal als ontvanger. De volken zijn actieve zoekers/brengers.",
+            "karakterontwikkeling": "Van vijandige of onwetende naties naar liturgische deelnemers (ze verkondigen de lof van de HEER)."
           },
           "jezusbeelden_nt": null
         }
@@ -1293,211 +1434,408 @@
         "afbakening_vertaling": {
           "vertaalvergelijking": [
             {
-              "vertaling": "NBV21",
-              "significante_verschillen": "Vertaalt 'magoi' als 'magiërs'. Gebruikt 'aanbidden' voor 'proskuneo', wat in onze taal een sterk religieuze, innerlijke lading heeft."
-            },
-            {
-              "vertaling": "Naardense Bijbel",
-              "significante_verschillen": "Vertaalt 'proskuneo' met 'huldigen' of 'hulde bewijzen', wat de politieke dimensie van de kniebuiging voor een koning sterker naar voren brengt. De NB benadrukt ook het 'belanden' van de magiërs, wat een zekere toevalligheid of geleidheid suggereert."
+              "vertaling": "NBV21 vs. Naardense Bijbel (NB)",
+              "significante_verschillen": "NBV21 vertaalt 'magoi' met 'magiërs', NB ook. Oudere vertalingen hebben 'wijzen'. NBV21 vertaalt 'proskuneo' met 'aanbidden', NB met 'huldigen'. 'Huldigen' past beter bij de politieke context van een koning, 'aanbidden' bij de goddelijke status. NBV21 'ster zien opgaan', NB 'in het oosten' (anatole kan beide betekenen, geografisch of astronomisch)."
             }
           ],
-          "werkvertaling_cruciaal": "Vers 2: 'Waar is de koning van de Joden die geboren is? Want wij hebben zijn ster gezien in de opgang (en te anatole) en wij zijn gekomen om hem de kniebuiging te doen (proskunesai autō).'\\n\\nVers 11: 'En binnengekomen in het huis zagen zij het kind met Maria, zijn moeder, en neergevallen brachten zij hem de kniebuiging.'"
+          "werkvertaling_cruciaal": "Toen Jezus geboren was... zie, magiërs uit de opgang (Oosten) arriveerden in Jeruzalem, zeggende: Waar is de geboren Koning der Joden? Want wij hebben zijn ster gezien in de opgang en zijn gekomen om voor hem neer te vallen (hulde te brengen)."
         },
         "tekstkritiek": {
-          "relevante_varianten": [
-            {
-              "vers": "11",
-              "variant": "zagen (eidon) vs. vonden (heuron)",
-              "handschriften": "Codex Sinaiticus, Vaticanus",
-              "betekenis_impact": "De meeste handschriften hebben 'eidon' (zagen). Sommige latere versies hebben 'heuron' (vonden), wat meer nadruk legt op het resultaat van de zoektocht. 'Zien' past echter beter bij het thema van de openbaring (Epifanie)."
-            }
-          ],
-          "conclusie": "De tekst is zeer betrouwbaar overgeleverd. De variaties zijn minimaal en veranderen de theologische strekking niet."
+          "relevante_varianten": [],
+          "conclusie": "Geen varianten die de betekenis wijzigen."
         },
         "woordstudie": [
           {
-            "woord_origineel": "μάγοι",
+            "woord_origineel": "Grieks: μάγοι (magoi)",
             "transliteratie": "magoi",
-            "vertaling": "magiërs / wijzen",
-            "semantische_range": "Leden van een Perzische priesterkaste, astrologen, droomuitleggers, geleerden.",
-            "gebruik_elders": "In de Septuaginta vaak negatief (Daniël), maar bij Matteüs zijn zij de eersten die de Messias herkennen.",
-            "meer_duidigheid": "Het woord roept zowel bewondering (wijsheid) als argwaan (heidense praktijken) op."
+            "vertaling": "magiërs / wijzen / astrologen",
+            "semantische_range": "Oorspronkelijk een Perzische priesterkaste (Zoroastrisme), later breder gebruikt voor astrologen, droomuitleggers of tovenaars (soms negatief, zie Handelingen 13, maar hier positief/neutraal als zoekers naar waarheid).",
+            "gebruik_elders": "Handelingen 13:6 (Elymas, negatief). Daniël (LXX) gebruikt het voor de adviseurs aan het hof.",
+            "meerduidigheid": "Matteüs gebruikt een term die voor Joodse oren 'heidens' of 'onrein' kon klinken, wat de schok van hun komst vergroot."
           },
           {
-            "woord_origineel": "προσκυνέω",
+            "woord_origineel": "Grieks: προσκυνέω (proskuneo)",
             "transliteratie": "proskuneo",
-            "vertaling": "aanbidden / huldigen",
-            "semantische_range": "Letterlijk: kussen naar, neerknielen, zich ter aarde werpen.",
-            "gebruik_elders": "Gebruikt voor de eerbied voor God, maar ook voor een oosterse monarch.",
-            "meer_duidigheid": "Bij Matteüs is dit het sleutelwoord voor de juiste reactie op Jezus."
-          },
-          {
-            "woord_origineel": "ἐταράχθη",
-            "transliteratie": "etarachthe",
-            "vertaling": "werd geschokt / in verwarring gebracht",
-            "semantische_range": "In beroering raken, angst voelen, wankelen.",
-            "gebruik_elders": "Matteüs 14,26 (de leerlingen op het meer).",
-            "meer_duidigheid": "Het geeft de existentiële dreiging aan die Herodes voelt."
+            "vertaling": "aanbidden / neerwerpen / hulde brengen",
+            "semantische_range": "De fysieke handeling van het kussen van de grond of de voeten van een meerdere. Gebruikt voor goden en koningen.",
+            "gebruik_elders": "Vaak in Matteüs (o.a. de melaatse in 8:2, de discipelen in 14:33).",
+            "meerduidigheid": "Erkent het kind als politiek vorst én als goddelijke verschijning."
           }
         ],
         "literaire_analyse": {
-          "genre": "narratief",
-          "genre_conventies": "Geboorteverhaal met midrasj-elementen. Matteüs weeft oudtestamentische citaten door het verhaal om aan te tonen dat Jezus de vervulling is van de Schriften.",
+          "genre": "Geboorteverhaal / Legende met theologische lading / Midrasj",
+          "genre_conventies": "Elementen van wonder (ster), conflict met de heersende macht (Herodes), en goddelijke bescherming (droom).",
           "structuur": {
-            "opbouw": "Geografische en psychologische beweging. 1-2: Aankomst in Jeruzalem (vraag). 3-8: Confrontatie met Herodes (angst en list). 9-11: Reis naar Betlehem en aanbidding (vervulling). 12: De andere weg (bevrijding).",
+            "opbouw": "Deel 1: Aankomst en vraag in Jeruzalem (v1-2). Deel 2: Reactie Herodes en Schriftgeleerden (v3-8). Deel 3: Reis naar Betlehem en aanbidding (v9-11). Deel 4: Terugkeer (v12).",
             "cesuren": [
-              "Vers 1-2: De vreemde vraag",
-              "Vers 3-8: De paleis-intrige",
-              "Vers 9-12: De stal en de droom"
+              "Tussen v8 en v9 (vertrek uit Jeruzalem)."
             ],
-            "centrum": "Vers 6: Het citaat uit Micha 5,1 - de theologische legitimatie van het kind.",
-            "chiasme_inclusio": "Inclusio van de ster: vers 2 (gezien) en vers 10 (weergezien)."
+            "centrum": "Vers 11: De aanbidding en de geschenken.",
+            "chiasme_inclusio": "Geografische beweging: Oosten -> Jeruzalem -> Betlehem -> Oosten (via andere weg)."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
-              "Ironie (de heidense magiërs zoeken, de Joodse schriftgeleerden weten het maar blijven zitten)",
-              "Contrast (de tiran Herodes vs. het kind Jezus)",
-              "Motief van de 'weg' (komen, gaan, andere weg)"
+              "Ironie (de heidenen weten het, de leiders weten het niet)",
+              "Contrast (vreugde magiërs vs. angst Herodes)",
+              "Citaat (Micha 5)"
             ],
-            "retorische_strategie": "Matteüs wil de lezer overtuigen dat Jezus de universele koning is, wiens gezag de grenzen van Israël en de macht van aardse tirannen overstijgt.",
-            "effect_lezer": "Oproep tot keuze: buig je voor Herodes (macht) of voor het Kind (genade)?"
+            "retorische_strategie": "Matteüs toont aan zijn Joodse publiek dat Jezus de ware Messias is, maar dat Hij verworpen wordt door de leiders en aanvaard door de heidenen (vooruitwijzing naar het passieverhaal).",
+            "effect_lezer": "De lezer wordt gedwongen positie te kiezen: ben ik een zoeker zoals de magiërs of een vijandige/onverschillige insider?"
           },
           "karakters_plot": {
             "personages": [
-              "Jezus (het kind)",
-              "Maria",
-              "De magiërs",
-              "Herodes",
-              "De schriftgeleerden"
+              "Jezus (passief middelpunt)",
+              "Magiërs (actieve zoekers)",
+              "Herodes (antagonist)",
+              "Schriftgeleerden (passieve kenners)",
+              "Ster (gids)"
             ],
-            "karakterisering": "De magiërs zijn 'zoekers' vol vreugde. Herodes is de paranoïde machthebber. De schriftgeleerden zijn de 'onverschillige deskundigen'.",
-            "verhaallijn": "Een zoektocht die via een gevaarlijk paleis leidt naar een nederig huis, eindigend in een goddelijke interventie.",
-            "verzwegen_gesuggereerd": "Jozef is opvallend afwezig in deze scène, wat de focus op het kind en de moeder (als vervulling van Jesaja 7,14) versterkt."
+            "karakterisering": "Herodes = macht/angst. Magiërs = gehoorzaamheid/vreugde. Schriftgeleerden = kennis zonder daad.",
+            "verhaallijn": "Zoektocht -> Obstakel (Herodes) -> Vondst -> Aanbidding -> Ontsnapping.",
+            "verzwegen_gesuggereerd": "De tekst zwijgt over het aantal magiërs (traditie zegt 3 obv geschenken). Jozef is afwezig in deze scène (alleen Maria genoemd)."
           }
         },
         "structuralistische_analyse": {
           "schema_constructie": {
             "scenarios": [
               {
-                "scène": "1. De Aankomst",
+                "scène": "1 (v1-2)",
                 "tijd": "Na de geboorte",
                 "plaats": "Jeruzalem",
                 "actant": "Magiërs",
-                "handeling": "vragen naar de koning",
+                "handeling": "Arriveren / Vragen",
                 "medewerker": [
-                  "De ster"
-                ],
-                "opponent": []
-              },
-              {
-                "scène": "2. De Crisis",
-                "tijd": "Onmiddellijk daarna",
-                "plaats": "Paleis van Herodes",
-                "actant": "Herodes",
-                "handeling": "roept schriftgeleerden samen / ondervraagt magiërs",
-                "medewerker": [
-                  "Schriftgeleerden (onbewust)"
+                  "Ster"
                 ],
                 "opponent": [
-                  "Magiërs",
-                  "Het kind"
+                  "Onwetendheid (zoeken)"
                 ]
               },
               {
-                "scène": "3. De Aanbidding",
-                "tijd": "Nacht/Avond",
-                "plaats": "Huis in Betlehem",
-                "actant": "Magiërs",
-                "handeling": "vallen neer / huldigen / geven geschenken",
+                "scène": "2 (v3-8)",
+                "tijd": "Reactie op v1",
+                "plaats": "Paleis Herodes",
+                "actant": "Herodes",
+                "handeling": "Schrikken / Roepen / Vragen / Sturen",
                 "medewerker": [
-                  "De ster",
-                  "Maria"
+                  "Schriftgeleerden (kennis)"
                 ],
-                "opponent": []
+                "opponent": [
+                  "De geboren Koning (bedreiging)"
+                ]
               },
               {
-                "scène": "4. De Ontsnapping",
-                "tijd": "In de droom",
-                "plaats": "Onderweg",
+                "scène": "3 (v9-11)",
+                "tijd": "Na het gesprek",
+                "plaats": "Weg naar Betlehem / Huis",
                 "actant": "Magiërs",
-                "handeling": "wijken uit langs een andere weg",
+                "handeling": "Gaan / Zien / Verheugen / Aanbidden / Geven",
                 "medewerker": [
-                  "God (via droom)"
+                  "Ster",
+                  "Vreugde"
+                ],
+                "opponent": [
+                  "Geen"
+                ]
+              },
+              {
+                "scène": "4 (v12)",
+                "tijd": "Na de aanbidding",
+                "plaats": "Weg terug",
+                "actant": "Magiërs",
+                "handeling": "Uitwijken / Terugkeren",
+                "medewerker": [
+                  "Droom / Goddelijke waarschuwing"
                 ],
                 "opponent": [
                   "Herodes"
                 ]
               }
             ],
-            "schema_regels": "De magiërs zijn de actanten van de zoektocht; Herodes is de actant van de weerstand."
+            "schema_regels": "Magiërs zijn het Subject dat zoekt naar het Object (Koning). Herodes is de Anti-Subject."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "De beweging gaat van het politieke centrum (Jeruzalem) naar de religieuze marge (Betlehem). De tijd wordt gemarkeerd door de verschijning van de ster.",
-            "actanten_analyse": "De magiërs zijn de meest dynamische actanten. Jezus is de passieve actant (het doel).",
-            "handelingen_trajecten": "Traject van de reis (komen, gaan, terugkeren). Traject van de kennis (zien, vragen, weten, dromen).",
-            "medewerkers_opponenten_analyse": "De ster en de droom zijn bovennatuurlijke medewerkers. Herodes is de klassieke opponent die de voortgang van het heil wil blokkeren."
+            "tijd_plaats_patroon": "Van Jeruzalem (centrum macht) naar Betlehem (marge).",
+            "actanten_analyse": "Magiërs zijn de consistente helden. Herodes is de drijvende kracht van het conflict. De Schriftgeleerden zijn 'helpers' van Herodes (leveren info) maar falen als actanten (gaan niet mee).",
+            "handelingen_trajecten": "Zoeken -> Vinden -> Aanbidden -> Beschermen (door andere weg).",
+            "medewerkers_opponenten_analyse": "De ster is de bovennatuurlijke helper. De Schrift is een helper, maar wordt misbruikt door de opponent."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De tekst is opgebouwd rond de spanning tussen twee koningen: de oude (Herodes) en de nieuwe (Jezus).",
-            "temporele_ontwikkeling": "Chronologisch lineair, maar onderbroken door de droom die de koers wijzigt.",
-            "literaire_elementen": "Het gebruik van citaten (Micha) als scharnierpunt tussen de scènes.",
-            "karakteranalyse": "De magiërs ontlenen hun autoriteit aan hun astronomische waarneming en hun bereidheid om te knielen.",
-            "evaluatieve_dimensie": "De 'zeer grote vreugde' (v10) fungeert als de emotionele bevestiging van de juiste weg."
+            "structurele_samenhang": "Sterke parallel met het Exodus-verhaal (bedreigde kind, boze farao/koning).",
+            "temporele_ontwikkeling": "Lineair, gedreven door de reis.",
+            "literaire_elementen": "Contrast tussen 'geschokt zijn' (Herodes) en 'grote vreugde' (Magiërs).",
+            "karakteranalyse": "De heidenen tonen het juiste gedrag (orthopraxie), de leiders hebben de juiste leer (orthodoxie) maar doen niets.",
+            "evaluatieve_dimensie": "De tekst veroordeelt impliciet de Joodse elite en legitimeert de heidenmissie."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
-              "Openbaring aan de heidenen",
-              "Conflict tussen koninkrijken",
-              "Aanbidding als doel van de reis"
+              "Jezus als Koning der Joden én Heidenen",
+              "Verwerping vs. Aanvaarding",
+              "Gods leiding via natuur (ster) en Schrift"
             ],
-            "structurele_patroon": "Een reis met een gevaarlijke omweg die eindigt in een bevrijdende terugkeer.",
-            "theologische_betekenis": "God leidt hen die oprecht zoeken, zelfs door de duisternis van de machtspolitiek heen."
+            "structurele_patroon": "Geografische en spirituele verplaatsing: wie ver is komt dichtbij, wie dichtbij is blijft ver weg.",
+            "theologische_betekenis": "Epifanie is de doorbreking van de etnische grenzen van het verbond. God openbaart zich aan wie Hem zoekt, ongeacht afkomst."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "Jezus is de koning voor alle volken; zijn koningschap wordt niet erkend door de gevestigde macht, maar door hen die van verre komen en bereid zijn hun schatten aan Hem over te dragen.",
-          "godsbeeld": "God als de regisseur op de achtergrond die spreekt via de natuur (ster) en de droom, en die de plannen van tirannen doorkruist.",
-          "mensbeeld_wereld_heil": "De wereld is verdeeld in zoekers (magiërs), machtswellustelingen (Herodes) en onverschilligen (schriftgeleerden). Heil is het vinden van het kind en het veranderen van je levensweg.",
+          "centrale_boodschap": "Jezus is de Messias voor alle volken, die aanbidding vraagt en de wereldse machtsstructuren (Herodes) uitdaagt.",
+          "godsbeeld": "God die spreekt via de kosmos (ster) en dromen, en die de geschiedenis leidt ondanks menselijke tegenstand.",
+          "mensbeeld_wereld_heil": "De mens is ofwel een vijand van God (uit machtsbehoud), een onverschillige toeschouwer, of een aanbiddende zoeker. Heil is te vinden in de nederigheid van het kind.",
           "bijbels_theologische_lijnen": [
-            "Vervulling van de profetieën",
-            "De Messias als de nieuwe David",
-            "De universele zending"
+            "Koningschap (David)",
+            "Exodus (Mozes-typologie)",
+            "Vervulling profetieën (Micha, Bileam's ster)"
           ],
-          "plaats_heilsgeschiedenis": "Het begin van de 'inlijf-beweging' van de volken in het verbond van Israël.",
-          "spanning_andere_teksten": "Spanning met de exclusieve focus op Israël in andere delen van Matteüs (bijv. 10,5-6). Matteüs 2 anticipeert op de zendingsopdracht (28,19).",
+          "plaats_heilsgeschiedenis": "Het begin van de vervulling van de belofte aan Abraham (zegen voor alle volken).",
+          "spanning_andere_teksten": "Lukas toont herders (Joodse onderklasse), Matteüs toont magiërs (Heidense elite). Samen vormen ze het hele spectrum.",
           "dogmatische_raakvlakken": [
-            "Christologie (ware koning)",
-            "Ecclesiologie (de kerk uit de volken)"
+            "Christologie (twee naturen: kind en koning)",
+            "Openbaring (algemene openbaring in natuur vs. bijzondere in Schrift)"
           ],
-          "theologische_controverses": "De historiciteit van de ster en de magiërs vs. de theologische betekenis van het verhaal."
+          "theologische_controverses": "De relatie tussen astrologie en geloof (magie vs. voorzienigheid)."
         },
         "zoekmodellen_snoek": {
           "godsbeelden_ot": null,
           "mensbeelden_ot": null,
           "jezusbeelden_nt": {
-            "van_achteren": "Jezus als de 'koning der Joden', geboren in Betlehem volgens de Schriften (Micha). Hij is de legitieme erfgenaam van David.",
-            "van_boven": "Zijn geboorte wordt aangekondigd door een ster aan de hemel; Hij is het object van aanbidding (proskuneo), een eer die alleen God toekomt.",
-            "van_beneden": "Hij is een kwetsbaar 'jongetje' (paidion) met een moeder, afhankelijk van de bescherming van anderen en de leiding van God.",
-            "van_voren": "Hij is de komende 'leidsman' die het volk zal hoeden; zijn komst brengt de wereldmachten (Herodes) al in beroering.",
-            "dominant_perspectief": "Van achteren en van boven: de vervulling van Israëls hoop die tegelijk een kosmische gebeurtenis is.",
-            "spanning_godheid_mensheid": "De spanning tussen de kosmische ster en het eenvoudige huis in Betlehem; de koning der koningen als een weerloos kind.",
-            "betekenis_hoorders_nu": "Voor de hoorder in 2026: Jezus is niet een verre historische figuur, maar de actuele claim op ons leven die ons vraagt onze 'schatkisten' te openen."
+            "van_achteren": "Jezus wordt geduid vanuit de Joodse profetie (Micha 5:1, 'leidsman uit Juda'). Hij staat in de lijn van David.",
+            "van_boven": "De ster wijst op Zijn kosmische betekenis. Hij is niet zomaar een baby, maar een hemels fenomeen kondigt Hem aan.",
+            "van_beneden": "Hij is een 'kind' (paidion), kwetsbaar, in een huis bij zijn moeder. Hij moet vluchten voor een aardse koning.",
+            "van_voren": "Hij wordt 'Koning der Joden' genoemd, een titel met eschatologische en politieke lading (die later boven het kruis hangt). Hij roept nu al de scheiding op tussen aanbidders en vijanden.",
+            "dominant_perspectief": "Van voren (Koningschap) in spanning met Van beneden (kwetsbaarheid).",
+            "spanning_godheid_mensheid": "De magiërs aanbidden (godheid) een kind dat bedreigd wordt (mensheid).",
+            "betekenis_hoorders_nu": "Jezus is de Koning die ook in 2026 onze machtsstructuren uitdaagt en vraagt om een keuze: aanbidding of afwijzing."
           }
         }
       }
     ],
     "samenhang_lezingen": {
-      "rode_draad": "De universaliteit van Gods licht: van de profetische belofte (Jesaja) naar de historische vervulling (Matteüs).",
+      "rode_draad": "De universele openbaring van Gods licht en de beweging van de volken naar de Koning.",
       "versterkingen": [
-        "De geschenken (goud en wierook) uit Jesaja 60,6 keren letterlijk terug in Matteüs 2,11.",
-        "Beide teksten benadrukken de beweging van de volken naar het centrum van Gods openbaring.",
-        "Het thema van de 'grote vreugde' en het 'stralen' verbindt de emotionele impact van de openbaring."
+        "Jesaja 60 voorspelt de komst van de volken met goud en wierook; Matteüs 2 beschrijft de vervulling hiervan door de magiërs.",
+        "Beide teksten gebruiken het contrast licht/duisternis (Jesaja: duisternis bedekt de aarde; Matteüs: nachtelijke ster vs. duistere praktijken Herodes)."
       ],
       "correcties": [
-        "Matteüs corrigeert een al te triomfalistisch beeld van Jesaja: het licht verschijnt niet in een glanzend paleis, maar in een nederig huis, en roept dodelijke weerstand op.",
-        "Waar Jesaja spreekt over de rijkdom van de volken die naar Sion stroomt, laat Matteüs zien dat deze rijkdom (de magiërs) eerst langs de duistere macht van Jeruzalem moet navigeren."
+        "Jesaja 60 toont een triomfantelijk Jeruzalem/Zion waarheen men stroomt. Matteüs 2 corrigeert dit beeld: het aardse Jeruzalem is vijandig en onwetend; de ware bestemming is het onaanzienlijke Betlehem."
       ]
     }
+  },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 158,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen uitbundige lofzangen (intensiteit 8-9) die passen bij de koninklijke thematiek van Epifanie, en meer ingetogen, reflectieve liederen (intensiteit 6-7) die ruimte bieden voor de humanitaire context. Er is een goede verdeling tussen klassieke hymnen en meer liedmatige vormen die aansluiten bij de diverse demografie van Waddinxveen.",
+      "contextuele_reflectie": "De liederen verbinden het bijbelse 'Licht voor de volken' met de actuele duisternis in Soedan en Gaza (bijv. LB 437). Voor de jonge gezinnen in de wijk De Triangel zijn narratieve liederen over de wijzen opgenomen, terwijl de confessionele identiteit van de Brugkerk wordt gewaarborgd door robuuste schriftberijmingen uit Weerklank."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "175",
+        "titel": "Wij hebben een sterke stad",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtig loflied",
+        "toelichting": "Directe match met Jesaja 60. Verwoordt de sfeer van de stad die straalt door Gods nabijheid.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "284",
+        "titel": "Christus, Gij zijt het licht in ons leven!",
+        "type_match": "Seizoen",
+        "karakter": "Liturgisch meditatief lied",
+        "toelichting": "Kort en krachtig, ideaal om de focus op Christus als het Licht der wereld te vestigen.",
+        "suggestie_gebruik": "Lied na de schriftlezing (Jesaja)"
+      },
+      {
+        "nummer": "437",
+        "titel": "Kom tot ons, scheur de hemelen, Heer",
+        "type_match": "Contextueel",
+        "karakter": "Indringend klaaglied",
+        "toelichting": "De hoge intensiteit (8/10) en de roep om licht sluiten aan bij de humanitaire catastrofes in Soedan en Gaza.",
+        "suggestie_gebruik": "Gebedslied / Lied na de actualiteiten"
+      },
+      {
+        "nummer": "520",
+        "titel": "De wijzen, de wijzen",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend lied",
+        "toelichting": "Directe vertelling van het evangelie (Matteüs 2). Zeer geschikt voor een dienst met veel kinderen/gezinnen.",
+        "suggestie_gebruik": "Lied bij het kindermoment of na het evangelie"
+      },
+      {
+        "nummer": "596",
+        "titel": "Ontwaak, gij die slaapt",
+        "type_match": "Schriftlezing",
+        "karakter": "Oproepend loflied",
+        "toelichting": "Gebaseerd op de oproep uit Jesaja 60:1. Hoge intensiteit, passend bij een krachtige verkondiging.",
+        "suggestie_gebruik": "Antwoordlied na de preek"
+      },
+      {
+        "nummer": "810",
+        "titel": "Ga: tot de einden der aarde",
+        "type_match": "Thematisch",
+        "karakter": "Zendingslied",
+        "toelichting": "Sluit aan bij de universaliteit van het heil (Efeziërs) en de opdracht om het licht te verspreiden.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "871",
+        "titel": "Jezus zal heersen waar de zon",
+        "type_match": "Thematisch",
+        "karakter": "Majestueus loflied",
+        "toelichting": "Verwoordt de universele heerschappij van Christus, passend bij de wijzen die uit alle windstreken komen.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "1005",
+        "titel": "Longing for light, we wait in darkness",
+        "type_match": "Thematisch",
+        "karakter": "Modern verlangend lied",
+        "toelichting": "Sluit aan bij de 'brug' naar de moderne tijd en de behoefte aan licht in een gepolariseerde samenleving.",
+        "suggestie_gebruik": "Lied voor de voorbeden"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "267",
+        "titel": "’Jeruzalem,’ zo zegt de Heer",
+        "type_match": "Schriftlezing",
+        "karakter": "Blijmoedig loflied",
+        "toelichting": "Prachtige berijming van Jesaja 60 over de heerlijkheid van de stad Gods.",
+        "suggestie_gebruik": "Openingslied"
+      },
+      {
+        "nummer": "151",
+        "titel": "There’s a star in the East on Christmas morn",
+        "type_match": "Schriftlezing",
+        "karakter": "Spiritueel getint lied",
+        "toelichting": "Focust op de ster van Bethlehem (Matteüs 2). Toegankelijk voor een breed publiek.",
+        "suggestie_gebruik": "Lied tijdens de collecte"
+      },
+      {
+        "nummer": "703",
+        "titel": "’Ik was hongerig en jij gaf Mij te eten",
+        "type_match": "Contextueel",
+        "karakter": "Diaconaal lied",
+        "toelichting": "Legt de link tussen het evangelie en de zorg voor de naaste (ontheemden in Gaza/Soedan).",
+        "suggestie_gebruik": "Lied bij de diaconale mededelingen"
+      },
+      {
+        "nummer": "138",
+        "titel": "Hoor de eng’len zingen d’eer",
+        "type_match": "Seizoen",
+        "karakter": "Klassieke kersthymne",
+        "toelichting": "De universaliteit van de vrede op aarde sluit aan bij de Epifanie-gedachte.",
+        "suggestie_gebruik": "Loflied"
+      },
+      {
+        "nummer": "613",
+        "titel": "Water You turned into wine",
+        "type_match": "Seizoen",
+        "karakter": "Modern aanbiddingslied",
+        "toelichting": "Hoewel Matteüs 2 centraal staat, is de bruiloft te Kana (Johannes 2) een traditioneel Epifanie-thema.",
+        "suggestie_gebruik": "Communielied / Avondmaalslied"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "378",
+        "titel": "De Heer woont in een stralend licht",
+        "type_match": "Schriftlezing",
+        "karakter": "Eerbiedig loflied",
+        "toelichting": "Directe verwijzing naar het stralende licht uit Jesaja 60:19.",
+        "suggestie_gebruik": "Lied na de eerste lezing"
+      },
+      {
+        "nummer": "406",
+        "titel": "Ga je mee op zoek",
+        "type_match": "Schriftlezing",
+        "karakter": "Toegankelijk vertellied",
+        "toelichting": "Ideaal voor de jonge gezinnen in Waddinxveen; het neemt de gemeente mee op de reis van de wijzen.",
+        "suggestie_gebruik": "Kindermoment / Gezinsmoment"
+      },
+      {
+        "nummer": "537",
+        "titel": "Kijk daar een metselaar",
+        "type_match": "Thematisch",
+        "karakter": "Opbouwend lied",
+        "toelichting": "Verwijst naar Efeziërs en het bouwen aan de kerk. Past bij de visie van de Brugkerk als 'brug'.",
+        "suggestie_gebruik": "Antwoordlied na de epistellezing"
+      },
+      {
+        "nummer": "79",
+        "titel": "Go, tell it on the mountain",
+        "type_match": "Thematisch",
+        "karakter": "Enthousiasmerend getuigenislied",
+        "toelichting": "De boodschap van de geboorte moet overal gehoord worden, passend bij de universaliteit van Epifanie.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "18",
+        "titel": "Er is uit ’s werelds duistere wolken",
+        "type_match": "Schriftlezing",
+        "karakter": "Gedragen loflied",
+        "toelichting": "Klassieke verwoording van het licht dat opgaat over de duisternis (Jesaja 60). Past bij de Hervormd-Gereformeerde traditie.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "101",
+        "titel": "Ik zag het nieuw Jeruzalem",
+        "type_match": "Schriftlezing",
+        "karakter": "Eschatologisch loflied",
+        "toelichting": "Verbindt de belofte van Jesaja 60 met de uiteindelijke vervulling in het nieuwe Jeruzalem.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "571",
+        "titel": "De wijzen, de wijzen",
+        "type_match": "Schriftlezing",
+        "karakter": "Ingetogen kerstlied",
+        "toelichting": "Een rustige reflectie op de tocht van de wijzen uit het oosten.",
+        "suggestie_gebruik": "Meditatief moment na de preek"
+      },
+      {
+        "nummer": "71",
+        "titel": "In Christus brengt God ons terecht",
+        "type_match": "Schriftlezing",
+        "karakter": "Leerstellig loflied",
+        "toelichting": "Directe link met Efeziërs: Christus die de scheiding tussen volken heeft afgebroken.",
+        "suggestie_gebruik": "Lied na de epistellezing"
+      },
+      {
+        "nummer": "350",
+        "titel": "Door goede machten trouw en stil omgeven",
+        "type_match": "Contextueel",
+        "karakter": "Vertrouwenslied",
+        "toelichting": "Biedt troost in tijden van wereldwijde onrust en politieke verschuivingen.",
+        "suggestie_gebruik": "Lied voor de gebeden"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "87",
+        "titel": "Jeruzalem, de Godsstad hier beneden",
+        "type_match": "Schriftlezing",
+        "karakter": "Statige psalm",
+        "toelichting": "Psalm 87 bezingt hoe alle volken in Jeruzalem worden ingeschreven, wat naadloos aansluit bij Jesaja 60.",
+        "suggestie_gebruik": "Psalm na de eerste lezing"
+      },
+      {
+        "nummer": "47",
+        "titel": "Juich, o volken, juich, handklap en betuig",
+        "type_match": "Thematisch",
+        "karakter": "Feestelijke psalm",
+        "toelichting": "Oproep aan alle volken om de Koning te eren, passend bij de hulde van de wijzen.",
+        "suggestie_gebruik": "Lofprijzing"
+      },
+      {
+        "nummer": "100",
+        "titel": "Juich, alle volken, prijs de HEER!",
+        "type_match": "Thematisch",
+        "karakter": "Universele lofzang",
+        "toelichting": "De klassieke psalm voor de erkenning van God door de gehele aarde.",
+        "suggestie_gebruik": "Openingspsalm"
+      }
+    ]
   },
   "09_kunst_cultuur": {
     "moderne_hedendaagse_kunst": [
