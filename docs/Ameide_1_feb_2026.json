@@ -1793,40 +1793,70 @@
         "kunstenaar": "Banksy",
         "jaar": "2003",
         "type": "street_art",
-        "beschrijving": "Een gemaskerde demonstrant in een agressieve werphouding, maar in plaats van een molotovcocktail staat hij op het punt een bos bloemen te gooien.",
-        "verbinding_tekst": "Visualiseert perfect de paradox van Matteüs 5:9 ('Zalig de vredestichters') en 1 Korintiërs 1 ('het dwaze van de wereld'). Het beeld zet de verwachting van geweld en kracht op zijn kop, precies zoals Jezus de waarden van het koninkrijk omkeert.",
-        "verrassend_element": "Street art in de kerk kan schuren, maar de boodschap is diep christelijk: het wapen van de christen is zachtmoedigheid.",
-        "zoekterm": "Banksy Flower Thrower Love is in the Air"
+        "beschrijving": "Een gemaskerde demonstrant in een agressieve werphouding, maar in plaats van een molotovcocktail houdt hij een kleurrijk boeket bloemen vast.",
+        "verbinding_tekst": "Dit werk visualiseert de radicale omkering van de Zaligsprekingen (Matteüs 5:9). Waar de wereld geweld en macht verwacht, brengt de vredestichter zachtmoedigheid. Het is de 'dwaasheid' van het kruis (1 Korintiërs 1) die de logica van agressie doorbreekt.",
+        "verrassend_element": "Street art in een dorpskerk als de Sionkerk schuurt met de traditionele esthetiek, maar de boodschap van geweldloos verzet is diep bijbels en spreekt jongere generaties (zoals Sophie) direct aan.",
+        "zoekterm": "Banksy Flower Thrower Love is in the Air high resolution"
       },
       {
         "titel": "Golden Sea",
         "kunstenaar": "Makoto Fujimura",
         "jaar": "2013",
         "type": "schilderij",
-        "beschrijving": "Abstract werk met goud en mineralen, geïnspireerd door de Japanse Kintsugi-techniek (gebroken aardewerk repareren met goud).",
-        "verbinding_tekst": "Sluit aan bij 'Zalig de treurenden'. Fujimura stelt dat schoonheid ontstaat door gebrokenheid heen. Het goud (Gods genade) is juist zichtbaar in de barsten (onze armoede van geest).",
-        "verrassend_element": "Abstracte kunst nodigt uit tot meditatie zonder direct een 'plaatje' in te vullen, passend bij het mysterie van de genade.",
-        "zoekterm": "Makoto Fujimura Golden Sea painting"
+        "beschrijving": "Een abstract werk gemaakt met goudstof en minerale pigmenten, geïnspireerd door de Kintsugi-techniek waarbij gebroken aardewerk met goud wordt hersteld.",
+        "verbinding_tekst": "Fujimura laat zien dat schoonheid en waarde juist ontstaan in de barsten en de gebrokenheid. Dit resoneert met 'Zalig de treurenden' en de 'armen van geest'. Onze tekorten zijn de plekken waar Gods genade (het goud) zichtbaar wordt.",
+        "verrassend_element": "Abstracte kunst dwingt de hoorder tot verstilling en meditatie, weg van de 'doe-modus' van de Alblasserwaard, passend bij de 'armoede van geest'.",
+        "zoekterm": "Makoto Fujimura Golden Sea painting Kintsugi"
+      },
+      {
+        "titel": "Homeless Jesus",
+        "kunstenaar": "Timothy Schmalz",
+        "jaar": "2013",
+        "type": "sculptuur",
+        "beschrijving": "Een bronzen beeld van een figuur die onder een deken op een parkbankje ligt. Alleen de wonden in de voeten verraden dat het om Jezus gaat.",
+        "verbinding_tekst": "Dit beeldt de 'geringe' en 'onaanzienlijke' Christus uit (Sefanja 3:12, 1 Korintiërs 1). Het confronteert de succesvolle burgerij met de vraag waar Jezus vandaag te vinden is: niet in de macht, maar in de marge.",
+        "verrassend_element": "Het beeld is zo realistisch dat mensen vaak de politie bellen; het dwingt tot een fysieke reactie op de 'armen van geest'.",
+        "zoekterm": "Timothy Schmalz Homeless Jesus sculpture"
+      },
+      {
+        "titel": "Sunflower Seeds",
+        "kunstenaar": "Ai Weiwei",
+        "jaar": "2010",
+        "type": "installatie",
+        "beschrijving": "Miljoenen handgeschilderde porseleinen zonnebloempitten die samen een enorm grijs veld vormen.",
+        "verbinding_tekst": "Elke pit is uniek en handgemaakt door ambachtslieden, maar samen lijken ze onbeduidend stof. Het verbeeldt het 'geringe volk' (Sefanja) en de 'dwazen' (Paulus): individueel kwetsbaar, maar door God gekend en tot een geheel gesmeed.",
+        "verrassend_element": "De pitten lijken op afstand op grind of as, wat aansluit bij de soberheid van de winter en de as van de Watersnoodramp-herdenking.",
+        "zoekterm": "Ai Weiwei Sunflower Seeds Tate Modern"
+      },
+      {
+        "titel": "The Orders of the Night",
+        "kunstenaar": "Anselm Kiefer",
+        "jaar": "1996",
+        "type": "schilderij",
+        "beschrijving": "Een enorme zonnebloem die dood en verdord boven een liggende man (de kunstenaar zelf) uittorent onder een sterrenhemel.",
+        "verbinding_tekst": "Kiefer verbeeldt de nietigheid van de mens tegenover de kosmos en de geschiedenis. Het is een visuele 'armoede van geest'. De man ligt op de grond (ootmoed), maar kijkt naar de sterren (hoop).",
+        "verrassend_element": "De zware, aardse textuur van Kiefer past bij de Alblasserwaardse klei en de ernst van Sefanja's oordeelsdag.",
+        "zoekterm": "Anselm Kiefer The Orders of the Night Seattle Art Museum"
+      },
+      {
+        "titel": "Help (The Boy, the Mole, the Fox and the Horse)",
+        "kunstenaar": "Charlie Mackesy",
+        "jaar": "2019",
+        "type": "digitaal",
+        "beschrijving": "Een eenvoudige inkttekening met de tekst: 'What is the bravest thing you've ever said?' asked the boy. 'Help,' said the horse.",
+        "verbinding_tekst": "Dit is de kern van 'arm van geest' zijn: erkennen dat je het niet alleen kunt. Voor een gemeenschap die gewend is aan zelfredzaamheid (Mark de Jong), is dit een bevrijdende definitie van moed.",
+        "verrassend_element": "Zeer populair en toegankelijk, maar raakt de diepste theologische laag van afhankelijkheid van God.",
+        "zoekterm": "Charlie Mackesy help bravest thing illustration"
       },
       {
         "titel": "Rumors of War",
         "kunstenaar": "Kehinde Wiley",
         "jaar": "2019",
         "type": "sculptuur",
-        "beschrijving": "Een monumentaal ruiterstandbeeld in de stijl van klassieke heldenbeelden, maar de ruiter is een jonge Afro-Amerikaanse man in hedendaagse streetwear (hoodie, dreadlocks).",
-        "verbinding_tekst": "Een krachtige visuele vertaling van 1 Korintiërs 1:27: 'Wat voor de wereld dwaas is, heeft God uitverkoren'. Wiley verheft wie door de maatschappij vaak als 'gering' wordt gezien tot koninklijke status.",
-        "verrassend_element": "Confronteert de kijker met vooroordelen over wie 'waardigheid' bezit.",
-        "zoekterm": "Kehinde Wiley Rumors of War sculpture"
-      },
-      {
-        "titel": "The Boy, the Mole, the Fox and the Horse (illustraties)",
-        "kunstenaar": "Charlie Mackesy",
-        "jaar": "2019",
-        "type": "digitaal",
-        "beschrijving": "Eenvoudige inkttekeningen met kalligrafie die thema's van kwetsbaarheid, vriendschap en moed behandelen.",
-        "verbinding_tekst": "De sfeer van Mackesy's werk ademt de 'zachtmoedigheid' van Matteüs 5:5. Het toont dat hulp vragen ('Wat is het moedigste dat je ooit hebt gezegd? Help.') geen zwakte is, maar kracht (Sefanja: 'zoek ootmoed').",
-        "verrassend_element": "Zeer toegankelijk en populair, wat de drempel verlaagt, maar theologisch diep in de kern van afhankelijkheid.",
-        "zoekterm": "Charlie Mackesy help bravest thing illustration"
+        "beschrijving": "Een monumentaal ruiterstandbeeld van een jonge zwarte man in moderne streetwear (hoodie en Nike's) op een galopperend paard.",
+        "verbinding_tekst": "Wiley zet de 'onaanzienlijken' op een voetstuk. Het is een directe verbeelding van 1 Korintiërs 1:27-28: God kiest wat onbeduidend is om de sterken te beschamen. Het geeft koninklijke waardigheid aan wie de wereld negeert.",
+        "verrassend_element": "De link met de Paardenmarkt in Ameide maakt het beeld van een paard extra herkenbaar, maar de ruiter zet de traditie op zijn kop.",
+        "zoekterm": "Kehinde Wiley Rumors of War sculpture Richmond"
       }
     ],
     "klassieke_christelijke_kunst": [
@@ -1836,9 +1866,9 @@
         "jaar": "1568",
         "type": "schilderij",
         "locatie": "Louvre, Parijs",
-        "beschrijving": "Een groep bedelaars met geamputeerde ledematen en krukken, indringend en zonder opsmuk geschilderd.",
-        "verbinding_tekst": "Dit is het 'geringe volk' uit Sefanja en de 'dwazen' uit 1 Korintiërs. Bruegel romantiseert armoede niet, maar toont de rauwe realiteit waar Jezus zijn zaligsprekingen over uitspreekt. Het schuurt met onze hang naar succes.",
-        "zoekterm": "Pieter Bruegel the Elder The Cripples"
+        "beschrijving": "Vijf bedelaars met krukken en geamputeerde benen staan in een kring, hun gezichten getekend door lijden en overlevingsdrang.",
+        "verbinding_tekst": "Bruegel schildert de 'anawim' zonder enige romantiek. Dit zijn de mensen die Jezus 'zalig' noemt. Het confronteert ons met de vraag of er in onze 'mooie' Sionkerk plek is voor de rauwe gebrokenheid.",
+        "zoekterm": "Pieter Bruegel the Elder The Cripples Louvre"
       },
       {
         "titel": "De Bergrede (Sermon on the Mount)",
@@ -1846,69 +1876,91 @@
         "jaar": "1877",
         "type": "schilderij",
         "locatie": "Frederiksborg Slot, Denemarken",
-        "beschrijving": "Een klassieke, warme weergave van Jezus zittend op een steen, met een diverse groep luisteraars om hem heen.",
-        "verbinding_tekst": "Bloch weet de individuele emoties van de luisteraars (hoop, twijfel, verdriet) goed te vangen. Het beeldt de 'gemeenschap van heiligen' uit die samenkomt rond het Woord, herkenbaar voor de Sionkerk.",
-        "zoekterm": "Carl Bloch Sermon on the Mount painting"
+        "beschrijving": "Jezus zit op een verhoging en spreekt tot een aandachtige menigte. De lichtval accentueert de hoop op de gezichten van de armen en zieken.",
+        "verbinding_tekst": "Bloch vangt de sfeer van de 'stad op een berg'. Het werk straalt de rust en autoriteit uit die de hoorders in Ameide zoeken in de Schrift. Het maakt de 'omkering' tastbaar door de focus op de luisteraars.",
+        "zoekterm": "Carl Bloch Sermon on the Mount painting high res"
       },
       {
-        "titel": "Käthe Kollwitz: Die Überlebenden (De Overlevenden)",
+        "titel": "Die Überlebenden (De Overlevenden)",
         "kunstenaar": "Käthe Kollwitz",
         "jaar": "1923",
         "type": "lithografie",
         "locatie": "Käthe Kollwitz Museum, Keulen",
-        "beschrijving": "Een expressionistisch beeld van getekende gezichten die elkaar vasthouden na de verschrikkingen van de oorlog.",
-        "verbinding_tekst": "Resoneert sterk met Sefanja's 'overblijfsel' en Matteüs' 'zalig de treurenden'. Het toont de solidariteit in het lijden, passend bij de actuele oorlogsdreiging (Oekraïne/Gaza).",
+        "beschrijving": "Een groep mensen, voornamelijk vrouwen en kinderen, houdt elkaar stevig vast. Hun ogen zijn groot van verdriet en vermoeidheid.",
+        "verbinding_tekst": "Dit is de 'rest' van Sefanja 3:12. Het toont de solidariteit van de treurenden. In de context van de Watersnoodramp-herdenking (1 feb) is dit een krachtig beeld van wie 'overblijft' na de vloed.",
         "zoekterm": "Käthe Kollwitz The Survivors lithograph"
+      },
+      {
+        "titel": "De Bergrede (Fresco San Marco)",
+        "kunstenaar": "Fra Angelico",
+        "jaar": "1442",
+        "type": "fresco",
+        "locatie": "San Marco klooster, Florence",
+        "beschrijving": "Een sobere, bijna minimalistische weergave van Jezus die zittend op een rots zijn leerlingen onderwijst in een kaal landschap.",
+        "verbinding_tekst": "De eenvoud van dit fresco past bij de 'armoede van geest'. Er is geen afleiding, alleen het Woord. Het weerspiegelt de protestantse soberheid van de Sionkerk.",
+        "zoekterm": "Fra Angelico Sermon on the Mount fresco San Marco"
       }
     ],
     "film_documentaire": [
       {
         "titel": "Des hommes et des dieux (Of Gods and Men)",
         "regisseur": "Xavier Beauvois",
-        "jaar": "2010",
+        "jaar": 2010,
         "type": "arthouse",
         "relevante_scene": {
-          "beschrijving": "De scène van het 'Laatste Avondmaal' waar de monniken, wetend dat ze waarschijnlijk vermoord zullen worden, samen eten en luisteren naar Tchaikovsky's Zwanenmeer. Ze huilen en lachen tegelijk.",
-          "tijdcode": "ca. 01:45:00",
-          "wat_opent_het": "Dit is de ultieme verbeelding van 'Zalig de vredestichters' en 'Zalig wie vervolgd worden'. Ze kiezen voor kwetsbaarheid in plaats van vluchten of vechten. De paradox van vreugde temidden van doodsdreiging."
+          "beschrijving": "De 'Laatste Avondmaal'-scène waarin de monniken, wetend dat ze vermoord zullen worden, samen eten terwijl ze luisteren naar Tchaikovsky. Hun gezichten wisselen tussen diep verdriet en bovenaardse vrede.",
+          "tijdcode": "01:45:00",
+          "wat_opent_het": "Dit fragment toont wat het betekent om 'zalig' te zijn te midden van vervolging. Het is de ultieme zachtmoedigheid die niet vlucht voor het kwaad, maar het overwint door liefde."
         },
         "zoekterm": "Of Gods and Men Last Supper scene Tchaikovsky"
       },
       {
         "titel": "The Tree of Life",
         "regisseur": "Terrence Malick",
-        "jaar": "2011",
+        "jaar": 2011,
         "type": "arthouse",
         "relevante_scene": {
-          "beschrijving": "De openingsmonoloog over de twee wegen: 'The way of nature' (recht van de sterkste) en 'The way of grace' (niet jezelf behagen, offers brengen).",
-          "tijdcode": "Opening van de film",
-          "wat_opent_het": "Zet direct de toon voor de preek: de Bergrede is de 'Way of Grace' die haaks staat op de natuurlijke drang tot zelfhandhaving (1 Korintiërs 1). Visueel verpletterend."
+          "beschrijving": "De openingsmonoloog over de twee wegen: 'The way of nature' (gericht op eigen macht en succes) en 'The way of grace' (gericht op nederigheid en het aanvaarden van onrecht).",
+          "tijdcode": "00:05:00",
+          "wat_opent_het": "Dit zet het contrast tussen de wereldse logica en de Bergrede direct scherp neer. Het helpt de hoorders (zoals Mark de Jong) te kiezen voor de 'weg van de genade'."
         },
         "zoekterm": "The Tree of Life way of nature way of grace scene"
       },
       {
         "titel": "Paddington 2",
         "regisseur": "Paul King",
-        "jaar": "2017",
+        "jaar": 2017,
         "type": "speelfilm",
         "relevante_scene": {
-          "beschrijving": "Paddington in de gevangenis. Door zijn onverstoorbare beleefdheid en vriendelijkheid ('If you're kind and polite, the world will be right') transformeert hij de harde gevangenispopulatie.",
-          "tijdcode": "Gevangenis scenes (montage)",
-          "wat_opent_het": "Een seculiere gelijkenis over 'Zalig de zachtmoedigen'. Het laat zien dat zachtheid een transformerende kracht is, geen zwakte. Zeer geschikt voor een brug naar kinderen/jongeren."
+          "beschrijving": "Paddington transformeert de harde gevangeniswereld door zijn onverstoorbare beleefdheid en zachtmoedigheid ('If you're kind and polite, the world will be right').",
+          "tijdcode": "Gevangenis montage",
+          "wat_opent_het": "Een toegankelijke gelijkenis van 'Zalig de zachtmoedigen'. Het laat zien dat zachtheid geen zwakte is, maar een kracht die structuren kan veranderen. Ideaal voor de kindernevendienst."
         },
         "zoekterm": "Paddington 2 prison transformation scene"
       },
       {
         "titel": "Babette's Feast",
         "regisseur": "Gabriel Axel",
-        "jaar": "1987",
+        "jaar": 1987,
         "type": "arthouse",
         "relevante_scene": {
-          "beschrijving": "Het moment dat de strenge, sobere dorpsbewoners tijdens het diner ontdooien en zich verzoenen met elkaar door de overvloedige genade van de maaltijd.",
-          "tijdcode": "Laatste 20 minuten",
-          "wat_opent_het": "Illustreert 'Zalig de barmhartigen' en de verzadiging van gerechtigheid. Genade is gratis, maar kost alles (voor Babette). Past goed bij een Avondmaalszondag of de sfeer van gemeenschap."
+          "beschrijving": "De sobere, ruziënde dorpsbewoners ontdooien tijdens het overvloedige diner dat Babette voor hen bereidt. Genade breekt hun wetticisme.",
+          "tijdcode": "Slotscène diner",
+          "wat_opent_het": "Het illustreert 'Zalig de barmhartigen' en hoe Gods overvloed (het Koninkrijk) de menselijke schaarste en hardheid geneest."
         },
         "zoekterm": "Babette's Feast reconciliation scene"
+      },
+      {
+        "titel": "Nomadland",
+        "regisseur": "Chloé Zhao",
+        "jaar": 2020,
+        "type": "speelfilm",
+        "relevante_scene": {
+          "beschrijving": "Fern, die alles verloren heeft, vindt een nieuwe vorm van gemeenschap en waardigheid onder andere 'nomaden' in de marge van de Amerikaanse droom.",
+          "tijdcode": "Diverse gesprekken bij het kampvuur",
+          "wat_opent_het": "Het verbeeldt de 'armen van geest' die niets meer te verliezen hebben en daardoor een diepe vrijheid en verbondenheid vinden. Het raakt aan de 'rest' van Sefanja."
+        },
+        "zoekterm": "Nomadland movie Fern community scenes"
       }
     ],
     "muziek": {
@@ -1917,9 +1969,17 @@
           "titel": "De Rivier",
           "artiest": "Stef Bos",
           "jaar": 2000,
-          "genre": "Nederlandstalig chanson",
-          "verbinding": "De tekst 'Het water stroomt altijd naar het laagste punt' is een perfecte metafoor voor nederigheid en genade. In Ameide (aan de Lek) komt dit beeld direct binnen. God zoekt het laagste punt.",
+          "genre": "Nederlandstalig",
+          "verbinding": "De tekst 'Het water stroomt altijd naar het laagste punt' is een perfecte metafoor voor genade die de nederigen zoekt. In Ameide, aan de Lek, is dit beeld existentieel.",
           "zoekterm": "Stef Bos De Rivier songtekst"
+        },
+        {
+          "titel": "The Transfiguration",
+          "artiest": "Sufjan Stevens",
+          "jaar": 2004,
+          "genre": "Indie Folk",
+          "verbinding": "Een lied over de bergervaring en de openbaring van Jezus' heerlijkheid aan de eenvoudigen. Het ademt de sfeer van de Bergrede.",
+          "zoekterm": "Sufjan Stevens The Transfiguration lyrics"
         }
       ],
       "klassiek": [
@@ -1927,16 +1987,16 @@
           "titel": "The Beatitudes",
           "componist": "Arvo Pärt",
           "type": "koorwerk",
-          "specifiek_deel": "Gehele stuk (ca. 6 min)",
-          "verbinding": "De minimalistische stijl (Tintinnabuli) dwingt tot verstilling. Het stuk begint in mineur en eindigt in een onverwacht, stralend majeur akkoord ('Amen'). Dit verklankt de belofte die in het lijden verborgen ligt.",
+          "specifiek_deel": "Gehele werk",
+          "verbinding": "De minimalistische 'tintinnabuli'-stijl verklankt de armoede van geest. De muziek is kaal, maar eindigt in een stralend majeur-akkoord: de belofte van het Koninkrijk.",
           "zoekterm": "Arvo Pärt The Beatitudes choir"
         },
         {
-          "titel": "Ein deutsches Requiem, Deel 1: Selig sind, die da leid tragen",
+          "titel": "Ein deutsches Requiem",
           "componist": "Johannes Brahms",
           "type": "requiem",
-          "specifiek_deel": "Opening",
-          "verbinding": "Directe toonzetting van Matteüs 5:4. Brahms legt de nadruk op troost voor de nabestaanden, niet op de angst voor de dood. Past bij de 'treurenden'.",
+          "specifiek_deel": "Deel 1: Selig sind, die da leid tragen",
+          "verbinding": "Directe toonzetting van Matteüs 5:4. De muziek biedt de troost die Jezus belooft aan de treurenden.",
           "zoekterm": "Brahms Ein deutsches Requiem Selig sind die da leid tragen"
         }
       ],
@@ -1944,8 +2004,16 @@
         {
           "titel": "Ubi Caritas",
           "bron": "Taizé",
-          "gebruik": "Tijdens meditatie of voorbeden",
+          "gebruik": "Tijdens de voorbeden of meditatie",
+          "verbinding": "Waar liefde is en barmhartigheid, daar is God. Sluit aan bij 'Zalig de barmhartigen'.",
           "zoekterm": "Taizé Ubi Caritas et amor"
+        },
+        {
+          "titel": "Blest Are They",
+          "bron": "David Haas",
+          "gebruik": "Slotlied of antwoordlied",
+          "verbinding": "Een moderne hymne die de Zaligsprekingen direct verwoordt en de gemeente uitnodigt om zich hiermee te identificeren.",
+          "zoekterm": "David Haas Blest Are They lyrics"
         }
       ]
     },
@@ -1956,8 +2024,16 @@
           "auteur": "Marilynne Robinson",
           "jaar": 2004,
           "type": "roman",
-          "thematische_resonantie": "Een stervende dominee schrijft een brief aan zijn zoontje. Het boek ademt de sfeer van de Zaligsprekingen: aandacht voor het kleine, genade in het alledaagse, en de heiligheid van een eenvoudig leven. Resoneert met de vergrijzende maar trouwe gemeente.",
+          "thematische_resonantie": "Een oude dominee schrijft over de heiligheid van het kleine en de genade in het alledaagse. Het ademt de ootmoed van Sefanja.",
           "zoekterm": "Marilynne Robinson Gilead themes grace"
+        },
+        {
+          "titel": "De avond is ongemak",
+          "auteur": "Marieke Lucas Rijneveld",
+          "jaar": 2018,
+          "type": "roman",
+          "thematische_resonantie": "Hoewel rauw, beschrijft het de 'stroeve' omgang met rouw in een agrarisch milieu. Het opent het gesprek over 'Zalig de treurenden' in de polder.",
+          "zoekterm": "Marieke Lucas Rijneveld De avond is ongemak thema rouw"
         }
       ],
       "klassiek": [
@@ -1965,8 +2041,15 @@
           "titel": "Les Misérables",
           "auteur": "Victor Hugo",
           "jaar": 1862,
-          "thematische_resonantie": "Het contrast tussen Bisschop Myriel (barmhartigheid/zachtmoedigheid) en Javert (wet/kracht). De scène met de zilveren kandelaars is de ultieme 'omkering' van waarden die een leven redt.",
-          "zoekterm": "Les Miserables Bishop Myriel candlesticks scene book"
+          "thematische_resonantie": "Bisschop Myriel belichaamt de zachtmoedigheid en barmhartigheid die levens transformeert. De 'omkering' van de wet naar genade.",
+          "zoekterm": "Les Miserables Bishop Myriel candlesticks scene"
+        },
+        {
+          "titel": "De idioot",
+          "auteur": "Fjodor Dostojevski",
+          "jaar": 1868,
+          "thematische_resonantie": "Prins Mysjkin is de 'dwaas' die door zijn onschuld en zachtmoedigheid de wereld ontmaskert. Directe link met 1 Korintiërs 1.",
+          "zoekterm": "Dostoevsky The Idiot Prince Myshkin character analysis"
         }
       ],
       "nederlands": [
@@ -1974,56 +2057,60 @@
           "titel": "Boven is het stil",
           "auteur": "Gerbrand Bakker",
           "jaar": 2006,
-          "thematische_resonantie": "Een verhaal over platteland, stilte, plicht en rouw. De ingetogenheid en de 'stroeve' omgang met emoties zijn herkenbaar voor de Alblasserwaard. Het toont hoe 'treuren' er in de polder uitziet: niet met groot misbaar, maar in de stilte.",
-          "zoekterm": "Gerbrand Bakker Boven is het stil thema rouw"
+          "thematische_resonantie": "De stilte en de eenzaamheid op het platteland. Het toont de 'armoede' van het hart die wacht op bevrijding.",
+          "zoekterm": "Gerbrand Bakker Boven is het stil thema eenzaamheid"
         },
         {
           "titel": "De uitvreter",
           "auteur": "Nescio",
           "jaar": 1918,
-          "thematische_resonantie": "Japi, de uitvreter, die zich onttrekt aan de burgerlijke moraal van presteren en nuttig zijn. Hoewel tragisch, houdt het een spiegel voor aan onze prestatiecultuur (1 Korintiërs: 'wat voor de wereld dwaas is').",
-          "zoekterm": "Nescio De uitvreter Japi karakteranalyse"
+          "thematische_resonantie": "Japi die 'niets' wil zijn in een wereld van presteren. Een seculiere vorm van ootmoed.",
+          "zoekterm": "Nescio De uitvreter Japi karakter"
         }
       ]
     },
     "aansluiting_gemeente": {
-      "geschiktheid_traditie": "De Sionkerk (midden-orthodox) staat open voor cultuur, mits het niet te elitair of abstract wordt. De gekozen werken (Banksy, Mackesy, Stef Bos) zijn toegankelijk maar hebben diepgang.",
-      "sociaal_culturele_fit": "De nadruk op 'gewone mensen' (Bruegel, Kollwitz) en de rivier-metafoor (Stef Bos) sluit naadloos aan bij de identiteit van Ameide als dorp aan de Lek.",
+      "geschiktheid_traditie": "De Sionkerk waardeert Bijbelse diepgang gecombineerd met maatschappelijke relevantie. De gekozen kunst (Banksy, Mackesy) slaat een brug tussen de traditie en de leefwereld van jongeren.",
+      "sociaal_culturele_fit": "De focus op de rivier (Stef Bos) en de nuchtere verbeelding van armoede (Bruegel) past bij de Alblasserwaardse mentaliteit. De Watersnoodramp-herdenking maakt de 'schuilplaats' uit Sefanja zeer actueel.",
       "praktische_overwegingen": [
-        "Zorg bij projectie van Banksy voor een korte uitleg over de context (Bethlehem muur) om de vredesboodschap te kaderen."
+        "Gebruik de 'Groene Kerk' status om de belofte 'zij zullen de aarde erven' ecologisch te duiden.",
+        "Wees voorzichtig met te abstracte kunst; geef altijd een korte duiding."
       ]
     },
     "praktische_handvatten": {
       "voor_projectie": [
         {
           "kunstwerk": "Banksy - Flower Thrower",
-          "liturgisch_moment": "Tijdens de lezing van Matteüs 5:9 (Vredestichters) of als 'cliffhanger' voor de preek.",
-          "duur": "Stilstaand beeld",
-          "zoekterm_hoge_resolutie": "Banksy Flower Thrower high resolution image"
+          "liturgisch_moment": "Tijdens de lezing van Matteüs 5:9 of als start van de preek.",
+          "duur": "30 seconden",
+          "zoekterm_hoge_resolutie": "Banksy Flower Thrower high res"
         },
         {
-          "kunstwerk": "Carl Bloch - Sermon on the Mount",
-          "liturgisch_moment": "Tijdens de kindernevendienst introductie (Jezus op de berg).",
-          "duur": "Enkele minuten",
-          "zoekterm_hoge_resolutie": "Carl Bloch Sermon on the Mount high res"
+          "kunstwerk": "Makoto Fujimura - Golden Sea",
+          "liturgisch_moment": "Tijdens het meditatieve moment na de preek.",
+          "duur": "3 minuten",
+          "zoekterm_hoge_resolutie": "Makoto Fujimura Golden Sea"
         }
       ],
       "voor_meditatie": {
         "aanbevolen_werk": "Makoto Fujimura - Golden Sea",
-        "duur_tonen": "3-4 minuten na de preek",
-        "muziek_erbij": "Arvo Pärt - The Beatitudes (of een instrumentale versie)"
+        "duur_tonen": "3 minuten",
+        "muziek_erbij": "Arvo Pärt - The Beatitudes"
       },
       "rechten": {
         "publiek_domein": [
           "Pieter Bruegel",
           "Carl Bloch",
-          "Käthe Kollwitz (check sterfjaar > 70 jaar, ja: 1945+70=2015, dus PD in EU)"
+          "Fra Angelico",
+          "Käthe Kollwitz"
         ],
         "creative_commons": [
-          "Veel foto's van Banksy werk zijn beschikbaar onder CC op Wikimedia"
+          "Banksy (vaak gedeeld onder CC op Wikimedia)"
         ],
         "let_op": [
-          "Voor filmfragmenten geldt citaatrecht mits functioneel gebruikt in de eredienst (onderwijs), anders NVMP licentie checken."
+          "Makoto Fujimura",
+          "Timothy Schmalz",
+          "Charlie Mackesy (vraag toestemming of gebruik citaatrecht)"
         ]
       }
     }

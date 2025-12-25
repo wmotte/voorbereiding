@@ -114,20 +114,20 @@ Houd rekening met:
 ## Gewenste output
 
 Lever een overzicht dat:
-1. **Minimaal 6-7 concrete kunstwerken** (waarvan minstens de helft modern/hedendaags) beschrijft met:
+1. **Minimaal 10-12 concrete kunstwerken** (waarvan minstens de helft modern/hedendaags) beschrijft met:
    - Titel, kunstenaar, jaartal
    - Korte beschrijving wat het werk laat zien
    - Concreet wat dit werk toevoegt aan het verstaan van de tekst
    - Een zoekterm regel in dit formaat: `**Zoekterm:** [zoekopdracht]`
-2. **Minimaal 4-5 film/video suggesties** met:
+2. **Minimaal 6-8 film/video suggesties** met:
    - Titel, regisseur, jaar
    - Relevante scène of fragment en wat dit fragment opent
    - Een zoekterm regel in dit formaat: `**Zoekterm:** [zoekopdracht]`
-3. **Minimaal 4-5 literatuursuggesties** met:
+3. **Minimaal 6-8 literatuursuggesties** met:
    - Auteur, titel, jaar
    - Thematische resonantie
    - Een zoekterm regel in dit formaat: `**Zoekterm:** [zoekopdracht]`
-4. **Minimaal 4-5 muzieksuggesties** (hedendaags en/of klassiek, buiten het Liedboek) met:
+4. **Minimaal 6-8 muzieksuggesties** (hedendaags en/of klassiek, buiten het Liedboek) met:
    - Titel, artiest/componist
    - Verbinding met het thema
    - Een zoekterm regel in dit formaat: `**Zoekterm:** [zoekopdracht]`
