@@ -2416,7 +2416,7 @@
                             <div class="nav-submenu" data-section="${key}">
                                 ${subSections.map(subKey => `
                                     <a href="#section-${key}-${subKey}" class="nav-subitem" data-section="${key}" data-subsection="${subKey}">
-                                        ${escapeHtml(subSectionLabels[subKey] || formatKey(subKey))}
+                                        ${escapeAndSmartQuotes(subSectionLabels[subKey] || formatKey(subKey))}
                                     </a>
                                 `).join('')}
                             </div>
@@ -5113,6 +5113,12 @@
                 .replace(/(\S)'([\s)\]}>,.:;!?]|$)/g, '$1\u2019$2')
                 // Remaining single quotes -> apostrophe
                 .replace(/'/g, '\u2019');
+        }
+
+        // Escape HTML and apply smart quotes (for nav labels and similar)
+        function escapeAndSmartQuotes(text) {
+            if (typeof text !== 'string') return text;
+            return smartQuotes(escapeHtml(text));
         }
 
         // Process text: escape HTML, convert quotes, and handle newlines
