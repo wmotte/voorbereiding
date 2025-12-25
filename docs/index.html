@@ -4581,22 +4581,6 @@
         function renderIllustratiesSection(data) {
             let html = '';
 
-            // Show preek context if available
-            if (data.preek_context) {
-                html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Preek Context</div>`;
-                if (data.preek_context.bijbeltekst) {
-                    html += `<div class="data-item"><div class="data-label">Bijbeltekst</div><div class="data-value">${processText(data.preek_context.bijbeltekst)}</div></div>`;
-                }
-                if (data.preek_context.kernthemas && Array.isArray(data.preek_context.kernthemas)) {
-                    html += `<div class="data-item"><div class="data-label">Kernthemas</div><div class="data-value">${data.preek_context.kernthemas.map(t => processText(t)).join(', ')}</div></div>`;
-                }
-                if (data.preek_context.fcf_samenvatting) {
-                    html += `<div class="data-item"><div class="data-label">FCF Samenvatting</div><div class="data-value">${processText(data.preek_context.fcf_samenvatting)}</div></div>`;
-                }
-                html += `</div>`;
-            }
-
             // Render each illustration
             if (data.illustraties && Array.isArray(data.illustraties)) {
                 data.illustraties.forEach((illustratie, index) => {

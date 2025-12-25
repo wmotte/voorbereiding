@@ -168,10 +168,13 @@ Gebaseerd op de voorbeelden uit *Onze Dagelijkse Brood*:
 - Actualiteit (nieuws, wetenschap)
 - Technologie (uitvindingen, ontdekkingen)
 - Menselijke ervaring (werk, gezin, relaties)
+- Sport/Recreatie (sportevenementen, vrijetijdsbesteding)
+- Werk/Economie (bedrijfsleven, handel, beroepen)
+- Politiek/Maatschappij (bestuur, sociale kwesties)
 
 ---
 
-## Opdracht: Genereer Minimaal 15 Illustraties
+## Opdracht: Genereer Minimaal 20 Illustraties
 
 ### Input die je ontvangt:
 
@@ -219,6 +222,9 @@ Voor elke illustratie moet je aangeven:
 - Wetenschap/Technologie
 - Menselijke ervaring
 - Cultuur/Kunst
+- Sport/Recreatie
+- Werk/Economie
+- Politiek/Maatschappij
 
 ### 3. Toon
 - Hoopvol
@@ -261,7 +267,7 @@ Voor elke illustratie moet je aangeven:
 
 **Metadata:**
 - Type: [Illustratie/Anekdote/Hook/Gelijkenis]
-- Bron: [Natuur/Geschiedenis/Actualiteit/etc.]
+- Bron: [Natuur/Geschiedenis/Actualiteit/Wetenschap/Menselijke ervaring/Cultuur/Sport/Werk/Politiek]
 - Toon: [Hoopvol/Confronterend/etc.]
 - Lowry-stadium: [HÈ?/OEI.../AHA!/JA!/ZÓ!]
 - Buttrick-plaatsing: [Introductie/Move X/Conclusie]
@@ -335,7 +341,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "brug_naar_waarheid": "string - 1-2 zinnen die de theologische toepassing maken",
       "metadata": {
         "type": "string - Illustratie|Anekdote|Hook|Gelijkenis",
-        "bron": "string - Natuur|Geschiedenis|Actualiteit|Wetenschap|Menselijke ervaring|Cultuur",
+        "bron": "string - Natuur|Geschiedenis|Actualiteit|Wetenschap|Menselijke ervaring|Cultuur|Sport|Werk|Politiek",
         "toon": "string - Hoopvol|Confronterend|Verwonderend|Relativerend|Troostend|Uitdagend",
         "lowry_stadium": "string - HÈ|OEI|AHA|JA|ZÓ",
         "buttrick_plaatsing": "string - Introductie|Move 1|Move 2|Move 3|Move 4|Move 5|Conclusie",
@@ -346,7 +352,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "gebruiksnotities": "string - praktische tips voor de predikant over hoe deze illustratie te gebruiken"
     }
   ],
-  "totaal_aantal_illustraties": "number - MINIMAAL 15",
+  "totaal_aantal_illustraties": "number - MINIMAAL 20",
   "diversiteit_analyse": {
     "type_verdeling": {
       "illustratie": "number",
@@ -360,7 +366,10 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "actualiteit": "number",
       "wetenschap": "number",
       "menselijke_ervaring": "number",
-      "cultuur": "number"
+      "cultuur": "number",
+      "sport": "number",
+      "werk": "number",
+      "politiek": "number"
     },
     "lowry_verdeling": {
       "HÈ": "number",
@@ -384,7 +393,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
 
 Voordat je de output genereert, controleer:
 
-- [ ] Minimaal 15 illustraties gegenereerd
+- [ ] Minimaal 20 illustraties gegenereerd
 - [ ] Elke illustratie heeft concrete details (namen, plaatsen, getallen, data)
 - [ ] Variatie in type (niet alleen anekdotes)
 - [ ] Variatie in bron (niet alleen nieuws)
@@ -426,14 +435,15 @@ Voordat je de output genereert, controleer:
 
 ## VOLLEDIG VOORBEELD
 
-Hieronder een **compleet uitgewerkt voorbeeld** van 17 illustraties voor een preek over Marcus 2:13-17 (Jezus eet met tollenaars en zondaars). Dit voorbeeld toont:
+Hieronder een **compleet uitgewerkt voorbeeld** van 20 illustraties voor een preek over Marcus 2:13-17 (Jezus eet met tollenaars en zondaars). Dit voorbeeld toont:
 - Diversiteit in type, bron en toon
 - Nederlandse voorbeelden (Alphen, Vlieland, Goeree-Overflakkee)
 - Correcte metadata zonder underscores
 - Praktische gebruiksnotities
 - Realistische lengtes (60-150 woorden)
+- Voorbeelden uit de nieuwe bronnen (Sport/Recreatie, Werk/Economie, Politiek/Maatschappij)
 
-**Let op:** Dit voorbeeld bevat 17 illustraties (meer dan het minimum van 15) om diversiteit te tonen. Je hoeft niet exact deze structuur te kopiëren, maar gebruik het als referentie voor kwaliteit en volledigheid.
+**Let op:** Dit voorbeeld bevat 20 illustraties om diversiteit te tonen. Je hoeft niet exact deze structuur te kopiëren, maar gebruik het als referentie voor kwaliteit en volledigheid.
 
 ```json
 {
@@ -737,14 +747,65 @@ Hieronder een **compleet uitgewerkt voorbeeld** van 17 illustraties voor een pre
         "actualiteit": "Tijdloos"
       },
       "gebruiksnotities": "Dit is geen anekdote maar een beschrijving van een patroon. Gebruik dit om het mechanisme van roddel bloot te leggen. De link naar Gods eer maakt het zwaarder dan alleen 'aardig zijn'. Vooral relevant in kleine gemeenschappen waar roddel snel gaat. Vermijd vingerwijs - we doen dit allemaal."
+    },
+    {
+      "nummer": 18,
+      "titel": "De late comeback van Max Verstappen",
+      "illustratie_tekst": "In 2024 leek Max Verstappen een race in Brazilië te verliezen. Hij startte vanaf P17 na een teleurstellende kwalificatie in de regen. Critici voorspelden dat zijn dominantie voorbij was. Maar tijdens de race maakte hij een spectaculaire comeback, passeerde auto na auto, en won uiteindelijk toch de race. Wat onmogelijk leek, werd werkelijkheid.",
+      "brug_naar_waarheid": "Zo lijkt het ook soms met Gods werk in ons leven. We starten ver achteraan, in moeilijke omstandigheden. Maar God kan ons vooruit brengen op manieren die we niet voor mogelijk hielden. Zijn genade maakt de onmogelijke comeback mogelijk.",
+      "metadata": {
+        "type": "Anekdote",
+        "bron": "Sport",
+        "toon": "Hoopvol",
+        "lowry_stadium": "AHA",
+        "buttrick_plaatsing": "Move 3",
+        "retorische_functie": "Associëren",
+        "kernthema": "Gods omkerende genade in schijnbaar hopeloze situaties",
+        "actualiteit": "2024"
+      },
+      "gebruiksnotities": "Deze Nederlandse sportillustratie werkt goed voor jongere hoorders en sportievelingen. Het thema van omkering past perfect bij het AHA-stadium. Let op: gebruik dit alleen als de gemeente sportminded is, anders kan het vervreemdend werken. De vergelijking tussen sportprestatie en genade moet subtiel blijven - het gaat niet om eigen prestatie maar om Gods vooruitbrengen."
+    },
+    {
+      "nummer": 19,
+      "titel": "De ambachtsman die trouw bleef aan kwaliteit",
+      "illustratie_tekst": "In het Nederlandse plaatsje Giethoorn werkt een timmerman die weigert om kortere wegen te nemen. Terwijl concurrenten goedkoop hout en snelle lijmverbindingen gebruiken, blijft hij werken met massief eiken en traditionele pengatverbindingen. Het kost hem tijd en geld. Klanten zeggen: 'Niemand ziet het verschil.' Maar hij antwoordt: 'Ik zie het. En over vijftig jaar zullen mijn meubels er nog staan, terwijl de andere uit elkaar vallen.'",
+      "brug_naar_waarheid": "Zo is het ook met ons geestelijk leven. Niemand ziet misschien je stille gebeden, je trouwe Bijbelstudie, je verzet tegen compromissen. Maar God ziet het. En op de lange termijn blijkt wat duurzaam is en wat niet. Bouw niet voor morgen, maar voor de eeuwigheid.",
+      "metadata": {
+        "type": "Anekdote",
+        "bron": "Werk",
+        "toon": "Uitdagend",
+        "lowry_stadium": "ZÓ",
+        "buttrick_plaatsing": "Move 5",
+        "retorische_functie": "Ontvouwen",
+        "kernthema": "Trouw en volharding in het verborgene; duurzaam geloof",
+        "actualiteit": "Tijdloos (Nederlandse ambachtstraditie)"
+      },
+      "gebruiksnotities": "Deze illustratie werkt goed om het verschil te tonen tussen zichtbare resultaten en verborgen trouw. De Nederlandse context (Giethoorn) maakt het lokaal herkenbaar. Gebruik dit voor thema's als volharding, kwaliteit boven kwantiteit, en het belang van verborgen gehoorzaamheid. Vermijd moralisme - het gaat niet om perfectionisme maar om trouw aan Gods standaard."
+    },
+    {
+      "nummer": 20,
+      "titel": "Het vluchtelingenbeleid en de vreemdeling",
+      "illustratie_tekst": "In Nederland gaat het debat over het vluchtelingenbeleid vaak over getallen, percentages, en kosten. 'Hoeveel kunnen we aan?' 'Wat is haalbaar?' 'Wie verdient bescherming?' Het zijn zakelijke, rationele vragen. Maar achter elk getal staat een mens. Een moeder die haar kinderen in veiligheid wil brengen. Een vader die alles achterliet om oorlog te ontvluchten. Mensen, geen statistieken.",
+      "brug_naar_waarheid": "De Bijbel spreekt vaak over de vreemdeling, de weduwe, de wees. God ziet geen categorieën of quota, maar mensen die Zijn beeld dragen. Jezus eet met tollenaars en zondaars - de buitenstaanders van Zijn tijd. Hij vraagt niet of het haalbaar is, maar laat zien hoe het koninkrijk eruitziet: een tafel waar iedereen welkom is.",
+      "metadata": {
+        "type": "Hook",
+        "bron": "Politiek",
+        "toon": "Confronterend",
+        "lowry_stadium": "HÈ",
+        "buttrick_plaatsing": "Introductie",
+        "retorische_functie": "Onderscheiden",
+        "kernthema": "Inclusie versus exclusie; zien van de ander als beelddrager van God",
+        "actualiteit": "Zeer actueel (2020s Nederlands debat)"
+      },
+      "gebruiksnotities": "Dit is een gevoelig onderwerp. Gebruik deze illustratie alleen als je gemeente hiervoor open staat en als het thema van inclusie centraal staat in de preek. De illustratie vraagt niet om een politiek standpunt, maar nodigt uit om mensen te zien zoals Jezus ze ziet. Let op: dit kan polariseren. Gebruik met pastorale zorg en focus op de theologische les (Gods liefde voor buitenstaanders), niet op politieke oplossingen."
     }
   ],
-  "totaal_aantal_illustraties": 17,
+  "totaal_aantal_illustraties": 20,
   "diversiteit_analyse": {
     "type_verdeling": {
       "illustratie": 6,
-      "anekdote": 8,
-      "hook": 2,
+      "anekdote": 10,
+      "hook": 3,
       "gelijkenis": 1
     },
     "bron_verdeling": {
@@ -753,20 +814,23 @@ Hieronder een **compleet uitgewerkt voorbeeld** van 17 illustraties voor een pre
       "actualiteit": 4,
       "wetenschap": 2,
       "menselijke_ervaring": 1,
-      "cultuur": 0
+      "cultuur": 0,
+      "sport": 1,
+      "werk": 1,
+      "politiek": 1
     },
     "lowry_verdeling": {
-      "HÈ": 1,
+      "HÈ": 2,
       "OEI": 7,
-      "AHA": 3,
+      "AHA": 4,
       "JA": 5,
-      "ZÓ": 4
+      "ZÓ": 5
     }
   },
   "gebruiksadvies": {
     "algemeen": "Deze illustraties zijn afgestemd op een preek over genade voor zondaars en de gevaren van zelfgenoegzaamheid. Kies maximaal 3-4 illustraties per preek - meer overspoelt de hoorder. Varieer in type en toon. Zorg dat illustraties in het OEI-stadium de pijn echt voelbaar maken zonder te moraliseren. Illustraties in het JA-stadium moeten opluchting en bevrijding communiceren, niet alleen informatie.",
-    "combinaties": "Effectieve combinaties: (1) Begin met een Hook (nr. 1 of nr. 14) voor de introductie. (2) Gebruik een confronterende anekdote (nr. 8 of nr. 16) in het OEI-stadium. (3) Breng een omkerende illustratie (nr. 11 of nr. 4) in het AHA-stadium. (4) Sluit af met een troostende illustratie (nr. 5 of nr. 15) in het JA-stadium. (5) Gebruik een praktische illustratie (nr. 3 of nr. 10) in het ZÓ-stadium voor concrete toepassing.",
-    "waarschuwingen": "Vermijd te veel anekdotes achter elkaar - dit wordt voorspelbaar. Gebruik historische verhalen (Titanic, Napoleon) niet als ze te bekend zijn en cliché worden. Wees voorzichtig met tragische verhalen (nr. 8, bevroren tiener) - ze kunnen trauma triggeren. Gebruik Bijbelse illustraties (Jozef, Daniël, Samgar) niet als ze al in de tekstlezing voorkomen - dit is dubbelop. Forceer de 'brug naar waarheid' niet - als de link te gezocht is, laat de illustratie dan weg. Nederlandse voorbeelden (Alphen, Vlieland, Goeree) werken goed voor lokale gemeenten maar kunnen elders minder resoneren."
+    "combinaties": "Effectieve combinaties: (1) Begin met een Hook (nr. 1, nr. 14, of nr. 20) voor de introductie. (2) Gebruik een confronterende anekdote (nr. 8 of nr. 16) in het OEI-stadium. (3) Breng een omkerende illustratie (nr. 11, nr. 4, of nr. 18) in het AHA-stadium. (4) Sluit af met een troostende illustratie (nr. 5 of nr. 15) in het JA-stadium. (5) Gebruik een praktische illustratie (nr. 3, nr. 10, of nr. 19) in het ZÓ-stadium voor concrete toepassing.",
+    "waarschuwingen": "Vermijd te veel anekdotes achter elkaar - dit wordt voorspelbaar. Gebruik historische verhalen (Titanic, Napoleon) niet als ze te bekend zijn en cliché worden. Wees voorzichtig met tragische verhalen (nr. 8, bevroren tiener) - ze kunnen trauma triggeren. Gebruik Bijbelse illustraties (Jozef, Daniël, Samgar) niet als ze al in de tekstlezing voorkomen - dit is dubbelop. Forceer de 'brug naar waarheid' niet - als de link te gezocht is, laat de illustratie dan weg. Nederlandse voorbeelden (Alphen, Vlieland, Goeree) werken goed voor lokale gemeenten maar kunnen elders minder resoneren. Politieke illustraties (nr. 20) kunnen polariseren - gebruik met pastorale wijsheid en alleen als het thema het vereist. Sportillustraties (nr. 18) werken goed voor jongere hoorders maar kunnen oudere generaties vervreemden."
   }
 }
 ```
