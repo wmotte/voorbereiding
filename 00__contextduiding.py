@@ -15,6 +15,7 @@ import os
 import sys
 import re
 import json
+import asyncio
 from typing import Optional
 from pathlib import Path
 from datetime import datetime
@@ -28,14 +29,19 @@ except ImportError:
     print("Installeer deze met: pip install google-genai")
     sys.exit(1)
 
-# Probeer Neo4j driver te importeren
+# Probeer MCP client te importeren voor Neo4j integratie
 try:
-    from neo4j import GraphDatabase
-    NEO4J_AVAILABLE = True
+    from mcp import ClientSession, StdioServerParameters
+    from mcp.client.stdio import stdio_client
+    MCP_AVAILABLE = True
 except ImportError:
-    NEO4J_AVAILABLE = False
-    print("WAARSCHUWING: 'neo4j' library niet gevonden. Liedsuggesties uit database worden overgeslagen.")
-    print("Installeer met: pip install neo4j")
+    MCP_AVAILABLE = False
+    print("WAARSCHUWING: 'mcp' library niet gevonden. MCP-gebaseerde liedsuggesties worden overgeslagen.")
+    print("Installeer met: pip install mcp")
+
+# Neo4j driver is niet meer nodig (we gebruiken MCP)
+# Deze import check blijft alleen voor backward compatibility
+NEO4J_AVAILABLE = False
 
 # Configuratie
 SCRIPT_DIR = Path(__file__).parent.resolve()
@@ -250,46 +256,16 @@ De volgende lezingen staan vast voor deze datum en MOETEN worden gebruikt:
     }
 
 
-def format_neo4j_results_for_prompt(results: dict) -> str:
-    """Formatteer de Neo4j resultaten dictionary naar een leesbare string voor de prompt."""
-    output = []
-    
-    for bundel, data in results.items():
-        output.append(f"\n### Bundel: {bundel}")
-        
-        # Lezingen matches
-        if data.get("op_lezing"):
-            output.append(f"**Matches op Schriftlezing:**")
-            for song in data["op_lezing"]:
-                meta = f" [{song['metadata']}]" if song.get('metadata') else ""
-                output.append(f"- {song['nummer']} '{song['titel']}' (Ref: {song['verwijzing']} | Bron: {song['bron_lezing']}){meta}")
-        
-        # Thema matches
-        if data.get("op_thema"):
-            output.append(f"**Matches op Thematiek:**")
-            for song in data["op_thema"]:
-                meta = f" [{song['metadata']}]" if song.get('metadata') else ""
-                output.append(f"- {song['nummer']} '{song['titel']}' ({song['match']}){meta}")
-
-        # Seizoen matches
-        if data.get("op_seizoen"):
-            output.append(f"**Matches op Liturgisch Seizoen:**")
-            for song in data["op_seizoen"]:
-                meta = f" [{song['metadata']}]" if song.get('metadata') else ""
-                output.append(f"- {song['nummer']} '{song['titel']}' ({song['match']}){meta}")
-                
-        if not data.get("op_lezing") and not data.get("op_thema") and not data.get("op_seizoen"):
-            output.append("(Geen resultaten gevonden)")
-            
-    return "\n".join(output)
-
-
 def build_liedsuggesties_analysis(user_input: dict, kerkelijk_jaar_result: dict, context_samenvatting: str = "") -> dict:
-    """Bouw de analyse voor liedsuggesties op basis van Neo4j data."""
-    if not NEO4J_AVAILABLE:
+    """Bouw de analyse voor liedsuggesties - MCP of legacy Neo4j.
+
+    Deze functie bereidt de data voor maar voert GEEN queries meer uit.
+    De queries worden uitgevoerd door Gemini via MCP in find_hymns_via_mcp().
+    """
+    if not MCP_AVAILABLE:
         return None
 
-    # 1. Haal lezingen en thema op
+    # Haal lezingen en thema op
     lezingen_dict = {}
     if "lezingen" in kerkelijk_jaar_result:
         for k, v in kerkelijk_jaar_result["lezingen"].items():
@@ -297,35 +273,20 @@ def build_liedsuggesties_analysis(user_input: dict, kerkelijk_jaar_result: dict,
                 lezingen_dict[k] = v["referentie"]
             elif isinstance(v, str):
                 lezingen_dict[k] = v
-    
+
     thematiek = kerkelijk_jaar_result.get("thematiek")
     liturgische_periode = kerkelijk_jaar_result.get("positie_kerkelijk_jaar", {}).get("liturgische_periode")
-    
-    # 2. Voer Neo4j query uit
-    neo4j_results = find_hymns_neo4j(lezingen_dict, thematiek, liturgische_periode)
-    
-    # 3. Formatteer voor prompt
-    neo4j_text = format_neo4j_results_for_prompt(neo4j_results)
-    
-    # 4. Vul prompt in
-    base_prompt = load_prompt("01a_liedsuggesties.md", user_input)
-    
-    # Context variabelen uit kerkelijk jaar resultaat
     zondag_naam = kerkelijk_jaar_result.get("positie_kerkelijk_jaar", {}).get("zondag_naam", "Onbekend")
-    
-    lezingen_samenvatting = ", ".join([f"{k}: {v}" for k, v in lezingen_dict.items()])
-    centraal_thema = thematiek.get("centraal_thema", "Onbekend") if thematiek else "Onbekend"
 
-    full_prompt = base_prompt.replace("{{neo4j_resultaten}}", neo4j_text)
-    full_prompt = full_prompt.replace("{{zondag_naam}}", zondag_naam)
-    full_prompt = full_prompt.replace("{{lezingen_samenvatting}}", lezingen_samenvatting)
-    full_prompt = full_prompt.replace("{{centraal_thema}}", centraal_thema)
-    full_prompt = full_prompt.replace("{{context_samenvatting}}", context_samenvatting)
-    
     return {
         "name": "08b_liedsuggesties_database",
         "title": "Passende Liederen",
-        "prompt": full_prompt
+        "lezingen": lezingen_dict,
+        "thematiek": thematiek,
+        "liturgische_periode": liturgische_periode,
+        "zondag_naam": zondag_naam,
+        "context_samenvatting": context_samenvatting,
+        "use_mcp": MCP_AVAILABLE  # Flag om te bepalen welke methode te gebruiken
     }
 
 
@@ -581,216 +542,401 @@ def run_analysis(client: genai.Client, prompt: str, title: str, model: str = Non
     return {"error": f"Analyse mislukt na herpogingen (inclusief fallback)", "title": title}
 
 
-def parse_bible_reference(ref_str: str) -> tuple[Optional[str], Optional[int]]:
-    """Haal boek en hoofdstuk uit een referentie string (bijv. 'Lucas 2:1-20')."""
-    if not ref_str or ref_str.lower() == 'geen':
-        return None, None
-        
-    # Regex voor: [1-2] [Naam] [Hoofdstuk]:...
-    # Bijv: "1 Johannes 4", "Lucas 2", "Gen 1:1"
-    match = re.search(r'(\d?\s?[a-zA-Zëï]+)\.?\s+(\d+)', ref_str)
-    if match:
-        book = match.group(1).strip()
-        chapter = int(match.group(2))
-        return book, chapter
-    return None, None
+def mcp_tool_to_gemini_function(tool) -> types.FunctionDeclaration:
+    """Converteer MCP tool naar Gemini FunctionDeclaration.
+
+    Verwijdert velden die Gemini API niet accepteert (zoals additionalProperties).
+    """
+    def clean_schema(schema):
+        """Recursief cleanen van JSON Schema voor Gemini compatibiliteit."""
+        if not isinstance(schema, dict):
+            return schema
+
+        # Maak een kopie om het origineel niet te wijzigen
+        cleaned = {}
+
+        for key, value in schema.items():
+            # Skip velden die Gemini niet accepteert
+            if key in ['additionalProperties', 'additional_properties', '$schema', '$id']:
+                continue
+
+            # Recursief cleanen van geneste objecten
+            if isinstance(value, dict):
+                cleaned[key] = clean_schema(value)
+            elif isinstance(value, list):
+                cleaned[key] = [clean_schema(item) if isinstance(item, dict) else item for item in value]
+            else:
+                cleaned[key] = value
+
+        return cleaned
+
+    # Haal input schema op en clean het
+    parameters = tool.inputSchema if tool.inputSchema else {"type": "object", "properties": {}}
+    cleaned_parameters = clean_schema(parameters)
+
+    # Zorg dat minimaal vereiste velden aanwezig zijn
+    if "type" not in cleaned_parameters:
+        cleaned_parameters["type"] = "object"
+    if "properties" not in cleaned_parameters:
+        cleaned_parameters["properties"] = {}
+
+    return types.FunctionDeclaration(
+        name=tool.name,
+        description=tool.description or f"Tool: {tool.name}",
+        parameters=cleaned_parameters
+    )
 
 
-def find_hymns_neo4j(lezingen: dict, thematiek: dict = None, liturgische_periode: str = None) -> dict:
+async def find_hymns_via_mcp(
+    client: genai.Client,
+    lezingen: dict,
+    thematiek: dict = None,
+    liturgische_periode: str = None,
+    zondag_naam: str = "Onbekend",
+    context_samenvatting: str = ""
+) -> dict:
     """
-    Zoek liederen in de lokale Neo4j database die passen bij de lezingen, thematiek én liturgische periode.
-    Retourneert resultaten voor alle bundels inclusief metadata.
+    Gebruik MCP om Gemini zelfstandig liederen te laten zoeken in de Neo4j database.
+
+    Returns:
+        dict met 'markdown_output' (string) en 'raw_response' (string)
     """
-    if not NEO4J_AVAILABLE:
-        return {}
+    if not MCP_AVAILABLE:
+        return {
+            "error": "MCP niet beschikbaar",
+            "markdown_output": "MCP library niet geïnstalleerd. Installeer met: pip install mcp"
+        }
 
     print(f"\n{'─' * 50}")
-    print("NEO4J: Liedsuggesties zoeken (Scripture, Thema & Seizoen)...")
+    print("MCP: Gemini zoekt zelfstandig liederen via Neo4j...")
     print(f"{'─' * 50}")
 
+    # Neo4j configuratie
     uri = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
-    user = os.environ.get("NEO4J_USER", "neo4j")
+    username = os.environ.get("NEO4J_USER", "neo4j")
     password = os.environ.get("NEO4J_PASSWORD", "password")
+    database = os.environ.get("NEO4J_DATABASE", "hymns")
 
-    bundels = ["Liedboek", "Hemelhoog", "OpToonhoogte", "Weerklank", "WeerklankPsalm"]
-    results = {bundel: {"op_lezing": [], "op_thema": [], "op_seizoen": []} for bundel in bundels}
-    found_ids = {bundel: set() for bundel in bundels}
+    # MCP server parameters
+    # Gebruik @nibronix/mcp-neo4j-server - meest recente versie met auto-fix voor Cypher syntax
+    server_params = StdioServerParameters(
+        command="npx",
+        args=["-y", "@nibronix/mcp-neo4j-server"],
+        env={
+            "NEO4J_URI": uri,
+            "NEO4J_USERNAME": username,
+            "NEO4J_PASSWORD": password,
+            "NEO4J_DATABASE": database,
+            "PATH": os.environ.get("PATH", ""),
+        }
+    )
+
+    # Bouw lezingen samenvatting
+    lezingen_text = []
+    for key, val in lezingen.items():
+        if val and isinstance(val, dict) and "referentie" in val:
+            lezingen_text.append(f"- {key}: {val['referentie']}")
+        elif val and isinstance(val, str):
+            lezingen_text.append(f"- {key}: {val}")
+    lezingen_str = "\n".join(lezingen_text) if lezingen_text else "Geen lezingen beschikbaar"
+
+    # Thematiek
+    thema_str = ""
+    if thematiek:
+        centraal = thematiek.get("centraal_thema", "")
+        stemming = thematiek.get("stemming", "")
+        if centraal:
+            thema_str += f"\n- Centraal thema: {centraal}"
+        if stemming:
+            thema_str += f"\n- Stemming: {stemming}"
+
+    # System instruction voor Gemini
+    system_instruction = """Je bent een expert in Nederlandse kerkmuziek en liturgie.
+Je hebt toegang tot een Neo4j database met kerkliederen uit verschillende bundels via MCP tools.
+
+**Beschikbare MCP Tools:**
+- execute_query: Voer Cypher queries uit (read-only aanbevolen)
+- create_node: Maak nieuwe nodes (NIET GEBRUIKEN voor deze taak)
+- create_relationship: Maak nieuwe relaties (NIET GEBRUIKEN voor deze taak)
+
+**KRITIEKE REGELS voor Cypher queries:**
+1. NOOIT de velden 'volledige_tekst' of 'embedding' ophalen - deze zijn gigantisch groot
+2. Gebruik ALTIJD expliciete veldnamen: s.nummer, s.titel, s.samenvatting, s.sentiment, s.moeilijkheidsgraad
+3. Gebruik ALTIJD LIMIT om resultaten te beperken (max 20 per query)
+4. Begin ALTIJD queries met: MATCH in plaats van USE hymns
+5. De database context is al ingesteld, gebruik GEEN "USE hymns" in queries
+
+**Database Schema:**
+
+Nodes:
+- Song: nummer (string), titel (string), samenvatting (string), sentiment (string), emotionele_intensiteit (int), moeilijkheidsgraad (int)
+- Songbook: name (bijv. "Liedboek", "Hemelhoog", "OpToonhoogte", "Weerklank", "WeerklankPsalm")
+- BiblicalReference: reference (bijv. "Genesis 1", "Johannes 3:16")
+- Theme: name (thematische categorieën, ook liturgische seizoenen)
+- Keyword: name (trefwoorden)
+- Concept: name (theologische concepten)
+- Emotion: name (emoties)
+- Mood: name (sfeer/stemming)
+- Form: name (liedvorm, bijv. "Psalm", "Hymne", "Taizé")
+
+Relaties:
+- (Song)-[:BELONGS_TO]->(Songbook)
+- (Song)-[:REFERENCES]->(BiblicalReference)
+- (Song)-[:HAS_THEME]->(Theme)
+- (Song)-[:HAS_KEYWORD]->(Keyword)
+- (Song)-[:HAS_CONCEPT]->(Concept)
+- (Song)-[:HAS_EMOTION]->(Emotion)
+- (Song)-[:HAS_MOOD]->(Mood)
+- (Song)-[:HAS_FORM]->(Form)
+
+**Werkwijze:**
+1. Start met een schema query: MATCH (n) RETURN DISTINCT labels(n) LIMIT 10
+2. Zoek liederen op meerdere manieren met execute_query:
+   a. Op directe Schriftverwijzingen (BiblicalReference)
+   b. Op thema's en concepten
+   c. Op liturgisch seizoen (via Theme nodes)
+   d. Op stemming/emotie
+3. Combineer resultaten en groepeer per bundel
+4. Analyseer metadata (sentiment, intensiteit, vorm) voor balans
+5. Geef eindresultaat als JSON volgens onderstaand schema
+
+**Voorbeeld query:**
+MATCH (s:Song)-[:REFERENCES]->(br:BiblicalReference)
+WHERE br.reference CONTAINS 'Lucas 2'
+MATCH (s)-[:BELONGS_TO]->(sb:Songbook)
+RETURN sb.name as bundel, s.nummer, s.titel, br.reference
+LIMIT 10
+
+**KRITISCH: JSON Output Schema**
+Je MOET je eindantwoord geven als een JSON object volgens dit exacte schema:
+
+{
+  "analyse": {
+    "aantal_gevonden_totaal": <integer>,
+    "liturgische_balans": "<reflectie op de mix van sfeer en intensiteit>",
+    "contextuele_reflectie": "<hoe sluiten de liederen aan bij de actualiteit/seizoen?>"
+  },
+  "liedboek_2013": [
+    {
+      "nummer": "<string>",
+      "titel": "<string>",
+      "type_match": "<'Schriftlezing', 'Thematisch', 'Seizoen' of 'Contextueel'>",
+      "karakter": "<bijv. 'Ingetogen loflied', 'Krachtig gebed'>",
+      "toelichting": "<waarom past dit lied>",
+      "suggestie_gebruik": "<Intocht/Antwoordlied/Slotlied/etc.>"
+    }
+  ],
+  "hemelhoog": [...],
+  "op_toonhoogte": [...],
+  "weerklank": [...],
+  "weerklank_psalmen": [...]
+}
+
+BELANGRIJK - Bundel naam mapping:
+Database (Songbook.name) → JSON key:
+- "Liedboek" → "liedboek_2013"
+- "Hemelhoog" → "hemelhoog"
+- "OpToonhoogte" → "op_toonhoogte"
+- "Weerklank" → "weerklank"
+- "WeerklankPsalm" → "weerklank_psalmen"
+
+Andere regels:
+- Als een bundel geen resultaten heeft, geef lege array []
+- Minimaal 3 en maximaal 15 suggesties per bundel (indien beschikbaar)
+- type_match moet exact zijn: 'Schriftlezing', 'Thematisch', 'Seizoen' of 'Contextueel'
+- suggestie_gebruik: 'Intocht', 'Antwoordlied', 'Collectelied', 'Slotlied', 'Tafelgebed', etc.
+- karakter moet gebaseerd zijn op metadata (sentiment, emotionele_intensiteit, vorm)
+"""
+
+    # Gebruikersvraag
+    user_query = f"""Zoek de meest passende kerkliederen voor de volgende liturgische context:
+
+**Zondag/Gelegenheid:** {zondag_naam}
+**Liturgische periode:** {liturgische_periode or 'Onbekend'}
+
+**Schriftlezingen:**
+{lezingen_str}
+
+**Thematiek:**{thema_str if thema_str else " Geen specifieke thematiek gegeven"}
+
+**Context uit hoordersanalyse:**
+{context_samenvatting[:1000] if context_samenvatting else 'Geen aanvullende context'}
+
+**Opdracht:**
+Zoek liederen uit de beschikbare bundels (Liedboek, Hemelhoog, OpToonhoogte, Weerklank, WeerklankPsalm) die:
+1. Verwijzen naar de genoemde Schriftgedeelten
+2. Passen bij het thema en de liturgische periode
+3. Passen bij de stemming en context
+
+Geef een overzicht per bundel en sluit af met je top 5 aanbevelingen."""
 
     try:
-        with GraphDatabase.driver(uri, auth=(user, password)) as driver:
-            try:
-                driver.verify_connectivity()
-            except Exception as e:
-                print(f"⚠ Kan geen verbinding maken met Neo4j: {e}")
-                return {}
+        async with stdio_client(server_params) as (read, write):
+            async with ClientSession(read, write) as session:
+                # Initialiseer MCP sessie
+                await session.initialize()
+                print("✓ MCP sessie geïnitialiseerd")
 
-            # Helper voor metadata query deel
-            meta_return = ", s.sentiment as sentiment, s.emotionele_intensiteit as intensiteit, head([(s)-[:HAS_FORM]->(f) | f.name]) as vorm"
+                # Haal tools op
+                tools_result = await session.list_tools()
+                mcp_tools = {tool.name: tool for tool in tools_result.tools}
+                print(f"✓ Beschikbare tools: {list(mcp_tools.keys())}")
 
-            # 1. ZOEKEN OP LEZINGEN
-            for key, reading_ref in lezingen.items():
-                if not reading_ref or key == "psalm" or not isinstance(reading_ref, str): continue
-                
-                book, chapter = parse_bible_reference(reading_ref)
-                if not book or not chapter:
-                    continue
+                # Converteer naar Gemini format
+                print(f"  Converteren van {len(tools_result.tools)} MCP tools naar Gemini format...")
+                gemini_tools = [
+                    types.Tool(function_declarations=[mcp_tool_to_gemini_function(tool)])
+                    for tool in tools_result.tools
+                ]
+                print(f"✓ Tools geconverteerd en klaar voor gebruik")
 
-                print(f"  [Lezing] Zoeken bij {key}: {reading_ref}...")
+                # Conversation history
+                messages = [
+                    types.Content(role="user", parts=[types.Part(text=user_query)])
+                ]
 
-                query = f"""
-                USE hymns
-                MATCH (s:Song)-[:REFERENCES]->(br:BiblicalReference)
-                WHERE (
-                    br.reference CONTAINS $chapter_str OR 
-                    br.reference CONTAINS $reading_ref
-                )
-                MATCH (s)-[:BELONGS_TO]->(sb:Songbook)
-                WHERE sb.name IN $bundels
-                RETURN sb.name as bundel, s.id as id, s.nummer AS nummer, s.titel AS titel, br.reference AS reference {meta_return}
-                ORDER BY s.nummer
-                """
-                
-                try:
-                    records, _, _ = driver.execute_query(
-                        query, 
-                        chapter_str=f"{book} {chapter}",
-                        reading_ref=reading_ref,
-                        bundels=bundels,
-                        database_="hymns"
-                    )
-                    
-                    for record in records:
-                        bundel = record["bundel"]
-                        if record["id"] in found_ids[bundel]: continue
-                        found_ids[bundel].add(record["id"])
-                        
-                        meta = []
-                        if record["vorm"]: meta.append(record["vorm"])
-                        if record["sentiment"]: meta.append(f"Sfeer: {record['sentiment']}")
-                        if record["intensiteit"]: meta.append(f"Intensiteit: {record['intensiteit']}/10")
-                        
-                        results[bundel]["op_lezing"].append({
-                            "nummer": record["nummer"],
-                            "titel": record["titel"],
-                            "verwijzing": record["reference"],
-                            "bron_lezing": reading_ref,
-                            "metadata": ", ".join(meta)
-                        })
-                            
-                except Exception as q_err:
-                    print(f"  ⚠ Fout in query voor {reading_ref}: {q_err}")
+                # Agentic loop
+                max_iterations = 15
+                iteration = 0
+                final_response = ""
 
-            # 2. ZOEKEN OP THEMATIEK
-            if thematiek:
-                keywords = set()
-                if thematiek.get("centraal_thema"):
-                    keywords.update(re.findall(r'\w{4,}', thematiek["centraal_thema"].lower()))
-                if thematiek.get("stemming"):
-                    keywords.update(re.findall(r'\w{4,}', thematiek["stemming"].lower()))
-                
-                stopwoorden = {'deze', 'voor', 'door', 'over', 'naar', 'niet', 'maar', 'want', 'zijn', 'haar', 'waarin', 'welke', 'zondag'}
-                keywords = [k for k in keywords if k not in stopwoorden]
-                
-                if keywords:
-                    print(f"  [Thema]  Zoeken op {len(keywords)} trefwoorden...")
-                    
-                    query_theme = f"""
-                    USE hymns
-                    MATCH (s:Song)-[:HAS_THEME|HAS_CONCEPT|HAS_EMOTION|HAS_MOOD]-(node)
-                    WHERE any(word IN $keywords WHERE toLower(node.name) CONTAINS word)
-                    MATCH (s)-[:BELONGS_TO]->(sb:Songbook)
-                    WHERE sb.name IN $bundels
-                    RETURN sb.name as bundel, s.id as id, s.nummer AS nummer, s.titel AS titel, node.name AS match_term, labels(node) as match_type {meta_return}
-                    ORDER BY s.nummer
-                    LIMIT 30
-                    """
-                    
+                while iteration < max_iterations:
+                    iteration += 1
+                    print(f"  Iteratie {iteration}/{max_iterations}...")
+
                     try:
-                        records, _, _ = driver.execute_query(
-                            query_theme, 
-                            keywords=list(keywords),
-                            bundels=bundels,
-                            database_="hymns"
+                        # Roep Gemini aan
+                        # Voor de laatste iteratie (zonder function calls) forceren we JSON output
+                        config_params = {
+                            "tools": gemini_tools,
+                            "system_instruction": system_instruction,
+                            "temperature": 0.3,
+                            "max_output_tokens": 8192,
+                        }
+
+                        # Als we al wat iteraties hebben gedaan, probeer JSON mode
+                        if iteration > 3:
+                            config_params["response_mime_type"] = "application/json"
+
+                        response = client.models.generate_content(
+                            model=MODEL_NAME,
+                            contents=messages,
+                            config=types.GenerateContentConfig(**config_params)
                         )
-                        
-                        for record in records:
-                            bundel = record["bundel"]
-                            if record["id"] in found_ids[bundel]: continue
-                            found_ids[bundel].add(record["id"])
-                            
-                            match_type = [l for l in record["match_type"] if l in ['Theme', 'Concept', 'Emotion', 'Mood']]
-                            match_label = match_type[0] if match_type else "Concept"
-                            
-                            meta = []
-                            if record["vorm"]: meta.append(record["vorm"])
-                            if record["sentiment"]: meta.append(f"Sfeer: {record['sentiment']}")
-                            
-                            results[bundel]["op_thema"].append({
-                                "nummer": record["nummer"],
-                                "titel": record["titel"],
-                                "match": f"{match_label}: {record['match_term']}",
-                                "metadata": ", ".join(meta)
-                            })
-                            
-                    except Exception as t_err:
-                        print(f"  ⚠ Fout in thema query: {t_err}")
 
-            # 3. ZOEKEN OP LITURGISCH SEIZOEN
-            if liturgische_periode and liturgische_periode.lower() not in ['tijd door het jaar', 'onbekend']:
-                print(f"  [Seizoen] Zoeken voor periode: {liturgische_periode}...")
-                
-                # We zoeken specifiek naar Theme nodes die de periode naam bevatten (bijv. 'Advent')
-                # en beperken tot max 20 resultaten om flooding te voorkomen
-                query_season = f"""
-                USE hymns
-                MATCH (s:Song)-[:HAS_THEME]->(t:Theme)
-                WHERE toLower(t.name) CONTAINS toLower($periode)
-                MATCH (s)-[:BELONGS_TO]->(sb:Songbook)
-                WHERE sb.name IN $bundels
-                RETURN sb.name as bundel, s.id as id, s.nummer AS nummer, s.titel AS titel, t.name AS match_term {meta_return}
-                ORDER BY s.nummer
-                LIMIT 20
-                """
-                
+                        # Check response
+                        if not response.candidates:
+                            print("⚠ Geen candidates in response")
+                            break
+
+                        candidate = response.candidates[0]
+                        if not candidate.content or not candidate.content.parts:
+                            print("⚠ Geen content.parts in response")
+                            break
+
+                        parts = candidate.content.parts
+                        has_function_call = False
+
+                        for part in parts:
+                            # Check voor tekst
+                            if hasattr(part, 'text') and part.text:
+                                final_response = part.text
+                                print(f"  ✓ Gemini response ontvangen ({len(part.text)} chars)")
+
+                            # Check voor function call
+                            if hasattr(part, 'function_call') and part.function_call:
+                                has_function_call = True
+                                func_call = part.function_call
+                                tool_name = func_call.name
+                                tool_args = dict(func_call.args) if func_call.args else {}
+
+                                print(f"  → Tool: {tool_name}")
+                                if tool_args and 'query' in tool_args:
+                                    # Toon query preview (eerste 100 chars)
+                                    query_preview = str(tool_args['query'])[:100]
+                                    print(f"    Query: {query_preview}...")
+
+                                # Voer tool uit via MCP
+                                try:
+                                    result = await session.call_tool(tool_name, tool_args)
+                                    tool_result = result.content[0].text if result.content else "Geen resultaat"
+                                    print(f"    ✓ Resultaat: {len(tool_result)} chars")
+
+                                except Exception as e:
+                                    tool_result = f"Error: {str(e)}"
+                                    print(f"    ✗ Tool error: {e}")
+
+                                # Voeg model response en tool result toe aan messages
+                                messages.append(types.Content(role="model", parts=parts))
+                                messages.append(types.Content(
+                                    role="user",
+                                    parts=[types.Part(
+                                        function_response=types.FunctionResponse(
+                                            name=tool_name,
+                                            response={"result": tool_result}
+                                        )
+                                    )]
+                                ))
+                                break  # Verwerk één tool call per iteratie
+
+                        if not has_function_call:
+                            # Geen tool calls meer, we zijn klaar
+                            print("✓ Gemini heeft zoektocht afgerond")
+                            break
+
+                    except Exception as iter_error:
+                        print(f"  ✗ Error in iteratie {iteration}: {iter_error}")
+                        import traceback
+                        traceback.print_exc()
+                        # Als het een kritieke error is, stop dan
+                        if iteration == 1:
+                            raise
+                        break
+
+                # Probeer JSON te parsen uit de response
                 try:
-                    records, _, _ = driver.execute_query(
-                        query_season, 
-                        periode=liturgische_periode,
-                        bundels=bundels,
-                        database_="hymns"
-                    )
-                    
-                    for record in records:
-                        bundel = record["bundel"]
-                        if record["id"] in found_ids[bundel]: continue
-                        found_ids[bundel].add(record["id"])
-                        
-                        meta = []
-                        if record["vorm"]: meta.append(record["vorm"])
-                        if record["sentiment"]: meta.append(record["sentiment"])
-                        
-                        results[bundel]["op_seizoen"].append({
-                            "nummer": record["nummer"],
-                            "titel": record["titel"],
-                            "match": f"Seizoen: {record['match_term']}",
-                            "metadata": ", ".join(meta)
-                        })
-                        
-                except Exception as s_err:
-                    print(f"  ⚠ Fout in seizoen query: {s_err}")
+                    # Als het al valid JSON is
+                    result_json = json.loads(final_response)
+                    print(f"✓ Valide JSON ontvangen met {result_json.get('analyse', {}).get('aantal_gevonden_totaal', 0)} liederen")
+                    return {
+                        **result_json,
+                        "_meta": {
+                            "iterations": iteration,
+                            "raw_response": final_response
+                        }
+                    }
+                except json.JSONDecodeError:
+                    # Probeer JSON uit markdown code block te halen
+                    json_match = re.search(r'```(?:json)?\s*\n?(.*?)\n?```', final_response, re.DOTALL)
+                    if json_match:
+                        try:
+                            result_json = json.loads(json_match.group(1))
+                            print(f"✓ JSON geëxtraheerd uit markdown")
+                            return {
+                                **result_json,
+                                "_meta": {
+                                    "iterations": iteration,
+                                    "raw_response": final_response
+                                }
+                            }
+                        except json.JSONDecodeError:
+                            pass
 
+                    # Als JSON parsing mislukt, return als markdown met error
+                    print(f"⚠ Kon geen JSON parsen, return als markdown")
+                    return {
+                        "error": "Geen valide JSON ontvangen",
+                        "markdown_output": final_response,
+                        "iterations": iteration
+                    }
 
     except Exception as e:
-        print(f"⚠ Neo4j driver fout: {e}")
-
-    for bundel in bundels:
-        c_l = len(results[bundel]["op_lezing"])
-        c_t = len(results[bundel]["op_thema"])
-        c_s = len(results[bundel]["op_seizoen"])
-        if c_l + c_t + c_s > 0:
-            print(f"✓ {bundel}: {c_l} lezing, {c_t} thema, {c_s} seizoen.")
-    
-    return results
+        error_msg = f"MCP fout: {str(e)}"
+        print(f"✗ {error_msg}")
+        return {
+            "error": error_msg,
+            "markdown_output": f"Fout bij MCP zoektocht: {error_msg}"
+        }
 
 
 def choice_is_yes(choice: str) -> bool:
@@ -1146,10 +1292,10 @@ def main():
 
     # FASE 3: Liedsuggesties uit Database (met volledige context)
     print("\n" + "─" * 60)
-    print("FASE 3: Liedsuggesties uit Database")
+    print("FASE 3: Liedsuggesties uit Database (MCP)")
     print("─" * 60)
 
-    if NEO4J_AVAILABLE:
+    if MCP_AVAILABLE:
         # Verzamel context uit alle gegenereerde bestanden
         context_parts = []
         for analysis in remaining_analyses:
@@ -1173,23 +1319,55 @@ def main():
                     print(f"⚠ Fout bij lezen context {analysis['name']}: {e}")
 
         context_samenvatting = "\n\n".join(context_parts)
-        
+
         lied_analysis = build_liedsuggesties_analysis(user_input, kerkelijk_jaar_result, context_samenvatting)
         if lied_analysis:
             # Check of bestand al bestaat
             file_path_json = output_dir / f"{lied_analysis['name']}.json"
+            run_lied_analysis = True
+
             if file_path_json.exists():
-                 overwrite = input(f"  {lied_analysis['name']}.json bestaat al. Overschrijven? (j/n): ").strip().lower()
-                 if overwrite == 'j':
-                     save_log(LOGS_DIR, lied_analysis['name'], lied_analysis['prompt'])
-                     lied_result = run_analysis(client, lied_analysis['prompt'], lied_analysis['title'])
-                     save_analysis(output_dir, lied_analysis['name'], lied_result, lied_analysis['title'], user_input)
-                 else:
-                     print(f"  Overgeslagen: {lied_analysis['name']}")
-            else:
-                 save_log(LOGS_DIR, lied_analysis['name'], lied_analysis['prompt'])
-                 lied_result = run_analysis(client, lied_analysis['prompt'], lied_analysis['title'])
-                 save_analysis(output_dir, lied_analysis['name'], lied_result, lied_analysis['title'], user_input)
+                overwrite = input(f"  {lied_analysis['name']}.json bestaat al. Overschrijven? (j/n): ").strip().lower()
+                if overwrite != 'j':
+                    print(f"  Overgeslagen: {lied_analysis['name']}")
+                    run_lied_analysis = False
+
+            if run_lied_analysis:
+                if lied_analysis.get('use_mcp'):
+                    # MCP-based agentic search - Gemini zoekt zelfstandig
+                    print(f"  Gebruikt MCP voor zelfstandige database exploratie...")
+                    try:
+                        lied_result = asyncio.run(
+                            find_hymns_via_mcp(
+                                client=client,
+                                lezingen=lied_analysis['lezingen'],
+                                thematiek=lied_analysis['thematiek'],
+                                liturgische_periode=lied_analysis['liturgische_periode'],
+                                zondag_naam=lied_analysis['zondag_naam'],
+                                context_samenvatting=lied_analysis['context_samenvatting']
+                            )
+                        )
+
+                        # Sla resultaat op
+                        save_analysis(
+                            output_dir,
+                            lied_analysis['name'],
+                            lied_result,
+                            lied_analysis['title'],
+                            user_input
+                        )
+                    except Exception as e:
+                        print(f"✗ MCP zoektocht gefaald: {e}")
+                        print(f"  Liedsuggesties worden overgeslagen.")
+                        # Sla error op
+                        error_result = {"error": str(e), "message": "MCP zoektocht mislukt"}
+                        save_analysis(output_dir, lied_analysis['name'], error_result, lied_analysis['title'], user_input)
+
+                else:
+                    # MCP niet beschikbaar
+                    print(f"  MCP niet beschikbaar. Installeer met: pip install mcp")
+                    error_result = {"error": "MCP niet geïnstalleerd", "message": "Installeer met: pip install mcp"}
+                    save_analysis(output_dir, lied_analysis['name'], error_result, lied_analysis['title'], user_input)
 
     print("\n" + "=" * 60)
     print("KLAAR")
