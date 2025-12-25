@@ -4664,19 +4664,6 @@
                 });
             }
 
-            // Show summary statistics
-            if (data.totaal_aantal_illustraties) {
-                html += `<div class="data-item"><div class="data-label">Totaal aantal illustraties</div><div class="data-value">${data.totaal_aantal_illustraties}</div></div>`;
-            }
-
-            // Diversiteit analyse
-            if (data.diversiteit_analyse) {
-                html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Diversiteit Analyse</div>`;
-                html += renderObjectCompact(data.diversiteit_analyse);
-                html += `</div>`;
-            }
-
             // Gebruiksadvies
             if (data.gebruiksadvies) {
                 html += `<div class="data-group">`;
