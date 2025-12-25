@@ -2156,38 +2156,31 @@
             const sectionNumberMap = {};
             let tempUnnumberedCounter = highestNum + 1; // Use a temporary counter
 
+            // Correct mapping to avoid number collisions
+            const keyToNum = {
+                'Bijbelteksten': '02',
+                '08a_exegese': '08a', '08_exegese': '08a',
+                '08b_liedsuggesties_database': '08b', '08_liedsuggesties_database': '08b',
+                '08c_commentaries': '08c',
+                '13_homiletische_analyse': '13a',
+                '13_homiletische_analyse_buttrick': '13b',
+                '13b_homiletische_illustraties': '13c',
+                '14_klassieke_retorica': '13d', // Retorica becomes part of group 13
+                '14_gebeden': '14a',
+                '14_gebeden_profetisch': '14b',
+                '14_gebeden_dialogisch': '14c',
+                '14_gebeden_eenvoudig': '14d',
+                '15_bezinningsmoment': '15a',
+                '15_kindermoment': '15b'
+                // Sections 16, 17, 18 will get their numbers automatically from filename
+            };
+
             sections.forEach(key => {
-                if (key === 'Bijbelteksten') {
-                    sectionNumberMap[key] = '02';
-                } else if (key === '08_exegese' || key === '08a_exegese') {
-                    sectionNumberMap[key] = '08a';
-                } else if (key === '08c_commentaries') {
-                    sectionNumberMap[key] = '08c';
-                } else if (key === '08_liedsuggesties_database' || key === '08b_liedsuggesties_database') {
-                    sectionNumberMap[key] = '08b';
-                } else if (key === '13_homiletische_analyse') {
-                    sectionNumberMap[key] = '13a';
-                } else if (key === '13_homiletische_analyse_buttrick') {
-                    sectionNumberMap[key] = '13b';
-                } else if (key === '13b_homiletische_illustraties') {
-                    sectionNumberMap[key] = '13c';
-                } else if (key === '14_klassieke_retorica') {
-                    sectionNumberMap[key] = '13d';
-                } else if (key === '14_gebeden') {
-                    sectionNumberMap[key] = '15a';
-                } else if (key === '14_gebeden_profetisch') {
-                    sectionNumberMap[key] = '15b';
-                } else if (key === '14_gebeden_dialogisch') {
-                    sectionNumberMap[key] = '15c';
-                } else if (key === '14_gebeden_eenvoudig') {
-                    sectionNumberMap[key] = '15d';
-                } else if (key === '15_bezinningsmoment') {
-                    sectionNumberMap[key] = '16a';
-                } else if (key === '15_kindermoment') {
-                    sectionNumberMap[key] = '16b';
-                } else { 
-                    const numMatch = key.match(/^(\d+[a-z]?)_/);
-                    sectionNumberMap[key] = numMatch ? numMatch[1] : String(tempUnnumberedCounter++).padStart(2, '0');
+                if (keyToNum[key]) {
+                    sectionNumberMap[key] = keyToNum[key];
+                } else {
+                    const numMatch = key.match(/^(\d+)/);
+                    sectionNumberMap[key] = numMatch ? numMatch[1].padStart(2, '0') : String(tempUnnumberedCounter++).padStart(2, '0');
                 }
             });
 
