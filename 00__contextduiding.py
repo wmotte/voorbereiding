@@ -650,106 +650,19 @@ async def find_hymns_via_mcp(
         if stemming:
             thema_str += f"\n- Stemming: {stemming}"
 
-    # System instruction voor Gemini
-    system_instruction = """Je bent een expert in Nederlandse kerkmuziek en liturgie.
-Je hebt toegang tot een Neo4j database met kerkliederen uit verschillende bundels via MCP tools.
+    # Laad system instruction uit de prompt file
+    try:
+        prompt_path = PROMPTS_DIR / "01a_liedsuggesties.md"
+        with open(prompt_path, "r", encoding="utf-8") as f:
+            system_instruction = f.read()
+    except Exception as e:
+        print(f"⚠ Fout bij laden prompt 01a_liedsuggesties.md: {e}")
+        # Fallback naar een minimale instructie als bestand niet bestaat
+        system_instruction = """Je bent een expert in kerkliederen. Gebruik MCP tools om liederen te zoeken in Neo4j.
+        Gebruik expliciete velden in Cypher (s.nummer, s.titel). Geef JSON output."""
 
-**Beschikbare MCP Tools:**
-- execute_query: Voer Cypher queries uit (read-only aanbevolen)
-- create_node: Maak nieuwe nodes (NIET GEBRUIKEN voor deze taak)
-- create_relationship: Maak nieuwe relaties (NIET GEBRUIKEN voor deze taak)
-
-**KRITIEKE REGELS voor Cypher queries:**
-1. NOOIT de velden 'volledige_tekst' of 'embedding' ophalen - deze zijn gigantisch groot
-2. Gebruik ALTIJD expliciete veldnamen: s.nummer, s.titel, s.samenvatting, s.sentiment, s.moeilijkheidsgraad
-3. Gebruik ALTIJD LIMIT om resultaten te beperken (max 20 per query)
-4. Begin ALTIJD queries met: MATCH in plaats van USE hymns
-5. De database context is al ingesteld, gebruik GEEN "USE hymns" in queries
-
-**Database Schema:**
-
-Nodes:
-- Song: nummer (string), titel (string), samenvatting (string), sentiment (string), emotionele_intensiteit (int), moeilijkheidsgraad (int)
-- Songbook: name (bijv. "Liedboek", "Hemelhoog", "OpToonhoogte", "Weerklank", "WeerklankPsalm")
-- BiblicalReference: reference (bijv. "Genesis 1", "Johannes 3:16")
-- Theme: name (thematische categorieën, ook liturgische seizoenen)
-- Keyword: name (trefwoorden)
-- Concept: name (theologische concepten)
-- Emotion: name (emoties)
-- Mood: name (sfeer/stemming)
-- Form: name (liedvorm, bijv. "Psalm", "Hymne", "Taizé")
-
-Relaties:
-- (Song)-[:BELONGS_TO]->(Songbook)
-- (Song)-[:REFERENCES]->(BiblicalReference)
-- (Song)-[:HAS_THEME]->(Theme)
-- (Song)-[:HAS_KEYWORD]->(Keyword)
-- (Song)-[:HAS_CONCEPT]->(Concept)
-- (Song)-[:HAS_EMOTION]->(Emotion)
-- (Song)-[:HAS_MOOD]->(Mood)
-- (Song)-[:HAS_FORM]->(Form)
-
-**Werkwijze:**
-1. Start met een schema query: MATCH (n) RETURN DISTINCT labels(n) LIMIT 10
-2. Zoek liederen op meerdere manieren met execute_query:
-   a. Op directe Schriftverwijzingen (BiblicalReference)
-   b. Op thema's en concepten
-   c. Op liturgisch seizoen (via Theme nodes)
-   d. Op stemming/emotie
-3. Combineer resultaten en groepeer per bundel
-4. Analyseer metadata (sentiment, intensiteit, vorm) voor balans
-5. Geef eindresultaat als JSON volgens onderstaand schema
-
-**Voorbeeld query:**
-MATCH (s:Song)-[:REFERENCES]->(br:BiblicalReference)
-WHERE br.reference CONTAINS 'Lucas 2'
-MATCH (s)-[:BELONGS_TO]->(sb:Songbook)
-RETURN sb.name as bundel, s.nummer, s.titel, br.reference
-LIMIT 10
-
-**KRITISCH: JSON Output Schema**
-Je MOET je eindantwoord geven als een JSON object volgens dit exacte schema:
-
-{
-  "analyse": {
-    "aantal_gevonden_totaal": <integer>,
-    "liturgische_balans": "<reflectie op de mix van sfeer en intensiteit>",
-    "contextuele_reflectie": "<hoe sluiten de liederen aan bij de actualiteit/seizoen?>"
-  },
-  "liedboek_2013": [
-    {
-      "nummer": "<string>",
-      "titel": "<string>",
-      "type_match": "<'Schriftlezing', 'Thematisch', 'Seizoen' of 'Contextueel'>",
-      "karakter": "<bijv. 'Ingetogen loflied', 'Krachtig gebed'>",
-      "toelichting": "<waarom past dit lied>",
-      "suggestie_gebruik": "<Intocht/Antwoordlied/Slotlied/etc.>"
-    }
-  ],
-  "hemelhoog": [...],
-  "op_toonhoogte": [...],
-  "weerklank": [...],
-  "weerklank_psalmen": [...]
-}
-
-BELANGRIJK - Bundel naam mapping:
-Database (Songbook.name) → JSON key:
-- "Liedboek" → "liedboek_2013"
-- "Hemelhoog" → "hemelhoog"
-- "OpToonhoogte" → "op_toonhoogte"
-- "Weerklank" → "weerklank"
-- "WeerklankPsalm" → "weerklank_psalmen"
-
-Andere regels:
-- Als een bundel geen resultaten heeft, geef lege array []
-- Minimaal 3 en maximaal 15 suggesties per bundel (indien beschikbaar)
-- type_match moet exact zijn: 'Schriftlezing', 'Thematisch', 'Seizoen' of 'Contextueel'
-- suggestie_gebruik: 'Intocht', 'Antwoordlied', 'Collectelied', 'Slotlied', 'Tafelgebed', etc.
-- karakter moet gebaseerd zijn op metadata (sentiment, emotionele_intensiteit, vorm)
-"""
-
-    # Gebruikersvraag
-    user_query = f"""Zoek de meest passende kerkliederen voor de volgende liturgische context:
+    # Gebruikersvraag - Alleen de feitelijke data, de instructies staan in de system_instruction (MD file)
+    user_query = f"""Hieronder volgt de specifieke liturgische en maatschappelijke context voor de liedselectie:
 
 **Zondag/Gelegenheid:** {zondag_naam}
 **Liturgische periode:** {liturgische_periode or 'Onbekend'}
@@ -759,16 +672,10 @@ Andere regels:
 
 **Thematiek:**{thema_str if thema_str else " Geen specifieke thematiek gegeven"}
 
-**Context uit hoordersanalyse:**
-{context_samenvatting[:1000] if context_samenvatting else 'Geen aanvullende context'}
+**Context uit de hoordersanalyse (Maatschappij/Actualiteit):**
+{context_samenvatting if context_samenvatting else 'Geen aanvullende context'}
 
-**Opdracht:**
-Zoek liederen uit de beschikbare bundels (Liedboek, Hemelhoog, OpToonhoogte, Weerklank, WeerklankPsalm) die:
-1. Verwijzen naar de genoemde Schriftgedeelten
-2. Passen bij het thema en de liturgische periode
-3. Passen bij de stemming en context
-
-Geef een overzicht per bundel en sluit af met je top 5 aanbevelingen."""
+Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
 
     try:
         async with stdio_client(server_params) as (read, write):

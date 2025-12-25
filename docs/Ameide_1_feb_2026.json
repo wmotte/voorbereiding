@@ -1339,186 +1339,314 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 84,
-      "liturgische_balans": "De selectie biedt een sterke balans tussen uitbundige lofzang (intensiteit 8-9) en meditatieve reflectie (intensiteit 6-7). Er is een goede verdeling tussen de 'omgekeerde wereld' thematiek (Sefanja/Matteüs) en de 'dwaasheid van het kruis' (Paulus). De sfeer varieert van positief-hoopvol tot gemengd-ingetogen, passend bij de ernst van de wereldactualiteit.",
-      "contextuele_reflectie": "De liederen over vrede (Liedboek 1010, Weerklank 429) sluiten direct aan bij de winteroorlog in Oekraïne. De nadruk op 'kleinheid' en 'nederigheid' resoneert met de stabiele, confessionele identiteit van Ameide, terwijl liederen over 'licht' (Matteüs 5) passen bij de Epifanie-tijd en de behoefte aan hoop in een onzekere politieke en maatschappelijke tijd."
+      "aantal_gevonden_totaal": 42,
+      "liturgische_balans": "De selectie biedt een krachtig evenwicht tussen de lofzang op Gods rechtvaardigheid (Psalm 146) en de verstilde overgave van de Bergrede. Er is een sterke focus op de 'theologische paradox': God die het zwakke kiest om het sterke te beschamen. De sfeer varieert van strijdbaar (omkering van machten) tot diep persoonlijk (nederigheid).",
+      "contextuele_reflectie": "In de context van Ameide, waar de rivier de Lek zowel kracht als afhankelijkheid symboliseert, resoneren de liederen over 'rusten bij God' en 'recht doen aan de verdrukten' sterk. De 'open poort' van de Sionkerk vindt een echo in de liederen die Gods koninkrijk presenteren als een plek waar juist degenen die buitenstaan (de armen, de treurenden) welkom zijn. De wereldwijde onrust (Oekraïne) wordt geadresseerd door de nadruk op Gods gerechtigheid die boven menselijke machthebbers staat."
     },
     "liedboek_2013": [
       {
         "nummer": "146c",
-        "titel": "Alles wat adem heeft love de Here,",
+        "titel": "Alles wat adem heeft love de Here",
         "type_match": "Schriftlezing",
-        "karakter": "Krachtige lofpsalm",
-        "toelichting": "Directe match met de antwoordpsalm. Bezingt God die recht doet aan verdrukten en hongerigen.",
-        "suggestie_gebruik": "Intocht of na de eerste lezing"
+        "karakter": "Feestelijke lofzang",
+        "toelichting": "Directe bewerking van Psalm 146. Het bezingt God die 'recht doet aan de verdrukten', wat naadloos aansluit bij de lezing uit Sefanja en het Evangelie.",
+        "suggestie_gebruik": "Intochtlied"
       },
       {
-        "nummer": "989",
-        "titel": "Gelukkig de armen van geest",
-        "type_match": "Schriftlezing",
-        "karakter": "Liturgisch kernlied",
-        "toelichting": "De tekst volgt de Zaligsprekingen uit Matteüs 5 op de voet. Essentieel voor deze zondag.",
+        "nummer": "131",
+        "titel": "O Heer, er is geen trots in mij",
+        "type_match": "Conceptueel",
+        "karakter": "Verstild gebed",
+        "toelichting": "Vertaalt de 'nederigheid' van Sefanja 2 naar een persoonlijke houding van vertrouwen, als een kind bij zijn moeder.",
+        "suggestie_gebruik": "Kyrie-gebed of stiltemoment"
+      },
+      {
+        "nummer": "990",
+        "titel": "De laatsten worden de eersten",
+        "type_match": "Thematisch",
+        "karakter": "Strijdbare hymne",
+        "toelichting": "Verwoordt de radicale omkering van het Koninkrijk waar Jezus over spreekt in de Zaligsprekingen.",
         "suggestie_gebruik": "Antwoordlied na het Evangelie"
       },
       {
-        "nummer": "882",
-        "titel": "Allerhoogste God, heilig en glorierijk,",
+        "nummer": "991",
+        "titel": "De eersten zijn de laatsten",
+        "type_match": "Thematisch",
+        "karakter": "Hoopvol perspectief",
+        "toelichting": "Complementair aan 990; benadrukt dat Gods logica anders is dan de wereldse hiërarchie.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "1001",
+        "titel": "De wijze woorden en het groot vertoon",
         "type_match": "Schriftlezing",
-        "karakter": "Ingetogen loflied",
-        "toelichting": "Refereert aan de 'dwaasheid van het kruis' uit 1 Korintiërs 1. Verbindt Gods grootheid met de weg van de minste.",
+        "karakter": "Reflectief",
+        "toelichting": "Directe reflectie op 1 Korintiërs 1: de 'dwaasheid' van God die wijzer is dan mensen.",
         "suggestie_gebruik": "Lied na de Epistel"
       },
       {
-        "nummer": "1010",
-        "titel": "Geef vrede, Heer, geef vrede,",
+        "nummer": "838",
+        "titel": "O grote God die liefde zijt",
+        "type_match": "Emotioneel",
+        "karakter": "Toewijdingslied",
+        "toelichting": "Vraagt om een hart dat 'nederig dient', passend bij de oproep om de 'nederigen van het land' te zijn.",
+        "suggestie_gebruik": "Gebed om de Geest"
+      },
+      {
+        "nummer": "113a",
+        "titel": "Loof, knechten des Heren",
+        "type_match": "Conceptueel",
+        "karakter": "Majestueuze lofzang",
+        "toelichting": "Prijst God die de 'nederigen verhoogt', een centraal thema in de lezingen van deze zondag.",
+        "suggestie_gebruik": "Gloria"
+      },
+      {
+        "nummer": "146",
+        "titel": "Prijst de Heer, mijn ziel, o prijs Hem",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassieke psalm",
+        "toelichting": "De onberijmde of klassiek berijmde Psalm 146 is essentieel voor de verbinding tussen de lezingen.",
+        "suggestie_gebruik": "Psalm tussen de lezingen"
+      },
+      {
+        "nummer": "910",
+        "titel": "Soms groet een licht van vreugde",
+        "type_match": "Emotioneel",
+        "karakter": "Troostrijk",
+        "toelichting": "Sluit aan bij de 'gelukzaligheid' van hen die treuren of vervolgd worden.",
+        "suggestie_gebruik": "Lied bij de voorbeden"
+      },
+      {
+        "nummer": "916",
+        "titel": "Je kunt niet dieper vallen",
         "type_match": "Contextueel",
-        "karakter": "Smeekgebed om vrede",
-        "toelichting": "Sluit aan bij de 'vredestichters' uit de Bergrede én de actuele oorlogsdreiging in Oekraïne.",
-        "suggestie_gebruik": "Gebedsbevestiging of slotlied"
-      },
-      {
-        "nummer": "811",
-        "titel": "Zoals een moeder zorgt",
-        "type_match": "Thematisch",
-        "karakter": "Vertrouwenslied",
-        "toelichting": "Past bij de 'kleinheid' bij God en de behoefte aan veiligheid (Sionkerk logo 'open poort').",
-        "suggestie_gebruik": "Lied na de preek of bij de collecten"
-      },
-      {
-        "nummer": "734",
-        "titel": "Beati voi poveri,",
-        "type_match": "Schriftlezing",
-        "karakter": "Meditatief Taizé-lied",
-        "toelichting": "Korte, krachtige herhaling van de zaligspreking voor de armen. Zeer geschikt voor verstilling.",
-        "suggestie_gebruik": "Meditatief moment na de preek"
-      },
-      {
-        "nummer": "597",
-        "titel": "Wees hier aanwezig, licht in ons midden,",
-        "type_match": "Schriftlezing",
-        "karakter": "Invocatie",
-        "toelichting": "Vraagt om Gods aanwezigheid, gelinkt aan de eenheid en roeping in 1 Korintiërs 1.",
-        "suggestie_gebruik": "Lied bij aanvang van de dienst"
+        "karakter": "Bemoedigend",
+        "toelichting": "Biedt houvast voor de 'kleinen' en 'zwakken' in een harde wereld.",
+        "suggestie_gebruik": "Slotlied"
       }
     ],
     "hemelhoog": [
       {
-        "nummer": "1",
-        "titel": "Gelukkig zal je zijn,",
+        "nummer": "190",
+        "titel": "Nederig rijdend op een veulen",
+        "type_match": "Conceptueel",
+        "karakter": "Verwachtingsvol",
+        "toelichting": "Hoewel vaak voor Palmzondag, typeert dit lied de 'nederige Koning' die Jezus is in de Bergrede.",
+        "suggestie_gebruik": "Intocht"
+      },
+      {
+        "nummer": "279",
+        "titel": "And He shall lift you up",
         "type_match": "Thematisch",
-        "karakter": "Bemoedigend lied",
-        "toelichting": "Thematische match met het 'geluk' van de Bergrede. Toegankelijk voor jong en oud.",
-        "suggestie_gebruik": "Antwoordlied of kinderlied"
+        "karakter": "Meditatief",
+        "toelichting": "Korte, krachtige tekst over hoe God de nederigen verhoogt (Sefanja/Matteüs).",
+        "suggestie_gebruik": "Meditatief moment"
       },
       {
-        "nummer": "581",
-        "titel": "Want het geknakte riet",
-        "type_match": "Schriftlezing",
-        "karakter": "Troostrijk lied",
-        "toelichting": "Sluit aan bij Matteüs 5:4 (de treurenden) en de zorgzame God voor wie kwetsbaar is.",
-        "suggestie_gebruik": "Lied na de preek"
+        "nummer": "357",
+        "titel": "Mildheid en majesteit",
+        "type_match": "Conceptueel",
+        "karakter": "Aanbidding",
+        "toelichting": "Bezingt de paradox van de God die groot is maar klein werd, passend bij 1 Korintiërs 1.",
+        "suggestie_gebruik": "Gloria-moment"
       },
       {
-        "nummer": "682",
-        "titel": "Laat heel de wereld het zien,",
-        "type_match": "Schriftlezing",
-        "karakter": "Getuigend lied",
-        "toelichting": "Benadrukt de kracht van het kruis (1 Kor 1:18) als fundament voor de gemeente.",
-        "suggestie_gebruik": "Slotlied"
+        "nummer": "385",
+        "titel": "Hier aan uw voeten Heer",
+        "type_match": "Emotioneel",
+        "karakter": "Ootmoedig",
+        "toelichting": "Een gebed om de gezindheid van Christus (nederigheid en mededogen) over te nemen.",
+        "suggestie_gebruik": "Na de preek"
       },
       {
-        "nummer": "495",
-        "titel": "Onze hulp en onze verwachting",
-        "type_match": "Schriftlezing",
-        "karakter": "Liturgische opening",
-        "toelichting": "Directe link met de groet in 1 Kor 1:3. Zet de toon voor afhankelijkheid van God.",
-        "suggestie_gebruik": "Votum en Groet"
-      },
-      {
-        "nummer": "731",
-        "titel": "Soon and very soon,",
+        "nummer": "123",
+        "titel": "Wij zingen van die wonderlijke nacht",
         "type_match": "Contextueel",
-        "karakter": "Hoopvolle hymne",
-        "toelichting": "Geeft een eschatologisch perspectief op de overwinning op de dood, passend bij crisistijden.",
+        "karakter": "Verhalend",
+        "toelichting": "Benadrukt dat de boodschap van vrede aan de 'minsten' werd gebracht.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "567",
+        "titel": "God van trouw",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "Bevestigt Gods trouw aan de generaties, passend bij de Ameidse wens voor geloofsbehoud.",
         "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "181",
+        "titel": "Hij kwam bij ons, heel gewoon",
+        "type_match": "Thematisch",
+        "karakter": "Eenvoudig",
+        "toelichting": "De 'gewoonheid' van Jezus spiegelt de 'onbeduidendheid' waar Paulus over spreekt.",
+        "suggestie_gebruik": "Kinderlied of Schriftlied"
+      },
+      {
+        "nummer": "414",
+        "titel": "Jezus zegt, dat Hij hier van ons verwacht",
+        "type_match": "Thematisch",
+        "karakter": "Lichtvoetig",
+        "toelichting": "Sluit aan bij 'Licht van de wereld' dat volgt op de Zaligsprekingen.",
+        "suggestie_gebruik": "Met de kinderen"
       }
     ],
     "op_toonhoogte": [
       {
-        "nummer": "414",
-        "titel": "Jezus zegt, dat Hij hier van ons verwacht,",
-        "type_match": "Schriftlezing",
-        "karakter": "Eenvoudig getuigenis",
-        "toelichting": "Linkt aan het 'licht der wereld' (Matteüs 5:14-16). Zeer geschikt voor de gezinnen in Ameide.",
-        "suggestie_gebruik": "Lied met de kinderen"
+        "nummer": "94",
+        "titel": "Mijn ziel verheft Gods eer",
+        "type_match": "Thematisch",
+        "karakter": "Lofzang (Magnificat)",
+        "toelichting": "Het Magnificat is de ultieme tekst over de omgekeerde wereld: nederigen verhoogd, machtigen ontluisterd.",
+        "suggestie_gebruik": "Lofzang na de lezingen"
       },
       {
-        "nummer": "253",
-        "titel": "Geef vrede, Heer, geef vrede,",
+        "nummer": "114",
+        "titel": "Hij kwam bij ons, heel gewoon",
+        "type_match": "Conceptueel",
+        "karakter": "Dienstbaar",
+        "toelichting": "Focus op het dienende leven van Jezus als voorbeeld voor de 'nederigen'.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "223",
+        "titel": "Aan uw voeten Heer",
+        "type_match": "Emotioneel",
+        "karakter": "Rustgevend",
+        "toelichting": "Vindt rust in nederigheid, weg van de prestatiedrang van de wereld.",
+        "suggestie_gebruik": "Gebedslied"
+      },
+      {
+        "nummer": "345",
+        "titel": "Wie is als Hij?",
+        "type_match": "Conceptueel",
+        "karakter": "Krachtig",
+        "toelichting": "De paradox van de Leeuw en het Lam; macht in zwakheid.",
+        "suggestie_gebruik": "Gloria"
+      },
+      {
+        "nummer": "489",
+        "titel": "Dit is mijn hand en dat mijn voet",
+        "type_match": "Contextueel",
+        "karakter": "Gemeenschapsvormend",
+        "toelichting": "Iedereen is nodig, juist de 'onbeduidende' delen (1 Kor 1).",
+        "suggestie_gebruik": "Lied over de gemeente"
+      },
+      {
+        "nummer": "146",
+        "titel": "Ik wil zingen al mijn dagen",
         "type_match": "Schriftlezing",
-        "karakter": "Gebedslied",
-        "toelichting": "Vredestichters (Matteüs 5:9) in relatie tot de actuele wereldvrede.",
-        "suggestie_gebruik": "Gebeden"
+        "karakter": "Psalm",
+        "toelichting": "De klassieke berijming van Psalm 146.",
+        "suggestie_gebruik": "Psalm van de zondag"
       },
       {
         "nummer": "365",
-        "titel": "We are one in the Spirit,",
-        "type_match": "Schriftlezing",
-        "karakter": "Gemeenschapslied",
-        "toelichting": "Reflecteert de eenheid in de Geest en het lichaam van Christus (1 Kor 12/1).",
-        "suggestie_gebruik": "Lied bij de collecten of gemeenschap"
+        "titel": "We are one in the Spirit",
+        "type_match": "Thematisch",
+        "karakter": "Verbindend",
+        "toelichting": "Liefde als kenmerk van de 'gelukkigen' uit de Bergrede.",
+        "suggestie_gebruik": "Slotlied"
       }
     ],
     "weerklank": [
       {
         "nummer": "14",
-        "titel": "Alles wat adem heeft love de Here,",
+        "titel": "Alles wat adem heeft love de Here",
         "type_match": "Schriftlezing",
-        "karakter": "Klassieke lofzang",
-        "toelichting": "De berijmde versie van Psalm 146. Zeer herkenbaar voor de confessionele gemeente.",
-        "suggestie_gebruik": "Openingslied"
+        "karakter": "Statig",
+        "toelichting": "Lofzang op God die zorgt voor de verdrukten (Psalm 146).",
+        "suggestie_gebruik": "Intocht"
       },
       {
-        "nummer": "591",
-        "titel": "Weet je wat de Heer nu van ons verwacht?",
-        "type_match": "Schriftlezing",
-        "karakter": "Activerend lied",
-        "toelichting": "Directe link naar Matteüs 5:14-16 over het licht zijn in de wereld.",
-        "suggestie_gebruik": "Uitzendingslied"
-      },
-      {
-        "nummer": "10",
-        "titel": "Wie in de schaduw Gods mag wonen",
+        "nummer": "47",
+        "titel": "Mijn ziel maakt groot de Heer",
         "type_match": "Thematisch",
-        "karakter": "Vertrouwenspsalm",
-        "toelichting": "Thema hoop en veiligheid. Sluit aan bij de 'open poort' symboliek van de Sionkerk.",
-        "suggestie_gebruik": "Lied na de preek"
+        "karakter": "Klassiek Magnificat",
+        "toelichting": "De omkering van waarden: nederigen verhoogd.",
+        "suggestie_gebruik": "Lofzang"
       },
       {
-        "nummer": "269",
-        "titel": "Roep uit aan alle stranden,",
-        "type_match": "Schriftlezing",
-        "karakter": "Zendingslied",
-        "toelichting": "Verkondiging van het kruis (1 Kor 1:18) als de kracht van God.",
+        "nummer": "87",
+        "titel": "Wie zich hovaardig heffen",
+        "type_match": "Conceptueel",
+        "karakter": "Vermanend/Troostend",
+        "toelichting": "Waarschuwing tegen hoogmoed, zegen voor de zachtmoedigen.",
+        "suggestie_gebruik": "Na de wet of preek"
+      },
+      {
+        "nummer": "126",
+        "titel": "Zo arm werd de Heer",
+        "type_match": "Thematisch",
+        "karakter": "Ingetogen",
+        "toelichting": "Christus die arm werd om ons rijk te maken (1 Kor 1).",
+        "suggestie_gebruik": "Avondmaalslied of overdenking"
+      },
+      {
+        "nummer": "455",
+        "titel": "O grote God die liefde zijt",
+        "type_match": "Emotioneel",
+        "karakter": "Gebed",
+        "toelichting": "Bede om nederigheid en dienstbaarheid in de wereld.",
+        "suggestie_gebruik": "Slotgebed"
+      },
+      {
+        "nummer": "210",
+        "titel": "De toekomst van de Heer is daar",
+        "type_match": "Thematisch",
+        "karakter": "Hoopvol",
+        "toelichting": "Het aanbreken van het Koninkrijk van vrede en recht.",
         "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "338",
+        "titel": "Zoals ik ben, kom ik nabij",
+        "type_match": "Emotioneel",
+        "karakter": "Overgave",
+        "toelichting": "Komen zonder eigen verdienste, passend bij de 'armen van geest'.",
+        "suggestie_gebruik": "Na de preek"
       }
     ],
     "weerklank_psalmen": [
       {
         "nummer": "146",
-        "titel": "Ik wil zingen al mijn dagen:",
+        "titel": "Ik wil zingen al mijn dagen",
         "type_match": "Schriftlezing",
-        "karakter": "Bijbelgetrouwe psalm",
-        "toelichting": "De klassieke berijming van de voorgeschreven psalm. Centraal staat Gods zorg voor de kleine mens.",
+        "karakter": "Psalm",
+        "toelichting": "De kernpsalm van deze zondag: God als helper van de wezen en weduwen.",
         "suggestie_gebruik": "Psalm van de zondag"
       },
       {
-        "nummer": "1",
-        "titel": "Gelukkig wie niet deelneemt aan ’t beraad",
+        "nummer": "131",
+        "titel": "O HEER, er is geen trots in mij",
+        "type_match": "Conceptueel",
+        "karakter": "Meditatief",
+        "toelichting": "De psalm van de ootmoed.",
+        "suggestie_gebruik": "Stiltemoment"
+      },
+      {
+        "nummer": "147",
+        "titel": "Lof zij de HEER, goed is het leven",
         "type_match": "Thematisch",
-        "karakter": "Wijsheidspsalm",
-        "toelichting": "Thema 'geluk' (zalig) in contrast met de goddelozen. Past bij de Bergrede.",
-        "suggestie_gebruik": "Na de wet of als opening"
+        "karakter": "Lofzang",
+        "toelichting": "God die de nederigen opricht en de goddelozen ter aarde werpt.",
+        "suggestie_gebruik": "Lofzang"
+      },
+      {
+        "nummer": "41a",
+        "titel": "Zalig de mens, die denkt aan armen",
+        "type_match": "Thematisch",
+        "karakter": "Onderwijzend",
+        "toelichting": "Directe link met de 'Zaligsprekingen' en de zorg voor de naaste.",
+        "suggestie_gebruik": "Dienst der gaven"
+      },
+      {
+        "nummer": "75",
+        "titel": "U alleen, U loven wij",
+        "type_match": "Conceptueel",
+        "karakter": "Krachtig",
+        "toelichting": "God die het oordeel velt en de trotse vernedert.",
+        "suggestie_gebruik": "Na de lezing uit Sefanja"
       }
     ]
   },
