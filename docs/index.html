@@ -2038,6 +2038,27 @@
             return mapping[bookOriginal] || null;
         }
 
+        function getSearchUrl(query, context) {
+            const safeContext = (context || '').toLowerCase();
+            const encoded = encodeURIComponent(query);
+
+            // Contexts that should default to Web search
+            const webContexts = ['muziek', 'literatuur', 'hedendaags', 'klassiek', 'liturgisch', 'modern', 'nederlands', 'poezie', 'roman', 'boeken', 'liederen', 'songs'];
+            
+            // Contexts that should default to Video search
+            const videoContexts = ['film_documentaire', 'films', 'video', 'documentaire', 'movie', 'film'];
+            
+            if (webContexts.includes(safeContext)) {
+                return `https://duckduckgo.com/?origin=funnel_home_google&t=h_&q=${encoded}&ia=web`;
+            }
+            
+            if (videoContexts.includes(safeContext)) {
+                return `https://duckduckgo.com/?origin=funnel_home_google&t=h_&q=${encoded}&ia=videos&iax=videos`;
+            }
+            
+            return `https://duckduckgo.com/?origin=funnel_home_google&t=h_&q=${encoded}&ia=images&iax=images`;
+        }
+
         // Render all content
         function renderContent() {
             if (!jsonData) return;
@@ -2621,7 +2642,7 @@
                     html += `<div class="data-pairs">`;
                     shortValues.forEach(([key, value]) => {
                         if (key === 'zoekterm') {
-                            html += `<div class="data-pair"><div class="data-pair-label">${escapeHtml(formatKey(key))}</div><div class="data-pair-value"><span class="search-term">${processText(value)}</span></div></div>`;
+                            html += `<div class="data-pair"><div class="data-pair-label">${escapeHtml(formatKey(key))}</div><div class="data-pair-value"><a href="${getSearchUrl(value, parentKey)}" target="_blank" class="search-term" title="Zoek op DuckDuckGo">${processText(value)}</a></div></div>`;
                         } else {
                             html += `<div class="data-pair"><div class="data-pair-label">${escapeHtml(formatKey(key))}</div><div class="data-pair-value">${formatValue(value)}</div></div>`;
                         }
@@ -2656,7 +2677,7 @@
                     for (const [key, value] of simpleChildObjects) {
                         html += `<div class="nested-card">`;
                         html += `<div class="nested-card-title">${escapeHtml(formatKey(key))}</div>`;
-                        html += `<div class="nested-card-content">${renderObjectCompact(value)}</div>`;
+                        html += `<div class="nested-card-content">${renderObjectCompact(value, key)}</div>`;
                         html += `</div>`;
                     }
                     html += `</div>`;
@@ -2773,7 +2794,7 @@
             } else if (key === 'zoekterm') {
                 html += `<div class="data-item">`;
                 html += `<div class="data-label">${escapeHtml(formattedKey)}</div>`;
-                html += `<div class="data-value"><span class="search-term">${processText(value)}</span></div>`;
+                html += `<div class="data-value"><a href="${getSearchUrl(value, parentKey)}" target="_blank" class="search-term" title="Zoek op DuckDuckGo">${processText(value)}</a></div>`;
                 html += `</div>`;
             } else {
                 html += `<div class="data-item">`;
@@ -2784,7 +2805,7 @@
             return html;
         }
 
-        function renderObjectCompact(obj) {
+        function renderObjectCompact(obj, context) {
             if (!obj || typeof obj !== 'object') {
                 return formatValue(obj);
             }
@@ -2804,9 +2825,9 @@
                     }
                 } else if (typeof value === 'object') {
                     html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong></div>`;
-                    html += `<div style="margin-left: 10px;">${renderObjectCompact(value)}</div>`;
+                    html += `<div style="margin-left: 10px;">${renderObjectCompact(value, key)}</div>`;
                 } else if (key === 'zoekterm') {
-                    html += `<div style="margin-bottom: 4px;"><span class="search-term">${processText(value)}</span></div>`;
+                    html += `<div style="margin-bottom: 4px;"><a href="${getSearchUrl(value, context)}" target="_blank" class="search-term" title="Zoek op DuckDuckGo">${processText(value)}</a></div>`;
                 } else {
                     html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${formatValue(value)}</div>`;
                 }
@@ -2863,7 +2884,7 @@
                             if (typeof value === 'boolean') continue;
 
                             if (key === 'zoekterm') {
-                                html += `<div style="margin-top: 6px;"><span class="search-term">${processText(value)}</span></div>`;
+                                html += `<div style="margin-top: 6px;"><a href="${getSearchUrl(value, parentKey)}" target="_blank" class="search-term" title="Zoek op DuckDuckGo">${processText(value)}</a></div>`;
                             } else if (Array.isArray(value)) {
                                 if (value.every(v => typeof v === 'string') && value.length <= 5) {
                                     html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${value.map(v => processText(v)).join(', ')}</div>`;
@@ -2874,7 +2895,7 @@
                             } else if (typeof value === 'object') {
                                 // Handle nested objects (like relevante_scene)
                                 html += `<div style="margin-top: 8px; padding-top: 4px; border-top: 1px dashed var(--border-light);"><strong>${escapeHtml(formatKey(key))}:</strong></div>`;
-                                html += `<div style="margin-left: 0; padding-left: 0;">${renderObjectCompact(value)}</div>`;
+                                html += `<div style="margin-left: 0; padding-left: 0;">${renderObjectCompact(value, parentKey)}</div>`;
                             } else {
                                 html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${formatValue(value)}</div>`;
                             }
