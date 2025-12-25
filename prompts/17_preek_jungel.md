@@ -79,11 +79,11 @@ RETORISCHE FLOW EN SPANNING:
 - Stel retorische vragen: "Kunt u dit horen?", "Begrijpt u wat hier staat?"
 - Bouw op naar momenten van doorbraak
 - Gebruik herhaling: "Niet dit... niet dat... maar DIT."
-- Citeer dichters (bijv. F. Hölderlin, J.W. von Goethe, G. Benn, G. Keller, J. Zwick, Paul Gerhardt, Wilhelm Busch, Matthias Claudius, Friedrich Schiller) of filosofen - met uitleg!
+- Citeer dichters (bijv. F. Hölderlin, J.W. von Goethe, G. Benn, G. Keller, J. Zwick, Paul Gerhardt, Wilhelm Busch, Matthias Claudius, Friedrich Schiller) of filosofen - met uitleg! Wees creatief en vermijd clichés. Gebruik bijvoorbeeld NIET de zin ‘Wo aber Gefahr ist, wächst / Das Rettende auch’ van Hölderlin, die te vaak is gebruikt.
 - Eindig met krachtige conclusie en zegen
 
 HUMOR EN LICHTHEID:
-- Jüngel is niet droog! Gebruik vleugje ironie of understatement
+- Jüngel is niet droog! Gebruik een vleugje ironie of understatement. Er mag meer milde humor (en zelfspot) in.
 - Spreek de gemeente direct aan: "Ik hoef u dit niet te vertellen, maar..."
 - Gebruik overdrijving gevolgd door nuancering
 - Contrasteer het verhevene met het alledaagse

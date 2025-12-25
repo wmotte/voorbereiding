@@ -3642,62 +3642,62 @@
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Goede God",
+        "aanspraak": "God, onze Vader",
         "elementen": {
-          "verootmoediging": "Wij maken onszelf vaak groot en sterk.",
-          "schuldbelijdenis": "Het spijt ons dat we soms trots zijn.",
-          "verlangen": "Wij willen graag rust vinden bij U."
+          "verootmoediging": "Wij zijn hier in dit huis. Wij weten dat wij klein zijn en U groot.",
+          "schuldbelijdenis": "Deze week wilden wij alles zelf doen. Wij dachten dat wij sterk moesten zijn. Wij vergaten dat wij U nodig hebben.",
+          "verlangen": "Wij willen bij U schuilen. Wij willen rust vinden bij U."
         },
-        "tekst": "Goede God,\n\nWij zijn hier samen in de Sionkerk. Buiten is het koud, want het is februari. Wij komen uit ons eigen huis naar dit huis. In ons hart nemen wij alles mee van de afgelopen week.\n\nSoms doen wij alsof we heel sterk zijn. Wij willen alles zelf kunnen. Wij willen laten zien hoe goed wij zijn. Maar hier bij U hoeft dat niet. U weet wie wij echt zijn. Soms zijn wij ook bang of doen we anderen pijn. Dat spijt ons. Wilt U het ons vergeven?\n\nMaak ons hart weer schoon en rustig. Wij willen nu even stil zijn bij U. Wij willen voelen dat U van ons houdt. Want zonder U kunnen wij niet. Wij hebben Uw liefde nodig om weer verder te kunnen.\n\nAmen.",
-        "echo_schriftlezing": "De 'ootmoed' (jezelf niet groot maken) uit Sefanja.",
+        "tekst": "God, onze Vader. Wij zijn hier in dit huis. Buiten is het koud en waait de wind over de dijk. Wij laten de drukte van de week achter de deur. Wij komen bij U met lege handen. \nSoms denken wij dat we alles zelf kunnen. Wij willen sterk zijn en alles goed doen. Maar deze week ging het vaak mis. Wij waren hard voor anderen. Wij dachten alleen aan onszelf. Wij voelen ons nu klein. \nMaar U zegt: Kom maar bij Mij. Bij U mogen wij schuilen. Zoals een vogel schuilt onder de vleugels van zijn moeder. Zoals wij veilig zijn achter de dijk als het water hoog staat. \nU maakt ons weer schoon van binnen. U geeft ons een nieuw begin. Wij verlangen naar uw vrede. Wij zijn blij dat U hier bij ons bent. Amen.",
+        "echo_schriftlezing": "Het beeld van schuilen bij God uit Sefanja.",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "Heer Jezus",
+        "aanspraak": "Heer Jezus Christus",
         "focus": "nood_wereld",
         "structuur": {
           "intenties": [
             {
               "voor_wie": "mensen in oorlog",
-              "nood": "In Oekraïne is het koud en gevaarlijk. In Gaza hebben mensen honger.",
+              "nood": "In Oekraïne en Gaza is het donker en koud. Kinderen zijn bang voor het geluid van bommen.",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "de natuur",
-              "nood": "De aarde wordt te warm en raakt uitgeput.",
+              "voor_wie": "de aarde",
+              "nood": "De wereld wordt steeds warmer. De natuur gaat kapot en mensen maken zich zorgen over de toekomst.",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "mensen in Ameide",
-              "nood": "Sommige mensen voelen zich alleen of hebben te weinig geld.",
+              "voor_wie": "mensen die alleen zijn",
+              "nood": "In ons eigen dorp Ameide zitten mensen alleen thuis. Zij voelen zich vergeten en hebben pijn.",
               "kyrie_refrain": true
             }
           ]
         },
-        "tekst": "Heer Jezus,\n\nDe wereld is vaak een moeilijke plek. Wij denken aan de mensen in Oekraïne. Het is winter en er is oorlog. Mensen zijn bang in de kou. Zij hebben geen warm huis meer. Wij voelen hun pijn en hun angst.\nHeer, wees erbij.\n\nWij denken ook aan de mensen in Gaza. Er is geen eten en er zijn geen medicijnen meer. Kinderen huilen en ouders weten het niet meer. Wij bidden om vrede voor hen. Zorg dat de ruzie stopt en dat er weer hoop komt.\nHeer, wees erbij.\n\nWij denken aan de natuur. Het gaat niet goed met de aarde. Het wordt te warm en er zijn veel rampen. Wij hebben niet goed op Uw wereld gepast. Help ons om weer zuinig te zijn op alles wat leeft.\nHeer, wees erbij.\n\nOok dichtbij huis is er verdriet. In ons eigen dorp Ameide zijn mensen die het moeilijk hebben. Mensen die ziek zijn of zich heel alleen voelen. Mensen die zich zorgen maken over hun geld of hun werk. Wij brengen hen bij U in ons hart.\nHeer, wees erbij.\n\nAmen.",
-        "echo_schriftlezing": "De 'treurenden' uit het evangelie van Matteüs.",
+        "tekst": "Heer Jezus Christus, de wereld heeft pijn. Wij voelen het verdriet van mensen ver weg. In Oekraïne is het winter. Mensen hebben geen stroom en geen warmte. Zij zijn bang voor het geweld. In Gaza hebben kinderen honger. Er is geen veilige plek meer. Wij weten niet wat we moeten doen. \nWij bidden ook voor de aarde. Het wordt steeds warmer. Er zijn overstromingen en droogte. Wij zijn niet altijd goede bewoners van uw wereld. Wij maken ons zorgen om de kinderen die na ons komen. \nOok dichtbij is er nood. Wij denken aan de man die alleen in zijn kamer zit in Open Vensters. Niemand komt op bezoek. Wij denken aan de vrouw die wacht op nieuws van de dokter. Haar hart klopt snel van angst. \nHeer, wees bij hen. Geef hen uw warmte. Maak de wereld weer heel. Wij kunnen het niet alleen. Wij roepen om uw hulp. \nGod, wees ons nabij. Amen.",
+        "echo_schriftlezing": "De treurenden en de armen uit de Zaligsprekingen.",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Goede Geest van God",
+        "aanspraak": "Goede Heilige Geest",
         "focus": "begrip_bijbelverhaal",
-        "tekst": "Goede Geest van God,\n\nWij gaan nu lezen uit de Bijbel. Het zijn oude verhalen over Jezus op een berg. Maar deze verhalen zijn ook voor ons vandaag. \n\nWij vragen U: wees bij ons. Maak ons hart open voor Uw woorden. Zorg dat het verhaal ons raakt. Help ons om te begrijpen wat Jezus ons wil leren. Laat de woorden van de berg landen in ons eigen leven in de polder. Wij willen graag doen wat U van ons vraagt.\n\nAmen.",
-        "echo_schriftlezing": "De berg waar Jezus gaat zitten om te onderwijzen.",
+        "tekst": "Goede Heilige Geest, kom bij ons. U bent als de wind die over de Lek waait. Waai nu ook door ons hart. Wij gaan nu luisteren naar de woorden van Jezus. Maak ons van binnen zacht en open. \nSoms begrijpen wij de Bijbel niet. Soms vinden wij de woorden van Jezus moeilijk. Want Hij zegt dat arme mensen gelukkig zijn. Dat is anders dan wat wij op televisie zien. \nHelp ons om te voelen wat U bedoelt. Raak ons aan met uw liefde. Zorg dat het verhaal ons verandert. Zorg dat wij uw woorden meenemen in onze handen en in ons hart. Amen.",
+        "echo_schriftlezing": "De berg waar Jezus onderwijst.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Dank U wel, God",
-        "verbining_verkondiging": "God houdt van mensen die klein en zwak zijn.",
+        "aanspraak": "Dank U, God",
+        "verbinding_verkondiging": "Echt geluk is weten dat God van je houdt, ook als je zwak bent.",
         "elementen": {
-          "dank_gehoorde_woord": "Dank voor het goede nieuws van Jezus.",
-          "vraag_kracht_bewaren": "Help ons om dit geheim te onthouden.",
-          "verbinding_dagelijks_leven": "Laat ons lief zijn voor anderen deze week."
+          "dank_gehoorde_woord": "Dank U voor de woorden van Jezus op de berg.",
+          "vraag_kracht_bewaren": "Help ons om deze woorden vast te houden in de nieuwe week.",
+          "verbinding_dagelijks_leven": "Laat ons zachtmoedig zijn tegen onze buren en collega's."
         },
-        "tekst": "Dank U wel, God,\n\nWij danken U voor de woorden van Jezus. Wij hebben gehoord dat U van ons houdt. Juist als wij ons niet sterk voelen. Dank U dat U zegt: je bent gelukkig als je arm bent. Je bent gelukkig als je verdriet hebt. Dat is heel bijzonder. De wereld zegt vaak iets anders. De wereld zegt dat je rijk en stoer moet zijn. Maar bij U mag iedereen erbij horen.\n\nWij danken U voor de vrijheid in ons dorp. Voor de Sionkerk waar wij samen kunnen komen. Dank U voor het eten dat wij elke dag hebben. Voor onze vrienden en onze familie. Voor de mensen die naar ons omkijken.\n\nHelp ons om deze week te onthouden wat we hebben gehoord. Als we morgen weer aan het werk gaan of naar school. Help ons om niet stoer te doen, maar om zacht te zijn. Laat ons anderen helpen die het moeilijk hebben. Geef ons de kracht om vrede te maken als er ruzie is. Wij willen graag leven zoals Jezus dat deed.\n\nWij zijn blij dat we bij U mogen horen. U geeft ons alles wat we echt nodig hebben.\n\nAmen.",
-        "echo_schriftlezing": "De 'zaligsprekingen' (gelukkig zijn) van Jezus.",
+        "tekst": "Dank U, God. Wij hebben gehoord over echt geluk. In de wereld moet je rijk zijn of sterk. Je moet de beste zijn om mee te tellen. Maar Jezus zegt iets heel anders. \nHij zegt dat mensen met lege handen bij U horen. Hij zegt dat mensen die verdriet hebben, getroost worden. Dat is een wereld op zijn kop. Maar het is een wereld vol hoop. \nWij danken U dat U niet kijkt naar ons succes. U kijkt niet naar hoeveel geld wij hebben of hoe hard wij werken. U kijkt naar ons hart. Dank U dat U kiest voor wat klein en zwak is. Dat geeft ons moed. Want wij voelen ons ook vaak klein en onzeker. \nHelp ons om dit vast te houden. Als we morgen weer aan het werk gaan in Ameide. Als we op school zijn of thuis. Laat ons weten dat we bij U horen. Dat is ons grootste geluk. \nDank U dat wij bij U mogen horen, precies zoals we zijn. Amen.",
+        "echo_schriftlezing": "De omgekeerde wereld van de Zaligsprekingen en 1 Korintiërs.",
         "amen": true
       },
       "voorbeden": {
@@ -3709,76 +3709,71 @@
               "vrede",
               "leiders"
             ],
-            "tekst": "Wij bidden voor alle landen op de wereld. Wij bidden voor de mensen die de baas zijn. Geef hen wijsheid. Zorg dat ze niet kiezen voor macht of wapens. Maar laat hen kiezen voor vrede en voor eerlijk delen. Zorg voor de mensen die moeten vluchten voor geweld."
+            "tekst": "Wij bidden voor de wereld. Voor de mensen die de baas zijn in grote landen. Geef hen een zacht hart. Laat hen stoppen met vechten en beginnen met praten. Wij bidden voor vrede in Oekraïne en Israël."
           },
           "kerk": {
             "themas": [
-              "Sionkerk",
-              "samen geloven"
+              "alle gelovigen",
+              "Sionkerk"
             ],
-            "tekst": "Wij bidden voor de kerk overal op de wereld. En ook voor onze eigen Sionkerk in Ameide. Laat onze kerk een warme plek zijn. Een plek waar iedereen zich welkom voelt. Ook mensen die zich niet sterk voelen. Help ons om samen één groep te zijn."
+            "tekst": "Wij bidden voor uw kerk overal op aarde. Ook voor onze eigen Sionkerk. Help ons om een plek te zijn waar iedereen welkom is. Vooral mensen die zich nergens anders thuis voelen."
           },
           "naasten": {
             "themas": [
               "zieken",
-              "jongeren",
-              "huizen"
+              "mensen met zorgen"
             ],
-            "tekst": "Wij bidden voor de mensen die ziek zijn. Geef hen kracht en raak hen aan met Uw liefde. Wij bidden voor de jongeren in ons dorp. Het is voor hen moeilijk om een eigen huis te vinden. Help hen om een goede plek te vinden om te wonen. Wij bidden voor mensen die iemand hebben verloren. Geef hen Uw troost."
+            "tekst": "Wij bidden voor de mensen om ons heen. Voor de zieken in ons dorp. Voor de boeren die zich zorgen maken over hun bedrijf. Voor de jongeren die geen huis kunnen vinden."
           },
           "eigen_gemeente": {
             "themas": [
-              "zachtmoedigheid",
-              "elkaar helpen"
+              "wij hier samen",
+              "de nieuwe week"
             ],
-            "tekst": "Wij bidden voor onszelf hier in de kerk. Help ons om deze week zacht te zijn voor elkaar. Geef ons geduld als we boos worden. Help ons om eerlijk te zijn. Wij willen graag laten zien dat wij bij U horen."
+            "tekst": "Wij bidden voor onszelf. Geef ons kracht voor de nieuwe week. Help ons om vredestichters te zijn in onze eigen straat."
           }
         },
-        "stilte_instructie": "*Het is nu even stil. In ons hart bidden wij voor de dingen die alleen wij weten...*",
-        "overgang_onze_vader": "Wij bidden nu samen het gebed dat Jezus ons leerde:",
+        "stilte_instructie": "*Het is nu even stil. Wij bidden in ons hart voor wat wij zelf nodig hebben.*",
+        "overgang_onze_vader": "Samen bidden wij het gebed dat Jezus ons leerde:",
         "onze_vader": "Onze Vader in de hemel,\nlaat iedereen u eren.\nLaat uw nieuwe wereld komen.\nLaat op aarde uw wil gedaan worden,\nnet zoals dat in de hemel gebeurt.\nGeef ons vandaag het eten dat we nodig hebben.\nEn vergeef ons wat we fout gedaan hebben,\nwant wij hebben ook andere mensen hun fouten vergeven.\nHelp ons om nooit tegen u te kiezen.\nEn bescherm ons tegen de macht van het kwaad.\nWant u bent koning,\nu regeert met grote macht,\nvoor altijd. Amen."
       }
     },
     "poetische_technieken_gebruikt": {
       "parallellisme": [
-        "Je bent gelukkig als je arm bent. Je bent gelukkig als je verdriet hebt.",
-        "Wij willen vrede... Wij willen eerlijk delen."
+        "U bent de rots waar wij op staan. U bent het licht in het donker."
       ],
       "drieslag": [
-        "ziek zijn, zich alleen voelen, zich zorgen maken",
-        "ons werk, school, thuis"
+        "In ons hart, in onze handen, in ons leven.",
+        "Geen pijn meer, geen verdriet, geen angst."
       ],
       "anafoor": [
-        "Dank U voor... Dank U voor... Dank U voor...",
-        "Wij bidden voor... Wij bidden voor..."
+        "Wij bidden voor... Wij bidden voor...",
+        "Dank U voor... Dank U voor..."
       ],
       "inclusio": [
-        "Het drempelgebed begint met de kou buiten, de voorbeden eindigen met de warmte van de kerk en het dorp."
+        "Het gebed begint met schuilen bij God en eindigt met de rust van het Onze Vader."
       ],
       "zintuiglijke_taal": [
-        "voelen dat U van ons houdt",
-        "raak ons hart aan",
-        "maak ons hart schoon",
-        "landen in ons leven",
-        "raak hen aan met Uw liefde"
+        "Voelen van de wind",
+        "Warmte van binnen",
+        "Raak ons hart aan",
+        "Lege handen",
+        "Zacht hart"
       ],
       "lokale_beelden": [
-        "Ameide",
-        "Sionkerk",
-        "polder",
-        "februari",
-        "kou buiten",
-        "eigen huis"
+        "De wind over de Lek",
+        "Veilig achter de dijk",
+        "Woonzorgcentrum Open Vensters"
       ]
     },
     "echo_techniek": {
-      "schriftlezing_thema": "De omgekeerde wereld: God kiest voor wie klein en kwetsbaar is.",
+      "schriftlezing_thema": "De kracht van klein zijn bij God.",
       "echo_per_gebed": {
-        "drempelgebed": "Het niet groot hoeven zijn bij God (ootmoed).",
-        "kyrie": "De pijn van de wereld die past bij de 'treurenden'.",
-        "epiclese": "Het verhaal van de berg moet landen in de lage polder.",
-        "dankgebed": "Dank voor de bijzondere woorden van Jezus over geluk.",
-        "voorbeden": "Bidden voor de 'zachtmoedigen' en 'vredestichters' in Ameide."
+        "drempelgebed": "Schuilen bij God (Sefanja).",
+        "kyrie": "De nood van de treurenden en armen (Matteüs).",
+        "epiclese": "De berg van onderwijs (Matteüs).",
+        "dankgebed": "De omgekeerde wereld van geluk (Matteüs).",
+        "voorbeden": "Vredestichters in de praktijk (Matteüs)."
       }
     }
   },
