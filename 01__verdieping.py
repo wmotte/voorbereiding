@@ -3,15 +3,19 @@
 Verdieping: Exegese, Kunst/Cultuur en Homiletiek voor Preekvoorbereiding
 
 Dit script bouwt voort op de basisanalyse van contextduiding.py en voegt toe:
-- 07_exegese: Exegetische analyse van de Schriftlezingen
-- 08_kunst_cultuur: Kunst, cultuur en film bij de lezingen
-- 09_focus_en_functie: Focus en functie van de preek
-- 10_kalender: Gedenkdagen en bijzondere momenten
-- 11_representatieve_hoorders: Hoordersprofielen
-- 12_homiletische_analyse: Homiletische analyse (Lowry's Plot)
-- 13_gebeden: Gebeden voor de eredienst
+- 08a_exegese: Exegetische analyse van de Schriftlezingen
+- 09_kunst_cultuur: Kunst, cultuur en film bij de lezingen
+- 10_focus_en_functie: Focus en functie van de preek
+- 11_kalender: Gedenkdagen en bijzondere momenten
+- 12_representatieve_hoorders: Hoordersprofielen
+- 13_homiletische_analyse: Homiletische analyse (Lowry's Plot)
+- 13_homiletische_analyse_buttrick: Homiletische analyse (Buttrick's Moves & Structures)
+- 13b_homiletische_illustraties: Illustraties generator (min. 15 illustraties)
+- 14_gebeden: Gebeden voor de eredienst
+- 15_kindermoment/bezinningsmoment: Optionele momenten
+- 16-18_preken: Preekschetsen in stijlen van Sölle, Jüngel, Noordmans
 
-Het leest de output van de vorige analyses (00-06) en gebruikt deze als context.
+Het leest de output van de vorige analyses (00-07) en gebruikt deze als context.
 Voor de exegese worden de bijbelteksten opgehaald van naardensebijbel.nl.
 
 W.M. Otte (w.m.otte@umcutrecht.nl)
@@ -364,6 +368,7 @@ def read_previous_analyses(folder: Path) -> dict:
         ("12_representatieve_hoorders", "representatieve_hoorders"),
         ("13_homiletische_analyse", "homiletische_analyse"),
         ("13_homiletische_analyse_buttrick", "homiletische_analyse_buttrick"),
+        ("13b_homiletische_illustraties", "homiletische_illustraties"),
         ("14_gebeden", "gebeden"),
         ("15_bezinningsmoment", "bezinningsmoment"),
         ("15_kindermoment", "kindermoment"),
@@ -639,6 +644,10 @@ def build_context_string(previous_analyses: dict, limited: bool = False, exclude
     if previous_analyses.get("homiletische_analyse_buttrick") and "homiletische_analyse_buttrick" not in excluded_sections:
         sections.append("## Homiletische Analyse (Buttrick)\n\n" +
                        previous_analyses["homiletische_analyse_buttrick"])
+
+    if previous_analyses.get("homiletische_illustraties") and "homiletische_illustraties" not in excluded_sections:
+        sections.append("## Homiletische Illustraties\n\n" +
+                       previous_analyses["homiletische_illustraties"])
 
     if previous_analyses.get("gebeden") and "gebeden" not in excluded_sections:
         sections.append("## Gebeden\n\n" +
@@ -920,6 +929,7 @@ def update_summary(output_dir: Path):
                 ("12_representatieve_hoorders", "Representatieve Hoorders"),
                 ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
                 ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
+                ("13b_homiletische_illustraties", "Homiletische Illustraties Generator"),
                 ("14_gebeden", "Gebeden voor de Eredienst"),
                 ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
                 ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
@@ -959,12 +969,14 @@ def update_summary(output_dir: Path):
             ("12_representatieve_hoorders", "Representatieve Hoorders"),
             ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
             ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
-                            ("14_gebeden", "Gebeden voor de Eredienst"),
-                            ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
-                            ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
-                            ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
-                            ("15_bezinningsmoment", "Moment van Bezinning"),
-                            ("15_kindermoment", "Kindermoment"),            ("16_preek_solle", "Preek in de stijl van Sölle"),
+            ("13b_homiletische_illustraties", "Homiletische Illustraties Generator"),
+            ("14_gebeden", "Gebeden voor de Eredienst"),
+            ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
+            ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
+            ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
+            ("15_bezinningsmoment", "Moment van Bezinning"),
+            ("15_kindermoment", "Kindermoment"),
+            ("16_preek_solle", "Preek in de stijl van Sölle"),
             ("17_preek_jungel", "Preek in de stijl van Jüngel"),
             ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
         ]
@@ -1109,6 +1121,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("12_representatieve_hoorders", "Representatieve Hoorders"),
         ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
         ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
+        ("13b_homiletische_illustraties", "Homiletische Illustraties Generator"),
         ("14_gebeden", "Gebeden voor de Eredienst"),
         ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
         ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
@@ -1228,10 +1241,10 @@ Hieronder vind je de output van eerdere stappen in het proces. Gebruik deze info
         # Voer analyse uit
         if name == "11_kalender":
             temp = 0.1 # Laag voor feitelijke precisie
-        elif name in ["14_gebeden", "14_gebeden_profetisch", "14_gebeden_dialogisch", "14_gebeden_eenvoudig", 
-                      "15_kindermoment", "15_bezinningsmoment", 
+        elif name in ["13b_homiletische_illustraties", "14_gebeden", "14_gebeden_profetisch", "14_gebeden_dialogisch", "14_gebeden_eenvoudig",
+                      "15_kindermoment", "15_bezinningsmoment",
                       "16_preek_solle", "17_preek_jungel", "18_preek_noordmans"]:
-            temp = 0.8 # Hoger voor poëtische creativiteit
+            temp = 0.8 # Hoger voor poëtische creativiteit en concrete beeldspraak
         else:
             temp = 0.2 # Standaard
 

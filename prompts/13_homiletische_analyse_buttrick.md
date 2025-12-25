@@ -106,11 +106,11 @@ Tussen opening en afsluiting wordt het idee ontwikkeld. Dit is geen lege woorden
 
 **De basisretoriek van christelijke prediking kent drie intenties:**
 
-1. **Naar voren brengen (bringing out)** - Het zichtbaar maken van geloofsovertuigingen door symbolen te verkennen. Dit gebeurt door afbeelding, analogie, metafoor, uitleg, analyse.
+1. **Ontvouwen** - Het zichtbaar maken van geloofsovertuigingen door symbolen te verkennen. Dit gebeurt door afbeelding, analogie, metafoor, uitleg, analyse.
 
 2. **Associëren** - Het verbinden van christelijke begrippen met beelden van geleefde ervaring. Hierdoor wordt aangetoond dat ons geloof waar is in het leven. Dit gebruikt beelden, illustraties, voorbeelden, getuigenissen.
 
-3. **Dissociëren** - Het onderscheiden van christelijk verstaan van gangbare sociale houdingen, modes en aannames. Dit gebruikt dialectiek, antithese, oppositie.
+3. **Onderscheiden** - Het onderscheiden van christelijk verstaan van gangbare sociale houdingen, modes en aannames. Dit gebruikt dialectiek, antithese, oppositie.
 
 **Ontwikkelingstalen (modi van bewustzijn):**
 - **Temporeel** - Historisch, herinnerend (diachronisch denken)
@@ -695,7 +695,7 @@ Voor elke move lever je:
 *Metadata:*
 - Kernidee in één zin
 - Perspectief (stance, orientation, distance, focal field)
-- Retorische strategie (bringing out / associating / dissociating)
+- Retorische strategie (Ontvouwen / Associëren / Onderscheiden)
 - Verbinding met vorige/volgende move
 
 *Uitgeschreven tekst:*
@@ -745,7 +745,7 @@ niet één keer maar herhaaldelijk: hij at en dronk met zondaars.
 **Move 1: Bijbelse betekenis bekijken**
 - *Kernidee:* Als de Bijbel "zondaars" zegt, bedoelt de Bijbel echte zondaars
 - *Perspectief:* Kijken naar Bijbelse betekenissen door hedendaagse beelden
-- *Strategie:* Bringing out - wat betekent "zondaar" in de Bijbel?
+- *Strategie:* Ontvouwen - wat betekent "zondaar" in de Bijbel?
 - *Ontwikkeling:* Tollenaars waren de Joodse maffia, prostituees waren keiharde beroepsmensen
 
 **Move 2: Hedendaags zelfbewustzijn**
@@ -757,7 +757,7 @@ niet één keer maar herhaaldelijk: hij at en dronk met zondaars.
 **Move 3: Jezus' woorden herinneren**
 - *Kernidee:* Jezus kwam niet voor rechtvaardigen maar voor zondaars
 - *Perspectief:* Herinneren terwijl we naar Jezus' leven kijken (vanuit de positie van de Farizeeën)
-- *Strategie:* Bringing out - wat zei Jezus en wat deed hij?
+- *Strategie:* Ontvouwen - wat zei Jezus en wat deed hij?
 - *Ontwikkeling:* Gedoopt met zondaars, veroordeeld als zondaar, gekruisigd tussen dieven
 
 **Move 4: De uitsluiting beseffen**
@@ -769,7 +769,7 @@ niet één keer maar herhaaldelijk: hij at en dronk met zondaars.
 **Move 5: De uitnodiging aanvaarden**
 - *Kernidee:* We kunnen binnenkomen als vergeven zondaars
 - *Perspectief:* Directe aanspraak, predikant voegt zich bij gemeente
-- *Strategie:* Bringing out + Associëren - het evangelie en onze respons
+- *Strategie:* Ontvouwen + Associëren - het evangelie en onze respons
 - *Ontwikkeling:* Geen verdiende genade, gewoon komen zoals we zijn
 
 **Conclusie:**
@@ -814,7 +814,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
         "distance": "string - emotionele/temporele afstand",
         "focal_field": "string - wijdte van de lens"
       },
-      "retorische_strategie": "string - bringing_out|associating|dissociating",
+      "retorische_strategie": "string - Ontvouwen|Associëren|Onderscheiden",
       "verbinding_vorige": "string - hoe volgt deze move op de vorige? (null voor move 1)",
       "verbinding_volgende": "string - hoe bereidt deze move voor op de volgende?",
       "uitgeschreven_tekst": {
@@ -873,7 +873,7 @@ Hieronder een **verkort** (!) voorbeeld gebaseerd op Marcus 2:13-17 (Jezus eet m
         "distance": "Enige afstand - we observeren een andere tijd",
         "focal_field": "Smal: specifiek de tafelgenoten van Jezus"
       },
-      "retorische_strategie": "bringing_out",
+      "retorische_strategie": "Ontvouwen",
       "verbinding_vorige": null,
       "verbinding_volgende": "Door de zondaars concreet te maken, wordt de vraag urgent: en wij dan?",
       "uitgeschreven_tekst": {
@@ -893,7 +893,7 @@ Hieronder een **verkort** (!) voorbeeld gebaseerd op Marcus 2:13-17 (Jezus eet m
         "distance": "Zeer dichtbij - persoonlijk zelfonderzoek",
         "focal_field": "Smal: het eigen geweten"
       },
-      "retorische_strategie": "dissociating",
+      "retorische_strategie": "Onderscheiden",
       "verbinding_vorige": "Verschuiving van Bijbelse wereld naar eigen zelfbeeld",
       "verbinding_volgende": "Deze zelfgenoegzaamheid wordt straks geconfronteerd",
       "uitgeschreven_tekst": {
@@ -913,7 +913,7 @@ Hieronder een **verkort** (!) voorbeeld gebaseerd op Marcus 2:13-17 (Jezus eet m
         "distance": "Medium - we overzien een heel leven",
         "focal_field": "Wijd: het geheel van Jezus' keuzes"
       },
-      "retorische_strategie": "bringing_out",
+      "retorische_strategie": "Ontvouwen",
       "verbinding_vorige": "Van onze zelfbeoordeling naar Jezus' eigen woorden",
       "verbinding_volgende": "Dit patroon dwingt ons tot herpositionering",
       "uitgeschreven_tekst": {
@@ -933,7 +933,7 @@ Hieronder een **verkort** (!) voorbeeld gebaseerd op Marcus 2:13-17 (Jezus eet m
         "distance": "Confronterend dichtbij",
         "focal_field": "Scherp: de drempel tussen binnen en buiten"
       },
-      "retorische_strategie": "associating",
+      "retorische_strategie": "Associëren",
       "verbinding_vorige": "Als Jezus daar is, waar zijn wij dan?",
       "verbinding_volgende": "Vanuit dit besef kan de uitnodiging komen",
       "uitgeschreven_tekst": {
@@ -953,7 +953,7 @@ Hieronder een **verkort** (!) voorbeeld gebaseerd op Marcus 2:13-17 (Jezus eet m
         "distance": "Intiem - predikant en gemeente samen",
         "focal_field": "De open deur"
       },
-      "retorische_strategie": "bringing_out",
+      "retorische_strategie": "Ontvouwen",
       "verbinding_vorige": "Van confrontatie naar uitnodiging",
       "verbinding_volgende": null,
       "uitgeschreven_tekst": {
