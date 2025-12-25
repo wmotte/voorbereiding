@@ -1960,6 +1960,7 @@
             '12_representatieve_hoorders': 'Representatieve Hoorders',
             '13_homiletische_analyse': 'Homiletiek (Lowry/Chapell)',
             '13_homiletische_analyse_buttrick': 'Homiletiek (Buttrick)',
+            '13b_homiletische_illustraties': 'Homiletiek (illustraties)',
             '14_gebeden': 'Gebeden',
             '14_gebeden_profetisch': 'Gebeden (profetisch)',
             '14_gebeden_dialogisch': 'Gebeden (dialogisch)',
@@ -2125,6 +2126,8 @@
                     num = '13a';
                 } else if (key === '13_homiletische_analyse_buttrick') {
                     num = '13b';
+                } else if (key === '13b_homiletische_illustraties') {
+                    num = '13c';
                 } else if (key === '14_gebeden') {
                     num = '14a';
                 } else if (key === '14_gebeden_profetisch') {
@@ -2380,6 +2383,17 @@
                             subSectionLabels[subKey] = labelMap[subKey];
                         }
                     });
+                } else if (key === '13b_homiletische_illustraties') {
+                    // Special handling for Homiletische Illustraties - show illustration titles
+                    if (sectionData.illustraties && Array.isArray(sectionData.illustraties)) {
+                        sectionData.illustraties.forEach((illustratie, index) => {
+                            const titel = illustratie.titel || `Illustratie ${illustratie.nummer || index + 1}`;
+                            const nummer = illustratie.nummer || (index + 1);
+
+                            subSections.push(`illustratie-${nummer}`);
+                            subSectionLabels[`illustratie-${nummer}`] = titel;
+                        });
+                    }
                 } else {
                     // Default: get subsections from top-level keys
                     subSections = Object.keys(sectionData)
@@ -2491,6 +2505,8 @@
                 contentHtml = renderBijbeltekstenSection(dataToRender);
             } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch' || key === '14_gebeden_eenvoudig') {
                 contentHtml = renderGebedenSection(dataToRender);
+            } else if (key === '13b_homiletische_illustraties') {
+                contentHtml = renderIllustratiesSection(dataToRender);
             } else if (key === '12_representatieve_hoorders') {
                 contentHtml = renderHoordersSection(dataToRender);
             } else if (key === '08_exegese' || key === '08a_exegese') {
@@ -4555,6 +4571,117 @@
                     html += `</div>`;
                 }
 
+                html += `</div>`;
+            }
+
+            return html;
+        }
+
+        // Render Homiletische Illustraties section
+        function renderIllustratiesSection(data) {
+            let html = '';
+
+            // Show preek context if available
+            if (data.preek_context) {
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Preek Context</div>`;
+                if (data.preek_context.bijbeltekst) {
+                    html += `<div class="data-item"><div class="data-label">Bijbeltekst</div><div class="data-value">${processText(data.preek_context.bijbeltekst)}</div></div>`;
+                }
+                if (data.preek_context.kernthemas && Array.isArray(data.preek_context.kernthemas)) {
+                    html += `<div class="data-item"><div class="data-label">Kernthemas</div><div class="data-value">${data.preek_context.kernthemas.map(t => processText(t)).join(', ')}</div></div>`;
+                }
+                if (data.preek_context.fcf_samenvatting) {
+                    html += `<div class="data-item"><div class="data-label">FCF Samenvatting</div><div class="data-value">${processText(data.preek_context.fcf_samenvatting)}</div></div>`;
+                }
+                html += `</div>`;
+            }
+
+            // Render each illustration
+            if (data.illustraties && Array.isArray(data.illustraties)) {
+                data.illustraties.forEach((illustratie, index) => {
+                    const nummer = illustratie.nummer || (index + 1);
+
+                    // Add anchor for submenu navigation
+                    html += `<div id="section-13b_homiletische_illustraties-illustratie-${nummer}" class="subsection-anchor"></div>`;
+
+                    html += `<div class="gebed-card" style="margin-bottom: 30px;">`;
+
+                    // Header with number and title
+                    html += `<div class="gebed-card-header">`;
+                    html += `<span class="gebed-type-badge">${nummer}</span>`;
+                    if (illustratie.titel) {
+                        html += `<span class="gebed-aanspraak">${processText(illustratie.titel)}</span>`;
+                    }
+                    html += `</div>`;
+
+                    // Main illustration text
+                    if (illustratie.illustratie_tekst) {
+                        html += `<div class="gebed-tekst" style="font-style: normal;">${processText(illustratie.illustratie_tekst)}</div>`;
+                    }
+
+                    // Bridge to truth
+                    if (illustratie.brug_naar_waarheid) {
+                        html += `<div class="gebed-echo">`;
+                        html += `<span class="gebed-echo-label">Brug naar waarheid:</span>`;
+                        html += processText(illustratie.brug_naar_waarheid);
+                        html += `</div>`;
+                    }
+
+                    // Metadata
+                    if (illustratie.metadata) {
+                        const meta = illustratie.metadata;
+                        html += `<div class="hoorder-details" style="margin-top: 15px;">`;
+
+                        if (meta.type) {
+                            html += `<div class="hoorder-detail"><strong>Type:</strong> ${processText(meta.type)}</div>`;
+                        }
+                        if (meta.bron) {
+                            html += `<div class="hoorder-detail"><strong>Bron:</strong> ${processText(meta.bron)}</div>`;
+                        }
+                        if (meta.toon) {
+                            html += `<div class="hoorder-detail"><strong>Toon:</strong> ${processText(meta.toon)}</div>`;
+                        }
+                        if (meta.lowry_stadium) {
+                            html += `<div class="hoorder-detail"><strong>Lowry stadium:</strong> ${processText(meta.lowry_stadium)}</div>`;
+                        }
+                        if (meta.buttrick_plaatsing) {
+                            html += `<div class="hoorder-detail"><strong>Buttrick plaatsing:</strong> ${processText(meta.buttrick_plaatsing)}</div>`;
+                        }
+                        if (meta.retorische_functie) {
+                            html += `<div class="hoorder-detail"><strong>Retorische functie:</strong> ${processText(meta.retorische_functie)}</div>`;
+                        }
+
+                        html += `</div>`;
+                    }
+
+                    // Usage notes
+                    if (illustratie.gebruiksnotities) {
+                        html += `<div class="gebed-instructie">${processText(illustratie.gebruiksnotities)}</div>`;
+                    }
+
+                    html += `</div>`;
+                });
+            }
+
+            // Show summary statistics
+            if (data.totaal_aantal_illustraties) {
+                html += `<div class="data-item"><div class="data-label">Totaal aantal illustraties</div><div class="data-value">${data.totaal_aantal_illustraties}</div></div>`;
+            }
+
+            // Diversiteit analyse
+            if (data.diversiteit_analyse) {
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Diversiteit Analyse</div>`;
+                html += renderObjectCompact(data.diversiteit_analyse);
+                html += `</div>`;
+            }
+
+            // Gebruiksadvies
+            if (data.gebruiksadvies) {
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Gebruiksadvies</div>`;
+                html += renderObjectCompact(data.gebruiksadvies);
                 html += `</div>`;
             }
 
