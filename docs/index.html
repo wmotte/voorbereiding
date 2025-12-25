@@ -1961,6 +1961,7 @@
             '13_homiletische_analyse': 'Homiletiek (Lowry/Chapell)',
             '13_homiletische_analyse_buttrick': 'Homiletiek (Buttrick)',
             '13b_homiletische_illustraties': 'Homiletiek (illustraties)',
+            '14_klassieke_retorica': 'Homiletiek (retorica)',
             '14_gebeden': 'Gebeden',
             '14_gebeden_profetisch': 'Gebeden (profetisch)',
             '14_gebeden_dialogisch': 'Gebeden (dialogisch)',
@@ -2082,6 +2083,32 @@
             // Sort other sections alphabetically
             let sortedOtherSections = otherSections.sort();
 
+            // Custom sort for 14_klassieke_retorica to place it after homiletics (13)
+            if (sortedOtherSections.includes('14_klassieke_retorica')) {
+                sortedOtherSections = sortedOtherSections.filter(k => k !== '14_klassieke_retorica');
+                // Find index after the last 13_ section
+                let last13Index = -1;
+                for (let i = sortedOtherSections.length - 1; i >= 0; i--) {
+                    if (sortedOtherSections[i].startsWith('13')) {
+                        last13Index = i;
+                        break;
+                    }
+                }
+                
+                if (last13Index !== -1) {
+                    sortedOtherSections.splice(last13Index + 1, 0, '14_klassieke_retorica');
+                } else {
+                    // Fallback: find 14_gebeden to place before
+                    let prayerIndex = sortedOtherSections.findIndex(k => k.startsWith('14_gebeden'));
+                    if (prayerIndex !== -1) {
+                        sortedOtherSections.splice(prayerIndex, 0, '14_klassieke_retorica');
+                    } else {
+                        // Fallback: just add it (it was removed, so we must add it back)
+                        sortedOtherSections.push('14_klassieke_retorica');
+                    }
+                }
+            }
+
             // Custom sort for the 14_gebeden group to ensure 14a, 14b, 14c order
             const prayerKeys = ['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch', '14_gebeden_eenvoudig'];
             if (prayerKeys.every(k => sortedOtherSections.includes(k))) {
@@ -2128,18 +2155,20 @@
                     num = '13b';
                 } else if (key === '13b_homiletische_illustraties') {
                     num = '13c';
+                } else if (key === '14_klassieke_retorica') {
+                    num = '13d';
                 } else if (key === '14_gebeden') {
-                    num = '14a';
-                } else if (key === '14_gebeden_profetisch') {
-                    num = '14b';
-                } else if (key === '14_gebeden_dialogisch') {
-                    num = '14c';
-                } else if (key === '14_gebeden_eenvoudig') {
-                    num = '14d';
-                } else if (key === '15_bezinningsmoment') {
                     num = '15a';
-                } else if (key === '15_kindermoment') {
+                } else if (key === '14_gebeden_profetisch') {
                     num = '15b';
+                } else if (key === '14_gebeden_dialogisch') {
+                    num = '15c';
+                } else if (key === '14_gebeden_eenvoudig') {
+                    num = '15d';
+                } else if (key === '15_bezinningsmoment') {
+                    num = '16a';
+                } else if (key === '15_kindermoment') {
+                    num = '16b';
                 } else { 
                     const numMatch = key.match(/^(\d+[a-z]?)_/);
                     num = numMatch ? numMatch[1] : String(unnumberedCounter++).padStart(2, '0');
@@ -2394,6 +2423,25 @@
                             subSectionLabels[`illustratie-${nummer}`] = titel;
                         });
                     }
+                } else if (key === '14_klassieke_retorica') {
+                    // Special handling for Klassieke Retorica - show main sections
+                    const subKeyOrder = ['meta', 'aristotelische_appeals', 'klassieke_dispositio', 'monroes_motivated_sequence', 'retorische_figuren', 'evaluatiecriteria', 'praktische_tips'];
+                    const labelMap = {
+                        'meta': 'Meta',
+                        'aristotelische_appeals': 'Aristotelische Appeals',
+                        'klassieke_dispositio': 'Klassieke Dispositio',
+                        'monroes_motivated_sequence': 'Monroe\'s Sequence',
+                        'retorische_figuren': 'Retorische Figuren',
+                        'evaluatiecriteria': 'Evaluatie',
+                        'praktische_tips': 'Praktische Tips'
+                    };
+
+                    subKeyOrder.forEach(subKey => {
+                        if (sectionData[subKey]) {
+                            subSections.push(subKey);
+                            subSectionLabels[subKey] = labelMap[subKey];
+                        }
+                    });
                 } else {
                     // Default: get subsections from top-level keys
                     subSections = Object.keys(sectionData)
@@ -2511,6 +2559,8 @@
                 contentHtml = renderHoordersSection(dataToRender);
             } else if (key === '08_exegese' || key === '08a_exegese') {
                 contentHtml = renderExegeseSection(dataToRender, key);
+            } else if (key === '14_klassieke_retorica') {
+                contentHtml = renderKlassiekeRetorica(dataToRender, key);
             } else if (key === '01_zondag_kerkelijk_jaar') {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             } else if (key === '15_kindermoment' || key === '15_bezinningsmoment') {
@@ -4653,6 +4703,135 @@
                 html += `<div class="data-group">`;
                 html += `<div class="data-group-title">Gebruiksadvies</div>`;
                 html += renderObjectCompact(data.gebruiksadvies);
+                html += `</div>`;
+            }
+
+            return html;
+        }
+
+        function renderKlassiekeRetorica(data, sectionKey) {
+            let html = '';
+
+            // Meta section
+            if (data.meta) {
+                html += `<div id="section-${sectionKey}-meta" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Meta</div>`;
+                html += renderObject(data.meta, 'meta');
+                html += `</div>`;
+            }
+
+            // Aristotelische Appeals
+            if (data.aristotelische_appeals) {
+                html += `<div id="section-${sectionKey}-aristotelische_appeals" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Aristotelische Appeals</div>`;
+                html += `<div class="card-grid">`;
+                
+                ['logos', 'pathos', 'ethos'].forEach(appeal => {
+                    if (data.aristotelische_appeals[appeal]) {
+                        html += `<div class="nested-card">`;
+                        html += `<div class="nested-card-title">${escapeHtml(formatKey(appeal))}</div>`;
+                        html += `<div class="nested-card-content">`;
+                        html += renderObjectCompact(data.aristotelische_appeals[appeal]);
+                        html += `</div></div>`;
+                    }
+                });
+                
+                html += `</div></div>`;
+            }
+
+            // Klassieke Dispositio
+            if (data.klassieke_dispositio) {
+                html += `<div id="section-${sectionKey}-klassieke_dispositio" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Klassieke Dispositio</div>`;
+                html += `<div class="buttrick-container">`; // Re-use container style for vertical flow
+
+                const parts = ['exordium', 'narratio', 'propositio', 'partitio', 'confirmatio', 'refutatio', 'peroratio'];
+                
+                parts.forEach(part => {
+                    if (data.klassieke_dispositio[part]) {
+                        html += `<div class="buttrick-move">`;
+                        html += `<div class="buttrick-move-header">`;
+                        html += `<div class="buttrick-move-badge" style="background: var(--accent); font-size: 0.8em; width: auto; padding: 0 10px; border-radius: 15px;">${escapeHtml(formatKey(part))}</div>`;
+                        html += `</div>`;
+                        html += `<div class="buttrick-move-content">`;
+                        html += renderObjectCompact(data.klassieke_dispositio[part]);
+                        html += `</div></div>`;
+                    }
+                });
+
+                html += `</div></div>`;
+            }
+
+            // Monroe's Motivated Sequence
+            if (data.monroes_motivated_sequence) {
+                html += `<div id="section-${sectionKey}-monroes_motivated_sequence" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Monroe's Motivated Sequence</div>`;
+                html += `<div class="buttrick-container">`;
+
+                const steps = ['attention', 'need', 'satisfaction', 'visualization', 'action'];
+                
+                steps.forEach((step, index) => {
+                    if (data.monroes_motivated_sequence[step]) {
+                        html += `<div class="buttrick-move">`;
+                        html += `<div class="buttrick-move-header">`;
+                        html += `<div class="buttrick-move-badge">${index + 1}</div>`;
+                        html += `<div class="buttrick-move-info"><div class="buttrick-move-kernidee">${escapeHtml(formatKey(step))}</div></div>`;
+                        html += `</div>`;
+                        html += `<div class="buttrick-move-content">`;
+                        html += renderObjectCompact(data.monroes_motivated_sequence[step]);
+                        html += `</div></div>`;
+                    }
+                });
+
+                html += `</div></div>`;
+            }
+
+            // Retorische Figuren
+            if (data.retorische_figuren) {
+                html += `<div id="section-${sectionKey}-retorische_figuren" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Retorische Figuren</div>`;
+                
+                if (data.retorische_figuren.aanbevolen_figuren) {
+                    html += `<div class="nested-title">Aanbevolen</div>`;
+                    html += renderArray(data.retorische_figuren.aanbevolen_figuren, 'aanbevolen_figuren');
+                }
+                
+                if (data.retorische_figuren.te_vermijden_figuren) {
+                    html += `<div class="nested-title" style="margin-top: 15px;">Te Vermijden</div>`;
+                    html += renderArray(data.retorische_figuren.te_vermijden_figuren, 'te_vermijden_figuren');
+                }
+                
+                html += `</div>`;
+            }
+
+            // Evaluatiecriteria
+            if (data.evaluatiecriteria) {
+                html += `<div id="section-${sectionKey}-evaluatiecriteria" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Evaluatiecriteria</div>`;
+                html += renderObject(data.evaluatiecriteria, 'evaluatiecriteria');
+                html += `</div>`;
+            }
+
+            // Praktische Tips
+            if (data.praktische_tips) {
+                html += `<div id="section-${sectionKey}-praktische_tips" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Praktische Tips</div>`;
+                html += renderObject(data.praktische_tips, 'praktische_tips');
+                html += `</div>`;
+            }
+
+            // Bronnen
+            if (data.bronnen_en_verdieping) {
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Bronnen & Verdieping</div>`;
+                html += renderObject(data.bronnen_en_verdieping, 'bronnen_en_verdieping');
                 html += `</div>`;
             }
 

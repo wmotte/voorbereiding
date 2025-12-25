@@ -10,7 +10,8 @@ Dit script bouwt voort op de basisanalyse van contextduiding.py en voegt toe:
 - 12_representatieve_hoorders: Hoordersprofielen
 - 13_homiletische_analyse: Homiletische analyse (Lowry's Plot)
 - 13_homiletische_analyse_buttrick: Homiletische analyse (Buttrick's Moves & Structures)
-- 13b_homiletische_illustraties: Illustraties generator (min. 15 illustraties)
+- 13b_homiletische_illustraties: Illustraties generator (min. 20 illustraties)
+- 14_klassieke_retorica: Klassiek-retorische analyse (Aristoteles)
 - 14_gebeden: Gebeden voor de eredienst
 - 15_kindermoment/bezinningsmoment: Optionele momenten
 - 16-18_preken: Preekschetsen in stijlen van Sölle, Jüngel, Noordmans
@@ -369,6 +370,7 @@ def read_previous_analyses(folder: Path) -> dict:
         ("13_homiletische_analyse", "homiletische_analyse"),
         ("13_homiletische_analyse_buttrick", "homiletische_analyse_buttrick"),
         ("13b_homiletische_illustraties", "homiletische_illustraties"),
+        ("14_klassieke_retorica", "klassieke_retorica"),
         ("14_gebeden", "gebeden"),
         ("15_bezinningsmoment", "bezinningsmoment"),
         ("15_kindermoment", "kindermoment"),
@@ -648,6 +650,10 @@ def build_context_string(previous_analyses: dict, limited: bool = False, exclude
     if previous_analyses.get("homiletische_illustraties") and "homiletische_illustraties" not in excluded_sections:
         sections.append("## Homiletische Illustraties\n\n" +
                        previous_analyses["homiletische_illustraties"])
+
+    if previous_analyses.get("klassieke_retorica") and "klassieke_retorica" not in excluded_sections:
+        sections.append("## Klassiek-Retorische Analyse\n\n" +
+                       previous_analyses["klassieke_retorica"])
 
     if previous_analyses.get("gebeden") and "gebeden" not in excluded_sections:
         sections.append("## Gebeden\n\n" +
@@ -930,6 +936,7 @@ def update_summary(output_dir: Path):
                 ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
                 ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
                 ("13b_homiletische_illustraties", "Homiletische Illustraties Generator"),
+                ("14_klassieke_retorica", "Klassiek-Retorische Analyse (Aristoteles)"),
                 ("14_gebeden", "Gebeden voor de Eredienst"),
                 ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
                 ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
@@ -970,6 +977,7 @@ def update_summary(output_dir: Path):
             ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
             ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
             ("13b_homiletische_illustraties", "Homiletische Illustraties Generator"),
+            ("14_klassieke_retorica", "Klassiek-Retorische Analyse (Aristoteles)"),
             ("14_gebeden", "Gebeden voor de Eredienst"),
             ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
             ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
@@ -1122,6 +1130,7 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
         ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
         ("13b_homiletische_illustraties", "Homiletische Illustraties Generator"),
+        ("14_klassieke_retorica", "Klassiek-Retorische Analyse (Aristoteles)"),
         ("14_gebeden", "Gebeden voor de Eredienst"),
         ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
         ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
@@ -1362,7 +1371,7 @@ def combine_all_json(folder: Path):
     
     # Draai count_tokens.py op het gecombineerde bestand
     try:
-        script_path = SCRIPT_DIR / "count_tokens.py"
+        script_path = SCRIPT_DIR / "technical/count_tokens.py"
         print(f"\nTokens tellen voor {output_path.name}...")
         subprocess.run([sys.executable, str(script_path), "--file", str(output_path)], check=False)
     except Exception as e:
