@@ -1952,7 +1952,7 @@
             '07_politieke_orientatie': 'Politieke Oriëntatie',
             '08a_exegese': 'Exegese',
             '08_exegese': 'Exegese',
-            '08c_commentaries': 'Exegetische Diepgang (Commentaren)',
+            '08c_commentaries': 'Commentarenwijsheid',
             '08b_liedsuggesties_database': 'Passende Liederen',
             '08_liedsuggesties_database': 'Passende Liederen',
             '09_kunst_cultuur': 'Kunst & Cultuur',
@@ -2108,7 +2108,7 @@
             // Custom sort for 14_klassieke_retorica to place it after homiletics (13)
             if (sortedOtherSections.includes('14_klassieke_retorica')) {
                 sortedOtherSections = sortedOtherSections.filter(k => k !== '14_klassieke_retorica');
-                // Find index after the last 13_ section
+                // Find index after the last 13 section (including 13, 13a, 13b...)
                 let last13Index = -1;
                 for (let i = sortedOtherSections.length - 1; i >= 0; i--) {
                     if (sortedOtherSections[i].startsWith('13')) {
