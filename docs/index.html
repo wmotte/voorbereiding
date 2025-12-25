@@ -2102,34 +2102,32 @@
             // Initialize counter for unnumbered sections
             let unnumberedCounter = highestNum + 1;
 
-            // Sort other sections alphabetically
-            let sortedOtherSections = otherSections.sort();
+            // Sort other sections using a custom function
+            function customSectionSort(a, b) {
+                const extractParts = (key) => {
+                    const match = key.match(/^(\d+)([a-z]?)_?.*$/);
+                    if (match) {
+                        const num = parseInt(match[1]);
+                        const letter = match[2] || '';
+                        return { num, letter };
+                    }
+                    return { num: Infinity, letter: key };
+                };
 
-            // Custom sort for 14_klassieke_retorica to place it after homiletics (13)
-            if (sortedOtherSections.includes('14_klassieke_retorica')) {
-                sortedOtherSections = sortedOtherSections.filter(k => k !== '14_klassieke_retorica');
-                // Find index after the last 13 section (including 13, 13a, 13b...)
-                let last13Index = -1;
-                for (let i = sortedOtherSections.length - 1; i >= 0; i--) {
-                    if (sortedOtherSections[i].startsWith('13')) {
-                        last13Index = i;
-                        break;
-                    }
+                const partsA = extractParts(a);
+                const partsB = extractParts(b);
+
+                if (partsA.num !== partsB.num) {
+                    return partsA.num - partsB.num;
                 }
-                
-                if (last13Index !== -1) {
-                    sortedOtherSections.splice(last13Index + 1, 0, '14_klassieke_retorica');
-                } else {
-                    // Fallback: find 14_gebeden to place before
-                    let prayerIndex = sortedOtherSections.findIndex(k => k.startsWith('14_gebeden'));
-                    if (prayerIndex !== -1) {
-                        sortedOtherSections.splice(prayerIndex, 0, '14_klassieke_retorica');
-                    } else {
-                        // Fallback: just add it (it was removed, so we must add it back)
-                        sortedOtherSections.push('14_klassieke_retorica');
-                    }
+
+                if (partsA.letter !== partsB.letter) {
+                    return partsA.letter.localeCompare(partsB.letter);
                 }
+
+                return a.localeCompare(b);
             }
+            let sortedOtherSections = otherSections.sort(customSectionSort);
 
             // Custom sort for the 14_gebeden group to ensure 14a, 14b, 14c order
             const prayerKeys = ['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch', '14_gebeden_eenvoudig'];
@@ -2144,61 +2142,69 @@
 
             // Build the final sections array: [Bijbelteksten as second item]
             let sections = [];
-            if (sortedOtherSections.length > 0) {
-                // Add first section
-                sections.push(sortedOtherSections[0]);
-                // Add Bijbelteksten as second if it exists
+            if (otherSections.length > 0) {
+                // Add Bijbelteksten if it exists
                 if (hasBijbelteksten) {
-                    sections.splice(1, 0, 'Bijbelteksten'); // Insert at position 1 (second position)
+                    sections.push('Bijbelteksten');
                 }
-                // Add remaining sections
-                if (sortedOtherSections.length > 1) {
-                    sections = sections.concat(sortedOtherSections.slice(1));
-                }
+                sections = sections.concat(otherSections);
             } else if (hasBijbelteksten) {
-                // If there are no other sections, just add Bijbelteksten
                 sections.push('Bijbelteksten');
             }
+            
+            // Create a map of keys to their calculated display numbers
+            const sectionNumberMap = {};
+            let tempUnnumberedCounter = highestNum + 1; // Use a temporary counter
+
+            sections.forEach(key => {
+                if (key === 'Bijbelteksten') {
+                    sectionNumberMap[key] = '02';
+                } else if (key === '08_exegese' || key === '08a_exegese') {
+                    sectionNumberMap[key] = '08a';
+                } else if (key === '08c_commentaries') {
+                    sectionNumberMap[key] = '08c';
+                } else if (key === '08_liedsuggesties_database' || key === '08b_liedsuggesties_database') {
+                    sectionNumberMap[key] = '08b';
+                } else if (key === '13_homiletische_analyse') {
+                    sectionNumberMap[key] = '13a';
+                } else if (key === '13_homiletische_analyse_buttrick') {
+                    sectionNumberMap[key] = '13b';
+                } else if (key === '13b_homiletische_illustraties') {
+                    sectionNumberMap[key] = '13c';
+                } else if (key === '14_klassieke_retorica') {
+                    sectionNumberMap[key] = '13d';
+                } else if (key === '14_gebeden') {
+                    sectionNumberMap[key] = '15a';
+                } else if (key === '14_gebeden_profetisch') {
+                    sectionNumberMap[key] = '15b';
+                } else if (key === '14_gebeden_dialogisch') {
+                    sectionNumberMap[key] = '15c';
+                } else if (key === '14_gebeden_eenvoudig') {
+                    sectionNumberMap[key] = '15d';
+                } else if (key === '15_bezinningsmoment') {
+                    sectionNumberMap[key] = '16a';
+                } else if (key === '15_kindermoment') {
+                    sectionNumberMap[key] = '16b';
+                } else { 
+                    const numMatch = key.match(/^(\d+[a-z]?)_/);
+                    sectionNumberMap[key] = numMatch ? numMatch[1] : String(tempUnnumberedCounter++).padStart(2, '0');
+                }
+            });
+
+            // Now sort the sections array based on the mapped numbers
+            sections.sort((a, b) => {
+                const numA = sectionNumberMap[a];
+                const numB = sectionNumberMap[b];
+                return numA.localeCompare(numB, undefined, { numeric: true, sensitivity: 'base' });
+            });
+
 
             sections.forEach((key, index) => {
                 const title = sectionTitles[key] || formatKey(key);
-                // Assign number 02 to Bijbelteksten to make it the second item, otherwise use normal numbering
-                let num;
-                
-                if (key === 'Bijbelteksten') {
-                    num = '02'; // Always assign 02 to make it second in the menu
-                } else if (key === '08_exegese' || key === '08a_exegese') {
-                    num = '08a';
-                } else if (key === '08c_commentaries') {
-                    num = '08c';
-                } else if (key === '08_liedsuggesties_database' || key === '08b_liedsuggesties_database') {
-                    num = '08b';
-                } else if (key === '13_homiletische_analyse') {
-                    num = '13a';
-                } else if (key === '13_homiletische_analyse_buttrick') {
-                    num = '13b';
-                } else if (key === '13b_homiletische_illustraties') {
-                    num = '13c';
-                } else if (key === '14_klassieke_retorica') {
-                    num = '13d';
-                } else if (key === '14_gebeden') {
-                    num = '15a';
-                } else if (key === '14_gebeden_profetisch') {
-                    num = '15b';
-                } else if (key === '14_gebeden_dialogisch') {
-                    num = '15c';
-                } else if (key === '14_gebeden_eenvoudig') {
-                    num = '15d';
-                } else if (key === '15_bezinningsmoment') {
-                    num = '16a';
-                } else if (key === '15_kindermoment') {
-                    num = '16b';
-                } else { 
-                    const numMatch = key.match(/^(\d+[a-z]?)_/);
-                    num = numMatch ? numMatch[1] : String(unnumberedCounter++).padStart(2, '0');
-                }
+                const num = sectionNumberMap[key]; // Get the pre-calculated and sorted number
                 
                 const sectionData = jsonData[key];
+
 
                 // Special handling for Bijbelteksten - show bible references as submenu
                 let subSections = [];
