@@ -1952,6 +1952,7 @@
             '07_politieke_orientatie': 'Politieke Oriëntatie',
             '08a_exegese': 'Exegese',
             '08_exegese': 'Exegese',
+            '08c_commentaries': 'Exegetische Diepgang (Commentaren)',
             '08b_liedsuggesties_database': 'Passende Liederen',
             '08_liedsuggesties_database': 'Passende Liederen',
             '09_kunst_cultuur': 'Kunst & Cultuur',
@@ -2168,6 +2169,8 @@
                     num = '02'; // Always assign 02 to make it second in the menu
                 } else if (key === '08_exegese' || key === '08a_exegese') {
                     num = '08a';
+                } else if (key === '08c_commentaries') {
+                    num = '08c';
                 } else if (key === '08_liedsuggesties_database' || key === '08b_liedsuggesties_database') {
                     num = '08b';
                 } else if (key === '13_homiletische_analyse') {
@@ -2358,6 +2361,19 @@
                             subSectionLabels[`lezing-${index + 1}`] = referentie;
                         });
                     }
+                } else if (key === '08c_commentaries') {
+                    // Special handling for Commentaries - show parts
+                    const labels = {
+                        'exegese_eerste_lezing': 'Eerste Lezing',
+                        'exegese_evangelielezing': 'Evangelielezing',
+                        'reflectie': 'Reflectie'
+                    };
+                    ['exegese_eerste_lezing', 'exegese_evangelielezing', 'reflectie'].forEach(subKey => {
+                        if (sectionData[subKey]) {
+                            subSections.push(subKey);
+                            subSectionLabels[subKey] = labels[subKey];
+                        }
+                    });
                 } else if (key === '15_kindermoment') {
                     // Special handling for Kindermoment - show the three kindermoment option titles
                     if (sectionData.kindermoment_opties && Array.isArray(sectionData.kindermoment_opties)) {
@@ -2580,6 +2596,8 @@
                 contentHtml = renderHoordersSection(dataToRender);
             } else if (key === '08_exegese' || key === '08a_exegese') {
                 contentHtml = renderExegeseSection(dataToRender, key);
+            } else if (key === '08c_commentaries') {
+                contentHtml = renderCommentariesSection(dataToRender, key);
             } else if (key === '14_klassieke_retorica') {
                 contentHtml = renderKlassiekeRetorica(dataToRender, key);
             } else if (key === '01_zondag_kerkelijk_jaar') {
@@ -2602,6 +2620,72 @@
                     </div>
                 </section>
             `;
+        }
+
+        // Render Commentaries section
+        function renderCommentariesSection(data, sectionKey) {
+            let html = '';
+            
+            const renderPart = (partKey, partTitle) => {
+                const part = data[partKey];
+                if (!part) return '';
+                
+                let partHtml = `<div id="section-${sectionKey}-${partKey}" class="subsection-anchor"></div>`;
+                partHtml += `<div class="data-group">`;
+                partHtml += `<div class="data-group-title">${escapeHtml(partTitle)}</div>`;
+                
+                if (part.schriftgedeelte) {
+                    partHtml += `<div class="data-item"><div class="data-label">Schriftgedeelte</div><div class="data-value">${processText(part.schriftgedeelte)}</div></div>`;
+                }
+                
+                if (part.titel) {
+                    partHtml += `<h3>${processText(part.titel)}</h3>`;
+                }
+                
+                if (part.korte_samenvatting) {
+                    partHtml += `<div class="quote-block">${processText(part.korte_samenvatting)}</div>`;
+                }
+                
+                if (part.tekst) {
+                    partHtml += `<div class="preek-tekst">${processText(part.tekst)}</div>`;
+                }
+                
+                if (part.gebruikte_bronnen && Array.isArray(part.gebruikte_bronnen)) {
+                    partHtml += `<div style="margin-top:15px;"><strong>Gebruikte commentaren:</strong><ul>`;
+                    part.gebruikte_bronnen.forEach(bron => {
+                        partHtml += `<li>${processText(bron)}</li>`;
+                    });
+                    partHtml += `</ul></div>`;
+                }
+                
+                partHtml += `</div>`;
+                return partHtml;
+            };
+            
+            html += renderPart('exegese_eerste_lezing', 'Exegese Eerste Lezing');
+            html += renderPart('exegese_evangelielezing', 'Exegese Evangelielezing');
+            
+            if (data.reflectie) {
+                html += `<div id="section-${sectionKey}-reflectie" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Reflectie & Synthese</div>`;
+                
+                if (data.reflectie.theologische_lijnen && Array.isArray(data.reflectie.theologische_lijnen)) {
+                    html += `<strong>Theologische lijnen uit de commentaren:</strong><ul>`;
+                    data.reflectie.theologische_lijnen.forEach(lijn => {
+                        html += `<li>${processText(lijn)}</li>`;
+                    });
+                    html += `</ul>`;
+                }
+                
+                if (data.reflectie.homiletische_potentie) {
+                    html += `<div style="margin-top:15px;"><strong>Homiletische potentie:</strong><p>${processText(data.reflectie.homiletische_potentie)}</p></div>`;
+                }
+                
+                html += `</div>`;
+            }
+            
+            return html;
         }
 
         // Render object with IDs for navigation

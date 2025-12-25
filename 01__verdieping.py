@@ -4,6 +4,7 @@ Verdieping: Exegese, Kunst/Cultuur en Homiletiek voor Preekvoorbereiding
 
 Dit script bouwt voort op de basisanalyse van contextduiding.py en voegt toe:
 - 08a_exegese: Exegetische analyse van de Schriftlezingen
+- 08c_commentaries: Exegetische diepgang via Neo4j Commentaren Database (MCP)
 - 09_kunst_cultuur: Kunst, cultuur en film bij de lezingen
 - 10_focus_en_functie: Focus en functie van de preek
 - 11_kalender: Gedenkdagen en bijzondere momenten
@@ -29,6 +30,7 @@ import json
 import random
 import argparse
 import subprocess
+import asyncio
 from pathlib import Path
 from datetime import datetime
 
@@ -39,6 +41,16 @@ except ImportError:
     print("FOUT: De nieuwe 'google-genai' library is niet geïnstalleerd.")
     print("Installeer deze met: pip install google-genai")
     sys.exit(1)
+
+# Probeer MCP client te importeren voor Neo4j integratie
+try:
+    from mcp import ClientSession, StdioServerParameters
+    from mcp.client.stdio import stdio_client
+    MCP_AVAILABLE = True
+except ImportError:
+    MCP_AVAILABLE = False
+    print("WAARSCHUWING: 'mcp' library niet gevonden. Commentaar-analyse via database wordt overgeslagen.")
+    print("Installeer met: pip install mcp")
 
 try:
     from naardense_bijbel import download_lezingen, laad_bijbelteksten
@@ -72,8 +84,8 @@ SERMON_XOR_KEY = b'DorotheeS\xc3\xb6lle1929-2003MystiekEnVerzet'
 SERMON_DATA_FILE = SCRIPT_DIR / "solle_sermons.dat"
 
 # Model keuze: Gemini 3 flash als primair, pro als fallback
-#MODEL_NAME = "gemini-3-flash-preview"
-MODEL_NAME = "gemini-3-pro-preview"
+MODEL_NAME = "gemini-3-flash-preview"
+#MODEL_NAME = "gemini-3-pro-preview"
 MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
@@ -159,11 +171,7 @@ def sample_jungel_preken(n: int = 5) -> str:
 
 
 def sample_noordmans_preken(n: int = 15) -> str:
-    """Selecteer willekeurige fragmenten uit de Noordmans preken map.
-
-    Let op: Dit zijn fragmenten uit Verzamelde Werken deel 8, geen complete preken.
-    Ze dienen als inspiratie voor toon, stijl en theologische denkwijze.
-    """
+    """Selecteer willekeurige fragmenten uit de Noordmans preken map."""
     noordmans_dir = SCRIPT_DIR / "preken_noordmans"
     if not noordmans_dir.exists():
         return "Geen voorbeeldfragmenten van Noordmans gevonden."
@@ -297,10 +305,9 @@ def list_output_folders() -> list[Path]:
     folders = []
     for item in OUTPUT_DIR.iterdir():
         if item.is_dir() and not item.name.startswith("."):
-            # Controleer of er een geldige analyse folder is
             if ((item / "01_zondag_kerkelijk_jaar.json").exists() or
                 (item / "00_meta.json").exists() or
-                (item / "00_zondag_kerkelijk_jaar.json").exists()): # Backwards compat
+                (item / "00_zondag_kerkelijk_jaar.json").exists()):
                 folders.append(item)
 
     return sorted(folders, key=lambda x: x.stat().st_mtime, reverse=True)
@@ -321,9 +328,8 @@ def select_folder() -> Path:
     print("\nBeschikbare analyses:\n")
 
     for i, folder in enumerate(folders, 1):
-        # Tel bestaande analyses (check both JSON and MD)
         existing = []
-        for num in range(15):
+        for num in range(20):
             json_pattern = f"{num:02d}_*.json"
             md_pattern = f"{num:02d}_*.md"
             if list(folder.glob(json_pattern)):
@@ -352,8 +358,6 @@ def read_previous_analyses(folder: Path) -> dict:
     """Lees alle vorige analyses uit de folder (JSON of MD) en stript de _meta data."""
     analyses = {}
 
-    # Bestanden die we willen lezen (basis naam zonder extensie)
-    # Mapping van nieuwe structuur (01-07) en oude structuur (00-06)
     files_to_read = [
         ("01_zondag_kerkelijk_jaar", "liturgische_context"),
         ("02_sociaal_maatschappelijke_context", "sociaal_maatschappelijk"),
@@ -363,6 +367,7 @@ def read_previous_analyses(folder: Path) -> dict:
         ("06_actueel_wereldnieuws", "wereldnieuws"),
         ("07_politieke_orientatie", "politieke_orientatie"),
         ("08a_exegese", "exegese"),
+        ("08c_commentaries", "commentaren"),
         ("09_kunst_cultuur", "kunst_cultuur"),
         ("10_focus_en_functie", "focus_en_functie"),
         ("11_kalender", "kalender"),
@@ -376,65 +381,24 @@ def read_previous_analyses(folder: Path) -> dict:
         ("15_kindermoment", "kindermoment"),
     ]
 
-    # Backwards compatibility check
-    old_files_to_read = [
-        ("00_zondag_kerkelijk_jaar", "liturgische_context"),
-        ("01_sociaal_maatschappelijke_context", "sociaal_maatschappelijk"),
-        ("02_waardenorientatie", "waardenorientatie"),
-        ("03_geloofsorientatie", "geloofsorientatie"),
-        ("04_interpretatieve_synthese", "synthese"),
-        ("05_actueel_wereldnieuws", "wereldnieuws"),
-        ("06_politieke_orientatie", "politieke_orientatie"),
-        ("07_exegese", "exegese"),
-        ("08_kunst_cultuur", "kunst_cultuur"),
-        ("09_focus_en_functie", "focus_en_functie"),
-        ("10_kalender", "kalender"),
-        ("11_representatieve_hoorders", "representatieve_hoorders"),
-        ("12_homiletische_analyse", "homiletische_analyse"),
-        ("13_gebeden", "gebeden"),
-    ]
-
     for basename, key in files_to_read:
         filepath_json = folder / f"{basename}.json"
         
-        # Probeer nieuwe naam
         if filepath_json.exists():
             with open(filepath_json, "r", encoding="utf-8") as f:
                 data = json.load(f)
-            # Verwijder de _meta key om tokens te besparen
             if "_meta" in data:
                 del data["_meta"]
             analyses[key] = json.dumps(data, ensure_ascii=False, indent=2)
             continue
             
-        # Probeer oude naam (backwards compat)
-        old_basename = next((old for old, k in old_files_to_read if k == key), None)
-        if old_basename:
-             old_json = folder / f"{old_basename}.json"
-             old_md = folder / f"{old_basename}.md"
-             if old_json.exists():
-                with open(old_json, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                # Verwijder de _meta key om tokens te besparen
-                if "_meta" in data:
-                    del data["_meta"]
-                analyses[key] = json.dumps(data, ensure_ascii=False, indent=2)
-             elif old_md.exists():
-                with open(old_md, "r", encoding="utf-8") as f:
-                    analyses[key] = f.read()
-             else:
-                analyses[key] = ""
-        else:
-            analyses[key] = ""
-
     return analyses
 
 
 def extract_user_input_from_folder(folder: Path) -> dict:
-    """Probeer plaatsnaam, gemeente en datum te extraheren uit bestanden of foldernaam."""
+    """Probeer plaatsnaam, gemeente en datum te extraheren."""
     user_input = {"plaatsnaam": "", "gemeente": "", "datum": "", "adres": "", "website": ""}
 
-    # 1. Check specifieke meta file (Nieuwste standaard)
     meta_file = folder / "00_meta.json"
     if meta_file.exists():
         try:
@@ -447,116 +411,46 @@ def extract_user_input_from_folder(folder: Path) -> dict:
         except (json.JSONDecodeError, KeyError):
             pass
 
-    # 2. Zoek in alle JSON bestanden naar _meta.user_input (meest betrouwbaar)
     for json_path in sorted(folder.glob("*.json")):
         try:
             with open(json_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
             meta_input = data.get("_meta", {}).get("user_input")
             if meta_input:
-                # Update onze dict met gevonden waarden, maar behoud wat we al hebben als het leger is
                 for key in user_input:
                     if meta_input.get(key):
                         user_input[key] = meta_input[key]
-                
-                # Als we de belangrijkste velden hebben, kunnen we stoppen
                 if user_input["plaatsnaam"] and user_input["adres"]:
                     return user_input
         except (json.JSONDecodeError, KeyError):
             continue
 
-    # 2. Fallback: probeer uit 00_overzicht.json (Oud formaat)
-    overzicht_json = folder / "00_overzicht.json"
-    if overzicht_json.exists():
-        try:
-            with open(overzicht_json, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            gegevens = data.get("gegevens", {})
-            user_input["plaatsnaam"] = gegevens.get("plaatsnaam", "")
-            user_input["gemeente"] = gegevens.get("gemeente", "")
-            user_input["datum"] = gegevens.get("datum_preek", "")
-            if user_input["plaatsnaam"]:
-                return user_input
-        except (json.JSONDecodeError, KeyError):
-            pass
-
-    # 3. Fallback: probeer uit MD overzicht
-    overzicht_md = folder / "00_overzicht.md"
-    if overzicht_md.exists():
-        with open(overzicht_md, "r", encoding="utf-8") as f:
-            content = f.read()
-
-        for line in content.split("\n"):
-            if "**Plaatsnaam:**" in line:
-                user_input["plaatsnaam"] = line.split("**Plaatsnaam:**")[-1].strip()
-            elif "**Gemeente:**" in line:
-                user_input["gemeente"] = line.split("**Gemeente:**")[-1].strip()
-            elif "**Datum" in line:
-                parts = line.split(":**")
-                if len(parts) > 1:
-                    user_input["datum"] = parts[-1].strip()
-
-    # 4. Fallback: gebruik foldernaam
-    if not user_input["plaatsnaam"]:
-        # Split op underscores en filter lege strings
-        parts = [p for p in folder.name.split("_") if p]
-        
-        if len(parts) >= 6:
-            content_parts = parts[:-2] 
-            datum_parts = content_parts[-3:]
-            user_input["datum"] = " ".join(datum_parts)
-            plaats_parts = content_parts[:-3]
-            user_input["plaatsnaam"] = " ".join(plaats_parts)
-        elif len(parts) > 0:
-            user_input["plaatsnaam"] = parts[0]
-
     return user_input
 
 
 def load_bible_context_as_json(folder: Path) -> str:
-    """
-    Lees alle gedownloade bijbelteksten (NB en NBV21) uit de bijbelteksten map
-    en retourneer deze als een geformatteerde JSON string.
-    """
+    """Lees alle gedownloade bijbelteksten."""
     bijbel_dir = folder / "bijbelteksten"
     if not bijbel_dir.exists():
         return ""
 
     context_data = {
         "naardense_bijbel": [],
-        "nbv21": []
+        "nbv21": [],
+        "grondtekst": []
     }
 
-    # Lees Naardense Bijbel bestanden
-    for json_file in sorted(bijbel_dir.glob("*_NB.json")):
-        try:
-            with open(json_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                context_data["naardense_bijbel"].append(data)
-        except Exception as e:
-            print(f"Fout bij lezen {json_file}: {e}")
+    # Lees bestanden
+    for variant, suffix in [("naardense_bijbel", "_NB.json"), ("nbv21", "_NBV21.json"), ("grondtekst", "_Grondtekst.json")]:
+        for json_file in sorted(bijbel_dir.glob(f"*{suffix}")):
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    context_data[variant].append(data)
+            except Exception as e:
+                print(f"Fout bij lezen {json_file}: {e}")
 
-    # Lees NBV21 bestanden
-    for json_file in sorted(bijbel_dir.glob("*_NBV21.json")):
-        try:
-            with open(json_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                context_data["nbv21"].append(data)
-        except Exception as e:
-            print(f"Fout bij lezen {json_file}: {e}")
-
-    # Lees Grondtekst bestanden
-    context_data["grondtekst"] = []
-    for json_file in sorted(bijbel_dir.glob("*_Grondtekst.json")):
-        try:
-            with open(json_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                context_data["grondtekst"].append(data)
-        except Exception as e:
-            print(f"Fout bij lezen {json_file}: {e}")
-
-    # Als alles leeg is, retourneer lege string
-    if not context_data["naardense_bijbel"] and not context_data["nbv21"] and not context_data["grondtekst"]:
+    if not any(context_data.values()):
         return ""
 
     return json.dumps(context_data, ensure_ascii=False, indent=2)
@@ -575,102 +469,64 @@ def get_gemini_client() -> genai.Client:
 
 
 def build_context_string(previous_analyses: dict, limited: bool = False, excluded_sections: list = None) -> str:
-    """Bouw een context string van vorige analyses.
-
-    Args:
-        previous_analyses: Dictionary met alle analyses
-        limited: Als True, alleen sociaal-maatschappelijke context voor hoordersprofielen
-        excluded_sections: Lijst met sleutels die uitgesloten moeten worden (bv. 'kunst_cultuur')
-    """
+    """Bouw een context string van vorige analyses."""
     if excluded_sections is None:
         excluded_sections = []
 
     sections = []
 
     if previous_analyses.get("liturgische_context"):
-        sections.append("## Liturgische Context en Schriftlezingen\n\n" +
-                       previous_analyses["liturgische_context"])
+        sections.append("## Liturgische Context en Schriftlezingen\n\n" + previous_analyses["liturgische_context"])
 
     if previous_analyses.get("sociaal_maatschappelijk"):
-        sections.append("## Sociaal-Maatschappelijke Context\n\n" +
-                       previous_analyses["sociaal_maatschappelijk"])
+        sections.append("## Sociaal-Maatschappelijke Context\n\n" + previous_analyses["sociaal_maatschappelijk"])
 
     if previous_analyses.get("waardenorientatie"):
-        sections.append("## Waardenoriëntatie\n\n" +
-                       previous_analyses["waardenorientatie"])
+        sections.append("## Waardenoriëntatie\n\n" + previous_analyses["waardenorientatie"])
 
     if previous_analyses.get("geloofsorientatie"):
-        sections.append("## Geloofsoriëntatie\n\n" +
-                       previous_analyses["geloofsorientatie"])
+        sections.append("## Geloofsoriëntatie\n\n" + previous_analyses["geloofsorientatie"])
 
     if previous_analyses.get("synthese"):
-        sections.append("## Interpretatieve Synthese\n\n" +
-                       previous_analyses["synthese"])
+        sections.append("## Interpretatieve Synthese\n\n" + previous_analyses["synthese"])
 
-    # Voor hoordersprofielen stoppen we hier - exegese, kunst, kalender etc. niet nodig
     if limited:
         return "\n\n---\n\n".join(sections)
 
     if previous_analyses.get("wereldnieuws") and "wereldnieuws" not in excluded_sections:
-        sections.append("## Actueel Wereldnieuws\n\n" +
-                       previous_analyses["wereldnieuws"])
+        sections.append("## Actueel Wereldnieuws\n\n" + previous_analyses["wereldnieuws"])
 
     if previous_analyses.get("politieke_orientatie") and "politieke_orientatie" not in excluded_sections:
-        sections.append("## Politieke Oriëntatie\n\n" +
-                       previous_analyses["politieke_orientatie"])
+        sections.append("## Politieke Oriëntatie\n\n" + previous_analyses["politieke_orientatie"])
 
     if previous_analyses.get("exegese") and "exegese" not in excluded_sections:
-        sections.append("## Exegese\n\n" +
-                       previous_analyses["exegese"])
+        sections.append("## Exegese\n\n" + previous_analyses["exegese"])
+
+    if previous_analyses.get("commentaren") and "commentaren" not in excluded_sections:
+        sections.append("## Commentaren (Onderzoek)\n\n" + previous_analyses["commentaren"])
 
     if previous_analyses.get("kunst_cultuur") and "kunst_cultuur" not in excluded_sections:
-        sections.append("## Kunst & Cultuur\n\n" +
-                       previous_analyses["kunst_cultuur"])
+        sections.append("## Kunst & Cultuur\n\n" + previous_analyses["kunst_cultuur"])
 
     if previous_analyses.get("focus_en_functie") and "focus_en_functie" not in excluded_sections:
-        sections.append("## Focus en Functie\n\n" +
-                       previous_analyses["focus_en_functie"])
+        sections.append("## Focus en Functie\n\n" + previous_analyses["focus_en_functie"])
 
     if previous_analyses.get("kalender") and "kalender" not in excluded_sections:
-        sections.append("## Kalender\n\n" +
-                       previous_analyses["kalender"])
+        sections.append("## Kalender\n\n" + previous_analyses["kalender"])
 
     if previous_analyses.get("representatieve_hoorders") and "representatieve_hoorders" not in excluded_sections:
-        sections.append("## Representatieve Hoorders\n\n" +
-                       previous_analyses["representatieve_hoorders"])
-
-    if previous_analyses.get("homiletische_analyse") and "homiletische_analyse" not in excluded_sections:
-        sections.append("## Homiletische Analyse (Lowry)\n\n" +
-                       previous_analyses["homiletische_analyse"])
-
-    if previous_analyses.get("homiletische_analyse_buttrick") and "homiletische_analyse_buttrick" not in excluded_sections:
-        sections.append("## Homiletische Analyse (Buttrick)\n\n" +
-                       previous_analyses["homiletische_analyse_buttrick"])
-
-    if previous_analyses.get("homiletische_illustraties") and "homiletische_illustraties" not in excluded_sections:
-        sections.append("## Homiletische Illustraties\n\n" +
-                       previous_analyses["homiletische_illustraties"])
-
-    if previous_analyses.get("klassieke_retorica") and "klassieke_retorica" not in excluded_sections:
-        sections.append("## Klassiek-Retorische Analyse\n\n" +
-                       previous_analyses["klassieke_retorica"])
-
-    if previous_analyses.get("gebeden") and "gebeden" not in excluded_sections:
-        sections.append("## Gebeden\n\n" +
-                       previous_analyses["gebeden"])
+        sections.append("## Representatieve Hoorders\n\n" + previous_analyses["representatieve_hoorders"])
 
     return "\n\n---\n\n".join(sections)
 
 
 def extract_json(text: str) -> dict:
-    """Extraheer JSON uit de response, ook als deze in markdown is gewrapt."""
-    # Probeer eerst direct te parsen
+    """Extraheer JSON uit de response."""
     try:
         return json.loads(text)
     except json.JSONDecodeError:
         pass
 
-    # Probeer JSON uit markdown code block te halen
     json_match = re.search(r'```(?:json)?\s*\n?(.*?)\n?```', text, re.DOTALL)
     if json_match:
         try:
@@ -678,7 +534,6 @@ def extract_json(text: str) -> dict:
         except json.JSONDecodeError:
             pass
 
-    # Probeer JSON te vinden tussen { en }
     json_match = re.search(r'\{.*\}', text, re.DOTALL)
     if json_match:
         try:
@@ -686,27 +541,18 @@ def extract_json(text: str) -> dict:
         except json.JSONDecodeError:
             pass
 
-    # Als niets werkt, return error object
     return {"error": "Kon geen valide JSON extraheren", "raw_response": text[:1000]}
 
 
 def run_analysis(client: genai.Client, prompt: str, title: str, temperature: float = 0.2, model: str = None) -> dict:
-    """Voer een analyse uit met Gemini en Google Search. Retourneert JSON dict.
-
-    Args:
-        client: De Gemini client
-        prompt: De prompt voor het model
-        title: Titel van de analyse (voor logging)
-        temperature: Temperatuur voor het model
-        model: Model om te gebruiken (default: MODEL_NAME, fallback naar MODEL_NAME_FALLBACK)
-    """
+    """Voer een analyse uit met Gemini en Google Search."""
     current_model = model or MODEL_NAME
 
     print(f"\n{'─' * 50}")
     print(f"Analyseren: {title}")
-    print(f"{'─' * 50}")
+    print(f"{ '─' * 50}")
 
-    max_retries = 2  # 3 pogingen totaal met flash
+    max_retries = 2
     for attempt in range(max_retries + 1):
         if attempt > 0:
             print(f"Poging {attempt + 1}/{max_retries + 1} ({current_model})...")
@@ -726,22 +572,10 @@ def run_analysis(client: genai.Client, prompt: str, title: str, temperature: flo
                         google_search=types.GoogleSearch()
                     )],
                     safety_settings=[
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
+                        types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                        types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                        types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                        types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                     ]
                 )
             )
@@ -749,164 +583,192 @@ def run_analysis(client: genai.Client, prompt: str, title: str, temperature: flo
             if response.text:
                 result = extract_json(response.text)
                 if "error" in result:
-                    print(f"⚠ Analyse '{title}' voltooid maar JSON parsing mislukt (poging {attempt + 1})")
-                    if attempt < max_retries:
-                        continue
+                    print(f"⚠ Analyse '{title}' voltooid maar JSON parsing mislukt")
+                    if attempt < max_retries: continue
                 else:
                     print(f"✓ Analyse '{title}' voltooid (valide JSON)")
                     return result
             else:
-                print(f"✗ Geen tekst ontvangen voor '{title}' (poging {attempt + 1})")
-                if attempt < max_retries:
-                    continue
+                print(f"✗ Geen tekst ontvangen voor '{title}'")
+                if attempt < max_retries: continue
 
         except Exception as e:
-            error_msg = f"Fout bij analyse '{title}': {str(e)}"
-            print(f"✗ {error_msg}")
-            if attempt < max_retries:
-                continue
+            print(f"✗ Fout bij analyse '{title}': {str(e)}")
+            if attempt < max_retries: continue
 
-    # Als alle retries met huidige model mislukt zijn, probeer fallback model
     if current_model == MODEL_NAME and MODEL_NAME_FALLBACK:
-        print(f"\n⚠ Alle pogingen met {MODEL_NAME} mislukt. Fallback naar {MODEL_NAME_FALLBACK}...")
+        print(f"\n⚠ Fallback naar {MODEL_NAME_FALLBACK}...")
         return run_analysis(client, prompt, title, temperature=temperature, model=MODEL_NAME_FALLBACK)
 
-    # Als ook fallback mislukt, return error
-    return {"error": f"Analyse mislukt na herpogingen (inclusief fallback)", "title": title}
+    return {"error": f"Analyse mislukt na herpogingen", "title": title}
 
 
 def verify_kunst_cultuur(client: genai.Client, content: dict) -> dict:
-    """Verificeer alle bronnen in de kunst/cultuur output en verwijder niet-verifieerbare items."""
+    """Verifieer alle bronnen in de kunst/cultuur output."""
     print(f"\n{'─' * 50}")
     print("VERIFICATIE: Bronnen controleren...")
-    print(f"{'─' * 50}")
-    print("Bezig met verifiëren van films, boeken en kunstwerken...")
+    print(f"{ '─' * 50}")
 
     content_str = json.dumps(content, ensure_ascii=False, indent=2)
+    if len(content_str) > 100000:
+        content_str = content_str[:100000] + "\n\n... [inhoud ingekort]"
 
-    # Voeg een limiet toe aan de grootte van de content om timeouts te voorkomen
-    if len(content_str) > 100000:  # ~100KB limiet
-        print("⚠ Content te groot voor verificatie - limiteren tot 100KB")
-        content_str = content_str[:100000] + "\n\n... [inhoud ingekort voor verificatie]"
+    verification_prompt = """Je bent een strenge factchecker. Controleer de onderstaande JSON op niet-bestaande bronnen (films, boeken, kunst). Verwijder alles wat je niet kunt verifiëren via Search. Retourneer ALLEEN de geschoonde JSON."""
 
-    verification_prompt = """Je bent een strenge factchecker. Je taak is om de onderstaande JSON te controleren op duidelijk niet-bestaande bronnen.
-
-## Instructies
-
-1. Doorloop ELKE genoemde film, boek, kunstwerk, muziekstuk en andere culturele verwijzing
-2. Verifieer via Google Search of deze ECHT BESTAAT:
-   - Bij films: controleer of de film bestaat met die titel, regisseur en jaar
-   - Bij boeken: controleer of het boek bestaat met die auteur en titel
-   - Bij kunstwerken: controleer of het kunstwerk bestaat van die kunstenaar
-   - Bij muziek: controleer of het stuk bestaat van die componist/artiest
-
-3. Als je een item duidelijk NIET kunt verifiëren (duidelijk verzonnen, niet gevonden):
-   - Verwijder het HELE object uit de array
-   - Laat geen lege arrays achter als alle items verwijderd zijn
-
-4. Als je een item WEL kunt verifiëren maar details kloppen niet:
-   - Corrigeer de details (bijv. verkeerd jaar, verkeerde regisseur)
-
-5. Behoud de originele JSON structuur
-
-## BELANGRIJK
-- Wees STRENG: bij twijfel, verwijderen (liever 3 geverifieerde items dan 6 waarvan er 2 niet bestaan)
-- Concentreer je op duidelijke hallucinaties (compleet verzonnen items)
-- Retourneer ALLEEN valide JSON, geen markdown of toelichting
-- Begin DIRECT met de JSON, geen inleiding
-
-## Te controleren JSON:
-
-"""
-
-    max_retries = 3
-    for attempt in range(max_retries + 1):
-        try:
-            response = client.models.generate_content(
-                model=MODEL_NAME,
-                contents=verification_prompt + content_str,
-                config=types.GenerateContentConfig(
-                    temperature=0.1,  # Zeer laag voor maximale precisie
-                    top_p=0.85,
-                    top_k=20,
-                    max_output_tokens=32768,
-                    # Verlaag de timeout parameters om te voorkomen dat het proces te lang duurt
-                    response_mime_type="application/json",
-                    tools=[types.Tool(
-                        google_search=types.GoogleSearch()
-                    )],
-                    safety_settings=[
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                        types.SafetySetting(
-                            category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-                            threshold=types.HarmBlockThreshold.BLOCK_NONE
-                        ),
-                    ]
-                )
+    try:
+        response = client.models.generate_content(
+            model=MODEL_NAME,
+            contents=verification_prompt + content_str,
+            config=types.GenerateContentConfig(
+                temperature=0.1,
+                tools=[types.Tool(google_search=types.GoogleSearch())],
+                response_mime_type="application/json"
             )
+        )
+        if response.text:
+            verified = extract_json(response.text)
+            if "error" not in verified:
+                print("✓ Verificatie voltooid")
+                return verified
+    except Exception as e:
+        print(f"✗ Verificatie fout: {e}")
 
-            if response.text:
-                verified = extract_json(response.text)
-                if "error" not in verified:
-                    print("✓ Verificatie voltooid - niet-verifieerbare items verwijderd")
-                    return verified
-                else:
-                    print(f"⚠ Verificatie parsing mislukt (poging {attempt + 1})")
-                    if attempt < max_retries:
-                        continue
-            else:
-                print(f"✗ Verificatie mislukt (geen text) (poging {attempt + 1})")
-                if attempt < max_retries:
-                    continue
-
-        except Exception as e:
-            print(f"✗ Verificatie fout: {str(e)} (poging {attempt + 1})")
-            import traceback
-            print(f"  Volledige foutstack: {traceback.format_exc()}")
-            if attempt < max_retries:
-                print(f"  Wachten 5 seconden voor volgende poging...")
-                import time
-                time.sleep(5)  # Wacht 5 seconden tussen pogingen
-                continue
-
-    # Als alles mislukt, retourneer originele content
-    print("⚠ Verificatie volledig mislukt - originele data behouden")
     return content
+
+
+def mcp_tool_to_gemini_function(tool) -> types.FunctionDeclaration:
+    """Converteer MCP tool naar Gemini FunctionDeclaration."""
+    def clean_schema(schema):
+        if not isinstance(schema, dict): return schema
+        cleaned = {}
+        for key, value in schema.items():
+            if key in ['additionalProperties', '$schema', '$id']: continue
+            if isinstance(value, dict): cleaned[key] = clean_schema(value)
+            elif isinstance(value, list): cleaned[key] = [clean_schema(item) if isinstance(item, dict) else item for item in value]
+            else: cleaned[key] = value
+        return cleaned
+
+    parameters = tool.inputSchema if tool.inputSchema else {"type": "object", "properties": {}}
+    cleaned_parameters = clean_schema(parameters)
+    if "type" not in cleaned_parameters: cleaned_parameters["type"] = "object"
+    if "properties" not in cleaned_parameters: cleaned_parameters["properties"] = {}
+
+    return types.FunctionDeclaration(
+        name=tool.name,
+        description=tool.description or f"Tool: {tool.name}",
+        parameters=cleaned_parameters
+    )
+
+
+async def find_commentaries_via_mcp(client: genai.Client, context: str) -> dict:
+    """Gebruik MCP om exegetische informatie te zoeken in de 'commentaries' database."""
+    if not MCP_AVAILABLE:
+        return {"error": "MCP niet beschikbaar"}
+
+    print(f"\n{'─' * 50}")
+    print("MCP: Gemini zoekt in commentaren database...")
+    print(f"{ '─' * 50}")
+
+    uri = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
+    username = os.environ.get("NEO4J_USER", "neo4j")
+    password = os.environ.get("NEO4J_PASSWORD", "password")
+    database = "commentaries"
+
+    server_params = StdioServerParameters(
+        command="npx",
+        args=["-y", "@nibronix/mcp-neo4j-server"],
+        env={
+            "NEO4J_URI": uri,
+            "NEO4J_USERNAME": username,
+            "NEO4J_PASSWORD": password,
+            "NEO4J_DATABASE": database,
+            "PATH": os.environ.get("PATH", ""),
+        }
+    )
+
+    try:
+        prompt_path = PROMPTS_DIR / "08c_commentaries.md"
+        with open(prompt_path, "r", encoding="utf-8") as f:
+            system_instruction = f.read()
+    except Exception as e:
+        print(f"⚠ Fout bij laden prompt: {e}")
+        return {"error": str(e)}
+
+    user_query = f"Hier is de context voor de exegese (lezingen en achtergrond):\n\n{context}\n\nVoer nu het onderzoek uit in de database en schrijf de exegese zoals gevraagd."
+
+    try:
+        async with stdio_client(server_params) as (read, write):
+            async with ClientSession(read, write) as session:
+                await session.initialize()
+                tools_result = await session.list_tools()
+                gemini_tools = [types.Tool(function_declarations=[mcp_tool_to_gemini_function(tool)]) for tool in tools_result.tools]
+                
+                messages = [types.Content(role="user", parts=[types.Part(text=user_query)])]
+                max_iterations = 15
+                iteration = 0
+                final_response = ""
+
+                while iteration < max_iterations:
+                    iteration += 1
+                    print(f"  Iteratie {iteration}/{max_iterations}...")
+                    config_params = {"tools": gemini_tools, "system_instruction": system_instruction, "temperature": 0.2, "max_output_tokens": 8192}
+                    if iteration > 5: config_params["response_mime_type"] = "application/json"
+
+                    response = client.models.generate_content(model=MODEL_NAME, contents=messages, config=types.GenerateContentConfig(**config_params))
+                    if not response.candidates: break
+                    parts = response.candidates[0].content.parts
+                    has_function_call = False
+
+                    for part in parts:
+                        if hasattr(part, 'text') and part.text:
+                            final_response = part.text
+                        if hasattr(part, 'function_call') and part.function_call:
+                            has_function_call = True
+                            func_call = part.function_call
+                            tool_name = func_call.name
+                            tool_args = dict(func_call.args) if func_call.args else {}
+
+                            print(f"  → Tool: {tool_name}")
+                            try:
+                                result = await asyncio.wait_for(session.call_tool(tool_name, tool_args), timeout=60.0)
+                                tool_result = result.content[0].text if result.content else "Geen resultaat"
+                                
+                                # Performance logging en Truncation
+                                result_len = len(tool_result)
+                                print(f"    ✓ Resultaat: {result_len} chars")
+                                
+                                if result_len > 150000:
+                                    print(f"    ⚠ WAARSCHUWING: Response te groot ({result_len} chars). Wordt ingekort tot 150.000.")
+                                    tool_result = tool_result[:150000] + "\n... [DATA INGEKORT WEGENS LENGTE. VERFIJN JE QUERY.]"
+                                    
+                            except Exception as e:
+                                tool_result = f"Error: {e}"
+                                print(f"    ✗ Tool error: {e}")
+
+                            messages.append(types.Content(role="model", parts=parts))
+                            messages.append(types.Content(role="user", parts=[types.Part(function_response=types.FunctionResponse(name=tool_name, response={"result": tool_result}))]))
+                            break
+                    if not has_function_call: break
+
+                try: return {**json.loads(final_response), "_meta": {"iterations": iteration}}
+                except:
+                    json_match = re.search(r'```(?:json)?\s*\n?(.*?)\n?```', final_response, re.DOTALL)
+                    if json_match: return {**json.loads(json_match.group(1)), "_meta": {"iterations": iteration}}
+                    return {"error": "Geen valide JSON", "markdown_output": final_response}
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return {"error": str(e)}
 
 
 def save_analysis(output_dir: Path, filename: str, content: dict, title: str, user_input: dict = None):
     """Sla een analyse op naar een JSON bestand."""
     filepath = output_dir / f"{filename}.json"
-
-    # Voeg metadata toe
-    meta = {
-        "title": title,
-        "filename": filename,
-        "generated_at": datetime.now().isoformat()
-    }
-
-    if user_input:
-        meta["user_input"] = user_input
-
-    content_with_meta = {
-        "_meta": meta,
-        **content
-    }
-
+    meta = {"title": title, "filename": filename, "generated_at": datetime.now().isoformat()}
+    if user_input: meta["user_input"] = user_input
+    content_with_meta = {"_meta": meta, **content}
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(content_with_meta, f, ensure_ascii=False, indent=2)
-
     print(f"  Opgeslagen: {filepath.name}")
 
 
@@ -920,7 +782,6 @@ def save_log(logs_dir: Path, filename: str, content: str):
 
 def update_summary(output_dir: Path):
     """Update het overzichtsbestand met de nieuwe analyses."""
-    # Update JSON overzicht
     overzicht_json_path = output_dir / "00_overzicht.json"
     if overzicht_json_path.exists():
         try:
@@ -929,6 +790,7 @@ def update_summary(output_dir: Path):
 
             new_analyses = [
                 ("08a_exegese", "Exegese van de Schriftlezingen"),
+                ("08c_commentaries", "Exegetische Diepgang (Commentaren)"),
                 ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
                 ("10_focus_en_functie", "Focus en Functie"),
                 ("11_kalender", "Kalender"),
@@ -951,57 +813,74 @@ def update_summary(output_dir: Path):
             existing_names = [a.get("name") for a in data.get("analyses", [])]
             for name, title in new_analyses:
                 if (output_dir / f"{name}.json").exists() and name not in existing_names:
-                    data.setdefault("analyses", []).append({
-                        "name": name,
-                        "title": title,
-                        "file": f"{name}.json"
-                    })
+                    data.setdefault("analyses", []).append({"name": name, "title": title, "file": f"{name}.json"})
 
             with open(overzicht_json_path, "w", encoding="utf-8") as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-        except (json.JSONDecodeError, KeyError):
+        except:
             pass
 
-    # Update MD overzicht
     overzicht_md_path = output_dir / "00_overzicht.md"
     if overzicht_md_path.exists():
         with open(overzicht_md_path, "r", encoding="utf-8") as f:
             content = f.read()
-
-        new_analyses = [
-            ("08a_exegese", "Exegese van de Schriftlezingen"),
-            ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
-            ("10_focus_en_functie", "Focus en Functie"),
-            ("11_kalender", "Kalender"),
-            ("12_representatieve_hoorders", "Representatieve Hoorders"),
-            ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
-            ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
-            ("13b_homiletische_illustraties", "Homiletische Illustraties Generator"),
-            ("14_klassieke_retorica", "Klassiek-Retorische Analyse (Aristoteles)"),
-            ("14_gebeden", "Gebeden voor de Eredienst"),
-            ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
-            ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
-            ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
-            ("15_bezinningsmoment", "Moment van Bezinning"),
-            ("15_kindermoment", "Kindermoment"),
-            ("16_preek_solle", "Preek in de stijl van Sölle"),
-            ("17_preek_jungel", "Preek in de stijl van Jüngel"),
-            ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
-        ]
-
         for name, title in new_analyses:
-            # Check for JSON file first, then MD
-            if (output_dir / f"{name}.json").exists() and f"[{title}]" not in content:
+            if ((output_dir / f"{name}.json").exists() or (output_dir / f"{name}.md").exists()) and f"[{title}]" not in content:
                 if "## Analyses" in content:
-                    content = content.rstrip()
-                    content += f"\n- [{title}]({name}.json)\n"
-            elif (output_dir / f"{name}.md").exists() and f"[{title}]" not in content:
-                if "## Analyses" in content:
-                    content = content.rstrip()
-                    content += f"\n- [{title}]({name}.md)\n"
-
+                    content = content.rstrip() + f"\n- [{title}]({name}.json)\n"
         with open(overzicht_md_path, "w", encoding="utf-8") as f:
             f.write(content)
+
+
+def combine_all_json(folder: Path):
+    """Combineer alle genummerde JSON-bestanden (00-15) tot één bestand, met ontdubbeling van metadata."""
+    print("\nAlle JSON-outputs combineren...")
+    combined_data = {}
+    
+    meta_file = folder / "00_meta.json"
+    if meta_file.exists():
+        try:
+            with open(meta_file, "r", encoding="utf-8") as f:
+                combined_data["00_meta"] = json.load(f)
+        except Exception as e:
+            print(f"  Fout bij lezen 00_meta.json: {e}")
+
+    json_files = sorted([f for f in folder.glob("*.json") if re.match(r"^\d{2}[a-z]?_.*\.json$", f.name)])
+    for json_file in json_files:
+        key = json_file.stem
+        if key in ["00_meta", "combined_output"]: continue
+        try:
+            with open(json_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if "_meta" in data: del data["_meta"]
+                combined_data[key] = data
+        except Exception as e:
+            print(f"  Fout bij lezen {json_file.name}: {e}")
+
+    bijbel_dir = folder / "bijbelteksten"
+    if bijbel_dir.exists():
+        bijbel_data = {"naardense_bijbel": [], "nbv21": [], "grondtekst": []}
+        for variant, suffix in [("naardense_bijbel", "_NB.json"), ("nbv21", "_NBV21.json"), ("grondtekst", "_Grondtekst.json")]:
+            for json_file in sorted(bijbel_dir.glob(f"*{suffix}")):
+                try:
+                    with open(json_file, 'r', encoding='utf-8') as f:
+                        content = json.load(f)
+                        if isinstance(content, list): bijbel_data[variant].extend(content)
+                        else: bijbel_data[variant].append(content)
+                except: pass
+        if any(bijbel_data.values()): combined_data["Bijbelteksten"] = bijbel_data
+            
+    output_path = folder / "combined_output.json"
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(combined_data, f, ensure_ascii=False, indent=2)
+    print(f"  Gecombineerde output opgeslagen: {output_path.name}")
+    
+    try:
+        script_path = SCRIPT_DIR / "technical/count_tokens.py"
+        print(f"\nTokens tellen voor {output_path.name}...")
+        subprocess.run([sys.executable, str(script_path), "--file", str(output_path)], check=False)
+    except:
+        pass
 
 
 def main():
@@ -1010,7 +889,6 @@ def main():
     parser.add_argument("--exegese", action="store_true", help="Voer alleen de exegese analyse uit")
     args = parser.parse_args()
 
-    # Laad environment variables uit .env
     env_file = SCRIPT_DIR / ".env"
     if env_file.exists():
         with open(env_file) as f:
@@ -1019,110 +897,44 @@ def main():
                     k, v = line.strip().split("=", 1)
                     os.environ[k.strip()] = v.strip().strip('"\'')
 
-    # Selecteer folder
     folder = select_folder()
     print(f"\nGeselecteerd: {folder.name}")
-
-    # Lees vorige analyses
-    print("\nVorige analyses laden...")
     previous_analyses = read_previous_analyses(folder)
     user_input = extract_user_input_from_folder(folder)
 
-    print(f"  Plaatsnaam: {user_input['plaatsnaam']}")
-    print(f"  Gemeente: {user_input['gemeente']}")
-    print(f"  Datum: {user_input['datum']}")
-
-    # Controleer of liturgische context aanwezig is
     if not previous_analyses.get("liturgische_context"):
-        print("\nFOUT: Geen liturgische context gevonden (00_zondag_kerkelijk_jaar.md)")
-        print("Deze is nodig voor de exegese en kunst/cultuur analyse.")
+        print("\nFOUT: Geen liturgische context gevonden.")
         sys.exit(1)
 
-    # Download bijbelteksten van de Naardense Bijbel
-    print("\n" + "─" * 50)
-    print("BIJBELTEKSTEN OPHALEN")
-    print("─" * 50)
-
-    # Controleer eerst of er al bijbelteksten bestaan
+    print("\n" + "─" * 50 + "\nBIJBELTEKSTEN OPHALEN\n" + "─" * 50)
     bijbel_dir = folder / "bijbelteksten"
-    nb_files = list(bijbel_dir.glob("*_NB.json")) if bijbel_dir.exists() else []
-    nbv21_files = list(bijbel_dir.glob("*_NBV21.json")) if bijbel_dir.exists() else []
-    grondtekst_files = list(bijbel_dir.glob("*_Grondtekst.json")) if bijbel_dir.exists() else []
+    if not (bijbel_dir.exists() and list(bijbel_dir.glob("*_NB.json"))):
+        download_lezingen(folder, previous_analyses["liturgische_context"])
+    if not (bijbel_dir.exists() and list(bijbel_dir.glob("*_NBV21.json"))):
+        save_nbv21_lezingen(folder, previous_analyses["liturgische_context"])
+    if not (bijbel_dir.exists() and list(bijbel_dir.glob("*_Grondtekst.json"))):
+        save_grondtekst_lezingen(folder, previous_analyses["liturgische_context"])
 
-    if nb_files:
-        print(f"\n! {len(nb_files)} Naardense Bijbel bestanden gevonden, overslaan download")
-        bijbelteksten_map = {str(f): str(f) for f in nb_files}  # Simulate result
-    else:
-        bijbelteksten_map = download_lezingen(folder, previous_analyses["liturgische_context"])
-        if bijbelteksten_map:
-            print(f"✓ {len(bijbelteksten_map)} bijbeltekst(en) opgehaald en opgeslagen")
-        else:
-            print("\n! Geen bijbelteksten kunnen ophalen (exegese gaat door zonder grondtekst)")
-
-    # Controleer of NBV21 bestanden al bestaan
-    if nbv21_files:
-        print(f"! {len(nbv21_files)} NBV21 bestanden gevonden, overslaan download")
-    else:
-        # Haal NBV21 teksten op en sla ze op
-        # We hoeven de return value (tekst) niet te gebruiken, want we lezen straks de JSONs
-        nbv21_files = save_nbv21_lezingen(folder, previous_analyses["liturgische_context"])
-
-        if nbv21_files:
-            print(f"✓ NBV21 teksten opgehaald en opgeslagen ({len(nbv21_files)} bestanden)")
-
-    # Controleer of Grondtekst bestanden al bestaan
-    if grondtekst_files:
-        print(f"! {len(grondtekst_files)} Grondtekst bestanden gevonden, overslaan download")
-    else:
-        # Haal Grondtekst (BHS/NA28) op en sla ze op
-        grondtekst_files = save_grondtekst_lezingen(folder, previous_analyses["liturgische_context"])
-
-        if grondtekst_files:
-            print(f"✓ Grondteksten (BHS/NA28) opgehaald en opgeslagen ({len(grondtekst_files)} bestanden)")
-
-    # Initialiseer client
-    print("\nGoogle GenAI Client initialiseren...")
     client = get_gemini_client()
-
-    # LOGS DIRECTORY AANMAKEN
     LOGS_DIR = folder / "logs"
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Bouw context (inclusief bijbelteksten)
     context_string = build_context_string(previous_analyses)
-
-    # Laad bijbelteksten als JSON en voeg toe aan context
     bible_json_context = load_bible_context_as_json(folder)
-    
     if bible_json_context:
-        context_string += f"""
+        context_string += f"\n\n---\n## Bijbelteksten\n```json\n{bible_json_context}\n```\n"
 
----
-
-## Bijbelteksten (Bronmateriaal)
-
-De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
-
-```json
-{bible_json_context}
-```
-"""
-
-    # Laad prompts
     base_prompt = load_prompt("base_prompt_verdieping.md", user_input)
 
-    # Vraag de gebruiker welke optionele onderdelen mee te nemen
     print("\nOPTIONELE ONDERDELEN:")
     wil_kindermoment = input("  Wil je een Kindermoment genereren? (j/n): ").strip().lower() == 'j'
     wil_bezinningsmoment = input("  Wil je een Moment van Bezinning genereren? (j/n): ").strip().lower() == 'j'
 
-    # Analyses uitvoeren
-    print("\n" + "=" * 60)
-    print(f"VERDIEPING STARTEN MET MODEL: {MODEL_NAME}")
-    print("=" * 60)
+    print("\n" + "=" * 60 + f"\nVERDIEPING STARTEN MET MODEL: {MODEL_NAME}\n" + "=" * 60)
 
     analysis_definitions = [
         ("08a_exegese", "Exegese van de Schriftlezingen"),
+        ("08c_commentaries", "Exegetische Diepgang (Commentaren)"),
         ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
         ("10_focus_en_functie", "Focus en Functie"),
         ("11_kalender", "Kalender: Gedenkdagen en Bijzondere Momenten"),
@@ -1136,246 +948,46 @@ De volgende bijbelteksten zijn beschikbaar voor exegese (in JSON formaat):
         ("14_gebeden_dialogisch", "Dialogische Gebeden (Dumas)"),
         ("14_gebeden_eenvoudig", "Eenvoudige Gebeden (B1-niveau)"),
     ]
-
-    if wil_kindermoment:
-        analysis_definitions.append(("15_kindermoment", "Kindermoment"))
-
-    if wil_bezinningsmoment:
-        analysis_definitions.append(("15_bezinningsmoment", "Moment van Bezinning"))
-
-    analysis_definitions.extend([
-        ("16_preek_solle", "Preek in de stijl van Sölle"),
-        ("17_preek_jungel", "Preek in de stijl van Jüngel"),
-        ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
-    ])
+    if wil_kindermoment: analysis_definitions.append(("15_kindermoment", "Kindermoment"))
+    if wil_bezinningsmoment: analysis_definitions.append(("15_bezinningsmoment", "Moment van Bezinning"))
+    analysis_definitions.extend([("16_preek_solle", "Preek in de stijl van Sölle"), ("17_preek_jungel", "Preek in de stijl van Jüngel"), ("18_preek_noordmans", "Preekschets in de stijl van Noordmans")])
 
     if args.exegese:
-        print("\nINFO: Alleen exegese wordt uitgevoerd (--exegese)")
-        analysis_definitions = [x for x in analysis_definitions if x[0] == "08a_exegese"]
-
-    # Mapping van oude naar nieuwe bestandsnamen (voor backwards compatibility)
-    old_to_new = {
-        "08a_exegese": "07_exegese",
-        "09_kunst_cultuur": "08_kunst_cultuur",
-        "10_focus_en_functie": "09_focus_en_functie",
-        "11_kalender": "10_kalender",
-        "12_representatieve_hoorders": "11_representatieve_hoorders",
-        "13_homiletische_analyse": "12_homiletische_analyse",
-        "14_gebeden": "13_gebeden",
-    }
+        analysis_definitions = [x for x in analysis_definitions if x[0].startswith("08")]
 
     for name, title in analysis_definitions:
-        # Controleer of analyse al bestaat (JSON of MD, nieuwe of oude nummering)
-        existing_file = None
         if (folder / f"{name}.json").exists():
-            existing_file = f"{name}.json"
-        elif (folder / f"{name}.md").exists():
-            existing_file = f"{name}.md (oud formaat)"
-        # Check ook oude naam (bijv. 07_exegese.json)
-        elif name in old_to_new:
-             old_name = old_to_new[name]
-             if (folder / f"{old_name}.json").exists():
-                 existing_file = f"{old_name}.json (oud nummer)"
-             elif (folder / f"{old_name}.md").exists():
-                 existing_file = f"{old_name}.md (oud formaat)"
+            if input(f"\n{name}.json bestaat al. Overschrijven? (j/n): ").strip().lower() != 'j': continue
 
-        if existing_file:
-            overwrite = input(f"\n{existing_file} bestaat al. Overschrijven als JSON met nieuwe naam? (j/n): ").strip().lower()
-            if overwrite != 'j':
-                print(f"  Overgeslagen: {name}")
-                continue
+        if name == "08c_commentaries":
+            if MCP_AVAILABLE:
+                try:
+                    result = asyncio.run(find_commentaries_via_mcp(client, context_string))
+                    save_analysis(folder, name, result, title, user_input)
+                except Exception as e: print(f"✗ Fout bij commentaren: {e}")
+            continue
 
-        # Bereid extra replacements voor
         extra_replacements = {}
-        if name == "14_gebeden_profetisch":
-            print("  Willekeurige voorbeeldgebeden selecteren...")
-            extra_replacements["voorbeeld_gebeden"] = sample_profetische_gebeden()
-        elif name == "14_gebeden_dialogisch":
-            print("  Willekeurige dialogische voorbeeldgebeden selecteren...")
-            extra_replacements["voorbeeld_gebeden"] = sample_dialogische_gebeden()
-        elif name == "16_preek_solle":
-            print("  Willekeurige voorbeeldpreken van Sölle selecteren...")
-            extra_replacements["voorbeeld_gebeden"] = sample_solle_preken()
-        elif name == "17_preek_jungel":
-            print("  Willekeurige voorbeeldpreken van Jüngel selecteren...")
-            extra_replacements["voorbeeld_gebeden"] = sample_jungel_preken()
-        elif name == "18_preek_noordmans":
-            print("  Willekeurige voorbeeldpreken van Noordmans selecteren...")
-            extra_replacements["voorbeeld_gebeden"] = sample_noordmans_preken()
+        if name == "14_gebeden_profetisch": extra_replacements["voorbeeld_gebeden"] = sample_profetische_gebeden()
+        elif name == "14_gebeden_dialogisch": extra_replacements["voorbeeld_gebeden"] = sample_dialogische_gebeden()
+        elif name == "16_preek_solle": extra_replacements["voorbeeld_gebeden"] = sample_solle_preken()
+        elif name == "17_preek_jungel": extra_replacements["voorbeeld_gebeden"] = sample_jungel_preken()
+        elif name == "18_preek_noordmans": extra_replacements["voorbeeld_gebeden"] = sample_noordmans_preken()
 
-        # Bouw prompt
         task_prompt = load_prompt(f"{name}.md", user_input, extra_replacements)
+        analysis_context = build_context_string(previous_analyses, limited=(name == "12_representatieve_hoorders"), excluded_sections=["kunst_cultuur", "kalender", "representatieve_hoorders"] if name.startswith("14_gebeden") else [])
 
-        # Context bepalen
-        if name == "12_representatieve_hoorders":
-            analysis_context = build_context_string(previous_analyses, limited=True)
-        elif name.startswith("14_gebeden"):
-            # Voor gebeden: geen kunst/cultuur, kalender, hoorders
-            analysis_context = build_context_string(
-                previous_analyses, 
-                excluded_sections=["kunst_cultuur", "kalender", "representatieve_hoorders"]
-            )
-        else:
-            analysis_context = context_string
-
-        # Voor gebeden: maskeer adres om letterlijk gebruik te voorkomen
-        display_adres = user_input.get('adres') or 'Onbekend'
-        if name in ["14_gebeden", "14_gebeden_profetisch", "14_gebeden_dialogisch", "14_gebeden_eenvoudig"]:
-            display_adres = "N.v.t. voor deze taak (niet letterlijk noemen)"
-
-        full_prompt = f"""{base_prompt}
-
-# Preekgegevens
-- **Plaatsnaam:** {user_input.get('plaatsnaam')}
-- **Gemeente:** {user_input.get('gemeente')}
-- **Adres:** {display_adres}
-- **Website:** {user_input.get('website') or 'Geen'}
-- **Datum:** {user_input.get('datum')}
-
-# Dossier: Eerdere Analyses & Context
-Hieronder vind je de output van eerdere stappen in het proces. Gebruik deze informatie als fundament voor je huidige taak.
-
-{analysis_context}
-
----
-
-# Huidige Opdracht: {title}
-
-{task_prompt}
-"""
-
-        # LOG DE PROMPT
+        full_prompt = f"{base_prompt}\n# Preekgegevens\n- **Plaatsnaam:** {user_input.get('plaatsnaam')}\n- **Gemeente:** {user_input.get('gemeente')}\n- **Adres:** {'N.v.t.' if name.startswith('14_gebeden') else user_input.get('adres')}\n- **Website:** {user_input.get('website') or 'Geen'}\n- **Datum:** {user_input.get('datum')}\n\n# Dossier\n{analysis_context}\n\n---\n# Opdracht: {title}\n{task_prompt}"
         save_log(LOGS_DIR, name, full_prompt)
 
-        # Voer analyse uit
-        if name == "11_kalender":
-            temp = 0.1 # Laag voor feitelijke precisie
-        elif name in ["13b_homiletische_illustraties", "14_gebeden", "14_gebeden_profetisch", "14_gebeden_dialogisch", "14_gebeden_eenvoudig",
-                      "15_kindermoment", "15_bezinningsmoment",
-                      "16_preek_solle", "17_preek_jungel", "18_preek_noordmans"]:
-            temp = 0.8 # Hoger voor poëtische creativiteit en concrete beeldspraak
-        else:
-            temp = 0.2 # Standaard
-
+        temp = 0.8 if name in ["13b_homiletische_illustraties", "14_gebeden", "16_preek_solle"] else 0.2
         result = run_analysis(client, full_prompt, title, temperature=temp)
-
-        # Extra verificatiestap voor kunst_cultuur om hallucinaties te verwijderen
-        if name == "09_kunst_cultuur":
-            result = verify_kunst_cultuur(client, result)
-
+        if name == "09_kunst_cultuur": result = verify_kunst_cultuur(client, result)
         save_analysis(folder, name, result, title, user_input)
 
-    # Update overzicht
     update_summary(folder)
-    
-    # Combineer alle JSONs
     combine_all_json(folder)
-
-    print("\n" + "=" * 60)
-    print("KLAAR")
-    print(f"Locatie: {folder}")
-    print("=" * 60)
-
-
-def combine_all_json(folder: Path):
-    """Combineer alle genummerde JSON-bestanden (00-15) tot één bestand, met ontdubbeling van metadata."""
-    print("\nAlle JSON-outputs combineren...")
-    combined_data = {}
-    
-    # 1. Laad 00_meta.json (Basis metadata)
-    meta_file = folder / "00_meta.json"
-    if meta_file.exists():
-        try:
-            with open(meta_file, "r", encoding="utf-8") as f:
-                combined_data["00_meta"] = json.load(f)
-        except Exception as e:
-            print(f"  Fout bij lezen 00_meta.json: {e}")
-
-    # 2. Laad alle andere genummerde bestanden
-    # We sorteren ze zodat de volgorde logisch is
-    json_files = sorted([f for f in folder.glob("*.json") if re.match(r"^\d{2}[a-z]?_.*\.json$", f.name)])
-    
-    for json_file in json_files:
-        key = json_file.stem # bestandsnaam zonder extensie
-        
-        # Sla 00_meta over (al gedaan) en combined_output zelf
-        if key == "00_meta" or key == "combined_output":
-            continue
-            
-        try:
-            with open(json_file, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                
-                # Ontdubbeling: Verwijder _meta object als het bestaat
-                # (Dit bevat vaak redundante info zoals adres, datum, etc.)
-                if "_meta" in data:
-                    del data["_meta"]
-                
-                combined_data[key] = data
-        except Exception as e:
-            print(f"  Fout bij lezen {json_file.name}: {e}")
-
-    # 3. Voeg bijbelteksten toe
-    bijbel_dir = folder / "bijbelteksten"
-    if bijbel_dir.exists():
-        bijbel_data = {
-            "naardense_bijbel": [],
-            "nbv21": [],
-            "grondtekst": []
-        }
-        
-        # Lees Naardense Bijbel
-        for json_file in sorted(bijbel_dir.glob("*_NB.json")):
-            try:
-                with open(json_file, 'r', encoding='utf-8') as f:
-                    content = json.load(f)
-                    if isinstance(content, list):
-                        bijbel_data["naardense_bijbel"].extend(content)
-                    else:
-                        bijbel_data["naardense_bijbel"].append(content)
-            except Exception as e:
-                print(f"  Fout bij lezen NB tekst {json_file.name}: {e}")
-
-        # Lees NBV21
-        for json_file in sorted(bijbel_dir.glob("*_NBV21.json")):
-            try:
-                with open(json_file, 'r', encoding='utf-8') as f:
-                    content = json.load(f)
-                    if isinstance(content, list):
-                        bijbel_data["nbv21"].extend(content)
-                    else:
-                        bijbel_data["nbv21"].append(content)
-            except Exception as e:
-                print(f"  Fout bij lezen NBV21 tekst {json_file.name}: {e}")
-
-        # Lees Grondtekst
-        for json_file in sorted(bijbel_dir.glob("*_Grondtekst.json")):
-            try:
-                with open(json_file, 'r', encoding='utf-8') as f:
-                    content = json.load(f)
-                    if isinstance(content, list):
-                        bijbel_data["grondtekst"].extend(content)
-                    else:
-                        bijbel_data["grondtekst"].append(content)
-            except Exception as e:
-                print(f"  Fout bij lezen Grondtekst {json_file.name}: {e}")
-        
-        if any(bijbel_data.values()):
-            combined_data["Bijbelteksten"] = bijbel_data
-            
-    output_path = folder / "combined_output.json"
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(combined_data, f, ensure_ascii=False, indent=2)
-        
-    print(f"  Gecombineerde output opgeslagen: {output_path.name}")
-    
-    # Draai count_tokens.py op het gecombineerde bestand
-    try:
-        script_path = SCRIPT_DIR / "technical/count_tokens.py"
-        print(f"\nTokens tellen voor {output_path.name}...")
-        subprocess.run([sys.executable, str(script_path), "--file", str(output_path)], check=False)
-    except Exception as e:
-        print(f"  Kon count_tokens.py niet uitvoeren: {e}")
+    print("\n" + "=" * 60 + f"\nKLAAR\nLocatie: {folder}\n" + "=" * 60)
 
 
 if __name__ == "__main__":
