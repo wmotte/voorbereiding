@@ -2816,14 +2816,13 @@
                     });
                 } else if (key === '14_klassieke_retorica') {
                     // Special handling for Klassieke Retorica - show main sections
-                    const subKeyOrder = ['meta', 'aristotelische_appeals', 'klassieke_dispositio', 'monroes_motivated_sequence', 'retorische_figuren', 'evaluatiecriteria', 'praktische_tips'];
+                    const subKeyOrder = ['meta', 'aristotelische_appeals', 'klassieke_dispositio', 'monroes_motivated_sequence', 'retorische_figuren', 'praktische_tips'];
                     const labelMap = {
                         'meta': 'Meta',
                         'aristotelische_appeals': 'Aristotelische Appeals',
                         'klassieke_dispositio': 'Klassieke Dispositio',
                         'monroes_motivated_sequence': 'Monroe\'s Sequence',
                         'retorische_figuren': 'Retorische Figuren',
-                        'evaluatiecriteria': 'Evaluatie',
                         'praktische_tips': 'Praktische Tips'
                     };
 
@@ -3602,7 +3601,7 @@
 
         function renderFocusFunctie(opties) {
             let html = `<div class="data-group">`;
-            html += `<div class="data-group-title">Opties</div>`;
+            html += `<div class="data-group-title">Hieronder een drietal mogelijkheden:</div>`;
 
             opties.forEach((optie, index) => {
                 html += `<div id="section-10_focus_en_functie-optie-${optie.nummer || (index + 1)}" class="subsection-anchor"></div>`;
@@ -3992,8 +3991,6 @@
 
             // Methodiek Uitleg (optional intro)
             if (data.methodiek_uitleg) {
-                html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Methodiek</div>`;
                 if (data.methodiek_uitleg.benadering) {
                     html += `<div class="quote-block">${processText(data.methodiek_uitleg.benadering)}</div>`;
                 }
@@ -4008,7 +4005,6 @@
                     }
                     html += `</div>`;
                 }
-                html += `</div>`;
             }
 
             // GCF Section (Gevallen Conditie Focus)
@@ -4131,24 +4127,6 @@
                 });
 
                 html += `</div></div>`;
-            }
-
-            // Logica Check (optional validation)
-            if (data.logica_check) {
-                html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Logica Check</div>`;
-                if (data.logica_check.genade_fundeert_imperatief !== undefined) {
-                    const status = data.logica_check.genade_fundeert_imperatief ? '✓' : '✗';
-                    const color = data.logica_check.genade_fundeert_imperatief ? 'var(--success)' : 'var(--warning)';
-                    html += `<div class="data-item">`;
-                    html += `<div class="data-label">Genade fundeert imperatief</div>`;
-                    html += `<div class="data-value" style="color: ${color}; font-weight: bold;">${status}</div>`;
-                    html += `</div>`;
-                }
-                if (data.logica_check.toelichting) {
-                    html += `<div class="quote-block">${processText(data.logica_check.toelichting)}</div>`;
-                }
-                html += `</div>`;
             }
 
             return html;
@@ -5317,10 +5295,7 @@
             // Meta section
             if (data.meta) {
                 html += `<div id="section-${sectionKey}-meta" class="subsection-anchor"></div>`;
-                html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Meta</div>`;
                 html += renderObject(data.meta, 'meta');
-                html += `</div>`;
             }
 
             // Aristotelische Appeals
@@ -5410,15 +5385,6 @@
                     html += renderArray(data.retorische_figuren.te_vermijden_figuren, 'te_vermijden_figuren');
                 }
                 
-                html += `</div>`;
-            }
-
-            // Evaluatiecriteria
-            if (data.evaluatiecriteria) {
-                html += `<div id="section-${sectionKey}-evaluatiecriteria" class="subsection-anchor"></div>`;
-                html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Evaluatiecriteria</div>`;
-                html += renderObject(data.evaluatiecriteria, 'evaluatiecriteria');
                 html += `</div>`;
             }
 
