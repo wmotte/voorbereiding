@@ -84,8 +84,8 @@ SERMON_XOR_KEY = b'DorotheeS\xc3\xb6lle1929-2003MystiekEnVerzet'
 SERMON_DATA_FILE = SCRIPT_DIR / "solle_sermons.dat"
 
 # Model keuze: Gemini 3 flash als primair, pro als fallback
-#MODEL_NAME = "gemini-3-flash-preview"
-MODEL_NAME = "gemini-3-pro-preview"
+MODEL_NAME = "gemini-3-flash-preview"
+#MODEL_NAME = "gemini-3-pro-preview"
 MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
@@ -385,33 +385,35 @@ def select_folder() -> Path:
             print("Voer een geldig nummer in.")
 
 
+# Definieer de lijst van bestanden om te lezen globaal
+files_to_read = [
+    ("01_zondag_kerkelijk_jaar", "liturgische_context"),
+    ("02_sociaal_maatschappelijke_context", "sociaal_maatschappelijk"),
+    ("03_waardenorientatie", "waardenorientatie"),
+    ("04_geloofsorientatie", "geloofsorientatie"),
+    ("05_interpretatieve_synthese", "synthese"),
+    ("06_actueel_wereldnieuws", "wereldnieuws"),
+    ("07_politieke_orientatie", "politieke_orientatie"),
+    ("08a_exegese", "exegese"),
+    ("08c_commentaries", "commentaren"),
+    ("09_kunst_cultuur", "kunst_cultuur"),
+    ("10_focus_en_functie", "focus_en_functie"),
+    ("11_kalender", "kalender"),
+    ("12_representatieve_hoorders", "representatieve_hoorders"),
+    ("13_homiletische_analyse", "homiletische_analyse"),
+    ("13_homiletische_analyse_buttrick", "homiletische_analyse_buttrick"),
+    ("13b_homiletische_illustraties", "homiletische_illustraties"),
+    ("13c_homiletische_fundering_chapell", "homiletische_fundering_chapell"),
+    ("14_klassieke_retorica", "klassieke_retorica"),
+    ("14_gebeden", "gebeden"),
+    ("15_bezinningsmoment", "bezinningsmoment"),
+    ("15_kindermoment", "kindermoment"),
+]
+
 def read_previous_analyses(folder: Path) -> dict:
     """Lees alle vorige analyses uit de folder (JSON of MD) en stript de _meta data."""
     analyses = {}
 
-    files_to_read = [
-        ("01_zondag_kerkelijk_jaar", "liturgische_context"),
-        ("02_sociaal_maatschappelijke_context", "sociaal_maatschappelijk"),
-        ("03_waardenorientatie", "waardenorientatie"),
-        ("04_geloofsorientatie", "geloofsorientatie"),
-        ("05_interpretatieve_synthese", "synthese"),
-        ("06_actueel_wereldnieuws", "wereldnieuws"),
-        ("07_politieke_orientatie", "politieke_orientatie"),
-        ("08a_exegese", "exegese"),
-        ("08c_commentaries", "commentaren"),
-        ("09_kunst_cultuur", "kunst_cultuur"),
-        ("10_focus_en_functie", "focus_en_functie"),
-        ("11_kalender", "kalender"),
-        ("12_representatieve_hoorders", "representatieve_hoorders"),
-        ("13_homiletische_analyse", "homiletische_analyse"),
-        ("13_homiletische_analyse_buttrick", "homiletische_analyse_buttrick"),
-        ("13b_homiletische_illustraties", "homiletische_illustraties"),
-        ("13c_homiletische_fundering_chapell", "homiletische_fundering_chapell"),
-        ("14_klassieke_retorica", "klassieke_retorica"),
-        ("14_gebeden", "gebeden"),
-        ("15_bezinningsmoment", "bezinningsmoment"),
-        ("15_kindermoment", "kindermoment"),
-    ]
 
     for basename, key in files_to_read:
         filepath_json = folder / f"{basename}.json"
@@ -960,9 +962,25 @@ def main():
 
     base_prompt = load_prompt("base_prompt_verdieping.md", user_input)
 
-    print("\nOPTIONELE ONDERDELEN:")
-    wil_kindermoment = input("  Wil je een Kindermoment genereren? (j/n): ").strip().lower() == 'j'
-    wil_bezinningsmoment = input("  Wil je een Moment van Bezinning genereren? (j/n): ").strip().lower() == 'j'
+    # Determine if any previous 'deep dive' analyses already exist by checking for files from 08a onwards
+    deep_dive_output_exists = False
+    deep_dive_basenames = [item[0] for item in files_to_read if item[0].startswith(("08", "09", "10", "11", "12", "13", "14", "15"))]
+
+    for basename in deep_dive_basenames:
+        if (folder / f"{basename}.json").exists():
+            deep_dive_output_exists = True
+            break
+
+    wil_kindermoment = False
+    wil_bezinningsmoment = False
+
+    if deep_dive_output_exists:
+        print("\nOPTIONELE ONDERDELEN:")
+        wil_kindermoment = input("  Wil je een Kindermoment genereren? (j/n): ").strip().lower() == 'j'
+        wil_bezinningsmoment = input("  Wil je een Moment van Bezinning genereren? (j/n): ").strip().lower() == 'j'
+    else:
+        print("\nGeen eerdere verdieping analyses gevonden. Optionele onderdelen (Kindermoment/Moment van Bezinning) worden niet gevraagd bij de eerste run.")
+        print("Standaard worden ze nu niet gegenereerd.")
 
     print("\n" + "=" * 60 + f"\nVERDIEPING STARTEN MET MODEL: {MODEL_NAME}\n" + "=" * 60)
 
