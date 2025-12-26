@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liturgische Analyse Viewer</title>
+    <title>Handreiking</title>
     <style>
         :root {
             /* Light mode - 90s inspired earth tones */
@@ -2058,7 +2058,7 @@
     <header id="header">
         <div class="header-left">
             <button class="menu-toggle bevel-raised" id="menu-toggle">☰</button>
-            <div class="logo">Liturgische Analyse</div>
+            <div class="logo">Handreiking</div>
         </div>
         <div class="header-center">
              <select id="file-selector" class="bevel-raised"></select>
@@ -2072,7 +2072,7 @@
     </header>
 
     <nav class="sidebar" id="sidebar">
-        <div class="sidebar-header">Navigatie</div>
+        <div class="sidebar-header">Onderdelen</div>
         <div id="nav-items">
             <!-- Nav items will be inserted here -->
         </div>
@@ -3188,6 +3188,11 @@
                 return '';
             }
 
+            // Replace string "null" values with placeholder text
+            if (value === 'null' || value === 'NULL') {
+                value = 'geen gegevens beschikbaar';
+            }
+
             // Special rendering for specific keys
             const songbookKeys = ['liedsuggesties', 'liedboek_2013', 'weerklank', 'weerklank_psalmen', 'hemelhoog', 'op_toonhoogte'];
             if (songbookKeys.includes(key) || key.includes('lied')) {
@@ -3291,6 +3296,12 @@
                 if (value === null || value === undefined) continue;
                 if (typeof value === 'boolean') continue;
 
+                // Replace string "null" values
+                let displayValue = value;
+                if (value === 'null' || value === 'NULL') {
+                    displayValue = 'geen gegevens beschikbaar';
+                }
+
                 if (Array.isArray(value)) {
                     if (value.every(v => typeof v === 'string')) {
                         html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${value.map(v => processText(v)).join(', ')}</div>`;
@@ -3302,9 +3313,9 @@
                     html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong></div>`;
                     html += `<div style="margin-left: 10px;">${renderObjectCompact(value, key)}</div>`;
                 } else if (key === 'zoekterm') {
-                    html += `<div style="margin-bottom: 4px;"><a href="${getSearchUrl(value, context)}" target="_blank" class="search-term" title="Zoek op DuckDuckGo">${processText(value)}</a></div>`;
+                    html += `<div style="margin-bottom: 4px;"><a href="${getSearchUrl(displayValue, context)}" target="_blank" class="search-term" title="Zoek op DuckDuckGo">${processText(displayValue)}</a></div>`;
                 } else {
-                    html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${formatValue(value)}</div>`;
+                    html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${formatValue(displayValue)}</div>`;
                 }
             }
             return html;
@@ -5788,6 +5799,10 @@
         function formatValue(value) {
             if (value === null || value === undefined) return '<em>-</em>';
             if (typeof value === 'boolean') return value ? 'Ja' : 'Nee';
+            // Replace string "null" values
+            if (value === 'null' || value === 'NULL') {
+                return '<em>geen gegevens beschikbaar</em>';
+            }
             if (typeof value === 'string') {
                 // Check if it's a URL
                 if (value.match(/^https?:\/\//)) {
