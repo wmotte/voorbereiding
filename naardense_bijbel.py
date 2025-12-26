@@ -17,6 +17,9 @@ from pathlib import Path
 from typing import Optional, List, Dict, Tuple
 from dataclasses import dataclass
 
+# Import gedeelde utilities
+from bijbel_utils import normalize_scripture_reference, extract_lezingen_uit_liturgie
+
 try:
     import requests
     from bs4 import BeautifulSoup
@@ -157,42 +160,6 @@ NAME_TO_CODE = {}
 for code, names in MAPPINGS_SOURCE.items():
     for name in names:
         NAME_TO_CODE[name.upper()] = code
-
-
-def normalize_scripture_reference(reference: str) -> str:
-    """Normaliseer schriftverwijzingen door 'a'/'b' suffixen te verwijderen en
-    cross-hoofdstuk referenties te splitsen.
-
-    Voorbeelden:
-        "Jesaja 8:23b-9:3" -> "Jesaja 8:23 en Jesaja 9:1-3"
-        "Marcus 1:14a-15" -> "Marcus 1:14-15"
-        "Genesis 2:4b" -> "Genesis 2:4"
-    """
-    if not reference or not isinstance(reference, str):
-        return reference
-
-    # Verwijder 'a' of 'b' achter versnummers
-    # Pattern: cijfer gevolgd door 'a' of 'b'
-    normalized = re.sub(r'(\d+)[ab]\b', r'\1', reference)
-
-    # Detecteer cross-hoofdstuk referenties (bijv. "Jesaja 8:23-9:3")
-    # Pattern: Boeknaam Hoofdstuk1:Vers1-Hoofdstuk2:Vers2
-    cross_chapter_pattern = r'^((?:\d\s+)?[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)\s+(\d+):(\d+)[-–](\d+):(\d+)$'
-    match = re.match(cross_chapter_pattern, normalized)
-
-    if match:
-        book = match.group(1)
-        chapter1 = match.group(2)
-        verse1 = match.group(3)
-        chapter2 = match.group(4)
-        verse2 = match.group(5)
-
-        # Split in twee referenties met " en " als separator
-        # Eerste deel: van vers1 tot einde van hoofdstuk
-        # Tweede deel: van begin van hoofdstuk2 tot vers2
-        normalized = f"{book} {chapter1}:{verse1} en {book} {chapter2}:1-{verse2}"
-
-    return normalized
 
 
 def parse_bijbelreferentie(tekst: str) -> Optional[BijbelReferentie]:
@@ -476,90 +443,6 @@ def haal_bijbeltekst_op(referentie: BijbelReferentie) -> Tuple[Optional[str], Op
         md_lines.append(f"**{referentie.hoofdstuk}:{item['verse']}** {item['text']}")
 
     return '\n\n'.join(md_lines), data
-
-def extract_lezingen_uit_liturgie(liturgie_tekst: str) -> list[tuple[str, str]]:
-    """Extraheer bijbelreferenties uit de liturgische context tekst.
-
-    Haalt alleen de officiële lezingen uit de 'lezingen' key van de JSON.
-
-    Returns:
-        List of tuples (original_reference, normalized_reference)
-    """
-    referenties = []  # List of (original, normalized) tuples
-    seen_originals = set()
-
-    # Probeer eerst de liturgie_tekst te parsen als JSON
-    try:
-        data = json.loads(liturgie_tekst)
-
-        # Haal alleen referenties uit de 'lezingen' key
-        if 'lezingen' in data:
-            lezingen_obj = data['lezingen']
-
-            # Haal referenties uit de standaard lezingen
-            for key in ['eerste_lezing', 'tweede_lezing', 'derde_lezing', 'epistel', 'evangelie', 'psalm']:
-                if key in lezingen_obj and isinstance(lezingen_obj[key], dict):
-                    ref = lezingen_obj[key].get('referentie', '')
-                    if ref and ref not in seen_originals:
-                        # Speciale behandeling voor psalm nummers
-                        if key == 'psalm' and re.match(r'^\d+$', ref):
-                            ref = f"Psalm {ref}"
-                        normalized = normalize_scripture_reference(ref)
-                        referenties.append((ref, normalized))
-                        seen_originals.add(ref)
-
-            # Haal referenties uit alternatieve lezingen
-            if 'alternatieve_lezingen' in lezingen_obj and isinstance(lezingen_obj['alternatieve_lezingen'], list):
-                for alt in lezingen_obj['alternatieve_lezingen']:
-                    if isinstance(alt, dict):
-                        ref = alt.get('referentie', '')
-                        if ref and ref not in seen_originals:
-                            normalized = normalize_scripture_reference(ref)
-                            referenties.append((ref, normalized))
-                            seen_originals.add(ref)
-
-        return referenties
-
-    except (json.JSONDecodeError, KeyError, TypeError):
-        # Fallback naar oude regex methode als JSON parsing mislukt
-        pass
-
-    # Oude regex methode (fallback)
-    patronen = [
-        # Markdown patronen
-        # Updated regex to capture multi-part references like "Sefanja 2:3 en 3:12-13"
-        r'(?:Eerste|Tweede|Derde)?\s*(?:lezing|Lezing)[:\s]+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–][\d\.]+)?(?:(?:\s+(?:en|&)\s+|[;,]\s*)(?:(?:\d+[:])?\d+(?:[-–][\d\.]+)?))*(?:\s*\([^)]+\))?)',
-        r'(?:Evangelie|Epistel)(?:lezing)?[:\s]+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–][\d\.]+)?(?:(?:\s+(?:en|&)\s+|[;,]\s*)(?:(?:\d+[:])?\d+(?:[-–][\d\.]+)?))*(?:\s*\([^)]+\))?)',
-        r'Psalm(?:\s+van\s+de\s+\w+)?[:\s]+(?:Psalm\s+)?(\d+)',
-        r'\*\*(?:Eerste|Evangelie|Epistel)lezing:\*\*\s+([A-Za-zëïüéèöä\d\s]+\d+:\d+(?:[-–][\d\.]+)?(?:(?:\s+(?:en|&)\s+|[;,]\s*)(?:(?:\d+[:])?\d+(?:[-–][\d\.]+)?))*)',
-        # JSON patroon ("referentie": "...")
-        r'"referentie":\s*"([^"]+)"'
-    ]
-    for patroon in patronen:
-        for match in re.findall(patroon, liturgie_tekst, re.IGNORECASE):
-            # Als match een tuple is (bij groepen), pak de eerste niet-lege
-            if isinstance(match, tuple):
-                ref = next((m for m in match if m), "").strip()
-            else:
-                ref = match.strip()
-
-            if re.match(r'^\d+$', ref): ref = f"Psalm {ref}"
-            if ref and len(ref) > 3: # min length check
-                if ref not in seen_originals:
-                    # Normaliseer de referentie (verwijder a/b, split cross-hoofdstuk)
-                    normalized = normalize_scripture_reference(ref)
-                    referenties.append((ref, normalized))
-                    seen_originals.add(ref)
-
-    bullet_pattern = r'[-*]\s*\*?\*?([A-Za-zëïüéèöä]+(?:\s+\d)?)\s+(\d+):(\d+)(?:[-–](\d+))?(?:\s*\([^)]+\))?'
-    for match in re.finditer(bullet_pattern, liturgie_tekst):
-        ref = f"{match.group(1).strip()} {match.group(2)}:{match.group(3)}-{match.group(4) or match.group(3)}"
-        if ref not in seen_originals:
-            normalized = normalize_scripture_reference(ref)
-            referenties.append((ref, normalized))
-            seen_originals.add(ref)
-
-    return referenties
 
 
 PSALM_LENGTES = {

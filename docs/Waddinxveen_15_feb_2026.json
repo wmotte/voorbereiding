@@ -9,33 +9,33 @@
   },
   "01_zondag_kerkelijk_jaar": {
     "positie_kerkelijk_jaar": {
-      "zondag_naam": "6e zondag door het jaar (tevens zondag Estomihi)",
-      "liturgische_periode": "Zomertijd",
-      "weken_tot_hoofdfeest": "3 dagen voor Aswoensdag (begin Veertigdagentijd); 7 weken voor Pasen",
+      "zondag_naam": "6e zondag door het jaar (Zondag Estomihi)",
+      "liturgische_periode": "Pinkstertijd/Zomertijd/Tijd door het jaar",
+      "weken_tot_hoofdfeest": "3 dagen tot Aswoensdag (begin Veertigdagentijd); 7 weken tot Pasen",
       "leesrooster_jaar": "A",
       "dominant_evangelie": "Matteüs"
     },
     "traditionele_naam": {
       "latijnse_naam": "Estomihi",
-      "oorsprong": "Ontleend aan de Introïtus-psalm van deze zondag, Psalm 31:3: 'Esto mihi in Deum protectorem' (Wees mij een beschermende God/een rots om te schuilen).",
+      "oorsprong": "Ontleend aan de Introïtus-psalm van deze zondag, Psalm 31:3: 'Esto mihi in Deum protectorem' (Wees mij een beschermende God/een rots om op te wonen).",
       "nederlandse_vertaling": "Wees mij",
       "volksnamen": [
-        "Quinquagesima (de vijftigste dag voor Pasen)",
-        "Zondag voor Aswoensdag"
+        "Quinquagesima",
+        "Zondag voor Vastenavond"
       ]
     },
     "bijzondere_zondag_pkn": {
       "is_bijzonder": false,
       "naam": null,
-      "toelichting": "Hoewel er geen landelijke PKN-themadag is, markeert deze zondag in veel gemeenten de overgang naar de Veertigdagentijd. Vaak wordt er aandacht besteed aan de aankomende ZWO-projecten (Zending, Werelddiaconaat en Ontwikkelingssamenwerking) voor de lijdenstijd."
+      "toelichting": "Hoewel het geen specifieke themazondag is zoals Israëlzondag, markeert deze zondag in de PKN-praktijk vaak de overgang naar de Lijdenstijd. Het is de laatste zondag waarop het 'Halleluja' en het 'Gloria' voluit klinken voor de ingetogenheid van de Veertigdagentijd begint."
     },
     "liturgische_kleur": {
       "kleur": "groen",
-      "symboliek": "Kleur van de hoop, groei en het leven. Het is de laatste groene zondag voordat de paarse kleur van de Veertigdagentijd (inkeer en boete) begint op Aswoensdag.",
+      "symboliek": "Kleur van hoop, groei en leven. Het markeert de 'tijd door het jaar' waarin het onderricht van Jezus centraal staat.",
       "praktische_suggesties": [
         "Groen antependium en stola.",
-        "Bloemschikking met veldbloemen of grassen die groei symboliseren.",
-        "Mogelijkheid om een subtiel paars accent toe te voegen als verwijzing naar de naderende lijdenstijd."
+        "Bloemschikking met veel bladgroen en witte accenten, verwijzend naar de zuiverheid van de wet (Psalm 119).",
+        "Mogelijkheid om een overgangselement toe te voegen naar de komende paarse periode."
       ]
     },
     "lezingen": {
@@ -44,96 +44,91 @@
         "boek": "Sirach (De wijsheid van Jezus Sirach)",
         "hoofdstuk": 15,
         "verzen": "15-20",
-        "thema": "De mens heeft de vrije keuze tussen het houden van de geboden (leven) of ontrouw (dood)."
+        "thema": "De menselijke vrijheid en de keuze tussen leven en dood, vuur en water."
       },
       "epistel": {
         "referentie": "1 Korintiërs 2,6-10",
         "boek": "1 Korintiërs",
         "hoofdstuk": 2,
         "verzen": "6-10",
-        "thema": "De verborgen wijsheid van God die door de Geest wordt geopenbaard, niet door menselijke wijsheid."
+        "thema": "De verborgen wijsheid van God die door de Geest wordt geopenbaard."
       },
       "evangelie": {
         "referentie": "Matteüs 5,17-37",
         "boek": "Matteüs",
         "hoofdstuk": 5,
         "verzen": "17-37",
-        "thema": "Jezus over de vervulling van de Wet en de Profeten: de radicalisering van de geboden in de Bergrede."
+        "thema": "Jezus over de vervulling van de Wet: de radicaliteit van het hart boven de letter."
       },
       "psalm": {
         "referentie": "Psalm 119:1-24",
         "nummer": 119,
         "verzen": "1-24",
-        "antifoon": "Gelukkig wie de weg van de Heer gaan."
+        "antifoon": "Welzalig wie de weg van de Heer gaan."
       },
       "alternatieve_lezingen": [
         {
           "referentie": "Matteüs 5,20-22a.27-28.33-34a.37",
-          "reden": "Verkorte versie van het evangelie gericht op de kern van de radicale wetsinterpretatie."
+          "reden": "Verkorte versie van het evangelie voor een kortere liturgische setting, focus op de kernvoorbeelden van de Bergrede."
         }
       ],
-      "thematische_samenhang": "De rode draad is de verhouding van de gelovige tot de Wet (Torah). Sirach benadrukt de keuzevrijheid, Psalm 119 bezingt de vreugde van de wet, en Matteüs laat zien dat Jezus de wet niet afschaft maar verdiept tot een zaak van het hart. 1 Korintiërs plaatst dit in het licht van Gods hogere wijsheid."
+      "thematische_samenhang": "De rode draad is de 'ware wijsheid' en de 'keuze'. Sirach stelt de mens voor de fundamentele keuze voor Gods geboden. Psalm 119 bezingt de vreugde van die keuze. Paulus spreekt over de diepere wijsheid die niet van deze wereld is, en Jezus radicaliseert in de Bergrede de wet: het gaat niet om uiterlijke naleving, maar om een innerlijke gerichtheid van het hart."
     },
     "thematiek": {
-      "centraal_thema": "Kiezen voor het leven: de wet als wegwijzer van het hart.",
-      "stemming": "Bezinning en morele appel.",
-      "karakter_zondag": "Een zondag van onderricht (didactisch) en voorbereiding op de weg naar het kruis.",
-      "rode_draad_liturgisch_jaar": "Vormt de afsluiting van de eerste reeks zondagen 'door het jaar' waarin de Bergrede centraal staat. De focus verschuift vanaf woensdag naar de navolging van Christus in zijn lijden.",
+      "centraal_thema": "Kiezen voor de weg van het Koninkrijk: Wijsheid van het hart.",
+      "stemming": "beslistheid",
+      "karakter_zondag": "Onderwijzend en appellerend. Er klinkt een uitnodiging om kleur te bekennen voordat de weg naar het kruis (Lijdenstijd) begint.",
+      "rode_draad_liturgisch_jaar": "Vorige zondag (5e door het jaar) ging over zout en licht zijn; volgende week (1e zondag Veertigdagentijd) gaat over de verzoeking in de woestijn. Deze zondag vormt de brug: hoe leef je concreet als 'licht' door de wet te internaliseren?",
       "centrale_geloofsvragen": [
-        "Is de wet een last of een bevrijding?",
-        "Hoe verhoudt uiterlijke gehoorzaamheid zich tot innerlijke gezindheid?",
-        "Wat betekent het om 'volmaakt' te zijn zoals de Vader (Mt 5:48)?"
+        "Wat betekent het om de wet te 'vervullen' in plaats van alleen na te leven?",
+        "Hoe maken wij in onze dagelijkse keuzes de wijsheid van God zichtbaar?",
+        "Is onze gehoorzaamheid een last of een bron van geluk (zoals in Psalm 119)?"
       ]
     },
     "historische_achtergrond": {
-      "oorsprong_vroege_kerk": "De zondag Estomihi markeerde historisch het begin van de 'vleesloze' tijd in de aanloop naar de vasten.",
-      "hervormde_traditie": "Sterke nadruk op de Wet als 'regel van de dankbaarheid' (derde gebruik van de wet), wat goed aansluit bij Psalm 119.",
-      "gereformeerde_traditie": "Focus op de verbondsmatige relatie tussen God en mens, waarbij de geboden de kaders van het verbond vormen.",
-      "lutherse_traditie": "Spanning tussen Wet en Evangelie; Jezus die de wet vervult waar de mens faalt.",
-      "oecumenische_dimensie": "De lezingen volgen het Revised Common Lectionary (RCL), waardoor er wereldwijd in vele protestantse en katholieke kerken over dezelfde teksten wordt gepreekt."
+      "oorsprong_vroege_kerk": "Estomihi was oorspronkelijk de laatste zondag van de voorvasten, een periode van voorbereiding op de grote vasten.",
+      "hervormde_traditie": "Focus op de wet als 'regel van de dankbaarheid' (derde gebruik van de wet), passend bij de Bergrede.",
+      "gereformeerde_traditie": "Nadruk op de verbondsmatige trouw van God en de menselijke verantwoordelijkheid (Sirach).",
+      "lutherse_traditie": "Vaak verbonden met de aankondiging van het lijden (Lukas 18), maar in het oecumenisch rooster jaar A ligt de nadruk op de Bergrede.",
+      "oecumenische_dimensie": "Het Gemeenschappelijk Leesrooster verbindt PKN, RKK en andere kerken in deze lezingen, wat de eenheid in de navolging van Christus benadrukt."
     },
     "praktische_handvatten": {
-      "liturgische_orde_suggestie": "Klassieke PKN-orde met een uitgebreide lezing van de Wet of de Bergrede als spiegel voor het leven, gevolgd door een schuldbelijdenis en genadeverkondiging.",
+      "liturgische_orde_suggestie": "Gebruik de klassieke orde met een uitgebreide wetslezing of de lezing van de Bergrede als spiegel voor het leven. Sluit de dienst af met een feestelijk 'Halleluja' als overgang naar de stille tijd.",
       "aanpassingen_periode": [
         {
-          "element": "Gloria",
+          "element": "Gloria en Halleluja",
           "aanpassing": "Voluit zingen",
-          "reden": "Het is de laatste zondag voor de Veertigdagentijd waarin het Gloria vaak achterwege blijft."
-        },
-        {
-          "element": "Halleluja",
-          "aanpassing": "Feestelijk zingen",
-          "reden": "Vanaf Aswoensdag wordt het Halleluja in de liturgische traditie 'begraven' tot Pasen."
+          "reden": "Laatste keer voor de Veertigdagentijd waarin deze elementen vaak vervallen."
         }
       ],
       "gebedsmotieven": [
-        "Gebed om wijsheid van de Geest (naar 1 Kor 2).",
-        "Voorbede voor hen die worstelen met morele keuzes.",
-        "Dankzegging voor de richting die Gods woord geeft."
+        "Gebed om wijsheid bij morele dilemma's.",
+        "Voorbede voor hen die gevangen zitten in wetticisme.",
+        "Dankzegging voor de vrijheid die Christus geeft om de wet vanuit liefde te vervullen."
       ],
       "kindernevendienst": {
         "thema": "Kiezen voor het goede",
         "suggesties": [
-          "Spel over keuzes maken (links of rechts).",
-          "Verhaal over Jezus die uitlegt dat het niet alleen gaat om wat je doet, maar ook om wat je denkt."
+          "Spel over keuzes maken (links of rechts gaan).",
+          "Het bouwen van een 'hart' met daarop de woorden van Jezus uit de Bergrede."
         ]
       },
       "visuele_elementen": [
-        "Een wegwijzer of een splitsing in de weg als symbool voor Sirach 15.",
+        "Projectie van een splitsing in een weg (verwijzend naar Sirach).",
         "Een opengeslagen Bijbel bij Psalm 119.",
-        "Projectie van een berglandschap (verwijzing naar de Bergrede)."
+        "Symboliek van vuur en water (Sirach 15:16)."
       ]
     },
     "dagelijks_leesrooster": {
       "week_voorafgaand": [
-        "Maandag: Psalm 119:1-8",
-        "Dinsdag: Deuteronomium 30:15-20",
-        "Woensdag: Matteüs 5:13-16",
-        "Donderdag: Sirach 14:20-15:10",
-        "Vrijdag: 1 Korintiërs 2:1-5",
-        "Zaterdag: Psalm 119:9-16"
+        "Ma: Psalm 119:1-8, Sirach 2:1-11",
+        "Di: Psalm 119:9-16, Sirach 2:12-18",
+        "Wo: Psalm 119:17-24, Sirach 3:1-16",
+        "Do: Psalm 119:33-40, Sirach 3:17-29",
+        "Vr: Psalm 119:41-48, Sirach 4:1-10",
+        "Za: Psalm 119:49-56, Sirach 4:11-19"
       ],
-      "verbinding_zondag": "De weeklezingen bereiden de hoorder voor op de radicale keuze tussen leven en dood (Deut 30) en de lof op de wijsheid (Sirach 14), die op zondag hun apotheose vinden in de Bergrede."
+      "verbinding_zondag": "De weeklezingen uit Sirach en Psalm 119 bereiden de gemeente voor op de radicale ethiek van de Bergrede op zondag door dagelijks stil te staan bij wijsheid en standvastigheid."
     }
   },
   "02_sociaal_maatschappelijke_context": {
@@ -4328,66 +4323,6 @@
         "translation": "NB"
       },
       {
-        "book": "MAT",
-        "chapter": 5,
-        "verses": [
-          {
-            "verse": 20,
-            "text": "want ik zeg u\ndat als uw gerechtigheid\nniet overvloedig is,\nmeer dan die van\nde schriftgeleerden en Farizeeërs,\ngij echt niet binnenkomt\nin het koninkrijk der hemelen!"
-          },
-          {
-            "verse": 21,
-            "text": "Ge hebt gehoord dat\ntot die van het begin is gesproken:\nje zult niet moorden (Ex. 20,13) ;\nal wie moordt, zal worden onderworpen\naan het oordeel!-"
-          },
-          {
-            "verse": 22,
-            "text": "maar ik zeg u dat\nal wie toornt tegen zijn broeder\nzal worden onderworpen\naan het oordeel,\nen al wie tot zijn broeder zegt\nraka ,- leeghoofd,\nzal worden onderworpen aan het sanhedrin ,-\nde zittende raad;\nen al wie zegt: gek!-\nzal worden onderworpen aan\nde gehenna van het vuur;"
-          }
-        ],
-        "translation": "NB"
-      },
-      {
-        "book": "MAT",
-        "chapter": 5,
-        "verses": [
-          {
-            "verse": 27,
-            "text": "Ge hebt gehoord dat gesproken is:\nje zult geen overspel begaan (Ex. 20,14) !-"
-          },
-          {
-            "verse": 28,
-            "text": "maar ík zeg u\ndat ieder die een vrouw aankijkt\nen haar begeert\nhaar reeds overspelig ingepikt heeft\nin zijn hart;"
-          }
-        ],
-        "translation": "NB"
-      },
-      {
-        "book": "MAT",
-        "chapter": 5,
-        "verses": [
-          {
-            "verse": 33,
-            "text": "Weer: ge hebt gehoord\ndat tot die-van-het-begin is gesproken:\nje zult geen meineed plegen (Lev. 19,12) ,\nmaar overeenkomstig je eden afgeven\naan de Heer (Deut. 23,22) !-"
-          },
-          {
-            "verse": 34,
-            "text": "maar ik zeg u:\nzweert helemaal niet (Deut. 23,23) ,\nniet bij de hemel,\nomdat die Gods troon is,"
-          }
-        ],
-        "translation": "NB"
-      },
-      {
-        "book": "MAT",
-        "chapter": 5,
-        "verses": [
-          {
-            "verse": 37,
-            "text": "maar uw spreken moet ‘ja, já’ zijn\nen ‘nee, néé’;\nwat overvloediger is dan dat\nis uit den boze!"
-          }
-        ],
-        "translation": "NB"
-      },
-      {
         "book": "PSA",
         "chapter": 119,
         "verses": [
@@ -4603,66 +4538,6 @@
             "verse": 36,
             "text": "zweer evenmin bij je eigen hoofd, want je kunt nog niet één van je haren wit of zwart maken."
           },
-          {
-            "verse": 37,
-            "text": "Laat jullie ja ja zijn, en jullie nee nee; wat je daaraan toevoegt komt voort uit het kwaad."
-          }
-        ],
-        "translation": "NBV21"
-      },
-      {
-        "book": "MAT",
-        "chapter": 5,
-        "verses": [
-          {
-            "verse": 20,
-            "text": "Want Ik zeg jullie: als jullie gerechtigheid niet groter is dan die van de schriftgeleerden en de farizeeën, zullen jullie zeker het koninkrijk van de hemel niet binnengaan."
-          },
-          {
-            "verse": 21,
-            "text": "Jullie hebben gehoord dat destijds tegen het volk is gezegd: “Pleeg geen moord. Wie moordt, zal zich moeten verantwoorden voor het gerecht.”"
-          },
-          {
-            "verse": 22,
-            "text": "Dit zeg Ik daarover: ieder die in woede tegen zijn broeder of zuster tekeergaat, zal zich moeten verantwoorden voor het gerecht. Wie hen voor nietsnut uitmaakt, zal zich moeten verantwoorden voor het Sanhedrin. Wie “Dwaas!” zegt, zal voor het vuur van de Gehenna komen te staan."
-          }
-        ],
-        "translation": "NBV21"
-      },
-      {
-        "book": "MAT",
-        "chapter": 5,
-        "verses": [
-          {
-            "verse": 27,
-            "text": "Jullie hebben gehoord dat gezegd werd: “Pleeg geen overspel.”"
-          },
-          {
-            "verse": 28,
-            "text": "Dit zeg Ik daarover: iedereen die naar een vrouw kijkt en haar begeert, heeft in zijn hart al overspel met haar gepleegd."
-          }
-        ],
-        "translation": "NBV21"
-      },
-      {
-        "book": "MAT",
-        "chapter": 5,
-        "verses": [
-          {
-            "verse": 33,
-            "text": "Jullie hebben ook gehoord dat destijds tegen het volk werd gezegd: “Leg geen valse eed af en houd je aan de eden die je voor de Heer gezworen hebt.”"
-          },
-          {
-            "verse": 34,
-            "text": "Dit zeg Ik daarover: zweer helemaal niet, noch bij de hemel, want dat is de troon van God,"
-          }
-        ],
-        "translation": "NBV21"
-      },
-      {
-        "book": "MAT",
-        "chapter": 5,
-        "verses": [
           {
             "verse": 37,
             "text": "Laat jullie ja ja zijn, en jullie nee nee; wat je daaraan toevoegt komt voort uit het kwaad."
@@ -4946,55 +4821,6 @@
             "chapter": 5,
             "verse": 36,
             "text": "μήτε ἐν τῇ κεφαλῇ σου ὀμόσῃς, ὅτι οὐ δύνασαι μίαν τρίχα λευκὴν ποιῆσαι ἢ μέλαιναν. "
-          },
-          {
-            "chapter": 5,
-            "verse": 37,
-            "text": "ἔστω δὲ ὁ λόγος ὑμῶν ναὶ ναί, οὒ οὔ· τὸ δὲ περισσὸν τούτων ἐκ τοῦ πονηροῦ ἐστιν."
-          }
-        ]
-      },
-      {
-        "source": "NA28 (Novum Testamentum Graece)",
-        "book_nl": "Matteüs",
-        "book_original": "MAT",
-        "chapter": 5,
-        "language": "Grieks",
-        "verses": [
-          {
-            "chapter": 5,
-            "verse": 20,
-            "text": "Λέγω γὰρ ὑμῖν ὅτι ἐὰν μὴ περισσεύσῃ ὑμῶν ἡ δικαιοσύνη πλεῖον τῶν γραμματέων καὶ Φαρισαίων, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν."
-          },
-          {
-            "chapter": 5,
-            "verse": 21,
-            "text": "Ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις· οὐ φονεύσεις· ὃς δ’ ἂν φονεύσῃ, ἔνοχος ἔσται τῇ κρίσει. "
-          },
-          {
-            "chapter": 5,
-            "verse": 22,
-            "text": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ ὀργιζόμενος τῷ ἀδελφῷ αὐτοῦ ἔνοχος ἔσται τῇ κρίσει· ὃς δ’ ἂν εἴπῃ τῷ ἀδελφῷ αὐτοῦ· ῥακά, ἔνοχος ἔσται τῷ συνεδρίῳ· ὃς δ’ ἂν εἴπῃ· μωρέ, ἔνοχος ἔσται εἰς τὴν γέενναν τοῦ πυρός. "
-          },
-          {
-            "chapter": 5,
-            "verse": 27,
-            "text": "Ἠκούσατε ὅτι ἐρρέθη· οὐ μοιχεύσεις."
-          },
-          {
-            "chapter": 5,
-            "verse": 28,
-            "text": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ βλέπων γυναῖκα πρὸς τὸ ἐπιθυμῆσαι αὐτὴν ἤδη ἐμοίχευσεν αὐτὴν ἐν τῇ καρδίᾳ αὐτοῦ. "
-          },
-          {
-            "chapter": 5,
-            "verse": 33,
-            "text": "Πάλιν ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις· οὐκ ἐπιορκήσεις, ἀποδώσεις δὲ τῷ κυρίῳ τοὺς ὅρκους σου. "
-          },
-          {
-            "chapter": 5,
-            "verse": 34,
-            "text": "ἐγὼ δὲ λέγω ὑμῖν μὴ ὀμόσαι ὅλως· μήτε ἐν τῷ οὐρανῷ, ὅτι θρόνος ἐστὶν τοῦ θεοῦ, "
           },
           {
             "chapter": 5,

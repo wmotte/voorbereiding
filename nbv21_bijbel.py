@@ -11,9 +11,12 @@ import re
 from pathlib import Path
 from typing import Optional, List, Dict
 
+# Import gedeelde utilities
+from bijbel_utils import normalize_scripture_reference, extract_lezingen_uit_liturgie
+
 # Probeer BijbelReferentie te importeren uit naardense_bijbel voor consistentie
 try:
-    from naardense_bijbel import parse_bijbelreferentie, BijbelReferentie, normalize_scripture_reference
+    from naardense_bijbel import parse_bijbelreferentie, BijbelReferentie
 except ImportError:
     # Fallback definitie als naardense_bijbel niet beschikbaar is
     from dataclasses import dataclass
@@ -241,50 +244,16 @@ def save_nbv21_lezingen(output_dir: Path, context_text: str) -> dict[str, str]:
 
     resultaten = {}
     seen_refs = set()
-    found_refs_raw = []
 
-    # Probeer eerst de context_text te parsen als JSON en haal alleen lezingen op
-    try:
-        data = json.loads(context_text)
+    # Gebruik de centrale extractie functie
+    referenties_tuples = extract_lezingen_uit_liturgie(context_text)
+    if not referenties_tuples:
+        print("  Geen bijbelreferenties gevonden.")
+        return {}
 
-        # Haal alleen referenties uit de 'lezingen' key
-        if 'lezingen' in data:
-            lezingen_obj = data['lezingen']
-
-            # Haal referenties uit de standaard lezingen
-            for key in ['eerste_lezing', 'tweede_lezing', 'derde_lezing', 'epistel', 'evangelie', 'psalm']:
-                if key in lezingen_obj and isinstance(lezingen_obj[key], dict):
-                    ref = lezingen_obj[key].get('referentie', '')
-                    if ref and ref not in seen_refs:
-                        # Speciale behandeling voor psalm nummers
-                        if key == 'psalm' and re.match(r'^\d+$', ref):
-                            ref = f"Psalm {ref}"
-                        found_refs_raw.append(ref)
-                        seen_refs.add(ref)
-
-            # Haal referenties uit alternatieve lezingen
-            if 'alternatieve_lezingen' in lezingen_obj and isinstance(lezingen_obj['alternatieve_lezingen'], list):
-                for alt in lezingen_obj['alternatieve_lezingen']:
-                    if isinstance(alt, dict):
-                        ref = alt.get('referentie', '')
-                        if ref and ref not in seen_refs:
-                            found_refs_raw.append(ref)
-                            seen_refs.add(ref)
-
-    except (json.JSONDecodeError, KeyError, TypeError):
-        # Fallback naar oude regex methode als JSON parsing mislukt
-        # 1. Probeer JSON style referenties
-        json_matches = re.findall(r'"referentie":\s*"([^"]+)"', context_text)
-        found_refs_raw.extend(json_matches)
-
-        # 2. Probeer Markdown style referenties
-        regex = r'(?:lezing|evangelie|schriftlezing).*?[:]\s*([A-Za-z0-9\s:,-–\(\)]+)'
-        matches = re.finditer(regex, context_text, re.IGNORECASE)
-        for match in matches:
-            found_refs_raw.append(match.group(1).strip())
-
-    # Reset seen_refs voor verwerking
-    seen_refs = set()
+    # Extract only original references (we'll use them directly)
+    found_refs_raw = [orig for orig, _ in referenties_tuples]
+    print(f"  Gevonden referenties: {', '.join(found_refs_raw)}")
 
     processed_refs = []
     # 1. Parse all references first

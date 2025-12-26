@@ -3,22 +3,8 @@ import json
 import re
 from pathlib import Path
 
-# Probeer normalize_scripture_reference te importeren
-try:
-    from naardense_bijbel import normalize_scripture_reference
-except ImportError:
-    # Fallback definitie
-    def normalize_scripture_reference(reference: str) -> str:
-        """Normaliseer schriftverwijzingen."""
-        if not reference or not isinstance(reference, str):
-            return reference
-        normalized = re.sub(r'(\d+)[ab]\b', r'\1', reference)
-        cross_chapter_pattern = r'^((?:\d\s+)?[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)\s+(\d+):(\d+)[-–](\d+):(\d+)$'
-        match = re.match(cross_chapter_pattern, normalized)
-        if match:
-            book, ch1, v1, ch2, v2 = match.groups()
-            normalized = f"{book} {ch1}:{v1} en {book} {ch2}:1-{v2}"
-        return normalized
+# Import gedeelde utilities
+from bijbel_utils import normalize_scripture_reference, extract_lezingen_uit_liturgie
 
 # Configuratie
 SCRIPT_DIR = Path(__file__).parent.resolve()
@@ -340,26 +326,16 @@ def save_grondtekst_lezingen(folder, liturgische_context_json):
     Extracts references from the liturgical context and saves source texts to JSON.
     Handles complex references with multiple verse ranges.
     """
-    try:
-        context = json.loads(liturgische_context_json) if isinstance(liturgische_context_json, str) else liturgische_context_json
-    except:
-        print("Fout bij parsen liturgische context voor grondtekst.")
-        return []
-        
-    lezingen = context.get("lezingen", {})
     files_saved = []
-    
-    references_to_process = []
-    keys = ["eerste_lezing", "tweede_lezing", "epistel", "evangelie", "psalm"]
-    for key in keys:
-        if key in lezingen and isinstance(lezingen[key], dict) and lezingen[key].get("referentie"):
-            references_to_process.append(lezingen[key]["referentie"])
 
-    alternatives = lezingen.get("alternatieve_lezingen", [])
-    if isinstance(alternatives, list):
-        for alt in alternatives:
-            if isinstance(alt, dict) and "referentie" in alt:
-                references_to_process.append(alt["referentie"])
+    # Gebruik de centrale extractie functie
+    referenties_tuples = extract_lezingen_uit_liturgie(liturgische_context_json)
+    if not referenties_tuples:
+        print("  Geen bijbelreferenties gevonden.")
+        return []
+
+    # Extract only original references
+    references_to_process = [orig for orig, _ in referenties_tuples]
 
     bijbel_dir = folder / "bijbelteksten"
     bijbel_dir.mkdir(parents=True, exist_ok=True)
