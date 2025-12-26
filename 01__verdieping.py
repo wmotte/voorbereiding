@@ -84,12 +84,12 @@ SERMON_XOR_KEY = b'DorotheeS\xc3\xb6lle1929-2003MystiekEnVerzet'
 SERMON_DATA_FILE = SCRIPT_DIR / "solle_sermons.dat"
 
 # Model keuze: Gemini 3 flash als primair, pro als fallback
-MODEL_NAME = "gemini-3-flash-preview"
-#MODEL_NAME = "gemini-3-pro-preview"
+#MODEL_NAME = "gemini-3-flash-preview"
+MODEL_NAME = "gemini-3-pro-preview"
 MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
-def sample_profetische_gebeden(n: int = 10) -> str:
+def sample_profetische_gebeden(n: int = 20) -> str:
     """Selecteer willekeurige gebeden uit de voorbeeldmap."""
     examples_dir = SCRIPT_DIR / "gebeden_voorbeeld_profetisch"
     if not examples_dir.exists():
@@ -116,7 +116,7 @@ def sample_profetische_gebeden(n: int = 10) -> str:
     return "\n\n".join(output_parts)
 
 
-def sample_dialogische_gebeden(n: int = 10) -> str:
+def sample_dialogische_gebeden(n: int = 20) -> str:
     """Selecteer willekeurige gebeden uit de voorbeeldmap voor dialogische gebeden."""
     examples_dir = SCRIPT_DIR / "gebeden_voorbeeld_dialogisch"
     if not examples_dir.exists():
@@ -143,7 +143,7 @@ def sample_dialogische_gebeden(n: int = 10) -> str:
     return "\n\n".join(output_parts)
 
 
-def sample_jungel_preken(n: int = 5) -> str:
+def sample_jungel_preken(n: int = 10) -> str:
     """Selecteer willekeurige preken uit de Jüngel preken map."""
     jungel_dir = SCRIPT_DIR / "preken_jungel"
     if not jungel_dir.exists():
@@ -170,7 +170,7 @@ def sample_jungel_preken(n: int = 5) -> str:
     return "\n\n".join(output_parts)
 
 
-def sample_noordmans_preken(n: int = 15) -> str:
+def sample_noordmans_preken(n: int = 20) -> str:
     """Selecteer willekeurige fragmenten uit de Noordmans preken map."""
     noordmans_dir = SCRIPT_DIR / "preken_noordmans"
     if not noordmans_dir.exists():
@@ -203,7 +203,7 @@ def sample_noordmans_preken(n: int = 15) -> str:
     return "\n\n".join(output_parts)
 
 
-def sample_brueggemann_preken(n: int = 8) -> str:
+def sample_brueggemann_preken(n: int = 10) -> str:
     """Selecteer willekeurige preken uit de Brueggemann preken map."""
     brueggemann_dir = SCRIPT_DIR / "preken_brueggemann"
     if not brueggemann_dir.exists():
@@ -276,7 +276,7 @@ def _load_sermons_from_binary(binary_file: Path) -> list[dict]:
     return sermons
 
 
-def sample_solle_preken(n: int = 5) -> str:
+def sample_solle_preken(n: int = 10) -> str:
     """Selecteer willekeurige preken uit het binaire bestand."""
     all_sermons = _load_sermons_from_binary(SERMON_DATA_FILE)
     if not all_sermons:
@@ -1021,7 +1021,14 @@ def main():
         full_prompt = f"{base_prompt}\n# Preekgegevens\n- **Plaatsnaam:** {user_input.get('plaatsnaam')}\n- **Gemeente:** {user_input.get('gemeente')}\n- **Adres:** {'N.v.t.' if name.startswith('14_gebeden') else user_input.get('adres')}\n- **Website:** {user_input.get('website') or 'Geen'}\n- **Datum:** {user_input.get('datum')}\n\n# Dossier\n{analysis_context}\n\n---\n# Opdracht: {title}\n{task_prompt}"
         save_log(LOGS_DIR, name, full_prompt)
 
-        temp = 0.8 if name in ["13b_homiletische_illustraties", "14_gebeden", "16_preek_solle"] else 0.2
+        # Gebruik temperature 0.8 voor alle gebeden, preken en illustraties
+        is_creative = (name.startswith("14_gebeden") or
+                      name.startswith("16_preek") or
+                      name.startswith("17_preek") or
+                      name.startswith("18_preek") or
+                      name.startswith("19_preek") or
+                      name == "13b_homiletische_illustraties")
+        temp = 0.8 if is_creative else 0.2
         result = run_analysis(client, full_prompt, title, temperature=temp)
         if name == "09_kunst_cultuur": result = verify_kunst_cultuur(client, result)
         save_analysis(folder, name, result, title, user_input)
