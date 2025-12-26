@@ -545,7 +545,6 @@
             margin-bottom: 12px;
             padding-bottom: 6px;
             border-bottom: 1px dashed var(--border-light);
-            text-transform: capitalize;
         }
 
         .data-item {
@@ -566,7 +565,6 @@
             color: var(--text-secondary);
             min-width: 220px;
             flex-shrink: 0;
-            text-transform: capitalize;
         }
 
         .data-value {
@@ -590,7 +588,6 @@
             font-weight: bold;
             color: var(--accent);
             margin-bottom: 10px;
-            text-transform: capitalize;
         }
 
         /* Arrays */
@@ -904,7 +901,6 @@
             color: var(--accent);
             font-size: 0.95em;
             margin-bottom: 6px;
-            text-transform: capitalize;
         }
 
         .nested-card-content {
@@ -1249,7 +1245,6 @@
             border-radius: 4px;
             font-weight: bold;
             font-size: 0.9em;
-            text-transform: capitalize;
         }
 
         .gebed-aanspraak {
@@ -1326,7 +1321,6 @@
             font-weight: bold;
             color: var(--accent);
             margin-bottom: 8px;
-            text-transform: capitalize;
         }
 
         .gebed-cirkel-themas {
@@ -1396,7 +1390,6 @@
             font-weight: bold;
             color: var(--accent);
             margin-bottom: 8px;
-            text-transform: capitalize;
         }
 
         .gebeden-techniek-items {
@@ -5369,7 +5362,7 @@
                         const color = partColors[index] || 'var(--accent)';
                         html += `<div class="buttrick-move" style="border-left-color: ${color};">`;
                         html += `<div class="buttrick-move-header">`;
-                        html += `<div class="buttrick-move-badge" style="background: ${color}; text-transform: capitalize;">${escapeHtml(formatKey(part))}</div>`;
+                        html += `<div class="buttrick-move-badge" style="background: ${color};">${escapeHtml(formatKey(part))}</div>`;
                         html += `</div>`;
                         html += `<div class="buttrick-move-content">`;
                         html += renderObjectCompact(data.klassieke_dispositio[part]);
