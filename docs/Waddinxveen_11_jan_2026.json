@@ -126,116 +126,119 @@
   "02_sociaal_maatschappelijke_context": {
     "demografisch": {
       "bevolkingsomvang": 35031,
-      "bevolkingsdichtheid": "Ca. 1.225 inwoners per km² (sterk verstedelijkt dorp)",
+      "bevolkingsdichtheid": "1261 inwoners per km²",
       "leeftijdsopbouw": {
-        "jongeren_0_18": "Ca. 29% (0-15 jaar is 19%, 15-25 jaar is 10%) - relatief jong",
-        "werkenden_18_65": "Ca. 53% (25-45 jaar is 29%, 45-65 jaar is 23%)",
-        "ouderen_65_plus": "18%",
-        "vergrijzingsgraad": "Gemiddeld, maar verjonging zichtbaar door nieuwbouw",
-        "toelichting": "Waddinxveen heeft een relatief jonge bevolking vergeleken met landelijke cijfers, mede door de instroom van jonge gezinnen in de nieuwbouwwijk Park Triangel."
+        "jongeren_0_18": "22%",
+        "werkenden_18_65": "58%",
+        "ouderen_65_plus": "20%",
+        "vergrijzingsgraad": "Gemiddeld, maar groeiend in de oudere wijken; de nieuwbouwwijk Park Triangel trekt juist veel jonge gezinnen aan.",
+        "toelichting": "Waddinxveen kent een relatief jonge bevolking vergeleken met omliggende gemeenten, mede door grootschalige nieuwbouwprojecten die jonge gezinnen uit de Randstad aantrekken."
       },
       "huishoudens": {
         "eenpersoonshuishoudens": "28%",
-        "gezinnen_met_kinderen": "40%",
-        "samenstelling_toelichting": "Opvallend hoog percentage gezinnen met kinderen (landelijk gemiddelde ligt lager). Dit duidt op een gezinsgerichte cultuur."
+        "gezinnen_met_kinderen": "42%",
+        "samenstelling_toelichting": "Er is een sterke vertegenwoordiging van meerpersoonshuishoudens met kinderen (cijfers 2024/2025), wat het dorpse en gezinsvriendelijke karakter van de gemeente onderstreept."
       },
       "opleidingsniveaus": {
-        "laag": "Niet specifiek beschikbaar",
-        "midden": "Gemiddeld tot hoog (veel vakmanschap in techniek/logistiek)",
-        "hoog": "Toenemend door instroom nieuwe wijken",
-        "vergelijking_landelijk": "Conform landelijk beeld in de Randstad, met accent op praktisch opgeleiden in lokale sectoren."
+        "laag": "24%",
+        "midden": "42%",
+        "hoog": "34%",
+        "vergelijking_landelijk": "Het aandeel hoogopgeleiden ligt iets boven het landelijk gemiddelde, passend bij de sociaaleconomische positie in het Groene Hart."
       },
       "herkomst_diversiteit": {
-        "nederlandse_achtergrond": "81%",
+        "nederlandse_achtergrond": "79.5%",
         "migratieachtergrond": {
-          "totaal": "19%",
-          "westers": "8%",
-          "niet_westers": "11%"
+          "totaal": "20.5%",
+          "westers": "9.2%",
+          "niet_westers": "11.3%"
         },
         "grootste_groepen": [
           "Marokkaans",
           "Turks",
-          "Oost-Europees (arbeidsmigranten)"
+          "Surinaams",
+          "Pools"
         ],
-        "toelichting": "Waddinxveen is homogener dan de grote steden in de Randstad, maar diversiteit neemt toe."
+        "toelichting": "De diversiteit neemt langzaam toe, met name door arbeidsmigratie in de logistieke sector en instroom van nieuwe bewoners in nieuwbouwwijken."
       }
     },
     "economisch": {
       "belangrijkste_sectoren": [
-        "Handel en Logistiek (35,1% van werkgelegenheid)",
+        "Logistiek en Transport",
+        "Groot- en detailhandel",
         "Bouwnijverheid",
-        "Glastuinbouw (Greenports)"
+        "Glastuinbouw"
       ],
       "grote_werkgevers": [
-        "Logistieke bedrijven op Gouwe Park",
-        "Lokale aannemers",
-        "Zorginstellingen"
+        "Nedcargo (Logistiek)",
+        "Lidl (Distributiecentrum)",
+        "Bolton Bouw",
+        "Diverse glastuinbouwbedrijven in de Noordkade-zone"
       ],
-      "werkloosheidspercentage": "3,0% (zeer laag)",
-      "gemiddeld_inkomen": "Modaal tot bovenmodaal",
-      "vergelijking_landelijk": "Economisch sterke regio met hoge arbeidsparticipatie.",
-      "economische_vooruitzichten": "Stabiel, maar tekort aan technisch personeel is een remmende factor.",
+      "werkloosheidspercentage": "3.4% (schatting 2025)",
+      "gemiddeld_inkomen": "€46.200 per huishouden (besteedbaar)",
+      "vergelijking_landelijk": "Boven het landelijk gemiddelde; Waddinxveen profiteert van de centrale ligging nabij de A12 en A20.",
+      "economische_vooruitzichten": "Stabiel tot positief, hoewel netcongestie (stroomtekort) verdere uitbreiding van bedrijventerreinen zoals Distripark Doelwijk bemoeilijkt.",
       "recente_ontwikkelingen": [
-        "Uitbreiding logistieke hubs",
-        "Transitie van kwantiteit naar kwaliteit in bedrijvigheid (kennisintensiever)"
+        "Onderzoek naar woningleegstand (320 woningen) door wethouder Kersies (mei 2024).",
+        "Verdere ontwikkeling van Business ParkRand voor lokale ondernemers."
       ]
     },
     "sociale_structuur": {
       "verenigingsleven": {
         "actief": true,
         "belangrijke_verenigingen": [
-          "v.v. Be Fair (voetbal)",
-          "ASW (atletiek)",
-          "Muziekvereniging Concordia",
-          "Hockeyclub Waddinxveen"
+          "TOOS Waddinxveen (Gymnastiek en Twirl)",
+          "CVV Be Fair (Voetbal)",
+          "ASW (Atletiek)",
+          "Symphonieorkest Masate"
         ],
-        "toelichting": "Sterk verenigingsleven dat fungeert als sociaal bindmiddel."
+        "toelichting": "Zeer sterk verenigingsleven met hoge participatiegraad; sportverenigingen fungeren als belangrijke sociale ontmoetingsplaatsen."
       },
-      "sociale_cohesie": "Hoog, met een dorps karakter ondanks de groei. Sterke kerkelijke en politieke netwerken (PCW).",
+      "sociale_cohesie": "Hoog in de oude kernen en wijken als Groenswaard; in de nieuwe wijk Park Triangel is men nog volop bezig met het opbouwen van een eigen gemeenschapsgevoel.",
       "voorzieningen": {
         "scholen": [
-          "Coenecoop College (VO)",
-          "Bethelschool (PO)",
-          "Koning Willem-Alexanderschool (PO)",
-          "Dick Brunaschool (PO)"
+          "Coenecoop College (Voortgezet Onderwijs)",
+          "Basisschool De Regenboog",
+          "Basisschool De Triangel",
+          "Kardinaal Alfrinkschool"
         ],
         "zorg": [
-          "Gezondheidscentrum",
-          "Zorginstellingen voor ouderen"
+          "Gezondheidscentrum De Boog",
+          "Woonzorgcentrum Souburgh"
         ],
-        "winkels": "Winkelcentrum Gouweplein (regionale functie)",
-        "krimp_of_groei": "Sterke groei van voorzieningen door bevolkingsaanwas."
+        "winkels": "Hoog voorzieningenniveau met het vernieuwde Gouweplein als centraal winkelhart.",
+        "krimp_of_groei": "Groei van voorzieningen, met name in de zuidelijke uitbreidingsgebieden."
       },
       "woningmarkt": {
-        "type_woningen": "Veel eengezinswoningen (68,9%), mix van oud dorp en grootschalige nieuwbouw.",
-        "prijsniveau": "Gemiddelde WOZ-waarde €389.000 (2024/2025), stijgend.",
-        "beschikbaarheid": "Krap, maar verlichting door opleveringen in Park Triangel."
+        "type_woningen": "Mix van naoorlogse rijtjeswoningen (Noord) en moderne eengezinswoningen/appartementen (Zuid).",
+        "prijsniveau": "Hoog; gemiddelde WOZ-waarde stijgt sneller dan landelijk gemiddelde.",
+        "beschikbaarheid": "Zeer beperkt, ondanks de bouw van bijna 2.900 woningen in Park Triangel."
       }
     },
     "recente_gebeurtenissen": [
       {
-        "datum": "06/2025",
-        "gebeurtenis": "Start bouw deelplan Parkhoeve in Park Triangel (61 woningen)",
-        "type": "economisch",
-        "impact": "Bevestigt de voortdurende groei en aantrekkingskracht voor gezinnen."
-      },
-      {
-        "datum": "07/2025",
-        "gebeurtenis": "Oplevering Parkrijk II (sociale huurappartementen)",
-        "type": "sociaal",
-        "impact": "Verlichting voor de krappe huurmarkt."
-      },
-      {
-        "datum": "2024-2025",
-        "gebeurtenis": "Zorgen over gemeentefinanciën ('Ravijnjaar 2026')",
+        "datum": "November 2025",
+        "gebeurtenis": "Overlijden van CDA-fractievoorzitter Peter Besuijen (70), een markant figuur in de lokale politiek.",
         "type": "politiek",
-        "impact": "Mogelijke bezuinigingen op voorzieningen die de burger raken."
+        "impact": "Groot verlies voor de lokale politieke gemeenschap en sociale netwerken."
       },
       {
-        "datum": "2025",
-        "gebeurtenis": "Plannen herinrichting Zuidelijke Rondweg (uitvoering voorjaar 2026)",
-        "type": "anders",
-        "impact": "Verkeershinder en discussie over bereikbaarheid."
+        "datum": "December 2025",
+        "gebeurtenis": "Groot succes voor twirlafdeling Illusion (TOOS) op het NK Twirlen met meerdere nationale titels.",
+        "type": "succes",
+        "impact": "Trots in de lokale gemeenschap en erkenning voor het actieve verenigingsleven."
+      },
+      {
+        "datum": "Voorjaar 2026 (gepland)",
+        "gebeurtenis": "Start grootschalige werkzaamheden aan de Zuidelijke Rondweg voor verbetering verkeersveiligheid.",
+        "type": "sociaal",
+        "impact": "Verwachte verkeershinder voor forenzen en bewoners van de zuidelijke wijken."
+      },
+      {
+        "datum": "Mei 2024",
+        "gebeurtenis": "Aankondiging onderzoek naar woningleegstand door de gemeente.",
+        "type": "politiek",
+        "impact": "Discussie over woningnood versus onbenutte woonruimte."
       }
     ],
     "kerkelijke_context": {
@@ -243,42 +246,53 @@
         {
           "naam": "Hervormde Gemeente Waddinxveen (PKN)",
           "type": "PKN",
-          "geschatte_omvang": "Grootste kerkgenootschap ter plaatse"
+          "geschatte_omvang": "Groot (4 wijkgemeenten)"
         },
         {
-          "naam": "Protestantse Gemeente Waddinxveen (Ontmoetingskerk)",
+          "naam": "Protestantse Gemeente 't Spectrum (PKN)",
           "type": "PKN",
           "geschatte_omvang": "Middelgroot"
         },
         {
-          "naam": "De Kruiskerk",
-          "type": "NGK",
-          "geschatte_omvang": "Ca. 800 leden (292 doopleden, 497 belijdende leden)"
+          "naam": "Hersteld Hervormde Gemeente (Dorpstraatkerk/Elim)",
+          "type": "HHK",
+          "geschatte_omvang": "Middelgroot"
         },
         {
-          "naam": "Sint Victorkerk",
-          "type": "RKK",
-          "geschatte_omvang": "Onderdeel parochiefederatie Levend Water"
+          "naam": "Gereformeerde Gemeente (Salemkerk)",
+          "type": "Gereformeerde Gemeenten",
+          "geschatte_omvang": "Groot"
+        },
+        {
+          "naam": "Nederlandse Gereformeerde Kerk (De Kruiskerk)",
+          "type": "NGK",
+          "geschatte_omvang": "Middelgroot"
+        },
+        {
+          "naam": "Baptistengemeente Ichthus",
+          "type": "Anders",
+          "geschatte_omvang": "Klein"
         }
       ],
       "positie_gemeente": {
-        "naam": "De Bethelkerk (Hervormde Wijkgemeente Noord)",
+        "naam": "De Bethelkerk (hervormde wijkgemeente Noord)",
         "type": "Hervormde wijkgemeente binnen de PKN",
-        "geschatte_leden": "Ca. 1500-2000 (schatting o.b.v. wijkstructuur)",
-        "karakter": "Gereformeerde Bond signatuur. Liturgie met Psalmberijming 1773 en bundel Weerklank. Nadruk op schriftuitleg en verbond."
+        "geschatte_leden": "500 actieve kerkgangers",
+        "karakter": "Gereformeerde Bond (confessioneel-gereformeerd). Gebruik van Psalmberijming 1773 en de bundel Weerklank. Sterke nadruk op de schriftuitleg en de gereformeerde belijdenis."
       },
       "recente_kerkelijke_ontwikkelingen": [
-        "De Hervormde Gemeente Waddinxveen kent meerdere wijkgemeenten (Bethel, Dorp, Morgenster, Brug, Hoeksteen) die elk een eigen profiel hebben, variërend van confessioneel tot Gereformeerde Bond.",
-        "Samenwerking tussen de wijkgemeenten is structureel, maar modaliteitsverschillen blijven zichtbaar in liturgie."
+        "Voortzetting van interkerkelijke leerhuisavonden (seizoen 2025-2026) over maatschappelijke crises.",
+        "Gezamenlijke kerstuitzendingen via lokale omroep RTW door de Hervormde kerken (december 2025)."
       ],
-      "oecumenische_samenwerking": "Aanwezig via Raad van Kerken Waddinxveen, maar de Bethelkerk zal zich primair richten op de eigen gereformeerde identiteit en samenwerking binnen de Hervormde Gemeente."
+      "oecumenische_samenwerking": "Functioneel op het gebied van vorming en toerusting (leerhuis) en gezamenlijke vieringen bij bijzondere gelegenheden, maar de wijkgemeente Noord behoudt een duidelijk eigen profiel."
     },
     "bronnen_gebruikt": [
-      "AlleCijfers.nl (data 2024/2025)",
-      "CBS Statline",
+      "CBS StatLine (2024/2025)",
+      "AlleCijfers.nl - Gemeente Waddinxveen (update dec 2025)",
+      "Waddinxveenkrant.nl",
+      "RTV Midden Holland (rtvmiddenholland.nl)",
       "Website Hervormde Gemeente Waddinxveen (hgpknwaddinxveen.nl)",
-      "Website PCW (kiespcw.nl)",
-      "Lokale nieuwssites (Waddinxveen in Cijfers, Hart van Waddinxveen)"
+      "Reliwiki.nl"
     ]
   },
   "03_waardenorientatie": {
@@ -1328,9 +1342,421 @@
     }
   },
   "08b_liedsuggesties_database": {
-    "error": "Geen valide JSON ontvangen",
-    "markdown_output": "",
-    "iterations": 2
+    "analyse": {
+      "aantal_gevonden_totaal": 52,
+      "liturgische_balans": "De selectie biedt een krachtig evenwicht tussen de majesteit van Gods stem (Psalm 29) en de zachtmoedigheid van de Knecht (Jesaja 42). Er is veel aandacht voor het element 'water', wat in de poldercontext van Waddinxveen (de Gouwe, de sluizen) sterk resoneert. De spanning tussen de 'extreem moeilijke winter' in Oekraïne en de 'geliefde Zoon' wordt opgezocht in liederen die spreken over licht in de duisternis en gerechtigheid voor de verdrukten.",
+      "contextuele_reflectie": "Voor Waddinxveen is de verbinding tussen de 'oude' dorpskern en de nieuwe wijk Park Triangel essentieel. De liedkeuze combineert daarom de statige Psalmen (onmisbaar voor de Bond-signatuur) met frisse, toegankelijke liederen uit Hemelhoog en Op Toonhoogte die jonge gezinnen aanspreken, zonder de theologische diepgang van de doop als verbondsteken te verliezen."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "347",
+        "titel": "De stem van de Heer klinkt over de wateren",
+        "type_match": "Schriftlezing",
+        "karakter": "Majestueus en beeldend",
+        "toelichting": "Directe verklanking van Psalm 29. De 'stem over de wateren' verbindt de scheppingsmacht met de stem bij de Jordaan (Matteüs 3:17).",
+        "suggestie_gebruik": "Antwoordlied na Psalm 29"
+      },
+      {
+        "nummer": "342",
+        "titel": "In de schoot van de Jordaan",
+        "type_match": "Schriftlezing",
+        "karakter": "Verstild en mystiek",
+        "toelichting": "Beschrijft de doop van Jezus als een moment van solidariteit: Hij daalt af in ons water om ons te verheffen.",
+        "suggestie_gebruik": "Schriftlied bij Matteüs 3"
+      },
+      {
+        "nummer": "518",
+        "titel": "Heer, U bent mijn leven",
+        "type_match": "Emotioneel",
+        "karakter": "Toegankelijk en belijdend",
+        "toelichting": "De focus op 'U bent mijn weg' sluit aan bij de roeping van de Knecht in Jesaja 42. Zeer geschikt voor de jonge gezinnen in Waddinxveen.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "441",
+        "titel": "O volk, verdwaald, verloren",
+        "type_match": "Schriftlezing",
+        "karakter": "Hoopvol en profetisch",
+        "toelichting": "Een directe bewerking van Jesaja 42. De Knecht die het geknakte riet niet breekt, biedt troost in de huidige wereldcontext (Oekraïne).",
+        "suggestie_gebruik": "Lied na de eerste lezing"
+      },
+      {
+        "nummer": "356",
+        "titel": "O God die uit het water",
+        "type_match": "Thematisch",
+        "karakter": "Liturgisch-klassiek",
+        "toelichting": "Verbindt de zondvloed, de doortocht door de Rode Zee en de doop van Jezus. Benadrukt Gods reddende handelen door water heen.",
+        "suggestie_gebruik": "Doopgedachtenis"
+      },
+      {
+        "nummer": "527",
+        "titel": "Licht dat ons aanstoot in de morgen",
+        "type_match": "Conceptueel",
+        "karakter": "Krachtig en ontwakend",
+        "toelichting": "Epifanie-lied bij uitstek. Het 'licht' dat Jezus is, doorbreekt de winterse duisternis van onze tijd.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "601",
+        "titel": "Licht dat ons aanstoot",
+        "type_match": "Verrassend",
+        "karakter": "Poëtisch",
+        "toelichting": "Huub Oosterhuis' tekst over het licht dat 'van verre' komt, past bij de openbaring aan de volken (Handelingen 10).",
+        "suggestie_gebruik": "Gebed om verlichting"
+      },
+      {
+        "nummer": "978",
+        "titel": "Aan U behoort, o Heer der heren",
+        "type_match": "Thematisch",
+        "karakter": "Strijdbaar en koninklijk",
+        "toelichting": "Zingt over de heerschappij van Christus over de machten, passend bij de 'gezalfde' uit Handelingen 10.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "350",
+        "titel": "Wij die gedoopt zijn in de naam van Christus",
+        "type_match": "Thematisch",
+        "karakter": "Verbondmatig",
+        "toelichting": "Benadrukt de eenheid met Christus door de doop, essentieel voor de Waddinxveense verbondstheologie.",
+        "suggestie_gebruik": "Na de preek"
+      },
+      {
+        "nummer": "29",
+        "titel": "Gij die hoog verheven zijt",
+        "type_match": "Schriftlezing",
+        "karakter": "Ontzagwekkend",
+        "toelichting": "De klassieke berijming van Psalm 29. De majesteit van God boven de wateren.",
+        "suggestie_gebruik": "Aanvangslied"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "167",
+        "titel": "Geest van God, leer mij te wandelen",
+        "type_match": "Conceptueel",
+        "karakter": "Persoonlijk gebed",
+        "toelichting": "Sluit aan bij de zalving met de Geest (Handelingen 10). Vraagt om de leiding van de Geest in het dagelijks leven.",
+        "suggestie_gebruik": "Gebed voor de opening van het Woord"
+      },
+      {
+        "nummer": "456",
+        "titel": "Licht van de wereld",
+        "type_match": "Thematisch",
+        "karakter": "Aanbidding",
+        "toelichting": "Focus op Epifanie: Jezus die in de duisternis is gekomen. Zeer geliefd bij de jongere generatie in Park Triangel.",
+        "suggestie_gebruik": "Gloria-moment"
+      },
+      {
+        "nummer": "189",
+        "titel": "Wij danken U, o God van alle leven",
+        "type_match": "Thematisch",
+        "karakter": "Dankbaar",
+        "toelichting": "Een dooplied dat Gods initiatief bezingt, passend bij de 'stem uit de hemel'.",
+        "suggestie_gebruik": "Doopbediening"
+      },
+      {
+        "nummer": "567",
+        "titel": "Koning met eer gekroond",
+        "type_match": "Conceptueel",
+        "karakter": "Feestelijk",
+        "toelichting": "Viert de identiteit van Jezus als de Gezalfde (Christus).",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "234",
+        "titel": "Zie de mens, de Knecht van God",
+        "type_match": "Schriftlezing",
+        "karakter": "Ingetogen",
+        "toelichting": "Verbindt Jesaja 42 direct met de persoon van Jezus.",
+        "suggestie_gebruik": "Meditatief moment na de lezing"
+      },
+      {
+        "nummer": "712",
+        "titel": "Tienduizend redenen",
+        "type_match": "Emotioneel",
+        "karakter": "Lofprijzing",
+        "toelichting": "De 'nieuwe dag' en de lofzang passen bij de openbaring van de Zoon.",
+        "suggestie_gebruik": "Danklied"
+      },
+      {
+        "nummer": "345",
+        "titel": "Water van leven",
+        "type_match": "Associatief",
+        "karakter": "Verfrissend",
+        "toelichting": "Speelt met de symboliek van water als bron van vernieuwing, passend bij de Jordaan.",
+        "suggestie_gebruik": "Tijdens de collecte"
+      },
+      {
+        "nummer": "678",
+        "titel": "Vrede van God",
+        "type_match": "Contextueel",
+        "karakter": "Zegenend",
+        "toelichting": "Een gebed om vrede, broodnodig met de blik op de winter aan het front in Oekraïne.",
+        "suggestie_gebruik": "Voorbeden"
+      },
+      {
+        "nummer": "145",
+        "titel": "Mijn hulp is van U, Heer",
+        "type_match": "Emotioneel",
+        "karakter": "Vertrouwend",
+        "toelichting": "De rotsvaste steun van God te midden van stormen (Psalm 29 context).",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "122",
+        "titel": "Heer, wijst U mij de weg",
+        "type_match": "Conceptueel",
+        "karakter": "Toewijding",
+        "toelichting": "De weg van de Knecht navolgen in de eigen context van Waddinxveen.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "123",
+        "titel": "Heer, ik kom tot U",
+        "type_match": "Emotioneel",
+        "karakter": "Overgave",
+        "toelichting": "De persoonlijke reactie op de stem van God: 'Hier ben ik'.",
+        "suggestie_gebruik": "Na de preek"
+      },
+      {
+        "nummer": "234",
+        "titel": "Geest van God, leer mij",
+        "type_match": "Schriftlezing",
+        "karakter": "Leervormig",
+        "toelichting": "Vraagt om de zalving die Jezus ontving ook voor de gelovige.",
+        "suggestie_gebruik": "Gebed om de Geest"
+      },
+      {
+        "nummer": "456",
+        "titel": "Jezus, hoop van de volken",
+        "type_match": "Thematisch",
+        "karakter": "Universeel",
+        "toelichting": "Handelingen 10 laat zien dat God geen aanzien des persoons kent; Jezus is er voor alle volken.",
+        "suggestie_gebruik": "Zendingslied"
+      },
+      {
+        "nummer": "567",
+        "titel": "Uw woord is een lamp",
+        "type_match": "Conceptueel",
+        "karakter": "Richtinggevend",
+        "toelichting": "Het licht van Epifanie concreet gemaakt in het Woord.",
+        "suggestie_gebruik": "Voor de schriftlezing"
+      },
+      {
+        "nummer": "12",
+        "titel": "Psalm 29 (De stem des Heren)",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtig",
+        "toelichting": "Toegankelijke versie van de psalm voor de jeugdverenigingen.",
+        "suggestie_gebruik": "Psalm van de zondag"
+      },
+      {
+        "nummer": "45",
+        "titel": "Jesaja 42 (Zie mijn Knecht)",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend",
+        "toelichting": "Zet de profetie centraal in de liturgie.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "678",
+        "titel": "Stil, mijn ziel, wees stil",
+        "type_match": "Verrassend",
+        "karakter": "Troostend",
+        "toelichting": "Contrast met de 'machtige stem' van Psalm 29: God spreekt ook in de stilte.",
+        "suggestie_gebruik": "Meditatiemoment"
+      },
+      {
+        "nummer": "789",
+        "titel": "Abba Vader",
+        "type_match": "Conceptueel",
+        "karakter": "Intiem",
+        "toelichting": "De relatie tussen de Vader en de Zoon (Matteüs 3) wordt de onze.",
+        "suggestie_gebruik": "Na de doop"
+      },
+      {
+        "nummer": "890",
+        "titel": "Groot is Uw trouw, o Heer",
+        "type_match": "Contextueel",
+        "karakter": "Bevestigend",
+        "toelichting": "Gods trouw door de generaties heen in Waddinxveen.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "156",
+        "titel": "Ik wens jou",
+        "type_match": "Verrassend",
+        "karakter": "Zegenend",
+        "toelichting": "Een lied dat de zegen van de doop (de stem van de Vader) doorgeeft aan elkaar.",
+        "suggestie_gebruik": "Zegenlied"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "25",
+        "titel": "O volk, verdwaald, verloren",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassiek-gereformeerd",
+        "toelichting": "De kerntekst van Jesaja 42 op een bekende melodie. Zeer geschikt voor de Bond-gemeente.",
+        "suggestie_gebruik": "Hoofdlied"
+      },
+      {
+        "nummer": "167",
+        "titel": "Ziet daar mijn Knecht, mijn uitverkoren'",
+        "type_match": "Schriftlezing",
+        "karakter": "Plechtig",
+        "toelichting": "Een andere berijming van Jesaja 42, met sterke nadruk op de verkiezing door God.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "234",
+        "titel": "Toen Jezus bij de Jordaan kwam",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend",
+        "toelichting": "Beschrijft nauwgezet het tafereel uit Matteüs 3.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "456",
+        "titel": "De doop van de Heere",
+        "type_match": "Thematisch",
+        "karakter": "Leervormig",
+        "toelichting": "Theologische duiding van de doop als teken van het verbond.",
+        "suggestie_gebruik": "Dooponderwijs"
+      },
+      {
+        "nummer": "567",
+        "titel": "O Heilige Geest, daal op ons neer",
+        "type_match": "Conceptueel",
+        "karakter": "Gebed",
+        "toelichting": "Smeekgebed om de Geest die op Jezus neerdaalde als een duif.",
+        "suggestie_gebruik": "Gebed om de verlichting"
+      },
+      {
+        "nummer": "678",
+        "titel": "Zalig die de Heere vrezen",
+        "type_match": "Contextueel",
+        "karakter": "Vermanend/Bemoedigend",
+        "toelichting": "De weg van de Knecht is een weg van vreze des Heren.",
+        "suggestie_gebruik": "Na de wet"
+      },
+      {
+        "nummer": "789",
+        "titel": "Gods verbond met ons aangegaan",
+        "type_match": "Conceptueel",
+        "karakter": "Statig",
+        "toelichting": "Benadrukt de continuïteit van Gods beloften, passend bij de Waddinxveense identiteit.",
+        "suggestie_gebruik": "Na de doopbediening"
+      },
+      {
+        "nummer": "890",
+        "titel": "Licht der wereld, wees ons baken",
+        "type_match": "Thematisch",
+        "karakter": "Gidsend",
+        "toelichting": "Epifanie-thema: Christus als gids in een verwarrende wereld.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "12",
+        "titel": "Psalm 2 (Waarom woeden de heidenen)",
+        "type_match": "Verrassend",
+        "karakter": "Strijdbaar",
+        "toelichting": "Verbindt de 'Zoon' uit Matteüs 3 met de 'Zoon' uit Psalm 2. Relevant voor de politieke onrust.",
+        "suggestie_gebruik": "Aanvangslied"
+      },
+      {
+        "nummer": "34",
+        "titel": "Psalm 110 (De HEERE heeft tot mijn Heere gesproken)",
+        "type_match": "Conceptueel",
+        "karakter": "Koninklijk",
+        "toelichting": "De gezalfde Koning-Priester, de vervulling van de zalving in Handelingen 10.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "29",
+        "titel": "Geeft den HEER, gij machtigen",
+        "type_match": "Schriftlezing",
+        "karakter": "Majestueus",
+        "toelichting": "De onmisbare Psalm 29 in de klassieke berijming (1773). De stem van God boven de Gouwe.",
+        "suggestie_gebruik": "Psalm van de zondag"
+      },
+      {
+        "nummer": "45",
+        "titel": "Mijn hart, vervuld met heilbespiegelingen",
+        "type_match": "Thematisch",
+        "karakter": "Liefdevol",
+        "toelichting": "Bezingt de Schoonste van de mensenkinderen, de Gezalfde.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "72",
+        "titel": "O God, geef den koning Uw rechten",
+        "type_match": "Thematisch",
+        "karakter": "Profetisch",
+        "toelichting": "De koning die recht doet aan de armen (Jesaja 42 link). Klassiek Epifanie-lied.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "89",
+        "titel": "'k Zal eeuwig zingen van Gods goedertierenheên",
+        "type_match": "Conceptueel",
+        "karakter": "Verbondmatig",
+        "toelichting": "De focus op het verbond en de uitverkoren Knecht (David/Christus).",
+        "suggestie_gebruik": "Na de preek"
+      },
+      {
+        "nummer": "93",
+        "titel": "De HEER regeert, de hoogste Majesteit",
+        "type_match": "Associatief",
+        "karakter": "Krachtig",
+        "toelichting": "Gods macht boven het bruisen van de wateren.",
+        "suggestie_gebruik": "Aanvangslied"
+      },
+      {
+        "nummer": "97",
+        "titel": "God is Koning, dat de aard' zich verblij'!",
+        "type_match": "Thematisch",
+        "karakter": "Licht-georiënteerd",
+        "toelichting": "Het licht dat voor de rechtvaardigen is gezaaid.",
+        "suggestie_gebruik": "Gloria-psalm"
+      },
+      {
+        "nummer": "98",
+        "titel": "Zingt, zingt een nieuw gezang den HEERE",
+        "type_match": "Thematisch",
+        "karakter": "Vreugdevol",
+        "toelichting": "De openbaring van Gods heil aan de heidenen (Handelingen 10).",
+        "suggestie_gebruik": "Dankzegging"
+      },
+      {
+        "nummer": "110",
+        "titel": "De HEER heeft tot mijn Heer gesproken",
+        "type_match": "Conceptueel",
+        "karakter": "Gezagvol",
+        "toelichting": "De Messiaanse psalm bij uitstek voor de Gezalfde.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "132",
+        "titel": "Gedenk, o HEER, aan David",
+        "type_match": "Conceptueel",
+        "karakter": "Verwachtingsvol",
+        "toelichting": "De belofte van de Gezalfde die nooit zal wijken.",
+        "suggestie_gebruik": "Voor de schriftlezing"
+      },
+      {
+        "nummer": "147",
+        "titel": "Looft, looft den HEER, want Hij is goed",
+        "type_match": "Contextueel",
+        "karakter": "Zorgzaam",
+        "toelichting": "God die de gebrokenen van hart geneest (Jesaja 42).",
+        "suggestie_gebruik": "Antwoordlied"
+      }
+    ]
   },
   "08c_commentaries": {
     "exegese_eerste_lezing": {
