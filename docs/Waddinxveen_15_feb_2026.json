@@ -3,132 +3,137 @@
     "plaatsnaam": "Waddinxveen",
     "gemeente": "PGW-Wijkgemeente De Rank",
     "datum": "15 februari 2026",
-    "website": "https://pgpknwaddinxveen.nl/index.php/rank",
     "extra_context": "",
     "adres": "Groensvoorde 3, 2742 DJ Waddinxveen",
-    "gebouw": "Ontmoetingskerk"
+    "website": "https://pgpknwaddinxveen.nl/index.php/rank"
   },
   "01_zondag_kerkelijk_jaar": {
     "positie_kerkelijk_jaar": {
-      "zondag_naam": "Zondag Estomihi (Zondag voor de Veertigdagentijd) / 6e Zondag na Epifanie",
-      "liturgische_periode": "Epifaniëntijd (overgang naar Veertigdagentijd)",
-      "weken_tot_hoofdfeest": "3 dagen voor Aswoensdag (start Lijdenstijd), 7 weken tot Pasen",
+      "zondag_naam": "6e zondag door het jaar (tevens zondag Estomihi)",
+      "liturgische_periode": "Zomertijd",
+      "weken_tot_hoofdfeest": "3 dagen voor Aswoensdag (begin Veertigdagentijd); 7 weken voor Pasen",
       "leesrooster_jaar": "A",
       "dominant_evangelie": "Matteüs"
     },
     "traditionele_naam": {
       "latijnse_naam": "Estomihi",
-      "oorsprong": "Naar de introïtuspsalm van deze zondag, Psalm 31:3b-4: 'Esto mihi in Deum protectorem' (Wees mij tot een beschermend God). Ook wel 'Quinquagesima' genoemd (50 dagen voor Pasen).",
-      "nederlandse_vertaling": "Wees mij...",
+      "oorsprong": "Ontleend aan de Introïtus-psalm van deze zondag, Psalm 31:3: 'Esto mihi in Deum protectorem' (Wees mij een beschermende God/een rots om te schuilen).",
+      "nederlandse_vertaling": "Wees mij",
       "volksnamen": [
-        "Carnavalszondag (in zuidelijke context)",
-        "Drempelzondag"
+        "Quinquagesima (de vijftigste dag voor Pasen)",
+        "Zondag voor Aswoensdag"
       ]
     },
     "bijzondere_zondag_pkn": {
-      "is_bijzonder": true,
-      "naam": "Zondag voor de Veertigdagentijd",
-      "toelichting": "Hoewel de lezingen de reeks van de Bergrede volgen (6e zondag), markeert deze zondag liturgisch de drempel naar de Lijdenstijd. Het is de laatste zondag waarop het 'Halleluja' klinkt en het 'Gloria' (Ere zij God) voluit gezongen wordt vóór Pasen."
+      "is_bijzonder": false,
+      "naam": null,
+      "toelichting": "Hoewel er geen landelijke PKN-themadag is, markeert deze zondag in veel gemeenten de overgang naar de Veertigdagentijd. Vaak wordt er aandacht besteed aan de aankomende ZWO-projecten (Zending, Werelddiaconaat en Ontwikkelingssamenwerking) voor de lijdenstijd."
     },
     "liturgische_kleur": {
       "kleur": "groen",
-      "symboliek": "De kleur van de tijd door het jaar, groei en hoop. Let op: sommige gemeenten kiezen op deze overgangszondag (Estomihi) al voor paars, maar formeel volgens het Dienstboek bij de lezingen van de 6e zondag na Epifanie is het groen.",
+      "symboliek": "Kleur van de hoop, groei en het leven. Het is de laatste groene zondag voordat de paarse kleur van de Veertigdagentijd (inkeer en boete) begint op Aswoensdag.",
       "praktische_suggesties": [
-        "Groen antependium",
-        "Bloemschikking kan de overgang markeren: basis groen, maar met elementen die verwijzen naar de naderende soberheid (bijv. takken, stenen) of juist uitbundig als laatste vreugde voor de vasten."
+        "Groen antependium en stola.",
+        "Bloemschikking met veldbloemen of grassen die groei symboliseren.",
+        "Mogelijkheid om een subtiel paars accent toe te voegen als verwijzing naar de naderende lijdenstijd."
       ]
     },
     "lezingen": {
       "eerste_lezing": {
-        "referentie": "Sirach 15:15-20",
-        "boek": "Sirach (Ecclesiasticus)",
+        "referentie": "Sirach 15,15-20",
+        "boek": "Sirach (De wijsheid van Jezus Sirach)",
         "hoofdstuk": 15,
         "verzen": "15-20",
-        "thema": "De menselijke verantwoordelijkheid en de vrijheid om te kiezen tussen goed en kwaad, leven en dood."
+        "thema": "De mens heeft de vrije keuze tussen het houden van de geboden (leven) of ontrouw (dood)."
       },
       "epistel": {
-        "referentie": "1 Korintiërs 2:6-10",
+        "referentie": "1 Korintiërs 2,6-10",
         "boek": "1 Korintiërs",
         "hoofdstuk": 2,
         "verzen": "6-10",
-        "thema": "De verborgen wijsheid van God, die door de Geest wordt geopenbaard en die de wereldse machthebbers niet kennen."
+        "thema": "De verborgen wijsheid van God die door de Geest wordt geopenbaard, niet door menselijke wijsheid."
       },
       "evangelie": {
-        "referentie": "Matteüs 5:17-37",
+        "referentie": "Matteüs 5,17-37",
         "boek": "Matteüs",
         "hoofdstuk": 5,
         "verzen": "17-37",
-        "thema": "Jezus' radicalisering van de Thora in de Bergrede: niet de afschaffing, maar de vervulling. De gerechtigheid moet dieper gaan dan uiterlijke regels (moord, overspel, eed)."
+        "thema": "Jezus over de vervulling van de Wet en de Profeten: de radicalisering van de geboden in de Bergrede."
       },
       "psalm": {
-        "referentie": "Psalm 119",
+        "referentie": "Psalm 119:1-24",
         "nummer": 119,
-        "verzen": "1-8 (of selectie)",
-        "antifoon": "Welzalig wie de weg van de HEER gaat."
+        "verzen": "1-24",
+        "antifoon": "Gelukkig wie de weg van de Heer gaan."
       },
       "alternatieve_lezingen": [
         {
-          "referentie": "Deuteronomium 30:15-20",
-          "reden": "Klassiek alternatief voor Sirach 15, met dezelfde thematiek: 'Ik houd u heden leven en dood voor... kies dan het leven'."
+          "referentie": "Matteüs 5,20-22a.27-28.33-34a.37",
+          "reden": "Verkorte versie van het evangelie gericht op de kern van de radicale wetsinterpretatie."
         }
       ],
-      "thematische_samenhang": "De rode draad is de 'Keuze en de Intentie'. Sirach benadrukt de fundamentele keuzevrijheid van de mens. In het Evangelie verdiept Jezus deze keuze: het gaat niet om het vinkje zetten bij een regel ('ik heb niemand vermoord'), maar om de gesteldheid van het hart en de intentie (woede, verzoening, trouw). Paulus plaatst dit in het perspectief van Gods Geest: deze diepe wijsheid is geen menselijk vernuft, maar Gods geopenbaarde mysterie."
+      "thematische_samenhang": "De rode draad is de verhouding van de gelovige tot de Wet (Torah). Sirach benadrukt de keuzevrijheid, Psalm 119 bezingt de vreugde van de wet, en Matteüs laat zien dat Jezus de wet niet afschaft maar verdiept tot een zaak van het hart. 1 Korintiërs plaatst dit in het licht van Gods hogere wijsheid."
     },
     "thematiek": {
-      "centraal_thema": "Gerechtigheid die overstroomt",
-      "stemming": "Ernstig maar hoopvol; een oproep tot integriteit en authenticiteit in geloof.",
-      "karakter_zondag": "Onderwijzend (Bergrede) met een ondertoon van urgentie vanwege de naderende Lijdenstijd. Het is een spiegel-zondag: hoe staat mijn hart tegenover God en de naaste?",
-      "rode_draad_liturgisch_jaar": "We zitten in de 'leerschool van de Bergrede' (Matteüs-jaar A). Vorige weken gingen over de zaligsprekingen en 'zout en licht'. Nu wordt concreet wat dat betekent voor de omgang met de Wet. Volgende week (Invocabit) begint de woestijnreis van de Veertigdagentijd.",
+      "centraal_thema": "Kiezen voor het leven: de wet als wegwijzer van het hart.",
+      "stemming": "Bezinning en morele appel.",
+      "karakter_zondag": "Een zondag van onderricht (didactisch) en voorbereiding op de weg naar het kruis.",
+      "rode_draad_liturgisch_jaar": "Vormt de afsluiting van de eerste reeks zondagen 'door het jaar' waarin de Bergrede centraal staat. De focus verschuift vanaf woensdag naar de navolging van Christus in zijn lijden.",
       "centrale_geloofsvragen": [
-        "Is het christelijk geloof een set regels of een houding van het hart?",
-        "Hoe verhoudt Jezus' radicale ethiek zich tot onze menselijke onmacht?",
-        "Wat betekent het om te kiezen voor 'het leven' in complexe situaties?"
+        "Is de wet een last of een bevrijding?",
+        "Hoe verhoudt uiterlijke gehoorzaamheid zich tot innerlijke gezindheid?",
+        "Wat betekent het om 'volmaakt' te zijn zoals de Vader (Mt 5:48)?"
       ]
     },
     "historische_achtergrond": {
-      "oorsprong_vroege_kerk": "De periode voor de vasten was historisch een tijd van voorbereiding voor catechumenen. De lezingen over de 'twee wegen' (Sirach/Deuteronomium) passen in de vroege doopcatechese (Didache).",
-      "hervormde_traditie": "Sterke nadruk op de 'tertius usus legis' (het derde gebruik van de wet): de wet niet als weg tot behoud, maar als leefregel der dankbaarheid.",
-      "gereformeerde_traditie": "De verbinding tussen Oude en Nieuwe Testament is cruciaal; Jezus schaft de Wet niet af. Dit voorkomt een marcionitische scheiding tussen een 'wreede' God van het OT en een 'lieve' God van het NT.",
-      "lutherse_traditie": "Luther benadrukte bij Estomihi vaak het lijden van Christus (aankondiging lijden), maar in het oecumenisch rooster (A-jaar) ligt de focus op de ethiek van het Koninkrijk.",
-      "oecumenische_dimensie": "De lezingen komen overeen met de Revised Common Lectionary, wat zorgt voor wereldwijde verbondenheid op deze zondag."
+      "oorsprong_vroege_kerk": "De zondag Estomihi markeerde historisch het begin van de 'vleesloze' tijd in de aanloop naar de vasten.",
+      "hervormde_traditie": "Sterke nadruk op de Wet als 'regel van de dankbaarheid' (derde gebruik van de wet), wat goed aansluit bij Psalm 119.",
+      "gereformeerde_traditie": "Focus op de verbondsmatige relatie tussen God en mens, waarbij de geboden de kaders van het verbond vormen.",
+      "lutherse_traditie": "Spanning tussen Wet en Evangelie; Jezus die de wet vervult waar de mens faalt.",
+      "oecumenische_dimensie": "De lezingen volgen het Revised Common Lectionary (RCL), waardoor er wereldwijd in vele protestantse en katholieke kerken over dezelfde teksten wordt gepreekt."
     },
     "praktische_handvatten": {
-      "liturgische_orde_suggestie": "Begin met een feestelijke intocht (laatste zondag voor de soberheid). Kyrie-gebed kan gericht zijn op ons onvermogen om de radicale liefde van Christus te leven.",
+      "liturgische_orde_suggestie": "Klassieke PKN-orde met een uitgebreide lezing van de Wet of de Bergrede als spiegel voor het leven, gevolgd door een schuldbelijdenis en genadeverkondiging.",
       "aanpassingen_periode": [
         {
-          "element": "Halleluja",
-          "aanpassing": "Extra aandacht",
-          "reden": "Dit is de laatste zondag dat het klinkt voor de Stille Week. Soms wordt het 'Halleluja begraven' of uitbundig gezongen als afscheid."
+          "element": "Gloria",
+          "aanpassing": "Voluit zingen",
+          "reden": "Het is de laatste zondag voor de Veertigdagentijd waarin het Gloria vaak achterwege blijft."
         },
         {
-          "element": "Wetslezing",
-          "aanpassing": "Kan vervallen of geïntegreerd worden",
-          "reden": "Omdat de evangelielezing zelf een uitgebreide uitleg van de Wet is (Bergrede), kan de klassieke wetslezing in de voorbereiding dubbelop zijn. Overweeg de leefregels uit Kolossenzen 3 of Romeinen 12 als alternatief na de preek."
+          "element": "Halleluja",
+          "aanpassing": "Feestelijk zingen",
+          "reden": "Vanaf Aswoensdag wordt het Halleluja in de liturgische traditie 'begraven' tot Pasen."
         }
       ],
       "gebedsmotieven": [
-        "Bidden om de Geest die 'de diepten van God doorgrondt' (1 Kor 2).",
-        "Voorbede voor hen die vastlopen in regels en bureaucratie.",
-        "Gebed om integriteit in relaties en spreken (ja is ja, nee is nee).",
-        "Voorbereiding op de naderende Veertigdagentijd."
+        "Gebed om wijsheid van de Geest (naar 1 Kor 2).",
+        "Voorbede voor hen die worstelen met morele keuzes.",
+        "Dankzegging voor de richting die Gods woord geeft."
       ],
       "kindernevendienst": {
-        "thema": "Kiezen voor het goede / Ja is Ja",
+        "thema": "Kiezen voor het goede",
         "suggesties": [
-          "Werken met het beeld van 'vuur en water' (uit Sirach) als keuzes.",
-          "Een spel over eerlijkheid en beloftes: wanneer is het moeilijk om je aan je woord te houden?"
+          "Spel over keuzes maken (links of rechts).",
+          "Verhaal over Jezus die uitlegt dat het niet alleen gaat om wat je doet, maar ook om wat je denkt."
         ]
       },
       "visuele_elementen": [
-        "Projectie: Een weegschaal of een splitsing in de weg.",
-        "Symboliek: De liturgische schikking kan de overgang van licht (Epifanie) naar soberheid (Vasten) verbeelden, bijvoorbeeld door klimop (trouw) te combineren met een sobere ondergrond."
+        "Een wegwijzer of een splitsing in de weg als symbool voor Sirach 15.",
+        "Een opengeslagen Bijbel bij Psalm 119.",
+        "Projectie van een berglandschap (verwijzing naar de Bergrede)."
       ]
     },
     "dagelijks_leesrooster": {
       "week_voorafgaand": [
-        "In de week voor deze zondag (na 5e zondag Epifanie) wordt vaak gelezen uit boeken die wijsheid en levenswandel thematiseren, ter voorbereiding op de Bergrede-tekst."
+        "Maandag: Psalm 119:1-8",
+        "Dinsdag: Deuteronomium 30:15-20",
+        "Woensdag: Matteüs 5:13-16",
+        "Donderdag: Sirach 14:20-15:10",
+        "Vrijdag: 1 Korintiërs 2:1-5",
+        "Zaterdag: Psalm 119:9-16"
       ],
-      "verbinding_zondag": "De dagelijkse lezingen bereiden de hoorder voor op de climax van de Bergrede: de ethiek van het Koninkrijk is geen zware last, maar een weg van wijsheid en leven."
+      "verbinding_zondag": "De weeklezingen bereiden de hoorder voor op de radicale keuze tussen leven en dood (Deut 30) en de lof op de wijsheid (Sirach 14), die op zondag hun apotheose vinden in de Bergrede."
     }
   },
   "02_sociaal_maatschappelijke_context": {
@@ -1336,9 +1341,339 @@
     }
   },
   "08b_liedsuggesties_database": {
-    "error": "Geen valide JSON ontvangen",
-    "markdown_output": "",
-    "iterations": 2
+    "analyse": {
+      "aantal_gevonden_totaal": 40,
+      "liturgische_balans": "De selectie biedt een krachtig evenwicht tussen de vreugde van de wet (Psalm 119) en de radicale ethiek van de Bergrede (Matteüs 5). Er is veel aandacht voor 'het hart' als kompas, wat aansluit bij de lezing uit Sirach. De sfeer varieert van verstilde overgave (Kyrie-geschikt) tot strijdbare inzet voor gerechtigheid (Gaza-context).",
+      "contextuele_reflectie": "In Waddinxveen, waar de spanning tussen het 'oude groen' en de 'verdozing' voelbaar is, spreken deze liederen over integriteit: niet alleen de regels volgen, maar de geest van de wet (zorg voor de schepping) belichamen. De roep om vrede en gerechtigheid in de wereld (Gaza) vindt een bedding in de liederen over de 'armen van geest' en 'vredestichters'."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "119",
+        "titel": "Welzalig wie de rechte wegen gaan",
+        "type_match": "Schriftlezing",
+        "karakter": "Statige lofzang",
+        "toelichting": "Directe verbinding met de voorgeschreven psalm. Het bezingt de vreugde van een integer leven volgens Gods aanwijzingen.",
+        "suggestie_gebruik": "Intocht of Antwoordlied"
+      },
+      {
+        "nummer": "314",
+        "titel": "Heere Jezus, om uw woord",
+        "type_match": "Conceptueel",
+        "karakter": "Verstild gebed",
+        "toelichting": "Sluit aan bij 1 Korintiërs 2:6-10; een bede om de Heilige Geest om de diepere wijsheid van Gods woord te verstaan.",
+        "suggestie_gebruik": "Gebed om de verlichting"
+      },
+      {
+        "nummer": "989",
+        "titel": "Gelukkig de armen van geest",
+        "type_match": "Schriftlezing",
+        "karakter": "Litanie-achtig",
+        "toelichting": "De Zaligsprekingen uit Matteüs 5. Het zet de toon voor de radicale omkering die Jezus predikt.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "734",
+        "titel": "Beati voi poveri",
+        "type_match": "Emotionele",
+        "karakter": "Meditatief (Taizé)",
+        "toelichting": "Korte, herhaalbare vorm van de zaligsprekingen. Helpt om de 'Wet van het Hart' te laten indalen.",
+        "suggestie_gebruik": "Meditemoment na de preek"
+      },
+      {
+        "nummer": "537",
+        "titel": "Zo spreekt de Heer die ons geschapen heeft",
+        "type_match": "Contextueel",
+        "karakter": "Profetisch/Vermanend",
+        "toelichting": "Kritiek op uiterlijke vroomheid zonder gerechtigheid. Zeer relevant voor de actualiteit (Gaza) en de roep om integriteit.",
+        "suggestie_gebruik": "Kyrie of na de lezing uit Sirach"
+      },
+      {
+        "nummer": "838",
+        "titel": "O God, die onze Vader zijt",
+        "type_match": "Conceptueel",
+        "karakter": "Hymne",
+        "toelichting": "Vraagt om een hart dat 'zuiver en oprecht' is, wat de kern is van de Matteüs-lezing over integriteit.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "912",
+        "titel": "Ik wil mij gaan vertroosten",
+        "type_match": "Verrassend",
+        "karakter": "Klassiek/Troostend",
+        "toelichting": "De 'weg' die men gaat in vertrouwen. Een lied dat de keuze voor het leven (Sirach) persoonlijk maakt.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "978",
+        "titel": "Aan u behoort, o Heer der heren",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig/Majestueus",
+        "toelichting": "Breekt de wet open naar de vrijheid van Gods koninkrijk. 'Uw wet is ons een vrijheidswet'.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "321",
+        "titel": "Niet als een storm, als een vloed",
+        "type_match": "Conceptueel",
+        "karakter": "Subtiel/Zacht",
+        "toelichting": "Over de zachte kracht van Gods woord in het hart, passend bij de 'diepere wijsheid' uit 1 Korintiërs.",
+        "suggestie_gebruik": "Na de epistellezing"
+      },
+      {
+        "nummer": "119b",
+        "titel": "Gij zijt lofwaardig, Heer",
+        "type_match": "Schriftlezing",
+        "karakter": "Lofprijzing",
+        "toelichting": "Een kortere bewerking van Psalm 119, focust op het verlangen om Gods wegen te kennen.",
+        "suggestie_gebruik": "Gloria-moment"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "37",
+        "titel": "Wanneer het ’s avonds donker wordt",
+        "type_match": "Conceptueel",
+        "karakter": "Eenvoudig/Licht",
+        "toelichting": "Gebaseerd op Psalm 119:105. Het Woord als lamp, essentieel voor de 'keuze van de weg'.",
+        "suggestie_gebruik": "Kinderlied of Moment van bezinning"
+      },
+      {
+        "nummer": "494",
+        "titel": "Uw woord is een lamp voor mijn voet",
+        "type_match": "Schriftlezing",
+        "karakter": "Aanbidding",
+        "toelichting": "De klassieke vertolking van Psalm 119:105. Geeft een stem aan het verlangen naar leiding.",
+        "suggestie_gebruik": "Zingen voor de schriftlezing"
+      },
+      {
+        "nummer": "581",
+        "titel": "Want het geknakte riet",
+        "type_match": "Emotioneel",
+        "karakter": "Troostend",
+        "toelichting": "Verbindt de zaligsprekingen (treurenden) met Gods barmhartigheid. Past bij de 'Wet van het Hart'.",
+        "suggestie_gebruik": "Na de preek"
+      },
+      {
+        "nummer": "685",
+        "titel": "Laat zo je licht maar schijnen",
+        "type_match": "Schriftlezing",
+        "karakter": "Aansporend",
+        "toelichting": "Directe verwijzing naar Matteüs 5:16. Integriteit vertaald naar zichtbare daden.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "701",
+        "titel": "Deel je brood met de armen",
+        "type_match": "Contextueel",
+        "karakter": "Actiegericht",
+        "toelichting": "Vertaalt de Bergrede naar de actualiteit van honger en onrecht (Gaza-context).",
+        "suggestie_gebruik": "Tijdens de collecte"
+      },
+      {
+        "nummer": "115",
+        "titel": "Het is vaak moeilijk om goed te doen",
+        "type_match": "Conceptueel",
+        "karakter": "Eerlijk/Menselijk",
+        "toelichting": "Erkent de worsteling met de wet (Sirach: de keuze is aan jou). Vraagt om de Geest als hulp.",
+        "suggestie_gebruik": "Kyrie-lied"
+      },
+      {
+        "nummer": "420",
+        "titel": "Heer, wijs mij uw weg",
+        "type_match": "Thematisch",
+        "karakter": "Gebed",
+        "toelichting": "Een persoonlijke overgave aan Gods leiding, passend bij de 'weg ten leven'.",
+        "suggestie_gebruik": "Gebed na de preek"
+      },
+      {
+        "nummer": "521",
+        "titel": "Maak mijn hart onverdeeld",
+        "type_match": "Conceptueel",
+        "karakter": "Intiem",
+        "toelichting": "Integriteit ten voeten uit: een onverdeeld hart voor God, de kern van Jezus' onderricht.",
+        "suggestie_gebruik": "Avondmaalslied of Toewijding"
+      },
+      {
+        "nummer": "530",
+        "titel": "Uw wet is mijn vreugde",
+        "type_match": "Schriftlezing",
+        "karakter": "Vreugdevol",
+        "toelichting": "Sluit naadloos aan bij Psalm 119. De wet niet als last, maar als bevrijding.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "411",
+        "titel": "Gott, lass meine Gedanken",
+        "type_match": "Verrassend",
+        "karakter": "Meditatief",
+        "toelichting": "Bonhoeffer-tekst over integriteit in tijden van beproeving. Gods wijsheid vs. menselijke angst.",
+        "suggestie_gebruik": "Stiltemoment"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "5",
+        "titel": "De hemel roemt de Heer",
+        "type_match": "Thematisch",
+        "karakter": "Lofzang",
+        "toelichting": "Verbindt de schepping met de volmaakte wet van God (Psalm 19/119).",
+        "suggestie_gebruik": "Intocht"
+      },
+      {
+        "nummer": "53",
+        "titel": "Welzalig zijn d’ oprechten van gemoed",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassiek",
+        "toelichting": "Oude berijming van Psalm 119. Benadrukt de 'oprechtheid' (integriteit).",
+        "suggestie_gebruik": "Psalm van de zondag"
+      },
+      {
+        "nummer": "54",
+        "titel": "Uw Woord is een lamp voor mijn voet",
+        "type_match": "Schriftlezing",
+        "karakter": "Lichtvoetig",
+        "toelichting": "Korte herkenbare zetting van de kerntekst uit Psalm 119.",
+        "suggestie_gebruik": "Zingen met kinderen"
+      },
+      {
+        "nummer": "414",
+        "titel": "Jezus zegt, dat Hij hier van ons verwacht",
+        "type_match": "Schriftlezing",
+        "karakter": "Eenvoudig",
+        "toelichting": "Licht en zout (Matteüs 5). De roeping van de gelovige in de wereld.",
+        "suggestie_gebruik": "Uitzending"
+      },
+      {
+        "nummer": "168",
+        "titel": "Zegen ons Algoede",
+        "type_match": "Conceptueel",
+        "karakter": "Zegenbede",
+        "toelichting": "Vraagt om de kracht van de Geest om de weg te gaan.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "246",
+        "titel": "Maak mij rein voor U",
+        "type_match": "Conceptueel",
+        "karakter": "Toewijding",
+        "toelichting": "Focus op innerlijke zuiverheid, passend bij Jezus' woorden over het hart.",
+        "suggestie_gebruik": "Na de wetlezing of preek"
+      },
+      {
+        "nummer": "273",
+        "titel": "Heer ik kom tot U",
+        "type_match": "Emotioneel",
+        "karakter": "Warm/Overgave",
+        "toelichting": "Het hart aanbieden voor transformatie. 'Vernieuw mijn hart'.",
+        "suggestie_gebruik": "Antwoord op de verkondiging"
+      },
+      {
+        "nummer": "343",
+        "titel": "Vader, Zoon en Geest, ik prijs U",
+        "type_match": "Conceptueel",
+        "karakter": "Aanbidding",
+        "toelichting": "De diepere wijsheid van de Drie-eenheid (1 Korintiërs 2).",
+        "suggestie_gebruik": "Gloria"
+      },
+      {
+        "nummer": "448",
+        "titel": "Vul mij met uw Geest",
+        "type_match": "Conceptueel",
+        "karakter": "Smeekbede",
+        "toelichting": "Zonder de Geest is de wet een dode letter. Noodzakelijk voor de 'Wet van het Hart'.",
+        "suggestie_gebruik": "Gebed om de Geest"
+      },
+      {
+        "nummer": "231",
+        "titel": "Hier in uw heiligdom",
+        "type_match": "Verrassend",
+        "karakter": "Rustig",
+        "toelichting": "Luisteren naar Gods stem in de stilte, weg van de wereldse wijsheid.",
+        "suggestie_gebruik": "Voorbereiding op de lezingen"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "197",
+        "titel": "In vuur en vlam zet ons de Geest",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtig",
+        "toelichting": "Verwijst naar zout en licht (Matteüs 5). De kerk als getuige in een donkere wereld.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "441",
+        "titel": "Heer, wijs mij uw weg",
+        "type_match": "Thematisch",
+        "karakter": "Gebed",
+        "toelichting": "De weg van Psalm 119 vertaald naar een persoonlijk gebed om leiding.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "614",
+        "titel": "‘Sta eens op’, zegt Jezus",
+        "type_match": "Schriftlezing",
+        "karakter": "Blijmoedig",
+        "toelichting": "Jezus die de weg wijst en oproept tot actie, passend bij de Bergrede.",
+        "suggestie_gebruik": "Kinderlied of Uitzending"
+      },
+      {
+        "nummer": "481",
+        "titel": "Zou ik niet van harte zingen",
+        "type_match": "Conceptueel",
+        "karakter": "Loflied",
+        "toelichting": "Dankbaarheid voor Gods woord en Geest die ons leiden.",
+        "suggestie_gebruik": "Intocht"
+      },
+      {
+        "nummer": "451",
+        "titel": "Leer ons uit geloof te leven",
+        "type_match": "Conceptueel",
+        "karakter": "Onderwijzend",
+        "toelichting": "De wet van Christus: leven uit geloof, hoop en liefde. Integriteit in praktijk.",
+        "suggestie_gebruik": "Na de wetlezing"
+      },
+      {
+        "nummer": "271",
+        "titel": "Wie de Heiland liefheeft",
+        "type_match": "Thematisch",
+        "karakter": "Navolging",
+        "toelichting": "Liefde voor Jezus uit zich in het doen van Zijn wil (Matteüs 5).",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "289",
+        "titel": "Wij willen deze dag U wijden",
+        "type_match": "Conceptueel",
+        "karakter": "Toewijding",
+        "toelichting": "De keuze voor God aan het begin van de week (Sirach).",
+        "suggestie_gebruik": "Ochtendlied/Opening"
+      },
+      {
+        "nummer": "377",
+        "titel": "Gezalfde, Christus, hoge Naam",
+        "type_match": "Conceptueel",
+        "karakter": "Leervast",
+        "toelichting": "Christus als de grote Leraar die de wet vervult en uitlegt.",
+        "suggestie_gebruik": "Voor de preek"
+      },
+      {
+        "nummer": "450",
+        "titel": "Heer, uw wet is goed en heilig",
+        "type_match": "Schriftlezing",
+        "karakter": "Eerbiedig",
+        "toelichting": "Een directe lofprijzing op de wet als spiegel voor het hart.",
+        "suggestie_gebruik": "Na de lezing van de Tien Geboden"
+      },
+      {
+        "nummer": "119",
+        "titel": "Welzalig wie de rechte wegen gaan (Psalm)",
+        "type_match": "Schriftlezing",
+        "karakter": "Psalmodisch",
+        "toelichting": "De volledige rijkdom van Psalm 119 in de klassieke berijming.",
+        "suggestie_gebruik": "Psalm van de zondag"
+      }
+    ]
   },
   "08c_commentaries": {
     "exegese_eerste_lezing": {
@@ -3902,37 +4237,6 @@
         "translation": "NB"
       },
       {
-        "book": "DEU",
-        "chapter": 30,
-        "verses": [
-          {
-            "verse": 15,
-            "text": "Zie, gegeven heb ik heden aan je aanschijn\nhet leven en het goede,-\nde dood en het kwade,"
-          },
-          {
-            "verse": 16,
-            "text": "nu ik je gebied\nvandaag\nom lief te hebben\nde Ene , je God, door te wandelen in zijn wegen,\nen te bewaken zijn geboden, zijn inzettingen en zijn rechtsregels;\nleven zul je dan en talrijk worden,\nzegenen zal jou de Ene , je God,\nin het land\nwaar jij komt om het te beërven."
-          },
-          {
-            "verse": 17,
-            "text": "Maar als je hart zich afwendt en je niet hoort,\nje je laat meeslepen\nen je buigen zult voor ándere goden en die zult dienen,"
-          },
-          {
-            "verse": 18,
-            "text": "dan heb ik u heden gemeld\ndat ge verloren en teloor zult gaan;\nge zult geen dagen verlengen op de – rode – grond\nwaarvoor je nu de Jordaan oversteekt\nom daar te komen, om haar te beërven."
-          },
-          {
-            "verse": 19,
-            "text": "Ik laat heden tegen u getuigen\nde hemelen en de aarde;\nhet leven en de dood heb ik gegeven aan uw aanschijn,\nde zegen en de verwensing;\nkies dan het leven,\nopdat je leeft, jij en je zaad,"
-          },
-          {
-            "verse": 20,
-            "text": "door lief te hebben de Ene , je God,\ndoor te horen naar zijn stem en hem aan te hangen;\nwant hij is je leven en de lengte van je dagen\nom te zetelen op de – rode – grond\nwelke de Ene aan je vaderen, aan Abraham, aan Isaak en aan Jakob heeft gezworen\nhun te geven."
-          }
-        ],
-        "translation": "NB"
-      },
-      {
         "book": "MAT",
         "chapter": 5,
         "verses": [
@@ -4019,6 +4323,110 @@
           {
             "verse": 37,
             "text": "maar uw spreken moet ‘ja, já’ zijn\nen ‘nee, néé’;\nwat overvloediger is dan dat\nis uit den boze!"
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "MAT",
+        "chapter": 5,
+        "verses": [
+          {
+            "verse": 20,
+            "text": "want ik zeg u\ndat als uw gerechtigheid\nniet overvloedig is,\nmeer dan die van\nde schriftgeleerden en Farizeeërs,\ngij echt niet binnenkomt\nin het koninkrijk der hemelen!"
+          },
+          {
+            "verse": 21,
+            "text": "Ge hebt gehoord dat\ntot die van het begin is gesproken:\nje zult niet moorden (Ex. 20,13) ;\nal wie moordt, zal worden onderworpen\naan het oordeel!-"
+          },
+          {
+            "verse": 22,
+            "text": "maar ik zeg u dat\nal wie toornt tegen zijn broeder\nzal worden onderworpen\naan het oordeel,\nen al wie tot zijn broeder zegt\nraka ,- leeghoofd,\nzal worden onderworpen aan het sanhedrin ,-\nde zittende raad;\nen al wie zegt: gek!-\nzal worden onderworpen aan\nde gehenna van het vuur;"
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "MAT",
+        "chapter": 5,
+        "verses": [
+          {
+            "verse": 27,
+            "text": "Ge hebt gehoord dat gesproken is:\nje zult geen overspel begaan (Ex. 20,14) !-"
+          },
+          {
+            "verse": 28,
+            "text": "maar ík zeg u\ndat ieder die een vrouw aankijkt\nen haar begeert\nhaar reeds overspelig ingepikt heeft\nin zijn hart;"
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "MAT",
+        "chapter": 5,
+        "verses": [
+          {
+            "verse": 33,
+            "text": "Weer: ge hebt gehoord\ndat tot die-van-het-begin is gesproken:\nje zult geen meineed plegen (Lev. 19,12) ,\nmaar overeenkomstig je eden afgeven\naan de Heer (Deut. 23,22) !-"
+          },
+          {
+            "verse": 34,
+            "text": "maar ik zeg u:\nzweert helemaal niet (Deut. 23,23) ,\nniet bij de hemel,\nomdat die Gods troon is,"
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "MAT",
+        "chapter": 5,
+        "verses": [
+          {
+            "verse": 37,
+            "text": "maar uw spreken moet ‘ja, já’ zijn\nen ‘nee, néé’;\nwat overvloediger is dan dat\nis uit den boze!"
+          },
+          {
+            "verse": 38,
+            "text": "Ge hebt gehoord dat is uitgesproken:\neen oog voor een oog\nen een tand voor een tand (Ex. 21,24) !-"
+          },
+          {
+            "verse": 39,
+            "text": "maar ik zeg u:\nbiedt aan de boosdoener geen weerstand!-\nnee, wie jou slaat op je rechterwang,\nkeer hem ook de andere toe;"
+          },
+          {
+            "verse": 40,
+            "text": "en aan wie met jou naar de oordelaar wil\nen je onderkleed wil nemen,\nlaat hem ook de mantel;"
+          },
+          {
+            "verse": 41,
+            "text": "en wie jou zal dwingen\ntot één mijl,\nga er twee met hem;"
+          },
+          {
+            "verse": 42,
+            "text": "en aan wie jou iets vraagt: geef het\nen wil iemand van jou lenen:\nkeer je niet af!"
+          },
+          {
+            "verse": 43,
+            "text": "Ge hebt gehoord dat is gesproken:\nliefhebben zul je je naaste (Lev. 19,18)\nen haten zul je je vijand!-"
+          },
+          {
+            "verse": 44,
+            "text": "maar ík zeg u:\nhebt uw vijanden lief\nen bidt voor wie u vervolgen!-"
+          },
+          {
+            "verse": 45,
+            "text": "opdat ge zonen-en-dochters wordt\nvan uw Vader in de hemelen,\nomdat hij zijn zon laat opgaan\nover bozen en goeden,\nen regent over\nrechtvaardigen en onrechtvaardigen,"
+          },
+          {
+            "verse": 46,
+            "text": "want als ge liefhebt\nwie ú liefhebben,\nwat is het loon dat ge hebt?-\ndoen ook de tollenaars\nniet hetzelfde?-"
+          },
+          {
+            "verse": 47,
+            "text": "en als ge alleen uw broeders\nhartelijk groet,\nwat voor overvloedigs doet ge?-\ndoen ook die uit de volkeren\nniet hetzelfde?-"
+          },
+          {
+            "verse": 48,
+            "text": "weest gij dus volmaakt (Deut. 18,13) ,\nzoals uw hemelse Vader volmaakt is!"
           }
         ],
         "translation": "NB"
@@ -4122,285 +4530,6 @@
           {
             "verse": 24,
             "text": "mijn raadslieden, dat zijn zij!\nDeleth. Adhæsit pavimento."
-          },
-          {
-            "verse": 25,
-            "text": "doe mij leven,\nnaar uw woord!"
-          },
-          {
-            "verse": 26,
-            "text": "wil mij uw inzettingen leren."
-          },
-          {
-            "verse": 27,
-            "text": "ik wil uw wonderdaden\nbepeinzen!"
-          },
-          {
-            "verse": 28,
-            "text": "doe mij opstaan,\nnaar uw woord!"
-          },
-          {
-            "verse": 29,
-            "text": "begenadig mij met uw Wet!"
-          },
-          {
-            "verse": 30,
-            "text": "uw rechtsregels hield ik mij voor."
-          },
-          {
-            "verse": 31,
-            "text": "Ene,\nmaak mij daarin niet beschaamd."
-          },
-          {
-            "verse": 32,
-            "text": "ja, gij maakt ruimte voor mijn hart!\nHe. Legem pone mihi."
-          },
-          {
-            "verse": 33,
-            "text": "die wil ik houden tot het einde."
-          },
-          {
-            "verse": 34,
-            "text": "haar met heel mijn hart bewaren."
-          },
-          {
-            "verse": 35,
-            "text": "want daarin heb ik behagen."
-          },
-          {
-            "verse": 36,
-            "text": "en niet naar eigen voordeel."
-          },
-          {
-            "verse": 37,
-            "text": "doe mij leven op uw weg."
-          },
-          {
-            "verse": 38,
-            "text": "aan allen\ndie u vrezen."
-          },
-          {
-            "verse": 39,
-            "text": "zo goed zijn mij uw regels."
-          },
-          {
-            "verse": 40,
-            "text": "laat in uw gerechtigheid mij leven!\nVav. Et veniat."
-          },
-          {
-            "verse": 41,
-            "text": "en uw redding,\ngelijk gij toezegt."
-          },
-          {
-            "verse": 42,
-            "text": "want ik weet mij veilig in uw woord."
-          },
-          {
-            "verse": 43,
-            "text": "ontneem mijn mond\nhet woord der waarheid\nniet al te zeer!"
-          },
-          {
-            "verse": 44,
-            "text": "voor eeuwig en altijd."
-          },
-          {
-            "verse": 45,
-            "text": "nu ik uw ordeningen\nben gaan zoeken."
-          },
-          {
-            "verse": 46,
-            "text": "en niet word ik beschaamd."
-          },
-          {
-            "verse": 47,
-            "text": "’n F estijn zijn mij uw geboden, ✡\nmijn liefde zijn zij geworden."
-          },
-          {
-            "verse": 48,
-            "text": "’t F irmament van uw geboden -die mijn liefde zijn geworden-\ndaarheen hef mijn handpalmen ik op,- ✡\nuw inzettingen blijf ik overpeinzen!\nZai. Memor esto."
-          },
-          {
-            "verse": 49,
-            "text": "waarmee ge\nbij mij verwachting hebt gewekt."
-          },
-          {
-            "verse": 50,
-            "text": "ja, uw toezegging heeft mij doen herleven."
-          },
-          {
-            "verse": 51,
-            "text": "ben ik niet afgeweken\nvan uw Wet."
-          },
-          {
-            "verse": 52,
-            "text": "en zo werd ik getroost!"
-          },
-          {
-            "verse": 53,
-            "text": "die loslieten\nuw Wet!"
-          },
-          {
-            "verse": 54,
-            "text": "waar ik in mijn omzwervingen ook huisde."
-          },
-          {
-            "verse": 55,
-            "text": "uw onderricht\nbleef ik bewaken!"
-          },
-          {
-            "verse": 56,
-            "text": "dat ik uw verordeningen heb onderhouden!\nHeth. Portio mea."
-          },
-          {
-            "verse": 57,
-            "text": "uw woorden te bewaken."
-          },
-          {
-            "verse": 58,
-            "text": "wees mij genadig,\nzoals gij hebt gezegd!"
-          },
-          {
-            "verse": 59,
-            "text": "ik keer mijn voeten\nnaar uw overeenkomsten."
-          },
-          {
-            "verse": 60,
-            "text": "om uw geboden\nte bewaken."
-          },
-          {
-            "verse": 61,
-            "text": "uw onderricht\nwas ik niet vergeten."
-          },
-          {
-            "verse": 62,
-            "text": "sta ik op om u te danken ✡\nvoor\nde rechtsregels van uw gerechtigheid."
-          },
-          {
-            "verse": 63,
-            "text": "van wie uw verordeningen\nbewaken."
-          },
-          {
-            "verse": 64,
-            "text": "uw inzettingen: wil mij die leren!\nTeth. Bonitatem fecisti."
-          },
-          {
-            "verse": 65,
-            "text": "’t I s het goede dat gij hebt gedaan aan uw dienaar, ✡\no Ene,\nnaar uw woord."
-          },
-          {
-            "verse": 66,
-            "text": "want in uw geboden heb ik vertrouwen!"
-          },
-          {
-            "verse": 67,
-            "text": "en nu\nzal ik bewaken wat gij zegt."
-          }
-        ],
-        "translation": "NB"
-      },
-      {
-        "book": "PSA",
-        "chapter": 31,
-        "verses": [
-          {
-            "verse": 1,
-            "text": "Psalm 31 (30) • In te, Domine, speravi. (Voor de koorleider;\neen musiceerstuk, v. David.)"
-          },
-          {
-            "verse": 2,
-            "text": "Bij u, Ene, vond ik toevlucht, laat mij niet worden beschaamd voor eeuwig!- ✡\ngij zijt rechtvaardig, doe mij ontkomen!"
-          },
-          {
-            "verse": 3,
-            "text": "Neig tot mij uw oor, kom haastig, ontruk mij, wees mij een versterking rotsvast, een huis als een bastion ✡\nom mij te redden!"
-          },
-          {
-            "verse": 4,
-            "text": "Want mijn steenrots en mijn bastion zijt gij, ✡\nomwille van uw naam,\nwil mij geleiden, voer mij voort!"
-          },
-          {
-            "verse": 5,
-            "text": "Leid mij uit het net\ndat ze in het geheim voor mij spanden, ✡\nwant mijn versterking, dat zijt gij!"
-          },
-          {
-            "verse": 6,
-            "text": "In uw hand beveel ik mijn geest, Ene, gij hebt mij verlost, ✡\ntrouwe God!"
-          },
-          {
-            "verse": 7,
-            "text": "Gij hebt gehaat\nwie waken bij nevels van niets, ✡\nen ik,\nik wist bij de Ene mij veilig."
-          },
-          {
-            "verse": 8,
-            "text": "Ik zal juichen en verheugd zijn\nom uw vriendschap, gij die mijn ellende hebt gezien, ✡\ndie hebt willen weten\nvan de benauwingen van mijn ziel!"
-          },
-          {
-            "verse": 9,
-            "text": "Gij liet mij niet sluiten in de hand van een vijand, ✡\nhebt mijn voeten gesteld in de ruimte."
-          },
-          {
-            "verse": 10,
-            "text": "Begenadig mij, Ene, want het is mij benauwd, verdoft van verdriet is mijn oog, ✡\nmijn ziel, mijn schoot."
-          },
-          {
-            "verse": 11,
-            "text": "Ja, in kommer loopt af\nmijn leven, mijn jaren gaan om in zuchten,- vervallen van ellende is mijn kracht, ✡\nmijn beenderen zijn verdoft."
-          },
-          {
-            "verse": 12,
-            "text": "Door al mijn benauwers ben ik geworden een smaad,\nvoor wie bij mij wonen allermeest; een schrik voor mijn bekenden, toen ze me zagen op de straat,- ✡\ndeinsden ze voor mij terug."
-          },
-          {
-            "verse": 13,
-            "text": "Ik ben vergeten als een dode, uit het hart, ✡\nik ben geworden\nals een ding dat men verloor."
-          },
-          {
-            "verse": 14,
-            "text": "Ja, ik hoorde wel het praten van velen,\nde dreiging van rondom:\nbij eensgezinde raadslag over mij ✡\nzonnen zij op het nemen van mijn ziel."
-          },
-          {
-            "verse": 15,
-            "text": "Maar ik: bij u, Ene, weet ik mij veilig, ✡\nik kan zeggen: ‘mijn God zijt gij!’"
-          },
-          {
-            "verse": 16,
-            "text": "In uw hand zijn mijn tijden,- ✡\nontruk mij\naan de hand van mijn vijanden\nen aan mijn achtervolgers!"
-          },
-          {
-            "verse": 17,
-            "text": "Laat lichten over uw dienaar uw aanschijn, ✡\nbreng redding, gij zijt mijn vriend!"
-          },
-          {
-            "verse": 18,
-            "text": "Ene,\nmaak mij niet te schande,\nu toch riep ik aan, ✡\nschande treffe booswichten,\ndat ze verstommen in de hel!"
-          },
-          {
-            "verse": 19,
-            "text": "Dat zwijgen\nde lippen vol leugen, het verwaten woord\ntegen wie in zijn recht staat, ✡\nzo hoogmoedig, zo vol spot."
-          },
-          {
-            "verse": 20,
-            "text": "Hoe groot is het goed\ndat gij hebt weggelegd voor wie u vrezen,\nhebt bereid voor wie toevlucht zoeken bij u, ✡\ntegenover\nAdams zonen!"
-          },
-          {
-            "verse": 21,
-            "text": "Gij verbergt hen in het verborgene van uw aanschijn\nvoor de stokerijen van een man,\nlaat hen schuilen in een loofhut ✡\nvoor het twistgeding van tongen."
-          },
-          {
-            "verse": 22,
-            "text": "Gezegend de Ene!- ✡\nwant zijn vriendschap was mij een wonder\nin een benarde stad."
-          },
-          {
-            "verse": 23,
-            "text": "Ik, ik heb in mijn verwarring wel gezegd:\n‘ik ben afgesneden van tegenover uw ogen!’- maar echt,\nu hoorde de stem van mijn smeken om genade, ✡\ntoen ik tot u kreet om hulp!"
-          },
-          {
-            "verse": 24,
-            "text": "Hebt lief de Ene,\nal zijn vrienden!- wie getrouw zijn hoedt de Ene,- ✡\nmaar hij laat ruimschoots betalen\nwie zich uitviert in hoogmoed."
-          },
-          {
-            "verse": 25,
-            "text": "Weest sterk, uw hart zij onversaagd, ✡\ngij allen die wacht\nop de Ene!"
           }
         ],
         "translation": "NB"
@@ -4430,37 +4559,6 @@
           {
             "verse": 10,
             "text": "Aan ons heeft God dit geopenbaard, door de Geest, want de Geest doorgrondt alles, ook de diepten van God."
-          }
-        ],
-        "translation": "NBV21"
-      },
-      {
-        "book": "DEU",
-        "chapter": 30,
-        "verses": [
-          {
-            "verse": 15,
-            "text": "Besef goed, vandaag stel ik u voor de keuze tussen voorspoed en tegenspoed, tussen leven en dood."
-          },
-          {
-            "verse": 16,
-            "text": "Wanneer u zich houdt aan de geboden van de HEER, uw God, zoals ik ze u vandaag heb gegeven, door Hem lief te hebben, door de weg te volgen die Hij wijst, en zijn geboden, wetten en regels in acht te nemen, dan zult u in leven blijven en in aantal toenemen, en dan zal de HEER, uw God, u zegenen in het land dat u in bezit zult nemen."
-          },
-          {
-            "verse": 17,
-            "text": "Maar als u Hem de rug toekeert en weigert te luisteren, als u zich ertoe laat verleiden neer te knielen voor andere goden en die te vereren,"
-          },
-          {
-            "verse": 18,
-            "text": "dan zeg ik u op voorhand dat u te gronde zult gaan. Dan zal u aan de overkant van de Jordaan, in het land dat u in bezit zult nemen, geen lang leven beschoren zijn."
-          },
-          {
-            "verse": 19,
-            "text": "Ik roep vandaag hemel en aarde als getuigen op: u staat voor de keuze tussen leven en dood, tussen zegen en vloek. Kies voor het leven, voor uw eigen toekomst en die van uw nakomelingen,"
-          },
-          {
-            "verse": 20,
-            "text": "door de HEER, uw God, lief te hebben, Hem te gehoorzamen en Hem toegedaan te blijven. Dan zult u lang blijven wonen in het land dat Hij uw voorouders Abraham, Isaak en Jakob onder ede heeft beloofd.’"
           }
         ],
         "translation": "NBV21"
@@ -4549,6 +4647,66 @@
             "verse": 36,
             "text": "zweer evenmin bij je eigen hoofd, want je kunt nog niet één van je haren wit of zwart maken."
           },
+          {
+            "verse": 37,
+            "text": "Laat jullie ja ja zijn, en jullie nee nee; wat je daaraan toevoegt komt voort uit het kwaad."
+          }
+        ],
+        "translation": "NBV21"
+      },
+      {
+        "book": "MAT",
+        "chapter": 5,
+        "verses": [
+          {
+            "verse": 20,
+            "text": "Want Ik zeg jullie: als jullie gerechtigheid niet groter is dan die van de schriftgeleerden en de farizeeën, zullen jullie zeker het koninkrijk van de hemel niet binnengaan."
+          },
+          {
+            "verse": 21,
+            "text": "Jullie hebben gehoord dat destijds tegen het volk is gezegd: “Pleeg geen moord. Wie moordt, zal zich moeten verantwoorden voor het gerecht.”"
+          },
+          {
+            "verse": 22,
+            "text": "Dit zeg Ik daarover: ieder die in woede tegen zijn broeder of zuster tekeergaat, zal zich moeten verantwoorden voor het gerecht. Wie hen voor nietsnut uitmaakt, zal zich moeten verantwoorden voor het Sanhedrin. Wie “Dwaas!” zegt, zal voor het vuur van de Gehenna komen te staan."
+          }
+        ],
+        "translation": "NBV21"
+      },
+      {
+        "book": "MAT",
+        "chapter": 5,
+        "verses": [
+          {
+            "verse": 27,
+            "text": "Jullie hebben gehoord dat gezegd werd: “Pleeg geen overspel.”"
+          },
+          {
+            "verse": 28,
+            "text": "Dit zeg Ik daarover: iedereen die naar een vrouw kijkt en haar begeert, heeft in zijn hart al overspel met haar gepleegd."
+          }
+        ],
+        "translation": "NBV21"
+      },
+      {
+        "book": "MAT",
+        "chapter": 5,
+        "verses": [
+          {
+            "verse": 33,
+            "text": "Jullie hebben ook gehoord dat destijds tegen het volk werd gezegd: “Leg geen valse eed af en houd je aan de eden die je voor de Heer gezworen hebt.”"
+          },
+          {
+            "verse": 34,
+            "text": "Dit zeg Ik daarover: zweer helemaal niet, noch bij de hemel, want dat is de troon van God,"
+          }
+        ],
+        "translation": "NBV21"
+      },
+      {
+        "book": "MAT",
+        "chapter": 5,
+        "verses": [
           {
             "verse": 37,
             "text": "Laat jullie ja ja zijn, en jullie nee nee; wat je daaraan toevoegt komt voort uit het kwaad."
@@ -4655,614 +4813,6 @@
           {
             "verse": 24,
             "text": "Uw richtlijnen verheugen mij, ze geven mij goede raad. *"
-          },
-          {
-            "verse": 25,
-            "text": "Mijn ziel ligt neergedrukt in het stof, laat mij leven zoals U hebt beloofd."
-          },
-          {
-            "verse": 26,
-            "text": "Leg ik U mijn wegen voor, dan antwoordt U. Onderwijs mij in uw wetten."
-          },
-          {
-            "verse": 27,
-            "text": "Leer mij de weg van uw regels begrijpen, en ik zal uw wonderen overdenken."
-          },
-          {
-            "verse": 28,
-            "text": "Mijn ziel schreit van verdriet, richt mij op zoals U hebt beloofd."
-          },
-          {
-            "verse": 29,
-            "text": "Houd mij ver van bedrieglijke wegen en leer mij genadig uw wet."
-          },
-          {
-            "verse": 30,
-            "text": "Ik heb de betrouwbare weg gekozen, met uw voorschriften voor ogen."
-          },
-          {
-            "verse": 31,
-            "text": "Ik druk uw richtlijnen aan mijn hart, HEER, maak mij niet beschaamd."
-          },
-          {
-            "verse": 32,
-            "text": "Ik zal voortgaan op de weg van uw geboden, want U geeft mij ruimte. *"
-          },
-          {
-            "verse": 33,
-            "text": "Wijs mij, HEER, de weg van uw wetten, dan volg ik die tot het einde toe."
-          },
-          {
-            "verse": 34,
-            "text": "Geef mij inzicht, en ik zal uw wet volgen, hem onderhouden met heel mijn hart."
-          },
-          {
-            "verse": 35,
-            "text": "Laat mij het pad gaan van uw geboden, dat is mij het liefst."
-          },
-          {
-            "verse": 36,
-            "text": "Neig mijn hart naar uw richtlijnen en niet naar winstbejag."
-          },
-          {
-            "verse": 37,
-            "text": "Houd mijn ogen af van wat leeg is, laat mij uw wegen gaan, en leven."
-          },
-          {
-            "verse": 38,
-            "text": "Kom uw belofte aan uw dienaar na, dan zal ik van ontzag voor U vervuld zijn."
-          },
-          {
-            "verse": 39,
-            "text": "Houd spot van mij af: die beangstigt mij, maar uw voorschriften maken mij gelukkig."
-          },
-          {
-            "verse": 40,
-            "text": "Hoe verlang ik naar uw regels, doe mij leven in uw gerechtigheid. *"
-          },
-          {
-            "verse": 41,
-            "text": "Laat mij, HEER, uw trouw ervaren, red mij zoals U hebt beloofd."
-          },
-          {
-            "verse": 42,
-            "text": "Dan kan ik antwoorden wie mij bespot, want ik vertrouw op uw woord."
-          },
-          {
-            "verse": 43,
-            "text": "Neem de waarheid nooit weg uit mijn mond, in uw voorschriften stel ik mijn hoop."
-          },
-          {
-            "verse": 44,
-            "text": "Ik zal mij houden aan uw wet, voor eeuwig en altijd."
-          },
-          {
-            "verse": 45,
-            "text": "Laat mij voortgaan op een ruime weg, want steeds zoek ik uw regels."
-          },
-          {
-            "verse": 46,
-            "text": "Dan kan ik zelfs voor koningen getuigen van uw richtlijnen, zonder schaamte."
-          },
-          {
-            "verse": 47,
-            "text": "Ik verheug mij in uw geboden, ik heb ze lief."
-          },
-          {
-            "verse": 48,
-            "text": "Ik hef mijn handen op naar uw geboden, ik heb ze lief. Uw wetten blijf ik overdenken. *"
-          },
-          {
-            "verse": 49,
-            "text": "Denk aan het woord, tot uw dienaar gesproken, waarmee U mij hoop hebt gegeven."
-          },
-          {
-            "verse": 50,
-            "text": "Dit is de troost in mijn ellende: dat uw belofte mij doet leven."
-          },
-          {
-            "verse": 51,
-            "text": "Al lachen de hoogmoedigen mij ook uit, ik wijk niet af van uw wet."
-          },
-          {
-            "verse": 52,
-            "text": "Ik denk aan uw eeuwige voorschriften, HEER, daarin vind ik troost."
-          },
-          {
-            "verse": 53,
-            "text": "Ik ben ontzet over de zondaars, die uw wet verlaten."
-          },
-          {
-            "verse": 54,
-            "text": "Uw wetten zijn voor mij als liederen in het huis waar ik als vreemdeling woon."
-          },
-          {
-            "verse": 55,
-            "text": "Zelfs in de nacht denk ik aan uw naam, HEER, en houd ik mij aan uw wet."
-          },
-          {
-            "verse": 56,
-            "text": "Dit is mij gegeven: dat ik uw regels volg. *"
-          },
-          {
-            "verse": 57,
-            "text": "HEER, mijn enig bezit, ik heb beloofd mij te houden aan uw woorden."
-          },
-          {
-            "verse": 58,
-            "text": "Met heel mijn hart zoek ik uw gunst, wees mij genadig zoals U hebt beloofd."
-          },
-          {
-            "verse": 59,
-            "text": "Ik heb nagedacht over de weg die ik ga en volg weer het spoor van uw richtlijnen,"
-          },
-          {
-            "verse": 60,
-            "text": "ik haast mij, en aarzel niet mij te houden aan uw geboden."
-          },
-          {
-            "verse": 61,
-            "text": "Al zetten rondom mij zondaars hun strikken, uw wet vergeet ik niet."
-          },
-          {
-            "verse": 62,
-            "text": "Midden in de nacht sta ik op en loof U om uw rechtvaardige voorschriften."
-          },
-          {
-            "verse": 63,
-            "text": "Ik ben een vriend van allen die U vrezen en zich houden aan uw regels."
-          },
-          {
-            "verse": 64,
-            "text": "De aarde is vol van uw trouw, HEER, onderwijs mij in uw wetten. *"
-          },
-          {
-            "verse": 65,
-            "text": "U bent goed geweest voor uw dienaar, HEER, zoals U hebt beloofd."
-          },
-          {
-            "verse": 66,
-            "text": "Leer mij goed oordelen en onderscheiden, ik heb vertrouwen in uw geboden."
-          },
-          {
-            "verse": 67,
-            "text": "Voor ik vernederd werd, tastte ik mis, nu houd ik mij aan uw woord."
-          },
-          {
-            "verse": 68,
-            "text": "U bent goed en U doet goed, onderwijs mij in uw wetten."
-          },
-          {
-            "verse": 69,
-            "text": "Hoogmoedigen beschuldigen mij vals, maar ik volg uw regels, met heel mijn hart."
-          },
-          {
-            "verse": 70,
-            "text": "Hun hart is dwaas en gevoelloos, maar ik verheug mij in uw wet."
-          },
-          {
-            "verse": 71,
-            "text": "Het was goed voor mij dat ik vernederd werd, zo leerde ik uw wetten kennen."
-          },
-          {
-            "verse": 72,
-            "text": "Goed voor mij is de wet uit uw mond, beter dan een schat aan goud en zilver. *"
-          },
-          {
-            "verse": 73,
-            "text": "Uw handen hebben mij gemaakt en gevormd, schenk mij inzicht, dan leer ik uw geboden."
-          },
-          {
-            "verse": 74,
-            "text": "Wie U vrezen zien mij met blijdschap, in uw woord heb ik mijn hoop gesteld."
-          },
-          {
-            "verse": 75,
-            "text": "Ik weet het, HEER, uw voorschriften zijn rechtvaardig, en U vernederde mij in uw trouw."
-          },
-          {
-            "verse": 76,
-            "text": "Moge uw liefde mij vertroosten, zoals U aan uw dienaar hebt beloofd."
-          },
-          {
-            "verse": 77,
-            "text": "Heb mededogen met mij, en ik zal leven, uw wet verheugt mij."
-          },
-          {
-            "verse": 78,
-            "text": "Laat de hoogmoedigen beschaamd staan, zij doen mij kwaad met hun leugens, maar ik overdenk uw regels."
-          },
-          {
-            "verse": 79,
-            "text": "Laat mijn vriend zijn wie U vreest en uw richtlijnen kent."
-          },
-          {
-            "verse": 80,
-            "text": "Laat mij volmaakt naar uw wetten leven, dan zal ik niet beschaamd staan. *"
-          },
-          {
-            "verse": 81,
-            "text": "Mijn ziel smacht naar de redding die U brengt, in uw woord heb ik mijn hoop gesteld."
-          },
-          {
-            "verse": 82,
-            "text": "Mijn ogen smachten naar uw belofte, wanneer zult U mij troosten?"
-          },
-          {
-            "verse": 83,
-            "text": "Al teer ik weg als een leren zak in de rook, uw wetten vergeet ik niet."
-          },
-          {
-            "verse": 84,
-            "text": "Hoeveel dagen nog telt het leven van uw dienaar, wanneer zult U mijn vervolgers berechten?"
-          },
-          {
-            "verse": 85,
-            "text": "Ze hebben voor mij een kuil gegraven, de hoogmoedigen die uw wet niet erkennen."
-          },
-          {
-            "verse": 86,
-            "text": "Elk van uw geboden is betrouwbaar, maar leugens achtervolgen mij – kom mij te hulp!"
-          },
-          {
-            "verse": 87,
-            "text": "Bijna werd ik van de aarde weggevaagd, toch heb ik uw regels niet verlaten."
-          },
-          {
-            "verse": 88,
-            "text": "Blijf mij trouw, laat mij leven, dan houd ik mij aan de richtlijn uit uw mond. *"
-          },
-          {
-            "verse": 89,
-            "text": "HEER, voor eeuwig staat uw woord in de hemel vast."
-          },
-          {
-            "verse": 90,
-            "text": "Uw trouw duurt van geslacht op geslacht, U hebt de aarde gegrondvest en zij houdt stand."
-          },
-          {
-            "verse": 91,
-            "text": "Naar uw voorschriften blijven hemel en aarde bestaan, alles is aan U onderworpen."
-          },
-          {
-            "verse": 92,
-            "text": "Verheugde ik mij niet in uw wet, ik zou vergaan van ellende."
-          },
-          {
-            "verse": 93,
-            "text": "In eeuwigheid zal ik uw regels niet vergeten, daardoor houdt U mij in leven."
-          },
-          {
-            "verse": 94,
-            "text": "Ik ben van U, red mij, want steeds zoek ik uw regels."
-          },
-          {
-            "verse": 95,
-            "text": "Zondaars zijn uit op mijn ondergang, maar uw richtlijnen geven mij inzicht."
-          },
-          {
-            "verse": 96,
-            "text": "Aan alles, hoe volmaakt ook, zag ik een einde, maar uw gebod is grenzeloos ruim. *"
-          },
-          {
-            "verse": 97,
-            "text": "Hoe lief heb ik uw wet, heel de dag is hij in mijn gedachten."
-          },
-          {
-            "verse": 98,
-            "text": "Uw gebod maakt mij wijzer dan mijn vijanden, ik ben er eeuwig mee verbonden."
-          },
-          {
-            "verse": 99,
-            "text": "Ik ben verstandiger dan al mijn leermeesters, want ik overdenk uw richtlijnen,"
-          },
-          {
-            "verse": 100,
-            "text": "ik heb meer inzicht dan ouderen, want uw regels volg ik op."
-          },
-          {
-            "verse": 101,
-            "text": "Mijn voeten mijden elk pad dat slecht is, zo kan ik mij houden aan uw woord."
-          },
-          {
-            "verse": 102,
-            "text": "Van uw voorschriften wijk ik niet af, U bent het die mij onderricht."
-          },
-          {
-            "verse": 103,
-            "text": "Hoe zoet zijn uw woorden voor mijn gehemelte, zoeter dan honing voor mijn mond."
-          },
-          {
-            "verse": 104,
-            "text": "Uw regels geven mij inzicht, daarom haat ik elk bedrieglijk pad. *"
-          },
-          {
-            "verse": 105,
-            "text": "Uw woord is een lamp voor mijn voet, een licht op mijn pad."
-          },
-          {
-            "verse": 106,
-            "text": "Ik zweer mij te houden aan uw rechtvaardige voorschriften en ik zal mijn eed gestand doen."
-          },
-          {
-            "verse": 107,
-            "text": "Ik ben zo diep vernederd, houd mij in leven, HEER, zoals U hebt beloofd."
-          },
-          {
-            "verse": 108,
-            "text": "Aanvaard, HEER, de lof uit mijn mond en onderwijs mij in uw voorschriften."
-          },
-          {
-            "verse": 109,
-            "text": "Mijn leven is voortdurend in gevaar, maar uw wet vergeet ik niet."
-          },
-          {
-            "verse": 110,
-            "text": "Zondaars hebben voor mij een net gespannen, maar ik wijk niet af van uw regels."
-          },
-          {
-            "verse": 111,
-            "text": "Uw richtlijnen zijn mijn eeuwig bezit, ze zijn de vreugde van mijn hart."
-          },
-          {
-            "verse": 112,
-            "text": "Met hart en ziel ben ik bereid uw wetten uit te voeren, eeuwig, tot het einde toe. *"
-          },
-          {
-            "verse": 113,
-            "text": "Huichelaars haat ik, maar uw wet heb ik lief."
-          },
-          {
-            "verse": 114,
-            "text": "Bij U schuil ik, U bent mijn schild, in uw woord stel ik mijn hoop."
-          },
-          {
-            "verse": 115,
-            "text": "Zondaars, ga weg van mij! Ik wil de geboden volgen van mijn God."
-          },
-          {
-            "verse": 116,
-            "text": "Steun mij zoals U hebt beloofd, en ik zal leven, beschaam mijn verwachting niet."
-          },
-          {
-            "verse": 117,
-            "text": "Sta mij bij, want U bent mijn redding, altijd houd ik uw wetten voor ogen."
-          },
-          {
-            "verse": 118,
-            "text": "U verwerpt wie afdwalen van uw wetten, hun bedrog loopt uit op niets."
-          },
-          {
-            "verse": 119,
-            "text": "Als schuim veracht U wie kwaad doen op aarde, daarom heb ik uw richtlijnen lief."
-          },
-          {
-            "verse": 120,
-            "text": "Ik huiver van angst voor U, uw vonnissen wekken mijn vrees. *"
-          },
-          {
-            "verse": 121,
-            "text": "Ik heb altijd gedaan wat recht is en wettig, geef mij niet over aan mijn onderdrukkers."
-          },
-          {
-            "verse": 122,
-            "text": "Waarborg het geluk van uw dienaar, sta niet toe dat hoogmoedigen mij verdrukken."
-          },
-          {
-            "verse": 123,
-            "text": "Mijn ogen smachten naar de redding die U brengt, naar de gerechtigheid die U hebt beloofd."
-          },
-          {
-            "verse": 124,
-            "text": "Toon uw dienaar uw genade en trouw, onderwijs mij in uw wetten."
-          },
-          {
-            "verse": 125,
-            "text": "Ik ben uw dienaar, geef mij inzicht, dan leer ik uw richtlijnen kennen."
-          },
-          {
-            "verse": 126,
-            "text": "Het is tijd om in te grijpen, HEER, overal wordt uw wet geschonden."
-          },
-          {
-            "verse": 127,
-            "text": "Maar ik, ik heb uw geboden lief, meer dan goud, dan zuiver goud."
-          },
-          {
-            "verse": 128,
-            "text": "Daarom richt ik mij naar al uw regels en haat ik elk bedrieglijk pad. *"
-          },
-          {
-            "verse": 129,
-            "text": "Uw richtlijnen zijn voor mij een wonder, daarom volg ik ze met heel mijn hart."
-          },
-          {
-            "verse": 130,
-            "text": "Als uw woorden opengaan, is er licht en inzicht voor de eenvoudigen."
-          },
-          {
-            "verse": 131,
-            "text": "Dorstig opent zich mijn mond, zo hunker ik naar uw geboden."
-          },
-          {
-            "verse": 132,
-            "text": "Keer u tot mij en wees mij genadig, dat is het voorrecht van wie uw naam bemint."
-          },
-          {
-            "verse": 133,
-            "text": "Stuur mijn gangen zoals U hebt beloofd, lever mij niet uit aan de macht van het kwaad,"
-          },
-          {
-            "verse": 134,
-            "text": "verlos mij van de onderdrukking van mensen, en ik zal mij houden aan uw regels."
-          },
-          {
-            "verse": 135,
-            "text": "Laat het licht van uw gelaat over mij schijnen, onderwijs uw dienaar in uw wetten."
-          },
-          {
-            "verse": 136,
-            "text": "Beken van tranen vloeien uit mijn ogen, want uw wet wordt niet onderhouden. *"
-          },
-          {
-            "verse": 137,
-            "text": "U bent rechtvaardig, HEER, elk van uw voorschriften is juist."
-          },
-          {
-            "verse": 138,
-            "text": "De richtlijnen door U uitgevaardigd zijn eerlijk en volkomen betrouwbaar."
-          },
-          {
-            "verse": 139,
-            "text": "Mijn hartstocht voor U verteert mij, mijn belagers zijn uw woorden vergeten."
-          },
-          {
-            "verse": 140,
-            "text": "Uw woord is volkomen zuiver, uw dienaar heeft het lief."
-          },
-          {
-            "verse": 141,
-            "text": "Al ben ik maar klein en niet in tel, ik ben uw regels niet vergeten."
-          },
-          {
-            "verse": 142,
-            "text": "Uw gerechtigheid is gerechtigheid voor eeuwig, uw wet berust op waarheid."
-          },
-          {
-            "verse": 143,
-            "text": "Al ben ik in nood en dreigt er gevaar, uw geboden verheugen mij."
-          },
-          {
-            "verse": 144,
-            "text": "Uw richtlijnen zijn rechtvaardig tot in eeuwigheid, geef mij inzicht, en ik zal leven. *"
-          },
-          {
-            "verse": 145,
-            "text": "Ik roep met heel mijn hart, geef antwoord, HEER, ik wil uw wetten volgen."
-          },
-          {
-            "verse": 146,
-            "text": "Ik roep U aan, red mij, en ik zal mij houden aan uw richtlijnen."
-          },
-          {
-            "verse": 147,
-            "text": "Nog voor het morgenlicht roep ik om hulp, in uw woord stel ik mijn hoop."
-          },
-          {
-            "verse": 148,
-            "text": "In de uren van de nacht houd ik mijn ogen geopend en overdenk ik uw woord."
-          },
-          {
-            "verse": 149,
-            "text": "Luister goedgunstig naar mijn stem, houd mij in leven, HEER, U bent rechtvaardig."
-          },
-          {
-            "verse": 150,
-            "text": "Mijn sluwe vervolgers zijn nabij, ver zijn ze afgeweken van uw wet."
-          },
-          {
-            "verse": 151,
-            "text": "U bent nabij, HEER, al uw geboden zijn betrouwbaar."
-          },
-          {
-            "verse": 152,
-            "text": "Van uw richtlijnen weet ik sinds lang: U hebt ze voor eeuwig vastgesteld. *"
-          },
-          {
-            "verse": 153,
-            "text": "Zie mijn ellende en red mij, uw wet vergeet ik niet."
-          },
-          {
-            "verse": 154,
-            "text": "Strijd voor mij en verlos mij, houd mij in leven zoals U hebt beloofd."
-          },
-          {
-            "verse": 155,
-            "text": "Redding blijft ver van de zondaars, want uw wetten zoeken ze niet."
-          },
-          {
-            "verse": 156,
-            "text": "Groot is uw mededogen, HEER, houd mij in leven, U bent rechtvaardig."
-          },
-          {
-            "verse": 157,
-            "text": "Met velen zijn mijn vervolgers en belagers, toch wijk ik van uw richtlijnen niet af."
-          },
-          {
-            "verse": 158,
-            "text": "Ik zie de afvalligen en weerzin vervult mij, want zij houden zich niet aan uw woord."
-          },
-          {
-            "verse": 159,
-            "text": "Zie hoe ik uw regels liefheb, HEER, laat mij leven, U bent trouw."
-          },
-          {
-            "verse": 160,
-            "text": "Uw woord is volkomen betrouwbaar, elk van uw voorschriften rechtvaardig en eeuwig. *"
-          },
-          {
-            "verse": 161,
-            "text": "Machtigen vervolgen mij zonder reden, maar alleen voor uw woorden huivert mijn hart."
-          },
-          {
-            "verse": 162,
-            "text": "Ik schep vreugde in uw belofte, als de vinder van een rijke buit."
-          },
-          {
-            "verse": 163,
-            "text": "Ik haat, ik verafschuw de leugen, maar uw wet heb ik lief."
-          },
-          {
-            "verse": 164,
-            "text": "Ik zing U dagelijks zevenmaal lof om uw rechtvaardige voorschriften."
-          },
-          {
-            "verse": 165,
-            "text": "Groot is de vrede voor wie uw wet beminnen, zij vinden geen hindernis op hun weg."
-          },
-          {
-            "verse": 166,
-            "text": "Ik verwacht dat U mij redt, HEER, uw geboden zal ik volbrengen."
-          },
-          {
-            "verse": 167,
-            "text": "Ik houd mij aan uw richtlijnen, mijn ziel heeft ze innig lief."
-          },
-          {
-            "verse": 168,
-            "text": "Ik houd mij aan uw regels en richtlijnen, al mijn wegen zijn U bekend. *"
-          },
-          {
-            "verse": 169,
-            "text": "Laat mijn hartenkreet U bereiken, HEER, geef mij inzicht zoals U hebt beloofd,"
-          },
-          {
-            "verse": 170,
-            "text": "laat mijn smeekbede tot U doordringen, bevrijd mij zoals U hebt toegezegd."
-          },
-          {
-            "verse": 171,
-            "text": "Laten mijn lippen overvloeien van lof, want U onderwijst mij in uw wetten,"
-          },
-          {
-            "verse": 172,
-            "text": "laat mijn tong uw woord bezingen, want al uw geboden zijn rechtvaardig."
-          },
-          {
-            "verse": 173,
-            "text": "Laat uw hand mij te hulp komen, ik heb gekozen voor uw regels."
-          },
-          {
-            "verse": 174,
-            "text": "Ik verlang ernaar dat U mij redt, HEER, uw wet verheugt mij."
-          },
-          {
-            "verse": 175,
-            "text": "Moge mijn ziel leven en U loven, mogen uw voorschriften mijn hulp zijn."
-          },
-          {
-            "verse": 176,
-            "text": "Ik dwaal rond als een verloren schaap. Zoek uw dienaar, want ik vergeet uw geboden niet."
           }
         ],
         "translation": "NBV21"
@@ -5331,45 +4881,6 @@
             "chapter": 2,
             "verse": 10,
             "text": "ἡμῖν δὲ ἀπεκάλυψεν ὁ θεὸς διὰ τοῦ πνεύματος· τὸ γὰρ πνεῦμα πάντα ἐραυνᾷ, καὶ τὰ βάθη τοῦ θεοῦ. "
-          }
-        ]
-      },
-      {
-        "source": "BHS (Biblia Hebraica Stuttgartensia)",
-        "book_nl": "Deuteronomium",
-        "book_original": "Deuteronomium",
-        "chapter": 30,
-        "language": "Hebreeuws",
-        "verses": [
-          {
-            "chapter": 30,
-            "verse": 15,
-            "text": "רְאֵ֨ה נָתַ֤תִּי לְפָנֶ֨יךָ֙ הַיֹּ֔ום אֶת־הַֽחַיִּ֖ים וְאֶת־הַטֹּ֑וב וְאֶת־הַמָּ֖וֶת וְאֶת־הָרָֽע׃ "
-          },
-          {
-            "chapter": 30,
-            "verse": 16,
-            "text": "אֲשֶׁ֨ר אָנֹכִ֣י מְצַוְּךָ֮ הַיֹּום֒ לְאַהֲבָ֞ה אֶת־יְהוָ֤ה אֱלֹהֶ֨יךָ֙ לָלֶ֣כֶת בִּדְרָכָ֔יו וְלִשְׁמֹ֛ר מִצְוֹתָ֥יו וְחֻקֹּתָ֖יו וּמִשְׁפָּטָ֑יו וְחָיִ֣יתָ וְרָבִ֔יתָ וּבֵֽרַכְךָ֙ יְהוָ֣ה אֱלֹהֶ֔יךָ בָּאָ֕רֶץ אֲשֶׁר־אַתָּ֥ה בָא־שָׁ֖מָּה לְרִשְׁתָּֽהּ׃ "
-          },
-          {
-            "chapter": 30,
-            "verse": 17,
-            "text": "וְאִם־יִפְנֶ֥ה לְבָבְךָ֖ וְלֹ֣א תִשְׁמָ֑ע וְנִדַּחְתָּ֗ וְהִֽשְׁתַּחֲוִ֛יתָ לֵאלֹהִ֥ים אֲחֵרִ֖ים וַעֲבַדְתָּֽם׃ "
-          },
-          {
-            "chapter": 30,
-            "verse": 18,
-            "text": "הִגַּ֤דְתִּי לָכֶם֙ הַיֹּ֔ום כִּ֥י אָבֹ֖ד תֹּאבֵד֑וּן לֹא־תַאֲרִיכֻ֤ן יָמִים֙ עַל־הָ֣אֲדָמָ֔ה אֲשֶׁ֨ר אַתָּ֤ה עֹבֵר֙ אֶת־הַיַּרְדֵּ֔ן לָבֹ֥א שָׁ֖מָּה לְרִשְׁתָּֽהּ׃ "
-          },
-          {
-            "chapter": 30,
-            "verse": 19,
-            "text": "הַעִידֹ֨תִי בָכֶ֣ם הַיֹּום֮ אֶת־הַשָּׁמַ֣יִם וְאֶת־הָאָרֶץ֒ הַחַיִּ֤ים וְהַמָּ֨וֶת֙ נָתַ֣תִּי לְפָנֶ֔יךָ הַבְּרָכָ֖ה וְהַקְּלָלָ֑ה וּבָֽחַרְתָּ֙ בַּֽחַיִּ֔ים לְמַ֥עַן תִּחְיֶ֖ה אַתָּ֥ה וְזַרְעֶֽךָ׃ "
-          },
-          {
-            "chapter": 30,
-            "verse": 20,
-            "text": "לְאַֽהֲבָה֙ אֶת־יְהוָ֣ה אֱלֹהֶ֔יךָ לִשְׁמֹ֥עַ בְּקֹלֹ֖ו וּלְדָבְקָה־בֹ֑ו כִּ֣י ה֤וּא חַיֶּ֨יךָ֙ וְאֹ֣רֶךְ יָמֶ֔יךָ לָשֶׁ֣בֶת עַל־הָאֲדָמָ֗ה אֲשֶׁר֩ נִשְׁבַּ֨ע יְהוָ֧ה לַאֲבֹתֶ֛יךָ לְאַבְרָהָ֛ם לְיִצְחָ֥ק וּֽלְיַעֲקֹ֖ב לָתֵ֥ת לָהֶֽם׃ פ "
           }
         ]
       },
@@ -5479,6 +4990,55 @@
             "chapter": 5,
             "verse": 36,
             "text": "μήτε ἐν τῇ κεφαλῇ σου ὀμόσῃς, ὅτι οὐ δύνασαι μίαν τρίχα λευκὴν ποιῆσαι ἢ μέλαιναν. "
+          },
+          {
+            "chapter": 5,
+            "verse": 37,
+            "text": "ἔστω δὲ ὁ λόγος ὑμῶν ναὶ ναί, οὒ οὔ· τὸ δὲ περισσὸν τούτων ἐκ τοῦ πονηροῦ ἐστιν."
+          }
+        ]
+      },
+      {
+        "source": "NA28 (Novum Testamentum Graece)",
+        "book_nl": "Matteüs",
+        "book_original": "MAT",
+        "chapter": 5,
+        "language": "Grieks",
+        "verses": [
+          {
+            "chapter": 5,
+            "verse": 20,
+            "text": "Λέγω γὰρ ὑμῖν ὅτι ἐὰν μὴ περισσεύσῃ ὑμῶν ἡ δικαιοσύνη πλεῖον τῶν γραμματέων καὶ Φαρισαίων, οὐ μὴ εἰσέλθητε εἰς τὴν βασιλείαν τῶν οὐρανῶν."
+          },
+          {
+            "chapter": 5,
+            "verse": 21,
+            "text": "Ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις· οὐ φονεύσεις· ὃς δ’ ἂν φονεύσῃ, ἔνοχος ἔσται τῇ κρίσει. "
+          },
+          {
+            "chapter": 5,
+            "verse": 22,
+            "text": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ ὀργιζόμενος τῷ ἀδελφῷ αὐτοῦ ἔνοχος ἔσται τῇ κρίσει· ὃς δ’ ἂν εἴπῃ τῷ ἀδελφῷ αὐτοῦ· ῥακά, ἔνοχος ἔσται τῷ συνεδρίῳ· ὃς δ’ ἂν εἴπῃ· μωρέ, ἔνοχος ἔσται εἰς τὴν γέενναν τοῦ πυρός. "
+          },
+          {
+            "chapter": 5,
+            "verse": 27,
+            "text": "Ἠκούσατε ὅτι ἐρρέθη· οὐ μοιχεύσεις."
+          },
+          {
+            "chapter": 5,
+            "verse": 28,
+            "text": "ἐγὼ δὲ λέγω ὑμῖν ὅτι πᾶς ὁ βλέπων γυναῖκα πρὸς τὸ ἐπιθυμῆσαι αὐτὴν ἤδη ἐμοίχευσεν αὐτὴν ἐν τῇ καρδίᾳ αὐτοῦ. "
+          },
+          {
+            "chapter": 5,
+            "verse": 33,
+            "text": "Πάλιν ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις· οὐκ ἐπιορκήσεις, ἀποδώσεις δὲ τῷ κυρίῳ τοὺς ὅρκους σου. "
+          },
+          {
+            "chapter": 5,
+            "verse": 34,
+            "text": "ἐγὼ δὲ λέγω ὑμῖν μὴ ὀμόσαι ὅλως· μήτε ἐν τῷ οὐρανῷ, ὅτι θρόνος ἐστὶν τοῦ θεοῦ, "
           },
           {
             "chapter": 5,
@@ -5613,766 +5173,6 @@
             "chapter": 119,
             "verse": 24,
             "text": "גַּֽם־עֵ֭דֹתֶיךָ שַׁעֲשֻׁעָ֗י אַנְשֵׁ֥י עֲצָתִֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 25,
-            "text": "דָּֽבְקָ֣ה לֶעָפָ֣ר נַפְשִׁ֑י חַ֝יֵּ֗נִי כִּדְבָרֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 26,
-            "text": "דְּרָכַ֣י סִ֭פַּרְתִּי וַֽתַּעֲנֵ֗נִי לַמְּדֵ֥נִי חֻקֶּֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 27,
-            "text": "דֶּֽרֶךְ־פִּקּוּדֶ֥יךָ הֲבִינֵ֑נִי וְ֝אָשִׂ֗יחָה בְּנִפְלְאֹותֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 28,
-            "text": "דָּלְפָ֣ה נַ֭פְשִׁי מִתּוּגָ֑ה קַ֝יְּמֵ֗נִי כִּדְבָרֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 29,
-            "text": "דֶּֽרֶךְ־שֶׁ֭קֶר הָסֵ֣ר מִמֶּ֑נִּי וְֽתֹורָתְךָ֥ חָנֵּֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 30,
-            "text": "דֶּֽרֶךְ־אֱמוּנָ֥ה בָחָ֑רְתִּי מִשְׁפָּטֶ֥יךָ שִׁוִּֽיתִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 31,
-            "text": "דָּבַ֥קְתִּי בְעֵֽדְוֹתֶ֑יךָ יְ֝הוָ֗ה אַל־תְּבִישֵֽׁנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 32,
-            "text": "דֶּֽרֶךְ־מִצְוֹתֶ֥יךָ אָר֑וּץ כִּ֖י תַרְחִ֣יב לִבִּֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 33,
-            "text": "הֹורֵ֣נִי יְ֭הוָה דֶּ֥רֶךְ חֻקֶּ֗יךָ וְאֶצְּרֶ֥נָּה עֵֽקֶב׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 34,
-            "text": "הֲ֭בִינֵנִי וְאֶצְּרָ֥ה תֹֽורָתֶ֗ךָ וְאֶשְׁמְרֶ֥נָּה בְכָל־לֵֽב׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 35,
-            "text": "הַ֭דְרִיכֵנִי בִּנְתִ֣יב מִצְוֹתֶ֑יךָ כִּי־בֹ֥ו חָפָֽצְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 36,
-            "text": "הַט־לִ֭בִּי אֶל־עֵדְוֹתֶ֗יךָ וְאַ֣ל אֶל־בָּֽצַע׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 37,
-            "text": "הַעֲבֵ֣ר עֵ֭ינַי מֵרְאֹ֣ות שָׁ֑וְא בִּדְרָכֶ֥ךָ חַיֵּֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 38,
-            "text": "הָקֵ֣ם לְ֭עַבְדְּךָ אִמְרָתֶ֑ךָ אֲ֝שֶׁ֗ר לְיִרְאָתֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 39,
-            "text": "הַעֲבֵ֣ר חֶ֭רְפָּתִי אֲשֶׁ֣ר יָגֹ֑רְתִּי כִּ֖י מִשְׁפָּטֶ֣יךָ טֹובִֽים׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 40,
-            "text": "הִ֭נֵּה תָּאַ֣בְתִּי לְפִקֻּדֶ֑יךָ בְּצִדְקָתְךָ֥ חַיֵּֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 41,
-            "text": "וִֽיבֹאֻ֣נִי חֲסָדֶ֣ךָ יְהוָ֑ה תְּ֝שֽׁוּעָתְךָ֗ כְּאִמְרָתֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 42,
-            "text": "וְאֶֽעֱנֶ֣ה חֹרְפִ֣י דָבָ֑ר כִּֽי־בָ֝טַחְתִּי בִּדְבָרֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 43,
-            "text": "וְֽאַל־תַּצֵּ֬ל מִפִּ֣י דְבַר־אֱמֶ֣ת עַד־מְאֹ֑ד כִּ֖י לְמִשְׁפָּטֶ֣ךָ יִחָֽלְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 44,
-            "text": "וְאֶשְׁמְרָ֖ה תֹורָתְךָ֥ תָמִ֗יד לְעֹולָ֥ם וָעֶֽד׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 45,
-            "text": "וְאֶתְהַלְּכָ֥ה בָרְחָבָ֑ה כִּ֖י פִקֻּדֶ֣יךָ דָרָֽשְׁתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 46,
-            "text": "וַאֲדַבְּרָ֣ה בְ֭עֵדֹתֶיךָ נֶ֥גֶד מְלָכִ֗ים וְלֹ֣א אֵבֹֽושׁ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 47,
-            "text": "וְאֶשְׁתַּֽעֲשַׁ֥ע בְּמִצְוֹתֶ֗יךָ אֲשֶׁ֣ר אָהָֽבְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 48,
-            "text": "וְאֶשָּֽׂא־כַפַּ֗י אֶֽל־מִ֭צְוֹתֶיךָ אֲשֶׁ֥ר אָהָ֗בְתִּי וְאָשִׂ֥יחָה בְחֻקֶּֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 49,
-            "text": "זְכֹר־דָּבָ֥ר לְעַבְדֶּ֑ךָ עַ֝֗ל אֲשֶׁ֣ר יִֽחַלְתָּֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 50,
-            "text": "זֹ֣את נֶחָמָתִ֣י בְעָנְיִ֑י כִּ֖י אִמְרָתְךָ֣ חִיָּֽתְנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 51,
-            "text": "זֵ֭דִים הֱלִיצֻ֣נִי עַד־מְאֹ֑ד מִ֝תֹּֽורָתְךָ֗ לֹ֣א נָטִֽיתִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 52,
-            "text": "זָ֘כַ֤רְתִּי מִשְׁפָּטֶ֖יךָ מֵעֹולָ֥ם׀ יְהוָ֗ה וָֽאֶתְנֶחָֽם׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 53,
-            "text": "זַלְעָפָ֣ה אֲ֭חָזַתְנִי מֵרְשָׁעִ֑ים עֹ֝זְבֵ֗י תֹּורָתֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 54,
-            "text": "זְ֭מִרֹות הָֽיוּ־לִ֥י חֻקֶּ֗יךָ בְּבֵ֣ית מְגוּרָֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 55,
-            "text": "זָ֘כַ֤רְתִּי בַלַּ֣יְלָה שִׁמְךָ֣ יְהוָ֑ה וָֽ֝אֶשְׁמְרָ֗ה תֹּורָתֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 56,
-            "text": "זֹ֥את הָֽיְתָה־לִּ֑י כִּ֖י פִקֻּדֶ֣יךָ נָצָֽרְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 57,
-            "text": "חֶלְקִ֖י יְהוָ֥ה אָמַ֗רְתִּי לִשְׁמֹ֥ר דְּבָרֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 58,
-            "text": "חִלִּ֣יתִי פָנֶ֣יךָ בְכָל־לֵ֑ב חָ֝נֵּ֗נִי כְּאִמְרָתֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 59,
-            "text": "חִשַּׁ֥בְתִּי דְרָכָ֑י וָאָשִׁ֥יבָה רַ֝גְלַ֗י אֶל־עֵדֹתֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 60,
-            "text": "חַ֭שְׁתִּי וְלֹ֣א הִתְמַהְמָ֑הְתִּי לִ֝שְׁמֹ֗ר מִצְוֹתֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 61,
-            "text": "חֶבְלֵ֣י רְשָׁעִ֣ים עִוְּדֻ֑נִי תֹּֽ֝ורָתְךָ֗ לֹ֣א שָׁכָֽחְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 62,
-            "text": "חֲצֹֽות־לַ֗יְלָה אָ֭קוּם לְהֹודֹ֣ות לָ֑ךְ עַ֝֗ל מִשְׁפְּטֵ֥י צִדְקֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 63,
-            "text": "חָבֵ֣ר אָ֭נִי לְכָל־אֲשֶׁ֣ר יְרֵא֑וּךָ וּ֝לְשֹׁמְרֵ֗י פִּקּוּדֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 64,
-            "text": "חַסְדְּךָ֣ יְ֭הוָה מָלְאָ֥ה הָאָ֗רֶץ חֻקֶּ֥יךָ לַמְּדֵֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 65,
-            "text": "טֹ֭וב עָשִׂ֣יתָ עִֽם־עַבְדְּךָ֑ יְ֝הוָ֗ה כִּדְבָרֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 66,
-            "text": "ט֤וּב טַ֣עַם וָדַ֣עַת לַמְּדֵ֑נִי כִּ֖י בְמִצְוֹתֶ֣יךָ הֶאֱמָֽנְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 67,
-            "text": "טֶ֣רֶם אֶ֭עֱנֶה אֲנִ֣י שֹׁגֵ֑ג וְ֝עַתָּ֗ה אִמְרָתְךָ֥ שָׁמָֽרְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 68,
-            "text": "טֹוב־אַתָּ֥ה וּמֵטִ֗יב לַמְּדֵ֥נִי חֻקֶּֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 69,
-            "text": "טָפְל֬וּ עָלַ֣י שֶׁ֣קֶר זֵדִ֑ים אֲ֝נִ֗י בְּכָל־לֵ֤ב׀ אֱצֹּ֬ר פִּקּוּדֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 70,
-            "text": "טָפַ֣שׁ כַּחֵ֣לֶב לִבָּ֑ם אֲ֝נִ֗י תֹּורָתְךָ֥ שִֽׁעֲשָֽׁעְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 71,
-            "text": "טֹֽוב־לִ֥י כִֽי־עֻנֵּ֑יתִי לְ֝מַ֗עַן אֶלְמַ֥ד חֻקֶּֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 72,
-            "text": "טֹֽוב־לִ֥י תֹֽורַת־פִּ֑יךָ מֵ֝אַלְפֵ֗י זָהָ֥ב וָכָֽסֶף׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 73,
-            "text": "יָדֶ֣יךָ עָ֭שׂוּנִי וַֽיְכֹונְנ֑וּנִי הֲ֝בִינֵ֗נִי וְאֶלְמְדָ֥ה מִצְוֹתֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 74,
-            "text": "יְ֭רֵאֶיךָ יִרְא֣וּנִי וְיִשְׂמָ֑חוּ כִּ֖י לִדְבָרְךָ֣ יִחָֽלְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 75,
-            "text": "יָדַ֣עְתִּי יְ֭הוָה כִּי־צֶ֣דֶק מִשְׁפָּטֶ֑יךָ וֶ֝אֱמוּנָ֗ה עִנִּיתָֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 76,
-            "text": "יְהִי־נָ֣א חַסְדְּךָ֣ לְנַחֲמֵ֑נִי כְּאִמְרָתְךָ֥ לְעַבְדֶּֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 77,
-            "text": "יְבֹא֣וּנִי רַחֲמֶ֣יךָ וְאֶֽחְיֶ֑ה כִּי־תֹֽ֝ורָתְךָ֗ שַֽׁעֲשֻׁעָֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 78,
-            "text": "יֵבֹ֣שׁוּ זֵ֭דִים כִּי־שֶׁ֣קֶר עִוְּת֑וּנִי אֲ֝נִ֗י אָשִׂ֥יחַ בְּפִקּוּדֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 79,
-            "text": "יָשׁ֣וּבוּ לִ֣י יְרֵאֶ֑יךָ וְ֝יֹדְעֵ֗י עֵדֹתֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 80,
-            "text": "יְהִֽי־לִבִּ֣י תָמִ֣ים בְּחֻקֶּ֑יךָ לְ֝מַ֗עַן לֹ֣א אֵבֹֽושׁ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 81,
-            "text": "כָּלְתָ֣ה לִתְשׁוּעָתְךָ֣ נַפְשִׁ֑י לִדְבָרְךָ֥ יִחָֽלְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 82,
-            "text": "כָּל֣וּ עֵ֭ינַי לְאִמְרָתֶ֑ךָ לֵ֝אמֹ֗ר מָתַ֥י תְּֽנַחֲמֵֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 83,
-            "text": "כִּֽי־הָ֭יִיתִי כְּנֹ֣אד בְּקִיטֹ֑ור חֻ֝קֶּ֗יךָ לֹ֣א שָׁכָֽחְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 84,
-            "text": "כַּמָּ֥ה יְמֵֽי־עַבְדֶּ֑ךָ מָתַ֬י תַּעֲשֶׂ֖ה בְרֹדְפַ֣י מִשְׁפָּֽט׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 85,
-            "text": "כָּֽרוּ־לִ֣י זֵדִ֣ים שִׁיחֹ֑ות אֲ֝שֶׁ֗ר לֹ֣א כְתֹורָתֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 86,
-            "text": "כָּל־מִצְוֹתֶ֥יךָ אֱמוּנָ֑ה שֶׁ֖קֶר רְדָפ֣וּנִי עָזְרֵֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 87,
-            "text": "כִּ֭מְעַט כִּלּ֣וּנִי בָאָ֑רֶץ וַ֝אֲנִ֗י לֹא־עָזַ֥בְתִּי פִקֻּודֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 88,
-            "text": "כְּחַסְדְּךָ֥ חַיֵּ֑נִי וְ֝אֶשְׁמְרָ֗ה עֵד֥וּת פִּֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 89,
-            "text": "לְעֹולָ֥ם יְהוָ֑ה דְּ֝בָרְךָ֗ נִצָּ֥ב בַּשָּׁמָֽיִם׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 90,
-            "text": "לְדֹ֣ר וָ֭דֹר אֱמֽוּנָתֶ֑ךָ כֹּונַ֥נְתָּ אֶ֝֗רֶץ וַֽתַּעֲמֹֽד׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 91,
-            "text": "לְֽ֭מִשְׁפָּטֶיךָ עָמְד֣וּ הַיֹּ֑ום כִּ֖י הַכֹּ֣ל עֲבָדֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 92,
-            "text": "לוּלֵ֣י תֹ֭ורָתְךָ שַׁעֲשֻׁעָ֑י אָ֝֗ז אָבַ֥דְתִּי בְעָנְיִֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 93,
-            "text": "לְ֭עֹולָם לֹא־אֶשְׁכַּ֣ח פִּקּוּדֶ֑יךָ כִּ֥י בָ֝֗ם חִיִּיתָֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 94,
-            "text": "לְֽךָ־אֲ֭נִי הֹושִׁיעֵ֑נִי כִּ֖י פִקּוּדֶ֣יךָ דָרָֽשְׁתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 95,
-            "text": "לִ֤י קִוּ֣וּ רְשָׁעִ֣ים לְאַבְּדֵ֑נִי עֵ֝דֹתֶ֗יךָ אֶתְבֹּונָֽן׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 96,
-            "text": "לְֽכָל תִּ֭כְלָה רָאִ֣יתִי קֵ֑ץ רְחָבָ֖ה מִצְוָתְךָ֣ מְאֹֽד׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 97,
-            "text": "מָֽה־אָהַ֥בְתִּי תֹורָתֶ֑ךָ כָּל־הַ֝יֹּ֗ום הִ֣יא שִׂיחָתִֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 98,
-            "text": "מֵ֭אֹ֣יְבַי תְּחַכְּמֵ֣נִי מִצְוֹתֶ֑ךָ כִּ֖י לְעֹולָ֣ם הִיא־לִֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 99,
-            "text": "מִכָּל־מְלַמְּדַ֥י הִשְׂכַּ֑לְתִּי כִּ֥י עֵ֝דְוֹתֶ֗יךָ שִׂ֣יחָה לִֽֿי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 100,
-            "text": "מִזְּקֵנִ֥ים אֶתְבֹּונָ֑ן כִּ֖י פִקּוּדֶ֣יךָ נָצָֽרְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 101,
-            "text": "מִכָּל־אֹ֣רַח רָ֭ע כָּלִ֣אתִי רַגְלָ֑י לְ֝מַ֗עַן אֶשְׁמֹ֥ר דְּבָרֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 102,
-            "text": "מִמִּשְׁפָּטֶ֥יךָ לֹא־סָ֑רְתִּי כִּֽי־אַ֝תָּ֗ה הֹורֵתָֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 103,
-            "text": "מַה־נִּמְלְצ֣וּ לְ֭חִכִּי אִמְרָתֶ֗ךָ מִדְּבַ֥שׁ לְפִֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 104,
-            "text": "מִפִּקּוּדֶ֥יךָ אֶתְבֹּונָ֑ן עַל־כֵּ֝֗ן שָׂנֵ֤אתִי׀ כָּל־אֹ֬רַח שָֽׁקֶר׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 105,
-            "text": "נֵר־לְרַגְלִ֥י דְבָרֶ֑ךָ וְ֝אֹ֗ור לִנְתִיבָתִֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 106,
-            "text": "נִשְׁבַּ֥עְתִּי וָאֲקַיֵּ֑מָה לִ֝שְׁמֹ֗ר מִשְׁפְּטֵ֥י צִדְקֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 107,
-            "text": "נַעֲנֵ֥יתִי עַד־מְאֹ֑ד יְ֝הוָ֗ה חַיֵּ֥נִי כִדְבָרֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 108,
-            "text": "נִדְבֹ֣ות פִּ֭י רְצֵה־נָ֣א יְהוָ֑ה וּֽמִשְׁפָּטֶ֥יךָ לַמְּדֵֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 109,
-            "text": "נַפְשִׁ֣י בְכַפִּ֣י תָמִ֑יד וְ֝תֹֽורָתְךָ֗ לֹ֣א שָׁכָֽחְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 110,
-            "text": "נָתְנ֬וּ רְשָׁעִ֣ים פַּ֣ח לִ֑י וּ֝מִפִּקּוּדֶ֗יךָ לֹ֣א תָעִֽיתִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 111,
-            "text": "נָחַ֣לְתִּי עֵדְוֹתֶ֣יךָ לְעֹולָ֑ם כִּֽי־שְׂשֹׂ֖ון לִבִּ֣י הֵֽמָּה׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 112,
-            "text": "נָטִ֣יתִי לִ֭בִּי לַעֲשֹׂ֥ות חֻקֶּ֗יךָ לְעֹולָ֥ם עֵֽקֶב׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 113,
-            "text": "סֵעֲפִ֥ים שָׂנֵ֑אתִי וְֽתֹורָתְךָ֥ אָהָֽבְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 114,
-            "text": "סִתְרִ֣י וּמָגִנִּ֣י אָ֑תָּה לִדְבָרְךָ֥ יִחָֽלְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 115,
-            "text": "סֽוּרוּ־מִמֶּ֥נִּי מְרֵעִ֑ים וְ֝אֶצְּרָ֗ה מִצְוֹ֥ת אֱלֹהָֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 116,
-            "text": "סָמְכֵ֣נִי כְאִמְרָתְךָ֣ וְאֶֽחְיֶ֑ה וְאַל־תְּ֝בִישֵׁ֗נִי מִשִּׂבְרִֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 117,
-            "text": "סְעָדֵ֥נִי וְאִוָּשֵׁ֑עָה וְאֶשְׁעָ֖ה בְחֻקֶּ֣יךָ תָמִֽיד׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 118,
-            "text": "סָ֭לִיתָ כָּל־שֹׁוגִ֣ים מֵחֻקֶּ֑יךָ כִּי־שֶׁ֝֗קֶר תַּרְמִיתָֽם׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 119,
-            "text": "סִגִ֗ים הִשְׁבַּ֥תָּ כָל־רִשְׁעֵי־אָ֑רֶץ לָ֝כֵ֗ן אָהַ֥בְתִּי עֵדֹתֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 120,
-            "text": "סָמַ֣ר מִפַּחְדְּךָ֣ בְשָׂרִ֑י וּֽמִמִּשְׁפָּטֶ֥יךָ יָרֵֽאתִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 121,
-            "text": "עָ֭שִׂיתִי מִשְׁפָּ֣ט וָצֶ֑דֶק בַּל־תַּ֝נִּיחֵ֗נִי לְעֹֽשְׁקָֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 122,
-            "text": "עֲרֹ֣ב עַבְדְּךָ֣ לְטֹ֑וב אַֽל־יַעַשְׁקֻ֥נִי זֵדִֽים׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 123,
-            "text": "עֵ֭ינַי כָּל֣וּ לִֽישׁוּעָתֶ֑ךָ וּלְאִמְרַ֥ת צִדְקֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 124,
-            "text": "עֲשֵׂ֖ה עִם־עַבְדְּךָ֥ כְחַסְדֶּ֗ךָ וְחֻקֶּ֥יךָ לַמְּדֵֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 125,
-            "text": "עַבְדְּךָ־אָ֥נִי הֲבִינֵ֑נִי וְ֝אֵדְעָ֗ה עֵדֹתֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 126,
-            "text": "עֵ֭ת לַעֲשֹׂ֣ות לַיהוָ֑ה הֵ֝פֵ֗רוּ תֹּורָתֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 127,
-            "text": "עַל־כֵּ֭ן אָהַ֣בְתִּי מִצְוֹתֶ֑יךָ מִזָּהָ֥ב וּמִפָּֽז׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 128,
-            "text": "עַל־כֵּ֤ן׀ כָּל־פִּקּ֣וּדֵי כֹ֣ל יִשָּׁ֑רְתִּי כָּל־אֹ֖רַח שֶׁ֣קֶר שָׂנֵֽאתִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 129,
-            "text": "פְּלָאֹ֥ות עֵדְוֹתֶ֑יךָ עַל־כֵּ֝֗ן נְצָרָ֥תַם נַפְשִֽׁי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 130,
-            "text": "פֵּ֖תַח דְּבָרֶ֥יךָ יָאִ֗יר מֵבִ֥ין פְּתָיִֽים׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 131,
-            "text": "פִּֽי־פָ֭עַרְתִּי וָאֶשְׁאָ֑פָה כִּ֖י לְמִצְוֹתֶ֣יךָ יָאָֽבְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 132,
-            "text": "פְּנֵה־אֵלַ֥י וְחָנֵּ֑נִי כְּ֝מִשְׁפָּ֗ט לְאֹהֲבֵ֥י שְׁמֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 133,
-            "text": "פְּ֭עָמַי הָכֵ֣ן בְּאִמְרָתֶ֑ךָ וְֽאַל־תַּשְׁלֶט־בִּ֥י כָל־אָֽוֶן׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 134,
-            "text": "פְּ֭דֵנִי מֵעֹ֣שֶׁק אָדָ֑ם וְ֝אֶשְׁמְרָ֗ה פִּקּוּדֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 135,
-            "text": "פָּ֭נֶיךָ הָאֵ֣ר בְּעַבְדֶּ֑ךָ וְ֝לַמְּדֵ֗נִי אֶת־חֻקֶּֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 136,
-            "text": "פַּלְגֵי־מַ֭יִם יָרְד֣וּ עֵינָ֑י עַ֝֗ל לֹא־שָׁמְר֥וּ תֹורָתֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 137,
-            "text": "צַדִּ֣יק אַתָּ֣ה יְהוָ֑ה וְ֝יָשָׁ֗ר מִשְׁפָּטֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 138,
-            "text": "צִ֭וִּיתָ צֶ֣דֶק עֵדֹתֶ֑יךָ וֶֽאֱמוּנָ֥ה מְאֹֽד׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 139,
-            "text": "צִמְּתַ֥תְנִי קִנְאָתִ֑י כִּֽי־שָׁכְח֖וּ דְבָרֶ֣יךָ צָרָֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 140,
-            "text": "צְרוּפָ֖ה אִמְרָתְךָ֥ מְאֹ֗ד וְֽעַבְדְּךָ֥ אֲהֵבָֽהּ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 141,
-            "text": "צָעִ֣יר אָנֹכִ֣י וְנִבְזֶ֑ה פִּ֝קֻּדֶ֗יךָ לֹ֣א שָׁכָֽחְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 142,
-            "text": "צִדְקָתְךָ֣ צֶ֣דֶק לְעֹולָ֑ם וְֽתֹורָתְךָ֥ אֱמֶֽת׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 143,
-            "text": "צַר־וּמָצֹ֥וק מְצָא֑וּנִי מִ֝צְוֹתֶ֗יךָ שַׁעֲשֻׁעָֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 144,
-            "text": "צֶ֖דֶק עֵדְוֹתֶ֥יךָ לְעֹולָ֗ם הֲבִינֵ֥נִי וְאֶחְיֶֽה׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 145,
-            "text": "קָרָ֣אתִי בְכָל־לֵ֭ב עֲנֵ֥נִי יְהוָ֗ה חֻקֶּ֥יךָ אֶצֹּֽרָה׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 146,
-            "text": "קְרָאתִ֥יךָ הֹושִׁיעֵ֑נִי וְ֝אֶשְׁמְרָ֗ה עֵדֹתֶֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 147,
-            "text": "קִדַּ֣מְתִּי בַ֭נֶּשֶׁף וָאֲשַׁוֵּ֑עָה לִדְבָרְךָ֥ יִחָֽלְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 148,
-            "text": "קִדְּמ֣וּ עֵ֭ינַי אַשְׁמֻרֹ֑ות לָ֝שִׂ֗יחַ בְּאִמְרָתֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 149,
-            "text": "קֹ֭ולִי שִׁמְעָ֣ה כְחַסְדֶּ֑ךָ יְ֝הוָ֗ה כְּֽמִשְׁפָּטֶ֥ךָ חַיֵּֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 150,
-            "text": "קָ֭רְבוּ רֹדְפֵ֣י זִמָּ֑ה מִתֹּורָתְךָ֥ רָחָֽקוּ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 151,
-            "text": "קָרֹ֣וב אַתָּ֣ה יְהוָ֑ה וְֽכָל־מִצְוֹתֶ֥יךָ אֱמֶֽת׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 152,
-            "text": "קֶ֣דֶם יָ֭דַעְתִּי מֵעֵדֹתֶ֑יךָ כִּ֖י לְעֹולָ֣ם יְסַדְתָּֽם׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 153,
-            "text": "רְאֵֽה־עָנְיִ֥י וְחַלְּצֵ֑נִי כִּי־תֹֽ֝ורָתְךָ֗ לֹ֣א שָׁכָֽחְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 154,
-            "text": "רִיבָ֣ה רִ֭יבִי וּגְאָלֵ֑נִי לְאִמְרָתְךָ֥ חַיֵּֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 155,
-            "text": "רָחֹ֣וק מֵרְשָׁעִ֣ים יְשׁוּעָ֑ה כִּֽי־חֻ֝קֶּיךָ לֹ֣א דָרָֽשׁוּ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 156,
-            "text": "רַחֲמֶ֖יךָ רַבִּ֥ים׀ יְהוָ֑ה כְּֽמִשְׁפָּטֶ֥יךָ חַיֵּֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 157,
-            "text": "רַ֭בִּים רֹדְפַ֣י וְצָרָ֑י מֵ֝עֵדְוֹתֶ֗יךָ לֹ֣א נָטִֽיתִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 158,
-            "text": "רָאִ֣יתִי בֹ֭גְדִים וָֽאֶתְקֹוטָ֑טָה אֲשֶׁ֥ר אִ֝מְרָתְךָ֗ לֹ֣א שָׁמָֽרוּ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 159,
-            "text": "רְ֭אֵה כִּי־פִקּוּדֶ֣יךָ אָהָ֑בְתִּי יְ֝הוָ֗ה כְּֽחַסְדְּךָ֥ חַיֵּֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 160,
-            "text": "רֹאשׁ־דְּבָרְךָ֥ אֱמֶ֑ת וּ֝לְעֹולָ֗ם כָּל־מִשְׁפַּ֥ט צִדְקֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 161,
-            "text": "שָׂ֭רִים רְדָפ֣וּנִי חִנָּ֑ם וּ֝מִדְּבָרְךָ֗ פָּחַ֥ד לִבִּֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 162,
-            "text": "שָׂ֣שׂ אָ֭נֹכִֽי עַל־אִמְרָתֶ֑ךָ כְּ֝מֹוצֵ֗א שָׁלָ֥ל רָֽב׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 163,
-            "text": "שֶׁ֣קֶר שָׂ֭נֵאתִי וַאֲתַעֵ֑בָה תֹּורָתְךָ֥ אָהָֽבְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 164,
-            "text": "שֶׁ֣בַע בַּ֭יֹּום הִלַּלְתִּ֑יךָ עַ֝֗ל מִשְׁפְּטֵ֥י צִדְקֶֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 165,
-            "text": "שָׁלֹ֣ום רָ֭ב לְאֹהֲבֵ֣י תֹורָתֶ֑ךָ וְאֵֽין־לָ֥מֹו מִכְשֹֽׁול׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 166,
-            "text": "שִׂבַּ֣רְתִּי לִֽישׁוּעָתְךָ֣ יְהוָ֑ה וּֽמִצְוֹתֶ֥יךָ עָשִֽׂיתִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 167,
-            "text": "שָֽׁמְרָ֣ה נַ֭פְשִׁי עֵדֹתֶ֑יךָ וָאֹהֲבֵ֥ם מְאֹֽד׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 168,
-            "text": "שָׁמַ֣רְתִּי פִ֭קּוּדֶיךָ וְעֵדֹתֶ֑יךָ כִּ֖י כָל־דְּרָכַ֣י נֶגְדֶּֽךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 169,
-            "text": "תִּקְרַ֤ב רִנָּתִ֣י לְפָנֶ֣יךָ יְהוָ֑ה כִּדְבָרְךָ֥ הֲבִינֵֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 170,
-            "text": "תָּבֹ֣וא תְּחִנָּתִ֣י לְפָנֶ֑יךָ כְּ֝אִמְרָתְךָ֗ הַצִּילֵֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 171,
-            "text": "תַּבַּ֣עְנָה שְׂפָתַ֣י תְּהִלָּ֑ה כִּ֖י תְלַמְּדֵ֣נִי חֻקֶּֽיךָ׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 172,
-            "text": "תַּ֣עַן לְ֭שֹׁונִי אִמְרָתֶ֑ךָ כִּ֖י כָל־מִצְוֹתֶ֣יךָ צֶּֽדֶק׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 173,
-            "text": "תְּהִֽי־יָדְךָ֥ לְעָזְרֵ֑נִי כִּ֖י פִקּוּדֶ֣יךָ בָחָֽרְתִּי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 174,
-            "text": "תָּאַ֣בְתִּי לִֽישׁוּעָתְךָ֣ יְהוָ֑ה וְ֝תֹֽורָתְךָ֗ שַׁעֲשֻׁעָֽי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 175,
-            "text": "תְּֽחִי־נַ֭פְשִׁי וּֽתְהַֽלְלֶ֑ךָּ וּֽמִשְׁפָּטֶ֥ךָ יַעֲזְרֻֽנִי׃ "
-          },
-          {
-            "chapter": 119,
-            "verse": 176,
-            "text": "תָּעִ֗יתִי כְּשֶׂ֣ה אֹ֭בֵד בַּקֵּ֣שׁ עַבְדֶּ֑ךָ כִּ֥י מִ֝צְוֹתֶ֗יךָ לֹ֣א שָׁכָֽחְתִּי׃ "
           }
         ]
       }

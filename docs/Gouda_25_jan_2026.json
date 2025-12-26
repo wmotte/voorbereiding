@@ -727,157 +727,128 @@
     ]
   },
   "06_actueel_wereldnieuws": {
-    "nieuwsoverzicht_datum": "26 december 2025 (gebaseerd op actuele situatie december 2024)",
+    "nieuwsoverzicht_datum": "26 december 2025",
     "wereldgebeurtenissen": [
       {
-        "titel": "Instorting Assad-regime en chaos in Syrië",
-        "categorie": "politieke_crisis",
-        "samenvatting": "Na 14 jaar burgeroorlog is het bewind van Assad in Syrië in december 2024/2025 ingestort door een snelle opmars van rebellen, waaronder de inname van Aleppo en Damascus. Dit markeert een historisch keerpunt, maar brengt ook grote onzekerheid, angst voor wraakacties en een nieuw machtsvacuüm in het Midden-Oosten met zich mee.",
-        "locatie": "Syrië (Aleppo, Damascus)",
-        "datum_gebeurtenis": "December 2024/2025",
-        "emotionele_impact": "Mengeling van euforie over het einde van een dictatuur en diepe angst voor wat volgt. Syriërs wereldwijd zijn in rep en roer; onzekerheid voor christelijke minderheden in Syrië is groot.",
-        "theologische_vragen": [
-          "Hoe manifesteert Gods gerechtigheid zich in de val van tirannen?",
-          "Is er hoop op vrede na jaren van bloedvergieten, of slechts een wisseling van de wacht?",
-          "Hoe beschermen we de kwetsbaren in tijden van wetteloosheid?"
-        ],
-        "relevantie_pkn": {
-          "pastoraal": "Zorg voor Syrische gemeenteleden of vluchtelingen in Gouda die in onzekerheid leven over familie.",
-          "profetisch": "Oproep tot bescherming van minderheden en rechtvaardige vrede, niet slechts wraak.",
-          "diaconaal": "Mogelijke nieuwe vluchtelingenstromen of noodhulp bij wederopbouw via Kerk in Actie.",
-          "liturgisch": "Gebed voor vrede in het Midden-Oosten en bescherming van christenen in Syrië.",
-          "homiletisch": "Jesaja 9 ('Het volk dat in duisternis wandelt') past direct op de situatie in Syrië: het juk van de dwingeland is verbroken, maar is het ware Licht al doorgebroken?"
-        },
-        "bronnen": [
-          "NOS",
-          "Al Jazeera",
-          "BNR"
-        ]
-      },
-      {
-        "titel": "Vliegramp Azerbaijan Airlines (Vlucht 8243)",
-        "categorie": "anders",
-        "samenvatting": "Op eerste kerstdag is een passagiersvliegtuig van Azerbaijan Airlines neergestort, waarbij 38 mensen om het leven kwamen. Er zijn sterke aanwijzingen dat het toestel per ongeluk is neergehaald door een Russisch luchtafweersysteem of door GPS-jamming in de conflictzone.",
-        "locatie": "Azerbeidzjan / Grensgebied",
-        "datum_gebeurtenis": "25 december 2024/2025",
-        "emotionele_impact": "Schok en verdriet midden in de kerstviering. Het benadrukt de kwetsbaarheid van het leven en het 'collateral damage' van voortdurende militaire spanningen.",
-        "theologische_vragen": [
-          "Waarom dit lijden op een feestdag?",
-          "De willekeur van de dood in een wereld vol wapens."
-        ],
-        "relevantie_pkn": {
-          "pastoraal": "Ruimte voor rouw en de broosheid van het bestaan.",
-          "profetisch": "Aanklacht tegen de militarisering van de wereld die onschuldige burgerslachtoffers eist.",
-          "diaconaal": "Geen directe actie, wel solidariteit.",
-          "liturgisch": "Voorbede voor de nabestaanden en slachtoffers van 'zinloos' geweld.",
-          "homiletisch": "Contrast tussen de vrede van Kerst en de realiteit van een neergestort vliegtuig. Jezus komt in déze onveilige wereld."
-        },
-        "bronnen": [
-          "Reuters",
-          "CNN",
-          "PBS NewsHour"
-        ]
-      },
-      {
-        "titel": "Escalatie Gaza en Hongersnood",
-        "categorie": "oorlog",
-        "samenvatting": "De oorlog in Gaza duurt voort met onverminderde hevigheid. In december zijn journalisten en hulpverleners gedood bij luchtaanvallen, en er sterven baby's door onderkoeling en honger. Tegelijkertijd vinden er Israëlische aanvallen plaats op doelen in Jemen.",
-        "locatie": "Gaza, Jemen",
-        "datum_gebeurtenis": "December 2024/2025",
-        "emotionele_impact": "Diepe verslagenheid en woede over het voortdurende lijden van kinderen en onschuldigen. Gevoel van machteloosheid bij toeschouwers.",
-        "theologische_vragen": [
-          "Hoelang nog, Heer? (Psalm 13)",
-          "Waar is het licht voor de kinderen van Gaza?"
-        ],
-        "relevantie_pkn": {
-          "pastoraal": "Omgaan met gevoelens van onmacht en verdriet in de gemeente.",
-          "profetisch": "Blijven roepen om recht en vrede, tegen de onverschilligheid in.",
-          "diaconaal": "Collecte voor noodhulp in Gaza (Kerk in Actie).",
-          "liturgisch": "Kyrie-gebed: 'Heer, ontferm U over de kinderen'.",
-          "homiletisch": "Matteüs 4: Jezus begint in Galilea, een gebied van duisternis en geweld. Hij trekt zich het lot van de lijdende mens aan."
-        },
-        "bronnen": [
-          "Al Jazeera",
-          "UN OCHA",
-          "NOS"
-        ]
-      },
-      {
-        "titel": "Stille ramp in Sudan: Massale ontheemding en honger",
+        "titel": "Humanitaire nood in Gaza verergert door winterstormen en kou",
         "categorie": "humanitair",
-        "samenvatting": "Terwijl de wereld kijkt naar andere conflicten, voltrekt zich in Sudan een catastrofe. Famine (hongersnood) is officieel vastgesteld in vluchtelingenkampen zoals Zamzam. Meer dan 12 miljoen mensen zijn op de vlucht.",
-        "locatie": "Sudan (Darfur)",
-        "datum_gebeurtenis": "December 2024/2025",
-        "emotionele_impact": "Verontwaardiging over het feit dat dit een 'vergeten oorlog' is. Het leed is onvoorstelbaar groot maar krijgt weinig media-aandacht.",
+        "samenvatting": "Zware winterstormen en overstromingen hebben tienduizenden huishoudens in de Gazastrook getroffen, terwijl de voedselonzekerheid kritiek blijft. Ondanks een eerdere wapenstilstand in 2025 blijft de infrastructuur verwoest en leven veel mensen in tenten zonder adequate bescherming tegen de kou.",
+        "locatie": "Gazastrook",
+        "datum_gebeurtenis": "24-26 december 2025",
+        "emotionele_impact": "Gevoelens van machteloosheid en diepe verontwaardiging over het aanhoudende lijden van burgers, vooral kinderen, in extreme weersomstandigheden.",
         "theologische_vragen": [
-          "Ziet God degenen die de wereld vergeet?",
-          "Wat is onze verantwoordelijkheid als wereldwijde kerk?"
+          "Waar is het 'grote licht' uit Jesaja voor een volk dat letterlijk in de kou en duisternis verblijft?",
+          "Hoe verhoudt de christelijke hoop zich tot een schijnbaar uitzichtloze humanitaire catastrofe?"
         ],
         "relevantie_pkn": {
-          "pastoraal": "Bewustwording dat ons lijden relatief is.",
-          "profetisch": "De kerk moet stem geven aan de stemlozen.",
-          "diaconaal": "Dringende oproep voor noodhulp Sudan.",
-          "liturgisch": "Expliciet noemen in de voorbeden om de stilte te doorbreken.",
-          "homiletisch": "De roeping van de discipelen (Matteüs 4) is ook een roeping om niet weg te kijken, maar 'vissers van mensen' te worden (mensen redden)."
+          "pastoraal": "Troost bieden aan gemeenteleden die gebukt gaan onder het wereldleed; ruimte geven aan klacht.",
+          "profetisch": "Oproepen tot onbelemmerde humanitaire hulp en gerechtigheid, in lijn met de PKN-visie op vrede.",
+          "diaconaal": "Aandacht voor Kerk in Actie-projecten voor noodhulp in conflictgebieden.",
+          "liturgisch": "Kyrie-gebed voor de slachtoffers van geweld en natuurkrachten in het Midden-Oosten.",
+          "homiletisch": "Verbinding maken tussen de 'duisternis' in Jesaja 9 en de actuele situatie in het 'land van de schaduw van de dood'."
         },
         "bronnen": [
-          "ReliefWeb",
-          "Dabanga Sudan"
+          "OCHA oPt",
+          "The Guardian",
+          "360 Magazine"
+        ]
+      },
+      {
+        "titel": "Oekraïne gaat derde oorlogswinter in met hernieuwde winteraanvallen",
+        "categorie": "oorlog",
+        "samenvatting": "De oorlog in Oekraïne is veranderd in een uitputtingsslag waarbij Russische aanvallen op de energie-infrastructuur de burgerbevolking in de kou zetten. Ondanks diplomatieke gesprekken in de VS begin december, blijft een staakt-het-vuren uit en nemen de verliezen aan beide kanten toe.",
+        "locatie": "Oekraïne",
+        "datum_gebeurtenis": "26 december 2025",
+        "emotionele_impact": "Metaalmoeheid en angst voor escalatie in Europa; een gevoel van een 'eindeloze winter'.",
+        "theologische_vragen": [
+          "Hoe behouden we de roeping tot navolging (Matteüs 4) in een wereld die gedomineerd wordt door militaire logica?",
+          "Wat betekent 'eenheid' (1 Korintiërs 1) in een verscheurd Europa?"
+        ],
+        "relevantie_pkn": {
+          "pastoraal": "Aandacht voor Oekraïense vluchtelingen in de regio Gouda en hun onzekerheid over de toekomst.",
+          "profetisch": "Spreken over de christelijke roeping tot vredestichten tegen de stroom van bewapening in.",
+          "diaconaal": "Ondersteuning van winterhulp-acties (generatoren, kleding).",
+          "liturgisch": "Gebed om volharding en een spoedig einde aan het bloedvergieten.",
+          "homiletisch": "Jezus die in Galilea (een randgebied) begint; hoop die opkomt op plekken waar men het niet verwacht."
+        },
+        "bronnen": [
+          "NPO Radio 1",
+          "Institute for the Study of War",
+          "Wynia's Week"
+        ]
+      },
+      {
+        "titel": "Koning Willem-Alexander roept op tot 'gemeenschapszin' in Kersttoespraak",
+        "categorie": "politieke_crisis",
+        "samenvatting": "In zijn jaarlijkse toespraak benadrukte de Koning dat we 'zuinig moeten zijn op wat ons verbindt' in een onzekere wereld. Hij wees op de kwetsbaarheid van de democratie en de noodzaak om de wereld leefbaar over te dragen aan de volgende generatie.",
+        "locatie": "Nederland",
+        "datum_gebeurtenis": "25 december 2025",
+        "emotionele_impact": "Herkenning van de onderhuidse polarisatie in de samenleving; behoefte aan moreel leiderschap en verbinding.",
+        "theologische_vragen": [
+          "Is de kerk nog de 'gemeenschap' waar de Koning op hoopt, of zijn wij zelf ook verdeeld (1 Korintiërs 1)?",
+          "Hoe geven we concreet vorm aan de 'verantwoordelijkheid voor elkaar'?"
+        ],
+        "relevantie_pkn": {
+          "pastoraal": "Bevorderen van onderling gesprek tussen verschillende politieke stromingen binnen de Pauluskerk.",
+          "profetisch": "De kerk als 'oefenplaats' voor eenheid in een versnipperde maatschappij.",
+          "diaconaal": "Versterken van lokale netwerken van omzien naar elkaar in Gouda.",
+          "liturgisch": "Dankgebed voor de rechtsstaat en gebed om wijsheid voor bestuurders.",
+          "homiletisch": "Directe link met 1 Korintiërs 1:10: 'Ik roep u op... om eensgezind te zijn'."
+        },
+        "bronnen": [
+          "Het Koninklijk Huis",
+          "NOS",
+          "EO"
         ]
       }
     ],
     "nederlands_nieuws": [
       {
-        "titel": "Kersttoespraak Koning: 'Weerbaarheid' en polarisatie",
-        "samenvatting": "Koning Willem-Alexander sprak in zijn kersttoespraak over de verharding in de samenleving, antisemitisme (Joodse school Amsterdam) en de pijn van Palestijnse Nederlanders. Hij riep op tot 'weerbaarheid' tegen alles wat ons uit elkaar drijft.",
-        "lokale_relevantie": "Zeer relevant voor Gouda, een stad met diverse bevolkingsgroepen en kerken.",
-        "maatschappelijke_discussie": "Hoe leven we samen met diepe meningsverschillen? De spanning tussen vrijheid en veiligheid.",
-        "relevantie_preek": "Directe link met 1 Korintiërs 1:10 (verdeeldheid). De koning vraagt wat Paulus ook vraagt: laat je niet uit elkaar spelen. Eenheid is niet 'hetzelfde denken', maar elkaar vasthouden."
+        "titel": "Woningbrand in Gouda door vuurwerk",
+        "samenvatting": "In de nacht van 26 december brak brand uit bij een woning aan de Beethovenhof in Gouda, vermoedelijk door vuurwerk bij de voordeur. Er vielen geen gewonden, maar de schade en schrik zijn groot.",
+        "lokale_relevantie": "Directe impact op de wijk nabij de Pauluskerk; roept vragen op over veiligheid en gedrag rond de jaarwisseling.",
+        "maatschappelijke_discussie": "Discussie over vuurwerkverboden en respect voor andermans eigendom.",
+        "relevantie_preek": "Illustratie van hoe 'licht' (vuurwerk) ook destructief kan zijn als het niet vanuit liefde of respect wordt gebruikt."
       },
       {
-        "titel": "Politieke spanningen en asielbeleid",
-        "samenvatting": "Het kabinet worstelt met de uitvoering van streng asielbeleid en de opvangcrisis, wat leidt tot maatschappelijke onrust en verdeeldheid.",
-        "lokale_relevantie": "Opvang van vluchtelingen in de regio Gouda.",
-        "maatschappelijke_discussie": "asiel",
-        "relevantie_preek": "De roeping van christenen om gastvrij te zijn vs. politieke realiteit."
+        "titel": "Herstel fundering Sint-Janskerk Gouda aangekondigd",
+        "samenvatting": "Vanaf februari 2026 start een grootschalig herstel van de fundering van de toren van de Sint-Janskerk om dit monument voor de toekomst te behouden.",
+        "lokale_relevantie": "Grootste kerkgebouw van Gouda; symbool van de christelijke aanwezigheid in de stad.",
+        "maatschappelijke_discussie": "Behoud van cultureel en religieus erfgoed.",
+        "relevantie_preek": "Metafoor voor het bouwen op een stevig fundament (Christus) in tijden van verandering."
       }
     ],
     "kerkelijk_nieuws": [
       {
-        "titel": "Week van Gebed voor Eenheid van Christenen",
-        "bron": "Raad van Kerken / PKN",
-        "samenvatting": "Wereldwijde gebedsweek (18-25 jan) met thema rondom geloof en eenheid. In 2026 valt de afsluiting samen met deze zondag.",
-        "relevantie": "Dit is de directe aanleiding voor de thematiek van de dienst. De verdeeldheid in de wereld (zie nieuws) maakt de roep om kerkelijke eenheid urgenter: als de kerk al verdeeld is, wat heeft ze de wereld dan te bieden?"
+        "titel": "Week van Gebed 2026: Focus op Armeense spiritualiteit",
+        "bron": "Protestantsekerk.nl / Raad van Kerken",
+        "samenvatting": "De voorbereidingen voor de Week van Gebed (18-25 januari) zijn in volle gang. Het thema 'Eén van Geest' wordt ingekleurd door de Armeense traditie, die bekend staat om haar focus op het 'Licht van God' en haar geschiedenis van vervolging.",
+        "relevantie": "De preek op 25 januari markeert de afsluiting van deze week. De Armeense context biedt een krachtige link met het thema 'Licht in de duisternis'."
       }
     ],
     "suggesties_predikant": {
       "in_de_preek": [
-        "Gebruik de vliegramp in Azerbeidzjan als voorbeeld van hoe plotseling 'duisternis' kan invallen (link met Jesaja 9).",
-        "Spiegel de oproep van de Koning tot 'weerbaarheid tegen verdeeldheid' aan Paulus' oproep in 1 Korintiërs 1. De kerk moet een oefenplaats zijn voor deze eenheid.",
-        "Verbind de 'vissers van mensen' (Matteüs 4) met de actualiteit: Jezus roept ons niet weg uit de wereld, maar zendt ons erin (zoals hulpverleners in Gaza of Sudan).",
-        "Benoem de val van regimes (Syrië) als teken dat aardse macht tijdelijk is, in contrast met het Koninkrijk dat Jezus aankondigt."
+        "Gebruik de Armeense focus van de Week van Gebed om Jesaja 9 te duiden: een volk dat historisch veel duisternis heeft gekend, houdt vast aan het Licht van Christus.",
+        "Verbind de oproep van de Koning tot gemeenschapszin met de vermaning van Paulus in 1 Korintiërs 1: de eenheid van de kerk is geen luxe, maar een getuigenis naar een verdeelde wereld.",
+        "Contextualiseer de roeping van de discipelen (Matteüs 4): zij lieten hun netten achter in een tijd van Romeinse bezetting. Wat laten wij achter om Jezus te volgen in 2026?"
       ],
       "in_voorbeden": [
-        "Voor de nabestaanden van de vliegramp in Azerbeidzjan.",
-        "Voor vrede in Syrië en bescherming van alle bevolkingsgroepen in het machtsvacuüm.",
-        "Voor de vergeten slachtoffers in Sudan (hongersnood).",
-        "Voor eenheid in de kerk en de samenleving in Gouda (tegen polarisatie).",
-        "Voor journalisten en hulpverleners in oorlogsgebieden."
+        "Specifiek gebed voor de bewoners van de Beethovenhof in Gouda na de brand.",
+        "Voorbede voor de christenen in Armenië en de diaspora, passend bij de Week van Gebed.",
+        "Gebed voor de slachtoffers van de winterstormen in Gaza en de kou in Oekraïne."
       ],
-      "mededelingen_collecte": [
-        "Collecte voor noodhulp in Sudan of Gaza via Kerk in Actie (vanwege de acute nood in het nieuws)."
-      ]
+      "mededelingen_collecte": "Collecte voor Kerk in Actie: Winterhulp Oekraïne of noodhulp Gaza, aansluitend bij de actualiteit van de kou en overstromingen."
     },
     "valkuilen": [
       {
-        "valkuil": "Partij kiezen in het conflict Syrië/Gaza",
-        "risico": "Gemeenteleden met verschillende visies van zich vervreemden of complexe situaties te simpel voorstellen.",
-        "advies": "Focus op het menselijk leed en de roeping tot vrede, niet op geopolitieke analyse. Bid voor slachtoffers aan alle kanten."
+        "valkuil": "Te politiek over Gaza of Oekraïne",
+        "risico": "Polarisatie binnen de gemeente; mensen voelen zich niet meer gehoord in hun eigen nuance.",
+        "advies": "Focus op het menselijk lijden en de bijbelse roeping tot barmhartigheid in plaats van politieke schuldvragen."
       },
       {
-        "valkuil": "Te zwaarmoedig worden door de stapeling van rampen",
-        "risico": "De gemeente verlaat de kerk moedeloos in plaats van hoopvol.",
-        "advies": "Laat het licht van Epifanie (Jesaja 9) het laatste woord hebben. De duisternis is reëel, maar het Licht is sterker. Jezus begint juist in die duisternis."
+        "valkuil": "Te abstracte eenheid",
+        "risico": "De 'Week van Gebed' blijft een ver-van-mijn-bed-show.",
+        "advies": "Maak het concreet: noem de oecumenische contacten in Gouda en de specifieke Armeense bijdrage."
       }
     ]
   },
@@ -1393,6 +1364,423 @@
         "De passieve afwachting van het licht in Jesaja wordt in Matteüs een actieve navolging: het licht zien betekent achter Jezus aan gaan."
       ]
     }
+  },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 54,
+      "liturgische_balans": "De selectie biedt een krachtig evenwicht tussen de verstilde mystiek van het 'Licht' (Epifanie) en de actieve roeping tot navolging en eenheid. Er is een sterke focus op Psalm 27 als fundament, aangevuld met liederen die de spanning tussen de 'duisternis' van de wereld (Gaza, winter) en het 'Grote Licht' van Christus verwoorden. De oecumenische breedte van Gouda wordt weerspiegeld in de keuze voor zowel klassieke psalmen als moderne aanbiddingsliederen.",
+      "contextuele_reflectie": "In de context van Gouda, waar 'Gouda bij Kaarslicht' een diepe culturele wortel heeft, resoneren de licht-liederen extra sterk. De roeping tot eenheid (1 Kor. 1) spreekt direct tot de Pauluskerk als 'huiskamer van de wijk', waar de uitdaging ligt om ondanks verschillende subgroepen één lichaam in Christus te blijven. De winterse kou in de liederen verbindt de gemeente in gebed met de humanitaire nood in Gaza."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "27",
+        "titel": "Mijn licht, mijn heil is Hij, mijn God en Here!",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtig vertrouwen",
+        "toelichting": "De onberijmde en berijmde versies van Psalm 27 vormen de kern van de liturgie. Het verbindt de persoonlijke angst met de goddelijke zekerheid: 'De Heer is mijn licht'.",
+        "suggestie_gebruik": "Intocht"
+      },
+      {
+        "nummer": "445",
+        "titel": "De nacht is haast ten einde",
+        "type_match": "Conceptueel",
+        "karakter": "Hoopvol/Verwachtend",
+        "toelichting": "Verbindt de 'nacht' uit Jesaja 9 met de dageraad van Christus. Ideaal voor de overgang van de schuldbelijdenis naar de genadeverkondiging.",
+        "suggestie_gebruik": "Kyrie/Gloria"
+      },
+      {
+        "nummer": "448",
+        "titel": "Het volk dat wandelt in het duister",
+        "type_match": "Schriftlezing",
+        "karakter": "Hymnisch",
+        "toelichting": "Een directe verklanking van Jesaja 9:1. Het bezingt de omkering van het juk naar de vreugde van de oogst.",
+        "suggestie_gebruik": "Schriftlied (na Jesaja)"
+      },
+      {
+        "nummer": "513",
+        "titel": "Gij die alle sterren houdt",
+        "type_match": "Seizoen",
+        "karakter": "Verstild gebed",
+        "toelichting": "Een klassiek Epifanie-lied dat vraagt om het licht van de ster in ons eigen hart, passend bij de persoonlijke roeping.",
+        "suggestie_gebruik": "Gebed om de verlichting met de Heilige Geest"
+      },
+      {
+        "nummer": "527",
+        "titel": "Licht dat ons aanstoot",
+        "type_match": "Thematisch",
+        "karakter": "Lichtvoetig maar diep",
+        "toelichting": "Oosterhuis' tekst over het licht dat ons 'aanstoot' past bij de roeping van de discipelen: het licht is niet passief, het zet in beweging.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "827",
+        "titel": "Mensen, wij zijn geroepen om te leven!",
+        "type_match": "Conceptueel",
+        "karakter": "Strijdbaar/Feestelijk",
+        "toelichting": "Verbindt de roeping uit Matteüs 4 met de brede menselijke roeping tot gerechtigheid en vrede.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "832",
+        "titel": "Geroepen om op weg te gaan",
+        "type_match": "Schriftlezing",
+        "karakter": "Pelgrimslied",
+        "toelichting": "Directe link met de discipelen die hun netten achterlaten (Matt. 4:20) om een onbekende weg te gaan.",
+        "suggestie_gebruik": "Na het Evangelie"
+      },
+      {
+        "nummer": "975",
+        "titel": "Jezus roept hier mensen samen",
+        "type_match": "Conceptueel",
+        "karakter": "Gemeenschapsvormend",
+        "toelichting": "Spreekt over de eenheid waar Paulus om smeekt in 1 Korintiërs 1. 'Geen verdeeldheid meer' wordt hier een gezongen gebed.",
+        "suggestie_gebruik": "Tafelgebed / Avondmaal"
+      },
+      {
+        "nummer": "998",
+        "titel": "Je hebt je vrienden toen bijeengeroepen",
+        "type_match": "Navolging",
+        "karakter": "Dienstbaar",
+        "toelichting": "Focus op de praktische kant van discipelschap: voeten wassen en dienen, wat de 'huiskamer'-functie van de Pauluskerk onderstreept.",
+        "suggestie_gebruik": "Diaconaal moment"
+      },
+      {
+        "nummer": "801",
+        "titel": "Door de nacht van strijd en zorgen",
+        "type_match": "Verrassend",
+        "karakter": "Processielied",
+        "toelichting": "Dit lied verbindt de 'nacht' van de wereld (actualiteit Gaza) met de gezamenlijke tocht naar het licht. Het benadrukt de eenheid van de pelgrims.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "11",
+        "titel": "Hij roept mijn naam",
+        "type_match": "Schriftlezing",
+        "karakter": "Intiem/Persoonlijk",
+        "toelichting": "De persoonlijke roeping van de vissers wordt hier vertaald naar de individuele gelovige. 'Ik hoor zijn stem'.",
+        "suggestie_gebruik": "Na de preek"
+      },
+      {
+        "nummer": "140",
+        "titel": "In de donkere nacht",
+        "type_match": "Thematisch",
+        "karakter": "Aanbidding",
+        "toelichting": "Een lied dat Jezus als het Licht in de nacht viert, passend bij de Epifanie-thematiek van het stralende licht in Galilea.",
+        "suggestie_gebruik": "Gloria-moment"
+      },
+      {
+        "nummer": "386",
+        "titel": "Wil je opstaan en Mij volgen",
+        "type_match": "Schriftlezing",
+        "karakter": "Uitdagend",
+        "toelichting": "The Summons (John Bell). Een indringende tekst over de radicaliteit van Matteüs 4: 'Zou je gaan waar je niet weet?'.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "391",
+        "titel": "U roept ons samen als kerk van de Heer",
+        "type_match": "Conceptueel",
+        "karakter": "Verbindend",
+        "toelichting": "Directe remedie tegen de verdeeldheid in 1 Kor. 1. Het benadrukt dat we geroepen zijn als één lichaam.",
+        "suggestie_gebruik": "Opening"
+      },
+      {
+        "nummer": "402",
+        "titel": "U maakt ons één",
+        "type_match": "Conceptueel",
+        "karakter": "Kort/Krachtig",
+        "toelichting": "Focus op de eenheid door de Geest, essentieel voor een gemeente die 'samen' kerk wil zijn in een diverse wijk.",
+        "suggestie_gebruik": "Gebed om eenheid"
+      },
+      {
+        "nummer": "501",
+        "titel": "U bent de God die roept",
+        "type_match": "Thematisch",
+        "karakter": "Belijdend",
+        "toelichting": "Een krachtige belijdenis van God als de Initiatiefnemer die ons uit de duisternis roept.",
+        "suggestie_gebruik": "Na de geloofsbelijdenis"
+      },
+      {
+        "nummer": "649",
+        "titel": "Licht van de wereld",
+        "type_match": "Thematisch",
+        "karakter": "Modern/Populair",
+        "toelichting": "Here I am to worship. Sluit aan bij de lichtsymboliek van Gouda en de Epifanie-gedachte van aanbidding.",
+        "suggestie_gebruik": "Lofprijzing"
+      },
+      {
+        "nummer": "676",
+        "titel": "God roept ons om overal",
+        "type_match": "Contextueel",
+        "karakter": "Missionair",
+        "toelichting": "Roept op om Gods licht te zijn in de wereld, passend bij de maatschappelijke betrokkenheid van de Pauluskerk.",
+        "suggestie_gebruik": "Zending en Zegen"
+      },
+      {
+        "nummer": "711",
+        "titel": "Wees in uw roeping eensgezind",
+        "type_match": "Schriftlezing",
+        "karakter": "Vermanend/Bemoedigend",
+        "toelichting": "Directe link met 1 Korintiërs 1:10. Een oproep tot vrede en onderlinge liefde.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "283",
+        "titel": "O Heer, de nacht komt over ons",
+        "type_match": "Verrassend",
+        "karakter": "Klaaglied/Smeekbede",
+        "toelichting": "Verbindt de 'nacht' van Jesaja met de actuele nood in de wereld (Gaza). Een lied dat de ernst van de duisternis niet schuwt.",
+        "suggestie_gebruik": "Voorbeden"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "11",
+        "titel": "Mijn licht, mijn heil is Hij",
+        "type_match": "Schriftlezing",
+        "karakter": "Opwekkend",
+        "toelichting": "Psalm 27 op een toegankelijke melodie. Versterkt het thema van veiligheid bij God.",
+        "suggestie_gebruik": "Opening"
+      },
+      {
+        "nummer": "76",
+        "titel": "Daar is uit ’s werelds duist’re wolken",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassiek/Hoopvol",
+        "toelichting": "Verklanking van Jesaja 9. Het licht dat door de wolken breekt.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "103",
+        "titel": "Want een kind is ons geboren",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijk",
+        "toelichting": "De bekende titels uit Jesaja 9 (Wonderbare Raadsman). Herinnert aan de bron van het licht.",
+        "suggestie_gebruik": "Na de eerste lezing"
+      },
+      {
+        "nummer": "210",
+        "titel": "U bent de God die roept",
+        "type_match": "Thematisch",
+        "karakter": "Toegewijd",
+        "toelichting": "Focus op het antwoord van de mens op Gods roepstem.",
+        "suggestie_gebruik": "Na de preek"
+      },
+      {
+        "nummer": "232",
+        "titel": "Jezus die langs het water liep",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend",
+        "toelichting": "Matteüs 4 in liedvorm. Zeer geschikt voor een dienst waar ook kinderen/jongeren bij betrokken zijn.",
+        "suggestie_gebruik": "Kindermoment / Evangelielezing"
+      },
+      {
+        "nummer": "325",
+        "titel": "Licht van de wereld",
+        "type_match": "Thematisch",
+        "karakter": "Aanbidding",
+        "toelichting": "Focus op de nederigheid van Christus die het licht bracht door mens te worden.",
+        "suggestie_gebruik": "Gloria"
+      },
+      {
+        "nummer": "362",
+        "titel": "U maakt ons één",
+        "type_match": "Conceptueel",
+        "karakter": "Gemeenschapslied",
+        "toelichting": "Korte krachtige bevestiging van de eenheid in Christus (1 Kor. 1).",
+        "suggestie_gebruik": "Rond de tafel"
+      },
+      {
+        "nummer": "363",
+        "titel": "U roept ons samen als kerk van de Heer",
+        "type_match": "Conceptueel",
+        "karakter": "Hymne",
+        "toelichting": "Benadrukt de roeping van de gemeente als geheel.",
+        "suggestie_gebruik": "Intocht"
+      },
+      {
+        "nummer": "489",
+        "titel": "Dit is mijn hand en dat mijn voet",
+        "type_match": "Verrassend",
+        "karakter": "Speels/Diep",
+        "toelichting": "Hoewel vaak als kinderlied gezien, verwoordt dit de diepe theologie van 1 Korintiërs 12 (en 1): we hebben elkaar nodig.",
+        "suggestie_gebruik": "Kindermoment"
+      },
+      {
+        "nummer": "533",
+        "titel": "Jezus is het Licht der wereld",
+        "type_match": "Thematisch",
+        "karakter": "Getuigend",
+        "toelichting": "Eenvoudige maar krachtige proclamatie van het thema.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "18",
+        "titel": "Er is uit ’s werelds duistere wolken",
+        "type_match": "Schriftlezing",
+        "karakter": "Statig/Hoopvol",
+        "toelichting": "Een klassieke verwerking van Jesaja 9. Het licht dat de onderdrukking beëindigt.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "41",
+        "titel": "Jezus die langs het water liep",
+        "type_match": "Schriftlezing",
+        "karakter": "Eenvoudig/Verhalend",
+        "toelichting": "De roeping aan de zee van Galilea (Matt. 4) op een bekende melodie.",
+        "suggestie_gebruik": "Na het Evangelie"
+      },
+      {
+        "nummer": "73",
+        "titel": "Bewaar de eenheid van Gods Geest",
+        "type_match": "Schriftlezing",
+        "karakter": "Vermanend",
+        "toelichting": "Directe aansluiting bij de oproep van Paulus in 1 Kor. 1 om verdeeldheid te mijden.",
+        "suggestie_gebruik": "Antwoordlied na Epistel"
+      },
+      {
+        "nummer": "107",
+        "titel": "Het volk dat wandelt in het duister",
+        "type_match": "Schriftlezing",
+        "karakter": "Plechtig",
+        "toelichting": "Focus op de namen van de Messias en de vrede die Hij brengt.",
+        "suggestie_gebruik": "Loflied"
+      },
+      {
+        "nummer": "231",
+        "titel": "Door de nacht van strijd en zorgen",
+        "type_match": "Thematisch",
+        "karakter": "Pelgrimslied",
+        "toelichting": "Verbindt de eenheid van de kerk met de tocht door de wereldse duisternis.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "359",
+        "titel": "Vrede zij u",
+        "type_match": "Conceptueel",
+        "karakter": "Zegenend",
+        "toelichting": "De vrede die alle verstand te boven gaat, als antwoord op de onrust in de wereld.",
+        "suggestie_gebruik": "Zending"
+      },
+      {
+        "nummer": "366",
+        "titel": "Ik heb slechts één houvast",
+        "type_match": "Conceptueel",
+        "karakter": "Belijdend",
+        "toelichting": "Focus op de exclusieve verbondenheid met Christus, wat de basis is voor de eenheid waar Paulus over schrijft.",
+        "suggestie_gebruik": "Na de preek"
+      },
+      {
+        "nummer": "503",
+        "titel": "Blijf mij nabij",
+        "type_match": "Contextueel",
+        "karakter": "Verstild",
+        "toelichting": "Abide with me. De avond/nacht-symboliek die troost biedt in tijden van kou en duisternis (Gaza-context).",
+        "suggestie_gebruik": "Avondgebed / Voorbeden"
+      },
+      {
+        "nummer": "610",
+        "titel": "Ik heb je bij je naam geroepen",
+        "type_match": "Thematisch",
+        "karakter": "Troostend",
+        "toelichting": "De roeping begint bij de doop. God die ons kent en roept.",
+        "suggestie_gebruik": "Doopgedachtenis"
+      },
+      {
+        "nummer": "111",
+        "titel": "Nu daagt het in het oosten",
+        "type_match": "Seizoen",
+        "karakter": "Lichtlied",
+        "toelichting": "Klassiek Epifanie-lied over het licht dat de volken verblijdt.",
+        "suggestie_gebruik": "Opening"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "27",
+        "titel": "De HERE is mijn licht",
+        "type_match": "Schriftlezing",
+        "karakter": "Vertrouwend",
+        "toelichting": "De klassieke berijming van de voorgeschreven psalm. 'Voor wie zou ik vrezen?'.",
+        "suggestie_gebruik": "Psalm van de zondag"
+      },
+      {
+        "nummer": "133",
+        "titel": "Hoe goed is ’t als er broeders wonen",
+        "type_match": "Schriftlezing",
+        "karakter": "Harmonieus",
+        "toelichting": "De ultieme psalm over eenheid, passend bij 1 Korintiërs 1.",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "43",
+        "titel": "Zend, HEER, uw licht en waarheid",
+        "type_match": "Thematisch",
+        "karakter": "Smeekbede",
+        "toelichting": "Vraagt om Gods licht als gids, passend bij de roeping om te volgen.",
+        "suggestie_gebruik": "Gebed om het Woord"
+      },
+      {
+        "nummer": "36",
+        "titel": "Want bij U is de bron des levens",
+        "type_match": "Thematisch",
+        "karakter": "Lofprijzend",
+        "toelichting": "'In uw licht zien wij het licht'. De kern van Epifanie.",
+        "suggestie_gebruik": "Gloria"
+      },
+      {
+        "nummer": "18",
+        "titel": "Gij doet mijn lamp schijnen",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "God die de duisternis van de gelovige verlicht.",
+        "suggestie_gebruik": "Dankzegging"
+      },
+      {
+        "nummer": "147",
+        "titel": "Hij geeft de sneeuw als wol",
+        "type_match": "Verrassend",
+        "karakter": "Natuur/Context",
+        "toelichting": "Verbindt de winterse kou (actualiteit) met Gods macht over de elementen en Zijn zorg voor de stad (Jeruzalem/Gouda).",
+        "suggestie_gebruik": "Collectemoment"
+      },
+      {
+        "nummer": "122",
+        "titel": "Om de broeders en de vrienden",
+        "type_match": "Conceptueel",
+        "karakter": "Vredelievend",
+        "toelichting": "Bidt om vrede voor de stad en eenheid onder de gelovigen.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "4",
+        "titel": "Verhef over ons het licht",
+        "type_match": "Thematisch",
+        "karakter": "Rustgevend",
+        "toelichting": "Vraagt om Gods licht over ons gelaat, wat meer vreugde geeft dan koren en wijn.",
+        "suggestie_gebruik": "Avondmaalslied"
+      },
+      {
+        "nummer": "119",
+        "titel": "Uw woord is een lamp",
+        "type_match": "Thematisch",
+        "karakter": "Leidinggevend",
+        "toelichting": "Het Woord als het licht op het pad van de discipel.",
+        "suggestie_gebruik": "Voor de schriftlezing"
+      },
+      {
+        "nummer": "86",
+        "titel": "Hoor mij, HEER",
+        "type_match": "Conceptueel",
+        "karakter": "Ootmoedig",
+        "toelichting": "Vraagt om een onverdeeld hart ('Maak mijn hart één'), wat aansluit bij de roep om eenheid.",
+        "suggestie_gebruik": "Kyrie"
+      }
+    ]
   },
   "08c_commentaries": {
     "exegese_eerste_lezing": {

@@ -480,12 +480,51 @@ def haal_bijbeltekst_op(referentie: BijbelReferentie) -> Tuple[Optional[str], Op
 def extract_lezingen_uit_liturgie(liturgie_tekst: str) -> list[tuple[str, str]]:
     """Extraheer bijbelreferenties uit de liturgische context tekst.
 
+    Haalt alleen de officiële lezingen uit de 'lezingen' key van de JSON.
+
     Returns:
         List of tuples (original_reference, normalized_reference)
     """
     referenties = []  # List of (original, normalized) tuples
     seen_originals = set()
 
+    # Probeer eerst de liturgie_tekst te parsen als JSON
+    try:
+        data = json.loads(liturgie_tekst)
+
+        # Haal alleen referenties uit de 'lezingen' key
+        if 'lezingen' in data:
+            lezingen_obj = data['lezingen']
+
+            # Haal referenties uit de standaard lezingen
+            for key in ['eerste_lezing', 'tweede_lezing', 'derde_lezing', 'epistel', 'evangelie', 'psalm']:
+                if key in lezingen_obj and isinstance(lezingen_obj[key], dict):
+                    ref = lezingen_obj[key].get('referentie', '')
+                    if ref and ref not in seen_originals:
+                        # Speciale behandeling voor psalm nummers
+                        if key == 'psalm' and re.match(r'^\d+$', ref):
+                            ref = f"Psalm {ref}"
+                        normalized = normalize_scripture_reference(ref)
+                        referenties.append((ref, normalized))
+                        seen_originals.add(ref)
+
+            # Haal referenties uit alternatieve lezingen
+            if 'alternatieve_lezingen' in lezingen_obj and isinstance(lezingen_obj['alternatieve_lezingen'], list):
+                for alt in lezingen_obj['alternatieve_lezingen']:
+                    if isinstance(alt, dict):
+                        ref = alt.get('referentie', '')
+                        if ref and ref not in seen_originals:
+                            normalized = normalize_scripture_reference(ref)
+                            referenties.append((ref, normalized))
+                            seen_originals.add(ref)
+
+        return referenties
+
+    except (json.JSONDecodeError, KeyError, TypeError):
+        # Fallback naar oude regex methode als JSON parsing mislukt
+        pass
+
+    # Oude regex methode (fallback)
     patronen = [
         # Markdown patronen
         # Updated regex to capture multi-part references like "Sefanja 2:3 en 3:12-13"
