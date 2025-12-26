@@ -2272,36 +2272,36 @@
           {
             "naam": "1e zondag van de Veertigdagentijd (Invocabit)",
             "type": "zondag",
-            "toelichting": "De naam 'Invocabit' verwijst naar Psalm 91:15: 'Hij zal Mij aanroepen'. Het markeert de overgang van de voorbereiding naar de daadwerkelijke woestijnreis van veertig dagen."
+            "toelichting": "De naam 'Invocabit' stamt uit Psalm 91:15: 'Hij zal Mij aanroepen'. Deze zondag markeert de intrede in de woestijn van de veertig dagen, spiegelend aan de tocht van Israël en de vastentijd van Jezus."
           },
           {
             "naam": "Start Veertigdagentijdcampagne Kerk in Actie",
             "type": "herdenking",
-            "toelichting": "Landelijke start van de diaconale campagne. Dit jaar met een sterke focus op voedselzekerheid en hulp in conflictgebieden, wat direct raakt aan de 'brood-verzoeking' uit het evangelie."
+            "toelichting": "Landelijke aftrap van de diaconale campagne. In 2026 ligt de focus op voedselzekerheid en noodhulp in conflictgebieden (Oekraïne/Gaza), wat een directe brug slaat naar de eerste verzoeking: 'Niet bij brood alleen'."
           },
           {
             "naam": "H. Margaretha van Cortona",
             "type": "heilige",
-            "toelichting": "Patrones van boetelingen. Haar leven van radicale ommekeer en soberheid na een turbulent verleden spiegelt de roep tot inkeer die centraal staat op deze eerste lijdenszondag."
+            "toelichting": "Patrones van boetelingen en mensen die een nieuwe start maken. Haar leven van radicale inkeer na een periode van uiterlijk vertoon resoneert met de oproep tot soberheid op deze eerste lijdenszondag."
           }
         ],
         "joods": {
           "hebreeuwse_datum": "5 Adar 5786",
           "feestdag": null,
           "parasja": "Tetzaveh (Exodus 27:20–30:10)",
-          "toelichting": "Deze parasja beschrijft de zorg voor het eeuwige licht (Ner Tamid) en de heilige kleding van de priesters. Het thema van 'toewijding' en 'verschijnen voor God' vormt een prachtig joods contrapunt bij de verzoeking van Jezus in de tempel."
+          "toelichting": "Deze parasja gaat over het 'eeuwige licht' (Ner Tamid) en de priesterkleding. Het thema van toewijding en het brandend houden van het licht in de tabernakel biedt een prachtig contrast met de duisternis van de woestijnverzoeking."
         },
         "internationaal": [
           {
             "naam": "World Thinking Day",
             "organisatie": "WAGGGS / WOSM",
-            "relevantie": "Dag van bezinning voor scouts en gidsen wereldwijd. In een dorp als Waarder, waar gemeenschapszin en jeugdwerk (zoals WonderKids) belangrijk zijn, kan dit een haakje zijn voor 'nadenken over je keuzes'."
+            "relevantie": "Een dag van bezinning voor scouts wereldwijd. Voor de jeugd in Waarder (WonderKids/Rock Solid) een haakje om na te denken over hun plek in de wereldwijde gemeenschap."
           }
         ],
         "nationaal": [],
         "vakantie": {
           "schoolvakantie": "Voorjaarsvakantie (laatste dag)",
-          "regio": "Midden (waaronder Waarder) en Zuid"
+          "regio": "Midden (o.a. Waarder) en Zuid"
         },
         "weer": {
           "verwachting": "Weersverwachting nog niet beschikbaar (huidige datum: 26 december 2025).",
@@ -2313,13 +2313,13 @@
           "zonsopgang": "07:46",
           "zonsondergang": "18:09",
           "maanfase": "Wassende sikkel (23% verlicht)",
-          "bijzonderheden": "De toenemende maan in de vroege avond symboliseert het groeiende licht, zelfs terwijl we de donkere veertigdagentijd binnengaan."
+          "bijzonderheden": "De maan staat als een fijn zilveren lijntje aan de hemel, een symbool van het beginnende licht in de veertig dagen van inkeer."
         },
         "overig": [
           {
             "categorie": "maatschappelijk",
             "naam": "Einde krokusvakantie",
-            "toelichting": "De overgang van vakantierust naar de 'ratrace' van alledag versterkt de thematiek van de verzoeking: hoe behouden we de focus op God in de drukte?"
+            "toelichting": "De overgang van de vakantierust naar de 'ratrace' van de maandag versterkt de thematiek van de verzoeking: hoe blijven we bij het Woord als de drukte weer toeslaat?"
           }
         ]
       },
@@ -2331,11 +2331,65 @@
           {
             "naam": "H. Polycarpus van Smyrna",
             "type": "martelaar",
-            "toelichting": "Een van de belangrijkste apostolische vaders en leerling van Johannes. Zijn weigering om de keizer als god te aanbidden ('Tachtig en zes jaar heb ik Hem gediend...') is de ultieme historische uitwerking van Jezus' antwoord op de derde verzoeking."
+            "toelichting": "Leerling van de apostel Johannes. Zijn weigering om de keizer als god te aanbidden ('Tachtig en zes jaar heb ik Hem gediend...') is de ultieme historische belichaming van Jezus' antwoord op de derde verzoeking: 'De Heere uw God zult gij aanbidden'."
           }
         ],
         "joods": {
           "hebreeuwse_datum": "6 Adar 5786",
+          "feestdag": null,
+          "parasja": null,
+          "toelichting": null
+        },
+        "internationaal": [],
+        "nationaal": [],
+        "vakantie": null,
+        "weer": null,
+        "astronomie": null,
+        "overig": []
+      },
+      {
+        "datum": "Dinsdag 24 februari 2026",
+        "dag": "dinsdag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "H. Matthias",
+            "type": "heilige",
+            "toelichting": "De apostel die door het lot werd gekozen om de plaats van Judas in te nemen. Zijn verkiezing herinnert aan de noodzaak van trouw binnen de kring van volgelingen, juist na verraad en verzoeking."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "7 Adar 5786",
+          "feestdag": "Zeventiende van Adar (Traditionele sterfdag van Mozes)",
+          "parasja": null,
+          "toelichting": "Mozes stierf op de grens van het beloofde land na veertig jaar woestijn. Dit verbindt de woestijnreis van Jezus direct met de geschiedenis van Israël."
+        },
+        "internationaal": [],
+        "nationaal": [],
+        "vakantie": null,
+        "weer": null,
+        "astronomie": null,
+        "overig": [
+          {
+            "categorie": "historisch",
+            "naam": "Introductie Gregoriaanse Kalender (1582)",
+            "toelichting": "Paus Gregorius XIII kondigde op deze dag de kalenderhervorming aan. Een moment om stil te staan bij hoe wij onze tijd ordenen voor God."
+          }
+        ]
+      },
+      {
+        "datum": "Woensdag 25 februari 2026",
+        "dag": "woensdag",
+        "is_preekzondag": false,
+        "kerkelijk": [
+          {
+            "naam": "H. Walburga",
+            "type": "heilige",
+            "toelichting": "Beschermheilige tegen honger en misoogst. In een agrarische context als Waarder een relevant figuur bij de eerste verzoeking over het brood en de afhankelijkheid van de oogst."
+          }
+        ],
+        "joods": {
+          "hebreeuwse_datum": "8 Adar 5786",
           "feestdag": null,
           "parasja": null,
           "toelichting": null
@@ -2355,7 +2409,7 @@
           {
             "naam": "H. Gregorius van Narek",
             "type": "heilige",
-            "toelichting": "Armeense monnik en kerkleraar. Zijn 'Boek der Weeklagingen' is een diepmenselijke dialoog met God vanuit de diepte van het tekortschieten. Zeer passend bij de sfeer van Psalm 51."
+            "toelichting": "Armeense monnik en kerkleraar, bekend om zijn 'Boek der Weeklagingen'. Zijn diepe besef van menselijk tekort en de roep om genade sluit naadloos aan bij Psalm 51 en de sfeer van de Veertigdagentijd."
           }
         ],
         "joods": {
@@ -2368,7 +2422,7 @@
           {
             "naam": "Wereld NGO Dag",
             "organisatie": "Internationaal",
-            "relevantie": "Een moment om stil te staan bij het werk van organisaties die wereldwijd onrecht bestrijden, passend bij de diaconale opdracht van de Veertigdagentijd."
+            "relevantie": "Een dag om het werk van maatschappelijke organisaties te eren. In de kerkelijke context een moment om de partners van Kerk in Actie in conflictgebieden te gedenken."
           }
         ],
         "nationaal": [],
@@ -2381,12 +2435,18 @@
         "datum": "Zaterdag 28 februari 2026",
         "dag": "zaterdag",
         "is_preekzondag": false,
-        "kerkelijk": [],
+        "kerkelijk": [
+          {
+            "naam": "H. Romanus van Condat",
+            "type": "heilige",
+            "toelichting": "Een kluizenaar die de eenzaamheid van de bossen opzocht voor gebed. Hij verbeeldt de 'vrijwillige woestijn' als plek van ontmoeting met God."
+          }
+        ],
         "joods": {
           "hebreeuwse_datum": "11 Adar 5786",
           "feestdag": "Sabbat",
           "parasja": "Ki Tisa (Exodus 30:11–34:35)",
-          "toelichting": "Bevat het dramatische verhaal van het Gouden Kalf. Terwijl Mozes op de berg is, bezwijkt het volk in de woestijn voor de verzoeking van een tastbare god. Dit vormt een scherp contrast met Jezus die in de woestijn wél standhoudt."
+          "toelichting": "Bevat het verhaal van het Gouden Kalf. Terwijl Mozes op de berg is, bezwijkt het volk voor de verzoeking van een tastbare god. Dit vormt het scherpste contrast met Jezus die in de woestijn wél standhoudt tegen de afgoderij."
         },
         "internationaal": [],
         "nationaal": [],
@@ -2397,10 +2457,11 @@
       }
     ],
     "aandachtspunten_predikant": [
-      "De overgang van de voorjaarsvakantie naar het normale werkritme op maandag kan in de preek gebruikt worden als het moment waarop de 'verzoekingen van de wereld' weer harder gaan roepen.",
-      "Het getuigenis van Polycarpus (maandag) biedt een krachtig historisch voorbeeld van iemand die de derde verzoeking (macht/keizeraanbidding) weerstond tot in de dood.",
-      "De Joodse parasja van deze week (Ki Tisa) over het Gouden Kalf is een exegetisch goudmijntje om het falen van Israël in de woestijn te contrasteren met de overwinning van Jezus.",
-      "De start van de Kerk in Actie campagne op zondag vraagt om een concrete verbinding tussen de 'honger' in de wereld en Jezus' weigering om stenen in brood te veranderen voor eigen gewin."
+      "Gebruik de martelaar Polycarpus (maandag) als krachtig voorbeeld van weerstand tegen de 'derde verzoeking' (wereldse macht/aanbidding).",
+      "De Joodse parasja 'Ki Tisa' (zaterdag) over het Gouden Kalf biedt een perfecte typologische tegenstelling: het falende volk in de woestijn versus de zegevierende Christus.",
+      "De overgang van de voorjaarsvakantie naar de werkweek op maandag is een existentieel moment voor de hoorders (zoals Marleen en Jeroen) om de 'verzoeking van de ratrace' te thematiseren.",
+      "Koppel de Wereld NGO Dag (vrijdag) aan de concrete projecten van de Kerk in Actie campagne die deze zondag start.",
+      "De sterfdag van Mozes (dinsdag) herinnert aan de veertig jaar woestijn als loutering, wat de veertig dagen van de gemeente in een groter heilsverhaal plaatst."
     ]
   },
   "12_representatieve_hoorders": {
