@@ -378,8 +378,8 @@
         }
 
         .section-info-panel {
-            flex: 0 0 320px;
-            width: 320px;
+            flex: 0 0 400px;
+            width: 400px;
             background: var(--bg-secondary);
             padding: 20px;
             border-radius: 8px;
@@ -2374,13 +2374,30 @@
             // Render meta box first
             if (jsonData['00_meta']) {
                 const meta = jsonData['00_meta'];
+                const metaKey = '00_meta';
+                
+                let infoPanelHtml = '';
+                if (sectionInfo && sectionInfo[metaKey]) {
+                    infoPanelHtml = `
+                        <div class="section-info-panel">
+                            <div class="section-info-title">Algemene informatie</div>
+                            <div class="section-info-text">${processText(sectionInfo[metaKey])}</div>
+                        </div>
+                    `;
+                }
+
                 html += `
-                    <div class="meta-box bevel-raised">
-                        <h1>${escapeHtml(meta.plaatsnaam || 'Liturgische Analyse')}</h1>
-                        <div class="gemeente">${escapeHtml(meta.gemeente || '')}</div>
-                        <div class="datum">${escapeHtml(meta.datum || '')}</div>
-                        <div class="adres">${escapeHtml(meta.adres || '')}</div>
-                        ${meta.website ? `<a href="${escapeHtml(meta.website)}" target="_blank">${escapeHtml(meta.website)}</a>` : ''}
+                    <div class="section-layout" style="margin-bottom: 30px;">
+                        <div class="section-main-content">
+                            <div class="meta-box bevel-raised" style="margin-bottom: 0;">
+                                <h1>${escapeHtml(meta.plaatsnaam || 'Liturgische Analyse')}</h1>
+                                <div class="gemeente">${escapeHtml(meta.gemeente || '')}</div>
+                                <div class="datum">${escapeHtml(meta.datum || '')}</div>
+                                <div class="adres">${escapeHtml(meta.adres || '')}</div>
+                                ${meta.website ? `<a href="${escapeHtml(meta.website)}" target="_blank">${escapeHtml(meta.website)}</a>` : ''}
+                            </div>
+                        </div>
+                        ${infoPanelHtml}
                     </div>
                 `;
             }
