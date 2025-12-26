@@ -1023,10 +1023,14 @@ def main():
 
         # Gebruik temperature 0.8 voor alle gebeden, preken en illustraties
         is_creative = (name.startswith("14_gebeden") or
+                      name.startswith("15_bezinningsmoment") or
+                      name.startswith("15_kindermoment") or
+
                       name.startswith("16_preek") or
                       name.startswith("17_preek") or
                       name.startswith("18_preek") or
                       name.startswith("19_preek") or
+
                       name == "13b_homiletische_illustraties")
         temp = 0.8 if is_creative else 0.2
         result = run_analysis(client, full_prompt, title, temperature=temp)
