@@ -54,6 +54,42 @@ MODEL_NAME = "gemini-3-flash-preview"
 MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
+def normalize_scripture_reference(reference: str) -> str:
+    """Normaliseer schriftverwijzingen door 'a'/'b' suffixen te verwijderen en
+    cross-hoofdstuk referenties te splitsen.
+
+    Voorbeelden:
+        "Jesaja 8:23b-9:3" -> "Jesaja 8:23 en Jesaja 9:1-3"
+        "Marcus 1:14a-15" -> "Marcus 1:14-15"
+        "Genesis 2:4b" -> "Genesis 2:4"
+    """
+    if not reference or not isinstance(reference, str):
+        return reference
+
+    # Verwijder 'a' of 'b' achter versnummers
+    # Pattern: cijfer gevolgd door 'a' of 'b'
+    normalized = re.sub(r'(\d+)[ab]\b', r'\1', reference)
+
+    # Detecteer cross-hoofdstuk referenties (bijv. "Jesaja 8:23-9:3")
+    # Pattern: Boeknaam Hoofdstuk1:Vers1-Hoofdstuk2:Vers2
+    cross_chapter_pattern = r'^((?:\d\s+)?[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)\s+(\d+):(\d+)[-–](\d+):(\d+)$'
+    match = re.match(cross_chapter_pattern, normalized)
+
+    if match:
+        book = match.group(1)
+        chapter1 = match.group(2)
+        verse1 = match.group(3)
+        chapter2 = match.group(4)
+        verse2 = match.group(5)
+
+        # Split in twee referenties
+        # Eerste deel: van vers1 tot einde van hoofdstuk (we nemen aan dat hoofdstukken niet langer zijn dan 200 verzen)
+        # Tweede deel: van begin van hoofdstuk2 tot vers2
+        normalized = f"{book} {chapter1}:{verse1} en {book} {chapter2}:1-{verse2}"
+
+    return normalized
+
+
 def load_prompt(filename: str, user_input: dict) -> str:
     """Laad een prompt uit een markdown bestand en vervang placeholders.
 

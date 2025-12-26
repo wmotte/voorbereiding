@@ -159,6 +159,42 @@ for code, names in MAPPINGS_SOURCE.items():
         NAME_TO_CODE[name.upper()] = code
 
 
+def normalize_scripture_reference(reference: str) -> str:
+    """Normaliseer schriftverwijzingen door 'a'/'b' suffixen te verwijderen en
+    cross-hoofdstuk referenties te splitsen.
+
+    Voorbeelden:
+        "Jesaja 8:23b-9:3" -> "Jesaja 8:23 en Jesaja 9:1-3"
+        "Marcus 1:14a-15" -> "Marcus 1:14-15"
+        "Genesis 2:4b" -> "Genesis 2:4"
+    """
+    if not reference or not isinstance(reference, str):
+        return reference
+
+    # Verwijder 'a' of 'b' achter versnummers
+    # Pattern: cijfer gevolgd door 'a' of 'b'
+    normalized = re.sub(r'(\d+)[ab]\b', r'\1', reference)
+
+    # Detecteer cross-hoofdstuk referenties (bijv. "Jesaja 8:23-9:3")
+    # Pattern: Boeknaam Hoofdstuk1:Vers1-Hoofdstuk2:Vers2
+    cross_chapter_pattern = r'^((?:\d\s+)?[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)\s+(\d+):(\d+)[-–](\d+):(\d+)$'
+    match = re.match(cross_chapter_pattern, normalized)
+
+    if match:
+        book = match.group(1)
+        chapter1 = match.group(2)
+        verse1 = match.group(3)
+        chapter2 = match.group(4)
+        verse2 = match.group(5)
+
+        # Split in twee referenties met " en " als separator
+        # Eerste deel: van vers1 tot einde van hoofdstuk
+        # Tweede deel: van begin van hoofdstuk2 tot vers2
+        normalized = f"{book} {chapter1}:{verse1} en {book} {chapter2}:1-{verse2}"
+
+    return normalized
+
+
 def parse_bijbelreferentie(tekst: str) -> Optional[BijbelReferentie]:
     """Parse een bijbelreferentie string naar een BijbelReferentie object.
     Handles verse suffixes like 'a' or 'b' (e.g., "3a") by ignoring them.
@@ -441,9 +477,15 @@ def haal_bijbeltekst_op(referentie: BijbelReferentie) -> Tuple[Optional[str], Op
 
     return '\n\n'.join(md_lines), data
 
-def extract_lezingen_uit_liturgie(liturgie_tekst: str) -> list[str]:
-    """Extraheer bijbelreferenties uit de liturgische context tekst."""
-    referenties = []
+def extract_lezingen_uit_liturgie(liturgie_tekst: str) -> list[tuple[str, str]]:
+    """Extraheer bijbelreferenties uit de liturgische context tekst.
+
+    Returns:
+        List of tuples (original_reference, normalized_reference)
+    """
+    referenties = []  # List of (original, normalized) tuples
+    seen_originals = set()
+
     patronen = [
         # Markdown patronen
         # Updated regex to capture multi-part references like "Sefanja 2:3 en 3:12-13"
@@ -461,15 +503,22 @@ def extract_lezingen_uit_liturgie(liturgie_tekst: str) -> list[str]:
                 ref = next((m for m in match if m), "").strip()
             else:
                 ref = match.strip()
-            
+
             if re.match(r'^\d+$', ref): ref = f"Psalm {ref}"
-            if ref and ref not in referenties and len(ref) > 3: # min length check
-                referenties.append(ref)
+            if ref and len(ref) > 3: # min length check
+                if ref not in seen_originals:
+                    # Normaliseer de referentie (verwijder a/b, split cross-hoofdstuk)
+                    normalized = normalize_scripture_reference(ref)
+                    referenties.append((ref, normalized))
+                    seen_originals.add(ref)
 
     bullet_pattern = r'[-*]\s*\*?\*?([A-Za-zëïüéèöä]+(?:\s+\d)?)\s+(\d+):(\d+)(?:[-–](\d+))?(?:\s*\([^)]+\))?'
     for match in re.finditer(bullet_pattern, liturgie_tekst):
         ref = f"{match.group(1).strip()} {match.group(2)}:{match.group(3)}-{match.group(4) or match.group(3)}"
-        if ref not in referenties: referenties.append(ref)
+        if ref not in seen_originals:
+            normalized = normalize_scripture_reference(ref)
+            referenties.append((ref, normalized))
+            seen_originals.add(ref)
 
     return referenties
 
@@ -487,26 +536,28 @@ def download_lezingen(output_dir: Path, liturgie_tekst: str) -> dict[str, str]:
     bijbel_dir = output_dir / "bijbelteksten"
     bijbel_dir.mkdir(exist_ok=True)
 
-    referenties_raw = extract_lezingen_uit_liturgie(liturgie_tekst)
-    if not referenties_raw:
+    referenties_tuples = extract_lezingen_uit_liturgie(liturgie_tekst)
+    if not referenties_tuples:
         print("  Geen bijbelreferenties gevonden.")
         return {}
 
-    print(f"  Gevonden referenties: {', '.join(referenties_raw)}")
+    # Print alleen de originele referenties
+    original_refs = [orig for orig, _ in referenties_tuples]
+    print(f"  Gevonden referenties: {', '.join(original_refs)}")
     resultaten = {}
     seen_refs = set()
 
-    for raw_ref in referenties_raw:
-        # Skip duplicates based on the raw string
-        if raw_ref in seen_refs: continue
-        seen_refs.add(raw_ref)
+    for original_ref, normalized_ref in referenties_tuples:
+        # Skip duplicates based on the original string
+        if original_ref in seen_refs: continue
+        seen_refs.add(original_ref)
 
-        print(f"  Verwerken: {raw_ref}")
+        print(f"  Verwerken: {original_ref}")
 
         # 1. Parse into sub-references (handling ; and "en")
         # Normalize separators: Replace ' en ' and '&' with ';'
-        normalized_ref = re.sub(r'\s+(?:en|&)\s+', ';', raw_ref)
-        parts = re.split(r'[;]', normalized_ref)
+        normalized_ref_for_split = re.sub(r'\s+(?:en|&)\s+', ';', normalized_ref)
+        parts = re.split(r'[;]', normalized_ref_for_split)
         
         sub_refs = []
         last_book = None
@@ -589,26 +640,26 @@ def download_lezingen(output_dir: Path, liturgie_tekst: str) -> dict[str, str]:
 
         # 3. Save combined result
         if all_pericopes:
-            # Filename generation based on the FULL raw reference
-            safe_name = raw_ref.replace(':', '_').replace(' ', '_').replace(';', '_')
+            # Filename generation based on the ORIGINAL reference (not normalized)
+            safe_name = original_ref.replace(':', '_').replace(' ', '_').replace(';', '_')
             safe_name = re.sub(r'[^\w\-.]', '', safe_name)
             # Limit length
             if len(safe_name) > 60: safe_name = safe_name[:60]
 
             json_path = bijbel_dir / f"{safe_name}_NB.json"
-            
+
             # If single pericope, save as object (for backward compatibility if preferred, but list is safer for generic)
             # However, existing loaders might expect object for single files.
             # nbv21 saves list if > 1. Let's do same.
             final_data = all_pericopes if len(all_pericopes) > 1 else all_pericopes[0]
-            
+
             with open(json_path, 'w', encoding='utf-8') as f:
                 json.dump(final_data, f, indent=2, ensure_ascii=False)
-                
+
             print(f"  ✓ Opgeslagen: {json_path.name}")
-            resultaten[raw_ref] = str(json_path)
+            resultaten[original_ref] = str(json_path)
         else:
-            print(f"  ✗ Kon niet ophalen: {raw_ref}")
+            print(f"  ✗ Kon niet ophalen: {original_ref}")
 
     return resultaten
 

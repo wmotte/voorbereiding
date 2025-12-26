@@ -11,126 +11,122 @@
     "positie_kerkelijk_jaar": {
       "zondag_naam": "3e zondag na Epifanie",
       "liturgische_periode": "Epifaniëntijd",
-      "weken_tot_hoofdfeest": "3 weken en 3 dagen tot Aswoensdag (start Veertigdagentijd)",
+      "weken_tot_hoofdfeest": "3 weken na Epifanie / 3,5 week voor aanvang Veertigdagentijd",
       "leesrooster_jaar": "A",
       "dominant_evangelie": "Matteüs"
     },
     "traditionele_naam": {
-      "latijnse_naam": "Adorate Deum",
-      "oorsprong": "Naar de introïtus van deze zondag in de oudere traditie: 'Adorate Deum omnes angeli eius' (Aanbidt God, al zijn engelen - Psalm 97:7). In de huidige PKN-praktijk wordt deze naam zelden gebruikt.",
-      "nederlandse_vertaling": "Aanbidt God",
+      "latijnse_naam": null,
+      "oorsprong": "De zondagen na Epifanie hebben in de protestantse traditie geen specifieke Latijnse namen zoals de zondagen in de lijdenstijd. De focus ligt op de voortgaande openbaring (epifanie) van Christus aan de wereld.",
+      "nederlandse_vertaling": "Derde zondag na Verschijning",
       "volksnamen": [
-        "Zondag van de Eenheid"
+        "Zondag van de Roeping",
+        "Afsluiting Week van Gebed"
       ]
     },
     "bijzondere_zondag_pkn": {
       "is_bijzonder": true,
-      "naam": "Afsluiting Week van Gebed voor Eenheid van Christenen",
-      "toelichting": "De Week van Gebed loopt traditioneel van 18 tot 25 januari. Deze zondag valt samen met de feestdag van de Bekering van Paulus (25 januari) en markeert vaak de oecumenische viering of afsluiting van deze gebedsweek."
+      "naam": "Week van Gebed voor de Eenheid van de Christenen",
+      "toelichting": "Deze zondag markeert de afsluiting van de internationale gebedsweek (18-25 januari 2026). Het landelijke thema voor 2026 is 'Eén van Geest', gebaseerd op Efeziërs 4:1-13. Het materiaal is dit jaar voorbereid door christenen uit Armenië."
     },
     "liturgische_kleur": {
       "kleur": "groen",
-      "symboliek": "De kleur van de tijd door het jaar (Epifaniëntijd na de doop van de Heer). Groen staat voor groei, hoop en het leven met God in de alledaagse werkelijkheid, volgend op de openbaring van het licht.",
+      "symboliek": "Kleur van hoop, groei en leven. Het symboliseert de tijd van het jaar waarin de kerk groeit door de verkondiging van het evangelie na de verschijning van Christus.",
       "praktische_suggesties": [
         "Groen antependium en stola",
-        "Bloemschikking met groene basis en lichte accenten (verwijzend naar het licht uit de lezingen)",
-        "Eventueel symbool van de oecumene (bootje, regenboog) toevoegen vanwege de Week van Gebed"
+        "Bloemschikking met veel bladgroen en accenten van licht (verwijzend naar Jesaja 9)",
+        "Eventueel oecumenische symbolen toevoegen vanwege de Week van Gebed"
       ]
     },
     "lezingen": {
       "eerste_lezing": {
         "referentie": "Jesaja 8:23b-9:3",
         "boek": "Jesaja",
-        "hoofdstuk": 9,
-        "verzen": "8:23b-9:3",
-        "thema": "Profetie over het licht dat schijnt over Galilea en de vreugde van de bevrijding"
+        "hoofdstuk": 8,
+        "verzen": "23b-9:3",
+        "thema": "Het volk dat in duisternis wandelt ziet een groot licht"
       },
       "epistel": {
-        "referentie": "1 Korintiërs 1:10-13.17",
+        "referentie": "1 Korintiërs 1:10-13, 17",
         "boek": "1 Korintiërs",
         "hoofdstuk": 1,
         "verzen": "10-13, 17",
-        "thema": "Oproep tot eenheid en waarschuwing tegen verdeeldheid in de gemeente"
+        "thema": "Oproep tot eenheid en het voorkomen van verdeeldheid"
       },
       "evangelie": {
         "referentie": "Matteüs 4:12-23",
         "boek": "Matteüs",
         "hoofdstuk": 4,
         "verzen": "12-23",
-        "thema": "Jezus begint zijn optreden in Galilea (vervulling Jesaja) en roept de eerste discipelen"
+        "thema": "Begin van Jezus' optreden in Galilea en de roeping van de eerste leerlingen"
       },
       "psalm": {
         "referentie": "Psalm 27",
         "nummer": 27,
-        "verzen": "1, 4-5, 13-14",
+        "verzen": "1-9",
         "antifoon": "De Heer is mijn licht en mijn heil, voor wie zou ik vrezen?"
       },
       "alternatieve_lezingen": [
         {
-          "referentie": "Matteüs 4:12-17",
-          "reden": "Kortere perikoop die zich beperkt tot de start van het optreden en de vervulling van de profetie, zonder de roeping van de discipelen."
+          "referentie": "Efeziërs 4:1-13",
+          "reden": "Thematekst voor de Week van Gebed voor de Eenheid 2026"
         }
       ],
-      "thematische_samenhang": "De lezingen worden verbonden door het motief van 'licht in de duisternis' (Jesaja en Matteüs) en de geografische focus op Galilea. Daarnaast is er een sterke lijn van 'roeping en samenkomst': Jezus roept discipelen om Hem te volgen (Matteüs) en Paulus roept de gemeente op om één te zijn in die navolging (1 Korintiërs). Dit sluit naadloos aan bij de Week van Gebed."
+      "thematische_samenhang": "De lezingen verbinden het 'grote licht' uit Jesaja met de persoon van Jezus die in Galilea begint te stralen. De roeping van de discipelen (Evangelie) en de oproep tot eenheid (Epistel) laten zien dat dit licht een gemeenschap vormt die geroepen is tot navolging zonder onderlinge verdeeldheid."
     },
     "thematiek": {
-      "centraal_thema": "Licht, Roeping en Eenheid",
-      "stemming": "Hoopvol, activerend en vermanend (inzake eenheid)",
-      "karakter_zondag": "Een zondag van openbaring (Epifanie) die overgaat in discipelschap. De nadruk ligt op de start van Jezus' publieke bediening en de implicaties daarvan voor de geloofsgemeenschap.",
-      "rode_draad_liturgisch_jaar": "Na de Doop van de Heer (start bediening) en de Bruiloft te Kana (eerste teken, jaar C/soms A), zien we nu de daadwerkelijke verkondiging en het vormen van de kring van leerlingen. Het licht van Kerst/Epifanie breekt nu door in het alledaagse leven van vissers.",
+      "centraal_thema": "Licht in de duisternis en de roeping tot eenheid",
+      "stemming": "hoop",
+      "karakter_zondag": "Actief en missionair; de nadruk ligt op het 'gaan' achter Jezus aan en het gezamenlijk getuigen in een verdeelde wereld.",
+      "rode_draad_liturgisch_jaar": "Na de doop van de Heer (1e na Epifanie) en de bruiloft te Kana (2e na Epifanie) zien we nu de praktische uitwerking van Jezus' missie: het verzamelen van een gemeenschap.",
       "centrale_geloofsvragen": [
-        "Wat betekent het dat Jezus 'licht' is in onze specifieke duisternis?",
-        "Hoe geven wij gehoor aan de roeping om Hem te volgen?",
-        "Hoe bewaren we de eenheid in Christus ondanks onze verschillen?"
+        "Wat betekent het om 'het licht te zien' in onze huidige maatschappelijke context?",
+        "Hoe reageren wij persoonlijk op de roep: 'Volg Mij'?",
+        "Hoe kunnen wij als Pauluskerk in Gouda de eenheid met andere christenen concreet maken?"
       ]
     },
     "historische_achtergrond": {
-      "oorsprong_vroege_kerk": "De periode na Epifanie stond in de vroege kerk in het teken van de 'theofanieën' (godsverschijningen) in het leven van Jezus. De lezingen markeren de overgang van de verborgen jaren naar de openbare verkondiging.",
-      "hervormde_traditie": "Sterke nadruk op de Schriftlezing en de verkondiging als centraal element van de eredienst, aansluitend bij Jezus die predikt: 'Bekeer u, want het Koninkrijk der hemelen is nabij'.",
-      "gereformeerde_traditie": "Aandacht voor de heiliging van het leven en de roeping (vocatio) van de gelovige, zoals de discipelen hun netten achterlieten.",
-      "lutherse_traditie": "De Epifaniëntijd wordt vaak langer aangehouden (wit) of explicieter gevierd als de tijd van het 'verschijnen van de glorie'.",
-      "oecumenische_dimensie": "Vanwege de datum (25 januari, Bekering van Paulus) is de link met de wereldwijde oecumene en de Week van Gebed dominant. De tekst uit 1 Korintiërs 1 is een klassieke tekst voor oecumenische bezinning."
+      "oorsprong_vroege_kerk": "De Epifaniëtijd is een van de oudste cycli van het kerkelijk jaar, oorspronkelijk gericht op de verschijning van God in de mens Jezus.",
+      "hervormde_traditie": "Sterke nadruk op de soevereiniteit van het Woord en de roeping van de gelovige (electio).",
+      "gereformeerde_traditie": "Focus op de 'navolging van Christus' en de kerk als verbondsgemeenschap.",
+      "lutherse_traditie": "Nadruk op Christus als het Licht der wereld (Lumen Gentium) en de rechtvaardiging door het geloof.",
+      "oecumenische_dimensie": "Zeer sterk aanwezig door de afsluiting van de Week van Gebed; verbinding met de wereldwijde kerk, dit jaar specifiek met de Armeense traditie."
     },
     "praktische_handvatten": {
-      "liturgische_orde_suggestie": "Orde van dienst voor de Tijd door het Jaar / Epifaniëntijd. Kyrie en Gloria zijn passend (Gloria vanwege de naglans van Epifanie).",
+      "liturgische_orde_suggestie": "Klassieke orde met ruimte voor een oecumenisch gebed of het 'Kyrie' uit de Armeense liturgie als knipoog naar de voorbereiders van de gebedsweek.",
       "aanpassingen_periode": [
         {
-          "element": "Kyrie",
-          "aanpassing": "Kyrie-gebeden gericht op de nood van de wereld en de verdeeldheid van de kerk",
-          "reden": "Aansluiting bij Week van Gebed"
-        },
-        {
-          "element": "Geloofsbelijdenis",
-          "aanpassing": "Gebruik van de Apostolische Geloofsbelijdenis of Nicenum",
-          "reden": "Benadrukken van de gezamenlijke basis van alle kerken"
+          "element": "Gloria",
+          "aanpassing": "Feestelijk gezongen",
+          "reden": "Het is nog de Epifaniëtijd, een tijd van openbaring en vreugde."
         }
       ],
       "gebedsmotieven": [
-        "Dank voor het licht van het Evangelie",
-        "Gebed voor de eenheid van de kerken wereldwijd en lokaal in Gouda",
-        "Voorbede voor mensen die leven in 'duisternis' (oorlog, armoede)",
-        "Gebed om kracht om Jezus te volgen in het dagelijks leven"
+        "Gebed voor de eenheid van de kerken in Gouda",
+        "Voorbede voor christenen in Armenië en andere conflictgebieden",
+        "Gebed om moed om de roep van Jezus te beantwoorden in het dagelijks leven"
       ],
       "kindernevendienst": {
-        "thema": "Vissers van mensen / Kom, ga mee!",
+        "thema": "Vissers van mensen",
         "suggesties": [
-          "Visnet knutselen met namen van kinderen erin",
-          "Spel over 'volgen' en 'leiden'",
-          "Het verhaal van de roeping uitspelen"
+          "Knutselopdracht: een groot net maken waar alle kinderen hun naam in hangen",
+          "Vertelling over hoe het is om alles achter te laten voor een nieuw avontuur"
         ]
       },
       "visuele_elementen": [
-        "Projectie van het schilderij 'Roeping van de apostelen' (bijv. Ghirlandaio of Caravaggio)",
-        "Symboliek van licht en netten in de liturgische schikking",
-        "Gebruik van het logo van de Week van Gebed"
+        "Projectie van Armeense kruisen (Khachkars) als verbinding met de voorbereiders van de gebedsweek",
+        "Een brandende wereldbol of grote kaars centraal in de kerk"
       ]
     },
     "dagelijks_leesrooster": {
       "week_voorafgaand": [
-        "Lezingen uit de cyclus van de Week van Gebed voor Eenheid van Christenen (indien gevolgd)",
-        "Anders: vervolglezingen uit Markus of Hebreeën (volgens oecumenisch rooster)"
+        "Ma: Psalm 27:7-14",
+        "Di: Galaten 1:11-24",
+        "Wo: Lukas 5:1-11",
+        "Do: 1 Korintiërs 1:1-9",
+        "Vr: Jesaja 49:1-7"
       ],
-      "verbinding_zondag": "De dagelijkse lezingen in deze week staan vaak in het teken van de oecumenische thematiek, wat culmineert in de zondagse lezing uit 1 Korintiërs over verdeeldheid en eenheid."
+      "verbinding_zondag": "De weekteksten bereiden de gemeente voor op het thema van roeping en de identiteit van Christus als het licht voor de volken."
     }
   },
   "02_sociaal_maatschappelijke_context": {
@@ -1029,187 +1025,175 @@
         "afbakening_vertaling": {
           "vertaalvergelijking": [
             {
-              "vertaling": "NBV21 vs. NBG51/Statenvertaling",
-              "significante_verschillen": "In vers 8:23b kiest de NBV21 voor 'brengt hij het weer tot aanzien', waar de NBG51 spreekt over 'tot eer brengen'. De crux zit in vers 9:2 (MT 9:1). De Statenvertaling volgt de Masoretische tekst (Ketiv) met 'Gij hebt dit volk vermenigvuldigd, maar de blijdschap niet groot gemaakt'. De NBV21 volgt de Qere (leeswijze) en de Septuaginta: 'U hebt het volk weer groot gemaakt, u hebt het vervuld van diepe vreugde'. Dit verschil verandert de tekst van een klacht over een zinloze bevolkingsgroei in een loflied op de goddelijke zegen."
-            },
-            {
-              "vertaling": "Naardense Bijbel",
-              "significante_verschillen": "De Naardense Bijbel vertaalt zeer concordant: 'zoals de eerste tijd het land van Zeboeloen en het land van Naftali licht heeft geacht, zo heeft de laatste tijd het zwaar gemaakt'. Hier wordt het contrast tussen 'licht achten' (verachten) en 'zwaar maken' (verheerlijken/gewicht geven) scherp neergezet, wat de Hebreeuwse woordspeling rondom de stam K-B-D (zwaar/eer) recht doet."
+              "vertaling": "NBV21",
+              "significante_verschillen": "De NBV21 kiest voor een vloeiende, poëtische weergave die de nadruk legt op de omslag van duisternis naar licht. In vers 23b vertaalt de NBV21 'het land aan de overkant van de Jordaan, het gebied van de heidenen', wat een geografische verduidelijking is. De Naardense Bijbel (NB) blijft dichter bij de Hebreeuwse zinsbouw en vertaalt 'Galilea van de volkeren', wat de messiaanse resonantie in het Nieuwe Testament sterker laat klinken. In 9:2 vertaalt de NBV21 'U hebt het volk weer groot gemaakt', terwijl oudere vertalingen (en de NB) soms worstelen met de tekstkritische variant 'niet' (lo) versus 'hem' (lo), waarbij de NBV21 de positieve lijn van vreugde volgt."
             }
           ],
-          "werkvertaling_cruciaal": "Het volk dat wandelt in de duisternis heeft een groot licht gezien; zij die wonen in een land van doodsschaduw — licht heeft over hen gestraald. U hebt de jubel vermeerderd, U hebt de vreugde groot gemaakt; zij verheugen zich voor Uw aangezicht zoals men zich verheugt bij de oogst, zoals men juicht bij het verdelen van de buit."
+          "werkvertaling_cruciaal": "9:1: Het volk dat wandelt in de duisternis, ziet een groot licht; zij die wonen in een land van de schaduw van de dood (tsalmavet) — over hen straalt een licht.\\n9:3: Want het juk van hun last, de stok op hun schouder, de roede van hun drijver, hebt U verbrijzeld als op de dag van Midjan."
         },
         "tekstkritiek": {
           "relevante_varianten": [
             {
-              "vers": "9:2 (MT 9:1)",
-              "variant": "Lô (niet) vs. Lô (voor hem/het)",
-              "handschriften": "Masoretische tekst (Ketiv: lamed-aleph; Qere: lamed-vav).",
-              "betekenis_impact": "De geschreven tekst zegt 'niet', de leestraditie zegt 'voor hem'. Gezien de parallellie met de oogstvreugde en de buit is de lezing 'voor hem' (het volk) exegetisch de enige logische keuze. De NBV21 emendeert hier terecht op basis van de contextuele logica."
+              "vers": "9:2",
+              "variant": "lo (niet) vs lo (hem/het)",
+              "handschriften": "Masoretische Tekst (MT) vs. Qumran (1QIsa)",
+              "betekenis_impact": "De MT leest 'U hebt de vreugde niet (lo) vergroot', wat paradoxaal is in de context. De Qumran-rol en vele vertalingen lezen 'lo' (voor hem/het volk), wat de parallel met de rest van het vers herstelt: 'U hebt voor hem de vreugde vergroot'."
             }
           ],
-          "conclusie": "De tekst is in de kern stabiel, mits de Qere-lezing in 9:2 wordt gevolgd om de interne consistentie van het heilsorakel te bewaren."
+          "conclusie": "De tekst is over het algemeen goed overgeleverd, waarbij de belangrijkste variant in 9:2 door vrijwel alle moderne vertalingen wordt opgelost ten gunste van de vreugde-lezing."
         },
         "woordstudie": [
           {
             "woord_origineel": "צַלְמָוֶת",
-            "transliteratie": "tsalmāwet",
-            "vertaling": "Doodsschaduw / Diepe duisternis",
-            "semantische_range": "Een samenstelling van 'tselem' (schaduw) en 'mawet' (dood), of een intensieve vorm van duisternis. Het duidt op een existentiële dreiging, de sfeer van het dodenrijk die het land van de levenden binnendringt.",
-            "gebruik_elders": "Beroemd in Psalm 23:4. Het wordt vaak gebruikt voor de woestijn, de gevangenis of de nabijheid van de dood.",
-            "meerduidigheid": "Het is zowel een fysieke beschrijving van de nacht/schaduw als een metafoor voor politieke en geestelijke uitzichtloosheid."
+            "transliteratie": "tsalmavet",
+            "vertaling": "schaduw van de dood / diepe duisternis",
+            "semantische_range": "Een samenstelling van 'tsel' (schaduw) en 'mavet' (dood). Het duidt op de diepste, meest verstikkende duisternis, vaak geassocieerd met het dodenrijk of extreme angst.",
+            "gebruik_elders": "Bekend uit Psalm 23:4 ('dal van de schaduw van de dood') en Job. Het is een existentiële duisternis, niet slechts het ontbreken van zonlicht.",
+            "meerduidigheid": "Moderne taalkundigen suggereren soms dat het een abstract zelfstandig naamwoord is voor 'diepe duisternis', maar de associatie met de dood blijft in de bijbelse poëzie dominant."
           },
           {
-            "woord_origineel": "כָּבַד",
-            "transliteratie": "kābad",
-            "vertaling": "Zwaar zijn / Eren",
-            "semantische_range": "De stam betekent primair 'zwaar zijn'. In negatieve zin: een last zijn. In positieve zin: gewicht hebben, eer ontvangen, verheerlijkt worden.",
-            "gebruik_elders": "Basis voor 'kabod' (heerlijkheid/glorie van God).",
-            "meerduidigheid": "In 8:23b is er een contrast tussen het 'licht achten' (verachten) en het 'zwaar maken' (eren). God geeft gewicht aan wat door de wereld als lichtgewicht/waardeloos werd beschouwd."
+            "woord_origineel": "אֹור",
+            "transliteratie": "or",
+            "vertaling": "licht",
+            "semantische_range": "Licht in fysieke, morele en heilshistorische zin. Het staat tegenover chaos en oordeel.",
+            "gebruik_elders": "Genesis 1:3 (de eerste scheppingsdaad). In Jesaja is licht vaak een metafoor voor de verlossing en de aanwezigheid van God.",
+            "meerduidigheid": null
           }
         ],
         "literaire_analyse": {
-          "genre": "Profetie / Heilsorakel",
-          "genre_conventies": "Gebruik van het 'profetisch perfectum': de profeet spreekt over toekomstige daden van God alsof ze al voltooid zijn ('heeft gezien', 'heeft gestraald'), wat de onomstotelijke zekerheid van de belofte onderstreept.",
+          "genre": "profetie / heilswaarzegging",
+          "genre_conventies": "De tekst volgt het patroon van een heilsprofetie na een periode van oordeel. Het gebruikt contrast-poëzie (duisternis vs. licht) om de radicale verandering van de situatie aan te duiden.",
           "structuur": {
-            "opbouw": "De perikoop kent een drieledige opbouw:\\n1. De historische ommekeer (8:23b): Van smaad naar eer voor de noordelijke stammen.\\n2. De visuele ervaring (9:1): Het doorbreken van het licht in de doodsschaduw.\\n3. De collectieve reactie (9:2-3): Vreugde over de bevrijding van het juk, vergeleken met historische overwinningen (Midjan).",
+            "opbouw": "De perikoop opent met een geografische situering van het oordeel (8:23b), gevolgd door de centrale belofte van licht (9:1). Daarna volgt de uitwerking van de vreugde (9:2) en de reden voor die vreugde: de bevrijding van onderdrukking (9:3).",
             "cesuren": [
-              "Tussen 8:23b en 9:1 (overgang van geografie naar metafoor)",
-              "Tussen 9:2 en 9:3 (overgang van vreugde naar de oorzaak daarvan)"
+              "Tussen 8:23b (verleden/vernedering) en 9:1 (toekomst/verheerlijking)",
+              "Tussen 9:2 (gevolg: vreugde) en 9:3 (oorzaak: bevrijding)"
             ],
-            "centrum": "Vers 9:1: De verschijning van het 'Grote Licht'.",
-            "chiasme_inclusio": "Er is een inclusio van 'duisternis' (8:23b/9:1) die wordt overwonnen door het 'licht' (9:1)."
+            "centrum": "9:1: De verschijning van het grote licht.",
+            "chiasme_inclusio": "Er is een inclusio merkbaar in de beweging van 'land' (erets) in 8:23b naar de bevrijding van het 'juk' op datzelfde land in 9:3."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
-              "Contrast (duisternis vs. licht, smaad vs. eer)",
-              "Metaforiek (oogst, buit, juk, stok)",
-              "Historische allusie (de dag van Midjan/Gideon)"
+              "Parallellisme (wandelen in duisternis // wonen in doodsschaduw)",
+              "Metafoor (oogstvreugde, verdeling van buit)",
+              "Historische allusie (de dag van Midjan)"
             ],
-            "retorische_strategie": "De tekst bouwt een crescendo op van een lokale geografische herwaardering naar een kosmische vreugde, om de moedeloze hoorder te overtuigen van Gods soevereine ingrijpen.",
-            "effect_lezer": "De lezer wordt meegetrokken uit de passiviteit van het 'wandelen in duisternis' naar de actieve vreugde van de bevrijding."
+            "retorische_strategie": "De profeet gebruikt bekende beelden van vreugde (landbouw en overwinning) om een abstracte heilstoekomst tastbaar te maken voor een volk in angst.",
+            "effect_lezer": "De tekst beoogt hoop te wekken door de onvermijdelijkheid van Gods ingrijpen te schilderen als een natuurverschijnsel (het opgaan van de zon)."
           },
           "karakters_plot": {
             "personages": [
-              "YHWH (impliciet subject)",
-              "Het volk (recipiënt van het heil)",
-              "De drijver (opponent, impliciet Assyrië)"
+              "Het volk",
+              "De onderdrukker (impliciet)",
+              "God (als de handelende 'U')"
             ],
-            "karakterisering": "God wordt getekend als de onzichtbare maar almachtige Bevrijder. Het volk wordt getekend in hun lijden (wandelen, wonen in schaduw) en hun daaropvolgende vreugde.",
-            "verhaallijn": "Van vernedering door een vreemde macht naar verheerlijking door God.",
-            "verzwegen_gesuggereerd": "De identiteit van de 'zoon' (9:5) wordt hier al voorbereid door de beelden van vrede en bevrijding."
+            "karakterisering": "Het volk wordt getekend als passief en lijdend (wandelen, wonen in schaduw), terwijl God de actieve bevrijder is die verbrijzelt en vergroot.",
+            "verhaallijn": "Van vernedering (Zebulon/Naftali) naar verheerlijking door goddelijk licht.",
+            "verzwegen_gesuggereerd": "De identiteit van de 'drijver' (historisch Assyrië) wordt hier getransfereerd naar een universele macht van duisternis."
           }
         },
         "structuralistische_analyse": {
           "schema_constructie": {
             "scenarios": [
               {
-                "scène": "1. De historische kentering",
-                "tijd": "De eerste tijd / De laatste tijd",
-                "plaats": "Land van Zeboeloen en Naftali / Weg naar de zee / Overzijde Jordaan / Galilea",
-                "actant": "Hij (YHWH)",
-                "handeling": "Behandelt smadelijk / Brengt tot aanzien",
+                "scène": "De geografische omslag",
+                "tijd": "In het verleden (vroeger) vs. in de toekomst (later)",
+                "plaats": "Land van Zebulon, land van Naftali, weg naar de zee, overkant Jordaan, Galilea",
+                "actant": "God (impliciet als degene die verheerlijkt)",
+                "handeling": "Verachtelijk maken (vroeger) vs. in ere herstellen (later)",
                 "medewerker": [
-                  "(De tijd)"
+                  "De geografische gebieden"
                 ],
                 "opponent": [
-                  "De eerdere smaad"
+                  "De duisternis/vernedering"
                 ]
               },
               {
-                "scène": "2. De theofanie van het licht",
-                "tijd": "(Onbepaald heden)",
-                "plaats": "Land van diepe duisternis / Doodsschaduw",
-                "actant": "Het volk",
-                "handeling": "Wandelt / Ziet (een groot licht) / Woont",
+                "scène": "De doorbraak van het licht",
+                "tijd": "Onbepaald (profetisch heden)",
+                "plaats": "Land van de schaduw van de dood",
+                "actant": "Het Licht",
+                "handeling": "Verschijnen / stralen over de bewoners",
                 "medewerker": [
-                  "Het Licht"
+                  "Het volk dat wandelt"
                 ],
                 "opponent": [
                   "De duisternis"
                 ]
               },
               {
-                "scène": "3. De vreugde van de bevrijding",
-                "tijd": "(Onbepaald heden)",
-                "plaats": "Voor Uw aangezicht",
-                "actant": "U (YHWH)",
-                "handeling": "Maakt het volk talrijk / Maakt de vreugde groot / Verbreekt het juk / Verbreekt de stok / Verbreekt de knoet",
+                "scène": "De vreugde van de bevrijding",
+                "tijd": "Moment van de overwinning",
+                "plaats": "Het land van het volk",
+                "actant": "God (U)",
+                "handeling": "Groot maken van het volk, vergroten van de vreugde, verbrijzelen van het juk",
                 "medewerker": [
-                  "(Herinnering aan de dag van Midjan)"
+                  "Het volk (als genietende van de vreugde)"
                 ],
                 "opponent": [
-                  "De drijver / Het juk / De stok"
+                  "De drijver, de stok, de roede"
                 ]
               }
             ],
-            "schema_regels": "YHWH is de primaire actant die de status van de geografische plaatsen en het volk verandert. Het volk is in scène 2 de actant van de waarneming (zien), maar blijft in scène 1 en 3 object van Gods handelen."
+            "schema_regels": "Het perspectief ligt bij het lijdende volk dat door God (de Actant) wordt verlost."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "Er is een beweging van concrete geografie (stamgebieden) naar existentiële ruimte (doodsschaduw) naar de cultische ruimte (voor Uw aangezicht).",
-            "actanten_analyse": "YHWH domineert het begin en einde; het volk staat in het midden als getuige van het licht.",
-            "handelingen_trajecten": "Traject van transformatie: van 'smadelijk behandelen' naar 'tot aanzien brengen' en 'verbreken' van onderdrukking.",
-            "medewerkers_opponenten_analyse": "De opponenten zijn abstracte machten van onderdrukking (juk, stok) en duisternis."
+            "tijd_plaats_patroon": "Er is een duidelijke beweging van specifieke, vernederde plaatsen (Noord-Israël) naar een universele toestand van licht en vreugde.",
+            "actanten_analyse": "God is de onzichtbare maar allesbepalende Actant. Het Licht fungeert als Zijn manifestatie.",
+            "handelingen_trajecten": "Traject 1: Vernedering/Duisternis. Traject 2: Licht/Verschijning. Traject 3: Bevrijding/Vreugde.",
+            "medewerkers_opponenten_analyse": "De opponenten zijn instrumenten van onderdrukking (stok, roede). De medewerkers zijn de natuurlijke beelden van vreugde (oogst)."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De scènes vormen een logische keten: statusverandering -> lichtverschijning -> vreugde door bevrijding.",
-            "temporele_ontwikkeling": "De tekst heft de tijd op door het verleden (smaad) en de toekomst (licht) in één profetisch nu te plaatsen.",
-            "literaire_elementen": "De vergelijking met de dag van Midjan (Gideon) dient als historisch bewijs voor Gods vermogen om zonder menselijk leger te bevrijden.",
-            "karakteranalyse": "God ontleent zijn autoriteit aan zijn vermogen om de 'zwaarte' (eer) te herstellen waar mensen 'lichtheid' (verachting) brachten.",
-            "evaluatieve_dimensie": "De tekst evalueert de komst van het licht als een bron van 'diepe vreugde', vergelijkbaar met de meest vitale menselijke ervaringen (oogst/overwinning)."
+            "structurele_samenhang": "De tekst is een hecht weefsel waarbij de geografische duisternis van 8:23b wordt opgeheven door de kosmische vreugde van 9:3.",
+            "temporele_ontwikkeling": "De tekst beweegt van een historisch trauma naar een eschatologische vervulling.",
+            "literaire_elementen": "Het gebruik van de 'dag van Midjan' verbindt de actuele hoop met de nationale bevrijdingsgeschiedenis (Gideon).",
+            "karakteranalyse": "God ontleent Zijn autoriteit aan Zijn vermogen om de geschiedenis om te keren (metathesis).",
+            "evaluatieve_dimensie": "De profeet evalueert de situatie als een overgang van 'verachting' naar 'eer'."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
-              "Goddelijke herwaardering van de periferie",
-              "Licht als bevrijdende macht",
-              "Vreugde als religieuze categorie"
+              "De omkering van het lot",
+              "Licht als goddelijke presentie",
+              "Bevrijding van onderdrukking"
             ],
-            "structurele_patroon": "Een beweging van passieve duisternis naar actieve vreugde, gefaciliteerd door een soevereine God.",
-            "theologische_betekenis": "Heil begint niet in het centrum, maar aan de randen (Galilea), waar de duisternis het diepst is. God is de God van de ommekeer."
+            "structurele_patroon": "Duisternis-Licht-Vreugde-Vrijheid.",
+            "theologische_betekenis": "God is de God van de periferie; Hij begint Zijn herstel in de gebieden die het meest geleden hebben."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "God brengt licht en eerherstel in gebieden en levens die door de wereld zijn opgegeven of veracht.",
-          "godsbeeld": "God als de 'Heer van de legerscharen' die niet met wapens, maar met licht en vreugde de macht van de onderdrukker breekt. Hij is de God die 'ziet' en 'zwaar maakt' (eert).",
-          "mensbeeld_wereld_heil": "De mens wordt getekend als een 'wandelaar in duisternis', kwetsbaar voor politiek geweld, maar met een diep vermogen tot vreugde wanneer God nabijkomt. Heil is hier concreet-politiek én existentieel.",
+          "centrale_boodschap": "God laat Zijn licht schijnen in de diepste duisternis van menselijk lijden en politieke onderdrukking, wat leidt tot een radicale bevrijding en overstelpende vreugde.",
+          "godsbeeld": "God als de soevereine Bevrijder die niet onverschillig is voor de 'stok op de schouder' van Zijn volk. Hij is de 'Lichtbrenger' die de chaos van de doodsschaduw verdrijft.",
+          "mensbeeld_wereld_heil": "De mens wordt gezien als een 'wandelaar' in de duisternis, kwetsbaar voor onderdrukking, maar bestemd voor vreugde. Heil is hier concreet: politieke vrijheid, economische overvloed (oogst) en spirituele verlichting.",
           "bijbels_theologische_lijnen": [
             "Exodus (bevrijding van het juk)",
-            "Schepping (Licht uit duisternis)",
-            "Messiaanse verwachting (de komende vrede)"
+            "Schepping (licht uit duisternis)",
+            "Messiaanse verwachting (de verheerlijking van Galilea)"
           ],
-          "plaats_heilsgeschiedenis": "Een profetie midden in de Assyrische crisis, die de hoop levend houdt dat de davidische belofte ook voor de noordelijke stammen geldt.",
-          "spanning_andere_teksten": "Staat in spanning met de oordeelsaankondigingen in Jesaja 8; hier krijgt de genade het laatste woord.",
+          "plaats_heilsgeschiedenis": "Deze tekst markeert de hoop in de donkere dagen van de Assyrische dreiging en wordt in het NT de blauwdruk voor het optreden van Jezus.",
+          "spanning_andere_teksten": "De tekst contrasteert met de voorafgaande hoofdstukken in Jesaja waar vooral oordeel en verharding worden aangekondigd.",
           "dogmatische_raakvlakken": [
-            "Christologie (Jezus als het Licht der wereld)",
-            "Eschatologie (het Rijk van God als einde van alle onderdrukking)"
+            "Christologie (Jezus als het Licht)",
+            "Soteriologie (verlossing als bevrijding)"
           ],
-          "theologische_controverses": "De discussie over de historische vervulling (Hizkia?) versus de messiaanse overdracht naar Christus."
+          "theologische_controverses": "De discussie over de historische vervulling (Hizkia) versus de messiaanse vervulling (Christus)."
         },
         "zoekmodellen_snoek": {
           "godsbeelden_ot": {
-            "werkwoordelijke_uitspraken": "God is de actieve motor achter de geschiedenis: Hij brengt tot aanzien, Hij maakt talrijk, Hij verbreekt het juk. Zijn handelen is gericht op de omkering van onrecht.",
-            "metaforische_uitspraken": "God wordt indirect getekend als een Krijgsheld (die de stok van de drijver verbreekt) en als de bron van een licht dat 'straalt'.",
-            "overstijgende_eigenschappen": "Zijn macht overstijgt de wereldrijken (Assyrië); Hij handelt soeverein 'zoals op de dag van Midjan'.",
-            "toebuigende_eigenschappen": "Zijn betrokkenheid op de 'verachte' gebieden (Zeboeloen/Naftali) toont zijn barmhartigheid voor de gemarginaliseerden.",
-            "dominante_categorie": "Werkwoordelijk en Toebuigend: God grijpt in de tijd in om mensen uit hun lijden te tillen.",
-            "spanning": "De spanning tussen de 'verre' God van de legerscharen en de 'nabije' God die vreugde geeft bij de oogst.",
-            "relevantie_gemeente": "Voor de Pauluskerk betekent dit dat God niet alleen in de 'grote' geschiedenis werkt, maar ook in de 'donkere' hoeken van Gouda-Noord."
+            "werkwoordelijke_uitspraken": "God 'verheerlijkt', 'verbrijzelt', 'maakt groot'. Hij is de actieve motor achter de geschiedenisverandering.",
+            "metaforische_uitspraken": "God wordt indirect vergeleken met de zon (het licht dat straalt) en een zegevierende koning die buit verdeelt.",
+            "overstijgende_eigenschappen": "Zijn macht over de volkeren en de natuurkrachten (licht).",
+            "toebuigende_eigenschappen": "Zijn betrokkenheid bij het 'volk dat wandelt' en Zijn afkeer van de 'roede van de drijver'.",
+            "dominante_categorie": "Werkwoordelijke uitspraken domineren: God grijpt in.",
+            "spanning": "De spanning tussen de God die vernedert (8:23a) en de God die verheerlijkt (8:23b).",
+            "relevantie_gemeente": "In een tijd van 'bodemdaling' (Gouda) is de God die de grond onder de voeten weer stevig maakt en licht brengt in de schaduw uiterst relevant."
           },
           "mensbeelden_ot": {
-            "horizontale_as": "Het volk bevindt zich aan de kant van het 'ondergaan van kwaad' (onderdrukking). Hun 'goed doen' manifesteert zich in de vreugde en het vieren van de bevrijding.",
-            "verticale_as": "De mens is gericht op God ('voor Uw aangezicht'). De vreugde is geen seculier feest, maar een coram Deo ervaring.",
-            "personages_positie": "Van passieve slachtoffers naar actieve feestvierders.",
-            "karakterontwikkeling": "Er is een collectieve transformatie van angst naar jubel."
+            "horizontale_as": "Het volk bevindt zich aan de kant van het 'lijden' onder het kwaad van anderen (de drijver).",
+            "verticale_as": "Het volk is gericht op God als de bron van hun vreugde ('Zij verheugen zich voor Uw aangezicht').",
+            "personages_positie": "Van passief lijdend naar actief feestvierend.",
+            "karakterwikkeling": "De transformatie van angst naar vreugde door de ontmoeting met het Licht."
           },
-          "jezusbeelden_nt": {
-            "van_achteren": "n.v.t.",
-            "van_boven": "n.v.t.",
-            "van_beneden": "n.v.t.",
-            "van_voren": "n.v.t.",
-            "dominant_perspectief": "n.v.t.",
-            "spanning_godheid_mensheid": "n.v.t.",
-            "betekenis_hoorders_nu": "n.v.t."
-          }
+          "jezusbeelden_nt": null
         }
       },
       {
@@ -1217,636 +1201,228 @@
         "afbakening_vertaling": {
           "vertaalvergelijking": [
             {
-              "vertaling": "NBV21 vs. Naardense Bijbel",
-              "significante_verschillen": "In vers 17 vertaalt de NBV21 'metanoeite' met 'Bekeer u', terwijl de Naardense Bijbel kiest voor 'Komt tot inkeer'. 'Bekeer u' suggereert een radicale ommekeer van de weg, 'inkeer' benadrukt de innerlijke verandering van denken. In vers 19 vertaalt de NBV21 'vissers van mensen', waar de Naardense Bijbel 'vissers van mensen-die-zijn' heeft, wat de nadruk legt op de menselijke waardigheid."
+              "vertaling": "NBV21",
+              "significante_verschillen": "De NBV21 vertaalt 'vissers van mensen' (v19) heel klassiek. In vers 12 vertaalt de NBV21 'week Hij uit naar Galilea', wat de suggestie van een strategische terugtocht versterkt. De Naardense Bijbel vertaalt 'trok Hij zich terug', wat dichter bij het Griekse 'anechoresen' ligt, een term die Matteüs vaker gebruikt voor Jezus die een gevaarlijke situatie verlaat."
             }
           ],
-          "werkvertaling_cruciaal": "Vanaf dat moment begon Jezus te prediken en te zeggen: 'Komt tot ommekeer, want het Koninkrijk der hemelen is nabijgekomen!' (...) En Hij zegt tot hen: 'Komt hier, achter Mij aan, en Ik zal jullie maken tot vissers van mensen.' Terstond lieten zij de netten achter en volgden Hem."
+          "werkvertaling_cruciaal": "4:17: Vanaf dat moment begon Jezus te prediken en te zeggen: 'Kom tot inkeer (metanoeite), want het Koninkrijk der hemelen is nabij gekomen.'\\n4:19: En Hij zei tegen hen: 'Kom achter Mij aan, en Ik zal jullie maken tot vissers van mensen.'\\n4:20: Zij lieten terstond (eutheos) hun netten achter en volgden Hem."
         },
         "tekstkritiek": {
           "relevante_varianten": [
             {
-              "vers": "4:12",
-              "variant": "Toevoeging 'Jezus'",
-              "handschriften": "Veel minuskels voegen de naam 'Jezus' expliciet toe als subject, hoewel de oudste papyri alleen 'Hij' hebben.",
-              "betekenis_impact": "Geen theologische impact, louter ter verduidelijking van het subject bij de start van een nieuwe perikoop."
+              "vers": "4:23",
+              "variant": "en heel Galilea (en hole te Galilaia) vs. in heel Galilea (en hole te Galilaia)",
+              "handschriften": "Codex Sinaiticus vs. andere vroege handschriften",
+              "betekenis_impact": "De variant benadrukt of Jezus door heel Galilea trok, of dat Zijn roem zich over heel Galilea verspreidde. De impact is gering voor de kernboodschap."
             }
           ],
-          "conclusie": "De tekst is tekstkritisch zeer betrouwbaar en stabiel."
+          "conclusie": "De tekst is tekstkritisch zeer stabiel."
         },
         "woordstudie": [
           {
             "woord_origineel": "μετανοέω",
-            "transliteratie": "metanoeō",
-            "vertaling": "Tot inkeer komen / Je denken veranderen",
-            "semantische_range": "Letterlijk 'na-denken' of 'anders gaan denken'. Het duidt op een radicale heroriëntatie van het hele leven op basis van een nieuw inzicht.",
-            "gebruik_elders": "Centraal thema bij Johannes de Doper en Jezus in de synoptici.",
-            "meerduidigheid": "Vaak te smal opgevat als louter morele spijt; het is echter een fundamentele koerswijziging."
+            "transliteratie": "metanoeo",
+            "vertaling": "tot inkeer komen / je omkeren",
+            "semantische_range": "Letterlijk: anders gaan denken. Het is een radicale heroriëntatie van het hele leven, niet slechts berouw over een fout.",
+            "gebruik_elders": "Centraal thema bij Johannes de Doper en Jezus in de synoptische evangeliën.",
+            "meerduidigheid": "Vaak te smal vertaald als 'boete doen', terwijl het gaat om een nieuwe richting kiezen."
           },
           {
-            "woord_origineel": "ἀκολουθέω",
-            "transliteratie": "akoloutheō",
-            "vertaling": "Volgen / Navolgen",
-            "semantische_range": "Achter iemand aan gaan, maar in de context van een leraar-leerling relatie betekent het: het delen van de levenswijze en het lot van de meester.",
-            "gebruik_elders": "Terminus technicus voor discipelschap in de evangeliën.",
+            "woord_origineel": "ἁλιεῖς ἀνθρώπων",
+            "transliteratie": "halieis anthropon",
+            "vertaling": "vissers van mensen",
+            "semantische_range": "Een metafoor voor het verzamelen van mensen voor het Koninkrijk. Het impliceert actie, redding en gemeenschapsvorming.",
+            "gebruik_elders": "Uniek voor de roeping van de eerste discipelen. Mogelijk een toespeling op Jeremia 16:16, maar dan in positieve zin.",
             "meerduidigheid": null
           },
           {
-            "woord_origineel": "εὐαγγέλιον",
-            "transliteratie": "euangelion",
-            "vertaling": "Goede boodschap / Evangelie",
-            "semantische_range": "Oorspronkelijk het bericht van een militaire overwinning of de troonsbestijging van een keizer. Matteüs gebruikt het voor de doorbraak van Gods heerschappij.",
-            "gebruik_elders": "Matteüs 4:23, 9:35, 24:14.",
-            "meerduidigheid": "Draagt een politieke ondertoon: er is een nieuwe Koning."
+            "woord_origineel": "εὐθέως",
+            "transliteratie": "eutheos",
+            "vertaling": "terstond / meteen",
+            "semantische_range": "Duidt op onmiddellijke actie zonder aarzeling.",
+            "gebruik_elders": "Een sleutelwoord in de evangeliën om de radicaliteit van de roeping en de kracht van Jezus' woord te onderstrepen.",
+            "meerduidigheid": null
           }
         ],
         "literaire_analyse": {
-          "genre": "Evangelie-narratief / Roepingsverhaal",
-          "genre_conventies": "Roepingsverhalen in de Bijbel (zoals Elisa in 1 Koningen 19) kennen een vast patroon: de roeper passeert, spreekt een dwingend woord, en de geroepene laat alles achter.",
+          "genre": "evangelie / roepingsverhaal",
+          "genre_conventies": "Het roepingsverhaal volgt een vast stramien: Jezus ziet mensen bij hun dagelijks werk, spreekt een krachtig woord ('Volg Mij'), en zij reageren onmiddellijk door alles achter te laten.",
           "structuur": {
-            "opbouw": "1. Geografische en profetische inbedding (12-16): Jezus naar Galilea.\\n2. De programmatische verkondiging (17): De kernboodschap.\\n3. De roeping van de eerste vier (18-22): Twee parallelle scènes (Simon/Andreas en Jakobus/Johannes).\\n4. De samenvatting van de bediening (23): Leren, prediken, genezen.",
+            "opbouw": "1. Inleiding: Terugtocht naar Galilea en vervulling van de profetie (v12-16). 2. De kernboodschap: De prediking van het Koninkrijk (v17). 3. De roeping van de eerste twee broers (v18-20). 4. De roeping van de volgende twee broers (v21-22). 5. Samenvatting van Jezus' werk: leren, prediken, genezen (v23).",
             "cesuren": [
-              "Na vers 16 (einde citaat)",
-              "Na vers 17 (overgang naar actie)",
-              "Na vers 22 (overgang naar algemeen overzicht)"
+              "Na v16 (overgang van profetie naar actie)",
+              "Na v17 (overgang van boodschap naar gemeenschapsvorming)",
+              "Na v22 (overgang van roeping naar algemene bediening)"
             ],
-            "centrum": "De imperatief in vers 19: 'Volg Mij'."
+            "centrum": "v17: De proclamatie van het Koninkrijk.",
+            "chiasme_inclusio": "Inclusio tussen het 'licht' dat opgaat in v16 en de 'genezing' van alle kwalen in v23."
           },
           "stijl_retoriek": {
             "literaire_middelen": [
-              "Vervullingscitaat (Matteüs' handelsmerk)",
-              "Repetitie (twee roepingsscènes met identieke structuur)",
-              "Eutheōs (terstond/meteen) - benadrukt de urgentie"
+              "Citaat uit het Oude Testament (Jesaja)",
+              "Parallellisme in de roepingsverhalen (twee paar broers)",
+              "Sommatie (v23)"
             ],
-            "retorische_strategie": "Matteüs legitimeert Jezus' optreden door de Schrift (Jesaja) en toont de onweerstaanbare autoriteit van zijn woord in de roeping.",
-            "effect_lezer": "De lezer wordt geconfronteerd met de vraag: wat laat ik achter als Jezus roept?"
+            "retorische_strategie": "Matteüs verbindt Jezus' optreden direct met de Schriften om Zijn autoriteit als Messias te legitimeren. De herhaling in de roeping onderstreept de universaliteit en de dwingende kracht van Jezus' stem.",
+            "effect_lezer": "De lezer wordt uitgedaagd: wat zou ik doen als Hij mij riep bij mijn 'netten'?"
           },
           "karakters_plot": {
             "personages": [
-              "Jezus (de soevereine roeper)",
-              "Simon, Andreas, Jakobus, Johannes (de responsieve leerlingen)",
-              "Zebedeüs (de achterblijvende vader)"
+              "Jezus",
+              "Johannes de Doper (genoemd)",
+              "Simon Petrus",
+              "Andreas",
+              "Jakobus",
+              "Johannes",
+              "Zebedeüs (vader)"
             ],
-            "karakterisering": "Jezus handelt met goddelijke autoriteit. De discipelen worden getekend door hun onmiddellijke gehoorzaamheid. Zebedeüs representeert de oude sociale orde die wordt doorbroken.",
-            "verhaallijn": "Jezus begint zijn missie in de periferie en vormt direct een nieuwe gemeenschap rondom zijn persoon.",
-            "verzwegen_gesuggereerd": "De psychologische motivatie van de vissers wordt volledig overgeslagen; het gaat om de kracht van het Woord."
+            "karakterisering": "Jezus is de soevereine leraar en genezer. De discipelen worden getekend door hun onmiddellijke gehoorzaamheid. Zebedeüs representeert wat achtergelaten wordt: de familie en de traditie.",
+            "verhaallijn": "Jezus begint Zijn missie niet in het religieuze centrum, maar in de marge (Galilea), en verzamelt daar een nieuwe gemeenschap.",
+            "verzwegen_gesuggereerd": "De emoties van de achterblijvende vader Zebedeüs worden verzwegen, wat de radicaliteit van de breuk accentueert."
           }
         },
         "structuralistische_analyse": {
           "schema_constructie": {
             "scenarios": [
               {
-                "scène": "1. De strategische verplaatsing",
-                "tijd": "Toen Hij hoorde dat Johannes was overgeleverd",
-                "plaats": "Galilea / Nazaret / Kafarnaüm (Zeboeloen/Naftali)",
+                "scène": "De strategische verplaatsing",
+                "tijd": "Nadat Johannes was overgeleverd",
+                "plaats": "Van Judea naar Galilea (Nazareth, Kafarnaüm)",
                 "actant": "Jezus",
-                "handeling": "Wijkte uit / Verliet / Ging wonen",
+                "handeling": "Terugtrekken, verlaten, gaan wonen",
                 "medewerker": [
-                  "(De profetie van Jesaja)"
+                  "De profetie van Jesaja"
                 ],
                 "opponent": [
-                  "(Herodes/De overlevering van Johannes)"
+                  "De dreiging (impliciet door Johannes' arrestatie)"
                 ]
               },
               {
-                "scène": "2. De start van de verkondiging",
-                "tijd": "Vanaf toen",
-                "plaats": "(Galilea)",
+                "scène": "De roeping bij de zee",
+                "tijd": "Terwijl Hij langs de zee liep",
+                "plaats": "De zee van Galilea",
                 "actant": "Jezus",
-                "handeling": "Begon te prediken / Zei",
+                "handeling": "Zien, zeggen ('Volg Mij')",
                 "medewerker": [
-                  "Het Koninkrijk der hemelen"
+                  "De broers (door hun reactie)"
                 ],
                 "opponent": [
-                  "(De oude denkwijze)"
+                  "De netten, de boot, de vader (als bindingsfactoren)"
                 ]
               },
               {
-                "scène": "3. De roeping van de broers",
-                "tijd": "Toen Hij liep",
-                "plaats": "Langs de zee van Galilea",
+                "scène": "De samenvattende bediening",
+                "tijd": "Onbepaald (voortdurend)",
+                "plaats": "Heel Galilea, de synagogen",
                 "actant": "Jezus",
-                "handeling": "Zag / Zei / Zal maken",
+                "handeling": "Rondtrekken, onderwijzen, verkondigen, genezen",
                 "medewerker": [
-                  "Zijn woord ('Volg Mij')"
+                  "De discipelen (impliciet)"
                 ],
                 "opponent": [
-                  "De netten / De zee"
-                ]
-              },
-              {
-                "scène": "4. De respons van de broers",
-                "tijd": "Terstond",
-                "plaats": "Bij de zee",
-                "actant": "Simon en Andreas / Jakobus en Johannes",
-                "handeling": "Lieten achter / Volgden",
-                "medewerker": [
-                  "(De roep van Jezus)"
-                ],
-                "opponent": [
-                  "De netten / De boot / De vader"
-                ]
-              },
-              {
-                "scène": "5. De samenvatting",
-                "tijd": "(Doorlopend)",
-                "plaats": "Heel Galilea",
-                "actant": "Jezus",
-                "handeling": "Trok rond / Leerde / Predikte / Genas",
-                "medewerker": [
-                  "Het evangelie van het Koninkrijk"
-                ],
-                "opponent": [
-                  "Elke ziekte / Elke kwaal"
+                  "Ziekte en kwaal"
                 ]
               }
             ],
-            "schema_regels": "Jezus is de initiërende actant in alle scènes. De discipelen transformeren van passieve vissers (gezien worden) naar actieve volgelingen (achterlaten en volgen). De 'netten' en 'vader' fungeren als opponenten in de zin van sociale en economische bindingen."
+            "schema_regels": "Jezus is de absolute Actant wiens woord werkelijkheid schept (roeping en genezing)."
           },
           "verticale_analyse": {
-            "tijd_plaats_patroon": "De geografie vernauwt zich van de regio naar de oever van het meer, om zich in de laatste scène weer te verbreden naar 'heel Galilea'.",
-            "actanten_analyse": "Jezus is de absolute spil. Zijn handelen (prediken, roepen, genezen) zet alles in beweging.",
-            "handelingen_trajecten": "Traject van aanwezigheid: wonen -> prediken -> roepen -> genezen. Het heil wordt steeds concreter.",
-            "medewerkers_opponenten_analyse": "De belangrijkste opponent is de 'ziekte en kwaal' die door Jezus wordt overwonnen."
+            "tijd_plaats_patroon": "De beweging is van de marge (Galilea) naar de specifieke werkplek (zee) naar de publieke ruimte (synagogen).",
+            "actanten_analyse": "Jezus domineert elke scène. De discipelen zijn 'ontvangers' van Zijn handelen.",
+            "handelingen_trajecten": "Traject 1: Vervulling (wonen). Traject 2: Roeping (spreken). Traject 3: Herstel (genezen).",
+            "medewerkers_opponenten_analyse": "De belangrijkste 'medewerker' is het Woord van God (profetie). De opponenten zijn de sociale en fysieke bindingen die de navolging kunnen hinderen."
           },
           "horizontale_analyse": {
-            "structurele_samenhang": "De vervulling van de profetie (licht) vindt zijn concrete uitwerking in de vorming van de discipelkring en de genezingen.",
-            "temporele_ontwikkeling": "De tekst versnelt door het gebruik van 'terstond', wat de eschatologische urgentie van het Koninkrijk weerspiegelt.",
-            "literaire_elementen": "De herhaling van de roepingsscène onderstreept dat dit de standaardreactie is op Jezus' verschijning.",
-            "karakteranalyse": "Jezus' autoriteit is niet institutioneel maar charismatisch en profetisch gefundeerd.",
-            "evaluatieve_dimensie": "De tekst presenteert de genezingen als bewijs van de nabijheid van het Koninkrijk."
+            "structurele_samenhang": "De tekst verbindt de identiteit van Jezus (Licht) met Zijn methode (roeping) en Zijn doel (herstel van het leven).",
+            "temporele_ontwikkeling": "Er is een versnelling: van wonen naar spreken naar het 'meteen' van de discipelen.",
+            "literaire_elementen": "Het gebruik van 'Galilea van de heidenen' zet de toon voor een universele missie.",
+            "karakteranalyse": "Jezus' autoriteit blijkt uit het feit dat mensen hun bestaanszekerheid (netten) voor Hem opgeven.",
+            "evaluatieve_dimensie": "Matteüs evalueert Jezus' optreden als de definitieve doorbraak van het licht."
           },
           "synthese_interpretatie": {
             "centrale_thema_s": [
-              "Vervulling van de Schrift",
-              "Radicale navolging",
-              "Heelheid door het Koninkrijk"
+              "Navolging",
+              "Het Koninkrijk als nabije realiteit",
+              "Licht in de periferie"
             ],
-            "structurele_patroon": "Initiatief van de Messias -> Radicale breuk met het oude -> Nieuwe gemeenschap in actie.",
-            "theologische_betekenis": "Het licht van Epifanie is geen abstract idee, maar een persoon die mensen uit hun oude verbanden roept naar een nieuwe bestemming."
+            "structurele_patroon": "Vervulling - Proclamatie - Roeping - Genezing.",
+            "theologische_betekenis": "Het Koninkrijk wordt zichtbaar waar mensen gehoor geven aan de roep van Jezus en waar gebrokenheid wordt geheeld."
           }
         },
         "theologische_analyse": {
-          "centrale_boodschap": "In Jezus is Gods heerschappij definitief nabijgekomen; dit vraagt om een totale heroriëntatie van het leven en actieve deelname aan zijn herstelwerk.",
-          "godsbeeld": "God komt nabij in de persoon van Jezus. Hij is de God die beloften nakomt en die mensen niet laat in hun ziekte of duisternis, maar hen 'vangt' voor het leven.",
-          "mensbeeld_wereld_heil": "De mens is geroepen tot meer dan louter biologisch of economisch overleven (vissen). Heil is navolging: het delen in de missie van Jezus.",
+          "centrale_boodschap": "Jezus is het beloofde Licht dat in de marge van de wereld verschijnt om mensen te roepen tot een radicale omkeer en hen te betrekken bij Zijn herstelwerk van de schepping.",
+          "godsbeeld": "God die in Jezus 'nabij komt'. Geen verre God, maar een God die wandelt langs de oevers van ons dagelijks leven.",
+          "mensbeeld_wereld_heil": "De mens is geroepen tot actieve navolging. Heil is niet alleen 'zielenzaligheid', maar het herstel van de hele mens (genezing) en het vinden van een nieuwe bestemming (vissers van mensen).",
           "bijbels_theologische_lijnen": [
             "Koninkrijk van God",
             "Discipelschap",
-            "Vervulling van de Profeten"
+            "Vervulling van de Schriften"
           ],
-          "plaats_heilsgeschiedenis": "De overgang van de voorbereiding (Johannes de Doper) naar de realisatie (Jezus). De vorming van het nieuwe Israël (de twaalf, hier de eerste vier).",
-          "spanning_andere_teksten": "De roeping is hier radicaler en korter dan in Johannes 1, wat de nadruk legt op de autoriteit van Jezus' woord.",
+          "plaats_heilsgeschiedenis": "Dit is het startpunt van Jezus' publieke optreden; de overgang van de voorbereiding (doop/verzoeking) naar de uitvoering.",
+          "spanning_andere_teksten": "De radicaliteit van het 'meteen achterlaten' schuurt met teksten over zorg voor familie, wat de prioriteit van het Koninkrijk onderstreept.",
           "dogmatische_raakvlakken": [
-            "Ecclesiologie (de kerk als geroepen gemeenschap)",
-            "Soteriologie (redding als bevrijding uit duisternis)"
+            "Ecclesiologie (de kerk als gemeenschap van geroepenen)",
+            "Missiologie (vissers van mensen)"
           ],
-          "theologische_controverses": "De aard van het 'vissers van mensen' zijn: is dit evangelisatie of sociale gerechtigheid? In Matteüs is het beide: prediken én genezen."
+          "theologische_controverses": "De spanning tussen 'inkeer' (menselijke actie) en 'nabijgekomen' (goddelijk geschenk)."
         },
         "zoekmodellen_snoek": {
-          "godsbeelden_ot": {
-            "werkwoordelijke_uitspraken": "n.v.t.",
-            "metaforische_uitspraken": "n.v.t.",
-            "overstijgende_eigenschappen": "n.v.t.",
-            "toebuigende_eigenschappen": "n.v.t.",
-            "dominante_categorie": "n.v.t.",
-            "spanning": "n.v.t.",
-            "relevantie_gemeente": "n.v.t."
-          },
-          "mensbeelden_ot": {
-            "horizontale_as": "n.v.t.",
-            "verticale_as": "n.v.t.",
-            "personages_positie": "n.v.t.",
-            "karakterontwikkeling": "n.v.t."
-          },
+          "godsbeelden_ot": null,
+          "mensbeelden_ot": null,
           "jezusbeelden_nt": {
-            "van_achteren": "Jezus is de getrouwe Jood die de Schriften van Israël vervult. Zijn hele optreden in Galilea is een bewuste daad van gehoorzaamheid aan de profetie van Jesaja. Hij staat in de lijn van de grote roepers van Israël.",
-            "van_boven": "Zijn woord heeft scheppende kracht. Als Hij zegt 'Volg Mij', gebeurt het. Hij geneest 'elke ziekte', wat wijst op een goddelijke volmacht over de gebroken schepping.",
-            "van_beneden": "Hij is de man die 'uitwijkt' voor gevaar, die wandelt langs het meer en die de taal van de vissers spreekt. Hij is tastbaar aanwezig in de alledaagse werkelijkheid van Galilea.",
-            "van_voren": "Hij is de heraut van het Koninkrijk. Alles wat Hij doet staat in het teken van de komende heerschappij van God die 'nabij' is. Hij trekt de geschiedenis naar haar voltooiing.",
-            "dominant_perspectief": "De spanning tussen 'van achteren' (vervulling) en 'van voren' (het nieuwe Koninkrijk) domineert. Jezus is de brug tussen de oude belofte en de nieuwe realiteit.",
-            "spanning_godheid_mensheid": "De spanning zit in de autoriteit van zijn stem (God) versus de eenvoud van zijn verschijning als wandelaar (mens).",
-            "betekenis_hoorders_nu": "Jezus is de Levende die ook vandaag de 'netten' van onze routines kan openbreken. Hij roept niet weg uit de wereld, maar zendt ons erin met een nieuwe opdracht."
+            "van_achteren": "Jezus als de vervuller van Jesaja; Hij staat in de lijn van de profeten en de geschiedenis van Israël (Zebulon/Naftali).",
+            "van_boven": "Zijn woord heeft goddelijke kracht; Hij roept en mensen volgen, Hij spreekt en ziekten wijken. Hij is het 'Grote Licht'.",
+            "van_beneden": "Hij wandelt langs de zee, ziet vissers aan het werk, ervaart de dreiging van de politieke macht (Johannes' arrestatie).",
+            "van_voren": "Hij kondigt het Koninkrijk aan dat 'nabij is'; Hij is de wegbereider van de nieuwe wereld.",
+            "dominant_perspectief": "De balans tussen 'van achteren' (vervulling) en 'van voren' (Koninkrijk) domineert.",
+            "spanning_godheid_mensheid": "De spanning tussen de 'gewone' wandelaar langs de zee en de kosmische Lichtbrenger die autoriteit heeft over mensenlevens.",
+            "betekenis_hoorders_nu": "Voor de hoorders in de Pauluskerk betekent dit dat Jezus hen opzoekt in hun 'Galilea' (hun dagelijks werk en zorgen) en hen uitnodigt deel te worden van een beweging die groter is dan zijzelf."
           }
         }
       }
     ],
     "samenhang_lezingen": {
-      "rode_draad": "De doorbraak van Gods licht in de periferie van de wereld, die mensen uit hun passiviteit roept naar een actieve navolging.",
+      "rode_draad": "De rode draad is de geografische en spirituele beweging van duisternis naar licht, waarbij de periferie (Galilea) de plek wordt waar Gods nieuwe werkelijkheid doorbreekt.",
       "versterkingen": [
-        "Matteüs identificeert Jezus expliciet als het licht waar Jesaja over profeteerde, waardoor de belofte een gezicht krijgt.",
-        "De 'vreugde' uit Jesaja wordt in Matteüs geconcretiseerd in de genezingen en de bevrijding van ziekte.",
-        "Beide teksten benadrukken dat God begint aan de randen (Galilea), niet in het centrum van de macht."
+        "Matteüs citeert Jesaja letterlijk om te laten zien dat wat Jesaja hoopte, in Jezus gebeurt.",
+        "Beide teksten benadrukken dat het heil begint bij degenen die in de 'schaduw' staan.",
+        "De 'vreugde' uit Jesaja krijgt in Matteüs handen en voeten in de genezingen en de nieuwe gemeenschap van discipelen."
       ],
       "correcties": [
-        "Waar Jesaja spreekt over een nationale bevrijding van een externe vijand (Assyrië), richt Jezus zich op een diepere bevrijding van zonde, ziekte en de 'oude denkwijze' (metanoia).",
-        "De passieve rol van het volk in Jesaja ('zij zien') wordt door Jezus omgezet in een actieve roeping ('volg Mij'). Het licht zien is niet genoeg; men moet het licht gaan volgen."
+        "Waar Jesaja spreekt over het verbrijzelen van het juk van de onderdrukker (militair/politiek), focust Matteüs op de bevrijding van ziekte en de roeping tot een nieuwe levensstijl (metanoia).",
+        "De passieve afwachting van het licht in Jesaja wordt in Matteüs een actieve navolging: het licht zien betekent achter Jezus aan gaan."
       ]
     }
   },
-  "08b_liedsuggesties_database": {
-    "analyse": {
-      "aantal_gevonden_totaal": 48,
-      "liturgische_balans": "De selectie toont een sterke dualiteit: enerzijds de verstilde, mystieke sfeer van Epifanie ('Licht', 'Morgenster'), anderzijds de concrete, aardse roeping van de discipelen ('Vissers', 'Volgen'). Er is bewust gekozen voor een balans tussen de vreugde van het licht (Jesaja) en de ernst van de eenheid (1 Korintiërs). Verrassend is de keuze voor enkele 'avondliederen' die functioneren als contrast in een ochtenddienst om de 'duisternis' uit de lezingen te accentueren.",
-      "contextuele_reflectie": "De liederen verbinden de Goudse context ('Gouda bij Kaarslicht', waterstad) met de bijbelse beeldspraak van Galilea. De roep om eenheid (1 Korintiërs) wordt vertaald naar liederen over 'samen kerk zijn', wat direct raakt aan de diversiteit in de Pauluskerk en de politieke polarisatie. Psalm 27 fungeert als anker van vertrouwen tegenover de onzekerheid in het wereldnieuws (Syrië)."
-    },
-    "liedboek_2013": [
-      {
-        "nummer": "27a",
-        "titel": "De Heer is mijn licht en mijn heil",
-        "type_match": "Schriftlezing",
-        "karakter": "Verstild vertrouwen",
-        "toelichting": "Directe berijming van de onberijmde psalm. Sluit naadloos aan bij 'Whom shall I fear' in een tijd van wereldwijde onrust.",
-        "suggestie_gebruik": "Antwoordlied na de lezing of als Intochtspsalm"
-      },
-      {
-        "nummer": "27b",
-        "titel": "Mijn licht, mijn heil is Hij",
-        "type_match": "Schriftlezing",
-        "karakter": "Krachtig en ritmisch",
-        "toelichting": "Een stoerdere variant die de strijdbaarheid van de psalm benadrukt ('Al breekt een oorlog uit').",
-        "suggestie_gebruik": "Tijdens de collectie of als slotlied"
-      },
-      {
-        "nummer": "385",
-        "titel": "De nacht is haast ten einde",
-        "type_match": "Seizoen",
-        "karakter": "Klassiek en statig",
-        "toelichting": "Verbindt de 'duisternis' uit Jesaja 9 met de dageraad van Epifanie. Een oer-protestants lied over hoop.",
-        "suggestie_gebruik": "Openingslied"
-      },
-      {
-        "nummer": "534",
-        "titel": "Hij die de blinden weer liet zien",
-        "type_match": "Thematisch",
-        "karakter": "Verhalend en pastoraal",
-        "toelichting": "Reflecteert op de genezingen en de roeping in Matteüs 4. 'Hij die de mensen vissen ving'.",
-        "suggestie_gebruik": "Schriftlied na het Evangelie"
-      },
-      {
-        "nummer": "598",
-        "titel": "Als alles duister is",
-        "type_match": "Emotioneel",
-        "karakter": "Meditatief (Taizé)",
-        "toelichting": "Eenvoudig mantra-lied dat de kern van Jesaja 9 ('Licht in duisternis') emotioneel invoelbaar maakt.",
-        "suggestie_gebruik": "Tijdens gebeden of avondmaal"
-      },
-      {
-        "nummer": "835",
-        "titel": "Jezus, ga ons voor",
-        "type_match": "Conceptueel",
-        "karakter": "Toewijding",
-        "toelichting": "Het thema 'navolging' (Matteüs 4) vertaald naar een levensgebed. 'Op de levensbaan' sluit aan bij de levensreis van de gemeente.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "968",
-        "titel": "De vreugde voert ons naar dit huis",
-        "type_match": "Contextueel",
-        "karakter": "Gemeenschapsvormend",
-        "toelichting": "Benadrukt het 'samen' zijn (1 Korintiërs 1) en de gemeente als huisgezin. Past bij de 'huiskamer van de wijk'.",
-        "suggestie_gebruik": "Intochtslied"
-      },
-      {
-        "nummer": "970",
-        "titel": "Vlammen zijn er vele",
-        "type_match": "Thematisch",
-        "karakter": "Verbindend",
-        "toelichting": "Hét lied over eenheid in verscheidenheid ('één is het licht'). Directe link met 1 Korintiërs 1:10.",
-        "suggestie_gebruik": "Na de preek of tijdens de Vredesgroet"
-      },
-      {
-        "nummer": "1005",
-        "titel": "Zoek eerst het Koninkrijk",
-        "type_match": "Thematisch",
-        "karakter": "Opwekkend canon",
-        "toelichting": "Sluit aan bij de oproep tot bekering en het zoeken van het Koninkrijk in Matteüs 4:17.",
-        "suggestie_gebruik": "Als canon met de kinderen of bij de collecte"
-      },
-      {
-        "nummer": "513",
-        "titel": "God heeft het eerste woord",
-        "type_match": "Verrassend",
-        "karakter": "Theologisch dicht",
-        "toelichting": "Benadrukt dat de roeping (Matteüs) begint bij God, niet bij onze keuze. Een sterk theologisch fundament.",
-        "suggestie_gebruik": "Na de geloofsbelijdenis"
-      }
-    ],
-    "hemelhoog": [
-      {
-        "nummer": "453",
-        "titel": "Licht van de wereld",
-        "type_match": "Thematisch",
-        "karakter": "Aanbiddend",
-        "toelichting": "De ultieme 'Epifanie-hit' in evangelische kring. 'U scheen in mijn duisternis' is Jesaja 9 in een notendop.",
-        "suggestie_gebruik": "Lofprijzing / Gloria"
-      },
-      {
-        "nummer": "436",
-        "titel": "Ik zal er zijn",
-        "type_match": "Emotioneel",
-        "karakter": "Troostend",
-        "toelichting": "Gods Naam als belofte van nabijheid. Raakt aan het vertrouwen van Psalm 27 in onzekere tijden.",
-        "suggestie_gebruik": "Na de voorbeden"
-      },
-      {
-        "nummer": "678",
-        "titel": "Samen in de naam van Jezus",
-        "type_match": "Thematisch",
-        "karakter": "Viering",
-        "toelichting": "Directe vertaling van de oproep tot eenheid in 1 Korintiërs. 'De familie van God'.",
-        "suggestie_gebruik": "Slotlied of bij de vredesgroet"
-      },
-      {
-        "nummer": "389",
-        "titel": "Stil mijn ziel, wees stil",
-        "type_match": "Contextueel",
-        "karakter": "Innemend",
-        "toelichting": "Een moderne vertolking van de rust die Psalm 27 zoekt. Zeer passend bij de onrust over Syrië/wereldnieuws.",
-        "suggestie_gebruik": "Voor de preek"
-      },
-      {
-        "nummer": "468",
-        "titel": "Tienduizend redenen",
-        "type_match": "Seizoen",
-        "karakter": "Dankbaar",
-        "toelichting": "'De zon komt op...' - letterlijke beeldspraak van het licht dat doorbreekt.",
-        "suggestie_gebruik": "Intochtslied"
-      },
-      {
-        "nummer": "346",
-        "titel": "Jezus hoop van de volken",
-        "type_match": "Thematisch",
-        "karakter": "Missonair",
-        "toelichting": "Verbindt het licht (Epifanie) met de volken (Galilea der heidenen).",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "707",
-        "titel": "Licht in de nacht",
-        "type_match": "Verrassend",
-        "karakter": "Intiem",
-        "toelichting": "Een kerst-achtig lied dat in de Epifaniëntijd de doorwerking van dat licht bezingt.",
-        "suggestie_gebruik": "Tijdens de collecte"
-      },
-      {
-        "nummer": "629",
-        "titel": "Heer, ik kom tot U",
-        "type_match": "Conceptueel",
-        "karakter": "Overgave",
-        "toelichting": "De houding van de discipelen die alles achterlaten (Matteüs 4).",
-        "suggestie_gebruik": "Na de preek"
-      },
-      {
-        "nummer": "567",
-        "titel": "Vul dit huis met uw glorie",
-        "type_match": "Contextueel",
-        "karakter": "Verlangend",
-        "toelichting": "Past bij de visie van de Pauluskerk als 'huis van de wijk' waar Gods glorie zichtbaar moet zijn.",
-        "suggestie_gebruik": "Gebedslied"
-      },
-      {
-        "nummer": "461",
-        "titel": "Mijn Jezus, mijn redder",
-        "type_match": "Emotioneel",
-        "karakter": "Krachtig",
-        "toelichting": "Roept op om te 'schuilen' (Psalm 27) en tegelijk te juichen.",
-        "suggestie_gebruik": "Lofprijzing"
-      }
-    ],
-    "op_toonhoogte": [
-      {
-        "nummer": "232",
-        "titel": "Jezus die langs het water liep",
-        "type_match": "Schriftlezing",
-        "karakter": "Verhalend",
-        "toelichting": "Hét lied bij Matteüs 4. Vertelt letterlijk over de roeping van de vissers. Zeer geschikt voor gezinnen.",
-        "suggestie_gebruik": "Schriftlied (kinderen)"
-      },
-      {
-        "nummer": "76",
-        "titel": "Daar is uit 's werelds duist're wolken",
-        "type_match": "Schriftlezing",
-        "karakter": "Plechtig",
-        "toelichting": "Klassieke tekst die Jesaja 9 (het volk dat in duisternis wandelt) verbindt met de verschijning van Christus.",
-        "suggestie_gebruik": "Opening"
-      },
-      {
-        "nummer": "95",
-        "titel": "Nu daagt het in het oosten",
-        "type_match": "Seizoen",
-        "karakter": "Hoopvol",
-        "toelichting": "De 'Licht'-symboliek van Epifanie in optima forma. De morgenster die straalt.",
-        "suggestie_gebruik": "Na de zegen / Slotlied"
-      },
-      {
-        "nummer": "365",
-        "titel": "We are one in the Spirit",
-        "type_match": "Thematisch",
-        "karakter": "Verbindend",
-        "toelichting": "Sluit direct aan bij de Week van Gebed en 1 Korintiërs 1. 'They will know we are Christians by our love'.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "489",
-        "titel": "Dit is mijn hand en dat mijn voet",
-        "type_match": "Conceptueel",
-        "karakter": "Speels/Leerzaam",
-        "toelichting": "Paulus' beeld van het lichaam (1 Korintiërs) vertaald naar een doe-lied. Goed voor de verbinding jong-oud.",
-        "suggestie_gebruik": "Kindermoment"
-      },
-      {
-        "nummer": "11",
-        "titel": "Mijn licht, mijn heil is Hij",
-        "type_match": "Schriftlezing",
-        "karakter": "Psalmodisch",
-        "toelichting": "De Op Toonhoogte-versie van Psalm 27. Herkenbaar en krachtig.",
-        "suggestie_gebruik": "Tussen de lezingen"
-      },
-      {
-        "nummer": "144",
-        "titel": "Blijf mij nabij",
-        "type_match": "Verrassend",
-        "karakter": "Smeekbede",
-        "toelichting": "Hoewel vaak een avondlied, past de tekst 'wanneer het duister daalt' perfect bij de thematiek van Jesaja 9 en de wereldnood.",
-        "suggestie_gebruik": "Na de voorbeden"
-      },
-      {
-        "nummer": "234",
-        "titel": "Stil, mijn ziel, wees stil",
-        "type_match": "Emotioneel",
-        "karakter": "Vertroostend",
-        "toelichting": "De moderne klassieker (In Christ Alone-melodie) die de angst uit Psalm 27 beantwoordt met vertrouwen.",
-        "suggestie_gebruik": "Voor de preek"
-      },
-      {
-        "nummer": "185",
-        "titel": "God van trouw",
-        "type_match": "Contextueel",
-        "karakter": "Standvastig",
-        "toelichting": "In een tijd van politieke wisselingen en onrust (Syrië) is Gods trouw het anker.",
-        "suggestie_gebruik": "Na de preek"
-      },
-      {
-        "nummer": "339",
-        "titel": "U bent heilig",
-        "type_match": "Thematisch",
-        "karakter": "Aanbidding",
-        "toelichting": "De roeping om God te volgen ('Ik wil U volgen') zit letterlijk in de tekst (canon-vorm).",
-        "suggestie_gebruik": "Lofprijzing"
-      }
-    ],
-    "weerklank": [
-      {
-        "nummer": "107",
-        "titel": "Het volk dat wandelt in het duister",
-        "type_match": "Schriftlezing",
-        "karakter": "Bijbelgetrouw",
-        "toelichting": "Een letterlijke berijming van de Jesaja-lezing. Onmisbaar als Schriftlied.",
-        "suggestie_gebruik": "Direct na de eerste lezing"
-      },
-      {
-        "nummer": "73",
-        "titel": "Bewaar de eenheid van Gods Geest",
-        "type_match": "Thematisch",
-        "karakter": "Vermanend",
-        "toelichting": "Sluit naadloos aan bij de vermaning van Paulus in 1 Korintiërs 1. Een gebed om eenheid.",
-        "suggestie_gebruik": "Na de preek"
-      },
-      {
-        "nummer": "41",
-        "titel": "Jezus die langs het water liep",
-        "type_match": "Schriftlezing",
-        "karakter": "Verhalend",
-        "toelichting": "De Weerklank-versie van het bekende roepingslied. Focus op de vissers van Galilea.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "111",
-        "titel": "Nu daagt het in het oosten",
-        "type_match": "Seizoen",
-        "karakter": "Opwekkend",
-        "toelichting": "Klassiek ochtendlied dat de doorbraak van het licht viert. Past bij de Epifanie-sfeer.",
-        "suggestie_gebruik": "Openingslied"
-      },
-      {
-        "nummer": "17",
-        "titel": "Daar is uit 's werelds duist're wolken",
-        "type_match": "Thematisch",
-        "karakter": "Plechtig",
-        "toelichting": "De overwinning van het licht op de duisternis. Zeer geliefd in de gereformeerde traditie.",
-        "suggestie_gebruik": "Lofprijzing"
-      },
-      {
-        "nummer": "197",
-        "titel": "In vuur en vlam zet ons de Geest",
-        "type_match": "Conceptueel",
-        "karakter": "Activerend",
-        "toelichting": "Verbindt de roeping (Matteüs) met de kracht van de Geest om te getuigen.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "49",
-        "titel": "Nu is het woord gezegd",
-        "type_match": "Thematisch",
-        "karakter": "Bevestigend",
-        "toelichting": "'Het licht dat in het duister viel'. Een antwoord op de verkondiging.",
-        "suggestie_gebruik": "Na de preek"
-      },
-      {
-        "nummer": "67",
-        "titel": "Het zaad zal vruchten dragen",
-        "type_match": "Verrassend",
-        "karakter": "Hoopvol",
-        "toelichting": "Hoewel vaak een herfstlied, past het beeld van groei en vrucht dragen bij de roeping van discipelen.",
-        "suggestie_gebruik": "Collectelied"
-      },
-      {
-        "nummer": "136",
-        "titel": "Wees stil en kom wat dichterbij",
-        "type_match": "Emotioneel",
-        "karakter": "Intiem",
-        "toelichting": "Nodigt uit tot de nabijheid van God, passend bij de sfeer van Psalm 27.",
-        "suggestie_gebruik": "Avondmaal of gebed"
-      },
-      {
-        "nummer": "178",
-        "titel": "Jezus leeft en ik met Hem",
-        "type_match": "Conceptueel",
-        "karakter": "Triomfantelijk",
-        "toelichting": "De ultieme consequentie van het 'Licht' dat de dood (duisternis) overwint.",
-        "suggestie_gebruik": "Slotlied"
-      }
-    ],
-    "weerklank_psalmen": [
-      {
-        "nummer": "27",
-        "titel": "De HERE is mijn licht",
-        "type_match": "Schriftlezing",
-        "karakter": "Klassiek",
-        "toelichting": "De onberijmde psalm (of 1773) blijft de krachtigste vertolking van het thema.",
-        "suggestie_gebruik": "Psalm van de zondag"
-      },
-      {
-        "nummer": "86",
-        "titel": "Hoor mij, HEER",
-        "type_match": "Emotioneel",
-        "karakter": "Smeekbede",
-        "toelichting": "Verwant aan Psalm 27 in toon ('Leer mij naar uw wil te hand'len').",
-        "suggestie_gebruik": "Gebedspsalm"
-      },
-      {
-        "nummer": "133",
-        "titel": "Zie, hoe goed en hoe liefelijk",
-        "type_match": "Thematisch",
-        "karakter": "Lieflijk",
-        "toelichting": "De psalm over de broederlijke eenheid. Directe link met 1 Korintiërs 1.",
-        "suggestie_gebruik": "Na de lezing van 1 Korintiërs"
-      },
-      {
-        "nummer": "84",
-        "titel": "Hoe lieflijk is uw woning",
-        "type_match": "Contextueel",
-        "karakter": "Verlangend",
-        "toelichting": "Sluit aan bij Psalm 27:4 ('Eén ding heb ik begeerd... wonen in het huis des Heren').",
-        "suggestie_gebruik": "Intochtspsalm"
-      },
-      {
-        "nummer": "119",
-        "titel": "Uw woord is een lamp",
-        "type_match": "Thematisch",
-        "karakter": "Onderwijzend",
-        "toelichting": "Vers 53 (berijming) of het bekende vers over het Woord als licht op het pad.",
-        "suggestie_gebruik": "Voor de schriftlezing"
-      },
-      {
-        "nummer": "43",
-        "titel": "Zend, Heer, uw licht en waarheid",
-        "type_match": "Thematisch",
-        "karakter": "Biddend",
-        "toelichting": "Een klassieke bede om licht en leiding, passend bij Epifanie.",
-        "suggestie_gebruik": "Kyrie / Gebed om verlichting"
-      },
-      {
-        "nummer": "1",
-        "titel": "Welzalig de man",
-        "type_match": "Conceptueel",
-        "karakter": "Wijsheid",
-        "toelichting": "Over de weg van de rechtvaardige versus de goddelozen, passend bij de keuze om Jezus te volgen.",
-        "suggestie_gebruik": "Na de wet/leefregels"
-      },
-      {
-        "nummer": "146",
-        "titel": "Prijst de Heer met blijde galmen",
-        "type_match": "Verrassend",
-        "karakter": "Lofprijzing",
-        "toelichting": "God opent de ogen van blinden (Matteüs 4 context).",
-        "suggestie_gebruik": "Slotpsalm"
-      }
-    ]
-  },
   "08c_commentaries": {
-    "error": "unhandled errors in a TaskGroup (1 sub-exception)"
+    "exegese_eerste_lezing": {
+      "schriftgedeelte": "Jesaja 8:23b-9:3",
+      "titel": "Dageraad op Onvaste Grond",
+      "tekst": "De profetie van Jesaja 9 ontstaat in een tijd van diepe existentiële en politieke crisis. De gebieden Zebulon en Naftali, in het noorden van Israël, waren de eerste die de verwoestende kracht van de Assyrische invasie onder Tiglatpileser III (ca. 732 v.Chr.) ondervonden. Voor de hoorders in de Pauluskerk, die dagelijks geconfronteerd worden met de letterlijke 'bodemdaling' in Gouda, krijgt de term 'benauwdheid' (Hebr: *mu’aph*) een tastbare lading. Zoals de fundamenten van Goudse huizen verzakken, zo verzakte de wereld van Jesaja's tijdgenoten onder het gewicht van vreemde overheersing en angst.\n\nJesaja gebruikt het krachtige beeld van de 'schaduw van de dood' (*tsalmavet*). Dit is niet slechts een poëtische overdrijving, maar een beschrijving van een volk dat leeft in de constante dreiging van uitwissing. De exegese van Boice (The Gospel of John) herinnert ons eraan dat deze gebieden historisch gezien de 'wachtposten' van Israël waren; als zij vielen, lag de weg naar het hart van het land open. De 'stok van de drijver' en het 'juk' verwijzen naar de brute herendienst en deportaties. \n\nDe omslag in vers 1 ('het volk dat in duisternis wandelt, ziet een groot licht') is een radicale *reversal of fortunes*. Het licht is hier geen abstracte spirituele verlichting, maar een concrete bevrijding van politieke en militaire druk. De verwijzing naar de 'dag van Midjan' (vers 3) grijpt terug op Gideon, die met een kleine, onwaarschijnlijke groep een overmacht versloeg. Dit spreekt de hoorder aan die zich machteloos voelt tegenover de 'grote' wereldproblemen zoals de chaos in Syrië of de hongersnood in Sudan. Jesaja verkondigt dat God ingrijpt in de periferie, daar waar de klappen het eerst vallen. Voor de Pauluskerk betekent dit dat het Licht van Epifanie niet schijnt op de plekken van macht, maar juist daar waar de grond het meest onvast is.",
+      "korte_samenvatting": "Gods bevrijdende licht breekt door in de diepste duisternis van invasie en onzekerheid, juist daar waar de hoop het meest is vervlogen.",
+      "gebruikte_bronnen": [
+        "James Montgomery Boice - The Gospel of John",
+        "Eusebius of Caesarea - Commentary on Isaiah"
+      ]
+    },
+    "exegese_evangelielezing": {
+      "schriftgedeelte": "Matteüs 4:12-23",
+      "titel": "Licht in de Periferie: Roeping tot Herstel",
+      "tekst": "Matteüs positioneert het begin van Jezus' publieke optreden heel bewust in 'Galilea van de heidenen' (*Galilaia tōn ethnōn*). Na de arrestatie van Johannes de Doper trekt Jezus zich niet terug in de veiligheid van de woestijn, maar zoekt Hij de grensstreek op. Dit is exegetisch cruciaal: Jezus vervult Jesaja 9 niet in het religieuze centrum Jeruzalem, maar in de gemengde, multiculturele en vaak geminachte periferie. Voor een stad als Gouda, met haar diverse wijken en sociale spanningen, is dit een krachtig signaal: het Koninkrijk begint aan de rand.\n\nDe roeping van de eerste discipelen (Simon, Andreas, Jakobus en Johannes) vindt plaats midden in hun dagelijkse arbeid. De term 'vissers van mensen' (*halieis anthrōpōn*) wordt vaak geromantiseerd, maar in de context van de eerste eeuw was vissen zwaar, onzeker en soms gevaarlijk werk. De reactie van de discipelen is 'meteen' (*eutheōs*). Dit duidt op een radicale heroriëntatie van hun prioriteiten. Bruner (Theological Interpretation) wijst erop dat zij niet alleen hun beroep achterlaten, maar ook hun sociale zekerheid (hun vader Zebedeüs).\n\nEen bijzonder detail is dat Jakobus en Johannes hun netten aan het 'herstellen' of 'boeten' waren (*katartizontas*). Dit woord betekent ook 'in orde brengen' of 'verzoenen'. In de context van de Week van Gebed voor de Eenheid en de verdeeldheid waar Paulus over schrijft in 1 Korintiërs, krijgt dit een diepe lading. Jezus roept mensen niet alleen *uit* hun isolement, maar roept hen *tot* een gemeenschap die netten herstelt. De eenheid van de kerk is geen statisch gegeven, maar een voortdurend proces van 'boeten' en herstellen van de onderlinge verbindingen. Jezus' bediening van onderwijzen, prediken en genezen (vers 23) laat zien dat het Licht van Epifanie een helende kracht is die de hele mens en de hele gemeenschap raakt.",
+      "korte_samenvatting": "Jezus begint zijn missie in de marge en roept gewone mensen op om hun zekerheden los te laten en deel te worden van een helende, verbonden gemeenschap.",
+      "gebruikte_bronnen": [
+        "Frederick Dale Bruner - The Gospel of John (Theological Interpretation)",
+        "James Montgomery Boice - The Gospel of John Volume 1-4"
+      ]
+    },
+    "reflectie": {
+      "theologische_lijnen": [
+        "Van Periferie naar Centrum: God kiest consequent de marge (Galilea, Zebulon) als startpunt voor universele redding.",
+        "Licht als Bevrijding: Het licht is niet alleen troostend, maar verbreekt concreet het 'juk' van onderdrukking en angst.",
+        "Roeping als Verbinding: Discipelschap is onlosmakelijk verbonden met het herstellen van netten (eenheid) en het genezen van kwalen."
+      ],
+      "homiletische_potentie": "De preek kan de brug slaan tussen de 'bodemdaling' in Gouda (onzekerheid) en de 'vaste rots' van Christus. Gebruik het beeld van de 'herstellende netten' voor de Week van Gebed: eenheid is handwerk, net als het boeten van netten aan de IJssel of de Reeuwijkse Plassen."
+    }
   },
   "09_kunst_cultuur": {
     "moderne_hedendaagse_kunst": [
@@ -4386,99 +3962,90 @@
         "translation": "NB"
       },
       {
-        "book": "1CO",
-        "chapter": 1,
+        "book": "EPH",
+        "chapter": 4,
         "verses": [
           {
-            "verse": 17,
-            "text": "Want Christus heeft mij niet uitgezonden\nom te dopen\nmaar om het evangelie te verkondigen,-\nen dat niet in wijsheid van woord,\nom het kruis van de Gezalfde\nniet tot een leeg iets te maken."
+            "verse": 1,
+            "text": "Ik roep u dan ook op,\nik die gebonden ben omwille van de Heer,\nte wandelen\nde roeping waardig\nwaarmee ge zijt geroepen,"
           },
           {
-            "verse": 18,
-            "text": "Want het woord ‘het kruis’\nis voor wie verloren gaan\nwel een dwaasheid\nmaar voor wie worden gered, voor ons,\nis het een kracht van God."
+            "verse": 2,
+            "text": "met alle nederigheid en zachtheid,\nmet lankmoedigheid\nelkaar verdragend in liefde;"
           },
           {
-            "verse": 19,
-            "text": "Want er staat geschreven:\n‘de wijsheid van de wijzen\nzal ik teloor doen gaan\nen het verstand van de verstandigen\nzal ik tenietdoen!’ (Jes. 29,14; Ps. 34,10)"
+            "verse": 3,
+            "text": "u inzettend\nom de eenheid van de Geest te houden\nin de band van de vrede:"
           },
           {
-            "verse": 20,
-            "text": "Waar blijft wie wijs is,\nwaar een schriftgeleerde,\nwaar een redetwister van deze eeuw?\nHeeft God de wijsheid van de wereld\nniet tot dwaasheid gemaakt?"
+            "verse": 4,
+            "text": "één lichaam en één geest,\nzoals ge ook geroepen zijt\nin de éne hoop van uw roeping:"
           },
           {
-            "verse": 21,
-            "text": "Want terwijl in de wijsheid van God\nde wereld door háár wijsheid\nGod niet heeft leren kennen,\nheeft het God behaagd\ndoor de dwaasheid van de prediking\nhen die haar geloven te redden."
+            "verse": 5,
+            "text": "één Heer, één geloof, één doop,"
           },
           {
-            "verse": 22,
-            "text": "Immers, én Judeeërs vragen tekenen\nén Hellenen zoeken wijsheid,"
+            "verse": 6,
+            "text": "één God en Vader van allen,\ndie is over allen en door allen\nen in allen."
           },
           {
-            "verse": 23,
-            "text": "maar wij prediken\neen gekruisigde Gezalfde,\nvoor Judeeërs wel een aanstoot,\nvoor wereldlingen een dwaasheid,"
+            "verse": 7,
+            "text": "Maar aan ieder van ons\nis de genade gegeven\nnaar de maat van de gave van de Gezalfde."
           },
           {
-            "verse": 24,
-            "text": "maar voor hen die geroepen zijn,\nzowel Judeeërs als Hellenen,\neen Gezalfde die kracht van God is en\nwijsheid van God,"
+            "verse": 8,
+            "text": "Daarom heet het:\n‘ten hoge opgevaren\nnam hij gevangen de gevangenis,\ngaf hij gaven aan de mensen’ (Ps. 68,19) ."
           },
           {
-            "verse": 25,
-            "text": "omdat het dwaze van God\nwijzer is dan de mensen\nen het zwakke van God\nsterker dan de mensen."
+            "verse": 9,
+            "text": "Maar wat betekent ‘hij voer óp’ anders\ndan dat hij ook is nedergedaald\nnaar de nederste delen der aarde?"
           },
           {
-            "verse": 26,
-            "text": "Want kijkt eens naar uw roeping,\nbroeders-en-zusters:\nniet vele wijzen naar het vlees,\nniet vele machtigen, niet vele welgeborenen,"
+            "verse": 10,
+            "text": "Hij die is nedergedaald,\nhij is het ook die is opgevaren\nhoog boven alle hemelen,\nom alles te vervullen."
           },
           {
-            "verse": 27,
-            "text": "maar al wat in de wereld dwaas is\nheeft God uitverkoren\nopdat hij de wijzen zou beschamen,\nen al wat zwak is in de wereld\nheeft God uitverkoren\nopdat hij al wat sterk is zou beschamen,"
+            "verse": 11,
+            "text": "Hij heeft sommigen gegeven\nals apostelen,\nanderen als profeten,\nanderen als evangelisten,\nanderen als herders en als leraars,"
           },
           {
-            "verse": 28,
-            "text": "en al wat arm-geboren is in de wereld\nen al wat verachtelijk is\nheeft God uitverkoren,-\nal wat niets is\nopdat hij al wat iets is\nzou kunnen aanklagen,"
+            "verse": 12,
+            "text": "om de heiligen toe te rusten\ntot het werk van dienstbetoon,\ntot opbouw van het lichaam\nvan de Gezalfde,"
           },
           {
-            "verse": 29,
-            "text": "zodat alle vlees\nniet meer zal roemen\nvoor het aanschijn van God."
-          },
-          {
-            "verse": 30,
-            "text": "Nee, uit hem zijt ge,\néén met Christus Jezus,\ndie ons van Godswege\ntot wijsheid is geworden,\ngerechtigheid ook, en heiliging, en verlossing,"
-          },
-          {
-            "verse": 31,
-            "text": "opdat, zoals geschreven staat:\n‘iemand die roemt,\nmoet roemen in de Heer’ (Jer. 9, 22-23) ."
+            "verse": 13,
+            "text": "totdat wij allen komen\ntot de eenheid vanuit het geloof\nen vanuit de kennis van de zoon van God,\ntot een volkomen mens-zijn,\ntot de volle maat van rijpheid\nvanuit de Gezalfde."
           }
         ],
         "translation": "NB"
       },
       {
-        "book": "MAT",
-        "chapter": 4,
+        "book": "ISA",
+        "chapter": 8,
         "verses": [
           {
-            "verse": 12,
-            "text": "Maar als hij hoort\ndat Johannes is overgeleverd,\nwijkt hij uit naar Galilea."
+            "verse": 23,
+            "text": "Maar er zal geen donkerheid meer wezen voor het land dat in benauwdheid was;\nzoals hij in de tijd van eerst\nsmaad heeft gebracht\nover het land van Zebulon en het land van Naftali,\nzal hij in de latere tijd glorie brengen,-\naan de weg naar de zee, de overzij van de Jordaan,\nhet Galilea der gojiem,- de wenteling der volkeren ."
+          }
+        ],
+        "translation": "NB"
+      },
+      {
+        "book": "ISA",
+        "chapter": 9,
+        "verses": [
+          {
+            "verse": 1,
+            "text": "De gemeenschap van wie voortgaan\nin het duister,\nzien zullen zij een groot licht;\nwie zijn gezeten in het land van de schaduw des doods,\nlicht zal over hen stralen."
           },
           {
-            "verse": 13,
-            "text": "Hij laat Nazaret achter zich\nen komt aan en gaat wonen\nin Kafarnaoem aan de zee,\nin de gebieden van Zebulon\nen Naftali;"
+            "verse": 2,
+            "text": "Hebt gij het juichen vermeerderd,\nde vreugde groot gemaakt,-\nverheugen zullen zij zich voor uw aanschijn zoals er vreugde is in de oogst,\nzoals ze juichen wanneer ze het roofgoed verdelen."
           },
           {
-            "verse": 14,
-            "text": "zodat vervuld wordt\nwat is gesproken door de profeet Jesaja\nals hij zegt:"
-          },
-          {
-            "verse": 15,
-            "text": "land van Zebulon en land van Naftali,\naan de weg naar zee,\naan de overkant van de Jordaan,\nGalilea der volkeren:"
-          },
-          {
-            "verse": 16,
-            "text": "de gemeenschap die neerzit\nin duisternis\nziet een groot licht,\nen wie neerzitten\nin een streek vol schaduw van dood,\nhun is een licht opgegaan (Jes. 8,23; 9,1) !"
-          },
-          {
-            "verse": 17,
-            "text": "Van dan af\nbegint Jezus te prediken;\nhij zegt: bekeert u,-\nwant genaderd is\nhet koninkrijk der hemelen!"
+            "verse": 3,
+            "text": "Want het juk dat hem belast,\nde stang op zijn schouder,\nde stok van de drijver op hem,-\nhebt gij gebroken als op de dag van Midjan."
           }
         ],
         "translation": "NB"
@@ -4600,72 +4167,6 @@
           }
         ],
         "translation": "NB"
-      },
-      {
-        "book": "PSA",
-        "chapter": 97,
-        "verses": [
-          {
-            "verse": 7,
-            "text": "Dat zich schamen al wie dienen een hakbeeld,\nzich gelukkig prijzen\nmet goden van niets,- ✡\nbuigt u voor hem, al gij goden!"
-          }
-        ],
-        "translation": "NB"
-      },
-      {
-        "book": "PSA",
-        "chapter": 97,
-        "verses": [
-          {
-            "verse": 1,
-            "text": "Psalm 97 (96) • Dominus regnavit. De Ene werd koning,- laat juichen de aarde, ✡\nlaat zich verheugen\neilanden vele!"
-          },
-          {
-            "verse": 2,
-            "text": "Rondom hem zijn wolken en duister, ✡\ngerechtigheid en recht\nfunderen zijn troon."
-          },
-          {
-            "verse": 3,
-            "text": "Vuur gaat voor zijn aanschijn uit, ✡\nverschroeit zijn benauwers rondom!"
-          },
-          {
-            "verse": 4,
-            "text": "Zijn bliksems verlichtten de wereld, ✡\nde aarde zag het en beefde."
-          },
-          {
-            "verse": 5,
-            "text": "Bergen,\nals was\nsmolten zij voor het aanschijn van de Ene, ✡\nvoor het aanschijn\nvan de Heer van heel de aarde."
-          },
-          {
-            "verse": 6,
-            "text": "De hemelen hebben zijn gerechtigheid gemeld, ✡\ngezien hebben alle gemeenschappen\nzijn glorie."
-          },
-          {
-            "verse": 7,
-            "text": "Dat zich schamen al wie dienen een hakbeeld,\nzich gelukkig prijzen\nmet goden van niets,- ✡\nbuigt u voor hem, al gij goden!"
-          },
-          {
-            "verse": 8,
-            "text": "Sion hoorde en was verheugd,\nde dochters van Juda juichten, ✡\nvanwege uw gerichten, o Ene!"
-          },
-          {
-            "verse": 9,
-            "text": "Want gij, Ene,\nzijt de Hoogste over heel de aarde, ✡\nzeer hoog staat gij boven alle goden!"
-          },
-          {
-            "verse": 10,
-            "text": "Die liefhebt de Ene,\nhaat het kwade,\nhij bewaakt de zielen van zijn vrienden, ✡\naan de hand van bozen\nzal hij hen ontrukken."
-          },
-          {
-            "verse": 11,
-            "text": "Licht is uitgezaaid voor de rechtvaardige, ✡\nen vreugde voor oprechten van hart."
-          },
-          {
-            "verse": 12,
-            "text": "Verheugt u, rechtvaardigen, in de Ene, ✡\nbrengt dank,\nzijn heiligheid indachtig!"
-          }
-        ],
-        "translation": "NB"
       }
     ],
     "nbv21": [
@@ -4693,43 +4194,90 @@
         "translation": "NBV21"
       },
       {
-        "book": "1CO",
-        "chapter": 1,
+        "book": "EPH",
+        "chapter": 4,
         "verses": [
           {
-            "verse": 17,
-            "text": "Christus heeft mij immers niet gezonden om te dopen, maar om te verkondigen – en niet door middel van diepzinnige welsprekendheid, want dan zou het kruis van Christus van zijn kracht worden beroofd."
+            "verse": 1,
+            "text": "Ik, die gevangenzit omwille van de Heer, vraag u dan ook dringend de weg te gaan die past bij de roeping die u hebt ontvangen:"
+          },
+          {
+            "verse": 2,
+            "text": "wees altijd nederig, zachtmoedig en geduldig, en verdraag elkaar uit liefde."
+          },
+          {
+            "verse": 3,
+            "text": "Span u in om door de samenbindende kracht van de vrede de eenheid te bewaren die de Geest u geeft:"
+          },
+          {
+            "verse": 4,
+            "text": "één lichaam en één geest, zoals u één hoop hebt op grond van uw roeping,"
+          },
+          {
+            "verse": 5,
+            "text": "één Heer, één geloof, één doop,"
+          },
+          {
+            "verse": 6,
+            "text": "één God en Vader van allen, die boven allen, door allen en in allen is."
+          },
+          {
+            "verse": 7,
+            "text": "Aan ieder van ons is genade geschonken naar de maat waarmee Christus geeft."
+          },
+          {
+            "verse": 8,
+            "text": "Daarom staat er: ‘Toen Hij opsteeg naar omhoog, voerde Hij gevangenen mee en schonk Hij gaven aan de mensen.’"
+          },
+          {
+            "verse": 9,
+            "text": "‘Hij steeg op’ – wat betekent dat anders dan dat Hij ook is afgedaald naar wat lager ligt, naar de aarde?"
+          },
+          {
+            "verse": 10,
+            "text": "Hij die is afgedaald is dezelfde als Hij die opsteeg, tot boven de hemelsferen, om alles met zijn aanwezigheid te vullen."
+          },
+          {
+            "verse": 11,
+            "text": "En Hij is het die zowel apostelen heeft aangesteld als profeten, zowel verkondigers van het evangelie als herders en leraren,"
+          },
+          {
+            "verse": 12,
+            "text": "om de heiligen toe te rusten voor het werk in zijn dienst. Zo wordt het lichaam van Christus opgebouwd,"
+          },
+          {
+            "verse": 13,
+            "text": "totdat wij allen samen door ons geloof en door onze kennis van de Zoon van God een eenheid vormen, de eenheid van de volmaakte mens, van de tot volle wasdom gekomen volheid van Christus."
           }
         ],
         "translation": "NBV21"
       },
       {
-        "book": "MAT",
-        "chapter": 4,
+        "book": "ISA",
+        "chapter": 8,
         "verses": [
           {
-            "verse": 12,
-            "text": "Toen Jezus hoorde dat Johannes gevangengenomen was, week Hij uit naar Galilea."
+            "verse": 23,
+            "text": "En wie daardoor omsloten wordt, zal niet ontkomen. Zoals het land van Zebulon en Naftali in het verleden smadelijk bejegend is, zo wordt weldra eer bewezen aan de kuststreek, het land aan de overkant van de Jordaan en het domein van andere volken."
+          }
+        ],
+        "translation": "NBV21"
+      },
+      {
+        "book": "ISA",
+        "chapter": 9,
+        "verses": [
+          {
+            "verse": 1,
+            "text": "Het volk dat in duisternis ronddoolt ziet een schitterend licht. Zij die in het donker wonen worden door een helder licht beschenen."
           },
           {
-            "verse": 13,
-            "text": "Hij keerde niet terug naar Nazaret, maar ging in Kafarnaüm wonen, aan het meer, in het gebied van Zebulon en Naftali."
+            "verse": 2,
+            "text": "U hebt het volk weer groot gemaakt, diepe vreugde gaf U het, blijdschap als de vreugde bij de oogst, zij jubelen als bij het verdelen van de buit."
           },
           {
-            "verse": 14,
-            "text": "Zo moest in vervulling gaan wat gezegd is door de profeet Jesaja:"
-          },
-          {
-            "verse": 15,
-            "text": "‘Land van Zebulon en Naftali, gebied aan het meer en aan de overkant van de Jordaan, Galilea van de heidenen, luister:"
-          },
-          {
-            "verse": 16,
-            "text": "Het volk dat in duisternis leefde, zag een schitterend licht, en zij die woonden in de schaduw van de dood werden door het licht beschenen.’"
-          },
-          {
-            "verse": 17,
-            "text": "Vanaf dat moment begon Jezus zijn verkondiging. ‘Kom tot inkeer,’ zei Hij, ‘want het koninkrijk van de hemel is nabij!’"
+            "verse": 3,
+            "text": "Het juk dat op hen drukte, de stok op hun schouder, de staf van de drijver, U hebt ze verbrijzeld, zoals Midjan destijds."
           }
         ],
         "translation": "NBV21"
@@ -4856,74 +4404,104 @@
     "grondtekst": [
       {
         "source": "NA28 (Novum Testamentum Graece)",
-        "book_nl": "1 Korintiërs",
-        "book_original": "1CO",
-        "chapter": 1,
-        "language": "Grieks",
-        "verses": [
-          {
-            "chapter": 1,
-            "verse": 10,
-            "text": "Παρακαλῶ δὲ ὑμᾶς, ἀδελφοί, διὰ τοῦ ὀνόματος τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ, ἵνα τὸ αὐτὸ λέγητε πάντες καὶ μὴ ᾖ ἐν ὑμῖν σχίσματα, ἦτε δὲ κατηρτισμένοι ἐν τῷ αὐτῷ νοῒ καὶ ἐν τῇ αὐτῇ γνώμῃ. "
-          },
-          {
-            "chapter": 1,
-            "verse": 11,
-            "text": "ἐδηλώθη γάρ μοι περὶ ὑμῶν, ἀδελφοί μου, ὑπὸ τῶν Χλόης ὅτι ἔριδες ἐν ὑμῖν εἰσιν. "
-          },
-          {
-            "chapter": 1,
-            "verse": 12,
-            "text": "λέγω δὲ τοῦτο ὅτι ἕκαστος ὑμῶν λέγει· ἐγὼ μέν εἰμι Παύλου, ἐγὼ δὲ Ἀπολλῶ, ἐγὼ δὲ Κηφᾶ, ἐγὼ δὲ Χριστοῦ. "
-          },
-          {
-            "chapter": 1,
-            "verse": 13,
-            "text": "μεμέρισται ὁ Χριστός; μὴ Παῦλος ἐσταυρώθη ὑπὲρ ὑμῶν, ἢ εἰς τὸ ὄνομα Παύλου ἐβαπτίσθητε; "
-          },
-          {
-            "chapter": 1,
-            "verse": 17,
-            "text": "οὐ γὰρ ἀπέστειλέν με Χριστὸς βαπτίζειν ἀλλ’ εὐαγγελίζεσθαι, οὐκ ἐν σοφίᾳ λόγου, ἵνα μὴ κενωθῇ ὁ σταυρὸς τοῦ Χριστοῦ."
-          }
-        ]
-      },
-      {
-        "source": "NA28 (Novum Testamentum Graece)",
-        "book_nl": "Matteüs",
-        "book_original": "MAT",
+        "book_nl": "Efeziërs",
+        "book_original": "EPH",
         "chapter": 4,
         "language": "Grieks",
         "verses": [
           {
             "chapter": 4,
+            "verse": 1,
+            "text": "Παρακαλῶ οὖν ὑμᾶς ἐγὼ ὁ δέσμιος ἐν κυρίῳ ἀξίως περιπατῆσαι τῆς κλήσεως ἧς ἐκλήθητε, "
+          },
+          {
+            "chapter": 4,
+            "verse": 2,
+            "text": "μετὰ πάσης ταπεινοφροσύνης καὶ πραΰτητος, μετὰ μακροθυμίας, ἀνεχόμενοι ἀλλήλων ἐν ἀγάπῃ, "
+          },
+          {
+            "chapter": 4,
+            "verse": 3,
+            "text": "σπουδάζοντες τηρεῖν τὴν ἑνότητα τοῦ πνεύματος ἐν τῷ συνδέσμῳ τῆς εἰρήνης· "
+          },
+          {
+            "chapter": 4,
+            "verse": 4,
+            "text": "Ἓν σῶμα καὶ ἓν πνεῦμα, καθὼς καὶ ἐκλήθητε ἐν μιᾷ ἐλπίδι τῆς κλήσεως ὑμῶν·"
+          },
+          {
+            "chapter": 4,
+            "verse": 5,
+            "text": "εἷς κύριος, μία πίστις, ἓν βάπτισμα,"
+          },
+          {
+            "chapter": 4,
+            "verse": 6,
+            "text": "εἷς θεὸς καὶ πατὴρ πάντων, ὁ ἐπὶ πάντων καὶ διὰ πάντων καὶ ἐν πᾶσιν."
+          },
+          {
+            "chapter": 4,
+            "verse": 7,
+            "text": "Ἑνὶ δὲ ἑκάστῳ ἡμῶν ἐδόθη ἡ χάρις κατὰ τὸ μέτρον τῆς δωρεᾶς τοῦ Χριστοῦ. "
+          },
+          {
+            "chapter": 4,
+            "verse": 8,
+            "text": "διὸ λέγει· ἀναβὰς εἰς ὕψος ᾐχμαλώτευσεν αἰχμαλωσίαν, ἔδωκεν δόματα τοῖς ἀνθρώποις."
+          },
+          {
+            "chapter": 4,
+            "verse": 9,
+            "text": "τὸ δὲ ἀνέβη τί ἐστιν, εἰ μὴ ὅτι καὶ κατέβη εἰς τὰ κατώτερα [μέρη] τῆς γῆς; "
+          },
+          {
+            "chapter": 4,
+            "verse": 10,
+            "text": "ὁ καταβὰς αὐτός ἐστιν καὶ ὁ ἀναβὰς ὑπεράνω πάντων τῶν οὐρανῶν, ἵνα πληρώσῃ τὰ πάντα. "
+          },
+          {
+            "chapter": 4,
+            "verse": 11,
+            "text": "Καὶ αὐτὸς ἔδωκεν τοὺς μὲν ἀποστόλους, τοὺς δὲ προφήτας, τοὺς δὲ εὐαγγελιστάς, τοὺς δὲ ποιμένας καὶ διδασκάλους, "
+          },
+          {
+            "chapter": 4,
             "verse": 12,
-            "text": "Ἀκούσας δὲ ὅτι Ἰωάννης παρεδόθη ἀνεχώρησεν εἰς τὴν Γαλιλαίαν. "
+            "text": "πρὸς τὸν καταρτισμὸν τῶν ἁγίων εἰς ἔργον διακονίας, εἰς οἰκοδομὴν τοῦ σώματος τοῦ Χριστοῦ, "
           },
           {
             "chapter": 4,
             "verse": 13,
-            "text": "καὶ καταλιπὼν τὴν Ναζαρὰ ἐλθὼν κατῴκησεν εἰς Καφαρναοὺμ τὴν παραθαλασσίαν ἐν ὁρίοις Ζαβουλὼν καὶ Νεφθαλίμ· "
+            "text": "μέχρι καταντήσωμεν οἱ πάντες εἰς τὴν ἑνότητα τῆς πίστεως καὶ τῆς ἐπιγνώσεως τοῦ υἱοῦ τοῦ θεοῦ, εἰς ἄνδρα τέλειον, εἰς μέτρον ἡλικίας τοῦ πληρώματος τοῦ Χριστοῦ, "
+          }
+        ]
+      },
+      {
+        "source": "BHS (Biblia Hebraica Stuttgartensia)",
+        "book_nl": "Jesaja",
+        "book_original": "Jesaia",
+        "chapter": 8,
+        "language": "Hebreeuws",
+        "verses": [
+          {
+            "chapter": 8,
+            "verse": 23,
+            "text": "כִּ֣י לֹ֣א מוּעָף֮ לַאֲשֶׁ֣ר מוּצָ֣ק לָהּ֒ כָּעֵ֣ת הָרִאשֹׁ֗ון הֵקַ֞ל אַ֤רְצָה זְבֻלוּן֙ וְאַ֣רְצָה נַפְתָּלִ֔י וְהָאַחֲרֹ֖ון הִכְבִּ֑יד דֶּ֤רֶךְ הַיָּם֙ עֵ֣בֶר הַיַּרְדֵּ֔ן גְּלִ֖יל הַגֹּויִֽם׃ "
           },
           {
-            "chapter": 4,
-            "verse": 14,
-            "text": "ἵνα πληρωθῇ τὸ ῥηθὲν διὰ Ἠσαΐου τοῦ προφήτου λέγοντος·"
+            "chapter": 9,
+            "verse": 1,
+            "text": "הָעָם֙ הַהֹלְכִ֣ים בַּחֹ֔שֶׁךְ רָא֖וּ אֹ֣ור גָּדֹ֑ול יֹשְׁבֵי֙ בְּאֶ֣רֶץ צַלְמָ֔וֶת אֹ֖ור נָגַ֥הּ עֲלֵיהֶֽם׃ "
           },
           {
-            "chapter": 4,
-            "verse": 15,
-            "text": "γῆ Ζαβουλὼν καὶ γῆ Νεφθαλίμ, ὁδὸν θαλάσσης, πέραν τοῦ Ἰορδάνου, Γαλιλαία τῶν ἐθνῶν,"
+            "chapter": 9,
+            "verse": 2,
+            "text": "הִרְבִּ֣יתָ הַגֹּ֔וי לֹ֖ו הִגְדַּ֣לְתָּ הַשִּׂמְחָ֑ה שָׂמְח֤וּ לְפָנֶ֨יךָ֙ כְּשִׂמְחַ֣ת בַּקָּצִ֔יר כַּאֲשֶׁ֥ר יָגִ֖ילוּ בְּחַלְּקָ֥ם שָׁלָֽל׃ "
           },
           {
-            "chapter": 4,
-            "verse": 16,
-            "text": "ὁ λαὸς ὁ καθήμενος ἐν σκότει φῶς εἶδεν μέγα, καὶ τοῖς καθημένοις ἐν χώρᾳ καὶ σκιᾷ θανάτου φῶς ἀνέτειλεν αὐτοῖς."
-          },
-          {
-            "chapter": 4,
-            "verse": 17,
-            "text": "Ἀπὸ τότε ἤρξατο ὁ Ἰησοῦς κηρύσσειν καὶ λέγειν· μετανοεῖτε· ἤγγικεν γὰρ ἡ βασιλεία τῶν οὐρανῶν."
+            "chapter": 9,
+            "verse": 3,
+            "text": "כִּ֣י׀ אֶת־עֹ֣ל סֻבֳּלֹ֗ו וְאֵת֙ מַטֵּ֣ה שִׁכְמֹ֔ו שֵׁ֖בֶט הַנֹּגֵ֣שׂ בֹּ֑ו הַחִתֹּ֖תָ כְּיֹ֥ום מִדְיָֽן׃ "
           }
         ]
       },

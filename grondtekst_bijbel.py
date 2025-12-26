@@ -3,6 +3,23 @@ import json
 import re
 from pathlib import Path
 
+# Probeer normalize_scripture_reference te importeren
+try:
+    from naardense_bijbel import normalize_scripture_reference
+except ImportError:
+    # Fallback definitie
+    def normalize_scripture_reference(reference: str) -> str:
+        """Normaliseer schriftverwijzingen."""
+        if not reference or not isinstance(reference, str):
+            return reference
+        normalized = re.sub(r'(\d+)[ab]\b', r'\1', reference)
+        cross_chapter_pattern = r'^((?:\d\s+)?[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)\s+(\d+):(\d+)[-–](\d+):(\d+)$'
+        match = re.match(cross_chapter_pattern, normalized)
+        if match:
+            book, ch1, v1, ch2, v2 = match.groups()
+            normalized = f"{book} {ch1}:{v1} en {book} {ch2}:1-{v2}"
+        return normalized
+
 # Configuratie
 SCRIPT_DIR = Path(__file__).parent.resolve()
 MISC_DIR = SCRIPT_DIR / "misc"
@@ -84,6 +101,21 @@ NA28_MAPPING = {
     "3 johannes": "3JN",
     "judas": "JUD",
     "openbaring": "REV"
+}
+
+# Verse numbering differences between modern translations and source texts
+# Format: (book, modern_chapter, modern_verse) -> (source_chapter, source_verse)
+VERSE_MAPPING_BHS = {
+    # Jesaja 8:23 in modern translations = 9:1 in BHS
+    # All of chapter 9 shifts down by 1
+    ("Jesaia", 8, 23): (9, 1),
+    ("Jesaia", 9, 1): (9, 2),
+    ("Jesaia", 9, 2): (9, 3),
+    ("Jesaia", 9, 3): (9, 4),
+    ("Jesaia", 9, 4): (9, 5),
+    ("Jesaia", 9, 5): (9, 6),
+    ("Jesaia", 9, 6): (9, 7),
+    # Add more mappings as needed
 }
 
 # Cache for loaded texts
@@ -209,33 +241,65 @@ def get_grondtekst(reference):
     if book_key in BHS_MAPPING:
         bhs_name = BHS_MAPPING[book_key]
         bhs_data = load_bhs()
-        
-        if bhs_name in bhs_data and chapter in bhs_data[bhs_name]:
-            verses = []
-            
-            verse_iterator = []
-            if v_start is None: # Whole chapter
-                verse_iterator = sorted(bhs_data[bhs_name][chapter].keys())
-            else: # Specific range
-                verse_iterator = range(v_start, v_end + 1)
 
-            for v in verse_iterator:
-                if v in bhs_data[bhs_name][chapter]:
-                    verses.append({
-                        "chapter": chapter,
-                        "verse": v,
-                        "text": bhs_data[bhs_name][chapter][v]
-                    })
-            
-            if verses:
-                return {
+        # Group verses by chapter for proper structuring
+        verses_by_chapter = {}
+
+        # Build verse iterator
+        verse_iterator = []
+        if v_start is None: # Whole chapter
+            # Need to check which chapter exists in BHS
+            if bhs_name in bhs_data and chapter in bhs_data[bhs_name]:
+                verse_iterator = sorted(bhs_data[bhs_name][chapter].keys())
+        else: # Specific range
+            verse_iterator = range(v_start, v_end + 1)
+
+        for v in verse_iterator:
+            # Check if we need to map this verse to a different location in BHS
+            source_chapter = chapter
+            source_verse = v
+
+            mapping_key = (bhs_name, chapter, v)
+            if mapping_key in VERSE_MAPPING_BHS:
+                source_chapter, source_verse = VERSE_MAPPING_BHS[mapping_key]
+
+            # Now fetch from the (possibly mapped) location
+            if bhs_name in bhs_data and source_chapter in bhs_data[bhs_name] and source_verse in bhs_data[bhs_name][source_chapter]:
+                # Group by original chapter
+                if chapter not in verses_by_chapter:
+                    verses_by_chapter[chapter] = []
+
+                verses_by_chapter[chapter].append({
+                    "chapter": chapter,  # Keep original chapter in output
+                    "verse": v,          # Keep original verse in output
+                    "text": bhs_data[bhs_name][source_chapter][source_verse]
+                })
+
+        # Return structure depends on whether we span multiple chapters
+        if len(verses_by_chapter) == 1:
+            # Single chapter - return simple structure
+            ch = list(verses_by_chapter.keys())[0]
+            return {
+                "source": "BHS (Biblia Hebraica Stuttgartensia)",
+                "book_nl": book_nl,
+                "book_original": bhs_name,
+                "chapter": ch,
+                "verses": verses_by_chapter[ch],
+                "language": "Hebreeuws"
+            }
+        elif len(verses_by_chapter) > 1:
+            # Multiple chapters - return list of pericopes
+            pericopes = []
+            for ch in sorted(verses_by_chapter.keys()):
+                pericopes.append({
                     "source": "BHS (Biblia Hebraica Stuttgartensia)",
                     "book_nl": book_nl,
                     "book_original": bhs_name,
-                    "chapter": chapter,
-                    "verses": verses,
+                    "chapter": ch,
+                    "verses": verses_by_chapter[ch],
                     "language": "Hebreeuws"
-                }
+                })
+            return pericopes  # Return list instead of single dict
 
     # Try NA28 (NT)
     if book_key in NA28_MAPPING:
@@ -299,17 +363,20 @@ def save_grondtekst_lezingen(folder, liturgische_context_json):
 
     bijbel_dir = folder / "bijbelteksten"
     bijbel_dir.mkdir(parents=True, exist_ok=True)
-    
-    for ref_str in references_to_process:
-        print(f"  Processing reference: '{ref_str}'")
-        
+
+    for original_ref in references_to_process:
+        print(f"  Processing reference: '{original_ref}'")
+
+        # Normaliseer voor het ophalen (verwijder a/b, split cross-hoofdstuk)
+        normalized_ref = normalize_scripture_reference(original_ref)
+
         all_verses_for_ref = []
         collected_data_header = {}
 
         # 1. Two-pass parsing
         # Pass 1: Pericope Splitting (Separate distinct chapters/books using ';' or 'en')
-        normalized_ref = re.sub(r'\s+(?:en|&)\s+', ';', ref_str)
-        raw_parts = re.split(r'[;]', normalized_ref)
+        normalized_ref_for_split = re.sub(r'\s+(?:en|&)\s+', ';', normalized_ref)
+        raw_parts = re.split(r'[;]', normalized_ref_for_split)
         
         full_refs = []
         last_book = None
@@ -355,9 +422,19 @@ def save_grondtekst_lezingen(folder, liturgische_context_json):
         # 2. Fetch data for each sub-reference
         for sub_ref in sub_refs:
             data = get_grondtekst(sub_ref)
-            if data and "verses" in data:
+
+            # Handle both single dict and list of dicts (for cross-chapter references)
+            if isinstance(data, list):
+                # Multiple pericopes (cross-chapter)
+                for pericope in data:
+                    if pericope and "verses" in pericope:
+                        if not collected_data_header:
+                            collected_data_header = pericope.copy()
+                            del collected_data_header["verses"]
+                        all_verses_for_ref.extend(pericope["verses"])
+            elif data and "verses" in data:
+                # Single pericope
                 if not collected_data_header:
-                    # Store header info from the first successful fetch
                     collected_data_header = data.copy()
                     del collected_data_header["verses"]
                 all_verses_for_ref.extend(data["verses"])
@@ -370,22 +447,22 @@ def save_grondtekst_lezingen(folder, liturgische_context_json):
 
             collected_data_header["verses"] = sorted_verses
 
-            # Filename generation based on the FULL raw reference string
-            safe_name = ref_str.replace(':', '_').replace(' ', '_').replace(';', '_')
+            # Filename generation based on the ORIGINAL reference string (not normalized)
+            safe_name = original_ref.replace(':', '_').replace(' ', '_').replace(';', '_')
             safe_name = re.sub(r'[^\w\-.]', '', safe_name)
             # Limit length
             if len(safe_name) > 60: safe_name = safe_name[:60]
 
             filename = f"{safe_name}_Grondtekst.json"
             filepath = bijbel_dir / filename
-            
+
             with open(filepath, "w", encoding="utf-8") as f:
                 json.dump(collected_data_header, f, ensure_ascii=False, indent=2)
-            
+
             print(f"    -> Success: Saved combined text to {filename}")
             files_saved.append(filepath)
         else:
-            print(f"    -> No text found for '{ref_str}'")
+            print(f"    -> No text found for '{original_ref}'")
             
     return files_saved
 

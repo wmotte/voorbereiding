@@ -13,7 +13,7 @@ from typing import Optional, List, Dict
 
 # Probeer BijbelReferentie te importeren uit naardense_bijbel voor consistentie
 try:
-    from naardense_bijbel import parse_bijbelreferentie, BijbelReferentie
+    from naardense_bijbel import parse_bijbelreferentie, BijbelReferentie, normalize_scripture_reference
 except ImportError:
     # Fallback definitie als naardense_bijbel niet beschikbaar is
     from dataclasses import dataclass
@@ -56,6 +56,18 @@ except ImportError:
             vers_eind = extra_eind
 
         return BijbelReferentie(boek, hoofdstuk, vers_start, vers_eind)
+
+    def normalize_scripture_reference(reference: str) -> str:
+        """Fallback normalisatie functie."""
+        if not reference or not isinstance(reference, str):
+            return reference
+        normalized = re.sub(r'(\d+)[ab]\b', r'\1', reference)
+        cross_chapter_pattern = r'^((?:\d\s+)?[A-Za-zëïüéèöä]+(?:\s+[A-Za-zëïüéèöä]+)*)\s+(\d+):(\d+)[-–](\d+):(\d+)$'
+        match = re.match(cross_chapter_pattern, normalized)
+        if match:
+            book, ch1, v1, ch2, v2 = match.groups()
+            normalized = f"{book} {ch1}:{v1} en {book} {ch2}:1-{v2}"
+        return normalized
 
 # Pad configuratie
 SCRIPT_DIR = Path(__file__).parent.resolve()
@@ -244,8 +256,13 @@ def save_nbv21_lezingen(output_dir: Path, context_text: str) -> dict[str, str]:
     processed_refs = []
     # 1. Parse all references first
     for raw_ref in found_refs_raw:
-        # Check for complex references with semicolons (e.g., "Sefanja 2:3; 3:12-13")
-        parts = raw_ref.split(';')
+        # Normaliseer eerst (verwijder a/b, split cross-hoofdstuk)
+        normalized_ref = normalize_scripture_reference(raw_ref)
+
+        # Check for complex references with semicolons and " en " (e.g., "Sefanja 2:3; 3:12-13" or "Jesaja 8:23 en Jesaja 9:1-3")
+        # Replace " en " with "; " for uniform splitting
+        normalized_ref = re.sub(r'\s+en\s+', '; ', normalized_ref)
+        parts = normalized_ref.split(';')
         sub_refs = []
         last_book = None
         
