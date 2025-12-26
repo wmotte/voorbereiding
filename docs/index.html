@@ -242,7 +242,7 @@
         /* Groep kleuren - Liturgisch/Kerkelijk (01, Bijbelteksten) */
         .nav-group-liturgisch .nav-number {
             background: #d4af37;
-            color: #2c2416;
+            color: #f5f0e8;
         }
 
         /* Groep kleuren - Contextueel (02-07) */
@@ -272,7 +272,7 @@
         /* Groep kleuren - Liturgische Elementen (15a-15e) */
         .nav-group-liturgische-elementen .nav-number {
             background: #c88f5f;
-            color: #2c2416;
+            color: #f5f0e8;
         }
 
         /* Groep kleuren - Preekschetsen (16-19) */
@@ -484,7 +484,7 @@
         /* Section number kleuren - Liturgisch/Kerkelijk */
         .section-group-liturgisch .section-number {
             background: #d4af37;
-            color: #2c2416;
+            color: #f5f0e8;
         }
 
         /* Section number kleuren - Contextueel */
@@ -514,7 +514,7 @@
         /* Section number kleuren - Liturgische Elementen */
         .section-group-liturgische-elementen .section-number {
             background: #c88f5f;
-            color: #2c2416;
+            color: #f5f0e8;
         }
 
         /* Section number kleuren - Preekschetsen */
@@ -2264,24 +2264,37 @@
             return mapping[bookOriginal] || null;
         }
 
+        // Map kindermoment types to more appropriate theological/pedagogical names
+        function mapKindermomentType(type) {
+            const typeMapping = {
+                'Gek': 'Verrassend',
+                'Gek/Onconventioneel': 'Verrassend',
+                'Bizar': 'Bijzonder',
+                'Klassiek': 'Traditioneel',
+                'Actief': 'Interactief',
+                'Ernstig': 'Bezinnend'
+            };
+            return typeMapping[type] || type;
+        }
+
         function getSearchUrl(query, context) {
             const safeContext = (context || '').toLowerCase();
             const encoded = encodeURIComponent(query);
 
             // Contexts that should default to Web search
             const webContexts = ['muziek', 'literatuur', 'hedendaags', 'klassiek', 'liturgisch', 'modern', 'nederlands', 'poezie', 'roman', 'boeken', 'liederen', 'songs'];
-            
+
             // Contexts that should default to Video search
             const videoContexts = ['film_documentaire', 'films', 'video', 'documentaire', 'movie', 'film'];
-            
+
             if (webContexts.includes(safeContext)) {
                 return `https://duckduckgo.com/?origin=funnel_home_google&t=h_&q=${encoded}&ia=web`;
             }
-            
+
             if (videoContexts.includes(safeContext)) {
                 return `https://duckduckgo.com/?origin=funnel_home_google&t=h_&q=${encoded}&ia=videos&iax=videos`;
             }
-            
+
             return `https://duckduckgo.com/?origin=funnel_home_google&t=h_&q=${encoded}&ia=images&iax=images`;
         }
 
@@ -2704,7 +2717,7 @@
                     if (sectionData.kindermoment_opties && Array.isArray(sectionData.kindermoment_opties)) {
                         sectionData.kindermoment_opties.forEach((optie, index) => {
                             const titel = optie.titel || `Kindermoment Optie ${index + 1}`;
-                            const type = optie.type || '';
+                            const type = optie.type ? mapKindermomentType(optie.type) : '';
                             const label = type ? `${type}: ${titel}` : titel;
 
                             subSections.push(`kindermoment-${index + 1}`);
@@ -2716,7 +2729,7 @@
                     if (sectionData.kindermoment_opties && Array.isArray(sectionData.kindermoment_opties)) {
                         sectionData.kindermoment_opties.forEach((optie, index) => {
                             const titel = optie.titel || `Optie ${index + 1}`;
-                            const type = optie.type || '';
+                            const type = optie.type ? mapKindermomentType(optie.type) : '';
                             const label = type ? `${type}: ${titel}` : titel;
 
                             subSections.push(`kindermoment-${index + 1}`);
@@ -3700,8 +3713,7 @@
         }
 
         function renderKindermoment(opties, sectionKey = '15_kindermoment') {
-            let html = `<div class="data-group">`;
-            html += `<div class="data-group-title">Opties</div>`;
+            let html = '';
 
             opties.forEach((optie, index) => {
                 html += `<div id="section-${sectionKey}-kindermoment-${index + 1}" class="subsection-anchor"></div>`;
@@ -3713,7 +3725,7 @@
                 html += `<div>`;
                 html += `<div class="focus-card-title">${processText(optie.titel || '')}</div>`;
                 if (optie.type) {
-                    html += `<span class="focus-card-type">${processText(optie.type)}</span>`;
+                    html += `<span class="focus-card-type">${processText(mapKindermomentType(optie.type))}</span>`;
                 }
                 html += `</div></div>`;
 
@@ -3763,7 +3775,6 @@
                 html += `</div>`; // end focus-card
             });
 
-            html += `</div>`;
             return html;
         }
 
