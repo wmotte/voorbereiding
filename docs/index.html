@@ -303,7 +303,70 @@
 
         /* Content wrapper for max-width */
         .content-wrapper {
-            max-width: 800px;
+            max-width: none;
+        }
+
+        /* Section layout with info panel */
+        .section-layout {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .section-main-content {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        .section-info-panel {
+            flex: 0 0 320px;
+            width: 320px;
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+            position: sticky;
+            top: 85px;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+            opacity: 0.65;
+        }
+
+        .section-info-title {
+            font-weight: bold;
+            font-size: 0.9em;
+            color: var(--accent);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section-info-text {
+            font-size: 0.9em;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 1100px) {
+            .section-info-panel {
+                flex: 0 0 260px;
+                width: 260px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .section-layout {
+                flex-direction: column;
+            }
+
+            .section-info-panel {
+                flex: none;
+                width: 100%;
+                position: static;
+                max-height: none;
+            }
         }
 
         /* Welcome screen */
@@ -1917,6 +1980,7 @@
     <script>
         // State
         let jsonData = null;
+        let sectionInfo = null;
         let lastScrollTop = 0;
         let sidebarVisible = window.innerWidth > 900;
 
@@ -1982,6 +2046,19 @@
             'Bijbelteksten': 'Bijbelteksten'
         };
 
+        // Load section info
+        async function loadSectionInfo() {
+            try {
+                const response = await fetch('section_info.json');
+                if (response.ok) {
+                    sectionInfo = await response.json();
+                }
+            } catch (err) {
+                console.error('Could not load section_info.json:', err);
+            }
+        }
+        loadSectionInfo();
+
         // Initialize theme
         const savedTheme = localStorage.getItem('theme') || 'light';
         document.documentElement.setAttribute('data-theme', savedTheme);
@@ -2007,8 +2084,13 @@
              if (!fileName) return;
 
              mainContent.innerHTML = '<div class="loading">Bestand laden...</div>';
-             
+
              try {
+                 // Ensure section info is loaded first
+                 if (!sectionInfo) {
+                     await loadSectionInfo();
+                 }
+
                  const response = await fetch(fileName);
                  if (!response.ok) {
                     throw new Error(`Bestand niet gevonden: ${response.statusText}`);
@@ -2640,6 +2722,17 @@
                 contentHtml = renderObjectWithIds(dataToRender, key);
             }
 
+            // Generate info panel if section info is available
+            let infoPanelHtml = '';
+            if (sectionInfo && sectionInfo[key]) {
+                infoPanelHtml = `
+                    <div class="section-info-panel">
+                        <div class="section-info-title">Over deze sectie</div>
+                        <div class="section-info-text">${smartQuotes(escapeHtml(sectionInfo[key]))}</div>
+                    </div>
+                `;
+            }
+
             return `
                 <section class="section bevel-raised" id="section-${key}">
                     <div class="section-header">
@@ -2647,8 +2740,11 @@
                         <h2 class="section-title">${escapeHtml(title)}</h2>
                         ${generatedAt ? `<div class="section-meta">Gegenereerd: ${escapeHtml(generatedAt)}</div>` : ''}
                     </div>
-                    <div class="section-content content-wrapper">
-                        ${contentHtml}
+                    <div class="section-layout">
+                        <div class="section-main-content">
+                            ${contentHtml}
+                        </div>
+                        ${infoPanelHtml}
                     </div>
                 </section>
             `;
@@ -4792,7 +4888,7 @@
                     html += `</ul></div>`;
                 }
 
-                html += `</div>`;
+                html += `</div></div>`;
             }
 
             // Profetische elementen
