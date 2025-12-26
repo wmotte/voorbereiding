@@ -4856,15 +4856,17 @@
                 html += `<div id="section-${sectionKey}-klassieke_dispositio" class="subsection-anchor"></div>`;
                 html += `<div class="data-group">`;
                 html += `<div class="data-group-title">Klassieke Dispositio</div>`;
-                html += `<div class="buttrick-container">`; // Re-use container style for vertical flow
+                html += `<div class="buttrick-container">`;
 
                 const parts = ['exordium', 'narratio', 'propositio', 'partitio', 'confirmatio', 'refutatio', 'peroratio'];
-                
-                parts.forEach(part => {
+                const partColors = ['#7986cb', '#4db6ac', '#aed581', '#ffb74d', '#ff8a65', '#f06292', '#ba68c8'];
+
+                parts.forEach((part, index) => {
                     if (data.klassieke_dispositio[part]) {
-                        html += `<div class="buttrick-move">`;
+                        const color = partColors[index] || 'var(--accent)';
+                        html += `<div class="buttrick-move" style="border-left-color: ${color};">`;
                         html += `<div class="buttrick-move-header">`;
-                        html += `<div class="buttrick-move-badge" style="background: var(--accent); font-size: 0.8em; width: auto; padding: 0 10px; border-radius: 15px;">${escapeHtml(formatKey(part))}</div>`;
+                        html += `<div class="buttrick-move-badge" style="background: ${color}; color: white; width: auto; padding: 8px 16px; border-radius: 4px; text-transform: capitalize;">${escapeHtml(formatKey(part))}</div>`;
                         html += `</div>`;
                         html += `<div class="buttrick-move-content">`;
                         html += renderObjectCompact(data.klassieke_dispositio[part]);
@@ -4934,14 +4936,6 @@
                 html += `<div class="data-group">`;
                 html += `<div class="data-group-title">Praktische Tips</div>`;
                 html += renderObject(data.praktische_tips, 'praktische_tips');
-                html += `</div>`;
-            }
-
-            // Bronnen
-            if (data.bronnen_en_verdieping) {
-                html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Bronnen & Verdieping</div>`;
-                html += renderObject(data.bronnen_en_verdieping, 'bronnen_en_verdieping');
                 html += `</div>`;
             }
 
