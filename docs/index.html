@@ -2450,39 +2450,48 @@
 
             // Correct mapping to avoid number collisions
             const keyToNum = {
+                
+                // Wim (order)
+                '01_zondag_kerkelijk_jaar': '01',
                 'Bijbelteksten': '02',
-                '08a_exegese': '08a', '08_exegese': '08a',
-                //'08b_liedsuggesties_database': '08b', '08_liedsuggesties_database': '08b',
-                '08c_commentaries': '08b',
-                
-                
-                '12_representatieve_hoorders': '12a',
-                '10_focus_en_functie': '12b',
 
-                '13_homiletische_analyse': '13a',
-                '13_homiletische_analyse_buttrick': '13b',
-                '13b_homiletische_illustraties': '13c',
+                '02_sociaal_maatschappelijke_context': '03',
+                '03_waardenorientatie': '04',
+                '04_geloofsorientatie': '05',
+                '05_interpretatieve_synthese': '06',
+                '06_actueel_wereldnieuws': '07',
+                '07_politieke_orientatie': '08',
                 
-                '14_klassieke_retorica': '13d',
-                'homiletische_brug_chapell': '13e', // chapell
-                
-                '14_gebeden': '14a',
-                '14_gebeden_profetisch': '14b',
-                '14_gebeden_dialogisch': '14c',
-                '14_gebeden_eenvoudig': '14d',
-               
-                '15_bezinningsmoment': '15a', // Momenten verschuiven naar 15a/b
-                '15_kindermoment': '15b',
-               //# WIm
-                '09_kunst_cultuur': '15c',
-                '11_kalender': '15d',
-               '08b_liedsuggesties_database': '15e', 
+                '08a_exegese': '09',
+                '08c_commentaries': '10',
 
-                '16_preek_solle': '16',
-                '17_preek_jungel': '17',  
-                '18_preek_brueggemann': '18',
-                '19_preek_noordmans': '19'
+                '12_representatieve_hoorders': '11',
+                '10_focus_en_functie': '12', 
+                '13_homiletische_analyse': '13',
+                '13_homiletische_analyse_buttrick': '14',
+                '13b_homiletische_illustraties': '15',
+                '13c_homiletische_fundering_chapell': '16',
+                '14_klassieke_retorica': '17',
+
+                '14_gebeden': '18',
+                '14_gebeden_profetisch': '19',
+                '14_gebeden_dialogisch': '20',
+                '14_gebeden_eenvoudig': '21',
+                
+                '15_kindermoment': '22',
+                '15_bezinningsmoment': '23',
+                '09_kunst_cultuur': '24',
+                '11_kalender': '25',
+                '08b_liedsuggesties_database': '26',
+
+                '16_preek_solle': '27',
+                '17_preek_jungel': '28',
+                '18_preek_brueggemann': '29',
+                '19_preek_noordmans': '30'
+
             };
+
+
 
             sections.forEach(key => {
                 if (keyToNum[key]) {
