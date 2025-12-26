@@ -546,6 +546,18 @@
             color: var(--accent);
             font-size: 1em;
         }
+        .lied-info-icon {
+            color: var(--accent-light);
+            text-decoration: none;
+            font-size: 0.85em;
+            margin-left: 4px;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+        .lied-info-icon:hover {
+            opacity: 1;
+            color: var(--accent);
+        }
 
         .lied-titel {
             font-style: italic;
@@ -1981,6 +1993,7 @@
         // State
         let jsonData = null;
         let sectionInfo = null;
+        let liedboekUrls = {};
         let lastScrollTop = 0;
         let sidebarVisible = window.innerWidth > 900;
 
@@ -2011,13 +2024,13 @@
         const sectionTitles = {
             '00_meta': 'Metadata',
             '01_zondag_kerkelijk_jaar': 'Zondag Kerkelijk Jaar',
-            '02_sociaal_maatschappelijke_context': 'Sociaal-Maatschappelijke Context',
+            '02_sociaal_maatschappelijke_context': 'Sociaal-Maatschappelijk',
             '03_waardenorientatie': 'Waardenoriëntatie',
             '04_geloofsorientatie': 'Geloofsoriëntatie',
             '05_interpretatieve_synthese': 'Interpretatieve Synthese',
             '06_actueel_wereldnieuws': 'Actueel Wereldnieuws',
             '07_politieke_orientatie': 'Politieke Oriëntatie',
-            '08a_exegese': 'Structuralistische exegese',
+            '08a_exegese': 'Structuralistische Exegese',
             
             '08c_commentaries': 'Commentarenwijsheid',
             '08b_liedsuggesties_database': 'Passende Liederen',
@@ -2027,12 +2040,12 @@
             '11_kalender': 'Kalender',
             '12_representatieve_hoorders': 'Representatieve Hoorders',
             
-            '13_homiletische_analyse': 'Lowry\'s Loop',
+            '13_homiletische_analyse': 'Lowry\u2019s Loop',
             '13_homiletische_analyse_buttrick': 'Moves & Structures',
-            '13b_homiletische_illustraties': 'Homiletische illustraties',
-            '13c_homiletische_fundering_chapell': 'Chapells expositie',
+            '13b_homiletische_illustraties': 'Homiletische Illustraties',
+            '13c_homiletische_fundering_chapell': 'Chapells Expositie',
 
-            '14_klassieke_retorica': 'Retorische insteek',
+            '14_klassieke_retorica': 'Retorische Insteek',
             '14_gebeden': 'Gebeden (conventioneel)',
             '14_gebeden_profetisch': 'Gebeden (profetisch)',
             '14_gebeden_dialogisch': 'Gebeden (dialogisch)',
@@ -2058,6 +2071,26 @@
             }
         }
         loadSectionInfo();
+
+        // Load Liedboek Compendium URLs
+        async function loadLiedboekUrls() {
+            try {
+                const response = await fetch('urls_liedboekcompendium.txt');
+                if (response.ok) {
+                    const text = await response.text();
+                    const lines = text.split('\n');
+                    lines.forEach(line => {
+                        const match = line.match(/^(.+?)\s*=>\s*(.+)$/);
+                        if (match) {
+                            liedboekUrls[match[1].trim()] = match[2].trim();
+                        }
+                    });
+                }
+            } catch (err) {
+                console.error('Could not load urls_liedboekcompendium.txt:', err);
+            }
+        }
+        loadLiedboekUrls();
 
         // Initialize theme
         const savedTheme = localStorage.getItem('theme') || 'light';
@@ -2089,6 +2122,10 @@
                  // Ensure section info is loaded first
                  if (!sectionInfo) {
                      await loadSectionInfo();
+                 }
+                 // Ensure liedboek URLs are loaded
+                 if (Object.keys(liedboekUrls).length === 0) {
+                     await loadLiedboekUrls();
                  }
 
                  const response = await fetch(fileName);
@@ -3140,6 +3177,7 @@
             html += `<div class="data-group-title">${escapeHtml(title)}</div>`;
 
             // Helper to render grid of songs
+            const isLiedboek2013 = (key === 'liedboek_2013');
             const renderGrid = (list) => {
                 let gridHtml = `<div class="lied-grid">`;
                 list.forEach(lied => {
@@ -3154,7 +3192,17 @@
                         const suggestie = lied.suggestie_gebruik; // New
 
                         if (typeMatch) gridHtml += `<div style="float:right; font-size:0.7em; background:var(--accent-light); color:white; padding:2px 6px; border-radius:4px;">${processText(typeMatch)}</div>`;
-                        if (nummer) gridHtml += `<div class="lied-nummer">${processText(nummer)}</div>`;
+
+                        // Add nummer with optional info icon for Liedboek 2013
+                        if (nummer) {
+                            let nummerHtml = `<div class="lied-nummer">${processText(nummer)}`;
+                            if (isLiedboek2013 && liedboekUrls[nummer]) {
+                                nummerHtml += ` <a href="${liedboekUrls[nummer]}" target="_blank" rel="noopener noreferrer" class="lied-info-icon" title="Achtergrondinformatie op Liedboek Compendium">\u24d8</a>`;
+                            }
+                            nummerHtml += `</div>`;
+                            gridHtml += nummerHtml;
+                        }
+
                         if (titel) gridHtml += `<div class="lied-titel">${processText(titel)}</div>`;
                         if (regel) gridHtml += `<div class="lied-regel">\u201c${processText(regel)}\u201d</div>`;
                         
