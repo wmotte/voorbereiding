@@ -2870,6 +2870,11 @@
                             const val = sectionData[k];
                             return val !== null && val !== undefined;
                         })
+                        .filter(k => {
+                            // Skip 'kerkelijke_context' and 'bronnen_gebruikt' in sociaal-maatschappelijke context
+                            if ((k === 'kerkelijke_context' || k === 'bronnen_gebruikt') && key === '02_sociaal_maatschappelijke_context') return false;
+                            return true;
+                        })
                         .slice(0, 12); // Limit to 12 subsections
                 }
 
@@ -3108,6 +3113,8 @@
                 if (v === null || v === undefined) return false;
                 // Skip 'analyse' in liedsuggesties sections
                 if (k === 'analyse' && (sectionKey === '08b_liedsuggesties_database' || sectionKey === '08_liedsuggesties_database')) return false;
+                // Skip 'kerkelijke_context' and 'bronnen_gebruikt' in sociaal-maatschappelijke context
+                if ((k === 'kerkelijke_context' || k === 'bronnen_gebruikt') && sectionKey === '02_sociaal_maatschappelijke_context') return false;
                 return true;
             });
 
