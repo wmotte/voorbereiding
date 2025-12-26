@@ -3040,31 +3040,33 @@
                 partHtml += `<div class="data-group">`;
                 partHtml += `<div class="data-group-title">${escapeHtml(partTitle)}</div>`;
                 
+                partHtml += `<div class="nested-object" style="background: var(--bg-secondary); border-left-color: var(--accent);">`;
+                
                 if (part.schriftgedeelte) {
-                    partHtml += `<div class="data-item"><div class="data-label">Schriftgedeelte</div><div class="data-value">${processText(part.schriftgedeelte)}</div></div>`;
+                    partHtml += `<div class="data-item" style="background: var(--bg-tertiary);"><div class="data-label">Schriftgedeelte</div><div class="data-value">${processText(part.schriftgedeelte)}</div></div>`;
                 }
                 
                 if (part.titel) {
-                    partHtml += `<h3>${processText(part.titel)}</h3>`;
+                    partHtml += `<h3 style="margin: 15px 0 10px 0; color: var(--accent);">${processText(part.titel)}</h3>`;
                 }
                 
                 if (part.korte_samenvatting) {
-                    partHtml += `<div class="quote-block">${processText(part.korte_samenvatting)}</div>`;
+                    partHtml += `<div class="quote-block" style="background: var(--bg-tertiary); margin-bottom: 20px;">${processText(part.korte_samenvatting)}</div>`;
                 }
                 
                 if (part.tekst) {
-                    partHtml += `<div class="preek-tekst">${processText(part.tekst)}</div>`;
+                    partHtml += `<div class="preek-tekst" style="margin-bottom: 20px;">${processText(part.tekst)}</div>`;
                 }
                 
                 if (part.gebruikte_bronnen && Array.isArray(part.gebruikte_bronnen)) {
-                    partHtml += `<div style="margin-top:15px;"><strong>Gebruikte commentaren:</strong><ul>`;
+                    partHtml += `<div style="margin-top:15px; padding-top: 15px; border-top: 1px dashed var(--border-light);"><strong>Gebruikte commentaren:</strong><ul style="margin-top: 10px; margin-left: 20px;">`;
                     part.gebruikte_bronnen.forEach(bron => {
                         partHtml += `<li>${processText(bron)}</li>`;
                     });
                     partHtml += `</ul></div>`;
                 }
                 
-                partHtml += `</div>`;
+                partHtml += `</div></div>`;
                 return partHtml;
             };
             
@@ -3076,8 +3078,10 @@
                 html += `<div class="data-group">`;
                 html += `<div class="data-group-title">Reflectie & Synthese</div>`;
                 
+                html += `<div class="nested-object" style="background: var(--bg-secondary); border-left-color: var(--accent);">`;
+
                 if (data.reflectie.theologische_lijnen && Array.isArray(data.reflectie.theologische_lijnen)) {
-                    html += `<strong>Theologische lijnen uit de commentaren:</strong><ul>`;
+                    html += `<strong>Theologische lijnen uit de commentaren:</strong><ul style="margin-top: 10px; margin-left: 20px; margin-bottom: 20px;">`;
                     data.reflectie.theologische_lijnen.forEach(lijn => {
                         html += `<li>${processText(lijn)}</li>`;
                     });
@@ -3085,10 +3089,10 @@
                 }
                 
                 if (data.reflectie.homiletische_potentie) {
-                    html += `<div style="margin-top:15px;"><strong>Homiletische potentie:</strong><p>${processText(data.reflectie.homiletische_potentie)}</p></div>`;
+                    html += `<div style="margin-top:15px; padding-top: 15px; border-top: 1px dashed var(--border-light);"><strong>Homiletische potentie:</strong><div class="preek-tekst" style="margin-top: 10px;">${processText(data.reflectie.homiletische_potentie)}</div></div>`;
                 }
                 
-                html += `</div>`;
+                html += `</div></div>`;
             }
             
             return html;
