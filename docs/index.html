@@ -1950,8 +1950,8 @@
             '05_interpretatieve_synthese': 'Interpretatieve Synthese',
             '06_actueel_wereldnieuws': 'Actueel Wereldnieuws',
             '07_politieke_orientatie': 'Politieke Oriëntatie',
-            '08a_exegese': 'Structuralistiche exegese',
-            //'08_exegese': 'Structuralistische exegese',
+            '08a_exegese': 'Structuralistische exegese',
+            
             '08c_commentaries': 'Commentarenwijsheid',
             '08b_liedsuggesties_database': 'Passende Liederen',
             '08_liedsuggesties_database': 'Passende Liederen',
@@ -1959,9 +1959,12 @@
             '10_focus_en_functie': 'Focus & Functie',
             '11_kalender': 'Kalender',
             '12_representatieve_hoorders': 'Representatieve Hoorders',
+            
             '13_homiletische_analyse': 'Lowry\'s Loop',
             '13_homiletische_analyse_buttrick': 'Moves & Structures',
             '13b_homiletische_illustraties': 'Homiletische illustraties',
+            '13c_homiletische_fundering_chapell': 'Chapells expositie',
+
             '14_klassieke_retorica': 'Retorische insteek',
             '14_gebeden': 'Gebeden (conventioneel)',
             '14_gebeden_profetisch': 'Gebeden (profetisch)',
@@ -2165,7 +2168,10 @@
                 '13_homiletische_analyse': '13a',
                 '13_homiletische_analyse_buttrick': '13b',
                 '13b_homiletische_illustraties': '13c',
+                
                 '14_klassieke_retorica': '13d',
+                'homiletische_brug_chapell': '13e', // chapell
+                
                 '14_gebeden': '14a',
                 '14_gebeden_profetisch': '14b',
                 '14_gebeden_dialogisch': '14c',
@@ -2422,11 +2428,10 @@
                     });
                 } else if (key === '13_homiletische_analyse') {
                     // Special handling for Homiletische Analyse (Lowry) - rename items
-                    const subKeyOrder = ['tekstkeuze', 'homiletical_plot', 'homiletische_brug_chapell'];
+                    const subKeyOrder = ['tekstkeuze', 'homiletical_plot'];
                     const labelMap = {
                         'tekstkeuze': 'Tekstkeuze',
                         'homiletical_plot': 'De 5 Stadia (Lowry)',
-                        'homiletische_brug_chapell': 'Fundering (Chapell)'
                     };
 
                     subKeyOrder.forEach(subKey => {
@@ -2846,11 +2851,6 @@
             // Homiletische Plot
             if (key === 'homiletical_plot' || key === 'homiletische_plot') {
                 return renderHomiletischePlot(value);
-            }
-
-            // Homiletische Brug (Chapell)
-            if (key === 'homiletische_brug_chapell') {
-                return renderChapellBrug(value);
             }
 
             // Buttrick Moves & Structures

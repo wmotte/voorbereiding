@@ -203,6 +203,37 @@ def sample_noordmans_preken(n: int = 15) -> str:
     return "\n\n".join(output_parts)
 
 
+def sample_brueggemann_preken(n: int = 8) -> str:
+    """Selecteer willekeurige preken uit de Brueggemann preken map."""
+    brueggemann_dir = SCRIPT_DIR / "preken_brueggemann"
+    if not brueggemann_dir.exists():
+        return "Geen voorbeeldpreken van Brueggemann gevonden."
+
+    files = list(brueggemann_dir.glob("*.json"))
+    if not files:
+        return "Geen voorbeeldpreken van Brueggemann gevonden."
+
+    selected_files = random.sample(files, min(n, len(files)))
+
+    output_parts = []
+    for i, file_path in enumerate(selected_files, 1):
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                title = data.get("title_nl", data.get("title", "Naamloos"))
+                text = data.get("body_nl", data.get("body", ""))
+                scripture = ", ".join(data.get("scripture_references", [])) if data.get("scripture_references") else ""
+                if text:
+                    header = f"### Voorbeeld {i}: {title}"
+                    if scripture:
+                        header += f" ({scripture})"
+                    output_parts.append(f"{header}\n\n{text}")
+        except Exception as e:
+            print(f"Fout bij lezen Brueggemann voorbeeld {file_path.name}: {e}")
+
+    return "\n\n".join(output_parts)
+
+
 def _xor_bytes(data: bytes, key: bytes) -> bytes:
     """Apply XOR operation to data with key."""
     key_len = len(key)
@@ -375,6 +406,7 @@ def read_previous_analyses(folder: Path) -> dict:
         ("13_homiletische_analyse", "homiletische_analyse"),
         ("13_homiletische_analyse_buttrick", "homiletische_analyse_buttrick"),
         ("13b_homiletische_illustraties", "homiletische_illustraties"),
+        ("13c_homiletische_fundering_chapell", "homiletische_fundering_chapell"),
         ("14_klassieke_retorica", "klassieke_retorica"),
         ("14_gebeden", "gebeden"),
         ("15_bezinningsmoment", "bezinningsmoment"),
@@ -798,6 +830,7 @@ def update_summary(output_dir: Path):
                 ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
                 ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
                 ("13b_homiletische_illustraties", "Homiletische Illustraties Generator"),
+                ("13c_homiletische_fundering_chapell", "Homiletische Fundering (Chapell)"),
                 ("14_klassieke_retorica", "Klassiek-Retorische Analyse (Aristoteles)"),
                 ("14_gebeden", "Gebeden voor de Eredienst"),
                 ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
@@ -807,7 +840,8 @@ def update_summary(output_dir: Path):
                 ("15_kindermoment", "Kindermoment"),
                 ("16_preek_solle", "Preek in de stijl van Sölle"),
                 ("17_preek_jungel", "Preek in de stijl van Jüngel"),
-                ("18_preek_noordmans", "Preekschets in de stijl van Noordmans"),
+                ("18_preek_brueggemann", "Preek in de stijl van Brueggemann"),
+                ("19_preek_noordmans", "Preekschets in de stijl van Noordmans"),
             ]
 
             existing_names = [a.get("name") for a in data.get("analyses", [])]
@@ -942,6 +976,7 @@ def main():
         ("13_homiletische_analyse", "Homiletische Analyse (Lowry's Plot)"),
         ("13_homiletische_analyse_buttrick", "Homiletische Analyse (Buttrick's Moves & Structures)"),
         ("13b_homiletische_illustraties", "Homiletische Illustraties Generator"),
+        ("13c_homiletische_fundering_chapell", "Homiletische Fundering (Chapell)"),
         ("14_klassieke_retorica", "Klassiek-Retorische Analyse (Aristoteles)"),
         ("14_gebeden", "Gebeden voor de Eredienst"),
         ("14_gebeden_profetisch", "Profetische Gebeden (Brueggemann)"),
@@ -950,7 +985,12 @@ def main():
     ]
     if wil_kindermoment: analysis_definitions.append(("15_kindermoment", "Kindermoment"))
     if wil_bezinningsmoment: analysis_definitions.append(("15_bezinningsmoment", "Moment van Bezinning"))
-    analysis_definitions.extend([("16_preek_solle", "Preek in de stijl van Sölle"), ("17_preek_jungel", "Preek in de stijl van Jüngel"), ("18_preek_noordmans", "Preekschets in de stijl van Noordmans")])
+    analysis_definitions.extend([
+        ("16_preek_solle", "Preek in de stijl van Sölle"),
+        ("17_preek_jungel", "Preek in de stijl van Jüngel"),
+        ("18_preek_brueggemann", "Preek in de stijl van Brueggemann"),
+        ("19_preek_noordmans", "Preekschets in de stijl van Noordmans")
+    ])
 
     if args.exegese:
         analysis_definitions = [x for x in analysis_definitions if x[0].startswith("08")]
@@ -972,7 +1012,8 @@ def main():
         elif name == "14_gebeden_dialogisch": extra_replacements["voorbeeld_gebeden"] = sample_dialogische_gebeden()
         elif name == "16_preek_solle": extra_replacements["voorbeeld_gebeden"] = sample_solle_preken()
         elif name == "17_preek_jungel": extra_replacements["voorbeeld_gebeden"] = sample_jungel_preken()
-        elif name == "18_preek_noordmans": extra_replacements["voorbeeld_gebeden"] = sample_noordmans_preken()
+        elif name == "18_preek_brueggemann": extra_replacements["voorbeeld_preken"] = sample_brueggemann_preken()
+        elif name == "19_preek_noordmans": extra_replacements["voorbeeld_gebeden"] = sample_noordmans_preken()
 
         task_prompt = load_prompt(f"{name}.md", user_input, extra_replacements)
         analysis_context = build_context_string(previous_analyses, limited=(name == "12_representatieve_hoorders"), excluded_sections=["kunst_cultuur", "kalender", "representatieve_hoorders"] if name.startswith("14_gebeden") else [])
