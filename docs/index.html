@@ -239,6 +239,63 @@
             font-weight: bold;
         }
 
+        /* Groep kleuren - Liturgisch/Kerkelijk (01, Bijbelteksten) */
+        .nav-group-liturgisch .nav-number {
+            background: #d4af37;
+            color: #2c2416;
+        }
+
+        /* Groep kleuren - Contextueel (02-07) */
+        .nav-group-contextueel .nav-number {
+            background: #7a9b6f;
+            color: #f5f0e8;
+        }
+
+        /* Groep kleuren - Exegese (08a, 08c) */
+        .nav-group-exegese .nav-number {
+            background: #6b8ba8;
+            color: #f5f0e8;
+        }
+
+        /* Groep kleuren - Homiletiek (12a-13d) */
+        .nav-group-homiletiek .nav-number {
+            background: #9b7a9e;
+            color: #f5f0e8;
+        }
+
+        /* Groep kleuren - Gebeden (14a-14d) */
+        .nav-group-gebeden .nav-number {
+            background: #c67a7a;
+            color: #f5f0e8;
+        }
+
+        /* Groep kleuren - Liturgische Elementen (15a-15e) */
+        .nav-group-liturgische-elementen .nav-number {
+            background: #c88f5f;
+            color: #2c2416;
+        }
+
+        /* Groep kleuren - Preekschetsen (16-19) */
+        .nav-group-preekschetsen .nav-number {
+            background: #8b6f47;
+            color: #f5f0e8;
+        }
+
+        /* Groep headers in menu */
+        .nav-group-header {
+            padding: 8px 20px 4px 20px;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-tertiary);
+            opacity: 0.6;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+        .nav-group-header:first-child {
+            margin-top: 0;
+        }
+
         .nav-toggle {
             float: right;
             font-size: 0.7em;
@@ -422,6 +479,48 @@
             justify-content: center;
             font-weight: bold;
             font-size: 1.1em;
+        }
+
+        /* Section number kleuren - Liturgisch/Kerkelijk */
+        .section-group-liturgisch .section-number {
+            background: #d4af37;
+            color: #2c2416;
+        }
+
+        /* Section number kleuren - Contextueel */
+        .section-group-contextueel .section-number {
+            background: #7a9b6f;
+            color: #f5f0e8;
+        }
+
+        /* Section number kleuren - Exegese */
+        .section-group-exegese .section-number {
+            background: #6b8ba8;
+            color: #f5f0e8;
+        }
+
+        /* Section number kleuren - Homiletiek */
+        .section-group-homiletiek .section-number {
+            background: #9b7a9e;
+            color: #f5f0e8;
+        }
+
+        /* Section number kleuren - Gebeden */
+        .section-group-gebeden .section-number {
+            background: #c67a7a;
+            color: #f5f0e8;
+        }
+
+        /* Section number kleuren - Liturgische Elementen */
+        .section-group-liturgische-elementen .section-number {
+            background: #c88f5f;
+            color: #2c2416;
+        }
+
+        /* Section number kleuren - Preekschetsen */
+        .section-group-preekschetsen .section-number {
+            background: #8b6f47;
+            color: #f5f0e8;
         }
 
         .section-title {
@@ -2046,14 +2145,14 @@
             '13c_homiletische_fundering_chapell': 'Chapells Expositie',
 
             '14_klassieke_retorica': 'Retorische Insteek',
-            '14_gebeden': 'Gebeden (conventioneel)',
+            '14_gebeden': 'Gebeden (klassiek)',
             '14_gebeden_profetisch': 'Gebeden (profetisch)',
             '14_gebeden_dialogisch': 'Gebeden (dialogisch)',
             '14_gebeden_eenvoudig': 'Gebeden (B1-niveau)',
             '15_kindermoment': 'Kindermoment',
             '15_bezinningsmoment': 'Moment van Bezinning',
             '16_preek_solle': 'Preekschets (politiek)',
-            '17_preek_jungel': 'Preekschets (erudiet)',
+            '17_preek_jungel': 'Preekschets (christologisch)',
             '18_preek_brueggemann': 'Preekschets (profetisch)',
             '19_preek_noordmans': 'Preekschets (kritisch)',
             'Bijbelteksten': 'Bijbelteksten'
@@ -2186,6 +2285,73 @@
             return `https://duckduckgo.com/?origin=funnel_home_google&t=h_&q=${encoded}&ia=images&iax=images`;
         }
 
+        // Determine menu group class based on section key
+        function getMenuGroupClass(key) {
+            // Groep 1: Liturgisch/Kerkelijk
+            if (key === '01_zondag_kerkelijk_jaar' || key === 'Bijbelteksten') {
+                return 'nav-group-liturgisch';
+            }
+            // Groep 2: Contextueel
+            if (['02_sociaal_maatschappelijke_context', '03_waardenorientatie', '04_geloofsorientatie',
+                 '05_interpretatieve_synthese', '06_actueel_wereldnieuws', '07_politieke_orientatie'].includes(key)) {
+                return 'nav-group-contextueel';
+            }
+            // Groep 3: Exegese
+            if (key === '08a_exegese' || key === '08_exegese' || key === '08c_commentaries') {
+                return 'nav-group-exegese';
+            }
+            // Groep 4: Homiletiek
+            if (['12_representatieve_hoorders', '10_focus_en_functie', '13c_homiletische_fundering_chapell',
+                 '13_homiletische_analyse', '13_homiletische_analyse_buttrick',
+                 '13b_homiletische_illustraties', '14_klassieke_retorica'].includes(key)) {
+                return 'nav-group-homiletiek';
+            }
+            // Groep 5: Gebeden
+            if (['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch', '14_gebeden_eenvoudig'].includes(key)) {
+                return 'nav-group-gebeden';
+            }
+            // Groep 6: Liturgische Elementen
+            if (['15_bezinningsmoment', '15_kindermoment', '09_kunst_cultuur', '11_kalender',
+                 '08b_liedsuggesties_database', '08_liedsuggesties_database'].includes(key)) {
+                return 'nav-group-liturgische-elementen';
+            }
+            // Groep 7: Preekschetsen
+            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '19_preek_noordmans'].includes(key)) {
+                return 'nav-group-preekschetsen';
+            }
+            return ''; // Default: geen specifieke groep klasse
+        }
+
+        // Get group name for section
+        function getGroupName(key) {
+            if (key === '01_zondag_kerkelijk_jaar' || key === 'Bijbelteksten') {
+                return 'Liturgisch';
+            }
+            if (['02_sociaal_maatschappelijke_context', '03_waardenorientatie', '04_geloofsorientatie',
+                 '05_interpretatieve_synthese', '06_actueel_wereldnieuws', '07_politieke_orientatie'].includes(key)) {
+                return 'Contextueel';
+            }
+            if (key === '08a_exegese' || key === '08_exegese' || key === '08c_commentaries') {
+                return 'Exegese';
+            }
+            if (['12_representatieve_hoorders', '10_focus_en_functie', '13c_homiletische_fundering_chapell',
+                 '13_homiletische_analyse', '13_homiletische_analyse_buttrick',
+                 '13b_homiletische_illustraties', '14_klassieke_retorica'].includes(key)) {
+                return 'Homiletiek';
+            }
+            if (['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch', '14_gebeden_eenvoudig'].includes(key)) {
+                return 'Gebeden';
+            }
+            if (['15_bezinningsmoment', '15_kindermoment', '09_kunst_cultuur', '11_kalender',
+                 '08b_liedsuggesties_database', '08_liedsuggesties_database'].includes(key)) {
+                return 'Liturgische Elementen';
+            }
+            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '19_preek_noordmans'].includes(key)) {
+                return 'Preekschetsen';
+            }
+            return null;
+        }
+
         // Render all content
         function renderContent() {
             if (!jsonData) return;
@@ -2286,8 +2452,13 @@
             const keyToNum = {
                 'Bijbelteksten': '02',
                 '08a_exegese': '08a', '08_exegese': '08a',
-                '08b_liedsuggesties_database': '08b', '08_liedsuggesties_database': '08b',
-                '08c_commentaries': '08c',
+                //'08b_liedsuggesties_database': '08b', '08_liedsuggesties_database': '08b',
+                '08c_commentaries': '08b',
+                
+                
+                '12_representatieve_hoorders': '12a',
+                '10_focus_en_functie': '12b',
+
                 '13_homiletische_analyse': '13a',
                 '13_homiletische_analyse_buttrick': '13b',
                 '13b_homiletische_illustraties': '13c',
@@ -2302,7 +2473,11 @@
                
                 '15_bezinningsmoment': '15a', // Momenten verschuiven naar 15a/b
                 '15_kindermoment': '15b',
-               
+               //# WIm
+                '09_kunst_cultuur': '15c',
+                '11_kalender': '15d',
+               '08b_liedsuggesties_database': '15e', 
+
                 '16_preek_solle': '16',
                 '17_preek_jungel': '17',  
                 '18_preek_brueggemann': '18',
@@ -2326,11 +2501,19 @@
             });
 
 
+            let lastGroupName = null;
             sections.forEach((key, index) => {
                 const title = sectionTitles[key] || formatKey(key);
                 const num = sectionNumberMap[key]; // Get the pre-calculated and sorted number
-                
+
                 const sectionData = jsonData[key];
+
+                // Add group header if entering a new group
+                const currentGroupName = getGroupName(key);
+                if (currentGroupName && currentGroupName !== lastGroupName) {
+                    navHtml += `<div class="nav-group-header">${currentGroupName}</div>`;
+                    lastGroupName = currentGroupName;
+                }
 
 
                 // Special handling for Bijbelteksten - show bible references as submenu
@@ -2639,7 +2822,7 @@
                     };
 
                     Object.keys(sectionData).forEach(subKey => {
-                        if (!subKey.startsWith('_') && sectionData[subKey]) {
+                        if (!subKey.startsWith('_') && subKey !== 'analyse' && sectionData[subKey]) {
                             subSections.push(subKey);
                             subSectionLabels[subKey] = liedboekLabels[subKey] || formatKey(subKey);
                         }
@@ -2655,8 +2838,9 @@
                         .slice(0, 12); // Limit to 12 subsections
                 }
 
+                const groupClass = getMenuGroupClass(key);
                 navHtml += `
-                    <div class="nav-group">
+                    <div class="nav-group ${groupClass}">
                         <div class="nav-item" data-section="${key}" data-has-submenu="${subSections.length > 0}">
                             <span class="nav-number">${num}</span>
                             ${escapeHtml(title)}
@@ -2786,8 +2970,11 @@
                 `;
             }
 
+            // Get group class for color coding
+            const groupClass = getMenuGroupClass(key).replace('nav-group-', 'section-group-');
+
             return `
-                <section class="section bevel-raised" id="section-${key}">
+                <section class="section bevel-raised ${groupClass}" id="section-${key}">
                     <div class="section-header">
                         <div class="section-number">${sectionNum}</div>
                         <h2 class="section-title">${escapeHtml(title)}</h2>
@@ -2876,7 +3063,14 @@
             }
 
             let html = '';
-            const entries = Object.entries(obj).filter(([k, v]) => !k.startsWith('_') && v !== null && v !== undefined);
+            const entries = Object.entries(obj).filter(([k, v]) => {
+                // Skip metadata
+                if (k.startsWith('_')) return false;
+                if (v === null || v === undefined) return false;
+                // Skip 'analyse' in liedsuggesties sections
+                if (k === 'analyse' && (sectionKey === '08b_liedsuggesties_database' || sectionKey === '08_liedsuggesties_database')) return false;
+                return true;
+            });
 
             for (const [key, value] of entries) {
                 const anchor = `<div id="section-${sectionKey}-${key}" class="subsection-anchor"></div>`;
