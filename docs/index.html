@@ -3865,8 +3865,7 @@
         }
 
         function renderKalender(dagen) {
-            let html = `<div class="data-group">`;
-            html += `<div class="data-group-title">Dagen</div>`;
+            let html = '';
 
             dagen.forEach((dag, index) => {
                 html += `<div id="section-11_kalender-dag-${index + 1}" class="subsection-anchor"></div>`;
@@ -3981,7 +3980,6 @@
                 html += `</div></div>`; // end kalender-content, kalender-dag
             });
 
-            html += `</div>`;
             return html;
         }
 
@@ -4157,8 +4155,7 @@
         }
 
         function renderPreekOnderdelen(onderdelen) {
-            let html = `<div class="data-group">`;
-            html += `<div class="data-group-title">Preekschets</div>`;
+            let html = '';
 
             // Render each onderdeel in order, single column
             for (const [key, value] of Object.entries(onderdelen)) {
@@ -4173,7 +4170,6 @@
                 html += `</div>`;
             }
 
-            html += `</div>`;
             return html;
         }
 
@@ -5053,11 +5049,6 @@
         // Render Gebeden section with cleaner layout
         function renderGebedenSection(data) {
             let html = '';
-
-            // Show chosen scenario
-            if (data.gekozen_scenario) {
-                html += `<div class="data-item"><div class="data-label">Gekozen scenario</div><div class="data-value">${processText(data.gekozen_scenario)}</div></div>`;
-            }
 
             // Render each prayer
             const gebeden = data.gebeden || {};
