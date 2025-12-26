@@ -2106,8 +2106,8 @@
         
         // List of available JSON files
         const jsonFiles = [
-            //{ file: "Ede_24_dec_2025.json", label: "Ede (24 december 2025, De Gelderhorst (Verzorgingstehuis))" },
-            { file: "Ede_25_dec_2025.json", label: "Ede (Kerst 2025, De Gelderhorst (Verzorgingstehuis))" },
+            
+	    { file: "Ede_25_dec_2025.json", label: "Ede (Kerst 2025, De Gelderhorst (Verzorgingstehuis))" },
             { file: "Den_Haag_28_dec_2025.json", label: "Den Haag (28 december 2025, De Kloosterkerk)" },
            
             { file: "Waddinxveen_11_jan_2026.json", label: "Waddinxveen (11 januari 2026, De Bethelkerk)" }, // [1]
@@ -5964,8 +5964,8 @@
              });
 
              if (jsonFiles.length > 0) {
-                 // Set the selector to the first file by default
-                 const defaultFile = jsonFiles[0].file;
+                 // Set the selector to the third file by default
+                 const defaultFile = jsonFiles[2].file;
                  fileSelector.value = defaultFile;
                  loadFile(defaultFile);
              }
