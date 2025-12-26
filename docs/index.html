@@ -1479,14 +1479,15 @@
         }
 
         .plot-badge {
-            width: 50px;
+            min-width: 50px;
             height: 50px;
-            border-radius: 50%;
+            padding: 0 15px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: white;
             flex-shrink: 0;
         }
@@ -1548,9 +1549,10 @@
 
         .buttrick-intro-badge,
         .buttrick-conclusie-badge {
-            width: 50px;
+            min-width: 50px;
             height: 50px;
-            border-radius: 50%;
+            padding: 0 15px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1604,22 +1606,23 @@
         }
 
         .buttrick-move-badge {
-            width: 50px;
+            min-width: 50px;
             height: 50px;
-            border-radius: 50%;
+            padding: 0 15px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 1.4em;
+            font-size: 1.1em;
             color: white;
             flex-shrink: 0;
         }
 
         .buttrick-move:nth-child(1) .buttrick-move-badge { background: #7986cb; }
         .buttrick-move:nth-child(2) .buttrick-move-badge { background: #4db6ac; }
-        .buttrick-move:nth-child(3) .buttrick-move-badge { background: #aed581; color: var(--text-primary); }
-        .buttrick-move:nth-child(4) .buttrick-move-badge { background: #ffb74d; color: var(--text-primary); }
+        .buttrick-move:nth-child(3) .buttrick-move-badge { background: #689f38; }
+        .buttrick-move:nth-child(4) .buttrick-move-badge { background: #f57c00; }
         .buttrick-move:nth-child(5) .buttrick-move-badge { background: #ff8a65; }
         .buttrick-move:nth-child(6) .buttrick-move-badge { background: #f06292; }
 
@@ -2470,6 +2473,23 @@
                             subSectionLabels[`illustratie-${nummer}`] = titel;
                         });
                     }
+                } else if (key === '13c_homiletische_fundering_chapell') {
+                    // Special handling for Chapell - show main sections
+                    const chapellData = sectionData.homiletische_fundering_chapell || sectionData;
+                    const subKeyOrder = ['gcf', 'christocentrische_duiding', 'motivatie_genade', 'expositorisch_raamwerk'];
+                    const labelMap = {
+                        'gcf': 'GCF',
+                        'christocentrische_duiding': 'Christocentrisch',
+                        'motivatie_genade': 'Genade',
+                        'expositorisch_raamwerk': 'Raamwerk'
+                    };
+
+                    subKeyOrder.forEach(subKey => {
+                        if (chapellData[subKey]) {
+                            subSections.push(subKey);
+                            subSectionLabels[subKey] = labelMap[subKey];
+                        }
+                    });
                 } else if (key === '14_klassieke_retorica') {
                     // Special handling for Klassieke Retorica - show main sections
                     const subKeyOrder = ['meta', 'aristotelische_appeals', 'klassieke_dispositio', 'monroes_motivated_sequence', 'retorische_figuren', 'evaluatiecriteria', 'praktische_tips'];
@@ -2610,6 +2630,8 @@
                 contentHtml = renderCommentariesSection(dataToRender, key);
             } else if (key === '14_klassieke_retorica') {
                 contentHtml = renderKlassiekeRetorica(dataToRender, key);
+            } else if (key === '13c_homiletische_fundering_chapell') {
+                contentHtml = renderChapellBrug(dataToRender);
             } else if (key === '01_zondag_kerkelijk_jaar') {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             } else if (key === '15_kindermoment' || key === '15_bezinningsmoment') {
@@ -3589,69 +3611,174 @@
             return html;
         }
 
-        function renderChapellBrug(brug) {
-            let html = `<div class="data-group">`;
-            html += `<div class="data-group-title">Homiletische Brug (Chapell)</div>`;
-            html += `<div class="card-grid">`;
+        function renderChapellBrug(data) {
+            let html = '';
+            const sectionKey = '13c_homiletische_fundering_chapell';
 
-            // FCF
-            if (brug.fcf) {
-                html += `<div class="nested-card">`;
-                html += `<div class="nested-card-title">Fallen Condition Focus</div>`;
-                html += `<div class="nested-card-content">`;
-                if (brug.fcf.beschrijving) html += `<div><strong>Beschrijving:</strong> ${processText(brug.fcf.beschrijving)}</div>`;
-                if (brug.fcf.waarom_vraag) html += `<div style="margin-top:5px;"><strong>Waarom-vraag:</strong> ${processText(brug.fcf.waarom_vraag)}</div>`;
+            // Extract the actual data from the nested structure
+            const chapellData = data.homiletische_fundering_chapell || data;
+
+            // Methodiek Uitleg (optional intro)
+            if (data.methodiek_uitleg) {
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Methodiek</div>`;
+                if (data.methodiek_uitleg.benadering) {
+                    html += `<div class="quote-block">${processText(data.methodiek_uitleg.benadering)}</div>`;
+                }
+                if (data.methodiek_uitleg.afkortingen) {
+                    html += `<div style="margin-top: 15px;"><strong>Afkortingen:</strong></div>`;
+                    html += `<div class="data-pairs">`;
+                    for (const [key, value] of Object.entries(data.methodiek_uitleg.afkortingen)) {
+                        html += `<div class="data-pair">`;
+                        html += `<div class="data-pair-label">${escapeHtml(key)}</div>`;
+                        html += `<div class="data-pair-value">${processText(value)}</div>`;
+                        html += `</div>`;
+                    }
+                    html += `</div>`;
+                }
+                html += `</div>`;
+            }
+
+            // GCF Section (Gevallen Conditie Focus)
+            if (chapellData.gcf) {
+                html += `<div id="section-${sectionKey}-gcf" class="subsection-anchor"></div>`;
+                html += `<div class="buttrick-move" style="border-left-color: #e57373;">`;
+                html += `<div class="buttrick-move-header">`;
+                html += `<div class="buttrick-move-badge" style="background: #e57373;">Gevallen Conditie Focus</div>`;
+                html += `</div>`;
+                html += `<div class="buttrick-move-content">`;
+                if (chapellData.gcf.beschrijving) {
+                    html += `<div class="buttrick-move-section">`;
+                    html += `<div class="buttrick-move-section-title">Beschrijving</div>`;
+                    html += `<div class="buttrick-move-section-text">${processText(chapellData.gcf.beschrijving)}</div>`;
+                    html += `</div>`;
+                }
+                if (chapellData.gcf.waarom_vraag) {
+                    html += `<div class="buttrick-move-section">`;
+                    html += `<div class="buttrick-move-section-title">Waarom-vraag</div>`;
+                    html += `<div class="buttrick-move-section-text">${processText(chapellData.gcf.waarom_vraag)}</div>`;
+                    html += `</div>`;
+                }
                 html += `</div></div>`;
             }
 
-            // Christocentrisch
-            if (brug.christocentrische_duiding) {
-                html += `<div class="nested-card">`;
-                html += `<div class="nested-card-title">Christocentrische Duiding</div>`;
-                html += `<div class="nested-card-content">`;
-                if (brug.christocentrische_duiding.categorie) html += `<div><span class="tag">${processText(brug.christocentrische_duiding.categorie)}</span></div>`;
-                if (brug.christocentrische_duiding.uitleg) html += `<div style="margin-top:5px;">${processText(brug.christocentrische_duiding.uitleg)}</div>`;
+            // Christocentrische Duiding
+            if (chapellData.christocentrische_duiding) {
+                html += `<div id="section-${sectionKey}-christocentrische_duiding" class="subsection-anchor"></div>`;
+                html += `<div class="buttrick-move" style="border-left-color: #f57c00;">`;
+                html += `<div class="buttrick-move-header">`;
+                html += `<div class="buttrick-move-badge" style="background: #f57c00;">Christocentrische Duiding</div>`;
+                html += `</div>`;
+                html += `<div class="buttrick-move-content">`;
+                if (chapellData.christocentrische_duiding.categorie) {
+                    html += `<div class="buttrick-move-meta">`;
+                    html += `<span class="buttrick-move-tag strategy">${processText(chapellData.christocentrische_duiding.categorie)}</span>`;
+                    html += `</div>`;
+                }
+                if (chapellData.christocentrische_duiding.uitleg) {
+                    html += `<div class="buttrick-move-section">`;
+                    html += `<div class="buttrick-move-section-text">${processText(chapellData.christocentrische_duiding.uitleg)}</div>`;
+                    html += `</div>`;
+                }
+                if (chapellData.christocentrische_duiding.motivatie_heiliging) {
+                    html += `<div class="buttrick-move-section">`;
+                    html += `<div class="buttrick-move-section-title">Motivatie tot Heiliging</div>`;
+                    html += `<div class="buttrick-move-section-text">${processText(chapellData.christocentrische_duiding.motivatie_heiliging)}</div>`;
+                    html += `</div>`;
+                }
                 html += `</div></div>`;
             }
 
-            // Motivatie
-            if (brug.motivatie_genade) {
-                html += `<div class="nested-card">`;
-                html += `<div class="nested-card-title">Motivatie & Genade</div>`;
-                html += `<div class="nested-card-content">`;
-                if (brug.motivatie_genade.genade_indicatief) html += `<div><strong>Indicatief:</strong> ${processText(brug.motivatie_genade.genade_indicatief)}</div>`;
-                if (brug.motivatie_genade.motivatie_heiliging) html += `<div style="margin-top:5px;"><strong>Heiliging:</strong> ${processText(brug.motivatie_genade.motivatie_heiliging)}</div>`;
+            // Motivatie & Genade
+            if (chapellData.motivatie_genade) {
+                html += `<div id="section-${sectionKey}-motivatie_genade" class="subsection-anchor"></div>`;
+                html += `<div class="buttrick-move" style="border-left-color: #81c784;">`;
+                html += `<div class="buttrick-move-header">`;
+                html += `<div class="buttrick-move-badge" style="background: #81c784;">Motivatie & Genade</div>`;
+                html += `</div>`;
+                html += `<div class="buttrick-move-content">`;
+                if (chapellData.motivatie_genade.genade_indicatief) {
+                    html += `<div class="buttrick-move-section">`;
+                    html += `<div class="buttrick-move-section-title">Genade (Indicatief)</div>`;
+                    html += `<div class="buttrick-move-section-text">${processText(chapellData.motivatie_genade.genade_indicatief)}</div>`;
+                    html += `</div>`;
+                }
+                if (chapellData.motivatie_genade.motivatie_heiliging) {
+                    html += `<div class="buttrick-move-section">`;
+                    html += `<div class="buttrick-move-section-title">Motivatie (Heiliging)</div>`;
+                    html += `<div class="buttrick-move-section-text">${processText(chapellData.motivatie_genade.motivatie_heiliging)}</div>`;
+                    html += `</div>`;
+                }
                 html += `</div></div>`;
             }
-
-            html += `</div>`; // Close card-grid
 
             // Expositorisch Raamwerk (Double Helix)
-            if (brug.expositorisch_raamwerk) {
-                html += `<div style="margin-top: 20px;">`;
-                html += `<div class="nested-title">Expositorisch Raamwerk (Double Helix)</div>`;
-                html += `<div class="card-grid">`; // Changed to card-grid for grid layout
+            if (chapellData.expositorisch_raamwerk) {
+                html += `<div id="section-${sectionKey}-expositorisch_raamwerk" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Expositorisch Raamwerk (Double Helix)</div>`;
+                html += `<div class="buttrick-container">`;
 
-                const points = Object.entries(brug.expositorisch_raamwerk)
+                const points = Object.entries(chapellData.expositorisch_raamwerk)
                     .filter(([k]) => k.startsWith('hoofdpunt'))
                     .sort();
 
+                const pointColors = ['#64b5f6', '#7986cb', '#9575cd', '#ba68c8', '#f06292', '#ff8a65'];
+
                 points.forEach(([key, point], index) => {
-                    html += `<div class="nested-card" style="border-left-color: var(--accent);">`;
-                    html += `<div class="nested-card-title">Hoofdpunt ${index + 1}</div>`;
-                    
-                    html += `<div class="nested-card-content">`;
-                    if (point.tekst_basis) html += `<div><strong>Tekstbasis:</strong> ${processText(point.tekst_basis)}</div>`;
-                    if (point.illustratie_idee) html += `<div style="margin-top:5px;"><strong>Illustratie:</strong> ${processText(point.illustratie_idee)}</div>`;
-                    if (point.relatie_fcf) html += `<div style="margin-top:5px;"><strong>FCF:</strong> ${processText(point.relatie_fcf)}</div>`;
-                    if (point.beweging) html += `<div style="margin-top:5px;"><strong>Beweging:</strong> ${processText(point.beweging)}</div>`;
+                    const color = pointColors[index % pointColors.length];
+                    html += `<div class="buttrick-move" style="border-left-color: ${color};">`;
+                    html += `<div class="buttrick-move-header">`;
+                    html += `<div class="buttrick-move-badge" style="background: ${color};">Hoofdpunt ${index + 1}</div>`;
+                    html += `</div>`;
+                    html += `<div class="buttrick-move-content">`;
+
+                    if (point.tekst_basis) {
+                        html += `<div class="buttrick-move-section">`;
+                        html += `<div class="buttrick-move-section-title">Tekstbasis</div>`;
+                        html += `<div class="buttrick-move-section-text">${processText(point.tekst_basis)}</div>`;
+                        html += `</div>`;
+                    }
+                    if (point.relatie_fcf) {
+                        html += `<div class="buttrick-move-section">`;
+                        html += `<div class="buttrick-move-section-title">Relatie tot FCF</div>`;
+                        html += `<div class="buttrick-move-section-text">${processText(point.relatie_fcf)}</div>`;
+                        html += `</div>`;
+                    }
+                    if (point.beweging) {
+                        html += `<div class="buttrick-move-section">`;
+                        html += `<div class="buttrick-move-section-title">Beweging</div>`;
+                        html += `<div class="buttrick-move-section-text">${processText(point.beweging)}</div>`;
+                        html += `</div>`;
+                    }
+                    if (point.illustratie_idee) {
+                        html += `<div class="buttrick-verbinding">${processText(point.illustratie_idee)}</div>`;
+                    }
+
                     html += `</div></div>`;
                 });
 
                 html += `</div></div>`;
             }
 
-            html += `</div>`; // Close data-group
+            // Logica Check (optional validation)
+            if (data.logica_check) {
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Logica Check</div>`;
+                if (data.logica_check.genade_fundeert_imperatief !== undefined) {
+                    const status = data.logica_check.genade_fundeert_imperatief ? '✓' : '✗';
+                    const color = data.logica_check.genade_fundeert_imperatief ? 'var(--success)' : 'var(--warning)';
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">Genade fundeert imperatief</div>`;
+                    html += `<div class="data-value" style="color: ${color}; font-weight: bold;">${status}</div>`;
+                    html += `</div>`;
+                }
+                if (data.logica_check.toelichting) {
+                    html += `<div class="quote-block">${processText(data.logica_check.toelichting)}</div>`;
+                }
+                html += `</div>`;
+            }
+
             return html;
         }
 
@@ -4859,14 +4986,14 @@
                 html += `<div class="buttrick-container">`;
 
                 const parts = ['exordium', 'narratio', 'propositio', 'partitio', 'confirmatio', 'refutatio', 'peroratio'];
-                const partColors = ['#7986cb', '#4db6ac', '#aed581', '#ffb74d', '#ff8a65', '#f06292', '#ba68c8'];
+                const partColors = ['#7986cb', '#4db6ac', '#689f38', '#f57c00', '#ff8a65', '#f06292', '#ba68c8'];
 
                 parts.forEach((part, index) => {
                     if (data.klassieke_dispositio[part]) {
                         const color = partColors[index] || 'var(--accent)';
                         html += `<div class="buttrick-move" style="border-left-color: ${color};">`;
                         html += `<div class="buttrick-move-header">`;
-                        html += `<div class="buttrick-move-badge" style="background: ${color}; color: white; width: auto; padding: 8px 16px; border-radius: 4px; text-transform: capitalize;">${escapeHtml(formatKey(part))}</div>`;
+                        html += `<div class="buttrick-move-badge" style="background: ${color}; text-transform: capitalize;">${escapeHtml(formatKey(part))}</div>`;
                         html += `</div>`;
                         html += `<div class="buttrick-move-content">`;
                         html += renderObjectCompact(data.klassieke_dispositio[part]);
