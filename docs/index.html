@@ -2023,7 +2023,7 @@
         // Section titles mapping
         const sectionTitles = {
             '00_meta': 'Metadata',
-            '01_zondag_kerkelijk_jaar': 'Zondag Kerkelijk Jaar',
+            '01_zondag_kerkelijk_jaar': 'Kerkelijk Jaar',
             '02_sociaal_maatschappelijke_context': 'Sociaal-Maatschappelijk',
             '03_waardenorientatie': 'Waardenoriëntatie',
             '04_geloofsorientatie': 'Geloofsoriëntatie',
@@ -2626,6 +2626,22 @@
                         if (sectionData[subKey]) {
                             subSections.push(subKey);
                             subSectionLabels[subKey] = labelMap[subKey];
+                        }
+                    });
+                } else if (key === '08b_liedsuggesties_database' || key === '08_liedsuggesties_database') {
+                    // Special handling for Liedsuggesties - provide custom labels for liedboeken
+                    const liedboekLabels = {
+                        'liedboek_2013': 'Liedboek (2013)',
+                        'weerklank': 'Weerklank',
+                        'weerklank_psalmen': 'Weerklank (Psalmen)',
+                        'hemelhoog': 'Hemelhoog',
+                        'op_toonhoogte': 'Op Toonhoogte (2015)'
+                    };
+
+                    Object.keys(sectionData).forEach(subKey => {
+                        if (!subKey.startsWith('_') && sectionData[subKey]) {
+                            subSections.push(subKey);
+                            subSectionLabels[subKey] = liedboekLabels[subKey] || formatKey(subKey);
                         }
                     });
                 } else {
@@ -3642,7 +3658,7 @@
                 html += `<div id="section-11_kalender-dag-${index + 1}" class="subsection-anchor"></div>`;
                 const isPreekzondag = dag.is_preekzondag === true;
                 html += `<div class="kalender-dag ${isPreekzondag ? 'preekzondag' : ''}">`;
-                html += `<div class="kalender-datum">${processText(dag.datum || '')}${isPreekzondag ? ' (Preekzondag)' : ''}</div>`;
+                html += `<div class="kalender-datum">${processText(dag.datum || '')}${isPreekzondag ? ' (Dag van de Viering)' : ''}</div>`;
                 html += `<div class="kalender-content">`;
 
                 // Helper to check if value has content
