@@ -5774,10 +5774,14 @@
         }
 
         function formatKey(key) {
-            // Handle the special case for "vijf_vs" -> "Vijf V's"
+            // Handle special cases
             let result;
             if (key === 'vijf_vs') {
-                result = "Vijf V's";
+                result = "Vijf V\u2019s";
+            } else if (key === 'mesotrends_5_15_jaar') {
+                result = "Mesotrends 5-15 jaar";
+            } else if (key === 'microtrends_1_5_jaar') {
+                result = "Microtrends 1-5 jaar";
             } else {
                 result = key
                     .replace(/_/g, ' ')
@@ -5814,9 +5818,7 @@
                 'traumas': 'trauma\u2019s',
                 'Traumas': 'Trauma\u2019s',
                 'panoramas': 'panorama\u2019s',
-                'Panoramas': 'Panorama\u2019s',
-                'milieus': 'milieu\u2019s',
-                'Milieus': 'Milieu\u2019s'
+                'Panoramas': 'Panorama\u2019s'
             };
 
             for (const [wrong, correct] of Object.entries(pluralCorrections)) {

@@ -1801,8 +1801,34 @@
     ]
   },
   "08c_commentaries": {
-    "error": "Geen valide JSON",
-    "markdown_output": ""
+    "exegese_eerste_lezing": {
+      "schriftgedeelte": "Genesis 2:7-9; 3:1-7",
+      "titel": "Van Klei tot Koningskind: De Broze Roeping van de Mens",
+      "tekst": "De tekst van Genesis 2 en 3 vormt het fundament van ons mensbeeld. In de nuchtere context van een dorp als Waarder, waar de verbondenheid met de grond ('adamah') nog dagelijks voelbaar is op het erf en in de polder, spreekt de woordspeling tussen 'Adam' (mens) en 'Adamah' (aardbodem) boekdelen. C. John Collins benadrukt in zijn commentaar dat de mens niet zomaar een biologisch toeval is, maar een 'concrete gelijkenis' (tselem) van de Schepper. God formeert de mens als een pottenbakker en blaast hem de levensadem in; een intiem beeld van afhankelijkheid. De mens is 'stof van de aardbodem', maar tegelijkertijd drager van de goddelijke Geest.\n\nDe hof van Eden wordt getekend als een plek van overvloed en harmonie, waar de mens de taak krijgt om te 'bebouwen en te bewaren'. Collins wijst erop dat 'heersen' in Genesis 1 en 2 niet staat voor exploitatie, maar voor wijs beheer en het laten bloeien van de schepping. De grens die God stelt — de boom van kennis van goed en kwaad — is geen teken van goddelijke jaloezie, maar een bescherming van de menselijke maat. Het kwaad doet zijn intrede via de slang, die de 'sluwste' (arum) wordt genoemd, een woord dat in het Hebreeuws pijnlijk dicht ligt bij 'naakt' (arummim). De verleiding begint bij het zaaien van wantrouwen: 'Is het echt zo dat God gezegd heeft...?'\n\nDe zondeval in Genesis 3:1-7 is in wezen een greep naar autonomie. De mens wil niet langer 'onder' God leven, maar 'als' God zijn, zelf bepalend wat goed en kwaad is. De 'lust voor de ogen' en de 'begeerte naar inzicht' winnen het van het vertrouwen op het Woord van God. Het resultaat is niet de beloofde godgelijkheid, maar schaamte en het besef van naaktheid. De harmonie met God, de ander en de schepping is verbroken. Voor de hoorder in Waarder, die weet wat het is om te zwoegen op de klei, is dit verhaal geen verre mythe, maar een dagelijkse realiteit van gebrokenheid en de neiging om het 'eigen erf' ten koste van alles zelf te willen controleren.",
+      "korte_samenvatting": "De mens is geschapen uit de aarde om Gods beeld te dragen, maar verliest zijn onschuld door de greep naar zelfbeschikking.",
+      "gebruikte_bronnen": [
+        "C. John Collins - Genesis 1-4: A Linguistic, Literary, and Theological Commentary",
+        "Thomas R. Schreiner - Handbook on Acts and Paul's Letters"
+      ]
+    },
+    "exegese_evangelielezing": {
+      "schriftgedeelte": "Matteüs 4:1-11",
+      "titel": "De Woestijn als Proeftuin: De Overwinning van de Tweede Adam",
+      "tekst": "Direct na de doop, waar Jezus als 'geliefde Zoon' wordt bevestigd, voert de Geest Hem de woestijn in. Dit is geen toeval, maar een noodzakelijke confrontatie. Craig S. Keener legt uit dat Jezus hier optreedt als de 'Nieuwe Israël' en de 'Tweede Adam'. Waar Israël veertig jaar faalde in de woestijn en Adam faalde in de hof, houdt Jezus veertig dagen stand. De verzoekingen van de duivel (de 'uiteenwerper') richten zich precies op Jezus' identiteit: 'Indien Gij Gods Zoon zijt...'.\n\nDe eerste verzoeking — stenen in brood veranderen — raakt aan onze diepste overlevingsdrang. Jezus is uitgehongerd. De verleiding is om goddelijke macht te gebruiken voor eigen consumptie en economische zekerheid. Jezus antwoordt met Deuteronomium 8:3: de mens leeft van het Woord. Voor een agrarische gemeenschap die leeft van de opbrengst van het land, is dit een radicale herinnering: ons 'dagelijks brood' is uiteindelijk een geschenk van de Gever, niet een recht dat we zelf afdwingen.\n\nDe tweede verzoeking op de tempeltinne is de verleiding van het religieuze spektakel. De duivel misbruikt Psalm 91 — de psalm van deze zondag Invocabit — om Jezus te dwingen God te 'testen'. Jezus weigert God te manipuleren voor eigen eer. De derde verzoeking op de berg toont de duivel in zijn ware gedaante: hij biedt de macht over alle koninkrijken aan in ruil voor aanbidding. Dit is de ultieme politieke verleiding: succes en invloed bereiken via de korte weg, zonder het kruis. Jezus' antwoord is resoluut: 'Ga weg, Satan!'.\n\nKeener benadrukt dat Jezus de strijd niet wint door spectaculaire wonderen, maar door sobere gehoorzaamheid aan de Schrift ('Er staat geschreven'). Hij aanvaardt de menselijke maat die Adam verwierp. In de woestijn van ons eigen leven — of dat nu de onzekerheid van de vogelgriep is, de druk van de 24-uurs economie, of de angst voor wereldwijde conflicten — wijst Jezus de weg: niet door te grijpen naar macht, maar door te rusten in het Woord van de Vader. De engelen die Hem aan het slot dienen, zijn het bewijs dat wie God loslaat, alles verliest, maar wie God vasthoudt, alles ontvangt.",
+      "korte_samenvatting": "Jezus weerstaat als de getrouwe Zoon de verleidingen van macht en bezit door vast te houden aan de autoriteit van Gods Woord.",
+      "gebruikte_bronnen": [
+        "Craig S. Keener - A Commentary on the Gospel of Matthew",
+        "Thomas R. Schreiner - Handbook on Acts and Paul's Letters"
+      ]
+    },
+    "reflectie": {
+      "theologische_lijnen": [
+        "De typologie tussen Adam (ongehoorzaamheid in overvloed) en Christus (gehoorzaamheid in gebrek).",
+        "De woestijn als noodzakelijke louteringsplek voor de messiaanse missie.",
+        "Het Woord van God als het enige wapen dat standhoudt tegen de 'uiteenwerper' van de gemeenschap."
+      ],
+      "homiletische_potentie": "Verbind de 'woestijn' van de moderne prestatiedruk en economische onzekerheid in Waarder met de standvastigheid van Jezus. Gebruik de start van de Kerk in Actie-campagne om 'niet van brood alleen leven' concreet te maken als een roeping tot delen."
+    }
   },
   "09_kunst_cultuur": {
     "moderne_hedendaagse_kunst": [
