@@ -4301,6 +4301,66 @@
       "omkering"
     ]
   },
+  "20_midjourney_prompts": {
+    "preek_titel": "Schuilen achter de Dijk: Geluk voor de Lege Handen",
+    "schriftlezing": "Sefanja 2:3, 3:12-13 & Matteüs 5:1-12a",
+    "liturgische_periode": "4e Zondag door het jaar (Wintertijd / Epifanie-tijd)",
+    "kernthema": "De paradox van het Koninkrijk: ware veiligheid en geluk vind je niet in eigen kracht, maar in de moed om kwetsbaar te schuilen bij God.",
+    "midjourney_prompts": [
+      {
+        "volgorde": 1,
+        "homiletische_functie": "Lowry: Oops (verstoring) / Het erkennen van de kwetsbaarheid",
+        "moment_in_preek": "De opening, waar de link wordt gelegd met de Watersnoodramp (1 feb) en de realiteit van het leven in de polder. We denken dat we veilig zijn, maar het water (de chaos/het leven) staat hoog.",
+        "visuele_intentie": "De kijker moet de spanning voelen tussen het dreigende water en de beschermende, maar kwetsbare grens. Een gevoel van nietigheid tegenover de elementen.",
+        "prompt_nl": "Aquarel, onstuimig rivierwater dat tegen een grasdijk klotst onder een stemmige winterlucht, donkerblauw en aards groen, atmosferische spanning, Nederlands polderlandschap, nat-in-nat techniek, gevoel van kwetsbaarheid.",
+        "prompt_en": "watercolor painting, turbulent river water pressing against a grassy dike embankment under a moody winter sky, dark blues and earthy greens, atmospheric tension, Dutch polder landscape, wet-on-wet technique, sense of vulnerability and protection, soft edges, --ar 16:9",
+        "kleuren_sfeer": "Dark blues, storm grays, muted greens. Cold and threatening but majestic.",
+        "symboliek": "Het water staat voor de chaos en dreiging; de dijk voor de menselijke poging tot veiligheid die onder druk staat."
+      },
+      {
+        "volgorde": 2,
+        "homiletische_functie": "Lowry: Ugh (complicatie) / De armoede van geest",
+        "moment_in_preek": "De exegese van 'armen van geest' en Sefanja's 'ootmoedigen'. Het besef dat we met lege handen staan. Onze status, bezit en 'bouwwerken' (1 Korintiërs) redden ons niet.",
+        "visuele_intentie": "Een gevoel van eenzaamheid en leegte, maar ook van eerlijkheid. De kaalheid van de winter die niets verbergt.",
+        "prompt_nl": "Aquarel, eenzame knotwilg in een uitgestrekt leeg veld, wintermist die de horizon verhult, minimalistische compositie met veel negatieve ruimte, gedempt palet van grijs en oker, uitdrukking van eenzaamheid en armoede van geest.",
+        "prompt_en": "watercolor painting, solitary pollard willow tree in a vast empty field, winter mist obscuring the horizon, minimalist composition with significant negative space, muted palette of grays and ochres, expressing solitude and poverty of spirit, delicate branches against pale light, --ar 16:9",
+        "kleuren_sfeer": "Pale grays, white, soft ochre. Minimalist, silent, empty.",
+        "symboliek": "De kale boom symboliseert de mens die zijn 'bladeren' (uiterlijk vertoon) kwijt is en naakt voor God staat (arm van geest)."
+      },
+      {
+        "volgorde": 3,
+        "homiletische_functie": "Lowry: Aha (omkering) / Het licht door de barsten",
+        "moment_in_preek": "De wending naar het Evangelie. Jezus noemt juist déze leegte 'zalig'. Zoals Leonard Cohen zingt: 'There is a crack in everything, that's how the light gets in'. Genade landt in onze gebrokenheid.",
+        "visuele_intentie": "Hoop en warmte die niet van buitenaf komt als een schijnwerper, maar die oplicht in het donker/de breuk zelf.",
+        "prompt_nl": "Aquarel, close-up van een verweerd stenen oppervlak met een enkele barst, warm gouden licht dat van binnenuit de barst naar buiten stroomt en de duisternis verlicht, abstracte weergave van genade, zachte randen.",
+        "prompt_en": "watercolor painting, close-up of a weathered stone surface with a single fracture, warm golden light spilling out from within the crack illuminating the surrounding darkness, abstract representation of grace, soft edges, deep indigo shadows contrasting with amber glow, Kintsugi inspired aesthetic, --ar 16:9",
+        "kleuren_sfeer": "Deep indigo/black contrasting with warm gold/amber. Hopeful, miraculous.",
+        "symboliek": "De barst is onze onvolkomenheid/zonde; het licht is de zaligspreking die juist daar landt."
+      },
+      {
+        "volgorde": 4,
+        "homiletische_functie": "Lowry: Whee/Yeah (ervaring & toekomst) / De gemeenschap van de zachtmoedigen",
+        "moment_in_preek": "Het slot: de oproep om als 'rest' (Sefanja) samen te leven. De Tafelviering of de gemeenschap in de Sionkerk. Eenvoud, vrede en samen delen.",
+        "visuele_intentie": "Intimiteit, vrede en gemeenschap. De schoonheid van het gewone, dagelijkse leven dat door God gezegend is.",
+        "prompt_nl": "Aquarel, eenvoudige houten tafel gedekt met brood en een paar veldbloemen, zacht natuurlijk licht dat door een zijraam naar binnen valt, intieme huiselijke sfeer, losse penseelstreken, warme uitnodigende kleuren.",
+        "prompt_en": "watercolor painting, simple wooden table set with bread and a few wild field flowers, soft natural light streaming from a side window, intimate domestic atmosphere, loose brushstrokes, warm inviting colors, sense of peace and community, focus on texture and light, --ar 16:9",
+        "kleuren_sfeer": "Warm browns, soft yellows, fresh greens. Domestic, safe, peaceful.",
+        "symboliek": "De tafel staat voor de gemeenschap (Sion) en de eucharistische levenshouding; de veldbloemen verwijzen naar de eenvoud van het veld (Matteüs 6)."
+      }
+    ],
+    "gebruiksinstructies": {
+      "midjourney_basis_commando": "Type in Discord: /imagine prompt: [kopieer de Engelse tekst]",
+      "optionele_parameters": [
+        "--stylize 250 (voor iets meer artistieke flair)",
+        "--chaos 10 (voor subtiele variaties)"
+      ],
+      "volgorde_gebruik": "Gebruik de beelden chronologisch met de preekopbouw. Beeld 1 tijdens de inleiding/contextschets. Beeld 2 tijdens de uitleg van de menselijke onmacht. Beeld 3 bij de kern van de Zaligsprekingen. Beeld 4 bij de toepassing/slot."
+    },
+    "technische_notities": [
+      "De keuze voor aquarel (watercolor) is bewust: het vloeibare karakter past bij het thema water/rivier en de zachtheid van de 'zachtmoedigen'.",
+      "Als beeld 3 te abstract is, kan een alternatief zijn: 'watercolor painting, first snowdrops pushing through melting snow in dark earth, soft morning light'."
+    ]
+  },
   "Bijbelteksten": {
     "naardense_bijbel": [
       {

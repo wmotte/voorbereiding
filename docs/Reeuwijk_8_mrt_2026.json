@@ -4284,6 +4284,66 @@
       "Plaatsbekleding"
     ]
   },
+  "20_midjourney_prompts": {
+    "preek_titel": "De Put van de Prestatie: Van Oppervlaktewater naar de Bron",
+    "schriftlezing": "Johannes 4:5-42 & Exodus 17:3-7",
+    "liturgische_periode": "Veertigdagentijd (Zondag Oculi)",
+    "kernthema": "De overgang van fysieke dorst en menselijke prestatie naar de ontvangst van levend water dat van binnenuit stroomt.",
+    "midjourney_prompts": [
+      {
+        "volgorde": 1,
+        "homiletische_functie": "Lowry: Oops (De verstoring / Het ongemak)",
+        "moment_in_preek": "De inleiding, waar de 'Reeuwijkse' context van water (recreatie, oppervlakte) wordt gecontrasteerd met de existentiële dorst. Het beeld toont water dat er is, maar niet bereikbaar of drinkbaar is.",
+        "visuele_intentie": "De kijker moet de paradox voelen van 'water, water overal, maar geen druppel om te drinken'. Een gevoel van leegte te midden van overvloed.",
+        "prompt_nl": "Een lege, verweerde aarden kom die op een moderne betonnen rand staat, met op de achtergrond een groot, stil meer in de mist. Het suggereert de afstand tussen de uiterlijke welvaart (het meer) en de innerlijke leegte (de kom).",
+        "prompt_en": "watercolor painting, close-up of an empty weathered clay bowl resting on a sleek modern concrete edge, background showing a vast calm lake obscured by soft morning mist, muted blues and grays, sense of hollowness despite surrounding water, atmospheric perspective, negative space emphasized, delicate brushwork, --ar 16:9",
+        "kleuren_sfeer": "Gedempte blauwtinten, grijs, koel beton. Sfeer van stilte, melancholie en afstand.",
+        "symboliek": "De kom staat voor de menselijke capaciteit/dorst; het meer voor de 'wereldse' bronnen (Reeuwijkse Plassen) die mooi zijn maar de diepste dorst niet lessen."
+      },
+      {
+        "volgorde": 2,
+        "homiletische_functie": "Lowry: Ugh (De complicatie / De diagnose)",
+        "moment_in_preek": "De focus op de 'hitte van de dag' (het zesde uur) en de hardheid van het bestaan. De confrontatie met de rots in Exodus en de vermoeidheid van Jezus en de vrouw.",
+        "visuele_intentie": "De kijker moet de hitte, de droogte en de hardheid voelen. De uitputting van het altijd maar moeten 'putten' en presteren.",
+        "prompt_nl": "Textuur van ruwe, droge steen onder fel, verticaal middaglicht. Scherpe schaduwen. Een gevoel van ondoordringbaarheid en hitte, alsof de aarde zelf dorst heeft.",
+        "prompt_en": "watercolor painting, texture of rough dry stone wall under harsh vertical noon sunlight, sharp deep purple shadows casting geometric shapes, sense of arid heat and exhaustion, scorched earth tones, ochre and burnt sienna, minimal composition focusing on the hardness of the surface, --ar 16:9",
+        "kleuren_sfeer": "Warme oker, gebrand sienna, diepe paarse schaduwen. Sfeer van hitte, druk en ondoordringbaarheid.",
+        "symboliek": "De steen verwijst naar de rots bij Horeb en de putrand; het harde licht staat voor de 'exposure' en de prestatiedruk van het midden op de dag."
+      },
+      {
+        "volgorde": 3,
+        "homiletische_functie": "Lowry: Aha (De wending / Het inzicht)",
+        "moment_in_preek": "Het moment dat Jezus spreekt over 'Levend Water' en God water uit de rots laat komen. De doorbraak van genade door de hardheid heen.",
+        "visuele_intentie": "Een gevoel van verlichting, frisheid en verrassing. Het wonder dat er leven ontstaat op een dode plek.",
+        "prompt_nl": "Abstracte weergave van helder, bruisend water dat uit een donkere barst in de steen breekt. Het water is lichtgevend en stroomt vrijelijk, dwars door de zwaarte heen.",
+        "prompt_en": "watercolor painting, abstract representation of fresh luminous water springing up from a deep dark crack in rock, fluid turquoise and azure washes cutting through heavy charcoal and brown earth tones, effervescent bubbles, sense of movement and sudden release, soft edges, light permeating the water, --ar 16:9",
+        "kleuren_sfeer": "Helder turkoois, azuurblauw, wit licht dat doorbreekt in donkere aardetinten. Sfeer van doorbraak, verfrissing en mysterie.",
+        "symboliek": "Het water is de Geest/Christus die de hardheid van het bestaan openbreekt. De barst is de menselijke kwetsbaarheid die een bron wordt."
+      },
+      {
+        "volgorde": 4,
+        "homiletische_functie": "Lowry: Whee/Yeah (Het evangelie ervaren / De zending)",
+        "moment_in_preek": "Het slot: de vrouw laat haar kruik achter en gaat de stad in. De velden zijn wit om te oogsten. De gemeente gaat bemoedigd richting Biddag.",
+        "visuele_intentie": "Vrijheid, overvloed en openheid. Het loslaten van de oude last (de kruik) en het zien van een hoopvolle horizon.",
+        "prompt_nl": "Een omgevallen aarden kruik die in het hoge gras ligt, waaruit geen water maar zacht goudkleurig licht stroomt dat overgaat in een landschap van wuivend graan/riet (polderlandschap).",
+        "prompt_en": "watercolor painting, an overturned clay water jar lying in tall green grass and reeds, spilling out a stream of soft golden light instead of water, the light blending into a horizon of white harvest fields, soft golden hour lighting, sense of liberation and abundance, loose brushwork, pastoral landscape, --ar 16:9",
+        "kleuren_sfeer": "Goud, fris groen, zacht wit. Sfeer van oogst, vrede en een nieuw begin.",
+        "symboliek": "De achtergelaten kruik symboliseert het stoppen met 'zelfredzaamheid'. Het licht/graan verwijst naar de oogst (Johannes 4) en de zegen op het gewas (Biddag)."
+      }
+    ],
+    "gebruiksinstructies": {
+      "midjourney_basis_commando": "Type in Discord: /imagine prompt: [kopieer de Engelse tekst]",
+      "optionele_parameters": [
+        "--stylize 250 (voor iets meer artistieke flair)",
+        "--chaos 10 (voor subtiele variaties)"
+      ],
+      "volgorde_gebruik": "Gebruik de beelden chronologisch met de preekopbouw. Beeld 1 tijdens de inleiding/contextschets. Beeld 2 tijdens de uitleg van de nood/Exodus. Beeld 3 bij de verkondiging van het Levende Water. Beeld 4 bij de uitzending/slot."
+    },
+    "technische_notities": [
+      "De term 'watercolor painting' zorgt voor de zachte, niet-bedreigende sfeer die past bij een pastoraal-creatieve preek.",
+      "Door 'negative space' (witte ruimte) te benadrukken, blijven de beelden rustig en leiden ze niet af van het gesproken woord."
+    ]
+  },
   "Bijbelteksten": {
     "naardense_bijbel": [
       {

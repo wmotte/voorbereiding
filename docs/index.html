@@ -3025,7 +3025,7 @@
                 infoPanelHtml = `
                     <div class="section-info-panel">
                         <div class="section-info-title">Over deze sectie</div>
-                        <div class="section-info-text">${smartQuotes(escapeHtml(sectionInfo[key]))}</div>
+                        <div class="section-info-text">${processText(sectionInfo[key])}</div>
                     </div>
                 `;
             }
@@ -3033,11 +3033,17 @@
             // Get group class for color coding
             const groupClass = getMenuGroupClass(key).replace('nav-group-', 'section-group-');
 
+            // Add info icon for Midjourney prompts section
+            let titleHtml = escapeHtml(title);
+            if (key === '20_midjourney_prompts') {
+                titleHtml += ` <a href="https://www.midjourney.com/explore?tab=hot" target="_blank" rel="noopener noreferrer" class="lied-info-icon" title="Midjourney voorbeelden en inspiratie">ⓘ</a>`;
+            }
+
             return `
                 <section class="section bevel-raised ${groupClass}" id="section-${key}">
                     <div class="section-header">
                         <div class="section-number">${sectionNum}</div>
-                        <h2 class="section-title">${escapeHtml(title)}</h2>
+                        <h2 class="section-title">${titleHtml}</h2>
                         ${generatedAt ? `<div class="section-meta">Gegenereerd: ${escapeHtml(generatedAt)}</div>` : ''}
                     </div>
                     <div class="section-layout">

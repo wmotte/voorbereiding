@@ -4397,6 +4397,67 @@
       "het Woord"
     ]
   },
+  "20_midjourney_prompts": {
+    "preek_titel": "Brood, Stenen en de Stilte: Kiezen in de Woestijn",
+    "schriftlezing": "Matteüs 4:1-11 & Genesis 3",
+    "liturgische_periode": "Veertigdagentijd (Invocabit)",
+    "kernthema": "De verleiding om zekerheid te zoeken in materie en macht versus het leven uit Gods Woord.",
+    "midjourney_prompts": [
+      {
+        "volgorde": 1,
+        "homiletische_functie": "Lowry: Oops (De verstoring van het evenwicht)",
+        "moment_in_preek": "De introductie van de eerste verzoeking: 'Zeg dat deze stenen brood worden'. Het moment waarop de hoorder beseft dat onze honger naar zekerheid ons blind maakt voor wat echt voedt.",
+        "visuele_intentie": "Een beeld van dissonantie en koude realiteit. Het moet de verleiding van het materialisme tonen: iets dat op voedsel lijkt, maar hard en doods is. Het roept de vraag op: wat ligt er eigenlijk op ons bord?",
+        "prompt_nl": "Aquarel van een ruwe, grijze veldkei die op een fijn porseleinen bord ligt, op een verweerde houten boerentafel. Hard zijlicht zorgt voor diepe schaduwen. Het contrast tussen de geciviliseerde setting (het bord) en de brute natuur (de steen) staat centraal.",
+        "prompt_en": "watercolor painting, a rough grey fieldstone resting on a delicate white porcelain plate, sitting on a weathered wooden farmhouse table, harsh side lighting creating deep contrast, muted earth tones and cold greys, texture of stone versus smooth ceramic, conceptual hunger, minimalist composition, --ar 16:9",
+        "kleuren_sfeer": "Kille grijstinten, wit, en donkerbruin hout. Een sfeer van schaarste en misleiding.",
+        "symboliek": "De steen op het bord symboliseert de eerste verzoeking en de economische onzekerheid in Waarder: we kunnen stenen niet eten, hoe hard we ook werken."
+      },
+      {
+        "volgorde": 2,
+        "homiletische_functie": "Lowry: Ugh (De complicatie / De diepte in)",
+        "moment_in_preek": "De verplaatsing naar de woestijn (of de tempeltinne). De ervaring van eenzaamheid, isolatie en de druk om jezelf te bewijzen. De 'woestijn' van de depressie of de burn-out waar velen in het dorp mee worstelen.",
+        "visuele_intentie": "De kijker moet de leegte en de stilte voelen. Geen actie, maar een overweldigende ruimte die een keuze afdwingt. Het is de plek waar je op jezelf bent teruggeworpen.",
+        "prompt_nl": "Aquarel van een uitgestrekt, leeg landschap dat het midden houdt tussen een dorre polder en een woestijn. Een enkele, scheve houten paal of hekwerk werpt een lange schaduw. De lucht is zwaar en paars-grijs, suggererend dat er een storm op komst is of net voorbij is.",
+        "prompt_en": "watercolor painting, vast empty landscape stretching to horizon, flat and barren terrain blending dry earth and polder aesthetics, single weathered wooden fence post leaning against the wind casting long shadow, heavy purple and slate grey sky suggesting approaching storm, feeling of isolation and silence, negative space dominant, atmospheric washes, --ar 16:9",
+        "kleuren_sfeer": "Liturgisch paars (ingetogen), leigrijs, oker. Sfeer van eenzaamheid en 'Ugh' - de zwaarte van de beproeving.",
+        "symboliek": "De leegte staat voor de woestijnperiode en de afwezigheid van afleidingen. De paal is een subtiele verwijzing naar houvast (of het gebrek daaraan).",
+        "technische_notities": "Zorg voor veel 'negative space' in de lucht om de nietigheid van de mens te benadrukken."
+      },
+      {
+        "volgorde": 3,
+        "homiletische_functie": "Lowry: Aha (De wending / Het inzicht)",
+        "moment_in_preek": "Het keerpunt: Jezus antwoordt met 'Er staat geschreven'. De ontdekking dat het Woord (de adem van God) krachtiger is dan brood of macht. De verschuiving van grijpen (Adam) naar ontvangen.",
+        "visuele_intentie": "Hoop en adem. Het beeld moet de lichtheid van het Woord vangen tegenover de zwaarte van de steen uit beeld 1. Het gaat om inspiratie (in-ademen).",
+        "prompt_nl": "Aquarel van een oud boek dat openligt op een vensterbank. De pagina's waaien op door een onzichtbare wind (de Geest). Zacht ochtendlicht valt naar binnen en verlicht de dwarrelende stofdeeltjes. Buiten is het nog schemerig.",
+        "prompt_en": "watercolor painting, close up of an old book left open on a window sill, pages fluttering in a breeze showing motion blur, soft warm morning light illuminating the paper texture, dust motes dancing in the air, dark blurred background outside window, focus on the text and light, warm ochre and soft white washes, ethereal quality, --ar 16:9",
+        "kleuren_sfeer": "Warm goud, zacht wit, sepia. De sfeer is intiem en 'verlichtend'.",
+        "symboliek": "Het boek is de Schrift (Deuteronomium/Matteüs), de wind is de Geest/Adem (Genesis 2). Het licht staat voor het inzicht 'niet van brood alleen'."
+      },
+      {
+        "volgorde": 4,
+        "homiletische_functie": "Lowry: Whee (De ervaring van het Evangelie)",
+        "moment_in_preek": "Het slot: de engelen dienen Hem. De tafel wordt gedekt in de woestijn. De overgang naar het Avondmaal of de belofte van zorg. Rust na de strijd.",
+        "visuele_intentie": "Vrede en voorziening. Een beeld van eenvoudige overvloed die genade is, geen prestatie. Het moet de kijker een gevoel van 'thuiskomen' geven.",
+        "prompt_nl": "Aquarel van een eenvoudig wit linnen kleed uitgespreid over de ruwe, gebarsten aarde. Op het kleed ligt een stuk gebroken brood en staat een glas water dat het licht vangt. De randen van het beeld zijn zacht en dromerig.",
+        "prompt_en": "watercolor painting, a simple white linen cloth spread over rough cracked dry earth, a single broken piece of artisan bread and a clear glass of water catching the light, soft edges, sense of peace and provision after struggle, pastel purples and warm golds, atmospheric and gentle, loose brushwork, --ar 16:9",
+        "kleuren_sfeer": "Pasteltinten, wit, licht goud en zacht paars. Sfeer van verzoening en rust.",
+        "symboliek": "De tafel in de woestijn (Psalm 23). Het brood is nu écht brood (Christus), in contrast met de steen uit beeld 1."
+      }
+    ],
+    "gebruiksinstructies": {
+      "midjourney_basis_commando": "Type in Discord: /imagine prompt: [kopieer de Engelse prompt]",
+      "optionele_parameters": [
+        "--stylize 250 (voor iets meer artistieke flair)",
+        "--chaos 10 (voor subtiele variaties)"
+      ],
+      "volgorde_gebruik": "Gebruik de beelden chronologisch met de preekopbouw. Laat beeld 2 (de woestijn) het langst staan tijdens de uitleg van de verzoekingen. Wissel naar beeld 3 bij de inzet van de tegenstem ('Er staat geschreven')."
+    },
+    "technische_notities": [
+      "De term 'watercolor painting' is cruciaal voor de zachte, niet-bedreigende sfeer die past bij een pastorale preek.",
+      "De 'negative space' (lege ruimte) in de prompts zorgt ervoor dat de tekst van de beamer (liederen/bijbeltekst) leesbaar blijft als deze over het beeld wordt geprojecteerd."
+    ]
+  },
   "Bijbelteksten": {
     "naardense_bijbel": [
       {

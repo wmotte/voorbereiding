@@ -4324,6 +4324,66 @@
       "Plek licht"
     ]
   },
+  "20_midjourney_prompts": {
+    "preek_titel": "Licht op Onvaste Grond",
+    "schriftlezing": "Jesaja 8:23b-9:3 & Matteüs 4:12-23",
+    "liturgische_periode": "Epifaniëntijd / Week van Gebed",
+    "kernthema": "Gods licht verschijnt niet in het perfecte centrum, maar in de gebroken periferie om ons te roepen tot herstel.",
+    "midjourney_prompts": [
+      {
+        "volgorde": 1,
+        "homiletische_functie": "Lowry: Oops (De verstoring)",
+        "moment_in_preek": "De inleiding, waar de 'bodemdaling' van Gouda en de donkere wereldactualiteit (Gaza/Oekraïne) worden benoemd. Het gevoel dat de grond onder ons wegzakt.",
+        "visuele_intentie": "De kijker moet een gevoel van instabiliteit en koude onzekerheid ervaren. Het is herkenbaar (straatstenen), maar onbehaaglijk door de breuklijn.",
+        "prompt_nl": "Aquarel van natte straatstenen in de winter schemering, diepe indigo en houtskool tinten, een zichtbare barst die door de stenen loopt en een vaag koud straatlicht weerspiegelt, gevoel van instabiliteit.",
+        "prompt_en": "watercolor painting, close-up of wet cobblestones in winter twilight, deep indigo and charcoal washes, a visible fracture running through the stones reflecting a faint cold streetlamp, sense of instability and sinking foundation, atmospheric shadows, negative space emphasizing the crack --ar 16:9",
+        "kleuren_sfeer": "Koud, donkerblauw, grijs, met een hard wit accent van de reflectie.",
+        "symboliek": "De barst staat voor de 'bodemdaling' (letterlijk in Gouda, figuurlijk in het leven) en de 'schaduw van de dood' uit Jesaja."
+      },
+      {
+        "volgorde": 2,
+        "homiletische_functie": "Lowry: Ugh (De complicatie)",
+        "moment_in_preek": "De analyse van onze eigen pogingen om grip te krijgen. We zitten vast in onze bubbels, onze drukte, onze verdeeldheid (1 Korintiërs). Het 'net' dat ons gevangen houdt.",
+        "visuele_intentie": "Een gevoel van verstrikt zijn. Het is niet bedreigend, maar wel vermoeiend en complex. De chaos van het dagelijks leven.",
+        "prompt_nl": "Aquarel van verstrengelde visnetten die hangen tegen een grijze mistige achtergrond, complexe knopen en gerafelde touwen in gedempte aardetinten en zeegroen, textuur van versleten vezels, gevoel van zwaarte.",
+        "prompt_en": "watercolor painting, tangled fishing nets hanging against a gray misty background, complex knots and frayed ropes in muted earth tones and sea greens, texture of worn fibers, a feeling of heaviness and entanglement, soft edges blurring the background, focus on the complexity of the mesh --ar 16:9",
+        "kleuren_sfeer": "Gedempt, aards, bruin, groen, grijs. Geen helder licht.",
+        "symboliek": "Het net staat voor de beklemming van het dagelijks leven en de verdeeldheid waar we in vastzitten (het 'juk' uit Jesaja)."
+      },
+      {
+        "volgorde": 3,
+        "homiletische_functie": "Lowry: Aha (De wending)",
+        "moment_in_preek": "De doorbraak: Jezus verschijnt in Galilea (de periferie). Het licht breekt door op een onverwachte, ruwe plek. Epifanie is niet 'glanzend' maar 'echt'.",
+        "visuele_intentie": "Hoop die opkomt. Geen kitscherige zonnestraal, maar een warme gloed die de ruwheid van de omgeving transformeert. Schoonheid in het alledaagse.",
+        "prompt_nl": "Aquarel van de dageraad die doorbreekt over een ruwe industriële kanaalrand, zacht gouden licht dat weerkaatst op donker kabbelend water, contrast tussen ruwe omgeving en puur warm licht.",
+        "prompt_en": "watercolor painting, dawn breaking over a rough industrial canal edge, soft golden light reflecting on dark rippled water, contrast between gritty surroundings and pure warm light, loose strokes, atmospheric perspective, hope rising in an unexpected place --ar 16:9",
+        "kleuren_sfeer": "Overgang van donker naar warm goud/amber. Contrastrijk.",
+        "symboliek": "Het kanaal verwijst naar de Goudse wateren én het Meer van Galilea. Het licht is de aanwezigheid van Christus in de marge."
+      },
+      {
+        "volgorde": 4,
+        "homiletische_functie": "Lowry: Whee/Yeah (De ervaring & anticipatie)",
+        "moment_in_preek": "De roeping en het antwoord. Wij worden 'nettenboeters' (herstellers van eenheid). De handen uit de mouwen steken in het licht van God.",
+        "visuele_intentie": "Intimiteit, actie en verbinding. Het gevoel van samen iets herstellen. De focus ligt op menselijke handen die werken, beschenen door genade.",
+        "prompt_nl": "Aquarel close-up van verweerde handen die een enkele lichtgevende gouden draad in een ruw donker net weven, zachte focus, warme huidtinten en okerkleurig licht, gevoel van verbinding en reparatie.",
+        "prompt_en": "watercolor painting, close-up of weathered hands weaving a single luminous golden thread into a rough dark net, soft focus, warm skin tones and ochre light, sense of connection and repair, intimate atmosphere, light washing over the work area --ar 16:9",
+        "kleuren_sfeer": "Warm, menselijk, goud, oker, zacht bruin.",
+        "symboliek": "Kintsugi-achtige reparatie van het net: eenheid (Week van Gebed) en diaconaat worden zichtbaar. Het goud is het goddelijke dat door ons heen werkt."
+      }
+    ],
+    "gebruiksinstructies": {
+      "midjourney_basis_commando": "Type in Discord: /imagine prompt: [prompt_en]",
+      "optionele_parameters": [
+        "--stylize 250 (voor iets meer artistieke flair)",
+        "--chaos 10 (voor subtiele variaties)"
+      ],
+      "volgorde_gebruik": "Gebruik de beelden chronologisch met de preekopbouw. Laat beeld 1 staan tijdens de inleiding, beeld 2 tijdens de probleemanalyse, beeld 3 bij de lezing van het Evangelie, en beeld 4 bij de toepassing/slot."
+    },
+    "technische_notities": [
+      "De term 'watercolor painting' zorgt voor de zachte, niet-fotorealistische sfeer die ruimte laat voor eigen interpretatie van de kerkganger.",
+      "De prompts vermijden bewust directe religieuze figuren om de beelden universeel en laagdrempelig te houden voor zoekers (zoals persona Sophie)."
+    ]
+  },
   "Bijbelteksten": {
     "naardense_bijbel": [
       {

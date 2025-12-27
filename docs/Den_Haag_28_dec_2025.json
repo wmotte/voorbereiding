@@ -4382,6 +4382,66 @@
       "Omweg"
     ]
   },
+  "20_midjourney_prompts": {
+    "preek_titel": "God in de Marge van de Macht: Van Kribbe naar Koffer",
+    "schriftlezing": "Matteüs 2:13-15 (De Vlucht) & Kolossenzen 3 (Het Bekleden)",
+    "liturgische_periode": "1e Zondag na Kerstmis / Heilige Familie",
+    "kernthema": "De beweging van de kerstidylle naar de rauwe realiteit van de vlucht, en Gods beschermende aanwezigheid daarin.",
+    "midjourney_prompts": [
+      {
+        "volgorde": 1,
+        "homiletische_functie": "Lowry: Oops (De verstoring van het evenwicht)",
+        "moment_in_preek": "De opening, waar de kerstboom er nog staat, maar de sfeer omslaat van 'Stille Nacht' naar de haastige vlucht in de nacht. De idylle wordt verbroken.",
+        "visuele_intentie": "Het gevoel van urgentie en het achterlaten van veiligheid. De kijker moet de koude tocht voelen die de warme kamer binnenkomt.",
+        "prompt_nl": "Aquarel, een open vintage koffer op een houten vloer naast een uitdrogende dennentak, haastig ingepakt met kleding die eruit hangt, koud blauw maanlicht stroomt door een hoog raam naar binnen en werpt lange schaduwen, contrast tussen het warme interieur en het koude onbekende buiten, gevoel van urgentie en vertrek.",
+        "prompt_en": "watercolor painting, an open vintage suitcase on a wooden floor next to a drying pine branch, hurried packing with clothes spilling out, cold blue moonlight streaming through a tall window casting long shadows, contrast between the warm interior and the cold unknown outside, sense of urgency and departure, loose brushstrokes, negative space, --ar 16:9",
+        "kleuren_sfeer": "Contrast tussen warm oker (binnen/verleden) en koud staalblauw (buiten/toekomst).",
+        "symboliek": "De koffer staat voor het vluchtelingenschap; de dennentak voor het voorbije kerstfeest."
+      },
+      {
+        "volgorde": 2,
+        "homiletische_functie": "Lowry: Ugh (De complicatie / De dreiging)",
+        "moment_in_preek": "De confrontatie met de macht van Herodes en de systemen die mensen vermalen. De eenzaamheid van de familie tegenover de immense architectuur van de macht (Den Haag/Egypte).",
+        "visuele_intentie": "De kijker moet zich klein voelen tegenover een overweldigende, onpersoonlijke structuur. De dreiging is niet een persoon, maar een sfeer.",
+        "prompt_nl": "Aquarel, massieve abstracte stenen architectuur die torent boven een klein kwetsbaar pad, diepe indigo en houtskool wassingen die macht en nacht vertegenwoordigen, een enkel klein lantaarnlichtje dat door de duisternis beweegt, gevoel van overweldigende schaal en isolatie, brutalistische structuren tegen een zachte lucht.",
+        "prompt_en": "watercolor painting, massive abstract stone architecture looming over a tiny fragile path, deep indigo and charcoal washes representing power and night, a single small lantern light moving through the darkness, sense of overwhelming scale and isolation, brutalist structures against a soft sky, atmospheric perspective, --ar 16:9",
+        "kleuren_sfeer": "Donkere tinten, indigo, grijs, met één klein puntje warm licht.",
+        "symboliek": "De architectuur symboliseert Herodes/het Systeem; het lichtje is de kwetsbare Heilige Familie."
+      },
+      {
+        "volgorde": 3,
+        "homiletische_functie": "Lowry: Aha (De wending / Het Evangelie)",
+        "moment_in_preek": "De ontdekking dat God niet in het paleis zit, maar meereist in de vlucht. De link naar Kolossenzen: we 'bekleden' ons met liefde als een tent/bescherming in de wildernis.",
+        "visuele_intentie": "Een gevoel van intieme geborgenheid midden in een onherbergzame omgeving. De focus ligt op textuur en warmte.",
+        "prompt_nl": "Aquarel, een provisorische schuilplaats gemaakt van zware geweven stof gedrapeerd over takken, gloeiend warm goudkleurig licht van binnenuit de tentstructuur, omgeven door een koud grijs mistig landschap, textuur van het geweven kleed benadrukt, gevoel van intieme veiligheid te midden van onzekerheid.",
+        "prompt_en": "watercolor painting, a makeshift shelter made of heavy fabric draped over branches, glowing warm golden light from within the tent structure, surrounded by a cold gray misty landscape, texture of the woven cloth emphasized, feeling of intimate safety amidst uncertainty, soft edges, luminous wash, --ar 16:9",
+        "kleuren_sfeer": "Goud, amber, zacht wit, omgeven door nevelig grijs.",
+        "symboliek": "De stof verwijst naar 'bekleed u met liefde' (Kolossenzen) en de tent naar de tabernakel/Gods nabijheid onderweg."
+      },
+      {
+        "volgorde": 4,
+        "homiletische_functie": "Lowry: Yeah (De anticipatie / Toepassing)",
+        "moment_in_preek": "De terugkeer naar het gewone leven (Nazaret/Den Haag). We zien de stad nu anders: God is aanwezig in de voorbijganger, de vreemdeling, de weerspiegeling op straat.",
+        "visuele_intentie": "Verstilde hoop in een stedelijke setting. De heiligheid van het alledaagse leven na de crisis.",
+        "prompt_nl": "Aquarel, natte klinkerstraat in een stad bij schemering, weerspiegeling van straatlantaarns in een regenplas, silhouet van een familie die wegloopt in de verte, stedelijke setting met zachte atmosferische regen, gedempte kleuren met vleugjes amberkleurig licht, gevoel van vrede en continuïteit.",
+        "prompt_en": "watercolor painting, wet cobblestone street in a city at dusk, reflection of streetlights in a puddle, silhouette of a family walking away into the distance, urban setting with soft atmospheric rain, muted colors with touches of amber light, sense of peace and continuity, minimal composition, --ar 16:9",
+        "kleuren_sfeer": "Stedelijk grijs/blauw met warme reflecties, rustig en atmosferisch.",
+        "symboliek": "De stad (Den Haag/Nazaret) als plek waar het heilige leven zich 'incognito' voortzet."
+      }
+    ],
+    "gebruiksinstructies": {
+      "midjourney_basis_commando": "Kopieer de tekst bij 'prompt_en' en plak deze in Discord achter het commando: /imagine prompt:",
+      "optionele_parameters": [
+        "--stylize 250 (voor iets meer artistieke flair)",
+        "--chaos 10 (voor subtiele variaties)"
+      ],
+      "volgorde_gebruik": "Gebruik de beelden chronologisch met de preekopbouw. Beeld 1 bij de inleiding, Beeld 2 bij de probleemschets (Herodes), Beeld 3 bij de theologische kern (Kolossenzen/Bescherming), Beeld 4 bij het slot/uitzending."
+    },
+    "technische_notities": [
+      "De term 'watercolor' zorgt voor de zachte, dromerige sfeer die past bij de herinnering en de spirituele laag.",
+      "Door 'negative space' (witte ruimte) te vragen, voorkom je dat de beelden te druk worden voor projectie in de grote Kloosterkerk."
+    ]
+  },
   "Bijbelteksten": {
     "naardense_bijbel": [
       {

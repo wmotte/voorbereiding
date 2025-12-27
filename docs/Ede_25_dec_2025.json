@@ -4134,6 +4134,69 @@
       "Verbreking"
     ]
   },
+  "20_midjourney_prompts": {
+    "preek_titel": "Het Woord is een Gebaar geworden",
+    "schriftlezing": "Johannes 1:1-18 & Jesaja 52:7-10",
+    "liturgische_periode": "Kerstmis (Hoogfeest)",
+    "kernthema": "God doorbreekt de afstand en stilte door zichtbaar en tastbaar aanwezig te zijn (Incarnatie).",
+    "midjourney_prompts": [
+      {
+        "volgorde": 1,
+        "homiletische_functie": "Lowry: Oops (De verstoring / Het probleem)",
+        "moment_in_preek": "De opening, waarin de ervaring van afstand en isolatie wordt geschetst. De wereld is koud, en woorden (auditief) bereiken ons niet altijd. Het gevoel van 'buiten staan'.",
+        "visuele_intentie": "De kijker moet de kou en de barrière voelen. Er is wel licht, maar het is onbereikbaar en wazig. Dit resoneert met de ervaring van doofheid (niet alles helder meekrijgen) en eenzaamheid.",
+        "prompt_nl": "Een blik door een bevroren raam naar buiten. De wereld is een wazig geheel van blauwe en grijze vormen. Condensdruppels op het glas vangen een flauw, koud licht. Gevoel van scheiding.",
+        "prompt_en": "watercolor painting, view through a frosted glass window pane at twilight, outside world is a blur of indistinct blue and gray shapes, condensation droplets on the glass catching a faint cold light, sense of isolation and separation, muted cool tones, soft edges, negative space, --ar 16:9",
+        "kleuren_sfeer": "Koele blauwtinten, grijs, wit. Sfeer van stilte en afstand.",
+        "symboliek": "Het bevroren glas staat voor de barrière tussen ons en de ander/God. De 'duisternis' die het licht nog niet begrepen heeft."
+      },
+      {
+        "volgorde": 2,
+        "homiletische_functie": "Buttrick: Move 2 (De belofte / Het wachten)",
+        "moment_in_preek": "De overgang naar Jesaja 52. De wachters op de muren die turen naar de horizon. Het verlangen om iets te ZIEN. De spanning van de verwachting.",
+        "visuele_intentie": "Hoopvolle spanning. De focus ligt op de horizon. Het is nog niet licht, maar de nacht is aan het breken. Het beeld nodigt uit om te turen (visuele focus).",
+        "prompt_nl": "Een weids, mistig landschap vlak voor zonsopgang. Een enkel slingerend pad is nauwelijks zichtbaar door de nevel. Aan de horizon een heel flauwe gloed van bleekgeel licht tegen een diepe indigo lucht.",
+        "prompt_en": "watercolor painting, vast misty landscape at pre-dawn, a single winding path barely visible through the fog, horizon line glowing with very faint pale yellow light against deep indigo sky, negative space emphasizing the waiting, atmospheric perspective, quiet anticipation, minimal composition, --ar 16:9",
+        "kleuren_sfeer": "Indigo, diep paars overgaand in zacht geel/goud. Mysterieus maar hoopvol.",
+        "symboliek": "De 'voeten op de bergen' zijn nog niet te zien, maar de sfeer kondigt hun komst aan. De mist staat voor onze beperkte waarneming.",
+        "technische_notities": "Zorg voor veel 'negative space' (leegte) in de lucht om ruimte te laten voor de gedachten van de kijker."
+      },
+      {
+        "volgorde": 3,
+        "homiletische_functie": "Lowry: Aha (De wending / Het Evangelie)",
+        "moment_in_preek": "De kern: Johannes 1:14. Het Woord is vlees geworden en heeft 'zijn tent opgeslagen'. God wordt een bewoner, een naaste. De abstractie wordt concreet en warm.",
+        "visuele_intentie": "Geborgenheid en warmte. Het contrast tussen de koude buitenwereld en een veilige binnenplek. Voor de bewoners van De Gelderhorst: het gevoel van 'thuis' en 'veiligheid'.",
+        "prompt_nl": "Een eenvoudige canvas beschutting (tent-achtig) die van binnenuit gloeit met warm goudkleurig licht, geplaatst in een donker, besneeuwd landschap. De textuur van het doek is zichtbaar. Het licht morst naar buiten op de koude grond.",
+        "prompt_en": "watercolor painting, a simple canvas shelter glowing with warm golden light from within, set against a dark snowy winter landscape, fabric texture visible and illuminated, casting a soft inviting pool of light on the cold ground, contrast between exterior cold and interior warmth, intimate and humble, loose brushstrokes, --ar 16:9",
+        "kleuren_sfeer": "Diep donkerblauw/zwart contrast met rijk goud/oranje/amber. Warm en uitnodigend.",
+        "symboliek": "De 'Skenoo' (tabernakel/tent) van Johannes 1. God woont niet in een paleis, maar in onze kwetsbaarheid (canvas/vlees).",
+        "technische_notities": "Vermijd een letterlijke kerststal; de abstractie van de 'tent' of 'lichte plek' werkt sterker als universeel beeld van inwoning."
+      },
+      {
+        "volgorde": 4,
+        "homiletische_functie": "Lowry: Whee (De ervaring / De consequentie)",
+        "moment_in_preek": "De toepassing: 'Wij hebben zijn heerlijkheid gezien'. God is tastbaar geworden. Voor doven: God communiceert via het lichaam/handen. De oproep om elkaar zo ook te zien.",
+        "visuele_intentie": "Intimiteit en menselijkheid. De focus verschuift van landschap naar detail. Het goddelijke wordt zichtbaar in het menselijke (handen).",
+        "prompt_nl": "Close-up van verweerde handen die opengehouden worden in een baan van warm licht. Stofdeeltjes dansen in de lichtstraal. De achtergrond is zacht en onscherp. Het suggereert ontvangen en aanraken.",
+        "prompt_en": "watercolor painting, close-up of weathered hands held open in a pool of warm light, dust motes dancing in the light beam, background in soft shadow, suggestion of a presence without showing a face, tactile quality, sense of receiving and connection, warm ochre and soft white tones, delicate details, --ar 16:9",
+        "kleuren_sfeer": "Huidtinten, oker, zacht wit, lichtbruin. Zeer menselijk en dichtbij.",
+        "symboliek": "De handen staan voor communicatie (gebarentaal), voor het ontvangen van het Kind, en voor de menswording (vlees). Het licht maakt de handen 'heilig'.",
+        "technische_notities": "Zorg dat de handen er oud/doorleefd uitzien, passend bij de doelgroep van ouderen."
+      }
+    ],
+    "gebruiksinstructies": {
+      "midjourney_basis_commando": "Type in Discord: /imagine prompt: [kopieer de Engelse prompt]",
+      "optionele_parameters": [
+        "--stylize 250 (voor iets meer artistieke flair)",
+        "--chaos 10 (voor subtiele variaties)"
+      ],
+      "volgorde_gebruik": "Gebruik de beelden chronologisch tijdens de preek. Laat elk beeld staan zolang het betreffende 'blok' van de preek duurt. Voor doven is het essentieel dat het beeld er is, maar dat ze daarna weer naar de predikant/tolk kunnen kijken. Projecteer het beeld eventueel gedimd tijdens het gebaren."
+    },
+    "technische_notities": [
+      "De keuze voor aquarel (watercolor) zorgt voor zachtheid en voorkomt dat de beelden te hard of 'fotografisch' overkomen, wat ruimte laat voor eigen interpretatie.",
+      "De progressie van kleuren gaat van Koud/Blauw (Afstand) -> Naar Donker/Paars (Verwachting) -> Naar Goud/Contrast (Incarnatie) -> Naar Menselijk/Warm (Nabijheid)."
+    ]
+  },
   "Bijbelteksten": {
     "naardense_bijbel": [
       {

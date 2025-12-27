@@ -4233,6 +4233,66 @@
       "Estomihi"
     ]
   },
+  "20_midjourney_prompts": {
+    "preek_titel": "De Barst en de Rots: Integriteit op de drempel van de Veertigdagentijd",
+    "schriftlezing": "Matteüs 5:17-37 & Sirach 15:15-20",
+    "liturgische_periode": "Zondag Estomihi (Laatste zondag voor de Veertigdagentijd)",
+    "kernthema": "De radicale keuze voor integriteit van het hart en de noodzaak van een fundament dat dieper ligt dan onze eigen prestaties.",
+    "midjourney_prompts": [
+      {
+        "volgorde": 1,
+        "homiletische_functie": "Lowry: Oops (De verstoring van het evenwicht)",
+        "moment_in_preek": "De inleiding, waar de context van Waddinxveen (bodemdaling, nieuwbouw) wordt gekoppeld aan de 'perfecte buitenkant' die wij vaak ophouden, terwijl er van binnen scheuren zitten (Matteüs 5: woede, begeerte).",
+        "visuele_intentie": "De kijker moet de spanning voelen tussen een sterke constructie en een fundamentele kwetsbaarheid. Het beeldt de 'verborgen barst' in ons morele leven uit.",
+        "prompt_nl": "Een close-up van een betonnen fundament met een fijne barst waaruit een zacht, warm licht sijpelt, in contrast met koele grijstinten.",
+        "prompt_en": "watercolor painting, close-up of a hairline crack running through a solid concrete foundation, faint golden light seeping out from within the fissure, cool grey and blue tones of the stone contrasting with the warm inner light, texture of weathered construction material, metaphorical representation of brokenness and hidden truth, soft edges, negative space, --ar 16:9",
+        "kleuren_sfeer": "Koele grijzen en blauwen (beton/polderklei) met een accent van warm goud/oranje (het innerlijk).",
+        "symboliek": "De barst verwijst naar de bodemdaling in Waddinxveen én de ethische barsten in het hart die Jezus blootlegt."
+      },
+      {
+        "volgorde": 2,
+        "homiletische_functie": "Lowry: Ugh (De complicatie/De zwaarte van de wet)",
+        "moment_in_preek": "De uitleg van de harde woorden van Jezus (oog uitrukken, hand afhakken). Dit wordt verbonden met de naam van de gemeente 'De Rank': snoeien doet pijn, maar is nodig voor vrucht.",
+        "visuele_intentie": "De pijn en de noodzaak van het snoeien voelbaar maken. Het is geen geweld om het geweld, maar een ingreep ten behoeve van het leven.",
+        "prompt_nl": "Een winterse wijnrank met één verse snoeiwond waar het hout nog rauw is, met een snoeischaar op de bevroren grond.",
+        "prompt_en": "watercolor painting, a dormant grape vine in winter with one fresh cut exposing the raw inner wood, sharp pruning shears lying on the frost-covered ground nearby, muted winter colors of brown and icy blue with a touch of sap green, atmospheric mist, focus on the wound and the potential for growth, minimalist composition, --ar 16:9",
+        "kleuren_sfeer": "Winterse tinten, bruin, ijsblauw, met de rauwe kleur van vers hout.",
+        "symboliek": "Verwijst naar 'De Rank' (gemeentenaam) en de radicale ethiek van de Bergrede (snoeien van zonde). Pas ook bij februari (snoeitijd)."
+      },
+      {
+        "volgorde": 3,
+        "homiletische_functie": "Lowry: Aha (De wending/Het inzicht)",
+        "moment_in_preek": "De focus op verzoening (v. 23-24). Het inzicht dat de eredienst moet wachten op de relatie. De beweging van 'binnen' (kerk/altaar) naar 'buiten' (de broeder).",
+        "visuele_intentie": "De urgentie van het verlaten van de religieuze comfortzone om verzoening te zoeken. Het beeld toont een onderbroken handeling.",
+        "prompt_nl": "Een eenvoudig brood dat alleen is achtergelaten op een ruwe houten tafel, met op de achtergrond een open deur die naar een licht pad leidt.",
+        "prompt_en": "watercolor painting, a simple loaf of bread left alone on a rough wooden table in a dimly lit room, a door standing ajar in the background revealing a bright sunlit path outside, dust motes dancing in the light beam, sense of departure and urgency, warm earth tones, soft washes, --ar 16:9",
+        "kleuren_sfeer": "Warm hout, donkere binnenruimte vs. helder wit/geel licht van buiten.",
+        "symboliek": "Het brood (gave) blijft liggen; de prioriteit ligt buiten bij de verzoening (het licht)."
+      },
+      {
+        "volgorde": 4,
+        "homiletische_functie": "Lowry: Whee/Yeah (De ervaring van het Evangelie & Toekomst)",
+        "moment_in_preek": "De afsluiting richting Estomihi ('Wees mij een Rots'). Wij kunnen de wet niet dragen, maar Christus is de Rots. De overgang naar de sobere Lijdenstijd.",
+        "visuele_intentie": "Rust, vastigheid en bescherming na de onrust van de radicale eisen. Een veilige haven aan het begin van de nacht.",
+        "prompt_nl": "Een massieve, donkere rots die oprijst uit kalm water onder een diep paars/indigo schemerlucht.",
+        "prompt_en": "watercolor painting, a massive dark rock formation rising out of turbulent water, twilight sky with shades of deep purple and indigo suggesting the approach of night and Lent, the water breaking softly against the stone, sense of permanence amidst change, atmospheric and contemplative, minimal composition, --ar 16:9",
+        "kleuren_sfeer": "Diep paars (liturgische kleur van de naderende vasten), indigo, donkergrijs.",
+        "symboliek": "Psalm 31 (Estomihi) en de fundering die in Christus gevonden wordt, ondanks de 'wateren' van Sirach."
+      }
+    ],
+    "gebruiksinstructies": {
+      "midjourney_basis_commando": "Type in Discord: /imagine prompt: [kopieer de Engelse prompt]",
+      "optionele_parameters": [
+        "--stylize 250 (voor iets meer artistieke flair)",
+        "--chaos 10 (voor subtiele variaties)"
+      ],
+      "volgorde_gebruik": "Gebruik de beelden chronologisch met de preekopbouw. Beeld 1 tijdens de inleiding/contextschets. Beeld 2 tijdens de uitleg van de harde teksten. Beeld 3 bij de toepassing over verzoening. Beeld 4 als meditatief slotbeeld of tijdens het slotlied."
+    },
+    "technische_notities": [
+      "De term 'watercolor painting' zorgt voor een zachte, niet-bedreigende sfeer die past bij de pastorale toon, ondanks de scherpe inhoud.",
+      "De 'negative space' (lege ruimte) in de prompts is essentieel om de beelden rustig te houden voor projectie in de kerkzaal."
+    ]
+  },
   "Bijbelteksten": {
     "naardense_bijbel": [
       {
