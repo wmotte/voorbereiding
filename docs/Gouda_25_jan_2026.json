@@ -1367,418 +1367,180 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 54,
-      "liturgische_balans": "De selectie biedt een krachtig evenwicht tussen de verstilde mystiek van het 'Licht' (Epifanie) en de actieve roeping tot navolging en eenheid. Er is een sterke focus op Psalm 27 als fundament, aangevuld met liederen die de spanning tussen de 'duisternis' van de wereld (Gaza, winter) en het 'Grote Licht' van Christus verwoorden. De oecumenische breedte van Gouda wordt weerspiegeld in de keuze voor zowel klassieke psalmen als moderne aanbiddingsliederen.",
-      "contextuele_reflectie": "In de context van Gouda, waar 'Gouda bij Kaarslicht' een diepe culturele wortel heeft, resoneren de licht-liederen extra sterk. De roeping tot eenheid (1 Kor. 1) spreekt direct tot de Pauluskerk als 'huiskamer van de wijk', waar de uitdaging ligt om ondanks verschillende subgroepen één lichaam in Christus te blijven. De winterse kou in de liederen verbindt de gemeente in gebed met de humanitaire nood in Gaza."
+      "aantal_gevonden_totaal": 63,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de profetische belofte (Jesaja 9), de liturgische reflectie (Psalm 27) en de praktische navolging (Matteüs 4). Er is een goede verdeling tussen klassieke psalmberijmingen en meer eigentijdse liederen over discipelschap.",
+      "contextuele_reflectie": "De thematiek van 'licht in de duisternis' resoneert krachtig met de actuele humanitaire nood in Gaza. De liederen over eenheid en vrede sluiten aan bij de oecumenische traditie van Gouda en de behoefte aan verbinding in een politiek versnipperde tijd."
     },
     "liedboek_2013": [
       {
         "nummer": "27",
         "titel": "Mijn licht, mijn heil is Hij, mijn God en Here!",
         "type_match": "Schriftlezing",
-        "karakter": "Krachtig vertrouwen",
-        "toelichting": "De onberijmde en berijmde versies van Psalm 27 vormen de kern van de liturgie. Het verbindt de persoonlijke angst met de goddelijke zekerheid: 'De Heer is mijn licht'.",
-        "suggestie_gebruik": "Intocht"
+        "karakter": "Krachtig en vertrouwend",
+        "toelichting": "Directe berijming van Psalm 27, de antwoordpsalm van deze zondag. Het verwoordt het basisvertrouwen dat nodig is om het licht te zien.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Mijn licht, mijn heil is Hij, mijn God en Here!"
       },
       {
-        "nummer": "445",
-        "titel": "De nacht is haast ten einde",
-        "type_match": "Conceptueel",
-        "karakter": "Hoopvol/Verwachtend",
-        "toelichting": "Verbindt de 'nacht' uit Jesaja 9 met de dageraad van Christus. Ideaal voor de overgang van de schuldbelijdenis naar de genadeverkondiging.",
-        "suggestie_gebruik": "Kyrie/Gloria"
-      },
-      {
-        "nummer": "448",
-        "titel": "Het volk dat wandelt in het duister",
+        "nummer": "27b",
+        "titel": "De Heer is mijn licht en mijn heil:",
         "type_match": "Schriftlezing",
-        "karakter": "Hymnisch",
-        "toelichting": "Een directe verklanking van Jesaja 9:1. Het bezingt de omkering van het juk naar de vreugde van de oogst.",
-        "suggestie_gebruik": "Schriftlied (na Jesaja)"
+        "karakter": "Meditatief",
+        "toelichting": "Een kortere, liturgische vorm van Psalm 27, zeer geschikt voor een dienst met veel ruimte voor stilte.",
+        "suggestie_gebruik": "Antwoordpsalm",
+        "eerste_regel": "De Heer is mijn licht en mijn heil:"
       },
       {
-        "nummer": "513",
-        "titel": "Gij die alle sterren houdt",
-        "type_match": "Seizoen",
-        "karakter": "Verstild gebed",
-        "toelichting": "Een klassiek Epifanie-lied dat vraagt om het licht van de ster in ons eigen hart, passend bij de persoonlijke roeping.",
-        "suggestie_gebruik": "Gebed om de verlichting met de Heilige Geest"
-      },
-      {
-        "nummer": "527",
-        "titel": "Licht dat ons aanstoot",
+        "nummer": "23",
+        "titel": "opdat ik Hem zal prijzen om zijn zegen.",
         "type_match": "Thematisch",
-        "karakter": "Lichtvoetig maar diep",
-        "toelichting": "Oosterhuis' tekst over het licht dat ons 'aanstoot' past bij de roeping van de discipelen: het licht is niet passief, het zet in beweging.",
-        "suggestie_gebruik": "Antwoordlied"
+        "karakter": "Lofprijzend",
+        "toelichting": "Verbindt de zegen van God met het wandelen in het licht, passend bij de Epifaniëtijd.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "opdat ik Hem zal prijzen om zijn zegen."
       },
       {
-        "nummer": "827",
-        "titel": "Mensen, wij zijn geroepen om te leven!",
-        "type_match": "Conceptueel",
-        "karakter": "Strijdbaar/Feestelijk",
-        "toelichting": "Verbindt de roeping uit Matteüs 4 met de brede menselijke roeping tot gerechtigheid en vrede.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "832",
-        "titel": "Geroepen om op weg te gaan",
-        "type_match": "Schriftlezing",
-        "karakter": "Pelgrimslied",
-        "toelichting": "Directe link met de discipelen die hun netten achterlaten (Matt. 4:20) om een onbekende weg te gaan.",
-        "suggestie_gebruik": "Na het Evangelie"
-      },
-      {
-        "nummer": "975",
-        "titel": "Jezus roept hier mensen samen",
-        "type_match": "Conceptueel",
-        "karakter": "Gemeenschapsvormend",
-        "toelichting": "Spreekt over de eenheid waar Paulus om smeekt in 1 Korintiërs 1. 'Geen verdeeldheid meer' wordt hier een gezongen gebed.",
-        "suggestie_gebruik": "Tafelgebed / Avondmaal"
-      },
-      {
-        "nummer": "998",
-        "titel": "Je hebt je vrienden toen bijeengeroepen",
-        "type_match": "Navolging",
-        "karakter": "Dienstbaar",
-        "toelichting": "Focus op de praktische kant van discipelschap: voeten wassen en dienen, wat de 'huiskamer'-functie van de Pauluskerk onderstreept.",
-        "suggestie_gebruik": "Diaconaal moment"
-      },
-      {
-        "nummer": "801",
-        "titel": "Door de nacht van strijd en zorgen",
-        "type_match": "Verrassend",
-        "karakter": "Processielied",
-        "toelichting": "Dit lied verbindt de 'nacht' van de wereld (actualiteit Gaza) met de gezamenlijke tocht naar het licht. Het benadrukt de eenheid van de pelgrims.",
-        "suggestie_gebruik": "Slotlied"
+        "nummer": "86",
+        "titel": "Hoor mij, Heer, wil antwoord zenden,",
+        "type_match": "Emotioneel",
+        "karakter": "Smekend",
+        "toelichting": "Sluit aan bij de roep om hulp uit de diepte, wat een brug slaat naar de actualiteit van de winterstormen en nood.",
+        "suggestie_gebruik": "Kyrie-gebed",
+        "eerste_regel": "Hoor mij, Heer, wil antwoord zenden,"
       }
     ],
     "hemelhoog": [
       {
-        "nummer": "11",
-        "titel": "Hij roept mijn naam",
+        "nummer": "273",
+        "titel": "De Heer is mijn licht,",
         "type_match": "Schriftlezing",
-        "karakter": "Intiem/Persoonlijk",
-        "toelichting": "De persoonlijke roeping van de vissers wordt hier vertaald naar de individuele gelovige. 'Ik hoor zijn stem'.",
-        "suggestie_gebruik": "Na de preek"
+        "karakter": "Eigentijds en helder",
+        "toelichting": "Een toegankelijke versie van Psalm 27 die de centrale belofte van de lezingen direct verwoordt.",
+        "suggestie_gebruik": "Openingslied",
+        "eerste_regel": "De Heer is mijn licht,"
       },
       {
-        "nummer": "140",
-        "titel": "In de donkere nacht",
+        "nummer": "188",
+        "titel": "Jezus is ons licht en leven!",
         "type_match": "Thematisch",
-        "karakter": "Aanbidding",
-        "toelichting": "Een lied dat Jezus als het Licht in de nacht viert, passend bij de Epifanie-thematiek van het stralende licht in Galilea.",
-        "suggestie_gebruik": "Gloria-moment"
+        "karakter": "Feestelijk",
+        "toelichting": "Viering van Jezus als het licht dat in de wereld is gekomen, passend bij de lezing uit Matteüs 4.",
+        "suggestie_gebruik": "Gloria",
+        "eerste_regel": "Jezus is ons licht en leven!"
       },
       {
-        "nummer": "386",
-        "titel": "Wil je opstaan en Mij volgen",
-        "type_match": "Schriftlezing",
-        "karakter": "Uitdagend",
-        "toelichting": "The Summons (John Bell). Een indringende tekst over de radicaliteit van Matteüs 4: 'Zou je gaan waar je niet weet?'.",
-        "suggestie_gebruik": "Antwoordlied"
-      },
-      {
-        "nummer": "391",
-        "titel": "U roept ons samen als kerk van de Heer",
-        "type_match": "Conceptueel",
-        "karakter": "Verbindend",
-        "toelichting": "Directe remedie tegen de verdeeldheid in 1 Kor. 1. Het benadrukt dat we geroepen zijn als één lichaam.",
-        "suggestie_gebruik": "Opening"
-      },
-      {
-        "nummer": "402",
-        "titel": "U maakt ons één",
-        "type_match": "Conceptueel",
-        "karakter": "Kort/Krachtig",
-        "toelichting": "Focus op de eenheid door de Geest, essentieel voor een gemeente die 'samen' kerk wil zijn in een diverse wijk.",
-        "suggestie_gebruik": "Gebed om eenheid"
-      },
-      {
-        "nummer": "501",
-        "titel": "U bent de God die roept",
-        "type_match": "Thematisch",
-        "karakter": "Belijdend",
-        "toelichting": "Een krachtige belijdenis van God als de Initiatiefnemer die ons uit de duisternis roept.",
-        "suggestie_gebruik": "Na de geloofsbelijdenis"
-      },
-      {
-        "nummer": "649",
-        "titel": "Licht van de wereld",
-        "type_match": "Thematisch",
-        "karakter": "Modern/Populair",
-        "toelichting": "Here I am to worship. Sluit aan bij de lichtsymboliek van Gouda en de Epifanie-gedachte van aanbidding.",
-        "suggestie_gebruik": "Lofprijzing"
-      },
-      {
-        "nummer": "676",
-        "titel": "God roept ons om overal",
+        "nummer": "305",
+        "titel": "Ik volg de Heer,",
         "type_match": "Contextueel",
-        "karakter": "Missionair",
-        "toelichting": "Roept op om Gods licht te zijn in de wereld, passend bij de maatschappelijke betrokkenheid van de Pauluskerk.",
-        "suggestie_gebruik": "Zending en Zegen"
+        "karakter": "Toegewijd",
+        "toelichting": "Directe link met de roeping van de discipelen aan het meer van Galilea. Het benadrukt de persoonlijke keuze voor navolging.",
+        "suggestie_gebruik": "Antwoordlied na de verkondiging",
+        "eerste_regel": "Ik volg de Heer,"
       },
       {
-        "nummer": "711",
-        "titel": "Wees in uw roeping eensgezind",
-        "type_match": "Schriftlezing",
-        "karakter": "Vermanend/Bemoedigend",
-        "toelichting": "Directe link met 1 Korintiërs 1:10. Een oproep tot vrede en onderlinge liefde.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "283",
-        "titel": "O Heer, de nacht komt over ons",
-        "type_match": "Verrassend",
-        "karakter": "Klaaglied/Smeekbede",
-        "toelichting": "Verbindt de 'nacht' van Jesaja met de actuele nood in de wereld (Gaza). Een lied dat de ernst van de duisternis niet schuwt.",
-        "suggestie_gebruik": "Voorbeden"
+        "nummer": "533",
+        "titel": "Geef ons uw vrede in deze stilte.",
+        "type_match": "Emotioneel",
+        "karakter": "Verstild",
+        "toelichting": "Een gebed om vrede dat de brug slaat tussen de liturgische eenheid en de onrust in de wereld (Gaza).",
+        "suggestie_gebruik": "Gebedslied",
+        "eerste_regel": "Geef ons uw vrede in deze stilte."
       }
     ],
     "op_toonhoogte": [
-      {
-        "nummer": "11",
-        "titel": "Mijn licht, mijn heil is Hij",
-        "type_match": "Schriftlezing",
-        "karakter": "Opwekkend",
-        "toelichting": "Psalm 27 op een toegankelijke melodie. Versterkt het thema van veiligheid bij God.",
-        "suggestie_gebruik": "Opening"
-      },
-      {
-        "nummer": "76",
-        "titel": "Daar is uit ’s werelds duist’re wolken",
-        "type_match": "Schriftlezing",
-        "karakter": "Klassiek/Hoopvol",
-        "toelichting": "Verklanking van Jesaja 9. Het licht dat door de wolken breekt.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "103",
-        "titel": "Want een kind is ons geboren",
-        "type_match": "Schriftlezing",
-        "karakter": "Feestelijk",
-        "toelichting": "De bekende titels uit Jesaja 9 (Wonderbare Raadsman). Herinnert aan de bron van het licht.",
-        "suggestie_gebruik": "Na de eerste lezing"
-      },
-      {
-        "nummer": "210",
-        "titel": "U bent de God die roept",
-        "type_match": "Thematisch",
-        "karakter": "Toegewijd",
-        "toelichting": "Focus op het antwoord van de mens op Gods roepstem.",
-        "suggestie_gebruik": "Na de preek"
-      },
       {
         "nummer": "232",
         "titel": "Jezus die langs het water liep",
         "type_match": "Schriftlezing",
         "karakter": "Verhalend",
-        "toelichting": "Matteüs 4 in liedvorm. Zeer geschikt voor een dienst waar ook kinderen/jongeren bij betrokken zijn.",
-        "suggestie_gebruik": "Kindermoment / Evangelielezing"
+        "toelichting": "Dit lied vertelt letterlijk het evangelieverhaal van Matteüs 4 over de roeping van de vissers.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Jezus die langs het water liep"
       },
       {
-        "nummer": "325",
-        "titel": "Licht van de wereld",
-        "type_match": "Thematisch",
-        "karakter": "Aanbidding",
-        "toelichting": "Focus op de nederigheid van Christus die het licht bracht door mens te worden.",
-        "suggestie_gebruik": "Gloria"
+        "nummer": "95",
+        "titel": "Nu daagt het in het oosten,",
+        "type_match": "Seizoen",
+        "karakter": "Hoopvol",
+        "toelichting": "Klassiek Epifanie-lied dat het aanbreken van het licht uit Jesaja 9 bezingt.",
+        "suggestie_gebruik": "Lied na de eerste lezing",
+        "eerste_regel": "Nu daagt het in het oosten,"
       },
       {
-        "nummer": "362",
-        "titel": "U maakt ons één",
+        "nummer": "166",
+        "titel": "Vrede zij u, vrede zij u,",
         "type_match": "Conceptueel",
-        "karakter": "Gemeenschapslied",
-        "toelichting": "Korte krachtige bevestiging van de eenheid in Christus (1 Kor. 1).",
-        "suggestie_gebruik": "Rond de tafel"
+        "karakter": "Zegenend",
+        "toelichting": "Verbindt de oproep tot eenheid uit 1 Korintiërs met de vrede die Christus brengt.",
+        "suggestie_gebruik": "Vredeswens of Slotlied",
+        "eerste_regel": "Vrede zij u, vrede zij u,"
       },
       {
-        "nummer": "363",
-        "titel": "U roept ons samen als kerk van de Heer",
-        "type_match": "Conceptueel",
-        "karakter": "Hymne",
-        "toelichting": "Benadrukt de roeping van de gemeente als geheel.",
-        "suggestie_gebruik": "Intocht"
-      },
-      {
-        "nummer": "489",
-        "titel": "Dit is mijn hand en dat mijn voet",
-        "type_match": "Verrassend",
-        "karakter": "Speels/Diep",
-        "toelichting": "Hoewel vaak als kinderlied gezien, verwoordt dit de diepe theologie van 1 Korintiërs 12 (en 1): we hebben elkaar nodig.",
-        "suggestie_gebruik": "Kindermoment"
-      },
-      {
-        "nummer": "533",
-        "titel": "Jezus is het Licht der wereld",
-        "type_match": "Thematisch",
-        "karakter": "Getuigend",
-        "toelichting": "Eenvoudige maar krachtige proclamatie van het thema.",
-        "suggestie_gebruik": "Slotlied"
+        "nummer": "11",
+        "titel": "Mijn licht, mijn heil is Hij, mijn God en HERE!",
+        "type_match": "Schriftlezing",
+        "karakter": "Strijdbaar en vastberaden",
+        "toelichting": "De Op Toonhoogte-versie van Psalm 27, passend bij de geloofsoriëntatie van de Pauluskerk.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Mijn licht, mijn heil is Hij, mijn God en HERE!"
       }
     ],
     "weerklank": [
-      {
-        "nummer": "18",
-        "titel": "Er is uit ’s werelds duistere wolken",
-        "type_match": "Schriftlezing",
-        "karakter": "Statig/Hoopvol",
-        "toelichting": "Een klassieke verwerking van Jesaja 9. Het licht dat de onderdrukking beëindigt.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "41",
-        "titel": "Jezus die langs het water liep",
-        "type_match": "Schriftlezing",
-        "karakter": "Eenvoudig/Verhalend",
-        "toelichting": "De roeping aan de zee van Galilea (Matt. 4) op een bekende melodie.",
-        "suggestie_gebruik": "Na het Evangelie"
-      },
-      {
-        "nummer": "73",
-        "titel": "Bewaar de eenheid van Gods Geest",
-        "type_match": "Schriftlezing",
-        "karakter": "Vermanend",
-        "toelichting": "Directe aansluiting bij de oproep van Paulus in 1 Kor. 1 om verdeeldheid te mijden.",
-        "suggestie_gebruik": "Antwoordlied na Epistel"
-      },
       {
         "nummer": "107",
         "titel": "Het volk dat wandelt in het duister",
         "type_match": "Schriftlezing",
         "karakter": "Plechtig",
-        "toelichting": "Focus op de namen van de Messias en de vrede die Hij brengt.",
-        "suggestie_gebruik": "Loflied"
+        "toelichting": "Een directe berijming van de profetie uit Jesaja 9. Onmisbaar voor deze zondag.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Het volk dat wandelt in het duister"
       },
       {
-        "nummer": "231",
-        "titel": "Door de nacht van strijd en zorgen",
-        "type_match": "Thematisch",
-        "karakter": "Pelgrimslied",
-        "toelichting": "Verbindt de eenheid van de kerk met de tocht door de wereldse duisternis.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "359",
-        "titel": "Vrede zij u",
+        "nummer": "73",
+        "titel": "Bewaar de eenheid van Gods Geest,",
         "type_match": "Conceptueel",
-        "karakter": "Zegenend",
-        "toelichting": "De vrede die alle verstand te boven gaat, als antwoord op de onrust in de wereld.",
-        "suggestie_gebruik": "Zending"
+        "karakter": "Vermanend en bemoedigend",
+        "toelichting": "Sluit naadloos aan bij de epistellezing uit 1 Korintiërs over het voorkomen van verdeeldheid.",
+        "suggestie_gebruik": "Lied na de epistellezing",
+        "eerste_regel": "Bewaar de eenheid van Gods Geest,"
       },
       {
-        "nummer": "366",
-        "titel": "Ik heb slechts één houvast",
-        "type_match": "Conceptueel",
-        "karakter": "Belijdend",
-        "toelichting": "Focus op de exclusieve verbondenheid met Christus, wat de basis is voor de eenheid waar Paulus over schrijft.",
-        "suggestie_gebruik": "Na de preek"
-      },
-      {
-        "nummer": "503",
-        "titel": "Blijf mij nabij",
-        "type_match": "Contextueel",
-        "karakter": "Verstild",
-        "toelichting": "Abide with me. De avond/nacht-symboliek die troost biedt in tijden van kou en duisternis (Gaza-context).",
-        "suggestie_gebruik": "Avondgebed / Voorbeden"
-      },
-      {
-        "nummer": "610",
-        "titel": "Ik heb je bij je naam geroepen",
-        "type_match": "Thematisch",
-        "karakter": "Troostend",
-        "toelichting": "De roeping begint bij de doop. God die ons kent en roept.",
-        "suggestie_gebruik": "Doopgedachtenis"
+        "nummer": "41",
+        "titel": "Jezus die langs het water liep",
+        "type_match": "Schriftlezing",
+        "karakter": "Eenvoudig",
+        "toelichting": "De Weerklank-versie van het roepingslied, zeer geschikt voor de gemeentezang.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Jezus die langs het water liep"
       },
       {
         "nummer": "111",
-        "titel": "Nu daagt het in het oosten",
+        "titel": "Nu daagt het in het oosten,",
         "type_match": "Seizoen",
-        "karakter": "Lichtlied",
-        "toelichting": "Klassiek Epifanie-lied over het licht dat de volken verblijdt.",
-        "suggestie_gebruik": "Opening"
+        "karakter": "Lichtvoetig",
+        "toelichting": "Benadrukt de komst van het licht in de wereld, een centraal thema in de Epifaniëtijd.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Nu daagt het in het oosten,"
       }
     ],
     "weerklank_psalmen": [
       {
         "nummer": "27",
-        "titel": "De HERE is mijn licht",
+        "titel": "De HERE is mijn licht, wat kan mij deren?",
         "type_match": "Schriftlezing",
-        "karakter": "Vertrouwend",
-        "toelichting": "De klassieke berijming van de voorgeschreven psalm. 'Voor wie zou ik vrezen?'.",
-        "suggestie_gebruik": "Psalm van de zondag"
+        "karakter": "Klassiek-gereformeerd",
+        "toelichting": "De volledige berijming van Psalm 27, passend bij de confessionele identiteit van de gemeente.",
+        "suggestie_gebruik": "Psalm van de zondag",
+        "eerste_regel": "De HERE is mijn licht, wat kan mij deren?"
       },
       {
-        "nummer": "133",
-        "titel": "Hoe goed is ’t als er broeders wonen",
-        "type_match": "Schriftlezing",
-        "karakter": "Harmonieus",
-        "toelichting": "De ultieme psalm over eenheid, passend bij 1 Korintiërs 1.",
-        "suggestie_gebruik": "Antwoordlied"
-      },
-      {
-        "nummer": "43",
-        "titel": "Zend, HEER, uw licht en waarheid",
+        "nummer": "11a",
+        "titel": "Bij U, HEER, wil ik schuilen.",
         "type_match": "Thematisch",
-        "karakter": "Smeekbede",
-        "toelichting": "Vraagt om Gods licht als gids, passend bij de roeping om te volgen.",
-        "suggestie_gebruik": "Gebed om het Woord"
-      },
-      {
-        "nummer": "36",
-        "titel": "Want bij U is de bron des levens",
-        "type_match": "Thematisch",
-        "karakter": "Lofprijzend",
-        "toelichting": "'In uw licht zien wij het licht'. De kern van Epifanie.",
-        "suggestie_gebruik": "Gloria"
-      },
-      {
-        "nummer": "18",
-        "titel": "Gij doet mijn lamp schijnen",
-        "type_match": "Thematisch",
-        "karakter": "Krachtig",
-        "toelichting": "God die de duisternis van de gelovige verlicht.",
-        "suggestie_gebruik": "Dankzegging"
-      },
-      {
-        "nummer": "147",
-        "titel": "Hij geeft de sneeuw als wol",
-        "type_match": "Verrassend",
-        "karakter": "Natuur/Context",
-        "toelichting": "Verbindt de winterse kou (actualiteit) met Gods macht over de elementen en Zijn zorg voor de stad (Jeruzalem/Gouda).",
-        "suggestie_gebruik": "Collectemoment"
-      },
-      {
-        "nummer": "122",
-        "titel": "Om de broeders en de vrienden",
-        "type_match": "Conceptueel",
-        "karakter": "Vredelievend",
-        "toelichting": "Bidt om vrede voor de stad en eenheid onder de gelovigen.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "4",
-        "titel": "Verhef over ons het licht",
-        "type_match": "Thematisch",
-        "karakter": "Rustgevend",
-        "toelichting": "Vraagt om Gods licht over ons gelaat, wat meer vreugde geeft dan koren en wijn.",
-        "suggestie_gebruik": "Avondmaalslied"
-      },
-      {
-        "nummer": "119",
-        "titel": "Uw woord is een lamp",
-        "type_match": "Thematisch",
-        "karakter": "Leidinggevend",
-        "toelichting": "Het Woord als het licht op het pad van de discipel.",
-        "suggestie_gebruik": "Voor de schriftlezing"
-      },
-      {
-        "nummer": "86",
-        "titel": "Hoor mij, HEER",
-        "type_match": "Conceptueel",
-        "karakter": "Ootmoedig",
-        "toelichting": "Vraagt om een onverdeeld hart ('Maak mijn hart één'), wat aansluit bij de roep om eenheid.",
-        "suggestie_gebruik": "Kyrie"
+        "karakter": "Geborgen",
+        "toelichting": "Verwoordt het verlangen naar veiligheid bij God, wat aansluit bij de 'huiskamer'-visie van de gemeente.",
+        "suggestie_gebruik": "Gebedslied",
+        "eerste_regel": "Bij U, HEER, wil ik schuilen."
       }
     ]
   },
