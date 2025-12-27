@@ -397,6 +397,7 @@ files_to_read = [
     ("05_interpretatieve_synthese", "synthese"),
     ("06_actueel_wereldnieuws", "wereldnieuws"),
     ("07_politieke_orientatie", "politieke_orientatie"),
+    ("07a_wetslezing_voorstel", "wetslezing_voorstel"),
     ("08a_exegese", "exegese"),
     ("08c_commentaries", "commentaren"),
     ("09_kunst_cultuur", "kunst_cultuur"),
@@ -826,6 +827,7 @@ def update_summary(output_dir: Path):
                 data = json.load(f)
 
             new_analyses = [
+                ("07a_wetslezing_voorstel", "Wetslezing, Psalm en Genadeverkondiging"),
                 ("08a_exegese", "Exegese van de Schriftlezingen"),
                 ("08c_commentaries", "Exegetische Diepgang (Commentaren)"),
                 ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
@@ -990,6 +992,7 @@ def main():
     print("\n" + "=" * 60 + f"\nVERDIEPING STARTEN MET MODEL: {MODEL_NAME}\n" + "=" * 60)
 
     analysis_definitions = [
+        ("07a_wetslezing_voorstel", "Wetslezing, Psalm en Genadeverkondiging"),
         ("08a_exegese", "Exegese van de Schriftlezingen"),
         ("08c_commentaries", "Exegetische Diepgang (Commentaren)"),
         ("09_kunst_cultuur", "Kunst, Cultuur en Film"),
@@ -1047,7 +1050,8 @@ def main():
         save_log(LOGS_DIR, name, full_prompt)
 
         # Gebruik temperature 0.8 voor alle gebeden, preken en illustraties
-        is_creative = (name.startswith("14_gebeden") or
+        is_creative = (name == "07a_wetslezing_voorstel" or
+                      name.startswith("14_gebeden") or
                       name.startswith("15_bezinningsmoment") or
                       name.startswith("15_kindermoment") or
 
