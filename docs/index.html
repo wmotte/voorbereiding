@@ -2887,6 +2887,11 @@
                         .filter(k => {
                             // Skip 'kerkelijke_context' and 'bronnen_gebruikt' in sociaal-maatschappelijke context
                             if ((k === 'kerkelijke_context' || k === 'bronnen_gebruikt') && key === '02_sociaal_maatschappelijke_context') return false;
+                            // Only show specific items in Beeldgeneratie (prompts) menu
+                            if (key === '20_midjourney_prompts') {
+                                const allowedFields = ['midjourney_prompts', 'gebruiksinstructies', 'technische_notities'];
+                                return allowedFields.includes(k);
+                            }
                             return true;
                         })
                         .slice(0, 12); // Limit to 12 subsections
