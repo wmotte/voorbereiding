@@ -4336,385 +4336,64 @@
     ]
   },
   "20_midjourney_prompts": {
-    "liturgische_context": {
-      "positie_kerkelijk_jaar": {
-        "zondag_naam": "1e zondag na Epifanie (Doop van de Heer)",
-        "liturgische_periode": "Epifaniëntijd",
-        "weken_tot_hoofdfeest": "Opmaat naar de Lijdenstijd (begint 18 februari 2026)",
-        "leesrooster_jaar": "A",
-        "dominant_evangelie": "Matteüs"
+    "preek_titel": "De Stem boven het Water",
+    "schriftlezing": "Matteüs 3:13-17 & Jesaja 42:1-7",
+    "liturgische_periode": "Epifaniëntijd (Doop van de Heer)",
+    "kernthema": "Identiteit ontvangen in plaats van bevechten: Gods solidariteit in de diepte.",
+    "midjourney_prompts": [
+      {
+        "volgorde": 1,
+        "homiletische_functie": "Lowry: Oops (De verstoring / Het probleem)",
+        "moment_in_preek": "De inleiding, schets van de 'januari-blues' en de koude realiteit van het leven in de polder. Het gevoel van leegte na de feestdagen en de druk van het 'moeten'.",
+        "visuele_intentie": "De kijker moet de kou en de verlatenheid voelen, maar ook de bekende sfeer van het polderlandschap rond Waddinxveen. Het water is hier nog donker en gesloten.",
+        "prompt_nl": "Aquarel, een somber winterpolderlandschap met een rechte vaart die verdwijnt in grijze mist, gedempte blauw- en grijstinten, kale knotwilgen die weerspiegelen in donker stilstaand water, sfeer van stilte en wachten.",
+        "prompt_en": "watercolor painting, bleak winter polder landscape with a straight canal disappearing into gray mist, muted blues and cold grays, bare pollard willows reflecting in dark stagnant water, atmosphere of silence and waiting, soft edges, negative space in the overcast sky, --ar 16:9",
+        "kleuren_sfeer": "Cool grays, muted blues, damp atmosphere, melancholic",
+        "symboliek": "Het donkere water staat voor de chaos en de sleur van het bestaan (Psalm 29) waar nog geen stem over heeft geklonken."
       },
-      "traditionele_naam": {
-        "latijnse_naam": "In excelso throno",
-        "oorsprong": "Naar de historische introïtus. De focus ligt echter volledig op de 'Doop van de Heer' als openbaringsmoment.",
-        "nederlandse_vertaling": "Op een hoge troon",
-        "volksnamen": [
-          "Doop van de Heer",
-          "Zondag na Driekoningen"
-        ]
+      {
+        "volgorde": 2,
+        "homiletische_functie": "Lowry: Ugh (De complicatie / De diepte)",
+        "moment_in_preek": "De focus op Jezus die de Jordaan in stapt. Niet een schoon ritueel, maar solidariteit met de modder van het menselijk bestaan. Hij daalt af.",
+        "visuele_intentie": "De fysieke sensatie van het 'kopje onder gaan' en de aanraking met de aarde. Het contrast tussen menselijke kwetsbaarheid en de elementen.",
+        "prompt_nl": "Aquarel, close-up van blote voeten die staan aan de rand van troebel rivierwater, rimpelingen vervormen de weerspiegeling, aardetinten die overgaan in diep indigoblauw water, gevoel van aarzeling en overgave, ruwe textuur van de oever.",
+        "prompt_en": "watercolor painting, close-up of bare feet standing at the edge of muddy river water, ripples distorting the reflection, earth tones blending into deep indigo water, sense of hesitation and surrender, rough texture of the riverbank contrasting with the fluidity of water, soft wash technique, --ar 16:9",
+        "kleuren_sfeer": "Earth tones (ochre, umber), deep indigo, murky greens",
+        "symboliek": "De voeten in de modder symboliseren de incarnatie: God die niet boven de ellende blijft zweven, maar erin gaat staan ('alle gerechtigheid vervullen')."
       },
-      "bijzondere_zondag_pkn": {
-        "is_bijzonder": true,
-        "naam": "Doop van de Heer",
-        "toelichting": "Een scharniermoment: Jezus treedt uit de anonimiteit van Nazareth in de openbaarheid van de Jordaan. Het is een feest van identiteit en trinitarische openbaring."
+      {
+        "volgorde": 3,
+        "homiletische_functie": "Lowry: Aha (De wending / Het inzicht)",
+        "moment_in_preek": "De verbinding met Jesaja 42: 'Het geknakte riet zal hij niet verbreken'. De openbaring dat Gods kracht zich toont in zachtmoedigheid en licht.",
+        "visuele_intentie": "Hoop en tederheid. Het beeld moet de tekst uit Jesaja visueel maken zonder letterlijk Jezus af te beelden. Het licht breekt door, maar zacht.",
+        "prompt_nl": "Aquarel, een enkele geknakte rietstengel die over het water buigt maar niet breekt, verlicht door een zacht warm goudkleurig licht dat door een koele blauwe atmosfeer breekt, etherische gloed.",
+        "prompt_en": "watercolor painting, a single bruised reed bending over water but not breaking, illuminated by a soft warm golden light breaking through a cool blue atmosphere, ethereal glow, delicate brushwork showing the fragility of the plant, light washing over the darkness without harsh beams, --ar 16:9",
+        "kleuren_sfeer": "Soft gold, pale yellow, contrasting with the earlier cool blues",
+        "symboliek": "Het riet is de kwetsbare mens (de hoorder), het licht is de stem van de Vader die bevestigt en niet veroordeelt."
       },
-      "liturgische_kleur": {
-        "kleur": "wit",
-        "symboliek": "De kleur van het licht, de reinheid en de feesten van Christus. Het verwijst naar de hemelse heerlijkheid die doorbreekt boven de Jordaan.",
-        "praktische_suggesties": [
-          "Wit antependium.",
-          "De doopvont centraal en geopend (zichtbaar water).",
-          "Eventueel een schikking met riet (verwijzend naar de Jordaan en Jesaja 42)."
-        ]
-      },
-      "lezingen": {
-        "eerste_lezing": {
-          "referentie": "Jesaja 42:1-7",
-          "thema": "De eerste Knecht-zang: Gods uitverkorene brengt het recht niet met geweld, maar met zachtmoedigheid ('het geknakte riet')."
-        },
-        "epistel": {
-          "referentie": "Handelingen 10:34-38",
-          "thema": "Petrus getuigt hoe God Jezus van Nazareth gezalfd heeft met de Heilige Geest en met kracht."
-        },
-        "evangelie": {
-          "referentie": "Matteüs 3:13-17",
-          "thema": "De doop van Jezus: Zijn solidariteit met zondaren ('alle gerechtigheid vervullen') en de bevestiging door de Vader ('Dit is mijn geliefde Zoon')."
-        },
-        "psalm": {
-          "referentie": "Psalm 29",
-          "thema": "De stem van de HEER boven de wateren. Een loflied op Gods majesteit in de storm, resonerend met de stem uit de hemel."
-        },
-        "thematische_samenhang": "De rode draad is de 'aanwijzing': Wie is deze Jezus? Jesaja schetst het profiel, Matteüs toont de Persoon, Handelingen bevestigt de impact. De stem van de Vader ('Mijn Zoon') is het antwoord op de vraag van de eeuwen."
-      },
-      "thematiek": {
-        "centraal_thema": "Identiteit en Solidariteit: De Zondeloze die in de rij van zondaars gaat staan en daar wordt gekroond tot Geliefde Zoon.",
-        "stemming": "Plechtig, verwonderd, maar ook intiem (de Vaderstem).",
-        "karakter_zondag": "Epifanie: God laat zien wie Hij is door mens te worden in onze diepte.",
-        "centrale_geloofsvragen": [
-          "Waarom laat de zondeloze Jezus zich dopen?",
-          "Wat betekent het om 'geliefd kind' te zijn voordat je iets gepresteerd hebt?",
-          "Hoe verhoudt Gods zachtmoedigheid (Jesaja) zich tot de hardheid van de wereld?"
-        ]
+      {
+        "volgorde": 4,
+        "homiletische_functie": "Lowry: Whee/Yeah (De ervaring en het gevolg)",
+        "moment_in_preek": "De nieuwe identiteit. Je komt het water uit als 'Geliefd Kind'. Frisheid, reiniging en een open horizon.",
+        "visuele_intentie": "Bevrijding en nieuwheid. Het water is niet langer donker/bedreigend, maar reinigend en levend. De wind (Geest) is zichtbaar.",
+        "prompt_nl": "Aquarel, wit linnen doek hangend aan een lijn wapperend in de wind tegen een bleekblauwe lucht, waterdruppels die van de stof vallen en het zonlicht vangen als diamanten, gevoel van zuivering en frisheid.",
+        "prompt_en": "watercolor painting, white linen fabric hanging on a line blowing in the wind against a pale blue sky, water droplets falling from the cloth catching the sunlight like diamonds, sense of purification and freshness, movement and airiness, high key lighting, minimalist composition, --ar 16:9",
+        "kleuren_sfeer": "High key, white, sky blue, sparkling accents",
+        "symboliek": "Het witte kleed verwijst naar de doopjurk/het nieuwe leven, de wind naar de Heilige Geest (Pneuma), de druppels naar de zegen die overblijft."
       }
-    },
-    "sociaal_maatschappelijke_context": {
-      "demografisch": {
-        "bevolkingsomvang": "Ca. 35.000 inwoners",
-        "leeftijdsopbouw": {
-          "jongeren": "Relatief veel jonge gezinnen (Park Triangel).",
-          "ouderen": "Vergrijzing in de oude kernen (Noord).",
-          "toelichting": "Waddinxveen is een groeigemeente met een mix van oorspronkelijke dorpelingen en 'import' uit de Randstad."
-        },
-        "huishoudens": "Veel gezinnen met kinderen, passend bij het profiel van de nieuwbouwwijken.",
-        "herkomst_diversiteit": "Toenemend, maar de Bethelkerk is overwegend wit en autochtoon, met een groeiende bewustwording van de multiculturele samenleving."
-      },
-      "economisch": {
-        "belangrijkste_sectoren": [
-          "Logistiek",
-          "Bouw",
-          "Glastuinbouw",
-          "Dienstverlening"
-        ],
-        "werkgevers": [
-          "Nedcargo",
-          "Lidl DC",
-          "Lokale MKB"
-        ],
-        "economische_vooruitzichten": "Stabiel, maar druk op de ruimte en infrastructuur (A12/Gouwe).",
-        "recente_ontwikkelingen": [
-          "Uitbreiding bedrijventerreinen",
-          "Woningbouwopgave."
-        ]
-      },
-      "sociale_structuur": {
-        "verenigingsleven": "Sterk (sport, muziek, kerk).",
-        "sociale_cohesie": "In de kerkelijke gemeenschap zeer sterk ('ons kent ons'), daarbuiten soms fragmentatie door snelle groei.",
-        "voorzieningen": "Goed voorzieningenniveau (Gouweplein).",
-        "woningmarkt": "Krapte, hoge prijzen, veel nieuwbouw (Triangel) die voor starters lastig bereikbaar is."
-      },
-      "recente_gebeurtenissen": [
-        {
-          "gebeurtenis": "Start van het nieuwe jaar/schooljaar na de kerstvakantie.",
-          "impact": "De 'gewone' sleur begint weer. Goede voornemens staan onder druk."
-        },
-        {
-          "gebeurtenis": "Lokale discussies over verkeersdrukte (Hefbrug/Coenecoop).",
-          "impact": "Ergernis en gevoel van 'vaststaan' (metaforisch bruikbaar)."
-        }
+    ],
+    "gebruiksinstructies": {
+      "midjourney_basis_commando": "Type in Discord: /imagine prompt: [kopieer de Engelse tekst]",
+      "optionele_parameters": [
+        "--stylize 250 (voor iets meer artistieke flair)",
+        "--chaos 10 (voor subtiele variaties)"
       ],
-      "kerkelijke_context": {
-        "denominaties": [
-          "PKN (Hervormd/Gereformeerd)",
-          "HHK",
-          "GerGem",
-          "NGK"
-        ],
-        "positie_gemeente": "Bethelkerk (Hervormde Wijkgemeente Noord): Gereformeerde Bond signatuur. Schriftgetrouw, liturgisch traditioneel (Psalmen 1773, Weerklank), maar pastoraal betrokken.",
-        "recente_ontwikkelingen": [
-          "Samenwerking in leerhuisverband",
-          "Zorg om kerkverlating jongeren."
-        ]
-      }
+      "volgorde_gebruik": "Gebruik de beelden chronologisch met de preek mee. Beeld 1 tijdens de inleiding/contextschets. Beeld 2 bij de uitleg van de doop van Jezus. Beeld 3 bij de kernboodschap over Jesaja/Identiteit. Beeld 4 als 'uitsmijter' en achtergrond bij de zegen."
     },
-    "waardenorientatie": {
-      "vijf_vs": {
-        "visioenen": [
-          "Een levende gemeente blijven waar het Woord centraal staat en jongeren behouden blijven."
-        ],
-        "verlangens": [
-          "Zekerheid in een onzekere wereld. Geestelijke verdieping die verder gaat dan vorm."
-        ],
-        "vreugden": [
-          "De onderlinge verbondenheid, de volle kerkdiensten, het zingen."
-        ],
-        "verdriet": [
-          "Secularisatie in eigen gezin, ziekte en rouw in de gemeenschap."
-        ],
-        "vragen": [
-          "Hoe houd ik stand als christen in een seculiere werkomgeving?"
-        ]
-      },
-      "trendanalyse": {
-        "mesotrends": [
-          "Individualisering vs. Gemeenschapszin",
-          "Prestatiesamenleving (burn-out onder jongeren)."
-        ],
-        "microtrends": [
-          "Januari-dip: behoefte aan licht en perspectief na de feestdagen."
-        ]
-      },
-      "motivaction_milieus": {
-        "dominant": [
-          "Traditionele burgerij (orde, plicht, traditie)",
-          "Nieuwe conservatieven (bewuste keuze voor orthodoxie)."
-        ],
-        "spanningen": [
-          "Tussen behoud van het oude en noodzakelijke vernieuwing om aansluiting te houden."
-        ]
-      },
-      "homiletische_implicaties": {
-        "taalveld": "Bijbels-realistisch, verbondsmatig, maar met oog voor de existentiële twijfel.",
-        "te_vermijden": "Oppervlakkigheid, politiek activisme zonder theologische fundering.",
-        "kansrijke_beelden": [
-          "De stem die identiteit geeft",
-          "Water als grensgebied",
-          "Het geknakte riet (herkenning van kwetsbaarheid)."
-        ]
-      }
-    },
-    "geloofsorientatie": {
-      "ervaringsgebieden": {
-        "schepping": "Waardering voor de polder en natuur, maar ook besef van kwetsbaarheid (waterbeheer).",
-        "eindigheid": "Dood en rouw worden serieus genomen en liturgisch ingebed.",
-        "menselijk_tekort": "Besef van zonde is aanwezig, maar dreigt soms te verworden tot een algemeen minderwaardigheidsgevoel.",
-        "lijden": "Wordt gezien als beproeving of gevolg van de gebrokenheid, roept op tot gebed.",
-        "gemeenschap": "Diaconaal sterk, zorg voor elkaar is vanzelfsprekend."
-      },
-      "geloofstaal_analyse": {
-        "gangbaar": [
-          "Verbond",
-          "Genade",
-          "Roeping",
-          "Zaligheid"
-        ],
-        "versleten": [
-          "Bekering (soms te smal opgevat)",
-          "Wereld (als vijandbeeld)"
-        ],
-        "onbekend": [
-          "Epifanie (als term)",
-          "Solidariteit (als theologisch concept)"
-        ],
-        "vertrouwdheid_liturgie": "Hoog. Men kent de vormen en verwacht een ordelijk verloop."
-      },
-      "homiletische_implicaties": {
-        "advies": "Gebruik de vertrouwde woorden ('Mijn geliefde Zoon') om de diepere laag van onvoorwaardelijke acceptatie aan te boren. Prik door de religieuze buitenkant heen naar het hart."
-      }
-    },
-    "interpretatieve_synthese": {
-      "congruentie_analyse": {
-        "officieel": "Jezus is de Zoon van God, onze Verlosser.",
-        "geleefd": "Ik moet mijn best doen om een goed christen te zijn. De genade is er, maar ik moet het wel waarmaken.",
-        "spanning": "Tussen 'Sola Gratia' (leer) en 'Prestatiedruk' (leven/cultuur)."
-      },
-      "verbindingspunten": {
-        "aansluiting": "De behoefte aan een vast fundament (de Stem) in een vloeibare tijd.",
-        "beelden": [
-          "De Jordaan als het afvoerputje van de samenleving waar Jezus instapt.",
-          "Het identiteitsbewijs dat God afgeeft."
-        ],
-        "brugverhalen": [
-          "De stagiair die bang is om te falen vs. de Zoon die bevestigd wordt vóór Hij begint."
-        ]
-      },
-      "confrontatiepunten": {
-        "bijbeltekst": "Johannes de Doper wil Jezus tegenhouden ('U bent te goed'). Wij willen God vaak 'netjes' houden, maar Hij kiest voor de modder.",
-        "profetisch": "Zijn wij als gemeente ook zo'n 'Knecht' die het geknakte riet niet breekt, of oordelen we snel?"
-      },
-      "homiletische_aanbevelingen": {
-        "toon": "Pastoraal-theologisch. Warm, maar met gezag.",
-        "kern": "De doop van Jezus is geen nieuwe wet, maar de openbaring van Gods hart. Hij identificeert zich met ons falen, zodat wij ons kunnen identificeren met Zijn Zoonschap."
-      }
-    },
-    "actueel_wereldnieuws": {
-      "wereldgebeurtenissen": [
-        {
-          "titel": "Voortdurende oorlog in Oekraïne/Gaza",
-          "impact": "Gevoel van machteloosheid en uitzichtloosheid. Vraagt om de 'Vredevorst' en het 'Recht' uit Jesaja 42."
-        },
-        {
-          "titel": "Klimaat/Wateroverlast (fictief/verwacht jan 2026)",
-          "impact": "Resoneert met Psalm 29 (God boven de watervloed) en de lokale poldercontext."
-        }
-      ],
-      "nederlands_nieuws": [
-        {
-          "titel": "Start nieuwe politieke/maatschappelijke jaar",
-          "impact": "De hardheid van het debat staat in contrast met de zachtmoedigheid van de Knecht ('Hij schreeuwt niet')."
-        }
-      ],
-      "suggesties_predikant": {
-        "in_preek": "Contrast tussen de schreeuwende wereldleiders en de stille Knecht. De zekerheid van de doop in onzekere tijden.",
-        "voorbeden": "Voor vrede, voor slachtoffers van geweld, voor hen die zich 'geknakt' voelen."
-      }
-    },
-    "exegese": {
-      "jesaja_42": {
-        "kern": "De eerste Ebed-Jahwe zang. God presenteert Zijn dienaar. Uniek is de methode: niet met geweld of geschreeuw, maar met behoedzaamheid ('geknakt riet niet breken').",
-        "theologie": "Gods recht (mishpat) is herstellend, niet vernietigend. De Geest rust op Hem voor deze taak."
-      },
-      "mattheus_3": {
-        "kern": "De doop. Dialoog Jezus-Johannes (uniek voor Matteüs). 'Alle gerechtigheid vervullen' = Gods reddingsplan uitvoeren door solidariteit met zondaars.",
-        "theofanie": "Open hemel, Geest als duif, Stem van de Vader. Trinitarisch hoogtepunt.",
-        "betekenis": "Jezus wordt niet Zoon door de doop (adoptianisme), maar wordt openbaar gemaakt als de Zoon (epifanie)."
-      },
-      "samenhang": "Jesaja profeteert het karakter (zachtmoedig, Geest-dragend), Matteüs toont de vervulling en de goddelijke bevestiging."
-    },
-    "commentaren": {
-      "reflectie": "De doop is de inauguratie van de lijdende Knecht. Jezus kiest hier de weg van het kruis (de Jordaan als doodswater). De stem van de Vader is de brandstof voor deze weg.",
-      "bronnen": [
-        "Calvijn (Institutie)",
-        "Bonhoeffer (Navolging - solidariteit)",
-        "N.T. Wright (Jesus and the Victory of God)"
-      ]
-    },
-    "kunst_cultuur": {
-      "beeldende_kunst": [
-        {
-          "werk": "Egbert Modderman - De Doop van Jezus",
-          "beschrijving": "Rauw, menselijk, zonder opsmuk. Past bij de nuchtere aard van Waddinxveen.",
-          "gebruik": "Projectie tijdens de lezing."
-        },
-        {
-          "werk": "Piero della Francesca - De Doop van Christus",
-          "beschrijving": "Verstild, harmonieus. Toont de vrede die neerdaalt.",
-          "gebruik": "Meditatief moment."
-        }
-      ],
-      "muziek": [
-        {
-          "werk": "Bach - Christ unser Herr zum Jordan kam (BWV 7)",
-          "beschrijving": "Klassiek luthers koraal, past in de traditie.",
-          "gebruik": "Luisterlied of orgelspel."
-        },
-        {
-          "werk": "Sela - Ik ben",
-          "beschrijving": "Modern, verbindend. 'Ik ben die Ik ben'.",
-          "gebruik": "Als de gemeente ook modernere liederen zingt."
-        }
-      ],
-      "literatuur": [
-        {
-          "werk": "Marilynne Robinson - Gilead",
-          "citaat": "Over de heiligheid van het water en de zegen. 'Existence is the little halo'.",
-          "toepassing": "Illustratie van de sacramentele waarde van het gewone."
-        }
-      ]
-    },
-    "focus_en_functie": {
-      "keuze": "Optie 1: De zekerheid van de Stem (Pastoraal-Vertroostend)",
-      "doel": "De hoorders laten rusten in de zekerheid dat hun identiteit verankerd ligt in Gods liefde ('Mijn geliefde kind'), voorafgaand aan hun prestaties of falen.",
-      "kernzin": "In de Jordaan stapt Jezus in onze diepte, zodat wij kunnen horen wat Hij hoort: 'Jij bent mijn geliefde kind'."
-    },
-    "representatieve_hoorders": {
-      "personas": [
-        {
-          "naam": "Daan (19)",
-          "profiel": "MBO-student, zoekt authenticiteit. Voelt prestatiedruk.",
-          "preek_impact": "Heeft behoefte aan de boodschap: 'Je bent goed genoeg, niet om wat je doet, maar om wie je bent in Christus'."
-        },
-        {
-          "naam": "Willemijn (34)",
-          "profiel": "Jonge moeder, Park Triangel. Moe, perfectionistisch.",
-          "preek_impact": "Zoekt rust. De 'duif' en de zachte stem zijn balsem voor haar ziel. Ze hoeft het niet alleen te doen."
-        },
-        {
-          "naam": "Gert-Jan (58)",
-          "profiel": "Ouderling, bezorgd over de kerk. Houdt van degelijke leer.",
-          "preek_impact": "Wil horen dat het fundament (Verbond/Drie-eenheid) vastligt, ondanks de wankele tijden."
-        }
-      ]
-    },
-    "midjourney_prompts": {
-      "preek_titel": "De Stem die alles anders maakt",
-      "schriftlezing": "Matteüs 3:13-17 & Jesaja 42:1-7",
-      "liturgische_periode": "Epifanie",
-      "kernthema": "Identiteit en Solidariteit: God daalt af om ons te bevestigen.",
-      "midjourney_prompts": [
-        {
-          "volgorde": 1,
-          "homiletische_functie": "Lowry: Oops (verstoring) / Buttrick: Move 1 (De menselijke conditie)",
-          "moment_in_preek": "De inleiding: we schetsen de donkere, koude rivier van het leven, de modder, de prestatiedruk, de chaos (Psalm 29).",
-          "visuele_intentie": "De kijker moet de kou en de troebelheid voelen, de onrust van het water dat nog niet geheiligd is.",
-          "prompt_nl": "Aquarel van een donkere, stromende rivier bij schemering, modderige oevers, dreigende sfeer, tinten van grijs en bruin, ruwe penseelstreken.",
-          "prompt_en": "watercolor painting, murky river flowing rapidly at twilight, muddy banks, turbulent dark water reflecting grey sky, atmosphere of coldness and unease, rough brushstrokes, muted earth tones and deep indigos, --ar 16:9",
-          "kleuren_sfeer": "Donkerblauw, grijs, modderbruin. Koud en onherbergzaam.",
-          "symboliek": "Het water als chaosmacht en als beeld van onze zonden/zorgen."
-        },
-        {
-          "volgorde": 2,
-          "homiletische_functie": "Lowry: Ugh (complicatie) / Buttrick: Move 2 (De ontmoeting)",
-          "moment_in_preek": "Jezus stapt het water in. Johannes aarzelt. Het moment van contact tussen de Heilige en de zondaar.",
-          "visuele_intentie": "De spanning van de ontmoeting. Iemand die afdaalt. Nederigheid.",
-          "prompt_nl": "Aquarel, close-up van voeten die in troebel water stappen, rimpelingen die zich verspreiden, zacht licht dat het wateroppervlak raakt, focus op de beweging van afdaling.",
-          "prompt_en": "watercolor painting, close-up perspective of bare feet stepping into rippled water, breaking the surface tension, soft light catching the splashes, sense of gentle descent and humility, focus on the interaction between skin and water, warm skin tones against cool water, --ar 16:9",
-          "kleuren_sfeer": "Overgang van koel water naar warm menselijk contact.",
-          "symboliek": "Incarnatie en solidariteit: God raakt onze werkelijkheid aan."
-        },
-        {
-          "volgorde": 3,
-          "homiletische_functie": "Lowry: Aha (plotwending) / Buttrick: Move 3 (De openbaring)",
-          "moment_in_preek": "De hemel gaat open. De Geest daalt neer. Niet als een bliksemschicht, maar als een zachte duif/ademtocht.",
-          "visuele_intentie": "Het doorbreken van het licht. De verbinding tussen boven en beneden hersteld.",
-          "prompt_nl": "Aquarel, een straal van zacht, diffuus wit-goud licht dat door een wolkendek breekt en het water raakt, een suggestie van een vleugelvorm in het licht (abstract), sfeer van vrede.",
-          "prompt_en": "watercolor painting, shaft of soft diffuse white-gold light breaking through heavy clouds, illuminating a patch of water below, abstract suggestion of a wing shape within the light, ethereal atmosphere, vertical composition element connecting sky and water, sense of sudden peace, --ar 16:9",
-          "kleuren_sfeer": "Wit, goud, lichtblauw. Helderheid en openheid.",
-          "symboliek": "De open hemel en de neerdalende Geest."
-        },
-        {
-          "volgorde": 4,
-          "homiletische_functie": "Lowry: Whee (evangelie) / Buttrick: Move 4 (De zending)",
-          "moment_in_preek": "De stem klinkt: 'Geliefde Zoon'. Het riet wordt niet verbroken maar bloeit op. Wij gaan de wereld weer in met deze identiteit.",
-          "visuele_intentie": "Hoop, herstel, vruchtbaarheid. Het geknakte riet dat weer recht staat in het licht.",
-          "prompt_nl": "Aquarel, rietstengels langs de oever die oplichten in de morgenzon, één geknakte stengel die ondersteund wordt door licht, frisse groene en gouden tinten, sfeer van nieuw begin.",
-          "prompt_en": "watercolor painting, reeds along a riverbank illuminated by warm morning sun, focus on a single bent reed that is glowing with light rather than breaking, fresh green and gold hues, dewdrops sparkling, sense of restoration and resilience, negative space for breathing room, --ar 16:9",
-          "kleuren_sfeer": "Groen, goud, warm geel. Vitaal en hoopvol.",
-          "symboliek": "De belofte van Jesaja 42 vervuld: herstel en nieuw leven."
-        }
-      ],
-      "gebruiksinstructies": {
-        "midjourney_basis_commando": "Type in Discord: /imagine prompt: [prompt_en]",
-        "optionele_parameters": [
-          "--stylize 250 (voor meer artistieke flair)",
-          "--chaos 10 (voor subtiele variatie)"
-        ],
-        "volgorde_gebruik": "Gebruik beeld 1 bij de inleiding (de donkere wereld), beeld 2 bij de doopbeschrijving, beeld 3 bij de theofanie (de stem), en beeld 4 bij de toepassing/zegen."
-      },
-      "technische_notities": [
-        "De aquarel-stijl zorgt voor eenheid en voorkomt dat het te 'hard' of fotorealistisch wordt, wat goed past bij de mystieke aard van de doop.",
-        "Zorg dat het wit in de afbeeldingen (negative space) overeenkomt met de witte liturgische kleur van de zondag."
-      ]
-    }
+    "technische_notities": [
+      "De keuze voor aquarel (watercolor) is bewust: het medium water past perfect bij het thema doop, en de vloeibaarheid voorkomt dat de beelden te statisch of dogmatisch worden.",
+      "Als de beelden te donker uitvallen, voeg 'high key lighting' toe aan de prompts."
+    ]
   },
   "Bijbelteksten": {
     "naardense_bijbel": [
