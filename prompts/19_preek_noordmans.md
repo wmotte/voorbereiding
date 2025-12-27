@@ -129,7 +129,7 @@ Gebruik het bijgevoegde dossier om de preek te aarden:
 
 ## VOORBEELDFRAGMENTEN
 
-{{voorbeeld_gebeden}}
+{{voorbeeld_preken}}
 
 ## JSON Output Schema
 

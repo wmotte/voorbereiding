@@ -46,7 +46,7 @@ Gebruik deze inzichten om je verhaal te sturen, maar **preek er niet over** in d
 ## Voorbeeldpreken ter inspiratie
 Gebruik de onderstaande fragmenten voor de toon en cadans (niet letterlijk overnemen, maar proef de urgentie):
 
-{{voorbeeld_gebeden}}
+{{voorbeeld_preken}}
 
 ## JSON Output Schema
 

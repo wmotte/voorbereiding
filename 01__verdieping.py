@@ -1028,10 +1028,10 @@ def main():
         extra_replacements = {}
         if name == "14_gebeden_profetisch": extra_replacements["voorbeeld_gebeden"] = sample_profetische_gebeden()
         elif name == "14_gebeden_dialogisch": extra_replacements["voorbeeld_gebeden"] = sample_dialogische_gebeden()
-        elif name == "16_preek_solle": extra_replacements["voorbeeld_gebeden"] = sample_solle_preken()
-        elif name == "17_preek_jungel": extra_replacements["voorbeeld_gebeden"] = sample_jungel_preken()
+        elif name == "16_preek_solle": extra_replacements["voorbeeld_preken"] = sample_solle_preken()
+        elif name == "17_preek_jungel": extra_replacements["voorbeeld_preken"] = sample_jungel_preken()
         elif name == "18_preek_brueggemann": extra_replacements["voorbeeld_preken"] = sample_brueggemann_preken()
-        elif name == "19_preek_noordmans": extra_replacements["voorbeeld_gebeden"] = sample_noordmans_preken()
+        elif name == "19_preek_noordmans": extra_replacements["voorbeeld_preken"] = sample_noordmans_preken()
 
         task_prompt = load_prompt(f"{name}.md", user_input, extra_replacements)
         analysis_context = build_context_string(previous_analyses, limited=(name == "12_representatieve_hoorders"), excluded_sections=["kunst_cultuur", "kalender", "representatieve_hoorders"] if name.startswith("14_gebeden") else [])

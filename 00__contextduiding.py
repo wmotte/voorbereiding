@@ -124,6 +124,10 @@ def load_prompt(filename: str, user_input: dict) -> str:
     content = content.replace("{{datum}}", user_input.get("datum", ""))
     content = content.replace("{{huidige_datum}}", huidige_datum)
 
+    # Vervang voorbeeld placeholders (als er geen voorbeelden zijn, verwijder de placeholder)
+    content = content.replace("{{voorbeeld_gebeden}}", "")
+    content = content.replace("{{voorbeeld_preken}}", "")
+
     return content
 
 

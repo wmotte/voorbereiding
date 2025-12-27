@@ -222,7 +222,7 @@ THEOLOGISCHE ORIËNTATIE - WAT JÜNGEL ONDERSCHEIDT:
 ## Voorbeeldpreken ter inspiratie
 Gebruik de onderstaande fragmenten voor de toon en cadans (niet letterlijk overnemen):
 
-{{voorbeeld_gebeden}}
+{{voorbeeld_preken}}
 
 ## JSON Output Schema
 
