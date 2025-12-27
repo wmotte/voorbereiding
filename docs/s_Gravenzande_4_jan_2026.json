@@ -1294,10 +1294,107 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 58,
-      "liturgische_balans": "De selectie toont een sterke nadruk op de klassieke Epifanie-thema's (Licht, Wijzen, Koningschap) met een goede balans tussen vreugdevolle lofprijzing en verstilde aanbidding. Er is bewust gezocht naar liederen die de 'duisternis' serieus nemen (passend bij de wereldactualiteit en de donkere dagen) om de impact van het 'Licht' te vergroten. De 'wijzen' zijn goed vertegenwoordigd, evenals de universele reikwijdte van Psalm 72.",
-      "contextuele_reflectie": "In het Westland ('De Glazen Stad'), waar kunstlicht de nacht verdrijft, bieden deze liederen een tegenwicht: het 'Ware Licht' dat niet door mensenhanden is gemaakt. De liederen over gerechtigheid en vrede (Psalm 72) resoneren met de zorgen over de oorlog in Oekraïne en de politieke verschuivingen, terwijl de universele strekking ('alle volken') de lokale 'ons-kent-ons' cultuur uitdaagt tot openheid, passend bij de inclusieve visie van de gemeente."
-    }
+      "aantal_gevonden_totaal": 48,
+      "liturgische_balans": "De selectie zoekt de spanning op tussen de intieme kerstsfeer en de koninklijke, universele claim van Epifanie. Er is bewust gekozen voor een mix van klassieke 'Morgenster'-liederen en missionaire liederen die de 'volken' erbij betrekken. Verrassend is de keuze voor liederen die het licht verbinden met sociale gerechtigheid (Matt 25), als tegenwicht voor een te romantisch sterrenbeeld.",
+      "contextuele_reflectie": "In het Westland ('De Glazen Stad') is licht vaak functioneel en kunstmatig. De geselecteerde liederen over het 'Ware Licht' en de 'Morgenster' (Liedboek 518, HH 532) bieden een theologisch contrast: dit licht is niet maakbaar, maar een genadegave. De nadruk op 'alle volken' (Ps 72, Ef 3) daagt de hechte 'ons-kent-ons' cultuur uit om de blik te verruimen naar de wereld (Oekraïne) en de vreemdeling."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "871",
+        "titel": "Jezus zal heersen waar de zon",
+        "type_match": "Schriftlezing",
+        "karakter": "Triomfantelijk",
+        "toelichting": "De berijming van Psalm 72. 'De koningen van Tarsis en de eilanden zullen geschenken brengen'. Sluit naadloos aan bij de lezingen.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "72",
+        "titel": "Geef, Heer, de koning uwe rechten",
+        "type_match": "Schriftlezing",
+        "karakter": "Smeekbede",
+        "toelichting": "De klassieke Geneefse berijming van Psalm 72. Past bij de bede om gerechtigheid in een onrustige wereld (Oekraïne).",
+        "suggestie_gebruik": "Antwoordpsalm"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "532",
+        "titel": "Jezus is de morgenster",
+        "type_match": "Thematisch",
+        "karakter": "Opwekkend en Fris",
+        "toelichting": "Directe link met de 'ster' uit de lezingen. Een lied dat hoop en verwachting uitstraalt.",
+        "suggestie_gebruik": "Slotlied of kindermoment"
+      },
+      {
+        "nummer": "695",
+        "titel": "Wij willen dat Jezus wordt verhoogd",
+        "type_match": "Conceptueel",
+        "karakter": "Strijdbaar",
+        "toelichting": "Past bij de thematiek van 'Koningschap' en de banier die omhoog gaat voor de volken.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "406",
+        "titel": "Ga je mee op zoek",
+        "type_match": "Schriftlezing",
+        "karakter": "Uitnodigend",
+        "toelichting": "Specifiek geschreven op het verhaal van de wijzen en de ster. 'Ga je mee op zoek naar het Koningskind'.",
+        "suggestie_gebruik": "Kindermoment of Schriftlied"
+      },
+      {
+        "nummer": "378",
+        "titel": "De Heer woont in een stralend licht",
+        "type_match": "Schriftlezing",
+        "karakter": "Majestueus",
+        "toelichting": "Verwijst naar Jesaja 60:19. God als het eeuwige licht dat de zon overbodig maakt.",
+        "suggestie_gebruik": "Lofprijzing / Gloria"
+      },
+      {
+        "nummer": "161",
+        "titel": "Jezus, U bent het licht in ons leven",
+        "type_match": "Thematisch",
+        "karakter": "Aanbiddend",
+        "toelichting": "Focust op Jezus als Licht dat de duisternis verdrijft. Past goed bij de thematiek van 'Licht der Wereld'.",
+        "suggestie_gebruik": "Na de preek"
+      },
+      {
+        "nummer": "198",
+        "titel": "Jezus, hoop van de volken",
+        "type_match": "Contextueel",
+        "karakter": "Verbindend",
+        "toelichting": "Identiek aan Hemelhoog 350. De nadruk op 'volken' (meervoud) is essentieel voor deze zondag.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "532",
+        "titel": "Jezus is de morgenster",
+        "type_match": "Thematisch",
+        "karakter": "Vrolijk",
+        "toelichting": "De titel zegt alles. Een moderne, frisse benadering van het oude thema.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "414",
+        "titel": "Jezus zegt, dat Hij hier van ons verwacht",
+        "type_match": "Conceptueel",
+        "karakter": "Appellerend",
+        "toelichting": "Gaat over 'een lichtje zijn'. Dit maakt de Epifanie praktisch: het licht moet weerkaatst worden door de gemeente.",
+        "suggestie_gebruik": "Zending en zegen"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "571",
+        "titel": "De wijzen, de wijzen",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend",
+        "toelichting": "Hetzelfde lied als Liedboek 520. Vertelt het verhaal van Matteüs 2 accuraat.",
+        "suggestie_gebruik": "Schriftlied"
+      }
+    ],
+    "weerklank_psalmen": []
   },
   "08c_commentaries": {
     "exegese_eerste_lezing": {

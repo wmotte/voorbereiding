@@ -627,9 +627,10 @@ def mcp_tool_to_gemini_function(tool) -> types.FunctionDeclaration:
     )
 
 
-async def verify_hymn_numbers(session: ClientSession, hymn_data: dict) -> dict:
+async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bool = False) -> dict:
     """
-    Verifieer alle liedbundelnummers in de gegenereerde JSON tegen de database.
+    STRIKTE verificatie van alle liedbundelnummers tegen de database.
+
     Retourneert een dict met:
     - verified_data: De geschoonde JSON (alleen correcte liederen)
     - errors: Lijst van fouten/hallucinaties
@@ -641,49 +642,117 @@ async def verify_hymn_numbers(session: ClientSession, hymn_data: dict) -> dict:
     if "analyse" in hymn_data:
         verified_data["analyse"] = hymn_data["analyse"].copy()
 
+    print(f"  Verificatie start voor {len([k for k in hymn_data.keys() if not k.startswith('_')])} bundels...")
+
     # Voor elke bundel
     for bundel_key in ["liedboek_2013", "hemelhoog", "op_toonhoogte", "weerklank", "weerklank_psalmen"]:
         if bundel_key not in hymn_data:
             continue
 
-        verified_songs = []
         songs = hymn_data[bundel_key]
+        if not isinstance(songs, list):
+            if debug:
+                print(f"  ⚠ {bundel_key}: Geen lijst, maar {type(songs)}")
+            continue
 
-        for song in songs:
+        verified_songs = []
+        print(f"  📖 {bundel_key}: {len(songs)} liederen te verifiëren...")
+
+        for idx, song in enumerate(songs, 1):
             nummer = song.get("nummer", "")
             titel = song.get("titel", "")
 
             if not nummer or not titel:
-                errors.append(f"{bundel_key}: Lied zonder nummer of titel overgeslagen")
+                errors.append(f"{bundel_key}: Lied {idx} zonder nummer of titel overgeslagen")
                 continue
 
-            # Query de database voor dit specifieke nummer
-            # Gebruik de Song node properties die we kennen
+            # Query de database - gebruik exact matching
             query = f"""
-            MATCH (s:Song {{nummer: '{nummer}'}})
+            MATCH (s:Song)
+            WHERE s.nummer = '{nummer}'
             RETURN s.nummer as nummer, s.titel as titel
             LIMIT 1
             """
 
             try:
-                result = await session.call_tool("query", {"query": query})
+                # Gebruik 'execute_query' (niet 'query') - dit is de correcte MCP tool naam
+                result = await session.call_tool("execute_query", {"query": query})
                 result_text = result.content[0].text if result.content else ""
 
-                # Parse het resultaat (meestal JSON of text met de data)
-                if result_text and titel in result_text:
-                    # Nummer + titel combo klopt!
-                    verified_songs.append(song)
+                if debug:
+                    print(f"    [{idx}] {nummer} '{titel[:30]}...'")
+                    print(f"         Response: {result_text[:150]}")
+
+                # Parse JSON uit het resultaat
+                db_nummer = None
+                db_titel = None
+
+                # Probeer verschillende JSON formats die de MCP server kan retourneren
+                try:
+                    # Format 1: [{nummer: "X", titel: "Y"}]
+                    result_data = json.loads(result_text)
+                    if isinstance(result_data, list) and len(result_data) > 0:
+                        db_nummer = result_data[0].get("nummer")
+                        db_titel = result_data[0].get("titel")
+                    elif isinstance(result_data, dict):
+                        db_nummer = result_data.get("nummer")
+                        db_titel = result_data.get("titel")
+                except json.JSONDecodeError:
+                    # Format 2: Plain text - probeer titel te extraheren
+                    # Als de response niet leeg is, betekent dat het nummer bestaat
+                    if result_text and len(result_text.strip()) > 5:
+                        # Zoek naar titel in de response (vaak tussen quotes of na "titel:")
+                        titel_match = re.search(r'titel["\']?\s*:\s*["\']?([^"\'}\n]+)', result_text, re.IGNORECASE)
+                        if titel_match:
+                            db_titel = titel_match.group(1).strip()
+                            db_nummer = nummer
+                        else:
+                            # Last resort: als response iets bevat, assume het nummer bestaat
+                            # en gebruik de hele response als titel check
+                            db_titel = result_text.strip()
+                            db_nummer = nummer
+
+                # STRIKTE VERIFICATIE
+                if db_nummer and db_titel:
+                    # Nummer bestaat in database
+                    # Nu: check of titel klopt (case-insensitive, flexibel op eerste 25 chars)
+                    titel_check = titel.lower().strip()[:25]
+                    db_titel_check = db_titel.lower().strip()[:25]
+
+                    # Check overlapping (minstens 80% match)
+                    if titel_check == db_titel_check:
+                        # Perfect match
+                        verified_songs.append(song)
+                        if debug:
+                            print(f"      ✓ VERIFIED (exact)")
+                    elif titel_check in db_titel_check or db_titel_check in titel_check:
+                        # Substring match
+                        verified_songs.append(song)
+                        if debug:
+                            print(f"      ✓ VERIFIED (substring)")
+                    else:
+                        # Titel verschilt te veel = HALLUCINATIE
+                        errors.append(f"❌ HALLUCINATIE: {bundel_key} {nummer} heeft titel '{titel[:40]}' maar DB heeft '{db_titel[:40]}'")
+                        if debug:
+                            print(f"      ✗ TITEL MISMATCH")
+                            print(f"         Expected: '{titel_check}'")
+                            print(f"         Got:      '{db_titel_check}'")
                 else:
-                    # HALLUCINATIE GEDETECTEERD
-                    errors.append(f"❌ HALLUCINATIE: {bundel_key} {nummer} '{titel}' bestaat niet in database")
+                    # Nummer bestaat NIET in database of geen titel gevonden
+                    errors.append(f"❌ HALLUCINATIE: {bundel_key} {nummer} '{titel[:40]}' niet gevonden in database")
+                    if debug:
+                        print(f"      ✗ NOT FOUND (db_nummer={db_nummer}, db_titel={db_titel})")
 
             except Exception as e:
-                errors.append(f"⚠ Verificatie fout voor {bundel_key} {nummer}: {str(e)}")
-                # Bij twijfel: behoud het lied (voorzichtig)
-                verified_songs.append(song)
+                # Verificatie MISLUKT = GEEN lied toevoegen (strikt)
+                errors.append(f"❌ Verificatie error voor {bundel_key} {nummer}: {str(e)}")
+                if debug:
+                    print(f"      ✗ ERROR: {e}")
 
-        if verified_songs:
-            verified_data[bundel_key] = verified_songs
+        print(f"    → {len(verified_songs)}/{len(songs)} liederen geverifieerd")
+
+        # ALTIJD de bundel toevoegen (ook als leeg), anders verdwijnt de sectie uit JSON
+        verified_data[bundel_key] = verified_songs
 
     return {
         "verified_data": verified_data,
@@ -904,76 +973,107 @@ Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
                             raise
                         break
 
-                # Probeer JSON te parsen uit de response
+                # Probeer JSON te parsen uit de response (met retry mechanisme)
+                result_json = None
+
+                # Probeer 1: Direct JSON parsing
                 try:
-                    # Als het al valid JSON is
                     result_json = json.loads(final_response)
                     print(f"✓ Valide JSON ontvangen met {result_json.get('analyse', {}).get('aantal_gevonden_totaal', 0)} liederen")
-
-                    # 🔍 VERIFICATIE STAP: Controleer alle liedbundelnummers
-                    print(f"\n{'─' * 50}")
-                    print("🔍 VERIFICATIE: Controleren van liedbundelnummers...")
-                    print(f"{'─' * 50}")
-                    verification = await verify_hymn_numbers(session, result_json)
-
-                    if verification["errors"]:
-                        print("\n⚠️  HALLUCINATIES GEDETECTEERD:")
-                        for error in verification["errors"]:
-                            print(f"  {error}")
-                        print(f"\n✓ Geschoonde data bevat nu alleen geverifieerde liederen")
-                    else:
-                        print("✓ Alle liederen geverifieerd - geen hallucinaties gevonden!")
-
-                    return {
-                        **verification["verified_data"],
-                        "_meta": {
-                            "iterations": iteration,
-                            "raw_response": final_response,
-                            "verification_errors": verification["errors"],
-                            "original_data": result_json  # Bewaar origineel voor debugging
-                        }
-                    }
                 except json.JSONDecodeError:
-                    # Probeer JSON uit markdown code block te halen
+                    # Probeer 2: JSON uit markdown code block
                     json_match = re.search(r'```(?:json)?\s*\n?(.*?)\n?```', final_response, re.DOTALL)
                     if json_match:
                         try:
                             result_json = json.loads(json_match.group(1))
                             print(f"✓ JSON geëxtraheerd uit markdown")
-
-                            # 🔍 VERIFICATIE STAP: Controleer alle liedbundelnummers
-                            print(f"\n{'─' * 50}")
-                            print("🔍 VERIFICATIE: Controleren van liedbundelnummers...")
-                            print(f"{'─' * 50}")
-                            verification = await verify_hymn_numbers(session, result_json)
-
-                            if verification["errors"]:
-                                print("\n⚠️  HALLUCINATIES GEDETECTEERD:")
-                                for error in verification["errors"]:
-                                    print(f"  {error}")
-                                print(f"\n✓ Geschoonde data bevat nu alleen geverifieerde liederen")
-                            else:
-                                print("✓ Alle liederen geverifieerd - geen hallucinaties gevonden!")
-
-                            return {
-                                **verification["verified_data"],
-                                "_meta": {
-                                    "iterations": iteration,
-                                    "raw_response": final_response,
-                                    "verification_errors": verification["errors"],
-                                    "original_data": result_json  # Bewaar origineel voor debugging
-                                }
-                            }
                         except json.JSONDecodeError:
                             pass
 
-                    # Als JSON parsing mislukt, return als markdown met error
-                    print(f"⚠ Kon geen JSON parsen, return als markdown")
+                # ⚠️ JSON PARSING GEFAALD - START RETRY LOOP
+                if not result_json:
+                    MAX_JSON_RETRIES = 3
+                    for retry_attempt in range(1, MAX_JSON_RETRIES + 1):
+                        print(f"\n⚠️  Poging {retry_attempt}/{MAX_JSON_RETRIES}: Geen JSON gevonden, vraag Gemini opnieuw...")
+
+                        # Voeg een expliciete user message toe die JSON eist
+                        retry_message = """Je laatste response bevatte GEEN valide JSON. Dit is niet acceptabel.
+
+Genereer NU DIRECT een valide JSON output volgens het exacte schema uit je instructies.
+Begin METEEN met { en eindig met }.
+GEEN tekst ervoor of erna. ALLEEN JSON."""
+
+                        messages.append(types.Content(
+                            role="user",
+                            parts=[types.Part(text=retry_message)]
+                        ))
+
+                        # Probeer opnieuw met JSON mode GEFORCEERD
+                        try:
+                            retry_response = client.models.generate_content(
+                                model=MODEL_NAME,
+                                contents=messages,
+                                config=types.GenerateContentConfig(
+                                    system_instruction=system_instruction,
+                                    temperature=0.2,
+                                    response_mime_type="application/json",  # FORCEER JSON
+                                    max_output_tokens=8192
+                                )
+                            )
+
+                            if retry_response.candidates and retry_response.candidates[0].content.parts:
+                                retry_text = retry_response.candidates[0].content.parts[0].text
+
+                                try:
+                                    result_json = json.loads(retry_text)
+                                    print(f"✓ JSON verkregen bij poging {retry_attempt}")
+                                    break  # Succes!
+                                except json.JSONDecodeError:
+                                    if retry_attempt == MAX_JSON_RETRIES:
+                                        print(f"✗ Ook na {MAX_JSON_RETRIES} pogingen geen JSON")
+                                    continue
+
+                        except Exception as retry_error:
+                            print(f"✗ Retry poging {retry_attempt} gefaald: {retry_error}")
+                            if retry_attempt == MAX_JSON_RETRIES:
+                                break
+
+                # Als nog steeds geen JSON, return error
+                if not result_json:
+                    print(f"\n✗ FOUT: Gemini weigert JSON te genereren na {MAX_JSON_RETRIES} pogingen")
                     return {
-                        "error": "Geen valide JSON ontvangen",
+                        "error": f"Geen valide JSON na {MAX_JSON_RETRIES} pogingen",
                         "markdown_output": final_response,
                         "iterations": iteration
                     }
+
+                # 🔍 VERIFICATIE STAP: Controleer alle liedbundelnummers
+                print(f"\n{'─' * 50}")
+                print("🔍 VERIFICATIE: Controleren van liedbundelnummers...")
+                print(f"{'─' * 50}")
+
+                # STRIKTE verificatie
+                verification = await verify_hymn_numbers(session, result_json, debug=False)
+
+                if verification["errors"]:
+                    print(f"\n⚠️  {len(verification['errors'])} HALLUCINATIES GEDETECTEERD:")
+                    for error in verification["errors"][:10]:  # Toon max 10
+                        print(f"  {error}")
+                    if len(verification["errors"]) > 10:
+                        print(f"  ... en {len(verification['errors']) - 10} meer")
+                    print(f"\n✓ Geschoonde data bevat nu alleen geverifieerde liederen")
+                else:
+                    print("✓ Alle liederen geverifieerd - geen hallucinaties gevonden!")
+
+                return {
+                    **verification["verified_data"],
+                    "_meta": {
+                        "iterations": iteration,
+                        "raw_response": final_response,
+                        "verification_errors": verification["errors"],
+                        "original_data": result_json  # Bewaar origineel voor debugging
+                    }
+                }
 
     except Exception as e:
         error_msg = f"MCP fout: {str(e)}"
@@ -1016,7 +1116,20 @@ def print_liturgy_summary(data: dict):
 
 
 def save_analysis(output_dir: Path, filename: str, content: dict, title: str, user_input: dict = None):
-    """Sla een analyse op naar een JSON bestand."""
+    """Sla een analyse op naar een JSON bestand.
+
+    Returns:
+        bool: True als succesvol opgeslagen, False als overgeslagen (bij errors)
+    """
+    # ⚠️ CHECK: Bevat de content een error? Dan NIET opslaan!
+    if "error" in content:
+        # Check of er substantiële data is naast de error
+        substantive_keys = [k for k in content.keys() if k not in ["error", "title", "message", "markdown_output", "iterations", "_meta"]]
+        if not substantive_keys or not content.get("_meta"):
+            # Dit is een pure error response zonder bruikbare data
+            print(f"  ⚠️  Analyse bevat error - wordt NIET opgeslagen: {content.get('error', 'Unknown error')[:80]}")
+            return False
+
     filepath = output_dir / f"{filename}.json"
 
     # Voeg metadata toe
@@ -1038,6 +1151,7 @@ def save_analysis(output_dir: Path, filename: str, content: dict, title: str, us
         json.dump(content_with_meta, f, ensure_ascii=False, indent=2)
 
     print(f"  Opgeslagen: {filepath.name}")
+    return True
 
 
 def save_log(logs_dir: Path, filename: str, content: str):
@@ -1403,16 +1517,14 @@ def main():
                         )
                     except Exception as e:
                         print(f"✗ MCP zoektocht gefaald: {e}")
-                        print(f"  Liedsuggesties worden overgeslagen.")
-                        # Sla error op
-                        error_result = {"error": str(e), "message": "MCP zoektocht mislukt"}
-                        save_analysis(output_dir, lied_analysis['name'], error_result, lied_analysis['title'], user_input)
+                        print(f"  ⚠️  Liedsuggesties worden NIET opgeslagen (error)")
+                        # Error wordt NIET opgeslagen
 
                 else:
                     # MCP niet beschikbaar
-                    print(f"  MCP niet beschikbaar. Installeer met: pip install mcp")
-                    error_result = {"error": "MCP niet geïnstalleerd", "message": "Installeer met: pip install mcp"}
-                    save_analysis(output_dir, lied_analysis['name'], error_result, lied_analysis['title'], user_input)
+                    print(f"  ⚠️  MCP niet beschikbaar - liedsuggesties worden overgeslagen")
+                    print(f"     Installeer met: pip install mcp")
+                    # Error wordt NIET opgeslagen
 
     print("\n" + "=" * 60)
     print("KLAAR")
