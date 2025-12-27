@@ -11,6 +11,14 @@ grounding om actuele informatie te verzamelen.
 W.M. Otte (w.m.otte@umcutrecht.nl)
 """
 
+# Model keuze: Gemini 3 flash als primair, pro als fallback
+MODEL_NAME = "gemini-3-flash-preview"
+#MODEL_NAME = "gemini-3-pro-preview"
+#MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
+
+#MODEL_NAME = "gemini-2.5-flash"
+MODEL_NAME_FALLBACK = "gemini-2.5-pro"
+
 import os
 import sys
 import re
@@ -48,13 +56,7 @@ SCRIPT_DIR = Path(__file__).parent.resolve()
 OUTPUT_DIR = SCRIPT_DIR / "output"
 PROMPTS_DIR = SCRIPT_DIR / "prompts"
 
-# Model keuze: Gemini 3 flash als primair, pro als fallback
-MODEL_NAME = "gemini-3-flash-preview"
-#MODEL_NAME = "gemini-3-pro-preview"
-#MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
-#MODEL_NAME = "gemini-2.5-flash"
-MODEL_NAME_FALLBACK = "gemini-2.5-pro"
 
 def normalize_scripture_reference(reference: str) -> str:
     """Normaliseer schriftverwijzingen door 'a'/'b' suffixen te verwijderen en
@@ -784,17 +786,8 @@ async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bo
                                     if not re.match(r'^(\d+|verse\s+\d+)[:.]?$', line, re.IGNORECASE):
                                         eerste_regel = line
                                         break
-                        
-                        # TITEL REPARATIE: Als DB titel eindigt op '...' en eerste regel is beschikbaar,
-                        # gebruik dan de eerste regel als titel (indien het een match lijkt).
-                        final_titel = db_titel
-                        if eerste_regel and (db_titel.endswith("...") or db_titel.endswith("..")):
-                            # Check of eerste regel begint met het niet-afgekapte deel van de titel
-                            trunc_check = db_titel.rstrip(". ")
-                            if eerste_regel.lower().startswith(trunc_check.lower()):
-                                final_titel = eerste_regel
 
-                        song["titel"] = final_titel
+                        song["titel"] = db_titel
                         
                         if eerste_regel:
                             song["eerste_regel"] = eerste_regel
