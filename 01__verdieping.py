@@ -844,6 +844,7 @@ def update_summary(output_dir: Path):
                 ("17_preek_jungel", "Preek in de stijl van Jüngel"),
                 ("18_preek_brueggemann", "Preek in de stijl van Brueggemann"),
                 ("19_preek_noordmans", "Preekschets in de stijl van Noordmans"),
+                ("20_midjourney_prompts", "Midjourney Prompts voor Visuele Ondersteuning"),
             ]
 
             existing_names = [a.get("name") for a in data.get("analyses", [])]
@@ -1007,7 +1008,8 @@ def main():
         ("16_preek_solle", "Preek in de stijl van Sölle"),
         ("17_preek_jungel", "Preek in de stijl van Jüngel"),
         ("18_preek_brueggemann", "Preek in de stijl van Brueggemann"),
-        ("19_preek_noordmans", "Preekschets in de stijl van Noordmans")
+        ("19_preek_noordmans", "Preekschets in de stijl van Noordmans"),
+        ("20_midjourney_prompts", "Midjourney Prompts voor Visuele Ondersteuning")
     ])
 
     if args.exegese:

@@ -3296,18 +3296,18 @@
     }
   },
   "14_gebeden": {
-    "gekozen_scenario": "B (zwaartepunt nood)",
+    "gekozen_scenario": "B",
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
         "aanspraak": "Licht uit Licht, Eeuwige,",
         "elementen": {
-          "verootmoediging": "Wij komen uit het halfduister van onze eigen gedachten.",
-          "schuldbelijdenis": "Niet expliciet in dit scenario (focus op drempel).",
-          "verlangen": "Verlangen om het ware Licht te zien dat niet verblindt maar verwarmt."
+          "verootmoediging": "Wij komen uit de mist van de polder, uit de drukte van de week.",
+          "schuldbelijdenis": "Niet expliciet in dit scenario (focus op overgang).",
+          "verlangen": "Verlangen naar een vast punt, een ster die niet dooft."
         },
-        "tekst": "Licht uit Licht, Eeuwige,\n\nWij stappen over de drempel van dit nieuwe jaar,\nen van dit huis van steen en gebed.\nDe oranje gloed van de kassen hebben wij achter ons gelaten,\nhet kunstlicht dat de nacht verdrijft maar de ziel niet raakt.\n\nWij komen met de modder van de polder nog aan onze schoenen,\nen met harten die zoeken naar richting,\nnet als die wijzen van ver.\n\nHier zijn wij.\nNiet met goud of wierook,\nmaar met onze lege, open handen.\nKlaar om te ontvangen wat U geeft.\n\nAmen.",
-        "echo_schriftlezing": "De tegenstelling tussen kunstlicht (menselijk) en de Ster (Goddelijk), en de 'reis' naar binnen.",
+        "tekst": "Licht uit Licht, Eeuwige,\n\nWij komen uit de mist van de polder,\nuit de schemering van onze eigen gedachten.\nDe kou van januari zit nog in onze kleren,\nde onrust van de wereld in ons hoofd.\n\nHier, op de drempel van uw huis,\nstrijken wij neer.\nNiet omdat wij de weg zo goed weten,\nmaar omdat U ons tegemoet komt.\n\nVerlicht onze ogen,\nzodat wij zien wat verborgen is.\n\nAmen.",
+        "echo_schriftlezing": "De mist/duisternis vs. het opgaande licht (Jesaja 60).",
         "amen": true
       },
       "kyrie": {
@@ -3317,240 +3317,240 @@
         "structuur": {
           "intenties": [
             {
-              "voor_wie": "De slachtoffers van machtsmisbruik (Gaza, Oekraïne)",
-              "nood": "De angst van Herodes die nog steeds regeert",
+              "voor_wie": "De wereld in oorlog (Oekraïne/Gaza)",
+              "nood": "Waar machthebbers zich vastklampen aan hun troon ten koste van onschuldigen",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "Mensen in duisternis (fysiek en mentaal)",
-              "nood": "Zij die geen ster zien, alleen maar wolken",
+              "voor_wie": "Mensen die niet gehoord worden",
+              "nood": "Het isolement van wie leeft in een wereld die niet luistert of niet kijkt",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "De gemeenschap en onszelf",
-              "nood": "Onze doofheid voor de ander, onze angst voor de vreemdeling",
+              "voor_wie": "Onszelf en onze geslotenheid",
+              "nood": "Dat wij onze schatten oppotten en onze deuren dichthouden uit angst",
               "kyrie_refrain": true
             }
           ]
         },
-        "tekst": "Kind van Bethlehem, Koning van de volken,\n\nTerwijl wij het licht vieren, bedekt donkerheid de aarde.\nWij zien de schaduw van Herodes nog steeds vallen:\nover de tentenkampen in Gaza waar de regen alles wegspoelt,\nover de loopgraven in het oosten waar de kou bijt,\nover elk land waar machthebbers trillen op hun troon\nen kinderen de prijs betalen voor hun angst.\nKyrie eleison.\n\nWij bidden voor wie de weg kwijt is in het donker.\nVoor wie 2026 is begonnen met een lege stoel aan tafel,\nvoor wie de stilte in huis niet vredig is, maar eenzaam.\nVoor hen die roepen maar niet gehoord worden,\nof gebaren maar niet gezien worden.\nHeer, breek door de muren van ons isolement heen.\nKyrie eleison.\n\nEn wij bidden voor onszelf, hier in het veilige Westland.\nVergeef ons als wij onze schatkisten gesloten houden.\nVergeef ons als wij de vreemdeling liever weren dan verwelkomen.\nVergeef ons als wij kijken, maar niet werkelijk zien.\nOntdooi ons hart, open onze ogen.\n\nKyrie eleison.\nAmen.",
-        "echo_schriftlezing": "De duisternis die de aarde bedekt (Jesaja 60) en de wreedheid van Herodes (Matteüs 2).",
+        "tekst": "Kind van Bethlehem, Koning van de volken,\n\nWij roepen tot U vanuit een wereld die kraakt.\nVoor de plekken waar Herodes nog steeds regeert:\nwaar machthebbers hun tronen bouwen op puinhopen,\nwaar in Oekraïne de winter koud is en de vrede ver weg,\nwaar in Gaza kinderen spelen tussen het beton.\nOmdat het donker de aarde bedekt en wij het licht soms niet meer zien.\n\nKyrie eleison.\n\nWij roepen tot U voor wie leeft in stilte die geen rust is.\nVoor mensen die roepen maar niet gehoord worden,\nvoor wie gebaren maar niet gezien worden.\nVoor de eenzaamheid achter de voordeuren van ons dorp,\nwaar het verdriet onzichtbaar blijft voor de buren.\n\nKyrie eleison.\n\nEn wij roepen tot U over onszelf.\nOmdat wij vaak lijken op Jeruzalem: geschrokken van verandering,\nbang om onze zekerheden te verliezen.\nOmdat wij onze schatkisten dichthouden\nen onze handen in onze zakken houden.\nBreek ons open, Heer.\n\nKyrie eleison.",
+        "echo_schriftlezing": "Herodes' angst vs. de kwetsbaarheid van het Kind; de duisternis die de aarde bedekt (Jesaja 60).",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
         "aanspraak": "Geest van God, Adem die leven geeft,",
-        "focus": "ALLEEN opening voor de Schrift, geen andere thema's",
-        "tekst": "Geest van God, Adem die leven geeft,\n\nDe oude woorden liggen open,\nmaar zonder uw licht blijven het zwarte letters op wit papier.\n\nKom als een ster die ons bijlicht.\nRaak onze ogen aan, dat wij zien wat verborgen is.\nRaak onze handen aan, dat wij tasten wat waar is.\n\nMaak het stil in ons hoofd,\nzodat het Woord kan landen in ons hart\nen wij, net als de wijzen, een andere weg durven gaan.\n\nAmen.",
-        "echo_schriftlezing": "De ster die bijlicht/navigeert en de 'andere weg' die de wijzen kozen.",
+        "focus": "ALLEEN opening voor de Schrift",
+        "tekst": "Geest van God, Adem die leven geeft,\n\nHet Boek is open, maar onze ogen zijn vaak nog dicht.\nWij zien de letters, maar missen het Licht.\n\nKom over ons als een heldere morgen.\nMaak de oude woorden nieuw en vloeibaar.\nDat wij niet alleen horen met onze oren,\nmaar verstaan met ons hart,\nen zien met open ogen\nwat U vandaag aan ons wilt openbaren.\n\nAmen.",
+        "echo_schriftlezing": "Het thema 'zien' en 'openbaring' (Epifanie).",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "God van de ster en de stal,",
-        "verbinding_verkondiging": "Dank voor de zichtbaarheid van God (Epifanie) en de oproep om zelf licht te zijn.",
+        "aanspraak": "God van de ster en de straat,",
+        "verbinding_verkondiging": "Dank voor de 'vreemdelingen' (wijzen/koor) die ons leren aanbidden.",
         "elementen": {
-          "dank_gehoorde_woord": "Dank dat God zich laat vinden, ook door wie van ver komt.",
-          "vraag_kracht_bewaren": "Kracht om niet passief te blijven zoals Jeruzalem.",
-          "verbinding_dagelijks_leven": "De 'schatten' vertalen naar daden in 's-Gravenzande."
+          "dank_gehoorde_woord": "Dank dat het licht overal doorbreekt, dwars door grenzen heen.",
+          "vraag_kracht_bewaren": "Dat we de ster blijven volgen in het nieuwe jaar.",
+          "verbinding_dagelijks_leven": "Onze handen en rijkdom inzetten."
         },
-        "tekst": "God van de ster en de stal,\n\nWij danken U dat U zich laat vinden.\nNiet alleen door de vromen in de tempel,\nmaar door zoekers, twijfelaars en vreemdelingen van ver.\nDank U dat uw licht over grenzen heen schijnt,\ndwars door muren van taal en stilte heen.\n\nWij danken U voor het wonder van Epifanie:\ndat U zichtbaar bent geworden.\nDat wij U mogen zien in een gebaar van liefde,\nin een hand die zich opent,\nin brood dat gedeeld wordt.\n\nGeef ons de moed van de magiërs.\nDat wij niet blijven zitten in onze paleizen van gelijk,\nmaar opstaan en op weg gaan.\nDat wij onze schatten – onze tijd, ons geld, onze aandacht –\nniet oppotten voor later,\nmaar uitgieten aan uw voeten, hier en nu.\n\nAmen.",
-        "echo_schriftlezing": "De grensoverschrijding (heidenen/wijzen) en het openen van de schatkisten.",
+        "tekst": "God van de ster en de straat,\n\nWij danken U voor het licht dat doorbreekt,\nniet alleen in de tempel, maar ver daarbuiten.\nDank U dat U zich laat vinden door wie U niet zochten,\nen dat U ons beschaamt en verrast\ndoor de wijsheid van vreemdelingen.\n\nWij danken U voor de taal van handen en ogen,\nvoor de stilte die spreekt,\nvoor de ruimte die ontstaat als wij elkaar werkelijk zien.\nDank U dat wij niet met lege handen hoeven te staan,\nmaar dat U onze gaven – ons goud, onze tijd, onze aandacht –\nwilt gebruiken in uw koninkrijk.\n\nGeef dat het licht van deze morgen\nniet dooft als wij straks de kerk uitgaan,\nmaar dat het meegaat, als een ster boven ons huis,\nboven ons werk, boven ons leven in dit nieuwe jaar.\n\nAmen.",
+        "echo_schriftlezing": "De wijzen die terugkeren 'langs een andere weg'; de geschenken.",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "Vader van alle mensen,",
+        "aanspraak": "Vader in de hemel, Gij die woont in ontoegankelijk licht,",
         "cirkels": {
           "wereld": {
             "themas": [
-              "Vluchtelingen (zoals de Heilige Familie)",
-              "Wereldleiders en wijsheid"
+              "Zoekende leiders",
+              "Vrede in conflictgebieden"
             ],
-            "tekst": "Wij bidden U voor de wereld die U zo liefhebt.\nVoor mensen die, net als Jozef en Maria straks, halsoverkop moeten vluchten.\nVoor hen die geen ster zien, maar vuurflitsen.\nGeef aan wereldleiders de wijsheid van de magiërs:\nom te knielen voor het kwetsbare, in plaats van te heersen met geweld."
+            "tekst": "Wij bidden U voor de wereld in verwarring.\nVoor leiders en diplomaten die zoeken naar een uitweg uit het geweld,\ndat zij, net als de wijzen, durven knielen voor wat kwetsbaar is.\nDat wapens zwijgen en handen zich openen om te delen in plaats van te slaan."
           },
           "kerk": {
             "themas": [
-              "Eenheid in diversiteit",
-              "Doven en horenden samen"
+              "Verbondenheid doof/horend",
+              "Wereldwijde kerk"
             ],
-            "tekst": "Wij bidden voor uw kerk, wereldwijd en hier samen.\nDank U dat in uw huis doven en horenden één lichaam vormen.\nLeer ons elkaars taal te verstaan – de taal van het woord en de taal van het hart.\nDat wij een gemeenschap zijn waar niemand onzichtbaar is,\nwaar handen spreken en ogen luisteren."
+            "tekst": "Wij bidden U voor uw kerk, wereldwijd en hier samen.\nVoor de gemeenschap van doven en horenden,\ndat wij geen eilanden zijn, maar bruggen bouwers.\nDat wij elkaars taal leren verstaan – de taal van het woord en de taal van het hart.\nMaak ons tot een stad op een berg, een lichtbaken in de tijd."
           },
           "naasten": {
             "themas": [
-              "Ziekte en zorg",
-              "Eenzaamheid na de feestdagen"
+              "Zieken",
+              "Mensen in het donker"
             ],
-            "tekst": "Wij bidden voor wie dichtbij ons is en lijdt.\nVoor wie opziet tegen de maand januari, als de lichten weer gedoofd worden.\nWees nabij wie ziek is, wie wacht op een uitslag,\nwie rouwt om een verlies dat nog vers is als een open wond.\nLaat ons voor hen een ster zijn, een klein lichtje in de nacht."
+            "tekst": "Wij bidden voor wie het licht even niet kan zien.\nVoor wie ziek is en wacht op een uitslag.\nVoor wie rouwt om een lege stoel aan tafel.\nVoor wie vastloopt in de mist van depressie of zorgen.\nWees Gij hun oriëntatiepunt, hun Morgenster."
           },
           "eigen_gemeente": {
             "themas": [
               "NoorderBrug",
-              "Het nieuwe jaar 2026"
+              "Komende week"
             ],
-            "tekst": "Wij dragen deze gemeente, de NoorderBrug, aan U op.\nZegen ons in dit nieuwe jaar, 2026.\nDat we niet alleen 's zondags, maar ook doordeweeks\nin onze huizen en op ons werk,\ndragers mogen zijn van uw goud, wierook en mirre:\nliefde, gebed en troost."
+            "tekst": "Wij bidden voor deze gemeente, hier in 's-Gravenzande.\nVoor alles wat wij ondernemen in de week die komt.\nZegen onze handen als ze werken in de aarde of achter het scherm.\nZegen onze ogen als ze zoeken naar uw spoor."
           }
         },
-        "stilte_instructie": "*In de stilte leggen wij onze eigen namen en vragen in uw open handen...*",
-        "overgang_onze_vader": "Samen, in de taal die ons allen verbindt, bidden wij:",
+        "stilte_instructie": "*In de stilte leggen wij onze eigen geschenken en zorgen aan uw voeten neer...*",
+        "overgang_onze_vader": "Samen bidden wij, met stem en gebaar, het gebed van uw Zoon:",
         "onze_vader": "Onze Vader die in de hemelen zijt,\nuw naam worde geheiligd;\nuw Koninkrijk kome;\nuw wil geschiede, gelijk in de hemel, alzo ook op de aarde.\nGeef ons heden ons dagelijks brood;\nen vergeef ons onze schulden, gelijk ook wij vergeven onze schuldenaren;\nen leid ons niet in verzoeking, maar verlos ons van de boze.\nWant van U is het Koninkrijk en de kracht en de heerlijkheid tot in eeuwigheid.\nAmen."
       }
     },
     "poetische_technieken_gebruikt": {
       "parallellisme": [
-        "Voor hen die roepen maar niet gehoord worden / of gebaren maar niet gezien worden",
-        "Niet met goud of wierook / maar met onze lege, open handen"
+        "Niet omdat wij de weg zo goed weten / maar omdat U ons tegemoet komt",
+        "Voor wie roepen maar niet gehoord worden / voor wie gebaren maar niet gezien worden"
       ],
       "drieslag": [
-        "onze tijd, ons geld, onze aandacht",
-        "liefde, gebed en troost",
-        "Ontdooi ons hart, open onze ogen, [maak ons nieuw]"
+        "ons goud, onze tijd, onze aandacht",
+        "boven ons huis, boven ons werk, boven ons leven"
       ],
       "anafoor": [
-        "Vergeef ons als wij... / Vergeef ons als wij... / Vergeef ons als wij...",
-        "Voor wie... / Voor wie... / Voor wie..."
+        "Voor de plekken waar... / waar machthebbers... / waar in Oekraïne... / waar in Gaza...",
+        "Wij danken U voor... / Dank U dat..."
       ],
       "inclusio": [
-        "Drempelgebed begint met 'Licht uit Licht' en eindigt met 'ontvangen wat U geeft' (Licht)",
-        "Kyrie begint met 'donkerheid' en eindigt met 'open onze ogen' (voor licht)"
+        "Drempelgebed: Begint met 'Licht uit Licht', eindigt met 'zien wat verborgen is'.",
+        "Dankgebed: Begint met 'ster', eindigt met 'ster boven ons huis'."
       ],
       "zintuiglijke_taal": [
-        "Zien: oranje gloed van de kassen, zwarte letters op wit papier",
-        "Voelen: modder aan schoenen, kou die bijt, handen tasten",
-        "Horen: stilte in huis, taal van het hart"
+        "Zien: 'mist van de polder', 'puin de straten vult'",
+        "Voelen: 'kou in onze kleren', 'handen in zakken'",
+        "Horen: 'stilte die geen rust is', 'bommen vallen'",
+        "Bewegen: 'strijken neer', 'knielen', 'handen openen'"
       ],
       "lokale_beelden": [
-        "De oranje gloed van de kassen",
-        "Modder van de polder",
-        "Het veilige Westland"
+        "De mist van de polder",
+        "De eenzaamheid achter de voordeuren van ons dorp",
+        "Werken in de aarde (tuinbouw)"
       ]
     },
     "echo_techniek": {
-      "schriftlezing_thema": "Zichtbaarheid (Epifanie) en de reis van de Wijzen vs. de stilstand van Herodes",
+      "schriftlezing_thema": "Licht dat doorbreekt in duisternis & De wijzen die op weg gaan en geven",
       "echo_per_gebed": {
-        "drempelgebed": "De tegenstelling tussen kunstlicht en het ware Licht; binnenkomen zoals de wijzen het huis binnengingen.",
-        "kyrie": "De duisternis die de aarde bedekt (Jesaja) en de dreiging van Herodes.",
-        "epiclese": "De ster als gids voor het verstaan; ogen openen.",
-        "dankgebed": "Het openen van de schatkisten (goud/wierook/mirre) vertaald naar daden.",
-        "voorbeden": "De vlucht naar Egypte (vluchtelingen) en de wijsheid van de magiërs (leiders)."
+        "drempelgebed": "De mist (duisternis bedekt de aarde) vs. verlichte ogen.",
+        "kyrie": "Herodes' machtsmisbruik en de angst van Jeruzalem.",
+        "epiclese": "Het openen van ogen (zoals de wijzen de ster zagen).",
+        "dankgebed": "De geschenken (goud/tijd) en de 'andere weg' naar huis.",
+        "voorbeden": "Leiders die moeten knielen (zoals koningen in Ps 72/Jes 60)."
       }
     }
   },
   "14_gebeden_dialogisch": {
-    "stijl_analyse": "De gebeden hanteren de Dumas-stijl door consequent te wisselen tussen observatie in de derde persoon en directe aanspraak in de tweede persoon. De toon is niet smekend maar confronterend en zoekend, waarbij de harde realiteit van 's-Gravenzande en de wereldpolitiek (Gaza, Oekraïne) als tegenspraak wordt ingebracht tegen de beloften van Epifanie.",
+    "stijl_analyse": "De gebeden hanteren een dialectische spanning tussen de harde realiteit van januari 2026 (oorlog, mist, prestatiedruk) en de bijbelse belofte van Epifanie. Door te wisselen tussen observatie in de derde persoon ('God heeft beloofd') en directe aanspraak ('Waar bent U dan?'), wordt de vroomheid doorbroken en ontstaat er ruimte voor een eerlijke ontmoeting waarin de mens niet alleen vraagt, maar ook antwoord geeft op Gods stilte.",
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Onze God,",
-        "tekst": "De mensen komen dit huis binnen.\nZe komen uit de wind van de polder, uit de stilte van de zondagmorgen, uit de roes van het nieuwe jaar.\nWaarom komen zij eigenlijk?\nIs het de gewoonte die hun voeten stuurt? Is het de angst voor de leegte thuis?\nOf is het die ene, hardnekkige hoop dat er Iemand is die luistert?\n\nMisschien komen wij wel omdat wij het niet meer weten.\nDe wereld draait door, de kassen lichten oranje op in de nacht, de agenda's lopen alweer vol.\nEn wij?\nWij zoeken een anker.\n\nOnze God, hier zijn wij dan.\nNiet omdat wij zo vroom zijn. Niet omdat wij alle antwoorden hebben.\nWij zijn hier met onze twijfels in de binnenzak en onze goede voornemens die nu al wankelen.\nU zegt: 'Ik ben het Licht.'\nWij zeggen: 'Laat het dan zien.'\n\nU kent degenen die hier staan.\nU kent de gebaren van onze handen en de stilte van ons hart.\nAls U er bent, God, wees er dan nu.\nNiet als een idee, maar als een Aanwezige.\nOntmoet ons, zoals U de vreemdelingen uit het Oosten ontmoette.\nAmen.",
-        "echo_schriftlezing": "De beweging van de volken naar het licht (Jesaja 60) wordt vertaald naar de beweging van de kerkgangers naar het kerkgebouw.",
+        "aanspraak": "Onze God, die Zich laat vinden door wie Hem niet zochten,",
+        "tekst": "Hier zijn wij dan.\nIn dit huis van steen en glas, samengekomen op de eerste zondag van een nieuw jaar.\nWaarom zijn wij eigenlijk gekomen?\nUit gewoonte, omdat het nu eenmaal zondag is?\nUit angst, omdat de wereld buiten te groot en te donker voelt?\nOf uit hoop, omdat we ergens, diep vanbinnen, nog steeds wachten op een teken?\n\nMisschien is het van alles wat.\nWe hebben de feestdagen achter de rug, de kerstboom staat er nog, maar het gevoel is alweer weggeëbd.\nWe komen uit onze warme huizen, uit de mist van de polder, uit de drukte van onze agenda's die zich alweer vullen.\nSommigen van ons horen de orgelklanken, anderen voelen slechts de trilling in de vloer.\nSommigen hebben woorden in overvloed, anderen spreken met de stilte van hun handen.\n\nZij zeggen dat U in het licht woont.\nWij zien vaak alleen het kunstlicht van onze eigen maakbaarheid, de oranje gloed boven de kassen die de nacht verdrijft maar geen sterren laat zien.\nWij zijn mensen die gewend zijn te doen, te regelen, te presteren.\nMaar hier staan we met lege handen. Of misschien met gebalde vuisten.\n\nU die de wijzen uit het Oosten hebt getrokken uit hun comfortzone,\ntrek ook ons los uit onze vastgeroeste patronen.\nWij zoeken U, ook al weten we niet altijd wat we zoeken.\nKijk ons aan. Zie ons staan.\nNiet als geslaagde burgers, maar als zoekende mensen.\nHerken ons.",
+        "echo_schriftlezing": "Verwijzing naar de wijzen (Matteüs 2) en het contrast tussen kunstlicht en sterrenlicht.",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "Onze God, wij moeten praten.",
+        "aanspraak": "Onze God, U die zegt dat het licht is opgegaan,",
         "focus": "confrontatie_en_realiteit",
-        "tekst": "Er staat geschreven: 'Sta op en schitter, want uw licht is gekomen.'\nDat is wat de profeet roept.\nMaar wij slaan de krant open en wij zien geen licht.\nWij zien modder in Gaza, waar tenten wegspoelen en kinderen verdrinken in de wanhoop.\nWij zien loopgraven in Oekraïne, waar de winter bevriest wat nog levend was.\nWij zien machthebbers die, net als Herodes, rillen van angst voor hun positie en daarom het zwaard trekken.\n\nU zegt: 'Vrede op aarde.'\nDe aarde zegt: 'Oorlog en gerucht van oorlog.'\nWie spreekt de waarheid, God?\n\nZijn wij doof geworden voor uw belofte?\nOf zwijgt U in alle talen?\n\nWij kijken naar onze eigen handen.\nHanden die hard kunnen werken, hier in het Westland.\nMaar ook handen die zich sluiten voor de nood van ver weg.\nWij steken kaarsen aan voor de gezelligheid, terwijl de wereld in brand staat.\nWij zingen over een Ster, maar wij navigeren op onze eigen welvaart.\n\nAls U de God van de gerechtigheid bent, waarom duurt het onrecht dan zo lang?\nAls U de Koning van de Vrede bent, waarom regeren de tirannen dan nog steeds?\n\nWij roepen U aan vanuit de diepte.\nNiet om de verantwoordelijkheid bij U te dumpen.\nMaar omdat wij zonder Uw licht alleen maar duisternis aan elkaar doorgeven.\nOntferm U over deze wereld.\nOntferm U over ons onvermogen.\nHeer, ontferm U.",
-        "echo_schriftlezing": "Het contrast tussen het 'licht' uit Jesaja 60 en de 'duisternis die de aarde bedekt' wordt scherp neergezet, met verwijzing naar de angst van Herodes (Matteüs 2).",
+        "tekst": "De profeet Jesaja roept het ons toe: 'Sta op en schitter, want uw licht is gekomen.'\nDat staat er. Dat wordt gelezen. Dat wordt geloofd.\nMaar wij kijken naar buiten en wat zien we?\nDuisternis bedekt de aarde.\nGeen poëtische duisternis, maar de rauwe duisternis van een wereld die in brand staat.\n\nKijk naar het oosten, niet naar de ster, maar naar de loopgraven in Oekraïne.\nHet is 2026 en de winter is koud en het front zit muurvast.\nU zei toch: 'Vrede op aarde'?\nWaar is die vrede als raketten op Kyiv vallen terwijl wij oliebollen aten?\nWaar is het licht in de tunnels van Gaza, waar wanhoop regeert en de puinhopen zich opstapelen?\n\nZij, de machthebbers, zeggen: 'Wij brengen veiligheid.'\nWij zien angst en polarisatie.\nZij zeggen: 'De economie moet draaien.'\nWij zien mensen die vermalen worden tussen de raderen van de welvaart.\n\nEn wijzelf? Wij zijn geen haar beter.\nWij lezen het nieuws en schenken nog een kop koffie in.\nWij zien de beelden en zappen weg.\nWij horen de stilte van hen die geen stem hebben, en wij vullen die met ons eigen lawaai.\nWij zijn als Jeruzalem: we schrikken wel even, maar we blijven zitten waar we zitten.\n\nU bent de God van het recht, zegt U.\nBewijs het dan.\nNiet met grote woorden, maar met daden van recht die wij kunnen zien en voelen.\nOf wacht U op ons?\nIs Uw licht afhankelijk van onze weerkaatsing?\nAls wij het lichaam van Christus zijn, waarom zijn onze handen dan zo vaak verlamd?\n\nOnze God, ontferm U over deze wereld die hunkert naar een ander soort koningschap.\nOntferm U over ons, die het licht wel zien, maar het niet durven zijn.\nSpreek, God, of laat uw stilte zo luid klinken dat wij eindelijk wakker worden.",
+        "echo_schriftlezing": "Jesaja 60 (duisternis bedekt de aarde) en de politieke realiteit (Kyiv/Gaza) als contrast.",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Levende God,",
+        "aanspraak": "Onze God, die spreekt in vele talen,",
         "focus": "woord_als_inbraak",
-        "tekst": "Wij gaan een oud boek openen.\nWoorden die al duizenden keren zijn klinken.\nHet risico is groot dat wij knikken en slapen.\nDat wij horen wat wij altijd al dachten.\nDat het 'mooi' is, en dus ongevaarlijk.\n\nMaar U bent geen God van papier.\nU bent een God die inbreekt.\nSteek het stro van onze vroomheid in brand.\nVerstoor onze rust.\n\nWij bidden U:\nSpreek zo dat wij het niet alleen horen, maar zien.\nSpreek in taal en teken, in klank en gebaar.\nMaak Uw Woord zichtbaar voor onze ogen, tastbaar voor onze handen.\nZodat wij niet naar huis gaan met een mooi verhaal,\nmaar met een brandend hart.\nKom, Geest van waarheid.\nAmen.",
-        "echo_schriftlezing": "Verwijzing naar het 'zien' van de ster en de noodzaak dat God Zichzelf openbaart (Epifanie).",
+        "tekst": "Wij gaan de boeken openen.\nMaar wat heeft dat voor zin als onze oren dicht zitten?\nWij zijn zo gewend aan woorden. Woorden van politici, woorden van reclame, woorden van de kerk.\nHet is een brij geworden, stro dat niet voedt.\n\nWij vragen U niet om een mooi verhaal.\nWij vragen U om een inbraak.\nBreek door onze gewenning heen.\nAls wij niet kunnen horen, laat ons dan zien.\nAls woorden tekortschieten, spreek dan in beelden, in gebaren, in stilte.\n\nSteek het vuur aan in deze teksten, zodat het stro verbrandt en het graan overblijft.\nZodat wij niet naar huis gaan met een mening, maar met een richting.\nKom, Geest van waarheid, en maak het Woord zichtbaar in ons midden.",
+        "echo_schriftlezing": "Verwijzing naar de noodzaak van 'zien' (Epifanie) en de beperking van woorden.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Onze God,",
-        "verbinding_verkondiging": "De geschenken van de wijzen (goud, wierook, mirre) worden verbonden met onze eigen gaven en het leven zelf.",
-        "tekst": "Wij danken U dat er licht is.\nNiet het licht dat wij zelf maken, niet de lampen in de kassen die de nacht oranje kleuren,\nmaar het Licht dat van de overkant komt.\nDe Ster die niet te manipuleren is, maar die leidt.\n\nWij danken U voor de weg die begaanbaar is.\nDat wij niet vastzitten in ons eigen gelijk, maar dat wij, net als de wijzen, op reis kunnen gaan.\nDat er beweging mogelijk is in vastgeroeste levens.\n\nWij danken U voor de vreemdelingen.\nZij die anders spreken, anders gebaren, anders geloven.\nZij houden ons wakker.\nZij breken onze gesloten cirkels open.\nDank U voor de les van de Magiërs: dat wijsheid soms komt van buiten de bekende kaders.\n\nWij danken U voor de materie.\nVoor goud, wierook en mirre.\nVoor brood, wijn en water.\nVoor het lichaam waarmee wij werken en liefhebben.\nVoor handen die kunnen spreken en ogen die kunnen luisteren.\n\nU vraagt ons niet om engelen te zijn, die boven de aarde zweven.\nU vraagt ons om mensen te zijn, met voeten in de klei en ogen naar de hemel.\nDank U dat U ons serieus neemt als partners in Uw verbond.\nDat U ons antwoord verwacht.\nHier zijn wij, God.\nMet onze schatten en onze armoede.\nAmen.",
-        "echo_schriftlezing": "De dankbaarheid richt zich op de elementen uit Matteüs 2: de ster, de reis, de vreemdelingen en de stoffelijke gaven.",
+        "aanspraak": "Onze God, wij danken U voor het licht dat toch doorbreekt,",
+        "verbinding_verkondiging": "Dank voor de wijzen en de open handen die ons leren geven.",
+        "tekst": "Mijn God, ik dank U voor de dingen die wij zo vaak vergeten omdat ze er 'gewoon' zijn.\nIk dank U niet voor onze rijkdom, want die maakt ons vaak blind.\nIk dank U niet voor onze gezondheid, want die is broos en tijdelijk.\nMaar ik dank U voor het feit dat wij hier mogen zijn, samen, in al onze verscheidenheid.\n\nIk dank U voor de mensen die van ver komen, zoals de wijzen.\nVoor de vreemdelingen die onze grenzen oversteken en ons laten zien wat wij zelf niet meer zagen.\nZij leren ons dat U niet het bezit bent van de insiders, maar de God van de hele wereld.\n\nIk dank U voor de taal van de handen.\nVoor de ogen die luisteren en de lichamen die spreken.\nVoor het koor hier aanwezig, dat ons leert dat aanbidding geen kwestie is van mooie zinnen, maar van openheid.\nDank U dat U geen God van het kale intellect bent, maar een God die gezien en gevoeld wil worden.\n\nIk dank U voor het goud van de liefde die gedeeld wordt.\nVoor de wierook van de gebeden die opstijgen uit benauwde kamers.\nVoor de mirre van de troost die wij elkaar kunnen geven bij het graf.\n\nU hebt ons niet met lege handen naar huis gestuurd.\nU hebt ons Uzelf gegeven, in een Kind, in Brood, in Wijn.\nDank U dat wij niet alleen toeschouwers zijn, maar dat wij mee mogen doen in Uw verhaal.\nDat wij, ondanks onze stijve knieën, toch kunnen knielen.\nDat wij, ondanks onze zuinigheid, toch kunnen geven.\nDank U dat U ons gebruikt, niet omdat wij zo goed zijn, maar omdat U zo genadig bent.",
+        "echo_schriftlezing": "De geschenken (goud, wierook, mirre) en de universele reikwijdte van het heil.",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "Grote God, U die de wereld in Uw handen houdt,",
+        "aanspraak": "Onze God, wij leggen de wereld in Uw open handen,",
         "cirkels": {
           "wereld": {
             "themas": [
-              "Politieke macht",
-              "Oorlogsgeweld",
-              "Vluchtelingen"
+              "Politieke leiders",
+              "Oorlog Oekraïne/Gaza",
+              "Macht vs. Dienstbaarheid"
             ],
-            "tekst": "Wij bidden voor de wereld van de macht.\nVoor degenen die op de tronen zitten, in de paleizen en de regeringsgebouwen.\nZij die als Herodes vasthouden aan hun gelijk en hun positie.\nZij die angst zaaien om te kunnen oogsten.\nOntmasker hen, God.\nLaat hun plannen mislukken als die plannen leiden tot de dood van onschuldigen.\nWij bidden voor de slachtoffers van hun spellen.\nVoor de mensen in de modder van Gaza, weggespoeld en vergeten.\nVoor de soldaten in de kou van het oostfront, die ook iemands zonen zijn.\nU bent de Koning van de volken.\nLaat zien dat er een andere macht bestaat: de macht van de weerloze liefde.\nGeef ons de moed om die macht te dienen, en niet de macht van het zwaard."
+            "tekst": "Wij bidden voor de wereld en haar koningen.\nKijk naar hen, God, de Herodessen van deze tijd.\nZij die krampachtig vasthouden aan hun tronen, die angst zaaien om macht te oogsten.\nZij die grenzen sluiten en muren bouwen.\nWij bidden U: ontmasker hun leugens.\nLaat hun plannen die gericht zijn op dood en verwoesting mislukken.\n\nWij bidden voor de diplomaten, de zoekers, de 'wijzen' die achter de schermen proberen vrede te stichten in Oekraïne en het Midden-Oosten.\nGeef hen de volharding van de sterrenkijkers.\nDat zij niet opgeven als de mist hangt over de onderhandelingstafels.\nDat zij wegen vinden waar wij alleen doodlopende stegen zien.\n\nWij bidden voor de slachtoffers van het grote spel.\nVoor de moeders in Kyiv, de kinderen in Gaza, de vluchtelingen aan de grenzen van Europa.\nU bent toch de Koning van de Vrede?\nLaat die vrede dan geen papieren verdrag zijn, maar brood op de plank en een dak boven het hoofd.\nMaak ons onrustig, God, zolang wij vrede hebben ten koste van anderen."
           },
           "kerk": {
             "themas": [
               "Schepping",
-              "Klimaat",
-              "Techniek"
+              "Westlandse kassen",
+              "Techniek en Bio-ethiek"
             ],
-            "tekst": "Wij bidden voor Uw schepping, die kreunt en kraakt.\nWij hebben de aarde onderworpen, maar wij zijn vergeten haar te dienen.\nHet water stijgt, de stormen razen, en wij bouwen onze dijken hoger.\nWij bidden voor ons vernuft en onze techniek.\nVoor de glastuinbouw hier, die zoekt naar nieuwe energie.\nVoor de keuzes die wij maken tussen winst en waarde.\nLeer ons rentmeesters te zijn die niet roven, maar verzorgen.\nDat wij de aarde niet uitputten voor onze welvaart, maar haar doorgeven als een geschenk.\nU gaf ons de sterren en de gewassen.\nLaat ons niet eindigen in een wereld van beton en plastic.\nMaak ons gevoelig voor het ritme van Uw schepping, die vraagt om rust en herstel."
+            "tekst": "Wij bidden voor Uw schepping en onze techniek.\nHier in het Westland, waar wij de natuur naar onze hand zetten.\nWaar wij de nacht verlichten en de seizoenen dwingen.\nWij danken U voor de vindingrijkheid van de mens, voor de oogst die de wereld voedt.\nMaar wij bidden U ook: bewaar ons voor de hoogmoed.\n\nLeer ons dat de aarde niet van ons is, maar van U.\nDat wij beheerders zijn, geen eigenaars.\nWij bidden voor de bodem die uitgeput raakt, voor het water dat vervuild wordt.\nVoor de ethische grenzen die wij steeds verder oprekken.\nWij kunnen zoveel: leven maken, leven rekken, leven beëindigen.\nGeef ons de wijsheid om niet alles te doen wat kan.\n\nLaat de techniek dienen en niet heersen.\nLaat onze kassen plekken van groei zijn, niet alleen van winst.\nDat wij het verschil blijven zien tussen het licht dat wij maken en het Licht dat U geeft.\nDat wij de sterren blijven zien boven het glas."
           },
           "naasten": {
             "themas": [
-              "Ziekte",
               "Eenzaamheid",
-              "Uitsluiting"
+              "Ziekte",
+              "Communicatienood"
             ],
-            "tekst": "Wij bidden voor de mensen dichtbij, in de straten van ons dorp, achter de voordeuren waar het licht brandt.\nWij bidden voor hen die ziek zijn en voor wie het nieuwe jaar begint met een diagnose in plaats van een belofte.\nWij bidden voor hen die zich niet gezien voelen.\nVoor wie doof is in een wereld die schreeuwt.\nVoor wie eenzaam is in een wereld die feestviert.\nVoor de vreemdeling die hier werkt maar niet woont.\nU bent een God die ziet.\nOpen onze ogen voor de naaste die wij liever voorbijlopen.\nMaak onze handen tot instrumenten van Uw troost.\nNiet met goedkope woorden, maar met trouwe aanwezigheid."
+            "tekst": "Wij bidden voor de mensen dichtbij, in hun concrete pijn.\nVoor hen die leven in een wereld zonder geluid, en die zich vaak eenzaam voelen tussen de horenden.\nVoor hen die wel kunnen horen, maar naar wie nooit geluisterd wordt.\nDoorbreek de muren van ons isolement.\n\nWij bidden voor de zieken in onze gemeente, thuis of in het ziekenhuis.\nVoor hen die het nieuwe jaar zijn begonnen met een slechte uitslag of een lege stoel.\nU weet wie zij zijn.\nZij hebben geen mooie woorden nodig, maar een hand die vasthoudt, een blik die begrijpt.\nWees Gij die hand via ons.\n\nWij bidden voor de mensen die vastlopen in de systemen van onze maatschappij.\nDie vermalen worden door bureaucratie, die wachten op een huis, op zorg, op een verblijfsvergunning.\nVoor hen die in de mist lopen en geen ster zien.\nWees hun Gids.\nEn geef ons de moed om naast hen te gaan lopen, in plaats van over hen te oordelen."
           },
           "eigen_gemeente": {
             "themas": [
-              "Gemeente zijn",
+              "NoorderBrug",
               "Inclusiviteit",
               "Toekomst"
             ],
-            "tekst": "Tenslotte bidden wij voor onszelf, hier op deze plek.\nVoor deze gemeente, NoorderBrug, en voor allen die hier te gast zijn.\nBehoed ons voor de arrogantie dat wij 'het' hebben.\nBehoed ons voor de geslotenheid van een club die niemand meer binnenlaat.\nMaak ons tot een herberg langs de weg, waar zoekers zoals de wijzen op adem kunnen komen.\nLeer ons te communiceren over grenzen heen, met gebaar en blik, met hart en ziel.\nDat wij een afspiegeling mogen zijn van Uw grote Koninkrijk, waar niemand wordt buitengesloten.\nGeef ons een gezegend jaar, niet zonder zorgen, maar niet zonder U."
+            "tekst": "Tenslotte bidden wij voor onszelf, hier in 's-Gravenzande.\nVoor deze gemeente, de NoorderBrug.\nDat wij geen gesloten club zijn van mensen die het allemaal weten.\nMaar een herberg langs de weg, waar de deur openstaat.\n\nLeer ons om te gaan met verschillen.\nTussen doof en horend, tussen jong en oud, tussen traditioneel en modern.\nDat wij niet krampachtig vasthouden aan onze eigen vormen, zoals Herodes aan zijn macht.\nMaar dat wij, net als de wijzen, durven reizen.\nDat wij durven veranderen.\nDat wij onze schatkisten openen voor elkaar.\n\nZegen de samenwerking vandaag, het zingen en het gebaren.\nLaat het geen eenmalig evenement zijn, maar een oefening in Uw Koninkrijk.\nWaar iedereen wordt verstaan en iedereen wordt gezien.\nMaak ons tot mensen van het Licht, niet in woorden, maar in daad en waarheid."
           }
         },
-        "stilte_instructie": "In de stilte leggen wij onze eigen namen en vragen voor U neer.",
-        "overgang_onze_vader": "Zo bidden wij, hardop en in stilte, en vatten wij alles samen in de woorden die Jezus ons gaf:",
+        "stilte_instructie": "Laten wij nu stil zijn, en in de stilte onze eigen 'andere weg' zoeken naar U toe.",
+        "overgang_onze_vader": "Zo bidden wij, met open handen en open harten, de woorden die Jezus ons heeft geleerd:",
         "onze_vader": "Onze Vader die in de hemelen zijt,\nUw naam worde geheiligd.\nUw koninkrijk kome.\nUw wil geschiede, op aarde zoals in de hemel.\nGeef ons heden ons dagelijks brood.\nEn vergeef ons onze schulden,\nzoals ook wij onze schuldenaren vergeven.\nEn leid ons niet in verzoeking,\nmaar verlos ons van de boze.\nWant van U is het koninkrijk\nen de kracht en de heerlijkheid\nin eeuwigheid.\nAmen."
       }
     },
     "dialogische_elementen": {
       "directheid_voorbeelden": [
-        "Wij zeggen: 'Laat het dan zien.'",
-        "Onze God, wij moeten praten.",
-        "Wie spreekt de waarheid, God?",
-        "Steek het stro van onze vroomheid in brand."
+        "Hier zijn wij dan.",
+        "U bent de God van het recht, zegt U. Bewijs het dan.",
+        "Wij vragen U niet om een mooi verhaal.",
+        "Kijk ons aan. Zie ons staan."
       ],
       "vraag_antwoord_structuren": [
-        "Waarom komen zij eigenlijk? ... Misschien komen wij wel omdat wij het niet meer weten.",
-        "U zegt: 'Vrede op aarde.' De aarde zegt: 'Oorlog.' Wie spreekt de waarheid?",
-        "Zijn wij doof geworden? Of zwijgt U?"
+        "Waarom zijn wij eigenlijk gekomen? Uit gewoonte...? Uit angst...? Of uit hoop...?",
+        "U zei toch: 'Vrede op aarde'? Waar is die vrede als raketten op Kyiv vallen...?",
+        "Of wacht U op ons? Is Uw licht afhankelijk van onze weerkaatsing?"
       ],
       "derde_persoon_gebruik": [
-        "De mensen komen dit huis binnen. ... Onze God, hier zijn wij dan.",
-        "Er staat geschreven... Maar wij slaan de krant open.",
-        "Zij die als Herodes vasthouden aan hun gelijk... Ontmasker hen, God."
+        "De profeet Jesaja roept het ons toe... Dat wordt gelezen. Dat wordt geloofd. [overgang] Maar wij kijken naar buiten...",
+        "Zij zeggen dat U in het licht woont. [overgang] Wij zien vaak alleen het kunstlicht...",
+        "Mensen komen uit de mist... [overgang] Onze God, ontferm U..."
       ],
       "god_laten_spreken": [
-        "U zegt: 'Ik ben het Licht.'",
-        "U zegt: 'Vrede op aarde.'",
-        "U vraagt ons niet om engelen te zijn."
+        "U zei toch: 'Vrede op aarde'?",
+        "De profeet roept: 'Sta op en schitter'",
+        "U bent de God van het recht, zegt U."
       ],
       "tegenspraak": [
-        "De profeet roept: 'Sta op en schitter'. Maar wij zien modder in Gaza.",
-        "Wij zingen over een Ster, maar wij navigeren op onze eigen welvaart.",
-        "Wij kijken naar onze handen... handen die zich sluiten voor de nood."
+        "Zij zeggen: 'Wij brengen veiligheid.' Wij zien angst.",
+        "Zij zeggen: 'De economie moet draaien.' Wij zien mensen die vermalen worden.",
+        "Zij zeggen dat U in het licht woont. Wij zien vaak alleen het kunstlicht."
       ],
       "elementaire_beelden": [
-        "Kassen die oranje oplichten",
-        "Modder in Gaza",
-        "Stro van vroomheid",
-        "Voeten in de klei",
-        "Beton en plastic"
+        "Huis van steen en glas",
+        "Mist van de polder",
+        "Oranje gloed boven de kassen",
+        "Stro en graan",
+        "Koffie en oliebollen",
+        "Stijve knieën"
       ],
       "verantwoordelijkheid_focus": [
-        "Niet om de verantwoordelijkheid bij U te dumpen.",
-        "Wij kijken naar onze eigen handen.",
-        "Geef ons de moed om die macht te dienen (actief).",
-        "Leer ons rentmeesters te zijn die niet roven."
+        "Maak ons onrustig, God, zolang wij vrede hebben ten koste van anderen.",
+        "Als wij het lichaam van Christus zijn, waarom zijn onze handen dan zo vaak verlamd?",
+        "Wees Gij die hand via ons."
       ]
     }
   },
@@ -3703,103 +3703,100 @@
     }
   },
   "14_gebeden_profetisch": {
-    "stijl_analyse": "Deze gebeden volgen de theologische grammatica van Walter Brueggemann: ze bewegen van een eerlijke erkenning van onze verdoving (het 'koninklijke bewustzijn' van productie en consumptie) naar een rauwe klacht over de onrechtvaardigheid die wij liever negeren. De taal is zintuiglijk en direct, waarbij de specifieke Westlandse context (kassenlicht vs. Ster, hard werken vs. genade) en de aanwezigheid van het dovenpastoraat (zien vs. horen) als theologische hefbomen worden gebruikt om de status quo te bevragen.",
+    "stijl_analyse": "De gebeden volgen het ritme van oriëntatie, desoriëntatie en nieuwe oriëntatie. Er is gebruikgemaakt van de lokale Westlandse metaforen (glas, kunstlicht, grenzen) en de specifieke context van het dovenpastoraat (zien, gebaar, stilte). De toon is profetisch: God wordt aangesproken op zijn beloften te midden van de geopolitieke en persoonlijke duisternis van januari 2026.",
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "God die onze plafonds doorbreekt, Gij ongetemd Licht,",
-        "tekst": "Wij komen binnen uit het rijk van de maakbaarheid.\nOnze hoofden zitten nog vol met de agenda’s van gisteren en de targets van morgen.\nWij dragen de eeltlagen van onze prestaties als een pantser om onze ziel.\nIn dit Westland, waar wij de nacht verlichten met onze eigen lampen,\nwaar wij de seizoenen naar onze hand zetten en de groei dwingen,\nzijn wij vergeten hoe het is om te wachten op een ster die wij niet zelf hebben aangestoken.\n\nWij zijn verslaafd aan onze eigen kracht.\nWij zijn verdoofd door onze welvaart.\nWij geloven dat wij veilig zijn zolang wij maar blijven bouwen, blijven groeien, blijven draaien.\nMaar hier, op de drempel van Uw huis, stokt onze adem.\n\nOntmasker ons, God.\nPel de lagen van onze zelfgenoegzaamheid af.\nSnoer onze monden die zo vol zijn van onze eigen oplossingen.\nWij leggen onze maskers van succes neer.\nWij leggen onze angst voor stilte neer.\n\nBreek in, dwars door onze betonnen zekerheden heen.\nWij zijn hier niet om bevestigd te worden in wie wij zijn,\nmaar om ontregeld te worden door wie Gij zijt.\nMaak ons leeg, zodat er ruimte komt voor een ander soort Koningschap.\n\nAmen.",
-        "echo_schriftlezing": "Jesaja 60 (De duisternis bedekt de aarde, maar over u gaat de Heer op) vs. het kunstlicht van de kassen.",
+        "aanspraak": "Gij die inbreekt in onze gesloten systemen,",
+        "tekst": "Hier zijn wij, bijeengekomen in dit huis van steen en glas.\nWij komen uit de wereld van de maakbaarheid,\nwaar wij de seizoenen naar onze hand zetten,\nwaar wij de nacht verdrijven met onze eigen kunstzonnen,\nwaar de economie nooit slaapt en de productie altijd voorgaat.\n\nWij dragen de harnassen van onze prestaties.\nWij dragen de maskers van 'het gaat goed'.\nWij hebben onze agenda's dichtgetimmerd en onze grenzen bewaakt.\nWij zijn kinderen van Herodes: bang om de controle te verliezen,\nbang voor wat vreemd is, bang voor de stilte.\n\nMaar Gij, Ongetemde,\nGij stoort U niet aan onze roosters.\nGij breekt in met een ster die wij niet kunnen programmeren.\nGij daagt ons uit met een Licht dat niet van ons is.\n\nScheur ons los uit de greep van de waan van de dag.\nDoof het lawaai van onze eigen gelijkheid.\nMaak ons leeg, maak ons arm, maak ons stil.\nZodat wij niet langer staren naar onze eigen spiegelbeelden,\nmaar zien wat Gij ons toont.\n\nWij leggen onze macht neer op de drempel.\nWij openen onze handen, onwennig en naakt.\nKom binnen. Breek open. Verschijn.\n\nAmen.",
+        "echo_schriftlezing": "Verwijzing naar Jesaja 60 (duisternis bedekt de aarde) en Matteüs 2 (Herodes/Jeruzalem in angst).",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "God van de vluchtelingen, Gij die slaapt in de modder,",
+        "aanspraak": "God van de rafelranden, Gij die zegt dat Gij ziet,",
         "focus": "lamentatie_en_protest",
-        "tekst": "Wij roepen U ter verantwoording, God, vanuit de diepte van een wereld die bloedt.\n\nKijk naar het zuiden, naar de strook land waar geen huis meer overeind staat.\nWij zien de beelden van tentenkampen die wegspoelen in de winterstormen.\nKinderen, die al de hel van bommen overleefden, verdrinken nu bijna in de modder.\nDe riolen stromen over, de ziektes breken uit, en de hemel blijft grijs.\nGij die zei: 'Ik heb het gekerm van mijn volk gehoord' – bent U doof geworden?\nWaar is de beloofde uittocht? Waarom zwijgt U terwijl de onschuldigen creperen in de kou?\nWij klagen U aan: Uw belofte van recht lijkt een leugen in het aangezicht van Gaza.\n\nKijk naar het oosten, naar de loopgraven die bevriezen.\nEen derde winter van staal en dood.\nJonge mannen worden vermalen in een gehaktmolen van machtspolitiek.\nDe leiders spelen schaak met mensenlevens terwijl de moeders hun zonen in kisten ontvangen.\nWij zien tirannen die zich vastklampen aan hun tronen, net als Herodes, bereid om alles te vernietigen wat bedreigend is.\nEn Gij, Vredevorst? Waar is Uw zwaard dat de wapens breekt? Waarom laat U de waanzin regeren?\n\nEn kijk naar ons, God. Kijk naar ons in onze warme huizen.\nWij, die het nieuws consumeren als entertainment bij de koffie.\nWij, die even zuchten en dan weer doorscrollen.\nWij zijn medeplichtig aan de stilte.\nWij bouwen onze zekerheid op systemen die anderen uitbuiten.\nWij zijn bang voor de vreemdeling die, net als de Wijzen, aan onze grenzen klopt.\nWij willen het Licht wel zien, maar we willen niet dat het ons geld kost.\nWij zijn Herodes in het diepst van onze gedachten: bang om te verliezen wat we hebben.\n\nVergeef ons niet te snel, God.\nLaat de pijn schuren.\nLaat ons niet wegkomen met goedkope troost.\nMaar hoor ons schreeuwen, dwars door onze eigen hypocrisie heen:\nHeer, ontferm U.\nChristus, ontferm U.\nHeer, ontferm U.\n\nAmen.",
-        "echo_schriftlezing": "Matteüs 2 (De kindermoord en de vlucht) gespiegeld aan de actualiteit.",
+        "tekst": "Wij roepen U aan vanuit de diepte, want het water staat ons aan de lippen.\nKijk naar deze wereld, God. Zie wat wij ervan gemaakt hebben.\n\nVoor de plekken waar de winter koud is en de harten nog kouder.\nVoor Oekraïne, waar het front bevroren is maar het bloed blijft vloeien.\nWaar vrede een politiek spelletje is geworden en gerechtigheid een vergeten woord.\nVoor Gaza, waar het puin het enige uitzicht is en kinderen spelen in de schaduw van de dood.\nGij die beloofde: 'Sta op en schitter' – waarom blijft het zo donker?\nWaarom zwijgt de hemel terwijl de aarde schudt van de bommen?\nZijn de tranen van de onschuldigen dan niet genoeg om U wakker te maken?\n\nVoor de mensen die verdwalen in de mist van ons eigen land.\nVoor hen die vastlopen in de bureaucratie, die vermalen worden door systemen van wantrouwen.\nVoor degenen die roepen maar niet gehoord worden, omdat ze de verkeerde taal spreken,\nof omdat ze geen stem hebben in het geweld van de meerderheid.\nVoor de doven in een wereld die alleen maar luistert naar lawaai.\nVoor de eenzamen achter de voordeuren van onze welvarende straten.\nGij die zegt: 'Ik ben het Licht' – waar is uw straal in hun nacht?\n\nEn voor onszelf, God. Voor onze medeplichtigheid.\nWant wij zijn Jeruzalem. Wij zijn de stad die niet gestoord wil worden.\nWij zien de ster, maar wij blijven zitten.\nWij horen het nieuws, maar wij zappen weg.\nWij bidden om vrede, maar wij investeren in onze eigen veiligheid.\nWij zijn bang voor de vreemdeling die met geschenken komt.\nWij zijn bang om te veranderen.\n\nVergeef ons onze verlamming.\nVergeef ons onze harde harten.\nVergeef ons dat wij gewend zijn geraakt aan het donker.\n\nKyrie eleison. Heer, ontferm U.\nChriste eleison. Christus, ontferm U.\nKyrie eleison. Heer, ontferm U.\n\nAmen.",
+        "echo_schriftlezing": "Verwijzing naar de 'duisternis die de volken bedekt' (Jesaja) en de passiviteit van Jeruzalem (Matteüs).",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Geest die de taal van het hart spreekt, Gij visuele stem,",
+        "aanspraak": "Geest van Waarheid, Adem die leven wekt,",
         "focus": "doorbreken_verbeelding",
-        "tekst": "Onze oren zitten dicht, God.\nWij horen alleen wat wij willen horen.\nWij horen de stemmen van de markt, de stemmen van de angst, de stemmen van de meerderheid.\nUw Woord ketst af op het pantser van onze logica.\n\nWij bidden U: kom als een schok.\nKom als een visioen dat onze ogen openbreekt.\nZoals Gij spreekt in gebaar en mimiek, voorbij de klank van woorden,\nleer ons zo te kijken naar Uw Schrift.\n\nSloop onze vooringenomenheid.\nGeef ons de verbeelding van de profeten terug.\nDat wij in deze oude teksten geen vrome geschiedenis lezen,\nmaar een gevaarlijk script voor vandaag.\nMaak het Woord vlees, maak het zichtbaar, maak het tastbaar.\nTotdat wij niet alleen knikken met ons hoofd,\nmaar in beweging komen met onze voeten.\n\nAmen.",
-        "echo_schriftlezing": "Efeziërs 3 (Het geheimenis dat onthuld/gezien wordt).",
+        "tekst": "Onze oren zitten dichtgeplamuurd met onze eigen meningen.\nOnze ogen zijn verblind door het kunstlicht van onze welvaart.\nWij kunnen Uw Woord niet verstaan als Gij het niet vertaalt.\nWij kunnen Uw Licht niet zien als Gij onze blindheid niet geneest.\n\nKom over ons als een stormwind.\nBlaas de mist weg die ons zicht beneemt.\nBreek onze verbeelding open, zodat wij durven dromen dat het anders kan.\nLeer ons kijken met de ogen van de magiërs – vol verwondering.\nLeer ons luisteren met de aandacht van de doven – met heel ons lichaam.\n\nMaak het Woord zichtbaar in ons midden.\nNiet als een dode letter, maar als een levend gebaar.\nNiet als een theorie, maar als een Persoon.\nKom, Heilige Geest, en herschep ons.\n\nAmen.",
+        "echo_schriftlezing": "Verwijzing naar Efeziërs 3 (het geheimenis dat onthuld wordt) en het 'zien' van het kind.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "God van de verrassende wending, Gij die ons vindt,",
-        "verbinding_verkondiging": "Dank voor de 'Wijzen' die ons voorgingen in het zien.",
-        "tekst": "Tegen alle waarschijnlijkheid in danken wij U.\nWant de wereld is duister, en toch breekt het Licht door.\nDe machthebbers schreeuwen, en toch zingt het Kind.\n\nWij danken U voor de genade van de desoriëntatie.\nDat U ons niet laat zitten in onze vastgeroeste patronen.\nDank U voor de Ster die ons weglokt uit onze veilige burchten.\nDank U dat U zich niet laat opsluiten in onze theologie of onze kerkgebouwen,\nmaar dat U zich laat vinden door vreemdelingen, door zoekers, door mensen met open handen.\n\nWij danken U voor het geschenk van de anders-begaafden in ons midden.\nVoor hen die horen met hun ogen en spreken met hun handen.\nZij leren ons dat Uw taal ruimer is dan onze woorden.\nZij breken onze arrogantie dat wij 'normaal' zijn.\nIn hun stilte klinkt Uw stem luider dan in ons lawaai.\n\nWij danken U dat de schatten van de wereld – het goud, de wierook, de mirre –\nniet bedoeld zijn om op te potten in bankkluizen,\nmaar om verspild te worden aan Uw voeten.\nDank U dat wij mogen geven.\nDat wij niet hoeven vast te houden.\nDat wij, in een wereld van 'hebben, hebben, hebben',\nhet geheim van het 'zijn' mogen ontdekken.\n\nU bent de God die ons leven opnieuw oriënteert.\nVan angst naar vertrouwen.\nVan kramp naar overgave.\nVan Herodes naar Jezus.\n\nWij loven U, niet omdat alles goed is,\nmaar omdat U goed bent, dwars door alles heen.\n\nAmen.",
-        "echo_schriftlezing": "Matteüs 2 (De aanbidding en de geschenken).",
+        "aanspraak": "Gij, Vreemde Koning, Gij die anders bent,",
+        "verbinding_verkondiging": "Dank voor de 'omkering': de heidenen die ons de weg wijzen en het zichtbare woord.",
+        "tekst": "Wij danken U dat U ons niet met rust laat.\nWij danken U dat U de grenzen die wij trekken – tussen volk en volk, tussen horend en doof, tussen binnen en buiten – lachend oversteekt.\nDank U wel, dat U zich laat vinden door mensen die niet de juiste papieren hebben.\nDat U zich laat aanbidden door sterrenkijkers, door zoekers, door vreemdelingen.\nZij houden ons een spiegel voor. Zij leren ons wat geloven is: op reis gaan, knielen en geven.\n\nWij danken U voor het zichtbare woord.\nDat U niet in de hemel bent gebleven als een abstract idee,\nmaar vlees en bloed bent geworden, tastbaar, kwetsbaar, een kind op een schoot.\nDank U dat Uw taal niet beperkt is tot onze woorden,\nmaar dat U spreekt in het brood dat wij breken,\nin de hand die wij reiken,\nin het gebaar dat wij maken.\n\nDank U voor de gemeenschap hier, voor de open handen en de open harten.\nDat wij mogen oefenen in Uw Koninkrijk, waar niemand wordt buitengesloten.\nDank U voor het goud van de liefde, de wierook van het gebed en de mirre van het lijden dat gedeeld wordt.\nU overlaadt ons met schatten die wij niet verdiend hebben.\nU zet ons in het licht, niet om te pronken, maar om te weerkaatsen.\n\nNeem ons leven, met al onze beperkingen en al onze mogelijkheden,\nen maak het tot een geschenk voor U.\n\nAmen.",
+        "echo_schriftlezing": "Verwijzing naar de geschenken (goud/wierook/mirre) en de universele aanbidding.",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "God van alle volken, Gij Grensdoorbreker,",
+        "aanspraak": "God van alle volken en van elke ademtocht,",
         "cirkels": {
           "wereld": {
             "themas": [
-              "Machtsverschuivingen",
-              "Klimaat",
-              "Oorlog"
+              "Geopolitiek",
+              "Oekraïne/Gaza",
+              "Machthebbers"
             ],
-            "tekst": "Wij bidden voor de wereld die kraakt in zijn voegen.\nVoor de plekken waar de aarde zelf in opstand komt tegen ons misbruik.\nVoor de mensen die in 2024 alles verloren door wind en water.\nMaak ons rentmeesters in plaats van rovers.\n\nWij bidden voor de tronen van de macht.\nVoor de leiders in Washington, Moskou, Jeruzalem en Den Haag.\nZij die, net als Herodes, regeren vanuit de angst om controle te verliezen.\nGod, stuur hen wijzen op hun pad.\nStuur hen dromen die hen wakker schudden.\nOntwapen hun handen en ontdooi hun harten.\nDat zij niet kiezen voor de weg van het zwaard, maar voor de andere weg, de weg terug naar menselijkheid."
+            "tekst": "Wij bidden voor de wereld die zucht onder de macht van de Herodes-figuren van deze tijd.\nVoor leiders die vastzitten in hun eigen angst en paranoia, die liever doden dan delen.\nVoor de diplomaten en de zoekers naar vrede, de 'wijzen' van nu: geef hen de moed om een andere weg te gaan, dwars door de cynische logica van het geweld heen.\nWij bidden voor de plekken waar het licht gedoofd lijkt.\nVoor de kelders in Kyiv, voor de tentenkampen in Gaza.\nLaat Uw ster daar schijnen, tegen alle wanhoop in.\nLaat gerechtigheid geen droom blijven, maar werkelijkheid worden.\nSloop de muren van haat die wij hebben opgebouwd.\nLeer de volken dat macht niet zit in raketten, maar in recht."
           },
           "kerk": {
             "themas": [
               "Wereldwijde kerk",
-              "Dovenpastoraat",
-              "Inclusiviteit"
+              "Eenheid in diversiteit",
+              "Dovenpastoraat"
             ],
-            "tekst": "Wij bidden voor Uw lichaam op aarde, de kerk.\nVooral daar waar zij vervolgd wordt of in de verdrukking zit.\nMaar ook hier, waar zij dreigt in te slapen of irrelevant te worden.\n\nSpeciaal bidden wij voor de gemeenschap van doven en slechthorenden.\nVergeef ons onze horende arrogantie.\nVergeef ons dat wij hen vaak als gasten zien in 'ons' huis, in plaats van als profeten die ons 'Uw' huis tonen.\nZegen het werk van het Interkerkelijk Dovenpastoraat.\nLaat hun handen taal worden die ons allemaal verbindt.\nMaak van Uw kerk een plek waar niemand buitengesloten wordt vanwege beperking, taal of afkomst.\nDat wij werkelijk een huis van gebed voor álle volken zijn."
+            "tekst": "Wij bidden voor Uw kerk, dat vreemde lichaam van Christus, verspreid over de aarde.\nMaak ons los van onze veilige tradities als die ons verhinderen om U te zien.\nWij bidden specifiek voor de verbinding tussen doven en horenden.\nVergeef ons als wij Uw evangelie hebben versmald tot woorden alleen.\nOpen onze ogen voor de rijkdom van de stilte en de kracht van het gebaar.\nLaat Uw kerk een plek zijn waar niemand een vreemdeling is, waar elke taal – gesproken of getekend – Uw lof zingt.\nMaak ons tot een stad op een berg, niet om onszelf te vieren, maar om licht te geven aan iedereen die in het donker tast."
           },
           "naasten": {
             "themas": [
+              "Ziekte/Zorg",
               "Eenzaamheid",
-              "Armoede",
-              "Ziekte"
+              "Mentale mist"
             ],
-            "tekst": "Wij bidden voor de mensen dichtbij, achter de voordeuren van onze straten.\nVoor hen voor wie de feestdagen een hel van eenzaamheid waren.\nVoor hen die de rekening van de energie niet meer kunnen betalen, terwijl de buren nieuwe auto's kopen.\nZie de verborgen armoede in ons rijke dorp.\n\nWij bidden voor de zieken, voor hen die wachten op uitslagen.\nVoor de families die rouwen en voor wie het nieuwe jaar leeg voelt.\nWees voor hen geen goedkope pleister, maar een Aanwezigheid die meetraagt.\nGeef ons de moed om niet weg te kijken, maar om – net als de wijzen – onze schatkisten te openen:\nonze tijd, onze aandacht, onze liefde."
+            "tekst": "Wij bidden voor de mensen dichtbij, die leven in de mist.\nVoor hen voor wie 2026 niet begint met vuurwerk, maar met angst voor de uitslag van het ziekenhuis.\nVoor hen die het licht in hun hoofd kwijt zijn geraakt, die vechten tegen depressie of dementie.\nVoor hen die zich onzichtbaar voelen, ook al staan ze midden in de menigte.\nWij leggen de zieken aan U voor... (stilte).\nWij leggen de rouwenden aan U voor... (stilte).\nWees Gij hun oriëntatiepunt als alle vaste gronden wegvallen.\nWees de ster die blijft staan boven hun huis.\nEn geef ons de moed om niet weg te kijken, maar om binnen te gaan en er te zijn."
           },
           "eigen_gemeente": {
             "themas": [
-              "Westlandse mentaliteit",
-              "Jeugd",
+              "Westlandse context",
+              "Prestatiedruk",
               "Toekomst"
             ],
-            "tekst": "Wij bidden voor onszelf, hier in 's-Gravenzande.\nVoor onze gemeente NoorderBrug.\nBreek onze Westlandse hardheid.\nLeer ons dat onze waarde niet ligt in hoeveel wij produceren, maar in wie wij zijn in U.\nZegen onze jongeren, die opgroeien in een wereld vol prestatiedruk en onzekerheid.\nWees hun Ster, hun GPS, als ze niet weten welke kant ze op moeten.\n\nGeef ons een jaar van durf.\nNiet om alles bij het oude te laten.\nMaar om, gewaarschuwd door de droom, langs een andere weg naar huis te gaan.\nEen weg van genade, van open handen en van licht."
+            "tekst": "Wij bidden voor onszelf, hier in 's-Gravenzande, in het Westland.\nVoor onze gemeenschap van harde werkers.\nBewaar ons ervoor dat wij onze ziel verliezen in de jacht naar meer.\nLeer ons dat onze waarde niet afhangt van wat wij produceren, maar van wie wij zijn in U.\nZegen de handen die werken in de kassen, in de zorg, in het onderwijs.\nMaar zegen ook de handen die leeg zijn, die niet mee kunnen komen, die rusten.\nMaak ons tot een 'NoorderBrug' die werkelijk verbindt.\nDat wij in dit nieuwe jaar niet krampachtig vasthouden aan wat was, maar vol verwachting op reis gaan naar wat komt.\nDat wij onze schatkisten durven openen voor de ander."
           }
         },
-        "stilte_instructie": "In de stilte leggen wij onze eigen onrust en onze eigen hoop voor U neer...",
-        "overgang_onze_vader": "Zo bidden wij, samen met de stemmen die spreken en de handen die gebaren, het gebed dat Jezus ons leerde:",
-        "onze_vader": "Onze Vader die in de hemel zijt,\nUw naam worde geheiligd.\nUw koninkrijk kome.\nUw wil geschiede, op aarde zoals in de hemel.\nGeef ons heden ons dagelijks brood.\nEn vergeef ons onze schulden,\nzoals ook wij onze schuldenaars vergeven.\nEn leid ons niet in verzoeking,\nmaar verlos ons van de boze.\nWant van U is het koninkrijk\nen de kracht en de heerlijkheid\ntot in eeuwigheid.\nAmen."
+        "stilte_instructie": "In de stilte zoeken wij U, voorbij de woorden.",
+        "overgang_onze_vader": "Zo bidden wij, met open handen en met de woorden die Jezus ons heeft geleerd – zichtbaar en hoorbaar:",
+        "onze_vader": "Onze Vader die in de hemelen zijt,\nUw naam worde geheiligd.\nUw Koninkrijk kome.\nUw wil geschiede, op aarde zoals in de hemel.\nGeef ons heden ons dagelijks brood.\nEn vergeef ons onze schulden,\nzoals ook wij onze schuldenaren vergeven.\nEn leid ons niet in verzoeking,\nmaar verlos ons van de boze.\nWant van U is het Koninkrijk\nen de kracht en de heerlijkheid\nin eeuwigheid. Amen."
       }
     },
     "profetische_elementen": {
       "gevaarlijke_werkwoorden": [
-        "Ontmaskeren",
-        "Slopen",
-        "Ontregelen",
-        "Creperen",
-        "Wegspoelen",
-        "Openbreken"
+        "inbreken",
+        "scheuren",
+        "sopen",
+        "ontmaskeren",
+        "verstoren"
       ],
       "moderne_metaforen": [
-        "Agenda's en targets",
-        "Eeltlagen van prestaties",
-        "Nieuws consumeren als entertainment",
-        "GPS voor de ziel",
-        "Scrollen",
-        "Kassenlicht vs. Ster"
+        "kunstzonnen",
+        "agenda's dichtgetimmerd",
+        "bevroren front",
+        "zappen",
+        "bureaucratie"
       ],
       "anti_status_quo": [
-        "Wij zijn verslaafd aan onze eigen kracht",
-        "Wij zijn Herodes in het diepst van onze gedachten",
-        "Maak ons rentmeesters in plaats van rovers",
-        "Vergeef ons onze horende arrogantie"
+        "Wij zijn kinderen van Herodes",
+        "Economie die nooit slaapt",
+        "Vrede is een politiek spelletje geworden"
       ]
     }
   },
@@ -3967,6 +3964,124 @@
       ]
     }
   },
+  "15_bezinningsmoment": {
+    "kindermoment_opties": [
+      {
+        "type": "Symbolisch",
+        "titel": "Goud in je Handen",
+        "object": {
+          "naam": "Een stuk goudkleurige stof of een goudklomp (pyriet/nepgoud)",
+          "uitleg": "Goud staat voor wat ons het meest kostbaar is, maar ook voor de hardheid van bezit."
+        },
+        "focus_schriftlezing": "Matteüs 2:11 - 'Zij openden hun schatkisten en boden hem geschenken aan: goud...'",
+        "verhaal_script": "(Houd het goudkleurige voorwerp zichtbaar omhoog, zodat het licht vangt)\n\nKijk eens naar dit goud. In het Westland weten we wat werken is, wat waarde heeft. Goud is mooi, het glanst. Maar voel eens in gedachten... goud is ook koud. En het is hard. Zolang je het voor jezelf houdt, in een kluis, blijft het koud en hard.\n\nDe wijzen uit het Oosten deden iets vreemds. Ze hielden hun goud niet vast om hun eigen macht te vergroten, zoals koning Herodes deed. Nee, ze legden het neer. Ze gaven het weg aan een kind.\n\nEpifanie, de verschijning van Jezus, vraagt ons vandaag: wat is jouw 'goud'? Je tijd? Je aandacht? Je talent? Zolang je het vasthoudt, is het koud bezit. Op het moment dat je het weggeeft – aan God, aan een ander – begint het pas écht te schitteren. Zoals de profeet Jesaja zegt: 'Sta op en schitter'. Niet door te hebben, maar door te delen.",
+        "afbeelding_idee": "Een close-up foto van twee handen die een goudklomp of gouden licht doorgeven aan andere handen."
+      },
+      {
+        "type": "Interactief",
+        "titel": "Van Vuist naar Open Hand",
+        "object": {
+          "naam": "De eigen handen",
+          "uitleg": "Sluit direct aan bij de naam van het koor 'Open Handen' en de lichamelijke ervaring van kramp vs. ontspanning."
+        },
+        "focus_schriftlezing": "Matteüs 2:11 - 'Zij openden hun schatkisten'",
+        "verhaal_script": "(Nodig iedereen uit, doof en horend, om mee te doen. Maak oogcontact en gebruik duidelijke gebaren)\n\nIk wil u vragen om allemaal uw handen eens stevig tot vuisten te ballen. Doe maar mee. Knijp ze maar fijn. Voel de spanning in je vingers, in je armen. \n\nDit is de houding van Herodes. De houding van angst. 'Dit is van mij, en niemand pakt het af.' Als je zo leeft, met gebalde vuisten, kun je niet ontvangen. En je kunt ook niemand een hand geven.\n\n(Pauzeer even)\n\nEn open nu uw handen. Leg ze open op uw schoot, of houd ze omhoog. Voel het verschil? De spanning vloeit weg. \n\nDit is de houding van de Wijzen. En dit is de houding van geloven. Vandaag is het koor 'Open Handen' bij ons. Laten wij deze dienst vieren met deze houding. Niet krampachtig vasthouden aan wat was, maar open voor wat God ons in 2026 wil geven. Alleen met open handen kun je het Licht ontvangen.",
+        "afbeelding_idee": "Een artistiek zwart-wit beeld: links een gebalde vuist, rechts een open handpalm die licht vangt."
+      },
+      {
+        "type": "Zintuiglijk",
+        "titel": "De Geur van Gebed",
+        "object": {
+          "naam": "Wierookkorrels in een schaal (en eventueel een klein beetje smeulend)",
+          "uitleg": "Visueel (rook) en olfactorisch (geur) aspect van de aanbidding, voorbij het woord."
+        },
+        "focus_schriftlezing": "Jesaja 60:6 - 'Zij zullen goud en wierook aandragen'",
+        "verhaal_script": "(Laat de korrels zien, laat ze eventueel door de vingers glijden)\n\nKijk naar deze korrels. Dit is wierookhars. In deze vaste vorm ruik je bijna niets. Het zijn harde, kleine steentjes. Ze doen niets.\n\nMaar... (als het kan: leg er een paar op een kooltje, of beschrijf het beeldend) als ze in aanraking komen met vuur, met warmte, dan gebeurt er iets. Dan veranderen ze. De harde vorm verdwijnt en wordt een wolk die opstijgt. Het wordt een geur die de hele ruimte vult.\n\nJesaja zag de volken komen met wierook. Dat is het beeld van gebed. Soms voelen wij ons als die harde korrels. Koud, in onszelf gekeerd. Misschien door zorgen, of eenzaamheid. Maar als het Licht van Christus ons aanraakt, als Zijn warmte ons raakt, dan mag onze hardheid smelten. Dan wordt ons leven een gebed dat opstijgt. Je hoeft het niet te 'zeggen' met woorden. Je mag er gewoon 'zijn', en de warmte zijn werk laten doen.",
+        "afbeelding_idee": "Een sfeervolle foto van wierookrook die sierlijk opkrult tegen een donkere achtergrond, belicht door een zonnestraal."
+      },
+      {
+        "type": "Verstillend",
+        "titel": "Het Gebaar voor Licht",
+        "object": {
+          "naam": "Gebarentaal (NGT)",
+          "uitleg": "Een moment van stilte waarin een gebaar de boodschap draagt, verbindend voor doven en horenden."
+        },
+        "focus_schriftlezing": "Jesaja 60:1 - 'Sta op, word verlicht'",
+        "verhaal_script": "(Vraag om volledige stilte. Geen orgelspel, geen piano. Alleen visuele focus)\n\nIn onze kerk gebruiken we veel woorden. Preeken, liederen, gebeden. Maar soms is het Licht zo groot, dat woorden tekortschieten. Voor de wijzen was het zien van de ster genoeg.\n\nVandaag, samen met onze dove gasten, willen we stil worden voor God. Niet met onze oren, maar met onze ogen. Ik wil u een gebaar leren. Het gebaar voor 'Licht' of 'Schitteren'.\n\n(Doe het gebaar voor: handpalm open boven je hoofd, vingers spreiden terwijl je de hand naar beneden beweegt, als stralen die neerdalen)\n\nDoe het maar eens in stilte na. \nGods licht... daalt neer... over u.\n\n(Herhaal het samen, langzaam)\n\nLaat het even stil zijn terwijl we dit beeld vasthouden. In een wereld vol lawaai en mist, breekt Gods licht door zonder geluid. Sta op, en schitter.",
+        "afbeelding_idee": "Een tekening of foto van handen die het NGT-gebaar voor 'Licht/Stralen' maken, met pijlen voor de beweging."
+      },
+      {
+        "type": "Verhalend",
+        "titel": "Navigeren in de Mist",
+        "object": {
+          "naam": "Een ouderwets kompas of een smartphone met navigatie",
+          "uitleg": "De link leggen tussen de actuele weersomstandigheden (mist) en de ster."
+        },
+        "focus_schriftlezing": "Matteüs 2:9 - 'En zie, de ster ging hun voor'",
+        "verhaal_script": "(Houd het kompas/telefoon vast)\n\nAfgelopen week was het mistig. Code geel. Misschien heeft u het gemerkt op de weg hiernaartoe of in het Westland. In de mist verlies je je oriëntatie. Je ziet de horizon niet meer. De kassen geven wel licht, die oranje gloed, maar dat licht weerkaatst alleen maar tegen de wolken. Het helpt je niet om de weg te vinden; het verblindt soms zelfs.\n\nDe wijzen uit het Oosten reisden ook door een soort mist. De politieke mist van die tijd, de onzekerheid. Maar zij hadden iets anders dan het diffuse licht van de wereld. Zij hadden een ster. Een punt buiten hun eigen wereld om op te navigeren.\n\nAls wij 2026 ingaan, is er veel mist. Oorlogen, zorgen, politiek gedoe. Je ziet soms geen hand voor ogen. Epifanie betekent: kijk niet naar de mist, en niet naar het kunstlicht. Zoek dat ene heldere puntje van God. Dat is je GPS. Zolang je daarop koerst, kom je thuis, ook al zie je de weg nog niet helemaal.",
+        "afbeelding_idee": "Een beeld van een auto of wandelaar in dichte mist, met daarboven één heldere, scherpe ster zichtbaar."
+      }
+    ]
+  },
+  "15_kindermoment": {
+    "kindermoment_opties": [
+      {
+        "type": "Klassiek",
+        "titel": "Het Veiligheidshesje van God",
+        "object": {
+          "naam": "Een felgeel veiligheidshesje (met reflectiestrepen)",
+          "uitleg": "Een herkenbaar voorwerp uit de Westlandse praktijk (bouw/verkeer), maar gebruikt om het abstracte concept van 'licht weerkaatsen' uit te leggen."
+        },
+        "focus_schriftlezing": "Jesaja 60:1 ('Sta op en schitter')",
+        "verhaal_script": "(Doe het hesje aan terwijl je naar voren loopt). \n\nZo, goedemorgen! Zien jullie mij? Ja, nogal wiedes hè. Dit jasje doet pijn aan je ogen, zo fel. Veel vaders en moeders hier in 's-Gravenzande dragen dit als ze aan het werk zijn, of als je langs de weg fietst in het donker.\n\nMaar jongens, even een vraag: geeft dit jasje zelf licht? Zit er een batterij in? (Laat kinderen antwoorden: Nee). \n\nPrecies. Als ik hiermee in een dichte kast ga zitten, zie je niks. Dit jasje werkt alleen als er *ander* licht op schijnt. Dan kaatst het terug: POEF! Licht!\n\nIn de Bijbel staat vandaag een zinnetje van de profeet Jesaja: 'Sta op en schitter'. Hij zegt eigenlijk: 'Doe je veiligheidshesje aan'. De wereld is soms best donker en somber (ruzie, verdriet). En wij kunnen zelf dat donker niet wegjagen. Wij zijn geen lampen. Maar... God is het grote Licht. En als wij dicht bij Hem blijven, dan *weerkaatsen* wij Zijn licht. Net als dit hesje. \n\nDus als jij deze week iets aardigs doet, of iemand troost, dan ben je eigenlijk een levend veiligheidshesje van God. Je straalt, omdat Hij op jou schijnt.",
+        "afbeelding_idee": "Een foto van een wegwerker in het donker die oplicht door koplampen, naast een afbeelding van een stralend glas-in-lood raam."
+      },
+      {
+        "type": "Actief",
+        "titel": "Onhandige Wanten",
+        "object": {
+          "naam": "Een paar dikke, onhandige ovenwanten",
+          "uitleg": "Om de motoriek te beperken en zo het contrast te maken met 'open handen' en gebarentaal."
+        },
+        "focus_schriftlezing": "Matteüs 2:11 (Schatkisten openen) & Koor Open Handen",
+        "verhaal_script": "(Roep één kind naar voren). \n\nIk heb hier iets lekkers voor je (houd een verpakt snoepje/rolletje vast). Maar... wacht even. Eerst moet je deze aan. (Trek het kind de dikke ovenwanten aan). Zo. Nu mag je het snoepje uitpakken. \n\n(Laat het kind stuntelen. Het lukt niet goed). \n\nLastig hè? Je kunt niks vastpakken, je kunt niet voelen en... je kunt eigenlijk ook niks *geven*. Je handen zitten op slot.\n\nVandaag zijn de Wijzen uit het Oosten in de kerk. Niet echt natuurlijk, maar in het verhaal. Zij hadden hun handen niet in dikke wanten zitten. De Bijbel zegt: zij openden hun schatkisten. Ze hadden 'open handen' om te geven. \n\nEn weet je wie er nog meer zijn vandaag? Het koor 'Open Handen'. Zij zingen met hun handen (maak een gebaar). Als je zulke dikke wanten aan hebt, kun je niet eens met elkaar praten in gebarentaal! \n\nZullen wij onze wanten eens uitdoen? (Doe ze uit). Laat je handen eens zien? (Houd ze open). Zo kunnen we ontvangen, zo kunnen we geven, en zo kunnen we God prijzen. Zullen we samen één gebaar leren voor 'Koning'? (Doe het gebaar voor Koning voor: een sjerp die je omhangt van schouder naar heup).",
+        "afbeelding_idee": "Links: Iemand die probeert te typen met bokshandschoenen. Rechts: Het logo van Koor Open Handen of een pictogram van twee open handen."
+      },
+      {
+        "type": "Gek/Onconventioneel",
+        "titel": "Koning Noppenfolie",
+        "object": {
+          "naam": "Een grote rol noppenfolie (bubbeltjesplastic)",
+          "uitleg": "Een absurd beeld voor de angst van Herodes versus de kwetsbaarheid van het Kind."
+        },
+        "focus_schriftlezing": "Matteüs 2:3 (Herodes werd verontrust)",
+        "verhaal_script": "(Kom op met de rol en begin een beetje paniekerig om je heen te kijken). \n\nJongens, ik ben een beetje bang. Stel je voor dat ik val? Of dat iemand tegen me aan botst? Of dat iemand mijn plekje inpikt? \n\nIk ga mezelf beschermen. (Rol jezelf of een vrijwilliger in een paar lagen noppenfolie). Zo. Veilig. Niemand kan me raken. \n\nWeet je op wie ik lijk? Op koning Herodes uit het verhaal. Hij was de baas, hij had een groot kasteel, soldaten, goud... maar hij was doodsbang! Bang dat er een nieuwe koning zou komen. Hij zat eigenlijk helemaal ingepakt in zijn eigen angst.\n\nEn toen werd Jezus geboren. De échte Koning. Had Jezus noppenfolie? (Wacht op antwoord). Nee. Hij lag in een voerbak. Bloot, kwetsbaar, zacht. \n\nHerodes dacht: 'Macht is jezelf beschermen'. Jezus laat zien: 'Liefde is jezelf kwetsbaar maken'. Durf jij je beschermlaagje af te doen? (Pop een paar belletjes van het folie).",
+        "afbeelding_idee": "Een baby volledig ingepakt in bubbeltjesplastic met een speen die er net uitsteekt, met de tekst: 'Veilig of Vrij?'"
+      },
+      {
+        "type": "Bizar",
+        "titel": "De Exotische Verrassing",
+        "object": {
+          "naam": "Een hele ananas (met kroon)",
+          "uitleg": "Een visueel interessant, 'exotisch' voorwerp dat vervreemdend werkt in de kerk, net als de vreemde geschenken van de wijzen."
+        },
+        "focus_schriftlezing": "Matteüs 2:11 (Geschenken: goud, wierook, mirre)",
+        "verhaal_script": "(Zet de ananas plechtig op de liturgische tafel). \n\nKijk eens. Wat is dit? Een ananas! \n\nStel je voor: jij gaat op kraamvisite bij een pasgeboren baby. Je komt binnen, kijkt in de wieg en zegt: 'Gefeliciteerd! Hier heb je een ananas.' \n\nDat is raar, toch? Een baby kan dat helemaal niet eten! En hij prikt ook nog. \n\nMaar... kijk eens goed. Wat heeft een ananas bovenop? Een kroon! Het is de koning van het fruit. En hij komt van heel ver weg, uit een warm land.\n\nDe Wijzen uit het Oosten namen ook rare cadeaus mee. Goud? Wierook? Mirre (dat is zalf voor als iemand doodgaat)? Wat moet een baby daarmee? \n\nHet waren geen cadeaus om mee te spelen. Het waren cadeaus die iets vertelden. Het goud zei: 'Dit kind is Koning' (wijs naar de kroon van de ananas). De ananas is van buiten ruw – net als de reis die ze maakten. Maar van binnen zoet. \n\nSoms geeft God ons dingen die we aan de buitenkant raar vinden. Of vraagt Hij ons iets te geven wat een ander raar vindt. Maar als het uit een goed hart komt, is het een koninklijk cadeau.",
+        "afbeelding_idee": "Een klassiek schilderij van de Drie Koningen, maar in plaats van goudkistjes houden ze tropisch fruit vast (gefotoshopt)."
+      },
+      {
+        "type": "Ernstig",
+        "titel": "Luisteren naar de Stilte",
+        "object": {
+          "naam": "Een grote 'Noise-Cancelling' koptelefoon (of bouwvakkers oorbeschermers)",
+          "uitleg": "Om de wereld even 'uit' te zetten en de focus te verleggen van horen naar zien/ervaren."
+        },
+        "focus_schriftlezing": "Jesaja 60 & Dovenpastoraat (Zien van het licht)",
+        "verhaal_script": "(Zet de koptelefoon op en zeg niets. Kijk alleen rond. Wijs naar het licht, naar het kruis, naar de kinderen. Doe hem dan af). \n\nPfoe. Wat een herrie is de wereld soms. Op het nieuws horen we ruzie, op school is het druk, in het verkeer toetert iedereen. Herodes schreeuwde ook heel hard in Jeruzalem.\n\nMaar de Wijzen... die zagen een ster. Maakt een ster geluid? (Nee). Een ster is stil. Om de weg naar Jezus te vinden, moesten ze niet luisteren naar het geschreeuw van de koning, maar kijken naar het stille licht.\n\nVandaag zijn er mensen in de kerk die niet kunnen horen, of niet goed. Zij 'luisteren' met hun ogen. Dat is heel bijzonder. Want soms, als je heel stil bent en alleen maar kijkt... dan zie je God veel beter. \n\nIk heb deze koptelefoon meegenomen om ons eraan te herinneren: je hoeft niet altijd hard te roepen om geloofd te worden. En je hoeft niet altijd woorden te horen om God te snappen. Zullen we eens 10 seconden muisstil zijn en alleen maar kijken naar het licht van de kaars? (Doe dit).",
+        "afbeelding_idee": "Een sterrenhemel. Daaronder in kleine letters: 'Sssst. Het licht spreekt.'"
+      }
+    ]
+  },
   "16_preek_solle": {
     "titel": "De ster die niet te koop is",
     "schriftlezing": "Matteüs 2:1-12",
@@ -4118,6 +4233,63 @@
       "Gebaar",
       "Verbreking",
       "Aanbidding"
+    ]
+  },
+  "20_midjourney_prompts": {
+    "preek_titel": "Zichtbaar Woord en Open Handen",
+    "schriftlezing": "Matteüs 2:1-12 & Jesaja 60:1-6",
+    "liturgische_periode": "Epifanie",
+    "kernthema": "Gods licht wordt tastbaar en zichtbaar voor wie durft te kijken en te geven",
+    "midjourney_prompts": [
+      {
+        "volgorde": 1,
+        "homiletische_functie": "Lowry: Oops (De verstoring / Context)",
+        "moment_in_preek": "De opening, waar de lokale context van het Westland (kunstlicht in kassen) en de mist (actueel weer) worden geschetst als beeld voor onze desoriëntatie.",
+        "visuele_intentie": "De kijker moet de beklemming voelen van kunstmatig licht dat het zicht op de echte hemel ontneemt; een sfeer van drukte maar zonder richting.",
+        "prompt_nl": "Aquarel, nachtelijk landschap met de oranje gloed van kassen die reflecteert tegen laaghangende mist, silhouetten van industrieel glas, geen sterren zichtbaar, sfeervol en diffuus.",
+        "prompt_en": "watercolor painting, nocturnal landscape dominated by the diffuse orange and purple glow of industrial greenhouses reflecting against low hanging thick fog, silhouettes of glass structures, artificial light obscuring the night sky, atmospheric washes, wet-on-wet technique, moody and hazy, sense of disorientation, deep indigo and burnt orange tones, --ar 16:9",
+        "kleuren_sfeer": "Deep indigo, burnt orange (natriumlampen), hazy, industrial but soft",
+        "symboliek": "Het kunstmatige licht (onze economie/drukte) dat het ware Licht (de ster) aan het zicht onttrekt."
+      },
+      {
+        "volgorde": 2,
+        "homiletische_functie": "Lowry: Ugh (De complicatie / De reis)",
+        "moment_in_preek": "De beschrijving van de reis van de wijzen. Geen romantische karavaan, maar een koude tocht door onherbergzaam gebied, zoekend naar een teken.",
+        "visuele_intentie": "De kijker moet de kou, de eenzaamheid en de inspanning van het zoeken voelen. Het contrast tussen de veilige stad en de open vlakte.",
+        "prompt_nl": "Aquarel, een ruw en besneeuwd pad dat door een desolaat landschap snijdt, voetsporen die verdwijnen in de verte, koude wind, veel witruimte, een gevoel van een lange reis.",
+        "prompt_en": "watercolor painting, a rough winding path cutting through a desolate winter landscape, muted earth tones and cold blues, footprints in fresh snow leading toward a distant horizon, sense of weariness and determination, negative space suggesting the unknown ahead, sharp contrast between the cold ground and a faint break in the clouds, minimalist composition, --ar 16:9",
+        "kleuren_sfeer": "Cold blues, slate grey, muted earth tones, stark white",
+        "symboliek": "De existentiële zoektocht van de mens; het verlaten van de comfortzone (Jeruzalem/huis) om waarheid te vinden."
+      },
+      {
+        "volgorde": 3,
+        "homiletische_functie": "Lowry: Aha (De wending / Het inzicht)",
+        "moment_in_preek": "Het moment van aankomst en 'zien'. De link naar het dovenpastoraat: communicatie via handen en licht. De schatkisten gaan open.",
+        "visuele_intentie": "Intimiteit en warmte. De focus ligt op de handen die geven en ontvangen. Licht wordt iets tastbaars.",
+        "prompt_nl": "Aquarel, close-up van verweerde handen die zich openen, zacht goudkleurig licht dat in de handpalmen valt, warm en tactiel, focus op de huid en het licht.",
+        "prompt_en": "watercolor painting, close-up of two weathered hands gently opening upwards, soft golden light pooling in the palms as if the light is a liquid substance, the light source is unseen but illuminating the skin texture, loose brushstrokes, warm ochre and soft white washes, symbolizing receptivity and offering, intimate and quiet, --ar 16:9",
+        "kleuren_sfeer": "Warm ochre, gold, soft white, skin tones, luminous",
+        "symboliek": "De 'Open Handen' (koor/wijzen); geloof is niet alleen horen, maar zien, voelen en geven."
+      },
+      {
+        "volgorde": 4,
+        "homiletische_functie": "Lowry: Whee/Yeah (De ervaring & Toekomst)",
+        "moment_in_preek": "De terugkeer via een 'andere weg'. De gemeente gaat het nieuwe jaar (2026) in, veranderd door het licht. De deur naar buiten staat open.",
+        "visuele_intentie": "Hoop, helderheid en een nieuw begin. De mist is opgetrokken. De blik is naar buiten gericht.",
+        "prompt_nl": "Aquarel, uitzicht vanuit een donker interieur door een open deur naar een heldere, frisse ochtend, lange schaduwen, helder licht, een nieuwe weg die zichtbaar is.",
+        "prompt_en": "watercolor painting, view from a dark interior looking out through an open door into a bright crisp morning, long shadows stretching inward, fresh snow or clean pavement outside, a sense of a new beginning and clarity, vibrant blues and clean whites, high key lighting, hopeful atmosphere, loose artistic style, --ar 16:9",
+        "kleuren_sfeer": "Crisp blue, bright white, sunlight yellow, high contrast",
+        "symboliek": "De 'andere weg' terug naar huis; de transformatie na de ontmoeting met Christus; het licht mee de wereld in nemen."
+      }
+    ],
+    "gebruiksinstructies": {
+      "midjourney_basis_commando": "Type in Discord: /imagine prompt: [prompt_en]",
+      "optionele_parameters": "--stylize 250 --chaos 10",
+      "volgorde_gebruik": "Gebruik de beelden chronologisch met de preek mee. Beeld 1 tijdens de inleiding/situatieschets. Beeld 2 tijdens de uitleg van de reis/zoektocht. Beeld 3 als climax tijdens de toepassing op 'Open Handen'/geven. Beeld 4 bij de zending en zegen."
+    },
+    "technische_notities": [
+      "De term 'wet-on-wet' in de prompts zorgt voor de specifieke vloeiende aquarel-look.",
+      "Als de handen in prompt 3 te realistisch worden, voeg 'abstract' of 'loose style' toe om het suggestiever te maken."
     ]
   },
   "Bijbelteksten": {

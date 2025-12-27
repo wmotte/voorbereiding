@@ -2161,6 +2161,7 @@
             '17_preek_jungel': 'Preekschets (christologisch)',
             '18_preek_brueggemann': 'Preekschets (profetisch)',
             '19_preek_noordmans': 'Preekschets (kritisch)',
+            '20_midjourney_prompts': 'Beeldgeneratie (prompts)',
             'Bijbelteksten': 'Bijbelteksten'
         };
 
@@ -2330,8 +2331,8 @@
                 return 'nav-group-gebeden';
             }
             // Groep 6: Liturgische Elementen
-            if (['15_bezinningsmoment', '15_kindermoment', '09_kunst_cultuur', '11_kalender',
-                 '08b_liedsuggesties_database', '08_liedsuggesties_database'].includes(key)) {
+            if (['15_bezinningsmoment', '15_kindermoment', '09_kunst_cultuur', '11_kalender', '20_midjourney_prompts',
+                 '08b_liedsuggesties_database'].includes(key)) {
                 return 'nav-group-liturgische-elementen';
             }
             // Groep 7: Preekschetsen
@@ -2361,7 +2362,7 @@
             if (['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch', '14_gebeden_eenvoudig'].includes(key)) {
                 return 'Gebeden';
             }
-            if (['15_bezinningsmoment', '15_kindermoment', '09_kunst_cultuur', '11_kalender',
+            if (['15_bezinningsmoment', '15_kindermoment', '09_kunst_cultuur', '11_kalender', '20_midjourney_prompts',
                  '08b_liedsuggesties_database', '08_liedsuggesties_database'].includes(key)) {
                 return 'Liturgische Elementen';
             }
@@ -2484,10 +2485,8 @@
             const sectionNumberMap = {};
             let tempUnnumberedCounter = highestNum + 1; // Use a temporary counter
 
-            // Correct mapping to avoid number collisions
-            const keyToNum = {
-                
-                // Wim (order)
+            // Correct mapping for sorting order
+            const keyToSortNum = {
                 '01_zondag_kerkelijk_jaar': '01',
                 'Bijbelteksten': '02',
 
@@ -2497,12 +2496,12 @@
                 '05_interpretatieve_synthese': '06',
                 '06_actueel_wereldnieuws': '07',
                 '07_politieke_orientatie': '08',
-                
+
                 '08a_exegese': '09',
                 '08c_commentaries': '10',
 
                 '12_representatieve_hoorders': '11',
-                '10_focus_en_functie': '12', 
+                '10_focus_en_functie': '12',
                 '13_homiletische_analyse': '13',
                 '13_homiletische_analyse_buttrick': '14',
                 '13b_homiletische_illustraties': '15',
@@ -2513,43 +2512,49 @@
                 '14_gebeden_profetisch': '19',
                 '14_gebeden_dialogisch': '20',
                 '14_gebeden_eenvoudig': '21',
-                
+
                 '15_kindermoment': '22',
                 '15_bezinningsmoment': '23',
                 '09_kunst_cultuur': '24',
                 '11_kalender': '25',
                 '08b_liedsuggesties_database': '26',
+                '20_midjourney_prompts': '27',
 
-                '16_preek_solle': '27',
-                '17_preek_jungel': '28',
-                '18_preek_brueggemann': '29',
-                '19_preek_noordmans': '30'
-
+                '16_preek_solle': '28',
+                '17_preek_jungel': '29',
+                '18_preek_brueggemann': '30',
+                '19_preek_noordmans': '31'
             };
 
-
+            // Create section number map for sorting
+            const sectionSortMap = {};
 
             sections.forEach(key => {
-                if (keyToNum[key]) {
-                    sectionNumberMap[key] = keyToNum[key];
+                // Sort number (for ordering sections)
+                if (keyToSortNum[key]) {
+                    sectionSortMap[key] = keyToSortNum[key];
                 } else {
                     const numMatch = key.match(/^(\d+)/);
-                    sectionNumberMap[key] = numMatch ? numMatch[1].padStart(2, '0') : String(tempUnnumberedCounter++).padStart(2, '0');
+                    sectionSortMap[key] = numMatch ? numMatch[1].padStart(2, '0') : String(tempUnnumberedCounter++).padStart(2, '0');
                 }
             });
 
-            // Now sort the sections array based on the mapped numbers
+            // Now sort the sections array based on the sort numbers
             sections.sort((a, b) => {
-                const numA = sectionNumberMap[a];
-                const numB = sectionNumberMap[b];
+                const numA = sectionSortMap[a];
+                const numB = sectionSortMap[b];
                 return numA.localeCompare(numB, undefined, { numeric: true, sensitivity: 'base' });
             });
 
+            // After sorting, assign sequential display numbers (1, 2, 3, etc.)
+            sections.forEach((key, index) => {
+                sectionNumberMap[key] = String(index + 1);
+            });
 
             let lastGroupName = null;
             sections.forEach((key, index) => {
                 const title = sectionTitles[key] || formatKey(key);
-                const num = sectionNumberMap[key]; // Get the pre-calculated and sorted number
+                const num = sectionNumberMap[key]; // Sequential number
 
                 const sectionData = jsonData[key];
 
@@ -3228,6 +3233,14 @@
                 return '';
             }
 
+            // Filter out metadata fields from Midjourney prompts section
+            if (parentKey === '20_midjourney_prompts') {
+                const hiddenFields = ['preek_titel', 'schriftlezing', 'liturgische_periode', 'kernthema'];
+                if (hiddenFields.includes(key)) {
+                    return '';
+                }
+            }
+
             // Replace string "null" values with placeholder text
             if (value === 'null' || value === 'NULL') {
                 value = 'geen gegevens beschikbaar';
@@ -3302,7 +3315,10 @@
 
             if (Array.isArray(value)) {
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">${escapeHtml(formattedKey)}</div>`;
+                // Hide title for midjourney_prompts array
+                if (key !== 'midjourney_prompts') {
+                    html += `<div class="data-group-title">${escapeHtml(formattedKey)}</div>`;
+                }
                 html += renderArray(value, key);
                 html += `</div>`;
             } else if (typeof value === 'object') {
@@ -3315,6 +3331,12 @@
                 html += `<div class="data-item">`;
                 html += `<div class="data-label">${escapeHtml(formattedKey)}</div>`;
                 html += `<div class="data-value"><a href="${getSearchUrl(value, parentKey)}" target="_blank" class="search-term" title="Zoek op DuckDuckGo">${processText(value)}</a></div>`;
+                html += `</div>`;
+            } else if (key === 'prompt_en') {
+                // Special rendering for English Midjourney prompts in monospace font
+                html += `<div class="data-item">`;
+                html += `<div class="data-label">${escapeHtml(formattedKey)}</div>`;
+                html += `<div class="data-value"><span class="search-term">${processText(value)}</span></div>`;
                 html += `</div>`;
             } else {
                 // For 'categorie' field, replace underscores with spaces
@@ -3438,7 +3460,12 @@
                                 if (key === 'categorie' && typeof value === 'string') {
                                     displayValue = formatKey(value);
                                 }
-                                html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${formatValue(displayValue)}</div>`;
+                                // Special formatting for prompt_en in monospace font
+                                if (key === 'prompt_en') {
+                                    html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> <span class="search-term">${processText(String(displayValue))}</span></div>`;
+                                } else {
+                                    html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${formatValue(displayValue)}</div>`;
+                                }
                             }
                         }
 
@@ -5934,6 +5961,10 @@
                 result = "Microtrends 1-5 jaar";
             } else if (key === 'kernwords') {
                 result = "Kernwoorden";
+            } else if (key === 'prompt_nl') {
+                result = "Prompt (Nederlands)";
+            } else if (key === 'prompt_en') {
+                result = "Prompt (Engels)";
             } else {
                 result = key
                     .replace(/_/g, ' ')
