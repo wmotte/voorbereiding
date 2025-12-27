@@ -32,7 +32,7 @@ Zoek naar **verrassende verbindingen**.
 
 ## ⚠️ KRITIEKE TECHNISCHE REGELS
 1.  **NOOIT** `volledige_tekst` of `embedding` ophalen.
-2.  **ALTIJD** expliciete returns: `s.nummer, s.titel, s.samenvatting, s.sentiment, s.emotionele_intensiteit`.
+2.  **ALTIJD** expliciete returns: `s.collection, s.nummer, s.titel, s.eerste_regel, s.laatste_regel, s.samenvatting, s.sentiment, s.emotionele_intensiteit`.
 3.  **MAXIMAAL 20** resultaten per individuele query, maar voer **VEEL queries** uit.
 
 ## 🚨 ANTI-HALLUCINATIE PROTOCOL (DWINGEND!)

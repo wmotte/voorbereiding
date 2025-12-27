@@ -49,8 +49,8 @@ OUTPUT_DIR = SCRIPT_DIR / "output"
 PROMPTS_DIR = SCRIPT_DIR / "prompts"
 
 # Model keuze: Gemini 3 flash als primair, pro als fallback
-#MODEL_NAME = "gemini-3-flash-preview"
-MODEL_NAME = "gemini-3-pro-preview"
+MODEL_NAME = "gemini-3-flash-preview"
+#MODEL_NAME = "gemini-3-pro-preview"
 MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
 
@@ -627,7 +627,7 @@ def mcp_tool_to_gemini_function(tool) -> types.FunctionDeclaration:
     )
 
 
-async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bool = False) -> dict:
+async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bool = True) -> dict:
     """
     STRIKTE verificatie van alle liedbundelnummers tegen de database.
 
@@ -666,11 +666,12 @@ async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bo
                 errors.append(f"{bundel_key}: Lied {idx} zonder nummer of titel overgeslagen")
                 continue
 
-            # Query de database - gebruik exact matching
+            # Query de database - haal nummer, titel EN tekstfragmenten op
             query = f"""
             MATCH (s:Song)
             WHERE s.nummer = '{nummer}'
-            RETURN s.nummer as nummer, s.titel as titel
+            RETURN s.nummer as nummer, s.titel as titel,
+                   s.eerste_regel as eerste_regel, s.laatste_regel as laatste_regel
             LIMIT 1
             """
 
@@ -689,14 +690,29 @@ async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bo
 
                 # Probeer verschillende JSON formats die de MCP server kan retourneren
                 try:
-                    # Format 1: [{nummer: "X", titel: "Y"}]
+                    # Format 1: [{nummer: "X", titel: "Y"}] of [{properties: {...}}]
                     result_data = json.loads(result_text)
+                    found_item = None
+                    
                     if isinstance(result_data, list) and len(result_data) > 0:
-                        db_nummer = result_data[0].get("nummer")
-                        db_titel = result_data[0].get("titel")
+                        found_item = result_data[0]
                     elif isinstance(result_data, dict):
-                        db_nummer = result_data.get("nummer")
-                        db_titel = result_data.get("titel")
+                        found_item = result_data
+                        
+                    if found_item and isinstance(found_item, dict):
+                        # ROBUUSTE PARSING (dezelfde logica als in find_hymns_via_mcp)
+                        props = {}
+                        if "properties" in found_item and isinstance(found_item["properties"], dict):
+                            props.update(found_item["properties"])
+                        props.update(found_item)
+                        
+                        clean_props = {}
+                        for k, v in props.items():
+                            clean_props[k.split(".")[-1].lower()] = v
+                            
+                        db_nummer = clean_props.get("nummer")
+                        db_titel = clean_props.get("titel")
+
                 except json.JSONDecodeError:
                     # Format 2: Plain text - probeer titel te extraheren
                     # Als de response niet leeg is, betekent dat het nummer bestaat
@@ -875,6 +891,15 @@ Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
                     types.Content(role="user", parts=[types.Part(text=user_query)])
                 ]
 
+                # 📋 INTERMEDIATE DATA: Verzamel alle database responses
+                intermediate_hymns = {
+                    "liedboek_2013": [],
+                    "hemelhoog": [],
+                    "op_toonhoogte": [],
+                    "weerklank": [],
+                    "weerklank_psalmen": []
+                }
+
                 # Agentic loop
                 max_iterations = 15
                 iteration = 0
@@ -942,6 +967,91 @@ Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
                                     tool_result = result.content[0].text if result.content else "Geen resultaat"
                                     print(f"    ✓ Resultaat: {len(tool_result)} chars")
 
+                                    # 📋 INTERMEDIATE: Parse liederen uit tool result
+                                    if tool_name == "execute_query" and tool_result and len(tool_result) > 10:
+                                        try:
+                                            parsed_songs = json.loads(tool_result)
+                                            if isinstance(parsed_songs, list) and len(parsed_songs) > 0:
+                                                print(f"    📋 Gevonden: {len(parsed_songs)} liederen - parsing...")
+                                                
+                                                # DEBUG: Toon keys van eerste item als parsing faalt
+                                                first_item = parsed_songs[0]
+                                                if isinstance(first_item, dict):
+                                                    pass # print(f"       DEBUG Keys: {list(first_item.keys())}")
+
+                                                for song_data in parsed_songs:
+                                                    if not isinstance(song_data, dict):
+                                                        continue
+                                                        
+                                                    # Genormaliseerde properties verzamelen
+                                                    props = {}
+                                                    
+                                                    # 1. Check 'properties' key (Node object style)
+                                                    if "properties" in song_data and isinstance(song_data["properties"], dict):
+                                                        props.update(song_data["properties"])
+                                                        
+                                                    # 2. Check root keys (direct return)
+                                                    props.update(song_data)
+                                                    
+                                                    # 3. Flatten dotted keys (s.nummer -> nummer) en lowercase
+                                                    clean_props = {}
+                                                    for k, v in props.items():
+                                                        simple_key = k.split(".")[-1].lower()
+                                                        clean_props[simple_key] = v
+                                                    
+                                                    # Extract fields
+                                                    nummer = clean_props.get("nummer")
+                                                    titel = clean_props.get("titel")
+                                                    # Collectie kan in collection of bundel zitten
+                                                    collection = clean_props.get("collection") or clean_props.get("bundel") or ""
+                                                    
+                                                    # Special case: properties(s) key
+                                                    if not nummer and "properties(s)" in song_data:
+                                                        p_data = song_data["properties(s)"]
+                                                        if isinstance(p_data, dict):
+                                                            nummer = p_data.get("nummer")
+                                                            titel = p_data.get("titel")
+                                                            collection = p_data.get("collection")
+
+                                                    if nummer and titel:
+                                                        # Bepaal bundel o.b.v. collection veld
+                                                        collection_lower = str(collection).lower()
+                                                        bundel_key = None
+
+                                                        if "liedboek" in collection_lower or "2013" in collection_lower:
+                                                            bundel_key = "liedboek_2013"
+                                                        elif "hemelhoog" in collection_lower:
+                                                            bundel_key = "hemelhoog"
+                                                        elif "op toonhoogte" in collection_lower or "optoonhoogte" in collection_lower:
+                                                            bundel_key = "op_toonhoogte"
+                                                        elif "weerklank" in collection_lower:
+                                                            if "psalm" in str(titel).lower():
+                                                                bundel_key = "weerklank_psalmen"
+                                                            else:
+                                                                bundel_key = "weerklank"
+                                                        else:
+                                                            # Fallback: probeer te raden o.b.v. nummer
+                                                            nummer_str = str(nummer)
+                                                            if nummer_str.isdigit() and int(nummer_str) < 1000:
+                                                                bundel_key = "liedboek_2013"
+                                                            else:
+                                                                continue  # Skip onbekende bundels
+
+                                                        # Voeg toe aan intermediate (vermijd duplicaten)
+                                                        song_entry = {
+                                                            "nummer": nummer,
+                                                            "titel": titel,
+                                                            "eerste_regel": clean_props.get("eerste_regel", ""),
+                                                            "laatste_regel": clean_props.get("laatste_regel", "")
+                                                        }
+
+                                                        # Check duplicaten alleen op nummer (niet hele dict)
+                                                        if bundel_key and not any(s["nummer"] == song_entry["nummer"] for s in intermediate_hymns[bundel_key]):
+                                                            intermediate_hymns[bundel_key].append(song_entry)
+                                                            print(f"       + {bundel_key}: {nummer} - {titel[:40]}")
+                                        except json.JSONDecodeError:
+                                            pass  # Geen JSON, skip
+
                                 except Exception as e:
                                     tool_result = f"Error: {str(e)}"
                                     print(f"    ✗ Tool error: {e}")
@@ -962,6 +1072,59 @@ Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
                         if not has_function_call:
                             # Geen tool calls meer, we zijn klaar
                             print("✓ Gemini heeft zoektocht afgerond")
+
+                            # 📋 INTERMEDIATE DATA INJECTION
+                            # Tel hoeveel liederen we hebben verzameld
+                            total_hymns = sum(len(songs) for songs in intermediate_hymns.values())
+                            print(f"\n📋 Intermediate data: {total_hymns} liederen verzameld uit database")
+
+                            if total_hymns > 0:
+                                # Toon samenvatting
+                                for bundel, songs in intermediate_hymns.items():
+                                    if songs:
+                                        print(f"   - {bundel}: {len(songs)} liederen")
+
+                                # Voeg EXPLICIETE instructie toe met de data
+                                grounding_message = f"""
+🔒 KRITIEK: Je hebt via de database de volgende liederen gevonden.
+Je MAG ALLEEN liederen uit deze lijst gebruiken in je JSON output.
+KOPIEER nummer en titel EXACT zoals hieronder staat.
+
+📋 DATABASE RESULTATEN (GROUNDING DATA):
+
+{json.dumps(intermediate_hymns, ensure_ascii=False, indent=2)}
+
+Genereer NU de JSON output volgens je instructies, maar gebruik UITSLUITEND
+liederen uit de bovenstaande lijst. Kopieer nummer + titel LETTERLIJK.
+"""
+
+                                messages.append(types.Content(
+                                    role="user",
+                                    parts=[types.Part(text=grounding_message)]
+                                ))
+
+                                print("   ✓ Grounding data toegevoegd aan context")
+
+                                # Forceer Gemini om NU de finale JSON te maken
+                                print("   → Genereren van finale JSON met grounding data...")
+                                final_json_response = client.models.generate_content(
+                                    model=MODEL_NAME,
+                                    contents=messages,
+                                    config=types.GenerateContentConfig(
+                                        system_instruction=system_instruction,
+                                        temperature=0.1,  # Extra laag voor copy-paste gedrag
+                                        response_mime_type="application/json",
+                                        max_output_tokens=8192
+                                    )
+                                )
+
+                                if final_json_response.candidates and final_json_response.candidates[0].content.parts:
+                                    final_response = final_json_response.candidates[0].content.parts[0].text
+                                    print(f"   ✓ JSON gegenereerd ({len(final_response)} chars)")
+
+                            else:
+                                print("   ⚠ Geen liederen verzameld - Gemini moet zonder grounding werken")
+
                             break
 
                     except Exception as iter_error:
@@ -1047,6 +1210,7 @@ GEEN tekst ervoor of erna. ALLEEN JSON."""
                         "iterations": iteration
                     }
 
+
                 # 🔍 VERIFICATIE STAP: Controleer alle liedbundelnummers
                 print(f"\n{'─' * 50}")
                 print("🔍 VERIFICATIE: Controleren van liedbundelnummers...")
@@ -1069,6 +1233,7 @@ GEEN tekst ervoor of erna. ALLEEN JSON."""
                     **verification["verified_data"],
                     "_meta": {
                         "iterations": iteration,
+                        "intermediate_hymns": intermediate_hymns,
                         "raw_response": final_response,
                         "verification_errors": verification["errors"],
                         "original_data": result_json  # Bewaar origineel voor debugging
@@ -1506,6 +1671,13 @@ def main():
                                 context_samenvatting=lied_analysis['context_samenvatting']
                             )
                         )
+
+                        # Sla intermediate database resultaten op in log file
+                        if "_meta" in lied_result and "intermediate_hymns" in lied_result["_meta"]:
+                            inter_path = LOGS_DIR / "08b_intermediate_hymns.json"
+                            with open(inter_path, "w", encoding="utf-8") as f:
+                                json.dump(lied_result["_meta"]["intermediate_hymns"], f, ensure_ascii=False, indent=2)
+                            print(f"  Intermediate database resultaten opgeslagen in: logs/{inter_path.name}")
 
                         # Sla resultaat op
                         save_analysis(
