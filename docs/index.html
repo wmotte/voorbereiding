@@ -2929,19 +2929,24 @@
                     const sectionKey = item.dataset.section;
                     const hasSubmenu = item.dataset.hasSubmenu === 'true';
 
-                    // Toggle submenu
+                    // Open submenu (altijd openen, niet toggle)
                     if (hasSubmenu) {
-                        item.classList.toggle('expanded');
+                        item.classList.add('expanded');
                         const submenu = item.nextElementSibling;
                         if (submenu && submenu.classList.contains('nav-submenu')) {
-                            submenu.classList.toggle('open');
+                            submenu.classList.add('open');
                         }
                     }
 
                     // Navigate to section
                     const section = document.getElementById(`section-${sectionKey}`);
                     if (section) {
+                        isProgrammaticScroll = true;
                         section.scrollIntoView({ behavior: 'smooth' });
+                        // Reset flag na scroll animatie (smooth scroll duurt ~500ms)
+                        setTimeout(() => {
+                            isProgrammaticScroll = false;
+                        }, 1000);
                     }
 
                     // Close sidebar on mobile
@@ -6141,6 +6146,7 @@
 
         // Scroll handling
         let ticking = false;
+        let isProgrammaticScroll = false;
         window.addEventListener('scroll', () => {
             if (!ticking) {
                 window.requestAnimationFrame(() => {
@@ -6172,9 +6178,49 @@
                 }
             });
 
+            let activeNavItem = null;
+
             document.querySelectorAll('.nav-item').forEach(item => {
-                item.classList.toggle('active', item.dataset.section === currentSection);
+                const isActive = item.dataset.section === currentSection;
+                item.classList.toggle('active', isActive);
+
+                if (isActive) {
+                    activeNavItem = item;
+                }
+
+                // Vouw submenu's alleen in bij natuurlijk scrollen, niet bij klikken
+                if (!isProgrammaticScroll) {
+                    const hasSubmenu = item.dataset.hasSubmenu === 'true';
+                    if (hasSubmenu && !isActive) {
+                        item.classList.remove('expanded');
+                        const submenu = item.nextElementSibling;
+                        if (submenu && submenu.classList.contains('nav-submenu')) {
+                            submenu.classList.remove('open');
+                        }
+                    }
+                }
             });
+
+            // Scroll het actieve item in beeld binnen de sidebar
+            if (activeNavItem) {
+                const sidebar = document.getElementById('sidebar');
+                const navContainer = sidebar.querySelector('nav');
+
+                if (navContainer) {
+                    const itemRect = activeNavItem.getBoundingClientRect();
+                    const navRect = navContainer.getBoundingClientRect();
+
+                    // Check of het item buiten het zichtbare gebied van de sidebar is
+                    if (itemRect.top < navRect.top || itemRect.bottom > navRect.bottom) {
+                        // Scroll het item naar het midden van de sidebar
+                        const scrollOffset = activeNavItem.offsetTop - navContainer.offsetTop - (navContainer.clientHeight / 2) + (activeNavItem.clientHeight / 2);
+                        navContainer.scrollTo({
+                            top: scrollOffset,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            }
         }
 
         // Scroll to top
