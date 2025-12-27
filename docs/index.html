@@ -523,11 +523,6 @@
             color: #f5f0e8;
         }
 
-        /* Achtergrondkleur voor Preekschetsen secties */
-        .section-group-preekschetsen {
-            background: #f0ebe3;
-        }
-
         .section-title {
             font-size: 1.4em;
             color: var(--text-primary);
@@ -2988,6 +2983,8 @@
                 contentHtml = renderBijbeltekstenSection(dataToRender);
             } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch' || key === '14_gebeden_eenvoudig') {
                 contentHtml = renderGebedenSection(dataToRender);
+            } else if (key === '16_preek_solle' || key === '17_preek_jungel' || key === '18_preek_brueggemann' || key === '19_preek_noordmans') {
+                contentHtml = renderPreekschetsSection(dataToRender, key);
             } else if (key === '13b_homiletische_illustraties') {
                 contentHtml = renderIllustratiesSection(dataToRender);
             } else if (key === '12_representatieve_hoorders') {
@@ -4180,17 +4177,45 @@
         function renderPreekOnderdelen(onderdelen) {
             let html = '';
 
-            // Render each onderdeel in order, single column
-            for (const [key, value] of Object.entries(onderdelen)) {
-                if (!value || typeof value !== 'object') continue;
+            // Handle array format (Jüngel, Brueggemann)
+            if (Array.isArray(onderdelen)) {
+                onderdelen.forEach((onderdeel, index) => {
+                    const titel = onderdeel.titel || `Deel ${index + 1}`;
+                    const inhoud = onderdeel.inhoud || '';
 
-                const titel = value.titel || formatKey(key);
-                const inhoud = value.inhoud || '';
+                    html += `<div class="gebed-card" style="margin-bottom: 30px;">`;
+                    html += `<div class="gebed-card-header">`;
+                    html += `<span class="gebed-type-badge">${onderdeel.volgorde || index + 1}</span>`;
+                    html += `<span class="gebed-aanspraak">${processText(titel)}</span>`;
+                    html += `</div>`;
+                    html += `<div class="gebed-tekst">${processText(inhoud)}</div>`;
 
-                html += `<div class="preek-onderdeel">`;
-                html += `<div class="preek-onderdeel-titel">${processText(titel)}</div>`;
-                html += `<div class="preek-tekst">${processText(inhoud)}</div>`;
-                html += `</div>`;
+                    // Show toelichting if present
+                    if (onderdeel.toelichting) {
+                        html += `<div class="gebed-instructie" style="margin-top: 15px;">${processText(onderdeel.toelichting)}</div>`;
+                    }
+
+                    html += `</div>`;
+                });
+            } else {
+                // Handle object format (Sölle, Noordmans)
+                let counter = 1;
+                for (const [key, value] of Object.entries(onderdelen)) {
+                    if (!value || typeof value !== 'object') continue;
+
+                    const titel = value.titel || formatKey(key);
+                    const inhoud = value.inhoud || '';
+
+                    html += `<div class="gebed-card" style="margin-bottom: 30px;">`;
+                    html += `<div class="gebed-card-header">`;
+                    html += `<span class="gebed-type-badge">${counter}</span>`;
+                    html += `<span class="gebed-aanspraak">${processText(titel)}</span>`;
+                    html += `</div>`;
+                    html += `<div class="gebed-tekst">${processText(inhoud)}</div>`;
+                    html += `</div>`;
+
+                    counter++;
+                }
             }
 
             return html;
@@ -5252,6 +5277,92 @@
                     html += `</div>`;
                 }
 
+                html += `</div>`;
+            }
+
+            return html;
+        }
+
+        // Render Preekschets section
+        function renderPreekschetsSection(data, sectionKey) {
+            let html = '';
+
+            // Render metadata in a card
+            html += `<div class="gebed-card" style="margin-bottom: 30px;">`;
+
+            // Title
+            if (data.titel) {
+                html += `<div class="data-item">`;
+                html += `<div class="data-label">Titel</div>`;
+                html += `<div class="data-value" style="font-size: 1.1em; font-weight: bold;">${processText(data.titel)}</div>`;
+                html += `</div>`;
+            }
+
+            // Schriftlezing
+            if (data.schriftlezing) {
+                html += `<div class="data-item">`;
+                html += `<div class="data-label">Schriftlezing</div>`;
+                html += `<div class="data-value">${processText(data.schriftlezing)}</div>`;
+                html += `</div>`;
+            }
+
+            // Kerntekst
+            if (data.kerntekst) {
+                html += `<div class="data-item">`;
+                html += `<div class="data-label">Kerntekst</div>`;
+                html += `<div class="data-value" style="font-style: italic;">${processText(data.kerntekst)}</div>`;
+                html += `</div>`;
+            }
+
+            // Kernparadox (Noordmans)
+            if (data.kernparadox) {
+                html += `<div class="data-item">`;
+                html += `<div class="data-label">Kernparadox</div>`;
+                html += `<div class="data-value">${processText(data.kernparadox)}</div>`;
+                html += `</div>`;
+            }
+
+            html += `</div>`;
+
+            // Render preek_onderdelen
+            if (data.preek_onderdelen) {
+                html += renderPreekOnderdelen(data.preek_onderdelen);
+            }
+
+            // Render kernwoorden
+            if (data.kernwoorden && Array.isArray(data.kernwoorden)) {
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Kernwoorden</div>`;
+                html += `<div class="tag-list">`;
+                data.kernwoorden.forEach(woord => {
+                    html += `<span class="tag">${processText(woord)}</span>`;
+                });
+                html += `</div></div>`;
+            }
+
+            // Render gebed_om_actie (Sölle)
+            if (data.gebed_om_actie) {
+                html += `<div class="gebed-card" style="margin-top: 30px;">`;
+                html += `<div class="gebed-card-header">`;
+                html += `<span class="gebed-type-badge">Gebed om actie</span>`;
+                html += `</div>`;
+                html += `<div class="gebed-tekst">${processText(data.gebed_om_actie)}</div>`;
+                html += `</div>`;
+            }
+
+            // Render theologische_beweging (Jüngel)
+            if (data.theologische_beweging) {
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Theologische beweging</div>`;
+                html += `<div class="data-value">${processText(data.theologische_beweging)}</div>`;
+                html += `</div>`;
+            }
+
+            // Render profetische_beweging (Brueggemann)
+            if (data.profetische_beweging) {
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Profetische beweging</div>`;
+                html += `<div class="data-value">${processText(data.profetische_beweging)}</div>`;
                 html += `</div>`;
             }
 
