@@ -3592,6 +3592,16 @@
 
                         if (titel) gridHtml += `<div class="lied-titel">${processText(titel)}</div>`;
                         
+                        // Toon regel alleen als deze echt anders is dan de titel (negeer leestekens/case)
+                        if (regel) {
+                            const cleanTitel = (titel || "").toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").trim();
+                            const cleanRegel = regel.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").trim();
+                            
+                            if (cleanRegel !== cleanTitel) {
+                                gridHtml += `<div class="lied-regel">\u201c${processText(regel)} ...\u201d</div>`;
+                            }
+                        }
+                        
                         if (suggestie) gridHtml += `<div style="font-size:0.85em; color:var(--accent); margin-top:4px;">Suggestie: ${processText(suggestie)}</div>`;
                         
                         if (toelichting) gridHtml += `<div class="lied-toelichting">${processText(toelichting)}</div>`;

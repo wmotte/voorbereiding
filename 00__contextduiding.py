@@ -772,9 +772,6 @@ async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bo
                             for k, v in props.items():
                                 clean_props[k.split(".")[-1].lower()] = v
 
-                        # Update de song dict
-                        song["titel"] = db_titel # Gebruik de officiële titel
-                        
                         # Eerste regel ophalen (ook uit volledige tekst indien nodig)
                         eerste_regel = clean_props.get("eerste_regel")
                         if not eerste_regel:
@@ -787,6 +784,17 @@ async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bo
                                     if not re.match(r'^(\d+|verse\s+\d+)[:.]?$', line, re.IGNORECASE):
                                         eerste_regel = line
                                         break
+                        
+                        # TITEL REPARATIE: Als DB titel eindigt op '...' en eerste regel is beschikbaar,
+                        # gebruik dan de eerste regel als titel (indien het een match lijkt).
+                        final_titel = db_titel
+                        if eerste_regel and (db_titel.endswith("...") or db_titel.endswith("..")):
+                            # Check of eerste regel begint met het niet-afgekapte deel van de titel
+                            trunc_check = db_titel.rstrip(". ")
+                            if eerste_regel.lower().startswith(trunc_check.lower()):
+                                final_titel = eerste_regel
+
+                        song["titel"] = final_titel
                         
                         if eerste_regel:
                             song["eerste_regel"] = eerste_regel
