@@ -51,8 +51,10 @@ PROMPTS_DIR = SCRIPT_DIR / "prompts"
 # Model keuze: Gemini 3 flash als primair, pro als fallback
 MODEL_NAME = "gemini-3-flash-preview"
 #MODEL_NAME = "gemini-3-pro-preview"
-MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
+#MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
 
+#MODEL_NAME = "gemini-2.5-flash"
+MODEL_NAME_FALLBACK = "gemini-2.5-pro"
 
 def normalize_scripture_reference(reference: str) -> str:
     """Normaliseer schriftverwijzingen door 'a'/'b' suffixen te verwijderen en
@@ -390,13 +392,9 @@ Geef het antwoord als JSON:
                     if found_data["website"]:
                         print(f"  Website: {found_data['website']}")
                     
-                    choice = input("\nIs dit het correcte adres? (j/n): ").strip().lower()
-                    if choice in ('j', 'ja', 'y', 'yes'):
-                        return found_data
+                    # Direct accepteren zonder vragen
+                    return found_data
                     
-                    # Als gebruiker 'nee' zegt, heeft retrying geen zin, we vallen door naar handmatige input
-                    break 
-                
             else:
                 print(f"⚠ Geen adres gevonden via Google Search (poging {attempt + 1})")
                 if attempt < max_retries:
@@ -658,6 +656,16 @@ async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bo
         verified_songs = []
         print(f"  📖 {bundel_key}: {len(songs)} liederen te verifiëren...")
 
+        # Mapping van onze keys naar DB bundel namen
+        db_bundel_map = {
+            "liedboek_2013": "Liedboek",
+            "hemelhoog": "Hemelhoog",
+            "op_toonhoogte": "OpToonhoogte",
+            "weerklank": "Weerklank",
+            "weerklank_psalmen": "WeerklankPsalm"
+        }
+        db_bundel_name = db_bundel_map.get(bundel_key)
+
         for idx, song in enumerate(songs, 1):
             nummer = song.get("nummer", "")
             titel = song.get("titel", "")
@@ -667,11 +675,18 @@ async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bo
                 continue
 
             # Query de database - haal nummer, titel EN tekstfragmenten op
+            # Filter ook op bundel om collisions te voorkomen
+            where_clause = f"s.nummer = '{nummer}'"
+            if db_bundel_name:
+                where_clause += f" AND s.bundel = '{db_bundel_name}'"
+
             query = f"""
             MATCH (s:Song)
-            WHERE s.nummer = '{nummer}'
+            WHERE {where_clause}
             RETURN s.nummer as nummer, s.titel as titel,
-                   s.eerste_regel as eerste_regel, s.laatste_regel as laatste_regel
+                   s.eerste_regel as eerste_regel, s.laatste_regel as laatste_regel,
+                   s.volledige_tekst as volledige_tekst, s.text as text,
+                   s.bundel as bundel
             LIMIT 1
             """
 
@@ -736,16 +751,50 @@ async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bo
                     db_titel_check = db_titel.lower().strip()[:25]
 
                     # Check overlapping (minstens 80% match)
+                    is_match = False
                     if titel_check == db_titel_check:
-                        # Perfect match
-                        verified_songs.append(song)
-                        if debug:
-                            print(f"      ✓ VERIFIED (exact)")
+                        is_match = True
+                        if debug: print(f"      ✓ VERIFIED (exact)")
                     elif titel_check in db_titel_check or db_titel_check in titel_check:
-                        # Substring match
+                        is_match = True
+                        if debug: print(f"      ✓ VERIFIED (substring)")
+                    
+                    if is_match:
+                        # Verrijk het lied met data uit de database (indien aanwezig)
+                        # We gebruiken de DB waarden omdat die correcter zijn
+                        clean_props = {}
+                        if isinstance(found_item, dict):
+                            # Herhaal prop extractie logic van hierboven voor zekerheid
+                            props = {}
+                            if "properties" in found_item and isinstance(found_item["properties"], dict):
+                                props.update(found_item["properties"])
+                            props.update(found_item)
+                            for k, v in props.items():
+                                clean_props[k.split(".")[-1].lower()] = v
+
+                        # Update de song dict
+                        song["titel"] = db_titel # Gebruik de officiële titel
+                        
+                        # Eerste regel ophalen (ook uit volledige tekst indien nodig)
+                        eerste_regel = clean_props.get("eerste_regel")
+                        if not eerste_regel:
+                            full_text = clean_props.get("volledige_tekst") or clean_props.get("text")
+                            if full_text:
+                                # Probeer eerste echte tekstregel te vinden
+                                lines = [l.strip() for l in full_text.split('\n') if l.strip()]
+                                for line in lines:
+                                    # Skip versnummers zoals "1:" of "1." of "Verse 1" of alleen cijfers
+                                    if not re.match(r'^(\d+|verse\s+\d+)[:.]?$', line, re.IGNORECASE):
+                                        eerste_regel = line
+                                        break
+                        
+                        if eerste_regel:
+                            song["eerste_regel"] = eerste_regel
+
+                        if clean_props.get("laatste_regel"):
+                            song["laatste_regel"] = clean_props.get("laatste_regel")
+                            
                         verified_songs.append(song)
-                        if debug:
-                            print(f"      ✓ VERIFIED (substring)")
                     else:
                         # Titel verschilt te veel = HALLUCINATIE
                         errors.append(f"❌ HALLUCINATIE: {bundel_key} {nummer} heeft titel '{titel[:40]}' maar DB heeft '{db_titel[:40]}'")
@@ -779,6 +828,7 @@ async def verify_hymn_numbers(session: ClientSession, hymn_data: dict, debug: bo
 async def find_hymns_via_mcp(
     client: genai.Client,
     lezingen: dict,
+    logs_dir: Path,
     thematiek: dict = None,
     liturgische_periode: str = None,
     zondag_naam: str = "Onbekend",
@@ -919,9 +969,9 @@ Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
                             "max_output_tokens": 8192,
                         }
 
-                        # Als we al wat iteraties hebben gedaan, probeer JSON mode
-                        if iteration > 3:
-                            config_params["response_mime_type"] = "application/json"
+                        # LET OP: We kunnen response_mime_type="application/json" NIET gebruiken
+                        # samen met tools (function calling). Dat geeft een 400 error.
+                        # We vertrouwen op de system instruction tijdens de tool-use fase.
 
                         response = client.models.generate_content(
                             model=MODEL_NAME,
@@ -1025,7 +1075,7 @@ Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
                                                         elif "op toonhoogte" in collection_lower or "optoonhoogte" in collection_lower:
                                                             bundel_key = "op_toonhoogte"
                                                         elif "weerklank" in collection_lower:
-                                                            if "psalm" in str(titel).lower():
+                                                            if "psalm" in collection_lower or "psalm" in str(titel).lower():
                                                                 bundel_key = "weerklank_psalmen"
                                                             else:
                                                                 bundel_key = "weerklank"
@@ -1040,15 +1090,26 @@ Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
                                                         # Voeg toe aan intermediate (vermijd duplicaten)
                                                         song_entry = {
                                                             "nummer": nummer,
-                                                            "titel": titel,
-                                                            "eerste_regel": clean_props.get("eerste_regel", ""),
-                                                            "laatste_regel": clean_props.get("laatste_regel", "")
+                                                            "titel": titel
                                                         }
+                                                        if clean_props.get("eerste_regel"):
+                                                            song_entry["eerste_regel"] = clean_props.get("eerste_regel")
+                                                        if clean_props.get("laatste_regel"):
+                                                            song_entry["laatste_regel"] = clean_props.get("laatste_regel")
 
                                                         # Check duplicaten alleen op nummer (niet hele dict)
                                                         if bundel_key and not any(s["nummer"] == song_entry["nummer"] for s in intermediate_hymns[bundel_key]):
                                                             intermediate_hymns[bundel_key].append(song_entry)
                                                             print(f"       + {bundel_key}: {nummer} - {titel[:40]}")
+                                            
+                                            # DIRECT OPSLAAN van intermediate data
+                                            try:
+                                                inter_path = logs_dir / "08b_mcp_raw_hymns.json"
+                                                with open(inter_path, "w", encoding="utf-8") as f:
+                                                    json.dump(intermediate_hymns, f, ensure_ascii=False, indent=2)
+                                            except Exception as save_err:
+                                                print(f"       ⚠ Kon tussenstand niet opslaan: {save_err}")
+
                                         except json.JSONDecodeError:
                                             pass  # Geen JSON, skip
 
@@ -1085,6 +1146,11 @@ Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
                                         print(f"   - {bundel}: {len(songs)} liederen")
 
                                 # Voeg EXPLICIETE instructie toe met de data
+                                # Beperk de lijst tot max 15 per bundel om context overflow te voorkomen
+                                limited_hymns = {}
+                                for b_key, s_list in intermediate_hymns.items():
+                                    limited_hymns[b_key] = s_list[:15]
+
                                 grounding_message = f"""
 🔒 KRITIEK: Je hebt via de database de volgende liederen gevonden.
 Je MAG ALLEEN liederen uit deze lijst gebruiken in je JSON output.
@@ -1092,7 +1158,7 @@ KOPIEER nummer en titel EXACT zoals hieronder staat.
 
 📋 DATABASE RESULTATEN (GROUNDING DATA):
 
-{json.dumps(intermediate_hymns, ensure_ascii=False, indent=2)}
+{json.dumps(limited_hymns, ensure_ascii=False, indent=2)}
 
 Genereer NU de JSON output volgens je instructies, maar gebruik UITSLUITEND
 liederen uit de bovenstaande lijst. Kopieer nummer + titel LETTERLIJK.
@@ -1114,7 +1180,8 @@ liederen uit de bovenstaande lijst. Kopieer nummer + titel LETTERLIJK.
                                         system_instruction=system_instruction,
                                         temperature=0.1,  # Extra laag voor copy-paste gedrag
                                         response_mime_type="application/json",
-                                        max_output_tokens=8192
+                                        max_output_tokens=8192,
+                                        tools=[] # GEEN tools meer toestaan bij JSON mode
                                     )
                                 )
 
@@ -1229,16 +1296,21 @@ GEEN tekst ervoor of erna. ALLEEN JSON."""
                 else:
                     print("✓ Alle liederen geverifieerd - geen hallucinaties gevonden!")
 
-                return {
-                    **verification["verified_data"],
-                    "_meta": {
-                        "iterations": iteration,
-                        "intermediate_hymns": intermediate_hymns,
-                        "raw_response": final_response,
-                        "verification_errors": verification["errors"],
-                        "original_data": result_json  # Bewaar origineel voor debugging
-                    }
+                # Log debug info en verificatie errors naar apart bestand
+                debug_info = {
+                    "iterations": iteration,
+                    "intermediate_hymns": intermediate_hymns,
+                    "raw_response": final_response,
+                    "verification_errors": verification["errors"],
+                    "original_data": result_json
                 }
+                
+                log_file = logs_dir / "08b_liedsuggesties_debug.json"
+                with open(log_file, "w", encoding="utf-8") as f:
+                    json.dump(debug_info, f, ensure_ascii=False, indent=2)
+                print(f"  📝 Verificatie log en tussenresultaten opgeslagen in: logs/{log_file.name}")
+
+                return verification["verified_data"]
 
     except Exception as e:
         error_msg = f"MCP fout: {str(e)}"
@@ -1549,12 +1621,10 @@ def main():
     kerkelijk_jaar_result = None
 
     if file_path_json.exists():
-        overwrite = input(f"  {first_analysis['name']}.json bestaat al. Overschrijven? (j/n): ").strip().lower()
-        if overwrite != 'j':
-            run_this = False
-            print(f"  Gebruik bestaande: {first_analysis['name']}.json")
-            with open(file_path_json, "r", encoding="utf-8") as f:
-                kerkelijk_jaar_result = json.load(f)
+        run_this = False
+        print(f"  Bestaat al: {first_analysis['name']}.json (wordt geladen)")
+        with open(file_path_json, "r", encoding="utf-8") as f:
+            kerkelijk_jaar_result = json.load(f)
 
     if run_this:
         # LOG DE PROMPT
@@ -1598,15 +1668,18 @@ def main():
         file_path_md = output_dir / f"{analysis['name']}.md"
 
         if file_path_json.exists():
-            overwrite = input(f"  {analysis['name']}.json bestaat al. Overschrijven? (j/n): ").strip().lower()
-            if overwrite != 'j':
-                print(f"  Overgeslagen: {analysis['name']}")
-                continue
+            print(f"  Bestaat al: {analysis['name']}.json (overgeslagen)")
+            continue
         elif file_path_md.exists():
-            overwrite = input(f"  {analysis['name']}.md bestaat al (oud formaat). Opnieuw als JSON? (j/n): ").strip().lower()
-            if overwrite != 'j':
-                print(f"  Overgeslagen: {analysis['name']}")
-                continue
+             # Oud formaat MD bestaat, maar we willen JSON.
+             # Zonder vragen overschrijven of negeren?
+             # De instructie is: "If so, it gives a message about that, but it continues runing the sequence. If an output is not there, it run the prompt analysis."
+             # Aangezien we nu JSON standardiseren, en er geen JSON is, zouden we kunnen runnen.
+             # Maar veiligheidshalve, als er MD is, beschouwen we het als 'gedaan' voor legacy folders, Tenzij we strikt JSON willen.
+             # Laten we simpelweg checken op JSON. Als JSON er niet is, runnen we.
+             # Maar als MD er is, en we runnen, overschrijven we het misschien niet (ander bestand), maar doen we wel dubbel werk.
+             # Laten we aannemen: als JSON er is -> skip. Als JSON er niet is -> run.
+             pass
 
         # LOG DE PROMPT
         save_log(LOGS_DIR, analysis['name'], analysis['prompt'])
@@ -1651,10 +1724,8 @@ def main():
             run_lied_analysis = True
 
             if file_path_json.exists():
-                overwrite = input(f"  {lied_analysis['name']}.json bestaat al. Overschrijven? (j/n): ").strip().lower()
-                if overwrite != 'j':
-                    print(f"  Overgeslagen: {lied_analysis['name']}")
-                    run_lied_analysis = False
+                print(f"  Bestaat al: {lied_analysis['name']}.json (overgeslagen)")
+                run_lied_analysis = False
 
             if run_lied_analysis:
                 if lied_analysis.get('use_mcp'):
@@ -1665,19 +1736,13 @@ def main():
                             find_hymns_via_mcp(
                                 client=client,
                                 lezingen=lied_analysis['lezingen'],
+                                logs_dir=LOGS_DIR,
                                 thematiek=lied_analysis['thematiek'],
                                 liturgische_periode=lied_analysis['liturgische_periode'],
                                 zondag_naam=lied_analysis['zondag_naam'],
                                 context_samenvatting=lied_analysis['context_samenvatting']
                             )
                         )
-
-                        # Sla intermediate database resultaten op in log file
-                        if "_meta" in lied_result and "intermediate_hymns" in lied_result["_meta"]:
-                            inter_path = LOGS_DIR / "08b_intermediate_hymns.json"
-                            with open(inter_path, "w", encoding="utf-8") as f:
-                                json.dump(lied_result["_meta"]["intermediate_hymns"], f, ensure_ascii=False, indent=2)
-                            print(f"  Intermediate database resultaten opgeslagen in: logs/{inter_path.name}")
 
                         # Sla resultaat op
                         save_analysis(
@@ -1701,6 +1766,14 @@ def main():
     print("\n" + "=" * 60)
     print("KLAAR")
     print(f"Locatie: {output_dir}")
+    
+    # Schrijf pad weg voor start_traject.py
+    try:
+        session_file = SCRIPT_DIR / ".last_session_path"
+        with open(session_file, "w", encoding="utf-8") as f:
+            f.write(str(output_dir))
+    except Exception as e:
+        print(f"Kon sessiepad niet opslaan: {e}")
 
 
 if __name__ == "__main__":

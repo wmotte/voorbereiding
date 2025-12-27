@@ -13,14 +13,16 @@
 *   **Python:** 3.8+ recommended.
 *   **Dependencies:**
     *   `google-genai` (Google GenAI SDK v1.0+)
+    *   `mcp` (Model Context Protocol SDK)
     *   `requests`
     *   `beautifulsoup4`
     *   `tiktoken` (optional, for token counting)
+    *   **External:** Local Neo4j instance (for MCP features)
 
 ### Installation
 ```bash
 pip install -r requirements.txt
-pip install requests beautifulsoup4
+pip install requests beautifulsoup4 mcp
 ```
 
 ### Configuration
@@ -28,16 +30,19 @@ The project requires a valid Gemini API key set as an environment variable:
 ```bash
 export GEMINI_API_KEY='your-api-key-here'
 ```
+Also requires Neo4j credentials in `.env` or environment variables for MCP functionality.
 
 ## Project Structure
 
 ### Core Scripts
-*   **`contextduiding.py`**: The primary entry point. Orchestrates the "Basic Analysis" (Phase 1 & 2).
+*   **`start_traject.py`**: **Recommended Entry Point.** Orchestrates the full pipeline sequentially (`00` then `01`). Automatically detects output folders.
+*   **`00__contextduiding.py`**: The "Basic Analysis" (Phase 1 & 2).
     *   Prompts user for: Place, Church Municipality, Date.
-    *   Generates markdown files `00` through `06` (Context, News, Politics, etc.).
-*   **`verdieping.py`**: The "Deep Dive" script (Phase 3).
-    *   Reads existing output from `contextduiding.py`.
+    *   Generates markdown files `00` through `06` (Context, News, Politics, etc.) and `08b` (Hymns via MCP).
+*   **`01__verdieping.py`**: The "Deep Dive" script (Phase 3).
+    *   Reads existing output from `00__contextduiding.py`.
     *   Generates markdown files `07` through `13` (Exegesis, Art, Prayers, Sermon Plot).
+    *   Supports `--folder` argument to skip interactive selection.
 *   **`naardense_bijbel.py`**: A utility module to scrape Bible texts from `naardensebijbel.nl`. Handles caching and URL construction. Saves texts exclusively as JSON (`.json`, NBV21-compatible structure).
 *   **`nbv21_bijbel.py`**: A utility module to fetch NBV21 Bible texts from local JSON files (output of `get_chapter.R`). Handles book name mapping and reference parsing.
 *   **`count_tokens.py`**: Utility to analyze token usage of generated outputs.
@@ -73,7 +78,8 @@ export GEMINI_API_KEY='your-api-key-here'
 
 | Task | Command |
 | :--- | :--- |
-| **Run Basic Analysis** | `python contextduiding.py` |
-| **Run Deep Dive** | `python verdieping.py` |
+| **Start Full Pipeline** | `./start_traject.py` |
+| **Run Basic Analysis** | `./00__contextduiding.py` |
+| **Run Deep Dive** | `./01__verdieping.py` |
 | **Update Web Viewer** | `python docs/generate_data.py` |
 | **Count Tokens** | `python count_tokens.py` |

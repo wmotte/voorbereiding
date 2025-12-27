@@ -1294,107 +1294,218 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 48,
-      "liturgische_balans": "De selectie zoekt de spanning op tussen de intieme kerstsfeer en de koninklijke, universele claim van Epifanie. Er is bewust gekozen voor een mix van klassieke 'Morgenster'-liederen en missionaire liederen die de 'volken' erbij betrekken. Verrassend is de keuze voor liederen die het licht verbinden met sociale gerechtigheid (Matt 25), als tegenwicht voor een te romantisch sterrenbeeld.",
-      "contextuele_reflectie": "In het Westland ('De Glazen Stad') is licht vaak functioneel en kunstmatig. De geselecteerde liederen over het 'Ware Licht' en de 'Morgenster' (Liedboek 518, HH 532) bieden een theologisch contrast: dit licht is niet maakbaar, maar een genadegave. De nadruk op 'alle volken' (Ps 72, Ef 3) daagt de hechte 'ons-kent-ons' cultuur uit om de blik te verruimen naar de wereld (Oekraïne) en de vreemdeling."
+      "aantal_gevonden_totaal": 22,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de klassieke koningspsalm (Psalm 72), de profetische visioenen van Jesaja 60 en de verhalende elementen van Matteüs 2. Er is een goede verdeling tussen de verschillende bundels, waarbij zowel traditionele psalmberijmingen als hedendaagse liederen zijn opgenomen.",
+      "contextuele_reflectie": "In de 'Glazen Stad' van het Westland, waar kunstlicht de nacht domineert, herinneren liederen als 'Donker de nacht' en 'Liefelijk licht' aan het ware, spirituele licht van Epifanie. De thematiek van inclusiviteit (Efeziërs 3) wordt concreet gemaakt door liederen over eenheid en het verwelkomen van vreemdelingen, passend bij de lokale integratie van het dovenpastoraat. De onrust over de oorlog in Oekraïne vindt een plek in de diverse gebeden om vrede."
     },
     "liedboek_2013": [
-      {
-        "nummer": "871",
-        "titel": "Jezus zal heersen waar de zon",
-        "type_match": "Schriftlezing",
-        "karakter": "Triomfantelijk",
-        "toelichting": "De berijming van Psalm 72. 'De koningen van Tarsis en de eilanden zullen geschenken brengen'. Sluit naadloos aan bij de lezingen.",
-        "suggestie_gebruik": "Slotlied"
-      },
       {
         "nummer": "72",
         "titel": "Geef, Heer, de koning uwe rechten",
         "type_match": "Schriftlezing",
-        "karakter": "Smeekbede",
-        "toelichting": "De klassieke Geneefse berijming van Psalm 72. Past bij de bede om gerechtigheid in een onrustige wereld (Oekraïne).",
-        "suggestie_gebruik": "Antwoordpsalm"
+        "karakter": "Statig en plechtig",
+        "toelichting": "Directe berijming van Psalm 72, de koningspsalm die de rechtvaardigheid van de komende Messias bezingt.",
+        "suggestie_gebruik": "Intochtslied of Psalm na de eerste lezing",
+        "eerste_regel": "Geef, Heer, de koning uwe rechten"
+      },
+      {
+        "nummer": "871",
+        "titel": "Jezus zal heersen waar de zon",
+        "type_match": "Thematisch",
+        "karakter": "Zelfverzekerd en universeel",
+        "toelichting": "Verwoordt de universele reikwijdte van Christus' koningschap, passend bij de wijzen die uit alle windstreken komen.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Jezus zal heersen waar de zon"
+      },
+      {
+        "nummer": "1010",
+        "titel": "Geef vrede, Heer, geef vrede,",
+        "type_match": "Contextueel",
+        "karakter": "Smeekgebed",
+        "toelichting": "Slaat de brug tussen de Epifanie-boodschap van vrede en de actuele dreiging van de oorlog in Oekraïne.",
+        "suggestie_gebruik": "Gebedslied / Kyrie",
+        "eerste_regel": "Geef vrede, Heer, geef vrede,"
+      },
+      {
+        "nummer": "951",
+        "titel": "Liefelijk licht, dat ons van God verhaalt",
+        "type_match": "Thematisch",
+        "karakter": "Verstild en poëtisch",
+        "toelichting": "Verbindt het thema 'licht' aan de openbaring van God in de wereld, een kernpunt van Epifanie.",
+        "suggestie_gebruik": "Lied bij het aansteken van de kaarsen of na de evangelielezing",
+        "eerste_regel": "Liefelijk licht, dat ons van God verhaalt"
+      },
+      {
+        "nummer": "834",
+        "titel": "Vernieuw Gij mij, o eeuwig licht!",
+        "type_match": "Emotioneel",
+        "karakter": "Persoonlijk gebed",
+        "toelichting": "Vraagt om de innerlijke doorwerking van het licht dat in de wereld is verschenen.",
+        "suggestie_gebruik": "Antwoordlied of meditatief moment",
+        "eerste_regel": "Vernieuw Gij mij, o eeuwig licht!"
       }
     ],
     "hemelhoog": [
       {
-        "nummer": "532",
-        "titel": "Jezus is de morgenster",
-        "type_match": "Thematisch",
-        "karakter": "Opwekkend en Fris",
-        "toelichting": "Directe link met de 'ster' uit de lezingen. Een lied dat hoop en verwachting uitstraalt.",
-        "suggestie_gebruik": "Slotlied of kindermoment"
+        "nummer": "149",
+        "titel": "Boven Bethlehem verschijnt een helder licht; ee...",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend en helder",
+        "toelichting": "Beschrijft de ster en de komst van de wijzen, een directe verklanking van Matteüs 2.",
+        "suggestie_gebruik": "Schriftlied bij het Evangelie",
+        "eerste_regel": "Boven Bethlehem verschijnt een helder licht; een ster"
       },
       {
-        "nummer": "695",
-        "titel": "Wij willen dat Jezus wordt verhoogd",
+        "nummer": "124",
+        "titel": "Donker de nacht, met sterren aan de hemel,",
+        "type_match": "Verrassend",
+        "karakter": "Sfeervol",
+        "toelichting": "In een omgeving met veel lichtvervuiling (Westland) herinnert dit lied aan de kracht van één enkele ster in de nacht.",
+        "suggestie_gebruik": "Avondmaalslied of openingslied",
+        "eerste_regel": "Donker de nacht, met sterren aan de hemel,"
+      },
+      {
+        "nummer": "400",
+        "titel": "Welkom hier, vreemdeling,",
         "type_match": "Conceptueel",
-        "karakter": "Strijdbaar",
-        "toelichting": "Past bij de thematiek van 'Koningschap' en de banier die omhoog gaat voor de volken.",
-        "suggestie_gebruik": "Slotlied"
+        "karakter": "Gastvrij en open",
+        "toelichting": "Sluit aan bij Efeziërs 3 en de visie van de gemeente op inclusiviteit en het verwelkomen van de 'ander'.",
+        "suggestie_gebruik": "Lied van de week of bij de mededelingen",
+        "eerste_regel": "Welkom hier, vreemdeling,"
+      },
+      {
+        "nummer": "315",
+        "titel": "Schijn met uw licht in mijn hart, Heer,",
+        "type_match": "Emotioneel",
+        "karakter": "Aanbiddend",
+        "toelichting": "Een gebed om persoonlijke verlichting door de Geest, passend bij de verwondering van Epifanie.",
+        "suggestie_gebruik": "Gebed om de verlichting bij de opening van de Schriften",
+        "eerste_regel": "Schijn met uw licht in mijn hart, Heer,"
+      },
+      {
+        "nummer": "188",
+        "titel": "Jezus is ons licht en leven!",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig en belijdend",
+        "toelichting": "Een kernachtige samenvatting van de Epifanie-boodschap: Jezus als het Licht der Wereld.",
+        "suggestie_gebruik": "Geloof belijdenis of slotlied",
+        "eerste_regel": "Jezus is ons licht en leven!"
       }
     ],
     "op_toonhoogte": [
       {
+        "nummer": "29",
+        "titel": "Geef, HEER, de Koning uwe rechten,",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassiek en eerbiedig",
+        "toelichting": "De berijming van Psalm 72 uit deze bundel, zeer herkenbaar voor de gemeente.",
+        "suggestie_gebruik": "Psalm van de zondag",
+        "eerste_regel": "Geef, HEER, de Koning uwe rechten,"
+      },
+      {
         "nummer": "406",
         "titel": "Ga je mee op zoek",
         "type_match": "Schriftlezing",
-        "karakter": "Uitnodigend",
-        "toelichting": "Specifiek geschreven op het verhaal van de wijzen en de ster. 'Ga je mee op zoek naar het Koningskind'.",
-        "suggestie_gebruik": "Kindermoment of Schriftlied"
+        "karakter": "Uitnodigend en fris",
+        "toelichting": "Bijzonder geschikt voor de kinderen in de dienst; het vertelt de zoektocht van de wijzen.",
+        "suggestie_gebruik": "Kinderlied / Moment met de kinderen",
+        "eerste_regel": "Ga je mee op zoek"
       },
       {
         "nummer": "378",
-        "titel": "De Heer woont in een stralend licht",
+        "titel": "De Heer woont in een stralend licht,",
         "type_match": "Schriftlezing",
         "karakter": "Majestueus",
-        "toelichting": "Verwijst naar Jesaja 60:19. God als het eeuwige licht dat de zon overbodig maakt.",
-        "suggestie_gebruik": "Lofprijzing / Gloria"
+        "toelichting": "Verwijst naar de heerlijkheid van God zoals beschreven in Jesaja 60.",
+        "suggestie_gebruik": "Gloria-lied",
+        "eerste_regel": "De Heer woont in een stralend licht,"
       },
       {
-        "nummer": "161",
-        "titel": "Jezus, U bent het licht in ons leven",
-        "type_match": "Thematisch",
-        "karakter": "Aanbiddend",
-        "toelichting": "Focust op Jezus als Licht dat de duisternis verdrijft. Past goed bij de thematiek van 'Licht der Wereld'.",
-        "suggestie_gebruik": "Na de preek"
-      },
-      {
-        "nummer": "198",
-        "titel": "Jezus, hoop van de volken",
+        "nummer": "350",
+        "titel": "Ga nu heen in vrede,",
         "type_match": "Contextueel",
-        "karakter": "Verbindend",
-        "toelichting": "Identiek aan Hemelhoog 350. De nadruk op 'volken' (meervoud) is essentieel voor deze zondag.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "532",
-        "titel": "Jezus is de morgenster",
-        "type_match": "Thematisch",
-        "karakter": "Vrolijk",
-        "toelichting": "De titel zegt alles. Een moderne, frisse benadering van het oude thema.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "414",
-        "titel": "Jezus zegt, dat Hij hier van ons verwacht",
-        "type_match": "Conceptueel",
-        "karakter": "Appellerend",
-        "toelichting": "Gaat over 'een lichtje zijn'. Dit maakt de Epifanie praktisch: het licht moet weerkaatst worden door de gemeente.",
-        "suggestie_gebruik": "Zending en zegen"
+        "karakter": "Zegenend",
+        "toelichting": "Een bede om vrede die de hoorders meenemen de wereld in, relevant in tijden van internationale spanning.",
+        "suggestie_gebruik": "Slotlied / Zending en Zegen",
+        "eerste_regel": "Ga nu heen in vrede,"
       }
     ],
     "weerklank": [
       {
+        "nummer": "18",
+        "titel": "Er is uit ’s werelds duistere wolken",
+        "type_match": "Schriftlezing",
+        "karakter": "Hoopvol",
+        "toelichting": "Directe verwijzing naar Jesaja 60:1-3 over het licht dat opgaat over de volken.",
+        "suggestie_gebruik": "Lied na de eerste lezing",
+        "eerste_regel": "Er is uit ’s werelds duistere wolken"
+      },
+      {
         "nummer": "571",
-        "titel": "De wijzen, de wijzen",
+        "titel": "De wijzen, de wijzen,",
         "type_match": "Schriftlezing",
         "karakter": "Verhalend",
-        "toelichting": "Hetzelfde lied als Liedboek 520. Vertelt het verhaal van Matteüs 2 accuraat.",
-        "suggestie_gebruik": "Schriftlied"
+        "toelichting": "Een lied dat de reis en de aanbidding door de wijzen uit Matteüs 2 centraal stelt.",
+        "suggestie_gebruik": "Antwoordlied na het Evangelie",
+        "eerste_regel": "De wijzen, de wijzen,"
+      },
+      {
+        "nummer": "101",
+        "titel": "Ik zag het nieuw Jeruzalem",
+        "type_match": "Thematisch",
+        "karakter": "Visionair",
+        "toelichting": "Verbindt de belofte van Jesaja 60 met de uiteindelijke vervulling van Gods koninkrijk voor alle volken.",
+        "suggestie_gebruik": "Toekomstlied",
+        "eerste_regel": "Ik zag het nieuw Jeruzalem"
+      },
+      {
+        "nummer": "73",
+        "titel": "Bewaar de eenheid van Gods Geest,",
+        "type_match": "Conceptueel",
+        "karakter": "Vermanend en bemoedigend",
+        "toelichting": "Sluit aan bij de epistellezing (Efeziërs 3) over de eenheid van het lichaam van Christus.",
+        "suggestie_gebruik": "Lied na de epistellezing",
+        "eerste_regel": "Bewaar de eenheid van Gods Geest,"
+      },
+      {
+        "nummer": "240",
+        "titel": "Jezus zal heersen waar de zon",
+        "type_match": "Thematisch",
+        "karakter": "Triomfantelijk",
+        "toelichting": "De klassieke zendingshymne gebaseerd op Psalm 72, passend bij de universele openbaring.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Jezus zal heersen waar de zon"
+      },
+      {
+        "nummer": "350",
+        "titel": "Door goede machten trouw en stil omgeven,",
+        "type_match": "Emotioneel",
+        "karakter": "Troostrijk",
+        "toelichting": "Biedt houvast en vertrouwen te midden van de onzekerheid van de wereldpolitiek (Oekraïne).",
+        "suggestie_gebruik": "Lied na de voorbeden",
+        "eerste_regel": "Door goede machten trouw en stil omgeven,"
       }
     ],
-    "weerklank_psalmen": []
+    "weerklank_psalmen": [
+      {
+        "nummer": "72",
+        "titel": "O God, wil aan de koning schenken",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassiek-gereformeerd",
+        "toelichting": "De volledige berijming van Psalm 72, essentieel voor de liturgische bedding van deze zondag.",
+        "suggestie_gebruik": "Psalm van de zondag",
+        "eerste_regel": "O God, wil aan de koning schenken"
+      },
+      {
+        "nummer": "87",
+        "titel": "Jeruzalem, de Godsstad hier beneden,",
+        "type_match": "Thematisch",
+        "karakter": "Inclusief",
+        "toelichting": "Bezingt hoe mensen uit alle volken (Morenland, Tyros) burgers worden van de stad van God, parallel aan Jesaja 60.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Jeruzalem, de Godsstad hier beneden,"
+      }
+    ]
   },
   "08c_commentaries": {
     "exegese_eerste_lezing": {

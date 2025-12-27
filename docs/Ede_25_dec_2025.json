@@ -1392,196 +1392,509 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 48,
-      "liturgische_balans": "De selectie biedt een krachtig evenwicht tussen de kosmische grootsheid van de Dagmis (Johannes 1) en de intieme nabijheid van de menswording. Er is bewust gekozen voor liederen die 'zien' en 'licht' centraal stellen, passend bij de visuele oriëntatie van de hoorders in De Gelderhorst. De spanning tussen de kerstvreugde en de actualiteit (Gaza) wordt niet gemeden, maar ingebed in de belofte van de Vredevorst.",
-      "contextuele_reflectie": "In de context van De Gelderhorst is 'het Woord dat vlees werd' (Johannes 1) niet alleen een auditief concept, maar een visuele realiteit: God die Zichzelf 'zichtbaar' maakt. Voor een gemeenschap waar communicatiebarrières dagelijks gevoeld worden, spreekt de 'Vreugdebode' uit Jesaja 52 niet alleen met stemmen, maar met 'lieflijke voeten' – een fysieke, zichtbare aanwezigheid van vrede."
+      "aantal_gevonden_totaal": 89,
+      "liturgische_balans": "De gevonden liederen bieden een brede selectie die goed aansluit bij de thematiek van Kerstmis (Dagmis). Er zijn liederen die de kosmische betekenis van Christus als het Woord benadrukken, de vreugde van Gods openbaring en nabijheid, en lofprijzing voor Gods heil. De aanwezigheid van diverse psalmen (o.a. Psalm 98) zorgt voor een stevige liturgische basis. De selectie omvat liederen die zowel de verwondering over de incarnatie als de vreugde van het heil uitdrukken, passend bij de feestelijke stemming.",
+      "contextuele_reflectie": "De liederen sluiten goed aan bij de maatschappelijke en geloofscontext van De Gelderhorst. De nadruk op 'licht', 'woord' en 'zichtbare nabijheid' is bijzonder relevant voor een visueel georiënteerde gemeenschap. Liederen die Gods communicatie en openbaring bezingen, kunnen krachtig worden overgebracht via gebarentaal. De vreugdevolle stemming van Kerstmis en de thematiek van Gods onvoorwaardelijke liefde en acceptatie resoneren met de waardenoriëntatie van de bewoners, die een veilige haven zoeken waar communicatie moeiteloos is en hun identiteit wordt bevestigd. De liederen bieden een rijke basis voor een inclusieve en betekenisvolle viering."
     },
     "liedboek_2013": [
       {
-        "nummer": "492",
-        "titel": "In den beginne was het woord",
-        "type_match": "Schriftlezing",
-        "karakter": "Plechtig en theologisch diep",
-        "toelichting": "Directe verklanking van Johannes 1:1-18. Voor de dove hoorder: God drukt Zichzelf uit in een 'gebaar' dat mens wordt.",
-        "suggestie_gebruik": "Schriftlied (na het Evangelie)"
-      },
-      {
-        "nummer": "475",
-        "titel": "Ik mag hier aan uw kribbe staan",
-        "type_match": "Emotioneel",
-        "karakter": "Verstild en persoonlijk",
-        "toelichting": "Focus op het 'staan' en 'kijken' bij de kribbe. Sluit aan bij de visuele devotie van de bewoners.",
-        "suggestie_gebruik": "Antwoordlied"
-      },
-      {
-        "nummer": "503",
-        "titel": "Wij staan aan een kribbe, aanschouwen de bron",
-        "type_match": "Conceptueel",
-        "karakter": "Meditatief",
-        "toelichting": "Het woord 'aanschouwen' verbindt de tekst direct met Johannes 1:14 ('wij hebben zijn heerlijkheid aanschouwd').",
-        "suggestie_gebruik": "Communie/Tafelgebed"
-      },
-      {
-        "nummer": "511",
-        "titel": "Door goede machten trouw en stil omgeven",
-        "type_match": "Contextueel",
-        "karakter": "Troostrijk en krachtig",
-        "toelichting": "Bonhoeffers tekst over 'stilte' en 'goede machten' resoneert diep bij ouderen die in onzekere tijden (Gaza/politiek) Gods nabijheid zoeken.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "502",
-        "titel": "Wij zingen door de tranen heen",
-        "type_match": "Verrassend",
-        "karakter": "Schurend maar hoopvol",
-        "toelichting": "Erkent het lijden in de wereld (Gaza) terwijl het kind wordt bezongen. 'Licht in de nacht' is hier geen cliché maar een protest.",
-        "suggestie_gebruik": "Kyrie-moment of Gebeden"
-      },
-      {
+        "bundel": "Liedboek",
         "nummer": "98d",
-        "titel": "Alle einden der aarde aanschouwen het heil",
-        "type_match": "Schriftlezing",
-        "karakter": "Feestelijk",
-        "toelichting": "Antwoordpsalm (Psalm 98). Benadrukt dat het heil 'gezien' wordt door alle volken.",
-        "suggestie_gebruik": "Psalm na de eerste lezing"
+        "titel": "Alle einden der aarde aanschouwen het heil van ...",
+        "eerste_regel": "Alle einden der aarde aanschouwen het heil van Hem, onze God.",
+        "laatste_regel": null
       },
       {
-        "nummer": "491",
-        "titel": "Kind ons geboren, zoon ons gegeven",
-        "type_match": "Thematisch",
-        "karakter": "Hymnisch",
-        "toelichting": "Verbindt de profetie van Jesaja met de vervulling in Christus. Krachtige titels: Wonderbare Raadsman, Vredevorst.",
-        "suggestie_gebruik": "Gloria-lied"
+        "bundel": "Liedboek",
+        "nummer": "879",
+        "titel": "Al je zonde heeft Hij vergeven.",
+        "eerste_regel": "Al je zonde heeft Hij vergeven.",
+        "laatste_regel": null
       },
       {
-        "nummer": "482",
-        "titel": "Er is uit ’s werelds duistere wolken",
-        "type_match": "Thematisch",
-        "karakter": "Strijdbaar en hoopvol",
-        "toelichting": "Spreekt over de 'vreugde' die de 'last van de schouders' neemt (Jesaja 52/9). Zeer herkenbaar voor wie barrières ervaart.",
-        "suggestie_gebruik": "Intocht"
+        "bundel": "Liedboek",
+        "nummer": "546",
+        "titel": "Wees blijde nu, in ’t midden van het lijden,",
+        "eerste_regel": "Wees blijde nu, in ’t midden van het lijden,",
+        "laatste_regel": null
       },
       {
-        "nummer": "509",
-        "titel": "Kindje van vrede, dat op ons wacht",
-        "type_match": "Emotioneel",
-        "karakter": "Lieflijk",
-        "toelichting": "Een gebed om zelf 'bron van liefde' te zijn. De zachte kracht van Kerst tegenover de hardheid van het wereldnieuws.",
-        "suggestie_gebruik": "Gebedslied"
+        "bundel": "Liedboek",
+        "nummer": "3",
+        "titel": "O Heer, de vijand stelt",
+        "eerste_regel": "O Heer, de vijand stelt",
+        "laatste_regel": null
       },
       {
-        "nummer": "488",
-        "titel": "In den beginne was het woord (Zolang er mensen zijn)",
-        "type_match": "Conceptueel",
-        "karakter": "Verhalend",
-        "toelichting": "Huub Oosterhuis' tekst over het Woord dat 'onder ons heeft gewoond'. Focus op de menselijke maat van God.",
-        "suggestie_gebruik": "Schriftlied"
+        "bundel": "Liedboek",
+        "nummer": "4",
+        "titel": "Laat als ik roep mij op U hopen,",
+        "eerste_regel": "Laat als ik roep mij op U hopen,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "20",
+        "titel": "Moge de Heer u antwoord geven",
+        "eerste_regel": "Moge de Heer u antwoord geven",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "27",
+        "titel": "Mijn licht, mijn heil is Hij, mijn God en Here!",
+        "eerste_regel": "Mijn licht, mijn heil is Hij, mijn God en Here!",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "33",
+        "titel": "Kom nu met zang en roer de snaren,",
+        "eerste_regel": "Kom nu met zang en roer de snaren,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "39",
+        "titel": "Ik zeide wel: Nu let ik op mijn weg",
+        "eerste_regel": "Ik zeide wel: Nu let ik op mijn weg",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "49",
+        "titel": "Bewoners van de wijde wereld, hoort.",
+        "eerste_regel": "Bewoners van de wijde wereld, hoort.",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "55",
+        "titel": "God, laat mij smekend tot U treden,",
+        "eerste_regel": "God, laat mij smekend tot U treden,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "77",
+        "titel": "Roepend om gehoor te vinden,",
+        "eerste_regel": "Roepend om gehoor te vinden,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "86",
+        "titel": "Hoor mij, Heer, wil antwoord zenden,",
+        "eerste_regel": "Hoor mij, Heer, wil antwoord zenden,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "116",
+        "titel": "God heb ik lief, want die getrouwe Heer",
+        "eerste_regel": "God heb ik lief, want die getrouwe Heer",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "130",
+        "titel": "Uit diepten van ellende",
+        "eerste_regel": "Uit diepten van ellende",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "13b",
+        "titel": "tot mijn hart de vreugde hervindt om uw heil.",
+        "eerste_regel": "tot mijn hart de vreugde hervindt om uw heil.",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "13c",
+        "titel": "Hoelang nog",
+        "eerste_regel": "Hoelang nog",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "25b",
+        "titel": "Omdat Gij zijt zoals Gij zijt",
+        "eerste_regel": "Omdat Gij zijt zoals Gij zijt",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "103a",
+        "titel": "Loof nu, mijn ziel, de Here,",
+        "eerste_regel": "Loof nu, mijn ziel, de Here,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "130d",
+        "titel": "Uit de diepten roep ik U,",
+        "eerste_regel": "a:",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "139b",
+        "titel": "Heer, U doorgrondt en kent mij;",
+        "eerste_regel": "Heer, U doorgrondt en kent mij;",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "778",
+        "titel": "O Here God, – ons liefst verlangen,",
+        "eerste_regel": "O Here God, – ons liefst verlangen,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "788",
+        "titel": "God die in het begin",
+        "eerste_regel": "God die in het begin",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "30",
+        "titel": "Dank, Heer, Gij hebt het niet gedoogd,",
+        "eerste_regel": "Dank, Heer, Gij hebt het niet gedoogd,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "16b",
+        "titel": "Behüte mich, Gott, ich vertraue dir. Du",
+        "eerste_regel": "Behüte mich, Gott, ich vertraue dir. Du",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "797",
+        "titel": "Ach hoe vluchtig, ach hoe nietig",
+        "eerste_regel": "Ach hoe vluchtig, ach hoe nietig",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "571",
+        "titel": "In stille nacht houdt Hij de wacht",
+        "eerste_regel": "In stille nacht houdt Hij de wacht",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "595",
+        "titel": "Juich, hemelen, één koor van engelen,",
+        "eerste_regel": "Juich, hemelen, één koor van engelen,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Liedboek",
+        "nummer": "212",
+        "titel": "Laten wij zingend deze dag beginnen!",
+        "eerste_regel": "Laten wij zingend deze dag beginnen!",
+        "laatste_regel": null
       }
     ],
     "hemelhoog": [
       {
-        "nummer": "140",
-        "titel": "In de donkere nacht",
-        "type_match": "Thematisch",
-        "karakter": "Licht-georiënteerd",
-        "toelichting": "Focus op het licht dat Gods grootheid in 'menselijke vorm' openbaart. Zeer visueel.",
-        "suggestie_gebruik": "Lichtritueel"
+        "bundel": "Hemelhoog",
+        "nummer": "269",
+        "titel": "Uw gerichten heeft Hij weggenomen,",
+        "eerste_regel": "Uw gerichten heeft Hij weggenomen,",
+        "laatste_regel": null
       },
       {
+        "bundel": "Hemelhoog",
+        "nummer": "17",
+        "titel": "God is voor ons een veilige schuilplaats,",
+        "eerste_regel": "God is voor ons een veilige schuilplaats,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "21",
+        "titel": "Heer, zegen ons met onverdiende liefde",
+        "eerste_regel": "Heer, zegen ons met onverdiende liefde",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "22",
+        "titel": "Wie buiten U heb ik in de hemel?",
+        "eerste_regel": "Wie buiten U heb ik in de hemel?",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "23",
+        "titel": "Wat hou ik van uw huis,",
+        "eerste_regel": "Wat hou ik van uw huis,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "27",
+        "titel": "Ik wil juichen voor U, mijn Heer,",
+        "eerste_regel": "Ik wil juichen voor U, mijn Heer,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "31",
+        "titel": "Cantarei ao Senhor, enquanto viver;",
+        "eerste_regel": "Cantarei ao Senhor, enquanto viver;",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "34",
+        "titel": "Laudate omnes gentes,",
+        "eerste_regel": "Laudate omnes gentes,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "35",
+        "titel": "Zing mee voor God;",
+        "eerste_regel": "Zing mee voor God;",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "64",
+        "titel": "Zeg niet meer ‘nee’. Ik blijf erbij",
+        "eerste_regel": "Zeg niet meer ‘nee’. Ik blijf erbij",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "77",
+        "titel": "Kneed mij, Here God,",
+        "eerste_regel": "Kneed mij, Here God,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "78",
+        "titel": "We stonden aan de kant, maar U liet ons niet st...",
+        "eerste_regel": "We stonden aan de kant, maar U liet ons niet staan.",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "84",
+        "titel": "Waarom, waarom?",
+        "eerste_regel": "Waarom, waarom?",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "95",
+        "titel": "De dag is al bijna voorbij,",
+        "eerste_regel": "De dag is al bijna voorbij,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "109",
+        "titel": "Jezus ging Gods weg",
+        "eerste_regel": "Jezus ging Gods weg",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "115",
+        "titel": "Het is vaak moeilijk om goed te doen",
+        "eerste_regel": "Het is vaak moeilijk om goed te doen",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
+        "nummer": "135",
+        "titel": "Hij liep waar ik loop,",
+        "eerste_regel": "Hij liep waar ik loop,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "Hemelhoog",
         "nummer": "156",
-        "titel": "Wonderbare Raadsman",
-        "type_match": "Schriftlezing",
-        "karakter": "Krachtig/Aanbidding",
-        "toelichting": "Directe link met de titels uit Jesaja. Een proclamatie van vrede in een tijd van oorlog.",
-        "suggestie_gebruik": "Slotlied"
+        "titel": "Wonderbare Raadsman, Wonderbare Raadsman,",
+        "eerste_regel": "Wonderbare Raadsman, Wonderbare Raadsman,",
+        "laatste_regel": null
       },
       {
-        "nummer": "121",
-        "titel": "Nu gaan de bloemen nog dood",
-        "type_match": "Contextueel",
-        "karakter": "Eschatologisch hoopvol",
-        "toelichting": "Erkent de huidige gebrokenheid (Gaza/ziekte) maar wijst naar de 'nieuwe wereld' waar geen verdriet meer is.",
-        "suggestie_gebruik": "Na de preek"
+        "bundel": "Hemelhoog",
+        "nummer": "199",
+        "titel": "Toen de Heer was opgestaan,",
+        "eerste_regel": "Toen de Heer was opgestaan,",
+        "laatste_regel": null
       },
       {
-        "nummer": "154",
-        "titel": "Volheid van God in mensengestalte",
-        "type_match": "Conceptueel",
-        "karakter": "Aanbidding",
-        "toelichting": "Verklankt Hebreeën 1:3 ('de afstraling van Gods heerlijkheid'). God krijgt een 'gezicht'.",
-        "suggestie_gebruik": "Antwoordlied"
+        "bundel": "Hemelhoog",
+        "nummer": "200",
+        "titel": "U zij de glorie, opgestane Heer!",
+        "eerste_regel": "U zij de glorie, opgestane Heer!",
+        "laatste_regel": null
       },
       {
-        "nummer": "143",
-        "titel": "Mensen kijken in het donker",
-        "type_match": "Emotioneel",
-        "karakter": "Uitnodigend",
-        "toelichting": "Het aansteken van een kaars als teken van hoop. Past bij de visuele liturgie van De Gelderhorst.",
-        "suggestie_gebruik": "Kyrie/Gebeden"
+        "bundel": "Hemelhoog",
+        "nummer": "209",
+        "titel": "Zie hoe Jezus lijdt voor mij,",
+        "eerste_regel": "Zie hoe Jezus lijdt voor mij,",
+        "laatste_regel": null
       }
     ],
     "op_toonhoogte": [
       {
-        "nummer": "88",
-        "titel": "Heer, Uw licht en Uw liefde",
-        "type_match": "Thematisch",
-        "karakter": "Stralend",
-        "toelichting": "Focus op het licht dat de duisternis beschijnt (Johannes 1). 'Schijn in mij' als persoonlijk gebed.",
-        "suggestie_gebruik": "Openingslied"
+        "bundel": "OpToonhoogte",
+        "nummer": "24",
+        "titel": "Mijn ziel is stil tot God mijn Heer,",
+        "eerste_regel": "Mijn ziel is stil tot God mijn Heer,",
+        "laatste_regel": null
       },
       {
-        "nummer": "95",
-        "titel": "Licht van de wereld",
-        "type_match": "Conceptueel",
-        "karakter": "Aanbidding",
-        "toelichting": "God die 'het duister' binnentreedt. De visuele metafoor van licht is universeel toegankelijk.",
-        "suggestie_gebruik": "Antwoordlied"
+        "bundel": "OpToonhoogte",
+        "nummer": "31",
+        "titel": "Wie buiten U heb ik in de hemel?",
+        "eerste_regel": "Wie buiten U heb ik in de hemel?",
+        "laatste_regel": null
       },
       {
-        "nummer": "102",
-        "titel": "Vrede van God",
-        "type_match": "Contextueel",
-        "karakter": "Zegenend",
-        "toelichting": "Een gebed om vrede die 'alle verstand te boven gaat'. Cruciaal in de huidige wereldcontext.",
-        "suggestie_gebruik": "Zending en Zegen"
+        "bundel": "OpToonhoogte",
+        "nummer": "40",
+        "titel": "Zingt, zingt een nieuw gezang de HEERE,",
+        "eerste_regel": "Zingt, zingt een nieuw gezang de HEERE,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "41",
+        "titel": "Zing, zing, zing een nieuw lied voor de HEER,",
+        "eerste_regel": "Zing, zing, zing een nieuw lied voor de HEER,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "42",
+        "titel": "De HEER is koning, laat nu een gejuich ontstaan",
+        "eerste_regel": "De HEER is koning, laat nu een gejuich ontstaan",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "63",
+        "titel": "Hoe mooi en hoe heerlijk",
+        "eerste_regel": "Hoe mooi en hoe heerlijk",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "91",
+        "titel": "Laat ieder het horen,",
+        "eerste_regel": "Laat ieder het horen,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "122",
+        "titel": "Lam van God, lam van God,",
+        "eerste_regel": "Lam van God, lam van God,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "132",
+        "titel": "Zie hoe Jezus lijdt voor mij,",
+        "eerste_regel": "Zie hoe Jezus lijdt voor mij,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "135",
+        "titel": "Er komen stromen van zegen,",
+        "eerste_regel": "Er komen stromen van zegen,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "137",
+        "titel": "Heilige Geest van God,",
+        "eerste_regel": "Heilige Geest van God,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "138",
+        "titel": "Heilige Geest van God,",
+        "eerste_regel": "Heilige Geest van God,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "149",
+        "titel": "Groot is uw trouw, o Heer,",
+        "eerste_regel": "Groot is uw trouw, o Heer,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "158",
+        "titel": "De God van de vrede",
+        "eerste_regel": "De God van de vrede",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "172",
+        "titel": "Al laat de zon zich niet meer zien",
+        "eerste_regel": "Al laat de zon zich niet meer zien",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "175",
+        "titel": "Bij God ben ik geborgen",
+        "eerste_regel": "Bij God ben ik geborgen",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "180",
+        "titel": "Er is een Verlosser,",
+        "eerste_regel": "Er is een Verlosser,",
+        "laatste_regel": null
+      },
+      {
+        "bundel": "OpToonhoogte",
+        "nummer": "187",
+        "titel": "Heer, machtig God, ik loof U,",
+        "eerste_regel": "Heer, machtig God, ik loof U,",
+        "laatste_regel": null
       }
     ],
     "weerklank": [
       {
+        "bundel": "Weerklank",
         "nummer": "27",
         "titel": "Hoe lieflijk, hoe schoon zijn de schreden",
-        "type_match": "Schriftlezing",
-        "karakter": "Klassiek/Statig",
-        "toelichting": "Berijming van Jesaja 52:7. De komst van de vreugdebode die vrede verkondigt.",
-        "suggestie_gebruik": "Intocht"
+        "eerste_regel": "Hoe lieflijk, hoe schoon zijn de schreden",
+        "laatste_regel": null
       },
       {
-        "nummer": "143",
-        "titel": "Hef op uw hoofden, poorten wijd!",
-        "type_match": "Thematisch",
-        "karakter": "Triomfantelijk",
-        "toelichting": "De komst van de Koning der ere. Sluit aan bij de majesteit van God in Hebreeën 1.",
-        "suggestie_gebruik": "Gloria"
-      },
-      {
-        "nummer": "152",
-        "titel": "Het Woord is vlees geworden",
-        "type_match": "Schriftlezing",
-        "karakter": "Leerstellig/Eerbiedig",
-        "toelichting": "Directe focus op de incarnatie uit Johannes 1. De onzichtbare God wordt tastbaar.",
-        "suggestie_gebruik": "Schriftlied"
+        "bundel": "Weerklank",
+        "nummer": "263",
+        "titel": "Hoe lieflijk zijn de voeten van de bode",
+        "eerste_regel": "Hoe lieflijk zijn de voeten van de bode",
+        "laatste_regel": null
       }
     ],
-    "weerklank_psalmen": [
-      {
-        "nummer": "118",
-        "titel": "Psalm 98",
-        "type_match": "Schriftlezing",
-        "karakter": "Jubelend",
-        "toelichting": "De klassieke berijming van de voorgeschreven psalm. 'Zingt de Heer een nieuw lied'.",
-        "suggestie_gebruik": "Antwoordpsalm"
-      }
-    ]
+    "weerklank_psalmen": []
   },
   "08c_commentaries": {
     "exegese_eerste_lezing": {

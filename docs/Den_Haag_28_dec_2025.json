@@ -1361,418 +1361,360 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 52,
-      "liturgische_balans": "De selectie biedt een krachtig evenwicht tussen de intieme geborgenheid van het 'Heilig Gezin' (Sirach, Kolossenzen) en de rauwe, politieke realiteit van de vlucht naar Egypte (Matteüs). Voor de Kloosterkerk-context is gekozen voor liederen die zowel esthetisch hoogstaand als theologisch gelaagd zijn, passend bij de 'stadsklooster'-visie. Er is een bewuste spanning aangebracht tussen kerstvreugde en de actuele vluchtelingenproblematiek.",
-      "contextuele_reflectie": "In het hart van politiek Den Haag spreekt de 'vlucht naar Egypte' (Matteüs 2) direct tot de actualiteit van het migratiedebat (december 2025). De liederen verbinden de ethiek van het 'huiselijk samenleven' met de universele roeping om de vreemdeling en het kwetsbare leven te beschermen. De overgang van Kerst naar het nieuwe jaar wordt gemarkeerd door liederen van vertrouwen (Bonhoeffer)."
+      "aantal_gevonden_totaal": 39,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de oudtestamentische wijsheid over het gezin (Sirach/Psalm 128) en de nieuwtestamentische realiteit van de vlucht naar Egypte. Er is een goede verdeling tussen klassieke psalmberijmingen en meer eigentijdse liederen die de kwetsbaarheid van het kind centraal stellen.",
+      "contextuele_reflectie": "De liederen verbinden de 'huiselijke kerk' met de actuele thematiek van migratie en veiligheid. Voor de Haagse Kloosterkerk-gemeente, opererend in het 'hart van de macht', bieden liederen over bescherming en vlucht (zoals Bonhoeffer's 'Door goede machten') een noodzakelijke ethische reflectie op het huidige debat over migranten."
     },
     "liedboek_2013": [
       {
         "nummer": "128",
         "titel": "Welzalig is een ieder / die God van harte vreest",
         "type_match": "Schriftlezing",
-        "karakter": "Statig en hoopvol",
-        "toelichting": "Directe berijming van de antwoordpsalm. Het verbindt de zegen van God met het geluk in het gezin en de arbeid, wat naadloos aansluit bij Sirach 3.",
-        "suggestie_gebruik": "Antwoordlied"
-      },
-      {
-        "nummer": "506",
-        "titel": "Wij trekken in een lange stoet",
-        "type_match": "Contextueel",
-        "karakter": "Pelgrimslied",
-        "toelichting": "Hoewel vaak gezongen als intocht naar Bethlehem, resoneert de 'lange stoet' op deze zondag met de vlucht van het gezin naar Egypte en de wereldwijde migratiestromen.",
-        "suggestie_gebruik": "Intochtlied"
+        "karakter": "Vertrouwend en wijs",
+        "toelichting": "Directe berijming van Psalm 128, de psalm van de zondag, die de zegen over het huisgezin bezingt.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Welzalig is een ieder / die God van harte vreest"
       },
       {
         "nummer": "511",
-        "titel": "Door goede machten trouw en stil omgeven",
+        "titel": "Door goede machten trouw en stil omgeven,",
+        "type_match": "Contextueel",
+        "karakter": "Moedig en getroost",
+        "toelichting": "De tekst van Bonhoeffer resoneert met de dreiging die het heilige gezin ervaart en biedt troost in onzekere tijden.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Door goede machten trouw en stil omgeven,"
+      },
+      {
+        "nummer": "495",
+        "titel": "Toen midden in de wintertijd",
         "type_match": "Seizoen",
-        "karakter": "Verstild en krachtig",
-        "toelichting": "De tekst van Bonhoeffer biedt de ultieme verwoording van geborgenheid te midden van dreiging, essentieel voor de overgang naar het nieuwe jaar en de vlucht-thematiek.",
-        "suggestie_gebruik": "Slotlied / Gebed"
+        "karakter": "Verhalend",
+        "toelichting": "Past bij de kersttijd en de menswording van Christus in de koude realiteit van de wereld.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Toen midden in de wintertijd"
       },
       {
-        "nummer": "791",
-        "titel": "Liefde, eenmaal uitgesproken",
+        "nummer": "348",
+        "titel": "Heer van uw kerk,",
+        "type_match": "Thematisch",
+        "karakter": "Gebed",
+        "toelichting": "Vraagt om Gods leiding voor de gemeenschap als 'huisgezin van God', passend bij Kolossenzen 3.",
+        "suggestie_gebruik": "Gebed om de verlichting",
+        "eerste_regel": "Heer van uw kerk,"
+      },
+      {
+        "nummer": "520",
+        "titel": "De wijzen, de wijzen,",
         "type_match": "Schriftlezing",
-        "karakter": "Lyrisch en verbindend",
-        "toelichting": "Sluit aan bij de oproep in Kolossenzen 3 om ons te 'bekleden met de liefde'. Een prachtig lied voor de 'huiselijke kerk'.",
-        "suggestie_gebruik": "Antwoord na de Epistel"
+        "karakter": "Lichtvoetig maar diep",
+        "toelichting": "Verwijst naar de wijzen die in het evangelie (Matteüs 2) de aanleiding zijn voor de vlucht naar Egypte.",
+        "suggestie_gebruik": "Lied bij de kerststal",
+        "eerste_regel": "De wijzen, de wijzen,"
       },
       {
-        "nummer": "801",
-        "titel": "Door de nacht van strijd en zorgen",
+        "nummer": "810",
+        "titel": "Ga: tot de einden der aarde,",
         "type_match": "Conceptueel",
-        "karakter": "Strijdbare hymne",
-        "toelichting": "Verbeeldt de kerk als een volk onderweg, net als het gezin van Nazareth. Het benadrukt de eenheid die in Kolossenzen wordt gevraagd.",
-        "suggestie_gebruik": "Lied na de verkondiging"
+        "karakter": "Zendend",
+        "toelichting": "Verbindt de vlucht van het gezin met de universele opdracht om Gods vrede overal te brengen.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Ga: tot de einden der aarde,"
       },
       {
-        "nummer": "838",
-        "titel": "O grote God die liefde zijt",
-        "type_match": "Schriftlezing",
-        "karakter": "Ootmoedig gebed",
-        "toelichting": "Vertaalt de ethische vermaningen uit Kolossenzen 3 naar een persoonlijk en gemeenschappelijk gebed om nederigheid en vrede.",
-        "suggestie_gebruik": "Gebedslied / Kyrie-reflectie"
-      },
-      {
-        "nummer": "974",
-        "titel": "Maak ons uw liefde, God",
-        "type_match": "Conceptueel",
-        "karakter": "Gemeenschapslied",
-        "toelichting": "Focus op de onderlinge zorg en het 'verstaan' van elkaar, wat de kern is van de lezing uit Sirach over de omgang tussen generaties.",
-        "suggestie_gebruik": "Collectelied"
-      },
-      {
-        "nummer": "997",
-        "titel": "– en vele duizenden, ontheemd, gevlucht uit eigen land",
+        "nummer": "990",
+        "titel": "De laatsten worden de eersten,",
         "type_match": "Verrassend",
-        "karakter": "Rauw en actueel",
-        "toelichting": "Dit lied brengt de vlucht naar Egypte (Matteüs 2) direct in de context van de actualiteit (december 2025). Een gedurfde keuze voor de Kloosterkerk.",
-        "suggestie_gebruik": "Moment van stilte / Voorbeden"
+        "karakter": "Strijdbaar",
+        "toelichting": "Reflecteert op de omkering van waarden, passend bij de kwetsbare Messias die moet vluchten voor een koning.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "De laatsten worden de eersten,"
       },
       {
-        "nummer": "991",
-        "titel": "De eersten zijn de laatsten",
-        "type_match": "Conceptueel",
-        "karakter": "Theologische omkering",
-        "toelichting": "Reflecteert op de 'omkering' die het kind in de kribbe teweegbrengt; de kwetsbare vluchteling is de eigenlijke Koning.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "481",
-        "titel": "Hoor, de engelen zingen de eer",
-        "type_match": "Seizoen",
-        "karakter": "Feestelijk",
-        "toelichting": "Houdt de kerstvreugde vast (Gloria-element), maar herinnert ons eraan dat deze vrede 'op aarde' moet landen, in onze gezinnen.",
-        "suggestie_gebruik": "Gloria-lied"
+        "nummer": "751",
+        "titel": "De Heer verschijnt te middernacht!",
+        "type_match": "Thematisch",
+        "karakter": "Urgent",
+        "toelichting": "De onverwachte komst en de noodzaak tot waakzaamheid sluiten aan bij de nachtelijke vlucht van Jozef.",
+        "suggestie_gebruik": "Vesperlied",
+        "eerste_regel": "De Heer verschijnt te middernacht!"
       }
     ],
     "hemelhoog": [
       {
         "nummer": "152",
-        "titel": "Vlucht, Jozef, vlucht",
+        "titel": "Vlucht, Jozef, vlucht,",
         "type_match": "Schriftlezing",
-        "karakter": "Narratief en dringend",
-        "toelichting": "Een zeldzaam lied dat expliciet de vlucht naar Egypte uit Matteüs 2 bezingt. Onmisbaar voor deze zondag.",
-        "suggestie_gebruik": "Schriftlied bij het Evangelie"
+        "karakter": "Dramatisch en urgent",
+        "toelichting": "Een directe verklanking van Matteüs 2:13, de opdracht aan Jozef om met het kind te vluchten.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Vlucht, Jozef, vlucht,"
       },
       {
-        "nummer": "472",
-        "titel": "Ga nu heen in vrede",
-        "type_match": "Conceptueel",
-        "karakter": "Zegenend",
-        "toelichting": "Benadrukt dat het geloof 'thuis' en in het 'gezin' waargemaakt moet worden, precies de boodschap van Sirach en Kolossenzen.",
-        "suggestie_gebruik": "Zending en Zegen"
+        "nummer": "67",
+        "titel": "David is gevlucht",
+        "type_match": "Thematisch",
+        "karakter": "Ingetogen",
+        "toelichting": "Hoewel over David, resoneert het thema 'vluchten voor de machthebber' sterk met de evangelielezing.",
+        "suggestie_gebruik": "Reflectielied",
+        "eerste_regel": "David is gevlucht"
       },
       {
-        "nummer": "601",
-        "titel": "Zegen ons",
+        "nummer": "23",
+        "titel": "Wat hou ik van uw huis,",
+        "type_match": "Thematisch",
+        "karakter": "Verlangend",
+        "toelichting": "Psalm 84; het verlangen naar een veilige plek bij God, de ultieme geborgenheid voor elk gezin.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Wat hou ik van uw huis,"
+      },
+      {
+        "nummer": "58",
+        "titel": "Klein, klein kindje,",
         "type_match": "Emotioneel",
-        "karakter": "Warm en teder",
-        "toelichting": "Vraagt om Gods nabijheid in de kleinste kring van het leven. Past bij de sfeer van het 'Heilig Gezin'.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "136",
-        "titel": "Licht van de wereld",
-        "type_match": "Seizoen",
-        "karakter": "Aanbiddend",
-        "toelichting": "Jezus als het licht dat in de duisternis (van de vlucht en dreiging) schijnt.",
-        "suggestie_gebruik": "Aanbiddingslied"
-      },
-      {
-        "nummer": "578",
-        "titel": "Huis van God",
-        "type_match": "Conceptueel",
-        "karakter": "Uitnodigend",
-        "toelichting": "Verbindt het fysieke huis met de geestelijke woning, passend bij de 'huiselijke kerk'.",
-        "suggestie_gebruik": "Intochtlied"
-      },
-      {
-        "nummer": "443",
-        "titel": "Heer, wijs mij uw weg",
-        "type_match": "Emotioneel",
-        "karakter": "Zoekend",
-        "toelichting": "De onzekere weg van Jozef en Maria vraagt om voortdurende leiding, een thema dat ook de hoorders in Den Haag zal aanspreken.",
-        "suggestie_gebruik": "Gebed na de preek"
-      },
-      {
-        "nummer": "545",
-        "titel": "Maak ons tot een stralend licht",
-        "type_match": "Conceptueel",
-        "karakter": "Missionair",
-        "toelichting": "De opdracht om als gezin/gemeenschap een licht te zijn in een donkere wereld (migratiecrisis).",
-        "suggestie_gebruik": "Slotlied"
+        "karakter": "Teder",
+        "toelichting": "Benadrukt de kwetsbaarheid van het kind Jezus, dat afhankelijk is van de zorg van zijn ouders.",
+        "suggestie_gebruik": "Lied na de kindernevendienst",
+        "eerste_regel": "Klein, klein kindje,"
       },
       {
         "nummer": "632",
-        "titel": "God in ons midden",
+        "titel": "God in ons midden,",
         "type_match": "Conceptueel",
-        "karakter": "Verwachtingsvol",
-        "toelichting": "De Immanuel-gedachte: God is erbij, ook in de dreiging van Herodes.",
-        "suggestie_gebruik": "Lied bij de tafel"
+        "karakter": "Lofprijzend",
+        "toelichting": "Viert de aanwezigheid van God in de menselijke context, ondanks de dreiging van buitenaf.",
+        "suggestie_gebruik": "Gloria",
+        "eerste_regel": "God in ons midden,"
       },
       {
-        "nummer": "145",
-        "titel": "Kind ons geboren",
-        "type_match": "Seizoen",
-        "karakter": "Vreugdevol",
-        "toelichting": "Bevestigt de messiaanse identiteit van het kind dat moet vluchten.",
-        "suggestie_gebruik": "Gloria-lied"
+        "nummer": "341",
+        "titel": "Hij was bij God, Hij was er kind aan huis,",
+        "type_match": "Conceptueel",
+        "karakter": "Beschouwend",
+        "toelichting": "Prachtige verbinding tussen de goddelijke oorsprong en de aardse 'huiselijkheid' van Jezus.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Hij was bij God, Hij was er kind aan huis,"
       },
       {
-        "nummer": "477",
-        "titel": "Dat is het grootste",
-        "type_match": "Schriftlezing",
-        "karakter": "Ethisch",
-        "toelichting": "De samenvatting van de wet, die de basis vormt voor de gezins-ethiek in Kolossenzen 3.",
-        "suggestie_gebruik": "Na de wet / Leefregel"
+        "nummer": "270",
+        "titel": "Hoe lang nog tot uw vrede komt?",
+        "type_match": "Contextueel",
+        "karakter": "Klacht/Gebed",
+        "toelichting": "Sluit aan bij de actualiteit van vluchtelingen en het gebrek aan vrede in de wereld.",
+        "suggestie_gebruik": "Kyrie-gebed",
+        "eerste_regel": "Hoe lang nog tot uw vrede komt?"
       }
     ],
     "op_toonhoogte": [
       {
-        "nummer": "63",
-        "titel": "Hoe mooi en hoe heerlijk",
-        "type_match": "Conceptueel",
-        "karakter": "Harmonieus",
-        "toelichting": "Bezingt de schoonheid van familiebanden en eenheid, wat de kern is van de lezingen van deze zondag.",
-        "suggestie_gebruik": "Antwoordlied"
-      },
-      {
-        "nummer": "373",
-        "titel": "Ik was hongerig en jij gaf Mij te eten",
-        "type_match": "Contextueel",
-        "karakter": "Confronterend",
-        "toelichting": "Verbindt de zorg voor de vreemdeling (Matteüs 25) met de vlucht van Jezus. Zeer relevant voor de Haagse context.",
-        "suggestie_gebruik": "Collectelied / Diaconaal moment"
-      },
-      {
-        "nummer": "350",
-        "titel": "Ga nu heen in vrede",
-        "type_match": "Schriftlezing",
-        "karakter": "Praktisch",
-        "toelichting": "Vraagt om Christus 'thuis' te laten zijn, wat de brug slaat tussen de liturgie en het dagelijks leven uit Kolossenzen.",
-        "suggestie_gebruik": "Zending"
-      },
-      {
-        "nummer": "104",
-        "titel": "Wij trekken in een lange stoet",
+        "nummer": "103",
+        "titel": "Want een kind is ons geboren,",
         "type_match": "Seizoen",
-        "karakter": "Verhalend",
-        "toelichting": "De reis naar Bethlehem/Egypte als beeld voor ons eigen leven.",
-        "suggestie_gebruik": "Intocht"
+        "karakter": "Feestelijk",
+        "toelichting": "De profetie van Jesaja die vervuld wordt in het kind dat nu beschermd moet worden.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Want een kind is ons geboren,"
       },
       {
-        "nummer": "406",
-        "titel": "Ga je mee op zoek",
-        "type_match": "Verrassend",
-        "karakter": "Kinderlijk maar diep",
-        "toelichting": "Geschikt voor een moment met kinderen: het zoeken naar het kind dat verborgen moet blijven voor de koning.",
-        "suggestie_gebruik": "Kindermoment"
+        "nummer": "164",
+        "titel": "Onze Vader in de hemel",
+        "type_match": "Thematisch",
+        "karakter": "Eerbiedig",
+        "toelichting": "Het gebed tot de Vader, passend bij de focus op vaderschap in Sirach en de rol van Jozef.",
+        "suggestie_gebruik": "Gebed",
+        "eerste_regel": "Onze Vader in de hemel"
       },
       {
-        "nummer": "78",
-        "titel": "Ere zij God",
-        "type_match": "Seizoen",
-        "karakter": "Klassiek",
-        "toelichting": "De traditionele kerstjubel die in de Kloosterkerk niet mag ontbreken in de kersttijd.",
-        "suggestie_gebruik": "Gloria"
-      },
-      {
-        "nummer": "105",
-        "titel": "Wijs mij de weg naar Bethlehem",
+        "nummer": "485",
+        "titel": "De Here zegent jou en Hij beschermt jou,",
         "type_match": "Emotioneel",
-        "karakter": "Verlangend",
-        "toelichting": "Het verlangen naar de eenvoud en vrede van de kribbe te midden van de wereldse macht.",
-        "suggestie_gebruik": "Meditatief lied"
+        "karakter": "Zegenend",
+        "toelichting": "Een lied van bescherming, essentieel voor de thematiek van de Heilige Familie onder dreiging.",
+        "suggestie_gebruik": "Zegenlied",
+        "eerste_regel": "De Here zegent jou en Hij beschermt jou,"
       },
       {
-        "nummer": "503",
-        "titel": "Hé, kom je kijken wie ik heb ontmoet",
+        "nummer": "522",
+        "titel": "Ik zag een kuikentje, dat bij zijn moeder zat",
+        "type_match": "Verrassend",
+        "karakter": "Naïef/Teder",
+        "toelichting": "Gebruikt de metafoor van bescherming onder de vleugels, passend bij de zorg voor het kwetsbare leven.",
+        "suggestie_gebruik": "Kindermoment",
+        "eerste_regel": "Ik zag een kuikentje, dat bij zijn moeder zat"
+      },
+      {
+        "nummer": "34",
+        "titel": "Wat hou ik van uw huis,",
+        "type_match": "Thematisch",
+        "karakter": "Lyrisch",
+        "toelichting": "Psalm 84; de kerk als een thuis voor de 'mussen en zwaluwen', de ontheemden.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Wat hou ik van uw huis,"
+      },
+      {
+        "nummer": "133",
+        "titel": "Zo lief had God de Vader ons,",
         "type_match": "Conceptueel",
-        "karakter": "Getuigend",
-        "toelichting": "De ontmoeting met de kwetsbare God verandert onze kijk op de ander.",
-        "suggestie_gebruik": "Na de preek"
+        "karakter": "Dankbaar",
+        "toelichting": "Focus op de liefde van de Vader die zijn Zoon zendt in onze menselijke realiteit.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Zo lief had God de Vader ons,"
       },
       {
-        "nummer": "92",
-        "titel": "Lof zij de God van Israël",
-        "type_match": "Schriftlezing",
-        "karakter": "Bijbels-thematisch",
-        "toelichting": "De lofzang van Zacharias verbindt de belofte aan de vaderen met de concrete redding.",
-        "suggestie_gebruik": "Lofzang"
+        "nummer": "253",
+        "titel": "Geef vrede, Heer, geef vrede,",
+        "type_match": "Contextueel",
+        "karakter": "Smeekgebed",
+        "toelichting": "Een roep om vrede in een wereld vol Herodes-figuren en geweld.",
+        "suggestie_gebruik": "Kyrie-gebed",
+        "eerste_regel": "Geef vrede, Heer, geef vrede,"
       },
       {
-        "nummer": "510",
-        "titel": "Hij is machtig, Hij is krachtig",
-        "type_match": "Conceptueel",
-        "karakter": "Krachtig",
-        "toelichting": "Tegenover de macht van Herodes staat de werkelijke macht van het Kind.",
-        "suggestie_gebruik": "Slotlied"
+        "nummer": "386",
+        "titel": "O grote God die liefde zijt,",
+        "type_match": "Thematisch",
+        "karakter": "Statig",
+        "toelichting": "Vraagt om de liefde die in Kolossenzen 3 wordt beschreven als de band van de volmaaktheid.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "O grote God die liefde zijt,"
       }
     ],
     "weerklank": [
       {
-        "nummer": "131",
-        "titel": "Vlucht naar Egypte",
-        "type_match": "Schriftlezing",
-        "karakter": "Verhalend en ernstig",
-        "toelichting": "Een zeer specifieke berijming van het evangelie van deze zondag. Het benadrukt Gods leiding in de gevaarvolle reis.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
         "nummer": "350",
-        "titel": "Door goede machten trouw en stil omgeven",
-        "type_match": "Seizoen",
-        "karakter": "Troostrijk",
-        "toelichting": "De klassieke vertaling van Bonhoeffer, passend bij de jaarwisseling en de thematiek van bescherming.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "470",
-        "titel": "Liefde is de bron",
-        "type_match": "Schriftlezing",
-        "karakter": "Thematisch",
-        "toelichting": "Sluit aan bij de 'liefde' als band van de volmaaktheid uit Kolossenzen 3.",
-        "suggestie_gebruik": "Antwoordlied"
-      },
-      {
-        "nummer": "130",
-        "titel": "O kind, o teder kind",
-        "type_match": "Emotioneel",
-        "karakter": "Verstild",
-        "toelichting": "Benadrukt de kwetsbaarheid van de mensgeworden God, die afhankelijk is van menselijke zorg (Jozef en Maria).",
-        "suggestie_gebruik": "Meditatielied"
+        "titel": "Door goede machten trouw en stil omgeven,",
+        "type_match": "Contextueel",
+        "karakter": "Krachtig",
+        "toelichting": "De klassieke tekst over Gods bescherming in tijden van vervolging en gevaar.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Door goede machten trouw en stil omgeven,"
       },
       {
         "nummer": "121",
-        "titel": "God in ons midden",
-        "type_match": "Conceptueel",
-        "karakter": "Aanbiddend",
-        "toelichting": "De Immanuel-belofte die standhoudt, ook als het gezin moet vluchten.",
-        "suggestie_gebruik": "Lied bij de tafel"
-      },
-      {
-        "nummer": "321",
-        "titel": "Het is al jarenlang geleden",
-        "type_match": "Conceptueel",
-        "karakter": "Verbond-georiënteerd",
-        "toelichting": "Verbindt de doop en het verbond met de opvoeding in het gezin, passend bij Sirach.",
-        "suggestie_gebruik": "Doopgedachtenis / Gezinsmoment"
+        "titel": "God in ons midden,",
+        "type_match": "Thematisch",
+        "karakter": "Ingetogen",
+        "toelichting": "Viert de Immanuël-belofte: God die met het gezin meereist, ook in de vlucht.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "God in ons midden,"
       },
       {
         "nummer": "571",
-        "titel": "De wijzen, de wijzen",
-        "type_match": "Seizoen",
-        "karakter": "Narratief",
-        "toelichting": "De context van de wijzen die net vertrokken zijn, waarna de vlucht begint.",
-        "suggestie_gebruik": "Intocht"
+        "titel": "De wijzen, de wijzen,",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend",
+        "toelichting": "Beschrijft de tocht van de wijzen die de profetie vervullen en de vlucht in gang zetten.",
+        "suggestie_gebruik": "Lied bij de kerststal",
+        "eerste_regel": "De wijzen, de wijzen,"
       },
       {
-        "nummer": "240",
-        "titel": "Jezus zal heersen waar de zon",
+        "nummer": "174",
+        "titel": "Hoor aan, gij die Gods kind’ren zijt:",
         "type_match": "Conceptueel",
-        "karakter": "Universeel",
-        "toelichting": "Een visioen van vrede dat alle grenzen (en vluchtelingenwegen) overstijgt.",
-        "suggestie_gebruik": "Slotlied"
+        "karakter": "Vermanend/Bemoedigend",
+        "toelichting": "Sluit aan bij de ethische vermaningen uit Sirach en Kolossenzen over het leven als Gods kinderen.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Hoor aan, gij die Gods kind’ren zijt:"
       },
       {
-        "nummer": "17",
-        "titel": "Daar is uit ’s werelds duis’tre wolken",
-        "type_match": "Seizoen",
-        "karakter": "Klassiek-gereformeerd",
-        "toelichting": "Het licht dat doorbreekt in de duisternis van de wereldgeschiedenis.",
-        "suggestie_gebruik": "Lied na de preek"
+        "nummer": "306",
+        "titel": "’k Geloof in God – Hij is de Vader,",
+        "type_match": "Thematisch",
+        "karakter": "Belijdend",
+        "toelichting": "Bevestigt het geloof in God als Vader, wat de basis is voor de gezins-ethiek van deze zondag.",
+        "suggestie_gebruik": "Geloofsbelijdenis",
+        "eerste_regel": "’k Geloof in God – Hij is de Vader,"
       },
       {
-        "nummer": "481",
-        "titel": "Zou ik niet van harte zingen",
+        "nummer": "44",
+        "titel": "De Heer verschijnt te middernacht!",
+        "type_match": "Thematisch",
+        "karakter": "Waakzaam",
+        "toelichting": "De nachtelijke verschijning en actie van God, parallel aan de droom van Jozef.",
+        "suggestie_gebruik": "Avondmaalslied",
+        "eerste_regel": "De Heer verschijnt te middernacht!"
+      },
+      {
+        "nummer": "45",
+        "titel": "Hoor! Een woord van eeuwig leven –",
+        "type_match": "Thematisch",
+        "karakter": "Verkondigend",
+        "toelichting": "Het Woord dat vlees is geworden en nu in de wereld zijn weg zoekt.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Hoor! Een woord van eeuwig leven –"
+      },
+      {
+        "nummer": "593",
+        "titel": "Heer, zie ons aan,",
         "type_match": "Emotioneel",
-        "karakter": "Dankbaar",
-        "toelichting": "Een lied van diep vertrouwen in Gods vaderlijke zorg, passend bij de familie-thematiek.",
-        "suggestie_gebruik": "Danklied"
+        "karakter": "Ootmoedig",
+        "toelichting": "Een gebed om ontferming over gezinnen en zij die in nood zijn.",
+        "suggestie_gebruik": "Kyrie-gebed",
+        "eerste_regel": "Heer, zie ons aan,"
       }
     ],
     "weerklank_psalmen": [
       {
         "nummer": "128",
-        "titel": "Welzalig zullen wezen wie in Gods wegen gaan",
+        "titel": "Welzalig zullen wezen wie in Gods wegen gaan.",
         "type_match": "Schriftlezing",
-        "karakter": "Zegenend",
-        "toelichting": "De berijmde psalm van de dag. Focus op de zegen over het huisgezin.",
-        "suggestie_gebruik": "Antwoordpsalm"
-      },
-      {
-        "nummer": "127",
-        "titel": "Wanneer de Heer het huis niet bouwt",
-        "type_match": "Conceptueel",
-        "karakter": "Relativerend",
-        "toelichting": "Herinnert ons eraan dat alle menselijke gezins-ethiek rust op Gods genade. Sluit aan bij Sirach.",
-        "suggestie_gebruik": "Lied na de epistel"
-      },
-      {
-        "nummer": "121",
-        "titel": "Ik sla mijn ogen op naar de bergen",
-        "type_match": "Conceptueel",
-        "karakter": "Beschermend",
-        "toelichting": "De psalm van de reiziger/vluchteling. God als de bewaarder die niet sluimert.",
-        "suggestie_gebruik": "Gebedslied"
+        "karakter": "Stabiel",
+        "toelichting": "De berijmde Psalm 128 over de zegen op arbeid en gezin.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Welzalig zullen wezen wie in Gods wegen gaan."
       },
       {
         "nummer": "91",
-        "titel": "Wie in de schaduw van de Hoogste woont",
-        "type_match": "Conceptueel",
+        "titel": "Hij die op Gods bescherming wacht,",
+        "type_match": "Thematisch",
         "karakter": "Veilig",
-        "toelichting": "De ultieme psalm over geborgenheid onder Gods vleugels te midden van gevaar.",
-        "suggestie_gebruik": "Lied na de preek"
+        "toelichting": "De ultieme psalm over bescherming tegen gevaar, passend bij de vlucht naar Egypte.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Hij die op Gods bescherming wacht,"
       },
       {
-        "nummer": "133",
-        "titel": "Hoe goed is het als broeders",
-        "type_match": "Conceptueel",
-        "karakter": "Verbindend",
-        "toelichting": "De zegen van het samenwonen in eenheid, passend bij de 'Heilige Familie'.",
-        "suggestie_gebruik": "Collectelied"
+        "nummer": "127",
+        "titel": "Wanneer de HEER het huis niet bouwt,",
+        "type_match": "Thematisch",
+        "karakter": "Relativerend",
+        "toelichting": "Herinnert eraan dat alle menselijke inspanning (ook die van Jozef) afhankelijk is van Gods zegen.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Wanneer de HEER het huis niet bouwt,"
       },
       {
-        "nummer": "122",
-        "titel": "Ik was verheugd",
-        "type_match": "Conceptueel",
-        "karakter": "Vredig",
-        "toelichting": "Gebed om vrede voor het 'huis', zowel de tempel als het gezin.",
-        "suggestie_gebruik": "Intochtpsalm"
+        "nummer": "46",
+        "titel": "God is een toevlucht en een sterkte,",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "God als burcht in een wankele wereld, een thema dat de Kloosterkerk als 'stadsklooster' aanspreekt.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "God is een toevlucht en een sterkte,"
+      },
+      {
+        "nummer": "31",
+        "titel": "Bij U, o HEER, zoek ik bescherming.",
+        "type_match": "Thematisch",
+        "karakter": "Smeekgebed",
+        "toelichting": "De roep om veiligheid van iemand die vervolgd wordt, zoals het kind Jezus.",
+        "suggestie_gebruik": "Kyrie-gebed",
+        "eerste_regel": "Bij U, o HEER, zoek ik bescherming."
       },
       {
         "nummer": "84",
-        "titel": "Hoe lieflijk zijn uw woningen",
-        "type_match": "Conceptueel",
+        "titel": "Hoe lieflijk is uw huis, o HEER!",
+        "type_match": "Thematisch",
         "karakter": "Verlangend",
-        "toelichting": "Het verlangen naar een veilig thuis bij God, waar zelfs de mus een nest vindt.",
-        "suggestie_gebruik": "Aanvangspsalm"
+        "toelichting": "Over de geborgenheid in Gods huis, een contrast met de ontheemding van de vlucht.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Hoe lieflijk is uw huis, o HEER!"
       },
       {
-        "nummer": "23",
-        "titel": "De Heer is mijn Herder",
-        "type_match": "Conceptueel",
-        "karakter": "Vertrouwend",
-        "toelichting": "Begeleiding door het 'dal van diepe duisternis' (de vlucht).",
-        "suggestie_gebruik": "Communielied / Tafel"
-      },
-      {
-        "nummer": "115",
-        "titel": "Niet ons o Heer",
-        "type_match": "Conceptueel",
-        "karakter": "Lofprijzend",
-        "toelichting": "Vraagt om zegen voor het 'huis van Israël' en het 'huis van Aäron'.",
-        "suggestie_gebruik": "Slotpsalm"
-      },
-      {
-        "nummer": "107",
-        "titel": "Looft de Heer want Hij is goed",
-        "type_match": "Conceptueel",
-        "karakter": "Bevrijdend",
-        "toelichting": "Danklied voor hen die uit de woestijn en uit de nood zijn gered.",
-        "suggestie_gebruik": "Dankzegging"
+        "nummer": "11",
+        "titel": "De HERE is mijn toevlucht en mijn sterkte.",
+        "type_match": "Thematisch",
+        "karakter": "Vastberaden",
+        "toelichting": "Vertrouwen op God wanneer de fundamenten wankelen.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "De HERE is mijn toevlucht en mijn sterkte."
       }
     ]
   },

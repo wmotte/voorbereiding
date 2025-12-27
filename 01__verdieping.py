@@ -34,6 +34,15 @@ import asyncio
 from pathlib import Path
 from datetime import datetime
 
+# Model keuze: Gemini 3 flash als primair, pro als fallback
+#MODEL_NAME = "gemini-3-flash-preview"
+
+#MODEL_NAME = "gemini-3-pro-preview"
+#MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
+
+MODEL_NAME = "gemini-2.5-flash"
+MODEL_NAME_FALLBACK = "gemini-2.5-pro"
+
 try:
     from google import genai
     from google.genai import types
@@ -82,12 +91,6 @@ SERMON_MAGIC = b'SOLLE01'
 SERMON_VERSION = 1
 SERMON_XOR_KEY = b'DorotheeS\xc3\xb6lle1929-2003MystiekEnVerzet'
 SERMON_DATA_FILE = SCRIPT_DIR / "solle_sermons.dat"
-
-# Model keuze: Gemini 3 flash als primair, pro als fallback
-MODEL_NAME = "gemini-3-flash-preview"
-#MODEL_NAME = "gemini-3-pro-preview"
-MODEL_NAME_FALLBACK = "gemini-3-pro-preview"
-
 
 def sample_profetische_gebeden(n: int = 20) -> str:
     """Selecteer willekeurige gebeden uit de voorbeeldmap."""
@@ -924,6 +927,7 @@ def main():
     """Hoofdfunctie."""
     parser = argparse.ArgumentParser(description="Verdieping: Exegese, Kunst/Cultuur en Homiletiek")
     parser.add_argument("--exegese", action="store_true", help="Voer alleen de exegese analyse uit")
+    parser.add_argument("--folder", type=str, help="Pad naar de output folder (overslaat selectie)")
     args = parser.parse_args()
 
     env_file = SCRIPT_DIR / ".env"
@@ -934,7 +938,14 @@ def main():
                     k, v = line.strip().split("=", 1)
                     os.environ[k.strip()] = v.strip().strip('"\'')
 
-    folder = select_folder()
+    if args.folder:
+        folder = Path(args.folder)
+        if not folder.exists():
+            print(f"FOUT: Opgegeven folder bestaat niet: {folder}")
+            sys.exit(1)
+    else:
+        folder = select_folder()
+    
     print(f"\nGeselecteerd: {folder.name}")
     previous_analyses = read_previous_analyses(folder)
     user_input = extract_user_input_from_folder(folder)
@@ -972,16 +983,9 @@ def main():
             deep_dive_output_exists = True
             break
 
-    wil_kindermoment = False
-    wil_bezinningsmoment = False
-
-    if deep_dive_output_exists:
-        print("\nOPTIONELE ONDERDELEN:")
-        wil_kindermoment = input("  Wil je een Kindermoment genereren? (j/n): ").strip().lower() == 'j'
-        wil_bezinningsmoment = input("  Wil je een Moment van Bezinning genereren? (j/n): ").strip().lower() == 'j'
-    else:
-        print("\nGeen eerdere verdieping analyses gevonden. Optionele onderdelen (Kindermoment/Moment van Bezinning) worden niet gevraagd bij de eerste run.")
-        print("Standaard worden ze nu niet gegenereerd.")
+    # Altijd aan in automatische modus (bestandscontrole bepaalt of het draait)
+    wil_kindermoment = True
+    wil_bezinningsmoment = True
 
     print("\n" + "=" * 60 + f"\nVERDIEPING STARTEN MET MODEL: {MODEL_NAME}\n" + "=" * 60)
 
@@ -1017,7 +1021,8 @@ def main():
 
     for name, title in analysis_definitions:
         if (folder / f"{name}.json").exists():
-            if input(f"\n{name}.json bestaat al. Overschrijven? (j/n): ").strip().lower() != 'j': continue
+            print(f"  Bestaat al: {name}.json (overgeslagen)")
+            continue
 
         if name == "08c_commentaries":
             if MCP_AVAILABLE:
