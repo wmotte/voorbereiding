@@ -1,8 +1,12 @@
 # Analyse van Actueel Wereldnieuws
 
-**BELANGRIJK: Vandaag is {{huidige_datum}}.** Doorzoek het internet grondig naar het meest acute, actuele en mogelijk schokkende wereldnieuws van de **afgelopen 3-5 dagen** (dus het nieuws van rond {{huidige_datum}}).
+**KRITISCH BELANGRIJK: VANDAAG IS {{huidige_datum}}. HET JAAR IS NIET 2024 - HET JAAR IS HET JAAR DAT IN DE DATUM {{huidige_datum}} STAAT VERMELD.**
+
+Doorzoek het internet grondig naar het meest acute, actuele en mogelijk schokkende wereldnieuws van de **afgelopen 3-5 dagen** (dus het nieuws van rond {{huidige_datum}}).
 
 De preekdatum is {{datum}}. Als de preekdatum in de toekomst ligt, zoek dan naar het nieuws van NU (rond {{huidige_datum}}), niet naar nieuws rond de preekdatum.
+
+**LET OP: Gebruik het correcte jaar uit {{huidige_datum}} in je nieuwsoverzicht_datum veld in de JSON output!**
 
 ## Focus op:
 
