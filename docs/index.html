@@ -4262,7 +4262,13 @@
                         }
                         html += `</div>`;
                     } else {
-                        html += `<div><strong>${escapeHtml(formatKey(key))}:</strong> ${processText(String(value))}</div>`;
+                        // Format the value for type_omkering to remove underscores and make it italic
+                        if (key === 'type_omkering') {
+                            const displayValue = formatKey(String(value));
+                            html += `<div><strong>${escapeHtml(formatKey(key))}:</strong> <em>${processText(displayValue)}</em></div>`;
+                        } else {
+                            html += `<div><strong>${escapeHtml(formatKey(key))}:</strong> ${processText(String(value))}</div>`;
+                        }
                     }
                 }
 
