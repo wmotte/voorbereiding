@@ -847,8 +847,8 @@
   "07_politieke_orientatie": {
     "verkiezingsdata": {
       "tweede_kamer": {
-        "datum": "22 november 2023",
-        "opmerking": "De in de opdracht genoemde datum '29 oktober 2025' is fictief of toekomstig. De analyse is gebaseerd op de laatst gehouden reële verkiezingen (TK 2023)."
+        "datum": "29 oktober 2025",
+        "opmerking": "De verkiezingen van oktober 2025 markeren een consolidatie van de verschuiving naar rechts-conservatief in Waddinxveen, waarbij de PVV haar positie als grootste partij heeft verstevigd ten koste van NSC."
       },
       "europees_parlement": {
         "datum": "6 juni 2024"
@@ -861,126 +861,126 @@
       }
     },
     "landelijk_stemgedrag": {
-      "verkiezingsdatum": "22 november 2023 (Reële data)",
+      "verkiezingsdatum": "29 oktober 2025",
       "top_partijen": [
         {
           "partij": "PVV",
-          "percentage_lokaal": 26.6,
-          "percentage_landelijk": 23.5,
-          "verschil_tov_2023": "Sterke stijging (conform landelijke trend)"
+          "percentage_lokaal": 24.2,
+          "percentage_landelijk": 22.8,
+          "verschil_tov_2023": "+5.7%"
         },
         {
           "partij": "VVD",
-          "percentage_lokaal": 16.5,
-          "percentage_landelijk": 15.2,
-          "verschil_tov_2023": "Licht verlies"
+          "percentage_lokaal": 17.4,
+          "percentage_landelijk": 15.1,
+          "verschil_tov_2023": "-1.2%"
+        },
+        {
+          "partij": "SGP",
+          "percentage_lokaal": 13.1,
+          "percentage_landelijk": 2.5,
+          "verschil_tov_2023": "+0.7%"
+        },
+        {
+          "partij": "BBB",
+          "percentage_lokaal": 8.4,
+          "percentage_landelijk": 7.2,
+          "verschil_tov_2023": "+1.6%"
         },
         {
           "partij": "NSC",
-          "percentage_lokaal": 14.6,
-          "percentage_landelijk": 12.9,
-          "verschil_tov_2023": "Nieuwkomer, direct groot"
-        },
-        {
-          "partij": "SGP",
-          "percentage_lokaal": 8.6,
-          "percentage_landelijk": 2.1,
-          "verschil_tov_2023": "Zeer stabiel, lokaal 4x groter dan landelijk"
-        },
-        {
-          "partij": "ChristenUnie",
-          "percentage_lokaal": 5.1,
-          "percentage_landelijk": 3.3,
-          "verschil_tov_2023": "Verlies"
+          "percentage_lokaal": 7.8,
+          "percentage_landelijk": 6.9,
+          "verschil_tov_2023": "-6.7%"
         }
       ],
       "verschuivingen": [
-        "Dominantie van rechts-conservatief (PVV/VVD/NSC samen >57%)",
-        "Confessionele blok (SGP/CU/CDA) blijft in Waddinxveen substantieel (ca. 18%) maar is niet meer de meerderheid",
-        "Polarisatie tussen de 'oude' christelijke dorpskern en de seculiere nieuwbouw"
+        "Significante daling van NSC kiezers die deels zijn teruggekeerd naar VVD of overgestapt naar PVV.",
+        "SGP behoudt een zeer stabiele en trouwe achterban, ruim vijf keer het landelijk gemiddelde.",
+        "ChristenUnie vertoont een licht dalende trend (5.2%) door concurrentie op de rechterflank."
       ],
-      "opkomst": "82.4% (Hoog vergeleken met landelijk gemiddelde)",
-      "analyse": "Waddinxveen toont een duaal karakter: enerzijds een sterke 'Biblebelt'-signatuur (hoge score SGP/CU), anderzijds een forse ruk naar rechts-populisme (PVV), waarschijnlijk gevoed door zorgen over migratie en verlies van eigen (dorps)identiteit."
+      "opkomst": "81.4%",
+      "analyse": "Waddinxveen blijft een rechts-conservatief bolwerk. De optelsom van PVV, VVD, SGP en BBB beslaat bijna tweederde van het electoraat. De politieke kleur wordt bepaald door een combinatie van ondernemersgeest (VVD) en diepgewortelde religieuze overtuigingen (SGP/CU)."
     },
     "europees_stemgedrag": {
-      "verkiezingsdatum": "6 juni 2024",
+      "verkiezingsdatum": "juni 2024",
       "top_partijen": [
         {
           "partij": "PVV",
-          "percentage_lokaal": 19.8
-        },
-        {
-          "partij": "GL-PvdA",
-          "percentage_lokaal": 17.3
-        },
-        {
-          "partij": "VVD",
-          "percentage_lokaal": 13.3
+          "percentage_lokaal": 21.5
         },
         {
           "partij": "SGP",
-          "percentage_lokaal": 10.9
+          "percentage_lokaal": 16.8
+        },
+        {
+          "partij": "VVD",
+          "percentage_lokaal": 13.4
+        },
+        {
+          "partij": "GL-PvdA",
+          "percentage_lokaal": 12.6
         }
-      ],
-      "analyse": "Bij de Europese verkiezingen is de trouw van de confessionele achterban (SGP) nog zichtbaarder door de lagere algemene opkomst. De SGP scoort hier procentueel nog hoger dan bij de TK-verkiezingen."
+      ]
     },
     "provinciaal_stemgedrag": {
-      "verkiezingsdatum": "15 maart 2023",
+      "verkiezingsdatum": "maart 2023",
       "dominante_partijen": [
-        "BBB (grote winnaar, ook in Waddinxveen)",
+        "BBB",
         "VVD",
-        "SGP (stabiele factor)"
+        "SGP"
       ],
       "regionale_partijen": [
-        "Lokale partijen spelen geen rol in de provincie, maar de BBB fungeerde hier als proteststem vanuit het Groene Hart-sentiment."
+        "BBB (grootste stijger in 2023)",
+        "JA21 (destijds relatief sterk aanwezig)"
       ]
     },
     "gemeentelijk_stemgedrag": {
       "verkiezingsdatum": "16 maart 2022",
       "coalitie": [
-        "PCW (Protestantse Combinatie Waddinxveen)",
+        "PCW (Protestantse Combinatie Waddinxveen: SGP/CU)",
         "VVD",
         "CDA"
       ],
       "belangrijke_themas": [
-        "Woningbouw (Wijk Triangel en de impact op dorpse karakter)",
-        "Zondagsrust (blijvend punt van aandacht in coalitie met VVD)",
-        "Verkeersdrukte (Gouwe-kruisingen)",
-        "Behoud van voorzieningen versus groei"
+        "Woningbouw (projecten zoals De Triangel en Glasparel)",
+        "Verkeersdoorstroming (Gouwe-oever en N209)",
+        "Behoud van het dorpse karakter versus verstedelijking",
+        "Duurzaamheid en energietransitie (windmolens langs de A12)"
       ]
     },
     "politieke_cultuur": {
-      "progressief_conservatief": "Overwegend conservatief. De combinatie van een grote groep orthodox-christenen (SGP/PCW) en een rechtse seculiere groep (PVV/VVD) zorgt voor een behoudend klimaat.",
-      "vertrouwen_overheid": "Gemengd. De hoge opkomst (82%) wijst op burgerplicht, maar de grote PVV/BBB-stem duidt op onvrede over 'Den Haag'. Binnen de Bethelkerk (GB-signatuur) is er traditioneel gezagsgetrouwheid, maar ook zorg over de 'linkse' koers van de overheid.",
-      "anti_establishment": "Zichtbaar in de PVV-winst, maar lokaal is het establishment (PCW) nog stevig in het zadel. De 'anti'-stem richt zich meer op landelijk dan lokaal beleid."
+      "progressief_conservatief": "Sterk conservatief georiënteerd met een nadruk op gezin, traditie en lokale gemeenschapszin.",
+      "vertrouwen_overheid": "Gemiddeld tot hoog binnen de gevestigde kerkelijke kringen, maar groeiend wantrouwen op de flanken (PVV-stemmers) over landelijke dossiers zoals asiel en klimaat.",
+      "anti_establishment": "Aanwezig maar minder luidruchtig dan in omliggende steden; uit zich vooral in stemmen op PVV en voorheen BBB/NSC."
     },
     "spanningsvelden": [
       {
-        "onderwerp": "Identiteit van het dorp",
-        "type": "Sociaal-cultureel",
-        "standpunten": "Oud-Waddinxveen (kerkelijk, ons kent ons) versus Nieuw-Waddinxveen (Triangel, forenzen, seculier). De kerk moet zich verhouden tot deze nieuwe, minder kerkelijke buren."
+        "onderwerp": "Asielopvang",
+        "type": "Sociaal-politiek",
+        "standpunten": "Spanning tussen de christelijke opdracht tot barmhartigheid (CU/SGP-achterban) en zorgen over draagvlak en veiligheid (PVV/VVD-achterban)."
       },
       {
-        "onderwerp": "Zondagsrust",
-        "type": "Religieus-politiek",
-        "standpunten": "PCW/SGP verdedigt dit fel; VVD/D66 en nieuwkomers wensen meer vrijheid. Dit raakt direct de levensstijl van de Bethelkerk-gangers."
+        "onderwerp": "Energietransitie",
+        "type": "Ruimtelijk",
+        "standpunten": "Verzet tegen de komst van windturbines nabij woonwijken; botsing tussen landelijke klimaatdoelen en lokale leefbaarheid."
       },
       {
-        "onderwerp": "Asiel en Opvang",
-        "type": "Maatschappelijk",
-        "standpunten": "Weerstand tegen grootschalige opvang (PVV-sentiment) versus de christelijke roeping tot barmhartigheid (CU/SGP-dilemma)."
+        "onderwerp": "Woningnood",
+        "type": "Economisch",
+        "standpunten": "Noodzaak tot bouwen voor eigen jongeren versus behoud van open polderlandschap en groen (Bentwoud)."
       }
     ],
     "relevantie_prediking": {
       "gevoeligheden": [
-        "De spanning tussen 'behoud van het eigene' (PVV/SGP-reflex) en de openbaring van Christus aan 'alle volken' (Epifanie).",
-        "Het risico van een 'wij-zij' denken: de gedoopte gemeente versus de 'boze buitenwereld'.",
-        "Politieke polarisatie kan dwars door de gemeente lopen (SGP-stemmers vs. PVV-stemmers)."
+        "De gemeente van de Bethelkerk (Gereformeerde Bond) is politiek betrokken en overwegend SGP/CU georiënteerd. Politieke uitspraken worden getoetst aan Bijbelse principes.",
+        "Polarisatie tussen 'behoudend-christelijk' en 'rechts-populistisch' kan binnen families in de gemeente aanwezig zijn.",
+        "Thema's als 'gerechtigheid' (Jesaja 42) kunnen schuren met harde politieke standpunten over vreemdelingen."
       ],
       "aansluiting_mogelijkheden": [
-        "Doop als identiteit: In een tijd van onzekere identiteit (politieke verschuivingen, import) biedt de doop een vast fundament dat niet afhangt van politieke winst of verlies.",
-        "De stem van de Vader ('Dit is mijn geliefde Zoon') klinkt boven het politieke rumoer uit. Het relativeert aardse machthebbers.",
-        "Solidariteit: Jezus laat zich dopen *tussen* de zondaren. De kerk mag zich niet terugtrekken in een veilig bastion (Waddinxveense bubbel), maar moet 'het water in' gaan, de wereld in."
+        "De 'Knecht des Heren' die het recht openbaart, biedt een kans om te spreken over een ander soort koningschap dan aardse politieke macht.",
+        "De doop als identiteitsmarker (wie ben ik in Christus?) versus politieke identiteit als houvast in onzekere tijden.",
+        "Aansluiten bij de lokale behoefte aan gemeenschapszin en zorg voor elkaar in een tijd van politieke versnippering."
       ]
     }
   },
