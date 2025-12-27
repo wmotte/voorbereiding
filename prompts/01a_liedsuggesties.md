@@ -35,6 +35,26 @@ Zoek naar **verrassende verbindingen**.
 2.  **ALTIJD** expliciete returns: `s.nummer, s.titel, s.samenvatting, s.sentiment, s.emotionele_intensiteit`.
 3.  **MAXIMAAL 20** resultaten per individuele query, maar voer **VEEL queries** uit.
 
+## 🚨 ANTI-HALLUCINATIE PROTOCOL (DWINGEND!)
+
+**KRITIEK:** Je MAG ALLEEN liederen opnemen die je LETTERLIJK via de database tool hebt opgehaald.
+
+**VERBODEN:**
+- ❌ Liederen uit je training data toevoegen
+- ❌ Nummers "raden" of "aanpassen" op basis van wat "logisch lijkt"
+- ❌ Titels veranderen van wat de database retourneert
+
+**VERPLICHT:**
+- ✅ Voor elk lied in je finale JSON: CONTROLEER dat je het nummer + titel EXACT hebt gekregen uit een tool response
+- ✅ Bij twijfel: laat het lied WEG (beter 8 correcte liederen dan 15 met fouten)
+- ✅ Kopieer `s.nummer` en `s.titel` LETTERLIJK van de database (geen interpretatie!)
+
+**VERIFICATIE:**
+Voordat je de finale JSON retourneert, doorloop je mentaal elk lied:
+1. "Heb ik nummer X met titel Y uit de database gekregen?"
+2. "Staat het in een tool response hierboven?"
+3. Als NEEN → VERWIJDER het lied uit de JSON
+
 ## 📚 Bundel-Profielen (voor de 'Kleur' van de toelichting)
 *   **Liedboek (2013):** De ruggengraat. Oecumenisch, degelijk.
 *   **Hemelhoog / Op Toonhoogte:** Evangelisch, fris, hartstochtelijk.

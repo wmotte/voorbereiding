@@ -627,6 +627,70 @@ def mcp_tool_to_gemini_function(tool) -> types.FunctionDeclaration:
     )
 
 
+async def verify_hymn_numbers(session: ClientSession, hymn_data: dict) -> dict:
+    """
+    Verifieer alle liedbundelnummers in de gegenereerde JSON tegen de database.
+    Retourneert een dict met:
+    - verified_data: De geschoonde JSON (alleen correcte liederen)
+    - errors: Lijst van fouten/hallucinaties
+    """
+    errors = []
+    verified_data = {}
+
+    # Kopieer de analyse sectie
+    if "analyse" in hymn_data:
+        verified_data["analyse"] = hymn_data["analyse"].copy()
+
+    # Voor elke bundel
+    for bundel_key in ["liedboek_2013", "hemelhoog", "op_toonhoogte", "weerklank", "weerklank_psalmen"]:
+        if bundel_key not in hymn_data:
+            continue
+
+        verified_songs = []
+        songs = hymn_data[bundel_key]
+
+        for song in songs:
+            nummer = song.get("nummer", "")
+            titel = song.get("titel", "")
+
+            if not nummer or not titel:
+                errors.append(f"{bundel_key}: Lied zonder nummer of titel overgeslagen")
+                continue
+
+            # Query de database voor dit specifieke nummer
+            # Gebruik de Song node properties die we kennen
+            query = f"""
+            MATCH (s:Song {{nummer: '{nummer}'}})
+            RETURN s.nummer as nummer, s.titel as titel
+            LIMIT 1
+            """
+
+            try:
+                result = await session.call_tool("query", {"query": query})
+                result_text = result.content[0].text if result.content else ""
+
+                # Parse het resultaat (meestal JSON of text met de data)
+                if result_text and titel in result_text:
+                    # Nummer + titel combo klopt!
+                    verified_songs.append(song)
+                else:
+                    # HALLUCINATIE GEDETECTEERD
+                    errors.append(f"❌ HALLUCINATIE: {bundel_key} {nummer} '{titel}' bestaat niet in database")
+
+            except Exception as e:
+                errors.append(f"⚠ Verificatie fout voor {bundel_key} {nummer}: {str(e)}")
+                # Bij twijfel: behoud het lied (voorzichtig)
+                verified_songs.append(song)
+
+        if verified_songs:
+            verified_data[bundel_key] = verified_songs
+
+    return {
+        "verified_data": verified_data,
+        "errors": errors
+    }
+
+
 async def find_hymns_via_mcp(
     client: genai.Client,
     lezingen: dict,
@@ -845,11 +909,28 @@ Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
                     # Als het al valid JSON is
                     result_json = json.loads(final_response)
                     print(f"✓ Valide JSON ontvangen met {result_json.get('analyse', {}).get('aantal_gevonden_totaal', 0)} liederen")
+
+                    # 🔍 VERIFICATIE STAP: Controleer alle liedbundelnummers
+                    print(f"\n{'─' * 50}")
+                    print("🔍 VERIFICATIE: Controleren van liedbundelnummers...")
+                    print(f"{'─' * 50}")
+                    verification = await verify_hymn_numbers(session, result_json)
+
+                    if verification["errors"]:
+                        print("\n⚠️  HALLUCINATIES GEDETECTEERD:")
+                        for error in verification["errors"]:
+                            print(f"  {error}")
+                        print(f"\n✓ Geschoonde data bevat nu alleen geverifieerde liederen")
+                    else:
+                        print("✓ Alle liederen geverifieerd - geen hallucinaties gevonden!")
+
                     return {
-                        **result_json,
+                        **verification["verified_data"],
                         "_meta": {
                             "iterations": iteration,
-                            "raw_response": final_response
+                            "raw_response": final_response,
+                            "verification_errors": verification["errors"],
+                            "original_data": result_json  # Bewaar origineel voor debugging
                         }
                     }
                 except json.JSONDecodeError:
@@ -859,11 +940,28 @@ Voer nu de zoektocht uit in de database zoals beschreven in je instructies."""
                         try:
                             result_json = json.loads(json_match.group(1))
                             print(f"✓ JSON geëxtraheerd uit markdown")
+
+                            # 🔍 VERIFICATIE STAP: Controleer alle liedbundelnummers
+                            print(f"\n{'─' * 50}")
+                            print("🔍 VERIFICATIE: Controleren van liedbundelnummers...")
+                            print(f"{'─' * 50}")
+                            verification = await verify_hymn_numbers(session, result_json)
+
+                            if verification["errors"]:
+                                print("\n⚠️  HALLUCINATIES GEDETECTEERD:")
+                                for error in verification["errors"]:
+                                    print(f"  {error}")
+                                print(f"\n✓ Geschoonde data bevat nu alleen geverifieerde liederen")
+                            else:
+                                print("✓ Alle liederen geverifieerd - geen hallucinaties gevonden!")
+
                             return {
-                                **result_json,
+                                **verification["verified_data"],
                                 "_meta": {
                                     "iterations": iteration,
-                                    "raw_response": final_response
+                                    "raw_response": final_response,
+                                    "verification_errors": verification["errors"],
+                                    "original_data": result_json  # Bewaar origineel voor debugging
                                 }
                             }
                         except json.JSONDecodeError:
