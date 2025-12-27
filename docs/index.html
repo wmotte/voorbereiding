@@ -3308,9 +3308,14 @@
                 html += `<div class="data-value"><a href="${getSearchUrl(value, parentKey)}" target="_blank" class="search-term" title="Zoek op DuckDuckGo">${processText(value)}</a></div>`;
                 html += `</div>`;
             } else {
+                // For 'categorie' field, replace underscores with spaces
+                let displayValue = value;
+                if (key === 'categorie' && typeof value === 'string') {
+                    displayValue = formatKey(value);
+                }
                 html += `<div class="data-item">`;
                 html += `<div class="data-label">${escapeHtml(formattedKey)}</div>`;
-                html += `<div class="data-value">${formatValue(value)}</div>`;
+                html += `<div class="data-value">${formatValue(displayValue)}</div>`;
                 html += `</div>`;
             }
             return html;
@@ -3331,6 +3336,11 @@
                 let displayValue = value;
                 if (value === 'null' || value === 'NULL') {
                     displayValue = 'geen gegevens beschikbaar';
+                }
+
+                // For 'categorie' field, replace underscores with spaces
+                if (key === 'categorie' && typeof value === 'string') {
+                    displayValue = formatKey(value);
                 }
 
                 if (Array.isArray(value)) {
@@ -3414,7 +3424,12 @@
                                 html += `<div style="margin-top: 8px; padding-top: 4px; border-top: 1px dashed var(--border-light);"><strong>${escapeHtml(formatKey(key))}:</strong></div>`;
                                 html += `<div style="margin-left: 0; padding-left: 0;">${renderObjectCompact(value, parentKey)}</div>`;
                             } else {
-                                html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${formatValue(value)}</div>`;
+                                // For 'categorie' field, replace underscores with spaces
+                                let displayValue = value;
+                                if (key === 'categorie' && typeof value === 'string') {
+                                    displayValue = formatKey(value);
+                                }
+                                html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${formatValue(displayValue)}</div>`;
                             }
                         }
 
