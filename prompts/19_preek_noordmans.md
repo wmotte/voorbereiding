@@ -152,7 +152,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
       "inhoud": "string - 60-100 woorden. Open einde. Vraag. Uitzicht."
     }
   },
-  "kernwoorden": ["3-5 woorden die de schets dragen"]
+  "kernwoorden": ["string - 3-5 kernbegrippen, elk beginnend met een hoofdletter"]
 
 }
 ```

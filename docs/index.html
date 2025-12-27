@@ -4926,8 +4926,8 @@
                 html += `<div class="hoorder-header">`;
                 html += `<div class="hoorder-nummer">${persona.nummer || ''}</div>`;
                 html += `<div class="hoorder-intro">`;
-                html += `<div class="hoorder-naam">${escapeHtml(naam)}</div>`;
-                html += `<div class="hoorder-meta">${leeftijd} jaar${woonwijk ? ` · ${escapeHtml(woonwijk)}` : ''}</div>`;
+                html += `<div class="hoorder-naam">${smartQuotes(escapeHtml(naam))}</div>`;
+                html += `<div class="hoorder-meta">${leeftijd} jaar${woonwijk ? ` · ${smartQuotes(escapeHtml(woonwijk))}` : ''}</div>`;
                 html += `</div></div>`;
 
                 // Kernschets
@@ -5054,7 +5054,7 @@
                         html += `<div class="hoorder-schrift-item"><span class="hoorder-schrift-label">Wat afstoot:</span><span class="hoorder-schrift-tekst">${processText(as.wat_afstoot)}</span></div>`;
                     }
                     if (as.existentiele_vraag) {
-                        html += `<div class="hoorder-vraag">"${processText(as.existentiele_vraag)}"</div>`;
+                        html += `<div class="hoorder-vraag">\u201C${processText(as.existentiele_vraag)}\u201D</div>`;
                     }
                     html += `</div>`;
                 }
