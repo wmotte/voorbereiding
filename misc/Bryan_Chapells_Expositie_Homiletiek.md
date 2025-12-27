@@ -1,4 +1,4 @@
-# **De homiletische theorie van Bryan Chapellg**
+# **De homiletische theorie van Bryan Chapell**
 
 In de hedendaagse homiletiek wordt de bijdrage van Bryan Chapell, met name via zijn baanbrekende werk *Christ-Centered Preaching: Redeeming the Expository Sermon*, beschouwd als een van de meest invloedrijke kaders voor de gereformeerde prediking in de late twintigste en vroege eenentwintigste eeuw. Chapell, die diende als predikant en professor in de praktische theologie aan het Covenant Theological Seminary, ontwikkelde een benadering die niet alleen technische instructies biedt voor de constructie van een preek, maar die fundamenteel geworteld is in een specifieke verlossingshistorische hermeneutiek. De kern van zijn methode ligt in de overtuiging dat elke tekst van de Schrift, wanneer deze correct wordt uitgelegd in zijn context, de noodzaak van Gods genade in Christus onthult. Deze benadering tracht de prediking te bevrijden van louter moralisme en wetticisme door de focus te verleggen van wat de mens moet doen naar wat God in Christus heeft volbracht en hoe dit de gelovige motiveert en toerust voor een heilig leven.
 

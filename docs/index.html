@@ -3038,10 +3038,57 @@
             // Get group class for color coding
             const groupClass = getMenuGroupClass(key).replace('nav-group-', 'section-group-');
 
-            // Add info icon for Midjourney prompts section
+            // Add info icon for sections with documentation
             let titleHtml = escapeHtml(title);
-            if (key === '20_midjourney_prompts') {
-                titleHtml += ` <a href="https://www.midjourney.com/explore?tab=hot" target="_blank" rel="noopener noreferrer" class="lied-info-icon" title="Midjourney voorbeelden en inspiratie">ⓘ</a>`;
+            const infoLinks = {
+                '20_midjourney_prompts': {
+                    url: 'https://www.midjourney.com/explore?tab=hot',
+                    title: 'Midjourney voorbeelden en inspiratie'
+                },
+                '13_homiletische_analyse': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Lowrys_Homiletical_Plot.md',
+                    title: 'Lowry\'s Homiletical Plot - achtergrond'
+                },
+                '13_homiletische_analyse_buttrick': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Buttricks_Moves_and_Structures.md',
+                    title: 'Buttrick\'s Moves and Structures - achtergrond'
+                },
+                '13c_homiletische_fundering_chapell': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Bryan_Chapells_Expositie_Homiletiek.md',
+                    title: 'Bryan Chapell\'s Expositie Homiletiek - achtergrond'
+                },
+                '10_focus_en_functie': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Focus_en_Functie.md',
+                    title: 'Focus en Functie - achtergrond'
+                },
+                '14_gebeden': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Liturgische_Gebeden.md',
+                    title: 'Liturgische Gebeden - achtergrond'
+                },
+                '14_gebeden_profetisch': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Brueggemanns_Gebeden.md',
+                    title: 'Brueggemann\'s Gebeden - achtergrond'
+                },
+                '14_gebeden_dialogisch': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Andre_Dumas_Dialogisch_Bidden.md',
+                    title: 'André Dumas Dialogisch Bidden - achtergrond'
+                },
+                '16_preek_solle': {
+                    url: 'https://github.com/wmotte/solle/blob/main/misc/Solles_Theologie_en_Homiletiek.md',
+                    title: 'Sölle\'s Theologie en Homiletiek - achtergrond'
+                },
+                '17_preek_jungel': {
+                    url: 'https://github.com/wmotte/jungel/blob/main/misc/Jungels_Theologie_en_Homiletiek_Een_Overzicht.md',
+                    title: 'Jüngel\'s Theologie en Homiletiek - achtergrond'
+                },
+                '19_preek_noordmans': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Noordmans_Homiletiek.md',
+                    title: 'Noordmans Homiletiek - achtergrond'
+                }
+            };
+
+            if (infoLinks[key]) {
+                titleHtml += ` <a href="${infoLinks[key].url}" target="_blank" rel="noopener noreferrer" class="lied-info-icon" title="${infoLinks[key].title}">ⓘ</a>`;
             }
 
             return `
