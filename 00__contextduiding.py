@@ -1564,8 +1564,27 @@ def main():
                     k, v = line.strip().split("=", 1)
                     os.environ[k.strip()] = v.strip().strip('"\'')
 
+    # Check voor --folder argument (voor batch processing)
+    folder_from_args = None
+    if "--folder" in sys.argv:
+        try:
+            idx = sys.argv.index("--folder")
+            folder_from_args = Path(sys.argv[idx + 1])
+            if not folder_from_args.exists():
+                print(f"FOUT: Folder niet gevonden: {folder_from_args}")
+                sys.exit(1)
+        except (IndexError, ValueError):
+            print("FOUT: --folder argument vereist een pad")
+            sys.exit(1)
+
     # Keuze: Nieuw of Bestaand
-    mode, folder = select_startup_mode()
+    if folder_from_args:
+        # Batch mode: gebruik opgegeven folder
+        mode = 'existing'
+        folder = folder_from_args
+    else:
+        # Interactieve mode: vraag gebruiker
+        mode, folder = select_startup_mode()
 
     if mode == 'new':
         user_input = get_user_input()
