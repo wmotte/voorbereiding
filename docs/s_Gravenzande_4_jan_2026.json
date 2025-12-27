@@ -691,155 +691,131 @@
     ]
   },
   "06_actueel_wereldnieuws": {
-    "nieuwsoverzicht_datum": "27 december 2024 (Huidige realiteit)",
+    "nieuwsoverzicht_datum": "27-30 december 2025",
     "wereldgebeurtenissen": [
       {
-        "titel": "Escalatie in Gaza en Midden-Oosten: 'Geen veilige plek'",
+        "titel": "Oorlog Oekraïne: Raketaanvallen op Kyiv en 'bevroren front' plannen",
         "categorie": "oorlog",
-        "samenvatting": "Hevige strijd rondom het Kamal Adwan-ziekenhuis in Noord-Gaza en voortdurende bombardementen in centraal Gaza tijdens de kerstdagen. Tegelijkertijd lopen de spanningen regionaal op met Houthi-aanvallen op Tel Aviv en vergeldingsacties in Jemen.",
-        "locatie": "Gaza / Israël / Jemen",
-        "datum_gebeurtenis": "24-27 december 2024",
-        "emotionele_impact": "Diepe wanhoop over het ontbreken van veilige toevluchtsoorden; beelden van belegerde ziekenhuizen roepen machteloosheid op.",
+        "samenvatting": "Terwijl de oorlog zijn vierde jaar ingaat, voerde Rusland eind december 2025 nieuwe zware raketaanvallen uit op Kyiv. Tegelijkertijd circuleren er diplomatieke plannen (o.a. vanuit de VS) om het front te 'bevriezen' en gedemilitariseerde zones in te stellen, wat leidt tot grote onzekerheid bij de Oekraïense bevolking over hun toekomst.",
+        "locatie": "Oekraïne (Kyiv / Frontlinies)",
+        "datum_gebeurtenis": "27 december 2025",
+        "emotionele_impact": "Oorlogsmouheid gecombineerd met angst voor een 'koude vrede' waarbij onrecht blijft bestaan. De voortdurende dreiging tijdens de feestdagen (Kerst/Oud & Nieuw) weegt zwaar.",
         "theologische_vragen": [
-          "Waar is de Vredevorst in dit aanhoudende geweld?",
-          "Hoe verhouden de 'koningen der aarde' (Herodes-figuren) zich tot het weerloze Kind?",
-          "Wat betekent 'licht voor de volken' als de duisternis zo dominant is?"
+          "Hoe houden we hoop als onrecht 'bevroren' wordt in plaats van opgelost?",
+          "Waar is het 'Licht der Wereld' in de schuilkelders van Kyiv?",
+          "Wat betekent vrede als het slechts de afwezigheid van actief schieten is?"
         ],
         "relevantie_pkn": {
-          "pastoraal": "Erkenning van het verdriet en de machteloosheid die gemeenteleden voelen bij de beelden.",
-          "profetisch": "Oproep tot vrede en recht; kritisch staan tegenover macht die vernietigt in plaats van dient.",
-          "diaconaal": "Collecte voor noodhulp in Gaza/Midden-Oosten (via Kerk in Actie).",
-          "liturgisch": "Kyrië-gebed: roepen om ontferming voor slachtoffers en daders.",
-          "homiletisch": "Contrast tussen de machthebbers die angst zaaien (Herodes/oorlog) en de Wijzen die hoop zoeken. De ster schijnt boven een plek van kwetsbaarheid, niet boven een militair bolwerk."
+          "pastoraal": "Bidden voor de Oekraïense vluchtelingen in de regio (Westland) die in onzekerheid leven over hun thuisland.",
+          "profetisch": "Vrede is meer dan een politieke deal; het vereist gerechtigheid (Jesaja 60).",
+          "diaconaal": "Blijvende steun voor noodhulp, nu de oorlogsaandacht verslapt.",
+          "liturgisch": "Kyrië-gebed voor slachtoffers van de recente raketaanvallen.",
+          "homiletisch": "De 'koningen' van deze wereld (politieke leiders met hun plannen) vs. de Koning die vrede brengt."
         },
         "bronnen": [
-          "NOS",
+          "ANP",
+          "Reuters",
+          "NOS"
+        ]
+      },
+      {
+        "titel": "Fragiel bestand in Gaza en kerstviering tussen puinhopen",
+        "categorie": "oorlog",
+        "samenvatting": "Na meer dan twee jaar oorlog is er sprake van een uiterst fragiele situatie in Gaza, waarbij diplomatieke druk (o.a. vanuit de VS) probeert een tweede fase van een bestand te forceren. Ondanks de verwoesting vierden de weinige overgebleven christenen in Gaza Kerstmis, een krachtig teken van geloof temidden van wanhoop.",
+        "locatie": "Gaza / Israël",
+        "datum_gebeurtenis": "Eind december 2025",
+        "emotionele_impact": "Diepe rouw om de enorme verliezen aan beide kanten, gemengd met een cynisch wantrouwen tegenover politieke oplossingen.",
+        "theologische_vragen": [
+          "Hoe straalt Gods licht in totale duisternis?",
+          "Jesaja 60 ('Sta op en schitter') klinkt bijna wrang in een verwoest land - hoe lezen we dit hoopvol?"
+        ],
+        "relevantie_pkn": {
+          "pastoraal": "Verbondenheid tonen met christenen in het Midden-Oosten.",
+          "profetisch": "Oproep tot recht voor alle volken (universele dimensie van Epifanie).",
+          "diaconaal": "Collecte voor wederopbouw/noodhulp via Kerk in Actie.",
+          "liturgisch": "Voorbede voor de 'wijzen' (diplomaten) dat zij wegen van echte vrede vinden.",
+          "homiletisch": "De wijzen zochten de Koning der Joden; nu zoekt de wereld naar een uitweg uit het geweld in datzelfde land."
+        },
+        "bronnen": [
           "Al Jazeera",
-          "Global News"
+          "NPO Radio 1"
         ]
       },
       {
-        "titel": "Aanslag Kerstmarkt Maagdenburg",
-        "categorie": "terrorisme",
-        "samenvatting": "Een auto is ingereden op een kerstmarkt in het Duitse Maagdenburg (20 dec), waarbij doden en honderden gewonden vielen. De schok dreunt na in Europa tijdens de feestdagen.",
-        "locatie": "Maagdenburg, Duitsland",
-        "datum_gebeurtenis": "20 december 2024 (nasleep actueel)",
-        "emotionele_impact": "Angst in de publieke ruimte; de feestvreugde wordt ruw verstoord door geweld dichtbij huis.",
+        "titel": "Staakt-het-vuren Thailand en Cambodja",
+        "categorie": "politieke_crisis",
+        "samenvatting": "Een onverwacht lichtpuntje: Thailand en Cambodja hebben eind december een 'onmiddellijk staakt-het-vuren' ondertekend na oplopende spanningen. Een zeldzaam bericht van verzoening in een week vol conflict.",
+        "locatie": "Zuidoost-Azië",
+        "datum_gebeurtenis": "27 december 2025",
+        "emotionele_impact": "Geeft een sprankje hoop dat conflicten wel degelijk beëindigd kunnen worden.",
         "theologische_vragen": [
-          "Hoe vieren we feest in de schaduw van terreur?",
-          "Is het licht van Kerst bestand tegen zulke duisternis?"
+          "Is dit een teken van het 'Licht' dat doorbreekt?",
+          "Hoe kunnen wij 'vredestichters' zijn?"
         ],
         "relevantie_pkn": {
-          "pastoraal": "Benoemen van de angst en onveiligheid die mensen voelen.",
-          "profetisch": "Niet toegeven aan haat of polarisatie als reactie op terreur.",
-          "diaconaal": "Solidariteit tonen met slachtoffers van terreur.",
-          "liturgisch": "Voorbede voor nabestaanden en voor vrede in onze steden.",
-          "homiletisch": "De Wijzen gingen op weg in een gevaarlijke wereld (Herodes loerde al). Het licht zoeken is een daad van moed en verzet tegen de angst."
+          "pastoraal": "Dankbaarheid dat niet al het nieuws slecht is.",
+          "profetisch": "Het goede benoemen en versterken.",
+          "diaconaal": "Geen directe actie, wel bewustwording.",
+          "liturgisch": "Dankgebed.",
+          "homiletisch": "Voorbeeld van hoe volken tot inkeer kunnen komen (Jesaja 60: volken komen naar je licht)."
         },
         "bronnen": [
-          "NOS",
-          "Duitse media"
-        ]
-      },
-      {
-        "titel": "Oekraïne: Winteroorlog en Noord-Koreaanse troepen",
-        "categorie": "oorlog",
-        "samenvatting": "De oorlog in Oekraïne gaat een zware winter in. Berichten over Noord-Koreaanse troepen in Koersk en intensieve Russische drone-aanvallen markeren een internationalisering van het conflict.",
-        "locatie": "Oekraïne / Rusland",
-        "datum_gebeurtenis": "December 2024",
-        "emotionele_impact": "Oorlogsmoeheid vermengd met angst voor een groter wereldwijd conflict.",
-        "theologische_vragen": [
-          "Hoe lang nog, Heer?",
-          "Wat betekent de universele heerschappij van Christus als tirannen regeren?"
-        ],
-        "relevantie_pkn": {
-          "pastoraal": "Aandacht voor Oekraïense vluchtelingen in de eigen gemeenschap.",
-          "profetisch": "Blijven bidden voor recht en vrede, niet wennen aan oorlog.",
-          "diaconaal": "Winterhulp voor Oekraïne (generatoren, kleding).",
-          "liturgisch": "Gebed voor vrede en voor de leiders van de wereld.",
-          "homiletisch": "Matteüs 2 gaat over grensoverschrijdend geloof (Wijzen) maar ook over grensoverschrijdende machtspolitiek. Jezus is de ware Koning der volkeren."
-        },
-        "bronnen": [
-          "TKKR",
-          "Internationale pers"
-        ]
-      },
-      {
-        "titel": "2024 Recordjaar Natuurrampen",
-        "categorie": "klimaat",
-        "samenvatting": "Het Rode Kruis meldt dat 2024 een recordjaar was met 108 grote natuurrampen, waaronder extreme overstromingen en hittegolven. De schepping kreunt.",
-        "locatie": "Wereldwijd",
-        "datum_gebeurtenis": "Overzicht 2024 (publicatie eind dec)",
-        "emotionele_impact": "Zorg om de toekomst van de aarde; klimaatangst.",
-        "theologische_vragen": [
-          "Hoe zijn wij rentmeesters van Gods geschenk?",
-          "Is er nog hoop voor de schepping?"
-        ],
-        "relevantie_pkn": {
-          "pastoraal": "Ruimte voor zorgen over het klimaat.",
-          "profetisch": "Oproep tot bekering en zorg voor de aarde.",
-          "diaconaal": "Steun voor noodhulp bij klimaatrampen.",
-          "liturgisch": "Dankdag voor het gewas (terugblik) en gebed voor de schepping.",
-          "homiletisch": "De ster is een teken in de schepping. De natuur zelf wijst naar de Schepper. Wij moeten leren 'lezen' wat de schepping ons vertelt (zoals de Wijzen)."
-        },
-        "bronnen": [
-          "Rode Kruis",
-          "VILT"
+          "ANP",
+          "Buitenlandse media"
         ]
       }
     ],
     "nederlands_nieuws": [
       {
-        "titel": "Kersttoespraak Koning Willem-Alexander: 'Weerbaar zijn'",
-        "samenvatting": "De Koning sprak op Eerste Kerstdag over de spanningen in de samenleving en riep op tot weerbaarheid tegen alles wat ons uit elkaar drijft. Hij benoemde dat vrede ver weg lijkt.",
-        "lokale_relevantie": "In 's-Gravenzande (Oranjegezind) wordt hier goed naar geluisterd. Het thema 'verbinding' past bij de gemeente.",
-        "maatschappelijke_discussie": "Polarisatie, antisemitisme (Joodse school voorbeeld in toespraak) en verharding.",
-        "relevantie_preek": "De Koning zoekt naar verbinding. In de preek is Jezus de Koning die daadwerkelijk vrede brengt en muren afbreekt (Efeziërs lezing)."
+        "titel": "Politieke onzekerheid na val Kabinet-Schoof",
+        "samenvatting": "Na de val van het kabinet-Schoof in juni 2025 en de verkiezingen van oktober 2025, zit Nederland eind december nog steeds in een moeizame formatiefase. Het land wordt bestuurd door een demissionaire ploeg terwijl grote besluiten (asiel, woningmarkt) blijven liggen.",
+        "lokale_relevantie": "Ook in 's-Gravenzande (Westland) voelt men de gevolgen van stilstaand beleid (glastuinbouw, arbeidsmigranten).",
+        "maatschappelijke_discussie": "Vertrouwenscrisis in de politiek; mensen wachten op leiderschap.",
+        "relevantie_preek": "Contrast tussen zoekende/falende aardse leiders en de komst van de ware Koning. Wij wachten op een regering, de wereld wachtte op de Messias."
       },
       {
-        "titel": "Zorgen om bestaanszekerheid en asiel",
-        "samenvatting": "Politieke spanningen rondom asielbeleid en de bestaanszekerheid blijven het nieuws domineren richting het nieuwe jaar.",
-        "lokale_relevantie": "Westland kent discussies over huisvesting arbeidsmigranten en statushouders.",
-        "maatschappelijke_discussie": "Wie is welkom? Wie hoort erbij?",
-        "relevantie_preek": "Epifanie gaat over de 'vreemdelingen' (Wijzen) die welkom zijn bij God. Het evangelie doorbreekt de grens 'wij-zij'."
+        "titel": "Code Geel: Mist en gladheid",
+        "samenvatting": "Het KNMI gaf eind december code geel af voor dichte mist en gladheid in grote delen van het land.",
+        "lokale_relevantie": "Direct voelbaar voor kerkgangers op zondagochtend.",
+        "maatschappelijke_discussie": "null",
+        "relevantie_preek": "Sterke metafoor voor Epifanie: in de mist (onzekerheid, geen zicht op de toekomst) zoeken we naar een ster/lichtpunt."
       }
     ],
     "kerkelijk_nieuws": [
       {
-        "titel": "Heropening Notre-Dame Parijs",
-        "bron": "NOS / Kerkelijke media",
-        "samenvatting": "De kathedraal is begin december heropend. Een symbool van opstanding uit de as en licht in de duisternis.",
-        "relevantie": "Mooi beeld voor Epifanie: het licht keert terug, het huis van God is open voor de wereld."
+        "titel": "Christenen in Gaza vieren Kerst",
+        "bron": "Al Jazeera / Kerkelijke media",
+        "samenvatting": "Ondanks de verwoesting kwamen Palestijnse christenen samen. Een krachtig getuigenis van licht in duisternis.",
+        "relevantie": "Directe link met Epifanie: het licht schijnt in de duisternis en de duisternis heeft het niet overwonnen."
       }
     ],
     "suggesties_predikant": {
       "in_de_preek": [
-        "Gebruik de metafoor van 'zien': In een wereld vol schokkende beelden (Gaza, Maagdenburg) zagen de Wijzen een ander teken. Wat zien wij? (Specifiek voor dovenpastoraat: focus op het visuele aspect van geloven).",
-        "Verbind de 'koningen' uit het nieuws (machtspolitiek, oorlog) met de Koning uit de kribbe. De macht van de wereld vs. de macht van de liefde.",
-        "Refereer aan de Kersttoespraak: 'Weerbaarheid' is nodig, maar onze weerbaarheid komt voort uit het Licht dat we ontvangen hebben, niet uit onszelf.",
-        "Maak de link naar het koor 'Open Handen': De Wijzen kwamen niet met gebalde vuisten (zoals in de oorlogen nu), maar met open handen om te geven en te ontvangen."
+        "Gebruik de metafoor van de mist (actueel weer) als beeld voor onze tijd: we zien geen hand voor ogen (politiek, oorlogen), maar Epifanie belooft dat het Licht opgaat.",
+        "Verbind de 'Open Handen' van het koor met de wijzen: De wereldleiders (Poetin, Trump, etc.) hebben vaak gebalde vuisten of wijzende vingers. De wijzen hadden open handen met geschenken. Het koor zingt met open handen. Dat is de houding van Epifanie.",
+        "Duidt de politieke onzekerheid (formatieperikelen) niet partijpolitiek, maar als een menselijk onvermogen om de wereld te redden. Daarvoor is een ander soort Koning nodig (Matteüs 2).",
+        "Specifiek voor dovenpastoraat: Focus op het visuele aspect van Jesaja 60 ('Zie!', 'Schitter!'). In een wereld vol lawaai van bommen en debatten, is het Licht iets dat je *ziet* en ervaart, voorbij de woorden."
       ],
       "in_voorbeden": [
-        "Bid voor de slachtoffers van geweld in Gaza, Oekraïne en Maagdenburg.",
-        "Bid voor de wereldleiders, dat zij het licht van wijsheid mogen zien.",
-        "Bid voor hen die in het donker zitten (letterlijk en figuurlijk), dat zij een ster mogen zien.",
-        "Dank voor de tekenen van hoop (zoals de heropening Notre-Dame of lokale initiatieven)."
+        "Bid voor de wereldleiders en diplomaten (de 'wijzen' van nu) die zoeken naar vrede in Oekraïne en Gaza.",
+        "Bid voor hen die in 'mist' leven: mensen met dementie, mensen in depressie, of mensen die vastlopen in de bureaucratie (toeslagen/asiel).",
+        "Dank voor lichtpuntjes: het staakt-het-vuren in Azië, de veerkracht van de kerk in Gaza.",
+        "Bid voor de vorming van een nieuw kabinet dat oog heeft voor de kwetsbaren."
       ],
       "mededelingen_collecte": [
-        "Collecte voor noodhulp in conflictgebieden (Gaza/Oekraïne) via Kerk in Actie.",
-        "Collecte voor het dovenpastoraat (visuele communicatie van het evangelie)."
+        "Collecte voor Kerk in Actie (Noodhulp conflictgebieden) - sluit aan bij de goud/wierook/mirre (schatten aanbieden)."
       ]
     },
     "valkuilen": [
       {
-        "valkuil": "Te politiek worden over het Midden-Oosten",
-        "risico": "Polarisatie in de gemeente (pro-Israël vs. pro-Palestijns sentiment kan sterk leven).",
-        "advies": "Focus op het menselijk lijden en de roep om vrede vanuit Christus, zonder partijpolitieke stellingname. Gebruik de beelden van 'Rachel die weent' (Matteüs 2)."
+        "valkuil": "Te politiek worden over de kabinetsformatie",
+        "risico": "Gemeenteleden kunnen verschillend gestemd hebben (PVV, NSC, etc.) en zich buitengesloten voelen.",
+        "advies": "Blijf bij de metafoor van 'menselijk onvermogen' en 'zoeken naar leiding' in plaats van specifieke partijen te bekritiseren."
       },
       {
-        "valkuil": "Datumverwarring (2024/2025/2026)",
-        "risico": "De preekvoorbereiding vraagt om 2026, maar de actuele nieuwsbronnen zijn van eind 2024.",
-        "advies": "Wees transparant of tijdloos in de voorbeelden. De thema's (oorlog, vluchtelingen, macht) zijn helaas universeel, maar noem geen specifieke jaartallen als 'vorig jaar' als dat verwarring geeft."
+        "valkuil": "Oorlogsmoeheid negeren",
+        "risico": "Mensen horen al 3-4 jaar over Oekraïne; het kan als 'meer van hetzelfde' voelen.",
+        "advies": "Erken de moeheid, maar gebruik Epifanie juist als tegenwicht: het Licht is niet 'oud nieuws', maar breekt telkens nieuw door."
       }
     ]
   },

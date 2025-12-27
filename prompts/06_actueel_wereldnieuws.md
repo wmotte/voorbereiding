@@ -1,12 +1,14 @@
 # Analyse van Actueel Wereldnieuws
 
-**KRITISCH BELANGRIJK: VANDAAG IS {{huidige_datum}}. HET JAAR IS NIET 2024 - HET JAAR IS HET JAAR DAT IN DE DATUM {{huidige_datum}} STAAT VERMELD.**
+**KRITISCH BELANGRIJK: De preekdatum is {{datum}}.**
 
-Doorzoek het internet grondig naar het meest acute, actuele en mogelijk schokkende wereldnieuws van de **afgelopen 3-5 dagen** (dus het nieuws van rond {{huidige_datum}}).
+Doorzoek het internet grondig naar het meest acute, actuele en mogelijk schokkende wereldnieuws van de **afgelopen 3-5 dagen voorafgaand aan de preekdatum {{datum}}**.
 
-De preekdatum is {{datum}}. Als de preekdatum in de toekomst ligt, zoek dan naar het nieuws van NU (rond {{huidige_datum}}), niet naar nieuws rond de preekdatum.
+Dit betekent: zoek naar nieuws van rond **eind december** (als de preekdatum in begin januari valt) of de dagen direct voor de preekdatum.
 
-**LET OP: Gebruik het correcte jaar uit {{huidige_datum}} in je nieuwsoverzicht_datum veld in de JSON output!**
+**LET OP: Het jaar van de preekdatum is LEIDEND. Als de preekdatum in 2026 valt, zoek dan naar nieuws uit 2025/2026, NIET uit 2024!**
+
+**In je JSON output: gebruik als nieuwsoverzicht_datum de periode rond de preekdatum (bijv. als preekdatum = 4 januari 2026, dan nieuwsoverzicht_datum = "eind december 2025")**
 
 ## Focus op:
 
@@ -83,7 +85,7 @@ Retourneer UITSLUITEND een JSON object volgens onderstaand schema:
 
 ```json
 {
-  "nieuwsoverzicht_datum": "string - datum van het nieuwsoverzicht ({{huidige_datum}})",
+  "nieuwsoverzicht_datum": "string - datum van het nieuwsoverzicht (een paar dagen voor {{datum}}, gebruik het CORRECTE JAAR uit de preekdatum!)",
   "wereldgebeurtenissen": [
     {
       "titel": "string - korte kop",
