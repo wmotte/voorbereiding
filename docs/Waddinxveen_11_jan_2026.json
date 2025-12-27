@@ -1343,418 +1343,121 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 52,
-      "liturgische_balans": "De selectie biedt een krachtig evenwicht tussen de majesteit van Gods stem (Psalm 29) en de zachtmoedigheid van de Knecht (Jesaja 42). Er is veel aandacht voor het element 'water', wat in de poldercontext van Waddinxveen (de Gouwe, de sluizen) sterk resoneert. De spanning tussen de 'extreem moeilijke winter' in Oekraïne en de 'geliefde Zoon' wordt opgezocht in liederen die spreken over licht in de duisternis en gerechtigheid voor de verdrukten.",
-      "contextuele_reflectie": "Voor Waddinxveen is de verbinding tussen de 'oude' dorpskern en de nieuwe wijk Park Triangel essentieel. De liedkeuze combineert daarom de statige Psalmen (onmisbaar voor de Bond-signatuur) met frisse, toegankelijke liederen uit Hemelhoog en Op Toonhoogte die jonge gezinnen aanspreken, zonder de theologische diepgang van de doop als verbondsteken te verliezen."
+      "aantal_gevonden_totaal": 48,
+      "liturgische_balans": "De selectie leunt zwaar op de klassieke Epifanie- en Doopthematiek, met een sterke vertegenwoordiging van de 'Knecht des Heren' (Jesaja 42) en de 'Stem over de wateren' (Psalm 29). De balans tussen de vreugde van de verschijning (Licht) en de ernst van de roeping (Knecht) is goed bewaard. Verrassend is de inzet van lijdenstijd-liederen (Lam Gods) die theologisch naadloos aansluiten bij de doop van Jezus als start van zijn lijdensweg.",
+      "contextuele_reflectie": "Voor Waddinxveen, met zijn polders en sluizen, is de water-metaforiek in Psalm 29 en de doopliederen zeer tastbaar. De nadruk op 'Verbond' en 'Zoon' in de Weerklank-selectie bedient de gereformeerde identiteit, terwijl de lichtere 'Licht'-liederen in Hemelhoog de brug slaan naar de jonge gezinnen in Park Triangel. De keuze voor 'Lam van God' resoneert met de ernstige ondertoon van de wereldactualiteit."
     },
     "liedboek_2013": [
-      {
-        "nummer": "347",
-        "titel": "De stem van de Heer klinkt over de wateren",
-        "type_match": "Schriftlezing",
-        "karakter": "Majestueus en beeldend",
-        "toelichting": "Directe verklanking van Psalm 29. De 'stem over de wateren' verbindt de scheppingsmacht met de stem bij de Jordaan (Matteüs 3:17).",
-        "suggestie_gebruik": "Antwoordlied na Psalm 29"
-      },
-      {
-        "nummer": "342",
-        "titel": "In de schoot van de Jordaan",
-        "type_match": "Schriftlezing",
-        "karakter": "Verstild en mystiek",
-        "toelichting": "Beschrijft de doop van Jezus als een moment van solidariteit: Hij daalt af in ons water om ons te verheffen.",
-        "suggestie_gebruik": "Schriftlied bij Matteüs 3"
-      },
-      {
-        "nummer": "518",
-        "titel": "Heer, U bent mijn leven",
-        "type_match": "Emotioneel",
-        "karakter": "Toegankelijk en belijdend",
-        "toelichting": "De focus op 'U bent mijn weg' sluit aan bij de roeping van de Knecht in Jesaja 42. Zeer geschikt voor de jonge gezinnen in Waddinxveen.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "441",
-        "titel": "O volk, verdwaald, verloren",
-        "type_match": "Schriftlezing",
-        "karakter": "Hoopvol en profetisch",
-        "toelichting": "Een directe bewerking van Jesaja 42. De Knecht die het geknakte riet niet breekt, biedt troost in de huidige wereldcontext (Oekraïne).",
-        "suggestie_gebruik": "Lied na de eerste lezing"
-      },
-      {
-        "nummer": "356",
-        "titel": "O God die uit het water",
-        "type_match": "Thematisch",
-        "karakter": "Liturgisch-klassiek",
-        "toelichting": "Verbindt de zondvloed, de doortocht door de Rode Zee en de doop van Jezus. Benadrukt Gods reddende handelen door water heen.",
-        "suggestie_gebruik": "Doopgedachtenis"
-      },
-      {
-        "nummer": "527",
-        "titel": "Licht dat ons aanstoot in de morgen",
-        "type_match": "Conceptueel",
-        "karakter": "Krachtig en ontwakend",
-        "toelichting": "Epifanie-lied bij uitstek. Het 'licht' dat Jezus is, doorbreekt de winterse duisternis van onze tijd.",
-        "suggestie_gebruik": "Intochtlied"
-      },
-      {
-        "nummer": "601",
-        "titel": "Licht dat ons aanstoot",
-        "type_match": "Verrassend",
-        "karakter": "Poëtisch",
-        "toelichting": "Huub Oosterhuis' tekst over het licht dat 'van verre' komt, past bij de openbaring aan de volken (Handelingen 10).",
-        "suggestie_gebruik": "Gebed om verlichting"
-      },
-      {
-        "nummer": "978",
-        "titel": "Aan U behoort, o Heer der heren",
-        "type_match": "Thematisch",
-        "karakter": "Strijdbaar en koninklijk",
-        "toelichting": "Zingt over de heerschappij van Christus over de machten, passend bij de 'gezalfde' uit Handelingen 10.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "350",
-        "titel": "Wij die gedoopt zijn in de naam van Christus",
-        "type_match": "Thematisch",
-        "karakter": "Verbondmatig",
-        "toelichting": "Benadrukt de eenheid met Christus door de doop, essentieel voor de Waddinxveense verbondstheologie.",
-        "suggestie_gebruik": "Na de preek"
-      },
       {
         "nummer": "29",
         "titel": "Gij die hoog verheven zijt",
         "type_match": "Schriftlezing",
-        "karakter": "Ontzagwekkend",
-        "toelichting": "De klassieke berijming van Psalm 29. De majesteit van God boven de wateren.",
-        "suggestie_gebruik": "Aanvangslied"
+        "karakter": "Majestueus en ontzagwekkend",
+        "toelichting": "Directe berijming van Psalm 29. De 'stem van de Heer' boven de wateren is de liturgische echo van de stem uit de hemel bij de doop (Matteüs 3:17).",
+        "suggestie_gebruik": "Intochtslied"
+      },
+      {
+        "nummer": "96",
+        "titel": "Zing voor de Heer op nieuwe wijze",
+        "type_match": "Schriftlezing",
+        "karakter": "Opgewekt en missionair",
+        "toelichting": "Verwijst letterlijk naar Jesaja 42:10 ('Zing de HEER een nieuw lied'), de profetie over de Knecht die het recht naar de volken brengt.",
+        "suggestie_gebruik": "Antwoordlied na eerste lezing"
+      },
+      {
+        "nummer": "98a",
+        "titel": "Zing een nieuw lied voor God de Here, zing",
+        "type_match": "Thematisch",
+        "karakter": "Vreugdevol",
+        "toelichting": "Resoneert met de oproep uit Jesaja 42 om Gods lof te verkondigen vanaf de einden der aarde.",
+        "suggestie_gebruik": "Gloria / Lofprijzing"
+      },
+      {
+        "nummer": "890",
+        "titel": "Erken nu de Heer, volken der aarde",
+        "type_match": "Schriftlezing",
+        "karakter": "Kosmisch en krachtig",
+        "toelichting": "Een andere berijming van Psalm 29. De donder en het vuur onderstrepen de kracht van Gods openbaring.",
+        "suggestie_gebruik": "Alternatief Intochtslied"
       }
     ],
     "hemelhoog": [
       {
-        "nummer": "167",
-        "titel": "Geest van God, leer mij te wandelen",
-        "type_match": "Conceptueel",
-        "karakter": "Persoonlijk gebed",
-        "toelichting": "Sluit aan bij de zalving met de Geest (Handelingen 10). Vraagt om de leiding van de Geest in het dagelijks leven.",
-        "suggestie_gebruik": "Gebed voor de opening van het Woord"
-      },
-      {
-        "nummer": "456",
-        "titel": "Licht van de wereld",
+        "nummer": "660",
+        "titel": "Vader, Zoon en Geest, ik prijs U",
         "type_match": "Thematisch",
-        "karakter": "Aanbidding",
-        "toelichting": "Focus op Epifanie: Jezus die in de duisternis is gekomen. Zeer geliefd bij de jongere generatie in Park Triangel.",
-        "suggestie_gebruik": "Gloria-moment"
-      },
-      {
-        "nummer": "189",
-        "titel": "Wij danken U, o God van alle leven",
-        "type_match": "Thematisch",
-        "karakter": "Dankbaar",
-        "toelichting": "Een dooplied dat Gods initiatief bezingt, passend bij de 'stem uit de hemel'.",
-        "suggestie_gebruik": "Doopbediening"
-      },
-      {
-        "nummer": "567",
-        "titel": "Koning met eer gekroond",
-        "type_match": "Conceptueel",
-        "karakter": "Feestelijk",
-        "toelichting": "Viert de identiteit van Jezus als de Gezalfde (Christus).",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "234",
-        "titel": "Zie de mens, de Knecht van God",
-        "type_match": "Schriftlezing",
-        "karakter": "Ingetogen",
-        "toelichting": "Verbindt Jesaja 42 direct met de persoon van Jezus.",
-        "suggestie_gebruik": "Meditatief moment na de lezing"
-      },
-      {
-        "nummer": "712",
-        "titel": "Tienduizend redenen",
-        "type_match": "Emotioneel",
-        "karakter": "Lofprijzing",
-        "toelichting": "De 'nieuwe dag' en de lofzang passen bij de openbaring van de Zoon.",
-        "suggestie_gebruik": "Danklied"
-      },
-      {
-        "nummer": "345",
-        "titel": "Water van leven",
-        "type_match": "Associatief",
-        "karakter": "Verfrissend",
-        "toelichting": "Speelt met de symboliek van water als bron van vernieuwing, passend bij de Jordaan.",
-        "suggestie_gebruik": "Tijdens de collecte"
-      },
-      {
-        "nummer": "678",
-        "titel": "Vrede van God",
-        "type_match": "Contextueel",
-        "karakter": "Zegenend",
-        "toelichting": "Een gebed om vrede, broodnodig met de blik op de winter aan het front in Oekraïne.",
-        "suggestie_gebruik": "Voorbeden"
-      },
-      {
-        "nummer": "145",
-        "titel": "Mijn hulp is van U, Heer",
-        "type_match": "Emotioneel",
-        "karakter": "Vertrouwend",
-        "toelichting": "De rotsvaste steun van God te midden van stormen (Psalm 29 context).",
-        "suggestie_gebruik": "Antwoordlied"
-      },
-      {
-        "nummer": "122",
-        "titel": "Heer, wijst U mij de weg",
-        "type_match": "Conceptueel",
-        "karakter": "Toewijding",
-        "toelichting": "De weg van de Knecht navolgen in de eigen context van Waddinxveen.",
+        "karakter": "Trinitair",
+        "toelichting": "De doop van Jezus is hét moment van de Drie-eenheid (Stem Vader, Zoon in water, Geest als duif).",
         "suggestie_gebruik": "Slotlied"
       }
     ],
     "op_toonhoogte": [
       {
-        "nummer": "123",
-        "titel": "Heer, ik kom tot U",
-        "type_match": "Emotioneel",
-        "karakter": "Overgave",
-        "toelichting": "De persoonlijke reactie op de stem van God: 'Hier ben ik'.",
+        "nummer": "246",
+        "titel": "Maak mij rein voor U",
+        "type_match": "Conceptueel",
+        "karakter": "Verootmoedigend",
+        "toelichting": "Reflecteert de houding van de 'Knecht' (Jesaja 42) en de reiniging van de doop.",
+        "suggestie_gebruik": "Kyrie / Schuldbelijdenis"
+      },
+      {
+        "nummer": "305",
+        "titel": "Geprezen zij de Here",
+        "type_match": "Schriftlezing",
+        "karakter": "Dankbaar",
+        "toelichting": "Verwijst expliciet naar Jesaja 42:3 (het geknakte riet).",
         "suggestie_gebruik": "Na de preek"
       },
       {
-        "nummer": "234",
-        "titel": "Geest van God, leer mij",
-        "type_match": "Schriftlezing",
-        "karakter": "Leervormig",
-        "toelichting": "Vraagt om de zalving die Jezus ontving ook voor de gelovige.",
-        "suggestie_gebruik": "Gebed om de Geest"
-      },
-      {
-        "nummer": "456",
-        "titel": "Jezus, hoop van de volken",
+        "nummer": "170",
+        "titel": "Aan U behoort, o Heer der heren",
         "type_match": "Thematisch",
-        "karakter": "Universeel",
-        "toelichting": "Handelingen 10 laat zien dat God geen aanzien des persoons kent; Jezus is er voor alle volken.",
-        "suggestie_gebruik": "Zendingslied"
-      },
-      {
-        "nummer": "567",
-        "titel": "Uw woord is een lamp",
-        "type_match": "Conceptueel",
-        "karakter": "Richtinggevend",
-        "toelichting": "Het licht van Epifanie concreet gemaakt in het Woord.",
-        "suggestie_gebruik": "Voor de schriftlezing"
-      },
-      {
-        "nummer": "12",
-        "titel": "Psalm 29 (De stem des Heren)",
-        "type_match": "Schriftlezing",
-        "karakter": "Krachtig",
-        "toelichting": "Toegankelijke versie van de psalm voor de jeugdverenigingen.",
-        "suggestie_gebruik": "Psalm van de zondag"
-      },
-      {
-        "nummer": "45",
-        "titel": "Jesaja 42 (Zie mijn Knecht)",
-        "type_match": "Schriftlezing",
-        "karakter": "Verhalend",
-        "toelichting": "Zet de profetie centraal in de liturgie.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "678",
-        "titel": "Stil, mijn ziel, wees stil",
-        "type_match": "Verrassend",
-        "karakter": "Troostend",
-        "toelichting": "Contrast met de 'machtige stem' van Psalm 29: God spreekt ook in de stilte.",
-        "suggestie_gebruik": "Meditatiemoment"
-      },
-      {
-        "nummer": "789",
-        "titel": "Abba Vader",
-        "type_match": "Conceptueel",
-        "karakter": "Intiem",
-        "toelichting": "De relatie tussen de Vader en de Zoon (Matteüs 3) wordt de onze.",
-        "suggestie_gebruik": "Na de doop"
-      },
-      {
-        "nummer": "890",
-        "titel": "Groot is Uw trouw, o Heer",
-        "type_match": "Contextueel",
-        "karakter": "Bevestigend",
-        "toelichting": "Gods trouw door de generaties heen in Waddinxveen.",
+        "karakter": "Koninklijk",
+        "toelichting": "Erkent de heerschappij van Christus, die bij de doop bevestigd wordt als Zoon.",
         "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "156",
-        "titel": "Ik wens jou",
-        "type_match": "Verrassend",
-        "karakter": "Zegenend",
-        "toelichting": "Een lied dat de zegen van de doop (de stem van de Vader) doorgeeft aan elkaar.",
-        "suggestie_gebruik": "Zegenlied"
-      }
-    ],
-    "weerklank": [
-      {
-        "nummer": "25",
-        "titel": "O volk, verdwaald, verloren",
-        "type_match": "Schriftlezing",
-        "karakter": "Klassiek-gereformeerd",
-        "toelichting": "De kerntekst van Jesaja 42 op een bekende melodie. Zeer geschikt voor de Bond-gemeente.",
-        "suggestie_gebruik": "Hoofdlied"
       },
       {
         "nummer": "167",
-        "titel": "Ziet daar mijn Knecht, mijn uitverkoren'",
+        "titel": "Zegen mij op de weg die ik moet gaan",
+        "type_match": "Contextueel",
+        "karakter": "Persoonlijk",
+        "toelichting": "Past bij de 'weg' die de Knecht moet gaan, en de weg van de gelovige in navolging.",
+        "suggestie_gebruik": "Zegenlied"
+      }
+    ],
+    "weerklank": [],
+    "weerklank_psalmen": [
+      {
+        "nummer": "98",
+        "titel": "Zing een nieuw lied voor God de HERE",
         "type_match": "Schriftlezing",
-        "karakter": "Plechtig",
-        "toelichting": "Een andere berijming van Jesaja 42, met sterke nadruk op de verkiezing door God.",
+        "karakter": "Vreugdevol",
+        "toelichting": "Parallel aan Jesaja 42:10. God heeft zijn heil en gerechtigheid geopenbaard.",
         "suggestie_gebruik": "Antwoordlied"
       },
       {
-        "nummer": "234",
-        "titel": "Toen Jezus bij de Jordaan kwam",
-        "type_match": "Schriftlezing",
-        "karakter": "Verhalend",
-        "toelichting": "Beschrijft nauwgezet het tafereel uit Matteüs 3.",
+        "nummer": "2",
+        "titel": "Wat drijft de volken, wat bezielt ze toch?",
+        "type_match": "Thematisch",
+        "karakter": "Messiaans",
+        "toelichting": "'Jij bent mijn Zoon'. Psalm 2 wordt vaak geciteerd bij de doop van Jezus.",
         "suggestie_gebruik": "Schriftlied"
       },
       {
-        "nummer": "456",
-        "titel": "De doop van de Heere",
-        "type_match": "Thematisch",
-        "karakter": "Leervormig",
-        "toelichting": "Theologische duiding van de doop als teken van het verbond.",
-        "suggestie_gebruik": "Dooponderwijs"
-      },
-      {
-        "nummer": "567",
-        "titel": "O Heilige Geest, daal op ons neer",
-        "type_match": "Conceptueel",
-        "karakter": "Gebed",
-        "toelichting": "Smeekgebed om de Geest die op Jezus neerdaalde als een duif.",
-        "suggestie_gebruik": "Gebed om de verlichting"
-      },
-      {
-        "nummer": "678",
-        "titel": "Zalig die de Heere vrezen",
-        "type_match": "Contextueel",
-        "karakter": "Vermanend/Bemoedigend",
-        "toelichting": "De weg van de Knecht is een weg van vreze des Heren.",
-        "suggestie_gebruik": "Na de wet"
-      },
-      {
-        "nummer": "789",
-        "titel": "Gods verbond met ons aangegaan",
-        "type_match": "Conceptueel",
-        "karakter": "Statig",
-        "toelichting": "Benadrukt de continuïteit van Gods beloften, passend bij de Waddinxveense identiteit.",
-        "suggestie_gebruik": "Na de doopbediening"
-      },
-      {
-        "nummer": "890",
-        "titel": "Licht der wereld, wees ons baken",
-        "type_match": "Thematisch",
-        "karakter": "Gidsend",
-        "toelichting": "Epifanie-thema: Christus als gids in een verwarrende wereld.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "12",
-        "titel": "Psalm 2 (Waarom woeden de heidenen)",
-        "type_match": "Verrassend",
-        "karakter": "Strijdbaar",
-        "toelichting": "Verbindt de 'Zoon' uit Matteüs 3 met de 'Zoon' uit Psalm 2. Relevant voor de politieke onrust.",
-        "suggestie_gebruik": "Aanvangslied"
-      },
-      {
-        "nummer": "34",
-        "titel": "Psalm 110 (De HEERE heeft tot mijn Heere gesproken)",
-        "type_match": "Conceptueel",
-        "karakter": "Koninklijk",
-        "toelichting": "De gezalfde Koning-Priester, de vervulling van de zalving in Handelingen 10.",
-        "suggestie_gebruik": "Slotlied"
-      }
-    ],
-    "weerklank_psalmen": [
-      {
-        "nummer": "29",
-        "titel": "Geeft den HEER, gij machtigen",
-        "type_match": "Schriftlezing",
-        "karakter": "Majestueus",
-        "toelichting": "De onmisbare Psalm 29 in de klassieke berijming (1773). De stem van God boven de Gouwe.",
-        "suggestie_gebruik": "Psalm van de zondag"
-      },
-      {
-        "nummer": "45",
-        "titel": "Mijn hart, vervuld met heilbespiegelingen",
-        "type_match": "Thematisch",
-        "karakter": "Liefdevol",
-        "toelichting": "Bezingt de Schoonste van de mensenkinderen, de Gezalfde.",
-        "suggestie_gebruik": "Antwoordlied"
-      },
-      {
-        "nummer": "72",
-        "titel": "O God, geef den koning Uw rechten",
-        "type_match": "Thematisch",
-        "karakter": "Profetisch",
-        "toelichting": "De koning die recht doet aan de armen (Jesaja 42 link). Klassiek Epifanie-lied.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
         "nummer": "89",
-        "titel": "'k Zal eeuwig zingen van Gods goedertierenheên",
+        "titel": "Ik zal zo lang ik leef bezingen in mijn lied",
         "type_match": "Conceptueel",
-        "karakter": "Verbondmatig",
-        "toelichting": "De focus op het verbond en de uitverkoren Knecht (David/Christus).",
-        "suggestie_gebruik": "Na de preek"
-      },
-      {
-        "nummer": "93",
-        "titel": "De HEER regeert, de hoogste Majesteit",
-        "type_match": "Associatief",
-        "karakter": "Krachtig",
-        "toelichting": "Gods macht boven het bruisen van de wateren.",
-        "suggestie_gebruik": "Aanvangslied"
-      },
-      {
-        "nummer": "97",
-        "titel": "God is Koning, dat de aard' zich verblij'!",
-        "type_match": "Thematisch",
-        "karakter": "Licht-georiënteerd",
-        "toelichting": "Het licht dat voor de rechtvaardigen is gezaaid.",
-        "suggestie_gebruik": "Gloria-psalm"
-      },
-      {
-        "nummer": "98",
-        "titel": "Zingt, zingt een nieuw gezang den HEERE",
-        "type_match": "Thematisch",
-        "karakter": "Vreugdevol",
-        "toelichting": "De openbaring van Gods heil aan de heidenen (Handelingen 10).",
-        "suggestie_gebruik": "Dankzegging"
-      },
-      {
-        "nummer": "110",
-        "titel": "De HEER heeft tot mijn Heer gesproken",
-        "type_match": "Conceptueel",
-        "karakter": "Gezagvol",
-        "toelichting": "De Messiaanse psalm bij uitstek voor de Gezalfde.",
+        "karakter": "Verbondslied",
+        "toelichting": "Gods trouw aan het verbond met David, vervuld in de 'Zoon' Jezus.",
         "suggestie_gebruik": "Slotlied"
       },
       {
-        "nummer": "132",
-        "titel": "Gedenk, o HEER, aan David",
-        "type_match": "Conceptueel",
-        "karakter": "Verwachtingsvol",
-        "toelichting": "De belofte van de Gezalfde die nooit zal wijken.",
-        "suggestie_gebruik": "Voor de schriftlezing"
-      },
-      {
-        "nummer": "147",
-        "titel": "Looft, looft den HEER, want Hij is goed",
-        "type_match": "Contextueel",
-        "karakter": "Zorgzaam",
-        "toelichting": "God die de gebrokenen van hart geneest (Jesaja 42).",
-        "suggestie_gebruik": "Antwoordlied"
+        "nummer": "104",
+        "titel": "Mijn ziel, verheerlijk God om zijne macht",
+        "type_match": "Beeldtaal",
+        "karakter": "Scheppingslof",
+        "toelichting": "God die de wateren gebiedt (Psalm 29 parallel). Past bij de poldercontext.",
+        "suggestie_gebruik": "Lofprijzing"
       }
     ]
   },
