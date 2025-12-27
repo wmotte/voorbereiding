@@ -920,6 +920,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 8px;
+            margin-bottom: 20px;
         }
 
         .data-pair {
@@ -2111,7 +2112,8 @@
             
 	    { file: "Ede_25_dec_2025.json", label: "Ede (Kerst 2025, De Gelderhorst (Verzorgingstehuis))" },
             { file: "Den_Haag_28_dec_2025.json", label: "Den Haag (28 december 2025, De Kloosterkerk)" },
-           
+            { file: "s_Gravenzande_4_jan_2026.json", label: "'s-Gravenzande (4 januari 2026, NoorderBrug)" },
+            
             { file: "Waddinxveen_11_jan_2026.json", label: "Waddinxveen (11 januari 2026, De Bethelkerk)" }, // [1]
             { file: "Gouda_25_jan_2026.json", label: "Gouda (25 januari 2026, De Pauluskerk)" },             // [2]
            
@@ -6113,7 +6115,7 @@
 
              if (jsonFiles.length > 0) {
                  // Set the selector to the third file by default
-                 const defaultFile = jsonFiles[2].file;
+                 const defaultFile = jsonFiles[3].file;
                  fileSelector.value = defaultFile;
                  loadFile(defaultFile);
              }
