@@ -4038,7 +4038,7 @@
                 }
                 if (data.methodiek_uitleg.afkortingen) {
                     html += `<div style="margin-top: 15px;"><strong>Afkortingen:</strong></div>`;
-                    html += `<div class="data-pairs">`;
+                    html += `<div class="data-pairs" style="margin-top: 10px;">`;
                     for (const [key, value] of Object.entries(data.methodiek_uitleg.afkortingen)) {
                         html += `<div class="data-pair">`;
                         html += `<div class="data-pair-label">${escapeHtml(key)}</div>`;
@@ -4047,6 +4047,11 @@
                     }
                     html += `</div>`;
                 }
+            }
+
+            // Add separator if methodiek_uitleg was shown
+            if (data.methodiek_uitleg) {
+                html += `<hr style="margin: 30px 0; border: none; border-top: 2px solid var(--border-light);">`;
             }
 
             // GCF Section (Gevallen Conditie Focus)
