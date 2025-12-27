@@ -1465,338 +1465,243 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 42,
-      "liturgische_balans": "De selectie zoekt de spanning op tussen de 'woestijn' (verzoeking/strijd) en de 'tuin' (paradijs/oorsprong). Waar de Psalmen (51, 91) de klassieke Invocabit-toon zetten van inkeer en vertrouwen, bieden de liederen uit Hemelhoog en Op Toonhoogte een meer existentiële vertaling van 'navolging'. De keuze is bewust niet alleen 'somber' (boete), maar ook strijdbaar (de verzoeking weerstaan).",
-      "contextuele_reflectie": "Voor de gemeenschap in Waarder, waar 'niet lullen maar poetsen' en zelfredzaamheid hoogtij vieren, is de boodschap van Romeinen 5 (Genade alleen) cruciaal. De liederen zijn zo gekozen dat ze de 'polder-nuchterheid' verbinden met de afhankelijkheid van God. In het licht van de wereldpolitiek (machtsstrijd) vormen de liederen over Jezus' weigering van wereldse macht (Matteüs 4) een scherp, profetisch contrast."
+      "aantal_gevonden_totaal": 45,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de klassieke boetepsalmen (Psalm 51) en liederen die de strijd in de woestijn en de hof thematiseren. Er is een goede verdeling tussen de meer meditatieve liederen uit het Liedboek en de directere, belijdende liederen uit Weerklank en Op Toonhoogte, passend bij de nuchtere geloofsbeleving in Waarder.",
+      "contextuele_reflectie": "De liederen verbinden de persoonlijke inkeer (Psalm 51) met de maatschappelijke roep om vrede (Oekraïne/Trump context) en de agrarische verbondenheid met de schepping (Genesis). De focus ligt op gehoorzaamheid aan het Woord als weerstand tegen de verleiding van macht."
     },
     "liedboek_2013": [
       {
-        "nummer": "538",
-        "titel": "Een mens te zijn op aarde",
-        "type_match": "Thematisch",
-        "karakter": "Beschouwend, theologisch rijk",
-        "toelichting": "Hét lied voor deze zondag. Het verbindt de 'eerste Adam' (Genesis 2/3) met de 'tweede Adam' (Romeinen 5). Couplet 2 ('De duivel en zijn machten') verwijst direct naar de verzoeking in de woestijn.",
-        "suggestie_gebruik": "Schriftlied (na Romeinen 5)"
-      },
-      {
-        "nummer": "536",
-        "titel": "Alles wat over ons geschreven is",
-        "type_match": "Seizoen",
-        "karakter": "Statig, verwachtingsvol",
-        "toelichting": "Klassieke opening van de Veertigdagentijd. Het markeert de start van de weg naar Jeruzalem, parallel aan Jezus' weg door de woestijn.",
-        "suggestie_gebruik": "Intochtslied"
+        "nummer": "51",
+        "titel": "Ontferm u God, ontferm u, hoor mijn klacht,",
+        "type_match": "Schriftlezing",
+        "karakter": "Ootmoedig en smekend",
+        "toelichting": "Directe berijming van de voorgeschreven Psalm 51. Past bij de sfeer van Invocabit en de erkenning van schuld na de lezing uit Genesis 3.",
+        "suggestie_gebruik": "Psalm na de eerste lezing",
+        "eerste_regel": "Ontferm u God, ontferm u, hoor mijn klacht,"
       },
       {
         "nummer": "91a",
         "titel": "Wie in de schaduw Gods mag wonen",
         "type_match": "Schriftlezing",
-        "karakter": "Vertrouwend, rustig",
-        "toelichting": "Psalm 91 is de psalm die de duivel citeert in Matteüs 4. Het zingen hiervan is een daad van 'terugclaimen': wij zingen het in vertrouwen, niet als test.",
-        "suggestie_gebruik": "Antwoordlied (na eerste lezing)"
+        "karakter": "Vertrouwend en beschermend",
+        "toelichting": "Psalm 91 wordt door de verzoeker geciteerd in de evangelielezing (Matteüs 4). Dit lied zet de tekst in het juiste perspectief van Gods bewaring.",
+        "suggestie_gebruik": "Antwoordlied op het evangelie",
+        "eerste_regel": "Wie in de schaduw Gods mag wonen"
       },
       {
-        "nummer": "1005",
-        "titel": "Zoek eerst het Koninkrijk",
-        "type_match": "Schriftlezing",
-        "karakter": "Opwekkend, canon",
-        "toelichting": "Direct citaat van Jezus' antwoord op de verzoekingen. 'De mens zal bij brood alleen niet leven'.",
-        "suggestie_gebruik": "Tijdens avondmaal of als slotlied"
+        "nummer": "536",
+        "titel": "Alles wat over ons geschreven is",
+        "type_match": "Seizoen",
+        "karakter": "Ingetogen en profetisch",
+        "toelichting": "Klassiek lied voor de veertigdagentijd dat de weg van Jezus naar het lijden en zijn gehoorzaamheid aan de Schriften centraal stelt.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Alles wat over ons geschreven is"
       },
       {
-        "nummer": "273",
-        "titel": "Aan U behoort, o Heer der heren",
-        "type_match": "Contextueel",
-        "karakter": "Ootmoedig, groots",
-        "toelichting": "Erkent Gods soevereiniteit boven alle aardse machten (relevant t.o.v. wereldnieuws). Fungeert als een krachtig Kyrie.",
-        "suggestie_gebruik": "Kyrie / Gebed om ontferming"
-      },
-      {
-        "nummer": "654",
-        "titel": "Zing nu de Heer, stem allen samen",
+        "nummer": "806",
+        "titel": "Zomaar te gaan met een stok in je hand,",
         "type_match": "Conceptueel",
-        "karakter": "Lofprijzend, schepping",
-        "toelichting": "Verwijst naar de schepping en de val ('Adam'), maar eindigt in lof. Past bij de agrarische context van Waarder (schepping/natuur).",
-        "suggestie_gebruik": "Loflied (Gloria-vervanging)"
+        "karakter": "Pelgrimerend",
+        "toelichting": "Verwijst naar de tocht door de woestijn. Het beeld van de 'stok' en het 'gaan' resoneert met de nuchtere, actieve mentaliteit in Waarder.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Zomaar te gaan met een stok in je hand,"
       },
       {
-        "nummer": "545",
-        "titel": "O hoofd vol bloed en wonden",
+        "nummer": "51a",
+        "titel": "God, herschep mijn hart, herschep mijn hart,",
         "type_match": "Emotioneel",
-        "karakter": "Innig, lijdend",
-        "toelichting": "Hoewel passietijd, zet dit de toon voor de 'Man van Smarten' die gehoorzaam is tot de dood (Romeinen 5).",
-        "suggestie_gebruik": "Tijdens de voorbeden of avondmaal"
-      },
-      {
-        "nummer": "539",
-        "titel": "Gelukkig de mens die niet meegaat",
-        "type_match": "Verrassend",
-        "karakter": "Wijsheid, didactisch",
-        "toelichting": "Een bewerking van Psalm 1. Het schetst de 'twee wegen': de weg van de zondaars (Gen 3) vs. de weg van de rechtvaardige (Matt 4).",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "368d",
-        "titel": "Agnus Dei (Lam Gods)",
-        "type_match": "Liturgisch",
-        "karakter": "Verstild",
-        "toelichting": "De ultieme consequentie van Jezus' gehoorzaamheid in de woestijn is zijn offer als Lam.",
-        "suggestie_gebruik": "Tijdens Avondmaal"
-      },
-      {
-        "nummer": "416",
-        "titel": "Ga met God en Hij zal met je zijn",
-        "type_match": "Emotioneel",
-        "karakter": "Zegenend, warm",
-        "toelichting": "Verwijst naar 'woestijn' en 'gevaar', maar belooft nabijheid. Een favoriet in dorpsgemeenschappen.",
-        "suggestie_gebruik": "Slotlied / Zegenbede"
+        "karakter": "Verstillend",
+        "toelichting": "Een kernvers uit Psalm 51. Zeer geschikt als kort gebedslied na de schuldbelijdenis.",
+        "suggestie_gebruik": "Kyrie-gebed of na de wet",
+        "eerste_regel": "God, herschep mijn hart, herschep mijn hart,"
       }
     ],
     "hemelhoog": [
       {
-        "nummer": "456",
-        "titel": "Heer, wijs mij uw weg",
+        "nummer": "168",
+        "titel": "Daar gaat een lam en draagt de schuld",
         "type_match": "Thematisch",
-        "karakter": "Smeekbede, persoonlijk",
-        "toelichting": "Sluit naadloos aan bij het thema 'Gehoorzaamheid' en de keuze die Jezus maakt in de woestijn.",
-        "suggestie_gebruik": "Na de preek"
+        "karakter": "Plechtig en theologisch",
+        "toelichting": "Verbindt de zondeval van Adam (Genesis) met het plaatsvervangend lijden van Christus (Romeinen 5).",
+        "suggestie_gebruik": "Lied na de epistellezing",
+        "eerste_regel": "Daar gaat een lam en draagt de schuld"
       },
       {
-        "nummer": "464",
-        "titel": "Maak mij rein voor U",
-        "type_match": "Schriftlezing",
-        "karakter": "Verstild, schuldbewust",
-        "toelichting": "Een directe parafrase van Psalm 51 ('Schep in mij een rein hart'). Past bij de lezing en de sfeer van inkeer.",
-        "suggestie_gebruik": "Verootmoediging / Kyrie"
-      },
-      {
-        "nummer": "446",
-        "titel": "Jezus, hoop van de volken",
+        "nummer": "270",
+        "titel": "Hoe lang nog tot uw vrede komt?",
         "type_match": "Contextueel",
-        "karakter": "Hoopvol, wereldwijd",
-        "toelichting": "In een tijd van oorlog (Oekraïne) en politieke spanning, wijst dit lied Jezus aan als de enige ware hoop, in tegenstelling tot wereldse machthebbers.",
-        "suggestie_gebruik": "Slotlied"
+        "karakter": "Klacht en hoop",
+        "toelichting": "Slaat de brug tussen de liturgische inkeer en de onrust in de wereld (Oekraïne). Vraagt om de vrede die Jezus in de woestijn bewaarde.",
+        "suggestie_gebruik": "Gebedslied / Voorbeden",
+        "eerste_regel": "Hoe lang nog tot uw vrede komt?"
       },
       {
-        "nummer": "389",
-        "titel": "Samen in de naam van Jezus",
-        "type_match": "Verrassend",
-        "karakter": "Verbindend, gemeenschap",
-        "toelichting": "Benadrukt de eenheid van het 'lichaam' (Romeinen 5), tegenover de verscheurdheid van de zondeval.",
-        "suggestie_gebruik": "Intocht / Welkom"
+        "nummer": "183",
+        "titel": "Hoe kom ik van zonde vrij?",
+        "type_match": "Thematisch",
+        "karakter": "Direct en appellerend",
+        "toelichting": "Sluit aan bij de gereformeerde focus op verlossing van zonde, passend bij de geloofsoriëntatie in Waarder.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Hoe kom ik van zonde vrij?"
       },
       {
-        "nummer": "462",
-        "titel": "Aan uw voeten Heer",
+        "nummer": "533",
+        "titel": "Geef ons uw vrede in deze stilte.",
         "type_match": "Emotioneel",
-        "karakter": "Toewijding",
-        "toelichting": "De houding van Maria, maar ook van de 'Tweede Adam': gehoorzaamheid en luisteren naar het Woord.",
-        "suggestie_gebruik": "Na de preek"
+        "karakter": "Mediatief",
+        "toelichting": "Zoekt de stilte op, net als Jezus in de woestijn, om Gods stem te horen boven het lawaai van de verzoeking uit.",
+        "suggestie_gebruik": "Stiltemoment of na de preek",
+        "eerste_regel": "Geef ons uw vrede in deze stilte."
       },
       {
-        "nummer": "488",
-        "titel": "Heer ik kom tot U",
+        "nummer": "201",
+        "titel": "U zond uw Zoon, onschuldig, rein.",
         "type_match": "Conceptueel",
-        "karakter": "Kwetsbaar",
-        "toelichting": "Erkent de eigen zwakheid ('Neem mijn leven, neem het nu'). Past bij de schuldbelijdenis van Psalm 51.",
-        "suggestie_gebruik": "Gebed"
-      },
-      {
-        "nummer": "600",
-        "titel": "Licht van de wereld",
-        "type_match": "Beeldtaal",
-        "karakter": "Aanbidding",
-        "toelichting": "Jezus als Licht in de duisternis van de woestijn/zondeval. 'Ik aanbid U' is het antwoord op de duivel die aanbidding eiste.",
-        "suggestie_gebruik": "Lofprijzing"
-      },
-      {
-        "nummer": "345",
-        "titel": "Wees stil voor het aangezicht van God",
-        "type_match": "Sfeer",
-        "karakter": "Heilig, eerbiedig",
-        "toelichting": "Past bij de sfeer van de Veertigdagentijd: 'De Heer is in zijn heilige tempel'.",
-        "suggestie_gebruik": "Voor de schriftlezing"
+        "karakter": "Lofprijzend",
+        "toelichting": "Benadrukt de 'tweede Adam' uit Romeinen 5 die de gehoorzaamheid volbracht die wij misten.",
+        "suggestie_gebruik": "Gloria-vervanger (ingetogen)",
+        "eerste_regel": "U zond uw Zoon, onschuldig, rein."
       }
     ],
     "op_toonhoogte": [
       {
+        "nummer": "164",
+        "titel": "Onze Vader in de hemel",
+        "type_match": "Schriftlezing",
+        "karakter": "Gebed",
+        "toelichting": "Bevat de bede 'leid ons niet in verzoeking', de kern van de evangelielezing over de verzoeking in de woestijn.",
+        "suggestie_gebruik": "Gebed des Heren",
+        "eerste_regel": "Onze Vader in de hemel"
+      },
+      {
+        "nummer": "117",
+        "titel": "’t Is middernacht, en in de hof,",
+        "type_match": "Thematisch",
+        "karakter": "Ernstig",
+        "toelichting": "Hoewel over Gethsemane, trekt het de lijn van de strijd tegen verzoeking door van de woestijn naar de hof.",
+        "suggestie_gebruik": "Lijdenslied",
+        "eerste_regel": "’t Is middernacht, en in de hof,"
+      },
+      {
         "nummer": "238",
         "titel": "Zoekt eerst het koninkrijk van God",
         "type_match": "Schriftlezing",
-        "karakter": "Klassiek, bijbelgetrouw",
-        "toelichting": "Letterlijke tekst uit Matteüs, het antwoord van Jezus op de verleiding van materiële welvaart.",
-        "suggestie_gebruik": "Collectelied / Slotlied"
+        "karakter": "Aansporend",
+        "toelichting": "Jezus wijst in de woestijn wereldse macht af om Gods koninkrijk te dienen. Een bekende melodie die de jeugd in Waarder aanspreekt.",
+        "suggestie_gebruik": "Schriftlied of kinderlied",
+        "eerste_regel": "Zoekt eerst het koninkrijk van God"
       },
       {
-        "nummer": "125",
-        "titel": "Heer, ik hoor van rijke zegen",
-        "type_match": "Emotioneel",
-        "karakter": "Verlangend",
-        "toelichting": "Past bij de 'dorst' in de woestijn en het verlangen naar geestelijke vernieuwing (Psalm 51).",
-        "suggestie_gebruik": "Gebedslied"
-      },
-      {
-        "nummer": "280",
-        "titel": "Jezus, ik wil heel dicht bij U komen",
-        "type_match": "Conceptueel",
-        "karakter": "Intiem",
-        "toelichting": "Het tegenovergestelde van de verwijdering in Genesis 3 (Adam die zich verstopt).",
-        "suggestie_gebruik": "Na de preek"
-      },
-      {
-        "nummer": "519",
-        "titel": "Ik volg de Heer",
-        "type_match": "Thematisch",
-        "karakter": "Beslist, eenvoudig",
-        "toelichting": "Eenvoudig lied over navolging, geschikt voor gezinnen/kinderen (generatie-brug).",
-        "suggestie_gebruik": "Kindermoment"
-      },
-      {
-        "nummer": "157",
-        "titel": "Blijf bij ons Heer",
-        "type_match": "Sfeer",
-        "karakter": "Avondlied, smekend",
-        "toelichting": "De woestijn is eenzaam. Dit lied vraagt om Gods nabijheid 'als de nacht zal komen'.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "232",
-        "titel": "Jezus die langs het water liep",
-        "type_match": "Verrassend",
-        "karakter": "Verhalend",
-        "toelichting": "Verbindt de roeping van discipelen met de radicale keuze om Hem te volgen, weg van het 'oude'.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "38",
-        "titel": "De Heer is je schild en bevrijder",
+        "nummer": "19",
+        "titel": "Ontferm U God, ontferm U, hoor mijn klacht,",
         "type_match": "Schriftlezing",
-        "karakter": "Krachtig",
-        "toelichting": "Gebaseerd op Psalm 91. God als schild tegen de 'pijlen' van de verzoeker.",
-        "suggestie_gebruik": "Antwoordlied"
+        "karakter": "Boetvaardig",
+        "toelichting": "De klassieke berijming van Psalm 51, zeer herkenbaar voor de behoudende hoorder in Waarder.",
+        "suggestie_gebruik": "Boetepsalm",
+        "eerste_regel": "Ontferm U God, ontferm U, hoor mijn klacht,"
       },
       {
-        "nummer": "184",
-        "titel": "God die naar zijn wezen schiep",
-        "type_match": "Thematisch",
-        "karakter": "Dogmatisch, schepping",
-        "toelichting": "Behandelt schepping en zondeval (Genesis 2-3) expliciet. Past goed bij de lezing.",
-        "suggestie_gebruik": "Schriftlied (na Genesis)"
+        "nummer": "21",
+        "titel": "Wilt U mij nog wel zien? Ik kom bij U:",
+        "type_match": "Emotioneel",
+        "karakter": "Kwetsbaar",
+        "toelichting": "Verwoordt de schaamte van Adam en Eva na de zondeval (Genesis 3) en de vlucht naar Gods genade.",
+        "suggestie_gebruik": "Na de schriftlezing uit Genesis",
+        "eerste_regel": "Wilt U mij nog wel zien? Ik kom bij U:"
       }
     ],
     "weerklank": [
       {
-        "nummer": "368",
-        "titel": "Zoals ik leef – van liefde niet vervuld",
+        "nummer": "16",
+        "titel": "Waarom toch komt gij voor mijn aangezicht?",
         "type_match": "Thematisch",
-        "karakter": "Schuldbewust, ernstig",
-        "toelichting": "Een indringend lied over de menselijke staat (Romeinen 5) en de noodzaak van genade. Past bij de theologie van Waarder.",
-        "suggestie_gebruik": "Na de wet / Kyrie"
+        "karakter": "Confronterend",
+        "toelichting": "Stelt de vraag naar oprechtheid in de eredienst, passend bij de oproep tot inkeer op de eerste lijdenszondag.",
+        "suggestie_gebruik": "Intochtslied",
+        "eerste_regel": "Waarom toch komt gij voor mijn aangezicht?"
       },
       {
-        "nummer": "462",
-        "titel": "Wat de toekomst brengen moge",
-        "type_match": "Contextueel",
-        "karakter": "Vertrouwend, klassiek",
-        "toelichting": "In onzekere tijden (wereldnieuws) en persoonlijke strijd (woestijn) is dit een anker voor de gemeente.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "9",
-        "titel": "Heer, onze God, hoe heerlijk is uw naam",
+        "nummer": "81",
+        "titel": "Een grote hogepriester",
         "type_match": "Conceptueel",
-        "karakter": "Lofprijzend",
-        "toelichting": "Psalm 8 berijming, over de mens 'bijna goddelijk' gemaakt (Gen 2), maar in contrast met de val.",
-        "suggestie_gebruik": "Intocht"
+        "karakter": "Krachtig",
+        "toelichting": "Verwijst naar Christus die in alle dingen verzocht is als wij, maar zonder zonde. Sluit aan bij de Romeinen-brief.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Een grote hogepriester"
       },
       {
         "nummer": "136",
         "titel": "Wees stil en kom wat dichterbij",
-        "type_match": "Sfeer",
-        "karakter": "Uitnodigend",
-        "toelichting": "Nodigt uit om de woestijn van het leven te verruilen voor de nabijheid van Christus.",
-        "suggestie_gebruik": "Voorbereiding Avondmaal"
-      },
-      {
-        "nummer": "429",
-        "titel": "Geef vrede, Heer, geef vrede",
-        "type_match": "Contextueel",
-        "karakter": "Smekend, actueel",
-        "toelichting": "Directe link naar de oorlog in Oekraïne en de onrust in de wereld. Vrede die de wereld niet kan geven.",
-        "suggestie_gebruik": "Voorbeden"
-      },
-      {
-        "nummer": "95",
-        "titel": "Nu is verschenen al Gods heil",
-        "type_match": "Thematisch",
-        "karakter": "Overwinningslied",
-        "toelichting": "Viert de overwinning op de slang/satan (Gen 3 / Matt 4).",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "487",
-        "titel": "Heer, ik kom tot U",
         "type_match": "Emotioneel",
-        "karakter": "Persoonlijk",
-        "toelichting": "De beweging van de 'verloren zoon' of de boetvaardige zondaar (Psalm 51).",
-        "suggestie_gebruik": "Na de preek"
+        "karakter": "Uitnodigend",
+        "toelichting": "Nodigt uit tot de afzondering van de veertigdagentijd, weg van de afleidingen van de maatschappij.",
+        "suggestie_gebruik": "Voorbereiding op de preek",
+        "eerste_regel": "Wees stil en kom wat dichterbij"
       },
       {
-        "nummer": "500",
-        "titel": "Bescherming is er bij de Heer",
-        "type_match": "Schriftlezing",
-        "karakter": "Vertroostend",
-        "toelichting": "Een berijming van Psalm 91 thema's. God als schuilplaats.",
-        "suggestie_gebruik": "Zegenlied"
+        "nummer": "440",
+        "titel": "Heer, wees mijn gids op heel mijn levenspad,",
+        "type_match": "Contextueel",
+        "karakter": "Belijdend",
+        "toelichting": "Vraagt om leiding om niet te dwalen, een gebed dat past bij de agrarische en nuchtere context van Waarder.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Heer, wees mijn gids op heel mijn levenspad,"
+      },
+      {
+        "nummer": "9",
+        "titel": "Heer, onze God, hoe heerlijk is uw naam,",
+        "type_match": "Thematisch",
+        "karakter": "Lofprijzend",
+        "toelichting": "Psalm 8. Reflecteert op de positie van de mens in de schepping (Genesis 2), net onder de engelen geplaatst.",
+        "suggestie_gebruik": "Aanvangslied",
+        "eerste_regel": "Heer, onze God, hoe heerlijk is uw naam,"
       }
     ],
     "weerklank_psalmen": [
       {
         "nummer": "51",
-        "titel": "Ontferm U God, ontferm U",
+        "titel": "Ontferm U God, ontferm U, hoor mijn klacht,",
         "type_match": "Schriftlezing",
-        "karakter": "Boetvaardig",
-        "toelichting": "De onmisbare psalm voor deze zondag. Het antwoord op de zondeval.",
-        "suggestie_gebruik": "Kyrie / Na de wet"
+        "karakter": "Klassiek gereformeerd",
+        "toelichting": "De vertrouwde berijming van de boetepsalm, essentieel voor de doelgroep in Waarder.",
+        "suggestie_gebruik": "Psalm van de zondag",
+        "eerste_regel": "Ontferm U God, ontferm U, hoor mijn klacht,"
       },
       {
-        "nummer": "91",
-        "titel": "Hij die op Gods bescherming wacht",
+        "nummer": "36",
+        "titel": "De zonde spreekt haar vleiend woord,",
         "type_match": "Schriftlezing",
-        "karakter": "Sterk, belijdend",
-        "toelichting": "De psalm van de verzoeking. Zingend belijden dat God te vertrouwen is, zonder Hem te verzoeken.",
-        "suggestie_gebruik": "Na de eerste lezing"
+        "karakter": "Waarschuwend",
+        "toelichting": "Sluit naadloos aan bij de listige taal van de slang in Genesis 3 en de verleidingen in de woestijn.",
+        "suggestie_gebruik": "Lied na de lezing uit Genesis",
+        "eerste_regel": "De zonde spreekt haar vleiend woord,"
       },
       {
-        "nummer": "32",
-        "titel": "Welzalig hij wiens zonden zijn vergeven",
-        "type_match": "Thematisch",
-        "karakter": "Opgelucht, dankbaar",
-        "toelichting": "Paulus citeert deze psalm in Romeinen 4/5 in de context van rechtvaardiging.",
-        "suggestie_gebruik": "Na de genadeverkondiging"
-      },
-      {
-        "nummer": "130",
-        "titel": "Uit diepten van ellenden",
+        "nummer": "86",
+        "titel": "Hoor mij, HEER, wil antwoord zenden,",
         "type_match": "Emotioneel",
-        "karakter": "Klagend maar hoopvol",
-        "toelichting": "De 'De Profundis'. Past bij de sfeer van de Veertigdagentijd en schuldbesef.",
-        "suggestie_gebruik": "Verootmoediging"
-      },
-      {
-        "nummer": "63",
-        "titel": "O God, Gij zijt mijn toeverlaat",
-        "type_match": "Beeldtaal",
-        "karakter": "Verlangend",
-        "toelichting": "'Mijn ziel dorst naar U in een dor en dorstig land' - perfecte woestijnmetafoor.",
-        "suggestie_gebruik": "Voor de preek"
+        "karakter": "Smeekgebed",
+        "toelichting": "Een roep om hulp in tijden van beproeving en verzoeking.",
+        "suggestie_gebruik": "Gebedslied",
+        "eerste_regel": "Hoor mij, HEER, wil antwoord zenden,"
       },
       {
         "nummer": "40",
-        "titel": "Ik heb de Heer verwacht",
-        "type_match": "Contextueel",
-        "karakter": "Getuigend",
-        "toelichting": "Vanuit de modder (Gen 2/3) op een rots geplaatst. Dankbaarheid na redding.",
-        "suggestie_gebruik": "Na de preek"
+        "titel": "Met heel mijn hart heb ik de HEER verwacht,",
+        "type_match": "Thematisch",
+        "karakter": "Geduldig",
+        "toelichting": "Over het wachten op God en het doen van Zijn wil ('Ik kom o God, om Uw welbehagen te doen'), wat Jezus volmaakt deed.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Met heel mijn hart heb ik de HEER verwacht,"
+      },
+      {
+        "nummer": "114",
+        "titel": "Toen Israel uit Egypteland ging,",
+        "type_match": "Verrassend",
+        "karakter": "Strijdbaar",
+        "toelichting": "Herinnert aan de uittocht en de woestijnreis, de historische context van de 40 dagen van Jezus.",
+        "suggestie_gebruik": "Intochtslied",
+        "eerste_regel": "Toen Israel uit Egypteland ging,"
       }
     ]
   },
