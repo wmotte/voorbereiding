@@ -1385,418 +1385,468 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 54,
-      "liturgische_balans": "De selectie biedt een sterke balans tussen de rauwe dorst van de woestijnreis (Exodus/Psalm 95) en de verfrissende vervulling van het Levende Water (Johannes 4). Er is bewust gekozen voor liederen die zowel de individuele inkeer (Oculi) als de maatschappelijke roep om vrede (Oekraïne/Miami) adresseren. De overvloed aan water in Reeuwijk wordt theologisch gespiegeld aan de geestelijke dorst die juist in welvaart kan ontstaan.",
-      "contextuele_reflectie": "In een waterrijk dorp als Reeuwijk-Brug is water een vanzelfsprekendheid, soms zelfs een bedreiging. Deze liederen dagen de hoorder uit om voorbij het recreatieve water van de Plassen te kijken naar de 'Bron' die werkelijk verzadigt. De vrede-thematiek verbindt de lokale rust met de mondiale onrust."
+      "aantal_gevonden_totaal": 50,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de klassieke psalmen (Psalm 95, 42) en eigentijdse liederen over 'levend water'. Er is veel ruimte voor zowel de verstilling van de Veertigdagentijd als de vreugde van de ontmoeting bij de bron. De bundels vullen elkaar aan: het Liedboek biedt de liturgische diepgang, terwijl Hemelhoog en Op Toonhoogte de persoonlijke geloofsbeleving rondom 'dorst' en 'vervulling' versterken.",
+      "contextuele_reflectie": "Voor de gemeente in Reeuwijk-Brug, waar water (de Plassen) een symbool is van recreatie en welvaart, dagen deze liederen uit om de 'diepere dorst' te herkennen. In het licht van de wereldwijde onrust (Oekraïne) bieden liederen over de 'Bron van vrede' en 'Gods Geest' een noodzakelijk tegenwicht aan de maatschappelijke onzekerheid."
     },
     "liedboek_2013": [
       {
         "nummer": "188",
         "titel": "Bij de Jakobsbron",
         "type_match": "Schriftlezing",
-        "karakter": "Verhalend en mystiek",
-        "toelichting": "Directe verklanking van Johannes 4. De ontmoeting tussen Jezus en de vrouw wordt een spiegel voor onze eigen zoektocht naar erkenning en waarheid.",
-        "suggestie_gebruik": "Schriftlied"
+        "karakter": "Verhalend en beschouwend",
+        "toelichting": "Directe verklanking van het evangelie van de Samaritaanse vrouw. Ideaal als schriftlied na de lezing uit Johannes 4.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Bij de Jakobsbron"
       },
       {
-        "nummer": "653",
-        "titel": "U kennen, uit en tot U leven",
-        "type_match": "Conceptueel",
-        "karakter": "Gedragen belijdenis",
-        "toelichting": "Christus wordt hier bezongen als de 'Bron' van leven. Dit sluit aan bij de interpretatieve synthese van Jezus als de ultieme vervulling.",
-        "suggestie_gebruik": "Antwoordlied"
-      },
-      {
-        "nummer": "895",
-        "titel": "De noche iremos",
-        "type_match": "Emotioneel",
-        "karakter": "Verstild en meditatief (Taizé)",
-        "toelichting": "De tekst 'om de bron te vinden, is alleen de dorst ons licht' verwoordt prachtig de sfeer van de Veertigdagentijd en de Oculi-zondag.",
-        "suggestie_gebruik": "Gebedsmoment"
+        "nummer": "42",
+        "titel": "Evenals een moede hinde",
+        "type_match": "Thematisch",
+        "karakter": "Verlangend en ingetogen",
+        "toelichting": "De klassieke verwoording van existentiële dorst naar God, passend bij de 'Oculi'-zondag en de roep om Gods nabijheid.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Evenals een moede hinde"
       },
       {
         "nummer": "337",
         "titel": "Down the mountain the river flows",
-        "type_match": "Contextueel",
-        "karakter": "Vreugdevol en stromend",
-        "toelichting": "Symboliseert de overvloed van de Geest. In Reeuwijk, waar water stroomt, herinnert dit lied eraan dat Gods Geest nog krachtiger stroomt.",
-        "suggestie_gebruik": "Gloria (vervangend) of Slotlied"
-      },
-      {
-        "nummer": "528",
-        "titel": "O God die droogte wendt",
-        "type_match": "Schriftlezing",
-        "karakter": "Smeekbede",
-        "toelichting": "Verwijst naar de woestijnreis en het water uit de rots (Exodus 17). Een krachtig lied over Gods voorzienigheid in tijden van schaarste.",
-        "suggestie_gebruik": "Kyrie-gebed"
-      },
-      {
-        "nummer": "160a",
-        "titel": "Kyrie (In de woestijn)",
-        "type_match": "Seizoen",
-        "karakter": "Liturgisch",
-        "toelichting": "Past perfect bij de 40-dagentijd. Het roept om ontferming vanuit de dorre plaatsen van ons leven.",
-        "suggestie_gebruik": "Kyrie"
-      },
-      {
-        "nummer": "1005",
-        "titel": "Zoekend naar licht",
-        "type_match": "Conceptueel",
-        "karakter": "Modern en toegankelijk",
-        "toelichting": "Verbindt de dorst naar gerechtigheid met de dorst naar water. Past bij de oecumenische signatuur van De Ark.",
-        "suggestie_gebruik": "Inzameling van de gaven"
-      },
-      {
-        "nummer": "217",
-        "titel": "De dag gaat over in de nacht",
         "type_match": "Verrassend",
-        "karakter": "Rustgevend",
-        "toelichting": "Hoewel een avondlied, spreekt het over de 'bron van rust'. Voor een vergrijzende gemeente biedt dit troost en perspectief.",
-        "suggestie_gebruik": "Slotlied"
+        "karakter": "Energiek en hoopvol",
+        "toelichting": "Verbindt de beeldtaal van de rivier met genezing en leven, wat aansluit bij de overvloed van het 'levende water'.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "1_EN:"
       },
       {
-        "nummer": "538",
-        "titel": "Een mens te zijn op aarde",
-        "type_match": "Conceptueel",
-        "karakter": "Menselijk en aards",
-        "toelichting": "Reflecteert op de menselijke conditie, vergelijkbaar met de dorst van de vrouw bij de put. Het gaat over 'geen steen laten op de andere'.",
-        "suggestie_gebruik": "Overdenking"
-      },
-      {
-        "nummer": "913",
-        "titel": "Wat de toekomst brengen moge",
+        "nummer": "895",
+        "titel": "De noche iremos, de noche",
         "type_match": "Contextueel",
-        "karakter": "Klassiek vertrouwen",
-        "toelichting": "In tijden van wereldwijde onrust (Oekraïne) biedt dit lied de 'vaste rots' en de leiding door de woestijn.",
-        "suggestie_gebruik": "Slotlied"
+        "karakter": "Meditatief (Taizé)",
+        "toelichting": "Zoeken naar de bron in de nacht. Past bij de inkeer van de Veertigdagentijd en de zoektocht van de vrouw in het evangelie.",
+        "suggestie_gebruik": "Gebedsmoment",
+        "eerste_regel": "chant ES:"
+      },
+      {
+        "nummer": "653",
+        "titel": "U kennen, uit en tot U leven,",
+        "type_match": "Conceptueel",
+        "karakter": "Belijdend",
+        "toelichting": "Sluit aan bij de dialoog in Johannes 4 over het 'kennen' van de gave Gods en de ware aanbidding.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "U kennen, uit en tot U leven,"
+      },
+      {
+        "nummer": "393",
+        "titel": "Als ik in deze stille tijd",
+        "type_match": "Emotioneel",
+        "karakter": "Persoonlijk gebed",
+        "toelichting": "Reflecteert op de persoonlijke ontmoeting met Christus, vergelijkbaar met de ontmoeting bij de put.",
+        "suggestie_gebruik": "Kyrie-gebed",
+        "eerste_regel": "Als ik in deze stille tijd"
+      },
+      {
+        "nummer": "424",
+        "titel": "Verzadigd de honger,",
+        "type_match": "Thematisch",
+        "karakter": "Smeekbede",
+        "toelichting": "Vraagt om verzadiging van de diepste honger en dorst, een kernmotief in de lezingen van deze zondag.",
+        "suggestie_gebruik": "Tafelgebed / Communie",
+        "eerste_regel": "Verzadigd de honger,"
+      },
+      {
+        "nummer": "568a",
+        "titel": "Ubi caritas et amor,",
+        "type_match": "Thematisch",
+        "karakter": "Verstild",
+        "toelichting": "Verwijst naar de liefde van God die in onze harten is uitgestort (Romeinen 5).",
+        "suggestie_gebruik": "Meditatiemoment",
+        "eerste_regel": "Ubi caritas et amor,"
+      },
+      {
+        "nummer": "100",
+        "titel": "Juich Gode toe, bazuin en zing.",
+        "type_match": "Thematisch",
+        "karakter": "Feestelijk",
+        "toelichting": "Een loflied dat de grootheid van God bezingt, passend bij de verwondering van de Samaritanen.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Juich Gode toe, bazuin en zing."
+      },
+      {
+        "nummer": "655",
+        "titel": "Zing voor de Heer een nieuw gezang!",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "Oproep tot lofprijzing die past bij de getuigenis van de vrouw die de stad in gaat.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Zing voor de Heer een nieuw gezang!"
       }
     ],
     "hemelhoog": [
       {
-        "nummer": "451",
-        "titel": "Levend water",
+        "nummer": "686",
+        "titel": "Leid mij, Heer, o machtig Heiland",
         "type_match": "Schriftlezing",
-        "karakter": "Opwekkend",
-        "toelichting": "Expliciete focus op Johannes 4. Zeer geschikt voor de jongere generaties in Reeuwijk.",
-        "suggestie_gebruik": "Schriftlied"
+        "karakter": "Vertrouwend",
+        "toelichting": "Bevat de bede 'Open nu de kristallen fontein', een directe link naar het water uit de rots (Exodus 17).",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Leid mij, Heer, o machtig Heiland"
       },
       {
-        "nummer": "452",
-        "titel": "De rivier",
-        "type_match": "Contextueel",
-        "karakter": "Stromend en krachtig",
-        "toelichting": "Water als symbool van genezing. De tekst 'er stroomt een rivier' resoneert met het landschap van het Groene Hart.",
-        "suggestie_gebruik": "Antwoordlied"
+        "nummer": "343",
+        "titel": "Wie zal ons voeden, het brood met ons breken?",
+        "type_match": "Thematisch",
+        "karakter": "Vragend en zoekend",
+        "toelichting": "Verwoordt de menselijke behoefte aan geestelijk voedsel en water, centraal in de woestijnreis en bij de put.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Wie zal ons voeden, het brood met ons breken?"
       },
       {
-        "nummer": "221",
-        "titel": "Heer, ik kom tot U",
+        "nummer": "679",
+        "titel": "Heer, uw licht en uw liefde schijnen,",
+        "type_match": "Thematisch",
+        "karakter": "Stralend",
+        "toelichting": "Vraagt om de stroom van Gods liefde, wat prachtig aansluit bij Romeinen 5:5.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Heer, uw licht en uw liefde schijnen,"
+      },
+      {
+        "nummer": "227",
+        "titel": "Blaas met de adem van uw Geest op ons;",
+        "type_match": "Conceptueel",
+        "karakter": "Invocatie",
+        "toelichting": "De Heilige Geest als de bron van levend water die in ons binnenste moet stromen.",
+        "suggestie_gebruik": "Gebed om de Geest",
+        "eerste_regel": "Blaas met de adem van uw Geest op ons;"
+      },
+      {
+        "nummer": "348",
+        "titel": "Hij kent ons als geen ander,",
         "type_match": "Emotioneel",
-        "karakter": "Persoonlijke overgave",
-        "toelichting": "Verwoordt de dorst van de ziel die alleen bij God verzadigd wordt. Sluit aan bij de inkeer van Oculi.",
-        "suggestie_gebruik": "Gebed na de preek"
-      },
-      {
-        "nummer": "516",
-        "titel": "Vul dit huis met Uw glorie",
-        "type_match": "Conceptueel",
-        "karakter": "Majestueus",
-        "toelichting": "De Geest die als water wordt uitgestort (Romeinen 5). Vraagt om een krachtige aanwezigheid van God in de gemeenschap.",
-        "suggestie_gebruik": "Intocht"
-      },
-      {
-        "nummer": "198",
-        "titel": "Vader, vol van liefde",
-        "type_match": "Conceptueel",
-        "karakter": "Teder",
-        "toelichting": "De liefde van God die in onze harten is uitgestort, zoals Paulus beschrijft in de epistellezing.",
-        "suggestie_gebruik": "Na de epistellezing"
-      },
-      {
-        "nummer": "720",
-        "titel": "Vrede van God",
-        "type_match": "Contextueel",
-        "karakter": "Zegenend",
-        "toelichting": "Een gebed om vrede, essentieel gezien de actuele dreiging in Oekraïne en de behoefte aan stabiliteit.",
-        "suggestie_gebruik": "Zending en Zegen"
-      },
-      {
-        "nummer": "453",
-        "titel": "Stromen van zegen",
-        "type_match": "Verrassend",
-        "karakter": "Traditioneel-evangelisch",
-        "toelichting": "Een klassieker die de overvloed van Gods genade bezingt. Voor de oudere generatie in Reeuwijk een baken van herkenning.",
-        "suggestie_gebruik": "Danklied"
+        "karakter": "Troostend",
+        "toelichting": "Sluit aan bij de vrouw die zegt: 'Hij heeft mij alles verteld wat ik gedaan heb'. God kent onze dorst.",
+        "suggestie_gebruik": "Na de preek",
+        "eerste_regel": "Hij kent ons als geen ander,"
       },
       {
         "nummer": "330",
         "titel": "Eigen roem is uitgesloten",
-        "type_match": "Conceptueel",
+        "type_match": "Thematisch",
         "karakter": "Ootmoedig",
-        "toelichting": "Benadrukt dat genade een geschenk is, geen verdienste. Past bij de 'inkeer' sfeer van de lijdenstijd.",
-        "suggestie_gebruik": "Verootmoediging"
+        "toelichting": "Past bij de inkeer van de Veertigdagentijd en de genade waar Paulus over schrijft in Romeinen 5.",
+        "suggestie_gebruik": "Verootmoediging",
+        "eerste_regel": "Eigen roem is uitgesloten"
       },
       {
-        "nummer": "343",
-        "titel": "Wie zal ons voeden",
-        "type_match": "Conceptueel",
-        "karakter": "Vragend en zoekend",
-        "toelichting": "Sluit aan bij de existentiële vragen van de moderne mens in een welvarende context: wat voedt ons echt?",
-        "suggestie_gebruik": "Tafelgebed / Avondmaal"
+        "nummer": "416",
+        "titel": "Jésus le Christ, lumière intérieure,",
+        "type_match": "Contextueel",
+        "karakter": "Meditatief",
+        "toelichting": "Christus als het innerlijk licht en de bron van vrede, relevant voor de actuele vredesbesprekingen.",
+        "suggestie_gebruik": "Stiltemoment",
+        "eerste_regel": "Jésus le Christ, lumière intérieure,"
       },
       {
-        "nummer": "679",
-        "titel": "Heer, uw licht en uw liefde schijnen",
-        "type_match": "Conceptueel",
-        "karakter": "Lichtvoetig en hoopvol",
-        "toelichting": "Vraagt om de reiniging door het bloed en de Geest, als een stroom die alles nieuw maakt.",
-        "suggestie_gebruik": "Slotlied"
+        "nummer": "518",
+        "titel": "Heer, uw bloed, dat reinigt mij,",
+        "type_match": "Thematisch",
+        "karakter": "Aanbiddend",
+        "toelichting": "Focus op de reinigende kracht van Christus, de bron van vergeving.",
+        "suggestie_gebruik": "Avondmaal",
+        "eerste_regel": "Heer, uw bloed, dat reinigt mij,"
+      },
+      {
+        "nummer": "626",
+        "titel": "Ja, ik verkies nu om bij U te zijn",
+        "type_match": "Emotioneel",
+        "karakter": "Toegewijd",
+        "toelichting": "De keuze van de Samaritaanse vrouw om bij Jezus te blijven en Hem te volgen.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Ja, ik verkies nu om bij U te zijn"
+      },
+      {
+        "nummer": "232",
+        "titel": "Laat het huis gevuld zijn",
+        "type_match": "Thematisch",
+        "karakter": "Verlangend",
+        "toelichting": "Een roep om de vervulling met Gods aanwezigheid, zoals water een droog land vult.",
+        "suggestie_gebruik": "Openingslied",
+        "eerste_regel": "Laat het huis gevuld zijn"
       }
     ],
     "op_toonhoogte": [
       {
-        "nummer": "167",
-        "titel": "Zegen mij op de weg die ik moet gaan",
-        "type_match": "Contextueel",
-        "karakter": "Reislied",
-        "toelichting": "De woestijnreis van Exodus 17 wordt hier vertaald naar onze eigen levensweg. Vraagt om de Geest als gids.",
-        "suggestie_gebruik": "Slotlied"
+        "nummer": "16",
+        "titel": "Als een hert dat verlangt naar water,",
+        "type_match": "Thematisch",
+        "karakter": "Innig verlangen",
+        "toelichting": "De ultieme verklanking van dorst naar God. Zeer herkenbaar voor de gemeente in Reeuwijk.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Als een hert dat verlangt naar water,"
       },
       {
-        "nummer": "219",
-        "titel": "Wie zal ons voeden",
-        "type_match": "Conceptueel",
-        "karakter": "Vragend",
-        "toelichting": "Identiek aan HH 343, maar vaak met een andere zetting. Zeer geschikt voor de 'werkplaats van geloof' in De Ark.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "223",
-        "titel": "Aan uw voeten Heer",
-        "type_match": "Emotioneel",
-        "karakter": "Intiem",
-        "toelichting": "De houding van de Samaritaanse vrouw die alles achterlaat om bij Jezus te zijn. Een lied van diepe toewijding.",
-        "suggestie_gebruik": "Na de preek"
-      },
-      {
-        "nummer": "136",
-        "titel": "Geest van hierboven",
-        "type_match": "Conceptueel",
-        "karakter": "Krachtig",
-        "toelichting": "De Geest die liefde schenkt, direct verbonden met Romeinen 5:5.",
-        "suggestie_gebruik": "Gebed om de Geest"
-      },
-      {
-        "nummer": "165",
-        "titel": "Vrede van God",
-        "type_match": "Contextueel",
-        "karakter": "Rustgevend",
-        "toelichting": "In een wereld vol strijd (Oekraïne) is deze vrede als water in de woestijn.",
-        "suggestie_gebruik": "Zegenlied"
-      },
-      {
-        "nummer": "202",
-        "titel": "Liefde was het, onuitputt’lijk",
-        "type_match": "Conceptueel",
-        "karakter": "Lofprijzend",
-        "toelichting": "De onuitputtelijke bron van Gods liefde staat centraal. Een tegenwicht voor de 'verharding' uit Psalm 95.",
-        "suggestie_gebruik": "Antwoordlied"
+        "nummer": "222",
+        "titel": "Zie de stroom van Jezus’ liefde",
+        "type_match": "Thematisch",
+        "karakter": "Groots en meeslepend",
+        "toelichting": "Verbindt de liefde van Jezus met een onuitputtelijke stroom, passend bij Romeinen 5.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Zie de stroom van Jezus’ liefde"
       },
       {
         "nummer": "299",
-        "titel": "Bron van licht en leven",
+        "titel": "Bron van licht en leven,",
         "type_match": "Conceptueel",
-        "karakter": "Aanbiddend",
-        "toelichting": "God als de oorsprong van alles. Past bij de natuurbeleving in Reeuwijk: God als de Bron achter de schepping.",
-        "suggestie_gebruik": "Intocht"
+        "karakter": "Lofprijzend",
+        "toelichting": "God als de bron van alles wat leeft, een centraal thema in de lezingen van vandaag.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Bron van licht en leven,"
       },
       {
-        "nummer": "327",
-        "titel": "Machtig God, sterke Rots",
-        "type_match": "Schriftlezing",
-        "karakter": "Stevig",
-        "toelichting": "Verwijst naar de Rots in de woestijn (Exodus 17). God als onwankelbaar fundament.",
-        "suggestie_gebruik": "Geloofsbelijdenis"
+        "nummer": "219",
+        "titel": "Wie zal ons voeden,",
+        "type_match": "Thematisch",
+        "karakter": "Zoekend",
+        "toelichting": "Stelt de vraag naar de bron van ons bestaan, waarop het evangelie het antwoord geeft.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Wie zal ons voeden,"
       },
       {
-        "nummer": "442",
-        "titel": "Geest van God",
+        "nummer": "11",
+        "titel": "Mijn licht, mijn heil is Hij, mijn God en HERE!",
+        "type_match": "Thematisch",
+        "karakter": "Zelfverzekerd",
+        "toelichting": "Een lied van vertrouwen dat past bij de 'Oculi' (mijn ogen zijn gericht op de Heer).",
+        "suggestie_gebruik": "Openingslied",
+        "eerste_regel": "Mijn licht, mijn heil is Hij, mijn God en HERE!"
+      },
+      {
+        "nummer": "24",
+        "titel": "Mijn ziel is stil tot God mijn Heer,",
         "type_match": "Emotioneel",
-        "karakter": "Vernieuwend",
-        "toelichting": "Een bede om persoonlijke transformatie, passend bij de 'inkeer' van de Veertigdagentijd.",
-        "suggestie_gebruik": "Gebed"
+        "karakter": "Verstild",
+        "toelichting": "De stilte bij de bron, het wachten op het levende water.",
+        "suggestie_gebruik": "Na de preek",
+        "eerste_regel": "Mijn ziel is stil tot God mijn Heer,"
       },
       {
-        "nummer": "448",
-        "titel": "Vul mij met uw Geest",
+        "nummer": "110",
+        "titel": "De Vader die de Zoon een beker reikt,",
+        "type_match": "Thematisch",
+        "karakter": "Lijdenslied",
+        "toelichting": "Verbindt de 'beker' met de lijdensweg van Christus, passend in de Veertigdagentijd.",
+        "suggestie_gebruik": "Lijdenslied",
+        "eerste_regel": "De Vader die de Zoon een beker reikt,"
+      },
+      {
+        "nummer": "167",
+        "titel": "Zegen mij op de weg die ik moet gaan.",
+        "type_match": "Contextueel",
+        "karakter": "Pelgrimslied",
+        "toelichting": "Vraagt om zegen voor de reis, zoals Israël in de woestijn (Exodus 17).",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Zegen mij op de weg die ik moet gaan."
+      },
+      {
+        "nummer": "223",
+        "titel": "Aan uw voeten Heer,",
+        "type_match": "Emotioneel",
+        "karakter": "Devoot",
+        "toelichting": "De houding van de vrouw bij de bron: luisteren en ontvangen.",
+        "suggestie_gebruik": "Gebedsmoment",
+        "eerste_regel": "Aan uw voeten Heer,"
+      },
+      {
+        "nummer": "6",
+        "titel": "Mogen de woorden van mijn mond",
         "type_match": "Conceptueel",
-        "karakter": "Verlangend",
-        "toelichting": "De dorst naar de Geest wordt hier expliciet gemaakt als een roep om vervulling.",
-        "suggestie_gebruik": "Na de preek"
+        "karakter": "Gebed",
+        "toelichting": "Vraagt om zuiverheid in spreken en denken, passend bij de inkeer van Oculi.",
+        "suggestie_gebruik": "Gebed voor de opening van het Woord",
+        "eerste_regel": "Mogen de woorden van mijn mond"
       }
     ],
     "weerklank": [
       {
-        "nummer": "494",
-        "titel": "Rots waaruit het leven welt",
+        "nummer": "30",
+        "titel": "O alle gij dorstigen, kom tot de stromen",
+        "type_match": "Thematisch",
+        "karakter": "Uitnodigend",
+        "toelichting": "Een krachtige profetische uitnodiging die naadloos aansluit bij de woorden van Jezus in Johannes 4.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "O alle gij dorstigen, kom tot de stromen"
+      },
+      {
+        "nummer": "41",
+        "titel": "Jezus die langs het water liep",
         "type_match": "Schriftlezing",
-        "karakter": "Klassiek-hymnisch",
-        "toelichting": "Prachtige verbinding tussen de rots in de woestijn en Christus als de geestelijke rots.",
-        "suggestie_gebruik": "Antwoordlied"
+        "karakter": "Verhalend",
+        "toelichting": "Verbindt Jezus met het water, een terugkerend motief dat de Reeuwijkse context (waterrijk) raakt.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Jezus die langs het water liep"
+      },
+      {
+        "nummer": "317",
+        "titel": "Wij komen bij het water saam,",
+        "type_match": "Contextueel",
+        "karakter": "Gemeenschapsvormend",
+        "toelichting": "Benadrukt de ontmoeting bij het water, wat de identiteit van 'De Ark' als open gemeenschap versterkt.",
+        "suggestie_gebruik": "Doopgedachtenis / Intocht",
+        "eerste_regel": "Wij komen bij het water saam,"
       },
       {
         "nummer": "54",
-        "titel": "U kennen, uit en tot U leven",
+        "titel": "U kennen, uit en tot U leven,",
         "type_match": "Conceptueel",
-        "karakter": "Statig",
-        "toelichting": "De tekst benadrukt Christus als de bron van voeding en licht. Zeer geschikt voor de meer traditionele hoorder.",
-        "suggestie_gebruik": "Schriftlied"
+        "karakter": "Belijdend",
+        "toelichting": "Het kennen van God als de bron van het eeuwige leven, de kern van de dialoog bij de put.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "U kennen, uit en tot U leven,"
       },
       {
         "nummer": "429",
-        "titel": "Geef vrede, Heer, geef vrede",
+        "titel": "Geef vrede, Heer, geef vrede,",
         "type_match": "Contextueel",
         "karakter": "Smeekbede",
-        "toelichting": "Directe link naar de actualiteit (Oekraïne). Vrede als noodzakelijk 'levenswater' voor de wereld.",
-        "suggestie_gebruik": "Gebed voor de wereld"
+        "toelichting": "Noodzakelijk gebed in de context van de oorlog in Oekraïne en de roep om vrede.",
+        "suggestie_gebruik": "Gebed voor de wereld",
+        "eerste_regel": "Geef vrede, Heer, geef vrede,"
       },
       {
-        "nummer": "192",
-        "titel": "Geest van hierboven",
+        "nummer": "268",
+        "titel": "O Vader, bron van eeuwig licht,",
+        "type_match": "Thematisch",
+        "karakter": "Lofprijzend",
+        "toelichting": "God als de bron van licht en leven, passend bij de thematiek van de zondag.",
+        "suggestie_gebruik": "Gloria-vervanger (in de lijdenstijd)",
+        "eerste_regel": "O Vader, bron van eeuwig licht,"
+      },
+      {
+        "nummer": "310",
+        "titel": "Het water van de grote vloed",
+        "type_match": "Thematisch",
+        "karakter": "Indrukwekkend",
+        "toelichting": "Reflecteert op de kracht van water, zowel bedreigend als reddend.",
+        "suggestie_gebruik": "Thematisch lied",
+        "eerste_regel": "Het water van de grote vloed"
+      },
+      {
+        "nummer": "527",
+        "titel": "In het begin lag de aarde verloren,",
         "type_match": "Conceptueel",
-        "karakter": "Gedragen",
-        "toelichting": "Focus op de liefde van God die door de Geest wordt geschonken (Romeinen 5).",
-        "suggestie_gebruik": "Gebed om de Geest"
+        "karakter": "Verhalend",
+        "toelichting": "Over de Geest die over de wateren zweeft, de oerbron van alle leven.",
+        "suggestie_gebruik": "Openingslied",
+        "eerste_regel": "In het begin lag de aarde verloren,"
       },
       {
-        "nummer": "359",
-        "titel": "Vrede zij u, vrede zij u",
-        "type_match": "Contextueel",
-        "karakter": "Bemoedigend",
-        "toelichting": "Jezus' groet van vrede die angst verdrijft. Belangrijk in een tijd van onzekerheid.",
-        "suggestie_gebruik": "Slotlied"
+        "nummer": "95",
+        "titel": "Nu is verschenen al Gods heil en kracht",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "Viert de verschijning van Christus als de brenger van heil.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Nu is verschenen al Gods heil en kracht"
       },
       {
-        "nummer": "69",
-        "titel": "De Geest des Heren die het leven",
-        "type_match": "Conceptueel",
-        "karakter": "Verheven",
-        "toelichting": "Beschrijft de transformerende kracht van de Geest, die ons doet spiegelen aan Gods licht.",
-        "suggestie_gebruik": "Loflied"
-      },
-      {
-        "nummer": "73",
-        "titel": "Bewaar de eenheid van Gods Geest",
-        "type_match": "Contextueel",
-        "karakter": "Gemeenschapsvormend",
-        "toelichting": "Past bij de 'Samen-gemeente' ambitie van De Ark in Reeuwijk.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "196",
-        "titel": "Heilige Geest, Gij hemelhoge",
-        "type_match": "Conceptueel",
-        "karakter": "Aanroepend",
-        "toelichting": "Vraagt om leiding en vernieuwing, essentieel voor de 'werkplaats van geloof'.",
-        "suggestie_gebruik": "Gebed"
-      },
-      {
-        "nummer": "197",
-        "titel": "In vuur en vlam zet ons de Geest",
-        "type_match": "Verrassend",
-        "karakter": "Strijdbaar",
-        "toelichting": "Een lied dat oproept tot getuigenis, ook als dat schuurt met de comfortabele forensencultuur.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "204",
-        "titel": "O, Schepper, Geest, woon in uw kerk",
-        "type_match": "Conceptueel",
-        "karakter": "Plechtig",
-        "toelichting": "Vraagt om de heiliging van de gemeenschap, passend bij de oecumenische breedte.",
-        "suggestie_gebruik": "Intocht"
+        "nummer": "9",
+        "titel": "Heer, onze God, hoe heerlijk is uw naam,",
+        "type_match": "Thematisch",
+        "karakter": "Aanbiddend",
+        "toelichting": "Loflied op de schepping, passend bij de natuurbeleving in Reeuwijk.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Heer, onze God, hoe heerlijk is uw naam,"
       }
     ],
     "weerklank_psalmen": [
       {
         "nummer": "95",
-        "titel": "Kom, laat ons juichen voor de HEER",
+        "titel": "Kom, laat ons juichen voor de HEER,",
         "type_match": "Schriftlezing",
-        "karakter": "Waarschuwend en lofprijzend",
-        "toelichting": "De psalm van de dag. De waarschuwing tegen Meriba en Massa (Exodus 17) is cruciaal voor de inkeer.",
-        "suggestie_gebruik": "Intochtspsalm"
-      },
-      {
-        "nummer": "42",
-        "titel": "Heer, een hert in dorre streken",
-        "type_match": "Conceptueel",
-        "karakter": "Verlangend",
-        "toelichting": "De ultieme psalm over dorst naar God. Sluit naadloos aan bij de 'dorst' van de Samaritaanse vrouw.",
-        "suggestie_gebruik": "Antwoordpsalm"
-      },
-      {
-        "nummer": "63",
-        "titel": "Mijn God, Gij zijt mijn toeverlaat",
-        "type_match": "Conceptueel",
-        "karakter": "Innend",
-        "toelichting": "Zingt over een 'dor en dorstig land zonder water'. Een krachtige metafoor voor spirituele leegte.",
-        "suggestie_gebruik": "Gebed"
+        "karakter": "Oproepend en waarschuwend",
+        "toelichting": "De psalm van de dag. Herinnert aan Meriba en de verharding van het hart in de woestijn.",
+        "suggestie_gebruik": "Psalm na de eerste lezing",
+        "eerste_regel": "Kom, laat ons juichen voor de HEER,"
       },
       {
         "nummer": "78",
-        "titel": "Mijn volk, hoor toe",
+        "titel": "Mijn volk, hoor toe en neem mijn leer ter ore.",
         "type_match": "Schriftlezing",
         "karakter": "Onderwijzend",
-        "toelichting": "Beschrijft de wonderen in de woestijn, inclusief het water uit de rots. Houdt de gemeente een spiegel voor.",
-        "suggestie_gebruik": "Schriftlied"
+        "toelichting": "Beschrijft uitvoerig het wonder van het water uit de rots in de woestijn (Exodus 17).",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Mijn volk, hoor toe en neem mijn leer ter ore."
       },
       {
-        "nummer": "105",
-        "titel": "Loof, loof verheugd de HEER",
-        "type_match": "Schriftlezing",
-        "karakter": "Feestelijk",
-        "toelichting": "Dankt God voor het water dat uit de rots vloeide als een rivier. Contrast met de droogte.",
-        "suggestie_gebruik": "Lofpsalm"
+        "nummer": "69",
+        "titel": "O God, verlos mij, red mij uit mijn nood,",
+        "type_match": "Emotioneel",
+        "karakter": "Klacht",
+        "toelichting": "Het water dat aan de lippen staat; de keerzijde van de water-symboliek in tijden van nood.",
+        "suggestie_gebruik": "Kyrie-gebed",
+        "eerste_regel": "O God, verlos mij, red mij uit mijn nood,"
       },
       {
-        "nummer": "107",
-        "titel": "Loof, loof de HEER gestadig",
-        "type_match": "Conceptueel",
-        "karakter": "Verhalend",
-        "toelichting": "Over hen die dwaalden in de woestijn en dorst leden, maar door God werden gered.",
-        "suggestie_gebruik": "Dankzegging"
+        "nummer": "104",
+        "titel": "Mijn ziel, verheerlijk God om zijne macht.",
+        "type_match": "Thematisch",
+        "karakter": "Majestueus",
+        "toelichting": "Bezingt God die de bronnen ontspringt in de dalen, een loflied op de Schepper van het water.",
+        "suggestie_gebruik": "Loflied",
+        "eerste_regel": "Mijn ziel, verheerlijk God om zijne macht."
       },
       {
-        "nummer": "114",
-        "titel": "Toen Israel uit Egypteland ging",
-        "type_match": "Schriftlezing",
-        "karakter": "Ontzagwekkend",
-        "toelichting": "De rots die verandert in een waterbron. Gods macht over de natuur.",
-        "suggestie_gebruik": "Antwoordpsalm"
+        "nummer": "27",
+        "titel": "De HERE is mijn licht, wat kan mij deren?",
+        "type_match": "Thematisch",
+        "karakter": "Moedig",
+        "toelichting": "Passend bij de naam 'Oculi' (mijn ogen zijn op de Heer), een lied van vertrouwen.",
+        "suggestie_gebruik": "Openingspsalm",
+        "eerste_regel": "De HERE is mijn licht, wat kan mij deren?"
       },
       {
-        "nummer": "1",
-        "titel": "Gelukkig wie niet deelneemt",
-        "type_match": "Verrassend",
-        "karakter": "Wijsgerig",
-        "toelichting": "De rechtvaardige als een boom aan waterstromen. Een mooi beeld voor de Reeuwijkse context.",
-        "suggestie_gebruik": "Opening"
+        "nummer": "61",
+        "titel": "Wil, o God, mijn smeking horen, neig uw oren",
+        "type_match": "Emotioneel",
+        "karakter": "Smeekbede",
+        "toelichting": "Roepen tot God vanaf het einde van de aarde, zoekend naar de rots die te hoog is.",
+        "suggestie_gebruik": "Gebedslied",
+        "eerste_regel": "Wil, o God, mijn smeking horen, neig uw oren"
       },
       {
-        "nummer": "23",
-        "titel": "De HERE wil mijn trouwe herder wezen",
-        "type_match": "Conceptueel",
+        "nummer": "18",
+        "titel": "Ik heb U lief van ganser harte, HERE.",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "God als de rots en de bevrijder, een thema dat terugkomt in Exodus 17.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Ik heb U lief van ganser harte, HERE."
+      },
+      {
+        "nummer": "71",
+        "titel": "Bij U, o HEER, berg ik mijn leven.",
+        "type_match": "Thematisch",
         "karakter": "Vertrouwend",
-        "toelichting": "Leidt naar 'rustige wateren'. Biedt de rust waar de forens in Reeuwijk naar snakt.",
-        "suggestie_gebruik": "Meditatief moment"
+        "toelichting": "God als de rots waarop men kan schuilen, relevant voor de oudere generatie in Reeuwijk.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Bij U, o HEER, berg ik mijn leven."
       },
       {
-        "nummer": "36",
-        "titel": "De boosheid van de goddeloze",
-        "type_match": "Conceptueel",
-        "karakter": "Contrastrijk",
-        "toelichting": "Bezingt God als de 'bron van het leven'. In Zijn licht zien wij het licht (Oculi).",
-        "suggestie_gebruik": "Lofpsalm"
+        "nummer": "81",
+        "titel": "Jubel voor de Heer, juich in uw gezangen.",
+        "type_match": "Thematisch",
+        "karakter": "Feestelijk",
+        "toelichting": "Herinnert aan de bevrijding uit Egypte en het water van Meriba.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Jubel voor de Heer, juich in uw gezangen."
+      },
+      {
+        "nummer": "97",
+        "titel": "De HEER alleen regeert,",
+        "type_match": "Thematisch",
+        "karakter": "Majestueus",
+        "toelichting": "Bezingt de heerschappij van God over de hele aarde.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "De HEER alleen regeert,"
       }
     ]
   },
