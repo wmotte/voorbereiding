@@ -2967,7 +2967,11 @@
         }
 
         function renderSection(key, data, num) {
-            const title = sectionTitles[key] || formatKey(key);
+            let title = sectionTitles[key] || formatKey(key);
+            // Add location name to Politieke oriëntatie title
+            if (key === '07_politieke_orientatie' && jsonData && jsonData['00_meta']?.plaatsnaam) {
+                title = `${title} (${jsonData['00_meta'].plaatsnaam})`;
+            }
             // Use the pre-calculated number from the main loop
             const sectionNum = num;
             const meta = data._meta || {};
