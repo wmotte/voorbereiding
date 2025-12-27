@@ -1366,6 +1366,293 @@
       ]
     }
   },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 30,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de klassieke psalmen (Psalm 119 en 19) die de wet bezingen, en liederen die de radicale innerlijke keuze van de Bergrede benadrukken. Er is een goede verdeling tussen de verschillende bundels, waarbij Liedboek en Weerklank de diepte van de traditie bewaken, terwijl Hemelhoog en Op Toonhoogte de brug slaan naar de belevingswereld van de jonge gezinnen in Waddinxveen.",
+      "contextuele_reflectie": "In een tijd van 'humanitaire onverschilligheid' (VN-rapport) en de snelle groei van Waddinxveen (Park Triangel), dagen deze liederen de gemeente uit om niet slechts uiterlijk de regels te volgen, maar te kiezen voor een 'wijsheid van het hart'. De liederen over 'licht' verbinden de Bergrede direct met de missionaire roeping van De Rank in de lokale samenleving."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "119",
+        "titel": "Welzalig wie de rechte wegen gaan",
+        "type_match": "Schriftlezing",
+        "karakter": "Statig en fundamenteel",
+        "toelichting": "Directe berijming van de voorgeschreven Psalm 119. Het zet de toon voor de keuze voor Gods weg, passend bij Sirach 15.",
+        "suggestie_gebruik": "Intochtlied of Psalm na de eerste lezing",
+        "eerste_regel": "Welzalig wie de rechte wegen gaan,"
+      },
+      {
+        "nummer": "989",
+        "titel": "Gelukkig de armen van geest",
+        "type_match": "Schriftlezing",
+        "karakter": "Meditatief en verstild",
+        "toelichting": "Verwijst naar de zaligsprekingen die voorafgaan aan de evangelielezing van vandaag (Matteüs 5). Het benadrukt de innerlijke gesteldheid.",
+        "suggestie_gebruik": "Schriftlied na het Evangelie",
+        "eerste_regel": "Gelukkig de armen van geest"
+      },
+      {
+        "nummer": "19",
+        "titel": "De hemel roemt de Heer",
+        "type_match": "Thematisch",
+        "karakter": "Lofprijzend",
+        "toelichting": "Bezingt de volmaaktheid van Gods wet en de wijsheid die het hart verblijdt, wat aansluit bij de epistellezing uit 1 Korintiërs 2.",
+        "suggestie_gebruik": "Gloria-lied",
+        "eerste_regel": "De hemel roemt de Heer,"
+      },
+      {
+        "nummer": "1010",
+        "titel": "Geef vrede, Heer, geef vrede",
+        "type_match": "Contextueel",
+        "karakter": "Smeekgebed",
+        "toelichting": "Slaat de brug naar de actualiteit van humanitaire crises en de roep om gerechtigheid in een onverschillige wereld.",
+        "suggestie_gebruik": "Gebedslied of na de voorbeden",
+        "eerste_regel": "Geef vrede, Heer, geef vrede,"
+      },
+      {
+        "nummer": "537",
+        "titel": "Zo spreekt de Heer die ons geschapen heeft",
+        "type_match": "Conceptueel",
+        "karakter": "Krachtig en bemoedigend",
+        "toelichting": "Benadrukt de autoriteit van Gods Woord en de roeping om als Gods volk te leven, passend bij de 'beslistheid' van Estomihi.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Zo spreekt de Heer die ons geschapen heeft:"
+      },
+      {
+        "nummer": "271",
+        "titel": "Jezus Christus is het licht van God",
+        "type_match": "Thematisch",
+        "karakter": "Lichtlied",
+        "toelichting": "Verbindt de wijsheid van God met de persoon van Christus, het ware licht dat de innerlijke weg wijst.",
+        "suggestie_gebruik": "Lichtritueel of aanvang van de dienst",
+        "eerste_regel": "Zijn woord is leven, een lamp voor mijn voet,"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "371",
+        "titel": "Bewaar je oog",
+        "type_match": "Verrassend",
+        "karakter": "Vermanend en concreet",
+        "toelichting": "Sluit naadloos aan bij de radicale woorden van Jezus in Matteüs 5:27-30 over de verleiding van het oog en de zuiverheid van het hart.",
+        "suggestie_gebruik": "Lied na de verkondiging",
+        "eerste_regel": "Bewaar je oog, bewaar je oog"
+      },
+      {
+        "nummer": "88",
+        "titel": "Zoek eerst het koninkrijk van God",
+        "type_match": "Thematisch",
+        "karakter": "Eenvoudig en toegankelijk",
+        "toelichting": "De kern van de Bergrede: de prioriteit leggen bij Gods koninkrijk en zijn gerechtigheid. Zeer geschikt voor de jonge gezinnen in Waddinxveen.",
+        "suggestie_gebruik": "Zingend bidden of kinderlied",
+        "eerste_regel": "Zoek eerst het koninkrijk van God"
+      },
+      {
+        "nummer": "494",
+        "titel": "Uw Woord is een lamp voor mijn voet",
+        "type_match": "Schriftlezing",
+        "karakter": "Vertrouwend",
+        "toelichting": "De bekende tekst uit Psalm 119:105. Het geeft richting aan de 'keuze' waar Sirach over spreekt.",
+        "suggestie_gebruik": "Lied voor de schriftlezingen",
+        "eerste_regel": "Uw woord is een lamp voor mijn voet"
+      },
+      {
+        "nummer": "701",
+        "titel": "Heel uw koninkrijk",
+        "type_match": "Conceptueel",
+        "karakter": "Verlangend",
+        "toelichting": "Vraagt om de komst van Gods rijk waarin de wet van de liefde volkomen is. Sluit aan bij de visie van De Rank als vitale gemeenschap.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Deel je brood met de armen"
+      },
+      {
+        "nummer": "103",
+        "titel": "Meester, tot wie zouden wij gaan?",
+        "type_match": "Emotioneel",
+        "karakter": "Toegewijd",
+        "toelichting": "Verwoordt de beslistheid van de leerling die kiest voor de woorden van eeuwig leven, ondanks de complexiteit van de wereld.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Meester, tot wie zouden wij gaan?"
+      },
+      {
+        "nummer": "685",
+        "titel": "Laat zo je licht maar schijnen",
+        "type_match": "Contextueel",
+        "karakter": "Missionair",
+        "toelichting": "Directe opdracht uit Matteüs 5:16. Daagt de hoorders in Waddinxveen uit om relevant te zijn in hun eigen buurt.",
+        "suggestie_gebruik": "Uitzending en zegen",
+        "eerste_regel": "Laat zo je licht maar schijnen"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "53",
+        "titel": "Welzalig zijn d' oprechten van gemoed",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassiek en gedragen",
+        "toelichting": "De berijming van Psalm 119 die de vreugde van het wandelen in Gods wet benadrukt.",
+        "suggestie_gebruik": "Psalm van de zondag",
+        "eerste_regel": "Welzalig zijn d’ oprechten van gemoed,"
+      },
+      {
+        "nummer": "6",
+        "titel": "Mogen de woorden van mijn mond",
+        "type_match": "Thematisch",
+        "karakter": "Ingetogen gebed",
+        "toelichting": "Focus op de innerlijke zuiverheid (hart en mond), wat de kern is van Jezus' onderwijs in de Bergrede.",
+        "suggestie_gebruik": "Gebed om de opening van het Woord",
+        "eerste_regel": "Mogen de woorden van mijn mond"
+      },
+      {
+        "nummer": "414",
+        "titel": "Jezus zegt, dat Hij hier van ons verwacht",
+        "type_match": "Thematisch",
+        "karakter": "Appellerend",
+        "toelichting": "Herinnert de gemeente aan de praktische navolging en de 'keuze' voor het goede, passend bij de sfeer van Estomihi.",
+        "suggestie_gebruik": "Lied met de kinderen",
+        "eerste_regel": "Jezus zegt, dat Hij hier van ons verwacht,"
+      },
+      {
+        "nummer": "538",
+        "titel": "Laat zo je licht maar schijnen",
+        "type_match": "Contextueel",
+        "karakter": "Vrolijk en getuigend",
+        "toelichting": "Een oproep tot actie in de wereld, passend bij de missionaire focus van De Rank in de nieuwbouwwijken.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Laat zo je licht maar schijnen"
+      },
+      {
+        "nummer": "253",
+        "titel": "Geef vrede, Heer, geef vrede",
+        "type_match": "Contextueel",
+        "karakter": "Smeekbede",
+        "toelichting": "Verbindt de liturgische nood met de wereldwijde humanitaire financieringscrisis.",
+        "suggestie_gebruik": "Kyrie-moment",
+        "eerste_regel": "Geef vrede, Heer, geef vrede,"
+      },
+      {
+        "nummer": "16",
+        "titel": "Als een hert dat verlangt naar water",
+        "type_match": "Emotioneel",
+        "karakter": "Verlangend",
+        "toelichting": "Drukt het diepe verlangen uit naar God, de bron van alle wijsheid en leven.",
+        "suggestie_gebruik": "Communielied of meditatief moment",
+        "eerste_regel": "Als een hert dat verlangt naar water,"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "591",
+        "titel": "Weet je wat de Heer nu van ons verwacht?",
+        "type_match": "Thematisch",
+        "karakter": "Onderwijzend",
+        "toelichting": "Stelt de ethische vraag centraal, passend bij de radicalisering van de wet in Matteüs 5.",
+        "suggestie_gebruik": "Na de lezing van de wet of de Bergrede",
+        "eerste_regel": "Weet je wat de Heer nu van ons verwacht?"
+      },
+      {
+        "nummer": "441",
+        "titel": "Heer, wijs mij uw weg",
+        "type_match": "Thematisch",
+        "karakter": "Gebed",
+        "toelichting": "Een persoonlijk gebed om leiding bij het maken van de juiste keuzes (Sirach 15).",
+        "suggestie_gebruik": "Gebedslied",
+        "eerste_regel": "Heer, wijs mij uw weg"
+      },
+      {
+        "nummer": "197",
+        "titel": "In vuur en vlam zet ons de Geest",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "Verwijst naar de Geest die de diepe wijsheid van God openbaart (1 Korintiërs 2).",
+        "suggestie_gebruik": "Lied voor de prediking",
+        "eerste_regel": "In vuur en vlam zet ons de Geest"
+      },
+      {
+        "nummer": "614",
+        "titel": "'Sta eens op', zegt Jezus",
+        "type_match": "Conceptueel",
+        "karakter": "Activerend",
+        "toelichting": "De oproep tot opstaan en navolgen, passend bij de beslistheid van deze zondag.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "‘Sta eens op’, zegt Jezus,"
+      },
+      {
+        "nummer": "82",
+        "titel": "Wie zal voor God verschijnen",
+        "type_match": "Conceptueel",
+        "karakter": "Heilig",
+        "toelichting": "Vraagt naar de voorwaarden voor het naderen tot God: reine handen en een zuiver hart.",
+        "suggestie_gebruik": "Voorbereiding op de ontmoeting",
+        "eerste_regel": "Wie zal voor God verschijnen?"
+      },
+      {
+        "nummer": "481",
+        "titel": "Zou ik niet van harte zingen",
+        "type_match": "Emotioneel",
+        "karakter": "Vreugdevol",
+        "toelichting": "De vreugde van het hart dat God heeft gevonden, ondanks de ernst van de keuze.",
+        "suggestie_gebruik": "Danklied",
+        "eerste_regel": "Zou ik niet van harte zingen"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "119",
+        "titel": "Welzalig wie de rechte wegen gaan",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassiek",
+        "toelichting": "De traditionele berijming van de psalm van de dag, essentieel voor de confessionele identiteit van De Rank.",
+        "suggestie_gebruik": "Psalm na de eerste lezing",
+        "eerste_regel": "Welzalig wie de rechte wegen gaan,"
+      },
+      {
+        "nummer": "19",
+        "titel": "Het ruime firmament maakt wijd en zijd bekend",
+        "type_match": "Thematisch",
+        "karakter": "Majestueus",
+        "toelichting": "Bezingt de schepping en de wet als bronnen van wijsheid.",
+        "suggestie_gebruik": "Aanvangslied",
+        "eerste_regel": "Het ruime firmament / maakt wijd en zijd bekend"
+      },
+      {
+        "nummer": "40",
+        "titel": "Met heel mijn hart heb ik de Heer verwacht",
+        "type_match": "Emotioneel",
+        "karakter": "Getuigend",
+        "toelichting": "Benadrukt de innerlijke overgave ('Uw wet is in mijn binnenste'), wat aansluit bij de Bergrede.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Met heel mijn hart heb ik de HEER verwacht,"
+      },
+      {
+        "nummer": "18",
+        "titel": "Ik heb U lief van ganser harte, Here",
+        "type_match": "Thematisch",
+        "karakter": "Innend",
+        "toelichting": "De liefde van het hart als fundament voor de gehoorzaamheid aan God.",
+        "suggestie_gebruik": "Lied na de verkondiging",
+        "eerste_regel": "Ik heb U lief van ganser harte, HERE."
+      },
+      {
+        "nummer": "39",
+        "titel": "Ik dacht: ik zal de rechte wegen gaan",
+        "type_match": "Conceptueel",
+        "karakter": "Reflectief",
+        "toelichting": "De worsteling met de eigen weg en de keuze voor Gods weg.",
+        "suggestie_gebruik": "Kyrie-lied",
+        "eerste_regel": "Ik dacht: ik zal de rechte wegen gaan,"
+      },
+      {
+        "nummer": "108",
+        "titel": "Mijn hart is, Heer, in U gerust",
+        "type_match": "Emotioneel",
+        "karakter": "Vredig",
+        "toelichting": "De rust die volgt op de juiste keuze voor God.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Mijn hart is, Heer, in U gerust."
+      }
+    ]
+  },
   "08c_commentaries": {
     "exegese_eerste_lezing": {
       "schriftgedeelte": "Sirach 15:15-20",

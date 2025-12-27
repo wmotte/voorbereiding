@@ -1344,6 +1344,230 @@
       ]
     }
   },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 55,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de klassieke psalmen (146, 1, 32, 128) en thematische liederen over de Bergrede. Er is een goede verdeling tussen de meer traditionele bundels (Weerklank, Liedboek) en de liederen die aansluiten bij de jongere generaties (Op Toonhoogte, Hemelhoog).",
+      "contextuele_reflectie": "De liederen verbinden de 'omgekeerde wereld' van de Bergrede met de actualiteit van hongersnood in Soedan en de lokale verbondenheid in Ameide. De nadruk ligt op Gods nabijheid bij de 'kleine mens', wat zowel troost biedt voor de vergrijzende gemeenschap als een ethisch appel doet op de maatschappelijke verantwoordelijkheid."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "989",
+        "titel": "Gelukkig de armen van geest",
+        "type_match": "Schriftlezing",
+        "karakter": "Liturgisch recitatief",
+        "toelichting": "Directe toonzetting van de zaligsprekingen uit Matteüs 5. Essentieel voor deze zondag.",
+        "suggestie_gebruik": "Schriftlied na het Evangelie",
+        "eerste_regel": "Gelukkig de armen van geest"
+      },
+      {
+        "nummer": "72a",
+        "titel": "Voor kleine mensen is hij bereikbaar",
+        "type_match": "Thematisch",
+        "karakter": "Teder en hoopvol",
+        "toelichting": "Sluit naadloos aan bij Sefanja's 'nederigen van het land' en de focus op Gods voorkeur voor het onbeduidende.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Hij zal opkomen voor de misdeelden,"
+      },
+      {
+        "nummer": "146c",
+        "titel": "Alles wat adem heeft love de Here",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijk en uitbundig",
+        "toelichting": "De voorgeschreven psalm die God bezingt als de helper van verdrukten en hongerigen (relevant voor Soedan).",
+        "suggestie_gebruik": "Intochtlied of Psalm van de zondag",
+        "eerste_regel": "Alles wat adem heeft love de Here,"
+      },
+      {
+        "nummer": "181",
+        "titel": "Een heel klein zaadje waait weg op de wind",
+        "type_match": "Conceptueel",
+        "karakter": "Verhalend en licht",
+        "toelichting": "Verbeeldt hoe het Koninkrijk klein begint, passend bij de agrarische context van de Alblasserwaard.",
+        "suggestie_gebruik": "Kindermoment / Lied met de kinderen",
+        "eerste_regel": "Een heel klein zaadje waait weg op de wind."
+      },
+      {
+        "nummer": "130b",
+        "titel": "De Heer is steeds barmhartig / Uit afgronden roep ik U, Heer",
+        "type_match": "Emotioneel",
+        "karakter": "Smeekbede",
+        "toelichting": "Verbindt de nood van de wereld (Soedan) met de barmhartigheid die Jezus predikt.",
+        "suggestie_gebruik": "Kyrie-gebed",
+        "eerste_regel": "Uit afgronden roep ik U, Heer;"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "1",
+        "titel": "Gelukkig zal je zijn",
+        "type_match": "Schriftlezing",
+        "karakter": "Toegankelijk en bemoedigend",
+        "toelichting": "Een eigentijdse verwoording van de zaligsprekingen, zeer geschikt voor de jonge gezinnen in Ameide.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Gelukkig zal je zijn,"
+      },
+      {
+        "nummer": "385",
+        "titel": "Nederig van hart",
+        "type_match": "Thematisch",
+        "karakter": "Ingetogen aanbidding",
+        "toelichting": "Reflecteert op de gestalte van Christus die de nederigen opzoekt, zoals beschreven in 1 Korintiërs 1.",
+        "suggestie_gebruik": "Gebedslied",
+        "eerste_regel": "Hier aan uw voeten Heer,"
+      },
+      {
+        "nummer": "508",
+        "titel": "Mens zo klein, groot Godsgeschenk",
+        "type_match": "Conceptueel",
+        "karakter": "Verstild",
+        "toelichting": "Benadrukt de waarde van elk individu in Gods ogen, ongeacht status of macht.",
+        "suggestie_gebruik": "Meditatief moment",
+        "eerste_regel": "Mens zo klein, groot Godsgeschenk,"
+      },
+      {
+        "nummer": "389",
+        "titel": "Ben je groot of ben je klein",
+        "type_match": "Verrassend",
+        "karakter": "Vrolijk en inclusief",
+        "toelichting": "Eenvoudige theologie die de kern van de Bergrede raakt: iedereen hoort erbij in Gods Koninkrijk.",
+        "suggestie_gebruik": "Slotlied met de hele gemeente",
+        "eerste_regel": "Hij kent je als je blij bent;"
+      },
+      {
+        "nummer": "120",
+        "titel": "De zaligheid is van God",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "Bevestigt dat geluk (zaligheid) niet uit onszelf komt, maar een geschenk van God is.",
+        "suggestie_gebruik": "Geloofsbelijdenis",
+        "eerste_regel": "De zaligheid is van God,"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "538",
+        "titel": "Laat zo je licht maar schijnen",
+        "type_match": "Contextueel",
+        "karakter": "Aansporend",
+        "toelichting": "Vervolg op de zaligsprekingen (Matteüs 5:14-16). Roept de gemeente op tot actie in de wereld.",
+        "suggestie_gebruik": "Slotlied / Uitzending",
+        "eerste_regel": "Laat zo je licht maar schijnen"
+      },
+      {
+        "nummer": "253",
+        "titel": "Geef vrede, Heer, geef vrede",
+        "type_match": "Emotioneel",
+        "karakter": "Indringend gebed",
+        "toelichting": "Sluit aan bij 'Zalig de vredestichters' en de actuele oorlogssituaties.",
+        "suggestie_gebruik": "Gebed voor de wereld",
+        "eerste_regel": "Geef vrede, Heer, geef vrede,"
+      },
+      {
+        "nummer": "489",
+        "titel": "Dit is mijn hand en dat mijn voet",
+        "type_match": "Thematisch",
+        "karakter": "Dienstbaar",
+        "toelichting": "Praktische uitwerking van het 'klein zijn' en dienen in de gemeenschap van Ameide.",
+        "suggestie_gebruik": "Tijdens de collecte",
+        "eerste_regel": "Dit is mijn hand en dat mijn voet."
+      },
+      {
+        "nummer": "1",
+        "titel": "Welzalig de man, die niet wandelt",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassiek-hymnisch",
+        "toelichting": "Psalm 1 als fundament voor het bijbelse begrip 'gelukkig/zalig'.",
+        "suggestie_gebruik": "Aanvangslied",
+        "eerste_regel": "Welzalig de man, die niet wandelt"
+      },
+      {
+        "nummer": "12",
+        "titel": "Welzalig hij, wiens zonden zijn vergeven",
+        "type_match": "Thematisch",
+        "karakter": "Bevrijdend",
+        "toelichting": "Verbindt geluk aan de genade van God, passend bij de confessionele identiteit van de Sionkerk.",
+        "suggestie_gebruik": "Na de genadeverkondiging",
+        "eerste_regel": "Welzalig hij, wiens zonden zijn vergeven;"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "14",
+        "titel": "Alles wat adem heeft love de Here",
+        "type_match": "Schriftlezing",
+        "karakter": "Lofprijzend",
+        "toelichting": "De berijmde versie van Psalm 146, zeer vertrouwd in de gereformeerde traditie van Ameide.",
+        "suggestie_gebruik": "Psalm na de eerste lezing",
+        "eerste_regel": "Alles wat adem heeft love de Here,"
+      },
+      {
+        "nummer": "67",
+        "titel": "Het zaad zal vruchten dragen",
+        "type_match": "Thematisch",
+        "karakter": "Hoopvol",
+        "toelichting": "Over de groei van Gods Woord, ondanks menselijke zwakheid (1 Korintiërs 1).",
+        "suggestie_gebruik": "Lied na de prediking",
+        "eerste_regel": "Het zaad zal vruchten dragen"
+      },
+      {
+        "nummer": "263",
+        "titel": "Hoe lieflijk zijn de voeten van de bode",
+        "type_match": "Thematisch",
+        "karakter": "Majestueus",
+        "toelichting": "Eert degenen die de vrede van het Koninkrijk verkondigen.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Hoe lieflijk zijn de voeten van de bode"
+      },
+      {
+        "nummer": "61",
+        "titel": "De God die deze wereld schiep",
+        "type_match": "Contextueel",
+        "karakter": "Belijdend",
+        "toelichting": "Zingt over Gods rechtvaardigheid voor de armen, een krachtig tegenwicht tegen wereldwijd onrecht.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "De God die deze wereld schiep,"
+      },
+      {
+        "nummer": "82",
+        "titel": "Wie zal voor God verschijnen",
+        "type_match": "Thematisch",
+        "karakter": "Ootmoedig",
+        "toelichting": "Vraagt naar de gestalte van de gelovige: de reine van hart (Matteüs 5:8).",
+        "suggestie_gebruik": "Voorbereiding op de Schriftlezing",
+        "eerste_regel": "Wie zal voor God verschijnen?"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "146",
+        "titel": "Ik wil zingen al mijn dagen",
+        "type_match": "Schriftlezing",
+        "karakter": "Getuigend",
+        "toelichting": "De klassieke Geneefse psalm die de kern van de liturgie van deze zondag verwoordt.",
+        "suggestie_gebruik": "Psalm van de zondag",
+        "eerste_regel": "Ik wil zingen al mijn dagen:"
+      },
+      {
+        "nummer": "41a",
+        "titel": "Zalig de mens, die denkt aan armen",
+        "type_match": "Thematisch",
+        "karakter": "Diaconaal",
+        "toelichting": "Directe link tussen de zaligspreking en de zorg voor de naaste (relevant voor de hoordersanalyse).",
+        "suggestie_gebruik": "Lied bij de inzameling van de gaven",
+        "eerste_regel": "Zalig de mens, die denkt aan armen,"
+      },
+      {
+        "nummer": "128",
+        "titel": "Welzalig zullen wezen wie in Gods wegen gaan",
+        "type_match": "Thematisch",
+        "karakter": "Zegenend",
+        "toelichting": "Verbindt het geluk aan het dagelijks leven en de arbeid, passend bij de agrarische gemeenschap.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Welzalig zullen wezen wie in Gods wegen gaan."
+      }
+    ]
+  },
   "08c_commentaries": {
     "exegese_eerste_lezing": {
       "schriftgedeelte": "Sefanja 2,3; 3,12-13",

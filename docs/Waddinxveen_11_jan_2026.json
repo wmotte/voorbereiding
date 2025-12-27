@@ -1341,6 +1341,374 @@
       ]
     }
   },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 39,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de klassieke verhalende liederen over de doop van Jezus (Liedboek) en de meer belevingsgerichte liederen over de Heilige Geest en persoonlijke toe-eigening (Weerklank, Hemelhoog). Er is een goede vertegenwoordiging van de 'stem van God' thematiek die Psalm 29 en de evangelielezing verbindt.",
+      "contextuele_reflectie": "Voor de Waddinxveense context is er specifiek gezocht naar liederen die het 'water' (de Gouwe/polder) en het 'verbond' (de doop) centraal stellen. De liederen over de Geest bieden troost en kracht tegenover de 'extreem moeilijke winter' in de wereldactualiteit."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "522",
+        "titel": "Toen Jezus bij het water kwam",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend en plechtig",
+        "toelichting": "Dit lied volgt nauwgezet de evangelielezing uit Matteüs 3 over de ontmoeting tussen Jezus en Johannes bij de Jordaan.",
+        "suggestie_gebruik": "Schriftlied na de evangelielezing",
+        "eerste_regel": "Toen Jezus bij het water kwam,"
+      },
+      {
+        "nummer": "524",
+        "titel": "Nu Gij de doop ontvangt in de Jordaan",
+        "type_match": "Schriftlezing",
+        "karakter": "Meditatief",
+        "toelichting": "Focus op het moment van de doop en de openbaring van Jezus als de Zoon, direct aansluitend bij de Epifanie-thematiek.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Nu Gij de doop ontvangt in de Jordaan,"
+      },
+      {
+        "nummer": "518",
+        "titel": "Hoe helder staat de morgenster",
+        "type_match": "Seizoen",
+        "karakter": "Feestelijk/Hymnisch",
+        "toelichting": "Klassiek Epifanie-lied dat Jezus eert als het licht dat in de wereld is gekomen, passend bij de openbaring bij de doop.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Hoe helder staat de morgenster,"
+      },
+      {
+        "nummer": "686",
+        "titel": "De Geest des Heren heeft",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "Verbindt de zalving met de Geest (Handelingen 10) met de roeping van de Knecht (Jesaja 42).",
+        "suggestie_gebruik": "Lied na de epistellezing",
+        "eerste_regel": "De Geest des Heren heeft"
+      },
+      {
+        "nummer": "356",
+        "titel": "O God die uit het water",
+        "type_match": "Conceptueel",
+        "karakter": "Beschouwend",
+        "toelichting": "Reflecteert op de symboliek van water in de heilsgeschiedenis, resonerend met de Waddinxveense waterrijke omgeving.",
+        "suggestie_gebruik": "Gebed om de verlichting door de Geest",
+        "eerste_regel": "O God die uit het water"
+      },
+      {
+        "nummer": "513",
+        "titel": "God heeft het eerste woord",
+        "type_match": "Conceptueel",
+        "karakter": "Fundamenteel",
+        "toelichting": "Benadrukt Gods initiatief, wat essentieel is in de gereformeerde verbondsleer van de hoorders.",
+        "suggestie_gebruik": "Openingslied",
+        "eerste_regel": "God heeft het eerste woord."
+      },
+      {
+        "nummer": "517",
+        "titel": "Christus, uit God geboren",
+        "type_match": "Thematisch",
+        "karakter": "Lofprijzend",
+        "toelichting": "Bevestigt de goddelijke identiteit van Christus zoals uitgeroepen door de stem uit de hemel.",
+        "suggestie_gebruik": "Gloria-lied",
+        "eerste_regel": "Christus, uit God geboren"
+      },
+      {
+        "nummer": "519",
+        "titel": "Gij die de ster van David zijt",
+        "type_match": "Seizoen",
+        "karakter": "Ingetogen",
+        "toelichting": "Een bede om de verschijning van Christus in ons eigen leven, passend bij de Epifanietijd.",
+        "suggestie_gebruik": "Gebedslied",
+        "eerste_regel": "Gij die de ster van David zijt"
+      },
+      {
+        "nummer": "514a",
+        "titel": "Nu komt de Heer",
+        "type_match": "Thematisch",
+        "karakter": "Verwachtingsvol",
+        "toelichting": "Korte acclamatie die de komst van de Heer in de doop en in de liturgie markeert.",
+        "suggestie_gebruik": "Liturgisch tussenlied",
+        "eerste_regel": "Nu komt de Heer: in zijn hand het rijk,"
+      },
+      {
+        "nummer": "514b",
+        "titel": "Heel de aarde zal U aanbidden",
+        "type_match": "Thematisch",
+        "karakter": "Universeel",
+        "toelichting": "Sluit aan bij de universele betekenis van Epifanie: Christus geopenbaard aan alle volken.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Heel de aarde zal U aanbidden,"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "56",
+        "titel": "God, de stem die sprak",
+        "type_match": "Schriftlezing",
+        "karakter": "Majestueus",
+        "toelichting": "Directe link met de 'stem van de Heer' uit Psalm 29 en de stem bij de doop in Matteüs 3.",
+        "suggestie_gebruik": "Intochtlied of Psalmzang",
+        "eerste_regel": "God, de stem die sprak tot Abraham"
+      },
+      {
+        "nummer": "260",
+        "titel": "Als God zijn stem doet horen",
+        "type_match": "Thematisch",
+        "karakter": "Ontzagwekkend",
+        "toelichting": "Verwoordt de kracht van Gods spreken, wat centraal staat in de lezingen van deze zondag.",
+        "suggestie_gebruik": "Antwoordlied na Psalm 29",
+        "eerste_regel": "Als God zijn stem doet horen in Israël,"
+      },
+      {
+        "nummer": "432",
+        "titel": "O laat Gods Zoon je thans omhullen",
+        "type_match": "Emotioneel",
+        "karakter": "Troostend",
+        "toelichting": "Biedt geestelijke warmte en geborgenheid, zeer passend bij de 'extreem moeilijke winter' en maatschappelijke druk.",
+        "suggestie_gebruik": "Lied voor de voorbeden",
+        "eerste_regel": "O laat Gods Zoon je thans omhullen"
+      },
+      {
+        "nummer": "201",
+        "titel": "U zond uw Zoon",
+        "type_match": "Thematisch",
+        "karakter": "Dankbaar",
+        "toelichting": "Focus op de zending van Jezus naar de wereld, het hart van Epifanie.",
+        "suggestie_gebruik": "Dankzegging",
+        "eerste_regel": "U zond uw Zoon, onschuldig, rein."
+      },
+      {
+        "nummer": "355",
+        "titel": "God heeft mij zijn Zoon gegeven",
+        "type_match": "Conceptueel",
+        "karakter": "Zeker",
+        "toelichting": "Benadrukt de persoonlijke toe-eigening van het heil, passend bij de belevingswereld van de hoorders.",
+        "suggestie_gebruik": "Geloofsbelijdenis",
+        "eerste_regel": "God heeft mij zijn Zoon gegeven,"
+      },
+      {
+        "nummer": "660",
+        "titel": "Vader, Zoon en Geest",
+        "type_match": "Thematisch",
+        "karakter": "Trinitarisch",
+        "toelichting": "Bij de doop van Jezus zijn de drie personen van de Drie-eenheid manifest aanwezig.",
+        "suggestie_gebruik": "Slotlied of Zegenlied",
+        "eerste_regel": "Vader, Zoon en Geest, ik prijs U"
+      },
+      {
+        "nummer": "581",
+        "titel": "Geprezen zij de Here",
+        "type_match": "Thematisch",
+        "karakter": "Lofprijzend",
+        "toelichting": "Algemeen loflied dat de grootheid van God bezingt, passend bij de openbaring van zijn macht.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Want het geknakte riet"
+      },
+      {
+        "nummer": "169",
+        "titel": "Daar juicht een toon, daar klinkt een stem",
+        "type_match": "Verrassend",
+        "karakter": "Triomfantelijk",
+        "toelichting": "Hoewel vaak met Pasen geassocieerd, resoneert de 'stem' hier met de hemelse stem bij de Jordaan.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Daar juicht een toon, daar klinkt een stem,"
+      },
+      {
+        "nummer": "328a",
+        "titel": "Uit liefde gaf God zijn eigen Zoon,",
+        "type_match": "Thematisch",
+        "karakter": "Ingetogen lof",
+        "toelichting": "Verwoordt de kern van het evangelie: de gave van de Zoon.",
+        "suggestie_gebruik": "Avondmaalslied of meditatief moment",
+        "eerste_regel": "Uit liefde gaf God zijn eigen Zoon,"
+      },
+      {
+        "nummer": "175",
+        "titel": "Getsémane / De Vader die de Zoon een beker reikt",
+        "type_match": "Conceptueel",
+        "karakter": "Schurend/Diepgaand",
+        "toelichting": "Legt de verbinding tussen de doop (het begin) en het lijden (het doel van de Knecht uit Jesaja 42).",
+        "suggestie_gebruik": "Overgang naar de lijdensweken",
+        "eerste_regel": "De Vader die de Zoon een beker reikt,"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "113",
+        "titel": "Hier is Hij, de mens, de Zoon van God",
+        "type_match": "Schriftlezing",
+        "karakter": "Aanbiddend",
+        "toelichting": "Een directe presentatie van Jezus als de Zoon van God, zoals geopenbaard bij de doop.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Hier is Hij, de mens, de Zoon van God."
+      },
+      {
+        "nummer": "139",
+        "titel": "Kom, heilige Geest, Gij vogel Gods",
+        "type_match": "Thematisch",
+        "karakter": "Smeekbede",
+        "toelichting": "Verwijst naar de Geest die als een duif neerdaalde op Jezus bij zijn doop.",
+        "suggestie_gebruik": "Gebed om de Heilige Geest",
+        "eerste_regel": "Kom, Heil’ge Geest, Gij vogel Gods,"
+      },
+      {
+        "nummer": "343",
+        "titel": "Vader, Zoon en Geest, ik prijs U",
+        "type_match": "Thematisch",
+        "karakter": "Eenvoudig/Direct",
+        "toelichting": "Eenvoudige lofprijzing van de Drie-eenheid, zeer geschikt voor de jonge gezinnen in Park Triangel.",
+        "suggestie_gebruik": "Lied met de kinderen",
+        "eerste_regel": "Vader, Zoon en Geest, ik prijs U"
+      },
+      {
+        "nummer": "40",
+        "titel": "Zingt, zingt een nieuw gezang de HEERE (Ps.(96)",
+        "type_match": "Thematisch",
+        "karakter": "Enthousiast",
+        "toelichting": "Roep om een nieuw lied voor de nieuwe openbaring van God in Christus.",
+        "suggestie_gebruik": "Intochtlied",
+        "eerste_regel": "Zingt, zingt een nieuw gezang de HEERE,"
+      },
+      {
+        "nummer": "246",
+        "titel": "Maak mij rein voor U",
+        "type_match": "Emotioneel",
+        "karakter": "Ootmoedig",
+        "toelichting": "Verbindt de reiniging van de doop met de persoonlijke behoefte aan heiliging.",
+        "suggestie_gebruik": "Kyrie-moment",
+        "eerste_regel": "Maak mij rein voor U"
+      },
+      {
+        "nummer": "305",
+        "titel": "Geprezen zij de Here",
+        "type_match": "Thematisch",
+        "karakter": "Doxologie",
+        "toelichting": "Klassieke lofprijzing die past bij de plechtige sfeer van de Epifanie.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Geprezen zij de Here."
+      },
+      {
+        "nummer": "110",
+        "titel": "De Vader die de Zoon een beker reikt",
+        "type_match": "Conceptueel",
+        "karakter": "Ernstig",
+        "toelichting": "Reflecteert op de zending van de Zoon door de Vader, een thema dat in de dooptekst doorklinkt.",
+        "suggestie_gebruik": "Meditatief lied",
+        "eerste_regel": "De Vader die de Zoon een beker reikt,"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "391",
+        "titel": "Ik ben gedoopt",
+        "type_match": "Contextueel",
+        "karakter": "Belijdend",
+        "toelichting": "Sluit naadloos aan bij de Waddinxveense verbondscultuur; de doop van Christus als fundament voor de eigen doop.",
+        "suggestie_gebruik": "Antwoordlied na de doopgedachtenis",
+        "eerste_regel": "Ik ben gedoopt,"
+      },
+      {
+        "nummer": "69",
+        "titel": "De Geest des Heren die het leven",
+        "type_match": "Thematisch",
+        "karakter": "Levendig",
+        "toelichting": "Bezingt de rol van de Geest in de schepping en herschepping, passend bij Jesaja 42.",
+        "suggestie_gebruik": "Lied na de eerste lezing",
+        "eerste_regel": "De Geest des Heren die het leven"
+      },
+      {
+        "nummer": "192",
+        "titel": "Geest van hierboven",
+        "type_match": "Emotioneel",
+        "karakter": "Ingetogen gebed",
+        "toelichting": "Een klassiek gebed om de Geest, essentieel voor een gemeente die vasthoudt aan de noodzaak van wedergeboorte.",
+        "suggestie_gebruik": "Gebed voor de opening van het Woord",
+        "eerste_regel": "Geest van hierboven,"
+      },
+      {
+        "nummer": "25",
+        "titel": "O volk, verdwaald, verloren",
+        "type_match": "Contextueel",
+        "karakter": "Schurend/Hoopvol",
+        "toelichting": "Verbindt de nood van de wereld (oorlog, kou) met de komst van de Knecht die het geknakte riet niet verbreekt.",
+        "suggestie_gebruik": "Kyrie-lied",
+        "eerste_regel": "O volk, verdwaald, verloren,"
+      },
+      {
+        "nummer": "196",
+        "titel": "Heilige Geest, Gij hemelhoge",
+        "type_match": "Thematisch",
+        "karakter": "Verheven",
+        "toelichting": "Aanroeping van de Geest die op Jezus neerdaalde.",
+        "suggestie_gebruik": "Lied voor de dienst",
+        "eerste_regel": "Heilige Geest, Gij hemelhoge,"
+      },
+      {
+        "nummer": "199",
+        "titel": "Kom, Heilige Geest, Gij vogel Gods",
+        "type_match": "Thematisch",
+        "karakter": "Beeldend",
+        "toelichting": "Gebruikt de metafoor van de vogel/duif uit de evangelielezing.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Kom, Heil’ge Geest, Gij vogel Gods,"
+      },
+      {
+        "nummer": "201",
+        "titel": "Kom Schepper, Geest, daal tot ons neer",
+        "type_match": "Thematisch",
+        "karakter": "Klassiek/Plechtig",
+        "toelichting": "De Veni Creator Spiritus, passend bij de bevestiging van Jezus' ambt bij de doop.",
+        "suggestie_gebruik": "Lied na de preek",
+        "eerste_regel": "Kom Schepper, Geest, daal tot ons neer,"
+      },
+      {
+        "nummer": "204",
+        "titel": "O, Schepper, Geest, woon in uw kerk",
+        "type_match": "Thematisch",
+        "karakter": "Ecclesiaal",
+        "toelichting": "Bede om de aanwezigheid van de Geest in de lokale geloofsgemeenschap.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "O, Schepper, Geest, woon in uw kerk,"
+      },
+      {
+        "nummer": "385",
+        "titel": "Heilige Geest, die kwam van boven",
+        "type_match": "Thematisch",
+        "karakter": "Getuigend",
+        "toelichting": "Focus op de neerdaling van de Geest.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Heil’ge Geest, die kwam van boven"
+      },
+      {
+        "nummer": "413",
+        "titel": "Wil ons door Woord en Geest regeren",
+        "type_match": "Conceptueel",
+        "karakter": "Onderwijzend",
+        "toelichting": "Vraagt om de leiding van God, passend bij de roeping van de Knecht om recht te brengen.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Wil ons door Woord en Geest regeren,"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "29",
+        "titel": "Hemelingen, buigt u neer",
+        "type_match": "Schriftlezing",
+        "karakter": "Majestueus",
+        "toelichting": "De psalm van de zondag; bezingt de stem van de Heer boven de wateren, wat direct resoneert met de stem bij de Jordaan.",
+        "suggestie_gebruik": "Psalm na de lezingen",
+        "eerste_regel": "Hemelingen, buig u neer,"
+      },
+      {
+        "nummer": "104",
+        "titel": "Mijn ziel, verheerlijk God om zijne macht",
+        "type_match": "Thematisch",
+        "karakter": "Loflied op de schepping",
+        "toelichting": "Bezingt Gods macht over de wateren en de Geest die leven geeft, passend bij de poldercontext van Waddinxveen.",
+        "suggestie_gebruik": "Loflied",
+        "eerste_regel": "Mijn ziel, verheerlijk God om zijne macht."
+      }
+    ]
+  },
   "08c_commentaries": {
     "exegese_eerste_lezing": {
       "schriftgedeelte": "Jesaja 42:1-7",

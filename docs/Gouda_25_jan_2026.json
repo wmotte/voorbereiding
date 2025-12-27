@@ -1365,6 +1365,212 @@
       ]
     }
   },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 58,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de klassieke psalmberijmingen (Psalm 27) en thematische liederen over licht en navolging. Er is een goede verdeling tussen de tekstgetrouwe weergave van Jesaja 9 in Weerklank en de meer belevingsgerichte liederen in Hemelhoog en Op Toonhoogte.",
+      "contextuele_reflectie": "Het thema 'Licht in de duisternis' resoneert krachtig met de humanitaire nood in Gaza (winterstormen). Liederen als 'Zoekend naar licht hier in het duister' verbinden de bijbelse belofte direct met de actualiteit. De roeping van de discipelen wordt vertaald naar de lokale context van de Pauluskerk als 'huiskamer van de wijk', waar navolging concreet wordt in gastvrijheid en eenheid."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "27",
+        "titel": "Mijn licht, mijn heil is Hij, mijn God en Here",
+        "type_match": "Schriftlezing",
+        "karakter": "Vertrouwend en krachtig",
+        "toelichting": "Directe berijming van Psalm 27, de voorgeschreven psalm voor deze zondag.",
+        "suggestie_gebruik": "Intochtslied",
+        "eerste_regel": "Mijn licht, mijn heil is Hij, mijn God en Here!"
+      },
+      {
+        "nummer": "4b",
+        "titel": "Zegen ons met het licht van uw ogen / In vrede leg ik mij neer",
+        "type_match": "Contextueel",
+        "karakter": "Verstild gebed",
+        "toelichting": "Verbindt de lichtsymboliek met de roep om vrede, passend bij de actualiteit in oorlogsgebieden.",
+        "suggestie_gebruik": "Kyrie-gebed of avondgebed",
+        "eerste_regel": "a:"
+      },
+      {
+        "nummer": "832",
+        "titel": "Geroepen om op weg te gaan",
+        "type_match": "Thematisch",
+        "karakter": "Actief en hoopvol",
+        "toelichting": "Sluit aan bij de roeping van de discipelen in Matteüs 4 en de zending van de gemeente.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Geroepen om op weg te gaan,"
+      },
+      {
+        "nummer": "975",
+        "titel": "Jezus roept hier mensen samen",
+        "type_match": "Conceptueel",
+        "karakter": "Gemeenschapsvormend",
+        "toelichting": "Directe link met de oproep tot eenheid uit 1 Korintiërs 1.",
+        "suggestie_gebruik": "Lied na de epistellezing",
+        "eerste_regel": "Jezus roept hier mensen samen"
+      },
+      {
+        "nummer": "1005",
+        "titel": "Zoekend naar licht hier in het duister",
+        "type_match": "Emotioneel",
+        "karakter": "Schurend en verlangend",
+        "toelichting": "Verwoordt de spanning tussen de belofte van licht en de duisternis van de wereld (Gaza context).",
+        "suggestie_gebruik": "Gebedslied",
+        "eerste_regel": "1_EN:"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "143",
+        "titel": "Lied van het Licht",
+        "type_match": "Seizoen",
+        "karakter": "Lofprijzend",
+        "toelichting": "Viert de verschijning van het licht in de Epifaniëntijd.",
+        "suggestie_gebruik": "Gloria-lied",
+        "eerste_regel": "Mensen kijken in het donker"
+      },
+      {
+        "nummer": "188",
+        "titel": "Jezus is ons licht en leven",
+        "type_match": "Thematisch",
+        "karakter": "Blijmoedig",
+        "toelichting": "Centrale belijdenis van Jezus als het licht dat in de duisternis schijnt (Jesaja 9).",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Jezus is ons licht en leven!"
+      },
+      {
+        "nummer": "305",
+        "titel": "Ik volg de Heer",
+        "type_match": "Schriftlezing",
+        "karakter": "Toegewijd",
+        "toelichting": "Persoonlijke reflectie op de roeping van de eerste discipelen in Matteüs 4.",
+        "suggestie_gebruik": "Na de evangelielezing",
+        "eerste_regel": "Ik volg de Heer,"
+      },
+      {
+        "nummer": "386",
+        "titel": "Wil je opstaan en Mij volgen",
+        "type_match": "Thematisch",
+        "karakter": "Uitdagend",
+        "toelichting": "Stelt de vraag van Jezus aan de vissers direct aan de hoorder van nu.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Wil je opstaan en Mij volgen"
+      },
+      {
+        "nummer": "649",
+        "titel": "Licht van de wereld",
+        "type_match": "Verrassend",
+        "karakter": "Aanbiddend",
+        "toelichting": "Bekend aanbiddingslied dat de brug slaat naar jongere generaties in de Pauluskerk.",
+        "suggestie_gebruik": "Tijdens de collecte of communie",
+        "eerste_regel": "Licht van de wereld,"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "11",
+        "titel": "Mijn licht, mijn heil is Hij, mijn God en Here",
+        "type_match": "Schriftlezing",
+        "karakter": "Statig",
+        "toelichting": "Berijming van Psalm 27, passend bij de gereformeerde traditie van de gemeente.",
+        "suggestie_gebruik": "Openingslied",
+        "eerste_regel": "Mijn licht, mijn heil is Hij, mijn God en HERE!"
+      },
+      {
+        "nummer": "76",
+        "titel": "Daar is uit 's werelds duist're wolken",
+        "type_match": "Schriftlezing",
+        "karakter": "Hymnisch",
+        "toelichting": "Verwijst expliciet naar de titels uit Jesaja 9:6 (Vredevorst, Raadsman).",
+        "suggestie_gebruik": "Lied na de eerste lezing",
+        "eerste_regel": "Daar is uit ’s werelds duist’re wolken"
+      },
+      {
+        "nummer": "95",
+        "titel": "Nu daagt het in het oosten",
+        "type_match": "Seizoen",
+        "karakter": "Verwachtingsvol",
+        "toelichting": "Klassiek Epifanie-lied dat de schaduw van de dood (Matteüs 4:16) benoemt.",
+        "suggestie_gebruik": "Zondagslied",
+        "eerste_regel": "Nu daagt het in het oosten,"
+      },
+      {
+        "nummer": "232",
+        "titel": "Jezus die langs het water liep",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend",
+        "toelichting": "Dicht op de tekst van Matteüs 4:18-22 over de roeping bij het meer.",
+        "suggestie_gebruik": "Kinderlied of schriftlied",
+        "eerste_regel": "Jezus die langs het water liep"
+      },
+      {
+        "nummer": "238",
+        "titel": "Zoek eerst het koninkrijk van God",
+        "type_match": "Conceptueel",
+        "karakter": "Eenvoudig",
+        "toelichting": "Onderstreept de prioriteit van het discipelschap zoals verwoord in het evangelie.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Zoekt eerst het koninkrijk van God"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "18",
+        "titel": "Er is uit 's werelds duistere wolken",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtig",
+        "toelichting": "Zeer volledige verwerking van de profetie uit Jesaja 9 over het licht en de Vredevorst.",
+        "suggestie_gebruik": "Lied na de profetie",
+        "eerste_regel": "Er is uit ’s werelds duistere wolken"
+      },
+      {
+        "nummer": "41",
+        "titel": "Jezus die langs het water liep",
+        "type_match": "Schriftlezing",
+        "karakter": "Didactisch",
+        "toelichting": "Verhalend lied over de roeping van de discipelen, ideaal voor de catechetische component.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Jezus die langs het water liep"
+      },
+      {
+        "nummer": "73",
+        "titel": "Bewaar de eenheid van Gods Geest",
+        "type_match": "Thematisch",
+        "karakter": "Vermanend/Bemoedigend",
+        "toelichting": "Directe aansluiting bij de epistellezing (1 Korintiërs 1) over het voorkomen van verdeeldheid.",
+        "suggestie_gebruik": "Lied na de epistellezing",
+        "eerste_regel": "Bewaar de eenheid van Gods Geest,"
+      },
+      {
+        "nummer": "107",
+        "titel": "Het volk dat wandelt in het duister",
+        "type_match": "Schriftlezing",
+        "karakter": "Plechtig",
+        "toelichting": "Bijna letterlijke tekstzetting van Jesaja 9:1-6.",
+        "suggestie_gebruik": "Gradualelied",
+        "eerste_regel": "Het volk dat wandelt in het duister"
+      },
+      {
+        "nummer": "111",
+        "titel": "Nu daagt het in het oosten",
+        "type_match": "Seizoen",
+        "karakter": "Lichtvoetig",
+        "toelichting": "Viert de doorbraak van het licht in de wereldnacht.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Nu daagt het in het oosten,"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "27",
+        "titel": "De Here is mijn licht, wat kan mij deren",
+        "type_match": "Schriftlezing",
+        "karakter": "Zelfverzekerd",
+        "toelichting": "De klassieke berijming van de psalm van de dag.",
+        "suggestie_gebruik": "Psalm na de lezingen",
+        "eerste_regel": "De HERE is mijn licht, wat kan mij deren?"
+      }
+    ]
+  },
   "08c_commentaries": {
     "exegese_eerste_lezing": {
       "schriftgedeelte": "Jesaja 8:23b-9:3",

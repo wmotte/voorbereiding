@@ -1390,6 +1390,212 @@
       ]
     }
   },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 46,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de kosmische proloog van Johannes (het Woord) en de jubelende profetie van Jesaja. Er is een rijke variatie tussen klassieke kersthymnen en liederen die focussen op licht-metaforiek, wat essentieel is voor de visuele oriëntatie van de doelgroep.",
+      "contextuele_reflectie": "Voor de bewoners van De Gelderhorst is de overgang van 'horen' naar 'zien' (Jesaja 52:10) theologisch cruciaal. De liederen verbinden de vrede van Bethlehem met de schrijnende nood in Gaza, waarbij het 'Woord' niet slechts een klank is, maar een tastbare, visuele aanwezigheid in een gebroken wereld."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "98d",
+        "titel": "Alle einden der aarde aanschouwen het heil",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijk en proclamatief",
+        "toelichting": "Directe tekst uit de antwoordpsalm en Jesaja 52:10. Het 'aanschouwen' sluit naadloos aan bij de visuele geloofsbeleving van doven.",
+        "suggestie_gebruik": "Antwoordlied op de eerste lezing",
+        "eerste_regel": "Alle einden der aarde aanschouwen het heil van Hem, onze God."
+      },
+      {
+        "nummer": "98",
+        "titel": "Zing een nieuw lied voor God de Here",
+        "type_match": "Schriftlezing",
+        "karakter": "Uitbundig",
+        "toelichting": "De klassieke berijming van Psalm 98, de vaste psalm voor de dagmis van Kerst.",
+        "suggestie_gebruik": "Intochtslied",
+        "eerste_regel": "Zing een nieuw lied voor God de Here,"
+      },
+      {
+        "nummer": "986",
+        "titel": "De oorsprong van leven en licht",
+        "type_match": "Conceptueel",
+        "karakter": "Meditatief en diepzinnig",
+        "toelichting": "Verbindt de schepping met de incarnatie uit Johannes 1. De focus op 'licht' is zeer geschikt voor een visueel ingestelde gemeente.",
+        "suggestie_gebruik": "Lied na de verkondiging",
+        "eerste_regel": "De oorsprong van leven en licht"
+      },
+      {
+        "nummer": "981",
+        "titel": "Zolang er mensen zijn op aarde",
+        "type_match": "Thematisch",
+        "karakter": "Vertrouwend",
+        "toelichting": "Reflecteert op de menselijke conditie waarin God zijn Woord spreekt. Past bij de maatschappelijke context van hoop in crisistijd.",
+        "suggestie_gebruik": "Gebedsbevestiging",
+        "eerste_regel": "Zolang er mensen zijn op aarde,"
+      },
+      {
+        "nummer": "98b",
+        "titel": "Alles op aarde, zing Gods eer",
+        "type_match": "Thematisch",
+        "karakter": "Lofprijzend",
+        "toelichting": "Een brede lofzang die de kosmische vreugde van de geboorte van Christus verwoordt.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Alles op aarde, zing Gods eer!"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "143",
+        "titel": "Lied van het Licht",
+        "type_match": "Conceptueel",
+        "karakter": "Helder en hoopvol",
+        "toelichting": "Sluit aan bij Johannes 1:5 ('Het licht schijnt in de duisternis'). Voor doven is licht de primaire metafoor voor Gods aanwezigheid.",
+        "suggestie_gebruik": "Moment van aansteken van de kaarsen / Schriftlied",
+        "eerste_regel": "Mensen kijken in het donker"
+      },
+      {
+        "nummer": "138",
+        "titel": "Hoor, de eng'len zingen d'eer",
+        "type_match": "Schriftlezing",
+        "karakter": "Majestueus",
+        "toelichting": "Verwijst naar Hebreeën 1:6 waar de engelen de Eerstgeborene aanbidden.",
+        "suggestie_gebruik": "Gloria-lied",
+        "eerste_regel": "Hoor de eng’len zingen d’eer"
+      },
+      {
+        "nummer": "123",
+        "titel": "De minsten van de mensen",
+        "type_match": "Contextueel",
+        "karakter": "Solidair",
+        "toelichting": "Legt de verbinding tussen de kribbe en de humanitaire crisis (Gaza). God kiest de zijde van de kwetsbaren.",
+        "suggestie_gebruik": "Collectelied / Gebed om vrede",
+        "eerste_regel": "Wij zingen van die wonderlijke nacht."
+      },
+      {
+        "nummer": "142",
+        "titel": "Komt allen tezamen",
+        "type_match": "Thematisch",
+        "karakter": "Nodigend",
+        "toelichting": "De klassieke oproep tot aanbidding ('Adeste Fideles'), essentieel voor de kerstvreugde.",
+        "suggestie_gebruik": "Intochtslied",
+        "eerste_regel": "Komt allen tezamen,"
+      },
+      {
+        "nummer": "157",
+        "titel": "Wij trekken in een lange stoet",
+        "type_match": "Verrassend",
+        "karakter": "Processioneel",
+        "toelichting": "Het beeld van een 'stoet' is visueel sterk en benadrukt de gemeenschapszin in De Gelderhorst.",
+        "suggestie_gebruik": "Slotlied of tijdens de communie/avondmaal",
+        "eerste_regel": "Wij trekken in een lange stoet"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "228",
+        "titel": "God heeft het eerste woord",
+        "type_match": "Schriftlezing",
+        "karakter": "Theologisch krachtig",
+        "toelichting": "Directe link met Johannes 1 en Hebreeën 1. God die spreekt door de Zoon als het 'laatste woord'.",
+        "suggestie_gebruik": "Lied voor de Schriftlezingen",
+        "eerste_regel": "God heeft het eerste woord."
+      },
+      {
+        "nummer": "166",
+        "titel": "Vrede zij u",
+        "type_match": "Emotioneel",
+        "karakter": "Verstild",
+        "toelichting": "Een noodzakelijke bede om vrede, refererend aan de actualiteit in het Midden-Oosten.",
+        "suggestie_gebruik": "Vredeswens",
+        "eerste_regel": "Vrede zij u, vrede zij u,"
+      },
+      {
+        "nummer": "95",
+        "titel": "Nu daagt het in het oosten",
+        "type_match": "Thematisch",
+        "karakter": "Verwachtingsvol",
+        "toelichting": "Het aanbreken van het licht als beeld voor de komst van Christus.",
+        "suggestie_gebruik": "Opening van de dienst",
+        "eerste_regel": "Nu daagt het in het oosten,"
+      },
+      {
+        "nummer": "89",
+        "titel": "Komt allen tezamen",
+        "type_match": "Thematisch",
+        "karakter": "Feestelijk",
+        "toelichting": "Bekende kersthymne die generaties verbindt, belangrijk voor de oudere doelgroep.",
+        "suggestie_gebruik": "Loflied",
+        "eerste_regel": "Komt allen tezamen,"
+      },
+      {
+        "nummer": "82",
+        "titel": "Hoor, de eng'len zingen de eer",
+        "type_match": "Schriftlezing",
+        "karakter": "Triomfantelijk",
+        "toelichting": "Sluit aan bij de engelenzang uit de epistellezing (Hebreeën 1).",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Hoor, de eng’len zingen de eer"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "53",
+        "titel": "In den beginne was het Woord, God die",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend",
+        "toelichting": "Een bijna letterlijke weergave van de proloog van Johannes (evangelielezing).",
+        "suggestie_gebruik": "Schriftlied na het Evangelie",
+        "eerste_regel": "In den beginne was het Woord."
+      },
+      {
+        "nummer": "27",
+        "titel": "Hoe lieflijk, hoe schoon zijn de schreden",
+        "type_match": "Schriftlezing",
+        "karakter": "Lyrisch",
+        "toelichting": "Berijming van Jesaja 52:7. De 'vreugdebode' die vrede aankondigt.",
+        "suggestie_gebruik": "Lied na de eerste lezing",
+        "eerste_regel": "Hoe lieflijk, hoe schoon zijn de schreden"
+      },
+      {
+        "nummer": "125",
+        "titel": "Ik mag hier aan uw kribbe staan",
+        "type_match": "Emotioneel",
+        "karakter": "Devoot",
+        "toelichting": "Persoonlijke toe-eigening van het kerstwonder, passend bij de geleefde praktijk van vroomheid.",
+        "suggestie_gebruik": "Meditatief moment",
+        "eerste_regel": "Ik mag hier aan uw kribbe staan,"
+      },
+      {
+        "nummer": "115",
+        "titel": "Laat ieder het horen",
+        "type_match": "Thematisch",
+        "karakter": "Aansporend",
+        "toelichting": "De opdracht om de boodschap van vrede te delen, ondanks communicatiebarrières.",
+        "suggestie_gebruik": "Zending en zegen",
+        "eerste_regel": "Laat ieder het horen,"
+      },
+      {
+        "nummer": "123",
+        "titel": "Hef aan, hef aan een luide zang",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "Een oproep tot universele lofzang die past bij de vreugde van de dagmis.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Hef aan, hef aan een luide zang,"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "98",
+        "titel": "Zing een nieuw lied voor God de Here",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassiek",
+        "toelichting": "De Geneefse psalmzetting van Psalm 98, herkenbaar voor de protestantse traditie binnen de oecumene.",
+        "suggestie_gebruik": "Psalm van de dag",
+        "eerste_regel": "Zing een nieuw lied voor God de HERE,"
+      }
+    ]
+  },
   "08c_commentaries": {
     "exegese_eerste_lezing": {
       "schriftgedeelte": "Jesaja 52:7-10",

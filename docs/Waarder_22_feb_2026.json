@@ -1463,6 +1463,239 @@
       ]
     }
   },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 49,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de boetepsalmen (Psalm 51), de scheppingsthematiek van Genesis en de woestijnreis van Matteüs. Er is een goede verdeling tussen klassieke psalmberijmingen voor de ingetogen momenten en meer eigentijdse liederen voor de thematische verdieping.",
+      "contextuele_reflectie": "Voor de gemeente in Waarder sluiten de scheppingsliederen aan bij de agrarische wortels, terwijl de liederen over genade en inkeer de gereformeerde identiteit bevestigen. De vraag 'Mens waar ben je' (LB 857) en de roep om vrede (WK 429) verbinden de Schriftlezing direct met de persoonlijke verantwoordelijkheid en de actuele wereldonrust."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "51",
+        "titel": "Ontferm u God, ontferm u, hoor mijn klacht",
+        "type_match": "Schriftlezing",
+        "karakter": "Ootmoedig en smekend",
+        "toelichting": "Directe berijming van Psalm 51, passend bij de schuldbelijdenis en de lezing over de zondeval.",
+        "suggestie_gebruik": "Kyrie-moment of na de wet",
+        "eerste_regel": "Ontferm u God, ontferm u, hoor mijn klacht,"
+      },
+      {
+        "nummer": "857",
+        "titel": "Jij zoekt mij: mens waar ben je",
+        "type_match": "Schriftlezing",
+        "karakter": "Confronterend en zoekend",
+        "toelichting": "Verwijst direct naar Genesis 3 waar God de mens zoekt na de val. Zeer geschikt voor de 1e zondag van de veertigdagentijd.",
+        "suggestie_gebruik": "Antwoordlied na de eerste lezing",
+        "eerste_regel": "Jij zoekt mij: mens waar ben je?"
+      },
+      {
+        "nummer": "582",
+        "titel": "Door wat voor grote eenzaamheden",
+        "type_match": "Thematisch",
+        "karakter": "Verstild en meditatief",
+        "toelichting": "Sluit aan bij de eenzaamheid van Jezus in de woestijn (Matteüs 4) en de menselijke weg door de tijd.",
+        "suggestie_gebruik": "Schriftlied bij het Evangelie",
+        "eerste_regel": "Door wat voor grote eenzaamheden"
+      },
+      {
+        "nummer": "860",
+        "titel": "Gij die ons hebt geschapen",
+        "type_match": "Schriftlezing",
+        "karakter": "Lofprijzend maar bewust",
+        "toelichting": "Verbindt de schepping (Genesis 2) met de afhankelijkheid van de Schepper.",
+        "suggestie_gebruik": "Ingangslied",
+        "eerste_regel": "Gij die ons hebt geschapen"
+      },
+      {
+        "nummer": "51a",
+        "titel": "God, herschep mijn hart",
+        "type_match": "Schriftlezing",
+        "karakter": "Ingetogen gebed",
+        "toelichting": "Korte kernachtige zang uit Psalm 51, gericht op innerlijke vernieuwing.",
+        "suggestie_gebruik": "Gebedslied",
+        "eerste_regel": "God, herschep mijn hart, herschep mijn hart,"
+      },
+      {
+        "nummer": "991",
+        "titel": "De eersten zijn de laatsten",
+        "type_match": "Conceptueel",
+        "karakter": "Strijdbaar en omkerend",
+        "toelichting": "Reflecteert op de waarden van het Koninkrijk die Jezus verdedigt tegenover de verleidingen van de duivel.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "De eersten zijn de laatsten,"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "43",
+        "titel": "God onze Heer zal ons uit de woestijn",
+        "type_match": "Thematisch",
+        "karakter": "Hoopvol",
+        "toelichting": "Verbindt de woestijnervaring van Matteüs 4 met de belofte van Gods leiding.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "God onze Heer"
+      },
+      {
+        "nummer": "183",
+        "titel": "Hoe kom ik van zonde vrij?",
+        "type_match": "Conceptueel",
+        "karakter": "Vragend en belijdend",
+        "toelichting": "Sluit aan bij de Romeinen-lezing over de zonde van Adam en de bevrijding door Christus.",
+        "suggestie_gebruik": "Na de preek",
+        "eerste_regel": "Hoe kom ik van zonde vrij?"
+      },
+      {
+        "nummer": "73",
+        "titel": "De woestijn zal bloeien als een roos",
+        "type_match": "Thematisch",
+        "karakter": "Verwachtingsvol",
+        "toelichting": "Een hoopvol perspectief op de veertigdagentijd; de woestijn is niet het eindstation.",
+        "suggestie_gebruik": "Zondagslied",
+        "eerste_regel": "Sta op, Sion en juich,"
+      },
+      {
+        "nummer": "297",
+        "titel": "Genade zo groot",
+        "type_match": "Conceptueel",
+        "karakter": "Dankbaar",
+        "toelichting": "Centraal thema in Romeinen 5: de overvloeiende genade tegenover de zonde.",
+        "suggestie_gebruik": "Dankzegging",
+        "eerste_regel": "Genade zo groot,"
+      },
+      {
+        "nummer": "88",
+        "titel": "Zoek eerst het koninkrijk van God",
+        "type_match": "Schriftlezing",
+        "karakter": "Eenvoudig en vroom",
+        "toelichting": "Directe link met Jezus' antwoord aan de verzoeker: de prioriteit van Gods koninkrijk.",
+        "suggestie_gebruik": "Kinderlied of tussenzang",
+        "eerste_regel": "Zoek eerst het koninkrijk van God"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "184",
+        "titel": "God die naar zijn wezen schiep",
+        "type_match": "Schriftlezing",
+        "karakter": "Eerbiedig",
+        "toelichting": "Behandelt de schepping van de mens (Genesis 2) en de roeping om naar Gods beeld te leven.",
+        "suggestie_gebruik": "Na de eerste lezing",
+        "eerste_regel": "God die naar zijn wezen schiep,"
+      },
+      {
+        "nummer": "19",
+        "titel": "Ontferm U God, ontferm U, hoor mijn klacht",
+        "type_match": "Schriftlezing",
+        "karakter": "Boetvaardig",
+        "toelichting": "Klassieke Psalm 51 verwoording, passend bij de sfeer van Invocabit.",
+        "suggestie_gebruik": "Kyrie",
+        "eerste_regel": "Ontferm U God, ontferm U, hoor mijn klacht,"
+      },
+      {
+        "nummer": "278",
+        "titel": "Ik kniel neer en belijd",
+        "type_match": "Emotioneel",
+        "karakter": "Persoonlijk en overgegeven",
+        "toelichting": "Past bij de 'inkeer' stemming van de zondag en de erkenning van schuld.",
+        "suggestie_gebruik": "Gebedsmoment",
+        "eerste_regel": "Ik kniel neer en belijd:"
+      },
+      {
+        "nummer": "238",
+        "titel": "Zoek eerst het koninkrijk van God",
+        "type_match": "Schriftlezing",
+        "karakter": "Focusserend",
+        "toelichting": "Herinnert aan de gehoorzaamheid van Christus in de woestijn.",
+        "suggestie_gebruik": "Tussenzang",
+        "eerste_regel": "Zoekt eerst het koninkrijk van God"
+      },
+      {
+        "nummer": "21",
+        "titel": "Wilt U mij nog wel zien",
+        "type_match": "Emotioneel",
+        "karakter": "Kwetsbaar",
+        "toelichting": "De vraag van de mens na de val (Genesis 3) die zich schaamt en verbergt.",
+        "suggestie_gebruik": "Meditatief moment",
+        "eerste_regel": "Wilt U mij nog wel zien? Ik kom bij U:"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "342",
+        "titel": "God heeft Adam diep doen slapen",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend",
+        "toelichting": "Directe weergave van de schepping van de mens uit Genesis 2.",
+        "suggestie_gebruik": "Bij de lezing van Genesis",
+        "eerste_regel": "God heeft Adam diep doen slapen,"
+      },
+      {
+        "nummer": "368",
+        "titel": "Zoals ik leef - van liefde niet vervuld",
+        "type_match": "Conceptueel",
+        "karakter": "Eerlijk en nuchter",
+        "toelichting": "Sluit aan bij de 'niet lullen maar poetsen' mentaliteit van Waarder, maar wijst op de innerlijke tekortkoming.",
+        "suggestie_gebruik": "Schuldbelijdenis",
+        "eerste_regel": "Zoals ik leef – van liefde niet vervuld,"
+      },
+      {
+        "nummer": "429",
+        "titel": "Geef vrede, Heer, geef vrede",
+        "type_match": "Contextueel",
+        "karakter": "Smeekgebed",
+        "toelichting": "Verbindt de liturgische inkeer met de actuele oorlogssituatie in Oekraïne.",
+        "suggestie_gebruik": "Voorbeden",
+        "eerste_regel": "Geef vrede, Heer, geef vrede,"
+      },
+      {
+        "nummer": "61",
+        "titel": "De God die deze wereld schiep",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "Bevestigt Gods soevereiniteit over de schepping, ondanks de gebrokenheid.",
+        "suggestie_gebruik": "Geloofsbelijdenis",
+        "eerste_regel": "De God die deze wereld schiep,"
+      },
+      {
+        "nummer": "136",
+        "titel": "Wees stil en kom wat dichterbij",
+        "type_match": "Verrassend",
+        "karakter": "Uitnodigend",
+        "toelichting": "Nodigt uit tot de stilte die nodig is om de verleidingen te weerstaan, zoals Jezus in de woestijn.",
+        "suggestie_gebruik": "Moment van stilte",
+        "eerste_regel": "Wees stil en kom wat dichterbij"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "51",
+        "titel": "Ontferm U God, ontferm U, hoor mijn klacht",
+        "type_match": "Schriftlezing",
+        "karakter": "Klassiek gereformeerd",
+        "toelichting": "De kernpsalm voor deze zondag, passend bij de lezingen over zonde en genade.",
+        "suggestie_gebruik": "Psalm van de zondag",
+        "eerste_regel": "Ontferm U God, ontferm U, hoor mijn klacht,"
+      },
+      {
+        "nummer": "40",
+        "titel": "Met heel mijn hart heb ik de Heer verwacht",
+        "type_match": "Thematisch",
+        "karakter": "Getuigend",
+        "toelichting": "Over het doen van Gods wil, wat Jezus volmaakt deed in de woestijn.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Met heel mijn hart heb ik de HEER verwacht,"
+      },
+      {
+        "nummer": "51a",
+        "titel": "Wees mij genadig, toon uw goedheid, Heer",
+        "type_match": "Schriftlezing",
+        "karakter": "Smeekbede",
+        "toelichting": "Alternatieve berijming van Psalm 51 voor variatie in de liturgie.",
+        "suggestie_gebruik": "Vesper of avonddienst",
+        "eerste_regel": "Wees mij genadig, toon uw goedheid, Heer."
+      }
+    ]
+  },
   "08c_commentaries": {
     "exegese_eerste_lezing": {
       "schriftgedeelte": "Genesis 2:7-9; 3:1-7",

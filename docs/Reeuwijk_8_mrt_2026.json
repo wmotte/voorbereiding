@@ -1383,6 +1383,230 @@
       ]
     }
   },
+  "08b_liedsuggesties_database": {
+    "analyse": {
+      "aantal_gevonden_totaal": 45,
+      "liturgische_balans": "De selectie biedt een sterke balans tussen de klassieke psalmen (Psalm 95), verhalende liederen over de Jakobsbron (Liedboek 188, Weerklank 41) en meditatieve liederen die aansluiten bij de inkeer van de Veertigdagentijd. Er is een goede verdeling tussen de verschillende bundels, waarbij zowel de oecumenische breedte van PG De Ark als de specifieke thematiek van 'levend water' wordt bediend.",
+      "contextuele_reflectie": "Voor de Reeuwijkse gemeenschap, waar water een dagelijkse realiteit is, verbinden liederen over de 'bron' en de 'rots' de fysieke omgeving met de existentiële dorst uit de Schriftlezingen. De liederen over vrede en Gods Geest sluiten aan bij de actuele onrust in de wereld (Oekraïne) en de behoefte aan een 'vaste rots' in onzekere tijden."
+    },
+    "liedboek_2013": [
+      {
+        "nummer": "188",
+        "titel": "Bij de Jakobsbron",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend en beeldend",
+        "toelichting": "Directe verklanking van het evangelie van de Samaritaanse vrouw (Johannes 4).",
+        "suggestie_gebruik": "Schriftlied na de evangelielezing",
+        "eerste_regel": "Bij de Jakobsbron"
+      },
+      {
+        "nummer": "337",
+        "titel": "Levend water, verfrissend, vrij / Down the mountain the river flows",
+        "type_match": "Thematisch",
+        "karakter": "Stromend en vitaal",
+        "toelichting": "Verbindt het thema van levend water met de vernieuwing door de Geest.",
+        "suggestie_gebruik": "Antwoordlied of na de preek",
+        "eerste_regel": "1_EN:"
+      },
+      {
+        "nummer": "28",
+        "titel": "Ik roep tot U, mijn rots, mijn Here",
+        "type_match": "Schriftlezing",
+        "karakter": "Smeekgebed",
+        "toelichting": "Sluit aan bij de rots in de woestijn (Exodus 17) en de roep om hulp.",
+        "suggestie_gebruik": "Kyrie-moment of gebedslied",
+        "eerste_regel": "Ik roep tot U, mijn rots, mijn Here!"
+      },
+      {
+        "nummer": "895",
+        "titel": "De noche iremos",
+        "type_match": "Emotioneel",
+        "karakter": "Meditatief (Taizé)",
+        "toelichting": "Zoeken naar de bron in de nacht; past bij de sfeer van inkeer en dorst naar God.",
+        "suggestie_gebruik": "Stiltemoment of avondmaalsviering",
+        "eerste_regel": "chant ES:"
+      },
+      {
+        "nummer": "424",
+        "titel": "Verzadigd de honger",
+        "type_match": "Conceptueel",
+        "karakter": "Verstild",
+        "toelichting": "Thematiseert de diepere honger en dorst die alleen door Christus verzadigd wordt.",
+        "suggestie_gebruik": "Tafelgebed of communie",
+        "eerste_regel": "Verzadigd de honger,"
+      },
+      {
+        "nummer": "131",
+        "titel": "O Heer, er is geen trots in mij",
+        "type_match": "Contextueel",
+        "karakter": "Nederig",
+        "toelichting": "Past bij de zondag Oculi (mijn ogen zijn gericht op de Heer) en de houding van de Samaritaanse vrouw.",
+        "suggestie_gebruik": "Inkeermoment",
+        "eerste_regel": "O Heer, er is geen trots in mij,"
+      }
+    ],
+    "hemelhoog": [
+      {
+        "nummer": "343",
+        "titel": "Ik ben",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig getuigenis",
+        "toelichting": "Reflecteert op de 'Ik ben'-woorden van Jezus, die Zichzelf aan de vrouw openbaart.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Wie zal ons voeden, het brood met ons breken?"
+      },
+      {
+        "nummer": "416",
+        "titel": "Jésus le Christ / Jezus, U bent",
+        "type_match": "Emotioneel",
+        "karakter": "Meditatief",
+        "toelichting": "Focus op Jezus als bron van licht en leven, passend bij de oecumenische sfeer van De Ark.",
+        "suggestie_gebruik": "Gebedslied",
+        "eerste_regel": "Jésus le Christ, lumière intérieure,"
+      },
+      {
+        "nummer": "626",
+        "titel": "Aan uw voeten Heer",
+        "type_match": "Conceptueel",
+        "karakter": "Toegewijd",
+        "toelichting": "De houding van de Samaritaanse vrouw die alles achterlaat om naar Jezus te luisteren.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Ja, ik verkies nu om bij U te zijn"
+      },
+      {
+        "nummer": "679",
+        "titel": "Heer, uw licht en uw liefde schijnen",
+        "type_match": "Thematisch",
+        "karakter": "Lofprijzend",
+        "toelichting": "Verbindt de uitgestorte liefde uit Romeinen 5 met het licht van Christus.",
+        "suggestie_gebruik": "Gloria-moment of openingslied",
+        "eerste_regel": "Heer, uw licht en uw liefde schijnen,"
+      },
+      {
+        "nummer": "686",
+        "titel": "Leid mij, Heer, o machtig Heiland",
+        "type_match": "Schriftlezing",
+        "karakter": "Pelgrimslied",
+        "toelichting": "Verwijst naar de tocht door de woestijn en de dorst (Exodus 17).",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Leid mij, Heer, o machtig Heiland"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "16",
+        "titel": "Als een hert dat verlangt naar water",
+        "type_match": "Thematisch",
+        "karakter": "Verlangend",
+        "toelichting": "De klassieke verbeelding van de dorst naar God, passend bij de lezingen.",
+        "suggestie_gebruik": "Intochtslied",
+        "eerste_regel": "Als een hert dat verlangt naar water,"
+      },
+      {
+        "nummer": "200",
+        "titel": "Kom, o bron van zegeningen",
+        "type_match": "Conceptueel",
+        "karakter": "Hymnisch",
+        "toelichting": "God als de bron van alle zegen, een centraal motief in de Johannes-lezing.",
+        "suggestie_gebruik": "Openingslied",
+        "eerste_regel": "Kom, o bron van zegeningen,"
+      },
+      {
+        "nummer": "232",
+        "titel": "Jezus die langs het water liep",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend",
+        "toelichting": "Sluit aan bij de ontmoetingen van Jezus bij het water.",
+        "suggestie_gebruik": "Schriftlied",
+        "eerste_regel": "Jezus die langs het water liep"
+      },
+      {
+        "nummer": "250",
+        "titel": "Vaste rots van mijn behoud",
+        "type_match": "Schriftlezing",
+        "karakter": "Vertrouwend",
+        "toelichting": "Verwijst naar de rots in de woestijn (Exodus 17) als type van Christus.",
+        "suggestie_gebruik": "Antwoordlied",
+        "eerste_regel": "Vaste rots van mijn behoud,"
+      },
+      {
+        "nummer": "327",
+        "titel": "Machtig God, sterke Rots",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "God als onwankelbaar fundament tegenover het wantrouwen van het volk bij Meriba.",
+        "suggestie_gebruik": "Slotlied",
+        "eerste_regel": "Machtig God, sterke Rots,"
+      }
+    ],
+    "weerklank": [
+      {
+        "nummer": "41",
+        "titel": "Jezus die langs het water liep",
+        "type_match": "Schriftlezing",
+        "karakter": "Eenvoudig en helder",
+        "toelichting": "Verklanking van de ontmoeting bij de put.",
+        "suggestie_gebruik": "Kinderlied of schriftlied",
+        "eerste_regel": "Jezus die langs het water liep"
+      },
+      {
+        "nummer": "24",
+        "titel": "Wie mat de wateren in zijn holle hand",
+        "type_match": "Contextueel",
+        "karakter": "Majestueus",
+        "toelichting": "Gods macht over het water; spreekt aan in de waterrijke context van Reeuwijk.",
+        "suggestie_gebruik": "Loflied",
+        "eerste_regel": "Wie mat de waat’ren in zijn holle hand,"
+      },
+      {
+        "nummer": "192",
+        "titel": "Geest van hierboven",
+        "type_match": "Thematisch",
+        "karakter": "Gebed",
+        "toelichting": "De Geest die de liefde van God in onze harten uitstort (Romeinen 5).",
+        "suggestie_gebruik": "Gebed om de verlichting door de Geest",
+        "eerste_regel": "Geest van hierboven,"
+      },
+      {
+        "nummer": "429",
+        "titel": "Geef vrede, Heer, geef vrede",
+        "type_match": "Contextueel",
+        "karakter": "Smeekbede",
+        "toelichting": "Noodzakelijk gebed gezien de actuele wereldgebeurtenissen (Oekraïne).",
+        "suggestie_gebruik": "Voorbeden",
+        "eerste_regel": "Geef vrede, Heer, geef vrede,"
+      },
+      {
+        "nummer": "153",
+        "titel": "Leer mij, o Heer, uw lijden recht betrachten",
+        "type_match": "Seizoen",
+        "karakter": "Ingetogen",
+        "toelichting": "Past bij de Veertigdagentijd en de weg van Jezus naar het kruis.",
+        "suggestie_gebruik": "Lijdenslied",
+        "eerste_regel": "Leer mij, o Heer, uw lijden recht betrachten,"
+      }
+    ],
+    "weerklank_psalmen": [
+      {
+        "nummer": "95",
+        "titel": "Kom, laat ons juichen voor de Heer",
+        "type_match": "Schriftlezing",
+        "karakter": "Oproepend",
+        "toelichting": "De psalm van de dag; waarschuwt tegen de verharding bij Meriba.",
+        "suggestie_gebruik": "Intochtspsalm",
+        "eerste_regel": "Kom, laat ons juichen voor de HEER,"
+      },
+      {
+        "nummer": "81",
+        "titel": "Jubel voor de Heer",
+        "type_match": "Verrassend",
+        "karakter": "Feestelijk",
+        "toelichting": "Verwijst ook naar de bevrijding en het water uit de rots.",
+        "suggestie_gebruik": "Openingspsalm",
+        "eerste_regel": "Jubel voor de Heer, juich in uw gezangen."
+      }
+    ]
+  },
   "08c_commentaries": {
     "exegese_eerste_lezing": {
       "schriftgedeelte": "Exodus 17:3-7",
