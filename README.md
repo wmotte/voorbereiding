@@ -195,7 +195,7 @@ Het project genereert meerdere preekschetsen voor dezelfde zondag, elk vanuit ee
 
 #### Waarom deze Diversiteit?
 
-Zonder deze strategieën zouden alle prompts dezelfde "hoofd"tekst kiezen (vaak de evangelielezing) omdat de exegese en commentaren daar het meest op focussen. Door elke theologische stem zijn eigen criteria te geven, ontstaat er natuurlijke spreiding over de beschikbare lezingen:
+Zonder deze strategieën zouden alle prompts dezelfde kerntekst kiezen (vaak de evangelielezing) omdat de exegese en commentaren daar het meest op focussen. Door elke theologische stem zijn eigen criteria te geven, ontstaat er natuurlijke spreiding over de beschikbare lezingen:
 
 **Voorbeeld:** Voor een zondag met Jesaja 49, Psalm 40, Johannes 1 en 1 Korintiërs 1:
 - **Brueggemann & Zornberg**: Zeer waarschijnlijk Jesaja 49 (OT-profeet)
