@@ -45,8 +45,6 @@ Dit project helpt die valkuil te vermijden door twee werelden te verbinden met b
 
 De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde homiletische en liturgische methodieken. Hieronder volgt een uitleg per onderdeel, in de volgorde waarin ze worden gegenereerd. Voor meer informatie zijn er een aantal achtergrondartikelen beschikbaar in de `misc/` map.
 
-**📄 [Zie het volledige technische overzicht van de information flow](INFORMATION_FLOW.md)** - een gedetailleerde flowchart die laat zien hoe informatie door alle prompts en analyses heen stroomt.
-
 | Nr | Naam | Omschrijving |
 |:---|:---|:---|
 | 00 | **Meta-data** | `00_meta.json`: Centrale opslag van user input en geverifieerd adres. |
@@ -59,8 +57,8 @@ De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde h
 | 07 | **Politieke Oriëntatie** | Stemgedrag en politieke cultuur in de regio. |
 | 07a | **Wetslezing Voorstel** | Voorstel voor Wetslezing (OT), bijbehorende psalm en genade-verkondiging. |
 | 08a | **Exegese** | Tekstkritiek, historische context en theologische lijnen (zoekmodellen Snoek). |
-| 08b | **Liedsuggesties** | Database-analyse (MCP) met liederen uit Liedboek, Weerklank, Op Toonhoogte, Hemelhoog. |
-| 08c | **Commentaren** | Database-analyse (MCP) van professionele exegetische commentaren via Neo4j. |
+| 08b | **Liedsuggesties** | Database-analyse met liederen uit Liedboek, Weerklank, Op Toonhoogte, Hemelhoog. |
+| 08c | **Commentaren** | Database-analyse van professionele exegetische commentaren via database. |
 | 09 | **Kunst & Cultuur** | Beelden, film en muziek bij de lezingen (incl. bronverificatie). |
 | 10 | **Focus & Functie** | De kernboodschap en het beoogde effect van de preek. |
 | 11 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
@@ -84,13 +82,11 @@ De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde h
 
 ### 🔍 Database Grounding: Preventie van Hallucinaties
 
-Een van de grootste uitdagingen bij het gebruik van taalmodellen is het risico op **hallucinaties**: het model verzint feiten, bronnen of citaten die niet bestaan. Om dit te voorkomen gebruikt dit project **database grounding** via het **Model Context Protocol (MCP)**.
-
-**📄 Voor de volledige technische details, zie [INFORMATION_FLOW.md](INFORMATION_FLOW.md) (secties 08b, 08c en 07a).**
+Een van de grootste uitdagingen bij het gebruik van taalmodellen is het risico op **hallucinaties**: het model verzint feiten, bronnen of citaten die niet bestaan. Om dit te voorkomen gebruikt dit project **database grounding**.
 
 #### Hoe werkt Database Grounding?
 
-In plaats van het taalmodel te vragen "geef liederen die passen bij deze preek", wordt het model toegang gegeven tot een **Neo4j-database** met daadwerkelijke data. Het model kan zelf queries uitvoeren en alleen informatie gebruiken die daadwerkelijk in de database staat.
+In plaats van het taalmodel te vragen "geef liederen die passen bij deze preek", wordt het model toegang gegeven tot een **database** met daadwerkelijke data. Het model kan zelf queries uitvoeren en alleen informatie gebruiken die daadwerkelijk in de database staat.
 
 ##### 07a: Wetslezing Verificatie
 *   **Verificatie:** Het voorgestelde psalm-gezang wordt na generatie gecontroleerd in de Weerklank database
