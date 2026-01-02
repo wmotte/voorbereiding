@@ -14,13 +14,11 @@ Dit project combineert **contextanalyse** (hoorders, samenleving) met concrete *
 
 ### 📑 Inhoudsopgave
 1. [Over dit Project](#-over-dit-project)
-2. [Installatie & Setup](#-installatie--setup)
-3. [Bijbelvertalingen (Naardense & NBV21)](#-bijbelvertalingen)
-4. [Stappenplan Gebruik](#-stappenplan-gebruik)
-5. [Overzicht van de Analyses & Methodiek](#-overzicht-van-de-analyses--methodiek)
-6. [Aanvullende Tools](#-aanvullende-tools)
-7. [Literatuur & Bronnen](#-literatuur--bronnen)
-8. [Beperkingen & Disclaimer](#-beperkingen--disclaimer)
+2. [Overzicht van de Analyses & Methodiek](#-overzicht-van-de-analyses--methodiek)
+3. [Database Grounding: Preventie van Hallucinaties](#-database-grounding-preventie-van-hallucinaties)
+4. [Toelichting per Onderdeel (00-23)](#00-meta-data)
+5. [Preekschetsen: Tekstkeuze en Diversiteit](#-preekschetsen-tekstkeuze-en-diversiteit)
+6. [Literatuur & Bronnen](#-literatuur--bronnen)
 
 ---
 
@@ -124,11 +122,20 @@ Relevant actueel nieuws van de afgelopen dagen gerelateerd aan de zondag, om de 
 ### 07 Politieke Oriëntatie
 Stemgedrag en politieke cultuur in de regio.
 
-### 08 Exegese: Zoekmodellen (Hans Snoek)
+### 07a Wetslezing Voorstel
+Voorstel voor Wetslezing (OT), bijbehorende psalm en genade-verkondiging, inclusief automatische verificatie van de liedsuggesties.
+
+### 08a Exegese: Zoekmodellen (Hans Snoek)
 Tekstkritiek, historische context en theologische lijnen. Het script analyseert de Schrifttekst aan de hand van de modellen uit *Een huis om in te wonen*:
 *   **Godsbeelden:** Werkwoordelijk (bevrijden), metaforisch (herder) en eigenschappen (heilig vs. barmhartig).
 *   **Mensbeelden:** De mens in verhouding tot God (aanbidding) en de wereld (zorg voor de naaste).
 *   **Jezusbeelden:** Van achteren (Joods), van boven (Zoon van God), van beneden (mens) en van voren (Koninkrijk).
+
+### 08b Liedsuggesties
+Geautomatiseerde zoektocht naar passende liederen in de database (Liedboek, Weerklank, Op Toonhoogte, Hemelhoog) op basis van tekstuele en thematische matches.
+
+### 08c Commentaren
+Analyse van professionele exegetische commentaren via een kennisgraaf (Neo4j), gericht op diepgaande tekstuele duiding.
 
 ### 09 Kunst & Cultuur
 Beelden, film en muziek bij de lezingen (incl. bronverificatie).
@@ -173,6 +180,9 @@ De vertaalslag van exegese naar preek wordt gemaakt met de inzichten uit *Christ
 *   **Structuur:** Zorgvuldige opbouw van openingsstatement, ontwikkeling en afsluiting per move.
 
 📄 **[Lees de volledige methodiek van Buttrick](misc/Buttricks_Moves_and_Structures.md)**
+
+### 13b Homiletische Illustraties
+Minimaal 20 concrete illustraties (verhalen, metaforen, voorbeelden) die de brug slaan tussen de exegese en de leefwereld van de hoorder.
 
 ---
 
@@ -243,7 +253,7 @@ Vijf totaal verschillende opties voor een interactief en creatief kindermoment:
 *   **Optie 4: De Bizarre Inval:** Een totaal onverwacht object of concept.
 *   **Optie 5: De Ernstige Toon:** Ingetogen benadering die kinderen serieus neemt.
 
-### 16 Moment van Bezinning
+### 15 (variant) Moment van Bezinning
 Een specifieke vorm van gebed of meditatie die inkeer biedt binnen de eredienst. Dit moment is bedoeld voor reflectie, stilte en persoonlijke benadering van God.
 *   **Kenmerken:** Korte, rustgevende teksten, ruimte voor stilte, nadruk op Gods nabijheid en troost.
 *   **Functie:** Ruimte creëren voor innerlijke rust en bezinning in het drukke leven.
@@ -279,6 +289,9 @@ Preekschets in de stijl van Oepke Noordmans. Zijn homiletiek biedt een unieke be
 
 ### 20 Preekschets in de geest van Peterson
 Preekschets in de stijl van Eugene Peterson: contemplatief en pastoraal. Gericht op 'A Long Obedience in the Same Direction' en het alledaagse leven doordesemen met de bijbelse verbeelding.
+
+### 21 Midjourney Prompts
+Visuele thema's en prompts voor beeldgeneratie bij de preek. Deze prompts helpen bij het visueel ondersteunen van de boodschap via projectie of sociale media.
 
 ### 23 Literaire Preekschets
 Een volledig uitgeschreven preekschets in literaire stijl, gebaseerd op de homiletische structuur van Buttrick (Moves & Structures). Deze benadering transformeert de theologische analyse naar toegankelijke, verhalende taal.
