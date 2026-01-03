@@ -6101,7 +6101,8 @@
                 html += `<span class="bijbel-boek-badge${perikoop.vertalingKey === 'grondtekst' ? ' bijbel-grondtekst-badge' : ''}">${escapeHtml(vertalingTitel)}</span>`;
                 html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${refString}</span>`;
                 if (language) {
-                    html += `<span class="bijbel-language-tag">${escapeHtml(language)}</span>`;
+                    const displayLanguage = language === 'Hebreeuws' ? 'Hebreeuws (BHS)' : (language === 'Grieks' ? 'Grieks (NA28)' : language);
+                    html += `<span class="bijbel-language-tag">${escapeHtml(displayLanguage)}</span>`;
                 }
                 if (perikoop.lezingType) {
                     html += `<span class="bijbel-lezing-type">${escapeHtml(perikoop.lezingType)}</span>`;
@@ -6268,7 +6269,8 @@
                 html += `<span class="bijbel-boek-badge${vertalingKey === 'grondtekst' ? ' bijbel-grondtekst-badge' : ''}">${escapeHtml(vertalingTitel)}</span>`;
                 html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${perikoop.chapter}:${verzenRef}</span>`;
                 if (language) {
-                    html += `<span class="bijbel-language-tag">${escapeHtml(language)}</span>`;
+                    const displayLanguage = language === 'Hebreeuws' ? 'Hebreeuws (BHS)' : (language === 'Grieks' ? 'Grieks (NA28)' : language);
+                    html += `<span class="bijbel-language-tag">${escapeHtml(displayLanguage)}</span>`;
                 }
                 if (lezingType) {
                     html += `<span class="bijbel-lezing-type">${escapeHtml(lezingType)}</span>`;
