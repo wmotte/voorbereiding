@@ -2983,7 +2983,7 @@
                             if ((k === 'kerkelijke_context' || k === 'bronnen_gebruikt') && key === '02_sociaal_maatschappelijke_context') return false;
                             // Only show specific items in Beeldgeneratie (prompts) menu
                             if (key === '22_midjourney_prompts') {
-                                const allowedFields = ['midjourney_prompts', 'gebruiksinstructies', 'technische_notities'];
+                                const allowedFields = ['midjourney_prompts', 'technische_notities'];
                                 return allowedFields.includes(k);
                             }
                             return true;
@@ -3388,6 +3388,8 @@
                 if (k === 'analyse' && (sectionKey === '08b_liedsuggesties_database' || sectionKey === '08_liedsuggesties_database')) return false;
                 // Skip 'kerkelijke_context' and 'bronnen_gebruikt' in sociaal-maatschappelijke context
                 if ((k === 'kerkelijke_context' || k === 'bronnen_gebruikt') && sectionKey === '02_sociaal_maatschappelijke_context') return false;
+                // Skip 'gebruiksinstructies' in Beeldgeneratie (prompts)
+                if (k === 'gebruiksinstructies' && sectionKey === '22_midjourney_prompts') return false;
                 return true;
             });
 
@@ -4493,14 +4495,18 @@
             // Handle array format (Jüngel, Brueggemann)
             if (Array.isArray(onderdelen)) {
                 onderdelen.forEach((onderdeel, index) => {
-                    const titel = onderdeel.titel || `Deel ${index + 1}`;
+                    let rawTitel = onderdeel.titel || `Deel ${index + 1}`;
                     const inhoud = onderdeel.inhoud || '';
                     const anchorId = sectionKey ? `id="section-${sectionKey}-preek_onderdeel-${index + 1}" ` : '';
+
+                    // Clean redundant numbering from title
+                    // Matches: "I. ", "1. ", "Deel 1: ", "Move 1: " etc at start
+                    const cleanTitel = rawTitel.replace(/^([IVXLC]+\.\s*|\d+\.\s*|Deel\s*\d+[:\s]*|Move\s*\d+[:\s]*)/i, '').trim();
 
                     html += `<div ${anchorId}class="gebed-card" style="margin-bottom: 30px;">`;
                     html += `<div class="gebed-card-header">`;
                     html += `<span class="gebed-type-badge">${onderdeel.volgorde || index + 1}</span>`;
-                    html += `<span class="gebed-aanspraak">${processText(titel)}</span>`;
+                    html += `<span class="gebed-aanspraak">${processText(cleanTitel)}</span>`;
                     html += `</div>`;
                     html += `<div class="gebed-tekst">${processText(inhoud)}</div>`;
 
@@ -4522,14 +4528,17 @@
                 for (const [key, value] of Object.entries(onderdelen)) {
                     if (!value || typeof value !== 'object') continue;
 
-                    const titel = value.titel || formatKey(key);
+                    const rawTitel = value.titel || formatKey(key);
                     const inhoud = value.inhoud || '';
                     const anchorId = sectionKey ? `id="section-${sectionKey}-preek_onderdeel-${counter}" ` : '';
+
+                    // Clean redundant numbering from title
+                    const cleanTitel = rawTitel.replace(/^([IVXLC]+\.\s*|\d+\.\s*|Deel\s*\d+[:\s]*|Move\s*\d+[:\s]*)/i, '').trim();
 
                     html += `<div ${anchorId}class="gebed-card" style="margin-bottom: 30px;">`;
                     html += `<div class="gebed-card-header">`;
                     html += `<span class="gebed-type-badge">${counter}</span>`;
-                    html += `<span class="gebed-aanspraak">${processText(titel)}</span>`;
+                    html += `<span class="gebed-aanspraak">${processText(cleanTitel)}</span>`;
                     html += `</div>`;
                     html += `<div class="gebed-tekst">${processText(inhoud)}</div>`;
                     html += `</div>`;
@@ -6582,23 +6591,6 @@
             if (typeof text !== 'string') return text;
             // First convert literal \n to actual newlines (before HTML escaping)
             let result = text.replace(/\\n/g, '\n');
-
-            // List of words that should stay capitalized (proper nouns, etc.)
-            const exceptions = ['God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige', 'Tweede', 'Kamer', 'Provinciale', 'Staten', 'Europees', 'Parlement'];
-
-            // 1. Convert comma to period and add line break only if it's a clear sentence break
-            // (Keeping this but making it safer)
-            result = result.replace(/([,;])\s+([A-Z])/g, function(match, punct, letter, offset) {
-                 // Check for bibliographic initials
-                 const restOfString = result.substring(offset + match.length - 1);
-                 if (/^[A-Z]\.[A-Z]?\.?/.test(restOfString)) return match;
-                 
-                 // If the word after capitalization is in exceptions, don't force a break
-                 const nextWord = result.substr(offset + match.length - 1).split(/[\s,;.!?]/)[0];
-                 if (exceptions.includes(letter + nextWord)) return match;
-
-                 return '.\n' + letter;
-            });
 
             // Escape HTML special characters
             result = escapeHtml(result);
