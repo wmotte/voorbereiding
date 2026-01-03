@@ -1212,10 +1212,15 @@
             line-height: 2.2;
         }
 
+        .bijbel-perikoop[data-language="Hebreeuws"] .bijbel-vers {
+            text-align: right;
+            direction: rtl;
+        }
+
         .bijbel-perikoop[data-language="Hebreeuws"] .bijbel-vers-nummer {
             direction: ltr;
-            margin-left: 8px;
-            margin-right: 0;
+            margin-left: 0;
+            margin-right: 3px;
         }
 
         .bijbel-perikoop[data-language="Grieks"] .bijbel-verzen {
@@ -2795,7 +2800,7 @@
                 } else if (key === '08c_commentaries') {
                     // Special handling for Commentaries - show parts
                     const labels = {
-                        'exegese_eerste_lezing': 'Eerste Lezing',
+                        'exegese_eerste_lezing': 'Eerste lezing',
                         'exegese_evangelielezing': 'Evangelielezing',
                         'reflectie': 'Reflectie'
                     };
@@ -3226,7 +3231,7 @@
                 
                 let partHtml = `<div id="section-${sectionKey}-${partKey}" class="subsection-anchor"></div>`;
                 partHtml += `<div class="data-group">`;
-                partHtml += `<div class="data-group-title">${escapeHtml(partTitle)}</div>`;
+                partHtml += `<div class="data-group-title">${processText(partTitle)}</div>`;
                 
                 partHtml += `<div class="nested-object" style="background: var(--bg-secondary); border-left-color: var(--accent);">`;
                 
@@ -3250,7 +3255,7 @@
                 if (part.gebruikte_bronnen && Array.isArray(part.gebruikte_bronnen)) {
                     partHtml += `<div style="margin-top:15px; padding-top: 15px; border-top: 1px dashed var(--border-light);"><strong>Gebruikte commentaren:</strong><ul style="margin-top: 10px; margin-left: 20px;">`;
                     part.gebruikte_bronnen.forEach(bron => {
-                        partHtml += `<li>${processText(bron)}</li>`;
+                        partHtml += `<li>${processBibliography(bron)}</li>`;
                     });
                     partHtml += `</ul></div>`;
                 }
@@ -3259,13 +3264,13 @@
                 return partHtml;
             };
             
-            html += renderPart('exegese_eerste_lezing', 'Exegese Eerste Lezing');
-            html += renderPart('exegese_evangelielezing', 'Exegese Evangelielezing');
-            
+            html += renderPart('exegese_eerste_lezing', 'Exegese eerste lezing');
+            html += renderPart('exegese_evangelielezing', 'Exegese evangelielezing');
+
             if (data.reflectie) {
                 html += `<div id="section-${sectionKey}-reflectie" class="subsection-anchor"></div>`;
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Reflectie & Synthese</div>`;
+                html += `<div class="data-group-title">Reflectie & synthese</div>`;
                 
                 html += `<div class="nested-object" style="background: var(--bg-secondary); border-left-color: var(--accent);">`;
 
@@ -3288,11 +3293,11 @@
             if (data.bibliografie && Array.isArray(data.bibliografie)) {
                 html += `<div id="section-${sectionKey}-bibliografie" class="subsection-anchor"></div>`;
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Geraadpleegde Bronnen</div>`;
+                html += `<div class="data-group-title">Geraadpleegde bronnen</div>`;
                 html += `<div class="nested-object" style="background: var(--bg-secondary); border-left-color: var(--accent);">`;
                 html += `<ul style="margin-top: 5px; margin-left: 20px;">`;
                 data.bibliografie.forEach(bron => {
-                    html += `<li style="margin-bottom: 8px;">${processText(bron)}</li>`;
+                    html += `<li style="margin-bottom: 8px;">${processBibliography(bron)}</li>`;
                 });
                 html += `</ul>`;
                 html += `</div></div>`;
@@ -3311,7 +3316,7 @@
                 
                 let partHtml = `<div id="section-${sectionKey}-${partKey}" class="subsection-anchor"></div>`;
                 partHtml += `<div class="data-group">`;
-                partHtml += `<div class="data-group-title">${escapeHtml(partTitle)}</div>`;
+                partHtml += `<div class="data-group-title">${processText(partTitle)}</div>`;
                 
                 partHtml += `<div class="nested-object" style="background: var(--bg-secondary); border-left-color: var(--accent);">`;
                 
@@ -3624,7 +3629,7 @@
 
                 if (Array.isArray(value)) {
                     if (value.every(v => typeof v === 'string')) {
-                        html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${value.map(v => processText(v)).join(', ')}</div>`;
+                        html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${joinArrayItems(value)}</div>`;
                     } else {
                         html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong></div>`;
                         html += renderArray(value, key);
@@ -3693,7 +3698,7 @@
                                 html += `<div style="margin-top: 6px;"><a href="${getSearchUrl(value, parentKey)}" target="_blank" class="search-term" title="Zoek op DuckDuckGo">${processText(value)}</a></div>`;
                             } else if (Array.isArray(value)) {
                                 if (value.every(v => typeof v === 'string') && value.length <= 5) {
-                                    html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${value.map(v => processText(v)).join(', ')}</div>`;
+                                    html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong> ${joinArrayItems(value)}</div>`;
                                 } else {
                                      html += `<div style="margin-bottom: 4px;"><strong>${escapeHtml(formatKey(key))}:</strong></div>`;
                                      html += renderArray(value, key);
@@ -4090,7 +4095,7 @@
                 // Focus Schriftlezing section
                 if (optie.focus_schriftlezing) {
                     html += `<div class="focus-section">`;
-                    html += `<div class="focus-section-title">Focus Schriftlezing</div>`;
+                    html += `<div class="focus-section-title">Focus schriftlezing</div>`;
                     html += `<div class="focus-section-content">${processText(optie.focus_schriftlezing)}</div>`;
                     html += `</div>`;
                 }
@@ -4098,7 +4103,7 @@
                 // Afbeelding Idee section
                 if (optie.afbeelding_idee) {
                     html += `<div class="focus-section">`;
-                    html += `<div class="focus-section-title">Afbeelding Idee</div>`;
+                    html += `<div class="focus-section-title">Afbeelding idee</div>`;
                     html += `<div class="focus-section-content">${processText(optie.afbeelding_idee)}</div>`;
                     html += `</div>`;
                 }
@@ -4109,7 +4114,7 @@
                 html += `<div>`;
                 if (optie.verhaal_script) {
                     html += `<div class="focus-section" style="height: 100%;">`;
-                    html += `<div class="focus-section-title">Verhaal Script</div>`;
+                    html += `<div class="focus-section-title">Verhaal script</div>`;
                     html += `<div class="focus-section-content" style="height: 100%;">${processText(optie.verhaal_script)}</div>`;
                     html += `</div>`;
                 }
@@ -4362,7 +4367,7 @@
                 html += `<div id="section-${sectionKey}-gcf" class="subsection-anchor"></div>`;
                 html += `<div class="buttrick-move" style="border-left-color: #e57373;">`;
                 html += `<div class="buttrick-move-header">`;
-                html += `<div class="buttrick-move-badge" style="background: #e57373;">Gevallen Conditie Focus</div>`;
+                html += `<div class="buttrick-move-badge" style="background: #e57373;">Gevallen conditie focus</div>`;
                 html += `</div>`;
                 html += `<div class="buttrick-move-content">`;
                 if (chapellData.gcf.beschrijving) {
@@ -4385,7 +4390,7 @@
                 html += `<div id="section-${sectionKey}-christocentrische_duiding" class="subsection-anchor"></div>`;
                 html += `<div class="buttrick-move" style="border-left-color: #f57c00;">`;
                 html += `<div class="buttrick-move-header">`;
-                html += `<div class="buttrick-move-badge" style="background: #f57c00;">Christocentrische Duiding</div>`;
+                html += `<div class="buttrick-move-badge" style="background: #f57c00;">Christocentrische duiding</div>`;
                 html += `</div>`;
                 html += `<div class="buttrick-move-content">`;
                 if (chapellData.christocentrische_duiding.categorie) {
@@ -4400,7 +4405,7 @@
                 }
                 if (chapellData.christocentrische_duiding.motivatie_heiliging) {
                     html += `<div class="buttrick-move-section">`;
-                    html += `<div class="buttrick-move-section-title">Motivatie tot Heiliging</div>`;
+                    html += `<div class="buttrick-move-section-title">Motivatie tot heiliging</div>`;
                     html += `<div class="buttrick-move-section-text">${processText(chapellData.christocentrische_duiding.motivatie_heiliging)}</div>`;
                     html += `</div>`;
                 }
@@ -4417,13 +4422,13 @@
                 html += `<div class="buttrick-move-content">`;
                 if (chapellData.motivatie_genade.genade_indicatief) {
                     html += `<div class="buttrick-move-section">`;
-                    html += `<div class="buttrick-move-section-title">Genade (Indicatief)</div>`;
+                    html += `<div class="buttrick-move-section-title">Genade (indicatief)</div>`;
                     html += `<div class="buttrick-move-section-text">${processText(chapellData.motivatie_genade.genade_indicatief)}</div>`;
                     html += `</div>`;
                 }
                 if (chapellData.motivatie_genade.motivatie_heiliging) {
                     html += `<div class="buttrick-move-section">`;
-                    html += `<div class="buttrick-move-section-title">Motivatie (Heiliging)</div>`;
+                    html += `<div class="buttrick-move-section-title">Motivatie (heiliging)</div>`;
                     html += `<div class="buttrick-move-section-text">${processText(chapellData.motivatie_genade.motivatie_heiliging)}</div>`;
                     html += `</div>`;
                 }
@@ -4434,7 +4439,7 @@
             if (chapellData.expositorisch_raamwerk) {
                 html += `<div id="section-${sectionKey}-expositorisch_raamwerk" class="subsection-anchor"></div>`;
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Expositorisch Raamwerk (Double Helix)</div>`;
+                html += `<div class="data-group-title">Expositorisch raamwerk (double helix)</div>`;
                 html += `<div class="buttrick-container">`;
 
                 const points = Object.entries(chapellData.expositorisch_raamwerk)
@@ -4538,7 +4543,7 @@
 
         function renderHomiletischePlot(plot) {
             let html = `<div class="data-group">`;
-            html += `<div class="data-group-title">Homiletische Plot</div>`;
+            html += `<div class="data-group-title">Homiletische plot</div>`;
             html += `<div class="plot-container">`;
 
             // Mapping of keys to Dutch abbreviations
@@ -4588,7 +4593,7 @@
                             });
                             html += `</ul></div>`;
                         } else if (value.every(v => typeof v === 'string')) {
-                            html += `<div><strong>${escapeHtml(formatKey(key))}:</strong> ${value.map(v => processText(v)).join(', ')}</div>`;
+                            html += `<div><strong>${escapeHtml(formatKey(key))}:</strong> ${joinArrayItems(value)}</div>`;
                         } else {
                             html += `<div><strong>${escapeHtml(formatKey(key))}:</strong><ul style="margin-left: 16px; margin-top: 6px;">`;
                             value.forEach(item => {
@@ -4626,7 +4631,7 @@
         // Render Buttrick Moves & Structures
         function renderButtrickMoves(data) {
             let html = `<div class="data-group">`;
-            html += `<div class="data-group-title">Moves & Structures</div>`;
+            html += `<div class="data-group-title">Moves & structures</div>`;
             html += `<div class="buttrick-container">`;
 
             // Render introductie if present
@@ -4776,7 +4781,7 @@
                     // Afbakening vertaling
                     if (lezing.afbakening_vertaling) {
                         html += `<div class="nested-object">`;
-                        html += `<div class="nested-title">Afbakening Vertaling</div>`;
+                        html += `<div class="nested-title">Afbakening vertaling</div>`;
 
                         if (lezing.afbakening_vertaling.vertaalvergelijking && Array.isArray(lezing.afbakening_vertaling.vertaalvergelijking)) {
                             html += `<div class="data-group"><div class="data-group-title">Vertaalvergelijking</div>`;
@@ -4805,7 +4810,7 @@
                         html += `<div class="nested-title">Tekstkritiek</div>`;
 
                         if (lezing.tekskritiek.relevante_varianten && Array.isArray(lezing.tekskritiek.relevante_varianten)) {
-                            html += `<div class="data-group"><div class="data-group-title">Relevante Varianten</div>`;
+                            html += `<div class="data-group"><div class="data-group-title">Relevante varianten</div>`;
                             lezing.tekskritiek.relevante_varianten.forEach(variant => {
                                 html += `<div class="nested-card">`;
                                 html += `<div class="nested-card-title">Vers ${variant.vers}</div>`;
@@ -4852,10 +4857,10 @@
                         html += `</div></div>`;
                     }
 
-                    // Literaire Analyse
+                    // Literaire analyse
                     if (lezing.literaire_analyse) {
                         html += `<div class="nested-object">`;
-                        html += `<div class="nested-title">Literaire Analyse</div>`;
+                        html += `<div class="nested-title">Literaire analyse</div>`;
 
                         if (lezing.literaire_analyse.genre) {
                             html += `<div class="data-item">`;
@@ -4866,7 +4871,7 @@
 
                         if (lezing.literaire_analyse.genre_conventies) {
                             html += `<div class="data-item">`;
-                            html += `<div class="data-label">Genre Conventies</div>`;
+                            html += `<div class="data-label">Genre conventies</div>`;
                             html += `<div class="data-value">${processText(lezing.literaire_analyse.genre_conventies)}</div>`;
                             html += `</div>`;
                         }
@@ -4912,11 +4917,11 @@
 
                         // Stijl & Retoriek
                         if (lezing.literaire_analyse.stijl_retoriek) {
-                            html += `<div class="data-group"><div class="data-group-title">Stijl & Retoriek</div>`;
+                            html += `<div class="data-group"><div class="data-group-title">Stijl & retoriek</div>`;
 
                             if (lezing.literaire_analyse.stijl_retoriek.literaire_middelen && Array.isArray(lezing.literaire_analyse.stijl_retoriek.literaire_middelen)) {
                                 html += `<div class="data-item">`;
-                                html += `<div class="data-label">Literaire Middelen</div>`;
+                                html += `<div class="data-label">Literaire middelen</div>`;
                                 html += `<div class="data-value"><ul>`;
                                 lezing.literaire_analyse.stijl_retoriek.literaire_middelen.forEach(middel => {
                                     html += `<li>${processText(middel)}</li>`;
@@ -4927,14 +4932,14 @@
 
                             if (lezing.literaire_analyse.stijl_retoriek.retorische_strategie) {
                                 html += `<div class="data-item">`;
-                                html += `<div class="data-label">Retorische Strategie</div>`;
+                                html += `<div class="data-label">Retorische strategie</div>`;
                                 html += `<div class="data-value">${processText(lezing.literaire_analyse.stijl_retoriek.retorische_strategie)}</div>`;
                                 html += `</div>`;
                             }
 
                             if (lezing.literaire_analyse.stijl_retoriek.effect_lezer) {
                                 html += `<div class="data-item">`;
-                                html += `<div class="data-label">Effect Lezer</div>`;
+                                html += `<div class="data-label">Effect lezer</div>`;
                                 html += `<div class="data-value">${processText(lezing.literaire_analyse.stijl_retoriek.effect_lezer)}</div>`;
                                 html += `</div>`;
                             }
@@ -4944,7 +4949,7 @@
 
                         // Karakters & Plot
                         if (lezing.literaire_analyse.karakters_plot) {
-                            html += `<div class="data-group"><div class="data-group-title">Karakters & Plot</div>`;
+                            html += `<div class="data-group"><div class="data-group-title">Karakters & plot</div>`;
 
                             if (lezing.literaire_analyse.karakters_plot.personages && Array.isArray(lezing.literaire_analyse.karakters_plot.personages)) {
                                 html += `<div class="data-item">`;
@@ -4984,14 +4989,14 @@
                         html += `</div>`;
                     }
 
-                    // Theologische Analyse
+                    // Theologische analyse
                     if (lezing.theologische_analyse) {
                         html += `<div class="nested-object">`;
-                        html += `<div class="nested-title">Theologische Analyse</div>`;
+                        html += `<div class="nested-title">Theologische analyse</div>`;
 
                         if (lezing.theologische_analyse.centrale_boodschap) {
                             html += `<div class="data-item">`;
-                            html += `<div class="data-label">Centrale Boodschap</div>`;
+                            html += `<div class="data-label">Centrale boodschap</div>`;
                             html += `<div class="data-value">${processText(lezing.theologische_analyse.centrale_boodschap)}</div>`;
                             html += `</div>`;
                         }
@@ -5012,7 +5017,7 @@
 
                         if (lezing.theologische_analyse.bijbels_theologische_lijnen && Array.isArray(lezing.theologische_analyse.bijbels_theologische_lijnen)) {
                             html += `<div class="data-item">`;
-                            html += `<div class="data-label">Bijbels Theologische Lijnen</div>`;
+                            html += `<div class="data-label">Bijbels theologische lijnen</div>`;
                             html += `<div class="data-value"><ul>`;
                             lezing.theologische_analyse.bijbels_theologische_lijnen.forEach(lijn => {
                                 html += `<li>${processText(lijn)}</li>`;
@@ -5030,14 +5035,14 @@
 
                         if (lezing.theologische_analyse.spanning_andere_teksten) {
                             html += `<div class="data-item">`;
-                            html += `<div class="data-label">Spanning met Andere Teksten</div>`;
+                            html += `<div class="data-label">Spanning met andere teksten</div>`;
                             html += `<div class="data-value">${processText(lezing.theologische_analyse.spanning_andere_teksten)}</div>`;
                             html += `</div>`;
                         }
 
                         if (lezing.theologische_analyse.dogmatische_raakvlakken && Array.isArray(lezing.theologische_analyse.dogmatische_raakvlakken)) {
                             html += `<div class="data-item">`;
-                            html += `<div class="data-label">Dogmatische Raakvlakken</div>`;
+                            html += `<div class="data-label">Dogmatische raakvlakken</div>`;
                             html += `<div class="data-value"><ul>`;
                             lezing.theologische_analyse.dogmatische_raakvlakken.forEach(raakvlak => {
                                 html += `<li>${processText(raakvlak)}</li>`;
@@ -5048,7 +5053,7 @@
 
                         if (lezing.theologische_analyse.theologische_controverses && Array.isArray(lezing.theologische_analyse.theologische_controverses)) {
                             html += `<div class="data-item">`;
-                            html += `<div class="data-label">Theologische Controverses</div>`;
+                            html += `<div class="data-label">Theologische controverses</div>`;
                             html += `<div class="data-value"><ul>`;
                             lezing.theologische_analyse.theologische_controverses.forEach(controverse => {
                                 html += `<li>${processText(controverse)}</li>`;
@@ -5082,35 +5087,35 @@
 
                                 if (isValidSnoek(ot.werkwoordelijke_uitspraken)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Werkwoordelijke Uitspraken</div>`;
+                                    html += `<div class="data-label">Werkwoordelijke uitspraken</div>`;
                                     html += `<div class="data-value">${processText(ot.werkwoordelijke_uitspraken)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(ot.metaforische_uitspraken)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Metaforische Uitspraken</div>`;
+                                    html += `<div class="data-label">Metaforische uitspraken</div>`;
                                     html += `<div class="data-value">${processText(ot.metaforische_uitspraken)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(ot.overstijgende_eigenschappen)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Overstijgende Eigenschappen</div>`;
+                                    html += `<div class="data-label">Overstijgende eigenschappen</div>`;
                                     html += `<div class="data-value">${processText(ot.overstijgende_eigenschappen)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(ot.toebuigende_eigenschappen)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Toebuigende Eigenschappen</div>`;
+                                    html += `<div class="data-label">Toebuigende eigenschappen</div>`;
                                     html += `<div class="data-value">${processText(ot.toebuigende_eigenschappen)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(ot.dominante_categorie)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Dominante Categorie</div>`;
+                                    html += `<div class="data-label">Dominante categorie</div>`;
                                     html += `<div class="data-value">${processText(ot.dominante_categorie)}</div>`;
                                     html += `</div>`;
                                 }
@@ -5124,7 +5129,7 @@
 
                                 if (isValidSnoek(ot.relevantie_gemeente)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Relevantie Gemeente</div>`;
+                                    html += `<div class="data-label">Relevantie gemeente</div>`;
                                     html += `<div class="data-value">${processText(ot.relevantie_gemeente)}</div>`;
                                     html += `</div>`;
                                 }
@@ -5138,21 +5143,21 @@
 
                                 if (isValidSnoek(mens.horizontale_as)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Horizontale As</div>`;
+                                    html += `<div class="data-label">Horizontale as</div>`;
                                     html += `<div class="data-value">${processText(mens.horizontale_as)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(mens.verticale_as)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Verticale As</div>`;
+                                    html += `<div class="data-label">Verticale as</div>`;
                                     html += `<div class="data-value">${processText(mens.verticale_as)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(mens.personages_positie)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Personages Positie</div>`;
+                                    html += `<div class="data-label">Personages positie</div>`;
                                     html += `<div class="data-value">${processText(mens.personages_positie)}</div>`;
                                     html += `</div>`;
                                 }
@@ -5173,49 +5178,49 @@
 
                                 if (isValidSnoek(nt.van_achteren)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Van Achteren</div>`;
+                                    html += `<div class="data-label">Van achteren</div>`;
                                     html += `<div class="data-value">${processText(nt.van_achteren)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(nt.van_boven)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Van Boven</div>`;
+                                    html += `<div class="data-label">Van boven</div>`;
                                     html += `<div class="data-value">${processText(nt.van_boven)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(nt.van_beneden)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Van Beneden</div>`;
+                                    html += `<div class="data-label">Van beneden</div>`;
                                     html += `<div class="data-value">${processText(nt.van_beneden)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(nt.van_voren)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Van Voren</div>`;
+                                    html += `<div class="data-label">Van voren</div>`;
                                     html += `<div class="data-value">${processText(nt.van_voren)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(nt.dominant_perspectief)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Dominant Perspectief</div>`;
+                                    html += `<div class="data-label">Dominant perspectief</div>`;
                                     html += `<div class="data-value">${processText(nt.dominant_perspectief)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(nt.spanning_godheid_mensheid)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Spanning Godheid-Mensheid</div>`;
+                                    html += `<div class="data-label">Spanning godheid-mensheid</div>`;
                                     html += `<div class="data-value">${processText(nt.spanning_godheid_mensheid)}</div>`;
                                     html += `</div>`;
                                 }
 
                                 if (isValidSnoek(nt.betekenis_hoorders_nu)) {
                                     html += `<div class="data-item">`;
-                                    html += `<div class="data-label">Betekenis Hoorders Nu</div>`;
+                                    html += `<div class="data-label">Betekenis hoorders nu</div>`;
                                     html += `<div class="data-value">${processText(nt.betekenis_hoorders_nu)}</div>`;
                                     html += `</div>`;
                                 }
@@ -5234,11 +5239,11 @@
             // Samenhang lezingen
             if (data.samenhang_lezingen) {
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Samenhang Lezingen</div>`;
+                html += `<div class="data-group-title">Samenhang lezingen</div>`;
 
                 if (data.samenhang_lezingen.rode_draad) {
                     html += `<div class="data-item">`;
-                    html += `<div class="data-label">Rode Draad</div>`;
+                    html += `<div class="data-label">Rode draad</div>`;
                     html += `<div class="data-value">${processText(data.samenhang_lezingen.rode_draad)}</div>`;
                     html += `</div>`;
                 }
@@ -5620,7 +5625,7 @@
             // Brueggemann (Poet) Method Selection Display
             if (data.gehanteerde_methode_selectie && Array.isArray(data.gehanteerde_methode_selectie)) {
                 html += `<div class="data-group" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed var(--border-light);">`;
-                html += `<div class="data-group-title">Gekozen Homiletische Methode</div>`;
+                html += `<div class="data-group-title">Gekozen homiletische methode</div>`;
                 html += `<ul style="list-style: none; padding: 0; margin-top: 10px;">`;
                 
                 // Mapping van methode nummer naar markdown bestand in prompts/finally_comes_the_poet__prompts/
@@ -5688,7 +5693,7 @@
             if (data.centrale_metafoor) {
                 html += `<div id="section-${sectionKey}-centrale_metafoor" class="subsection-anchor"></div>`;
                 html += `<div class="data-item">`;
-                html += `<div class="data-label">Centrale Metafoor</div>`;
+                html += `<div class="data-label">Centrale metafoor</div>`;
                 html += `<div class="data-value" style="color: var(--accent); font-weight: 500;">${processText(data.centrale_metafoor)}</div>`;
                 html += `</div>`;
             }
@@ -5843,7 +5848,7 @@
             if (data.aristotelische_appeals) {
                 html += `<div id="section-${sectionKey}-aristotelische_appeals" class="subsection-anchor"></div>`;
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Aristotelische Appeals</div>`;
+                html += `<div class="data-group-title">Aristotelische appeals</div>`;
                 html += `<div class="card-grid">`;
                 
                 ['logos', 'pathos', 'ethos'].forEach(appeal => {
@@ -5863,7 +5868,7 @@
             if (data.klassieke_dispositio) {
                 html += `<div id="section-${sectionKey}-klassieke_dispositio" class="subsection-anchor"></div>`;
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Klassieke Dispositio</div>`;
+                html += `<div class="data-group-title">Klassieke dispositio</div>`;
                 html += `<div class="buttrick-container">`;
 
                 const parts = ['exordium', 'narratio', 'propositio', 'partitio', 'confirmatio', 'refutatio', 'peroratio'];
@@ -5889,7 +5894,7 @@
             if (data.monroes_motivated_sequence) {
                 html += `<div id="section-${sectionKey}-monroes_motivated_sequence" class="subsection-anchor"></div>`;
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Monroe's Motivated Sequence</div>`;
+                html += `<div class="data-group-title">Monroe's motivated sequence</div>`;
                 html += `<div class="buttrick-container">`;
 
                 const steps = ['attention', 'need', 'satisfaction', 'visualization', 'action'];
@@ -5914,7 +5919,7 @@
             if (data.retorische_figuren) {
                 html += `<div id="section-${sectionKey}-retorische_figuren" class="subsection-anchor"></div>`;
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Retorische Figuren</div>`;
+                html += `<div class="data-group-title">Retorische figuren</div>`;
                 
                 if (data.retorische_figuren.aanbevolen_figuren) {
                     html += `<div class="nested-title">Aanbevolen</div>`;
@@ -5922,7 +5927,7 @@
                 }
                 
                 if (data.retorische_figuren.te_vermijden_figuren) {
-                    html += `<div class="nested-title" style="margin-top: 15px;">Te Vermijden</div>`;
+                    html += `<div class="nested-title" style="margin-top: 15px;">Te vermijden</div>`;
                     html += renderArray(data.retorische_figuren.te_vermijden_figuren, 'te_vermijden_figuren');
                 }
                 
@@ -5933,7 +5938,7 @@
             if (data.praktische_tips) {
                 html += `<div id="section-${sectionKey}-praktische_tips" class="subsection-anchor"></div>`;
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Praktische Tips</div>`;
+                html += `<div class="data-group-title">Praktische tips</div>`;
                 html += renderObject(data.praktische_tips, 'praktische_tips');
                 html += `</div>`;
             }
@@ -6392,11 +6397,135 @@
             return smartQuotes(escapeHtml(text));
         }
 
+        // Process bibliography text: keep original capitalization but apply escaping and quotes
+        function processBibliography(text) {
+            if (typeof text !== 'string') return text;
+            // First convert literal \n to actual newlines
+            let result = text.replace(/\\n/g, '\n');
+
+            // Escape HTML special characters
+            result = escapeHtml(result);
+
+            // Convert quotes to curly quotes
+            result = smartQuotes(result);
+            // Convert newlines to <br> tags
+            result = result.replace(/\n/g, '<br>');
+            return result;
+        }
+
+        // Helper: join array items with comma, making items after first lowercase
+        function joinArrayItems(array) {
+            const exceptions = ['God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige'];
+
+            return array.map((item, index) => {
+                let processed = processText(item);
+
+                // For items after the first, check if they start with a capital letter
+                if (index > 0) {
+                    // Extract first word to check if it's an exception
+                    const match = item.match(/^([A-Z][a-z]*)/);
+                    if (match) {
+                        const firstWord = match[1];
+                        // Only lowercase if not an exception
+                        if (!exceptions.includes(firstWord)) {
+                            processed = processText(item.charAt(0).toLowerCase() + item.slice(1));
+                        }
+                    }
+                }
+
+                return processed;
+            }).join(', ');
+        }
+
         // Process text: escape HTML, convert quotes, and handle newlines
         function processText(text) {
             if (typeof text !== 'string') return text;
             // First convert literal \n to actual newlines (before HTML escaping)
             let result = text.replace(/\\n/g, '\n');
+
+            // List of words that should stay capitalized (proper nouns, etc.)
+            const exceptions = ['God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige'];
+
+            // Fix capitalization: if there's a capital letter after comma, treat it as a new sentence
+            // Convert comma to period and add line break
+            result = result.replace(/([,;])\s+([A-Z])/g, function(match, punct, letter, offset) {
+                // Check if this looks like bibliographic initials (e.g., "Block, D.I.")
+                // Pattern: comma + space + capital letter + dot (within 3 chars)
+                const restOfString = result.substring(offset + match.length - 1);
+                if (/^[A-Z]\.[A-Z]?\.?/.test(restOfString)) {
+                    return match; // Keep original (bibliographic initials)
+                }
+
+                const nextWord = result.substr(result.indexOf(match) + match.length - 1).split(/[\s,;.!?]/)[0];
+
+                if (exceptions.includes(letter + nextWord.substr(1))) {
+                    return match; // Keep original (proper noun continuation)
+                }
+                // Convert to new sentence on new line
+                return '.\n' + letter;
+            });
+
+            // Fix capitalization after opening parenthesis
+            result = result.replace(/\(\s*([A-Z])/g, function(match, letter) {
+                const nextWord = result.substr(result.indexOf(match) + match.length - 1).split(/[\s,;.!?()]/)[0];
+
+                if (exceptions.includes(letter + nextWord.substr(1))) {
+                    return match;
+                }
+                return '(' + letter.toLowerCase();
+            });
+
+            // Fix capitalization after dash (e.g., "OOPS! - De Kwestie" → "OOPS! - de kwestie")
+            result = result.replace(/(\s-\s)([A-Z])(\w+)/g, function(match, dash, firstLetter, rest) {
+                const word = firstLetter + rest;
+                if (exceptions.includes(word)) {
+                    return match;
+                }
+                return dash + firstLetter.toLowerCase() + rest;
+            });
+
+            // Protect labels (pattern: "Word Word:") from capitalization changes
+            // Find all label patterns and store them temporarily
+            const labelPattern = /^([A-Z][a-z]+(?: [A-Z][a-z]+)*?):/gm;
+            const labels = [];
+            result = result.replace(labelPattern, function(match) {
+                const placeholder = `__LABEL_${labels.length}__`;
+                labels.push(match);
+                return placeholder;
+            });
+
+            // Fix capitalization of all words except the first word and proper nouns
+            // E.g., "Exegese Eerste Lezing" → "Exegese eerste lezing"
+            let wordIndex = 0;
+            result = result.replace(/\b([A-Z][a-z]+|[a-z]+)\b/g, function(match, word, offset) {
+                const currentIndex = wordIndex++;
+
+                // First word: always capitalize
+                if (currentIndex === 0) {
+                    return word.charAt(0).toUpperCase() + word.slice(1);
+                }
+
+                // Check if this word comes after a colon (label pattern like "Gebruik Elders: Vaak")
+                // Look back for colon within 2 characters
+                const precedingText = result.substring(Math.max(0, offset - 3), offset);
+                if (/:\s*$/.test(precedingText)) {
+                    return word; // Keep original capitalization after colon
+                }
+
+                // Proper nouns: keep capitalized
+                if (exceptions.includes(word)) {
+                    return word;
+                }
+
+                // All other words: lowercase
+                return word.charAt(0).toLowerCase() + word.slice(1);
+            });
+
+            // Restore protected labels
+            labels.forEach((label, index) => {
+                result = result.replace(`__LABEL_${index}__`, label);
+            });
+
             // Escape HTML special characters
             result = escapeHtml(result);
 
@@ -6412,7 +6541,7 @@
             result = result.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
             // Convert *text* to italic (stage directions, instructions)
             result = result.replace(/\*([^*]+)\*/g, '<em class="instruction">$1</em>');
-            
+
             // Convert quotes to curly quotes
             result = smartQuotes(result);
             // Convert newlines to <br> tags
