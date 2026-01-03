@@ -6410,6 +6410,7 @@
         }
 
         // Process bibliography text: keep original capitalization but apply escaping and quotes
+        // Format: Author in bold, title in italic
         function processBibliography(text) {
             if (typeof text !== 'string') return text;
             // First convert literal \n to actual newlines
@@ -6417,6 +6418,34 @@
 
             // Escape HTML special characters
             result = escapeHtml(result);
+
+            // Format bibliography entries: Author (bold) Year. Title (italic). Publisher info
+            // Match everything after (Year). and split on last occurrence of "location: Publisher" pattern
+            result = result.replace(/^([^(]+?)\s*\((\d{4})\)\.\s*(.+)$/gmi, function(match, author, year, rest) {
+                // Find the last occurrence of word(s): pattern (publisher location)
+                const colonIndex = rest.lastIndexOf(':');
+                if (colonIndex > -1) {
+                    // Find start of location (word before colon)
+                    const beforeColon = rest.substring(0, colonIndex);
+                    const locationMatch = beforeColon.match(/([a-z][\w\s]+)$/i);
+                    if (locationMatch) {
+                        const locationStart = beforeColon.lastIndexOf(locationMatch[1]);
+                        let title = rest.substring(0, locationStart).trim();
+                        let publisher = rest.substring(locationStart).trim();
+                        // Remove trailing period from title if present
+                        if (title.endsWith('.')) {
+                            title = title.slice(0, -1).trim();
+                        }
+                        // Remove trailing period from publisher if present
+                        if (publisher.endsWith('.')) {
+                            publisher = publisher.slice(0, -1).trim();
+                        }
+                        return `<strong>${author.trim()}</strong> (${year}). <em>${title}.</em> ${publisher}.`;
+                    }
+                }
+                // Fallback if pattern doesn't match
+                return match;
+            });
 
             // Convert quotes to curly quotes
             result = smartQuotes(result);
