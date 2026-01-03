@@ -6304,6 +6304,18 @@
                     .replace(/_/g, ' ')
                     .replace(/([a-z])([A-Z])/g, '$1 $2')
                     .replace(/^./, str => str.toUpperCase());
+
+                // Apply capitalization rules for exceptions (government institutions, etc.)
+                const exceptions = ['Tweede', 'Kamer', 'Provinciale', 'Staten', 'Europees', 'Parlement', 'God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer'];
+                const words = result.split(' ');
+                result = words.map((word, index) => {
+                    if (index === 0) return word; // Keep first word as is
+                    const wordCapitalized = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+                    if (exceptions.includes(wordCapitalized)) {
+                        return wordCapitalized;
+                    }
+                    return word.toLowerCase();
+                }).join(' ');
             }
 
             // Preserve abbreviations with multiple capitals
@@ -6415,7 +6427,7 @@
 
         // Helper: join array items with comma, making items after first lowercase
         function joinArrayItems(array) {
-            const exceptions = ['God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige'];
+            const exceptions = ['God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige', 'Tweede', 'Kamer', 'Provinciale', 'Staten', 'Europees', 'Parlement'];
 
             return array.map((item, index) => {
                 let processed = processText(item);
@@ -6444,7 +6456,7 @@
             let result = text.replace(/\\n/g, '\n');
 
             // List of words that should stay capitalized (proper nouns, etc.)
-            const exceptions = ['God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige'];
+            const exceptions = ['God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige', 'Tweede', 'Kamer', 'Provinciale', 'Staten', 'Europees', 'Parlement'];
 
             // Fix capitalization: if there's a capital letter after comma, treat it as a new sentence
             // Convert comma to period and add line break
@@ -6496,9 +6508,10 @@
                     return word.charAt(0).toUpperCase() + word.slice(1);
                 }
 
-                // Proper nouns: keep capitalized
-                if (exceptions.includes(word)) {
-                    return word;
+                // Proper nouns: check case-insensitive
+                const wordCapitalized = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+                if (exceptions.includes(wordCapitalized)) {
+                    return wordCapitalized; // Return properly capitalized version
                 }
 
                 // All other words: lowercase
