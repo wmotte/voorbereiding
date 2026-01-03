@@ -4817,7 +4817,7 @@
                                 html += `<div class="nested-card-content">`;
                                 html += `<div><strong>Variant:</strong> ${processText(variant.variant || '')}</div>`;
                                 html += `<div><strong>Handschriften:</strong> ${processText(variant.handschriften || '')}</div>`;
-                                html += `<div><strong>Betekenis Impact:</strong> ${processText(variant.betekenis_impact || '')}</div>`;
+                                html += `<div><strong>Betekenis impact:</strong> ${processText(variant.betekenis_impact || '')}</div>`;
                                 html += `</div>`;
                                 html += `</div>`;
                             });
@@ -4845,8 +4845,8 @@
                             html += `<div class="nested-card-title">${escapeHtml(woord.woord_origineel || '')} (${escapeHtml(woord.transliteratie || '')})</div>`;
                             html += `<div class="nested-card-content">`;
                             html += `<div><strong>Vertaling:</strong> ${processText(woord.vertaling || '')}</div>`;
-                            html += `<div><strong>Semantische Range:</strong> ${processText(woord.semantische_range || '')}</div>`;
-                            html += `<div><strong>Gebruik Elders:</strong> ${processText(woord.gebruik_elders || '')}</div>`;
+                            html += `<div><strong>Semantische range:</strong> ${processText(woord.semantische_range || '')}</div>`;
+                            html += `<div><strong>Gebruik elders:</strong> ${processText(woord.gebruik_elders || '')}</div>`;
                             if (woord.meerduidigheid) {
                                 html += `<div><strong>Meerduidigheid:</strong> ${processText(woord.meerduidigheid)}</div>`;
                             }
@@ -6484,18 +6484,9 @@
                 return dash + firstLetter.toLowerCase() + rest;
             });
 
-            // Protect labels (pattern: "Word Word:") from capitalization changes
-            // Find all label patterns and store them temporarily
-            const labelPattern = /^([A-Z][a-z]+(?: [A-Z][a-z]+)*?):/gm;
-            const labels = [];
-            result = result.replace(labelPattern, function(match) {
-                const placeholder = `__LABEL_${labels.length}__`;
-                labels.push(match);
-                return placeholder;
-            });
-
             // Fix capitalization of all words except the first word and proper nouns
             // E.g., "Exegese Eerste Lezing" → "Exegese eerste lezing"
+            // Also applies to labels: "Semantische Range:" → "Semantische range:"
             let wordIndex = 0;
             result = result.replace(/\b([A-Z][a-z]+|[a-z]+)\b/g, function(match, word, offset) {
                 const currentIndex = wordIndex++;
@@ -6505,13 +6496,6 @@
                     return word.charAt(0).toUpperCase() + word.slice(1);
                 }
 
-                // Check if this word comes after a colon (label pattern like "Gebruik Elders: Vaak")
-                // Look back for colon within 2 characters
-                const precedingText = result.substring(Math.max(0, offset - 3), offset);
-                if (/:\s*$/.test(precedingText)) {
-                    return word; // Keep original capitalization after colon
-                }
-
                 // Proper nouns: keep capitalized
                 if (exceptions.includes(word)) {
                     return word;
@@ -6519,11 +6503,6 @@
 
                 // All other words: lowercase
                 return word.charAt(0).toLowerCase() + word.slice(1);
-            });
-
-            // Restore protected labels
-            labels.forEach((label, index) => {
-                result = result.replace(`__LABEL_${index}__`, label);
             });
 
             // Escape HTML special characters
