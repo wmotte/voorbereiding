@@ -6495,11 +6495,11 @@
                      // Ensure publisher has trailing dot
                      if (!publisher.endsWith('.')) publisher += '.';
                      
-                     return `<strong>${author}</strong> <span style="color: #666;">${yearStr.trim()}</span> <em>${title}.</em> <span style="color: #666;">${publisher}</span>`;
+                     return `<strong>${author}</strong> <span style="color: #666;">${yearStr.trim()}</span> <em>${toSentenceCase(title)}.</em> <span style="color: #666;">${publisher}</span>`;
                 }
                 
                 // Fallback: just Author and Rest
-                return `<strong>${author}</strong> <span style="color: #666;">${yearStr.trim()}</span> ${rest}`;
+                return `<strong>${author}</strong> <span style="color: #666;">${yearStr.trim()}</span> ${toSentenceCase(rest)}`;
             }
 
             // Fallback for non-standard entries (no year pattern found)
@@ -6547,7 +6547,14 @@
         function toSentenceCase(text) {
              if (typeof text !== 'string' || !text) return text;
              
-             const exceptions = ['God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige', 'Tweede', 'Kamer', 'Provinciale', 'Staten', 'Europees', 'Parlement', 'Bijbel', 'Satan', 'Eden', 'Adam', 'Eva', 'Israël', 'Jeruzalem', 'Babylon', 'Tyrus', 'Egypte', 'Rome', 'Griekse', 'Hebreeuwse'];
+             const exceptions = [
+                'God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige', 
+                'Tweede', 'Kamer', 'Provinciale', 'Staten', 'Europees', 'Parlement', 
+                'Bijbel', 'Satan', 'Eden', 'Adam', 'Eva', 'Israël', 'Jeruzalem', 'Babylon', 'Tyrus', 'Egypte', 'Rome', 
+                'Griekse', 'Hebreeuwse', 'Ezechiël', 'Ezekiel', 'Jesaja', 'Johannes', 'Lukas', 'Mattheüs', 'Markus',
+                'Paulus', 'Petrus', 'Mozes', 'David', 'Salomo', 'Jakob', 'Abraham', 'Isaak',
+                'NICOT', 'NSBT', 'NIV', 'ESV', 'KJV', 'NBV', 'NBV21', 'Brazos', 'Eerdmans', 'Zondervan', 'Baker', 'Academic', 'InterVarsity', 'IVP', 'Oxford'
+             ];
 
              let lower = text.toLowerCase();
              
