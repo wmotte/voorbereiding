@@ -6551,9 +6551,11 @@
                 'God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige', 
                 'Tweede', 'Kamer', 'Provinciale', 'Staten', 'Europees', 'Parlement', 
                 'Bijbel', 'Satan', 'Eden', 'Adam', 'Eva', 'Israël', 'Jeruzalem', 'Babylon', 'Tyrus', 'Egypte', 'Rome', 
-                'Griekse', 'Hebreeuwse', 'Ezechiël', 'Ezekiel', 'Jesaja', 'Johannes', 'Lukas', 'Mattheüs', 'Markus',
+                'Griekse', 'Hebreeuwse', 'Daniël', 'Ezechiël', 'Ezekiel', 'Jesaja', 'Johannes', 'Lukas', 'Mattheüs', 'Markus',
                 'Paulus', 'Petrus', 'Mozes', 'David', 'Salomo', 'Jakob', 'Abraham', 'Isaak',
-                'NICOT', 'NSBT', 'NIV', 'ESV', 'KJV', 'NBV', 'NBV21', 'Brazos', 'Eerdmans', 'Zondervan', 'Baker', 'Academic', 'InterVarsity', 'IVP', 'Oxford'
+                'Genesis', 'Exodus', 'Leviticus', 'Numeri', 'Deuteronomium', 'Jozua', 'Richteren', 'Ruth', 'Samuel', 'Koningen', 'Kronieken', 'Ezra', 'Nehemia', 'Esther', 'Job', 'Psalmen', 'Spreuken', 'Prediker', 'Hooglied', 'Jeremia', 'Klaagliederen', 'Hosea', 'Joël', 'Amos', 'Obadja', 'Jona', 'Micha', 'Nahum', 'Habakuk', 'Sefanja', 'Haggai', 'Zacharia', 'Maleachi', 'Handelingen', 'Romeinen', 'Korintiërs', 'Galaten', 'Efeziërs', 'Filippenzen', 'Kolossenzen', 'Thessalonicenzen', 'Timotheüs', 'Titus', 'Filemon', 'Hebreeën', 'Jakobus', 'Judas', 'Openbaring',
+                'NICOT', 'NSBT', 'NIV', 'ESV', 'KJV', 'NBV', 'NBV21', 'Brazos', 'Eerdmans', 'Zondervan', 'Baker', 'Academic', 'InterVarsity', 'IVP', 'Oxford',
+                'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'
              ];
 
              let lower = text.toLowerCase();
@@ -6602,31 +6604,41 @@
             result = escapeHtml(result);
 
             // 2. Markdown Headers (handle before newlines, use more specific regex to avoid capturing mid-sentence #)
-            result = result.replace(/^###\s+(.*$)/gm, function(match, content) {
-                return '<h3 style="color: var(--accent); margin: 12px 0 6px 0; font-size: 1.1em; border-bottom: 1px dashed var(--border-light); padding-bottom: 2px;">' + toSentenceCase(content) + '</h3>';
+            result = result.replace(/^[ \t]*###\s+(.*$)/gm, function(match, content) {
+                return '<h3 style="color: var(--accent); margin: 24px 0 6px 0; font-size: 1.1em; border-bottom: 1px dashed var(--border-light); padding-bottom: 2px;">' + toSentenceCase(content) + '</h3>';
             });
-            result = result.replace(/^##\s+(.*$)/gm, function(match, content) {
-                return '<h2 style="color: var(--accent); margin: 16px 0 10px 0; font-size: 1.25em;">' + toSentenceCase(content) + '</h2>';
+            result = result.replace(/^[ \t]*##\s+(.*$)/gm, function(match, content) {
+                return '<h2 style="color: var(--accent); margin: 28px 0 10px 0; font-size: 1.25em;">' + toSentenceCase(content) + '</h2>';
             });
-            result = result.replace(/^#\s+(.*$)/gm, function(match, content) {
-                return '<h1 style="color: var(--accent); margin: 20px 0 12px 0; font-size: 1.5em;">' + toSentenceCase(content) + '</h1>';
+            result = result.replace(/^[ \t]*#\s+(.*$)/gm, function(match, content) {
+                return '<h1 style="color: var(--accent); margin: 32px 0 12px 0; font-size: 1.5em;">' + toSentenceCase(content) + '</h1>';
             });
 
-            // 3. Bullet points
-            result = result.replace(/^\s*[-*]\s+(.*$)/gm, '<div style="margin: 4px 0 4px 15px; position: relative; padding-left: 15px;"><span style="position: absolute; left: 0; color: var(--accent);">•</span>$1</div>');
+            // 3. List items (bullets and numbered)
+            // Handle bullet points
+            result = result.replace(/^\s*[-*]\s+(.*$)/gm, function(match, content) {
+                return '<div class="list-item" style="margin: 0 0 0 15px; position: relative; padding-left: 15px;"><span style="position: absolute; left: 0; color: var(--accent);">•</span>' + content + '</div>';
+            });
+            // Handle numbered lists (e.g., 1. Item)
+            result = result.replace(/^\s*(\d+\.\s+.*$)/gm, function(match, content) {
+                return '<div class="list-item" style="margin: 0 0 0 15px;">' + content + '</div>';
+            });
 
             // 4. Bold and Italic
             result = result.replace(/\*\*([^*]+)\*\*/g, function(match, content) {
-                return '<strong>' + toSentenceCase(content) + '</strong>';
+                return '<strong>' + content + '</strong>';
             });
             result = result.replace(/\*([^*]+)\*/g, '<em class="instruction">$1</em>');
 
             // 5. Convert quotes to curly quotes
             result = smartQuotes(result);
 
-            // 6. Convert newlines to <br> tags, but NOT inside or right after headers to avoid double spacing
-            // First, protect headers from trailing <br>
-            result = result.replace(/(<\/h[1-3]>)\n+/g, '$1');
+            // 6. Clean up newlines around block elements
+            // We only remove newlines AFTER headers/items to prevent double spacing below them.
+            // We keep newlines BEFORE them so the natural Markdown spacing (witregels) is preserved.
+            result = result.replace(/(<\/h[1-3]>|<\/div>)\n+/g, '$1');
+            
+            // Convert remaining newlines to <br> tags
             result = result.replace(/\n/g, '<br>');
             return result;
         }
