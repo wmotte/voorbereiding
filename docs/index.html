@@ -3231,7 +3231,7 @@
                 
                 let partHtml = `<div id="section-${sectionKey}-${partKey}" class="subsection-anchor"></div>`;
                 partHtml += `<div class="data-group">`;
-                partHtml += `<div class="data-group-title">${processText(partTitle)}</div>`;
+                partHtml += `<div class="data-group-title">${processText(toSentenceCase(partTitle))}</div>`;
                 
                 partHtml += `<div class="nested-object" style="background: var(--bg-secondary); border-left-color: var(--accent);">`;
                 
@@ -3240,7 +3240,7 @@
                 }
                 
                 if (part.titel) {
-                    partHtml += `<h3 style="margin: 15px 0 10px 0; color: var(--accent);">${processText(part.titel)}</h3>`;
+                    partHtml += `<h3 style="margin: 15px 0 10px 0; color: var(--accent);">${processText(toSentenceCase(part.titel))}</h3>`;
                 }
                 
                 if (part.korte_samenvatting) {
@@ -3316,7 +3316,7 @@
                 
                 let partHtml = `<div id="section-${sectionKey}-${partKey}" class="subsection-anchor"></div>`;
                 partHtml += `<div class="data-group">`;
-                partHtml += `<div class="data-group-title">${processText(partTitle)}</div>`;
+                partHtml += `<div class="data-group-title">${processText(toSentenceCase(partTitle))}</div>`;
                 
                 partHtml += `<div class="nested-object" style="background: var(--bg-secondary); border-left-color: var(--accent);">`;
                 
@@ -6543,6 +6543,31 @@
             }).join(', ');
         }
 
+        // Helper to convert to sentence case (only first letter capital)
+        function toSentenceCase(text) {
+             if (typeof text !== 'string' || !text) return text;
+             
+             const exceptions = ['God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige', 'Tweede', 'Kamer', 'Provinciale', 'Staten', 'Europees', 'Parlement', 'Bijbel', 'Satan', 'Eden', 'Adam', 'Eva', 'Israël', 'Jeruzalem', 'Babylon', 'Tyrus', 'Egypte', 'Rome', 'Griekse', 'Hebreeuwse'];
+
+             let lower = text.toLowerCase();
+             
+             // Capitalize first letter of string
+             let result = lower.charAt(0).toUpperCase() + lower.slice(1);
+
+             // Also capitalize the first letter after a number-dot-space pattern (e.g. "1. inleiding")
+             result = result.replace(/^(\d+\.?\s+)([a-z])/g, function(match, prefix, letter) {
+                 return prefix + letter.toUpperCase();
+             });
+             
+             // Restore exceptions
+             exceptions.forEach(exc => {
+                 const regex = new RegExp(`\\b${exc}\\b`, 'gi');
+                 result = result.replace(regex, exc);
+             });
+             
+             return result;
+        }
+
         // Process text: escape HTML, convert quotes, and handle newlines
         function processText(text) {
             if (typeof text !== 'string') return text;
@@ -6552,85 +6577,49 @@
             // List of words that should stay capitalized (proper nouns, etc.)
             const exceptions = ['God', 'Gods', 'Jezus', 'Christus', 'Heere', 'HEERE', 'Heer', 'Vader', 'Zoon', 'Geest', 'Heilige', 'Tweede', 'Kamer', 'Provinciale', 'Staten', 'Europees', 'Parlement'];
 
-            // Fix capitalization: if there's a capital letter after comma, treat it as a new sentence
-            // Convert comma to period and add line break
+            // 1. Convert comma to period and add line break only if it's a clear sentence break
+            // (Keeping this but making it safer)
             result = result.replace(/([,;])\s+([A-Z])/g, function(match, punct, letter, offset) {
-                // Check if this looks like bibliographic initials (e.g., "Block, D.I.")
-                // Pattern: comma + space + capital letter + dot (within 3 chars)
-                const restOfString = result.substring(offset + match.length - 1);
-                if (/^[A-Z]\.[A-Z]?\.?/.test(restOfString)) {
-                    return match; // Keep original (bibliographic initials)
-                }
+                 // Check for bibliographic initials
+                 const restOfString = result.substring(offset + match.length - 1);
+                 if (/^[A-Z]\.[A-Z]?\.?/.test(restOfString)) return match;
+                 
+                 // If the word after capitalization is in exceptions, don't force a break
+                 const nextWord = result.substr(offset + match.length - 1).split(/[\s,;.!?]/)[0];
+                 if (exceptions.includes(letter + nextWord)) return match;
 
-                const nextWord = result.substr(result.indexOf(match) + match.length - 1).split(/[\s,;.!?]/)[0];
-
-                if (exceptions.includes(letter + nextWord.substr(1))) {
-                    return match; // Keep original (proper noun continuation)
-                }
-                // Convert to new sentence on new line
-                return '.\n' + letter;
-            });
-
-            // Fix capitalization after opening parenthesis
-            result = result.replace(/\(\s*([A-Z])/g, function(match, letter) {
-                const nextWord = result.substr(result.indexOf(match) + match.length - 1).split(/[\s,;.!?()]/)[0];
-
-                if (exceptions.includes(letter + nextWord.substr(1))) {
-                    return match;
-                }
-                return '(' + letter.toLowerCase();
-            });
-
-            // Fix capitalization after dash (e.g., "OOPS! - De Kwestie" → "OOPS! - de kwestie")
-            result = result.replace(/(\s-\s)([A-Z])(\w+)/g, function(match, dash, firstLetter, rest) {
-                const word = firstLetter + rest;
-                if (exceptions.includes(word)) {
-                    return match;
-                }
-                return dash + firstLetter.toLowerCase() + rest;
-            });
-
-            // Fix capitalization of all words except the first word and proper nouns
-            // E.g., "Exegese Eerste Lezing" → "Exegese eerste lezing"
-            // Also applies to labels: "Semantische Range:" → "Semantische range:"
-            let wordIndex = 0;
-            result = result.replace(/\b([A-Z][a-z]+|[a-z]+)\b/g, function(match, word, offset) {
-                const currentIndex = wordIndex++;
-
-                // First word: always capitalize
-                if (currentIndex === 0) {
-                    return word.charAt(0).toUpperCase() + word.slice(1);
-                }
-
-                // Proper nouns: check case-insensitive
-                const wordCapitalized = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-                if (exceptions.includes(wordCapitalized)) {
-                    return wordCapitalized; // Return properly capitalized version
-                }
-
-                // All other words: lowercase
-                return word.charAt(0).toLowerCase() + word.slice(1);
+                 return '.\n' + letter;
             });
 
             // Escape HTML special characters
             result = escapeHtml(result);
 
-            // Markdown Headers (handle before newlines)
-            result = result.replace(/^### (.*$)/gm, '<h3 style="color: var(--accent); margin: 15px 0 10px 0; font-size: 1.1em; border-bottom: 1px dashed var(--border-light); padding-bottom: 4px;">$1</h3>');
-            result = result.replace(/^## (.*$)/gm, '<h2 style="color: var(--accent); margin: 20px 0 12px 0; font-size: 1.25em;">$1</h2>');
-            result = result.replace(/^# (.*$)/gm, '<h1 style="color: var(--accent); margin: 25px 0 15px 0; font-size: 1.5em;">$1</h1>');
+            // 2. Markdown Headers (handle before newlines, use more specific regex to avoid capturing mid-sentence #)
+            result = result.replace(/^###\s+(.*$)/gm, function(match, content) {
+                return '<h3 style="color: var(--accent); margin: 12px 0 6px 0; font-size: 1.1em; border-bottom: 1px dashed var(--border-light); padding-bottom: 2px;">' + toSentenceCase(content) + '</h3>';
+            });
+            result = result.replace(/^##\s+(.*$)/gm, function(match, content) {
+                return '<h2 style="color: var(--accent); margin: 16px 0 10px 0; font-size: 1.25em;">' + toSentenceCase(content) + '</h2>';
+            });
+            result = result.replace(/^#\s+(.*$)/gm, function(match, content) {
+                return '<h1 style="color: var(--accent); margin: 20px 0 12px 0; font-size: 1.5em;">' + toSentenceCase(content) + '</h1>';
+            });
 
-            // Bullet points
-            result = result.replace(/^\s*[-*]\s+(.*$)/gm, '<div style="margin-left: 15px; position: relative; padding-left: 15px;"><span style="position: absolute; left: 0; color: var(--accent);">•</span>$1</div>');
+            // 3. Bullet points
+            result = result.replace(/^\s*[-*]\s+(.*$)/gm, '<div style="margin: 4px 0 4px 15px; position: relative; padding-left: 15px;"><span style="position: absolute; left: 0; color: var(--accent);">•</span>$1</div>');
 
-            // Convert **text** to bold (must come before single *)
-            result = result.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-            // Convert *text* to italic (stage directions, instructions)
+            // 4. Bold and Italic
+            result = result.replace(/\*\*([^*]+)\*\*/g, function(match, content) {
+                return '<strong>' + toSentenceCase(content) + '</strong>';
+            });
             result = result.replace(/\*([^*]+)\*/g, '<em class="instruction">$1</em>');
 
-            // Convert quotes to curly quotes
+            // 5. Convert quotes to curly quotes
             result = smartQuotes(result);
-            // Convert newlines to <br> tags
+
+            // 6. Convert newlines to <br> tags, but NOT inside or right after headers to avoid double spacing
+            // First, protect headers from trailing <br>
+            result = result.replace(/(<\/h[1-3]>)\n+/g, '$1');
             result = result.replace(/\n/g, '<br>');
             return result;
         }
