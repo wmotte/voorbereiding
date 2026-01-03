@@ -3785,7 +3785,10 @@
                         if (titel) gridHtml += `<div class="lied-titel">${processText(titel)}</div>`;
 
                         if (regel) {
-                            const displayRegel = regel.toLowerCase().includes('refrein') ? '...' : `${processText(regel)} ...`;
+                            const lowRegel = regel.toLowerCase();
+                            // Filter out placeholders like 'refrein', 'ref.', '1_EN:', or 'chant ES:'
+                            const isPlaceholder = lowRegel.includes('refrein') || lowRegel.includes('ref.') || lowRegel.includes('1_en:') || lowRegel.includes('chant es:');
+                            const displayRegel = isPlaceholder ? '...' : `${processText(regel)} ...`;
                             gridHtml += `<div class="lied-regel">\u2018${displayRegel}\u2019</div>`;
                         }
                         
@@ -6378,7 +6381,8 @@
                 if (value.match(/^https?:\/\//)) {
                     return `<a href="${escapeHtml(value)}" target="_blank">${escapeHtml(value)}</a>`;
                 }
-                return processText(value);
+                // Replace underscores with spaces for readable output
+                return processText(value.replace(/_/g, ' '));
             }
             return processText(String(value));
         }
