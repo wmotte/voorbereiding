@@ -6419,33 +6419,98 @@
             // Escape HTML special characters
             result = escapeHtml(result);
 
-            // Format bibliography entries: Author (bold) Year. Title (italic). Publisher info
-            // Match everything after (Year). and split on last occurrence of "location: Publisher" pattern
-            result = result.replace(/^([^(]+?)\s*\((\d{4})\)\.\s*(.+)$/gmi, function(match, author, year, rest) {
-                // Find the last occurrence of word(s): pattern (publisher location)
-                const colonIndex = rest.lastIndexOf(':');
-                if (colonIndex > -1) {
-                    // Find start of location (word before colon)
-                    const beforeColon = rest.substring(0, colonIndex);
-                    const locationMatch = beforeColon.match(/([a-z][\w\s]+)$/i);
-                    if (locationMatch) {
-                        const locationStart = beforeColon.lastIndexOf(locationMatch[1]);
-                        let title = rest.substring(0, locationStart).trim();
-                        let publisher = rest.substring(locationStart).trim();
-                        // Remove trailing period from title if present
-                        if (title.endsWith('.')) {
-                            title = title.slice(0, -1).trim();
-                        }
-                        // Remove trailing period from publisher if present
-                        if (publisher.endsWith('.')) {
-                            publisher = publisher.slice(0, -1).trim();
-                        }
-                        return `<strong>${author.trim()}</strong> (${year}). <em>${title}.</em> ${publisher}.`;
+            // 1. Find the Year block: (YYYY) or (n.d.) or (c. YYYY) followed by a dot.
+            // We search for this pattern to split Author from the rest.
+            const yearRegex = /\s*\((?:\d{4}[a-z]?|n\.d\.|c\.\s*\d{4})\)\./;
+            const match = result.match(yearRegex);
+
+            if (match) {
+                const index = match.index;
+                const yearStr = match[0]; // e.g. " (2020)." (includes leading space and trailing dot)
+                
+                const author = result.substring(0, index).trim();
+                let rest = result.substring(index + yearStr.length).trim();
+                
+                // Now parse "Rest" into Title and Publisher.
+                // Standard format: "Title. City: Publisher." OR "Title. Publisher."
+                // Heuristic: Look for the LAST colon.
+                let title = rest;
+                let publisher = "";
+                let hasPublisher = false;
+
+                const lastColonIndex = rest.lastIndexOf(':');
+                if (lastColonIndex !== -1) {
+                    // We have a colon. Assume "City: Publisher" at the end.
+                    // But we need to make sure the colon isn't part of the Title (e.g. "Title: Subtitle").
+                    // Usually, if there is a publisher, there is a period separating Title and City.
+                    // "Title: Subtitle. City: Publisher."
+                    
+                    // Look at the text BEFORE the last colon.
+                    const beforeLastColon = rest.substring(0, lastColonIndex);
+                    // Find the last dot in that part.
+                    const lastDotInBefore = beforeLastColon.lastIndexOf('.');
+                    
+                    if (lastDotInBefore !== -1) {
+                        // "Title... . City" : "Publisher"
+                        // Everything before that last dot is the Title.
+                        title = rest.substring(0, lastDotInBefore).trim(); 
+                        // Everything after is the Publisher block (City: Publisher).
+                        publisher = rest.substring(lastDotInBefore + 1).trim();
+                        hasPublisher = true;
+                    } else {
+                        // No dot before colon? Maybe "Title: Subtitle". No publisher identified?
+                        // Or maybe "Title: Subtitle: Publisher"?
+                        // Let's assume if there's no dot, it might just be the title.
+                        // UNLESS the colon is very close to the end?
+                        // "City: Publisher" is usually short?
+                        // Let's check if the part AFTER the colon is short-ish? 
+                        // Nah, "Oxford University Press" is long.
+                        
+                        // Fallback: If no dot found before colon, treat whole thing as Title?
+                        // Or assume Author (Year). Title: Publisher. (Book format?)
+                        // "Commentary on John: Eerdmans." -> No dot.
+                        
+                        // Let's just assume whole thing is Title if no dot found.
+                    }
+                } else {
+                    // No colon.
+                    // "Title. Publisher."
+                    // Find last dot (excluding the very last one if present).
+                    let checkStr = rest;
+                    if (checkStr.endsWith('.')) checkStr = checkStr.slice(0, -1);
+                    
+                    const lastDot = checkStr.lastIndexOf('.');
+                    if (lastDot !== -1) {
+                        title = rest.substring(0, lastDot).trim();
+                        publisher = rest.substring(lastDot + 1).trim();
+                        hasPublisher = true;
                     }
                 }
-                // Fallback if pattern doesn't match
-                return match;
-            });
+
+                // If we found a publisher, format it.
+                if (hasPublisher) {
+                    // Remove trailing dot from title if logic left it (it shouldn't if we split on dot)
+                     if (title.endsWith('.')) title = title.slice(0, -1).trim();
+                     
+                     // Ensure publisher has trailing dot
+                     if (!publisher.endsWith('.')) publisher += '.';
+                     
+                     return `<strong>${author}</strong> <span style="color: #666;">${yearStr.trim()}</span> <em>${title}.</em> <span style="color: #666;">${publisher}</span>`;
+                }
+                
+                // Fallback: just Author and Rest
+                return `<strong>${author}</strong> <span style="color: #666;">${yearStr.trim()}</span> ${rest}`;
+            }
+
+            // Fallback for non-standard entries (no year pattern found)
+            // Try to split on first dot?
+            const firstDot = result.indexOf('.');
+            if (firstDot !== -1) {
+                 const author = result.substring(0, firstDot).trim();
+                 const rest = result.substring(firstDot + 1).trim();
+                 // Return Author bolded, but don't try to guess Title/Publisher styling
+                 return `<strong>${author}</strong>. ${rest}`;
+            }
 
             // Convert quotes to curly quotes
             result = smartQuotes(result);
