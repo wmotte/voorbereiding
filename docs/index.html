@@ -5395,10 +5395,14 @@
                     if (gs.huidige_betrokkenheid) html += `<div class="hoorder-item">${processText(gs.huidige_betrokkenheid)}</div>`;
                     if (gs.geloofsbeleving) html += `<div class="hoorder-item"><span class="hoorder-item-label">Beleving:</span> ${processText(gs.geloofsbeleving)}</div>`;
                     if (gs.geloofstaal) html += `<div class="hoorder-item"><span class="hoorder-item-label">Taal:</span> ${processText(gs.geloofstaal)}</div>`;
-                    if (gs.twijfels_vragen && gs.twijfels_vragen.length > 0) {
-                        html += `<div class="hoorder-item"><span class="hoorder-item-label">Vragen:</span><ul class="hoorder-lijst">`;
-                        gs.twijfels_vragen.forEach(v => html += `<li>${processText(v)}</li>`);
-                        html += `</ul></div>`;
+                    if (gs.twijfels_vragen) {
+                        if (Array.isArray(gs.twijfels_vragen) && gs.twijfels_vragen.length > 0) {
+                            html += `<div class="hoorder-item"><span class="hoorder-item-label">Vragen:</span><ul class="hoorder-lijst">`;
+                            gs.twijfels_vragen.forEach(v => html += `<li>${processText(v)}</li>`);
+                            html += `</ul></div>`;
+                        } else if (typeof gs.twijfels_vragen === 'string') {
+                            html += `<div class="hoorder-item"><span class="hoorder-item-label">Vragen:</span> ${processText(gs.twijfels_vragen)}</div>`;
+                        }
                     }
                     if (gs.spirituele_behoeften) html += `<div class="hoorder-item"><span class="hoorder-item-label">Behoeften:</span> ${processText(gs.spirituele_behoeften)}</div>`;
                     html += `</div>`;
