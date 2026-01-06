@@ -2191,6 +2191,9 @@
             '20_preek_peterson': 'Preekschets (aards)',
             '21_preek_zornberg': 'Preekschets (rabbijns)',
             '23_preek_literair': 'Preekschets (literair)',
+            '24_preek_gardner_taylor': 'Preekschets (eloquent)',
+            '25_preek_kosuke_koyama': 'Preekschets (contextueel)',
+            '26_preek_fleming_rutledge': 'Preekschets (apocalyptisch)',
             '22_midjourney_prompts': 'Beeldgeneratie (prompts)',
             'Bijbelteksten': 'Bijbelteksten'
         };
@@ -2392,7 +2395,7 @@
                 return 'nav-group-liturgische-elementen';
             }
             // Groep 7: Preekschetsen
-            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair'].includes(key)) {
+            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge'].includes(key)) {
                 return 'nav-group-preekschetsen';
             }
             // Groep 8: Beeldgeneratie
@@ -2426,7 +2429,7 @@
                  '08b_liedsuggesties_database', '08_liedsuggesties_database'].includes(key)) {
                 return 'Liturgische Elementen';
             }
-            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair'].includes(key)) {
+            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge'].includes(key)) {
                 return 'Preekschetsen';
             }
             if (['22_midjourney_prompts'].includes(key)) {
@@ -2592,8 +2595,11 @@
                 '20_preek_peterson': '34',
                 '21_preek_zornberg': '35',
                 '23_preek_literair': '36',
+                '24_preek_gardner_taylor': '37',
+                '25_preek_kosuke_koyama': '38',
+                '26_preek_fleming_rutledge': '39',
 
-                '22_midjourney_prompts': '37'
+                '22_midjourney_prompts': '40'
             };
 
             // Create section number map for sorting
@@ -2930,7 +2936,7 @@
                             subSectionLabels[subKey] = labelMap[subKey];
                         }
                     });
-                } else if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair'].includes(key)) {
+                } else if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge'].includes(key)) {
                     // Special handling for Preekschetsen - show preek_onderdelen in submenu
                     if (sectionData.preek_onderdelen) {
                         const onderdelen = sectionData.preek_onderdelen;
@@ -3093,7 +3099,7 @@
                 contentHtml = renderBijbeltekstenSection(dataToRender);
             } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch' || key === '14_gebeden_eenvoudig') {
                 contentHtml = renderGebedenSection(dataToRender, key);
-            } else if (key === '16_preek_solle' || key === '17_preek_jungel' || key === '18_preek_brueggemann' || key === '18b_preek_brueggemann_poet' || key === '19_preek_noordmans' || key === '20_preek_peterson' || key === '21_preek_zornberg' || key === '23_preek_literair') {
+            } else if (key === '16_preek_solle' || key === '17_preek_jungel' || key === '18_preek_brueggemann' || key === '18b_preek_brueggemann_poet' || key === '19_preek_noordmans' || key === '20_preek_peterson' || key === '21_preek_zornberg' || key === '23_preek_literair' || key === '24_preek_gardner_taylor' || key === '25_preek_kosuke_koyama' || key === '26_preek_fleming_rutledge') {
                 contentHtml = renderPreekschetsSection(dataToRender, key);
             } else if (key === '13b_homiletische_illustraties') {
                 contentHtml = renderIllustratiesSection(dataToRender);
@@ -3193,6 +3199,18 @@
                 '21_preek_zornberg': {
                     url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Zornberg_Methode.md',
                     title: 'Zornberg Methode - achtergrond'
+                },
+                '24_preek_gardner_taylor': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Gardner_Taylor_homiletiek.md',
+                    title: 'Gardner C. Taylor Homiletiek - achtergrond'
+                },
+                '25_preek_kosuke_koyama': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Kosuke_Koyama_Homiletiek.md',
+                    title: 'Kosuke Koyama Homiletiek - achtergrond'
+                },
+                '26_preek_fleming_rutledge': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Fleming Rutledge_Homiletiek.md',
+                    title: 'Fleming Rutledge Homiletiek - achtergrond'
                 },
                 '22_midjourney_prompts': {
                     url: 'https://www.midjourney.com/explore?tab=hot',

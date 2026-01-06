@@ -3320,257 +3320,275 @@
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Eeuwige, Heilige,",
+        "aanspraak": "Eeuwige, Gij die was en die komt,",
         "elementen": {
-          "verootmoediging": "Wij staan hier als mensen die de maat soms kwijt zijn, klein onder uw hoge hemel.",
-          "schuldbelijdenis": "Wij belijden dat wij op tronen klommen die niet voor ons bestemd waren en vertrouwden op de schatkamers van ons eigen kunnen.",
-          "verlangen": "Nu de tijd ons door de vingers glipt, verlangen wij naar vaste grond die wij niet zelf hebben gelegd."
+          "verootmoediging": "Erkenning van de grens tussen onze tijd en Gods eeuwigheid.",
+          "schuldbelijdenis": "Het benoemen van de hoogmoed en het falen van het afgelopen jaar.",
+          "verlangen": "De wens om als louter mens, zonder franje, voor God te staan."
         },
-        "tekst": "Eeuwige, Heilige,\n\nWij stappen uit de nacht uw licht binnen.\nDe modder van de polder kleeft nog aan onze schoenen,\nen de onrust van het jaar gonst na in ons hoofd.\n\nWij brengen U de balans van ons leven.\nNiet alleen de winst van wat wij bouwden en bereikten,\nmaar ook de rode cijfers van onze hoogmoed.\nWij hebben ons hart soms verheven,\nals vorsten in ons eigen koninkrijkje,\nen dachten dat wij met onze wijsheid de stormen konden dwingen.\n\nMaar hier, op de drempel van het nieuwe,\nvoelen wij hoe de wind door onze mantels waait.\nOnze handen zijn niet groot genoeg om de wereld te dragen.\nNeem ons aan, niet als goden die wij wilden zijn,\nmaar als mensen, kwetsbaar en van U.\n\nAmen.",
-        "echo_schriftlezing": "De hoogmoed van het hart ('Ik ben een god') versus de realiteit van de drempel.",
+        "tekst": "Eeuwige, Gij die was en die komt,\n\nWij staan op de drempel van de tijd.\nAchter ons ligt het jaar als een omgeploegde akker,\nvol van wat wij zaaiden en wat wij lieten liggen.\nDe modder van de dagen kleeft nog aan onze schoenen.\n\nWij brengen U wat misging:\nde woorden die sneden als glas,\nde stilte waar wij hadden moeten spreken,\nde hand die in de zak bleef toen een ander viel.\nWij dachten groot te zijn, onkwetsbaar in onze plannen,\nmaar vanavond voelen wij hoe broos ons bouwwerk is.\n\nNeem de last van onze schouders,\nde pretentie van ons weten,\nde kramp van ons moeten.\n\nLaat ons hier binnenkomen, niet als helden,\nmaar als mensen, naakt en kwetsbaar,\nop zoek naar uw genade die de tijd omspant.\n\nAmen.",
+        "bijbels_taalveld": "Genesis (stof zijn wij), Psalm 90 (vergankelijkheid), zonder expliciete verwijzing naar Ezekiel.",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "Heer, Menszoon,",
+        "aanspraak": "Heer Jezus, Licht van de wereld,",
         "focus": "nood_wereld",
         "structuur": {
           "intenties": [
             {
-              "voor_wie": "de slachtoffers van menselijke machtshonger",
-              "nood": "de 'vreemden' en geweldenaars die huishouden in Soedan en Syrië",
+              "voor_wie": "De slachtoffers van geweld en vergeten conflicten (Soedan, Syrië)",
+              "nood": "Mensen op de vlucht, kinderen in puin",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "hen die hun veiligheid verloren zagen gaan",
-              "nood": "de onbeheersbaarheid van vuur en water, in Californië en dichtbij",
+              "voor_wie": "De schepping en slachtoffers van natuurrampen",
+              "nood": "Vuur in Californië, water dat stijgt, aarde die zucht",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "de eenzamen in ons midden",
-              "nood": "de stilte achter de voordeuren terwijl buiten het vuurwerk knalt",
+              "voor_wie": "De eenzamen in het dorp",
+              "nood": "Wie vanavond de gordijnen sluit en niemand verwacht",
+              "kyrie_refrain": true
+            },
+            {
+              "voor_wie": "Onszelf en onze onrust",
+              "nood": "Angst voor de toekomst, de leegte achter de feestverlichting",
               "kyrie_refrain": true
             }
           ]
         },
-        "tekst": "Heer, Menszoon,\n\nTerwijl wij hier veilig schuilen, roept de wereld om recht.\nWij bidden U voor de plekken waar machthebbers zich god wanen\nen waar de kleinen worden vertrapt onder hun gewicht.\nVoor de miljoenen in Soedan, vergeten door onze camera's,\nvoor wie geen huis meer heeft, geen grond, geen morgen.\nOmdat de menselijke maat zoek is geraakt in het geweld.\n\nKyrie eleison.\n\nWij bidden U voor de schepping die zucht.\nVoor de bossen die branden en de rivieren die treden buiten hun oevers.\nVoor allen die dachten veilig te zijn in hun burchten van steen,\nmaar die vannacht dakloos naar de hemel staren.\nVoor de broosheid van ons bestaan, hier op de snelweg en ver weg.\n\nKyrie eleison.\n\nWij bidden U voor de stilte in ons eigen dorp.\nVoor de weduwnaar die de klok hoort tikken in een leeg huis.\nVoor de jongere die vastloopt in de eisen van perfectie.\nVoor ieder die vannacht de balans opmaakt en bang is voor het totaal.\nWees Gij hun toevlucht, nu alles wankelt.\n\nKyrie eleison.",
-        "echo_schriftlezing": "De verwoestende kracht van de 'vreemden' en de kwetsbaarheid van menselijke bouwwerken.",
+        "tekst": "Heer Jezus, Licht van de wereld,\n\nTerwijl buiten de vuurpijlen de lucht kleuren,\nroepen wij tot U vanuit het donker van deze aarde.\n\nVoor de mensen in Soedan, die geen huis meer hebben om naar terug te keren.\nVoor de kinderen die slapen onder plastic zeilen,\nvoor wie vannacht geen oliebollen eet maar vecht om brood.\nVoor de vergeten oorlogen die onze kranten niet meer halen.\nKyrie eleison.\n\nVoor uw schepping die kreunt en kraakt.\nVoor de bossen die branden en de rivieren die buiten hun oevers treden.\nVoor de boer die naar de lucht kijkt en twijfelt,\nvoor de natuur die wij hebben uitgeput in onze haast naar meer.\nKyrie eleison.\n\nVoor wie vanavond in ons eigen dorp de stilte vreest.\nDe vrouw die alleen aan tafel zit en een naam fluistert die niemand meer noemt.\nDe jongere die zich verliest in schermen omdat de echte wereld te zwaar voelt.\nVoor wie ziek is en het nieuwe jaar met beven tegemoet ziet.\nKyrie eleison.\n\nVoor ons eigen onrustige hart,\ndat zoekt naar houvast in een wereld die wankelt.\nOntferm U over ons, Heer.\n\nAmen.",
+        "bijbels_taalveld": "Psalmen van klacht, de schepping die zucht (Romeinen 8), zonder expliciete verwijzing naar de lezing.",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Geest van God, Adem van leven,",
-        "focus": "ALLEEN opening voor de Schrift, geen andere thema's",
-        "tekst": "Geest van God, Adem van leven,\n\nWij slaan het oude boek open in deze laatste uren.\nHet woord is scherp als een zwaard,\nhet profeteert tegen onze trots.\n\nBreek door het pantser van onze eigenwijsheid heen.\nLaat ons niet wegvluchten in 'toen' en 'daar',\nmaar zet ons stil voor de spiegel van Ezechiël.\n\nBlaas het stof van onze ogen,\nzodat wij zien wie wij zijn:\nmensen van aarde, geliefd en begrensd.\nSpreek, opdat wij leven.\n\nAmen.",
-        "echo_schriftlezing": "Het beeld van 'wijsheid' die ontmaskerd moet worden om de waarheid te zien.",
+        "aanspraak": "Geest van God, Adem die leven geeft,",
+        "focus": "Opening voor de Schrift, doorbreken van hardheid",
+        "tekst": "Geest van God, Adem die leven geeft,\n\nHet boek ligt open, maar onze ogen zijn vaak gesloten.\nWij zijn vol van onze eigen wijsheid,\nvan de ruis van het jaar, van de meningen van de dag.\n\nBreek door onze pantsering heen.\nBlaas het stof van de oude woorden\ntot ze vonken en vuur worden in ons midden.\nMaak ons stil genoeg om te horen wat U zegt,\nook als het schuurt, ook als het pijn doet.\n\nSpreek, Heer, uw gemeente luistert.\n\nAmen.",
+        "bijbels_taalveld": "Ezechiël 37 (Geest/Adem), Samuël (Spreek Heer), zonder de specifieke inhoud van h28 te verklappen.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Goede God, Vader van alle tijden,",
-        "verbinding_verkondiging": "Dankbaarheid voor de ontmaskering van onze autonomie als een bevrijding, niet als straf.",
+        "aanspraak": "God, onze Rechter en onze Redder,",
+        "verbinding_verkondiging": "Dank voor de bevrijdende ontmaskering dat wij geen god hoeven te zijn.",
         "elementen": {
-          "dank_gehoorde_woord": "dank dat U ons terugroept naar onze menselijke maat",
-          "vraag_kracht_bewaren": "help ons om niet opnieuw die troon te beklimmen in 2026",
-          "verbinding_dagelijks_leven": "dank voor het gewone leven, de adem, de gemeenschap in dit dorp"
+          "dank_gehoorde_woord": "Dank voor de spiegel van Ezechiël.",
+          "vraag_kracht_bewaren": "Hulp om klein te durven zijn.",
+          "verbinding_dagelijks_leven": "Leven in afhankelijkheid in plaats van maakbaarheid."
         },
-        "tekst": "Goede God, Vader van alle tijden,\n\nWij danken U voor de ademruimte van dit uur.\nWat een bevrijding, dat wij geen god hoeven te zijn.\nDat de troon in het hart van de zeeën al bezet is,\nen dat wij veilig aan de oever mogen staan.\n\nDank U dat U ons bevrijdt van de kramp van de maakbaarheid.\nDat wij de wereld niet hoeven te dragen op onze schouders,\nmaar dat U de dragende grond onder ons bestaan bent.\nWij danken U voor het jaar dat achter ons ligt.\nVoor het licht dat viel over de polder,\nvoor de arbeid van onze handen die vrucht droeg,\nvoor de liefde die wij kregen en mochten geven.\n\nOok voor wat mislukte, voor de barsten in ons succes,\ndanken wij U – want daar kwam U binnen.\nLeer ons in het nieuwe jaar te leven als uw mensen:\nniet hoog verheven, maar met beide benen op de grond,\ndicht bij U en dicht bij elkaar.\n\nAmen.",
-        "echo_schriftlezing": "Het contrast tussen de 'troon in de zee' en de vaste grond van Gods genade.",
+        "tekst": "God, onze Rechter en onze Redder,\n\nWij danken U voor de spiegel die U ons voorhoudt.\nWij danken U dat U ons van onze tronen stoot,\ndat U onze waan doorprikt,\nen ons teruggeeft aan onszelf: mensen, slechts mensen.\n\nWat een bevrijding, dat wij de wereld niet hoeven te dragen.\nDat wij niet alwetend hoeven te zijn als Daniël,\ndat wij niet de architecten zijn van ons eigen geluk,\nmaar schepselen die leven van uw adem.\n\nDank U, dat U de hoogmoed breekt die ons eenzaam maakt.\nDat U dwars door onze muren van goud en techniek heen breekt\nom ons te vinden in onze kwetsbaarheid.\n\nWij danken U voor het afgelopen jaar.\nVoor de momenten dat onze plannen mislukten en wij U vonden in de brokstukken.\nVoor de liefde die wij niet kochten, maar kregen.\nVoor de adem in onze longen, die wij niet zelf maakten.\nVoor Jezus Christus, die geen troon zocht, maar een kribbe en een kruis,\nom ons in onze diepte nabij te zijn.\n\nAmen.",
+        "echo_schriftlezing": "Expliciete verwijzingen naar 'tronen', 'Daniël', 'goud', 'muren' en de tegenstelling mens/god uit Ezechiël 28.",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "Trouwe God,",
+        "aanspraak": "Vader in de hemel, Heer van de tijd,",
         "cirkels": {
           "wereld": {
             "themas": [
-              "de hoogmoed van economische machten",
-              "vrede voor de ontheemden"
+              "De machthebbers en hun verantwoordelijkheid",
+              "Vluchtelingen in Soedan en Syrië",
+              "De dreiging van technologie zonder moraal"
             ],
-            "tekst": "Wij bidden voor uw wereld, die kraakt in zijn voegen.\nVoor leiders die bouwen op zand en vertrouwen op staal.\nBreek hun trots, niet om te vernietigen, maar om te redden.\nWij bidden voor de vluchtelingenstromen die geen einde kennen,\ndat er ergens een haven is die opengaat."
+            "tekst": "Vader in de hemel, Heer van de tijd,\n\nWij bidden voor deze wereld, uw eigendom.\nVoor de vorsten van deze aarde, die denken dat ze goden zijn.\nDat zij hun macht leren zien als een tijdelijke lening.\nBreek de hardheid van de tirannen,\nen geef wijsheid aan hen die vrede zoeken.\nWij bidden voor de miljoenen op drift in Soedan en Syrië,\nvoor wie geen veilige haven heeft, geen stad in de zee,\nmaar slechts het zand van de woestijn.\nWees Gij hun burcht."
           },
           "kerk": {
             "themas": [
-              "de kerk als plek van nederigheid",
-              "vervolgde broeders en zusters"
+              "De kerk als plek van waarheid",
+              "Vervolgde christenen",
+              "Verbinding tussen generaties"
             ],
-            "tekst": "Wij bidden voor uw kerk, wereldwijd en hier in de wijk.\nDat wij geen burcht van gelijkhebbers zijn,\nmaar een herberg voor zoekers.\nBewaar hen die uw Naam belijden op plekken waar dat levensgevaarlijk is.\nLaat hun geloof ons beschamen en bemoedigen."
+            "tekst": "Wij bidden voor uw kerk, wereldwijd en hier in de polder.\nDat zij een plek mag zijn waar de menselijke maat geldt.\nBewaar ons voor de hoogmoed om te denken dat wij de waarheid bezitten,\nmaar leer ons de Waarheid te dienen.\nWees bij onze broeders en zusters die hun geloof moeten belijden\nonder de druk van regimes die geen andere god dulden."
           },
           "naasten": {
             "themas": [
-              "zieken en gewonden (A12)",
-              "rouwenden aan het einde van het jaar"
+              "Jongeren en toekomststress",
+              "Ouderen en vergankelijkheid",
+              "Gezinnen onder druk"
             ],
-            "tekst": "Wij bidden voor wie vanavond een lege stoel ziet staan.\nVoor hen die het jaar afsluiten met een verlies dat nog rauw voelt.\nWij noemen de slachtoffers van de ongevallen op onze wegen,\nen hen die waken aan een ziekbed terwijl de wereld feestviert.\nWees Gij hun troost, als menselijke woorden tekortschieten."
+            "tekst": "Wij bidden voor de mensen om ons heen.\nVoor de jongeren in onze wijken, die opgroeien in een wereld van schermen en perfectie.\nDat zij weten dat ze geliefd zijn, niet om wat ze presteren, maar om wie ze zijn.\nVoor de vaders en moeders die alle ballen in de lucht houden,\ngeef hen de moed om soms iets te laten vallen en te rusten.\nVoor de ouderen, voor wie het lichaam brozer wordt,\ndat zij niet bang zijn voor de 'vreemdeling' die dood heet,\nmaar uw hand voelen in het donker."
           },
           "eigen_gemeente": {
             "themas": [
-              "de jeugd en hun toekomst",
-              "vertrouwen voor 2026"
+              "De Morgenster",
+              "Rouwenden in het afgelopen jaar",
+              "De overgang naar 2026"
             ],
-            "tekst": "Wij bidden voor onze eigen gemeenschap, hier aan het water.\nVoor de ouderen die de jaren voelen wegen,\nvoor de jongeren die hun weg zoeken in een wereld vol techniek.\nZegen ons werk, onze gezinnen, en onze eenzaamheid.\nGa met ons mee de drempel over, het onbekende jaar in."
+            "tekst": "Wij bidden voor deze gemeente, De Morgenster.\nVoor de lege plekken in de banken, de namen die wij missen.\nWij noemen in de stilte hen die ons dit jaar ontvallen zijn...\n\n*(Korte stilte)*\n\nTroost wie achterbleef met een leeg huis.\nZegen ons als wij straks de drempel overgaan naar 2026.\nNiet met de zekerheid van onze eigen kracht,\nmaar met het vertrouwen dat U er al bent."
           }
         },
-        "stilte_instructie": "*In de stilte leggen wij onze persoonlijke namen en zorgen in uw hand...*",
-        "overgang_onze_vader": "Samen, als kinderen van één Vader, bidden wij:",
+        "stilte_instructie": "*Stilte voor persoonlijke gebedsintenties*",
+        "overgang_onze_vader": "Samen bidden wij het gebed dat Jezus, de ware Koning, ons leerde:",
         "onze_vader": "Onze Vader die in de hemelen zijt,\nuw naam worde geheiligd;\nuw Koninkrijk kome;\nuw wil geschiede, gelijk in de hemel, alzo ook op de aarde.\nGeef ons heden ons dagelijks brood;\nen vergeef ons onze schulden, gelijk ook wij vergeven onze schuldenaren;\nen leid ons niet in verzoeking, maar verlos ons van de boze.\nWant van U is het Koninkrijk en de kracht en de heerlijkheid tot in eeuwigheid.\nAmen."
       }
     },
     "poetische_technieken_gebruikt": {
       "parallellisme": [
-        "Niet alleen de winst... maar ook de rode cijfers",
-        "Voor de bossen die branden en de rivieren die treden"
+        "De woorden die sneden... de stilte waar wij hadden moeten spreken... de hand die in de zak bleef",
+        "Niet als helden, maar als mensen"
       ],
       "drieslag": [
-        "geen huis meer heeft, geen grond, geen morgen",
-        "onze werk, onze gezinnen, en onze eenzaamheid"
+        "De last van onze schouders, de pretentie van ons weten, de kramp van ons moeten",
+        "Uw naam, uw koninkrijk, uw wil"
       ],
       "anafoor": [
-        "Voor de... Voor de... Voor de... (in Kyrie)",
-        "Dank U dat... Dank U dat... (in Dankgebed)"
+        "Voor de mensen in Soedan... Voor de kinderen die slapen... Voor wie vannacht...",
+        "Wij danken U... Wij danken U... Dank U..."
       ],
       "inclusio": [
-        "Drempelgebed begint met 'uit de nacht' en eindigt met 'als mensen van U' (licht)",
-        "Kyrie begint met 'veilig schuilen' en eindigt met 'toevlucht'"
+        "Drempelgebed begint met 'Op de drempel' en eindigt met 'binnenkomen'",
+        "Kyrie begint met 'Licht' en eindigt met gebed voor 'onrustig hart' in het donker"
       ],
       "zintuiglijke_taal": [
-        "Modder aan schoenen (voelen/zien)",
-        "Onrust gonst (horen)",
-        "Wind door mantels waait (voelen)",
-        "Klok horen tikken (horen)",
-        "Rode cijfers (zien)"
+        "Modder aan onze schoenen",
+        "Woorden die sneden als glas",
+        "Oliebollen en brood",
+        "Vonken en vuur",
+        "Schermen en perfectie"
       ],
       "lokale_beelden": [
-        "Modder van de polder",
-        "Hier aan de snelweg (A12)",
-        "Hier aan het water (Gouwe)",
-        "Stilte in ons eigen dorp"
+        "De polder",
+        "Het water dat stijgt (zuidplaspolder)",
+        "De stilte in het dorp",
+        "Vissers/logistiek (impliciet in 'haven' en 'schepen')",
+        "De 'nieuwe wijken' (impliciet in jongeren/perfectie)"
       ]
     },
     "echo_techniek": {
-      "schriftlezing_thema": "De val van de menselijke hoogmoed (Tyrus) en de erkenning van de menselijke maat.",
-      "echo_per_gebed": {
-        "drempelgebed": "Vorsten in ons eigen koninkrijkje / wijsheid die stormen dwingt",
-        "kyrie": "Machthebbers die zich god wanen / burchten van steen",
-        "epiclese": "Scherp als een zwaard / spiegel van Ezechiël",
-        "dankgebed": "Troon in het hart van de zeeën / kramp van maakbaarheid",
-        "voorbeden": "Leiders die bouwen op zand / vertrouwen op staal"
+      "schriftlezing_thema": "De val van de hoogmoedige mens die god wil zijn (Ezechiël 28)",
+      "impliciet_taalveld_voor_lezingen": {
+        "drempelgebed": "Focus op menselijke maat en falen, zonder de 'vorst' te noemen.",
+        "kyrie": "Focus op de gevolgen van menselijke machtshonger (oorlog, klimaat), zonder Tyrus te noemen.",
+        "epiclese": "Focus op het doorbreken van hardheid (het 'hart van steen' uit Ezechiël, algemeen profetisch)."
+      },
+      "expliciete_echo_na_lezingen": {
+        "dankgebed": "Gebruik van 'tronen', 'Daniël', 'architecten', 'mensen en geen goden'.",
+        "voorbeden": "Bidden voor 'vorsten die denken dat ze goden zijn', 'veilige haven/stad in zee'."
       }
     }
   },
   "14_gebeden_dialogisch": {
-    "stijl_analyse": "Dit gebed is vormgegeven als een eerlijke confrontatie tussen de menselijke behoefte aan controle en de goddelijke soevereiniteit, waarbij de nuchtere realiteit van Waddinxveen (logistiek, techniek) fungeert als het decor voor een gesprek dat vroomheid inruilt voor existentiële directheid.",
+    "stijl_analyse": "De gebeden hanteren de dialectische spanning van Dumas door consequent de 'goddelijke belofte' tegenover de 'menselijke realiteit' te plaatsen, vaak beginnend met een afstandelijke observatie in de derde persoon die kantelt naar een directe, soms schurende aanspraak in de tweede persoon. De zinsbouw varieert sterk tussen korte, staccato constateringen van onmacht en langere, meanderende zinnen die de complexiteit van de moderne 'Tyrus-ervaring' in Waddinxveen trachten te omvatten.",
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Onze God, hier zijn wij dan.",
-        "tekst": "De mens sluit de boeken. \nHij telt zijn winst, hij bergt zijn zorgen op in mappen, hij kijkt naar de klok en wacht op het geluid van de knallen die het oude jaar moeten verdrijven. \nDe mens heeft het jaar ingericht, de wijken gebouwd, de wegen geasfalteerd en de schatkamers gevuld met wat hij noemt: zekerheid. \nMaar onder de glans van de kerstverlichting trilt de grond. \n\n[overgang] \n\nOnze God, hier zijn wij dan, op deze plaats van samenkomst. \nWij komen niet omdat wij alles begrijpen, maar omdat de stilte thuis soms te luid is. \nWij komen uit de files van de A12, uit de glazen kantoren van het Distripark, uit de jonge straten van de Triangel waar de verf nog maar net droog is. \nZij zeggen dat geloof een rustpunt is. \nWij ervaren het vaak als een onrust. \nZij zeggen dat de kerk de antwoorden heeft. \nWij hebben vooral meer vragen meegenomen dan vorig jaar. \n\nBent U hier? \nOf zijn wij alleen met onze eigen echo? \nWij spreken tot U, niet omdat wij zo vroom zijn, maar omdat wij weigeren te geloven dat dit alles is: werken, kopen, slapen, sterven. \nU, de Andere, de Onbekende die ons bij de naam noemt: \nHerken ons in onze aarzeling. \nDoorbreek onze zelfgenoegzaamheid. \nWij staan op de drempel van een nieuw jaar en wij weten niet of wij de sleutel hebben. \nSpreek dan, als U daar bent. \nWij luisteren, al is het met tegenzin.",
-        "echo_schriftlezingen": "Ezechiël 28:2 - De mens die zijn hart gelijkstelt aan het hart van God.",
+        "aanspraak": "Onze God, Gij die blijft als de jaren vallen,",
+        "tekst": "Hier zijn wij dan.\nDe laatste uren tikken weg. De balans wordt opgemaakt in de boeken en in de hoofden.\nWij komen uit huizen waar de warmte soms verstikkend is en soms een zegen.\nWij komen van de wegen die vastliepen, uit de polder die altijd maar water moet slikken, uit de drukte van een jaar dat beloofde ons verder te brengen maar ons vooral ouder heeft gemaakt.\n\nWaarom zijn wij hier?\nGewoontedieren zijn we, zeggen ze. Misschien is dat waar.\nBang voor de stilte van de overgang? Waarschijnlijk.\nOf is het omdat er ergens, diep onder de lagen van onze drukte en onze data, een honger zit die niet gestild wordt door oliebollen of jaaroverzichten?\n\nMen zegt dat U de Tijd in handen hebt.\nWij voelen vooral dat de tijd ons door de vingers glipt.\nMen zegt dat U de Eeuwige bent.\nWij voelen ons zo pijnlijk tijdelijk vanavond.\n\nMaar wij zijn er.\nMet onze geslaagde projecten en onze stille mislukkingen.\nMet wat we hebben opgebouwd in steen en wat we hebben afgebroken in relaties.\nU die de mens ziet en niet alleen zijn prestaties,\nzie ons aan.\nNiet als helden, niet als slachtoffers.\nMaar als mensen die op de drempel staan en niet weten wat er achter de deur ligt.",
+        "bijbels_taalveld": "Tijd en Eeuwigheid, de menselijke maat, het zoeken van het Aangezicht (zonder expliciete Ezechiël-citaten).",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "Onze God, kijk naar de wereld die wij menen te besturen.",
+        "aanspraak": "God van de geschiedenis, of God van de stilte?",
         "focus": "confrontatie_en_realiteit",
-        "tekst": "De kranten liggen op tafel en zij spreken een taal die wij niet willen horen. \nZij spreken over Soedan, waar twaalf miljoen mensen dwalen in de anonimiteit van het lijden, terwijl wij de balans opmaken van onze eigen vakantiedagen. \nZij spreken over Syrië, waar de puinhopen van de macht de hoop verstikken. \nZij spreken over de A12, hier bij onze eigen voordeur, waar het metaal verwrongen raakte en de tijd in één seconde stilstond voor een mens van vlees en bloed. \n\nU zegt: 'Ik ben de God van het leven.' \nMaar wij zien de dood die ons uitlacht. \nU zegt: 'Ik heb de nood gezien.' \nWaarom blijft de hemel dan zo blauw boven de brandende steden? \n\nWij belijden U onze hoogmoed, God. \nNiet de hoogmoed van de grote gebaren, maar de stille arrogantie van onze maakbaarheid. \nWij dachten dat wij met onze algoritmes en onze AI 'wijzer dan Daniël' waren geworden. \nWij dachten dat wij de risico's konden weg-managen. \nWij dachten dat wij goden waren op onze eigen kleine troon in het hart van de polder. \nEn nu staan wij hier, onthand door de berichten van ontslag omdat een machine ons werk beter kan. \nWij zijn bang, God. \nBang dat wij niet meer nodig zijn. \nBang dat onze rijkdom een 'schatkamer van zand' is. \n\nU zegt: 'Vrees niet.' \nMaar wij vrezen wel. \nWij vrezen de vreemden die onze zekerheid ontheiligen. \nWij vrezen de spiegel van Ezechiël die ons vertelt dat wij sterfelijk zijn. \nVergeef ons dat wij probeerden de wereld op onze eigen schouders te dragen. \nHet is te zwaar. \nWij zijn medeplichtig aan de onverschilligheid die de wereld koud maakt. \nWij hebben gezwegen toen de wees riep, omdat wij te druk waren met onze eigen winstmarges. \nOntmasker onze leugen. \nBevrijd ons van de plicht om god te moeten zijn. \nOntferm U over ons, want wij kunnen onszelf niet redden uit de kuil die wij zelf hebben gegraven.",
-        "echo_schriftlezingen": "Ezechiël 28:3, 7, 9 - Wijzer dan Daniël, de vreemden die de schoonheid ontheiligen.",
+        "tekst": "De wereld draait door, zeggen wij tegen elkaar.\nMaar waarheen draait zij?\nWij lezen de berichten en wij weten het niet meer.\n\nU wordt genoemd: de God van het recht.\nDe God die de wees en de weduwe beschermt.\nDat staat in de oude boeken. Dat zingen wij in onze psalmen.\nMaar wij kijken naar het zuiden, naar Soedan, waar twaalf miljoen mensen dwalen als spoken in hun eigen land, vergeten door onze camera's, vergeten door onze diplomatie.\nWaar is Uw recht daar?\nHeeft U Uw gezicht afgewend? Of zijn wij het die onze ogen sluiten omdat het beeld niet past bij onze feeststemming?\n\nU wordt genoemd: de Schepper die bewaart.\nMaar de bossen in Californië branden als fakkels en de verzekeraars tellen de miljarden.\nDe aarde kreunt, en wij vergaderen.\nWij bouwen dijken en wij bouwen torens, en wij denken dat wij de elementen meester zijn.\nTotdat het water stijgt. Totdat het vuur niet te blussen is.\n\nEn dichterbij, hier op ons eigen asfalt, klinken de sirenes.\nLevens die in één klap breken op de A12, plannen die in een seconde schroot worden.\nWij dachten dat we veilig waren in onze kooien van staal.\nWij dachten dat we de controle hadden.\n\nZij zeggen: 'Het noodlot slaat toe.'\nWij vragen: 'Waar bent U in het noodlot?'\nAls U de Almachtige bent, waarom grijpt U niet in?\nAls U de Liefde bent, waarom doet het leven dan zo'n pijn?\n\nWij roepen U aan vanuit de diepte van onze onmacht.\nNiet omdat wij recht hebben op antwoord.\nMaar omdat wij nergens anders heen kunnen met onze vragen.\nOntferm U over deze wereld die zichzelf kapot maakt.\nOntferm U over ons, die erbij staan en ernaar kijken.\nHeer, ontferm U.",
+        "bijbels_taalveld": "De roep uit de diepte (De Profundis), de Schepper vs. de chaos, de God van recht vs. onrecht.",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Spreek nu, God, als U werkelijk een Woord hebt voor mensen van stof.",
+        "aanspraak": "Geest die waait waarheen Hij wil,",
         "focus": "woord_als_inbraak",
-        "tekst": "Wij hebben de Bijbel geopend, zoals wij dat al jaren doen. \nMaar vaak is het boek voor ons een museum geworden: mooie verhalen, maar de vitrines zijn van dik glas. \nWij horen de woorden, maar ze raken onze huid niet. \nOnze eigen woordenbrij overspoelt alles; wij praten over U om niet met U te hoeven spreken. \n\nVerbrand ons stro, God. \nLaat uw Woord vandaag een inbraak zijn in onze geordende gedachten. \nMaak het stil in ons, niet de stilte van de leegte, maar de stilte die ruimte maakt voor de Ander. \nLaat de profeet ons niet sparen. \nLaat hem de troon van onze autonomie omverwerpen. \nGeef ons niet wat wij willen horen — een zacht liedje voor het slapengaan — maar geef ons wat wij nodig hebben: de waarheid die ons vrijmaakt om mens te zijn. \nSlechts een mens. \nVoor Uw aangezicht.",
-        "echo_schriftlezingen": "Ezechiël 28:2 - Je bent een mens en geen god.",
+        "tekst": "Wij hebben onze woorden nu wel gehad.\nDe woorden van de krant, de woorden van de politiek, de woorden van onze eigen excuses.\nHet is stro. Het vult, maar het voedt niet.\nHet maakt lawaai, maar het zegt niets.\n\nNu gaat Uw boek open.\nMisschien horen we weer alleen wat we al dachten.\nMisschien horen we weer alleen onze eigen vrome wensen.\n\nBreek daar doorheen.\nWij vragen niet om een mooi verhaal.\nWij vragen om een inbraak.\nVerbrand het stro van onze babbels.\nZwijg ons toe, als dat nodig is.\nOf spreek een woord dat ons dwarszit, dat ons ontregelt, dat ons van onze troon stoot.\nAls er maar *iets* van U klinkt, en niet van ons.\nKom, Geest, en doe Uw werk, want wij kunnen onszelf niet bekeren.",
+        "bijbels_taalveld": "Wind/Adem, het Woord als vuur/zwaard, doofheid vs. horen.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Onze God, wij danken U voor de genade van onze beperking.",
-        "verbining_verkondiging": "De ontmaskering van de vorst van Tyrus als de bevrijding van de mens.",
-        "tekst": "De mens wil alles zijn, maar wij danken U dat wij dat niet hoeven. \nWij danken U voor de grens. \nDank voor de nacht die ons dwingt om te slapen en de controle los te laten. \nDank voor de honger die ons herinnert aan onze afhankelijkheid van de aarde. \nDank voor de ander, die wij niet kunnen bezitten, maar die ons de spiegel voorhoudt. \n\nWij danken U voor het jaar 2025. \nNiet omdat alles goed ging — want dat was niet zo — maar omdat U erbij was in de brokstukken. \nWij danken U voor het brood op de tafel in Waddinxveen, voor de geur van de kassen, voor de nuchtere kracht van mensen die niet opgeven. \nWij danken U voor de momenten van onverwachte tederheid: \neen hand op een schouder bij het graf op de begraafplaats, \neen kind dat lacht in de nieuwbouwwijk, \neen vreemde die de weg wees toen wij verdwaald waren. \n\nZij zeggen dat geluk in de schatkamers zit. \nWij danken U dat wij hebben ontdekt dat het geluk zit in het delen van wat wij hebben. \nWij danken U voor de kribbe van Kerst, die nog steeds nagloeit in deze dienst. \nWat een paradox, God: \nDe Vorst van Tyrus wilde god zijn en viel in de kuil. \nU wilde mens worden en vond ons in de diepte. \n\nWij danken U voor de verantwoordelijkheid die U ons geeft. \nU laat ons niet over aan het lot. \nU vraagt ons om mede-scheppers te zijn van Uw vrede. \nDank dat wij in 2026 weer mogen opstaan, niet als goden die de wereld moeten redden, maar als mensen die een beker koud water mogen geven. \nWij danken U voor de vrijheid om te falen en toch geliefd te zijn. \nU bent de enige God op de troon, en dat is onze grootste rust. \nWij danken U voor de Naam die boven alle namen is, de Naam die ons ook in het nieuwe jaar zal vergezellen.",
-        "echo_schriftlezingen": "Contrast tussen de troon van de vorst en de menswording van God.",
+        "aanspraak": "Onze God, Gij die de hoogmoed breekt en het hart heelt,",
+        "verbinding_verkondiging": "Wij hebben gehoord dat wij geen goden hoeven te zijn.",
+        "tekst": "Wat een opluchting, God.\nWat een ademruimte.\nWij dachten dat wij de wereld moesten dragen.\nWij dachten dat wij op de troon moesten zitten, in het hart van de zeeën, en alles moesten besturen met onze wijsheid en onze techniek.\nWij hebben ons moe vergaderd en moe gepland.\nWij hebben onze schatkamers gevuld en onze zielen geleegd.\n\nEn nu zegt U: 'Kom er maar af. Je bent een mens. Gewoon een mens.'\n\nDank U wel voor die grens.\nDank U wel dat wij sterfelijk mogen zijn.\nDat wij niet alles hoeven te weten, niet alles hoeven te kunnen, niet alles hoeven te redden.\nDank U dat de wereld niet stopt als wij stoppen.\n\nWij danken U voor het afgelopen jaar.\nNiet voor alles. Er was te veel pijn om voor alles te danken.\nMaar wij danken U voor wat er *was* ondanks onze hoogmoed.\nVoor het brood dat naar aarde smaakte en ons voedde.\nVoor het water dat onze dorst leste.\nVoor de hand van een vriend die ons vasthield toen wij wankelden.\nVoor de momenten dat de liefde sterker was dan onze berekening.\n\nZij zeggen dat wij ons geluk zelf moeten maken.\nWij danken U dat het geluk ons soms overkomt, als een genade, als een vreemdeling die onverwachts binnenkomt.\nDank U dat U God bent, en dat wij dat niet hoeven te proberen.\nDat is genoeg voor ons, op deze laatste avond.\nDat is genoeg.",
+        "echo_schriftlezing": "De verwijzing naar 'troon in het hart van de zeeën', 'schatkamers', 'wijsheid', en de kernzin 'Gij zijt een mens'.",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "Onze God, wij leggen de wereld op onze schouders en dragen haar naar U toe.",
+        "aanspraak": "Onze God, wij leggen de wereld niet op onze schouders, maar in Uw handen,",
         "cirkels": {
           "wereld": {
             "themas": [
-              "Politieke macht",
-              "Soedan",
-              "Syrië",
-              "Ontmaskering van dictators"
+              "De machthebbers en hun 'goddelijke' pretenties",
+              "Soedan en Syrië",
+              "De illusie van controle"
             ],
-            "tekst": "Onze God, wij bidden voor hen die op de troon zitten en vergeten zijn dat zij mensen zijn. \nWij bidden voor de machthebbers in de wereldsteden en in de verborgen paleizen, die menen dat zij over leven en dood kunnen beschikken. \nOntmasker hun leugen, God. \nLaat hen hun eigen sterfelijkheid voelen, niet als een vloek, maar als een oproep tot rechtvaardigheid. \nWij roepen tot U voor Soedan — twaalf miljoen stemmen die wij niet horen in ons dorp. \nVergeet hen niet, ook al doen wij dat wel. \nWij bidden voor Syrië, dat de wederopbouw niet de opbouw van nieuwe tirannie zal zijn. \nBreek de zwaarden van de vreemden en de geweldenaars. \nGeef journalisten de moed om de waarheid te schrijven en vakbonden de kracht om op te komen voor de menselijke maat in de economie. \nLaat de wereldhandel niet langer een afgod zijn die mensenlevens offert op het altaar van de winst. \nHeer, hoor ons."
+            "tekst": "Wij bidden voor de vorsten van deze tijd.\nVoor hen die denken dat ze op de stoel van God zitten.\nVoor de leiders in het Kremlin, in het Witte Huis, in de paleizen van de macht.\nZij denken dat ze de geschiedenis schrijven.\nZij denken dat ze wijzer zijn dan Daniël, dat geen geheim voor hen verborgen is.\nOntmasker hen, God.\nLaat hen zien dat ze mensen zijn, sterfelijk, kwetsbaar.\nBreek de wapens uit hun handen voordat ze de aarde vernietigen.\n\nWij bidden voor de slachtoffers van hun hoogmoed.\nVoor de mensen in Soedan, die geen huis meer hebben omdat machthebbers vechten om een troon.\nVoor de mensen in Syrië, die hopen op vrede maar vrezen voor nieuwe tirannen.\nU bent de Rechter.\nSpreek recht. Niet later, in de eeuwigheid. Maar hier, nu.\nLaat de 'vreemden' geen instrumenten van dood zijn, maar bodes van vrede."
           },
           "kerk": {
             "themas": [
-              "Techniek",
-              "AI",
-              "Ecologie",
-              "Bio-ethiek"
+              "Technologische hoogmoed (AI)",
+              "Ecologische grenzen",
+              "De maakbaarheid van het leven"
             ],
-            "tekst": "Onze God, wij bidden voor de wereld van de techniek en de 'wijsheid' van onze tijd. \nWij bidden voor de bouwers van de algoritmen en de ontwerpers van AI. \nGeef hen een hart dat niet gelijkgesteld is aan het hart van een god, maar een hart dat klopt voor de menselijke waardigheid. \nBehoed ons voor een wereld waarin de machine de maatstaf wordt en de zwakke mens wordt weggefilterd. \nWij bidden voor de schepping die zucht onder onze drang naar meer. \nKijk naar de vuren in Californië, naar de smeltende ijskappen, naar de uitgeputte aarde. \nWij dachten dat wij de natuur konden beheersen, maar zij ontsnapt ons. \nGeef ons de moed voor een ecologische bekering. \nLeer ons te leven van wat genoeg is, in plaats van te jagen op wat onze schatkamers vult maar de aarde leegroofs. \nMaak ons tot rentmeesters die weten dat de aarde van U is en niet van onze BV's. \nHeer, hoor ons."
+            "tekst": "Wij bidden voor onze eigen slimheid, God.\nVoor onze techniek, onze algoritmen, onze kunstmatige intelligentie.\nWij bouwen torens van data die tot in de hemel reiken.\nWij willen scheppers zijn van ons eigen evenbeeld.\nWij willen ziektes uitbannen en de dood opschorten.\n\nBewaar ons voor de waanzin dat wij het leven zelf kunnen maken.\nHerinner ons eraan dat wij stof zijn.\nDat onze harde schijven kunnen crashen en onze netwerken kunnen vallen.\n\nWij bidden voor Uw schepping, die wij behandelen als een pakhuis.\nWij zien de vlammen en de stormen.\nLeer ons rentmeesters te zijn in plaats van rovers.\nLeer ons dat 'genoeg' een woord is dat werkelijk bestaat.\nMaak onze handen niet langer werkeloos uit angst voor de toekomst, maar maak ze vaardig om te zorgen voor wat kwetsbaar is."
           },
           "naasten": {
             "themas": [
-              "Zorg",
-              "Eenzaamheid",
-              "Slachtoffers A12",
-              "Systeemdruk"
+              "Verkeersslachtoffers A12",
+              "Eenzaamheid en rouw",
+              "De onzichtbare pijn achter de voordeur"
             ],
-            "tekst": "Onze God, wij bidden voor de mensen die wij dagelijks zien maar niet altijd opmerken. \nWij bidden voor hen die in de zorg werken in Waddinxveen, die de lichamen wassen en de tranen drogen, die de rauwe kant van het leven aanraken terwijl de rest van het dorp viert. \nGeef hen volharding. \nWij bidden voor de eenzamen in de Sterrenlaan en de Oranjelaan, voor wie de jaarwisseling slechts een herinnering is aan wie er niet meer zijn. \nWij bidden voor de slachtoffers van de ongevallen op de weg, voor de getraumatiseerde getuigen en de hulpverleners die het beeld niet uit hun hoofd krijgen. \nWij bidden voor de mensen die vastlopen in de systemen van onze overheid, voor wie de 'wijsheid' van de wet een onneembare muur is geworden. \nLaat hen niet alleen in de kuil. \nGeef ons ogen die zien waar de nood is, ook achter de glanzende voordeuren van onze nieuwbouwwijken. \nHeer, hoor ons."
+            "tekst": "Wij bidden voor de mensen hier, dichtbij, voor wie 2025 een jaar met een zwarte rand is geworden.\nVoor de families die vanavond een lege stoel hebben.\nVoor hen die betrokken waren bij de ongelukken op de snelweg hier vlakbij.\nIn één seconde was alles anders.\nDe controle weg. De plannen weg.\nWees bij hen in de shock en in de stilte die volgt.\n\nWij bidden voor hen die vanavond alleen zitten.\nVoor wie de feestdagen een vergrootglas zijn op het gemis.\nVoor de ouderen die hun generatiegenoten zien wegvallen.\nVoor de jongeren die vastlopen in de druk om te presteren, om perfect te zijn, om 'god' te zijn over hun eigen imago.\nDoorboor hun eenzaamheid.\nNiet met makkelijke woorden, maar met een mens die naast hen gaat zitten.\nMaak ons die mens."
           },
           "eigen_gemeente": {
             "themas": [
-              "De Morgenster",
-              "Jeugd",
-              "Waddinxveen",
-              "Openheid"
+              "De Morgenster in Waddinxveen",
+              "Verbinding oud en nieuw",
+              "Echtheid vs. schone schijn"
             ],
-            "tekst": "Onze God, wij bidden voor onszelf, de gemeente van De Morgenster. \nLaat ons geen gesloten vesting zijn in Waddinxveen, maar een open huis waar de menselijke maat wordt gevierd. \nWij bidden voor onze jongeren die opgroeien in een wereld die hen dwingt om succesvol te zijn. \nBevrijd hen van de druk om goden te moeten zijn op sociale media. \nVertel hen dat zij geliefde mensen zijn, juist in hun kwetsbaarheid. \nWij bidden voor onze ondernemers en logistiek planners: \nGeef hen wijsheid die niet hoogmoedig maakt, maar dienstbaar aan de gemeenschap. \nZegen onze predikant en de kerkenraad, dat zij woorden spreken die schuren en troosten. \nLaat ons als gemeente een baken van rust zijn in dit Groene Hart dat steeds voller wordt. \nGeef dat wij het nieuwe jaar 2026 ingaan met open handen, bereid om te ontvangen wat U geeft en te laten gaan wat niet van U is. \nHeer, hoor ons."
+            "tekst": "Wij bidden voor deze gemeente, hier in dit huis van steen in de polder.\nVoor de mensen die hier al hun hele leven komen en voor hen die pas net zijn aangespoeld in de nieuwe wijken.\nLaat ons geen burcht zijn waar wij ons opsluiten in ons eigen gelijk.\nLaat ons geen Tyrus zijn, trots op onze eigen rijkdom en traditie.\n\nMaak ons open.\nOpen voor de twijfelaar die niet meer weet of U bestaat.\nOpen voor de zoeker die struikelt over onze dogma's.\nOpen voor elkaar, zonder de maskers van 'het gaat goed'.\nLaat ons een plek zijn waar we mens mogen zijn.\nGewoon mens. Met fouten. Met vragen.\nWant U bent God, en dat is genoeg."
           }
         },
-        "stilte_instructie": "In de stilte leggen wij onze eigen namen en de namen van onze geliefden voor Uw aangezicht...",
-        "overgang_onze_vader": "Wij vatten al onze gebeden samen in de woorden die Uw Zoon ons leerde:",
-        "onze_vader": "Onze Vader die in de hemelen zijt, \nuw naam worde geheiligd; \nuw koninkrijk kome; \nuw wil geschiede, op aarde zoals in de hemel. \nGeef ons heden ons dagelijks brood; \nen vergeef ons onze schulden, zoals ook wij vergeven aan onze schuldenaren; \nen leid ons niet in verzoeking, maar verlos ons van de boze. \nWant van U is het koninkrijk en de kracht en de heerlijkheid in eeuwigheid. \nAmen."
+        "stilte_instructie": "In de stilte leggen wij onze eigen balans van het jaar voor U neer. Wat gelukt is en wat mislukt is. U weet het.",
+        "overgang_onze_vader": "Zo bidden wij, als mensen, tot U die onze Vader wilt zijn, met de woorden die Jezus ons gaf:",
+        "onze_vader": "Onze Vader die in de hemelen zijt,\nUw naam worde geheiligd.\nUw koninkrijk kome.\nUw wil geschiede, op aarde zoals in de hemel.\nGeef ons heden ons dagelijks brood.\nEn vergeef ons onze schulden, zoals ook wij onze schuldenaren vergeven.\nEn leid ons niet in verzoeking, maar verlos ons van de boze.\nWant van U is het koninkrijk en de kracht en de heerlijkheid in de eeuwigheid.\nAmen."
       }
     },
     "dialogische_elementen": {
       "directheid_voorbeelden": [
-        "Onze God, hier zijn wij dan.",
-        "Bent U hier? Of zijn wij alleen met onze eigen echo?",
-        "Verbrand ons stro, God."
+        "Hier zijn wij dan.",
+        "Waarom zijn wij hier?",
+        "Wat een opluchting, God.",
+        "Ontmasker hen, God.",
+        "Dat is stro."
       ],
       "vraag_antwoord_structuren": [
-        "Waarom komen wij? Gewoontetrouw? Uit angst? Uit hoop? Misschien alledrie.",
-        "Vindt U ons dan, als wij U niet kunnen vinden?"
+        "Waarom zijn wij hier? / Gewoontedieren zijn we, zeggen ze.",
+        "Heeft U Uw gezicht afgewend? / Of zijn wij het die onze ogen sluiten?",
+        "Zij zeggen: 'Het noodlot slaat toe.' / Wij vragen: 'Waar bent U in het noodlot?'"
       ],
       "derde_persoon_gebruik": [
-        "De mens sluit de boeken. Hij telt zijn winst... [overgang] Onze God, hier zijn wij dan.",
-        "De mens wil alles zijn... [overgang] Wij danken U voor de genade van onze beperking."
+        "Men zegt dat U de Tijd in handen hebt. [overgang] Wij voelen vooral dat de tijd ons door de vingers glipt.",
+        "De wereld draait door, zeggen wij tegen elkaar. [overgang] Maar waarheen draait zij?",
+        "Zij denken dat ze de geschiedenis schrijven. [overgang] Ontmasker hen, God."
       ],
       "god_laten_spreken": [
-        "U zegt: 'Ik ben de God van het leven.' Maar wij zien de dood die ons uitlacht.",
-        "U zegt: 'Vrees niet.' Maar wij vrezen wel."
+        "En nu zegt U: 'Kom er maar af. Je bent een mens.'",
+        "U wordt genoemd: de God van het recht."
       ],
       "tegenspraak": [
-        "Zij zeggen dat geloof een rustpunt is. Wij ervaren het vaak als een onrust.",
-        "Zij zeggen dat de kerk de antwoorden heeft. Wij hebben vooral meer vragen."
+        "Men zegt dat U de Eeuwige bent. / Wij voelen ons zo pijnlijk tijdelijk.",
+        "Zij geloven in vooruitgang. / Wij zien alleen achteruitgang (impliciet in Kyrie).",
+        "Wij dachten dat wij op de troon moesten zitten. / En nu zegt U: 'Kom er maar af.'"
       ],
       "zinsvariatie_voorbeelden": [
-        "Wisseling tussen de lange beschrijving van de Waddinxveense logistieke context en de korte, scherpe vaststelling: 'Wij zijn bang, God.' Dit geeft ritme aan de existentiële nood."
+        "Kort: 'Maar wij zijn er.' Lang: 'Met wat we hebben opgebouwd in steen en wat we hebben afgebroken in relaties.' (Drempelgebed)",
+        "Kort: 'Het is stro.' Lang: 'Wij hebben onze woorden nu wel gehad, de woorden van de krant...' (Epiclese)",
+        "Staccato opsomming: 'De controle weg. De plannen weg.' (Voorbeden)"
       ],
       "elementaire_beelden": [
-        "Brood op de tafel in Waddinxveen",
-        "De kribbe versus de troon",
-        "Schatkamers van zand",
-        "De kuil van onze maakbaarheid"
+        "Brood dat naar aarde smaakt",
+        "Huis van steen in de polder",
+        "Stro (woordenbrij)",
+        "Torens van data",
+        "Water dat moet slikken"
       ],
       "verantwoordelijkheid_focus": [
-        "Het gebed vraagt niet om een magisch ingrijpen in Soedan, maar om het einde van onze onverschilligheid en het herstel van onze verantwoordelijkheid als rentmeesters."
+        "Maak onze handen niet langer werkeloos uit angst voor de toekomst.",
+        "Wij vragen niet om een mooi verhaal, wij vragen om een inbraak.",
+        "Laat ons rentmeesters zijn in plaats van rovers."
       ]
     }
   },
@@ -3579,243 +3597,241 @@
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Trouwe God",
+        "aanspraak": "Lieve Vader in de hemel,",
         "elementen": {
-          "verootmoediging": "Wij staan hier op de drempel van een nieuw jaar. Wij zijn maar kleine mensen. Soms vergeten wij dat U God bent en wij niet.",
-          "schuldbelijdenis": "Het afgelopen jaar dachten wij vaak dat wij alles zelf konden. Wij bouwden onze eigen koninkrijkjes. Wij dachten alleen aan ons eigen succes.",
-          "verlangen": "Wij willen nu alles even loslaten. Wij willen weten dat U de wereld draagt en niet wij."
+          "verootmoediging": "Wij zijn maar kleine mensen in een grote wereld.",
+          "schuldbelijdenis": "Soms dachten wij dat we alles zelf konden.",
+          "verlangen": "Nu zoeken wij rust bij U."
         },
-        "tekst": "Trouwe God,\\n\\nWij zijn hier op deze plek in Waddinxveen. Het is de laatste avond van het jaar. Buiten wordt het donker. De klok tikt verder naar 2026. Wij komen bij U met alles wat wij meebrengen uit 2025.\\n\\nGod, wij moeten eerlijk zijn. Soms deden wij alsof wij zelf god waren. Wij dachten dat wij alles konden regelen met ons geld en ons verstand. Wij vulden onze schatkamers en dachten niet aan U. Wij waren hoogmoedig zoals de leider van Tyrus.\\n\\nNu staan wij hier met lege handen. Wij weten dat wij kwetsbaar zijn. Wij zijn mensen van stof en as. Maar U bent de God die eeuwig is. Vergeef ons dat wij zo groot over onszelf dachten. Raak ons aan met uw liefde. Maak ons hart rustig en open. Wij willen dit uur helemaal bij U zijn. Amen.",
-        "echo_schriftlezing": "De tegenstelling tussen de mens (Adam) en God (El) uit Ezechiël 28:2.",
+        "tekst": "Lieve Vader in de hemel,\n\nWij zijn hier bij U. \nHet jaar is bijna voorbij. \nBuiten is het donker en koud.\nBinnen zoeken wij uw warmte.\n\nWij brengen het hele jaar naar U toe.\nDe mooie dingen, waar wij blij mee waren.\nMaar ook de dingen die fout gingen.\nSoms dachten wij: wij kunnen alles zelf.\nWij dachten dat wij groot en sterk waren.\nWij vergaten dat wij U nodig hebben.\n\nDat spijt ons, God.\nWij zijn maar mensen.\nWij zijn geen goden.\nNeem ons aan zoals wij zijn.\nSla uw armen om ons heen.\nGeef ons rust op deze avond.\n\nAmen.",
+        "bijbels_taalveld": "De menselijke maat (Psalm 8 / Genesis), thuiskomen bij de Vader, rust vinden.",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "Heer, ontferm U",
+        "aanspraak": "God van ons leven,",
         "focus": "nood_wereld",
         "structuur": {
           "intenties": [
             {
-              "voor_wie": "Mensen in Soedan en Syrië",
-              "nood": "Zij hebben geen veilig huis en moeten vluchten voor geweld.",
+              "voor_wie": "Mensen in oorlogsgebieden (Soedan/Syrië)",
+              "nood": "Zij zijn hun huis en veiligheid kwijt",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "Mensen op de A12 bij ons dorp",
-              "nood": "Er gebeurden ongelukken en de schrik zit er nog in.",
+              "voor_wie": "Mensen die verdriet hebben (lokaal/A12 ongevallen)",
+              "nood": "Het leven is soms plotseling kapot",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "Mensen die zich zorgen maken over hun werk",
-              "nood": "Alles verandert door techniek en computers en dat maakt hen bang.",
+              "voor_wie": "Mensen die bang zijn voor de toekomst (2026)",
+              "nood": "De wereld verandert zo snel en wordt duurder",
               "kyrie_refrain": true
             }
           ]
         },
-        "tekst": "Heer, onze God,\\n\\nWij brengen de pijn van deze wereld bij U. Wij denken aan de miljoenen mensen in Soedan. Zij hebben geen eten en geen veilig huis. Niemand kijkt naar hen om, maar U kent hen. Wij denken ook aan Syrië, waar na jaren van oorlog nog steeds geen echte vrede is. \\nGod, wees erbij.\\n\\nWij bidden voor ons eigen land. Voor de mensen die zich zorgen maken over het klimaat en de natuur die kapot gaat. Wij denken aan de slachtoffers van de ongelukken op de A12, hier vlakbij ons huis. Het laat ons voelen hoe broos het leven is. Wij hebben de tijd niet in onze eigen hand.\\nGod, wees erbij.\\n\\nWij bidden voor de jongeren in Waddinxveen. Zij moeten hun weg vinden in een wereld die steeds sneller gaat. Soms voelen zij zich alleen of moeten zij teveel van zichzelf. Wij bidden voor mensen die geen geld hebben voor oliebollen of warmte. \\nGod, wees erbij.\\n\\nWij weten het in ons hart: de wereld is gebroken. Maar U bent de God die alles weer heel kan maken. Kom met uw vrede op deze aarde. Amen.",
-        "echo_schriftlezing": "De 'vreemden' en het 'geweld' die de schoonheid ontheiligen (vs 7).",
+        "tekst": "God van ons leven,\n\nDe wereld is niet heel. Er is veel pijn.\nWij brengen die pijn bij U.\n\nWij denken aan mensen ver weg, in landen als Soedan.\nZij moeten vluchten voor geweld.\nZij hebben geen huis meer.\nZij weten niet waar ze moeten slapen.\nGod, wees bij hen.\nHeer, ontferm U.\n\nWij denken aan mensen dichtbij, hier in de buurt.\nEr waren ongelukken op de weg.\nLevens zijn kapot gegaan.\nVoor iedereen die vanavond een lege stoel ziet aan tafel.\nVoor iedereen die iemand moet missen.\nGod, troost hen.\nHeer, ontferm U.\n\nWij denken aan iedereen die zorgen heeft.\nOver geld, of over werk.\nOver de wereld die zo snel verandert.\nWij voelen ons soms klein en bang voor het nieuwe jaar.\nGod, geef ons moed.\nHeer, ontferm U.",
+        "bijbels_taalveld": "De roep uit de diepte (Psalm 130), God als helper van de wees en de weduwe.",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Heilige Geest",
+        "aanspraak": "Heilige Geest,",
         "focus": "begrip_bijbelverhaal",
-        "tekst": "Goede God,\\n\\nUw woord uit de Bijbel is soms scherp als een zwaard. Het snijdt door onze trots heen. Wij gaan nu luisteren naar de profeet Ezechiël. Stuur uw Heilige Geest in ons midden. \\n\\nMaak ons hart zacht en warm. Zorg dat wij niet alleen de woorden begrijpen met ons hoofd, maar dat wij ze ook voelen van binnen. Help ons om niet weg te lopen voor de waarheid. Laat uw Geest door dit huis waaien. Zoals de wind de wolken wegjaagt, jaag zo de mist uit ons verstand. Laat ons ontdekken wie U bent en wie wij mogen zijn. Amen.",
-        "echo_schriftlezing": "De wijsheid die geheimen doorgrondt (vs 3).",
+        "tekst": "Heilige Geest,\n\nKom nu in ons midden.\nWij maken de Bijbel open.\nHet zijn oude woorden.\nSoms vinden wij ze moeilijk.\nSoms is ons hart gesloten.\n\nRaak ons aan.\nMaak ons hart zacht.\nZorg dat wij begrijpen wat U tegen ons zegt.\nNiet alleen met ons verstand, maar diep van binnen.\nGeef ons een woord dat wij nodig hebben voor het nieuwe jaar.\n\nAmen.",
+        "bijbels_taalveld": "Het hart van steen naar vlees (Ezechiël 36), de Geest die levend maakt.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Goede Vader",
-        "verbinding_verkondiging": "Wij hoeven geen god te zijn, we mogen mens zijn.",
+        "aanspraak": "Grote God, onze Vader,",
+        "verbinding_verkondiging": "Wij hoeven geen god te zijn, wij zijn mensen.",
         "elementen": {
-          "dank_gehoorde_woord": "Dank U dat U ons bevrijdt van de druk om perfect te zijn.",
-          "vraag_kracht_bewaren": "Help ons om deze rust vast te houden in 2026.",
-          "verbinding_dagelijks_leven": "Laat ons in ons werk en in ons gezin gewoon mens zijn voor U."
+          "dank_gehoorde_woord": "Dank dat U ons op onze plek zet: wij zijn mens, U bent God.",
+          "vraag_kracht_bewaren": "Help ons om niet hoogmoedig te zijn.",
+          "verbinding_dagelijks_leven": "Laat ons vertrouwen op U in 2026, niet op onze spullen."
         },
-        "tekst": "Dank U, God,\\n\\nWij danken U voor wat wij hebben gehoord. U heeft ons vandaag de spiegel voorgehouden. Wij danken U dat U ons vertelt dat wij maar mensen zijn. Dat klinkt streng, maar het is een groot geschenk. Want wij hoeven geen goden te zijn. Wij hoeven niet alles te weten. Wij hoeven de wereld niet op onze eigen schouders te dragen. Dat doet U.\\n\\nDank U voor het kind in de kribbe. U werd een kwetsbaar mens om ons te redden. U koos niet voor een troon in de zee, maar voor een stal. Dat geeft ons moed voor het nieuwe jaar. Wij danken U voor alles wat goed was in 2025. Voor brood op tafel, voor een dak boven ons hoofd en voor mensen die van ons houden. \\n\\nWij danken U voor de wijsheid die niet trots maakt, maar die ons leert om te dienen. Help ons om in 2026 niet te bouwen aan onze eigen glans, maar om uw licht door te geven. In de kassen, op het kantoor, op het voetbalveld en op school. Wij leggen ons leven in uw goede handen. Amen.",
-        "echo_schriftlezing": "De tegenstelling tussen de trotse vorst en het mens-zijn voor God.",
+        "tekst": "Grote God, onze Vader,\n\nWij danken U.\nU hebt gesproken.\nHet is goed om te weten wie wij zijn.\nWij zijn geen goden.\nWij hoeven de wereld niet te dragen.\nDat doet U al.\nDat maakt ons rustig.\n\nWij danken U voor het jaar dat voorbij is.\nU was erbij.\nToen wij blij waren en succes hadden.\nToen wij verdrietig waren en faalden.\nU hebt ons vastgehouden.\nDank U voor het eten op tafel.\nDank U voor mensen die van ons houden.\nDank U dat wij hier in de kerk veilig zijn.\n\nLeer ons om klein te zijn.\nLeer ons om niet op ons geld of onze kracht te vertrouwen.\nWant alles kan zomaar voorbij zijn.\nMaar U blijft.\nU gaat met ons mee naar het nieuwe jaar.\nDaar vertrouwen wij op.\n\nAmen.",
+        "echo_schriftlezing": "De val van de vorst van Tyrus vs. de trouw van God; de menselijke maat.",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "Vader in de hemel",
+        "aanspraak": "Trouwe God,",
         "cirkels": {
           "wereld": {
             "themas": [
-              "vrede in Soedan",
-              "zorg voor de aarde"
+              "Hoogmoed van leiders",
+              "Vrede"
             ],
-            "tekst": "Wij bidden voor deze wereld. Voor de leiders van de landen. Geef hen wijsheid die niet hoogmoedig is. Laat hen zorgen voor de zwakken. Wij bidden voor de natuur die zucht onder de hitte en het vuur."
+            "tekst": "Wij bidden voor de wereld.\nVoor leiders die denken dat ze alles mogen doen.\nDie macht gebruiken voor zichzelf.\nMaak hen nederig, God.\nZorg voor recht en vrede."
           },
           "kerk": {
             "themas": [
-              "alle gelovigen",
-              "De Morgenster"
+              "Eenvoud",
+              "Dienstbaarheid"
             ],
-            "tekst": "Wij bidden voor uw kerk overal op aarde. Maak ons één. Wij bidden voor onze eigen gemeente De Morgenster. Help ons om in 2026 een baken van rust te zijn in Waddinxveen."
+            "tekst": "Wij bidden voor uw kerk.\nVoor De Morgenster en alle kerken in ons dorp.\nLaat ons niet trots zijn.\nLaat ons dienen, zoals Jezus deed.\nLaat ons een warm huis zijn voor iedereen."
           },
           "naasten": {
             "themas": [
-              "zieken in Souburgh",
-              "eenzame ouderen"
+              "Ziekte",
+              "Eenzaamheid op oudejaarsavond"
             ],
-            "tekst": "Wij bidden voor de mensen die we kennen. Voor hen die ziek zijn of pijn hebben in hun lichaam. Voor de ouderen die zich alleen voelen vanavond. Voor de mensen die zich zorgen maken over hun geld of hun huis."
+            "tekst": "Wij bidden voor mensen dichtbij.\nVoor wie ziek is en pijn heeft.\nVoor wie vanavond alleen op de bank zit.\nVoor wie het leven zwaar vindt.\nWees U hun troost."
           },
           "eigen_gemeente": {
             "themas": [
-              "jongeren",
-              "gezinnen in de Triangel"
+              "Het nieuwe jaar 2026",
+              "Vertrouwen"
             ],
-            "tekst": "Wij bidden voor onszelf. Voor de studenten die bang zijn voor de toekomst. Voor de vaders en moeders die het zo druk hebben. Leg uw hand op ons en geef ons uw zegen."
+            "tekst": "Wij bidden voor onszelf.\nWij staan op de drempel van 2026.\nWij weten niet wat er gaat gebeuren.\nMaar wij weten wel: U gaat mee.\nHoud ons vast, wat er ook gebeurt."
           }
         },
-        "stilte_instructie": "*Het is nu even stil. Wij vertellen God in ons hart wat ons bezighoudt.*",
-        "overgang_onze_vader": "Samen bidden wij het gebed dat Jezus ons leerde:",
-        "onze_vader": "Onze Vader in de hemel,\\nlaat iedereen u eren.\\nLaat uw nieuwe wereld komen.\\nLaat op aarde uw wil gedaan worden,\\nnet zoals dat in de hemel gebeurt.\\nGeef ons vandaag het eten dat we nodig hebben.\\nEn vergeef ons wat we fout gedaan hebben,\\nwant wij hebben ook andere mensen hun fouten vergeven.\\nHelp ons om nooit tegen u te kiezen.\\nEn bescherm ons tegen de macht van het kwaad.\\nWant u bent koning,\\nu regeert met grote macht,\\nvoor altijd. Amen."
+        "stilte_instructie": "*Het is nu stil. In ons hart noemen wij de namen van mensen waar wij aan denken.*",
+        "overgang_onze_vader": "Samen bidden wij nu het gebed dat Jezus ons heeft geleerd:",
+        "onze_vader": "Onze Vader in de hemel,\nlaat iedereen u eren.\nLaat uw nieuwe wereld komen.\nLaat op aarde uw wil gedaan worden,\nnet zoals dat in de hemel gebeurt.\nGeef ons vandaag het eten dat we nodig hebben.\nEn vergeef ons wat we fout gedaan hebben,\nwant wij hebben ook andere mensen hun fouten vergeven.\nHelp ons om nooit tegen u te kiezen.\nEn bescherm ons tegen de macht van het kwaad.\nWant u bent koning,\nu regeert met grote macht,\nvoor altijd. Amen."
       }
     },
     "poetische_technieken_gebruikt": {
       "parallellisme": [
-        "U bent eeuwig, wij zijn tijdelijk.",
-        "U bent de Schepper, wij zijn het schepsel."
+        "Buiten is het donker... Binnen zoeken wij uw warmte.",
+        "Toen wij blij waren... Toen wij verdrietig waren."
       ],
       "drieslag": [
-        "In de kassen, op het kantoor, op het voetbalveld.",
-        "Niet met ons geld, niet met ons verstand, niet met ons succes."
+        "U was erbij. U hebt ons vastgehouden. U gaat met ons mee.",
+        "Dank U voor het eten... Dank U voor mensen... Dank U dat wij veilig zijn."
       ],
       "anafoor": [
-        "Dank U voor...",
-        "Wij danken U voor..."
+        "Wij denken aan... Wij denken aan... Wij denken aan...",
+        "Voor wie ziek is... Voor wie vanavond alleen... Voor wie het leven zwaar vindt."
       ],
       "inclusio": [
-        "Begin en eind van de dienst in Gods handen leggen."
+        "Drempelgebed begint met 'Wij zijn hier bij U' en eindigt met 'Geef ons rust' (nabijheid).",
+        "Kyrie begint met 'nood van de wereld' en eindigt met 'moed voor ons'."
       ],
       "zintuiglijke_taal": [
-        "Raak ons aan met uw liefde.",
-        "Wij weten het in ons hart.",
-        "Leg uw hand op ons.",
-        "Wij voelen de warmte."
+        "Buiten is het koud / Binnen zoeken wij warmte (voelen)",
+        "Raak ons aan (tasten)",
+        "Sla uw armen om ons heen (tasten/voelen)",
+        "Het hart zacht maken (gevoel)",
+        "GEEN gebruik van 'Hoor ons' of 'Zie ons'"
       ],
       "lokale_beelden": [
-        "De A12 bij ons dorp.",
-        "De schatkamers en distributiecentra.",
-        "De kassen en de Triangel."
+        "Ongelukken op de weg (verwijzing A12)",
+        "Kerken in ons dorp",
+        "Lege stoel aan tafel (huiselijke setting)"
       ]
     },
     "echo_techniek": {
-      "schriftlezing_thema": "Het mens-zijn tegenover de goddelijke claim.",
-      "echo_per_gebed": {
-        "drempelgebed": "De erkenning van 'mens-zijn' (Adam) tegenover de 'godentroon'.",
-        "kyrie": "De confrontatie met geweld en ontheiliging van schoonheid.",
-        "epiclese": "De zoektocht naar echte wijsheid in plaats van trotse kennis.",
-        "dankgebed": "De bevrijding dat we geen 'god' hoeven te zijn.",
-        "voorbeden": "De kwetsbaarheid van aardse macht en bezit op de drempel van het jaar."
+      "schriftlezing_thema": "De mens is een mens en geen god; hoogmoed versus nederigheid.",
+      "impliciet_taalveld_voor_lezingen": {
+        "drempelgebed": "Wij zijn maar mensen / wij dachten dat we groot waren (impliciete verwijzing naar de hoogmoed uit Ezechiël, maar nog algemeen).",
+        "kyrie": "De wereld is kapot / pijn / angst (de chaos waar de vorst van Tyrus geen antwoord op heeft).",
+        "epiclese": "Hart van steen/gesloten hart (Ezechiël-motief) dat zacht moet worden."
+      },
+      "expliciete_echo_na_lezingen": {
+        "dankgebed": "Expliciet: 'Wij zijn geen goden', 'niet op geld/kracht vertrouwen'. Verwijst direct naar de preek over Ezechiël 28.",
+        "voorbeden": "Expliciet: 'Leiders die denken dat ze alles mogen', 'macht misbruiken'. Dit is de 'Vorst van Tyrus' in het gebed."
       }
     }
   },
   "14_gebeden_profetisch": {
-    "stijl_analyse": "Dit liturgisch kader hanteert de profetische methode van Brueggemann door de 'koninklijke bewustheid' van Waddinxveen — een cultuur van logistieke beheersing en economische maakbaarheid — frontaal te confronteren met de bijbelse categorie van 'Adam' tegenover 'El'. De gebeden schuren langs de glimmende gevels van het Distripark en de nieuwbouwwijken om de rauwe eindigheid van 2025 bloot te leggen, terwijl God als een vrij en soms gevaarlijk Subject wordt aangeroepen die onze zelfgemaakte tronen omverwerpt.",
+    "stijl_analyse": "In deze gebeden wordt de stem van Walter Brueggemann geactiveerd door de veilige 'koninklijke bewustheid' van Waddinxveen (welvaart, logistiek, maakbaarheid) te doorbreken. De gebeden zijn ritmisch, repetitief en confronterend; ze benoemen de medeplichtigheid aan economisch onrecht en weigeren de pijn van de wereld (Soedan, klimaat) weg te poetsen met vrome clichés. God wordt aangesproken als een vrij en gevaarlijk Subject dat niet samenvalt met onze culturele agenda.",
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Gij die de maatstaf van de tijd zijt en de muren van onze zekerheid doorbreekt,",
-        "tekst": "Wij treden dit huis binnen, God, met de geur van de markt nog in onze kleren en de ruis van de A12 nog in onze oren. \nWij komen uit een wereld die wij zelf hebben gebouwd, steen voor steen, algoritme voor algoritme. \nIn dit jaar 2025 hebben wij onze schatkamers gevuld, onze logistieke stromen geperfectioneerd en onze wijken uitgebreid tot aan de rand van de polder. \nWij hebben ons op een troon gezet in het hart van onze eigen kleine zeeën, overtuigd dat wij door ons inzicht en onze handel onkwetsbaar zijn geworden. \n\nMaar hier, op deze drempel, horen wij de echo van de profeet: 'Gij zijt een mens en geen god'. \nWij belijden dat wij bezet gebied zijn, God. Onze hoofden zitten vol met scenario's van groei, met de angst voor krimp, met de illusie dat wij de regie voeren over leven en dood. \nWij hebben de 'koninklijke bewustheid' van Tyrus geadopteerd; wij denken dat succes onze uitverkiezing bewijst en dat onze techniek ons zal redden van onze sterfelijkheid. \n\nOntmasker ons in dit uur, God. \nSloop de steigers van onze hoogmoed. \nOntwapen onze handen die zich vastklampen aan bezit. \nBevrijd ons van de dwingende eis om god te moeten zijn over ons eigen leven, over onze kinderen, over onze toekomst. \nWij leggen onze maskers van 'gezegend succes' af en verschijnen voor U als wat wij werkelijk zijn: aardlingen, stof, Adam. \n\nBreek onze verdoofde verbeelding open. \nLaat ons in dit uur niet slechts vroom herdenken, maar laat ons schrikken van uw heiligheid en genezen door uw waarheid. \nWij wachten op U, niet als een bevestiging van onze eigen weg, maar als de grote Verstoring die ons werkelijk mens maakt. \n\nAmen.",
-        "echo_schriftlezing": "Ezechiël 28:2 - 'Omdat uw hart hoogmoedig is geworden en gij zegt: Een god ben ik, op een godentroon zit ik...'",
+        "aanspraak": "Gij die de tijd breekt en de klokken stilzet,",
+        "tekst": "Wij komen binnen uit de roes van de jaarwisseling.\nWij komen uit de wereld van de sluitende begroting en de kloppende balans.\nWij dragen de maskers van onze competentie, onze productiviteit en ons succes.\nWij zijn de managers van ons eigen geluk, moe van het hooghouden van de schijn.\n\nIn dit huis van steen en stemmen leggen wij onze wapenrusting af.\nDe wapenrusting van 'meer, beter, sneller'.\nDe leugen dat wij onmisbaar zijn.\nDe arrogantie dat wij de tijd in onze zak hebben.\n\nWij bekennen U dat wij verslaafd zijn aan controle.\nDat wij Uw schepping gebruiken als grondstof voor onze winst.\nDat wij onze naasten zien als concurrenten of consumenten.\nWij zijn uitgeput door onze eigen autonomie.\n\nScheur ons los van onze agenda's.\nBreek door de muren van onze zelfgenoegzaamheid heen.\nOntmasker de afgoden van de markt die wij de hele week hebben gediend.\n\nMaak het stil in ons, niet de stilte van de slaap, maar de stilte van de verwachting.\nLaat ons hier niet zijn als consumenten van religie,\nmaar als weerloze mensen, naakt voor Uw aangezicht.\n\nWij zijn hier.\nWij wachten.\nWij geven ons over.\n\nAmen.",
+        "bijbels_taalveld": "Het afleggen van de 'oude mens', de confrontatie met afgoden (markt/mammon), de stilte voor de storm van Gods spreken.",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "God van de diepte, Gij die de kreten hoort onder de glans van onze beschaving,",
+        "aanspraak": "God van de rafelranden, Gij die hoort wat wij negeren,",
         "focus": "lamentatie_en_protest",
-        "tekst": "Wij schreeuwen tot U op deze laatste avond van het jaar, want de balans die wij opmaken is besmeurd met bloed en onverschilligheid. \nWij klagen over de wereld die Gij ons toevertrouwde, maar die wij hebben ingericht als een marktplaats waar de zwakken worden vertrapt. \n\nGod, waar bent U in Soedan? \nIn de anonimiteit van twaalf miljoen vluchtelingen, opgejaagd door geweld dat wij 'vergeten' noemen omdat het onze handelsroutes niet raakt. \nWij klagen over onze eigen hardheid: dat wij de beelden van de honger bekijken als amusement tussen de reclames door. \nWaar bent U in Syrië, waar de puinhopen van een gevallen tiran slechts plaatsmaken voor nieuwe angst? \nWord wakker, God! Slaap niet terwijl de kuil zich opent voor de onschuldigen. \n\nWij brengen U de rauwe pijn van onze eigen straten in Waddinxveen. \nWij klagen over de plotselinge dood die de controle op de A12 doorbrak; de traumahelikopter als teken van onze totale machteloosheid. \nWij klagen over de eenzaamheid in de oude wijken, waar de muren van de seniorenwoningen de weemoed van een voorbijgaande generatie opsluiten. \nWaar bent U als het lichaam weigert, als de artrose vreet en de hartslag onregelmatig wordt? \nGij die beloofde nabij te zijn — bewijs het ons, want de nacht is koud. \n\nEn wij belijden onze eigen medeplichtigheid, God. \nOnze pensioenen groeien op de rug van de vertrapten. \nOnze 'wijsheid' is een instrument voor zelfverrijking geworden. \nWij wanen ons wijzer dan Daniël omdat wij data verzamelen, maar wij kennen het hart van de naaste niet meer. \nWij hebben meegewerkt aan de 'verdozing' van het landschap en de 'verdozing' van onze eigen ziel. \nVergeef ons onze obscene rijkdom die wij als recht claimen. \nVergeef ons de hoogmoed waarmee wij menen dat wij de wereld kunnen managen. \n\nBreek ons hart van steen, God. \nNiet om ons te vernietigen, maar om ons terug te brengen naar de menselijke maat. \nHoort Gij ons? Of zwijgt Gij omdat wij zelf zo luidruchtig zijn? \nWij staan hier in de kuil van onze eigen tekortkomingen en roepen: \nKyrie eleison. Heer, ontferm U over deze wereld, over deze gemeente, over ons Adam-zijn. \n\nAmen.",
-        "echo_schriftlezing": "Ezechiël 28:7-8 - 'Daarom, zie, Ik ga vreemden over u brengen... zij zullen u doen neerdalen in de kuil.'",
+        "tekst": "Wij roepen tot U vanuit de diepte van onze onmacht en onze onwil.\nWant de wereld staat in brand en wij nippen aan onze glazen.\n\nVoor de miljoenen in Soedan, verjaagd en vergeten, wier namen niet in onze kranten staan.\nVoor de lichamen die breken onder het geweld van wapens die met ons geld zijn betaald.\nVoor de aarde die schreeuwt en brandt, terwijl wij blijven bouwen en stoken alsof er geen einde is.\nVoor de moeders die vannacht geen dak hebben, terwijl wij ons zorgen maken over de kleur van ons behang.\nGij die zei: 'Ik heb het ellende van mijn volk gezien' — Waarom zwijgt Gij nu? Waarom grijpt Gij niet in?\nOf wacht Gij op ons?\n\nWij roepen tot U voor het kind dat stierf zonder naam.\nVoor de vrouw die achter de voordeur wordt geslagen terwijl de buren de muziek harder zetten.\nVoor de jongere die vastloopt in het systeem van prestatie en perfectie, en die geen adem meer krijgt.\nVoor de man die vannacht alleen is met zijn schuld en zijn glas.\nVoor hen die vermorzeld worden door de wielen van onze economie.\nGij die de weduwe en de wees kent — Waarom laat Gij het toe? Waarom is de nacht zo lang?\n\nWij roepen tot U over onszelf, over onze verlammende medeplichtigheid.\nWij weten het wel, maar wij voelen het niet meer.\nWij zijn toeschouwers geworden van de ondergang.\nWij hebben onze harten verhard met het cement van ons comfort.\nWij bidden om vrede, maar investeren in oorlog.\nWij zingen van gerechtigheid, maar wij aanbidden onze eigen veiligheid.\n\nOntneem ons onze onschuld.\nVerstoor onze rust.\nBreek ons open, totdat wij weer kunnen huilen.\n\nHeer, ontferm U over deze wereld die U liefhebt en die wij kapotmaken.\nChristus, ontferm U over onze hypocrisie.\nHeer, ontferm U en kom.\n\nKyrie eleison.",
+        "bijbels_taalveld": "De klachtpsalmen, de roep van het bloed van Abel, de profetische aanklacht tegen degenen die 'gerust zijn in Sion'.",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Heilige Geest, Gij Sloophamer van onze gesloten scenario's,",
+        "aanspraak": "Geest van vuur en storm,",
         "focus": "doorbreken_verbeelding",
-        "tekst": "Wij bidden U: breek in! \nOnze hoofden zijn geprogrammeerd op continuïteit, op meer van hetzelfde, op de beheersbaarheid van 2026. \nWij hebben onszelf wijsheid aangepraat die slechts een herhaling is van onze eigen belangen. \nKom als een stormwind door onze zelfvoldane 'Morgenster'. \nScheur de sluiers van onze technocratische utopie weg. \nLaat uw Woord uit Ezechiël niet over ons heen glijden als water over glas, maar laat het inslaan als een zwaard dat de schoonheid van onze wijsheid ontheiligt. \nGeef ons een nieuwe verbeelding, God. \nLaat ons niet kijken door de ogen van de vorst van Tyrus, die alleen schatkamers ziet, maar door de ogen van het Kind in de kribbe, dat de glorie van de wereld ontmaskert door zijn kwetsbaarheid. \nHerstart ons verstand, ontheilig onze valse zekerheden, en maak ons ontvankelijk voor de gevaarlijke waarheid dat wij slechts schepselen zijn in de hand van de Schepper. \nSpreek nu, want wij zijn uitgesproken. \n\nAmen.",
-        "echo_schriftlezing": "Ezechiël 28:3 - 'Zie, gij zijt wijzer dan Daniël, geen geheim is voor u verborgen...'",
+        "tekst": "Wij zitten hier met onze dichtgetimmerde scenario's.\nWij denken dat wij weten hoe de wereld werkt: geld regeert, macht wint, en de dood heeft het laatste woord.\nOnze verbeelding is bezet gebied, gekoloniseerd door het nieuws en de angst.\n\nKom, Heilige Geest, en breek in.\nSloop de logica van het imperium in onze hoofden.\nMaak ons doof voor de propaganda van de macht en geef ons oren voor Uw oude, gevaarlijke Woord.\n\nWij gaan de Schrift openen, dat vreemde boek vol weerbarstige getuigen.\nLaat het geen vrome geschiedenisles zijn.\nLaat het een spiegel zijn die barst.\nLaat het een hamer zijn die onze trots verbrijzelt.\nLaat het een vuur zijn dat loutert.\n\nGeef ons de moed om te horen wat wij liever niet horen.\nGeef ons de verbeelding om te zien dat er een andere Koning is.\n\nSpreek, Heer, Uw knechten luisteren — of wij proberen het althans.\n\nAmen.",
+        "bijbels_taalveld": "De Geest die waait waarheen Hij wil, het Woord als zwaard/hamer/vuur, de verharding van het hart versus het hart van vlees.",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Gever van de onverdiende gift, God die ons de menselijke maat hergeeft,",
-        "verbinding_verkondiging": "Na de harde woorden van de profeet danken wij voor de bevrijding die ligt in het 'geen god hoeven zijn'.",
-        "tekst": "Wij danken U op de valreep van dit jaar voor de schok van de waarheid. \nWij danken U dat Gij ons niet overlaat aan onze eigen goddelijke pretenties. \nWat een bevrijding, God, dat de wereld niet op onze schouders rust! \nWat een genade dat onze 'wijsheid' niet het laatste woord heeft, en dat onze 'schatkamers' niet onze uiteindelijke waarde bepalen. \n\nWij danken U voor de begrenzing. \nVoor de grens van de dood die ons herinnert aan de kostbaarheid van de dag. \nVoor de grens van onze vermogens die ons dwingt om de ander de hand te reiken. \nWij danken U voor de 'Adam' in ons: voor onze kwetsbaarheid, onze tranen, onze lach, ons vlees en bloed. \n\nWij danken U voor de verrassing van dit afgelopen jaar: \nVoor die momenten dat onze planning mislukte en er ruimte kwam voor een ontmoeting die wij niet hadden voorzien. \nVoor de onverwachte vrede te midden van de ziekte. \nVoor de solidariteit in de wijk toen de nood aan de man kwam. \nWij danken U voor de 'menselijke maat' die Gij ons hebt getoond in Jezus Christus. \nTerwijl de vorst van Tyrus naar de godentroon greep, daalde Hij af in de stal. \nTerwijl wij onze macht etaleren, toonde Hij ons de kracht van de dienaar. \n\nWij danken U voor de rust die nu over ons komt: \nDe rust van het schepsel dat mag schuilen bij de Schepper. \nWij danken U dat Gij de Heer van de tijd zijt, ook van de tijd die wij niet begrijpen. \nWij danken U dat de jaarrekening van onze ziel niet bij ons hoeft te sluiten, omdat Gij haar hebt voldaan met uw genade. \n\nOntvang onze dank voor de lucht die we ademen, voor het brood op tafel in Waddinxveen, voor de gemeenschap die ons draagt als we zelf niet meer kunnen staan. \nWij vallen terug in uw betrouwbare goedheid, onbezorgd over de schaarste die de wereld ons aanpraat, gewis van de bloei die Gij belooft. \n\nAmen.",
-        "echo_schriftlezing": "Ezechiël 28:9 - 'Zult gij dan nog durven zeggen: Ik ben een god... terwijl gij een mens zijt...'",
+        "aanspraak": "Gij, Ontmaskeraar van onze hoogmoed, Gij, Bevrijder van onze last,",
+        "verbinding_verkondiging": "Nu wij gehoord hebben dat wij mensen zijn en geen goden, danken wij U voor die genadige degradatie.",
+        "tekst": "Wij danken U dat U ons van onze troon hebt gestoten.\nWat een opluchting, God, wat een adembenemende bevrijding:\ndat wij de wereld niet hoeven te dragen.\nDat wij de geschiedenis niet naar onze hand hoeven te zetten.\nDat wij niet 'god' hoeven te spelen in het theater van onze eigenwaan.\n\nWij danken U voor de grens die U trekt.\nVoor de dood die ons herinnert aan onze maat.\nVoor de vreemdeling die onze bubbel doorprikt.\nVoor de profeten die onze 'wijsheid' ontmaskeren als dwaasheid.\nWij danken U dat onze bankrekeningen ons niet redden, want dat betekent dat onze armoede ons ook niet veroordeelt.\n\nWij danken U voor dit jaar dat voorbij is.\nNiet omdat alles goed was — want er was zoveel pijn, zoveel onrecht, zoveel dat stuk ging.\nMaar wij danken U dat U erbij was in de modder en in het puin.\nDat U niet in een ivoren toren bleef, hoog boven de wolken,\nmaar dat U Mens werd, kwetsbaar vlees, sterfelijk en weerloos.\n\nWij danken U voor de momenten van onmogelijke genade:\nEen hand die vasthield toen alles wankelde.\nEen woord van waarheid in een zee van leugens.\nEen brood dat gedeeld werd terwijl de economie zei 'houd voor jezelf'.\n\nWij danken U voor Uw trouw die dwars door onze ontrouw heen breekt.\nVoor Uw geduld met onze permanente rebellie.\nVoor Uw liefde die ons niet laat in de waan van onze eigen grootheid.\n\nNeem onze dank aan, niet als een beleefdheidsvorm,\nmaar als een daad van verzet tegen de wanhoop.\nWant U leeft, en wij mogen leven — als mensen, slechts mensen, dankzij U.\n\nAmen.",
+        "echo_schriftlezing": "De verwijzing naar 'mensen en geen goden' (Ez 28:2), de val van de troon, de relativering van rijkdom en wijsheid.",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "Soevereine God, Rechter en Redder,",
+        "aanspraak": "God van de jaren en de eeuwen, Gij die de machtigen van de troon stoot,",
         "cirkels": {
           "wereld": {
             "themas": [
-              "De val van tyrannen",
-              "Humanitaire crisis Soedan",
-              "Klimaatbeheersing",
-              "Wapenwedloop"
+              "Hoogmoed van machthebbers",
+              "Humanitaire crises (Soedan/Syrië)",
+              "Klimaat en hebzucht"
             ],
-            "tekst": "Wij bidden U voor de machten van deze wereld die menen dat zij de geschiedenis in hun broekzak hebben. \nWij bidden voor de vorsten van deze tijd, of ze nu op politieke tronen zitten of in de glazen torens van tech-giganten. \nOntmasker hun hoogmoed voordat zij de aarde verder ontheiligen. \nWij bidden specifiek voor de miljoenen ontheemden in Soedan; dat hun lijden onze 'wijsheid' mag aanklagen totdat wij in actie komen. \nWij bidden voor de nieuwe machthebbers in Syrië; dat zij niet vallen in dezelfde kuil van zelfvergoddelijking als hun voorgangers. \nHeer, ontwapen de naties die hun veiligheid zoeken in steeds grotere schatkamers van staal en vuur. \nBreng ons terug naar de zorg voor de schepping die zucht onder onze ongeremde groei."
+            "tekst": "Wij bidden U voor deze wereld, die dronken is van haar eigen wijsheid.\nVoor de leiders die zich wanen als de Vorst van Tyrus, gezeten op hun tronen van goud en data.\nOntmasker hun leugens. Breek hun wapens. Laat hun handel in de dood stagneren.\nWij leggen de vergeten oorlogen aan Uw voeten: de hel van Soedan, de puinhopen van Syrië.\nGod, wij zijn zo snel afgeleid, maar U vergeet niet. Blijf de wereld wakker schudden.\nWij bidden voor de aarde, Uw gekneusde schepping.\nVergeef ons onze roofbouw. Leer ons dat wij rentmeesters zijn, geen eigenaren.\nLaat de techniek ons niet beheersen, maar dienstbaar zijn aan het leven."
           },
           "kerk": {
             "themas": [
-              "Alternatieve gemeenschap",
-              "Vrijmoedigheid tegenover de tijdgeest",
-              "Kerk in Actie"
+              "Tegen burgerlijkheid",
+              "Moed om anders te zijn",
+              "Solidariteit"
             ],
-            "tekst": "Wij bidden voor uw kerk, wereldwijd en hier in de polder. \nBehoed ons ervoor dat wij een spiegel worden van de wereld om ons heen. \nVerlos ons van de drang naar succesvolle statistieken en de angst voor krimp. \nMaak ons tot een alternatieve gemeenschap, een plek waar de 'menselijke maat' van Christus wordt gevierd en waar de vorst van Tyrus geen voet aan de grond krijgt. \nGeef uw kerk de vrijmoedigheid om 'nee' te zeggen tegen de vergoddelijking van de economie en 'ja' tegen de heiligheid van het leven. \nZegen het werk van diaconie en de collectes voor de armoede in ons eigen land; dat onze gaven een daad van verzet mogen zijn tegen de hebzucht."
+            "tekst": "Wij bidden U voor Uw kerk, die zo vaak lijkt op een bange club die haar eigen voortbestaan probeert te regelen.\nBevrijd ons van de angst voor krimp en cijfers.\nMaak ons tot een gevaarlijke herinnering in deze samenleving.\nDat wij durven afwijken. Dat wij durven delen.\nDat wij geen vrome saus zijn over de status quo, maar zout in de wonden van het onrecht.\nZegen de kerk wereldwijd, vooral daar waar geloven levensgevaarlijk is.\nVerbind ons met hen, zodat wij onze eigen luxe niet meer vanzelfsprekend vinden."
           },
           "naasten": {
             "themas": [
-              "Slachtoffers van AI en technocratie",
-              "Zorgmedewerkers",
-              "Eenzamen en rouwenden"
+              "Eenzaamheid",
+              "Financiële zorgen",
+              "Rouw"
             ],
-            "tekst": "Wij bidden voor onze naasten die verpletterd worden door de 'wijsheid' van onze systemen. \nWij bidden voor de jongeren die onzeker zijn over hun toekomst op een arbeidsmarkt die door machines wordt overgenomen; herinner hen eraan dat hun waarde niet ligt in hun productiviteit, maar in uw liefde. \nWij bidden voor de zieken in de thuiszorg en in Souburgh; wees hun kracht als hun eigen kracht hen in de steek laat. \nWij bidden voor hen die in 2025 een lege stoel aan tafel kregen; dat de rauwe werkelijkheid van het gemis niet wordt weggedrukt door de knallen van het vuurwerk, maar mag rusten in uw ontferming. \nTroost degenen die door een echtscheiding of burn-out van hun troon zijn gevallen en zich nu in de 'kuil' bevinden; laat hen daar uw hand vinden."
+            "tekst": "Wij bidden voor onze naasten, dichtbij en veraf.\nVoor hen die vanavond de balans opmaken en in het rood staan — financieel of emotioneel.\nVoor hen die een lege stoel zien aan tafel en de stilte niet kunnen verdragen.\nVoor hen die ziek zijn en voor wie het nieuwe jaar als een dreiging voelt in plaats van een belofte.\nVoor de jongeren die bezwijken onder de druk om perfect te zijn in een digitale etalage.\nVoor de ouderen die zich overbodig voelen in een wereld die alleen maar rent.\nGod, wees hun Toevlucht, niet als een goedkoop doekje voor het bloeden, maar als een Rots die niet wankelt."
           },
           "eigen_gemeente": {
             "themas": [
               "Waddinxveen",
-              "Logistiek en handel",
-              "De Morgenster"
+              "Verkeersslachtoffers",
+              "Nieuwbouw vs. gemeenschap"
             ],
-            "tekst": "Wij bidden voor onze eigen gemeente De Morgenster en voor het dorp Waddinxveen. \nWij bidden voor de ondernemers en de werkers in de logistiek; behoed hen voor de verleiding om hun hart gelijk te stellen aan het hart van God wanneer de winsten groeien. \nWij bidden voor de nieuwe bewoners in De Triangel; dat zij in dit huis een plek vinden waar zij niet hoeven te presteren. \nGeef ons als gemeente de moed om op de drempel van 2026 eerlijk naar elkaar te zijn over onze twijfels en onze onmacht. \nLaat dit huis een haven zijn waar de 'Hefbrug' altijd openstaat voor wie vastloopt op eigen kracht. \nBlijf bij ons als de klok slaat en de jaren verspringen."
+            "tekst": "Wij bidden voor deze plek, voor Waddinxveen, ons dorp en onze stad.\nVoor de plekken waar gehandeld wordt en waar gewoond wordt.\nBewaar ons voor de hoogmoed dat wij alles zelf hebben gemaakt.\nWij bidden voor de slachtoffers van het verkeer op onze wegen, voor de families die in rouw en schok het jaar uitgaan.\nLaat ons zien hoe kwetsbaar wij zijn, zelfs met al onze technologie en asfalt.\nZegen de nieuwkomers en de oudgedienden.\nBreek de muren af tussen onze wijken en onze zuilen.\nMaak van ons een gemeenschap waar de zwakke niet wordt vertrapt, maar wordt gedragen."
           }
         },
-        "stilte_instructie": "Wij leggen nu in de stilte van dit huis onze eigen schatkamers en onze eigen kuilen voor uw aangezicht...",
-        "overgang_onze_vader": "In verbondenheid met de Menszoon die ons leerde bidden om het koninkrijk dat niet van deze wereld is, bidden wij:",
-        "onze_vader": "Onze Vader die in de hemelen zijt, \nUw Naam worde geheiligd. \nUw Koninkrijk kome. \nUw wil geschiede, op aarde zoals in de hemel. \nGeef ons heden ons dagelijks brood. \nEn vergeef ons onze schulden, zoals ook wij onze schuldenaren vergeven. \nEn leid ons niet in verzoeking, maar verlos ons van de boze. \nWant van U is het Koninkrijk en de kracht en de heerlijkheid tot in eeuwigheid. \nAmen."
+        "stilte_instructie": "In de stilte brengen wij onze eigen verborgen hoogmoed en onze geheime angsten bij U...",
+        "overgang_onze_vader": "Dit alles — onze klacht, onze dank en onze hoop — leggen wij in de woorden die Jezus ons als wapen en als troost in handen gaf:",
+        "onze_vader": "Onze Vader die in de hemelen zijt,\nUw Naam worde geheiligd.\nUw Koninkrijk kome.\nUw wil geschiede, gelijk in de hemel alzo ook op de aarde.\nGeef ons heden ons dagelijks brood.\nEn vergeef ons onze schulden,\ngelijk ook wij vergeven onze schuldenaren.\nEn leid ons niet in verzoeking,\nmaar verlos ons van de boze.\nWant van U is het Koninkrijk\nen de kracht en de heerlijkheid\ntot in eeuwigheid.\nAmen."
       }
     },
     "profetische_elementen": {
       "gevaarlijke_werkwoorden": [
-        "ontmaskeren",
-        "slopen",
-        "ontwapenen",
-        "openbreken",
-        "ontheiligen",
-        "doorbreken",
-        "inbraken"
+        "Sloop de logica",
+        "Scheur ons los",
+        "Ontmasker de afgoden",
+        "Stoot van de troon",
+        "Verbrijzel onze trots"
       ],
       "moderne_metaforen": [
-        "schatkamers van algoritmen",
-        "logistiek van de ziel",
-        "verdozing van de geest",
-        "energieneutrale hoogmoed",
-        "reset van de eeuwigheid",
-        "data-wijsheid",
-        "harnas van deadlines"
+        "Managers van ons eigen geluk",
+        "Sluitende begroting",
+        "Digitaal etalage",
+        "Propaganda van de macht",
+        "Dichtgetimmerde scenario's"
       ],
       "anti_status_quo": [
-        "Wij klagen over de humanitaire crisis in Soedan die wij 'vergeten' noemen omdat het onze handelsroutes niet raakt.",
-        "Vergeef ons onze obscene rijkdom die wij als recht claimen.",
-        "De markt is onze afgod geworden.",
-        "Sloop de steigers van onze hoogmoed.",
-        "Wij hebben onszelf verkocht aan de hoogste bieder."
+        "Wij bidden om vrede, maar investeren in oorlog",
+        "Wij zijn verslaafd aan controle",
+        "De leugen dat wij onmisbaar zijn",
+        "Dat wij geen vrome saus zijn over de status quo"
       ]
     }
   },
@@ -4558,6 +4574,142 @@
         "inhoud": "Zo staan we dan op de drempel, hier in Waddinxveen, terwijl de klok onverbiddelijk richting 2026 tikt. De lichten van de A12 branden nog steeds als een zilveren lint door de polder, maar we kijken er vanavond anders naar. We zien de troon van onze prestaties, we zien de schatkamers van onze welvaart, maar we zien nu ook de kribbe die alles relativeert. We hoeven de wereld niet op onze schouders te dragen in het nieuwe jaar; dat doet de Heere van de tijd al. Laten we onze goddelijke pretenties, onze krampachtige controle en onze hoogmoedige wijsheid afleggen bij het oude jaar, als kleren die ons niet meer passen. Laten we onze menselijkheid omarmen als een kostbaar geschenk, met al haar beperkingen en haar broosheid. We zijn mensen, gezegende mensen, veilig in de hand van de enige ware God die ons bij onze naam kent. Ga het nieuwe jaar in, niet als een vorst op een wankele, zelfgebouwde troon, maar als een kind van de Vader dat mag rusten in Zijn genade. De balans is opgemaakt, de rekening is betaald: wij zijn mens, en God is met ons. Amen."
       }
     ]
+  },
+  "24_preek_gardner_taylor": {
+    "titel": "De Troon van Glas in de Zee",
+    "schriftlezing": "Ezechiël 28:1-10",
+    "kerntekst": "Omdat uw hart hoogmoedig is geworden en u zegt: Ik ben een god, ik zit op de zetel van God in het hart van de zeeën — terwijl u een mens bent en geen god.",
+    "structuur_type": "vierdelig",
+    "preek_onderdelen": [
+      {
+        "volgorde": 1,
+        "titel": "I. De Schittering van de Spiegel",
+        "type": "opening",
+        "inhoud": "De avond valt over de polders, en de laatste uren van dit jaar glijden door onze vingers als fijn zand. Wij staan hier, op de drempel van de tijd, in het schemerlicht tussen wat was en wat komen zal. En terwijl de duisternis zich nestelt rondom deze kerk, en de lichten in de huizen aan de Sterrenlaan en in de Triangel één voor één aangaan, opent de oude boekrol zich voor ons. Het is een tafereel van verblindende schoonheid en angstaanjagende hoogmoed dat de profeet Ezechiël ons schildert. Ziet u hem zitten? De Vorst van Tyrus. Hij is geen gewone man. Hij is de belichaming van succes, de architect van een imperium dat de wereld benijdt. Tyrus was de parel van de zee, het handelscentrum waar de rijkdommen van de aarde samenstroomden. Goud, purper, ivoor, ebbenhout—alles wat het oog begeert en het hart sneller doet kloppen, lag opgeslagen in zijn pakhuizen.\n\nDeze vorst, hij zit daar niet zomaar. Hij troont in het 'hart van de zeeën'. Hij heeft een eiland gebouwd, een vesting die onneembaar lijkt, omringd door het water dat hij meent te beheersen. Hij kijkt naar zijn vloot, naar de schepen die af en aan varen zoals de vrachtwagens hier dag en nacht over de A12 denderen, en hij voelt een sensatie die gevaarlijker is dan enig vergif. Hij voelt zich onaantastbaar. Hij kijkt in de spiegel van zijn eigen succes, en hij ziet geen sterveling meer. Hij ziet geen rimpels, geen eindigheid, geen afhankelijkheid. Hij zegt in zijn hart—en misschien fluistert hij het in de stilte van zijn paleis: 'Ik ben een god.' Het is niet slechts een gedachte; het is een overtuiging die is gegroeid uit zijn wijsheid, zijn inzicht, zijn vermogen om rijkdom te vergaren. Hij heeft de code van de economie gekraakt. Hij is, zo meent hij, wijzer dan Daniël; geen geheim is voor hem verborgen. Hij heeft de wereld naar zijn hand gezet. Het is een beeld van adembenemende arrogantie, maar laten we eerlijk zijn: het is ook een beeld van een tragische schoonheid. Want daar zit hij, op zijn troon van glas, omringd door de schatten die hij heeft verzameld, in de volle overtuiging dat hij de meester is van zijn eigen lot en de kapitein van zijn ziel."
+      },
+      {
+        "volgorde": 2,
+        "titel": "II. De Illusie van de Maakbaarheid",
+        "type": "verdieping",
+        "inhoud": "Maar is dit tafereel werkelijk zo ver weg? Is de afstand tussen Tyrus en Waddinxveen zo groot als de eeuwen ons willen doen geloven? Als wij vanavond de balans opmaken, als wij terugkijken op een jaar van bouwen en vergaren, zien wij dan niet een glimp van diezelfde vorst in onze eigen spiegel? Wij leven in een tijdperk van wonderen. Wij hebben machines gebouwd die kunnen denken, algoritmen die onze verlangens voorspellen nog voordat wij ze zelf kennen. Wij hebben polders drooggelegd en wijken uit de grond gestampt waar eerst slechts water en gras was. Wij hebben onze 'schatkamers' gevuld met zekerheden, met polissen en pensioenen, met de overtuiging dat wij het leven kunnen managen, kunnen sturen, kunnen beheersen.\n\nEr is een verleiding, een zoete en subtiele verleiding, om te geloven dat onze welvaart een bewijs is van onze eigen goddelijkheid. Wij zeggen het misschien niet hardop—wij zijn immers nuchtere mensen—maar in de stilte van onze onrustige nachten, als we piekeren over onze carrières en onze status, fluistert die stem: 'Jij hebt dit gedaan. Jij bent de architect.' Wij wanen ons wijzer dan de ouden, wijzer dan Daniël. Wij denken dat wij met onze technologie de dood op afstand kunnen houden en het geluk kunnen afdwingen. Maar deze hoogmoed, vrienden, is een eenzame troon. Het sluit ons op in onszelf. Het maakt ons blind voor de 'vreemden' aan de poort—voor de miljoenen in Soedan die geen huis hebben, voor de vluchteling die geen veilige haven vindt. De vorst van Tyrus zag alleen zijn eigen glans. En is dat niet onze tragedie? Dat wij zo vol zijn van onze eigen maakbaarheid, dat wij vergeten dat wij ademtocht zijn? Wij bouwen onze torens van Babel, onze digitale forten, en wij vergeten de fundamentele waarheid die onder de klinkers van onze straten ligt: dat alles wat wij hebben, geleend is. Dat wij rentmeesters zijn, geen eigenaars. Dat onze controle een illusie is, zo broos als het ijs op een winterochtend."
+      },
+      {
+        "volgorde": 3,
+        "titel": "III. De Scherf van de Realiteit",
+        "type": "turn",
+        "inhoud": "En dan... dan spreekt God. Hij spreekt niet met een donderslag bij heldere hemel, maar met de onverbiddelijke stem van de realiteit. 'Omdat uw hart hoogmoedig is geworden... zie, Ik breng vreemden over u.' Het is het moment waarop de spiegel breekt. Het is het moment waarop de vorst, die dacht dat hij boven de geschiedenis stond, wordt ingehaald door de geschiedenis. Ezechiël gebruikt een woord dat snijdt als een mes: 'Gij zijt een mens.' Een mens. *Adam*. Gemaakt uit de aarde. Geen god, maar stof.\n\nWij hebben het gevoeld dit jaar, nietwaar? Die huiveringwekkende confrontatie met onze eigen kwetsbaarheid. We zagen het toen de natuurbranden in Californië miljarden verslonden, lachend om onze verzekerde waarden. We voelden het hier, op onze eigen wegen, toen het metaal van onze auto's verfrommelde en levens in een oogwenk veranderden op de A12. We voelden het in de stilte van de dokterskamer, toen de diagnose viel en al onze plannen, al onze agenda's voor 2026, plotseling irrelevant werden. Dat zijn de 'vreemden' die onze heiligdommen binnendringen. De dood, het verlies, het falen—zij trekken hun zwaarden tegen de schoonheid van onze wijsheid.\n\nEn wat blijft er dan over van onze goddelijke pretenties? 'Zult u dan nog zeggen: Ik ben een god, voor het aangezicht van uw moordenaar?' Het is een wrede vraag, maar het is ook een genadige vraag. Want in die diepe val, in die kuil waar de vorst van Tyrus in verdwijnt, wordt de leugen ontmaskerd. De illusie dat wij de wereld moeten dragen, wordt ons uit handen geslagen. Het is een pijnlijke genade, ja, een 'sweet torture', om te ontdekken dat wij niet almachtig zijn. Dat wij de wind niet kunnen sturen. Dat wij het hart van onze kinderen niet kunnen dwingen. Dat wij, aan het einde van de rit, met lege handen staan. De vorst sterft de 'dood van onbesnedenen'—een dood zonder eer, zonder hoop. Het is het einde van de autonome mens die weigerde te buigen."
+      },
+      {
+        "volgorde": 4,
+        "titel": "IV. De Koning die Afdaalde",
+        "type": "climax",
+        "inhoud": "Maar het verhaal eindigt daar niet. O, God zij dank, het verhaal eindigt niet in de kuil van Tyrus. Want terwijl de vorst van Tyrus probeerde op te klimmen om god te zijn, en daarbij zijn menselijkheid verloor, is er een Ander. Een andere Koning. Ziet u Hem? Hij zat werkelijk op de troon van de eeuwigheid. Hij was werkelijk God, van God, Licht van Licht. Hij bezat alle wijsheid, alle rijkdom, alle macht. Maar Hij... Hij hield niet vast aan Zijn gelijkheid met God als een roof. Hij zei niet: 'Ik ben een God', om ons te verpletteren.\n\nNee, Hij daalde af. Hij kwam naar beneden, langs de sterren, langs de engelen, naar deze gebroken aarde. Hij werd een mens. *Adam*. Hij nam de gestalte aan van een slaaf. Hij werd geboren, niet in een paleis met cederhout en goud, maar in een voerbak. Hij stierf, niet in het hart van de zeeën omringd door legers, maar aan een kruis, buiten de stad, de dood van een onbesnedene, de dood van een vervloekte. Hij ging de kuil in. Hij ging de diepte in waar Tyrus en waar u en ik door onze hoogmoed in terecht zijn gekomen.\n\nMaar omdat Hij, de ware God, mens werd, hoeven wij geen god meer te spelen. Hoort u dat bevrijdende woord? U hoeft geen god te zijn! U hoeft de wereld niet te redden. U hoeft uw toekomst niet te verzekeren met uw eigen kracht. Er is Eén die de dood heeft geproefd en de dood heeft verslonden. De vorst van Tyrus viel en bleef liggen. Maar deze Koning, deze Jezus, stond op uit het graf. En Hij staat hier vanavond, op de drempel van het nieuwe jaar, en Hij steekt Zijn doorboorde hand uit naar u. Hij zegt: 'Kom van je troon af. Leg je kroon van piekeren en presteren neer. Je bent een mens. En dat is genoeg. Want Ik ben God, en Ik ben met u.'\n\nLaten wij dan dit oude jaar achter ons laten, met al zijn gebroken kronen en glasscherven. En laten wij het nieuwe jaar binnengaan, niet als kleine goden die wanhopig de controle proberen te houden, maar als geliefde mensen, hand in hand met Hem die de Eerste en de Laatste is. Amen."
+      }
+    ],
+    "kernwoorden": [
+      "Hoogmoed",
+      "Kwetsbaarheid",
+      "Menselijke maat",
+      "Tyrus",
+      "Incarnatie",
+      "Illusie",
+      "Genade"
+    ],
+    "theologische_beweging": "Van de hoogmoedige zelfverheffing van de mens (Tyrus) die leidt tot de dood, naar de nederige zelfvernedering van God (Christus) die leidt tot het leven."
+  },
+  "25_preek_kosuke_koyama": {
+    "titel": "De zware jas van een god",
+    "schriftlezing": "Ezechiël 28:1-10",
+    "kerntekst": "Gij zijt een mens en geen god.",
+    "structuur_type": "vijfdelig",
+    "preek_onderdelen": [
+      {
+        "volgorde": 1,
+        "titel": "I. De vrachtwagen in de nacht",
+        "type": "opening",
+        "inhoud": "Gisterenavond, toen de schemering viel over de polder, stond ik even te kijken bij de A12. U kent dat geluid. Het diepe, constante zoemen van banden op asfalt. Ik zag de vrachtwagens voorbijrijden, op weg naar de distributiecentra hier op het Distripark. Grote machines. Sterk. Ze vervoeren alles wat wij nodig hebben om gelukkig te zijn. Eten, kleding, elektronica. \n\nIk zag een chauffeur hoog in zijn cabine zitten. Hij keek neer op de kleine personenauto's. Hij had de controle. Met één beweging van zijn hand kon hij duizenden kilo's staal laten draaien. In die cabine, met de lichtjes van het dashboard om hem heen, was hij de koning van de weg. Hij zat droog, warm en machtig. \n\nEn ik dacht: wat een wonder is de mens. Wij hebben de moerassige grond van Waddinxveen bedwongen. We hebben heipalen de diepte in geslagen, meters diep, tot ze vast stonden in het zand. We hebben daarop onze huizen gebouwd, onze kerken, onze enorme loodsen vol rijkdom. We hebben het water beheerst met de Hefbrug. Als je hier staat, tussen de kassen die 's nachts oranje gloeien en de snelwegen die nooit slapen, voel je de kracht van de mens. Wij kunnen alles maken. Wij kunnen de nacht veranderen in dag. Wij kunnen de zachte veengrond veranderen in een betonnen fundament. \n\nHet voelt goed om die macht te hebben. Het voelt veilig. Als we naar het jaar 2026 kijken, maken we plannen. We openen onze agenda's – of onze apps – en we vullen de dagen in. We bouwen een structuur. We zeggen: 'Dit ga ik doen. Dit ga ik bereiken.' We zitten in de cabine van ons leven en we houden het stuur stevig vast. We voelen ons sterk. Misschien, heel even, voelen we ons... onsterfelijk."
+      },
+      {
+        "volgorde": 2,
+        "titel": "II. De vorst in zijn glazen toren",
+        "type": "verbinding",
+        "inhoud": "Er was eens een man die dit gevoel heel goed kende. Ezechiël noemt hem de 'Vorst van Tyrus'. Tyrus was het Waddinxveen van de oudheid, maar dan groter, rijker, machtiger. Het was het centrum van de wereldhandel. De schepen van Tyrus voeren overal heen. Ze brachten goud, purper, ivoor. De vorst van Tyrus was geen domme man. Integendeel. De Bijbel zegt dat hij wijs was. 'Door uw wijsheid en door uw inzicht hebt u vermogen verworven,' zegt de profeet. \n\nHij was een succesvolle ondernemer. Een genie in logistiek. Hij had de economie laten groeien. Hij had werkgelegenheid gecreëerd. Als hij vandaag zou leven, zou hij op de cover van *Forbes* of *Quote* staan. We zouden hem bewonderen. We zouden lezingen van hem bijwonen over leiderschap en innovatie. \n\nMaar er gebeurde iets in het hart van deze succesvolle man. Hij keek naar zijn balans. Hij keek naar zijn pakhuizen. Hij keek naar zijn veilige eilandstad, omringd door de zee, onneembaar. En hij dacht niet: 'Dank u, God, voor deze zegen.' Nee. Hij voelde het stuur in zijn handen en hij zei: 'Ik ben een god.' \n\nLet op, hij zei niet: 'Ik ben gelovig.' Hij zei: 'Ik ben een god.' \n\n'Ik zit op een godentroon in het hart van de zeeën.' Hij dacht dat hij de werkelijkheid zelf had gemaakt. Hij dacht dat zijn veiligheid, zijn rijkdom, zijn gezondheid, zijn toekomst, allemaal het resultaat waren van zijn eigen briljante geest. Hij dacht dat hij wijzer was dan Daniël – de profeet die wist dat wijsheid van Boven komt. De vorst van Tyrus dacht dat wijsheid uit zijn eigen hoofd kwam. Hij had geen God meer nodig, want hij had de controle over de markt. Hij had de controle over de zee. Hij had de controle over morgen."
+      },
+      {
+        "volgorde": 3,
+        "titel": "III. De barst in het beton",
+        "type": "verdieping",
+        "inhoud": "Herkent u hem? Misschien een beetje? \n\nWij zeggen het niet hardop. Niemand van ons loopt morgen over de markt bij het Gouweplein en roept: 'Ik ben een god!' Dat zouden we arrogant vinden. Of gek. Maar luister eens naar de stilte van uw eigen hart, vannacht, op de drempel van het nieuwe jaar. \n\nHoe kijken wij naar 2026? Kijken we niet vaak alsof het een leeg vel is dat *wij* gaan beschrijven? Denken we niet stiekem dat onze verzekeringen, onze spaarrekeningen, onze diploma's, onze gezonde levensstijl ons beschermen tegen het kwaad? \n\nWe hebben hier in Waddinxveen prachtige huizen gebouwd. Maar we weten ook dat de bodem zakt. Als je niet diep genoeg heit, gaat het huis verzakken. De vorst van Tyrus dacht dat hij op een rots zat. Maar God stuurt Ezechiël met een boodschap die klinkt als een hamer op glas. \n\n'Gij zijt een mens en geen god.' \n\nHet is geen lange preek. Het is een simpele constatering. Een feit. U bent een mens. \n\nEn dan komt de crisis. Ezechiël spreekt over 'vreemden' die komen. 'De gewelddadigste volken'. Ze trekken hun zwaarden tegen de schoonheid van de wijsheid. Voor Tyrus waren dat de Babyloniërs. Voor ons? Wat zijn de 'vreemden' die onze controle doorbreken? \n\nMisschien is het de cel die zich plotseling begint te delen in een lichaam, zonder dat we het kunnen stoppen. Misschien is het een economische crisis die we niet zagen aankomen, ondanks al onze algoritmen. Misschien is het de eenzaamheid die je plotseling overvalt, ook al heb je duizend vrienden op sociale media. Misschien is het een ongeval op de A12, in een fractie van een seconde. \n\nDe vorst van Tyrus dacht dat hij de tijd in zijn zak had. Maar toen de vreemden kwamen, toen de muren vielen, toen de markt instortte, bleef er maar één ding over. Een sterfelijk mens. Een mens die bloedt. Een mens die bang is. \n\nIs dat niet onze diepste angst? Dat we, als we stoppen met rennen, als we stoppen met bouwen, als we stoppen met 'god spelen', dat we dan ontdekken dat we naakt en kwetsbaar zijn in een koude wereld?"
+      },
+      {
+        "volgorde": 4,
+        "titel": "IV. De God die mens werd",
+        "type": "doorbraak",
+        "inhoud": "Maar vrienden, luister goed. Is de zin 'Gij zijt een mens en geen god' alleen maar een oordeel? Is het alleen maar bedoeld om ons klein te maken? \n\nIk denk het niet. Ik denk dat het ook de diepste troost is die we kunnen horen op Oudejaarsavond. \n\nStel je voor dat je echt een god moest zijn. Stel je voor dat je echt verantwoordelijk was voor het draaien van de aarde. Dat je echt de toekomst van je kinderen moest garanderen. Dat je echt de wereldvrede moest bewaren. Wat een ondraaglijke last! Wat een zware jas om te dragen! Geen wonder dat we zo moe zijn. Geen wonder dat we burn-outs krijgen. We proberen een jas te dragen die veel te groot is voor onze schouders. \n\nGod kijkt naar de vorst van Tyrus – en naar ons – en Hij zegt eigenlijk: 'Trek die jas uit. Je hoeft geen god te zijn. Je bent een mens. Wees een mens.' \n\nMaar hoe kunnen we gewoon mens zijn in een wereld vol gevaar? \n\nKijk naar de kribbe. We komen net uit de Kersttijd. Wat gebeurde daar? De vorst van Tyrus wilde als mens omhoog klimmen om god te zijn. Maar de ware God deed precies het tegenovergestelde. Hij kwam naar beneden. \n\nJezus Christus zei niet: 'Ik ben een god', hoewel Hij het recht had dat te zeggen. Hij werd een mens. Hij werd *adam*. Hij werd aarde. Hij werd kwetsbaar. Hij werd geboren in een stal, niet in een paleis in Tyrus. Hij had geen leger, geen handelsvloot, geen bankrekening. \n\nEn Hij stierf. De vorst van Tyrus stierf 'de dood van onbesnedenen', een dood van verlatenheid. Jezus stierf diezelfde dood. Hij werd door 'vreemden' (Romeinen) gedood. Hij werd door God verlaten. Hij ging de kuil in, de diepte in, waar wij zo bang voor zijn. \n\nWaarom? \n\nZodat wij, als wij vallen – en wij zullen vallen, want wij zijn mensen – niet in een bodemloze put vallen, maar in Zijn handen. \n\nDe vorst van Tyrus dacht dat hij zichzelf moest redden. Jezus redde zichzelf niet, zodat Hij ons kon redden. Dat is het kruis. Het kruis is de plek waar God zegt: 'Ik draag de last van de goddelijkheid, zodat jij de vreugde van de menselijkheid kunt hebben.' \n\nU hoeft 2026 niet te dragen. U hoeft de wereld niet te redden. U hoeft niet onsterfelijk te zijn. Er is al een God. En die God is goed. Hij loopt traag, drie mijl per uur, door ons leven. Hij heeft geen haast, want Hij heeft de eeuwigheid. En Hij nodigt ons uit om naast Hem te lopen. Niet als goden, maar als mensen. Geliefde mensen."
+      },
+      {
+        "volgorde": 5,
+        "titel": "V. Wandelen in het nieuwe jaar",
+        "type": "afsluiting",
+        "inhoud": "Straks gaan we naar huis. Misschien eet u een oliebol. Misschien steekt u vuurwerk af – even dat gevoel van macht over vuur en licht. Dat mag. Geniet ervan. \n\nMaar als het stil wordt, vannacht. Als de laatste pijl is gedoofd. Als de vrachtwagens op de A12 even minder talrijk zijn. Kijk dan eens in de spiegel. \n\nU ziet daar geen god. U ziet rimpels, misschien. U ziet ogen die moe zijn van een lang jaar. U ziet een mens. Een mens die ademt dankzij God. Een mens die leeft bij de gratie van een Ander. \n\nLaat die zware jas van de controle vallen. Laat de hoogmoed varen die zegt: 'Ik moet het allemaal zelf doen.' \n\nU mag het nieuwe jaar ingaan als een mens. Met lege handen, misschien. Maar wel met een hand die vastgehouden wordt door Degene die zei: 'Ik ben met u, al de dagen.' \n\nNiet: 'Ik ben met u zolang u succesvol bent.' \nNiet: 'Ik ben met u zolang u de controle hebt.' \nMaar: 'Ik ben met u.' \n\nDat is genoeg. Voor 2025. En voor 2026. \n\nAmen."
+      }
+    ],
+    "kernwoorden": [
+      "menselijke maat",
+      "hoogmoed",
+      "kwetsbaarheid",
+      "incarnatie",
+      "controle",
+      "Waddinxveen"
+    ],
+    "theologische_beweging": "Van de illusie van menselijke autonomie (de vrachtwagenchauffeur/vorst van Tyrus) naar de bevrijdende realiteit van de menswording van God (Christus die de last draagt)."
+  },
+  "26_preek_fleming_rutledge": {
+    "titel": "DE DOOD VAN EEN GOD",
+    "schriftlezing": "Ezechiël 28:1-10",
+    "kerntekst": "Omdat uw hart hoogmoedig is geworden en u zegt: Ik ben een god... terwijl u een mens bent en geen god.",
+    "structuur_type": "vijfdelig",
+    "preek_onderdelen": [
+      {
+        "volgorde": 1,
+        "titel": "I. DE ILLUSIE VAN DE TROON",
+        "type": "opening",
+        "inhoud": "We staan vanavond op de grens. Niet zomaar een datum op de kalender, maar een scheur in de tijd. Oudejaarsavond is het moment waarop de illusie van continuïteit even wordt doorbroken. We kijken terug op 2025, we kijken vooruit naar 2026, en we voelen—als we eerlijk zijn—de huivering van de eindigheid. \n\nDe profeet Ezechiël spreekt vanavond tot ons met een stem die klinkt als een hamer op een aambeeld. Hij richt zich tot de Vorst van Tyrus. Tyrus was het New York, het Rotterdam, het Waddinxveen van de oudheid. Een logistiek wonder. Een handelscentrum dat zichzelf onmisbaar waande. De vorst van Tyrus is geen cartoon-schurk; hij is een succesverhaal. Hij is de belichaming van wat wij 'geslaagd' noemen. Hij heeft de economie laten groeien. Hij heeft door zijn wijsheid—zijn technische inzicht, zijn handelsgeest—grote rijkdom vergaard. Hij zit, zo zegt hij, op een 'godentroon in het hart van de zeeën'. \n\nKlinkt dit bekend? Wij leven in een tijdperk dat dronken is van zijn eigen kunnen. We hebben in 2025 gezien hoe Kunstmatige Intelligentie taken overneemt waarvan we dachten dat ze uniek menselijk waren. We wanen ons 'wijzer dan Daniël'; er is geen geheim dat onze algoritmen niet kunnen ontsluiten. We bouwen onze wijken, zoals de Triangel hier, en we denken dat we het leven kunnen maken, kunnen plannen, kunnen verzekeren. Maar vanavond, terwijl de oliebollen bakken en de vuurwerkpotten klaarstaan, spreekt God een woord dat dwars door onze zelfgenoegzaamheid snijdt. Hij spreekt tot de vorst, en Hij spreekt tot ons: 'Omdat uw hart hoogmoedig is geworden...'. Dit is geen moreel verwijtje. Dit is een diagnose van een dodelijke ziekte. De ziekte van de mens die vergeet dat hij schepsel is."
+      },
+      {
+        "volgorde": 2,
+        "titel": "II. DE DIAGNOSE: EEN KOSMISCHE VERGISSING",
+        "type": "verdieping",
+        "inhoud": "De zonde van de vorst van Tyrus—en de zonde van onze tijd—is niet dat hij rijk is. De Bijbel is niet tegen welvaart. De zonde is de *hybris*. Het is de ontologische categorieverwarring. De vorst zegt: 'Ik ben een god.' (*El ani*). Hij zegt niet: 'Ik ben dankbaar.' Hij zegt: 'Ik ben de bron.' \n\nDit is de oerzonde van Genesis 3, die als een kankergezwel door de geschiedenis woekert. Het is de leugen dat wij autonoom zijn. Dat wij de touwtjes in handen hebben. Kijk naar de wereld van 2025. We dachten dat we de natuur konden beheersen, maar de branden in Californië hebben ons uitgelachen. We dachten dat we vrede konden garanderen door handel, maar de wereld staat in brand, van Soedan tot de grenzen van Europa. We dachten dat we veilig waren in onze technologische burchten, maar een paar seconden onoplettendheid op de A12 en het leven is voorbij. \n\nDe vorst van Tyrus dacht dat zijn 'wijsheid' hem zou redden. Maar Ezechiël ontmaskert deze wijsheid. Het is geen wijsheid die buigt voor het mysterie van God. Het is technische knowhow. Het is de slimheid van de beursvloer. Het is de efficiëntie van het distributiecentrum. En God zegt: 'Je hebt je hart gelijkgesteld aan het hart van God.' U denkt dat u de Schepper bent. Maar u bent slechts een manager van geleend goed. En de tragedie is dat deze hoogmoed ons niet gelukkig maakt. Het maakt ons eenzaam. Want een god heeft geen naasten, alleen onderdanen. Een god heeft geen vrienden, alleen aanbidders. Als wij onszelf op de troon zetten, eindigen we in een ijskoude isolatie."
+      },
+      {
+        "volgorde": 3,
+        "titel": "III. DE INVASIE: DE REALITEIT BREEKT IN",
+        "type": "invasie",
+        "inhoud": "En dan gebeurt het. God grijpt in. Niet omdat Hij een jaloerse tiran is die onze pretjes wil bederven, maar omdat Hij de God van de Waarheid is. Hij kan de leugen niet laten bestaan. 'Daarom,' zegt de HEERE, 'zie, Ik breng vreemden over u.' \n\nVoor Tyrus waren dit de Babyloniërs, de meedogenloze legers van Nebukadnezar. Maar theologisch gezien zijn de 'vreemden' de krachten die onze controle doorbreken. Het zijn de indringers die we niet kunnen wegmanagen. Het is de diagnose in het ziekenhuis die uw agenda voor 2026 irrelevant maakt. Het is de economische crisis die uw pensioen verdampt. Het is de dood zelf. \n\nGod stuurt de realiteit op ons af om onze illusies te verbrijzelen. 'Zult u dan nog zeggen: Ik ben een god, voor het aangezicht van uw moordenaar?' Het is een huiveringwekkende vraag. Op het moment dat de dood ons in de ogen kijkt, verdampt onze goddelijkheid. Dan blijft er maar één ding over: 'Gij zijt een mens en geen god.' \n\nDit klinkt als een oordeel, en dat is het ook. Maar begrijp dit goed: dit oordeel is een daad van genade. Het is de *rectificatie* van de wereld. God zet de dingen weer op hun plaats. Hij haalt de mens van de troon waar hij niet hoort en waar hij alleen maar ongelukkig van wordt. De val van Tyrus is de noodzakelijke sloop van een gebouw dat op drijfzand is gebouwd. God breekt onze autonomie af, zodat we eindelijk weer mens kunnen zijn. Kwetsbaar, afhankelijk, sterfelijk mens."
+      },
+      {
+        "volgorde": 4,
+        "titel": "IV. DE OVERWINNING: DE WARE VORST",
+        "type": "invasie",
+        "inhoud": "Maar het verhaal eindigt niet in de kuil van Tyrus. Want er is een andere Vorst. Ezechiël zag Hem nog slechts in schimmen, maar wij kennen Zijn Naam. \n\nDe vorst van Tyrus was een mens die probeerde God te worden, en hij viel in de diepte van de dood. \nJezus Christus was God die Mens werd, en Hij daalde vrijwillig af in diezelfde diepte. \n\nZiet u de radicale omkering? Tyrus greep naar de macht (*arrogatio*). Christus legde de macht af (*kenosis*). Tyrus wilde niet sterven en stierf de 'dood van onbesnedenen'—een eerloze, godverlaten dood. Christus koos ervoor om die eerloze, godverlaten dood te sterven aan het kruis. Hij ging de kuil in waar Tyrus—waar wij—in gevangen zaten. \n\nDe 'vreemden' kwamen ook voor Hem. De Romeinse soldaten, de machten van haat en dood, ze trokken hun zwaarden tegen de Schoonheid van Israël. Ze ontheiligden Zijn glans. Maar waar de vorst van Tyrus brak, daar brak Christus de macht van de dood. Hij heeft de 'vreemden' ontwapend. Hij heeft de kuil veranderd van een gevangenis in een doorgang. \n\nDit is het Evangelie van Oudejaarsavond: De troon is niet leeg. Maar er zit geen mens op die god speelt. Er zit een God op die Mens is geworden. De Littekens van de Opgestane zijn het bewijs dat onze hoogmoed is geoordeeld en onze menselijkheid is gered."
+      },
+      {
+        "volgorde": 5,
+        "titel": "V. DE BELOFTE: MENS MOGEN ZIJN",
+        "type": "belofte",
+        "inhoud": "Wat betekent dit voor u, hier in Waddinxveen, op de drempel van 2026? Het betekent dat u ontslagen bent. U bent ontslagen van de verpletterende taak om god te zijn over uw eigen leven. \n\nU hoeft de toekomst niet te garanderen. Dat kunt u niet, en dat hoeft u niet. U hoeft de wereldproblemen niet op uw schouders te dragen. Die last is te zwaar voor u, en hij is al gedragen. De boodschap 'Gij zijt een mens' is geen belediging. Het is de ultieme bevrijding. U mag mens zijn. U mag beperkt zijn. U mag afhankelijk zijn. \n\nGod belooft u niet dat 2026 makkelijk zal zijn. De 'vreemden' kunnen nog steeds komen. Ziekte, zorg, onzekerheid—ze zijn niet uit de wereld. Maar God belooft u dit: Uw leven is niet in handen van het lot, niet in handen van de economie, en gelukkig niet in uw eigen handen. Uw leven is 'verborgen met Christus in God'. \n\nLaat de vorst van Tyrus vallen. Laat uw eigen tronen wankelen en instorten. Het geeft niet. Want onder de puinhopen van onze ambities liggen de eeuwige armen van de God die mens werd om ons op te vangen. \n\nGa het nieuwe jaar in, niet als kleine goden die krampachtig de controle houden, maar als geliefde mensen, getekend door het kruis, levend uit de belofte van de Opstanding. \n\nAmen."
+      }
+    ],
+    "kernwoorden": [
+      "Hybris",
+      "Menselijke maat",
+      "Goddelijke invasie",
+      "Rectificatie",
+      "Kenosis",
+      "Christus Victor"
+    ],
+    "theologische_beweging": "Van de menselijke hoogmoed (crisis) via het goddelijke oordeel (invasie) naar de bevrijdende realiteit van de menswording van Christus (belofte)."
   },
   "Bijbelteksten": {
     "naardense_bijbel": [
