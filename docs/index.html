@@ -2134,8 +2134,9 @@
 	        { file: "Ede_25_dec_2025.json", label: "Ede (Kerst 2025, De Gelderhorst (Verzorgingstehuis))" },
             { file: "Den_Haag_28_dec_2025.json", label: "Den Haag (28 december 2025, De Kloosterkerk)" },
             { file: "Waddinxveen_31_dec_2025.json", label: "Waddinxveen (31 december 2025, De Morgenster)" },
-            
-            { file: "Waddinxveen_11_jan_2026.json", label: "Waddinxveen (11 januari 2026, De Bethelkerk)" }, 
+           
+            { file: "Barneveld_11_jan_2026.json", label: "Barneveld (11 januari 2026, Pniëlkerk (HHK))" }, 
+            //{ file: "Waddinxveen_11_jan_2026.json", label: "Waddinxveen (11 januari 2026, De Bethelkerk)" }, 
 	        { file: "Arnhem_18_jan_2026.json", label: "Arnhem (18 januari 2026, PG Arnhem-Zuid)" },
             { file: "Gouda_25_jan_2026.json", label: "Gouda (25 januari 2026, De Pauluskerk)" },          
            
@@ -3209,7 +3210,7 @@
                     title: 'Kosuke Koyama Homiletiek - achtergrond'
                 },
                 '26_preek_fleming_rutledge': {
-                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Fleming_Rutledge_Homiletiek.md',
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Fleming Rutledge_Homiletiek.md',
                     title: 'Fleming Rutledge Homiletiek - achtergrond'
                 },
                 '22_midjourney_prompts': {
@@ -5097,7 +5098,7 @@
 
                     // Zoekmodellen Snoek
                     if (lezing.zoekmodellen_snoek) {
-                        const isValidSnoek = (val) => val && typeof val === 'string' && !/^n\.?v\.?t/i.test(val.trim());
+                        const isValidSnoek = (val) => val && typeof val === 'string' && !/^(n\.?v\.?t\.?|null)$/i.test(val.trim());
                         
                         const ot = lezing.zoekmodellen_snoek.godsbeelden_ot;
                         const mens = lezing.zoekmodellen_snoek.mensbeelden_ot;
@@ -6769,7 +6770,7 @@
 
              if (jsonFiles.length > 0) {
                  // Set the selector to the third file by default
-                 const defaultFile = jsonFiles[2].file;
+                 const defaultFile = jsonFiles[3].file;
                  fileSelector.value = defaultFile;
                  loadFile(defaultFile);
              }
