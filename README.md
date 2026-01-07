@@ -77,6 +77,9 @@ De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde h
 | 18b | **Preekschets Brueggemann (Poet)** | Preekschets gebaseerd op *Finally Comes the Poet*: 4 homiletische methoden. |
 | 19 | **Preekschets Noordmans** | Preekschets in de stijl van Oepke Noordmans: trinitarisch en gericht op 'herschepping' door de Heilige Geest. |
 | 20 | **Preekschets Peterson** | Preekschets in de stijl van Eugene Peterson: contemplatief en pastoraal. |
+| 24 | **Preekschets Rutledge** | Preekschets in de stijl van Fleming Rutledge: apocalyptisch en kruistheologisch. |
+| 25 | **Preekschets Koyama** | Preekschets in de stijl van Kosuke Koyama: contextueel en dialogisch. |
+| 26 | **Preekschets Taylor** | Preekschets in de stijl van Gardner C. Taylor: eloquent en narratief. |
 | 21 | **Midjourney Prompts** | Visuele thema's en prompts voor beeldgeneratie bij de preek. |
 | 23 | **Literaire Preekschets** | Transformatie van de Buttrick-analyse naar een literaire preekschets, met nadruk op verhalende taal, concrete beelden en dialoog. |
 
@@ -205,6 +208,9 @@ Het project genereert meerdere preekschetsen voor dezelfde zondag, elk vanuit ee
 | **BRUEGGEMANN** | **OT-profeten/psalmen** | **Zeer sterke preferentie OT** | Klacht + visioen, economische rechtvaardigheid |
 | **NOORDMANS** | Breuk + verbreking | Neutraal (spanning > harmonie) | Geen rozentuin, publiek karakter |
 | **PETERSON** | Kleine/stille teksten | Neutraal (contemplatief > dramatisch) | Incarnatie (vlees & bloed), Taal I |
+| **RUTLEDGE** | Apocalyptisch/Kruis | Neutraal (kruis > moraal) | Kosmische invasie, God als handelend subject |
+| **KOYAMA** | Contextueel/Dialogisch | Neutraal (concrete context > abstractie) | Neighbourology, "Three Mile an Hour God" |
+| **TAYLOR** | Narratief/Eloquent | Neutraal (verhaal > doctrine) | Scharlaken Draad, "Sweet Torture" |
 | **ZORNBERG** | **Torah/Profeten** | **Zeer sterke preferentie OT** | Midrasjische potentie, psychologische diepte |
 
 #### Waarom deze Diversiteit?
@@ -293,6 +299,27 @@ Preekschets in de stijl van Oepke Noordmans. Zijn homiletiek biedt een unieke be
 
 ### 20 Preekschets in de geest van Peterson
 Preekschets in de stijl van Eugene Peterson: contemplatief en pastoraal. Gericht op 'A Long Obedience in the Same Direction' en het alledaagse leven doordesemen met de bijbelse verbeelding.
+
+### 24 Preekschets in de geest van Rutledge
+Preekschets in de stijl van Fleming Rutledge: apocalyptisch en kruistheologisch. Rutledge's homiletiek is geworteld in de "apocalyptische theologie" van de Union School en Karl Barth.
+*   **Centraal thema:** God als het handelend subject ("God is the subject of the verbs") in een kosmische strijd tegen de Machten van Zonde en Dood.
+*   **Kenmerken:** Nadruk op het "Christus Kerygma" (de Kosmische Overwinnaar) boven het "Jezus Kerygma" (moreel voorbeeld), verwerping van therapeutisch moralisme, en de preek als proclamatie van goddelijke invasie.
+
+📄 **[Lees meer over de homiletiek van Rutledge](misc/Fleming Rutledge_Homiletiek.md)**
+
+### 25 Preekschets in de geest van Koyama
+Preekschets in de stijl van Kosuke Koyama: contextueel en dialogisch. Koyama's homiletiek is een radicale heroriëntatie van de houding van de prediker ten opzichte van God, de tekst en de naaste.
+*   **Centraal thema:** "Neighbourology" – de studie van God is onlosmakelijk verbonden met de studie van de naaste. De "Three Mile an Hour God" – God beweegt langzaam omdat Hij liefde is.
+*   **Kenmerken:** Inductieve structuur, "Kitchen Theology" (theologie bereid met lokale ingrediënten), de "Crucified Mind" versus de "Crusading Mind", en zintuiglijke prediking.
+
+📄 **[Lees meer over de homiletiek van Koyama](misc/Kosuke_Koyama_Homiletiek.md)**
+
+### 26 Preekschets in de geest van Taylor
+Preekschets in de stijl van Gardner C. Taylor: eloquent en narratief. Taylor, "de Deken van de predikers", vertegenwoordigt een unieke synthese van klassieke westerse theologie en de Afro-Amerikaanse predikingstraditie.
+*   **Centraal thema:** De "Scharlaken Draad" – de rode draad van verlossing die door de hele Schrift loopt. De "Sweet Torture of Sunday Morning" – prediking als existentiële worsteling en genade.
+*   **Kenmerken:** "Split Vision" (Bijbel en krant), narratieve eloquentie, het "penseel van de prediker" (beeldende taal), en de integratie van lijden in het geloof via de theologie van Unamuno.
+
+📄 **[Lees meer over de homiletiek van Taylor](misc/Gardner_Taylor_homiletiek.md)**
 
 ### 21 Midjourney Prompts
 Visuele thema's en prompts voor beeldgeneratie bij de preek. Deze prompts helpen bij het visueel ondersteunen van de boodschap via projectie of sociale media.
