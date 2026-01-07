@@ -49,6 +49,6 @@ Twee redenen.
 
 Ten eerste: homiletiek is een wetenschappelijke discipline. Wie een dienst — oneerbiedig gesproken — uit elkaar en weer in elkaar kan zetten (deconstructie en reconstructie), is beter in staat om te zien waar het ambachtelijk goed dan wel minder goed gaat. Het bouwen van een generatief systeem dwingt tot explicitering van wat vaak impliciet blijft of soms zelfs genegeerd wordt.
 
-Ten tweede: er is een chronisch gebrek aan structurele feedback op de output van voorgangers. Preken worden gehouden, soms gewaardeerd, zelden systematisch geëvalueerd. Deze voorbereiding is een  hulpmiddel om uiteindelijk tot een integraal feedbacksysteem te komen — een manier om het ambacht te blijven ontwikkelen.
+Ten tweede: er is een chronisch gebrek aan *structurele* feedback op de output van voorgangers. Preken worden gehouden, soms gewaardeerd, zelden systematisch geëvalueerd. Deze voorbereiding is een hulpmiddel om uiteindelijk tot een integraal feedbacksysteem te komen (met o.a. representatieve 'virtuele' hoorders) — een manier om het ambacht te blijven ontwikkelen. Dit gebeurt in samenwerking met onderzoekers van de PThU (Utrecht).
 
 Een eerste opzet van zo'n (open source) feedbacksysteem is te vinden op [github.com/wmotte/homiletiek_feedback](https://github.com/wmotte/homiletiek_feedback).
