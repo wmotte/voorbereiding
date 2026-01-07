@@ -43,6 +43,46 @@ Dat klopt. Het liturgisch rooster, de uitgeschreven gebeden, het Liedboek 2013, 
 
 Dat betekent niet dat de onderliggende techniek niet breder toepasbaar zou zijn. Met andere liedbundels, andere commentaren en andere theologische accenten zou een vergelijkbaar systeem kunnen werken in genootschappen waar zowel exegese als hoorderscontext serieus mogen meedoen tijdens de voorbereiding. Die implementatie vraagt om andere expertise dan de mijne.
 
+## Maar taalmodellen hallucineren toch?
+
+Dat klopt — en dat blijft altijd mogelijk. Taalmodellen kunnen informatie verzinnen die niet bestaat, of theologische verbanden leggen die er niet zijn. Daarom zijn er meerdere veiligheidsmaatregelen ingebouwd.
+
+Ten eerste: de modellen opereren op een *lage temperatuur*. Dat betekent dat ze bij elke stap de meest waarschijnlijke, voorspelbare keuze maken in plaats van creatief te improviseren. Hoge temperatuur leidt tot variatie en verrassingen (handig bij creatief schrijven), lage temperatuur leidt tot stabiliteit en betrouwbaarheid (essentieel bij theologische output).
+
+Ten tweede: meerdere onderdelen worden gegrond in externe bronnen. Exegetische validatie gebeurt met behulp van databases met theologische commentaren. Liedsuggesties worden geselecteerd uit bestaande bundels. En waar contextuele informatie nodig is — over een gemeente, een gebeurtenis, een seizoen — gebeurt dat via internetzoekopdrachten, niet via modelverbeelding.
+
+Ten derde: ook zonder een hulpmiddels als deze is het altijd spannend of een voorganger de hoorders en de tekst recht doet. Elke preek draagt het risico van misinterpretatie, projectie of een verkeerde inschatting van wat de gemeente nodig heeft en de Schrift 'wil' zeggen. 'Hallucineren' — in de zin van iets zien dat er niet is — is niet voorbehouden aan taalmodellen. Het verschil is dat dit systeem dwingt tot explicitering van keuzes, zodat deze keuzes geëvalueerd en bijgesteld kunnen worden.
+
+## Maar dit maakt je toch afhankelijk van (Amerikaanse) tech-bedrijven?
+
+Dat is een reële zorg. Op dit moment draait het systeem op Gemini, een commercieel model van Google. Die keuze is pragmatisch: Gemini biedt een zeer grote contextwindow (twee miljoen tokens), wat nodig is om tijdens één sessie exegetische commentaren, gemeenteprofiel, liturgische opties en theologische instructies tegelijk mee te geven.
+
+Maar de afhankelijkheid is niet absoluut. De open-source community zit de proprietary modellen op de hielen — modellen die lokaal draaien, geen data naar externe servers sturen, en volledig transparant zijn in hun werking. In principe is elk taalmodel met voldoende contextcapaciteit én grounding via search/database tools geschikt om dit systeem mee te laten functioneren. De architectuur is modulair opgezet: het onderliggende model is vervangbaar zonder dat de logica of output fundamenteel verandert.
+
+Zodra open-source alternatieven technisch vergelijkbaar worden, is een overstap mogelijk. Tot die tijd blijft de keuze voor een commercieel model een afweging tussen wat nu werkbaar is en wat ideologisch wenselijk zou zijn.
+
+## Begrijp ik goed dat deze tool in feite een aaneenschakeling is van tientallen specialistische taalmodellen (elk met een eigen context en prompt). Hoe 'weten' deze modellen van elkaars inzichten en output?
+
+Ja, die beschrijving klopt. Het systeem bestaat uit meerdere gespecialiseerde taalmodellen — elk met een eigen taak, prompt en context. Er is een model voor exegetische analyse, een voor liedsuggesties, een voor gebeden, een voor de preekschets, een voor het kindermoment, enzovoort.
+
+Niet alle modellen krijgen alle output te zien. Een deel is parallel geschakeld en werkt onafhankelijk. Het model dat liederen selecteert hoeft bijvoorbeeld niet te weten wat het model voor de voorbeden schrijft.
+
+Maar een groot deel is sequentieel geschakeld: latere modellen krijgen de output van eerdere modellen als input. Het model dat de preekschets schrijft, krijgt de exegetische analyse, het gemeenteprofiel en de gekozen theologische focus mee. Het model dat de gebeden formuleert, krijgt de preekschets en de thema's van de dienst te zien. Zo ontstaat theologische consistentie: niet omdat één enkel model alles doet, maar omdat de keten van modellen telkens voortbouwt op wat eerder is gegenereerd.
+
+Die architectuur maakt het systeem flexibel — een enkel onderdeel kan worden vervangen of bijgesteld zonder dat de hele keten opnieuw moet — en transparant: elk model heeft een afgebakende verantwoordelijkheid die geëvalueerd kan worden.
+
+## Leidt het gebruik van taalmodellen in de preekvoorbereiding niet tot vervreemding in plaats van resonantie? Hartmut Rosa zou dit toch bekritiseren?
+
+Dat is een scherpe vraag. Hartmut Rosa (geb. 1965) beschrijft in zijn werk over versnelling en vervreemding hoe technologische ontwikkelingen kunnen leiden tot een wereldrelatie waarin de wereld stom, koud en onverschillig — zelfs vijandig — wordt. Resonantie is het tegenovergestelde: een responsieve relatie waarin subject en wereld elkaar wederzijds raken en transformeren, waarbij beide kanten met hun eigen stem spreken.
+
+Het risico is reëel. Technologische versnelling kan leiden tot vervreemding, vooral als tools de wereld reduceren tot beheersbare, instrumentele objecten. Een preekvoorbereidingssysteem dat de tekst, de hoorders en de liturgie behandelt als variabelen in een productieproces zou precies doen wat Rosa bekritiseert: resonantie vervangen door efficiëntie.
+
+Maar het hangt af van hoe het systeem wordt gebruikt. Resonantie is niet hetzelfde als spontaneïteit of directheid — ze kan ook gefaciliteerd worden door structuur en voorbereiding. Een voorganger die uren besteedt aan administratieve zoektaken (welke liederen passen bij dit thema? waar staat die uitleg ook alweer? was er niet ergens een citaat over dit of dat?) kan juist minder ruimte ervaren voor de responsieve relatie met tekst en gemeente. Als het systeem tijdrovende taken versnelt, creëert het potentieel meer ruimte voor wat Rosa 'luisteren naar de eigen stem van de wereld' noemt.
+
+Bovendien: het systeem dwingt tot explicitering van keuzes. Dat voorkomt dat de preekvoorbereiding (en voorbereiding van de gebeden!) een 'stomme' routine wordt — een herhaling van patronen zonder aandacht. De output is geen script dat gevolgd moet worden, maar materiaal dat gehoord, geëvalueerd en eventueel verworpen kan worden. De voorganger blijft degene die met eigen stem spreekt. Het verschil is dat die stem nu in gesprek kan met een gestructureerd aanbod van passend materiaal.
+
+Rosa wijst in *Onbeschikbaarheid* (Boom, 2022) op het belang van ervaringen die zich niet laten beheersen of beschikbaar maken. Paradoxaal genoeg kan een goed ontworpen hulpmiddel ruimte creëren voor juist die onbeschikbaarheid — door administratieve lasten (waaronder zeker ook het zoeken naar tekstuele illustraties en beeldmateriaal voor de preek) te verminderen en zo contemplatieve ruimte te behouden. Zie ook *Leven in tijden van versnelling: een pleidooi voor resonantie* (Boom, 2016).
+
 ## Waartoe dit alles?
 
 Twee redenen.
