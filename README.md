@@ -305,7 +305,7 @@ Preekschets in de stijl van Fleming Rutledge: apocalyptisch en kruistheologisch.
 *   **Centraal thema:** God als het handelend subject ("God is the subject of the verbs") in een kosmische strijd tegen de Machten van Zonde en Dood.
 *   **Kenmerken:** Nadruk op het "Christus Kerygma" (de Kosmische Overwinnaar) boven het "Jezus Kerygma" (moreel voorbeeld), verwerping van therapeutisch moralisme, en de preek als proclamatie van goddelijke invasie.
 
-📄 **[Lees meer over de homiletiek van Rutledge](misc/Fleming Rutledge_Homiletiek.md)**
+📄 **[Lees meer over de homiletiek van Rutledge](misc/Fleming_Rutledge_Homiletiek.md)**
 
 ### 25 Preekschets in de geest van Koyama
 Preekschets in de stijl van Kosuke Koyama: contextueel en dialogisch. Koyama's homiletiek is een radicale heroriëntatie van de houding van de prediker ten opzichte van God, de tekst en de naaste.
