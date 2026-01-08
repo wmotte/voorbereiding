@@ -61,6 +61,7 @@ De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde h
 | 08a | **Exegese** | Tekstkritiek, historische context en theologische lijnen (zoekmodellen Snoek). |
 | 08b | **Liedsuggesties** | Database-analyse met liederen uit Liedboek, Weerklank, Op Toonhoogte, Hemelhoog. |
 | 08c | **Commentaren** | Database-analyse van professionele exegetische commentaren via database. |
+| 08d | **Theologie** | Diepgaande analyse van drie theologische noties met dwarsverbanden in de dogmatische traditie. |
 | 09 | **Kunst & Cultuur** | Beelden, film en muziek bij de lezingen (incl. bronverificatie). |
 | 10 | **Focus & Functie** | De kernboodschap en het beoogde effect van de preek. |
 | 11 | **Kalender** | Gedenkdagen, heiligen, astronomie en weer. |
@@ -143,6 +144,9 @@ Geautomatiseerde zoektocht naar passende liederen in de database (Liedboek, Weer
 
 ### 08c Commentaren
 Analyse van professionele exegetische commentaren via een kennisgraaf (Neo4j), gericht op diepgaande tekstuele duiding.
+
+### 08d Theologie
+Een diepteboring die drie theologische noties uit de lezingen identificeert en analyseert. In tegenstelling tot de exegese (die de tekst voornamelijk in zijn context leest), zoekt deze analyse naar bredere dogmatische dwarsverbanden en concepten (zoals 'verbond', 'gerechtigheid' of 'eschatologie') in de theologische traditie. Deze sectie gebruikt een kennisgraaf (Neo4j) met theologische commentaren om systematisch-theologische reflecties van verschillende denkers te verzamelen en te verbinden, wat resulteert in drie uitgebreide theologische analyses van elk 800-1000 woorden.
 
 ### 09 Kunst & Cultuur
 Beelden, film en muziek bij de lezingen (incl. bronverificatie).
