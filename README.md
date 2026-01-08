@@ -2,9 +2,9 @@
 
 # Preekvoorbereiding
 
-**Een LLM-ondersteund hulpmiddel voor protestantse preekvoorbereiding (PKN).**
+**Een LLM-ondersteund hulpmiddel voor het voorbereiden van protestantse diensten.**
 
-**Let op: Dit materiaal is bedoeld ter inspiratie en als 'feedback' op eigen werk. De uiteindelijke verantwoordelijkheid voor de preek ligt bij de predikant zelf.**
+**Let op: Dit materiaal is bedoeld ter inspiratie. De uiteindelijke verantwoordelijkheid voor de dienst (en in het bijzonder de preek) ligt bij de voorganger.**
 
 1. Bekijk de online webviewer met *100% automatisch-gegenereerde* voorbeelddata: [https://wmotte.github.io/voorbereiding/](https://wmotte.github.io/voorbereiding/)
 
@@ -31,7 +31,7 @@ Dit project combineert **contextanalyse** (hoorders, samenleving) met concrete *
 Inspiratie voor dit hulpmiddel is geput uit **"De Eerste Dag"**, de officiële, oecumenische handreiking van de Raad van Kerken in Nederland. "De Eerste Dag" ondersteunt bij de voorbereiding van de wekelijkse eredienst, aansluitend bij het kerkelijk jaar en de liturgie. Het biedt commentaren bij de lezingen, suggesties voor de liturgie, gebeden en toepassingen voor kinderwerk, en helpt bij het structureren van de dienst (de "orde").
 
 Met dit digitale hulpmiddel wordt die voorbereiding veel dynamischer én contextueler. De voorganger kan specifiek aangeven wie de hoorders zijn, in welke tijd en op welke plaats. Ook kan hij of zij nu zelf bepalen welke onderdelen van belang zijn in de voorbereiding. De output van de tool biedt de mogelijkheid om de eigen exegesetische inzichten en eigen homiletische structuur te toetsen. Sommigen willen meer informatie over interactieve momenten (zoals het kindermoment), terwijl weer anderen geholpen zijn bij de identificatie van relevante kunst- en cultuurartefacten. 
-Een enkeling zoekt inspiratie in *hypothetische* preekschetsen van belangrijke historische voorgangers; de tool demonstreert hoe dat eruit zou kunnen zien (op basis van een drietal theologen). 
+Een enkeling zoekt inspiratie in *hypothetische* preekschetsen van belangrijke historische voorgangers; de tool demonstreert hoe dat eruit zou kunnen zien. 
 
 Het belangrijkste element is en blijft de contextuele verwerking in de verschillende voorbereidende stappen. 
 
