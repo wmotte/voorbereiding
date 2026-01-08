@@ -2,7 +2,7 @@
 
 ## Maar de Heilige Geest dan?
 
-Een begrijpelijke vraag. Toch is het gebruik van voorbereidend materiaal in de gereformeerde traditie eerder regel dan uitzondering. Leespreekbundels worden al eeuwenlang gebruikt in gemeenten zonder predikant — voorgedrukte teksten die hardop worden voorgelezen. Postilles (preekschetsen voor het kerkelijk jaar) zijn een vast genre in de theologische literatuur. En de voorbeelden van Ryle, Spurgeon of Tim Keller worden wereldwijd als inspiratiebron gebruikt. Preken is een ambacht.
+Een begrijpelijke vraag. Toch is het gebruik van voorbereidend materiaal in de gereformeerde traditie eerder regel dan uitzondering. Leespreekbundels worden al eeuwenlang gebruikt in gemeenten zonder predikant — voorgedrukte teksten die hardop worden voorgelezen. Postilles (preekschetsen voor het kerkelijk jaar) zijn een vast genre in de theologische literatuur. En de voorbeelden van Ryle, Spurgeon of Tim Keller worden wereldwijd als inspiratiebron gebruikt. Preken is een ambacht waarbij sterk geput wordt uit eerdere teksten, structuren en inzichten.
 
 De Geest werkt niet alleen in het moment van spreken, maar ook in de voorbereiding, in het doordenken van de tekst, in het selecteren van wat wel en niet gezegd wordt. Die geestelijke arbeid blijft volledig bij de voorganger liggen — dit hulpmiddel vervangt dat niet, maar ondersteunt het.
 
@@ -33,13 +33,13 @@ De hoop is om een *provider* te vinden die de logistiek van gebruikersregistrati
 
 ## Gebruikt u dit systeem zelf ook?
 
-Nog niet. Alle gepresenteerde voorbeelden zijn hypothetisch (maar wel represenatief en 100% gegenereerd). Het systeem is pas eind december 2025 geïmplementeerd. Bovendien vragen de diensten in het dovenpastoraat om een andere insteek — meer visueel, met gebaren, en aangepast aan een specifieke doelgroep.
+Nog niet. Alle gepresenteerde voorbeelden zijn hypothetisch (maar wel represenatief en 100% gegenereerd). Het systeem is pas eind december 2025 geïmplementeerd. Bovendien vragen de diensten in het dovenpastoraat om een andere insteek — meer visueel, met gebaren, en aangepast aan een specifieke doelgroep. Taalmodellen zijn overigens ook in te zetten voor gebarentaal. Zie: [Nederlands naar NmG](https://github.com/wmotte/nederlands_naar_gebaar).
 
 Wel lopen er pilots met collega-predikanten die een aantal onderdelen testen: het kindermoment, de gebeden, de liedsuggesties. Hun feedback helpt om het systeem te verbeteren voordat het breder wordt ingezet.
 
 ## Dit voelt allemaal erg PKN aan...
 
-Dat klopt. Het liturgisch rooster, de uitgeschreven gebeden, het Liedboek 2013, Weerklank, theologen als Noordmans, Fleming Rutledge en Walter Brueggemann — dit systeem is opgezet met PKN-diensten in het achterhoofd. Dat is geen toeval: het is de traditie waarin ik zelf werk en waarvan ik de liturgische en theologische grammatica het beste ken.
+Dat klopt. Het liturgisch rooster, de uitgeschreven gebeden, het Liedboek 2013, Weerklank, theologen als Noordmans, Fleming Rutledge en Walter Brueggemann — dit systeem is opgezet met PKN-diensten in het achterhoofd. Dat is geen toeval: het is de traditie waarin ik zelf werk en waarvan ik de liturgische en theologische 'grammatica' het beste ken.
 
 Dat betekent niet dat de onderliggende techniek niet breder toepasbaar zou zijn. Met andere liedbundels, andere commentaren en andere theologische accenten zou een vergelijkbaar systeem kunnen werken in genootschappen waar zowel exegese als hoorderscontext serieus mogen meedoen tijdens de voorbereiding. Die implementatie vraagt om andere expertise dan de mijne.
 
