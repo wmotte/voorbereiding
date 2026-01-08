@@ -6802,8 +6802,14 @@
             // Fix: move punctuation from own line to previous line
             result = result.replace(/\n([;!.,?:-])/g, '$1');
 
+            // Fix: remove newline after * so footnote text follows directly
+            result = result.replace(/\*\n/g, '* ');
+
             // Escape HTML special characters
             result = escapeHtml(result);
+
+            // Style footnotes (text after * followed by space until end of sentence before next capitalized line)
+            result = result.replace(/\* ([^]+?\.(?=\n[A-Z]))/g, '* <span style="color: var(--text-muted); font-size: 0.9em; font-style: italic;">$1</span>');
 
             // Convert "Ene" (God's name) to small caps
             result = result.replace(/\bEne\b/g, '<span style="font-variant: small-caps; letter-spacing: 0.05em;">Ene</span>');
