@@ -3090,8 +3090,15 @@
 
         function renderSection(key, data, num) {
             let title = sectionTitles[key] || formatKey(key);
-            // Add location name to Politieke oriëntatie title
-            if (key === '07_politieke_orientatie' && jsonData && jsonData['00_meta']?.plaatsnaam) {
+            // Add location name to main section titles
+            const sectionsWithLocation = [
+                '02_sociaal_maatschappelijke_context',
+                '03_waardenorientatie',
+                '04_geloofsorientatie',
+                '05_interpretatieve_synthese',
+                '07_politieke_orientatie'
+            ];
+            if (sectionsWithLocation.includes(key) && jsonData && jsonData['00_meta']?.plaatsnaam) {
                 title = `${title} (${jsonData['00_meta'].plaatsnaam})`;
             }
             // Use the pre-calculated number from the main loop
