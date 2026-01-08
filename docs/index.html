@@ -2131,22 +2131,12 @@
         // List of available JSON files
         const jsonFiles = [
             
-	        { file: "Ede_25_dec_2025.json", label: "Ede (Kerst 2025, De Gelderhorst (Verzorgingstehuis))" },
             { file: "Den_Haag_28_dec_2025.json", label: "Den Haag (28 december 2025, De Kloosterkerk)" },
             { file: "Waddinxveen_31_dec_2025.json", label: "Waddinxveen (31 december 2025, De Morgenster)" },
-           
             { file: "Barneveld_11_jan_2026.json", label: "Barneveld (11 januari 2026, Pniëlkerk (HHK))" }, 
-            //{ file: "Waddinxveen_11_jan_2026.json", label: "Waddinxveen (11 januari 2026, De Bethelkerk)" }, 
-	        { file: "Arnhem_18_jan_2026.json", label: "Arnhem (18 januari 2026, PG Arnhem-Zuid)" },
-            { file: "Gouda_25_jan_2026.json", label: "Gouda (25 januari 2026, De Pauluskerk)" },          
-           
+	        { file: "Tholen_18_jan_2026.json", label: "Tholen (18 januari 2026, Onze Lieve Vrouwekerk)" },
             { file: "Ameide_1_feb_2026.json", label: "Ameide (1 februari 2026, Sionkerk)" },
-            { file: "Rotterdam_8_feb_2026.json", label: "Rotterdam (8 februari 2026, Oude Kerk Charlois)" },
-
-            { file: "Waddinxveen_15_feb_2026.json", label: "Waddinxveen (15 februari 2026, De Rank)" }, 
-            { file: "Waarder_22_feb_2026.json", label: "Waarder (22 februari 2026, PG)" }, 
-            { file: "Katwijk_1_mrt_2026.json", label: "Katwijk (1 maart 2026, Vredeskerk)" }, 
-            { file: "Reeuwijk_8_mrt_2026.json", label: "Reeuwijk (8 maart 2026, De Ark)" }
+            { file: "Rotterdam_8_feb_2026.json", label: "Rotterdam (8 februari 2026, Oude Kerk Charlois)" }
 
         ];
 
@@ -6528,18 +6518,16 @@
         function smartQuotes(text) {
             if (typeof text !== 'string') return text;
             return text
-                // Double quotes
-                .replace(/(^|[\s(\[{<])"(\S)/g, '$1\u201c$2')     // Opening double quote after space/start
-                .replace(/(\S)"([\s)\]}>,.:;!?]|$)/g, '$1\u201d$2') // Closing double quote before space/end
-                .replace(/"/g, '\u201d')                          // Remaining double quotes -> closing
+                // First convert all double quotes to single quotes
+                .replace(/"/g, "'")
 
                 // Single quotes and apostrophes
                 // Dutch contractions first: 's, 't, 'n, 'm (these are apostrophes, not opening quotes)
                 .replace(/(^|[\s(\[{<])'([stnmSTNM])\b/g, '$1\u2019$2')
                 // Apostrophe within words (don't, it's, etc.)
                 .replace(/(\w)'(\w)/g, '$1\u2019$2')
-                // Opening single quote after space/start (but not Dutch contractions)
-                .replace(/(^|[\s(\[{<])'(\S)/g, '$1\u2018$2')
+                // Opening single quote after space/start/colon (but not Dutch contractions)
+                .replace(/(^|[\s(\[{<:])'(\S)/g, '$1\u2018$2')
                 // Closing single quote before space/end/punctuation
                 .replace(/(\S)'([\s)\]}>,.:;!?]|$)/g, '$1\u2019$2')
                 // Remaining single quotes -> apostrophe
@@ -6784,21 +6772,35 @@
                 return '<h1 style="color: var(--accent); margin: 32px 0 12px 0; font-size: 1.5em;">' + toSentenceCase(content) + '</h1>';
             });
 
-            // 3. List items (bullets and numbered)
-            // Handle bullet points
-            result = result.replace(/^\s*[-*]\s+(.*$)/gm, function(match, content) {
-                return '<div class="list-item" style="margin: 0 0 0 15px; position: relative; padding-left: 15px;"><span style="position: absolute; left: 0; color: var(--accent);">•</span>' + content + '</div>';
+            // 3. List items (bullets and numbered) - BEFORE formatting to preserve markers
+            // Handle bullet points with multiple spaces (e.g., "*   text")
+            result = result.replace(/^(\s*)[-*](\s{2,})(.*$)/gm, function(match, indent, spaces, content) {
+                return indent + '• ' + content;
+            });
+            // Handle regular bullet points
+            result = result.replace(/^(\s*)[-*]\s+(.*$)/gm, function(match, indent, content) {
+                return indent + '• ' + content;
             });
             // Handle numbered lists (e.g., 1. Item)
-            result = result.replace(/^\s*(\d+\.\s+.*$)/gm, function(match, content) {
-                return '<div class="list-item" style="margin: 0 0 0 15px;">' + content + '</div>';
+            result = result.replace(/^(\s*)(\d+\.)\s+(.*$)/gm, function(match, indent, num, content) {
+                return indent + num + ' ' + content;
             });
 
-            // 4. Bold and Italic
-            result = result.replace(/\*\*([^*]+)\*\*/g, function(match, content) {
-                return '<strong>' + content + '</strong>';
+            // 4. Bold and Italic formatting
+            // First handle bold with nested italic: **text (*italic*) text**
+            result = result.replace(/\*\*(.+?)\*\*/g, function(match, content) {
+                // Inside bold, handle italic
+                const processedContent = content.replace(/\*([^*]+)\*/g, '<em class="instruction">$1</em>');
+                return '<strong>' + processedContent + '</strong>';
             });
-            result = result.replace(/\*([^*]+)\*/g, '<em class="instruction">$1</em>');
+            // Then handle remaining standalone italics
+            result = result.replace(/(?<![*\w])\*([^*\n]+?)\*(?![*\w])/g, '<em class="instruction">$1</em>');
+
+            // 5. Convert bullet markers to styled divs
+            result = result.replace(/^(\s*)• (.*)$/gm, function(match, indent, content) {
+                const indentSize = indent.length * 10;
+                return '<div class="list-item" style="margin: 0 0 0 ' + (15 + indentSize) + 'px; position: relative; padding-left: 15px;"><span style="position: absolute; left: 0; color: var(--accent);">•</span>' + content + '</div>';
+            });
 
             // 5. Convert quotes to curly quotes
             result = smartQuotes(result);
