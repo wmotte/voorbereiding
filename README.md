@@ -6,13 +6,17 @@
 
 **Let op: Dit materiaal is bedoeld ter inspiratie. De uiteindelijke verantwoordelijkheid voor de dienst (en in het bijzonder de preek) ligt bij de voorganger.**
 
-1. Bekijk de online webviewer met *100% automatisch-gegenereerde* voorbeelddata: [https://wmotte.github.io/voorbereiding/](https://wmotte.github.io/voorbereiding/)
+1. Bekijk de online webviewer met *100% automatisch-gegenereerde* voorbeelddata: 
+
+** [Voorbereiding](https://wmotte.github.io/voorbereiding/) **
 
 **❓ [Q&A voor (kritische) lezers](misc/QandA.md)** — over de Heilige Geest, energieverbruik, plagiaat en meer.
 
-2. Om een idee te krijgen hoe dit hulpmiddel ingezet zou kunnen worden om gedegen feedback te leveren tijdens of na het schrijven van een preek, zie: [https://wmotte.github.io/homiletiek_feedback/](https://wmotte.github.io/homiletiek_feedback/)
+2. Om een idee te krijgen hoe dit hulpmiddel ingezet zou kunnen worden om gedegen feedback te leveren tijdens of na het schrijven van een preek, zie:
 
-Dit project combineert **contextanalyse** (hoorders, samenleving) met concrete **liturgische bouwstenen** (exegese, preekschets, gebeden). Het doel is niet om de preek te *schrijven*, maar om de predikant te voorzien van een rijke, contextuele basis.
+** [Feedback](https://wmotte.github.io/homiletiek_feedback/) **
+
+Dit project combineert **contextanalyse** (hoorders, samenleving) met concrete **liturgische bouwstenen** (exegese, preekschets, gebeden). Het doel is niet om de preek/gebeden te *schrijven*, maar om de voorganger te voorzien van een rijke, contextuele basis.
 
 ---
 
