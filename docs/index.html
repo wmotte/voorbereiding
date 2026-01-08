@@ -1203,6 +1203,16 @@
             color: var(--text-primary);
         }
 
+        /* Naardense Bijbel styling (poetic layout) */
+        .bijbel-perikoop[data-vertaling="naardense_bijbel"] .bijbel-vers {
+            text-align: left;
+            hyphens: none;
+        }
+
+        .bijbel-perikoop[data-vertaling="naardense_bijbel"] .bijbel-vers-tekst {
+            line-height: 1.7;
+        }
+
         /* Grondtekst styling (Hebreeuws/Grieks) */
         .bijbel-perikoop[data-language="Hebreeuws"] .bijbel-verzen {
             direction: rtl;
@@ -6219,9 +6229,10 @@
                 // For grondtekst, include language attribute
                 const language = perikoop.language || '';
                 const languageAttr = language ? ` data-language="${escapeHtml(language)}"` : '';
+                const vertalingAttr = ` data-vertaling="${escapeHtml(perikoop.vertalingKey)}"`;
 
                 html += `<div id="${anchorId}" class="subsection-anchor"></div>`;
-                html += `<div class="bijbel-perikoop"${languageAttr}>`;
+                html += `<div class="bijbel-perikoop"${languageAttr}${vertalingAttr}>`;
                 html += `<div class="bijbel-header">`;
                 html += `<span class="bijbel-boek-badge${perikoop.vertalingKey === 'grondtekst' ? ' bijbel-grondtekst-badge' : ''}">${escapeHtml(vertalingTitel)}</span>`;
                 html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${refString}</span>`;
@@ -6238,7 +6249,16 @@
                 perikoop.verses.forEach(vers => {
                     html += `<div class="bijbel-vers">`;
                     html += `<span class="bijbel-vers-nummer">${vers.verse}</span>`;
-                    html += `<span class="bijbel-vers-tekst">${language === 'Hebreeuws' ? escapeHtml(vers.text) : processText(vers.text)}</span>`;
+                    // Use special processing for Naardense Bijbel
+                    let versText;
+                    if (language === 'Hebreeuws') {
+                        versText = escapeHtml(vers.text);
+                    } else if (perikoop.vertalingKey === 'naardense_bijbel') {
+                        versText = processNaardenseBijbel(vers.text);
+                    } else {
+                        versText = processText(vers.text);
+                    }
+                    html += `<span class="bijbel-vers-tekst">${versText}</span>`;
                     html += `</div>`;
                 });
                 html += `</div>`;
@@ -6387,9 +6407,10 @@
                 // For grondtekst, include language attribute
                 const language = perikoop.language || '';
                 const languageAttr = language ? ` data-language="${escapeHtml(language)}"` : '';
+                const vertalingAttr = ` data-vertaling="${escapeHtml(vertalingKey)}"`;
 
                 html += `<div id="${anchorId}" class="subsection-anchor"></div>`;
-                html += `<div class="bijbel-perikoop"${languageAttr}>`;
+                html += `<div class="bijbel-perikoop"${languageAttr}${vertalingAttr}>`;
                 html += `<div class="bijbel-header">`;
                 html += `<span class="bijbel-boek-badge${vertalingKey === 'grondtekst' ? ' bijbel-grondtekst-badge' : ''}">${escapeHtml(vertalingTitel)}</span>`;
                 html += `<span class="bijbel-referentie">${escapeHtml(boekNaam)} ${perikoop.chapter}:${verzenRef}</span>`;
@@ -6406,7 +6427,16 @@
                 perikoop.verses.forEach(vers => {
                     html += `<div class="bijbel-vers">`;
                     html += `<span class="bijbel-vers-nummer">${vers.verse}</span>`;
-                    html += `<span class="bijbel-vers-tekst">${language === 'Hebreeuws' ? escapeHtml(vers.text) : processText(vers.text)}</span>`;
+                    // Use special processing for Naardense Bijbel
+                    let versText;
+                    if (language === 'Hebreeuws') {
+                        versText = escapeHtml(vers.text);
+                    } else if (vertalingKey === 'naardense_bijbel') {
+                        versText = processNaardenseBijbel(vers.text);
+                    } else {
+                        versText = processText(vers.text);
+                    }
+                    html += `<span class="bijbel-vers-tekst">${versText}</span>`;
                     html += `</div>`;
                 });
                 html += `</div>`;
@@ -6755,8 +6785,36 @@
                  const regex = new RegExp(`\\b${exc}\\b`, 'gi');
                  result = result.replace(regex, exc);
              });
-             
+
              return result;
+        }
+
+        // Process Naardense Bijbel text with special formatting
+        function processNaardenseBijbel(text) {
+            if (typeof text !== 'string') return text;
+
+            // First convert literal \n to actual newlines (in case they exist)
+            let result = text.replace(/\\n/g, '\n');
+
+            // Fix pattern: –\nword\n– should become –word– (join words between dashes)
+            result = result.replace(/–\n([^–]+?)\n–/g, '–$1–');
+
+            // Fix: move punctuation from own line to previous line
+            result = result.replace(/\n([;!.,?:-])/g, '$1');
+
+            // Escape HTML special characters
+            result = escapeHtml(result);
+
+            // Convert "Ene" (God's name) to small caps
+            result = result.replace(/\bEne\b/g, '<span style="font-variant: small-caps; letter-spacing: 0.05em;">Ene</span>');
+
+            // Convert words between dashes to italic (like –rode–)
+            result = result.replace(/–([^–<]+)–/g, '<em>–$1–</em>');
+
+            // Convert newlines to <br> for poetic line structure
+            result = result.replace(/\n/g, '<br>');
+
+            return result;
         }
 
         // Process text: escape HTML, convert quotes, and handle newlines
@@ -6764,6 +6822,9 @@
             if (typeof text !== 'string') return text;
             // First convert literal \n to actual newlines (before HTML escaping)
             let result = text.replace(/\\n/g, '\n');
+
+            // Fix Naardense Bijbel: move punctuation from own line to previous line
+            result = result.replace(/\n([;!.,?:-])/g, '$1');
 
             // Escape HTML special characters
             result = escapeHtml(result);
