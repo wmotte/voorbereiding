@@ -24,7 +24,7 @@ Dit project combineert **contextanalyse** (hoorders, samenleving) met concrete *
 1. [Over dit Project](#-over-dit-project)
 2. [Overzicht van de Analyses & Methodiek](#-overzicht-van-de-analyses--methodiek)
 3. [Database Grounding: Preventie van Hallucinaties](#-database-grounding-preventie-van-hallucinaties)
-4. [Toelichting per Onderdeel (00-23)](#00-meta-data)
+4. [Toelichting per Onderdeel](#00-meta-data)
 5. [Preekschetsen: Tekstkeuze en Diversiteit](#-preekschetsen-tekstkeuze-en-diversiteit)
 6. [Literatuur & Bronnen](#-literatuur--bronnen)
 
