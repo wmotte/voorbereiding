@@ -215,13 +215,13 @@ Het project genereert meerdere preekschetsen voor dezelfde zondag, elk vanuit ee
 | **LOWRY** | Omkerings-potentie | Neutraal (omkering > genre) | Discontinuïteit, narratieve spanning |
 | **SÖLLE** | Profetisch-politiek | Preferentie OT-profeten | Ontmaskering systemen, plaatsbekleding |
 | **JÜNGEL** | Paradox + theologia crucis | Neutraal (paradox > genre) | Onderbreking, "Niets naar Ja" |
-| **BRUEGGEMANN** | **OT-profeten/psalmen** | **Zeer sterke preferentie OT** | Klacht + visioen, economische rechtvaardigheid |
+| **BRUEGGEMANN** | OT-profeten/psalmen | Zeer sterke preferentie OT | Klacht + visioen, economische rechtvaardigheid |
 | **NOORDMANS** | Breuk + verbreking | Neutraal (spanning > harmonie) | Geen rozentuin, publiek karakter |
 | **PETERSON** | Kleine/stille teksten | Neutraal (contemplatief > dramatisch) | Incarnatie (vlees & bloed), Taal I |
 | **RUTLEDGE** | Apocalyptisch/Kruis | Neutraal (kruis > moraal) | Kosmische invasie, God als handelend subject |
 | **KOYAMA** | Contextueel/Dialogisch | Neutraal (concrete context > abstractie) | Neighbourology, "Three Mile an Hour God" |
 | **TAYLOR** | Narratief/Eloquent | Neutraal (verhaal > doctrine) | Scharlaken Draad, "Sweet Torture" |
-| **ZORNBERG** | **Torah/Profeten** | **Zeer sterke preferentie OT** | Midrasjische potentie, psychologische diepte |
+| **ZORNBERG** | Torah/Profeten | Zeer sterke preferentie OT | Midrasjische potentie, psychologische diepte |
 
 #### Waarom deze Diversiteit?
 
@@ -294,10 +294,10 @@ Preekschets in de stijl van Walter Brueggemann: profetische verbeelding en verze
 ### 18b Preekschets Brueggemann (Finally Comes The Poet)
 Een geavanceerde variant gebaseerd op Brueggemanns latere werk *Finally Comes the Poet*.
 *   **Methodiek:** Het systeem kiest autonoom één van de vier specifieke homiletische strategieën:
-    1.  *Schuld en Genezing* (verzoening)
-    2.  *Klacht naar Lofprijzing* (oriëntatie - desoriëntatie - nieuwe oriëntatie)
-    3.  *Rusteloosheid en Hebzucht* (sabbat als verzet)
-    4.  *Verzet en Overgave* (de vreemde nieuwe wereld van de bijbel)
+    1.  [*Schuld en Genezing*](prompts/finally_comes_the_poet__prompts/Methode_1_Schuld_en_Genezing.md) (verzoening)
+    2.  [*Klacht naar Lofprijzing*](prompts/finally_comes_the_poet__prompts/Methode_2_Klacht_naar_Lofprijzing.md) (oriëntatie - desoriëntatie - nieuwe oriëntatie)
+    3.  [*Rusteloosheid en Hebzucht*](prompts/finally_comes_the_poet__prompts/Methode_3_Rusteloosheid_en_Hebzucht.md) (sabbat als verzet)
+    4.  [*Verzet en Overgave*](prompts/finally_comes_the_poet__prompts/Methode_4_Verzet_en_Overgave.md) (de vreemde nieuwe wereld van de bijbel)
 *   **Proces:** De analyse verloopt in twee stappen: eerst selecteert het model de meest passende strategie bij de lezingen, daarna wordt de preekschets geschreven volgens die specifieke methode.
 
 ### 19 Preekschets in de geest van Noordmans
