@@ -2944,7 +2944,7 @@
                     const subKeyOrder = ['meta', 'aristotelische_appeals', 'klassieke_dispositio', 'monroes_motivated_sequence', 'retorische_figuren', 'praktische_tips'];
                     const labelMap = {
                         'meta': 'Meta',
-                        'aristotelische_appeals': 'Aristotelische Appeals',
+                        'aristotelische_appeals': 'Aristotelische overtuigingsmiddelen',
                         'klassieke_dispositio': 'Klassieke Dispositio',
                         'monroes_motivated_sequence': 'Monroe\'s Sequence',
                         'retorische_figuren': 'Retorische Figuren',
@@ -5991,11 +5991,11 @@
                 html += renderObject(data.meta, 'meta');
             }
 
-            // Aristotelische Appeals
+            // Aristotelische overtuigingsmiddelen
             if (data.aristotelische_appeals) {
                 html += `<div id="section-${sectionKey}-aristotelische_appeals" class="subsection-anchor"></div>`;
                 html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Aristotelische appeals</div>`;
+                html += `<div class="data-group-title">Aristotelische overtuigingsmiddelen</div>`;
                 html += `<div class="card-grid">`;
                 
                 ['logos', 'pathos', 'ethos'].forEach(appeal => {
@@ -6468,6 +6468,16 @@
                 result = "Prompt (Nederlands)";
             } else if (key === 'prompt_en') {
                 result = "Prompt (Engels)";
+            } else if (key === 'voice_en_delivery') {
+                result = "Stem en voordracht";
+            } else if (key === 'non_verbale_communicatie') {
+                result = "Non-verbale communicatie";
+            } else if (key === 'primaire_appeal') {
+                result = "Primair overtuigingsmiddel";
+            } else if (key === 'call_to_action') {
+                result = "Oproep tot actie";
+            } else if (key === 'aristotelische_appeals') {
+                result = "Aristotelische overtuigingsmiddelen";
             } else {
                 result = key
                     .replace(/_/g, ' ')
