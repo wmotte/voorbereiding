@@ -6809,8 +6809,18 @@
             // Fix pattern: –\nword\n– should become –word– (join words between dashes)
             result = result.replace(/–\n([^–]+?)\n–/g, '–$1–');
 
-            // Fix: move punctuation from own line to previous line
-            result = result.replace(/\n([;!.,?:-])/g, '$1');
+            // Fix: move punctuation from own line to previous line (but not hyphens followed by letters - those start parenthetical phrases)
+            result = result.replace(/\n([;!.,?:])/g, '$1');
+            result = result.replace(/\n(-(?![a-zA-Z]))/g, '$1');
+
+            // Fix: join inline annotations like "Abel,-\nijlheid\n;" to "Abel,- ijlheid;" (but not exclamations like "Kaïn,-\nverworvene!")
+            result = result.replace(/,-\n([a-z][^\n!]+?)\n([;,])/g, ',- $1$2');
+
+            // Fix: keep short words (articles, prepositions) together with "Ene" on same line
+            result = result.replace(/\b(de|het|een|van|voor|bij|tot|door|met|aan|op|in|uit|naar|over|onder|tegen|om|als|dan)\n(Ene)\b/g, '$1 $2');
+
+            // Fix: keep "Ene" together with following lowercase word (except coordinating conjunctions like "en")
+            result = result.replace(/\b(Ene)\n(?!en\b|of\b|maar\b)([a-z])/g, '$1 $2');
 
             // Fix: remove newline after * so footnote text follows directly
             result = result.replace(/\*\n/g, '* ');
