@@ -89,7 +89,7 @@ Het tegenovergestelde. In de gelijkenis van de talenten (Matteüs 25:14-30) word
 
 Dit systeem beloont niet luiheid, maar ambachtelijke inzet. Een voorganger die theologisch onderlegd is, exegetisch scherp, contextueel gevoelig en liturgisch bewust, kan hiermee nóg beter worden. Wie daarentegen zonder nadenken output overneemt zonder kritische reflectie, zal oppervlakkig blijven — en dat zal (na verloop van tijd) hoorbaar zijn. Het systeem verhoogt de lat, het verlaagt hem niet.
 
-Dit hulpmiddel neemt bovendien klassieke excuses weg. Er is nu structurele toegang tot heldere homiletische structuurvormen, tot exegetische diepgang, tot inzicht in wat hoorders beweegt. Wat voorheen vaak ontbrak — tijd, bronnen, overzicht — is nu beschikbaar. De vraag verschuift daarmee van 'kon het beter?' naar 'heb je gedaan wat mogelijk was?' Middelmatigheid wordt niet gestimuleerd, maar juist zichtbaarder. En dat is een uitnodiging: het kan beter, en nu zijn de middelen er om dat ook te laten zien.
+Dit hulpmiddel neemt bovendien klassieke excuses weg. Er is nu geen gebrek meer aan toegang tot heldere homiletische structuurvormen, tot exegetische diepgang, tot inzicht in wat hoorders beweegt. Wat voorheen vaak ontbrak — tijd, bronnen, overzicht — is nu beschikbaar. De vraag verschuift daarmee van 'kon het beter?' naar 'heb je gedaan wat mogelijk was?' Middelmatigheid wordt niet gestimuleerd, maar juist zichtbaarder. En dat is een uitnodiging: het kan beter, en nu zijn de middelen er om dat ook te laten zien.
 
 ## Wat betekent dit voor de discussie rond HBO-predikanten?
 
