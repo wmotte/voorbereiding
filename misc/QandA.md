@@ -85,7 +85,7 @@ Rosa wijst in *Onbeschikbaarheid* (Boom, 2022) op het belang van ervaringen die 
 
 ## Werkt dit geen 'luie' dienaren in de hand?
 
-Het tegenovergestelde. In de gelijkenis van de talenten (Matteüs 25:14-30) wordt juist de knecht berispt die zijn talent begraaft — die niets doet met wat hem is toevertrouwd. De knechten die hun talenten vermeerderen, worden geprezen. Het Matteuseffect, zoals socioloog Robert K. Merton dit in 1968 beschreef, verwijst naar Matteüs 25:29: "Want wie heeft, zal nog meer krijgen, en wel in overvloed." Wie al succesvol is, presteert steeds beter — niet door luiheid, maar door slimmer gebruik van middelen en structuren.
+Het tegenovergestelde. In de gelijkenis van de talenten (Matteüs 25:14-30) wordt juist de knecht berispt die zijn talent begraaft — die niets doet met wat hem is toevertrouwd. De knechten die hun talenten vermeerderen, worden geprezen. Het Matteüseffect, zoals socioloog Robert K. Merton dit in 1968 beschreef, verwijst naar Matteüs 25:29: "Want wie heeft, zal nog meer krijgen, en wel in overvloed." Wie al succesvol is, presteert steeds beter — niet door luiheid, maar door slimmer gebruik van middelen en structuren.
 
 Dit systeem beloont niet luiheid, maar ambachtelijke inzet. Een voorganger die theologisch onderlegd is, exegetisch scherp, contextueel gevoelig en liturgisch bewust, kan hiermee nóg beter worden. Wie daarentegen zonder nadenken output overneemt zonder kritische reflectie, zal oppervlakkig blijven — en dat zal (na verloop van tijd) hoorbaar zijn. Het systeem verhoogt de lat, het verlaagt hem niet.
 
