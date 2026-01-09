@@ -18,6 +18,8 @@
 
 Dit project combineert **contextanalyse** (hoorders, samenleving) met concrete **liturgische bouwstenen** (exegese, preekschets, gebeden). Het doel is niet om de preek/gebeden te *schrijven*, maar om de voorganger te voorzien van een rijke, contextuele basis.
 
+Het totaal aan modelinstructies (prompts) bedraagt 15.000 zinnen (~116.000 woorden).
+
 ---
 
 ### 📑 Inhoudsopgave
