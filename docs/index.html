@@ -101,12 +101,41 @@
             background: var(--header-bg);
             padding: 12px 20px;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             transition: transform 0.3s ease;
             border-bottom: 3px solid;
             border-color: var(--bevel-dark);
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            height: auto;
+            min-height: 65px;
+        }
+
+        .header-top-row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-update-banner {
+            width: 100%;
+            text-align: center;
+            font-size: 0.85em;
+            color: var(--text-muted);
+            padding-top: 8px;
+            margin-top: 8px;
+            border-top: 1px dashed var(--bevel-dark);
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .header-update-banner {
+                font-size: 0.8em;
+                text-align: left;
+            }
         }
 
         header.hidden {
@@ -2088,18 +2117,23 @@
 </head>
 <body>
     <header id="header">
-        <div class="header-left">
-            <button class="menu-toggle bevel-raised" id="menu-toggle">☰</button>
-            <div class="logo">Handreiking</div>
+        <div class="header-top-row">
+            <div class="header-left">
+                <button class="menu-toggle bevel-raised" id="menu-toggle">☰</button>
+                <div class="logo">Handreiking</div>
+            </div>
+            <div class="header-center">
+                 <select id="file-selector" class="bevel-raised"></select>
+                 <input type="file" id="file-input" accept=".json" style="display: none;">
+                 <button id="load-custom-btn" class="icon-btn bevel-raised" title="Laad aangepast JSON bestand">📁</button>
+            </div>
+            <div class="header-right">
+                <div class="theme-toggle" id="theme-toggle" title="Donkere modus"></div>
+                <a href="https://github.com/wmotte/voorbereiding" target="_blank" class="icon-btn bevel-raised" title="GitHub">i</a>
+            </div>
         </div>
-        <div class="header-center">
-             <select id="file-selector" class="bevel-raised"></select>
-             <input type="file" id="file-input" accept=".json" style="display: none;">
-             <button id="load-custom-btn" class="icon-btn bevel-raised" title="Laad aangepast JSON bestand">📁</button>
-        </div>
-        <div class="header-right">
-            <div class="theme-toggle" id="theme-toggle" title="Donkere modus"></div>
-            <a href="https://github.com/wmotte/voorbereiding" target="_blank" class="icon-btn bevel-raised" title="GitHub">i</a>
+        <div class="header-update-banner">
+            ⚡ UPDATE 10 januari 2026: ⚡ Naar aanleiding van de verzoeken van voorgangers om gebruik te maken van deze tool, start er een publieke pilot. Elke maandagochtend verschijnt hier, Deo Volente, een contextuele analyse van de lezingen uit het oecumenisch leesrooster voor de komende zondag, uitgewerkt voor drie willekeurige PKN-gemeenten.
         </div>
     </header>
 
@@ -7078,6 +7112,58 @@
             // Reset file input for re-upload
             event.target.value = '';
         });
+
+        // Dynamic Layout Adjustment for Variable Header Height
+        function adjustLayout() {
+            const header = document.querySelector('header');
+            const sidebar = document.querySelector('.sidebar');
+            const main = document.querySelector('main');
+            
+            if (header) {
+                const height = header.offsetHeight;
+                
+                if (sidebar) {
+                    sidebar.style.top = height + 'px';
+                    sidebar.style.height = `calc(100vh - ${height}px)`;
+                }
+                
+                if (main) {
+                    main.style.marginTop = height + 'px';
+                    main.style.minHeight = `calc(100vh - ${height}px)`;
+                }
+                
+                // Adjust section info panel (sticky positioning)
+                // Note: sticky elements are inside main, so top is relative to viewport usually if ancestors don't constrain it.
+                // But if we want it to stick below header:
+                const sectionInfoPanel = document.querySelector('.section-info-panel');
+                if (sectionInfoPanel) {
+                    sectionInfoPanel.style.top = (height + 20) + 'px';
+                    sectionInfoPanel.style.maxHeight = `calc(100vh - ${height + 40}px)`;
+                }
+            }
+        }
+        
+        // Initial adjustment
+        window.addEventListener('load', adjustLayout);
+        window.addEventListener('resize', adjustLayout);
+        
+        // Run after short delay to ensure rendering
+        setTimeout(adjustLayout, 100);
+        
+        // Also run when content is rendered (hook into renderContent if possible, or just observe)
+        const resizeObserver = new ResizeObserver(() => {
+            adjustLayout();
+        });
+        if (header) resizeObserver.observe(header);
+        
+        // Hook into file loading to re-check layout (in case scrollbars appear/disappear etc)
+        const originalRenderContent = renderContent;
+        renderContent = function() {
+            const result = originalRenderContent.apply(this, arguments);
+            // Wait for DOM update
+            setTimeout(adjustLayout, 50);
+            return result;
+        }
 
     </script>
 </body>
