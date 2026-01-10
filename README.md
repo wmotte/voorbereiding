@@ -6,7 +6,7 @@
 
 **Let op: Dit materiaal is bedoeld ter inspiratie. De uiteindelijke verantwoordelijkheid voor de dienst (en in het bijzonder de preek) ligt bij de voorganger.**
 
-⚡ ** UPDATE 10 januari 2026 **: ⚡ *Naar aanleiding van de verzoeken van voorgangers om gebruik te maken van deze tool, start er een publieke pilot. Elke maandagochtend verschijnt hier een contextuele analyse van de lezingen uit het oecumenisch leesrooster voor de komende zondag, uitgewerkt voor drie willekeurige PKN-gemeenten.*
+⚡ **UPDATE 10 januari 2026**: ⚡ *Naar aanleiding van de verzoeken van voorgangers om gebruik te maken van deze tool, start er een publieke pilot. Elke maandagochtend verschijnt hier een contextuele analyse van de lezingen uit het oecumenisch leesrooster voor de komende zondag, uitgewerkt voor drie willekeurige PKN-gemeenten.*
 
 1. Bekijk de online webviewer met *100% automatisch-gegenereerde* voorbeelddata: 
 
