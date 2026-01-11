@@ -3846,152 +3846,151 @@
     }
   },
   "14_gebeden": {
-    "gekozen_scenario": "A (zwaartepunt schuld)",
+    "gekozen_scenario": "A",
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Eeuwige, Heilige God",
+        "aanspraak": "Eeuwige",
         "elementen": {
-          "verootmoediging": "Erkenning van de onrust en de maskers die we dragen in de prestatiecultuur van de stad.",
-          "schuldbelijdenis": "Het benoemen van onze zelfgerichtheid en het falen om werkelijk te zien.",
+          "verootmoediging": "Erkenning van de afstand tussen onze onrust en Gods vrede.",
+          "schuldbelijdenis": "Het benoemen van de last van het zelf moeten doen en het falen in de liefde.",
           "verlangen": "De wens om de last af te leggen en schoon te worden."
         },
-        "tekst": "Eeuwige, Heilige God,\n\nWij stappen uit de haast van de stad uw stilte binnen.\nDe week kleeft nog aan ons: de modder van de straat en het stof van onze eigen drukte.\nWij dragen maskers van succes, van 'het gaat goed', van weten waar we naartoe gaan.\nMaar U kijkt dwars door onze gevels heen.\n\nWij belijden U dat wij vaak vol zijn van onszelf.\nDat wij zochten naar erkenning in de ogen van mensen, maar blind waren voor wie ons nodig had.\nDat wij wilden schitteren, maar vergaten wie de Bron van het licht is.\nDe last van wat wij deden en wat wij lieten, drukt op onze schouders.\n\nNeem het van ons af, hier op de drempel.\nPel onze verdediging af tot wij naakt en eerlijk voor U staan.\nMaak ons leeg, zodat U ons kunt vullen.\n\nAmen.",
-        "bijbels_taalveld": "Algemeen profetisch taalveld (Jesaja-achtig) over reiniging, lasten dragen en het afleggen van schijn (zonder expliciet het Lam te noemen).",
+        "tekst": "Eeuwige,\n\nWij komen binnen met de stad nog in onze kleren en de onrust in ons lijf.\nDe week kleeft aan ons: de woorden die te scherp waren,\nde stiltes die vielen waar een woord van troost had moeten zijn,\nde blik die wij afwendden van wie ons nodig had.\n\nWij dromen van groots en meeslepend leven,\nmaar struikelen over onze eigen kleinheid.\nWij willen het licht zijn, maar werpen te vaak een schaduw.\nWij tillen zwaar aan wat anderen van ons vinden,\nen vergeten wat U van ons weet.\n\nNeem de last van onze schouders.\nWas het straatvuil van onze ziel.\nMaak het stil in ons, zodat er ruimte komt voor U.\n\nAmen.",
+        "bijbels_taalveld": "Reiniging, verootmoediging, lasten dragen (algemeen, pre-Johannes 1)",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "Heer, Ontfermer",
+        "aanspraak": "Heer",
         "focus": "nood_wereld",
         "structuur": {
           "intenties": [
             {
-              "voor_wie": "De stad in de winterse kou",
-              "nood": "Eenzaamheid achter de voordeuren en fysieke kou op straat",
+              "voor_wie": "Slachtoffers van natuurgeweld (Myanmar)",
+              "nood": "De aarde die beeft en de kwetsbaarheid van het bestaan",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "Slachtoffers van geweld en rampen (wereldwijd)",
-              "nood": "De roep om vrede in oorlogsgebieden en bescherming tegen natuurgeweld",
+              "voor_wie": "De wereld in conflict (Midden-Oosten)",
+              "nood": "De cyclus van geweld en de roep om vrede",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "De kerk en de wereldleiders",
-              "nood": "Verdeeldheid en gebrek aan visie",
+              "voor_wie": "De eenzamen in de stad (Blue Monday context)",
+              "nood": "De stilte achter de voordeuren en het gemis van verbinding",
               "kyrie_refrain": true
             }
           ]
         },
-        "tekst": "Heer, Ontfermer,\n\nWij roepen tot U voor de wereld die rilt in de winterkou.\nVoor deze stad, waar achter de prachtig verlichte ramen zoveel donkerte schuilt.\nVoor de oudere die dagenlang geen stem hoort.\nVoor de zoeker die verdwaalt in de mist van teveel keuzes.\nVoor wie vannacht geen sleutel heeft en slaapt op karton in een portiek.\n\nKyrie eleison.\n\nWij roepen tot U voor de plekken waar de grond schudt en waar vuur verwoest.\nVoor erfgoed dat verloren gaat en voor levens die breken.\nVoor de mensen in Gaza, in Oekraïne, in Myanmar –\nwaar de hemel van lood lijkt en de vrede ver weg is.\nVoor hen die wachten op een teken van hoop, maar slechts puin zien.\n\nKyrie eleison.\n\nWij roepen tot U voor uw kerk, verscheurd en verdeeld.\nVoor leiders die macht zoeken in plaats van dienstbaarheid.\nVoor ons onvermogen om één te zijn in een wereld die uit elkaar valt.\nWees de warmte in onze kilte. Wees het licht in onze nacht.\n\nKyrie eleison.",
-        "bijbels_taalveld": "Psalmen-taal (roep uit de diepte), beelden van kou, duisternis en gebroken muren.",
+        "tekst": "Heer, wij roepen tot U vanuit de scheuren van deze wereld.\n\nVoor de aarde die beeft en rommelt, ver weg in het oosten,\nvoor wie alles kwijt is geraakt in het puin van een enkele minuut,\nvoor wie zoekt naar geliefden onder de stenen.\nKyrie eleison.\n\nVoor de plekken waar de nacht maar niet wil wijken,\nwaar mensenlevens speelbal zijn van macht en vergelding,\nvoor Gaza, voor de kampen, voor de vluchtroutes in de kou.\nVoor wie roept om recht maar geen gehoor vindt.\nKyrie eleison.\n\nVoor de stille nood in onze eigen stad,\nvoor de oudere die dagenlang geen stem hoort,\nvoor de jongere die bezwijkt onder de druk om te presteren,\nvoor wie opziet tegen de leegte van de maandag.\n\nOntferm U over ons en deze wereld.\nKyrie eleison.\n\nAmen.",
+        "bijbels_taalveld": "Klaagpsalmen, roep uit de diepte (algemeen)",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Geest van God, Levende Adem",
-        "focus": "Opening voor de Schrift",
-        "tekst": "Geest van God, Levende Adem,\n\nHet boek ligt open, maar onze ogen zijn vaak nog dicht.\nEr zit eelt op onze oren van al het lawaai dat wij dagelijks horen.\nWaai het stof van onze gewenning weg.\n\nBreek door het beton van onze vooroordelen heen.\nOntdooi wat bevroren is in ons hart.\nKom met uw licht over deze oude woorden,\nzodat ze voor ons nieuw worden, levend en scherp.\nDat wij niet alleen horen, maar verstaan.\nDat wij niet alleen kijken, maar zien.\n\nAmen.",
-        "bijbels_taalveld": "Scheppingsmetaforen (Adem, Licht), en beelden van verharding vs. zachtheid (Ezechiël).",
+        "aanspraak": "Geest van God",
+        "focus": "ALLEEN opening voor de Schrift, geen andere thema's",
+        "tekst": "Geest van God,\n\nAdem over deze oude bladzijden.\nBlaas het stof van onze gewenning weg.\nBreek door het beton van ons eigen gelijk.\n\nWij horen zoveel stemmen die om onze aandacht schreeuwen,\nmaak ons nu doof voor de ruis en open ons gehoor voor uw stem.\nLicht dat in de duisternis schijnt,\nval op dit woord en val in ons hart.\n\nAmen.",
+        "bijbels_taalveld": "Scheppingsadem, licht in duisternis (algemeen, pre-lezing)",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "Trouwe God, Vader van het Licht",
-        "verbinding_verkondiging": "Dank voor het Lam dat de last draagt en voor de roeping om slechts 'wegwijzer' te zijn.",
+        "aanspraak": "Levende God",
+        "verbinding_verkondiging": "Dank voor de 'aanwijzing' van Johannes en de verlichting van de last door het Lam.",
         "elementen": {
-          "dank_gehoorde_woord": "Dank voor de aanwijzing van Johannes en de komst van het Lam.",
-          "vraag_kracht_bewaren": "Hulp om niet onszelf maar Christus centraal te stellen.",
-          "verbinding_dagelijks_leven": "De roeping om op maandag een getuige te zijn in de stad."
+          "dank_gehoorde_woord": "Dank dat wij niet zelf de redder hoeven te zijn.",
+          "vraag_kracht_bewaren": "Vraag om moed om zelf ook 'aanwijzer' te zijn.",
+          "verbinding_dagelijks_leven": "De stad in gaan als getuigen, niet als hoofdrolspelers."
         },
-        "tekst": "Trouwe God, Vader van het Licht,\n\nWij danken U dat de hemel niet gesloten bleef.\nDat U uw Zoon hebt gegeven, het Lam dat onze lasten draagt.\nWat een bevrijding, dat wij de wereld niet hoeven te redden,\nomdat U dat al gedaan hebt.\nDank U dat U de zwaarte van ons afneemt –\nde schuld die wij meeslepen, de prestatiedruk die ons opjaagt.\n\nWij danken U voor de stem van Johannes,\ndie niet naar zichzelf wees, maar naar U.\nGeef ons de moed om ook zo te leven in deze stad.\nNiet als mensen die het licht bezitten,\nmaar als spiegels die uw licht weerkaatsen.\n\nLaat het woord dat wij hoorden niet vervliegen zodra wij naar buiten gaan.\nMaar graveer het in onze handpalmen,\nzodat wij deze week, in vergaderzalen en aan keukentafels,\nweten wie wij zijn: geliefden, geroepen om te wijzen naar U.\n\nAmen.",
-        "echo_schriftlezing": "Expliciete verwijzingen naar 'het Lam', 'lasten dragen' (zonde wegnemen), en 'wijzen' (Johannes' getuigenis).",
+        "tekst": "Levende God,\n\nWij danken U voor de vinger die wijst.\nWij danken U dat wij niet zelf het licht hoeven te maken,\nniet zelf de wereld hoeven te dragen,\nniet zelf onze fouten hoeven weg te poetsen.\n\nWat een ruimte geeft dat, Heer,\ndat er een Lam is dat de zwaarte van de wereld op zich neemt.\nDat U dwars door onze vermommingen heen kijkt\nen ons kent, en ons liefheeft.\n\nGeef ons de nederigheid van de Doper.\nDat wij in de vergaderzaal, in de collegebanken en op de markt,\nniet onszelf verkondigen, maar verwijzen naar U.\nMaak ons tot wegwijzers in deze stad,\nklein van stuk, maar groot van getuigenis.\n\nAmen.",
+        "echo_schriftlezing": "Verwijzing naar Johannes 1 (vinger, Lam) en Jesaja 49 (licht, dragen).",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "Vader in de hemel, God van alle volken",
+        "aanspraak": "Vader in de hemel",
         "cirkels": {
           "wereld": {
             "themas": [
-              "Week van Gebed",
-              "Wereldvrede",
-              "Politieke leiders"
+              "Leiderschap (VS/Wereld)",
+              "Vrede",
+              "Schepping"
             ],
-            "tekst": "Vader in de hemel, God van alle volken,\n\nWij bidden U voor uw wereld, wijd en gewond.\nIn deze week van gebed zoeken wij de eenheid die U geeft.\nBreek de muren af die wij hebben opgetrokken tussen oost en west, tussen arm en rijk.\nWij bidden voor de plekken waar het donker is, waar mensen vluchten voor geweld.\nGeef wijsheid aan wereldleiders, dat zij niet heersen als wolven,\nmaar dienen en recht doen aan de kwetsbaren."
+            "tekst": "Vader, wij bidden voor de volken.\nNu de machten schuiven en leiders wisselen,\nbidden wij om wijsheid die niet zoekt naar eigen belang.\nMaak uw kerk tot een licht voor de heidenvolken,\neen stem van vrede waar wapens kletteren.\nBescherm de kwetsbaren die vermalen worden door de grote politiek."
           },
           "kerk": {
             "themas": [
-              "Eenheid van de kerken in Amsterdam",
-              "Armeense christenen",
-              "Getuigenis"
+              "Eenheid (Week van Gebed)",
+              "Verbondenheid",
+              "Geroepen heiligen"
             ],
-            "tekst": "Wij bidden U voor uw kerk, het lichaam van Christus.\nVoor de gemeenschap van heiligen, verspreid over de aarde en hier in de stad.\nWij bidden in het bijzonder met de christenen uit Armenië,\nen voor alle kerken hier aan de grachten en in de wijken.\nDat wij niet concurreren om de waarheid, maar samen buigen voor het Lam.\nMaak ons één van Geest, zodat de stad aan onze liefde ziet dat wij van U zijn."
+            "tekst": "Wij bidden voor uw kerk, wereldwijd en hier aan de gracht.\nIn deze week van gebed zoeken wij elkaar.\nBreek onze kerkmuren af, Heer.\nLeer ons dat wij samen geroepen heiligen zijn,\nverbonden in die ene Naam, dwars door alle verschillen heen.\nMaak ons één van Geest, zodat de wereld gelooft."
           },
           "naasten": {
             "themas": [
               "Zieken",
-              "Eenzamen",
-              "Studenten/Jongeren",
-              "Werkenden"
+              "Zoekenden",
+              "Mensen onder druk"
             ],
-            "tekst": "Wij bidden U voor onze naasten, dichtbij en ver weg.\nVoor wie ziek is en wacht op uitslag, voor wie de dagen telt in stilte.\nLeg uw hand op de schouder van wie eenzaam is in de drukte.\nWij bidden voor de jongeren in onze stad, die zoveel moeten en soms de weg kwijtraken.\nVoor wie vastloopt in werk of studie, voor wie de lat te hoog ligt.\nLaat hen weten dat zij gezien zijn, niet om wat ze presteren, maar om wie ze zijn."
+            "tekst": "Wij bidden voor wie ons na aan het hart ligt.\nVoor wie ziek is en wacht op een uitslag.\nVoor wie vastloopt in de ratrace van de stad,\ndie succes heeft maar de ziel verliest.\nVoor de student die de druk niet draagt,\nvoor de oudere die de dagen alleen slijt.\nWees Gij hun Herder en hun Lam."
           },
           "eigen_gemeente": {
             "themas": [
-              "Noorderkerk",
-              "Diaconaat",
+              "Dienstbaarheid",
+              "Kinderen",
               "Komende week"
             ],
-            "tekst": "Wij bidden voor dit huis, uw gemeente op deze plek.\nVoor het werk van de diakenen, voor de kringen en de ontmoetingen.\nZegen ons als wij straks uiteengaan, de kou weer in.\nDat wij warmte mogen brengen waar het kil is.\nDat wij, net als Johannes, durven zeggen: 'Zie, daar is Hij'."
+            "tekst": "Wij bidden voor deze gemeente, uw huis in de Jordaan.\nZegen het werk van onze handen in de week die komt.\nDat wij in al ons doen en laten,\nin onze woorden en in ons zwijgen,\nsteeds weer zeggen: Zie, daar is Hij."
           }
         },
-        "stilte_instructie": "*In de stilte leggen wij onze eigen harten voor U open...*",
-        "overgang_onze_vader": "Samen bidden wij, met de woorden van het Lam dat ons voorging:",
+        "stilte_instructie": "*Stilte voor persoonlijke gebedsintenties*",
+        "overgang_onze_vader": "Samen bidden wij het gebed dat Jezus ons leerde:",
         "onze_vader": "Onze Vader die in de hemelen zijt,\nuw naam worde geheiligd;\nuw Koninkrijk kome;\nuw wil geschiede, gelijk in de hemel, alzo ook op de aarde.\nGeef ons heden ons dagelijks brood;\nen vergeef ons onze schulden, gelijk ook wij vergeven onze schuldenaren;\nen leid ons niet in verzoeking, maar verlos ons van de boze.\nWant van U is het Koninkrijk en de kracht en de heerlijkheid tot in eeuwigheid.\nAmen."
       }
     },
     "poetische_technieken_gebruikt": {
       "parallellisme": [
-        "Dat wij niet alleen horen, maar verstaan. / Dat wij niet alleen kijken, maar zien. (Epiclese)",
-        "Voor de stad... Voor de oudere... Voor de zoeker... (Kyrie)"
+        "De woorden die te scherp waren / De stiltes die vielen...",
+        "Niet zelf het licht... / Niet zelf de wereld... / Niet zelf onze fouten..."
       ],
       "drieslag": [
-        "Niet als mensen die het licht bezitten, maar als spiegels die uw licht weerkaatsen. (Dankgebed)",
-        "Wees de warmte in onze kilte. Wees het licht in onze nacht. (Kyrie)"
+        "In de vergaderzaal, in de collegebanken en op de markt",
+        "De stad in onze kleren, de onrust in ons lijf, de week die kleeft"
       ],
       "anafoor": [
-        "Voor de... (Kyrie)",
-        "Wij bidden... (Voorbeden)",
-        "Dat wij... (Drempelgebed)"
+        "Voor de aarde... / Voor de plekken... / Voor de stille nood...",
+        "Wij danken U... / Wij danken U..."
       ],
       "inclusio": [
-        "Drempelgebed begint met 'uit de haast' en 'stilte' en eindigt met 'leeg' en 'vullen'."
+        "Drempelgebed: begint met 'stad in kleren', eindigt met 'stil in ons'",
+        "Voorbeden: begint met 'volken', eindigt met 'Zie, daar is Hij' (cirkel rond)"
       ],
       "zintuiglijke_taal": [
-        "modder van de straat (zien/voelen)",
-        "week kleeft nog aan ons (voelen)",
-        "rilt in de winterkou (voelen)",
-        "eelt op onze oren (voelen)",
-        "graveer het in onze handpalmen (voelen/zien)"
+        "Stad in onze kleren (voelen/ruiken)",
+        "Beton van ons eigen gelijk (voelen)",
+        "Stof wegblazen (zien/voelen)",
+        "Aarde die beeft (voelen)",
+        "Stem horen (horen)"
       ],
       "lokale_beelden": [
-        "achter de prachtig verlichte ramen (grachtenpanden)",
-        "vergaderzalen en keukentafels (werk/privé balans in stad)",
-        "slaapt op karton in een portiek (daklozenproblematiek)",
-        "haast van de stad"
+        "Huis in de Jordaan",
+        "Gracht",
+        "Stad in onze kleren",
+        "Ratrace van de stad"
       ]
     },
     "echo_techniek": {
-      "schriftlezing_thema": "Zien/Aanwijzen (Johannes 1) en Licht/Duisternis (Jesaja 49)",
+      "schriftlezing_thema": "Het Lam dat de zonde draagt en het Licht voor de volken.",
       "impliciet_taalveld_voor_lezingen": {
-        "drempelgebed": "Lasten dragen, maskers afzetten, verlangen naar reiniging (zonder 'Lam' te noemen).",
-        "kyrie": "Licht in de duisternis, kou, roep uit de diepte.",
-        "epiclese": "Licht over woorden, ontdooien, zien vs kijken."
+        "drempelgebed": "Lasten dragen, vuil zijn, reiniging nodig hebben.",
+        "kyrie": "Duisternis, roepen uit de diepte, beven van de aarde.",
+        "epiclese": "Licht, adem, openbreken."
       },
       "expliciete_echo_na_lezingen": {
-        "dankgebed": "Expliciet: 'Lam dat lasten draagt', 'Stem van Johannes', 'Wegwijzer', 'Spiegels'.",
-        "voorbeden": "Expliciet: 'Eenheid' (Week van Gebed/1 Kor), 'Zie daar is Hij' (Joh 1)."
+        "dankgebed": "De 'vinger die wijst' (Johannes), het 'niet zelf licht zijn' (Jesaja), het Lam dat de zwaarte neemt.",
+        "voorbeden": "Geroepen heiligen (1 Korintiërs), Licht voor de heidenvolken (Jesaja), Eén van Geest (Thema Week van Gebed)."
       }
     }
   },
@@ -4112,60 +4111,60 @@
         "type": "drempelgebed",
         "aanspraak": "God, onze Vader",
         "elementen": {
-          "verootmoediging": "Wij zijn klein en U bent groot",
+          "verootmoediging": "Wij zijn maar mensen met beperkte kracht",
           "schuldbelijdenis": "Wij dragen dingen met ons mee die niet goed waren",
-          "verlangen": "Wij zoeken rust bij U"
+          "verlangen": "Wij zoeken rust en een nieuw begin bij U"
         },
-        "tekst": "God, wij komen dit huis binnen.\nBuiten is de stad druk en koud.\nHier bij U zoeken wij rust.\nWij hebben veel bij ons.\nNiet in onze handen, maar in ons hart.\nZorgen die zwaar wegen.\nFouten die wij hebben gemaakt.\nHarde woorden tegen een ander.\nDingen waar wij spijt van hebben.\nNeem die zware last van ons af.\nU bent als een vader die op ons wacht.\nUw armen zijn open.\nBij U mogen wij opnieuw beginnen.\nAmen.",
-        "bijbels_taalveld": "Verloren Zoon (thuiskomen), de last afleggen (Mattheüs 11), Vaderbeeld.",
+        "tekst": "God, onze Vader, wij komen uw huis binnen. Buiten is het koud en druk. Binnen bij U zoeken wij rust.\n\nWij hebben onze jas uitgedaan, maar van binnen dragen wij nog van alles. Zorgen over thuis. Dingen die misgingen deze week. Spijt van harde woorden. Het weegt zwaar op onze schouders.\n\nU zegt: 'Geef het maar aan Mij.' Dat willen wij graag doen. Neem de last van ons af. Maak ons vrij en licht. Wij zijn veilig bij U. Amen.",
+        "bijbels_taalveld": "De last afleggen / Kom tot Mij allen die vermoeid zijt (Mattheüs 11) / Veiligheid in het huis van de Heer",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "Heer, God",
+        "aanspraak": "Jezus, Heer",
         "focus": "nood_wereld",
         "structuur": {
           "intenties": [
             {
-              "voor_wie": "mensen in oorlog",
-              "nood": "angst en verlies van huis",
+              "voor_wie": "Mensen in kou en oorlog",
+              "nood": "Zij voelen zich verlaten en hebben geen veilig huis",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "mensen die eenzaam zijn",
-              "nood": "niemand om mee te praten in de grote stad",
+              "voor_wie": "Mensen die eenzaam zijn in de stad",
+              "nood": "De stilte in hun huis is te groot",
               "kyrie_refrain": true
             },
             {
-              "voor_wie": "mensen met pijn",
-              "nood": "ziekte en wachten op beterschap",
+              "voor_wie": "Wijzelf en onze onrust",
+              "nood": "Wij weten soms niet hoe het verder moet",
               "kyrie_refrain": true
             }
           ]
         },
-        "tekst": "God, de wereld is vaak hard en koud. Wij roepen tot U.\n\nVoor mensen in oorlogsgebied.\nZij zijn bang voor de bommen.\nZij zijn hun huis kwijt.\nGeef hen vrede.\nHeer, ontferm U.\n\nVoor mensen die alleen zijn in deze grote stad.\nDie niemand hebben om mee te praten.\nDie zich vergeten voelen.\nKom dicht bij hen.\nHeer, ontferm U.\n\nVoor mensen die pijn hebben in hun lichaam of in hun hoofd.\nDie wachten op een dokter.\nDie niet weten of het goed komt.\nGeef hen kracht.\nHeer, ontferm U.\n\nVoor ons allemaal, als wij het niet meer weten.\nGod, wees erbij.\nAmen.",
-        "bijbels_taalveld": "Roepen uit de diepte (Psalm 130), God als trooster.",
+        "tekst": "Jezus, Heer, de wereld is vaak hard en koud. Daarom roepen wij U aan.\n\nWij bidden voor mensen die moeten vluchten voor geweld. Voor wie vannacht geen warm bed had. Voor wie bang is in het donker. Wees dicht bij hen, als een warme mantel om hen heen. Laat hen voelen dat ze niet alleen zijn.\nZo bidden wij: Heer, ontferm U.\n\nWij bidden voor mensen in onze stad die zich alleen voelen. Voor wie de dagen lang duren en niemand spreekt. Voor wie ziek is en pijn heeft. Leg uw hand op hun schouder. Geef hen kracht.\nZo bidden wij: Heer, ontferm U.\n\nWij bidden voor onszelf. Soms is ons hart onrustig. Soms weten wij de weg niet meer. Kom bij ons met uw vrede.\nZo bidden wij: Heer, ontferm U.",
+        "bijbels_taalveld": "Roep om ontferming / De Heer als schuilplaats / God die de eenzamen ziet",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Goede Geest van God",
+        "aanspraak": "Heilige Geest",
         "focus": "begrip_bijbelverhaal",
-        "tekst": "Goede Geest van God, kom in ons midden.\nWij gaan de Bijbel open doen.\nSoms is ons hart als steen.\nHard en gesloten.\nMaak ons zacht.\nSoms is ons hoofd te vol.\nVol met zorgen en plannen.\nMaak het stil in ons.\nWaai door ons heen als de wind.\nRaak ons aan met uw warmte.\nZodat uw woorden in ons hart vallen en daar blijven.\nAmen.",
-        "bijbels_taalveld": "Hart van steen vs. hart van vlees (Ezechiël), Geest als wind/adem (Johannes 3/Handelingen 2).",
+        "tekst": "Heilige Geest, kom in ons hart. Wij gaan lezen uit de Bijbel. Soms zijn die oude woorden moeilijk voor ons. Soms zit ons hoofd te vol met andere dingen.\n\nMaak het stil in ons. Maak ons hart zacht, zodat uw woorden kunnen binnenkomen. Zoals regen valt op droge grond, laat zo uw woord op ons vallen. Voed ons met uw verhaal. Raak ons aan. Amen.",
+        "bijbels_taalveld": "Levend water / Regen op droge grond / Het Woord als voedsel",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "God, wij danken U",
-        "verbinding_verkondiging": "Jezus als het Lam dat de last draagt",
+        "aanspraak": "Trouwe God",
+        "verbinding_verkondiging": "Jezus als het Lam dat de last draagt en wijst de weg",
         "elementen": {
-          "dank_gehoorde_woord": "Dank voor Jezus die de zonde wegneemt",
-          "vraag_kracht_bewaren": "Help ons om te geloven dat wij vrij zijn",
-          "verbinding_dagelijks_leven": "Leven vanuit genade in de stad"
+          "dank_gehoorde_woord": "Dank voor het Lam dat onze fouten wegneemt",
+          "vraag_kracht_bewaren": "Help ons om niet onszelf maar U centraal te stellen",
+          "verbinding_dagelijks_leven": "Licht zijn in Amsterdam"
         },
-        "tekst": "God, wij danken U.\nWij hebben gehoord over Jezus.\nJohannes wees naar Hem: 'Hij is het Lam'.\nHij neemt alles weg wat fout is in de wereld.\nHij tilt de zware last van onze schouders.\nDaar zijn wij zo blij mee.\nNu hoeven wij het niet zelf te doen.\nHij heeft het gedaan.\nWij danken U dat wij bij elkaar horen.\nNiet alleen wij hier, maar mensen overal.\nSamen zijn wij één familie.\nGeef ons de moed om dat te geloven.\nOok als wij straks weer naar buiten gaan, de stad in.\nLaat ons leven van uw genade.\nAmen.",
-        "echo_schriftlezing": "Verwijst expliciet naar 'Het Lam' (Johannes 1) en 'Eén familie/Samen' (1 Korintiërs 1).",
+        "tekst": "Trouwe God, wij danken U. Wij hebben gehoord over Jezus. Hij is het Lam. Hij draagt wat voor ons te zwaar is. Hij neemt de fouten van de wereld weg. Dat maakt ons blij en licht.\n\nWij danken U dat wij het niet zelf hoeven te doen. Wij hoeven onszelf niet te redden. U hebt dat al gedaan. Dat geeft ons rust.\n\nWij danken U ook voor de eenheid. Dat wij bij elkaar horen, hoe verschillend wij ook zijn. U roept ons allemaal bij onze naam.\n\nHelp ons om dit vast te houden in de nieuwe week. Als wij weer aan het werk gaan, of naar school. Help ons om niet naar onszelf te wijzen, maar naar U. Zodat anderen uw warmte voelen door ons heen. Amen.",
+        "echo_schriftlezing": "Johannes 1 (Het Lam), Jesaja 49 (Licht/Redding), 1 Korintiërs (Samen geroepen)",
         "amen": true
       },
       "voorbeden": {
@@ -4177,70 +4176,73 @@
               "vrede",
               "leiders"
             ],
-            "tekst": "Vader in de hemel, wij bidden tot U.\nVoor de grote wereld.\nWaar mensen vechten en ruzie maken.\nWaar leiders alleen aan macht denken.\nBreng vrede, God. Maak het stil waar wapens klinken."
+            "tekst": "Wij bidden voor de grote wereld. Er is zoveel ruzie en geweld. Wij bidden voor landen waar oorlog is. Maak de leiders wijs en zacht. Zodat er vrede komt voor alle mensen."
           },
           "kerk": {
             "themas": [
-              "eenheid",
-              "christenen overal"
+              "week van gebed",
+              "eenheid"
             ],
-            "tekst": "Wij bidden voor uw kerk.\nVandaag denken wij aan christenen overal.\nIn andere kerken hier in de stad.\nIn kerken ver weg.\nSoms begrijpen wij elkaar niet goed.\nSoms is er ruzie over woorden.\nLeer ons dat wij bij één familie horen.\nDat wij samen naar Jezus wijzen."
+            "tekst": "Wij bidden voor uw kerk, overal op aarde. In deze week bidden wij speciaal voor de eenheid. Er zijn zoveel verschillende kerken, ook hier in de stad. Leer ons om elkaars hand vast te houden. Leer ons om samen naar Jezus te kijken."
           },
           "naasten": {
             "themas": [
               "zieken",
-              "verdrietigen"
+              "zorgen"
             ],
-            "tekst": "Wij bidden voor mensen dichtbij.\nVoor wie ziek is en pijn heeft.\nVoor wie verdrietig is om iemand die er niet meer is.\nVoor wie zich eenzaam voelt in zijn huis.\nLaat hen voelen dat U er bent."
+            "tekst": "Wij bidden voor mensen dichtbij. Voor wie ziek is en in het ziekenhuis ligt. Voor wie verdrietig is omdat hij iemand moet missen. Voor wie zich zorgen maakt over geld of werk. Wees U hun steun en toeverlaat."
           },
           "eigen_gemeente": {
             "themas": [
-              "ons leven",
-              "goed doen"
+              "Amsterdam",
+              "wij samen"
             ],
-            "tekst": "Wij bidden voor onszelf.\nVoor de week die komt.\nHelp ons om goed te doen.\nOm vriendelijk te zijn.\nOm te leven in uw licht."
+            "tekst": "Wij bidden voor ons hier in de Noorderkerk en in Amsterdam. Geef ons een goede week. Bewaar ons voor het kwaad. En help ons om goed te doen voor de mensen om ons heen."
           }
         },
-        "stilte_instructie": "*Het is even stil. Wij bidden voor wat in ons eigen hart leeft.*",
-        "overgang_onze_vader": "Samen bidden wij het gebed dat Jezus ons heeft geleerd:",
+        "stilte_instructie": "*Het is even stil. In die stilte noemen wij onze eigen namen en zorgen voor U.*",
+        "overgang_onze_vader": "Samen bidden wij nu het gebed dat Jezus ons heeft geleerd:",
         "onze_vader": "Onze Vader in de hemel,\nlaat iedereen u eren.\nLaat uw nieuwe wereld komen.\nLaat op aarde uw wil gedaan worden,\nnet zoals dat in de hemel gebeurt.\nGeef ons vandaag het eten dat we nodig hebben.\nEn vergeef ons wat we fout gedaan hebben,\nwant wij hebben ook andere mensen hun fouten vergeven.\nHelp ons om nooit tegen u te kiezen.\nEn bescherm ons tegen de macht van het kwaad.\nWant u bent koning,\nu regeert met grote macht,\nvoor altijd. Amen."
       }
     },
     "poetische_technieken_gebruikt": {
       "parallellisme": [
-        "Niet in onze handen, maar in ons hart.",
-        "Soms is ons hart als steen... Soms is ons hoofd te vol."
+        "Voor wie vannacht geen warm bed had. Voor wie bang is in het donker.",
+        "Wij hoeven onszelf niet te redden. U hebt dat al gedaan."
       ],
       "drieslag": [
-        "Voor wie ziek is... Voor wie verdrietig is... Voor wie zich eenzaam voelt..."
+        "Voed ons met uw verhaal. Raak ons aan. Amen.",
+        "Zorgen over thuis. Dingen die misgingen. Spijt van harde woorden."
       ],
       "anafoor": [
-        "Voor mensen die... Voor mensen die... Voor mensen die..."
+        "Voor wie... Voor wie... Voor wie...",
+        "Wij bidden voor... Wij bidden voor..."
       ],
       "inclusio": [
-        "Drempelgebed begint met binnenkomen en eindigt met opnieuw beginnen (thuiskomen)."
+        "Drempelgebed: begint met 'binnenkomen/rust', eindigt met 'veilig bij U'."
       ],
       "zintuiglijke_taal": [
-        "zware last (voelen)",
-        "warmte (voelen)",
-        "steen vs zacht (voelen)",
-        "stil maken (horen/voelen)"
+        "Zware rugzak (voelen)",
+        "Warme mantel (voelen)",
+        "Regen op droge grond (voelen/ervaren)",
+        "Hand op de schouder (aanraking)"
       ],
       "lokale_beelden": [
-        "de stad is druk en koud",
-        "andere kerken hier in de stad"
+        "Koud en druk buiten",
+        "De stad",
+        "Noorderkerk"
       ]
     },
     "echo_techniek": {
-      "schriftlezing_thema": "Het wegnemen van de last (Lam) en het samen horen (Eenheid)",
+      "schriftlezing_thema": "Het Lam dat de last draagt (Johannes 1) en de Eenheid (1 Korintiërs)",
       "impliciet_taalveld_voor_lezingen": {
-        "drempelgebed": "Lasten dragen en afleggen (voorbereiding op 'zonde wegnemen')",
-        "kyrie": "Kou en hardheid (voorbereiding op 'licht' en 'warmte')",
-        "epiclese": "Steen vs. Zacht (voorbereiding op de werking van de Geest)"
+        "drempelgebed": "Lasten dragen en afleggen (algemeen beeld, bereidt voor op 'Het Lam dat weghaalt')",
+        "kyrie": "Kou en warmte, afstand en nabijheid",
+        "epiclese": "Regen en droge grond (algemeen natuurbeeld)"
       },
       "expliciete_echo_na_lezingen": {
-        "dankgebed": "Expliciete vermelding van Johannes, het Lam en de familie (eenheid)",
-        "voorbeden": "Expliciete bede voor eenheid van de kerken (Week van Gebed thema)"
+        "dankgebed": "Expliciete vermelding van 'Het Lam', 'fouten wegnemen' en 'eenheid'.",
+        "voorbeden": "Specifiek gebed voor 'eenheid' (Week van Gebed) en 'samen naar Jezus kijken'."
       }
     }
   },
