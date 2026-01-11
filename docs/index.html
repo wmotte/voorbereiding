@@ -2133,7 +2133,7 @@
             </div>
         </div>
         <div class="header-update-banner">
-            ⚡ UPDATE 10 januari 2026: ⚡ Naar aanleiding van de verzoeken van voorgangers om gebruik te maken van deze tool, start er een publieke pilot. Elke maandagochtend verschijnt hier, Deo Volente, een contextuele analyse van de lezingen uit het oecumenisch leesrooster voor de komende zondag, uitgewerkt voor drie willekeurige PKN-gemeenten.
+            ⚡ UPDATE 10 januari 2026: ⚡ Naar aanleiding van de verzoeken van voorgangers om gebruik te maken van deze tool, start er een pilot. Elke maandagochtend verschijnt hier, Deo Volente, een contextuele analyse - gegeven de lezingen uit het oecumenisch leesrooster voor de komende zondag - voor drie willekeurige PKN-gemeenten.
         </div>
     </header>
 
@@ -6671,8 +6671,12 @@
         // Format: Author in bold, title in italic
         function processBibliography(text) {
             if (typeof text !== 'string') return text;
+            
+            // Remove Markdown italic/bold markers as we apply our own formatting
+            let result = text.replace(/\*/g, '');
+
             // First convert literal \n to actual newlines
-            let result = text.replace(/\\n/g, '\n');
+            result = result.replace(/\\n/g, '\n');
 
             // Escape HTML special characters
             result = escapeHtml(result);
@@ -6753,11 +6757,11 @@
                      // Ensure publisher has trailing dot
                      if (!publisher.endsWith('.')) publisher += '.';
 
-                     return `<strong>${author}</strong> <span style="color: #666;">${yearStr.trim()}</span> <em>${title}.</em> <span style="color: #666;">${publisher}</span>`;
+                     return `<strong>${author}</strong> <span style="color: #666;">${yearStr.trim()}</span> <em>${smartQuotes(title)}.</em> <span style="color: #666;">${smartQuotes(publisher)}</span>`;
                 }
 
                 // Fallback: just Author and Rest
-                return `<strong>${author}</strong> <span style="color: #666;">${yearStr.trim()}</span> ${rest}`;
+                return `<strong>${author}</strong> <span style="color: #666;">${yearStr.trim()}</span> ${smartQuotes(rest)}`;
             }
 
             // Fallback for non-standard entries (no year pattern found)
