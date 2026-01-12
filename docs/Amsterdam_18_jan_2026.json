@@ -4247,50 +4247,63 @@
     }
   },
   "14_gebeden_profetisch": {
-    "stijl_analyse": "Deze gebeden volgen het ritme van oriëntatie-desoriëntatie-nieuwe oriëntatie. De taal is poëtisch en ritmisch, met zware nadruk op anaphorische herhaling ('Wij zijn...', 'Waar is...') om de urgentie te verhogen. De toon is schurend tegen de Amsterdamse prestatiecultuur ('het imperium') en zoekt de rauwe confrontatie met God over het lijden, zonder de spanning goedkoop op te lossen.",
+    "stijl_analyse": "De gebeden volgen de kenmerkende 'Brueggemanniaanse' cadans: poëtische witregels, massieve anaphorische herhalingen en een schurende antithese tussen de 'koninklijke bewustheid' (de markt, het succes, de autonomie) en de 'gevaarlijke' God van de Bijbel. Psalm 148 uit de Naardense Bijbel fungeert als theologisch raamwerk: de oproep tot lofprijzing wordt omgebogen tot een aanklacht (Kyrie) en een subversieve hoop (Dankgebed), waarbij de 'draken en oervloeden' en 'koningen en rechters' expliciet figureren.",
+    "naardense_psalm_gebruik": {
+      "psalm_nummer": 148,
+      "gebruikt_in_gebeden": [
+        "kyrie",
+        "dankgebed",
+        "voorbeden"
+      ],
+      "concrete_voorbeelden": [
+        "In het Kyrie wordt 'draken en oervloeden alle' (vs 7) gebruikt om de chaos van oorlog en natuurramp te duiden.",
+        "In de Voorbeden worden de 'Koningen op aarde en natiën alle, vorsten en alle rechters' (vs 11) direct aangesproken in relatie tot de wereldpolitiek.",
+        "In het Dankgebed wordt de structuur van 'Looft hem...' (vs 1-4) gespiegeld aan onze valse lofprijzingen van de economie, eindigend in de lof op het Lam."
+      ]
+    },
     "gebeden": {
       "drempelgebed": {
         "type": "drempelgebed",
-        "aanspraak": "Gij die de nacht breekt en de markten verstoort,",
-        "tekst": "Wij komen binnen vanuit het rijk van de productie,\nvanuit de week van de cijfers en quota,\nwaar onze waarde wordt gemeten aan wat wij maken,\nwaar onze rust slechts een pauze is\nom weer harder te kunnen rennen.\n\nWij komen binnen met het lawaai van de stad in ons hoofd,\nmet de angst om niet gezien te worden,\nmet de leugen dat wij onmisbaar zijn,\nmet de vermoeidheid in onze botten.\n\nEn wij . . .\n\nWij leggen het neer op deze drempel:\nhet masker van succes dat wij dragen,\nde pantsering van onze autonomie,\nde afgoden van onze agenda's,\nde illusie van controle.\n\nWij zijn moe van het moeten.\nWij zijn moe van het veinzen.\nWij zijn moe van onszelf.\n\nOntregel ons, God.\nBreek in op onze gesloten scenario's.\nScheur de hemel van onze zelfgenoegzaamheid open.\n\nEn laat ons binnenkomen,\nniet als consumenten van religie,\nmaar als bedelaars om brood,\nals zoekers naar licht,\nals mensen die U nodig hebben.\n\nMeer dan wij durven toegeven.\n\nAmen.",
-        "bijbels_taalveld": "Exodus (uittocht uit het slavenhuis), Profeten (kritiek op afgoden), Psalmen (verlangen naar God)",
+        "aanspraak": "Gij die breekt en bouwt, Ontregelende God,",
+        "tekst": "Wij komen binnen vanuit het rijk van de productie,\nvanuit de week van de cijfers en quota,\nwaar onze waarde wordt gemeten aan wat wij maken,\nwaar onze rust slechts een pauze is\nom weer harder te kunnen rennen.\n\nWij komen binnen vanuit de stad van de schone schijn,\nwaar de grachten glimmen maar de fundering rot,\nwaar wij onze eenzaamheid verbergen\nachter filters en succesverhalen,\nwaar wij onszelf verkopen\naan de hoogste bieder van onze aandacht.\n\nWij komen binnen met onze handen vol . . .\nvol met de agenda's van gisteren,\nvol met de angst voor morgen,\nvol met de leugens die wij onszelf vertellen\nom maar niet te hoeven voelen.\n\nMaar U . . .\n\nU bent de God die niet te koop is.\nU bent de God die geen winstbejag kent.\nU bent de God die ons ziet zonder vernis.\n\nDus scheur ons open.\nOntmasker ons.\nBreek de ban van de markt die ons gijzelt.\nEn maak ons leeg,\nzodat er ruimte komt voor Uw vreemde waarheid.\n\nAmen.",
+        "bijbels_taalveld": "Economie van de afgoderij vs. Vrijheid van God",
         "amen": true
       },
       "kyrie": {
         "type": "kyrie",
-        "aanspraak": "God van de afgrond en de stilte,",
+        "aanspraak": "God van de diepte, Hoorder van het geschreeuw,",
         "focus": "lamentatie_en_protest",
-        "tekst": "Dus nu: luister goed!\n\nWij kijken naar uw wereld en wij schrikken.\nWij zien de barsten in het fundament.\nWij zien de rook boven de steden.\nWij zien de leegte in de ogen van de machtigen.\n\nEn wij vragen U: Waar bent U?\n\nWaar bent U als de aarde beeft en dorpen verzwelgt in het oosten?\nWaar bent U als de bommen vallen op de weerlozen in de woestijn?\nWaar bent U als het recht wordt verkracht door tirannen?\nWaar bent U als de honger knaagt in de magen van kinderen?\nWaar bent U als de winterkou de dakloze doet verstijven?\n\nGij die zei: 'Ik heb de nood gezien' . . .\nZie dan!\nKijk dan niet weg!\n\nEn wij . . .\n\nWij zijn medeplichtig aan de chaos.\nWij zijn verslaafd aan ons comfort.\nWij zijn verlamd door onze luxe.\nWij zijn doof voor de schreeuw aan onze poorten.\nWij zijn te druk om te rouwen.\nWij zijn te bang om te delen.\n\nWij bouwen muren van onverschilligheid.\nWij kopen onze ziel vrij met goedkope woorden.\nWij kijken naar het nieuws als naar een film.\n\nEn het kind onder het puin . . .\nHet kind dat geen naam meer heeft . . .\nHet kind dat niemand hoort . . .\n\nSchreeuwt het niet tot U?\nEn zwijgt Gij dan in alle talen?\n\nKom uit uw verborgenheid!\nDaal neer in onze modder!\nNeem de zwaarte weg die ons verstikt!\n\nKyrie eleison.\nHeer, ontferm U over uw kapotte wereld.\nHeer, ontferm U over ons, uw ontrouwe volk.\n\nAmen.",
-        "bijbels_taalveld": "Klaagliederen (verwoesting), Psalmen (waarom slaapt Gij?), Profeten (aanklacht tegen onrecht)",
+        "tekst": "De dichter zong: 'Looft de Ene vanaf de aarde, draken en oervloeden alle!'\nMaar wij zien de draken, en zij loven niet.\nWij zien de oervloeden, en zij vernietigen.\n\nKijk dan!\n\nDe aarde beeft en scheurt open in het Oosten,\npuin begraaft de levenden,\nde modder slikt de hoop in,\nen de oervloeden van chaos breken door de dammen van onze veiligheid.\n\nLuister goed!\n\nHoort U het gieren van de raketten niet?\nZiet U de kinderen van Gaza en de bergen van Armenië niet?\nDe draken van oorlog spuwen vuur,\nstaal tegen vlees,\nstaal tegen zachte huid,\nstaal tegen de belofte van vrede.\n\nEn U . . .\n\nWaar bent U als de aarde beeft?\nWaar bent U als de bom valt?\nWaar bent U als de draken winnen?\n\nEn wij . . .\n\nWij zijn toeschouwers met eelt op onze ziel.\nWij zijn deskundigen in het wegkijken.\nWij zijn verslaafd aan ons comfort.\nWij zijn bang dat het ons iets gaat kosten.\nWij zijn medeplichtig aan de stilte.\n\nIn de kou van deze winter,\nin de witheid van de sneeuw die alles bedekt maar niets geneest,\nroepen wij U ter verantwoording.\n\nKom uit Uw verborgenheid!\nTem de draken!\nStil de oervloeden!\n\nKyrie eleison.\nHeer, ontferm U.\n\nAmen.",
+        "bijbels_taalveld": "Psalm 148 (Naardense Bijbel) - Schepping en Chaos",
         "amen": true
       },
       "epiclese": {
         "type": "epiclese",
-        "aanspraak": "Geest van waarheid en vuur,",
+        "aanspraak": "Geest van Waarheid, Stroom van Vuur,",
         "focus": "doorbreken_verbeelding",
-        "tekst": "Wij zitten vast in onze eigen verhalen.\nWij zitten opgesloten in onze eigen logica.\nWij horen alleen wat wij willen horen.\n\nOnze oren zijn verstopt met beton.\nOns hart is bedekt met eelt.\nOnze verbeelding is gekoloniseerd door de angst.\n\nKom, Geest!\n\nBreek door de geluidsmuur van onze opinies heen.\nSloop de verdedigingswerken van ons gelijk.\nVerstoor de orde van onze vrome gedachten.\n\nBlaas ons omver.\nZet ons in vuur en vlam.\nMaak ons weerloos voor uw Woord.\n\nOpdat wij horen wat onmogelijk lijkt.\nOpdat wij zien wat verborgen is.\nOpdat wij durven geloven tegen de klippen op.\n\nSpreek, God.\nUw dienaren luisteren . . . misschien.\n\nAmen.",
-        "bijbels_taalveld": "Pinksteren (vuur/storm), Profeten (hart van steen vs hart van vlees), Schepping (Geest over de wateren)",
+        "tekst": "Onze hoofden zitten dicht.\nDichtgemetseld met zekerheden.\nDichtgetimmerd met cynisme.\nDichtgeslibd met de waan van de dag.\n\nWij kunnen Uw woord niet horen,\nwant wij luisteren naar de algoritmes.\nWij kunnen Uw licht niet zien,\nwant wij staren naar onze schermen.\n\nKom met Uw sloophamer.\nBreek in.\nSaboteer onze logica.\nOntregel onze plannen.\n\nBlaas de stof van onze oude woorden,\ntotdat ze weer branden,\ntotdat ze weer snijden,\ntotdat ze weer leven.\n\nMaak ons verbeelding weer gevaarlijk.\n\nAmen.",
+        "bijbels_taalveld": "Profetische inbraak / Geest als storm",
         "amen": true
       },
       "dankgebed": {
         "type": "dankgebed",
-        "aanspraak": "God van de verrassende wending,",
-        "verbinding_verkondiging": "Dank voor het Lam en het Licht",
-        "tekst": "Wij danken U voor de omkering van alles wat wij dachten te weten.\n\nU bent de God die niet vraagt om onze prestatie,\nmaar die voorziet in uw eigen offer.\nU bent de God die niet wacht op onze perfectie,\nmaar die onze last op uw schouders neemt.\nU bent de God die niet kiest voor de sterken,\nmaar die het zwakke uitkiest om het sterke te beschamen.\n\nEn wij . . .\n\nWij, in onze hoogmoed,\nwij dachten dat wij het licht moesten zijn.\nWij dachten dat wij de wereld moesten dragen.\nWij dachten dat wij onszelf moesten redden.\n\nMaar U wijst ons een andere weg.\n\nWij danken U voor Johannes die opzij stapt.\nWij danken U voor de vinger die wijst.\nWij danken U voor de stem in de woestijn.\nWij danken U voor het Lam dat zwijgt en draagt.\nWij danken U voor de zonde die wordt weggenomen.\nWij danken U voor de Geest die blijft en woont.\nWij danken U voor het licht dat de volken zoekt.\n\nU in uw genade,\nwij in onze verwondering.\n\nU die de last van ons afneemt,\nwij die rechtop mogen lopen.\n\nU die ons een nieuwe naam geeft,\nwij die niet langer slaven zijn van de angst.\n\nVoor dit onmogelijke geschenk,\nvoor deze adembenemende ruil,\nvoor deze ruimte om te leven,\n\nprijzen wij uw Naam.\n\nAmen.",
-        "echo_schriftlezing": "Johannes 1 (Lam, Geest, doop), Jesaja 49 (licht, dienaar), 1 Korintiërs (geroepen heiligen)",
+        "aanspraak": "God van de verrassing, Vader van het Lam,",
+        "verbinding_verkondiging": "Na de lezing van het Lam en het Licht",
+        "tekst": "De wereld roept: 'Looft de machtigen!'\nDe stad roept: 'Looft de succesvollen!'\nDe beurs roept: 'Looft de winst!'\n\nMaar wij hebben iets anders gezien.\nWij hebben iets anders gehoord.\n\nWij danken U voor het onmogelijke:\ndat U geen wolf stuurde om te verslinden,\nmaar een Lam om te dragen.\n\nWij danken U voor de omkering:\ndat de zonde niet wordt bedekt,\nmaar weggenomen;\ndat de schuld niet wordt verhaald,\nmaar gedragen;\ndat het licht niet schijnt voor de happy few,\nmaar voor de volken.\n\n'Looft hem, zon en maan,' zong de dichter.\nEn wij vallen in.\n\nWij danken U voor het Licht dat doorbreekt in onze winter.\nWij danken U voor de Stem die onze naam roept.\nWij danken U voor de Geest die blijft en niet wegvliegt.\nWij danken U voor de eenheid die wij niet kunnen maken,\nmaar die U geeft.\n\nU bent de Gever van het nieuwe begin.\nU bent de Breker van de oude ketens.\nU bent de Maker van de nieuwe stad.\n\nEn wij . . .\n\nWij ademen op.\nWij staan recht.\nWij durven weer te hopen.\n\nAlleluia.\n\nAmen.",
+        "echo_schriftlezing": "Johannes 1 (Lam), Jesaja 49 (Licht), Psalm 148 (Looft hem)",
         "amen": true
       },
       "voorbeden": {
         "type": "voorbeden",
-        "aanspraak": "God van alle vlees, Rechter van de aarde,",
+        "aanspraak": "Rechter van de aarde, Herder van de sterren,",
         "cirkels": {
           "wereld": {
             "themas": [
-              "Oorlog en vrede",
+              "Geopolitiek",
               "Machthebbers",
-              "Slachtoffers natuurrampen"
+              "Natuurrampen"
             ],
-            "tekst": "Wij bidden U voor deze wereld die kraakt en kreunt.\n\nVoor de plekken waar de grond beeft en mensen dakloos maakt in het oosten,\nvoor de puinhopen waar hoop begraven ligt,\nvoor de handen die graven en niets vinden.\n\nVoor de landen verscheurd door de waanzin van oorlog,\nwaar leiders spelen met levens als pionnen op een bord,\nwaar wapens spreken en de rechtvaardigheid zwijgt.\n\nVoor de machtigen in hun paleizen van glas,\ndie beslissen over grenzen en graanprijzen,\ndat U hun slaap verstoort met dromen van gerechtigheid.\n\nOntwapen de handen die geweld plegen.\nOntmasker de leugens van de propaganda.\nBescherm het kwetsbare vlees tegen het koude staal.\n\nWees een muur van vuur rondom de vluchteling.\nWees een burcht voor de vervolgde.\nWees het licht voor de volken die tasten in het duister."
+            "tekst": "Wij bidden voor de 'Koningen op aarde en natiën alle',\nvoor de 'vorsten en alle rechters der aarde'.\nZij die denken dat de wereld van hen is.\nZij die spelen met vuur en hagel.\nZij die grenzen trekken door mensenlevens.\n\nOnttroon hun arrogantie, God.\nVerwar hun plannen die leiden tot de dood.\nMaak hun harten van steen weer van vlees.\n\nVoor de slachtoffers van hun spel . . .\nVoor de mensen in Myanmar, waar de aarde schudde.\nVoor de mensen in Gaza, waar de hoop werd bedolven.\nVoor de vluchtelingen die geen 'inzetting' hebben die hen beschermt.\n\nWees Gij hun Recht.\nWees Gij hun Huis.\nWees Gij hun Wraak en hun Vrede."
           },
           "kerk": {
             "themas": [
@@ -4298,52 +4311,49 @@
               "Week van Gebed",
               "Moed"
             ],
-            "tekst": "Wij bidden U voor uw kerk, dat weerbarstige lichaam van U.\n\nVoor de versnipperde delen van uw ene lichaam,\nvoor de muren die wij zelf hebben gemetseld,\nvoor de dogma's die wij belangrijker vinden dan de liefde.\n\nIn deze week van gebed . . .\n\nBreek onze trots die denkt de waarheid te bezitten.\nSloop onze vooroordelen over de ander.\nLeer ons kijken naar het ene Lam, totdat wij elkaar herkennen als broeders en zusters.\n\nVoor de kerk in de verdrukking, die getuigt met haar bloed.\nVoor de kerk in weelde, die in slaap is gesust.\nVoor de kerk die zwijgt wanneer ze moet spreken.\n\nMaak ons één, niet in compromis,\nmaar in de radicale navolging van uw Zoon.\nMaak ons een stad op een berg,\nniet om onszelf te vieren,\nmaar om uw licht te weerkaatsen."
+            "tekst": "Wij bidden voor Uw kerk, 'de gemeente van Uw nabijheid'.\nVerdeeld door onze trots.\nVerscheurd door onze gelijkhebberij.\nVerlamd door onze angst voor de ander.\n\nIn deze week van gebed . . .\n\nBreek onze muren af.\nNiet de muren van steen, maar de muren in ons hoofd.\nLeer ons dat eenheid geen compromis is,\nmaar gehoorzaamheid aan het Lam.\n\nMaak ons één, niet om sterk te zijn tegen de wereld,\nmaar om zacht te zijn voor de wereld.\nOm een licht te zijn dat niet verblindt,\nmaar verwarmt."
           },
           "naasten": {
             "themas": [
-              "Eenzaamheid",
               "Ziekte",
-              "Jongeren/Studenten"
+              "Eenzaamheid",
+              "Winter"
             ],
-            "tekst": "Wij bidden U voor de mensen in de schaduw van onze stad.\n\nVoor de oudere achter de voordeur die nooit meer opengaat,\ndie wacht op een stem, een groet, een teken van leven.\n\nVoor de jongere die bezwijkt onder de druk van het moeten,\ndie rent in een race die niet te winnen is,\ndie zoekt naar rust in een wereld van ruis.\n\nVoor de zieke die vecht tegen het eigen lichaam,\nvoor wie wacht op een uitslag,\nvoor wie afscheid moet nemen van wat vertrouwd was.\n\nVoor de vreemdeling die hier werkt maar niet woont,\ndie onze stad bouwt maar er niet mag blijven.\n\nWees Gij hun adem als de lucht opraakt.\nWees Gij hun grond als de bodem wegzakt.\nWees Gij hun gids als de weg doodloopt."
+            "tekst": "Wij bidden voor de 'jongemannen en ook meisjes',\nvoor de 'grijsaards samen met knapen'.\n\nVoor hen die vastlopen in de prestatiecultuur.\nVoor hen die bezwijken onder de druk om te zijn wie ze niet zijn.\nVoor hen die wakker liggen van de stilte in hun huis.\n\nVoor de zieken in ons midden . . .\nwier lichaam hapert,\nwier geest verward is,\nwier hoop dun is geworden als ijs.\n\n'Hij deed ze bestaan,' zegt Uw woord.\nDoe hen bestaan, God.\nHoud hen vast.\nAdem Uw leven in hun longen."
           },
           "eigen_gemeente": {
             "themas": [
+              "Amsterdam",
               "Noorderkerk",
-              "Dienstbaarheid",
-              "Toewijding"
+              "Getuigenis"
             ],
-            "tekst": "Wij bidden U voor ons, hier in dit huis van steen en verhalen.\n\nDat wij geen club van gelijkgezinden zijn,\nmaar een herberg voor zoekers.\nDat wij niet wijzen naar onze eigen voortreffelijkheid,\nmaar naar het Lam dat ons draagt.\n\nMaak ons handen en voeten van uw ontferming in deze buurt.\nGeef ons de moed om anders te zijn.\nGeef ons de moed om klein te worden opdat U groot wordt.\n\nZegen ons niet om de zegen te houden,\nmaar om het uit te delen als brood voor de wereld.\n\nBewaar ons bij U,\nvandaag, morgen, en tot in uw toekomst."
+            "tekst": "Wij bidden voor deze plek van samenkomst.\nVoor dit huis van steen in een stad van glas.\n\nVoor ons getuigenis in deze stad.\nDat wij geen wijzende vingers hebben,\nmaar wijzende handen naar het Lam.\nDat wij geen oordeel vellen,\nmaar genade leven.\n\nBewaar ons voor de hoogmoed van de rechtzinnigheid.\nBewaar ons voor de luiheid van de vrijzinnigheid.\nMaak ons tot een 'lofzang voor al Uw vrienden'.\n\nTotdat U komt.\nEn alles nieuw maakt.\nEn alles recht zet.\n\nZoals U ons leerde bidden:"
           }
         },
-        "stilte_instructie": "In de stilte leggen wij de namen neer die in geen enkel gebed pasten, maar die gegraveerd staan in uw handpalmen . . .",
-        "overgang_onze_vader": "Zo bidden wij, samen met de kerk van alle tijden en alle plaatsen, het gebed dat Jezus ons leerde:",
-        "onze_vader": "Onze Vader die in de hemelen zijt,\nUw Naam worde geheiligd.\nUw Koninkrijk kome.\nUw wil geschiede, op aarde zoals in de hemel.\nGeef ons heden ons dagelijks brood.\nEn vergeef ons onze schulden,\ngelijk ook wij vergeven onze schuldenaren.\nEn leid ons niet in verzoeking,\nmaar verlos ons van de boze.\nWant van U is het Koninkrijk\nen de kracht en de heerlijkheid\ntot in eeuwigheid.\nAmen."
+        "stilte_instructie": "Laten wij stil zijn voor de Ene, die onze harten kent . . .",
+        "overgang_onze_vader": "In de woorden die de Zoon ons gaf, roepen wij tot de Vader:",
+        "onze_vader": "Onze Vader die in de hemelen zijt,\nUw naam worde geheiligd.\nUw koninkrijk kome.\nUw wil geschiede, op aarde zoals in de hemel.\nGeef ons heden ons dagelijks brood.\nEn vergeef ons onze schulden,\ngelijk ook wij vergeven onze schuldenaren.\nEn leid ons niet in verzoeking,\nmaar verlos ons van de boze.\nWant van U is het koninkrijk\nen de kracht en de heerlijkheid\ntot in eeuwigheid.\nAmen."
       }
     },
     "profetische_elementen": {
       "gevaarlijke_werkwoorden": [
-        "ontregel",
-        "sloop",
-        "ontwapen",
-        "verstoor",
         "scheur open",
-        "ontmasker"
+        "saboteer",
+        "onttroon",
+        "ontmasker",
+        "breek"
       ],
       "moderne_metaforen": [
         "rijk van de productie",
-        "gesloten scenario's",
-        "geluidsmuur van opinies",
-        "paleizen van glas",
-        "film kijken (nieuws)",
-        "quota en cijfers"
+        "algoritmes",
+        "filters en succesverhalen",
+        "oervloeden van chaos",
+        "toeschouwers met eelt"
       ],
       "anti_status_quo": [
-        "waar onze waarde wordt gemeten aan wat wij maken",
-        "wij zijn verslaafd aan ons comfort",
-        "wij kopen onze ziel vrij met goedkope woorden",
-        "zegen ons niet om de zegen te houden"
+        "U bent de God die niet te koop is",
+        "Niet de muren van steen, maar de muren in ons hoofd",
+        "De draken loven niet, zij vernietigen"
       ]
     }
   },
