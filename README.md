@@ -4,9 +4,7 @@
 
 **Een LLM-ondersteund hulpmiddel voor het voorbereiden van protestantse diensten.**
 
-**Let op: Dit materiaal is bedoeld ter inspiratie. De uiteindelijke verantwoordelijkheid voor de dienst (en in het bijzonder de preek) ligt bij de voorganger.**
-
-⚡ **UPDATE 10 januari 2026**: ⚡ *Naar aanleiding van de verzoeken van voorgangers om gebruik te maken van deze tool, start er een publieke pilot. Elke maandagochtend verschijnt hier een contextuele analyse van de lezingen uit het oecumenisch leesrooster voor de komende zondag, uitgewerkt voor drie willekeurige PKN-gemeenten.*
+**Let op: Dit (onderzoeks)materiaal is bedoeld ter inspiratie. De uiteindelijke verantwoordelijkheid voor de dienst (en in het bijzonder de preek) ligt bij de voorganger.**
 
 1. Bekijk de online webviewer met *100% automatisch-gegenereerde* voorbeelddata: 
 
@@ -17,6 +15,8 @@
 2. Om een idee te krijgen hoe dit hulpmiddel ingezet zou kunnen worden om gedegen feedback te leveren tijdens of na het schrijven van een preek, zie:
 
 [**Feedback**](https://wmotte.github.io/homiletiek_feedback/)
+
+[**Feedback (800+ preken, o.a. van St. Augustinus & Tim Keller)**](https://wmotte.github.io/homiletic_xray/)
 
 Dit project combineert **contextanalyse** (hoorders, samenleving) met concrete **liturgische bouwstenen** (exegese, preekschets, gebeden). Het doel is niet om de preek/gebeden te *schrijven*, maar om de voorganger te voorzien van een rijke, contextuele basis.
 

@@ -25,7 +25,7 @@ Ook waar gevraagd wordt om te schrijven "in de stijl van" een bepaalde theoloog,
 Op dit moment kan het systeem niet publiek worden aangeboden. Daar zijn twee redenen voor:
 
 1. **Copyright**: De liedsuggesties worden geselecteerd uit bundels als Liedboek 2013, Hemelhoog en Weerklank — uitgaven met auteursrechtelijke bescherming.
-2. **Privédatabase**: De exegetische validatie gebeurt met behulp van een database met theologische commentaren die niet vrij beschikbaar zijn.
+2. **Privédatabase**: De exegetische validatie gebeurt met behulp van een database met theologische commentaren (onderzoekslicentie) die niet vrij beschikbaar zijn.
 
 De hoop is om een *provider* te vinden die de logistiek van gebruikersregistratie, licenties en toegangsbeheer voor zijn rekening neemt. Tot die tijd blijft het een prototype.
 
