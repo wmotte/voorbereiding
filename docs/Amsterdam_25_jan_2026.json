@@ -1558,11 +1558,11 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 20,
+      "aantal_gevonden_totaal": 43,
       "rlm_stats": {
-        "hymns_collected": 20,
-        "hymns_read": 0,
-        "iterations": 1
+        "hymns_collected": 111,
+        "hymns_read": 24,
+        "iterations": 55
       },
       "liturgische_balans": "Geselecteerd uit 5 bundels",
       "contextuele_reflectie": "Liederen geselecteerd via RLM-enhanced MCP workflow met LLM-verrijkte metadata"
@@ -1573,188 +1573,395 @@
         "titel": "Mijn licht, mijn heil is Hij, mijn God en Here",
         "eerste_regel": "Mijn licht, mijn heil is Hij, mijn God en Here!",
         "type_match": "Schriftlezing",
-        "karakter": "Krachtig vertrouwenslied",
-        "toelichting": "Dit lied is een directe berijming van Psalm 27 en sluit naadloos aan bij de thematiek van het licht dat doorbreekt in de duisternis uit Jesaja 9.",
-        "suggestie_gebruik": "Intochtlied"
+        "karakter": "Vertrouwend geloofslied",
+        "toelichting": "Een directe berijming van Psalm 27 die naadloos aansluit bij de lezing over het licht dat opgaat in de duisternis (Jesaja 9). Het biedt een 'hoge burcht' voor de stedelijke gelovige in Amsterdam-West.",
+        "suggestie_gebruik": "Antwoordpsalm"
       },
       {
         "nummer": "27a",
         "titel": "De Heer is mijn licht",
-        "eerste_regel": "The Lord is my light,",
+        "eerste_regel": "whom shall I fear?",
         "type_match": "Schriftlezing",
-        "karakter": "Meditatieve Taizé-chant",
-        "toelichting": "Een repetitieve vorm van Psalm 27 die de gemeente helpt te focussen op de kernbelofte van de lezingen: God als licht en redding.",
-        "suggestie_gebruik": "Antwoordpsalm of meditatief moment"
+        "karakter": "Meditatieve chant",
+        "toelichting": "Deze korte, Engelstalige zetting van Psalm 27:1 fungeert als een 'stille haven' in de drukke Admiralenbuurt en benadrukt de universele roep om Gods nabijheid.",
+        "suggestie_gebruik": "Gebedslied"
       },
       {
         "nummer": "27b",
         "titel": "De Heer is mijn licht en mijn heil",
         "eerste_regel": "De Heer is mijn licht en mijn heil:",
         "type_match": "Schriftlezing",
-        "karakter": "Liturgische psalmzang",
-        "toelichting": "Deze onberijmde psalmzetting volgt de tekst van Psalm 27 nauwgezet en versterkt het verlangen naar Gods nabijheid in het 'huis van de Heer'.",
+        "karakter": "Liturgische beurtzang",
+        "toelichting": "Deze onberijmde psalmtekst verwoordt het verlangen om 'te wonen in het huis van de Heer', wat prachtig resoneert met de visie van de Jeruzalemkerk als huis voor de buurt.",
         "suggestie_gebruik": "Antwoordpsalm"
       },
       {
-        "nummer": "293",
-        "titel": "Hoor mijn stem, Heer",
-        "eerste_regel": "Mijn hart herhaalt wat Gij mij zegt:",
+        "nummer": "444",
+        "titel": "Nu daagt het in het oosten",
+        "eerste_regel": "Nu daagt het in het oosten,",
         "type_match": "Schriftlezing",
-        "karakter": "Verstild gebed",
-        "toelichting": "Dit lied verwoordt vers 8 van Psalm 27 ('Zoek mijn nabijheid') en past bij de roeping van de discipelen in Matteüs 4 die Jezus' stem volgen.",
-        "suggestie_gebruik": "Gebed om verlichting voor de Schriftlezingen"
+        "karakter": "Klassieke ochtendhymne",
+        "toelichting": "Verwijst expliciet naar Jesaja 9:1 en Matteüs 4:16 over het licht dat schijnt over hen die in de schaduw van de dood zitten; Christus wordt hier bezongen als het overwinnende licht.",
+        "suggestie_gebruik": "Intochtlied"
       },
       {
-        "nummer": "296",
-        "titel": "Die de morgen ontbood",
-        "eerste_regel": "Die de morgen ontbood",
+        "nummer": "445",
+        "titel": "De nacht is haast ten einde",
+        "eerste_regel": "De nacht is haast ten einde,",
         "type_match": "Thematisch",
-        "karakter": "Hymne van licht",
-        "toelichting": "De tekst over het 'licht dat de weerstand van de nacht breekt' resoneert sterk met de profetie uit Jesaja 8:23b over het volk dat in duisternis wandelt.",
-        "suggestie_gebruik": "Openingslied"
-      },
-      {
-        "nummer": "355",
-        "titel": "Vol van vreugde, dankbaar voor het wonder",
-        "eerste_regel": "Vol van vreugde, dankbaar voor het wonder",
-        "type_match": "Contextueel",
-        "karakter": "Teder vertrouwenslied",
-        "toelichting": "Gezien de jonge demografie van de Jeruzalemkerk en de focus op de 'community', biedt dit lied een veilige haven voor gezinnen in een onzekere wereld.",
-        "suggestie_gebruik": "Lied bij de doop of zegen van kinderen"
-      },
-      {
-        "nummer": "414",
-        "titel": "Geef ons genadig, Here God",
-        "eerste_regel": "Geef ons genadig, goede God,",
-        "type_match": "Contextueel",
-        "karakter": "Gebed om vrede",
-        "toelichting": "In het licht van de humanitaire crisis in Congo en Burundi is dit een noodzakelijk gebed om Gods bescherming en vrede voor de wereld.",
-        "suggestie_gebruik": "Slotgebed of na de voorbeden"
-      },
-      {
-        "nummer": "423",
-        "titel": "Nu wij uiteengaan vragen wij God",
-        "eerste_regel": "Nu wij uiteengaan vragen wij God:",
-        "type_match": "Conceptueel",
-        "karakter": "Zendingslied",
-        "toelichting": "De bede 'ga met uw licht voor ons uit' verbindt de roeping van de discipelen in Matteüs 4 met de dagelijkse praktijk van de Amsterdamse kerkganger.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "746",
-        "titel": "Sion mijn vaderstad",
-        "eerste_regel": "Sion mijn vaderland",
-        "type_match": "Verrassend",
-        "karakter": "Eschatologische hymne",
-        "toelichting": "Dit lied contrasteert het 'gouden licht' van Gods stad met de 'schaduw van de dood' uit de evangelielezing, als hoopvol einddoel.",
+        "karakter": "Hoopvol bemoedigingslied",
+        "toelichting": "Dit lied verbindt de belofte van het morgenlicht met de 'angst en pijn' van de wereld, wat troost biedt bij de actuele humanitaire crisis in Congo en Burundi.",
         "suggestie_gebruik": "Lied na de verkondiging"
+      },
+      {
+        "nummer": "882",
+        "titel": "Allerhoogste God, heilig en glorierijk",
+        "eerste_regel": "Allerhoogste God, heilig en glorierijk,",
+        "type_match": "Conceptueel",
+        "karakter": "Eerbiedige lofzang",
+        "toelichting": "Reflecteert op God die in onze 'zwakheid' komt wonen, passend bij Jezus die in het 'verachte' Galilea van de heidenen zijn bediening begint (Matteüs 4).",
+        "suggestie_gebruik": "Gloria-lied"
+      },
+      {
+        "nummer": "970",
+        "titel": "Vlammen zijn er vele",
+        "eerste_regel": "Vlammen zijn er vele,",
+        "type_match": "Contextueel",
+        "karakter": "Gemeenschapslied",
+        "toelichting": "Sluit aan bij de afsluiting van de Week van Gebed voor de Eenheid; het benadrukt dat de diverse gemeenschap in De Baarsjes 'één in Christus' is.",
+        "suggestie_gebruik": "Lied bij de voorbereiding van de gaven"
       },
       {
         "nummer": "86",
         "titel": "Hoor mij, Heer, wil antwoord zenden",
         "eerste_regel": "Hoor mij, Heer, wil antwoord zenden,",
         "type_match": "Emotioneel",
-        "karakter": "Smeekbede",
-        "toelichting": "De roep om hulp in 'bittere ellende' sluit aan bij de actualiteit van vluchtelingen en de noodkreet om Gods aangezicht te mogen zien.",
-        "suggestie_gebruik": "Lied bij de voorbeden"
+        "karakter": "Smeekgebed",
+        "toelichting": "Sluit aan bij de roep om hulp uit de humanitaire crisis in Congo en Burundi, en het verlangen naar Gods aangezicht uit Psalm 27.",
+        "suggestie_gebruik": "Kyrie-lied of gebedslied"
+      },
+      {
+        "nummer": "780",
+        "titel": "In de schoot van mijn moeder geweven",
+        "eerste_regel": "In de schoot van mijn moeder geweven,",
+        "type_match": "Verrassend",
+        "karakter": "Intiem verstild lied",
+        "toelichting": "Een lied over persoonlijke roeping en gekend zijn door God, wat een diepere laag geeft aan de roeping van de discipelen in de stedelijke context van Amsterdam.",
+        "suggestie_gebruik": "Meditatief moment na de preek"
+      },
+      {
+        "nummer": "791",
+        "titel": "Liefde, eenmaal uitgesproken",
+        "eerste_regel": "Liefde, eenmaal uitgesproken",
+        "type_match": "Conceptueel",
+        "karakter": "Meditatief gebed",
+        "toelichting": "Dit lied over de Liefde als 'geheim en zegening' resoneert met de roeping van de discipelen in Matteüs 4, die alles achterlaten voor de stem van de Liefde.",
+        "suggestie_gebruik": "Gebed na de verkondiging"
       }
     ],
     "hemelhoog": [
+      {
+        "nummer": "110",
+        "titel": "Dit is mijn hand en dat mijn voet",
+        "eerste_regel": "Dit is mijn hand en dat mijn voet,",
+        "type_match": "Conceptueel",
+        "karakter": "Kinderlied",
+        "toelichting": "Verbindt de eenheid van het lichaam van Christus (Week van Gebed) met de praktische roeping van elk individu, zeer herkenbaar voor de vele jonge gezinnen in de wijk.",
+        "suggestie_gebruik": "Moment met de kinderen"
+      },
+      {
+        "nummer": "156",
+        "titel": "Vrolijk kerstfeest",
+        "eerste_regel": "Wonderbare Raadsman, Wonderbare Raadsman,",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijke lofprijs",
+        "toelichting": "Hoewel getiteld als kerstlied, citeert de tekst letterlijk de namen van de Messias uit Jesaja 9:5, de kern van de profetie in de eerste lezing.",
+        "suggestie_gebruik": "Loflied"
+      },
+      {
+        "nummer": "188",
+        "titel": "Jezus is ons licht en leven",
+        "eerste_regel": "Jezus is ons licht en leven!",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijke hymne",
+        "toelichting": "Sluit direct aan bij Psalm 27 ('De Heer is mijn licht') en de vervulling van Jesaja 9 in de evangelielezing, waar Jezus als het grote Licht verschijnt.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "452",
+        "titel": "O kerk, sta op",
+        "eerste_regel": "O kerk, sta op, met wapenrusting aan;",
+        "type_match": "Contextueel",
+        "karakter": "Krachtig strijdlied",
+        "toelichting": "Past bij de missionaire identiteit van de Jeruzalemkerk en de oproep in Matteüs 4 om als 'vissers van mensen' actief te worden in de stedelijke context.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "502",
+        "titel": "Doop",
+        "eerste_regel": "In het water van de doop",
+        "type_match": "Conceptueel",
+        "karakter": "Belijdend en verstild",
+        "toelichting": "De overgang van duister naar licht in Jesaja 9 vindt een liturgische parallel in de doop, waarbij men 'opstaat, van schuld bevrijd'.",
+        "suggestie_gebruik": "Na de doopbediening of als belijdenislied"
+      },
+      {
+        "nummer": "111",
+        "titel": "Wees standvastig, onwankelbaar",
+        "eerste_regel": "Wees standvastig, onwankelbaar,",
+        "type_match": "Emotioneel",
+        "karakter": "Bemoedigend refrein",
+        "toelichting": "Biedt de jonge professionals in De Baarsjes een spiritueel anker om standvastig te blijven in hun navolging (Matteüs 4:19) te midden van stedelijke drukte.",
+        "suggestie_gebruik": "Lied na de preek"
+      },
       {
         "nummer": "12",
         "titel": "I am sure I shall see",
         "eerste_regel": "I am sure I shall see the goodness of the Lord",
         "type_match": "Schriftlezing",
-        "karakter": "Meditatief vertrouwen",
-        "toelichting": "Dit lied is een directe vertolking van Psalm 27:13 en verwoordt de hoop op Gods goedheid te midden van de humanitaire crisis in Oost-Congo.",
+        "karakter": "Meditatief (Taizé-stijl)",
+        "toelichting": "Een directe toonzetting van Psalm 27:13, die het vertrouwen verwoordt dat men Gods goedheid zal zien, zelfs in een 'land van diepe duisternis' (Jesaja 9).",
         "suggestie_gebruik": "Antwoordpsalm"
+      },
+      {
+        "nummer": "131",
+        "titel": "Eer aan God, de hoogste Heer!",
+        "eerste_regel": "Eer aan God, de hoogste Heer!",
+        "type_match": "Seizoen",
+        "karakter": "Hymne van aanbidding",
+        "toelichting": "In de Epifanie-tijd viert dit lied hoe de 'Onzienlijke verschijnt', wat aansluit bij het licht dat opgaat over Galilea in Matteüs 4:16.",
+        "suggestie_gebruik": "Loflied"
+      },
+      {
+        "nummer": "138",
+        "titel": "Hoor, de eng'len zingen d'eer",
+        "eerste_regel": "Hoor de eng’len zingen d’eer",
+        "type_match": "Seizoen",
+        "karakter": "Klassieke hymne",
+        "toelichting": "De tekst 'Zonne der gerechtigheid' verbindt de kerstbelofte met de profetie uit Jesaja 9:1 over het licht dat doorbreekt in de nacht.",
+        "suggestie_gebruik": "Openingslied"
       },
       {
         "nummer": "14",
         "titel": "Wait for the Lord",
         "eerste_regel": "Wait for the Lord,",
-        "type_match": "Seizoen",
-        "karakter": "Taizé-chant",
-        "toelichting": "De oproep om te waken en moed te houden sluit aan bij de 'stille haven' functie van de Jeruzalemkerk in een onrustige wereld op 18 januari.",
-        "suggestie_gebruik": "Gebedslied"
-      },
-      {
-        "nummer": "433",
-        "titel": "Stil, mijn ziel, wees stil",
-        "eerste_regel": "Stil, mijn ziel, wees stil",
-        "type_match": "Conceptueel",
+        "type_match": "Verrassend",
         "karakter": "Verstild gebed",
-        "toelichting": "De tekst over het daglicht dat de zwartste nacht verdrijft (couplet 3) resoneert krachtig met de belofte van het grote licht uit Jesaja 9:1.",
-        "suggestie_gebruik": "Lied na de verkondiging"
+        "toelichting": "Gezien de humanitaire crisis in Congo/Burundi (context) geeft dit lied stem aan het wachten op Gods ingrijpen, conform de oproep in Psalm 27:14.",
+        "suggestie_gebruik": "Gebed om ontferming"
       }
     ],
     "op_toonhoogte": [
+      {
+        "nummer": "76",
+        "titel": "Daar is uit 's werelds duist're wolken",
+        "eerste_regel": "Daar is uit ’s werelds duist’re wolken",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtige lofzang",
+        "toelichting": "Verwoordt poëtisch de profetie uit Jesaja 9:3 over het verbreken van het juk en de staf van de drijver, een krachtig statement tegen actueel onrecht en geweld.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "232",
+        "titel": "Jezus die langs het water liep",
+        "eerste_regel": "Jezus die langs het water liep",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend roepingslied",
+        "toelichting": "Een directe weergave van de evangelielezing (Matteüs 4:18-22) waarin Jezus de vissers roept; het daagt de Amsterdamse 'young professional' uit tot navolging.",
+        "suggestie_gebruik": "Lied na het Evangelie"
+      },
+      {
+        "nummer": "365",
+        "titel": "We are one in the Spirit",
+        "eerste_regel": "We are one in the Spirit,",
+        "type_match": "Contextueel",
+        "karakter": "Modern getuigenislied",
+        "toelichting": "Past bij de internationale sfeer van de wijk en de Week van Gebed; het benadrukt dat christelijke eenheid zichtbaar wordt door liefde en het bewaken van menselijke waardigheid.",
+        "suggestie_gebruik": "Uitzendingslied"
+      },
+      {
+        "nummer": "387",
+        "titel": "O kerk, sta op",
+        "eerste_regel": "O kerk, sta op,",
+        "type_match": "Contextueel",
+        "karakter": "Krachtige oproep",
+        "toelichting": "Dit lied sluit aan bij de missionaire identiteit van de Jeruzalemkerk en de afsluiting van de Week van Gebed; het roept op tot actie in de stad, passend bij de roeping van de discipelen in Matteüs 4.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "103",
+        "titel": "Want een kind is ons geboren",
+        "eerste_regel": "Want een kind is ons geboren,",
+        "type_match": "Schriftlezing",
+        "karakter": "Bijbelgetrouw loflied",
+        "toelichting": "Dit lied is een letterlijke weergave van Jesaja 9:5, de kerntekst van de eerste lezing die de komst van de Vredevorst aankondigt.",
+        "suggestie_gebruik": "Lied na de eerste lezing"
+      },
+      {
+        "nummer": "106",
+        "titel": "Zo laat Gij, Heer, uw knecht",
+        "eerste_regel": "Zo laat Gij, Heer, uw knecht,",
+        "type_match": "Schriftlezing",
+        "karakter": "Verstild dankgebed",
+        "toelichting": "Dit lied (Nunc Dimittis) sluit aan bij Jesaja 9:1 en Matteüs 4:16 over het licht dat opgaat voor de volken en de vervulling van Gods belofte.",
+        "suggestie_gebruik": "Slotlied"
+      },
       {
         "nummer": "11",
         "titel": "Mijn licht, mijn heil is Hij, mijn God en Here",
         "eerste_regel": "Mijn licht, mijn heil is Hij, mijn God en HERE!",
         "type_match": "Schriftlezing",
-        "karakter": "Krachtige belijdenis",
-        "toelichting": "Een berijming van Psalm 27 die de kernwoorden 'licht' en 'heil' uit de lezing centraal stelt als antwoord op de duisternis in de wereld.",
+        "karakter": "Krachtig getuigenis",
+        "toelichting": "Een directe berijming van Psalm 27, de voorgeschreven psalm, die de kern verwoordt van God als burcht tegen de angst in een onveilige wereld.",
         "suggestie_gebruik": "Antwoordpsalm"
       },
       {
-        "nummer": "234",
-        "titel": "Stil, mijn ziel, wees stil",
-        "eerste_regel": "Stil, mijn ziel, wees stil",
+        "nummer": "128",
+        "titel": "U stierf voor mij",
+        "eerste_regel": "U stierf voor mij, mijn Jezus,",
+        "type_match": "Conceptueel",
+        "karakter": "Devoot aanbiddingslied",
+        "toelichting": "Verbindt het 'grote licht' uit de lezingen aan de persoon van Jezus die als kind kwam (couplet 2) om de duisternis van de zonde te overwinnen.",
+        "suggestie_gebruik": "Lied na de verkondiging"
+      },
+      {
+        "nummer": "144",
+        "titel": "Blijf mij nabij, wanneer het duister daalt",
+        "eerste_regel": "Blijf mij nabij, wanneer het duister daalt.",
         "type_match": "Emotioneel",
-        "karakter": "Meditatief lied",
-        "toelichting": "Biedt een geestelijk tegenwicht aan de stedelijke overprikkeling in De Baarsjes door te focussen op de Vredevorst die rust geeft in onzekere tijden.",
-        "suggestie_gebruik": "Stiltemoment"
+        "karakter": "Smeekgebed",
+        "toelichting": "Resoneert met de 'schaduw van de dood' uit Jesaja 9 en biedt een persoonlijk gebed om licht in de stedelijke eenzaamheid van Amsterdam-West.",
+        "suggestie_gebruik": "Gebedslied"
+      },
+      {
+        "nummer": "157",
+        "titel": "Blijf bij ons, Heer, wanneer de nacht zal komen",
+        "eerste_regel": "Blijf bij ons Heer, wanneer de nacht zal komen -",
+        "type_match": "Contextueel",
+        "karakter": "Gemeenschappelijk gebed",
+        "toelichting": "Vraagt om Gods nabijheid in de 'bange nacht vol twijfel', passend bij de humanitaire crisis in Congo en de onzekerheid van de huidige tijd.",
+        "suggestie_gebruik": "Slotlied"
       }
     ],
     "weerklank": [
       {
-        "nummer": "481",
-        "titel": "Zou ik niet van harte zingen",
-        "eerste_regel": "Zou ik niet van harte zingen",
-        "type_match": "Thematisch",
-        "karakter": "Danklied",
-        "toelichting": "Couplet 2 beschrijft God die ons bijstaat 'nacht en dag', wat aansluit bij het thema van het licht dat doorbreekt in de duisternis (Jesaja 9).",
-        "suggestie_gebruik": "Slotlied"
+        "nummer": "18",
+        "titel": "Er is uit 's werelds duistere wolken",
+        "eerste_regel": "Er is uit ’s werelds duistere wolken",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijke hymne",
+        "toelichting": "Een directe berijming van Jesaja 9:1, over het grote licht dat opgaat over het volk dat in duisternis wandelt, wat centraal staat in de eerste lezing.",
+        "suggestie_gebruik": "Intochtlied"
       },
       {
-        "nummer": "499",
-        "titel": "Al verlaten mij mijn ouders",
-        "eerste_regel": "Al verlaten mij mijn ouders,",
+        "nummer": "41",
+        "titel": "Jezus die langs het water liep",
+        "eerste_regel": "Jezus die langs het water liep",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend lied",
+        "toelichting": "Dit lied volgt nauwgezet de evangelielezing uit Matteüs 4:18-22 over de roeping van Simon en Andreas aan de oever van het meer.",
+        "suggestie_gebruik": "Lied na de evangelielezing"
+      },
+      {
+        "nummer": "73",
+        "titel": "Bewaar de eenheid van Gods Geest",
+        "eerste_regel": "Bewaar de eenheid van Gods Geest,",
         "type_match": "Contextueel",
-        "karakter": "Troostlied",
-        "toelichting": "Gebaseerd op Psalm 27:10; dit lied krijgt extra diepgang tegen de achtergrond van de vluchtelingencrisis in Burundi waar families verscheurd worden.",
-        "suggestie_gebruik": "Gebedslied"
+        "karakter": "Gemeenschapsgebed",
+        "toelichting": "Passend bij de afsluiting van de Week van Gebed voor de Eenheid en de focus op 'community' in de diverse wijk De Baarsjes.",
+        "suggestie_gebruik": "Gebed om de verlichting met de Heilige Geest"
+      },
+      {
+        "nummer": "107",
+        "titel": "Het volk dat wandelt in het duister",
+        "eerste_regel": "Het volk dat wandelt in het duister",
+        "type_match": "Schriftlezing",
+        "karakter": "Meditatief en hoopvol",
+        "toelichting": "Verwoordt de profetie uit Jesaja 9 en biedt een tegenstem tegen het actuele wereldnieuws van oorlog en duisternis in Oost-Congo.",
+        "suggestie_gebruik": "Antwoordlied na de eerste lezing"
+      },
+      {
+        "nummer": "111",
+        "titel": "Nu daagt het in het oosten",
+        "eerste_regel": "Nu daagt het in het oosten,",
+        "type_match": "Schriftlezing",
+        "karakter": "Hoopvolle hymne",
+        "toelichting": "Couplet 3 verwijst expliciet naar hen die 'gebonden zaten in schaduw van de dood', een directe link naar de tekst uit Jesaja 9:1.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "113",
+        "titel": "O kom, o kom, Immanuël",
+        "eerste_regel": "O kom, o kom, Immanuël,",
+        "type_match": "Seizoen",
+        "karakter": "Verlangend smeeklied",
+        "toelichting": "De bede om de 'nacht van nood en dood' te verjagen (couplet 3) sluit aan bij de roep om verlossing in de actuele wereldwijde crises.",
+        "suggestie_gebruik": "Openingslied"
+      },
+      {
+        "nummer": "134",
+        "titel": "Van boven daalt een engelenschaar",
+        "eerste_regel": "Van boven daalt een eng’lenschaar",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend lied",
+        "toelichting": "Bevestigt de profetie uit Jesaja over de 'Heerser uit Davids huis' en viert de komst van het Licht in de wereld.",
+        "suggestie_gebruik": "Lied na de eerste lezing"
+      },
+      {
+        "nummer": "136",
+        "titel": "Wees stil en kom wat dichterbij",
+        "eerste_regel": "Wees stil en kom wat dichterbij",
+        "type_match": "Verrassend",
+        "karakter": "Meditatief portret",
+        "toelichting": "In de hectiek van de Amsterdamse Admiralenbuurt nodigt dit lied uit tot de verstilling die nodig is om de roep van Jezus (Matteüs 4) te horen.",
+        "suggestie_gebruik": "Meditatief moment"
+      },
+      {
+        "nummer": "17",
+        "titel": "Daar is uit 's werelds duistere wolken",
+        "eerste_regel": "Daar is uit ’s werelds duis’tre wolken",
+        "type_match": "Schriftlezing",
+        "karakter": "Feestelijke lofzang",
+        "toelichting": "Een poëtische weergave van Jesaja 9; het beschrijft hoe het juk wordt verbroken en het licht de zwarte schaduw van de dood verdrijft.",
+        "suggestie_gebruik": "Lied na de verkondiging"
+      },
+      {
+        "nummer": "176",
+        "titel": "In het vroege morgenlicht",
+        "eerste_regel": "In het vroege morgenlicht",
+        "type_match": "Conceptueel",
+        "karakter": "Victorieus getuigenis",
+        "toelichting": "De thematiek van het doorbrekende licht sluit aan bij Jesaja 9:1, waar het volk in duisternis een groot licht ziet, en bij de roep om het 'blijde licht' uit de context van Psalm 27.",
+        "suggestie_gebruik": "Slotlied"
       }
     ],
     "weerklank_psalmen": [
-      {
-        "nummer": "11a",
-        "titel": "Bij U, Heer, wil ik schuilen",
-        "eerste_regel": "Bij U, HEER, wil ik schuilen.",
-        "type_match": "Verrassend",
-        "karakter": "Klaaglied met hoop",
-        "toelichting": "De beelden van wankelende fundamenten passen bij de politieke onzekerheid na de verkiezingen en de roep om een veilige schuilplaats bij God.",
-        "suggestie_gebruik": "Zondagsgebed"
-      },
       {
         "nummer": "27",
         "titel": "De Here is mijn licht, wat kan mij deren",
         "eerste_regel": "De HERE is mijn licht, wat kan mij deren?",
         "type_match": "Schriftlezing",
-        "karakter": "Hymne van vertrouwen",
-        "toelichting": "Directe berijming van de voorgeschreven Psalm 27, die God bezingt als rots en licht te midden van oorlog en complotten.",
-        "suggestie_gebruik": "Intochtlied"
+        "karakter": "Vertrouwenlied",
+        "toelichting": "De voorgeschreven psalm voor deze zondag die de belofte van licht uit Jesaja persoonlijk maakt en verbindt met Gods nabijheid.",
+        "suggestie_gebruik": "Antwoordpsalm"
+      },
+      {
+        "nummer": "11a",
+        "titel": "Bij U, Heer, wil ik schuilen",
+        "eerste_regel": "Bij U, HEER, wil ik schuilen.",
+        "type_match": "Schriftlezing",
+        "karakter": "Vertrouwend gebed onder druk",
+        "toelichting": "Dit lied resoneert met Psalm 27:1 ('De Heer is mijn licht en mijn heil, voor wie zou ik vrezen?') en verwoordt de behoefte aan een 'stille haven' in de hectische Amsterdamse context.",
+        "suggestie_gebruik": "Lied na de Schriftlezing"
       },
       {
         "nummer": "86",
         "titel": "Hoor mij, Heer, wil antwoord zenden",
         "eerste_regel": "Hoor mij, HEER, wil antwoord zenden,",
-        "type_match": "Thematisch",
-        "karakter": "Smeekgebed",
-        "toelichting": "Sluit aan bij het 'zoeken van Gods aangezicht' uit Psalm 27 en de roep om genade voor wie in 'bittere ellende' verkeert.",
-        "suggestie_gebruik": "Kyrië-gebed"
+        "type_match": "Schriftlezing",
+        "karakter": "Ootmoedig smeekgebed",
+        "toelichting": "De bede 'ik zoek uw aangezicht' in het eerste couplet is een directe liturgische parallel aan Psalm 27:8 en verbindt de persoonlijke nood met de mondiale crisis in Congo en Burundi.",
+        "suggestie_gebruik": "Antwoordpsalm"
       }
     ]
   },
