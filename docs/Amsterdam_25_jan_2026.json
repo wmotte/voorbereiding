@@ -1558,265 +1558,203 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 27,
+      "aantal_gevonden_totaal": 20,
       "rlm_stats": {
-        "hymns_collected": 48,
+        "hymns_collected": 20,
         "hymns_read": 0,
         "iterations": 1
       },
-      "liturgische_balans": "Geselecteerd uit 4 bundels",
+      "liturgische_balans": "Geselecteerd uit 5 bundels",
       "contextuele_reflectie": "Liederen geselecteerd via RLM-enhanced MCP workflow met LLM-verrijkte metadata"
     },
     "liedboek_2013": [
       {
         "nummer": "27",
         "titel": "Mijn licht, mijn heil is Hij, mijn God en Here",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "eerste_regel": "Mijn licht, mijn heil is Hij, mijn God en Here!",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtig vertrouwenslied",
+        "toelichting": "Dit lied is een directe berijming van Psalm 27 en sluit naadloos aan bij de thematiek van het licht dat doorbreekt in de duisternis uit Jesaja 9.",
+        "suggestie_gebruik": "Intochtlied"
       },
       {
         "nummer": "27a",
         "titel": "De Heer is mijn licht",
-        "eerste_regel": "refrein_EN:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "eerste_regel": "The Lord is my light,",
+        "type_match": "Schriftlezing",
+        "karakter": "Meditatieve Taizé-chant",
+        "toelichting": "Een repetitieve vorm van Psalm 27 die de gemeente helpt te focussen op de kernbelofte van de lezingen: God als licht en redding.",
+        "suggestie_gebruik": "Antwoordpsalm of meditatief moment"
       },
       {
         "nummer": "27b",
         "titel": "De Heer is mijn licht en mijn heil",
-        "eerste_regel": "1:",
+        "eerste_regel": "De Heer is mijn licht en mijn heil:",
+        "type_match": "Schriftlezing",
+        "karakter": "Liturgische psalmzang",
+        "toelichting": "Deze onberijmde psalmzetting volgt de tekst van Psalm 27 nauwgezet en versterkt het verlangen naar Gods nabijheid in het 'huis van de Heer'.",
+        "suggestie_gebruik": "Antwoordpsalm"
+      },
+      {
+        "nummer": "293",
+        "titel": "Hoor mijn stem, Heer",
+        "eerste_regel": "Mijn hart herhaalt wat Gij mij zegt:",
+        "type_match": "Schriftlezing",
+        "karakter": "Verstild gebed",
+        "toelichting": "Dit lied verwoordt vers 8 van Psalm 27 ('Zoek mijn nabijheid') en past bij de roeping van de discipelen in Matteüs 4 die Jezus' stem volgen.",
+        "suggestie_gebruik": "Gebed om verlichting voor de Schriftlezingen"
+      },
+      {
+        "nummer": "296",
+        "titel": "Die de morgen ontbood",
+        "eerste_regel": "Die de morgen ontbood",
         "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "karakter": "Hymne van licht",
+        "toelichting": "De tekst over het 'licht dat de weerstand van de nacht breekt' resoneert sterk met de profetie uit Jesaja 8:23b over het volk dat in duisternis wandelt.",
+        "suggestie_gebruik": "Openingslied"
+      },
+      {
+        "nummer": "355",
+        "titel": "Vol van vreugde, dankbaar voor het wonder",
+        "eerste_regel": "Vol van vreugde, dankbaar voor het wonder",
+        "type_match": "Contextueel",
+        "karakter": "Teder vertrouwenslied",
+        "toelichting": "Gezien de jonge demografie van de Jeruzalemkerk en de focus op de 'community', biedt dit lied een veilige haven voor gezinnen in een onzekere wereld.",
+        "suggestie_gebruik": "Lied bij de doop of zegen van kinderen"
+      },
+      {
+        "nummer": "414",
+        "titel": "Geef ons genadig, Here God",
+        "eerste_regel": "Geef ons genadig, goede God,",
+        "type_match": "Contextueel",
+        "karakter": "Gebed om vrede",
+        "toelichting": "In het licht van de humanitaire crisis in Congo en Burundi is dit een noodzakelijk gebed om Gods bescherming en vrede voor de wereld.",
+        "suggestie_gebruik": "Slotgebed of na de voorbeden"
+      },
+      {
+        "nummer": "423",
+        "titel": "Nu wij uiteengaan vragen wij God",
+        "eerste_regel": "Nu wij uiteengaan vragen wij God:",
+        "type_match": "Conceptueel",
+        "karakter": "Zendingslied",
+        "toelichting": "De bede 'ga met uw licht voor ons uit' verbindt de roeping van de discipelen in Matteüs 4 met de dagelijkse praktijk van de Amsterdamse kerkganger.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "746",
+        "titel": "Sion mijn vaderstad",
+        "eerste_regel": "Sion mijn vaderland",
+        "type_match": "Verrassend",
+        "karakter": "Eschatologische hymne",
+        "toelichting": "Dit lied contrasteert het 'gouden licht' van Gods stad met de 'schaduw van de dood' uit de evangelielezing, als hoopvol einddoel.",
+        "suggestie_gebruik": "Lied na de verkondiging"
       },
       {
         "nummer": "86",
         "titel": "Hoor mij, Heer, wil antwoord zenden",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "eerste_regel": "Hoor mij, Heer, wil antwoord zenden,",
+        "type_match": "Emotioneel",
+        "karakter": "Smeekbede",
+        "toelichting": "De roep om hulp in 'bittere ellende' sluit aan bij de actualiteit van vluchtelingen en de noodkreet om Gods aangezicht te mogen zien.",
+        "suggestie_gebruik": "Lied bij de voorbeden"
       }
     ],
-    "hemelhoog": [],
+    "hemelhoog": [
+      {
+        "nummer": "12",
+        "titel": "I am sure I shall see",
+        "eerste_regel": "I am sure I shall see the goodness of the Lord",
+        "type_match": "Schriftlezing",
+        "karakter": "Meditatief vertrouwen",
+        "toelichting": "Dit lied is een directe vertolking van Psalm 27:13 en verwoordt de hoop op Gods goedheid te midden van de humanitaire crisis in Oost-Congo.",
+        "suggestie_gebruik": "Antwoordpsalm"
+      },
+      {
+        "nummer": "14",
+        "titel": "Wait for the Lord",
+        "eerste_regel": "Wait for the Lord,",
+        "type_match": "Seizoen",
+        "karakter": "Taizé-chant",
+        "toelichting": "De oproep om te waken en moed te houden sluit aan bij de 'stille haven' functie van de Jeruzalemkerk in een onrustige wereld op 18 januari.",
+        "suggestie_gebruik": "Gebedslied"
+      },
+      {
+        "nummer": "433",
+        "titel": "Stil, mijn ziel, wees stil",
+        "eerste_regel": "Stil, mijn ziel, wees stil",
+        "type_match": "Conceptueel",
+        "karakter": "Verstild gebed",
+        "toelichting": "De tekst over het daglicht dat de zwartste nacht verdrijft (couplet 3) resoneert krachtig met de belofte van het grote licht uit Jesaja 9:1.",
+        "suggestie_gebruik": "Lied na de verkondiging"
+      }
+    ],
     "op_toonhoogte": [
-      {
-        "nummer": "103",
-        "titel": "Want een kind is ons geboren",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "106",
-        "titel": "Zo laat Gij, Heer, uw knecht",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
       {
         "nummer": "11",
         "titel": "Mijn licht, mijn heil is Hij, mijn God en Here",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "128",
-        "titel": "U stierf voor mij",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "144",
-        "titel": "Blijf mij nabij, wanneer het duister daalt",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "157",
-        "titel": "Blijf bij ons, Heer, wanneer de nacht zal komen",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "166",
-        "titel": "Vrede zij u",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "185",
-        "titel": "God van trouw",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "232",
-        "titel": "Jezus die langs het water liep",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "eerste_regel": "Mijn licht, mijn heil is Hij, mijn God en HERE!",
+        "type_match": "Schriftlezing",
+        "karakter": "Krachtige belijdenis",
+        "toelichting": "Een berijming van Psalm 27 die de kernwoorden 'licht' en 'heil' uit de lezing centraal stelt als antwoord op de duisternis in de wereld.",
+        "suggestie_gebruik": "Antwoordpsalm"
       },
       {
         "nummer": "234",
         "titel": "Stil, mijn ziel, wees stil",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "eerste_regel": "Stil, mijn ziel, wees stil",
+        "type_match": "Emotioneel",
+        "karakter": "Meditatief lied",
+        "toelichting": "Biedt een geestelijk tegenwicht aan de stedelijke overprikkeling in De Baarsjes door te focussen op de Vredevorst die rust geeft in onzekere tijden.",
+        "suggestie_gebruik": "Stiltemoment"
       }
     ],
     "weerklank": [
       {
-        "nummer": "107",
-        "titel": "Het volk dat wandelt in het duister",
-        "eerste_regel": "1:",
+        "nummer": "481",
+        "titel": "Zou ik niet van harte zingen",
+        "eerste_regel": "Zou ik niet van harte zingen",
         "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "karakter": "Danklied",
+        "toelichting": "Couplet 2 beschrijft God die ons bijstaat 'nacht en dag', wat aansluit bij het thema van het licht dat doorbreekt in de duisternis (Jesaja 9).",
+        "suggestie_gebruik": "Slotlied"
       },
       {
-        "nummer": "111",
-        "titel": "Nu daagt het in het oosten",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "113",
-        "titel": "O kom, o kom, Immanuël",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "134",
-        "titel": "Van boven daalt een engelenschaar",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "136",
-        "titel": "Wees stil en kom wat dichterbij",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "17",
-        "titel": "Daar is uit 's werelds duistere wolken",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "176",
-        "titel": "In het vroege morgenlicht",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "178",
-        "titel": "Jezus leeft en ik met Hem!",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "18",
-        "titel": "Er is uit 's werelds duistere wolken",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
-      },
-      {
-        "nummer": "197",
-        "titel": "In vuur en vlam zet ons de Geest",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "nummer": "499",
+        "titel": "Al verlaten mij mijn ouders",
+        "eerste_regel": "Al verlaten mij mijn ouders,",
+        "type_match": "Contextueel",
+        "karakter": "Troostlied",
+        "toelichting": "Gebaseerd op Psalm 27:10; dit lied krijgt extra diepgang tegen de achtergrond van de vluchtelingencrisis in Burundi waar families verscheurd worden.",
+        "suggestie_gebruik": "Gebedslied"
       }
     ],
     "weerklank_psalmen": [
       {
         "nummer": "11a",
         "titel": "Bij U, Heer, wil ik schuilen",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "eerste_regel": "Bij U, HEER, wil ik schuilen.",
+        "type_match": "Verrassend",
+        "karakter": "Klaaglied met hoop",
+        "toelichting": "De beelden van wankelende fundamenten passen bij de politieke onzekerheid na de verkiezingen en de roep om een veilige schuilplaats bij God.",
+        "suggestie_gebruik": "Zondagsgebed"
       },
       {
         "nummer": "27",
         "titel": "De Here is mijn licht, wat kan mij deren",
-        "eerste_regel": "1:",
-        "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "eerste_regel": "De HERE is mijn licht, wat kan mij deren?",
+        "type_match": "Schriftlezing",
+        "karakter": "Hymne van vertrouwen",
+        "toelichting": "Directe berijming van de voorgeschreven Psalm 27, die God bezingt als rots en licht te midden van oorlog en complotten.",
+        "suggestie_gebruik": "Intochtlied"
       },
       {
         "nummer": "86",
         "titel": "Hoor mij, Heer, wil antwoord zenden",
-        "eerste_regel": "1:",
+        "eerste_regel": "Hoor mij, HEER, wil antwoord zenden,",
         "type_match": "Thematisch",
-        "karakter": "",
-        "toelichting": "Passend lied voor de eredienst.",
-        "suggestie_gebruik": ""
+        "karakter": "Smeekgebed",
+        "toelichting": "Sluit aan bij het 'zoeken van Gods aangezicht' uit Psalm 27 en de roep om genade voor wie in 'bittere ellende' verkeert.",
+        "suggestie_gebruik": "Kyrië-gebed"
       }
     ]
   },
