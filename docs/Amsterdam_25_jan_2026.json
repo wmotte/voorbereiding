@@ -2101,96 +2101,106 @@
   "09_kunst_cultuur": {
     "moderne_hedendaagse_kunst": [
       {
-        "titel": "Uncertain Journey",
+        "titel": "The Weather Project",
+        "kunstenaar": "Olafur Eliasson",
+        "jaar": 2003,
+        "type": "installatie",
+        "beschrijving": "Een gigantische kunstmatige zon van monofrequent licht die de Turbine Hall van Tate Modern vulde met een goudgele gloed en mist.",
+        "verbinding_tekst": "Dit werk visualiseert het 'Grote Licht' uit Jesaja 9 op een overweldigende, bijna sacrale manier. In de stedelijke context van Amsterdam-West, waar we vaak gevangen zitten in het blauwe licht van schermen, dwingt deze installatie tot een collectieve ervaring van verwondering en stilstand.",
+        "verrassend_element": "Het is geen schilderij maar een atmosferische ervaring die de hoorder uit de individuele bubbel trekt naar een gedeelde 'verlichting'.",
+        "zoekterm": "Olafur Eliasson The Weather Project Tate Modern 2003"
+      },
+      {
+        "titel": "The Key in the Hand",
         "kunstenaar": "Chiharu Shiota",
-        "jaar": 2016,
+        "jaar": 2015,
         "type": "installatie",
-        "beschrijving": "Een monumentale installatie van dichtgeweven rode draden die vanuit metalen bootframes omhoog trekken en de hele ruimte vullen als een complex, bloedrood netwerk.",
-        "verbinding_tekst": "Dit werk verbeeldt de 'netten' uit Matteüs 4 niet als visgerei, maar als de complexe verbindingen van herinnering, bloedverwantschap en sociale structuren waar we in verstrikt zitten. Het achterlaten van de boten in deze rode 'zee' van draden resoneert met de radicale breuk van de discipelen.",
-        "verrassend_element": "Het gebruikt textiel/draad in plaats van verf en is gemaakt door een vrouwelijke Japanse kunstenaar. Het maakt de 'verstrikking' van ons dagelijks leven fysiek voelbaar.",
-        "zoekterm": "Chiharu Shiota Uncertain Journey installation"
+        "beschrijving": "Een overweldigend web van rode draden waarin duizenden sleutels zijn opgehangen boven twee houten boten.",
+        "verbinding_tekst": "De rode draden vormen een complex net dat zowel verbinding als verstrikking symboliseert. De boten doen direct denken aan de vissersboten uit Matteüs 4. Het werk stelt de vraag: welke 'sleutels' (herinneringen, zekerheden) houden we vast in onze netten en wat moeten we loslaten om verder te varen?",
+        "verrassend_element": "De tactiele aard van de draden maakt de 'netten' van onze sociale en mentale structuren bijna fysiek voelbaar.",
+        "zoekterm": "Chiharu Shiota The Key in the Hand Venice Biennale 2015"
       },
       {
-        "titel": "Between Earth and Heaven",
-        "kunstenaar": "El Anatsui",
-        "jaar": 2006,
-        "type": "installatie",
-        "beschrijving": "Een enorm wandkleed gemaakt van duizenden gerecyclede aluminium doppen van drankflessen, aan elkaar geweven met koperdraad, waardoor een glinsterend, goudachtig reliëf ontstaat.",
-        "verbinding_tekst": "Dit werk van de Ghanese kunstenaar weerspiegelt het 'herstellen van de netten' (katartizein) uit Matteüs 4. Het transformeert afval (de duisternis van consumptie) tot een schitterend lichtend geheel, wat symbool staat voor de eenheid uit 1 Korintiërs: vele losse fragmenten die samen één glanzend lichaam vormen.",
-        "verrassend_element": "Het is non-westerse kunst die de grens tussen beeldhouwkunst en textiel doorbreekt en 'waardeloos' materiaal heiligt.",
-        "zoekterm": "El Anatsui Between Earth and Heaven Metropolitan Museum"
+        "titel": "Walking on Water",
+        "kunstenaar": "Makoto Fujimura",
+        "jaar": 2012,
+        "type": "schilderij",
+        "beschrijving": "Een abstract werk met minerale pigmenten en goudstof, geïnspireerd door de tsunami in Japan en de bijbelse thematiek van water en genade.",
+        "verbinding_tekst": "Fujimura gebruikt de Kintsugi-filosofie (herstel met goud). Dit sluit aan bij het 'herstellen van de netten' (katartizein) in Matteüs 4 en 1 Korintiërs 1. Het toont aan dat roeping en eenheid niet over perfectie gaan, maar over herstel door genade.",
+        "verrassend_element": "De combinatie van Japanse traditie en christelijke hoop biedt een niet-westerse blik op de 'zee' van Galilea.",
+        "zoekterm": "Makoto Fujimura Walking on Water painting"
       },
       {
-        "titel": "Aten Reign",
-        "kunstenaar": "James Turrell",
-        "jaar": 2013,
+        "titel": "Soleil Levant",
+        "kunstenaar": "Ai Weiwei",
+        "jaar": 2017,
         "type": "installatie",
-        "beschrijving": "Een site-specific lichtinstallatie die de rotonde van het Guggenheim vulde met concentrische cirkels van veranderend, etherisch licht.",
-        "verbinding_tekst": "Turrells werk gaat over de pure ervaring van licht. Het sluit aan bij Jesaja 9: het licht dat 'opgaat' over hen die in duisternis wandelen. Het is geen licht dat een object beschijnt, maar licht dat de ruimte zelf wordt, zoals het Koninkrijk der Hemelen de nieuwe realiteit wordt.",
-        "verrassend_element": "Het is abstracte kunst die de hoorder dwingt tot stilte en waarneming, passend bij de 'stille haven' functie van de Jeruzalemkerk.",
-        "zoekterm": "James Turrell Aten Reign Guggenheim"
+        "beschrijving": "De gevel van de Kunsthal Charlottenborg bedekt met 3500 reddingsvesten van vluchtelingen, gerangschikt als een barricade of een net.",
+        "verbinding_tekst": "Dit werk verbindt de 'duisternis' van de huidige vluchtelingencrisis (DRC, Burundi) met het beeld van het net. Het confronteert de hoorder met de 'Galilea der volken' van vandaag: de grenzen waar mensen hopen op een nieuw begin.",
+        "verrassend_element": "Het transformeert een symbool van nood (reddingsvest) tot een monumentaal 'net' van menselijke verhalen.",
+        "zoekterm": "Ai Weiwei Soleil Levant Kunsthal Charlottenborg"
       },
       {
-        "titel": "The Raft",
-        "kunstenaar": "Bill Viola",
+        "titel": "Stadia II",
+        "kunstenaar": "Julie Mehretu",
         "jaar": 2004,
-        "type": "videokunst",
-        "beschrijving": "Een video in slow-motion waarin een diverse groep mensen plotseling wordt overvallen door een enorme waterstraal, omver wordt geworpen, en daarna langzaam weer opstaat en elkaar steunt.",
-        "verbinding_tekst": "Dit werk raakt aan de 'schismata' uit 1 Korintiërs. De chaos van het water (de wereld, de verdeeldheid) wordt overwonnen door de menselijke noodzaak om samen op te staan. Het toont de kwetsbaarheid van de gemeenschap die door Jezus wordt geroepen.",
-        "verrassend_element": "Het gebruikt extreme vertraging om de emotie van crisis en herstel (eenheid) zichtbaar te maken.",
-        "zoekterm": "Bill Viola The Raft video art"
+        "type": "schilderij",
+        "beschrijving": "Een gelaagd, abstract werk dat architecturale schema's, vlaggen en explosieve lijnen combineert tot een chaotisch maar verbonden geheel.",
+        "verbinding_tekst": "Mehretu verbeeldt de complexiteit van de moderne stad en de fragmentatie van identiteiten. Het resoneert met de 'partijschappen' in Korinte en de zoektocht naar eenheid in een overprikkelde, geglobaliseerde wereld.",
+        "verrassend_element": "Het vangt de energie van een wereldstad als Amsterdam zonder figuratief te worden.",
+        "zoekterm": "Julie Mehretu Stadia II Carnegie Museum of Art"
       },
       {
-        "titel": "The Calling",
-        "kunstenaar": "Kiki Smith",
-        "jaar": 2002,
-        "type": "sculptuur",
-        "beschrijving": "Een bronzen beeld van een vrouw die met open handen en een afwachtende, bijna luisterende houding naar de hemel kijkt.",
-        "verbinding_tekst": "In plaats van de actieve 'visser' toont Smith de ontvankelijkheid die nodig is voor een roeping. Het verbeeldt de 'metanoia' (ommekeer) als een innerlijke openheid voor het licht dat van buitenaf komt.",
-        "verrassend_element": "Het geeft een vrouwelijk perspectief op het thema 'roeping', dat in de Bijbeltekst uitsluitend door mannen wordt bezet.",
-        "zoekterm": "Kiki Smith The Calling sculpture"
-      },
-      {
-        "titel": "Street Art - Follow Your Dreams (Cancelled)",
-        "kunstenaar": "Banksy",
-        "jaar": 2010,
-        "type": "street_art",
-        "beschrijving": "Een schildering van een vermoeide schilder naast het woord 'FOLLOW YOUR DREAMS' waar een groot rood stempel 'CANCELLED' overheen is gezet.",
-        "verbinding_tekst": "Dit werk confronteert de hoorder in Amsterdam-West met de 'duisternis' van cynisme en mislukte ambities. Jezus' roep 'Volg Mij' is de radicale heropening van een 'geannuleerde' droom, maar dan op Zijn voorwaarden.",
-        "verrassend_element": "Het brengt de straatcultuur van de stad de kerk binnen en doorbreekt vrome clichés over 'je passie volgen'.",
-        "zoekterm": "Banksy Follow Your Dreams Cancelled Boston"
+        "titel": "Civil Tapestry 4",
+        "kunstenaar": "Theaster Gates",
+        "jaar": 2011,
+        "type": "installatie",
+        "beschrijving": "Een wandtapijt gemaakt van oude, afgedankte brandslangen die gebruikt werden tijdens burgerrechtenprotesten.",
+        "verbinding_tekst": "Dit werk gaat over het weven van een nieuwe eenheid uit de resten van conflict en onrecht. Het is een krachtig symbool voor de 'eenheid van de Geest' die dwars door de geschiedenis van strijd heen wordt gevormd.",
+        "verrassend_element": "Het gebruik van industrieel materiaal (brandslangen) maakt de roeping tot rechtvaardigheid zeer concreet en 'rauw'.",
+        "zoekterm": "Theaster Gates Civil Tapestry fire hoses"
       }
     ],
     "klassieke_christelijke_kunst": [
       {
-        "titel": "De roeping van de apostelen Petrus en Andreas",
+        "titel": "The Calling of the Apostles Peter and Andrew",
         "kunstenaar": "Duccio di Buoninsegna",
         "jaar": "1308-1311",
         "type": "schilderij",
-        "locatie": "National Gallery of Art, Washington",
-        "beschrijving": "Een paneel van de Maestà waarop Jezus aan de oever staat en de twee vissers in hun boot aanwijst, terwijl de gouden achtergrond een hemelse dimensie geeft aan de alledaagse zee.",
-        "verbinding_tekst": "De gouden achtergrond symboliseert het 'Grote Licht' uit Jesaja dat doorbreekt in de alledaagse arbeid. Het toont de hiërarchie: Jezus roept, de mens antwoordt.",
-        "zoekterm": "Duccio Calling of the Apostles Peter and Andrew"
+        "locatie": "National Gallery of Art, Washington D.C.",
+        "beschrijving": "Een paneel van de Maestà waarop Jezus aan de oever staat en de twee broers in hun bootje met een net vol vissen naar Hem kijken.",
+        "verbinding_tekst": "De verstilde, bijna iconische weergave benadrukt de autoriteit van Jezus' roep. De vissen in het net zijn individueel geschilderd, wat de overgang naar 'vissers van mensen' visueel ondersteunt.",
+        "zoekterm": "Duccio Calling of the Apostles Peter and Andrew Maesta"
       },
       {
-        "titel": "The Calling of the Disciples",
-        "kunstenaar": "He Qi",
-        "jaar": "21e eeuw (hedendaags-klassiek)",
+        "titel": "The Miraculous Haul of Fishes",
+        "kunstenaar": "Henry Ossawa Tanner",
+        "jaar": "1913",
         "type": "schilderij",
-        "locatie": null,
-        "beschrijving": "Een kleurrijk, bijna kubistisch werk met sterke Chinese invloeden, waarin Jezus en de discipelen in een dynamisch patroon van lijnen en vlakken zijn gevangen.",
-        "verbinding_tekst": "Dit werk van een Chinese kunstenaar doorbreekt het westerse beeld van de discipelen en benadrukt de 'Galilea der volken' (de heidenen) uit de tekst. Het straalt de vreugde uit Jesaja 9 uit.",
-        "zoekterm": "He Qi Calling of the Disciples"
+        "locatie": "National Academy of Design, New York",
+        "beschrijving": "Een sfeervol, bijna mystiek blauw schilderij van vissers die in het halfduister hun netten binnenhalen.",
+        "verbinding_tekst": "Tanner (een Afro-Amerikaanse kunstenaar) speelt meesterlijk met licht en schaduw. Het vangt de sfeer van 'het volk dat in duisternis wandelt' en de vroege ochtend aan het meer van Galilea.",
+        "zoekterm": "Henry Ossawa Tanner The Miraculous Haul of Fishes 1913"
       },
       {
-        "titel": "Icoon van de Eenheid (Christus en de heilige Menas)",
-        "kunstenaar": "Onbekend (Koptisch)",
-        "jaar": "6e eeuw",
+        "titel": "Icoon van de Theofanie (Doop van de Heer)",
+        "kunstenaar": "Onbekend",
+        "jaar": "16e eeuw",
         "type": "icoon",
-        "locatie": "Louvre, Parijs",
-        "beschrijving": "Een zeer oude icoon waarop Christus Zijn arm om de schouder van de abt Menas legt; ze kijken beiden de toeschouwer aan.",
-        "verbinding_tekst": "Deze 'vriendschapsicoon' is een prachtig beeld voor de eenheid uit 1 Korintiërs. Het fundament van eenheid is niet een gedeelde mening, maar de arm van Christus die ons samenbindt.",
-        "zoekterm": "Christ and Abbot Mena icon Louvre"
+        "locatie": null,
+        "beschrijving": "Jezus in de Jordaan, omringd door engelen en Johannes de Doper, met de hemel die zich opent.",
+        "verbinding_tekst": "Hoewel de lezing over de roeping gaat, is de Epifanie-context (het verschijnen van het Licht) de basis. De icoon toont Jezus als de bron van het licht dat de wateren (de wereld) heiligt.",
+        "zoekterm": "Byzantine icon Theophany Baptism of Christ"
+      },
+      {
+        "titel": "Christ among the Doctors",
+        "kunstenaar": "Artemisia Gentileschi",
+        "jaar": "1640-1645",
+        "type": "schilderij",
+        "locatie": "Metropolitan Museum of Art",
+        "beschrijving": "De jonge Jezus die met gezag spreekt te midden van de geleerden in de tempel.",
+        "verbinding_tekst": "Dit werk toont de 'Wonderbare Raadsman' uit Jesaja 9 in actie. Het benadrukt de autoriteit van het Woord, wat essentieel is voor de 'Zondag van het Woord'.",
+        "zoekterm": "Artemisia Gentileschi Christ among the Doctors"
       }
     ],
     "film_documentaire": [
@@ -2200,23 +2210,11 @@
         "jaar": 2019,
         "type": "speelfilm",
         "relevante_scene": {
-          "beschrijving": "De roeping van Simon Petrus na de wonderbaarlijke visvangst. Simon is wanhopig door schulden en Jezus verschijnt in zijn diepste duisternis.",
-          "tijdcode": "Seizoen 1, Aflevering 4",
-          "wat_opent_het": "Het maakt de sociaal-economische druk (de 'netten' van schulden en belasting) tastbaar voor de moderne Amsterdammer."
+          "beschrijving": "Seizoen 1, Aflevering 4: De wonderbare visvangst en de roeping van Simon Petrus.",
+          "tijdcode": "00:45:00",
+          "wat_opent_het": "Het toont de menselijke kant van de 'netten': de schulden, de angst en de radicale opluchting als Jezus in de puinhoop van Petrus' leven stapt."
         },
-        "zoekterm": "The Chosen Season 1 Episode 4 Simon calling scene"
-      },
-      {
-        "titel": "Of Gods and Men (Des hommes et des dieux)",
-        "regisseur": "Xavier Beauvois",
-        "jaar": 2010,
-        "type": "arthouse",
-        "relevante_scene": {
-          "beschrijving": "De monniken stemmen over of ze moeten blijven in het door geweld geteisterde Algerije of vluchten. Ze kiezen voor de eenheid en hun roeping in de periferie.",
-          "tijdcode": "01:15:00",
-          "wat_opent_het": "Het thema van 'eenheid rondom het kruis' (1 Kor 1) en het blijven in de 'duisternis' om licht te zijn."
-        },
-        "zoekterm": "Of Gods and Men 2010 film scene"
+        "zoekterm": "The Chosen Season 1 Episode 4 Peter's calling"
       },
       {
         "titel": "The Truman Show",
@@ -2224,42 +2222,74 @@
         "jaar": 1998,
         "type": "speelfilm",
         "relevante_scene": {
-          "beschrijving": "Truman bereikt de rand van zijn kunstmatige wereld en stapt door de deur naar het echte licht, ondanks de stem van de 'schepper' die hem probeert vast te houden.",
-          "tijdcode": "01:35:00",
-          "wat_opent_het": "Een metafoor voor 'metanoia': het verlaten van de vertrouwde maar neppe 'netten' voor de roep van de werkelijkheid."
+          "beschrijving": "Truman die in zijn zeilboot de rand van zijn kunstmatige wereld bereikt en door de 'deur' in de horizon stapt.",
+          "tijdcode": "01:30:00",
+          "wat_opent_het": "Een krachtige metafoor voor 'metanoia': het doorbreken van de kunstmatige netten van een geconstrueerde realiteit om de echte wereld (het Koninkrijk) in te gaan."
         },
         "zoekterm": "The Truman Show final scene exit"
       },
       {
-        "titel": "Human",
-        "regisseur": "Yann Arthus-Bertrand",
-        "jaar": 2015,
-        "type": "documentaire",
+        "titel": "Of Gods and Men (Des hommes et des dieux)",
+        "regisseur": "Xavier Beauvois",
+        "jaar": 2010,
+        "type": "arthouse",
         "relevante_scene": {
-          "beschrijving": "Close-ups van gezichten van mensen over de hele wereld die vertellen over liefde, haat en vergeving, afgewisseld met beelden van menselijke patronen vanuit de lucht.",
-          "tijdcode": null,
-          "wat_opent_het": "Het visueel maken van de 'Galilea der volken' en de universele roep om eenheid."
+          "beschrijving": "De monniken die gezamenlijk besluiten te blijven ondanks de dreiging, gesymboliseerd in hun laatste avondmaal op de muziek van het Zwanenmeer.",
+          "tijdcode": "01:40:00",
+          "wat_opent_het": "Het verbeeldt de eenheid uit 1 Korintiërs: een gemeenschap die één van geest wordt in het aangezicht van de duisternis."
         },
-        "zoekterm": "Human documentary Yann Arthus-Bertrand"
+        "zoekterm": "Of Gods and Men Last Supper scene"
+      },
+      {
+        "titel": "Arrival",
+        "regisseur": "Denis Villeneuve",
+        "jaar": 2016,
+        "type": "speelfilm",
+        "relevante_scene": {
+          "beschrijving": "Louise die de taal van de aliens leert en daardoor de tijd en de wereld op een totaal nieuwe manier gaat zien.",
+          "tijdcode": "01:15:00",
+          "wat_opent_het": "Het opengaan van een 'nieuw licht' of een nieuwe epistemologie. Het helpt hoorders begrijpen hoe het Koninkrijk onze waarneming van de werkelijkheid verandert."
+        },
+        "zoekterm": "Arrival movie heptapod language scene"
+      },
+      {
+        "titel": "Soul",
+        "regisseur": "Pete Docter",
+        "jaar": 2020,
+        "type": "animatie",
+        "relevante_scene": {
+          "beschrijving": "Joe Gardner die ontdekt dat zijn 'purpose' niet in zijn carrière-succes ligt, maar in het waarderen van de kleine momenten van het leven.",
+          "tijdcode": "01:25:00",
+          "wat_opent_het": "Een moderne vertaling van het achterlaten van de 'netten' van ambitie voor een diepere roeping."
+        },
+        "zoekterm": "Pixar Soul Joe Gardner epiphany scene"
       }
     ],
     "muziek": {
       "hedendaags": [
         {
-          "titel": "The Cave",
-          "artiest": "Mumford & Sons",
-          "jaar": 2009,
-          "genre": "Indie Folk",
-          "verbinding": "De tekst 'I will come out of my cave and I will be fine' resoneert met het verlaten van de duisternis en de roeping tot vrijheid.",
-          "zoekterm": "Mumford & Sons The Cave lyrics"
+          "titel": "Blinded By Your Grace, Pt. 2",
+          "artiest": "Stormzy",
+          "jaar": 2017,
+          "genre": "Gospel/Grime",
+          "verbinding": "Een rauwe, eerlijke getuigenis van Gods licht dat door de duisternis van een zwaar leven breekt. Zeer relevant voor de jongere generatie in Amsterdam-West.",
+          "zoekterm": "Stormzy Blinded By Your Grace Pt 2 official video"
         },
         {
-          "titel": "Brother",
-          "artiest": "The Brilliance",
-          "jaar": 2015,
-          "genre": "Liturgical Pop",
-          "verbinding": "Een krachtig lied over eenheid: 'When I look into the face of my enemy, I see my brother'. Directe link met 1 Kor 1.",
-          "zoekterm": "The Brilliance Brother song"
+          "titel": "De Diepte",
+          "artiest": "S10",
+          "jaar": 2022,
+          "genre": "Indie Pop",
+          "verbinding": "Verwoordt de existentiële duisternis en het verlangen naar verbinding. Het 'oeh ah' als een zucht om hulp in de schaduw van de dood.",
+          "zoekterm": "S10 De Diepte Eurovision 2022"
+        },
+        {
+          "titel": "Licht en Donker",
+          "artiest": "Froukje",
+          "jaar": 2021,
+          "genre": "Nederpop",
+          "verbinding": "Reflecteert op de dualiteit van het leven in de stad en de zoektocht naar helderheid te midden van chaos.",
+          "zoekterm": "Froukje Licht en Donker official audio"
         }
       ],
       "klassiek": [
@@ -2268,99 +2298,148 @@
           "componist": "Arvo Pärt",
           "type": "instrumentaal",
           "specifiek_deel": null,
-          "verbinding": "De minimalistische, repetitieve structuur creëert een ruimte van licht and rust, passend bij de 'Epifanie' sfeer.",
-          "zoekterm": "Arvo Pärt Spiegel im Spiegel"
+          "verbinding": "De minimalistische structuur creëert een 'stille haven' en visualiseert het gestage schijnen van het licht in de duisternis.",
+          "zoekterm": "Arvo Part Spiegel im Spiegel violin piano"
         },
         {
-          "titel": "Seven Words",
-          "componist": "Sofia Gubaidulina",
-          "type": "instrumentaal",
-          "specifiek_deel": "Deel I",
-          "verbinding": "De spanning tussen cello en accordeon verbeeldt de strijd tussen duisternis en licht. Gubaidulina is een belangrijke vrouwelijke stem in de religieuze muziek.",
-          "zoekterm": "Sofia Gubaidulina Seven Words"
+          "titel": "Herr, wie du willt, so schicks mit mir",
+          "componist": "J.S. Bach",
+          "type": "cantate",
+          "specifiek_deel": "BWV 73",
+          "verbinding": "Geschreven voor de 3e zondag na Epifanie. Het thema van overgave aan Gods wil sluit naadloos aan bij de roeping van de discipelen.",
+          "zoekterm": "Bach Cantata BWV 73 Herr wie du willt"
         }
       ],
       "liturgisch": [
         {
-          "titel": "The Summons (Will you come and follow me)",
-          "bron": "Iona Community",
-          "gebruik": "Lied over de roeping van de discipelen, zeer passend bij Matteüs 4.",
-          "zoekterm": "The Summons John Bell Iona"
+          "titel": "Dans nos obscurités (In onze duisternis)",
+          "bron": "Taizé",
+          "gebruik": "Meditatief gezang tijdens de lichtvesper of na de schriftlezing uit Jesaja.",
+          "zoekterm": "Taize Dans nos obscurites light in our darkness"
+        }
+      ]
+    },
+    "jongeren_cultuur": {
+      "gen_z": [
+        {
+          "vorm": "trend",
+          "titel_of_trend": "#hopecore",
+          "bron_platform": "TikTok",
+          "beschrijving": "Een trend van korte video's die focussen op menselijke goedheid, hoop en de schoonheid van het bestaan als tegenwicht voor 'doomscrolling'.",
+          "verbinding_thema": "Directe link met 'het volk dat in duisternis wandelt ziet een groot licht'. Het is een seculiere roep om hoop.",
+          "zoekterm": "TikTok hopecore compilation 2025"
+        },
+        {
+          "vorm": "game",
+          "titel_of_trend": "Celeste",
+          "bron_platform": "Steam",
+          "beschrijving": "Een platformgame over een meisje dat een berg beklimt terwijl ze worstelt met haar innerlijke depressie en angsten.",
+          "verbinding_thema": "De berg als plek van loutering en het overwinnen van de 'schaduw van de dood'.",
+          "zoekterm": "Celeste game mental health theme"
+        },
+        {
+          "vorm": "trend",
+          "titel_of_trend": "BeReal",
+          "bron_platform": "Instagram/BeReal",
+          "beschrijving": "Een app die gebruikers dwingt om op een onverwacht moment een ongefilterde foto te maken.",
+          "verbinding_thema": "De roep om authenticiteit en het achterlaten van de 'netten' van digitale perfectie.",
+          "zoekterm": "BeReal app authenticity trend"
+        }
+      ],
+      "gen_alpha": [
+        {
+          "vorm": "animatie",
+          "titel_of_trend": "Avatar: The Last Airbender",
+          "beschrijving": "De reis van Aang om de wereld te verenigen en de duisternis van de Vuurnatie te stoppen.",
+          "verbinding_thema": "Thema's van eenheid, roeping en het brengen van licht in een verdeelde wereld.",
+          "zoekterm": "Avatar The Last Airbender Aang's destiny"
+        },
+        {
+          "vorm": "game",
+          "titel_of_trend": "Minecraft (Unity Builds)",
+          "beschrijving": "Gezamenlijke bouwprojecten waarbij spelers uit de hele wereld samenwerken aan één structuur.",
+          "verbinding_thema": "Een visueel voorbeeld van de eenheid uit 1 Korintiërs: vele blokken, één gebouw.",
+          "zoekterm": "Minecraft massive community build project"
         }
       ]
     },
     "literatuur": {
       "modern": [
         {
-          "titel": "The Overstory (Tot in de hemel)",
-          "auteur": "Richard Powers",
-          "jaar": 2018,
+          "titel": "Het lied van ooievaar en dromedaris",
+          "auteur": "Anjet Daanje",
+          "jaar": 2022,
           "type": "roman",
-          "thematische_resonantie": "Over de diepe verbondenheid van al het leven (netwerken) en de roeping om de schepping te redden.",
-          "zoekterm": "Richard Powers The Overstory"
+          "thematische_resonantie": "Onderzoekt de onzichtbare verbindingen tussen mensen over generaties heen. Resoneert met de organische eenheid van de kerk.",
+          "zoekterm": "Anjet Daanje Het lied van ooievaar en dromedaris"
+        },
+        {
+          "titel": "The Road",
+          "auteur": "Cormac McCarthy",
+          "jaar": 2006,
+          "type": "roman",
+          "thematische_resonantie": "De ultieme verbeelding van 'wandelen in duisternis' en het 'dragen van het vuur' (het licht) als enige hoop.",
+          "zoekterm": "Cormac McCarthy The Road carrying the fire"
         }
       ],
       "klassiek": [
         {
-          "titel": "De Gebroeders Karamazov",
+          "titel": "De gebroeders Karamazov",
           "auteur": "Fjodor Dostojevski",
-          "jaar": 1880,
-          "thematische_resonantie": "De dialoog over 'iedereen is verantwoordelijk voor iedereen' als fundament voor christelijke eenheid.",
-          "zoekterm": "Dostoevsky Brothers Karamazov unity"
+          "jaar": "1880",
+          "thematische_resonantie": "De leer van Starets Zosima over de eenheid van alle mensen en de verantwoordelijkheid voor elkaar ('iedereen is schuldig voor iedereen').",
+          "zoekterm": "Dostoevsky Brothers Karamazov Father Zosima teachings"
         }
       ],
       "nederlands": [
         {
-          "titel": "Titaantjes",
-          "auteur": "Nescio",
-          "jaar": 1915,
-          "thematische_resonantie": "De zoektocht van jonge Amsterdammers naar iets hogers, de teleurstelling van de 'netten' van de maatschappij en het verlangen naar het licht.",
-          "zoekterm": "Nescio Titaantjes Amsterdam"
+          "titel": "Dorsvloer vol confetti",
+          "auteur": "Franca Treur",
+          "jaar": 2009,
+          "thematische_resonantie": "Het spanningsveld tussen de traditie van de 'vaders' en de eigen roeping om een nieuwe wereld te ontdekken.",
+          "zoekterm": "Franca Treur Dorsvloer vol confetti"
         }
       ]
     },
     "aansluiting_gemeente": {
-      "geschiktheid_traditie": "De Jeruzalemkerk waardeert de combinatie van klassieke diepgang en moderne relevantie. De gekozen kunstwerken (Shiota, Turrell) passen bij de esthetiek van de Amsterdamse School-architectuur.",
-      "sociaal_culturele_fit": "De focus op 'netwerken', 'burn-out' (Viola) en 'stedelijke eenheid' (Banksy) sluit direct aan bij de hoogopgeleide dertigers in De Baarsjes.",
+      "geschiktheid_traditie": "De Jeruzalemkerk waardeert esthetiek en diepgang; de selectie van moderne kunst (Eliasson, Shiota) sluit aan bij de hoogopgeleide hoorders, terwijl de klassieke iconen de confessionele wortels eren.",
+      "sociaal_culturele_fit": "De focus op 'netten' als digitale algoritmes en prestatiedruk resoneert direct met de burn-out cultuur onder jonge professionals in Amsterdam-West.",
       "praktische_overwegingen": [
-        "Gebruik de videokunst van Bill Viola tijdens het meditatieve moment.",
-        "Projecteer de installatie van Shiota tijdens de lezing uit Matteüs.",
-        "Zorg voor een goede toelichting bij de abstracte werken van Turrell."
+        "Gebruik de monumentale architectuur van de kerk als decor voor de projectie van Eliasson.",
+        "Zorg voor een goede balans tussen de 'rauwe' straatcultuur (Stormzy) en de verstilde traditie (Bach)."
       ]
     },
     "praktische_handvatten": {
       "voor_projectie": [
         {
-          "kunstwerk": "Chiharu Shiota - Uncertain Journey",
-          "liturgisch_moment": "Schriftlezing Matteüs 4",
-          "duur": "Tijdens de lezing",
-          "zoekterm_hoge_resolutie": "Chiharu Shiota Uncertain Journey high res"
+          "kunstwerk": "The Weather Project (Eliasson)",
+          "liturgisch_moment": "Tijdens de lezing van Jesaja 9.",
+          "duur": "3 minuten",
+          "zoekterm_hoge_resolutie": "Olafur Eliasson The Weather Project high resolution"
         },
         {
-          "kunstwerk": "James Turrell - Aten Reign",
-          "liturgisch_moment": "Meditatie na de preek",
-          "duur": "3 minuten",
-          "zoekterm_hoge_resolutie": "James Turrell Aten Reign Guggenheim image"
+          "kunstwerk": "The Key in the Hand (Shiota)",
+          "liturgisch_moment": "Tijdens de preek over het achterlaten van de netten.",
+          "duur": "Permanent op de achtergrond",
+          "zoekterm_hoge_resolutie": "Chiharu Shiota Venice Biennale high res"
         }
       ],
       "voor_meditatie": {
-        "aanbevolen_werk": "Bill Viola - The Raft",
-        "duur_tonen": "4 minuten (fragment)",
-        "muziek_erbij": "Arvo Pärt - Spiegel im Spiegel"
+        "aanbevolen_werk": "Walking on Water (Makoto Fujimura)",
+        "duur_tonen": "5 minuten na de preek",
+        "muziek_erbij": "Spiegel im Spiegel van Arvo Pärt"
       },
       "rechten": {
         "publiek_domein": [
           "Duccio di Buoninsegna",
-          "Koptische Icoon"
+          "Fra Angelico",
+          "Henry Ossawa Tanner"
         ],
         "creative_commons": [
-          "Banksy (non-commercieel gebruik vaak gedoogd)",
-          "Street art foto's"
+          "Afbeeldingen van Tate Modern (Eliasson) vaak beschikbaar voor educatief gebruik."
         ],
         "let_op": [
-          "Bill Viola",
-          "Chiharu Shiota",
-          "James Turrell (auteursrechtelijk beschermd, gebruik voor educatieve/liturgische doeleinden toelichten)"
+          "Ai Weiwei en Chiharu Shiota (rechten via Pictoright)."
         ]
       }
     }
