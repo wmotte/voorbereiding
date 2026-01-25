@@ -3030,7 +3030,9 @@
                         'weerklank': 'Weerklank',
                         'weerklank_psalmen': 'Weerklank (Psalmen)',
                         'hemelhoog': 'Hemelhoog',
-                        'op_toonhoogte': 'Op Toonhoogte (2015)'
+                        'op_toonhoogte': 'Op Toonhoogte (2015)',
+                        'sela': 'Sela + Schrijvers voor Gerechtigheid',
+                        'oke4kids': 'Kinderliederen'
                     };
 
                     Object.keys(sectionData).forEach(subKey => {
@@ -3675,7 +3677,7 @@
             }
 
             // Special rendering for specific keys
-            const songbookKeys = ['liedsuggesties', 'liedboek_2013', 'weerklank', 'weerklank_psalmen', 'hemelhoog', 'op_toonhoogte'];
+            const songbookKeys = ['liedsuggesties', 'liedboek_2013', 'weerklank', 'weerklank_psalmen', 'hemelhoog', 'op_toonhoogte', 'sela', 'oke4kids'];
             if (songbookKeys.includes(key) || key.includes('lied')) {
                 return renderLiedsuggesties(key, value);
             }
@@ -3922,7 +3924,9 @@
                 'weerklank': 'Weerklank',
                 'weerklank_psalmen': 'Weerklank (Psalmen)',
                 'hemelhoog': 'Hemelhoog',
-                'op_toonhoogte': 'Op Toonhoogte (2015)'
+                'op_toonhoogte': 'Op Toonhoogte (2015)',
+                'sela': 'Sela + Schrijvers voor Gerechtigheid',
+                'oke4kids': 'Kinderliederen'
             };
             const title = titles[key] || formatKey(key);
             
@@ -3930,6 +3934,8 @@
 
             // Helper to render grid of songs
             const isLiedboek2013 = (key === 'liedboek_2013');
+            const isSela = (key === 'sela');
+            const isOke4Kids = (key === 'oke4kids');
             const renderGrid = (list) => {
                 let gridHtml = `<div class="lied-grid">`;
                 list.forEach(lied => {
@@ -3942,11 +3948,21 @@
                         const toelichting = lied.toelichting || lied.match_detail; // New fallback
                         const typeMatch = lied.type_match; // New
                         const suggestie = lied.suggestie_gebruik; // New
+                        const bron = lied.bron; // For Sela
+                        const credits = lied.credits; // For Oke4Kids
 
                         if (typeMatch) gridHtml += `<div style="float:right; font-size:0.7em; background:var(--accent-light); color:white; padding:2px 6px; border-radius:4px;">${processText(typeMatch)}</div>`;
 
-                        // Add nummer with optional info icon for Liedboek 2013
-                        if (nummer) {
+                        // Special handling for Sela: show bron instead of nummer
+                        if (isSela && bron) {
+                            gridHtml += `<div class="lied-nummer" style="font-style: italic;">${processText(bron)}</div>`;
+                        }
+                        // Special handling for Oke4Kids: show credits instead of nummer
+                        else if (isOke4Kids && credits) {
+                            gridHtml += `<div class="lied-nummer" style="font-size: 0.8em; font-style: italic;">${processText(credits)}</div>`;
+                        }
+                        // Default: show nummer for other bundels (but not for Sela or Oke4Kids)
+                        else if (nummer && !isSela && !isOke4Kids) {
                             let nummerHtml = `<div class="lied-nummer">${processText(nummer)}`;
                             if (isLiedboek2013 && liedboekUrls[nummer]) {
                                 nummerHtml += ` <a href="${liedboekUrls[nummer]}" target="_blank" rel="noopener noreferrer" class="lied-info-icon" title="Achtergrondinformatie op Liedboek Compendium">\u24d8</a>`;

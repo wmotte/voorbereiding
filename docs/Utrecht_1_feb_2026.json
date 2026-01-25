@@ -1598,275 +1598,215 @@
   },
   "08b_liedsuggesties_database": {
     "analyse": {
-      "aantal_gevonden_totaal": 49,
-      "liturgische_balans": "Verdeling: Liedboek 14, Hemelhoog 12, OpToonhoogte 9, Weerklank 10, Weerklank Psalmen 4",
+      "aantal_gevonden_totaal": 50,
+      "liturgische_balans": "Verdeling: Liedboek 10, Hemelhoog 10, OpToonhoogte 4, Weerklank 10, Weerklank Psalmen 3, Sela 8, Oke4Kids 5",
       "contextuele_reflectie": "Liederen geselecteerd via twee-fase analyse: eerst compacte preview (80-120 kandidaten), daarna volledige tekst verificatie (40-60 finale selectie).",
       "methode": "raw_text_two_phase",
-      "fase1_kandidaten": 90,
-      "fase2_finale": 49
+      "fase1_kandidaten": 91,
+      "fase2_finale": 50
     },
     "liedboek_2013": [
       {
         "nummer": "146",
         "bundel": "Liedboek",
         "titel": "Zing, mijn ziel, voor God uw Here",
-        "eerste_regel": "Zing, mijn ziel, voor God uw Here, zing die u het leven geeft.",
+        "eerste_regel": "Zing, mijn ziel, voor God uw Here,",
         "type_match": "Schriftlezing",
-        "karakter": "Loflied - krachtig en belijdend",
-        "toelichting": "Dit is de antwoordpsalm van deze zondag. Het vers 'Aan wie hongert geeft Hij spijze, aan verdrukten recht gericht' (couplet 4) resoneert direct met de zaligsprekingen uit Matteüs 5 over hen die hongeren naar gerechtigheid.",
+        "karakter": "Krachtig loflied",
+        "toelichting": "De psalm van de dag. Vers 4 ('Hij geeft de gebukten moed') sluit naadloos aan bij de zaligspreking voor de treurenden in Matteüs 5.",
         "suggestie_gebruik": "Antwoordlied na de eerste lezing"
       },
       {
-        "nummer": "734",
+        "nummer": "146c",
         "bundel": "Liedboek",
-        "titel": "Beati voi poveri",
-        "eerste_regel": "Beati voi poveri, perché vostro è il regno di Dio.",
+        "titel": "Alles wat adem heeft love de Here",
+        "eerste_regel": "Alles wat adem heeft love de Here,",
         "type_match": "Schriftlezing",
-        "karakter": "Meditatief - Taizé-stijl",
-        "toelichting": "Een directe verklanking van het Evangelie (Matteüs 5). De herhaling van 'Gelukkig die arm van geest zijn' helpt de hoorder de radicale boodschap van de Bergrede te internaliseren.",
-        "suggestie_gebruik": "Zingen tijdens of na de evangelielezing"
+        "karakter": "Uitbundig en theocentrisch",
+        "toelichting": "Een uitgebreide bewerking van Psalm 146. De regel 'Machtigen wankelen in hun waan' (v2) resoneert met de 'omgekeerde wereld' uit 1 Korintiërs 1.",
+        "suggestie_gebruik": "Slotlied"
       },
       {
         "nummer": "989",
         "bundel": "Liedboek",
         "titel": "Gelukkig de armen van geest",
-        "eerste_regel": "Gelukkig de armen van geest want voor hen is het koninkrijk van de hemel.",
+        "eerste_regel": "Gelukkig de armen van geest",
         "type_match": "Schriftlezing",
-        "karakter": "Recitatief - plechtig",
-        "toelichting": "De volledige tekst van de zaligsprekingen. Het vers 'Gelukkig de vredestichters' sluit aan bij de Utrechtse wens om een 'stad van vrede' te zijn.",
-        "suggestie_gebruik": "Schriftlied"
+        "karakter": "Recitatief en meditatief",
+        "toelichting": "Directe tekst van de Zaligsprekingen uit Matteüs 5:1-12a. Essentieel voor de liturgische verankering van het evangelie.",
+        "suggestie_gebruik": "Schriftlied bij het Evangelie"
       },
       {
-        "nummer": "996",
+        "nummer": "160b",
         "bundel": "Liedboek",
-        "titel": "Om eenvoudigen van geest",
-        "eerste_regel": "Om eenvoudigen van geest aan wie de hemel toegezegd is,",
-        "type_match": "Emotioneel",
-        "karakter": "Smeekgebed - ootmoedig",
-        "toelichting": "Dit lied verbindt de zaligsprekingen met een gebed om genezing van onze eigen tekortkomingen: 'Heer, wil ons van onszelf genezen' (couplet 4). Dit past bij de lutherse focus op genade.",
-        "suggestie_gebruik": "Kyrie-gebed of na de preek"
+        "titel": "Laat onder u de gezindheid zijn",
+        "eerste_regel": "Laat onder u de gezindheid zijn",
+        "type_match": "Thematisch",
+        "karakter": "Hymnisch en diepzinnig",
+        "toelichting": "De 'Christushymne' over de ontlediging van Christus (kenosis). Sluit aan bij de 'wijsheid van God' versus de wereld uit de epistellezing.",
+        "suggestie_gebruik": "Lied na de epistellezing"
+      },
+      {
+        "nummer": "131",
+        "bundel": "Liedboek",
+        "titel": "O Heer, er is geen trots in mij",
+        "eerste_regel": "O Heer, er is geen trots in mij,",
+        "type_match": "Schriftlezing",
+        "karakter": "Ingetogen en nederig",
+        "toelichting": "Psalm 131 verwoordt de nederigheid die Sefanja 3:12 vraagt: 'een volk dat deemoedig is en arm'.",
+        "suggestie_gebruik": "Stiltemoment of gebedslied"
+      },
+      {
+        "nummer": "990",
+        "bundel": "Liedboek",
+        "titel": "De laatsten worden de eersten",
+        "eerste_regel": "De laatsten worden de eersten,",
+        "type_match": "Thematisch",
+        "karakter": "Paradoxaal en hoopvol",
+        "toelichting": "Dit lied verwoordt de kern van de 'omgekeerde wereld'. 'Wie slaaf was mag nu heersen' (v6) spiegelt de belofte aan de nederigen.",
+        "suggestie_gebruik": "Antwoordlied"
       },
       {
         "nummer": "991",
         "bundel": "Liedboek",
         "titel": "De eersten zijn de laatsten",
-        "eerste_regel": "De eersten zijn de laatsten, wie nakomt gaat voorop,",
+        "eerste_regel": "De eersten zijn de laatsten,",
         "type_match": "Thematisch",
-        "karakter": "Onderwijzend - paradoxaal",
-        "toelichting": "Verwoordt de 'omgekeerde wereld' uit 1 Korintiërs 1. De regel 'het onderste komt boven, de torens vallen om' (couplet 4) is een krachtig beeld voor Gods koninkrijk dat menselijke hiërarchieën omverwerpt.",
-        "suggestie_gebruik": "Slotlied"
+        "karakter": "Eenvoudig en volks",
+        "toelichting": "Sluit aan bij de Utrechtse context van een 'progressieve enclave'. 'Het onderste komt boven' (v4) is een krachtig sociaal-theologisch statement.",
+        "suggestie_gebruik": "Gemeentelied"
       },
       {
-        "nummer": "157d",
+        "nummer": "157c",
         "bundel": "Liedboek",
-        "titel": "Met hart en ziel maak ik Hem groot",
-        "eerste_regel": "Met hart en ziel maak ik Hem groot en vrolijk zing ik om God, mijn bevrijder.",
+        "titel": "Voor mij had Hij oog, zijn dienares",
+        "eerste_regel": "Voor mij had Hij oog, zijn dienares;",
+        "type_match": "Thematisch",
+        "karakter": "Lofzang van Maria",
+        "toelichting": "Het Magnificat is de ultieme lofzang op Gods omkerende rechtvaardigheid: 'Hij haalde de machtigen neer van hun tronen' (v6).",
+        "suggestie_gebruik": "Loflied na de verkondiging"
+      },
+      {
+        "nummer": "898",
+        "bundel": "Liedboek",
+        "titel": "Een vaste burcht is onze God",
+        "eerste_regel": "Een vaste burcht is onze God,",
+        "type_match": "Contextueel",
+        "karakter": "Strijdbaar en luthers",
+        "toelichting": "Onmisbaar in de Lutherse gemeente Utrecht. Het benadrukt dat onze macht 'ijdelheid' is (v2), wat aansluit bij 1 Korintiërs 1.",
+        "suggestie_gebruik": "Lied van de week / Lutherse identiteit"
+      },
+      {
+        "nummer": "992",
+        "bundel": "Liedboek",
+        "titel": "Wat vraagt de Heer nog meer van ons",
+        "eerste_regel": "Wat vraagt de Heer nog meer van ons",
         "type_match": "Schriftlezing",
-        "karakter": "Lofzang - uitbundig",
-        "toelichting": "Het Magnificat sluit naadloos aan bij Sefanja 3:12. 'Hij haalde de machtigen neer van hun tronen, maar armen en kleinen hief Hij omhoog' (couplet 7) is de kern van de liturgie van vandaag.",
-        "suggestie_gebruik": "Lofzang na de genadeverkondiging"
-      },
-      {
-        "nummer": "538",
-        "bundel": "Liedboek",
-        "titel": "Een mens te zijn op aarde",
-        "eerste_regel": "Een mens te zijn op aarde in deze wereldtijd,",
-        "type_match": "Contextueel",
-        "karakter": "Reflectief - aards",
-        "toelichting": "In de Utrechtse context van hoogopgeleide 'planners' herinnert dit lied eraan dat mens-zijn 'leven van genade' is (couplet 1). Het sluit aan bij de 'Theologia Crucis' door de dood en strijd te aanvaarden.",
-        "suggestie_gebruik": "Lied na de preek"
-      },
-      {
-        "nummer": "973",
-        "bundel": "Liedboek",
-        "titel": "Om voor elkaar te zijn uw oog en oor",
-        "eerste_regel": "Om voor elkaar te zijn uw oog en oor, te zien wie niet gezien wordt, niet gehoord,",
-        "type_match": "Contextueel",
-        "karakter": "Diaconaal - activerend",
-        "toelichting": "Vertaalt de zaligsprekingen naar de praktijk van de gemeente: 'te helpen wie geen helper had ontmoet' (couplet 2). Dit past bij de Utrechtse wens om een oase voor de 'vreemdeling' te zijn.",
-        "suggestie_gebruik": "Lied bij de inzameling van de gaven"
-      },
-      {
-        "nummer": "1010",
-        "bundel": "Liedboek",
-        "titel": "Geef vrede, Heer, geef vrede",
-        "eerste_regel": "Geef vrede, Heer, geef vrede, de wereld wil slechts strijd.",
-        "type_match": "Contextueel",
-        "karakter": "Smeeklied - actueel",
-        "toelichting": "Sluit aan bij de actualiteit van geweld en de roep om 'vredestichters' (couplet 3) uit de Bergrede. 'De toekomst is zo duister' (couplet 2) verwoordt de angst van velen.",
-        "suggestie_gebruik": "Gebedslied"
-      },
-      {
-        "nummer": "942",
-        "bundel": "Liedboek",
-        "titel": "Ik sta voor U in leegte en gemis",
-        "eerste_regel": "Ik sta voor U in leegte en gemis, vreemd is uw naam, onvindbaar zijn uw wegen.",
-        "type_match": "Emotioneel",
-        "karakter": "Eerlijk - klacht en hoop",
-        "toelichting": "Past bij de 'armen van geest' die voor God staan zonder eigen prestaties. 'Wees Gij vandaag mijn brood' (couplet 3) verbindt de leegte met de belofte van verzadiging.",
-        "suggestie_gebruik": "Kyrie-lied of meditatief moment"
-      },
-      {
-        "nummer": "1",
-        "bundel": "Liedboek",
-        "titel": "Gezegend hij, die in der bozen raad",
-        "eerste_regel": "Gezegend hij, die in der bozen raad niet wandelt, noch met goddelozen gaat,",
-        "type_match": "Thematisch",
-        "karakter": "Klassiek - wijsheidslied",
-        "toelichting": "Psalm 1 vormt de opmaat naar de zaligsprekingen. Het beeld van de 'groene boom' (couplet 2) biedt een hoopvol tegenwicht aan de stedelijke drukte van Utrecht.",
-        "suggestie_gebruik": "Intochtslied"
-      },
-      {
-        "nummer": "912",
-        "bundel": "Liedboek",
-        "titel": "Neem mijn leven, laat het, Heer",
-        "eerste_regel": "Neem mijn leven, laat het, Heer, toegewijd zijn aan uw eer.",
-        "type_match": "Thematisch",
-        "karakter": "Toewijding - overgave",
-        "toelichting": "Sluit aan bij 1 Korintiërs 1:31: 'Wie roemt, laat hij roemen in de Heer'. Het lied vraagt om 'uren en tijd' (couplet 1) in dienst van God te stellen, weg van eigen roem.",
-        "suggestie_gebruik": "Slotlied of na de preek"
-      },
-      {
-        "nummer": "113",
-        "bundel": "Liedboek",
-        "titel": "Prijs, halleluja, prijs de Heer",
-        "eerste_regel": "Prijs, halleluja, prijs de Heer, gij ’s Heren knechten, immermeer",
-        "type_match": "Thematisch",
-        "karakter": "Loflied - jubelend",
-        "toelichting": "Psalm 113 bezingt God die 'wie onderligt in stof en slijk' verhoogt (couplet 3). Dit is de kern van de 'omgekeerde wereld' van deze zondag.",
-        "suggestie_gebruik": "Gloria-lied"
-      },
-      {
-        "nummer": "34",
-        "bundel": "Liedboek",
-        "titel": "Ik loof de Heer altijd",
-        "eerste_regel": "Ik loof de Heer altijd. Steeds zingt mijn mond zijn lof, zijn eer.",
-        "type_match": "Thematisch",
-        "karakter": "Vertrouwend - verhalend",
-        "toelichting": "Vers 3: 'Een arme riep in nood. De Here hoorde naar zijn stem'. Dit sluit aan bij de ervaring van de 'nederigen' die in Sefanja worden genoemd.",
-        "suggestie_gebruik": "Antwoordlied"
+        "karakter": "Vragend en appellerend",
+        "toelichting": "Directe echo van Sefanja 2:3 en Micha 6:8. 'Dat wij recht doen en trouw zijn' is de praktische uitwerking van de zaligsprekingen.",
+        "suggestie_gebruik": "Diaconaal moment"
       }
     ],
     "hemelhoog": [
       {
-        "nummer": "334",
-        "bundel": "Hemelhoog",
-        "titel": "God keert alles om",
-        "eerste_regel": "God keert alles om en brengt de hemel hier.",
-        "type_match": "Thematisch",
-        "karakter": "Krachtig - hoopvol",
-        "toelichting": "Dit lied is de perfecte samenvatting van de lezingen. 'God keert alles om en is in zwakheid sterk' (couplet 1) is een directe verwijzing naar de wijsheid van het kruis uit 1 Korintiërs 1.",
-        "suggestie_gebruik": "Themalied na de preek"
-      },
-      {
-        "nummer": "700",
-        "bundel": "Hemelhoog",
-        "titel": "God brengt goed nieuws aan wie arm zijn",
-        "eerste_regel": "God brengt goed nieuws aan wie arm zijn, strekt zijn armen naar hen uit.",
-        "type_match": "Schriftlezing",
-        "karakter": "Bemoedigend - ritmisch",
-        "toelichting": "Verwoordt de belofte aan de armen uit Sefanja en Matteüs. De bridge 'Breng nu hoop en breng herstel' is een gebed dat past bij de actualiteit van de ramp in Papoea-Nieuw-Guinea.",
-        "suggestie_gebruik": "Antwoordlied"
-      },
-      {
-        "nummer": "400",
-        "bundel": "Hemelhoog",
-        "titel": "Welkom hier, vreemdeling",
-        "eerste_regel": "Welkom hier, vreemdeling, welkom, verschoppeling,",
-        "type_match": "Contextueel",
-        "karakter": "Gastvrij - uitnodigend",
-        "toelichting": "Sluit aan bij de Utrechtse context van een 'inclusieve gemeenschap'. Het lied verwelkomt 'winnaars, verliezers' (couplet 1), wat de omgekeerde waarden van het Koninkrijk weerspiegelt.",
-        "suggestie_gebruik": "Intochtslied"
-      },
-      {
-        "nummer": "93",
-        "bundel": "Hemelhoog",
-        "titel": "Weinig is veel in de handen van Jezus",
-        "eerste_regel": "Weinig is veel in de handen van Jezus, kleine gebaren van liefde zijn sterk.",
-        "type_match": "Thematisch",
-        "karakter": "Verstild - hoopvol",
-        "toelichting": "Een prachtige verwoording van 1 Korintiërs 1:27: 'Wat voor de wereld zwak is, heeft God uitgekozen'. 'Minder wordt meer' is de wiskunde van het Koninkrijk.",
-        "suggestie_gebruik": "Lied bij de gaven of na de preek"
-      },
-      {
-        "nummer": "536",
-        "bundel": "Hemelhoog",
-        "titel": "Mensen zonder liefde, zonder lied",
-        "eerste_regel": "Mensen zonder liefde, zonder lied – Heer, ontferm U over ons.",
-        "type_match": "Emotioneel",
-        "karakter": "Smeekgebed - litanie",
-        "toelichting": "Een eigentijds Kyrie dat de nood van de wereld (honger, gebrek aan vrede) voor God brengt. 'Mensen zonder water, zonder brood' (couplet 2) herinnert aan de slachtoffers van natuurrampen.",
-        "suggestie_gebruik": "Kyrie-gebed"
-      },
-      {
-        "nummer": "17",
-        "bundel": "Hemelhoog",
-        "titel": "God is voor ons een veilige schuilplaats",
-        "eerste_regel": "God is voor ons een veilige schuilplaats, een betrouwbare hulp in de nood.",
-        "type_match": "Contextueel",
-        "karakter": "Troostend - krachtig",
-        "toelichting": "Biedt troost bij de actualiteit van de aardverschuiving: 'al wankelt de aarde en storten de bergen in het diepst van de zee' (couplet 1). God als burcht voor de getroffenen.",
-        "suggestie_gebruik": "Gebedslied voor de wereld"
-      },
-      {
-        "nummer": "706",
-        "bundel": "Hemelhoog",
-        "titel": "Deze dingen wil God graag",
-        "eerste_regel": "Deze dingen wil God graag Leer van arme mensen houden,",
-        "type_match": "Thematisch",
-        "karakter": "Activerend - helder",
-        "toelichting": "Vertaalt de zaligsprekingen naar concrete daden: 'Deel je eten met een ander' (couplet 2). Het sluit aan bij de Utrechtse 'Sint Maarten'-traditie van delen.",
-        "suggestie_gebruik": "Diaconaal lied"
-      },
-      {
         "nummer": "1",
         "bundel": "Hemelhoog",
         "titel": "Gelukkig zal je zijn",
-        "eerste_regel": "Gelukkig zal je zijn, gelukkig. Als je gelooft in God",
-        "type_match": "Verrassend",
-        "karakter": "Eenvoudig - fris",
-        "toelichting": "Een zeer toegankelijke bewerking van Psalm 1/Matteüs 5, passend bij de jonge bevolking van Utrecht. 'Met God begin je goed!' (couplet 4) is een bemoediging voor studenten.",
+        "eerste_regel": "Gelukkig zal je zijn,",
+        "type_match": "Thematisch",
+        "karakter": "Bemoedigend",
+        "toelichting": "Verbindt Psalm 1 met de 'Gelukkig'-uitspraken van Jezus. 'Net als een boom die bloeit' (v3) past bij de zomertijd.",
         "suggestie_gebruik": "Openingslied"
       },
       {
         "nummer": "52",
         "bundel": "Hemelhoog",
         "titel": "Welzalig hij",
-        "eerste_regel": "Welzalig hij, die de God van Jakob tot zijn hulpe heeft.",
+        "eerste_regel": "Welzalig hij,",
         "type_match": "Schriftlezing",
-        "karakter": "Meditatief - herhalend",
-        "toelichting": "Directe tekst uit Psalm 146. De herhaling van 'Wiens verwachting is op de HERE' helpt om het vertrouwen van de 'nederigen' (Sefanja) te verankeren.",
-        "suggestie_gebruik": "Antwoordlied"
+        "karakter": "Vertrouwend",
+        "toelichting": "Bewerking van Psalm 146. 'Wiens verwachting is op de HERE' sluit aan bij de oproep van Sefanja om de Heer te zoeken.",
+        "suggestie_gebruik": "Tussenzang"
       },
       {
         "nummer": "88",
         "bundel": "Hemelhoog",
         "titel": "Zoek eerst het koninkrijk van God",
-        "eerste_regel": "Zoek eerst het koninkrijk van God en zijn gerechtigheid,",
+        "eerste_regel": "Zoek eerst het koninkrijk van God",
         "type_match": "Thematisch",
-        "karakter": "Bekend - canon",
-        "toelichting": "Hoewel uit Matteüs 6, sluit het naadloos aan bij de Bergrede-thematiek van deze zondag. Het herinnert de hoorder aan de prioriteiten van het Koninkrijk.",
-        "suggestie_gebruik": "Zingen na de evangelielezing"
-      },
-      {
-        "nummer": "395",
-        "bundel": "Hemelhoog",
-        "titel": "Ik wil jou van harte dienen",
-        "eerste_regel": "Ik wil jou van harte dienen en als Christus voor je zijn.",
-        "type_match": "Contextueel",
-        "karakter": "Toegewijd - teder",
-        "toelichting": "Past bij de Utrechtse wens om een 'oase' te zijn. 'Ik zal Christus’ licht ontsteken als het duister jou omvangt' (couplet 3) is een prachtige belofte van gemeenschap.",
-        "suggestie_gebruik": "Lied van gemeenschap"
-      },
-      {
-        "nummer": "423",
-        "bundel": "Hemelhoog",
-        "titel": "Soms brengt God de storm tot stilte",
-        "eerste_regel": "Soms brengt God de storm tot stilte, soms leidt Hij ons er doorheen.",
-        "type_match": "Emotioneel",
-        "karakter": "Troostend - eerlijk",
-        "toelichting": "Erkent dat God niet altijd het lijden wegneemt, maar erbij is ('Hij is erbij'). Dit sluit aan bij de 'Theologia Crucis' en biedt troost bij actuele rampen.",
+        "karakter": "Bekend en meditatief",
+        "toelichting": "Focus op 'gerechtigheid', een kernwoord in zowel Sefanja als Matteüs 5.",
         "suggestie_gebruik": "Gebedslied"
+      },
+      {
+        "nummer": "93",
+        "bundel": "Hemelhoog",
+        "titel": "Weinig is veel in de handen van Jezus",
+        "eerste_regel": "Weinig is veel in de handen van Jezus,",
+        "type_match": "Thematisch",
+        "karakter": "Verwonderd",
+        "toelichting": "Thematiseert de 'omgekeerde wereld' van het Koninkrijk: 'Minder wordt meer'. Past bij de zomertijd door de beeldspraak van zaadjes (v2).",
+        "suggestie_gebruik": "Offerandelied"
+      },
+      {
+        "nummer": "112",
+        "bundel": "Hemelhoog",
+        "titel": "Heer Jezus, uw genade",
+        "eerste_regel": "Heer Jezus, uw genade",
+        "type_match": "Schriftlezing",
+        "karakter": "Persoonlijk en krachtig",
+        "toelichting": "Directe verbinding met 1 Korintiërs 1:26-31. 'In zwakte zal ik roemen' is de kern van de Theologia Crucis die in Utrecht centraal staat.",
+        "suggestie_gebruik": "Lied na de epistellezing"
+      },
+      {
+        "nummer": "334",
+        "bundel": "Hemelhoog",
+        "titel": "God keert alles om",
+        "eerste_regel": "God keert alles om",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig en belovend",
+        "toelichting": "Vat de hele thematiek van de zondag samen: 'God keert alles om en is in zwakheid sterk' (v1).",
+        "suggestie_gebruik": "Centraal lied na de preek"
+      },
+      {
+        "nummer": "356",
+        "bundel": "Hemelhoog",
+        "titel": "Voor de zieken, voor de armen",
+        "eerste_regel": "Voor de zieken, voor de armen,",
+        "type_match": "Contextueel",
+        "karakter": "Inclusief en warm",
+        "toelichting": "Sluit aan bij de Utrechtse wens een 'oase voor daklozen' te zijn. 'Voor de zwerver die moet zwerven' (v1) geeft stem aan de gemarginaliseerden.",
+        "suggestie_gebruik": "Diaconaal lied"
+      },
+      {
+        "nummer": "385",
+        "bundel": "Hemelhoog",
+        "titel": "Hier aan uw voeten Heer",
+        "eerste_regel": "Hier aan uw voeten Heer,",
+        "type_match": "Thematisch",
+        "karakter": "Ootmoedig",
+        "toelichting": "Vraagt om zachtmoedigheid en nederigheid, kwaliteiten die Jezus 'zalig' spreekt in de Bergrede.",
+        "suggestie_gebruik": "Gebed om ontferming"
+      },
+      {
+        "nummer": "532",
+        "bundel": "Hemelhoog",
+        "titel": "Zolang de vrede uitblijft",
+        "eerste_regel": "Zolang de vrede uitblijft,",
+        "type_match": "Contextueel",
+        "karakter": "Urgent en biddend",
+        "toelichting": "Verbindt de liturgie met de actualiteit van onrecht en nood (zoals de ramp in Papoea-Nieuw-Guinea). 'Breng de hemel dichterbij' (refrein).",
+        "suggestie_gebruik": "Voorbeden"
+      },
+      {
+        "nummer": "700",
+        "bundel": "Hemelhoog",
+        "titel": "God brengt goed nieuws aan wie arm zijn",
+        "eerste_regel": "God brengt goed nieuws aan wie arm zijn,",
+        "type_match": "Schriftlezing",
+        "karakter": "Hoopvol",
+        "toelichting": "Een parafrase van de zaligsprekingen en de missie van Jezus. 'Voor de zwakke is Hij sterk' (v2) sluit aan bij 1 Korintiërs.",
+        "suggestie_gebruik": "Antwoordlied"
       }
     ],
     "op_toonhoogte": [
@@ -1874,91 +1814,41 @@
         "nummer": "72",
         "bundel": "OpToonhoogte",
         "titel": "Prijst de HEER met blijde galmen",
-        "eerste_regel": "Prijst de HEER met blijde galmen; gij, mijn ziel, hebt rijke stof.",
+        "eerste_regel": "Prijst de HEER met blijde galmen;",
         "type_match": "Schriftlezing",
-        "karakter": "Klassiek - loflied",
-        "toelichting": "Bewerking van Psalm 146. Vers 4 noemt expliciet het 'recht der armen' en het voeden van 'hongerigen', wat de kern van de zaligsprekingen raakt.",
-        "suggestie_gebruik": "Intochtslied"
+        "karakter": "Feestelijk",
+        "toelichting": "Klassieke berijming van Psalm 146. 'Zalig hij, die in dit leven Jakobs God ter hulpe heeft' (v2) is de kern van de zondag.",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "167",
+        "bundel": "OpToonhoogte",
+        "titel": "Zegen mij op de weg die ik moet gaan",
+        "eerste_regel": "Zegen mij op de weg die ik moet gaan.",
+        "type_match": "Liturgisch",
+        "karakter": "Persoonlijk gebed",
+        "toelichting": "Het woord 'Zalig' betekent 'Gezegend'. Dit lied vraagt om die zegen om zelf een zegen te kunnen zijn voor anderen.",
+        "suggestie_gebruik": "Zendingslied"
+      },
+      {
+        "nummer": "227",
+        "bundel": "OpToonhoogte",
+        "titel": "Een rijke schat van wijsheid",
+        "eerste_regel": "Een rijke schat van wijsheid",
+        "type_match": "Schriftlezing",
+        "karakter": "Onderwijzend",
+        "toelichting": "Sluit aan bij de epistellezing over de wijsheid van God. 'God opent hart en oren' (v2) bereidt voor op het horen van de Bergrede.",
+        "suggestie_gebruik": "Lied voor de Schriftlezing"
       },
       {
         "nummer": "555",
         "bundel": "OpToonhoogte",
         "titel": "Voor de zieken – voor de armen",
-        "eerste_regel": "Voor de zieken – voor de armen, voor de mensen met verdriet,",
-        "type_match": "Thematisch",
-        "karakter": "Uitnodigend - verhalend",
-        "toelichting": "Een lied dat de doelgroepen van de zaligsprekingen bij naam noemt: armen, zwervers, mensen met verdriet. 'Kom maar aan boord!' is een krachtige uitnodiging tot de gemeenschap.",
-        "suggestie_gebruik": "Lied na de preek"
-      },
-      {
-        "nummer": "557",
-        "bundel": "OpToonhoogte",
-        "titel": "Weet je dat de Vader je kent?",
-        "eerste_regel": "Weet je dat de Vader je kent? Weet je dat je van waarde bent?",
-        "type_match": "Verrassend",
-        "karakter": "Eenvoudig - bemoedigend",
-        "toelichting": "Hoewel vaak als kinderlied gezien, verwoordt het de kern van de Bergrede: je bent van waarde, ook als de wereld zegt dat je 'niks kan' (couplet 2). Zeer passend bij de 'nederigen' uit Sefanja.",
-        "suggestie_gebruik": "Moment met de kinderen of bemoedigingslied"
-      },
-      {
-        "nummer": "377",
-        "bundel": "OpToonhoogte",
-        "titel": "Build Your kingdom here",
-        "eerste_regel": "Come set Your rule and reign in our hearts again.",
+        "eerste_regel": "Voor de zieken – voor de armen,",
         "type_match": "Contextueel",
-        "karakter": "Energiek - gebed",
-        "toelichting": "Sluit aan bij de jonge, internationale studentenpopulatie in Utrecht. Het vraagt God om 'the poor at peace' (couplet 2) te brengen en de stad te helen ('Heal our streets and land').",
-        "suggestie_gebruik": "Slotlied of na de voorbeden"
-      },
-      {
-        "nummer": "372",
-        "bundel": "OpToonhoogte",
-        "titel": "Heer, laat er méér ontferming zijn",
-        "eerste_regel": "Heer, laat er méér ontferming zijn, in een wereld vol van lijden, groot en klein,",
-        "type_match": "Emotioneel",
-        "karakter": "Smeekgebed - diaconaal",
-        "toelichting": "Een gebed om barmhartigheid dat aansluit bij de zaligspreking 'Zalig de barmhartigen'. Het vraagt om 'hartstocht voor gerechtigheid' (couplet 4).",
-        "suggestie_gebruik": "Kyrie-lied"
-      },
-      {
-        "nummer": "214",
-        "bundel": "OpToonhoogte",
-        "titel": "Waar God de Heer zijn schreden zet",
-        "eerste_regel": "Waar God de Heer zijn schreden zet daar wordt de mens, van dwang gered,",
-        "type_match": "Thematisch",
-        "karakter": "Gedragen - luthers",
-        "toelichting": "Sluit aan bij de lutherse identiteit van de gemeente Utrecht. 'Zo leven wij om Christus’ wil... alleen van zijn genade' (couplet 1) weerspiegelt de 'Theologia Crucis'.",
-        "suggestie_gebruik": "Lied na de schriftlezing"
-      },
-      {
-        "nummer": "310",
-        "bundel": "OpToonhoogte",
-        "titel": "Grote God, wij loven U",
-        "eerste_regel": "Grote God, wij loven U, Heer, o sterkste aller sterken!",
-        "type_match": "Liturgisch",
-        "karakter": "Majestueus - loflied",
-        "toelichting": "Een klassiek loflied dat in couplet 3 vraagt om ontferming: 'open uwe Vaderarmen'. Het verbindt Gods grootheid met zijn erbarmen voor de mens.",
-        "suggestie_gebruik": "Gloria-lied"
-      },
-      {
-        "nummer": "159",
-        "bundel": "OpToonhoogte",
-        "titel": "Ga met God en Hij zal met je zijn",
-        "eerste_regel": "Ga met God en Hij zal met je zijn, jou nabij op al je wegen",
-        "type_match": "Emotioneel",
-        "karakter": "Zegenlied - rustig",
-        "toelichting": "Biedt de zegen van nabijheid, ook 'in bange tijden' (couplet 2). Dit is de troost die de 'treurenden' uit de Bergrede nodig hebben.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "238",
-        "bundel": "OpToonhoogte",
-        "titel": "Zoekt eerst het koninkrijk van God",
-        "eerste_regel": "Zoekt eerst het koninkrijk van God en zijn gerechtigheid,",
-        "type_match": "Thematisch",
-        "karakter": "Meditatief - canon",
-        "toelichting": "De kernopdracht van de Bergrede. Het herinnert eraan dat we niet van 'brood alleen' leven (couplet 3), maar van Gods woord.",
-        "suggestie_gebruik": "Zingen voor de evangelielezing"
+        "karakter": "Bewogen",
+        "toelichting": "Identificatie met degenen die 'uit de boot gevallen zijn' (v3), passend bij de doelgroep van de ELGU in de binnenstad.",
+        "suggestie_gebruik": "Collectelied"
       }
     ],
     "weerklank": [
@@ -1966,143 +1856,280 @@
         "nummer": "19",
         "bundel": "Weerklank",
         "titel": "Hij die de hoge bomen",
-        "eerste_regel": "Hij die de hoge bomen geveld heeft door zijn kracht,",
-        "type_match": "Thematisch",
-        "karakter": "Verwachtingsvol - beeldend",
-        "toelichting": "Prachtige verwoording van de omgekeerde wereld: 'Hij zal naar recht regeren wie arm en need’rig zijn' (couplet 3). Het beeld van de 'loot uit Isaï' past bij de hoopvolle stemming.",
-        "suggestie_gebruik": "Lied na de eerste lezing (Sefanja)"
-      },
-      {
-        "nummer": "25",
-        "bundel": "Weerklank",
-        "titel": "O volk, verdwaald, verloren",
-        "eerste_regel": "O volk, verdwaald, verloren, vrees niet, ziehier: uw Knecht!",
-        "type_match": "Thematisch",
-        "karakter": "Troostend - teder",
-        "toelichting": "Sluit aan bij de 'zachtmoedigen' uit Matteüs 5. 'Hij zal niet breken het eens geknakte riet' (couplet 2) is een kernbeeld voor Gods omgang met de zwakken.",
-        "suggestie_gebruik": "Lied na de preek"
-      },
-      {
-        "nummer": "70",
-        "bundel": "Weerklank",
-        "titel": "Heer Jezus, uw genade",
-        "eerste_regel": "Heer Jezus, uw genade is mij genoeg.",
+        "eerste_regel": "Hij die de hoge bomen",
         "type_match": "Schriftlezing",
-        "karakter": "Persoonlijk - belijdend",
-        "toelichting": "Directe link met 1 Korintiërs 1 en 12. 'In zwakheid zal ik roemen... en zo mijn onmacht noemen verborgen kracht' (couplet 1). De essentie van de wijsheid van het Koninkrijk.",
-        "suggestie_gebruik": "Lied na de epistellezing"
+        "karakter": "Profetisch",
+        "toelichting": "Prachtige parallel met Sefanja. 'Hij zal naar recht regeren wie arm en need’rig zijn' (v3). De beeldspraak van de 'loot' past bij de zomertijd.",
+        "suggestie_gebruik": "Schriftlied"
       },
       {
         "nummer": "87",
         "bundel": "Weerklank",
         "titel": "Wie zich hovaardig heffen",
-        "eerste_regel": "Wie zich hovaardig heffen, die zal God wederstaan,",
+        "eerste_regel": "Wie zich hovaardig heffen,",
         "type_match": "Schriftlezing",
-        "karakter": "Vermanend - ootmoedig",
-        "toelichting": "Sluit aan bij Sefanja 2:3 over nederigheid. 'Ootmoedigheid uw kleed' (couplet 1) verwoordt de houding die Jezus in de Bergrede prijst.",
-        "suggestie_gebruik": "Lied voor de schriftlezingen"
+        "karakter": "Vermanend en troostend",
+        "toelichting": "Directe match met Sefanja 3:12 over het ootmoedige volk. 'Zo buig u dan teneder en kus de hand van God' (v2).",
+        "suggestie_gebruik": "Boetepsalm / Kyrie"
       },
       {
-        "nummer": "366",
+        "nummer": "106",
         "bundel": "Weerklank",
-        "titel": "Ik heb slechts één houvast",
-        "eerste_regel": "Ik heb slechts één houvast in leven en in dood:",
-        "type_match": "Contextueel",
-        "karakter": "Belijdend - stevig",
-        "toelichting": "De Heidelbergse Catechismus op rijm. In de lutherse gemeente Utrecht resoneert dit 'Sola Gratia': 'ik heb de zeggenschap over mijzelf verloren' (couplet 1).",
-        "suggestie_gebruik": "Geloofsbelijdenis"
-      },
-      {
-        "nummer": "424a",
-        "bundel": "Weerklank",
-        "titel": "Eigen roem is uitgesloten",
-        "eerste_regel": "Eigen roem is uitgesloten: alle lof aan God alleen!",
-        "type_match": "Schriftlezing",
-        "karakter": "Vreugdevol - loflied",
-        "toelichting": "Directe verklanking van 1 Korintiërs 1:31. 'Ik heb Hem niet uitgekozen, Hij koos mij' (couplet 1) onderstreept dat status in het Koninkrijk louter genade is.",
-        "suggestie_gebruik": "Loflied na de genadeverkondiging"
-      },
-      {
-        "nummer": "495",
-        "bundel": "Weerklank",
-        "titel": "Schuldig staan wij voor U, Heer",
-        "eerste_regel": "Schuldig staan wij voor U, Heer, schuldig, onweersproken.",
-        "type_match": "Emotioneel",
-        "karakter": "Schuldbelijdenis - eerlijk",
-        "toelichting": "Verwoordt het onrecht dat wij anderen aandoen: 'steen voor brood gegeven' (couplet 2). Dit contrasteert met de gerechtigheid van de Bergrede.",
-        "suggestie_gebruik": "Kyrie-lied"
-      },
-      {
-        "nummer": "506",
-        "bundel": "Weerklank",
-        "titel": "In tijden van nood",
-        "eerste_regel": "In tijden van nood, van tranen en rouw, ziet God naar mij om,",
-        "type_match": "Contextueel",
-        "karakter": "Vertrouwend - bemoedigend",
-        "toelichting": "Biedt houvast bij de actualiteit van de natuurramp. 'Zijn woord is de grond, waar mijn leven op staat' (couplet 1) geeft de 'treurenden' een fundament.",
-        "suggestie_gebruik": "Gebedslied"
-      },
-      {
-        "nummer": "548",
-        "bundel": "Weerklank",
-        "titel": "Ik zie veel mensen staan",
-        "eerste_regel": "Ik zie veel mensen staan. Ze luisteren al uren,",
-        "type_match": "Verrassend",
-        "karakter": "Verhalend - hoopvol",
-        "toelichting": "Het wonder van de broodvermenigvuldiging laat zien hoe 'weinig' (vijf broden) 'veel' wordt in Gods hand. Dit illustreert de kracht van de zwakken uit 1 Korintiërs 1.",
-        "suggestie_gebruik": "Lied bij de gaven"
-      },
-      {
-        "nummer": "222",
-        "bundel": "Weerklank",
-        "titel": "Laat komen, Heer, uw rijk",
-        "eerste_regel": "Laat komen, Heer, uw rijk, uw koninklijke dag,",
+        "titel": "Ga, stillen in den lande",
+        "eerste_regel": "Ga, stillen in den lande,",
         "type_match": "Thematisch",
-        "karakter": "Verlangend - krachtig",
-        "toelichting": "Een gebed om de komst van het Rijk waar 'oorlog, haat en nijd voorgoed zijn weggedaan' (couplet 4). Dit is de hoop van de 'vredestichters'.",
+        "karakter": "Verwachtingsvol",
+        "toelichting": "De 'stillen in den lande' zijn de nederigen uit de Bergrede. 'In koninklijk erbarmen maakt God u groot en rijk' (v3).",
+        "suggestie_gebruik": "Intochtlied"
+      },
+      {
+        "nummer": "2",
+        "bundel": "Weerklank",
+        "titel": "Wees eerlijk, doe de mensen recht",
+        "eerste_regel": "Wees eerlijk, doe de mensen recht,",
+        "type_match": "Thematisch",
+        "karakter": "Ethisch appèl",
+        "toelichting": "Sluit aan bij de roep om gerechtigheid in Sefanja 2:3. 'Trek geen partij voor arm of rijk' (v1).",
+        "suggestie_gebruik": "Wet of leefregel"
+      },
+      {
+        "nummer": "552",
+        "bundel": "Weerklank",
+        "titel": "Toen ik naar mijn naaste zocht",
+        "eerste_regel": "Toen ik naar mijn naaste zocht,",
+        "type_match": "Contextueel",
+        "karakter": "Confronterend",
+        "toelichting": "Vertaalt de zaligsprekingen naar concrete diaconale vragen. 'Ik was naakt en had geen geld, waar was jij?' (v2).",
+        "suggestie_gebruik": "Lied bij de inzameling van de gaven"
+      },
+      {
+        "nummer": "452",
+        "bundel": "Weerklank",
+        "titel": "Lof zij de Heer, de almachtige koning der ere",
+        "eerste_regel": "Lof zij de Heer, de almachtige koning der ere.",
+        "type_match": "Liturgisch",
+        "karakter": "Majestueus",
+        "toelichting": "Een klassiek loflied dat past bij de liturgische esthetiek van de ELGU. 'Lof zij de Heer die uw lichaam zo schoon heeft geweven' (v3).",
+        "suggestie_gebruik": "Gloria-lied"
+      },
+      {
+        "nummer": "356",
+        "bundel": "Weerklank",
+        "titel": "Ga met God en Hij zal met je zijn",
+        "eerste_regel": "Ga met God en Hij zal met je zijn.",
+        "type_match": "Liturgisch",
+        "karakter": "Zegenend",
+        "toelichting": "Een bemoedigende afsluiting voor de gemeente die als 'nederig volk' de wereld weer in gaat.",
         "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "67",
+        "bundel": "Weerklank",
+        "titel": "Het zaad zal vruchten dragen",
+        "eerste_regel": "Het zaad zal vruchten dragen",
+        "type_match": "Seizoen",
+        "karakter": "Hoopvol",
+        "toelichting": "Past bij de zomertijd en de thematiek van groei in het verborgene. 'Al wat ik zaai in zwakheid verrijst door God in kracht' (v3).",
+        "suggestie_gebruik": "Antwoordlied"
+      },
+      {
+        "nummer": "239",
+        "bundel": "Weerklank",
+        "titel": "In Christus is noch west noch oost",
+        "eerste_regel": "In Christus is noch west noch oost",
+        "type_match": "Contextueel",
+        "karakter": "Verbindend",
+        "toelichting": "Sluit aan bij de internationale context van Utrecht (expats/studenten). 'Eén wordt de mensheid door zijn troost' (v1).",
+        "suggestie_gebruik": "Gemeenschapslied"
+      },
+      {
+        "nummer": "283",
+        "bundel": "Weerklank",
+        "titel": "Here Jezus, om uw stem te horen",
+        "eerste_regel": "Here Jezus, om uw stem te horen,",
+        "type_match": "Liturgisch",
+        "karakter": "Verstild",
+        "toelichting": "Bereidt de gemeente voor op de 'wijsheid' van de Bergrede door zelf te zwijgen en te luisteren.",
+        "suggestie_gebruik": "Lied voor de opening van het Woord"
       }
     ],
     "weerklank_psalmen": [
       {
         "nummer": "146",
-        "bundel": "WeerklankPsalmen",
+        "bundel": "WeerklankPsalm",
         "titel": "Ik wil zingen al mijn dagen",
-        "eerste_regel": "Ik wil zingen al mijn dagen: Halleluja, prijs de Heer.",
+        "eerste_regel": "Ik wil zingen al mijn dagen:",
         "type_match": "Schriftlezing",
-        "karakter": "Loflied - ritmisch",
-        "toelichting": "De psalm van de dag. Vers 5 en 6 noemen de armen, hongerigen, gevangenen en blinden; precies de groepen die Jezus in zijn Bergrede centraal stelt.",
-        "suggestie_gebruik": "Intochtslied"
-      },
-      {
-        "nummer": "131",
-        "bundel": "WeerklankPsalmen",
-        "titel": "O HEER, er is geen trots in mij",
-        "eerste_regel": "O HEER, er is geen trots in mij, ik houd mijn hart van hoogmoed vrij,",
-        "type_match": "Schriftlezing",
-        "karakter": "Verstild - nederig",
-        "toelichting": "De volmaakte verklanking van Sefanja 3:12 over het 'nederige en arme volk'. Het beeld van het 'gespeende kind' (couplet 2) toont de rust van wie op God vertrouwt.",
-        "suggestie_gebruik": "Lied na de eerste lezing"
+        "karakter": "Lofprijzend",
+        "toelichting": "Directe psalm van de zondag. 'Zalig hij die in dit leven Jakobs God tot helper heeft' (v3).",
+        "suggestie_gebruik": "Psalm van de zondag"
       },
       {
         "nummer": "41a",
-        "bundel": "WeerklankPsalmen",
+        "bundel": "WeerklankPsalm",
         "titel": "Zalig de mens, die denkt aan armen",
-        "eerste_regel": "Zalig de mens, die denkt aan armen, in liefde naast hen staat!",
+        "eerste_regel": "Zalig de mens, die denkt aan armen,",
         "type_match": "Thematisch",
-        "karakter": "Onderwijzend - bemoedigend",
-        "toelichting": "Verbindt de 'zalig'-spreuk direct met de zorg voor de armen. Dit sluit aan bij de diaconale roeping van de gemeente Utrecht.",
-        "suggestie_gebruik": "Diaconaal lied"
+        "karakter": "Diaconaal",
+        "toelichting": "Verbindt de 'Zalig'-spreuken met de zorg voor de naaste. 'Hij ondervindt ook Gods erbarmen' (v1).",
+        "suggestie_gebruik": "Antwoordlied"
       },
       {
-        "nummer": "1",
-        "bundel": "WeerklankPsalmen",
-        "titel": "Welzalig de man",
-        "eerste_regel": "Welzalig de man, die niet wandelt in de raad der goddelozen.",
+        "nummer": "130",
+        "bundel": "WeerklankPsalm",
+        "titel": "Uit diepten van ellende",
+        "eerste_regel": "Uit diepten van ellende",
+        "type_match": "Contextueel",
+        "karakter": "Smeekbede",
+        "toelichting": "Past bij de actualiteit van de aardverschuiving. 'Heer, neig tot mij uw oren en wil mijn klacht verstaan' (v1).",
+        "suggestie_gebruik": "Kyrie-psalm"
+      }
+    ],
+    "sela": [
+      {
+        "nummer": "27",
+        "bundel": "Sela",
+        "titel": "Wees verheugd",
+        "bron": "Sela",
+        "eerste_regel": "Jezus ik ben arm;",
+        "type_match": "Schriftlezing",
+        "karakter": "Eerlijk en verlangend",
+        "toelichting": "Een indringende parafrase van de zaligsprekingen. 'Jezus ik ben arm; ik ben arm zonder U' verwoordt de 'armen van geest'.",
+        "suggestie_gebruik": "Meditatief lied na de preek"
+      },
+      {
+        "nummer": "101",
+        "bundel": "Sela",
+        "titel": "De minsten van de mensen",
+        "bron": "Sela",
+        "eerste_regel": "Wij zingen van die wonderlijke nacht,",
         "type_match": "Thematisch",
-        "karakter": "Wijsheidslied - klassiek",
-        "toelichting": "Psalm 1 als fundament voor de Bergrede. Het contrast tussen de 'boom aan waterstromen' en het 'kaf' (couplet 1) verduidelijkt de keuze voor Gods weg.",
-        "suggestie_gebruik": "Intochtslied"
+        "karakter": "Verhalend",
+        "toelichting": "Benadrukt Gods voorkeur voor de 'minsten'. 'Leer ons groeien, Heer, in kleiner zijn' is een gebed om de gezindheid van Christus.",
+        "suggestie_gebruik": "Lied over discipelschap"
+      },
+      {
+        "nummer": "131",
+        "bundel": "Sela",
+        "titel": "Hemelse gave",
+        "bron": "Sela",
+        "eerste_regel": "Hij zoekt ons op als wij verdwaald zijn.",
+        "type_match": "Thematisch",
+        "karakter": "Dankbaar",
+        "toelichting": "Sluit aan bij de omkering: 'Al zijn we arm, Hij maakt ons rijk' (v2).",
+        "suggestie_gebruik": "Avondmaalslied"
+      },
+      {
+        "nummer": "134",
+        "bundel": "Sela",
+        "titel": "God zal voor ons zorgen",
+        "bron": "Sela",
+        "eerste_regel": "Voor de wezen is Hij een vader,",
+        "type_match": "Schriftlezing",
+        "karakter": "Troostrijk",
+        "toelichting": "Echo van Psalm 146: 'Voor de wezen is Hij een vader, voor de weduwe een hoofd van het gezin'.",
+        "suggestie_gebruik": "Vertrouwenslied"
+      },
+      {
+        "nummer": "104",
+        "bundel": "Sela",
+        "titel": "God keert alles om",
+        "bron": "Sela",
+        "eerste_regel": "God keert alles om en brengt de hemel hier.",
+        "type_match": "Thematisch",
+        "karakter": "Krachtig",
+        "toelichting": "De centrale belofte van het Koninkrijk. 'God keert alles om en is in zwakheid sterk'.",
+        "suggestie_gebruik": "Geloofsbelijdenis-lied"
+      },
+      {
+        "nummer": "18",
+        "bundel": "Sela",
+        "titel": "Heer ontferm U over ons",
+        "bron": "Sela",
+        "eerste_regel": "Heer, laat er méér ontferming zijn,",
+        "type_match": "Liturgisch",
+        "karakter": "Smeekgebed",
+        "toelichting": "Kyrie-gebed dat vraagt om bewogenheid met de 'behoeftige, arme en kwetsbare' (v3).",
+        "suggestie_gebruik": "Kyrie"
+      },
+      {
+        "nummer": "232",
+        "bundel": "Sela",
+        "titel": "De schepping zucht",
+        "bron": "Schrijvers voor Gerechtigheid",
+        "eerste_regel": "De schepping zucht.",
+        "type_match": "Contextueel",
+        "karakter": "Rauwe hoop",
+        "toelichting": "Verbindt de nood van de aarde (aardverschuiving) met de hoop op Gods rijk. 'Wanneer is de mens gelukkig met genoeg?'",
+        "suggestie_gebruik": "Gebed voor de wereld"
+      },
+      {
+        "nummer": "171",
+        "bundel": "Sela",
+        "titel": "Vul ons met uw liefde",
+        "bron": "Sela",
+        "eerste_regel": "Achter onze schone schijn,",
+        "type_match": "Thematisch",
+        "karakter": "Eerlijk",
+        "toelichting": "Vraagt om echtheid in plaats van 'schone schijn', passend bij de 'zuiveren van hart' uit Matteüs 5.",
+        "suggestie_gebruik": "Verootmoediging"
+      }
+    ],
+    "oke4kids": [
+      {
+        "nummer": "976",
+        "bundel": "Oke4Kids",
+        "titel": "Gelukkig",
+        "credits": "Tekst & Muziek: Rikkert Zuiderveld",
+        "eerste_regel": "Je bent gelukkig",
+        "type_match": "Schriftlezing",
+        "karakter": "Helder en begrijpelijk",
+        "toelichting": "De Zaligsprekingen op kindermaat. 'Je bent gelukkig als je heel eenvoudig leeft'.",
+        "suggestie_gebruik": "Kinderlied"
+      },
+      {
+        "nummer": "186",
+        "bundel": "Oke4Kids",
+        "titel": "Niet zo belangrijk",
+        "credits": "Tekst & Muziek: Marcel Zimmer",
+        "eerste_regel": "Wie denkt dat de allergrootste",
+        "type_match": "Thematisch",
+        "karakter": "Vrolijk en leerzaam",
+        "toelichting": "Thematiseert de 'omgekeerde wereld' waar klein groot is. 'Vind jezelf niet zo belangrijk'.",
+        "suggestie_gebruik": "Kinderlied"
+      },
+      {
+        "nummer": "289",
+        "bundel": "Oke4Kids",
+        "titel": "8. Alles is anders",
+        "credits": "Muziek: Lee Ann Vermeulen",
+        "eerste_regel": "wie is arm en wie is rijk",
+        "type_match": "Thematisch",
+        "karakter": "Verrassend",
+        "toelichting": "Gods perspectief is anders dan dat van mensen. 'Alles is anders in de ogen van God'.",
+        "suggestie_gebruik": "Kinderlied"
+      },
+      {
+        "nummer": "1278",
+        "bundel": "Oke4Kids",
+        "titel": "Weinig is veel",
+        "credits": "Tekst: Roeland Smith, Menno van der Beek, Muziek: Hanne de Vries",
+        "eerste_regel": "Weinig is veel in de handen van Jezus,",
+        "type_match": "Thematisch",
+        "karakter": "Bemoedigend",
+        "toelichting": "Over de kracht van kleine gebaren, passend bij de 'zachtmoedigen' en 'barmhartigen'.",
+        "suggestie_gebruik": "Kinderlied"
+      },
+      {
+        "nummer": "111",
+        "bundel": "Oke4Kids",
+        "titel": "SuperSem",
+        "credits": "Tekst & Muziek: Elly Zuiderveld-Nieman",
+        "eerste_regel": "Ken je Sem, kleine Sem?",
+        "type_match": "Verrassend",
+        "karakter": "Verhalend",
+        "toelichting": "Een lied over een kleine jongen die een held wordt, als metafoor voor hoe God de kleinen verhoogt.",
+        "suggestie_gebruik": "Kinderlied"
       }
     ]
   },
