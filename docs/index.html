@@ -2239,6 +2239,7 @@
             '24_preek_gardner_taylor': 'Preekschets (eloquent)',
             '25_preek_kosuke_koyama': 'Preekschets (contextueel)',
             '26_preek_fleming_rutledge': 'Preekschets (apocalyptisch)',
+            '27_preek_drewermann': 'Preekschets (psychologisch)',
             '22_midjourney_prompts': 'Beeldgeneratie (prompts)',
             'Bijbelteksten': 'Bijbelteksten'
         };
@@ -2440,7 +2441,7 @@
                 return 'nav-group-liturgische-elementen';
             }
             // Groep 7: Preekschetsen
-            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge'].includes(key)) {
+            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge', '27_preek_drewermann'].includes(key)) {
                 return 'nav-group-preekschetsen';
             }
             // Groep 8: Beeldgeneratie
@@ -2474,7 +2475,7 @@
                  '08b_liedsuggesties_database', '08_liedsuggesties_database'].includes(key)) {
                 return 'Liturgische Elementen';
             }
-            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge'].includes(key)) {
+            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge', '27_preek_drewermann'].includes(key)) {
                 return 'Preekschetsen';
             }
             if (['22_midjourney_prompts'].includes(key)) {
@@ -2644,8 +2645,9 @@
                 '24_preek_gardner_taylor': '37',
                 '25_preek_kosuke_koyama': '38',
                 '26_preek_fleming_rutledge': '39',
+                '27_preek_drewermann': '40',
 
-                '22_midjourney_prompts': '40'
+                '22_midjourney_prompts': '41'
             };
 
             // Create section number map for sorting
@@ -3000,7 +3002,7 @@
                             subSectionLabels[subKey] = labelMap[subKey];
                         }
                     });
-                } else if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge'].includes(key)) {
+                } else if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge', '27_preek_drewermann'].includes(key)) {
                     // Special handling for Preekschetsen - show preek_onderdelen in submenu
                     if (sectionData.preek_onderdelen) {
                         const onderdelen = sectionData.preek_onderdelen;
@@ -3023,6 +3025,11 @@
                                 }
                             }
                         }
+                    } else if (sectionData.preek_inhoud && typeof sectionData.preek_inhoud === 'string') {
+                        // Alternative structure: direct fields with preek_inhoud string (like 27_preek_drewermann)
+                        const subKey = 'preek_tekst';
+                        subSections.push(subKey);
+                        subSectionLabels[subKey] = sectionData.titel || 'Preektekst';
                     }
                 } else if (key === '08b_liedsuggesties_database' || key === '08_liedsuggesties_database') {
                     // Special handling for Liedsuggesties - provide custom labels for liedboeken
@@ -3172,7 +3179,7 @@
                 contentHtml = renderBijbeltekstenSection(dataToRender);
             } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch' || key === '14_gebeden_eenvoudig') {
                 contentHtml = renderGebedenSection(dataToRender, key);
-            } else if (key === '16_preek_solle' || key === '17_preek_jungel' || key === '18_preek_brueggemann' || key === '18b_preek_brueggemann_poet' || key === '19_preek_noordmans' || key === '20_preek_peterson' || key === '21_preek_zornberg' || key === '23_preek_literair' || key === '24_preek_gardner_taylor' || key === '25_preek_kosuke_koyama' || key === '26_preek_fleming_rutledge') {
+            } else if (key === '16_preek_solle' || key === '17_preek_jungel' || key === '18_preek_brueggemann' || key === '18b_preek_brueggemann_poet' || key === '19_preek_noordmans' || key === '20_preek_peterson' || key === '21_preek_zornberg' || key === '23_preek_literair' || key === '24_preek_gardner_taylor' || key === '25_preek_kosuke_koyama' || key === '26_preek_fleming_rutledge' || key === '27_preek_drewermann') {
                 contentHtml = renderPreekschetsSection(dataToRender, key);
             } else if (key === '13b_homiletische_illustraties') {
                 contentHtml = renderIllustratiesSection(dataToRender);
@@ -3286,6 +3293,10 @@
                 '26_preek_fleming_rutledge': {
                     url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Fleming Rutledge_Homiletiek.md',
                     title: 'Fleming Rutledge Homiletiek - achtergrond'
+                },
+                '27_preek_drewermann': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Eugen_Drewermann_Homiletiek.md',
+                    title: 'Eugen Drewermann Homiletiek - achtergrond'
                 },
                 '22_midjourney_prompts': {
                     url: 'https://www.midjourney.com/explore?tab=hot',
@@ -5909,6 +5920,72 @@
             // Render preek_onderdelen
             if (data.preek_onderdelen) {
                 html += renderPreekOnderdelen(data.preek_onderdelen, sectionKey);
+            } else if (data.preek_inhoud && typeof data.preek_inhoud === 'string') {
+                // Alternative structure: direct fields with preek_inhoud string (like 27_preek_drewermann)
+                html += `<div id="section-${sectionKey}-preek_tekst" class="subsection-anchor"></div>`;
+                html += `<div class="preek-card" style="margin-top: 30px;">`;
+
+                // Therapeutische beweging (specific to Drewermann)
+                if (data.therapeutische_beweging) {
+                    html += `<div class="data-item" style="margin-bottom: 20px; background: var(--bg-tertiary); padding: 15px; border-radius: 8px;">`;
+                    html += `<div class="data-label">Therapeutische beweging</div>`;
+                    html += `<div class="data-value" style="font-style: italic; color: var(--accent);">${processText(data.therapeutische_beweging)}</div>`;
+                    html += `</div>`;
+                }
+
+                // Centrale beelden
+                if (data.centrale_beelden && Array.isArray(data.centrale_beelden) && data.centrale_beelden.length > 0) {
+                    html += `<div class="data-item" style="margin-bottom: 20px;">`;
+                    html += `<div class="data-label">Centrale beelden</div>`;
+                    html += `<div class="tag-list">`;
+                    data.centrale_beelden.forEach(beeld => {
+                        html += `<span class="tag">${processText(beeld)}</span>`;
+                    });
+                    html += `</div>`;
+                    html += `</div>`;
+                }
+
+                // Gebruikte bronnen (specific to Drewermann)
+                if (data.gebruikte_bronnen && typeof data.gebruikte_bronnen === 'object') {
+                    html += `<div class="data-item" style="margin-bottom: 20px;">`;
+                    html += `<div class="data-label">Gebruikte bronnen</div>`;
+                    html += `<div class="data-value">`;
+                    for (const [key, value] of Object.entries(data.gebruikte_bronnen)) {
+                        html += `<div style="margin-bottom: 8px;"><strong>${formatKey(key)}:</strong> ${processText(value)}</div>`;
+                    }
+                    html += `</div>`;
+                    html += `</div>`;
+                }
+
+                // Politiek-profetisch moment (specific to Drewermann)
+                if (data.politiek_profetisch_moment) {
+                    html += `<div class="data-item" style="margin-bottom: 20px;">`;
+                    html += `<div class="data-label">Politiek-profetisch moment</div>`;
+                    html += `<div class="data-value">${processText(data.politiek_profetisch_moment)}</div>`;
+                    html += `</div>`;
+                }
+
+                // Gebruikte illustraties
+                if (data.gebruikte_illustraties && Array.isArray(data.gebruikte_illustraties) && data.gebruikte_illustraties.length > 0) {
+                    html += `<div class="data-item" style="margin-bottom: 20px;">`;
+                    html += `<div class="data-label">Gebruikte illustraties</div>`;
+                    html += `<ul style="margin: 5px 0; padding-left: 20px;">`;
+                    data.gebruikte_illustraties.forEach(ill => {
+                        html += `<li>${processText(ill)}</li>`;
+                    });
+                    html += `</ul>`;
+                    html += `</div>`;
+                }
+
+                // Main preek text
+                if (data.preek_inhoud) {
+                    html += `<div class="data-item" style="margin-top: 30px;">`;
+                    html += `<div class="data-label">Preektekst</div>`;
+                    html += `<div class="preek-tekst" style="margin-top: 15px; line-height: 1.8; white-space: pre-wrap;">${processText(data.preek_inhoud)}</div>`;
+                    html += `</div>`;
+                }
+
+                html += `</div>`;
             }
 
             // Render kernwoorden
