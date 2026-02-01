@@ -2188,8 +2188,10 @@
             { file: "Ameide_1_feb_2026.json", label: "Ameide (1 februari 2026, Sionkerk)" },
             { file: "Utrecht_1_feb_2026.json", label: "Utrecht (1 februari 2026, Lutherse Kerk)" },
             { file: "Kapelle_1_feb_2026.json", label: "Kapelle (1 februari 2026, Hervormde Gemeente)" },
-
-            { file: "Rotterdam_8_feb_2026.json", label: "Rotterdam (8 februari 2026, Oude Kerk Charlois)" }
+            
+            { file: "Rotterdam_8_feb_2026.json", label: "Rotterdam (8 februari 2026, Oude Kerk Charlois)" },
+            { file: "Woerden_8_feb_2026.json", label: "Woerden (8 februari 2026, Maranathakerk)" },
+            { file: "Willemstad_8_feb_2026.json", label: "Willemstad (8 februari 2026, Koepelkerk)" }
 
         ];
 
@@ -5933,6 +5935,14 @@
                     html += `</div>`;
                 }
 
+                // Theologische focus (specific to Drewermann)
+                if (data.theologische_focus) {
+                    html += `<div class="data-item" style="margin-bottom: 20px; background: var(--bg-tertiary); padding: 15px; border-radius: 8px;">`;
+                    html += `<div class="data-label">Theologische focus</div>`;
+                    html += `<div class="data-value" style="font-weight: 500; color: var(--accent);">${processText(data.theologische_focus)}</div>`;
+                    html += `</div>`;
+                }
+
                 // Centrale beelden
                 if (data.centrale_beelden && Array.isArray(data.centrale_beelden) && data.centrale_beelden.length > 0) {
                     html += `<div class="data-item" style="margin-bottom: 20px;">`;
@@ -5977,15 +5987,17 @@
                     html += `</div>`;
                 }
 
-                // Main preek text
+                html += `</div>`;
+
+                // Main preek text - render as separate card like other preekschetsen
                 if (data.preek_inhoud) {
-                    html += `<div class="data-item" style="margin-top: 30px;">`;
-                    html += `<div class="data-label">Preektekst</div>`;
-                    html += `<div class="preek-tekst" style="margin-top: 15px; line-height: 1.8; white-space: pre-wrap;">${processText(data.preek_inhoud)}</div>`;
+                    html += `<div class="gebed-card" style="margin-top: 30px;">`;
+                    html += `<div class="gebed-card-header">`;
+                    html += `<span class="gebed-aanspraak">Preektekst</span>`;
+                    html += `</div>`;
+                    html += `<div class="gebed-tekst">${processText(data.preek_inhoud)}</div>`;
                     html += `</div>`;
                 }
-
-                html += `</div>`;
             }
 
             // Render kernwoorden
@@ -7159,7 +7171,7 @@
 
              if (jsonFiles.length > 0) {
                  // Set the selector to the third file by default
-                 const defaultFile = jsonFiles[9].file;
+                 const defaultFile = jsonFiles[12].file;
                  fileSelector.value = defaultFile;
                  loadFile(defaultFile);
              }
