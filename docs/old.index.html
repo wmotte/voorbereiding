@@ -2133,7 +2133,7 @@
             </div>
         </div>
         <div class="header-update-banner">
-            📚 Bekijk hier <a href="https://wmotte.github.io/voorbereiding/old.index.html" target="_blank" style="color: inherit; text-decoration: underline;">oudere preekschetsen</a>.
+            ⚡ UPDATE 10 januari 2026: ⚡ Elke maandagochtend verschijnt hier, Deo Volente, een contextuele analyse - gegeven de lezingen uit het oecumenisch leesrooster voor de komende zondag - voor een, twee of drie willekeurige PKN-gemeenten.
         </div>
     </header>
 
@@ -2175,70 +2175,86 @@
         // List of available JSON files
         const jsonFiles = [
             
-            { file: "Vlissingen_15_februari_2026.json", label: "Vlissingen (15 februari 2026, PG)" }
+            { file: "Den_Haag_28_dec_2025.json", label: "Den Haag (28 december 2025, De Kloosterkerk)" },
+            { file: "Waddinxveen_31_dec_2025.json", label: "Waddinxveen (31 december 2025, De Morgenster)" },
+            { file: "Barneveld_11_jan_2026.json", label: "Barneveld (11 januari 2026, Pniëlkerk (HHK))" }, 
+	        { file: "Doornspijk_18_jan_2026.json", label: "Doornspijk (18 januari 2026, Hervormde Gemeente)" },
+	        { file: "Tholen_18_jan_2026.json", label: "Tholen (18 januari 2026, Onze Lieve Vrouwekerk)" },
+	        { file: "Amsterdam_18_jan_2026.json", label: "Amsterdam (18 januari 2026, Noorderkerk" },
+
+            { file: "Den_Ham_25_jan_2026.json", label: "Den Ham (25 januari 2026, Hervormde Gemeente)" },
+            { file: "Amsterdam_25_jan_2026.json", label: "Amsterdam (25 januari 2026, Jeruzalemkerk)" },
+
+            { file: "Ameide_1_feb_2026.json", label: "Ameide (1 februari 2026, Sionkerk)" },
+            { file: "Utrecht_1_feb_2026.json", label: "Utrecht (1 februari 2026, Lutherse Kerk)" },
+            { file: "Kapelle_1_feb_2026.json", label: "Kapelle (1 februari 2026, Hervormde Gemeente)" },
+            
+            { file: "Rotterdam_8_feb_2026.json", label: "Rotterdam (8 februari 2026, Oude Kerk Charlois)" },
+            { file: "Woerden_8_feb_2026.json", label: "Woerden (8 februari 2026, Maranathakerk)" },
+            { file: "Willemstad_8_feb_2026.json", label: "Willemstad (8 februari 2026, Koepelkerk)" }
+
         ];
 
         // Section titles mapping
         const sectionTitles = {
-         
-            //'xx_homiletische_fundering_chapell': 'Chapells expositie',
-            //'xx_klassieke_retorica': 'Retorische insteek',
-            "00_meta": 'Metadata',
-            "01_liturgisch_jaar": 'Kerkelijk jaar',
-            "Bijbelteksten": 'Bijbelteksten', 
-            "02_bijbelteksten": 'Bijbelteksten',
-            "03_sociaal_maatschappelijk": 'Sociaal-maatschappelijk',
-            "04_waardenorientatie": 'Waardenoriëntatie',
-            "05_geloofsorientatie": 'Geloofsoriëntatie',
-            "06_synthese": 'Interpretatieve synthese',
-            "07_wereldnieuws": 'Actueel wereldnieuws',
-            "08_politiek": 'Politieke oriëntatie',
-            "09_liedsuggesties": 'Passende liederen',
-            "10_structuralistische_exegese": 'Structuralistische exegese',
-            "11_commentaries": 'Algemene inzichten',
-            "12_theology": 'Theologie',
-            "13_focus_en_functie": 'Focus & functie',
-            "14_representatieve_hoorders": 'Representatieve hoorders',
-            "15_homiletische_lowry": 'Lowry\u2019s loop',
-            "16_homiletische_buttrick": 'Moves & structures',
-            "17_homiletische_illustraties":  'Illustraties',
-            "18_kunst_cultuur": 'Kunst & cultuur',
-            "19_preek_jungel": 'Preekschets (theologisch)',
-            "20_preek_fleming_rutledge": 'Preekschets (apocalyptisch)',
-            "21_feedback_jungel": 'Feedback (theologisch)',
-            "22_feedback_rutledge": 'Feedback (apocalyptisch)',
-            "23_rewrite_jungel": 'Preekschets (theologisch (2))',
-            "24_rewrite_rutledge": 'Preekschets (apocalyptisch (2))',
-            "25_preek_brueggemann_poet": 'Preekschets (poëtisch)',
-            "26_preek_literair": 'Preekschets (literair)',
-            "27_preek_noordmans": 'Preekschets (kritisch)',
-            "28_preek_kosuke_koyama": 'Preekschets (contextueel)',
-            "29_preek_zornberg": 'Preekschets (rabbijns)',
-            "30_preek_brueggemann": 'Preekschets (profetisch)', 
-            "31_preek_drewermann": 'Preekschets (psychologisch)',
-            "32_preek_gardner_taylor": 'Preekschets (eloquent)', 
-            "33_preek_solle": 'Preekschets (solidair)',
-            "34_preek_peterson": 'Preekschets (aards)', 
-            "35_midjourney_prompts": 'Midjourney prompts', 
-            "36_gebeden": 'Gebeden (klassiek)', 
-            "37_gebeden_profetisch": 'Gebeden (profetisch)',
-            "38_gebeden_dialogisch": 'Gebeden (dialogisch)',
-            "39_gebeden_eenvoudig": 'Gebeden (B1-niveau)',
-            "40_kindermoment": 'Kindermoment',
-            "41_wetslezing": 'Wetslezing',
-            "42_kalender": 'Kalender'
-            //'43_bezinningsmoment': 'Moment van bezinning',
+            '00_meta': 'Metadata',
+            '01_zondag_kerkelijk_jaar': 'Kerkelijk jaar',
+            '01b_zondag_kerkelijk_jaar_eigen_lezing': 'Kerkelijk jaar (eigen tekst)',
+            '02_sociaal_maatschappelijke_context': 'Sociaal-maatschappelijk',
+            '03_waardenorientatie': 'Waardenoriëntatie',
+            '04_geloofsorientatie': 'Geloofsoriëntatie',
+            '05_interpretatieve_synthese': 'Interpretatieve synthese',
+            '06_actueel_wereldnieuws': 'Actueel wereldnieuws',
+            '07_politieke_orientatie': 'Politieke oriëntatie',
+            '07a_wetslezing_voorstel': 'Wetslezing',
+            '08a_exegese': 'Structuralistische exegese',
+            
+            '08c_commentaries': 'Commentarenwijsheid',
+            '08d_theology': 'Theologie',
+            '08b_liedsuggesties_database': 'Passende liederen',
+            '08_liedsuggesties_database': 'Passende liederen',
+            '09_kunst_cultuur': 'Kunst & cultuur',
+            '10_focus_en_functie': 'Focus & functie',
+            '11_kalender': 'Kalender',
+            '12_representatieve_hoorders': 'Representatieve hoorders',
+            
+            '13_homiletische_analyse': 'Lowry\u2019s loop',
+            '13_homiletische_analyse_buttrick': 'Moves & structures',
+            '13b_homiletische_illustraties': 'Homiletische illustraties',
+            '13c_homiletische_fundering_chapell': 'Chapells expositie',
+
+            '14_klassieke_retorica': 'Retorische insteek',
+            '14_gebeden': 'Gebeden (klassiek)',
+            '14_gebeden_profetisch': 'Gebeden (profetisch)',
+            '14_gebeden_dialogisch': 'Gebeden (dialogisch)',
+            '14_gebeden_eenvoudig': 'Gebeden (B1-niveau)',
+            '15_kindermoment': 'Kindermoment',
+            '15_bezinningsmoment': 'Moment van bezinning',
+            '16_preek_solle': 'Preekschets (solidair)',
+            '17_preek_jungel': 'Preekschets (theologisch)',
+            '18_preek_brueggemann': 'Preekschets (profetisch)',
+            '18b_preek_brueggemann_poet': 'Preekschets (poëtisch)',
+            '19_preek_noordmans': 'Preekschets (kritisch)',
+            '20_preek_peterson': 'Preekschets (aards)',
+            '21_preek_zornberg': 'Preekschets (rabbijns)',
+            '23_preek_literair': 'Preekschets (literair)',
+            '24_preek_gardner_taylor': 'Preekschets (eloquent)',
+            '25_preek_kosuke_koyama': 'Preekschets (contextueel)',
+            '26_preek_fleming_rutledge': 'Preekschets (apocalyptisch)',
+            '27_preek_drewermann': 'Preekschets (psychologisch)',
+            '22_midjourney_prompts': 'Beeldgeneratie (prompts)',
+            'Bijbelteksten': 'Bijbelteksten'
         };
 
         // Load section info
         async function loadSectionInfo() {
             try {
-                const response = await fetch('section_info.json');
+                const response = await fetch('old.section_info.json');
                 if (response.ok) {
                     sectionInfo = await response.json();
                 }
             } catch (err) {
-                console.error('Could not load section_info.json:', err);
+                console.error('Could not load old.section_info.json:', err);
             }
         }
         loadSectionInfo();
@@ -2388,12 +2404,12 @@
 
         // Helper function to check if key is a kerkelijk jaar section
         function isKerkelijkJaarSection(key) {
-            return key === '01_liturgisch_jaar' || key === '01_zondag_kerkelijk_jaar' || key === '01b_zondag_kerkelijk_jaar_eigen_lezing';
+            return key === '01_zondag_kerkelijk_jaar' || key === '01b_zondag_kerkelijk_jaar_eigen_lezing';
         }
 
         // Helper function to get kerkelijk jaar data (checks both 01 and 01b)
         function getKerkelijkJaarData() {
-            return jsonData['01_liturgisch_jaar'] || jsonData['01b_zondag_kerkelijk_jaar_eigen_lezing'] || jsonData['01_zondag_kerkelijk_jaar'];
+            return jsonData['01b_zondag_kerkelijk_jaar_eigen_lezing'] || jsonData['01_zondag_kerkelijk_jaar'];
         }
 
         // Determine menu group class based on section key
@@ -2403,39 +2419,35 @@
                 return 'nav-group-liturgisch';
             }
             // Groep 2: Contextueel
-            if (['03_sociaal_maatschappelijk', '04_waardenorientatie', '05_geloofsorientatie',
-                 '06_synthese', '07_wereldnieuws', '08_politiek'].includes(key)) {
+            if (['02_sociaal_maatschappelijke_context', '03_waardenorientatie', '04_geloofsorientatie',
+                 '05_interpretatieve_synthese', '06_actueel_wereldnieuws', '07_politieke_orientatie'].includes(key)) {
                 return 'nav-group-contextueel';
             }
             // Groep 3: Exegese
-            if (['10_structuralistische_exegese', '11_commentaries', '12_theology'].includes(key)) {
+            if (key === '08a_exegese' || key === '08_exegese' || key === '08c_commentaries' || key === '08d_theology') {
                 return 'nav-group-exegese';
             }
             // Groep 4: Homiletiek
-            if (['13_focus_en_functie', '14_representatieve_hoorders', '15_homiletische_lowry',
-                 '16_homiletische_buttrick', '17_homiletische_illustraties'].includes(key)) {
+            if (['12_representatieve_hoorders', '10_focus_en_functie', '13c_homiletische_fundering_chapell',
+                 '13_homiletische_analyse', '13_homiletische_analyse_buttrick',
+                 '13b_homiletische_illustraties', '14_klassieke_retorica'].includes(key)) {
                 return 'nav-group-homiletiek';
             }
             // Groep 5: Gebeden
-            if (['36_gebeden', '37_gebeden_profetisch', '38_gebeden_dialogisch', '39_gebeden_eenvoudig'].includes(key)) {
+            if (['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch', '14_gebeden_eenvoudig'].includes(key)) {
                 return 'nav-group-gebeden';
             }
             // Groep 6: Liturgische Elementen
-            if (['09_liedsuggesties', '40_kindermoment', '41_wetslezing', '42_kalender', '18_kunst_cultuur'].includes(key)) {
+            if (['07a_wetslezing_voorstel', '15_bezinningsmoment', '15_kindermoment', '09_kunst_cultuur', '11_kalender',
+                 '08b_liedsuggesties_database'].includes(key)) {
                 return 'nav-group-liturgische-elementen';
             }
             // Groep 7: Preekschetsen
-            if (['19_preek_jungel', '20_preek_fleming_rutledge', '25_preek_brueggemann_poet', '26_preek_literair',
-                 '27_preek_noordmans', '28_preek_kosuke_koyama', '29_preek_zornberg', '30_preek_brueggemann',
-                 '31_preek_drewermann', '32_preek_gardner_taylor', '33_preek_solle', '34_preek_peterson'].includes(key)) {
+            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge', '27_preek_drewermann'].includes(key)) {
                 return 'nav-group-preekschetsen';
             }
-            // Groep 8: Feedback & Rewrite
-            if (['21_feedback_jungel', '22_feedback_rutledge', '23_rewrite_jungel', '24_rewrite_rutledge'].includes(key)) {
-                return 'nav-group-homiletiek';
-            }
-            // Groep 9: Beeldgeneratie
-            if (['35_midjourney_prompts'].includes(key)) {
+            // Groep 8: Beeldgeneratie
+            if (['22_midjourney_prompts'].includes(key)) {
                 return 'nav-group-beeldgeneratie';
             }
             return ''; // Default: geen specifieke groep klasse
@@ -2446,33 +2458,30 @@
             if (isKerkelijkJaarSection(key) || key === 'Bijbelteksten') {
                 return 'Liturgisch';
             }
-            if (['03_sociaal_maatschappelijk', '04_waardenorientatie', '05_geloofsorientatie',
-                 '06_synthese', '07_wereldnieuws', '08_politiek'].includes(key)) {
+            if (['02_sociaal_maatschappelijke_context', '03_waardenorientatie', '04_geloofsorientatie',
+                 '05_interpretatieve_synthese', '06_actueel_wereldnieuws', '07_politieke_orientatie'].includes(key)) {
                 return 'Contextueel';
             }
-            if (['10_structuralistische_exegese', '11_commentaries', '12_theology'].includes(key)) {
+            if (key === '08a_exegese' || key === '08_exegese' || key === '08c_commentaries' || key === '08d_theology') {
                 return 'Exegese & Theologie';
             }
-            if (['13_focus_en_functie', '14_representatieve_hoorders', '15_homiletische_lowry',
-                 '16_homiletische_buttrick', '17_homiletische_illustraties'].includes(key)) {
+            if (['12_representatieve_hoorders', '10_focus_en_functie', '13c_homiletische_fundering_chapell',
+                 '13_homiletische_analyse', '13_homiletische_analyse_buttrick',
+                 '13b_homiletische_illustraties', '14_klassieke_retorica'].includes(key)) {
                 return 'Homiletiek';
             }
-            if (['36_gebeden', '37_gebeden_profetisch', '38_gebeden_dialogisch', '39_gebeden_eenvoudig'].includes(key)) {
+            if (['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch', '14_gebeden_eenvoudig'].includes(key)) {
                 return 'Gebeden';
             }
-            if (['09_liedsuggesties', '40_kindermoment', '41_wetslezing', '42_kalender', '18_kunst_cultuur'].includes(key)) {
+            if (['07a_wetslezing_voorstel', '15_bezinningsmoment', '15_kindermoment', '09_kunst_cultuur', '11_kalender',
+                 '08b_liedsuggesties_database', '08_liedsuggesties_database'].includes(key)) {
                 return 'Liturgische Elementen';
             }
-            if (['19_preek_jungel', '20_preek_fleming_rutledge', '25_preek_brueggemann_poet', '26_preek_literair',
-                 '27_preek_noordmans', '28_preek_kosuke_koyama', '29_preek_zornberg', '30_preek_brueggemann',
-                 '31_preek_drewermann', '32_preek_gardner_taylor', '33_preek_solle', '34_preek_peterson'].includes(key)) {
+            if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge', '27_preek_drewermann'].includes(key)) {
                 return 'Preekschetsen';
             }
-            if (['21_feedback_jungel', '22_feedback_rutledge', '23_rewrite_jungel', '24_rewrite_rutledge'].includes(key)) {
-                return 'Feedback & Revisie';
-            }
-            if (['35_midjourney_prompts'].includes(key)) {
-                return 'Beeldgeneratie';
+            if (['22_midjourney_prompts'].includes(key)) {
+                return 'Visuele Ondersteuning';
             }
             return null;
         }
@@ -2516,7 +2525,7 @@
 
             // Build nav and content
             let navHtml = '';
-            const allSections = Object.keys(jsonData).filter(k => k !== '00_meta' && k !== '02_bijbelteksten');
+            const allSections = Object.keys(jsonData).filter(k => k !== '00_meta');
 
             // Check if Bijbelteksten exists
             const hasBijbelteksten = allSections.includes('Bijbelteksten');
@@ -2563,13 +2572,13 @@
             }
             let sortedOtherSections = otherSections.sort(customSectionSort);
 
-            // Custom sort for the 36_gebeden group to ensure 36, 37, 38, 39 order
-            const prayerKeys = ['36_gebeden', '37_gebeden_profetisch', '38_gebeden_dialogisch', '39_gebeden_eenvoudig'];
+            // Custom sort for the 14_gebeden group to ensure 14a, 14b, 14c order
+            const prayerKeys = ['14_gebeden', '14_gebeden_profetisch', '14_gebeden_dialogisch', '14_gebeden_eenvoudig'];
             if (prayerKeys.every(k => sortedOtherSections.includes(k))) {
                 // Remove them from their current positions
                 sortedOtherSections = sortedOtherSections.filter(k => !prayerKeys.includes(k));
-                // Find the index where 36_gebeden would have been or just before 40_kindermoment
-                let insertIndex = sortedOtherSections.findIndex(k => k > '36');
+                // Find the index where 14_gebeden would have been or just before 15_kindermoment
+                let insertIndex = sortedOtherSections.findIndex(k => k > '14');
                 if (insertIndex === -1) insertIndex = sortedOtherSections.length;
                 sortedOtherSections.splice(insertIndex, 0, ...prayerKeys);
             }
@@ -2592,58 +2601,55 @@
 
             // Correct mapping for sorting order
             const keyToSortNum = {
-                '01_liturgisch_jaar': '01',
                 '01_zondag_kerkelijk_jaar': '01',
                 '01b_zondag_kerkelijk_jaar_eigen_lezing': '01',
                 'Bijbelteksten': '02',
 
-                '03_sociaal_maatschappelijk': '03',
-                '04_waardenorientatie': '04',
-                '05_geloofsorientatie': '05',
-                '06_synthese': '06',
-                '07_wereldnieuws': '07',
-                '08_politiek': '08',
+                '02_sociaal_maatschappelijke_context': '03',
+                '03_waardenorientatie': '04',
+                '04_geloofsorientatie': '05',
+                '05_interpretatieve_synthese': '06',
+                '06_actueel_wereldnieuws': '07',
+                '07_politieke_orientatie': '08',
 
-                '10_structuralistische_exegese': '09',
-                '11_commentaries': '10',
-                '12_theology': '11',
+                '08a_exegese': '09',
+                '08c_commentaries': '10',
+                '08d_theology': '10a',
 
-                '13_focus_en_functie': '12',
-                '14_representatieve_hoorders': '13',
-                '15_homiletische_lowry': '14',
-                '16_homiletische_buttrick': '15',
-                '17_homiletische_illustraties': '16',
+                '12_representatieve_hoorders': '11',
+                '10_focus_en_functie': '12',
+                '13_homiletische_analyse': '13',
+                '13_homiletische_analyse_buttrick': '14',
+                '13b_homiletische_illustraties': '15',
+                '13c_homiletische_fundering_chapell': '16',
+                '14_klassieke_retorica': '17',
 
-                '19_preek_jungel': '17',
-                '20_preek_fleming_rutledge': '18',
-                '25_preek_brueggemann_poet': '19',
-                '26_preek_literair': '20',
-                '27_preek_noordmans': '21',
-                '28_preek_kosuke_koyama': '22',
-                '29_preek_zornberg': '23',
-                '30_preek_brueggemann': '24',
-                '31_preek_drewermann': '25',
-                '32_preek_gardner_taylor': '26',
-                '33_preek_solle': '27',
-                '34_preek_peterson': '28',
+                '14_gebeden': '18',
+                '14_gebeden_profetisch': '19',
+                '14_gebeden_dialogisch': '20',
+                '14_gebeden_eenvoudig': '21',
 
-                '21_feedback_jungel': '29',
-                '22_feedback_rutledge': '30',
-                '23_rewrite_jungel': '31',
-                '24_rewrite_rutledge': '32',
+                '07a_wetslezing_voorstel': '22',
+                '15_kindermoment': '23',
+                '15_bezinningsmoment': '24',
+                '09_kunst_cultuur': '25',
+                '11_kalender': '26',
+                '08b_liedsuggesties_database': '27',
 
-                '35_midjourney_prompts': '33',
+                '16_preek_solle': '29',
+                '17_preek_jungel': '30',
+                '18_preek_brueggemann': '31',
+                '18b_preek_brueggemann_poet': '32',
+                '19_preek_noordmans': '33',
+                '20_preek_peterson': '34',
+                '21_preek_zornberg': '35',
+                '23_preek_literair': '36',
+                '24_preek_gardner_taylor': '37',
+                '25_preek_kosuke_koyama': '38',
+                '26_preek_fleming_rutledge': '39',
+                '27_preek_drewermann': '40',
 
-                '36_gebeden': '34',
-                '37_gebeden_profetisch': '35',
-                '38_gebeden_dialogisch': '36',
-                '39_gebeden_eenvoudig': '37',
-
-                '40_kindermoment': '38',
-                '41_wetslezing': '39',
-                '42_kalender': '40',
-                '09_liedsuggesties': '41',
-                '18_kunst_cultuur': '42'
+                '22_midjourney_prompts': '41'
             };
 
             // Create section number map for sorting
@@ -2666,15 +2672,9 @@
                 return numA.localeCompare(numB, undefined, { numeric: true, sensitivity: 'base' });
             });
 
-            // After sorting, assign display numbers based on actual key numbers
+            // After sorting, assign sequential display numbers (1, 2, 3, etc.)
             sections.forEach((key, index) => {
-                // Extract the actual number from the key, or use the sort number
-                if (keyToSortNum[key]) {
-                    sectionNumberMap[key] = keyToSortNum[key];
-                } else {
-                    const numMatch = key.match(/^(\d+)/);
-                    sectionNumberMap[key] = numMatch ? numMatch[1] : String(index + 1);
-                }
+                sectionNumberMap[key] = String(index + 1);
             });
 
             let lastGroupName = null;
@@ -2831,7 +2831,7 @@
                             subSectionLabels[`optie-${optie.nummer || (index + 1)}`] = label;
                         });
                     }
-                } else if (key === '42_kalender') {
+                } else if (key === '11_kalender') {
                     // Special handling for Kalender - show day names/dates
                     if (sectionData.dagen && Array.isArray(sectionData.dagen)) {
                         sectionData.dagen.forEach((dag, index) => {
@@ -2884,7 +2884,7 @@
                         subSections.push('bibliografie');
                         subSectionLabels['bibliografie'] = 'Bibliografie';
                     }
-                } else if (key === '40_kindermoment') {
+                } else if (key === '15_kindermoment') {
                     // Special handling for Kindermoment - show the three kindermoment option titles
                     if (sectionData.kindermoment_opties && Array.isArray(sectionData.kindermoment_opties)) {
                         sectionData.kindermoment_opties.forEach((optie, index) => {
@@ -2896,7 +2896,19 @@
                             subSectionLabels[`kindermoment-${index + 1}`] = label;
                         });
                     }
-                } else if (key === '36_gebeden' || key === '37_gebeden_profetisch' || key === '38_gebeden_dialogisch' || key === '39_gebeden_eenvoudig') {
+                } else if (key === '15_bezinningsmoment') {
+                    // Special handling for Bezinningsmoment - show the options
+                    if (sectionData.kindermoment_opties && Array.isArray(sectionData.kindermoment_opties)) {
+                        sectionData.kindermoment_opties.forEach((optie, index) => {
+                            const titel = optie.titel || `Optie ${index + 1}`;
+                            const type = optie.type ? mapKindermomentType(optie.type) : '';
+                            const label = type ? `${type}: ${titel}` : titel;
+
+                            subSections.push(`kindermoment-${index + 1}`);
+                            subSectionLabels[`kindermoment-${index + 1}`] = label;
+                        });
+                    }
+                } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch' || key === '14_gebeden_eenvoudig') {
                     // Special handling for Gebeden - show specific prayer types
                     const gebeden = sectionData.gebeden || {};
                     const gebedOrder = ['drempelgebed', 'kyrie', 'epiclese', 'dankgebed', 'voorbeden'];
@@ -2992,7 +3004,7 @@
                             subSectionLabels[subKey] = labelMap[subKey];
                         }
                     });
-                } else if (['19_preek_jungel', '20_preek_fleming_rutledge', '32_preek_drewermann', '33_preek_gardner_taylor', '34_preek_solle', '35_preek_peterson'].includes(key)) {
+                } else if (['16_preek_solle', '17_preek_jungel', '18_preek_brueggemann', '18b_preek_brueggemann_poet', '19_preek_noordmans', '20_preek_peterson', '21_preek_zornberg', '23_preek_literair', '24_preek_gardner_taylor', '25_preek_kosuke_koyama', '26_preek_fleming_rutledge', '27_preek_drewermann'].includes(key)) {
                     // Special handling for Preekschetsen - show preek_onderdelen in submenu
                     if (sectionData.preek_onderdelen) {
                         const onderdelen = sectionData.preek_onderdelen;
@@ -3021,7 +3033,7 @@
                         subSections.push(subKey);
                         subSectionLabels[subKey] = sectionData.titel || 'Preektekst';
                     }
-                } else if (key === '08b_liedsuggesties_database' || key === '08_liedsuggesties_database' || key === '09_liedsuggesties') {
+                } else if (key === '08b_liedsuggesties_database' || key === '08_liedsuggesties_database') {
                     // Special handling for Liedsuggesties - provide custom labels for liedboeken
                     const liedboekLabels = {
                         'liedboek_2013': 'Liedboek (2013)',
@@ -3051,7 +3063,7 @@
                             // Skip 'kerkelijke_context' and 'bronnen_gebruikt' in sociaal-maatschappelijke context
                             if ((k === 'kerkelijke_context' || k === 'bronnen_gebruikt') && key === '02_sociaal_maatschappelijke_context') return false;
                             // Only show specific items in Beeldgeneratie (prompts) menu
-                            if (key === '35_midjourney_prompts') {
+                            if (key === '22_midjourney_prompts') {
                                 const allowedFields = ['midjourney_prompts', 'technische_notities'];
                                 return allowedFields.includes(k);
                             }
@@ -3167,9 +3179,9 @@
             // Special handling for Bijbelteksten - render in liturgical order
             if (key === 'Bijbelteksten') {
                 contentHtml = renderBijbeltekstenSection(dataToRender);
-            } else if (key === '36_gebeden' || key === '37_gebeden_profetisch' || key === '38_gebeden_dialogisch' || key === '39_gebeden_eenvoudig') {
+            } else if (key === '14_gebeden' || key === '14_gebeden_profetisch' || key === '14_gebeden_dialogisch' || key === '14_gebeden_eenvoudig') {
                 contentHtml = renderGebedenSection(dataToRender, key);
-            } else if (key === '19_preek_jungel' || key === '20_preek_fleming_rutledge') {
+            } else if (key === '16_preek_solle' || key === '17_preek_jungel' || key === '18_preek_brueggemann' || key === '18b_preek_brueggemann_poet' || key === '19_preek_noordmans' || key === '20_preek_peterson' || key === '21_preek_zornberg' || key === '23_preek_literair' || key === '24_preek_gardner_taylor' || key === '25_preek_kosuke_koyama' || key === '26_preek_fleming_rutledge' || key === '27_preek_drewermann') {
                 contentHtml = renderPreekschetsSection(dataToRender, key);
             } else if (key === '13b_homiletische_illustraties') {
                 contentHtml = renderIllustratiesSection(dataToRender);
@@ -3187,9 +3199,9 @@
                 contentHtml = renderChapellBrug(dataToRender);
             } else if (isKerkelijkJaarSection(key)) {
                 contentHtml = renderObjectWithIds(dataToRender, key);
-            } else if (key === '41_wetslezing') {
+            } else if (key === '07a_wetslezing_voorstel') {
                 contentHtml = renderWetslezingSection(dataToRender, key);
-            } else if (key === '40_kindermoment') {
+            } else if (key === '15_kindermoment' || key === '15_bezinningsmoment') {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             } else {
                 contentHtml = renderObjectWithIds(dataToRender, key);
@@ -3212,87 +3224,85 @@
             // Add info icon for sections with documentation
             let titleHtml = escapeHtml(title);
             const infoLinks = {
-                '13_focus_en_functie': {
-                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Focus_en_Functie.md',
-                    title: 'Focus en Functie - achtergrond'
+                '07a_wetslezing_voorstel': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Wetslezingen.md',
+                    title: 'Wetslezingen - achtergrond'
                 },
-
-                '15_homiletische_lowry': {
+                '13_homiletische_analyse': {
                     url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Lowrys_Homiletical_Plot.md',
                     title: 'Lowry\'s Homiletical Plot - achtergrond'
                 },
-                '16_homiletische_buttrick': {
+                '13_homiletische_analyse_buttrick': {
                     url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Buttricks_Moves_and_Structures.md',
                     title: 'Buttrick\'s Moves and Structures - achtergrond'
                 },
-                
-                '19_preek_jungel': {
-                    url: 'https://github.com/wmotte/jungel/blob/main/misc/Jungels_Theologie_en_Homiletiek_Een_Overzicht.md',
-                    title: 'Jüngel\'s Theologie en Homiletiek - achtergrond'
+                '13c_homiletische_fundering_chapell': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Bryan_Chapells_Expositie_Homiletiek.md',
+                    title: 'Bryan Chapell\'s Expositie Homiletiek - achtergrond'
                 },
-                '20_preek_fleming_rutledge': {
-                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Fleming_Rutledge_Homiletiek.md',
-                    title: 'Fleming Rutledge Homiletiek - achtergrond'
+                '10_focus_en_functie': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Focus_en_Functie.md',
+                    title: 'Focus en Functie - achtergrond'
                 },
-
-
-                
-                '21_feedback_jungel': {
-                    url: 'https://wmotte.github.io/homiletiek_feedback',
-                    title: 'Feedback Homiletiek - achtergrond'
-                },
-                '22_feedback_rutledge': {
-                    url: 'https://wmotte.github.io/homiletiek_feedback',
-                    title: 'Feedback Homiletiek - achtergrond'
-                },
-
-                
-                '23_rewrite_jungel': {
-                    url: 'https://wmotte.github.io/homiletiek_feedback',
-                    title: 'Feedback Homiletiek - achtergrond'
-                },
-                '24_rewrite_rutledge': {
-                    url: 'https://wmotte.github.io/homiletiek_feedback',
-                    title: 'Feedback Homiletiek - achtergrond'
-                },
-
-                '31_preek_drewermann': {
-                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Eugen_Drewermann_Homiletiek.md',
-                    title: 'Eugen Drewermann Homiletiek - achtergrond'
-                },
-                '32_preek_gardner_taylor': {
-                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Gardner_Taylor_homiletiek.md',
-                    title: 'Gardner C. Taylor Homiletiek - achtergrond'
-                },
-                '33_preek_solle': {
-                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Dorothee_Solle_Homiletiek.md',
-                    title: 'Dorothee Sölle Homiletiek - achtergrond'
-                },
-                '34_preek_peterson': {
-                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Eugene_Petersons_Homiletiek.md',
-                    title: 'Eugene Peterson Homiletiek - achtergrond'
-                },
-
-                '35_midjourney_prompts': {
-                    url: 'https://www.midjourney.com/explore?tab=hot',
-                    title: 'Midjourney voorbeelden en inspiratie'
-                },
-                '36_gebeden': {
+                '14_gebeden': {
                     url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Liturgische_Gebeden.md',
                     title: 'Liturgische Gebeden - achtergrond'
                 },
-                '37_gebeden_profetisch': {
+                '14_gebeden_profetisch': {
                     url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Brueggemanns_Gebeden.md',
                     title: 'Brueggemann\'s Gebeden - achtergrond'
                 },
-                '38_gebeden_dialogisch': {
+                '14_gebeden_dialogisch': {
                     url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Andre_Dumas_Dialogisch_Bidden.md',
                     title: 'André Dumas Dialogisch Bidden - achtergrond'
                 },
-
-                '41_wetslezing': {
-                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Wetslezingen.md',
-                    title: 'Wetslezingen - achtergrond'
+                '16_preek_solle': {
+                    url: 'https://github.com/wmotte/solle/blob/main/misc/Solles_Theologie_en_Homiletiek.md',
+                    title: 'Sölle\'s Theologie en Homiletiek - achtergrond'
+                },
+                '17_preek_jungel': {
+                    url: 'https://github.com/wmotte/jungel/blob/main/misc/Jungels_Theologie_en_Homiletiek_Een_Overzicht.md',
+                    title: 'Jüngel\'s Theologie en Homiletiek - achtergrond'
+                },
+                '18_preek_brueggemann': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Finally_comes_the_Poet.md',
+                    title: 'Walter Brueggemann Homiletiek - achtergrond'
+                },
+                '18b_preek_brueggemann_poet': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Finally_comes_the_Poet.md',
+                    title: 'Walter Brueggemann Homiletiek - achtergrond'
+                },
+                '19_preek_noordmans': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Noordmans_Homiletiek.md',
+                    title: 'Noordmans Homiletiek - achtergrond'
+                },
+                '20_preek_peterson': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Eugene_Petersons_Homiletiek.md',
+                    title: 'Peterson Homiletiek - achtergrond'
+                },
+                '21_preek_zornberg': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Zornberg_Methode.md',
+                    title: 'Zornberg Methode - achtergrond'
+                },
+                '24_preek_gardner_taylor': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Gardner_Taylor_homiletiek.md',
+                    title: 'Gardner C. Taylor Homiletiek - achtergrond'
+                },
+                '25_preek_kosuke_koyama': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Kosuke_Koyama_Homiletiek.md',
+                    title: 'Kosuke Koyama Homiletiek - achtergrond'
+                },
+                '26_preek_fleming_rutledge': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Fleming Rutledge_Homiletiek.md',
+                    title: 'Fleming Rutledge Homiletiek - achtergrond'
+                },
+                '27_preek_drewermann': {
+                    url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Eugen_Drewermann_Homiletiek.md',
+                    title: 'Eugen Drewermann Homiletiek - achtergrond'
+                },
+                '22_midjourney_prompts': {
+                    url: 'https://www.midjourney.com/explore?tab=hot',
+                    title: 'Midjourney voorbeelden en inspiratie'
                 }
             };
 
@@ -3564,13 +3574,11 @@
                 if (k.startsWith('_')) return false;
                 if (v === null || v === undefined) return false;
                 // Skip 'analyse' in liedsuggesties sections
-                if (k === 'analyse' && (sectionKey === '08b_liedsuggesties_database' || sectionKey === '08_liedsuggesties_database' || sectionKey === '09_liedsuggesties')) return false;
+                if (k === 'analyse' && (sectionKey === '08b_liedsuggesties_database' || sectionKey === '08_liedsuggesties_database')) return false;
                 // Skip 'kerkelijke_context' and 'bronnen_gebruikt' in sociaal-maatschappelijke context
                 if ((k === 'kerkelijke_context' || k === 'bronnen_gebruikt') && sectionKey === '02_sociaal_maatschappelijke_context') return false;
                 // Skip 'gebruiksinstructies' in Beeldgeneratie (prompts)
-                if (k === 'gebruiksinstructies' && sectionKey === '35_midjourney_prompts') return false;
-                // Skip 'bron_preekschets' in feedback sections
-                if (k === 'bron_preekschets' && (sectionKey === '21_feedback_jungel' || sectionKey === '22_feedback_rutledge')) return false;
+                if (k === 'gebruiksinstructies' && sectionKey === '22_midjourney_prompts') return false;
                 return true;
             });
 
@@ -3587,15 +3595,10 @@
                 return `<div class="data-value">${formatValue(obj)}</div>`;
             }
 
-            // Don't render metadata objects at all
-            if (parentKey === 'metadata') {
-                return '';
-            }
-
             let html = '';
 
             // Analyze object structure for smart rendering
-            const entries = Object.entries(obj).filter(([k, v]) => !k.startsWith('_') && v !== null && v !== undefined && k !== 'metadata');
+            const entries = Object.entries(obj).filter(([k, v]) => !k.startsWith('_') && v !== null && v !== undefined);
 
             // Check if this object has multiple child objects with simple string values (good for grid)
             const childObjects = entries.filter(([k, v]) => typeof v === 'object' && v !== null && !Array.isArray(v));
@@ -3666,10 +3669,8 @@
         }
 
         function renderSingleEntry(key, value, parentKey) {
-            // Filter out metadata fields from all sections
-            if (key === 'metadata') {
-                return '';
-            }
+            let html = '';
+            const formattedKey = formatKey(key);
 
             // Filter out boolean fields (like geen_eisenlijst, diagnose_remedie_klopt)
             if (typeof value === 'boolean') {
@@ -3677,15 +3678,12 @@
             }
 
             // Filter out metadata fields from Midjourney prompts section
-            if (parentKey === '35_midjourney_prompts') {
+            if (parentKey === '22_midjourney_prompts') {
                 const hiddenFields = ['preek_titel', 'schriftlezing', 'liturgische_periode', 'kernthema'];
                 if (hiddenFields.includes(key)) {
                     return '';
                 }
             }
-
-            let html = '';
-            const formattedKey = formatKey(key);
 
             // Replace string "null" values with placeholder text
             if (value === 'null' || value === 'NULL') {
@@ -3713,7 +3711,7 @@
             }
 
             // Kindermoment opties
-            if (key === 'kindermoment_opties' && parentKey === '40_kindermoment') {
+            if (key === 'kindermoment_opties' && (parentKey === '15_kindermoment' || parentKey === '15_bezinningsmoment')) {
                 return renderKindermoment(value, parentKey);
             }
 
@@ -3723,7 +3721,7 @@
             }
 
             // Focus en functie opties
-            if (key === 'opties' && parentKey === '13_focus_en_functie') {
+            if (key === 'opties' && parentKey === '10_focus_en_functie') {
                 return renderFocusFunctie(value);
             }
 
@@ -4271,7 +4269,7 @@
             return html;
         }
 
-        function renderKindermoment(opties, sectionKey = '40_kindermoment') {
+        function renderKindermoment(opties, sectionKey = '15_kindermoment') {
             let html = '';
 
             opties.forEach((optie, index) => {
@@ -4427,7 +4425,7 @@
             let html = '';
 
             dagen.forEach((dag, index) => {
-                html += `<div id="section-42_kalender-dag-${index + 1}" class="subsection-anchor"></div>`;
+                html += `<div id="section-11_kalender-dag-${index + 1}" class="subsection-anchor"></div>`;
                 const isPreekzondag = dag.is_preekzondag === true;
                 html += `<div class="kalender-dag ${isPreekzondag ? 'preekzondag' : ''}">`;
                 html += `<div class="kalender-datum">${processText(dag.datum || '')}${isPreekzondag ? ' (Dag van de Viering)' : ''}</div>`;
@@ -5654,7 +5652,7 @@
         }
 
         // Render Gebeden section with cleaner layout
-        function renderGebedenSection(data, sectionKey = '36_gebeden') {
+        function renderGebedenSection(data, sectionKey = '14_gebeden') {
             let html = '';
 
             // Render each prayer
@@ -6630,7 +6628,6 @@
                 result = "Aristotelische overtuigingsmiddelen";
             } else {
                 result = key
-                    .replace(/^\d+[a-z]?_/, '')  // Remove number prefix like "03_" or "13a_"
                     .replace(/_/g, ' ')
                     .replace(/([a-z])([A-Z])/g, '$1 $2')
                     .replace(/^./, str => str.toUpperCase());
@@ -7173,8 +7170,8 @@
              });
 
              if (jsonFiles.length > 0) {
-                 // Set the selector to the first file by default
-                 const defaultFile = jsonFiles[0].file;
+                 // Set the selector to the third file by default
+                 const defaultFile = jsonFiles[12].file;
                  fileSelector.value = defaultFile;
                  loadFile(defaultFile);
              }
