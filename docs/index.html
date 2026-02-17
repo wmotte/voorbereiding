@@ -2185,8 +2185,9 @@
             //'xx_klassieke_retorica': 'Retorische insteek',
             "00_meta": 'Metadata',
             "01_liturgisch_jaar": 'Kerkelijk jaar',
-            "Bijbelteksten": 'Bijbelteksten', 
+            "Bijbelteksten": 'Bijbelteksten',
             "02_bijbelteksten": 'Bijbelteksten',
+            "44_postille_preekschets": 'Postille preekschets',
             "03_sociaal_maatschappelijk": 'Sociaal-maatschappelijk',
             "04_waardenorientatie": 'Waardenoriëntatie',
             "05_geloofsorientatie": 'Geloofsoriëntatie',
@@ -2399,7 +2400,7 @@
         // Determine menu group class based on section key
         function getMenuGroupClass(key) {
             // Groep 1: Liturgisch/Kerkelijk
-            if (isKerkelijkJaarSection(key) || key === 'Bijbelteksten') {
+            if (isKerkelijkJaarSection(key) || key === 'Bijbelteksten' || key === '44_postille_preekschets') {
                 return 'nav-group-liturgisch';
             }
             // Groep 2: Contextueel
@@ -2443,7 +2444,7 @@
 
         // Get group name for section
         function getGroupName(key) {
-            if (isKerkelijkJaarSection(key) || key === 'Bijbelteksten') {
+            if (isKerkelijkJaarSection(key) || key === 'Bijbelteksten' || key === '44_postille_preekschets') {
                 return 'Liturgisch';
             }
             if (['03_sociaal_maatschappelijk', '04_waardenorientatie', '05_geloofsorientatie',
@@ -2596,55 +2597,56 @@
                 '01_zondag_kerkelijk_jaar': '01',
                 '01b_zondag_kerkelijk_jaar_eigen_lezing': '01',
                 'Bijbelteksten': '02',
+                '44_postille_preekschets': '03',
 
-                '03_sociaal_maatschappelijk': '03',
-                '04_waardenorientatie': '04',
-                '05_geloofsorientatie': '05',
-                '06_synthese': '06',
-                '07_wereldnieuws': '07',
-                '08_politiek': '08',
+                '03_sociaal_maatschappelijk': '04',
+                '04_waardenorientatie': '05',
+                '05_geloofsorientatie': '06',
+                '06_synthese': '07',
+                '07_wereldnieuws': '08',
+                '08_politiek': '09',
 
-                '10_structuralistische_exegese': '09',
-                '11_commentaries': '10',
-                '12_theology': '11',
+                '10_structuralistische_exegese': '10',
+                '11_commentaries': '11',
+                '12_theology': '12',
 
-                '13_focus_en_functie': '12',
-                '14_representatieve_hoorders': '13',
-                '15_homiletische_lowry': '14',
-                '16_homiletische_buttrick': '15',
-                '17_homiletische_illustraties': '16',
+                '13_focus_en_functie': '13',
+                '14_representatieve_hoorders': '14',
+                '15_homiletische_lowry': '15',
+                '16_homiletische_buttrick': '16',
+                '17_homiletische_illustraties': '17',
 
-                '19_preek_jungel': '17',
-                '20_preek_fleming_rutledge': '18',
-                '25_preek_brueggemann_poet': '19',
-                '26_preek_literair': '20',
-                '27_preek_noordmans': '21',
-                '28_preek_kosuke_koyama': '22',
-                '29_preek_zornberg': '23',
-                '30_preek_brueggemann': '24',
-                '31_preek_drewermann': '25',
-                '32_preek_gardner_taylor': '26',
-                '33_preek_solle': '27',
-                '34_preek_peterson': '28',
+                '19_preek_jungel': '18',
+                '20_preek_fleming_rutledge': '19',
+                '25_preek_brueggemann_poet': '20',
+                '26_preek_literair': '21',
+                '27_preek_noordmans': '22',
+                '28_preek_kosuke_koyama': '23',
+                '29_preek_zornberg': '24',
+                '30_preek_brueggemann': '25',
+                '31_preek_drewermann': '26',
+                '32_preek_gardner_taylor': '27',
+                '33_preek_solle': '28',
+                '34_preek_peterson': '29',
 
-                '21_feedback_jungel': '29',
-                '22_feedback_rutledge': '30',
-                '23_rewrite_jungel': '31',
-                '24_rewrite_rutledge': '32',
+                '21_feedback_jungel': '30',
+                '22_feedback_rutledge': '31',
+                '23_rewrite_jungel': '32',
+                '24_rewrite_rutledge': '33',
 
-                '35_midjourney_prompts': '33',
+                '35_midjourney_prompts': '34',
 
-                '36_gebeden': '34',
-                '37_gebeden_profetisch': '35',
-                '38_gebeden_dialogisch': '36',
-                '39_gebeden_eenvoudig': '37',
+                '36_gebeden': '35',
+                '37_gebeden_profetisch': '36',
+                '38_gebeden_dialogisch': '37',
+                '39_gebeden_eenvoudig': '38',
 
-                '40_kindermoment': '38',
-                '41_wetslezing': '39',
-                '42_kalender': '40',
-                '09_liedsuggesties': '41',
-                '18_kunst_cultuur': '42',
-                '43_bezinningsmoment': '43'
+                '40_kindermoment': '39',
+                '41_wetslezing': '40',
+                '42_kalender': '41',
+                '09_liedsuggesties': '42',
+                '18_kunst_cultuur': '43',
+                '43_bezinningsmoment': '44'
             };
 
             // Create section number map for sorting
@@ -3168,6 +3170,8 @@
             // Special handling for Bijbelteksten - render in liturgical order
             if (key === 'Bijbelteksten') {
                 contentHtml = renderBijbeltekstenSection(dataToRender);
+            } else if (key === '44_postille_preekschets') {
+                contentHtml = renderPostilleSection(dataToRender);
             } else if (key === '36_gebeden' || key === '37_gebeden_profetisch' || key === '38_gebeden_dialogisch' || key === '39_gebeden_eenvoudig') {
                 contentHtml = renderGebedenSection(dataToRender, key);
             } else if (key === '19_preek_jungel' || key === '20_preek_fleming_rutledge') {
@@ -5650,6 +5654,83 @@
 
                 html += `</div></div>`; // end hoorder-content, hoorder-card
             });
+
+            return html;
+        }
+
+        // Render Postille preekschets section with stacked layout
+        function renderPostilleSection(data) {
+            const preek = data.preekschets || data;
+            let html = '';
+
+            // Metadata block
+            if (preek.metadata) {
+                const m = preek.metadata;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Metadata</div>`;
+                html += `<div class="nested-object">`;
+                if (m.perikoop) html += `<div class="data-item"><div class="data-label">Perikoop</div><div class="data-value">${escapeHtml(m.perikoop)}</div></div>`;
+                if (m.liturgische_dag) html += `<div class="data-item"><div class="data-label">Liturgische dag</div><div class="data-value">${escapeHtml(m.liturgische_dag)}</div></div>`;
+                if (m.kerntekst) html += `<div class="data-item"><div class="data-label">Kerntekst</div><div class="data-value">${escapeHtml(m.kerntekst)}</div></div>`;
+                if (m.oneliner) html += `<div class="data-item"><div class="data-label">Oneliner</div><div class="data-value"><em>${processText(m.oneliner)}</em></div></div>`;
+                html += `</div></div>`;
+            }
+
+            // Schriftlezingen – stacked (niet card-grid)
+            if (preek.schriftlezingen) {
+                const s = preek.schriftlezingen;
+                html += `<div id="section-44_postille_preekschets-schriftlezingen" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Schriftlezingen</div>`;
+                html += `<div class="nested-object">`;
+                if (s.hoofdlezing) html += `<div class="data-item"><div class="data-label">Hoofdlezing</div><div class="data-value">${escapeHtml(s.hoofdlezing)}</div></div>`;
+                if (s.aanvullend) {
+                    const aanvullend = Array.isArray(s.aanvullend) ? s.aanvullend.join(', ') : escapeHtml(s.aanvullend);
+                    html += `<div class="data-item"><div class="data-label">Aanvullend</div><div class="data-value">${escapeHtml(aanvullend)}</div></div>`;
+                }
+                html += `</div></div>`;
+            }
+
+            // Lange tekstvelden
+            const longFields = [
+                { key: 'eigene_van_de_zondag', label: 'Eigene van de zondag' },
+                { key: 'uitleg',               label: 'Uitleg' },
+                { key: 'aanwijzingen_prediking', label: 'Aanwijzingen voor de prediking' },
+            ];
+            for (const { key, label } of longFields) {
+                if (preek[key]) {
+                    html += `<div id="section-44_postille_preekschets-${key}" class="subsection-anchor"></div>`;
+                    html += `<div class="data-group">`;
+                    html += `<div class="data-group-title">${escapeHtml(label)}</div>`;
+                    html += `<div class="data-value" style="padding: 6px 0; line-height: 1.8;">${processText(preek[key])}</div>`;
+                    html += `</div>`;
+                }
+            }
+
+            // Liturgische aanwijzingen – stacked (niet card-grid)
+            if (preek.liturgische_aanwijzingen) {
+                const la = preek.liturgische_aanwijzingen;
+                html += `<div id="section-44_postille_preekschets-liturgische_aanwijzingen" class="subsection-anchor"></div>`;
+                html += `<div class="data-group">`;
+                html += `<div class="data-group-title">Liturgische aanwijzingen</div>`;
+                if (Array.isArray(la.liedsuggesties) && la.liedsuggesties.length > 0) {
+                    html += `<div class="data-group-title" style="font-size:0.95em; margin-top:8px;">Liedsuggesties</div>`;
+                    html += `<div class="lied-grid">`;
+                    la.liedsuggesties.forEach(lied => {
+                        html += `<div class="lied-item">`;
+                        if (lied.bundel) html += `<div class="lied-nummer">${escapeHtml(lied.bundel)}</div>`;
+                        if (lied.nummer && lied.nummer !== 'null') html += `<div class="lied-regel">${escapeHtml(lied.nummer)}</div>`;
+                        if (lied.titel) html += `<div class="lied-titel">${escapeHtml(lied.titel)}</div>`;
+                        if (lied.motivatie) html += `<div class="lied-toelichting">${processText(lied.motivatie)}</div>`;
+                        html += `</div>`;
+                    });
+                    html += `</div>`;
+                }
+                if (la.aanvullende_lezingen) {
+                    html += `<div class="data-item" style="margin-top:10px;"><div class="data-label">Aanvullende lezingen</div><div class="data-value">${processText(la.aanvullende_lezingen)}</div></div>`;
+                }
+                html += `</div>`;
+            }
 
             return html;
         }
