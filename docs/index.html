@@ -243,6 +243,43 @@
             color: var(--text-muted);
         }
 
+        .kern-toggle-row {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 6px;
+            font-size: 0.8em;
+            font-weight: normal;
+            text-transform: none;
+            letter-spacing: 0;
+            color: var(--text-muted);
+        }
+
+        .kern-toggle-row input[type="checkbox"] {
+            cursor: pointer;
+            accent-color: var(--accent);
+            width: 14px;
+            height: 14px;
+            margin: 0;
+        }
+
+        .kern-toggle-row label {
+            cursor: pointer;
+        }
+
+        /* Hide non-kern items when filter is active */
+        #nav-items.kern-only .nav-group[data-kern="false"] {
+            display: none;
+        }
+
+        #nav-items.kern-only .nav-group-header[data-kern-group="false"] {
+            display: none;
+        }
+
+        #main-content.kern-only section.section[data-kern="false"] {
+            display: none;
+        }
+
         .nav-item {
             display: block;
             padding: 10px 20px;
@@ -2138,7 +2175,13 @@
     </header>
 
     <nav class="sidebar" id="sidebar">
-        <div class="sidebar-header">Secties</div>
+        <div class="sidebar-header">
+            Secties
+            <div class="kern-toggle-row">
+                <input type="checkbox" id="kern-toggle">
+                <label for="kern-toggle">meer</label>
+            </div>
+        </div>
         <div id="nav-items">
             <!-- Nav items will be inserted here -->
         </div>
@@ -2155,6 +2198,24 @@
     <button class="scroll-top" id="scroll-top" title="Naar boven">&#9650;</button>
 
     <script>
+        // Kern sections (always visible in menu)
+        const KERN_SECTIONS = new Set([
+            '01_liturgisch_jaar', '01_zondag_kerkelijk_jaar', '01b_zondag_kerkelijk_jaar_eigen_lezing',
+            'Bijbelteksten',
+            '44_postille_preekschets',
+            '10_structuralistische_exegese',
+            '17_homiletische_illustraties',
+            '26_preek_literair',
+            '38_gebeden_dialogisch',
+            '40_kindermoment',
+            '18_kunst_cultuur'
+        ]);
+
+        // Group names that contain at least one kern section
+        const KERN_GROUP_NAMES = new Set([
+            'Liturgisch', 'Exegese & Theologie', 'Homiletiek', 'Gebeden', 'Liturgische Elementen', 'Preekschetsen'
+        ]);
+
         // State
         let jsonData = null;
         let sectionInfo = null;
@@ -2280,6 +2341,13 @@
         menuToggle.addEventListener('click', () => {
             sidebarVisible = !sidebarVisible;
             sidebar.classList.toggle('visible', sidebarVisible);
+        });
+
+        // Kern filter toggle
+        document.getElementById('kern-toggle').addEventListener('change', () => {
+            const kernToggle = document.getElementById('kern-toggle');
+            navItems.classList.toggle('kern-only', !kernToggle.checked);
+            mainContent.classList.toggle('kern-only', !kernToggle.checked);
         });
         
         // File loading from selector
@@ -2690,7 +2758,8 @@
                 // Add group header if entering a new group
                 const currentGroupName = getGroupName(key);
                 if (currentGroupName && currentGroupName !== lastGroupName) {
-                    navHtml += `<div class="nav-group-header">${currentGroupName}</div>`;
+                    const isKernGroup = KERN_GROUP_NAMES.has(currentGroupName);
+                    navHtml += `<div class="nav-group-header" data-kern-group="${isKernGroup}">${currentGroupName}</div>`;
                     lastGroupName = currentGroupName;
                 }
 
@@ -3064,8 +3133,9 @@
                 }
 
                 const groupClass = getMenuGroupClass(key);
+                const isKernSection = KERN_SECTIONS.has(key);
                 navHtml += `
-                    <div class="nav-group ${groupClass}">
+                    <div class="nav-group ${groupClass}" data-kern="${isKernSection}">
                         <div class="nav-item" data-section="${key}" data-has-submenu="${subSections.length > 0}">
                             <span class="nav-number">${num}</span>
                             ${escapeHtml(title)}
@@ -3080,6 +3150,11 @@
 
             navItems.innerHTML = navHtml;
             mainContent.innerHTML = html;
+
+            // Apply kern filter: start with kern-only mode
+            const kernToggle = document.getElementById('kern-toggle');
+            navItems.classList.toggle('kern-only', !kernToggle.checked);
+            mainContent.classList.toggle('kern-only', !kernToggle.checked);
 
             // Add click handlers to nav items
             document.querySelectorAll('.nav-item').forEach(item => {
@@ -3176,8 +3251,10 @@
                 contentHtml = renderGebedenSection(dataToRender, key);
             } else if (key === '19_preek_jungel' || key === '20_preek_fleming_rutledge') {
                 contentHtml = renderPreekschetsSection(dataToRender, key);
-            } else if (key === '13b_homiletische_illustraties') {
-                contentHtml = renderIllustratiesSection(dataToRender);
+            } else if (key === '13b_homiletische_illustraties' || key === '17_homiletische_illustraties') {
+                contentHtml = renderIllustratiesSection(dataToRender, key);
+            } else if (key === '10_structuralistische_exegese') {
+                contentHtml = renderStructuralistischeExegeseSection(dataToRender, key);
             } else if (key === '12_representatieve_hoorders') {
                 contentHtml = renderHoordersSection(dataToRender);
             } else if (key === '08_exegese' || key === '08a_exegese') {
@@ -3306,7 +3383,7 @@
             }
 
             return `
-                <section class="section bevel-raised ${groupClass}" id="section-${key}">
+                <section class="section bevel-raised ${groupClass}" id="section-${key}" data-kern="${KERN_SECTIONS.has(key)}">
                     <div class="section-header">
                         <div class="section-number">${sectionNum}</div>
                         <h2 class="section-title">${titleHtml}</h2>
@@ -6133,7 +6210,8 @@
         }
 
         // Render Homiletische Illustraties section
-        function renderIllustratiesSection(data) {
+        function renderIllustratiesSection(data, sectionKey) {
+            const anchorKey = sectionKey || '13b_homiletische_illustraties';
             let html = '';
 
             // Render each illustration
@@ -6142,7 +6220,7 @@
                     const nummer = illustratie.nummer || (index + 1);
 
                     // Add anchor for submenu navigation
-                    html += `<div id="section-13b_homiletische_illustraties-illustratie-${nummer}" class="subsection-anchor"></div>`;
+                    html += `<div id="section-${anchorKey}-illustratie-${nummer}" class="subsection-anchor"></div>`;
 
                     html += `<div class="gebed-card" style="margin-bottom: 30px;">`;
 
@@ -6208,6 +6286,110 @@
                 html += `<div class="data-group">`;
                 html += `<div class="data-group-title">Gebruiksadvies</div>`;
                 html += renderObjectCompact(data.gebruiksadvies);
+                html += `</div>`;
+            }
+
+            return html;
+        }
+
+        function renderStructuralistischeExegeseSection(data, sectionKey) {
+            let html = '';
+
+            if (data.per_lezing && Array.isArray(data.per_lezing)) {
+                data.per_lezing.forEach((lezing, index) => {
+                    const ref = lezing.referentie || `Lezing ${index + 1}`;
+                    const taal = lezing.taal ? ` (${lezing.taal})` : '';
+
+                    html += `<div id="section-${sectionKey}-lezing-${index + 1}" class="subsection-anchor"></div>`;
+                    html += `<div class="data-group">`;
+                    html += `<div class="data-group-title">${escapeHtml(ref)}${escapeHtml(taal)}</div>`;
+
+                    // Grondtaal voorbereiding
+                    if (lezing.grondtaal_voorbereiding) {
+                        const gvp = lezing.grondtaal_voorbereiding;
+                        html += `<div class="nested-object"><div class="nested-title">Grondtaal voorbereiding</div>`;
+
+                        if (gvp.werkwoorden_overzicht && Array.isArray(gvp.werkwoorden_overzicht)) {
+                            html += `<div class="data-group"><div class="data-group-title">Werkwoorden</div><div class="card-grid">`;
+                            gvp.werkwoorden_overzicht.forEach(w => {
+                                html += `<div class="nested-card">`;
+                                html += `<div class="nested-card-title">v.${escapeHtml(String(w.vers || ''))} &mdash; ${escapeHtml(w.werkwoord_grondtaal || '')} (${escapeHtml(w.transliteratie || '')})</div>`;
+                                html += `<div class="nested-card-content">`;
+                                if (w.vorm) html += `<div><strong>Vorm:</strong> ${processText(w.vorm)}</div>`;
+                                if (w.vertaling) html += `<div><strong>Vertaling:</strong> ${processText(w.vertaling)}</div>`;
+                                if (w.subject) html += `<div><strong>Subject:</strong> ${processText(w.subject)}</div>`;
+                                html += `</div></div>`;
+                            });
+                            html += `</div></div>`;
+                        }
+
+                        if (gvp.temporele_markers && Array.isArray(gvp.temporele_markers) && gvp.temporele_markers.length > 0) {
+                            html += `<div class="data-item"><div class="data-label">Temporele markers</div>`;
+                            html += `<div class="data-value"><ul class="array-list">${gvp.temporele_markers.map(m => `<li class="array-item">${processText(m)}</li>`).join('')}</ul></div></div>`;
+                        }
+
+                        if (gvp.ruimtelijke_markers && Array.isArray(gvp.ruimtelijke_markers) && gvp.ruimtelijke_markers.length > 0) {
+                            html += `<div class="data-item"><div class="data-label">Ruimtelijke markers</div>`;
+                            html += `<div class="data-value"><ul class="array-list">${gvp.ruimtelijke_markers.map(m => `<li class="array-item">${processText(m)}</li>`).join('')}</ul></div></div>`;
+                        }
+
+                        html += `</div>`; // end nested-object
+                    }
+
+                    // Schema constructie
+                    if (lezing.schema_constructie) {
+                        const sc = lezing.schema_constructie;
+                        html += `<div class="nested-object"><div class="nested-title">Schema constructie</div>`;
+
+                        if (sc.scenes && Array.isArray(sc.scenes)) {
+                            html += `<div class="data-group"><div class="data-group-title">Scènes</div><div class="card-grid">`;
+                            sc.scenes.forEach(scene => {
+                                const { scene_nummer, scene_naam, ...sceneRest } = scene;
+                                html += `<div class="nested-card">`;
+                                html += `<div class="nested-card-title">Scène ${escapeHtml(String(scene_nummer || ''))}: ${escapeHtml(scene_naam || '')}</div>`;
+                                html += `<div class="nested-card-content">${renderObjectCompact(sceneRest)}</div>`;
+                                html += `</div>`;
+                            });
+                            html += `</div></div>`;
+                        }
+
+                        if (sc.schema_regels_toegepast) {
+                            html += `<div class="data-item"><div class="data-label">Schema regels toegepast</div>`;
+                            html += `<div class="data-value">${renderObjectCompact(sc.schema_regels_toegepast)}</div></div>`;
+                        }
+
+                        html += `</div>`;
+                    }
+
+                    // Verticale analyse
+                    if (lezing.verticale_analyse) {
+                        html += `<div class="nested-object"><div class="nested-title">Verticale analyse</div>`;
+                        html += renderObjectCompact(lezing.verticale_analyse);
+                        html += `</div>`;
+                    }
+
+                    // Horizontale analyse
+                    if (lezing.horizontale_analyse) {
+                        html += `<div class="nested-object"><div class="nested-title">Horizontale analyse</div>`;
+                        html += renderObjectCompact(lezing.horizontale_analyse);
+                        html += `</div>`;
+                    }
+
+                    // Synthese
+                    if (lezing.synthese) {
+                        html += `<div class="nested-object"><div class="nested-title">Synthese</div>`;
+                        html += renderObjectCompact(lezing.synthese);
+                        html += `</div>`;
+                    }
+
+                    html += `</div>`; // end data-group
+                });
+            }
+
+            // Samenhang lezingen
+            if (data.samenhang_lezingen) {
+                html += `<div class="data-group"><div class="data-group-title">Samenhang lezingen</div>`;
+                html += renderObjectCompact(data.samenhang_lezingen);
                 html += `</div>`;
             }
 
