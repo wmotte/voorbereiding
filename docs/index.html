@@ -2203,10 +2203,6 @@
             '01_liturgisch_jaar', '01_zondag_kerkelijk_jaar', '01b_zondag_kerkelijk_jaar_eigen_lezing',
             'Bijbelteksten',
             '44_postille_preekschets',
-            '10_structuralistische_exegese',
-            '17_homiletische_illustraties',
-            '26_preek_literair',
-            '38_gebeden_dialogisch',
             '40_kindermoment',
             '18_kunst_cultuur'
         ]);
@@ -2233,10 +2229,15 @@
         const menuToggle = document.getElementById('menu-toggle');
         const scrollTopBtn = document.getElementById('scroll-top');
         
+        // Index of the default JSON file to load on startup
+        const defaultFileIndex = 1;
+
         // List of available JSON files
         const jsonFiles = [
             
-            { file: "Vlissingen_15_februari_2026.json", label: "Vlissingen (15 februari 2026, PG)" }
+            { file: "Vlissingen_15_februari_2026.json", label: "Vlissingen (15 februari 2026, PG)" },
+            { file: "Maasbracht_22_februari_2026.json", label: "Maasbracht (22 februari 2026, PG)" }
+            
         ];
 
         // Section titles mapping
@@ -5753,21 +5754,6 @@
                 html += `</div></div>`;
             }
 
-            // Schriftlezingen – stacked (niet card-grid)
-            if (preek.schriftlezingen) {
-                const s = preek.schriftlezingen;
-                html += `<div id="section-44_postille_preekschets-schriftlezingen" class="subsection-anchor"></div>`;
-                html += `<div class="data-group">`;
-                html += `<div class="data-group-title">Schriftlezingen</div>`;
-                html += `<div class="nested-object">`;
-                if (s.hoofdlezing) html += `<div class="data-item"><div class="data-label">Hoofdlezing</div><div class="data-value">${escapeHtml(s.hoofdlezing)}</div></div>`;
-                if (s.aanvullend) {
-                    const aanvullend = Array.isArray(s.aanvullend) ? s.aanvullend.join(', ') : escapeHtml(s.aanvullend);
-                    html += `<div class="data-item"><div class="data-label">Aanvullend</div><div class="data-value">${escapeHtml(aanvullend)}</div></div>`;
-                }
-                html += `</div></div>`;
-            }
-
             // Lange tekstvelden
             const longFields = [
                 { key: 'eigene_van_de_zondag', label: 'Eigene van de zondag' },
@@ -7438,7 +7424,7 @@
 
              if (jsonFiles.length > 0) {
                  // Set the selector to the first file by default
-                 const defaultFile = jsonFiles[0].file;
+                 const defaultFile = jsonFiles[defaultFileIndex].file;
                  fileSelector.value = defaultFile;
                  loadFile(defaultFile);
              }
