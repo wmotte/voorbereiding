@@ -2204,6 +2204,10 @@
             'Bijbelteksten',
             '44_postille_preekschets',
             '50_ecologie',
+            '51_postkoloniaal',
+            '52_rechtswetenschap',
+            '53_natuurwetenschappen',
+            '54_politieke_speltheorie',
             '40_kindermoment',
             '18_kunst_cultuur'
         ]);
@@ -2273,6 +2277,10 @@
             "48_literaire_theorie": 'Literaire theorie',
             "49_psychologie": 'Psychologische duiding',
             "50_ecologie": 'Ecologische duiding',
+            "51_postkoloniaal": 'Postkoloniale duiding',
+            "52_rechtswetenschap": 'Rechtswetenschap',
+            "53_natuurwetenschappen": 'Natuurwetenschappen',
+            "54_politieke_speltheorie": 'Politieke speltheorie',
             "18_kunst_cultuur": 'Kunst & cultuur',
             "19_preek_jungel": 'Preekschets (theologisch)',
             "20_preek_fleming_rutledge": 'Preekschets (apocalyptisch)',
@@ -2493,7 +2501,8 @@
             if (['13_focus_en_functie', '14_representatieve_hoorders', '15_homiletische_lowry',
                  '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie',
                  '46_culturele_antropologie', '47_receptiegeschiedenis', '48_literaire_theorie',
-                 '49_psychologie', '50_ecologie'].includes(key)) {
+                 '49_psychologie', '50_ecologie', '51_postkoloniaal', '52_rechtswetenschap',
+                 '53_natuurwetenschappen', '54_politieke_speltheorie'].includes(key)) {
                 return 'nav-group-homiletiek';
             }
             // Groep 5: Gebeden
@@ -2536,7 +2545,8 @@
             if (['13_focus_en_functie', '14_representatieve_hoorders', '15_homiletische_lowry',
                  '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie',
                  '46_culturele_antropologie', '47_receptiegeschiedenis', '48_literaire_theorie',
-                 '49_psychologie', '50_ecologie'].includes(key)) {
+                 '49_psychologie', '50_ecologie', '51_postkoloniaal', '52_rechtswetenschap',
+                 '53_natuurwetenschappen', '54_politieke_speltheorie'].includes(key)) {
                 return 'Homiletiek';
             }
             if (['36_gebeden', '37_gebeden_profetisch', '38_gebeden_dialogisch', '39_gebeden_eenvoudig'].includes(key)) {
@@ -2702,37 +2712,41 @@
                 '48_literaire_theorie': '21',
                 '49_psychologie': '22',
                 '50_ecologie': '23',
-                '19_preek_jungel': '24',
-                '20_preek_fleming_rutledge': '25',
-                '25_preek_brueggemann_poet': '26',
-                '26_preek_literair': '27',
-                '27_preek_noordmans': '28',
-                '28_preek_kosuke_koyama': '29',
-                '29_preek_zornberg': '30',
-                '30_preek_brueggemann': '31',
-                '31_preek_drewermann': '32',
-                '32_preek_gardner_taylor': '33',
-                '33_preek_solle': '34',
-                '34_preek_peterson': '35',
+                '51_postkoloniaal': '24',
+                '52_rechtswetenschap': '25',
+                '53_natuurwetenschappen': '26',
+                '54_politieke_speltheorie': '27',
+                '19_preek_jungel': '28',
+                '20_preek_fleming_rutledge': '29',
+                '25_preek_brueggemann_poet': '30',
+                '26_preek_literair': '31',
+                '27_preek_noordmans': '32',
+                '28_preek_kosuke_koyama': '33',
+                '29_preek_zornberg': '34',
+                '30_preek_brueggemann': '35',
+                '31_preek_drewermann': '36',
+                '32_preek_gardner_taylor': '37',
+                '33_preek_solle': '38',
+                '34_preek_peterson': '39',
 
-                '21_feedback_jungel': '36',
-                '22_feedback_rutledge': '37',
-                '23_rewrite_jungel': '38',
-                '24_rewrite_rutledge': '39',
+                '21_feedback_jungel': '40',
+                '22_feedback_rutledge': '41',
+                '23_rewrite_jungel': '42',
+                '24_rewrite_rutledge': '43',
 
-                '35_midjourney_prompts': '40',
+                '35_midjourney_prompts': '44',
 
-                '36_gebeden': '41',
-                '37_gebeden_profetisch': '42',
-                '38_gebeden_dialogisch': '43',
-                '39_gebeden_eenvoudig': '44',
+                '36_gebeden': '45',
+                '37_gebeden_profetisch': '46',
+                '38_gebeden_dialogisch': '47',
+                '39_gebeden_eenvoudig': '48',
 
-                '40_kindermoment': '45',
-                '41_wetslezing': '46',
-                '42_kalender': '47',
-                '09_liedsuggesties': '48',
-                '18_kunst_cultuur': '49',
-                '43_bezinningsmoment': '50'
+                '40_kindermoment': '49',
+                '41_wetslezing': '50',
+                '42_kalender': '51',
+                '09_liedsuggesties': '52',
+                '18_kunst_cultuur': '53',
+                '43_bezinningsmoment': '54'
             };
 
             // Create section number map for sorting
@@ -3807,7 +3821,9 @@
                 key === 'receptiehistorische_verkenningen' || key === '47_receptiegeschiedenis' ||
                 key === 'literaire_analyses' || key === '48_literaire_theorie' ||
                 key === 'psychologische_analyses' || key === '49_psychologie' ||
-                key === 'ecologische_analyses' || key === 'ecologische_duidingen' || key === '50_ecologie') {
+                key === 'ecologische_analyses' || key === 'ecologische_duidingen' || key === '50_ecologie' ||
+                key === '51_postkoloniaal' || key === '52_rechtswetenschap' ||
+                key === '53_natuurwetenschappen' || key === '54_politieke_speltheorie') {
                 return renderAnalytischeDuiding(value, key);
             }
 
@@ -4061,7 +4077,11 @@
                 '47_receptiegeschiedenis': { title: 'Receptiehistorische Verkenningen', color: '#ff9800', accent: '#f57c00' },
                 '48_literaire_theorie': { title: 'Literaire Analyses', color: '#3f51b5', accent: '#303f9f' },
                 '49_psychologie': { title: 'Psychologische Analyses', color: '#4caf50', accent: '#388e3c' },
-                '50_ecologie': { title: 'Ecologische Duidingen', color: '#009688', accent: '#00796b' }
+                '50_ecologie': { title: 'Ecologische Duidingen', color: '#009688', accent: '#00796b' },
+                '51_postkoloniaal': { title: 'Postkoloniale Duidingen', color: '#795548', accent: '#5d4037' },
+                '52_rechtswetenschap': { title: 'Rechtswetenschappelijke Analyses', color: '#607d8b', accent: '#455a64' },
+                '53_natuurwetenschappen': { title: 'Natuurwetenschappelijke Verkenningen', color: '#ff5722', accent: '#e64a19' },
+                '54_politieke_speltheorie': { title: 'Politieke Speltheorie Analyses', color: '#9c27b0', accent: '#7b1fa2' }
             };
 
             // Mapping for inner keys (some differ per section)
