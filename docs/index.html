@@ -2267,6 +2267,11 @@
             "16_homiletische_buttrick": 'Moves & structures',
             "17_homiletische_illustraties":  'Illustraties',
             "45_filosofie": 'Filosofische duiding',
+            "46_culturele_antropologie": 'Culturele antropologie',
+            "47_receptiegeschiedenis": 'Receptiegeschiedenis',
+            "48_literaire_theorie": 'Literaire theorie',
+            "49_psychologie": 'Psychologische duiding',
+            "50_ecologie": 'Ecologische duiding',
             "18_kunst_cultuur": 'Kunst & cultuur',
             "19_preek_jungel": 'Preekschets (theologisch)',
             "20_preek_fleming_rutledge": 'Preekschets (apocalyptisch)',
@@ -2485,7 +2490,9 @@
             }
             // Groep 4: Homiletiek
             if (['13_focus_en_functie', '14_representatieve_hoorders', '15_homiletische_lowry',
-                 '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie'].includes(key)) {
+                 '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie',
+                 '46_culturele_antropologie', '47_receptiegeschiedenis', '48_literaire_theorie',
+                 '49_psychologie', '50_ecologie'].includes(key)) {
                 return 'nav-group-homiletiek';
             }
             // Groep 5: Gebeden
@@ -2526,7 +2533,9 @@
                 return 'Exegese & Theologie';
             }
             if (['13_focus_en_functie', '14_representatieve_hoorders', '15_homiletische_lowry',
-                 '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie'].includes(key)) {
+                 '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie',
+                 '46_culturele_antropologie', '47_receptiegeschiedenis', '48_literaire_theorie',
+                 '49_psychologie', '50_ecologie'].includes(key)) {
                 return 'Homiletiek';
             }
             if (['36_gebeden', '37_gebeden_profetisch', '38_gebeden_dialogisch', '39_gebeden_eenvoudig'].includes(key)) {
@@ -2684,41 +2693,45 @@
                 '13_focus_en_functie': '13',
                 '14_representatieve_hoorders': '14',
                 '15_homiletische_lowry': '15',
-                '16_homiletische_buttrick': '16',
-                '17_homiletische_illustraties': '17',
-                '45_filosofie': '18',
+                                '16_homiletische_buttrick': '16',
+                                '17_homiletische_illustraties': '17',
+                                '45_filosofie': '18',
+                                '46_culturele_antropologie': '19',
+                                '47_receptiegeschiedenis': '20',
+                                '48_literaire_theorie': '21',
+                                '49_psychologie': '22',
+                                '50_ecologie': '23',
+                                '19_preek_jungel': '24',
+                '20_preek_fleming_rutledge': '25',
+                '25_preek_brueggemann_poet': '26',
+                '26_preek_literair': '27',
+                '27_preek_noordmans': '28',
+                '28_preek_kosuke_koyama': '29',
+                '29_preek_zornberg': '30',
+                '30_preek_brueggemann': '31',
+                '31_preek_drewermann': '32',
+                '32_preek_gardner_taylor': '33',
+                '33_preek_solle': '34',
+                '34_preek_peterson': '35',
 
-                '19_preek_jungel': '19',
-                '20_preek_fleming_rutledge': '20',
-                '25_preek_brueggemann_poet': '21',
-                '26_preek_literair': '22',
-                '27_preek_noordmans': '23',
-                '28_preek_kosuke_koyama': '24',
-                '29_preek_zornberg': '25',
-                '30_preek_brueggemann': '26',
-                '31_preek_drewermann': '27',
-                '32_preek_gardner_taylor': '28',
-                '33_preek_solle': '29',
-                '34_preek_peterson': '30',
+                '21_feedback_jungel': '36',
+                '22_feedback_rutledge': '37',
+                '23_rewrite_jungel': '38',
+                '24_rewrite_rutledge': '39',
 
-                '21_feedback_jungel': '31',
-                '22_feedback_rutledge': '32',
-                '23_rewrite_jungel': '33',
-                '24_rewrite_rutledge': '34',
+                '35_midjourney_prompts': '40',
 
-                '35_midjourney_prompts': '35',
+                '36_gebeden': '41',
+                '37_gebeden_profetisch': '42',
+                '38_gebeden_dialogisch': '43',
+                '39_gebeden_eenvoudig': '44',
 
-                '36_gebeden': '36',
-                '37_gebeden_profetisch': '37',
-                '38_gebeden_dialogisch': '38',
-                '39_gebeden_eenvoudig': '39',
-
-                '40_kindermoment': '40',
-                '41_wetslezing': '41',
-                '42_kalender': '42',
-                '09_liedsuggesties': '43',
-                '18_kunst_cultuur': '44',
-                '43_bezinningsmoment': '45'
+                '40_kindermoment': '45',
+                '41_wetslezing': '46',
+                '42_kalender': '47',
+                '09_liedsuggesties': '48',
+                '18_kunst_cultuur': '49',
+                '43_bezinningsmoment': '50'
             };
 
             // Create section number map for sorting
@@ -3788,8 +3801,13 @@
                 return renderLezingen(value);
             }
 
-            if (key === 'filosofische_duidingen' || key === '45_filosofie') {
-                return renderFilosofie(value);
+            if (key === 'filosofische_duidingen' || key === '45_filosofie' || 
+                key === 'cultureel_antropologische_analyses' || key === '46_culturele_antropologie' ||
+                key === 'receptiehistorische_verkenningen' || key === '47_receptiegeschiedenis' ||
+                key === 'literaire_analyses' || key === '48_literaire_theorie' ||
+                key === 'psychologische_analyses' || key === '49_psychologie' ||
+                key === 'ecologische_analyses' || key === 'ecologische_duidingen' || key === '50_ecologie') {
+                return renderAnalytischeDuiding(value, key);
             }
 
             if (key === 'hoorders' || parentKey === '12_representatieve_hoorders') {
@@ -4021,61 +4039,103 @@
             }).join('');
         }
 
-        function renderFilosofie(value) {
+        function renderAnalytischeDuiding(value, key) {
             let duidingen = [];
             if (Array.isArray(value)) {
                 duidingen = value;
-            } else if (value && Array.isArray(value.filosofische_duidingen)) {
-                duidingen = value.filosofische_duidingen;
+            } else if (value && typeof value === 'object') {
+                // Try to find the array within the object
+                const arrayKey = Object.keys(value).find(k => Array.isArray(value[k]));
+                if (arrayKey) {
+                    duidingen = value[arrayKey];
+                }
             }
 
             if (duidingen.length === 0) return '';
 
-            const filosofieColor = '#673ab7'; // Deep Purple for Philosophy
+            // Configuration for different analysis types
+            const config = {
+                '45_filosofie': { title: 'Filosofische Duidingen', color: '#673ab7', accent: '#4527a0' },
+                '46_culturele_antropologie': { title: 'Cultureel Antropologische Analyses', color: '#e91e63', accent: '#c2185b' },
+                '47_receptiegeschiedenis': { title: 'Receptiehistorische Verkenningen', color: '#ff9800', accent: '#f57c00' },
+                '48_literaire_theorie': { title: 'Literaire Analyses', color: '#3f51b5', accent: '#303f9f' },
+                '49_psychologie': { title: 'Psychologische Analyses', color: '#4caf50', accent: '#388e3c' },
+                '50_ecologie': { title: 'Ecologische Duidingen', color: '#009688', accent: '#00796b' }
+            };
+
+            // Mapping for inner keys (some differ per section)
+            const fieldLabels = {
+                'filosofisch_domein': 'Domein',
+                'sub_domein': 'Domein',
+                'kader': 'Kader',
+                'periode_traditie': 'Traditie',
+                'school_traditie': 'Traditie',
+                'traditie': 'Traditie',
+                'benadering': 'Benadering',
+                'tijdvak': 'Tijdvak',
+                'kerndenker_of_concept': 'Denker/Concept',
+                'kernwerk_of_auteur': 'Werk/Auteur',
+                'materieel_element': 'Element'
+            };
+
+            const sectionConfig = config[key] || config[Object.keys(config).find(k => key.includes(k))] || { title: 'Analyse', color: '#607d8b', accent: '#455a64' };
+            const mainColor = sectionConfig.color;
+            const accentColor = sectionConfig.accent;
 
             let html = `<div class="data-group">`;
-            html += `<div class="data-group-title" style="color: ${filosofieColor}; border-bottom-color: ${filosofieColor}">Filosofische Duidingen</div>`;
             
             duidingen.forEach(item => {
-                html += `<div class="hoorder-card" style="border-left-color: ${filosofieColor}; margin-bottom: 35px;">`;
+                html += `<div class="hoorder-card" style="border-left-color: ${mainColor}; margin-bottom: 35px;">`;
                 
                 // Header with number and title
-                html += `<div class="hoorder-header" style="background: linear-gradient(135deg, ${filosofieColor}, #4527a0);">`;
+                html += `<div class="hoorder-header" style="background: linear-gradient(135deg, ${mainColor}, ${accentColor});">`;
                 if (item.nummer) html += `<div class="hoorder-nummer" style="background: rgba(255,255,255,0.25);">${item.nummer}</div>`;
                 html += `<div class="hoorder-intro">`;
                 if (item.titel) html += `<div class="hoorder-naam" style="font-size: 1.3em;">${processText(item.titel)}</div>`;
-                if (item.kerndenker_of_concept) html += `<div class="hoorder-meta" style="font-weight: bold; opacity: 1;">${processText(item.kerndenker_of_concept)}</div>`;
+                
+                // Show denker/concept or similar in header
+                const subTitleKey = ['kerndenker_of_concept', 'kernwerk_of_auteur'].find(k => item[k]);
+                if (subTitleKey) {
+                    html += `<div class="hoorder-meta" style="font-weight: bold; opacity: 1;">${processText(item[subTitleKey])}</div>`;
+                }
                 html += `</div></div>`;
 
                 html += `<div class="hoorder-content" style="padding: 25px;">`;
                 
-                // Meta grid
+                // Meta grid for labels like Domein, Traditie, etc.
                 html += `<div class="hoorder-grid" style="margin-bottom: 20px; gap: 15px;">`;
-                if (item.filosofisch_domein) {
-                    html += `<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ${filosofieColor};"><div class="hoorder-groep-titel" style="color: ${filosofieColor}; font-size: 0.8em;">Domein</div><div style="font-size: 0.9em;">${processText(item.filosofisch_domein)}</div></div>`;
-                }
-                if (item.periode_traditie) {
-                    html += `<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ${filosofieColor};"><div class="hoorder-groep-titel" style="color: ${filosofieColor}; font-size: 0.8em;">Traditie</div><div style="font-size: 0.9em;">${processText(item.periode_traditie)}</div></div>`;
-                }
+                Object.keys(fieldLabels).forEach(fKey => {
+                    if (item[fKey] && fKey !== subTitleKey) {
+                        html += `<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ${mainColor};"><div class="hoorder-groep-titel" style="color: ${mainColor}; font-size: 0.8em;">${fieldLabels[fKey]}</div><div style="font-size: 0.9em;">${processText(item[fKey])}</div></div>`;
+                    }
+                });
                 html += `</div>`;
 
                 // Textual starting point
                 if (item.tekstueel_vertrekpunt) {
-                    html += `<div class="quote-block" style="border-left-color: ${filosofieColor}; background: var(--bg-tertiary); margin: 20px 0; font-size: 0.95em;">`;
-                    html += `<strong style="color: ${filosofieColor}">Vertrekpunt:</strong> ${processText(item.tekstueel_vertrekpunt)}`;
+                    html += `<div class="quote-block" style="border-left-color: ${mainColor}; background: var(--bg-tertiary); margin: 20px 0; font-size: 0.95em;">`;
+                    html += `<strong style="color: ${mainColor}">Vertrekpunt:</strong> ${processText(item.tekstueel_vertrekpunt)}`;
                     html += `</div>`;
                 }
 
                 // Core interpretation
-                if (item.duiding) {
-                    html += `<div style="line-height: 1.9; margin-bottom: 25px; font-size: 1.05em;">${processText(item.duiding)}</div>`;
+                const mainTextKey = ['analyse', 'duiding', 'verkenning', 'verwerking'].find(k => item[k]);
+                if (mainTextKey) {
+                    html += `<div style="line-height: 1.9; margin-bottom: 25px; font-size: 1.05em;">${processText(item[mainTextKey])}</div>`;
                 }
 
                 // Homiletic application
                 if (item.homiletische_inzet) {
-                    html += `<div style="background: var(--bg-tertiary); padding: 20px; border-radius: 4px; border-left: 5px solid ${filosofieColor}; border-right: 1px solid var(--border-light); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">`;
-                    html += `<div style="font-weight: bold; color: ${filosofieColor}; margin-bottom: 10px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px;">Homiletische Inzet</div>`;
+                    html += `<div style="background: var(--bg-tertiary); padding: 20px; border-radius: 4px; border-left: 5px solid ${mainColor}; border-right: 1px solid var(--border-light); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">`;
+                    html += `<div style="font-weight: bold; color: ${mainColor}; margin-bottom: 10px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px;">Homiletische Inzet</div>`;
                     html += `<div style="font-style: italic; line-height: 1.7;">${processText(item.homiletische_inzet)}</div>`;
+                    html += `</div>`;
+                }
+
+                // Resonance with listeners (optional)
+                if (item.resonantie_hoorders) {
+                    html += `<div style="margin-top: 15px; font-size: 0.85em; color: var(--text-muted);">`;
+                    html += `<strong>Resonantie:</strong> ${processText(item.resonantie_hoorders)}`;
                     html += `</div>`;
                 }
 
@@ -4085,7 +4145,7 @@
                     html += `<strong style="display: block; margin-bottom: 8px; color: var(--text-secondary);">Bronnen:</strong><ul style="list-style-type: none; padding-left: 0;">`;
                     item.bronnen.forEach(bron => {
                         html += `<li style="margin-bottom: 5px; padding-left: 18px; position: relative; line-height: 1.5;">`;
-                        html += `<span style="position: absolute; left: 0; color: ${filosofieColor}; font-weight: bold;">»</span>${processText(bron)}</li>`;
+                        html += `<span style="position: absolute; left: 0; color: ${mainColor}; font-weight: bold;">»</span>${processText(bron)}</li>`;
                     });
                     html += `</ul></div>`;
                 }
