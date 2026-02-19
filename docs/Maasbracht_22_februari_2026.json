@@ -1043,27 +1043,49 @@
   },
   "09_liedsuggesties": {
     "analyse": {
-      "aantal_gevonden_totaal": 50,
+      "aantal_gevonden_totaal": 54,
       "methode": "raw_text_two_phase",
-      "fase1_kandidaten": 100,
-      "fase2_finale": 50,
+      "fase1_kandidaten": 120,
+      "fase2_finale": 54,
       "verdeling": {
-        "liedboek_2013": 10,
-        "hemelhoog": 10,
-        "weerklank": 10,
-        "sela": 10,
-        "oke4kids": 10
+        "liedboek_2013": 9,
+        "hemelhoog": 6,
+        "op_toonhoogte": 4,
+        "weerklank": 9,
+        "sela": 9,
+        "oke4kids": 9,
+        "nieuwe_psalmberijming": 8
       }
     },
     "liedboek_2013": [
       {
-        "nummer": "91a",
+        "nummer": "51",
         "bundel": "Liedboek",
-        "titel": "Wie in de schaduw Gods mag wonen",
-        "eerste_regel": "Wie in de schaduw Gods mag wonen hoeft niet te vrezen voor de dood",
+        "titel": "Ontferm U, God, ontferm U",
+        "eerste_regel": "Ontferm u God, ontferm u, hoor mijn klacht",
         "type_match": "Schriftlezing",
-        "karakter": "Vertrouwenslied - bemoedigend en beschuttend",
-        "toelichting": "Dit is de klassieke berijming van Psalm 91, de vaste psalm voor de eerste zondag van de Veertigdagentijd (Invocabit). Het sluit direct aan bij de verzoeking in de woestijn waar de duivel deze psalm citeert.",
+        "karakter": "Boetepsalm - ootmoedig en belijdend",
+        "toelichting": "De klassieke berijming van de voorgeschreven Psalm 51. Sluit naadloos aan bij de inkeer van de Veertigdagentijd met regels als 'Schep in mij, God, een hart dat leeft in ’t licht'.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "91",
+        "bundel": "Liedboek",
+        "titel": "Heil hem wien God een plaats bereidt",
+        "eerste_regel": "Heil hem wien God een plaats bereidt in zijn verheven woning",
+        "type_match": "Contextueel",
+        "karakter": "Vertrouwenslied - bemoedigend",
+        "toelichting": "Psalm 91 is de traditionele psalm voor de zondag Invocabit. Het refereert aan de engelen die behoeden, wat direct terugkomt in de evangelielezing (Matteüs 4:6/11).",
+        "suggestie_gebruik": "Intocht"
+      },
+      {
+        "nummer": "536",
+        "bundel": "Liedboek",
+        "titel": "Alles wat over ons geschreven is",
+        "eerste_regel": "Alles wat over ons geschreven is gaat Gij volbrengen",
+        "type_match": "Seizoen",
+        "karakter": "Passielied - ernstig en hoopvol",
+        "toelichting": "Een kernlied voor de veertigdagentijd. Het verbindt de 'beproeving van de wildernis' met het volbrengen van Gods weg door Christus.",
         "suggestie_gebruik": "Schriftlied"
       },
       {
@@ -1072,8 +1094,8 @@
         "titel": "Een mens te zijn op aarde",
         "eerste_regel": "Een mens te zijn op aarde in deze wereldtijd",
         "type_match": "Thematisch",
-        "karakter": "Meditatief lied over de menselijke conditie",
-        "toelichting": "Dit lied verwoordt prachtig de spanning van het mens-zijn tussen 'water en woestijn'. De regel 'dat is op deze aarde de duivel wederstaan' legt de directe link met de evangelielezing.",
+        "karakter": "Meditatief - existentieel",
+        "toelichting": "Prachtige reflectie op de menselijke conditie: 'komen uit het water en staan in de woestijn'. Het verwoordt de strijd om de duivel te wederstaan.",
         "suggestie_gebruik": "Slotlied"
       },
       {
@@ -1082,101 +1104,61 @@
         "titel": "Jezus, diep in de woestijn",
         "eerste_regel": "Jezus, diep in de woestijn, eenzaam en vol vragen",
         "type_match": "Schriftlezing",
-        "karakter": "Verhalend lied - sober en kernachtig",
-        "toelichting": "Een directe liedbewerking van de evangelielezing (Matteüs 4). Het benoemt de veertig dagen strijd en de weigering om stenen in brood te veranderen.",
+        "karakter": "Verhalend - sober",
+        "toelichting": "Directe weergave van de evangelielezing (Matteüs 4). Het benadrukt de keuze van Jezus om niet te knielen voor macht, maar alleen voor God.",
         "suggestie_gebruik": "Schriftlied"
       },
       {
-        "nummer": "857",
+        "nummer": "544",
         "bundel": "Liedboek",
-        "titel": "Jij zoekt mij: mens waar ben je?",
-        "eerste_regel": "Jij zoekt mij: mens waar ben je? Ik vlucht en schuil bij jou",
-        "type_match": "Schriftlezing",
-        "karakter": "Intiem en zoekend",
-        "toelichting": "Dit lied refereert direct aan de eerste lezing uit Genesis 3, waar God de mens zoekt na de zondeval. Het verwoordt de paradox van het vluchten voor God en tegelijk nergens anders terecht kunnen.",
+        "titel": "Christus naar wie wij heten",
+        "eerste_regel": "Christus naar wie wij heten heeft met zijn groot geduld",
+        "type_match": "Thematisch",
+        "karakter": "Gedragen - mystiek",
+        "toelichting": "Verbindt de wet en de profeten met de 'lange lijdensweg'. De tekst 'zij bloeien uit zijn wonden' geeft een diepe paasglans aan de lijdensweken.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "834",
+        "bundel": "Liedboek",
+        "titel": "Vernieuw Gij mij, o eeuwig licht",
+        "eerste_regel": "Vernieuw Gij mij, o eeuwig licht! God, laat mij voor uw aangezicht",
+        "type_match": "Emotioneel",
+        "karakter": "Gebed - verstild",
+        "toelichting": "Een lied om persoonlijke vernieuwing, passend bij de aswoensdag-gedachte en de inkeer van de eerste zondag van de veertigdagentijd.",
         "suggestie_gebruik": "Kyrie"
       },
       {
-        "nummer": "25",
+        "nummer": "843",
         "bundel": "Liedboek",
-        "titel": "Heer, ik hef mijn hart en handen",
-        "eerste_regel": "Heer, ik hef mijn hart en handen op tot U, beslecht mijn zaak",
-        "type_match": "Contextueel",
-        "karakter": "Smeekgebed - ootmoedig",
-        "toelichting": "Psalm 25 is de bron van de naam van deze zondag: 'Invocabit' (Hij roept Mij aan). De bede 'maak mij uwe wegen door uw woord en Geest bekend' past bij de start van de veertigdagentijd.",
-        "suggestie_gebruik": "Intocht"
-      },
-      {
-        "nummer": "51",
-        "bundel": "Liedboek",
-        "titel": "Ontferm u God, ontferm u",
-        "eerste_regel": "Ontferm u God, ontferm u, hoor mijn klacht",
-        "type_match": "Schriftlezing",
-        "karakter": "Boetepsalm - diepgaand en ernstig",
-        "toelichting": "De klassieke boetepsalm die als antwoordpsalm fungeert. De tekst 'Schep in mij, God, een hart dat leeft in ’t licht' is de kern van de veertigdagentijd.",
-        "suggestie_gebruik": "Kyrie"
-      },
-      {
-        "nummer": "537",
-        "bundel": "Liedboek",
-        "titel": "Zo spreekt de Heer die ons geschapen heeft",
-        "eerste_regel": "Zo spreekt de Heer die ons geschapen heeft: Wat durft dat volk Mij nog te vragen",
-        "type_match": "Seizoen",
-        "karakter": "Profetisch en vermanend",
-        "toelichting": "Dit lied stelt kritische vragen bij de praktijk van het vasten en de inkeer. Het herinnert de gemeente eraan dat ware inkeer gepaard gaat met gerechtigheid.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "162",
-        "bundel": "Liedboek",
-        "titel": "In het begin lag de aarde verloren",
-        "eerste_regel": "In het begin lag de aarde verloren in het begin in de duisternis",
-        "type_match": "Schriftlezing",
-        "karakter": "Hymne over de schepping",
-        "toelichting": "Sluit aan bij Genesis 2 over de schepping. Het zet de toon voor de zondag door de goedheid van de oorspronkelijke schepping te bezingen voordat de verzoeking intreedt.",
-        "suggestie_gebruik": "Intocht"
+        "titel": "Wat te kiezen, leven, dood",
+        "eerste_regel": "Wat te kiezen, leven, dood, afgod geld, genadebrood?",
+        "type_match": "Thematisch",
+        "karakter": "Keuzelied - confronterend",
+        "toelichting": "Sluit aan bij de verzoekingen in de woestijn: de keuze tussen 'aarden schatten' en het 'genadebod' van de Ene.",
+        "suggestie_gebruik": "Slotlied"
       },
       {
         "nummer": "942",
         "bundel": "Liedboek",
         "titel": "Ik sta voor U in leegte en gemis",
         "eerste_regel": "Ik sta voor U in leegte en gemis, vreemd is uw naam",
-        "type_match": "Emotioneel",
-        "karakter": "Eerlijk en kwetsbaar",
-        "toelichting": "Verwoordt de woestijnervaring van de moderne gelovige. De regel 'Wees Gij vandaag mijn brood' resoneert met de evangelielezing over het brood in de woestijn.",
-        "suggestie_gebruik": "Gebed"
-      },
-      {
-        "nummer": "32",
-        "bundel": "Liedboek",
-        "titel": "Heil hem, wien God zijn ontrouw heeft vergeven",
-        "eerste_regel": "Heil hem, wien God zijn ontrouw heeft vergeven en toegedekt al wat hij had misdreven",
-        "type_match": "Thematisch",
-        "karakter": "Bevrijdend en getuigend",
-        "toelichting": "Psalm 32 sluit aan bij de thematiek van schuld en vergeving. Het biedt een tegenwicht aan de ernst van de zondeval door de vreugde van de vergeving te benadrukken.",
-        "suggestie_gebruik": "Slotlied"
+        "type_match": "Verrassend",
+        "karakter": "Klaaglied - eerlijk en rauw",
+        "toelichting": "Verwoordt de woestijnervaring van de moderne mens: 'mijn dagen zijn door twijfel overmand'. Een krachtig gebed om nabijheid.",
+        "suggestie_gebruik": "Kyrie"
       }
     ],
     "hemelhoog": [
       {
-        "nummer": "88",
+        "nummer": "109",
         "bundel": "Hemelhoog",
-        "titel": "Zoek eerst het koninkrijk van God",
-        "eerste_regel": "Zoek eerst het koninkrijk van God en zijn gerechtigheid",
-        "type_match": "Schriftlezing",
-        "karakter": "Licht en bijbelgetrouw",
-        "toelichting": "Het tweede vers citeert letterlijk Jezus' antwoord aan de duivel: 'Men kan niet leven van brood alleen'. Een zeer herkenbaar lied voor de gemeente.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "44",
-        "bundel": "Hemelhoog",
-        "titel": "Uit de diepten roep ik U",
-        "eerste_regel": "Uit de diepten roep ik U, Heer, mijn God",
+        "titel": "Jezus ging Gods weg",
+        "eerste_regel": "Jezus ging Gods weg en wie Hem daar wil volgen",
         "type_match": "Thematisch",
-        "karakter": "Smeekgebed - intens",
-        "toelichting": "Bewerking van Psalm 130. De focus op wachten op het morgenlicht past bij de sfeer van inkeer en de start van de veertigdagentocht.",
-        "suggestie_gebruik": "Kyrie"
+        "karakter": "Moedig - volhardend",
+        "toelichting": "Reflecteert op de druk die gelovigen ervaren en de belofte dat niets ons kan scheiden van Gods liefde (Romeinen 8 link).",
+        "suggestie_gebruik": "Slotlied"
       },
       {
         "nummer": "286",
@@ -1184,49 +1166,9 @@
         "titel": "Vader, vol van vrees en schaamte",
         "eerste_regel": "Vader, vol van vrees en schaamte, buigen wij voor U",
         "type_match": "Emotioneel",
-        "karakter": "Belijdend en ootmoedig",
-        "toelichting": "Verwoordt de schaamte van de mensheid na het 'vertreden' van Gods werk. Dit sluit naadloos aan bij de reactie van Adam en Eva in de hof.",
+        "karakter": "Ootmoedig",
+        "toelichting": "Verwoordt de schaamte van de mensheid na de val (Genesis 3) en vraagt om herstel door de Geest.",
         "suggestie_gebruik": "Kyrie"
-      },
-      {
-        "nummer": "333",
-        "bundel": "Hemelhoog",
-        "titel": "Een vaste burcht is onze God",
-        "eerste_regel": "Een vaste burcht is onze God, een toevlucht voor de zijnen!",
-        "type_match": "Thematisch",
-        "karakter": "Krachtig en strijdbaar",
-        "toelichting": "Hét lied over de strijd tegen de 'vorst der duisternis'. In de context van de verzoeking in de woestijn krijgt dit lied een diepe liturgische lading.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "383",
-        "bundel": "Hemelhoog",
-        "titel": "Maak mij rein voor U",
-        "eerste_regel": "Maak mij rein voor U als gelouterd goud",
-        "type_match": "Thematisch",
-        "karakter": "Toegewijd en vurig",
-        "toelichting": "De metafoor van loutering door vuur past bij de beproeving in de woestijn. Het is een gebed om heiliging en bereidheid om Gods wil te doen.",
-        "suggestie_gebruik": "Gebed"
-      },
-      {
-        "nummer": "418",
-        "bundel": "Hemelhoog",
-        "titel": "Al moet ik door de wildernis",
-        "eerste_regel": "Al moet ik door de wildernis – Hij leidt mij",
-        "type_match": "Schriftlezing",
-        "karakter": "Bemoedigend en hoopvol",
-        "toelichting": "Gebruikt de 'wildernis' als metafoor voor het leven en de beproeving. Het belooft Gods leiding, precies wat Jezus ervoer door de Geest.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "109",
-        "bundel": "Hemelhoog",
-        "titel": "Jezus ging Gods weg",
-        "eerste_regel": "Jezus ging Gods weg en wie Hem daar wil volgen",
-        "type_match": "Thematisch",
-        "karakter": "Standvastig",
-        "toelichting": "Dit lied verbindt de weg van Jezus met de roeping van de gelovige om onder druk stand te houden. 'Maak dat ons geloof ook taai en stevig wordt'.",
-        "suggestie_gebruik": "Schriftlied"
       },
       {
         "nummer": "295",
@@ -1234,81 +1176,92 @@
         "titel": "Doorgrond mijn hart",
         "eerste_regel": "Doorgrond mijn hart en ken mijn weg, o Heer",
         "type_match": "Thematisch",
-        "karakter": "Onderzoekend en overgegeven",
-        "toelichting": "Een gebed om Gods leiding op de 'eeuwige weg'. Het vraagt om bevrijding van hoogmoed, een van de kernverzoekingen in de woestijn.",
-        "suggestie_gebruik": "Gebed"
+        "karakter": "Toewijdingslied",
+        "toelichting": "Gebed om zuivering en bevrijding van hoogmoed, een van de kernverzoekingen in de woestijn.",
+        "suggestie_gebruik": "Kyrie"
       },
       {
-        "nummer": "2",
+        "nummer": "333",
         "bundel": "Hemelhoog",
-        "titel": "Welzalig de man",
-        "eerste_regel": "Welzalig de man, die niet wandelt in de raad der goddelozen",
-        "type_match": "Thematisch",
-        "karakter": "Wijsgerig en vroom",
-        "toelichting": "Psalm 1 schetst het contrast tussen de weg van de rechtvaardige en de zondaar. Jezus belichaamt in de woestijn de man die 'aan des Heren wet zijn welgevallen heeft'.",
-        "suggestie_gebruik": "Intocht"
-      },
-      {
-        "nummer": "60",
-        "bundel": "Hemelhoog",
-        "titel": "Gods volk ging op weg",
-        "eerste_regel": "Gods volk ging op weg, dwars door de woestijnen",
-        "type_match": "Seizoen",
-        "karakter": "Pelgrimslied",
-        "toelichting": "Verbindt de tocht van Israël door de woestijn met onze eigen weg. Het vraagt om genade in 'het stof van de straten'.",
-        "suggestie_gebruik": "Intocht"
-      }
-    ],
-    "op_toonhoogte": [],
-    "weerklank": [
-      {
-        "nummer": "372",
-        "bundel": "Weerklank",
-        "titel": "Adam sleepte allen mede",
-        "eerste_regel": "Adam sleepte allen mede in zijn val in duis’tre nacht",
-        "type_match": "Schriftlezing",
-        "karakter": "Leerdicht - theologisch",
-        "toelichting": "Een zeldzaam lied dat de complexe theologie van Romeinen 5 (de eerste en de tweede Adam) direct verwoordt. Onmisbaar voor de thematische samenhang van deze zondag.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "547",
-        "bundel": "Weerklank",
-        "titel": "Jezus diep in de woestijn",
-        "eerste_regel": "Jezus diep in de woestijn, eenzaam en vol vragen",
-        "type_match": "Schriftlezing",
-        "karakter": "Verhalend en sober",
-        "toelichting": "Parallel aan de versie in het Liedboek, zeer geschikt voor gemeenten die uit Weerklank zingen. Het benadrukt de overwinning van Jezus op de 'tegenspreker'.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "74",
-        "bundel": "Weerklank",
-        "titel": "Word krachtig in de Heer",
-        "eerste_regel": "Word krachtig in de Heer en in zijn sterke macht",
-        "type_match": "Thematisch",
-        "karakter": "Strijdbaar en bemoedigend",
-        "toelichting": "Dit lied over de geestelijke wapenrusting sluit aan bij het thema 'weerstand'. Jezus hanteerde in de woestijn het 'zwaard van de Geest' (het Woord), zoals dit lied beschrijft.",
+        "titel": "Een vaste burcht is onze God",
+        "eerste_regel": "Een vaste burcht is onze God, een toevlucht voor de zijnen!",
+        "type_match": "Verrassend",
+        "karakter": "Krachtig - strijdbaar",
+        "toelichting": "De ultieme hymne over de strijd tegen de 'vorst der duisternis'. Past bij de confrontatie tussen Jezus en Satan.",
         "suggestie_gebruik": "Slotlied"
       },
+      {
+        "nummer": "371",
+        "bundel": "Hemelhoog",
+        "titel": "Bewaar je oog",
+        "eerste_regel": "Bewaar je oog, bewaar je oog voor wat je ziet",
+        "type_match": "Thematisch",
+        "karakter": "Eenvoudig - vermanend",
+        "toelichting": "Hoewel vaak als kinderlied gezien, is de thematiek van zelfbeheersing en weerstand tegen verleiding (oog, oor, mond) zeer volwassen en passend.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "418",
+        "bundel": "Hemelhoog",
+        "titel": "Al moet ik door de wildernis",
+        "eerste_regel": "Al moet ik door de wildernis – Hij leidt mij",
+        "type_match": "Thematisch",
+        "karakter": "Bemoedigend",
+        "toelichting": "Zet de woestijnervaring om in een weg van hoop waar God 'iets heel nieuws' maakt.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "op_toonhoogte": [
+      {
+        "nummer": "10",
+        "bundel": "OpToonhoogte",
+        "titel": "HERE, maak mij uwe wegen",
+        "eerste_regel": "HERE, maak mij uwe wegen door uw Woord en Geest bekend",
+        "type_match": "Thematisch",
+        "karakter": "Gebed om wijsheid",
+        "toelichting": "Psalm 25 berijming. Focus op het niet gedenken van de zonden van de jeugd, passend bij de inkeer.",
+        "suggestie_gebruik": "Kyrie"
+      },
+      {
+        "nummer": "19",
+        "bundel": "OpToonhoogte",
+        "titel": "Ontferm U God, ontferm U",
+        "eerste_regel": "Ontferm U God, ontferm U, hoor mijn klacht",
+        "type_match": "Schriftlezing",
+        "karakter": "Boetepsalm",
+        "toelichting": "Klassieke berijming van Psalm 51. 'Tegen U alleen heb ik gezondigd' is de kern van de schuldbelijdenis.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "110",
+        "bundel": "OpToonhoogte",
+        "titel": "De Vader die de Zoon een beker reikt",
+        "eerste_regel": "De Vader die de Zoon een beker reikt, tot aan de rand gevuld",
+        "type_match": "Seizoen",
+        "karakter": "Passielied - diepzinnig",
+        "toelichting": "Verbindt het lijden van Christus met onze zonden. 'Hij gaat ons voor' is het thema van de gehoorzame nieuwe Adam.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "257",
+        "bundel": "OpToonhoogte",
+        "titel": "Jezus, ga ons voor",
+        "eerste_regel": "Jezus, ga ons voor deze wereld door",
+        "type_match": "Thematisch",
+        "karakter": "Pelgrimslied",
+        "toelichting": "Gebed om Jezus te volgen, ook als de weg door de 'woestenij' gaat en het hart krimpt onder smart.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "weerklank": [
       {
         "nummer": "10",
         "bundel": "Weerklank",
         "titel": "Wie in de schaduw Gods mag wonen",
-        "eerste_regel": "Wie in de schaduw Gods mag wonen hoeft niet te vrezen voor de dood",
-        "type_match": "Schriftlezing",
-        "karakter": "Troostrijk",
-        "toelichting": "De Weerklank-versie van Psalm 91. De tekst over engelen die 'je op handen dragen' is cruciaal voor de evangelielezing van vandaag.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "139",
-        "bundel": "Weerklank",
-        "titel": "Alles wat over ons geschreven is",
-        "eerste_regel": "Alles wat over ons geschreven is gaat Gij volbrengen deze laatste dagen",
-        "type_match": "Seizoen",
-        "karakter": "Plechtig en verwachtingsvol",
-        "toelichting": "Dit lied markeert het begin van de lijdensweg. Het noemt expliciet 'alle beproeving van de wildernis', wat direct linkt naar Invocabit.",
+        "eerste_regel": "Wie in de schaduw Gods mag wonen hoeft niet te vrezen",
+        "type_match": "Contextueel",
+        "karakter": "Troostrijk - poëtisch",
+        "toelichting": "Een prachtige bewerking van Psalm 91. De zin 'dan wordt zijn vrede jou tot brood' is een schitterende toespeling op de verzoeking om stenen in brood te veranderen.",
         "suggestie_gebruik": "Intocht"
       },
       {
@@ -1316,9 +1269,59 @@
         "bundel": "Weerklank",
         "titel": "Hoe moeilijk is de strijd",
         "eerste_regel": "Hoe moeilijk is de strijd, Heer, die ik daaglijks ken",
+        "type_match": "Thematisch",
+        "karakter": "Strijdlied - eerlijk",
+        "toelichting": "Verwoordt de innerlijke strijd van Romeinen 7, die nauw aansluit bij de thematiek van Romeinen 5: de strijd tussen de oude en nieuwe mens.",
+        "suggestie_gebruik": "Kyrie"
+      },
+      {
+        "nummer": "71",
+        "bundel": "Weerklank",
+        "titel": "In Christus brengt God ons terecht",
+        "eerste_regel": "In Christus brengt God ons terecht, Hij blijft zijn schepping trouw",
+        "type_match": "Thematisch",
+        "karakter": "Verzoenend - hoopvol",
+        "toelichting": "Bezingt Christus als de 'nieuwe mens', de vervulling van wat in Adam verloren ging (Romeinen 5).",
+        "suggestie_gebruik": "Gloria"
+      },
+      {
+        "nummer": "141",
+        "bundel": "Weerklank",
+        "titel": "Diep, o God, voor U gebogen",
+        "eerste_regel": "Diep, o God, voor U gebogen, schuldig voor uw hoog gericht",
         "type_match": "Emotioneel",
-        "karakter": "Persoonlijk en eerlijk",
-        "toelichting": "Dit lied verwoordt de innerlijke strijd tussen goed en kwaad, passend bij de menselijke ervaring van verzoeking zoals Adam en Jezus die kenden.",
+        "karakter": "Boetelied",
+        "toelichting": "Een lied van diep berouw dat de brug slaat naar het kruis van Christus als enige uitweg uit de schuld.",
+        "suggestie_gebruik": "Kyrie"
+      },
+      {
+        "nummer": "153",
+        "bundel": "Weerklank",
+        "titel": "Leer mij, o Heer, uw lijden recht betrachten",
+        "eerste_regel": "Leer mij, o Heer, uw lijden recht betrachten",
+        "type_match": "Seizoen",
+        "karakter": "Meditatief",
+        "toelichting": "Oproep tot overdenking van het lijden van Christus, die als 'mens gehoorzaam' bleef waar wij faalden.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "372",
+        "bundel": "Weerklank",
+        "titel": "Adam sleepte allen mede",
+        "eerste_regel": "Adam sleepte allen mede in zijn val in duis’tre nacht",
+        "type_match": "Schriftlezing",
+        "karakter": "Leerstellig - verhalend",
+        "toelichting": "HET lied voor deze zondag. Het zet Adam en Christus direct tegenover elkaar, exact zoals in de epistellezing uit Romeinen 5.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "417",
+        "bundel": "Weerklank",
+        "titel": "Bewaar, o Vader, ons altijd",
+        "eerste_regel": "Bewaar, o Vader, ons altijd, wanneer de duivel ons bestrijdt",
+        "type_match": "Thematisch",
+        "karakter": "Gebed om kracht",
+        "toelichting": "Een gebed om stand te houden tegen de 'boze wereld' en het 'kwade hart', passend bij de verzoeking in de woestijn.",
         "suggestie_gebruik": "Kyrie"
       },
       {
@@ -1327,72 +1330,72 @@
         "titel": "Schuldig staan wij voor U, Heer",
         "eerste_regel": "Schuldig staan wij voor U, Heer, schuldig, onweersproken",
         "type_match": "Thematisch",
-        "karakter": "Ootmoedig boetelied",
-        "toelichting": "Een krachtig lied voor de schuldbelijdenis. De regel 'steen voor brood gegeven' is een subtiele maar rake verwijzing naar de verzoeking in de woestijn.",
+        "karakter": "Collectieve schuldbelijdenis",
+        "toelichting": "Indringende tekst over hoe wij 'mensen ontrecht' hebben en 'steen voor brood' gaven. Een spiegel voor de verzoeking.",
         "suggestie_gebruik": "Kyrie"
       },
       {
-        "nummer": "417",
+        "nummer": "547",
         "bundel": "Weerklank",
-        "titel": "Bewaar, o Vader, ons altijd",
-        "eerste_regel": "Bewaar, o Vader, ons altijd, wanneer de duivel ons bestrijdt",
-        "type_match": "Thematisch",
-        "karakter": "Gebed om bewaring",
-        "toelichting": "Een gebed om standvastigheid tegenover de 'boze wereld' en het eigen hart dat 'naar het kwade neigt'. Zeer passend bij de thematiek van weerstand.",
-        "suggestie_gebruik": "Gebed"
-      },
-      {
-        "nummer": "142",
-        "bundel": "Weerklank",
-        "titel": "Gethsémané, die nacht moest eenmaal komen",
-        "eerste_regel": "Gethsémané, die nacht moest eenmaal komen",
-        "type_match": "Verrassend",
-        "karakter": "Meditatief over de strijd van Jezus",
-        "toelichting": "Hoewel Gethsémané later in de lijdensweek valt, is de thematiek van 'waken en bidden' en de strijd tegen de verzoeking identiek aan de woestijnervaring.",
+        "titel": "Jezus diep in de woestijn",
+        "eerste_regel": "Jezus diep in de woestijn, eenzaam en vol vragen",
+        "type_match": "Schriftlezing",
+        "karakter": "Verhalend",
+        "toelichting": "Heldere berijming van de evangelielezing. Benadrukt het belang van 'wagent op Gods woorden'.",
         "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "71",
-        "bundel": "Weerklank",
-        "titel": "In Christus brengt God ons terecht",
-        "eerste_regel": "In Christus brengt God ons terecht, Hij blijft zijn schepping trouw",
-        "type_match": "Thematisch",
-        "karakter": "Hoopvol en herstellend",
-        "toelichting": "Dit lied bezingt het herstel van de schepping in Christus. Het vormt het antwoord op de val van Adam uit Genesis 3.",
-        "suggestie_gebruik": "Slotlied"
       }
     ],
     "weerklank_psalmen": [],
     "sela": [
+      {
+        "nummer": "9",
+        "bundel": "Sela",
+        "titel": "Mijn toevlucht (Psalm 91)",
+        "eerste_regel": "De Heer is je schild en bevrijder",
+        "type_match": "Contextueel",
+        "karakter": "Modern - krachtig",
+        "toelichting": "Hedendaagse versie van Psalm 91. 'Onder zijn vleugels ben je veilig' biedt troost in tijden van beproeving.",
+        "suggestie_gebruik": "Intocht"
+      },
+      {
+        "nummer": "21",
+        "bundel": "Sela",
+        "titel": "Gebed om vrijheid",
+        "eerste_regel": "Maak ons vrij van de wereld Heer",
+        "type_match": "Thematisch",
+        "karakter": "Smeekgebed - actueel",
+        "toelichting": "Vraagt om bevrijding van de 'ban van geld en tijd', wat direct linkt aan de verzoeking van rijkdom en macht.",
+        "suggestie_gebruik": "Kyrie"
+      },
       {
         "nummer": "25",
         "bundel": "Sela",
         "titel": "Wonderlijke raad van God",
         "eerste_regel": "God die naar zijn wezen schiep. Adem die tot leven riep.",
         "type_match": "Schriftlezing",
-        "karakter": "Theologisch rijk en verhalend",
-        "toelichting": "Dit lied overbrugt de hele heilsgeschiedenis: van de schepping en de 'boom van kennis' (Genesis) naar de 'boom van leven' (het kruis). Perfecte match met de lezingen.",
+        "karakter": "Heilsgeschiedkundig",
+        "toelichting": "Uniek lied dat de hele boog van Genesis 2 (stof, hof) naar het kruis (boom van leven) beschrijft. Perfecte match met de lezingen.",
         "suggestie_gebruik": "Schriftlied"
       },
       {
-        "nummer": "9",
+        "nummer": "125",
         "bundel": "Sela",
-        "titel": "Mijn toevlucht (Psalm 91)",
-        "eerste_regel": "De Heer is je schild en bevrijder, de redder die niet van je wijkt.",
-        "type_match": "Schriftlezing",
-        "karakter": "Krachtig en modern",
-        "toelichting": "Een eigentijdse bewerking van Psalm 91. Zeer geschikt om de belofte van Gods nabijheid in de strijd te bezingen.",
-        "suggestie_gebruik": "Schriftlied"
+        "titel": "Bid met mij",
+        "eerste_regel": "Bid met mij in deze lange nacht",
+        "type_match": "Seizoen",
+        "karakter": "Waakzaam - verstild",
+        "toelichting": "Oproep tot waakzaamheid en gebed, passend bij de veertig dagen en de strijd in de woestijn/Gethsemane.",
+        "suggestie_gebruik": "Kyrie"
       },
       {
-        "nummer": "21",
+        "nummer": "175",
         "bundel": "Sela",
-        "titel": "Gebed om vrijheid",
-        "eerste_regel": "Maak ons vrij van de wereld Heer, van wat ons betoverd heeft.",
+        "titel": "Ik leef",
+        "eerste_regel": "Ik leef door te sterven, door Jezus’ weg te gaan",
         "type_match": "Thematisch",
-        "karakter": "Reflectief en bevrijdend",
-        "toelichting": "Dit lied benoemt moderne verzoekingen (geld, tijd, zorgen) en vraagt om de vrijheid van een kind van God. Het resoneert met de weerstand van Jezus.",
-        "suggestie_gebruik": "Gebed"
+        "karakter": "Toewijding",
+        "toelichting": "Verwoordt de paradox van het christelijk leven: sterven aan de 'oude mens' om met Christus op te staan.",
+        "suggestie_gebruik": "Slotlied"
       },
       {
         "nummer": "212",
@@ -1400,8 +1403,18 @@
         "titel": "Kyrie Eleison",
         "eerste_regel": "Heer, U weet wat er binnen in ons leeft",
         "type_match": "Contextueel",
-        "karakter": "Eerlijk en zoekend",
-        "toelichting": "Een prachtig Kyrie dat erkent dat God onze 'zwakke plekken' kent. Het sluit aan bij de inkeer die bij de eerste zondag van de veertigdagentijd hoort.",
+        "karakter": "Liturgisch - modern",
+        "toelichting": "Een eerlijk Kyrie dat erkent dat God onze 'zwakke plekken' kent. Zeer geschikt voor de start van de veertigdagentijd.",
+        "suggestie_gebruik": "Kyrie"
+      },
+      {
+        "nummer": "213",
+        "bundel": "Sela",
+        "titel": "Ken mijn hart",
+        "eerste_regel": "Ken mijn hart, o God. Doorgrond steeds mijn gedachten.",
+        "type_match": "Thematisch",
+        "karakter": "Intiem - aanbiddend",
+        "toelichting": "Gebaseerd op Psalm 139. Het vraagt God om leiding op 'uw weg', weg van de eigen dwaalwegen.",
         "suggestie_gebruik": "Kyrie"
       },
       {
@@ -1409,60 +1422,20 @@
         "bundel": "Sela",
         "titel": "Vergeef ons",
         "eerste_regel": "Voor het duister, waarin wij lagen te dromen",
-        "type_match": "Thematisch",
-        "karakter": "Schuldbewust en dankbaar",
-        "toelichting": "Dit lied verbindt onze eigen schuld direct met het lijden van Christus. 'Wij weten niet wat we doen' herhaalt het kruisgebed van Jezus.",
-        "suggestie_gebruik": "Kyrie"
-      },
-      {
-        "nummer": "5",
-        "bundel": "Sela",
-        "titel": "Heer wijs mij uw weg",
-        "eerste_regel": "Heer, wijs mij uw weg en leid mij als een kind",
-        "type_match": "Thematisch",
-        "karakter": "Ootmoedig gebed",
-        "toelichting": "Een lied om leiding en wijsheid, essentieel wanneer men voor keuzes staat zoals Jezus in de woestijn. Het benadrukt dat Christus de weg al gelopen heeft.",
-        "suggestie_gebruik": "Gebed"
-      },
-      {
-        "nummer": "171",
-        "bundel": "Sela",
-        "titel": "Vul ons met uw liefde",
-        "eerste_regel": "Achter onze schone schijn, waar we broos en kwetsbaar zijn",
         "type_match": "Emotioneel",
-        "karakter": "Ontmaskerend en helend",
-        "toelichting": "Dit lied gaat over het afleggen van maskers ('schone schijn'), wat past bij de eerlijkheid van de veertigdagentijd en de confrontatie met de verzoeker.",
+        "karakter": "Schuldbelijdenis",
+        "toelichting": "Confronterende tekst over onze rol in het lijden van Christus ('ons speeksel op uw wangen'). Past bij de diepe inkeer.",
         "suggestie_gebruik": "Kyrie"
       },
       {
-        "nummer": "125",
+        "nummer": "239",
         "bundel": "Sela",
-        "titel": "Bid met mij",
-        "eerste_regel": "Bid met mij in deze lange nacht.",
-        "type_match": "Seizoen",
-        "karakter": "Verstild en solidair",
-        "toelichting": "Hoewel geschreven voor de lijdensnacht, past de oproep tot waakzaamheid en gebed uitstekend bij de veertig dagen van inkeer en strijd.",
-        "suggestie_gebruik": "Gebed"
-      },
-      {
-        "nummer": "35",
-        "bundel": "Sela",
-        "titel": "Ik ben",
-        "eerste_regel": "Wie zal ons voeden, het brood met ons breken?",
-        "type_match": "Schriftlezing",
-        "karakter": "Christocentrisch",
-        "toelichting": "Dit lied stelt de vraag naar het ware brood en water, wat direct linkt naar de honger van Jezus in de woestijn en zijn antwoord dat Hij het Woord is.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "250",
-        "bundel": "Sela",
-        "titel": "Maak ons een zegen voor uw schepping",
-        "eerste_regel": "Maak ons een zegen voor uw schepping en vergeef ons waar het misging.",
-        "type_match": "Contextueel",
-        "karakter": "Verantwoordelijk en biddend",
-        "toelichting": "In het licht van Genesis 2 en 3 herinnert dit lied ons aan onze roeping als beelddragers en vraagt om vergeving voor de ecologische en morele val.",
-        "suggestie_gebruik": "Slotlied"
+        "titel": "Heer, wat ziet U?",
+        "eerste_regel": "Heer, wat ziet U in een mens? Hoe had U mij bedacht?",
+        "type_match": "Verrassend",
+        "karakter": "Reflectief",
+        "toelichting": "Stelt de vraag naar onze verantwoordelijkheid voor de schepping en onze medemens. 'Ik heb voor mezelf geleefd' raakt de kern van de zonde.",
+        "suggestie_gebruik": "Kyrie"
       }
     ],
     "oke4kids": [
@@ -1472,69 +1445,19 @@
         "titel": "Adam Waar ben je?",
         "eerste_regel": "Adam waar ben je Waar heb je je verstopt",
         "type_match": "Schriftlezing",
-        "karakter": "Speels maar indringend",
-        "toelichting": "Een perfecte vertolking van Genesis 3 voor kinderen (en volwassenen). Het benadrukt Gods zoekende liefde ondanks de ongehoorzaamheid.",
+        "karakter": "Verhalend - kinderlijk maar diep",
+        "toelichting": "Directe verwerking van Genesis 3. De herhaling van de vraag 'Adam waar ben je' is zeer indringend voor jong en oud.",
         "suggestie_gebruik": "Schriftlied"
       },
       {
-        "nummer": "89",
+        "nummer": "1210",
         "bundel": "Oke4Kids",
-        "titel": "Oorlog in je hoofd",
-        "eerste_regel": "D’r is oorlog in je hoofd heb jij ’t al gemerkt",
-        "type_match": "Thematisch",
-        "karakter": "Direct en herkenbaar",
-        "toelichting": "Dit lied maakt de verzoeking van Jezus heel concreet voor de belevingswereld van vandaag: de stemmetjes die aanzetten tot kwaad en hoe je die in Jezus' naam kunt wegsturen.",
-        "suggestie_gebruik": "Schriftlied"
-      },
-      {
-        "nummer": "1238",
-        "bundel": "Oke4Kids",
-        "titel": "Een heel nieuw hart",
-        "eerste_regel": "Er is een heel nieuw hart voor jou",
-        "type_match": "Thematisch",
-        "karakter": "Uitnodigend",
-        "toelichting": "Een eenvoudige samenvatting van de belofte uit Psalm 51. Het vraagt om een keuze, passend bij de oproep tot bekering.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "60",
-        "bundel": "Oke4Kids",
-        "titel": "Klein maar dapper",
-        "eerste_regel": "Het is elke dag weer kiezen gaan we winnen of verliezen",
-        "type_match": "Thematisch",
-        "karakter": "Vrolijk en bemoedigend",
-        "toelichting": "Moedigt kinderen aan om te kiezen voor het goede en de waarheid, ook als ze worden uitgelachen. Een praktische toepassing van 'weerstand'.",
-        "suggestie_gebruik": "Slotlied"
-      },
-      {
-        "nummer": "18",
-        "bundel": "Oke4Kids",
-        "titel": "Psalm 25",
-        "eerste_regel": "Here, maak mij Uw wegen bekend en toon mij de weg die goed is voor mij",
-        "type_match": "Contextueel",
-        "karakter": "Leervol en biddend",
-        "toelichting": "De kernverzen van Psalm 25 op een eenvoudige melodie. Helpt kinderen om de naam van deze zondag (Invocabit) te begrijpen.",
-        "suggestie_gebruik": "Intocht"
-      },
-      {
-        "nummer": "66",
-        "bundel": "Oke4Kids",
-        "titel": "Sorry zeggen",
-        "eerste_regel": "Ik geef wel eens een harde duw da’s helemaal niet goed",
-        "type_match": "Thematisch",
-        "karakter": "Eerlijk en praktisch",
-        "toelichting": "Maakt het abstracte begrip 'bekering' of 'boete' heel concreet: sorry zeggen tegen de ander en tegen God. Past bij de sfeer van inkeer.",
-        "suggestie_gebruik": "Kyrie"
-      },
-      {
-        "nummer": "1071",
-        "bundel": "Oke4Kids",
-        "titel": "Zoals klei in de hand van de pottebakker",
+        "titel": "Zoals de klei in de hand van de pottenbakker",
         "eerste_regel": "Zoals klei in de hand van de pottenbakker",
-        "type_match": "Verrassend",
-        "karakter": "Overgegeven",
-        "toelichting": "Refereert aan de schepping van de mens uit stof/klei (Genesis 2). Het is een gebed om door God gevormd te worden, ook als dat 'pijn doet'.",
-        "suggestie_gebruik": "Gebed"
+        "type_match": "Thematisch",
+        "karakter": "Vormbaar - overgave",
+        "toelichting": "Linkt naar de schepping van de mens uit stof (Genesis 2). Gebed om door God gevormd te worden tot een 'vat tot zijn eer'.",
+        "suggestie_gebruik": "Kyrie"
       },
       {
         "nummer": "519",
@@ -1542,29 +1465,151 @@
         "titel": "Jezus ging Gods weg",
         "eerste_regel": "Jezus ging Gods weg en wie hem daar wil volgen",
         "type_match": "Thematisch",
-        "karakter": "Krachtig",
-        "toelichting": "Benadrukt dat het volgen van Jezus niet altijd makkelijk is, maar dat niets ons kan scheiden van Gods liefde. Een troostvolle gedachte bij beproeving.",
-        "suggestie_gebruik": "Schriftlied"
+        "karakter": "Moedig",
+        "toelichting": "Bemoediging voor kinderen (en volwassenen) om Jezus te volgen, ook als je 'onder druk komt te staan'.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "162",
+        "bundel": "Oke4Kids",
+        "titel": "Maak je niet druk",
+        "eerste_regel": "Maak je niet druk over wat je zult eten",
+        "type_match": "Thematisch",
+        "karakter": "Vrolijk - relativerend",
+        "toelichting": "Directe link naar de Bergrede en de verzoeking om brood. Het leert vertrouwen op de Vader in plaats van op materiële zaken.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "601",
+        "bundel": "Oke4Kids",
+        "titel": "Opnieuw, alweer",
+        "eerste_regel": "Je wou het niet maar deed het toch",
+        "type_match": "Thematisch",
+        "karakter": "Bevrijdend",
+        "toelichting": "Heel herkenbaar lied over spijt en de kans op een 'nieuwe start' bij God. Past bij de thematiek van vergeving.",
+        "suggestie_gebruik": "Kyrie"
       },
       {
         "nummer": "1282",
         "bundel": "Oke4Kids",
         "titel": "Heer, ontferm U",
-        "eerste_regel": "Mensen zonder liefde, zonder lied - Heer, ontferm U over ons.",
+        "eerste_regel": "Mensen zonder liefde, zonder lied",
         "type_match": "Contextueel",
-        "karakter": "Sociaal bewogen",
-        "toelichting": "Een litanie die de nood van de wereld voor God brengt. Zeer geschikt als Kyrie in de veertigdagentijd.",
+        "karakter": "Liturgisch - sociaal bewogen",
+        "toelichting": "Een modern Kyrie dat de nood van de wereld benoemt. 'Als u iets doet, dan komt het goed'.",
         "suggestie_gebruik": "Kyrie"
       },
       {
-        "nummer": "49",
+        "nummer": "438",
         "bundel": "Oke4Kids",
-        "titel": "Zonde",
-        "eerste_regel": "Hij koopt heel vaak een kraslot maar hij wint geen rooie cent",
-        "type_match": "Verrassend",
-        "karakter": "Humoristisch met een serieuze ondertoon",
-        "toelichting": "Gebruikt alledaagse voorbeelden van 'zonde' (jammer) om uit te komen bij de echte zonde: 'nee' zeggen tegen God. Een verrassende opening voor een gesprek over Genesis 3.",
+        "titel": "Oorlog in je hoofd",
+        "eerste_regel": "D’r is oorlog in je hoofd heb jij ’t al gemerkt",
+        "type_match": "Thematisch",
+        "karakter": "Stoer - confronterend",
+        "toelichting": "Briljante vertaling van de verzoeking naar de belevingswereld van een kind: de stemmetjes die aanzetten tot kwaad.",
+        "suggestie_gebruik": "Slotlied"
+      },
+      {
+        "nummer": "441",
+        "bundel": "Oke4Kids",
+        "titel": "Leer om stil te zijn",
+        "eerste_regel": "Leer om stil te zijn want je bent niet alleen",
+        "type_match": "Seizoen",
+        "karakter": "Rustgevend",
+        "toelichting": "Past bij de veertigdagentijd als tijd van verstilling om God beter te leren kennen.",
+        "suggestie_gebruik": "Kyrie"
+      },
+      {
+        "nummer": "60",
+        "bundel": "Oke4Kids",
+        "titel": "Klein maar dapper",
+        "eerste_regel": "Het is elke dag weer kiezen gaan we winnen of verliezen",
+        "type_match": "Thematisch",
+        "karakter": "Strijdbaar",
+        "toelichting": "Moedigt aan om te kiezen voor de waarheid en de macht van God te vertrouwen in de dagelijkse strijd.",
+        "suggestie_gebruik": "Slotlied"
+      }
+    ],
+    "nieuwe_psalmberijming": [
+      {
+        "nummer": "1",
+        "bundel": "Nieuwe Psalmberijming (NPB)",
+        "titel": "Gelukkig wie verkeerd gezelschap mijdt",
+        "eerste_regel": "Gelukkig wie verkeerd gezelschap mijdt, wie niet het pad kiest",
+        "type_match": "Thematisch",
+        "karakter": "Wijsheidslied - richtinggevend",
+        "toelichting": "Reflecteert op de keuze tussen twee wegen, wat centraal staat in de verzoeking van Christus en de val van Adam.",
+        "suggestie_gebruik": "Intocht"
+      },
+      {
+        "nummer": "25",
+        "bundel": "Nieuwe Psalmberijming (NPB)",
+        "titel": "HEER, ik wil mijn hart verheffen",
+        "eerste_regel": "HEER, ik wil mijn hart verheffen: ik vertrouw op U, mijn God",
+        "type_match": "Thematisch",
+        "karakter": "Gebed om leiding",
+        "toelichting": "Vraagt om Gods wegen te leren kennen ('help mij in uw spoor te gaan'), essentieel wanneer men beproefd wordt.",
+        "suggestie_gebruik": "Kyrie"
+      },
+      {
+        "nummer": "32",
+        "bundel": "Nieuwe Psalmberijming (NPB)",
+        "titel": "Gelukkig wie door God is vrijgesproken",
+        "eerste_regel": "Gelukkig wie door God is vrijgesproken, wie met bedrog",
+        "type_match": "Thematisch",
+        "karakter": "Danklied voor vergeving",
+        "toelichting": "Sluit aan bij Romeinen 5: de vreugde van de rechtvaardiging en het belijden van schuld ('Toen ik was vastgelopen in mijn zonden').",
+        "suggestie_gebruik": "Gloria"
+      },
+      {
+        "nummer": "51",
+        "bundel": "Nieuwe Psalmberijming (NPB)",
+        "titel": "Heb medelijden God!",
+        "eerste_regel": "Heb medelijden God! Ik roep U aan omdat uw hart gevuld is",
+        "type_match": "Schriftlezing",
+        "karakter": "Boetepsalm - indringend",
+        "toelichting": "De tekst 'Vanaf de moederschoot heb ik al schuld' legt de link met de erfzonde uit de Genesis-lezing.",
         "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "91",
+        "bundel": "Nieuwe Psalmberijming (NPB)",
+        "titel": "Wie thuis is bij de hoogste Heer",
+        "eerste_regel": "Wie thuis is bij de hoogste Heer en schuilt in zijn ontferming",
+        "type_match": "Contextueel",
+        "karakter": "Vertrouwenslied",
+        "toelichting": "De belofte 'Zelfs leeuwen drijf je in het nauw' resoneert met de overwinning van Christus op de verzoeker.",
+        "suggestie_gebruik": "Intocht"
+      },
+      {
+        "nummer": "119",
+        "bundel": "Nieuwe Psalmberijming (NPB)",
+        "titel": "Als je de weg van Gods geboden gaat",
+        "eerste_regel": "Als je de weg van Gods geboden gaat, je voeten in het rechte spoor",
+        "type_match": "Thematisch",
+        "karakter": "Loflied op de wet",
+        "toelichting": "Christus weerstaat de duivel met het Woord ('Er staat geschreven'). Dit lied bezingt de kracht van dat Woord als lamp voor de voet.",
+        "suggestie_gebruik": "Schriftlied"
+      },
+      {
+        "nummer": "130",
+        "bundel": "Nieuwe Psalmberijming (NPB)",
+        "titel": "Vanuit het diepe duister",
+        "eerste_regel": "Vanuit het diepe duister vind ik geen uitweg, HEER",
+        "type_match": "Emotioneel",
+        "karakter": "Smeekgebed",
+        "toelichting": "Een klassieke De Profundis, passend bij de sfeer van inkeer en het wachten op de morgen van Pasen.",
+        "suggestie_gebruik": "Kyrie"
+      },
+      {
+        "nummer": "141",
+        "bundel": "Nieuwe Psalmberijming (NPB)",
+        "titel": "HEER, ik hef naar U beide handen",
+        "eerste_regel": "HEER, ik hef naar U beide handen en roep U om mij bij te staan",
+        "type_match": "Thematisch",
+        "karakter": "Gebed om bewaring",
+        "toelichting": "Zeer specifiek gebed: 'HEER, bewaak mijn mond', passend bij het thema van weerstand bieden aan verleiding.",
+        "suggestie_gebruik": "Kyrie"
       }
     ]
   },
@@ -7652,6 +7697,111 @@
       "prompt_tokens": 48518,
       "candidates_tokens": 3109,
       "total_tokens": 52845
+    }
+  },
+  "45_filosofie": {
+    "filosofische_duidingen": [
+      {
+        "nummer": 1,
+        "titel": "De pragmatiek van het wantrouwen: taalhandelingen in de verzoeking",
+        "filosofisch_domein": "Filosofie van de taal, hermeneutiek en semiotiek",
+        "periode_traditie": "Analytisch 20e–21e eeuw",
+        "kerndenker_of_concept": "Taalhandelingstheorie (J.L. Austin) en Griceaanse implicatuur",
+        "tekstueel_vertrekpunt": "In Genesis 3:1 opent de slang het gesprek met de vraag: \"Heeft God werkelijk gezegd...?\" In Matteüs 4:3 begint de beproever met de conditionele frase: \"Als U de Zoon van God bent...\". Beide uitingen functioneren niet als neutrale informatievragen, maar als strategische interventies in de gedeelde werkelijkheid.",
+        "duiding": "Binnen de taalfilosofie van J.L. Austin en H.P. Grice wordt taal niet slechts gezien als een middel om feiten te beschrijven, maar als een manier om handelingen te verrichten (performativiteit) en betekenis te suggereren die buiten de letterlijke tekst ligt (implicatuur). De interventie van de slang in Genesis 3 is een schoolvoorbeeld van het doorbreken van de Griceaanse 'maxime van kwaliteit'. Door te vragen of God 'werkelijk' iets heeft gezegd, suggereert de slang een onbetrouwbaarheid zonder deze expliciet te poneren. De vraag is een performatieve daad die een 'frame' van twijfel installeert. In plaats van de relatie tussen God en mens als een gegeven te accepteren, dwingt de slang de mens in een meta-positie: de mens moet nu oordelen óver het woord van God, in plaats van te leven vanuit dat woord. Dit verschuift de ontologische status van het gebod van een constituerende grens naar een discutabel object.\n\nIn de woestijn hanteert de duivel een vergelijkbare pragmatische strategie met de 'als-dan'-constructie. Volgens de logica van de taalhandelingen is de frase \"Als U de Zoon van God bent\" een aanval op de illocutionaire kracht van de hemelse stem bij de doop (\"Dit is mijn geliefde Zoon\"). De duivel nodigt Jezus uit tot een 'verificatie-operatie': als de identiteit waar is, moet zij bewezen worden door een effect (brood). Jezus' reactie met \"Er staat geschreven\" is filosofisch interessant omdat Hij weigert in dit verificatie-frame te stappen. Hij beantwoordt de hypothetische taal van de duivel met de declaratieve taal van de Schrift. Voor Jezus is het Woord geen hypothese die getest moet worden, maar een 'basic belief' (in de zin van Alvin Plantinga) dat de basis vormt voor alle verdere handelingen. De strijd in de woestijn is daarmee een strijd om de soevereiniteit van de taal: wie definieert de kaders waarbinnen de werkelijkheid wordt geïnterpreteerd? De duivel probeert taal te reduceren tot een instrument voor macht en behoeftebevrediging, terwijl Jezus de taal (het Woord) handhaaft als de ruimte van gehoorzaamheid en relatie. De 'listigheid' van de slang en de duivel schuilt niet in een directe leugen, maar in de subtiele verschuiving van de pragmatische context, waarbij de hoorder wordt verleid om de positie van ontvanger in te ruilen voor die van soeverein beoordelaar.",
+        "homiletische_inzet": "De voorganger kan deze duiding gebruiken om te laten zien dat verleiding vaak niet begint bij een immorele daad, maar bij een verschuiving in hoe we over de werkelijkheid spreken. De preek kan de vraag stellen: wanneer stoppen wij met luisteren en beginnen we de stem van de ander (of van God) te 'analyseren' als een object buiten onszelf? De beweging in de preek zou kunnen zijn van de analyse van Gods woorden naar het wonen in Gods woorden.",
+        "bronnen": [
+          "Austin, J. L. (1962). How to Do Things with Words. Oxford University Press.",
+          "Grice, H. P. (1975). Logic and Conversation. In Syntax and Semantics, Vol. 3, Speech Acts. Academic Press.",
+          "Plantinga, A. (2000). Warranted Christian Belief. Oxford University Press."
+        ]
+      },
+      {
+        "nummer": 2,
+        "titel": "De verzadiging van de blik: afgod versus icoon",
+        "filosofisch_domein": "Filosofie van de religie (Fenomenologie)",
+        "periode_traditie": "Hedendaags Frans (Fenomenologische 'theologische wending')",
+        "kerndenker_of_concept": "Jean-Luc Marion: Het verzadigde fenomeen en de afgod (l'idole)",
+        "tekstueel_vertrekpunt": "Genesis 3:6 beschrijft hoe de vrouw 'zag' dat de boom goed was voor voedsel en 'aanlokkelijk voor de ogen'. Matteüs 4:8 beschrijft hoe de duivel Jezus meeneemt naar een berg en Hem alle koninkrijken 'toont' (deiknysin) in hun pracht (doxa).",
+        "duiding": "Jean-Luc Marion maakt in zijn fenomenologische analyse een cruciaal onderscheid tussen de 'afgod' (l'idole) en de 'icoon'. Een afgod is een fenomeen dat de blik van de toeschouwer vangt en 'verzadigt'. Het object is zo schitterend of begerenswaardig dat de blik erin tot rust komt; de blik gaat niet verder dan het object zelf. De afgod spiegelt de eigen begeerte van de toeschouwer terug. In Genesis 3:6 vindt precies deze verzadiging plaats. De boom wordt een afgod omdat de blik van de vrouw gefixeerd raakt op de esthetische en nutritionele kwaliteiten van de vrucht. De horizon van de relatie met de Gever (God) verdwijnt achter de schittering van het gegevene (de vrucht). De 'geopende ogen' uit vers 7 zijn de ogen van de afgodendienaar: zij zien slechts de materiële naaktheid en het tekort, omdat de spirituele diepte van de wereld is weggevallen.\n\nIn de woestijn probeert de duivel Jezus te vangen in een vergelijkbare esthetiek van de afgod. Door de koninkrijken van de wereld te 'tonen', presenteert hij een schouwspel (spectacle) dat bedoeld is om de blik van Jezus te verzadigen. De schittering van de macht moet de blik blokkeren, zodat deze niet langer op de Vader gericht is. Jezus' weigering is een fenomenologische 'reductie': Hij weigert het getoonde als het eindpunt van Zijn blik te accepteren. Voor Jezus fungeert de werkelijkheid niet als afgod, maar als 'icoon'. Een icoon, aldus Marion, is een venster dat de blik niet vasthoudt, maar doorlaat naar de oneindigheid van de Ander. Jezus kijkt dóór de schittering van de koninkrijken heen naar de exclusieve aanbidding van God (v. 10). Waar de afgod de blik van de mens 'fixeert' op het object, daar bevrijdt de icoon de blik voor de relatie. De verzoeking in de woestijn is daarmee een strijd om de visuele integriteit: laat Jezus Zichzelf verblinden door de schittering van de wereldmacht, of blijft Zijn blik transparant voor de wil van de Vader? De overwinning van Jezus herstelt de mogelijkheid van een iconische blik op de wereld, waarbij schepselen niet langer als autonome consumptie-objecten worden gezien, maar als tekens die naar hun Schepper verwijzen.",
+        "homiletische_inzet": "De predikant kan de gemeente uitnodigen om kritisch te kijken naar de 'afgoden' van onze tijd (schermen, consumptiegoederen, status) die onze blik verzadigen en ons blind maken voor de naaste en voor God. De homiletische beweging is de verschuiving van 'fixatie' (het willen bezitten van wat we zien) naar 'transparantie' (het zien van de wereld als een geschenk dat naar de Gever verwijst).",
+        "bronnen": [
+          "Marion, J.-L. (1991). God Without Being. University of Chicago Press. (Hoofdstuk: The Idol and the Icon)",
+          "Marion, J.-L. (2002). Being Given: Toward a Phenomenology of Givenness. Stanford University Press.",
+          "Gschwandtner, C. M. (2007). Reading Jean-Luc Marion: Exceeding Metaphysics. Indiana University Press."
+        ]
+      },
+      {
+        "nummer": 3,
+        "titel": "Wu Wei in de woestijn: de kracht van het niet-handelen",
+        "filosofisch_domein": "Niet-Westerse filosofie (Daoïsme)",
+        "periode_traditie": "Klassiek Chinees",
+        "kerndenker_of_concept": "Laozi: Wu Wei (niet-handelen / handelen zonder dwang)",
+        "tekstueel_vertrekpunt": "Na veertig dagen vasten heeft Jezus honger (Matt 4:2). De verzoeking van de duivel is steeds een aansporing tot actie: \"beveel\", \"spring\", \"aanbid\". Jezus' weerstand bestaat opvallend genoeg uit een weigering om deze wonderlijke daden te verrichten.",
+        "duiding": "In het Daoïsme is *Wu Wei* een van de meest centrale, doch vaak verkeerd begrepen concepten. Het betekent letterlijk 'niet-handelen', maar duidt op een handelen dat niet ingaat tegen de natuurlijke loop van de *Dao* (de Weg). Het is een handelen zonder ego-betrokkenheid, zonder dwang en zonder het forceren van resultaten. De verzoekingen in de woestijn kunnen filosofisch worden geduid als uitnodigingen tot *Yu Wei*: geforceerd, kunstmatig handelen dat de orde van de werkelijkheid wil onderwerpen aan de eigen wil. De duivel stelt voor om stenen in brood te veranderen. Vanuit een Daoïstisch perspectief is dit een gewelddadige ingreep in de aard der dingen. Een steen heeft zijn eigen 'Te' (innerlijke kracht) als steen; hem dwingen brood te zijn is een ontkenning van de natuurlijke orde omwille van een onmiddellijke behoefte.\n\nJezus belichaamt in Zijn antwoorden een volmaakte staat van *Wu Wei*. Hij handelt niet door wonderen te verrichten, maar door Zichzelf af te stemmen op de Weg (het Woord van God). Zijn vasten is een oefening in leegte, waardoor Hij ontvankelijk wordt voor de stroom van de goddelijke wil. De duivel wil Jezus verleiden tot een spectaculair vertoon van macht, maar Jezus kiest voor de kracht van de zachtheid en de stilte. In de *Tao Te Ching* wordt vaak het beeld van water gebruikt: het is zacht en geeft mee, maar overwint uiteindelijk het harde. De weigering van Jezus om van de tempel te springen is een weigering om God te dwingen tot een kunstmatige actie. Jezus 'laat het gebeuren' in plaats van dat Hij het 'maakt'.\n\nFilosofisch gezien is de woestijn de plek waar Jezus leert om niet te interveniëren vanuit het ego. Waar Adam en Eva in de tuin probeerden de vrucht 'toe te eigenen' (een vorm van agressief handelen), daar laat Jezus de stenen stenen blijven en de honger honger. Deze ascese is geen passiviteit, maar een hoogst actieve vorm van aanwezigheid waarbij de eigen wil wordt gesynchroniseerd met de kosmische/goddelijke orde. Het resultaat is niet macht over de wereld, maar harmonie met de bron van het leven. Aan het eind van het verhaal dienen de engelen Hem (v. 11); dit is de ultieme illustratie van *Wu Wei*: wanneer men ophoudt te forceren, komt de verzorging vanzelf. Jezus overwint de duivel niet door een grotere krachtmeting, maar door de strijd zelf te ontbinden in de rust van het niet-moeten.",
+        "homiletische_inzet": "De preek kan het vasten in de veertigdagentijd presenteren als een bevrijding van de 'dwang om te presteren' en de 'drang om alles naar onze hand te zetten'. In een maatschappij die geobsedeerd is door maakbaarheid en interventie, biedt Jezus' *Wu Wei* een alternatief: het vertrouwen dat het leven niet 'gemaakt' hoeft te worden, maar ontvangen mag worden in de ruimte van het luisteren.",
+        "bronnen": [
+          "Laozi (2010). Tao Te Ching (Vertaling: Kristofer Schipper). Uitgeverij Augustus.",
+          "Slingerland, E. (2003). Effortless Action: Wu-wei as Conceptual Metaphor and Spiritual Ideal in Early China. Oxford University Press.",
+          "Merton, T. (1965). The Way of Chuang Tzu. New Directions."
+        ]
+      },
+      {
+        "nummer": 4,
+        "titel": "Statusfuncties en representatieve identiteit",
+        "filosofisch_domein": "Metafysica en sociale ontologie",
+        "periode_traditie": "Analytisch 20e–21e eeuw",
+        "kerndenker_of_concept": "John Searle: Sociale feiten en Statusfuncties",
+        "tekstueel_vertrekpunt": "Romeinen 5:12-19 bouwt een strikte analogie op tussen de 'ene mens' (Adam) en de 'ene mens' (Christus). De daden van deze individuen hebben constitutionele gevolgen voor de gehele mensheid: door de één worden allen 'zondaars', door de ander 'rechtvaardigen'.",
+        "duiding": "De tekst van Paulus roept fundamentele vragen op over hoe de identiteit van een individu verbonden kan zijn met die van een collectief. In de sociale ontologie van John Searle wordt dit verklaard via het concept van 'statusfuncties'. Een statusfunctie is een betekenis die aan een object of persoon wordt toegekend die deze niet op basis van fysieke eigenschappen bezit (bijvoorbeeld: dit stuk papier 'is' geld). Dit gebeurt via collectieve intentionaliteit: wij spreken af dat X geldt als Y in context C. Hoewel Paulus spreekt over een theologische werkelijkheid, is de structuur van zijn argument strikt ontologisch. Adam en Christus fungeren als 'institutionele' figuren wiens daden de status van de gehele groep veranderen.\n\nWanneer Paulus zegt dat door één mens de zonde de wereld is binnengekomen, beschrijft hij het ontstaan van een 'sociaal feit' in de menselijke conditie. De daad van Adam creëert een nieuwe institutionele werkelijkheid (de status van 'zondaar' of 'sterfelijke') die onafhankelijk van de individuele wil van latere mensen bestaat. Je wordt in deze status geboren, zoals je in een staatsburgerschap wordt geboren. Het is een 'brute reality' geworden binnen de sociale wereld. Christus wordt door Paulus gepresenteerd als degene die een nieuwe statusfunctie institueert: de rechtvaardiging. Dit is geen morele kwalificatie van individuen, maar een nieuwe ontologische categorie die door Christus' gehoorzaamheid is gecreëerd en voor de 'vele' beschikbaar is gesteld.\n\nFilosofisch gezien daagt dit ons individualistische mensbeeld uit. Wij zien onszelf vaak als autonome atomen, maar Paulus (en Searle) laten zien dat onze identiteit altijd is ingebed in grotere representatieve structuren. De 'typologie' van Adam en Christus is een vorm van 'sociale metafysica': het lot van de velen is verankerd in de representatieve actie van de één. Dit betekent dat bevrijding niet slechts een individuele psychologische verandering is, maar een overgang naar een andere institutionele ruimte. Je verhuist van het 'domein van de dood' naar het 'domein van de genade'. De verzoeking in de woestijn is in dit licht de cruciale test of Jezus de statusfunctie van 'Messias' en 'Nieuwe Adam' kan waarmaken. Als Hij zou bezwijken, zou de nieuwe institutionele werkelijkheid van de genade niet tot stand komen. Zijn standvastigheid is de handeling die de 'vrijspraak' (v. 18) als een nieuw sociaal en theologisch feit in de wereld vestigt.",
+        "homiletische_inzet": "De voorganger kan deze lens gebruiken om uit te leggen dat christen-zijn niet gaat over 'heel erg je best doen', maar over het aanvaarden van een nieuwe status die je door Christus is geschonken. Het is de verplaatsing van de ene 'familie' (Adam) naar de andere (Christus). De preek kan de bevrijding thematiseren van een individualistisch schuldgevoel naar een collectieve verankering in de overwinning van Christus.",
+        "bronnen": [
+          "Searle, J. R. (1995). The Construction of Social Reality. Free Press.",
+          "Gilbert, M. (1989). On Social Facts. Routledge.",
+          "Tuomela, R. (2007). The Philosophy of Social Practices: A Collective Acceptance View. Cambridge University Press."
+        ]
+      },
+      {
+        "nummer": 5,
+        "titel": "Het geleefde lichaam: honger als intentionele boog",
+        "filosofisch_domein": "Filosofie van de geest en lichamelijkheid",
+        "periode_traditie": "Fenomenologie 20e eeuw",
+        "kerndenker_of_concept": "Maurice Merleau-Ponty: Le corps propre (het eigen, geleefde lichaam)",
+        "tekstueel_vertrekpunt": "Genesis 2:7 benadrukt de materiële oorsprong van de mens (stof uit de aardbodem). In Matteüs 4:2 wordt de fysieke sensatie van honger expliciet benoemd als het breekpunt waar de verzoeking aangrijpt.",
+        "duiding": "Maurice Merleau-Ponty verzette zich tegen het cartesiaanse dualisme dat het lichaam ziet als een machine die door de geest wordt bestuurd. Voor Merleau-Ponty 'is' de mens zijn lichaam (*le corps propre*). Het lichaam is geen object in de wereld, maar ons middel om 'een wereld te hebben'. Honger is in deze optiek niet simpelweg een tekort aan calorieën in een biologisch apparaat, maar een fundamentele heroriëntatie van onze 'intentionele boog'. Wanneer we hevige honger hebben, verandert de wereld: objecten worden potentieel voedsel, de horizon versmalt tot de behoefte. De duivel in de woestijn maakt gebruik van deze fenomenologische verschuiving. Door te zeggen 'beveel deze stenen dat zij broden worden', probeert hij Jezus te verleiden om Zijn belichaamde aanwezigheid te reduceren tot een puur biologisch overlevingsmechanisme.\n\nJezus' antwoord dat de mens niet leeft van brood alleen, is filosofisch gezien een verdediging van de menselijke belichaming in haar volle breedte. Hij ontkent de honger niet (Hij is werkelijk mens, gevormd uit 'stof'), maar Hij weigert de honger de enige betekenisgever van Zijn lichaam te laten zijn. Voor Merleau-Ponty is het lichaam ook de plaats van expressie en transcendentie. Jezus handhaaft de 'intentionele boog' naar God, zelfs dwars door de biologische nood heen. Zijn lichaam is niet slechts een maag die gevuld moet worden, maar een getuigenis van Gods aanwezigheid. De verzoeking is de poging om de mens terug te werpen op zijn 'stof-zijn' (biologisch reductionisme), terwijl Jezus laat zien dat de 'levensadem' (de geestelijke dimensie) de materiële behoefte niet vervangt, maar integreert in een hogere roeping.\n\nIn Psalm 51:12 wordt gevraagd om een 'zuiver hart' en een 'standvastige geest'. In de fenomenologie van het lichaam kunnen we dit zien als de wens voor een integer lichaam-subject: een lichaam dat niet versnipperd raakt door zijn eigen begeerten, maar een eenheid (integriteit) bewaart in zijn gerichtheid op het goede. De woestijnervaring van Jezus is de ultieme manifestatie van deze lichamelijke integriteit. Hij bewijst dat de menselijke existentie, hoewel kwetsbaar en geworteld in de aarde, niet samenvalt met haar biologische driften. Het 'stof' van Genesis 2 is niet een gevangenis, maar het noodzakelijke medium waarin de gehoorzaamheid gestalte krijgt. Jezus overwint de verzoeking niet door Zijn lichaam te ontkennen, maar door het in te zetten als een offer van lof, waarbij de honger zelf een vorm van gebed wordt.",
+        "homiletische_inzet": "De predikant kan de menselijke kwetsbaarheid (ziekte, ouderdom, behoefte) thematiseren niet als een hindernis voor het geloof, maar als de plek waar het geloof belichaamd wordt. De preek kan de nadruk leggen op 'aanwezigheid' in plaats van 'beheersing': hoe blijven we menselijk en op God gericht wanneer ons lichaam ons herinnert aan ons tekort en onze afhankelijkheid?",
+        "bronnen": [
+          "Merleau-Ponty, M. (1945). Phénoménologie de la perception. Gallimard. (Inz. deel over 'Le corps')",
+          "Leder, D. (1990). The Absent Body. University of Chicago Press.",
+          "Slatman, J. (2008). Vreemd lichaam: Over de fenomenologie van de lichaamservaring. Uitgeverij Boom."
+        ]
+      }
+    ],
+    "domein_overzicht": {
+      "domeinen_gedekt": [
+        "Filosofie van de taal, hermeneutiek en semiotiek",
+        "Filosofie van de religie (Fenomenologie)",
+        "Niet-Westerse filosofie (Daoïsme)",
+        "Metafysica en sociale ontologie",
+        "Filosofie van de geest en lichamelijkheid"
+      ],
+      "tradities_gedekt": [
+        "Analytisch 20e-21e eeuw",
+        "Hedendaags Frans",
+        "Klassiek Chinees",
+        "Fenomenologie"
+      ]
+    },
+    "verbindingslijnen": [
+      "Er loopt een lijn van de 'taal van het wantrouwen' (duiding 1) naar de 'verzadigde blik' (duiding 2): beide beschrijven hoe de menselijke ontvankelijkheid wordt gecorrumpeerd door strategische interventies.",
+      "De spanning tussen autonomie en afhankelijkheid wordt vanuit drie hoeken belicht: de sociale status van het individu (duiding 4), de lichamelijke behoefte (duiding 5) en de ethiek van het niet-forceren (duiding 3).",
+      "De woestijn fungeert in alle duidingen als een laboratorium waar de fundamenten van het mens-zijn (taal, waarneming, wil, lichaam) worden ontdaan van hun vanzelfsprekendheid."
+    ],
+    "homiletische_potentie": "Deze vijf filosofische lenzen bieden de predikant een rijk palet om de oude teksten over verzoeking en schepping te ontdoen van moralistische clichés. In plaats van een preek over 'zonden' en 'foutjes', maken deze duidingen het mogelijk om een existentiële analyse te geven van de menselijke conditie. De focus verschuift naar hoe wij in de wereld staan: hoe we spreken, hoe we kijken, hoe we ons lichaam bewonen en hoe we onze sociale verbondenheid begrijpen. De overwinning van Jezus in de woestijn wordt hierbij niet gepresenteerd als een bovenmenselijke prestatie, maar als het herstel van een waarachtige menselijkheid die weerstand biedt aan de reductie van de mens tot consument, schouwspel of biologisch apparaat. Dit biedt de gemeente een bevrijdend perspectief aan het begin van de Veertigdagentijd: een uitnodiging tot een ascese die geen zelfkastijding is, maar een herontdekking van de iconische transparantie en de rust van het niet-moeten.",
+    "_usage": {
+      "prompt_tokens": 34954,
+      "candidates_tokens": 5774,
+      "total_tokens": 41983
     }
   },
   "Bijbelteksten": {

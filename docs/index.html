@@ -2266,6 +2266,7 @@
             "15_homiletische_lowry": 'Lowry\u2019s loop',
             "16_homiletische_buttrick": 'Moves & structures',
             "17_homiletische_illustraties":  'Illustraties',
+            "45_filosofie": 'Filosofische duiding',
             "18_kunst_cultuur": 'Kunst & cultuur',
             "19_preek_jungel": 'Preekschets (theologisch)',
             "20_preek_fleming_rutledge": 'Preekschets (apocalyptisch)',
@@ -2484,7 +2485,7 @@
             }
             // Groep 4: Homiletiek
             if (['13_focus_en_functie', '14_representatieve_hoorders', '15_homiletische_lowry',
-                 '16_homiletische_buttrick', '17_homiletische_illustraties'].includes(key)) {
+                 '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie'].includes(key)) {
                 return 'nav-group-homiletiek';
             }
             // Groep 5: Gebeden
@@ -2525,7 +2526,7 @@
                 return 'Exegese & Theologie';
             }
             if (['13_focus_en_functie', '14_representatieve_hoorders', '15_homiletische_lowry',
-                 '16_homiletische_buttrick', '17_homiletische_illustraties'].includes(key)) {
+                 '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie'].includes(key)) {
                 return 'Homiletiek';
             }
             if (['36_gebeden', '37_gebeden_profetisch', '38_gebeden_dialogisch', '39_gebeden_eenvoudig'].includes(key)) {
@@ -2685,38 +2686,39 @@
                 '15_homiletische_lowry': '15',
                 '16_homiletische_buttrick': '16',
                 '17_homiletische_illustraties': '17',
+                '45_filosofie': '18',
 
-                '19_preek_jungel': '18',
-                '20_preek_fleming_rutledge': '19',
-                '25_preek_brueggemann_poet': '20',
-                '26_preek_literair': '21',
-                '27_preek_noordmans': '22',
-                '28_preek_kosuke_koyama': '23',
-                '29_preek_zornberg': '24',
-                '30_preek_brueggemann': '25',
-                '31_preek_drewermann': '26',
-                '32_preek_gardner_taylor': '27',
-                '33_preek_solle': '28',
-                '34_preek_peterson': '29',
+                '19_preek_jungel': '19',
+                '20_preek_fleming_rutledge': '20',
+                '25_preek_brueggemann_poet': '21',
+                '26_preek_literair': '22',
+                '27_preek_noordmans': '23',
+                '28_preek_kosuke_koyama': '24',
+                '29_preek_zornberg': '25',
+                '30_preek_brueggemann': '26',
+                '31_preek_drewermann': '27',
+                '32_preek_gardner_taylor': '28',
+                '33_preek_solle': '29',
+                '34_preek_peterson': '30',
 
-                '21_feedback_jungel': '30',
-                '22_feedback_rutledge': '31',
-                '23_rewrite_jungel': '32',
-                '24_rewrite_rutledge': '33',
+                '21_feedback_jungel': '31',
+                '22_feedback_rutledge': '32',
+                '23_rewrite_jungel': '33',
+                '24_rewrite_rutledge': '34',
 
-                '35_midjourney_prompts': '34',
+                '35_midjourney_prompts': '35',
 
-                '36_gebeden': '35',
-                '37_gebeden_profetisch': '36',
-                '38_gebeden_dialogisch': '37',
-                '39_gebeden_eenvoudig': '38',
+                '36_gebeden': '36',
+                '37_gebeden_profetisch': '37',
+                '38_gebeden_dialogisch': '38',
+                '39_gebeden_eenvoudig': '39',
 
-                '40_kindermoment': '39',
-                '41_wetslezing': '40',
-                '42_kalender': '41',
-                '09_liedsuggesties': '42',
-                '18_kunst_cultuur': '43',
-                '43_bezinningsmoment': '44'
+                '40_kindermoment': '40',
+                '41_wetslezing': '41',
+                '42_kalender': '42',
+                '09_liedsuggesties': '43',
+                '18_kunst_cultuur': '44',
+                '43_bezinningsmoment': '45'
             };
 
             // Create section number map for sorting
@@ -3777,13 +3779,17 @@
             }
 
             // Special rendering for specific keys
-            const songbookKeys = ['liedsuggesties', 'liedboek_2013', 'weerklank', 'weerklank_psalmen', 'hemelhoog', 'op_toonhoogte', 'sela', 'oke4kids'];
+            const songbookKeys = ['liedsuggesties', 'liedboek_2013', 'weerklank', 'weerklank_psalmen', 'hemelhoog', 'op_toonhoogte', 'sela', 'oke4kids', 'nieuwe_psalmberijming'];
             if (songbookKeys.includes(key) || key.includes('lied')) {
                 return renderLiedsuggesties(key, value);
             }
 
             if (key === 'lezingen') {
                 return renderLezingen(value);
+            }
+
+            if (key === 'filosofische_duidingen' || key === '45_filosofie') {
+                return renderFilosofie(value);
             }
 
             if (key === 'hoorders' || parentKey === '12_representatieve_hoorders') {
@@ -4015,32 +4021,114 @@
             }).join('');
         }
 
+        function renderFilosofie(value) {
+            let duidingen = [];
+            if (Array.isArray(value)) {
+                duidingen = value;
+            } else if (value && Array.isArray(value.filosofische_duidingen)) {
+                duidingen = value.filosofische_duidingen;
+            }
+
+            if (duidingen.length === 0) return '';
+
+            const filosofieColor = '#673ab7'; // Deep Purple for Philosophy
+
+            let html = `<div class="data-group">`;
+            html += `<div class="data-group-title" style="color: ${filosofieColor}; border-bottom-color: ${filosofieColor}">Filosofische Duidingen</div>`;
+            
+            duidingen.forEach(item => {
+                html += `<div class="hoorder-card" style="border-left-color: ${filosofieColor}; margin-bottom: 35px;">`;
+                
+                // Header with number and title
+                html += `<div class="hoorder-header" style="background: linear-gradient(135deg, ${filosofieColor}, #4527a0);">`;
+                if (item.nummer) html += `<div class="hoorder-nummer" style="background: rgba(255,255,255,0.25);">${item.nummer}</div>`;
+                html += `<div class="hoorder-intro">`;
+                if (item.titel) html += `<div class="hoorder-naam" style="font-size: 1.3em;">${processText(item.titel)}</div>`;
+                if (item.kerndenker_of_concept) html += `<div class="hoorder-meta" style="font-weight: bold; opacity: 1;">${processText(item.kerndenker_of_concept)}</div>`;
+                html += `</div></div>`;
+
+                html += `<div class="hoorder-content" style="padding: 25px;">`;
+                
+                // Meta grid
+                html += `<div class="hoorder-grid" style="margin-bottom: 20px; gap: 15px;">`;
+                if (item.filosofisch_domein) {
+                    html += `<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ${filosofieColor};"><div class="hoorder-groep-titel" style="color: ${filosofieColor}; font-size: 0.8em;">Domein</div><div style="font-size: 0.9em;">${processText(item.filosofisch_domein)}</div></div>`;
+                }
+                if (item.periode_traditie) {
+                    html += `<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ${filosofieColor};"><div class="hoorder-groep-titel" style="color: ${filosofieColor}; font-size: 0.8em;">Traditie</div><div style="font-size: 0.9em;">${processText(item.periode_traditie)}</div></div>`;
+                }
+                html += `</div>`;
+
+                // Textual starting point
+                if (item.tekstueel_vertrekpunt) {
+                    html += `<div class="quote-block" style="border-left-color: ${filosofieColor}; background: var(--bg-tertiary); margin: 20px 0; font-size: 0.95em;">`;
+                    html += `<strong style="color: ${filosofieColor}">Vertrekpunt:</strong> ${processText(item.tekstueel_vertrekpunt)}`;
+                    html += `</div>`;
+                }
+
+                // Core interpretation
+                if (item.duiding) {
+                    html += `<div style="line-height: 1.9; margin-bottom: 25px; font-size: 1.05em;">${processText(item.duiding)}</div>`;
+                }
+
+                // Homiletic application
+                if (item.homiletische_inzet) {
+                    html += `<div style="background: var(--bg-tertiary); padding: 20px; border-radius: 4px; border-left: 5px solid ${filosofieColor}; border-right: 1px solid var(--border-light); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">`;
+                    html += `<div style="font-weight: bold; color: ${filosofieColor}; margin-bottom: 10px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px;">Homiletische Inzet</div>`;
+                    html += `<div style="font-style: italic; line-height: 1.7;">${processText(item.homiletische_inzet)}</div>`;
+                    html += `</div>`;
+                }
+
+                // Sources
+                if (item.bronnen && Array.isArray(item.bronnen) && item.bronnen.length > 0) {
+                    html += `<div style="margin-top: 20px; padding-top: 15px; border-top: 1px dashed var(--border-light); font-size: 0.85em; color: var(--text-muted);">`;
+                    html += `<strong style="display: block; margin-bottom: 8px; color: var(--text-secondary);">Bronnen:</strong><ul style="list-style-type: none; padding-left: 0;">`;
+                    item.bronnen.forEach(bron => {
+                        html += `<li style="margin-bottom: 5px; padding-left: 18px; position: relative; line-height: 1.5;">`;
+                        html += `<span style="position: absolute; left: 0; color: ${filosofieColor}; font-weight: bold;">»</span>${processText(bron)}</li>`;
+                    });
+                    html += `</ul></div>`;
+                }
+
+                html += `</div></div>`;
+            });
+
+            html += `</div>`;
+            return html;
+        }
+
         function renderLiedsuggesties(key, value) {
             let html = `<div class="data-group">`;
             
-            // Custom titles
-            const titles = {
-                'liedboek_2013': 'Liedboek (2013)',
-                'weerklank': 'Weerklank',
-                'weerklank_psalmen': 'Weerklank (Psalmen)',
-                'hemelhoog': 'Hemelhoog',
-                'op_toonhoogte': 'Op Toonhoogte (2015)',
-                'sela': 'Sela + Schrijvers voor Gerechtigheid',
-                'oke4kids': 'Kinderliederen'
+            // Custom titles and colors for different bundles
+            const bundelInfo = {
+                'liedboek_2013': { title: 'Liedboek (2013)', color: '#c67a7a' },
+                'weerklank': { title: 'Weerklank', color: '#7a9b6f' },
+                'weerklank_psalmen': { title: 'Weerklank (Psalmen)', color: '#7a9b6f' },
+                'hemelhoog': { title: 'Hemelhoog', color: '#d4af37' },
+                'op_toonhoogte': { title: 'Op Toonhoogte (2015)', color: '#c88f5f' },
+                'sela': { title: 'Sela + Schrijvers voor Gerechtigheid', color: '#20b2aa' },
+                'oke4kids': { title: 'Kinderliederen', color: '#9b7a9e' },
+                'nieuwe_psalmberijming': { title: 'De Nieuwe Psalmberijming (DNP)', color: '#3d5a80' }
             };
-            const title = titles[key] || formatKey(key);
             
-            html += `<div class="data-group-title">${escapeHtml(title)}</div>`;
+            const info = bundelInfo[key] || { title: formatKey(key), color: 'var(--accent)' };
+            const title = info.title;
+            const accentColor = info.color;
+            
+            html += `<div class="data-group-title" style="color: ${accentColor === 'var(--accent)' ? 'var(--accent)' : accentColor}; border-bottom-color: ${accentColor === 'var(--accent)' ? 'var(--border-light)' : accentColor}">${escapeHtml(title)}</div>`;
 
             // Helper to render grid of songs
             const isLiedboek2013 = (key === 'liedboek_2013');
             const isSela = (key === 'sela');
             const isOke4Kids = (key === 'oke4kids');
+            const isNPB = (key === 'nieuwe_psalmberijming');
+
             const renderGrid = (list) => {
                 let gridHtml = `<div class="lied-grid">`;
                 list.forEach(lied => {
                     if (typeof lied === 'object') {
-                        gridHtml += `<div class="lied-item">`;
+                        gridHtml += `<div class="lied-item" style="border-left-color: ${accentColor}">`;
                         // Determine fields based on structure (new vs old)
                         const nummer = lied.nummer;
                         const titel = lied.titel;
@@ -4051,21 +4139,26 @@
                         const bron = lied.bron; // For Sela
                         const credits = lied.credits; // For Oke4Kids
 
-                        if (typeMatch) gridHtml += `<div style="float:right; font-size:0.7em; background:var(--accent-light); color:white; padding:2px 6px; border-radius:4px;">${processText(typeMatch)}</div>`;
+                        if (typeMatch) gridHtml += `<div style="float:right; font-size:0.7em; background:${accentColor}; color:white; padding:2px 6px; border-radius:4px;">${processText(typeMatch)}</div>`;
 
                         // Special handling for Sela: show bron instead of nummer
                         if (isSela && bron) {
-                            gridHtml += `<div class="lied-nummer" style="font-style: italic;">${processText(bron)}</div>`;
+                            gridHtml += `<div class="lied-nummer" style="font-style: italic; color: ${accentColor}">${processText(bron)}</div>`;
                         }
                         // Special handling for Oke4Kids: show credits instead of nummer
                         else if (isOke4Kids && credits) {
-                            gridHtml += `<div class="lied-nummer" style="font-size: 0.8em; font-style: italic;">${processText(credits)}</div>`;
+                            gridHtml += `<div class="lied-nummer" style="font-size: 0.8em; font-style: italic; color: ${accentColor}">${processText(credits)}</div>`;
                         }
                         // Default: show nummer for other bundels (but not for Sela or Oke4Kids)
                         else if (nummer && !isSela && !isOke4Kids) {
-                            let nummerHtml = `<div class="lied-nummer">${processText(nummer)}`;
+                            let displayNummer = processText(nummer);
+                            if (isNPB && !displayNummer.toLowerCase().includes('psalm')) {
+                                displayNummer = 'Psalm ' + displayNummer;
+                            }
+                            
+                            let nummerHtml = `<div class="lied-nummer" style="color: ${accentColor}">${displayNummer}`;
                             if (isLiedboek2013 && liedboekUrls[nummer]) {
-                                nummerHtml += ` <a href="${liedboekUrls[nummer]}" target="_blank" rel="noopener noreferrer" class="lied-info-icon" title="Achtergrondinformatie op Liedboek Compendium">\u24d8</a>`;
+                                nummerHtml += ` <a href="${liedboekUrls[nummer]}" target="_blank" rel="noopener noreferrer" class="lied-info-icon" title="Achtergrondinformatie op Liedboek Compendium" style="color: ${accentColor}">\u24d8</a>`;
                             }
                             nummerHtml += `</div>`;
                             gridHtml += nummerHtml;
@@ -4081,7 +4174,7 @@
                             gridHtml += `<div class="lied-regel">\u2018${displayRegel}\u2019</div>`;
                         }
                         
-                        if (suggestie) gridHtml += `<div style="font-size:0.85em; color:var(--accent); margin-top:4px;">Suggestie: ${processText(suggestie)}</div>`;
+                        if (suggestie) gridHtml += `<div style="font-size:0.85em; color:${accentColor}; margin-top:4px;">Suggestie: ${processText(suggestie)}</div>`;
                         
                         if (toelichting) gridHtml += `<div class="lied-toelichting">${processText(toelichting)}</div>`;
                         gridHtml += `</div>`;
