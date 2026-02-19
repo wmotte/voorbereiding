@@ -3822,8 +3822,10 @@
                 key === 'literaire_analyses' || key === '48_literaire_theorie' ||
                 key === 'psychologische_analyses' || key === '49_psychologie' ||
                 key === 'ecologische_analyses' || key === 'ecologische_duidingen' || key === '50_ecologie' ||
-                key === '51_postkoloniaal' || key === '52_rechtswetenschap' ||
-                key === '53_natuurwetenschappen' || key === '54_politieke_speltheorie') {
+                key === 'postkoloniale_lezingen' || key === '51_postkoloniaal' || 
+                key === 'rechtswetenschappelijke_analyses' || key === '52_rechtswetenschap' ||
+                key === 'natuurwetenschappelijke_perspectieven' || key === '53_natuurwetenschappen' ||
+                key === 'politieke_analyses' || key === '54_politieke_speltheorie') {
                 return renderAnalytischeDuiding(value, key);
             }
 
@@ -4072,16 +4074,16 @@
 
             // Configuration for different analysis types
             const config = {
-                '45_filosofie': { title: 'Filosofische Duidingen', color: '#673ab7', accent: '#4527a0' },
+                '45_filosofie': { title: 'Filosofische Duidingen', color: '#3f51b5', accent: '#303f9f' },
                 '46_culturele_antropologie': { title: 'Cultureel Antropologische Analyses', color: '#e91e63', accent: '#c2185b' },
                 '47_receptiegeschiedenis': { title: 'Receptiehistorische Verkenningen', color: '#ff9800', accent: '#f57c00' },
                 '48_literaire_theorie': { title: 'Literaire Analyses', color: '#3f51b5', accent: '#303f9f' },
                 '49_psychologie': { title: 'Psychologische Analyses', color: '#4caf50', accent: '#388e3c' },
                 '50_ecologie': { title: 'Ecologische Duidingen', color: '#009688', accent: '#00796b' },
-                '51_postkoloniaal': { title: 'Postkoloniale Duidingen', color: '#795548', accent: '#5d4037' },
-                '52_rechtswetenschap': { title: 'Rechtswetenschappelijke Analyses', color: '#607d8b', accent: '#455a64' },
-                '53_natuurwetenschappen': { title: 'Natuurwetenschappelijke Verkenningen', color: '#ff5722', accent: '#e64a19' },
-                '54_politieke_speltheorie': { title: 'Politieke Speltheorie Analyses', color: '#9c27b0', accent: '#7b1fa2' }
+                '51_postkoloniaal': { title: 'Postkoloniale Duidingen', color: '#3f51b5', accent: '#303f9f' },
+                '52_rechtswetenschap': { title: 'Rechtswetenschappelijke Analyses', color: '#3f51b5', accent: '#303f9f' },
+                '53_natuurwetenschappen': { title: 'Natuurwetenschappelijke Verkenningen', color: '#3f51b5', accent: '#303f9f' },
+                '54_politieke_speltheorie': { title: 'Politieke Speltheorie Analyses', color: '#3f51b5', accent: '#303f9f' }
             };
 
             // Mapping for inner keys (some differ per section)
@@ -4089,10 +4091,14 @@
                 'filosofisch_domein': 'Domein',
                 'sub_domein': 'Domein',
                 'kader': 'Kader',
+                'juridisch_kader': 'Juridisch Kader',
+                'wetenschappelijk_kader': 'Wetenschappelijk Kader',
+                'politiek_kader': 'Politiek Kader',
                 'periode_traditie': 'Traditie',
                 'school_traditie': 'Traditie',
                 'traditie': 'Traditie',
                 'benadering': 'Benadering',
+                'analyseniveau': 'Analyseniveau',
                 'tijdvak': 'Tijdvak',
                 'kerndenker_of_concept': 'Denker/Concept',
                 'kernwerk_of_auteur': 'Werk/Auteur',
@@ -4112,7 +4118,12 @@
                 html += `<div class="hoorder-header" style="background: linear-gradient(135deg, ${mainColor}, ${accentColor});">`;
                 if (item.nummer) html += `<div class="hoorder-nummer" style="background: rgba(255,255,255,0.25);">${item.nummer}</div>`;
                 html += `<div class="hoorder-intro">`;
-                if (item.titel) html += `<div class="hoorder-naam" style="font-size: 1.3em;">${processText(item.titel)}</div>`;
+                
+                // Use titel if available, otherwise look for other potential "main" labels
+                const titleVal = item.titel || item.juridisch_kader || item.wetenschappelijk_kader || item.politiek_kader || item.kader || null;
+                if (titleVal) {
+                    html += `<div class="hoorder-naam" style="font-size: 1.3em;">${processText(titleVal)}</div>`;
+                }
                 
                 // Show denker/concept or similar in header
                 const subTitleKey = ['kerndenker_of_concept', 'kernwerk_of_auteur'].find(k => item[k]);
@@ -4126,10 +4137,17 @@
                 // Meta grid for labels like Domein, Traditie, etc.
                 html += `<div class="hoorder-grid" style="margin-bottom: 20px; gap: 15px;">`;
                 Object.keys(fieldLabels).forEach(fKey => {
-                    if (item[fKey] && fKey !== subTitleKey) {
-                        html += `<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ${mainColor};"><div class="hoorder-groep-titel" style="color: ${mainColor}; font-size: 0.8em;">${fieldLabels[fKey]}</div><div style="font-size: 0.9em;">${processText(item[fKey])}</div></div>`;
+                    // Only show in grid if not already used as title
+                    const alreadyUsedAsTitle = (titleVal && item[fKey] === titleVal);
+                    if (item[fKey] && fKey !== subTitleKey && !alreadyUsedAsTitle) {
+                        const val = Array.isArray(item[fKey]) ? item[fKey].join(', ') : item[fKey];
+                        html += `<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ${mainColor};"><div class="hoorder-groep-titel" style="color: ${mainColor}; font-size: 0.8em;">${fieldLabels[fKey]}</div><div style="font-size: 0.9em;">${processText(val)}</div></div>`;
                     }
                 });
+                // Handle special arrays like 'gebruikte_benaderingen'
+                if (item.gebruikte_benaderingen && Array.isArray(item.gebruikte_benaderingen)) {
+                    html += `<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ${mainColor};"><div class="hoorder-groep-titel" style="color: ${mainColor}; font-size: 0.8em;">Benaderingen</div><div style="font-size: 0.9em;">${item.gebruikte_benaderingen.map(b => processText(b)).join('<br>')}</div></div>`;
+                }
                 html += `</div>`;
 
                 // Textual starting point
@@ -4140,7 +4158,7 @@
                 }
 
                 // Core interpretation
-                const mainTextKey = ['analyse', 'duiding', 'verkenning', 'verwerking'].find(k => item[k]);
+                const mainTextKey = ['analyse', 'duiding', 'verkenning', 'verwerking', 'perspectief'].find(k => item[k]);
                 if (mainTextKey) {
                     html += `<div style="line-height: 1.9; margin-bottom: 25px; font-size: 1.05em;">${processText(item[mainTextKey])}</div>`;
                 }
