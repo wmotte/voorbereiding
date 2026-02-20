@@ -2204,10 +2204,6 @@
             'Bijbelteksten',
             '44_postille_preekschets',
             '50_ecologie',
-            '51_postkoloniaal',
-            '52_rechtswetenschap',
-            '53_natuurwetenschappen',
-            '54_politieke_speltheorie',
             '40_kindermoment',
             '18_kunst_cultuur'
         ]);
@@ -4120,7 +4116,8 @@
                 html += `<div class="hoorder-intro">`;
                 
                 // Use titel if available, otherwise look for other potential "main" labels
-                const titleVal = item.titel || item.juridisch_kader || item.wetenschappelijk_kader || item.politiek_kader || item.kader || null;
+                const titleVal = item.titel || item.juridisch_kader || item.wetenschappelijk_kader || item.politiek_kader || item.kader || 
+                               (item.gebruikte_benaderingen && Array.isArray(item.gebruikte_benaderingen) ? item.gebruikte_benaderingen[0] : null) || null;
                 if (titleVal) {
                     html += `<div class="hoorder-naam" style="font-size: 1.3em;">${processText(titleVal)}</div>`;
                 }
@@ -4146,7 +4143,11 @@
                 });
                 // Handle special arrays like 'gebruikte_benaderingen'
                 if (item.gebruikte_benaderingen && Array.isArray(item.gebruikte_benaderingen)) {
-                    html += `<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ${mainColor};"><div class="hoorder-groep-titel" style="color: ${mainColor}; font-size: 0.8em;">Benaderingen</div><div style="font-size: 0.9em;">${item.gebruikte_benaderingen.map(b => processText(b)).join('<br>')}</div></div>`;
+                    // Filter out the one used as title
+                    const remainingBenaderingen = item.gebruikte_benaderingen.filter(b => b !== titleVal);
+                    if (remainingBenaderingen.length > 0) {
+                        html += `<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ${mainColor};"><div class="hoorder-groep-titel" style="color: ${mainColor}; font-size: 0.8em;">Benaderingen</div><div style="font-size: 0.9em;">${remainingBenaderingen.map(b => processText(b)).join('<br>')}</div></div>`;
+                    }
                 }
                 html += `</div>`;
 
