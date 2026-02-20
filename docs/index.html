@@ -3331,6 +3331,8 @@
                 contentHtml = renderObjectWithIds(dataToRender, key);
             } else if (key === '60_preek_volledige_tekst') {
                 contentHtml = renderPreekVolledigeTekstSection(dataToRender, key);
+            } else if (key === '62_preek_rewrite') {
+                contentHtml = renderPreekRewriteSection(dataToRender, key);
             } else {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             }
@@ -5980,6 +5982,65 @@
 
                 html += `</div></div>`; // end hoorder-content, hoorder-card
             });
+
+            return html;
+        }
+
+        // Render 62_preek_rewrite section
+        function renderPreekRewriteSection(data, sectionKey) {
+            let html = '';
+
+            // Titel
+            if (data.titel) {
+                html += `<div class="gebed-card" style="margin-bottom: 24px;">`;
+                html += `<div class="data-item">`;
+                html += `<div class="data-label">Titel</div>`;
+                html += `<div class="data-value" style="font-size: 1.15em; font-weight: bold; color: var(--accent);">${processText(data.titel)}</div>`;
+                html += `</div>`;
+
+                if (data.bijbeltekst) {
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">Bijbeltekst</div>`;
+                    html += `<div class="data-value" style="font-style: italic;">${processText(data.bijbeltekst)}</div>`;
+                    html += `</div>`;
+                }
+
+                if (data.thema) {
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">Thema</div>`;
+                    html += `<div class="data-value">${processText(data.thema)}</div>`;
+                    html += `</div>`;
+                }
+
+                html += `</div>`;
+            }
+
+            // Samenvatting wijzigingen (toelichting + verbeteringen)
+            if (data.samenvatting_wijzigingen) {
+                const sw = data.samenvatting_wijzigingen;
+                if (sw.toelichting) {
+                    html += `<h3 style="color: var(--accent); margin: 24px 0 8px 0; font-size: 1.1em; border-bottom: 1px dashed var(--border-light); padding-bottom: 4px;">Toelichting</h3>`;
+                    html += `<div style="font-size: 1em; line-height: 1.75; color: var(--text-primary); margin-bottom: 20px;">${processText(sw.toelichting)}</div>`;
+                }
+                if (sw.verbeteringen_per_domein && Array.isArray(sw.verbeteringen_per_domein)) {
+                    html += `<h3 style="color: var(--accent); margin: 24px 0 8px 0; font-size: 1.1em; border-bottom: 1px dashed var(--border-light); padding-bottom: 4px;">Verbeteringen per domein</h3>`;
+                    sw.verbeteringen_per_domein.forEach(item => {
+                        html += `<div class="gebed-card" style="margin-bottom: 12px;">`;
+                        html += `<div class="data-item"><div class="data-label">Domein</div><div class="data-value" style="font-weight: bold;">${processText(item.domein)}</div></div>`;
+                        html += `<div class="data-item"><div class="data-label">Verwerkte feedback</div><div class="data-value">${processText(item.verwerkte_feedback)}</div></div>`;
+                        html += `<div class="data-item"><div class="data-label">Concrete aanpassing</div><div class="data-value">${processText(item.concrete_aanpassing)}</div></div>`;
+                        html += `</div>`;
+                    });
+                }
+            }
+
+            // Preektekst als kopje
+            if (data.preektekst) {
+                html += `<h3 style="color: var(--accent); margin: 24px 0 8px 0; font-size: 1.1em; border-bottom: 1px dashed var(--border-light); padding-bottom: 4px;">Preektekst</h3>`;
+                html += `<div class="preek-card" style="margin-top: 8px;">`;
+                html += `<div style="font-size: 1em; line-height: 1.85; color: var(--text-primary); white-space: pre-wrap; font-family: Georgia, serif;">${processText(data.preektekst)}</div>`;
+                html += `</div>`;
+            }
 
             return html;
         }
