@@ -2316,7 +2316,10 @@
             "41_wetslezing": 'Wetslezing',
             "42_kalender": 'Kalender',
             //'43_bezinningsmoment': 'Moment van bezinning',
-            "60_preek_volledige_tekst": 'Preek (volledig)'
+            "60_preek_volledige_tekst": 'Preek (volledig)',
+            "61_feedback_volledige_preek": 'Feedback',
+            "62_preek_rewrite": 'Preek (gecorrigeerd)',
+
         };
 
         // Load section info
@@ -2538,7 +2541,7 @@
                 return 'nav-group-beeldgeneratie';
             }
             // Groep 10: Voorbeelden
-            if (['60_preek_volledige_tekst'].includes(key)) {
+            if (['60_preek_volledige_tekst', '61_feedback_volledige_preek', '62_preek_rewrite'].includes(key)) {
                 return 'nav-group-voorbeelden';
             }
             return ''; // Default: geen specifieke groep klasse
@@ -2580,7 +2583,7 @@
             if (['35_midjourney_prompts'].includes(key)) {
                 return 'Beeldgeneratie';
             }
-            if (['60_preek_volledige_tekst'].includes(key)) {
+            if (['60_preek_volledige_tekst', '61_feedback_volledige_preek', '62_preek_rewrite'].includes(key)) {
                 return 'Voorbeelden';
             }
             return null;
@@ -2765,7 +2768,9 @@
                 '09_liedsuggesties': '53',
                 '18_kunst_cultuur': '54',
                 '43_bezinningsmoment': '55',
-                '60_preek_volledige_tekst': '60'
+                '60_preek_volledige_tekst': '60',
+                '61_feedback_volledige_preek': '61',
+                '62_preek_rewrite': '62'
             };
 
             // Create section number map for sorting
@@ -3391,6 +3396,15 @@
                     title: 'Feedback Homiletiek - achtergrond'
                 },
 
+                '61_feedback_volledige_preek': {
+                    url: 'https://wmotte.github.io/homiletiek_feedback',
+                    title: 'Feedback Homiletiek - achtergrond'
+                },
+                '62_preek_rewrite': {
+                    url: 'https://wmotte.github.io/homiletiek_feedback',
+                    title: 'Feedback Homiletiek - achtergrond'
+                },
+
                 '31_preek_drewermann': {
                     url: 'https://github.com/wmotte/voorbereiding/blob/main/misc/Eugen_Drewermann_Homiletiek.md',
                     title: 'Eugen Drewermann Homiletiek - achtergrond'
@@ -3705,7 +3719,7 @@
                 // Skip 'gebruiksinstructies' in Beeldgeneratie (prompts)
                 if (k === 'gebruiksinstructies' && sectionKey === '35_midjourney_prompts') return false;
                 // Skip 'bron_preekschets' in feedback sections
-                if (k === 'bron_preekschets' && (sectionKey === '21_feedback_jungel' || sectionKey === '22_feedback_rutledge')) return false;
+                if (k === 'bron_preekschets' && (sectionKey === '21_feedback_jungel' || sectionKey === '22_feedback_rutledge' || sectionKey === '61_feedback_volledige_preek')) return false;
                 return true;
             });
 
@@ -7586,6 +7600,9 @@
             });
             // Then handle remaining standalone italics
             result = result.replace(/(?<![*\w])\*([^*\n]+?)\*(?![*\w])/g, '<em class="instruction">$1</em>');
+
+            // Strikethrough ~~text~~
+            result = result.replace(/~~(.+?)~~/g, '<del style="text-decoration: line-through; color: var(--text-secondary); opacity: 0.6;">$1</del>');
 
             // 5. Convert bullet markers to styled divs
             result = result.replace(/^(\s*)• (.*)$/gm, function(match, indent, content) {
