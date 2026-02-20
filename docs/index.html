@@ -365,6 +365,12 @@
             color: #f5f0e8;
         }
 
+        /* Groep kleuren - Voorbeelden (55) */
+        .nav-group-voorbeelden .nav-number {
+            background: #4a7c59;
+            color: #f5f0e8;
+        }
+
         /* Groep headers in menu */
         .nav-group-header {
             padding: 8px 20px 4px 20px;
@@ -609,6 +615,12 @@
         /* Section number kleuren - Beeldgeneratie */
         .section-group-beeldgeneratie .section-number {
             background: #20b2aa;
+            color: #f5f0e8;
+        }
+
+        /* Section number kleuren - Voorbeelden */
+        .section-group-voorbeelden .section-number {
+            background: #4a7c59;
             color: #f5f0e8;
         }
 
@@ -2210,7 +2222,7 @@
 
         // Group names that contain at least one kern section
         const KERN_GROUP_NAMES = new Set([
-            'Liturgisch', 'Exegese & Theologie', 'Homiletiek', 'Gebeden', 'Liturgische Elementen', 'Preekschetsen'
+            'Liturgisch', 'Exegese & Theologie', 'Homiletiek', 'Gebeden', 'Liturgische Elementen', 'Preekschetsen', 'Voorbeelden'
         ]);
 
         // State
@@ -2301,8 +2313,9 @@
             "39_gebeden_eenvoudig": 'Gebeden (B1-niveau)',
             "40_kindermoment": 'Kindermoment',
             "41_wetslezing": 'Wetslezing',
-            "42_kalender": 'Kalender'
+            "42_kalender": 'Kalender',
             //'43_bezinningsmoment': 'Moment van bezinning',
+            "55_preek_volledige_tekst": 'Preek (volledig)'
         };
 
         // Load section info
@@ -2523,6 +2536,10 @@
             if (['35_midjourney_prompts'].includes(key)) {
                 return 'nav-group-beeldgeneratie';
             }
+            // Groep 10: Voorbeelden
+            if (['55_preek_volledige_tekst'].includes(key)) {
+                return 'nav-group-voorbeelden';
+            }
             return ''; // Default: geen specifieke groep klasse
         }
 
@@ -2561,6 +2578,9 @@
             }
             if (['35_midjourney_prompts'].includes(key)) {
                 return 'Beeldgeneratie';
+            }
+            if (['55_preek_volledige_tekst'].includes(key)) {
+                return 'Voorbeelden';
             }
             return null;
         }
@@ -2742,7 +2762,8 @@
                 '42_kalender': '51',
                 '09_liedsuggesties': '52',
                 '18_kunst_cultuur': '53',
-                '43_bezinningsmoment': '54'
+                '43_bezinningsmoment': '54',
+                '55_preek_volledige_tekst': '55'
             };
 
             // Create section number map for sorting
@@ -3301,6 +3322,8 @@
                 contentHtml = renderWetslezingSection(dataToRender, key);
             } else if (key === '40_kindermoment') {
                 contentHtml = renderObjectWithIds(dataToRender, key);
+            } else if (key === '55_preek_volledige_tekst') {
+                contentHtml = renderPreekVolledigeTekstSection(dataToRender, key);
             } else {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             }
@@ -5926,6 +5949,60 @@
 
                 html += `</div></div>`; // end hoorder-content, hoorder-card
             });
+
+            return html;
+        }
+
+        // Render 55_preek_volledige_tekst section
+        function renderPreekVolledigeTekstSection(data, sectionKey) {
+            let html = '';
+
+            // Titel
+            if (data.titel) {
+                html += `<div class="gebed-card" style="margin-bottom: 24px;">`;
+                html += `<div class="data-item">`;
+                html += `<div class="data-label">Titel</div>`;
+                html += `<div class="data-value" style="font-size: 1.15em; font-weight: bold; color: var(--accent);">${processText(data.titel)}</div>`;
+                html += `</div>`;
+
+                // Schriftlezingen
+                if (data.schriftlezingen && Array.isArray(data.schriftlezingen) && data.schriftlezingen.length > 0) {
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">Schriftlezingen</div>`;
+                    html += `<div class="data-value">`;
+                    html += `<ul style="list-style: none; padding: 0; margin: 0;">`;
+                    data.schriftlezingen.forEach(ref => {
+                        html += `<li style="padding: 3px 0;">• ${escapeHtml(ref)}</li>`;
+                    });
+                    html += `</ul>`;
+                    html += `</div></div>`;
+                }
+
+                // Kerntekst
+                if (data.kerntekst) {
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">Kerntekst</div>`;
+                    html += `<div class="data-value" style="font-style: italic;">${processText(data.kerntekst)}</div>`;
+                    html += `</div>`;
+                }
+
+                // Thema
+                if (data.thema) {
+                    html += `<div class="data-item">`;
+                    html += `<div class="data-label">Thema</div>`;
+                    html += `<div class="data-value">${processText(data.thema)}</div>`;
+                    html += `</div>`;
+                }
+
+                html += `</div>`; // end gebed-card
+            }
+
+            // Preektekst
+            if (data.preektekst) {
+                html += `<div class="preek-card" style="margin-top: 20px;">`;
+                html += `<div style="font-size: 1em; line-height: 1.85; color: var(--text-primary); white-space: pre-wrap; font-family: Georgia, serif;">${processText(data.preektekst)}</div>`;
+                html += `</div>`;
+            }
 
             return html;
         }
