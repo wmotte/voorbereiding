@@ -2289,6 +2289,7 @@
             "52_rechtswetenschap": 'Rechtswetenschap',
             "53_natuurwetenschappen": 'Natuurwetenschappen',
             "54_politieke_speltheorie": 'Politieke speltheorie',
+            "55_mystagogiek": 'Mystagogiek',
             "18_kunst_cultuur": 'Kunst & cultuur',
             "19_preek_jungel": 'Preekschets (theologisch)',
             "20_preek_fleming_rutledge": 'Preekschets (apocalyptisch)',
@@ -2315,7 +2316,7 @@
             "41_wetslezing": 'Wetslezing',
             "42_kalender": 'Kalender',
             //'43_bezinningsmoment': 'Moment van bezinning',
-            "55_preek_volledige_tekst": 'Preek (volledig)'
+            "60_preek_volledige_tekst": 'Preek (volledig)'
         };
 
         // Load section info
@@ -2511,7 +2512,7 @@
                  '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie',
                  '46_culturele_antropologie', '47_receptiegeschiedenis', '48_literaire_theorie',
                  '49_psychologie', '50_ecologie', '51_postkoloniaal', '52_rechtswetenschap',
-                 '53_natuurwetenschappen', '54_politieke_speltheorie'].includes(key)) {
+                 '53_natuurwetenschappen', '54_politieke_speltheorie', '55_mystagogiek'].includes(key)) {
                 return 'nav-group-homiletiek';
             }
             // Groep 5: Gebeden
@@ -2537,7 +2538,7 @@
                 return 'nav-group-beeldgeneratie';
             }
             // Groep 10: Voorbeelden
-            if (['55_preek_volledige_tekst'].includes(key)) {
+            if (['60_preek_volledige_tekst'].includes(key)) {
                 return 'nav-group-voorbeelden';
             }
             return ''; // Default: geen specifieke groep klasse
@@ -2559,7 +2560,7 @@
                  '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie',
                  '46_culturele_antropologie', '47_receptiegeschiedenis', '48_literaire_theorie',
                  '49_psychologie', '50_ecologie', '51_postkoloniaal', '52_rechtswetenschap',
-                 '53_natuurwetenschappen', '54_politieke_speltheorie'].includes(key)) {
+                 '53_natuurwetenschappen', '54_politieke_speltheorie', '55_mystagogiek'].includes(key)) {
                 return 'Homiletiek';
             }
             if (['36_gebeden', '37_gebeden_profetisch', '38_gebeden_dialogisch', '39_gebeden_eenvoudig'].includes(key)) {
@@ -2579,7 +2580,7 @@
             if (['35_midjourney_prompts'].includes(key)) {
                 return 'Beeldgeneratie';
             }
-            if (['55_preek_volledige_tekst'].includes(key)) {
+            if (['60_preek_volledige_tekst'].includes(key)) {
                 return 'Voorbeelden';
             }
             return null;
@@ -2732,38 +2733,39 @@
                 '52_rechtswetenschap': '25',
                 '53_natuurwetenschappen': '26',
                 '54_politieke_speltheorie': '27',
-                '19_preek_jungel': '28',
-                '20_preek_fleming_rutledge': '29',
-                '25_preek_brueggemann_poet': '30',
-                '26_preek_literair': '31',
-                '27_preek_noordmans': '32',
-                '28_preek_kosuke_koyama': '33',
-                '29_preek_zornberg': '34',
-                '30_preek_brueggemann': '35',
-                '31_preek_drewermann': '36',
-                '32_preek_gardner_taylor': '37',
-                '33_preek_solle': '38',
-                '34_preek_peterson': '39',
+                '55_mystagogiek': '28',
+                '19_preek_jungel': '29',
+                '20_preek_fleming_rutledge': '30',
+                '25_preek_brueggemann_poet': '31',
+                '26_preek_literair': '32',
+                '27_preek_noordmans': '33',
+                '28_preek_kosuke_koyama': '34',
+                '29_preek_zornberg': '35',
+                '30_preek_brueggemann': '36',
+                '31_preek_drewermann': '37',
+                '32_preek_gardner_taylor': '38',
+                '33_preek_solle': '39',
+                '34_preek_peterson': '40',
 
-                '21_feedback_jungel': '40',
-                '22_feedback_rutledge': '41',
-                '23_rewrite_jungel': '42',
-                '24_rewrite_rutledge': '43',
+                '21_feedback_jungel': '41',
+                '22_feedback_rutledge': '42',
+                '23_rewrite_jungel': '43',
+                '24_rewrite_rutledge': '44',
 
-                '35_midjourney_prompts': '44',
+                '35_midjourney_prompts': '45',
 
-                '36_gebeden': '45',
-                '37_gebeden_profetisch': '46',
-                '38_gebeden_dialogisch': '47',
-                '39_gebeden_eenvoudig': '48',
+                '36_gebeden': '46',
+                '37_gebeden_profetisch': '47',
+                '38_gebeden_dialogisch': '48',
+                '39_gebeden_eenvoudig': '49',
 
-                '40_kindermoment': '49',
-                '41_wetslezing': '50',
-                '42_kalender': '51',
-                '09_liedsuggesties': '52',
-                '18_kunst_cultuur': '53',
-                '43_bezinningsmoment': '54',
-                '55_preek_volledige_tekst': '55'
+                '40_kindermoment': '50',
+                '41_wetslezing': '51',
+                '42_kalender': '52',
+                '09_liedsuggesties': '53',
+                '18_kunst_cultuur': '54',
+                '43_bezinningsmoment': '55',
+                '60_preek_volledige_tekst': '60'
             };
 
             // Create section number map for sorting
@@ -3322,7 +3324,7 @@
                 contentHtml = renderWetslezingSection(dataToRender, key);
             } else if (key === '40_kindermoment') {
                 contentHtml = renderObjectWithIds(dataToRender, key);
-            } else if (key === '55_preek_volledige_tekst') {
+            } else if (key === '60_preek_volledige_tekst') {
                 contentHtml = renderPreekVolledigeTekstSection(dataToRender, key);
             } else {
                 contentHtml = renderObjectWithIds(dataToRender, key);
@@ -3844,7 +3846,8 @@
                 key === 'postkoloniale_lezingen' || key === '51_postkoloniaal' || 
                 key === 'rechtswetenschappelijke_analyses' || key === '52_rechtswetenschap' ||
                 key === 'natuurwetenschappelijke_perspectieven' || key === '53_natuurwetenschappen' ||
-                key === 'politieke_analyses' || key === '54_politieke_speltheorie') {
+                key === 'politieke_analyses' || key === '54_politieke_speltheorie' ||
+                key === 'mystagogische_analyses' || key === '55_mystagogiek') {
                 return renderAnalytischeDuiding(value, key);
             }
 
@@ -4093,16 +4096,29 @@
 
             // Configuration for different analysis types
             const config = {
-                '45_filosofie': { title: 'Filosofische Duidingen', color: '#3f51b5', accent: '#303f9f' },
+                '45_filosofie': { title: 'Filosofische Duidingen', color: '#9b7a9e', accent: '#7a5d7e' },
                 '46_culturele_antropologie': { title: 'Cultureel Antropologische Analyses', color: '#e91e63', accent: '#c2185b' },
                 '47_receptiegeschiedenis': { title: 'Receptiehistorische Verkenningen', color: '#ff9800', accent: '#f57c00' },
-                '48_literaire_theorie': { title: 'Literaire Analyses', color: '#3f51b5', accent: '#303f9f' },
+                '48_literaire_theorie': { title: 'Literaire Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
                 '49_psychologie': { title: 'Psychologische Analyses', color: '#4caf50', accent: '#388e3c' },
                 '50_ecologie': { title: 'Ecologische Duidingen', color: '#009688', accent: '#00796b' },
-                '51_postkoloniaal': { title: 'Postkoloniale Duidingen', color: '#3f51b5', accent: '#303f9f' },
-                '52_rechtswetenschap': { title: 'Rechtswetenschappelijke Analyses', color: '#3f51b5', accent: '#303f9f' },
-                '53_natuurwetenschappen': { title: 'Natuurwetenschappelijke Verkenningen', color: '#3f51b5', accent: '#303f9f' },
-                '54_politieke_speltheorie': { title: 'Politieke Speltheorie Analyses', color: '#3f51b5', accent: '#303f9f' }
+                '51_postkoloniaal': { title: 'Postkoloniale Duidingen', color: '#9b7a9e', accent: '#7a5d7e' },
+                '52_rechtswetenschap': { title: 'Rechtswetenschappelijke Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                '53_natuurwetenschappen': { title: 'Natuurwetenschappelijke Verkenningen', color: '#9b7a9e', accent: '#7a5d7e' },
+                '54_politieke_speltheorie': { title: 'Politieke Speltheorie Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                '55_mystagogiek': { title: 'Mystagogische Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'mystagogische_analyses': { title: 'Mystagogische Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'filosofische_duidingen': { title: 'Filosofische Duidingen', color: '#9b7a9e', accent: '#7a5d7e' },
+                'cultureel_antropologische_analyses': { title: 'Cultureel Antropologische Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'receptiehistorische_verkenningen': { title: 'Receptiehistorische Verkenningen', color: '#9b7a9e', accent: '#7a5d7e' },
+                'literaire_analyses': { title: 'Literaire Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'psychologische_analyses': { title: 'Psychologische Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'ecologische_analyses': { title: 'Ecologische Duidingen', color: '#9b7a9e', accent: '#7a5d7e' },
+                'ecologische_duidingen': { title: 'Ecologische Duidingen', color: '#9b7a9e', accent: '#7a5d7e' },
+                'postkoloniale_lezingen': { title: 'Postkoloniale Duidingen', color: '#9b7a9e', accent: '#7a5d7e' },
+                'rechtswetenschappelijke_analyses': { title: 'Rechtswetenschappelijke Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'natuurwetenschappelijke_perspectieven': { title: 'Natuurwetenschappelijke Verkenningen', color: '#9b7a9e', accent: '#7a5d7e' },
+                'politieke_analyses': { title: 'Politieke Speltheorie Analyses', color: '#9b7a9e', accent: '#7a5d7e' }
             };
 
             // Mapping for inner keys (some differ per section)
@@ -4119,6 +4135,7 @@
                 'benadering': 'Benadering',
                 'analyseniveau': 'Analyseniveau',
                 'tijdvak': 'Tijdvak',
+                'tradition': 'Traditie',
                 'kerndenker_of_concept': 'Denker/Concept',
                 'kernwerk_of_auteur': 'Werk/Auteur',
                 'materieel_element': 'Element'
@@ -4196,9 +4213,9 @@
                 }
 
                 // Resonance with listeners (optional)
-                if (item.resonantie_hoorders) {
+                if (item.resonantie_hoorders || item.resonantie_gemeente) {
                     html += `<div style="margin-top: 15px; font-size: 0.85em; color: var(--text-muted);">`;
-                    html += `<strong>Resonantie:</strong> ${processText(item.resonantie_hoorders)}`;
+                    html += `<strong>Resonantie:</strong> ${processText(item.resonantie_hoorders || item.resonantie_gemeente)}`;
                     html += `</div>`;
                 }
 
@@ -5953,7 +5970,7 @@
             return html;
         }
 
-        // Render 55_preek_volledige_tekst section
+        // Render 60_preek_volledige_tekst section
         function renderPreekVolledigeTekstSection(data, sectionKey) {
             let html = '';
 
