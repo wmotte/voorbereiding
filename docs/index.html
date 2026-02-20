@@ -3331,6 +3331,8 @@
                 contentHtml = renderObjectWithIds(dataToRender, key);
             } else if (key === '60_preek_volledige_tekst') {
                 contentHtml = renderPreekVolledigeTekstSection(dataToRender, key);
+            } else if (key === '61_feedback_volledige_preek') {
+                contentHtml = renderFeedbackVolledigePreekSection(dataToRender, key);
             } else if (key === '62_preek_rewrite') {
                 contentHtml = renderPreekRewriteSection(dataToRender, key);
             } else {
@@ -5982,6 +5984,175 @@
 
                 html += `</div></div>`; // end hoorder-content, hoorder-card
             });
+
+            return html;
+        }
+
+        // Render 61_feedback_volledige_preek section
+        function renderFeedbackVolledigePreekSection(data, sectionKey) {
+            let html = '';
+
+            // Map domain keys to display names
+            const domeinNamen = {
+                'dekker': 'Dekker (8 Stellingen)',
+                'aristoteles': 'Aristoteles (Retorische Driehoek)',
+                'kolb': 'Kolb (Leercyclus)',
+                'schulz_von_thun': 'Schulz von Thun (Communicatie Vierkant)',
+                'transactional': 'Transactionele Analyse (Berne)',
+                'esthetiek': 'Esthetiek (Schoonheid en Vorm)',
+                'metafoor': 'Metafoor (Conceptuele Metafoortheorie)',
+                'narratief': 'Narratief (Greimas Actantieel Model)',
+                'taalhandeling': 'Taalhandeling (Speech Act Theory)'
+            };
+
+            // Try to get domain names from metadata
+            if (data._metadata && data._metadata.domeinen) {
+                const domeinen = data._metadata.domeinen;
+                const keys = Object.keys(data.analyses || {});
+                keys.forEach((key, i) => {
+                    if (domeinen[i]) domeinNamen[key] = domeinen[i];
+                });
+            }
+
+            const analyses = data.analyses;
+            if (!analyses || typeof analyses !== 'object') {
+                return renderObjectWithIds(data, sectionKey);
+            }
+
+            // Helper: find overall score in a domain
+            function findOverallScore(domainData) {
+                // Dekker: average of analyse_per_criterium scores
+                if (domainData.analyse_per_criterium) {
+                    const criteria = domainData.analyse_per_criterium;
+                    const scores = Object.values(criteria)
+                        .filter(v => v && typeof v === 'object' && typeof v.score_1_tot_10 === 'number')
+                        .map(v => v.score_1_tot_10);
+                    if (scores.length) return (scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(1);
+                }
+                // Look in known summary keys
+                for (const sk of ['totaalbeeld', 'algehele_beoordeling', 'totaalbeeld_esthetiek', 'conclusie_en_aanbeveling']) {
+                    if (domainData[sk] && typeof domainData[sk] === 'object') {
+                        for (const [k, v] of Object.entries(domainData[sk])) {
+                            if (k.toLowerCase().includes('score') && typeof v === 'number') return v;
+                        }
+                    }
+                }
+                return null;
+            }
+
+            // Helper: find summary text in a domain
+            function findSummary(domainData) {
+                for (const sk of ['totaalbeeld', 'algehele_beoordeling', 'totaalbeeld_esthetiek', 'conclusie_en_aanbeveling', 'diagnostische_evaluatie']) {
+                    if (domainData[sk] && typeof domainData[sk] === 'object') {
+                        const summary = domainData[sk].samenvatting || domainData[sk].conclusie || domainData[sk].eindoordeel_volgens_dekker || '';
+                        if (summary) return summary;
+                    }
+                }
+                return '';
+            }
+
+            // Helper: find verbeterpunten
+            function findVerbeterpunten(domainData) {
+                const punten = [];
+                for (const sk of ['totaalbeeld', 'algehele_beoordeling', 'totaalbeeld_esthetiek', 'conclusie_en_aanbeveling', 'aanbevelingen']) {
+                    if (domainData[sk] && typeof domainData[sk] === 'object') {
+                        const vp = domainData[sk].verbeterpunten_top_3 || domainData[sk].zwakke_punten || domainData[sk].verbeterpunten || [];
+                        if (Array.isArray(vp) && vp.length) return vp;
+                        // Check nested
+                        for (const v of Object.values(domainData[sk])) {
+                            if (Array.isArray(v) && v.length && typeof v[0] === 'string' && v[0].length > 20) {
+                                return v;
+                            }
+                        }
+                    }
+                }
+                // Check aanbevelingen at top level
+                if (domainData.aanbevelingen && typeof domainData.aanbevelingen === 'object') {
+                    for (const v of Object.values(domainData.aanbevelingen)) {
+                        if (typeof v === 'string' && v.length > 20) punten.push(v);
+                        if (Array.isArray(v)) punten.push(...v.filter(x => typeof x === 'string'));
+                    }
+                    if (punten.length) return punten.slice(0, 5);
+                }
+                return [];
+            }
+
+            // Helper: find sterke punten
+            function findSterkePunten(domainData) {
+                for (const sk of ['totaalbeeld', 'algehele_beoordeling', 'totaalbeeld_esthetiek', 'conclusie_en_aanbeveling']) {
+                    if (domainData[sk] && typeof domainData[sk] === 'object') {
+                        const sp = domainData[sk].sterke_punten_top_3 || domainData[sk].sterke_punten || [];
+                        if (Array.isArray(sp) && sp.length) return sp;
+                    }
+                }
+                return [];
+            }
+
+            // Render each domain as a collapsible card
+            for (const [domainKey, domainData] of Object.entries(analyses)) {
+                if (!domainData || typeof domainData !== 'object') continue;
+
+                const displayName = domeinNamen[domainKey] || domainKey.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                const score = findOverallScore(domainData);
+                const summary = findSummary(domainData);
+                const sterkePunten = findSterkePunten(domainData);
+                const verbeterpunten = findVerbeterpunten(domainData);
+
+                const scoreHtml = score !== null
+                    ? `<span style="background: var(--accent); color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.85em; margin-left: 8px;">${score}</span>`
+                    : '';
+
+                const detailId = `feedback-detail-${sectionKey}-${domainKey}`;
+
+                html += `<div class="gebed-card" style="margin-bottom: 16px;">`;
+
+                // Header (clickable)
+                html += `<div style="cursor: pointer; display: flex; align-items: center; justify-content: space-between;" onclick="const el = document.getElementById('${detailId}'); el.style.display = el.style.display === 'none' ? 'block' : 'none'; this.querySelector('.toggle-arrow').textContent = el.style.display === 'none' ? '▸' : '▾';">`;
+                html += `<div style="display: flex; align-items: center;">`;
+                html += `<span class="toggle-arrow" style="margin-right: 8px; color: var(--accent); font-size: 0.9em;">▸</span>`;
+                html += `<span style="font-weight: 600; color: var(--accent);">${escapeHtml(displayName)}</span>`;
+                html += scoreHtml;
+                html += `</div>`;
+                html += `</div>`;
+
+                // Summary (always visible)
+                if (summary) {
+                    html += `<div style="margin-top: 10px; line-height: 1.65; color: var(--text-primary);">${processText(summary)}</div>`;
+                }
+
+                // Sterke punten (always visible)
+                if (sterkePunten.length) {
+                    html += `<div style="margin-top: 10px;">`;
+                    html += `<div style="font-weight: 600; font-size: 0.9em; color: var(--text-secondary); margin-bottom: 4px;">Sterke punten</div>`;
+                    sterkePunten.forEach(p => {
+                        html += `<div class="list-item" style="margin: 0 0 0 15px; position: relative; padding-left: 15px;"><span style="position: absolute; left: 0; color: var(--accent);">+</span>${processText(p)}</div>`;
+                    });
+                    html += `</div>`;
+                }
+
+                // Verbeterpunten (always visible)
+                if (verbeterpunten.length) {
+                    html += `<div style="margin-top: 10px;">`;
+                    html += `<div style="font-weight: 600; font-size: 0.9em; color: var(--text-secondary); margin-bottom: 4px;">Verbeterpunten</div>`;
+                    verbeterpunten.forEach(p => {
+                        html += `<div class="list-item" style="margin: 0 0 0 15px; position: relative; padding-left: 15px;"><span style="position: absolute; left: 0; color: var(--accent);">–</span>${processText(p)}</div>`;
+                    });
+                    html += `</div>`;
+                }
+
+                // Collapsible detail (hidden by default)
+                html += `<div id="${detailId}" style="display: none; margin-top: 16px; padding-top: 12px; border-top: 1px dashed var(--border-light);">`;
+                // Render full domain data, skipping metadata and _usage
+                const filteredData = {};
+                for (const [k, v] of Object.entries(domainData)) {
+                    if (k === 'metadata' || k === '_usage') continue;
+                    filteredData[k] = v;
+                }
+                html += renderObjectWithIds(filteredData, sectionKey + '-' + domainKey);
+                html += `</div>`;
+
+                html += `</div>`; // end gebed-card
+            }
 
             return html;
         }
