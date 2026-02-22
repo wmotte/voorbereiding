@@ -2291,6 +2291,11 @@
             "53_natuurwetenschappen": 'Natuurwetenschappen',
             "54_politieke_speltheorie": 'Politieke speltheorie',
             "55_mystagogiek": 'Mystagogiek',
+            "56_gender_queer_body": 'Gender, queer & body',
+            "57_digitale_cultuur": 'Digitale cultuur',
+            "58_ruimtelijke_ordening": 'Ruimtelijke ordening',
+            "63_gastrosofie": 'Gastrosofie',
+            "65_informatie_entropie": 'Informatie & entropie',
             "18_kunst_cultuur": 'Kunst & cultuur',
             "19_preek_jungel": 'Preekschets (theologisch)',
             "20_preek_fleming_rutledge": 'Preekschets (apocalyptisch)',
@@ -2516,7 +2521,9 @@
                  '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie',
                  '46_culturele_antropologie', '47_receptiegeschiedenis', '48_literaire_theorie',
                  '49_psychologie', '50_ecologie', '51_postkoloniaal', '52_rechtswetenschap',
-                 '53_natuurwetenschappen', '54_politieke_speltheorie', '55_mystagogiek'].includes(key)) {
+                 '53_natuurwetenschappen', '54_politieke_speltheorie', '55_mystagogiek',
+                 '56_gender_queer_body', '57_digitale_cultuur', '58_ruimtelijke_ordening',
+                 '63_gastrosofie', '65_informatie_entropie'].includes(key)) {
                 return 'nav-group-homiletiek';
             }
             // Groep 5: Gebeden
@@ -2564,7 +2571,9 @@
                  '16_homiletische_buttrick', '17_homiletische_illustraties', '45_filosofie',
                  '46_culturele_antropologie', '47_receptiegeschiedenis', '48_literaire_theorie',
                  '49_psychologie', '50_ecologie', '51_postkoloniaal', '52_rechtswetenschap',
-                 '53_natuurwetenschappen', '54_politieke_speltheorie', '55_mystagogiek'].includes(key)) {
+                 '53_natuurwetenschappen', '54_politieke_speltheorie', '55_mystagogiek',
+                 '56_gender_queer_body', '57_digitale_cultuur', '58_ruimtelijke_ordening',
+                 '63_gastrosofie', '65_informatie_entropie'].includes(key)) {
                 return 'Homiletiek';
             }
             if (['36_gebeden', '37_gebeden_profetisch', '38_gebeden_dialogisch', '39_gebeden_eenvoudig'].includes(key)) {
@@ -2738,37 +2747,42 @@
                 '53_natuurwetenschappen': '26',
                 '54_politieke_speltheorie': '27',
                 '55_mystagogiek': '28',
-                '19_preek_jungel': '29',
-                '20_preek_fleming_rutledge': '30',
-                '25_preek_brueggemann_poet': '31',
-                '26_preek_literair': '32',
-                '27_preek_noordmans': '33',
-                '28_preek_kosuke_koyama': '34',
-                '29_preek_zornberg': '35',
-                '30_preek_brueggemann': '36',
-                '31_preek_drewermann': '37',
-                '32_preek_gardner_taylor': '38',
-                '33_preek_solle': '39',
-                '34_preek_peterson': '40',
+                '56_gender_queer_body': '29',
+                '57_digitale_cultuur': '30',
+                '58_ruimtelijke_ordening': '31',
+                '63_gastrosofie': '32',
+                '65_informatie_entropie': '33',
+                '19_preek_jungel': '34',
+                '20_preek_fleming_rutledge': '35',
+                '25_preek_brueggemann_poet': '36',
+                '26_preek_literair': '37',
+                '27_preek_noordmans': '38',
+                '28_preek_kosuke_koyama': '39',
+                '29_preek_zornberg': '40',
+                '30_preek_brueggemann': '41',
+                '31_preek_drewermann': '42',
+                '32_preek_gardner_taylor': '43',
+                '33_preek_solle': '44',
+                '34_preek_peterson': '45',
 
-                '21_feedback_jungel': '41',
-                '22_feedback_rutledge': '42',
-                '23_rewrite_jungel': '43',
-                '24_rewrite_rutledge': '44',
+                '21_feedback_jungel': '46',
+                '22_feedback_rutledge': '47',
+                '23_rewrite_jungel': '48',
+                '24_rewrite_rutledge': '49',
 
-                '35_midjourney_prompts': '45',
+                '35_midjourney_prompts': '50',
 
-                '36_gebeden': '46',
-                '37_gebeden_profetisch': '47',
-                '38_gebeden_dialogisch': '48',
-                '39_gebeden_eenvoudig': '49',
+                '36_gebeden': '51',
+                '37_gebeden_profetisch': '52',
+                '38_gebeden_dialogisch': '53',
+                '39_gebeden_eenvoudig': '54',
 
-                '40_kindermoment': '50',
-                '41_wetslezing': '51',
-                '42_kalender': '52',
-                '09_liedsuggesties': '53',
-                '18_kunst_cultuur': '54',
-                '43_bezinningsmoment': '55',
+                '40_kindermoment': '55',
+                '41_wetslezing': '56',
+                '42_kalender': '57',
+                '09_liedsuggesties': '58',
+                '18_kunst_cultuur': '59',
+                '43_bezinningsmoment': '60',
                 '60_preek_volledige_tekst': '60',
                 '61_feedback_volledige_preek': '61',
                 '62_preek_rewrite': '62'
@@ -3866,7 +3880,12 @@
                 key === 'rechtswetenschappelijke_analyses' || key === '52_rechtswetenschap' ||
                 key === 'natuurwetenschappelijke_perspectieven' || key === '53_natuurwetenschappen' ||
                 key === 'politieke_analyses' || key === '54_politieke_speltheorie' ||
-                key === 'mystagogische_analyses' || key === '55_mystagogiek') {
+                key === 'mystagogische_analyses' || key === '55_mystagogiek' ||
+                key === 'gender_body_analyses' || key === '56_gender_queer_body' ||
+                key === 'media_ecologische_analyses' || key === '57_digitale_cultuur' ||
+                key === 'ruimtelijke_analyses' || key === '58_ruimtelijke_ordening' ||
+                key === 'gastrosofische_analyses' || key === '63_gastrosofie' ||
+                key === 'informatie_theoretische_analyses' || key === '65_informatie_entropie') {
                 return renderAnalytischeDuiding(value, key);
             }
 
@@ -4126,6 +4145,16 @@
                 '53_natuurwetenschappen': { title: 'Natuurwetenschappelijke Verkenningen', color: '#9b7a9e', accent: '#7a5d7e' },
                 '54_politieke_speltheorie': { title: 'Politieke Speltheorie Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
                 '55_mystagogiek': { title: 'Mystagogische Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                '56_gender_queer_body': { title: 'Gender, Queer & Body Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                '57_digitale_cultuur': { title: 'Digitale Cultuur Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                '58_ruimtelijke_ordening': { title: 'Ruimtelijke Ordening Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                '63_gastrosofie': { title: 'Gastrosofische Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                '65_informatie_entropie': { title: 'Informatie & Entropie Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'gender_body_analyses': { title: 'Gender, Queer & Body Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'media_ecologische_analyses': { title: 'Digitale Cultuur Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'ruimtelijke_analyses': { title: 'Ruimtelijke Ordening Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'gastrosofische_analyses': { title: 'Gastrosofische Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
+                'informatie_theoretische_analyses': { title: 'Informatie & Entropie Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
                 'mystagogische_analyses': { title: 'Mystagogische Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
                 'filosofische_duidingen': { title: 'Filosofische Duidingen', color: '#9b7a9e', accent: '#7a5d7e' },
                 'cultureel_antropologische_analyses': { title: 'Cultureel Antropologische Analyses', color: '#9b7a9e', accent: '#7a5d7e' },
