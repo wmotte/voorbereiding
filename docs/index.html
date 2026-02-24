@@ -2324,6 +2324,7 @@
             //'43_bezinningsmoment': 'Moment van bezinning',
             "60_preek_volledige_tekst": 'Preek (volledig)',
             "61_feedback_volledige_preek": 'Feedback',
+            "59_adversarial_redteam": 'Adversariële analyse',
             "62_preek_rewrite": 'Preek (gecorrigeerd)',
 
         };
@@ -2549,7 +2550,7 @@
                 return 'nav-group-beeldgeneratie';
             }
             // Groep 10: Voorbeelden
-            if (['60_preek_volledige_tekst', '61_feedback_volledige_preek', '62_preek_rewrite'].includes(key)) {
+            if (['60_preek_volledige_tekst', "59_adversarial_redteam", '61_feedback_volledige_preek', '62_preek_rewrite'].includes(key)) {
                 return 'nav-group-voorbeelden';
             }
             return ''; // Default: geen specifieke groep klasse
@@ -2593,7 +2594,7 @@
             if (['35_midjourney_prompts'].includes(key)) {
                 return 'Beeldgeneratie';
             }
-            if (['60_preek_volledige_tekst', '61_feedback_volledige_preek', '62_preek_rewrite'].includes(key)) {
+            if (['60_preek_volledige_tekst', "59_adversarial_redteam", '61_feedback_volledige_preek', '62_preek_rewrite'].includes(key)) {
                 return 'Voorbeelden';
             }
             return null;
@@ -2782,10 +2783,11 @@
                 '42_kalender': '57',
                 '09_liedsuggesties': '58',
                 '18_kunst_cultuur': '59',
-                '43_bezinningsmoment': '60',
+                //'43_bezinningsmoment': '60',
                 '60_preek_volledige_tekst': '60',
-                '61_feedback_volledige_preek': '61',
-                '62_preek_rewrite': '62'
+                "59_adversarial_redteam": '61', 
+                '61_feedback_volledige_preek': '62',
+                '62_preek_rewrite': '63'
             };
 
             // Create section number map for sorting
@@ -3346,6 +3348,8 @@
                 contentHtml = renderObjectWithIds(dataToRender, key);
             } else if (key === '60_preek_volledige_tekst') {
                 contentHtml = renderPreekVolledigeTekstSection(dataToRender, key);
+            } else if (key === '59_adversarial_redteam') {
+                contentHtml = renderAdversarialRedteam(dataToRender);
             } else if (key === '61_feedback_volledige_preek') {
                 contentHtml = renderFeedbackVolledigePreekSection(dataToRender, key);
             } else if (key === '62_preek_rewrite') {
@@ -4282,6 +4286,104 @@
             });
 
             html += `</div>`;
+            return html;
+        }
+
+
+        function renderAdversarialRedteam(data) {
+            const aanvallen = (data && Array.isArray(data.adversariale_aanvallen)) ? data.adversariale_aanvallen : [];
+            const mainColor = '#c0392b';
+            const accentColor = '#922b21';
+
+            let html = '<div class="data-group">';
+
+            // Render each adversarial attack as a card
+            aanvallen.forEach(item => {
+                const perspBadge = item.perspectief_type === 'inside'
+                    ? '<span style="background: rgba(255,255,255,0.25); font-size: 0.75em; padding: 2px 8px; border-radius: 10px; margin-left: 10px;">inside</span>'
+                    : '<span style="background: rgba(255,255,255,0.15); font-size: 0.75em; padding: 2px 8px; border-radius: 10px; margin-left: 10px;">outside</span>';
+
+                html += '<div class="hoorder-card" style="border-left-color: ' + mainColor + '; margin-bottom: 35px;">';
+
+                // Header
+                html += '<div class="hoorder-header" style="background: linear-gradient(135deg, ' + mainColor + ', ' + accentColor + ');">';
+                if (item.nummer) html += '<div class="hoorder-nummer" style="background: rgba(255,255,255,0.25);">' + item.nummer + '</div>';
+                html += '<div class="hoorder-intro">';
+                if (item.persona) html += '<div class="hoorder-naam" style="font-size: 1.3em;">' + processText(item.persona) + perspBadge + '</div>';
+                if (item.aanvalshoek) html += '<div class="hoorder-meta" style="font-style: italic; opacity: 0.9; margin-top: 4px;">' + processText(item.aanvalshoek) + '</div>';
+                html += '</div></div>';
+
+                html += '<div class="hoorder-content" style="padding: 25px;">';
+
+                // Traditie/achtergrond meta
+                if (item.traditie_of_achtergrond) {
+                    html += '<div class="hoorder-groep" style="background: var(--bg-primary); border-left: 3px solid ' + mainColor + '; margin-bottom: 20px;">';
+                    html += '<div class="hoorder-groep-titel" style="color: ' + mainColor + '; font-size: 0.8em;">Achtergrond</div>';
+                    html += '<div style="font-size: 0.9em;">' + processText(item.traditie_of_achtergrond) + '</div>';
+                    html += '</div>';
+                }
+
+                // Quote from sermon
+                if (item.preek_citaat) {
+                    html += '<div class="quote-block" style="border-left-color: ' + mainColor + '; background: var(--bg-tertiary); margin: 20px 0; font-size: 0.95em;">';
+                    html += '<strong style="color: ' + mainColor + '">Preek citaat:</strong> ' + processText(item.preek_citaat);
+                    html += '</div>';
+                }
+
+                // Main critique / analysis
+                const mainTextKey = ['kritiek', 'analyse', 'kritiek_analyse'].find(k => item[k]);
+                if (mainTextKey) {
+                    html += '<div style="line-height: 1.9; margin-bottom: 25px; font-size: 1.05em;">' + processText(item[mainTextKey]) + '</div>';
+                }
+
+                // Blinde vlek diagnose
+                if (item.blinde_vlek_diagnose) {
+                    html += '<div style="background: var(--bg-tertiary); padding: 20px; border-radius: 4px; border-left: 5px solid ' + mainColor + '; border-right: 1px solid var(--border-light); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); margin-bottom: 15px;">';
+                    html += '<div style="font-weight: bold; color: ' + mainColor + '; margin-bottom: 10px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px;">Blinde Vlek</div>';
+                    html += '<div style="font-style: italic; line-height: 1.7;">' + processText(item.blinde_vlek_diagnose) + '</div>';
+                    html += '</div>';
+                }
+
+                // Suggestion for nuance
+                if (item.suggestie_voor_nuancering) {
+                    html += '<div style="margin-top: 15px; font-size: 0.9em; color: var(--text-secondary); padding: 12px 15px; border-left: 3px solid var(--border-light);">';
+                    html += '<strong style="color: var(--text-secondary);">Suggestie:</strong> ' + processText(item.suggestie_voor_nuancering);
+                    html += '</div>';
+                }
+
+                html += '</div></div>';
+            });
+
+            // Overkoepelende diagnose
+            if (data.overkoepelende_diagnose) {
+                html += '<div style="background: var(--bg-secondary); padding: 25px; border-radius: 6px; border: 1px solid var(--border-light); margin-bottom: 25px;">';
+                html += '<div style="font-weight: bold; color: ' + mainColor + '; margin-bottom: 12px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px;">Overkoepelende Diagnose</div>';
+                html += '<div style="line-height: 1.9;">' + processText(data.overkoepelende_diagnose) + '</div>';
+                html += '</div>';
+            }
+
+            // Prioritaire nuanceringen
+            if (Array.isArray(data.prioritaire_nuanceringen) && data.prioritaire_nuanceringen.length > 0) {
+                html += '<div style="background: var(--bg-secondary); padding: 25px; border-radius: 6px; border: 1px solid var(--border-light); margin-bottom: 25px;">';
+                html += '<div style="font-weight: bold; color: ' + mainColor + '; margin-bottom: 12px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px;">Prioritaire Nuanceringen</div>';
+                html += '<ul style="list-style-type: none; padding-left: 0; margin: 0;">';
+                data.prioritaire_nuanceringen.forEach(n => {
+                    html += '<li style="margin-bottom: 10px; padding-left: 20px; position: relative; line-height: 1.6;">';
+                    html += '<span style="position: absolute; left: 0; color: ' + mainColor + '; font-weight: bold;">»</span>' + processText(n);
+                    html += '</li>';
+                });
+                html += '</ul></div>';
+            }
+
+            // Bestaanskracht
+            if (data.bestaanskracht) {
+                html += '<div style="background: var(--bg-secondary); padding: 25px; border-radius: 6px; border: 1px solid var(--border-light); border-left: 5px solid #27ae60; margin-bottom: 25px;">';
+                html += '<div style="font-weight: bold; color: #27ae60; margin-bottom: 12px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px;">Bestaanskracht</div>';
+                html += '<div style="line-height: 1.9;">' + processText(data.bestaanskracht) + '</div>';
+                html += '</div>';
+            }
+
+            html += '</div>';
             return html;
         }
 
