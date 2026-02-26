@@ -2322,7 +2322,7 @@
             "40_kindermoment": 'Kindermoment',
             "41_wetslezing": 'Wetslezing',
             "42_kalender": 'Kalender',
-            //'43_bezinningsmoment': 'Moment van bezinning',
+            '43_bezinningsmoment': 'Moment van bezinning',
             "60_preek_volledige_tekst": 'Preek (volledig)',
             "61_feedback_volledige_preek": 'Feedback',
             "59_adversarial_redteam": 'Adversariële analyse',
@@ -2784,11 +2784,11 @@
                 '42_kalender': '57',
                 '09_liedsuggesties': '58',
                 '18_kunst_cultuur': '59',
-                //'43_bezinningsmoment': '60',
-                '60_preek_volledige_tekst': '60',
-                "59_adversarial_redteam": '61', 
-                '61_feedback_volledige_preek': '62',
-                '62_preek_rewrite': '63'
+                '43_bezinningsmoment': '60',
+                '60_preek_volledige_tekst': '61',
+                "59_adversarial_redteam": '62', 
+                '61_feedback_volledige_preek': '63',
+                '62_preek_rewrite': '64'
             };
 
             // Create section number map for sorting
@@ -3030,8 +3030,8 @@
                         subSections.push('bibliografie');
                         subSectionLabels['bibliografie'] = 'Bibliografie';
                     }
-                } else if (key === '40_kindermoment') {
-                    // Special handling for Kindermoment - show the three kindermoment option titles
+                } else if (key === '40_kindermoment' || key === '43_bezinningsmoment') {
+                    // Special handling for Kindermoment / Bezinningsmoment - show the three kindermoment option titles
                     if (sectionData.kindermoment_opties && Array.isArray(sectionData.kindermoment_opties)) {
                         sectionData.kindermoment_opties.forEach((optie, index) => {
                             const titel = optie.titel || `Kindermoment Optie ${index + 1}`;
@@ -3905,7 +3905,7 @@
             }
 
             // Kindermoment opties
-            if (key === 'kindermoment_opties' && parentKey === '40_kindermoment') {
+            if (key === 'kindermoment_opties' && (parentKey === '40_kindermoment' || parentKey === '43_bezinningsmoment')) {
                 return renderKindermoment(value, parentKey);
             }
 
