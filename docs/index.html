@@ -371,6 +371,12 @@
             color: #f5f0e8;
         }
 
+        /* Groep kleuren - Conversationeel */
+        .nav-group-conversationeel .nav-number {
+            background: #5b7fa6;
+            color: #f5f0e8;
+        }
+
         /* Groep headers in menu */
         .nav-group-header {
             padding: 8px 20px 4px 20px;
@@ -622,6 +628,173 @@
         .section-group-voorbeelden .section-number {
             background: #4a7c59;
             color: #f5f0e8;
+        }
+
+        /* Section number kleuren - Conversationeel */
+        .section-group-conversationeel .section-number {
+            background: #5b7fa6;
+            color: #f5f0e8;
+        }
+
+        /* Chat / ronde tafel stijl */
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 10px 0;
+        }
+
+        .chat-meta-block {
+            background: var(--bg-secondary);
+            border-left: 4px solid #5b7fa6;
+            padding: 14px 18px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .chat-meta-block .data-group-title {
+            color: #5b7fa6;
+        }
+
+        .chat-participants {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .chat-participant-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            color: white;
+        }
+
+        .chat-participant-badge .badge-rol {
+            font-weight: normal;
+            opacity: 0.85;
+            font-size: 0.9em;
+        }
+
+        .chat-message {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            max-width: 90%;
+        }
+
+        .chat-message.moderator {
+            align-self: center;
+            max-width: 96%;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .chat-message.right {
+            align-self: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        .chat-avatar {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.95em;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .chat-bubble {
+            background: var(--bg-secondary);
+            padding: 12px 16px;
+            border-radius: 12px;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .chat-message:not(.right):not(.moderator) .chat-bubble {
+            border-top-left-radius: 4px;
+        }
+
+        .chat-message.right .chat-bubble {
+            border-top-right-radius: 4px;
+            background: var(--bg-tertiary);
+        }
+
+        .chat-message.moderator .chat-bubble {
+            border-radius: 4px;
+            border-top: 3px solid #5b7fa6;
+            background: var(--bg-secondary);
+        }
+
+        .chat-speaker {
+            font-weight: bold;
+            font-size: 0.82em;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .chat-fase-badge {
+            font-size: 0.75em;
+            font-weight: normal;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background: var(--bg-tertiary);
+            color: var(--text-muted);
+            text-transform: capitalize;
+        }
+
+        .chat-message.moderator .chat-fase-badge {
+            background: #5b7fa620;
+            color: #5b7fa6;
+        }
+
+        .chat-text {
+            font-size: 0.92em;
+            line-height: 1.65;
+            color: var(--text-primary);
+        }
+
+        .chat-minority-report {
+            margin-top: 30px;
+            border-top: 2px dashed var(--border-light);
+            padding-top: 20px;
+        }
+
+        .chat-minority-block {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent-light);
+            padding: 14px 18px;
+            margin-bottom: 12px;
+        }
+
+        .chat-minority-block h4 {
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .chat-minority-block ul {
+            list-style: disc;
+            padding-left: 18px;
+            margin: 0;
+        }
+
+        .chat-minority-block ul li {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 5px;
         }
 
         .section-title {
@@ -2217,12 +2390,13 @@
             '44_postille_preekschets',
             '50_ecologie',
             '40_kindermoment',
-            '18_kunst_cultuur'
+            '18_kunst_cultuur',
+            '66_ronde_tafel'
         ]);
 
         // Group names that contain at least one kern section
         const KERN_GROUP_NAMES = new Set([
-            'Liturgisch', 'Exegese & Theologie', 'Homiletiek', 'Gebeden', 'Liturgische Elementen', 'Preekschetsen', 'Voorbeelden'
+            'Liturgisch', 'Homiletiek', 'Liturgische Elementen', 'Conversationeel'
         ]);
 
         // State
@@ -2327,6 +2501,7 @@
             "61_feedback_volledige_preek": 'Feedback',
             "59_adversarial_redteam": 'Adversariële analyse',
             "62_preek_rewrite": 'Preek (gecorrigeerd)',
+            "66_ronde_tafel": 'Ronde tafel',
 
         };
 
@@ -2554,6 +2729,10 @@
             if (['60_preek_volledige_tekst', "59_adversarial_redteam", '61_feedback_volledige_preek', '62_preek_rewrite'].includes(key)) {
                 return 'nav-group-voorbeelden';
             }
+            // Groep 11: Conversationeel
+            if (['66_ronde_tafel'].includes(key)) {
+                return 'nav-group-conversationeel';
+            }
             return ''; // Default: geen specifieke groep klasse
         }
 
@@ -2597,6 +2776,9 @@
             }
             if (['60_preek_volledige_tekst', "59_adversarial_redteam", '61_feedback_volledige_preek', '62_preek_rewrite'].includes(key)) {
                 return 'Voorbeelden';
+            }
+            if (['66_ronde_tafel'].includes(key)) {
+                return 'Conversationeel';
             }
             return null;
         }
@@ -3355,6 +3537,8 @@
                 contentHtml = renderFeedbackVolledigePreekSection(dataToRender, key);
             } else if (key === '62_preek_rewrite') {
                 contentHtml = renderPreekRewriteSection(dataToRender, key);
+            } else if (key === '66_ronde_tafel') {
+                contentHtml = renderRondeTafelSection(dataToRender);
             } else {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             }
@@ -8153,6 +8337,122 @@
             // Reset file input for re-upload
             event.target.value = '';
         });
+
+        // Render Ronde Tafel section as a chat conversation
+        function renderRondeTafelSection(data) {
+            let html = '';
+
+            // Kleurenpalet per spreker (maximaal 8 deelnemers)
+            const speakerColors = [
+                '#5b7fa6', '#7a9b6f', '#c67a7a', '#9b7a9e',
+                '#c88f5f', '#6b8ba8', '#8b6f47', '#4a7c59'
+            ];
+            const speakerColorMap = {};
+
+            // Deelnemers registreren + badges tonen
+            if (Array.isArray(data.deelnemers)) {
+                data.deelnemers.forEach((d, i) => {
+                    speakerColorMap[d.naam] = speakerColors[i % speakerColors.length];
+                });
+
+                html += `<div class="chat-participants">`;
+                data.deelnemers.forEach(d => {
+                    const color = speakerColorMap[d.naam] || '#888';
+                    html += `<div class="chat-participant-badge" style="background:${color};">
+                        ${escapeHtml(d.naam)}
+                        <span class="badge-rol">— ${escapeHtml(d.rol)}</span>
+                    </div>`;
+                });
+                html += `</div>`;
+            }
+
+            // Analyse meta
+            if (data.analyse_meta) {
+                const m = data.analyse_meta;
+                html += `<div class="chat-meta-block">`;
+                html += `<div class="data-group-title">Thema &amp; context</div>`;
+                if (m.thema) html += `<div class="data-item"><div class="data-label">Thema</div><div class="data-value">${processText(m.thema)}</div></div>`;
+                if (m.perikoop) html += `<div class="data-item"><div class="data-label">Perikoop</div><div class="data-value">${escapeHtml(m.perikoop)}</div></div>`;
+                if (m.kernspanning) html += `<div class="data-item"><div class="data-label">Kernspanning</div><div class="data-value">${processText(m.kernspanning)}</div></div>`;
+                html += `</div>`;
+            }
+
+            // Dialoog als chatberichten
+            if (Array.isArray(data.dialoog)) {
+                html += `<div class="chat-container">`;
+
+                // Bepaal welke spreker "rechts" staat (de tweede unieke spreker, zodat het afwisselt)
+                const uniqueSpeakers = [...new Set(data.dialoog.map(m => m.spreker))];
+                const rightSpeaker = uniqueSpeakers[2] || null; // 3e spreker rechts voor variatie
+
+                data.dialoog.forEach(msg => {
+                    const color = speakerColorMap[msg.spreker] || '#888';
+                    const initial = msg.spreker ? msg.spreker.charAt(0).toUpperCase() : '?';
+                    const isRight = msg.spreker === rightSpeaker;
+
+                    // Vind de rol van de spreker
+                    const deelnemer = (data.deelnemers || []).find(d => d.naam === msg.spreker);
+                    const rolLabel = deelnemer ? deelnemer.rol : '';
+
+                    let msgClass = 'chat-message';
+                    if (rolLabel === 'Moderator') msgClass += ' moderator';
+                    else if (isRight) msgClass += ' right';
+
+                    html += `<div class="${msgClass}">`;
+                    if (rolLabel !== 'Moderator') {
+                        html += `<div class="chat-avatar" style="background:${color};">${escapeHtml(initial)}</div>`;
+                    }
+                    html += `<div class="chat-bubble">`;
+                    html += `<div class="chat-speaker" style="color:${color};">
+                        ${escapeHtml(msg.spreker)}
+                        ${rolLabel ? `<span class="badge-rol" style="font-weight:normal;font-size:0.85em;color:var(--text-muted);">— ${escapeHtml(rolLabel)}</span>` : ''}
+                        ${msg.fase ? `<span class="chat-fase-badge">${escapeHtml(msg.fase)}</span>` : ''}
+                    </div>`;
+                    html += `<div class="chat-text">${processText(msg.tekst)}</div>`;
+                    html += `</div></div>`;
+                });
+
+                html += `</div>`;
+            }
+
+            // Minority report
+            if (data.minority_report) {
+                const mr = data.minority_report;
+                html += `<div class="chat-minority-report">`;
+                html += `<div class="data-group-title" style="font-size:1.1em; margin-bottom:14px;">Minority Report</div>`;
+
+                if (Array.isArray(mr.onopgeloste_spanningen)) {
+                    html += `<div class="chat-minority-block">
+                        <h4>Onopgeloste spanningen</h4><ul>`;
+                    mr.onopgeloste_spanningen.forEach(s => {
+                        html += `<li>${processText(s)}</li>`;
+                    });
+                    html += `</ul></div>`;
+                }
+
+                if (Array.isArray(mr.kritische_blinde_vlekken)) {
+                    html += `<div class="chat-minority-block">
+                        <h4>Kritische blinde vlekken</h4><ul>`;
+                    mr.kritische_blinde_vlekken.forEach(v => {
+                        html += `<li>${processText(v)}</li>`;
+                    });
+                    html += `</ul></div>`;
+                }
+
+                if (Array.isArray(mr.innovatieve_raakvlakken)) {
+                    html += `<div class="chat-minority-block">
+                        <h4>Innovatieve raakvlakken</h4><ul>`;
+                    mr.innovatieve_raakvlakken.forEach(r => {
+                        html += `<li>${processText(r)}</li>`;
+                    });
+                    html += `</ul></div>`;
+                }
+
+                html += `</div>`;
+            }
+
+            return html;
+        }
 
         // Dynamic Layout Adjustment for Variable Header Height
         function adjustLayout() {
