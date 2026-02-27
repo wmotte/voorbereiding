@@ -18,7 +18,7 @@ Om het ontstaan van een nieuwe elite of "group-think" binnen de gemeenschap te v
 De brainstormsessies vinden niet plaats in kerkelijke ruimtes, maar worden verplaatst naar wisselende, publieke en sociale locaties. Voorbeelden hiervan zijn openbare bibliotheken, winkelcentra, vrouwenopvangcentra of daklozencentra. Deze dislocatie dwingt de deelnemers om de bijbelse tekst direct te confronteren met de maatschappelijke realiteit, waardoor wordt voorkomen dat exegese beperkt blijft tot een geïsoleerde kerkelijke bubbel.
 
 ## De Rol van de Predikant en The Four Codes
-Binnen de wekelijkse rondetafel fungeert de predikant niet als docent, maar primair als "homiletische gastheer" wiens taak het is om te luisteren en te notuleren. Pas tijdens de wekelijkse kerkdienst neemt de predikant het woord om profetisch te spreken náámens de inzichten van de rondetafel.
+Binnen de wekelijkse rondetafel fungeert de predikant niet als docent, maar primair als "homiletische gastheer" wiens taak het is om te luisteren en te notuleren. Pas tijdens de wekelijkse kerkdienst neemt de predikant het woord om profetisch te spreken namens de inzichten van de rondetafel.
 
 Om de complexe veelheid aan stemmen ("polyfonie") uit de rondetafel te structureren, maakt de methode gebruik van *The Four Codes of Preaching*. Dit raamwerk helpt de predikant de betekenis van een tekst op vijf locaties te categoriseren en te duiden:
 
@@ -43,9 +43,9 @@ De collaboratieve benadering vereist een rigoureuze ethische curatie om te voork
 
 ## Bronnen
 
-* **[1]** McClure, J. S. (1995). *The Roundtable Pulpit: Where Leadership and Preaching Meet*. Nashville, TN: Abingdon Press. 
-  **ISBN-13:** 978-0687011421
-* **[2]** McClure, J. S. (2012). *Roundtable Pulpit*. Otherwise Thinking (Blog). Geraadpleegd via johnsmcclure.com. 
-  *(Let op: Dit betreft een online bron/blogreeks ter verdieping van de methode, hiervoor is geen ISBN van toepassing).*
-* **[3]** McClure, J. S. (1991). *The Four Codes of Preaching: Rhetorical Strategies*. Minneapolis, MN: Fortress Press. 
+* **[1]** McClure, J. S. (1991). *The Four Codes of Preaching: Rhetorical Strategies*. Minneapolis, MN: Fortress Press. 
   **ISBN-13:** 978-0800625030 *(Heruitgave via Westminster John Knox Press: ISBN-13: 978-0664228064).*
+
+* **[2]** McClure, J. S. (1995). *The Roundtable Pulpit: Where Leadership and Preaching Meet*. Nashville, TN: Abingdon Press. 
+  **ISBN-13:** 978-0687011421
+
