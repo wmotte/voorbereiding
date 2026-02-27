@@ -3367,6 +3367,20 @@
                             subSectionLabels[subKey] = liedboekLabels[subKey] || formatKey(subKey);
                         }
                     });
+                } else if (key === '66_ronde_tafel') {
+                    const rondeTafelLabels = {
+                        'analyse_meta': 'Thema & context',
+                        'deelnemers': 'Deelnemers',
+                        'dialoog': 'Dialoog',
+                        'minority_report': 'Minority report',
+                        'homiletische_oogst': 'Homiletische oogst',
+                    };
+                    ['analyse_meta', 'deelnemers', 'dialoog', 'minority_report', 'homiletische_oogst'].forEach(subKey => {
+                        if (sectionData[subKey]) {
+                            subSections.push(subKey);
+                            subSectionLabels[subKey] = rondeTafelLabels[subKey];
+                        }
+                    });
                 } else {
                     // Default: get subsections from top-level keys
                     subSections = Object.keys(sectionData)
@@ -3538,7 +3552,7 @@
             } else if (key === '62_preek_rewrite') {
                 contentHtml = renderPreekRewriteSection(dataToRender, key);
             } else if (key === '66_ronde_tafel') {
-                contentHtml = renderRondeTafelSection(dataToRender);
+                contentHtml = renderRondeTafelSection(dataToRender, key);
             } else {
                 contentHtml = renderObjectWithIds(dataToRender, key);
             }
@@ -8339,8 +8353,9 @@
         });
 
         // Render Ronde Tafel section as a chat conversation
-        function renderRondeTafelSection(data) {
+        function renderRondeTafelSection(data, sectionKey) {
             let html = '';
+            const sk = sectionKey || '66_ronde_tafel';
 
             // Kleurenpalet per spreker (maximaal 8 deelnemers)
             const speakerColors = [
@@ -8355,6 +8370,7 @@
                     speakerColorMap[d.naam] = speakerColors[i % speakerColors.length];
                 });
 
+                html += `<div id="section-${sk}-deelnemers" class="subsection-anchor"></div>`;
                 html += `<div class="chat-participants">`;
                 data.deelnemers.forEach(d => {
                     const color = speakerColorMap[d.naam] || '#888';
@@ -8369,6 +8385,7 @@
             // Analyse meta
             if (data.analyse_meta) {
                 const m = data.analyse_meta;
+                html += `<div id="section-${sk}-analyse_meta" class="subsection-anchor"></div>`;
                 html += `<div class="chat-meta-block">`;
                 html += `<div class="data-group-title">Thema &amp; context</div>`;
                 if (m.thema) html += `<div class="data-item"><div class="data-label">Thema</div><div class="data-value">${processText(m.thema)}</div></div>`;
@@ -8379,6 +8396,7 @@
 
             // Dialoog als chatberichten
             if (Array.isArray(data.dialoog)) {
+                html += `<div id="section-${sk}-dialoog" class="subsection-anchor"></div>`;
                 html += `<div class="chat-container">`;
 
                 // Bepaal welke spreker "rechts" staat (de tweede unieke spreker, zodat het afwisselt)
@@ -8418,6 +8436,7 @@
             // Minority report
             if (data.minority_report) {
                 const mr = data.minority_report;
+                html += `<div id="section-${sk}-minority_report" class="subsection-anchor"></div>`;
                 html += `<div class="chat-minority-report">`;
                 html += `<div class="data-group-title" style="font-size:1.1em; margin-bottom:14px;">Minority Report</div>`;
 
@@ -8454,6 +8473,7 @@
             // Homiletische oogst
             if (data.homiletische_oogst) {
                 const oogst = data.homiletische_oogst;
+                html += `<div id="section-${sk}-homiletische_oogst" class="subsection-anchor"></div>`;
                 html += `<div class="chat-minority-report" style="border-left-color: var(--accent-light);">`;
                 html += `<div class="data-group-title" style="font-size:1.1em; margin-bottom:14px;">Homiletische oogst</div>`;
 
