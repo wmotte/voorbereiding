@@ -2335,6 +2335,105 @@
         .kalender-item-content li {
             margin-bottom: 4px;
         }
+
+        /* Wereldnieuws styles */
+        .news-meta-container {
+            background: var(--bg-secondary);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .news-date {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .news-verification {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .news-category-title {
+            margin: 30px 0 15px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--border-light);
+            color: var(--accent);
+            font-size: 1.3em;
+        }
+
+        .news-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .news-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .news-card-category {
+            background: var(--accent-light);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .news-card-location {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .news-card-title {
+            font-size: 1.1em;
+            line-height: 1.3;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .news-card-summary {
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+
+        .news-impact, .news-questions, .news-relevance {
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-light);
+            font-size: 0.9em;
+        }
+
+        .relevance-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 5px;
+        }
+
+        .relevance-grid div {
+            background: var(--bg-tertiary);
+            padding: 6px 10px;
+            border-radius: 4px;
+        }
+
+        .valkuil-card {
+            border-left: 4px solid #c0392b;
+        }
+
+        .news-link {
+            color: var(--accent);
+            word-break: break-all;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -2426,7 +2525,8 @@
             { file: "Vlissingen_15_februari_2026.json", label: "Vlissingen (15 februari 2026, PG)" },
             { file: "Maasbracht_22_februari_2026.json", label: "Maasbracht (22 februari 2026, PG)" },
             { file: "Woerden_1_maart_2026.json", label: "Woerden (1 maart 2026, Het Baken)" },
-	{ file: "Utrecht_29_maart_2026.json", label: "Utrecht (29 maart 2026, Janskerkgemeente)"}
+            { file: "Breda_8_maart_2026.json", label: "Breda (8 maart 2026, PG)" },
+	        { file: "Utrecht_29_maart_2026.json", label: "Utrecht (29 maart 2026, Janskerkgemeente)"}
             
         ];
 
@@ -3488,6 +3588,117 @@
             });
         }
 
+        // Render Wereldnieuws section with a structured layout
+        function renderWereldnieuwsSection(data, sectionKey) {
+            if (!data) return '';
+            let html = '';
+
+            // Nieuwsoverzicht datum en Zoek verificatie
+            if (data.nieuwsoverzicht_datum || data.zoek_verificatie) {
+                html += '<div class="news-meta-container">';
+                if (data.nieuwsoverzicht_datum) {
+                    html += `<div class="news-date"><strong>Nieuwsoverzicht datum:</strong> ${formatValue(data.nieuwsoverzicht_datum)}</div>`;
+                }
+                if (data.zoek_verificatie) {
+                    html += `<div class="news-verification"><strong>Zoek verificatie:</strong><br>${processText(data.zoek_verificatie)}</div>`;
+                }
+                html += '</div>';
+            }
+
+            // Nieuws items (wereldgebeurtenissen, nederlands_nieuws, kerkelijk_nieuws)
+            const newsSections = [
+                { key: 'wereldgebeurtenissen', title: 'Wereldgebeurtenissen' },
+                { key: 'nederlands_nieuws', title: 'Nederlands nieuws' },
+                { key: 'kerkelijk_nieuws', title: 'Kerkelijk nieuws' }
+            ];
+
+            newsSections.forEach(sec => {
+                if (data[sec.key] && Array.isArray(data[sec.key]) && data[sec.key].length > 0) {
+                    html += `<div id="section-${sectionKey}-${sec.key}" class="subsection-anchor"></div>`;
+                    html += `<h3 class="news-category-title">${sec.title}</h3>`;
+                    html += `<div class="card-grid">`;
+                    data[sec.key].forEach(item => {
+                        html += `
+                            <div class="nested-card news-card">
+                                <div class="news-card-header">
+                                    <span class="news-card-category">${escapeHtml(item.categorie || 'Nieuws')}</span>
+                                    ${item.locatie ? `<span class="news-card-location">${escapeHtml(item.locatie)}</span>` : ''}
+                                    ${item.lokale_relevantie && !item.locatie ? `<span class="news-card-location">Lokaal</span>` : ''}
+                                </div>
+                                <div class="nested-card-title news-card-title">${escapeHtml(item.titel || '')}</div>
+                                <div class="nested-card-content news-card-summary">${processText(item.samenvatting || '')}</div>
+                                
+                                ${item.emotionele_impact ? `
+                                    <div class="news-impact">
+                                        <strong>Emotionele impact:</strong><br>${processText(item.emotionele_impact)}
+                                    </div>` : ''}
+                                
+                                ${item.theologische_vragen && Array.isArray(item.theologische_vragen) && item.theologische_vragen.length > 0 ? `
+                                    <div class="news-questions">
+                                        <strong>Theologische vragen:</strong>
+                                        <ul style="margin: 5px 0 0 0; padding-left: 20px;">
+                                            ${item.theologische_vragen.map(q => `<li>${processText(q)}</li>`).join('')}
+                                        </ul>
+                                    </div>` : ''}
+                                
+                                ${item.relevantie_pkn ? `
+                                    <div class="news-relevance">
+                                        <strong>Relevantie PKN:</strong>
+                                        <div class="relevance-grid">
+                                            ${Object.entries(item.relevantie_pkn).map(([k, v]) => `
+                                                <div>
+                                                    <span style="font-size: 0.8em; color: var(--text-muted); text-transform: uppercase;">${formatKey(k)}</span><br>
+                                                    ${processText(v)}
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    </div>` : ''}
+
+                                ${item.relevantie_preek ? `
+                                    <div class="news-relevance">
+                                        <strong>Relevantie preek:</strong><br>${processText(item.relevantie_preek)}
+                                    </div>` : ''}
+                                
+                                ${item.bronnen_urls && Array.isArray(item.bronnen_urls) && item.bronnen_urls.length > 0 ? `
+                                    <div style="margin-top: 10px; font-size: 0.8em;">
+                                        <strong>Bronnen:</strong> ${item.bronnen_urls.map(url => `<a href="${url}" target="_blank" class="news-link">${url}</a>`).join(', ')}
+                                    </div>` : ''}
+                            </div>
+                        `;
+                    });
+                    html += `</div>`;
+                }
+            });
+
+            // Suggesties predikant
+            if (data.suggesties_predikant) {
+                html += `<div id="section-${sectionKey}-suggesties_predikant" class="subsection-anchor"></div>`;
+                html += `<h3 class="news-category-title">Suggesties voor de predikant</h3>`;
+                html += renderObject(data.suggesties_predikant, 'suggesties_predikant');
+            }
+
+            // Valkuilen
+            if (data.valkuilen && Array.isArray(data.valkuilen) && data.valkuilen.length > 0) {
+                html += `<div id="section-${sectionKey}-valkuilen" class="subsection-anchor"></div>`;
+                html += `<h3 class="news-category-title">Valkuilen om te vermijden</h3>`;
+                html += `<div class="card-grid">`;
+                data.valkuilen.forEach(v => {
+                    html += `
+                        <div class="nested-card valkuil-card">
+                            <div class="nested-card-title">${escapeHtml(v.valkuil || 'Valkuil')}</div>
+                            <div class="nested-card-content">
+                                <div><strong>Risico:</strong> ${processText(v.risico)}</div>
+                                <div style="margin-top:8px"><strong>Advies:</strong> ${processText(v.advies)}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+            }
+
+            return html;
+        }
+
         function renderSection(key, data, num) {
             let title = sectionTitles[key] || formatKey(key);
             // Add location name to main section titles
@@ -3551,6 +3762,8 @@
                 contentHtml = renderFeedbackVolledigePreekSection(dataToRender, key);
             } else if (key === '62_preek_rewrite') {
                 contentHtml = renderPreekRewriteSection(dataToRender, key);
+            } else if (key === '07_wereldnieuws') {
+                contentHtml = renderWereldnieuwsSection(dataToRender, key);
             } else if (key === '66_ronde_tafel') {
                 contentHtml = renderRondeTafelSection(dataToRender, key);
             } else {
