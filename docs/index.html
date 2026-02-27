@@ -8451,6 +8451,34 @@
                 html += `</div>`;
             }
 
+            // Homiletische oogst
+            if (data.homiletische_oogst) {
+                const oogst = data.homiletische_oogst;
+                html += `<div class="chat-minority-report" style="border-left-color: var(--accent-light);">`;
+                html += `<div class="data-group-title" style="font-size:1.1em; margin-bottom:14px;">Homiletische oogst</div>`;
+
+                if (oogst.tentatieve_proclamatie) {
+                    html += `<div class="chat-minority-block">
+                        <h4>Tentatieve proclamatie</h4>
+                        <div style="font-style:italic; line-height:1.7;">${processText(oogst.tentatieve_proclamatie)}</div>
+                    </div>`;
+                }
+                if (oogst.pastorale_winst) {
+                    html += `<div class="chat-minority-block">
+                        <h4>Pastorale winst</h4>
+                        <div style="line-height:1.7;">${processText(oogst.pastorale_winst)}</div>
+                    </div>`;
+                }
+                if (oogst.advies_voor_de_prediker) {
+                    html += `<div class="chat-minority-block">
+                        <h4>Advies voor de prediker</h4>
+                        <div style="line-height:1.7;">${processText(oogst.advies_voor_de_prediker)}</div>
+                    </div>`;
+                }
+
+                html += `</div>`;
+            }
+
             return html;
         }
 
