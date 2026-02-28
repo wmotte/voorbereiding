@@ -91,6 +91,14 @@ De analyses in dit project zijn niet willekeurig, maar gebaseerd op gevestigde h
 | 26 | **Preekschets Taylor** | Preekschets in de stijl van Gardner C. Taylor: eloquent en narratief. |
 | 21 | **Midjourney Prompts** | Visuele thema's en prompts voor beeldgeneratie bij de preek. |
 | 23 | **Literaire Preekschets** | Transformatie van de Buttrick-analyse naar een literaire preekschets, met nadruk op verhalende taal, concrete beelden en dialoog. |
+| 29 | **Preekschets Zornberg** | Preekschets in de stijl van Avivah Gottlieb Zornberg: rabbijnse exegese, psychoanalyse en literatuur. |
+| 31 | **Preekschets Drewermann** | Preekschets in de stijl van Eugen Drewermann: therapeutische homiletiek en dieptepsychologie. |
+| 21–24 | **Feedback & Herschrijving** | Homiletische feedback en herschreven versies van de Jüngel- en Rutledge-preekschetsen. |
+| 44 | **Postille** | Klassieke preekschets in de postilletraditie: exegetisch onderbouwd en liturgisch verankerd. |
+| 45–58, 63, 65 | **Interdisciplinaire Lenzen** | Zestien disciplinaire perspectieven op de tekst: filosofie, ecologie, gender, digitale cultuur en meer. |
+| 59 | **Adversarial Red Team** | Vijf kritische persona's testen de preek systematisch op blinde vlekken en schadepotentieel. |
+| 60–62 | **Volledige Preektekst** | Uitgewerkte preektekst, homiletische feedback en herschreven versie. |
+| 66 | **Ronde Tafel** | Gesimuleerd rondetafelgesprek met vijf fictieve gesprekspartners over de preekvoorbereiding. |
 
 ---
 
@@ -224,6 +232,7 @@ Het project genereert meerdere preekschetsen voor dezelfde zondag, elk vanuit ee
 | **KOYAMA** | Contextueel/Dialogisch | Neutraal (concrete context > abstractie) | Neighbourology, "Three Mile an Hour God" |
 | **TAYLOR** | Narratief/Eloquent | Neutraal (verhaal > doctrine) | Scharlaken Draad, "Sweet Torture" |
 | **ZORNBERG** | Torah/Profeten | Zeer sterke preferentie OT | Midrasjische potentie, psychologische diepte |
+| **DREWERMANN** | OT & NT | Neutraal (angst > genre) | Dieptepsychologie, 'van Angst naar Vertrouwen' |
 
 #### Waarom deze Diversiteit?
 
@@ -333,6 +342,36 @@ Preekschets in de stijl van Gardner C. Taylor: eloquent en narratief. Taylor, "d
 
 📄 **[Lees meer over de homiletiek van Taylor](misc/Gardner_Taylor_homiletiek.md)**
 
+### 29 Preekschets in de geest van Zornberg
+Preekschets in de stijl van Avivah Gottlieb Zornberg: rabbijnse exegese geweven met psychoanalyse en literatuur. Haar 'dialectische hermeneutiek' zoekt naar het 'bijbels onbewuste': de verborgen lagen van trauma, verlangen en paradox die onder de oppervlakte van de tekst resoneren.
+*   **Centraal thema:** De vreemdheid van de tekst als poort tot het onbewuste. Bijbelse personages als dragers van universele psychische conflicten.
+*   **Kenmerken:** Midrasjische amplificatie, psychoanalytische karakterstudie (Freud, Winnicott), en literaire comparatistiek (Shakespeare, George Eliot). God als 'psychoanalist' die de mens confronteert met innerlijke conflicten.
+
+### 31 Preekschets in de geest van Drewermann
+Preekschets in de stijl van Eugen Drewermann: therapeutische homiletiek die dieptepsychologie, existentiële filosofie en bijbeluitleg verenigt. Drewermanns centrale beweging is van *Angst naar Vertrouwen*: de existentiële angst die mensen gevangen houdt transformeren tot diep vertrouwen in Gods liefde.
+*   **Centraal thema:** De existentiële angst voor afwijzing, onvolwaardigheid en het leven zelf, en de bevrijding daarvan via Gods liefdevolle aanwezigheid.
+*   **Kenmerken:** Drie dimensies: **therapeutisch** (helen van de gewonde ziel), **beeldend** (amplificatie via sprookjes, mythologie en literatuur) en **politiek-profetisch** (hard voor systemen die onderdrukken, teder voor mensen die lijden). Bijbelse personages als spiegels van de eigen psyche ('subjectivering').
+
+---
+
+### 📝 Feedback & Herschrijving (21–24)
+
+Na het genereren van de eerste preekschetsen (Jüngel en Rutledge) biedt het platform een geïntegreerde feedback- en herschrijvingscyclus.
+
+### 21 Feedback op de Jüngel-schets
+Gecombineerde homiletische feedback op de Jüngel-preekschets vanuit meerdere wetenschappelijke en theologische perspectieven. Deze analyse helpt om de preekschets gericht te verbeteren en te verdiepen.
+
+### 22 Feedback op de Rutledge-schets
+Gecombineerde homiletische feedback op de Rutledge-preekschets vanuit meerdere wetenschappelijke en theologische perspectieven.
+
+### 23 Herschreven schets Jüngel
+Een verrijkte en herschreven versie van de Jüngel-preekschets waarin de feedback is verwerkt. De wijzigingen zijn vetgedrukt weergegeven, zodat de prediker direct ziet wat er is toegevoegd of aangescherpt.
+
+### 24 Herschreven schets Rutledge
+Een verrijkte en herschreven versie van de Rutledge-preekschets waarin de feedback is verwerkt.
+
+---
+
 ### 21 Midjourney Prompts
 Visuele thema's en prompts voor beeldgeneratie bij de preek. Deze prompts helpen bij het visueel ondersteunen van de boodschap via projectie of sociale media.
 
@@ -349,7 +388,69 @@ Een volledig uitgeschreven preekschets in literaire stijl, gebaseerd op de homil
 *   **Doel:** Een preekschets die de luisteraar meeneemt in het verhaal, niet uitlegt maar laat zien, en theologische diepgang verbindt met alledaagse herkenning
 
 Deze transformatie is gebaseerd op literaire voorbeelden en gebruikt moderne technieken uit creative writing (show don't tell, cinematografische beschrijvingen, karakterontwikkeling) om de boodschap levendig en toegankelijk te maken.
- 
+
+---
+
+### 44 Postille
+Een postille (van het Latijnse *post illa verba textus*, 'na deze woorden van de tekst') is een verzameling preken of bijbeluitleg, oorspronkelijk bedoeld als toelichting direct aansluitend op de gelezen Schriftpassage. Deze sectie biedt een volwaardige preekschets in de geest van de klassieke postilletraditie: degelijk exegetisch onderbouwd, liturgisch verankerd en homiletisch toepasbaar.
+*   **Inhoud:** Inleiding in het eigene van de zondag, uitvoerige uitleg van de perikoop (met aandacht voor grondtekst, context en theologische reikwijdte), concrete aanwijzingen voor de prediking, en liedsuggesties bij de thematiek.
+
+---
+
+### 🔭 Interdisciplinaire Lenzen (45–58, 63, 65)
+
+Het platform biedt zestien disciplinaire perspectieven die de bijbeltekst belichten vanuit wetenschappelijke tradities buiten de klassieke theologie. Elk perspectief helpt de prediker om vertrouwde teksten vanuit een onverwachte hoek te benaderen en aan te sluiten bij de complexe werkelijkheid van de hoorder.
+
+| Nr | Naam | Omschrijving |
+|:---|:---|:---|
+| 45 | **Filosofie** | Diverse filosofische kaders (taalfilosofie, fenomenologie, oosterse filosofie) openen nieuwe perspectieven op de tekst. |
+| 46 | **Culturele antropologie** | Rituelen, symbolen en betekenisgeving overbruggen de culturele afstand tot de bijbelse wereld. |
+| 47 | **Receptiegeschiedenis** | Werkingsgeschiedenis van de tekst in kunst, literatuur, muziek en theologie door de eeuwen heen. |
+| 48 | **Literaire theorie** | De tekst als literair kunstwerk: narratieve structuren, intertekstualiteit en retorische kracht. |
+| 49 | **Psychologie** | Archetypen, innerlijke processen van personages en pastorale handvatten voor prediking. |
+| 50 | **Ecologie** | Groene hermeneutiek: de tekst in het licht van de ecologische crisis en rentmeesterschapstheologie. |
+| 51 | **Postkoloniaal perspectief** | Machtsverhoudingen, koloniale receptie en gemarginaliseerde stemmen in tekst en uitleg. |
+| 52 | **Rechtswetenschap** | Juridische en rechtvaardigheidsdimensies: wet, rechtspraak, vergelding en herstel. |
+| 53 | **Natuurwetenschappen** | Dialoog tussen bijbeltekst en moderne wetenschappelijke wereldbeschouwing. |
+| 54 | **Politieke speltheorie** | Strategische interacties en machtsdynamiek tussen personages en groepen in de tekst. |
+| 55 | **Mystagogiek** | Inwijding in het mysterie: spirituele transformatieprocessen (loutering, verlichting, eenwording) in de tekst. |
+| 56 | **Gender, Queer & Lichaamstheologie** | Lichaam, gender en seksualiteit als theologische categorieën; queer lezingen van bijbelse narratieven. |
+| 57 | **Digitale cultuur** | De tekst in het licht van algoritmische sturing, sociale media en digitale media-ecologie (McLuhan, Han, Zuboff). |
+| 58 | **Ruimtelijke ordening** | Ruimte, plaats en territorium als theologische categorieën: gentrificatie, dakloosheid, migratie (Lefebvre, Soja). |
+| 63 | **Gastrosofie** | Voedsel, maaltijd en smaak als dragers van betekenis, gemeenschap en goddelijke ontmoeting. |
+| 65 | **Informatie-entropie** | Informatietheorietische analyse: entropie, ruis en signaal in de bijbelse communicatiepatronen (Shannon, Serres). |
+
+---
+
+### 59 Adversarial Red Team
+Een adversariële analyse waarbij vijf vijandige persona's de preek systematisch stress-testen. Doel: het onthullen van blinde vlekken, logische lacunes en pastoraal schadepotentieel die de predikant zelf niet ziet. De kritiek is altijd specifiek op *deze* preek, met directe citaten.
+
+*   **Perspectief 1 — Orthodoxe Dogmaticus** (bijv. Rooms-Katholiek of Calvinist): welke theologische hoekstenen ontbreken gevaarlijk?
+*   **Perspectief 2 — Bevrijdingstheoloog** (Gutiérrez, Cone): wiens stem wordt gemarginaliseerd? Welke machtsstructuren legitimeert de preek onbedoeld?
+*   **Perspectief 3 — Historisch-Kritische Bijbelwetenschapper**: worden teksten uit hun context gerukt of als proof-text misbruikt?
+*   **Perspectief 4 — Atheïstische Filosofisch Logicus**: cirkelredeneringen, verborgen aannames en onbewezen claims.
+*   **Perspectief 5 — Trauma-Geïnformeerde Criticus**: schadepotentieel op het gebied van shaming-taal, toxic positivity en schuld-toeschrijving.
+
+---
+
+### 📖 Volledige Preektekst (60–62)
+
+Het platform biedt de mogelijkheid om alle voorafgaande analyses samen te brengen in een concrete, gebruiksklare preek, inclusief feedback en herschrijving.
+
+### 60 Volledig uitgewerkte preektekst
+Een volledig uitgewerkte preektekst die alle homiletische, exegetische en contextuele analyses integreert. De tekst is specifiek afgestemd op de lokale gemeente, de lezingen van de zondag en de liturgische context.
+
+### 61 Feedback op de volledige preek
+Gecombineerde homiletische feedback vanuit meerdere wetenschappelijke en theologische perspectieven op de uitgewerkte preektekst, gericht op gerichte verbetering en verdieping.
+
+### 62 Herschreven preek
+Een verrijkte en herschreven versie van de preek waarin de feedback is verwerkt.
+
+---
+
+### 66 Ronde Tafel
+Een gesimuleerd rondetafelgesprek waarbij vijf fictieve gesprekspartners — een moderator, een scepticus, een exegeet, een bevrijdingstheoloog en een betrokken gemeentelid — met elkaar in dialoog gaan over de preekvoorbereiding. Het gesprek is geworteld in de specifieke lezingen, de lokale context en de homiletische analyses. Aan het einde bevat een 'minority report' de onopgeloste spanningen en blinde vlekken als extra input voor de predikant.
+
 ---
 
 ## 📚 Literatuur & Bronnen
