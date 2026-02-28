@@ -2367,367 +2367,382 @@
     }
   },
   "14_representatieve_hoorders": {
-    "items": [
+    "personas": [
       {
         "nummer": 1,
         "naam": {
-          "voornaam": "Jasper",
-          "achternaam": "van den Heuvel"
+          "voornaam": "Henk",
+          "achternaam": "van den Broek"
         },
-        "leeftijd": 21,
-        "kernschets": "Een zoekende student Urban Design die worstelt met de druk van een prestatiegerichte samenleving en de dreiging van de klimaatcrisis. Hij ervaart een constante innerlijke dorst naar authenticiteit in een digitale wereld vol schijn.",
+        "leeftijd": 72,
+        "kernschets": "Een voormalig ingenieur bij Ericsson die de technologische vooruitgang in Breda van dichtbij meemaakte en nu met dezelfde precisie de mantelzorg voor zijn vrouw met Parkinson organiseert. Hij is verre van een passieve oudere; hij beheert een populair YouTube-kanaal over modelspoorbouw en is de 'digitale helpdesk' voor zijn kleinkinderen.",
         "basisgegevens": {
-          "fysieke_verschijning": "Jasper is lang en tenger met een licht voorovergebogen houding. Hij heeft warrig, rossig haar en draagt vaak een grote koptelefoon om zijn nek als een soort schild. Zijn kledingstijl is 'thrifted' en functioneel.",
-          "woonwijk": "Hij huurt een kleine kamer in een studentenhuis aan de Epelenberg in de wijk Brabantpark, op loopafstand van de Markuskerk."
+          "fysieke_verschijning": "Groot, tenger postuur, altijd een functioneel outdoor-vest aan met veel zakken, een scherpe blik achter een moderne titanium bril.",
+          "woonwijk": "Brabantpark, in een jaren '60 bungalow die hij volledig heeft verduurzaamd met eigen ontworpen systemen."
         },
         "relaties_sociaal": {
-          "woonsituatie": "studentenkamer",
-          "relatiestatus": "single",
-          "kinderen": "geen",
-          "familie_relatie": "Het contact met zijn ouders in een dorp in de polder is beleefd doch afstandelijk. Zij begrijpen zijn existentiële zorgen over de toekomst van de planeet moeilijk en focussen vooral op zijn studieresultaten.",
-          "sociaal_netwerk": "Hij heeft een kleine kring van hechte vrienden binnen zijn studie, maar voelt zich vaak eenzaam in de grote massa studenten in Breda. Hij ervaart een sterke behoefte aan diepgang die hij op de Grote Markt zelden vindt."
+          "woonsituatie": "Samenwonend met zijn vrouw, voor wie hij de volledige zorg draagt om haar zo lang mogelijk thuis te laten wonen.",
+          "relatiestatus": "48 jaar getrouwd; de relatie is nu getekend door een nieuwe intimiteit in de zorg en het gezamenlijk dragen van het onvermijdelijke.",
+          "kinderen": "Twee dochters in de Randstad die elk weekend langskomen; hij voelt zich soms bezwaard door hun bezorgdheid.",
+          "familie_relatie": "Hecht, maar hij houdt de regie strak in handen om zijn autonomie te bewaren.",
+          "sociaal_netwerk": "Lid van een landelijke modelspoorvereniging en een lokale 'mancave'-groep waar technisch geknutseld wordt."
         },
         "opleiding_werk": {
-          "opleiding": "Derdejaars student Urban Design aan de Breda University of Applied Sciences (BUas).",
-          "intelligentie_leerstijl": "Jasper is een theoretische denker met een visuele instelling. Hij analyseert de stad als een complex systeem van relaties.",
-          "huidige_werk": "Hij werkt op zaterdagavonden in de spoelkeuken van een groot horecabedrijf in de binnenstad om zijn lening bij DUO te beperken.",
-          "voormalig_werk": null,
-          "financiele_situatie": "Hij leeft van een krap budget en ervaart stress door de stijgende prijzen van levensmiddelen en de onzekere woningmarkt voor starters in Breda."
+          "opleiding": "HTS Elektrotechniek",
+          "intelligentie_leerstijl": "Analytisch en visueel; hij begrijpt de wereld door te kijken naar hoe systemen werken.",
+          "huidige_werk": "Gepensioneerd, maar fungeert als onofficieel adviseur voor jonge starters in de Bredase tech-scene.",
+          "voormalig_werk": "Projectmanager bij Ericsson in Rijen/Breda.",
+          "financiele_situatie": "Comfortabel pensioen, maar zeer sober in uitgaven, behalve als het gaat om kwaliteitsgereedschap of zorgtechnologie."
         },
         "gezondheid": {
-          "lichamelijk": "Jasper heeft een lichte vorm van astma en is gevoelig voor luchtkwaliteit in de stad. Hij beweegt veel op zijn fiets, maar sport zelden structureel.",
-          "mentaal": "Hij lijdt aan periodes van somberheid die hij zelf omschrijft als 'klimaatdepressie'. De prestatiedruk op de hogeschool zorgt voor chronische slaapproblemen.",
-          "leefstijl": "Hij eet overwegend plantaardig uit overtuiging. Hij gebruikt incidenteel cannabis om de onrust in zijn hoofd te dempen."
+          "lichamelijk": "Goede conditie door dagelijkse wandelingen, maar beginnende artrose in zijn handen die zijn hobby bemoeilijkt.",
+          "mentaal": "Zeer veerkrachtig, al begint de 24/7 zorg voor zijn vrouw mentaal zijn tol te eisen in de vorm van incidentele slaapproblemen.",
+          "leefstijl": "Strak ritme: opstaan, zorgtaken, technisch uur, middagwandeling, koken."
         },
-        "traumas_zorgen": {
-          "verleden": [
-            "De scheiding van zijn ouders op zijn vijftiende heeft zijn vertrouwen in langdurige stabiliteit aangetast."
+        "levensgeschiedenis_vragen": {
+          "wat_heeft_gevormd": [
+            "De opbouw van de Nederlandse infrastructuur in de jaren '80.",
+            "Het plotselinge verlies van zijn vader op jonge leeftijd, waardoor hij vroeg de verantwoordelijkheid voor het gezin overnam."
           ],
-          "heden": [
-            "Zorg over de ecologische staat van de wereld.",
-            "Angst om na zijn studie geen betekenisvol werk te vinden dat bijdraagt aan een betere wereld."
+          "wat_speelt_nu": [
+            "De vraag hoe lang hij de fysieke zorg voor zijn vrouw nog volhoudt zonder haar waardigheid te schaden.",
+            "Het verlangen om nog één keer een grote reis te maken, wetende dat dit waarschijnlijk niet meer kan."
           ],
-          "onverwerkt": "Het gevoel dat hij altijd moet 'aanstaan' en zich moet profileren op sociale media, terwijl hij verlangt naar stilte en anonimiteit."
+          "onuitgesproken": "Een diepgevoeld respect voor het mysterie van het leven dat hij als technicus niet kan verklaren maar in de zorg voor zijn vrouw dagelijks aanraakt."
         },
         "geloof_spiritualiteit": {
-          "kerkelijke_achtergrond": "Hij is gedoopt in een traditionele dorpskerk, maar heeft zich daar tijdens zijn puberteit van afgekeerd.",
-          "huidige_betrokkenheid": "Jasper bezoekt de Markuskerk onregelmatig, vaak aangetrokken door de rust of specifieke thema-avonden over duurzaamheid.",
-          "geloofsbeleving": "God is voor hem een verre, abstracte kracht die zichtbaar wordt in de schoonheid van de natuur en in momenten van radicale eerlijkheid tussen mensen.",
-          "geloofstaal": "Religieus jargon stoot hem af; hij spreekt de taal van ecologie, rechtvaardigheid en verbondenheid.",
-          "twijfels_vragen": [
-            "Is er werkelijk een bron van hoop die niet afhankelijk is van menselijke inspanning?",
-            "Hoe verhoudt de kerk zich tot de fysieke afbraak van de schepping?"
+          "kerkelijke_background": "Traditioneel hervormd opgevoed, maar heeft een lange periode van intellectuele distantie gehad.",
+          "huidige_betrokkenheid": "Trouwe bezoeker van de Markuskerk, waardeert de nuchtere liturgie en de intellectuele eerlijkheid.",
+          "geloofsbeleving": "Geloof als een fundament van trouw en plicht; God is de 'Grote Architect' die hij vooral in de orde van de schepping herkent.",
+          "geloofstaal": "Houdt van heldere bijbeltaal; heeft een hekel aan vaagheid of overdreven emotioneel jargon.",
+          "geloofsvragen": [
+            "Waarom staat God toe dat de geest van een mens (zijn vrouw) langzaam dooft?",
+            "Wat betekent 'zegen' als het fysiek slechter gaat?"
           ],
-          "spirituele_behoeften": "Hij zoekt een plek waar zijn kwetsbaarheid niet als falen wordt gezien en waar de grote vragen van deze tijd eerlijk gesteld mogen worden."
+          "spirituele_verwachting": "Geen gemakkelijke troost, maar erkenning van de zwaarte van de taak en een perspectief dat groter is dan de biologische achteruitgang."
         },
         "hobbys_interesses": {
           "vrijetijd": [
-            "Analoge fotografie van stedelijke vervalplekken.",
-            "Lange wandelingen in het Markdal om de drukte van de stad te ontvluchten."
+            "Modelspoorbouw op schaal H0",
+            "Drones vliegen over het Markdal"
           ],
           "media": [
-            "Luistert naar podcasts over filosofie en systeemverandering.",
-            "Leest De Correspondent voor diepgang."
+            "YouTube tech-kanalen",
+            "BN DeStem digitaal",
+            "Podcasts over geschiedenis"
           ],
           "verenigingen": [
-            "Lid van een lokale werkgroep voor stadslandbouw."
+            "Nederlandse Vereniging van Modelbouwers"
           ]
         },
         "aansluiting_schriftlezingen": {
-          "wat_raakt": "Het beeld van Jezus die vermoeid bij een bron gaat zitten in de middaghitte resoneert met zijn eigen mentale vermoeidheid en verlangen naar stilstand.",
-          "wat_afstoot": "De klagende houding van het volk in de woestijn (Exodus) irriteert hem, omdat hij dit herkent als de consumptieve ontevredenheid van de huidige generatie.",
-          "existentiele_vraag": "Waar vind ik de bron van 'levend water' in een maatschappij die mij dwingt om mezelf voortdurend als product te verkopen?"
+          "wat_raakt": "Het beeld van Jezus die vermoeid bij de bron gaat zitten (Joh 4:6); de erkenning van menselijke uitputting resoneert direct met zijn eigen dagelijkse ervaring.",
+          "wat_afstoot": "Het 'gemor' van het volk in Exodus; hij heeft een natuurlijke afkeer van klagen zonder met oplossingen te komen.",
+          "existentiele_vraag": "Hoe vind ik 'levend water' (nieuwe energie) in een leven dat momenteel bijna volledig in dienst staat van de achteruitgang van de ander?"
         }
       },
       {
         "nummer": 2,
         "naam": {
-          "voornaam": "Marleen",
-          "achternaam": "de Bruijn-Vermeulen"
+          "voornaam": "Sanne",
+          "achternaam": "de Vries"
         },
-        "leeftijd": 38,
-        "kernschets": "Een gedreven verpleegkundig specialist in het Amphia ziekenhuis die probeert een harmonieus gezinsleven te combineren met een veeleisende carrière. Zij is de drijvende kracht achter de 'Groene Kerk' activiteiten in de Markuskerk.",
+        "leeftijd": 45,
+        "kernschets": "Een strategisch adviseur bij Roompot die geniet van haar carrière en haar kinderloze huwelijk, maar merkt dat de 'Bredase gezelligheid' soms de diepere vragen maskeert. Ze is fysiek topfit en maatschappelijk succesvol, maar voelt een groeiende behoefte aan een ethisch kompas dat verder gaat dan duurzaamheidsdoelen op kantoor.",
         "basisgegevens": {
-          "fysieke_verschijning": "Marleen heeft een fitte, sportieve uitstraling. Ze draagt haar blonde haar meestal in een praktische staart. Ze straalt een natuurlijke autoriteit en daadkracht uit.",
-          "woonwijk": "Zij woont met haar gezin in een ruimere jaren '90 woning in de wijk Heusdenhout, grenzend aan Brabantpark."
+          "fysieke_verschijning": "Kort blond haar in een strakke bob, atletisch gebouwd, draagt vaak kwalitatieve Scandinavische mode; straalt autoriteit en rust uit.",
+          "woonwijk": "Heusdenhout, in een modern vormgegeven koopwoning grenzend aan het groen."
         },
         "relaties_sociaal": {
-          "woonsituatie": "eigen woning",
-          "relatiestatus": "getrouwd",
-          "kinderen": "twee basisschoolkinderen",
-          "familie_relatie": "Zij onderhoudt een nauwe band met haar ouders, die vaak oppassen. De zorg voor haar beginnend demente vader begint echter zwaar op haar te drukken.",
-          "sociaal_netwerk": "Marleen is sociaal zeer actief. Ze heeft een grote vriendenkring uit haar studietijd en is een bekend gezicht op de lokale hockeyclub BHV Push."
+          "woonsituatie": "Woont samen met haar man, een architect.",
+          "relatiestatus": "Bewust kinderloos getrouwd; ze hebben een gelijkwaardige, intellectuele relatie waarin ze elkaar veel vrijheid laten.",
+          "kinderen": null,
+          "familie_relatie": "Goede band met haar ouders, maar voelt zich soms de 'buitenstaander' in de familie omdat ze geen gezin heeft.",
+          "sociaal_netwerk": "Veel netwerkcontacten via werk en een actieve wielrenclub in Breda-Zuid."
         },
         "opleiding_werk": {
-          "opleiding": "Master in Advanced Nursing Practice.",
-          "intelligentie_leerstijl": "Zij is een praktische probleemoplosser die snel schakelt tussen abstracte medische protocollen en menselijk contact.",
-          "huidige_werk": "Verpleegkundig specialist cardiologie in het Amphia ziekenhuis. De werkdruk is structureel hoog door personeelstekorten.",
-          "voormalig_werk": "Algemeen verpleegkundige.",
-          "financiele_situatie": "Het gezinsinkomen is stabiel en ruim bovenmodaal, waardoor zij zich zorgen kan maken over ethische consumptie in plaats van pure overleving."
+          "opleiding": "WO Bedrijfskunde",
+          "intelligentie_leerstijl": "Conceptueel en strategisch; ze houdt van overzichten en het doorgronden van complexe structuren.",
+          "huidige_werk": "Strategie-lead bij het hoofdkantoor van Roompot in Breda.",
+          "voormalig_werk": "Consultant bij een groot kantoor in Utrecht.",
+          "financiele_situatie": "Bovenmodaal; geen schulden, investeert in duurzame projecten."
         },
         "gezondheid": {
-          "lichamelijk": "Zij verkeert in goede gezondheid, mede door haar wekelijkse hardlooprondes door het Mastbos. Ze kampt soms met spanningshoofdpijn.",
-          "mentaal": "Marleen ervaart een constante druk om de 'perfecte' moeder, echtgenote en professional te zijn. Zij staat op de rand van een emotionele uitputting.",
-          "leefstijl": "Zij let scherp op gezonde voeding voor haar gezin en is een overtuigd aanhanger van de circulaire economie."
+          "lichamelijk": "Uitstekend; traint voor marathons en fietst lange afstanden door het Mastbos.",
+          "mentaal": "Stabiel en zelfverzekerd; ze kent haar grenzen goed en past zelfzorg toe door stilte-retraites.",
+          "leefstijl": "Gedisciplineerd: vroege sportoefeningen, gezonde voeding, veel focus-tijd."
         },
-        "traumas_zorgen": {
-          "verleden": [
-            "Het verlies van een goede vriendin aan kanker drie jaar geleden heeft haar perspectief op de maakbaarheid van het leven definitief veranderd."
+        "levensgeschiedenis_vragen": {
+          "wat_heeft_gevormd": [
+            "Een jaar vrijwilligerswerk in een opvangcentrum in Athene tijdens haar studententijd.",
+            "De keuze voor kinderloosheid, die haar dwong na te denken over 'vruchtbaarheid' in bredere zin."
           ],
-          "heden": [
-            "De afnemende gezondheid van haar vader.",
-            "De impact van haar drukke schema op het emotionele welzijn van haar kinderen."
+          "wat_speelt_nu": [
+            "De ethische spanning tussen de groeiambities van haar bedrijf en de ecologische grenzen van de planeet.",
+            "De zoektocht naar een spiritualiteit die haar intellectuele kritische zin niet uitschakelt."
           ],
-          "onverwerkt": "Een latent schuldgevoel dat zij ondanks al haar inspanningen tekortschiet in de zorg voor de mensen die haar het meest nodig hebben."
+          "onuitgesproken": "Een lichte angst dat haar succesvolle leven uiteindelijk 'leeg' zal blijken als er geen hoger doel is dan zelfontplooiing."
         },
         "geloof_spiritualiteit": {
-          "kerkelijke_achtergrond": "Zij is opgegroeid in een liberaal-protestants gezin en heeft bewust belijdenis gedaan in haar studententijd.",
-          "huidige_betrokkenheid": "Zij is zeer actief in de Markuskerk, met name in de werkgroep duurzaamheid en bij de voorbereiding van de kindernevendienst.",
-          "geloofsbeleving": "Geloof is voor haar een ethische kompas en een bron van inspiratie voor maatschappelijk handelen. God is aanwezig in de zorg voor de naaste en de aarde.",
-          "geloofstaal": "Zij geeft de voorkeur aan inclusieve en eigentijdse taal. Dogmatische exclusiviteit wijst zij resoluut af.",
-          "twijfels_vragen": [
-            "Hoe houd ik vast aan het vertrouwen dat God voorziet, terwijl ik dagelijks de grenzen van de zorg zie?",
-            "Is mijn christelijke inzet voor het milieu meer dan een druppel op een gloeiende plaat?"
+          "kerkelijke_background": "Buitenkerkelijk opgevoed; is drie jaar geleden binnengekomen via een oecumenisch stadsgebed in Breda.",
+          "huidige_betrokkenheid": "Actief lid van de werkgroep 'Groene Kerk' binnen de Markuskerk.",
+          "geloofsbeleving": "Geloof als een bron van ethische inspiratie en rust; ze ervaart het goddelijke vooral in de stilte en de verbondenheid met de natuur.",
+          "geloofstaal": "Vertaalt bijbelse begrippen graag naar systemisch denken en ecologische ethiek.",
+          "geloofsvragen": [
+            "Hoe ziet een 'vruchtbaar' leven eruit zonder nageslacht?",
+            "Is genade verenigbaar met de prestatiecultuur waarin ik werk?"
           ],
-          "spirituele_behoeften": "Zij zoekt in de kerk een moment van onthaasting en een herwaardering van haar mens-zijn die losstaat van haar functioneren."
+          "spirituele_verwachting": "Intellectuele uitdaging en een koppeling tussen de Bijbelse traditie en de grote maatschappelijke transities."
         },
         "hobbys_interesses": {
           "vrijetijd": [
-            "Tuinieren met aandacht voor biodiversiteit.",
-            "Hockeyen bij de veterinnen."
+            "Wielrennen in de Baronie",
+            "Lezen over filosofie en ethiek",
+            "Koken met lokale Brabantse producten"
           ],
           "media": [
-            "Leest de Trouw.",
-            "Volgt diverse Instagram-accounts over 'minimalism' en 'slow living'."
+            "The Correspondent",
+            "Podcasts van De Rudi & Freddie Show",
+            "NRC Handelsblad"
           ],
           "verenigingen": [
-            "Bestuurslid van een lokale buurtvereniging."
+            "Bredase Wielerbond"
           ]
         },
         "aansluiting_schriftlezingen": {
-          "wat_raakt": "Het thema van Biddag en de zorg voor waterbronnen (Exodus) sluit direct aan bij haar passie voor de Groene Kerk. De ontmoeting van Jezus met de vrouw bij de put inspireert haar als model voor grensoverschrijdende zorg.",
-          "wat_afstoot": "De taal over 'zondaars' in de brief aan de Romeinen vindt zij lastig te vertalen naar haar eigen belevingswereld zonder dat het moralistisch overkomt.",
-          "existentiele_vraag": "Hoe vind ik de balans tussen mijn verantwoordelijkheid voor de wereld en de noodzaak om zelf te drinken uit de bron?"
+          "wat_raakt": "Het gesprek bij de bron in Johannes 4; ze herkent de dynamiek van een gesprek dat begint bij het alledaagse maar verschuift naar de kern van iemands bestaan.",
+          "wat_afstoot": "De term 'zondaars' in Romeinen 5; dit woord roept bij haar weerstand op omdat het vaak moralistisch gebruikt is.",
+          "existentiele_vraag": "Wat is het 'levende water' dat werkelijk verzadigt in een cultuur die gericht is op constante consumptie en groei?"
         }
       },
       {
         "nummer": 3,
         "naam": {
-          "voornaam": "Henk",
-          "achternaam": "Vermeulen"
+          "voornaam": "Thijs",
+          "achternaam": "Boogaard"
         },
-        "leeftijd": 59,
-        "kernschets": "Een nuchtere logistiek planner met een groot hart voor de Bredase cultuur en NAC Breda. Hij is een steunpilaar van de traditionele burgerij in de Markuskerk en hecht sterk aan sociale cohesie en fatsoen.",
+        "leeftijd": 24,
+        "kernschets": "Een nuchtere student Logistiek aan Avans die 's avonds containers checkt in de haven van Moerdijk en op zondagochtend bewust kiest voor de verstilling van de Markuskerk. Hij zoekt geen hippe worship, maar de verankering in een eeuwenoude traditie die hem helpt om overeind te blijven in een hectische, vloeibare wereld.",
         "basisgegevens": {
-          "fysieke_verschijning": "Henk is stevig gebouwd met kort, grijs haar en een eerlijk gezicht. Hij draagt meestal een net overhemd zonder das en een praktische spijkerbroek.",
-          "woonwijk": "Hij woont al dertig jaar in een goed onderhouden eengezinswoning in Brabantpark, vlakbij de plek waar hij vroeger opgroeide."
+          "fysieke_verschijning": "Stevig gebouwd, kortgeknipt haar, vaak een hoodie van zijn opleiding aan; heeft eelt op zijn handen van het werk in de haven.",
+          "woonwijk": "Woont in een studentenhuis in de Belcrum, vlakbij het station."
         },
         "relaties_sociaal": {
-          "woonsituatie": "samenwonend",
-          "relatiestatus": "getrouwd",
-          "kinderen": "twee volwassen kinderen die elders wonen",
-          "familie_relatie": "De familiebanden zijn stabiel. Hij is trots op zijn kinderen die allebei goed terecht zijn gekomen, al ziet hij hen minder vaak dan hij zou willen.",
-          "sociaal_netwerk": "Henk heeft een groot informeel netwerk via zijn werk en de voetbalclub. Hij is de man die de barbecue regelt tijdens straatfeesten en altijd klaarstaat voor een buurman."
+          "woonsituatie": "Kamer in een gedeeld huis met vier andere studenten die niets met de kerk hebben.",
+          "relatiestatus": "Vrijgezel; heeft moeite met de vluchtigheid van de huidige datingcultuur.",
+          "kinderen": null,
+          "familie_relatie": "Zijn ouders in West-Brabant zijn gestopt met de kerk, wat hem een 'generatie-overspringende' gelovige maakt.",
+          "sociaal_netwerk": "Vooral collega's van zijn bijbaan en een kleine kring vrienden van de middelbare school."
         },
         "opleiding_werk": {
-          "opleiding": "MBO Logistiek en Transport.",
-          "intelligentie_leerstijl": "Henk is zeer praktisch ingesteld. Hij denkt in processen en oplossingen. Hij heeft een hekel aan nodeloos ingewikkeld doen.",
-          "huidige_werk": "Planner bij een groot transportbedrijf in de regio Breda. Hij ervaart druk door de toenemende digitalisering die hij soms als een ontmenselijking van zijn vak ziet.",
-          "voormalig_werk": "Chauffeur.",
-          "financiele_situatie": "Financieel stabiel, hij heeft zijn hypotheek bijna afgelost en kijkt uit naar zijn pensioen, al maakt hij zich zorgen over de inflatie."
+          "opleiding": "HBO Logistiek & Economie (Avans)",
+          "intelligentie_leerstijl": "Praktisch en procesgericht; hij wil weten 'hoe het zit' en hoe dingen efficiënt kunnen lopen.",
+          "huidige_werk": "Student en parttime logistiek medewerker bij een overslagbedrijf.",
+          "voormalig_werk": null,
+          "financiele_situatie": "Moet hard werken voor zijn studie, heeft een bescheiden studieschuld en is zeer prijsbewust."
         },
         "gezondheid": {
-          "lichamelijk": "Hij heeft last van zijn knieën door jarenlang fysiek werk en kamp met een te hoge bloeddruk, waarvoor hij medicijnen slik.",
-          "mentaal": "Hij voelt zich soms vervreemd van de snelle, moderne wereld. Hij ervaart een lichte onrust over de maatschappelijke polarisatie die hij ook in Breda ziet.",
-          "leefstijl": "Hij houdt van de 'Bourgondische' levensstijl: een biertje in het stadion en een goede maaltijd. Hij probeert op advies van de arts wel meer te wandelen."
+          "lichamelijk": "Sterk en gezond, maar heeft soms last van rugklachten door het fysieke werk.",
+          "mentaal": "Nuchter, maar voelt een onderhuidse druk om snel carrière te maken in een sector die nooit slaapt.",
+          "leefstijl": "Onregelmatig door avonddiensten, maar houdt vast aan de zondagochtend als rustpunt."
         },
-        "traumas_zorgen": {
-          "verleden": [
-            "Het faillissement van zijn eerste werkgever twintig jaar geleden was een grote klap voor zijn gevoel van zekerheid."
+        "levensgeschiedenis_vragen": {
+          "wat_heeft_gevormd": [
+            "Zijn bijbaan in de haven, waar hij leerde dat de wereld draait op onzichtbare arbeid en logistiek.",
+            "De scheiding van zijn ouders, waardoor hij vroeg leerde zijn eigen weg te zoeken."
           ],
-          "heden": [
-            "De toenemende anonimiteit in zijn wijk door de snelle doorloop van bewoners.",
-            "De angst dat de waarden die hij belangrijk vindt (trouw, eerlijkheid) verdwijnen."
+          "wat_speelt_nu": [
+            "De afronding van zijn studie en de vraag of hij in de commerciële logistiek wil blijven.",
+            "De zoektocht naar een partner die ook waarde hecht aan diepgang en traditie."
           ],
-          "onverwerkt": "De teleurstelling over de afnemende kerkelijke betrokkenheid van zijn eigen kinderen, ondanks hun christelijke opvoeding."
+          "onuitgesproken": "Een diep verlangen naar een 'thuis' dat niet afhankelijk is van prestaties of uiterlijke schijn."
         },
         "geloof_spiritualiteit": {
-          "kerkelijke_achtergrond": "Traditioneel hervormd opgevoed. De kerk is voor hem altijd een vanzelfsprekend onderdeel van het leven geweest.",
-          "huidige_betrokkenheid": "Hij is een trouwe kerkganger en lid van de kerkenraad (beheer). Hij steekt graag de handen uit de mouwen bij onderhoudsklusjes aan het kerkgebouw.",
-          "geloofsbeleving": "God is de 'Rots' waarop je kunt bouwen, een constante factor in een veranderende wereld. Geloof uit zich voor hem vooral in trouw en plichtsbesef.",
-          "geloofstaal": "Hij houdt van de taal van de psalmen en de klassieke liturgie. Woorden als 'verbond' en 'gebed' zijn hem dierbaar.",
-          "twijfels_vragen": [
-            "Heeft de kerk nog wel een toekomst als de jeugd het laat afweten?",
-            "Hoe blijven we als gemeente relevant zonder onze eigen identiteit te verliezen?"
+          "kerkelijke_background": "Gedoopt in de Gereformeerde Kerk, na de puberteit zelf de weg teruggevonden naar de PKN.",
+          "huidige_betrokkenheid": "Bezoeker; helpt incidenteel bij diaconale acties zoals de kerstpakkettenactie.",
+          "geloofsbeleving": "Geloof als een 'anker' en een structuur; hij houdt van de vaste liturgische vormen en de rust van de preek.",
+          "geloofstaal": "Zoekt naar woorden die betrouwbaarheid en trouw uitdrukken.",
+          "geloofsvragen": [
+            "Hoe houd je je rug recht als alles om je heen voortdurend verandert?",
+            "Wat betekent Gods leiding in de chaos van de wereldwijde handelsstromen?"
           ],
-          "spirituele_behoeften": "Hij zoekt bevestiging van zijn hoop en een bemoediging om het goede te blijven doen in zijn dagelijkse omgeving."
+          "spirituele_verwachting": "Geen entertainment, maar een 'solide verhaal' dat hem helpt de week met integriteit door te komen."
         },
         "hobbys_interesses": {
           "vrijetijd": [
-            "Seizoenskaarthouder bij NAC Breda.",
-            "Fietsen met zijn vrouw door het Brabantse landschap."
+            "Klassieke auto's opknappen",
+            "Darten met vrienden",
+            "Vissen in de Mark"
           ],
           "media": [
-            "Leest BN DeStem voor het lokale nieuws.",
-            "Kijkt graag naar praatprogramma's en sportuitzendingen."
+            "YouTube (automotive en restauratie)",
+            "Podcasts over geopolitiek",
+            "WhatsApp groepen met haven-collega's"
           ],
           "verenigingen": [
-            "Vrijwilliger bij de supportersvereniging van NAC."
+            "Lokale hengelsportvereniging"
           ]
         },
         "aansluiting_schriftlezingen": {
-          "wat_raakt": "De rots bij Massa en Meriba spreekt hem aan; hij begrijpt de menselijke behoefte aan tastbare tekenen van Gods nabijheid. Psalm 95 over 'de rots van ons heil' is een van zijn favorieten.",
-          "wat_afstoot": "De theologische discussie over 'aanbidden in geest en waarheid' vindt hij soms te abstract; hij hecht aan de fysieke plek van de Markuskerk.",
-          "existentiele_vraag": "Is God nog steeds in ons midden, ook als de vertrouwde structuren om ons heen wegvallen?"
+          "wat_raakt": "Het beeld van de 'rots' in Exodus en Psalm 95; hij houdt van solide materialen en beelden die onwankelbaarheid suggereren.",
+          "wat_afstoot": "De uitgebreide theologische dialoog in Johannes 4; hij is een man van weinig woorden en vindt de lange gesprekken soms abstract.",
+          "existentiele_vraag": "Waarop kan ik mijn leven bouwen (mijn fundament) in een wereld die volledig vloeibaar lijkt?"
         }
       },
       {
         "nummer": 4,
         "naam": {
-          "voornaam": "Johanna (Hannie)",
-          "achternaam": "Kouwenaar"
+          "voornaam": "Mariëtte",
+          "achternaam": "Schippers-Jansen"
         },
-        "leeftijd": 78,
-        "kernschets": "Een broze maar kranige weduwe die de Markuskerk beschouwt als haar geestelijke thuis. Zij draagt de pijn van de eenzaamheid met een stil godsvertrouwen en is een wandelend geheugen van de wijkgemeente.",
+        "leeftijd": 68,
+        "kernschets": "Een gepensioneerd lerares geschiedenis en huidig gemeenteraadslid in Breda die weigert haar kritische geest te laten rusten. Ze ziet de kerk niet als een plek voor persoonlijke troost, maar als een platform voor profetische kritiek op sociale ongelijkheid en de 'Bredase bubbel'.",
         "basisgegevens": {
-          "fysieke_verschijning": "Hannie is klein en fragiel van postuur. Ze loopt met een rollator, maar beweegt zich nog verbazingwekkend behendig. Ze draagt altijd een kleurrijk sjaaltje en heeft een zachte, bemoedigende oogopslag.",
-          "woonwijk": "Zij woont in een tweekamerappartement in een seniorencomplex in Brabantpark, waar zij uitkijkt op het groen."
+          "fysieke_verschijning": "Kleurrijke sjaals, een opvallende bos grijs krullend haar, loopt altijd met een snelle, doelgerichte pas; heeft een doordringende maar vriendelijke oogopslag.",
+          "woonwijk": "Binnenstad van Breda, in een monumentaal pandje nabij het Begijnhof."
         },
         "relaties_sociaal": {
-          "woonsituatie": "zelfstandig",
-          "relatiestatus": "weduwe",
-          "kinderen": "twee dochters die in de Randstad wonen en een druk leven leiden",
-          "familie_relatie": "Zij houdt zielsveel van haar kleinkinderen, maar ziet hen minder vaak dan zij zou willen. Het contact verloopt veelal via FaceTime, wat zij soms onpersoonlijk vindt.",
-          "sociaal_netwerk": "Haar sociale wereld is klein geworden. Haar voornaamste contacten zijn medebewoners van het complex en de leden van de kerkelijke vrouwenbond."
+          "woonsituatie": "Woont alleen sinds haar scheiding vijftien jaar geleden; ze geniet van haar onafhankelijkheid.",
+          "relatiestatus": "Gescheiden, heeft een latrelatie met een man in Tilburg die zij vooral ziet voor concertbezoek en debatavonden.",
+          "kinderen": "Geen eigen kinderen, maar een zeer geliefde tante voor haar neefjes en nichtjes.",
+          "familie_relatie": "De 'rebel' binnen een verder vrij conservatieve familie; de verhoudingen zijn respectvol maar intellectueel gespannen.",
+          "sociaal_netwerk": "Enorm; ze kent iedereen in de lokale politiek, cultuursector en het onderwijs."
         },
         "opleiding_werk": {
-          "opleiding": "Kweekschool (Opleiding tot onderwijzeres).",
-          "intelligentie_leerstijl": "Hannie is verbaal sterk en houdt van verhalen. Zij leert door te luisteren en te reflecteren op haar eigen levenservaring.",
-          "huidige_werk": null,
-          "voormalig_werk": "Onderwijzeres in het basisonderwijs.",
-          "financiele_situatie": "Zij komt rond van een klein pensioen en een AOW-uitkering. Zij is zeer spaarzaam en maakt zich zorgen over de stijgende zorgkosten."
+          "opleiding": "Universitaire studie Geschiedenis",
+          "intelligentie_leerstijl": "Verbaal-linguïstisch en historisch-analytisch; ze plaatst alles in een breder historisch en sociaal kader.",
+          "huidige_work": "Gemeenteraadslid voor een progressieve fractie; voorzitter van een stichting voor historisch erfgoed.",
+          "voormalig_werk": "Docent geschiedenis op de Nassau Scholengemeenschap.",
+          "financiele_situatie": "Stabiel ABP-pensioen, gebruikt haar middelen vooral voor boeken, cultuur en politieke bijdragen."
         },
         "gezondheid": {
-          "lichamelijk": "Zij lijdt aan artrose en heeft een verminderd gehoor. Ze is herstellende van een lichte tia die haar angstig heeft gemaakt over haar zelfstandigheid.",
-          "mentaal": "Hannie ervaart de stilte in haar huis soms als een zware deken. De rouw om haar man, die vier jaar geleden overleed, is nog steeds tastbaar aanwezig.",
-          "leefstijl": "Zij kookt dagelijks een eenvoudige, gezonde maaltijd voor zichzelf en gaat elke middag 'een blokje om' met haar rollator."
+          "lichamelijk": "Energiek, maar kampt met beginnende gehoorschade waardoor ze soms wat harder praat.",
+          "mentaal": "Zeer scherp; ze is intellectueel onverzadigbaar en kan slecht tegen 'geestelijke luiheid'.",
+          "leefstijl": "Onregelmatig door raadsvergaderingen; veel koffie, veel praten, laat naar bed."
         },
-        "traumas_zorgen": {
-          "verleden": [
-            "De hongerwinter (als jong kind) en het vroege overlijden van haar broer hebben een diepe indruk achtergelaten op haar wereldbeeld."
+        "levensgeschiedenis_vragen": {
+          "wat_heeft_gevormd": [
+            "De vrouwenbeweging in de jaren '70.",
+            "De ontdekking van de bevrijdingstheologie tijdens een reis door Latijns-Amerika in haar jeugd."
           ],
-          "heden": [
-            "De angst om haar verstandelijke vermogens te verliezen.",
-            "De zorgen over de wereld waarin haar kleinkinderen moeten opgroeien."
+          "wat_speelt_nu": [
+            "De strijd tegen de toenemende polarisatie in de Bredase gemeenteraad.",
+            "De vraag hoe ze haar ervaring kan overdragen aan een nieuwe generatie politici."
           ],
-          "onverwerkt": "De stilzwijgende pijn over de verwijdering tussen haar en haar jongste dochter over een meningsverschil uit het verleden."
+          "onuitgesproken": "Een diepe pijn over de 'dorheid' van het politieke debat, waar het vaak om cijfers gaat in plaats van om mensen."
         },
         "geloof_spiritualiteit": {
-          "kerkelijke_achtergrond": "Opgegroeid in de Gereformeerde Kerk, later opgegaan in de PKN. Zij heeft altijd een actieve rol gespeeld in het kerkenwerk.",
-          "huidige_betrokkenheid": "Zij mist zelden een zondagse dienst, tenzij haar gezondheid het echt niet toelaat. Zij maakt deel uit van de gebedskring.",
-          "geloofsbeleving": "God is haar dagelijkse gesprekspartner. Het gebed is de ademhaling van haar ziel. Zij ervaart de liturgie als een anker in de week.",
-          "geloofstaal": "Zij spreekt de taal van overgave, genade en nabijheid. Zij houdt van de klassieke gezangen uit het Liedboek.",
-          "twijfels_vragen": [
-            "Waarom duurt de weg naar het einde soms zo lang en eenzaam?",
-            "Hoor ik Gods stem nog wel duidelijk genoeg in de ruis van mijn ouderdom?"
+          "kerkelijke_background": "Liberaal-protestants, altijd kritisch op instituten.",
+          "huidige_betrokkenheid": "Lid van de kerkenraad, specifiek gericht op diaconie en maatschappelijke dialoog.",
+          "geloofsbeleving": "Geloof als een roeping tot gerechtigheid; Jezus is voor haar de grote grensverlegger en provocateur.",
+          "geloofstaal": "Politiek geëngageerd, intellectueel, kritisch op machtsstructuren.",
+          "geloofsvragen": [
+            "Hoe blijven we als kerk relevant zonder te vervallen in sociaal werk alleen?",
+            "Waar is de stem van de profeten in een welvarende stad als Breda?"
           ],
-          "spirituele_behoeften": "Zij zoekt troost, erkenning van haar broosheid en de verzekering dat zij niet vergeten is door God en de mensen."
+          "spirituele_verwachting": "Een preek die de status quo uitdaagt en de bijbelse tekst verbindt met de actualiteit van armoede en uitsluiting in de stad."
         },
         "hobbys_interesses": {
           "vrijetijd": [
-            "Lezen van historische romans en biografieën.",
-            "Breien voor goede doelen."
+            "Archiefonderzoek naar de Bredase geschiedenis",
+            "Bezoeken van documentairefestivals",
+            "Debatteren in het Chassé Theater"
           ],
           "media": [
-            "Leest de Trouw en het kerkblad.",
-            "Kijkt naar 'Met het mes op tafel' en religieuze programma's van de KRO-NCRV."
+            "Follow the Money",
+            "Vrij Nederland",
+            "Podcasts over politieke filosofie"
           ],
           "verenigingen": [
-            "Lid van de PCOB (Protestants Christelijke Ouderen Bond)."
+            "Heemkundekring Breda",
+            "Landelijke politieke partij"
           ]
         },
         "aansluiting_schriftlezingen": {
-          "wat_raakt": "De belofte in Romeinen 5 dat de hoop niet beschaamt omdat Gods liefde in onze harten is uitgestort, geeft haar de kracht om door te gaan. De vrouw bij de bron die haar kruik laat staan, herinnert haar aan het loslaten van uiterlijke zekerheden.",
-          "wat_afstoot": "De drukte van de discussies tussen de leerlingen in Johannes 4 vindt zij soms verwarrend; zij focust liever op de verstilde dialoog tussen Jezus en de vrouw.",
-          "existentiele_vraag": "Wie ziet mij nog staan in mijn kwetsbaarheid, en waar put ik de moed vandaan om te blijven hopen?"
+          "wat_raakt": "Johannes 4 als een politiek-religieuze doorbraak: Jezus die een Samaritaanse vrouw als volwaardige gesprekspartner ziet en daarmee alle taboes van zijn tijd doorbreekt (passend bij Int. Vrouwendag).",
+          "wat_afstoot": "Psalm 95 over 'knielen' en 'buigen'; ze heeft een allergie voor beelden van onderwerping, ook naar God toe.",
+          "existentiele_vraag": "Hoe doorbreken we de barrières van afkomst en sociale klasse in onze eigen wijken?"
         }
       },
       {
         "nummer": 5,
         "naam": {
-          "voornaam": "Samira",
-          "achternaam": "El Idrissi"
+          "voornaam": "Amira",
+          "achternaam": "Al-Fayegh"
         },
-        "leeftijd": 44,
-        "kernschets": "Een spiritueel zoekende zzp'er in de creatieve sector die zich aangetrokken voelt tot de openheid van de Markuskerk. Als gescheiden vrouw van Marokkaanse komaf navigeert zij tussen verschillende culturele en religieuze werelden.",
+        "leeftijd": 33,
+        "kernschets": "Een hoogopgeleide onderzoeker bij BUas met een Iraanse achtergrond die na een seculiere opvoeding in Nederland de rijkdom van de christelijke mystiek ontdekte. Ze is geen 'hulpbehoevende vluchteling', maar een onafhankelijke professional die in de Markuskerk een taal vond voor haar spirituele dorst die ze in de academische wereld miste.",
         "basisgegevens": {
-          "fysieke_verschijning": "Samira heeft een krachtige uitstraling met donkere, intelligente ogen en krullend haar dat zij vaak in een nonchalante knot draagt. Zij kleedt zich stijlvol met kleurrijke accenten en opvallende sieraden.",
-          "woonwijk": "Zij huurt een appartement in de buurt van het CrossMark-gebied bij het station, een plek die volop in transformatie is."
+          "fysieke_verschijning": "Sierlijke verschijning, draagt vaak opvallende zilveren sieraden met Perzische motieven, spreekt vloeiend maar bedachtzaam Nederlands.",
+          "woonwijk": "Belcrum, in een industrieel verbouwde loft die haar creativiteit stimuleert."
         },
         "relaties_sociaal": {
-          "woonsituatie": "zelfstandig",
-          "relatiestatus": "gescheiden",
-          "kinderen": "geen",
-          "familie_relatie": "Zij heeft een complexe relatie met haar conservatieve familie in West-Brabant, die haar keuze voor een onafhankelijk leven en haar spirituele zoektocht buiten de islam moeilijk accepteert.",
-          "sociaal_netwerk": "Haar netwerk bestaat uit kunstenaars, ontwerpers en sociale vernieuwers in Breda. Zij voelt zich vaak een buitenstaander, zowel in haar eigen cultuur als in de Nederlandse 'polder'cultuur."
+          "woonsituatie": "Woont alleen en geniet van de rust van haar eigen ruimte.",
+          "relatiestatus": "Single; zoekt een partner die haar intellectuele en spirituele pad kan delen, wat in de moderne datingwereld lastig blijkt.",
+          "kinderen": null,
+          "familie_relatie": "Warm contact met haar ouders in Eindhoven, hoewel zij haar bekering tot het christendom met verbazing en milde scepsis volgen.",
+          "sociaal_netwerk": "Internationaal netwerk van academici en een hechte groep vrienden in de creatieve industrie van Breda."
         },
         "opleiding_werk": {
-          "opleiding": "Kunstacademie (St. Joost Breda).",
-          "intelligentie_leerstijl": "Zij is een intuïtieve denker die verbanden legt tussen kunst, spiritualiteit en maatschappelijke thema's.",
-          "huidige_werk": "Freelance grafisch vormgever en illustrator. Zij werkt vaak aan projecten met een sociale impact voor de gemeente Breda of non-profitorganisaties.",
-          "voormalig_werk": "Art-director bij een reclamebureau.",
-          "financiele_situatie": "Haar inkomen is onregelmatig. Zij ervaart de stress van het zzp-bestaan, zeker in tijden van economische onzekerheid."
+          "opleiding": "PhD in Social Sciences / Leisure Studies",
+          "intelligentie_leerstijl": "Onderzoekend en intuïtief; ze combineert data graag met diepere menselijke verhalen.",
+          "huidige_werk": "Senior onderzoeker bij Breda University of Applied Sciences (BUas), gericht op stedelijke ontwikkeling en ontmoeting.",
+          "voormalig_werk": "Gastdocent aan diverse internationale universiteiten.",
+          "financiele_situatie": "Goede middenklasse; geeft geld uit aan reizen, boeken en goede wijn (hoewel ze zelf matig drinkt)."
         },
         "gezondheid": {
-          "lichamelijk": "Zij is fysiek gezond, maar gevoelig voor stressgerelateerde vermoeidheid. Zij beoefent yoga en meditatie om in balans te blijven.",
-          "mentaal": "Samira heeft te maken gehad met een burn-out na haar scheiding. Zij werkt hard aan haar zelfacceptatie en het stellen van grenzen.",
-          "leefstijl": "Zij leeft bewust en kiest voor kwaliteit boven kwantiteit. Zij geniet van de culturele diversiteit die Breda biedt."
+          "lichamelijk": "Gezond, beoefent yoga en wandelt veel langs de Mark om haar hoofd leeg te maken.",
+          "mentaal": "Heeft last gehad van milde depressieve gevoelens door de hoge werkdruk, maar vindt balans door haar geloof en meditatie.",
+          "leefstijl": "Wisselend tussen intense werkweken en periodes van volledige afzondering en reflectie."
         },
-        "traumas_zorgen": {
-          "verleden": [
-            "De uitsluiting die zij ervoer na haar scheiding binnen haar eigen gemeenschap is een open wond."
+        "levensgeschiedenis_vragen": {
+          "wat_heeft_gevormd": [
+            "De migratie van haar gezin naar Nederland op 6-jarige leeftijd.",
+            "Haar promotieonderzoek, dat haar liet inzien dat mensen meer nodig hebben dan materiële welvaart om gelukkig te zijn."
           ],
-          "heden": [
-            "De groeiende intolerantie in de samenleving.",
-            "De onzekerheid over haar bestaanszekerheid op de lange termijn."
+          "wat_speelt_nu": [
+            "De integratie van haar oosterse wortels met haar westerse christelijke geloof.",
+            "De vraag hoe ze haar onderzoekswerk meer betekenis kan geven in de lokale Bredase context."
           ],
-          "onverwerkt": "Het verlangen om ergens werkelijk 'thuis' te horen zonder zichzelf te hoeven verloochenen."
+          "onuitgesproken": "Een gevoel van 'nergens volledig bij horen' dat haar een uniek perspectief geeft, maar ook eenzaam kan maken."
         },
         "geloof_spiritualiteit": {
-          "kerkelijke_achtergrond": "Moslim-achtergrond, maar zij praktiseert niet meer op de traditionele wijze. Zij bezoekt de laatste jaren regelmatig vieringen in de Markuskerk.",
-          "huidige_betrokkenheid": "Zij wordt beschouwd als een 'vriend' van de gemeente. Ze neemt deel aan dialooggroepen en voelt zich thuis bij de oecumenische en open sfeer.",
-          "geloofsbeleving": "God is voor haar de 'Bron' van alle leven, een liefdevolle aanwezigheid die alle religieuze kaders overstijgt. Zij vindt inspiratie in de mystieke tradities van zowel de islam als het christendom.",
-          "geloofstaal": "Zij houdt van beeldende en poëtische taal. Abstracte dogma's spreken haar niet aan; zij zoekt naar de geleefde ervaring.",
-          "twijfels_vragen": [
-            "Mag ik hier werkelijk zijn met mijn achtergrond en mijn vragen?",
-            "Is het mogelijk om een spirituele identiteit te vinden die niet uitsluit?"
+          "kerkelijke_background": "Buitenkerkelijk opgevoed in een islamitisch-cultureel milieu; gedoopt op eigen verzoek twee jaar geleden.",
+          "huidige_betrokkenheid": "Regelmatige bezoeker; neemt deel aan de leesgroep over christelijke mystiek.",
+          "geloofsbeleving": "Geloof als een 'ontmoeting met de Levende'; ze heeft een sterke focus op de aanwezigheid van de Geest in het alledaagse.",
+          "geloofstaal": "Poëtisch, mystiek, zoekend naar woorden voor de onuitsprekelijke ervaring van Gods liefde.",
+          "geloofsvragen": [
+            "Hoe verhoudt de exclusieve claim van Christus zich tot de wijsheid in andere tradities?",
+            "Wat betekent 'aanbidden in geest en waarheid' in een digitale wereld?"
           ],
-          "spirituele_behoeften": "Zij zoekt naar heling, inclusiviteit en een gemeenschap waarin zij haar eigen zoektocht kan verbinden met die van anderen."
+          "spirituele_verwachting": "Schoonheid in de liturgie en een preek die de ziel raakt en uitnodigt tot innerlijke transformatie."
         },
         "hobbys_interesses": {
           "vrijetijd": [
-            "Bezoeken van exposities in de Stedelijk Museum Breda.",
-            "Koken voor vrienden."
+            "Fotografie van vervallen industriële panden",
+            "Bezoeken van kleine jazz-optredens in Breda",
+            "Perzische poëzie vertalen naar het Nederlands"
           ],
           "media": [
-            "Volgt platforms als 'Nieuw Wij'.",
-            "Luistert naar podcasts over intersectionaliteit en spiritualiteit."
+            "The Guardian",
+            "Podcasts over spiritualiteit en wetenschap",
+            "Instagram voor artistieke inspiratie"
           ],
           "verenigingen": [
-            "Actief in een collectief van Bredase creatieven."
+            "Onderzoeksnetwerken op haar vakgebied"
           ]
         },
         "aansluiting_schriftlezingen": {
-          "wat_raakt": "De ontmoeting bij de bron tussen Jezus en de Samaritaanse vrouw raakt haar in de kern. Zij herkent zichzelf in de positie van de vrouw: een buitenstaander met een beladen geschiedenis die door Jezus als volwaardige gesprekspartner wordt gezien.",
-          "wat_afstoot": "De exclusieve taal over 'de redding komt van de Joden' (Johannes 4:22) kan haar een gevoel van uitsluiting geven als dit niet historisch wordt geduid.",
-          "existentiele_vraag": "Word ik werkelijk gekend en geaccepteerd voor wie ik ben, voorbij alle labels die de samenleving op mij plakt?"
+          "wat_raakt": "De ontmoeting tussen Jezus en de Samaritaanse vrouw; ze identificeert zich met de vrouw als 'buitenstaander' die een diep theologisch gesprek voert met Jezus en daarin haar identiteit vindt.",
+          "wat_afstoot": "De klagende toon van de Israëlieten in Exodus; voor iemand die haar eigen weg heeft moeten vechten in een nieuw land, voelt dat soms als ondankbaarheid.",
+          "existentiele_vraag": "Wie is degene die mij werkelijk kent (Joh 4:29) en mij ziet voorbij mijn labels als 'academicus' of 'migrant'?"
         }
       }
     ],
     "_usage": {
-      "prompt_tokens": 26179,
-      "candidates_tokens": 7106,
-      "total_tokens": 34891
+      "prompt_tokens": 27669,
+      "candidates_tokens": 6795,
+      "total_tokens": 36012
     }
   },
   "15_homiletische_lowry": {
@@ -8959,65 +8974,161 @@
     },
     "warnings": []
   },
+  "61b_fonetische_analyse": {
+    "klanksymboliek": {
+      "diagnose": "De tekst hanteert een sterke contrastwerking tussen de zware, drukkende hitte van de woestijn/stad en de lichte, vloeiende genade. De spreker benut consonanten effectief om fysieke weerstand voelbaar te maken, maar verliest soms aan klankkleur in de meer abstracte, exegetische passages.",
+      "sterke_voorbeelden": [
+        "‘De klinkers duwen de hitte als een onzichtbare muur omhoog’ - De opeenvolging van de k- en d-klanken in combinatie met de gesloten 'u' en 'i' bootst de fysieke druk en beklemming van de hitte perfect na.",
+        "‘Het water stroomt. Het is er. Zomaar. Onverdiend.’ - De overgang naar korte zinnen met heldere klinkers (ee, i) signaleert de overgang van de zware wet naar de lichte genade."
+      ],
+      "zwakke_plekken": [
+        "‘Het is de moderne liturgie van de zelfverbetering’ - Dit theologische zwaartepunt klinkt te licht door de overmaat aan onbeklemtoonde e-klanken (sjwa's), waardoor de kritiek aan gewicht verliest.",
+        "‘God is Geest. Hij is dynamisch.’ - Voor de beschrijving van goddelijke transcendentie zijn deze klanken te ijl; het mist de sonore diepte (o, oo, u) die soevereiniteit akoestisch ondersteunt."
+      ],
+      "aanbevelingen": [
+        "Versterk de passage over 'God is Geest' met donkerdere vocalen om de ontzagwekkendheid te benadrukken (bijv. 'God is de adem die alles omvat').",
+        "Gebruik meer plofklanken (p, t, k) in de passage over de 'slimme waterfles' om de mechanische, kille aard van data-controle klanksymbolisch te ondersteunen."
+      ]
+    },
+    "werkgeheugen_architectuur": {
+      "diagnose": "De preek is retorisch zeer sterk onderlegd met een dominant gebruik van anaforen die de luisteraar door complexe emotionele lagen gidsen. De afwisseling tussen opsommingen (polysyndeton) en korte constateringen houdt de cognitieve belasting in balans.",
+      "gevonden_figuren": [
+        {
+          "type": "anafoor",
+          "voorbeeld": "‘Ze vergeten de zweepslag, ze vergeten de slavernij, ze vergeten dat hun zonen...’"
+        },
+        {
+          "type": "polysyndeton",
+          "voorbeeld": "‘Onze stappen, onze hartslag, onze slaapcyclus, onze hydratatie, onze schermtijd...’"
+        },
+        {
+          "type": "alliteratie",
+          "voorbeeld": "‘...gevoed door eeuwen van religieus wantrouwen en politieke strijd’"
+        }
+      ],
+      "ontbrekende_kansen": [
+        "In de passage over de 'vijf mannen' (de surrogaten) ontbreekt een krachtige epistrofe om de hopeloosheid van de herhaling te verankeren.",
+        "Bij de beschrijving van de dorst in de woestijn van Sin zou een asyndeton de urgentie en paniek van het volk verhogen."
+      ],
+      "aanbevelingen": [
+        "Voeg een epistrofe toe aan de opsomming van surrogaten (bijv. 'Onze carrière redt ons niet. Onze reputatie redt ons niet. Onze rijkdom redt ons niet.')",
+        "Snoei in de verbindingswoorden bij de beschrijving van de woestijn ('De rotsen scherp. De schaduw schaars. De kinderen huilend.') voor meer asyndetische impact."
+      ]
+    },
+    "akoestische_cadans": {
+      "diagnose": "De cadans is over het algemeen rustig en verhalend, met een goede spanningsopbouw naar de ontmoeting. Er treedt echter een lichte retorische temperatuurdaling op in de overgang van de Samaritaanse vrouw naar de Bredase context, waar de zinnen langer en verklarender worden.",
+      "vlakke_passages": [
+        "‘U kunt het vergelijken met de stille muren die wij in Breda soms optrekken. Tussen de bewoners van de villawijken in het zuiden en de mensen in de portiekflats van Hoge Vucht.’ - Deze passage is informatief maar ritmisch vlak.",
+        "‘Zolang we discussiëren over de juiste liturgie, of de juiste kerkorde, of de juiste ethische standpunten over actuele thema's...’ - De zin is te lang en verliest zijn stuwkracht."
+      ],
+      "kansen_voor_verdieping": [
+        "Gebruik anadiplosis bij het moment dat de vrouw haar kruik laat staan om de focus te verschuiven van het object naar de betekenis.",
+        "Pas epizeuxis toe bij de uitroep 'Is de Heer in ons midden?' om de existentiële vertwijfeling van het volk te laten resoneren."
+      ],
+      "aanbevelingen": [
+        "Verhoog de spanning bij de climax: 'De vrouw liet haar kruik staan. Staan liet ze haar schaamte.' (Anadiplosis).",
+        "Verkort de zinnen in de vergelijking met Breda om een staccato-ritme te creëren dat de 'muren' tussen de wijken ook hoorbaar maakt."
+      ]
+    },
+    "prioritaire_verbeteringen": [
+      {
+        "locatie": "Sectie 'De Waarheid die Vrijmaakt', bij de opsomming van de 'vijf mannen'.",
+        "probleem": "De opsomming is nu een droge lijst die cognitief weinig beklijft.",
+        "suggestie": "Vorm om naar een anafoor met een hamerend ritme: 'De man die u verliet. De man die u wegstuurde. De man die u niet zag.'"
+      },
+      {
+        "locatie": "Sectie 'De Ontmoeting op de Grens', passage over de muren in Breda.",
+        "probleem": "De cadans is te vlak en verklarend (informatief i.p.v. retorisch).",
+        "suggestie": "Gebruik asyndeton voor scherpte: 'Zuid tegenover Noord. Villawijk tegenover portiekflat. Wij tegenover zij.'"
+      },
+      {
+        "locatie": "Sectie 'De Woestijn van de Aanklacht', bij de vraag van het volk.",
+        "probleem": "De kernvraag mist akoestische urgentie.",
+        "suggestie": "Pas epizeuxis toe: 'Is Hij hier? Is de Heer hier, in dit zand, in deze hitte, hier?'"
+      },
+      {
+        "locatie": "Sectie 'De Kruik en de Stad', het moment van de kruik.",
+        "probleem": "Het keerpunt in het verhaal verdient een retorische markering.",
+        "suggestie": "Gebruik anadiplosis: 'Zij liet haar kruik achter. Achter liet ze de dorst die nooit overging.'"
+      },
+      {
+        "locatie": "Slotpassage 'Met Open Handen de Wereld In'.",
+        "probleem": "De afsluiting is theologisch rond maar ritmisch nog niet dwingend genoeg.",
+        "suggestie": "Eindig met een tricolon van korte, krachtige bevelen: 'Zoek de bron. Drink het water. Leef de liefde.'"
+      }
+    ],
+    "fonetische_score": {
+      "klanksymboliek": 8,
+      "werkgeheugen_architectuur": 7,
+      "akoestische_cadans": 6,
+      "totaal": 7,
+      "toelichting": "De preek blinkt uit in beeldende klanksymboliek en het gebruik van anaforen. De score voor cadans is lager omdat de overgang tussen exegese en actualisatie soms te verklarend (vlak) wordt, waardoor het ritme vertraagt op momenten dat de urgentie hoog moet zijn."
+    },
+    "_usage": {
+      "prompt_tokens": 7628,
+      "candidates_tokens": 1975,
+      "total_tokens": 10926
+    }
+  },
   "62_preek_rewrite": {
-    "titel": "Levend water in een dorstige wereld",
-    "bijbeltekst": "Johannes 4:5-42 en Exodus 17:3-7",
-    "thema": "De transformatie van existentiële dorst naar levende bron",
+    "titel": "De Bron die de Dorst Transformeert",
+    "bijbeltekst": "Johannes 4:5-42 (met Exodus 17:3-7)",
+    "thema": "Van overlevingsdrang naar levende overvloed",
     "samenvatting_wijzigingen": {
       "verbeteringen_per_domein": [
         {
           "domein": "Dekker",
-          "verwerkte_feedback": "De ernst van de keuze (twee wegen) en de specificiteit van de tekst versterkt.",
-          "concrete_aanpassing": "Toevoeging in het Exodus-gedeelte over de fatale consequentie van de 'brede weg' en het plaatsvervangend oordeel bij de rots."
+          "verwerkte_feedback": "De ernst van de 'twee wegen' aangescherpt en de focus op de specificiteit van de tekst vergroot.",
+          "concrete_aanpassing": "In de sectie 'De Woestijn van de Aanklacht' is toegevoegd dat zonder het water de dood onvermijdelijk is; het is geen ongemak, maar een fatale situatie."
         },
         {
           "domein": "Aristoteles",
-          "verwerkte_feedback": "Meer gebruik van 'wij' in plaats van 'u' om solidariteit te tonen en het pathos te versterken.",
-          "concrete_aanpassing": "In de inleiding en toepassing is de aanspreekvorm consequent naar de wij-vorm getrokken."
+          "verwerkte_feedback": "Logische verbinding met Biddag versterkt en introductie gefocust.",
+          "concrete_aanpassing": "De koppeling tussen Biddag en de 'fundering' van de Grote Kerk is logisch dwingender gemaakt: afhankelijkheid is geen keuze maar een feit."
         },
         {
           "domein": "Kolb",
-          "verwerkte_feedback": "Fase 4 (Actief Experimenteren) concreter gemaakt voor 'maandagochtend'.",
-          "concrete_aanpassing": "Toegevoegd: concrete voorbeelden van wat 'de kruik laten staan' betekent op de werkvloer of in de agenda."
+          "verwerkte_feedback": "Fase 4 (Actief Experimenteren) concreter gemaakt voor de maandagochtend.",
+          "concrete_aanpassing": "In de sectie 'Met Open Handen' zijn concrete voorbeelden toegevoegd van wat 'de kruik laten staan' betekent op de werkvloer of in de buurt."
         },
         {
           "domein": "Schulz Von Thun",
-          "verwerkte_feedback": "Het morele appel ('moeten') verminderd ten gunste van de rust van het evangelie.",
-          "concrete_aanpassing": "De slotoproep is herschreven van een taak naar een logisch gevolg van de ontvangen genade."
+          "verwerkte_feedback": "Zelfonthulling verdiept om de afstand te verkleinen.",
+          "concrete_aanpassing": "In de inleiding is een persoonlijke zin toegevoegd over de eigen onrust en het 'checken' van de prediker, om solidariteit in de zwakte te tonen."
         },
         {
           "domein": "Transactional",
-          "verwerkte_feedback": "Versterken van de 'Adult' positie en vreugde (Free Child) in het slot.",
-          "concrete_aanpassing": "De afsluiting is vreugdevoller en minder belerend gemaakt ('Drink en leef' als uitnodiging, niet als bevel)."
+          "verwerkte_feedback": "Vrije Kind-energie versterkt in de afsluiting.",
+          "concrete_aanpassing": "Het slot is herschreven om de vreugde en opluchting fysiek voelbaar te maken, weg van de moralistische druk."
         },
         {
           "domein": "Esthetiek",
-          "verwerkte_feedback": "Overgangen tussen de teksten vloeiender maken en ruimte voor stilte/openheid creëren.",
-          "concrete_aanpassing": "De overgang van de rots (Exodus) naar de put (Johannes) is tekstueel strakker verbonden via het motief van de 'geslagen bron'."
+          "verwerkte_feedback": "Overgang tussen Exodus en Johannes vloeiender gemaakt.",
+          "concrete_aanpassing": "De transitie tussen de woestijn en Samaria is versterkt door het zintuiglijke element van de 'hitte' als verbindend motief te gebruiken."
         },
         {
           "domein": "Metafoor",
-          "verwerkte_feedback": "Diepere ontwikkeling van de Rots-metafoor richting stabiliteit.",
-          "concrete_aanpassing": "De fundering van de Grote Kerk is explicieter verbonden aan Christus als de dragende Rots."
+          "verwerkte_feedback": "Consistentie van de funderingsmetafoor.",
+          "concrete_aanpassing": "Het beeld van de houten palen onder de Grote Kerk is uitgewerkt als een beeld van existentiële noodzaak, niet slechts als bouwkundig feit."
         },
         {
           "domein": "Narratief",
-          "verwerkte_feedback": "Genade vooraf laten gaan aan ethiek (subject-positie van God versterken).",
-          "concrete_aanpassing": "In het stuk over de 'vijf mannen' is Gods initiatief benadrukt boven de morele status van de vrouw."
+          "verwerkte_feedback": "Het 'moeten' uit het slot verwijderd.",
+          "concrete_aanpassing": "De laatste alinea's zijn herschreven als een belofte en een invitatie, waarbij de nadruk ligt op wat God doet, niet op wat de mens moet doen."
         },
         {
           "domein": "Taalhandeling",
-          "verwerkte_feedback": "Meer declaratieve taal (verkondiging) in plaats van beschrijvende taal.",
-          "concrete_aanpassing": "Zinnen als 'Het is een scheppingsdaad' zijn versterkt naar 'Hier gebeurt een scheppingsdaad'."
+          "verwerkte_feedback": "Meer directe aanspraak en verkondiging.",
+          "concrete_aanpassing": "Toegevoegd in de kern: 'Ik verkondig u vandaag...', om de preek van beschouwing naar daad te tillen."
         }
       ],
-      "toelichting": "De preek is aangescherpt door de theologische urgentie (Dekker/Red Team) te vergroten: de slag op de rots is nu expliciet een plaatsvervangend oordeel. De toepassing (Kolb) is uit de sfeer van de metafoor gehaald en concreet gemaakt voor de Biddag-context. De toon is verschoven van 'u moet' naar 'wij mogen' (Schulz von Thun/Transactional), waarbij de vreugde van de ontdekking centraal staat. De 'vijf mannen' zijn verbreed naar een collectief historisch probleem om moralisme te vermijden."
+      "toelichting": "De preek is aangescherpt door de theologische urgentie te verhogen (het is leven of dood, niet slechts comfort) en de 'vijf mannen' historisch-collectief te duiden om moralisme te vermijden. De toepassing is concreter gemaakt voor de context van Breda en Biddag, terwijl de toon is verschoven van 'moeten' naar 'mogen' en 'ontvangen'. De Red Team-feedback over plaatsvervanging en materiële gerechtigheid is geïntegreerd."
     },
-    "preektekst": "Gemeente van onze Heer Jezus Christus,\n\nStelt u zich de Grote Markt in Breda voor op een snikhete middag in augustus. De klinkers duwen de hitte als een onzichtbare muur omhoog. De terrasjes vallen heel even stil onder het gewicht van de zon. Het is die verstilde witheid van het licht waarin elk detail scherp wordt, van de barst in een koffiekopje tot de zweetdruppel op het voorhoofd van een voorbijganger. Precies in dat soort genadeloze licht staat een man bij een oude waterput in Samaria. Hij is moe van de reis. Zijn voeten zijn grijs van het stof en zijn keel voelt aan als schuurpapier. Het is het zesde uur, het middaguur, het moment waarop elk verstandig mens de koelte van de dikke muren opzoekt.\n\nMaar daar komt iemand aan. Een vrouw met een zware kruik die op haar schouder balanceert als een last die ze al jaren draagt. **Wij moeten ons** de fysieke sensatie van dat moment voorstellen. Het aardewerk is heet geworden in de zon en schuurt tegen haar huid, misschien legt ze er een doek tussen om de wrijving te verzachten, maar het gewicht blijft. Het touw snijdt in haar handen. Het stof van de weg stuift bij elke stap een beetje op en plakt aan haar enkels. Zij kiest juist dit moment, de eenzaamheid van de brandende zon, om haar water te halen. Het is een keuze geboren uit noodzaak, niet uit voorkeur. **Want die priemende blikken van anderen... die branden erger dan de zon.** Misschien is de eenzaamheid van de put veiliger dan de drukte van de ochtend waar de roddels als vliegen rondzoemen. ~~In de ochtenduren, wanneer de vrouwen van het dorp samenkomen, is de put niet alleen een plaats voor water, maar een sociaal knooppunt, een nieuwsbeurs waar reputaties worden gemaakt en gebroken.~~ Voor deze vrouw is die sociale marktplaats een executieplaats. Dus loopt ze liever in de hitte. In de stilte van die middag ontmoeten twee werelden elkaar die elkaar normaal gesproken negeren met de precisie van een geoefend zwijgen. Het is een ontmoeting die begint bij de simpelste menselijke behoefte: een slok koud water. Vandaag kijken wij door de ogen van deze vrouw naar de man bij de bron, terwijl de hitte van de woestijn en de hitte van ons eigen leven samenvloeien tot één brandend verlangen naar koelte.\n\n**Wij** kennen die dorst. Misschien niet direct de fysieke uitdroging van de woestijn, hoewel we ons na de droge zomers van de afgelopen jaren in Brabant wel iets kunnen voorstellen bij een aarde die snakt naar water, bij geel gras in het park en scheuren in de klei. **Juist nu we naar de Biddag toeleven, voelen we dat water geen vanzelfsprekend recht is, maar een kwestie van leven of dood.** Maar we kennen vooral de existentiële dorst, de dorst van het 'moeten', van het tekortschieten, van het altijd maar doorgaan. Ik zag laatst in een sportcentrum hier in de stad iemand lopen met zo’n 'slimme' waterfles. Een fles die via een app op je telefoon precies bijhoudt hoeveel milliliter je drinkt en die oplicht als je achterloopt op je dagschema. We meten alles. Onze stappen, onze hartslag, onze slaapcyclus, onze hydratatie, onze schermtijd, onze calorieën. Het is fascinerend en tegelijkertijd diep tragisch. We hebben blijkbaar een apparaat nodig om ons te vertellen wat ons lichaam al weet: dat we leeg zijn. We zijn het contact met onze eigen natuur kwijtgeraakt en proberen onze behoeften te managen met data en controle. Het is de moderne liturgie van de zelfverbetering: als we maar genoeg meten, als we maar genoeg optimaliseren, dan zullen we uiteindelijk gelukkig, gezond en onsterfelijk zijn. Maar de ironie is dat juist dat meten een nieuwe dorst creëert: de dorst naar perfectie, de angst om de grafiekjes niet te halen.\n\nToch blijft er, ondanks die 2,5 liter water per dag en onze perfecte schema's, een gevoel van droogte hangen. **Denk aan die ondernemer die na een faillissement opnieuw moet beginnen en zich afvraagt of hij nog wel meetelt.** De student die in Brabantpark op zijn kleine kamer tot diep in de nacht studeert, voelt het wanneer het blauwe licht van het scherm zijn ogen vermoeit en de stilte van de nacht niet rustgevend is, maar beklemmend. De jonge professional die rent van vergadering naar vergadering voelt het in de lift, tussen de vierde en de tiende verdieping, dat korte moment van nietsdoen waarin de vraag naar boven borrelt: waar ren ik eigenlijk naartoe? Het is de angst dat we, als we even stilvallen, zullen ontdekken dat we eigenlijk heel erg moe zijn. ~~Dat we uitgeput zijn van het hooghouden van alle ballen.~~ We vullen onze dagen, we vullen onze hoofden met podcasts en nieuwsfeeds, we vullen onze magen, maar de vraag blijft: zijn we verzadigd? Of zijn we alleen maar bezig met het dempen van een dieper verlangen? De tekst uit Exodus voert ons naar de rauwe werkelijkheid van die onvervulde behoefte, ver weg van onze airconditioned kantoren, terug naar de basis van het bestaan. Het volk Israël staat in de woestijn van Sin. De naam klinkt onheilspellend en de realiteit is dat ook. Er is geen water. De rotsen zijn scherp, de schaduw is schaars, en de kinderen huilen. De zekerheden van Egypte liggen achter hen, het beloofde land is nog ver weg, en het heden is gortdroog.\n\n## De Woestijn van de Aanklacht\n\nLuister naar het geluid dat opstijgt uit het kamp. Het is een aanzwellend geruis, eerst zacht, dan luider, als een naderende storm. Het is geen gebed. Het is ook geen vraag om hulp. Het is gemor. In het Hebreeuws staat daar het woord *wayyālen*. Dat is meer dan een beetje klagen over het weer of over het eten. Het is een technische term, vaak gebruikt in juridische contexten, voor een diepe, structurele ontevredenheid, een rebellie tegen de gevestigde orde. Het is het geluid van een volk dat het vertrouwen opzegt. Ze beginnen feitelijk een rechtszaak – een *riv* – tegen Mozes, en via Mozes tegen God. De aanklacht is zwaar: moord met voorbedachten rade. \"Waarom hebt u ons uit Egypte gehaald? Om ons hier te laten sterven?\" Het is de logica van de angst die spreekt. In de angst wordt het verleden altijd mooier dan het was; het geheugen wordt selectief. Plotseling lijken de vleespotten van Egypte aantrekkelijk. Ze vergeten de zweepslag, ze vergeten de slavernij, ze vergeten dat hun zonen in de Nijl werden geworpen. Ze herinneren zich alleen de volle buik, de uien en de knoflook. Veiligheid zonder vrijheid lijkt ineens een betere optie dan vrijheid met risico. De angst voor de toekomst maakt het verleden tot een gouden kooi waar men naar terugverlangt. **En vergis u niet: de weg terug naar Egypte is de weg naar de dood. Er is geen middenweg in de woestijn: het is vertrouwen of ten onder gaan.**\n\nDit mechanisme zit diep in ons menselijk systeem, ingebakken in onze psychologie. Wanneer de druk toeneemt, wanneer de middelen schaars worden – of dat nu geld is, of tijd, of aandacht, of water – dan zoeken we een schuldige. We kunnen de onzekerheid niet verdragen zonder er een gezicht aan te geven. We klagen aan. ~~We wijzen naar de overheid die het niet goed regelt, naar de kerk die niet relevant genoeg is, naar de partner die ons niet begrijpt, naar de leidinggevende die te veel vraagt.~~ **We wijzen naar alles buiten onszelf.** Het is makkelijker om een zondebok te zoeken dan om de leegte onder ogen te zien. Mozes voelt de dreiging fysiek. Hij staat alleen tegenover een kolkende massa. \"Nog even en ze stenigen mij,\" roept hij uit tot God. De stenen liggen al klaar; in de woestijn zijn er wapens genoeg. Het is de ultieme consequentie van een samenleving die gebaseerd is op de angst voor tekort. Als ik denk dat er niet genoeg is voor ons allemaal, wordt de ander mijn concurrent, mijn vijand. Dan wordt de leider de zondebok die geofferd moet worden om de crisis te bezweren. De vraag die het volk stelt, klinkt als een mokerslag, het is de kernvraag van elke crisis: \"Is de HEER nu in ons midden of niet?\" Het is een ultimatum. Bewijs het maar. Wij willen geen beloften, wij willen resultaat. Lever water, of we trekken de conclusie dat U er niet bent, dat de hemel leeg is en wij hier alleen zijn.\n\nGods antwoord op deze agressie is verbluffend. Hij gaat niet in discussie. Hij verdedigt Zichzelf niet tegen de aanklacht. Hij straft niet, hoewel de rebellie groot is. Hij lokaliseert Zichzelf. \"Ik zal daar voor u op de rots bij de Horeb staan,\" zegt de Eeuwige. Sta hier even bij stil. In de beeldtaal van het Oude Oosten staan goden niet; ze zitten op een troon. Koningen zitten recht te spreken. Verdachten staan. God draait de rollen om. Hij plaatst Zichzelf in de beklaagdenbank. Hij gaat staan op de rots, op de harde, onvruchtbare materie van de woestijn, precies daar waar het volk naar wijst. Hij maakt Zichzelf kwetsbaar. En dan komt de opdracht: Mozes moet de rots slaan met de staf. Dezelfde staf die de Nijl in bloed veranderde, die symbool staat voor oordeel en macht, moet nu neerkomen. Maar niet op het volk. En niet op Mozes. De slag komt neer op de rots waar God op staat. **De slag die ons had moeten treffen, landt op Hem.** God absorbeert de klap. De agressie van het volk wordt opgevangen door de genade van God die de aarde openbreekt. **Hier zien we de schaduw van het kruis: de Rots wordt geslagen, opdat wij zouden leven.** Het oordeel wordt voltrokken, maar de genade vloeit eruit voort. Het water stroomt. Het is er. Zomaar. Onverdiend. Te midden van het gemor, het ongeloof en de twijfel stroomt de voorzienigheid. **Hier gebeurt een scheppingsdaad:** uit het niets, uit het harde, komt leven. Dit is hoe God is: Hij laat zich vinden op de bodem van onze wanhoop, op het punt waar wij alleen nog maar stenen in onze handen hebben om te gooien, daar opent Hij zijn hand om te geven.\n\n## De Ontmoeting op de Grens\n\nWe maken een sprong in de tijd, vele eeuwen later, naar die put in Samaria. De setting is anders, maar de hitte is hetzelfde. De dorst is hetzelfde. Jezus zit daar, vermoeid van de reis. Johannes gebruikt daar een heel specifiek Grieks woord voor: *kekopiakōs*. Het betekent zoiets als 'afgemat', 'uitgeteld'. Dat detail raakt mij altijd diep. God die moe is. God die zweet. God die de beperkingen van een menselijk lichaam kent, die weet wat het is als je spieren verzuren en je mond droog is. Hij zit daar en Hij wacht. Hij zit bij de bron van Jakob, een plek beladen met geschiedenis, een plek die gaat over erfenis en traditie. Hij wacht op de vrouw die nu het toneel betreedt. En dan gebeurt er iets wat alle religieuze en sociale logica van die tijd tart. De man die daar zit, de vreemdeling die alles van haar weet, begint niet met een preek. Hij begint niet met een oordeel. Hij begint met een vraag: \"Geef Mij te drinken.\"\n\nDit is de grote omkering. De Schepper van de oceanen, de bron van alle leven, maakt Zichzelf afhankelijk van een mens. Hij stelt Zichzelf op één lijn met de vrouw. Hij heeft geen emmer, zegt de tekst later. De put is diep, wel dertig meter diep. Zonder haar kan Hij niet bij het water. Hij heeft haar nodig. Hij wacht niet tot zij haar leven op orde heeft, Hij wacht niet tot ze zuiver en rein is volgens de wetten; Hij vraagt haar om hulp in haar huidige staat. In Samaria, op die stoffige weg, breekt Jezus elke ongeschreven regel. Hij spreekt een vrouw aan, en niet zomaar een vrouw, maar een Samaritaanse. Dat is in die wereld een grens overstappen die onbegaanbaar wordt geacht. Joden en Samaritanen leefden met een diepe muur tussen hun harten, gevoed door eeuwen van religieus wantrouwen en politieke strijd, teruggaand tot de ballingschap toen de Samaritanen als 'halfbloeden' werden gezien. Joden meden Samaria, ze liepen er liever met een grote boog omheen. **Wij herkennen die stille muren in Breda.** Tussen de bewoners van de villawijken in het zuiden en de mensen in de portiekflats van Hoge Vucht. Tussen de mensen die hier al generaties wonen en de nieuwkomers die de taal nog zoeken. We leven langs elkaar heen, ieder in zijn eigen bubbel, met onze eigen oordelen klaar over 'die anderen'.\n\nMaar hier bij de bron stopt de segregatie. Jezus breekt door de 'bubbel' van de vrouw heen met Zijn kwetsbaarheid. \"Hoe kunt U dat aan mij vragen?\" reageert ze. Ze is scherp. Ze is niet op haar mondje gevallen. Ze is geen timide slachtoffer, maar een vrouw die weet hoe de wereld in elkaar zit. Ze benoemt de olifant in de kamer: de kloof tussen hun werelden. \"U bent een Jood, ik ben een Samaritaanse vrouw.\" Ze wijst op de etiketten. Vandaag, op 8 maart, Internationale Vrouwendag, zien we hier een vrouw die als volwaardig gesprekspartner wordt serieus genomen door de Rabbi. Jezus wuift haar bezwaren niet weg, maar Hij neemt haar mee de diepte in. Hij opent een perspectief dat voorbij de emmer, het touw en de etnische verschillen gaat. \"Als u wist wat God wil geven...\" Het is de uitnodiging om de realiteit met andere ogen te bekijken. Er is een fundamenteel verschil, legt Hij uit, tussen het water uit de put en het water dat Hij biedt. Het water uit de put is stilstaand water. In de bijbelse taal is dat 'dood' water. Je drinkt het, en een paar uur later heb je weer dorst. Het is het water van de herhaling. Dat is het water van onze economie, van onze consumptie, van onze eindeloze projecten, van onze likes en shares. Het bevredigt even, maar het verzadigt niet. **Dorst is geen bewijs dat er water is, het is een gok, een waagstuk van geloof.** En er is levend water. Water dat stroomt, water dat een bron wordt in jezelf, dat opwelt (*hallomènou* staat er, springend, bruisend) tot in het eeuwige leven.\n\n## De Waarheid die Vrijmaakt\n\nDan komt het moment van de waarheid. De vrouw is geïnteresseerd, maar begrijpt het nog op een praktisch niveau: \"Geef mij dat water, dan hoef ik niet meer naar de put te lopen.\" Ze wil een oplossing voor haar dagelijkse last. Maar Jezus wil haar ziel genezen. \"Ga uw man halen,\" zegt Hij. Het lijkt een abrupte wending, een non sequitur, maar het is de kern van de zaak. De vrouw antwoordt kortaf, misschien breekt haar stem even, of verstrakt haar gezicht: \"Ik heb geen man.\" En Jezus zegt: \"Dat is waar.\" Hij pelt de lagen af. Hij somt haar geschiedenis op. Vijf mannen. En de huidige is haar man niet. **Dat is doodeng. Iemand die dwars door je heen kijkt, die je diepste geheimen kent.**\n\nVaak hebben we dit gelezen als een lijst van zonden, als een bewijs van haar morele falen, een losbandig leven. Maar laten we eens met zachtere ogen kijken, met de ogen van Jezus. In de wereld van toen kon een vrouw zich niet zomaar ontdoen van een man; alleen een man kon een scheidingsbrief schrijven. Een vrouw was juridisch en economisch afhankelijk. Vijf mannen... dat klinkt als een verhaal van immense tragiek. Van verlaten worden, keer op keer. Misschien van weduwschap, van de dood die haar achtervolgde. Van weggestuurd worden omdat ze onvruchtbaar bleek. Van een wanhopige zoektocht naar bestaanszekerheid in een wereld waar een vrouw alleen, niets is. **En misschien is het meer dan haar persoonlijk verhaal. Die vijf mannen... ze doen denken aan de vijf volken met hun eigen afgoden die ooit in Samaria kwamen wonen. Haar leven is een spiegel van haar hele volk: zoekend naar houvast bij de ene macht na de andere, en nooit rust vinden bij de ware God.** Deze vrouw draagt een geschiedenis van afwijzing, verlies en overleven met zich mee. De man bij wie ze nu is, trouwt haar niet eens meer; ze is handelswaar geworden, gedoogd maar niet geëerd. Ze is een overlever, getekend door de hardheid van het leven.\n\nJezus benoemt het. Niet om haar te beschamen, maar om haar te laten weten dat ze gekend is. Hij ziet haar. Hij ziet de pijn, de strijd, de overlevingsstrategieën. Hij ziet de 'vijf mannen' – en laten we eerlijk zijn, **wij hebben ook onze collectieve afgoden**. Het zijn die dingen waar we onze zekerheid aan proberen te ontlenen, onze surrogaatgoden. Onze carrière die ons identiteit moet geven. Onze reputatie die onbesproken moet blijven. Onze gezondheid waar we krampachtig over waken. Onze spaarrekening die ons rust moet geven. Onze intellectuele capaciteiten waarmee we de wereld willen beheersen. We klampen ons eraan vast, hopend dat ze ons zullen redden, dat ze ons de liefde en de veiligheid zullen geven waar we naar smachten. Maar ze kunnen het niet. Het zijn bronnen die opdrogen, gebroken bakken die geen water houden, zoals de profeet Jeremia ooit zei. Jezus kijkt dwars door onze surrogaten heen. En het wonder is: Hij blijft zitten. Hij loopt niet weg nu Hij haar 'schande' kent. Hij veroordeelt niet. Hij biedt Zichzelf aan als de ware Bruidegom, de enige die de ziel werkelijk kan verzadigen.\n\nDe vrouw, geschrokken van deze intimiteit, probeert het gesprek nog even te verleggen naar veilig terrein: theologie. \"Onze vaderen aanbaden op deze berg, en jullie zeggen Jeruzalem.\" Het is de vlucht in de religieuze vorm, in de discussie over regels en plekken. Zolang we discussiëren over de juiste liturgie, of de juiste kerkorde, of de juiste ethische standpunten over actuele thema's, hoeven we het niet over ons eigen hart te hebben. Het is een rookgordijn. Maar Jezus gaat er dwars doorheen. \"Geloof me, vrouw...\" Hij kondigt een nieuwe tijd aan. De tijd van aanbidding in Geest en waarheid. God zit niet vast in de stenen van Jeruzalem. God zit niet vast op de berg Gerizim. God zit niet vast in de gebouwen van de Markuskerk of de Grote Kerk. God is Geest. Hij is dynamisch. Hij waait waarheen Hij wil. Hij zoekt geen mensen die de juiste geografische coördinaten hebben, maar mensen die transparant durven zijn. Mensen die hun maskers afleggen. Mensen die durven te bestaan voor Zijn aangezicht, met hun dorst, met hun verleden, met hun vragen, zonder de opsmuk van religieuze pretentie. \"In waarheid\" betekent hier: in openheid, zonder verborgen agenda, eerlijk over wie je bent en wat je nodig hebt.\n\n## De Kruik en de Stad\n\nEn dan gebeurt het. Het detail dat alles zegt, het keerpunt in het verhaal. Johannes schrijft: \"De vrouw liet haar kruik staan.\" Ziet u het voor u? Die aarden kruik (*hydria*). Het was het doel van haar reis. Het was haar kostbaarste bezit op dat moment, noodzakelijk voor haar overleven. Het was het instrument van haar dagelijkse arbeid. Het was ook het symbool van haar zorg, haar taak en haar last. Ze laat hem staan. Ze vergeet de reden waarom ze gekomen was, omdat ze een grotere reden heeft gevonden om te leven. De fysieke dorst is vergeten door de vreugde van de geestelijke vondst.\n\nZe rent terug naar de stad. Naar de mensen die ze eerst ontliep. Naar de blikken die ze vreesde. Ze wordt de eerste apostel, de eerste evangelist in het evangelie van Johannes. Een vrouw met een dubieuze reputatie wordt de boodschapper van de Messias. \"Kom mee! Er is iemand die alles van mij weet!\" roept ze tegen de mannen op het plein. Let op wat ze zegt. Ze zegt niet: \"Ik heb de theologie begrepen.\" Ze zegt niet: \"Ik ben nu een perfect mens, ik heb mijn leven op orde.\" Ze zegt: \"Ik ben gekend.\" Dat is de kern van het evangelie. Gekend zijn en toch geliefd. Doorzien zijn – tot op de bodem van je ziel, met al je donkere kantjes – en niet verworpen worden. Dat geeft vleugels. Dat breekt de sociale isolatie. De vrouw die als een eenzame schim naar de put kwam, keert terug als een leider die de hele stad op sleeptouw neemt. Haar schaamte is veranderd in een getuigenis. Haar verleden is niet weggepoetst, maar het is in een nieuw licht komen te staan. Het is het decor geworden waartegen de genade van Christus schittert. De mensen luisteren naar haar, niet om haar status, maar om de waarachtigheid van haar verandering.\n\nWat betekent dit voor ons, hier in Breda, op weg naar Biddag? **Woensdag is het Biddag.** Wij bidden ~~woensdag~~ voor gewas en arbeid **in een wereld waar water schaars is en eerlijke verdeling een gevecht.** We bidden om zegen over ons werk, over onze economie, over de aarde. Maar deze tekst vraagt ons: vanuit welke houding bidden wij? Bidden we als mensen die krampachtig hun eigen kruiken vasthouden? Bidden we vanuit de angst dat we tekort zullen komen, vanuit de woestijn van het gemor? Of bidden we als mensen die de Bron hebben gevonden?\n\nIn de Grote Kerk van Breda zit een geheim. De enorme toren rust op houten palen die diep in de grond zitten. Die palen moeten constant onder water staan. Als het grondwaterpeil zakt, gaan ze rotten en stort de toren in. De stabiliteit van dat trotse monument, het symbool van onze stad, hangt af van een onzichtbare bron diep onder de oppervlakte. Zo is het ook met ons leven. Onze stabiliteit, onze veerkracht, onze hoop hangt af van die verbinding met het Levende Water. **Christus is die onzichtbare Rots onder ons bestaan.** Als we die verbinding verliezen, kunnen we aan de buitenkant nog heel wat lijken – succesvol, druk, belangrijk – maar van binnen beginnen de fundamenten te rotten.\n\nWij worden vandaag uitgenodigd om onze fundering te controleren. Waar rust uw leven op? Op de wisselkoersen van de wereld? Op de waardering van anderen? Of op de toezegging van Christus: \"Ik ben het\"? De naam van God, die aan Mozes werd geopenbaard als 'Ik zal er zijn', klinkt nu uit de mond van Jezus. Hij is de Rots die meereist. Hij is de Bron die opwelt. Hij is de aanwezigheid die de leegte vult.\n\n## Met Open Handen de Wereld In\n\nLaten we de moed hebben om onze kruiken te laten staan. **Niet alleen in ons hoofd, maar morgen, als de wekker gaat.** De kruik van onze prestatiedrang **– durf je morgen eens een 'nee' te verkopen als je agenda te vol is, uit vertrouwen dat de wereld doordraait?** De kruik van ons gelijk **– durf je in dat ene conflict te luisteren zonder tegenargument?** De kruik van onze vroomheid waarmee we ons onderscheiden van de ander. De kruik van onze angst voor de toekomst. Laat ze staan bij de Bron. Je hebt je handen nodig om vrij te zijn. Je hebt je handen nodig om de ander te omhelzen. Je hebt je handen nodig om te ontvangen wat God wil geven.\n\nKijk naar de stad om ons heen. Breda is een stad vol dorstige mensen. Achter de gevels van Heusdenhout, in de studentenhuizen, in de zorginstellingen – overal is die roep om erkenning, om zin, om liefde. Wij zijn geroepen om, net als die vrouw, de stad in te gaan. Niet met een oordeel. Niet met een superieure waarheid die we als een steen naar anderen gooien. Maar met de uitnodiging: \"Kom en zie.\" Kom kijken naar de Man die mij kent en die mij liefheeft. Kom drinken van het water dat niets kost.\n\nMisschien denkt u: wie ben ik om dat te doen? Ik heb mijn twijfels. Ik heb mijn 'vijf mannen', mijn mislukkingen, mijn littekens. Juist dan bent u geschikt. God gebruikt geen perfecte mensen, want die bestaan niet. God gebruikt mensen die weten wat dorst is. Mensen die weten hoe het zand van de woestijn smaakt. Alleen zij kunnen geloofwaardig spreken over het Water.\n\nIn de geschiedenis van Breda kennen we het verhaal van het Turfschip. Een list om de stad te bevrijden. Soldaten verborgen onder de turf. Soms denken we dat we God ook zo de wereld in moeten smokkelen. Dat we het evangelie moeten verbergen onder een laagje gezelligheid of sociaal werk. Maar Jezus gebruikt geen list. Hij is radicaal open. Hij zegt: \"Geef Mij te drinken.\" Hij begint de relatie. Hij maakt Zichzelf present. Wij mogen die openheid overnemen. Geen verborgen agenda's. Gewoon mens zijn naast de ander. Luisteren. De dorst delen. En wijzen naar de Bron.\n\nWe gaan op weg naar Pasen. De weg gaat door de woestijn. Maar we gaan niet alleen. De Rots gaat met ons mee. Het water stroomt. De hoop beschaamt niet. God is in ons midden. Ja, Hij is werkelijk in ons midden. **Dit is geen opdracht, dit is een belofte: Drink, en je zult leven.**",
+    "preektekst": "Gemeente van onze Heer Jezus Christus,\n\nStelt u zich de Grote Markt in Breda voor op een snikhete middag in augustus. De klinkers duwen de hitte als een onzichtbare muur omhoog. De terrasjes vallen heel even stil onder het gewicht van de zon. Het is die verstilde witheid van het licht waarin elk detail scherp wordt, van de barst in een koffiekopje tot de zweetdruppel op het voorhoofd van een voorbijganger. Precies in dat soort genadeloze licht staat een man bij een oude waterput in Samaria. Hij is moe van de reis. Zijn voeten zijn grijs van het stof en zijn keel voelt aan als schuurpapier. Het is het zesde uur, het middaguur, het moment waarop elk verstandig mens de koelte van de dikke muren opzoekt.\n\nMaar daar komt iemand aan. Een vrouw met een zware kruik die op haar schouder balanceert als een last die ze al jaren draagt. U moet zich de fysieke sensatie van dat moment voorstellen. Het aardewerk is heet geworden in de zon en schuurt tegen haar huid, misschien legt ze er een doek tussen om de wrijving te verzachten, maar het gewicht blijft. Het touw snijdt in haar handen. Het stof van de weg stuift bij elke stap een beetje op en plakt aan haar enkels. Zij kiest juist dit moment, de eenzaamheid van de brandende zon, om haar water te halen. Het is een keuze geboren uit noodzaak, niet uit voorkeur. **Ze zoekt dekking. De hitte is haar schild tegen de oordelen.** In de ochtenduren, wanneer de vrouwen van het dorp samenkomen, is de put niet alleen een plaats voor water, maar een sociaal knooppunt, een nieuwsbeurs waar reputaties worden gemaakt en gebroken. Voor deze vrouw is die sociale marktplaats een executieplaats. Dus loopt ze liever in de hitte. In de stilte van die middag ontmoeten twee werelden elkaar die elkaar normaal gesproken negeren met de precisie van een geoefend zwijgen. Het is een ontmoeting die begint bij de simpelste menselijke behoefte: een slok koud water. Vandaag kijken wij door de ogen van deze vrouw naar de man bij de bron, terwijl de hitte van de woestijn en de hitte van ons eigen leven samenvloeien tot één brandend verlangen naar koelte.\n\nWe kennen die dorst. Misschien niet direct de fysieke uitdroging van de woestijn, hoewel we ons na de droge zomers van de afgelopen jaren in Brabant wel iets kunnen voorstellen bij een aarde die snakt naar water, bij geel gras in het park en scheuren in de klei. **Laten we die fysieke nood niet te snel vergeestelijken; voor velen in onze wereld is watergebrek een dagelijkse, dodelijke realiteit en een kwestie van recht.** Maar hier in onze context kennen we ook de existentiële dorst, de dorst van het 'moeten', van het tekortschieten, van het altijd maar doorgaan. **Ik herken het bij mezelf: die onrustige impuls om steeds maar weer mijn telefoon te checken, alsof daar het verlossende bericht binnenkomt dat mij bestaansrecht geeft.**\n\nIk zag laatst in een sportcentrum hier in de stad iemand lopen met zo’n 'slimme' waterfles. Een fles die via een app op je telefoon precies bijhoudt hoeveel milliliter je drinkt en die oplicht als je achterloopt op je dagschema. We meten alles. Onze stappen, onze hartslag, onze slaapcyclus, onze hydratatie, onze schermtijd, onze calorieën. Het is fascinerend en tegelijkertijd diep tragisch. We hebben blijkbaar een apparaat nodig om ons te vertellen wat ons lichaam al weet: dat we leeg zijn. We zijn het contact met onze eigen natuur kwijtgeraakt en proberen onze behoeften te managen met data en controle. Het is de moderne liturgie van de zelfverbetering: als we maar genoeg meten, als we maar genoeg optimaliseren, dan zullen we uiteindelijk gelukkig, gezond en onsterfelijk zijn. Maar de ironie is dat juist dat meten een nieuwe dorst creëert: de dorst naar perfectie, de angst om de grafiekjes niet te halen.\n\nToch blijft er, ondanks die 2,5 liter water per dag en onze perfecte schema's, een gevoel van droogte hangen. De student die in Brabantpark op zijn kleine kamer tot diep in de nacht studeert, voelt het wanneer het blauwe licht van het scherm zijn ogen vermoeit en de stilte van de nacht niet rustgevend is, maar beklemmend. De jonge professional die rent van vergadering naar vergadering voelt het in de lift, tussen de vierde en de tiende verdieping, dat korte moment van nietsdoen waarin de vraag naar boven borrelt: waar ren ik eigenlijk naartoe? Het is de angst dat we, als we even stilvallen, zullen ontdekken dat we eigenlijk heel erg moe zijn. Dat we uitgeput zijn van het hooghouden van alle ballen. We vullen onze dagen, we vullen onze hoofden met podcasts en nieuwsfeeds, we vullen onze magen, maar de vraag blijft: zijn we verzadigd? Of zijn we alleen maar bezig met het dempen van een dieper verlangen? De tekst uit Exodus voert ons naar de rauwe werkelijkheid van die onvervulde behoefte, ver weg van onze airconditioned kantoren, terug naar de basis van het bestaan. Het volk Israël staat in de woestijn van Sin. De naam klinkt onheilspellend en de realiteit is dat ook. Er is geen water. De rotsen zijn scherp, de schaduw is schaars, en de kinderen huilen. De zekerheden van Egypte liggen achter hen, het beloofde land is nog ver weg, en het heden is gortdroog.\n\n## De Woestijn van de Aanklacht\n\nLuister naar het geluid dat opstijgt uit het kamp. Het is een aanzwellend geruis, eerst zacht, dan luider, als een naderende storm. Het is geen gebed. Het is ook geen vraag om hulp. Het is gemor. In het Hebreeuws staat daar het woord *wayyālen*. Dat is meer dan een beetje klagen over het weer of over het eten. Het is een technische term, vaak gebruikt in juridische contexten, voor een diepe, structurele ontevredenheid, een rebellie tegen de gevestigde orde. Het is het geluid van een volk dat het vertrouwen opzegt. Ze beginnen feitelijk een rechtszaak – een *riv* – tegen Mozes, en via Mozes tegen God. De aanklacht is zwaar: moord met voorbedachten rade. \"Waarom hebt u ons uit Egypte gehaald? Om ons hier te laten sterven?\" **Vergis u niet: zonder water is dit geen ongemak, maar het einde. De dood staat voor de deur.** Het is de logica van de angst die spreekt. In de angst wordt het verleden altijd mooier dan het was; het geheugen wordt selectief. Plotseling lijken de vleespotten van Egypte aantrekkelijk. Ze vergeten de zweepslag, ze vergeten de slavernij, ze vergeten dat hun zonen in de Nijl werden geworpen. Ze herinneren zich alleen de volle buik, de uien en de knoflook. Veiligheid zonder vrijheid lijkt ineens een betere optie dan vrijheid met risico. De angst voor de toekomst maakt het verleden tot een gouden kooi waar men naar terugverlangt.\n\nDit mechanisme zit diep in ons menselijk systeem, ingebakken in onze psychologie. Wanneer de druk toeneemt, wanneer de middelen schaars worden – of dat nu geld is, of tijd, of aandacht, of water – dan zoeken we een schuldige. We kunnen de onzekerheid niet verdragen zonder er een gezicht aan te geven. We klagen aan. We wijzen naar de overheid die het niet goed regelt, naar de kerk die niet relevant genoeg is, naar de partner die ons niet begrijpt, naar de leidinggevende die te veel vraagt. Het is makkelijker om een zondebok te zoeken dan om de leegte onder ogen te zien. Mozes voelt de dreiging fysiek. Hij staat alleen tegenover een kolkende massa. \"Nog even en ze stenigen mij,\" roept hij uit tot God. De stenen liggen al klaar; in de woestijn zijn er wapens genoeg. Het is de ultieme consequentie van een samenleving die gebaseerd is op de angst voor tekort. Als ik denk dat er niet genoeg is voor ons allemaal, wordt de ander mijn concurrent, mijn vijand. Dan wordt de leider de zondebok die geofferd moet worden om de crisis te bezweren. De vraag die het volk stelt, klinkt als een mokerslag, het is de kernvraag van elke crisis: \"Is de HEER nu in ons midden of niet?\" Het is een ultimatum. Bewijs het maar. Wij willen geen beloften, wij willen resultaat. Lever water, of we trekken de conclusie dat U er niet bent, dat de hemel leeg is en wij hier alleen zijn.\n\nGods antwoord op deze agressie is verbluffend. Hij gaat niet in discussie. Hij verdedigt Zichzelf niet tegen de aanklacht. Hij straft niet, hoewel de rebellie groot is. Hij lokaliseert Zichzelf. \"Ik zal daar voor u op de rots bij de Horeb staan,\" zegt de Eeuwige. Sta hier even bij stil. In de beeldtaal van het Oude Oosten staan goden niet; ze zitten op een troon. Koningen zitten recht te spreken. Verdachten staan. God draait de rollen om. Hij plaatst Zichzelf in de beklaagdenbank. Hij gaat staan op de rots, op de harde, onvruchtbare materie van de woestijn, precies daar waar het volk naar wijst. Hij maakt Zichzelf kwetsbaar. En dan komt de opdracht: Mozes moet de rots slaan met de staf. Dezelfde staf die de Nijl in bloed veranderde, die symbool staat voor oordeel en macht, moet nu neerkomen. Maar niet op het volk. En niet op Mozes. De slag komt neer op de rots waar God op staat. God absorbeert de klap. **De Eeuwige laat zich raken. Hij neemt de slag die het volk verdiende, op Zichzelf.** De agressie van het volk wordt opgevangen door de genade van God die de aarde openbreekt. Het oordeel wordt voltrokken, maar de genade vloeit eruit voort. Het water stroomt. Het is er. Zomaar. Onverdiend. Te midden van het gemor, het ongeloof en de twijfel stroomt de voorzienigheid. Het is een scheppingsdaad: uit het niets, uit het harde, komt leven. Dit is hoe God is: Hij laat zich vinden op de bodem van onze wanhoop, op het punt waar wij alleen nog maar stenen in onze handen hebben om te gooien, daar opent Hij zijn hand om te geven.\n\n## De Ontmoeting op de Grens\n\nWe maken een sprong in de tijd, vele eeuwen later, naar die put in Samaria. De setting is anders, maar de hitte is hetzelfde. **Dezelfde verzengende zon die de rots in de woestijn blakerde, schijnt nu op de stoffige wegen van Sychar.** De dorst is hetzelfde. Jezus zit daar, vermoeid van de reis. Johannes gebruikt daar een heel specifiek Grieks woord voor: *kekopiakōs*. Het betekent zoiets als 'afgemat', 'uitgeteld'. Dat detail raakt mij altijd diep. God die moe is. God die zweet. God die de beperkingen van een menselijk lichaam kent, die weet wat het is als je spieren verzuren en je mond droog is. Hij zit daar en Hij wacht. Hij zit bij de bron van Jakob, een plek beladen met geschiedenis, een plek die gaat over erfenis en traditie. Hij wacht op de vrouw die nu het toneel betreedt. En dan gebeurt er iets wat alle religieuze en sociale logica van die tijd tart. De man die daar zit, de vreemdeling die alles van haar weet, begint niet met een preek. Hij begint niet met een oordeel. Hij begint met een vraag: \"Geef Mij te drinken.\"\n\nDit is de grote omkering. De Schepper van de oceanen, de bron van alle leven, maakt Zichzelf afhankelijk van een mens. Hij stelt Zichzelf op één lijn met de vrouw. Hij heeft geen emmer, zegt de tekst later. De put is diep, wel dertig meter diep. Zonder haar kan Hij niet bij het water. Hij heeft haar nodig. Hij wacht niet tot zij haar leven op orde heeft, Hij wacht niet tot ze zuiver en rein is volgens de wetten; Hij vraagt haar om hulp in haar huidige staat. In Samaria, op die stoffige weg, breekt Jezus elke ongeschreven regel. Hij spreekt een vrouw aan, en niet zomaar een vrouw, maar een Samaritaanse. Dat is in die wereld een grens overstappen die onbegaanbaar wordt geacht. Joden en Samaritanen leefden met een diepe muur tussen hun harten, gevoed door eeuwen van religieus wantrouwen en politieke strijd, teruggaand tot de ballingschap toen de Samaritanen als 'halfbloeden' werden gezien. Joden meden Samaria, ze liepen er liever met een grote boog omheen. U kunt het vergelijken met de stille muren die wij in Breda soms optrekken. Tussen de bewoners van de villawijken in het zuiden en de mensen in de portiekflats van Hoge Vucht. Tussen de mensen die hier al generaties wonen en de nieuwkomers die de taal nog zoeken. We leven langs elkaar heen, ieder in zijn eigen bubbel, met onze eigen oordelen klaar over 'die anderen'.\n\nMaar hier bij de bron stopt de segregatie. Jezus breekt door de 'bubbel' van de vrouw heen met Zijn kwetsbaarheid. \"Hoe kunt U dat aan mij vragen?\" reageert ze. Ze is scherp. Ze is niet op haar mondje gevallen. Ze is geen timide slachtoffer, maar een vrouw die weet hoe de wereld in elkaar zit. Ze benoemt de olifant in de kamer: de kloof tussen hun werelden. \"U bent een Jood, ik ben een Samaritaanse vrouw.\" Ze wijst op de etiketten. Vandaag, op 8 maart, Internationale Vrouwendag, zien we hier een vrouw die als volwaardig gesprekspartner wordt serieus genomen door de Rabbi. Jezus wuift haar bezwaren niet weg, maar Hij neemt haar mee de diepte in. Hij opent een perspectief dat voorbij de emmer, het touw en de etnische verschillen gaat. \"Als u wist wat God wil geven...\" Het is de uitnodiging om de realiteit met andere ogen te bekijken. Er is een fundamenteel verschil, legt Hij uit, tussen het water uit de put en het water dat Hij biedt. Het water uit de put is stilstaand water. In de bijbelse taal is dat 'dood' water. Je drinkt het, en een paar uur later heb je weer dorst. **De dorst keert altijd terug, dwingender dan daarvoor. Als we bij de oude putten blijven drinken, sterven we uiteindelijk van uitputting.** Het is het water van de herhaling. Dat is het water van onze economie, van onze consumptie, van onze eindeloze projecten, van onze likes en shares. Het bevredigt even, maar het verzadigt niet. En er is levend water. Water dat stroomt, water dat een bron wordt in jezelf, dat opwelt (*hallomènou* staat er, springend, bruisend) tot in het eeuwige leven.\n\n## De Waarheid die Vrijmaakt\n\nDan komt het moment van de waarheid. De vrouw is geïnteresseerd, maar begrijpt het nog op een praktisch niveau: \"Geef mij dat water, dan hoef ik niet meer naar de put te lopen.\" Ze wil een oplossing voor haar dagelijkse last. Maar Jezus wil haar ziel genezen. \"Ga uw man halen,\" zegt Hij. Het lijkt een abrupte wending, een non sequitur, maar het is de kern van de zaak. De vrouw antwoordt kortaf, misschien breekt haar stem even, of verstrakt haar gezicht: \"Ik heb geen man.\" En Jezus zegt: \"Dat is waar.\" Hij pelt de lagen af. Hij somt haar geschiedenis op. Vijf mannen. En de huidige is haar man niet.\n\nVaak hebben we dit gelezen als een lijst van zonden, als een bewijs van haar morele falen, een losbandig leven. Maar laten we eens met zachtere ogen kijken, met de ogen van Jezus. **En laten we ook breder kijken. Deze 'vijf mannen' spiegelen de geschiedenis van haar volk, dat ooit vijf andere goden diende.** Het gaat niet alleen om haar persoonlijke keuzes; ze draagt de verwarring van haar hele cultuur in zich. In de wereld van toen kon een vrouw zich niet zomaar ontdoen van een man; alleen een man kon een scheidingsbrief schrijven. Een vrouw was juridisch en economisch afhankelijk. Vijf mannen... dat klinkt als een verhaal van immense tragiek. Van verlaten worden, keer op keer. Misschien van weduwschap, van de dood die haar achtervolgde. Van weggestuurd worden omdat ze onvruchtbaar bleek. Van een wanhopige zoektocht naar bestaanszekerheid in een wereld waar een vrouw alleen, niets is. Deze vrouw draagt een geschiedenis van afwijzing, verlies en overleven met zich mee. De man bij wie ze nu is, trouwt haar niet eens meer; ze is handelswaar geworden, gedoogd maar niet geëerd. Ze is een overlever, getekend door de hardheid van het leven.\n\nJezus benoemt het. Niet om haar te beschamen, maar om haar te laten weten dat ze gekend is. Hij ziet haar. Hij ziet de pijn, de strijd, de overlevingsstrategieën. Hij ziet de 'vijf mannen' – en laten we eerlijk zijn, wij hebben ook onze 'vijf mannen'. Het zijn die dingen waar we onze zekerheid aan proberen te ontlenen, onze surrogaatgoden. Onze carrière die ons identiteit moet geven. Onze reputatie die onbesproken moet blijven. Onze gezondheid waar we krampachtig over waken. Onze spaarrekening die ons rust moet geven. Onze intellectuele capaciteiten waarmee we de wereld willen beheersen. We klampen ons eraan vast, hopend dat ze ons zullen redden, dat ze ons de liefde en de veiligheid zullen geven waar we naar smachten. Maar ze kunnen het niet. Het zijn bronnen die opdrogen, gebroken bakken die geen water houden, zoals de profeet Jeremia ooit zei. Jezus kijkt dwars door onze surrogaten heen. En het wonder is: Hij blijft zitten. Hij loopt niet weg nu Hij haar 'schande' kent. Hij veroordeelt niet. Hij biedt Zichzelf aan als de ware Bruidegom, de enige die de ziel werkelijk kan verzadigen.\n\nDe vrouw, geschrokken van deze intimiteit, probeert het gesprek nog even te verleggen naar veilig terrein: theologie. \"Onze vaderen aanbaden op deze berg, en jullie zeggen Jeruzalem.\" Het is de vlucht in de religieuze vorm, in de discussie over regels en plekken. Zolang we discussiëren over de juiste liturgie, of de juiste kerkorde, of de juiste ethische standpunten over actuele thema's, hoeven we het niet over ons eigen hart te hebben. Het is een rookgordijn. Maar Jezus gaat er dwars doorheen. \"Geloof me, vrouw...\" Hij kondigt een nieuwe tijd aan. De tijd van aanbidding in Geest en waarheid. God zit niet vast in de stenen van Jeruzalem. God zit niet vast op de berg Gerizim. God zit niet vast in de gebouwen van de Markuskerk of de Grote Kerk. God is Geest. Hij is dynamisch. Hij waait waarheen Hij wil. Hij zoekt geen mensen die de juiste geografische coördinaten hebben, maar mensen die transparant durven zijn. Mensen die hun maskers afleggen. Mensen die durven te bestaan voor Zijn aangezicht, met hun dorst, met hun verleden, met hun vragen, zonder de opsmuk van religieuze pretentie. \"In waarheid\" betekent hier: in openheid, zonder verborgen agenda, eerlijk over wie je bent en wat je nodig hebt.\n\n## De Kruik en de Stad\n\nEn dan gebeurt het. Het detail dat alles zegt, het keerpunt in het verhaal. Johannes schrijft: \"De vrouw liet haar kruik staan.\" Ziet u het voor u? Die aarden kruik (*hydria*). Het was het doel van haar reis. Het was haar kostbaarste bezit op dat moment, noodzakelijk voor haar overleven. Het was het instrument van haar dagelijkse arbeid. Het was ook het symbool van haar zorg, haar taak en haar last. Ze laat hem staan. Ze vergeet de reden waarom ze gekomen was, omdat ze een grotere reden heeft gevonden om te leven. De fysieke dorst is vergeten door de vreugde van de geestelijke vondst.\n\nZe rent terug naar de stad. Naar de mensen die ze eerst ontliep. Naar de blikken die ze vreesde. Ze wordt de eerste apostel, de eerste evangelist in het evangelie van Johannes. Een vrouw met een dubieuze reputatie wordt de boodschapper van de Messias. \"Kom mee! Er is iemand die alles van mij weet!\" roept ze tegen de mannen op het plein. Let op wat ze zegt. Ze zegt niet: \"Ik heb de theologie begrepen.\" Ze zegt niet: \"Ik ben nu een perfect mens, ik heb mijn leven op orde.\" Ze zegt: \"Ik ben gekend.\" Dat is de kern van het evangelie. Gekend zijn en toch geliefd. Doorzien zijn – tot op de bodem van je ziel, met al je donkere kantjes – en niet verworpen worden. Dat geeft vleugels. Dat breekt de sociale isolatie. De vrouw die als een eenzame schim naar de put kwam, keert terug als een leider die de hele stad op sleeptouw neemt. Haar schaamte is veranderd in een getuigenis. Haar verleden is niet weggepoetst, maar het is in een nieuw licht komen te staan. Het is het decor geworden waartegen de genade van Christus schittert. De mensen luisteren naar haar, niet om haar status, maar om de waarachtigheid van haar verandering.\n\nWat betekent dit voor ons, hier in Breda, op weg naar Biddag? Wij bidden woensdag voor gewas en arbeid. We bidden om zegen over ons werk, over onze economie, over de aarde. Maar deze tekst vraagt ons: vanuit welke houding bidden wij? Bidden we als mensen die krampachtig hun eigen kruiken vasthouden? Bidden we vanuit de angst dat we tekort zullen komen, vanuit de woestijn van het gemor? Of bidden we als mensen die de Bron hebben gevonden?\n\nIn de Grote Kerk van Breda zit een geheim. De enorme toren rust op houten palen die diep in de grond zitten. Die palen moeten constant onder water staan. Als het grondwaterpeil zakt, gaan ze rotten en stort de toren in. De stabiliteit van dat trotse monument, het symbool van onze stad, hangt af van een onzichtbare bron diep onder de oppervlakte. **Dit is geen bouwkundig detail, dit is een existentiële waarheid.** Zo is het ook met ons leven. **We zijn ten diepste afhankelijke wezens.** Onze stabiliteit, onze veerkracht, onze hoop hangt af van die verbinding met het Levende Water. Als we die verbinding verliezen, kunnen we aan de buitenkant nog heel wat lijken – succesvol, druk, belangrijk – maar van binnen beginnen de fundamenten te rotten. **Op Biddag erkennen we dat ons leven niet maakbaar is, maar dat we gedragen worden door een stroom die we zelf niet hebben aangelegd.**\n\nWij worden vandaag uitgenodigd om onze fundering te controleren. Waar rust uw leven op? Op de wisselkoersen van de wereld? Op de waardering van anderen? Of op de toezegging van Christus: \"Ik ben het\"? De naam van God, die aan Mozes werd geopenbaard als 'Ik zal er zijn', klinkt nu uit de mond van Jezus. Hij is de Rots die meereist. Hij is de Bron die opwelt. Hij is de aanwezigheid die de leegte vult.\n\n## Met Open Handen de Wereld In\n\n**Ik verkondig u vandaag:** er is levend water, gratis en voor niets. Laten we de moed hebben om onze kruiken te laten staan. De kruik van onze prestatiedrang. De kruik van ons gelijk. De kruik van onze vroomheid waarmee we ons onderscheiden van de ander. De kruik van onze angst voor de toekomst. Laat ze staan bij de Bron. **Wat betekent dat morgenochtend, als de week begint? Het betekent dat je die collega durft aan te spreken zonder je masker op te zetten. Het betekent dat je niet meteen naar je telefoon grijpt als je wakker wordt om je waarde te checken, maar eerst stil bent.** Je hebt je handen nodig om vrij te zijn. Je hebt je handen nodig om de ander te omhelzen. Je hebt je handen nodig om te ontvangen wat God wil geven.\n\nKijk naar de stad om ons heen. Breda is een stad vol dorstige mensen. Achter de gevels van Heusdenhout, in de studentenhuizen, in de zorginstellingen – overal is die roep om erkenning, om zin, om liefde. Wij zijn geroepen om, net als die vrouw, de stad in te gaan. Niet met een oordeel. Niet met een superieure waarheid die we als een steen naar anderen gooien. Maar met de uitnodiging: \"Kom en zie.\" Kom kijken naar de Man die mij kent en die mij liefheeft. Kom drinken van het water dat niets kost.\n\nMisschien denkt u: wie ben ik om dat te doen? Ik heb mijn twijfels. Ik heb mijn 'vijf mannen', mijn mislukkingen, mijn littekens. Juist dan bent u geschikt. God gebruikt geen perfecte mensen, want die bestaan niet. God gebruikt mensen die weten wat dorst is. Mensen die weten hoe het zand van de woestijn smaakt. Alleen zij kunnen geloofwaardig spreken over het Water.\n\nIn de geschiedenis van Breda kennen we het verhaal van het Turfschip. Een list om de stad te bevrijden. Soldaten verborgen onder de turf. Soms denken we dat we God ook zo de wereld in moeten smokkelen. Dat we het evangelie moeten verbergen onder een laagje gezelligheid of sociaal werk. Maar Jezus gebruikt geen list. Hij is radicaal open. Hij zegt: \"Geef Mij te drinken.\" Hij begint de relatie. Hij maakt Zichzelf present. Wij mogen die openheid overnemen. Geen verborgen agenda's. Gewoon mens zijn naast de ander. Luisteren. De dorst delen. En wijzen naar de Bron.\n\nWe gaan op weg naar Pasen. De weg gaat door de woestijn. Maar we gaan niet alleen. De Rots gaat met ons mee. Het water stroomt. De hoop beschaamt niet. God is in ons midden. Ja, Hij is werkelijk in ons midden. **Er is vreugde voor wie drinkt. Er is overvloed die nooit opdroogt.** Drink, en leef.",
     "_usage": {
-      "prompt_tokens": 160783,
-      "candidates_tokens": 7404,
-      "total_tokens": 169903
+      "prompt_tokens": 162495,
+      "candidates_tokens": 7399,
+      "total_tokens": 171673
     },
     "_metadata": {
       "type": "rewritten_sermon",
@@ -9028,7 +9139,7 @@
       "datum": "8 maart 2026",
       "bijbeltekst": "",
       "originele_woordental": 3868,
-      "herschreven_woordental": 4128
+      "herschreven_woordental": 4125
     }
   },
   "63_gastrosofie": {

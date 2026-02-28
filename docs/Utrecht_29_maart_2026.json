@@ -2247,383 +2247,367 @@
       {
         "nummer": 1,
         "naam": {
-          "voornaam": "Bram",
-          "achternaam": "van der Vlist"
+          "voornaam": "Thijs",
+          "achternaam": "van den Heuvel"
         },
-        "leeftijd": 22,
-        "kernschets": "Bram is een ambitieuze student Theoretische Natuurkunde aan de Universiteit Utrecht die worstelt met de ethische grenzen van technologie en de hoge prestatiedruk in de academische wereld. Hij zoekt in de Janskerkgemeente naar een vorm van intellectuele eerlijkheid die zijn wetenschappelijke wereldbeeld niet ontkent, maar wel verdiept.",
+        "leeftijd": 24,
+        "kernschets": "Thijs is een promovendus in de Theoretische Fysica die juist in de kerk geen behoefte heeft aan 'hip' of 'eigentijds'. Hij zoekt naar de onwrikbare structuur van de klassieke liturgie en de intellectuele eerlijkheid van de passie, als tegenwicht voor de vloeibare waarheden van zijn generatie.",
         "basisgegevens": {
-          "fysieke_verschijning": "Slank postuur, 1.88m lang, kort donkerblond haar dat vaak wat warrig zit. Hij draagt een bril met een dun metalen montuur en kleedt zich functioneel met hoodies en jeans.",
-          "woonwijk": "Ina Boudier-Bakkerlaan (IBB), Utrecht"
+          "fysieke_verschijning": "Mager postuur, een bril met een dun montuur, draagt vaak een donkerblauwe wollen trui en stevige wandelschoenen. Hij heeft een geconcentreerde, bijna gespannen blik.",
+          "woonwijk": "Tuinwijk, in een keurig onderhouden appartement dat hij deelt met een studiegenoot."
         },
         "relaties_sociaal": {
-          "woonsituatie": "Studentenkamer in een grootschalig studentencomplex, deelt keuken en badkamer met veertien huisgenoten.",
-          "relatiestatus": "Single, na een recente relatiebreuk die hem diep raakte.",
-          "kinderen": "Geen",
-          "familie_relatie": "Goede maar afstandelijke band met zijn ouders in Zwolle; hij ervaart een onuitgesproken druk om de eerste in de familie te zijn die promoveert.",
-          "sociaal_netwerk": "Actief lid van een studievereniging, maar de contacten blijven vaak beperkt tot studie-inhoudelijke discussies of oppervlakkig drinken in de stad; hij ervaart een sluimerende eenzaamheid te midden van de massa."
+          "woonsituatie": "Samenwonend met een vriend (huisgenoot), maar voert een zeer zelfstandig leven.",
+          "relatiestatus": "Alleenstaand; hij geeft momenteel prioriteit aan zijn onderzoek en zijn spirituele discipline.",
+          "kinderen": null,
+          "familie_relatie": "Komt uit een nuchter gezin in Gelderland; zijn ouders vinden zijn kerkgang 'bijzonder' maar respecteren het.",
+          "sociaal_netwerk": "Beperkt tot een kring van medepromovendi op het Science Park en een kleine groep binnen de Janskerk die de vroege ochtendgebeden bezoekt."
         },
         "opleiding_werk": {
-          "opleiding": "Masterstudent Theoretische Natuurkunde, Universiteit Utrecht.",
-          "intelligentie_leerstijl": "Zeer theoretisch ingesteld, analytisch sterk, leert door abstracte modellen te bouwen en deze kritisch te toetsen.",
-          "huidige_werk": "Student-assistent bij de faculteit Bètawetenschappen, geeft werkcolleges aan eerstejaars.",
+          "opleiding": "WO (Universiteit Utrecht), momenteel bezig met een PhD-traject.",
+          "intelligentie_leerstijl": "Analytisch en abstract; hij leert door diepgaande tekststudie en waardeert logische consistentie.",
+          "huidige_werk": "Onderzoeker bij de faculteit Bètawetenschappen.",
           "voormalig_werk": null,
-          "financiele_situatie": "Afhankelijk van studiefinanciering en een kleine bijbaan; de hoge kamerhuur en inflatie zorgen voor constante druk om extra te werken ten koste van zijn studie."
+          "financiele_situatie": "Stabiel inkomen als promovendus; hij leeft sober en geeft weinig om materiële status."
         },
         "gezondheid": {
-          "lichamelijk": "Over het algemeen gezond, maar kampt met chronische nekklachten door lange uren achter de laptop.",
-          "mentaal": "Hoge mate van faalangst en periodes van somberheid; hij bezoekt af en toe een studentenpsycholoog voor stressmanagement.",
-          "leefstijl": "Onregelmatig slaappatroon, leeft op kant-en-klaarmaaltijden en koffie, beweegt alleen door de stad te doorkruisen op zijn fiets."
+          "lichamelijk": "Gezond, fietst dagelijks naar de Uithof.",
+          "mentaal": "Stabiel, maar hij legt zichzelf een hoge intellectuele druk op om 'alles te doorgronden'.",
+          "leefstijl": "Gedisciplineerd; hij begint zijn dag met stilte en eindigt met een podcast over filosofie."
         },
-        "traumas_zorgen": {
-          "verleden": [
-            "De plotselinge dood van een studievriend door suïcide twee jaar geleden",
-            "De scheiding van zijn ouders op de middelbare school"
+        "levensgeschiedenis_vragen": {
+          "wat_heeft_gevormd": [
+            "De ontdekking dat wetenschap niet alle existentiële vragen beantwoordt",
+            "Een reis naar de abdij van Solesmes waar hij de kracht van het ritueel ervoer"
           ],
-          "heden": [
-            "De snelle opkomst van AI in 2026 en de vraag of zijn specialistische kennis straks nog waarde heeft",
-            "De onmogelijke woningmarkt in Utrecht voor starters"
+          "wat_speelt_nu": [
+            "De zoektocht naar een morele standaard die niet onderhevig is aan politieke trends",
+            "Het verlangen om de 'dwaasheid' van het geloof te rijmen met zijn wetenschappelijke werk"
           ],
-          "onverwerkt": "Het gevoel dat hij alleen gewaardeerd wordt om zijn prestaties en niet om wie hij is."
+          "onuitgesproken": "Een diepe behoefte aan autoriteit en traditie in een wereld die alles relativeert."
         },
         "geloof_spiritualiteit": {
-          "kerkelijke_achtergrond": "Gedoopt in de Gereformeerde Kerk, maar op zijn zestiende gestopt met het bezoeken van diensten tot hij in Utrecht de Janskerk ontdekte.",
-          "huidige_betrokkenheid": "Bezoekt gemiddeld twee keer per maand de dienst, vaak aangetrokken door de esthetiek en de intellectuele scherpte.",
-          "geloofsbeleving": "Ziet God als een 'Grote Onbekende' of een kosmische kracht van gerechtigheid; hij vindt troost in de liturgie die de chaos van de week ordent.",
-          "geloofstaal": "Heeft een voorkeur voor filosofische en existentiële termen; allergisch voor dogmatische zekerheden en vroom jargon.",
-          "twijfels_vragen": [
-            "Hoe kan een goddelijke logica bestaan in een universum dat geregeerd wordt door toeval en entropie?",
-            "Is de kerk alleen een cultureel relict of een bron van werkelijke transformatie?"
+          "kerkelijke_background": "Niet-kerkelijk opgevoed, tijdens zijn studententijd in Utrecht gefascineerd geraakt door de Janskerk.",
+          "huidige_betrokkenheid": "Trouwe bezoeker, overweegt om volgend jaar belijdenis te doen.",
+          "geloofsbeleving": "Objectief en liturgisch; hij vindt God in de schoonheid van de woorden en de orde van de dienst.",
+          "geloofstaal": "Houdt van klassieke termen; hij begrijpt de Griekse en Latijnse wortels van de theologie.",
+          "geloofsvragen": [
+            "Hoe kan de zelfontlediging van Christus een kosmische waarheid zijn?"
           ],
-          "spirituele_behoeften": "Hij zoekt naar een taal die zijn twijfel serieus neemt en hem uitdaagt om verantwoordelijkheid te nemen voor zijn handelen."
+          "spirituele_verwachting": "Een preek die de ratio uitdaagt en de diepte van de bijbeltekst niet nivelleert."
         },
         "hobbys_interesses": {
           "vrijetijd": [
-            "Schaken op hoog niveau",
-            "Het luisteren naar complexe jazz en klassieke muziek",
-            "Hardlopen langs de Vecht om zijn hoofd leeg te maken"
+            "Schaken",
+            "Lezen van klassieke literatuur"
           ],
           "media": [
-            "De Correspondent",
-            "Wetenschappelijke podcasts (bijv. Lex Fridman)",
-            "Reddit voor vakspecifieke discussies"
+            "NRC Handelsblad",
+            "The Economist",
+            "Specialistische wetenschappelijke journals"
           ],
           "verenigingen": [
-            "Utrechtse Studenten Schaakvereniging",
-            "ESU (Ecumenische Studentengemeente Utrecht)"
+            "Lid van een landelijke vereniging voor christelijke academici"
           ]
         },
         "aansluiting_schriftlezingen": {
-          "wat_raakt": "Het verraad van Judas uit Matteüs 26 raakt hem diep; het personifieert de angst om de verkeerde keuzes te maken uit pragmatisme of financieel gewin.",
-          "wat_afstoot": "De Christushymne uit Filippenzen over het buigen van 'elke knie' ervaart hij als autoritair en strijdig met zijn behoefte aan autonomie.",
-          "existentiele_vraag": "Wat blijft er over van mijn integriteit als ik onder druk kom te staan om mee te gaan met de massa?"
+          "wat_raakt": "De Christushymne uit Filippenzen 2 spreekt zijn verlangen naar een objectieve orde aan.",
+          "wat_afstoot": "De emotionele rauwheid van Psalm 22 vindt hij lastig; het doorbreekt zijn intellectuele beheersing.",
+          "existentiele_vraag": "Wat betekent het om status op te geven in een omgeving waar intellectueel succes alles is?"
         }
       },
       {
         "nummer": 2,
         "naam": {
-          "voornaam": "Sophie",
-          "achternaam": "Dijkstra-de Beer"
+          "voornaam": "Mark",
+          "achternaam": "de Jong"
         },
-        "leeftijd": 39,
-        "kernschets": "Sophie is een gedreven beleidsadviseur bij de Gemeente Utrecht die de balans probeert te vinden tussen een veeleisende carrière, de zorg voor twee jonge kinderen en haar verlangen naar maatschappelijke impact. De Janskerkgemeente is voor haar een plek van noodzakelijke verstilling in een leven dat altijd 'aan' staat.",
+        "leeftijd": 48,
+        "kernschets": "Mark is een senior HR-manager bij de Rabobank die vier dagen per week werkt om de zorg voor zijn demente vader en zijn twee tienerdochters te combineren. Hij is geen 'zoeker' maar een 'drager', die in de kerk komt voor een moment van collectieve stilte en een moreel kompas dat verder reikt dan de volgende kwartaalcijfers.",
         "basisgegevens": {
-          "fysieke_verschijning": "1.72m, atletisch gebouwd, halflang bruin haar meestal in een praktische staart. Ze draagt vaak stijlvolle maar zakelijke kleding die past bij haar functie in het stadskantoor.",
-          "woonwijk": "Wittevrouwen, Utrecht"
+          "fysieke_verschijning": "Sportief gebouwd, kort grijs haar, draagt vaak een chino en een overhemd zonder das. Hij oogt fit maar zijn ogen verraden een zekere vermoeidheid.",
+          "woonwijk": "Wittevrouwen, in een karakteristiek maar krap herenhuis."
         },
         "relaties_sociaal": {
-          "woonsituatie": "Samenwonend in een gerenoveerde tussenwoning uit 1900.",
-          "relatiestatus": "Twaalf jaar getrouwd met Mark, een architect.",
-          "kinderen": "Twee kinderen (6 en 8 jaar) die op de nabijgelegen Jenaplanschool zitten.",
-          "familie_relatie": "Zorgt intensief voor haar hulpbehoevende moeder die nog in Zeist woont.",
-          "sociaal_netwerk": "Groot netwerk van andere jonge gezinnen in de wijk, veel contacten via de hockeyclub en schoolplein; de vriendschappen zijn warm maar vaak functioneel gericht op logistiek."
+          "woonsituatie": "Getrouwd, woont met zijn vrouw en twee dochters (14 en 16 jaar).",
+          "relatiestatus": "Stabiel huwelijk, hoewel de druk van de 'sandwich-generatie' hun relatie onder spanning zet.",
+          "kinderen": "Twee puberdochters die kritische vragen stellen over alles, inclusief de kerk.",
+          "familie_relatie": "Mantelzorger voor zijn vader in Overvecht; de relatie is liefdevol maar zwaar door het verlies aan communicatie.",
+          "sociaal_netwerk": "Groot netwerk via werk en de hockeyclub van zijn kinderen, maar weinig tijd voor diepe vriendschappen."
         },
         "opleiding_werk": {
-          "opleiding": "Master Bestuurskunde, Erasmus Universiteit Rotterdam.",
-          "intelligentie_leerstijl": "Strategisch denker, praktisch ingesteld, sterk in procesmanagement en communicatie.",
-          "huidige_werk": "Senior Beleidsadviseur Duurzaamheid en Energietransitie bij de Gemeente Utrecht; ze ervaart een enorme werkdruk door de politieke ambities van het college.",
-          "voormalig_werk": "Trainee bij een landelijk adviesbureau.",
-          "financiele_situatie": "Comfortabel gezinsinkomen, maar de hoge hypotheek en kosten voor kinderopvang maken hen kwetsbaar voor economische schommelingen."
+          "opleiding": "HBO Personeel & Arbeid, aangevuld met diverse managementtrainingen.",
+          "intelligentie_leerstijl": "Praktisch en sociaal; hij leert door te doen en door te luisteren naar de ervaringen van anderen.",
+          "huidige_werk": "Strategisch HR-adviseur in de financiële sector.",
+          "voormalig_werk": null,
+          "financiele_situatie": "Bovenmodaal inkomen, maar hoge lasten door de hypotheek in Utrecht-Oost en studiekosten."
         },
         "gezondheid": {
-          "lichamelijk": "Goede basisconditie, maar kampt met chronisch slaapgebrek en spanningshoofdpijn.",
-          "mentaal": "Zit tegen een burn-out aan; ze voelt zich verantwoordelijk voor alles en iedereen en cijfert haar eigen behoeften vaak weg.",
-          "leefstijl": "Vegetariër uit overtuiging, doet aan yoga, drinkt te veel koffie om de dag door te komen."
+          "lichamelijk": "Loopt drie keer per week hard rond de Maarsseveense Plassen om zijn hoofd leeg te maken.",
+          "mentaal": "Veerkrachtig, maar hij balanceert op de grens van overbelasting door de vele zorgtaken.",
+          "leefstijl": "Actief en efficiënt; hij moet zijn dagen minutieus plannen."
         },
-        "traumas_zorgen": {
-          "verleden": [
-            "Een miskraam tussen haar eerste en tweede kind die ze nooit echt heeft verwerkt",
-            "De vroege dood van haar vader aan een hartstilstand"
+        "levensgeschiedenis_vragen": {
+          "wat_heeft_gevormd": [
+            "De vroege dood van zijn moeder",
+            "De promotie naar een directiefunctie die hij uiteindelijk weigerde omwille van zijn gezin"
           ],
-          "heden": [
-            "De klimaatcrisis en de wereld waarin haar kinderen opgroeien",
-            "De polarisatie in de Utrechtse politiek die haar werk steeds lastiger maakt"
+          "wat_speelt_nu": [
+            "De aftakeling van zijn vader die hem confronteert met zijn eigen eindigheid",
+            "De behoefte om integer te blijven in een harde zakelijke omgeving"
           ],
-          "onverwerkt": "Het schuldgevoel dat ze noch op haar werk, noch thuis de kwaliteit levert die ze van zichzelf eist."
+          "onuitgesproken": "Een gevoel van eenzaamheid in de verantwoordelijkheid die hij voor zoveel mensen draagt."
         },
         "geloof_spiritualiteit": {
-          "kerkelijke_achtergrond": "Vrijzinnig protestants opgevoed, was een tijd lang zoekend in oosterse spiritualiteit voordat ze terugkeerde naar de christelijke traditie via de liturgie.",
-          "huidige_betrokkenheid": "Trouw bezoeker van de zondagse diensten, actief in de werkgroep 'Kerk en Wereld'.",
-          "geloofsbeleving": "Ervaart God vooral in de stilte tussen de woorden en in de oproep tot naastenliefde; ze vindt de rituelen essentieel voor haar geestelijke gezondheid.",
-          "geloofstaal": "Resoneert met termen als 'verbondenheid', 'kwetsbaarheid' en 'rentmeesterschap'.",
-          "twijfels_vragen": [
-            "Heeft mijn inzet voor een betere wereld werkelijk zin of is het dweilen met de kraan open?",
-            "Hoe geef ik mijn kinderen een moreel kompas mee zonder hen te belasten met dogma's?"
+          "kerkelijke_background": "Gereformeerd opgevoed, maar via zijn vrouw in de Janskerkgemeente terechtgekomen.",
+          "huidige_betrokkenheid": "Regelmatige bezoeker, helpt incidenteel bij de organisatie van diaconale projecten.",
+          "geloofsbeleving": "Geloof als een 'dienst', een manier van in de wereld staan die gericht is op de naaste.",
+          "geloofstaal": "Ethisch en aards; hij heeft weinig met abstracte mystiek.",
+          "geloofsvragen": [
+            "Hoe hou ik het vol om te dienen zonder zelf op te branden?"
           ],
-          "spirituele_behoeften": "Ze zoekt naar erkenning van haar vermoeidheid en een perspectief dat verder reikt dan de volgende beleidsnotitie of schoolvakantie."
+          "spirituele_verwachting": "Handvatten voor een dienend leven en erkenning van de zwaarte van zorg."
         },
         "hobbys_interesses": {
           "vrijetijd": [
-            "Tuinieren in haar kleine stadstuin",
-            "Bezoeken van het Louis Hartlooper Complex voor arthouse films",
-            "Wandelen op de Utrechtse Heuvelrug"
+            "Hardlopen",
+            "Koken voor vrienden"
           ],
           "media": [
-            "NRC Handelsblad",
-            "Podcasts over psychologie en zelfontwikkeling",
-            "Instagram voor inspiratie op het gebied van duurzaam leven"
+            "Het Financieele Dagblad",
+            "Podcasts over psychologie en leiderschap"
           ],
           "verenigingen": [
-            "Lid van een leesclub in de buurt",
-            "Vrijwilliger bij een lokaal buurtinitiatief voor groenonderhoud"
+            "Vrijwilliger bij de Tussenvoorziening in Utrecht"
           ]
         },
         "aansluiting_schriftlezingen": {
-          "wat_raakt": "De passage uit Filippenzen over het 'afstand doen van positie' raakt haar ambivalent; het is een verlangen naar bevrijding van status, maar ook een beangstigende gedachte in een maatschappij die draait om succes.",
-          "wat_afstoot": "De fysieke details van het lijden in de passie van Matteüs vindt ze soms te zwaar en confronterend voor haar al overbelaste gemoed.",
-          "existentiele_vraag": "Wat betekent 'dienen' als ik zelf al het gevoel heb dat ik opgebrand raak?"
+          "wat_raakt": "De tekst uit Jesaja 50 over het oor dat elke ochtend gewekt wordt om te luisteren, resoneert met zijn dagelijkse discipline.",
+          "wat_afstoot": "De passiviteit van Jezus voor Pilatus; in zijn werk moet hij juist altijd handelend optreden.",
+          "existentiele_vraag": "Wat betekent standvastigheid als er geen direct resultaat of applaus is?"
         }
       },
       {
         "nummer": 3,
         "naam": {
-          "voornaam": "Hendrik-Jan",
-          "achternaam": "Bisschop"
+          "voornaam": "Elena",
+          "achternaam": "Rodriguez"
         },
-        "leeftijd": 62,
-        "kernschets": "Hendrik-Jan is een gepassioneerd docent geschiedenis aan een Utrechts gymnasium die de traditie van de Janskerkgemeente ziet als een cruciaal tegenwicht tegen de vluchtigheid van de moderne tijd. Hij combineert een diepe liefde voor klassieke liturgie met een scherpe, sociaal-kritische blik op de huidige machtsverhoudingen.",
+        "leeftijd": 35,
+        "kernschets": "Elena is een succesvolle advocate in de tech-sector die oprecht gelukkig is en geen actuele crisis doormaakt. Ze bezoekt de Janskerk omdat ze de esthetiek van de liturgie waardeert en op zoek is naar een morele scherpte die haar helpt haar professionele macht verantwoord te gebruiken.",
         "basisgegevens": {
-          "fysieke_verschijning": "1.80m, gezet postuur, een karakteristieke grijze baard en dikke wenkbrauwen. Hij draagt altijd een ribfluwelen colbert en heeft een sonore stem die gewend is om een klaslokaal te vullen.",
-          "woonwijk": "Oudwijk, Utrecht"
+          "fysieke_verschijning": "Stijlvol en verzorgd, draagt merkkleding die zakelijk en toch elegant is. Ze heeft een open, zelfverzekerde uitstraling.",
+          "woonwijk": "Binnenstad, in een prachtig gerestaureerde werfkelder aan de Oudegracht."
         },
         "relaties_sociaal": {
-          "woonsituatie": "Eigenaar van een ruim herenhuis vol boeken.",
-          "relatiestatus": "Gescheiden sinds vijf jaar, leeft nu alleen.",
-          "kinderen": "Drie volwassen kinderen die in Amsterdam en Berlijn wonen; hij ziet hen minder vaak dan hem lief is.",
-          "familie_relatie": "Zijn broers en zussen zijn grotendeels van het geloof afgevallen, wat hem een gevoel van spirituele eenzaamheid geeft binnen de familie.",
-          "sociaal_netwerk": "Heeft een vaste kring van intellectuele vrienden waarmee hij regelmatig dineert in de Utrechtse binnenstad; hij is een bekende verschijning in de lokale boekhandel."
+          "woonsituatie": "Woont samen met haar partner, een architect.",
+          "relatiestatus": "Gelukkig ongehuwd samenwonend; zij en haar partner hebben bewust geen kinderen.",
+          "kinderen": null,
+          "familie_relatie": "Heeft een warme band met haar Spaanse familie, die de kerk als cultureel erfgoed ziet.",
+          "sociaal_netwerk": "Internationaal en kosmopolitisch; veel vrienden in de creatieve en juridische top van Utrecht."
         },
         "opleiding_werk": {
-          "opleiding": "Doctoraal Geschiedenis en Klassieke Talen, Universiteit Utrecht.",
-          "intelligentie_leerstijl": "Historisch-kritisch, verbaal zeer sterk, waardeert gelaagdheid en ironie.",
-          "huidige_werk": "Leraar Geschiedenis; hij geniet van de interactie met zijn leerlingen, maar heeft moeite met de toenemende digitalisering en administratieve druk in het onderwijs.",
-          "voormalig_werk": null,
-          "financiele_situatie": "Stabiel inkomen, bouwt een goed pensioen op; hij geeft veel uit aan boeken, reizen en cultuur."
+          "opleiding": "WO Rechten, gespecialiseerd in intellectueel eigendom en AI.",
+          "intelligentie_leerstijl": "Snel en intuïtief; zij begrijpt complexe systemen en ziet patronen.",
+          "huidige_werk": "Partner bij een internationaal advocatenkantoor met een vestiging in Utrecht.",
+          "voormalig_werk": "Gewerkt in Londen en Brussel.",
+          "financiele_situatie": "Zeer welvarend; ze geniet van de luxe die haar werk haar biedt."
         },
         "gezondheid": {
-          "lichamelijk": "Heeft beginnende suikerziekte en kampt met overgewicht; hij zou meer moeten bewegen maar vindt de sportschool vreselijk.",
-          "mentaal": "Lijdt aan een milde vorm van melancholie over het 'verlies van de cultuur'; hij voelt zich soms een vreemdeling in zijn eigen tijd.",
-          "leefstijl": "Geniet van goed eten en een goed glas wijn, rookt incidenteel een pijp in zijn studeerkamer."
+          "lichamelijk": "Uitstekend, doet aan yoga en bezoekt regelmatig een personal trainer.",
+          "mentaal": "Zeer goed; ze ervaart haar werkdruk als een positieve uitdaging en heeft een gezonde balans.",
+          "leefstijl": "Geniet van het goede leven: musea, goede restaurants en verre reizen."
         },
-        "traumas_zorgen": {
-          "verleden": [
-            "De bittere vechtscheiding die hem financieel en emotioneel heeft uitgeput",
-            "Het verlies van zijn favoriete broer aan kanker op jonge leeftijd"
+        "levensgeschiedenis_vragen": {
+          "wat_heeft_gevormd": [
+            "Haar internationale carrière die haar blik op de wereld heeft verbreed",
+            "De succesvolle afwikkeling van een grote juridische strijd die haar status bevestigde"
           ],
-          "heden": [
-            "De afnemende historische kennis bij de jongere generaties",
-            "De opkomst van populisme en de uitholling van de democratie in Nederland rond 2026"
+          "wat_speelt_nu": [
+            "De ethische vraagstukken rondom de macht van technologie",
+            "Het verlangen naar een betekenis die haar materiële succes overstijgt"
           ],
-          "onverwerkt": "Het verdriet dat hij zijn kinderen niet de stabiliteit van een gezin heeft kunnen bieden."
+          "onuitgesproken": "Een lichte angst dat haar succes haar blind maakt voor de noden van de stad."
         },
         "geloof_spiritualiteit": {
-          "kerkelijke_achtergrond": "Opgegroeid in de confessionele traditie van de Hervormde Kerk, maar via zijn studie en oecumenische contacten in de Janskerkgemeente terechtgekomen.",
-          "huidige_betrokkenheid": "Oud-ouderling, nog steeds betrokken bij de liturgische commissie en leidt incidenteel een bijbelstudiegroep.",
-          "geloofsbeleving": "Zijn geloof is diep geworteld in de geschiedenis en de teksten; hij vindt God in de schoonheid van het woord en de rechtvaardigheid van de profeten.",
-          "geloofstaal": "Houdt van de klassieke Statenvertaling-poëzie maar waardeert de NBV21 voor haar accuratesse; hij gebruikt vaak theologische begrippen als 'gerechtigheid' en 'verbond'.",
-          "twijfels_vragen": [
-            "Is de kerk nog in staat om een werkelijk tegen-verhaal te bieden aan de consumptiemaatschappij?",
-            "Wat blijft er van mijn geloof over als ik de ratio volledig laat spreken?"
+          "kerkelijke_background": "Rooms-katholiek opgevoed in een liberaal milieu, aangetrokken door de oecumenische openheid van de Janskerk.",
+          "huidige_betrokkenheid": "Bezoekt de diensten ongeveer twee keer per maand.",
+          "geloofsbeleving": "Esthetisch en reflectief; de kerk is een plek voor intellectuele heroriëntatie.",
+          "geloofstaal": "Modern en filosofisch; zij spreekt over 'transformatie' en 'integriteit'.",
+          "geloofsvragen": [
+            "Hoe verhoudt de radicale nederigheid van Christus zich tot professioneel succes?"
           ],
-          "spirituele_behoeften": "Hij zoekt intellectuele voeding en een liturgie die de ernst van het menselijk tekort niet uit de weg gaat."
+          "spirituele_verwachting": "Een preek die haar intellectueel prikkelt en haar uitdaagt om haar invloed ten goede aan te wenden."
         },
         "hobbys_interesses": {
           "vrijetijd": [
-            "Bezoeken van historische locaties in Europa",
-            "Studeren van de Latijnse kerkvaders",
-            "Klassieke muziekconcerten in TivoliVredenburg"
+            "Verzamelen van moderne kunst",
+            "Zeilen"
           ],
           "media": [
-            "Trouw (vooral de bijlage Letter & Geest)",
-            "VPRO gids en programma's",
-            "Duitstalige kranten zoals Die Zeit"
+            "Vogue Business",
+            "The New York Times",
+            "Podcasts van de Correspondent"
           ],
           "verenigingen": [
-            "Lid van de Historische Vereniging Utrecht",
-            "Betrokken bij een platform voor interreligieuze dialoog"
+            "Lid van een netwerk voor vrouwelijke leiders in Utrecht"
           ]
         },
         "aansluiting_schriftlezingen": {
-          "wat_raakt": "De lijdende dienaar uit Jesaja 50 die zijn gezicht maakt 'als een rots' spreekt hem aan als een symbool van standvastigheid in een tijd van morele vloeibaarheid.",
-          "wat_afstoot": "De volkswoede in de passie confronteert hem met zijn eigen minachting voor de 'massa', wat hem ongemakkelijk maakt over zijn eigen elitaire houding.",
-          "existentiele_vraag": "Hoe blijf ik trouw aan de waarheid als de meerderheid een andere kant op rent?"
+          "wat_raakt": "Het contrast tussen de macht van Pilatus en de waardigheid van Jezus fascineert haar vanuit haar juridische achtergrond.",
+          "wat_afstoot": "De nadruk op 'lijden' als een deugd; zij gelooft in kracht en zelfbeschikking.",
+          "existentiele_vraag": "Wat betekent 'kenosis' (zelfontlediging) voor iemand die gewend is om ruimte in te nemen?"
         }
       },
       {
         "nummer": 4,
         "naam": {
-          "voornaam": "Johanna",
-          "achternaam": "Westerveld"
+          "voornaam": "Hanneke",
+          "achternaam": "van Vliet"
         },
-        "leeftijd": 79,
-        "kernschets": "Johanna is een vitale weduwe en voormalig verpleegkundige die al veertig jaar deel uitmaakt van de Janskerkgemeente. Voor haar is de kerk een familie waar ze zowel troost vindt voor haar eenzaamheid als een plek om haar resterende energie in te zetten voor anderen.",
+        "leeftijd": 72,
+        "kernschets": "Hanneke is een voormalig gemeenteraadslid voor GroenLinks die weigert om 'rustig' oud te worden. Ze is digitaal zeer vaardig en runt een project voor digitale geletterdheid onder vluchtelingen; ze zoekt in de preek niet naar troost, maar naar een profetische scherpte die haar activisme voedt.",
         "basisgegevens": {
-          "fysieke_verschijning": "1.60m, tenger maar kwiek, zilvergrijs haar in een kort model. Ze draagt altijd een kleurrijke sjaal en heeft vriendelijke ogen achter een modieuze bril.",
-          "woonwijk": "Wittevrouwen/Buiten Wittevrouwen, Utrecht"
+          "fysieke_verschijning": "Kleurrijke kleding, vaak een opvallende sjaal, kortgeknipt wit haar en een kwieke tred. Ze heeft altijd haar iPad bij de hand.",
+          "woonwijk": "Hoograven, in een energiezuinige seniorenwoning."
         },
         "relaties_sociaal": {
-          "woonsituatie": "Woont zelfstandig in een appartement met lift, vlakbij het Wilhelminapark.",
-          "relatiestatus": "Weduwe sinds acht jaar; ze mist haar man dagelijks.",
-          "kinderen": "Geen eigen kinderen, maar een zeer hechte band met haar neefjes en nichtjes die haar als een tweede moeder beschouwen.",
-          "familie_relatie": "De laatste van haar generatie in de familie; ze voelt de verantwoordelijkheid om de familieverhalen levend te houden.",
-          "sociaal_netwerk": "Zeer actief in de wijk; ze is de 'spil' van haar flatgebouw en kent alle buren. Ze drinkt wekelijks koffie met een groepje andere weduwen uit de kerk."
+          "woonsituatie": "Weduwe, woont zelfstandig en geniet van haar autonomie.",
+          "relatiestatus": "Alleenstaand na het overlijden van haar man vijf jaar geleden; ze heeft een rijk sociaal leven.",
+          "kinderen": "Drie volwassen kinderen die over heel Nederland verspreid wonen; ze skypet wekelijks met haar kleinkinderen.",
+          "familie_relatie": "De spil in de familie; zij organiseert de jaarlijkse familiedagen.",
+          "sociaal_netwerk": "Zeer breed; van de politieke arena tot de buurtmoestuin in Hoograven."
         },
         "opleiding_werk": {
-          "opleiding": "Inservice-opleiding tot verpleegkundige (destijds A-verpleegkundige).",
-          "intelligentie_leerstijl": "Praktisch wijs, sociaal intelligent, leert door te doen en door te luisteren naar de levensverhalen van anderen.",
-          "huidige_werk": "Gepensioneerd, maar werkt als vrijwilliger bij de Tussenvoorziening waar ze soep deelt met daklozen.",
-          "voormalig_werk": "Hoofdverpleegkundige in het voormalige AZU (nu UMC Utrecht).",
-          "financiele_situatie": "Bescheiden maar toereikend pensioen; ze leeft zuinig en geeft graag aan goede doelen."
+          "opleiding": "WO Sociale Wetenschappen.",
+          "intelligentie_leerstijl": "Sociaal en politiek; zij begrijpt machtsverhoudingen en hoe groepen functioneren.",
+          "huidige_werk": "Gepensioneerd, maar actief als vrijwilligster en bestuurslid van diverse stichtingen.",
+          "voormalig_werk": "Beleidsambtenaar en later politicus in Utrecht.",
+          "financiele_situatie": "Goed pensioen, deelt haar middelen gul met organisaties die ze ondersteunt."
         },
         "gezondheid": {
-          "lichamelijk": "Lijdt aan artrose in haar handen en knieën, maar weigert stil te zitten; ze gebruikt een wandelstok voor langere afstanden.",
-          "mentaal": "Heeft een bewonderenswaardige veerkracht, hoewel de periodes van eenzaamheid in de avonduren toenemen.",
-          "leefstijl": "Loopt elke dag een blokje om, eet veel fruit en groente, drinkt elke dag één kopje thee met een koekje om vier uur."
+          "lichamelijk": "Vitaal, hoewel ze af en toe last heeft van haar gewrichten; ze zweert bij haar dagelijkse wandeling langs het kanaal.",
+          "mentaal": "Scherp en strijdbaar; ze heeft weinig geduld voor passiviteit.",
+          "leefstijl": "Maatschappelijk betrokken; haar agenda zit altijd vol."
         },
-        "traumas_zorgen": {
-          "verleden": [
-            "De lange ziekteperiode van haar man waarin zij hem tot het einde toe heeft verzorgd",
-            "Het meemaken van de grote veranderingen in de zorg die zij als een verschraling van de menselijkheid heeft ervaren"
+        "levensgeschiedenis_vragen": {
+          "wat_heeft_gevormd": [
+            "De vrouwenbeweging in de jaren '70",
+            "De opkomst en ondergang van ideologieën in de Utrechtse politiek"
           ],
-          "heden": [
-            "De digitalisering van de samenleving waardoor zij zich soms buitengesloten voelt (bijv. bankzaken, parkeerapps)",
-            "De angst om haar zelfstandigheid te verliezen en in een verzorgingshuis terecht te komen"
+          "wat_speelt_nu": [
+            "De zorg over de polarisatie in de samenleving",
+            "De wens om een rechtvaardige wereld achter te laten voor haar kleinkinderen"
           ],
-          "onverwerkt": "De onvervulde kinderwens die altijd een stille pijn is gebleven in haar huwelijk."
+          "onuitgesproken": "De eenzaamheid die ze soms voelt als de avond valt en haar huis stil is."
         },
         "geloof_spiritualiteit": {
-          "kerkelijke_achtergrond": "Traditioneel hervormd opgevoed, maar in de jaren '70 meegegaan in de oecumenische vernieuwing van de Janskerk.",
-          "huidige_betrokkenheid": "Zit in de bezoekdienst, helpt bij het koffieschenken na de dienst en is altijd aanwezig bij de vespers in de veertigdagentijd.",
-          "geloofsbeleving": "Haar geloof is een rustig vertrouwen dat ze nooit alleen is; God is voor haar de 'Herder' die haar door de dalen van het leven heeft geleid.",
-          "geloofstaal": "Gebruikt klassieke termen als 'overgave', 'vertrouwen' en 'zegen'; ze houdt van de psalmen op de oude melodieën.",
-          "twijfels_vragen": [
-            "Waarom is er zoveel lijden in de wereld terwijl God liefde is?",
-            "Zal ik mijn geliefde terugzien na de dood?"
+          "kerkelijke_background": "Vrijzinnig protestants, altijd betrokken geweest bij de maatschappelijke kant van de kerk.",
+          "huidige_betrokkenheid": "Kernlid; ze zit in de werkgroep Kerk & Samenleving.",
+          "geloofsbeleving": "Geloof als een roeping tot gerechtigheid; Jezus is voor haar de ultieme bevrijder.",
+          "geloofstaal": "Politiek en profetisch; ze spreekt over 'solidariteit' en 'de minste der broeders'.",
+          "geloofsvragen": [
+            "Hoe blijven we hopen in een wereld die steeds harder lijkt te worden?"
           ],
-          "spirituele_behoeften": "Zij zoekt troost, nabijheid en de bevestiging dat haar leven, ook op deze leeftijd, nog steeds van waarde is."
+          "spirituele_verwachting": "Een preek die haar wakkerschudt en verbindt met de wereldwijde strijd om recht."
         },
         "hobbys_interesses": {
           "vrijetijd": [
-            "Breien voor een goed doel",
-            "Luisteren naar radio 4 (klassieke muziek)",
-            "Lezen van historische romans"
+            "Tuinieren",
+            "Het volgen van politieke debatten"
           ],
           "media": [
-            "Het lokale Utrechtse krantje",
-            "De NCRV-gids",
-            "Lineaire televisie (journaal, natuurdocumentaires)"
+            "De Volkskrant",
+            "Nieuwsuur",
+            "Twitter/X voor politiek nieuws"
           ],
           "verenigingen": [
-            "Vrijwilligersgroep voor terminale zorg",
-            "Koor voor senioren"
+            "Lid van Amnesty International en Milieudefensie"
           ]
         },
         "aansluiting_schriftlezingen": {
-          "wat_raakt": "Psalm 22 ('Mijn God, mijn God, waarom hebt u mij verlaten') resoneert met haar eigen momenten van diepe eenzaamheid na de dood van haar man.",
-          "wat_afstoot": "De politieke duiding van de intocht vindt ze soms lastig; ze geeft de voorkeur aan de persoonlijke, spirituele betekenis van Jezus' lijden.",
-          "existentiele_vraag": "Hoe hou ik vast aan het vertrouwen als de dood steeds dichterbij komt?"
+          "wat_raakt": "De wispelturigheid van de massa in het lijdensverhaal herkent ze uit haar politieke carrière.",
+          "wat_afstoot": "De nadruk op persoonlijke zonde; zij ziet het kwaad liever in structuren.",
+          "existentiele_vraag": "Hoe verhoudt onze stem (het Hosanna) zich tot onze daden als het erop aankomt?"
         }
       },
       {
         "nummer": 5,
         "naam": {
-          "voornaam": "Eva",
-          "achternaam": "Lindhout"
+          "voornaam": "Bram",
+          "achternaam": "Vervoort"
         },
-        "leeftijd": 46,
-        "kernschets": "Eva is een creatieve freelancer en 'stadsnomade' die na een bewogen leven in Amsterdam is teruggekeerd naar haar geboortestad Utrecht. In de Janskerkgemeente zoekt zij naar een gemeenschap die radicaal inclusief is en waar haar rauwe levenservaring niet wordt veroordeeld, maar een plek krijgt.",
+        "leeftijd": 19,
+        "kernschets": "Bram is een student aan de HKU (Hogeschool voor de Kunsten) die alleen in de Janskerk zit omdat zijn oma, aan wie hij veel te danken heeft, hem heeft gevraagd mee te gaan. Hij is sceptisch over religie als instituut, maar raakt gefascineerd door de rauwe, bijna theatrale dramatiek van de passie en de universele taal van het lijden.",
         "basisgegevens": {
-          "fysieke_verschijning": "1.68m, slank, kort pittig kapsel dat momenteel asgrijs geverfd is. Ze heeft een opvallende tatoeage van een boom op haar onderarm en draagt vaak tweedehands kleding in lagen.",
-          "woonwijk": "Lombok, Utrecht"
+          "fysieke_verschijning": "Oversized kleding, een kleine zilveren ring in zijn oor, en een schetsboek dat hij discreet in zijn tas houdt. Hij kijkt met de blik van een observator.",
+          "woonwijk": "Lombok, in een rumoerig studentenhuis."
         },
         "relaties_sociaal": {
-          "woonsituatie": "Huurt een kleine, rommelige bovenwoning boven een Turkse bakker.",
-          "relatiestatus": "Alleenstaand na meerdere verbroken relaties; ze dateert af en toe maar vindt het lastig om iemand echt toe te laten.",
-          "kinderen": "Geen, een bewuste keuze die ze soms toch betreurt.",
-          "familie_relatie": "Gecompliceerde band met haar strenggelovige ouders; ze heeft jarenlang geen contact gehad en probeert dat nu voorzichtig te herstellen.",
-          "sociaal_netwerk": "Een bont gezelschap van kunstenaars, activisten en buurtgenoten; ze is sociaal zeer vaardig maar voelt zich vaak een buitenstaander."
+          "woonsituatie": "Kamerbewoner, deelt een keuken met vijf anderen.",
+          "relatiestatus": "Aan het daten, ontdekt zijn eigen identiteit en grenzen.",
+          "kinderen": null,
+          "familie_relatie": "Hechte band met zijn oma; zijn ouders zijn gescheiden en hebben weinig met de kerk.",
+          "sociaal_netwerk": "Kring van kunststudenten, muzikanten en 'alternatieve' denkers in Utrecht."
         },
         "opleiding_werk": {
-          "opleiding": "Gerrit Rietveld Academie (Beeldende Kunst).",
-          "intelligentie_leerstijl": "Visueel en intuïtief ingesteld, leert door te ervaren en te creëren; ze denkt in beelden en metaforen.",
-          "huidige_werk": "Freelance grafisch ontwerper en workshopleider 'Creatieve Therapie' voor jongeren met een rugzakje.",
-          "voormalig_werk": "Verschillende baantjes in de horeca en de culturele sector.",
-          "financiele_situatie": "Precaire inkomenssituatie; ze leeft van maand tot maand en heeft een kleine schuld bij de belastingdienst."
+          "opleiding": "HBO (HKU), richting Beeldende Kunst.",
+          "intelligentie_leerstijl": "Visueel en experimenteel; hij begrijpt de wereld door te kijken en te creëren.",
+          "huidige_werk": "Student, werkt op zaterdag in een koffiebar in de Twijnstraat.",
+          "voormalig_werk": null,
+          "financiele_situatie": "Bescheiden studentenbudget, geeft zijn geld liever uit aan kunstmaterialen dan aan kleding."
         },
         "gezondheid": {
-          "lichamelijk": "Lijdt aan chronische vermoeidheid (ME/CVS), waardoor ze haar energie zorgvuldig moet verdelen.",
-          "mentaal": "Heeft een verleden met depressie en verslavingsgevoeligheid; ze gaat wekelijks naar een praatgroep voor herstel.",
-          "leefstijl": "Leeft sober, wandelt veel door de stad, mediteert dagelijks om haar prikkels te verwerken."
+          "lichamelijk": "Gezond, maar leeft onregelmatig.",
+          "mentaal": "Gevoelig en soms onzeker over zijn talent en toekomst als kunstenaar.",
+          "leefstijl": "Nachtmens, houdt van de dynamiek van de stad."
         },
-        "traumas_zorgen": {
-          "verleden": [
-            "Een traumatische religieuze opvoeding waarin angst voor de hel centraal stond",
-            "Een periode van dakloosheid in Amsterdam na een mislukte relatie"
+        "levensgeschiedenis_vragen": {
+          "wat_heeft_gevormd": [
+            "De scheiding van zijn ouders die hem vroeg volwassen maakte",
+            "Zijn toelating tot de kunstacademie die hij als een bevrijding ervoer"
           ],
-          "heden": [
-            "De onzekerheid over haar fysieke gezondheid op de lange termijn",
-            "De angst om weer terug te vallen in oude destructieve patronen"
+          "wat_speelt_nu": [
+            "De druk om authentiek te zijn in een wereld van kopieën",
+            "De vraag of kunst nog wel de kracht heeft om echt iets te veranderen"
           ],
-          "onverwerkt": "De woede op het instituut kerk die strijdt met haar diepe verlangen naar spirituele bedding."
+          "onuitgesproken": "Een diep verlangen naar een vorm van heiligheid die niet benauwend is."
         },
         "geloof_spiritualiteit": {
-          "kerkelijke_achtergrond": "Opgegroeid in een gesloten bevindelijk-gereformeerd milieu, daar radicaal mee gebroken op haar achttiende.",
-          "huidige_betrokkenheid": "Sinds een jaar bezoekt ze incidenteel de Janskerk, vooral vanwege de openheid en de nadruk op sociale rechtvaardigheid.",
-          "geloofsbeleving": "Ziet Jezus als een revolutionair en een bondgenoot van de verschoppelingen; ze heeft moeite met de term 'God' en spreekt liever over 'de Bron' of 'de Liefde'.",
-          "geloofstaal": "Houdt van poëtische teksten en beelden die schuren; ze verafschuwt 'zoete' religieuze taal.",
-          "twijfels_vragen": [
-            "Is er werkelijk vergeving mogelijk voor de schade die mensen elkaar aandoen?",
-            "Hoe kan ik religieus zijn zonder mijn eigen identiteit te verliezen?"
+          "kerkelijke_background": "Nauwelijks, alleen via zijn oma af en toe een dienst bezocht.",
+          "huidige_betrokkenheid": "Zeer incidenteel bezoeker (zoals vandaag).",
+          "geloofsbeleving": "Atheïstisch met een fascinatie voor de christelijke iconografie en de psychologische diepte van bijbelverhalen.",
+          "geloofstaal": "Beeldend en existentieel; hij spreekt over 'ervaring' en 'echtheid'.",
+          "geloofsvragen": [
+            "Waarom kiezen mensen ervoor om bij een falend instituut te horen?"
           ],
-          "spirituele_behoeften": "Zij zoekt naar een ritueel dat haar helpt om haar pijn te transformeren in kracht."
+          "spirituele_verwachting": "Geen specifieke verwachting, hoopt hooguit niet verveeld te raken."
         },
         "hobbys_interesses": {
           "vrijetijd": [
-            "Schilderen in haar kleine atelier aan huis",
-            "Struinen over de biologische markt op het Vredenburg",
-            "Vrijwilligerswerk bij een opvang voor zwerfkatten"
+            "Tekenen",
+            "Bezoeken van obscure concerten"
           ],
           "media": [
-            "Alternatieve nieuwsbronnen",
-            "Podcasts over spiritualiteit en psychologie",
-            "Instagram voor haar eigen kunstprojecten"
+            "Instagram (voor visuele inspiratie)",
+            "Vice",
+            "Podcasts over kunstgeschiedenis"
           ],
           "verenigingen": [
-            "Lid van een kunstenaarscollectief in Utrecht",
-            "Deelnemer aan een lokale deeleconomie-groep"
+            "Geen, hij houdt niet van formele verbanden"
           ]
         },
         "aansluiting_schriftlezingen": {
-          "wat_raakt": "De vernedering van Jezus in Matteüs 27 (het bespotten en bespuwen) raakt haar persoonlijk; ze herkent de dynamiek van uitsluiting en machtsmisbruik.",
-          "wat_afstoot": "De nadruk op 'gehoorzaamheid tot in de dood' in Filippenzen roept bij haar verzet op vanwege haar verleden met religieuze dwang.",
-          "existentiele_vraag": "Kan mijn lijden en mijn 'mislukte' leven een plek hebben in een groter verhaal van hoop?"
+          "wat_raakt": "De kreet van verlatenheid in Psalm 22 en bij de dood van Jezus raakt hem als een universele menselijke ervaring.",
+          "wat_afstoot": "De term 'Heer' voor Jezus; dat klinkt voor hem te veel naar onderdrukking.",
+          "existentiele_vraag": "Wat doet het met een mens als hij door iedereen, zelfs door zijn God, verlaten wordt?"
         }
       }
     ],
     "_usage": {
-      "prompt_tokens": 25407,
-      "candidates_tokens": 7265,
-      "total_tokens": 34510
+      "prompt_tokens": 26900,
+      "candidates_tokens": 5964,
+      "total_tokens": 34247
     }
   },
   "15_homiletische_lowry": {
@@ -8907,65 +8891,161 @@
     },
     "warnings": []
   },
+  "61b_fonetische_analyse": {
+    "klanksymboliek": {
+      "diagnose": "De tekst hanteert een effectief contrast tussen de 'harde' wereld van de stad/transactie en de 'zachte' wereld van de genade. De auteur gebruikt bewust scherpe, plosieve klanken voor conflict en vloeiende, open klinkers voor spirituele intimiteit, hoewel sommige theologische kernbegrippen in de weergave van het lijden nog aan akoestische 'zwaarte' kunnen winnen.",
+      "sterke_voorbeelden": [
+        "‘Dertig zilverstukken. Zij wegen het geld zorgvuldig af, munt voor munt, klinkend op de tafel.’ - De herhaling van de korte /i/ en de harde /k/ en /t/ bootst het kille, metaalachtige geluid van de munten na (onomatopee-effect).",
+        "‘God opent het menselijke gehoor voor de zachte, subtiele frequentie van de hemel, een stem die fluistert.’ - De opeenvolging van sibilanten (z, s, f) en lichte vocalen (ie, e) creëert een auditieve sfeer van nabijheid en tederheid."
+      ],
+      "zwakke_plekken": [
+        "‘De Knecht beschrijft in rauwe bewoordingen de harde, fysieke realiteit...’ - Het woord 'fysieke realiteit' is fonetisch te abstract en licht (veel /ie/ en /i/) voor de 'rauwe' inhoud die het probeert te beschrijven.",
+        "‘...de stagnerende systemen doorbreekt en de bureaucratie aan de kant schuift.’ - 'Bureaucratie' is een ambtelijk leenwoord dat de akoestische dreiging van de 'chaos' waarover gesproken wordt, verzwakt door zijn polysyllabische, lichte klank."
+      ],
+      "aanbevelingen": [
+        "Vervang abstracte termen in de lijdenspassage door woorden met donkere vocalen (u, o, au) en zware consonanten (gr, d, r) om de 'zwaarte' van het offer te laten voelen.",
+        "Versterk de passage over de 'rots' (hallamish) door meer woorden met de /k/ en /t/ te gebruiken, zodat de tekst zelf 'hard' aanvoelt bij het uitspreken."
+      ]
+    },
+    "werkgeheugen_architectuur": {
+      "diagnose": "De preek maakt goed gebruik van anaforen om ritme te creëren, maar mist kansen op epistrofe (eindherhaling) om kernpunten emotioneel te verankeren. De zinslengte is soms aan de hoge kant voor een gesproken tekst, wat het werkgeheugen van de luisteraar zwaar belast tijdens de meer abstracte passages.",
+      "gevonden_figuren": [
+        {
+          "type": "anafoor",
+          "voorbeeld": "‘Hier hangt de geur van oud hout... Hier regeert een ander ritme.’"
+        },
+        {
+          "type": "asyndeton",
+          "voorbeeld": "‘De stad heeft gesproken, de stemmen zijn geteld, de coalities worden gesmeed.’"
+        },
+        {
+          "type": "alliteratie",
+          "voorbeeld": "‘scherpe schaduwen’, ‘kille, berekenende taal’, ‘glazen bolwerk’"
+        }
+      ],
+      "ontbrekende_kansen": [
+        "In de passage over de 'moedeloze professional' en de 'oudere man' ontbreekt een verbindende epistrofe die hun gedeelde eenzaamheid benadrukt.",
+        "Bij de beschrijving van de stemvork (440 Hertz) zou een epizeuxis (directe herhaling) de 'onwrikbaarheid' van die toon beter verankeren in het geheugen."
+      ],
+      "aanbevelingen": [
+        "Kort de zinnen in de passage over het Stadskantoor in; gebruik asyndeton om de gejaagdheid van de ambtenaar fonetisch te ondersteunen.",
+        "Pas epistrofe toe bij de afsluiting van de alinea over de transactie (Judas), bijvoorbeeld door elke zin te eindigen op '...voor dertig zilverstukken'."
+      ]
+    },
+    "akoestische_cadans": {
+      "diagnose": "De cadans is over het algemeen statig en evenwichtig, passend bij de Janskerk-setting. Er is echter een risico op een 'vlakte' in het middendeel (de exegese van Jesaja), waar de retorische temperatuur daalt door een teveel aan verklarende bijzinnen.",
+      "vlakke_passages": [
+        "‘Temidden van de verhitte discussies over complexe ruimtelijke ordening, stikstofbudgetten en eindeloze spreadsheets, stapt een projectleider daar soms even naar binnen...’ - Deze zin is te lang en mist een ritmische 'beat', waardoor de luisteraar de draad kan kwijtraken.",
+        "‘De kwaliteit en de zuiverheid van ons spreken in de publieke ruimte van de wereld is rechtstreeks en onlosmakelijk afhankelijk van de diepte van ons zwijgen...’ - Te theoretische cadans."
+      ],
+      "kansen_voor_verdieping": [
+        "Gebruik anadiplosis bij de overgang van 'stilte' naar 'spreken' in de Jesaja-passage: '...de diepte van ons zwijgen. Zwijgen dat de tong traint.'",
+        "Pas epizeuxis toe bij het moment dat Jezus zwijgt voor Pilatus: 'Hij zweeg. Hij zweeg eenvoudigweg.' om de 'lian ethaumazen' (grote verwondering) kracht bij te zetten."
+      ],
+      "aanbevelingen": [
+        "Bouw een staccato-ritme in bij de beschrijving van de kruisiging om de schok van de gebeurtenis over te brengen.",
+        "Varieer de zinslengte in de Domtoren-analogie: begin met lange, dragende zinnen over de geschiedenis en eindig met korte, krachtige zinnen over de fundering."
+      ]
+    },
+    "prioritaire_verbeteringen": [
+      {
+        "locatie": "Alinea over het Stadskantoor (derde alinea)",
+        "probleem": "De zinnen zijn te lang en ambtelijk, wat de cognitieve belasting verhoogt en de cadans vertraagt.",
+        "suggestie": "Knip de zin over 'ruimtelijke ordening' op. Gebruik asyndeton: 'Discussies over stikstof. Spreadsheets vol cijfers. De projectleider vlucht. Ze zoekt de stilte.'"
+      },
+      {
+        "locatie": "Passage over Judas en de zilverstukken (achtste alinea)",
+        "probleem": "De klanksymboliek is goed, maar de retorische impact kan groter door herhaling.",
+        "suggestie": "Voeg een epistrofe toe: 'Hij taxeert de liefde. Hij keurt het offer. Hij verkoopt zijn God.' Dit verankert de ernst van de transactie."
+      },
+      {
+        "locatie": "Exegese van Jesaja (vierde alinea)",
+        "probleem": "De overgang van de Hebreeuwse term naar de toepassing is te verklarend (vlakke cadans).",
+        "suggestie": "Gebruik anadiplosis: 'God wekt het oor. Het oor dat luistert naar de stilte. Stilte die wordt tot een woord.'"
+      },
+      {
+        "locatie": "Beschrijving van de stemvork (zesde alinea)",
+        "probleem": "De metafoor is sterk, maar de 'onwrikbaarheid' wordt niet fonetisch ondersteund.",
+        "suggestie": "Gebruik epizeuxis voor de toon: 'Eén toon. Eén zuivere, dwingende toon.' Herhaal het woord 'A' of '440 Hertz' om de resonantie te simuleren."
+      },
+      {
+        "locatie": "Slotpassage (laatste alinea)",
+        "probleem": "De afsluiting mist een krachtige 'punch' door een gebrek aan ritmische variatie.",
+        "suggestie": "Eindig met een tricolon van korte zinnen: 'De weg is open. De Koning gaat voor. Wij volgen.' Dit verhoogt de urgentie bij het verlaten van de kerk."
+      }
+    ],
+    "fonetische_score": {
+      "klanksymboliek": 8,
+      "werkgeheugen_architectuur": 7,
+      "akoestische_cadans": 6,
+      "totaal": 7,
+      "toelichting": "De preek is literair zeer sterk en gebruikt klankkleur effectief om sfeer te scheppen. De score voor cadans is lager omdat de zinsstructuren soms te complex zijn voor het gesproken woord, waardoor de retorische 'drive' in het middenstuk verslapt."
+    },
+    "_usage": {
+      "prompt_tokens": 8798,
+      "candidates_tokens": 2132,
+      "total_tokens": 12373
+    }
+  },
   "62_preek_rewrite": {
-    "titel": "De Stemvork van de Vroege Morgen: Een Rots in de Ruis",
-    "bijbeltekst": "Jesaja 50:4-7, Filippenzen 2:6-11, Matteüs 26:14-27:66, Psalm 22",
-    "thema": "De plaatsbekledende gehoorzaamheid van de lijdende Knecht en de roeping tot wezenlijk luisteren.",
+    "titel": "De Stemvork en de Rots",
+    "bijbeltekst": "Jesaja 50:4-7 en Matteüs 26:14-27:66",
+    "thema": "De soevereine weerbaarheid van de lijdende Knecht als anker voor een onrustige stad",
     "samenvatting_wijzigingen": {
       "verbeteringen_per_domein": [
         {
           "domein": "Dekker",
-          "verwerkte_feedback": "Meer focus op het specifieke bijbelgedeelte (Jesaja 50) en de theologische ernst van de twee wegen (keuze en oordeel).",
-          "concrete_aanpassing": "In de inleiding is een expliciete keuze geformuleerd tussen ten onder gaan in het kabaal of gered worden. De exegese is strakker op de tekst van Jesaja 50 gehouden."
+          "verwerkte_feedback": "Versterk de ernst van de 'twee wegen' en de radicaliteit van de keuze (verloren gaan vs. behouden worden) in plaats van alleen een existentiële beschrijving.",
+          "concrete_aanpassing": "Toevoeging in de Judas-sectie over de realiteit van het oordeel en de consequentie van onze keuzes: 'Hier scheiden de wegen zich... Het is de keuze tussen het zilver en het Lam.'"
         },
         {
           "domein": "Aristoteles",
-          "verwerkte_feedback": "Persoonlijke, individuele toepassing (Ethos) en concreet handelingsperspectief (Pragmatiek) ontbraken aan het slot.",
-          "concrete_aanpassing": "Er is een concrete diaconale opdracht toegevoegd aan het slot (de ongedocumenteerde asielzoeker, de eenzame student) en de predikant toont persoonlijke kwetsbaarheid."
+          "verwerkte_feedback": "Versterk het Ethos door meer kwetsbaarheid en een directe 'ik'-getuigenis toe te voegen, en verbeter de Pathos door fonetische versterking.",
+          "concrete_aanpassing": "Toegevoegd in de alinea over de economie van het verraad: 'Ik voel die neiging ook in mijn eigen hart...'"
         },
         {
           "domein": "Kolb",
-          "verwerkte_feedback": "Fase 4 (Actief Experimenteren) was te vaag. Er miste een concrete actie voor de komende week.",
-          "concrete_aanpassing": "In de conclusie is een uiterst concrete actie benoemd: 'Morgenochtend, om zeven uur... open uw bijbel voordat u de nieuwsapps opent.'"
+          "verwerkte_feedback": "Voeg een concrete fase van Actief Experimenteren toe: wat doet de hoorder morgenochtend om 7:00 uur?",
+          "concrete_aanpassing": "In de slotapotheose toegevoegd: 'Morgenochtend, als de wekker gaat om zeven uur, voordat u naar uw scherm grijpt...'"
         },
         {
           "domein": "Schulz Von Thun",
-          "verwerkte_feedback": "Zelfonthulling (Groen) was te afstandelijk. Het appel (Rood) rondom 'opbeuren' was te algemeen.",
-          "concrete_aanpassing": "De predikant onthult eigen worsteling ('Ik ken die worsteling zelf maar al te goed...'). Het appel is verbonden aan specifieke kwetsbaren in de stad."
+          "verwerkte_feedback": "Versterk het Appel-aspect; maak de oproep dwingender en minder vrijblijvend.",
+          "concrete_aanpassing": "Aanpassing in de sectie over de maaltijd: van een beschrijving naar een directe invitatie: 'U wordt geroepen om uw verdediging te laten zakken.'"
         },
         {
           "domein": "Transactional",
-          "verwerkte_feedback": "Bij de zware overgang naar Golgotha miste een check-in op Volwassen niveau, en er was weinig ruimte voor het Vrije Kind aan het eind.",
-          "concrete_aanpassing": "Voor de kruisiging is een 'Adult check-in' toegevoegd ('Het is ronduit confronterend om volwassen en eerlijk naar dit kruis te kijken.'). De preek eindigt met de bevrijdende ruimte van een open vraag."
+          "verwerkte_feedback": "Behoud de Volwassen-naar-Volwassen toon, ook bij zware emotie, en gebruik de metafoor (stemvork) om te aarden.",
+          "concrete_aanpassing": "Herintroductie van de 'stemvork' (het 'vagaal anker') tijdens de beschrijving van de verloochening om de emotionele regulatie te borgen."
         },
         {
           "domein": "Esthetiek",
-          "verwerkte_feedback": "Varieer het ritme met staccato zinnen, verminder wat bijvoeglijke naamwoorden, en eindig met een open vraag.",
-          "concrete_aanpassing": "Tijdens de verhoren zijn staccato zinnen toegevoegd ('De macht schreeuwt. Het recht buigt. De waarheid zwijgt.'). Overbodige bijvoeglijke naamwoorden zijn gestreept en de preek sluit nu af met een vraag."
+          "verwerkte_feedback": "Verbeter het ritme door staccato zinnen en asyndeton, vooral in de 'stadskantoor' passage en de slotzin.",
+          "concrete_aanpassing": "Herschrijving alinea 3: 'Discussies over stikstof. Spreadsheets vol cijfers. De projectleider vlucht. Ze zoekt de stilte.'"
         },
         {
           "domein": "Metafoor",
-          "verwerkte_feedback": "Versterk het contrast tussen de digitale algoritmes (ruis) en het fysieke, analoge gebroken brood.",
-          "concrete_aanpassing": "Bij de introductie van de stemvork en het Avondmaal is de fysieke, analoge materialiteit expliciet afgezet tegen de kille, vluchtige algoritmes."
+          "verwerkte_feedback": "Versterk de consistentie van de 'ruis' versus 'resonantie' metafoor.",
+          "concrete_aanpassing": "In de Gethsemane-passage de 'ruis' van de slapende discipelen gecontrasteerd met de 'zuivere toon' van Jezus' gebed."
         },
         {
           "domein": "Narratief",
-          "verwerkte_feedback": "Benadruk dat wij zelf vaak de kracht niet hebben om de stilte op te zoeken; God moet de handelende persoon zijn.",
-          "concrete_aanpassing": "Bij het 'wekken van het oor' is toegevoegd dat God het initiatief neemt, omdat wij uit onszelf de kracht ontberen om de stilte in te stappen."
+          "verwerkte_feedback": "Herpositioneer God/Christus als het handelend subject (plaatsbekleding) in plaats van alleen een voorbeeld.",
+          "concrete_aanpassing": "Bij de kruisiging toegevoegd: 'Hij staat daar in onze plaats. Waar wij hadden moeten zwijgen, zwijgt Hij voor ons.'"
         },
         {
           "domein": "Taalhandeling",
-          "verwerkte_feedback": "Gebruik meer Commissieven namens God (toezeggingen) en de genade-indicatief direct naar de hoorder.",
-          "concrete_aanpassing": "Aan het einde is een directe toezegging namens God geformuleerd: 'God belooft u Zijn onwankelbare nabijheid op die weg.'"
+          "verwerkte_feedback": "Gebruik meer commissieven (toezeggingen) en minder beschrijvende taal.",
+          "concrete_aanpassing": "In het slotakkoord de zinnen omgevormd van constateringen ('wij nemen mee') naar toezeggingen en opdrachten ('Draag de belofte')."
         }
       ],
-      "toelichting": "De redactie heeft de theologische gelaagdheid hersteld door de plaatsbekleding (Red Team) expliciet te maken en de historische context van de ballingschap terug te brengen. Negatieve constructies ('niet A, maar B') zijn omgevormd tot krachtige, positieve zinnen. Door de toevoeging van staccato zinnen en zeer concrete toepassingen voor maandagochtend in Utrecht, landt de esthetische taal in de harde realiteit van de hoorder."
+      "toelichting": "De revisie richt zich op het verscherpen van de existentiële ernst (Adversarial Red Team: plaatsbekleding) en het verbeteren van de 'oraliteit' van de tekst. Lange, ambtelijke zinnen zijn opgebroken (fonetische analyse) om de cadans te versterken. De abstracte oproep tot 'luisteren' is vertaald naar een concrete handeling voor maandagochtend (Kolb). De theologische focus is verschoven van Jezus als louter 'voorbeeld van weerbaarheid' naar Jezus als 'plaatsvervanger' die de klappen opvangt die voor ons bedoeld waren."
     },
-    "preektekst": "De lentezon werpt vandaag scherpe schaduwen over de kasseien van het Janskerkhof. U voelt de wind die door de straten van de binnenstad trekt, een wind die de geur van koffie, uitlaatgassen en ontwakend leven met zich meedraagt. Buiten deze dikke kerkmuren raast de stad Utrecht onverminderd door. De bussen van lijn 28 draaien de hoek om, studenten fietsen gehaast richting de universiteitsbibliotheek, de terrassen worden opgebouwd voor de middag. We hebben net de gemeenteraadsverkiezingen achter de rug. Wekenlang zijn we overspoeld met luidruchtige beloften, felle debatten op pleinen en haarscherpe meningen in de media. De stad heeft gesproken, de stemmen zijn geteld, de coalities worden gesmeed. En dan stapt u over de stenen drempel van deze Janskerk. U laat het rumoer van het plein achter u en u treedt een gewijde ruimte binnen. Hier hangt de geur van oud hout en koude steen. Hier regeert een ander ritme. U stapt de liturgie van Palmzondag binnen, de toegangspoort tot de Goede Week.\n\nWe dragen palmtakken en we zingen over een koning op een ezel. We voelen de opwinding van de intocht. De menigte in Jeruzalem roept 'Hosanna', een kreet die resoneert met ons eigen diepe verlangen naar een leider die de wereld eindelijk recht zal zetten. We snakken naar oplossingen voor de wooncrisis in onze wijken, voor de schurende ongelijkheid tussen de statige grachtenpanden aan de Nieuwegracht en de tochtige~~, verouderde~~ flatgebouwen in Overvecht. We willen actie, daadkracht, beleidsplannen die onmiddellijk effect sorteren. We verlangen naar een soevereine hand die de chaos ordent, een sterke man of vrouw die de stagnerende systemen doorbreekt en de bureaucratie aan de kant schuift. Toch voelen we in de liturgie van vandaag al de naderende schaduw, een ongemakkelijke onderstroom die onze verwachtingen ontregelt. De palmtakken die we nu zo triomfantelijk omhoog houden, zullen onherroepelijk verdorren en verkleuren. Het uitzinnige gejuich van de menigte zal binnen enkele dagen omslaan in een moordlustig geschreeuw. De koning die we vandaag binnenhalen, gaat immers een weg die ons verstand volkomen verbijstert. Hij rijdt op de rug van een lastdier, kwetsbaar en ongewapend. Hij kiest resoluut de weg van de diepste afdaling, de weg naar de marges, naar de vernedering en de overgave. En wij worden uitgenodigd om in dat dwarse, onlogische spoor mee te lopen. Dat is een buitengewoon beangstigend perspectief voor moderne, rationele mensen die gewend zijn om de regie stevig en krampachtig in eigen handen te houden. **We staan voor een diep-existentiële keuze: gaan we geruisloos ten onder in het zelfgekozen kabaal van deze wereld, of laten we ons redden door Zijn stille, radicaal andere weg?**\n\nKijk naar onszelf, hier in de banken van de kerk. Wij zijn kinderen van een tijdperk dat onophoudelijk alles meet, weegt, kwantificeert en beoordeelt. De gedreven professional in de kantoortuinen van het stadskantoor, de ambitieuze academicus in de overvolle collegezaal, de vermoeide ouder die het complexe weefsel van een gezin draaiende houdt — wij torsen allemaal de zware last van de verantwoordelijkheid op onze schouders. We voelen de onophoudelijke, sluimerende druk om onszelf continu te profileren, om een helder en scherp standpunt in te nemen, om gehoord te worden in de eindeloze, dovemakende kakofonie van de samenleving. In het nabijgelegen Stadskantoor, het glazen bolwerk vlak bij het Centraal Station, is sinds kort een speciale 'stilteruimte' ingericht voor overprikkelde ambtenaren. Temidden van de verhitte discussies over complexe ruimtelijke ordening, stikstofbudgetten en eindeloze spreadsheets, stapt een projectleider daar soms even naar binnen, wanhopig op zoek naar een adempauze. Ze laat de open kantoortuin, met zijn knipperende beeldschermen en rinkelende telefoons, achter zich. De zware, akoestische deur sluit zich met een zachte klik. Het dwingende gezoem van de telefoons en het geroezemoes van collega's verdwijnen abrupt. Gedurende drie kostbare minuten hoort zij in die schemerige ruimte uitsluitend het trage ritme van haar eigen ademhaling en het kloppen van haar hart. In die kleine, geluiddichte cabine vindt een wezenlijke, haast heilige verschuiving plaats. De dwingende noodzaak om onmiddellijk te reageren, om de volgende e-mail te beantwoorden, ebt langzaam weg uit haar spieren. Er ontstaat in die leegte een ruimte voor een dieper weten, een existentiële helderheid die aan de drukke vergadertafel volkomen onbereikbaar was. Daar, in de afwezigheid van prikkels, ontdekt zij dat zij ten diepste meer is dan haar productiviteit. **Ik ken die worsteling zelf maar al te goed; vaak merk ik dat ik al naar mijn lichtgevende scherm grijp nog voordat mijn voeten 's ochtends de slaapkamervloer raken.**\n\nDe profeet Jesaja kent de onmetelijke diepte van die ruimte. In de eerste lezing van vanmorgen voert hij een mysterieuze man op die het geheim van die stilte tot in zijn diepste vezels heeft begrepen en geïnternaliseerd. Hij noemt hem de Dienaar, de Knecht des Heren. **Jesaja sprak deze woorden oorspronkelijk tot ballingen in Babel, een volk omringd door de schreeuwende, intimiderende afgoden van een vreemd imperium. Voor hen was dit luisteren pure overleving, een vreedzaam maar ijzersterk verzet tegen assimilatie.** Deze profetische gestalte vertelt ons over de verborgen oorsprong van zijn standvastige kracht. Hij spreekt over de uiterste stilte van de vroege ochtend, het moment waarop de nacht net begint te wijken voor de dageraad. Het Hebreeuwse woord 'ba-bōqer' klinkt hier in de grondtekst tweemaal achter elkaar, als een bezwering: 'morgen aan morgen', of 'elke morgen opnieuw'. De tekst tekent hiermee een dagelijkse, haast rituele en onverbiddelijke discipline van de genade. Terwijl de wereld om hem heen nog in een diepe, onbewuste slaap verkeert, buigt de Eeuwige Zich vol tederheid over het bed van deze ontwakende mens. God wekt zijn oor. In het Hebreeuwse denken is het oor het orgaan van de gehoorzaamheid, het instrument van de verbondstrouw. God opent het menselijke gehoor voor de zachte, subtiele frequentie van de hemel, een stem die fluistert. **Wij bezitten uit onszelf vaak niet eens de kracht of het verlangen om die stilte op te zoeken; God Zelf moet de initiatiefnemer zijn die ons wekt.** Het is de uiterste vorm van theologische intimiteit. De Schepper spreekt tot het schepsel. De mens wordt hier in de allereerste plaats gedefinieerd als een toehoorder, een ontvanger van een goddelijk woord. U bent een mens die ten diepste is aangesproken en gekend, nog ver voordat u zelf de behoefte voelde om een argument te formuleren of een standpunt in te nemen. De ware identiteit van de leerling rust in deze volstrekt passieve, heilige ontvankelijkheid.\n\nWij, moderne gelovigen, bewonderen graag de radicale verhalen over de profeten in de brandende woestijn. We spreken vol ontzag over de asceten, over de veertig dagen vasten in de snijdende eenzaamheid van de rotsen, terwijl wij onszelf in de realiteit van alledag vaak al geen houding weten te geven wanneer we veertig minuten gedwongen worden door te brengen zonder onze smartphone. Onze oren zijn chronisch verstopt geraakt door de constante, ziekmakende ruis van de prestatiedwang en de oneindige stroom aan informatie. We luisteren kritiekloos naar de genadeloze algoritmes van onze schermen, die ons onophoudelijk vertellen wat we moeten begeren, hoe we eruit moeten zien en wat we moeten consumeren om erbij te horen. We luisteren naar de sluipende angst die ons 's nachts in bed toefluistert dat we hopeloos tekortschieten in onze relaties, in ons werk, in ons ouderschap. De Knecht uit de profetie van Jesaja leert ons een volstrekt ander patroon van in de wereld staan. Omdat zijn oor in de vroege ochtend is geopend, ontvangt hij een 'tong van leerlingen', zoals de tekst het prachtig formuleert. Het Hebreeuwse 'leshon limmudim' duidt op de taal van degenen die zich hebben laten onderwijzen door de stilte. Dat is een uiterst geschoolde tong. Een tong die de diepe, geestelijke kunst van het zwijgen heeft doorgrond. De kwaliteit en de zuiverheid van ons spreken in de publieke ruimte van de wereld is rechtstreeks en onlosmakelijk afhankelijk van de diepte van ons zwijgen en luisteren in de verborgen binnenkamer. De Knecht zoekt de stilte op als een essentiële plaats van toerusting voor het gevecht dat komen gaat.\n\nDenk aan de pianostemmer in de oude, statige wijk Wittevrouwen, een toegewijde vakman die wekelijks de kostbare instrumenten in de huiskamers onder handen neemt. Terwijl de stofjes dansen in het zonlicht dat door de hoge ramen naar binnen valt, opent hij de houten kast van de piano. Hij hoort de wringende, valse akkoorden, de snaren die door temperatuurwisselingen en intensief gebruik hun oorspronkelijke spanning zijn kwijtgeraakt. Voordat hij met zijn sleutel de stalen snaren spant en de mechaniek forceert, pakt hij een ouderwetse, stalen stemvork uit zijn kist. Hij slaat het kleine, glanzende instrument zachtjes maar resoluut tegen zijn knie en houdt het vervolgens tegen het resonerende hout van de piano. De stemvork produceert een loepzuivere, onveranderlijke en dwingende toon. Een volstrekt constante frequentie van exact 440 Hertz, de centrale A. Het maakt de stemvork volkomen onverschillig of er buiten op straat een gure herfststorm woedt, of dat er binnen in het huis schreeuwende kinderen rondrennen of televisies aanstaan. Die ene trilling, afkomstig uit een andere orde, vormt de absolute, ononderhandelbare norm waaraan het hele instrument zich zal moeten onderwerpen. **In een tijdperk geregeerd door kille, vluchtige algoritmes, biedt deze goddelijke trilling een diep, analoog en lichamelijk fundament.** Pas wanneer de tienduizend onderdelen van de piano zorgvuldig zijn afgestemd op die zuivere, externe bron, keert de oorspronkelijke harmonie terug in de snaren. Zo fungeert God als de stemvork van onze onrustige ziel. Het wekken van het oor in de vroege morgen is de goddelijke afstemming van ons ontregelde wezen. Het herstelt meedogenloos de valse tonen van ons ego, de dissonanten van onze trots en onze jaloezie. Wie zich in de kwetsbaarheid van de ochtend laat afstemmen op de eeuwige frequentie van de liefde van de Schepper, wandelt later die dag de stad in met een innerlijke resonantie die de harde wereld om hem heen daadwerkelijk kan veranderen.\n\nHet uiteindelijke doel van dit geopende oor is adembenemend concreet en aards. De Knecht ontvangt de juiste, afgemeten woorden om de moedeloze, de uitgeputte ziel op te beuren. Kijk goed om u heen, naar de gezichten van de mensen in deze bruisende maar vaak zo meedogenloze stad. U ziet ze overal, als u tenminste de tijd neemt om echt te kijken. U ziet de jonge, briljante professional die 's avonds laat, ver na kantoortijd, eindelijk haar laptop dichtslaat aan de eettafel. Ze staart naar buiten, voelt de beklemmende leegte in haar strak ingerichte appartement echoën, vrezend dat haar existentiële waarde uitsluitend en alleen ligt in de winstmarge van haar laatste succesvolle project. U ziet de oudere man in de kille wachtkamer van de polikliniek, of starend naar de formulieren in het wijkloket. De man die de razendsnelle straatnaamwijzigingen, de onpersoonlijke digitale loketten en de verplichte inlogcodes niet meer kan bijhouden. Hij voelt hoe hij langzaam, onherroepelijk wegglijdt in de onzichtbaarheid en de anonimiteit van zijn eigen, veranderende wijk. Onze moderne, hoogproductieve wereld produceert moedeloosheid, vervreemding en eenzaamheid aan de lopende band, als een onzichtbaar maar giftig bijproduct van onze vooruitgang. Tegen deze achtergrond van stille wanhoop brengt de geschoolde tong van de Knecht een specifiek woord van herstel. Het is een woord dat wezenlijk gewicht heeft. Een woord dat een ineengedoken mens weer rechtop zet, hem zijn menselijke waardigheid teruggeeft. De authentieke taal van de goddelijke liefde doorbreekt de koude, verlammende betovering van de eenzaamheid.\n\nVanuit de intieme stilte van Jesaja's ochtend slaan we het evangelie van Matteüs open, en we stuiten onmiddellijk op een geheel andere, schokkende taal. Judas Iskariot, één van de intimi, stapt het marmeren paleis van de hogepriesters binnen. Hij spreekt de kille, berekenende taal van de commerciële markt. 'Wat wilt u mij geven als ik Hem aan u uitlever?' Deze ene zin is de brute introductie van de vocabulaire van de transactie in het heiligdom van de relatie. Judas wil het onbeheersbare, overweldigende mysterie van Jezus van Nazareth, dat hem waarschijnlijk grote angst inboezemt, reduceren tot een meetbaar, controleerbaar bezit. Hij taxeert de vleesgeworden Zoon van God alsof hij een stuk vee keurt op de markt. Het antwoord van de religieuze leiders volgt met een metaalachtige, angstaanjagende precisie. Dertig zilverstukken. Zij wegen het geld zorgvuldig af, munt voor munt, klinkend op de tafel. Voor wie de oude schriften kent, is dit bedrag een klap in het gezicht. Het is in de oude oosterse wetboeken, specifiek in het boek Exodus, de exacte wettelijke compensatie die betaald moest worden voor een slaaf die door een os is doodgeprikt. De dode, waardeloos geworden slaaf. De machthebbers drukken de Messias daarmee bewust en cynisch in de allerlaagste economische en sociale categorie die ze kunnen bedenken. Ze voorzien de Heer van het leven van een ordinair prijskaartje. Het is de ultieme commodificatie van het heilige leven: de reductie van de oneindige God tot dertig stukjes glimmend metaal.\n\nDe rinkelende, kille munten in de leren buidel van Judas vormen de tragische soundtrack van een beschaving die haar eigen ziel is kwijtgeraakt, een beschaving die de waarde van dingen enkel nog kan uitdrukken in getallen en balansen. Wij kennen die wereld maar al te goed. Laten we onszelf niet bedriegen: wij wonen er middenin en we ademen haar logica dagelijks in. Ook wij calculeren voortdurend de risico's van onze vriendschappen en relaties. We wegen onze inzet voor de kerk, voor de buurt, voor de ander op de onverbiddelijke weegschaal van het persoonlijke rendement. We vragen onszelf stilletjes, in de veiligheid van onze eigen gedachten, af wat onze loyaliteit en onze trouw ons aan het einde van de streep eigenlijk opleveren. De verkoop van Jezus in het paleis is daarmee de genadeloze, spiegelende onthulling van onze eigen, gevallen menselijke staat. De machten van het zilver, het eigenbelang en de ijzeren politieke controle eisen in elk tijdperk absolute gehoorzaamheid. Het Griekse woord dat de evangelist Matteüs in deze passages herhaaldelijk gebruikt is 'paradidomi'. Het betekent letterlijk het overleveren, het uit handen geven, het iemand willens en wetens uitleveren aan het oordeel van de beul. Het is een term uit de donkere onderwereld van het verraad. Judas levert de incarnatie van de liefde uit aan de kille, meedogenloze logica van de berekening. En daarmee levert hij ten diepste zichzelf over aan de vernietiging.\n\nEn dan, op de drempel van de ondergang, gebeurt het volstrekt onvoorstelbare. Jezus doorziet de naderende catastrofe. ~~maar Hij weigert pertinent om mee te spelen in deze vernietigende economie van de schuld en de vergelding.~~ **Hij verwerpt de vernietigende economie van schuld en vergelding volledig.** ~~Hij roept geen legioenen gewapende engelen op om de verraderlijke contracten te verscheuren en Zijn vijanden te verpletteren. Hij organiseert geen politiek tegenbod, Hij speelt geen machtsspelletjes.~~ **Hij kiest volkomen bewust voor de weg van de radicale ontwapening en de genade.** In de intieme, door olielampen verlichte beslotenheid van de bovenzaal, terwijl de donkere avond langzaam als een deken over de platte daken van Jeruzalem valt, gaat Hij rustig aan tafel. De geur van gebraden lamsvlees, bittere kruiden en versgebakken, ongezuurd brood vult de ruimte. Hij neemt dat brood in Zijn timmermanshanden—handen die over enkele uren met spijkers doorboord zullen worden. Hij spreekt met vaste stem de oude, vertrouwde zegenbede uit. Hij breekt het brood met een hoorbare kraak. Hij geeft het stuk voor stuk aan de twaalf mannen om Hem heen, inclusief de man die met de dertig zilverstukken brandend in zijn mantel aan diezelfde tafel zit. 'Neem, eet, dit is mijn lichaam.'\n\nHier, in dit ogenschijnlijk eenvoudige gebaar, voltrekt zich de meest subversieve, radicale omkering van het hele evangelie. ~~Terwijl Judas Hem wil verkopen voor een handvol munten, deelt Jezus Zichzelf gratis en onvoorwaardelijk uit.~~ **Judas wil Hem verkopen voor een handvol munten; Jezus beantwoordt dit door Zichzelf volkomen en onvoorwaardelijk uit te delen.** Terwijl het machtige Sanhedrin plannen smeedt om Zijn leven met geweld af te nemen, schenkt Hij in volledige vrijheid Zijn leven als voedsel aan de wereld. Dit is de theologie van de goddelijke overvloed. De maaltijd in de opperzaal is de bewuste, radicale weigering om de ander—zelfs de vijand—als een instrument of een gebruiksvoorwerp te zien. Aan de tafel van de Heer vervagen de harde grenzen van de marktwaarde en het rendement. Het gebroken brood herstelt stap voor stap de gebroken, berekenende mens. De beker met de rode, wrange wijn giet de smaak van een volkomen nieuw, onbreekbaar verbond direct in de aderen van bange, falende en vluchtende leerlingen. Jezus absorbeert de giftige angel van het verraad en beantwoordt het met de totale, weerloze overgave van Zichzelf. Hij transformeert de verstikkende duisternis van de overlevering ('paradidomi') tot de lichtende, ruime ademruimte van de zelfgave. Het sacrament voedt zo onze diepste, vaak verzwegen honger naar onvoorwaardelijke acceptatie in een wereld die altijd onhaalbare voorwaarden stelt.\n\nDe nacht breekt open en de dreiging wordt tastbaar. De soldaten komen met fakkels, zwaarden en knuppels, de olijfgaard wordt een plaats van arrestatie. ~~Niet veel later~~ **Even later** staat Jezus voor de stenen troon van Pontius Pilatus in het indrukwekkende Praetorium. De prefect, de hoogste vertegenwoordiger van het machtige, wrede Romeinse rijk, de man van de rauwe geopolitieke macht, zoekt geïrriteerd naar een bureaucratisch excuus om dit onverwachte probleem op te lossen zonder politieke kleerscheuren voor zijn eigen carrière. Pilatus stelt zijn dwingende, retorische vragen. De aanwezige hogepriesters, die hun theologische argumenten hebben ingeruild voor politiek opportunisme, schreeuwen onophoudelijk hun valse, opgeklopte beschuldigingen. Het lawaai van de wereld, de blinde drift van de massa, zwelt binnen die marmeren muren aan tot een oorverdovend, angstaanjagend kabaal. De publieke opinie is in een oogwenk gekaapt door de waan van de dag en de effectieve manipulatie van de leiders. De menigte, die nog maar enkele uren geleden vol overgave groene palmtakken op de stoffige weg legde voor deze Koning, brult nu met overslaande stemmen om de vrijlating van Barabbas, een veroordeelde moordenaar. De zuivere, kwetsbare onschuld staat daar eenzaam in de beklaagdenbank, aan alle kanten omringd en in het nauw gedreven door de chaotische, vernietigende krachten van de leugen en de manipulatie. **De macht schreeuwt. Het recht buigt. De waarheid zwijgt.**\n\nTemidden van die kakofonie doet Jezus iets onbegrijpelijks: Hij zwijgt. Matteüs schrijft in de oorspronkelijke taal dat de prefect 'lian ethaumazen', zich buitengewoon en ten zeerste verwonderde over dat volhardende zwijgen. Pilatus begrijpt er absoluut niets van. In zijn cynische, Romeinse universum is spreken de enige manier om te overleven. Je gebruikt holle woorden als wapens om je tegenstander te vernietigen, of als schilden om je eigen hachje te redden. Je sluit compromissen, je pleit verzachtende omstandigheden, je vleit de rechter. Maar het majestueuze zwijgen van de Gevangene is de meest krachtige, ontregelende politieke daad in de hele rechtszaal. Het is de dichte, geladen stilte van de ware, hemelse Soeverein, die categorisch weigert om de corrupte, aardse categorieën van Zijn rechters ook maar enigszins te legitimeren. Door geen antwoord te geven op de leugens, weigert Hij het spel van de macht mee te spelen en ontneemt Hij de rechtbank in wezen haar morele autoriteit. Het zwijgen van Jezus deconstrueert het hele intimiderende theater van de keizerlijke macht. Hij bezit de innerlijke, ongebroken vrijheid van een mens die de dood in de koude ogen kijkt en desondanks vastbesloten blijft om de weg van de liefde trouw te blijven, zonder een woord ter verdediging te verspillen aan een systeem dat reeds failliet is. **Zijn stilte ontmaskert de corruptie. Dit heilige zwijgen legitimeert op geen enkele wijze het tolereren van misbruik of onrecht in ons eigen leven; het is een vlammend, actief verzet tegen de machten die de menselijkheid vertrappen.**\n\nHier keren we dwingend terug naar de schokkende woorden van de profeet Jesaja, die deze lijdensweg eeuwen tevoren al voorzag. De Knecht beschrijft in rauwe bewoordingen de harde, fysieke realiteit van zijn onvoorwaardelijke gehoorzaamheid aan de Eeuwige. Hij stelt zijn blote rug bloot aan de met lood verzwaarde zwepen van de folteraars. Hij biedt zijn wangen onbeschermd aan degenen die met brute kracht de haren van zijn baard uittrekken. Hij verbergt zijn gezicht, in het Hebreeuws zijn 'panim'—de drager van zijn identiteit en zijn waardigheid—niet voor het fluimen van het spuug en de snijdende woorden van de smaad. Dit is de rauwe, vleselijke, bloedende consequentie van zijn goddelijke roeping in een gevallen wereld. De vernedering is totaal en allesomvattend. Het uittrekken van de baard, een symbool van mannelijke eer, en het bespuwen van het gelaat zijn in de antieke wereld doelbewuste, methodische pogingen om de menselijke identiteit en de ziel van het slachtoffer volledig te vernietigen. Het is de kwaadaardige intentie van de beul om het slachtoffer de vernietigende schaamte tot in het diepst van zijn wezen te laten internaliseren, om de beelddrager van God te reduceren tot een betekenisloos stuk vuil dat straffeloos vertrapt kan worden.\n\nMaar de Knecht weigert op te geven en doorbreekt deze duivelse spiraal van geweld en ontmenselijking. Hij maakt zijn gezicht, zo zegt de profetie, 'als een rots'. Het specifieke Hebreeuwse woord 'hallamish' verschijnt hier als een lichtflits in de tekst. Het duidt op vuursteen, keisteen. Het is de hardste, meest onbreekbare materie die de aarde voortbrengt, het steen dat gebruikt wordt om vuur te slaan of om metaal te snijden. Het gezicht van de vernederde Knecht neemt wonderlijk genoeg de eigenschappen van dit keiharde gesteente aan. Het is een heilige, ondoorgrondelijke weerbaarheid die van binnenuit komt. Hij wordt volstrekt onbewogen door de haat. Hij incasseert het spuug, de striemen en de klappen in zijn eigen vlees, in de absolute zekerheid dat de werkelijke, door God gegeven waarde van zijn leven volkomen onaantastbaar is voor mensenhanden. De schande die zij op hem willen werpen, glijdt van hem af en blijft definitief kleven aan de handen van de daders zelf. Het toegetakelde gezicht van de lijdende Dienaar behoudt te midden van de chaos de onbuigzame majesteit van de goddelijke liefde.\n\nDeze rotsachtige, onwrikbare standvastigheid vinden we niet alleen in oude teksten, maar verrassend genoeg ook terug in de architectuur van onze eigen, vertrouwde omgeving. Jarenlang is de Domtoren, het hart van onze stad, omgeven geweest door een dicht woud van steigers en doeken. Bij de grootscheepse restauratie spraken de betrokken ingenieurs en historici vol ontzag en bewondering over de eeuwenoude fundering van dit kolossale bouwwerk. Diep onder de drassige, modderige straatstenen van het Domplein, ver uit het zicht van de voorbijgangers, rust het immense, verpletterende gewicht van de miljoenen bakstenen van de toren op ogenschijnlijk fragiele eikenhouten palen, in de veertiende eeuw met de hand in de grond geheid. Je zou verwachten dat dit hout allang verrot is. Maar de ingenieurs weten: zolang dat eeuwenoude hout diep in de zuurstofarme modder, volledig onder het grondwaterpeil staat en hermetisch afgesloten blijft van de buitenlucht, vindt er een wonderlijk proces plaats. Het hout verhardt zich en wordt letterlijk zo hard als steen. Het draagt de toren feilloos, door alle historische stormen, orkanen en trillingen van de moderne stad heen. De werkelijke, onverzettelijke kracht van het majestueuze gebouw bevindt zich in de onzichtbare, onbereikbare diepte onder de aarde.\n\nNet als die verborgen palen onder het Domplein, ontleent de lijdende Dienaar zijn rotsachtige, onbreekbare gezicht aan een onzichtbare, diepe worteling in de Eeuwige. 'God, de HEER, zal mij helpen,' klinkt het vol onwankelbare overtuiging uit zijn mond, zelfs wanneer de slagen vallen. Dat is de fundering in het absolute donker. De rotsvaste overtuiging dat uitsluitend God zelf het definitieve en laatste oordeel over zijn leven spreekt, geeft hem de adembenemende moed om innerlijk rechtop te blijven staan terwijl hij uiterlijk wordt gebroken. Hij weet met een profetische zekerheid dat hij uiteindelijk niet beschaamd zal uitkomen, hoe donker de vrijdag ook zal worden. De publieke schandpaal van het kruishout verandert onder zijn handen in de verheven troon van de rechtvaardige. Deze onmetelijke, goddelijke innerlijke rust stelt hem in staat de ondraaglijke fysieke en mentale pijn in volle bewustzijn te dragen, ~~zonder de reflex te vertonen om op zijn beurt haat, bitterheid of vergelding te zaaien~~ **en beantwoordt de haat met absolute vrede**. Hij is het ultieme eindstation van de zonde: hij absorbeert het blinde geweld van de wereld in zijn eigen heilige lichaam, en stopt voorgoed de fatale verspreiding ervan.\n\nJezus draagt dit gezicht als Hij de weg naar Golgotha gaat. Hij wordt de ontledigde Koning uit de brief aan de Filippenzen. Hij doet afstand van Zijn goddelijke voorrechten. Hij neemt de gestalte van een slaaf aan. De kruisiging is de fysieke voltooiing van deze ontlediging. Hij laat Zich vastspijkeren aan het hout. Boven Zijn hoofd hangt het houten bordje met de beschuldiging, geschreven in drie talen: 'Dit is Jezus, de koning van de Joden'. De staat bedoelt het als een wrange grap, een cynische waarschuwing voor elke opstandeling. De geschiedenis onthult het als de absolute waarheid. God openbaart Zijn glorie op de plek van de executie. De koninklijke macht van de Schepper toont zich in de totale weerloosheid van de Zoon. **Het is ronduit confronterend om volwassen en eerlijk naar dit kruis te kijken.**\n\n**Hij gaat deze weg bovendien in onze plaats. Waar wij bezwijken onder de druk en onze rug buigen voor de waan van de dag, daar staat Hij voor ons in.** Aan het kruis klinkt de roep uit de donkere nacht van de ziel. 'Mijn God, mijn God, waarom hebt U Mij verlaten?' Jezus spreekt de woorden van Psalm 22. Het is de ultieme solidariteit met onze angst. Hij betreedt de zone van de volstrekte godverlatenheid. Hij neemt de wanhoop van de loopgraven in Oekraïne, de honger in de verdorde velden van Afrika, de stille eenzaamheid van de Utrechtse zolderkamers op in Zijn eigen lichaam. God ervaart de afwezigheid van God. In die ontzagwekkende duisternis splijt de aarde open. De rotsen scheuren. Het voorhangsel van de tempel scheurt van boven naar beneden. De barricades tussen God en mens zijn weggenomen. De dood is opengebroken van binnenuit.\n\nWij staan aan het begin van de Goede Week. De drempel van de kerk leidt ons weer naar buiten, terug naar het plein, terug naar ons werk en onze huizen. Wij nemen een geheim mee de stad in. We dragen de belofte van de geslagen Koning in ons hart. We oefenen ons in de discipline van de ochtend. We laten ons oor wekken door de stem van de Liefde. **Morgenochtend, om zeven uur, kunt u die keuze concreet maken. Open uw bijbel voordat u de nieuwsapps opent.** We spreken woorden die de moedeloze opbeuren. **Spreek een woord van vrede tegen de ongedocumenteerde asielzoeker in de opvang, of de eenzame student in uw straat.** We staan in de wereld met een gezicht als een rots, verankerd in de wetenschap dat God ons helpt. De weg van het kruis ligt open, een pad van soevereine genade. **God belooft u Zijn onwankelbare nabijheid op die weg.** De Koning is ons voorgegaan. **Mag die ontzagwekkende vrijheid u vandaag in beweging zetten?**",
+    "preektekst": "De lentezon werpt vandaag scherpe schaduwen over de kasseien van het Janskerkhof. U voelt de wind die door de straten van de binnenstad trekt, een wind die de geur van koffie, uitlaatgassen en ontwakend leven met zich meedraagt. Buiten deze dikke kerkmuren raast de stad Utrecht onverminderd door. De bussen van lijn 28 draaien de hoek om, studenten fietsen gehaast richting de universiteitsbibliotheek, de terrassen worden opgebouwd voor de middag. We hebben net de gemeenteraadsverkiezingen achter de rug. Wekenlang zijn we overspoeld met luidruchtige beloften, felle debatten op pleinen en haarscherpe meningen in de media. De stad heeft gesproken, de stemmen zijn geteld, de coalities worden gesmeed. En dan stapt u over de stenen drempel van deze Janskerk. U laat het rumoer van het plein achter u en u treedt een gewijde ruimte binnen. Hier hangt de geur van oud hout en koude steen. Hier regeert een ander ritme. U stapt de liturgie van Palmzondag binnen, de toegangspoort tot de Goede Week.\n\nWe dragen palmtakken en we zingen over een koning op een ezel. We voelen de opwinding van de intocht. De menigte in Jeruzalem roept 'Hosanna', een kreet die resoneert met ons eigen diepe verlangen naar een leider die de wereld eindelijk recht zal zetten. We snakken naar oplossingen voor de wooncrisis in onze wijken, voor de schurende ongelijkheid tussen de statige grachtenpanden aan de Nieuwegracht en de tochtige, verouderde flatgebouwen in Overvecht. We willen actie, daadkracht, beleidsplannen die onmiddellijk effect sorteren. ~~We verlangen naar een soevereine hand die de chaos ordent, een sterke man of vrouw die de stagnerende systemen doorbreekt en de bureaucratie aan de kant schuift.~~ **We zoeken een hand die de chaos breekt. Iemand die de systemen omverwerpt.** Toch voelen we in de liturgie van vandaag al de naderende schaduw, een ongemakkelijke onderstroom die onze verwachtingen ontregelt. De palmtakken die we nu zo triomfantelijk omhoog houden, zullen onherroepelijk verdorren en verkleuren. Het uitzinnige gejuich van de menigte zal binnen enkele dagen omslaan in een moordlustig geschreeuw. De koning die we vandaag binnenhalen, gaat immers een weg die ons verstand volkomen verbijstert. Hij rijdt op de rug van een lastdier, kwetsbaar en ongewapend. Hij kiest resoluut de weg van de diepste afdaling, de weg naar de marges, naar de vernedering en de overgave. En wij worden uitgenodigd om in dat dwarse, onlogische spoor mee te lopen. Dat is een buitengewoon beangstigend perspectief voor moderne, rationele mensen die gewend zijn om de regie stevig en krampachtig in eigen handen te houden.\n\nKijk naar onszelf, hier in de banken van de kerk. Wij zijn kinderen van een tijdperk dat onophoudelijk alles meet, weegt, kwantificeert en beoordeelt. De gedreven professional in de kantoortuinen van het stadskantoor, de ambitieuze academicus in de overvolle collegezaal, de vermoeide ouder die het complexe weefsel van een gezin draaiende houdt — wij torsen allemaal de zware last van de verantwoordelijkheid op onze schouders. We voelen de onophoudelijke, sluimerende druk om onszelf continu te profileren, om een helder en scherp standpunt in te nemen, om gehoord te worden in de eindeloze, dovemakende kakofonie van de samenleving. In het nabijgelegen Stadskantoor, het glazen bolwerk vlak bij het Centraal Station, is sinds kort een speciale 'stilteruimte' ingericht voor overprikkelde ambtenaren. ~~Temidden van de verhitte discussies over complexe ruimtelijke ordening, stikstofbudgetten en eindeloze spreadsheets, stapt een projectleider daar soms even naar binnen, wanhopig op zoek naar een adempauze.~~ **Discussies over stikstof. Spreadsheets vol cijfers. De projectleider vlucht. Ze zoekt de stilte.** Ze laat de open kantoortuin, met zijn knipperende beeldschermen en rinkelende telefoons, achter zich. De zware, akoestische deur sluit zich met een zachte klik. Het dwingende gezoem van de telefoons en het geroezemoes van collega's verdwijnen abrupt. Gedurende drie kostbare minuten hoort zij in die schemerige ruimte uitsluitend het trage ritme van haar eigen ademhaling en het kloppen van haar hart. In die kleine, geluiddichte cabine vindt een wezenlijke, haast heilige verschuiving plaats. De dwingende noodzaak om onmiddellijk te reageren, om de volgende e-mail te beantwoorden, ebt langzaam weg uit haar spieren. Er ontstaat in die leegte een ruimte voor een dieper weten, een existentiële helderheid die aan de drukke vergadertafel volkomen onbereikbaar was. Daar, in de afwezigheid van prikkels, ontdekt zij dat zij ten diepste meer is dan haar productiviteit.\n\nDe profeet Jesaja kent de onmetelijke diepte van die ruimte. In de eerste lezing van vanmorgen voert hij een mysterieuze man op die het geheim van die stilte tot in zijn diepste vezels heeft begrepen en geïnternaliseerd. Hij noemt hem de Dienaar, de Knecht des Heren. Deze profetische gestalte vertelt ons over de verborgen oorsprong van zijn standvastige kracht. Hij spreekt over de uiterste stilte van de vroege ochtend, het moment waarop de nacht net begint te wijken voor de dageraad. Het Hebreeuwse woord 'ba-bōqer' klinkt hier in de grondtekst tweemaal achter elkaar, als een bezwering: 'morgen aan morgen', of 'elke morgen opnieuw'. De tekst tekent hiermee een dagelijkse, haast rituele en onverbiddelijke discipline van de genade. Terwijl de wereld om hem heen nog in een diepe, onbewuste slaap verkeert, buigt de Eeuwige Zich vol tederheid over het bed van deze ontwakende mens. ~~God wekt zijn oor. In het Hebreeuwse denken is het oor het orgaan van de gehoorzaamheid, het instrument van de verbondstrouw. God opent het menselijke gehoor voor de zachte, subtiele frequentie van de hemel, een stem die fluistert.~~ **God wekt het oor. Het oor dat luistert naar de stilte. Stilte die wordt tot een woord.** Het is de uiterste vorm van theologische intimiteit. De Schepper spreekt tot het schepsel. De mens wordt hier in de allereerste plaats gedefinieerd als een toehoorder, een ontvanger van een goddelijk woord. U bent een mens die ten diepste is aangesproken en gekend, nog ver voordat u zelf de behoefte voelde om een argument te formuleren of een standpunt in te nemen. De ware identiteit van de leerling rust in deze volstrekt passieve, heilige ontvankelijkheid.\n\nWij, moderne gelovigen, bewonderen graag de radicale verhalen over de profeten in de brandende woestijn. We spreken vol ontzag over de asceten, over de veertig dagen vasten in de snijdende eenzaamheid van de rotsen, terwijl wij onszelf in de realiteit van alledag vaak al geen houding weten te geven wanneer we veertig minuten gedwongen worden door te brengen zonder onze smartphone. Onze oren zijn chronisch verstopt geraakt door de constante, ziekmakende ruis van de prestatiedwang en de oneindige stroom aan informatie. We luisteren kritiekloos naar de genadeloze algoritmes van onze schermen, die ons onophoudelijk vertellen wat we moeten begeren, hoe we eruit moeten zien en wat we moeten consumeren om erbij te horen. We luisteren naar de sluipende angst die ons 's nachts in bed toefluistert dat we hopeloos tekortschieten in onze relaties, in ons werk, in ons ouderschap. De Knecht uit de profetie van Jesaja leert ons een volstrekt ander patroon van in de wereld staan. Omdat zijn oor in de vroege ochtend is geopend, ontvangt hij een 'tong van leerlingen', zoals de tekst het prachtig formuleert. Het Hebreeuwse 'leshon limmudim' duidt op de taal van degenen die zich hebben laten onderwijzen door de stilte. Dat is een uiterst geschoolde tong. Een tong die de diepe, geestelijke kunst van het zwijgen heeft doorgrond. De kwaliteit en de zuiverheid van ons spreken in de publieke ruimte van de wereld is rechtstreeks en onlosmakelijk afhankelijk van de diepte van ons zwijgen ~~en luisteren in de verborgen binnenkamer~~ **dat de tong traint**. De Knecht zoekt de stilte op als een essentiële plaats van toerusting voor het gevecht dat komen gaat.\n\nDenk aan de pianostemmer in de oude, statige wijk Wittevrouwen, een toegewijde vakman die wekelijks de kostbare instrumenten in de huiskamers onder handen neemt. Terwijl de stofjes dansen in het zonlicht dat door de hoge ramen naar binnen valt, opent hij de houten kast van de piano. Hij hoort de wringende, valse akkoorden, de snaren die door temperatuurwisselingen en intensief gebruik hun oorspronkelijke spanning zijn kwijtgeraakt. Voordat hij met zijn sleutel de stalen snaren spant en de mechaniek forceert, pakt hij een ouderwetse, stalen stemvork uit zijn kist. Hij slaat het kleine, glanzende instrument zachtjes maar resoluut tegen zijn knie en houdt het vervolgens tegen het resonerende hout van de piano. De stemvork produceert een loepzuivere, onveranderlijke en dwingende toon. ~~Een volstrekt constante frequentie van exact 440 Hertz, de centrale A.~~ **Eén toon. Eén zuivere, dwingende toon.** Het maakt de stemvork volkomen onverschillig of er buiten op straat een gure herfststorm woedt, of dat er binnen in het huis schreeuwende kinderen rondrennen of televisies aanstaan. Die ene trilling, afkomstig uit een andere orde, vormt de absolute, ononderhandelbare norm waaraan het hele instrument zich zal moeten onderwerpen. Pas wanneer de tienduizend onderdelen van de piano zorgvuldig zijn afgestemd op die zuivere, externe bron, keert de oorspronkelijke harmonie terug in de snaren. Zo fungeert God als de stemvork van onze onrustige ziel. Het wekken van het oor in de vroege morgen is de goddelijke afstemming van ons ontregelde wezen. Het herstelt meedogenloos de valse tonen van ons ego, de dissonanten van onze trots en onze jaloezie. Wie zich in de kwetsbaarheid van de ochtend laat afstemmen op de eeuwige frequentie van de liefde van de Schepper, wandelt later die dag de stad in met een innerlijke resonantie die de harde wereld om hem heen daadwerkelijk kan veranderen.\n\nHet uiteindelijke doel van dit geopende oor is adembenemend concreet en aards. De Knecht ontvangt de juiste, afgemeten woorden om de moedeloze, de uitgeputte ziel op te beuren. Kijk goed om u heen, naar de gezichten van de mensen in deze bruisende maar vaak zo meedogenloze stad. U ziet ze overal, als u tenminste de tijd neemt om echt te kijken. U ziet de jonge, briljante professional die 's avonds laat, ver na kantoortijd, eindelijk haar laptop dichtslaat aan de eettafel. Ze staart naar buiten, voelt de beklemmende leegte in haar strak ingerichte appartement echoën, vrezend dat haar existentiële waarde uitsluitend en alleen ligt in de winstmarge van haar laatste succesvolle project. U ziet de oudere man in de kille wachtkamer van de polikliniek, of starend naar de formulieren in het wijkloket. De man die de razendsnelle straatnaamwijzigingen, de onpersoonlijke digitale loketten en de verplichte inlogcodes niet meer kan bijhouden. Hij voelt hoe hij langzaam, onherroepelijk wegglijdt in de onzichtbaarheid en de anonimiteit van zijn eigen, veranderende wijk. Onze moderne, hoogproductieve wereld produceert moedeloosheid, vervreemding en eenzaamheid aan de lopende band, als een onzichtbaar maar giftig bijproduct van onze vooruitgang. Tegen deze achtergrond van stille wanhoop brengt de geschoolde tong van de Knecht een specifiek woord van herstel. Het is een woord dat wezenlijk gewicht heeft. Een woord dat een ineengedoken mens weer rechtop zet, hem zijn menselijke waardigheid teruggeeft. De authentieke taal van de goddelijke liefde doorbreekt de koude, verlammende betovering van de eenzaamheid.\n\nVanuit de intieme stilte van Jesaja's ochtend slaan we het evangelie van Matteüs open, en we stuiten onmiddellijk op een geheel andere, schokkende taal. Judas Iskariot, één van de intimi, stapt het marmeren paleis van de hogepriesters binnen. Hij spreekt de kille, berekenende taal van de commerciële markt. 'Wat wilt u mij geven als ik Hem aan u uitlever?' Deze ene zin is de brute introductie van de vocabulaire van de transactie in het heiligdom van de relatie. Judas wil het onbeheersbare, overweldigende mysterie van Jezus van Nazareth, dat hem waarschijnlijk grote angst inboezemt, reduceren tot een meetbaar, controleerbaar bezit. Hij taxeert de vleesgeworden Zoon van God alsof hij een stuk vee keurt op de markt. Het antwoord van de religieuze leiders volgt met een metaalachtige, angstaanjagende precisie. Dertig zilverstukken. Zij wegen het geld zorgvuldig af, munt voor munt, klinkend op de tafel. **Hij taxeert de liefde. Hij keurt het offer. Hij verkoopt zijn God.** Voor wie de oude schriften kent, is dit bedrag een klap in het gezicht. Het is in de oude oosterse wetboeken, specifiek in het boek Exodus, de exacte wettelijke compensatie die betaald moest worden voor een slaaf die door een os is doodgeprikt. De dode, waardeloos geworden slaaf. De machthebbers drukken de Messias daarmee bewust en cynisch in de allerlaagste economische en sociale categorie die ze kunnen bedenken. Ze voorzien de Heer van het leven van een ordinair prijskaartje. Het is de ultieme commodificatie van het heilige leven: de reductie van de oneindige God tot dertig stukjes glimmend metaal.\n\nDe rinkelende, kille munten in de leren buidel van Judas vormen de tragische soundtrack van een beschaving die haar eigen ziel is kwijtgeraakt, een beschaving die de waarde van dingen enkel nog kan uitdrukken in getallen en balansen. Wij kennen die wereld maar al te goed. Laten we onszelf niet bedriegen: wij wonen er middenin en we ademen haar logica dagelijks in. **Ik voel die neiging ook in mijn eigen hart, die onrustige calulatie:** wat levert mijn inzet voor de kerk, voor de buurt, voor de ander eigenlijk op? We vragen onszelf stilletjes, in de veiligheid van onze eigen gedachten, af wat onze loyaliteit en onze trouw ons aan het einde van de streep eigenlijk opleveren. De verkoop van Jezus in het paleis is daarmee de genadeloze, spiegelende onthulling van onze eigen, gevallen menselijke staat. **Hier scheiden de wegen zich. Het is geen vrijblijvend schouwspel. Het is de radicale keuze tussen het zilver en het Lam, tussen de veiligheid van de rekening en het risico van de liefde.** De machten van het zilver, het eigenbelang en de ijzeren politieke controle eisen in elk tijdperk absolute gehoorzaamheid. Het Griekse woord dat de evangelist Matteüs in deze passages herhaaldelijk gebruikt is 'paradidomi'. Het betekent letterlijk het overleveren, het uit handen geven, het iemand willens en wetens uitleveren aan het oordeel van de beul. Het is een term uit de donkere onderwereld van het verraad. Judas levert de incarnatie van de liefde uit aan de kille, meedogenloze logica van de berekening. En daarmee levert hij ten diepste zichzelf over aan de vernietiging.\n\nEn dan, op de drempel van de ondergang, gebeurt het volstrekt onvoorstelbare. Jezus doorziet de naderende catastrofe, maar ~~Hij weigert pertinent om mee te spelen in deze vernietigende economie van de schuld en de vergelding.~~ **Hij kiest voor de weerloze maaltijd.** ~~Hij roept geen legioenen gewapende engelen op om de verraderlijke contracten te verscheuren en Zijn vijanden te verpletteren. Hij organiseert geen politiek tegenbod, Hij speelt geen machtsspelletjes.~~ In de intieme, door olielampen verlichte beslotenheid van de bovenzaal, terwijl de donkere avond langzaam als een deken over de platte daken van Jeruzalem valt, gaat Hij rustig aan tafel. De geur van gebraden lamsvlees, bittere kruiden en versgebakken, ongezuurd brood vult de ruimte. Hij neemt dat brood in Zijn timmermanshanden—handen die over enkele uren met spijkers doorboord zullen worden. Hij spreekt met vaste stem de oude, vertrouwde zegenbede uit. Hij breekt het brood met een hoorbare kraak. Hij geeft het stuk voor stuk aan de twaalf mannen om Hem heen, inclusief de man die met de dertig zilverstukken brandend in zijn mantel aan diezelfde tafel zit. 'Neem, eet, dit is mijn lichaam.'\n\nHier, in dit ogenschijnlijk eenvoudige gebaar, voltrekt zich de meest subversieve, radicale omkering van het hele evangelie. Terwijl Judas Hem wil verkopen voor een handvol munten, deelt Jezus Zichzelf gratis en onvoorwaardelijk uit. Terwijl het machtige Sanhedrin plannen smeedt om Zijn leven met geweld af te nemen, schenkt Hij in volledige vrijheid Zijn leven als voedsel aan de wereld. **Dit is geen voorbeeld om na te volgen, dit is redding om te ontvangen. Hij neemt onze plaats in. Waar wij de rekening presenteren, betaalt Hij de schuld.** De maaltijd in de opperzaal is de bewuste, radicale weigering om de ander—zelfs de vijand—als een instrument of een gebruiksvoorwerp te zien. Aan de tafel van de Heer vervagen de harde grenzen van de marktwaarde en het rendement. **U wordt geroepen om uw verdediging te laten zakken.** Het gebroken brood herstelt stap voor stap de gebroken, berekenende mens. De beker met de rode, wrange wijn giet de smaak van een volkomen nieuw, onbreekbaar verbond direct in de aderen van bange, falende en vluchtende leerlingen. Jezus absorbeert de giftige angel van het verraad en beantwoordt het met de totale, weerloze overgave van Zichzelf. Hij transformeert de verstikkende duisternis van de overlevering ('paradidomi') tot de lichtende, ruime ademruimte van de zelfgave. Het sacrament voedt zo onze diepste, vaak verzwegen honger naar onvoorwaardelijke acceptatie in een wereld die altijd onhaalbare voorwaarden stelt.\n\nDe nacht breekt open en de dreiging wordt tastbaar. De soldaten komen met fakkels, zwaarden en knuppels, de olijfgaard wordt een plaats van arrestatie. Niet veel later staat Jezus voor de stenen troon van Pontius Pilatus in het indrukwekkende Praetorium. De prefect, de hoogste vertegenwoordiger van het machtige, wrede Romeinse rijk, de man van de rauwe geopolitieke macht, zoekt geïrriteerd naar een bureaucratisch excuus om dit onverwachte probleem op te lossen zonder politieke kleerscheuren voor zijn eigen carrière. Pilatus stelt zijn dwingende, retorische vragen. De aanwezige hogepriesters, die hun theologische argumenten hebben ingeruild voor politiek opportunisme, schreeuwen onophoudelijk hun valse, opgeklopte beschuldigingen. Het lawaai van de wereld, de blinde drift van de massa, zwelt binnen die marmeren muren aan tot een oorverdovend, angstaanjagend kabaal. De publieke opinie is in een oogwenk gekaapt door de waan van de dag en de effectieve manipulatie van de leiders. De menigte, die nog maar enkele uren geleden vol overgave groene palmtakken op de stoffige weg legde voor deze Koning, brult nu met overslaande stemmen om de vrijlating van Barabbas, een veroordeelde moordenaar. De zuivere, kwetsbare onschuld staat daar eenzaam in de beklaagdenbank, aan alle kanten omringd en in het nauw gedreven door de chaotische, vernietigende krachten van de leugen en de manipulatie.\n\nTemidden van die kakofonie doet Jezus iets onbegrijpelijks: Hij zwijgt. Matteüs schrijft in de oorspronkelijke taal dat de prefect 'lian ethaumazen', zich buitengewoon en ten zeerste verwonderde over dat volhardende zwijgen. Pilatus begrijpt er absoluut niets van. In zijn cynische, Romeinse universum is spreken de enige manier om te overleven. Je gebruikt holle woorden als wapens om je tegenstander te vernietigen, of als schilden om je eigen hachje te redden. Je sluit compromissen, je pleit verzachtende omstandigheden, je vleit de rechter. Maar het majestueuze zwijgen van de Gevangene is de meest krachtige, ontregelende politieke daad in de hele rechtszaal. **Dit is geen passieve berusting. Het is de luidste aanklacht tegen het onrecht.** Het is de dichte, geladen stilte van de ware, hemelse Soeverein, die categorisch weigert om de corrupte, aardse categorieën van Zijn rechters ook maar enigszins te legitimeren. Door geen antwoord te geven op de leugens, weigert Hij het spel van de macht mee te spelen en ontneemt Hij de rechtbank in wezen haar morele autoriteit. Het zwijgen van Jezus deconstrueert het hele intimiderende theater van de keizerlijke macht. Hij bezit de innerlijke, ongebroken vrijheid van een mens die de dood in de koude ogen kijkt en desondanks vastbesloten blijft om de weg van de liefde trouw te blijven, zonder een woord ter verdediging te verspillen aan een systeem dat reeds failliet is. **Hij houdt vast aan de zuivere toon van de Vader, de stemvork die in Gethsemane tegen Zijn ziel werd geslagen, te midden van de dissonanten van de rechtszaal.**\n\nHier keren we dwingend terug naar de schokkende woorden van de profeet Jesaja, die deze lijdensweg eeuwen tevoren al voorzag. De Knecht beschrijft in rauwe bewoordingen de harde, fysieke realiteit van zijn onvoorwaardelijke gehoorzaamheid aan de Eeuwige. Hij stelt zijn blote rug bloot aan de met lood verzwaarde zwepen van de folteraars. Hij biedt zijn wangen onbeschermd aan degenen die met brute kracht de haren van zijn baard uittrekken. Hij verbergt zijn gezicht, in het Hebreeuws zijn 'panim'—de drager van zijn identiteit en zijn waardigheid—niet voor het fluimen van het spuug en de snijdende woorden van de smaad. Dit is de rauwe, vleselijke, bloedende consequentie van zijn goddelijke roeping in een gevallen wereld. De vernedering is totaal en allesomvattend. Het uittrekken van de baard, een symbool van mannelijke eer, en het bespuwen van het gelaat zijn in de antieke wereld doelbewuste, methodische pogingen om de menselijke identiteit en de ziel van het slachtoffer volledig te vernietigen. Het is de kwaadaardige intentie van de beul om het slachtoffer de vernietigende schaamte tot in het diepst van zijn wezen te laten internaliseren, om de beelddrager van God te reduceren tot een betekenisloos stuk vuil dat straffeloos vertrapt kan worden.\n\nMaar de Knecht weigert op te geven en doorbreekt deze duivelse spiraal van geweld en ontmenselijking. Hij maakt zijn gezicht, zo zegt de profetie, 'als een rots'. Het specifieke Hebreeuwse woord 'hallamish' verschijnt hier als een lichtflits in de tekst. Het duidt op vuursteen, keisteen. Het is de hardste, meest onbreekbare materie die de aarde voortbrengt, het steen dat gebruikt wordt om vuur te slaan of om metaal te snijden. Het gezicht van de vernederde Knecht neemt wonderlijk genoeg de eigenschappen van dit keiharde gesteente aan. Het is een heilige, ondoorgrondelijke weerbaarheid die van binnenuit komt. Hij wordt volstrekt onbewogen door de haat. Hij incasseert het spuug, de striemen en de klappen in zijn eigen vlees, in de absolute zekerheid dat de werkelijke, door God gegeven waarde van zijn leven volkomen onaantastbaar is voor mensenhanden. De schande die zij op hem willen werpen, glijdt van hem af en blijft definitief kleven aan de handen van de daders zelf. Het toegetakelde gezicht van de lijdende Dienaar behoudt te midden van de chaos de onbuigzame majesteit van de goddelijke liefde.\n\nDeze rotsachtige, onwrikbare standvastigheid vinden we niet alleen in oude teksten, maar verrassend genoeg ook terug in de architectuur van onze eigen, vertrouwde omgeving. Jarenlang is de Domtoren, het hart van onze stad, omgeven geweest door een dicht woud van steigers en doeken. Bij de grootscheepse restauratie spraken de betrokken ingenieurs en historici vol ontzag en bewondering over de eeuwenoude fundering van dit kolossale bouwwerk. Diep onder de drassige, modderige straatstenen van het Domplein, ver uit het zicht van de voorbijgangers, rust het immense, verpletterende gewicht van de miljoenen bakstenen van de toren op ogenschijnlijk fragiele eikenhouten palen, in de veertiende eeuw met de hand in de grond geheid. Je zou verwachten dat dit hout allang verrot is. Maar de ingenieurs weten: zolang dat eeuwenoude hout diep in de zuurstofarme modder, volledig onder het grondwaterpeil staat en hermetisch afgesloten blijft van de buitenlucht, vindt er een wonderlijk proces plaats. Het hout verhardt zich en wordt letterlijk zo hard als steen. Het draagt de toren feilloos, door alle historische stormen, orkanen en trillingen van de moderne stad heen. De werkelijke, onverzettelijke kracht van het majestueuze gebouw bevindt zich in de onzichtbare, onbereikbare diepte onder de aarde.\n\nNet als die verborgen palen onder het Domplein, ontleent de lijdende Dienaar zijn rotsachtige, onbreekbare gezicht aan een onzichtbare, diepe worteling in de Eeuwige. 'God, de HEER, zal mij helpen,' klinkt het vol onwankelbare overtuiging uit zijn mond, zelfs wanneer de slagen vallen. Dat is de fundering in het absolute donker. De rotsvaste overtuiging dat uitsluitend God zelf het definitieve en laatste oordeel over zijn leven spreekt, geeft hem de adembenemende moed om innerlijk rechtop te blijven staan terwijl hij uiterlijk wordt gebroken. Hij weet met een profetische zekerheid dat hij uiteindelijk niet beschaamd zal uitkomen, hoe donker de vrijdag ook zal worden. De publieke schandpaal van het kruishout verandert onder zijn handen in de verheven troon van de rechtvaardige. Deze onmetelijke, goddelijke innerlijke rust stelt hem in staat de ondraaglijke fysieke en mentale pijn in volle bewustzijn te dragen, zónder de reflex te vertonen om op zijn beurt haat, bitterheid of vergelding te zaaien. Hij is het ultieme eindstation van de zonde: hij absorbeert het blinde geweld van de wereld in zijn eigen heilige lichaam, en stopt voorgoed de fatale verspreiding ervan.\n\nJezus draagt dit gezicht als Hij de weg naar Golgotha gaat. Hij wordt de ontledigde Koning uit de brief aan de Filippenzen. Hij doet afstand van Zijn goddelijke voorrechten. Hij neemt de gestalte van een slaaf aan. De kruisiging is de fysieke voltooiing van deze ontlediging. Hij laat Zich vastspijkeren aan het hout. Boven Zijn hoofd hangt het houten bordje met de beschuldiging, geschreven in drie talen: 'Dit is Jezus, de koning van de Joden'. De staat bedoelt het als een wrange grap, een cynische waarschuwing voor elke opstandeling. De geschiedenis onthult het als de absolute waarheid. God openbaart Zijn glorie op de plek van de executie. De koninklijke macht van de Schepper toont zich in de totale weerloosheid van de Zoon.\n\nAan het kruis klinkt de roep uit de donkere nacht van de ziel. 'Mijn God, mijn God, waarom hebt U Mij verlaten?' Jezus spreekt de woorden van Psalm 22. Het is de ultieme solidariteit met onze angst. Hij betreedt de zone van de volstrekte godverlatenheid. Hij neemt de wanhoop van de loopgraven in Oekraïne, de honger in de verdorde velden van Afrika, de stille eenzaamheid van de Utrechtse zolderkamers op in Zijn eigen lichaam. God ervaart de afwezigheid van God. **Hij staat daar in onze plaats. Waar wij hadden moeten zwijgen, zwijgt Hij voor ons.** In die ontzagwekkende duisternis splijt de aarde open. De rotsen scheuren. Het voorhangsel van de tempel scheurt van boven naar beneden. De barricades tussen God en mens zijn weggenomen. De dood is opengebroken van binnenuit.\n\nWij staan aan het begin van de Goede Week. De drempel van de kerk leidt ons weer naar buiten, terug naar het plein, terug naar ons werk en onze huizen. ~~Wij nemen een geheim mee de stad in. We dragen de belofte van de geslagen Koning in ons hart.~~ **Draag de belofte van de geslagen Koning in uw hart. Morgenochtend, als de wekker gaat om zeven uur, voordat u naar uw scherm grijpt en het nieuws tot u neemt: wacht.** ~~We oefenen ons in de discipline van de ochtend.~~ **Oefen u in de stilte.** Laat ons oor wekken door de stem van de Liefde. ~~We spreken woorden die de moedeloze opbeuren. We staan in de wereld met een gezicht als een rots, verankerd in de wetenschap dat God ons helpt.~~ **De weg is open. De Koning gaat voor. Wij volgen.**",
     "_usage": {
-      "prompt_tokens": 169893,
-      "candidates_tokens": 8980,
-      "total_tokens": 182828
+      "prompt_tokens": 171765,
+      "candidates_tokens": 8656,
+      "total_tokens": 182236
     },
     "_metadata": {
       "type": "rewritten_sermon",
@@ -8976,7 +9056,7 @@
       "datum": "29 maart 2026",
       "bijbeltekst": "",
       "originele_woordental": 4098,
-      "herschreven_woordental": 4431
+      "herschreven_woordental": 4310
     }
   },
   "63_gastrosofie": {

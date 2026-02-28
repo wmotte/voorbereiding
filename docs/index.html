@@ -2611,6 +2611,7 @@
             '43_bezinningsmoment': 'Moment van bezinning',
             "60_preek_volledige_tekst": 'Preek (volledig)',
             "61_feedback_volledige_preek": 'Feedback',
+            "61b_fonetische_analyse": 'Fonetische analyse',
             "59_adversarial_redteam": 'Adversariële analyse',
             "62_preek_rewrite": 'Preek (gecorrigeerd)',
             "66_ronde_tafel": 'Ronde tafel',
@@ -2838,7 +2839,7 @@
                 return 'nav-group-beeldgeneratie';
             }
             // Groep 10: Voorbeelden
-            if (['60_preek_volledige_tekst', "59_adversarial_redteam", '61_feedback_volledige_preek', '62_preek_rewrite'].includes(key)) {
+            if (['60_preek_volledige_tekst', "59_adversarial_redteam", '61_feedback_volledige_preek', '61b_fonetische_analyse', '62_preek_rewrite'].includes(key)) {
                 return 'nav-group-voorbeelden';
             }
             // Groep 11: Conversationeel
@@ -2886,7 +2887,7 @@
             if (['35_midjourney_prompts'].includes(key)) {
                 return 'Beeldgeneratie';
             }
-            if (['60_preek_volledige_tekst', "59_adversarial_redteam", '61_feedback_volledige_preek', '62_preek_rewrite'].includes(key)) {
+            if (['60_preek_volledige_tekst', "59_adversarial_redteam", '61_feedback_volledige_preek', '61b_fonetische_analyse', '62_preek_rewrite'].includes(key)) {
                 return 'Voorbeelden';
             }
             if (['66_ronde_tafel'].includes(key)) {
@@ -3082,7 +3083,8 @@
                 '60_preek_volledige_tekst': '61',
                 "59_adversarial_redteam": '62', 
                 '61_feedback_volledige_preek': '63',
-                '62_preek_rewrite': '64'
+                '61b_fonetische_analyse': '64',
+                '62_preek_rewrite': '65'
             };
 
             // Create section number map for sorting
@@ -3836,6 +3838,8 @@
                 contentHtml = renderPreekVolledigeTekstSection(dataToRender, key);
             } else if (key === '59_adversarial_redteam') {
                 contentHtml = renderAdversarialRedteam(dataToRender);
+            } else if (key === '61b_fonetische_analyse') {
+                contentHtml = renderFonetischeAnalyse(dataToRender);
             } else if (key === '61_feedback_volledige_preek') {
                 contentHtml = renderFeedbackVolledigePreekSection(dataToRender, key);
             } else if (key === '62_preek_rewrite') {
@@ -4238,7 +4242,7 @@
                 // Skip 'gebruiksinstructies' in Beeldgeneratie (prompts)
                 if (k === 'gebruiksinstructies' && sectionKey === '35_midjourney_prompts') return false;
                 // Skip 'bron_preekschets' in feedback sections
-                if (k === 'bron_preekschets' && (sectionKey === '21_feedback_jungel' || sectionKey === '22_feedback_rutledge' || sectionKey === '61_feedback_volledige_preek')) return false;
+                if (k === 'bron_preekschets' && (sectionKey === '21_feedback_jungel' || sectionKey === '22_feedback_rutledge' || sectionKey === '61_feedback_volledige_preek' || sectionKey === '61b_fonetische_analyse')) return false;
                 return true;
             });
 
@@ -6618,6 +6622,181 @@
 
                 html += `</div></div>`; // end hoorder-content, hoorder-card
             });
+
+            return html;
+        }
+
+        // Render 61b_fonetische_analyse section
+        function renderFonetischeAnalyse(data) {
+            let html = '';
+
+            // --- SCORE DASHBOARD ---
+            const score = data.fonetische_score;
+            if (score) {
+                const dims = [
+                    { key: 'klanksymboliek',            label: 'Klankkleur',  score: score.klanksymboliek },
+                    { key: 'werkgeheugen_architectuur', label: 'Retoriek',    score: score.werkgeheugen_architectuur },
+                    { key: 'akoestische_cadans',        label: 'Cadans',      score: score.akoestische_cadans },
+                    { key: 'totaal',                    label: 'Totaal',      score: score.totaal, isTotal: true },
+                ];
+
+                html += `<div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-bottom: 22px;">`;
+                dims.forEach(d => {
+                    if (d.score == null) return;
+                    const col = d.isTotal ? 'var(--accent)'
+                              : d.score >= 8 ? '#4a7c59'
+                              : d.score >= 6 ? 'var(--accent-light)'
+                              : '#b05a2a';
+                    const bg  = d.isTotal ? 'rgba(139,69,19,0.10)'
+                              : d.score >= 8 ? 'rgba(74,124,89,0.10)'
+                              : d.score >= 6 ? 'rgba(205,133,63,0.10)'
+                              : 'rgba(176,90,42,0.10)';
+                    // SVG donut: r=15.92 → circumference≈100
+                    const dash = `${d.score * 10} 100`;
+                    html += `
+                        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;min-width:80px;max-width:130px;background:${bg};border-radius:8px;padding:14px 8px;">
+                            <svg width="72" height="72" viewBox="0 0 36 36" style="transform:rotate(-90deg)">
+                                <circle cx="18" cy="18" r="15.92" fill="none" stroke="var(--bg-tertiary)" stroke-width="3.2"/>
+                                <circle cx="18" cy="18" r="15.92" fill="none" stroke="${col}" stroke-width="3.2"
+                                    stroke-dasharray="${dash}" stroke-linecap="round"/>
+                                <text x="18" y="18" text-anchor="middle" dominant-baseline="central"
+                                    fill="${col}" font-size="${d.isTotal ? 10 : 9}" font-weight="bold"
+                                    font-family="Georgia,serif" transform="rotate(90,18,18)">${d.score}</text>
+                            </svg>
+                            <div style="font-size:0.75em;font-weight:700;color:${col};text-align:center;text-transform:uppercase;letter-spacing:0.06em;line-height:1.3;">${d.label}</div>
+                        </div>`;
+                });
+                html += `</div>`;
+
+                if (score.toelichting) {
+                    html += `<div style="background:var(--bg-secondary);border-left:4px solid var(--accent-light);padding:13px 17px;border-radius:4px;font-size:0.93em;line-height:1.72;color:var(--text-secondary);margin-bottom:26px;font-style:italic;">${processText(score.toelichting)}</div>`;
+                }
+            }
+
+            // --- THREE ANALYSIS PANELS ---
+            const panels = [
+                {
+                    key: 'klanksymboliek',
+                    label: 'Klanksymboliek',
+                    icon: '◉',
+                    positiefKey: 'sterke_voorbeelden', positiefLabel: 'Sterke voorbeelden',
+                    negatiefKey: 'zwakke_plekken',     negatiefLabel: 'Zwakke plekken',
+                    figurenMode: false,
+                },
+                {
+                    key: 'werkgeheugen_architectuur',
+                    label: 'Werkgeheugen & Retorick',
+                    icon: '≡',
+                    positiefKey: 'gevonden_figuren',    positiefLabel: 'Gevonden figuren',
+                    negatiefKey: 'ontbrekende_kansen',  negatiefLabel: 'Ontbrekende kansen',
+                    figurenMode: true,
+                },
+                {
+                    key: 'akoestische_cadans',
+                    label: 'Akoestische cadans',
+                    icon: '♩',
+                    positiefKey: 'kansen_voor_verdieping', positiefLabel: 'Kansen voor verdieping',
+                    negatiefKey: 'vlakke_passages',        negatiefLabel: 'Vlakke passages',
+                    figurenMode: false,
+                },
+            ];
+
+            panels.forEach(panel => {
+                const d = data[panel.key];
+                if (!d) return;
+                const panelScore = score && score[panel.key];
+
+                html += `<div class="gebed-card" style="margin-bottom:18px;padding:20px 24px;">`;
+
+                // Header row
+                html += `<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:13px;">`;
+                html += `<div style="display:flex;align-items:center;gap:10px;">
+                            <span style="font-size:1.2em;color:var(--accent);">${panel.icon}</span>
+                            <span style="font-size:1.02em;font-weight:700;color:var(--accent);">${panel.label}</span>
+                         </div>`;
+                if (panelScore != null) {
+                    const sc = panelScore >= 8 ? '#4a7c59' : panelScore >= 6 ? 'var(--accent-light)' : '#b05a2a';
+                    html += `<span style="background:${sc};color:white;padding:3px 10px;border-radius:10px;font-size:0.82em;font-weight:700;">${panelScore}/10</span>`;
+                }
+                html += `</div>`;
+
+                // Diagnose
+                if (d.diagnose) {
+                    html += `<div style="line-height:1.72;color:var(--text-primary);margin-bottom:15px;padding-bottom:13px;border-bottom:1px dashed var(--border-light);">${processText(d.diagnose)}</div>`;
+                }
+
+                // Positive items
+                const pos = d[panel.positiefKey];
+                if (pos && pos.length) {
+                    html += `<div style="margin-bottom:13px;">`;
+                    html += `<div style="font-size:0.76em;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#4a7c59;margin-bottom:7px;">${panel.positiefLabel}</div>`;
+                    pos.forEach(item => {
+                        if (panel.figurenMode && typeof item === 'object' && item.type) {
+                            html += `<div style="background:rgba(74,124,89,0.08);border-left:3px solid #4a7c59;padding:9px 13px;border-radius:0 4px 4px 0;margin-bottom:6px;display:flex;gap:11px;align-items:flex-start;">
+                                        <span style="background:#4a7c59;color:white;padding:2px 7px;border-radius:3px;font-size:0.74em;font-weight:700;white-space:nowrap;text-transform:uppercase;flex-shrink:0;margin-top:2px;">${escapeHtml(item.type)}</span>
+                                        <span style="font-style:italic;font-size:0.93em;color:var(--text-primary);line-height:1.65;">${processText(item.voorbeeld)}</span>
+                                     </div>`;
+                        } else {
+                            html += `<div style="background:rgba(74,124,89,0.08);border-left:3px solid #4a7c59;padding:9px 13px;border-radius:0 4px 4px 0;margin-bottom:6px;font-style:italic;font-size:0.93em;color:var(--text-primary);line-height:1.65;">${processText(String(item))}</div>`;
+                        }
+                    });
+                    html += `</div>`;
+                }
+
+                // Negative items
+                const neg = d[panel.negatiefKey];
+                if (neg && neg.length) {
+                    html += `<div style="margin-bottom:13px;">`;
+                    html += `<div style="font-size:0.76em;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#b05a2a;margin-bottom:7px;">${panel.negatiefLabel}</div>`;
+                    neg.forEach(item => {
+                        html += `<div style="background:rgba(176,90,42,0.08);border-left:3px solid #b05a2a;padding:9px 13px;border-radius:0 4px 4px 0;margin-bottom:6px;font-style:italic;font-size:0.93em;color:var(--text-primary);line-height:1.65;">${processText(String(item))}</div>`;
+                    });
+                    html += `</div>`;
+                }
+
+                // Aanbevelingen
+                const aanb = d.aanbevelingen;
+                if (aanb && aanb.length) {
+                    html += `<div>`;
+                    html += `<div style="font-size:0.76em;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary);margin-bottom:7px;">Aanbevelingen</div>`;
+                    aanb.forEach(item => {
+                        html += `<div style="display:flex;gap:9px;align-items:flex-start;margin-bottom:6px;font-size:0.93em;color:var(--text-primary);line-height:1.65;">
+                                    <span style="color:var(--accent);font-weight:bold;flex-shrink:0;margin-top:1px;">→</span>
+                                    <span>${processText(String(item))}</span>
+                                 </div>`;
+                    });
+                    html += `</div>`;
+                }
+
+                html += `</div>`; // end gebed-card
+            });
+
+            // --- PRIORITAIRE VERBETERINGEN ---
+            const pv = data.prioritaire_verbeteringen;
+            if (pv && pv.length) {
+                html += `<h3 style="color:var(--accent);margin:26px 0 13px 0;font-size:1em;border-bottom:2px solid var(--accent);padding-bottom:5px;text-transform:uppercase;letter-spacing:0.07em;">Prioritaire verbeteringen</h3>`;
+                pv.forEach((item, i) => {
+                    html += `<div style="display:flex;gap:15px;align-items:flex-start;margin-bottom:12px;background:var(--bg-secondary);padding:16px 18px;border-radius:4px;border-left:4px solid var(--accent);">`;
+                    html += `<div style="background:var(--accent);color:white;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.82em;flex-shrink:0;margin-top:1px;">${i + 1}</div>`;
+                    html += `<div style="flex:1;">`;
+                    if (item.locatie) {
+                        html += `<div style="font-weight:700;color:var(--accent);margin-bottom:7px;font-size:0.93em;">${processText(item.locatie)}</div>`;
+                    }
+                    if (item.probleem) {
+                        html += `<div style="display:flex;gap:7px;align-items:flex-start;margin-bottom:6px;">
+                                    <span style="font-size:0.72em;font-weight:700;text-transform:uppercase;color:#b05a2a;background:rgba(176,90,42,0.12);padding:2px 6px;border-radius:3px;flex-shrink:0;margin-top:2px;">Probleem</span>
+                                    <span style="font-size:0.92em;color:var(--text-primary);line-height:1.62;">${processText(item.probleem)}</span>
+                                 </div>`;
+                    }
+                    if (item.suggestie) {
+                        html += `<div style="display:flex;gap:7px;align-items:flex-start;">
+                                    <span style="font-size:0.72em;font-weight:700;text-transform:uppercase;color:#4a7c59;background:rgba(74,124,89,0.12);padding:2px 6px;border-radius:3px;flex-shrink:0;margin-top:2px;">Suggestie</span>
+                                    <span style="font-size:0.92em;color:var(--text-primary);line-height:1.62;font-style:italic;">${processText(item.suggestie)}</span>
+                                 </div>`;
+                    }
+                    html += `</div></div>`;
+                });
+            }
 
             return html;
         }
